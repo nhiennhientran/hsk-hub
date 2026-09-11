@@ -13,7 +13,7 @@
   const GENERAL_COMPAT_KEYS=['hsk1_ranteacher_unlocked','hsk2_ranteacher_unlocked','hsk3_ranteacher_unlocked'];
   const HSK4_COMPAT_KEYS=['hsk4_upper_ranteacher_unlocked','hsk4_lower_ranteacher_unlocked'];
   const PORTAL_HASH='5b363ff1986142a6f34d3e259948aa38ec4773ad293a0cc03f2357877433a0c5';
-  const HSK4_HASH='1e1d7bc6d9ad86a5edb1d27eb5a0ebc96a9fddb952842bc96bc21adc53eef445';
+  const HSK4_HASH='5b363ff1986142a6f34d3e259948aa38ec4773ad293a0cc03f2357877433a0c5';
 
   const byId=id=>document.getElementById(id);
   const isHsk4Page=()=>document.body?.classList.contains('hsk4-upper')||document.body?.classList.contains('hsk4-lower')||/(?:^|\/)hsk4(?:up)?\//i.test(location.pathname||'');
