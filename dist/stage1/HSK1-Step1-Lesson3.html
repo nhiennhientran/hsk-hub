@@ -1,0 +1,1285 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Bài 3 · Bài tập | Học cùng cô Nhiên</title>
+  <link rel="icon" href="data:,">
+  <style>
+
+.learning-app{--green:#174f3b;--ink:#173f33;--muted:#60736a;--line:#d9e4dc;--paper:#f5f7f1;--soft:#e8efe3;--gold:#9a6b32;margin:0;background:var(--paper);color:#203e32;font:16px/1.65 "Inter","Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.learning-app *{box-sizing:border-box}.learning-app [hidden]{display:none!important}.learning-app button,.learning-app select,.learning-app input{font:inherit}.learning-app button,.learning-app a,.learning-app select,.learning-app input{ -webkit-tap-highlight-color:transparent}.learning-app button{cursor:pointer}.learning-app button:disabled{cursor:not-allowed;opacity:.56}.learning-app a{color:var(--green)}.learning-app :focus-visible{outline:3px solid #c79a49;outline-offset:3px}.learning-app .zh,.learning-app [lang="zh-Hans"]{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif}
+.la-header{max-width:1160px;margin:auto;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px}.la-brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:750;line-height:1.3}.la-brand small{display:block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-top:5px}.la-seal,.pw-icon{display:grid;place-items:center;background:var(--green);color:white;border-radius:12px;width:43px;height:43px;font:25px serif}.la-text-link{font-size:13px;text-decoration:none;white-space:nowrap}.la-nav{display:flex;max-width:1104px;margin:0 auto 25px;padding:5px;background:white;border:1px solid var(--line);border-radius:15px;gap:4px;overflow:auto}.la-nav a{flex:1;min-width:max-content;padding:11px 15px;border-radius:10px;text-decoration:none;text-align:center;font-size:14px;font-weight:600}.la-nav a span{font-size:11px;margin-left:6px;opacity:.65}.la-nav a[aria-current="page"]{background:var(--green);color:white}.la-main{max-width:1104px;margin:0 auto;min-height:60vh;outline:none}.la-skip{position:absolute;left:12px;top:-100px;background:white;padding:10px;z-index:1000}.la-skip:focus{top:10px}.la-footer{max-width:1104px;margin:48px auto 0;border-top:1px solid var(--line);padding:20px 0 110px;display:flex;justify-content:space-between;gap:25px;font-size:11px;color:var(--muted)}
+.la-hero{border-radius:22px;background:var(--green);color:white;padding:30px 34px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;gap:25px}.la-eyebrow{text-transform:uppercase;letter-spacing:1.7px;font-size:11px;font-weight:700;opacity:.75;margin:0 0 9px}.la-hero h1{font-size:30px;line-height:1.3;margin:0 0 10px;font-weight:650}.la-hero p{max-width:680px;font-size:14px;margin:5px 0;opacity:.85}.la-hero a{color:white;text-underline-offset:4px}.la-hero label{display:block;font-size:12px;white-space:nowrap}.la-hero select{display:block;min-width:0;margin-top:7px;max-width:260px;width:100%;border:1px solid #a5beaf;background:#fff;color:var(--ink);border-radius:9px;padding:11px}.la-hero-number{font-size:50px;font-weight:650;line-height:1.1}.la-hero-aside{text-align:right;min-width:0;max-width:100%}.la-heading{display:flex;justify-content:space-between;align-items:center;gap:18px;margin:26px 0 14px}.la-heading h2{font-size:21px;line-height:1.4;margin:0}.la-muted{color:var(--muted);font-size:13px}.la-small{font-size:12px;color:var(--muted)}.la-lead{font-size:14px;color:var(--muted);margin:8px 0 20px}.la-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}.la-step{background:white;border:1px solid var(--line);border-radius:13px;display:flex;align-items:center;text-align:left;padding:16px;gap:12px;color:var(--ink)}.la-step.active{border:2px solid var(--green);padding:15px;background:#eef3e9}.la-step b{display:block;font-size:14px}.la-step small{display:block;font-size:11px;color:var(--muted)}.la-step-num{width:32px;height:32px;flex-shrink:0;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:13px;font-weight:750}.la-step.active .la-step-num{color:white;background:var(--green)}
+.la-panel,.la-question,.la-summary,.la-review-card{border:1px solid var(--line);background:white;border-radius:16px;padding:24px;margin:16px 0}.la-question{scroll-margin-top:20px}.la-question.needs-answer{border:2px solid #bc713e}.la-qtop{display:flex;justify-content:space-between;gap:15px;font-size:11px;font-weight:650;color:var(--muted);margin-bottom:14px}.la-qbadge{background:#eef2e9;padding:3px 10px;border-radius:20px;font-weight:500}.la-prompt{font-size:15px;margin:0 0 14px}.la-stem{font-size:25px;line-height:1.6;margin:8px 0 20px}.la-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.la-option{display:flex;align-items:center;gap:12px;text-align:left;background:#fff;border:1px solid var(--line);border-radius:10px;color:var(--ink);padding:13px 15px;min-height:54px;line-height:1.5}.la-option .la-letter{flex-shrink:0;width:26px;height:26px;border:1px solid var(--line);display:grid;place-items:center;border-radius:7px;font:600 11px Arial}.la-option.selected{border:2px solid var(--green);padding:12px 14px;background:#edf4ed}.la-option.selected .la-letter{background:var(--green);border-color:var(--green);color:white}.la-option.answer-correct{border-color:#2d7c54;background:#edf6ed}.la-option.answer-wrong{border-color:#b9724c;background:#fff3eb}.la-option:disabled{opacity:1;cursor:default}.la-option span[lang="zh-Hans"]{font-size:21px}.la-meaning{padding:10px 14px;background:#f4f6ef;border-radius:8px;font-size:14px;margin:10px 0}.la-sentence{min-height:72px;background:#f6f8f3;border:1px dashed #98af9f;border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:14px 0}.la-sentence-placeholder{font-size:13px;color:var(--muted)}.la-tokens{display:flex;flex-wrap:wrap;gap:9px;padding:4px 0 12px}.la-token{min-width:47px;min-height:46px;padding:8px 13px;border:1px solid #b7c9ba;border-radius:9px;background:white;color:var(--ink);font-size:22px!important;line-height:1.3}.la-sentence .la-token{background:#e7efdf;border-color:#c8d8c3}.la-token:disabled{visibility:hidden}.la-sort-tools{display:flex;gap:15px}.la-sort-tools button{border:0;background:none;font-size:12px;color:var(--green);padding:7px 0}.la-feedback{border-top:1px solid var(--line);padding-top:16px;margin-top:17px;font-size:14px}.la-feedback h3{font-size:14px;margin:0 0 8px}.la-feedback.good h3{color:#206f49}.la-feedback.bad h3{color:#9b512c}.la-answer{font-size:22px;margin:8px 0}.la-original{color:var(--muted);font-size:12px;margin:8px 0}.la-original .zh{font-size:17px}.la-explanation{margin:10px 0;line-height:1.75}.la-source-link{font-size:12px}.la-audio-button{display:inline-flex;align-items:center;gap:10px;background:var(--green);border:0;color:white;border-radius:10px;padding:12px 18px;margin:0 0 16px}.la-audio-icon{font-size:21px}.la-pinyin{color:var(--muted);font-size:15px;line-height:1.7}.la-toolbar{display:flex;align-items:center;flex-wrap:wrap;justify-content:space-between;gap:12px;margin:17px 0}.la-button,.la-ghost{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border-radius:10px;min-height:46px;padding:11px 19px;font-size:14px!important;font-weight:650;background:var(--green);color:white!important;border:1px solid var(--green)}.la-ghost{background:transparent;color:var(--green)!important;border:1px solid #b8cbbd}.la-button:disabled,.la-ghost:disabled{opacity:.5}.la-alert{padding:13px 17px;background:#fff1df;border:1px solid #ecd0a9;border-radius:10px;font-size:13px;color:#774719;margin:14px 0}.la-success{background:#edf5e9;border:1px solid #d1e2c9;border-radius:10px;padding:13px 17px;font-size:13px;margin:14px 0}.la-summary{background:#edf3e7;border-color:#bed0b8}.la-score{font-size:38px;font-weight:700;letter-spacing:-1px;line-height:1.15;color:var(--green)}.la-score small{font-size:18px;letter-spacing:0;font-weight:500}.la-score-row{display:flex;align-items:center;gap:25px;justify-content:space-between;flex-wrap:wrap}.la-score-detail{font-size:13px;max-width:600px}.la-score-detail b{color:var(--green)}.la-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}.la-stat{background:white;border:1px solid var(--line);border-radius:13px;padding:21px}.la-stat b{font-size:29px;display:block;line-height:1.4;color:var(--green)}.la-stat span{font-size:12px;color:var(--muted)}.la-table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px;background:white}.la-table{width:100%;border-collapse:collapse;white-space:nowrap;font-size:13px}.la-table th,.la-table td{padding:14px 17px;border-bottom:1px solid var(--line);text-align:left}.la-table th{background:#edf2e8;font-size:11px}.la-table tr:last-child td{border-bottom:0}.la-table td:first-child{min-width:190px;white-space:normal}.la-status{display:inline-block;border-radius:20px;background:#e8f1e4;padding:3px 9px;font-size:10px;color:var(--green)}.la-progress-track{height:6px;background:#e0e8dc;border-radius:5px;overflow:hidden;margin:10px 0}.la-progress-track i{height:100%;display:block;background:#719061}.la-review-card{display:flex;justify-content:space-between;align-items:center;gap:20px}.la-review-card p{margin:4px 0}.la-empty{padding:50px 24px;text-align:center;background:white;border:1px dashed #bfd0bf;border-radius:18px;margin:20px 0}.la-empty h2{font-size:21px}.la-settings label{display:flex;align-items:center;gap:10px;margin:14px 0;font-size:14px}.la-settings select{padding:7px 10px;border-radius:7px;border:1px solid var(--line);background:white}.la-danger{background:white;border:1px solid #c58769;color:#994d2c;padding:9px 15px;border-radius:8px}.la-course-links{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;margin:12px 0}.la-chip{padding:4px 10px;border:1px solid #cbd9cb;border-radius:20px;color:var(--muted);font-size:11px}.la-player{position:fixed;z-index:30;bottom:16px;left:50%;transform:translateX(-50%);width:min(780px,calc(100% - 30px));border:1px solid #bad0bf;box-shadow:0 7px 35px #183a3128;border-radius:14px;background:#fff;padding:13px 18px;display:flex;align-items:center;gap:12px}.la-player>div{flex:1;min-width:70px}.la-player b{display:block;font-size:12px}.la-player span{display:block;font-size:10px;color:var(--muted)}.la-player button{font-size:12px;border:1px solid var(--line);background:var(--soft);border-radius:7px;padding:8px 10px;color:var(--ink)}.la-player label{font-size:11px}.la-player select{display:block;border:1px solid var(--line);padding:5px;border-radius:6px;background:white;font-size:12px}.la-toast{position:fixed;z-index:100;left:50%;bottom:112px;transform:translate(-50%,15px);max-width:calc(100% - 28px);padding:12px 20px;background:#173f33;color:white;border-radius:10px;opacity:0;pointer-events:none;transition:.2s;font-size:13px}.la-toast.show{opacity:1;transform:translate(-50%,0)}.la-storage-notice{max-width:1104px;margin:15px auto;padding:14px 20px;background:#fff1df;color:#774719;border-radius:10px;font-size:13px}.learning-app .pw-overlay{position:fixed;inset:0;z-index:500;display:grid;place-items:center;background:#0e302bdc;padding:20px;backdrop-filter:blur(8px)}.learning-app .pw-box{max-width:400px;width:100%;border-radius:22px;padding:35px;background:#fff;box-shadow:0 20px 90px #001c2566}.learning-app .pw-box h2{font-size:24px;margin:20px 0 8px}.learning-app .pw-box p{font-size:14px;color:var(--muted)}.learning-app .pw-box label{font-size:12px;display:block;margin-top:20px}.learning-app .pw-input{width:100%;border:1px solid var(--line);border-radius:9px;padding:12px;margin:8px 0 15px}.learning-app .primary-btn{padding:12px 20px;background:var(--green);color:white;border:0;border-radius:9px;width:100%}.learning-app .pw-error{display:none;color:#9c4f2c;font-size:13px;margin-top:14px}.learning-app .pw-error.show{display:block}.learning-app .hsk-field-label{display:none}
+@media(max-width:1160px){.la-nav,.la-main,.la-footer,.la-storage-notice{margin-left:24px;margin-right:24px}}
+@media(max-width:650px){.la-header{padding:17px 18px}.la-brand{font-size:14px}.la-brand small{font-size:9px}.la-seal{width:36px;height:36px}.la-text-link{font-size:11px}.la-nav{margin:0 12px 16px;border-radius:12px}.la-nav a{padding:10px 13px;font-size:12px}.la-nav a span{display:none}.la-main{margin:0 14px}.la-hero{padding:23px;border-radius:17px;display:block}.la-hero h1{font-size:26px}.la-hero p{font-size:13px}.la-hero-aside{text-align:left;margin-top:20px}.la-hero select{max-width:none}.la-hero-number{font-size:34px}.la-steps{gap:6px}.la-step{padding:11px 9px;gap:7px;align-items:flex-start}.la-step.active{padding:10px 8px}.la-step-num{height:22px;width:22px;font-size:10px}.la-step b{font-size:11px}.la-step small{font-size:9px}.la-question,.la-panel,.la-summary{padding:18px}.la-options{grid-template-columns:1fr}.la-option{padding:13px}.la-option.selected{padding:12px}.la-stem{font-size:23px}.la-heading h2{font-size:19px}.la-qtop{font-size:10px}.la-qbadge{max-width:65%;text-align:right}.la-qbadge:empty{display:none}.la-score{font-size:32px}.la-score-row{gap:15px}.la-stats{gap:8px}.la-stat{padding:14px 10px}.la-stat b{font-size:24px}.la-stat span{font-size:10px}.la-footer{margin:30px 18px 0;display:block}.la-footer span{display:block;margin-bottom:6px}.la-review-card{padding:17px;align-items:flex-start}.la-review-card .la-button{padding:9px 12px;font-size:12px!important;min-width:76px}.la-player{bottom:10px;padding:11px;gap:7px}.la-player button{padding:8px;font-size:10px}.la-player select{max-width:96px;font-size:11px}.la-player label{font-size:9px}.la-toolbar>.la-button,.la-toolbar>.la-ghost{flex:1}.la-course-links{gap:10px}.la-table td,.la-table th{padding:12px}.la-storage-notice{margin:12px 14px}}
+@media(prefers-reduced-motion:reduce){.learning-app *{scroll-behavior:auto!important;transition:none!important}}
+
+</style>
+  <style>
+/* The pilot extends the site's established green / off-white learning style. */
+.stage1-app{overflow-wrap:anywhere}.stage1-app textarea{font:inherit;box-sizing:border-box}.stage1-app textarea,.stage1-app input{max-width:100%}.s1-pilot{font-size:12px;border:1px solid #c8d8c9;padding:6px 12px;border-radius:20px;white-space:nowrap}.s1-hero-count{min-width:172px;text-align:right}.s1-hero-count strong{display:block;font-size:52px;font-weight:650;line-height:1.1}.s1-hero-count span,.s1-hero-count small{display:block;font-size:13px;margin-top:6px}.s1-hero-count small{font-size:11px;opacity:.8}.s1-overview{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:12px}.s1-stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px}.s1-stat h2{font-size:12px;color:var(--muted);font-weight:500;margin:0 0 5px}.s1-stat strong{font-size:23px;line-height:1.5;color:var(--green);font-weight:700}.s1-stat p{font-size:12px;color:var(--muted);margin:3px 0}.s1-stat .s1-score-line{font-size:14px;color:var(--ink)}.s1-stat .la-progress-track{margin:8px 0 5px}.s1-progress-label{font-size:11px}.s1-group-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin:30px 0 12px}.s1-group-head h2{font-size:23px;margin:0 0 6px;line-height:1.4}.s1-group-head p{font-size:14px;color:var(--muted);margin:4px 0}.s1-kind{font-size:11px;white-space:nowrap;border:1px solid #c4d4c7;border-radius:20px;padding:4px 10px;margin-top:4px}.s1-note{border-left:3px solid #a6bd9e;padding:0 0 0 12px;font-size:13px;color:var(--muted);margin:15px 0}.s1-progress{font-size:13px;color:var(--muted)}.s1-result-head{font-size:21px;margin:0 0 7px}.s1-result-meta{font-size:13px;margin:5px 0}.s1-result-meta strong{font-size:16px}.s1-summary-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.s1-question-title{font-size:16px;font-weight:600;margin:5px 0 14px;line-height:1.7}.s1-question-title .s1-number{font-size:11px;display:block;color:var(--muted);letter-spacing:.5px;margin-bottom:7px;font-weight:400}.s1-token-pool{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0}.s1-token-pool button[disabled]{opacity:.3}.s1-sentence-hint{color:var(--muted);font-size:13px;align-self:center}.s1-sentence-actions{display:flex;gap:10px;flex-wrap:wrap}.s1-small-button{font:inherit;font-size:12px!important;color:var(--green);border:1px solid var(--line);background:#fff;border-radius:8px;min-height:44px;padding:8px 13px}.s1-small-button:disabled{opacity:.5}.s1-translation{display:block;width:100%;resize:vertical;min-height:104px;padding:14px 16px;border:1px solid #b7cabb;border-radius:10px;background:#fff;color:var(--ink);font-size:22px!important;line-height:1.8;overflow-y:hidden;white-space:pre-wrap;overflow-wrap:anywhere}.s1-translation:read-only{background:#f5f8f1}.s1-charcount{font-size:11px;color:var(--muted);margin:6px 0 0}.s1-profile{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:17px 0 0}.s1-profile label,.s1-label{display:block;font-size:13px;color:var(--ink)}.s1-profile input{display:block;width:100%;margin-top:6px;padding:10px 12px;border:1px solid #b7cabb;border-radius:8px;min-height:46px;background:#fff}.s1-profile-help{font-size:12px;color:var(--muted);margin-top:7px}.s1-submit-area{border-top:1px solid var(--line);padding-top:18px;margin-top:20px}.s1-submit-area .la-toolbar{margin-top:0}.s1-missing{border-color:#c58769}.s1-missing-label{font-size:12px;color:#92471f;margin:10px 0 0}.s1-inline-error{outline:none}.s1-tools{margin-top:34px}.s1-tools summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:14px;color:var(--green);font-weight:600}.s1-tools summary::before{content:'＋';margin-right:8px}.s1-tools details[open] summary::before{content:'−'}.s1-tools textarea{display:block;width:100%;resize:vertical;border:1px solid var(--line);border-radius:9px;margin:8px 0 14px;padding:12px;font:12px/1.6 monospace}.s1-label{margin-top:22px}.s1-save{font-size:11px;text-align:center;color:var(--muted);min-height:24px;margin:12px 16px 25px}.s1-receipt{max-width:840px;margin:20px auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 32px}.s1-receipt .s1-receipt-header{border-bottom:2px solid var(--green);padding-bottom:18px}.s1-receipt h1{font-size:23px;margin:12px 0 8px;line-height:1.5}.s1-receipt .s1-receipt-meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px}.s1-receipt .s1-receipt-meta p{margin:0;white-space:pre-wrap}.s1-receipt-item{padding:19px 0;border-bottom:1px solid var(--line);break-inside:avoid}.s1-receipt-item:last-child{border-bottom:0}.s1-receipt-item h2{font-size:14px;margin:0 0 9px;font-weight:600}.s1-written-answer{font-size:22px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}.s1-receipt-tip{font-size:12px;color:var(--muted);margin:16px 0 0}.s1-receipt-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.stage1-app.is-receipt>#main,.stage1-app.is-receipt>.la-header,.stage1-app.is-receipt>.la-footer,.stage1-app.is-receipt>#save-status{display:none}.la-option{overflow-wrap:anywhere;min-width:0}.la-option .zh{line-height:1.65}.la-option:disabled{opacity:1;cursor:default}.s1-answer-label{font-size:12px;margin:8px 0}.la-feedback h3{font-size:16px}.la-feedback .s1-selected-feedback{font-size:13px;margin:12px 0 0;color:#644a33}.s1-explanation-source{font-size:11px;color:var(--muted);margin:12px 0 0}.s1-history{margin-top:15px;font-size:12px}.s1-history summary{cursor:pointer;min-height:36px;display:flex;align-items:center;gap:8px}.s1-history summary::before{content:'▸'}.s1-history[open] summary::before{content:'▾'}.s1-history ol{padding-left:20px;margin:7px 0}.s1-history li{padding:5px 0}.s1-step-state{white-space:normal}.s1-keyboard-note{font-size:12px;color:var(--muted);margin:10px 0}.s1-receipt-version{font-size:11px;color:var(--muted)}
+@media(max-width:700px){.s1-overview{grid-template-columns:1fr 1fr}.s1-stat:first-child{grid-column:1/-1}.s1-stat{padding:14px 15px}.s1-stat strong{font-size:21px}.s1-hero-count{margin-top:20px;text-align:left;min-width:0}.s1-hero-count strong{display:inline;font-size:34px;margin-right:8px}.s1-hero-count span{display:inline}.s1-group-head{gap:10px}.s1-group-head h2{font-size:21px}.s1-group-head p{font-size:13px}.s1-kind{font-size:10px;padding:4px 8px}.s1-profile{grid-template-columns:1fr;gap:12px}.s1-receipt{margin:12px;border-radius:12px;padding:20px 18px}.s1-receipt h1{font-size:21px}.s1-receipt .s1-receipt-meta{grid-template-columns:1fr}.s1-receipt-actions button{flex:1}.s1-written-answer{font-size:21px}.s1-question-title{font-size:15px}.s1-summary-actions button{flex:1}.s1-result-head{font-size:19px}.s1-pilot{font-size:10px;padding:5px 8px}}
+@media(max-width:360px){.s1-overview{gap:8px}.s1-stat{padding:13px 10px}.s1-stat p{font-size:11px}.s1-kind{display:none}.s1-group-head{display:block}.la-step{gap:5px;flex-direction:column}.s1-pilot{max-width:90px;white-space:normal;text-align:center}.s1-translation{font-size:21px!important}}
+@media print{body.stage1-app{background:white}.stage1-app>.la-header,.stage1-app>#main,.stage1-app>.la-footer,.stage1-app>#save-status,.s1-receipt-actions{display:none!important}.s1-receipt{display:block!important;max-width:none;border:0;margin:0;padding:0}.s1-receipt[hidden]{display:none!important}.s1-receipt-item{break-inside:avoid}.s1-receipt-tip{margin-bottom:10px}@page{size:A4;margin:17mm}}
+
+/* The shared style hides used pool buttons; submitted sentence tokens remain visible. */
+.stage1-app .la-sentence .la-token:disabled{visibility:visible;opacity:1;cursor:default}
+
+</style>
+</head>
+<body class="learning-app stage1-app">
+  <a class="la-skip" href="#exercise">Đến bài tập</a>
+  <header class="la-header">
+    <div class="la-brand"><span class="la-seal" lang="zh-Hans">然</span><span>Học cùng cô Nhiên<small>Tiếng Trung từng bước</small></span></div>
+    <span class="s1-pilot">Bản mẫu · Bài 3</span>
+  </header>
+  <main class="la-main" id="main">
+    <section class="la-hero" aria-labelledby="page-title">
+      <div><p class="la-eyebrow">HSK 1 · Bài tập sau giờ học</p><h1 id="page-title">Bài 3 · <span lang="zh-Hans">我是中国人</span></h1><p>Giới thiệu quốc tịch và quan hệ bằng <span lang="zh-Hans">是、的、吗</span>.</p><p>Hoàn thành 5 câu rồi nộp bài để mở phần tiếp theo. Bạn có thể làm lại để luyện thêm.</p></div>
+      <div class="s1-hero-count"><strong>15</strong><span>câu trong bài</span><small>10 câu chấm tự động · 5 câu gửi cô</small></div>
+    </section>
+    <div id="storage-notice" class="la-alert" role="status" hidden></div>
+    <section class="s1-overview" id="overview" aria-label="Tiến độ Bài 3"></section>
+    <nav class="la-steps" id="stages" aria-label="Các phần bài tập"></nav>
+    <section id="exercise" tabindex="-1" aria-label="Bài tập"></section>
+    <section class="s1-tools la-panel" id="backup-panel">
+      <details id="backup-details"><summary>Lưu bản sao / mở lại bài đã lưu</summary>
+        <p class="la-muted">Bài được lưu trên trình duyệt này. Hãy tải bản sao nếu bạn muốn chuyển sang thiết bị khác hoặc giữ bài trước khi đổi trình duyệt.</p>
+        <button type="button" class="la-ghost" id="export-backup">Tải bản sao bài làm</button>
+        <button type="button" class="la-ghost" id="restore-previous" hidden>Khôi phục bản trước khi mở bản sao</button>
+        <label class="s1-label" for="backup-input">Dán nội dung tệp bản sao (JSON)</label>
+        <textarea id="backup-input" rows="4" spellcheck="false" maxlength="4000000" placeholder="Mở tệp .json, sao chép nội dung và dán vào đây."></textarea>
+        <button type="button" class="la-ghost" id="inspect-backup">Kiểm tra bản sao</button>
+        <div id="backup-result" aria-live="polite"></div>
+      </details>
+    </section>
+  </main>
+  <section id="receipt" class="s1-receipt" hidden aria-label="Bài dịch để chụp gửi cô" tabindex="-1"></section>
+  <footer class="la-footer"><span>Bản mẫu độc lập · Bài tập trong phạm vi Bài 1–3.</span><span>Giáo trình <span lang="zh-Hans">新HSK教程1</span> · tr. 10–17.</span></footer>
+  <div id="save-status" class="s1-save" role="status" aria-live="polite"></div>
+  <noscript><p class="la-alert">Vui lòng bật JavaScript để làm và lưu bài tập.</p></noscript>
+  <script>
+/* Lesson 3 pilot: textbook-scoped tasks. Translation is submitted for teacher review. */
+(function (root, factory) {
+  'use strict';
+  var bank = factory();
+  if (typeof module === 'object' && module.exports) module.exports = bank;
+  if (root) {
+    root.HSKStep1Bank = bank;
+    root.HSKStep1BankVersion = 'stage1-20261001';
+  }
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+  return [
+  {
+    "id": 3,
+    "lesson": 3,
+    "title": "我是中国人",
+    "title_vi": "Tôi là người Trung Quốc",
+    "goal_vi": "Giới thiệu quốc tịch và quan hệ bằng 是, 的, 吗; nói về mức độ bận và nỗi nhớ.",
+    "goal_zh": "用“是、的、吗”介绍国籍、身份和关系，表达忙碌程度与想念。",
+    "scope_note_vi": "Bài tập sử dụng nội dung đã học trong Bài 1–3.",
+    "source": {
+      "label": "Giáo trình, tr. 10–17",
+      "book": "新HSK教程1",
+      "printPages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "pdfPages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "choice": [
+      {
+        "id": "l03-choice-01",
+        "prompt": "Chọn câu trả lời phù hợp cho câu hỏi về quốc tịch.",
+        "stem": "你是哪国人？",
+        "options": [
+          "我很忙。",
+          "我是法国人。",
+          "她是我姐姐。",
+          "我叫李文。"
+        ],
+        "answer": 1,
+        "explanation": "哪国人 hỏi người nước nào. 我是法国人 trả lời quốc tịch; các câu khác nói về mức độ bận, quan hệ hoặc tên.",
+        "skill": "问国籍",
+        "kind": "choice",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "我很忙 nghĩa là “Tôi rất bận”, chưa cho biết người nói là người nước nào.",
+          "法国人 nghĩa là “người Pháp”. 我是法国人 trả lời trực tiếp câu hỏi về quốc tịch.",
+          "她是我姐姐 nghĩa là “Cô ấy là chị gái tôi”, nói về quan hệ gia đình.",
+          "我叫李文 nghĩa là “Tôi tên là Lý Văn”, trả lời câu hỏi về tên."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 11, 12, 15",
+          "printPages": [
+            11,
+            12,
+            15
+          ],
+          "pdfPages": [
+            26,
+            27,
+            30
+          ]
+        }
+      },
+      {
+        "id": "l03-choice-02",
+        "prompt": "Cô ấy là chị gái của tôi. Chọn từ nối quan hệ sở hữu.",
+        "stem": "她是我___姐姐。",
+        "options": [
+          "吗",
+          "也",
+          "的",
+          "哪"
+        ],
+        "answer": 2,
+        "explanation": "我 + 的 + 姐姐 nghĩa là chị gái của tôi. Với người thân có thể nói 我姐姐, nhưng khi điền vào chỗ trống ở đây thì chọn 的.",
+        "skill": "的与亲属关系",
+        "kind": "choice",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "吗 đặt ở cuối câu hỏi có – không, không nối 我 với 姐姐.",
+          "也 nghĩa là “cũng”. Trong câu giới thiệu này, 也 cần đứng trước 是, không đứng giữa 我 và 姐姐.",
+          "的 tạo cụm 我的姐姐: “chị gái của tôi”. Cũng có thể nói 我姐姐, nhưng ở đây cần chọn một từ để điền vào chỗ trống.",
+          "哪 nghĩa là “nào”, không diễn tả quan hệ “chị gái của tôi” trong câu này."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 11, 12, 14",
+          "printPages": [
+            11,
+            12,
+            14
+          ],
+          "pdfPages": [
+            26,
+            27,
+            29
+          ]
+        }
+      },
+      {
+        "id": "l03-choice-03",
+        "prompt": "Chọn câu hỏi xác nhận người nghe có phải là học sinh hay không.",
+        "stem": "",
+        "options": [
+          "你是学生吗？",
+          "你是哪国人？",
+          "她是我老师。",
+          "我们很想你。"
+        ],
+        "answer": 0,
+        "explanation": "Giữ câu 你是学生 rồi thêm 吗 ở cuối để hỏi “Bạn có phải là học sinh không?”. Trong ba lựa chọn còn lại, 哪国人 hỏi quốc tịch; hai câu còn lại là câu trần thuật.",
+        "skill": "吗问句",
+        "kind": "choice",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "你是学生吗？ dùng 吗 để hỏi người nghe có phải là học sinh hay không.",
+          "你是哪国人？ hỏi quốc tịch, không hỏi người nghe có phải là học sinh hay không.",
+          "她是我老师。 là câu giới thiệu giáo viên của người nói, không phải câu hỏi.",
+          "我们很想你。 diễn tả nỗi nhớ: “Chúng tôi rất nhớ bạn”, không phải câu hỏi."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 14, 17",
+          "printPages": [
+            14,
+            17
+          ],
+          "pdfPages": [
+            29,
+            32
+          ]
+        }
+      },
+      {
+        "id": "l03-choice-04",
+        "prompt": "Bạn không bận lắm. Chọn câu trả lời đúng với thông tin này.",
+        "stem": "你工作忙吗？",
+        "options": [
+          "我很忙。",
+          "我是老师。",
+          "我们很想你。",
+          "我不太忙。"
+        ],
+        "answer": 3,
+        "explanation": "不太忙 nghĩa là “không bận lắm”: 不太 đứng trước 忙 để diễn tả mức độ không cao. Vì đề bài cho biết bạn không bận lắm, câu trả lời phù hợp là 我不太忙。",
+        "skill": "不太",
+        "kind": "choice",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "我很忙 nghĩa là “Tôi rất bận”, khác với thông tin “không bận lắm”.",
+          "我是老师 nghĩa là “Tôi là giáo viên”, chưa trả lời về mức độ bận.",
+          "我们很想你 nghĩa là “Chúng tôi rất nhớ bạn”, không nói về mức độ bận.",
+          "我不太忙 nghĩa là “Tôi không bận lắm”. 不太 làm giảm mức độ của 忙."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 14, 15",
+          "printPages": [
+            14,
+            15
+          ],
+          "pdfPages": [
+            29,
+            30
+          ]
+        }
+      },
+      {
+        "id": "l03-choice-05",
+        "prompt": "Lý Văn là người Trung Quốc; cô giáo cũng là người Trung Quốc. Chọn từ điền.",
+        "stem": "李文是中国人。老师___是中国人。",
+        "options": [
+          "谁",
+          "什么",
+          "也",
+          "哪"
+        ],
+        "answer": 2,
+        "explanation": "也 nghĩa là cũng, thể hiện hai người có cùng quốc tịch. Đặt 也 trước 是: 老师也是中国人.",
+        "skill": "也是",
+        "kind": "choice",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "谁 nghĩa là “ai”, không bổ sung ý “cũng” giữa hai câu này.",
+          "什么 nghĩa là “gì”, không diễn tả việc hai người có cùng quốc tịch.",
+          "也 nghĩa là “cũng” và đứng trước 是: 老师也是中国人。",
+          "哪 nghĩa là “nào”, thường dùng trong 哪国人 để hỏi quốc tịch; câu này cần ý “cũng”."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 10, 12",
+          "printPages": [
+            10,
+            12
+          ],
+          "pdfPages": [
+            25,
+            27
+          ]
+        }
+      }
+    ],
+    "sort": [
+      {
+        "id": "l03-sort-01",
+        "prompt": "Ghép câu giới thiệu quốc tịch.",
+        "meaning": "Tôi là người Thái Lan.",
+        "tokens": [
+          "我",
+          "是",
+          "泰国人"
+        ],
+        "answers": [
+          "我是泰国人。"
+        ],
+        "explanation": "Trật tự là chủ ngữ 我 + 是 + quốc tịch 泰国人. 人 sau tên nước chỉ người của nước đó.",
+        "skill": "国籍表达",
+        "kind": "sort",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 11, 12",
+          "printPages": [
+            11,
+            12
+          ],
+          "pdfPages": [
+            26,
+            27
+          ]
+        }
+      },
+      {
+        "id": "l03-sort-02",
+        "prompt": "Ghép câu hỏi có – không.",
+        "meaning": "Bạn là người Trung Quốc phải không?",
+        "tokens": [
+          "你",
+          "是",
+          "中国人",
+          "吗"
+        ],
+        "answers": [
+          "你是中国人吗？"
+        ],
+        "explanation": "Giữ nguyên trật tự 你是中国人 rồi thêm 吗 ở cuối câu để hỏi.",
+        "skill": "吗问句",
+        "kind": "sort",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 11, 14",
+          "printPages": [
+            11,
+            14
+          ],
+          "pdfPages": [
+            26,
+            29
+          ]
+        }
+      },
+      {
+        "id": "l03-sort-03",
+        "prompt": "Ghép câu giới thiệu giáo viên. Bắt đầu bằng 她.",
+        "meaning": "Cô ấy là giáo viên tiếng Trung của tôi.",
+        "tokens": [
+          "她",
+          "是",
+          "我的",
+          "中文老师"
+        ],
+        "answers": [
+          "她是我的中文老师。"
+        ],
+        "explanation": "我的 đứng trước 中文老师 để nói giáo viên tiếng Trung của tôi. Cả cụm 我的中文老师 đứng sau 是.",
+        "skill": "的字结构",
+        "kind": "sort",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 10, 11",
+          "printPages": [
+            10,
+            11
+          ],
+          "pdfPages": [
+            25,
+            26
+          ]
+        }
+      },
+      {
+        "id": "l03-sort-04",
+        "prompt": "Ghép câu diễn tả mức độ bận.",
+        "meaning": "Chị gái tôi không bận lắm.",
+        "tokens": [
+          "我姐姐",
+          "不",
+          "太",
+          "忙"
+        ],
+        "answers": [
+          "我姐姐不太忙。"
+        ],
+        "explanation": "Chủ ngữ là 我姐姐: “chị gái tôi”. 不太 đứng ngay trước 忙 để nói “không bận lắm”; không đặt 是 trước 忙.",
+        "skill": "不太忙",
+        "kind": "sort",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 11, 14",
+          "printPages": [
+            11,
+            14
+          ],
+          "pdfPages": [
+            26,
+            29
+          ]
+        }
+      },
+      {
+        "id": "l03-sort-05",
+        "prompt": "Ghép câu diễn tả nỗi nhớ.",
+        "meaning": "Chúng tôi cũng rất nhớ bạn.",
+        "tokens": [
+          "我们",
+          "也",
+          "很",
+          "想",
+          "你"
+        ],
+        "answers": [
+          "我们也很想你。"
+        ],
+        "explanation": "我们 là “chúng tôi”; 想你 là “nhớ bạn”. 也 đứng trước 很想: 我们也很想你。 Trong bài này, 想 mang nghĩa “nhớ”, không phải “muốn làm việc gì”.",
+        "skill": "想与也",
+        "kind": "sort",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 14",
+          "printPages": [
+            14
+          ],
+          "pdfPages": [
+            29
+          ]
+        }
+      }
+    ],
+    "translation": [
+      {
+        "id": "l03-translation-free-01",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "prompt": "Giáo viên tiếng Trung của tôi là người Pháp.",
+        "skill": "所属关系与国籍",
+        "source": {
+          "label": "Giáo trình, tr. 10, 11",
+          "printPages": [
+            10,
+            11
+          ],
+          "pdfPages": [
+            25,
+            26
+          ]
+        }
+      },
+      {
+        "id": "l03-translation-free-02",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "prompt": "Cô ấy có phải là chị gái của bạn không?",
+        "skill": "人物关系与吗问句",
+        "source": {
+          "label": "Giáo trình, tr. 11, 12, 14",
+          "printPages": [
+            11,
+            12,
+            14
+          ],
+          "pdfPages": [
+            26,
+            27,
+            29
+          ]
+        }
+      },
+      {
+        "id": "l03-translation-free-03",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "prompt": "Đây là bạn học của tôi.",
+        "skill": "这与关系介绍",
+        "source": {
+          "label": "Giáo trình, tr. 11, 12, 16",
+          "printPages": [
+            11,
+            12,
+            16
+          ],
+          "pdfPages": [
+            26,
+            27,
+            31
+          ]
+        }
+      },
+      {
+        "id": "l03-translation-free-04",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "prompt": "Chị gái tôi không phải là giáo viên.",
+        "skill": "不是与身份关系",
+        "source": {
+          "label": "Giáo trình, tr. 11, 14",
+          "printPages": [
+            11,
+            14
+          ],
+          "pdfPages": [
+            26,
+            29
+          ]
+        }
+      },
+      {
+        "id": "l03-translation-free-05",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "prompt": "Tôi rất nhớ các bạn.",
+        "skill": "想念义与人称",
+        "source": {
+          "label": "Giáo trình, tr. 14",
+          "printPages": [
+            14
+          ],
+          "pdfPages": [
+            29
+          ]
+        }
+      }
+    ]
+  }
+];
+});
+
+</script>
+  <script>
+/* Isolated Stage 1 state. This module never reads or writes browser storage. */
+(function (root, factory) {
+  'use strict';
+  const api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  if (root) root.HSKStep1Engine = api;
+})(typeof window !== 'undefined' ? window : null, function () {
+  'use strict';
+
+  const KEY = 'ran_hsk1_stage1_v3';
+  const LEGACY_KEY = 'ran_hsk1_learning_v2';
+  const SCHEMA = 3;
+  const KINDS = Object.freeze(['choice', 'sort', 'translation', 'listening']);
+  const PATH = Object.freeze(['choice', 'sort', 'translation']);
+  const MAX_TRANSLATION_LENGTH = 12000;
+  const MAX_PROFILE_LENGTH = 200;
+  const MAX_HISTORY = 20;
+  const MAX_JSON_LENGTH = 5 * 1024 * 1024;
+  const own = (object, key) => Object.prototype.hasOwnProperty.call(object, key);
+  const record = value => value !== null && typeof value === 'object' &&
+    !Array.isArray(value) && [Object.prototype, null].includes(Object.getPrototypeOf(value));
+  const unsafeKeys = new Set(['__proto__', 'prototype', 'constructor']);
+  const timestamp = value => Number.isFinite(value) && value >= 0 && value <= 8640000000000000;
+  const lessonNumber = value => {
+    if (typeof value !== 'number' && typeof value !== 'string') return null;
+    if (typeof value === 'string' && !/^([1-9]|1[0-5])$/.test(value)) return null;
+    const number = Number(value);
+    return Number.isInteger(number) && number >= 1 && number <= 15 ? number : null;
+  };
+  const fail = message => { throw new Error(message); };
+
+  // White space and zero-width formatting characters determine completion only.
+  // The student's original string is always stored unchanged.
+  const visibleText = value => value.replace(/[\p{White_Space}\p{Default_Ignorable_Code_Point}]/gu, '');
+  const normal = value => String(value == null ? '' : value).normalize('NFKC')
+    .replace(/[\p{White_Space}\p{Default_Ignorable_Code_Point}\p{Punctuation}]/gu, '');
+
+  function copy(value, depth = 0, seen = new Set()) {
+    if (depth > 40) fail('Dữ liệu lồng quá nhiều cấp.');
+    if (value === null || typeof value === 'boolean' || typeof value === 'string') return value;
+    if (typeof value === 'number' && Number.isFinite(value)) return value;
+    if ((!record(value) && !Array.isArray(value)) || seen.has(value)) fail('Dữ liệu không phải JSON hợp lệ.');
+    seen.add(value);
+    let result;
+    if (Array.isArray(value)) {
+      if (value.length > 100000) fail('Danh sách dữ liệu quá lớn.');
+      result = value.map(item => copy(item, depth + 1, seen));
+    } else {
+      result = {};
+      for (const [key, item] of Object.entries(value)) {
+        if (unsafeKeys.has(key)) fail('Khóa dữ liệu không an toàn.');
+        result[key] = copy(item, depth + 1, seen);
+      }
+    }
+    seen.delete(value);
+    return result;
+  }
+
+  function cleanInput(input) {
+    const value = copy(input);
+    if (JSON.stringify(value).length > MAX_JSON_LENGTH) fail('Bản sao lưu vượt quá 5 MB ký tự JSON.');
+    return value;
+  }
+
+  function blank() {
+    return {
+      schema: SCHEMA, lessons: {}, profile: {name: '', className: ''},
+      words: {}, questionReviews: {}, preferences: {}, archive: {}, updatedAt: null
+    };
+  }
+
+  function group(state, lesson, kind) {
+    const id = lessonNumber(lesson);
+    if (id === null || !KINDS.includes(kind) || !record(state) ||
+        state.schema !== SCHEMA || !record(state.lessons)) fail('Nhóm bài không hợp lệ.');
+    if (!own(state.lessons, id)) state.lessons[id] = {};
+    if (!record(state.lessons[id])) fail('Dữ liệu bài học không hợp lệ.');
+    if (!own(state.lessons[id], kind)) {
+      state.lessons[id][kind] = {
+        draft: {}, orders: {}, first: null, attempt: null, latest: null,
+        completed: false, history: []
+      };
+    }
+    return state.lessons[id][kind];
+  }
+
+  function tokenIndexes(q, value, complete) {
+    return Array.isArray(q.tokens) && Array.isArray(value) &&
+      (!complete || value.length === q.tokens.length) && value.length <= q.tokens.length &&
+      new Set(value).size === value.length &&
+      value.every(index => Number.isInteger(index) && index >= 0 && index < q.tokens.length);
+  }
+
+  function isAnswered(q, value) {
+    if (!q || !KINDS.includes(q.kind)) return false;
+    if (q.kind === 'translation') {
+      return typeof value === 'string' && value.length <= MAX_TRANSLATION_LENGTH &&
+        visibleText(value).length > 0;
+    }
+    if (q.kind === 'sort') return tokenIndexes(q, value, true);
+    return Array.isArray(q.options) && Number.isInteger(value) && value >= 0 && value < q.options.length;
+  }
+
+  function validDraft(q, value) {
+    if (q.kind === 'translation') return typeof value === 'string' && value.length <= MAX_TRANSLATION_LENGTH;
+    return q.kind === 'sort' ? tokenIndexes(q, value, false) : isAnswered(q, value);
+  }
+
+  function check(q, value) {
+    // Manual work has no machine judgement, including when its draft is blank.
+    if (q && q.kind === 'translation') return null;
+    if (!isAnswered(q, value)) return false;
+    if (q.kind === 'sort') {
+      const sentence = value.map(index => q.tokens[index]).join('');
+      return Array.isArray(q.answers) && q.answers.some(answer => normal(answer) === normal(sentence));
+    }
+    return value === q.answer;
+  }
+
+  function canOpen(state, lesson, kind) {
+    const id = lessonNumber(lesson);
+    if (id === null || !KINDS.includes(kind) || !record(state) || !record(state.lessons)) return false;
+    if (kind === 'choice' || kind === 'listening') return true;
+    const position = PATH.indexOf(kind);
+    return position > 0 && PATH.slice(0, position).every(previous =>
+      state.lessons[id]?.[previous]?.completed === true && !!state.lessons[id][previous].first);
+  }
+
+  function assertQuestions(lesson, kind, questions) {
+    const id = lessonNumber(lesson);
+    if (id === null || !KINDS.includes(kind) || !Array.isArray(questions) || questions.length !== 5) {
+      fail('Mỗi nhóm cần đúng 5 câu hỏi của bài học này.');
+    }
+    const ids = new Set();
+    for (const q of questions) {
+      if (!record(q) || typeof q.id !== 'string' || !/^[A-Za-z0-9][A-Za-z0-9_-]{0,127}$/.test(q.id) ||
+          ids.has(q.id) || q.kind !== kind || (q.lesson !== undefined && q.lesson !== id)) {
+        fail('Mã câu hỏi hoặc loại câu hỏi không hợp lệ.');
+      }
+      ids.add(q.id);
+      if (kind === 'translation') {
+        if (q.assessment !== 'manual' || typeof q.prompt !== 'string' || !visibleText(q.prompt)) {
+          fail('Câu dịch cần lời nhắc và chế độ giáo viên chấm.');
+        }
+        if (own(q, 'answer') || own(q, 'answers') || own(q, 'options')) {
+          fail('Câu dịch tự viết không được chứa đáp án hoặc lựa chọn dành cho máy chấm.');
+        }
+      } else if (kind === 'sort') {
+        if (!Array.isArray(q.tokens) || q.tokens.length < 1 || q.tokens.length > 100 ||
+            q.tokens.some(token => typeof token !== 'string' || !token.length) ||
+            !Array.isArray(q.answers) || !q.answers.length ||
+            q.answers.some(answer => typeof answer !== 'string' || !normal(answer))) {
+          fail('Từ rời hoặc đáp án xếp câu không hợp lệ.');
+        }
+      } else if (!Array.isArray(q.options) || q.options.length !== 4 ||
+          q.options.some(option => typeof option !== 'string' || !visibleText(option)) ||
+          !Number.isInteger(q.answer) || q.answer < 0 || q.answer >= 4) {
+        fail('Câu trắc nghiệm cần đúng 4 lựa chọn và một đáp án.');
+      }
+    }
+    return questions;
+  }
+
+  function indexBank(bank) {
+    if (!Array.isArray(bank) || !bank.length) fail('Ngân hàng câu hỏi không hợp lệ.');
+    const lessons = new Map(), lookup = new Map();
+    for (const row of bank) {
+      if (!record(row) || lessonNumber(row.lesson) === null || lessons.has(Number(row.lesson))) {
+        fail('Bài học trong ngân hàng bị trùng hoặc không hợp lệ.');
+      }
+      const id = Number(row.lesson), kinds = {};
+      for (const kind of KINDS) {
+        if (kind === 'listening' && (row[kind] === undefined || (Array.isArray(row[kind]) && !row[kind].length))) continue;
+        const questions = assertQuestions(id, kind, row[kind]);
+        kinds[kind] = questions;
+        for (const q of questions) {
+          if (lookup.has(q.id)) fail('Mã câu hỏi bị trùng trong ngân hàng.');
+          lookup.set(q.id, {q, lesson: id, kind});
+        }
+      }
+      lessons.set(id, kinds);
+    }
+    return {lessons, lookup};
+  }
+
+  function fingerprint(q) {
+    const source = JSON.stringify([q.id, q.kind, q.prompt || '', q.stem || '', q.meaning || '',
+      q.options || [], q.tokens || [], q.answer ?? null, q.answers || [],
+      q.assessment || 'automatic', q.transcript || '', q.audio || null]);
+    let hash = 2166136261;
+    for (let index = 0; index < source.length; index++) hash = Math.imul(hash ^ source.charCodeAt(index), 16777619);
+    return 'q1-' + (hash >>> 0).toString(16).padStart(8, '0');
+  }
+
+  function answerMap(input, questions, complete) {
+    if (!record(input)) fail('Bản ghi câu trả lời không hợp lệ.');
+    const lookup = new Map(questions.map(q => [q.id, q])), output = {};
+    for (const [id, value] of Object.entries(input)) {
+      const q = lookup.get(id);
+      if (!q) fail('Câu hỏi không thuộc nhóm bài này.');
+      if (!(complete ? isAnswered(q, value) : validDraft(q, value))) fail('Kiểu câu trả lời không hợp lệ.');
+      output[id] = copy(value);
+    }
+    if (complete && questions.some(q => !own(output, q.id))) fail('Lần nộp bài chưa đủ 5 câu.');
+    return output;
+  }
+
+  function makeAttempt(kind, questions, answers, at) {
+    if (!timestamp(at)) fail('Thời gian nộp bài không hợp lệ.');
+    const exact = answerMap(answers, questions, true);
+    const canonicalAnswers = Object.fromEntries(questions.map(q => [q.id, exact[q.id]]));
+    const manual = kind === 'translation';
+    const results = manual ? null : Object.fromEntries(questions.map(q => [q.id, check(q, exact[q.id])]));
+    return {
+      assessment: manual ? 'manual' : 'automatic', answers: canonicalAnswers,
+      results, correct: manual ? null : Object.values(results).filter(Boolean).length,
+      total: questions.length, at,
+      questionFingerprints: Object.fromEntries(questions.map(q => [q.id, fingerprint(q)]))
+    };
+  }
+
+  function remember(state, q, correct, now, lesson) {
+    if (q.kind === 'translation' || typeof correct !== 'boolean') return;
+    const old = state.questionReviews[q.id] || {streak: 0, attempts: 0, mistakes: 0};
+    const streak = correct ? old.streak + 1 : 0;
+    const days = correct ? [1, 3, 7, 14][Math.min(streak - 1, 3)] : 0;
+    state.questionReviews[q.id] = {
+      lesson: Number(lesson), kind: q.kind, streak, attempts: old.attempts + 1,
+      mistakes: old.mistakes + (correct ? 0 : 1), lastCorrect: correct,
+      lastAt: now, dueAt: now + days * 86400000
+    };
+  }
+
+  function submit(state, lesson, kind, questions, now = Date.now()) {
+    if (!canOpen(state, lesson, kind)) return {ok: false, reason: 'locked'};
+    assertQuestions(lesson, kind, questions);
+    if (!timestamp(now)) fail('Thời gian nộp bài không hợp lệ.');
+    const g = group(state, lesson, kind);
+    if (g.attempt) return {ok: false, reason: 'submitted'};
+    answerMap(g.draft, questions, false);
+    const missing = questions.filter(q => !isAnswered(q, g.draft[q.id])).map(q => q.id);
+    if (missing.length) return {ok: false, reason: 'missing', missing};
+    const attempt = makeAttempt(kind, questions, g.draft, now);
+    g.attempt = copy(attempt);
+    g.latest = copy(attempt);
+    if (!g.first) g.first = copy(attempt);
+    g.history.push(copy(attempt));
+    g.history = g.history.slice(-MAX_HISTORY);
+    g.completed = true;
+    state.updatedAt = now;
+    if (kind !== 'translation') questions.forEach(q => remember(state, q, attempt.results[q.id], now, lesson));
+    return {ok: true, manual: kind === 'translation', correct: attempt.correct,
+      total: attempt.total, completed: true, attempt: copy(attempt)};
+  }
+
+  function restart(state, lesson, kind, now = Date.now()) {
+    const g = group(state, lesson, kind);
+    g.draft = {};
+    g.orders = {};
+    g.attempt = null;
+    if (timestamp(now)) state.updatedAt = now;
+    return g;
+  }
+
+  function totals(state, lesson, lessonBank) {
+    const id = lessonNumber(lesson);
+    if (id === null) fail('Bài học không hợp lệ.');
+    const row = state.lessons[id] || {};
+    const source = Array.isArray(lessonBank) ? lessonBank.find(item => Number(item.lesson) === id) : lessonBank;
+    const count = kind => source ? (Array.isArray(source[kind]) ? source[kind].length : 0) :
+      (kind === 'listening' ? (row[kind]?.first?.total || 0) : 5);
+    function scored(kinds) {
+      let total = 0, submitted = 0, firstCorrect = 0, latestCorrect = 0;
+      for (const kind of kinds) {
+        const g = row[kind];
+        total += count(kind);
+        if (g?.first) {
+          submitted += g.first.total;
+          firstCorrect += g.first.correct;
+          latestCorrect += (g.latest || g.first).correct;
+        }
+      }
+      return {total, submitted, firstCorrect, latestCorrect,
+        firstPercent: submitted ? Math.round(firstCorrect / submitted * 100) : null,
+        latestPercent: submitted ? Math.round(latestCorrect / submitted * 100) : null};
+    }
+    const automatic = scored(['choice', 'sort']);
+    const manual = {total: count('translation'), submitted: row.translation?.first?.total || 0, correct: null};
+    const completedGroups = PATH.filter(kind => row[kind]?.completed === true && row[kind]?.first).length;
+    const listening = scored(['listening']);
+    return {
+      homework: {total: automatic.total + manual.total, submitted: automatic.submitted + manual.submitted,
+        completedGroups, done: completedGroups === PATH.length},
+      automatic, manual,
+      listening: {available: count('listening') > 0, ...listening}
+    };
+  }
+
+  function readOrders(input, questions) {
+    if (!record(input)) fail('Thứ tự hiển thị không hợp lệ.');
+    const lookup = new Map(questions.map(q => [q.id, q])), output = {};
+    for (const [id, value] of Object.entries(input)) {
+      const q = lookup.get(id);
+      if (!q || q.kind === 'translation') fail('Thứ tự hiển thị không thuộc câu hỏi khách quan.');
+      const length = q.kind === 'sort' ? q.tokens.length : q.options.length;
+      if (!Array.isArray(value) || value.length !== length || new Set(value).size !== length ||
+          value.some(index => !Number.isInteger(index) || index < 0 || index >= length)) {
+        fail('Thứ tự hiển thị phải là một hoán vị đầy đủ.');
+      }
+      output[id] = value.slice();
+    }
+    return output;
+  }
+
+  function readAttempt(raw, kind, questions) {
+    if (raw === null || raw === undefined) return null;
+    if (!record(raw) || !record(raw.questionFingerprints)) fail('Thiếu thông tin phiên bản câu hỏi trong lần nộp.');
+    if (Object.keys(raw.questionFingerprints).length !== questions.length ||
+        questions.some(q => raw.questionFingerprints[q.id] !== fingerprint(q))) {
+      fail('Nội dung câu hỏi đã thay đổi; không thể gán kết quả cũ cho câu mới.');
+    }
+    return makeAttempt(kind, questions, raw.answers, raw.at);
+  }
+
+  const sameAttempt = (a, b) => !!a && !!b && a.at === b.at && JSON.stringify(a.answers) === JSON.stringify(b.answers);
+
+  function profile(input) {
+    if (input === undefined) return {name: '', className: ''};
+    if (!record(input)) fail('Thông tin học sinh không hợp lệ.');
+    const output = {};
+    for (const key of ['name', 'className']) {
+      const value = input[key] === undefined ? '' : input[key];
+      if (typeof value !== 'string' || value.length > MAX_PROFILE_LENGTH) fail('Tên và lớp cần là văn bản, tối đa 200 ký tự mỗi mục.');
+      output[key] = value;
+    }
+    return output;
+  }
+
+  function rebuildReviews(state, bankIndex) {
+    state.questionReviews = {};
+    const events = [];
+    for (const [lesson, row] of Object.entries(state.lessons)) {
+      for (const kind of ['choice', 'sort', 'listening']) {
+        const g = row[kind];
+        if (!g?.first) continue;
+        const retained = g.history.slice();
+        if (!retained.some(item => sameAttempt(item, g.first))) retained.unshift(g.first);
+        for (const attempt of retained) events.push({lesson: Number(lesson), kind, attempt});
+      }
+    }
+    events.sort((a, b) => a.attempt.at - b.attempt.at);
+    for (const event of events) {
+      for (const q of bankIndex.lessons.get(event.lesson)[event.kind]) {
+        remember(state, q, event.attempt.results[q.id], event.attempt.at, event.lesson);
+      }
+    }
+  }
+
+  function validateImport(input, bank) {
+    const raw = cleanInput(input), bankIndex = indexBank(bank);
+    if (!record(raw) || raw.schema !== SCHEMA || !record(raw.lessons)) fail('Tệp không phải bản sao lưu mẫu bước 1, phiên bản 3.');
+    const state = blank();
+    state.profile = profile(raw.profile);
+    for (const key of ['words', 'preferences', 'archive']) {
+      if (raw[key] !== undefined && !record(raw[key])) fail('Dữ liệu ' + key + ' không hợp lệ.');
+      state[key] = copy(raw[key] || {});
+    }
+    if (raw.updatedAt !== undefined && raw.updatedAt !== null && !timestamp(raw.updatedAt)) fail('Thời gian lưu không hợp lệ.');
+    state.updatedAt = raw.updatedAt ?? null;
+    for (const [lesson, row] of Object.entries(raw.lessons)) {
+      const id = lessonNumber(lesson), kinds = bankIndex.lessons.get(id);
+      if (!kinds || !record(row)) fail('Bài học không thuộc ngân hàng của bản này.');
+      for (const [kind, source] of Object.entries(row)) {
+        if (!KINDS.includes(kind) || !kinds[kind] || !record(source)) fail('Nhóm bài trong bản sao lưu không hợp lệ.');
+        const questions = kinds[kind], target = group(state, id, kind);
+        target.draft = answerMap(source.draft === undefined ? {} : source.draft, questions, false);
+        target.orders = readOrders(source.orders === undefined ? {} : source.orders, questions);
+        target.first = readAttempt(source.first, kind, questions);
+        target.attempt = readAttempt(source.attempt, kind, questions);
+        target.latest = readAttempt(source.latest, kind, questions);
+        if (source.history !== undefined && (!Array.isArray(source.history) || source.history.length > MAX_HISTORY)) {
+          fail('Lịch sử nộp bài không hợp lệ.');
+        }
+        target.history = (source.history || []).map(attempt => {
+          const parsed = readAttempt(attempt, kind, questions);
+          if (!parsed) fail('Lịch sử có lần nộp rỗng.');
+          return parsed;
+        });
+        if (!target.first && (target.attempt || target.latest || target.history.length || source.completed === true)) {
+          fail('Thiếu bản ghi lần nộp đầu tiên.');
+        }
+        if (target.first) {
+          target.latest = target.latest || target.attempt || target.history.at(-1) || copy(target.first);
+          if (!target.history.length) {
+            target.history = [copy(target.first)];
+            if (!sameAttempt(target.first, target.latest)) target.history.push(copy(target.latest));
+          }
+          if (!sameAttempt(target.history.at(-1), target.latest) ||
+              (target.history.length < MAX_HISTORY && !sameAttempt(target.history[0], target.first))) {
+            fail('Lịch sử và bản ghi lần nộp không khớp.');
+          }
+          if (target.attempt && (!sameAttempt(target.attempt, target.latest) ||
+              JSON.stringify(answerMap(target.draft, questions, true)) !== JSON.stringify(target.attempt.answers))) {
+            // Compare by question below as drafts may have a different property insertion order.
+            if (!sameAttempt(target.attempt, target.latest) || questions.some(q =>
+              JSON.stringify(target.draft[q.id]) !== JSON.stringify(target.attempt.answers[q.id]))) {
+              fail('Bài hiện tại không khớp với bản đã nộp.');
+            }
+          }
+          target.completed = true;
+        }
+      }
+    }
+    for (const [lesson, row] of Object.entries(state.lessons)) {
+      for (const kind of PATH) {
+        if (row[kind]?.first && !canOpen(state, lesson, kind)) fail('Thứ tự hoàn thành bài tập không hợp lệ.');
+      }
+    }
+    // Question-review outcomes are reconstructed from answers, never imported as grades.
+    rebuildReviews(state, bankIndex);
+    return state;
+  }
+
+  function migrateLegacy(input, bank, now = Date.now()) {
+    const raw = cleanInput(input), bankIndex = indexBank(bank);
+    if (!record(raw) || raw.schema !== 2 || !record(raw.lessons)) fail('Tệp không phải tiến độ cũ phiên bản 2.');
+    if (!timestamp(now)) fail('Thời gian chuyển bản không hợp lệ.');
+    const state = blank();
+    const migration = {sourceSchema: 2, at: now, restoredGroups: [], draftOnlyGroups: [],
+      heldGroups: [], archivedTranslationLessons: [], warnings: []};
+    state.archive = {legacy: copy(raw), migration};
+    state.updatedAt = now;
+    if (record(raw.words)) state.words = copy(raw.words);
+    if (record(raw.preferences)) state.preferences = copy(raw.preferences);
+    try { state.profile = profile(raw.profile); } catch (error) { migration.warnings.push(error.message); }
+    for (const [lesson, sourceRow] of Object.entries(raw.lessons)) {
+      if (record(sourceRow) && own(sourceRow, 'translation')) migration.archivedTranslationLessons.push(lesson);
+    }
+    for (const [lesson, kinds] of bankIndex.lessons) {
+      const row = raw.lessons[lesson];
+      if (!record(row)) continue;
+      for (const kind of ['choice', 'sort', 'listening']) {
+        const questions = kinds[kind], source = row[kind];
+        if (!questions || !record(source)) continue;
+        const compatible = questions.filter(q => q.legacyCompatible === true);
+        if (!compatible.length) continue;
+        const target = group(state, lesson, kind), label = lesson + ':' + kind;
+        if (record(source.draft)) {
+          for (const q of compatible) {
+            if (own(source.draft, q.id) && validDraft(q, source.draft[q.id])) target.draft[q.id] = copy(source.draft[q.id]);
+          }
+        }
+        if (compatible.length !== questions.length) {
+          migration.draftOnlyGroups.push(label);
+          continue;
+        }
+        try {
+          // A changed item cannot inherit a score merely because its ID was reused.
+          if (!record(source.first)) {
+            if (Object.keys(target.draft).length) migration.draftOnlyGroups.push(label);
+            continue;
+          }
+          target.first = makeAttempt(kind, questions, source.first.answers, source.first.at);
+          let latest = copy(target.first);
+          if (record(source.attempt)) {
+            try { latest = makeAttempt(kind, questions, source.attempt.answers, source.attempt.at); }
+            catch (error) { migration.warnings.push(label + ': ' + error.message); }
+          }
+          target.latest = copy(latest);
+          target.history = [copy(target.first)];
+          if (!sameAttempt(target.first, latest)) target.history.push(copy(latest));
+          const exactDraft = questions.every(q => isAnswered(q, target.draft[q.id]) &&
+            JSON.stringify(target.draft[q.id]) === JSON.stringify(latest.answers[q.id]));
+          // Legacy corrections may already have changed draft; keep that draft as an
+          // unsubmitted redo while preserving the original first and last snapshots.
+          target.attempt = source.attempt && exactDraft ? copy(latest) : null;
+          target.completed = true;
+          if (record(source.orders)) {
+            try { target.orders = readOrders(source.orders, questions); } catch (_) { target.orders = {}; }
+          }
+          migration.restoredGroups.push(label);
+        } catch (error) {
+          target.first = null; target.latest = null; target.attempt = null;
+          target.completed = false; target.history = [];
+          migration.draftOnlyGroups.push(label);
+          migration.warnings.push(label + ': ' + error.message);
+        }
+      }
+    }
+    for (const [lesson, row] of Object.entries(state.lessons)) {
+      const target = row.sort;
+      if (target?.first && !canOpen(state, lesson, 'sort')) {
+        target.first = null; target.latest = null; target.attempt = null;
+        target.completed = false; target.history = [];
+        const label = lesson + ':sort';
+        migration.heldGroups.push(label);
+        migration.restoredGroups = migration.restoredGroups.filter(item => item !== label);
+      }
+    }
+    // New free-writing groups remain absent and unsubmitted. The entire old
+    // translation group, including old option answers, is intact in archive.legacy.
+    return validateImport(state, bank);
+  }
+
+  return {KEY, LEGACY_KEY, SCHEMA, KINDS, PATH, MAX_TRANSLATION_LENGTH, MAX_PROFILE_LENGTH,
+    blank, group, normal, isAnswered, check, canOpen, submit, restart, totals,
+    validateImport, migrateLegacy, remember};
+});
+
+</script>
+  <script>
+(function () {
+  'use strict';
+  const E = window.HSKStep1Engine;
+  const bank = window.HSKStep1Bank;
+  const lesson = bank[0];
+  const lessonId = lesson.id;
+  const labels = { choice: 'Chọn A, B, C, D', sort: 'Ghép câu', translation: 'Dịch sang tiếng Trung' };
+  const descriptions = {
+    choice: 'Chọn một đáp án cho mỗi câu. Bạn sẽ xem điểm và giải thích sau khi nộp đủ 5 câu.',
+    sort: 'Chạm từng từ để ghép câu theo nghĩa tiếng Việt. Chạm từ trong câu để đưa từ đó trở lại.',
+    translation: 'Viết câu tiếng Trung cho từng câu tiếng Việt. Trang web lưu nguyên bài của bạn để bạn chụp gửi cô.'
+  };
+  const byId = id => document.getElementById(id);
+  const escape = value => String(value == null ? '' : value).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[c]);
+  const clone = value => JSON.parse(JSON.stringify(value));
+  let state = E.blank();
+  let kind = 'choice';
+  let storageAvailable = true;
+  let submittedWithMissing = false;
+  let candidate = null;
+  let saveTimer;
+  let writeFailed = false;
+  try {
+    const raw = localStorage.getItem(E.KEY);
+    if (raw) state = E.validateImport(JSON.parse(raw), bank);
+  } catch (error) {
+    storageAvailable = false;
+    byId('storage-notice').hidden = false;
+    byId('storage-notice').textContent = 'Chưa mở được bản lưu trên trình duyệt. Bài hiện tại vẫn làm được; hãy tải bản sao trước khi đóng trang. Dữ liệu cũ chưa bị ghi đè.';
+  }
+  if (!state.profile) state.profile = { name: '', className: '' };
+  for (const k of E.PATH) if (E.canOpen(state, lessonId, k) && !E.group(state, lessonId, k).completed) { kind = k; break; }
+  const g = () => E.group(state, lessonId, kind);
+  const questions = () => lesson[kind];
+  function dateLabel(value) {
+    const date = new Date(value);
+    if (Number.isNaN(date.valueOf())) return 'Không có thời gian ghi nhận';
+    return new Intl.DateTimeFormat('vi-VN', { dateStyle: 'medium', timeStyle: 'short' }).format(date);
+  }
+  function attemptDate(attempt) { return attempt && (attempt.submittedAt || attempt.at || attempt.timestamp); }
+  function countCorrect(attempt) { return attempt && typeof attempt.correct === 'number' ? attempt.correct : (attempt && typeof attempt.score === 'number' ? attempt.score : 0); }
+  function answeredCount() { return questions().filter(q => E.isAnswered(q, g().draft[q.id])).length; }
+  function save() {
+    state.updatedAt = Date.now();
+    if (!storageAvailable) return;
+    try {
+      localStorage.setItem(E.KEY, JSON.stringify(state));
+      if (writeFailed) byId('storage-notice').hidden = true;
+      writeFailed = false;
+      byId('save-status').textContent = 'Đã lưu trên trình duyệt này';
+    } catch (error) {
+      writeFailed = true;
+      byId('storage-notice').hidden = false;
+      byId('storage-notice').textContent = 'Trình duyệt chưa lưu được thay đổi. Hãy tải bản sao bài làm trước khi đóng trang.';
+      byId('save-status').textContent = 'Chưa lưu được trên trình duyệt';
+    }
+  }
+  function queueSave() { clearTimeout(saveTimer); saveTimer = setTimeout(save, 180); }
+  function flushSave() { clearTimeout(saveTimer); save(); }
+  function shuffle(size) {
+    const order = Array.from({length:size}, (_, i) => i);
+    for (let i = size - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
+    return order;
+  }
+  function orderFor(q) {
+    const size = kind === 'sort' ? q.tokens.length : q.options.length;
+    let order = g().orders[q.id];
+    if (!Array.isArray(order) || order.length !== size || new Set(order).size !== size || order.some(x => !Number.isInteger(x) || x < 0 || x >= size)) {
+      order = shuffle(size);
+      if (kind === 'sort') {
+        for (let n = 0; n < 12 && E.check(q, order) === true; n++) order = shuffle(size);
+        if (E.check(q, order) === true && size > 1) [order[0],order[1]] = [order[1],order[0]];
+      }
+      g().orders[q.id] = order;
+    }
+    return order;
+  }
+  function renderOverview() {
+    const totals = E.totals(state, lessonId, lesson);
+    const a = totals.automatic;
+    const h = totals.homework;
+    const manual = totals.manual;
+    byId('overview').innerHTML = `<div class="s1-stat"><h2>Tiến độ nộp bài</h2><strong>${h.submitted}/15 câu</strong><div class="la-progress-track" role="progressbar" aria-label="Tiến độ nộp bài" aria-valuemin="0" aria-valuemax="15" aria-valuenow="${h.submitted}"><i style="width:${h.submitted/15*100}%"></i></div><p>${h.completedGroups}/3 phần đã nộp đủ</p></div><div class="s1-stat"><h2>10 câu chấm tự động</h2>${a.submitted ? `<p class="s1-score-line">Lần đầu: <b>${a.firstCorrect}/${a.submitted} đúng</b></p><p class="s1-score-line">Gần nhất: <b>${a.latestCorrect}/${a.submitted} đúng</b></p><p>Đã chấm ${a.submitted}/10 câu.</p>` : '<strong>Chưa có điểm</strong><p>Điểm hiện sau khi nộp từng phần.</p>'}</div><div class="s1-stat"><h2>5 câu dịch gửi cô</h2><strong>${manual.submitted}/5 đã lưu</strong><p>Không tính vào điểm chấm tự động.</p><p>Bạn tự chụp và gửi bài cho cô.</p></div>`;
+  }
+  function renderStages() {
+    byId('stages').innerHTML = E.PATH.map((k,i) => {
+      const open = E.canOpen(state, lessonId, k);
+      const done = E.group(state, lessonId, k).completed;
+      return `<button type="button" class="la-step ${kind===k?'active':''}" data-stage="${k}" ${open?'':'disabled'} ${kind===k?'aria-current="step"':''}><span class="la-step-num">${done?'✓':i+1}</span><span><b>${labels[k]}</b><small class="s1-step-state">${done ? 'Đã nộp đủ 5 câu' : open ? '5 câu · Đã mở' : 'Nộp phần trước để mở'}</small></span></button>`;
+    }).join('');
+  }
+  function questionFeedback(q, attempt) {
+    if (!attempt || kind === 'translation') return '';
+    const answer = attempt.answers[q.id];
+    const ok = E.check(q, answer);
+    const correctText = kind === 'sort' ? q.answers.join(' / ') : q.options[q.answer];
+    const chosenText = kind === 'sort' ? answer.map(i => q.tokens[i]).join('') : q.options[answer];
+    const specific = kind === 'choice' && q.optionFeedback && !ok ? `<p class="s1-selected-feedback">${escape(q.optionFeedback[answer])}</p>` : '';
+    return `<div class="la-feedback ${ok?'good':'bad'}"><h3>${ok?'Đúng':'Chưa đúng'}</h3><p class="s1-answer-label">${ok?'Câu trả lời':'Đáp án phù hợp'}:</p><p class="la-answer zh" lang="zh-Hans">${escape(correctText)}</p>${ok?'':`<p class="la-original">Bạn đã trả lời: <span class="zh" lang="zh-Hans">${escape(chosenText)}</span></p>`}<p class="la-explanation">${escape(q.explanation)}</p>${specific}<p class="s1-explanation-source">${escape(q.source.label)}</p></div>`;
+  }
+  function choiceQuestion(q, i) {
+    const group = g();
+    const selected = group.attempt ? group.attempt.answers[q.id] : group.draft[q.id];
+    const optionHtml = orderFor(q).map((index, letter) => `<button type="button" class="la-option ${selected===index?'selected':''} ${group.attempt && index===q.answer?'answer-correct':''} ${group.attempt && index===selected && selected!==q.answer?'answer-wrong':''}" data-option="${q.id}" data-index="${index}" aria-pressed="${selected===index}" ${group.attempt?'disabled':''}><span class="la-option-letter">${'ABCD'[letter]}</span><span class="zh" lang="zh-Hans">${escape(q.options[index])}</span></button>`).join('');
+    return `<h3 class="s1-question-title" id="title-${q.id}"><span class="s1-number">CÂU ${i+1} / 5</span>${escape(q.prompt)}</h3>${q.stem?`<p class="la-stem" lang="zh-Hans">${escape(q.stem)}</p>`:''}<div class="la-options" role="group" aria-labelledby="title-${q.id}">${optionHtml}</div>${questionFeedback(q, group.attempt)}`;
+  }
+  function sortQuestion(q, i) {
+    const group = g();
+    const answer = (group.attempt ? group.attempt.answers[q.id] : group.draft[q.id]) || [];
+    const used = new Set(answer);
+    return `<h3 class="s1-question-title" id="title-${q.id}"><span class="s1-number">CÂU ${i+1} / 5</span>${escape(q.meaning)}</h3><p class="la-muted">${escape(q.prompt)}</p><div class="la-sentence" aria-label="Câu ${i+1} đã ghép">${answer.length ? answer.map((token,pos) => `<button type="button" class="la-token" lang="zh-Hans" aria-label="Bỏ ${escape(q.tokens[token])} khỏi vị trí ${pos+1}" data-remove="${q.id}" data-position="${pos}" ${group.attempt?'disabled':''}>${escape(q.tokens[token])}</button>`).join('') : '<span class="s1-sentence-hint">Chạm các từ bên dưới để bắt đầu…</span>'}</div><div class="s1-token-pool" role="group" aria-label="Từ cho câu ${i+1}">${orderFor(q).map(index => `<button type="button" class="la-token" lang="zh-Hans" aria-label="Thêm ${escape(q.tokens[index])} vào câu ${i+1}" data-token="${q.id}" data-index="${index}" ${used.has(index)||group.attempt?'disabled':''}>${escape(q.tokens[index])}</button>`).join('')}</div><div class="s1-sentence-actions"><button type="button" class="s1-small-button" data-undo="${q.id}" ${!answer.length||group.attempt?'disabled':''}>Hoàn tác từ cuối</button><button type="button" class="s1-small-button" data-clear="${q.id}" ${!answer.length||group.attempt?'disabled':''}>Ghép lại câu ${i+1}</button></div>${questionFeedback(q,group.attempt)}`;
+  }
+  function translationQuestion(q,i) {
+    const group = g();
+    const answer = (group.attempt ? group.attempt.answers[q.id] : group.draft[q.id]) || '';
+    return `<label class="s1-question-title" for="input-${q.id}"><span class="s1-number">CÂU ${i+1} / 5</span>${escape(q.prompt)}</label><textarea id="input-${q.id}" data-translation="${q.id}" class="s1-translation zh" lang="zh-Hans" rows="2" maxlength="12000" spellcheck="false" autocomplete="off" ${group.attempt?'readonly':''} aria-describedby="help-${q.id}">${escape(answer)}</textarea><p class="s1-charcount" id="help-${q.id}">${group.attempt?'Đã lưu nguyên bài làm.':'Viết bằng tiếng Trung. Bạn có thể dùng bàn phím hoặc bộ gõ tiếng Trung.'}</p>`;
+  }
+  function resultSummary() {
+    const group = g();
+    const attempt = group.attempt;
+    if (!attempt) return kind==='translation' && group.latest ? '<section class="la-panel"><p>Bạn đang viết bản làm lại. Bản dịch đã lưu gần nhất vẫn được giữ riêng.</p><button type="button" class="la-ghost" data-receipt>Xem bản dịch đã lưu gần nhất</button></section>' : '';
+    const next = E.PATH[E.PATH.indexOf(kind)+1];
+    const first = group.first;
+    let body = kind === 'translation' ? `<h3 class="s1-result-head">Đã lưu đủ 5 câu dịch</h3><p class="s1-result-meta">Trang web không chấm đúng – sai cho phần dịch. Hãy mở bản chụp và gửi cho cô.</p><p class="s1-result-meta">Lưu lúc: ${escape(dateLabel(attemptDate(attempt)))}</p>` : `<h3 class="s1-result-head">Đúng ${countCorrect(attempt)}/5 câu · ${countCorrect(attempt)*20}%</h3><p class="s1-result-meta">Lần đầu: <strong>${countCorrect(first)}/5</strong> · Lần nộp này: <strong>${countCorrect(attempt)}/5</strong></p><p class="s1-result-meta">Đã nộp đủ 5 câu. Phần tiếp theo đã mở. Xem giải thích dưới từng câu để luyện thêm.</p>`;
+    body += `<div class="s1-summary-actions">${next?`<button type="button" class="la-button" data-stage="${next}">Tiếp tục: ${labels[next]}</button>`:'<button type="button" class="la-button" data-receipt>Mở bản chụp gửi cô</button>'}<button type="button" class="la-ghost" data-restart>Làm lại phần này</button></div>`;
+    if (group.history && group.history.length > 1) body += `<details class="s1-history"><summary>Lịch sử ${group.history.length} lần nộp gần đây</summary><ol>${group.history.map(a => `<li>${escape(dateLabel(attemptDate(a)))} · ${kind==='translation'?'Đã lưu 5 câu, không chấm điểm':`${countCorrect(a)}/5 câu đúng`}</li>`).join('')}</ol></details>`;
+    return `<section class="la-summary" id="submitted-result" tabindex="-1" aria-label="Kết quả nộp bài">${body}</section>`;
+  }
+  function renderQuestion(q,i) {
+    const missing = submittedWithMissing && !E.isAnswered(q,g().draft[q.id]);
+    const body = kind==='choice' ? choiceQuestion(q,i) : kind==='sort' ? sortQuestion(q,i) : translationQuestion(q,i);
+    return `<article class="la-question ${missing?'s1-missing':''}" id="question-${q.id}">${body}${missing?'<p class="s1-missing-label">Vui lòng hoàn thành câu này trước khi nộp.</p>':''}</article>`;
+  }
+  function fitTextarea(el) { if (el) { el.style.height = 'auto'; el.style.height = `${Math.max(104,el.scrollHeight+2)}px`; } }
+  function renderExercise() {
+    const group = g();
+    byId('exercise').innerHTML = `<div class="s1-group-head"><div><h2>${E.PATH.indexOf(kind)+1}. ${labels[kind]}</h2><p>${descriptions[kind]}</p></div><span class="s1-kind">${kind==='translation'?'Cô xem bài':'Chấm tự động · 5 câu'}</span></div>${kind==='sort'?'<p class="s1-keyboard-note">Có thể dùng Tab để chọn nút và Enter để ghép từ.</p>':''}${kind==='translation'?`<section class="la-panel"><p class="s1-note">Phần dịch không tính vào điểm chấm tự động. Bài chưa được gửi tự động cho cô.</p><div class="s1-profile"><label for="student-name">Họ tên (để cô nhận ra bài)<input id="student-name" data-profile="name" maxlength="200" value="${escape(state.profile.name)}" autocomplete="name"></label><label for="student-class">Lớp / mã học sinh<input id="student-class" data-profile="className" maxlength="200" value="${escape(state.profile.className)}" autocomplete="off"></label></div><p class="s1-profile-help">Thông tin này chỉ xuất hiện trên bản chụp và bản sao bài làm.</p></section>`:''}${resultSummary()}<div id="form-error" class="la-alert s1-inline-error" role="alert" tabindex="-1" hidden></div><div id="question-list">${questions().map(renderQuestion).join('')}</div>${group.attempt?'':`<div class="s1-submit-area"><div class="la-toolbar"><span class="s1-progress" id="answered-count">Đã làm ${answeredCount()}/5 câu</span><button type="button" class="la-button" id="submit-group">${kind==='translation'?'Lưu 5 câu dịch':'Nộp 5 câu và xem kết quả'}</button></div><p class="la-small">${kind==='translation'?'Sau khi lưu, mở bản chụp có đủ 5 câu để gửi cho cô.':'Chỉ cần làm đủ và nộp bài để mở phần sau. Không yêu cầu đạt một mức điểm để mở.'}</p></div>`}`;
+    byId('exercise').querySelectorAll('textarea.s1-translation').forEach(fitTextarea);
+  }
+  function render() { renderOverview(); renderStages(); renderExercise(); flushSave(); }
+  function updateAnswerCount() {
+    const count=answeredCount();
+    const el=byId('answered-count');if(el)el.textContent=`Đã làm ${count}/5 câu`;
+    const error=byId('form-error');
+    if(error&&!error.hidden){error.hidden=count===5;if(count<5)error.textContent=`Bạn đã làm ${count}/5 câu. Vui lòng hoàn thành đủ 5 câu rồi nộp bài.`;}
+    if(submittedWithMissing)questions().forEach(q=>{if(E.isAnswered(q,g().draft[q.id])){const card=byId(`question-${q.id}`);card.classList.remove('s1-missing');const warning=card.querySelector('.s1-missing-label');if(warning)warning.remove();}});
+  }
+  function replaceQuestion(q,focusSelector) {
+    const i = questions().findIndex(item=>item.id===q.id);
+    byId(`question-${q.id}`).outerHTML=renderQuestion(q,i);
+    updateAnswerCount();
+    if(focusSelector){const focus=byId(`question-${q.id}`).querySelector(focusSelector);if(focus)focus.focus({preventScroll:true});}
+  }
+  function findQuestion(id) { return questions().find(q=>q.id===id); }
+  function focusExercise() { byId('exercise').focus({preventScroll:true}); byId('exercise').scrollIntoView({block:'start'}); }
+  function openStage(k) {
+    if (!E.PATH.includes(k) || !E.canOpen(state,lessonId,k)) return;
+    flushSave();kind=k;submittedWithMissing=false;render();focusExercise();
+  }
+  function submitGroup() {
+    flushSave();
+    const result = E.submit(state,lessonId,kind,questions());
+    if (!result.ok) {
+      submittedWithMissing=true;
+      renderExercise();
+      byId('form-error').hidden=false;
+      byId('form-error').textContent=`Bạn đã làm ${answeredCount()}/5 câu. Vui lòng hoàn thành đủ 5 câu rồi nộp bài.`;
+      byId('form-error').focus();
+      return;
+    }
+    submittedWithMissing=false;
+    render();
+    const feedback=byId('submitted-result');feedback.focus({preventScroll:true});feedback.scrollIntoView({block:'start'});
+  }
+  function receipt() {
+    flushSave();
+    const group=E.group(state,lessonId,'translation');
+    const attempt=group.attempt||group.latest;
+    if(!attempt) return;
+    const details=lesson.translation.map((q,i)=>`<article class="s1-receipt-item"><h2>${i+1}. ${escape(q.prompt)}</h2><p class="s1-written-answer zh" lang="zh-Hans">${escape(attempt.answers[q.id])}</p></article>`).join('');
+    byId('receipt').innerHTML=`<div class="s1-receipt-actions"><button type="button" class="la-ghost" data-close-receipt>Quay lại bài tập</button><button type="button" class="la-button" data-print>In / lưu PDF</button></div><header class="s1-receipt-header"><p class="la-eyebrow">Học cùng cô Nhiên · Bài dịch</p><h1>Bài 3 · <span lang="zh-Hans">我是中国人</span></h1><div class="s1-receipt-meta"><p><b>Họ tên:</b> ${escape(state.profile.name||'Chưa điền')}</p><p><b>Lớp / mã:</b> ${escape(state.profile.className||'Chưa điền')}</p><p><b>Lưu lúc:</b> ${escape(dateLabel(attemptDate(attempt)))}</p><p><b>Đã lưu:</b> 5/5 câu · Không chấm điểm</p></div><p class="s1-receipt-tip">Hãy chụp đủ 5 câu và gửi cho cô. Trang web chưa gửi bài và chưa nhận đánh giá của cô.</p></header>${details}<p class="s1-receipt-version">Bài dịch Việt → Trung · Bản mẫu Bài 3 · Bản nộp gần nhất</p>`;
+    byId('receipt').hidden=false;document.body.classList.add('is-receipt');byId('receipt').focus();window.scrollTo(0,0);
+  }
+  document.addEventListener('click', event=>{
+    const button=event.target.closest('button');if(!button||button.disabled)return;
+    if(button.dataset.stage) return openStage(button.dataset.stage);
+    if(button.id==='submit-group') return submitGroup();
+    if(button.hasAttribute('data-restart')){E.restart(state,lessonId,kind);submittedWithMissing=false;render();focusExercise();return;}
+    if(button.hasAttribute('data-receipt')) return receipt();
+    if(button.hasAttribute('data-close-receipt')){document.body.classList.remove('is-receipt');byId('receipt').hidden=true;focusExercise();return;}
+    if(button.hasAttribute('data-print')){window.print();return;}
+    if(button.dataset.option){if(g().attempt)return;const q=findQuestion(button.dataset.option);if(!q)return;g().draft[q.id]=Number(button.dataset.index);replaceQuestion(q,'.la-option.selected');queueSave();return;}
+    const id=button.dataset.token||button.dataset.remove||button.dataset.undo||button.dataset.clear;
+    if(id){if(kind!=='sort'||g().attempt)return;const q=findQuestion(id);if(!q)return;let answer=[...(g().draft[q.id]||[])];if(button.dataset.token){const index=Number(button.dataset.index);if(!answer.includes(index))answer.push(index);}else if(button.dataset.remove){answer.splice(Number(button.dataset.position),1);}else if(button.dataset.undo){answer.pop();}else answer=[];g().draft[q.id]=answer;replaceQuestion(q,answer.length===q.tokens.length?'[data-undo]':'.s1-token-pool button:not(:disabled)');queueSave();}
+  });
+  byId('exercise').addEventListener('input',event=>{
+    const el=event.target;
+    if(el.dataset.translation){if(kind!=='translation'||g().attempt)return;g().draft[el.dataset.translation]=el.value;fitTextarea(el);updateAnswerCount();queueSave();}
+    if(el.dataset.profile){state.profile[el.dataset.profile]=el.value.slice(0,200);queueSave();}
+  });
+  // Do not rerender a text field during composition; the browser owns the IME session.
+  byId('exercise').addEventListener('compositionend',event=>{if(event.target.dataset.translation){g().draft[event.target.dataset.translation]=event.target.value;fitTextarea(event.target);updateAnswerCount();queueSave();}});
+  byId('export-backup').addEventListener('click',()=>{
+    flushSave();const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=`hsk1-bai3-${new Date().toISOString().slice(0,10)}.json`;link.click();setTimeout(()=>URL.revokeObjectURL(url),10000);
+  });
+  byId('backup-input').addEventListener('input',()=>{candidate=null;byId('backup-result').textContent='';});
+  function updateRecoveryButton(){try{byId('restore-previous').hidden=!localStorage.getItem(`${E.KEY}_recovery`);}catch(error){byId('restore-previous').hidden=true;}}
+  byId('restore-previous').addEventListener('click',()=>{
+    try{const raw=localStorage.getItem(`${E.KEY}_recovery`);if(!raw)throw new Error('missing');byId('backup-input').value=raw;byId('inspect-backup').click();}catch(error){byId('backup-result').innerHTML='<p class="la-alert">Chưa đọc được bản khôi phục. Bài hiện tại chưa bị thay đổi.</p>';}
+  });
+  byId('inspect-backup').addEventListener('click',()=>{
+    candidate=null;
+    try{
+      const input=JSON.parse(byId('backup-input').value);
+      const legacy=Number(input.schema||input.version)===2;
+      candidate=legacy?E.migrateLegacy(input,bank):E.validateImport(input,bank);
+      const totals=E.totals(candidate,lessonId,lesson);
+      byId('backup-result').innerHTML=`<div class="la-success"><p>Bản sao hợp lệ: Bài 3 có ${totals.homework.submitted}/15 câu đã nộp; phần dịch mới có ${totals.manual.submitted}/5 câu.</p>${legacy?'<p>Bản cũ được giữ trong mục lịch sử của bản sao. Bài dịch chọn đáp án cũ không được tính là bài dịch tự viết đã nộp.</p>':''}<p>Mở bản sao sẽ thay bài đang hiển thị. Bản hiện tại được giữ làm bản khôi phục trên trình duyệt.</p><button type="button" class="la-button" id="apply-backup">Mở bản sao này</button></div>`;
+    }catch(error){byId('backup-result').innerHTML='<p class="la-alert">Bản sao chưa hợp lệ. Hãy kiểm tra đúng tệp bài làm và đủ nội dung JSON. Bài hiện tại chưa bị thay đổi.</p>';}
+  });
+  byId('backup-result').addEventListener('click',event=>{
+    if(event.target.id!=='apply-backup'||!candidate)return;
+    try{localStorage.setItem(`${E.KEY}_recovery`,JSON.stringify(state));}catch(error){byId('backup-result').innerHTML='<p class="la-alert">Chưa giữ được bản hiện tại. Hãy tải bản sao bài đang làm trước khi thử lại.</p>';candidate=null;return;}
+    state=clone(candidate);candidate=null;storageAvailable=true;byId('storage-notice').hidden=true;kind='choice';submittedWithMissing=false;render();updateRecoveryButton();byId('backup-result').innerHTML='<p class="la-success">Đã mở bản sao. Bài cũ ở mục khôi phục vẫn được giữ.</p>';byId('backup-input').value='';focusExercise();
+  });
+  window.addEventListener('pagehide',flushSave);
+  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')flushSave();});
+  window.addEventListener('resize',()=>{byId('exercise').querySelectorAll('textarea.s1-translation').forEach(fitTextarea);});
+  render();updateRecoveryButton();
+})();
+
+</script>
+</body>
+</html>
