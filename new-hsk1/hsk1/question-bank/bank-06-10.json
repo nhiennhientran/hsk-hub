@@ -1,0 +1,1652 @@
+[
+  {
+    "lesson": 6,
+    "goal_vi": "Hỏi số điện thoại, nói muốn mua hoặc ăn gì, và hỏi cách đi đến một nơi.",
+    "choice": [
+      {
+        "id": "l06-choice-01",
+        "prompt": "Chọn từ diễn đạt ý “muốn” trong câu dưới đây.",
+        "stem": "我___去超市。",
+        "options": [
+          "叫",
+          "想",
+          "是",
+          "多少"
+        ],
+        "answer": 1,
+        "explanation": "想 đứng trước động từ để nói điều mình muốn làm: 我想去超市 = Tôi muốn đi siêu thị. 叫 là “tên là/gọi”, 是 là “là”, còn 多少 dùng để hỏi số lượng.",
+        "skill": "想＋动词"
+      },
+      {
+        "id": "l06-choice-02",
+        "prompt": "Chọn câu trả lời đúng trọng tâm: người hỏi muốn biết phương tiện đi lại.",
+        "stem": "你怎么去超市？",
+        "options": [
+          "我想买牛奶。",
+          "明天星期天。",
+          "坐出租车去。",
+          "我有两个孩子。"
+        ],
+        "answer": 2,
+        "explanation": "怎么去 hỏi “đi bằng cách nào”. 坐出租车去 trả lời “đi bằng taxi”. Các câu còn lại nói về đồ muốn mua, thứ trong tuần và số con.",
+        "skill": "怎么／出行方式"
+      },
+      {
+        "id": "l06-choice-03",
+        "prompt": "Bạn muốn biết số điện thoại di động của người đối diện. Chọn câu hỏi phù hợp.",
+        "stem": "",
+        "options": [
+          "你今年多大？",
+          "你想吃什么？",
+          "明天你去哪儿？",
+          "你的手机号是多少？"
+        ],
+        "answer": 3,
+        "explanation": "手机号 là số điện thoại di động; 你的手机号是多少？ hỏi đúng thông tin đó. 多大 hỏi tuổi, 吃什么 hỏi món ăn, 去哪儿 hỏi nơi sẽ đến.",
+        "skill": "手机号是多少"
+      },
+      {
+        "id": "l06-choice-04",
+        "prompt": "Chọn câu nói đúng ý “Tôi đi siêu thị để mua đồ”.",
+        "stem": "",
+        "options": [
+          "我去超市买东西。",
+          "我想买些牛奶。",
+          "我去西安饭店吃包子。",
+          "我明天休息。"
+        ],
+        "answer": 0,
+        "explanation": "Đặt nơi đến sau 去, rồi nêu việc làm ở đó: 我＋去超市＋买东西. Câu đúng nói đến siêu thị để mua đồ; các câu khác nói muốn mua sữa, đến nhà hàng ăn bánh bao hoặc nghỉ ngày mai.",
+        "skill": "连动句：去＋处所＋目的"
+      },
+      {
+        "id": "l06-choice-05",
+        "prompt": "Điền từ còn thiếu để nói “Tôi không muốn ăn bánh bao”.",
+        "stem": "我___想吃包子。",
+        "options": [
+          "没有",
+          "不",
+          "几",
+          "也"
+        ],
+        "answer": 1,
+        "explanation": "Phủ định mong muốn dùng 不想: 我不想吃包子. 没有 là “không có”, 几 hỏi số lượng; 也 có nghĩa “cũng”, không phải từ phủ định.",
+        "skill": "不想"
+      }
+    ],
+    "sort": [
+      {
+        "id": "l06-sort-01",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Số điện thoại di động của bạn là bao nhiêu?",
+        "tokens": [
+          "你的",
+          "多少",
+          "手机号",
+          "是"
+        ],
+        "answers": [
+          "你的手机号是多少？"
+        ],
+        "explanation": "你的手机号 là “số điện thoại của bạn”. Đặt 是 trước 多少 để hỏi số điện thoại: 你的手机号＋是＋多少？",
+        "skill": "手机号是多少"
+      },
+      {
+        "id": "l06-sort-02",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Ngày mai tôi muốn đi siêu thị mua đồ.",
+        "tokens": [
+          "想",
+          "买东西",
+          "去超市",
+          "我",
+          "明天"
+        ],
+        "answers": [
+          "我明天想去超市买东西。",
+          "明天我想去超市买东西。",
+          "我想明天去超市买东西。"
+        ],
+        "explanation": "明天 có thể đứng trước hoặc sau 我. Giữ đúng trật tự 想＋去超市＋买东西: muốn đến siêu thị để mua đồ. Cũng chấp nhận 我想明天去超市买东西: tôi muốn ngày mai đi siêu thị mua đồ.",
+        "skill": "想与连动句"
+      },
+      {
+        "id": "l06-sort-03",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Tôi không muốn ăn bánh bao.",
+        "tokens": [
+          "吃",
+          "不想",
+          "我",
+          "包子"
+        ],
+        "answers": [
+          "我不想吃包子。",
+          "包子我不想吃。"
+        ],
+        "explanation": "Cách nói cơ bản là 我不想吃包子: 不想 đứng trước hành động 吃. Cũng có thể đưa món ăn 包子 lên đầu để nhấn mạnh: 包子我不想吃. Cả hai đều nói không muốn ăn bánh bao.",
+        "skill": "不想＋动词"
+      },
+      {
+        "id": "l06-sort-04",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Bạn đi siêu thị bằng cách nào?",
+        "tokens": [
+          "你",
+          "超市",
+          "去",
+          "怎么"
+        ],
+        "answers": [
+          "你怎么去超市？"
+        ],
+        "explanation": "怎么 hỏi cách thức và đứng trước động từ 去. 超市 là nơi đến, đặt sau 去.",
+        "skill": "怎么＋动词"
+      },
+      {
+        "id": "l06-sort-05",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Bánh bao ở bên kia rất ngon.",
+        "tokens": [
+          "非常",
+          "包子",
+          "好吃",
+          "那边的"
+        ],
+        "answers": [
+          "那边的包子非常好吃。"
+        ],
+        "explanation": "那边的 đứng trước danh từ 包子 để nói “bánh bao ở bên kia”. 非常 đứng trước 好吃, diễn đạt mức độ “rất ngon”.",
+        "skill": "的字短语／非常好吃"
+      }
+    ],
+    "translation": [
+      {
+        "id": "l06-translation-01",
+        "prompt": "Tôi muốn mua một ít sữa.",
+        "stem": "",
+        "options": [
+          "我想吃米饭。",
+          "我去超市买包子。",
+          "我想买些牛奶。",
+          "我不想买东西。"
+        ],
+        "answer": 2,
+        "explanation": "我想买些牛奶 giữ đủ ba ý: 想 = muốn, 买些 = mua một ít, 牛奶 = sữa. Các câu khác nói ăn cơm, mua bánh bao hoặc không muốn mua đồ.",
+        "skill": "想买些＋名词"
+      },
+      {
+        "id": "l06-translation-02",
+        "prompt": "Chúng ta đi taxi đến Nhà hàng Tây An.",
+        "stem": "",
+        "options": [
+          "我们去超市买东西。",
+          "我不想去西安饭店。",
+          "我们想吃包子。",
+          "我们坐出租车去西安饭店。"
+        ],
+        "answer": 3,
+        "explanation": "坐出租车 là đi bằng taxi; 去西安饭店 là đến Nhà hàng Tây An. Các phương án khác thay đổi địa điểm, ý muốn hoặc hành động, nên không dịch đủ câu gốc.",
+        "skill": "交通方式＋去＋目的地"
+      },
+      {
+        "id": "l06-translation-03",
+        "prompt": "Ngày mai bạn đi đâu?",
+        "stem": "",
+        "options": [
+          "明天你去哪儿？",
+          "你想吃什么？",
+          "你怎么去超市？",
+          "你的手机号是多少？"
+        ],
+        "answer": 0,
+        "explanation": "明天 = ngày mai, 去哪儿 = đi đâu. 吃什么 hỏi món ăn; 怎么去 hỏi cách đi; 手机号是多少 hỏi số điện thoại.",
+        "skill": "明天／去哪儿"
+      },
+      {
+        "id": "l06-translation-04",
+        "prompt": "Tôi muốn ăn cơm, không muốn ăn bánh bao.",
+        "stem": "",
+        "options": [
+          "我想买牛奶，不想去超市。",
+          "我想吃米饭，不想吃包子。",
+          "我会做饭，也会做面条儿。",
+          "我明天去超市买东西。"
+        ],
+        "answer": 1,
+        "explanation": "Cần giữ đúng hai ý đối lập: 想吃米饭 là muốn ăn cơm; 不想吃包子 là không muốn ăn bánh bao. Các câu khác nói mua sữa, kỹ năng nấu ăn hoặc kế hoạch đi siêu thị.",
+        "skill": "想／不想"
+      },
+      {
+        "id": "l06-translation-05",
+        "prompt": "Bánh bao ở bên kia rất ngon.",
+        "stem": "",
+        "options": [
+          "那边有两个孩子。",
+          "我想去超市买牛奶。",
+          "那边的包子非常好吃。",
+          "我不想吃包子。"
+        ],
+        "answer": 2,
+        "explanation": "那边的包子 chỉ bánh bao ở bên kia; 非常好吃 nghĩa là rất ngon. Các câu còn lại nói về trẻ em, việc mua sữa hoặc không muốn ăn bánh bao.",
+        "skill": "地点修饰语／好吃"
+      }
+    ],
+    "listening": [
+      {
+        "id": "l06-listening-01",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Gia Nguyệt, bạn muốn ăn gì?",
+          "Gia Nguyệt, ngày mai bạn đi đâu?",
+          "Gia Nguyệt, nhà bạn có mấy người?",
+          "Gia Nguyệt, số điện thoại di động của bạn là bao nhiêu?"
+        ],
+        "answer": 3,
+        "explanation": "Nghe các từ 手机号 và 多少: người nói đang hỏi số điện thoại di động của Gia Nguyệt, không hỏi món ăn, nơi đến hay số người trong gia đình.",
+        "skill": "听辨手机号",
+        "audio": {
+          "track": "6-1",
+          "line": 0
+        },
+        "transcript": "家月，你的手机号是多少？",
+        "pinyin": "Jiāyuè, nǐ de shǒujī hào shì duōshao?"
+      },
+      {
+        "id": "l06-listening-02",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Tôi muốn đi siêu thị mua đồ.",
+          "Tôi muốn đi taxi đến nhà hàng.",
+          "Tôi không muốn mua sữa.",
+          "Ngày mai tôi nghỉ."
+        ],
+        "answer": 0,
+        "explanation": "想去超市买东西 gồm “muốn”＋“đi siêu thị”＋“mua đồ”. Bản ghi không nói đến taxi, việc nghỉ hay phủ định mua sữa.",
+        "skill": "听辨连动句",
+        "audio": {
+          "track": "6-3",
+          "line": 1
+        },
+        "transcript": "我想去超市买东西。",
+        "pinyin": "Wǒ xiǎng qù chāoshì mǎi dōngxi."
+      },
+      {
+        "id": "l06-listening-03",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Tôi muốn ăn một ít bánh bao.",
+          "Tôi muốn mua một ít sữa.",
+          "Tôi không muốn đi siêu thị.",
+          "Tôi muốn mua một chiếc điện thoại."
+        ],
+        "answer": 1,
+        "explanation": "买些牛奶 nghĩa là mua một ít sữa. Cần phân biệt 买 “mua” với 吃 “ăn”, và 牛奶 “sữa” với 手机 “điện thoại”.",
+        "skill": "听辨买／牛奶",
+        "audio": {
+          "track": "6-3",
+          "line": 3
+        },
+        "transcript": "我想买些牛奶。",
+        "pinyin": "Wǒ xiǎng mǎi xiē niúnǎi."
+      },
+      {
+        "id": "l06-listening-04",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Tôi không muốn ăn bánh bao vì muốn ăn cơm.",
+          "Tôi muốn đi siêu thị mua sữa.",
+          "Bánh bao ở bên kia rất ngon, tôi muốn ăn bánh bao.",
+          "Bên kia có nhà hàng, ngày mai tôi muốn đến đó."
+        ],
+        "answer": 2,
+        "explanation": "Câu có hai ý: 那边的包子非常好吃 “bánh bao ở bên kia rất ngon” và 我想吃包子 “tôi muốn ăn bánh bao”. Không có phủ định hay kế hoạch ngày mai.",
+        "skill": "听辨非常好吃／想吃",
+        "audio": {
+          "track": "6-5",
+          "line": 2
+        },
+        "transcript": "那边的包子非常好吃，我想吃包子。",
+        "pinyin": "Nàbiān de bāozi fēicháng hǎochī, wǒ xiǎng chī bāozi."
+      },
+      {
+        "id": "l06-listening-05",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Mẹ ơi, con muốn mua sữa, không muốn ăn cơm.",
+          "Mẹ ơi, con muốn ăn bánh bao, không muốn ăn cơm.",
+          "Mẹ ơi, ngày mai con muốn đi siêu thị.",
+          "Mẹ ơi, con muốn ăn cơm, không muốn ăn bánh bao."
+        ],
+        "answer": 3,
+        "explanation": "Nghe kỹ 不想 xuất hiện trước 吃包子. Người nói muốn ăn 米饭 “cơm” và không muốn ăn 包子 “bánh bao”; đảo hai món sẽ làm nghĩa ngược lại.",
+        "skill": "听辨肯否与食物",
+        "audio": {
+          "track": "6-5",
+          "line": 3
+        },
+        "transcript": "妈妈，我想吃米饭，不想吃包子。",
+        "pinyin": "Māma, wǒ xiǎng chī mǐfàn, bù xiǎng chī bāozi."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "goal_vi": "Nói giờ giấc, lịch học và giờ làm; phân biệt thời điểm với khoảng thời gian.",
+    "choice": [
+      {
+        "id": "l07-choice-01",
+        "prompt": "Chọn cách nói 6 giờ 30 phút tối.",
+        "stem": "18:30",
+        "options": [
+          "晚上六点半",
+          "早上六点",
+          "下午两点半",
+          "晚上九点"
+        ],
+        "answer": 0,
+        "explanation": "晚上六点半 = 6 giờ rưỡi tối, tức 18:30. 半 sau giờ có nghĩa “rưỡi”. Các phương án khác là 6 giờ sáng, 2 giờ rưỡi chiều và 9 giờ tối.",
+        "skill": "时间表达：点半"
+      },
+      {
+        "id": "l07-choice-02",
+        "prompt": "Bạn muốn hỏi giờ hiện tại. Chọn câu phù hợp.",
+        "stem": "",
+        "options": [
+          "你有几个孩子？",
+          "现在几点？",
+          "你在哪儿呢？",
+          "你想吃什么？"
+        ],
+        "answer": 1,
+        "explanation": "现在几点？ hỏi “Bây giờ là mấy giờ?”. 几个孩子 hỏi số con, 在哪儿 hỏi vị trí, 吃什么 hỏi món ăn.",
+        "skill": "几点"
+      },
+      {
+        "id": "l07-choice-03",
+        "prompt": "Chọn từ đặt cuối câu để lời hẹn gặp mang sắc thái đề nghị “nhé”.",
+        "stem": "我们下午三点见___。",
+        "options": [
+          "谁",
+          "多少",
+          "吧",
+          "不"
+        ],
+        "answer": 2,
+        "explanation": "吧 đặt cuối câu làm lời đề nghị nhẹ nhàng: 我们下午三点见吧 = Ba giờ chiều chúng ta gặp nhau nhé. 谁 và 多少 là từ nghi vấn; 不 là từ phủ định.",
+        "skill": "语气助词吧"
+      },
+      {
+        "id": "l07-choice-04",
+        "prompt": "“十分钟后” có nghĩa là gì?",
+        "stem": "我十分钟后去。",
+        "options": [
+          "Tôi đi lúc 10 giờ.",
+          "Tôi đi trong 10 ngày.",
+          "Tôi đi trước 10 phút.",
+          "Mười phút nữa tôi đi."
+        ],
+        "answer": 3,
+        "explanation": "十分钟 là khoảng thời gian 10 phút; 后 nghĩa là sau. 十分钟后 vì vậy là sau 10 phút, khác với 十点 là 10 giờ.",
+        "skill": "分钟后与点"
+      },
+      {
+        "id": "l07-choice-05",
+        "prompt": "Chọn câu trả lời cho câu hỏi về giờ tan làm.",
+        "stem": "你几点下班？",
+        "options": [
+          "我晚上六点半下班。",
+          "我在家里呢。",
+          "我想买些菜。",
+          "明天星期天。"
+        ],
+        "answer": 0,
+        "explanation": "几点下班 hỏi tan làm lúc mấy giờ. 晚上六点半 là thời điểm phù hợp; các câu khác trả lời về nơi ở, việc muốn làm hoặc thứ trong tuần.",
+        "skill": "下班时间"
+      }
+    ],
+    "sort": [
+      {
+        "id": "l07-sort-01",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Tôi tan làm lúc sáu rưỡi tối.",
+        "tokens": [
+          "晚上六点半",
+          "下班",
+          "我"
+        ],
+        "answers": [
+          "我晚上六点半下班。",
+          "晚上六点半我下班。"
+        ],
+        "explanation": "Cụm thời gian 晚上六点半 đứng trước động từ 下班. Có thể đặt cụm này trước hoặc sau chủ ngữ 我.",
+        "skill": "时间状语"
+      },
+      {
+        "id": "l07-sort-02",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Hai giờ chiều chúng ta gặp nhau nhé.",
+        "tokens": [
+          "吧",
+          "我们",
+          "下午两点",
+          "见"
+        ],
+        "answers": [
+          "我们下午两点见吧。",
+          "下午两点我们见吧。"
+        ],
+        "explanation": "下午两点 đứng trước 见; 吧 đứng cuối câu để đề nghị nhẹ nhàng. Thời gian có thể đặt trước hoặc sau 我们.",
+        "skill": "时间／吧"
+      },
+      {
+        "id": "l07-sort-03",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Sáng mai tôi có tiết học.",
+        "tokens": [
+          "明天上午",
+          "有",
+          "课",
+          "我"
+        ],
+        "answers": [
+          "我明天上午有课。",
+          "明天上午我有课。"
+        ],
+        "explanation": "明天上午 là “sáng mai”, đặt trước 有课. Có thể nói 我明天上午有课 hoặc 明天上午我有课.",
+        "skill": "时间＋有课"
+      },
+      {
+        "id": "l07-sort-04",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Mẹ ở trong nhà.",
+        "tokens": [
+          "家里",
+          "在",
+          "妈妈"
+        ],
+        "answers": [
+          "妈妈在家里。"
+        ],
+        "explanation": "在 đứng trước nơi chốn 家里 để nói mẹ ở đâu: 妈妈＋在＋家里.",
+        "skill": "在＋处所"
+      },
+      {
+        "id": "l07-sort-05",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Mười phút nữa tôi đi bệnh viện.",
+        "tokens": [
+          "我",
+          "十分钟后",
+          "医院",
+          "去"
+        ],
+        "answers": [
+          "我十分钟后去医院。",
+          "十分钟后我去医院。"
+        ],
+        "explanation": "十分钟后 là “mười phút nữa”, đứng trước 去. 医院 đứng sau 去 để nêu nơi đến. Cụm thời gian có thể đứng đầu câu.",
+        "skill": "时段＋后"
+      }
+    ],
+    "translation": [
+      {
+        "id": "l07-translation-01",
+        "prompt": "Tôi có tiết học lúc mười giờ mười sáng.",
+        "stem": "",
+        "options": [
+          "我下午两点去医院。",
+          "我上午十点十分有课。",
+          "我晚上六点半下班。",
+          "我十分钟后去超市。"
+        ],
+        "answer": 1,
+        "explanation": "上午十点十分 là 10:10 sáng, 有课 là có tiết học. Các câu khác nói đi bệnh viện, tan làm hoặc đi siêu thị sau mười phút.",
+        "skill": "时刻与课程安排"
+      },
+      {
+        "id": "l07-translation-02",
+        "prompt": "Chiều nay tôi không đến trường.",
+        "stem": "",
+        "options": [
+          "我明天上午有课。",
+          "我晚上去电影院。",
+          "我下午不去学校。",
+          "我下午两点下班。"
+        ],
+        "answer": 2,
+        "explanation": "下午 nêu buổi chiều; 不去学校 là không đến trường. 不 phải đứng trước 去. Các lựa chọn khác đổi thời gian hoặc hành động.",
+        "skill": "时间／不去"
+      },
+      {
+        "id": "l07-translation-03",
+        "prompt": "Chúng ta gặp nhau lúc ba giờ chiều nhé.",
+        "stem": "",
+        "options": [
+          "我上午九点上班。",
+          "我们明天去超市。",
+          "我下午在家里。",
+          "我们下午三点见吧。"
+        ],
+        "answer": 3,
+        "explanation": "我们下午三点见吧 giữ đủ “chúng ta”, “ba giờ chiều”, “gặp nhau” và sắc thái đề nghị “nhé” của 吧. Các phương án khác nói đi làm, đi siêu thị hoặc ở nhà.",
+        "skill": "时间／见吧"
+      },
+      {
+        "id": "l07-translation-04",
+        "prompt": "Mười phút nữa tôi đi.",
+        "stem": "",
+        "options": [
+          "我十分钟后去。",
+          "我十点去医院。",
+          "我明天不去。",
+          "我晚上去看电影。"
+        ],
+        "answer": 0,
+        "explanation": "十分钟后 nghĩa là sau mười phút. 十点 là mười giờ, không phải mười phút nữa. Hai phương án còn lại thay đổi thời gian và nội dung.",
+        "skill": "十分钟后"
+      },
+      {
+        "id": "l07-translation-05",
+        "prompt": "Bạn đang ở đâu?",
+        "stem": "",
+        "options": [
+          "你几点下班？",
+          "你在哪儿呢？",
+          "你想买什么？",
+          "你明天去超市吗？"
+        ],
+        "answer": 1,
+        "explanation": "在哪儿 hỏi vị trí hiện tại: “ở đâu”. 几点下班 hỏi giờ tan làm, 买什么 hỏi đồ muốn mua; 你明天去超市吗 hỏi kế hoạch đi siêu thị ngày mai.",
+        "skill": "在＋哪儿"
+      }
+    ],
+    "listening": [
+      {
+        "id": "l07-listening-01",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Bạn muốn đi đâu?",
+          "Bạn tan học lúc mấy giờ?",
+          "Bây giờ là mấy giờ?",
+          "Bạn có mấy tiết học?"
+        ],
+        "answer": 2,
+        "explanation": "现在 là bây giờ; 几点 hỏi mấy giờ. Câu chỉ hỏi giờ hiện tại, không hỏi nơi đến, giờ tan học hay số tiết học.",
+        "skill": "听辨现在几点",
+        "audio": {
+          "track": "7-1",
+          "line": 0
+        },
+        "transcript": "现在几点？",
+        "pinyin": "Xiànzài jǐ diǎn?"
+      },
+      {
+        "id": "l07-listening-02",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Tôi có tiết học lúc hai giờ chiều.",
+          "Tôi tan làm lúc sáu rưỡi tối.",
+          "Mười phút nữa tôi đi học.",
+          "Tôi có tiết học lúc mười giờ mười sáng."
+        ],
+        "answer": 3,
+        "explanation": "上午十点十分 là 10:10 sáng. 有课 nói có tiết học. Đừng nhầm 十点十分 “10 giờ 10” với 十分钟后 “sau 10 phút”.",
+        "skill": "听辨十点十分",
+        "audio": {
+          "track": "7-1",
+          "line": 2
+        },
+        "transcript": "我上午十点十分有课。",
+        "pinyin": "Wǒ shàngwǔ shí diǎn shí fēn yǒu kè."
+      },
+      {
+        "id": "l07-listening-03",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Được, hai giờ chiều chúng ta gặp nhau nhé.",
+          "Được, sáng mai chúng ta đi siêu thị nhé.",
+          "Được, sáu giờ tối chúng ta ăn tối nhé.",
+          "Được, chiều nay tôi không muốn đi."
+        ],
+        "answer": 0,
+        "explanation": "下午两点 nêu 2 giờ chiều; 见吧 là lời hẹn “gặp nhau nhé”. Bản ghi không nhắc đến siêu thị, ăn tối hay từ chối đi.",
+        "skill": "听辨约见时间",
+        "audio": {
+          "track": "7-1",
+          "line": 3
+        },
+        "transcript": "好的，我们下午两点见吧。",
+        "pinyin": "Hǎo de, wǒmen xiàwǔ liǎng diǎn jiàn ba."
+      },
+      {
+        "id": "l07-listening-04",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Tôi đi làm lúc tám giờ sáng.",
+          "Tôi tan làm lúc sáu rưỡi tối.",
+          "Tôi tan học lúc bốn rưỡi chiều.",
+          "Tôi có tiết học lúc mười giờ sáng."
+        ],
+        "answer": 1,
+        "explanation": "晚上六点半 là 6:30 tối, 下班 là tan làm. 上班 là đi làm; 下课 là tan học, khác với nội dung được nghe.",
+        "skill": "听辨下班／六点半",
+        "audio": {
+          "track": "7-5",
+          "line": 2
+        },
+        "transcript": "我晚上六点半下班。",
+        "pinyin": "Wǒ wǎnshang liù diǎn bàn xià bān."
+      },
+      {
+        "id": "l07-listening-05",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Được, tôi đi lúc mười giờ.",
+          "Được, ngày mai tôi không đi.",
+          "Được, mười phút nữa tôi đi.",
+          "Được, tôi ở nhà cả buổi tối."
+        ],
+        "answer": 2,
+        "explanation": "十分钟后 nghĩa là mười phút nữa. Câu không nói 十点 “mười giờ” và cũng không có ý phủ định.",
+        "skill": "听辨时刻与时段",
+        "audio": {
+          "track": "7-5",
+          "line": 5
+        },
+        "transcript": "好，我十分钟后去。",
+        "pinyin": "Hǎo, wǒ shí fēnzhōng hòu qù."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "goal_vi": "Miêu tả vị trí, nói nơi làm một việc và hỏi khả năng đến đúng giờ.",
+    "choice": [
+      {
+        "id": "l08-choice-01",
+        "prompt": "Điền từ chỉ vị trí để diễn đạt “Con mèo ở dưới bàn”.",
+        "stem": "小猫在桌子___。",
+        "options": [
+          "前",
+          "外",
+          "下",
+          "里"
+        ],
+        "answer": 2,
+        "explanation": "下 nghĩa là dưới. 桌子下 = dưới bàn; 前 là phía trước, 外 là bên ngoài, 里 là bên trong, không đúng vị trí trong câu tiếng Việt.",
+        "skill": "方位词下"
+      },
+      {
+        "id": "l08-choice-02",
+        "prompt": "Chọn câu trả lời đúng trọng tâm về nơi làm việc.",
+        "stem": "你在哪儿工作？",
+        "options": [
+          "我明天休息。",
+          "我下午两点能到。",
+          "这只小猫很漂亮。",
+          "我在医院工作。"
+        ],
+        "answer": 3,
+        "explanation": "在哪儿工作 hỏi làm việc ở đâu. 在医院工作 trả lời “làm việc ở bệnh viện”. Các câu khác nói ngày nghỉ, khả năng đến hoặc con mèo.",
+        "skill": "在＋处所＋工作"
+      },
+      {
+        "id": "l08-choice-03",
+        "prompt": "Chọn từ hỏi khả năng đến lúc hai giờ chiều.",
+        "stem": "下午两点你___到吗？",
+        "options": [
+          "能",
+          "是",
+          "几",
+          "很"
+        ],
+        "answer": 0,
+        "explanation": "能 đứng trước 到 để hỏi “có thể đến không”: 你能到吗？. 是 là “là”, 几 hỏi số lượng, 很 chỉ mức độ; chúng không thay thế 能 trong cấu trúc này.",
+        "skill": "能＋动词"
+      },
+      {
+        "id": "l08-choice-04",
+        "prompt": "Chọn từ hoàn thành câu “Tôi ăn trưa ở trường”.",
+        "stem": "我___学校吃午饭。",
+        "options": [
+          "有",
+          "在",
+          "是",
+          "叫"
+        ],
+        "answer": 1,
+        "explanation": "在＋学校 nêu nơi diễn ra hành động 吃午饭. Cụm chỉ nơi chốn đặt trước động từ: 我在学校吃午饭.",
+        "skill": "介词在"
+      },
+      {
+        "id": "l08-choice-05",
+        "prompt": "Chọn câu hỏi phù hợp với câu trả lời “Nó ở dưới bàn”.",
+        "stem": "——___\n——它在桌子下。",
+        "options": [
+          "它好看吗？",
+          "你想吃什么？",
+          "小猫在哪儿？",
+          "你几点下班？"
+        ],
+        "answer": 2,
+        "explanation": "小猫在哪儿？ hỏi con mèo ở đâu, nên có thể trả lời 它在桌子下. Các câu khác hỏi vẻ ngoài, món ăn hoặc giờ tan làm.",
+        "skill": "在哪儿／方位"
+      }
+    ],
+    "sort": [
+      {
+        "id": "l08-sort-01",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Tôi làm việc ở bệnh viện.",
+        "tokens": [
+          "在医院",
+          "工作",
+          "我"
+        ],
+        "answers": [
+          "我在医院工作。"
+        ],
+        "explanation": "Để nói nơi làm việc, đặt 在医院 trước 工作: 我＋在医院＋工作.",
+        "skill": "在＋处所＋动词"
+      },
+      {
+        "id": "l08-sort-02",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Con mèo ở dưới bàn.",
+        "tokens": [
+          "在",
+          "桌子下",
+          "小猫"
+        ],
+        "answers": [
+          "小猫在桌子下。"
+        ],
+        "explanation": "桌子下 là cụm chỉ nơi chốn “dưới bàn”. Đặt 在 trước cả cụm: 小猫在桌子下.",
+        "skill": "方位词下"
+      },
+      {
+        "id": "l08-sort-03",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Chúng ta gặp nhau trước hiệu sách nhé.",
+        "tokens": [
+          "我们",
+          "吧",
+          "见",
+          "在书店前"
+        ],
+        "answers": [
+          "我们在书店前见吧。",
+          "在书店前我们见吧。"
+        ],
+        "explanation": "在书店前 chỉ nơi hẹn và đứng trước 见; 吧 đứng cuối câu. Cũng có thể đưa 在书店前 lên đầu để nhấn mạnh nơi hẹn.",
+        "skill": "在＋方位处所／吧"
+      },
+      {
+        "id": "l08-sort-04",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Bạn có thể đến lúc hai giờ chiều không?",
+        "tokens": [
+          "吗",
+          "能",
+          "到",
+          "下午两点",
+          "你"
+        ],
+        "answers": [
+          "你下午两点能到吗？",
+          "下午两点你能到吗？",
+          "你能下午两点到吗？"
+        ],
+        "explanation": "下午两点 đặt trước 能到 và có thể đứng trước hoặc sau 你. 吗 đứng cuối câu; 能到 nghĩa là có thể đến. Cách nói 你能下午两点到吗 cũng tự nhiên và có cùng ý hỏi.",
+        "skill": "时间／能到吗"
+      },
+      {
+        "id": "l08-sort-05",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Tôi ăn trưa ở trường.",
+        "tokens": [
+          "在学校",
+          "吃",
+          "午饭",
+          "我"
+        ],
+        "answers": [
+          "我在学校吃午饭。",
+          "我午饭在学校吃。",
+          "午饭我在学校吃。"
+        ],
+        "explanation": "Cách nói cơ bản là 我在学校吃午饭: 在学校 đứng trước 吃, 午饭 là bữa trưa. Cũng có thể đưa 午饭 lên trước để nhấn mạnh bữa trưa: 我午饭在学校吃 hoặc 午饭我在学校吃.",
+        "skill": "在＋处所＋吃午饭"
+      }
+    ],
+    "translation": [
+      {
+        "id": "l08-translation-01",
+        "prompt": "Con mèo ở dưới bàn.",
+        "stem": "",
+        "options": [
+          "小猫在房间外。",
+          "我在学校吃午饭。",
+          "房间外有一个人。",
+          "小猫在桌子下。"
+        ],
+        "answer": 3,
+        "explanation": "小猫在桌子下 giữ đúng “con mèo” và “dưới bàn”. 房间外 là bên ngoài phòng, không phải dưới bàn; hai phương án còn lại nói về người hoặc bữa trưa.",
+        "skill": "方位词下"
+      },
+      {
+        "id": "l08-translation-02",
+        "prompt": "Tôi cũng làm việc ở bệnh viện.",
+        "stem": "",
+        "options": [
+          "我也在医院工作。",
+          "我今天不去医院。",
+          "我在学校吃午饭。",
+          "医院有两个病人。"
+        ],
+        "answer": 0,
+        "explanation": "也 biểu thị “cũng” và đứng trước 在医院工作. Các câu khác nói không đi bệnh viện, ăn trưa ở trường hoặc số bệnh nhân.",
+        "skill": "也在＋处所＋工作"
+      },
+      {
+        "id": "l08-translation-03",
+        "prompt": "Bạn có thể đến lúc hai giờ chiều không?",
+        "stem": "",
+        "options": [
+          "你明天想买什么？",
+          "下午两点你能到吗？",
+          "你上午几点下班？",
+          "你在哪儿吃午饭？"
+        ],
+        "answer": 1,
+        "explanation": "下午两点 là 2 giờ chiều; 能到吗 hỏi có thể đến không. Các câu còn lại hỏi đồ muốn mua, giờ tan làm hoặc nơi ăn trưa.",
+        "skill": "能到吗／时间"
+      },
+      {
+        "id": "l08-translation-04",
+        "prompt": "Chúng ta gặp nhau trước hiệu sách của trường nhé.",
+        "stem": "",
+        "options": [
+          "我们下午去医院工作。",
+          "我想去超市买牛奶。",
+          "我们在学校书店前见吧。",
+          "学校书店里有一只小猫。"
+        ],
+        "answer": 2,
+        "explanation": "学校书店前 = phía trước hiệu sách của trường; 在…见吧 là đề nghị gặp ở đó. Các phương án khác đổi việc làm, nơi đến hoặc chủ thể.",
+        "skill": "学校书店前／见吧"
+      },
+      {
+        "id": "l08-translation-05",
+        "prompt": "Tôi ăn trưa ở trường.",
+        "stem": "",
+        "options": [
+          "我晚上在家里吃饭。",
+          "我在医院工作。",
+          "我想去超市买东西。",
+          "我在学校吃午饭。"
+        ],
+        "answer": 3,
+        "explanation": "在学校 nêu địa điểm ở trường; 吃午饭 là ăn trưa. Các câu khác nói ăn tối ở nhà, làm việc ở bệnh viện hoặc mua đồ.",
+        "skill": "在学校吃午饭"
+      }
+    ],
+    "listening": [
+      {
+        "id": "l08-listening-01",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Bên ngoài phòng có một con mèo nhỏ.",
+          "Dưới bàn có một con chó nhỏ.",
+          "Trong phòng có hai người.",
+          "Trước trường có một hiệu sách."
+        ],
+        "answer": 0,
+        "explanation": "房间外 là bên ngoài phòng; 一只小猫 là một con mèo nhỏ. Cần nghe cả địa điểm và con vật, không chỉ từ 小.",
+        "skill": "听辨房间外／小猫",
+        "audio": {
+          "track": "8-1",
+          "line": 0
+        },
+        "transcript": "房间外有一只小猫。",
+        "pinyin": "Fángjiān wài yǒu yì zhī xiǎo māo."
+      },
+      {
+        "id": "l08-listening-02",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Nó ở trên bàn.",
+          "Nó ở dưới bàn.",
+          "Nó ở trước hiệu sách.",
+          "Nó ở ngoài trường."
+        ],
+        "answer": 1,
+        "explanation": "在桌子下 xác định vị trí dưới bàn. 下 khác với 上 “trên”, 前 “trước” và 外 “ngoài”. Đại từ 它 được dịch trung tính là “nó”.",
+        "skill": "听辨方位下",
+        "audio": {
+          "track": "8-1",
+          "line": 2
+        },
+        "transcript": "它在桌子下呢。",
+        "pinyin": "Tā zài zhuōzi xià ne."
+      },
+      {
+        "id": "l08-listening-03",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Gặp nhau trong bệnh viện nhé.",
+          "Gặp nhau ở nhà tôi nhé.",
+          "Gặp nhau trước hiệu sách của trường nhé.",
+          "Gặp nhau trước siêu thị nhé."
+        ],
+        "answer": 2,
+        "explanation": "Nghe trọn cụm 学校书店前: phía trước hiệu sách của trường. 见吧 là lời đề nghị gặp nhau; không phải ở bệnh viện, nhà hay siêu thị.",
+        "skill": "听辨见面地点",
+        "audio": {
+          "track": "8-3",
+          "line": 1
+        },
+        "transcript": "在学校书店前见吧。",
+        "pinyin": "Zài xuéxiào shūdiàn qián jiàn ba."
+      },
+      {
+        "id": "l08-listening-04",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Được. Sáng mai bạn muốn đi đâu?",
+          "Được. Buổi tối bạn có tiết học không?",
+          "Được. Bạn tan làm lúc mấy giờ?",
+          "Được. Hai giờ chiều bạn có thể đến không?"
+        ],
+        "answer": 3,
+        "explanation": "下午两点 là 2 giờ chiều; 能到吗 hỏi có thể đến không. Câu không hỏi giờ tan làm hay lịch học.",
+        "skill": "听辨能到／时间",
+        "audio": {
+          "track": "8-3",
+          "line": 2
+        },
+        "transcript": "好的。下午两点你能到吗？",
+        "pinyin": "Hǎo de. Xiàwǔ liǎng diǎn nǐ néng dào ma?"
+      },
+      {
+        "id": "l08-listening-05",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Bệnh viện lớn có nhiều bệnh nhân, bác sĩ rất bận.",
+          "Trường lớn có nhiều học sinh, giáo viên rất vui.",
+          "Bệnh viện ít bệnh nhân, bác sĩ hôm nay nghỉ.",
+          "Bác sĩ ăn trưa ở trường lúc hai giờ chiều."
+        ],
+        "answer": 0,
+        "explanation": "大医院病人多 nói bệnh viện lớn có nhiều bệnh nhân; 医生非常忙 nói bác sĩ rất bận. 多 và 忙 là hai thông tin chính cần nghe.",
+        "skill": "听辨病人多／医生忙",
+        "audio": {
+          "track": "8-5",
+          "line": 2
+        },
+        "transcript": "大医院病人多，医生非常忙。",
+        "pinyin": "Dà yīyuàn bìngrén duō, yīshēng fēicháng máng."
+      }
+    ]
+  },
+  {
+    "lesson": 9,
+    "goal_vi": "Nói ở đâu có gì, dùng số thứ tự và sắp xếp thời gian–địa điểm–hoạt động.",
+    "choice": [
+      {
+        "id": "l09-choice-01",
+        "prompt": "Điền động từ để nói “Trên ghế có một quyển sách tiếng Trung”.",
+        "stem": "椅子上___一本中文书。",
+        "options": [
+          "在",
+          "有",
+          "去",
+          "做"
+        ],
+        "answer": 1,
+        "explanation": "有 dùng để nói ở một nơi có người hoặc vật: 椅子上＋有＋一本中文书. 在 thường dùng trong cấu trúc nêu vị trí của một đối tượng đã xác định.",
+        "skill": "处所＋有＋事物"
+      },
+      {
+        "id": "l09-choice-02",
+        "prompt": "Chọn từ còn thiếu để nói “quyển sách tiếng Trung thứ hai của tôi”.",
+        "stem": "我的___二本中文书",
+        "options": [
+          "两",
+          "个",
+          "第",
+          "在"
+        ],
+        "answer": 2,
+        "explanation": "第 đứng trước số để tạo số thứ tự: 第二 là thứ hai. 第二本中文书 khác với 两本中文书, là hai quyển sách tiếng Trung.",
+        "skill": "第＋数词＋量词"
+      },
+      {
+        "id": "l09-choice-03",
+        "prompt": "Chọn câu diễn đạt “Sáng mai tôi học ở trường”.",
+        "stem": "",
+        "options": [
+          "我晚上在家里看电视。",
+          "我明天去超市买东西。",
+          "我和朋友们唱歌。",
+          "我明天上午在学校学习。"
+        ],
+        "answer": 3,
+        "explanation": "Thứ tự thông dụng là chủ ngữ＋thời gian＋在＋địa điểm＋hành động: 我＋明天上午＋在学校＋学习. Các câu khác nói xem tivi, mua đồ hoặc hát cùng bạn bè, không diễn tả việc học ở trường vào sáng mai.",
+        "skill": "时间／处所顺序"
+      },
+      {
+        "id": "l09-choice-04",
+        "prompt": "Chọn câu trả lời cho câu hỏi về người sở hữu.",
+        "stem": "那是谁的书？",
+        "options": [
+          "那是我的书。",
+          "学校前边有书店。",
+          "我明天读书。",
+          "这本书很好看。"
+        ],
+        "answer": 0,
+        "explanation": "谁的书 hỏi sách của ai; 我的书 trả lời sách của tôi. Các câu khác nói vị trí, kế hoạch đọc sách hoặc nhận xét về sách.",
+        "skill": "谁的／我的"
+      },
+      {
+        "id": "l09-choice-05",
+        "prompt": "Chọn câu có nghĩa “Tôi hát cùng bạn bè”.",
+        "stem": "",
+        "options": [
+          "我在家里看电视。",
+          "我和朋友们唱歌。",
+          "朋友们买两本书。",
+          "我明天不去学校。"
+        ],
+        "answer": 1,
+        "explanation": "和朋友们 là “cùng bạn bè”, 唱歌 là hát. Các câu khác nói xem tivi, mua sách hoặc không đến trường.",
+        "skill": "和＋人＋动词"
+      }
+    ],
+    "sort": [
+      {
+        "id": "l09-sort-01",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Trước trường có một rạp chiếu phim.",
+        "tokens": [
+          "一家",
+          "学校前边",
+          "电影院",
+          "有"
+        ],
+        "answers": [
+          "学校前边有一家电影院。"
+        ],
+        "explanation": "Đặt nơi chốn 学校前边 ở đầu, sau đó 有＋一家电影院. Cấu trúc này giới thiệu ở đâu có gì.",
+        "skill": "处所＋有"
+      },
+      {
+        "id": "l09-sort-02",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Sáng mai tôi học ở trường.",
+        "tokens": [
+          "明天上午",
+          "在学校",
+          "学习",
+          "我"
+        ],
+        "answers": [
+          "我明天上午在学校学习。",
+          "明天上午我在学校学习。"
+        ],
+        "explanation": "Khi cùng có thời gian và nơi chốn, dùng 明天上午＋在学校＋学习. 明天上午 có thể đứng trước hoặc sau 我.",
+        "skill": "时间／处所顺序"
+      },
+      {
+        "id": "l09-sort-03",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Đây là quyển sách tiếng Trung thứ hai của tôi.",
+        "tokens": [
+          "中文书",
+          "这",
+          "是",
+          "第二本",
+          "我的"
+        ],
+        "answers": [
+          "这是我的第二本中文书。"
+        ],
+        "explanation": "我的 chỉ người sở hữu, 第二本 chỉ thứ tự. Cả hai đứng trước 中文书: 我的＋第二本＋中文书.",
+        "skill": "所属／序数"
+      },
+      {
+        "id": "l09-sort-04",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Chúng ta gặp nhau ngoài rạp chiếu phim lúc bảy giờ.",
+        "tokens": [
+          "七点",
+          "见",
+          "在电影院外边",
+          "我们"
+        ],
+        "answers": [
+          "我们七点在电影院外边见。",
+          "七点我们在电影院外边见。"
+        ],
+        "explanation": "七点 nêu thời gian, 在电影院外边 nêu nơi chốn, cả hai đứng trước 见. Có thể đưa 七点 lên đầu câu.",
+        "skill": "时间／地点／见"
+      },
+      {
+        "id": "l09-sort-05",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Tối nay tôi hát cùng bạn bè.",
+        "tokens": [
+          "我",
+          "晚上",
+          "唱歌",
+          "和朋友们"
+        ],
+        "answers": [
+          "我晚上和朋友们唱歌。",
+          "晚上我和朋友们唱歌。",
+          "我和朋友们晚上唱歌。"
+        ],
+        "explanation": "晚上 đứng trước hoạt động; 和朋友们 cho biết hát cùng ai. Có thể đặt 晚上 trước hoặc sau 我. Cũng có thể nói 我和朋友们晚上唱歌, xem 我和朋友们 là nhóm người cùng thực hiện hành động.",
+        "skill": "时间／和＋人"
+      }
+    ],
+    "translation": [
+      {
+        "id": "l09-translation-01",
+        "prompt": "Trên ghế có một quyển sách tiếng Trung.",
+        "stem": "",
+        "options": [
+          "我在学校学习中文。",
+          "这是我的第二本书。",
+          "椅子上有一本中文书。",
+          "书店前有一家电影院。"
+        ],
+        "answer": 2,
+        "explanation": "椅子上 = trên ghế, 有一本中文书 = có một quyển sách tiếng Trung. Các câu khác nói học tiếng Trung, thứ tự sách hoặc địa điểm trước hiệu sách.",
+        "skill": "椅子上有"
+      },
+      {
+        "id": "l09-translation-02",
+        "prompt": "Sáng mai tôi học ở trường.",
+        "stem": "",
+        "options": [
+          "我今天晚上在家里看电视。",
+          "我明天去超市买东西。",
+          "我们下午在电影院外边见。",
+          "我明天上午在学校学习。"
+        ],
+        "answer": 3,
+        "explanation": "明天上午 là sáng mai; 在学校学习 là học ở trường. Các câu khác thay đổi thời gian, địa điểm và hoạt động, nên không dịch đúng câu gốc.",
+        "skill": "时间／处所顺序"
+      },
+      {
+        "id": "l09-translation-03",
+        "prompt": "Đây là quyển sách tiếng Trung thứ hai của tôi.",
+        "stem": "",
+        "options": [
+          "这是我的第二本中文书。",
+          "我有两本中文书。",
+          "那是老师的书。",
+          "我明天在家里读书。"
+        ],
+        "answer": 0,
+        "explanation": "第二本 nghĩa là “quyển thứ hai”, còn 两本 chỉ tổng số “hai quyển”. 这是我的 giữ ý “đây là…của tôi”; hai câu khác nói người sở hữu khác hoặc việc đọc sách.",
+        "skill": "第二本与两本"
+      },
+      {
+        "id": "l09-translation-04",
+        "prompt": "Tôi hát cùng bạn bè.",
+        "stem": "",
+        "options": [
+          "我在家里看电视。",
+          "我和朋友们唱歌。",
+          "我去书店买书。",
+          "朋友们在学校学习。"
+        ],
+        "answer": 1,
+        "explanation": "和朋友们唱歌 là hát cùng bạn bè. Các câu còn lại nói xem tivi ở nhà, mua sách và bạn bè học ở trường.",
+        "skill": "和＋人／唱歌"
+      },
+      {
+        "id": "l09-translation-05",
+        "prompt": "Trước trường có một rạp chiếu phim.",
+        "stem": "",
+        "options": [
+          "学校里有一个老师。",
+          "电影院里有三个朋友。",
+          "学校前边有一家电影院。",
+          "我晚上去电影院看电影。"
+        ],
+        "answer": 2,
+        "explanation": "学校前边 xác định phía trước trường; 有一家电影院 giới thiệu một rạp chiếu phim ở đó. Không nhầm câu giới thiệu địa điểm với câu nói kế hoạch đi xem phim.",
+        "skill": "处所＋有＋建筑"
+      }
+    ],
+    "listening": [
+      {
+        "id": "l09-listening-01",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Trong trường có một hiệu sách.",
+          "Trước bệnh viện có một siêu thị.",
+          "Tối nay chúng ta đi xem phim.",
+          "Trước trường có một rạp chiếu phim."
+        ],
+        "answer": 3,
+        "explanation": "学校前边 là trước trường; 有一家电影院 là có một rạp chiếu phim. Câu giới thiệu vị trí, không phải lời rủ đi xem phim.",
+        "skill": "听辨前边／电影院",
+        "audio": {
+          "track": "9-1",
+          "line": 0
+        },
+        "transcript": "学校前边有一家电影院。",
+        "pinyin": "Xuéxiào qiánbian yǒu yì jiā diànyǐngyuàn."
+      },
+      {
+        "id": "l09-listening-02",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Sáng mai tôi học ở trường.",
+          "Tối nay tôi đọc sách ở nhà.",
+          "Chiều mai tôi đi siêu thị.",
+          "Sáng nay tôi làm việc ở bệnh viện."
+        ],
+        "answer": 0,
+        "explanation": "Nghe lần lượt 明天上午 “sáng mai”, 在学校 “ở trường”, 学习 “học”. Phải giữ đúng cả thời gian, địa điểm và hoạt động.",
+        "skill": "听辨时间地点活动",
+        "audio": {
+          "track": "9-3",
+          "line": 3
+        },
+        "transcript": "我明天上午在学校学习。",
+        "pinyin": "Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí."
+      },
+      {
+        "id": "l09-listening-03",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Hôm nay là Chủ nhật, bạn đi đâu?",
+          "Ngày mai là thứ Bảy, bạn làm gì?",
+          "Ngày mai là thứ Hai, bạn mấy giờ đi làm?",
+          "Hôm nay là thứ Sáu, bạn có tiết học không?"
+        ],
+        "answer": 1,
+        "explanation": "明天星期六 là ngày mai thứ Bảy; 你做什么 hỏi bạn làm gì. 星期六 là thứ Bảy trong tiếng Việt, không phải thứ Sáu.",
+        "skill": "听辨星期六／做什么",
+        "audio": {
+          "track": "9-5",
+          "line": 0
+        },
+        "transcript": "明天星期六，你做什么？",
+        "pinyin": "Míngtiān xīngqīliù, nǐ zuò shénme?"
+      },
+      {
+        "id": "l09-listening-04",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Bạn nấu ăn rất ngon.",
+          "Bạn có một quyển sách hay.",
+          "Bạn hát rất hay.",
+          "Bạn học tiếng Trung ở trường."
+        ],
+        "answer": 2,
+        "explanation": "唱歌 là hát; 很好听 khen nghe rất hay. 好听 dùng cho âm thanh, khác với 好吃 dùng để khen món ăn ngon.",
+        "skill": "听辨唱歌好听",
+        "audio": {
+          "track": "9-5",
+          "line": 2
+        },
+        "transcript": "你唱歌很好听。",
+        "pinyin": "Nǐ chàng gē hěn hǎotīng."
+      },
+      {
+        "id": "l09-listening-05",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Tôi cũng có một con mèo nhỏ.",
+          "Tôi có hai quyển sách.",
+          "Tôi muốn mua một chiếc ghế.",
+          "Tôi cũng có một con chó nhỏ."
+        ],
+        "answer": 3,
+        "explanation": "也有 nghĩa là cũng có; 一只小狗 là một con chó nhỏ. 狗 “chó” khác với 猫 “mèo”, dù đều có thể dùng lượng từ 只.",
+        "skill": "听辨也有／小狗",
+        "audio": {
+          "track": "9-5",
+          "line": 5
+        },
+        "transcript": "我也有一只小狗。",
+        "pinyin": "Wǒ yě yǒu yì zhī xiǎo gǒu."
+      }
+    ]
+  },
+  {
+    "lesson": 10,
+    "goal_vi": "Hỏi giá, nói số tiền và đơn vị mua bán; nhận xét món đồ và hỏi ý kiến.",
+    "choice": [
+      {
+        "id": "l10-choice-01",
+        "prompt": "“三块五” chỉ số tiền nào trong cách nói thông dụng?",
+        "stem": "三块五",
+        "options": [
+          "3,50 nhân dân tệ",
+          "35 nhân dân tệ",
+          "5,30 nhân dân tệ",
+          "350 nhân dân tệ"
+        ],
+        "answer": 0,
+        "explanation": "三块五 là cách nói ngắn của 三块五毛: 3 tệ 5 hào, tức 3,50 nhân dân tệ. Không đọc thành 35 tệ.",
+        "skill": "钱数：块／毛"
+      },
+      {
+        "id": "l10-choice-02",
+        "prompt": "Chọn lượng từ phù hợp với 衣服 (quần áo).",
+        "stem": "我想买一___衣服。",
+        "options": [
+          "本",
+          "件",
+          "只",
+          "口"
+        ],
+        "answer": 1,
+        "explanation": "件 là lượng từ thường dùng cho quần áo: 一件衣服. 本 dùng cho sách, 只 thường dùng cho động vật, 口 dùng khi đếm người trong gia đình.",
+        "skill": "量词件"
+      },
+      {
+        "id": "l10-choice-03",
+        "prompt": "Chọn câu hỏi khi muốn biết giá một quả táo.",
+        "stem": "",
+        "options": [
+          "你想吃什么？",
+          "你有几个苹果？",
+          "这个苹果多少钱？",
+          "苹果在哪儿？"
+        ],
+        "answer": 2,
+        "explanation": "多少钱 hỏi giá tiền. 几个苹果 hỏi số lượng táo, 在哪儿 hỏi vị trí, còn 想吃什么 hỏi món muốn ăn.",
+        "skill": "多少钱"
+      },
+      {
+        "id": "l10-choice-04",
+        "prompt": "Người bán nói “两斤苹果”. Theo đơn vị đang dùng trong bài, đó là bao nhiêu?",
+        "stem": "1斤＝500g",
+        "options": [
+          "Hai quả táo",
+          "Hai ki-lô-gam táo",
+          "Nửa ki-lô-gam táo",
+          "Một ki-lô-gam táo"
+        ],
+        "answer": 3,
+        "explanation": "Trong bài, 1斤 bằng 500 gam, nên 两斤 bằng 1 ki-lô-gam. Không hiểu 斤 thành “cân” Việt Nam loại 1 kg; số quả táo không được nêu.",
+        "skill": "单位斤"
+      },
+      {
+        "id": "l10-choice-05",
+        "prompt": "Chọn câu dùng để hỏi nhận xét về chiếc cốc.",
+        "stem": "",
+        "options": [
+          "这个杯子怎么样？",
+          "这个杯子多少钱？",
+          "杯子在哪儿？",
+          "你有几个杯子？"
+        ],
+        "answer": 0,
+        "explanation": "怎么样 hỏi nhận xét hoặc tình trạng: “Chiếc cốc này thế nào?”. 多少钱 hỏi giá, 在哪儿 hỏi vị trí, 几个 hỏi số lượng.",
+        "skill": "怎么样"
+      }
+    ],
+    "sort": [
+      {
+        "id": "l10-sort-01",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Táo ở đây thật rẻ!",
+        "tokens": [
+          "苹果",
+          "这儿的",
+          "真",
+          "便宜"
+        ],
+        "answers": [
+          "这儿的苹果真便宜！"
+        ],
+        "explanation": "这儿的 bổ nghĩa cho 苹果, nghĩa là “táo ở đây”. 真 đặt trước 便宜 để nhấn mạnh nhận xét “thật rẻ”.",
+        "skill": "形容词谓语句"
+      },
+      {
+        "id": "l10-sort-02",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Chiếc cốc này bao nhiêu tiền?",
+        "tokens": [
+          "杯子",
+          "多少",
+          "钱",
+          "这个"
+        ],
+        "answers": [
+          "这个杯子多少钱？"
+        ],
+        "explanation": "这个杯子 là vật cần hỏi giá. 多少钱 là cụm hỏi bao nhiêu tiền; không đổi thứ tự thành 钱多少 trong câu hỏi cơ bản này.",
+        "skill": "多少钱"
+      },
+      {
+        "id": "l10-sort-03",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Tôi muốn mua một ít quần áo.",
+        "tokens": [
+          "衣服",
+          "想",
+          "我",
+          "买",
+          "些"
+        ],
+        "answers": [
+          "我想买些衣服。"
+        ],
+        "explanation": "想 đứng trước 买; 些 đứng trước 衣服 để chỉ một ít quần áo: 我＋想＋买＋些＋衣服.",
+        "skill": "想买些＋名词"
+      },
+      {
+        "id": "l10-sort-04",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Quần áo của cửa hàng này không đắt.",
+        "tokens": [
+          "衣服",
+          "不",
+          "贵",
+          "这家商店的"
+        ],
+        "answers": [
+          "这家商店的衣服不贵。"
+        ],
+        "explanation": "这家商店的 đứng trước 衣服 để xác định quần áo của cửa hàng nào. 不 đặt ngay trước tính từ 贵: 不贵 = không đắt.",
+        "skill": "的字短语／不贵"
+      },
+      {
+        "id": "l10-sort-05",
+        "prompt": "Sắp xếp tất cả các cụm từ thành câu có nghĩa dưới đây.",
+        "meaning": "Chiếc cốc này thế nào?",
+        "tokens": [
+          "怎么样",
+          "这个",
+          "杯子"
+        ],
+        "answers": [
+          "这个杯子怎么样？"
+        ],
+        "explanation": "Nêu món đồ bằng 这个杯子, rồi dùng 怎么样 để hỏi ý kiến hoặc tình trạng: “Chiếc cốc này thế nào?”.",
+        "skill": "怎么样"
+      }
+    ],
+    "translation": [
+      {
+        "id": "l10-translation-01",
+        "prompt": "Táo ở đây thật rẻ!",
+        "stem": "",
+        "options": [
+          "我今天去超市买东西。",
+          "这儿的苹果真便宜！",
+          "我想买一件衣服。",
+          "那个杯子很贵。"
+        ],
+        "answer": 1,
+        "explanation": "这儿的苹果 là táo ở đây; 真便宜 nghĩa là thật rẻ. Các câu khác nói đi siêu thị mua đồ, muốn mua quần áo hoặc nhận xét chiếc cốc đắt.",
+        "skill": "便宜与多"
+      },
+      {
+        "id": "l10-translation-02",
+        "prompt": "Tôi muốn mua một ít quần áo.",
+        "stem": "",
+        "options": [
+          "我想吃一个苹果。",
+          "我在商店工作。",
+          "我想买些衣服。",
+          "我不想买这个杯子。"
+        ],
+        "answer": 2,
+        "explanation": "想买些衣服 nghĩa là muốn mua một ít quần áo. Các câu khác nói ăn táo, làm việc ở cửa hàng hoặc không muốn mua cốc.",
+        "skill": "想买些衣服"
+      },
+      {
+        "id": "l10-translation-03",
+        "prompt": "Chiếc cốc này bao nhiêu tiền?",
+        "stem": "",
+        "options": [
+          "你想买什么？",
+          "这个杯子怎么样？",
+          "杯子在哪儿？",
+          "这个杯子多少钱？"
+        ],
+        "answer": 3,
+        "explanation": "多少钱 là hỏi giá tiền. 怎么样 hỏi nhận xét, 在哪儿 hỏi vị trí, 想买什么 hỏi muốn mua món gì; các câu này không thay thế câu hỏi giá.",
+        "skill": "多少钱"
+      },
+      {
+        "id": "l10-translation-04",
+        "prompt": "Quần áo của cửa hàng này không đắt.",
+        "stem": "",
+        "options": [
+          "这家商店的衣服不贵。",
+          "这家商店的衣服很多。",
+          "我不想去这家商店。",
+          "这家商店有杯子。"
+        ],
+        "answer": 0,
+        "explanation": "不贵 nghĩa là không đắt. 很多 chỉ số lượng nhiều; không muốn đến cửa hàng và có bán cốc là hai ý khác.",
+        "skill": "不贵"
+      },
+      {
+        "id": "l10-translation-05",
+        "prompt": "Tôi muốn mua một ki-lô-gam táo. (Dùng đơn vị 斤 trong bài: 1斤 = 500g.)",
+        "stem": "",
+        "options": [
+          "我想买两件衣服。",
+          "我想买两斤苹果。",
+          "我想买两个杯子。",
+          "我想去超市买牛奶。"
+        ],
+        "answer": 1,
+        "explanation": "Một ki-lô-gam bằng 两斤 vì 1斤 = 500g. 我想买两斤苹果 giữ đúng ý muốn mua, loại quả là táo và khối lượng một ki-lô-gam. Các câu khác nói mua quần áo, cốc hoặc sữa.",
+        "skill": "两斤＝一千克"
+      }
+    ],
+    "listening": [
+      {
+        "id": "l10-listening-01",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Xin chào, cốc bao nhiêu tiền?",
+          "Xin chào, quần áo ở đâu?",
+          "Xin chào, ở đây có cốc không?",
+          "Xin chào, táo có ngon không?"
+        ],
+        "answer": 2,
+        "explanation": "有杯子吗 hỏi có cốc không. Trong bản ghi không có 多少钱 để hỏi giá và không hỏi quần áo hay táo.",
+        "skill": "听辨有杯子吗",
+        "audio": {
+          "track": "10-1",
+          "line": 0
+        },
+        "transcript": "您好，有杯子吗？",
+        "pinyin": "Nín hǎo, yǒu bēizi ma?"
+      },
+      {
+        "id": "l10-listening-02",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Những cái này 10 tệ một cái, những cái kia 5 tệ một cái.",
+          "Cả hai loại đều 5 tệ một cái.",
+          "Những cái này 50 tệ một cái, những cái kia 100 tệ một cái.",
+          "Những cái này 5 tệ một cái, những cái kia 10 tệ một cái."
+        ],
+        "answer": 3,
+        "explanation": "这些对应五块钱一个; 那些对应十块钱一个. Cần ghép đúng “những cái này” với 5 tệ và “những cái kia” với 10 tệ; 一个 cho biết giá mỗi cái.",
+        "skill": "听辨这些／那些／价格",
+        "audio": {
+          "track": "10-1",
+          "line": 3
+        },
+        "transcript": "这些五块钱一个，那些十块钱一个。",
+        "pinyin": "Zhèxiē wǔ kuài qián yí ge, nàxiē shí kuài qián yí ge."
+      },
+      {
+        "id": "l10-listening-03",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Hoa quả ở đây nhiều thật!",
+          "Táo ở đây đắt quá!",
+          "Tôi muốn mua hai quả táo.",
+          "Cửa hàng này không có hoa quả."
+        ],
+        "answer": 0,
+        "explanation": "水果 là hoa quả; 真不少 nghĩa đen là “thật không ít”, tự nhiên dịch là “nhiều thật”. Câu chưa nói giá tiền hay số táo muốn mua.",
+        "skill": "听辨真不少",
+        "audio": {
+          "track": "10-3",
+          "line": 0
+        },
+        "transcript": "这儿的水果真不少！",
+        "pinyin": "Zhèr de shuǐguǒ zhēn bù shǎo!"
+      },
+      {
+        "id": "l10-listening-04",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Tôi muốn mua hai quả táo.",
+          "Tôi muốn mua hai jīn táo, tức một ki-lô-gam.",
+          "Tôi muốn mua hai ki-lô-gam táo.",
+          "Tôi muốn mua hai chiếc quần áo."
+        ],
+        "answer": 1,
+        "explanation": "两斤苹果 là hai jīn táo. Với đơn vị dùng trong bài, 1斤 = 500g nên 两斤 = 1 kg. 斤 chỉ khối lượng, không phải số quả.",
+        "skill": "听辨两斤苹果",
+        "audio": {
+          "track": "10-3",
+          "line": 2
+        },
+        "transcript": "我要买两斤苹果。",
+        "pinyin": "Wǒ yào mǎi liǎng jīn píngguǒ."
+      },
+      {
+        "id": "l10-listening-05",
+        "prompt": "Nghe và chọn nghĩa đúng.",
+        "options": [
+          "Được, hoa quả ở đây rất ít!",
+          "Được, chiếc cốc này không đẹp!",
+          "Được, táo ở đây thật rẻ!",
+          "Được, quần áo ở đây rất đắt!"
+        ],
+        "answer": 2,
+        "explanation": "苹果 là táo; 真便宜 là thật rẻ. Bản ghi không nói về cốc, quần áo hay số lượng hoa quả.",
+        "skill": "听辨苹果／便宜",
+        "audio": {
+          "track": "10-3",
+          "line": 4
+        },
+        "transcript": "好的，这儿的苹果真便宜！",
+        "pinyin": "Hǎo de, zhèr de píngguǒ zhēn piányi!"
+      }
+    ]
+  }
+]

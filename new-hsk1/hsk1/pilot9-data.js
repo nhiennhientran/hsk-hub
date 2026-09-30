@@ -2,7 +2,7 @@
    Only Lesson 9 is piloted. New items are adaptations, not official exam items. */
 (function(root){
   'use strict';
-  const source=(page,kind='adapted',answerKey='')=>({book:'新HSK教程1 (HSK3.0)',page,pdfPage:page+15,kind,answerKey});
+  const source=(page,kind='adapted',answerKey='')=>({book:'新HSK教程1',page,pdfPage:page+15,kind,answerKey});
   const mc=(id,prompt,stem,options,answer,explain,page,extra={})=>({id,type:'choice',prompt,stem,options,answer,explain,source:source(page),...extra});
   const groups=[
     {id:'words',title:'Từ vựng & pinyin',zh:'词汇与拼音',intro:'Chọn một đáp án A, B, C hoặc D. Chú ý nghĩa của từ trong bài 9.',questions:[
