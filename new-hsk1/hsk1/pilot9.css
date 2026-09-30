@@ -1,0 +1,79 @@
+/* Scoped to the reviewed Lesson 9 pilot. */
+.p9 {--p9-green:#175b3e;--p9-ink:#203a2c;--p9-muted:#617165;--p9-line:#d8e4db;color:var(--p9-ink);font-size:15px;line-height:1.65}
+.p9 button,.p9 input,.p9 textarea,.p9 select{font:inherit}
+.p9 button{cursor:pointer;min-height:44px;border-radius:10px;padding:9px 14px;border:1px solid var(--p9-line);background:#fff;color:var(--p9-ink)}
+.p9 button:hover:not(:disabled){border-color:var(--p9-green);background:#f0f7f2}
+.p9 button:focus-visible,.p9 input:focus-visible,.p9 textarea:focus-visible,.p9 select:focus-visible{outline:3px solid #d1a347;outline-offset:3px}
+.p9 button:disabled{cursor:default;opacity:.55}
+.p9 .p9-primary{background:var(--p9-green);color:#fff;border-color:var(--p9-green)}
+.p9 .p9-primary:hover:not(:disabled){background:#124a32;color:#fff}
+.p9 [hidden]{display:none!important}
+.p9 p{margin:0 0 10px}.p9 h2,.p9 h3{margin:0 0 8px;line-height:1.45}
+.p9 small,.p9 .p9-muted{color:var(--p9-muted)}
+.p9 .p9-kicker{font-size:12px;letter-spacing:.07em;color:var(--p9-green);font-weight:800;text-transform:uppercase}
+.p9 .p9-lead{background:#f3f8f3;border:1px solid var(--p9-line);border-radius:16px;padding:21px;margin-bottom:18px}
+.p9 .p9-summary{display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:12px;margin:15px 0 10px}
+.p9 .p9-stat{background:#fff;border-radius:12px;border:1px solid var(--p9-line);padding:12px}
+.p9 .p9-stat strong{display:block;font-size:23px;color:var(--p9-green)}
+.p9 .p9-stat span,.p9 .p9-stat small{display:block;font-size:12px}
+.p9 progress{height:13px;width:100%;accent-color:var(--p9-green)}
+.p9 .p9-toolbar{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin:14px 0}
+.p9 .p9-toolbar a{color:var(--p9-green);font-weight:700}
+.p9 .p9-save-note{font-size:12px;margin:8px 0 0}
+.p9 .p9-warning{border:1px solid #e4ba67;background:#fff9e9;padding:12px;border-radius:10px;color:#7a5219}
+.p9 .p9-group-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:22px}
+.p9 .p9-group-btn{text-align:left;padding:12px;display:flex;gap:10px;align-items:center}
+.p9 .p9-group-btn[aria-current=step]{background:#eaf5ed;border:2px solid var(--p9-green);padding:11px}
+.p9 .p9-group-number{display:grid;place-items:center;flex-shrink:0;width:32px;height:32px;border-radius:50%;background:#e5eee7;font-weight:800}
+.p9 .p9-group-btn small{display:block;font-size:12px}
+.p9 .p9-group-intro{margin:0 0 18px}.p9 .p9-group-intro h3{font-size:22px}
+.p9 .p9-passage{border-left:4px solid #d1a347;border-radius:0 12px 12px 0;background:#fffaf0;padding:18px;margin:16px 0;font-size:20px;line-height:1.9}
+.p9 .p9-q{border:1px solid var(--p9-line);border-radius:14px;background:#fff;padding:20px;margin-bottom:14px}
+.p9 .p9-q-meta{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12px;color:var(--p9-muted);margin-bottom:8px}
+.p9 .p9-q h4{font-size:16px;line-height:1.65;margin:0 0 10px}
+.p9 .p9-stem{font-size:23px;line-height:1.9;white-space:pre-line;margin:8px 0 14px}
+.p9 .p9-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.p9 .p9-option{text-align:left;display:flex;align-items:flex-start;gap:10px;height:100%}
+.p9 .p9-option b{display:grid;place-items:center;width:25px;height:25px;background:#eff3ef;border-radius:6px;flex-shrink:0}
+.p9 .p9-option[aria-pressed=true]{background:#eaf5ed;border:2px solid var(--p9-green);padding:8px 13px}
+.p9 .p9-option.p9-correct{background:#eaf5ed;border-color:#2c794e;opacity:1}
+.p9 .p9-option.p9-wrong{background:#fff0ec;border-color:#bc624a;opacity:1}
+.p9 .p9-option:disabled{opacity:.85;color:var(--p9-ink)}
+.p9 .p9-feedback{margin-top:15px;padding:14px;border-radius:10px;background:#f1f7f2;border:1px solid #d3e6d7}
+.p9 .p9-feedback.p9-bad{background:#fff5ef;border-color:#ebd2bf}
+.p9 .p9-feedback.p9-review{background:#fff9e9;border-color:#e4d3a5}
+.p9 .p9-feedback strong{display:block}.p9 .p9-feedback .p9-model{font-size:21px;line-height:1.7;margin:7px 0;white-space:pre-line}
+.p9 .p9-feedback small{display:block;margin-top:8px}
+.p9 .p9-result{background:#eaf5ed;border:1px solid #bbd8c2;border-radius:12px;padding:16px;margin:18px 0}
+.p9 .p9-actions{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.p9 .p9-error{color:#a0422d;min-height:24px;margin:8px 0}.p9 .p9-q.p9-missing{border:2px solid #b95c42}
+.p9 .p9-input{width:100%;min-height:92px;resize:vertical;padding:13px;border:1px solid #bfcfc3;border-radius:10px;font-size:21px;line-height:1.7;background:#fbfdfb;color:var(--p9-ink)}
+.p9 .p9-order-answer{min-height:73px;padding:13px;border:2px dashed #a5bfae;background:#f7fbf7;border-radius:10px;display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:12px 0}
+.p9 .p9-order-answer button{background:#e8f2e9;font-size:21px;min-height:46px}
+.p9 .p9-tokens{display:flex;gap:7px;flex-wrap:wrap}.p9 .p9-tokens button{font-size:21px;min-height:46px}
+.p9 .p9-audio-row{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:8px 0 14px}
+.p9 .p9-audio-row select{padding:8px;border-radius:9px;border:1px solid var(--p9-line);min-height:44px;background:#fff}
+.p9 .p9-audio-row span{font-size:12px;color:var(--p9-muted)}
+.p9 .p9-speaking{margin:22px 0;padding:20px;border:1px solid var(--p9-line);border-radius:14px;background:#fbf8f0}
+.p9 .p9-picker{border:1px solid var(--p9-line);background:#f6faf6;border-radius:14px;padding:17px;margin:18px 0}
+.p9 .p9-lesson-checks{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin-top:10px}
+.p9 .p9-lesson-checks label{display:flex;gap:7px;align-items:center;padding:8px 7px;border:1px solid var(--p9-line);border-radius:8px;background:#fff;cursor:pointer}
+.p9 .p9-lesson-checks input{width:18px;height:18px;accent-color:var(--p9-green)}
+.p9 .p9-search{flex:1;min-width:190px;padding:10px 12px;border:1px solid var(--p9-line);border-radius:9px;background:#fff;min-height:44px}
+.p9 .p9-filter{padding:9px;border:1px solid var(--p9-line);border-radius:9px;background:#fff;min-height:44px}
+.p9 .p9-word-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.p9 .p9-word{padding:18px;border:1px solid var(--p9-line);border-radius:14px;background:#fff;text-align:center}
+.p9 .p9-word .p9-word-zh{font-size:31px;margin:7px 0;color:var(--p9-green)}
+.p9 .p9-word .p9-word-detail{min-height:80px;font-size:14px;display:flex;flex-direction:column;justify-content:center;gap:5px}
+.p9 .p9-word .p9-word-actions{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:11px}
+.p9 .p9-word .p9-word-actions button{font-size:12px;padding:8px;min-height:40px}
+.p9 .p9-word small{display:block;font-size:11px}
+.p9 .p9-word.p9-known{border-color:#a7c6af;background:#f7fbf7}
+.p9 .p9-empty{padding:24px;border:1px dashed var(--p9-line);border-radius:12px;text-align:center}
+.p9 .p9-review-list{display:grid;gap:12px}.p9 .p9-review-card{padding:18px;border:1px solid var(--p9-line);border-radius:14px;background:#fff}
+.p9 .p9-inline-note{padding:12px;border-radius:10px;background:#f2f6f2;margin:12px 0}
+.p9 .p9-review-question{font-size:21px;white-space:pre-line}
+.p9-home-tag{margin:12px 16px;padding:10px 12px;border:1px solid #c9ddcd;border-radius:10px;background:#f0f7f1;color:#175b3e;font-size:12px}
+.p9-home-tag a{font-weight:700;color:#175b3e}
+@media(max-width:760px){.p9 .p9-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.p9 .p9-group-nav{grid-template-columns:repeat(2,minmax(0,1fr))}.p9 .p9-options{grid-template-columns:1fr}.p9 .p9-word-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.p9 .p9-lesson-checks{grid-template-columns:repeat(3,minmax(0,1fr))}.p9 .p9-lead,.p9 .p9-q{padding:15px}.p9 .p9-group-btn{padding:9px}.p9 .p9-group-btn[aria-current=step]{padding:8px}.p9 .p9-group-btn small{font-size:11px}.p9 .p9-stem{font-size:21px}.p9 .p9-passage{font-size:18px;padding:13px}.p9 .p9-word{padding:13px}.p9 .p9-word .p9-word-zh{font-size:28px}.p9 .p9-actions button{flex:1 1 150px}.p9 .p9-toolbar{align-items:stretch}}
+@media(max-width:380px){.p9 .p9-word-grid{grid-template-columns:1fr}.p9 .p9-group-nav{grid-template-columns:1fr}.p9 .p9-lesson-checks{grid-template-columns:repeat(2,minmax(0,1fr))}}
