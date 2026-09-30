@@ -1,0 +1,35 @@
+{
+  "stage": 1,
+  "status": "passed",
+  "workflowRunId": 36748943799,
+  "workflowUrl": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36748943799",
+  "testedCommit": "139cfdf15c46607aaadb8d6a242f84c3363f264b",
+  "testedTree": "cf23896d77ea3dab9ed7d2e29dab4ed7b7609c26",
+  "engineTests": {
+    "passed": 29,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browserChecks": {
+    "passed": 13,
+    "failed": 0
+  },
+  "browser": "Chromium 151.0.7922.34",
+  "browserCompletedAt": "2026-09-30T17:11:58.129Z",
+  "pageErrors": [],
+  "resourceFailures": [],
+  "artifactId": 11113558731,
+  "artifactZipSha256": "eec395767538d0b1245009286599cb0daf2bec98f41151559c8c7d7534db1659",
+  "offlineHtmlSha256": "c707a48c63adc42d0adefff7e36c72196fa4c1afe8e5f7ea6b7e354c5e68ecfe",
+  "offlineHtmlMatchesTestedArtifact": true,
+  "visualReview": [
+    "Translation receipt: all five prompts and original answers visible; no grades.",
+    "390px translation: complete content, readable Chinese and Vietnamese, no overlap or horizontal overflow.",
+    "Desktop sorting: submitted words, score and explanations visible."
+  ],
+  "limits": [
+    "Chromium software test in an isolated CI browser; no production site or user session.",
+    "Viewport checks are not physical-phone or Safari compatibility certification.",
+    "Unicode text entry and preservation are tested; operating-system IME keyboards are not emulated."
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "test": "stage1-isolated-browser",
+  "scope": "Lesson 3 sample only",
+  "startedAt": "2026-09-30T17:11:50.112Z",
+  "browser": "Chromium 151.0.7922.34",
+  "checks": [
+    {
+      "name": "Initial sample: only choice is open; no production runtime or login",
+      "status": "passed",
+      "durationMs": 706
+    },
+    {
+      "name": "Missing choice answers block submission; UI selections survive reload",
+      "status": "passed",
+      "durationMs": 770
+    },
+    {
+      "name": "Choice 4/5 unlocks sorting immediately and explains the selected wrong option",
+      "status": "passed",
+      "durationMs": 54
+    },
+    {
+      "name": "Five sentences are assembled by clicking tokens; 5/5 unlocks translation and tokens stay visible",
+      "status": "passed",
+      "durationMs": 783
+    },
+    {
+      "name": "Translation rejects empty/zero-width-only answers, stores raw multiline text, and has no feedback grades",
+      "status": "passed",
+      "durationMs": 364
+    },
+    {
+      "name": "Receipt contains all five submitted originals and no machine grade; desktop result is reviewable",
+      "status": "passed",
+      "durationMs": 430
+    },
+    {
+      "name": "Reload retains first scores and raw submitted translation",
+      "status": "passed",
+      "durationMs": 591
+    },
+    {
+      "name": "Choice redo scores 0/5 while first remains 4/5 and later groups stay open",
+      "status": "passed",
+      "durationMs": 281
+    },
+    {
+      "name": "An unsubmitted translation redo keeps its previous receipt accessible and independent",
+      "status": "passed",
+      "durationMs": 793
+    },
+    {
+      "name": "Student HTML is displayed as literal text in fields and the submitted receipt",
+      "status": "passed",
+      "durationMs": 151
+    },
+    {
+      "name": "Downloaded backup restores through visible UI in a fresh browser context; invalid import preserves it",
+      "status": "passed",
+      "durationMs": 883
+    },
+    {
+      "name": "Synthetic legacy-v2 backup migrates through the UI; old translation is archived, never completed",
+      "status": "passed",
+      "durationMs": 167
+    },
+    {
+      "name": "Built offline HTML starts independently and preserves one UI answer on reload",
+      "status": "passed",
+      "durationMs": 1148
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "tools/tests/results/stage1-translation-390.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "file": "tools/tests/results/stage1-receipt.png",
+      "viewport": {
+        "width": 1104,
+        "height": 900
+      }
+    },
+    {
+      "file": "tools/tests/results/stage1-desktop-result.png",
+      "viewport": {
+        "width": 1104,
+        "height": 900
+      }
+    }
+  ],
+  "errors": [],
+  "networkFailures": [],
+  "passed": true,
+  "limitations": [
+    "Chromium software test in an isolated CI browser; no production site or user session.",
+    "Viewport checks are not physical-phone or Safari compatibility certification.",
+    "Unicode text entry and preservation are tested; operating-system IME keyboards are not emulated."
+  ],
+  "completedAt": "2026-09-30T17:11:58.129Z",
+  "serverLog": "Stage 1 allowlist preview: http://127.0.0.1:18765/\n"
+}

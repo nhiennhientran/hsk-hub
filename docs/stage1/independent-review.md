@@ -90,3 +90,8 @@ The integration owner plans browser verification in a new `work/hsk1-stage1-*` t
 ## Verification boundary
 
 This review independently executes the 29 engine tests and JavaScript syntax checks, and reads the interface, packaging, isolation logic and browser test script. It does not certify mobile layout, print output, audio, real device input, screen-reader pronunciation or production login. The integration owner's actual browser checks and evidence must be recorded separately. A local prototype does not complete or publish the other three planned steps.
+
+
+## 主任务集成验收补记
+
+独立源码审阅之后，GitHub Actions运行36748943799已经成功：29项引擎测试和13个真实Chromium页面步骤全部通过。主任务已取回并视读3张截图；具体步骤、校验值和边界见同目录 `test-report.md` 与 `tools/tests/results/stage1-ci-summary.json`。本补记不改变上文对独立审阅者操作范围的说明。
