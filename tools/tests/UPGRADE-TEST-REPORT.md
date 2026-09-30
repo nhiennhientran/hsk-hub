@@ -32,6 +32,16 @@
 
 旧第9课试点元数据中的书名括注曾触发原内容检查。本次统一为准确书名“新HSK教程1”，未改检测规则，检查现已通过。
 
+## 发布检查
+
+功能提交：`c264dee3acb3a2d567d9fdd96c151a1e4cd7fff3`。GitHub Pages发布、HSK Site QA全站检查及原声发布检查均成功：
+
+- [GitHub Pages发布](https://github.com/nhiennhientran/hsk-hub/actions/runs/36737902487)
+- [全站QA](https://github.com/nhiennhientran/hsk-hub/actions/runs/36737903986)
+- [原声发布检查](https://github.com/nhiennhientran/hsk-hub/actions/runs/36737904019)
+
+发布后以线上原网址再次正常登录，验证15课与5个新入口、300题加载、4/5提交后订正解锁且首次分数不变、线上MP3真实0.65×播放、1/3/5课混合词汇及390px五模块。全部通过，无页面异常或同源HTTP失败，详见 `results/live-smoke.json`。线上 `learning.html`、`learning-bank.js`、`learning-app.js`内容亦与已测源码逐字节一致。
+
 ## 测试边界
 
 手机检查使用Chromium视口模拟，未替代实体iPhone/Safari或所有Android机型验证。音频比对与实际播放检查没有宣称完成75题逐句人工听写。成绩仍为浏览器本地保存，换设备需导出/导入，不提供教师端云同步。
