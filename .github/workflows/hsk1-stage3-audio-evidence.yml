@@ -1,10 +1,5 @@
 name: HSK1 Step 3 source audio evidence
 on:
-  push:
-    branches: ['work/hsk1-stage3-*']
-    paths:
-      - 'tools/stage3-transcribe-audio.py'
-      - '.github/workflows/hsk1-stage3-audio-evidence.yml'
   workflow_dispatch:
 permissions:
   contents: read

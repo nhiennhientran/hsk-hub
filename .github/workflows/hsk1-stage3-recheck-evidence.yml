@@ -1,0 +1,42 @@
+name: HSK1 Step 3 targeted audio recheck
+on:
+  push:
+    branches: ['work/hsk1-stage3-*']
+    paths:
+      - 'docs/stage3/asr-recheck-ids.json'
+      - '.github/workflows/hsk1-stage3-recheck-evidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  recheck:
+    if: startsWith(github.ref, 'refs/heads/work/hsk1-stage3-')
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install media and stronger isolated recognizer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          pip install faster-whisper==1.2.1
+      - name: Build corrected original-audio clips
+        run: python tools/build-stage3-media.py
+      - name: Recheck corrected and uncertain clips without supplying expected transcripts
+        env:
+          HF_HUB_DISABLE_PROGRESS_BARS: '1'
+        run: python tools/stage3-transcribe-audio.py --model medium --clips --include-vocabulary --ids-file docs/stage3/asr-recheck-ids.json --output tools/tests/results/stage3-asr-recheck.json
+      - name: Preserve recognition and exact rechecked media manifest
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk1-step3-audio-recheck
+          path: |
+            tools/tests/results/stage3-asr-recheck.json
+            new-hsk1/hsk1/stage3/media-manifest.json
+          if-no-files-found: warn

@@ -21,6 +21,7 @@ def main():
     parser.add_argument('--lessons', default='1-15')
     parser.add_argument('--clips', action='store_true')
     parser.add_argument('--include-vocabulary', action='store_true')
+    parser.add_argument('--ids-file', help='Optional JSON array of exact media IDs to recheck')
     parser.add_argument('--output', default='tools/tests/results/stage3-asr-tracks.json')
     args = parser.parse_args()
     first, last = map(int, args.lessons.split('-'))
@@ -47,6 +48,14 @@ def main():
             for track in range(1, 7):
                 name = f'{lesson}-{track}'
                 inputs.append((name, ROOT / 'new-hsk1/hsk1/audio' / (name + '.mp3')))
+    requested_ids = None
+    if args.ids_file:
+        requested_ids = json.loads((ROOT / args.ids_file).read_text())
+        assert isinstance(requested_ids, list) and requested_ids and all(isinstance(x, str) for x in requested_ids)
+        assert len(set(requested_ids)) == len(requested_ids), 'Duplicate recheck ID'
+        assert not set(requested_ids) - {identity for identity, _ in inputs}, 'Unknown recheck ID'
+        selected = set(requested_ids)
+        inputs = [(identity, path) for identity, path in inputs if identity in selected]
     report = {
         'purpose': 'ASR evidence to compare against supplied textbook and reviewed audio boundaries',
         'method': 'automatic speech recognition; not direct human or assistant auditory perception',
@@ -56,6 +65,7 @@ def main():
         'python': platform.python_version(),
         'fasterWhisperVersion': importlib.metadata.version('faster-whisper'),
         'model': args.model, 'modelFiles': model_files,
+        'requestedIds': requested_ids,
         'options': {'language': 'zh', 'beam_size': 5, 'word_timestamps': True,
                     'condition_on_previous_text': False, 'vad_filter': False,
                     'temperature': 0, 'initial_prompt': None},
