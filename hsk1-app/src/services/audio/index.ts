@@ -303,8 +303,9 @@ export function createAudioService(options: {
       // Some engines resume the real clock after seeking without another
       // playing event. Only a track already confirmed by playing may recover;
       // seek jumps, a paused clock and a merely resolved play promise do not.
+      // WebKit MP3 playback can advance at HAVE_CURRENT_DATA (readyState 2).
       if (request.trackStarted && state.status === 'loading' && waitingTime !== undefined &&
-          !request.paused && !audio.paused && !audio.seeking && audio.readyState >= 3 && audio.currentTime > waitingTime + 0.01) {
+          !request.paused && !audio.paused && !audio.seeking && audio.readyState >= 2 && audio.currentTime > waitingTime + 0.01) {
         waitingTime = undefined;
         publish({ status: 'playing', issue: null, currentTime: audio.currentTime });
         settle(request, { ok: true, code: 'playing' });

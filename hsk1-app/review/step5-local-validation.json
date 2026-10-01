@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "step": 5,
-  "createdAt": "2026-10-01T17:02:21.019982+00:00",
+  "createdAt": "2026-10-01T17:23:17.074949+00:00",
   "branch": "work/hsk1-modular-step5-20261002",
   "baseCommit": "4c1569c3e0d830cf22758ba116f876512978c3d0",
   "contentBaseline": "71b39192133c82f684384f450dda6079d3253440",
@@ -35,9 +35,8 @@
       "passed": 6,
       "failed": 0,
       "skipped": 0,
-      "afterCiStateRecoveryFix": true,
-      "durationMs": 22373.81,
-      "sourceReport": ".repro-output/step5-media-final.json",
+      "afterReadyState2Fix": true,
+      "sourceReport": ".repro-output/step5-affected-final.json",
       "boundedNativeEventAttachments": 6
     },
     "ci": {
@@ -63,7 +62,31 @@
       },
       "node": "24.19.0",
       "npmObserved": "11.17.0",
-      "cjkScreenshots": "First CI WebKit 1104 screenshot inspected: Chinese/Vietnamese/pinyin and stroke SVG render correctly; physical devices still pending."
+      "cjkScreenshots": "First CI WebKit 1104 screenshot inspected: Chinese/Vietnamese/pinyin and stroke SVG render correctly; physical devices still pending.",
+      "secondAttempt": {
+        "runId": 36896789345,
+        "head": "c3104033592b45425a79953d5975aa970ec20af2",
+        "unitPassed": 131,
+        "chromiumPassed": 40,
+        "webkitPassed": 36,
+        "failed": 4,
+        "artifactId": 11180440664,
+        "nativeEvidence": {
+          "file": "representative word /course-assets/audio/1-6.mp3",
+          "events": "real playing, waiting, seeked, successive timeupdate",
+          "readyState": 2,
+          "paused": false,
+          "seeking": false,
+          "clock": [
+            2.772561023,
+            3.020050471,
+            3.270092702,
+            6.02075744
+          ],
+          "uiStatus": "loading while native clock progresses"
+        },
+        "fix": "Recover with current data (readyState>=2) only after genuine playing and actual clock advance, keeping seek/pause/first-start guards. Restore boundary timer without wider assertions. Existing60s full-homework test budget made declarative before page setup; global20/assert5/retries0 unchanged."
+      }
     },
     "build": "passed",
     "catalog": "passed",
@@ -105,7 +128,16 @@
       "Local CJK font unavailable; CI installs Noto CJK",
       "Legacy WebKit timeout is not claimed as uniquely diagnosed or repaired",
       "Step6 not started; no production deployment"
-    ]
+    ],
+    "affectedCasesAfterSecondCi": {
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 35521.263,
+      "media": 6,
+      "fullFirstFiveLessonsHomework": 1,
+      "courseTestBudget": "Original60s intent now applied declaratively before page fixture; global20s/assert5s/retries0 unchanged."
+    }
   },
   "courseAssets": {
     "schemaVersion": 1,
@@ -211,13 +243,13 @@
     "hsk1-app/src/features/textbook/text.ts": "78ccf767ab998097a791fd5c1d2481cc5982940921dd10fb534d6d63b5b73b61",
     "hsk1-app/src/features/textbook/textbook.css": "8cc6e98a349c96ccce8a342dbd016035f6009b21db10514b90b5c2fb20329470",
     "hsk1-app/src/features/textbook/vocabulary.ts": "12f7c73f50c754e4bd02aea4bdbccd0e739aa48dee5fa04b6d0d41aee17c0730",
-    "hsk1-app/src/services/audio/index.ts": "777a576cbf9e2abfa41d4e325ea6e9ad7b50e05f2940db92a5a52f65e1f81cb8",
+    "hsk1-app/src/services/audio/index.ts": "67bacfc9853121dd9183a43d2b676f69d9564dbd833795de5f42ee14180f6609",
     "hsk1-app/src/services/content/textbook.ts": "c037c11f69f80f879be9f018f817bf134b9a19c3de13024161748130ed7b8fbd",
     "hsk1-app/src/services/hanzi/LICENSE": "7735d83cdf892c8db41c27103b42c89b4b63149770c1e08ae13cbbebb81da637",
     "hsk1-app/src/services/hanzi/vendor.d.ts": "d6ffc7b954563aa71cb8ebfac52290888daa713d9327b12e740fa7b736da0a51",
     "hsk1-app/src/services/hanzi/vendor.js": "60c26936269f092350401aa972707e7d5cd46cbc087f8c9d0f855f937cc8fe0a",
     "hsk1-app/src/services/learning/reading.ts": "f5d5ea6b81494d4a5a69f641f135ba9980860f605cd80ea2bb6d8a644d0e61fd",
-    "hsk1-app/tests/audio.test.mjs": "38031a6c2c3dca1efbc67a419397f650a5fe32cd6e62ffea43fc39d76f31def3",
+    "hsk1-app/tests/audio.test.mjs": "36e3f39225d4593b805875fb3e9feb75b702874b74df2876a98b8cf702394c1c",
     "hsk1-app/tests/browser/media.spec.ts": "e376d1243d50947d1f9d47d053f18b908cffc0b449be40d31235b5cd064d5a7d",
     "hsk1-app/tests/browser/navigation.spec.ts": "f1b118c58bc9d8866d4eb77456a621f2eec6bbfc69005be05e8ffa046a9a43db",
     "hsk1-app/tests/browser/scaffold.spec.ts": "0408b5554a8b79234bff6305eb64b5bb64a3ab17de2ea114f86fc6a56fec0b6b",
@@ -227,6 +259,7 @@
     "hsk1-app/tests/textbook-practice.test.mjs": "c90f047843b1d2d41039b30a22fb17ad2c2751552198b3d78b860460b5d00ae8",
     "hsk1-app/tools/check-course-assets.mjs": "911af2e25d7ee87634c8d89ba0d9301a090f2974f65225f64e3b856a47c13f89",
     "hsk1-app/tools/course-assets.ts": "afcaa4bd3ae93ba8907fc83a0fa5a2ae67884fc615849c2ab8a4e14293192995",
-    "hsk1-app/vite.config.ts": "ac827897b498aaad884f2fb44e5adf19a07780367e5b6d2bcaf86a9f34d6f43b"
+    "hsk1-app/vite.config.ts": "ac827897b498aaad884f2fb44e5adf19a07780367e5b6d2bcaf86a9f34d6f43b",
+    "hsk1-app/tests/browser/homework.spec.ts": "00a06b499ed0d7d412a870850d76b9e71e1559a7007ed312610f168f9c9b6ffd"
   }
 }

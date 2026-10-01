@@ -93,56 +93,59 @@ async function downloadBackup(page: Page, selector = '#export-homework-backup'):
   return JSON.parse(Buffer.concat(chunks).toString('utf8'));
 }
 
-for (const start of [1, 6, 11]) {
-  test(`all 75 fixed questions in lessons ${start}–${start + 4} submit through real controls and retain correct assessment`, async ({ page }) => {
-    test.setTimeout(60_000);
-    await authenticate(page);
-    await page.goto(`/#/homework?lesson=${start}&part=choice`);
-    let submitted = 0;
-    for (let lesson = start; lesson < start + 5; lesson++) {
-      const row = bank.lessons.find(value => value.id === lesson)!;
-      if (lesson !== start) await page.locator('#lesson-select').selectOption(String(lesson));
-      await ready(page, lesson, 'choice');
-      await expect(page.locator('[data-question-id]')).toHaveCount(5);
-      await expect(page.locator('[data-homework-part="sort"]')).toHaveAttribute('data-locked', 'true');
-      // Every answer can be wrong: submission, rather than a passing score, opens the next part.
-      await fillChoice(page, row, true);
-      await page.locator('#submit-homework').click();
-      const choice = await savedGroup(page, lesson, 'choice');
-      expect(choice.latest).toMatchObject({ assessment: 'automatic', correct: 0, total: 5 });
-      expect(choice.completed).toBe(true);
-      await expect(page.locator('[data-homework-part="sort"]')).toHaveAttribute('data-locked', 'false');
-      await part(page, lesson, 'sort');
-      await expect(page.locator('[data-question-id]')).toHaveCount(5);
-      await fillSort(page, row);
-      await page.locator('#submit-homework').click();
-      const sort = await savedGroup(page, lesson, 'sort');
-      expect(sort.latest).toMatchObject({ assessment: 'automatic', correct: 5, total: 5 });
-      expect(Object.values(sort.latest.results)).toEqual(Array(5).fill(true));
-      await expect(page.locator('[data-homework-part="translation"]')).toHaveAttribute('data-locked', 'false');
-      await part(page, lesson, 'translation');
-      await expect(page.locator('[data-question-id]')).toHaveCount(5);
-      const answers = await fillTranslation(page, row, `Bài ${lesson}`);
-      await page.locator('#submit-homework').click();
-      const translation = await savedGroup(page, lesson, 'translation');
-      expect(translation.latest).toMatchObject({ assessment: 'manual', correct: null, results: null, total: 5, answers });
-      expect(translation.completed).toBe(true);
-      await page.locator('#receipt-latest').click();
-      const receipt = page.locator('#homework-receipt');
-      await expect(receipt).toBeVisible();
-      await expect(receipt).toContainText(`Bài ${lesson} · ${row.title}`);
-      await expect(receipt.locator('[data-receipt-answer-id]')).toHaveCount(5);
-      for (const [id, answer] of Object.entries(answers)) expect(await receipt.locator(`[data-receipt-answer-id="${id}"]`).textContent()).toBe(answer);
-      await expect(receipt.locator('[data-receipt-score]')).toHaveCount(0);
-      await page.locator('#close-receipt').click();
-      submitted += Object.keys(choice.latest.answers).length + Object.keys(sort.latest.answers).length + Object.keys(translation.latest.answers).length;
-      // The lesson selector preserves the current part. Return to choice before selecting the next lesson.
-      if (lesson < start + 4) await part(page, lesson, 'choice');
-    }
-    expect(submitted).toBe(75);
-    expect(bank.lessons.reduce((total, row) => total + row.choice.length + row.sort.length + row.translation.length, 0)).toBe(225);
-  });
-}
+test.describe('complete homework course', () => {
+  // The existing 60-second course budget must apply before page-fixture setup.
+  test.describe.configure({ timeout: 60_000 });
+  for (const start of [1, 6, 11]) {
+    test(`all 75 fixed questions in lessons ${start}–${start + 4} submit through real controls and retain correct assessment`, async ({ page }) => {
+      await authenticate(page);
+      await page.goto(`/#/homework?lesson=${start}&part=choice`);
+      let submitted = 0;
+      for (let lesson = start; lesson < start + 5; lesson++) {
+        const row = bank.lessons.find(value => value.id === lesson)!;
+        if (lesson !== start) await page.locator('#lesson-select').selectOption(String(lesson));
+        await ready(page, lesson, 'choice');
+        await expect(page.locator('[data-question-id]')).toHaveCount(5);
+        await expect(page.locator('[data-homework-part="sort"]')).toHaveAttribute('data-locked', 'true');
+        // Every answer can be wrong: submission, rather than a passing score, opens the next part.
+        await fillChoice(page, row, true);
+        await page.locator('#submit-homework').click();
+        const choice = await savedGroup(page, lesson, 'choice');
+        expect(choice.latest).toMatchObject({ assessment: 'automatic', correct: 0, total: 5 });
+        expect(choice.completed).toBe(true);
+        await expect(page.locator('[data-homework-part="sort"]')).toHaveAttribute('data-locked', 'false');
+        await part(page, lesson, 'sort');
+        await expect(page.locator('[data-question-id]')).toHaveCount(5);
+        await fillSort(page, row);
+        await page.locator('#submit-homework').click();
+        const sort = await savedGroup(page, lesson, 'sort');
+        expect(sort.latest).toMatchObject({ assessment: 'automatic', correct: 5, total: 5 });
+        expect(Object.values(sort.latest.results)).toEqual(Array(5).fill(true));
+        await expect(page.locator('[data-homework-part="translation"]')).toHaveAttribute('data-locked', 'false');
+        await part(page, lesson, 'translation');
+        await expect(page.locator('[data-question-id]')).toHaveCount(5);
+        const answers = await fillTranslation(page, row, `Bài ${lesson}`);
+        await page.locator('#submit-homework').click();
+        const translation = await savedGroup(page, lesson, 'translation');
+        expect(translation.latest).toMatchObject({ assessment: 'manual', correct: null, results: null, total: 5, answers });
+        expect(translation.completed).toBe(true);
+        await page.locator('#receipt-latest').click();
+        const receipt = page.locator('#homework-receipt');
+        await expect(receipt).toBeVisible();
+        await expect(receipt).toContainText(`Bài ${lesson} · ${row.title}`);
+        await expect(receipt.locator('[data-receipt-answer-id]')).toHaveCount(5);
+        for (const [id, answer] of Object.entries(answers)) expect(await receipt.locator(`[data-receipt-answer-id="${id}"]`).textContent()).toBe(answer);
+        await expect(receipt.locator('[data-receipt-score]')).toHaveCount(0);
+        await page.locator('#close-receipt').click();
+        submitted += Object.keys(choice.latest.answers).length + Object.keys(sort.latest.answers).length + Object.keys(translation.latest.answers).length;
+        // The lesson selector preserves the current part. Return to choice before selecting the next lesson.
+        if (lesson < start + 4) await part(page, lesson, 'choice');
+      }
+      expect(submitted).toBe(75);
+      expect(bank.lessons.reduce((total, row) => total + row.choice.length + row.sort.length + row.translation.length, 0)).toBe(225);
+    });
+  }
+});
 
 test('choice redoing keeps first and latest submissions, feedback and history separate from the unfinished draft after reload', async ({ page }) => {
   await authenticate(page);

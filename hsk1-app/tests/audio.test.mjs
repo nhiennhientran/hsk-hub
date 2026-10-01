@@ -168,17 +168,19 @@ test('pause during a delayed start remains paused; resume waits for playing and 
   service.dispose();
 });
 
-test('an already started clock can recover from waiting without another playing event, but seek jumps cannot', async () => {
+test('an already started clock at HAVE_CURRENT_DATA can recover after waiting; zero/metadata readiness and seek jumps cannot', async () => {
   const { audio, service, clock } = setup();
   const pending = service.play({ ...track(), end: 10 });
   audio.metadata(); audio.playing(); await pending;
   audio.readyState = 2; audio.emit('waiting');
   assert.equal(service.snapshot().status, 'loading');
   assert.deepEqual(clock.delays, [15000]);
-  audio.time(1.2);
+  audio.readyState = 0; audio.time(1.2);
+  assert.equal(service.snapshot().status, 'loading');
+  audio.readyState = 1; audio.time(1.3);
   assert.equal(service.snapshot().status, 'loading');
   audio.seeking = true; audio.emit('seeking');
-  audio.readyState = 4; audio.time(5);
+  audio.readyState = 2; audio.time(5);
   assert.equal(service.snapshot().status, 'loading');
   audio.seeking = false; audio.emit('seeked'); audio.time(5);
   assert.equal(service.snapshot().status, 'loading');

@@ -49,6 +49,7 @@ Hanzi Writer 3.7.3没有公开销毁接口，固定版本适配使用AbortContro
 - 汉字真实SVG/动画/练写/重置、404重试与晚请求不覆盖新字；320/390/768/1104的教材各节与词详情无横向溢出并留截图。本地缺CJK字体，目检仅认证布局与SVG；CI安装NotoCJK。不是实体手机或触屏/IME认证。
 - 93原轨共27,491,142字节全部与冻结SHA和原文件一致；267笔顺JSON共567,732字节全部结构有效且源/构建相同，17补充来源哈希一致；两份许可随产物一致。`assets:check`检查结果和源码/配置/测试指纹在`review/step5-local-validation.json`。
 - 首轮同head CI（`542cfe2`，run`36894458495`）128单元、Chromium40和WebKit38通过，WebKit的连播第2轨/切详情第2词两项失败。定位发现waiting之后真实时钟继续走却没有UI恢复路径；修复跳过冗余seek，并仅在已收到playing、非暂停/非seeking、足够readyState且实际时钟再前进时恢复playing。seek跳跃/首次启动不得伪造推进，真实卡住仍超时报错；新增3项定向音频单测。修改后仅复测6项媒体，最终同head CI重新运行完整80项；成功/失败均保留有界原生事件与时钟证据，断言/重试策略未放宽。
+- 第二轮CI（`c310403`，run`36896789345`）131单元和Chromium40通过；WebKit36通过，三项媒体与一项page fixture启动失败。原生附件证明定位后readyState持续为2，非暂停/非seeking且时钟2.772→3.020→3.270等实际前进，原>=3条件错误拦截恢复。改为有当前位置数据(>=2)并保留真实playing/实际时钟/seek保护；片段停止计时恢复，边界容差未扩大。三个全课程作业场景的既有60s预算改在describe声明阶段设置，覆盖创建page之前；全局20s、断言5s、0次retry保持不变。修复后定向7项（媒体6+首批75题作业）本地全部通过，仍保持原播放/时钟/end+0.15断言。最终完整CI在新head重新核对。
 - `.github/workflows/hsk1-modular-step5.yml`在标准Chromium/WebKit各40场景运行同一提交，并检查131单元、catalog、fixture、build及assets。完成回复附对应head的Actions链接；不能继承旧步骤CI或用本地兼容binary替代WebKit。
 
 本步没有新增语言自然性审校、人耳逐词/逐句听辨、75独立听力终验、原生打印对话框、实体iOS/Android或实际中文IME认证。旧WebKit从第10课翻译转听力的历史超时仍不标为唯一根因已解决。
