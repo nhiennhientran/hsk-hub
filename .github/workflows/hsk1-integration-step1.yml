@@ -1,0 +1,29 @@
+name: HSK1 integration Step 1 review
+on:
+  push:
+    branches: ['work/hsk1-stage4-1-runtime-20261001']
+    paths: ['.github/workflows/hsk1-integration-step1.yml']
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Preserve the reviewed runtime and frozen source evidence
+        shell: bash
+        run: |
+          mkdir -p /tmp/hsk-step1-snapshot/runtime /tmp/hsk-step1-snapshot/frozen
+          git archive HEAD | tar -x -C /tmp/hsk-step1-snapshot/runtime
+          git fetch --no-tags --depth=1 origin de823050e97cbab64144197f3bf9241321b73c59
+          git archive FETCH_HEAD docs tools new-hsk1/hsk1/stage1 new-hsk1/hsk1/stage2 new-hsk1/hsk1/stage3 | tar -x -C /tmp/hsk-step1-snapshot/frozen
+          git rev-parse HEAD > /tmp/hsk-step1-snapshot/runtime-commit.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hsk1-integration-step1-source-snapshot
+          path: /tmp/hsk-step1-snapshot
+          include-hidden-files: true
+          retention-days: 14
