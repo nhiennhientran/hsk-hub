@@ -141,12 +141,12 @@ async function importBackup(p,filename,isMedia=false){
   const oldContext={};oldContext.window=oldContext;vm.createContext(oldContext);for(const f of ['learning-bank.js','learning-engine.js'])vm.runInContext(fs.readFileSync('new-hsk1/hsk1/'+f,'utf8'),oldContext);
   const oldE=oldContext.HSKLearnEngine,oldBank=oldContext.HSK1_NEW_BANK;assert.ok(oldE&&oldBank);
   const old=oldE.blank(),L=oldBank.find(x=>x.lesson===3);for(const k of ['choice','sort','translation']){for(const q of L[k])oldE.group(old,3,k).draft[q.id]=k==='sort'?order(q):q.answer;assert.equal(oldE.submit(old,3,k,L[k]).ok,true);}
-  const c=await newContext();await c.addInitScript(({key,raw})=>localStorage.getItem(key)||localStorage.setItem(key,raw),{key:'ran_hsk1_learning_v2',raw:JSON.stringify(old)});const p=await c.newPage();await open(p,'learning.html?mode=homework&lesson=3');await homeworkReady(p);
+  const c=await newContext();await c.addInitScript(({key,raw})=>{if(location.protocol!=='http:')return;localStorage.getItem(key)||localStorage.setItem(key,raw);},{key:'ran_hsk1_learning_v2',raw:JSON.stringify(old)});const p=await c.newPage();await open(p,'learning.html?mode=homework&lesson=3');await homeworkReady(p);
   const migrated=await state(p,E2.KEY);assert.equal(migrated.archive.migration.sourceSchema,2);assert.equal(migrated.lessons[3]?.translation?.completed||false,false);assert.deepEqual(await state(p,'ran_hsk1_learning_v2'),clone(old));
  });
  await check('Nonempty approved Lesson 3 sample is retained ahead of older legacy records',async()=>{
   const old=E1.blank();for(const k of ['choice','sort','translation']){for(const q of SAMPLE[k])E1.group(old,3,k).draft[q.id]=k==='translation'?'样板原始译文。':k==='sort'?order(q):q.answer;assert.equal(E1.submit(old,3,k,SAMPLE[k]).ok,true);}
-  const c=await newContext();await c.addInitScript(({old,key})=>{if(!localStorage.getItem(key))localStorage.setItem(key,JSON.stringify(old));if(!localStorage.getItem('ran_hsk1_learning_v2'))localStorage.setItem('ran_hsk1_learning_v2',JSON.stringify({schema:2,lessons:{},preferences:{},words:{}}));},{old,key:E2.STEP1_KEY});const p=await c.newPage();await open(p,'learning.html?mode=homework&lesson=3');await homeworkReady(p);assert.equal(E2.totals(await state(p,E2.KEY),3,BANK[2]).manual.submitted,5);
+  const c=await newContext();await c.addInitScript(({old,key})=>{if(location.protocol!=='http:')return;if(!localStorage.getItem(key))localStorage.setItem(key,JSON.stringify(old));if(!localStorage.getItem('ran_hsk1_learning_v2'))localStorage.setItem('ran_hsk1_learning_v2',JSON.stringify({schema:2,lessons:{},preferences:{},words:{}}));},{old,key:E2.STEP1_KEY});const p=await c.newPage();await open(p,'learning.html?mode=homework&lesson=3');await homeworkReady(p);assert.equal(E2.totals(await state(p,E2.KEY),3,BANK[2]).manual.submitted,5);
  });
  await check('320 / 390 / 768 / 1104 layouts and free-text wrapping',async()=>{
   for(const width of [320,390,768,1104]){

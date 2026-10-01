@@ -4,7 +4,7 @@ module.exports=async function(A){
  await check('Textbook Lessons 1-8: 181 source-mapped words, 24 scenes and original module entry points',async()=>{
   const counts=[13,15,22,35,22,23,27,24];
   for(let l=1;l<=8;l++){
-   await open(page,`lesson.html?id=${l}&sec=vocab`);await page.locator('#vocabGrid .vocab-card').first().waitFor();
+   await open(page,`lesson.html?id=${l}&sec=vocab`);await page.locator('#vocabGrid .vcard').first().waitFor();
    const data=await page.evaluate(l=>{const L=window.HSK1_LESSONS.find(x=>x.id===l);return {vocab:L.vocab,scenes:L.scenes,corrections:window.HSK1_INTEGRATION_TEXTBOOK};},l);
    assert.equal(data.corrections.audioCorrected,true);assert.equal(data.vocab.length,counts[l-1]);assert.equal(data.scenes.length,3);
    const expected=C.vocabulary.filter(v=>v.lesson===l);for(const v of expected){const actual=data.vocab.find(x=>x.zh===v.zh);assert.ok(actual,`${l}:${v.zh}`);assert.equal(actual.vn,v.vi);assert.equal(actual.py,v.py);assert.equal(actual.extension,v.extension);assert.ok(actual.posLabel,`missing POS ${l}:${v.zh}`);}
@@ -31,7 +31,7 @@ module.exports=async function(A){
   const segments=await page.evaluate(()=>Object.fromEntries(['里','晚上','医院','上班','店','菜','分钟','后','吧'].map(w=>[w,window.HSK1_OFFICIAL_AUDIO.vocabSegment(7,w)])));
   for(const [word,seg] of Object.entries(segments)){const v=C.vocabulary.find(v=>v.lesson===7&&v.zh===word);assert.equal(seg.start,v.audio.start);assert.equal(seg.end,v.audio.end);assert.equal(seg.track,v.audio.track);}
   await open(page,'lesson.html?id=4&sec=vocab');await page.locator('#vocabGrid').waitFor();
-  for(const word of ['八','百']){const b=page.locator(`.vocab-card[data-zh="${word}"] .listen`).first();assert.equal(await b.isDisabled(),true);}
+  for(const word of ['八','百']){const b=page.locator('#vocabGrid .vcard').filter({has:page.locator('.vzh',{hasText:new RegExp('^'+word+'$')})}).locator('.speak-word');assert.equal(await b.isDisabled(),true);}
   await screenshot(page,'textbook-corrected-lesson4');
  });
  await check('Keyboard sorting, genuine text editing and previous backup recovery',async()=>{
@@ -41,8 +41,8 @@ module.exports=async function(A){
   await submit(p);assert.match(await p.locator('#submitted-result').innerText(),/5\/5/);await part(p,'translation');
   const input=p.locator('#input-'+BANK[0].translation[0].id);await input.fill('中文输入 — tiếng Việt');await input.press('End');await input.press('Enter');await input.pressSequentially('abc');await input.press('Backspace');
   assert.equal(await input.inputValue(),'中文输入 — tiếng Việt\nab');await saved(p);const first=await backup(p,false,'before-change');
-  await input.fill('需要恢复保留的第二份草稿。');await saved(p);await importBackup(p,first);assert.equal(await input.inputValue(),'中文输入 — tiếng Việt\nab');
-  await p.locator('#backup-details').evaluate(el=>el.open=true);await p.locator('#restore-previous').click();await p.locator('#apply-backup').click();assert.equal(await input.inputValue(),'需要恢复保留的第二份草稿。');
+  await input.fill('需要恢复保留的第二份草稿。');await saved(p);await importBackup(p,first);await part(p,'translation');assert.equal(await input.inputValue(),'中文输入 — tiếng Việt\nab');
+  await p.locator('#backup-details').evaluate(el=>el.open=true);await p.locator('#restore-previous').click();await p.locator('#apply-backup').click();await part(p,'translation');assert.equal(await input.inputValue(),'需要恢复保留的第二份草稿。');
  });
  await check('A real Stage1 sample JSON file can be explicitly imported without grading translations',async()=>{
   const Sample=require('../../new-hsk1/hsk1/stage1/sample-bank.js')[0],s=E1.blank();
@@ -55,6 +55,13 @@ module.exports=async function(A){
   const dest=await backup(p,false,'quota-protected-answer');const exported=JSON.parse(fs.readFileSync(dest,'utf8'));assert.equal(exported.lessons[1].choice.draft[q.id],q.answer);await screenshot(p,'quota-warning',false);
  });
  await check('Unreadable existing homework is never silently overwritten',async()=>{
-  const c=await newContext();await c.addInitScript(()=>{if(!localStorage.getItem('ran_hsk1_stage2_v3'))localStorage.setItem('ran_hsk1_stage2_v3','{original damaged data');});const p=await c.newPage();await open(p,'learning.html?mode=homework&lesson=1');await homeworkReady(p);await p.locator('#storage-notice').waitFor();await p.locator(`[data-option="${BANK[0].choice[0].id}"][data-index="0"]`).click();await delay(300);assert.equal(await p.evaluate(k=>localStorage.getItem(k),E2.KEY),'{original damaged data');await backup(p,false,'unreadable-storage-current-work');
+  const c=await newContext();await c.addInitScript(()=>{if(location.protocol!=='http:')return;if(!localStorage.getItem('ran_hsk1_stage2_v3'))localStorage.setItem('ran_hsk1_stage2_v3','{original damaged data');});const p=await c.newPage();await open(p,'learning.html?mode=homework&lesson=1');await homeworkReady(p);await p.locator('#storage-notice').waitFor();await p.locator(`[data-option="${BANK[0].choice[0].id}"][data-index="0"]`).click();await delay(300);assert.equal(await p.evaluate(k=>localStorage.getItem(k),E2.KEY),'{original damaged data');await backup(p,false,'unreadable-storage-current-work');
  });
+ await check('Human listening review page: 75 pending items, actual audio and device checklist export',async()=>{
+  const c=await newContext(),p=await c.newPage();await open(p,'../../tools/review/hsk1-listening-device-review.html');
+  await p.locator('#question-list [data-question]').first().waitFor();assert.equal(await p.locator('#question-list [data-question]').count(),75);assert.match(await p.locator('#review-count').innerText(),/^0\/75/);
+  await p.locator('#question-list [data-question]').first().click();await p.locator('#play-audio').click();await p.waitForFunction(()=>document.getElementById('lesson-audio').ended,null,{timeout:15000});
+  await p.locator('#device').fill('Synthetic review test - not a real phone');const wait=p.waitForEvent('download');await p.locator('#export-review').click();const d=await wait,dest=file('human-review-test.json');await d.saveAs(dest);const data=JSON.parse(fs.readFileSync(dest,'utf8'));assert.equal(data.unchecked.length,75);assert.equal(Object.keys(data.items).length,0);assert.equal(await p.locator('[data-device]').count(),9);await screenshot(p,'human-review-page',false);
+ });
+
 };
