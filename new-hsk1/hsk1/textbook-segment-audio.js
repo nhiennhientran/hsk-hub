@@ -3,7 +3,7 @@
    This file owns playback only; it does not intercept click events and never synthesizes speech. */
 (function(){
   'use strict';
-  const VERSION='20260818-arch-v1';
+  const VERSION='20261001-integration-i2-r2';
   const AUDIO_DIR='audio/';
   const cache=new Map();
   let textTracks={};
@@ -13,6 +13,7 @@
   let stopTimer=0;
   let runToken=0;
   let mutationObserver=null;
+  let disposed=false;
   const pendingSequence=[];
 
   function lessonId(){
@@ -33,6 +34,7 @@
     t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800);
   }
   function diagnostics(extra={}){
+    if(disposed)return;
     window.__HSK1_OFFICIAL_AUDIO_DIAGNOSTICS={
       version:VERSION,ready,lesson:lessonId(),scene:sceneIndex(),
       cachedTracks:cache.size,activeTrack:activeAudio?.dataset?.officialTrack||'',
@@ -52,7 +54,7 @@
   function getAudio(track){
     let a=cache.get(track);if(a)return a;
     a=new Audio(srcFor(track));a.preload='auto';a.playsInline=true;a.dataset.officialTrack=track;
-    a.addEventListener('error',()=>diagnostics({error:`load-failed:${track}`,playing:false}));
+    a.addEventListener('error',()=>{delete a.dataset.warmed;diagnostics({error:`load-failed:${track}`,playing:false});});
     cache.set(track,a);return a;
   }
   function warmLesson(lesson){
@@ -60,35 +62,51 @@
     const ids=new Set();
     [1,3,5].forEach(t=>{if(textTracks[`${lesson}-${t}`])ids.add(`${lesson}-${t}`)});
     Object.values(vocabByLesson[String(lesson)]||{}).forEach(x=>ids.add(x.track));
-    ids.forEach(track=>{const a=getAudio(track);try{a.load()}catch(_e){}});
+    ids.forEach(track=>{
+      const a=getAudio(track);
+      // DOM decoration can run many times. Reloading an active or already warming
+      // audio element cancels playback and pending seeks, notably in WebKit.
+      if(a===activeAudio||a.dataset.warmed==='1')return;
+      a.dataset.warmed='1';try{a.load()}catch(_e){delete a.dataset.warmed;}
+    });
   }
   function scheduleStop(audio,end,token){
-    const ms=Math.max(80,((end-audio.currentTime)/(audio.playbackRate||1))*1000+100);
-    stopTimer=setTimeout(()=>{
+    // Observe the native media clock. A timer alone must not mark stalled audio
+    // as completed or seek to the end to manufacture a successful boundary.
+    const watch=()=>{
       if(token!==runToken||audio!==activeAudio)return;
-      try{audio.pause();audio.currentTime=end}catch(_e){}
-      activeAudio=null;stopTimer=0;diagnostics({playing:false,endedByRange:true});
-    },ms);
+      const remaining=end-audio.currentTime;
+      if(remaining<=0.025||audio.ended){
+        const finishedAt=audio.currentTime,track=audio.dataset.officialTrack;
+        try{audio.pause()}catch(_e){}
+        activeAudio=null;stopTimer=0;
+        diagnostics({playing:false,endedByRange:true,completedTrack:track,finishedAt,expectedEnd:end});
+        return;
+      }
+      stopTimer=setTimeout(watch,Math.max(20,Math.min(100,remaining/(audio.playbackRate||1)*1000)));
+    };
+    watch();
   }
   function seekThen(audio,start,token,fn){
     let settled=false,timer=0;
-    const finish=()=>{
-      if(settled)return;settled=true;
-      if(timer)clearTimeout(timer);
-      audio.removeEventListener('seeked',onSeeked);
-      if(token===runToken&&audio===activeAudio)fn();
+    const deadline=Date.now()+8000;
+    const cleanup=()=>{if(timer)clearTimeout(timer);for(const e of ['loadedmetadata','canplay','seeked'])audio.removeEventListener(e,poll)};
+    const poll=()=>{
+      if(settled)return;
+      if(token!==runToken||audio!==activeAudio){settled=true;cleanup();return;}
+      const delta=Math.abs((audio.currentTime||0)-start);
+      if(audio.readyState>=1&&!audio.seeking&&delta<=0.05){settled=true;cleanup();fn();return;}
+      if(Date.now()>=deadline){
+        settled=true;cleanup();try{audio.pause()}catch(_e){}
+        diagnostics({playing:false,error:'seek-not-ready',requestedStart:start,observedTime:audio.currentTime});
+        toastSafe('Chưa mở được đoạn âm. Hãy nhấn nghe để thử lại.');return;
+      }
+      if(audio.readyState>=1&&!audio.seeking){try{audio.currentTime=start}catch(_e){}}
+      if(timer)clearTimeout(timer);timer=setTimeout(poll,60);
     };
-    const onSeeked=()=>finish();
-    const assign=()=>{
-      if(token!==runToken||audio!==activeAudio)return;
-      if(Math.abs((audio.currentTime||0)-start)<=0.025&&!audio.seeking){finish();return}
-      audio.addEventListener('seeked',onSeeked);
-      try{audio.currentTime=start}catch(_e){finish();return}
-      if(!audio.seeking&&Math.abs((audio.currentTime||0)-start)<=0.035)queueMicrotask(finish);
-      timer=setTimeout(finish,450);
-    };
-    if(audio.readyState>=1)assign();
-    else{audio.addEventListener('loadedmetadata',assign,{once:true});try{audio.load()}catch(_e){}}
+    for(const e of ['loadedmetadata','canplay','seeked'])audio.addEventListener(e,poll);
+    if(audio.readyState<1&&!audio.dataset.warmed){audio.dataset.warmed='1';try{audio.load()}catch(_e){}}
+    poll();
   }
   function startRange(track,start,end,label=''){
     if(!track||!Number.isFinite(start)||!Number.isFinite(end)||end<=start){
@@ -99,12 +117,15 @@
     const token=++runToken,audio=getAudio(track);
     if(activeAudio&&activeAudio!==audio){try{activeAudio.pause()}catch(_e){}}
     activeAudio=audio;stopVisibleAudio(audio);
-    try{audio.pause()}catch(_e){}
+    diagnostics({playing:false,loading:true,label,range:[start,end],endedByRange:false});
+    // Reset the native decoder only on an explicit segment request. Reusing
+    // a paused MP3 decoder can seek to EOF in WebKit; DOM scans never reload.
+    try{audio.pause();audio.load()}catch(_e){}
     seekThen(audio,start,token,()=>{
       Promise.resolve(audio.play()).then(()=>{
-        if(token!==runToken)return;
-        scheduleStop(audio,end,token);
+        if(token!==runToken||audio!==activeAudio)return;
         diagnostics({playing:true,label,range:[start,end],seekSettled:true,preload:audio.preload,error:''});
+        scheduleStop(audio,end,token);
       }).catch(()=>{diagnostics({playing:false,error:`play-blocked:${track}`,label});toastSafe('Không phát được audio giáo trình. Hãy chạm lại nút nghe.');});
     });
     return true;
@@ -228,7 +249,8 @@
       b.title=textSegment(lessonId(),sceneIndex(),i)?'播放这一句教材真人原声':'未找到教材原声';
     });
   }
-  function scan(){decorateVocab();decorateText();warmLesson(lessonId());diagnostics({ready})}
+  // A rendering scan must not erase the active playback diagnostic state.
+  function scan(){if(disposed)return;decorateVocab();decorateText();warmLesson(lessonId());}
   function buildMaps(data){
     textTracks=data?.text||{};
     vocabByLesson={};
@@ -243,6 +265,7 @@
     ready=Object.keys(textTracks).length===45&&Object.keys(data?.vocab||{}).length===45;
   }
   function install(){
+    if(disposed)return;
     try{
       const data=window.HSK1_OFFICIAL_SEGMENTS;
       if(!data)throw new Error('static-segment-data-missing');
@@ -264,13 +287,17 @@
       ready=false;diagnostics({ready:false,error:String(e?.message||e)});console.error('HSK1 official segment player failed to initialize',e);
     }
   }
+  function dispose(){
+    if(disposed)return;
+    stop();disposed=true;ready=false;mutationObserver?.disconnect();
+  }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});else install();
 
   window.HSK1_OFFICIAL_AUDIO={
     version:VERSION,
     get ready(){return ready},
-    playVocab,playVocabLesson,playTextLine,playTextScene,stop,scan,warmLesson,
+    playVocab,playVocabLesson,playTextLine,playTextScene,stop,scan,warmLesson,dispose,
     vocabSegment,textSegment,lessonVocabTracks,
-    diagnostics:()=>window.__HSK1_OFFICIAL_AUDIO_DIAGNOSTICS
+    diagnostics:()=>({...window.__HSK1_OFFICIAL_AUDIO_DIAGNOSTICS,mediaCurrentTime:activeAudio?.currentTime??null,mediaPaused:activeAudio?.paused??true,mediaReadyState:activeAudio?.readyState??null})
   };
 })();

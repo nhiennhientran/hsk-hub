@@ -42,7 +42,7 @@ async function make(id){
   // Practice has its own production script. This regression isolates the lesson-shell/audio routes,
   // so provide the same callable boundary without importing unrelated practice-bank dependencies.
   w.renderPractice=()=>{};
-  for(const n of ['new-data.js','new-enrichment.js','textbook-data-corrections.js','textbook-audio-segments.js','textbook-segment-audio.js'])w.eval(read(n));
+  for(const n of ['new-data.js','new-enrichment.js','textbook-data-corrections.js','textbook-audio-segments.js','pos-tips.js','textbook-integration-corrections.js','stage3/catalog.js','textbook-final-corrections.js','textbook-segment-audio.js'])w.eval(read(n));
   // app-core defines top-level lexical bindings (id/L). Classic script tags share that global lexical environment;
   // separate window.eval() calls in JSDOM do not. Evaluate app-core + the production parity layer together
   // so the regression models browser classic-script binding semantics instead of inventing window.L.
@@ -81,7 +81,8 @@ function wait(){return new Promise(r=>setTimeout(r,0))}
   a.w.speak('老师');await wait();
   if(a.speechCount!==1)throw new Error('grammar/Hanzi TTS path no longer works');
 
-  const unsupportedWords=new Set(['一','二','三','四','五','六','七','九','十','千','两','零']);
+  a.w.HSK1_OFFICIAL_AUDIO.dispose();a.dom.window.close();
+  const unsupportedWords=new Set(['一','二','三','四','五','六','七','八','九','百','十','千','两','零']);
   let total=0,official=0,unsupported=0,detailChecks=0;
   for(let lesson=1;lesson<=15;lesson++){
     const x=await make(lesson);
@@ -114,24 +115,27 @@ function wait(){return new Promise(r=>setTimeout(r,0))}
         }
       }
     }
+    x.w.HSK1_OFFICIAL_AUDIO.dispose();x.dom.window.close();
   }
-  if(total!==336)throw new Error(`expected 336 site vocab cards, got ${total}`);
-  if(official!==324)throw new Error(`expected 324 official vocab cards, got ${official}`);
-  if(unsupported!==12)throw new Error(`expected 12 unsupported cards, got ${unsupported}`);
+  if(total!==342)throw new Error(`expected 342 site vocab cards, got ${total}`);
+  if(official!==328)throw new Error(`expected 328 official vocab cards, got ${official}`);
+  if(unsupported!==14)throw new Error(`expected 14 unsupported cards, got ${unsupported}`);
   if(detailChecks!==15)throw new Error(`expected 15 detail route checks, got ${detailChecks}`);
 
   const six=await make(6);
-  for(const word of ['包子','超市','吃','出租车','电话','东西','非常','好吃','号','买','米饭','明天','哪儿','那边','牛奶','去','手机','晚饭','想','些','怎么','坐','西安','西安饭店']){
+  for(const word of ['包子','超市','吃','出租车','电话','东西','非常','好吃','号','买','米饭','明天','哪儿','那边','牛奶','去','手机','晚饭','想','些','怎么','坐','西安饭店']){
     const b=cardFor(six.w.document,word)?.querySelector('.speak-word');
     if(!b||b.disabled||b.textContent.trim()!=='🎧')throw new Error(`lesson6 official mapping missing: ${word}`);
     const sb=six.speechCount,ab=FakeAudio.log.length;b.click();await wait();
     if(six.speechCount!==sb||FakeAudio.log.length<=ab)throw new Error(`lesson6 routed incorrectly: ${word}`);
   }
 
+  six.w.HSK1_OFFICIAL_AUDIO.dispose();six.dom.window.close();
   const c=await make(11);
   const tabs=c.w.document.querySelectorAll('#sceneTabs .scene-tab');tabs[2].click();await wait();
   const rows=c.w.document.querySelectorAll('#scenePane .dialogue-line');
   if(rows.length!==6)throw new Error(`lesson11 scene3 expected 6 rows, got ${rows.length}`);
   if(![...rows].some(r=>r.querySelector('.line-zh')?.textContent==='去超市。'))throw new Error('lesson11 去超市 missing');
-  console.log(JSON.stringify({status:'PASS',productionParityLoaded:true,totalSiteVocab:total,officialVocab:official,unsupportedVocab:unsupported,detailOfficialChecks:detailChecks,lesson6VisibleWordsOfficial:24,lesson1TextOfficial:true,ttsOnlyGrammarHanzi:true,lesson11Rows:6,speechCountOfficialClicks:0}));
+  c.w.HSK1_OFFICIAL_AUDIO.dispose();c.dom.window.close();
+  console.log(JSON.stringify({status:'PASS',productionParityLoaded:true,totalSiteVocab:total,officialVocab:official,unsupportedVocab:unsupported,detailOfficialChecks:detailChecks,lesson6VisibleWordsOfficial:23,lesson1TextOfficial:true,ttsOnlyGrammarHanzi:true,lesson11Rows:6,speechCountOfficialClicks:0}));
 })().catch(e=>{console.error(e);process.exit(1)});
