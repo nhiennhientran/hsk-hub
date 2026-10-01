@@ -4,7 +4,7 @@
 - 分支：`work/hsk1-modular-step5-20261002`；本步基线：`4c1569c3e0d830cf22758ba116f876512978c3d0`；有效内容基线仍为`71b39192133c82f684384f450dda6079d3253440`。
 - 生产恢复点：`069f9d956c9a600a91e6b4ce82241ceccc184dce`；原运行/课程内容/原音频/纯引擎正文/依赖版本未改，没有部署。
 - 已交付：第1—3步需求/内容、外壳/路由/gate/lifecycle与公共保存/迁移；第4步15课225作业、评分/人工翻译/首次最近收据/自动保存；第5步15课教材五节、342词条/45课文203行/40语法+3语音/150原练习/267本地笔顺、公共唯一audio与明确TTS、阅读/星标/继续位置。
-- 本步验证：128单元0跳过；本地Chromium完整40场景；93原轨和267笔顺构建副本/哈希及许可检查。标准Chromium/WebKit各40场景以同head的Actions run核对，完成回复附链接。见`step5-acceptance.md`与`review/step5-local-validation.json`。
+- 本步验证：131单元0跳过；本地初始Chromium完整40场景、WebKit状态恢复修复后媒体6场景复测；93原轨和267笔顺构建副本/哈希及许可检查。标准Chromium/WebKit各40场景以同head的Actions run核对，完成回复附链接。见`step5-acceptance.md`与`review/step5-local-validation.json`。
 - 当前边界：独立75听力、混课词义卡/复习/完整统计未接入；本轮真实中文voice试听、人耳逐题听辨、语言审校、实体手机/IME、原生打印与实际配额压力不冒称通过；旧WebKit历史超时不标唯一根因已解决。
 
 ## 第6步接续

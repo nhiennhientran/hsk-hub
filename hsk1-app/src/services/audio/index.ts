@@ -37,6 +37,7 @@ export interface AudioPort extends EventPort {
   defaultPlaybackRate: number;
   preservesPitch: boolean;
   readonly paused: boolean;
+  readonly seeking: boolean;
   error?: { message?: string } | null;
   play(): Promise<void>;
   pause(): void;
@@ -241,6 +242,7 @@ export function createAudioService(options: {
     request.paused = false;
     request.trackStarted = false;
     let positioned = false;
+    let waitingTime: number | undefined;
     const position = () => {
       if (!current(request) || audio.readyState < 1) return;
       try {
@@ -256,7 +258,7 @@ export function createAudioService(options: {
           return;
         }
         if (positioned) return;
-        audio.currentTime = startTime;
+        if (Math.abs(audio.currentTime - startTime) > 0.001) audio.currentTime = startTime;
         positioned = true;
         publish({ currentTime: startTime });
       } catch (error) { fail(request, playbackIssue(error)); }
@@ -273,6 +275,7 @@ export function createAudioService(options: {
       position();
       if (!current(request) || state.status === 'error') return;
       request.trackStarted = true;
+      waitingTime = undefined;
       publish({ status: 'playing', issue: null, currentTime: audio.currentTime });
       settle(request, { ok: true, code: 'playing' });
       scheduleBoundary(request);
@@ -285,10 +288,28 @@ export function createAudioService(options: {
     listen(audio, 'waiting', () => {
       if (!current(request) || state.status !== 'playing') return;
       clearBoundary();
+      waitingTime = audio.currentTime;
       publish({ status: 'loading', currentTime: audio.currentTime });
-      guardStartup(request);
+      if (current(request)) guardStartup(request);
+    }, request.trackCleanups);
+    listen(audio, 'seeking', () => {
+      if (current(request) && state.status === 'loading') waitingTime = undefined;
+    }, request.trackCleanups);
+    listen(audio, 'seeked', () => {
+      if (current(request) && request.trackStarted && state.status === 'loading') waitingTime = audio.currentTime;
     }, request.trackCleanups);
     listen(audio, 'timeupdate', () => {
+      if (!current(request)) return;
+      // Some engines resume the real clock after seeking without another
+      // playing event. Only a track already confirmed by playing may recover;
+      // seek jumps, a paused clock and a merely resolved play promise do not.
+      if (request.trackStarted && state.status === 'loading' && waitingTime !== undefined &&
+          !request.paused && !audio.paused && !audio.seeking && audio.readyState >= 3 && audio.currentTime > waitingTime + 0.01) {
+        waitingTime = undefined;
+        publish({ status: 'playing', issue: null, currentTime: audio.currentTime });
+        settle(request, { ok: true, code: 'playing' });
+        scheduleBoundary(request);
+      }
       if (!current(request)) return;
       publish({ currentTime: audio.currentTime });
       if (track.end !== undefined && audio.currentTime >= track.end - 0.015) finishTrack(request);

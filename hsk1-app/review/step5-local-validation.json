@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "step": 5,
-  "createdAt": "2026-10-01T16:42:31.795463+00:00",
+  "createdAt": "2026-10-01T17:02:21.019982+00:00",
   "branch": "work/hsk1-modular-step5-20261002",
   "baseCommit": "4c1569c3e0d830cf22758ba116f876512978c3d0",
   "contentBaseline": "71b39192133c82f684384f450dda6079d3253440",
@@ -14,7 +14,7 @@
   },
   "checks": {
     "unit": {
-      "passed": 128,
+      "passed": 131,
       "failed": 0,
       "skipped": 0
     },
@@ -24,13 +24,21 @@
       "skipped": 0,
       "flaky": 0,
       "durationMs": 159090.31399999998,
-      "sourceReport": ".repro-output/step5-browser-full.json"
+      "sourceReport": ".repro-output/step5-browser-full.json",
+      "testedCommit": "542cfe2d2c612a7f9d095777bde2793c73680633",
+      "scope": "Before waiting-state recovery fix; final head full Chromium/WebKit validated by matching CI. Local affected media cases retested after fix."
     },
     "focusedTextbook": {
       "passed": 9
     },
     "focusedNativeMedia": {
-      "passed": 6
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "afterCiStateRecoveryFix": true,
+      "durationMs": 22373.81,
+      "sourceReport": ".repro-output/step5-media-final.json",
+      "boundedNativeEventAttachments": 6
     },
     "ci": {
       "projects": [
@@ -38,7 +46,24 @@
         "webkit"
       ],
       "casesPerProject": 40,
-      "verification": "Matching head Actions run and job logs checked in completion reply; not inherited from previous step."
+      "verification": "Matching head Actions run and job logs checked in completion reply; not inherited from previous step.",
+      "firstAttempt": {
+        "runId": 36894458495,
+        "head": "542cfe2d2c612a7f9d095777bde2793c73680633",
+        "unitPassed": 128,
+        "chromiumPassed": 40,
+        "webkitPassed": 38,
+        "failed": 2,
+        "cases": [
+          "media.spec.ts playlist next track",
+          "media.spec.ts detail next word"
+        ],
+        "artifactId": 11179152183,
+        "fix": "Avoid redundant seek; after real playing, recover waiting only on actual clock advancement with nonpaused/nonseeking/ready state checks; seek jumps reset baseline; +3 unit tests. No first-start simulation or weakened assertion."
+      },
+      "node": "24.19.0",
+      "npmObserved": "11.17.0",
+      "cjkScreenshots": "First CI WebKit 1104 screenshot inspected: Chinese/Vietnamese/pinyin and stroke SVG render correctly; physical devices still pending."
     },
     "build": "passed",
     "catalog": "passed",
@@ -186,14 +211,14 @@
     "hsk1-app/src/features/textbook/text.ts": "78ccf767ab998097a791fd5c1d2481cc5982940921dd10fb534d6d63b5b73b61",
     "hsk1-app/src/features/textbook/textbook.css": "8cc6e98a349c96ccce8a342dbd016035f6009b21db10514b90b5c2fb20329470",
     "hsk1-app/src/features/textbook/vocabulary.ts": "12f7c73f50c754e4bd02aea4bdbccd0e739aa48dee5fa04b6d0d41aee17c0730",
-    "hsk1-app/src/services/audio/index.ts": "61398afa67273f437a6f8cc0795dc5a85ac14f51343629c33daa29e8fdb4a55b",
+    "hsk1-app/src/services/audio/index.ts": "777a576cbf9e2abfa41d4e325ea6e9ad7b50e05f2940db92a5a52f65e1f81cb8",
     "hsk1-app/src/services/content/textbook.ts": "c037c11f69f80f879be9f018f817bf134b9a19c3de13024161748130ed7b8fbd",
     "hsk1-app/src/services/hanzi/LICENSE": "7735d83cdf892c8db41c27103b42c89b4b63149770c1e08ae13cbbebb81da637",
     "hsk1-app/src/services/hanzi/vendor.d.ts": "d6ffc7b954563aa71cb8ebfac52290888daa713d9327b12e740fa7b736da0a51",
     "hsk1-app/src/services/hanzi/vendor.js": "60c26936269f092350401aa972707e7d5cd46cbc087f8c9d0f855f937cc8fe0a",
     "hsk1-app/src/services/learning/reading.ts": "f5d5ea6b81494d4a5a69f641f135ba9980860f605cd80ea2bb6d8a644d0e61fd",
-    "hsk1-app/tests/audio.test.mjs": "b008020dec33853908b4d70ec45f51c1f76a2c1a81e05fda95d56ac3c47db5eb",
-    "hsk1-app/tests/browser/media.spec.ts": "c83c392d11f309f1168904ac8d720e170d77b218b28629ed1bbebd2ac2ac206a",
+    "hsk1-app/tests/audio.test.mjs": "38031a6c2c3dca1efbc67a419397f650a5fe32cd6e62ffea43fc39d76f31def3",
+    "hsk1-app/tests/browser/media.spec.ts": "e376d1243d50947d1f9d47d053f18b908cffc0b449be40d31235b5cd064d5a7d",
     "hsk1-app/tests/browser/navigation.spec.ts": "f1b118c58bc9d8866d4eb77456a621f2eec6bbfc69005be05e8ffa046a9a43db",
     "hsk1-app/tests/browser/scaffold.spec.ts": "0408b5554a8b79234bff6305eb64b5bb64a3ab17de2ea114f86fc6a56fec0b6b",
     "hsk1-app/tests/browser/textbook.spec.ts": "b98fc97c5668e9f977c482bafd5a4b9693ecbcc595d7ebf875c71a965dc7731a",

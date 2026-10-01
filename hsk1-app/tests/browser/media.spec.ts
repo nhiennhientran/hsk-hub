@@ -11,17 +11,71 @@ type MediaObservation = { src: string; time: number; duration: number; rate: num
 async function authenticateAndObserveNativeMedia(page: Page): Promise<void> {
   await page.addInitScript(() => {
     sessionStorage.setItem('hsk_portal_unlocked_v2', '1');
-    const state = window as unknown as { __nativeMedia: HTMLMediaElement[]; __nativePlayCalls: number };
-    state.__nativeMedia = []; state.__nativePlayCalls = 0;
-    const original = HTMLMediaElement.prototype.play;
+    const state = window as unknown as {
+      __nativeMedia: HTMLMediaElement[]; __nativePlayCalls: number;
+      __mediaHistory: Record<string, unknown>[]; __mediaEventCounts: Record<string, number>;
+    };
+    state.__nativeMedia = []; state.__nativePlayCalls = 0; state.__mediaHistory = []; state.__mediaEventCounts = {};
+    const watched = new WeakSet<HTMLMediaElement>();
+    let sequence = 0;
+    function record(event: string, audio?: HTMLMediaElement, detail?: string): void {
+      state.__mediaEventCounts[event] = (state.__mediaEventCounts[event] ?? 0) + 1;
+      state.__mediaHistory.push({ sequence: ++sequence, atMs: Math.round(performance.now()), event, detail,
+        sourceAttribute: audio?.getAttribute('src'), src: audio?.currentSrc, time: audio?.currentTime,
+        duration: audio?.duration, rate: audio?.playbackRate, paused: audio?.paused, ended: audio?.ended,
+        readyState: audio?.readyState, networkState: audio?.networkState, seeking: audio?.seeking,
+        errorCode: audio?.error?.code, errorMessage: audio?.error?.message,
+        uiState: document.querySelector<HTMLElement>('#audio-player')?.dataset.state,
+        uiLabel: document.querySelector('#audio-status')?.textContent,
+        position: document.querySelector('#audio-position')?.textContent });
+      if (state.__mediaHistory.length > 240) state.__mediaHistory.shift();
+    }
+    function observe(audio: HTMLMediaElement): void {
+      if (watched.has(audio)) return;
+      watched.add(audio);
+      for (const name of ['loadstart', 'loadedmetadata', 'durationchange', 'loadeddata', 'canplay', 'canplaythrough',
+        'play', 'playing', 'waiting', 'stalled', 'suspend', 'pause', 'seeking', 'seeked', 'timeupdate', 'ended', 'emptied', 'error', 'ratechange']) {
+        audio.addEventListener(name, () => record(name, audio));
+      }
+    }
+    const originalLoad = HTMLMediaElement.prototype.load;
+    HTMLMediaElement.prototype.load = function () { observe(this); record('load-call', this); return originalLoad.call(this); };
+    const originalPause = HTMLMediaElement.prototype.pause;
+    HTMLMediaElement.prototype.pause = function () { observe(this); record('pause-call', this); return originalPause.call(this); };
+    const originalPlay = HTMLMediaElement.prototype.play;
     HTMLMediaElement.prototype.play = function () {
+      observe(this);
       if (!state.__nativeMedia.includes(this)) state.__nativeMedia.push(this);
       state.__nativePlayCalls++;
-      // This is an observer. Native decoding, play events and the playback clock stay intact.
-      return original.call(this);
+      record('play-call', this);
+      // Observe real events and promise settlement; native playback and timing remain intact.
+      const result = originalPlay.call(this);
+      void result.then(() => record('play-promise-resolved', this), error => record('play-promise-rejected', this, `${error?.name}: ${error?.message}`));
+      return result;
     };
+    document.addEventListener('DOMContentLoaded', () => {
+      let last = '';
+      const observer = new MutationObserver(() => {
+        const panel = document.querySelector<HTMLElement>('#audio-player');
+        const key = `${panel?.dataset.state}:${document.querySelector('#audio-status')?.textContent}:${document.querySelector('#audio-position')?.textContent}`;
+        if (key !== last) { last = key; record('ui-change', state.__nativeMedia[0]); }
+      });
+      observer.observe(document.body, { subtree: true, attributes: true, attributeFilter: ['data-state'], childList: true, characterData: true });
+    }, { once: true });
   });
 }
+test.afterEach(async ({ page }, testInfo) => {
+  if (page.isClosed()) return;
+  const failed = testInfo.status !== testInfo.expectedStatus;
+  const diagnostic = await page.evaluate(() => {
+    const state = window as unknown as { __mediaHistory?: Record<string, unknown>[]; __nativePlayCalls?: number; __mediaEventCounts?: Record<string, number> };
+    return { url: location.href, userAgent: navigator.userAgent, nativePlayCalls: state.__nativePlayCalls,
+      eventCounts: state.__mediaEventCounts ?? {}, history: state.__mediaHistory ?? [], moduleState: document.querySelector<HTMLElement>('#module-host')?.dataset.state };
+  }).catch(error => ({ diagnosticError: String(error) }));
+  if (!failed && 'history' in diagnostic) diagnostic.history = diagnostic.history.slice(-80);
+  await testInfo.attach(failed ? 'native-media-failure-history' : 'native-media-success-sample', { body: Buffer.from(JSON.stringify(diagnostic, null, 2)), contentType: 'application/json' });
+});
+
 async function native(page: Page): Promise<MediaObservation> {
   return page.evaluate(() => {
     const state = window as unknown as { __nativeMedia: HTMLMediaElement[]; __nativePlayCalls: number };

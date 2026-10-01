@@ -16,7 +16,6 @@ class Events extends EventTarget {
 }
 class Audio extends Events {
   src = '';
-  currentTime = 0;
   duration = NaN;
   readyState = 0;
   playbackRate = 1;
@@ -24,8 +23,13 @@ class Audio extends Events {
   preservesPitch = false;
   calls = [];
   paused = true;
+  seeking = false;
+  seekAssignments = [];
+  mediaTime = 0;
   pauseCount = 0;
   error = null;
+  get currentTime() { return this.mediaTime; }
+  set currentTime(value) { this.mediaTime = value; this.seekAssignments.push(value); }
   play() { const call = deferred(); this.calls.push(call); return call.promise; }
   pause() { this.pauseCount++; this.paused = true; this.emit('pause'); }
   load() { this.readyState = 0; this.currentTime = 0; this.duration = NaN; }
@@ -161,6 +165,50 @@ test('pause during a delayed start remains paused; resume waits for playing and 
   const replayed = service.replay(); audio.metadata(); audio.playing(); await replayed;
   assert.equal(audio.currentTime, 1);
   assert.equal(audio.calls.length, 3);
+  service.dispose();
+});
+
+test('an already started clock can recover from waiting without another playing event, but seek jumps cannot', async () => {
+  const { audio, service, clock } = setup();
+  const pending = service.play({ ...track(), end: 10 });
+  audio.metadata(); audio.playing(); await pending;
+  audio.readyState = 2; audio.emit('waiting');
+  assert.equal(service.snapshot().status, 'loading');
+  assert.deepEqual(clock.delays, [15000]);
+  audio.time(1.2);
+  assert.equal(service.snapshot().status, 'loading');
+  audio.seeking = true; audio.emit('seeking');
+  audio.readyState = 4; audio.time(5);
+  assert.equal(service.snapshot().status, 'loading');
+  audio.seeking = false; audio.emit('seeked'); audio.time(5);
+  assert.equal(service.snapshot().status, 'loading');
+  audio.time(5.1);
+  assert.equal(service.snapshot().status, 'playing');
+  assert.deepEqual(clock.delays, [4900]);
+  audio.time(10);
+  assert.equal(service.snapshot().status, 'ended');
+  service.dispose();
+});
+
+test('clock and readiness cannot invent a first playing event; genuinely stalled resumed media times out', async () => {
+  const { audio, service, clock } = setup();
+  const first = service.play(track()); audio.metadata();
+  audio.calls[0].resolve(); audio.readyState = 4; audio.paused = false; audio.time(1.2);
+  assert.equal(service.snapshot().status, 'loading');
+  audio.playing(); await first;
+  audio.emit('waiting'); audio.time(1.2);
+  assert.equal(service.snapshot().status, 'loading');
+  clock.fire();
+  assert.equal(service.snapshot().status, 'error');
+  service.dispose();
+});
+
+test('loading an original track already at zero avoids a redundant initial seek', async () => {
+  const { audio, service } = setup();
+  const pending = service.play({ url: '../audio/1-2.mp3', label: 'Từ vựng' });
+  const assignments = audio.seekAssignments.length;
+  audio.metadata(); audio.playing(); await pending;
+  assert.equal(audio.seekAssignments.length, assignments);
   service.dispose();
 });
 
