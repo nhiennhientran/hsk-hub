@@ -4,7 +4,7 @@ const {spawn}=require('node:child_process'),playwright=require('playwright');
 const PORT=Number(process.env.HSK_STAGE41_PORT||18768),BROWSER=process.env.HSK_BROWSER||'chromium';
 const BASE=`http://127.0.0.1:${PORT}/hsk-hub/new-hsk1/hsk1/`;
 const OUT=path.resolve('tools/tests/results');fs.mkdirSync(OUT,{recursive:true});
-const report={name:'integration-step1',browser:BROWSER,startedAt:new Date().toISOString(),basePath:'/hsk-hub/new-hsk1/hsk1/',checks:[],tasks:[],media:[],screenshots:[],errors:[],network:[],externalServices:'isolated, not an external-service availability test',passed:false};
+const report={name:'integration-step1',browser:BROWSER,startedAt:new Date().toISOString(),basePath:'/hsk-hub/new-hsk1/hsk1/',checks:[],tasks:[],media:[],screenshots:[],errors:[],network:[],cancelledRequests:[],externalServices:'isolated, not an external-service availability test',passed:false};
 const E2=require('../../new-hsk1/hsk1/stage2/engine.js'),BANK=require('../../new-hsk1/hsk1/stage2/bank.js');
 const E1=require('../../new-hsk1/hsk1/stage1/engine.js'),SAMPLE=require('../../new-hsk1/hsk1/stage1/sample-bank.js')[0];
 const sandbox={window:{}};vm.runInNewContext(fs.readFileSync('new-hsk1/hsk1/stage3/catalog.js','utf8'),sandbox);
@@ -25,7 +25,7 @@ async function newContext(options={}){
  c.on('page',p=>{
   p.setDefaultTimeout(15000);p.on('pageerror',e=>report.errors.push({check:activeCheck,error:e.message}));
   p.on('response',r=>{if(r.url().startsWith(BASE)&&r.status()>=400)report.network.push({check:activeCheck,url:r.url(),status:r.status()});});
-  p.on('requestfailed',r=>{if(r.url().startsWith(BASE)&&r.failure()?.errorText!=='net::ERR_ABORTED')report.network.push({check:activeCheck,url:r.url(),error:r.failure()?.errorText});});
+  p.on('requestfailed',r=>{if(!r.url().startsWith(BASE))return;const error=r.failure()?.errorText,record={check:activeCheck,url:r.url(),error};if(['net::ERR_ABORTED','Load request cancelled'].includes(error))report.cancelledRequests.push(record);else report.network.push(record);});
   p.on('dialog',d=>d.accept());
  });return c;
 }
@@ -112,7 +112,7 @@ async function importBackup(p,filename,isMedia=false){
  await check('Mixed course selection and frozen review queue survive navigation and reload',async()=>{
   await page.locator('#integratedNav [data-mode="vocab"]').click();await page.locator('#start-review').waitFor();await page.locator('#clear-lessons').click();for(const n of [3,6])await page.locator(`#lesson-checks [data-lesson="${n}"]`).check();await page.locator('#start-review').click();await page.locator('#review-card').waitFor();
   await page.locator('#reveal-card').click();await page.locator('[data-rating="good"]').click();const before=await state(page,E3.KEY);assert.deepEqual(before.preferences.lessons,[3,6]);
-  await page.locator('#integratedNav [data-mode="homework"]').click();await homeworkReady(page);await page.locator('#integratedNav [data-mode="vocab"]').click();await page.locator('#review-card').waitFor();
+  await page.locator('#integratedNav [data-mode="homework"]').click();await homeworkReady(page);assert.match(page.url(),/lesson=8/);assert.match(await page.locator('#input-'+BANK[7].translation[0].id).inputValue(),/đặng/);await page.locator('#integratedNav [data-mode="vocab"]').click();await page.locator('#review-card').waitFor();
   let after=await state(page,E3.KEY);assert.deepEqual(after.preferences.lessons,[3,6]);assert.deepEqual(after.cards,before.cards);await page.reload({waitUntil:'domcontentloaded'});await page.locator('#review-card').waitFor();after=await state(page,E3.KEY);assert.deepEqual(after.cards,before.cards);
   await page.locator('#module-listening').click();assert.equal(await page.locator('#integratedNav [aria-current="page"]').getAttribute('data-mode'),'listening');assert.match(page.url(),/mode=listening/);await page.locator('#module-vocabulary').click();assert.equal(await page.locator('#integratedNav [aria-current="page"]').getAttribute('data-mode'),'vocab');
  });
@@ -157,6 +157,7 @@ async function importBackup(p,filename,isMedia=false){
    await open(page,'learning.html?mode=progress&lesson=8');await page.locator('.integrated-progress-table').waitFor();assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),true,'progress overflow '+width);
   }
  });
+ await require('./integration-step1-extra.cjs')({assert,fs,path,check,page,newContext,open,homeworkReady,saved,state,order,choose,sort,submit,part,screenshot,backup,importBackup,delay,BASE,OUT,file,E1,E2,E3,BANK,C,report});
  await check('No uncaught application errors or failed same-origin resources',async()=>{assert.deepEqual(report.errors,[]);assert.deepEqual(report.network,[]);});
  report.passed=true;report.completedAt=new Date().toISOString();console.log(JSON.stringify({passed:true,checks:report.checks.length,tasks:report.tasks.length,media:report.media.length,browser:BROWSER}));
 })().catch(async e=>{report.error=e.stack;console.error(e);if(page&&!page.isClosed())try{await screenshot(page,'failure',false);}catch{}process.exitCode=1;}).finally(async()=>{

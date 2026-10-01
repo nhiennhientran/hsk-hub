@@ -37,6 +37,8 @@ function activeLesson(){
 }
 function readNav(){try{return JSON.parse(safeRead(NAV_KEY)||'{}')||{};}catch(_e){return {};}}
 function routeHref(nextMode,l){
+  const savedHomework=readNav().homeworkLesson;
+  if(nextMode==='homework'&&mode!=='homework'&&Number.isInteger(savedHomework)&&savedHomework>=1&&savedHomework<=15)l=savedHomework;
   const n=Number.isInteger(l)&&l>=1&&l<=15?l:lesson;
   return 'learning.html?mode='+encodeURIComponent(nextMode)+'&lesson='+n+'&intent=resume';
 }
@@ -194,6 +196,8 @@ window.addEventListener('hsk-learning-state',event=>{
 });
 window.addEventListener('pageshow',event=>{if(event.persisted)location.reload();});
 window.addEventListener('storage',event=>{if(event.key!=='ran_hsk1_integrated_nav_v1')updateMini();});
+function initializeSessionGate(){if(typeof window.initGate==='function')window.initGate();}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initializeSessionGate,{once:true});else initializeSessionGate();
 async function boot(){
  updateNav(lesson);updateMini();
  try{
