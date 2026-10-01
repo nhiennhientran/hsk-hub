@@ -1,0 +1,62 @@
+name: HSK1 Step 3 review validation
+on:
+  push:
+    branches: ['work/hsk1-stage3-*']
+    paths:
+      - 'new-hsk1/hsk1/stage3/data/**'
+      - 'new-hsk1/hsk1/stage3/index.html'
+      - 'new-hsk1/hsk1/stage3/styles.css'
+      - 'new-hsk1/hsk1/stage3/engine.js'
+      - 'new-hsk1/hsk1/stage3/player.js'
+      - 'new-hsk1/hsk1/stage3/app.js'
+      - 'tools/build-stage3*'
+      - 'tools/serve-stage3.cjs'
+      - 'tools/tests/stage3-*.cjs'
+      - '.github/workflows/hsk1-stage3-review.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    if: startsWith(github.ref, 'refs/heads/work/hsk1-stage3-')
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install media decoder and Chinese glyphs
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-noto-cjk
+      - name: Build original textbook clips, complete student file and teacher reference
+        run: |
+          python tools/build-stage3-media.py
+          node tools/build-stage3.cjs
+          node tools/build-stage3-teacher.cjs
+      - name: Check learning state, scoring, semantic cards and backup boundaries
+        run: node --test --test-reporter=tap tools/tests/stage3-engine.test.cjs | tee tools/tests/results/stage3-engine.tap
+      - name: Install the pinned isolated browser dependency
+        run: npm install --no-save --package-lock=false playwright@1.62.1
+      - name: Install Chromium for software regression
+        run: npx playwright install --with-deps chromium
+      - name: Exercise all 75 listening questions and vocabulary workflows
+        env:
+          HSK_STEP3_PORT: '18767'
+        run: node tools/tests/stage3-browser.cjs
+      - name: Save exact tested files and execution evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk1-step3-review-evidence
+          path: |
+            tools/tests/results/stage3-*
+            new-hsk1/hsk1/stage3/
+            dist/stage3/
+          if-no-files-found: warn

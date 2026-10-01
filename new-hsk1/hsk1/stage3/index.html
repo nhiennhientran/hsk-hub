@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Luyện nghe và ôn từ HSK 1 | Học cùng cô Nhiên</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../learning.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="learning-app stage3-app">
+  <a class="la-skip" href="#work-content">Đến phần đang học</a>
+  <header class="la-header">
+    <div class="la-brand"><span class="la-seal" lang="zh-Hans">然</span><span>Học cùng cô Nhiên<small>Tiếng Trung từng bước</small></span></div>
+    <span class="s3-badge">HSK 1 · 15 bài</span>
+  </header>
+  <main class="la-main">
+    <nav class="s3-modules" aria-label="Chọn cách luyện">
+      <button type="button" id="module-listening" aria-pressed="true"><span aria-hidden="true">♪</span> Luyện nghe<small>Nghe tiếng Trung · chọn nghĩa tiếng Việt</small></button>
+      <button type="button" id="module-vocabulary" aria-pressed="false"><span aria-hidden="true">字</span> Ôn từ vựng<small>Chọn nhiều bài · nhớ lại theo lịch</small></button>
+    </nav>
+    <section class="la-hero s3-hero">
+      <div><p class="la-eyebrow">Học cùng cô Nhiên · HSK 1</p><h1 id="page-title">Luyện nghe theo bài</h1><p id="page-intro">Chọn một hoặc nhiều bài. Nghe lại tùy ý, rồi chọn nghĩa phù hợp bằng tiếng Việt.</p></div>
+      <div class="s3-hero-number"><strong id="hero-number">75</strong><span id="hero-unit">câu nghe trong 15 bài</span></div>
+    </section>
+    <section class="la-panel s3-picker" aria-labelledby="picker-title">
+      <div class="s3-section-head"><h2 id="picker-title">Chọn bài đã học</h2><div class="s3-inline"><button type="button" class="s3-text-button" id="select-all">Chọn tất cả</button><button type="button" class="s3-text-button" id="clear-lessons">Bỏ chọn</button></div></div>
+      <fieldset class="s3-lessons" id="lesson-checks"><legend class="s3-sr-only">Chọn bài từ 1 đến 15</legend></fieldset>
+      <p class="s3-selection" id="selection-summary" aria-live="polite"></p>
+      <div class="s3-settings">
+        <label id="listening-mode-label">Nội dung nghe<select id="listening-mode"><option value="all">Tất cả câu trong bài đã chọn</option><option value="wrong">Câu nghe cần làm lại</option></select></label>
+        <label id="vocab-filter-label" hidden>Nhóm từ cần ôn<select id="vocab-filter"><option value="all">Tất cả từ đã chọn</option><option value="unfamiliar">Chưa quen</option><option value="wrong">Cần luyện lại</option><option value="due">Đến lượt ôn / từ mới</option></select></label>
+        <label id="review-direction-label" hidden>Hướng nhớ lại<select id="review-direction"><option value="zh-vi">Tiếng Trung → tiếng Việt</option><option value="vi-zh">Tiếng Việt → tiếng Trung</option></select></label>
+        <label class="s3-checkbox"><input type="checkbox" id="shuffle-items" checked> Trộn thứ tự</label>
+      </div>
+      <div class="s3-start-row"><button type="button" class="la-button" id="start-listening">Bắt đầu lượt nghe</button><button type="button" class="la-button" id="start-review" hidden>Bắt đầu ôn từ</button><span class="la-small" id="selection-help">Mỗi bài có 5 câu nghe. Chọn nhiều bài để luyện xen kẽ.</span></div>
+      <p id="session-scope-note" class="la-small" hidden></p>
+    </section>
+    <div class="s3-overview" id="overview" aria-label="Tiến độ đã lưu"></div>
+    <div class="s3-notice" id="action-notice" role="status" hidden></div>
+    <div class="s3-notice s3-warning" id="storage-notice" role="status" hidden></div>
+    <section class="la-panel" id="storage-sync" hidden><p>Bài đang làm trong tab này vẫn còn. Tải bản sao để giữ riêng, hoặc kiểm tra bản mới từ tab khác.</p><div class="s3-inline"><button type="button" class="la-ghost" id="export-conflict">Tải bản đang làm</button><button type="button" class="la-ghost" id="inspect-latest">Kiểm tra bản ở tab khác</button></div></section>
+    <section id="audio-controls" class="s3-audio" aria-label="Điều khiển âm thanh" hidden>
+      <div class="s3-audio-top"><div><span class="s3-audio-label" id="audio-label">Âm thanh giáo trình</span><p id="audio-status" role="status">Nhấn phát để nghe.</p></div><label>Tốc độ<select id="audio-rate"><option value="0.65">0.65× · chậm</option><option value="0.75">0.75×</option><option value="1" selected>1× · bình thường</option><option value="1.25">1.25×</option><option value="1.5">1.5× · nhanh</option></select></label></div>
+      <div class="s3-audio-buttons"><button type="button" class="la-button" id="play-audio">▶ Phát âm thanh</button><button type="button" class="la-ghost" id="pause-audio">Tạm dừng</button><button type="button" class="la-ghost" id="replay-audio">Nghe từ đầu</button></div>
+      <div class="s3-audio-progress"><progress id="audio-progress" max="1" value="0" aria-label="Tiến độ đoạn âm"></progress><span id="audio-time">0:00 / 0:00</span></div>
+      <p class="s3-audio-note">Bạn có thể nghe lại nhiều lần. Số lần nghe không làm giảm điểm.</p>
+      <audio id="lesson-audio" preload="none"></audio>
+    </section>
+    <section id="work-content" tabindex="-1" aria-label="Nội dung luyện tập"></section>
+    <section class="la-panel s3-backup" id="backup-panel">
+      <details id="backup-details"><summary>Lưu bản sao / mở lại tiến độ</summary>
+        <p class="la-muted">Tiến độ nghe và lịch ôn được lưu trên trình duyệt này. Tải bản sao để giữ riêng hoặc chuyển thiết bị.</p>
+        <div class="s3-inline"><button type="button" class="la-ghost" id="export-backup">Tải bản sao (.json)</button><button type="button" class="la-ghost" id="restore-previous" hidden>Khôi phục bản trước</button><button type="button" class="la-ghost" id="export-raw" hidden>Tải dữ liệu gốc chưa mở được</button></div>
+        <label for="backup-file">Chọn tệp tiến độ nghe và ôn từ</label><input type="file" id="backup-file" accept=".json,application/json">
+        <label for="backup-input">Hoặc dán nội dung JSON</label><textarea id="backup-input" rows="4" spellcheck="false"></textarea>
+        <button type="button" class="la-ghost" id="inspect-backup">Kiểm tra trước khi mở</button><div id="backup-result" aria-live="polite"></div>
+      </details>
+    </section>
+  </main>
+  <footer class="la-footer"><span>Nghe và ôn từ theo 新HSK教程1 · Bài 1–15</span><span>Điểm nghe và tự đánh giá từ vựng được lưu riêng.</span></footer>
+  <div class="s3-save-status" id="save-status" aria-live="polite"></div>
+  <noscript><p class="s3-notice">Vui lòng bật JavaScript để nghe và lưu tiến độ.</p></noscript>
+  <script src="catalog.js"></script>
+  <script src="media-index.js"></script>
+  <script src="engine.js"></script>
+  <script src="player.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
