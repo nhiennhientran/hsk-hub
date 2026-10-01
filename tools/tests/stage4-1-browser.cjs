@@ -15,9 +15,20 @@ async function login(page){
 async function goodOrder(page,lesson,qid){
   return page.evaluate(({lesson,qid})=>{
     const q=window.HSKStep2Bank.find(x=>x.id===lesson).sort.find(x=>x.id===qid),E=window.HSKStep2Engine;
-    const arr=Array.from({length:q.tokens.length},(_,i)=>i),out=[];
-    function walk(prefix,left){if(!left.length){if(E.check(q,prefix))out.push(prefix.slice());return;}for(let i=0;i<left.length&&!out.length;i++)walk(prefix.concat(left[i]),left.slice(0,i).concat(left.slice(i+1)));}
-    walk([],arr);if(!out.length)throw new Error('no accepted order '+qid);return out[0];
+    const target=E.normal(q.answers[0]),tokenText=q.tokens.map(t=>E.normal(t));
+    function walk(prefix,left,built){
+      if(!left.length)return built===target?prefix:null;
+      for(let p=0;p<left.length;p++){
+        const idx=left[p],next=built+tokenText[idx];
+        if(!target.startsWith(next))continue;
+        const found=walk(prefix.concat(idx),left.slice(0,p).concat(left.slice(p+1)),next);
+        if(found)return found;
+      }
+      return null;
+    }
+    const order=walk([],Array.from({length:q.tokens.length},(_,i)=>i),'');
+    if(!order||!E.check(q,order))throw new Error('no accepted order '+qid);
+    return order;
   },{lesson,qid});
 }
 async function doHomework(page,lesson,makeLowScore){
