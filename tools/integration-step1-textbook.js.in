@@ -1,0 +1,51 @@
+(function(){
+'use strict';
+const vocabulary=__VOCABULARY__;
+const officialVocab=__AUDIO__;
+const version='20261001-integration-first8-v1';
+const lessons=window.HSK1_LESSONS;
+if(!Array.isArray(lessons))throw new Error('HSK1 textbook data must load before its corrections.');
+const addedPOS={八:['num','数词 · Số từ'],百:['num','数词 · Số từ'],爸爸:['n','名词 · Danh từ'],吧:['part','助词 · Trợ từ']};
+for(const lesson of lessons){
+ if(lesson.id>8)continue;
+ const reviewed=vocabulary.filter(v=>v.lesson===lesson.id);
+ const old=new Map(lesson.vocab.map(v=>[v.zh,v]));
+ const order=lesson.vocab.map(v=>v.zh).filter(zh=>reviewed.some(v=>v.zh===zh));
+ for(const v of reviewed)if(!order.includes(v.zh))order.push(v.zh);
+ lesson.vocab=order.map(zh=>{
+  const v=reviewed.find(v=>v.zh===zh),word={...(old.get(zh)||{}),zh,py:v.py,vn:v.vi,kind:v.category==='proper_noun'?'proper':(v.extension?'extension':'core'),extension:v.extension};
+  if(addedPOS[zh]){word.pos=addedPOS[zh][0];word.posLabel=addedPOS[zh][1];}
+  if(zh==='工作'){word.pos=lesson.id===3?'n':'v';word.posLabel=lesson.id===3?'名词 · Danh từ':'动词 · Động từ';}
+  return word;
+ });
+}
+function scene(l,n){return lessons.find(x=>x.id===l).scenes[n-1];}
+function line(l,n,i,patch){Object.assign(scene(l,n).lines[i-1],patch);}
+scene(3,1).place='在校园里';scene(3,1).place_vn='Trong khuôn viên trường';
+const scene32=scene(3,2);scene32.place='在教室里，下课后看手机照片';scene32.place_vn='Sau giờ học, xem ảnh trên điện thoại trong lớp';
+scene32.lines=[
+ {s:'安妮',zh:'这是谁？',py:'zhè shì shéi？',vn:'Đây là ai?'},
+ {s:'陈天中',zh:'这是我女朋友。',py:'zhè shì wǒ nǚ péngyou。',vn:'Đây là bạn gái tôi.'},
+ {s:'安妮',zh:'你女朋友是哪国人？',py:'nǐ nǚ péngyou shì nǎ guó rén？',vn:'Bạn gái của bạn là người nước nào?'},
+ {s:'陈天中',zh:'她也是泰国人。',py:'tā yě shì Tàiguó rén。',vn:'Cô ấy cũng là người Thái Lan.'}
+];
+scene(4,3).place='在街上';scene(4,3).place_vn='Trên phố';
+line(4,3,3,{zh:'您儿子几岁？',py:'nín érzi jǐ suì？',vn:'Con trai chị mấy tuổi?'});
+['王一雪','刘明','王一雪','刘明'].forEach((s,i)=>line(5,1,i+1,{s}));
+line(5,1,2,{zh:'今天9月8号。'});
+line(7,2,1,{zh:'下午我想去电影院看电影，你去吗？',py:'xiàwǔ wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng，nǐ qù ma？'});
+line(7,3,1,{s:'王一雪',vn:'A lô, anh đang ở đâu?'});
+line(7,3,2,{s:'刘明',vn:'Anh đang ở nhà.'});
+line(8,1,4,{py:'zhè zhī xiǎo māo zhēn piàoliang！'});
+line(8,2,4,{zh:'我能到。我在学校吃午饭。',py:'wǒ néng dào。wǒ zài xuéxiào chī wǔfàn。',vn:'Tôi đến được. Tôi ăn trưa ở trường.'});
+line(8,3,1,{zh:'小胡，还没吃饭呢？',py:'xiǎo Hú，hái méi chī fàn ne？'});
+const segments=window.HSK1_OFFICIAL_SEGMENTS;
+if(segments){
+ // Printed p12/PDF27, source-track ASR, and measured silence 1.271–2.114 seconds.
+ segments.text['3-3']=[[0.204,1.65],[1.75,3.873],[3.873,7.246],[7.246,9.653]];
+ for(const [track,rows] of Object.entries(officialVocab))segments.vocab[track]=rows;
+ segments.unsupported['4']=['一','二','三','四','五','六','七','八','九','十','百','千','两','零'];
+ segments.integrationCorrectionVersion=version;
+}
+window.HSK1_INTEGRATION_TEXTBOOK={version,scope:[1,8],vocabularyCount:lessons.filter(x=>x.id<=8).reduce((n,l)=>n+l.vocab.length,0),audioCorrected:!!segments};
+})();
