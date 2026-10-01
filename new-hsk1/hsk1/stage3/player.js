@@ -2,6 +2,8 @@
 (function (root) {
   'use strict';
   const RATES = Object.freeze([0.65, 0.75, 1, 1.25, 1.5]);
+  const scriptURL = document.currentScript && document.currentScript.src;
+  const mediaBase = new URL('media/', scriptURL || document.baseURI).href;
   const lessonLoads = new Map();
   let singleton = null;
 
@@ -23,7 +25,7 @@
   function loadLesson(lesson) {
     if (lessonLoads.has(lesson)) return lessonLoads.get(lesson).promise;
     const element = document.createElement('script');
-    element.async = true; element.src = `media/lesson-${String(lesson).padStart(2, '0')}.js`;
+    element.async = true; element.src = new URL(`lesson-${String(lesson).padStart(2, '0')}.js`, mediaBase).href;
     element.dataset.hskLesson = String(lesson);
     let resolve, reject;
     const promise = new Promise((yes, no) => { resolve = yes; reject = no; });

@@ -19,6 +19,8 @@
   let storageAvailable = true;
   let submittedWithMissing = false;
   let candidate = null;
+  let candidateMeta = null;
+  let backupReadVersion = 0;
   let backupFileText = null;
   let memoryRecovery = null;
   let lastStoredRaw = null;
@@ -50,6 +52,12 @@
   function attemptDate(attempt) { return attempt && (attempt.submittedAt || attempt.at || attempt.timestamp); }
   function countCorrect(attempt) { return attempt && typeof attempt.correct === 'number' ? attempt.correct : (attempt && typeof attempt.score === 'number' ? attempt.score : 0); }
   function answeredCount() { return questions().filter(q => E.isAnswered(q, g().draft[q.id])).length; }
+  function emitState() {
+    window.dispatchEvent(new CustomEvent('hsk-learning-state', {detail: {
+      app: E.APP, lesson: lessonId, part: kind, totals: E.courseTotals(state, bank),
+      stored: storageAvailable && !storageConflict && !writeFailed && !dirty
+    }}));
+  }
   function save() {
     if (!dirty || !storageAvailable || storageConflict) return;
     try {
@@ -62,6 +70,7 @@
       if (writeFailed) byId('storage-notice').hidden = true;
       writeFailed = false;
       byId('save-status').textContent = 'Đã lưu trên trình duyệt này';
+      emitState();
     } catch (error) {
       writeFailed = true;
       byId('storage-notice').hidden = false;
@@ -179,7 +188,7 @@
     byId('exercise').innerHTML = `<div class="s1-group-head"><div><h2>${E.PATH.indexOf(kind)+1}. ${labels[kind]}</h2><p>${descriptions[kind]}</p></div><span class="s1-kind">${kind==='translation'?'Cô xem bài':'Chấm tự động · 5 câu'}</span></div>${kind==='sort'?'<p class="s1-keyboard-note">Có thể dùng Tab để chọn nút và Enter để ghép từ.</p>':''}${kind==='translation'?`<section class="la-panel"><p class="s1-note">Phần dịch không tính vào điểm chấm tự động. Bài chưa được gửi tự động cho cô.</p><div class="s1-profile"><label for="student-name">Họ tên (để cô nhận ra bài)<input id="student-name" data-profile="name" maxlength="200" value="${escape(state.profile.name)}" autocomplete="name"></label><label for="student-class">Lớp / mã học sinh<input id="student-class" data-profile="className" maxlength="200" value="${escape(state.profile.className)}" autocomplete="off"></label></div><p class="s1-profile-help">Thông tin này chỉ xuất hiện trên bản chụp và bản sao bài làm.</p></section>`:''}${resultSummary()}<div id="form-error" class="la-alert s1-inline-error" role="alert" tabindex="-1" hidden></div><div id="question-list">${questions().map(renderQuestion).join('')}</div>${group.attempt?'':`<div class="s1-submit-area"><div class="la-toolbar"><span class="s1-progress" id="answered-count">Đã làm ${answeredCount()}/5 câu</span><button type="button" class="la-button" id="submit-group">${kind==='translation'?'Lưu 5 câu dịch':'Nộp 5 câu và xem kết quả'}</button></div><p class="la-small">${kind==='translation'?'Sau khi lưu, mở bản chụp có đủ 5 câu để gửi cho cô.':'Chỉ cần làm đủ và nộp bài để mở phần sau. Không yêu cầu đạt một mức điểm để mở.'}</p></div>`}`;
     byId('exercise').querySelectorAll('textarea.s1-translation').forEach(fitTextarea);
   }
-  function render() { renderCoursePicker(); renderOverview(); renderStages(); renderExercise(); flushSave(); }
+  function render() { renderCoursePicker(); renderOverview(); renderStages(); renderExercise(); flushSave(); emitState(); }
   function updateAnswerCount() {
     const count=answeredCount();
     const el=byId('answered-count');if(el)el.textContent=`Đã làm ${count}/5 câu`;
@@ -261,16 +270,17 @@
   byId('export-backup').addEventListener('click',()=>{
     flushSave();const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=`hsk1-15bai-${new Date().toISOString().slice(0,10)}.json`;link.click();setTimeout(()=>URL.revokeObjectURL(url),10000);
   });
-  byId('backup-input').addEventListener('input',()=>{candidate=null;backupFileText=null;byId('backup-file').value='';byId('backup-result').textContent='';});
+  byId('backup-input').addEventListener('input',()=>{backupReadVersion++;candidateMeta=null;candidate=null;backupFileText=null;byId('backup-file').value='';byId('backup-result').textContent='';});
   byId('backup-file').addEventListener('change',async()=>{
-    candidate=null;backupFileText=null;byId('backup-input').value='';
+    const readVersion=++backupReadVersion;
+    candidateMeta=null;candidate=null;backupFileText=null;byId('backup-input').value='';
     const file=byId('backup-file').files[0];
     if(!file){byId('backup-result').textContent='';return;}
     if(file.size>E.MAX_BACKUP_BYTES){byId('backup-result').innerHTML='<p class="la-alert">Tệp quá lớn để mở trong trang này. Bài hiện tại chưa bị thay đổi.</p>';return;}
     byId('backup-result').textContent='Đang đọc tệp bản sao…';
     try{
       const raw=await file.text();
-      if(byId('backup-file').files[0]!==file)return;
+      if(readVersion!==backupReadVersion||byId('backup-file').files[0]!==file)return;
       backupFileText=raw;
       byId('backup-result').textContent='Đã đọc tệp. Bấm “Kiểm tra bản sao” để xem nội dung trước khi mở.';
     }catch(error){byId('backup-result').innerHTML='<p class="la-alert">Chưa đọc được tệp. Hãy chọn lại tệp bản sao. Bài hiện tại chưa bị thay đổi.</p>';}
@@ -280,13 +290,15 @@
     try{const raw=memoryRecovery?JSON.stringify(memoryRecovery):localStorage.getItem(`${E.KEY}_recovery`);if(!raw)throw new Error('missing');backupFileText=raw;byId('backup-file').value='';byId('backup-input').value='';byId('inspect-backup').click();}catch(error){byId('backup-result').innerHTML='<p class="la-alert">Chưa đọc được bản khôi phục. Bài hiện tại chưa bị thay đổi.</p>';}
   });
   byId('inspect-backup').addEventListener('click',()=>{
-    candidate=null;
+    flushSave();candidateMeta=null;candidate=null;
     try{
       const raw=backupFileText===null?byId('backup-input').value:backupFileText;
       const input=JSON.parse(raw);
       const legacy=Number(input.schema||input.version)===2;
       const step1=Number(input.schema)===3&&!input.app;
       candidate=E.importBackup(input,bank);
+      let expectedRaw;try{expectedRaw=localStorage.getItem(E.KEY);}catch(_e){}
+      candidateMeta={state:JSON.stringify(state),expectedRaw};
       const totals=E.totals(candidate,lessonId,lesson);
       const course=E.courseTotals(candidate,bank);
       const large=new Blob([raw]).size>E.MAX_BACKUP_WARNING_BYTES;
@@ -295,6 +307,13 @@
   });
   byId('backup-result').addEventListener('click',event=>{
     if(event.target.id!=='apply-backup'||!candidate)return;
+    let currentRaw;try{currentRaw=localStorage.getItem(E.KEY);}catch(_e){}
+    if(!candidateMeta || candidateMeta.state!==JSON.stringify(state) || candidateMeta.expectedRaw!==currentRaw){
+      candidate=null;candidateMeta=null;
+      byId('backup-result').textContent='Bài làm đã thay đổi từ lúc kiểm tra. Hãy kiểm tra lại bản sao trước khi mở; bài đang làm vẫn được giữ.';
+      return;
+    }
+    candidateMeta=null;backupReadVersion++;
     let recoveryInMemory=false;
     try{localStorage.setItem(`${E.KEY}_recovery`,JSON.stringify(state));memoryRecovery=null;}catch(error){memoryRecovery=state;recoveryInMemory=true;}
     state=candidate;candidate=null;backupFileText=null;storageAvailable=true;storageConflict=false;dirty=true;
@@ -313,6 +332,10 @@
     try{if(localStorage.getItem(E.KEY)!==lastStoredRaw)showStorageConflict();}catch(error){showStorageConflict();}
   });
   window.addEventListener('pagehide',flushSave);
+  window.addEventListener('beforeunload',event=>{
+    flushSave();
+    if((dirty&&(!storageAvailable||storageConflict||writeFailed))||memoryRecovery){event.preventDefault();event.returnValue='';}
+  });
   window.addEventListener('hashchange',()=>{
     const next = route();
     if(Number(next.get('lesson'))===lessonId && next.get('part')===kind)return;

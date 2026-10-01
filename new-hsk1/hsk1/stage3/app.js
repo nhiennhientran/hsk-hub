@@ -53,6 +53,24 @@
     storageAvailable = false;
     storageNotice('Trình duyệt chưa cho phép lưu tiến độ. Bạn vẫn có thể luyện và tải bản sao trước khi đóng trang.');
   }
+  let entryChanged = false;
+  const entry = window.HSKStep3Entry;
+  if (entry && typeof entry === 'object') {
+    const patch = {};
+    if (['listening', 'vocabulary'].includes(entry.module)) patch.module = entry.module;
+    if (Array.isArray(entry.lessons) && entry.lessons.every(n => Number.isInteger(n) && n >= 1 && n <= 15)) patch.lessons = entry.lessons;
+    if (entry.filter === 'due') patch.vocabularyFilter = 'due';
+    // Keep the saved question/card queues, answers, scores and schedules intact.
+    entryChanged = Object.keys(patch).some(k => !same(state.preferences[k], patch[k]));
+    if (entryChanged) E.setPreferences(state, patch, Date.now());
+  }
+  function emitState() {
+    window.dispatchEvent(new CustomEvent('hsk-learning-state', {detail: {
+      app: E.APP, preferences: {...state.preferences, lessons: state.preferences.lessons.slice()},
+      listening: E.listeningSummary(state, C).overall,
+      stored: storageAvailable && !storageBlocked
+    }}));
+  }
   function serialize() { return JSON.stringify(E.exportBackup(state, C)); }
   function save() {
     if (storageBlocked) {
@@ -96,7 +114,7 @@
   }
   function act(action, focusId, renderPage = true) {
     try {
-      action(); mutationVersion++; save();
+      action(); mutationVersion++; save(); emitState();
       if (renderPage) render();
       if (focusId) {
         const target = $(focusId);
@@ -240,6 +258,7 @@
   function render() {
     renderPicker();
     if (state.preferences.module === 'listening') renderListening(); else renderVocabulary();
+    emitState();
   }
   function preference(patch) {
     act(() => {
@@ -362,6 +381,7 @@
   window.addEventListener('beforeunload', event => {
     if (((!storageAvailable || storageBlocked) && state.updatedAt !== null) || previousInMemoryOnly) { event.preventDefault(); event.returnValue = ''; }
   });
+  if (entryChanged && !storageBlocked && storageAvailable) save();
   render();
   if (!storageMessage) $('save-status').textContent = lastRaw ? 'Đã mở tiến độ đã lưu · âm thanh đang dừng.' : 'Tiến độ sẽ được lưu sau thao tác đầu tiên.';
 })();

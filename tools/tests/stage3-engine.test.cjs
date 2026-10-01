@@ -363,13 +363,14 @@ test('a complete 75-item listening record and 344 reviewed senses stay well belo
   assert.equal(Object.values(restored.cards.schedule).every(entry => entry.level === 2), true);
 });
 
-const dataDirectory = path.join(__dirname, '../../new-hsk1/hsk1/stage3/data');
-const actualFiles = ['01-05', '06-10', '11-15'].flatMap(range => [`listening-${range}.json`, `vocabulary-${range}.json`]);
-test('the actual 75 listening questions and every authored sense run through submit, reveal, rate and backup',
-  {skip: !actualFiles.every(file => fs.existsSync(path.join(dataDirectory, file))) && 'Third-step content is still being authored.'}, () => {
-    const actual = {listening: [], vocabulary: []};
-    for (const file of actualFiles) actual[file.startsWith('listening') ? 'listening' : 'vocabulary'].push(
-      ...JSON.parse(fs.readFileSync(path.join(dataDirectory, file), 'utf8')));
+test('the shipped catalog: all 75 listening questions and 344 vocabulary records run through the real engine', () => {
+    const shipped = path.join(__dirname, '../../new-hsk1/hsk1/stage3/catalog.js');
+    assert.ok(fs.existsSync(shipped), 'Mandatory shipped catalog is missing');
+    const sandbox = {window: {}};
+    vm.runInNewContext(fs.readFileSync(shipped, 'utf8'), sandbox, {filename: shipped});
+    const actual = JSON.parse(JSON.stringify(sandbox.window.HSKStep3Catalog));
+    assert.equal(actual.vocabulary.length, 344);
+    assert.equal(new Set(actual.vocabulary.map(v => v.zh)).size, 319);
     assert.equal(actual.listening.length, 75);
     for (const lesson of allLessons) assert.equal(actual.listening.filter(q => q.lesson === lesson).length, 5);
     const state = E.blank(); startListening(state, {lessons: allLessons}, 1000, actual);

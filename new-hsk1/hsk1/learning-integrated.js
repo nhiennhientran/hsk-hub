@@ -8,6 +8,7 @@ const params=new URL(location.href).searchParams;
 const allowed=new Set(['homework','listening','vocab','review','progress']);
 let mode=allowed.has(params.get('mode'))?params.get('mode'):'homework';
 let lesson=Number(params.get('lesson'));if(!Number.isInteger(lesson)||lesson<1||lesson>15)lesson=1;
+const directed=Number.isInteger(Number(params.get('lesson')))&&Number(params.get('lesson'))>=1&&Number(params.get('lesson'))<=15&&params.get('intent')!=='resume';
 const requestedStage=['choice','sort','translation'].includes(params.get('stage'))?params.get('stage'):null;
 const NAV_KEY='ran_hsk1_integrated_nav_v1';
 const LEGACY_KEY='ran_hsk1_learning_v2';
@@ -34,9 +35,10 @@ function activeLesson(){
   const checks=[...document.querySelectorAll('#lesson-checks input:checked')].map(x=>Number(x.dataset.lesson)).filter(Number.isFinite);
   return checks.length===1?checks[0]:lesson;
 }
+function readNav(){try{return JSON.parse(safeRead(NAV_KEY)||'{}')||{};}catch(_e){return {};}}
 function routeHref(nextMode,l){
   const n=Number.isInteger(l)&&l>=1&&l<=15?l:lesson;
-  return 'learning.html?mode='+encodeURIComponent(nextMode)+'&lesson='+n;
+  return 'learning.html?mode='+encodeURIComponent(nextMode)+'&lesson='+n+'&intent=resume';
 }
 function updateNav(l){
   const n=Number.isInteger(l)&&l>=1&&l<=15?l:lesson;
@@ -48,8 +50,14 @@ function updateNav(l){
 }
 function saveLast(l,extra){
   const n=Number.isInteger(l)&&l>=1&&l<=15?l:lesson;
-  const data={mode,lesson:n,href:location.pathname+location.search+(mode==='homework'?location.hash:''),
-    at:Date.now(),extra:extra||''};
+  if(mode==='progress'){updateNav(n);updateMini();return;}
+  const previous=readNav();
+  const data={...previous,mode,lesson:n,href:routeHref(mode,n)+(mode==='homework'?location.hash:''),at:Date.now(),extra:extra||''};
+  if(mode==='homework'){
+    const part=new URLSearchParams(location.hash.slice(1)).get('part')||'choice';
+    const parts=previous.homeworkParts&&typeof previous.homeworkParts==='object'?previous.homeworkParts:{};
+    data.homeworkParts={...parts,[n]:part};data.homeworkLesson=n;
+  }
   safeWrite(NAV_KEY,JSON.stringify(data));updateNav(n);updateMini();
 }
 function updateMini(){
@@ -58,10 +66,10 @@ function updateMini(){
   try{s3=JSON.parse(safeRead('ran_hsk1_stage3_v1')||'null');}catch(_e){}
   for(let i=1;i<=15;i++){
     const row=s2&&s2.lessons&&s2.lessons[i]||{};
-    let hw=0;for(const k of ['choice','sort','translation']){const g=row[k];if(g&&g.first&&g.completed){submitted+=Number(g.first.total)||5;hw++;}}
+    let hw=0;for(const k of ['choice','sort','translation']){const g=row[k];if(g&&g.first&&g.completed){submitted+=5;hw++;}}
     const prefix='l'+String(i).padStart(2,'0')+'-listen-';
     const records=s3&&s3.listening&&s3.listening.records||{};
-    const heard=Object.keys(records).filter(id=>id.startsWith(prefix)&&records[id]&&records[id].first).length;
+    const heard=Object.keys(records).filter(id=>/^0[1-5]$/.test(id.slice(prefix.length))&&id.startsWith(prefix)&&records[id]&&records[id].first).length;
     submitted+=heard;if(hw===3&&heard===5)done++;
   }
   mini.textContent=submitted+'/300 mục đã nộp · '+done+'/15 bài đủ bài tập + nghe';
@@ -101,79 +109,58 @@ function migrateStage2(){
  if(!E||!bank)return;
  try{
    if(localStorage.getItem(E.KEY))return;
-   const legacy=localStorage.getItem(E.LEGACY_KEY);
-   if(legacy){
-     const migrated=E.migrateLegacy(JSON.parse(legacy),bank,Date.now());
-     localStorage.setItem(E.KEY,JSON.stringify(migrated));
-     showNotice('Đã tạo bản tiến độ mới từ các phần cũ có thể xác minh. Bài dịch chọn đáp án cũ chỉ được lưu trong phần lưu trữ, không được tính là bài dịch tự viết đã hoàn thành.',true);
-     return;
-   }
    const step1=localStorage.getItem(E.STEP1_KEY);
+   const legacy=localStorage.getItem(E.LEGACY_KEY);
    if(step1){
      const migrated=E.migrateStep1(JSON.parse(step1),bank,Date.now());
+     if(localStorage.getItem(E.KEY))return;
      localStorage.setItem(E.KEY,JSON.stringify(migrated));
-     showNotice('Đã mở lại bản mẫu Bài 3 đã lưu ở bước trước. Các bài khác vẫn bắt đầu độc lập.',false);
+     showNotice('Đã mở lại bài tập Bài 3 đã lưu. Các bản học cũ vẫn được giữ riêng.',false);
+   }else if(legacy){
+     const migrated=E.migrateLegacy(JSON.parse(legacy),bank,Date.now());
+     if(localStorage.getItem(E.KEY))return;
+     localStorage.setItem(E.KEY,JSON.stringify(migrated));
+     showNotice('Đã tạo bản tiến độ mới từ các phần cũ có thể xác minh. Bài dịch chọn đáp án cũ chỉ được lưu trong phần lưu trữ, không được tính là bài dịch tự viết đã hoàn thành.',true);
    }
  }catch(error){
    showNotice('Không tự chuyển bản cũ vì dữ liệu không khớp phiên bản. Bản cũ vẫn được giữ nguyên và chưa bị ghi đè.',true);
  }
 }
 function prepareStage3(){
- const E=window.HSKStep3Engine,C=window.HSKStep3Catalog;if(!E||!C)return false;
- try{
-   const raw=localStorage.getItem(E.KEY);let state=raw?E.importBackup(JSON.parse(raw),C):E.blank();
-   const patch={module:mode==='listening'?'listening':'vocabulary',lessons:[lesson]};
-   if(mode==='review')patch.vocabularyFilter='due';
-   E.setPreferences(state,patch,Date.now());
-   localStorage.setItem(E.KEY,JSON.stringify(E.exportBackup(state,C)));
-   return true;
- }catch(error){
-   showNotice('Chưa tự đặt được bài nghe/ôn vì bản lưu hiện tại cần được kiểm tra. Dữ liệu gốc vẫn được giữ; bạn vẫn có thể dùng công cụ sao lưu trong mô-đun.',true);
-   return false;
- }
+  const entry={module:mode==='listening'?'listening':'vocabulary'};
+  if(directed)entry.lessons=[lesson];
+  if(mode==='review')entry.filter='due';
+  window.HSKStep3Entry=entry;
 }
 async function runHomework(){
- document.body.classList.add('stage2-app');addStyle('stage2/styles.css?v=20261001-41','stage2Style');
+ document.body.classList.add('stage2-app');addStyle('stage2/styles.css?v=20261001-i1','stage2Style');
  root.innerHTML=stage2Markup();
  if(!/^#lesson=/.test(location.hash)){
-   const part=requestedStage||'choice';
-   history.replaceState(null,'',location.pathname+location.search+'#lesson='+lesson+'&part='+part);
+   const remembered=readNav().homeworkParts?.[lesson];
+   const part=requestedStage||(['choice','sort','translation'].includes(remembered)?remembered:'');
+   history.replaceState(null,'',location.pathname+location.search+'#lesson='+lesson+(part?'&part='+part:''));
  }
- await loadScript('stage2/bank.js?v=20261001-41');await loadScript('stage2/engine.js?v=20261001-41');migrateStage2();
- await loadScript('stage2/app.js?v=20261001-41');
- const sync=()=>{const n=activeLesson();lesson=n;saveLast(n,'homework');};
- window.addEventListener('hashchange',sync);
- document.addEventListener('click',e=>{if(e.target.closest('[data-lesson],[data-stage]'))setTimeout(sync,0);});
- const observer=new MutationObserver(()=>{const current=document.querySelector('#lesson-list [aria-current="page"]');if(current){const n=Number(current.dataset.lesson);if(Number.isInteger(n)&&n!==lesson){lesson=n;sync();}}});
- const list=document.getElementById('lesson-list');if(list)observer.observe(list,{childList:true,subtree:true,attributes:true});
- sync();
+ await loadScript('stage2/bank.js?v=20261001-i1');await loadScript('stage2/engine.js?v=20261001-i1');migrateStage2();
+ await loadScript('stage2/app.js?v=20261001-i1');
+ saveLast(activeLesson(),'homework');
 }
 async function runStage3(){
- document.body.classList.add('stage3-app');addStyle('stage3/styles.css?v=20261001-41','stage3Style');
+ document.body.classList.add('stage3-app');addStyle('stage3/styles.css?v=20261001-i1','stage3Style');
  root.innerHTML=stage3Markup();
- await loadScript('stage3/catalog.js?v=20261001-41');await loadScript('stage3/media-index.js?v=20261001-41');await loadScript('stage3/engine.js?v=20261001-41');
- const prepared=prepareStage3();
- await loadScript('stage3/player.js?v=20261001-41');await loadScript('stage3/app.js?v=20261001-41');
- if(!prepared){
-   if(mode!=='listening')document.getElementById('module-vocabulary')?.click();
-   if(mode==='review'){
-     const filter=document.getElementById('vocab-filter');if(filter){filter.value='due';filter.dispatchEvent(new Event('change',{bubbles:true}));}
-   }
- }
- const sync=()=>{const n=activeLesson();lesson=n;saveLast(n,mode);};
- document.getElementById('lesson-checks')?.addEventListener('change',()=>setTimeout(sync,0));
- document.getElementById('module-listening')?.addEventListener('click',()=>setTimeout(sync,0));
- document.getElementById('module-vocabulary')?.addEventListener('click',()=>setTimeout(sync,0));
- sync();
+ await loadScript('stage3/catalog.js?v=20261001-i1');await loadScript('stage3/media-index.js?v=20261001-i1');await loadScript('stage3/engine.js?v=20261001-i1');
+ prepareStage3();
+ await loadScript('stage3/player.js?v=20261001-i1');await loadScript('stage3/app.js?v=20261001-i1');
+ saveLast(lesson,mode);
 }
 async function runProgress(){
- addStyle('stage2/styles.css?v=20261001-41','stage2Style');addStyle('stage3/styles.css?v=20261001-41','stage3Style');
- await loadScript('stage2/bank.js?v=20261001-41');await loadScript('stage2/engine.js?v=20261001-41');migrateStage2();
- await loadScript('stage3/catalog.js?v=20261001-41');await loadScript('stage3/engine.js?v=20261001-41');
+ addStyle('stage2/styles.css?v=20261001-i1','stage2Style');addStyle('stage3/styles.css?v=20261001-i1','stage3Style');
+ await loadScript('stage2/bank.js?v=20261001-i1');await loadScript('stage2/engine.js?v=20261001-i1');migrateStage2();
+ await loadScript('stage3/catalog.js?v=20261001-i1');await loadScript('stage3/engine.js?v=20261001-i1');
  const E2=window.HSKStep2Engine,B=window.HSKStep2Bank,E3=window.HSKStep3Engine,C=window.HSKStep3Catalog;
- let s2=E2.blank(),s3=E3.blank();
- try{const raw=localStorage.getItem(E2.KEY);if(raw)s2=E2.validateImport(JSON.parse(raw),B);}catch(_e){}
- try{const raw=localStorage.getItem(E3.KEY);if(raw)s3=E3.importBackup(JSON.parse(raw),C);}catch(_e){}
+ let s2=E2.blank(),s3=E3.blank(),invalid=[];
+ try{const raw=localStorage.getItem(E2.KEY);if(raw)s2=E2.validateImport(JSON.parse(raw),B);}catch(_e){invalid.push('bài tập');}
+ try{const raw=localStorage.getItem(E3.KEY);if(raw)s3=E3.importBackup(JSON.parse(raw),C);}catch(_e){invalid.push('nghe / ôn từ');}
+ if(invalid.length)showNotice('Chưa đọc được bản lưu '+invalid.join(', ')+'. Các số của phần đó chưa được xác nhận; dữ liệu gốc vẫn được giữ. Hãy mở công cụ bản sao trong mô-đun tương ứng.',true);
  const all2=E2.courseTotals(s2,B),all3=E3.listeningSummary(s3,C).overall,cards=E3.cardSummary(s3,C,Date.now());
  const rows=[];
  for(let i=1;i<=15;i++){
@@ -185,12 +172,28 @@ async function runProgress(){
  }
  const legacy=!!safeRead(LEGACY_KEY);
  root.innerHTML='<main class="integrated-progress"><section class="la-hero"><div><p class="la-eyebrow">Tiến độ · 记录</p><h1>Nhìn riêng từng loại kết quả</h1><p>Bài tập chấm tự động, bài dịch gửi cô, nghe và tự đánh giá từ vựng không được trộn thành một điểm.</p></div><div class="la-hero-number">'+all2.homework.completedLessons+'<small>/15 bài tập</small></div></section>'+
- '<div class="integrated-progress-grid"><div class="integrated-progress-card"><strong>'+all2.homework.submitted+'/225</strong><span>Câu bài tập đã nộp</span></div><div class="integrated-progress-card"><strong>'+all2.automatic.firstCorrect+'/'+all2.automatic.submitted+'</strong><span>Đúng lần đầu trong phần tự chấm</span></div><div class="integrated-progress-card"><strong>'+all3.answered+'/75</strong><span>Câu nghe đã nộp</span></div><div class="integrated-progress-card"><strong>'+cards.rated+'</strong><span>Thẻ nghĩa đã tự đánh giá</span></div></div>'+
+ '<div class="integrated-progress-grid"><div class="integrated-progress-card"><strong>'+all2.homework.submitted+'/225</strong><span>Câu bài tập đã nộp</span></div><div class="integrated-progress-card"><strong>'+all2.automatic.firstCorrect+'/'+all2.automatic.submitted+'</strong><span>Đúng lần đầu trong phần chấm tự động</span></div><div class="integrated-progress-card"><strong>'+all3.answered+'/75</strong><span>Câu nghe đã nộp</span></div><div class="integrated-progress-card"><strong>'+cards.rated+'</strong><span>Thẻ nghĩa đã tự đánh giá</span></div></div>'+
  (legacy?'<section class="la-panel integrated-legacy"><b>Bản học cũ vẫn được giữ nguyên.</b><p class="integrated-progress-note">Khi tạo tiến độ bài tập mới, chỉ các nhóm khách quan có thể xác minh mới được chuyển. Bài dịch bốn lựa chọn cũ không được tính thành bài dịch tự viết. Tiến độ nghe cũ không tự gán vào bộ nghe mới vì câu hỏi và âm đoạn đã được hiệu chỉnh.</p></section>':'')+
  '<div class="integrated-progress-actions"><a class="la-button" href="'+routeHref('homework',lesson)+'">Tiếp tục bài tập</a><a class="la-ghost" href="'+routeHref('listening',lesson)+'">Luyện nghe</a><a class="la-ghost" href="'+routeHref('vocab',lesson)+'">Ôn từ</a></div>'+
- '<div class="integrated-progress-table-wrap"><table class="integrated-progress-table"><thead><tr><th>Bài</th><th>Đã nộp</th><th>Tự chấm lần đầu</th><th>Dịch gửi cô</th><th>Nghe</th><th>Điểm nghe</th></tr></thead><tbody>'+rows.join('')+'</tbody></table></div><p class="integrated-progress-note">“Thẻ đã tự đánh giá” là tự nhận xét mức nhớ, không phải điểm. Điểm nghe và điểm bài tập được lưu độc lập.</p></main>';
+ '<div class="integrated-progress-table-wrap"><table class="integrated-progress-table"><thead><tr><th>Bài</th><th>Đã nộp</th><th>Chấm tự động: lần đầu</th><th>Dịch gửi cô</th><th>Nghe</th><th>Điểm nghe</th></tr></thead><tbody>'+rows.join('')+'</tbody></table></div><p class="integrated-progress-note">“Thẻ đã tự đánh giá” là tự nhận xét mức nhớ, không phải điểm. Điểm nghe và điểm bài tập được lưu độc lập.</p></main>';
  saveLast(lesson,'progress');
 }
+window.addEventListener('hsk-learning-state',event=>{
+ const d=event.detail||{};
+ if(d.app==='hsk1-stage2'){
+   lesson=d.lesson;saveLast(lesson,d.part);
+ }else if(d.app==='hsk1-stage3'){
+   const p=d.preferences;
+   if(!p)return;
+   mode=p.module==='listening'?'listening':(p.vocabularyFilter==='due'?'review':'vocab');
+   // Retain the textbook/homework lesson when the selected review range is mixed.
+   if(p.lessons.length===1)lesson=p.lessons[0];
+   history.replaceState(null,'',routeHref(mode,lesson));
+   saveLast(lesson,mode);
+ }
+});
+window.addEventListener('pageshow',event=>{if(event.persisted)location.reload();});
+window.addEventListener('storage',event=>{if(event.key!=='ran_hsk1_integrated_nav_v1')updateMini();});
 async function boot(){
  updateNav(lesson);updateMini();
  try{

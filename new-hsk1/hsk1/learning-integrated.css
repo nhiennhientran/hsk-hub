@@ -8,3 +8,7 @@
 .integrated-module .s1-pilot,.integrated-module .s3-badge{display:none}.integrated-footer{margin-top:30px}
 @media(max-width:800px){.integrated-progress-grid{grid-template-columns:1fr 1fr}.integrated-header-links{justify-content:flex-start}.integrated-header{align-items:flex-start;flex-direction:column}}
 @media(max-width:520px){.integrated-progress-grid{grid-template-columns:1fr}.integrated-mini-progress{white-space:normal}.integrated-nav{position:static}.integrated-progress-table th,.integrated-progress-table td{padding:10px}}
+
+.is-receipt .integrated-header,.is-receipt .integrated-nav,.is-receipt .integrated-footer,.is-receipt #integratedNotice{display:none!important}
+.integrated-root, .integrated-module {min-width:0}
+@media print{.integrated-header,.integrated-nav,.integrated-footer,#integratedNotice{display:none!important}}
