@@ -23,6 +23,9 @@ on:
       - 'tools/tests/stage4-1-browser.cjs'
       - '.github/workflows/hsk1-stage4-1.yml'
   workflow_dispatch:
+concurrency:
+  group: hsk1-stage4-1-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
