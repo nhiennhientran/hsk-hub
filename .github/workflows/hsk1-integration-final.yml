@@ -1,0 +1,77 @@
+name: HSK1 full integration acceptance
+on:
+  push:
+    branches: ['work/hsk1-integration-step2-20261001']
+  pull_request:
+    branches: ['gh-pages']
+    paths: ['new-hsk1/hsk1/**','tools/**','.github/workflows/hsk1-integration-final.yml']
+permissions:
+  contents: read
+concurrency:
+  group: hsk1-final-${{ github.event_name }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+jobs:
+  acceptance:
+    if: github.ref == 'refs/heads/work/hsk1-integration-step2-20261001' || github.head_ref == 'work/hsk1-integration-step2-20261001'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Freeze and verify exact candidate and unmodified question/audio corpus
+        shell: bash
+        env:
+          HSK_BROWSER: ${{ matrix.browser }}
+        run: |
+          set -euo pipefail
+          mkdir -p tools/tests/results
+          git rev-parse HEAD > tools/tests/results/integration-final-${{ matrix.browser }}-commit.txt
+          git fetch --no-tags --depth=1 origin 8ffecf1031abb52b863c6a05b38f24a8ae5c2af6 069f9d956c9a600a91e6b4ce82241ceccc184dce
+          git diff --exit-code 8ffecf1031abb52b863c6a05b38f24a8ae5c2af6 -- new-hsk1/hsk1/stage2/bank.js new-hsk1/hsk1/stage2/engine.js new-hsk1/hsk1/stage3/catalog.js new-hsk1/hsk1/stage3/engine.js new-hsk1/hsk1/stage3/media-index.js new-hsk1/hsk1/stage3/media new-hsk1/hsk1/audio
+          python - <<'PY'
+          import subprocess,hashlib,json,os
+          paths=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          manifest={p:hashlib.sha256(open(p,'rb').read()).hexdigest() for p in paths if p}
+          open('tools/tests/results/integration-final-'+os.environ['HSK_BROWSER']+'-source-sha256.json','w').write(json.dumps(manifest,indent=2))
+          changed=subprocess.check_output(['git','diff','--name-only','069f9d956c9a600a91e6b4ce82241ceccc184dce','HEAD']).decode().splitlines()
+          assert all(p.startswith(('new-hsk1/hsk1/','tools/','.github/workflows/')) for p in changed),changed
+          PY
+          git archive HEAD -o tools/tests/results/integration-final-${{ matrix.browser }}-tested-source.zip
+      - name: Run all mandatory engine and real-corpus tests
+        run: |
+          set -euo pipefail
+          node --test tools/tests/stage2-engine.test.cjs tools/tests/stage3-engine.test.cjs tools/tests/integration-final-data.test.cjs | tee tools/tests/results/integration-final-${{ matrix.browser }}-engine.tap
+          python tools/build-integration-review.py
+      - name: Install pinned native browser
+        run: |
+          npm install --no-save --package-lock=false playwright@1.62.1
+          npx playwright install --with-deps ${{ matrix.browser }}
+          sudo apt-get install -y fonts-noto-cjk
+      - name: Exercise all 300 tasks, 344 senses, actual recordings and recovery paths
+        env:
+          HSK_BROWSER: ${{ matrix.browser }}
+        run: node tools/tests/integration-final-browser.cjs
+      - name: Test standalone human-review file without inventing human approvals
+        env:
+          HSK_BROWSER: ${{ matrix.browser }}
+        run: node tools/review-file-check.cjs
+      - name: Preserve exact source and all successful or failed execution evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk1-integration-final-${{ matrix.browser }}
+          path: |
+            tools/tests/results/integration-final-*
+            tools/tests/results/stage4-1-${{ matrix.browser }}-*
+            dist/integration-step1/*
+          retention-days: 30
+          if-no-files-found: error
