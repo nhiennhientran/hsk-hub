@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex, nofollow">
+  <title>15 bài HSK 1 · Bài tập | Học cùng cô Nhiên</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../learning.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="learning-app stage2-app">
+  <a class="la-skip" href="#exercise">Đến bài tập</a>
+  <header class="la-header">
+    <div class="la-brand"><span class="la-seal" lang="zh-Hans">然</span><span>Học cùng cô Nhiên<small>Tiếng Trung từng bước</small></span></div>
+    <span class="s1-pilot">HSK 1 · 15 bài</span>
+  </header>
+  <main class="la-main" id="main">
+    <section class="la-panel s2-course-picker" aria-labelledby="course-title">
+      <div class="s2-course-head"><h2 id="course-title">Chọn bài để luyện</h2><p id="course-overview" aria-live="polite"></p></div>
+      <nav id="lesson-list" class="s2-lesson-list" aria-label="Chọn một trong 15 bài"></nav>
+      <p class="s2-course-help">Bạn có thể chọn bất kỳ bài nào. Trong mỗi bài, nộp đủ phần trước để mở phần tiếp theo.</p>
+    </section>
+    <section class="la-hero" aria-labelledby="page-title">
+      <div><p class="la-eyebrow">HSK 1 · Bài tập sau giờ học</p><h1 id="page-title" tabindex="-1"></h1><p id="lesson-goal"></p><p>Hoàn thành 5 câu rồi nộp bài để mở phần tiếp theo. Bạn có thể làm lại để luyện thêm.</p></div>
+      <div class="s1-hero-count"><strong>15</strong><span>câu trong bài</span><small>10 câu chấm tự động · 5 câu gửi cô</small></div>
+    </section>
+    <div id="storage-notice" class="la-alert" role="status" hidden></div>
+    <div id="storage-sync" class="la-panel" hidden><p class="la-small">Bài đang làm trong tab này vẫn còn. Tải bản sao để giữ riêng, hoặc kiểm tra bản mới được lưu từ tab khác.</p><button type="button" class="la-ghost" id="export-conflict">Tải bản bài đang làm</button> <button type="button" class="la-ghost" id="inspect-latest">Kiểm tra bản ở tab khác</button></div>
+    <section class="s1-overview" id="overview" aria-label="Tiến độ bài đang chọn"></section>
+    <nav class="la-steps" id="stages" aria-label="Các phần bài tập"></nav>
+    <section id="exercise" tabindex="-1" aria-label="Bài tập"></section>
+    <section class="s1-tools la-panel" id="backup-panel">
+      <details id="backup-details"><summary>Lưu bản sao / mở lại bài đã lưu</summary>
+        <p class="la-muted">Bài được lưu trên trình duyệt này. Hãy tải bản sao nếu bạn muốn chuyển sang thiết bị khác hoặc giữ bài trước khi đổi trình duyệt.</p>
+        <button type="button" class="la-ghost" id="export-backup">Tải bản sao bài làm</button>
+        <button type="button" class="la-ghost" id="restore-previous" hidden>Khôi phục bản trước khi mở bản sao</button>
+        <label class="s1-label" for="backup-file">Mở tệp bản sao (.json)</label>
+        <input type="file" id="backup-file" accept=".json,application/json" aria-describedby="backup-help">
+        <p class="la-small" id="backup-help">Chọn tệp hoặc dán nội dung bên dưới, rồi kiểm tra trước khi mở. Có thể nhập bản Bài 3 đã lưu ở bước trước.</p>
+        <label class="s1-label" for="backup-input">Dán nội dung tệp bản sao (JSON)</label>
+        <textarea id="backup-input" rows="4" spellcheck="false" placeholder="Mở tệp .json, sao chép nội dung và dán vào đây."></textarea>
+        <button type="button" class="la-ghost" id="inspect-backup">Kiểm tra bản sao</button>
+        <div id="backup-result" aria-live="polite"></div>
+      </details>
+    </section>
+  </main>
+  <section id="receipt" class="s1-receipt" hidden aria-label="Bài dịch để chụp gửi cô" tabindex="-1"></section>
+  <footer class="la-footer"><span id="lesson-scope"></span><span id="lesson-source"></span></footer>
+  <div id="save-status" class="s1-save" role="status" aria-live="polite"></div>
+  <noscript><p class="la-alert">Vui lòng bật JavaScript để làm và lưu bài tập.</p></noscript>
+  <script src="bank.js"></script>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

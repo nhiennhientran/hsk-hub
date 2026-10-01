@@ -1,0 +1,2305 @@
+[
+  {
+    "id": 1,
+    "lesson": 1,
+    "title": "AI小语，你好！",
+    "title_vi": "AI Tiểu Ngữ, xin chào!",
+    "goal_vi": "Chọn lời chào, lời cảm ơn và lời tạm biệt phù hợp; xưng hô kính trọng và chào một nhóm người.",
+    "goal_zh": "在见面、感谢、告别情境中选用恰当表达，区分敬称与复数称呼。",
+    "scope_note_vi": "Bài tập sử dụng lời chào, lời cảm ơn và lời tạm biệt trong Bài 1.",
+    "source": {
+      "label": "Giáo trình, tr. 1, 2, 3, 4",
+      "printPages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "pdfPages": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "book": "新HSK教程1"
+    },
+    "choice": [
+      {
+        "id": "l01-s2-choice-01",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "见面问候与敬称",
+        "source": {
+          "label": "Giáo trình, tr. 1, 2, 3",
+          "printPages": [
+            1,
+            2,
+            3
+          ],
+          "pdfPages": [
+            16,
+            17,
+            18
+          ]
+        },
+        "prompt": "Bạn vừa gặp cô Vương. Chọn lời chào có dùng cách xưng hô kính trọng.",
+        "stem": "",
+        "options": [
+          "王老师，再见！",
+          "王老师，您好！",
+          "同学们，你们好！",
+          "谢谢王老师！"
+        ],
+        "answer": 1,
+        "explanation": "您 dùng để xưng hô kính trọng. 王老师，您好！ là lời chào cô Vương khi gặp; 再见 dùng lúc tạm biệt.",
+        "optionFeedback": [
+          "Đây là lời tạm biệt cô Vương, không phải lời chào khi vừa gặp.",
+          "您好 dùng 您 để thể hiện sự kính trọng với cô Vương.",
+          "Câu này chào một nhóm bạn học, không chào cô Vương.",
+          "Đây là lời cảm ơn cô Vương, không phải lời chào khi gặp."
+        ]
+      },
+      {
+        "id": "l01-s2-choice-02",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "复数你们",
+        "source": {
+          "label": "Giáo trình, tr. 2",
+          "printPages": [
+            2
+          ],
+          "pdfPages": [
+            17
+          ]
+        },
+        "prompt": "Từ nào trong lời chào dưới đây cho biết người được chào gồm nhiều người?",
+        "stem": "你们好！",
+        "options": [
+          "您",
+          "老师",
+          "你们",
+          "你好"
+        ],
+        "answer": 2,
+        "explanation": "你们 nghĩa là “các bạn”, dùng khi nói với nhiều người. Trong 你们好, phần 你们 cho biết người được chào là một nhóm.",
+        "optionFeedback": [
+          "您 là cách xưng hô kính trọng với một người, không chỉ một nhóm.",
+          "老师 nghĩa là giáo viên; riêng từ này không cho biết số người.",
+          "你们 chỉ những người đang được nói chuyện cùng: các bạn.",
+          "你好 là lời chào một người, khác 你们好."
+        ]
+      },
+      {
+        "id": "l01-s2-choice-03",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "告别语的交际功能",
+        "source": {
+          "label": "Giáo trình, tr. 3",
+          "printPages": [
+            3
+          ],
+          "pdfPages": [
+            18
+          ]
+        },
+        "prompt": "Chọn tình huống phù hợp với câu sau.",
+        "stem": "同学们，再见！",
+        "options": [
+          "Cô giáo chào tạm biệt cả lớp.",
+          "Học sinh cảm ơn cô giáo.",
+          "Một học sinh chào cô khi vừa gặp.",
+          "Cô giáo đáp lại lời cảm ơn."
+        ],
+        "answer": 0,
+        "explanation": "同学们 gọi các bạn trong lớp; 再见 là lời tạm biệt. Câu này phù hợp khi cô giáo chào lớp lúc ra về.",
+        "optionFeedback": [
+          "Đúng tình huống: gọi cả lớp bằng 同学们 và chào tạm biệt bằng 再见.",
+          "Lời cảm ơn cần 谢谢; câu đã cho dùng 再见.",
+          "Câu đã cho gọi cả lớp và chào tạm biệt, không phải chào cô khi gặp.",
+          "Đáp lại lời cảm ơn dùng 不客气, không dùng 再见 với nghĩa đó."
+        ]
+      },
+      {
+        "id": "l01-s2-choice-04",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "感谢与回应",
+        "source": {
+          "label": "Giáo trình, tr. 3",
+          "printPages": [
+            3
+          ],
+          "pdfPages": [
+            18
+          ]
+        },
+        "prompt": "Bạn vừa giúp một bạn học. Bạn ấy nói như dưới đây; chọn lời đáp cho lời cảm ơn.",
+        "stem": "谢谢！",
+        "options": [
+          "大家好！",
+          "老师，再见！",
+          "谢谢老师！",
+          "不客气！"
+        ],
+        "answer": 3,
+        "explanation": "不客气 là lời đáp lịch sự khi được cảm ơn. 谢谢 và 不客气 là hai lượt lời khác nhau trong cuộc nói chuyện.",
+        "optionFeedback": [
+          "大家好 dùng để chào nhiều người.",
+          "老师，再见 dùng để tạm biệt giáo viên.",
+          "谢谢老师 là cảm ơn giáo viên, không phải đáp lại lời cảm ơn của bạn học.",
+          "不客气 đáp lại 谢谢: “Không có gì!”."
+        ]
+      },
+      {
+        "id": "l01-s2-choice-05",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "感谢对象与大家",
+        "source": {
+          "label": "Giáo trình, tr. 2, 3",
+          "printPages": [
+            2,
+            3
+          ],
+          "pdfPages": [
+            17,
+            18
+          ]
+        },
+        "prompt": "Cả nhóm vừa giúp bạn. Chọn câu chỉ dùng để cảm ơn mọi người.",
+        "stem": "",
+        "options": [
+          "大家好！",
+          "同学们，再见！",
+          "谢谢大家！",
+          "老师，您好！"
+        ],
+        "answer": 2,
+        "explanation": "谢谢 dùng để bày tỏ lời cảm ơn; 大家 là mọi người. Ghép thành 谢谢大家 để cảm ơn cả nhóm.",
+        "optionFeedback": [
+          "大家好 chào mọi người, chưa nói lời cảm ơn.",
+          "Đây là lời tạm biệt các bạn trong lớp.",
+          "谢谢大家 nghĩa là “Cảm ơn mọi người!”.",
+          "老师，您好 chào kính trọng một giáo viên, không cảm ơn cả nhóm."
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "l01-s2-sort-01",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "称呼与敬称问候",
+        "source": {
+          "label": "Giáo trình, tr. 2",
+          "printPages": [
+            2
+          ],
+          "pdfPages": [
+            17
+          ]
+        },
+        "prompt": "Ghép lời chào kính trọng cô giáo. Đặt 老师 ở đầu câu.",
+        "meaning": "Em chào cô ạ!",
+        "tokens": [
+          "老师",
+          "您",
+          "好"
+        ],
+        "answers": [
+          "老师，您好！"
+        ],
+        "explanation": "Gọi người nghe trước bằng 老师, rồi dùng 您好 để chào kính trọng. 您 đứng trước 好."
+      },
+      {
+        "id": "l01-s2-sort-02",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "复数问候",
+        "source": {
+          "label": "Giáo trình, tr. 2",
+          "printPages": [
+            2
+          ],
+          "pdfPages": [
+            17
+          ]
+        },
+        "prompt": "Ghép lời chào một nhóm bạn.",
+        "meaning": "Chào các bạn!",
+        "tokens": [
+          "你们",
+          "好"
+        ],
+        "answers": [
+          "你们好！"
+        ],
+        "explanation": "你们 là “các bạn”; đặt 好 sau 你们 để tạo lời chào 你们好."
+      },
+      {
+        "id": "l01-s2-sort-03",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "感谢对象",
+        "source": {
+          "label": "Giáo trình, tr. 1, 3",
+          "printPages": [
+            1,
+            3
+          ],
+          "pdfPages": [
+            16,
+            18
+          ]
+        },
+        "prompt": "Ghép lời cảm ơn cô Vương. Bắt đầu bằng 谢谢.",
+        "meaning": "Cảm ơn cô Vương!",
+        "tokens": [
+          "谢谢",
+          "王老师"
+        ],
+        "answers": [
+          "谢谢王老师！"
+        ],
+        "explanation": "谢谢 đứng trước người được cảm ơn: 谢谢王老师. 王老师 là cách gọi cô Vương trong bài."
+      },
+      {
+        "id": "l01-s2-sort-04",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "复数称呼与告别",
+        "source": {
+          "label": "Giáo trình, tr. 3",
+          "printPages": [
+            3
+          ],
+          "pdfPages": [
+            18
+          ]
+        },
+        "prompt": "Ghép lời tạm biệt cả lớp. Đặt 同学们 ở đầu câu.",
+        "meaning": "Tạm biệt các bạn trong lớp!",
+        "tokens": [
+          "同学们",
+          "再见"
+        ],
+        "answers": [
+          "同学们，再见！"
+        ],
+        "explanation": "同学们 gọi các bạn trong lớp. Sau lời gọi, dùng 再见 để tạm biệt."
+      },
+      {
+        "id": "l01-s2-sort-05",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "带称呼的见面问候",
+        "source": {
+          "label": "Giáo trình, tr. 1, 2",
+          "printPages": [
+            1,
+            2
+          ],
+          "pdfPages": [
+            16,
+            17
+          ]
+        },
+        "prompt": "Chào cô Vương bằng 你好. Đặt 王老师 ở đầu câu.",
+        "meaning": "Chào cô Vương!",
+        "tokens": [
+          "王老师",
+          "你好"
+        ],
+        "answers": [
+          "王老师，你好！"
+        ],
+        "explanation": "Gọi cô bằng 王老师 rồi nói 你好. Giáo trình cũng dạy 您好 để tăng mức độ kính trọng; bài này đã cho sẵn 你好."
+      }
+    ],
+    "translation": [
+      {
+        "id": "l01-s2-translation-01",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "大家的群体问候",
+        "source": {
+          "label": "Giáo trình, tr. 2",
+          "printPages": [
+            2
+          ],
+          "pdfPages": [
+            17
+          ]
+        },
+        "prompt": "Xin chào mọi người!"
+      },
+      {
+        "id": "l01-s2-translation-02",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "感谢教师",
+        "source": {
+          "label": "Giáo trình, tr. 2, 3",
+          "printPages": [
+            2,
+            3
+          ],
+          "pdfPages": [
+            17,
+            18
+          ]
+        },
+        "prompt": "Cảm ơn cô giáo!"
+      },
+      {
+        "id": "l01-s2-translation-03",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "回应感谢",
+        "source": {
+          "label": "Giáo trình, tr. 3",
+          "printPages": [
+            3
+          ],
+          "pdfPages": [
+            18
+          ]
+        },
+        "prompt": "Không có gì! (Đáp lại lời cảm ơn.)"
+      },
+      {
+        "id": "l01-s2-translation-04",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "指名告别",
+        "source": {
+          "label": "Giáo trình, tr. 1, 3",
+          "printPages": [
+            1,
+            3
+          ],
+          "pdfPages": [
+            16,
+            18
+          ]
+        },
+        "prompt": "Tạm biệt cô Vương!"
+      },
+      {
+        "id": "l01-s2-translation-05",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "单人问候",
+        "source": {
+          "label": "Giáo trình, tr. 1, 2",
+          "printPages": [
+            1,
+            2
+          ],
+          "pdfPages": [
+            16,
+            17
+          ]
+        },
+        "prompt": "Chào bạn! (Nói với một người bạn.)"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "lesson": 2,
+    "title": "我叫李文",
+    "title_vi": "Tôi tên là Lý Văn",
+    "goal_vi": "Hỏi và giới thiệu tên; xin lỗi và đáp lại; nói về việc làm quen theo trật tự từ đã học.",
+    "goal_zh": "询问、介绍姓名，使用道歉与回应，按已学语序表达认识和高兴。",
+    "scope_note_vi": "Bài tập sử dụng nội dung đã học trong Bài 1–2.",
+    "source": {
+      "label": "Giáo trình, tr. 5, 6, 7, 8, 9",
+      "printPages": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "pdfPages": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "book": "新HSK教程1"
+    },
+    "choice": [
+      {
+        "id": "l02-s2-choice-01",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "姓名信息识别",
+        "source": {
+          "label": "Giáo trình, tr. 1, 6, 8",
+          "printPages": [
+            1,
+            6,
+            8
+          ],
+          "pdfPages": [
+            16,
+            21,
+            23
+          ]
+        },
+        "prompt": "Đọc lời tự giới thiệu và chọn tên của người đang nói.",
+        "stem": "你好！我叫白家月。",
+        "options": [
+          "李文",
+          "白家月",
+          "王老师",
+          "陈天中"
+        ],
+        "answer": 1,
+        "explanation": "Sau 我叫 là tên của người nói. Trong câu này, tên đó là 白家月, đọc là Bái Jiāyuè.",
+        "optionFeedback": [
+          "李文 là tên một nhân vật khác; câu này không nói 我叫李文.",
+          "白家月 đứng sau 我叫, nên đây là tên người nói.",
+          "王老师 là cách gọi cô Vương, không phải tên được giới thiệu ở đây.",
+          "陈天中 là tên trong bài khóa 1, nhưng không phải tên trong câu đã cho."
+        ]
+      },
+      {
+        "id": "l02-s2-choice-02",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "道歉与话轮角色",
+        "source": {
+          "label": "Giáo trình, tr. 7, 8",
+          "printPages": [
+            7,
+            8
+          ],
+          "pdfPages": [
+            22,
+            23
+          ]
+        },
+        "prompt": "Bạn vô tình gọi nhầm tên một người. Chọn lời xin lỗi phù hợp.",
+        "stem": "",
+        "options": [
+          "没关系！",
+          "不客气！",
+          "对不起！",
+          "很高兴认识你！"
+        ],
+        "answer": 2,
+        "explanation": "Người gọi nhầm tên nói 对不起 để xin lỗi. Người nghe có thể đáp 没关系 hoặc 没事.",
+        "optionFeedback": [
+          "没关系 là lời đáp khi người khác xin lỗi, không phải lời xin lỗi của người gọi nhầm.",
+          "不客气 đáp lại lời cảm ơn.",
+          "对不起 thể hiện lời xin lỗi vì gọi nhầm tên.",
+          "很高兴认识你 dùng khi làm quen, không thể hiện lời xin lỗi."
+        ]
+      },
+      {
+        "id": "l02-s2-choice-03",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "道歉后的自然回应",
+        "source": {
+          "label": "Giáo trình, tr. 7",
+          "printPages": [
+            7
+          ],
+          "pdfPages": [
+            22
+          ]
+        },
+        "prompt": "Một người xin lỗi vì nhận nhầm bạn. Chọn lời đáp để người ấy yên tâm.",
+        "stem": "对不起！",
+        "options": [
+          "我叫李文。",
+          "你叫什么名字？",
+          "谢谢！",
+          "没事！"
+        ],
+        "answer": 3,
+        "explanation": "没事 là cách đáp thân mật khi người khác xin lỗi. Giáo trình cũng cho phép 没关系 trong tình huống này.",
+        "optionFeedback": [
+          "Câu này chỉ giới thiệu tên, chưa đáp lại lời xin lỗi.",
+          "Câu này hỏi tên, không phải lời trấn an khi người kia xin lỗi.",
+          "谢谢 là lời cảm ơn, không phải lời đáp được yêu cầu ở đây.",
+          "没事 nghĩa là “Không sao!”, phù hợp để đáp lời xin lỗi."
+        ]
+      },
+      {
+        "id": "l02-s2-choice-04",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "也的已学语块",
+        "source": {
+          "label": "Giáo trình, tr. 8, 9",
+          "printPages": [
+            8,
+            9
+          ],
+          "pdfPages": [
+            23,
+            24
+          ]
+        },
+        "prompt": "Điền từ để nói bạn cũng vui khi được làm quen.",
+        "stem": "认识你，我___很高兴。",
+        "options": [
+          "也",
+          "不",
+          "什么",
+          "请问"
+        ],
+        "answer": 0,
+        "explanation": "也 nghĩa là “cũng”, đứng trước 很高兴. 认识你，我也很高兴 đáp lại niềm vui khi hai người làm quen.",
+        "optionFeedback": [
+          "也 bổ sung ý “cũng”, đúng với yêu cầu của câu.",
+          "不 tạo ý phủ định, không diễn tả “cũng vui”.",
+          "什么 dùng để hỏi “gì”, không đặt ở đây để nói “cũng”.",
+          "请问 mở đầu lời hỏi lịch sự, không bổ sung ý “cũng vui”."
+        ]
+      },
+      {
+        "id": "l02-s2-choice-05",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "主谓宾与施受关系",
+        "source": {
+          "label": "Giáo trình, tr. 1, 8, 9",
+          "printPages": [
+            1,
+            8,
+            9
+          ],
+          "pdfPages": [
+            16,
+            23,
+            24
+          ]
+        },
+        "prompt": "Chọn câu diễn đạt “Tôi quen cô Vương”, với người nói là chủ ngữ.",
+        "stem": "",
+        "options": [
+          "王老师认识我。",
+          "我认识王老师。",
+          "我不认识王老师。",
+          "我叫王老师。"
+        ],
+        "answer": 1,
+        "explanation": "我 là người nói; 认识 là “quen, biết”; 王老师 là người được nói đến. Trật tự cần là 我＋认识＋王老师.",
+        "optionFeedback": [
+          "Câu này đổi chủ ngữ thành cô Vương: “Cô Vương quen tôi”.",
+          "我认识王老师 giữ đúng người nói làm chủ ngữ và người được quen là cô Vương.",
+          "Có thêm 不 nên nghĩa là “Tôi không quen cô Vương”.",
+          "叫 dùng để giới thiệu tên, không diễn tả việc quen một người trong câu này."
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "l02-s2-sort-01",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "我叫加姓名",
+        "source": {
+          "label": "Giáo trình, tr. 6, 7, 8",
+          "printPages": [
+            6,
+            7,
+            8
+          ],
+          "pdfPages": [
+            21,
+            22,
+            23
+          ]
+        },
+        "prompt": "Ghép câu tự giới thiệu. 安妮 là tên An Ni. Bắt đầu bằng 我.",
+        "meaning": "Tôi tên là An Ni.",
+        "tokens": [
+          "我",
+          "叫",
+          "安妮"
+        ],
+        "answers": [
+          "我叫安妮。"
+        ],
+        "explanation": "Đặt 我 trước 叫, rồi đặt tên 安妮 sau 叫: 我叫安妮."
+      },
+      {
+        "id": "l02-s2-sort-02",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "礼貌问名语序",
+        "source": {
+          "label": "Giáo trình, tr. 6, 8",
+          "printPages": [
+            6,
+            8
+          ],
+          "pdfPages": [
+            21,
+            23
+          ]
+        },
+        "prompt": "Ghép câu hỏi lịch sự về tên. Bắt đầu bằng 请问.",
+        "meaning": "Xin hỏi, bạn tên là gì?",
+        "tokens": [
+          "请问",
+          "你",
+          "叫",
+          "什么",
+          "名字"
+        ],
+        "answers": [
+          "请问，你叫什么名字？"
+        ],
+        "explanation": "请问 mở đầu lời hỏi lịch sự. Sau đó dùng 你叫＋什么名字 để hỏi tên người nghe."
+      },
+      {
+        "id": "l02-s2-sort-03",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "认识你后的回应语块",
+        "source": {
+          "label": "Giáo trình, tr. 8, 9",
+          "printPages": [
+            8,
+            9
+          ],
+          "pdfPages": [
+            23,
+            24
+          ]
+        },
+        "prompt": "Ghép câu đáp khi làm quen. Bắt đầu bằng 认识你.",
+        "meaning": "Tôi cũng rất vui được làm quen với bạn.",
+        "tokens": [
+          "认识你",
+          "我",
+          "也",
+          "很高兴"
+        ],
+        "answers": [
+          "认识你，我也很高兴。"
+        ],
+        "explanation": "Giáo trình đặt 认识你 ở đầu câu; phần còn lại là 我也很高兴. 也 đứng trước 很高兴."
+      },
+      {
+        "id": "l02-s2-sort-04",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "身份纠正语块",
+        "source": {
+          "label": "Giáo trình, tr. 7, 8",
+          "printPages": [
+            7,
+            8
+          ],
+          "pdfPages": [
+            22,
+            23
+          ]
+        },
+        "prompt": "Đính chính khi người khác gọi nhầm tên. 李文 là tên Lý Văn. Bắt đầu bằng 我.",
+        "meaning": "Tôi không phải là Lý Văn.",
+        "tokens": [
+          "我",
+          "不",
+          "是",
+          "李文"
+        ],
+        "answers": [
+          "我不是李文。"
+        ],
+        "explanation": "Đặt 不 trước 是 để đính chính: 我不是李文. Không đổi vị trí thành 我是不李文."
+      },
+      {
+        "id": "l02-s2-sort-05",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "认识的否定与基本语序",
+        "source": {
+          "label": "Giáo trình, tr. 1, 7, 8, 9",
+          "printPages": [
+            1,
+            7,
+            8,
+            9
+          ],
+          "pdfPages": [
+            16,
+            22,
+            23,
+            24
+          ]
+        },
+        "prompt": "Ghép câu nói rằng bạn không quen cô Vương. Bắt đầu bằng 我.",
+        "meaning": "Tôi không quen cô Vương.",
+        "tokens": [
+          "我",
+          "不",
+          "认识",
+          "王老师"
+        ],
+        "answers": [
+          "我不认识王老师。"
+        ],
+        "explanation": "我 là chủ ngữ; 不 đứng trước 认识 để phủ định; 王老师 đứng sau 认识."
+      }
+    ],
+    "translation": [
+      {
+        "id": "l02-s2-translation-01",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "姓名自我介绍",
+        "source": {
+          "label": "Giáo trình, tr. 6, 8",
+          "printPages": [
+            6,
+            8
+          ],
+          "pdfPages": [
+            21,
+            23
+          ]
+        },
+        "prompt": "Tôi tên là Trần Thiên Trung (陈天中)."
+      },
+      {
+        "id": "l02-s2-translation-02",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "有称呼的道歉",
+        "source": {
+          "label": "Giáo trình, tr. 2, 7",
+          "printPages": [
+            2,
+            7
+          ],
+          "pdfPages": [
+            17,
+            22
+          ]
+        },
+        "prompt": "Xin lỗi, cô giáo!"
+      },
+      {
+        "id": "l02-s2-translation-03",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "复数对象的认识表达",
+        "source": {
+          "label": "Giáo trình, tr. 2, 8, 9",
+          "printPages": [
+            2,
+            8,
+            9
+          ],
+          "pdfPages": [
+            17,
+            23,
+            24
+          ]
+        },
+        "prompt": "Rất vui được làm quen với các bạn."
+      },
+      {
+        "id": "l02-s2-translation-04",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "已学身份语块",
+        "source": {
+          "label": "Giáo trình, tr. 2, 8",
+          "printPages": [
+            2,
+            8
+          ],
+          "pdfPages": [
+            17,
+            23
+          ]
+        },
+        "prompt": "Tôi là học sinh."
+      },
+      {
+        "id": "l02-s2-translation-05",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "认识与也",
+        "source": {
+          "label": "Giáo trình, tr. 8, 9",
+          "printPages": [
+            8,
+            9
+          ],
+          "pdfPages": [
+            23,
+            24
+          ]
+        },
+        "prompt": "Tôi cũng quen bạn."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "lesson": 3,
+    "title": "我是中国人",
+    "title_vi": "Tôi là người Trung Quốc",
+    "goal_vi": "Giới thiệu quốc tịch và quan hệ bằng 是, 的, 吗; nói về mức độ bận và nỗi nhớ.",
+    "goal_zh": "用“是、的、吗”介绍国籍、身份和关系，表达忙碌程度与想念。",
+    "scope_note_vi": "Bài tập sử dụng nội dung đã học trong Bài 1–3.",
+    "source": {
+      "label": "Giáo trình, tr. 10–17",
+      "book": "新HSK教程1",
+      "printPages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "pdfPages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "choice": [
+      {
+        "id": "l03-choice-01",
+        "prompt": "Chọn câu trả lời phù hợp cho câu hỏi về quốc tịch.",
+        "stem": "你是哪国人？",
+        "options": [
+          "我很忙。",
+          "我是法国人。",
+          "她是我姐姐。",
+          "我叫李文。"
+        ],
+        "answer": 1,
+        "explanation": "哪国人 hỏi người nước nào. 我是法国人 trả lời quốc tịch; các câu khác nói về mức độ bận, quan hệ hoặc tên.",
+        "skill": "问国籍",
+        "kind": "choice",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "我很忙 nghĩa là “Tôi rất bận”, chưa cho biết người nói là người nước nào.",
+          "法国人 nghĩa là “người Pháp”. 我是法国人 trả lời trực tiếp câu hỏi về quốc tịch.",
+          "她是我姐姐 nghĩa là “Cô ấy là chị gái tôi”, nói về quan hệ gia đình.",
+          "我叫李文 nghĩa là “Tôi tên là Lý Văn”, trả lời câu hỏi về tên."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 11, 12, 15",
+          "printPages": [
+            11,
+            12,
+            15
+          ],
+          "pdfPages": [
+            26,
+            27,
+            30
+          ]
+        }
+      },
+      {
+        "id": "l03-choice-02",
+        "prompt": "Cô ấy là chị gái của tôi. Chọn từ nối quan hệ sở hữu.",
+        "stem": "她是我___姐姐。",
+        "options": [
+          "吗",
+          "也",
+          "的",
+          "哪"
+        ],
+        "answer": 2,
+        "explanation": "我 + 的 + 姐姐 nghĩa là chị gái của tôi. Với người thân có thể nói 我姐姐, nhưng khi điền vào chỗ trống ở đây thì chọn 的.",
+        "skill": "的与亲属关系",
+        "kind": "choice",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "吗 đặt ở cuối câu hỏi có – không, không nối 我 với 姐姐.",
+          "也 nghĩa là “cũng”. Trong câu giới thiệu này, 也 cần đứng trước 是, không đứng giữa 我 và 姐姐.",
+          "的 tạo cụm 我的姐姐: “chị gái của tôi”. Cũng có thể nói 我姐姐, nhưng ở đây cần chọn một từ để điền vào chỗ trống.",
+          "哪 nghĩa là “nào”, không diễn tả quan hệ “chị gái của tôi” trong câu này."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 11, 12, 14",
+          "printPages": [
+            11,
+            12,
+            14
+          ],
+          "pdfPages": [
+            26,
+            27,
+            29
+          ]
+        }
+      },
+      {
+        "id": "l03-choice-03",
+        "prompt": "Chọn câu hỏi xác nhận người nghe có phải là học sinh hay không.",
+        "stem": "",
+        "options": [
+          "你是学生吗？",
+          "你是哪国人？",
+          "她是我老师。",
+          "我们很想你。"
+        ],
+        "answer": 0,
+        "explanation": "Giữ câu 你是学生 rồi thêm 吗 ở cuối để hỏi “Bạn có phải là học sinh không?”. Trong ba lựa chọn còn lại, 哪国人 hỏi quốc tịch; hai câu còn lại là câu trần thuật.",
+        "skill": "吗问句",
+        "kind": "choice",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "你是学生吗？ dùng 吗 để hỏi người nghe có phải là học sinh hay không.",
+          "你是哪国人？ hỏi quốc tịch, không hỏi người nghe có phải là học sinh hay không.",
+          "她是我老师。 là câu giới thiệu giáo viên của người nói, không phải câu hỏi.",
+          "我们很想你。 diễn tả nỗi nhớ: “Chúng tôi rất nhớ bạn”, không phải câu hỏi."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 14, 17",
+          "printPages": [
+            14,
+            17
+          ],
+          "pdfPages": [
+            29,
+            32
+          ]
+        }
+      },
+      {
+        "id": "l03-choice-04",
+        "prompt": "Bạn không bận lắm. Chọn câu trả lời đúng với thông tin này.",
+        "stem": "你工作忙吗？",
+        "options": [
+          "我很忙。",
+          "我是老师。",
+          "我们很想你。",
+          "我不太忙。"
+        ],
+        "answer": 3,
+        "explanation": "不太忙 nghĩa là “không bận lắm”: 不太 đứng trước 忙 để diễn tả mức độ không cao. Vì đề bài cho biết bạn không bận lắm, câu trả lời phù hợp là 我不太忙。",
+        "skill": "不太",
+        "kind": "choice",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "我很忙 nghĩa là “Tôi rất bận”, khác với thông tin “không bận lắm”.",
+          "我是老师 nghĩa là “Tôi là giáo viên”, chưa trả lời về mức độ bận.",
+          "我们很想你 nghĩa là “Chúng tôi rất nhớ bạn”, không nói về mức độ bận.",
+          "我不太忙 nghĩa là “Tôi không bận lắm”. 不太 làm giảm mức độ của 忙."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 14, 15",
+          "printPages": [
+            14,
+            15
+          ],
+          "pdfPages": [
+            29,
+            30
+          ]
+        }
+      },
+      {
+        "id": "l03-choice-05",
+        "prompt": "Lý Văn là người Trung Quốc; cô giáo cũng là người Trung Quốc. Chọn từ điền.",
+        "stem": "李文是中国人。老师___是中国人。",
+        "options": [
+          "谁",
+          "什么",
+          "也",
+          "哪"
+        ],
+        "answer": 2,
+        "explanation": "也 nghĩa là cũng, thể hiện hai người có cùng quốc tịch. Đặt 也 trước 是: 老师也是中国人.",
+        "skill": "也是",
+        "kind": "choice",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "谁 nghĩa là “ai”, không bổ sung ý “cũng” giữa hai câu này.",
+          "什么 nghĩa là “gì”, không diễn tả việc hai người có cùng quốc tịch.",
+          "也 nghĩa là “cũng” và đứng trước 是: 老师也是中国人。",
+          "哪 nghĩa là “nào”, thường dùng trong 哪国人 để hỏi quốc tịch; câu này cần ý “cũng”."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 10, 12",
+          "printPages": [
+            10,
+            12
+          ],
+          "pdfPages": [
+            25,
+            27
+          ]
+        }
+      }
+    ],
+    "sort": [
+      {
+        "id": "l03-sort-01",
+        "prompt": "Ghép câu giới thiệu quốc tịch.",
+        "meaning": "Tôi là người Thái Lan.",
+        "tokens": [
+          "我",
+          "是",
+          "泰国人"
+        ],
+        "answers": [
+          "我是泰国人。"
+        ],
+        "explanation": "Trật tự là chủ ngữ 我 + 是 + quốc tịch 泰国人. 人 sau tên nước chỉ người của nước đó.",
+        "skill": "国籍表达",
+        "kind": "sort",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 11, 12",
+          "printPages": [
+            11,
+            12
+          ],
+          "pdfPages": [
+            26,
+            27
+          ]
+        }
+      },
+      {
+        "id": "l03-sort-02",
+        "prompt": "Ghép câu hỏi có – không.",
+        "meaning": "Bạn là người Trung Quốc phải không?",
+        "tokens": [
+          "你",
+          "是",
+          "中国人",
+          "吗"
+        ],
+        "answers": [
+          "你是中国人吗？"
+        ],
+        "explanation": "Giữ nguyên trật tự 你是中国人 rồi thêm 吗 ở cuối câu để hỏi.",
+        "skill": "吗问句",
+        "kind": "sort",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 11, 14",
+          "printPages": [
+            11,
+            14
+          ],
+          "pdfPages": [
+            26,
+            29
+          ]
+        }
+      },
+      {
+        "id": "l03-sort-03",
+        "prompt": "Ghép câu giới thiệu giáo viên. Bắt đầu bằng 她.",
+        "meaning": "Cô ấy là giáo viên tiếng Trung của tôi.",
+        "tokens": [
+          "她",
+          "是",
+          "我的",
+          "中文老师"
+        ],
+        "answers": [
+          "她是我的中文老师。"
+        ],
+        "explanation": "我的 đứng trước 中文老师 để nói giáo viên tiếng Trung của tôi. Cả cụm 我的中文老师 đứng sau 是.",
+        "skill": "的字结构",
+        "kind": "sort",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 10, 11",
+          "printPages": [
+            10,
+            11
+          ],
+          "pdfPages": [
+            25,
+            26
+          ]
+        }
+      },
+      {
+        "id": "l03-sort-04",
+        "prompt": "Ghép câu diễn tả mức độ bận.",
+        "meaning": "Chị gái tôi không bận lắm.",
+        "tokens": [
+          "我姐姐",
+          "不",
+          "太",
+          "忙"
+        ],
+        "answers": [
+          "我姐姐不太忙。"
+        ],
+        "explanation": "Chủ ngữ là 我姐姐: “chị gái tôi”. 不太 đứng ngay trước 忙 để nói “không bận lắm”; không đặt 是 trước 忙.",
+        "skill": "不太忙",
+        "kind": "sort",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 11, 14",
+          "printPages": [
+            11,
+            14
+          ],
+          "pdfPages": [
+            26,
+            29
+          ]
+        }
+      },
+      {
+        "id": "l03-sort-05",
+        "prompt": "Ghép câu diễn tả nỗi nhớ.",
+        "meaning": "Chúng tôi cũng rất nhớ bạn.",
+        "tokens": [
+          "我们",
+          "也",
+          "很",
+          "想",
+          "你"
+        ],
+        "answers": [
+          "我们也很想你。"
+        ],
+        "explanation": "我们 là “chúng tôi”; 想你 là “nhớ bạn”. 也 đứng trước 很想: 我们也很想你。 Trong bài này, 想 mang nghĩa “nhớ”, không phải “muốn làm việc gì”.",
+        "skill": "想与也",
+        "kind": "sort",
+        "legacyCompatible": true,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 14",
+          "printPages": [
+            14
+          ],
+          "pdfPages": [
+            29
+          ]
+        }
+      }
+    ],
+    "translation": [
+      {
+        "id": "l03-translation-free-01",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "prompt": "Giáo viên tiếng Trung của tôi là người Pháp.",
+        "skill": "所属关系与国籍",
+        "source": {
+          "label": "Giáo trình, tr. 10, 11",
+          "printPages": [
+            10,
+            11
+          ],
+          "pdfPages": [
+            25,
+            26
+          ]
+        }
+      },
+      {
+        "id": "l03-translation-free-02",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "prompt": "Cô ấy có phải là chị gái của bạn không?",
+        "skill": "人物关系与吗问句",
+        "source": {
+          "label": "Giáo trình, tr. 11, 12, 14",
+          "printPages": [
+            11,
+            12,
+            14
+          ],
+          "pdfPages": [
+            26,
+            27,
+            29
+          ]
+        }
+      },
+      {
+        "id": "l03-translation-free-03",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "prompt": "Đây là bạn học của tôi.",
+        "skill": "这与关系介绍",
+        "source": {
+          "label": "Giáo trình, tr. 11, 12, 16",
+          "printPages": [
+            11,
+            12,
+            16
+          ],
+          "pdfPages": [
+            26,
+            27,
+            31
+          ]
+        }
+      },
+      {
+        "id": "l03-translation-free-04",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "prompt": "Chị gái tôi không phải là giáo viên.",
+        "skill": "不是与身份关系",
+        "source": {
+          "label": "Giáo trình, tr. 11, 14",
+          "printPages": [
+            11,
+            14
+          ],
+          "pdfPages": [
+            26,
+            29
+          ]
+        }
+      },
+      {
+        "id": "l03-translation-free-05",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "prompt": "Tôi rất nhớ các bạn.",
+        "skill": "想念义与人称",
+        "source": {
+          "label": "Giáo trình, tr. 14",
+          "printPages": [
+            14
+          ],
+          "pdfPages": [
+            29
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "lesson": 4,
+    "title": "我有两个孩子",
+    "title_vi": "Tôi có hai người con",
+    "goal_vi": "Nói về thành viên gia đình và tuổi; dùng 有, 没有, 呢 cùng số từ và lượng từ phù hợp.",
+    "goal_zh": "介绍家庭人数、亲属和年龄，区分有与没有，使用二/两、个/口及回问呢。",
+    "scope_note_vi": "Bài tập sử dụng nội dung đã học trong Bài 1–4.",
+    "source": {
+      "label": "Giáo trình, tr. 18, 19, 20, 21, 22, 23, 24, 25, 26",
+      "printPages": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "pdfPages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "book": "新HSK教程1"
+    },
+    "choice": [
+      {
+        "id": "l04-s2-choice-01",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "二两与数量结构",
+        "source": {
+          "label": "Giáo trình, tr. 21, 23, 25",
+          "printPages": [
+            21,
+            23,
+            25
+          ],
+          "pdfPages": [
+            36,
+            38,
+            40
+          ]
+        },
+        "prompt": "Cô ấy có đúng hai cô con gái. Chọn từ chỉ số lượng để điền.",
+        "stem": "她有___个女儿。",
+        "options": [
+          "二",
+          "两",
+          "十二",
+          "二十"
+        ],
+        "answer": 1,
+        "explanation": "Khi nói số lượng hai trước 个, dùng 两: 两个女儿. 二 vẫn dùng trong các số như 十二, 二十, nhưng đề bài nói đúng hai người.",
+        "optionFeedback": [
+          "Trong cụm chỉ hai người trước 个, cách dùng được học là 两个, không phải 二个.",
+          "两个女儿 nghĩa là “hai cô con gái”, đúng số lượng và lượng từ.",
+          "十二 là mười hai, không phải hai.",
+          "二十 là hai mươi, không phải hai."
+        ]
+      },
+      {
+        "id": "l04-s2-choice-02",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "没有与不是",
+        "source": {
+          "label": "Giáo trình, tr. 19, 20, 22",
+          "printPages": [
+            19,
+            20,
+            22
+          ],
+          "pdfPages": [
+            34,
+            35,
+            37
+          ]
+        },
+        "prompt": "Bạn không có em gái. Chọn câu đáp đúng tình huống.",
+        "stem": "你有妹妹吗？",
+        "options": [
+          "我不是妹妹。",
+          "我有一个妹妹。",
+          "我没有妹妹。",
+          "我有两个妹妹。"
+        ],
+        "answer": 2,
+        "explanation": "有 nói về việc có ai hoặc có gì; phủ định là 没有. 我没有妹妹 trả lời rằng bạn không có em gái.",
+        "optionFeedback": [
+          "不是 nói bạn không phải là em gái của ai đó; nó không trả lời bạn có em gái hay không.",
+          "Câu này nói có một em gái, trái với tình huống.",
+          "没有 phủ định 有: “Tôi không có em gái”.",
+          "Câu này nói có hai em gái, trái với tình huống."
+        ]
+      },
+      {
+        "id": "l04-s2-choice-03",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "家庭人数问答",
+        "source": {
+          "label": "Giáo trình, tr. 22, 23, 24",
+          "printPages": [
+            22,
+            23,
+            24
+          ],
+          "pdfPages": [
+            37,
+            38,
+            39
+          ]
+        },
+        "prompt": "Người kia trả lời về số người trong gia đình như dưới đây. Chọn câu hỏi phù hợp.",
+        "stem": "我家有五口人。",
+        "options": [
+          "你今年多大？",
+          "你是哪国人？",
+          "你有几个女儿？",
+          "你家有几口人？"
+        ],
+        "answer": 3,
+        "explanation": "几口人 hỏi số người trong gia đình. Câu đáp 五口人 cho biết gia đình có năm người.",
+        "optionFeedback": [
+          "多大 hỏi tuổi, không hỏi số thành viên gia đình.",
+          "哪国人 hỏi quốc tịch.",
+          "几个女儿 chỉ hỏi số con gái, không phải tổng số người trong gia đình.",
+          "你家有几口人 hỏi đúng thông tin được trả lời bằng 五口人."
+        ]
+      },
+      {
+        "id": "l04-s2-choice-04",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "呢的承前回问",
+        "source": {
+          "label": "Giáo trình, tr. 22, 23",
+          "printPages": [
+            22,
+            23
+          ],
+          "pdfPages": [
+            37,
+            38
+          ]
+        },
+        "prompt": "Người nói có một chị gái và muốn hỏi lại người nghe về cùng việc đó. Điền từ thích hợp.",
+        "stem": "我有一个姐姐，你___？",
+        "options": [
+          "呢",
+          "吗",
+          "几",
+          "谁"
+        ],
+        "answer": 0,
+        "explanation": "呢 dùng để hỏi lại cùng một vấn đề đã nêu: 我有一个姐姐，你呢？ nghĩa là “Tôi có một chị gái, còn bạn?”.",
+        "optionFeedback": [
+          "呢 nối tiếp thông tin trước để hỏi “còn bạn?”.",
+          "Ở đây chỉ có 你 sau câu trước; mẫu hỏi lại được học là 你呢, không phải 你吗.",
+          "几 dùng để hỏi số lượng và chưa tạo thành câu hỏi hoàn chỉnh ở vị trí này.",
+          "谁 hỏi “ai”, không tạo ý “còn bạn?” ở đây."
+        ]
+      },
+      {
+        "id": "l04-s2-choice-05",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "二十二与年龄数字",
+        "source": {
+          "label": "Giáo trình, tr. 20, 21, 24, 25",
+          "printPages": [
+            20,
+            21,
+            24,
+            25
+          ],
+          "pdfPages": [
+            35,
+            36,
+            39,
+            40
+          ]
+        },
+        "prompt": "Trong bài tập này, bạn 22 tuổi. Chọn câu tự giới thiệu tuổi đúng thông tin đó.",
+        "stem": "",
+        "options": [
+          "我今年十二岁。",
+          "我今年二十二岁。",
+          "我今年两岁。",
+          "我今年二十岁。"
+        ],
+        "answer": 1,
+        "explanation": "22 viết là 二十二: 二十 là hai mươi, thêm 二 là hai. 岁 đứng sau số tuổi.",
+        "optionFeedback": [
+          "十二 là 12, thiếu phần hai mươi của số 22.",
+          "二十二 là 22; câu này đúng tuổi được cho.",
+          "两岁 là 2 tuổi, không phải 22.",
+          "二十 là 20, chưa có phần hai đơn vị."
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "l04-s2-sort-01",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "家庭人数与口",
+        "source": {
+          "label": "Giáo trình, tr. 20, 22, 23",
+          "printPages": [
+            20,
+            22,
+            23
+          ],
+          "pdfPages": [
+            35,
+            37,
+            38
+          ]
+        },
+        "prompt": "Ghép câu giới thiệu số người trong gia đình.",
+        "meaning": "Gia đình tôi có sáu người.",
+        "tokens": [
+          "我家",
+          "有",
+          "六",
+          "口",
+          "人"
+        ],
+        "answers": [
+          "我家有六口人。"
+        ],
+        "explanation": "我家 là gia đình tôi; 有 đứng trước số lượng 六口人. 口 là lượng từ dùng khi đếm thành viên trong gia đình."
+      },
+      {
+        "id": "l04-s2-sort-02",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "多大与今年的位置",
+        "source": {
+          "label": "Giáo trình, tr. 24, 25",
+          "printPages": [
+            24,
+            25
+          ],
+          "pdfPages": [
+            39,
+            40
+          ]
+        },
+        "prompt": "Hỏi tuổi người bạn đang nói chuyện cùng.",
+        "meaning": "Năm nay bạn bao nhiêu tuổi?",
+        "tokens": [
+          "你",
+          "今年",
+          "多",
+          "大"
+        ],
+        "answers": [
+          "你今年多大？",
+          "今年你多大？"
+        ],
+        "explanation": "多大 hỏi tuổi. 今年 có thể đặt trước 你 hoặc sau 你; cả 你今年多大 và 今年你多大 đều phù hợp."
+      },
+      {
+        "id": "l04-s2-sort-03",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "第三人称与没有",
+        "source": {
+          "label": "Giáo trình, tr. 19, 22, 25",
+          "printPages": [
+            19,
+            22,
+            25
+          ],
+          "pdfPages": [
+            34,
+            37,
+            40
+          ]
+        },
+        "prompt": "Nói rằng người nam được nhắc đến không có con gái.",
+        "meaning": "Anh ấy không có con gái.",
+        "tokens": [
+          "他",
+          "没有",
+          "女儿"
+        ],
+        "answers": [
+          "他没有女儿。"
+        ],
+        "explanation": "他 chỉ người nam; 没有 phủ định việc có; 女儿 là con gái. Không dùng 不是 để thay 没有 trong ý này."
+      },
+      {
+        "id": "l04-s2-sort-04",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "和连接并列人物",
+        "source": {
+          "label": "Giáo trình, tr. 8, 22, 23",
+          "printPages": [
+            8,
+            22,
+            23
+          ],
+          "pdfPages": [
+            23,
+            37,
+            38
+          ]
+        },
+        "prompt": "Ghép câu giới thiệu bạn và em gái là học sinh.",
+        "meaning": "Tôi và em gái là học sinh.",
+        "tokens": [
+          "我",
+          "和",
+          "妹妹",
+          "是",
+          "学生"
+        ],
+        "answers": [
+          "我和妹妹是学生。",
+          "妹妹和我是学生。"
+        ],
+        "explanation": "和 nối hai người làm chủ ngữ. Có thể nói 我和妹妹 hoặc 妹妹和我; phần 是学生 đứng sau cả nhóm chủ ngữ."
+      },
+      {
+        "id": "l04-s2-sort-05",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "一个与亲属数量",
+        "source": {
+          "label": "Giáo trình, tr. 19, 20, 23, 25",
+          "printPages": [
+            19,
+            20,
+            23,
+            25
+          ],
+          "pdfPages": [
+            34,
+            35,
+            38,
+            40
+          ]
+        },
+        "prompt": "Nói cô giáo có một cô con gái. Bắt đầu bằng 老师.",
+        "meaning": "Cô giáo có một cô con gái.",
+        "tokens": [
+          "老师",
+          "有",
+          "一",
+          "个",
+          "女儿"
+        ],
+        "answers": [
+          "老师有一个女儿。"
+        ],
+        "explanation": "老师 là người được nói đến. Một cô con gái là 一个女儿: số 一＋lượng từ 个＋danh từ 女儿."
+      }
+    ],
+    "translation": [
+      {
+        "id": "l04-s2-translation-01",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "两与亲属数量",
+        "source": {
+          "label": "Giáo trình, tr. 21, 22, 23",
+          "printPages": [
+            21,
+            22,
+            23
+          ],
+          "pdfPages": [
+            36,
+            37,
+            38
+          ]
+        },
+        "prompt": "Tôi có hai anh trai."
+      },
+      {
+        "id": "l04-s2-translation-02",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "她家与家庭人数",
+        "source": {
+          "label": "Giáo trình, tr. 20, 22, 23",
+          "printPages": [
+            20,
+            22,
+            23
+          ],
+          "pdfPages": [
+            35,
+            37,
+            38
+          ]
+        },
+        "prompt": "Gia đình cô ấy có ba người."
+      },
+      {
+        "id": "l04-s2-translation-03",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "儿子八岁与今年",
+        "source": {
+          "label": "Giáo trình, tr. 20, 24, 25",
+          "printPages": [
+            20,
+            24,
+            25
+          ],
+          "pdfPages": [
+            35,
+            39,
+            40
+          ]
+        },
+        "prompt": "Năm nay con trai tôi tám tuổi."
+      },
+      {
+        "id": "l04-s2-translation-04",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "没有与呢回问",
+        "source": {
+          "label": "Giáo trình, tr. 19, 20, 22, 23",
+          "printPages": [
+            19,
+            20,
+            22,
+            23
+          ],
+          "pdfPages": [
+            34,
+            35,
+            37,
+            38
+          ]
+        },
+        "prompt": "Tôi không có chị gái. Còn bạn?"
+      },
+      {
+        "id": "l04-s2-translation-05",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "父母与和",
+        "source": {
+          "label": "Giáo trình, tr. 11, 22, 23",
+          "printPages": [
+            11,
+            22,
+            23
+          ],
+          "pdfPages": [
+            26,
+            37,
+            38
+          ]
+        },
+        "prompt": "Bố và mẹ tôi là người Trung Quốc."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "lesson": 5,
+    "title": "今天我休息",
+    "title_vi": "Hôm nay tôi nghỉ",
+    "goal_vi": "Hỏi ngày tháng và thứ; nói về ngày nghỉ, kỹ năng nấu ăn và đồ vật mình thích.",
+    "goal_zh": "表达日期、星期与休息，使用会表示已习得技能，介绍新电脑和喜好。",
+    "scope_note_vi": "Bài tập sử dụng nội dung đã học trong Bài 1–5.",
+    "source": {
+      "label": "Giáo trình, tr. 27, 28, 29, 30, 31, 32, 33, 34",
+      "printPages": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "pdfPages": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "book": "新HSK教程1"
+    },
+    "choice": [
+      {
+        "id": "l05-s2-choice-01",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "月份与日期顺序",
+        "source": {
+          "label": "Giáo trình, tr. 28, 29",
+          "printPages": [
+            28,
+            29
+          ],
+          "pdfPages": [
+            43,
+            44
+          ]
+        },
+        "prompt": "Theo lịch giả định trong bài tập, hôm nay là ngày 14 tháng 3. Chọn câu trả lời đúng.",
+        "stem": "今天几号？",
+        "options": [
+          "今天四月十三号。",
+          "今天三月四号。",
+          "今天三月十四号。",
+          "今天三月二十四号。"
+        ],
+        "answer": 2,
+        "explanation": "Tiếng Trung đặt tháng trước ngày: 三月十四号 là ngày 14 tháng 3. 号 đứng sau số chỉ ngày.",
+        "optionFeedback": [
+          "四月十三号 là ngày 13 tháng 4, đổi cả tháng và ngày.",
+          "三月四号 là ngày 4 tháng 3, thiếu 十 trong 十四.",
+          "三月十四号 diễn đạt đúng ngày 14 tháng 3.",
+          "三月二十四号 là ngày 24 tháng 3, khác ngày được cho."
+        ]
+      },
+      {
+        "id": "l05-s2-choice-02",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "星期问句与越语星期对应",
+        "source": {
+          "label": "Giáo trình, tr. 28, 29",
+          "printPages": [
+            28,
+            29
+          ],
+          "pdfPages": [
+            43,
+            44
+          ]
+        },
+        "prompt": "Chọn câu đáp trực tiếp về thứ trong tuần.",
+        "stem": "今天星期几？",
+        "options": [
+          "今天星期四。",
+          "今天四月一号。",
+          "我今年四岁。",
+          "我今天休息。"
+        ],
+        "answer": 0,
+        "explanation": "星期几 hỏi thứ trong tuần. 星期四 nghĩa là thứ Năm trong tiếng Việt; 四月一号 là ngày tháng, không phải thứ.",
+        "optionFeedback": [
+          "星期四 trả lời về thứ trong tuần: thứ Năm.",
+          "四月一号 là ngày 1 tháng 4, chưa cho biết thứ.",
+          "四岁 là bốn tuổi, không liên quan đến thứ trong tuần.",
+          "休息 cho biết việc nghỉ ngơi, chưa cho biết thứ."
+        ]
+      },
+      {
+        "id": "l05-s2-choice-03",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "不会与技能",
+        "source": {
+          "label": "Giáo trình, tr. 30, 31, 32",
+          "printPages": [
+            30,
+            31,
+            32
+          ],
+          "pdfPages": [
+            45,
+            46,
+            47
+          ]
+        },
+        "prompt": "Bạn không biết nấu ăn. Chọn câu đáp đúng khả năng của mình.",
+        "stem": "你会做饭吗？",
+        "options": [
+          "我喜欢做饭。",
+          "我不会做饭。",
+          "我今天做饭。",
+          "我也会做饭。"
+        ],
+        "answer": 1,
+        "explanation": "会 trong bài này chỉ kỹ năng đã học được. 不会做饭 nghĩa là “không biết nấu ăn”; 喜欢 chỉ sự yêu thích.",
+        "optionFeedback": [
+          "喜欢做饭 nói thích nấu ăn, không nói rằng không biết nấu.",
+          "不会做饭 diễn đạt đúng việc chưa có kỹ năng nấu ăn.",
+          "今天做饭 nói việc nấu ăn hôm nay, không trả lời đúng thông tin đã cho.",
+          "也会做饭 nói cũng biết nấu ăn, trái với tình huống."
+        ]
+      },
+      {
+        "id": "l05-s2-choice-04",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "也喜欢与它的指代",
+        "source": {
+          "label": "Giáo trình, tr. 32",
+          "printPages": [
+            32
+          ],
+          "pdfPages": [
+            47
+          ]
+        },
+        "prompt": "Cô giáo nói thích chiếc máy tính này. Bạn cũng rất thích nó; điền từ để đáp lại.",
+        "stem": "我___很喜欢它。",
+        "options": [
+          "不",
+          "谁",
+          "几",
+          "也"
+        ],
+        "answer": 3,
+        "explanation": "也 nghĩa là “cũng”, đặt trước 很喜欢 để nói bạn có cùng sở thích. 它 thay cho chiếc máy tính đã nhắc đến.",
+        "optionFeedback": [
+          "不 tạo ý phủ định, trái với thông tin bạn cũng rất thích.",
+          "谁 hỏi về người, không thể bổ sung ý “cũng” ở đây.",
+          "几 hỏi số lượng, không dùng để nối sở thích giống nhau.",
+          "也 giữ đúng ý “cũng”: 我也很喜欢它。"
+        ]
+      },
+      {
+        "id": "l05-s2-choice-05",
+        "kind": "choice",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "会做什么与吗问句区别",
+        "source": {
+          "label": "Giáo trình, tr. 28, 30, 31",
+          "printPages": [
+            28,
+            30,
+            31
+          ],
+          "pdfPages": [
+            43,
+            45,
+            46
+          ]
+        },
+        "prompt": "Hai người đang nói về nấu ăn. Câu hỏi nào hỏi người nghe biết làm những món gì?",
+        "stem": "",
+        "options": [
+          "你会做什么？",
+          "你会做饭吗？",
+          "今天几号？",
+          "你喜欢谁？"
+        ],
+        "answer": 0,
+        "explanation": "Trong ngữ cảnh nấu ăn, 你会做什么 hỏi người nghe biết làm món gì. 你会做饭吗 chỉ hỏi có biết nấu ăn hay không.",
+        "optionFeedback": [
+          "什么 yêu cầu nêu món biết làm, phù hợp với câu hỏi chi tiết.",
+          "吗 chỉ yêu cầu xác nhận có biết nấu hay không, chưa hỏi những món cụ thể.",
+          "Câu này hỏi ngày trong tháng.",
+          "Câu này hỏi người được yêu thích, không hỏi món biết nấu."
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "id": "l05-s2-sort-01",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "今天的位置",
+        "source": {
+          "label": "Giáo trình, tr. 28",
+          "printPages": [
+            28
+          ],
+          "pdfPages": [
+            43
+          ]
+        },
+        "prompt": "Ghép câu nói bạn nghỉ hôm nay.",
+        "meaning": "Hôm nay tôi nghỉ.",
+        "tokens": [
+          "今天",
+          "我",
+          "休息"
+        ],
+        "answers": [
+          "今天我休息。",
+          "我今天休息。"
+        ],
+        "explanation": "今天 có thể đứng trước hoặc sau chủ ngữ 我. Cả 今天我休息 và 我今天休息 đều diễn đạt bạn nghỉ hôm nay."
+      },
+      {
+        "id": "l05-s2-sort-02",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "会加动词与吗",
+        "source": {
+          "label": "Giáo trình, tr. 14, 30, 31",
+          "printPages": [
+            14,
+            30,
+            31
+          ],
+          "pdfPages": [
+            29,
+            45,
+            46
+          ]
+        },
+        "prompt": "Hỏi xem cô ấy có biết làm mì hay không.",
+        "meaning": "Cô ấy có biết làm mì không?",
+        "tokens": [
+          "她",
+          "会",
+          "做",
+          "面条儿",
+          "吗"
+        ],
+        "answers": [
+          "她会做面条儿吗？"
+        ],
+        "explanation": "会 đứng trước động từ 做 để nói kỹ năng. Đặt 吗 cuối câu để hỏi có biết làm mì hay không."
+      },
+      {
+        "id": "l05-s2-sort-03",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "年龄名词谓语句",
+        "source": {
+          "label": "Giáo trình, tr. 24, 25, 29, 30",
+          "printPages": [
+            24,
+            25,
+            29,
+            30
+          ],
+          "pdfPages": [
+            39,
+            40,
+            44,
+            45
+          ]
+        },
+        "prompt": "Ghép câu nói về tuổi của em gái bạn.",
+        "meaning": "Năm nay em gái tôi 13 tuổi.",
+        "tokens": [
+          "我妹妹",
+          "今年",
+          "十三",
+          "岁"
+        ],
+        "answers": [
+          "我妹妹今年十三岁。",
+          "今年我妹妹十三岁。"
+        ],
+        "explanation": "十三岁 đứng sau người được nói đến; câu tuổi này không cần thêm 是. 今年 có thể đặt trước hoặc sau 我妹妹."
+      },
+      {
+        "id": "l05-s2-sort-04",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "领属与新电脑",
+        "source": {
+          "label": "Giáo trình, tr. 11, 25, 32",
+          "printPages": [
+            11,
+            25,
+            32
+          ],
+          "pdfPages": [
+            26,
+            40,
+            47
+          ]
+        },
+        "prompt": "Giới thiệu máy tính mới của người nam được nhắc đến. Bắt đầu bằng 这.",
+        "meaning": "Đây là máy tính mới của anh ấy.",
+        "tokens": [
+          "这",
+          "是",
+          "他的",
+          "新",
+          "电脑"
+        ],
+        "answers": [
+          "这是他的新电脑。"
+        ],
+        "explanation": "他的 đứng trước 新电脑: “máy tính mới của anh ấy”. 新 đứng trước 电脑; 这是 mở đầu lời giới thiệu đồ vật."
+      },
+      {
+        "id": "l05-s2-sort-05",
+        "kind": "sort",
+        "assessment": "automatic",
+        "legacyCompatible": false,
+        "skill": "我们也很喜欢它",
+        "source": {
+          "label": "Giáo trình, tr. 14, 32",
+          "printPages": [
+            14,
+            32
+          ],
+          "pdfPages": [
+            29,
+            47
+          ]
+        },
+        "prompt": "Nói cả nhóm của bạn cũng rất thích chiếc máy tính vừa nhắc đến. Bắt đầu bằng 我们.",
+        "meaning": "Chúng tôi cũng rất thích nó.",
+        "tokens": [
+          "我们",
+          "也",
+          "很",
+          "喜欢",
+          "它"
+        ],
+        "answers": [
+          "我们也很喜欢它。"
+        ],
+        "explanation": "我们 là “chúng tôi”; 也 đứng trước 很喜欢; 它 thay cho chiếc máy tính. Giữ 它 ở sau 喜欢."
+      }
+    ],
+    "translation": [
+      {
+        "id": "l05-s2-translation-01",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "日期表达与名词谓语",
+        "source": {
+          "label": "Giáo trình, tr. 28, 29, 30",
+          "printPages": [
+            28,
+            29,
+            30
+          ],
+          "pdfPages": [
+            43,
+            44,
+            45
+          ]
+        },
+        "prompt": "Hôm nay là ngày 6 tháng 8."
+      },
+      {
+        "id": "l05-s2-translation-02",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "父亲与会做饺子",
+        "source": {
+          "label": "Giáo trình, tr. 22, 30, 31",
+          "printPages": [
+            22,
+            30,
+            31
+          ],
+          "pdfPages": [
+            37,
+            45,
+            46
+          ]
+        },
+        "prompt": "Bố tôi biết làm sủi cảo."
+      },
+      {
+        "id": "l05-s2-translation-03",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "星期天与也休息",
+        "source": {
+          "label": "Giáo trình, tr. 28, 29, 30",
+          "printPages": [
+            28,
+            29,
+            30
+          ],
+          "pdfPages": [
+            43,
+            44,
+            45
+          ]
+        },
+        "prompt": "Chủ nhật tôi cũng nghỉ."
+      },
+      {
+        "id": "l05-s2-translation-04",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "新电脑与真好看",
+        "source": {
+          "label": "Giáo trình, tr. 32, 33",
+          "printPages": [
+            32,
+            33
+          ],
+          "pdfPages": [
+            47,
+            48
+          ]
+        },
+        "prompt": "Máy tính mới của bạn thật đẹp!"
+      },
+      {
+        "id": "l05-s2-translation-05",
+        "kind": "translation",
+        "assessment": "manual",
+        "legacyCompatible": false,
+        "skill": "不会做面条儿",
+        "source": {
+          "label": "Giáo trình, tr. 30, 31",
+          "printPages": [
+            30,
+            31
+          ],
+          "pdfPages": [
+            45,
+            46
+          ]
+        },
+        "prompt": "Tôi không biết làm mì."
+      }
+    ]
+  }
+]

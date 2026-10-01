@@ -1,0 +1,2396 @@
+[
+  {
+    "id": 6,
+    "lesson": 6,
+    "title": "你的手机号是多少？",
+    "title_vi": "Số điện thoại di động của bạn là bao nhiêu?",
+    "goal_vi": "Hỏi số điện thoại; nói muốn làm gì, đi đâu để làm gì và đi bằng phương tiện nào.",
+    "goal_zh": "询问手机号，用“想”表达意愿，用连动句说明目的和交通方式，用“怎么”提问。",
+    "scope_note_vi": "Ôn Bài 1–5 và luyện nội dung Bài 6. 想 trong các bài này nghĩa là “muốn”; 西安饭店 là tên một nhà hàng.",
+    "source": {
+      "label": "Giáo trình, tr. 35–44",
+      "printPages": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "pdfPages": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "book": "新HSK教程1"
+    },
+    "choice": [
+      {
+        "id": "l06-s2-choice-01",
+        "prompt": "Chọn câu hỏi số điện thoại di động của người nghe.",
+        "stem": "",
+        "options": [
+          "你今年多大？",
+          "你的手机号是多少？",
+          "你家有几口人？",
+          "你想去哪儿？"
+        ],
+        "answer": 1,
+        "explanation": "手机号 là số điện thoại di động. 你的手机号是多少？ hỏi số đó; 多少 ở đây hỏi một dãy số, không hỏi tuổi hay số người.",
+        "skill": "询问手机号",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "你今年多大？ hỏi năm nay người nghe bao nhiêu tuổi.",
+          "你的手机号是多少？ trực tiếp hỏi số điện thoại di động.",
+          "你家有几口人？ hỏi gia đình có mấy người.",
+          "你想去哪儿？ hỏi người nghe muốn đi đâu."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 36",
+          "printPages": [
+            36
+          ],
+          "pdfPages": [
+            51
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-choice-02",
+        "prompt": "Ngày mai bạn muốn đến siêu thị mua sữa. Chọn câu nói đúng đủ thông tin này.",
+        "stem": "",
+        "options": [
+          "我明天不想去超市。",
+          "我今天想去超市买牛奶。",
+          "我明天想去超市买牛奶。",
+          "我明天想去超市买包子。"
+        ],
+        "answer": 2,
+        "explanation": "明天 là ngày mai; 想 diễn tả mong muốn. 去超市买牛奶 cho biết đến siêu thị để mua sữa. Cần giữ đúng cả thời gian, mong muốn và món muốn mua.",
+        "skill": "想与目的连动句",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "不想去超市 nghĩa là không muốn đến siêu thị, trái với đề bài.",
+          "今天 là hôm nay; đề bài nói ngày mai, tức 明天.",
+          "Câu này giữ đúng 明天, 想 và 去超市买牛奶.",
+          "包子 là bánh bao; đề bài yêu cầu mua 牛奶, tức sữa."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 37, 38, 40",
+          "printPages": [
+            37,
+            38,
+            40
+          ],
+          "pdfPages": [
+            52,
+            53,
+            55
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-choice-03",
+        "prompt": "Chọn câu trả lời cho biết phương tiện đi đến nhà hàng.",
+        "stem": "你们怎么去西安饭店？",
+        "options": [
+          "我们明天去。",
+          "我们想吃米饭。",
+          "我们去超市。",
+          "我们坐出租车去。"
+        ],
+        "answer": 3,
+        "explanation": "怎么去 hỏi đi bằng cách nào. 坐出租车去 nghĩa là đi bằng taxi. 西安饭店 trong bài là nhà hàng Tây An.",
+        "skill": "怎么与交通方式",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "明天 cho biết ngày đi, chưa cho biết phương tiện.",
+          "想吃米饭 cho biết món muốn ăn, chưa trả lời cách đi.",
+          "去超市 cho biết một điểm đến khác, chưa trả lời phương tiện đến nhà hàng.",
+          "坐出租车去 trả lời trực tiếp cách đi: đi bằng taxi."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 39, 40, 41",
+          "printPages": [
+            39,
+            40,
+            41
+          ],
+          "pdfPages": [
+            54,
+            55,
+            56
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-choice-04",
+        "prompt": "Theo câu dưới đây, người nói muốn ăn món nào?",
+        "stem": "我想吃米饭，不想吃包子。",
+        "options": [
+          "米饭",
+          "包子",
+          "饺子",
+          "面条儿"
+        ],
+        "answer": 0,
+        "explanation": "想吃米饭 nghĩa là muốn ăn cơm. 不想吃包子 nghĩa là không muốn ăn bánh bao. 不 đứng trước 想 để phủ định mong muốn.",
+        "skill": "想与不想",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "米饭 là cơm, đúng món người nói muốn ăn.",
+          "包子 là bánh bao; người nói dùng 不想吃 với món này.",
+          "饺子 là sủi cảo, không phải món được nói là muốn ăn.",
+          "面条儿 là mì, không phải món được nói là muốn ăn."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 31, 38, 39",
+          "printPages": [
+            31,
+            38,
+            39
+          ],
+          "pdfPages": [
+            46,
+            53,
+            54
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-choice-05",
+        "prompt": "Chọn nghĩa phù hợp với câu dưới đây.",
+        "stem": "他们去西安饭店吃晚饭。",
+        "options": [
+          "Họ đến siêu thị mua sữa.",
+          "Họ đến nhà hàng Tây An ăn tối.",
+          "Họ đến nhà hàng Tây An mua điện thoại.",
+          "Họ đi taxi đến nhà hàng Tây An."
+        ],
+        "answer": 1,
+        "explanation": "去西安饭店 nêu điểm đến; 吃晚饭 nêu mục đích là ăn tối. Câu không cho biết đi bằng phương tiện nào.",
+        "skill": "连动句表示目的",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "Siêu thị và mua sữa tương ứng với 去超市买牛奶, không phải nội dung câu này.",
+          "西安饭店 là nhà hàng Tây An; 吃晚饭 là ăn tối.",
+          "买手机 là mua điện thoại; câu dùng 吃晚饭, tức ăn tối.",
+          "Câu không có 坐出租车 nên không cho biết đi taxi."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 2, 25, 39, 40",
+          "printPages": [
+            2,
+            25,
+            39,
+            40
+          ],
+          "pdfPages": [
+            17,
+            40,
+            54,
+            55
+          ]
+        }
+      }
+    ],
+    "sort": [
+      {
+        "id": "l06-s2-sort-01",
+        "prompt": "Ghép câu hỏi số điện thoại. Bắt đầu bằng 你.",
+        "meaning": "Số điện thoại di động của bạn là bao nhiêu?",
+        "tokens": [
+          "你",
+          "的",
+          "手机号",
+          "是",
+          "多少"
+        ],
+        "answers": [
+          "你的手机号是多少？"
+        ],
+        "explanation": "你的手机号 là số điện thoại di động của bạn. Đặt 是 trước 多少 để tạo câu hỏi đã học: 你的手机号是多少？",
+        "skill": "询问手机号",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 36",
+          "printPages": [
+            36
+          ],
+          "pdfPages": [
+            51
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-sort-02",
+        "prompt": "Ghép câu diễn tả mong muốn. Bắt đầu bằng 我.",
+        "meaning": "Tôi muốn mua một ít bánh bao.",
+        "tokens": [
+          "我",
+          "想",
+          "买",
+          "些",
+          "包子"
+        ],
+        "answers": [
+          "我想买些包子。"
+        ],
+        "explanation": "想 đứng trước hành động 买. 些 đứng trước 包子 và diễn tả một lượng không xác định: một ít bánh bao.",
+        "skill": "想与些",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 37, 38, 39",
+          "printPages": [
+            37,
+            38,
+            39
+          ],
+          "pdfPages": [
+            52,
+            53,
+            54
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-sort-03",
+        "prompt": "Ghép câu nêu nơi đến và mục đích. Bắt đầu bằng 她.",
+        "meaning": "Cô ấy đến siêu thị mua sữa.",
+        "tokens": [
+          "她",
+          "去",
+          "超市",
+          "买",
+          "牛奶"
+        ],
+        "answers": [
+          "她去超市买牛奶。"
+        ],
+        "explanation": "去超市 cho biết đi đâu; 买牛奶 cho biết đến đó để làm gì. Hai hành động nối tiếp, cùng chủ ngữ 她.",
+        "skill": "连动句表示目的",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 37, 38, 40",
+          "printPages": [
+            37,
+            38,
+            40
+          ],
+          "pdfPages": [
+            52,
+            53,
+            55
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-sort-04",
+        "prompt": "Ghép câu nêu phương tiện và điểm đến. Bắt đầu bằng 我们; đặt 坐出租车 trước 去.",
+        "meaning": "Chúng tôi đi taxi đến nhà hàng Tây An.",
+        "tokens": [
+          "我们",
+          "坐",
+          "出租车",
+          "去",
+          "西安饭店"
+        ],
+        "answers": [
+          "我们坐出租车去西安饭店。"
+        ],
+        "explanation": "坐出租车 là đi bằng taxi. Theo thứ tự được yêu cầu, đặt cách đi trước 去西安饭店: 我们坐出租车去西安饭店。",
+        "skill": "连动句表示方式",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 39, 40, 41",
+          "printPages": [
+            39,
+            40,
+            41
+          ],
+          "pdfPages": [
+            54,
+            55,
+            56
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-sort-05",
+        "prompt": "Ghép câu phủ định mong muốn. Bắt đầu bằng 妈妈.",
+        "meaning": "Mẹ không muốn ăn cơm.",
+        "tokens": [
+          "妈妈",
+          "不",
+          "想",
+          "吃",
+          "米饭"
+        ],
+        "answers": [
+          "妈妈不想吃米饭。"
+        ],
+        "explanation": "不想 + hành động nghĩa là không muốn làm việc đó. Đặt 不 trước 想 để nói mẹ không muốn ăn cơm.",
+        "skill": "不想",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 38, 39",
+          "printPages": [
+            38,
+            39
+          ],
+          "pdfPages": [
+            53,
+            54
+          ]
+        }
+      }
+    ],
+    "translation": [
+      {
+        "id": "l06-s2-translation-free-01",
+        "prompt": "Số điện thoại di động của giáo viên là bao nhiêu?",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "询问手机号",
+        "source": {
+          "label": "Giáo trình, tr. 2, 12, 36",
+          "printPages": [
+            2,
+            12,
+            36
+          ],
+          "pdfPages": [
+            17,
+            27,
+            51
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-translation-free-02",
+        "prompt": "Ngày mai tôi muốn đến siêu thị mua một ít sữa.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "想与目的连动句",
+        "source": {
+          "label": "Giáo trình, tr. 37, 38, 40",
+          "printPages": [
+            37,
+            38,
+            40
+          ],
+          "pdfPages": [
+            52,
+            53,
+            55
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-translation-free-03",
+        "prompt": "Chị gái tôi không muốn ăn bánh bao.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "不想与亲属关系",
+        "source": {
+          "label": "Giáo trình, tr. 14, 38, 39",
+          "printPages": [
+            14,
+            38,
+            39
+          ],
+          "pdfPages": [
+            29,
+            53,
+            54
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-translation-free-04",
+        "prompt": "Chị gái tôi đi taxi đến nhà hàng Tây An.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "连动句表示方式",
+        "source": {
+          "label": "Giáo trình, tr. 14, 39, 40, 41",
+          "printPages": [
+            14,
+            39,
+            40,
+            41
+          ],
+          "pdfPages": [
+            29,
+            54,
+            55,
+            56
+          ]
+        }
+      },
+      {
+        "id": "l06-s2-translation-free-05",
+        "prompt": "Bánh bao ở nhà hàng Tây An rất ngon.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "的与食物评价",
+        "source": {
+          "label": "Giáo trình, tr. 12, 39",
+          "printPages": [
+            12,
+            39
+          ],
+          "pdfPages": [
+            27,
+            54
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "lesson": 7,
+    "title": "我晚上六点半下班",
+    "title_vi": "Tôi tan làm lúc sáu giờ rưỡi tối",
+    "goal_vi": "Nói giờ và lịch sinh hoạt; rủ ai làm gì bằng 吧; cho biết mình ở đâu.",
+    "goal_zh": "表达钟点和日程，用“吧”提议，区分“呢”的陈述用法，描述所在位置。",
+    "scope_note_vi": "Ôn Bài 1–6 và luyện Bài 7. Trong bài này 在 diễn tả vị trí; thời gian có thể đứng trước hoặc sau chủ ngữ.",
+    "source": {
+      "label": "Giáo trình, tr. 45–53",
+      "printPages": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "pdfPages": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "book": "新HSK教程1"
+    },
+    "choice": [
+      {
+        "id": "l07-s2-choice-01",
+        "prompt": "Chọn cách nói giờ 16:30 theo mẫu buổi trong ngày + giờ.",
+        "stem": "16:30",
+        "options": [
+          "下午四点半",
+          "下午五点半",
+          "上午四点半",
+          "下午四点十分"
+        ],
+        "answer": 0,
+        "explanation": "16:30 là bốn giờ rưỡi chiều: 下午四点半. 半 sau 点 nghĩa là nửa giờ, tức 30 phút.",
+        "skill": "钟点与半",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "下午四点半 tương ứng 16:30.",
+          "下午五点半 tương ứng 17:30.",
+          "上午四点半 chỉ 4:30 buổi sáng, không phải 16:30.",
+          "下午四点十分 tương ứng 16:10, không phải 16:30."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 47, 49",
+          "printPages": [
+            47,
+            49
+          ],
+          "pdfPages": [
+            62,
+            64
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-choice-02",
+        "prompt": "Chọn câu rủ người nghe cùng đi xem phim.",
+        "stem": "",
+        "options": [
+          "你几点去电影院？",
+          "我们去电影院看电影吧。",
+          "我们不去电影院。",
+          "你怎么去电影院？"
+        ],
+        "answer": 1,
+        "explanation": "我们……吧 là một cách đề nghị cùng làm việc gì. 我们去电影院看电影吧。 nghĩa là “Chúng ta đến rạp xem phim nhé”.",
+        "skill": "吧表示提议",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "你几点去电影院？ hỏi mấy giờ đi rạp chiếu phim, không nêu lời rủ cùng đi.",
+          "我们去电影院看电影吧。 dùng 吧 để đề nghị cùng đi xem phim.",
+          "我们不去电影院。 là thông báo không đi rạp chiếu phim.",
+          "你怎么去电影院？ hỏi cách đi đến rạp chiếu phim."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 47, 48, 49",
+          "printPages": [
+            47,
+            48,
+            49
+          ],
+          "pdfPages": [
+            62,
+            63,
+            64
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-choice-03",
+        "prompt": "Chọn câu trả lời trực tiếp cho biết người nói đang ở đâu.",
+        "stem": "你在哪儿呢？",
+        "options": [
+          "我晚上六点下班。",
+          "我想吃米饭。",
+          "我在家里。",
+          "我明天有课。"
+        ],
+        "answer": 2,
+        "explanation": "在哪儿 hỏi vị trí. 我在家里 trực tiếp trả lời “Tôi ở nhà”. Trong câu này 在 là động từ chỉ vị trí.",
+        "skill": "在表示位置",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "晚上六点下班 cho biết giờ tan làm, không cho biết vị trí hiện tại.",
+          "想吃米饭 cho biết mong muốn ăn cơm, không cho biết ở đâu.",
+          "在家里 cho biết người nói ở nhà.",
+          "明天有课 cho biết lịch học ngày mai, không cho biết vị trí."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 50, 51",
+          "printPages": [
+            50,
+            51
+          ],
+          "pdfPages": [
+            65,
+            66
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-choice-04",
+        "prompt": "Theo câu dưới đây, thời điểm nào được nói rõ là không có tiết học?",
+        "stem": "我今天下午有课，明天下午没有课。",
+        "options": [
+          "今天上午",
+          "今天下午",
+          "明天上午",
+          "明天下午"
+        ],
+        "answer": 3,
+        "explanation": "明天下午没有课 nêu rõ chiều mai không có tiết học. 今天下午有课 nêu chiều nay có học; câu không cho biết lịch buổi sáng.",
+        "skill": "时间与有没有课",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "Câu không cho biết sáng nay có tiết học hay không.",
+          "今天下午有课 nói rõ chiều nay có tiết học.",
+          "Câu không cho biết sáng mai có tiết học hay không.",
+          "明天下午没有课 nói rõ chiều mai không có tiết học."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 46, 49, 50",
+          "printPages": [
+            46,
+            49,
+            50
+          ],
+          "pdfPages": [
+            61,
+            64,
+            65
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-choice-05",
+        "prompt": "Chọn cách hiểu phù hợp. Đây là một câu trần thuật.",
+        "stem": "我明天还有课呢。",
+        "options": [
+          "Ngày mai tôi vẫn còn có tiết học mà.",
+          "Ngày mai tôi có tiết học không?",
+          "Ngày mai tôi không có tiết học.",
+          "Bây giờ tôi đang ở nhà."
+        ],
+        "answer": 0,
+        "explanation": "还有课 là vẫn còn có tiết học. 呢 ở cuối câu này nhấn mạnh một sự việc; nó không biến câu thành câu hỏi có – không.",
+        "skill": "陈述句末的呢",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "Câu xác nhận và nhấn mạnh ngày mai vẫn còn có tiết học.",
+          "Câu không dùng 吗 để hỏi có tiết học hay không; 呢 ở đây dùng trong câu trần thuật.",
+          "没有课 mới là không có tiết học; câu dùng 还有课.",
+          "Câu nói về ngày mai và tiết học, không nêu vị trí ở nhà lúc này."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 49, 50",
+          "printPages": [
+            49,
+            50
+          ],
+          "pdfPages": [
+            64,
+            65
+          ]
+        }
+      }
+    ],
+    "sort": [
+      {
+        "id": "l07-s2-sort-01",
+        "prompt": "Ghép câu nêu giờ tan làm. Giữ 晚上 ở trước 七点半; có thể đặt thời gian trước hoặc sau 我.",
+        "meaning": "Tôi tan làm lúc bảy giờ rưỡi tối.",
+        "tokens": [
+          "我",
+          "晚上",
+          "七点半",
+          "下班"
+        ],
+        "answers": [
+          "我晚上七点半下班。",
+          "晚上七点半我下班。",
+          "晚上我七点半下班。"
+        ],
+        "explanation": "晚上七点半 là bảy giờ rưỡi tối. Có thể đặt cả cụm thời gian trước hoặc sau 我; cũng có thể nói 晚上我七点半下班. Các cách này đều được chấp nhận.",
+        "skill": "时间状语的位置",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 47, 49, 50, 51",
+          "printPages": [
+            47,
+            49,
+            50,
+            51
+          ],
+          "pdfPages": [
+            62,
+            64,
+            65,
+            66
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-sort-02",
+        "prompt": "Ghép lời hẹn gặp. Có thể đặt 下午三点 trước hoặc sau 我们.",
+        "meaning": "Chúng ta gặp nhau lúc ba giờ chiều nhé.",
+        "tokens": [
+          "我们",
+          "下午三点",
+          "见",
+          "吧"
+        ],
+        "answers": [
+          "我们下午三点见吧。",
+          "下午三点我们见吧。"
+        ],
+        "explanation": "下午三点 cho biết giờ gặp. 吧 đặt ở cuối để đề nghị một cuộc hẹn. Cả hai vị trí của cụm thời gian đều được chấp nhận.",
+        "skill": "时间与吧",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 46, 47, 48, 49",
+          "printPages": [
+            46,
+            47,
+            48,
+            49
+          ],
+          "pdfPages": [
+            61,
+            62,
+            63,
+            64
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-sort-03",
+        "prompt": "Ghép câu nói về lịch học của chị gái. Có thể đặt 上午九点 trước hoặc sau 姐姐.",
+        "meaning": "Chị gái có tiết học lúc chín giờ sáng.",
+        "tokens": [
+          "姐姐",
+          "上午九点",
+          "有",
+          "课"
+        ],
+        "answers": [
+          "姐姐上午九点有课。",
+          "上午九点姐姐有课。"
+        ],
+        "explanation": "有课 nghĩa là có tiết học. 上午九点 có thể đứng trước hoặc sau 姐姐, nhưng cần đứng trước 有课 trong mẫu đang luyện.",
+        "skill": "时间与有课",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 46, 49, 50",
+          "printPages": [
+            46,
+            49,
+            50
+          ],
+          "pdfPages": [
+            61,
+            64,
+            65
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-sort-04",
+        "prompt": "Ghép câu khẳng định vị trí. Bắt đầu bằng 我.",
+        "meaning": "Tôi ở nhà mà.",
+        "tokens": [
+          "我",
+          "在",
+          "家里",
+          "呢"
+        ],
+        "answers": [
+          "我在家里呢。"
+        ],
+        "explanation": "在家里 cho biết vị trí ở nhà. 呢 ở cuối câu này nhấn mạnh lời xác nhận; câu không hỏi người nghe.",
+        "skill": "位置动词在与陈述呢",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 50, 51",
+          "printPages": [
+            50,
+            51
+          ],
+          "pdfPages": [
+            65,
+            66
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-sort-05",
+        "prompt": "Ghép câu nêu thời điểm đi siêu thị. Có thể đặt 十分钟后 trước hoặc sau 我.",
+        "meaning": "Mười phút nữa tôi đi siêu thị.",
+        "tokens": [
+          "我",
+          "十分钟后",
+          "去",
+          "超市"
+        ],
+        "answers": [
+          "我十分钟后去超市。",
+          "十分钟后我去超市。"
+        ],
+        "explanation": "十分钟后 nghĩa là mười phút nữa. Đặt cụm thời gian trước hành động 去超市; có thể đặt trước hoặc sau 我.",
+        "skill": "一段时间后",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 37, 49, 50, 51",
+          "printPages": [
+            37,
+            49,
+            50,
+            51
+          ],
+          "pdfPages": [
+            52,
+            64,
+            65,
+            66
+          ]
+        }
+      }
+    ],
+    "translation": [
+      {
+        "id": "l07-s2-translation-free-01",
+        "prompt": "Tôi tan học lúc bốn giờ chiều.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "钟点与下课",
+        "source": {
+          "label": "Giáo trình, tr. 47, 49, 50",
+          "printPages": [
+            47,
+            49,
+            50
+          ],
+          "pdfPages": [
+            62,
+            64,
+            65
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-translation-free-02",
+        "prompt": "Tối nay tôi muốn đến rạp chiếu phim xem phim.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "时间与想、连动句",
+        "source": {
+          "label": "Giáo trình, tr. 38, 40, 49, 50",
+          "printPages": [
+            38,
+            40,
+            49,
+            50
+          ],
+          "pdfPages": [
+            53,
+            55,
+            64,
+            65
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-translation-free-03",
+        "prompt": "Ngày mai chúng ta gặp nhau lúc chín giờ sáng nhé.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "时间与吧",
+        "source": {
+          "label": "Giáo trình, tr. 46, 47, 48, 49, 50",
+          "printPages": [
+            46,
+            47,
+            48,
+            49,
+            50
+          ],
+          "pdfPages": [
+            61,
+            62,
+            63,
+            64,
+            65
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-translation-free-04",
+        "prompt": "Bây giờ bố tôi ở nhà.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "现在与位置动词在",
+        "source": {
+          "label": "Giáo trình, tr. 46, 50, 51",
+          "printPages": [
+            46,
+            50,
+            51
+          ],
+          "pdfPages": [
+            61,
+            65,
+            66
+          ]
+        }
+      },
+      {
+        "id": "l07-s2-translation-free-05",
+        "prompt": "Mười phút nữa chị gái tôi đi làm ở bệnh viện.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "时间后与去医院上班",
+        "source": {
+          "label": "Giáo trình, tr. 49, 50, 51",
+          "printPages": [
+            49,
+            50,
+            51
+          ],
+          "pdfPages": [
+            64,
+            65,
+            66
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "lesson": 8,
+    "title": "我爸爸也在医院工作",
+    "title_vi": "Bố tôi cũng làm việc ở bệnh viện",
+    "goal_vi": "Nói vị trí đồ vật; nói làm gì ở đâu; hỏi có thể đến hay không và nói chưa nhìn thấy.",
+    "goal_zh": "运用方位词和“在+地点+动作”，用“能”表达条件许可，理解“没看见”。",
+    "scope_note_vi": "Ôn Bài 1–7 và luyện Bài 8. Phân biệt 在 chỉ vị trí với 在 + nơi chốn đứng trước hành động; 能 trong bài hỏi điều kiện có cho phép hay không.",
+    "source": {
+      "label": "Giáo trình, tr. 54–60",
+      "printPages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "pdfPages": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "book": "新HSK教程1"
+    },
+    "choice": [
+      {
+        "id": "l08-s2-choice-01",
+        "prompt": "Chọn câu diễn đạt đầy đủ vị trí: “Con mèo nhỏ ở dưới bàn”.",
+        "stem": "",
+        "options": [
+          "小猫在房间外。",
+          "小猫在书店前。",
+          "小猫在桌子下。",
+          "小猫在家里。"
+        ],
+        "answer": 2,
+        "explanation": "桌子下 là dưới bàn: đặt từ chỉ phương vị 下 sau 桌子. 小猫在桌子下 trực tiếp nêu đúng vị trí được yêu cầu.",
+        "skill": "方位词下",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "房间外 là bên ngoài phòng, không phải dưới bàn.",
+          "书店前 là phía trước hiệu sách, không phải dưới bàn.",
+          "桌子下 nghĩa là dưới bàn, đúng vị trí trong đề.",
+          "家里 chỉ ở trong nhà, chưa diễn đạt vị trí cụ thể dưới bàn."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 55, 56, 57",
+          "printPages": [
+            55,
+            56,
+            57
+          ],
+          "pdfPages": [
+            70,
+            71,
+            72
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-choice-02",
+        "prompt": "Chọn lượng từ đã học để nói “một con mèo nhỏ”.",
+        "stem": "我家有一___小猫。",
+        "options": [
+          "只",
+          "个",
+          "口",
+          "些"
+        ],
+        "answer": 0,
+        "explanation": "Trong mẫu của bài, 一只小猫 là một con mèo nhỏ. 只 là lượng từ dùng với 猫; đặt sau số 一 và trước 小猫.",
+        "skill": "量词只",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "只 tạo đúng cụm 一只小猫 trong cách dùng được dạy ở bài này.",
+          "个 được dùng với nhiều danh từ, nhưng lượng từ được học cho 猫 là 只.",
+          "口 dùng khi đếm số người trong gia đình, như 三口人.",
+          "一些 nghĩa là một ít hoặc một số; không diễn đạt đúng số lượng một con trong yêu cầu."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 19, 20, 31, 55",
+          "printPages": [
+            19,
+            20,
+            31,
+            55
+          ],
+          "pdfPages": [
+            34,
+            35,
+            46,
+            70
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-choice-03",
+        "prompt": "Chọn câu trả lời trực tiếp cho biết nơi mẹ làm việc.",
+        "stem": "妈妈在哪儿工作？",
+        "options": [
+          "妈妈今天没有课。",
+          "妈妈上午九点下班。",
+          "妈妈想去医院。",
+          "妈妈在医院工作。"
+        ],
+        "answer": 3,
+        "explanation": "在医院工作 nghĩa là làm việc ở bệnh viện. 在医院 đứng trước 工作 để nêu nơi diễn ra hành động làm việc.",
+        "skill": "在作介词与工作作动词",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "今天没有课 cho biết hôm nay mẹ không có tiết học, không cho biết nơi làm việc.",
+          "上午九点下班 cho biết giờ tan làm, không cho biết nơi làm việc.",
+          "想去医院 nói mẹ muốn đến bệnh viện, chưa xác nhận mẹ làm việc ở đó.",
+          "在医院工作 trực tiếp nói mẹ làm việc ở bệnh viện."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 57, 59",
+          "printPages": [
+            57,
+            59
+          ],
+          "pdfPages": [
+            72,
+            74
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-choice-04",
+        "prompt": "Bạn muốn hỏi người kia có thể đến lúc hai giờ chiều hay không. Chọn câu hỏi phù hợp.",
+        "stem": "",
+        "options": [
+          "你下午几点到？",
+          "你下午两点能到吗？",
+          "你下午两点想去哪儿？",
+          "你下午两点在哪儿？"
+        ],
+        "answer": 1,
+        "explanation": "下午两点能到吗？ hỏi điều kiện có cho phép đến lúc hai giờ chiều hay không. 能 ở đây không hỏi một kỹ năng đã học như 会做饭.",
+        "skill": "能表示条件许可",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "几点到 hỏi mấy giờ đến; chưa hỏi khả năng đến vào giờ cụ thể đã nêu.",
+          "下午两点能到吗？ hỏi đúng khả năng đến lúc hai giờ chiều.",
+          "想去哪儿 hỏi muốn đi đâu, không hỏi có thể đến lúc hai giờ hay không.",
+          "在哪儿 hỏi ở đâu vào giờ đó, không hỏi có thể đến hay không."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 57, 58",
+          "printPages": [
+            57,
+            58
+          ],
+          "pdfPages": [
+            72,
+            73
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-choice-05",
+        "prompt": "Chọn nghĩa phù hợp với câu dưới đây.",
+        "stem": "我没看见小猫。",
+        "options": [
+          "Tôi không có con mèo nhỏ.",
+          "Tôi không muốn nhìn con mèo nhỏ.",
+          "Tôi chưa nhìn thấy con mèo nhỏ.",
+          "Tôi muốn mua một con mèo nhỏ."
+        ],
+        "answer": 2,
+        "explanation": "没看见 nghĩa là chưa hoặc không nhìn thấy trong tình huống đang nói. Câu nói về việc nhìn thấy, không phải có nuôi mèo hay muốn làm gì.",
+        "skill": "没看见",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "Không có mèo nói về sở hữu; câu dùng 没看见, nói về việc chưa nhìn thấy.",
+          "不想 mới diễn tả không muốn; câu dùng 没看见.",
+          "Chưa nhìn thấy con mèo nhỏ diễn đạt đúng 没看见小猫 trong tình huống này.",
+          "Câu không có 想买 nên không nói muốn mua mèo."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 55",
+          "printPages": [
+            55
+          ],
+          "pdfPages": [
+            70
+          ]
+        }
+      }
+    ],
+    "sort": [
+      {
+        "id": "l08-s2-sort-01",
+        "prompt": "Ghép câu nói vị trí của mèo. Bắt đầu bằng 小猫.",
+        "meaning": "Con mèo nhỏ ở dưới bàn.",
+        "tokens": [
+          "小猫",
+          "在",
+          "桌子",
+          "下"
+        ],
+        "answers": [
+          "小猫在桌子下。"
+        ],
+        "explanation": "Trong cụm 桌子下, danh từ 桌子 đứng trước từ chỉ phương vị 下. 小猫在桌子下 nói con mèo nhỏ ở dưới bàn.",
+        "skill": "名词与方位词",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 55, 56",
+          "printPages": [
+            55,
+            56
+          ],
+          "pdfPages": [
+            70,
+            71
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-sort-02",
+        "prompt": "Ghép câu nói mẹ làm việc ở đâu. Bắt đầu bằng 我妈妈.",
+        "meaning": "Mẹ tôi làm việc ở bệnh viện.",
+        "tokens": [
+          "我妈妈",
+          "在",
+          "医院",
+          "工作"
+        ],
+        "answers": [
+          "我妈妈在医院工作。"
+        ],
+        "explanation": "在医院 đứng trước 工作 để nêu nơi làm việc. Chủ ngữ 我妈妈 đứng đầu theo yêu cầu của đề.",
+        "skill": "在地点动作",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 57, 59",
+          "printPages": [
+            57,
+            59
+          ],
+          "pdfPages": [
+            72,
+            74
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-sort-03",
+        "prompt": "Ghép lời hẹn gặp. Bắt đầu bằng 我们.",
+        "meaning": "Chúng ta gặp nhau trước hiệu sách nhé.",
+        "tokens": [
+          "我们",
+          "在",
+          "书店前",
+          "见",
+          "吧"
+        ],
+        "answers": [
+          "我们在书店前见吧。"
+        ],
+        "explanation": "在书店前 nêu nơi gặp và đứng trước 见. 吧 ở cuối tạo lời đề nghị: gặp nhau trước hiệu sách nhé.",
+        "skill": "在、方位与吧",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 47, 48, 56, 57",
+          "printPages": [
+            47,
+            48,
+            56,
+            57
+          ],
+          "pdfPages": [
+            62,
+            63,
+            71,
+            72
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-sort-04",
+        "prompt": "Ghép câu nói có thể đến. Bắt đầu bằng 我; đặt 下午两点 trước 能.",
+        "meaning": "Tôi có thể đến lúc hai giờ chiều.",
+        "tokens": [
+          "我",
+          "下午两点",
+          "能",
+          "到"
+        ],
+        "answers": [
+          "我下午两点能到。"
+        ],
+        "explanation": "Đề này luyện trật tự 我 + thời gian + 能 + 到. 下午两点能到 nghĩa là có thể đến lúc hai giờ chiều.",
+        "skill": "能与时间",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 57, 58",
+          "printPages": [
+            57,
+            58
+          ],
+          "pdfPages": [
+            72,
+            73
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-sort-05",
+        "prompt": "Ghép câu nói chưa nhìn thấy. Bắt đầu bằng 我.",
+        "meaning": "Tôi chưa nhìn thấy con mèo nhỏ.",
+        "tokens": [
+          "我",
+          "没",
+          "看见",
+          "小猫"
+        ],
+        "answers": [
+          "我没看见小猫。"
+        ],
+        "explanation": "没 đứng trước 看见 để nói chưa hoặc không nhìn thấy. Giữ 看见 thành một cụm hành động đã học.",
+        "skill": "没看见",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 55",
+          "printPages": [
+            55
+          ],
+          "pdfPages": [
+            70
+          ]
+        }
+      }
+    ],
+    "translation": [
+      {
+        "id": "l08-s2-translation-free-01",
+        "prompt": "Con mèo nhỏ ở ngoài phòng.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "方位词外",
+        "source": {
+          "label": "Giáo trình, tr. 55, 56",
+          "printPages": [
+            55,
+            56
+          ],
+          "pdfPages": [
+            70,
+            71
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-translation-free-02",
+        "prompt": "Mẹ tôi làm việc ở trường.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "在地点工作",
+        "source": {
+          "label": "Giáo trình, tr. 56, 57, 59",
+          "printPages": [
+            56,
+            57,
+            59
+          ],
+          "pdfPages": [
+            71,
+            72,
+            74
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-translation-free-03",
+        "prompt": "Chúng ta gặp nhau trước siêu thị nhé.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "在与方位、吧",
+        "source": {
+          "label": "Giáo trình, tr. 37, 47, 48, 56, 57",
+          "printPages": [
+            37,
+            47,
+            48,
+            56,
+            57
+          ],
+          "pdfPages": [
+            52,
+            62,
+            63,
+            71,
+            72
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-translation-free-04",
+        "prompt": "Chiều nay tôi không thể đến lúc ba giờ.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "不能与时间",
+        "source": {
+          "label": "Giáo trình, tr. 49, 50, 57, 58",
+          "printPages": [
+            49,
+            50,
+            57,
+            58
+          ],
+          "pdfPages": [
+            64,
+            65,
+            72,
+            73
+          ]
+        }
+      },
+      {
+        "id": "l08-s2-translation-free-05",
+        "prompt": "Bố tôi vẫn chưa ăn trưa.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "还没与吃午饭",
+        "source": {
+          "label": "Giáo trình, tr. 57, 59",
+          "printPages": [
+            57,
+            59
+          ],
+          "pdfPages": [
+            72,
+            74
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "lesson": 9,
+    "title": "我明天上午在学校学习",
+    "title_vi": "Sáng mai tôi học ở trường",
+    "goal_vi": "Nói ở đâu có gì; đặt thời gian và nơi chốn trong câu; phân biệt số lượng với thứ tự; nói hoạt động cùng bạn bè.",
+    "goal_zh": "练习存现句、时间与处所状语、家和本等量词以及“第”序数，描述日常活动。",
+    "scope_note_vi": "Ôn Bài 1–8 và luyện Bài 9. 家 có thêm cách dùng làm lượng từ cho cửa hàng; 和 có thể mang nghĩa “cùng với”; 第 chỉ thứ tự.",
+    "source": {
+      "label": "Giáo trình, tr. 61–69",
+      "printPages": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "pdfPages": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "book": "新HSK教程1"
+    },
+    "choice": [
+      {
+        "id": "l09-s2-choice-01",
+        "prompt": "Cuốn sách tiếng Trung được nói tới ở đâu?",
+        "stem": "椅子上有一本中文书。",
+        "options": [
+          "书店里",
+          "学校外边",
+          "桌子上",
+          "椅子上"
+        ],
+        "answer": 3,
+        "explanation": "椅子上 ở đầu câu nêu vị trí là trên ghế; 有一本中文书 cho biết ở đó có một quyển sách tiếng Trung.",
+        "skill": "处所有名词",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "书店里 là trong hiệu sách; câu nói 椅子上.",
+          "学校外边 là bên ngoài trường; câu không nêu vị trí đó.",
+          "桌子上 là trên bàn, khác 椅子上 là trên ghế.",
+          "椅子上 là trên ghế, đúng vị trí được nêu."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 62, 63, 64",
+          "printPages": [
+            62,
+            63,
+            64
+          ],
+          "pdfPages": [
+            77,
+            78,
+            79
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-choice-02",
+        "prompt": "Trên bàn có mấy quyển sách theo câu dưới đây?",
+        "stem": "桌子上有两本书，椅子上有一本书。",
+        "options": [
+          "一本",
+          "两本",
+          "三本",
+          "四本"
+        ],
+        "answer": 1,
+        "explanation": "Câu tách hai vị trí: 桌子上有两本书 là trên bàn có hai quyển; 椅子上有一本书 là trên ghế có một quyển. Câu hỏi chỉ hỏi trên bàn.",
+        "skill": "本与处所信息",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "一本 là số sách trên ghế, không phải trên bàn.",
+          "两本 là đúng số sách ở 桌子上.",
+          "三本 là tổng số sách được nhắc tới ở hai vị trí, không phải số trên bàn.",
+          "四本 không phải số lượng được nêu ở vị trí nào."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 63, 64",
+          "printPages": [
+            63,
+            64
+          ],
+          "pdfPages": [
+            78,
+            79
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-choice-03",
+        "prompt": "Chọn nghĩa phù hợp, chú ý 第三本.",
+        "stem": "这是我的第三本中文书。",
+        "options": [
+          "Đây là quyển sách tiếng Trung thứ ba của tôi.",
+          "Đây là ba quyển sách tiếng Trung của tôi.",
+          "Đây là quyển sách tiếng Trung thứ hai của tôi.",
+          "Đây là quyển sách tiếng Trung thứ ba của bạn tôi."
+        ],
+        "answer": 0,
+        "explanation": "第 đặt trước số để chỉ thứ tự. 第三本 là quyển thứ ba; 三本 không có 第 mới chỉ số lượng ba quyển.",
+        "skill": "第与数量区别",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "第三本 là quyển thứ ba; 我的 là của tôi.",
+          "三本 là ba quyển, nhưng câu có 第三本, chỉ một quyển ở vị trí thứ ba.",
+          "Thứ hai là 第二本; câu dùng 第三本.",
+          "我的 là của tôi, không phải của bạn tôi."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 64, 65",
+          "printPages": [
+            64,
+            65
+          ],
+          "pdfPages": [
+            79,
+            80
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-choice-04",
+        "prompt": "Sáng mai tôi học ở trường. Chọn câu đúng đủ thông tin này.",
+        "stem": "",
+        "options": [
+          "我明天上午在家里学习。",
+          "我今天上午在学校学习。",
+          "我明天上午在学校学习。",
+          "我明天下午在学校学习。"
+        ],
+        "answer": 2,
+        "explanation": "明天上午 là sáng mai; 在学校 là ở trường; 学习 là học. Mẫu đang luyện đặt thời gian trước nơi diễn ra hoạt động.",
+        "skill": "时间处所动作",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "在家里 là ở nhà, khác địa điểm ở trường trong đề.",
+          "今天上午 là sáng nay, không phải sáng mai.",
+          "明天上午 + 在学校 + 学习 giữ đúng cả thời gian, địa điểm và hoạt động.",
+          "明天下午 là chiều mai, không phải sáng mai."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 63, 64",
+          "printPages": [
+            63,
+            64
+          ],
+          "pdfPages": [
+            78,
+            79
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-choice-05",
+        "prompt": "Theo câu dưới đây, ban ngày người nói làm gì?",
+        "stem": "我白天在家里读书，晚上和朋友唱歌。",
+        "options": [
+          "唱歌",
+          "看电视",
+          "做饭",
+          "读书"
+        ],
+        "answer": 3,
+        "explanation": "白天 là ban ngày. 白天在家里读书 cho biết ban ngày đọc sách ở nhà; 晚上和朋友唱歌 nêu hoạt động vào buổi tối.",
+        "skill": "白天晚上与活动",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "唱歌 là hát, được nói là hoạt động buổi tối.",
+          "看电视 là xem tivi, không được nêu trong câu này.",
+          "做饭 là nấu ăn, không được nêu trong câu này.",
+          "读书 là đọc sách, đúng hoạt động được gắn với 白天."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 66",
+          "printPages": [
+            66
+          ],
+          "pdfPages": [
+            81
+          ]
+        }
+      }
+    ],
+    "sort": [
+      {
+        "id": "l09-s2-sort-01",
+        "prompt": "Ghép câu giới thiệu có gì trên bàn. Bắt đầu bằng 桌子上.",
+        "meaning": "Trên bàn có hai quyển sách.",
+        "tokens": [
+          "桌子上",
+          "有",
+          "两",
+          "本",
+          "书"
+        ],
+        "answers": [
+          "桌子上有两本书。"
+        ],
+        "explanation": "Trong mẫu nêu có gì ở đâu, đặt nơi chốn trước 有. 两本书 là hai quyển sách; 本 là lượng từ của 书.",
+        "skill": "存现句与本",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 63, 64",
+          "printPages": [
+            63,
+            64
+          ],
+          "pdfPages": [
+            78,
+            79
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-sort-02",
+        "prompt": "Ghép câu giới thiệu có gì trước trường. Bắt đầu bằng 学校前边.",
+        "meaning": "Trước trường có một hiệu sách.",
+        "tokens": [
+          "学校前边",
+          "有",
+          "一",
+          "家",
+          "书店"
+        ],
+        "answers": [
+          "学校前边有一家书店。"
+        ],
+        "explanation": "学校前边 cho biết vị trí trước trường. 一家书店 là một hiệu sách; 家 ở đây là lượng từ, không mang nghĩa nhà riêng.",
+        "skill": "存现句与家",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 56, 62, 63",
+          "printPages": [
+            56,
+            62,
+            63
+          ],
+          "pdfPages": [
+            71,
+            77,
+            78
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-sort-03",
+        "prompt": "Ghép câu giới thiệu một quyển sách theo thứ tự. Bắt đầu bằng 这.",
+        "meaning": "Đây là quyển sách tiếng Trung thứ ba của tôi.",
+        "tokens": [
+          "这",
+          "是",
+          "我的",
+          "第",
+          "三",
+          "本",
+          "中文书"
+        ],
+        "answers": [
+          "这是我的第三本中文书。"
+        ],
+        "explanation": "Ghép 第 + 三 + 本 để tạo 第三本, tức quyển thứ ba. 我的 đứng trước cả cụm 第三本中文书.",
+        "skill": "第数词量词",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 64, 65",
+          "printPages": [
+            64,
+            65
+          ],
+          "pdfPages": [
+            79,
+            80
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-sort-04",
+        "prompt": "Ghép câu theo mẫu thời gian trước 在学校. Có thể đặt 明天上午 trước hoặc sau 我.",
+        "meaning": "Sáng mai tôi học ở trường.",
+        "tokens": [
+          "我",
+          "明天上午",
+          "在",
+          "学校",
+          "学习"
+        ],
+        "answers": [
+          "我明天上午在学校学习。",
+          "明天上午我在学校学习。"
+        ],
+        "explanation": "明天上午 nêu thời gian; 在学校 nêu nơi học. Bài này luyện thời gian trước nơi chốn. Cụm thời gian có thể đứng trước hoặc sau 我.",
+        "skill": "时间处所状语顺序",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 63, 64",
+          "printPages": [
+            63,
+            64
+          ],
+          "pdfPages": [
+            78,
+            79
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-sort-05",
+        "prompt": "Ghép câu nói hoạt động cùng bạn. Giữ 和朋友 thành một cụm; có thể đặt 晚上 ở vị trí tự nhiên trước 唱歌.",
+        "meaning": "Buổi tối tôi hát cùng bạn bè.",
+        "tokens": [
+          "我",
+          "晚上",
+          "和朋友",
+          "唱歌"
+        ],
+        "answers": [
+          "我晚上和朋友唱歌。",
+          "晚上我和朋友唱歌。",
+          "我和朋友晚上唱歌。"
+        ],
+        "explanation": "和朋友 nghĩa là cùng bạn bè. Cả 我晚上和朋友唱歌, 晚上我和朋友唱歌 và 我和朋友晚上唱歌 đều diễn đạt tự nhiên nội dung này.",
+        "skill": "和与时间位置",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 49, 50, 66",
+          "printPages": [
+            49,
+            50,
+            66
+          ],
+          "pdfPages": [
+            64,
+            65,
+            81
+          ]
+        }
+      }
+    ],
+    "translation": [
+      {
+        "id": "l09-s2-translation-free-01",
+        "prompt": "Trên ghế có hai quyển sách tiếng Trung.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "存现句与本",
+        "source": {
+          "label": "Giáo trình, tr. 63, 64",
+          "printPages": [
+            63,
+            64
+          ],
+          "pdfPages": [
+            78,
+            79
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-translation-free-02",
+        "prompt": "Trước trường có một siêu thị.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "存现句与家",
+        "source": {
+          "label": "Giáo trình, tr. 62, 63",
+          "printPages": [
+            62,
+            63
+          ],
+          "pdfPages": [
+            77,
+            78
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-translation-free-03",
+        "prompt": "Đây là quyển sách tiếng Trung thứ hai của tôi.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "第与序数",
+        "source": {
+          "label": "Giáo trình, tr. 64, 65",
+          "printPages": [
+            64,
+            65
+          ],
+          "pdfPages": [
+            79,
+            80
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-translation-free-04",
+        "prompt": "Sáng mai tôi học ở nhà.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "时间处所动作",
+        "source": {
+          "label": "Giáo trình, tr. 63, 64",
+          "printPages": [
+            63,
+            64
+          ],
+          "pdfPages": [
+            78,
+            79
+          ]
+        }
+      },
+      {
+        "id": "l09-s2-translation-free-05",
+        "prompt": "Buổi tối tôi xem tivi cùng bạn bè.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "和表示共同活动",
+        "source": {
+          "label": "Giáo trình, tr. 66",
+          "printPages": [
+            66
+          ],
+          "pdfPages": [
+            81
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "lesson": 10,
+    "title": "这儿的苹果真便宜！",
+    "title_vi": "Táo ở đây thật rẻ!",
+    "goal_vi": "Hỏi và nói giá; đếm quần áo bằng 件; nhận xét đồ vật bằng tính từ và hỏi ý kiến bằng 怎么样.",
+    "goal_zh": "表达钱数、数量和价格评价，使用形容词谓语句，并用“怎么样”询问看法。",
+    "scope_note_vi": "Ôn Bài 1–9 và luyện Bài 10. Giá tiền là số liệu minh họa. 斤 trong bài mua táo là đơn vị Trung Quốc, bằng 500 gam.",
+    "source": {
+      "label": "Giáo trình, tr. 70–77",
+      "printPages": [
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "pdfPages": [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "book": "新HSK教程1"
+    },
+    "choice": [
+      {
+        "id": "l10-s2-choice-01",
+        "prompt": "Chọn cách nói số tiền dưới đây bằng khẩu ngữ đã học.",
+        "stem": "8.50元",
+        "options": [
+          "五块八",
+          "八块五",
+          "八十五块",
+          "五十八块"
+        ],
+        "answer": 1,
+        "explanation": "八块五 là tám tệ năm hào, tức 8.50元. Trong cách nói này, 五 sau 八块 chỉ năm hào, không phải năm tệ.",
+        "skill": "钱数的口语表达",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "五块八 là 5.80元, đổi chỗ phần tệ và phần hào so với đề.",
+          "八块五 là 8.50元, đúng số tiền.",
+          "八十五块 là 85元, không phải 8.50元.",
+          "五十八块 là 58元, không phải 8.50元."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 71, 72, 73",
+          "printPages": [
+            71,
+            72,
+            73
+          ],
+          "pdfPages": [
+            86,
+            87,
+            88
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-choice-02",
+        "prompt": "Người nói muốn mua mấy món quần áo?",
+        "stem": "我想买两件衣服。",
+        "options": [
+          "一件",
+          "三件",
+          "两件",
+          "四件"
+        ],
+        "answer": 2,
+        "explanation": "两件衣服 là hai món quần áo. 件 đứng sau số lượng và trước 衣服. 想买 cho biết đây là số lượng muốn mua.",
+        "skill": "件与数量",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "一件 là một món, không phải 两件 trong câu.",
+          "三件 là ba món, không đúng số lượng được nêu.",
+          "两件 là hai món, đúng với 两件衣服.",
+          "四件 là bốn món, không đúng số lượng được nêu."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 38, 75",
+          "printPages": [
+            38,
+            75
+          ],
+          "pdfPages": [
+            53,
+            90
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-choice-03",
+        "prompt": "Chọn câu hỏi xin nhận xét về món quần áo này.",
+        "stem": "",
+        "options": [
+          "这件衣服怎么样？",
+          "这件衣服多少钱？",
+          "你想买几件衣服？",
+          "你去哪家商店？"
+        ],
+        "answer": 0,
+        "explanation": "怎么样 hỏi ý kiến hoặc tình hình. 这件衣服怎么样？ mời người nghe nhận xét món quần áo, chẳng hạn 好看 hoặc 不太贵.",
+        "skill": "怎么样询问评价",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "怎么样 hỏi nhận xét về món quần áo này.",
+          "多少钱 hỏi giá tiền, không trực tiếp xin nhận xét chung.",
+          "几件 hỏi số lượng quần áo muốn mua.",
+          "哪家商店 hỏi đi cửa hàng nào."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 75, 76",
+          "printPages": [
+            75,
+            76
+          ],
+          "pdfPages": [
+            90,
+            91
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-choice-04",
+        "prompt": "Nhóm táo được gọi là 那些苹果 có giá bao nhiêu cho một 斤 (500 gam)?",
+        "stem": "这些苹果三块钱一斤，那些苹果五块钱一斤。",
+        "options": [
+          "三块钱",
+          "八块钱",
+          "两块钱",
+          "五块钱"
+        ],
+        "answer": 3,
+        "explanation": "这些苹果 chỉ nhóm này, giá ba tệ một 斤; 那些苹果 chỉ nhóm kia, giá năm tệ một 斤. Câu hỏi hỏi giá của 那些苹果, không cộng hai mức giá.",
+        "skill": "这些那些与单价",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "三块钱 là giá của 这些苹果, không phải 那些苹果.",
+          "八块钱 là tổng hai con số giá; đề chỉ hỏi giá một 斤 của nhóm 那些苹果.",
+          "两块钱 không phải mức giá được cho của nhóm nào.",
+          "五块钱 là giá một 斤 của 那些苹果."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 71, 73",
+          "printPages": [
+            71,
+            73
+          ],
+          "pdfPages": [
+            86,
+            88
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-choice-05",
+        "prompt": "Chọn nghĩa phù hợp, chú ý mức độ 不太.",
+        "stem": "这件衣服不太贵。",
+        "options": [
+          "Món quần áo này rất đắt.",
+          "Món quần áo này không đắt lắm.",
+          "Món quần áo này rất rẻ.",
+          "Món quần áo này không đẹp lắm."
+        ],
+        "answer": 1,
+        "explanation": "不太贵 nghĩa là không đắt lắm. Câu giảm mức độ 贵; nó không nhất thiết khẳng định giá rất rẻ và không nhận xét độ đẹp.",
+        "skill": "不太与形容词谓语",
+        "kind": "choice",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "optionFeedback": [
+          "很贵 mới diễn tả rất đắt; câu dùng 不太贵.",
+          "Không đắt lắm diễn đạt đúng mức độ 不太贵.",
+          "很便宜 mới khẳng định rất rẻ; 不太贵 có nghĩa nhẹ hơn.",
+          "Không đẹp lắm nói về 好看; câu nhận xét giá bằng 贵."
+        ],
+        "source": {
+          "label": "Giáo trình, tr. 14, 74, 75, 76",
+          "printPages": [
+            14,
+            74,
+            75,
+            76
+          ],
+          "pdfPages": [
+            29,
+            89,
+            90,
+            91
+          ]
+        }
+      }
+    ],
+    "sort": [
+      {
+        "id": "l10-s2-sort-01",
+        "prompt": "Ghép câu hỏi giá. Bắt đầu bằng 这个杯子.",
+        "meaning": "Chiếc cốc này giá bao nhiêu?",
+        "tokens": [
+          "这个杯子",
+          "多少",
+          "钱"
+        ],
+        "answers": [
+          "这个杯子多少钱？"
+        ],
+        "explanation": "多少钱 hỏi giá bao nhiêu. Có thể đặt ngay sau món đồ trong mẫu hỏi giá: 这个杯子多少钱？",
+        "skill": "询问价格",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 71, 72",
+          "printPages": [
+            71,
+            72
+          ],
+          "pdfPages": [
+            86,
+            87
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-sort-02",
+        "prompt": "Ghép câu nói số lượng muốn mua. Bắt đầu bằng 我.",
+        "meaning": "Tôi muốn mua hai món quần áo.",
+        "tokens": [
+          "我",
+          "想",
+          "买",
+          "两",
+          "件",
+          "衣服"
+        ],
+        "answers": [
+          "我想买两件衣服。"
+        ],
+        "explanation": "想买 là muốn mua. Ghép số 两 + lượng từ 件 + danh từ 衣服 thành 两件衣服.",
+        "skill": "想与量词件",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 38, 75",
+          "printPages": [
+            38,
+            75
+          ],
+          "pdfPages": [
+            53,
+            90
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-sort-03",
+        "prompt": "Ghép lời nhận xét về táo. Bắt đầu bằng 这些.",
+        "meaning": "Những quả táo này thật rẻ.",
+        "tokens": [
+          "这些",
+          "苹果",
+          "真",
+          "便宜"
+        ],
+        "answers": [
+          "这些苹果真便宜。"
+        ],
+        "explanation": "这些苹果 là những quả táo này. 真 đứng trước 便宜 để nhấn mạnh lời nhận xét. Trong mẫu này tính từ làm vị ngữ trực tiếp.",
+        "skill": "形容词谓语与真",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 71, 73, 74",
+          "printPages": [
+            71,
+            73,
+            74
+          ],
+          "pdfPages": [
+            86,
+            88,
+            89
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-sort-04",
+        "prompt": "Ghép câu nhận xét mức giá. Bắt đầu bằng 那个.",
+        "meaning": "Chiếc cốc kia không đắt lắm.",
+        "tokens": [
+          "那个",
+          "杯子",
+          "不",
+          "太",
+          "贵"
+        ],
+        "answers": [
+          "那个杯子不太贵。"
+        ],
+        "explanation": "不太 + tính từ nghĩa là không … lắm. 不太贵 nhận xét mức giá không cao lắm; đặt cả cụm sau 那个杯子.",
+        "skill": "不太与贵",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 14, 71, 74, 76",
+          "printPages": [
+            14,
+            71,
+            74,
+            76
+          ],
+          "pdfPages": [
+            29,
+            86,
+            89,
+            91
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-sort-05",
+        "prompt": "Ghép câu hỏi nhận xét. Bắt đầu bằng 这.",
+        "meaning": "Món quần áo này thế nào?",
+        "tokens": [
+          "这",
+          "件",
+          "衣服",
+          "怎么样"
+        ],
+        "answers": [
+          "这件衣服怎么样？"
+        ],
+        "explanation": "这件衣服 là món quần áo này. Đặt 怎么样 sau đồ vật để hỏi nhận xét của người nghe.",
+        "skill": "件与怎么样",
+        "kind": "sort",
+        "legacyCompatible": false,
+        "assessment": "automatic",
+        "source": {
+          "label": "Giáo trình, tr. 75, 76",
+          "printPages": [
+            75,
+            76
+          ],
+          "pdfPages": [
+            90,
+            91
+          ]
+        }
+      }
+    ],
+    "translation": [
+      {
+        "id": "l10-s2-translation-free-01",
+        "prompt": "Chiếc cốc này giá mười hai nhân dân tệ.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "钱数表达",
+        "source": {
+          "label": "Giáo trình, tr. 71, 72",
+          "printPages": [
+            71,
+            72
+          ],
+          "pdfPages": [
+            86,
+            87
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-translation-free-02",
+        "prompt": "Tôi muốn mua 500 gam táo. (Dùng đơn vị 斤 đã học.)",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "想与斤",
+        "source": {
+          "label": "Giáo trình, tr. 38, 73",
+          "printPages": [
+            38,
+            73
+          ],
+          "pdfPages": [
+            53,
+            88
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-translation-free-03",
+        "prompt": "Quần áo ở cửa hàng này không đắt lắm.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "的与不太贵",
+        "source": {
+          "label": "Giáo trình, tr. 12, 14, 74, 75, 76",
+          "printPages": [
+            12,
+            14,
+            74,
+            75,
+            76
+          ],
+          "pdfPages": [
+            27,
+            29,
+            89,
+            90,
+            91
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-translation-free-04",
+        "prompt": "Quyển sách này thế nào?",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "怎么样询问评价",
+        "source": {
+          "label": "Giáo trình, tr. 64, 76",
+          "printPages": [
+            64,
+            76
+          ],
+          "pdfPages": [
+            79,
+            91
+          ]
+        }
+      },
+      {
+        "id": "l10-s2-translation-free-05",
+        "prompt": "Những chiếc cốc kia rất đẹp.",
+        "kind": "translation",
+        "legacyCompatible": false,
+        "assessment": "manual",
+        "skill": "那些与形容词谓语",
+        "source": {
+          "label": "Giáo trình, tr. 55, 71, 74",
+          "printPages": [
+            55,
+            71,
+            74
+          ],
+          "pdfPages": [
+            70,
+            86,
+            89
+          ]
+        }
+      }
+    ]
+  }
+]

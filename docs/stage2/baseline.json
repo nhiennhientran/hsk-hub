@@ -1,0 +1,29 @@
+{
+  "stage": 2,
+  "branch": "work/hsk1-stage2-20261001",
+  "parentStep1Commit": "75d4653034fc418a2b3e56aed2643a9495d78bea",
+  "parentStep1Tree": "947ae10672c44451e46c007fbb1286d0c512e615",
+  "productionBranch": "gh-pages",
+  "productionBaselineCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
+  "productionModifiedByThisStep": false,
+  "textbookMapping": "docs/stage1/course-map.json",
+  "bankVersion": "stage2-20261001",
+  "scope": {
+    "lessons": 15,
+    "newLessons": 14,
+    "newQuestions": 210,
+    "preservedPilotQuestions": 15,
+    "totalQuestions": 225,
+    "automaticQuestions": 150,
+    "teacherReviewedTranslations": 75,
+    "listeningModuleIncluded": false,
+    "mixedLessonVocabularyIncluded": false,
+    "productionIntegrationIncluded": false
+  },
+  "notes": [
+    "Lesson 3 is preserved by full-object comparison with the approved Step 1 sample.",
+    "Teacher-reviewed means the intended classroom workflow, not that a teacher has reviewed synthetic CI answers.",
+    "Content checks are assistant semantic reviews plus separate automated provenance and state checks.",
+    "Original textbook, answer PDF and audio archive are not distributed in this review package."
+  ]
+}
