@@ -43,10 +43,10 @@ node tools/serve-stage2.cjs
 
 - `new-hsk1/hsk1/stage2/question-bank/`：三组JSON，按1–5、6–10、11–15课划分；`bank.js`由构建脚本生成。
 - `content-01-05.md`、`content-06-10.md`、`content-11-15.md`：逐题目标、教材页码、语义或词序边界。
-- `teacher-01-05.md`、`teacher-06-10.md`、`teacher-11-15.md`：教师参考答案与人工翻译变体；学生网页不加载这些文件。公开仓库中的文档分离不是教师权限系统。
+- `teacher-reference.md`：全15课教师参考汇总，含150道客观答案和75道人工翻译参考；三个 `teacher-*.md` 分册保留详细评阅提示。学生网页不加载这些文件。公开仓库中的文档分离不是教师权限系统。
 - `curriculum-review.md`：课程范围、已知教材差异和审阅版本绑定。
 - `independent-review.md`：独立题目与状态逻辑审查。
-- `test-report.md`：实际运行结果及证据，交付前填写已发生的测试结果。
+- `test-report.md`：本次已完成的21项引擎测试、25个浏览器步骤、全部225题界面操作、截图与制品一致性证据。
 
 ## 验收要求
 

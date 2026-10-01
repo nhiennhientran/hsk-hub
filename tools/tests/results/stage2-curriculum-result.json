@@ -1,0 +1,6915 @@
+{
+  "check": "stage2-curriculum-provenance",
+  "passed": true,
+  "coveredLessons": 15,
+  "coveredQuestions": 225,
+  "scope": "source-page arithmetic, cumulative citation bounds, preserved lesson-3 questions, assistant-review version binding",
+  "doesNotValidate": [
+    "Chinese segmentation or grammar",
+    "Vietnamese translation quality",
+    "answer uniqueness or every valid word order",
+    "browser behavior"
+  ],
+  "assistantSemanticReviewLedgerPresent": true,
+  "banks": [
+    {
+      "path": "new-hsk1/hsk1/stage2/question-bank/bank-01-05.json",
+      "sha256": "a6416e6c02629f3179fa153b03459edaef0cdba872872dcacc5b8adc1553a6bd"
+    },
+    {
+      "path": "new-hsk1/hsk1/stage2/question-bank/bank-06-10.json",
+      "sha256": "05bdba219b2bec258c661737e5d8c9138cc07b9927d0c8cde7747b69cd71f233"
+    },
+    {
+      "path": "new-hsk1/hsk1/stage2/question-bank/bank-11-15.json",
+      "sha256": "7fb55ff0d1b40accc4293c7e24185cbf7878b4cc3c352929b4acfff3ffefe11b"
+    }
+  ],
+  "questions": [
+    {
+      "id": "l01-s2-choice-01",
+      "lesson": 1,
+      "kind": "choice",
+      "printPages": [
+        1,
+        2,
+        3
+      ],
+      "pdfPages": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "l01-s2-choice-02",
+      "lesson": 1,
+      "kind": "choice",
+      "printPages": [
+        2
+      ],
+      "pdfPages": [
+        17
+      ]
+    },
+    {
+      "id": "l01-s2-choice-03",
+      "lesson": 1,
+      "kind": "choice",
+      "printPages": [
+        3
+      ],
+      "pdfPages": [
+        18
+      ]
+    },
+    {
+      "id": "l01-s2-choice-04",
+      "lesson": 1,
+      "kind": "choice",
+      "printPages": [
+        3
+      ],
+      "pdfPages": [
+        18
+      ]
+    },
+    {
+      "id": "l01-s2-choice-05",
+      "lesson": 1,
+      "kind": "choice",
+      "printPages": [
+        2,
+        3
+      ],
+      "pdfPages": [
+        17,
+        18
+      ]
+    },
+    {
+      "id": "l01-s2-sort-01",
+      "lesson": 1,
+      "kind": "sort",
+      "printPages": [
+        2
+      ],
+      "pdfPages": [
+        17
+      ]
+    },
+    {
+      "id": "l01-s2-sort-02",
+      "lesson": 1,
+      "kind": "sort",
+      "printPages": [
+        2
+      ],
+      "pdfPages": [
+        17
+      ]
+    },
+    {
+      "id": "l01-s2-sort-03",
+      "lesson": 1,
+      "kind": "sort",
+      "printPages": [
+        1,
+        3
+      ],
+      "pdfPages": [
+        16,
+        18
+      ]
+    },
+    {
+      "id": "l01-s2-sort-04",
+      "lesson": 1,
+      "kind": "sort",
+      "printPages": [
+        3
+      ],
+      "pdfPages": [
+        18
+      ]
+    },
+    {
+      "id": "l01-s2-sort-05",
+      "lesson": 1,
+      "kind": "sort",
+      "printPages": [
+        1,
+        2
+      ],
+      "pdfPages": [
+        16,
+        17
+      ]
+    },
+    {
+      "id": "l01-s2-translation-01",
+      "lesson": 1,
+      "kind": "translation",
+      "printPages": [
+        2
+      ],
+      "pdfPages": [
+        17
+      ]
+    },
+    {
+      "id": "l01-s2-translation-02",
+      "lesson": 1,
+      "kind": "translation",
+      "printPages": [
+        2,
+        3
+      ],
+      "pdfPages": [
+        17,
+        18
+      ]
+    },
+    {
+      "id": "l01-s2-translation-03",
+      "lesson": 1,
+      "kind": "translation",
+      "printPages": [
+        3
+      ],
+      "pdfPages": [
+        18
+      ]
+    },
+    {
+      "id": "l01-s2-translation-04",
+      "lesson": 1,
+      "kind": "translation",
+      "printPages": [
+        1,
+        3
+      ],
+      "pdfPages": [
+        16,
+        18
+      ]
+    },
+    {
+      "id": "l01-s2-translation-05",
+      "lesson": 1,
+      "kind": "translation",
+      "printPages": [
+        1,
+        2
+      ],
+      "pdfPages": [
+        16,
+        17
+      ]
+    },
+    {
+      "id": "l02-s2-choice-01",
+      "lesson": 2,
+      "kind": "choice",
+      "printPages": [
+        1,
+        6,
+        8
+      ],
+      "pdfPages": [
+        16,
+        21,
+        23
+      ]
+    },
+    {
+      "id": "l02-s2-choice-02",
+      "lesson": 2,
+      "kind": "choice",
+      "printPages": [
+        7,
+        8
+      ],
+      "pdfPages": [
+        22,
+        23
+      ]
+    },
+    {
+      "id": "l02-s2-choice-03",
+      "lesson": 2,
+      "kind": "choice",
+      "printPages": [
+        7
+      ],
+      "pdfPages": [
+        22
+      ]
+    },
+    {
+      "id": "l02-s2-choice-04",
+      "lesson": 2,
+      "kind": "choice",
+      "printPages": [
+        8,
+        9
+      ],
+      "pdfPages": [
+        23,
+        24
+      ]
+    },
+    {
+      "id": "l02-s2-choice-05",
+      "lesson": 2,
+      "kind": "choice",
+      "printPages": [
+        1,
+        8,
+        9
+      ],
+      "pdfPages": [
+        16,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "l02-s2-sort-01",
+      "lesson": 2,
+      "kind": "sort",
+      "printPages": [
+        6,
+        7,
+        8
+      ],
+      "pdfPages": [
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "id": "l02-s2-sort-02",
+      "lesson": 2,
+      "kind": "sort",
+      "printPages": [
+        6,
+        8
+      ],
+      "pdfPages": [
+        21,
+        23
+      ]
+    },
+    {
+      "id": "l02-s2-sort-03",
+      "lesson": 2,
+      "kind": "sort",
+      "printPages": [
+        8,
+        9
+      ],
+      "pdfPages": [
+        23,
+        24
+      ]
+    },
+    {
+      "id": "l02-s2-sort-04",
+      "lesson": 2,
+      "kind": "sort",
+      "printPages": [
+        7,
+        8
+      ],
+      "pdfPages": [
+        22,
+        23
+      ]
+    },
+    {
+      "id": "l02-s2-sort-05",
+      "lesson": 2,
+      "kind": "sort",
+      "printPages": [
+        1,
+        7,
+        8,
+        9
+      ],
+      "pdfPages": [
+        16,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "l02-s2-translation-01",
+      "lesson": 2,
+      "kind": "translation",
+      "printPages": [
+        6,
+        8
+      ],
+      "pdfPages": [
+        21,
+        23
+      ]
+    },
+    {
+      "id": "l02-s2-translation-02",
+      "lesson": 2,
+      "kind": "translation",
+      "printPages": [
+        2,
+        7
+      ],
+      "pdfPages": [
+        17,
+        22
+      ]
+    },
+    {
+      "id": "l02-s2-translation-03",
+      "lesson": 2,
+      "kind": "translation",
+      "printPages": [
+        2,
+        8,
+        9
+      ],
+      "pdfPages": [
+        17,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "l02-s2-translation-04",
+      "lesson": 2,
+      "kind": "translation",
+      "printPages": [
+        2,
+        8
+      ],
+      "pdfPages": [
+        17,
+        23
+      ]
+    },
+    {
+      "id": "l02-s2-translation-05",
+      "lesson": 2,
+      "kind": "translation",
+      "printPages": [
+        8,
+        9
+      ],
+      "pdfPages": [
+        23,
+        24
+      ]
+    },
+    {
+      "id": "l03-choice-01",
+      "lesson": 3,
+      "kind": "choice",
+      "printPages": [
+        11,
+        12,
+        15
+      ],
+      "pdfPages": [
+        26,
+        27,
+        30
+      ]
+    },
+    {
+      "id": "l03-choice-02",
+      "lesson": 3,
+      "kind": "choice",
+      "printPages": [
+        11,
+        12,
+        14
+      ],
+      "pdfPages": [
+        26,
+        27,
+        29
+      ]
+    },
+    {
+      "id": "l03-choice-03",
+      "lesson": 3,
+      "kind": "choice",
+      "printPages": [
+        14,
+        17
+      ],
+      "pdfPages": [
+        29,
+        32
+      ]
+    },
+    {
+      "id": "l03-choice-04",
+      "lesson": 3,
+      "kind": "choice",
+      "printPages": [
+        14,
+        15
+      ],
+      "pdfPages": [
+        29,
+        30
+      ]
+    },
+    {
+      "id": "l03-choice-05",
+      "lesson": 3,
+      "kind": "choice",
+      "printPages": [
+        10,
+        12
+      ],
+      "pdfPages": [
+        25,
+        27
+      ]
+    },
+    {
+      "id": "l03-sort-01",
+      "lesson": 3,
+      "kind": "sort",
+      "printPages": [
+        11,
+        12
+      ],
+      "pdfPages": [
+        26,
+        27
+      ]
+    },
+    {
+      "id": "l03-sort-02",
+      "lesson": 3,
+      "kind": "sort",
+      "printPages": [
+        11,
+        14
+      ],
+      "pdfPages": [
+        26,
+        29
+      ]
+    },
+    {
+      "id": "l03-sort-03",
+      "lesson": 3,
+      "kind": "sort",
+      "printPages": [
+        10,
+        11
+      ],
+      "pdfPages": [
+        25,
+        26
+      ]
+    },
+    {
+      "id": "l03-sort-04",
+      "lesson": 3,
+      "kind": "sort",
+      "printPages": [
+        11,
+        14
+      ],
+      "pdfPages": [
+        26,
+        29
+      ]
+    },
+    {
+      "id": "l03-sort-05",
+      "lesson": 3,
+      "kind": "sort",
+      "printPages": [
+        14
+      ],
+      "pdfPages": [
+        29
+      ]
+    },
+    {
+      "id": "l03-translation-free-01",
+      "lesson": 3,
+      "kind": "translation",
+      "printPages": [
+        10,
+        11
+      ],
+      "pdfPages": [
+        25,
+        26
+      ]
+    },
+    {
+      "id": "l03-translation-free-02",
+      "lesson": 3,
+      "kind": "translation",
+      "printPages": [
+        11,
+        12,
+        14
+      ],
+      "pdfPages": [
+        26,
+        27,
+        29
+      ]
+    },
+    {
+      "id": "l03-translation-free-03",
+      "lesson": 3,
+      "kind": "translation",
+      "printPages": [
+        11,
+        12,
+        16
+      ],
+      "pdfPages": [
+        26,
+        27,
+        31
+      ]
+    },
+    {
+      "id": "l03-translation-free-04",
+      "lesson": 3,
+      "kind": "translation",
+      "printPages": [
+        11,
+        14
+      ],
+      "pdfPages": [
+        26,
+        29
+      ]
+    },
+    {
+      "id": "l03-translation-free-05",
+      "lesson": 3,
+      "kind": "translation",
+      "printPages": [
+        14
+      ],
+      "pdfPages": [
+        29
+      ]
+    },
+    {
+      "id": "l04-s2-choice-01",
+      "lesson": 4,
+      "kind": "choice",
+      "printPages": [
+        21,
+        23,
+        25
+      ],
+      "pdfPages": [
+        36,
+        38,
+        40
+      ]
+    },
+    {
+      "id": "l04-s2-choice-02",
+      "lesson": 4,
+      "kind": "choice",
+      "printPages": [
+        19,
+        20,
+        22
+      ],
+      "pdfPages": [
+        34,
+        35,
+        37
+      ]
+    },
+    {
+      "id": "l04-s2-choice-03",
+      "lesson": 4,
+      "kind": "choice",
+      "printPages": [
+        22,
+        23,
+        24
+      ],
+      "pdfPages": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "id": "l04-s2-choice-04",
+      "lesson": 4,
+      "kind": "choice",
+      "printPages": [
+        22,
+        23
+      ],
+      "pdfPages": [
+        37,
+        38
+      ]
+    },
+    {
+      "id": "l04-s2-choice-05",
+      "lesson": 4,
+      "kind": "choice",
+      "printPages": [
+        20,
+        21,
+        24,
+        25
+      ],
+      "pdfPages": [
+        35,
+        36,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "l04-s2-sort-01",
+      "lesson": 4,
+      "kind": "sort",
+      "printPages": [
+        20,
+        22,
+        23
+      ],
+      "pdfPages": [
+        35,
+        37,
+        38
+      ]
+    },
+    {
+      "id": "l04-s2-sort-02",
+      "lesson": 4,
+      "kind": "sort",
+      "printPages": [
+        24,
+        25
+      ],
+      "pdfPages": [
+        39,
+        40
+      ]
+    },
+    {
+      "id": "l04-s2-sort-03",
+      "lesson": 4,
+      "kind": "sort",
+      "printPages": [
+        19,
+        22,
+        25
+      ],
+      "pdfPages": [
+        34,
+        37,
+        40
+      ]
+    },
+    {
+      "id": "l04-s2-sort-04",
+      "lesson": 4,
+      "kind": "sort",
+      "printPages": [
+        8,
+        22,
+        23
+      ],
+      "pdfPages": [
+        23,
+        37,
+        38
+      ]
+    },
+    {
+      "id": "l04-s2-sort-05",
+      "lesson": 4,
+      "kind": "sort",
+      "printPages": [
+        19,
+        20,
+        23,
+        25
+      ],
+      "pdfPages": [
+        34,
+        35,
+        38,
+        40
+      ]
+    },
+    {
+      "id": "l04-s2-translation-01",
+      "lesson": 4,
+      "kind": "translation",
+      "printPages": [
+        21,
+        22,
+        23
+      ],
+      "pdfPages": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "id": "l04-s2-translation-02",
+      "lesson": 4,
+      "kind": "translation",
+      "printPages": [
+        20,
+        22,
+        23
+      ],
+      "pdfPages": [
+        35,
+        37,
+        38
+      ]
+    },
+    {
+      "id": "l04-s2-translation-03",
+      "lesson": 4,
+      "kind": "translation",
+      "printPages": [
+        20,
+        24,
+        25
+      ],
+      "pdfPages": [
+        35,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "l04-s2-translation-04",
+      "lesson": 4,
+      "kind": "translation",
+      "printPages": [
+        19,
+        20,
+        22,
+        23
+      ],
+      "pdfPages": [
+        34,
+        35,
+        37,
+        38
+      ]
+    },
+    {
+      "id": "l04-s2-translation-05",
+      "lesson": 4,
+      "kind": "translation",
+      "printPages": [
+        11,
+        22,
+        23
+      ],
+      "pdfPages": [
+        26,
+        37,
+        38
+      ]
+    },
+    {
+      "id": "l05-s2-choice-01",
+      "lesson": 5,
+      "kind": "choice",
+      "printPages": [
+        28,
+        29
+      ],
+      "pdfPages": [
+        43,
+        44
+      ]
+    },
+    {
+      "id": "l05-s2-choice-02",
+      "lesson": 5,
+      "kind": "choice",
+      "printPages": [
+        28,
+        29
+      ],
+      "pdfPages": [
+        43,
+        44
+      ]
+    },
+    {
+      "id": "l05-s2-choice-03",
+      "lesson": 5,
+      "kind": "choice",
+      "printPages": [
+        30,
+        31,
+        32
+      ],
+      "pdfPages": [
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "id": "l05-s2-choice-04",
+      "lesson": 5,
+      "kind": "choice",
+      "printPages": [
+        32
+      ],
+      "pdfPages": [
+        47
+      ]
+    },
+    {
+      "id": "l05-s2-choice-05",
+      "lesson": 5,
+      "kind": "choice",
+      "printPages": [
+        28,
+        30,
+        31
+      ],
+      "pdfPages": [
+        43,
+        45,
+        46
+      ]
+    },
+    {
+      "id": "l05-s2-sort-01",
+      "lesson": 5,
+      "kind": "sort",
+      "printPages": [
+        28
+      ],
+      "pdfPages": [
+        43
+      ]
+    },
+    {
+      "id": "l05-s2-sort-02",
+      "lesson": 5,
+      "kind": "sort",
+      "printPages": [
+        14,
+        30,
+        31
+      ],
+      "pdfPages": [
+        29,
+        45,
+        46
+      ]
+    },
+    {
+      "id": "l05-s2-sort-03",
+      "lesson": 5,
+      "kind": "sort",
+      "printPages": [
+        24,
+        25,
+        29,
+        30
+      ],
+      "pdfPages": [
+        39,
+        40,
+        44,
+        45
+      ]
+    },
+    {
+      "id": "l05-s2-sort-04",
+      "lesson": 5,
+      "kind": "sort",
+      "printPages": [
+        11,
+        25,
+        32
+      ],
+      "pdfPages": [
+        26,
+        40,
+        47
+      ]
+    },
+    {
+      "id": "l05-s2-sort-05",
+      "lesson": 5,
+      "kind": "sort",
+      "printPages": [
+        14,
+        32
+      ],
+      "pdfPages": [
+        29,
+        47
+      ]
+    },
+    {
+      "id": "l05-s2-translation-01",
+      "lesson": 5,
+      "kind": "translation",
+      "printPages": [
+        28,
+        29,
+        30
+      ],
+      "pdfPages": [
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "id": "l05-s2-translation-02",
+      "lesson": 5,
+      "kind": "translation",
+      "printPages": [
+        22,
+        30,
+        31
+      ],
+      "pdfPages": [
+        37,
+        45,
+        46
+      ]
+    },
+    {
+      "id": "l05-s2-translation-03",
+      "lesson": 5,
+      "kind": "translation",
+      "printPages": [
+        28,
+        29,
+        30
+      ],
+      "pdfPages": [
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "id": "l05-s2-translation-04",
+      "lesson": 5,
+      "kind": "translation",
+      "printPages": [
+        32,
+        33
+      ],
+      "pdfPages": [
+        47,
+        48
+      ]
+    },
+    {
+      "id": "l05-s2-translation-05",
+      "lesson": 5,
+      "kind": "translation",
+      "printPages": [
+        30,
+        31
+      ],
+      "pdfPages": [
+        45,
+        46
+      ]
+    },
+    {
+      "id": "l06-s2-choice-01",
+      "lesson": 6,
+      "kind": "choice",
+      "printPages": [
+        36
+      ],
+      "pdfPages": [
+        51
+      ]
+    },
+    {
+      "id": "l06-s2-choice-02",
+      "lesson": 6,
+      "kind": "choice",
+      "printPages": [
+        37,
+        38,
+        40
+      ],
+      "pdfPages": [
+        52,
+        53,
+        55
+      ]
+    },
+    {
+      "id": "l06-s2-choice-03",
+      "lesson": 6,
+      "kind": "choice",
+      "printPages": [
+        39,
+        40,
+        41
+      ],
+      "pdfPages": [
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "l06-s2-choice-04",
+      "lesson": 6,
+      "kind": "choice",
+      "printPages": [
+        31,
+        38,
+        39
+      ],
+      "pdfPages": [
+        46,
+        53,
+        54
+      ]
+    },
+    {
+      "id": "l06-s2-choice-05",
+      "lesson": 6,
+      "kind": "choice",
+      "printPages": [
+        2,
+        25,
+        39,
+        40
+      ],
+      "pdfPages": [
+        17,
+        40,
+        54,
+        55
+      ]
+    },
+    {
+      "id": "l06-s2-sort-01",
+      "lesson": 6,
+      "kind": "sort",
+      "printPages": [
+        36
+      ],
+      "pdfPages": [
+        51
+      ]
+    },
+    {
+      "id": "l06-s2-sort-02",
+      "lesson": 6,
+      "kind": "sort",
+      "printPages": [
+        37,
+        38,
+        39
+      ],
+      "pdfPages": [
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "id": "l06-s2-sort-03",
+      "lesson": 6,
+      "kind": "sort",
+      "printPages": [
+        37,
+        38,
+        40
+      ],
+      "pdfPages": [
+        52,
+        53,
+        55
+      ]
+    },
+    {
+      "id": "l06-s2-sort-04",
+      "lesson": 6,
+      "kind": "sort",
+      "printPages": [
+        39,
+        40,
+        41
+      ],
+      "pdfPages": [
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "l06-s2-sort-05",
+      "lesson": 6,
+      "kind": "sort",
+      "printPages": [
+        38,
+        39
+      ],
+      "pdfPages": [
+        53,
+        54
+      ]
+    },
+    {
+      "id": "l06-s2-translation-free-01",
+      "lesson": 6,
+      "kind": "translation",
+      "printPages": [
+        2,
+        12,
+        36
+      ],
+      "pdfPages": [
+        17,
+        27,
+        51
+      ]
+    },
+    {
+      "id": "l06-s2-translation-free-02",
+      "lesson": 6,
+      "kind": "translation",
+      "printPages": [
+        37,
+        38,
+        40
+      ],
+      "pdfPages": [
+        52,
+        53,
+        55
+      ]
+    },
+    {
+      "id": "l06-s2-translation-free-03",
+      "lesson": 6,
+      "kind": "translation",
+      "printPages": [
+        14,
+        38,
+        39
+      ],
+      "pdfPages": [
+        29,
+        53,
+        54
+      ]
+    },
+    {
+      "id": "l06-s2-translation-free-04",
+      "lesson": 6,
+      "kind": "translation",
+      "printPages": [
+        14,
+        39,
+        40,
+        41
+      ],
+      "pdfPages": [
+        29,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "l06-s2-translation-free-05",
+      "lesson": 6,
+      "kind": "translation",
+      "printPages": [
+        12,
+        39
+      ],
+      "pdfPages": [
+        27,
+        54
+      ]
+    },
+    {
+      "id": "l07-s2-choice-01",
+      "lesson": 7,
+      "kind": "choice",
+      "printPages": [
+        47,
+        49
+      ],
+      "pdfPages": [
+        62,
+        64
+      ]
+    },
+    {
+      "id": "l07-s2-choice-02",
+      "lesson": 7,
+      "kind": "choice",
+      "printPages": [
+        47,
+        48,
+        49
+      ],
+      "pdfPages": [
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "id": "l07-s2-choice-03",
+      "lesson": 7,
+      "kind": "choice",
+      "printPages": [
+        50,
+        51
+      ],
+      "pdfPages": [
+        65,
+        66
+      ]
+    },
+    {
+      "id": "l07-s2-choice-04",
+      "lesson": 7,
+      "kind": "choice",
+      "printPages": [
+        46,
+        49,
+        50
+      ],
+      "pdfPages": [
+        61,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "l07-s2-choice-05",
+      "lesson": 7,
+      "kind": "choice",
+      "printPages": [
+        49,
+        50
+      ],
+      "pdfPages": [
+        64,
+        65
+      ]
+    },
+    {
+      "id": "l07-s2-sort-01",
+      "lesson": 7,
+      "kind": "sort",
+      "printPages": [
+        47,
+        49,
+        50,
+        51
+      ],
+      "pdfPages": [
+        62,
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "id": "l07-s2-sort-02",
+      "lesson": 7,
+      "kind": "sort",
+      "printPages": [
+        46,
+        47,
+        48,
+        49
+      ],
+      "pdfPages": [
+        61,
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "id": "l07-s2-sort-03",
+      "lesson": 7,
+      "kind": "sort",
+      "printPages": [
+        46,
+        49,
+        50
+      ],
+      "pdfPages": [
+        61,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "l07-s2-sort-04",
+      "lesson": 7,
+      "kind": "sort",
+      "printPages": [
+        50,
+        51
+      ],
+      "pdfPages": [
+        65,
+        66
+      ]
+    },
+    {
+      "id": "l07-s2-sort-05",
+      "lesson": 7,
+      "kind": "sort",
+      "printPages": [
+        37,
+        49,
+        50,
+        51
+      ],
+      "pdfPages": [
+        52,
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "id": "l07-s2-translation-free-01",
+      "lesson": 7,
+      "kind": "translation",
+      "printPages": [
+        47,
+        49,
+        50
+      ],
+      "pdfPages": [
+        62,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "l07-s2-translation-free-02",
+      "lesson": 7,
+      "kind": "translation",
+      "printPages": [
+        38,
+        40,
+        49,
+        50
+      ],
+      "pdfPages": [
+        53,
+        55,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "l07-s2-translation-free-03",
+      "lesson": 7,
+      "kind": "translation",
+      "printPages": [
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "pdfPages": [
+        61,
+        62,
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "l07-s2-translation-free-04",
+      "lesson": 7,
+      "kind": "translation",
+      "printPages": [
+        46,
+        50,
+        51
+      ],
+      "pdfPages": [
+        61,
+        65,
+        66
+      ]
+    },
+    {
+      "id": "l07-s2-translation-free-05",
+      "lesson": 7,
+      "kind": "translation",
+      "printPages": [
+        49,
+        50,
+        51
+      ],
+      "pdfPages": [
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "id": "l08-s2-choice-01",
+      "lesson": 8,
+      "kind": "choice",
+      "printPages": [
+        55,
+        56,
+        57
+      ],
+      "pdfPages": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "id": "l08-s2-choice-02",
+      "lesson": 8,
+      "kind": "choice",
+      "printPages": [
+        19,
+        20,
+        31,
+        55
+      ],
+      "pdfPages": [
+        34,
+        35,
+        46,
+        70
+      ]
+    },
+    {
+      "id": "l08-s2-choice-03",
+      "lesson": 8,
+      "kind": "choice",
+      "printPages": [
+        57,
+        59
+      ],
+      "pdfPages": [
+        72,
+        74
+      ]
+    },
+    {
+      "id": "l08-s2-choice-04",
+      "lesson": 8,
+      "kind": "choice",
+      "printPages": [
+        57,
+        58
+      ],
+      "pdfPages": [
+        72,
+        73
+      ]
+    },
+    {
+      "id": "l08-s2-choice-05",
+      "lesson": 8,
+      "kind": "choice",
+      "printPages": [
+        55
+      ],
+      "pdfPages": [
+        70
+      ]
+    },
+    {
+      "id": "l08-s2-sort-01",
+      "lesson": 8,
+      "kind": "sort",
+      "printPages": [
+        55,
+        56
+      ],
+      "pdfPages": [
+        70,
+        71
+      ]
+    },
+    {
+      "id": "l08-s2-sort-02",
+      "lesson": 8,
+      "kind": "sort",
+      "printPages": [
+        57,
+        59
+      ],
+      "pdfPages": [
+        72,
+        74
+      ]
+    },
+    {
+      "id": "l08-s2-sort-03",
+      "lesson": 8,
+      "kind": "sort",
+      "printPages": [
+        47,
+        48,
+        56,
+        57
+      ],
+      "pdfPages": [
+        62,
+        63,
+        71,
+        72
+      ]
+    },
+    {
+      "id": "l08-s2-sort-04",
+      "lesson": 8,
+      "kind": "sort",
+      "printPages": [
+        57,
+        58
+      ],
+      "pdfPages": [
+        72,
+        73
+      ]
+    },
+    {
+      "id": "l08-s2-sort-05",
+      "lesson": 8,
+      "kind": "sort",
+      "printPages": [
+        55
+      ],
+      "pdfPages": [
+        70
+      ]
+    },
+    {
+      "id": "l08-s2-translation-free-01",
+      "lesson": 8,
+      "kind": "translation",
+      "printPages": [
+        55,
+        56
+      ],
+      "pdfPages": [
+        70,
+        71
+      ]
+    },
+    {
+      "id": "l08-s2-translation-free-02",
+      "lesson": 8,
+      "kind": "translation",
+      "printPages": [
+        56,
+        57,
+        59
+      ],
+      "pdfPages": [
+        71,
+        72,
+        74
+      ]
+    },
+    {
+      "id": "l08-s2-translation-free-03",
+      "lesson": 8,
+      "kind": "translation",
+      "printPages": [
+        37,
+        47,
+        48,
+        56,
+        57
+      ],
+      "pdfPages": [
+        52,
+        62,
+        63,
+        71,
+        72
+      ]
+    },
+    {
+      "id": "l08-s2-translation-free-04",
+      "lesson": 8,
+      "kind": "translation",
+      "printPages": [
+        49,
+        50,
+        57,
+        58
+      ],
+      "pdfPages": [
+        64,
+        65,
+        72,
+        73
+      ]
+    },
+    {
+      "id": "l08-s2-translation-free-05",
+      "lesson": 8,
+      "kind": "translation",
+      "printPages": [
+        57,
+        59
+      ],
+      "pdfPages": [
+        72,
+        74
+      ]
+    },
+    {
+      "id": "l09-s2-choice-01",
+      "lesson": 9,
+      "kind": "choice",
+      "printPages": [
+        62,
+        63,
+        64
+      ],
+      "pdfPages": [
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "id": "l09-s2-choice-02",
+      "lesson": 9,
+      "kind": "choice",
+      "printPages": [
+        63,
+        64
+      ],
+      "pdfPages": [
+        78,
+        79
+      ]
+    },
+    {
+      "id": "l09-s2-choice-03",
+      "lesson": 9,
+      "kind": "choice",
+      "printPages": [
+        64,
+        65
+      ],
+      "pdfPages": [
+        79,
+        80
+      ]
+    },
+    {
+      "id": "l09-s2-choice-04",
+      "lesson": 9,
+      "kind": "choice",
+      "printPages": [
+        63,
+        64
+      ],
+      "pdfPages": [
+        78,
+        79
+      ]
+    },
+    {
+      "id": "l09-s2-choice-05",
+      "lesson": 9,
+      "kind": "choice",
+      "printPages": [
+        66
+      ],
+      "pdfPages": [
+        81
+      ]
+    },
+    {
+      "id": "l09-s2-sort-01",
+      "lesson": 9,
+      "kind": "sort",
+      "printPages": [
+        63,
+        64
+      ],
+      "pdfPages": [
+        78,
+        79
+      ]
+    },
+    {
+      "id": "l09-s2-sort-02",
+      "lesson": 9,
+      "kind": "sort",
+      "printPages": [
+        56,
+        62,
+        63
+      ],
+      "pdfPages": [
+        71,
+        77,
+        78
+      ]
+    },
+    {
+      "id": "l09-s2-sort-03",
+      "lesson": 9,
+      "kind": "sort",
+      "printPages": [
+        64,
+        65
+      ],
+      "pdfPages": [
+        79,
+        80
+      ]
+    },
+    {
+      "id": "l09-s2-sort-04",
+      "lesson": 9,
+      "kind": "sort",
+      "printPages": [
+        63,
+        64
+      ],
+      "pdfPages": [
+        78,
+        79
+      ]
+    },
+    {
+      "id": "l09-s2-sort-05",
+      "lesson": 9,
+      "kind": "sort",
+      "printPages": [
+        49,
+        50,
+        66
+      ],
+      "pdfPages": [
+        64,
+        65,
+        81
+      ]
+    },
+    {
+      "id": "l09-s2-translation-free-01",
+      "lesson": 9,
+      "kind": "translation",
+      "printPages": [
+        63,
+        64
+      ],
+      "pdfPages": [
+        78,
+        79
+      ]
+    },
+    {
+      "id": "l09-s2-translation-free-02",
+      "lesson": 9,
+      "kind": "translation",
+      "printPages": [
+        62,
+        63
+      ],
+      "pdfPages": [
+        77,
+        78
+      ]
+    },
+    {
+      "id": "l09-s2-translation-free-03",
+      "lesson": 9,
+      "kind": "translation",
+      "printPages": [
+        64,
+        65
+      ],
+      "pdfPages": [
+        79,
+        80
+      ]
+    },
+    {
+      "id": "l09-s2-translation-free-04",
+      "lesson": 9,
+      "kind": "translation",
+      "printPages": [
+        63,
+        64
+      ],
+      "pdfPages": [
+        78,
+        79
+      ]
+    },
+    {
+      "id": "l09-s2-translation-free-05",
+      "lesson": 9,
+      "kind": "translation",
+      "printPages": [
+        66
+      ],
+      "pdfPages": [
+        81
+      ]
+    },
+    {
+      "id": "l10-s2-choice-01",
+      "lesson": 10,
+      "kind": "choice",
+      "printPages": [
+        71,
+        72,
+        73
+      ],
+      "pdfPages": [
+        86,
+        87,
+        88
+      ]
+    },
+    {
+      "id": "l10-s2-choice-02",
+      "lesson": 10,
+      "kind": "choice",
+      "printPages": [
+        38,
+        75
+      ],
+      "pdfPages": [
+        53,
+        90
+      ]
+    },
+    {
+      "id": "l10-s2-choice-03",
+      "lesson": 10,
+      "kind": "choice",
+      "printPages": [
+        75,
+        76
+      ],
+      "pdfPages": [
+        90,
+        91
+      ]
+    },
+    {
+      "id": "l10-s2-choice-04",
+      "lesson": 10,
+      "kind": "choice",
+      "printPages": [
+        71,
+        73
+      ],
+      "pdfPages": [
+        86,
+        88
+      ]
+    },
+    {
+      "id": "l10-s2-choice-05",
+      "lesson": 10,
+      "kind": "choice",
+      "printPages": [
+        14,
+        74,
+        75,
+        76
+      ],
+      "pdfPages": [
+        29,
+        89,
+        90,
+        91
+      ]
+    },
+    {
+      "id": "l10-s2-sort-01",
+      "lesson": 10,
+      "kind": "sort",
+      "printPages": [
+        71,
+        72
+      ],
+      "pdfPages": [
+        86,
+        87
+      ]
+    },
+    {
+      "id": "l10-s2-sort-02",
+      "lesson": 10,
+      "kind": "sort",
+      "printPages": [
+        38,
+        75
+      ],
+      "pdfPages": [
+        53,
+        90
+      ]
+    },
+    {
+      "id": "l10-s2-sort-03",
+      "lesson": 10,
+      "kind": "sort",
+      "printPages": [
+        71,
+        73,
+        74
+      ],
+      "pdfPages": [
+        86,
+        88,
+        89
+      ]
+    },
+    {
+      "id": "l10-s2-sort-04",
+      "lesson": 10,
+      "kind": "sort",
+      "printPages": [
+        14,
+        71,
+        74,
+        76
+      ],
+      "pdfPages": [
+        29,
+        86,
+        89,
+        91
+      ]
+    },
+    {
+      "id": "l10-s2-sort-05",
+      "lesson": 10,
+      "kind": "sort",
+      "printPages": [
+        75,
+        76
+      ],
+      "pdfPages": [
+        90,
+        91
+      ]
+    },
+    {
+      "id": "l10-s2-translation-free-01",
+      "lesson": 10,
+      "kind": "translation",
+      "printPages": [
+        71,
+        72
+      ],
+      "pdfPages": [
+        86,
+        87
+      ]
+    },
+    {
+      "id": "l10-s2-translation-free-02",
+      "lesson": 10,
+      "kind": "translation",
+      "printPages": [
+        38,
+        73
+      ],
+      "pdfPages": [
+        53,
+        88
+      ]
+    },
+    {
+      "id": "l10-s2-translation-free-03",
+      "lesson": 10,
+      "kind": "translation",
+      "printPages": [
+        12,
+        14,
+        74,
+        75,
+        76
+      ],
+      "pdfPages": [
+        27,
+        29,
+        89,
+        90,
+        91
+      ]
+    },
+    {
+      "id": "l10-s2-translation-free-04",
+      "lesson": 10,
+      "kind": "translation",
+      "printPages": [
+        64,
+        76
+      ],
+      "pdfPages": [
+        79,
+        91
+      ]
+    },
+    {
+      "id": "l10-s2-translation-free-05",
+      "lesson": 10,
+      "kind": "translation",
+      "printPages": [
+        55,
+        71,
+        74
+      ],
+      "pdfPages": [
+        70,
+        86,
+        89
+      ]
+    },
+    {
+      "id": "l11-s2-choice-01",
+      "lesson": 11,
+      "kind": "choice",
+      "printPages": [
+        81,
+        82
+      ],
+      "pdfPages": [
+        96,
+        97
+      ]
+    },
+    {
+      "id": "l11-s2-choice-02",
+      "lesson": 11,
+      "kind": "choice",
+      "printPages": [
+        79,
+        80
+      ],
+      "pdfPages": [
+        94,
+        95
+      ]
+    },
+    {
+      "id": "l11-s2-choice-03",
+      "lesson": 11,
+      "kind": "choice",
+      "printPages": [
+        83,
+        84
+      ],
+      "pdfPages": [
+        98,
+        99
+      ]
+    },
+    {
+      "id": "l11-s2-choice-04",
+      "lesson": 11,
+      "kind": "choice",
+      "printPages": [
+        81,
+        82
+      ],
+      "pdfPages": [
+        96,
+        97
+      ]
+    },
+    {
+      "id": "l11-s2-choice-05",
+      "lesson": 11,
+      "kind": "choice",
+      "printPages": [
+        79,
+        83
+      ],
+      "pdfPages": [
+        94,
+        98
+      ]
+    },
+    {
+      "id": "l11-s2-sort-01",
+      "lesson": 11,
+      "kind": "sort",
+      "printPages": [
+        81,
+        82
+      ],
+      "pdfPages": [
+        96,
+        97
+      ]
+    },
+    {
+      "id": "l11-s2-sort-02",
+      "lesson": 11,
+      "kind": "sort",
+      "printPages": [
+        80,
+        83
+      ],
+      "pdfPages": [
+        95,
+        98
+      ]
+    },
+    {
+      "id": "l11-s2-sort-03",
+      "lesson": 11,
+      "kind": "sort",
+      "printPages": [
+        83,
+        84
+      ],
+      "pdfPages": [
+        98,
+        99
+      ]
+    },
+    {
+      "id": "l11-s2-sort-04",
+      "lesson": 11,
+      "kind": "sort",
+      "printPages": [
+        83
+      ],
+      "pdfPages": [
+        98
+      ]
+    },
+    {
+      "id": "l11-s2-sort-05",
+      "lesson": 11,
+      "kind": "sort",
+      "printPages": [
+        80,
+        81
+      ],
+      "pdfPages": [
+        95,
+        96
+      ]
+    },
+    {
+      "id": "l11-s2-translation-free-01",
+      "lesson": 11,
+      "kind": "translation",
+      "printPages": [
+        79,
+        82
+      ],
+      "pdfPages": [
+        94,
+        97
+      ]
+    },
+    {
+      "id": "l11-s2-translation-free-02",
+      "lesson": 11,
+      "kind": "translation",
+      "printPages": [
+        80,
+        83
+      ],
+      "pdfPages": [
+        95,
+        98
+      ]
+    },
+    {
+      "id": "l11-s2-translation-free-03",
+      "lesson": 11,
+      "kind": "translation",
+      "printPages": [
+        83,
+        84
+      ],
+      "pdfPages": [
+        98,
+        99
+      ]
+    },
+    {
+      "id": "l11-s2-translation-free-04",
+      "lesson": 11,
+      "kind": "translation",
+      "printPages": [
+        81,
+        82
+      ],
+      "pdfPages": [
+        96,
+        97
+      ]
+    },
+    {
+      "id": "l11-s2-translation-free-05",
+      "lesson": 11,
+      "kind": "translation",
+      "printPages": [
+        82,
+        83,
+        84
+      ],
+      "pdfPages": [
+        97,
+        98,
+        99
+      ]
+    },
+    {
+      "id": "l12-s2-choice-01",
+      "lesson": 12,
+      "kind": "choice",
+      "printPages": [
+        88
+      ],
+      "pdfPages": [
+        103
+      ]
+    },
+    {
+      "id": "l12-s2-choice-02",
+      "lesson": 12,
+      "kind": "choice",
+      "printPages": [
+        88,
+        91
+      ],
+      "pdfPages": [
+        103,
+        106
+      ]
+    },
+    {
+      "id": "l12-s2-choice-03",
+      "lesson": 12,
+      "kind": "choice",
+      "printPages": [
+        91
+      ],
+      "pdfPages": [
+        106
+      ]
+    },
+    {
+      "id": "l12-s2-choice-04",
+      "lesson": 12,
+      "kind": "choice",
+      "printPages": [
+        90,
+        91
+      ],
+      "pdfPages": [
+        105,
+        106
+      ]
+    },
+    {
+      "id": "l12-s2-choice-05",
+      "lesson": 12,
+      "kind": "choice",
+      "printPages": [
+        89,
+        91
+      ],
+      "pdfPages": [
+        104,
+        106
+      ]
+    },
+    {
+      "id": "l12-s2-sort-01",
+      "lesson": 12,
+      "kind": "sort",
+      "printPages": [
+        88
+      ],
+      "pdfPages": [
+        103
+      ]
+    },
+    {
+      "id": "l12-s2-sort-02",
+      "lesson": 12,
+      "kind": "sort",
+      "printPages": [
+        88,
+        91
+      ],
+      "pdfPages": [
+        103,
+        106
+      ]
+    },
+    {
+      "id": "l12-s2-sort-03",
+      "lesson": 12,
+      "kind": "sort",
+      "printPages": [
+        90,
+        91
+      ],
+      "pdfPages": [
+        105,
+        106
+      ]
+    },
+    {
+      "id": "l12-s2-sort-04",
+      "lesson": 12,
+      "kind": "sort",
+      "printPages": [
+        91
+      ],
+      "pdfPages": [
+        106
+      ]
+    },
+    {
+      "id": "l12-s2-sort-05",
+      "lesson": 12,
+      "kind": "sort",
+      "printPages": [
+        89,
+        91
+      ],
+      "pdfPages": [
+        104,
+        106
+      ]
+    },
+    {
+      "id": "l12-s2-translation-free-01",
+      "lesson": 12,
+      "kind": "translation",
+      "printPages": [
+        89,
+        91
+      ],
+      "pdfPages": [
+        104,
+        106
+      ]
+    },
+    {
+      "id": "l12-s2-translation-free-02",
+      "lesson": 12,
+      "kind": "translation",
+      "printPages": [
+        88
+      ],
+      "pdfPages": [
+        103
+      ]
+    },
+    {
+      "id": "l12-s2-translation-free-03",
+      "lesson": 12,
+      "kind": "translation",
+      "printPages": [
+        88,
+        91
+      ],
+      "pdfPages": [
+        103,
+        106
+      ]
+    },
+    {
+      "id": "l12-s2-translation-free-04",
+      "lesson": 12,
+      "kind": "translation",
+      "printPages": [
+        88,
+        89
+      ],
+      "pdfPages": [
+        103,
+        104
+      ]
+    },
+    {
+      "id": "l12-s2-translation-free-05",
+      "lesson": 12,
+      "kind": "translation",
+      "printPages": [
+        88,
+        90
+      ],
+      "pdfPages": [
+        103,
+        105
+      ]
+    },
+    {
+      "id": "l13-s2-choice-01",
+      "lesson": 13,
+      "kind": "choice",
+      "printPages": [
+        97,
+        98,
+        99
+      ],
+      "pdfPages": [
+        112,
+        113,
+        114
+      ]
+    },
+    {
+      "id": "l13-s2-choice-02",
+      "lesson": 13,
+      "kind": "choice",
+      "printPages": [
+        97
+      ],
+      "pdfPages": [
+        112
+      ]
+    },
+    {
+      "id": "l13-s2-choice-03",
+      "lesson": 13,
+      "kind": "choice",
+      "printPages": [
+        99
+      ],
+      "pdfPages": [
+        114
+      ]
+    },
+    {
+      "id": "l13-s2-choice-04",
+      "lesson": 13,
+      "kind": "choice",
+      "printPages": [
+        98,
+        99,
+        100
+      ],
+      "pdfPages": [
+        113,
+        114,
+        115
+      ]
+    },
+    {
+      "id": "l13-s2-choice-05",
+      "lesson": 13,
+      "kind": "choice",
+      "printPages": [
+        97,
+        99
+      ],
+      "pdfPages": [
+        112,
+        114
+      ]
+    },
+    {
+      "id": "l13-s2-sort-01",
+      "lesson": 13,
+      "kind": "sort",
+      "printPages": [
+        98,
+        99
+      ],
+      "pdfPages": [
+        113,
+        114
+      ]
+    },
+    {
+      "id": "l13-s2-sort-02",
+      "lesson": 13,
+      "kind": "sort",
+      "printPages": [
+        97,
+        99
+      ],
+      "pdfPages": [
+        112,
+        114
+      ]
+    },
+    {
+      "id": "l13-s2-sort-03",
+      "lesson": 13,
+      "kind": "sort",
+      "printPages": [
+        97
+      ],
+      "pdfPages": [
+        112
+      ]
+    },
+    {
+      "id": "l13-s2-sort-04",
+      "lesson": 13,
+      "kind": "sort",
+      "printPages": [
+        99
+      ],
+      "pdfPages": [
+        114
+      ]
+    },
+    {
+      "id": "l13-s2-sort-05",
+      "lesson": 13,
+      "kind": "sort",
+      "printPages": [
+        97,
+        99
+      ],
+      "pdfPages": [
+        112,
+        114
+      ]
+    },
+    {
+      "id": "l13-s2-translation-free-01",
+      "lesson": 13,
+      "kind": "translation",
+      "printPages": [
+        99,
+        100
+      ],
+      "pdfPages": [
+        114,
+        115
+      ]
+    },
+    {
+      "id": "l13-s2-translation-free-02",
+      "lesson": 13,
+      "kind": "translation",
+      "printPages": [
+        97
+      ],
+      "pdfPages": [
+        112
+      ]
+    },
+    {
+      "id": "l13-s2-translation-free-03",
+      "lesson": 13,
+      "kind": "translation",
+      "printPages": [
+        91,
+        97
+      ],
+      "pdfPages": [
+        106,
+        112
+      ]
+    },
+    {
+      "id": "l13-s2-translation-free-04",
+      "lesson": 13,
+      "kind": "translation",
+      "printPages": [
+        96,
+        97,
+        99
+      ],
+      "pdfPages": [
+        111,
+        112,
+        114
+      ]
+    },
+    {
+      "id": "l13-s2-translation-free-05",
+      "lesson": 13,
+      "kind": "translation",
+      "printPages": [
+        98,
+        99
+      ],
+      "pdfPages": [
+        113,
+        114
+      ]
+    },
+    {
+      "id": "l14-s2-choice-01",
+      "lesson": 14,
+      "kind": "choice",
+      "printPages": [
+        104,
+        105
+      ],
+      "pdfPages": [
+        119,
+        120
+      ]
+    },
+    {
+      "id": "l14-s2-choice-02",
+      "lesson": 14,
+      "kind": "choice",
+      "printPages": [
+        105
+      ],
+      "pdfPages": [
+        120
+      ]
+    },
+    {
+      "id": "l14-s2-choice-03",
+      "lesson": 14,
+      "kind": "choice",
+      "printPages": [
+        107,
+        108
+      ],
+      "pdfPages": [
+        122,
+        123
+      ]
+    },
+    {
+      "id": "l14-s2-choice-04",
+      "lesson": 14,
+      "kind": "choice",
+      "printPages": [
+        105,
+        106
+      ],
+      "pdfPages": [
+        120,
+        121
+      ]
+    },
+    {
+      "id": "l14-s2-choice-05",
+      "lesson": 14,
+      "kind": "choice",
+      "printPages": [
+        107,
+        108
+      ],
+      "pdfPages": [
+        122,
+        123
+      ]
+    },
+    {
+      "id": "l14-s2-sort-01",
+      "lesson": 14,
+      "kind": "sort",
+      "printPages": [
+        105
+      ],
+      "pdfPages": [
+        120
+      ]
+    },
+    {
+      "id": "l14-s2-sort-02",
+      "lesson": 14,
+      "kind": "sort",
+      "printPages": [
+        105,
+        108,
+        109
+      ],
+      "pdfPages": [
+        120,
+        123,
+        124
+      ]
+    },
+    {
+      "id": "l14-s2-sort-03",
+      "lesson": 14,
+      "kind": "sort",
+      "printPages": [
+        107,
+        108
+      ],
+      "pdfPages": [
+        122,
+        123
+      ]
+    },
+    {
+      "id": "l14-s2-sort-04",
+      "lesson": 14,
+      "kind": "sort",
+      "printPages": [
+        109
+      ],
+      "pdfPages": [
+        124
+      ]
+    },
+    {
+      "id": "l14-s2-sort-05",
+      "lesson": 14,
+      "kind": "sort",
+      "printPages": [
+        104,
+        105,
+        106
+      ],
+      "pdfPages": [
+        119,
+        120,
+        121
+      ]
+    },
+    {
+      "id": "l14-s2-translation-free-01",
+      "lesson": 14,
+      "kind": "translation",
+      "printPages": [
+        105
+      ],
+      "pdfPages": [
+        120
+      ]
+    },
+    {
+      "id": "l14-s2-translation-free-02",
+      "lesson": 14,
+      "kind": "translation",
+      "printPages": [
+        108,
+        109
+      ],
+      "pdfPages": [
+        123,
+        124
+      ]
+    },
+    {
+      "id": "l14-s2-translation-free-03",
+      "lesson": 14,
+      "kind": "translation",
+      "printPages": [
+        105,
+        107,
+        108
+      ],
+      "pdfPages": [
+        120,
+        122,
+        123
+      ]
+    },
+    {
+      "id": "l14-s2-translation-free-04",
+      "lesson": 14,
+      "kind": "translation",
+      "printPages": [
+        109
+      ],
+      "pdfPages": [
+        124
+      ]
+    },
+    {
+      "id": "l14-s2-translation-free-05",
+      "lesson": 14,
+      "kind": "translation",
+      "printPages": [
+        105,
+        106
+      ],
+      "pdfPages": [
+        120,
+        121
+      ]
+    },
+    {
+      "id": "l15-s2-choice-01",
+      "lesson": 15,
+      "kind": "choice",
+      "printPages": [
+        113,
+        114
+      ],
+      "pdfPages": [
+        128,
+        129
+      ]
+    },
+    {
+      "id": "l15-s2-choice-02",
+      "lesson": 15,
+      "kind": "choice",
+      "printPages": [
+        117
+      ],
+      "pdfPages": [
+        132
+      ]
+    },
+    {
+      "id": "l15-s2-choice-03",
+      "lesson": 15,
+      "kind": "choice",
+      "printPages": [
+        113
+      ],
+      "pdfPages": [
+        128
+      ]
+    },
+    {
+      "id": "l15-s2-choice-04",
+      "lesson": 15,
+      "kind": "choice",
+      "printPages": [
+        117
+      ],
+      "pdfPages": [
+        132
+      ]
+    },
+    {
+      "id": "l15-s2-choice-05",
+      "lesson": 15,
+      "kind": "choice",
+      "printPages": [
+        115,
+        117
+      ],
+      "pdfPages": [
+        130,
+        132
+      ]
+    },
+    {
+      "id": "l15-s2-sort-01",
+      "lesson": 15,
+      "kind": "sort",
+      "printPages": [
+        113,
+        114
+      ],
+      "pdfPages": [
+        128,
+        129
+      ]
+    },
+    {
+      "id": "l15-s2-sort-02",
+      "lesson": 15,
+      "kind": "sort",
+      "printPages": [
+        117
+      ],
+      "pdfPages": [
+        132
+      ]
+    },
+    {
+      "id": "l15-s2-sort-03",
+      "lesson": 15,
+      "kind": "sort",
+      "printPages": [
+        117
+      ],
+      "pdfPages": [
+        132
+      ]
+    },
+    {
+      "id": "l15-s2-sort-04",
+      "lesson": 15,
+      "kind": "sort",
+      "printPages": [
+        105,
+        115
+      ],
+      "pdfPages": [
+        120,
+        130
+      ]
+    },
+    {
+      "id": "l15-s2-sort-05",
+      "lesson": 15,
+      "kind": "sort",
+      "printPages": [
+        117
+      ],
+      "pdfPages": [
+        132
+      ]
+    },
+    {
+      "id": "l15-s2-translation-free-01",
+      "lesson": 15,
+      "kind": "translation",
+      "printPages": [
+        113,
+        114
+      ],
+      "pdfPages": [
+        128,
+        129
+      ]
+    },
+    {
+      "id": "l15-s2-translation-free-02",
+      "lesson": 15,
+      "kind": "translation",
+      "printPages": [
+        117
+      ],
+      "pdfPages": [
+        132
+      ]
+    },
+    {
+      "id": "l15-s2-translation-free-03",
+      "lesson": 15,
+      "kind": "translation",
+      "printPages": [
+        117
+      ],
+      "pdfPages": [
+        132
+      ]
+    },
+    {
+      "id": "l15-s2-translation-free-04",
+      "lesson": 15,
+      "kind": "translation",
+      "printPages": [
+        115,
+        117
+      ],
+      "pdfPages": [
+        130,
+        132
+      ]
+    },
+    {
+      "id": "l15-s2-translation-free-05",
+      "lesson": 15,
+      "kind": "translation",
+      "printPages": [
+        117
+      ],
+      "pdfPages": [
+        132
+      ]
+    }
+  ],
+  "semanticReviewHints": [
+    {
+      "id": "l01-s2-choice-01",
+      "word": "再",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l01-s2-choice-03",
+      "word": "再",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l01-s2-choice-04",
+      "word": "大",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l01-s2-choice-04",
+      "word": "家",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l01-s2-choice-04",
+      "word": "再",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l01-s2-choice-05",
+      "word": "大",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l01-s2-choice-05",
+      "word": "家",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l01-s2-choice-05",
+      "word": "再",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l01-s2-sort-04",
+      "word": "再",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l02-s2-choice-01",
+      "word": "家",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l02-s2-choice-01",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l02-s2-choice-02",
+      "word": "对",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l02-s2-choice-03",
+      "word": "对",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l03-choice-03",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l03-choice-04",
+      "word": "工作",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "名词：工作、职业",
+          "printPages": [
+            14,
+            14
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l03-choice-04",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l03-sort-05",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l04-s2-choice-03",
+      "word": "大",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "年龄大；用于询问年龄",
+          "printPages": [
+            25,
+            25
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l04-s2-choice-03",
+      "word": "多",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：程度；多大",
+          "printPages": [
+            25,
+            25
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l04-s2-choice-03",
+      "word": "几",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：询问数量",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l04-s2-choice-03",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l04-s2-choice-04",
+      "word": "几",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：询问数量",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l04-s2-choice-04",
+      "word": "呢",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问句末追问前文相关情况",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l04-s2-sort-01",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l04-s2-sort-02",
+      "word": "大",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "年龄大；用于询问年龄",
+          "printPages": [
+            25,
+            25
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l04-s2-sort-02",
+      "word": "多",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：程度；多大",
+          "printPages": [
+            25,
+            25
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l04-s2-sort-04",
+      "word": "和",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "连词：和、以及",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-01",
+      "word": "号",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "日期中的号",
+          "printPages": [
+            28,
+            28
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-01",
+      "word": "几",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：询问数量",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-01",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-02",
+      "word": "号",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "日期中的号",
+          "printPages": [
+            28,
+            28
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-02",
+      "word": "几",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：询问数量",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-02",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-03",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-03",
+      "word": "做",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "动词：制作",
+          "printPages": [
+            31,
+            31
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-04",
+      "word": "几",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：询问数量",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-05",
+      "word": "号",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "日期中的号",
+          "printPages": [
+            28,
+            28
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-05",
+      "word": "几",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：询问数量",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-05",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-choice-05",
+      "word": "做",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "动词：制作",
+          "printPages": [
+            31,
+            31
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-sort-01",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l05-s2-sort-02",
+      "word": "做",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "动词：制作",
+          "printPages": [
+            31,
+            31
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-01",
+      "word": "大",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "年龄大；用于询问年龄",
+          "printPages": [
+            25,
+            25
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-01",
+      "word": "多",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：程度；多大",
+          "printPages": [
+            25,
+            25
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-01",
+      "word": "号",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "日期中的号",
+          "printPages": [
+            28,
+            28
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "号码",
+          "printPages": [
+            36,
+            36
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-01",
+      "word": "几",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：询问数量",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-01",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-01",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-02",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-02",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-03",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-03",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-03",
+      "word": "坐",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 6,
+          "meaning": "动词：乘坐交通工具",
+          "printPages": [
+            40,
+            40
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-choice-04",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-sort-01",
+      "word": "多",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：程度；多大",
+          "printPages": [
+            25,
+            25
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-sort-01",
+      "word": "号",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "日期中的号",
+          "printPages": [
+            28,
+            28
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "号码",
+          "printPages": [
+            36,
+            36
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-sort-02",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-sort-04",
+      "word": "坐",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 6,
+          "meaning": "动词：乘坐交通工具",
+          "printPages": [
+            40,
+            40
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l06-s2-sort-05",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-01",
+      "word": "上",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-01",
+      "word": "下",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-02",
+      "word": "几",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：询问数量",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-03",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "名词：家、住所",
+          "printPages": [
+            51,
+            51
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-03",
+      "word": "呢",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问句末追问前文相关情况",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "陈述句末确认事实",
+          "printPages": [
+            49,
+            49
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-03",
+      "word": "上",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-03",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-03",
+      "word": "下",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-03",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-03",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-04",
+      "word": "上",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-04",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-04",
+      "word": "下",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-05",
+      "word": "呢",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问句末追问前文相关情况",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "陈述句末确认事实",
+          "printPages": [
+            49,
+            49
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-choice-05",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-sort-01",
+      "word": "上",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-sort-01",
+      "word": "下",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-sort-02",
+      "word": "下",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-sort-03",
+      "word": "上",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-sort-04",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "名词：家、住所",
+          "printPages": [
+            51,
+            51
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-sort-04",
+      "word": "呢",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问句末追问前文相关情况",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "陈述句末确认事实",
+          "printPages": [
+            49,
+            49
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l07-s2-sort-04",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-01",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "名词：家、住所",
+          "printPages": [
+            51,
+            51
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-01",
+      "word": "下",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 8,
+          "meaning": "名词：下面、较低的位置",
+          "printPages": [
+            55,
+            55
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-01",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-02",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "名词：家、住所",
+          "printPages": [
+            51,
+            51
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-03",
+      "word": "工作",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "名词：工作、职业",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "动词：工作",
+          "printPages": [
+            59,
+            59
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-03",
+      "word": "上",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-03",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-03",
+      "word": "下",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 8,
+          "meaning": "名词：下面、较低的位置",
+          "printPages": [
+            55,
+            55
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-03",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-03",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-04",
+      "word": "几",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：询问数量",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-04",
+      "word": "下",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 8,
+          "meaning": "名词：下面、较低的位置",
+          "printPages": [
+            55,
+            55
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-04",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-choice-04",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-sort-01",
+      "word": "下",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 8,
+          "meaning": "名词：下面、较低的位置",
+          "printPages": [
+            55,
+            55
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-sort-01",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-sort-02",
+      "word": "工作",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "名词：工作、职业",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "动词：工作",
+          "printPages": [
+            59,
+            59
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-sort-02",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-sort-03",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l08-s2-sort-04",
+      "word": "下",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 8,
+          "meaning": "名词：下面、较低的位置",
+          "printPages": [
+            55,
+            55
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-01",
+      "word": "上",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 9,
+          "meaning": "名词：上面或较高的位置",
+          "printPages": [
+            64,
+            64
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-02",
+      "word": "上",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 9,
+          "meaning": "名词：上面或较高的位置",
+          "printPages": [
+            64,
+            64
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-04",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "名词：家、住所",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "量词：用于商店等机构",
+          "printPages": [
+            62,
+            62
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-04",
+      "word": "上",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 9,
+          "meaning": "名词：上面或较高的位置",
+          "printPages": [
+            64,
+            64
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-04",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-04",
+      "word": "下",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 8,
+          "meaning": "名词：下面、较低的位置",
+          "printPages": [
+            55,
+            55
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-04",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-05",
+      "word": "和",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "连词：和、以及",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "介词：和某人一起",
+          "printPages": [
+            66,
+            66
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-05",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "名词：家、住所",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "量词：用于商店等机构",
+          "printPages": [
+            62,
+            62
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-05",
+      "word": "上",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 9,
+          "meaning": "名词：上面或较高的位置",
+          "printPages": [
+            64,
+            64
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-05",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-05",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-choice-05",
+      "word": "做",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "动词：制作",
+          "printPages": [
+            31,
+            31
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "动词：做、从事",
+          "printPages": [
+            66,
+            66
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-sort-01",
+      "word": "上",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 9,
+          "meaning": "名词：上面或较高的位置",
+          "printPages": [
+            64,
+            64
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-sort-02",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "名词：家、住所",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "量词：用于商店等机构",
+          "printPages": [
+            62,
+            62
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-sort-04",
+      "word": "上",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 9,
+          "meaning": "名词：上面或较高的位置",
+          "printPages": [
+            64,
+            64
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-sort-04",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-sort-04",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-sort-05",
+      "word": "和",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "连词：和、以及",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "介词：和某人一起",
+          "printPages": [
+            66,
+            66
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l09-s2-sort-05",
+      "word": "上",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 9,
+          "meaning": "名词：上面或较高的位置",
+          "printPages": [
+            64,
+            64
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l10-s2-choice-02",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l10-s2-choice-03",
+      "word": "多",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：程度；多大",
+          "printPages": [
+            25,
+            25
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "形容词：数量多",
+          "printPages": [
+            59,
+            59
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l10-s2-choice-03",
+      "word": "几",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：询问数量",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l10-s2-choice-03",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "名词：家、住所",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "量词：用于商店等机构",
+          "printPages": [
+            62,
+            62
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l10-s2-choice-03",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l10-s2-choice-04",
+      "word": "那",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 9,
+          "meaning": "代词：那、那个",
+          "printPages": [
+            64,
+            64
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l10-s2-sort-01",
+      "word": "多",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：程度；多大",
+          "printPages": [
+            25,
+            25
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "形容词：数量多",
+          "printPages": [
+            59,
+            59
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l10-s2-sort-02",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l10-s2-sort-04",
+      "word": "那",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 9,
+          "meaning": "代词：那、那个",
+          "printPages": [
+            64,
+            64
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-01",
+      "word": "呢",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问句末追问前文相关情况",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "陈述句末确认事实",
+          "printPages": [
+            49,
+            49
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-01",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-01",
+      "word": "要",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 11,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            83,
+            83
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-01",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-01",
+      "word": "做",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "动词：制作",
+          "printPages": [
+            31,
+            31
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "动词：做、从事",
+          "printPages": [
+            66,
+            66
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-02",
+      "word": "菜",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "菜肴；一道菜",
+          "printPages": [
+            31,
+            31
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "蔬菜",
+          "printPages": [
+            51,
+            51
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-02",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-03",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-03",
+      "word": "要",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 11,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            83,
+            83
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-03",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-04",
+      "word": "大",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "年龄大；用于询问年龄",
+          "printPages": [
+            25,
+            25
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "大小、规模大",
+          "printPages": [
+            59,
+            59
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-04",
+      "word": "工作",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "名词：工作、职业",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "动词：工作",
+          "printPages": [
+            59,
+            59
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-04",
+      "word": "呢",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问句末追问前文相关情况",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "陈述句末确认事实",
+          "printPages": [
+            49,
+            49
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-04",
+      "word": "要",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 11,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            83,
+            83
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-04",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-choice-05",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-sort-01",
+      "word": "呢",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问句末追问前文相关情况",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "陈述句末确认事实",
+          "printPages": [
+            49,
+            49
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-sort-01",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-sort-01",
+      "word": "做",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "动词：制作",
+          "printPages": [
+            31,
+            31
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "动词：做、从事",
+          "printPages": [
+            66,
+            66
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-sort-02",
+      "word": "天",
+      "possibleSensesThroughLesson": [],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-sort-03",
+      "word": "要",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 11,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            83,
+            83
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-sort-04",
+      "word": "对",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "形容词：对、正确",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "介词：向、对着某人",
+          "printPages": [
+            83,
+            83
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l11-s2-sort-05",
+      "word": "大",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "年龄大；用于询问年龄",
+          "printPages": [
+            25,
+            25
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "大小、规模大",
+          "printPages": [
+            59,
+            59
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-choice-01",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-choice-01",
+      "word": "天",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "名词：天气",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 12,
+          "meaning": "量词：日、天",
+          "printPages": [
+            91,
+            91
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-choice-01",
+      "word": "下",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 8,
+          "meaning": "名词：下面、较低的位置",
+          "printPages": [
+            55,
+            55
+          ]
+        },
+        {
+          "lesson": 12,
+          "meaning": "动词：雨雪等降落",
+          "printPages": [
+            89,
+            89
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-choice-02",
+      "word": "几",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：询问数量",
+          "printPages": [
+            22,
+            22
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-choice-02",
+      "word": "天",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "名词：天气",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 12,
+          "meaning": "量词：日、天",
+          "printPages": [
+            91,
+            91
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-choice-02",
+      "word": "再",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "副词：先后顺序，之后再做",
+          "printPages": [
+            91,
+            91
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-choice-03",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-choice-04",
+      "word": "多",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "疑问代词：程度；多大",
+          "printPages": [
+            25,
+            25
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "形容词：数量多",
+          "printPages": [
+            59,
+            59
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-choice-04",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-choice-05",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-choice-05",
+      "word": "要",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 11,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            83,
+            83
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-sort-01",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-sort-01",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-sort-03",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-sort-04",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l12-s2-sort-05",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l13-s2-choice-01",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l13-s2-choice-01",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l13-s2-choice-01",
+      "word": "坐",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 6,
+          "meaning": "动词：乘坐交通工具",
+          "printPages": [
+            40,
+            40
+          ]
+        },
+        {
+          "lesson": 13,
+          "meaning": "动词：坐下",
+          "printPages": [
+            99,
+            99
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l13-s2-choice-02",
+      "word": "下",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 8,
+          "meaning": "名词：下面、较低的位置",
+          "printPages": [
+            55,
+            55
+          ]
+        },
+        {
+          "lesson": 12,
+          "meaning": "动词：雨雪等降落",
+          "printPages": [
+            89,
+            89
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l13-s2-choice-04",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l13-s2-choice-05",
+      "word": "再",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "副词：先后顺序，之后再做",
+          "printPages": [
+            91,
+            91
+          ]
+        },
+        {
+          "lesson": 13,
+          "meaning": "副词：又一次、再次",
+          "printPages": [
+            97,
+            97
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l13-s2-sort-03",
+      "word": "下",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 8,
+          "meaning": "名词：下面、较低的位置",
+          "printPages": [
+            55,
+            55
+          ]
+        },
+        {
+          "lesson": 12,
+          "meaning": "动词：雨雪等降落",
+          "printPages": [
+            89,
+            89
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l13-s2-sort-05",
+      "word": "下",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 8,
+          "meaning": "名词：下面、较低的位置",
+          "printPages": [
+            55,
+            55
+          ]
+        },
+        {
+          "lesson": 12,
+          "meaning": "动词：雨雪等降落",
+          "printPages": [
+            89,
+            89
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l13-s2-sort-05",
+      "word": "要",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 11,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            83,
+            83
+          ]
+        },
+        {
+          "lesson": 13,
+          "meaning": "动词：请求、点要某物",
+          "printPages": [
+            99,
+            99
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-01",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词后的动态助词：动作发生或完成",
+          "printPages": [
+            105,
+            105
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-01",
+      "word": "天",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "名词：天气",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 12,
+          "meaning": "量词：日、天",
+          "printPages": [
+            91,
+            91
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-01",
+      "word": "要",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 11,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            83,
+            83
+          ]
+        },
+        {
+          "lesson": 13,
+          "meaning": "动词：请求、点要某物",
+          "printPages": [
+            99,
+            99
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-01",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-02",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词后的动态助词：动作发生或完成",
+          "printPages": [
+            105,
+            105
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-02",
+      "word": "天",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "名词：天气",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 12,
+          "meaning": "量词：日、天",
+          "printPages": [
+            91,
+            91
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-03",
+      "word": "再",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "副词：先后顺序，之后再做",
+          "printPages": [
+            91,
+            91
+          ]
+        },
+        {
+          "lesson": 13,
+          "meaning": "副词：又一次、再次",
+          "printPages": [
+            97,
+            97
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-03",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-04",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词后的动态助词：动作发生或完成",
+          "printPages": [
+            105,
+            105
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-04",
+      "word": "天",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "名词：天气",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 12,
+          "meaning": "量词：日、天",
+          "printPages": [
+            91,
+            91
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-05",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词后的动态助词：动作发生或完成",
+          "printPages": [
+            105,
+            105
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-05",
+      "word": "上",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 9,
+          "meaning": "名词：上面或较高的位置",
+          "printPages": [
+            64,
+            64
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词：上车、登乘",
+          "printPages": [
+            105,
+            105
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词：在固定时间开始做某事，如上中学",
+          "printPages": [
+            109,
+            109
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-05",
+      "word": "要",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 11,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            83,
+            83
+          ]
+        },
+        {
+          "lesson": 13,
+          "meaning": "动词：请求、点要某物",
+          "printPages": [
+            99,
+            99
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-choice-05",
+      "word": "再",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "副词：先后顺序，之后再做",
+          "printPages": [
+            91,
+            91
+          ]
+        },
+        {
+          "lesson": 13,
+          "meaning": "副词：又一次、再次",
+          "printPages": [
+            97,
+            97
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-sort-01",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词后的动态助词：动作发生或完成",
+          "printPages": [
+            105,
+            105
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-sort-01",
+      "word": "天",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "名词：天气",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 12,
+          "meaning": "量词：日、天",
+          "printPages": [
+            91,
+            91
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-sort-04",
+      "word": "上",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 9,
+          "meaning": "名词：上面或较高的位置",
+          "printPages": [
+            64,
+            64
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词：上车、登乘",
+          "printPages": [
+            105,
+            105
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词：在固定时间开始做某事，如上中学",
+          "printPages": [
+            109,
+            109
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l14-s2-sort-05",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词后的动态助词：动作发生或完成",
+          "printPages": [
+            105,
+            105
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-choice-01",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-choice-02",
+      "word": "天",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "名词：天气",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 12,
+          "meaning": "量词：日、天",
+          "printPages": [
+            91,
+            91
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-choice-02",
+      "word": "要",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 11,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            83,
+            83
+          ]
+        },
+        {
+          "lesson": 13,
+          "meaning": "动词：请求、点要某物",
+          "printPages": [
+            99,
+            99
+          ]
+        },
+        {
+          "lesson": 15,
+          "meaning": "动词：需要、花费（时间）",
+          "printPages": [
+            117,
+            117
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-choice-03",
+      "word": "要",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 11,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            83,
+            83
+          ]
+        },
+        {
+          "lesson": 13,
+          "meaning": "动词：请求、点要某物",
+          "printPages": [
+            99,
+            99
+          ]
+        },
+        {
+          "lesson": 15,
+          "meaning": "动词：需要、花费（时间）",
+          "printPages": [
+            117,
+            117
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-choice-03",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-choice-03",
+      "word": "做",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 5,
+          "meaning": "动词：制作",
+          "printPages": [
+            31,
+            31
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "动词：做、从事",
+          "printPages": [
+            66,
+            66
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-choice-05",
+      "word": "大",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "年龄大；用于询问年龄",
+          "printPages": [
+            25,
+            25
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "大小、规模大",
+          "printPages": [
+            59,
+            59
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-choice-05",
+      "word": "和",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "连词：和、以及",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "介词：和某人一起",
+          "printPages": [
+            66,
+            66
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-choice-05",
+      "word": "家",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "名词：家庭",
+          "printPages": [
+            22,
+            22
+          ]
+        },
+        {
+          "lesson": 7,
+          "meaning": "名词：家、住所",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 9,
+          "meaning": "量词：用于商店等机构",
+          "printPages": [
+            62,
+            62
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-choice-05",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词后的动态助词：动作发生或完成",
+          "printPages": [
+            105,
+            105
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-choice-05",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-sort-02",
+      "word": "大",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 4,
+          "meaning": "年龄大；用于询问年龄",
+          "printPages": [
+            25,
+            25
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "大小、规模大",
+          "printPages": [
+            59,
+            59
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-sort-02",
+      "word": "在",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 7,
+          "meaning": "动词：在某处",
+          "printPages": [
+            51,
+            51
+          ]
+        },
+        {
+          "lesson": 8,
+          "meaning": "介词：在某处做事",
+          "printPages": [
+            57,
+            57
+          ]
+        },
+        {
+          "lesson": 11,
+          "meaning": "副词：动作正在进行",
+          "printPages": [
+            81,
+            81
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-sort-03",
+      "word": "要",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 11,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            83,
+            83
+          ]
+        },
+        {
+          "lesson": 13,
+          "meaning": "动词：请求、点要某物",
+          "printPages": [
+            99,
+            99
+          ]
+        },
+        {
+          "lesson": 15,
+          "meaning": "动词：需要、花费（时间）",
+          "printPages": [
+            117,
+            117
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-sort-04",
+      "word": "了",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 12,
+          "meaning": "句末语气助词：情况或状态变化",
+          "printPages": [
+            88,
+            88
+          ]
+        },
+        {
+          "lesson": 14,
+          "meaning": "动词后的动态助词：动作发生或完成",
+          "printPages": [
+            105,
+            105
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    },
+    {
+      "id": "l15-s2-sort-05",
+      "word": "想",
+      "possibleSensesThroughLesson": [
+        {
+          "lesson": 3,
+          "meaning": "动词：想念",
+          "printPages": [
+            14,
+            14
+          ]
+        },
+        {
+          "lesson": 6,
+          "meaning": "能愿动词：想做、打算做",
+          "printPages": [
+            38,
+            38
+          ]
+        }
+      ],
+      "caveat": "Literal match only; reviewer must identify the compound, syntax, and intended sense."
+    }
+  ],
+  "errors": []
+}

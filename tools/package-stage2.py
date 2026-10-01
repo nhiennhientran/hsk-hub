@@ -45,7 +45,7 @@ for lesson in bank:
         for q in lesson[kind]:
             assert q['id'] in teacher, f"Missing teacher entry: {q['id']}"
 teacher_file = ROOT / 'docs/stage2/teacher-reference.md'
-teacher_file.write_text(teacher, encoding='utf-8')
+teacher_file.write_text(teacher.rstrip() + '\n', encoding='utf-8')
 
 files = {}
 def add(path, name=None):
@@ -57,6 +57,7 @@ def add(path, name=None):
 add('dist/stage2/HSK1-Step2-All15Lessons.html', 'HSK1-Step2-All15Lessons.html')
 add('docs/stage2/teacher-reference.md', 'HSK1-Step2-Teacher-Reference.md')
 add('docs/stage2/README.md', 'README.md')
+files['README.md'] = ('# 打开第二步审阅包\n\n解压后用浏览器打开同目录的 `HSK1-Step2-All15Lessons.html` 即可做题；教师参考在 `HSK1-Step2-Teacher-Reference.md`。下方保留仓库说明和可重建的源文件路径。测试结果见 `docs/stage2/test-report.md`。\n\n---\n\n').encode('utf-8') + files['README.md']
 for directory in ('new-hsk1/hsk1/stage2', 'docs/stage2'):
     for path in sorted((ROOT / directory).rglob('*')):
         if path.is_file(): add(path.relative_to(ROOT))
@@ -78,6 +79,7 @@ for relative in (
     'tools/serve-stage2.cjs',
     'tools/package-stage2.py',
     '.github/workflows/hsk1-stage2-qa.yml',
+    'dist/stage2/HSK1-Step2-All15Lessons.html',
     'dist/stage2/build-manifest.json',
 ): add(relative)
 for name in ('stage2-browser.json', 'stage2-ci-summary.json', 'stage2-curriculum-result.json', 'stage2-engine-result.json'):

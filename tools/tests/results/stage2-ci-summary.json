@@ -1,0 +1,78 @@
+{
+  "stage": 2,
+  "result": "passed",
+  "repository": "nhiennhientran/hsk-hub",
+  "runUrl": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36809603516",
+  "runId": 36809603516,
+  "jobId": 110201487879,
+  "testedCommit": "5b10a78f96043ed7fc529681e859fbfd2b994105",
+  "workflow": ".github/workflows/hsk1-stage2-qa.yml",
+  "curriculum": {
+    "passed": true,
+    "lessons": 15,
+    "questions": 225,
+    "reviewedBankHashes": [
+      {
+        "path": "new-hsk1/hsk1/stage2/question-bank/bank-01-05.json",
+        "sha256": "a6416e6c02629f3179fa153b03459edaef0cdba872872dcacc5b8adc1553a6bd"
+      },
+      {
+        "path": "new-hsk1/hsk1/stage2/question-bank/bank-06-10.json",
+        "sha256": "05bdba219b2bec258c661737e5d8c9138cc07b9927d0c8cde7747b69cd71f233"
+      },
+      {
+        "path": "new-hsk1/hsk1/stage2/question-bank/bank-11-15.json",
+        "sha256": "7fb55ff0d1b40accc4293c7e24185cbf7878b4cc3c352929b4acfff3ffefe11b"
+      }
+    ]
+  },
+  "unit": {
+    "tests": 21,
+    "passed": 21,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "durationMs": 1270.975246
+  },
+  "browser": {
+    "name": "Chromium 151.0.7922.34",
+    "startedAt": "2026-10-01T03:15:28.982Z",
+    "completedAt": "2026-10-01T03:16:02.839Z",
+    "passedSteps": 25,
+    "pageErrors": 0,
+    "networkFailures": 0,
+    "sortingVariant": {
+      "id": "l13-s2-sort-02",
+      "answer": "我问你一个问题，可以吗？",
+      "accepted": true
+    },
+    "largeBackupTestBytes": 11968506
+  },
+  "ciArtifact": {
+    "id": 11139271911,
+    "zipBytes": 880157,
+    "sha256": "e51a1fd0157bd7c8486dbc8709758735f4dafc8bdc5aeecfe9099f5b3b3f844f",
+    "downloadedAndHashVerified": true
+  },
+  "studentArtifact": {
+    "path": "dist/stage2/HSK1-Step2-All15Lessons.html",
+    "bytes": 307525,
+    "sha256": "fbffed44d4d170f4476910051eeb684747f0845fa52c698c7147a04f1fd42a71",
+    "byteIdenticalToDownloadedCiArtifact": true
+  },
+  "visualReview": {
+    "reviewer": "assistant",
+    "files": [
+      "tools/tests/results/stage2-lesson3-translation-390.png",
+      "tools/tests/results/stage2-lesson15-receipt-390.png",
+      "tools/tests/results/stage2-all-lessons-desktop.png"
+    ],
+    "result": "All three actual CI screenshots inspected; no clipping or overlap blocking use was found. Receipt test answers are synthetic."
+  },
+  "limitations": [
+    "Isolated CI Chromium only; viewport checks are not physical-phone or Safari certification.",
+    "Unicode, multiline text and keyboard button operation are tested; operating-system IME keyboards are not emulated.",
+    "The 192 MiB theoretical import ceiling is not a claim of practical phone-memory support. Capacity tests use smaller legitimate backups.",
+    "No production deployment, listening module, mixed-lesson vocabulary, cross-device sync, or real-classroom evaluation is included in Step 2."
+  ]
+}

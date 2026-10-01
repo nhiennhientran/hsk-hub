@@ -1,0 +1,172 @@
+{
+  "test": "stage2-isolated-browser",
+  "startedAt": "2026-10-01T03:15:28.982Z",
+  "scope": "15 lessons; 225 homework tasks; no listening module",
+  "browser": "Chromium 151.0.7922.34",
+  "checks": [
+    {
+      "name": "All 15 lesson entries are open; locked hash routes fall back to a permitted group",
+      "status": "passed",
+      "durationMs": 122
+    },
+    {
+      "name": "Lesson 3: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1510
+    },
+    {
+      "name": "Lesson 1: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1517
+    },
+    {
+      "name": "Lesson 2: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1265
+    },
+    {
+      "name": "Lesson 4: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1316
+    },
+    {
+      "name": "Lesson 5: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1318
+    },
+    {
+      "name": "Lesson 6: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1415
+    },
+    {
+      "name": "Lesson 7: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1252
+    },
+    {
+      "name": "Lesson 8: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1281
+    },
+    {
+      "name": "Lesson 9: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1450
+    },
+    {
+      "name": "Lesson 10: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1333
+    },
+    {
+      "name": "Lesson 11: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1250
+    },
+    {
+      "name": "Lesson 12: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1217
+    },
+    {
+      "name": "Lesson 13: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1416
+    },
+    {
+      "name": "Lesson 14: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1386
+    },
+    {
+      "name": "Lesson 15: 15 UI answers, 4/5 choice + 5/5 sorting, five ungraded originals and receipt",
+      "status": "passed",
+      "durationMs": 1454
+    },
+    {
+      "name": "Full-course result is 225/225 with 150 automatic and 75 manual records; reload preserves current lesson",
+      "status": "passed",
+      "durationMs": 872
+    },
+    {
+      "name": "A 0/5 L3 redo preserves first 4/5 and all lessons stay unlocked",
+      "status": "passed",
+      "durationMs": 356
+    },
+    {
+      "name": "Translation redo remains a draft across lesson changes and reload while the prior receipt remains intact",
+      "status": "passed",
+      "durationMs": 997
+    },
+    {
+      "name": "A downloaded all-course JSON file restores through the visible file picker; invalid JSON does not replace it",
+      "status": "passed",
+      "durationMs": 520
+    },
+    {
+      "name": "Explicit Step1 import restores only the unchanged L3, including its ungraded original translation",
+      "status": "passed",
+      "durationMs": 350
+    },
+    {
+      "name": "Legacy v2 imports are archived; old translation choices cannot become completed free-writing tasks",
+      "status": "passed",
+      "durationMs": 240
+    },
+    {
+      "name": "A legitimate large backup imports despite full browser storage; download and in-memory previous-backup recovery remain usable",
+      "status": "passed",
+      "durationMs": 1912
+    },
+    {
+      "name": "Two real tabs cannot silently overwrite one another; stale-tab work can be exported and the newer version inspected",
+      "status": "passed",
+      "durationMs": 2073
+    },
+    {
+      "name": "The built single HTML has no external scripts/styles and preserves a last-lesson UI answer on reload",
+      "status": "passed",
+      "durationMs": 1305
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "tools/tests/results/stage2-lesson3-translation-390.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "file": "tools/tests/results/stage2-lesson15-receipt-390.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "file": "tools/tests/results/stage2-all-lessons-desktop.png",
+      "viewport": {
+        "width": 1104,
+        "height": 900
+      }
+    }
+  ],
+  "errors": [],
+  "networkFailures": [],
+  "passed": true,
+  "limitations": [
+    "Isolated CI Chromium only; viewport checks are not physical-phone or Safari certification.",
+    "Unicode, multiline text and keyboard button operation are tested; operating-system IME keyboards are not emulated.",
+    "The 192 MiB theoretical import ceiling is not a claim of practical phone-memory support. Capacity tests use smaller legitimate backups."
+  ],
+  "sortingVariant": {
+    "id": "l13-s2-sort-02",
+    "answer": "我问你一个问题，可以吗？",
+    "accepted": true
+  },
+  "largeBackupTestBytes": 11968506,
+  "completedAt": "2026-10-01T03:16:02.839Z",
+  "serverLog": "Stage 2 allowlist preview: http://127.0.0.1:18766/\n"
+}
