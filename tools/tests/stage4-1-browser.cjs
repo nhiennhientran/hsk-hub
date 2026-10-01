@@ -4,6 +4,7 @@ const path=require('node:path');
 const PORT=Number(process.env.HSK_STAGE41_PORT||18768);
 const BASE='http://127.0.0.1:'+PORT+'/hsk1/';
 const PASSWORD='Ranlaoshimeimei';
+const HARD_TIMER=setTimeout(()=>{console.error('STAGE41_HARD_TIMEOUT');process.exit(124);},8*60*1000);
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const server=spawn(process.execPath,[path.resolve('tools/serve-stage4-1.cjs')],{env:{...process.env,HSK_STAGE41_PORT:String(PORT)},stdio:['ignore','pipe','pipe']});
 let serverLog='';server.stdout.on('data',d=>serverLog+=d);server.stderr.on('data',d=>serverLog+=d);
@@ -69,7 +70,7 @@ async function doListening(page,lesson){
     const qLesson=await page.evaluate(id=>window.HSKStep3Catalog.listening.find(q=>q.id===id).lesson,qid);assert.equal(qLesson,lesson);
     assert.equal(await page.locator('#listen-transcript').count(),0,'transcript must be hidden before submission');
     await page.locator('#play-audio').click();
-    await page.waitForFunction(()=>{const a=document.getElementById('lesson-audio');return !!a&&Number.isFinite(a.duration)&&a.duration>0&&a.ended;},null,{timeout:25000});
+    await page.waitForFunction(()=>{const a=document.getElementById('lesson-audio');return !!a&&Number.isFinite(a.duration)&&a.duration>0&&a.ended;},null,{timeout:12000});
     const answer=await page.evaluate(id=>window.HSKStep3Catalog.listening.find(q=>q.id===id).answer,qid);
     await page.locator('[data-listen-option="'+answer+'"]').click();await page.locator('#listen-submit').click();await page.locator('#listening-feedback').waitFor();
     assert.equal(await page.locator('#listen-transcript').count(),1);
@@ -90,9 +91,9 @@ async function mobileCheck(page,url,selector,shot){
   await waitServer();
   const browser=await chromium.launch({headless:true});const context=await browser.newContext({viewport:{width:1104,height:900}});const page=await context.newPage();
   const errors=[],failures=[];page.on('pageerror',e=>errors.push(String(e)));page.on('requestfailed',r=>failures.push({url:r.url(),error:r.failure()?.errorText}));
-  const homework=[];for(let l=1;l<=4;l++)homework.push(await doHomework(page,l,l===4));
+  const homework=[];for(let l=1;l<=4;l++){console.log('STAGE41 homework lesson',l);homework.push(await doHomework(page,l,l===4));console.log('STAGE41 homework done',l);}
   const stage2Before=await page.evaluate(()=>localStorage.getItem('ran_hsk1_stage2_v3'));
-  const listening=[];for(let l=1;l<=4;l++)listening.push(await doListening(page,l));
+  const listening=[];for(let l=1;l<=4;l++){console.log('STAGE41 listening lesson',l);listening.push(await doListening(page,l));console.log('STAGE41 listening done',l);}
   const stage2After=await page.evaluate(()=>localStorage.getItem('ran_hsk1_stage2_v3'));assert.equal(stage2After,stage2Before,'stage3 listening must not mutate stage2 homework state');
   const states=await page.evaluate(()=>({s2:JSON.parse(localStorage.getItem('ran_hsk1_stage2_v3')),s3:JSON.parse(localStorage.getItem('ran_hsk1_stage3_v1'))}));
   assert.equal(states.s2.app,'hsk1-stage2');assert.equal(states.s3.app,'hsk1-stage3');
@@ -114,5 +115,5 @@ async function mobileCheck(page,url,selector,shot){
   const unexpected=failures.filter(x=>!x.url.includes('fonts.googleapis.com')&&!x.url.includes('fonts.gstatic.com'));assert.equal(unexpected.length,0,'network failures: '+JSON.stringify(unexpected));
   const result={passed:true,homework,listening,totalTasksExercised:80,homeworkTasks:60,listeningTasks:20,stage2UnaffectedByListening:stage2After===stage2Before,progress:'80/300 · 4/15',viewports:[390,1104],pageErrors:errors,networkFailures:unexpected,completedAt:new Date().toISOString(),serverLog};
   require('fs').mkdirSync('tools/tests/results',{recursive:true});require('fs').writeFileSync('tools/tests/results/stage4-1-browser.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
-  await context.close();await browser.close();
+  await context.close();await browser.close();clearTimeout(HARD_TIMER);
 })().catch(async e=>{console.error(e);process.exitCode=1;}).finally(()=>{server.kill('SIGTERM');});
