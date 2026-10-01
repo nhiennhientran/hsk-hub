@@ -1,0 +1,35 @@
+name: HSK1 Step 3 source audio evidence
+on:
+  push:
+    branches: ['work/hsk1-stage3-*']
+    paths:
+      - 'tools/stage3-transcribe-audio.py'
+      - '.github/workflows/hsk1-stage3-audio-evidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  transcribe:
+    if: startsWith(github.ref, 'refs/heads/work/hsk1-stage3-')
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install isolated speech-recognition dependency
+        run: pip install faster-whisper==1.2.1
+      - name: Transcribe the 90 supplied dialogue and vocabulary tracks
+        env:
+          HF_HUB_DISABLE_PROGRESS_BARS: '1'
+        run: python tools/stage3-transcribe-audio.py --model small
+      - name: Save actual source-audio recognition evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk1-step3-source-asr
+          path: tools/tests/results/stage3-asr-tracks.json
+          if-no-files-found: warn
