@@ -108,7 +108,8 @@ test('pending controls ignore early clicks and rapid switching aborts old fetche
   await page.locator('#feature-nav a[data-feature="homework"]').click();
   await expect.poll(() => pending.length).toBe(3);
   await expect(host).toHaveAttribute('data-feature', 'homework');
-  await expect(host.locator('[data-module-action="preview"]')).toBeDisabled();
+  await expect(host.locator('#submit-homework')).toBeDisabled();
+  await host.locator('#submit-homework').evaluate(button => (button as HTMLButtonElement).click());
   await pending[2]!.continue();
   await expectRoute(page, 'homework', 10, '#/homework?lesson=10&part=choice');
   // Only retired requests fail; the current request has already succeeded.
@@ -123,9 +124,16 @@ test('pending controls ignore early clicks and rapid switching aborts old fetche
     { signalPresent: true, aborted: false, settled: true },
   ]);
   await expectRoute(page, 'homework', 10, '#/homework?lesson=10&part=choice');
-  await expect(page.locator('[data-module-action="preview"]')).toBeEnabled();
-  await page.locator('[data-module-action="preview"]').click();
-  await expect(page.locator('#entry-details')).toHaveAttribute('data-click-count', '1');
+  await expect(page.locator('#submit-homework')).toBeEnabled();
+  await expect(page.locator('[data-question-id]')).toHaveCount(5);
+  const hasSubmission = () => page.evaluate(() => {
+    const raw = localStorage.getItem('ran_hsk1_modular_v1');
+    return Boolean(raw && JSON.parse(raw).data.homework.lessons['10']?.choice?.latest);
+  });
+  expect(await hasSubmission()).toBe(false);
+  await page.locator('#submit-homework').click();
+  expect(await hasSubmission()).toBe(false);
+  await expect(page.locator('#receipt-latest')).toHaveCount(0);
   expect(errors).toEqual([]);
 });
 

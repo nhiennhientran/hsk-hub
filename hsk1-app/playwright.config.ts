@@ -5,7 +5,7 @@ export default defineConfig({
   workers: 1,
   retries: 0,
   timeout: 20_000,
-  reporter: [['list'], ['json', { outputFile: '.repro-output/step3-browser.json' }]],
+  reporter: [['list'], ['json', { outputFile: '.repro-output/step4-browser.json' }]],
   projects: [
     { name: 'chromium', use: { browserName: 'chromium', launchOptions: process.env.HSK_BROWSER_PATH ? { executablePath: process.env.HSK_BROWSER_PATH, args: ['--no-sandbox', '--disable-dev-shm-usage'] } : {} } },
     { name: 'webkit', use: { browserName: 'webkit' } },

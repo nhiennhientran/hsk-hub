@@ -3,18 +3,19 @@
   "title": "HSK1 模块化改造需求与验收矩阵",
   "baseline": {
     "sourceCommit": "71b39192133c82f684384f450dda6079d3253440",
-    "workBranch": "work/hsk1-modular-step3-20261001",
+    "workBranch": "work/hsk1-modular-step4-20261001",
     "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
     "independentStep2Commit": "2c6d3b38866dcfbcf101974302609c470f1d2443",
     "independentStep3Commit": "de823050e97cbab64144197f3bf9241321b73c59",
     "first8CandidateCommit": "8ffecf1031abb52b863c6a05b38f24a8ae5c2af6",
     "step2StartCommit": "7f2e012e4eeecec5ccc868ddef96b2da28c3ab21",
-    "step3StartCommit": "1ad97b223c89a7c9183f7f09763d3d9c5139a69e"
+    "step3StartCommit": "1ad97b223c89a7c9183f7f09763d3d9c5139a69e",
+    "step4StartCommit": "5b4c4fe316356d7795ddd4bb36533562679122ad"
   },
   "scope": {
-    "currentStep": 3,
+    "currentStep": 4,
     "authorizedStepsThisTurn": [
-      3
+      4
     ],
     "runtimeChanged": true,
     "productionPublished": false,
@@ -71,7 +72,7 @@
     "code": "第1步只读基线代码可见实现；新增应用的实际验证以stepEvidence及limits为准。",
     "architecture": "目标契约已确认；新增实现与行为验收按各步骤stepEvidence及limits登记。",
     "scope": "用户确认的范围与验收条件；未登记通过的目标功能仍待执行。",
-    "acceptance": "默认待验收；第2/3步仅在各项stepEvidence及limits明确范围内部分验证。旧阶段证据不得自动继承为新应用通过。"
+    "acceptance": "新增实现按stepEvidence明确范围核验；自动规则、浏览器、实体设备和语言审校分别登记，最终冻结与发布在第9步。"
   },
   "requirements": [
     {
@@ -311,7 +312,15 @@
       ],
       "acceptance": "数据检查225唯一ID、15×5/5/5；每课完成15题；若题意修改先核销来源而非重生成整库。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "15课225题真实控件完整提交；稳定ID/来源/教学范围及冻结内容不变。"
+        }
+      ]
     },
     {
       "id": "R012",
@@ -330,7 +339,15 @@
       ],
       "acceptance": "75题全选项答案检查；正确/错误/未答路径；15课反馈显示；语言自然性不能由答案布尔测试认证。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "75题四选项共300判断；15课自动反馈、正确答案/越语解析/选项原因与分数；不认证越语语言自然性。"
+        }
+      ]
     },
     {
       "id": "R013",
@@ -346,11 +363,19 @@
       ],
       "targetLocations": [
         "src/domain/homework/",
-        "src/features/homework/sort/"
+        "src/features/homework/index.ts"
       ],
       "acceptance": "95条核定接受表达全部通过、每题明确错序拒绝；重复词块/空答/撤销/重排/键盘实测。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "95条核定表达接受、75题明确错序拒绝；点选/撤销/清空/索引重复词块/键盘与排序顺序恢复；实体触摸留第8步。"
+        }
+      ]
     },
     {
       "id": "R014",
@@ -365,11 +390,19 @@
       ],
       "targetLocations": [
         "src/domain/homework/",
-        "src/features/homework/translation/"
+        "src/features/homework/index.ts"
       ],
       "acceptance": "检查manual correct/results为null；UI/进度/备份没有译文判分；任意有效学生原文可提交；学生dist无教师答案。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "75自由翻译有效任意原文提交；correct/results均null，不计自动分母，无教师参考译文；没有人工批改结果。"
+        }
+      ]
     },
     {
       "id": "R015",
@@ -387,7 +420,15 @@
       ],
       "acceptance": "各类型缺题、纯空白、重复提交、完整提交；组句需完整词块；错误提示可定位未答题。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "缺题、空白、零宽字符、重复提交与全答提交；未提交新稿不覆盖已有提交。"
+        }
+      ]
     },
     {
       "id": "R016",
@@ -404,7 +445,15 @@
       ],
       "acceptance": "0/5客观分也能下一组；未提交不能进入；重做/刷新/迁移完成状态一致；可任意选择15课。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "选择0/5可解锁排序，排序0/5规则可解锁翻译；重做/刷新保留完成；15课任意切换。"
+        }
+      ]
     },
     {
       "id": "R017",
@@ -425,7 +474,15 @@
       ],
       "acceptance": "部分提交/全提交/低分重做时核对分母和统计；翻译/听力/自评分别展示，避免300项均计对错。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "每课15作业/10自动，课程225/150/75人工，实际作业页与公共摘要通过；独立听力和完整进度视图留第6/7步。"
+        }
+      ]
     },
     {
       "id": "R018",
@@ -454,6 +511,12 @@
           "status": "passed_for_step3_scope",
           "report": "docs/step3-acceptance.md",
           "limits": "仅非空提交first/latest/history迁移、备份恢复与服务规则；实际重做/订正UI待第4/6/7步。"
+        },
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "作业first/latest/history、先错后对、20条历史上限、重做/刷新/备份恢复；独立听力UI留第6步。"
         }
       ]
     },
@@ -470,8 +533,9 @@
       ],
       "targetLocations": [
         "src/domain/homework/",
-        "src/features/homework/translation/",
-        "src/services/storage/"
+        "src/features/homework/index.ts",
+        "src/features/homework/receipt.ts",
+        "src/services/learning/session.ts"
       ],
       "acceptance": "提交A→重做写未完B→开截图仍为A；刷新/切课/导入后两份分别恢复；再次提交才更新提交稿。",
       "evidenceStatus": "code",
@@ -482,6 +546,12 @@
           "status": "passed_for_step3_scope",
           "report": "docs/step3-acceptance.md",
           "limits": "提交中文稿A与未完草稿B分离、长文换行及备份恢复已核定；截图视图/真实编辑待第4步。"
+        },
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "翻译提交A→重做草稿B→首次/最近收据仍为A；刷新/切课/跨模块分别恢复，再次提交后latest才变。"
         }
       ]
     },
@@ -498,12 +568,20 @@
         "help.html"
       ],
       "targetLocations": [
-        "src/features/homework/receipt/",
-        "src/styles/"
+        "src/features/homework/receipt.ts",
+        "src/features/homework/receipt.css"
       ],
       "acceptance": "15课收据实测；320/390/768/1104长中越混排及换行；打印预览；仅提示学生发送老师，不声称老师已收到。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "真实提交快照收据、姓名班级/时间/5题原文、长译文换行与截图；打印样式通过浏览器media模拟，原生打印对话框和实体截图留第8步。"
+        }
+      ]
     },
     {
       "id": "R021",
@@ -519,8 +597,9 @@
         "learning-integrated.js"
       ],
       "targetLocations": [
-        "src/features/homework/translation/",
-        "src/services/storage/"
+        "src/features/homework/index.ts",
+        "src/services/learning/session.ts",
+        "src/services/storage/index.ts"
       ],
       "acceptance": "1500字符中越混排+换行/输入中切换恢复；超长边界；composition流程模拟与真实手机中文输入分别记录。",
       "evidenceStatus": "code",
@@ -531,6 +610,12 @@
           "status": "passed_for_step3_scope",
           "report": "docs/step3-acceptance.md",
           "limits": "存储服务保留输入原文及换行、失败可导出；实际自动保存触发/IME/手机输入仍待第4/8步。"
+        },
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "300ms防抖，刷新/切课/模块切换保稿，1500+中文多行、12000边界、组合输入与离页尾字模拟；真实手机/中文IME未认证，关闭瞬间仅尽力保存。"
         }
       ]
     },
@@ -808,6 +893,12 @@
           "status": "passed_for_step3_scope",
           "report": "docs/step3-acceptance.md",
           "limits": "保存/预览/恢复/旧非空迁移与新环境真实下载导入通过；练习输入自动保存调用随第4/6/7步接入。"
+        },
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "应用持有共享保存实例，真实编辑自动保存与非空导出恢复；取消数据管理视图操作不关闭作业会话。"
         }
       ]
     },
@@ -839,6 +930,12 @@
           "status": "passed_for_step3_scope",
           "report": "docs/step3-acceptance.md",
           "limits": "通用故障、stale预览、真实合作双tab、原raw保护与quota/denied API故障注入通过；第8步全功能故障复测及实际设备仍待执行。"
+        },
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "quota/禁止写入/跨tab冲突时内存稿跨页面保留并可备份；旧损坏/导入保护回归通过；实际配额压力留第8步。"
         }
       ]
     },
@@ -994,7 +1091,15 @@
       ],
       "acceptance": "4视口无横向溢出/截断，关键任务截图目检；WebKit与实体iOS/Android和中文IME分别记录，不互相代替。",
       "evidenceStatus": "scope",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "作业及长文本收据320/390/768/1104浏览器视口检查；实体iOS/Android/中文键盘未认证。"
+        }
+      ]
     },
     {
       "id": "R041",
@@ -1022,6 +1127,12 @@
           "status": "passed_for_step2_scope",
           "report": "docs/step2-acceptance.md",
           "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        },
+        {
+          "step": 4,
+          "status": "passed_for_step4_scope",
+          "report": "docs/step4-acceptance.md",
+          "limits": "作业mount/ready/unmount及早点击/快速切换回归；存储应用所有，视图监听/请求取消，离页先收集最终DOM草稿。"
         }
       ]
     },

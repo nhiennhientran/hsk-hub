@@ -135,12 +135,14 @@ export function createStore<T>(options: StoreOptions<T>) {
     recovery = previous; editVersion++; status = 'saved'; issue = null;
     publish(); return result(true, 'saved');
   }
-  async function locked(action: () => StoreResult): Promise<StoreResult> {
+  async function locked(action: () => StoreResult, signal?: AbortSignal): Promise<StoreResult> {
+    if (signal?.aborted) return result(false, 'cancelled');
     const stop = writable(); if (stop) return stop;
     const previousStatus = status;
     status = 'saving'; issue = null; publish();
     try {
       const outcome = await options.lock!(() => {
+        if (signal?.aborted) return result(false, 'cancelled');
         const stopped = writable(); if (stopped) return stopped;
         return action();
       });
@@ -191,7 +193,7 @@ export function createStore<T>(options: StoreOptions<T>) {
       }
       return previewReplacement(value.data, 'import');
     },
-    async confirm(preview: Preview<T>): Promise<StoreResult> {
+    async confirm(preview: Preview<T>, signal?: AbortSignal): Promise<StoreResult> {
       return locked(() => {
         const held = previews.get(preview);
         if (!held || held.version !== editVersion || held.raw !== expectedRaw) return result(false, 'stale-preview');
@@ -199,15 +201,15 @@ export function createStore<T>(options: StoreOptions<T>) {
         const committed = commit(held.data, held.reason);
         if (committed.ok) previews.delete(preview);
         return committed;
-      });
+      }, signal);
     },
-    async restore(): Promise<StoreResult> {
+    async restore(signal?: AbortSignal): Promise<StoreResult> {
       const version = editVersion;
       return locked(() => {
         if (version !== editVersion) return result(false, 'stale-preview');
         if (!recovery) return result(false, 'no-recovery');
         return commit(recovery.data, 'restore');
-      });
+      }, signal);
     },
     reloadDiscardingDraft(): void { if (!disposed) load(); },
     observeExternalChange(): void { if (!disposed && !blocked) checkCurrent(); },

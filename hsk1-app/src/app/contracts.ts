@@ -13,6 +13,7 @@ export interface Route {
 }
 
 export interface ModuleContext {
+  readonly learning?: () => Promise<import('../services/learning/session.ts').LearningSession>;
   readonly route: Route;
   readonly signal: AbortSignal;
   navigate(route: Route): void;

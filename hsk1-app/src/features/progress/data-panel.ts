@@ -1,5 +1,5 @@
-import { createStore, STORAGE_KEY, WRITE_LOCK } from '../../services/storage/index.ts';
-import { LEGACY_KEYS, loadCompatibility, type AppData, type Compatibility } from '../../services/storage/compatibility.ts';
+import { LEGACY_KEYS, type AppData, type Compatibility } from '../../services/storage/compatibility.ts';
+import type { LearningSession } from '../../services/learning/session.ts';
 import './data-panel.css';
 
 function element<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string): HTMLElementTagNameMap[K] {
@@ -42,24 +42,19 @@ function renderSummary(host: HTMLElement, compatibility: Compatibility, data: Ap
 }
 
 /** Loaded only by an explicit click. It never writes merely because a page opens. */
-export async function mountDataPanel(host: HTMLElement, signal: AbortSignal): Promise<{ dispose(): void }> {
-  const compatibility = await loadCompatibility(signal);
+export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, learning: () => Promise<LearningSession>): Promise<{ dispose(): void }> {
+  const { store, compatibility } = await learning();
   signal.throwIfAborted();
   const controller = new AbortController();
   const abort = () => controller.abort(); signal.addEventListener('abort', abort, { once: true });
   if (signal.aborted) abort();
   const storage = {
     getItem(key: string) { return window.localStorage.getItem(key); },
-    setItem(key: string, value: string) { window.localStorage.setItem(key, value); },
   };
-  const lock = navigator.locks
-    ? <R>(task: () => R | Promise<R>): Promise<R> => navigator.locks.request(WRITE_LOCK, { signal: controller.signal }, task)
-    : undefined;
-  const store = createStore<AppData>({ storage, blank: compatibility.blank, validate: compatibility.validate, lock });
   const panel = element('section'); panel.className = 'data-panel'; panel.setAttribute('aria-label', 'Quản lý dữ liệu');
   panel.append(element('h2', 'Dữ liệu trên thiết bị và bản sao lưu'));
   panel.append(element('p', 'Dữ liệu chỉ ở trình duyệt này. Việc chuyển hoặc nhập không sửa các bản ghi cũ và không sao lưu phiên đăng nhập.'));
-  if (!lock) panel.append(element('p', 'Trình duyệt này không hỗ trợ ghi an toàn giữa các tab. Chỉ xem và tải bản sao lưu; hãy dùng trình duyệt có hỗ trợ để nhập dữ liệu.'));
+  if (!navigator.locks) panel.append(element('p', 'Trình duyệt này không hỗ trợ ghi an toàn giữa các tab. Chỉ xem và tải bản sao lưu; hãy dùng trình duyệt có hỗ trợ để nhập dữ liệu.'));
   const status = element('p'); status.id = 'data-status'; status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
   const summary = element('div'); summary.id = 'data-summary';
   panel.append(status, element('h3', 'Dữ liệu đang mở'), summary);
@@ -169,7 +164,7 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal): Pr
     } catch { if (alive() && currentRead === readId) reportError('Tệp không hợp lệ hoặc không thuộc định dạng sao lưu được hỗ trợ. Chưa thay đổi dữ liệu.'); }
     finally { if (alive() && currentRead === readId) fileInput.value = ''; }
   }, { signal: controller.signal });
-  confirm.addEventListener('click', () => { if (pending) void runWrite(() => store.confirm(pending!)); }, { signal: controller.signal });
+  confirm.addEventListener('click', () => { if (pending) void runWrite(() => store.confirm(pending!, controller.signal)); }, { signal: controller.signal });
   cancel.addEventListener('click', () => { readId++; clearPreview(); actionMessage = 'Đã hủy xem trước. Chưa thay đổi dữ liệu.'; render(); }, { signal: controller.signal });
   exportBackup.addEventListener('click', () => {
     try { download(store.exportBackup(), `hsk1-backup-${new Date().toISOString().replace(/[:.]/g, '-')}.json`); }
@@ -184,15 +179,13 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal): Pr
     try { download(store.exportPreview(pending), `hsk1-preview-${new Date().toISOString().replace(/[:.]/g, '-')}.json`); }
     catch { reportError('Không tạo được bản sao lưu của bản xem trước. Chưa thay đổi dữ liệu.'); }
   }, { signal: controller.signal });
-  restore.addEventListener('click', () => { clearPreview(); void runWrite(() => store.restore(), 'restore'); }, { signal: controller.signal });
+  restore.addEventListener('click', () => { clearPreview(); void runWrite(() => store.restore(controller.signal), 'restore'); }, { signal: controller.signal });
   reload.addEventListener('click', () => { readId++; clearPreview(); store.reloadDiscardingDraft(); actionMessage = 'Đã đọc lại bản trên thiết bị; bản thay đổi chưa lưu đã được bỏ.'; render(); }, { signal: controller.signal });
-  const external = (event: StorageEvent) => { if (event.key === STORAGE_KEY || event.key === null) store.observeExternalChange(); };
-  window.addEventListener('storage', external, { signal: controller.signal });
   const unsubscribe = store.subscribe(render); render();
   return {
     dispose() {
       if (left) return;
-      left = true; readId++; controller.abort(); unsubscribe(); store.dispose(); panel.remove(); signal.removeEventListener('abort', abort);
+      left = true; readId++; controller.abort(); unsubscribe(); panel.remove(); signal.removeEventListener('abort', abort);
       for (const [url, timer] of urls) { clearTimeout(timer); URL.revokeObjectURL(url); } urls.clear();
     },
   };

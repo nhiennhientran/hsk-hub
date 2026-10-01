@@ -102,3 +102,13 @@ stage3的 `preferences` 仅支持 `module,lessons,listeningMode,vocabularyFilter
 容量沿领域规则：homework为192MiB，practice为4MiB；legacyRaw每一来源按旧格式上界核验，不给组合容器另设更小总限，不宣称真实localStorage有同等容量。实际配额失败保留内存稿/候选，恢复副本也可能使写入超额，不能返回假成功。
 
 当前旧bank的10个`legacyCompatible=true`标记，仅8个与旧题实际身份一致；L3 choice03/sort03题干已变。适配层增加旧身份manifest核验，不改冻结content、不重出题；这两组不能迁移完整成绩，只保留核定一致的草稿及原来源。未知题意或词义不按相同ID/词形推断。首次/最近由提交快照定义，不以系统时间戳单调排序重新推断（系统时钟可能回拨）。
+
+## 第4步应用会话与作业调用
+
+`createLearningSession({store,compatibility,delay?})`由应用持有。`requestSave`用300ms防抖；`flush`合并同一等待锁的保存，等锁期间新编辑进入该次写入，提交后的新编辑才另写一次。quota/conflict/unavailable失败停止自动重试，原文在内存且可导出，下一编辑或“重试”可再尝试。
+
+作业控制器只编辑homework；只读挂载、缺题和重复提交不创建空组或写盘。排序词块按原索引区分相同文本，初次随机顺序保存在orders，刷新不重排。重做清当前draft/attempt并保留first/latest/history及completed；最多20条最近提交，first独立保留。翻译最长12000 UTF-16代码单元，零宽/纯空白不可提交；valid原文和换行不规范化。
+
+截图仅取attempt.answers；学生姓名班级使用当前profile，不冒称历史时身份快照。组合输入时不提交、不截断，退出及提交前同步采集合法DOM最终值，再保存。过限文本明确提示未保存并禁止提交，不静默提交旧稿。visibility隐藏、离页及切模块触发flush；浏览器强制关闭的异步写入仅尽力进行，应以“已保存”或导出的备份为准。
+
+数据管理页复用同一store；`confirm(preview,signal?)`与`restore(signal?)`在排队前及取得锁后检查取消，返回cancelled不写。卸载数据页只取消自身操作/监听，不dispose应用store。应用的`dispose():Promise<void>`取消防抖，等最终flush结束才关闭store；新页面加载仍按严格旧格式/指纹校验。

@@ -25,7 +25,8 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       try {
         const feature = await import('./data-panel.ts');
         if (left || controller.signal.aborted) return;
-        panel = await feature.mountDataPanel(host, controller.signal);
+        if (!context.learning) throw new Error('Learning session is missing.');
+        panel = await feature.mountDataPanel(host, controller.signal, context.learning);
         if (left || controller.signal.aborted) { panel.dispose(); return; }
         message.textContent = ''; open.hidden = true;
       } catch {

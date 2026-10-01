@@ -1,0 +1,26 @@
+.homework-receipt { width: 100%; min-width: 0; padding: clamp(12px, 3vw, 28px); background: #fff; border: 1px solid #c5d7c9; border-radius: 12px; color: #173c31; }
+.receipt-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 24px; }
+.receipt-toolbar select { max-width: 100%; }
+.receipt-identity { display: grid; grid-template-columns: minmax(70px, max-content) minmax(0, 1fr); column-gap: 16px; row-gap: 8px; }
+.receipt-identity dt { font-weight: 650; }
+.receipt-identity dd { margin: 0; overflow-wrap: anywhere; white-space: pre-wrap; }
+.receipt-submission { padding: 12px 0; border-block: 1px solid #d8e3d9; overflow-wrap: anywhere; }
+.receipt-note { color: #526b5d; }
+.receipt-answers { padding-inline-start: 28px; }
+.receipt-answers li { padding: 8px 0 16px; break-inside: avoid; }
+.receipt-prompt { font-weight: 650; margin-bottom: 6px; }
+.receipt-stem { margin-block: 6px; }
+.receipt-answer { white-space: pre-wrap; overflow-wrap: anywhere; margin-block: 6px 0; font-size: 1.08rem; }
+
+@media print {
+  body:has([data-homework-receipt]) { background: #fff; }
+  body:has([data-homework-receipt]) #app { width: 100%; max-width: none; padding: 0; }
+  body:has([data-homework-receipt]) #app > :not(main),
+  body:has([data-homework-receipt]) #app > main > :not(#module-host),
+  body:has([data-homework-receipt]) #module-host > :not([data-homework-receipt]):not(:has([data-homework-receipt])),
+  body:has([data-homework-receipt]) #module-host :has([data-homework-receipt]) > :not([data-homework-receipt]):not(:has([data-homework-receipt])),
+  .receipt-toolbar { display: none !important; }
+  body:has([data-homework-receipt]) #module-host :has([data-homework-receipt]), .homework-receipt { margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; }
+  .homework-receipt { color: #000; }
+  .receipt-note { color: #333; }
+}
