@@ -35,6 +35,8 @@
 
 本地使用临时兼容Chromium153。对应代码提交的GitHub独立CI使用固定Playwright1.62.1标准Chromium/WebKit，各运行16场景并保存JSON及失败制品；远端最终结果以对应run为准，不把本地通过自动写为WebKit通过。结构化本地记录及源码指纹见`review/step3-local-validation.json`。
 
+首个远端run`36880432119`在Ubuntu Azure源下载系统依赖时耗时超限，浏览器测试尚未开始；已依据日志只调整CI为Ubuntu官方archive源，并分开系统依赖/浏览器下载及各自超时。应用源码未因此改变，最终以调整后的提交run为准。
+
 ## 限制与交接
 
 备份只含本地学习数据，排除口令和会话gate；换环境仍需正常授权，不是云同步或老师收到。Web Locks只协调合作新应用tab，不能阻止DevTools等非合作写入。homework保留192MiB、practice保留4MiB格式上界，组合来源不另设更小总限；实际localStorage配额可能更低，失败必须可导出。
