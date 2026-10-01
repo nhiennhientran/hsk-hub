@@ -1,0 +1,31 @@
+name: HSK1 read-only release verification
+on:
+  push:
+    branches: ['verify/hsk1-release-20261001']
+    paths: ['tools/release-check/**','.github/workflows/hsk1-release-verification.yml']
+permissions:
+  contents: read
+  pages: read
+concurrency:
+  group: hsk1-readonly-release-verification
+  cancel-in-progress: true
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Read Pages configuration, preserve rollback source and verify published bytes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/release-check/verify.py
+      - name: Preserve read-only evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk1-release-source-verification
+          path: release-evidence/
+          retention-days: 30
+          if-no-files-found: error
