@@ -2,67 +2,27 @@ name: HSK1 integration Step 1 review
 on:
   push:
     branches: ['work/hsk1-stage4-1-runtime-20261001']
+  pull_request:
+    branches: ['gh-pages']
     paths:
-      - '.github/workflows/hsk1-integration-step1.yml'
-      - 'tools/apply-integration-step1.py'
-      - 'tools/refine-integration-step1.py'
-      - 'tools/integration-step1-textbook.js.in'
-      - 'tools/serve-integration-step1.cjs'
-      - 'tools/tests/integration-step1*'
-      - 'tools/review/hsk1-listening-device-review.html'
       - 'new-hsk1/hsk1/**'
+      - 'tools/tests/integration-step1*'
+      - 'tools/tests/stage2-engine.test.cjs'
+      - 'tools/tests/stage3-engine.test.cjs'
+      - 'tools/serve-integration-step1.cjs'
+      - 'tools/preview.py'
+      - 'tools/review/**'
+      - 'tools/build-integration-review.py'
+      - 'tools/review-file-check.cjs'
+      - '.github/workflows/hsk1-integration-step1.yml'
 permissions:
   contents: read
 concurrency:
-  group: hsk1-integration-step1-review
+  group: hsk1-integration-step1-${{ github.event_name }}-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
 jobs:
-  prepare:
-    if: github.ref == 'refs/heads/work/hsk1-stage4-1-runtime-20261001'
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    permissions:
-      contents: write
-    outputs:
-      candidate: ${{ steps.save.outputs.candidate }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.sha }}
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-      - name: Apply the reviewed repairs only to the draft branch
-        run: |
-          python tools/apply-integration-step1.py
-          python tools/refine-integration-step1.py
-          python tools/tests/integration-step1-repair-harness.py
-          node --check tools/tests/integration-step1-browser.cjs
-          node --check tools/tests/integration-step1-extra.cjs
-          node --check new-hsk1/hsk1/textbook-integration-corrections.js
-          node --test tools/tests/stage2-engine.test.cjs tools/tests/stage3-engine.test.cjs
-      - name: Save candidate, never deploy
-        id: save
-        shell: bash
-        run: |
-          set -euo pipefail
-          test "$GITHUB_REF" = 'refs/heads/work/hsk1-stage4-1-runtime-20261001'
-          python - <<'PY'
-          import subprocess
-          changed=subprocess.check_output(['git','diff','--name-only'],text=True).splitlines()
-          allowed={'new-hsk1/hsk1/learning-integrated.js','new-hsk1/hsk1/learning-integrated.css','new-hsk1/hsk1/learning-links.js','new-hsk1/hsk1/learning.html','new-hsk1/hsk1/index.html','new-hsk1/hsk1/lesson.html','new-hsk1/hsk1/stage2/app.js','new-hsk1/hsk1/stage3/app.js','new-hsk1/hsk1/stage3/player.js','new-hsk1/hsk1/textbook-integration-corrections.js','tools/tests/stage3-engine.test.cjs','tools/tests/integration-step1-browser.cjs','tools/tests/integration-step1-extra.cjs'}
-          assert set(changed)<=allowed, changed
-          PY
-          git add new-hsk1/hsk1/learning-integrated.js new-hsk1/hsk1/learning-integrated.css new-hsk1/hsk1/learning-links.js new-hsk1/hsk1/learning.html new-hsk1/hsk1/index.html new-hsk1/hsk1/lesson.html new-hsk1/hsk1/stage2/app.js new-hsk1/hsk1/stage3/app.js new-hsk1/hsk1/stage3/player.js new-hsk1/hsk1/textbook-integration-corrections.js tools/tests/stage3-engine.test.cjs tools/tests/integration-step1-browser.cjs tools/tests/integration-step1-extra.cjs
-          if ! git diff --cached --quiet; then
-            git config user.name 'HSK integration review'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m 'Step 1: align acceptance with real DOM, origins and imported navigation'
-            git push origin HEAD:refs/heads/work/hsk1-stage4-1-runtime-20261001
-          fi
-          echo "candidate=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
   acceptance:
-    needs: prepare
+    if: github.ref == 'refs/heads/work/hsk1-stage4-1-runtime-20261001' || github.head_ref == 'work/hsk1-stage4-1-runtime-20261001'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     strategy:
@@ -72,38 +32,58 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ needs.prepare.outputs.candidate }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Engine checks include the shipped content, without skips
+      - name: Confirm frozen corpus and exact candidate
+        shell: bash
         run: |
+          set -euo pipefail
           mkdir -p tools/tests/results
           git rev-parse HEAD > tools/tests/results/stage4-1-${{ matrix.browser }}-commit.txt
+          git fetch --no-tags --depth=1 origin de823050e97cbab64144197f3bf9241321b73c59 069f9d956c9a600a91e6b4ce82241ceccc184dce
+          git diff --exit-code de823050e97cbab64144197f3bf9241321b73c59 -- new-hsk1/hsk1/stage2/bank.js new-hsk1/hsk1/stage2/engine.js new-hsk1/hsk1/stage3/catalog.js new-hsk1/hsk1/stage3/engine.js new-hsk1/hsk1/stage3/media-index.js new-hsk1/hsk1/stage3/media
+          git diff --exit-code 069f9d956c9a600a91e6b4ce82241ceccc184dce -- new-hsk1/hsk1/audio
+          python - <<'PY'
+          import subprocess,hashlib,json,os
+          paths=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          manifest={p:hashlib.sha256(open(p,'rb').read()).hexdigest() for p in paths if p}
+          name=os.environ['HSK_BROWSER']
+          open('tools/tests/results/stage4-1-'+name+'-source-sha256.json','w').write(json.dumps(manifest,indent=2))
+          changed=subprocess.check_output(['git','diff','--name-only','069f9d956c9a600a91e6b4ce82241ceccc184dce','HEAD']).decode().splitlines()
+          assert all(p.startswith(('new-hsk1/hsk1/','tools/','.github/workflows/')) for p in changed),changed
+          PY
+        env:
+          HSK_BROWSER: ${{ matrix.browser }}
+      - name: Mandatory engines and standalone build
+        run: |
+          set -euo pipefail
           node --test tools/tests/stage2-engine.test.cjs tools/tests/stage3-engine.test.cjs | tee tools/tests/results/stage4-1-${{ matrix.browser }}-engine.tap
+          python -m py_compile tools/preview.py
+          python tools/build-integration-review.py
+          git archive HEAD -o tools/tests/results/stage4-1-${{ matrix.browser }}-tested-source.zip
       - name: Install pinned browser test tools
         run: |
           npm install --no-save --package-lock=false playwright@1.62.1
           npx playwright install --with-deps ${{ matrix.browser }}
           sudo apt-get install -y fonts-noto-cjk
-      - name: Exercise Lessons 1-8 and integrated state protection
+      - name: Exercise 160 tasks, original pages and state protection
         env:
           HSK_BROWSER: ${{ matrix.browser }}
         run: node tools/tests/integration-step1-browser.cjs
-      - name: Preserve exact candidate and evidence, including failures
+      - name: Open the actual standalone review file
+        env:
+          HSK_BROWSER: ${{ matrix.browser }}
+        run: node tools/review-file-check.cjs
+      - name: Preserve exact source, tested outputs and failure evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: hsk1-integration-step1-${{ matrix.browser }}
           path: |
             tools/tests/results/stage4-1-${{ matrix.browser }}-*
-            new-hsk1/hsk1/
-            new-hsk1/assets/
-            tools/tests/integration-step1*.cjs
-            tools/tests/stage2-engine.test.cjs
-            tools/tests/stage3-engine.test.cjs
-            tools/serve-integration-step1.cjs
-            tools/review/hsk1-listening-device-review.html
+            dist/integration-step1/*
           retention-days: 14
           if-no-files-found: error
