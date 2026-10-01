@@ -20,6 +20,7 @@ def main():
     parser.add_argument('--model', default='small')
     parser.add_argument('--lessons', default='1-15')
     parser.add_argument('--clips', action='store_true')
+    parser.add_argument('--include-vocabulary', action='store_true')
     parser.add_argument('--output', default='tools/tests/results/stage3-asr-tracks.json')
     args = parser.parse_args()
     first, last = map(int, args.lessons.split('-'))
@@ -39,7 +40,7 @@ def main():
     if args.clips:
         manifest = json.loads((ROOT / 'new-hsk1/hsk1/stage3/media-manifest.json').read_text())
         for entry in manifest['clips']:
-            if entry['id'].startswith('l') and first <= entry['lesson'] <= last:
+            if (entry['id'].startswith('l') or args.include_vocabulary) and first <= entry['lesson'] <= last:
                 inputs.append((entry['id'], ROOT / 'tmp/stage3-clips' / (entry['id'] + '.mp3')))
     else:
         for lesson in range(first, last + 1):

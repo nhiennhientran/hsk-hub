@@ -1,0 +1,41 @@
+name: HSK1 Step 3 clip audio evidence
+on:
+  push:
+    branches: ['work/hsk1-stage3-*']
+    paths:
+      - '.github/workflows/hsk1-stage3-clip-evidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  transcribe-clips:
+    if: startsWith(github.ref, 'refs/heads/work/hsk1-stage3-')
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install isolated media and recognition dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          pip install faster-whisper==1.2.1
+      - name: Build independently playable textbook clips
+        run: python tools/build-stage3-media.py
+      - name: Recognize all 75 listening and 330 vocabulary clips
+        env:
+          HF_HUB_DISABLE_PROGRESS_BARS: '1'
+        run: python tools/stage3-transcribe-audio.py --model small --clips --include-vocabulary --output tools/tests/results/stage3-asr-clips.json
+      - name: Preserve recognition and exact media manifest
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk1-step3-clip-asr
+          path: |
+            tools/tests/results/stage3-asr-clips.json
+            new-hsk1/hsk1/stage3/media-manifest.json
+          if-no-files-found: warn
