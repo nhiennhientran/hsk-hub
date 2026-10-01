@@ -2,6 +2,8 @@
 from __future__ import annotations
 import argparse
 import http.server
+import re
+import os
 from pathlib import Path
 import threading
 import urllib.parse
@@ -18,6 +20,33 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         try:target.relative_to(ROOT)
         except ValueError:return str(ROOT/'__not_found__')
         return str(target)
+    def send_head(self):
+        file=Path(self.translate_path(self.path))
+        if file.is_dir():file=file/'index.html'
+        try:
+            stream=file.open('rb');size=os.fstat(stream.fileno()).st_size
+        except OSError:
+            self.send_error(404,'File not found');return None
+        first,last,status=0,size-1,200
+        value=self.headers.get('Range')
+        if value:
+            match=re.fullmatch(r'bytes=(\d*)-(\d*)',value)
+            if match and (match[1] or match[2]):
+                first=int(match[1]) if match[1] else max(0,size-int(match[2]))
+                last=min(last,int(match[2])) if match[1] and match[2] else last
+            if not match or not (match[1] or match[2]) or first>last or first>=size:
+                stream.close();self.send_response(416);self.send_header('Content-Range',f'bytes */{size}');self.end_headers();return None
+            status=206
+        self.send_response(status);self.send_header('Content-Type',self.guess_type(str(file)))
+        self.send_header('Accept-Ranges','bytes');self.send_header('Content-Length',str(max(0,last-first+1)))
+        if status==206:self.send_header('Content-Range',f'bytes {first}-{last}/{size}')
+        self.end_headers();stream.seek(first);self.remaining=max(0,last-first+1);return stream
+    def copyfile(self,source,outputfile):
+        remaining=self.remaining
+        while remaining:
+            block=source.read(min(65536,remaining))
+            if not block:break
+            outputfile.write(block);remaining-=len(block)
     def list_directory(self,path:str):
         self.send_error(403,'Directory listing is disabled');return None
     def end_headers(self)->None:

@@ -46,7 +46,9 @@ for(const name of required){const p=lesson.indexOf(name);assert(p>prev,`bad/miss
 assert(!lesson.includes('audio-fix.js'),'lesson still loads legacy audio-fix');
 assert(!lesson.includes('_audio-work'),'lesson references underscore runtime assets');
 assert(lesson.includes('../assets/hsk2-parity.js?v=20260818-5'),'parity cache-bust missing');
-assert(lesson.includes('textbook-segment-audio.js?v=20260818-5'),'player cache-bust missing');
+assert(lesson.includes('textbook-segment-audio.js?v=20261001-i2'),'current player cache-bust missing');
+assert(player.includes('const remaining=end-audio.currentTime'),'native-clock range stop missing');
+assert(!player.includes('audio.currentTime=end'),'range completion must not be manufactured by seeking to end');
 
 const sandbox={window:{},console};sandbox.window.window=sandbox.window;
 vm.runInNewContext(segments,sandbox,{filename:'textbook-audio-segments.js'});

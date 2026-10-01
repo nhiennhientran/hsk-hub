@@ -87,23 +87,24 @@
   }
   function seekThen(audio,start,token,fn){
     let settled=false,timer=0;
-    const finish=()=>{
-      if(settled)return;settled=true;
-      if(timer)clearTimeout(timer);
-      audio.removeEventListener('seeked',onSeeked);
-      if(token===runToken&&audio===activeAudio)fn();
+    const deadline=Date.now()+8000;
+    const cleanup=()=>{if(timer)clearTimeout(timer);for(const e of ['loadedmetadata','canplay','seeked'])audio.removeEventListener(e,poll)};
+    const poll=()=>{
+      if(settled)return;
+      if(token!==runToken||audio!==activeAudio){settled=true;cleanup();return;}
+      const delta=Math.abs((audio.currentTime||0)-start);
+      if(audio.readyState>=1&&!audio.seeking&&delta<=0.05){settled=true;cleanup();fn();return;}
+      if(Date.now()>=deadline){
+        settled=true;cleanup();try{audio.pause()}catch(_e){}
+        diagnostics({playing:false,error:'seek-not-ready',requestedStart:start,observedTime:audio.currentTime});
+        toastSafe('Chưa mở được đoạn âm. Hãy nhấn nghe để thử lại.');return;
+      }
+      if(audio.readyState>=1&&!audio.seeking){try{audio.currentTime=start}catch(_e){}}
+      if(timer)clearTimeout(timer);timer=setTimeout(poll,60);
     };
-    const onSeeked=()=>finish();
-    const assign=()=>{
-      if(token!==runToken||audio!==activeAudio)return;
-      if(Math.abs((audio.currentTime||0)-start)<=0.025&&!audio.seeking){finish();return}
-      audio.addEventListener('seeked',onSeeked);
-      try{audio.currentTime=start}catch(_e){finish();return}
-      if(!audio.seeking&&Math.abs((audio.currentTime||0)-start)<=0.035)queueMicrotask(finish);
-      timer=setTimeout(finish,450);
-    };
-    if(audio.readyState>=1)assign();
-    else{audio.addEventListener('loadedmetadata',assign,{once:true});try{audio.load()}catch(_e){}}
+    for(const e of ['loadedmetadata','canplay','seeked'])audio.addEventListener(e,poll);
+    if(audio.readyState<1&&!audio.dataset.warmed){audio.dataset.warmed='1';try{audio.load()}catch(_e){}}
+    poll();
   }
   function startRange(track,start,end,label=''){
     if(!track||!Number.isFinite(start)||!Number.isFinite(end)||end<=start){
@@ -114,12 +115,13 @@
     const token=++runToken,audio=getAudio(track);
     if(activeAudio&&activeAudio!==audio){try{activeAudio.pause()}catch(_e){}}
     activeAudio=audio;stopVisibleAudio(audio);
+    diagnostics({playing:false,loading:true,label,range:[start,end],endedByRange:false});
     try{audio.pause()}catch(_e){}
     seekThen(audio,start,token,()=>{
       Promise.resolve(audio.play()).then(()=>{
-        if(token!==runToken)return;
-        scheduleStop(audio,end,token);
+        if(token!==runToken||audio!==activeAudio)return;
         diagnostics({playing:true,label,range:[start,end],seekSettled:true,preload:audio.preload,error:''});
+        scheduleStop(audio,end,token);
       }).catch(()=>{diagnostics({playing:false,error:`play-blocked:${track}`,label});toastSafe('Không phát được audio giáo trình. Hãy chạm lại nút nghe.');});
     });
     return true;
@@ -135,7 +137,7 @@
     const begin=()=>{
       if(token!==runToken)return;
       Promise.resolve(audio.play()).then(()=>diagnostics({playing:true,label,fullTrack:true,error:''}))
-        .catch(()=>toastSafe('Không phát được audio giáo trình. Hãy chạm lại nút nghe。'));
+        .catch(()=>toastSafe('Không phát được audio giáo trình. Hãy chạm lại nút nghe.'));
     };
     if(audio.readyState>=1)begin();
     else{audio.addEventListener('loadedmetadata',begin,{once:true});try{audio.load()}catch(_e){}}
@@ -184,7 +186,7 @@
       const onEnd=()=>{audio.removeEventListener('ended',onEnd);if(token===runToken)playNextSequence(token)};
       audio.addEventListener('ended',onEnd,{once:true});
       Promise.resolve(audio.play()).then(()=>diagnostics({playing:true,label:`vocab-full:${next}`,sequence:true,error:''}))
-        .catch(()=>{audio.removeEventListener('ended',onEnd);toastSafe('Không phát được audio giáo trình。');});
+        .catch(()=>{audio.removeEventListener('ended',onEnd);toastSafe('Không phát được audio giáo trình.');});
     };
     if(audio.readyState>=1)begin();
     else{audio.addEventListener('loadedmetadata',begin,{once:true});try{audio.load()}catch(_e){}}
