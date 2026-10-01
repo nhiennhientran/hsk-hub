@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "frozenOn": "2026-10-01",
+  "repository": "nhiennhientran/hsk-hub",
+  "workingBranch": "work/hsk1-modular-step1-20261001",
+  "integration": {
+    "branch": "work/hsk1-integration-step2-20261001",
+    "commit": "71b39192133c82f684384f450dda6079d3253440",
+    "tree": "a3611ac5a5324eaa6cc9ffec0a7daa439ca23d19",
+    "ciRun": 36858721288,
+    "ciURL": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36858721288",
+    "chromium": "passed",
+    "webkit": "failed: Lesson10 cross-module flow waits for #listening-question",
+    "overall": "failed; not a deployable acceptance baseline"
+  },
+  "productionRecovery": {
+    "branch": "gh-pages",
+    "commit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
+    "localRef": "baseline/hsk1-production-20261001"
+  },
+  "isolation": "Step 1 adds hsk1-app and its separate CI only. Existing student runtime and production files are unchanged.",
+  "scope": "Source-derived inventory and engineering scaffold, not completed student modules."
+}

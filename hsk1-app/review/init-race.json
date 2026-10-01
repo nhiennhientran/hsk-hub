@@ -1,0 +1,24 @@
+{
+  "issue": "INIT-001",
+  "baseline": "71b39192133c82f684384f450dda6079d3253440",
+  "sourceHashes": {
+    "tools/serve-integration-step1.cjs": "7373f073c98238bfeed208f59a70b437822ffa42c995913d917009fe1adc56ee",
+    "new-hsk1/hsk1/learning.html": "551bb49f1bc32532dcb5143415f261e7a1c6fae32c0b3259a9cc126ee6222616",
+    "new-hsk1/hsk1/learning-integrated.js": "f7fb42c1b9a74e674f32803572571d1ebd4c447c72b824cb1cd2f7f6029b9363",
+    "new-hsk1/hsk1/auth-patch.js": "335b0a8e5072920ecfe3cc6392f8bed8e594ef62e25527ef941bc6aa97c794de",
+    "new-hsk1/hsk1/stage3/catalog.js": "4d377f18461f58f103120adde9aed74713fc7478bb5933f4e23177e637a04f80",
+    "new-hsk1/hsk1/stage3/media-index.js": "d9be8f94d724d134aa99ce515a0c5f3f00b8899ad2f72a8ba4d8f3e72d45b993",
+    "new-hsk1/hsk1/stage3/engine.js": "010cfde850b1b9a49f90b5b2ceb2c70991d255750c3514761f7b064401d36a17",
+    "new-hsk1/hsk1/stage3/player.js": "5d50e436d8af720073aeda326e8114d0a885d8351283a3ef9ba4015a65f03d6c",
+    "new-hsk1/hsk1/stage3/app.js": "c27435c0e00bd2b94c1c72410051060be608ba1a85e901d1d46288c422e77b68"
+  },
+  "browser": "chromium",
+  "browserVersion": "153.0.8010.0",
+  "reproduced": true,
+  "scope": "Controlled delay of stage3/app.js after navigation from Lesson10 homework; existing unlocked session.",
+  "enabledBeforeInitialization": true,
+  "questionAfterInitialization": 0,
+  "questionAfterSecondClick": 1,
+  "conclusion": "An enabled start button can lose a click before its handler is attached.",
+  "limitation": "This confirms a baseline initialization race. It does not establish the sole cause of historical WebKit CI failure."
+}

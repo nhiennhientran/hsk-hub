@@ -1,0 +1,27 @@
+{
+  "name": "hsk1-modular-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "catalog:generate": "node tools/catalog.mjs --write",
+    "catalog:check": "node tools/catalog.mjs --check",
+    "check": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "test:legacy": "node tools/test-legacy.mjs",
+    "test:repro": "node tools/reproduce-init.mjs",
+    "test:smoke": "playwright test",
+    "build": "npm run check && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "@types/node": "24.19.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.2"
+  }
+}
