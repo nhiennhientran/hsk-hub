@@ -3,7 +3,7 @@
    This file owns playback only; it does not intercept click events and never synthesizes speech. */
 (function(){
   'use strict';
-  const VERSION='20260818-arch-v1';
+  const VERSION='20261001-integration-i1';
   const AUDIO_DIR='audio/';
   const cache=new Map();
   let textTracks={};
@@ -52,7 +52,7 @@
   function getAudio(track){
     let a=cache.get(track);if(a)return a;
     a=new Audio(srcFor(track));a.preload='auto';a.playsInline=true;a.dataset.officialTrack=track;
-    a.addEventListener('error',()=>diagnostics({error:`load-failed:${track}`,playing:false}));
+    a.addEventListener('error',()=>{delete a.dataset.warmed;diagnostics({error:`load-failed:${track}`,playing:false});});
     cache.set(track,a);return a;
   }
   function warmLesson(lesson){
@@ -60,7 +60,13 @@
     const ids=new Set();
     [1,3,5].forEach(t=>{if(textTracks[`${lesson}-${t}`])ids.add(`${lesson}-${t}`)});
     Object.values(vocabByLesson[String(lesson)]||{}).forEach(x=>ids.add(x.track));
-    ids.forEach(track=>{const a=getAudio(track);try{a.load()}catch(_e){}});
+    ids.forEach(track=>{
+      const a=getAudio(track);
+      // DOM decoration can run many times. Reloading an active or already warming
+      // audio element cancels playback and pending seeks, notably in WebKit.
+      if(a===activeAudio||a.dataset.warmed==='1')return;
+      a.dataset.warmed='1';try{a.load()}catch(_e){delete a.dataset.warmed;}
+    });
   }
   function scheduleStop(audio,end,token){
     const ms=Math.max(80,((end-audio.currentTime)/(audio.playbackRate||1))*1000+100);
@@ -228,7 +234,8 @@
       b.title=textSegment(lessonId(),sceneIndex(),i)?'播放这一句教材真人原声':'未找到教材原声';
     });
   }
-  function scan(){decorateVocab();decorateText();warmLesson(lessonId());diagnostics({ready})}
+  // A rendering scan must not erase the active playback diagnostic state.
+  function scan(){decorateVocab();decorateText();warmLesson(lessonId());}
   function buildMaps(data){
     textTracks=data?.text||{};
     vocabByLesson={};
