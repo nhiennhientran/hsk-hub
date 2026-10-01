@@ -3,7 +3,7 @@
    This file owns playback only; it does not intercept click events and never synthesizes speech. */
 (function(){
   'use strict';
-  const VERSION='20261001-integration-i2';
+  const VERSION='20261001-integration-i2-r2';
   const AUDIO_DIR='audio/';
   const cache=new Map();
   let textTracks={};
@@ -13,6 +13,7 @@
   let stopTimer=0;
   let runToken=0;
   let mutationObserver=null;
+  let disposed=false;
   const pendingSequence=[];
 
   function lessonId(){
@@ -33,6 +34,7 @@
     t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800);
   }
   function diagnostics(extra={}){
+    if(disposed)return;
     window.__HSK1_OFFICIAL_AUDIO_DIAGNOSTICS={
       version:VERSION,ready,lesson:lessonId(),scene:sceneIndex(),
       cachedTracks:cache.size,activeTrack:activeAudio?.dataset?.officialTrack||'',
@@ -116,7 +118,9 @@
     if(activeAudio&&activeAudio!==audio){try{activeAudio.pause()}catch(_e){}}
     activeAudio=audio;stopVisibleAudio(audio);
     diagnostics({playing:false,loading:true,label,range:[start,end],endedByRange:false});
-    try{audio.pause()}catch(_e){}
+    // Reset the native decoder only on an explicit segment request. Reusing
+    // a paused MP3 decoder can seek to EOF in WebKit; DOM scans never reload.
+    try{audio.pause();audio.load()}catch(_e){}
     seekThen(audio,start,token,()=>{
       Promise.resolve(audio.play()).then(()=>{
         if(token!==runToken||audio!==activeAudio)return;
@@ -246,7 +250,7 @@
     });
   }
   // A rendering scan must not erase the active playback diagnostic state.
-  function scan(){decorateVocab();decorateText();warmLesson(lessonId());}
+  function scan(){if(disposed)return;decorateVocab();decorateText();warmLesson(lessonId());}
   function buildMaps(data){
     textTracks=data?.text||{};
     vocabByLesson={};
@@ -261,6 +265,7 @@
     ready=Object.keys(textTracks).length===45&&Object.keys(data?.vocab||{}).length===45;
   }
   function install(){
+    if(disposed)return;
     try{
       const data=window.HSK1_OFFICIAL_SEGMENTS;
       if(!data)throw new Error('static-segment-data-missing');
@@ -282,12 +287,16 @@
       ready=false;diagnostics({ready:false,error:String(e?.message||e)});console.error('HSK1 official segment player failed to initialize',e);
     }
   }
+  function dispose(){
+    if(disposed)return;
+    stop();disposed=true;ready=false;mutationObserver?.disconnect();
+  }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});else install();
 
   window.HSK1_OFFICIAL_AUDIO={
     version:VERSION,
     get ready(){return ready},
-    playVocab,playVocabLesson,playTextLine,playTextScene,stop,scan,warmLesson,
+    playVocab,playVocabLesson,playTextLine,playTextScene,stop,scan,warmLesson,dispose,
     vocabSegment,textSegment,lessonVocabTracks,
     diagnostics:()=>({...window.__HSK1_OFFICIAL_AUDIO_DIAGNOSTICS,mediaCurrentTime:activeAudio?.currentTime??null,mediaPaused:activeAudio?.paused??true,mediaReadyState:activeAudio?.readyState??null})
   };
