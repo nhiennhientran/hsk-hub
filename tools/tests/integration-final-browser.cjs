@@ -2,6 +2,7 @@
 // Expand the immutable, accepted integration suite rather than fork its recovery tests.
 // Every original scenario remains. The expanded executable is retained with CI evidence.
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+require('node:child_process').execFileSync(process.execPath,[path.join(__dirname,'integration-router-preflight.cjs')],{stdio:'inherit',env:process.env});
 const original=fs.readFileSync(path.join(__dirname,'integration-step1-browser.cjs'),'utf8');
 assert.equal(crypto.createHash('sha256').update(original).digest('hex'),'a8e73e22be9af13b35b7c4700489e0e39bf7617609e536c80711353e852a2329','Frozen regression harness changed: review it before expanding');
 let source=original;

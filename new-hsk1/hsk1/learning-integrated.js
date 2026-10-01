@@ -190,7 +190,10 @@ window.addEventListener('hsk-learning-state',event=>{
    mode=p.module==='listening'?'listening':(p.vocabularyFilter==='due'?'review':'vocab');
    // Retain the textbook/homework lesson when the selected review range is mixed.
    if(p.lessons.length===1)lesson=p.lessons[0];
-   history.replaceState(null,'',routeHref(mode,lesson));
+   // Ratings, playback and selection notifications often leave the route unchanged.
+   // Rewriting that same URL for each notification can hit native WebKit limits.
+   const nextHref=new URL(routeHref(mode,lesson),location.href).href;
+   if(nextHref!==location.href)history.replaceState(null,'',nextHref);
    saveLast(lesson,mode);
  }
 });
