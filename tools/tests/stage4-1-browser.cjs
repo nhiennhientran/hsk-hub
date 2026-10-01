@@ -69,9 +69,10 @@ async function doListening(page,lesson){
   assert.equal(lessonAnswered,5);
   return {lesson,answered:5,overall:summary.overall.answered};
 }
-async function mobileCheck(page,url,selector){
+async function mobileCheck(page,url,selector,shot){
   await page.setViewportSize({width:390,height:844});await page.goto(url,{waitUntil:'domcontentloaded'});await login(page);await page.locator(selector).waitFor();
   const dims=await page.evaluate(()=>({innerWidth:window.innerWidth,scrollWidth:document.documentElement.scrollWidth}));assert.ok(dims.scrollWidth<=dims.innerWidth+1,'horizontal overflow '+JSON.stringify(dims));
+  if(shot)await page.screenshot({path:'tools/tests/results/'+shot,fullPage:false});
   await page.setViewportSize({width:1104,height:900});
 }
 (async()=>{
@@ -87,8 +88,9 @@ async function mobileCheck(page,url,selector){
   await page.goto(BASE+'learning.html?mode=progress&lesson=4',{waitUntil:'domcontentloaded'});await login(page);await page.locator('.integrated-progress-table').waitFor();
   assert.match(await page.locator('#integratedMiniProgress').innerText(),/80\/300/);assert.match(await page.locator('#integratedMiniProgress').innerText(),/4\/15/);
   const table=await page.locator('.integrated-progress-table').innerText();for(let l=1;l<=4;l++){assert.match(table,new RegExp('Bài '+l));}
-  await mobileCheck(page,BASE+'learning.html?mode=homework&lesson=1','#exercise');
-  await mobileCheck(page,BASE+'learning.html?mode=listening&lesson=1','#stage3Module');
+  await page.screenshot({path:'tools/tests/results/stage4-1-progress-desktop.png',fullPage:false});
+  await mobileCheck(page,BASE+'learning.html?mode=homework&lesson=1','#exercise','stage4-1-homework-390.png');
+  await mobileCheck(page,BASE+'learning.html?mode=listening&lesson=1','#stage3Module','stage4-1-listening-390.png');
   await page.goto(BASE+'index.html',{waitUntil:'domcontentloaded'});await login(page);await page.locator('#learningModuleLinks').waitFor();assert.match(await page.locator('#learningModuleProgress').innerText(),/80\/300/);
   await page.goto(BASE+'lesson.html?id=1&sec=vocab',{waitUntil:'domcontentloaded'});await login(page);await page.locator('#learningModuleLinks').waitFor();assert.equal(await page.locator('a[href*="mode=homework"][href*="lesson=1"]').count()>0,true);
   const legacyContext=await browser.newContext({viewport:{width:1104,height:900}});
