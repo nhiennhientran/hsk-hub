@@ -44,12 +44,12 @@ async function doHomework(page,lesson,makeLowScore){
   await page.locator('#submit-group').click();await page.locator('#submitted-result').waitFor();
   const choiceScore=await page.locator('#submitted-result').innerText();
   if(makeLowScore)assert.match(choiceScore,/4\/5/);else assert.match(choiceScore,/5\/5/);
-  const sortStage=page.locator('button[data-stage="sort"]');assert.equal(await sortStage.isDisabled(),false,'sort must unlock on submission, not score');await sortStage.click();
+  const sortStage=page.locator('#stages button[data-stage="sort"]');assert.equal(await sortStage.isDisabled(),false,'sort must unlock on submission, not score');await sortStage.click();
   const sorts=await page.evaluate(l=>window.HSKStep2Bank.find(x=>x.id===l).sort.map(q=>q.id),lesson);
   for(const qid of sorts){const order=await goodOrder(page,lesson,qid);for(const idx of order)await page.locator('[data-token="'+qid+'"][data-index="'+idx+'"]').click();}
   await page.locator('#submit-group').click();await page.locator('#submitted-result').waitFor();
   assert.match(await page.locator('#submitted-result').innerText(),/5\/5/);
-  const transStage=page.locator('button[data-stage="translation"]');assert.equal(await transStage.isDisabled(),false);await transStage.click();
+  const transStage=page.locator('#stages button[data-stage="translation"]');assert.equal(await transStage.isDisabled(),false);await transStage.click();
   const translations=await page.evaluate(l=>window.HSKStep2Bank.find(x=>x.id===l).translation.map(q=>q.id),lesson);
   assert.equal(translations.length,5);
   for(let i=0;i<translations.length;i++)await page.locator('#input-'+translations[i]).fill('学生作答 '+lesson+'-'+(i+1)+'。\n第二行保留。');
@@ -87,9 +87,10 @@ async function mobileCheck(page,url,selector,shot){
   if(shot)await page.screenshot({path:'tools/tests/results/'+shot,fullPage:false});
   await page.setViewportSize({width:1104,height:900});
 }
+let browser=null,context=null;
 (async()=>{
   await waitServer();
-  const browser=await chromium.launch({headless:true});const context=await browser.newContext({viewport:{width:1104,height:900}});const page=await context.newPage();
+  browser=await chromium.launch({headless:true});context=await browser.newContext({viewport:{width:1104,height:900}});const page=await context.newPage();
   const errors=[],failures=[];page.on('pageerror',e=>errors.push(String(e)));page.on('requestfailed',r=>failures.push({url:r.url(),error:r.failure()?.errorText}));
   const homework=[];for(let l=1;l<=4;l++){console.log('STAGE41 homework lesson',l);homework.push(await doHomework(page,l,l===4));console.log('STAGE41 homework done',l);}
   const stage2Before=await page.evaluate(()=>localStorage.getItem('ran_hsk1_stage2_v3'));
