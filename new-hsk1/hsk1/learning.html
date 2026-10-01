@@ -1,33 +1,29 @@
 <!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#174f3b">
-  <meta name="description" content="Bài tập, nghe giáo trình và ôn từ vựng New HSK 1 dành cho học viên người Việt.">
-  <title>Luyện tập New HSK 1 · 然老师</title>
-  <link rel="stylesheet" href="learning.css?v=20260930-1">
-  <link rel="stylesheet" href="learning-vocab.css?v=20260930-1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#174f3b">
+<meta name="description" content="Bài tập, nghe giáo trình và ôn từ vựng New HSK 1 dành cho học viên người Việt.">
+<title>Học và luyện New HSK 1 · 然老师</title>
+<link rel="stylesheet" href="learning.css?v=20261001-41">
+<link rel="stylesheet" href="learning-integrated.css?v=20261001-41">
 </head>
-<body class="learning-app">
-  <a class="la-skip" href="#learningMain">Đến nội dung</a>
-  <div class="pw-overlay" id="pwOverlay"><div class="pw-box"><div class="pw-icon" aria-hidden="true">然</div><h2>Vào lớp của cô Nhiên</h2><p>Nhập mật khẩu lớp học để tiếp tục.</p><label for="pwInput">Mật khẩu</label><input id="pwInput" class="pw-input" type="password" autocomplete="current-password"><button id="pwBtn" class="primary-btn" onclick="checkPassword()">Vào học →</button><div class="pw-error" id="pwError" role="alert">Mật khẩu chưa đúng. Hãy thử lại.</div></div></div>
-  <header class="la-header"><a class="la-brand" href="index.html"><span class="la-seal" aria-hidden="true">然</span><span>Học cùng cô Nhiên<small>新HSK教程 1 · 15 bài</small></span></a><a class="la-text-link" href="index.html">Mở giáo trình ↗</a></header>
-  <nav class="la-nav" aria-label="Học và ôn tập"><a href="learning.html?mode=homework&lesson=1" data-mode="homework">Bài tập <span>作业</span></a><a href="learning.html?mode=listening&lesson=1" data-mode="listening">Luyện nghe <span>听力</span></a><a href="learning.html?mode=vocab" data-mode="vocab">Ghép bài ôn từ <span>生词</span></a><a href="learning.html?mode=review" data-mode="review">Ôn lại <span>复习</span></a><a href="learning.html?mode=progress" data-mode="progress">Tiến độ <span>记录</span></a></nav>
-  <div id="storageNotice" class="la-storage-notice" role="status" hidden></div>
-  <main id="learningMain" class="la-main" tabindex="-1"><p>Đang chuẩn bị bài học…</p></main>
-  <aside class="la-player" id="learningPlayer" aria-label="Audio giáo trình" hidden><div><b id="playerLabel">Audio giáo trình</b><span id="playerStatus" role="status">Sẵn sàng</span></div><button id="playerPause" type="button">Tạm dừng</button><button id="playerStop" type="button" aria-label="Dừng audio">Dừng</button><label>Tốc độ <select id="playerRate" aria-label="Tốc độ phát audio"><option value="0.65">0.65× · Chậm</option><option value="0.75">0.75×</option><option value="1" selected>1× · Thường</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option></select></label></aside>
-  <footer class="la-footer"><span>然老师课堂 · Dành cho học viên người Việt</span><span>Kết quả được lưu trên trình duyệt này. Có thể sao lưu ở mục Tiến độ.</span></footer>
-  <div class="la-toast" id="learningToast" role="status" aria-live="polite"></div>
-  <noscript>Vui lòng bật JavaScript để làm bài tập và lưu tiến độ.</noscript>
-  <script src="new-data.js?v=20260930-1"></script>
-  <script src="new-enrichment.js?v=20260930-1"></script>
-  <script src="textbook-data-corrections.js?v=20260930-1"></script>
-  <script src="textbook-audio-segments.js?v=20260818-4"></script>
-  <script src="learning-bank.js?v=20260930-1"></script>
-  <script src="learning-engine.js?v=20260930-1"></script>
-  <script src="learning-vocab.js?v=20260930-1"></script>
-  <script src="learning-app.js?v=20260930-1"></script>
-  <script src="auth-patch.js?v=20260817-3"></script>
+<body class="learning-app integrated-learning">
+<a class="la-skip" href="#integratedRoot">Đến nội dung</a>
+<div class="pw-overlay" id="pwOverlay"><div class="pw-box"><div class="pw-icon" aria-hidden="true">然</div><h2>Vào lớp của cô Nhiên</h2><p>Nhập mật khẩu lớp học để tiếp tục.</p><label for="pwInput">Mật khẩu</label><input id="pwInput" class="pw-input" type="password" autocomplete="current-password"><button id="pwBtn" class="primary-btn" onclick="checkPassword()">Vào học →</button><div class="pw-error" id="pwError" role="alert">Mật khẩu chưa đúng. Hãy thử lại.</div></div></div>
+<header class="la-header integrated-header"><a class="la-brand" href="index.html"><span class="la-seal" aria-hidden="true">然</span><span>Học cùng cô Nhiên<small>新HSK教程 1 · 15 bài</small></span></a><div class="integrated-header-links"><a class="la-text-link" id="openTextbook" href="index.html">Mở giáo trình ↗</a><span id="integratedMiniProgress" class="integrated-mini-progress" aria-live="polite"></span></div></header>
+<nav class="la-nav integrated-nav" id="integratedNav" aria-label="Học và ôn tập">
+<a href="learning.html?mode=homework&lesson=1" data-mode="homework">Bài tập <span>作业</span></a>
+<a href="learning.html?mode=listening&lesson=1" data-mode="listening">Luyện nghe <span>听力</span></a>
+<a href="learning.html?mode=vocab&lesson=1" data-mode="vocab">Ghép bài ôn từ <span>生词</span></a>
+<a href="learning.html?mode=review&lesson=1" data-mode="review">Ôn đến hạn <span>复习</span></a>
+<a href="learning.html?mode=progress&lesson=1" data-mode="progress">Tiến độ <span>记录</span></a>
+</nav>
+<div id="integratedNotice" class="la-storage-notice integrated-notice" role="status" hidden></div>
+<div id="integratedRoot" tabindex="-1"><p class="integrated-loading">Đang chuẩn bị nội dung…</p></div>
+<footer class="la-footer integrated-footer"><span>然老师课堂 · Dành cho học viên người Việt</span><span>Bài tập, nghe và tự đánh giá từ vựng được lưu theo từng mô-đun để tránh ghi đè lẫn nhau.</span></footer>
+<script src="learning-integrated.js?v=20261001-41"></script>
+<script src="auth-patch.js?v=20260817-3"></script>
 </body>
 </html>
