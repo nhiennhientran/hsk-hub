@@ -1,0 +1,11 @@
+.data-panel { margin-top: 1.5rem; border-top: 1px solid var(--border, #cbd5e1); padding-top: 1rem; }
+.data-panel h2, .data-panel h3 { margin: .5rem 0; }
+.data-panel .data-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: .8rem 0; }
+.data-panel input[type="file"] { max-width: 100%; }
+.data-panel dl { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .3rem 1rem; max-width: 38rem; }
+.data-panel dt, .data-panel dd { margin: 0; }
+.data-panel #migration-preview { border: 1px solid #9ca3af; border-radius: .5rem; padding: .8rem; margin: 1rem 0; }
+.data-panel #migration-preview[hidden] { display: none; }
+.data-panel .data-warning { font-weight: 600; }
+.data-panel #data-status { min-height: 1.5em; }
+.data-panel #data-status[data-state="unsaved"], .data-panel #data-status[data-state="conflict"], .data-panel #data-status[data-state="corrupt"], .data-panel #data-status[data-state="unavailable"] { color: #9a3412; }

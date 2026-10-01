@@ -32,7 +32,7 @@ function startApplication(): () => void {
       <button id="retry-module" type="button" hidden>Thử tải lại</button>
       <section id="module-host" tabindex="-1" aria-label="Nội dung bài học"></section>
     </main>
-    <footer>Bản xem trước · Tiến độ học chưa được ghi trong phiên bản này. <a href="https://nhiennhientran.github.io/hsk-hub/new-hsk1/index.html">Chọn cấp độ ↗</a></footer>
+    <footer>Bản xem trước · Phần luyện tập chưa mở. <a data-route-link href="${router.href({ feature: 'progress', lesson: 1 })}">Quản lý dữ liệu và bản sao lưu</a> · <a href="https://nhiennhientran.github.io/hsk-hub/new-hsk1/index.html">Chọn cấp độ ↗</a></footer>
   `;
   const host = root.querySelector<HTMLElement>('#module-host')!;
   const status = root.querySelector<HTMLElement>('#module-status')!;

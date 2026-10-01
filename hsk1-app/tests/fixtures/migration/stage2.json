@@ -1,0 +1,2067 @@
+{
+  "app": "hsk1-stage2",
+  "schema": 3,
+  "lessons": {
+    "1": {
+      "choice": {
+        "draft": {
+          "l01-s2-choice-01": 1,
+          "l01-s2-choice-02": 2,
+          "l01-s2-choice-03": 0,
+          "l01-s2-choice-04": 3,
+          "l01-s2-choice-05": 2
+        },
+        "orders": {
+          "l01-s2-choice-01": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-s2-choice-02": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-s2-choice-03": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-s2-choice-04": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-s2-choice-05": [
+            3,
+            2,
+            1,
+            0
+          ]
+        },
+        "first": {
+          "assessment": "automatic",
+          "answers": {
+            "l01-s2-choice-01": 2,
+            "l01-s2-choice-02": 3,
+            "l01-s2-choice-03": 1,
+            "l01-s2-choice-04": 0,
+            "l01-s2-choice-05": 3
+          },
+          "results": {
+            "l01-s2-choice-01": false,
+            "l01-s2-choice-02": false,
+            "l01-s2-choice-03": false,
+            "l01-s2-choice-04": false,
+            "l01-s2-choice-05": false
+          },
+          "correct": 0,
+          "total": 5,
+          "at": 1789891300000,
+          "questionFingerprints": {
+            "l01-s2-choice-01": "q1-ebe4df60",
+            "l01-s2-choice-02": "q1-0bd0b092",
+            "l01-s2-choice-03": "q1-caa2e2cf",
+            "l01-s2-choice-04": "q1-bddc31ed",
+            "l01-s2-choice-05": "q1-5284165b"
+          }
+        },
+        "attempt": {
+          "assessment": "automatic",
+          "answers": {
+            "l01-s2-choice-01": 1,
+            "l01-s2-choice-02": 2,
+            "l01-s2-choice-03": 0,
+            "l01-s2-choice-04": 3,
+            "l01-s2-choice-05": 2
+          },
+          "results": {
+            "l01-s2-choice-01": true,
+            "l01-s2-choice-02": true,
+            "l01-s2-choice-03": true,
+            "l01-s2-choice-04": true,
+            "l01-s2-choice-05": true
+          },
+          "correct": 5,
+          "total": 5,
+          "at": 1789891302000,
+          "questionFingerprints": {
+            "l01-s2-choice-01": "q1-ebe4df60",
+            "l01-s2-choice-02": "q1-0bd0b092",
+            "l01-s2-choice-03": "q1-caa2e2cf",
+            "l01-s2-choice-04": "q1-bddc31ed",
+            "l01-s2-choice-05": "q1-5284165b"
+          }
+        },
+        "latest": {
+          "assessment": "automatic",
+          "answers": {
+            "l01-s2-choice-01": 1,
+            "l01-s2-choice-02": 2,
+            "l01-s2-choice-03": 0,
+            "l01-s2-choice-04": 3,
+            "l01-s2-choice-05": 2
+          },
+          "results": {
+            "l01-s2-choice-01": true,
+            "l01-s2-choice-02": true,
+            "l01-s2-choice-03": true,
+            "l01-s2-choice-04": true,
+            "l01-s2-choice-05": true
+          },
+          "correct": 5,
+          "total": 5,
+          "at": 1789891302000,
+          "questionFingerprints": {
+            "l01-s2-choice-01": "q1-ebe4df60",
+            "l01-s2-choice-02": "q1-0bd0b092",
+            "l01-s2-choice-03": "q1-caa2e2cf",
+            "l01-s2-choice-04": "q1-bddc31ed",
+            "l01-s2-choice-05": "q1-5284165b"
+          }
+        },
+        "completed": true,
+        "history": [
+          {
+            "assessment": "automatic",
+            "answers": {
+              "l01-s2-choice-01": 2,
+              "l01-s2-choice-02": 3,
+              "l01-s2-choice-03": 1,
+              "l01-s2-choice-04": 0,
+              "l01-s2-choice-05": 3
+            },
+            "results": {
+              "l01-s2-choice-01": false,
+              "l01-s2-choice-02": false,
+              "l01-s2-choice-03": false,
+              "l01-s2-choice-04": false,
+              "l01-s2-choice-05": false
+            },
+            "correct": 0,
+            "total": 5,
+            "at": 1789891300000,
+            "questionFingerprints": {
+              "l01-s2-choice-01": "q1-ebe4df60",
+              "l01-s2-choice-02": "q1-0bd0b092",
+              "l01-s2-choice-03": "q1-caa2e2cf",
+              "l01-s2-choice-04": "q1-bddc31ed",
+              "l01-s2-choice-05": "q1-5284165b"
+            }
+          },
+          {
+            "assessment": "automatic",
+            "answers": {
+              "l01-s2-choice-01": 1,
+              "l01-s2-choice-02": 2,
+              "l01-s2-choice-03": 0,
+              "l01-s2-choice-04": 3,
+              "l01-s2-choice-05": 2
+            },
+            "results": {
+              "l01-s2-choice-01": true,
+              "l01-s2-choice-02": true,
+              "l01-s2-choice-03": true,
+              "l01-s2-choice-04": true,
+              "l01-s2-choice-05": true
+            },
+            "correct": 5,
+            "total": 5,
+            "at": 1789891302000,
+            "questionFingerprints": {
+              "l01-s2-choice-01": "q1-ebe4df60",
+              "l01-s2-choice-02": "q1-0bd0b092",
+              "l01-s2-choice-03": "q1-caa2e2cf",
+              "l01-s2-choice-04": "q1-bddc31ed",
+              "l01-s2-choice-05": "q1-5284165b"
+            }
+          }
+        ]
+      },
+      "sort": {
+        "draft": {
+          "l01-s2-sort-01": [
+            0,
+            1,
+            2
+          ],
+          "l01-s2-sort-02": [
+            0,
+            1
+          ],
+          "l01-s2-sort-03": [
+            0,
+            1
+          ],
+          "l01-s2-sort-04": [
+            0,
+            1
+          ],
+          "l01-s2-sort-05": [
+            0,
+            1
+          ]
+        },
+        "orders": {
+          "l01-s2-sort-01": [
+            2,
+            1,
+            0
+          ],
+          "l01-s2-sort-02": [
+            1,
+            0
+          ],
+          "l01-s2-sort-03": [
+            1,
+            0
+          ],
+          "l01-s2-sort-04": [
+            1,
+            0
+          ],
+          "l01-s2-sort-05": [
+            1,
+            0
+          ]
+        },
+        "first": {
+          "assessment": "automatic",
+          "answers": {
+            "l01-s2-sort-01": [
+              0,
+              2,
+              1
+            ],
+            "l01-s2-sort-02": [
+              1,
+              0
+            ],
+            "l01-s2-sort-03": [
+              1,
+              0
+            ],
+            "l01-s2-sort-04": [
+              1,
+              0
+            ],
+            "l01-s2-sort-05": [
+              1,
+              0
+            ]
+          },
+          "results": {
+            "l01-s2-sort-01": false,
+            "l01-s2-sort-02": false,
+            "l01-s2-sort-03": false,
+            "l01-s2-sort-04": false,
+            "l01-s2-sort-05": false
+          },
+          "correct": 0,
+          "total": 5,
+          "at": 1789891305000,
+          "questionFingerprints": {
+            "l01-s2-sort-01": "q1-0a5aa773",
+            "l01-s2-sort-02": "q1-682c5cfc",
+            "l01-s2-sort-03": "q1-ae6ddc44",
+            "l01-s2-sort-04": "q1-59d7b4a6",
+            "l01-s2-sort-05": "q1-335ed626"
+          }
+        },
+        "attempt": {
+          "assessment": "automatic",
+          "answers": {
+            "l01-s2-sort-01": [
+              0,
+              1,
+              2
+            ],
+            "l01-s2-sort-02": [
+              0,
+              1
+            ],
+            "l01-s2-sort-03": [
+              0,
+              1
+            ],
+            "l01-s2-sort-04": [
+              0,
+              1
+            ],
+            "l01-s2-sort-05": [
+              0,
+              1
+            ]
+          },
+          "results": {
+            "l01-s2-sort-01": true,
+            "l01-s2-sort-02": true,
+            "l01-s2-sort-03": true,
+            "l01-s2-sort-04": true,
+            "l01-s2-sort-05": true
+          },
+          "correct": 5,
+          "total": 5,
+          "at": 1789891307000,
+          "questionFingerprints": {
+            "l01-s2-sort-01": "q1-0a5aa773",
+            "l01-s2-sort-02": "q1-682c5cfc",
+            "l01-s2-sort-03": "q1-ae6ddc44",
+            "l01-s2-sort-04": "q1-59d7b4a6",
+            "l01-s2-sort-05": "q1-335ed626"
+          }
+        },
+        "latest": {
+          "assessment": "automatic",
+          "answers": {
+            "l01-s2-sort-01": [
+              0,
+              1,
+              2
+            ],
+            "l01-s2-sort-02": [
+              0,
+              1
+            ],
+            "l01-s2-sort-03": [
+              0,
+              1
+            ],
+            "l01-s2-sort-04": [
+              0,
+              1
+            ],
+            "l01-s2-sort-05": [
+              0,
+              1
+            ]
+          },
+          "results": {
+            "l01-s2-sort-01": true,
+            "l01-s2-sort-02": true,
+            "l01-s2-sort-03": true,
+            "l01-s2-sort-04": true,
+            "l01-s2-sort-05": true
+          },
+          "correct": 5,
+          "total": 5,
+          "at": 1789891307000,
+          "questionFingerprints": {
+            "l01-s2-sort-01": "q1-0a5aa773",
+            "l01-s2-sort-02": "q1-682c5cfc",
+            "l01-s2-sort-03": "q1-ae6ddc44",
+            "l01-s2-sort-04": "q1-59d7b4a6",
+            "l01-s2-sort-05": "q1-335ed626"
+          }
+        },
+        "completed": true,
+        "history": [
+          {
+            "assessment": "automatic",
+            "answers": {
+              "l01-s2-sort-01": [
+                0,
+                2,
+                1
+              ],
+              "l01-s2-sort-02": [
+                1,
+                0
+              ],
+              "l01-s2-sort-03": [
+                1,
+                0
+              ],
+              "l01-s2-sort-04": [
+                1,
+                0
+              ],
+              "l01-s2-sort-05": [
+                1,
+                0
+              ]
+            },
+            "results": {
+              "l01-s2-sort-01": false,
+              "l01-s2-sort-02": false,
+              "l01-s2-sort-03": false,
+              "l01-s2-sort-04": false,
+              "l01-s2-sort-05": false
+            },
+            "correct": 0,
+            "total": 5,
+            "at": 1789891305000,
+            "questionFingerprints": {
+              "l01-s2-sort-01": "q1-0a5aa773",
+              "l01-s2-sort-02": "q1-682c5cfc",
+              "l01-s2-sort-03": "q1-ae6ddc44",
+              "l01-s2-sort-04": "q1-59d7b4a6",
+              "l01-s2-sort-05": "q1-335ed626"
+            }
+          },
+          {
+            "assessment": "automatic",
+            "answers": {
+              "l01-s2-sort-01": [
+                0,
+                1,
+                2
+              ],
+              "l01-s2-sort-02": [
+                0,
+                1
+              ],
+              "l01-s2-sort-03": [
+                0,
+                1
+              ],
+              "l01-s2-sort-04": [
+                0,
+                1
+              ],
+              "l01-s2-sort-05": [
+                0,
+                1
+              ]
+            },
+            "results": {
+              "l01-s2-sort-01": true,
+              "l01-s2-sort-02": true,
+              "l01-s2-sort-03": true,
+              "l01-s2-sort-04": true,
+              "l01-s2-sort-05": true
+            },
+            "correct": 5,
+            "total": 5,
+            "at": 1789891307000,
+            "questionFingerprints": {
+              "l01-s2-sort-01": "q1-0a5aa773",
+              "l01-s2-sort-02": "q1-682c5cfc",
+              "l01-s2-sort-03": "q1-ae6ddc44",
+              "l01-s2-sort-04": "q1-59d7b4a6",
+              "l01-s2-sort-05": "q1-335ed626"
+            }
+          }
+        ]
+      },
+      "translation": {
+        "draft": {
+          "l01-s2-translation-01": "匿名样本 A：第1课，第1题。\n  我是越南学生，我正在学习中文。\n",
+          "l01-s2-translation-02": "匿名样本 A：第1课，第2题。\n  我是越南学生，我正在学习中文。\n",
+          "l01-s2-translation-03": "匿名样本 A：第1课，第3题。\n  我是越南学生，我正在学习中文。\n",
+          "l01-s2-translation-04": "匿名样本 A：第1课，第4题。\n  我是越南学生，我正在学习中文。\n",
+          "l01-s2-translation-05": "匿名样本 A：第1课，第5题。\n  我是越南学生，我正在学习中文。\n"
+        },
+        "orders": {},
+        "first": {
+          "assessment": "manual",
+          "answers": {
+            "l01-s2-translation-01": "匿名样本 A：第1课，第1题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-02": "匿名样本 A：第1课，第2题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-03": "匿名样本 A：第1课，第3题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-04": "匿名样本 A：第1课，第4题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-05": "匿名样本 A：第1课，第5题。\n  我是越南学生，我正在学习中文。\n"
+          },
+          "results": null,
+          "correct": null,
+          "total": 5,
+          "at": 1789891310000,
+          "questionFingerprints": {
+            "l01-s2-translation-01": "q1-237c650f",
+            "l01-s2-translation-02": "q1-3ad92acc",
+            "l01-s2-translation-03": "q1-90e793d5",
+            "l01-s2-translation-04": "q1-42130030",
+            "l01-s2-translation-05": "q1-1168e7f2"
+          }
+        },
+        "attempt": {
+          "assessment": "manual",
+          "answers": {
+            "l01-s2-translation-01": "匿名样本 A：第1课，第1题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-02": "匿名样本 A：第1课，第2题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-03": "匿名样本 A：第1课，第3题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-04": "匿名样本 A：第1课，第4题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-05": "匿名样本 A：第1课，第5题。\n  我是越南学生，我正在学习中文。\n"
+          },
+          "results": null,
+          "correct": null,
+          "total": 5,
+          "at": 1789891310000,
+          "questionFingerprints": {
+            "l01-s2-translation-01": "q1-237c650f",
+            "l01-s2-translation-02": "q1-3ad92acc",
+            "l01-s2-translation-03": "q1-90e793d5",
+            "l01-s2-translation-04": "q1-42130030",
+            "l01-s2-translation-05": "q1-1168e7f2"
+          }
+        },
+        "latest": {
+          "assessment": "manual",
+          "answers": {
+            "l01-s2-translation-01": "匿名样本 A：第1课，第1题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-02": "匿名样本 A：第1课，第2题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-03": "匿名样本 A：第1课，第3题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-04": "匿名样本 A：第1课，第4题。\n  我是越南学生，我正在学习中文。\n",
+            "l01-s2-translation-05": "匿名样本 A：第1课，第5题。\n  我是越南学生，我正在学习中文。\n"
+          },
+          "results": null,
+          "correct": null,
+          "total": 5,
+          "at": 1789891310000,
+          "questionFingerprints": {
+            "l01-s2-translation-01": "q1-237c650f",
+            "l01-s2-translation-02": "q1-3ad92acc",
+            "l01-s2-translation-03": "q1-90e793d5",
+            "l01-s2-translation-04": "q1-42130030",
+            "l01-s2-translation-05": "q1-1168e7f2"
+          }
+        },
+        "completed": true,
+        "history": [
+          {
+            "assessment": "manual",
+            "answers": {
+              "l01-s2-translation-01": "匿名样本 A：第1课，第1题。\n  我是越南学生，我正在学习中文。\n",
+              "l01-s2-translation-02": "匿名样本 A：第1课，第2题。\n  我是越南学生，我正在学习中文。\n",
+              "l01-s2-translation-03": "匿名样本 A：第1课，第3题。\n  我是越南学生，我正在学习中文。\n",
+              "l01-s2-translation-04": "匿名样本 A：第1课，第4题。\n  我是越南学生，我正在学习中文。\n",
+              "l01-s2-translation-05": "匿名样本 A：第1课，第5题。\n  我是越南学生，我正在学习中文。\n"
+            },
+            "results": null,
+            "correct": null,
+            "total": 5,
+            "at": 1789891310000,
+            "questionFingerprints": {
+              "l01-s2-translation-01": "q1-237c650f",
+              "l01-s2-translation-02": "q1-3ad92acc",
+              "l01-s2-translation-03": "q1-90e793d5",
+              "l01-s2-translation-04": "q1-42130030",
+              "l01-s2-translation-05": "q1-1168e7f2"
+            }
+          }
+        ]
+      }
+    },
+    "15": {
+      "choice": {
+        "draft": {
+          "l15-s2-choice-01": 2,
+          "l15-s2-choice-02": 3,
+          "l15-s2-choice-03": 0,
+          "l15-s2-choice-04": 1,
+          "l15-s2-choice-05": 3
+        },
+        "orders": {
+          "l15-s2-choice-01": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l15-s2-choice-02": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l15-s2-choice-03": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l15-s2-choice-04": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l15-s2-choice-05": [
+            3,
+            2,
+            1,
+            0
+          ]
+        },
+        "first": {
+          "assessment": "automatic",
+          "answers": {
+            "l15-s2-choice-01": 3,
+            "l15-s2-choice-02": 0,
+            "l15-s2-choice-03": 1,
+            "l15-s2-choice-04": 2,
+            "l15-s2-choice-05": 0
+          },
+          "results": {
+            "l15-s2-choice-01": false,
+            "l15-s2-choice-02": false,
+            "l15-s2-choice-03": false,
+            "l15-s2-choice-04": false,
+            "l15-s2-choice-05": false
+          },
+          "correct": 0,
+          "total": 5,
+          "at": 1789892700000,
+          "questionFingerprints": {
+            "l15-s2-choice-01": "q1-0b6bda96",
+            "l15-s2-choice-02": "q1-f2edc1b7",
+            "l15-s2-choice-03": "q1-b46ccefd",
+            "l15-s2-choice-04": "q1-f92e5816",
+            "l15-s2-choice-05": "q1-08119010"
+          }
+        },
+        "attempt": {
+          "assessment": "automatic",
+          "answers": {
+            "l15-s2-choice-01": 2,
+            "l15-s2-choice-02": 3,
+            "l15-s2-choice-03": 0,
+            "l15-s2-choice-04": 1,
+            "l15-s2-choice-05": 3
+          },
+          "results": {
+            "l15-s2-choice-01": true,
+            "l15-s2-choice-02": true,
+            "l15-s2-choice-03": true,
+            "l15-s2-choice-04": true,
+            "l15-s2-choice-05": true
+          },
+          "correct": 5,
+          "total": 5,
+          "at": 1789892702000,
+          "questionFingerprints": {
+            "l15-s2-choice-01": "q1-0b6bda96",
+            "l15-s2-choice-02": "q1-f2edc1b7",
+            "l15-s2-choice-03": "q1-b46ccefd",
+            "l15-s2-choice-04": "q1-f92e5816",
+            "l15-s2-choice-05": "q1-08119010"
+          }
+        },
+        "latest": {
+          "assessment": "automatic",
+          "answers": {
+            "l15-s2-choice-01": 2,
+            "l15-s2-choice-02": 3,
+            "l15-s2-choice-03": 0,
+            "l15-s2-choice-04": 1,
+            "l15-s2-choice-05": 3
+          },
+          "results": {
+            "l15-s2-choice-01": true,
+            "l15-s2-choice-02": true,
+            "l15-s2-choice-03": true,
+            "l15-s2-choice-04": true,
+            "l15-s2-choice-05": true
+          },
+          "correct": 5,
+          "total": 5,
+          "at": 1789892702000,
+          "questionFingerprints": {
+            "l15-s2-choice-01": "q1-0b6bda96",
+            "l15-s2-choice-02": "q1-f2edc1b7",
+            "l15-s2-choice-03": "q1-b46ccefd",
+            "l15-s2-choice-04": "q1-f92e5816",
+            "l15-s2-choice-05": "q1-08119010"
+          }
+        },
+        "completed": true,
+        "history": [
+          {
+            "assessment": "automatic",
+            "answers": {
+              "l15-s2-choice-01": 3,
+              "l15-s2-choice-02": 0,
+              "l15-s2-choice-03": 1,
+              "l15-s2-choice-04": 2,
+              "l15-s2-choice-05": 0
+            },
+            "results": {
+              "l15-s2-choice-01": false,
+              "l15-s2-choice-02": false,
+              "l15-s2-choice-03": false,
+              "l15-s2-choice-04": false,
+              "l15-s2-choice-05": false
+            },
+            "correct": 0,
+            "total": 5,
+            "at": 1789892700000,
+            "questionFingerprints": {
+              "l15-s2-choice-01": "q1-0b6bda96",
+              "l15-s2-choice-02": "q1-f2edc1b7",
+              "l15-s2-choice-03": "q1-b46ccefd",
+              "l15-s2-choice-04": "q1-f92e5816",
+              "l15-s2-choice-05": "q1-08119010"
+            }
+          },
+          {
+            "assessment": "automatic",
+            "answers": {
+              "l15-s2-choice-01": 2,
+              "l15-s2-choice-02": 3,
+              "l15-s2-choice-03": 0,
+              "l15-s2-choice-04": 1,
+              "l15-s2-choice-05": 3
+            },
+            "results": {
+              "l15-s2-choice-01": true,
+              "l15-s2-choice-02": true,
+              "l15-s2-choice-03": true,
+              "l15-s2-choice-04": true,
+              "l15-s2-choice-05": true
+            },
+            "correct": 5,
+            "total": 5,
+            "at": 1789892702000,
+            "questionFingerprints": {
+              "l15-s2-choice-01": "q1-0b6bda96",
+              "l15-s2-choice-02": "q1-f2edc1b7",
+              "l15-s2-choice-03": "q1-b46ccefd",
+              "l15-s2-choice-04": "q1-f92e5816",
+              "l15-s2-choice-05": "q1-08119010"
+            }
+          }
+        ]
+      },
+      "sort": {
+        "draft": {
+          "l15-s2-sort-01": [
+            2,
+            0,
+            4,
+            3,
+            5,
+            1
+          ],
+          "l15-s2-sort-02": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "l15-s2-sort-03": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "l15-s2-sort-04": [
+            1,
+            3,
+            4,
+            0,
+            2
+          ],
+          "l15-s2-sort-05": [
+            1,
+            3,
+            2,
+            0
+          ]
+        },
+        "orders": {
+          "l15-s2-sort-01": [
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "l15-s2-sort-02": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l15-s2-sort-03": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l15-s2-sort-04": [
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "l15-s2-sort-05": [
+            3,
+            2,
+            1,
+            0
+          ]
+        },
+        "first": {
+          "assessment": "automatic",
+          "answers": {
+            "l15-s2-sort-01": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "l15-s2-sort-02": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "l15-s2-sort-03": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "l15-s2-sort-04": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "l15-s2-sort-05": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          "results": {
+            "l15-s2-sort-01": false,
+            "l15-s2-sort-02": false,
+            "l15-s2-sort-03": false,
+            "l15-s2-sort-04": false,
+            "l15-s2-sort-05": false
+          },
+          "correct": 0,
+          "total": 5,
+          "at": 1789892705000,
+          "questionFingerprints": {
+            "l15-s2-sort-01": "q1-f1c07cc5",
+            "l15-s2-sort-02": "q1-265de608",
+            "l15-s2-sort-03": "q1-12f3f32c",
+            "l15-s2-sort-04": "q1-49e5732a",
+            "l15-s2-sort-05": "q1-d4c59df7"
+          }
+        },
+        "attempt": {
+          "assessment": "automatic",
+          "answers": {
+            "l15-s2-sort-01": [
+              2,
+              0,
+              4,
+              3,
+              5,
+              1
+            ],
+            "l15-s2-sort-02": [
+              1,
+              3,
+              2,
+              0
+            ],
+            "l15-s2-sort-03": [
+              3,
+              2,
+              0,
+              1
+            ],
+            "l15-s2-sort-04": [
+              1,
+              3,
+              4,
+              0,
+              2
+            ],
+            "l15-s2-sort-05": [
+              1,
+              3,
+              2,
+              0
+            ]
+          },
+          "results": {
+            "l15-s2-sort-01": true,
+            "l15-s2-sort-02": true,
+            "l15-s2-sort-03": true,
+            "l15-s2-sort-04": true,
+            "l15-s2-sort-05": true
+          },
+          "correct": 5,
+          "total": 5,
+          "at": 1789892707000,
+          "questionFingerprints": {
+            "l15-s2-sort-01": "q1-f1c07cc5",
+            "l15-s2-sort-02": "q1-265de608",
+            "l15-s2-sort-03": "q1-12f3f32c",
+            "l15-s2-sort-04": "q1-49e5732a",
+            "l15-s2-sort-05": "q1-d4c59df7"
+          }
+        },
+        "latest": {
+          "assessment": "automatic",
+          "answers": {
+            "l15-s2-sort-01": [
+              2,
+              0,
+              4,
+              3,
+              5,
+              1
+            ],
+            "l15-s2-sort-02": [
+              1,
+              3,
+              2,
+              0
+            ],
+            "l15-s2-sort-03": [
+              3,
+              2,
+              0,
+              1
+            ],
+            "l15-s2-sort-04": [
+              1,
+              3,
+              4,
+              0,
+              2
+            ],
+            "l15-s2-sort-05": [
+              1,
+              3,
+              2,
+              0
+            ]
+          },
+          "results": {
+            "l15-s2-sort-01": true,
+            "l15-s2-sort-02": true,
+            "l15-s2-sort-03": true,
+            "l15-s2-sort-04": true,
+            "l15-s2-sort-05": true
+          },
+          "correct": 5,
+          "total": 5,
+          "at": 1789892707000,
+          "questionFingerprints": {
+            "l15-s2-sort-01": "q1-f1c07cc5",
+            "l15-s2-sort-02": "q1-265de608",
+            "l15-s2-sort-03": "q1-12f3f32c",
+            "l15-s2-sort-04": "q1-49e5732a",
+            "l15-s2-sort-05": "q1-d4c59df7"
+          }
+        },
+        "completed": true,
+        "history": [
+          {
+            "assessment": "automatic",
+            "answers": {
+              "l15-s2-sort-01": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "l15-s2-sort-02": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "l15-s2-sort-03": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "l15-s2-sort-04": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "l15-s2-sort-05": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            "results": {
+              "l15-s2-sort-01": false,
+              "l15-s2-sort-02": false,
+              "l15-s2-sort-03": false,
+              "l15-s2-sort-04": false,
+              "l15-s2-sort-05": false
+            },
+            "correct": 0,
+            "total": 5,
+            "at": 1789892705000,
+            "questionFingerprints": {
+              "l15-s2-sort-01": "q1-f1c07cc5",
+              "l15-s2-sort-02": "q1-265de608",
+              "l15-s2-sort-03": "q1-12f3f32c",
+              "l15-s2-sort-04": "q1-49e5732a",
+              "l15-s2-sort-05": "q1-d4c59df7"
+            }
+          },
+          {
+            "assessment": "automatic",
+            "answers": {
+              "l15-s2-sort-01": [
+                2,
+                0,
+                4,
+                3,
+                5,
+                1
+              ],
+              "l15-s2-sort-02": [
+                1,
+                3,
+                2,
+                0
+              ],
+              "l15-s2-sort-03": [
+                3,
+                2,
+                0,
+                1
+              ],
+              "l15-s2-sort-04": [
+                1,
+                3,
+                4,
+                0,
+                2
+              ],
+              "l15-s2-sort-05": [
+                1,
+                3,
+                2,
+                0
+              ]
+            },
+            "results": {
+              "l15-s2-sort-01": true,
+              "l15-s2-sort-02": true,
+              "l15-s2-sort-03": true,
+              "l15-s2-sort-04": true,
+              "l15-s2-sort-05": true
+            },
+            "correct": 5,
+            "total": 5,
+            "at": 1789892707000,
+            "questionFingerprints": {
+              "l15-s2-sort-01": "q1-f1c07cc5",
+              "l15-s2-sort-02": "q1-265de608",
+              "l15-s2-sort-03": "q1-12f3f32c",
+              "l15-s2-sort-04": "q1-49e5732a",
+              "l15-s2-sort-05": "q1-d4c59df7"
+            }
+          }
+        ]
+      },
+      "translation": {
+        "draft": {
+          "l15-s2-translation-free-01": "匿名样本 B：新的未完成答题稿。\n  这段不是已提交稿 A。",
+          "l15-s2-translation-free-02": ""
+        },
+        "orders": {},
+        "first": {
+          "assessment": "manual",
+          "answers": {
+            "l15-s2-translation-free-01": "匿名样本 A：第15课，第1题。\n  我是越南学生，我正在学习中文。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n",
+            "l15-s2-translation-free-02": "匿名样本 A：第15课，第2题。\n  我是越南学生，我正在学习中文。\n",
+            "l15-s2-translation-free-03": "匿名样本 A：第15课，第3题。\n  我是越南学生，我正在学习中文。\n",
+            "l15-s2-translation-free-04": "匿名样本 A：第15课，第4题。\n  我是越南学生，我正在学习中文。\n",
+            "l15-s2-translation-free-05": "匿名样本 A：第15课，第5题。\n  我是越南学生，我正在学习中文。\n"
+          },
+          "results": null,
+          "correct": null,
+          "total": 5,
+          "at": 1789892710000,
+          "questionFingerprints": {
+            "l15-s2-translation-free-01": "q1-8441245f",
+            "l15-s2-translation-free-02": "q1-c17ea52e",
+            "l15-s2-translation-free-03": "q1-f977c735",
+            "l15-s2-translation-free-04": "q1-f0073778",
+            "l15-s2-translation-free-05": "q1-fcb8c281"
+          }
+        },
+        "attempt": null,
+        "latest": {
+          "assessment": "manual",
+          "answers": {
+            "l15-s2-translation-free-01": "匿名样本 A：第15课，第1题。\n  我是越南学生，我正在学习中文。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n",
+            "l15-s2-translation-free-02": "匿名样本 A：第15课，第2题。\n  我是越南学生，我正在学习中文。\n",
+            "l15-s2-translation-free-03": "匿名样本 A：第15课，第3题。\n  我是越南学生，我正在学习中文。\n",
+            "l15-s2-translation-free-04": "匿名样本 A：第15课，第4题。\n  我是越南学生，我正在学习中文。\n",
+            "l15-s2-translation-free-05": "匿名样本 A：第15课，第5题。\n  我是越南学生，我正在学习中文。\n"
+          },
+          "results": null,
+          "correct": null,
+          "total": 5,
+          "at": 1789892710000,
+          "questionFingerprints": {
+            "l15-s2-translation-free-01": "q1-8441245f",
+            "l15-s2-translation-free-02": "q1-c17ea52e",
+            "l15-s2-translation-free-03": "q1-f977c735",
+            "l15-s2-translation-free-04": "q1-f0073778",
+            "l15-s2-translation-free-05": "q1-fcb8c281"
+          }
+        },
+        "completed": true,
+        "history": [
+          {
+            "assessment": "manual",
+            "answers": {
+              "l15-s2-translation-free-01": "匿名样本 A：第15课，第1题。\n  我是越南学生，我正在学习中文。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n这是一份用于恢复验证的长答题稿，保留原文和换行。\n",
+              "l15-s2-translation-free-02": "匿名样本 A：第15课，第2题。\n  我是越南学生，我正在学习中文。\n",
+              "l15-s2-translation-free-03": "匿名样本 A：第15课，第3题。\n  我是越南学生，我正在学习中文。\n",
+              "l15-s2-translation-free-04": "匿名样本 A：第15课，第4题。\n  我是越南学生，我正在学习中文。\n",
+              "l15-s2-translation-free-05": "匿名样本 A：第15课，第5题。\n  我是越南学生，我正在学习中文。\n"
+            },
+            "results": null,
+            "correct": null,
+            "total": 5,
+            "at": 1789892710000,
+            "questionFingerprints": {
+              "l15-s2-translation-free-01": "q1-8441245f",
+              "l15-s2-translation-free-02": "q1-c17ea52e",
+              "l15-s2-translation-free-03": "q1-f977c735",
+              "l15-s2-translation-free-04": "q1-f0073778",
+              "l15-s2-translation-free-05": "q1-fcb8c281"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "profile": {
+    "name": "Học viên mẫu",
+    "className": "Lớp kiểm thử"
+  },
+  "words": {},
+  "questionReviews": {
+    "l01-s2-choice-01": {
+      "lesson": 1,
+      "kind": "choice",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789891302000,
+      "dueAt": 1789977702000
+    },
+    "l01-s2-choice-02": {
+      "lesson": 1,
+      "kind": "choice",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789891302000,
+      "dueAt": 1789977702000
+    },
+    "l01-s2-choice-03": {
+      "lesson": 1,
+      "kind": "choice",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789891302000,
+      "dueAt": 1789977702000
+    },
+    "l01-s2-choice-04": {
+      "lesson": 1,
+      "kind": "choice",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789891302000,
+      "dueAt": 1789977702000
+    },
+    "l01-s2-choice-05": {
+      "lesson": 1,
+      "kind": "choice",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789891302000,
+      "dueAt": 1789977702000
+    },
+    "l01-s2-sort-01": {
+      "lesson": 1,
+      "kind": "sort",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789891307000,
+      "dueAt": 1789977707000
+    },
+    "l01-s2-sort-02": {
+      "lesson": 1,
+      "kind": "sort",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789891307000,
+      "dueAt": 1789977707000
+    },
+    "l01-s2-sort-03": {
+      "lesson": 1,
+      "kind": "sort",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789891307000,
+      "dueAt": 1789977707000
+    },
+    "l01-s2-sort-04": {
+      "lesson": 1,
+      "kind": "sort",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789891307000,
+      "dueAt": 1789977707000
+    },
+    "l01-s2-sort-05": {
+      "lesson": 1,
+      "kind": "sort",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789891307000,
+      "dueAt": 1789977707000
+    },
+    "l15-s2-choice-01": {
+      "lesson": 15,
+      "kind": "choice",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789892702000,
+      "dueAt": 1789979102000
+    },
+    "l15-s2-choice-02": {
+      "lesson": 15,
+      "kind": "choice",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789892702000,
+      "dueAt": 1789979102000
+    },
+    "l15-s2-choice-03": {
+      "lesson": 15,
+      "kind": "choice",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789892702000,
+      "dueAt": 1789979102000
+    },
+    "l15-s2-choice-04": {
+      "lesson": 15,
+      "kind": "choice",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789892702000,
+      "dueAt": 1789979102000
+    },
+    "l15-s2-choice-05": {
+      "lesson": 15,
+      "kind": "choice",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789892702000,
+      "dueAt": 1789979102000
+    },
+    "l15-s2-sort-01": {
+      "lesson": 15,
+      "kind": "sort",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789892707000,
+      "dueAt": 1789979107000
+    },
+    "l15-s2-sort-02": {
+      "lesson": 15,
+      "kind": "sort",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789892707000,
+      "dueAt": 1789979107000
+    },
+    "l15-s2-sort-03": {
+      "lesson": 15,
+      "kind": "sort",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789892707000,
+      "dueAt": 1789979107000
+    },
+    "l15-s2-sort-04": {
+      "lesson": 15,
+      "kind": "sort",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789892707000,
+      "dueAt": 1789979107000
+    },
+    "l15-s2-sort-05": {
+      "lesson": 15,
+      "kind": "sort",
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lastCorrect": true,
+      "lastAt": 1789892707000,
+      "dueAt": 1789979107000
+    }
+  },
+  "preferences": {
+    "lastLesson": 15,
+    "lastPart": "translation",
+    "rate": 0.75
+  },
+  "archive": {
+    "legacy": {
+      "schema": 2,
+      "lessons": {
+        "1": {
+          "choice": {
+            "draft": {
+              "l01-choice-01": 2,
+              "l01-choice-02": 0,
+              "l01-choice-03": 1,
+              "l01-choice-04": 3,
+              "l01-choice-05": 1
+            },
+            "orders": {
+              "l01-choice-01": [
+                3,
+                2,
+                1,
+                0
+              ],
+              "l01-choice-02": [
+                3,
+                2,
+                1,
+                0
+              ],
+              "l01-choice-03": [
+                3,
+                2,
+                1,
+                0
+              ],
+              "l01-choice-04": [
+                3,
+                2,
+                1,
+                0
+              ],
+              "l01-choice-05": [
+                3,
+                2,
+                1,
+                0
+              ]
+            },
+            "first": {
+              "answers": {
+                "l01-choice-01": 3,
+                "l01-choice-02": 1,
+                "l01-choice-03": 2,
+                "l01-choice-04": 0,
+                "l01-choice-05": 2
+              },
+              "results": {
+                "l01-choice-01": false,
+                "l01-choice-02": false,
+                "l01-choice-03": false,
+                "l01-choice-04": false,
+                "l01-choice-05": false
+              },
+              "correct": 0,
+              "total": 5,
+              "at": 1789891200000
+            },
+            "attempt": {
+              "answers": {
+                "l01-choice-01": 2,
+                "l01-choice-02": 0,
+                "l01-choice-03": 1,
+                "l01-choice-04": 3,
+                "l01-choice-05": 1
+              },
+              "results": {
+                "l01-choice-01": true,
+                "l01-choice-02": true,
+                "l01-choice-03": true,
+                "l01-choice-04": true,
+                "l01-choice-05": true
+              },
+              "correct": 5,
+              "total": 5,
+              "at": 1789891202000
+            },
+            "corrections": {},
+            "completed": true,
+            "history": [
+              {
+                "correct": 0,
+                "total": 5,
+                "at": 1789891200000
+              },
+              {
+                "correct": 5,
+                "total": 5,
+                "at": 1789891202000
+              }
+            ]
+          },
+          "sort": {
+            "draft": {
+              "l01-sort-01": [
+                0,
+                1,
+                2
+              ],
+              "l01-sort-02": [
+                0,
+                1,
+                2
+              ],
+              "l01-sort-03": [
+                0,
+                1
+              ],
+              "l01-sort-04": [
+                0,
+                1
+              ],
+              "l01-sort-05": [
+                0,
+                1
+              ]
+            },
+            "orders": {
+              "l01-sort-01": [
+                2,
+                1,
+                0
+              ],
+              "l01-sort-02": [
+                2,
+                1,
+                0
+              ],
+              "l01-sort-03": [
+                1,
+                0
+              ],
+              "l01-sort-04": [
+                1,
+                0
+              ],
+              "l01-sort-05": [
+                1,
+                0
+              ]
+            },
+            "first": {
+              "answers": {
+                "l01-sort-01": [
+                  0,
+                  2,
+                  1
+                ],
+                "l01-sort-02": [
+                  0,
+                  2,
+                  1
+                ],
+                "l01-sort-03": [
+                  0,
+                  1
+                ],
+                "l01-sort-04": [
+                  1,
+                  0
+                ],
+                "l01-sort-05": [
+                  1,
+                  0
+                ]
+              },
+              "results": {
+                "l01-sort-01": false,
+                "l01-sort-02": false,
+                "l01-sort-03": true,
+                "l01-sort-04": false,
+                "l01-sort-05": false
+              },
+              "correct": 1,
+              "total": 5,
+              "at": 1789891205000
+            },
+            "attempt": {
+              "answers": {
+                "l01-sort-01": [
+                  0,
+                  1,
+                  2
+                ],
+                "l01-sort-02": [
+                  0,
+                  1,
+                  2
+                ],
+                "l01-sort-03": [
+                  0,
+                  1
+                ],
+                "l01-sort-04": [
+                  0,
+                  1
+                ],
+                "l01-sort-05": [
+                  0,
+                  1
+                ]
+              },
+              "results": {
+                "l01-sort-01": true,
+                "l01-sort-02": true,
+                "l01-sort-03": true,
+                "l01-sort-04": true,
+                "l01-sort-05": true
+              },
+              "correct": 5,
+              "total": 5,
+              "at": 1789891207000
+            },
+            "corrections": {},
+            "completed": true,
+            "history": [
+              {
+                "correct": 1,
+                "total": 5,
+                "at": 1789891205000
+              },
+              {
+                "correct": 5,
+                "total": 5,
+                "at": 1789891207000
+              }
+            ]
+          },
+          "translation": {
+            "draft": {
+              "l01-translation-01": 2
+            },
+            "orders": {},
+            "first": {
+              "answers": {
+                "l01-translation-01": 3,
+                "l01-translation-02": 1,
+                "l01-translation-03": 0,
+                "l01-translation-04": 2,
+                "l01-translation-05": 1
+              },
+              "results": {
+                "l01-translation-01": false,
+                "l01-translation-02": false,
+                "l01-translation-03": false,
+                "l01-translation-04": false,
+                "l01-translation-05": false
+              },
+              "correct": 0,
+              "total": 5,
+              "at": 1789891210000
+            },
+            "attempt": null,
+            "corrections": {},
+            "completed": true,
+            "history": [
+              {
+                "correct": 0,
+                "total": 5,
+                "at": 1789891210000
+              },
+              {
+                "correct": 5,
+                "total": 5,
+                "at": 1789891212000
+              }
+            ]
+          },
+          "listening": {
+            "draft": {
+              "l01-listening-01": 1,
+              "l01-listening-02": 0,
+              "l01-listening-03": 2,
+              "l01-listening-04": 3,
+              "l01-listening-05": 1
+            },
+            "orders": {
+              "l01-listening-01": [
+                3,
+                2,
+                1,
+                0
+              ],
+              "l01-listening-02": [
+                3,
+                2,
+                1,
+                0
+              ],
+              "l01-listening-03": [
+                3,
+                2,
+                1,
+                0
+              ],
+              "l01-listening-04": [
+                3,
+                2,
+                1,
+                0
+              ],
+              "l01-listening-05": [
+                3,
+                2,
+                1,
+                0
+              ]
+            },
+            "first": {
+              "answers": {
+                "l01-listening-01": 2,
+                "l01-listening-02": 1,
+                "l01-listening-03": 3,
+                "l01-listening-04": 0,
+                "l01-listening-05": 2
+              },
+              "results": {
+                "l01-listening-01": false,
+                "l01-listening-02": false,
+                "l01-listening-03": false,
+                "l01-listening-04": false,
+                "l01-listening-05": false
+              },
+              "correct": 0,
+              "total": 5,
+              "at": 1789891215000
+            },
+            "attempt": {
+              "answers": {
+                "l01-listening-01": 1,
+                "l01-listening-02": 0,
+                "l01-listening-03": 2,
+                "l01-listening-04": 3,
+                "l01-listening-05": 1
+              },
+              "results": {
+                "l01-listening-01": true,
+                "l01-listening-02": true,
+                "l01-listening-03": true,
+                "l01-listening-04": true,
+                "l01-listening-05": true
+              },
+              "correct": 5,
+              "total": 5,
+              "at": 1789891217000
+            },
+            "corrections": {},
+            "completed": true,
+            "history": [
+              {
+                "correct": 0,
+                "total": 5,
+                "at": 1789891215000
+              },
+              {
+                "correct": 5,
+                "total": 5,
+                "at": 1789891217000
+              }
+            ]
+          }
+        },
+        "3": {
+          "choice": {
+            "draft": {
+              "l03-choice-01": 1
+            },
+            "orders": {},
+            "first": null,
+            "attempt": null,
+            "corrections": {},
+            "completed": false,
+            "history": []
+          },
+          "sort": {
+            "draft": {
+              "l03-sort-01": [
+                0
+              ]
+            },
+            "orders": {},
+            "first": null,
+            "attempt": null,
+            "corrections": {},
+            "completed": false,
+            "history": []
+          }
+        }
+      },
+      "words": {
+        "[\"不客气\",\"búkèqi\",\"không có gì; đáp lại lời cảm ơn\"]": {
+          "zh": "不客气",
+          "lastRating": "known",
+          "level": 1,
+          "due": 1789977600000,
+          "reviewedAt": 1789891200000,
+          "reviews": 1,
+          "lapses": 0,
+          "source": "self-assessment"
+        },
+        "[\"大家\",\"dàjiā\",\"mọi người\"]": {
+          "zh": "大家",
+          "lastRating": "again",
+          "level": 0,
+          "due": 1789891200000,
+          "reviewedAt": 1789891200000,
+          "reviews": 2,
+          "lapses": 1,
+          "source": "self-assessment"
+        }
+      },
+      "questionReviews": {
+        "l01-choice-01": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "choice",
+          "lastCorrect": true,
+          "lastAt": 1789891202000,
+          "dueAt": 1789977602000
+        },
+        "l01-choice-02": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "choice",
+          "lastCorrect": true,
+          "lastAt": 1789891202000,
+          "dueAt": 1789977602000
+        },
+        "l01-choice-03": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "choice",
+          "lastCorrect": true,
+          "lastAt": 1789891202000,
+          "dueAt": 1789977602000
+        },
+        "l01-choice-04": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "choice",
+          "lastCorrect": true,
+          "lastAt": 1789891202000,
+          "dueAt": 1789977602000
+        },
+        "l01-choice-05": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "choice",
+          "lastCorrect": true,
+          "lastAt": 1789891202000,
+          "dueAt": 1789977602000
+        },
+        "l01-sort-01": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "sort",
+          "lastCorrect": true,
+          "lastAt": 1789891207000,
+          "dueAt": 1789977607000
+        },
+        "l01-sort-02": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "sort",
+          "lastCorrect": true,
+          "lastAt": 1789891207000,
+          "dueAt": 1789977607000
+        },
+        "l01-sort-03": {
+          "streak": 2,
+          "attempts": 2,
+          "mistakes": 0,
+          "lesson": 1,
+          "kind": "sort",
+          "lastCorrect": true,
+          "lastAt": 1789891207000,
+          "dueAt": 1790150407000
+        },
+        "l01-sort-04": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "sort",
+          "lastCorrect": true,
+          "lastAt": 1789891207000,
+          "dueAt": 1789977607000
+        },
+        "l01-sort-05": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "sort",
+          "lastCorrect": true,
+          "lastAt": 1789891207000,
+          "dueAt": 1789977607000
+        },
+        "l01-translation-01": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "translation",
+          "lastCorrect": true,
+          "lastAt": 1789891212000,
+          "dueAt": 1789977612000
+        },
+        "l01-translation-02": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "translation",
+          "lastCorrect": true,
+          "lastAt": 1789891212000,
+          "dueAt": 1789977612000
+        },
+        "l01-translation-03": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "translation",
+          "lastCorrect": true,
+          "lastAt": 1789891212000,
+          "dueAt": 1789977612000
+        },
+        "l01-translation-04": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "translation",
+          "lastCorrect": true,
+          "lastAt": 1789891212000,
+          "dueAt": 1789977612000
+        },
+        "l01-translation-05": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "translation",
+          "lastCorrect": true,
+          "lastAt": 1789891212000,
+          "dueAt": 1789977612000
+        },
+        "l01-listening-01": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "listening",
+          "lastCorrect": true,
+          "lastAt": 1789891217000,
+          "dueAt": 1789977617000
+        },
+        "l01-listening-02": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "listening",
+          "lastCorrect": true,
+          "lastAt": 1789891217000,
+          "dueAt": 1789977617000
+        },
+        "l01-listening-03": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "listening",
+          "lastCorrect": true,
+          "lastAt": 1789891217000,
+          "dueAt": 1789977617000
+        },
+        "l01-listening-04": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "listening",
+          "lastCorrect": true,
+          "lastAt": 1789891217000,
+          "dueAt": 1789977617000
+        },
+        "l01-listening-05": {
+          "streak": 1,
+          "attempts": 2,
+          "mistakes": 1,
+          "lesson": 1,
+          "kind": "listening",
+          "lastCorrect": true,
+          "lastAt": 1789891217000,
+          "dueAt": 1789977617000
+        }
+      },
+      "preferences": {
+        "lastLesson": 3,
+        "rate": 0.75,
+        "listenLessons": [
+          1,
+          3
+        ],
+        "vocab": {
+          "lessons": [
+            1,
+            3
+          ],
+          "direction": "vn-zh",
+          "pinyin": false,
+          "filter": "due",
+          "search": "",
+          "session": {
+            "queue": [
+              "[\"不客气\",\"búkèqi\",\"không có gì; đáp lại lời cảm ơn\"]",
+              "[\"大家\",\"dàjiā\",\"mọi người\"]"
+            ],
+            "index": 1,
+            "direction": "vn-zh",
+            "lessons": [
+              1,
+              3
+            ],
+            "revealed": true,
+            "remembered": 1,
+            "retries": [],
+            "started": 1789891200000
+          }
+        },
+        "listenSession": {
+          "version": 1,
+          "ids": [
+            "l01-listening-01",
+            "l01-listening-02",
+            "l01-listening-03"
+          ],
+          "index": 1,
+          "answers": {
+            "l01-listening-01": 1
+          },
+          "orders": {
+            "l01-listening-01": [
+              1,
+              3,
+              0,
+              2
+            ],
+            "l01-listening-02": [
+              2,
+              0,
+              3,
+              1
+            ]
+          },
+          "draft": {
+            "l01-listening-02": 1
+          }
+        }
+      },
+      "updatedAt": 1789891218000
+    },
+    "migration": {
+      "sourceSchema": 2,
+      "at": 1789891200000,
+      "restoredGroups": [],
+      "draftOnlyGroups": [
+        "3:choice",
+        "3:sort"
+      ],
+      "heldGroups": [],
+      "archivedTranslationLessons": [
+        "1"
+      ],
+      "warnings": []
+    }
+  },
+  "updatedAt": 1789892800000
+}

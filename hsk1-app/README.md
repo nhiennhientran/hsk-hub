@@ -1,6 +1,6 @@
 # HSK 1 重构工程
 
-第1步冻结需求与源数据；第2步建立统一入口、导航、会话gate和模块生命周期。当前7个模块是明确标注的预览入口，完整练习与保存尚未接入。生产入口仍使用原目录。
+第1步冻结需求与源数据；第2步建立统一入口、导航、会话gate和模块生命周期；第3步完成公共保存、备份恢复及旧记录迁移。当前学习模块仍为预览；在“Tiến độ”点击“Quản lý dữ liệu và bản sao lưu”可使用真实数据管理。完整练习视图按后续步骤接入，生产入口仍使用原目录。
 
 ## 运行
 
@@ -10,8 +10,8 @@
 cd hsk1-app
 npm ci
 npm run catalog:check
+npm run fixtures:check
 npm test
-npm run test:legacy
 npm run build
 npm run dev
 ```
@@ -26,9 +26,17 @@ npm run test:smoke
 npm run test:repro
 ```
 
-`test:smoke` 在Chromium/WebKit运行10个导航/会话/生命周期场景，结果写入 `.repro-output/step2-browser.json`；使用 `-- --project=chromium` 可定向运行。`npm test` 和 `test:smoke` 从原公开静态gate注入兼容验收口令，日志不输出口令；也支持环境变量 `HSK_TEST_PASSWORD` 覆盖，不省略正确口令检查。
+`test:smoke` 在Chromium/WebKit各运行16个场景（10个外壳回归、6个非空数据/恢复/故障场景），结果写入 `.repro-output/step3-browser.json`；使用 `-- --project=chromium` 可定向运行。`npm test` 和 `test:smoke` 从原公开静态gate注入兼容验收口令，日志不输出口令；也支持环境变量 `HSK_TEST_PASSWORD` 覆盖，不省略正确口令检查。
 
 `test:repro` 仍针对未修改的旧页面，控制延迟 `stage3/app.js`，确认原初始化窗口；不是新外壳回归。默认输出 `.repro-output/init-race.json`，可加 `-- --browser=webkit`。兼容Chromium可通过 `HSK_BROWSER_PATH` 指定，仅应用于Chromium项目。
+
+`fixtures:check`核对12个固定时间、匿名非空旧格式样本；只有显式`fixtures:generate`才重生成。`test:legacy`是第1步旧纯引擎证据的复核工具，旧源码未变时不用每步重复运行。
+
+## 数据与维护
+
+新记录用`ran_hsk1_modular_v1`，导入/迁移必须预览并确认；当前记录及一份恢复快照同一次写入。原11个旧学习键保持不变，会话gate不进入备份。相同origin的新应用tab通过Web Locks协调写入；不支持安全锁时仅查看/下载，不用不安全读写冒充原子更新。
+
+公共服务为`src/services/storage/index.ts`；格式适配与校验为`compatibility.ts`，純规则位于`src/domain/homework`和`practice`。已保存、未保存、冲突、损坏状态分开。失败时可下载当前内存稿，导入失败可另下载预览候选；损坏主记录提供原字符串下载。服务API、容量和兼容限制见`docs/storage-contract.md`，本步证据见`docs/step3-acceptance.md`。
 
 ## 接续依据
 

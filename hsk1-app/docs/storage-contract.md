@@ -1,6 +1,6 @@
-# 存储兼容契约（第1步定义）
+# 存储兼容契约
 
-适用旧基线 `71b39192133c82f684384f450dda6079d3253440`。以下来自实际源码字段，不按键名后缀猜schema。**本步只定义旧格式、保护规则和非空样本规格；未生成migration fixtures，未实现或验收新应用迁移。** 第3步生成样本并实现/验证，跨模块及故障在第8步复测。
+适用旧基线 `71b39192133c82f684384f450dda6079d3253440`。第1步从实际源码定义旧格式；第3步已实现新容器、校验/迁移/备份及12份匿名非空样本。按实际身份校验，不按键名后缀猜schema。完整作答界面与输入保存仍在第4—7步接入，跨模块及故障在第8步复测。本步证据见`step3-acceptance.md`。
 
 ## 实际键与身份
 
@@ -65,13 +65,13 @@ stage3的 `preferences` 仅支持 `module,lessons,listeningMode,vocabularyFilter
 3. learning_v2仅对当前bank显式 `legacyCompatible=true` 且完整可核定的choice/sort/listening迁移；不满足时只保留有效草稿或归档。旧translation选择记录完整归档，**新free translation保持未提交**，不能填答案、成绩、completed或截图稿。
 4. 既有stage2迁移 `archive.legacy/migration`、`archive.step1/step1Migration` 是来源保留结构；新迁移继续解释来源且避免层层重复拷贝。stage1只接受原schema3（app缺省或hsk1-stage1）、仅第3课，并校验真实题号/指纹。
 5. stage3使用app/schema、question/sense身份与会话指纹核对。不可把stage2 listening历史直接当stage3独立题成绩，也不可用“同课次”推断题义相同。
-6. 导入流程：读取→检查/预览→确认当前状态和预览版本未改变→保留导入前恢复副本→替换对应领域。错误应用/schema、未知ID、篡改答案/分数/指纹、损坏JSON均不改当前记录。
+6. 导入流程：读取→检查/预览→确认当前状态和预览版本未改变→保留导入前恢复副本→替换对应领域。新统一备份的错误应用/schema、未知ID、非法或不完整答案、指纹不匹配和与重算不符的派生评分均拒绝。旧领域备份沿原规则重算并明确警告；不能靠无签名本地JSON识别“合法答案与合法评分同时被改”的来源真实性。旧单领域导入只替换所属领域，新完整备份明确替换所有学习领域。
 7. 保存失败/双tab冲突时停止覆盖、显示真实未保存状态，内存稿可导出；不能显示假成功。恢复副本也可能因quota失败，需明确内存副本限制。先前stage2 192MiB、stage3 4MiB等校验边界是现有兼容事实，新公共层不能无说明缩小已支持合法记录。
 8. 自动保存/备份只保存本地状态；“已保存”不表示老师收到。会话gate按session语义处理，不随进度备份导入恢复。
 
-## 非空样本规格（待第3步生成与验收）
+## 非空样本（第3步已生成）
 
-以下是样本计划，当前未生成fixture文件、未测试迁移。第3步用固定时间、匿名合成输入与当前核定ID建立可重跑fixtures；实际学生数据需保留raw且不作为公开测试制品。
+以下样本已使用固定时间、匿名合成输入及当前核定ID生成到`tests/fixtures/migration/`；共12件，索引/容量/SHA256见`manifest.json`。`fixtures:check`默认只核对，显式`fixtures:generate`才重生成。实际学生数据保留raw，不能作为公开测试制品。样本未模拟新学习UI的全部输入/媒体行为。
 
 | 样本组 | 必须有的非空状态 | 验收重点 |
 |---|---|---|
@@ -83,4 +83,22 @@ stage3的 `preferences` 仅支持 `module,lessons,listeningMode,vocabularyFilter
 | integrated_nav/gate | 第10课translation继续位置、听力/词卡选择；解锁和未解锁会话分别测 | 旧URL继续位置可核对；gate不混入学习备份、不转永久解锁 |
 | 故障与恢复 | 损坏JSON、错误app/schema、未知ID/改指纹、非法题答、stale预览、双tab、quota/禁止存储 | 原raw与当前稿不损坏；拒绝/未保存提示准确；能导出/恢复；不假设空数据 |
 
-样本通过与新版浏览器恢复证据附到需求R018/R019/R021/R034/R035/R036；第1步只交付这份契约，不能把“已定义非空样本”改写为“已完成非空迁移测试”。
+样本通过与新版浏览器恢复证据附到需求R018/R019/R021/R030/R034/R035/R036；各项仅记录本步存储范围的部分验证，不将保存服务通过扩写为完整学习UI、中文IME或实体设备通过。
+
+## 新容器与公共接口（第3步实现）
+
+| 位置/格式 | 字段与行为 |
+|---|---|
+| localStorage `ran_hsk1_modular_v1` | `{app:"hsk1-modular",schema:1,revision,updatedAt,data,recovery}`；旧键不修改 |
+| `data` | 独立`reading{lessons,mastered,modules}`、`homework`(stage2规则状态)、`practice`(stage3规则状态)、`navigation`及`legacyRaw{真实旧键:原字符串}` |
+| `recovery` | `null`或`{data,revision,updatedAt,reason}`；保留替换前完整当前稿，不复制上一次recovery；恢复同样保留恢复前稿，因此可切回 |
+| 新JSON备份 | `{app:"hsk1-modular-backup",schema:1,exportedAt,data}`；导出当前内存数据，不混入session或gate |
+| 旧恢复/previous键 | 校验并在legacyRaw逐字节保留；不自动替代损坏主来源 |
+
+`createStore({storage,blank,validate,lock,now?})`负责通用持久化，不解析领域题目。`snapshot`读取独立副本，`edit`校验本地变化，`save`在锁内写入；`previewBackup`/`previewReplacement`建立候选，`confirm`再次检查本地editVersion及原raw，`restore`恢复一层快照。`exportBackup`导出当前内存稿，`exportPreview`导出尚未成功保存的候选，`exportOriginal`下载损坏主记录。`observeExternalChange`只报告冲突，不自动覆盖内存稿；`reloadDiscardingDraft`明确弃稿重读；`dispose`阻止等待锁的晚写入。
+
+写锁名为`ran-hsk1-modular-write`。Web Locks串行协调使用该锁的同origin新应用tab；不能阻止DevTools或其他不合作写入者。锁内比较完整raw，不能仅看revision；一次setItem同时提交current/recovery，写后核对完整字符串。异常时不rollback、不清旧键、不去掉恢复副本再冒险重写。不支持锁时仅查看/导出，存储读取拒绝或损坏主记录阻止覆盖。跨origin依靠显式备份导入，不是云同步或老师收到了。
+
+容量沿领域规则：homework为192MiB，practice为4MiB；legacyRaw每一来源按旧格式上界核验，不给组合容器另设更小总限，不宣称真实localStorage有同等容量。实际配额失败保留内存稿/候选，恢复副本也可能使写入超额，不能返回假成功。
+
+当前旧bank的10个`legacyCompatible=true`标记，仅8个与旧题实际身份一致；L3 choice03/sort03题干已变。适配层增加旧身份manifest核验，不改冻结content、不重出题；这两组不能迁移完整成绩，只保留核定一致的草稿及原来源。未知题意或词义不按相同ID/词形推断。首次/最近由提交快照定义，不以系统时间戳单调排序重新推断（系统时钟可能回拨）。

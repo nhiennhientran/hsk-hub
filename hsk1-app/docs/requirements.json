@@ -3,17 +3,18 @@
   "title": "HSK1 模块化改造需求与验收矩阵",
   "baseline": {
     "sourceCommit": "71b39192133c82f684384f450dda6079d3253440",
-    "workBranch": "work/hsk1-modular-step2-20261001",
+    "workBranch": "work/hsk1-modular-step3-20261001",
     "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
     "independentStep2Commit": "2c6d3b38866dcfbcf101974302609c470f1d2443",
     "independentStep3Commit": "de823050e97cbab64144197f3bf9241321b73c59",
     "first8CandidateCommit": "8ffecf1031abb52b863c6a05b38f24a8ae5c2af6",
-    "step2StartCommit": "7f2e012e4eeecec5ccc868ddef96b2da28c3ab21"
+    "step2StartCommit": "7f2e012e4eeecec5ccc868ddef96b2da28c3ab21",
+    "step3StartCommit": "1ad97b223c89a7c9183f7f09763d3d9c5139a69e"
   },
   "scope": {
-    "currentStep": 2,
+    "currentStep": 3,
     "authorizedStepsThisTurn": [
-      2
+      3
     ],
     "runtimeChanged": true,
     "productionPublished": false,
@@ -70,7 +71,7 @@
     "code": "第1步只读基线代码可见实现；新增应用的实际验证以stepEvidence及limits为准。",
     "architecture": "目标契约已确认；新增实现与行为验收按各步骤stepEvidence及limits登记。",
     "scope": "用户确认的范围与验收条件；未登记通过的目标功能仍待执行。",
-    "acceptance": "默认待验收；第2步仅6项具有受限部分验证，范围以stepEvidence及limits为准。旧阶段证据不得自动继承为新应用通过。"
+    "acceptance": "默认待验收；第2/3步仅在各项stepEvidence及limits明确范围内部分验证。旧阶段证据不得自动继承为新应用通过。"
   },
   "requirements": [
     {
@@ -446,7 +447,15 @@
       ],
       "acceptance": "先错后对/多次重做/刷新/备份导入；首次保持原答和分数、最近变化；相容迁移不得伪造first。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 3,
+          "status": "passed_for_step3_scope",
+          "report": "docs/step3-acceptance.md",
+          "limits": "仅非空提交first/latest/history迁移、备份恢复与服务规则；实际重做/订正UI待第4/6/7步。"
+        }
+      ]
     },
     {
       "id": "R019",
@@ -466,7 +475,15 @@
       ],
       "acceptance": "提交A→重做写未完B→开截图仍为A；刷新/切课/导入后两份分别恢复；再次提交才更新提交稿。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 3,
+          "status": "passed_for_step3_scope",
+          "report": "docs/step3-acceptance.md",
+          "limits": "提交中文稿A与未完草稿B分离、长文换行及备份恢复已核定；截图视图/真实编辑待第4步。"
+        }
+      ]
     },
     {
       "id": "R020",
@@ -507,7 +524,15 @@
       ],
       "acceptance": "1500字符中越混排+换行/输入中切换恢复；超长边界；composition流程模拟与真实手机中文输入分别记录。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 3,
+          "status": "passed_for_step3_scope",
+          "report": "docs/step3-acceptance.md",
+          "limits": "存储服务保留输入原文及换行、失败可导出；实际自动保存触发/IME/手机输入仍待第4/8步。"
+        }
+      ]
     },
     {
       "id": "R022",
@@ -679,7 +704,15 @@
       ],
       "acceptance": "固定时钟核对再次/困难/熟悉、重复自评、到期/早复习；重进会话和备份恢复；不扩成复杂自适应算法。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 3,
+          "status": "passed_for_step3_scope",
+          "report": "docs/step3-acceptance.md",
+          "limits": "非空三档schedule/部分review及不同senseId恢复，纯规则正文保留；复习UI与早复习完整流程待第7步。"
+        }
+      ]
     },
     {
       "id": "R031",
@@ -761,14 +794,22 @@
         "stage3/app.js"
       ],
       "targetLocations": [
-        "src/services/storage/",
-        "src/services/storage/backup.ts",
-        "src/domain/migrations/",
+        "src/services/storage/index.ts",
+        "src/services/storage/compatibility.ts",
+        "src/features/progress/data-panel.ts",
         "docs/storage-contract.md"
       ],
       "acceptance": "旧教材读星标、learning_v2、stage1_v3、stage2_v3、stage3_v1非空样本；导出→新环境恢复；旧翻译选择只能归档。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 3,
+          "status": "passed_for_step3_scope",
+          "report": "docs/step3-acceptance.md",
+          "limits": "保存/预览/恢复/旧非空迁移与新环境真实下载导入通过；练习输入自动保存调用随第4/6/7步接入。"
+        }
+      ]
     },
     {
       "id": "R035",
@@ -784,13 +825,22 @@
         "stage3/engine.js"
       ],
       "targetLocations": [
-        "src/services/storage/",
-        "src/services/storage/backup.ts",
-        "src/domain/migrations/"
+        "src/services/storage/index.ts",
+        "src/services/storage/compatibility.ts",
+        "src/features/progress/data-panel.ts",
+        "docs/storage-contract.md"
       ],
       "acceptance": "故意故障注入后前后数据哈希和恢复路径；不显示假保存成功；在内存中保留未保存内容并可导出。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 3,
+          "status": "passed_for_step3_scope",
+          "report": "docs/step3-acceptance.md",
+          "limits": "通用故障、stale预览、真实合作双tab、原raw保护与quota/denied API故障注入通过；第8步全功能故障复测及实际设备仍待执行。"
+        }
+      ]
     },
     {
       "id": "R036",
@@ -819,6 +869,12 @@
           "status": "passed_for_step2_scope",
           "report": "docs/step2-acceptance.md",
           "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        },
+        {
+          "step": 3,
+          "status": "passed_for_step3_scope",
+          "report": "docs/step3-acceptance.md",
+          "limits": "学习备份排除会话gate，新环境仍需正常口令；生产正式域发布待第9步。"
         }
       ]
     },

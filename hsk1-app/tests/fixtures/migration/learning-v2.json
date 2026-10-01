@@ -1,0 +1,683 @@
+{
+  "schema": 2,
+  "lessons": {
+    "1": {
+      "choice": {
+        "draft": {
+          "l01-choice-01": 2,
+          "l01-choice-02": 0,
+          "l01-choice-03": 1,
+          "l01-choice-04": 3,
+          "l01-choice-05": 1
+        },
+        "orders": {
+          "l01-choice-01": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-choice-02": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-choice-03": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-choice-04": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-choice-05": [
+            3,
+            2,
+            1,
+            0
+          ]
+        },
+        "first": {
+          "answers": {
+            "l01-choice-01": 3,
+            "l01-choice-02": 1,
+            "l01-choice-03": 2,
+            "l01-choice-04": 0,
+            "l01-choice-05": 2
+          },
+          "results": {
+            "l01-choice-01": false,
+            "l01-choice-02": false,
+            "l01-choice-03": false,
+            "l01-choice-04": false,
+            "l01-choice-05": false
+          },
+          "correct": 0,
+          "total": 5,
+          "at": 1789891200000
+        },
+        "attempt": {
+          "answers": {
+            "l01-choice-01": 2,
+            "l01-choice-02": 0,
+            "l01-choice-03": 1,
+            "l01-choice-04": 3,
+            "l01-choice-05": 1
+          },
+          "results": {
+            "l01-choice-01": true,
+            "l01-choice-02": true,
+            "l01-choice-03": true,
+            "l01-choice-04": true,
+            "l01-choice-05": true
+          },
+          "correct": 5,
+          "total": 5,
+          "at": 1789891202000
+        },
+        "corrections": {},
+        "completed": true,
+        "history": [
+          {
+            "correct": 0,
+            "total": 5,
+            "at": 1789891200000
+          },
+          {
+            "correct": 5,
+            "total": 5,
+            "at": 1789891202000
+          }
+        ]
+      },
+      "sort": {
+        "draft": {
+          "l01-sort-01": [
+            0,
+            1,
+            2
+          ],
+          "l01-sort-02": [
+            0,
+            1,
+            2
+          ],
+          "l01-sort-03": [
+            0,
+            1
+          ],
+          "l01-sort-04": [
+            0,
+            1
+          ],
+          "l01-sort-05": [
+            0,
+            1
+          ]
+        },
+        "orders": {
+          "l01-sort-01": [
+            2,
+            1,
+            0
+          ],
+          "l01-sort-02": [
+            2,
+            1,
+            0
+          ],
+          "l01-sort-03": [
+            1,
+            0
+          ],
+          "l01-sort-04": [
+            1,
+            0
+          ],
+          "l01-sort-05": [
+            1,
+            0
+          ]
+        },
+        "first": {
+          "answers": {
+            "l01-sort-01": [
+              0,
+              2,
+              1
+            ],
+            "l01-sort-02": [
+              0,
+              2,
+              1
+            ],
+            "l01-sort-03": [
+              0,
+              1
+            ],
+            "l01-sort-04": [
+              1,
+              0
+            ],
+            "l01-sort-05": [
+              1,
+              0
+            ]
+          },
+          "results": {
+            "l01-sort-01": false,
+            "l01-sort-02": false,
+            "l01-sort-03": true,
+            "l01-sort-04": false,
+            "l01-sort-05": false
+          },
+          "correct": 1,
+          "total": 5,
+          "at": 1789891205000
+        },
+        "attempt": {
+          "answers": {
+            "l01-sort-01": [
+              0,
+              1,
+              2
+            ],
+            "l01-sort-02": [
+              0,
+              1,
+              2
+            ],
+            "l01-sort-03": [
+              0,
+              1
+            ],
+            "l01-sort-04": [
+              0,
+              1
+            ],
+            "l01-sort-05": [
+              0,
+              1
+            ]
+          },
+          "results": {
+            "l01-sort-01": true,
+            "l01-sort-02": true,
+            "l01-sort-03": true,
+            "l01-sort-04": true,
+            "l01-sort-05": true
+          },
+          "correct": 5,
+          "total": 5,
+          "at": 1789891207000
+        },
+        "corrections": {},
+        "completed": true,
+        "history": [
+          {
+            "correct": 1,
+            "total": 5,
+            "at": 1789891205000
+          },
+          {
+            "correct": 5,
+            "total": 5,
+            "at": 1789891207000
+          }
+        ]
+      },
+      "translation": {
+        "draft": {
+          "l01-translation-01": 2
+        },
+        "orders": {},
+        "first": {
+          "answers": {
+            "l01-translation-01": 3,
+            "l01-translation-02": 1,
+            "l01-translation-03": 0,
+            "l01-translation-04": 2,
+            "l01-translation-05": 1
+          },
+          "results": {
+            "l01-translation-01": false,
+            "l01-translation-02": false,
+            "l01-translation-03": false,
+            "l01-translation-04": false,
+            "l01-translation-05": false
+          },
+          "correct": 0,
+          "total": 5,
+          "at": 1789891210000
+        },
+        "attempt": null,
+        "corrections": {},
+        "completed": true,
+        "history": [
+          {
+            "correct": 0,
+            "total": 5,
+            "at": 1789891210000
+          },
+          {
+            "correct": 5,
+            "total": 5,
+            "at": 1789891212000
+          }
+        ]
+      },
+      "listening": {
+        "draft": {
+          "l01-listening-01": 1,
+          "l01-listening-02": 0,
+          "l01-listening-03": 2,
+          "l01-listening-04": 3,
+          "l01-listening-05": 1
+        },
+        "orders": {
+          "l01-listening-01": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-listening-02": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-listening-03": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-listening-04": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "l01-listening-05": [
+            3,
+            2,
+            1,
+            0
+          ]
+        },
+        "first": {
+          "answers": {
+            "l01-listening-01": 2,
+            "l01-listening-02": 1,
+            "l01-listening-03": 3,
+            "l01-listening-04": 0,
+            "l01-listening-05": 2
+          },
+          "results": {
+            "l01-listening-01": false,
+            "l01-listening-02": false,
+            "l01-listening-03": false,
+            "l01-listening-04": false,
+            "l01-listening-05": false
+          },
+          "correct": 0,
+          "total": 5,
+          "at": 1789891215000
+        },
+        "attempt": {
+          "answers": {
+            "l01-listening-01": 1,
+            "l01-listening-02": 0,
+            "l01-listening-03": 2,
+            "l01-listening-04": 3,
+            "l01-listening-05": 1
+          },
+          "results": {
+            "l01-listening-01": true,
+            "l01-listening-02": true,
+            "l01-listening-03": true,
+            "l01-listening-04": true,
+            "l01-listening-05": true
+          },
+          "correct": 5,
+          "total": 5,
+          "at": 1789891217000
+        },
+        "corrections": {},
+        "completed": true,
+        "history": [
+          {
+            "correct": 0,
+            "total": 5,
+            "at": 1789891215000
+          },
+          {
+            "correct": 5,
+            "total": 5,
+            "at": 1789891217000
+          }
+        ]
+      }
+    },
+    "3": {
+      "choice": {
+        "draft": {
+          "l03-choice-01": 1
+        },
+        "orders": {},
+        "first": null,
+        "attempt": null,
+        "corrections": {},
+        "completed": false,
+        "history": []
+      },
+      "sort": {
+        "draft": {
+          "l03-sort-01": [
+            0
+          ]
+        },
+        "orders": {},
+        "first": null,
+        "attempt": null,
+        "corrections": {},
+        "completed": false,
+        "history": []
+      }
+    }
+  },
+  "words": {
+    "[\"不客气\",\"búkèqi\",\"không có gì; đáp lại lời cảm ơn\"]": {
+      "zh": "不客气",
+      "lastRating": "known",
+      "level": 1,
+      "due": 1789977600000,
+      "reviewedAt": 1789891200000,
+      "reviews": 1,
+      "lapses": 0,
+      "source": "self-assessment"
+    },
+    "[\"大家\",\"dàjiā\",\"mọi người\"]": {
+      "zh": "大家",
+      "lastRating": "again",
+      "level": 0,
+      "due": 1789891200000,
+      "reviewedAt": 1789891200000,
+      "reviews": 2,
+      "lapses": 1,
+      "source": "self-assessment"
+    }
+  },
+  "questionReviews": {
+    "l01-choice-01": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "choice",
+      "lastCorrect": true,
+      "lastAt": 1789891202000,
+      "dueAt": 1789977602000
+    },
+    "l01-choice-02": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "choice",
+      "lastCorrect": true,
+      "lastAt": 1789891202000,
+      "dueAt": 1789977602000
+    },
+    "l01-choice-03": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "choice",
+      "lastCorrect": true,
+      "lastAt": 1789891202000,
+      "dueAt": 1789977602000
+    },
+    "l01-choice-04": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "choice",
+      "lastCorrect": true,
+      "lastAt": 1789891202000,
+      "dueAt": 1789977602000
+    },
+    "l01-choice-05": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "choice",
+      "lastCorrect": true,
+      "lastAt": 1789891202000,
+      "dueAt": 1789977602000
+    },
+    "l01-sort-01": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "sort",
+      "lastCorrect": true,
+      "lastAt": 1789891207000,
+      "dueAt": 1789977607000
+    },
+    "l01-sort-02": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "sort",
+      "lastCorrect": true,
+      "lastAt": 1789891207000,
+      "dueAt": 1789977607000
+    },
+    "l01-sort-03": {
+      "streak": 2,
+      "attempts": 2,
+      "mistakes": 0,
+      "lesson": 1,
+      "kind": "sort",
+      "lastCorrect": true,
+      "lastAt": 1789891207000,
+      "dueAt": 1790150407000
+    },
+    "l01-sort-04": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "sort",
+      "lastCorrect": true,
+      "lastAt": 1789891207000,
+      "dueAt": 1789977607000
+    },
+    "l01-sort-05": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "sort",
+      "lastCorrect": true,
+      "lastAt": 1789891207000,
+      "dueAt": 1789977607000
+    },
+    "l01-translation-01": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "translation",
+      "lastCorrect": true,
+      "lastAt": 1789891212000,
+      "dueAt": 1789977612000
+    },
+    "l01-translation-02": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "translation",
+      "lastCorrect": true,
+      "lastAt": 1789891212000,
+      "dueAt": 1789977612000
+    },
+    "l01-translation-03": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "translation",
+      "lastCorrect": true,
+      "lastAt": 1789891212000,
+      "dueAt": 1789977612000
+    },
+    "l01-translation-04": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "translation",
+      "lastCorrect": true,
+      "lastAt": 1789891212000,
+      "dueAt": 1789977612000
+    },
+    "l01-translation-05": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "translation",
+      "lastCorrect": true,
+      "lastAt": 1789891212000,
+      "dueAt": 1789977612000
+    },
+    "l01-listening-01": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "listening",
+      "lastCorrect": true,
+      "lastAt": 1789891217000,
+      "dueAt": 1789977617000
+    },
+    "l01-listening-02": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "listening",
+      "lastCorrect": true,
+      "lastAt": 1789891217000,
+      "dueAt": 1789977617000
+    },
+    "l01-listening-03": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "listening",
+      "lastCorrect": true,
+      "lastAt": 1789891217000,
+      "dueAt": 1789977617000
+    },
+    "l01-listening-04": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "listening",
+      "lastCorrect": true,
+      "lastAt": 1789891217000,
+      "dueAt": 1789977617000
+    },
+    "l01-listening-05": {
+      "streak": 1,
+      "attempts": 2,
+      "mistakes": 1,
+      "lesson": 1,
+      "kind": "listening",
+      "lastCorrect": true,
+      "lastAt": 1789891217000,
+      "dueAt": 1789977617000
+    }
+  },
+  "preferences": {
+    "lastLesson": 3,
+    "rate": 0.75,
+    "listenLessons": [
+      1,
+      3
+    ],
+    "vocab": {
+      "lessons": [
+        1,
+        3
+      ],
+      "direction": "vn-zh",
+      "pinyin": false,
+      "filter": "due",
+      "search": "",
+      "session": {
+        "queue": [
+          "[\"不客气\",\"búkèqi\",\"không có gì; đáp lại lời cảm ơn\"]",
+          "[\"大家\",\"dàjiā\",\"mọi người\"]"
+        ],
+        "index": 1,
+        "direction": "vn-zh",
+        "lessons": [
+          1,
+          3
+        ],
+        "revealed": true,
+        "remembered": 1,
+        "retries": [],
+        "started": 1789891200000
+      }
+    },
+    "listenSession": {
+      "version": 1,
+      "ids": [
+        "l01-listening-01",
+        "l01-listening-02",
+        "l01-listening-03"
+      ],
+      "index": 1,
+      "answers": {
+        "l01-listening-01": 1
+      },
+      "orders": {
+        "l01-listening-01": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "l01-listening-02": [
+          2,
+          0,
+          3,
+          1
+        ]
+      },
+      "draft": {
+        "l01-listening-02": 1
+      }
+    }
+  },
+  "updatedAt": 1789891218000
+}
