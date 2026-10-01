@@ -18,7 +18,7 @@ module.exports=async function(A){
   }
  });
  await check('Corrected textbook line and word segment mappings are actually used by the original player',async()=>{
-  await open(page,'lesson.html?id=3&sec=text');await page.locator('#sceneSelect').selectOption('1');
+  await open(page,'lesson.html?id=3&sec=text');await page.locator('#sceneTabs .scene-tab[data-i="1"]').click();
   const expected=[[0.204,1.65],[1.75,3.873],[3.873,7.246],[7.246,9.653]];
   assert.equal(await page.locator('#scenePane .speak-line').count(),4);
   report.textbookPlayback=[];
@@ -62,6 +62,12 @@ module.exports=async function(A){
   await p.locator('#question-list [data-question]').first().waitFor();assert.equal(await p.locator('#question-list [data-question]').count(),75);assert.match(await p.locator('#review-count').innerText(),/^0\/75/);
   await p.locator('#question-list [data-question]').first().click();await p.locator('#play-audio').click();await p.waitForFunction(()=>document.getElementById('lesson-audio').ended,null,{timeout:15000});
   await p.locator('#device').fill('Synthetic review test - not a real phone');const wait=p.waitForEvent('download');await p.locator('#export-review').click();const d=await wait,dest=file('human-review-test.json');await d.saveAs(dest);const data=JSON.parse(fs.readFileSync(dest,'utf8'));assert.equal(data.unchecked.length,75);assert.equal(Object.keys(data.items).length,0);assert.equal(await p.locator('[data-device]').count(),9);await screenshot(p,'human-review-page',false);
+ });
+
+ await check('Local storage access denied: visible warning, usable answers and export',async()=>{
+  const c=await newContext();await c.addInitScript(()=>{if(location.protocol!=='http:')return;Object.defineProperty(window,'localStorage',{get(){throw new DOMException('Injected access denial','SecurityError');}});});
+  const p=await c.newPage();await open(p,'learning.html?mode=homework&lesson=1');await homeworkReady(p);await p.locator('#storage-notice').waitFor();
+  const q=BANK[0].choice[0];await p.locator(`[data-option="${q.id}"][data-index="${q.answer}"]`).click();const dest=await backup(p,false,'storage-access-denied');assert.equal(JSON.parse(fs.readFileSync(dest,'utf8')).lessons[1].choice.draft[q.id],q.answer);
  });
 
 };

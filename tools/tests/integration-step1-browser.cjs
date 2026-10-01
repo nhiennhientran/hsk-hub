@@ -29,7 +29,17 @@ async function newContext(options={}){
   p.on('dialog',d=>d.accept());
  });return c;
 }
-async function open(p,relative){await p.goto(BASE+relative,{waitUntil:'domcontentloaded'});const o=p.locator('#pwOverlay');if(await o.isVisible().catch(()=>false)){await p.locator('#pwInput').fill('Ranlaoshimeimei');await p.locator('#pwBtn').click();await o.waitFor({state:'hidden'});}}
+async function open(p,relative){
+ await p.goto(BASE+relative,{waitUntil:'domcontentloaded'});const o=p.locator('#pwOverlay');
+ if(await o.isVisible().catch(()=>false)){await p.locator('#pwInput').fill('Ranlaoshimeimei');await p.locator('#pwBtn').click();await o.waitFor({state:'hidden'});}
+ // Rendered module ready: a static placeholder button is not a completed app.
+ const url=new URL(p.url());if(url.pathname.endsWith('/learning.html')){
+  const mode=url.searchParams.get('mode')||'homework';
+  if(mode==='homework')await p.locator('#lesson-list [data-lesson="15"]').waitFor();
+  else if(mode==='progress')await p.locator('.integrated-progress-table').waitFor();
+  else {await p.locator('#lesson-checks input[data-lesson="15"]').waitFor({state:'attached'});await p.waitForFunction(()=>document.getElementById('selection-summary').textContent.trim().length>0);}
+ }
+}
 async function homeworkReady(p){await p.locator('#lesson-list [data-lesson="15"]').waitFor();}
 async function saved(p,key=E2.KEY){await p.waitForTimeout(240);await p.waitForFunction(k=>{const n=document.getElementById('save-status');return !!localStorage.getItem(k)&&n&&/Đã lưu/.test(n.textContent);},key);}
 async function state(p,key){return p.evaluate(k=>JSON.parse(localStorage.getItem(k)||'null'),key);}
