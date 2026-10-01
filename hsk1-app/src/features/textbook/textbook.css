@@ -1,0 +1,45 @@
+.textbook { color: #173c31; }
+.textbook button:disabled { cursor: default; }
+.textbook h3, .textbook h4, .textbook label, .textbook small, .textbook button { overflow-wrap: anywhere; }
+.textbook-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.textbook-actions > * { max-width: 100%; }
+.textbook-reading, .textbook-player { padding: 14px; margin-bottom: 20px; border-radius: 10px; background: #f0f5ee; }
+.textbook-reading input, .textbook-actions input { width: 20px; height: 20px; vertical-align: middle; }
+.textbook-hint { font-size: .9rem; color: #526b5d; }
+#reading-save-status[data-state="conflict"], #reading-save-status[data-state="unavailable"], #reading-save-status[data-state="corrupt"], #audio-player[data-state="error"] { color: #9b341c; }
+.textbook-player p { margin: 0 0 8px; }
+.textbook-body { min-width: 0; }
+.textbook-body label { display: block; }
+#vocab-search { display: block; width: 100%; min-height: 44px; padding: 9px 12px; margin: 8px 0 14px; border: 1px solid #8ca596; border-radius: 8px; }
+.textbook-vocab-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 14px; }
+.vocab-card { min-width: 0; display: flex; flex-direction: column; padding: 18px; border: 1px solid #d4dfd3; border-radius: 12px; background: #fafcf9; }
+.vocab-card .vocab-front, .vocab-card .vocab-back { min-height: 120px; flex: 1; }
+.vocab-front h3 { font-size: 2rem; margin: 6px 0 16px; font-weight: 650; }
+.vocab-front > p, .vocab-back > p:first-child { font-size: .8rem; color: #526b5d; }
+.vocab-back p { margin: 6px 0 12px; }
+.vocab-card[data-flipped="true"] { background: #edf5ec; }
+.vocab-card .textbook-actions { margin-top: 12px; }
+.vocab-card button { padding: 7px 9px; font-size: .9rem; }
+.textbook-word-detail { padding: 18px; margin-top: 24px; border: 2px solid #88a783; border-radius: 12px; }
+.textbook-detail-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.textbook-detail-head h3 { font-size: 2rem; margin: 0; }
+.textbook-example { margin: 16px 0; padding: 14px; border-left: 4px solid #a9c49c; background: #f3f7f0; }
+.textbook-example p { margin: 4px 0; }
+.textbook-zh { font-size: 1.25rem; }
+.textbook-senses { padding: 12px 0; }
+.textbook-scene-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.textbook-scene-tabs [aria-selected="true"] { color: white; background: #245f46; }
+#scene-select { max-width: 100%; }
+.textbook-line, .textbook-language-card { padding: 16px; margin: 16px 0; border: 1px solid #d4dfd3; border-radius: 10px; }
+.textbook-line p { margin: 6px 0; }
+.textbook-structure { padding: 12px; background: #edf3e8; border-radius: 8px; white-space: pre-wrap; }
+.textbook-tip { padding: 16px; margin: 24px 0; background: #fbf5e9; border: 1px solid #e5d7bb; border-radius: 10px; }
+.textbook-tip > div + div { border-top: 1px solid #e5d7bb; }
+.textbook-journey { display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: space-between; margin-top: 24px; }
+.textbook-journey a { min-height: 44px; padding: 8px 0; }
+@media (max-width: 420px) {
+  .textbook { padding: 14px; }
+  .textbook fieldset { padding: 10px; }
+  .textbook-reading, .textbook-player, .vocab-card, .textbook-word-detail, .textbook-line, .textbook-language-card { padding: 12px; }
+  .textbook-actions > label { flex-basis: 100%; }
+}

@@ -1,6 +1,6 @@
 # HSK 1 重构工程
 
-第1—3步完成需求/数据冻结、统一外壳与公共存储；第4步开放全部15课225作业、选择/排序评分、自由翻译提交、首次/最近收据及输入自动保存。教材/听力/词汇/复习仍按第5—7步接入，生产入口未发布。详情见`docs/step4-acceptance.md`。
+第1—3步完成需求/数据冻结、统一外壳与公共存储；第4步开放全部15课225作业、选择/排序评分、自由翻译提交、首次/最近收据及输入自动保存。第5步开放15课教材五节、原练习与公共音频/本地笔顺、阅读星标及继续位置。独立听力/混课词卡/复习/完整进度留第6—7步，生产入口未发布。详情见`docs/step5-acceptance.md`。
 
 ## 运行
 
@@ -13,10 +13,11 @@ npm run catalog:check
 npm run fixtures:check
 npm test
 npm run build
+npm run assets:check
 npm run dev
 ```
 
-`catalog:check` 从固定源重提取，对比已提交的 JSON、身份和文件指纹，漂移即失败。该工具用于第1步冻结旧基线和迁移对照；`catalog:generate` 只用于此阶段的显式重新抽取。后续改为新 `content/` 唯一来源和独立内容校验，日常编辑不得从旧补丁链重生成覆盖新内容。完整媒体不复制到新工程。
+`catalog:check` 从固定源重提取，对比已提交的 JSON、身份和文件指纹，漂移即失败。该工具用于第1步冻结旧基线和迁移对照；`catalog:generate` 只用于此阶段的显式重新抽取。后续改为新 `content/` 唯一来源和独立内容校验，日常编辑不得从旧补丁链重生成覆盖新内容。原媒体不重复提交到新源码；构建将93原轨和267本地笔顺复制到`dist/course-assets`，`assets:check`核对来源哈希和许可，不重新编码。
 
 ## 浏览器检查
 
@@ -26,7 +27,7 @@ npm run test:smoke
 npm run test:repro
 ```
 
-`test:smoke` 在Chromium/WebKit各运行25个场景（10个外壳回归、6个非空数据/恢复/故障场景、9个作业集成场景），结果写入 `.repro-output/step4-browser.json`；使用 `-- --project=chromium` 可定向运行。`npm test` 和 `test:smoke` 从原公开静态gate注入兼容验收口令，日志不输出口令；也支持环境变量 `HSK_TEST_PASSWORD` 覆盖，不省略正确口令检查。
+`test:smoke` 在Chromium/WebKit各运行40个场景（10个外壳、6个数据/故障、9个作业、9个教材、6个真实媒体场景），结果写入 `.repro-output/step5-browser.json`；使用 `-- --project=chromium` 可定向运行。`npm test` 和 `test:smoke` 从原公开静态gate注入兼容验收口令，日志不输出口令；也支持环境变量 `HSK_TEST_PASSWORD` 覆盖，不省略正确口令检查。
 
 `test:repro` 仍针对未修改的旧页面，控制延迟 `stage3/app.js`，确认原初始化窗口；不是新外壳回归。默认输出 `.repro-output/init-race.json`，可加 `-- --browser=webkit`。兼容Chromium可通过 `HSK_BROWSER_PATH` 指定，仅应用于Chromium项目。
 
@@ -36,7 +37,7 @@ npm run test:repro
 
 新记录用`ran_hsk1_modular_v1`，导入/迁移必须预览并确认；当前记录及一份恢复快照同一次写入。原11个旧学习键保持不变，会话gate不进入备份。相同origin的新应用tab通过Web Locks协调写入；不支持安全锁时仅查看/下载，不用不安全读写冒充原子更新。
 
-应用会话`src/services/learning/session.ts`持有共享存储，300ms防抖保存，切页先收集最终草稿再flush；保存失败原文仍可跨模块下载备份，视图退出不关闭学习会话。作业控制器`features/homework/controller.ts`调用纯规则，收据只取已提交快照。公共服务为`src/services/storage/index.ts`；格式适配与校验为`compatibility.ts`，純规则位于`src/domain/homework`和`practice`。已保存、未保存、冲突、损坏状态分开。失败时可下载当前内存稿，导入失败可另下载预览候选；损坏主记录提供原字符串下载。服务API、容量和兼容限制见`docs/storage-contract.md`，本步证据见`docs/step4-acceptance.md`。
+应用会话`src/services/learning/session.ts`持有共享存储，300ms防抖保存，切页先收集最终草稿再flush；保存失败原文仍可跨模块下载备份，视图退出不关闭学习会话。作业控制器`features/homework/controller.ts`调用纯规则，收据只取已提交快照。公共服务为`src/services/storage/index.ts`；格式适配与校验为`compatibility.ts`，純规则位于`src/domain/homework`和`practice`。已保存、未保存、冲突、损坏状态分开。失败时可下载当前内存稿，导入失败可另下载预览候选；损坏主记录提供原字符串下载。服务API、容量和兼容限制见`docs/storage-contract.md`，本步证据见`docs/step5-acceptance.md`。
 
 ## 接续依据
 
@@ -48,6 +49,6 @@ npm run test:repro
 - `docs/known-issues.md`：已知风险与修复阶段。
 - `docs/progress.md`：短交接记录，每一步只更新当前结果和下一步。
 
-功能位于 `src/features`，纯规则位于 `src/domain`，公共服务位于 `src/services`。唯一 `src/app/router.ts`拥有URL。每个模块 `mount` 返回 `ready` 和幂等 `unmount`，异步任务/监听使用传入signal；后续媒体/草稿资源也由该句柄退出时停止/保存。
+功能位于 `src/features`，纯规则位于 `src/domain`，公共服务位于 `src/services`。唯一 `src/app/router.ts`拥有URL。每个模块 `mount` 返回 `ready` 和幂等 `unmount`，异步任务/监听使用传入signal；媒体/草稿资源也由该句柄退出时停止/保存。公共audio由应用懒加载并唯一持有，原音/TTS明确标识；视图signal只取消自身请求。阅读访问/星标/自标完成由`services/learning/reading.ts`更新，不改作业成绩。
 
 `npm run index:generate`仅从新content生成小型课程摘要，`index:check`和build拒绝陈旧索引。开发与生产均支持lesson.html/learning.html别名，标准地址为 `#/textbook?lesson=10&section=text` 等；发布原路径映射在第9步完成。

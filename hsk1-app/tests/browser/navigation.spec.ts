@@ -157,7 +157,7 @@ test('metadata HTTP 503 exposes a usable retry that keeps the lesson, section an
   await page.locator('#retry-module').click();
   await expectRoute(page, 'textbook', 10, '#/textbook?lesson=10&section=text');
   await expect(page.locator('#module-host a[aria-current="page"]')).toHaveAttribute('href', '#/textbook?lesson=10&section=text');
-  await expect(page.locator('[data-module-action="preview"]')).toBeEnabled();
+  await expect(page.locator('#scene-select')).toBeEnabled();
   await expect(page.locator('#retry-module')).toBeHidden();
   expect(await page.evaluate(() => ({ href: location.href, length: history.length }))).toEqual(before);
   expect(requests).toBe(2);
@@ -169,6 +169,7 @@ test('five hundred clicks on the current module produce no history writes or rem
   await useExistingTabSession(page);
   await page.goto('/#/textbook?lesson=10&section=text');
   await expectRoute(page, 'textbook', 10, '#/textbook?lesson=10&section=text');
+  await page.locator('#textbook-module').evaluate(node => { (node as HTMLElement).dataset.mountIdentity = 'retained'; });
   const result = await page.evaluate(() => {
     let pushes = 0;
     let replacements = 0;
@@ -191,6 +192,6 @@ test('five hundred clicks on the current module produce no history writes or rem
   expect(result.replacements).toBe(0);
   expect(result.after).toEqual(result.before);
   expect(metadataRequests).toBe(1);
-  await page.locator('[data-module-action="preview"]').click();
-  await expect(page.locator('#entry-details')).toHaveAttribute('data-click-count', '1');
+  await expect(page.locator('#textbook-module')).toHaveAttribute('data-mount-identity', 'retained');
+  await expect(page.locator('#scene-select')).toBeEnabled();
 });

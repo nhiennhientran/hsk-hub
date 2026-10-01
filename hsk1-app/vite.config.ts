@@ -1,6 +1,8 @@
 import { defineConfig, type Plugin } from 'vite';
 import { copyFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { courseAssets } from './tools/course-assets.ts';
 
 // These are copies of the single application HTML, not separate student apps.
 function legacyEntries(): Plugin {
@@ -22,6 +24,6 @@ function legacyEntries(): Plugin {
 
 export default defineConfig({
   base: './',
-  plugins: [legacyEntries()],
+  plugins: [legacyEntries(), courseAssets(fileURLToPath(new URL('.', import.meta.url)))],
   build: { target: 'es2022', sourcemap: true },
 });

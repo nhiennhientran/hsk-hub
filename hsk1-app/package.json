@@ -20,7 +20,8 @@
     "build": "npm run index:check && npm run check && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "fixtures:generate": "node tools/migration-fixtures.mjs --write",
-    "fixtures:check": "node tools/migration-fixtures.mjs --check"
+    "fixtures:check": "node tools/migration-fixtures.mjs --check",
+    "assets:check": "node tools/check-course-assets.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.62.1",

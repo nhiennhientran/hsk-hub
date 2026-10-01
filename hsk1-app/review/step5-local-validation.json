@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "step": 5,
+  "createdAt": "2026-10-01T16:42:31.795463+00:00",
+  "branch": "work/hsk1-modular-step5-20261002",
+  "baseCommit": "4c1569c3e0d830cf22758ba116f876512978c3d0",
+  "contentBaseline": "71b39192133c82f684384f450dda6079d3253440",
+  "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
+  "environment": {
+    "node": "24.19.0",
+    "npm": "11.9.0",
+    "localChromium": "153.0.8010.0",
+    "localCjkFonts": false
+  },
+  "checks": {
+    "unit": {
+      "passed": 128,
+      "failed": 0,
+      "skipped": 0
+    },
+    "browserFullLocal": {
+      "passed": 40,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationMs": 159090.31399999998,
+      "sourceReport": ".repro-output/step5-browser-full.json"
+    },
+    "focusedTextbook": {
+      "passed": 9
+    },
+    "focusedNativeMedia": {
+      "passed": 6
+    },
+    "ci": {
+      "projects": [
+        "chromium",
+        "webkit"
+      ],
+      "casesPerProject": 40,
+      "verification": "Matching head Actions run and job logs checked in completion reply; not inherited from previous step."
+    },
+    "build": "passed",
+    "catalog": "passed",
+    "fixtures": 12,
+    "stableRequirementIds": 45,
+    "dependencyVersionsAndLockUnchanged": true,
+    "packageScriptsChange": "assets:check added; no dependency added or changed",
+    "frozenContentAndLegacyRuntimeUnchanged": true,
+    "pureHomeworkAndPracticeEngineBodiesUnchanged": true,
+    "textbook": {
+      "lessons": 15,
+      "sectionsPerLesson": 5,
+      "vocabularyRows": 342,
+      "catalogSenses": 344,
+      "forms": 319,
+      "scenes": 45,
+      "lines": 203,
+      "grammar": 40,
+      "phonetics": 3,
+      "originalPracticeQuestions": 150,
+      "basicPerLesson": 7,
+      "advancedPerLesson": 3,
+      "availableAudioSenses": 330,
+      "declaredMissingAudioSenses": 14
+    },
+    "reading": "visited/opened sections, explicit lesson completion, legacy-compatible word stars and exact continuation; homework untouched",
+    "viewports": [
+      320,
+      390,
+      768,
+      1104
+    ],
+    "nativeMedia": "Original MP3 play remains native; real playing, decoder duration and clock progression; 1/10/15 representative words+scenes, 1–3 tongue tracks, word/line boundaries, playlist via native ended accelerated by seek, pause/resume/rate/replay, 404/retry and view cancellation",
+    "tts": "Chinese voice selection/start/mutual exclusion covered by controlled ports; browser no-Chinese-voice error covered. No human or real Chinese system voice listening claim.",
+    "limitations": [
+      "No new human Chinese/Vietnamese language certification",
+      "No human per-word/per-line or 75-question audio certification",
+      "No physical iOS/Android, touch or actual Chinese IME certification",
+      "Local CJK font unavailable; CI installs Noto CJK",
+      "Legacy WebKit timeout is not claimed as uniquely diagnosed or repaired",
+      "Step6 not started; no production deployment"
+    ]
+  },
+  "courseAssets": {
+    "schemaVersion": 1,
+    "baseline": "71b39192133c82f684384f450dda6079d3253440",
+    "output": "dist/course-assets",
+    "audio": {
+      "files": 93,
+      "bytes": 27491142,
+      "manifestHashesVerified": 93,
+      "originalFilesUnchanged": 93
+    },
+    "hanzi": {
+      "files": 267,
+      "bytes": 567732,
+      "originalLocalFiles": 250,
+      "supplements": 17,
+      "strokeDataValidated": 267,
+      "sourceCopiesEqual": 267,
+      "supplementHashesVerified": 17
+    },
+    "licenses": [
+      {
+        "path": "HANZI-DATA-LICENSE.txt",
+        "bytes": 6900,
+        "sha256": "5590533436c70f10f2f524ee61456238c290175c6662fbe1c700b5f038a6d328"
+      },
+      {
+        "path": "HANZI-WRITER-LICENSE.txt",
+        "bytes": 1079,
+        "sha256": "7735d83cdf892c8db41c27103b42c89b4b63149770c1e08ae13cbbebb81da637"
+      }
+    ],
+    "totalBytes": 28066853,
+    "assetManifestSha256": "5311f266eb62db26974f673ac03a257991538ddfb0af6cb03bbc920bb20df9d4"
+  },
+  "developmentAssetsHttp": {
+    "checks": [
+      {
+        "method": "HEAD",
+        "status": 200,
+        "bytes": 102165
+      },
+      {
+        "range": "bytes=0-31",
+        "status": 206
+      },
+      {
+        "range": "bytes=-32",
+        "status": 206
+      },
+      {
+        "range": "bytes=32-",
+        "status": 206
+      },
+      {
+        "range": "out-of-range",
+        "status": 416
+      },
+      {
+        "asset": "八.json",
+        "status": 200
+      }
+    ]
+  },
+  "sourceSha256": {
+    ".github/workflows/hsk1-modular-step5.yml": "b7fddee3a8098fd52bc23d9a2e5002ea500301b4c8f77f6f56cdf6f9c6b1b31a",
+    "hsk1-app/README.md": "5a6891e796ef54279b36652e75934ef133515a947a584ad212305adae91f297e",
+    "hsk1-app/package.json": "75bf71a26d2d1246362cf9dd7540d6506106600a87ed6890cb910b253244615f",
+    "hsk1-app/playwright.config.ts": "cdcb3124d0fb1f0abcec2b7b54610066408347a921763f1e631a6cd346c15878",
+    "hsk1-app/public/course-assets/HANZI-DATA-LICENSE.txt": "5590533436c70f10f2f524ee61456238c290175c6662fbe1c700b5f038a6d328",
+    "hsk1-app/public/course-assets/HANZI-WRITER-LICENSE.txt": "7735d83cdf892c8db41c27103b42c89b4b63149770c1e08ae13cbbebb81da637",
+    "hsk1-app/public/course-assets/hanzi/九.json": "ec8fa16237207544c76a014c552c5f7c227813e300875a287f07a0b8b86dbe54",
+    "hsk1-app/public/course-assets/hanzi/八.json": "650e961eefa88d95cc119146ff6606275ecad54c3f8ad1442c08889f928ec5af",
+    "hsk1-app/public/course-assets/hanzi/公.json": "f486cccfeb549f77756de2d5086c83c1ebfcb7ce4cfafa2ba332b9700d1c8738",
+    "hsk1-app/public/course-assets/hanzi/千.json": "f18da1869ef65a45deb8dca2eb558febc6b573abd420498d408ea3ae6455f06f",
+    "hsk1-app/public/course-assets/hanzi/司.json": "17963d4ce5fb97b6588d832e3ba1345498894ddab9895756a62491972be70ba8",
+    "hsk1-app/public/course-assets/hanzi/吧.json": "1fbe8a6edb50ccf565fc6bac3e9ba17f6402631f46708fb87591a564e6e83dca",
+    "hsk1-app/public/course-assets/hanzi/山.json": "c1e58c4b20cba28ae9778dfb280a93dc18fdccd3ecbec00bece20ce739c9f459",
+    "hsk1-app/public/course-assets/hanzi/心.json": "24b00ca173bbf7403181af1a4f9414f3b9175ed04b17108055c7d9e3fe6d6215",
+    "hsk1-app/public/course-assets/hanzi/末.json": "1850548334ce588300beb295770aebff693f5717ce2a15dd53972901bb3b7242",
+    "hsk1-app/public/course-assets/hanzi/样.json": "df344ad329f2d7461c9ea5d2c64820f8b43d0957ecb9c23b703c5cf4266c0b09",
+    "hsk1-app/public/course-assets/hanzi/汉.json": "24bae414f2def0d58cab2a7ae066004c62bded29331127925f4a4521264bd8e7",
+    "hsk1-app/public/course-assets/hanzi/爱.json": "26312d0cf150b55c961e890c2a205f5143a185bd2c7337c9c3622040d61489c4",
+    "hsk1-app/public/course-assets/hanzi/爸.json": "fa40233458f9a517bcfedea1595d348831af8f73be08fe45a9554b28c59de25c",
+    "hsk1-app/public/course-assets/hanzi/百.json": "3cc71b969c7cb35878645077365f029ad249eef5c5f80b61683df4bbbf7849b2",
+    "hsk1-app/public/course-assets/hanzi/目.json": "f5392f6be0cba05d57c6b9cdb111ad402415e57e886e491a18fbeda6d0206a6b",
+    "hsk1-app/public/course-assets/hanzi/米.json": "105847e8be1741677145b1e7b7168ba883e9ca3ae1abb7b60a476d430117e88e",
+    "hsk1-app/public/course-assets/hanzi/视.json": "316185032960d9ce1de24772a58e579760f218f369f8dfdb5efbbea14ecfab24",
+    "hsk1-app/review/hanzi-supplement.json": "a19ce6dce2573d1889678f1869491d83e56eb2c89a7638a6587847eba891eb4d",
+    "hsk1-app/src/app/contracts.ts": "cad379ac66a2b916d8227574c25a109acdc4d472a98d0122720dca1204bbfaa4",
+    "hsk1-app/src/app/lifecycle.ts": "b6c5280f7571726329103e5df5c2ea200a8a25173cbc57f2c6d8d5a1f3d025c9",
+    "hsk1-app/src/app/main.ts": "9e673bf3d156639348a206f3a95262bbd9da4284c16346e4fc1ffc5ff28aa82c",
+    "hsk1-app/src/domain/textbook/practice.ts": "16c1d1db7a76effe9dce2053f13ade33d9d88f2e4c4a100a05393f71800270cc",
+    "hsk1-app/src/features/home/index.ts": "2e68c8a4054b6b2e98905563e3fe45bc69fcd39f7581989935b3d661b6d8be8a",
+    "hsk1-app/src/features/textbook/dom.ts": "ec4cf4d4f093c0f341da8c004c1fb82702b6036008c1e4a6701a17f94111d498",
+    "hsk1-app/src/features/textbook/hanzi.css": "8bf5e5f34c946d30fc97a623ee1956bf577f36ce4a5ce67b7555de6ecac39f5f",
+    "hsk1-app/src/features/textbook/hanzi.ts": "822e23638a94ed269fdb8ee4c46b42ea8d83ef0d3ba1d8e8911e5bb595aeaae2",
+    "hsk1-app/src/features/textbook/index.ts": "bb39f0de26fc00492ef3c32585554abd7c34fbf5aa85bd95c558ca0f72d235ac",
+    "hsk1-app/src/features/textbook/language.ts": "0c86c2bff2d199c5d4544b7f13fc5ac3d593bc9ace572962b36bd8249b56e820",
+    "hsk1-app/src/features/textbook/player.ts": "584f70ee6175cf06a4c854f1f1f9c50f040e1cecead330064c08e7423e953da4",
+    "hsk1-app/src/features/textbook/practice.css": "3fd4b062ae1879c49e2edd54584e84bf0bef9bd0b4234bd274061700897fe686",
+    "hsk1-app/src/features/textbook/practice.ts": "e6453a35145ec52a5efdcd7149836c1fc309ee41be3d36bcc17e792f26193377",
+    "hsk1-app/src/features/textbook/text.ts": "78ccf767ab998097a791fd5c1d2481cc5982940921dd10fb534d6d63b5b73b61",
+    "hsk1-app/src/features/textbook/textbook.css": "8cc6e98a349c96ccce8a342dbd016035f6009b21db10514b90b5c2fb20329470",
+    "hsk1-app/src/features/textbook/vocabulary.ts": "12f7c73f50c754e4bd02aea4bdbccd0e739aa48dee5fa04b6d0d41aee17c0730",
+    "hsk1-app/src/services/audio/index.ts": "61398afa67273f437a6f8cc0795dc5a85ac14f51343629c33daa29e8fdb4a55b",
+    "hsk1-app/src/services/content/textbook.ts": "c037c11f69f80f879be9f018f817bf134b9a19c3de13024161748130ed7b8fbd",
+    "hsk1-app/src/services/hanzi/LICENSE": "7735d83cdf892c8db41c27103b42c89b4b63149770c1e08ae13cbbebb81da637",
+    "hsk1-app/src/services/hanzi/vendor.d.ts": "d6ffc7b954563aa71cb8ebfac52290888daa713d9327b12e740fa7b736da0a51",
+    "hsk1-app/src/services/hanzi/vendor.js": "60c26936269f092350401aa972707e7d5cd46cbc087f8c9d0f855f937cc8fe0a",
+    "hsk1-app/src/services/learning/reading.ts": "f5d5ea6b81494d4a5a69f641f135ba9980860f605cd80ea2bb6d8a644d0e61fd",
+    "hsk1-app/tests/audio.test.mjs": "b008020dec33853908b4d70ec45f51c1f76a2c1a81e05fda95d56ac3c47db5eb",
+    "hsk1-app/tests/browser/media.spec.ts": "c83c392d11f309f1168904ac8d720e170d77b218b28629ed1bbebd2ac2ac206a",
+    "hsk1-app/tests/browser/navigation.spec.ts": "f1b118c58bc9d8866d4eb77456a621f2eec6bbfc69005be05e8ffa046a9a43db",
+    "hsk1-app/tests/browser/scaffold.spec.ts": "0408b5554a8b79234bff6305eb64b5bb64a3ab17de2ea114f86fc6a56fec0b6b",
+    "hsk1-app/tests/browser/textbook.spec.ts": "b98fc97c5668e9f977c482bafd5a4b9693ecbcc595d7ebf875c71a965dc7731a",
+    "hsk1-app/tests/reading.test.mjs": "fc812d76bd6bca4da8892d904559efeaa6490003ff7b690f3f4f015c9613caca",
+    "hsk1-app/tests/textbook-content.test.mjs": "d557ca5a60604f496dcdd89d5ce71059a7757614d3ab0ce7b75ddf7062977da6",
+    "hsk1-app/tests/textbook-practice.test.mjs": "c90f047843b1d2d41039b30a22fb17ad2c2751552198b3d78b860460b5d00ae8",
+    "hsk1-app/tools/check-course-assets.mjs": "911af2e25d7ee87634c8d89ba0d9301a090f2974f65225f64e3b856a47c13f89",
+    "hsk1-app/tools/course-assets.ts": "afcaa4bd3ae93ba8907fc83a0fa5a2ae67884fc615849c2ab8a4e14293192995",
+    "hsk1-app/vite.config.ts": "ac827897b498aaad884f2fb44e5adf19a07780367e5b6d2bcaf86a9f34d6f43b"
+  }
+}

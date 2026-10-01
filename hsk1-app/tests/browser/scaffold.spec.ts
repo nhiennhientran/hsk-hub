@@ -14,6 +14,7 @@ async function expectReady(page: Page, feature: string, lesson: number): Promise
   await expect(host).toHaveAttribute('data-lesson', String(lesson));
   await expect(host.locator('h1')).toBeVisible();
   if (feature === 'homework') await expect(host.locator('#submit-homework')).toBeEnabled();
+  else if (feature === 'textbook') await expect(host.locator('#reading-complete')).toBeEnabled();
   else await expect(host.locator('[data-module-action="preview"]')).toBeEnabled();
 }
 
@@ -63,7 +64,7 @@ test('the real password works with Enter, reload reuses this tab session, and a 
   }
 });
 
-test('all seven module entries and all fifteen lesson choices remain reachable as homework becomes interactive', async ({ page }) => {
+test('all seven module entries and all fifteen lesson choices remain reachable as textbook and homework become interactive', async ({ page }) => {
   await useExistingTabSession(page);
   await page.goto('/');
   await expectReady(page, 'home', 1);
@@ -80,7 +81,7 @@ test('all seven module entries and all fifteen lesson choices remain reachable a
     await page.locator(`#feature-nav a[data-feature="${feature}"]`).click();
     await expectReady(page, feature, 1);
     if (feature === 'homework') await expect(page.locator('#module-host [data-question-id]')).toHaveCount(5);
-    else if (feature !== 'home') await expect(page.locator('#module-host')).toContainText('chưa mở để làm bài');
+    else if (feature !== 'home' && feature !== 'textbook') await expect(page.locator('#module-host')).toContainText('chưa mở để làm bài');
   }
   await page.locator('#feature-nav a[data-feature="textbook"]').click();
   for (let lesson = 1; lesson <= 15; lesson++) {

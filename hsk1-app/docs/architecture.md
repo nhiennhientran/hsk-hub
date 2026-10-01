@@ -10,6 +10,8 @@
 
 第4步已接入真实作业。`services/learning/session.ts`由应用懒加载且持有一个公共存储实例；作业控制器只改变homework，视图订阅保存状态，退出先采集最终DOM草稿并flush。数据工具复用此实例；confirm/restore可接受视图signal以阻止晚导入，视图卸载不销毁学习状态。`receipt.ts`只读取首次/最近提交快照。
 
+第5步已接入真实教材五节与公共媒体。应用懒加载唯一AudioService；视图以局部signal拥有请求，真实playing启动确认、片段停止及TTS互斥由服务负责。`services/learning/reading.ts`复用共享session，只更新reading及教材继续位置；模块打开、阅读自标完成与作业成绩独立。原教材练习在`domain/textbook`纯生成/评分，不改变独立practice记录。证据见[`step5-acceptance.md`](step5-acceptance.md)。
+
 ## 目录与职责
 
 | 位置 | 所有权 | 目标阶段 |
@@ -70,6 +72,12 @@
 公共音频服务拥有实际HTMLMediaElement、播放代次、异步加载、速度/范围停止与错误；视图只提出原轨/片段请求并观察结果。教材真人原音与语法/语音/汉字的浏览器TTS明确区分，14条没有独立教材词音不能伪造。播放中切换功能必须停止并取消旧请求。
 
 存储契约在第1步定义，第3步已实现并建立12个非空样本。首次/最近、翻译草稿/已提交稿、阅读/作业完成独立。接口和具体格式见 [`storage-contract.md`](storage-contract.md)；迁移核验原题号与实际题意指纹，旧翻译选择记录只能归档。存储用Web Lock内原raw比较及单次setItem，current与一层recovery原子写入；失败保留当前稿和预览候选，可分别导出，原旧键不删除。练习控制器以edit更新本领域；应用会话300ms合并保存，失败不自动循环重试。卸载取消视图任务但保留内存稿，中文IME已覆盖模拟，实体设备留第8步。
+
+## 第5步本地媒体与汉字
+
+`tools/course-assets.ts`从冻结media路径复用93原轨，开发提供HEAD/Range，构建复制到`dist/course-assets`；不重复提交原MP3、不转码。汉字专项及词详情需要267字，250原本地文件+17按原数据库2.0.1版本补充；来源、哈希与数据/库许可见`review/hanzi-supplement.json`。`assets:check`独立核对全部媒体/笔顺副本与SHA。
+
+Hanzi Writer固定3.7.3原正文，ESM内不建立旧学生全局。因无公开destroy，ManagedHanziWriter只适配指针监听生命周期、取消quiz/render和销毁renderer；升级时须核对内部接口及销毁测试。专项重点字与其余本课词内字分组，详情只列当前词内字。
 
 ## 构建与最终迁移门槛
 

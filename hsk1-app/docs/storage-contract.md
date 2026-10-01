@@ -112,3 +112,9 @@ stage3的 `preferences` 仅支持 `module,lessons,listeningMode,vocabularyFilter
 截图仅取attempt.answers；学生姓名班级使用当前profile，不冒称历史时身份快照。组合输入时不提交、不截断，退出及提交前同步采集合法DOM最终值，再保存。过限文本明确提示未保存并禁止提交，不静默提交旧稿。visibility隐藏、离页及切模块触发flush；浏览器强制关闭的异步写入仅尽力进行，应以“已保存”或导出的备份为准。
 
 数据管理页复用同一store；`confirm(preview,signal?)`与`restore(signal?)`在排队前及取得锁后检查取消，返回cancelled不写。卸载数据页只取消自身操作/监听，不dispose应用store。应用的`dispose():Promise<void>`取消防抖，等最终flush结束才关闭store；新页面加载仍按严格旧格式/指纹校验。
+
+## 第5步教材阅读调用
+
+`createReadingController`复用应用会话，只更新`data.reading`及教材`data.navigation`。成功挂载记录`lessons[课].visited=true`和`modules["hsk1:课"].modules`已打开节；同一继续位置/节重复访问不编辑或再排保存。模块访问不表示完成；`complete`仅由学生勾选/取消，作业first/latest/completed不受影响。
+
+教材星标继续使用`"课号-词形"`，按当课合法词形校验，避免和第7步按senseId自评时间表混用。首页读取同一内存session显示自标/访问与继续位置，不建立另一个store。切页flush，quota/conflict时保留内存稿及可导出状态；关闭视图不能dispose应用会话。备份/迁移格式与旧键保持不变。

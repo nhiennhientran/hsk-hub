@@ -3,19 +3,20 @@
   "title": "HSK1 模块化改造需求与验收矩阵",
   "baseline": {
     "sourceCommit": "71b39192133c82f684384f450dda6079d3253440",
-    "workBranch": "work/hsk1-modular-step4-20261001",
+    "workBranch": "work/hsk1-modular-step5-20261002",
     "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
     "independentStep2Commit": "2c6d3b38866dcfbcf101974302609c470f1d2443",
     "independentStep3Commit": "de823050e97cbab64144197f3bf9241321b73c59",
     "first8CandidateCommit": "8ffecf1031abb52b863c6a05b38f24a8ae5c2af6",
     "step2StartCommit": "7f2e012e4eeecec5ccc868ddef96b2da28c3ab21",
     "step3StartCommit": "1ad97b223c89a7c9183f7f09763d3d9c5139a69e",
-    "step4StartCommit": "5b4c4fe316356d7795ddd4bb36533562679122ad"
+    "step4StartCommit": "5b4c4fe316356d7795ddd4bb36533562679122ad",
+    "step5StartCommit": "4c1569c3e0d830cf22758ba116f876512978c3d0"
   },
   "scope": {
-    "currentStep": 4,
+    "currentStep": 5,
     "authorizedStepsThisTurn": [
-      4
+      5
     ],
     "runtimeChanged": true,
     "productionPublished": false,
@@ -123,7 +124,15 @@
       ],
       "acceptance": "比较有效数据和抽取JSON；15课逐模块浏览器回归，不以新增作业替代原练习。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "15课五节、342教材行、45课文203行、40语法+3语音字段和150原练习验证；内容语言审校另记，不扩写为完整网站终验。"
+        }
+      ]
     },
     {
       "id": "R003",
@@ -137,12 +146,20 @@
         "vocab-front-no-pinyin.css"
       ],
       "targetLocations": [
-        "src/features/textbook/vocabulary/",
-        "src/services/storage/"
+        "src/features/textbook/vocabulary.ts",
+        "src/services/learning/reading.ts"
       ],
       "acceptance": "按库存逐操作；Enter/空格翻卡；搜索中越/pinyin；刷新星标恢复；详情字切换和关闭可用。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "搜索/翻卡/键盘/星标刷新/详情导航/例句及本地逐字笔顺验证；实体触屏、实际中文字体待第8步。"
+        }
+      ]
     },
     {
       "id": "R004",
@@ -156,12 +173,21 @@
         "../assets/hsk2-parity.js"
       ],
       "targetLocations": [
-        "src/features/textbook/vocabulary/",
-        "src/services/audio/"
+        "src/features/textbook/vocabulary.ts",
+        "src/services/audio/index.ts",
+        "tools/course-assets.ts"
       ],
       "acceptance": "真实播放整课及单词；边界、换课停止、无音按钮/提示核对；原音来源哈希一致。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "330义项音段映射/14缺音、93原轨构建哈希；真实浏览器代表词音与3轨连播验证，未逐词人耳听辨。"
+        }
+      ]
     },
     {
       "id": "R005",
@@ -178,11 +204,19 @@
       ],
       "targetLocations": [
         "content/textbook.json",
-        "src/features/textbook/text/"
+        "src/features/textbook/text.ts"
       ],
       "acceptance": "45篇数量与来源对照；逐场景/逐句呈现及播放；核销明确教材差异，保留说话人和顺序。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "45场景203行字段及全播放入口核对；代表课1/10/15整轨、逐句片段原生播放，未逐句人耳认证。"
+        }
+      ]
     },
     {
       "id": "R006",
@@ -196,12 +230,21 @@
         "audio/1-7.mp3…3-7.mp3"
       ],
       "targetLocations": [
-        "src/features/textbook/text/",
-        "src/services/audio/"
+        "src/features/textbook/text.ts",
+        "src/features/textbook/player.ts",
+        "src/services/audio/index.ts"
       ],
       "acceptance": "切换听力/显示原文；暂停/重播/教材速度选项；1—3跟读播放和提示；与独立听力规则分开验。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "隐藏原文/听力模式/慢速/暂停/重播/离页停音及1—3绕口令原轨真实播放；原冻结教材未含绕口令文本，不新增猜测文本。"
+        }
+      ]
     },
     {
       "id": "R007",
@@ -218,11 +261,19 @@
       ],
       "targetLocations": [
         "content/textbook.json",
-        "src/features/textbook/language/"
+        "src/features/textbook/language.ts"
       ],
       "acceptance": "抽取40+3计数，逐项字段对照；语法/语音例句播放与系统无中文voice提示；新语言审查另记状态。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "40+3条解释/结构/例句与助力字段、明确TTS/无中文voice报错；中文voice启动与互斥由受控端口单测覆盖，未真人系统语音听辨。"
+        }
+      ]
     },
     {
       "id": "R008",
@@ -238,12 +289,21 @@
       ],
       "targetLocations": [
         "content/textbook.json",
-        "src/features/textbook/hanzi/",
-        "public/hanzi-data/"
+        "src/features/textbook/hanzi.ts",
+        "src/services/hanzi/vendor.js",
+        "public/course-assets/hanzi/"
       ],
       "acceptance": "15课汉字专项字段对照；字/词详情中演示、练写、重置；切入可见区后画布正确；触屏待实体检。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "267所需字符本地笔顺校验、专项/词详情动画/练写/重置/可见区尺寸/晚请求清理；17缺失按原库版本补齐来源许可；实体触屏留第8步。"
+        }
+      ]
     },
     {
       "id": "R009",
@@ -257,12 +317,21 @@
         "new-practice-bank-packed.js(legacy disabled)"
       ],
       "targetLocations": [
-        "src/features/textbook/practice/",
+        "src/domain/textbook/practice.ts",
+        "src/features/textbook/practice.ts",
         "content/textbook.json"
       ],
       "acceptance": "从同份教材生成原题；每课两层级题量/答案对照并实际提交重做；不恢复已禁用旧HSK题库。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "原生成函数逐题对照150题；每课7基础+3进阶的控件提交/解析/重做验证，未答算错保持原规则，不写作业/独立听力成绩。"
+        }
+      ]
     },
     {
       "id": "R010",
@@ -293,6 +362,12 @@
           "status": "passed_for_step2_scope",
           "report": "docs/step2-acceptance.md",
           "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        },
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "五节/课次/前后导航/手动阅读完成/星标/首页继续/刷新恢复；打开模块仅表示访问，独立于阅读自标完成与作业成绩。"
         }
       ]
     },
@@ -899,6 +974,12 @@
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "应用持有共享保存实例，真实编辑自动保存与非空导出恢复；取消数据管理视图操作不关闭作业会话。"
+        },
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "复用公共session/store的reading/mastered/模块访问/继续位置；教材保存与已有作业/备份兼容回归，不新增键或云同步。"
         }
       ]
     },
@@ -936,6 +1017,12 @@
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "quota/禁止写入/跨tab冲突时内存稿跨页面保留并可备份；旧损坏/导入保护回归通过；实际配额压力留第8步。"
+        },
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "教材保存失败内存稿跨模块可导出、重试恢复；原25浏览器回归保留，实际物理配额压力仍待后续。"
         }
       ]
     },
@@ -1098,6 +1185,12 @@
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "作业及长文本收据320/390/768/1104浏览器视口检查；实体iOS/Android/中文键盘未认证。"
+        },
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "教材详情/汉字/所有节320/390/768/1104无横向溢出、截图目检；容器本地无CJK字体，CI装NotoCJK；不是实体iOS/Android或IME认证。"
         }
       ]
     },
@@ -1133,6 +1226,12 @@
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "作业mount/ready/unmount及早点击/快速切换回归；存储应用所有，视图监听/请求取消，离页先收集最终DOM草稿。"
+        },
+        {
+          "step": 5,
+          "status": "passed_for_step5_scope",
+          "report": "docs/step5-acceptance.md",
+          "limits": "真实就绪/慢教材/晚汉字及MP3/旧playPromise/切词关闭/切页取消验证；音频由应用唯一实例持有且以真实playing启动。"
         }
       ]
     },

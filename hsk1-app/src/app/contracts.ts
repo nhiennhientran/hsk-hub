@@ -13,6 +13,7 @@ export interface Route {
 }
 
 export interface ModuleContext {
+  readonly audio?: () => Promise<import('../services/audio/index.ts').AudioService>;
   readonly learning?: () => Promise<import('../services/learning/session.ts').LearningSession>;
   readonly route: Route;
   readonly signal: AbortSignal;

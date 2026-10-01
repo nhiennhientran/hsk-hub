@@ -20,6 +20,14 @@ function startApplication(): () => void {
   if (!candidate) throw new Error('Application root is missing.');
   const root = candidate;
   const events = new AbortController();
+  let audio: Promise<import('../services/audio/index.ts').AudioService> | undefined;
+  const getAudio = () => {
+    if (!audio) {
+      audio = import('../services/audio/index.ts').then(module => module.createBrowserAudioService());
+      void audio.catch(() => { audio = undefined; });
+    }
+    return audio;
+  };
   let learning: Promise<import('../services/learning/session.ts').LearningSession> | undefined;
   const getLearning = () => {
     if (!learning) {
@@ -40,14 +48,14 @@ function startApplication(): () => void {
       <button id="retry-module" type="button" hidden>Thử tải lại</button>
       <section id="module-host" tabindex="-1" aria-label="Nội dung bài học"></section>
     </main>
-    <footer>Bài tập 15 bài đã mở. <a data-route-link href="${router.href({ feature: 'progress', lesson: 1 })}">Quản lý dữ liệu và bản sao lưu</a> · <a href="https://nhiennhientran.github.io/hsk-hub/new-hsk1/index.html">Chọn cấp độ ↗</a></footer>
+    <footer>Giáo trình và bài tập 15 bài đã mở. <a data-route-link href="${router.href({ feature: 'progress', lesson: 1 })}">Quản lý dữ liệu và bản sao lưu</a> · <a href="https://nhiennhientran.github.io/hsk-hub/new-hsk1/index.html">Chọn cấp độ ↗</a></footer>
   `;
   const host = root.querySelector<HTMLElement>('#module-host')!;
   const status = root.querySelector<HTMLElement>('#module-status')!;
   const retry = root.querySelector<HTMLButtonElement>('#retry-module')!;
   const lessons = root.querySelector<HTMLSelectElement>('#lesson-select')!;
   const lifecycle = createLifecycle({
-    host, learning: getLearning, navigate: route => router.navigate(route),
+    host, learning: getLearning, audio: getAudio, navigate: route => router.navigate(route),
     loadModule: (feature, signal) => {
       if (signal.aborted) return Promise.reject(new DOMException('Module left.', 'AbortError'));
       return loaders[feature]();
@@ -125,6 +133,7 @@ function startApplication(): () => void {
   return () => {
     events.abort(); unsubscribe?.(); lifecycle.dispose(); router.dispose(); gate.remove();
     void learning?.then(session => session.dispose()).catch(() => {});
+    void audio?.then(service => service.dispose()).catch(() => {});
   };
 }
 

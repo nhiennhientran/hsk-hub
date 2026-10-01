@@ -1,0 +1,322 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { AUDIO_RATES, createAudioService } from '../src/services/audio/index.ts';
+
+const deferred = () => {
+  let resolve, reject;
+  const promise = new Promise((yes, no) => { resolve = yes; reject = no; });
+  return { promise, resolve, reject };
+};
+const turns = async () => { for (let index = 0; index < 5; index++) await Promise.resolve(); };
+class Events extends EventTarget {
+  listeners = new Map();
+  addEventListener(type, listener) { super.addEventListener(type, listener); this.listeners.set(listener, type); }
+  removeEventListener(type, listener) { super.removeEventListener(type, listener); this.listeners.delete(listener); }
+  emit(type) { this.dispatchEvent(new Event(type)); }
+}
+class Audio extends Events {
+  src = '';
+  currentTime = 0;
+  duration = NaN;
+  readyState = 0;
+  playbackRate = 1;
+  defaultPlaybackRate = 1;
+  preservesPitch = false;
+  calls = [];
+  paused = true;
+  pauseCount = 0;
+  error = null;
+  play() { const call = deferred(); this.calls.push(call); return call.promise; }
+  pause() { this.pauseCount++; this.paused = true; this.emit('pause'); }
+  load() { this.readyState = 0; this.currentTime = 0; this.duration = NaN; }
+  removeAttribute(name) { if (name === 'src') this.src = ''; }
+  metadata(duration = 100) { this.readyState = 1; this.duration = duration; this.emit('loadedmetadata'); }
+  playing(index = this.calls.length - 1) { this.paused = false; this.emit('playing'); this.calls[index]?.resolve(); }
+  time(time) { this.currentTime = time; this.emit('timeupdate'); }
+}
+class Speech extends Events {
+  voices = [];
+  spoken = [];
+  cancelCount = 0;
+  pauseCount = 0;
+  getVoices() { return this.voices; }
+  createUtterance(text) { const result = new Events(); Object.assign(result, { text, lang: '', rate: 1, voice: null }); return result; }
+  speak(utterance) { this.spoken.push(utterance); }
+  cancel() { this.cancelCount++; }
+  pause() { this.pauseCount++; }
+  resume() { this.spoken.at(-1)?.emit('resume'); }
+}
+function timers() {
+  let counter = 0;
+  const entries = new Map();
+  return {
+    setTimer(callback, delay) { const id = ++counter; entries.set(id, { callback, delay }); return id; },
+    clearTimer(id) { entries.delete(id); },
+    get count() { return entries.size; },
+    get delays() { return [...entries.values()].map(value => value.delay); },
+    fire() { const all = [...entries.values()]; entries.clear(); for (const entry of all) entry.callback(); },
+  };
+}
+function setup(options = {}) {
+  const audio = new Audio(), speech = new Speech(), clock = timers();
+  let externalStops = 0;
+  const service = createAudioService({ audio, speech, setTimer: clock.setTimer, clearTimer: clock.clearTimer,
+    stopExternal: () => { externalStops++; }, ...options });
+  return { audio, speech, clock, service, get externalStops() { return externalStops; } };
+}
+const track = (label = 'Xin chào') => ({ url: '../audio/1-1.mp3', label, start: 1, end: 3, sourceKind: 'segment' });
+
+test('a resolved play promise alone never claims actual playback; metadata sets the real range', async () => {
+  const { audio, service } = setup();
+  const pending = service.play(track());
+  assert.equal(service.snapshot().status, 'loading');
+  audio.calls[0].resolve(); await turns();
+  assert.equal(service.snapshot().status, 'loading');
+  audio.metadata(); assert.equal(audio.currentTime, 1);
+  audio.playing(); assert.deepEqual(await pending, { ok: true, code: 'playing' });
+  assert.equal(service.snapshot().status, 'playing');
+  assert.equal(service.snapshot().sourceKind, 'segment');
+  service.dispose();
+});
+
+test('generation cancellation ignores a late rejection and an old view abort cannot stop the new request', async () => {
+  const { audio, service } = setup();
+  const oldView = new AbortController(), newView = new AbortController();
+  const old = service.play(track('Cũ'), { signal: oldView.signal });
+  const recent = service.play(track('Mới'), { signal: newView.signal });
+  assert.deepEqual(await old, { ok: false, code: 'cancelled' });
+  oldView.abort();
+  audio.calls[0].reject(new Error('late network failure')); await turns();
+  assert.equal(service.snapshot().label, 'Mới');
+  assert.equal(service.snapshot().status, 'loading');
+  audio.metadata(); audio.playing(); await recent;
+  newView.abort();
+  assert.equal(service.snapshot().status, 'idle');
+  assert.equal(audio.paused, true);
+  assert.equal(audio.listeners.size, 0);
+  service.dispose();
+});
+
+test('segment boundaries stop before the next recording; changing speed reschedules the actual media boundary', async () => {
+  const { audio, service, clock } = setup();
+  const pending = service.play(track()); audio.metadata(); audio.playing(); await pending;
+  assert.deepEqual(clock.delays, [2000]);
+  audio.currentTime = 2;
+  for (const rate of AUDIO_RATES) {
+    service.setRate(rate);
+    assert.equal(audio.playbackRate, rate);
+    assert.equal(audio.preservesPitch, true);
+    assert.deepEqual(clock.delays, [1000 / rate]);
+  }
+  service.setRate(99); assert.equal(audio.playbackRate, 1.5);
+  audio.currentTime = 3; clock.fire();
+  assert.equal(service.snapshot().status, 'ended');
+  assert.equal(audio.paused, true);
+  assert.equal(clock.count, 0);
+  service.dispose();
+});
+
+test('playlist advances once per range and stops on a real error instead of skipping or claiming success', async () => {
+  const { audio, service } = setup();
+  const pending = service.playSequence([track('Một'), { ...track('Hai'), start: 5, end: 8 }]);
+  audio.metadata(); audio.playing(); await pending;
+  audio.time(3);
+  assert.equal(audio.calls.length, 2);
+  assert.equal(service.snapshot().index, 2);
+  assert.equal(service.snapshot().status, 'loading');
+  audio.metadata(); assert.equal(audio.currentTime, 5);
+  audio.playing(); audio.error = { message: '404' }; audio.emit('error');
+  assert.equal(service.snapshot().status, 'error');
+  assert.match(service.snapshot().issue, /404/);
+  assert.equal(audio.calls.length, 2);
+  service.dispose();
+});
+
+test('a late play rejection from a preceding playlist item or paused play cannot poison its successor', async () => {
+  const { audio, service } = setup();
+  const pending = service.playSequence([track('Một'), track('Hai')]);
+  audio.metadata(); audio.paused = false; audio.emit('playing'); await pending;
+  audio.time(3);
+  audio.calls[0].reject(new Error('obsolete first-item request')); await turns();
+  assert.equal(service.snapshot().label, 'Hai');
+  assert.equal(service.snapshot().status, 'loading');
+  service.pause(); audio.calls[1].reject(new DOMException('paused pending play', 'AbortError')); await turns();
+  assert.equal(service.snapshot().status, 'paused');
+  const resumed = service.resume(); audio.metadata(); audio.playing(); await resumed;
+  assert.equal(service.snapshot().status, 'playing');
+  service.dispose();
+});
+
+test('pause during a delayed start remains paused; resume waits for playing and replay resets the range', async () => {
+  const { audio, service, clock } = setup();
+  const pending = service.play(track());
+  service.pause(); assert.deepEqual(await pending, { ok: false, code: 'cancelled' });
+  audio.metadata(); audio.playing();
+  assert.equal(service.snapshot().status, 'paused');
+  assert.equal(audio.paused, true);
+  assert.equal(clock.count, 0);
+  const resumed = service.resume(); audio.playing(); assert.equal((await resumed).ok, true);
+  audio.time(2); service.pause();
+  assert.equal(service.snapshot().currentTime, 2);
+  const replayed = service.replay(); audio.metadata(); audio.playing(); await replayed;
+  assert.equal(audio.currentTime, 1);
+  assert.equal(audio.calls.length, 3);
+  service.dispose();
+});
+
+test('autoplay denial stays an error until an explicit retry really starts playback', async () => {
+  const { audio, service } = setup();
+  const denied = service.play(track());
+  audio.calls[0].reject(new DOMException('gesture required', 'NotAllowedError'));
+  assert.equal((await denied).ok, false);
+  assert.equal(service.snapshot().status, 'error');
+  assert.match(service.snapshot().issue, /Bấm Nghe lại/);
+  const retry = service.replay(); audio.metadata(); audio.playing();
+  assert.equal((await retry).ok, true);
+  assert.equal(service.snapshot().status, 'playing');
+  service.dispose();
+});
+
+test('a stalled media start and a silent synthesis start terminate with a retryable error', async () => {
+  const { speech, service, clock } = setup();
+  const audio = service.play(track());
+  clock.fire();
+  assert.equal((await audio).code, 'error');
+  assert.match(service.snapshot().issue, /chưa bắt đầu/);
+  speech.voices = [{ lang: 'zh-CN', name: '普通话' }];
+  const tts = service.speak('你好'); clock.fire();
+  assert.equal((await tts).code, 'error');
+  assert.equal(service.snapshot().status, 'error');
+  service.dispose();
+});
+
+test('bad ranges are rejected and range beyond media duration never plays', async () => {
+  const { audio, service } = setup();
+  assert.equal((await service.play({ ...track(), end: 0.5 })).ok, false);
+  assert.equal(audio.calls.length, 0);
+  const invalid = service.play({ ...track(), start: 101, end: 102 });
+  audio.metadata(100);
+  assert.equal((await invalid).ok, false);
+  assert.equal(service.snapshot().status, 'error');
+  assert.equal(audio.paused, true);
+  service.dispose();
+});
+
+test('metadata rejects a truncated segment and later duration corrections cannot silently shorten it', async () => {
+  const { audio, service } = setup();
+  const invalid = service.play({ ...track(), end: 10 });
+  audio.metadata(9);
+  assert.equal((await invalid).ok, false);
+  assert.equal(service.snapshot().status, 'error');
+  assert.match(service.snapshot().issue, /ngắn hơn/);
+  const corrected = service.play({ ...track(), end: 10 });
+  audio.metadata(10.1); audio.playing(); await corrected;
+  audio.duration = 9.9; audio.emit('durationchange');
+  assert.equal(service.snapshot().status, 'error');
+  assert.equal(audio.paused, true);
+  const smallDecoderDifference = service.play({ ...track(), end: 10 });
+  audio.metadata(9.975); audio.playing();
+  assert.equal((await smallDecoderDifference).ok, true);
+  service.dispose();
+});
+
+test('ended before a playing or speech start event reports error and never advances a playlist', async () => {
+  const { audio, speech, service } = setup();
+  const playlist = service.playSequence([track('Một'), track('Hai')]);
+  audio.metadata(); audio.emit('ended');
+  assert.equal((await playlist).ok, false);
+  assert.equal(service.snapshot().status, 'error');
+  assert.equal(service.snapshot().index, 1);
+  assert.equal(audio.calls.length, 1);
+  speech.voices = [{ lang: 'zh-CN', name: '普通话' }];
+  const tts = service.speak('你好'); speech.spoken[0].emit('end');
+  assert.equal((await tts).ok, false);
+  assert.equal(service.snapshot().status, 'error');
+  assert.match(service.snapshot().issue, /trước khi bắt đầu/);
+  service.dispose();
+});
+
+test('speech waits for a Chinese voice and for a start event, with clear TTS source and selected replay speed', async () => {
+  const { speech, service, clock } = setup();
+  service.setRate(0.75);
+  const pending = service.speak('你好', { label: 'Giọng máy (TTS)' });
+  assert.equal(service.snapshot().sourceKind, 'tts');
+  speech.voices = [{ lang: 'en-US', name: 'English' }]; speech.emit('voiceschanged');
+  assert.equal(speech.spoken.length, 0);
+  speech.voices.push({ lang: 'zh-CN', name: '中文' }); speech.emit('voiceschanged');
+  assert.equal(speech.spoken.length, 1);
+  assert.equal(speech.spoken[0].voice.lang, 'zh-CN');
+  assert.equal(speech.spoken[0].rate, 0.75);
+  assert.equal(clock.count, 1);
+  assert.equal(service.snapshot().status, 'loading');
+  speech.spoken[0].emit('start'); assert.equal((await pending).ok, true);
+  assert.equal(clock.count, 0);
+  service.pause(); assert.equal(service.snapshot().status, 'paused');
+  assert.equal((await service.resume()).ok, true);
+  speech.spoken[0].emit('end'); assert.equal(service.snapshot().status, 'ended');
+  service.dispose();
+});
+
+test('a device with only foreign voices reports unsupported, then can retry after Chinese voices arrive', async () => {
+  const { speech, service, clock } = setup();
+  speech.voices = [{ lang: 'vi-VN', name: 'Vietnamese' }, { lang: 'en-US', name: 'Chinese named English' }];
+  const pending = service.speak('我是学生'); clock.fire();
+  assert.equal((await pending).code, 'unsupported');
+  assert.equal(service.snapshot().status, 'error');
+  assert.equal(speech.spoken.length, 0);
+  assert.equal(speech.listeners.size, 0);
+  speech.voices.push({ lang: 'zh-TW', name: '國語' });
+  const retry = service.replay(); speech.spoken[0].emit('start');
+  assert.equal((await retry).ok, true);
+  service.dispose();
+});
+
+test('switching media cancels speech, and a cancelled waiting voice request cannot start after leaving its view', async () => {
+  const state = setup(); const { speech, audio, service, clock } = state;
+  const view = new AbortController();
+  const waiting = service.speak('你好', { signal: view.signal });
+  const original = service.play(track());
+  assert.equal((await waiting).code, 'cancelled');
+  const cancelledCount = speech.cancelCount;
+  assert.ok(cancelledCount >= 2);
+  speech.voices = [{ lang: 'zh-CN', name: '普通话' }]; speech.emit('voiceschanged');
+  view.abort(); assert.deepEqual(clock.delays, [15000]);
+  assert.equal(speech.spoken.length, 0);
+  audio.metadata(); audio.playing(); await original;
+  const utterance = service.speak('再见'); speech.spoken[0].emit('start'); await utterance;
+  assert.equal(audio.paused, true);
+  assert.equal(service.snapshot().sourceKind, 'tts');
+  assert.equal(state.externalStops, 3);
+  service.dispose();
+});
+
+test('disposal cancels pending work, clears timers and listeners, and isolates observers and snapshots', async () => {
+  const { audio, service, clock } = setup();
+  let notifications = 0;
+  service.subscribe(() => { throw new Error('bad view'); });
+  service.subscribe(() => { notifications++; });
+  const pending = service.play(track());
+  const copy = service.snapshot(); copy.request.label = 'tampered';
+  assert.equal(service.snapshot().label, 'Xin chào');
+  service.dispose();
+  assert.equal((await pending).code, 'cancelled');
+  assert.equal(clock.count, 0);
+  assert.equal(audio.listeners.size, 0);
+  const count = notifications;
+  audio.metadata(); audio.playing(); service.setRate(0.75);
+  assert.equal(notifications, count);
+  assert.equal(service.snapshot().status, 'idle');
+  assert.equal((await service.play(track())).code, 'cancelled');
+});
+
+test('a view stopping synchronously on a loading notification cannot resurrect media or leave voice timers', async () => {
+  const { audio, speech, service, clock } = setup();
+  service.subscribe(() => { if (service.snapshot().status === 'loading') service.stop(); });
+  assert.equal((await service.play(track())).code, 'cancelled');
+  assert.equal(audio.calls.length, 0);
+  assert.equal(audio.listeners.size, 0);
+  assert.equal((await service.speak('你好')).code, 'cancelled');
+  assert.equal(speech.listeners.size, 0);
+  assert.equal(clock.count, 0);
+  service.dispose();
+});

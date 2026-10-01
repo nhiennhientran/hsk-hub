@@ -1,6 +1,7 @@
 import type { Feature, FeatureModule, ModuleStatus, MountHandle, Route } from './contracts.ts';
 
 export interface LifecycleOptions {
+  audio?: () => Promise<import('../services/audio/index.ts').AudioService>;
   learning?: () => Promise<import('../services/learning/session.ts').LearningSession>;
   host: HTMLElement;
   loadModule(feature: Feature, signal: AbortSignal): Promise<FeatureModule>;
@@ -148,6 +149,7 @@ export function createLifecycle(options: LifecycleOptions): Lifecycle {
         signal: attempt.controller.signal,
         navigate,
         learning: options.learning,
+        audio: options.audio,
       });
       const ready = untilAborted(attempt.handle.ready, attempt.controller.signal);
       if (!isCurrent(attempt)) {
