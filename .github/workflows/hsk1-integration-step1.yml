@@ -9,6 +9,7 @@ on:
       - 'tools/integration-step1-textbook.js.in'
       - 'tools/serve-integration-step1.cjs'
       - 'tools/tests/integration-step1*'
+      - 'tools/review/hsk1-listening-device-review.html'
       - 'new-hsk1/hsk1/**'
 permissions:
   contents: read
@@ -35,6 +36,7 @@ jobs:
         run: |
           python tools/apply-integration-step1.py
           python tools/refine-integration-step1.py
+          python tools/tests/integration-step1-repair-harness.py
           node --check tools/tests/integration-step1-browser.cjs
           node --check tools/tests/integration-step1-extra.cjs
           node --check new-hsk1/hsk1/textbook-integration-corrections.js
@@ -48,14 +50,14 @@ jobs:
           python - <<'PY'
           import subprocess
           changed=subprocess.check_output(['git','diff','--name-only'],text=True).splitlines()
-          allowed={'new-hsk1/hsk1/learning-integrated.js','new-hsk1/hsk1/learning-integrated.css','new-hsk1/hsk1/learning-links.js','new-hsk1/hsk1/learning.html','new-hsk1/hsk1/index.html','new-hsk1/hsk1/lesson.html','new-hsk1/hsk1/stage2/app.js','new-hsk1/hsk1/stage3/app.js','new-hsk1/hsk1/stage3/player.js','new-hsk1/hsk1/textbook-integration-corrections.js','tools/tests/stage3-engine.test.cjs','tools/tests/integration-step1-browser.cjs'}
+          allowed={'new-hsk1/hsk1/learning-integrated.js','new-hsk1/hsk1/learning-integrated.css','new-hsk1/hsk1/learning-links.js','new-hsk1/hsk1/learning.html','new-hsk1/hsk1/index.html','new-hsk1/hsk1/lesson.html','new-hsk1/hsk1/stage2/app.js','new-hsk1/hsk1/stage3/app.js','new-hsk1/hsk1/stage3/player.js','new-hsk1/hsk1/textbook-integration-corrections.js','tools/tests/stage3-engine.test.cjs','tools/tests/integration-step1-browser.cjs','tools/tests/integration-step1-extra.cjs'}
           assert set(changed)<=allowed, changed
           PY
-          git add new-hsk1/hsk1/learning-integrated.js new-hsk1/hsk1/learning-integrated.css new-hsk1/hsk1/learning-links.js new-hsk1/hsk1/learning.html new-hsk1/hsk1/index.html new-hsk1/hsk1/lesson.html new-hsk1/hsk1/stage2/app.js new-hsk1/hsk1/stage3/app.js new-hsk1/hsk1/stage3/player.js new-hsk1/hsk1/textbook-integration-corrections.js tools/tests/stage3-engine.test.cjs tools/tests/integration-step1-browser.cjs
+          git add new-hsk1/hsk1/learning-integrated.js new-hsk1/hsk1/learning-integrated.css new-hsk1/hsk1/learning-links.js new-hsk1/hsk1/learning.html new-hsk1/hsk1/index.html new-hsk1/hsk1/lesson.html new-hsk1/hsk1/stage2/app.js new-hsk1/hsk1/stage3/app.js new-hsk1/hsk1/stage3/player.js new-hsk1/hsk1/textbook-integration-corrections.js tools/tests/stage3-engine.test.cjs tools/tests/integration-step1-browser.cjs tools/tests/integration-step1-extra.cjs
           if ! git diff --cached --quiet; then
             git config user.name 'HSK integration review'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m 'Step 1: apply source-verified first-eight textbook and session-continuation repairs'
+            git commit -m 'Step 1: align acceptance with real DOM, origins and imported navigation'
             git push origin HEAD:refs/heads/work/hsk1-stage4-1-runtime-20261001
           fi
           echo "candidate=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
@@ -102,5 +104,6 @@ jobs:
             tools/tests/stage2-engine.test.cjs
             tools/tests/stage3-engine.test.cjs
             tools/serve-integration-step1.cjs
+            tools/review/hsk1-listening-device-review.html
           retention-days: 14
           if-no-files-found: error
