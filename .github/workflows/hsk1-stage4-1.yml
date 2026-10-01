@@ -11,12 +11,23 @@ on:
       - 'tools/serve-stage4-1.cjs'
       - 'tools/tests/stage4-1-browser.cjs'
       - '.github/workflows/hsk1-stage4-1.yml'
+  pull_request:
+    branches: ['gh-pages']
+    paths:
+      - 'new-hsk1/hsk1/learning.html'
+      - 'new-hsk1/hsk1/learning-integrated.*'
+      - 'new-hsk1/hsk1/learning-links.js'
+      - 'new-hsk1/hsk1/stage2/**'
+      - 'new-hsk1/hsk1/stage3/**'
+      - 'tools/serve-stage4-1.cjs'
+      - 'tools/tests/stage4-1-browser.cjs'
+      - '.github/workflows/hsk1-stage4-1.yml'
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   acceptance:
-    if: startsWith(github.ref, 'refs/heads/work/hsk1-stage4-1-')
+    if: startsWith(github.ref, 'refs/heads/work/hsk1-stage4-1-') || startsWith(github.head_ref, 'work/hsk1-stage4-1-')
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
