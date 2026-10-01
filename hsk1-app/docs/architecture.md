@@ -1,8 +1,10 @@
-# 架构与第1步边界
+# 架构与实施边界
 
 本次采用独立 `hsk1-app/`：TypeScript、原生ES模块、Vite和CSS。复用有效教材、核定题库、媒体及纯规则；重整入口、路由、视图和公共服务。不加入React/Next.js、服务器、帐号、通用组件框架、插件系统、事件总线或巨型store。
 
 **第1步只冻结数据与接口、建立可build/typecheck的工程状态页。** 入口为 `index.html → src/app/main.ts`；不实现正式教材/作业/听力/词汇视图，不实现最终router，不全量改写规则引擎为TS，不改 `new-hsk1/hsk1/` runtime，不发布。以下是后续目标契约，不是已完成功能。
+
+第2步已实现统一外壳、单一路由、7个按需ESM预览入口、原会话gate和mount/ready/unmount。loading禁用操作，旧任务取消并隔离，失败保留路由重试；完整视图与存储/媒体服务仍按第3—7步接入。`content/course-index.json`仅从新content生成课程摘要，build检查是否过期，不是新的教材编辑来源。具体证据见 [`step2-acceptance.md`](step2-acceptance.md)。
 
 ## 目录与职责
 

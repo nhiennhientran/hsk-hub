@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "step": 2,
+  "recordedAt": "2026-10-01T14:15:18.054Z",
+  "baselineCommit": "7f2e012e4eeecec5ccc868ddef96b2da28c3ab21",
+  "branch": "work/hsk1-modular-step2-20261001",
+  "scope": "shell_router_lifecycle_session_metadata_previews",
+  "checks": {
+    "catalog": "passed",
+    "unit": {
+      "passed": 39,
+      "skipped": 0,
+      "groups": {
+        "catalog": 9,
+        "router": 9,
+        "lifecycle": 12,
+        "auth": 9
+      }
+    },
+    "build": "passed",
+    "htmlAliases": "byte_identical",
+    "developmentAliases": [
+      "/",
+      "/lesson.html?id=15&sec=hanzi",
+      "/learning.html?mode=vocab&lesson=7"
+    ],
+    "browser": {
+      "engine": "chromium",
+      "executableVersion": "153.0.8010.0",
+      "playwrightVersion": "1.62.1",
+      "startTime": "2026-10-01T14:10:20.397Z",
+      "duration": 11448.8,
+      "expected": 10,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "requirementsStableIds": 45,
+    "dependenciesAndLockUnchanged": true,
+    "legacyStudentFilesUnchanged": true
+  },
+  "sourceSha256": {
+    "content/course-index.json": "aeb5db3563e5d606a7b9fd045ae0f7f61994a9b03efd5a96f1b1e9099f482bb0",
+    "index.html": "405f2e39c4e03a96e3cc0abd87d46c001a7703264d55c5a62f4d550ae9c6df7b",
+    "package-lock.json": "7ffba9da47e689f8e4ffd721aa1b69aa18cb27a83a7f65bb650e486dd68cbc55",
+    "package.json": "95fbe32f559b8ff5c7e3436a785fcae13c1628c8c5f1a01b91161398f011d56c",
+    "playwright.config.ts": "4f972272c320cc52977e906679bd4b833ca57e4eeb70b6a9ea4692789a963b55",
+    "src/app/contracts.ts": "40b0a17bdb13b7e44c7044b6fd205c08916f87197ca848258b38529277d28af2",
+    "src/app/labels.ts": "c422edf0cf3a243c0b2b431961ee0f49f4f8356fbc305480a8bbc37dfb93f2e3",
+    "src/app/lifecycle.ts": "921c9aceede6b3628b70180225e927be1234d6096ecc902da4354b7fc701af15",
+    "src/app/main.ts": "9ead57e02f70227b57cfa69ba748555e3b9560a983a5a3f8e228a8ead5e02391",
+    "src/app/router.ts": "784a32a77a81d13359388a451f528bd35ee9c9c1583c162f341b078fbffda758",
+    "src/app/styles.css": "d4d0c00329c790751e79f5a6accc14ac4b6c09a1b8c2dca69e40c640d7d7b052",
+    "src/features/entry.ts": "8e4ebf7ad7b2a197770895ae71b39656d08735c0bbe131113429bf3e9b818cdc",
+    "src/features/home/index.ts": "573a403e5dc1e1aa5750c3c4959b38b7ab03aafe3294acc77d0a0ca395691494",
+    "src/features/homework/index.ts": "95f9e6e3b9eb443814baedea8a20f705a7eea7535ac96020c2bfdf58ed650797",
+    "src/features/listening/index.ts": "8020727cd285035e2722c6c77ccb67794f960eff15db71b92164d082c83f3e3d",
+    "src/features/progress/index.ts": "42af06ded876fa90c373eac2a5f89354ecf84d81efdc0e9dc1c363eb4e81e543",
+    "src/features/review/index.ts": "3b091464df4279b3c04389f2134397a8de7e51484ee6e029ec1f21f9926f9b10",
+    "src/features/textbook/index.ts": "c0ef37fa47bffa1d5d5e3de908f6c2bcaed03154867b3e6bc49dbd20ba0bc5b2",
+    "src/features/vocabulary/index.ts": "6a425a97eefbc4572e889a6ea2cbe467f6f607b91216456e51336ca77c63d3fb",
+    "src/services/auth/index.ts": "c9e94693a357346b646f1f205dec5d6c3f576fe646d2bff9c07b5ceb0df7b172",
+    "src/services/content/index.ts": "cfb69a76da67f3939c01892c112688ef0cf675221e69841c8a2e0fb2c132cea3",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "tests/auth.test.mjs": "9e86ca305ed1b0504b399c37139fb6c3b85b2615a2f3052c8a7bd763024901cf",
+    "tests/browser/navigation.spec.ts": "e71525bee7fb082e62c7d8d3337a1476d240d0a933855b9d70132efc58f25e36",
+    "tests/browser/scaffold.spec.ts": "c6e26e5e7953d8308d3e675066e4e5dbdc63017fdef4ed70799d655417615913",
+    "tests/catalog.test.mjs": "9564b3a8a2eb2d294565bfcd5d9f896170f6bfc78f036d21a47420677cfea02e",
+    "tests/lifecycle.test.mjs": "7d10661b368c3068bfebab8daf31cdc711587f2c2831bf1249479607030a1272",
+    "tests/router.test.mjs": "09bd44a42b073483d86ab0c305c707030d1e3f5fbee4cc3e9445c024991e73c7",
+    "tools/catalog.mjs": "73414a995338f1d7c94cba9cbe535d01054bcaae809122472236dc117a615349",
+    "tools/course-index.mjs": "3b2a20c9e9fc86586df1eeabc2d8cf172a2a5e4030df31a916c0c16a91acfa9a",
+    "tools/reproduce-init.mjs": "3fff5d3a9930ecd62d4f42a055e68974a9d288cde83b70994b504cf059e5e316",
+    "tools/run-checkpoint.mjs": "c35b063fa2719132fec784068a9f1095a61e733dc7d5ec83ecc015f8a782669d",
+    "tools/test-legacy.mjs": "deab68d014adf55c0cb554fcdacb0b3398461f0acb90223ca91a99532871d88b",
+    "tsconfig.json": "5cd93fa698107542d3ac8a85b50aa675c35f405f7be7f3be0ae0cea1e3fa62c1",
+    "vite.config.ts": "39978dd53702ea864e8896fa58d273f951488572421a67072c5d7012e081c2a3"
+  },
+  "limitations": [
+    "Local WebKit not run; standard Chromium and WebKit required in branch CI.",
+    "No full learning modules, persistence or real media are implemented in this step.",
+    "Historic legacy WebKit failure is not marked fixed."
+  ]
+}

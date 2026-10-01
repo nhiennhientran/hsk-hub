@@ -1,6 +1,6 @@
 # HSK 1 重构工程
 
-第1步冻结需求与源数据，建立可检查、可构建的工程。当前页面是工程检查页，尚未接入学生功能。生产入口仍使用原目录。
+第1步冻结需求与源数据；第2步建立统一入口、导航、会话gate和模块生命周期。当前7个模块是明确标注的预览入口，完整练习与保存尚未接入。生产入口仍使用原目录。
 
 ## 运行
 
@@ -21,12 +21,14 @@ npm run dev
 ## 浏览器检查
 
 ```sh
-npx playwright install chromium
+npx playwright install chromium webkit
 npm run test:smoke
 npm run test:repro
 ```
 
-`test:smoke` 检查构建产物的启动、最低320px视口和脚本错误。`test:repro` 针对未修改的旧页面，控制延迟 `stage3/app.js`，确认初始化前的点击可能丢失；复现成功表示风险存在，不表示修复完成。默认输出 `.repro-output/init-race.json`。可加 `-- --browser=webkit`；两项命令都可使用 `HSK_BROWSER_PATH` 指定兼容的 Chromium。
+`test:smoke` 在Chromium/WebKit运行10个导航/会话/生命周期场景，结果写入 `.repro-output/step2-browser.json`；使用 `-- --project=chromium` 可定向运行。`npm test` 和 `test:smoke` 从原公开静态gate注入兼容验收口令，日志不输出口令；也支持环境变量 `HSK_TEST_PASSWORD` 覆盖，不省略正确口令检查。
+
+`test:repro` 仍针对未修改的旧页面，控制延迟 `stage3/app.js`，确认原初始化窗口；不是新外壳回归。默认输出 `.repro-output/init-race.json`，可加 `-- --browser=webkit`。兼容Chromium可通过 `HSK_BROWSER_PATH` 指定，仅应用于Chromium项目。
 
 ## 接续依据
 
@@ -38,4 +40,6 @@ npm run test:repro
 - `docs/known-issues.md`：已知风险与修复阶段。
 - `docs/progress.md`：短交接记录，每一步只更新当前结果和下一步。
 
-后续功能位于 `src/features`，纯规则位于 `src/domain`，存储、媒体、内容和认证服务位于 `src/services`。第2步再建立唯一 `src/app/router.ts` 与模块生命周期，避免第1步提前增加未验收功能。
+功能位于 `src/features`，纯规则位于 `src/domain`，公共服务位于 `src/services`。唯一 `src/app/router.ts`拥有URL。每个模块 `mount` 返回 `ready` 和幂等 `unmount`，异步任务/监听使用传入signal；后续媒体/草稿资源也由该句柄退出时停止/保存。
+
+`npm run index:generate`仅从新content生成小型课程摘要，`index:check`和build拒绝陈旧索引。开发与生产均支持lesson.html/learning.html别名，标准地址为 `#/textbook?lesson=10&section=text` 等；发布原路径映射在第9步完成。

@@ -1,0 +1,38 @@
+name: HSK1 modular step2
+on:
+  push:
+    branches: ['work/hsk1-modular-step2-20261001']
+    paths: ['hsk1-app/**', '.github/workflows/hsk1-modular-step2.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  checkpoint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: hsk1-app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+          cache: npm
+          cache-dependency-path: hsk1-app/package-lock.json
+      - run: npm ci
+      - run: npm run catalog:check
+      - run: npm test
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium webkit
+      - run: npm run test:smoke
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: step2-browser-evidence
+          path: |
+            hsk1-app/.repro-output/step2-browser.json
+            hsk1-app/test-results/
+          include-hidden-files: true

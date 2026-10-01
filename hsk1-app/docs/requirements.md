@@ -4,6 +4,8 @@
 
 机器可读同源矩阵：[`requirements.json`](requirements.json)。R编号固定；后续逐项追加执行证据，不能用旧版本通过声明替代新应用验收。
 
+第2步执行证据：统一入口、路由、会话gate和生命周期已完成；R001/R010/R036/R037/R039/R041在JSON增加本步证据，最终完整需求状态仍为部分验证。下面保留第1步需求定义与基线口径，当前进度见 [`step2-acceptance.md`](step2-acceptance.md) 和 `progress.md`。
+
 ## 阶段与证据口径
 
 | 阶段 | 目标 |

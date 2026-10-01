@@ -3,18 +3,19 @@
   "title": "HSK1 模块化改造需求与验收矩阵",
   "baseline": {
     "sourceCommit": "71b39192133c82f684384f450dda6079d3253440",
-    "workBranch": "work/hsk1-modular-step1-20261001",
+    "workBranch": "work/hsk1-modular-step2-20261001",
     "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
     "independentStep2Commit": "2c6d3b38866dcfbcf101974302609c470f1d2443",
     "independentStep3Commit": "de823050e97cbab64144197f3bf9241321b73c59",
-    "first8CandidateCommit": "8ffecf1031abb52b863c6a05b38f24a8ae5c2af6"
+    "first8CandidateCommit": "8ffecf1031abb52b863c6a05b38f24a8ae5c2af6",
+    "step2StartCommit": "7f2e012e4eeecec5ccc868ddef96b2da28c3ab21"
   },
   "scope": {
-    "currentStep": 1,
+    "currentStep": 2,
     "authorizedStepsThisTurn": [
-      1
+      2
     ],
-    "runtimeChanged": false,
+    "runtimeChanged": true,
     "productionPublished": false,
     "excluded": [
       "教师后台",
@@ -23,7 +24,8 @@
       "AI翻译批改",
       "自动口语评分",
       "复杂自适应学习算法"
-    ]
+    ],
+    "originalStudentRuntimeChanged": false
   },
   "steps": [
     {
@@ -64,11 +66,11 @@
     }
   ],
   "evidencePolicy": {
-    "data": "本步只读有效数据计数/字段结构；不代表新界面或内容语言通过。",
-    "code": "只读基线代码可见实现；本步未实际运行该功能。",
-    "architecture": "已确认目标契约；实现与行为验收留目标阶段。",
-    "scope": "用户确认的范围与验收条件；目标阶段尚未执行。",
-    "acceptance": "所有新增应用功能验收均为pending；已有阶段证据不得自动继承为新应用通过。"
+    "data": "第1步基线有效数据计数/字段结构；不代表新界面或内容语言通过。",
+    "code": "第1步只读基线代码可见实现；新增应用的实际验证以stepEvidence及limits为准。",
+    "architecture": "目标契约已确认；新增实现与行为验收按各步骤stepEvidence及limits登记。",
+    "scope": "用户确认的范围与验收条件；未登记通过的目标功能仍待执行。",
+    "acceptance": "默认待验收；第2步仅6项具有受限部分验证，范围以stepEvidence及limits为准。旧阶段证据不得自动继承为新应用通过。"
   },
   "requirements": [
     {
@@ -89,7 +91,15 @@
       ],
       "acceptance": "核对基线SHA、原路径diff、数据/媒体哈希、9步范围；第1步不改旧runtime、不发布。",
       "evidenceStatus": "scope",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 2,
+          "status": "passed_for_step2_scope",
+          "report": "docs/step2-acceptance.md",
+          "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        }
+      ]
     },
     {
       "id": "R002",
@@ -274,7 +284,15 @@
       ],
       "acceptance": "旧URL映射、课次/节参数、后退前进/刷新/继续；课程阅读标记与作业完成分开。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 2,
+          "status": "passed_for_step2_scope",
+          "report": "docs/step2-acceptance.md",
+          "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        }
+      ]
     },
     {
       "id": "R011",
@@ -794,7 +812,15 @@
       ],
       "acceptance": "错误/正确口令、Enter、刷新/会话；原URL入口和返回选级；受测正式域实际验证，不借测试域绕过算通过。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 2,
+          "status": "passed_for_step2_scope",
+          "report": "docs/step2-acceptance.md",
+          "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        }
+      ]
     },
     {
       "id": "R037",
@@ -821,7 +847,15 @@
       ],
       "acceptance": "第1步骨架build/typecheck；后续学生dist只有一套应用，不运行旧双app桥接/补丁链；审查依赖和职责。",
       "evidenceStatus": "architecture",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 2,
+          "status": "passed_for_step2_scope",
+          "report": "docs/step2-acceptance.md",
+          "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        }
+      ]
     },
     {
       "id": "R038",
@@ -871,7 +905,15 @@
       ],
       "acceptance": "依赖审查：规则不依赖DOM/storage/media，视图仅本领域，服务无页面ID；新功能修改点可说明。",
       "evidenceStatus": "architecture",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 2,
+          "status": "passed_for_step2_scope",
+          "report": "docs/step2-acceptance.md",
+          "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        }
+      ]
     },
     {
       "id": "R040",
@@ -917,7 +959,15 @@
       ],
       "acceptance": "慢加载提前点击、快速切换、连续通知、反复挂载；ready依据真实初始化；相同状态不重复history写入。",
       "evidenceStatus": "architecture",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 2,
+          "status": "passed_for_step2_scope",
+          "report": "docs/step2-acceptance.md",
+          "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        }
+      ]
     },
     {
       "id": "R042",

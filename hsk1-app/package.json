@@ -11,11 +11,13 @@
     "catalog:generate": "node tools/catalog.mjs --write",
     "catalog:check": "node tools/catalog.mjs --check",
     "check": "tsc --noEmit",
-    "test": "node --test tests/*.test.mjs",
+    "test": "node tools/run-checkpoint.mjs unit",
+    "index:generate": "node tools/course-index.mjs --write",
+    "index:check": "node tools/course-index.mjs",
     "test:legacy": "node tools/test-legacy.mjs",
     "test:repro": "node tools/reproduce-init.mjs",
-    "test:smoke": "playwright test",
-    "build": "npm run check && vite build",
+    "test:smoke": "node tools/run-checkpoint.mjs browser",
+    "build": "npm run index:check && npm run check && vite build",
     "preview": "vite preview --host 127.0.0.1"
   },
   "devDependencies": {
