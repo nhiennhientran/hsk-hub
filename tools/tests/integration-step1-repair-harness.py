@@ -3,6 +3,7 @@ ROOT=Path(__file__).resolve().parents[2]
 p=ROOT/'tools/tests/integration-step1-browser.cjs';s=p.read_text()
 s=s.replace("({key,raw})=>localStorage.getItem(key)||localStorage.setItem(key,raw)","({key,raw})=>{if(location.protocol!=='http:')return;localStorage.getItem(key)||localStorage.setItem(key,raw);}")
 s=s.replace("({old,key})=>{if(!localStorage.getItem(key))", "({old,key})=>{if(location.protocol!=='http:')return;if(!localStorage.getItem(key))")
+s=s.replace("await p.locator('[data-receipt]').click();assert.equal(await p.locator('.s1-receipt-item').count(),5);", "await p.locator('[data-receipt]').click();assert.equal(await p.locator('#exercise').isVisible(),false,'Receipt mode must hide the homework page');assert.equal(await p.locator('.s1-receipt-item').count(),5);")
 p.write_text(s)
 p=ROOT/'tools/tests/integration-step1-extra.cjs';s=p.read_text()
 s=s.replace("'#vocabGrid .vocab-card'", "'#vocabGrid .vcard'")
@@ -19,4 +20,4 @@ if 'Human listening review page' not in s:
   await p.locator('#device').fill('Synthetic review test - not a real phone');const wait=p.waitForEvent('download');await p.locator('#export-review').click();const d=await wait,dest=file('human-review-test.json');await d.saveAs(dest);const data=JSON.parse(fs.readFileSync(dest,'utf8'));assert.equal(data.unchecked.length,75);assert.equal(Object.keys(data.items).length,0);assert.equal(await p.locator('[data-device]').count(),9);await screenshot(p,'human-review-page',false);
  });\n'''+s[pos:]
 p.write_text(s)
-print('Test-only DOM, import-navigation and fixture-origin corrections applied.')
+print('Test-only DOM, import-navigation, screenshot and fixture-origin corrections applied.')
