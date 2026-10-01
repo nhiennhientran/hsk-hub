@@ -54,7 +54,7 @@ async function doHomework(p,l){
  await part(p,'translation');await p.locator('#student-name').fill('KIỂM THỬ / 测试');await p.locator('#student-class').fill('I1-'+l);
  const answers={};for(const [i,q] of L.translation.entries()){answers[q.id]=`测试第${l}课，第${i+1}题。\n  Học tiếng Trung — giữ nguyên  。`;await p.locator('#input-'+q.id).fill(answers[q.id]);}
  await submit(p);assert.doesNotMatch(await p.locator('#submitted-result').innerText(),/\d+\/5 câu đúng/);
- await p.locator('[data-receipt]').click();assert.equal(await p.locator('.s1-receipt-item').count(),5);
+ await p.locator('[data-receipt]').click();assert.equal(await p.locator('#exercise').isVisible(),false,'Receipt mode must hide the homework page');assert.equal(await p.locator('.s1-receipt-item').count(),5);
  for(const [i,q] of L.translation.entries()){assert.equal(await p.locator('.s1-written-answer').nth(i).textContent(),answers[q.id]);report.tasks.push({id:q.id,lesson:l,kind:q.kind,status:'passed'});}
  assert.match(await p.locator('#receipt').innerText(),/Không chấm điểm/);await screenshot(p,`receipt-lesson-${l}`);
  await p.locator('[data-close-receipt]').click();await saved(p);
