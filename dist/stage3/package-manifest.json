@@ -1,0 +1,368 @@
+{
+  "stage": 3,
+  "zipFile": "HSK1-Step3-Review-Package.zip",
+  "bytes": 14511286,
+  "sha256": "09cb27ffb7387b3767951ffd6694dbfeefe3a6b3d2dcc095a55b3077dbc3650b",
+  "fileCount": 72,
+  "testedCommit": "6301e2d03fef32f334ca2fba1fd36d53189aa586",
+  "browserRun": "36816487219",
+  "studentFile": "HSK1-Step3-Listening-Vocabulary.html",
+  "studentSha256": "c65d9de4d08b324e83cf5defb5a82333b075c62090577b193e1bf88202dc273f",
+  "includes": [
+    {
+      "file": ".github/workflows/hsk1-stage3-audio-evidence.yml",
+      "bytes": 981,
+      "sha256": "55012d8dc764f4dbad4d9fb9526c5b60139c277e9a8d9ff67a31ec708af00056"
+    },
+    {
+      "file": ".github/workflows/hsk1-stage3-clip-evidence.yml",
+      "bytes": 1435,
+      "sha256": "d2e00dc68460d8f282fcf3f6d5672da4d1a948007a2a5ec9363c403da182c9c9"
+    },
+    {
+      "file": ".github/workflows/hsk1-stage3-recheck-evidence.yml",
+      "bytes": 1552,
+      "sha256": "f7c14bce2bb95a9cfd4031763ee2d1cbc13c2f174f4d4dd92527e89121add730"
+    },
+    {
+      "file": ".github/workflows/hsk1-stage3-review.yml",
+      "bytes": 2278,
+      "sha256": "87545f786068bb6c217a80d10552f9b19941e7d45aac7309c5b1dc86cc23d918"
+    },
+    {
+      "file": "README-ZH.md",
+      "bytes": 1455,
+      "sha256": "fa514f67acd78d6b088f77bf3eaad84ce8dc62df758bab8916ed414d8818b471"
+    },
+    {
+      "file": "dist/stage3/HSK1-Step3-Listening-Vocabulary.html",
+      "bytes": 9514874,
+      "sha256": "c65d9de4d08b324e83cf5defb5a82333b075c62090577b193e1bf88202dc273f"
+    },
+    {
+      "file": "dist/stage3/HSK1-Step3-Teacher-Guide.html",
+      "bytes": 411909,
+      "sha256": "0b304f1a445b988abbf503a7c0703e3273803ff925c9471a6de8a9c1bc12f1be"
+    },
+    {
+      "file": "dist/stage3/build-manifest.json",
+      "bytes": 6169,
+      "sha256": "d21f75da03ec482fd6ffb6e039c4e77b113c19fbac5503d1969ac2f19e7c1435"
+    },
+    {
+      "file": "docs/stage1/course-map.json",
+      "bytes": 680474,
+      "sha256": "714cd10d7be4c490757de9c14ecfbd8d1f71aaba9293077d107c60cd22449c93"
+    },
+    {
+      "file": "docs/stage3/README.md",
+      "bytes": 8409,
+      "sha256": "78aca5a9ef6ee2babd72e084fbfb4c5f8aa27faab24d3cbf992799f982a8c143"
+    },
+    {
+      "file": "docs/stage3/acceptance.md",
+      "bytes": 8151,
+      "sha256": "7fd8c6733d07d35123fca83548f51254e3f7b53136025d73b3195bf6e348416e"
+    },
+    {
+      "file": "docs/stage3/asr-recheck-ids.json",
+      "bytes": 834,
+      "sha256": "3a560796f2fc9a1c37232436957a4835d91df0d1584d1936263b9d3379de9973"
+    },
+    {
+      "file": "docs/stage3/audio-audit.md",
+      "bytes": 13051,
+      "sha256": "51f573d3dcd4e1862fe7d3bb9423aa7db531ef8a41f7ca4a545159d9277799f3"
+    },
+    {
+      "file": "docs/stage3/audio-source-manifest.json",
+      "bytes": 90606,
+      "sha256": "ca803cbfb749022aa716d216939696387befac42ea914350d28c79076debce43"
+    },
+    {
+      "file": "docs/stage3/content-01-05.md",
+      "bytes": 42657,
+      "sha256": "b84ed2ae5e0c3e1911591bba6907cbf183eae7a9ef8403f77af917f090944e75"
+    },
+    {
+      "file": "docs/stage3/content-06-10.md",
+      "bytes": 39620,
+      "sha256": "2a26da50a0c5030a54654894d729345ae30ce24e73d0d75fcbc198e6a9c80d3a"
+    },
+    {
+      "file": "docs/stage3/content-11-15.md",
+      "bytes": 55410,
+      "sha256": "33f1d1d0737ca402d9f56d7e89083fedd18e85961f1276e6ebb55b5152dcd5c0"
+    },
+    {
+      "file": "docs/stage3/data-contract.md",
+      "bytes": 5864,
+      "sha256": "56e220501bda9a7c890f68070a5cacc166074e41bc5090f3b30b79c41ff0fbf4"
+    },
+    {
+      "file": "docs/stage3/engine-api.md",
+      "bytes": 10540,
+      "sha256": "f04193fa92882eefc136f07515b134a0bea4a098630ad0897ddaac29176b7a50"
+    },
+    {
+      "file": "docs/stage3/independent-review.md",
+      "bytes": 22249,
+      "sha256": "88425b0eb075c92375cefd3155d89f2ba6e5527f24cf3dad2b2405a6de4de490"
+    },
+    {
+      "file": "docs/stage3/listening-boundary-review.json",
+      "bytes": 1127680,
+      "sha256": "00259d5e6d91d3eef3f61810bdfcb9eea56e8802cbcf3461836bdbf071e9401b"
+    },
+    {
+      "file": "docs/stage3/listening-boundary-review.md",
+      "bytes": 20486,
+      "sha256": "8df59cb1600cfc632b7f263702428c0901157a75fb68c088b54c4eef4fdcae8c"
+    },
+    {
+      "file": "docs/stage3/player-api.md",
+      "bytes": 3923,
+      "sha256": "75cfb776fdb07315059206a9bd5fd22122db6199117dfae4f6e1735f39f5d78e"
+    },
+    {
+      "file": "new-hsk1/hsk1/learning.css",
+      "bytes": 13776,
+      "sha256": "76ba6a1608aca71fcd610781ef84755cdf38413b90f6d48cf17f9077a0a01a31"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/app.js",
+      "bytes": 32331,
+      "sha256": "9f8613a01154c8e692df4f9d91afddced0b574be1d019706c37623ba401fc45a"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/catalog.js",
+      "bytes": 346928,
+      "sha256": "4d377f18461f58f103120adde9aed74713fc7478bb5933f4e23177e637a04f80"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/data/listening-01-05.json",
+      "bytes": 35502,
+      "sha256": "fb797a5ef68a80528d156c010b86a473232f348e1c627f654c1344bc40ac35ab"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/data/listening-06-10.json",
+      "bytes": 36620,
+      "sha256": "227591b13ccb68f70b2f5541a8805cc5c7b7235be1e77031ab53b9e3de862863"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/data/listening-11-15.json",
+      "bytes": 40516,
+      "sha256": "fbca8e884b46676543a111e3315865e4486e4deb9d6af7acec32bb3298fb1db5"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/data/vocabulary-01-05.json",
+      "bytes": 62773,
+      "sha256": "4f3e6bb8f34e363b27a5c24e80a0c4ebd75dbc08c31cc96e45b8d26098342158"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/data/vocabulary-06-10.json",
+      "bytes": 73332,
+      "sha256": "3725a4a960f6524d37936a1d2af7d3a6f30f36334bf59fad568acfdd3839d53b"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/data/vocabulary-11-15.json",
+      "bytes": 69430,
+      "sha256": "d6f36fa90412052ae2e994d058a4a06884512603f9a1a9ce86e88f206e291e54"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/engine.js",
+      "bytes": 32929,
+      "sha256": "010cfde850b1b9a49f90b5b2ceb2c70991d255750c3514761f7b064401d36a17"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/index.html",
+      "bytes": 7363,
+      "sha256": "536323e1643170e606a92b64442f711a5ade01e7ebd38914e84ee678fa0001a4"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media-index.js",
+      "bytes": 58569,
+      "sha256": "d9be8f94d724d134aa99ce515a0c5f3f00b8899ad2f72a8ba4d8f3e72d45b993"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media-manifest.json",
+      "bytes": 265837,
+      "sha256": "8db6057d30614b46bc1e5e86d4024fabd397223f600bfc63d3ac5d37d67d01d6"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-01.js",
+      "bytes": 389389,
+      "sha256": "8d34277f9ff23cc096256fa6837eca72f2b134da6a90db765181409c5610aa3f"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-02.js",
+      "bytes": 401563,
+      "sha256": "0c67345b1915ccb34042e3b8f8f778ff3b9bcf6517c72f72078964ed4b139f97"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-03.js",
+      "bytes": 587596,
+      "sha256": "bb7176bdb9ebddb75411f8b4a4cf6f7139c688744cccbe636cdd1bb482fabbf3"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-04.js",
+      "bytes": 558853,
+      "sha256": "2b3b6b5f25383099dff66b873c03359ddaf9d02f375c46eabab22226cefed62c"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-05.js",
+      "bytes": 572236,
+      "sha256": "44b387b286055807622ad8f03348b9db1125157b3895bce4b11a9454f50fc9ce"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-06.js",
+      "bytes": 649363,
+      "sha256": "bf14a3241b67335f486cfada19359e2d22ad4a635ab5872cc6d18c80033e6d8c"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-07.js",
+      "bytes": 699439,
+      "sha256": "68f04d461519531ded5df88dfd47a2b099047cdcc97c6661027839d0346cdb2a"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-08.js",
+      "bytes": 605530,
+      "sha256": "ff055f6d9f11d53ce4618dc3f50c93afbf9174116b280013d0a94c9f9eb6f925"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-09.js",
+      "bytes": 654163,
+      "sha256": "7d202dddedbe6825750982d7eee51aef0ef1afeb296a646fe6c0c5fe327eb036"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-10.js",
+      "bytes": 632659,
+      "sha256": "e05a922498df2c7a73c7ba8a8e7f5b9e0299cfca6d5a5aed3a4c1345401660fe"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-11.js",
+      "bytes": 662305,
+      "sha256": "eef8f4b2996507acd8e1d7f2e99f20802d2811bb8dfe8360f3bb33d06fbf82aa"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-12.js",
+      "bytes": 642202,
+      "sha256": "cbe6a9a34ccbfb04518084f5f3e0af02a0dba95356b340097d097c7c9173e42d"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-13.js",
+      "bytes": 611902,
+      "sha256": "2fff684277abe06b469e77247d1d1e2b49442c60028738b7d3762877e12acd98"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-14.js",
+      "bytes": 735478,
+      "sha256": "f4f8ea35acf8c9f419211346b03d6baf8c1b4c987193e4628b12d8ed48b836f8"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media/lesson-15.js",
+      "bytes": 597694,
+      "sha256": "185ea85b48d8d587c512ff9c487e31d7e4172595b0cb948abe41f89e96ab5588"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/player.js",
+      "bytes": 10625,
+      "sha256": "0bd3e4ed9bd15a00be4d7f56d97ba1e2d78db32fc082fc67e78ddd21823534c8"
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/styles.css",
+      "bytes": 10972,
+      "sha256": "d581ebbe23858603a3ee31a84890b7ffb380f4045c780646af903195a9bed4a2"
+    },
+    {
+      "file": "tools/build-stage3-media.py",
+      "bytes": 7343,
+      "sha256": "9435385748707f349288fc38a21a9255174e98c434ffb5bc8bd86b2c609c3263"
+    },
+    {
+      "file": "tools/build-stage3-teacher.cjs",
+      "bytes": 24581,
+      "sha256": "4b4dcdcb1855e7cf618fab74002a32ea9b2aca45c852663cb40d79006f724ac3"
+    },
+    {
+      "file": "tools/build-stage3.cjs",
+      "bytes": 19308,
+      "sha256": "2983917ae80ad42d6ea13c36a0af91be300ac0931d2536d66d7c01bddc57a4d4"
+    },
+    {
+      "file": "tools/package-stage3.py",
+      "bytes": 5638,
+      "sha256": "e7c3d43c6a9de5b31aece043e0491cf63f9992ffdc382c72d3cd5f1065463ee7"
+    },
+    {
+      "file": "tools/serve-stage3.cjs",
+      "bytes": 2566,
+      "sha256": "20c9d0c7fba6cd433499f6eab141bc802d69daa32b8913d5a2e9616e2ef547d1"
+    },
+    {
+      "file": "tools/stage3-audio-audit.py",
+      "bytes": 8983,
+      "sha256": "cef9dc25ba23db088f044d283085b46b2e80dec57336bc198f6316de817cd7f7"
+    },
+    {
+      "file": "tools/stage3-transcribe-audio.py",
+      "bytes": 5982,
+      "sha256": "78293d835ac848dd7e53f9ee942d91db1866da099041e35ed49aa15dae844cb9"
+    },
+    {
+      "file": "tools/tests/results/stage3-asr-clips.json",
+      "bytes": 409757,
+      "sha256": "42d5b190193f08cf2ec4923d120d7c8325a0c534c4911142f050072b3363bbbd"
+    },
+    {
+      "file": "tools/tests/results/stage3-asr-recheck.json",
+      "bytes": 25608,
+      "sha256": "35a6dc737086b32d59d6a07265d3b95a3213625a64a982a8cdcb95d9ccb747e6"
+    },
+    {
+      "file": "tools/tests/results/stage3-asr-tracks.json",
+      "bytes": 482856,
+      "sha256": "312b1d9dda58d9856583c90bfaf502b63cc06a036bf5229b4fba2d38e8d305e4"
+    },
+    {
+      "file": "tools/tests/results/stage3-browser.json",
+      "bytes": 44481,
+      "sha256": "7f863872de19c5442734466b0fd47210702b2dc6983d9a7acd3fab6ec7e59d0a"
+    },
+    {
+      "file": "tools/tests/results/stage3-engine.tap",
+      "bytes": 5812,
+      "sha256": "07dc629d3243f9348abfd33ce48f95009098b6fd4b29061652f96dcfb39c3a68"
+    },
+    {
+      "file": "tools/tests/results/stage3-listening-feedback-390.png",
+      "bytes": 227370,
+      "sha256": "679816436b811f88de0f218d2f040a8181f4de183200e748387c6e6997b4ebfe"
+    },
+    {
+      "file": "tools/tests/results/stage3-review-schedule-desktop.png",
+      "bytes": 239674,
+      "sha256": "2f7ebd481e94ee6cda28015664f44dd3e52e331a4667a18040ce2dabe6f31238"
+    },
+    {
+      "file": "tools/tests/results/stage3-teacher-desktop.png",
+      "bytes": 215708,
+      "sha256": "e96a4cf7752fc9be800f9606e632171881c4375a85b5295de3443372ff96e089"
+    },
+    {
+      "file": "tools/tests/results/stage3-vocabulary-sense-390.png",
+      "bytes": 170212,
+      "sha256": "ae43cb4fa15f2500872935eea61af3fc225375d7d92a11f8187b9d529a5f6a53"
+    },
+    {
+      "file": "tools/tests/stage3-browser.cjs",
+      "bytes": 51356,
+      "sha256": "44dab48236a5b449a030a2303a57e78a6499e90e8b691f34fe2da1f43a115076"
+    },
+    {
+      "file": "tools/tests/stage3-engine.test.cjs",
+      "bytes": 25403,
+      "sha256": "cd87c70e145c7ad44d835f9fb2c3b44989bae2fba1d25cdaef2819f746414a77"
+    }
+  ]
+}

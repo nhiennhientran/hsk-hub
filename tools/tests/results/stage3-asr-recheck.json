@@ -1,0 +1,940 @@
+{
+  "purpose": "ASR evidence to compare against supplied textbook and reviewed audio boundaries",
+  "method": "automatic speech recognition; not direct human or assistant auditory perception",
+  "startedAt": "2026-10-01T04:45:42.469871+00:00",
+  "completedAt": "2026-10-01T04:47:26.630979+00:00",
+  "completed": true,
+  "sourceCommit": "6301e2d03fef32f334ca2fba1fd36d53189aa586",
+  "runId": "36816487307",
+  "python": "3.11.16",
+  "fasterWhisperVersion": "1.2.1",
+  "model": "medium",
+  "modelFiles": [
+    {
+      "file": "config.json",
+      "bytes": 2257,
+      "sha256": "3622a2ddc41ec0e0fd4e68c13c6830f03b90c38d89aaad184de02c8c642cf807"
+    },
+    {
+      "file": "model.bin",
+      "bytes": 1527906378,
+      "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae"
+    },
+    {
+      "file": "tokenizer.json",
+      "bytes": 2203239,
+      "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+    },
+    {
+      "file": "vocabulary.txt",
+      "bytes": 459861,
+      "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+    }
+  ],
+  "requestedIds": [
+    "v-l07-lex-c5a8f40bc0-s1",
+    "v-l07-lex-76a4159492-s1",
+    "v-l07-lex-41deb73412-s1",
+    "v-l07-lex-2d85d609b9-s1",
+    "v-l07-lex-22df192e24-s1",
+    "v-l07-lex-7b4bb888fb-s2",
+    "v-l07-lex-28bf227b9b-s1",
+    "l07-listen-02",
+    "v-l09-lex-586e4f0ccf-s1",
+    "v-l09-lex-7de8177ce7-s3",
+    "v-l09-lex-2161f1ab5a-s1",
+    "v-l09-lex-b967ce841a-s1",
+    "v-l09-lex-d3cc0cab9c-s1",
+    "v-l09-lex-fe04274cef-s1",
+    "v-l09-lex-327049aa37-s1",
+    "v-l09-lex-dae828fe4f-s1",
+    "v-l09-lex-aa89dd63b3-s1",
+    "v-l11-lex-5bfeda744c-s1",
+    "v-l12-lex-dad0d29a5e-s1",
+    "v-l11-lex-be9cb728a5-s1",
+    "v-l01-lex-91c76e0b5a-s1",
+    "v-l03-lex-0746bd6249-s1",
+    "v-l03-lex-cc5c537e83-s1",
+    "v-l03-lex-7f2fa5ddbe-s1",
+    "v-l04-lex-f7b2a6ee68-s1",
+    "v-l04-lex-3d647cfdc3-s1",
+    "v-l04-lex-dcf66dcd60-s1",
+    "v-l05-lex-15917f3b32-s1",
+    "v-l03-lex-f0ef38a883-s1"
+  ],
+  "options": {
+    "language": "zh",
+    "beam_size": 5,
+    "word_timestamps": true,
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "temperature": 0,
+    "initial_prompt": null
+  },
+  "expectedCount": 29,
+  "entries": [
+    {
+      "id": "l07-listen-02",
+      "file": "tmp/stage3-clips/l07-listen-02.mp3",
+      "bytes": 19056,
+      "sha256": "66b0c25624dc912ad7dd86350f62a1286431cedf6654ad9f7e11eb653c6fd195",
+      "duration": 3.079,
+      "language": "zh",
+      "elapsedSeconds": 3.81,
+      "text": "医院",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.48,
+          "text": "医院",
+          "avgLogprob": -0.3769422819217046,
+          "noSpeechProb": 0.0712859183549881,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.82,
+              "word": "医",
+              "probability": 0.990834653377533
+            },
+            {
+              "start": 0.82,
+              "end": 1.48,
+              "word": "院",
+              "probability": 0.9992375373840332
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l01-lex-91c76e0b5a-s1",
+      "file": "tmp/stage3-clips/v-l01-lex-91c76e0b5a-s1.mp3",
+      "bytes": 14880,
+      "sha256": "f3654971bb355f4f2d765bb4e43ef491f8a39b5f611cc81c9e02f901e699be2e",
+      "duration": 2.4,
+      "language": "zh",
+      "elapsedSeconds": 3.581,
+      "text": "闷",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.14,
+          "text": "闷",
+          "avgLogprob": -0.5391892910003662,
+          "noSpeechProb": 0.1846623420715332,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.14,
+              "word": "闷",
+              "probability": 0.9277516901493073
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l03-lex-0746bd6249-s1",
+      "file": "tmp/stage3-clips/v-l03-lex-0746bd6249-s1.mp3",
+      "bytes": 12864,
+      "sha256": "de5da5d5f0d732a87a5a1c2dd7eee2fd79ce60888a1a6e734661016fca43a5fc",
+      "duration": 2.043,
+      "language": "zh",
+      "elapsedSeconds": 3.564,
+      "text": "得",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.78,
+          "text": "得",
+          "avgLogprob": -0.8661947250366211,
+          "noSpeechProb": 0.41983696818351746,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.78,
+              "word": "得",
+              "probability": 0.3495066463947296
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l03-lex-cc5c537e83-s1",
+      "file": "tmp/stage3-clips/v-l03-lex-cc5c537e83-s1.mp3",
+      "bytes": 15168,
+      "sha256": "2616202c2cb434ae52239abb7d5a7457ebc4f2645e235d9597c1cc0df6091460",
+      "duration": 2.437,
+      "language": "zh",
+      "elapsedSeconds": 3.639,
+      "text": "盲",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.12,
+          "text": "盲",
+          "avgLogprob": -0.8770961761474609,
+          "noSpeechProb": 0.4733889698982239,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.12,
+              "word": "盲",
+              "probability": 0.6622022688388824
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l03-lex-f0ef38a883-s1",
+      "file": "tmp/stage3-clips/v-l03-lex-f0ef38a883-s1.mp3",
+      "bytes": 33456,
+      "sha256": "bfaca7831fd7a4f2ac3904e2081759bdcc3ccb4e8e852932b71e86cbcab82e3a",
+      "duration": 5.487,
+      "language": "zh",
+      "elapsedSeconds": 3.692,
+      "text": "谁 水",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.4,
+          "text": "谁 水",
+          "avgLogprob": -0.7173012693723043,
+          "noSpeechProb": 0.11259234696626663,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.16,
+              "word": "谁",
+              "probability": 0.7729849815368652
+            },
+            {
+              "start": 1.8,
+              "end": 2.4,
+              "word": " 水",
+              "probability": 0.6916698217391968
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l03-lex-7f2fa5ddbe-s1",
+      "file": "tmp/stage3-clips/v-l03-lex-7f2fa5ddbe-s1.mp3",
+      "bytes": 14304,
+      "sha256": "65b672affaba41038e6e901ab9c44d9292147dcc833757a68cb3b7350902e01b",
+      "duration": 2.282,
+      "language": "zh",
+      "elapsedSeconds": 3.595,
+      "text": "啪",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.46,
+          "text": "啪",
+          "avgLogprob": -0.881451416015625,
+          "noSpeechProb": 0.4495779871940613,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.46,
+              "word": "啪",
+              "probability": 0.5389364957809448
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l04-lex-f7b2a6ee68-s1",
+      "file": "tmp/stage3-clips/v-l04-lex-f7b2a6ee68-s1.mp3",
+      "bytes": 13584,
+      "sha256": "cf09aa0accdfbe3862ca9401f32bfd3b50ba39d81f466ea7f601836b02cde8a7",
+      "duration": 2.174,
+      "language": "zh",
+      "elapsedSeconds": 3.627,
+      "text": "鸽",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.06,
+          "text": "鸽",
+          "avgLogprob": -0.8191505074501038,
+          "noSpeechProb": 0.5954515933990479,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.06,
+              "word": "鸽",
+              "probability": 0.5665157238642374
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l04-lex-3d647cfdc3-s1",
+      "file": "tmp/stage3-clips/v-l04-lex-3d647cfdc3-s1.mp3",
+      "bytes": 17616,
+      "sha256": "908ec3efcf9ff6b703c74b4e9a028b205e291f8379fe4a9301a17efd5e1a303a",
+      "duration": 2.836,
+      "language": "zh",
+      "elapsedSeconds": 3.587,
+      "text": "妹妹",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.5,
+          "text": "妹妹",
+          "avgLogprob": -0.5662433624267578,
+          "noSpeechProb": 0.5941222906112671,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.9,
+              "word": "妹",
+              "probability": 0.9356814622879028
+            },
+            {
+              "start": 0.9,
+              "end": 1.5,
+              "word": "妹",
+              "probability": 0.9968242645263672
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l04-lex-dcf66dcd60-s1",
+      "file": "tmp/stage3-clips/v-l04-lex-dcf66dcd60-s1.mp3",
+      "bytes": 15024,
+      "sha256": "56e0167718b05a930a77ed879392331aace200c77003a2f90554a193cd5155c7",
+      "duration": 2.415,
+      "language": "zh",
+      "elapsedSeconds": 3.681,
+      "text": "拿",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.0,
+          "text": "拿",
+          "avgLogprob": -1.0745781362056732,
+          "noSpeechProb": 0.3722120225429535,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.0,
+              "word": "拿",
+              "probability": 0.21946996450424194
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l05-lex-15917f3b32-s1",
+      "file": "tmp/stage3-clips/v-l05-lex-15917f3b32-s1.mp3",
+      "bytes": 15168,
+      "sha256": "78fa0ee8c7ed6f4066675b3028706e62dc013c178b916070484e30d95ebcc6a7",
+      "duration": 2.43,
+      "language": "zh",
+      "elapsedSeconds": 3.806,
+      "text": "哼哼",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.26,
+          "text": "哼",
+          "avgLogprob": -0.5823231803046333,
+          "noSpeechProb": 0.6393311619758606,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.26,
+              "word": "哼",
+              "probability": 0.6740586906671524
+            }
+          ]
+        },
+        {
+          "start": 1.26,
+          "end": 2.12,
+          "text": "哼",
+          "avgLogprob": -0.5823231803046333,
+          "noSpeechProb": 0.6393311619758606,
+          "words": [
+            {
+              "start": 1.26,
+              "end": 2.12,
+              "word": "哼",
+              "probability": 0.8328856825828552
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l07-lex-c5a8f40bc0-s1",
+      "file": "tmp/stage3-clips/v-l07-lex-c5a8f40bc0-s1.mp3",
+      "bytes": 34032,
+      "sha256": "ff910ee8a879264bbf479153f1bdf430e8ff3604fbcd877158c207bb1643b381",
+      "duration": 5.57,
+      "language": "zh",
+      "elapsedSeconds": 3.563,
+      "text": "禮",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.26,
+          "text": "禮",
+          "avgLogprob": -0.9268435478210449,
+          "noSpeechProb": 0.6616770029067993,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 2.26,
+              "word": "禮",
+              "probability": 0.4817594289779663
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l07-lex-76a4159492-s1",
+      "file": "tmp/stage3-clips/v-l07-lex-76a4159492-s1.mp3",
+      "bytes": 18192,
+      "sha256": "a5707187583627c4f1e3c114b27718ec22627f0793b528d6c228c8728a63c18e",
+      "duration": 2.945,
+      "language": "zh",
+      "elapsedSeconds": 3.495,
+      "text": "晚上",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.96,
+          "text": "晚上",
+          "avgLogprob": -0.6035226434469223,
+          "noSpeechProb": 0.09217444807291031,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.96,
+              "word": "晚上",
+              "probability": 0.9717965126037598
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l07-lex-41deb73412-s1",
+      "file": "tmp/stage3-clips/v-l07-lex-41deb73412-s1.mp3",
+      "bytes": 19056,
+      "sha256": "66b0c25624dc912ad7dd86350f62a1286431cedf6654ad9f7e11eb653c6fd195",
+      "duration": 3.079,
+      "language": "zh",
+      "elapsedSeconds": 3.614,
+      "text": "医院",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.48,
+          "text": "医院",
+          "avgLogprob": -0.3769422819217046,
+          "noSpeechProb": 0.0712859183549881,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.82,
+              "word": "医",
+              "probability": 0.990834653377533
+            },
+            {
+              "start": 0.82,
+              "end": 1.48,
+              "word": "院",
+              "probability": 0.9992375373840332
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l07-lex-2d85d609b9-s1",
+      "file": "tmp/stage3-clips/v-l07-lex-2d85d609b9-s1.mp3",
+      "bytes": 19920,
+      "sha256": "a1d4d8452f120877df7d36c4d0a7bdf1aa1959eb1d261935b4f5b8cb835cf502",
+      "duration": 3.237,
+      "language": "zh",
+      "elapsedSeconds": 3.602,
+      "text": "上班",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.42,
+          "text": "上班",
+          "avgLogprob": -0.5146468162536622,
+          "noSpeechProb": 0.17097191512584686,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.88,
+              "word": "上",
+              "probability": 0.9971439242362976
+            },
+            {
+              "start": 0.88,
+              "end": 1.42,
+              "word": "班",
+              "probability": 0.9995872378349304
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l07-lex-22df192e24-s1",
+      "file": "tmp/stage3-clips/v-l07-lex-22df192e24-s1.mp3",
+      "bytes": 15024,
+      "sha256": "1372971b73c1df58626a02900696db17d783de09f07ae921b24a3d66de09c601",
+      "duration": 2.419,
+      "language": "zh",
+      "elapsedSeconds": 3.517,
+      "text": "店",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.94,
+          "text": "店",
+          "avgLogprob": -0.8180129528045654,
+          "noSpeechProb": 0.6336386203765869,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.94,
+              "word": "店",
+              "probability": 0.6313424110412598
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l07-lex-7b4bb888fb-s2",
+      "file": "tmp/stage3-clips/v-l07-lex-7b4bb888fb-s2.mp3",
+      "bytes": 14592,
+      "sha256": "a44df606ec8cf7d52db249fe52317e7563f901271cad28e07080a3d7d2aa9878",
+      "duration": 2.348,
+      "language": "zh",
+      "elapsedSeconds": 3.523,
+      "text": "菜",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.9,
+          "text": "菜",
+          "avgLogprob": -0.6612973362207413,
+          "noSpeechProb": 0.46759095788002014,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.9,
+              "word": "菜",
+              "probability": 0.9877312779426575
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l07-lex-28bf227b9b-s1",
+      "file": "tmp/stage3-clips/v-l07-lex-28bf227b9b-s1.mp3",
+      "bytes": 17184,
+      "sha256": "ecc543ff23f43d585aed27a336b6b82692b2246ef8ff6ad1dbef261d1bf5749c",
+      "duration": 2.77,
+      "language": "zh",
+      "elapsedSeconds": 3.585,
+      "text": "分钟",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.3,
+          "text": "分钟",
+          "avgLogprob": -0.5591752052307128,
+          "noSpeechProb": 0.29417917132377625,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.84,
+              "word": "分",
+              "probability": 0.9758327007293701
+            },
+            {
+              "start": 0.84,
+              "end": 1.3,
+              "word": "钟",
+              "probability": 0.9010741114616394
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l09-lex-586e4f0ccf-s1",
+      "file": "tmp/stage3-clips/v-l09-lex-586e4f0ccf-s1.mp3",
+      "bytes": 31152,
+      "sha256": "cfd089dfb4f3dbf2371e8842e03274eef1080cf14e54f6d4f0a9802bfc424f11",
+      "duration": 5.097,
+      "language": "zh",
+      "elapsedSeconds": 3.557,
+      "text": "编",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.7,
+          "text": "编",
+          "avgLogprob": -0.8046801567077637,
+          "noSpeechProb": 0.16915954649448395,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.7,
+              "word": "编",
+              "probability": 0.6375510841608047
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l09-lex-7de8177ce7-s3",
+      "file": "tmp/stage3-clips/v-l09-lex-7de8177ce7-s3.mp3",
+      "bytes": 16176,
+      "sha256": "0569b227869750d4d58ef3acaa308726175ec750b0c1ded7dd775ae67c8f372c",
+      "duration": 2.61,
+      "language": "zh",
+      "elapsedSeconds": 3.501,
+      "text": "家",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.98,
+          "text": "家",
+          "avgLogprob": -0.8713810443878174,
+          "noSpeechProb": 0.32646629214286804,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.98,
+              "word": "家",
+              "probability": 0.9217355251312256
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l09-lex-2161f1ab5a-s1",
+      "file": "tmp/stage3-clips/v-l09-lex-2161f1ab5a-s1.mp3",
+      "bytes": 17040,
+      "sha256": "8ff582edc46065918781241cc318d517959bd610c1853daa80fec1d90973303f",
+      "duration": 2.744,
+      "language": "zh",
+      "elapsedSeconds": 3.572,
+      "text": "nog",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.18,
+          "text": "nog",
+          "avgLogprob": -0.815372085571289,
+          "noSpeechProb": 0.7084285616874695,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.76,
+              "word": "n",
+              "probability": 0.24551674723625183
+            },
+            {
+              "start": 0.76,
+              "end": 1.18,
+              "word": "og",
+              "probability": 0.7938709259033203
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l09-lex-b967ce841a-s1",
+      "file": "tmp/stage3-clips/v-l09-lex-b967ce841a-s1.mp3",
+      "bytes": 31296,
+      "sha256": "414a46f801ddda4c18588530524aac5f1d52a52bca2bbbea3a3ac1b6bd79cfba",
+      "duration": 5.124,
+      "language": "zh",
+      "elapsedSeconds": 3.528,
+      "text": "上",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.8,
+          "text": "上",
+          "avgLogprob": -0.6603156477212906,
+          "noSpeechProb": 0.4036155939102173,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.8,
+              "word": "上",
+              "probability": 0.9702649712562561
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l09-lex-d3cc0cab9c-s1",
+      "file": "tmp/stage3-clips/v-l09-lex-d3cc0cab9c-s1.mp3",
+      "bytes": 15168,
+      "sha256": "91f8b8734a8a9ee898777411cc213380985d6105deb401c8df3762745723db5d",
+      "duration": 2.433,
+      "language": "zh",
+      "elapsedSeconds": 3.526,
+      "text": "本",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.02,
+          "text": "本",
+          "avgLogprob": -0.7277732044458389,
+          "noSpeechProb": 0.21908998489379883,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.02,
+              "word": "本",
+              "probability": 0.977546751499176
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l09-lex-fe04274cef-s1",
+      "file": "tmp/stage3-clips/v-l09-lex-fe04274cef-s1.mp3",
+      "bytes": 15312,
+      "sha256": "ae7eb4510927ea30501c4ace15cbe4ecb68a244b7eed34af84456e336dfa60da",
+      "duration": 2.455,
+      "language": "zh",
+      "elapsedSeconds": 3.548,
+      "text": "书",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.16,
+          "text": "书",
+          "avgLogprob": -0.6827372074127197,
+          "noSpeechProb": 0.0684160441160202,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.16,
+              "word": "书",
+              "probability": 0.8463679552078247
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l09-lex-327049aa37-s1",
+      "file": "tmp/stage3-clips/v-l09-lex-327049aa37-s1.mp3",
+      "bytes": 15456,
+      "sha256": "54ea055df85af50a7d48061ef7acccdcf256f57561e5a33b58df7ba96ec8d93d",
+      "duration": 2.477,
+      "language": "zh",
+      "elapsedSeconds": 3.7,
+      "text": "呢呢",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.96,
+          "text": "呢",
+          "avgLogprob": -0.9272991248539516,
+          "noSpeechProb": 0.4311056137084961,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.96,
+              "word": "呢",
+              "probability": 0.08104021102190018
+            }
+          ]
+        },
+        {
+          "start": 0.96,
+          "end": 2.0,
+          "text": "呢",
+          "avgLogprob": -0.9272991248539516,
+          "noSpeechProb": 0.4311056137084961,
+          "words": [
+            {
+              "start": 0.96,
+              "end": 2.0,
+              "word": "呢",
+              "probability": 0.06273797154426575
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l09-lex-dae828fe4f-s1",
+      "file": "tmp/stage3-clips/v-l09-lex-dae828fe4f-s1.mp3",
+      "bytes": 15168,
+      "sha256": "812b982adb2d81d650669fbcbf13ea1cf3a3e0bbd5ea335f981a54312330f549",
+      "duration": 2.437,
+      "language": "zh",
+      "elapsedSeconds": 3.326,
+      "text": "",
+      "segments": []
+    },
+    {
+      "id": "v-l09-lex-aa89dd63b3-s1",
+      "file": "tmp/stage3-clips/v-l09-lex-aa89dd63b3-s1.mp3",
+      "bytes": 17328,
+      "sha256": "d47cc8bdb470b34deaf5fef49bf25009d947947ca568810cd913651bf11df3b6",
+      "duration": 2.8,
+      "language": "zh",
+      "elapsedSeconds": 3.643,
+      "text": "学习",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.48,
+          "text": "学习",
+          "avgLogprob": -0.4049820452928543,
+          "noSpeechProb": 0.3053317368030548,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.82,
+              "word": "学",
+              "probability": 0.8652496337890625
+            },
+            {
+              "start": 0.82,
+              "end": 1.48,
+              "word": "习",
+              "probability": 0.9997429549694061
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l11-lex-5bfeda744c-s1",
+      "file": "tmp/stage3-clips/v-l11-lex-5bfeda744c-s1.mp3",
+      "bytes": 19056,
+      "sha256": "52690826dbde04643fa0586b7185d4675a66ca6f53adc7025c0411a323bfb630",
+      "duration": 3.087,
+      "language": "zh",
+      "elapsedSeconds": 3.627,
+      "text": "哪里?",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.46,
+          "text": "哪里?",
+          "avgLogprob": -0.36854512989521027,
+          "noSpeechProb": 0.2934193015098572,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.92,
+              "word": "哪",
+              "probability": 0.8808783292770386
+            },
+            {
+              "start": 0.92,
+              "end": 1.46,
+              "word": "里?",
+              "probability": 0.964463472366333
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l11-lex-be9cb728a5-s1",
+      "file": "tmp/stage3-clips/v-l11-lex-be9cb728a5-s1.mp3",
+      "bytes": 15168,
+      "sha256": "8ec4a817c16f861ced4f62ded9ea19bd21f026948e407f9c097b0091ff4aea2f",
+      "duration": 2.426,
+      "language": "zh",
+      "elapsedSeconds": 3.502,
+      "text": "问",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.08,
+          "text": "问",
+          "avgLogprob": -0.7388234585523605,
+          "noSpeechProb": 0.6968084573745728,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.08,
+              "word": "问",
+              "probability": 0.9347174763679504
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-l12-lex-dad0d29a5e-s1",
+      "file": "tmp/stage3-clips/v-l12-lex-dad0d29a5e-s1.mp3",
+      "bytes": 15456,
+      "sha256": "33e6d43bb5f6b077a4cb57620aa3fb794874bd0e1e135533ec7efed320b9f5e5",
+      "duration": 2.487,
+      "language": "zh",
+      "elapsedSeconds": 3.618,
+      "text": "絕的",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.3,
+          "text": "絕的",
+          "avgLogprob": -0.6856734057267507,
+          "noSpeechProb": 0.2588241398334503,
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.82,
+              "word": "絕",
+              "probability": 0.7263349741697311
+            },
+            {
+              "start": 0.82,
+              "end": 1.3,
+              "word": "的",
+              "probability": 0.35078591108322144
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "ASR can confuse homophones, names, isolated syllables and word boundaries.",
+    "Recognition text and probability are evidence for review, not an automatic correctness verdict.",
+    "No expected textbook transcript is supplied to the recognizer."
+  ]
+}

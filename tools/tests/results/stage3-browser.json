@@ -1,0 +1,1574 @@
+{
+  "test": "stage3-isolated-browser",
+  "startedAt": "2026-10-01T04:45:29.806Z",
+  "sourceCommit": "6301e2d03fef32f334ca2fba1fd36d53189aa586",
+  "runId": "36816487219",
+  "scope": "75 original-audio listening questions and semantic vocabulary review; no production deployment",
+  "browser": "Chromium 151.0.7922.34",
+  "checks": [
+    {
+      "name": "Initial scope, empty selection and no-wrong-question states preserve an independent module",
+      "status": "passed",
+      "durationMs": 162
+    },
+    {
+      "name": "Lesson 1: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 12438
+    },
+    {
+      "name": "Lesson 2: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 11200
+    },
+    {
+      "name": "Lesson 3: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 12132
+    },
+    {
+      "name": "Lesson 4: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 13633
+    },
+    {
+      "name": "Lesson 5: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 10798
+    },
+    {
+      "name": "Lesson 6: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 13617
+    },
+    {
+      "name": "Lesson 7: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 13348
+    },
+    {
+      "name": "Lesson 8: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 12248
+    },
+    {
+      "name": "Lesson 9: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 14953
+    },
+    {
+      "name": "Lesson 10: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 16648
+    },
+    {
+      "name": "Lesson 11: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 14034
+    },
+    {
+      "name": "Lesson 12: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 15596
+    },
+    {
+      "name": "Lesson 13: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 18783
+    },
+    {
+      "name": "Lesson 14: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 13068
+    },
+    {
+      "name": "Lesson 15: five real clips end, five UI submissions, first result 4/5",
+      "status": "passed",
+      "durationMs": 17379
+    },
+    {
+      "name": "The 75 unique records retain 60 first-correct answers; wrong-only retry does not inflate completion",
+      "status": "passed",
+      "durationMs": 36927
+    },
+    {
+      "name": "Nonadjacent mixed lessons preserve a pending answer, option order, rate and position across reload and module changes",
+      "status": "passed",
+      "durationMs": 1694
+    },
+    {
+      "name": "Five supported rates play to natural ended with pitch preservation configured and exactly one audio element",
+      "status": "passed",
+      "durationMs": 15398
+    },
+    {
+      "name": "Pause and continue preserve media position; changing rate during playback reaches the real end",
+      "status": "passed",
+      "durationMs": 6946
+    },
+    {
+      "name": "Answer selection keeps playback uninterrupted; changing question, selected lessons or module stops the previous clip",
+      "status": "passed",
+      "durationMs": 618
+    },
+    {
+      "name": "Pausing or changing question while the real lesson package is loading cancels late playback",
+      "status": "passed",
+      "durationMs": 4981
+    },
+    {
+      "name": "An actual lazy media-package request failure preserves the answer; visible retry plays the original clip",
+      "status": "passed",
+      "durationMs": 3033
+    },
+    {
+      "name": "Vocabulary all-selection and empty-selection counts agree with semantic identities and sources",
+      "status": "passed",
+      "durationMs": 145
+    },
+    {
+      "name": "Vocabulary meaning boundary: 想 keeps 2 senses in lessons 3, 6",
+      "status": "passed",
+      "durationMs": 8422
+    },
+    {
+      "name": "Vocabulary meaning boundary: 在 keeps 3 senses in lessons 7, 8, 11",
+      "status": "passed",
+      "durationMs": 14187
+    },
+    {
+      "name": "Vocabulary meaning boundary: 天 keeps 2 senses in lessons 12",
+      "status": "passed",
+      "durationMs": 4663
+    },
+    {
+      "name": "Vocabulary meaning boundary: 上 keeps 3 senses in lessons 9, 14",
+      "status": "passed",
+      "durationMs": 9552
+    },
+    {
+      "name": "Reverse recall hides Chinese until reveal; three self-ratings and current position persist without objective scores",
+      "status": "passed",
+      "durationMs": 5956
+    },
+    {
+      "name": "Lesson-4 numeric cards retain their source and work without an invented audio clip",
+      "status": "passed",
+      "durationMs": 320
+    },
+    {
+      "name": "Exported listening and vocabulary sessions restore through the file picker; malformed input and previous-version recovery preserve data",
+      "status": "passed",
+      "durationMs": 1238
+    },
+    {
+      "name": "Visible due filtering uses a valid historical backup; early good does not advance the level or postpone the due date",
+      "status": "passed",
+      "durationMs": 2225
+    },
+    {
+      "name": "Two genuine tabs detect stale writes; the stale draft exports and the newer browser version can be inspected",
+      "status": "passed",
+      "durationMs": 2628
+    },
+    {
+      "name": "The final single HTML uses its embedded media, plays to ended and restores a last-lesson answer without external assets",
+      "status": "passed",
+      "durationMs": 4242
+    },
+    {
+      "name": "The rendered teacher guide preserves all question and source IDs, answers, fifteen-lesson navigation and filtering",
+      "status": "passed",
+      "durationMs": 1048
+    }
+  ],
+  "playback": [
+    {
+      "label": "l01-listen-01",
+      "mediaId": "l01-listen-01",
+      "sourceType": "data",
+      "duration": 2.772,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2047,
+      "ended": true,
+      "bytes": 17184,
+      "sha256": "e2aea3fabaa35074d85433b2f314bd9a46a1ae8915d8300c210b3554b5262e58"
+    },
+    {
+      "label": "l01-listen-02",
+      "mediaId": "l01-listen-02",
+      "sourceType": "data",
+      "duration": 3.193958,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2222,
+      "ended": true,
+      "bytes": 19776,
+      "sha256": "b89ca1142fea870a5a72d1f2273748d531614bb0556ce7ea3fbf6609d0cfcc14"
+    },
+    {
+      "label": "l01-listen-03",
+      "mediaId": "l01-listen-03",
+      "sourceType": "data",
+      "duration": 3.192,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2223,
+      "ended": true,
+      "bytes": 19632,
+      "sha256": "61e5ad466b3ed35b5e2a0d7f38a5c5b8f89b3225767c556e54b998a6924dd76c"
+    },
+    {
+      "label": "l01-listen-04",
+      "mediaId": "l01-listen-04",
+      "sourceType": "data",
+      "duration": 2.003,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1441,
+      "ended": true,
+      "bytes": 12576,
+      "sha256": "236c4464cd643a20c3022ee7046ac10249d4eb6a81a1bf12dbb37772f9ce316e"
+    },
+    {
+      "label": "l01-listen-05",
+      "mediaId": "l01-listen-05",
+      "sourceType": "data",
+      "duration": 5.398,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 3692,
+      "ended": true,
+      "bytes": 32880,
+      "sha256": "a6a14e0568668c0b9b1757ef8de228e19acab429d56bb69e2015fa57f84f128a"
+    },
+    {
+      "label": "l02-listen-01",
+      "mediaId": "l02-listen-01",
+      "sourceType": "data",
+      "duration": 3.072,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2136,
+      "ended": true,
+      "bytes": 18912,
+      "sha256": "3fa3761a144d01f9d099362b0b8a6c68f52bb1633641ee6c398d3cd43a5e032f"
+    },
+    {
+      "label": "l02-listen-02",
+      "mediaId": "l02-listen-02",
+      "sourceType": "data",
+      "duration": 2.552,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1792,
+      "ended": true,
+      "bytes": 15888,
+      "sha256": "92b8e918b77b99acf15eaed708037852b87e9c8aed6218260c5856e88da5c130"
+    },
+    {
+      "label": "l02-listen-03",
+      "mediaId": "l02-listen-03",
+      "sourceType": "data",
+      "duration": 3.081,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2157,
+      "ended": true,
+      "bytes": 19056,
+      "sha256": "1fd3ade341a1359bef748085a493a23b6660f618ffb703307bdf340c3e15c051"
+    },
+    {
+      "label": "l02-listen-04",
+      "mediaId": "l02-listen-04",
+      "sourceType": "data",
+      "duration": 2.39,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1689,
+      "ended": true,
+      "bytes": 14880,
+      "sha256": "1aae5b9a0a443501e0f39f24a755e49663dd89538d80458a0c6da46921812eec"
+    },
+    {
+      "label": "l02-listen-05",
+      "mediaId": "l02-listen-05",
+      "sourceType": "data",
+      "duration": 3.818,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2662,
+      "ended": true,
+      "bytes": 23520,
+      "sha256": "fe43ba6e9f4e17c8ff19df525a3c092d39d82fe3be05528dde0be8805913bad6"
+    },
+    {
+      "label": "l03-listen-01",
+      "mediaId": "l03-listen-01",
+      "sourceType": "data",
+      "duration": 3.167,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2233,
+      "ended": true,
+      "bytes": 19488,
+      "sha256": "d1274bcd3cf45caf69b42f772a751fad287691d57e8363a2dacff38787b07f20"
+    },
+    {
+      "label": "l03-listen-02",
+      "mediaId": "l03-listen-02",
+      "sourceType": "data",
+      "duration": 2.839,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1994,
+      "ended": true,
+      "bytes": 17616,
+      "sha256": "67daa17aedc7fb754840a7bb25d6d3a7354d5d49989ad118a9344df8618b6c76"
+    },
+    {
+      "label": "l03-listen-03",
+      "mediaId": "l03-listen-03",
+      "sourceType": "data",
+      "duration": 1.961,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1457,
+      "ended": true,
+      "bytes": 12288,
+      "sha256": "ca8091faac8a201ac4d8055e7975a97fa2eac9fe7c34edbef80ba7ca56edb865"
+    },
+    {
+      "label": "l03-listen-04",
+      "mediaId": "l03-listen-04",
+      "sourceType": "data",
+      "duration": 2.661,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1907,
+      "ended": true,
+      "bytes": 16464,
+      "sha256": "1433beb33dee7f4226cf4285770d3360c429eab430a36bc5d8e6d397bbfbe8d5"
+    },
+    {
+      "label": "l03-listen-05",
+      "mediaId": "l03-listen-05",
+      "sourceType": "data",
+      "duration": 5.472,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 3759,
+      "ended": true,
+      "bytes": 33312,
+      "sha256": "7b0a2f6fb53b6d6bb63b801e57487fda6690dcde5a3fd11f660a922c6e88ec14"
+    },
+    {
+      "label": "l04-listen-01",
+      "mediaId": "l04-listen-01",
+      "sourceType": "data",
+      "duration": 3.366,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2399,
+      "ended": true,
+      "bytes": 20784,
+      "sha256": "d17ef54cf5bb1ec51217025e7a4b5c3248b8c2ca606d0e70885698844d1008de"
+    },
+    {
+      "label": "l04-listen-02",
+      "mediaId": "l04-listen-02",
+      "sourceType": "data",
+      "duration": 3.02,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2123,
+      "ended": true,
+      "bytes": 18624,
+      "sha256": "390a9e1846a50d20a97fa09374387a1df05a4390d8cde016b3dfd0b866ec6f62"
+    },
+    {
+      "label": "l04-listen-03",
+      "mediaId": "l04-listen-03",
+      "sourceType": "data",
+      "duration": 2.49,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1756,
+      "ended": true,
+      "bytes": 15456,
+      "sha256": "39eb51f9d8bfb5e4baad5c8be7380787a39d4dee18a4495962106525aff48f2d"
+    },
+    {
+      "label": "l04-listen-04",
+      "mediaId": "l04-listen-04",
+      "sourceType": "data",
+      "duration": 5.594,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 3827,
+      "ended": true,
+      "bytes": 34176,
+      "sha256": "94be42c7c09eaea632446bfef50a0056bcede9c9669b11dd4c656faaaa0b0b56"
+    },
+    {
+      "label": "l04-listen-05",
+      "mediaId": "l04-listen-05",
+      "sourceType": "data",
+      "duration": 3.973,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2754,
+      "ended": true,
+      "bytes": 24384,
+      "sha256": "73d98b494ed2e0de7532e6413cada152b144630b4eed8da149015fba96b0639c"
+    },
+    {
+      "label": "l05-listen-01",
+      "mediaId": "l05-listen-01",
+      "sourceType": "data",
+      "duration": 3.994,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2743,
+      "ended": true,
+      "bytes": 24528,
+      "sha256": "8f3ccaa03ce677da85cd27f21c4715976330802434738ca266d4df4a28a05e0a"
+    },
+    {
+      "label": "l05-listen-02",
+      "mediaId": "l05-listen-02",
+      "sourceType": "data",
+      "duration": 2.979,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2074,
+      "ended": true,
+      "bytes": 18480,
+      "sha256": "960f2c343eb44c88321b830c015214572bd167da3f060e76dd3b444071b98967"
+    },
+    {
+      "label": "l05-listen-03",
+      "mediaId": "l05-listen-03",
+      "sourceType": "data",
+      "duration": 2.247,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1606,
+      "ended": true,
+      "bytes": 14016,
+      "sha256": "6749acc845d0f6d084dbd4703e5c6d774d1b71a876c91d0d6fbcebd216b7049f"
+    },
+    {
+      "label": "l05-listen-04",
+      "mediaId": "l05-listen-04",
+      "sourceType": "data",
+      "duration": 1.393958,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1023,
+      "ended": true,
+      "bytes": 8976,
+      "sha256": "3ddccf92ba9e82c6667980591f0bca31c2e76fd976a0717ca786d6f167ec55f5"
+    },
+    {
+      "label": "l05-listen-05",
+      "mediaId": "l05-listen-05",
+      "sourceType": "data",
+      "duration": 3.71,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2574,
+      "ended": true,
+      "bytes": 22800,
+      "sha256": "f2184c3e86e957a39f7bd2c4cb8aa65664e15992ea4d3723b845ee881ef4b033"
+    },
+    {
+      "label": "l06-listen-01",
+      "mediaId": "l06-listen-01",
+      "sourceType": "data",
+      "duration": 2.862,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2008,
+      "ended": true,
+      "bytes": 17760,
+      "sha256": "f6e5ce2897bf97eee5eb799843d5c611dca09c5e30d77b54652cc47eb270c8d1"
+    },
+    {
+      "label": "l06-listen-02",
+      "mediaId": "l06-listen-02",
+      "sourceType": "data",
+      "duration": 3.049958,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2138,
+      "ended": true,
+      "bytes": 18912,
+      "sha256": "7a991931762f983861ff4333ecbdb0175884aead8f07907dd6f8650763fd1d1f"
+    },
+    {
+      "label": "l06-listen-03",
+      "mediaId": "l06-listen-03",
+      "sourceType": "data",
+      "duration": 3.304,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2305,
+      "ended": true,
+      "bytes": 20352,
+      "sha256": "2f71af28ea1d9c67296efa2ea5d743c52f98af1cede6b33850eb222829395503"
+    },
+    {
+      "label": "l06-listen-04",
+      "mediaId": "l06-listen-04",
+      "sourceType": "data",
+      "duration": 4.263,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2959,
+      "ended": true,
+      "bytes": 26112,
+      "sha256": "d57fb1388fd151c5523569bf1f355cac96744e200e659790c27c03e5441bc85c"
+    },
+    {
+      "label": "l06-listen-05",
+      "mediaId": "l06-listen-05",
+      "sourceType": "data",
+      "duration": 4.926,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 3377,
+      "ended": true,
+      "bytes": 30144,
+      "sha256": "010d933697d4115b8b3d34354bc09a050143a088826aac256543319c4b8ac4a3"
+    },
+    {
+      "label": "l07-listen-01",
+      "mediaId": "l07-listen-01",
+      "sourceType": "data",
+      "duration": 3.572,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2471,
+      "ended": true,
+      "bytes": 21936,
+      "sha256": "0022e652b513f27efaffebc3596894358ec9e03560b87744d9346bd7c716cb34"
+    },
+    {
+      "label": "l07-listen-02",
+      "mediaId": "l07-listen-02",
+      "sourceType": "data",
+      "duration": 3.079,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2173,
+      "ended": true,
+      "bytes": 19056,
+      "sha256": "66b0c25624dc912ad7dd86350f62a1286431cedf6654ad9f7e11eb653c6fd195"
+    },
+    {
+      "label": "l07-listen-03",
+      "mediaId": "l07-listen-03",
+      "sourceType": "data",
+      "duration": 3.874,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2740,
+      "ended": true,
+      "bytes": 23808,
+      "sha256": "66da56d8bf340e1eba18953457f305747da52fec687e963b75bd4094af759c9e"
+    },
+    {
+      "label": "l07-listen-04",
+      "mediaId": "l07-listen-04",
+      "sourceType": "data",
+      "duration": 2.915,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2077,
+      "ended": true,
+      "bytes": 18048,
+      "sha256": "4b05fe240f01d686fe36a4df6d3983b2e1fc080c1fbf94f327759e58155bc0ae"
+    },
+    {
+      "label": "l07-listen-05",
+      "mediaId": "l07-listen-05",
+      "sourceType": "data",
+      "duration": 4.276,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2991,
+      "ended": true,
+      "bytes": 26256,
+      "sha256": "26d48ad2bd90fbd09008263236f63fbfe05662db7de0482816909bf30ab060e5"
+    },
+    {
+      "label": "l08-listen-01",
+      "mediaId": "l08-listen-01",
+      "sourceType": "data",
+      "duration": 3.064,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2155,
+      "ended": true,
+      "bytes": 18912,
+      "sha256": "4db2c857eabd4f8f6ccb62926ed446633815a69fd132cb3014dd90bc7329a6fc"
+    },
+    {
+      "label": "l08-listen-02",
+      "mediaId": "l08-listen-02",
+      "sourceType": "data",
+      "duration": 3.167,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2206,
+      "ended": true,
+      "bytes": 19488,
+      "sha256": "7428862ae555873df6f12ad3e5d5d8fd4112b65759093699e50b4ef1cae6fd17"
+    },
+    {
+      "label": "l08-listen-03",
+      "mediaId": "l08-listen-03",
+      "sourceType": "data",
+      "duration": 2.799,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1973,
+      "ended": true,
+      "bytes": 17328,
+      "sha256": "4bba6b45b45d9fe1ca1a7dab7c3b2bd90f38cf8a68e1a656128680383edb802c"
+    },
+    {
+      "label": "l08-listen-04",
+      "mediaId": "l08-listen-04",
+      "sourceType": "data",
+      "duration": 3.443,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2407,
+      "ended": true,
+      "bytes": 21216,
+      "sha256": "574a1f1270f03d300d78e4829c6b1125b94272cf3e03f478cf03884de0c49cb7"
+    },
+    {
+      "label": "l08-listen-05",
+      "mediaId": "l08-listen-05",
+      "sourceType": "data",
+      "duration": 3.811,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2657,
+      "ended": true,
+      "bytes": 23376,
+      "sha256": "48f41438c05ded52e900a858e79b61398526bf5c53bf16c300baa1b9e7fde406"
+    },
+    {
+      "label": "l09-listen-01",
+      "mediaId": "l09-listen-01",
+      "sourceType": "data",
+      "duration": 2.884,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2053,
+      "ended": true,
+      "bytes": 17904,
+      "sha256": "93591556b2e4950419a9bd5f8d6907c71e87fa0166d47d2e44d235ef3a96e5f7"
+    },
+    {
+      "label": "l09-listen-02",
+      "mediaId": "l09-listen-02",
+      "sourceType": "data",
+      "duration": 2.906,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2058,
+      "ended": true,
+      "bytes": 18048,
+      "sha256": "41dd3011b71e9f7c655fd1a52388f8719dbd4310d67b553d2b90677f13526fcb"
+    },
+    {
+      "label": "l09-listen-03",
+      "mediaId": "l09-listen-03",
+      "sourceType": "data",
+      "duration": 2.652,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1889,
+      "ended": true,
+      "bytes": 16464,
+      "sha256": "156a696fd59a1218587ad912338dcab2b22756b0f14db9216721fff4298a4c1f"
+    },
+    {
+      "label": "l09-listen-04",
+      "mediaId": "l09-listen-04",
+      "sourceType": "data",
+      "duration": 3.843,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2672,
+      "ended": true,
+      "bytes": 23664,
+      "sha256": "ec7639d93ec18fe56d4e580c678d09d9cd40f232e9c0d644dae86e198d239f55"
+    },
+    {
+      "label": "l09-listen-05",
+      "mediaId": "l09-listen-05",
+      "sourceType": "data",
+      "duration": 7.82,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 5329,
+      "ended": true,
+      "bytes": 47424,
+      "sha256": "454ad841006867723a8686dadcebe4196d74f9d035343fbb1abf222d2b404f9b"
+    },
+    {
+      "label": "l10-listen-01",
+      "mediaId": "l10-listen-01",
+      "sourceType": "data",
+      "duration": 2.662,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1893,
+      "ended": true,
+      "bytes": 16464,
+      "sha256": "6ebd84f838d4817148d2b667e6508e25eecf9e5738b5a3d05bbe6a81a7360489"
+    },
+    {
+      "label": "l10-listen-02",
+      "mediaId": "l10-listen-02",
+      "sourceType": "data",
+      "duration": 2.744,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1924,
+      "ended": true,
+      "bytes": 17040,
+      "sha256": "3f27ce3de613b8917c92da62d944708b5c0576f16a6cafcdd5d5df601bc8e8f2"
+    },
+    {
+      "label": "l10-listen-03",
+      "mediaId": "l10-listen-03",
+      "sourceType": "data",
+      "duration": 4.024,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2773,
+      "ended": true,
+      "bytes": 24672,
+      "sha256": "b9c36c643aaffa807357b07e58551316f1c3425842bb49e4e2b8e22cbceb46b3"
+    },
+    {
+      "label": "l10-listen-04",
+      "mediaId": "l10-listen-04",
+      "sourceType": "data",
+      "duration": 3.502,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2456,
+      "ended": true,
+      "bytes": 21504,
+      "sha256": "1dc8b84cd9cdf745bda4f8d13d9900fdb2ada9ce172fad31902a5e7cc5cea145"
+    },
+    {
+      "label": "l10-listen-05",
+      "mediaId": "l10-listen-05",
+      "sourceType": "data",
+      "duration": 9.795,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 6649,
+      "ended": true,
+      "bytes": 59376,
+      "sha256": "af5053892510ce7f1feb63713fb8777435f1fa4462fa57c557d70844769013d7"
+    },
+    {
+      "label": "l11-listen-01",
+      "mediaId": "l11-listen-01",
+      "sourceType": "data",
+      "duration": 2.909,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2089,
+      "ended": true,
+      "bytes": 18048,
+      "sha256": "623474d463faf676780ba331ccbecd2a11a713fac35f44c31021a9987f96c143"
+    },
+    {
+      "label": "l11-listen-02",
+      "mediaId": "l11-listen-02",
+      "sourceType": "data",
+      "duration": 2.971,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2089,
+      "ended": true,
+      "bytes": 18336,
+      "sha256": "09aec0c73aff97197a7f3feaac280af76eb8a369a5dd209c8ef1ace2530fdae2"
+    },
+    {
+      "label": "l11-listen-03",
+      "mediaId": "l11-listen-03",
+      "sourceType": "data",
+      "duration": 2.562,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1823,
+      "ended": true,
+      "bytes": 15888,
+      "sha256": "82efd03d9ebf9654a9f5eb8517ce1e474a30fb424297267362a1f9166961a430"
+    },
+    {
+      "label": "l11-listen-04",
+      "mediaId": "l11-listen-04",
+      "sourceType": "data",
+      "duration": 4.85,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 3342,
+      "ended": true,
+      "bytes": 29712,
+      "sha256": "8fd17056dec501d0bfcd94b626b4fea15d5f6335ab85ae8fe55b2dd8c7f95c3f"
+    },
+    {
+      "label": "l11-listen-05",
+      "mediaId": "l11-listen-05",
+      "sourceType": "data",
+      "duration": 5.462,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 3742,
+      "ended": true,
+      "bytes": 33312,
+      "sha256": "ffa25df08a9ae4b7592997ed65340a526e888dea6ef99ec62bcb9657f7686ff6"
+    },
+    {
+      "label": "l12-listen-01",
+      "mediaId": "l12-listen-01",
+      "sourceType": "data",
+      "duration": 3.15,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2224,
+      "ended": true,
+      "bytes": 19488,
+      "sha256": "12f8463fa69b735d888623ab899f3e1aa553a863a8dd75419d914ea8fc621211"
+    },
+    {
+      "label": "l12-listen-02",
+      "mediaId": "l12-listen-02",
+      "sourceType": "data",
+      "duration": 3.336,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2341,
+      "ended": true,
+      "bytes": 20496,
+      "sha256": "e64255cd8ad01dbe34256be7178860ca9708ccf225e8dba655b14e3db2ca5bbc"
+    },
+    {
+      "label": "l12-listen-03",
+      "mediaId": "l12-listen-03",
+      "sourceType": "data",
+      "duration": 2.119,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1521,
+      "ended": true,
+      "bytes": 13296,
+      "sha256": "df73b9544597da7213eb2a5542396f5ee268f2423d1fb6198cbd961a5e15c827"
+    },
+    {
+      "label": "l12-listen-04",
+      "mediaId": "l12-listen-04",
+      "sourceType": "data",
+      "duration": 4.024,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2774,
+      "ended": true,
+      "bytes": 24672,
+      "sha256": "2b4e8457d0817c14455ca6eb6fe4b002ce8108d52453bbb461272423dfec0d58"
+    },
+    {
+      "label": "l12-listen-05",
+      "mediaId": "l12-listen-05",
+      "sourceType": "data",
+      "duration": 8.487,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 5778,
+      "ended": true,
+      "bytes": 51456,
+      "sha256": "b71d673e7a9f68f8074c0e9bad4af2ca414889690a898d29febd40b81776ba36"
+    },
+    {
+      "label": "l13-listen-01",
+      "mediaId": "l13-listen-01",
+      "sourceType": "data",
+      "duration": 3.724,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2623,
+      "ended": true,
+      "bytes": 22944,
+      "sha256": "8d1158b4c1f7506ba021a15688bcd1a455e6e6727dfc7689b118a347036f96be"
+    },
+    {
+      "label": "l13-listen-02",
+      "mediaId": "l13-listen-02",
+      "sourceType": "data",
+      "duration": 3.614,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2522,
+      "ended": true,
+      "bytes": 22224,
+      "sha256": "b597a70ea7eef01a6e25d1843afb7d71428dba00fab3ea1ea3883f8035ac0cb9"
+    },
+    {
+      "label": "l13-listen-03",
+      "mediaId": "l13-listen-03",
+      "sourceType": "data",
+      "duration": 5.346,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 3655,
+      "ended": true,
+      "bytes": 32592,
+      "sha256": "2c14c4974c61d60c75fbee946ab66e5ef708d3da9d13de693b5e7dad72f01b59"
+    },
+    {
+      "label": "l13-listen-04",
+      "mediaId": "l13-listen-04",
+      "sourceType": "data",
+      "duration": 3.788,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2624,
+      "ended": true,
+      "bytes": 23232,
+      "sha256": "0a5d5f574d348346884e315437cd0c5f4542b97df59cc687cb77828e461cedb5"
+    },
+    {
+      "label": "l13-listen-05",
+      "mediaId": "l13-listen-05",
+      "sourceType": "data",
+      "duration": 9.447,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 6413,
+      "ended": true,
+      "bytes": 57216,
+      "sha256": "381f2af93e9718e698e315a0685df30a6994b896bd7ad25b049b74dd07bda2bb"
+    },
+    {
+      "label": "l14-listen-01",
+      "mediaId": "l14-listen-01",
+      "sourceType": "data",
+      "duration": 2.927,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2082,
+      "ended": true,
+      "bytes": 18048,
+      "sha256": "1582968979666b23f9b8657af0ad744fba19de30c7e18285637d990a6f31b598"
+    },
+    {
+      "label": "l14-listen-02",
+      "mediaId": "l14-listen-02",
+      "sourceType": "data",
+      "duration": 3.084,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2155,
+      "ended": true,
+      "bytes": 19056,
+      "sha256": "7116fd8cfaf3ccaca469cdc1c67393c5b3677a5eb4df91bf96b448bbf57adbce"
+    },
+    {
+      "label": "l14-listen-03",
+      "mediaId": "l14-listen-03",
+      "sourceType": "data",
+      "duration": 2.078,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1474,
+      "ended": true,
+      "bytes": 13008,
+      "sha256": "dec19aea0944d0630aa34d556f21e38653934f0ba29be72fd35e937d7c7f921b"
+    },
+    {
+      "label": "l14-listen-04",
+      "mediaId": "l14-listen-04",
+      "sourceType": "data",
+      "duration": 2.663,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1889,
+      "ended": true,
+      "bytes": 16464,
+      "sha256": "9eb5261879ef86955a2a2b133ae046554df6a9890e8c0df383c49769239fca56"
+    },
+    {
+      "label": "l14-listen-05",
+      "mediaId": "l14-listen-05",
+      "sourceType": "data",
+      "duration": 6.6,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 4510,
+      "ended": true,
+      "bytes": 40080,
+      "sha256": "c13ef2696150461c1d0e4c43d0ea62771086d1463d9a2b36661c92055f97a768"
+    },
+    {
+      "label": "l15-listen-01",
+      "mediaId": "l15-listen-01",
+      "sourceType": "data",
+      "duration": 3.611,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2544,
+      "ended": true,
+      "bytes": 22224,
+      "sha256": "8d9137624cbd43db184d31bef6f62e6649708145efc27a83074e41de005538bd"
+    },
+    {
+      "label": "l15-listen-02",
+      "mediaId": "l15-listen-02",
+      "sourceType": "data",
+      "duration": 2.776,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1969,
+      "ended": true,
+      "bytes": 17184,
+      "sha256": "0751f4ded9e9c8119061250d3a54df16225d0939a8026269c886d0c83ee775df"
+    },
+    {
+      "label": "l15-listen-03",
+      "mediaId": "l15-listen-03",
+      "sourceType": "data",
+      "duration": 4.02,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2793,
+      "ended": true,
+      "bytes": 24672,
+      "sha256": "2b887983afbf27ae5adef1bd306525ad1b44a822b71182a6770a37bbaf7c0c2e"
+    },
+    {
+      "label": "l15-listen-04",
+      "mediaId": "l15-listen-04",
+      "sourceType": "data",
+      "duration": 5.604,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 3874,
+      "ended": true,
+      "bytes": 34176,
+      "sha256": "8055cee0d871a62f41e4a6872fd0f96dccb9ff1ef14bffaecdc70bfc65bda487"
+    },
+    {
+      "label": "l15-listen-05",
+      "mediaId": "l15-listen-05",
+      "sourceType": "data",
+      "duration": 7.422,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 5095,
+      "ended": true,
+      "bytes": 45120,
+      "sha256": "d0231fc34e56b62d54c76d4bf6799ac4e404c832f490ead2ace00ed4fccc28f2"
+    },
+    {
+      "label": "wrong-retry:l01-listen-01",
+      "mediaId": "l01-listen-01",
+      "sourceType": "data",
+      "duration": 2.772,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2018,
+      "ended": true,
+      "bytes": 17184,
+      "sha256": "e2aea3fabaa35074d85433b2f314bd9a46a1ae8915d8300c210b3554b5262e58"
+    },
+    {
+      "label": "wrong-retry:l02-listen-01",
+      "mediaId": "l02-listen-01",
+      "sourceType": "data",
+      "duration": 3.072,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2201,
+      "ended": true,
+      "bytes": 18912,
+      "sha256": "3fa3761a144d01f9d099362b0b8a6c68f52bb1633641ee6c398d3cd43a5e032f"
+    },
+    {
+      "label": "wrong-retry:l03-listen-01",
+      "mediaId": "l03-listen-01",
+      "sourceType": "data",
+      "duration": 3.167,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2209,
+      "ended": true,
+      "bytes": 19488,
+      "sha256": "d1274bcd3cf45caf69b42f772a751fad287691d57e8363a2dacff38787b07f20"
+    },
+    {
+      "label": "wrong-retry:l04-listen-01",
+      "mediaId": "l04-listen-01",
+      "sourceType": "data",
+      "duration": 3.366,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2394,
+      "ended": true,
+      "bytes": 20784,
+      "sha256": "d17ef54cf5bb1ec51217025e7a4b5c3248b8c2ca606d0e70885698844d1008de"
+    },
+    {
+      "label": "wrong-retry:l05-listen-01",
+      "mediaId": "l05-listen-01",
+      "sourceType": "data",
+      "duration": 3.994,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2761,
+      "ended": true,
+      "bytes": 24528,
+      "sha256": "8f3ccaa03ce677da85cd27f21c4715976330802434738ca266d4df4a28a05e0a"
+    },
+    {
+      "label": "wrong-retry:l06-listen-01",
+      "mediaId": "l06-listen-01",
+      "sourceType": "data",
+      "duration": 2.862,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2028,
+      "ended": true,
+      "bytes": 17760,
+      "sha256": "f6e5ce2897bf97eee5eb799843d5c611dca09c5e30d77b54652cc47eb270c8d1"
+    },
+    {
+      "label": "wrong-retry:l07-listen-01",
+      "mediaId": "l07-listen-01",
+      "sourceType": "data",
+      "duration": 3.572,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2477,
+      "ended": true,
+      "bytes": 21936,
+      "sha256": "0022e652b513f27efaffebc3596894358ec9e03560b87744d9346bd7c716cb34"
+    },
+    {
+      "label": "wrong-retry:l08-listen-01",
+      "mediaId": "l08-listen-01",
+      "sourceType": "data",
+      "duration": 3.064,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2156,
+      "ended": true,
+      "bytes": 18912,
+      "sha256": "4db2c857eabd4f8f6ccb62926ed446633815a69fd132cb3014dd90bc7329a6fc"
+    },
+    {
+      "label": "wrong-retry:l09-listen-01",
+      "mediaId": "l09-listen-01",
+      "sourceType": "data",
+      "duration": 2.884,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2072,
+      "ended": true,
+      "bytes": 17904,
+      "sha256": "93591556b2e4950419a9bd5f8d6907c71e87fa0166d47d2e44d235ef3a96e5f7"
+    },
+    {
+      "label": "wrong-retry:l10-listen-01",
+      "mediaId": "l10-listen-01",
+      "sourceType": "data",
+      "duration": 2.662,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1895,
+      "ended": true,
+      "bytes": 16464,
+      "sha256": "6ebd84f838d4817148d2b667e6508e25eecf9e5738b5a3d05bbe6a81a7360489"
+    },
+    {
+      "label": "wrong-retry:l11-listen-01",
+      "mediaId": "l11-listen-01",
+      "sourceType": "data",
+      "duration": 2.909,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2089,
+      "ended": true,
+      "bytes": 18048,
+      "sha256": "623474d463faf676780ba331ccbecd2a11a713fac35f44c31021a9987f96c143"
+    },
+    {
+      "label": "wrong-retry:l12-listen-01",
+      "mediaId": "l12-listen-01",
+      "sourceType": "data",
+      "duration": 3.15,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2210,
+      "ended": true,
+      "bytes": 19488,
+      "sha256": "12f8463fa69b735d888623ab899f3e1aa553a863a8dd75419d914ea8fc621211"
+    },
+    {
+      "label": "wrong-retry:l13-listen-01",
+      "mediaId": "l13-listen-01",
+      "sourceType": "data",
+      "duration": 3.724,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2626,
+      "ended": true,
+      "bytes": 22944,
+      "sha256": "8d1158b4c1f7506ba021a15688bcd1a455e6e6727dfc7689b118a347036f96be"
+    },
+    {
+      "label": "wrong-retry:l14-listen-01",
+      "mediaId": "l14-listen-01",
+      "sourceType": "data",
+      "duration": 2.927,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2077,
+      "ended": true,
+      "bytes": 18048,
+      "sha256": "1582968979666b23f9b8657af0ad744fba19de30c7e18285637d990a6f31b598"
+    },
+    {
+      "label": "wrong-retry:l15-listen-01",
+      "mediaId": "l15-listen-01",
+      "sourceType": "data",
+      "duration": 3.611,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2562,
+      "ended": true,
+      "bytes": 22224,
+      "sha256": "8d9137624cbd43db184d31bef6f62e6649708145efc27a83074e41de005538bd"
+    },
+    {
+      "label": "rate:0.65:l01-listen-01",
+      "mediaId": "l01-listen-01",
+      "sourceType": "data",
+      "duration": 2.772,
+      "rate": 0.65,
+      "preservesPitch": true,
+      "elapsedMs": 4338,
+      "ended": true,
+      "bytes": 17184,
+      "sha256": "e2aea3fabaa35074d85433b2f314bd9a46a1ae8915d8300c210b3554b5262e58"
+    },
+    {
+      "label": "rate:0.75:l01-listen-01",
+      "mediaId": "l01-listen-01",
+      "sourceType": "data",
+      "duration": 2.772,
+      "rate": 0.75,
+      "preservesPitch": true,
+      "elapsedMs": 3795,
+      "ended": true,
+      "bytes": 17184,
+      "sha256": "e2aea3fabaa35074d85433b2f314bd9a46a1ae8915d8300c210b3554b5262e58"
+    },
+    {
+      "label": "rate:1:l01-listen-01",
+      "mediaId": "l01-listen-01",
+      "sourceType": "data",
+      "duration": 2.772,
+      "rate": 1,
+      "preservesPitch": true,
+      "elapsedMs": 2874,
+      "ended": true,
+      "bytes": 17184,
+      "sha256": "e2aea3fabaa35074d85433b2f314bd9a46a1ae8915d8300c210b3554b5262e58"
+    },
+    {
+      "label": "rate:1.25:l01-listen-01",
+      "mediaId": "l01-listen-01",
+      "sourceType": "data",
+      "duration": 2.772,
+      "rate": 1.25,
+      "preservesPitch": true,
+      "elapsedMs": 2311,
+      "ended": true,
+      "bytes": 17184,
+      "sha256": "e2aea3fabaa35074d85433b2f314bd9a46a1ae8915d8300c210b3554b5262e58"
+    },
+    {
+      "label": "rate:1.5:l01-listen-01",
+      "mediaId": "l01-listen-01",
+      "sourceType": "data",
+      "duration": 2.772,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1952,
+      "ended": true,
+      "bytes": 17184,
+      "sha256": "e2aea3fabaa35074d85433b2f314bd9a46a1ae8915d8300c210b3554b5262e58"
+    },
+    {
+      "label": "pause-resume:l01-listen-01",
+      "mediaId": "l01-listen-01",
+      "sourceType": "data",
+      "duration": 2.772,
+      "rate": 0.65,
+      "preservesPitch": true,
+      "elapsedMs": 3871,
+      "ended": true,
+      "bytes": 17184,
+      "sha256": "e2aea3fabaa35074d85433b2f314bd9a46a1ae8915d8300c210b3554b5262e58"
+    },
+    {
+      "label": "midplay-rate:l01-listen-01",
+      "mediaId": "l01-listen-01",
+      "duration": 2.772,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "ended": true
+    },
+    {
+      "label": "loading-pause-retry",
+      "mediaId": "l01-listen-01",
+      "sourceType": "data",
+      "duration": 2.772,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1942,
+      "ended": true,
+      "bytes": 17184,
+      "sha256": "e2aea3fabaa35074d85433b2f314bd9a46a1ae8915d8300c210b3554b5262e58"
+    },
+    {
+      "label": "loading-question-cancel-retry",
+      "mediaId": "l02-listen-02",
+      "sourceType": "data",
+      "duration": 2.552,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1782,
+      "ended": true,
+      "bytes": 15888,
+      "sha256": "92b8e918b77b99acf15eaed708037852b87e9c8aed6218260c5856e88da5c130"
+    },
+    {
+      "label": "media-package-retry:l01-listen-01",
+      "mediaId": "l01-listen-01",
+      "sourceType": "data",
+      "duration": 2.772,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 1968,
+      "ended": true,
+      "bytes": 17184,
+      "sha256": "e2aea3fabaa35074d85433b2f314bd9a46a1ae8915d8300c210b3554b5262e58"
+    },
+    {
+      "label": "vocabulary:lex-bbc044d7ea-s1",
+      "mediaId": "v-l01-lex-bbc044d7ea-s1",
+      "sourceType": "data",
+      "duration": 3.193958,
+      "rate": 0.75,
+      "preservesPitch": true,
+      "elapsedMs": 4341,
+      "ended": true,
+      "bytes": 19776,
+      "sha256": "b89ca1142fea870a5a72d1f2273748d531614bb0556ce7ea3fbf6609d0cfcc14"
+    },
+    {
+      "label": "offline:l15-listen-01",
+      "mediaId": "l15-listen-01",
+      "sourceType": "data",
+      "duration": 3.611,
+      "rate": 1.5,
+      "preservesPitch": true,
+      "elapsedMs": 2526,
+      "ended": true,
+      "bytes": 22224,
+      "sha256": "8d9137624cbd43db184d31bef6f62e6649708145efc27a83074e41de005538bd"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "tools/tests/results/stage3-listening-feedback-390.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "file": "tools/tests/results/stage3-vocabulary-sense-390.png",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      }
+    },
+    {
+      "file": "tools/tests/results/stage3-review-schedule-desktop.png",
+      "viewport": {
+        "width": 1104,
+        "height": 900
+      }
+    },
+    {
+      "file": "tools/tests/results/stage3-teacher-desktop.png",
+      "viewport": {
+        "width": 1104,
+        "height": 900
+      },
+      "fullPage": false
+    }
+  ],
+  "errors": [],
+  "networkFailures": [],
+  "expectedNetworkFailures": [
+    {
+      "url": "media/lesson-01.js",
+      "error": "net::ERR_FAILED"
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "CI Chromium and viewport evidence do not certify Safari, physical phones, operating-system IME, or all file-preview applications.",
+    "Real media events, decoded duration, rate and pitch-preservation configuration are observed. They are not a human listening or acoustic-quality certification.",
+    "Historical schedule fixtures are synthetic valid backups imported through the visible file picker, not real learner data.",
+    "Vocabulary ratings are self-assessments. They are not automatic language scores or measured classroom outcomes."
+  ],
+  "vocabularyCounts": {
+    "records": 344,
+    "mergedSenses": 344,
+    "distinctForms": 319
+  },
+  "senseChecks": [
+    {
+      "word": "想",
+      "found": [
+        {
+          "senseId": "lex-a48f3ad06d-s1",
+          "meaning": "nhớ; nhớ nhung",
+          "lessons": [
+            3
+          ]
+        },
+        {
+          "senseId": "lex-a48f3ad06d-s2",
+          "meaning": "muốn; muốn làm gì",
+          "lessons": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "word": "在",
+      "found": [
+        {
+          "senseId": "lex-686b703f41-s1",
+          "meaning": "ở; có mặt ở",
+          "lessons": [
+            7
+          ]
+        },
+        {
+          "senseId": "lex-686b703f41-s2",
+          "meaning": "ở; tại (nơi diễn ra hành động)",
+          "lessons": [
+            8
+          ]
+        },
+        {
+          "senseId": "lex-686b703f41-s3",
+          "meaning": "đang (đặt trước hành động)",
+          "lessons": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "word": "天",
+      "found": [
+        {
+          "senseId": "lex-c3304d1e49-s1",
+          "meaning": "trời; thời tiết",
+          "lessons": [
+            12
+          ]
+        },
+        {
+          "senseId": "lex-c3304d1e49-s2",
+          "meaning": "ngày (đơn vị thời gian)",
+          "lessons": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "word": "上",
+      "found": [
+        {
+          "senseId": "lex-b967ce841a-s1",
+          "meaning": "trên; phía trên",
+          "lessons": [
+            9
+          ]
+        },
+        {
+          "senseId": "lex-b967ce841a-s2",
+          "meaning": "lên (tàu, xe)",
+          "lessons": [
+            14
+          ]
+        },
+        {
+          "senseId": "lex-b967ce841a-s3",
+          "meaning": "vào học; học (một bậc học)",
+          "lessons": [
+            14
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceMergeCoverage": {
+    "actualSourceRecords": 344,
+    "actualSenseIds": 344,
+    "actualRepeatedSenseIds": 0,
+    "note": "The current textbook catalog has no duplicate records of the same sense. Same-sense merging and selection-specific audio are covered by explicit synthetic engine fixtures, not claimed as a real duplicate UI example."
+  },
+  "missingAudioCard": {
+    "senseId": "lex-2142fb62fd-s1",
+    "zh": "八"
+  },
+  "teacherGuide": {
+    "renderedQuestions": 75,
+    "renderedVocabularySources": 344,
+    "lessonNavigation": 15,
+    "filtersChecked": [
+      1,
+      8,
+      15
+    ],
+    "navigationWhileFiltered": 6,
+    "screenshot": "stage3-teacher-desktop.png"
+  },
+  "completedAt": "2026-10-01T04:51:06.461Z",
+  "serverLog": "Stage 3 independent allowlist preview: http://127.0.0.1:18767/\n"
+}

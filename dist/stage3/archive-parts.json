@@ -1,0 +1,18 @@
+{
+  "file": "HSK1-Step3-Review-Package.zip",
+  "bytes": 14511286,
+  "sha256": "09cb27ffb7387b3767951ffd6694dbfeefe3a6b3d2dcc095a55b3077dbc3650b",
+  "reason": "The repository connector accepts request bodies below 16 MiB; the complete ZIP is preserved in ordered binary parts.",
+  "parts": [
+    {
+      "file": "HSK1-Step3-Review-Package.zip.part-01",
+      "bytes": 8000000,
+      "sha256": "516b527a1647024f0f62523b42c6d81d16bd01d8a126bc13c3696f7d14ea5614"
+    },
+    {
+      "file": "HSK1-Step3-Review-Package.zip.part-02",
+      "bytes": 6511286,
+      "sha256": "7ec074c80497313fab3c88811cafb6961843b5c4208f0d0c549ecde50f199ef6"
+    }
+  ]
+}
