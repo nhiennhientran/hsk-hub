@@ -1,0 +1,62 @@
+name: HSK1 Stage 4.1 integrated acceptance
+on:
+  push:
+    branches: ['work/hsk1-stage4-1-*']
+    paths:
+      - 'new-hsk1/hsk1/learning.html'
+      - 'new-hsk1/hsk1/learning-integrated.*'
+      - 'new-hsk1/hsk1/learning-links.js'
+      - 'new-hsk1/hsk1/stage2/**'
+      - 'new-hsk1/hsk1/stage3/**'
+      - 'tools/serve-stage4-1.cjs'
+      - 'tools/tests/stage4-1-browser.cjs'
+      - '.github/workflows/hsk1-stage4-1.yml'
+  pull_request:
+    branches: ['gh-pages']
+    paths:
+      - 'new-hsk1/hsk1/learning.html'
+      - 'new-hsk1/hsk1/learning-integrated.*'
+      - 'new-hsk1/hsk1/learning-links.js'
+      - 'new-hsk1/hsk1/stage2/**'
+      - 'new-hsk1/hsk1/stage3/**'
+      - 'tools/serve-stage4-1.cjs'
+      - 'tools/tests/stage4-1-browser.cjs'
+      - '.github/workflows/hsk1-stage4-1.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  acceptance:
+    if: startsWith(github.ref, 'refs/heads/work/hsk1-stage4-1-') || startsWith(github.head_ref, 'work/hsk1-stage4-1-')
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Re-run frozen Step 2 engine tests
+        run: node --test tools/tests/stage2-engine.test.cjs
+      - name: Re-run frozen Step 3 engine tests
+        run: node --test tools/tests/stage3-engine.test.cjs
+      - name: Install isolated browser dependency
+        run: npm install --no-save --package-lock=false playwright@1.62.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Exercise Stage 4.1 integration and all 80 tasks in Lessons 1-4
+        env:
+          HSK_STAGE41_PORT: '18768'
+        run: node tools/tests/stage4-1-browser.cjs
+      - name: Save Stage 4.1 evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk1-stage4-1-evidence
+          path: |
+            tools/tests/results/stage4-1-*
+            new-hsk1/hsk1/learning.html
+            new-hsk1/hsk1/learning-integrated.*
+            new-hsk1/hsk1/learning-links.js
+          if-no-files-found: warn
