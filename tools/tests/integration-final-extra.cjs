@@ -38,7 +38,19 @@ module.exports=async function(A){
  await check('Textbook 14-3 corrected five turns use separate native playback ranges',async()=>{
   await open(page,'lesson.html?id=14&sec=text');await page.locator('#sceneTabs .scene-tab[data-i="1"]').click();
   const ranges=[[2.95,7.45],[7.6,9.55],[9.6,12.15],[12.2,22.15],[22.15,25.427]];
-  for(let i=0;i<5;i++){await page.locator('#scenePane .speak-line').nth(i).click();await page.waitForFunction(()=>window.HSK1_OFFICIAL_AUDIO.diagnostics().playing);const d=await page.evaluate(()=>window.HSK1_OFFICIAL_AUDIO.diagnostics());assert.deepEqual(d.range,ranges[i]);assert.equal(d.activeTrack,'14-3');await page.waitForFunction(()=>window.HSK1_OFFICIAL_AUDIO.diagnostics().endedByRange);report.textbookPlayback.push({track:d.activeTrack,line:i+1,range:d.range,rangePlaybackFinished:true});}
+  for(let i=0;i<5;i++){
+   await page.locator('#scenePane .speak-line').nth(i).click();
+   await page.waitForFunction(()=>window.HSK1_OFFICIAL_AUDIO.diagnostics().playing);
+   const d=await page.evaluate(()=>window.HSK1_OFFICIAL_AUDIO.diagnostics());
+   assert.deepEqual(d.range,ranges[i]);assert.equal(d.activeTrack,'14-3');
+   assert.ok(Math.abs(d.mediaCurrentTime-ranges[i][0])<0.75,'native seek '+JSON.stringify(d));
+   try{await page.waitForFunction(()=>window.HSK1_OFFICIAL_AUDIO.diagnostics().endedByRange,null,{timeout:Math.ceil((ranges[i][1]-ranges[i][0])*1000+6000)});}
+   catch(e){report.mediaFailureDiagnostic=await page.evaluate(()=>window.HSK1_OFFICIAL_AUDIO.diagnostics());throw e;}
+   const done=await page.evaluate(()=>window.HSK1_OFFICIAL_AUDIO.diagnostics());
+   assert.ok(Math.abs(done.finishedAt-ranges[i][1])<.35,'native range end '+JSON.stringify(done));
+   report.textbookPlayback.push({track:d.activeTrack,line:i+1,range:d.range,startObserved:d.mediaCurrentTime,finishedAt:done.finishedAt,rangePlaybackFinished:true});
+  }
+
  });
  await check('All 95 registered sorting answers are accepted; each objective feedback remains attached to its source option',async()=>{
   let variants=0;

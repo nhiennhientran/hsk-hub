@@ -3,7 +3,7 @@
    This file owns playback only; it does not intercept click events and never synthesizes speech. */
 (function(){
   'use strict';
-  const VERSION='20261001-integration-i1';
+  const VERSION='20261001-integration-i2';
   const AUDIO_DIR='audio/';
   const cache=new Map();
   let textTracks={};
@@ -69,12 +69,21 @@
     });
   }
   function scheduleStop(audio,end,token){
-    const ms=Math.max(80,((end-audio.currentTime)/(audio.playbackRate||1))*1000+100);
-    stopTimer=setTimeout(()=>{
+    // Observe the native media clock. A timer alone must not mark stalled audio
+    // as completed or seek to the end to manufacture a successful boundary.
+    const watch=()=>{
       if(token!==runToken||audio!==activeAudio)return;
-      try{audio.pause();audio.currentTime=end}catch(_e){}
-      activeAudio=null;stopTimer=0;diagnostics({playing:false,endedByRange:true});
-    },ms);
+      const remaining=end-audio.currentTime;
+      if(remaining<=0.025||audio.ended){
+        const finishedAt=audio.currentTime,track=audio.dataset.officialTrack;
+        try{audio.pause()}catch(_e){}
+        activeAudio=null;stopTimer=0;
+        diagnostics({playing:false,endedByRange:true,completedTrack:track,finishedAt,expectedEnd:end});
+        return;
+      }
+      stopTimer=setTimeout(watch,Math.max(20,Math.min(100,remaining/(audio.playbackRate||1)*1000)));
+    };
+    watch();
   }
   function seekThen(audio,start,token,fn){
     let settled=false,timer=0;
@@ -126,7 +135,7 @@
     const begin=()=>{
       if(token!==runToken)return;
       Promise.resolve(audio.play()).then(()=>diagnostics({playing:true,label,fullTrack:true,error:''}))
-        .catch(()=>toastSafe('Không phát được audio giáo trình. Hãy chạm lại nút nghe.'));
+        .catch(()=>toastSafe('Không phát được audio giáo trình. Hãy chạm lại nút nghe。'));
     };
     if(audio.readyState>=1)begin();
     else{audio.addEventListener('loadedmetadata',begin,{once:true});try{audio.load()}catch(_e){}}
@@ -175,7 +184,7 @@
       const onEnd=()=>{audio.removeEventListener('ended',onEnd);if(token===runToken)playNextSequence(token)};
       audio.addEventListener('ended',onEnd,{once:true});
       Promise.resolve(audio.play()).then(()=>diagnostics({playing:true,label:`vocab-full:${next}`,sequence:true,error:''}))
-        .catch(()=>{audio.removeEventListener('ended',onEnd);toastSafe('Không phát được audio giáo trình.');});
+        .catch(()=>{audio.removeEventListener('ended',onEnd);toastSafe('Không phát được audio giáo trình。');});
     };
     if(audio.readyState>=1)begin();
     else{audio.addEventListener('loadedmetadata',begin,{once:true});try{audio.load()}catch(_e){}}
@@ -278,6 +287,6 @@
     get ready(){return ready},
     playVocab,playVocabLesson,playTextLine,playTextScene,stop,scan,warmLesson,
     vocabSegment,textSegment,lessonVocabTracks,
-    diagnostics:()=>window.__HSK1_OFFICIAL_AUDIO_DIAGNOSTICS
+    diagnostics:()=>({...window.__HSK1_OFFICIAL_AUDIO_DIAGNOSTICS,mediaCurrentTime:activeAudio?.currentTime??null,mediaPaused:activeAudio?.paused??true,mediaReadyState:activeAudio?.readyState??null})
   };
 })();
