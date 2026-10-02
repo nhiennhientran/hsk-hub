@@ -12,6 +12,10 @@ export interface StoreOptions<T> {
   validate: (data: unknown) => T;
   lock?: <R>(task: () => R | Promise<R>) => Promise<R>;
   now?: () => number;
+  /** Optional course identity. Defaults preserve the existing HSK1 contract. */
+  storageKey?: string;
+  appId?: string;
+  backupAppId?: string;
 }
 interface Recovery<T> {
   data: T;
@@ -20,7 +24,7 @@ interface Recovery<T> {
   reason: ReplacementReason | 'restore';
 }
 interface Envelope<T> {
-  app: 'hsk1-modular';
+  app: string;
   schema: 1;
   revision: number;
   updatedAt: number;
@@ -34,6 +38,9 @@ const revision = (value: unknown): value is number => typeof value === 'number' 
 
 export function createStore<T>(options: StoreOptions<T>) {
   const now = options.now ?? Date.now;
+  const storageKey = options.storageKey ?? STORAGE_KEY;
+  const appId = options.appId ?? 'hsk1-modular';
+  const backupAppId = options.backupAppId ?? 'hsk1-modular-backup';
   let data = options.blank();
   let status: StoreStatus = 'empty';
   let issue: string | null = null;
@@ -63,17 +70,17 @@ export function createStore<T>(options: StoreOptions<T>) {
   }
   function readEnvelope(raw: string): Envelope<T> {
     const value: unknown = JSON.parse(raw);
-    if (!record(value) || value.app !== 'hsk1-modular' || value.schema !== 1 ||
+    if (!record(value) || value.app !== appId || value.schema !== 1 ||
         !revision(value.revision) || value.revision < 1 || !time(value.updatedAt)) {
       throw new Error('Dữ liệu lưu không đúng ứng dụng hoặc phiên bản.');
     }
-    return { app: 'hsk1-modular', schema: 1, revision: value.revision, updatedAt: value.updatedAt,
+    return { app: appId, schema: 1, revision: value.revision, updatedAt: value.updatedAt,
       data: validate(value.data), recovery: readRecovery(value.recovery) };
   }
   function load(): void {
     editVersion++;
     data = options.blank(); rev = 0; updatedAt = null; recovery = null; issue = null; blocked = false; hasUnsavedChanges = false;
-    try { expectedRaw = options.storage.getItem(STORAGE_KEY); }
+    try { expectedRaw = options.storage.getItem(storageKey); }
     catch { expectedRaw = null; blocked = true; status = 'unavailable'; issue = 'Không đọc được bộ nhớ của trình duyệt. Bản nháp chỉ ở trong tab này.'; publish(); return; }
     if (expectedRaw === null) { status = 'empty'; publish(); return; }
     try {
@@ -108,7 +115,7 @@ export function createStore<T>(options: StoreOptions<T>) {
     return null;
   }
   function checkCurrent(): StoreResult | null {
-    try { if (options.storage.getItem(STORAGE_KEY) !== expectedRaw) return conflict(); }
+    try { if (options.storage.getItem(storageKey) !== expectedRaw) return conflict(); }
     catch (error) { return storageFailure(error); }
     return null;
   }
@@ -117,14 +124,14 @@ export function createStore<T>(options: StoreOptions<T>) {
     if (!Number.isSafeInteger(rev + 1)) throw new Error('Số phiên lưu vượt giới hạn.');
     const stamp = now(); if (!time(stamp)) throw new Error('Thời gian lưu không hợp lệ.');
     const previous = reason ? { data: copy(data), revision: rev, updatedAt, reason } : recovery;
-    const envelope: Envelope<T> = { app: 'hsk1-modular', schema: 1, revision: rev + 1,
+    const envelope: Envelope<T> = { app: appId, schema: 1, revision: rev + 1,
       updatedAt: stamp, data: validate(candidate), recovery: previous };
     const raw = JSON.stringify(envelope);
     // No await between compare and set. The injected Web Lock serializes cooperating tabs.
     let writeError: unknown;
-    try { options.storage.setItem(STORAGE_KEY, raw); } catch (error) { writeError = error; }
+    try { options.storage.setItem(storageKey, raw); } catch (error) { writeError = error; }
     let observed: string | null;
-    try { observed = options.storage.getItem(STORAGE_KEY); }
+    try { observed = options.storage.getItem(storageKey); }
     catch (error) { return storageFailure(writeError ?? error); }
     // A hostile/test adapter can write then throw. Accept only an exact, readable write.
     // Never roll back: another writer may already own the new value.
@@ -178,18 +185,18 @@ export function createStore<T>(options: StoreOptions<T>) {
     },
     async save(): Promise<StoreResult> { return locked(() => commit(data)); },
     exportBackup(): string {
-      return JSON.stringify({ app: 'hsk1-modular-backup', schema: 1, exportedAt: now(), data: validate(data) }, null, 2);
+      return JSON.stringify({ app: backupAppId, schema: 1, exportedAt: now(), data: validate(data) }, null, 2);
     },
     exportPreview(preview: Preview<T>): string {
       const held = previews.get(preview);
       if (!held) throw new Error('Không có bản xem trước này.');
-      return JSON.stringify({ app: 'hsk1-modular-backup', schema: 1, exportedAt: now(), data: copy(held.data) }, null, 2);
+      return JSON.stringify({ app: backupAppId, schema: 1, exportedAt: now(), data: copy(held.data) }, null, 2);
     },
     exportOriginal(): string | null { return status === 'corrupt' ? expectedRaw : null; },
     previewReplacement,
     previewBackup(text: string): Preview<T> {
       const value: unknown = JSON.parse(text);
-      if (!record(value) || value.app !== 'hsk1-modular-backup' || value.schema !== 1 || !time(value.exportedAt)) {
+      if (!record(value) || value.app !== backupAppId || value.schema !== 1 || !time(value.exportedAt)) {
         throw new Error('Tệp không đúng ứng dụng hoặc phiên bản sao lưu.');
       }
       return previewReplacement(value.data, 'import');

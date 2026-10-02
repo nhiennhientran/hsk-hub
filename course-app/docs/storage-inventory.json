@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "newCourses": [
+    {
+      "id": "hsk2-fltrp-2026",
+      "level": 2,
+      "version": "2026.1",
+      "lessonCount": 15,
+      "storageKey": "ran_hsk2_fltrp_2026_v1"
+    },
+    {
+      "id": "hsk3-fltrp-2026",
+      "level": 3,
+      "version": "2026.1",
+      "lessonCount": 18,
+      "storageKey": "ran_hsk3_fltrp_2026_v1"
+    }
+  ],
+  "legacyKeys": [
+    {
+      "key": "hsk2_ranteacher_progress_v1",
+      "owner": "legacy-hsk2",
+      "treatment": "read-only archive and raw backup"
+    },
+    {
+      "key": "hsk2_ranteacher_mastered_v1",
+      "owner": "legacy-hsk2",
+      "treatment": "read-only archive and raw backup"
+    },
+    {
+      "key": "hsk3_ranteacher_progress_v1",
+      "owner": "legacy-hsk3-20-lesson",
+      "treatment": "read-only archive and raw backup; no lesson number mapping"
+    },
+    {
+      "key": "hsk3_ranteacher_mastered_v1",
+      "owner": "legacy-hsk3",
+      "treatment": "read-only archive if present"
+    },
+    {
+      "key": "hsk_module_progress_v1",
+      "owner": "all-courses",
+      "treatment": "never mutate"
+    },
+    {
+      "key": "hsk_recent_lesson_v1",
+      "owner": "all-courses",
+      "treatment": "never mutate"
+    },
+    {
+      "key": "ran_hsk1_modular_v1",
+      "owner": "hsk1",
+      "treatment": "never mutate"
+    }
+  ],
+  "migration": "No automatic migration. New editions start isolated. Old raw data remains untouched and is exportable alongside its labels."
+}

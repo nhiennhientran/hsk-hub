@@ -1,0 +1,3 @@
+import{readFileSync}from'node:fs';import{spawnSync}from'node:child_process';
+const gate=readFileSync(new URL('../../new-hsk1/hsk1/auth-patch.js',import.meta.url),'utf8');const signature=gate.match(/const SIG='([0-9a-f.]+)'/)?.[1];if(!signature)throw Error('Cannot resolve baseline classroom gate');const password=signature.split('.').map(x=>String.fromCodePoint(parseInt(x,16))).join('');
+const result=spawnSync(process.execPath,['node_modules/@playwright/test/cli.js','test',...process.argv.slice(2)],{cwd:new URL('..',import.meta.url),env:{...process.env,HSK_TEST_PASSWORD:password},stdio:'inherit'});process.exitCode=result.status??1;

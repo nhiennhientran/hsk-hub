@@ -1,0 +1,72 @@
+{
+  "updatedAt": "2026-10-02T14:56:00Z",
+  "phases": [
+    {
+      "phase": 1,
+      "title": "Freeze baseline and recovery",
+      "status": "complete"
+    },
+    {
+      "phase": 2,
+      "title": "Source identity and content pipeline",
+      "status": "complete",
+      "evidence": [
+        "source-inventory.json",
+        "content-contract.md",
+        "../content/audio-manifest.json"
+      ]
+    },
+    {
+      "phase": 3,
+      "title": "Shared course engine and isolated storage",
+      "status": "in_progress"
+    },
+    {
+      "phase": 4,
+      "title": "HSK2 lessons 1\u20133 pilot",
+      "status": "pending"
+    },
+    {
+      "phase": 5,
+      "title": "HSK2 lessons 4\u20139",
+      "status": "pending"
+    },
+    {
+      "phase": 6,
+      "title": "HSK2 lessons 10\u201315",
+      "status": "pending"
+    },
+    {
+      "phase": 7,
+      "title": "HSK3 lessons 1\u20133 pilot",
+      "status": "pending"
+    },
+    {
+      "phase": 8,
+      "title": "HSK3 lessons 4\u20139",
+      "status": "pending"
+    },
+    {
+      "phase": 9,
+      "title": "HSK3 lessons 10\u201315",
+      "status": "pending"
+    },
+    {
+      "phase": 10,
+      "title": "HSK3 lessons 16\u201318 and coverage closure",
+      "status": "pending"
+    },
+    {
+      "phase": 11,
+      "title": "Full frozen-artifact QA",
+      "status": "pending"
+    },
+    {
+      "phase": 12,
+      "title": "Scoped deployment and live acceptance",
+      "status": "pending"
+    }
+  ],
+  "limitations": [],
+  "currentWork": "Shared engine and persistence verification; independent pilot content authoring"
+}
