@@ -1,5 +1,7 @@
 # Original exercise restoration (preview only)
 
+Integrated final preview acceptance: [legacy-restoration-acceptance.md](legacy-restoration-acceptance.md). The local implementation checkpoints below are historical; final exact-head Chromium and WebKit verification is recorded in that acceptance note. Production remains unmodified pending user review.
+
 ## Count boundaries
 
 - Original learning bank: 300 entry points, 20 per lesson, all 15 lessons

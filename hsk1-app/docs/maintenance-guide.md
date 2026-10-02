@@ -1,6 +1,6 @@
 # HSK 1 发布后维护指南
 
-本指南面向维护仓库的开发者，说明在哪里修改、如何验证，以及哪些修改会影响学生现有记录。学生操作见 [student-guide.md](student-guide.md)，教师收据与成绩口径见 [teacher-guide.md](teacher-guide.md)。示例是后续维护步骤，不表示本次发布改过题目、规则或音频。
+本指南面向维护仓库的开发者，说明在哪里修改、如何验证，以及哪些修改会影响学生现有记录。学生操作见 [student-guide.md](student-guide.md)，教师收据与成绩口径见 [teacher-guide.md](teacher-guide.md)。示例是后续维护步骤，不是本次变更清单。下述恢复功能属于预览候选，不能据此宣称已通过最终浏览器验收或已正式发布；当前证据以 [legacy-restoration-acceptance.md](legacy-restoration-acceptance.md) 为准。
 
 ## 工作目录与边界
 
@@ -29,6 +29,24 @@ Node 要求 `>=22.12.0`；依赖以 `package.json` 和 `package-lock.json` 为�
 | 作业收据和打印 | `src/features/homework/receipt.ts`、`receipt.css` |
 | 导航和新增入口 | `src/app/contracts.ts`、`labels.ts`、`main.ts`、`router.ts` |
 | 保存、导入、迁移、恢复 | `src/services/storage/index.ts`、`compatibility.ts`、`src/services/learning/session.ts` |
+| 原版练习、pilot、逐题错题/到期复习 | `content/legacy-exercises.json`、`src/domain/exercises/`、`src/features/exercises/`、`src/features/review/index.ts` |
+| 教材恢复目标、词卡例句与搜索 | `content/textbook-restored-targets.json`、`src/domain/textbook/practice.ts`、`src/services/content/vocabulary.ts`、`src/features/vocabulary/view.ts` |
+| 按课/模块重置与预览确认 | `src/domain/progress/reset.ts`、`src/domain/exercises/engine.ts`、`src/features/progress/data-panel.ts` |
+| 中越双语界面文案 | `src/app/bilingual.ts`、`src/app/i18n/`、`src/services/storage/copy.ts`；课程正文仍以 `content/` 为准 |
+
+## 恢复候选的数量与行为契约
+
+数量权威为 [correction-manifest.json](correction-manifest.json)、[legacy-exercises.md](legacy-exercises.md) 及逐项 [legacy-exercise-manifest.json](legacy-exercise-manifest.json)。不得把入口数、独立答案权威、现行作业和复习入口相加后声称是互不重复的新题：
+
+- **综合练习 · 300题 / Luyện tổng hợp · 300 câu**：15课原版300入口；**第9课拓展 · 30题 / Bài 9 mở rộng · 30 câu**：30入口，另有不计入30题的口语活动。330入口对应315条新编入的任务权威，另15入口复用核验过的权威；现行客观作业复习另有150入口
+- 原版75道越译中选择题自动评分；现行75道自写翻译及pilot 5道自写题只保存供教师批阅，不得加入参考答案、自动对错或分数。现行225作业、75独立听力、344义项维持原范围
+- **教材 / Giáo trình → 练习 / Luyện tập** 共160题，其中10个恢复目标由 `textbook-restored-targets.json` 稳定指向当前已纠正教材内容。不要恢复旧错误词义、拼音或句子；恢复练习的唯一纠正条目 `l10-listening-04` 的依据与原音范围见清单
+- **词卡 / Ôn từ vựng** 与复习词卡均允许未揭示/未自评时前后/跳过。跳过不删队列项、不记完成、不改日程；自评仅在揭示后可选，不自动前进，同轮不重复评级，末卡不循环。搜索支持汉字、越语、拼音（带/不带声调及连写/分写），与选课/筛选相交且只影响新轮。例句来自当前教材并链接来源，缺少合适例句时明确告知
+- **听力 / Luyện nghe** 支持每轮5/10/全部，以筛选后可用题目为限。**已交作业复习 / Ôn câu đã nộp** 和原题错题/到期队列来自有效提交记录，不重写作业首次成绩；与词卡自评日程、独立听力会话分开，手写题不进入自动评分队列
+- **预览旧数据 / Xem trước dữ liệu cũ trên thiết bị** 只在明确点击后发现来源，确认后补缺，不覆盖现行记录、草稿或活跃轮次；完整备份导入仍是另一个替换流程。来源报告保留未理解/未验证/仅旧分数及恢复副本原文，不把它们虚构成有效作答，不改写旧存储键
+- **重置学习进度 / Đặt lại tiến độ học** 可限定一课、一模块或全部，必须 **预览重置 / Xem trước đặt lại** 后 **确认重置此范围 / Xác nhận đặt lại đúng phạm vi này**。保留范围外记录、身份资料、偏好、旧来源和登录状态；混合课队列及共享义项按预览警告保守保留。原子存储留操作前完整恢复副本，仍应另行下载备份
+
+界面自有标签、提示、反馈、保存/迁移/打印单文案采用完整中越双语；课程、题目、答案权威与学生输入不是界面翻译对象。文件选择器、系统打印、离页确认等原生对话框随浏览器/设备语言，不声称由应用双语化。恢复目标及清单内明确纠正之外，不借翻译界面重写课程或评分。
 
 ## 修改前先分清内容指纹和学生记录身份
 
@@ -79,7 +97,7 @@ npm run test:smoke -- tests/browser/homework.spec.ts
 2. 先为旧10分钟记录设计兼容办法。现有备份没有这项规则的独立版本标记，直接把两个 `10 * MINUTE` 改成15会使旧记录失效。若增加规则版本或改变 schema，同时修改 `src/domain/practice/engine.d.ts`、`src/domain/types.ts`、`src/services/storage/compatibility.ts`，保留旧值并补显式迁移，不静默重算历史
 3. 更新 `src/features/vocabulary/view.ts` 的越语间隔说明及学生指南，避免界面仍说10分钟
 4. 在 `tests/vocabulary.test.mjs` 覆盖新提交、到期边界、提前复习不升级、同卡不重复评级；在 `tests/compatibility.test.mjs`、`tests/fixtures.test.mjs` 和 `tests/fixtures/migration/` 保留可读的旧10分钟非空样本并补新版本样本
-5. `tests/compatibility.test.mjs` 目前要求移植引擎正文与旧源完全一致。首次有意改规则时，保留原源 SHA，更新 `src/domain/provenance.json` 的改动说明，并把“全部正文相同”检查拆为冻结旧源检查与新规则行为/迁移检查。不能修改旧源来伪造相同，不能把失败测试简单跳过
+5. `tests/compatibility.test.mjs` 对移植引擎保留全文来源核验，只有已枚举的词卡自由导航/搜索、听力轮数与范围重置等预览差异可例外（见 `src/domain/provenance.json` 及测试辅助文件）。新增规则修改时，保留原源 SHA，更新改动说明并补精确差异、规则行为和迁移检查。不能修改旧源来伪造相同，不能把失败测试简单跳过
 
 定向验证：
 
@@ -200,12 +218,12 @@ npm run test:smoke
 
 内容仍与冻结基线相同时另跑 `npm run catalog:check`。`fixtures:generate` 仅用于有意新增/修改已审查的匿名样本，不能用它消除未知漂移。`test:repro` 针对旧页面初始化问题，不是新应用回归的替代品。
 
-`student:check` 扫描实际产物，包含JS/CSS/HTML和source map。当前构建开启source map，源码中不得有密码、令牌、学生数据或教师参考译文。不要把维护资料、真实备份或整仓库当学生网站发布。
+`student:check` 扫描实际产物，包含JS/CSS/HTML和source map。构建中间产物有source map供私有来源审计，`build:release` 会移除公共.map及sourceMappingURL（见下文单一公共产物流程）；源码及发布产物均不得有密码、令牌、学生数据或教师参考译文。不要把维护资料、真实备份或整仓库当学生网站发布。
 
 最终必须分别记录：
 
 - 同一候选的单元、数据和Chromium/WebKit结果，以及准确命令/提交/报告路径
-- 225作业与75听力共300任务的覆盖；两浏览器不是600道不同题
+- 现行225作业与75独立听力共300任务的覆盖；另记录恢复330入口、160教材练习和逐题复习覆盖，分别说明共享权威；两浏览器不使独立题目数量翻倍
 - 344义项、95排序核定表达、媒体实际事件、四宽度和故障场景的覆盖范围
 - 人耳逐题听辨、语言终审、实体iPhone/Android、系统IME/软键盘、系统中文voice的真实执行情况；未执行保持未执行
 
@@ -226,7 +244,7 @@ npm run test:release
 HSK_LIVE_URL=https://nhiennhientran.github.io/hsk-hub/new-hsk1/hsk1/ npm run test:release -- --project=chromium
 ```
 
-保留实际受测URL、浏览器、结果和产物清单。凭据不写进命令记录、文档或截图。内容有变必须产生新的候选，重新冻结、验证后再发布，不能沿用上一候选的通过声明。最终发布证据见 [step9-acceptance.md](step9-acceptance.md)，恢复步骤见 [rollback.md](rollback.md)。
+保留实际受测URL、浏览器、结果和产物清单。凭据不写进命令记录、文档或截图。内容有变必须产生新的候选，重新冻结、验证后再发布，不能沿用上一候选的通过声明。第9步历史发布证据见 [step9-acceptance.md](step9-acceptance.md)，当前恢复候选证据见 [legacy-restoration-acceptance.md](legacy-restoration-acceptance.md)，回滚步骤见 [rollback.md](rollback.md)。不得沿用早期双语候选的Chromium结果来证明当前候选或WebKit通过。
 
 回滚须使用已保留的受测产物/清单或已确认恢复点，核对入口与资源一起恢复，再在正式原URL验证。代码回滚不等于学习记录反向迁移：旧应用不能读取新应用的 `ran_hsk1_modular_v1`。回滚前提醒保留新版JSON备份，不删除新键、原旧键或恢复副本，不承诺旧应用显示回滚前新增的学习进度。恢复新应用后再用受支持的预览/导入方式处理新版备份。
 

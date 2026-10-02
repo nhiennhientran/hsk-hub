@@ -12,7 +12,7 @@
       "browserTests": [
         "core-bilingual.spec.ts"
       ],
-      "status": "implemented; final browser run is the verification authority"
+      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
     },
     {
       "area": "textbook-vocabulary-mixed-review",
@@ -22,7 +22,7 @@
       "browserTests": [
         "bilingual-vocabulary.spec.ts"
       ],
-      "status": "implemented; final browser run is the verification authority"
+      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
     },
     {
       "area": "textbook-reading-hanzi-audio-practice",
@@ -32,7 +32,7 @@
       "browserTests": [
         "textbook-bilingual.spec.ts"
       ],
-      "status": "implemented; final browser run is the verification authority"
+      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
     },
     {
       "area": "homework-and-receipts",
@@ -42,7 +42,7 @@
       "browserTests": [
         "assignment-bilingual.spec.ts"
       ],
-      "status": "implemented; final browser run is the verification authority"
+      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
     },
     {
       "area": "listening",
@@ -52,7 +52,7 @@
       "browserTests": [
         "assignment-bilingual.spec.ts"
       ],
-      "status": "implemented; final browser run is the verification authority"
+      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
     },
     {
       "area": "restored-exercises-review-writing",
@@ -62,7 +62,7 @@
       "browserTests": [
         "exercises-bilingual.spec.ts"
       ],
-      "status": "implemented; final browser run is the verification authority"
+      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
     },
     {
       "area": "data-migration-reset-confirmations",
@@ -72,7 +72,7 @@
       "browserTests": [
         "data-bilingual.spec.ts"
       ],
-      "status": "implemented; final browser run is the verification authority"
+      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
     },
     {
       "area": "standalone-help",
@@ -82,12 +82,19 @@
       "browserTests": [
         "core-bilingual.spec.ts"
       ],
-      "status": "implemented; final browser run is the verification authority"
+      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
     }
   ],
   "audit": {
     "visibleFeatureLiterals": "Reviewed all features TS and main TS for Vietnamese-only UI literals; two internal throw messages are covered by bilingual generic loading errors; search accent folding is not UI copy",
-    "layout": "320,390,768,1104,1440 viewports; final screenshot review pending at commit time",
+    "layout": "Actual desktop/mobile pixel review and responsive interaction checks passed; physical-device review remains not run.",
     "contentGuardrails": "330 legacy entries, 160 textbook questions, 225 homework, 75 independent listening, 344 senses; no automatic grading for manual writing"
+  },
+  "verification": {
+    "sourceCommit": "4ec260f9b7b08b793cd12e589fd5bcf1c301718f",
+    "workflowRun": 36985143506,
+    "browserPassedPerEngine": 130,
+    "releasePassedPerEngine": 3,
+    "visualReview": "actual 390px and 1440px screenshots in both engines; responsive interaction checks include 320/390/768/1104/1440px"
   }
 }

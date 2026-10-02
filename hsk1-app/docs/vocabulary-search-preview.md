@@ -1,5 +1,7 @@
 # Vocabulary search and textbook examples (preview)
 
+Integrated final preview acceptance: [legacy-restoration-acceptance.md](legacy-restoration-acceptance.md). The local implementation checkpoints below are historical; final exact-head Chromium and WebKit verification is recorded in that acceptance note. Production remains unmodified pending user review.
+
 ## Behavior
 
 - Searches selected lessons in Chinese, Vietnamese meanings, and pinyin. Matching ignores case and diacritics; pinyin accepts joined or spaced syllables.
