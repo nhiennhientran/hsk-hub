@@ -4,6 +4,8 @@ import type { Answer, HomeworkState } from '../../domain/types.ts';
 import type { AppData } from '../../services/storage/compatibility.ts';
 import type { HomeworkLesson, HomeworkPart, SortQuestion } from '../../services/content/homework.ts';
 
+export const HOMEWORK_LIMITS = Object.freeze({ text: engine.MAX_TRANSLATION_LENGTH, profile: engine.MAX_PROFILE_LENGTH });
+
 export interface HomeworkStore {
   snapshot(): { data: AppData };
   edit(mutator: (draft: AppData) => void): void;
@@ -44,6 +46,7 @@ export function createHomeworkController(options: ControllerOptions) {
     return order;
   }
   return {
+    canOpen(kind: HomeworkPart): boolean { return engine.canOpen(store.snapshot().data.homework, lesson.lesson, kind); },
     read() {
       const state = store.snapshot().data.homework;
       const group = current(state);

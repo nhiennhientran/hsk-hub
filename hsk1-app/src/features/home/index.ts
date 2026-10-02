@@ -1,7 +1,8 @@
 import { createDueRefresh } from '../due-refresh.ts';
-import { createEntryModule } from '../entry.ts';
 import type { FeatureModule } from '../../app/contracts.ts';
+import { featureLabels } from '../../app/labels.ts';
 import { routeHref } from '../../app/router.ts';
+import { loadCourseIndex } from '../../services/content/index.ts';
 import { summarizeProgress } from '../../services/learning/progress.ts';
 import { loadProgressSources } from '../progress/content.ts';
 import { element, renderContinuation, renderProgressOverview, routeLink, storageStatusText } from '../progress/summary.ts';
@@ -9,7 +10,10 @@ import '../progress/progress.css';
 
 /** Home keeps the course overview and projects the same session as the progress page. */
 export const mount: FeatureModule['mount'] = (host, context) => {
-  const entry = createEntryModule('home').mount(host, context);
+  const article = element('article'); article.id = 'home-module'; article.className = 'module-entry';
+  const heading = element('h1', featureLabels.home); heading.tabIndex = -1;
+  const description = element('p', 'Đang tải danh sách bài học và tiến độ đã lưu…'); description.id = 'home-course-status';
+  article.append(heading, description); host.append(article);
   const controller = new AbortController();
   const abort = () => controller.abort();
   context.signal.addEventListener('abort', abort, { once: true });
@@ -21,12 +25,23 @@ export const mount: FeatureModule['mount'] = (host, context) => {
   const status = element('p'); status.id = 'home-save-status'; status.className = 'progress-save-status'; status.setAttribute('role', 'status');
   const panels = element('div'); panels.className = 'progress-overview';
   overview.append(element('h2', 'Việc học của bạn'), status, panels, routeLink('Xem tiến độ từng bài và bản sao lưu', { feature: 'progress', lesson: context.route.lesson }));
-  const ready = Promise.all([entry.ready, loadProgressSources(controller.signal)]).then(async ([, sources]) => {
-    if (left || controller.signal.aborted || !context.learning) return;
+  const ready = Promise.all([loadCourseIndex(controller.signal), loadProgressSources(controller.signal)]).then(async ([lessons, sources]) => {
+    if (left || controller.signal.aborted) return;
+    if (!context.learning) throw new Error('Learning session is missing.');
     const session = await context.learning();
     if (left || controller.signal.aborted) return;
-    const grid = host.querySelector('.lesson-grid');
-    grid?.before(continuation, overview);
+    const selected = lessons.find(lesson => lesson.id === context.route.lesson);
+    if (!selected) throw new Error('Lesson not found.');
+    description.textContent = `Bài đang chọn: ${selected.id} · ${selected.title} · ${selected.titleVi}`;
+    const grid = element('div'); grid.className = 'lesson-grid';
+    for (const lesson of lessons) {
+      const card = element('article'); card.className = 'lesson-card'; card.dataset.lesson = String(lesson.id);
+      card.append(element('p', `Bài ${lesson.id}`), element('h2', lesson.title), element('p', lesson.titleVi));
+      const actions = element('div'); actions.className = 'lesson-actions';
+      for (const feature of ['textbook', 'homework', 'listening'] as const) actions.append(routeLink(featureLabels[feature], { feature, lesson: lesson.id }));
+      card.append(actions); grid.append(card);
+    }
+    article.append(continuation, overview, grid);
     const render = () => {
       if (left || controller.signal.aborted) return;
       const snapshot = session.store.snapshot(), data = snapshot.data;
@@ -53,7 +68,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
   });
   return { ready, unmount() {
     if (left) return;
-    left = true; controller.abort(); unsubscribe(); dueRefresh?.dispose(); continuation.remove(); overview.remove(); entry.unmount();
+    left = true; controller.abort(); unsubscribe(); dueRefresh?.dispose(); article.remove();
     context.signal.removeEventListener('abort', abort);
   } };
 };

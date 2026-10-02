@@ -3,7 +3,7 @@
   "title": "HSK1 模块化改造需求与验收矩阵",
   "baseline": {
     "sourceCommit": "71b39192133c82f684384f450dda6079d3253440",
-    "workBranch": "work/hsk1-modular-step7-20261002",
+    "workBranch": "work/hsk1-modular-step8-20261002",
     "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
     "independentStep2Commit": "2c6d3b38866dcfbcf101974302609c470f1d2443",
     "independentStep3Commit": "de823050e97cbab64144197f3bf9241321b73c59",
@@ -12,12 +12,13 @@
     "step3StartCommit": "1ad97b223c89a7c9183f7f09763d3d9c5139a69e",
     "step4StartCommit": "5b4c4fe316356d7795ddd4bb36533562679122ad",
     "step5StartCommit": "4c1569c3e0d830cf22758ba116f876512978c3d0",
-    "step7StartCommit": "e06dbe7303a23906f8eea276ff39f06c5ac3c214"
+    "step7StartCommit": "e06dbe7303a23906f8eea276ff39f06c5ac3c214",
+    "step8StartCommit": "190802508f677a587e5c0ea983429a0bae1357b0"
   },
   "scope": {
-    "currentStep": 7,
+    "currentStep": 8,
     "authorizedStepsThisTurn": [
-      7
+      8
     ],
     "runtimeChanged": true,
     "productionPublished": false,
@@ -603,6 +604,12 @@
           "status": "passed_for_step6_scope",
           "report": "docs/step6-acceptance.md",
           "limits": "听力75题首次/最近及重做独立保留，作业/阅读/词卡状态隔离；完整全领域统计待第7步。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ],
       "step7Evidence": {
@@ -642,6 +649,12 @@
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "翻译提交A→重做草稿B→首次/最近收据仍为A；刷新/切课/跨模块分别恢复，再次提交后latest才变。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ]
     },
@@ -670,6 +683,12 @@
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "真实提交快照收据、姓名班级/时间/5题原文、长译文换行与截图；打印样式通过浏览器media模拟，原生打印对话框和实体截图留第8步。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ]
     },
@@ -706,6 +725,12 @@
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "300ms防抖，刷新/切课/模块切换保稿，1500+中文多行、12000边界、组合输入与离页尾字模拟；真实手机/中文IME未认证，关闭瞬间仅尽力保存。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ]
     },
@@ -816,6 +841,12 @@
           "status": "passed_for_step6_scope",
           "report": "docs/step6-acceptance.md",
           "limits": "代表原MP3边界、404重试、晚响应、切题/跨模块取消，复用唯一Audio；全75逐题完整播放和实体环境未新增。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ],
       "step7Evidence": {
@@ -1073,6 +1104,12 @@
           "status": "passed_for_step6_scope",
           "report": "docs/step6-acceptance.md",
           "limits": "听力公共容器自动保存/刷新恢复与已有备份工具导出；没有云同步或新增schema。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ],
       "step7Evidence": {
@@ -1126,6 +1163,12 @@
           "status": "passed_for_step6_scope",
           "report": "docs/step6-acceptance.md",
           "limits": "听力容量失败内存提交可导出、可重试；原坏备份/冲突保护回归保留，实体配额压力待后续。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ],
       "step7Evidence": {
@@ -1166,6 +1209,12 @@
           "status": "passed_for_step3_scope",
           "report": "docs/step3-acceptance.md",
           "limits": "学习备份排除会话gate，新环境仍需正常口令；生产正式域发布待第9步。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ]
     },
@@ -1201,6 +1250,12 @@
           "status": "passed_for_step2_scope",
           "report": "docs/step2-acceptance.md",
           "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ],
       "step7Evidence": {
@@ -1231,7 +1286,15 @@
       ],
       "acceptance": "原引擎作为行为对照：相同输入得同结果；适用既有规则测试转接；数据语义/95答案/媒体哈希守恒。",
       "evidenceStatus": "architecture",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "pending_for_new_app",
+      "stepEvidence": [
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
+        }
+      ]
     },
     {
       "id": "R039",
@@ -1263,6 +1326,12 @@
           "status": "passed_for_step2_scope",
           "report": "docs/step2-acceptance.md",
           "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ],
       "step7Evidence": {
@@ -1312,6 +1381,12 @@
           "status": "passed_for_step6_scope",
           "report": "docs/step6-acceptance.md",
           "limits": "听力320/390/768/1104四视口布局与截图；CI NotoCJK，非实体手机/触屏认证。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ]
     },
@@ -1359,6 +1434,12 @@
           "status": "passed_for_step6_scope",
           "report": "docs/step6-acceptance.md",
           "limits": "听力初始化禁用/ready、慢内容/失败重试、旧加载取消，切题/离页取消所属播放；旧整合WebKit历史根因未标已解决。"
+        },
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
         }
       ],
       "step7Evidence": {
@@ -1385,7 +1466,15 @@
       ],
       "acceptance": "数据结构全量快检；适用规则检查；Chromium/WebKit完整浏览器要求维持；题目数不因浏览器数翻倍。",
       "evidenceStatus": "scope",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "pending_for_new_app",
+      "stepEvidence": [
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
+        }
+      ]
     },
     {
       "id": "R043",
@@ -1407,7 +1496,15 @@
       ],
       "acceptance": "审查者/时间/问题/处理记录；不把ASR/PCM/hash/native ended或Playwright模拟写为人耳/实体通过。",
       "evidenceStatus": "scope",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "pending_for_new_app",
+      "stepEvidence": [
+        {
+          "step": 8,
+          "status": "pending_final_exact_head_ci",
+          "report": "docs/step8-acceptance.md",
+          "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。"
+        }
+      ]
     },
     {
       "id": "R044",
@@ -1473,6 +1570,7 @@
   "evidenceReports": [
     "review/corpus-inventory.json",
     "review/corpus-validation.json",
-    "review/corpus-changes.json"
+    "review/corpus-changes.json",
+    "docs/step8-acceptance.md"
   ]
 }

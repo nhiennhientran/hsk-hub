@@ -63,10 +63,8 @@ function timers() {
 }
 function setup(options = {}) {
   const audio = new Audio(), speech = new Speech(), clock = timers();
-  let externalStops = 0;
-  const service = createAudioService({ audio, speech, setTimer: clock.setTimer, clearTimer: clock.clearTimer,
-    stopExternal: () => { externalStops++; }, ...options });
-  return { audio, speech, clock, service, get externalStops() { return externalStops; } };
+  const service = createAudioService({ audio, speech, setTimer: clock.setTimer, clearTimer: clock.clearTimer, ...options });
+  return { audio, speech, clock, service };
 }
 const track = (label = 'Xin chào') => ({ url: '../audio/1-1.mp3', label, start: 1, end: 3, sourceKind: 'segment' });
 
@@ -322,7 +320,7 @@ test('a device with only foreign voices reports unsupported, then can retry afte
 });
 
 test('switching media cancels speech, and a cancelled waiting voice request cannot start after leaving its view', async () => {
-  const state = setup(); const { speech, audio, service, clock } = state;
+  const { speech, audio, service, clock } = setup();
   const view = new AbortController();
   const waiting = service.speak('你好', { signal: view.signal });
   const original = service.play(track());
@@ -336,7 +334,9 @@ test('switching media cancels speech, and a cancelled waiting voice request cann
   const utterance = service.speak('再见'); speech.spoken[0].emit('start'); await utterance;
   assert.equal(audio.paused, true);
   assert.equal(service.snapshot().sourceKind, 'tts');
-  assert.equal(state.externalStops, 3);
+  assert.equal(audio.listeners.size, 0);
+  assert.equal(speech.cancelCount, cancelledCount + 1);
+  assert.equal(clock.count, 0);
   service.dispose();
 });
 

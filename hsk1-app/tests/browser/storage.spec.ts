@@ -177,6 +177,8 @@ test('broken JSON, wrong schema, unknown IDs, forged fingerprints and scores can
   const backup = await exportBackup(page);
   const before = await currentRaw(page);
   const invalid: Array<[string, string]> = [['broken JSON', '{"app":']];
+  const wrongApp = structuredClone(backup.parsed); wrongApp.app = 'unrelated-learning-app';
+  invalid.push(['wrong app', JSON.stringify(wrongApp)]);
   const wrongSchema = structuredClone(backup.parsed); wrongSchema.schema = 99;
   invalid.push(['schema', JSON.stringify(wrongSchema)]);
   const unknownId = structuredClone(backup.parsed);

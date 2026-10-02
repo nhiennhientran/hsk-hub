@@ -18,7 +18,10 @@ async function expectReady(page: Page, feature: string, lesson: number): Promise
   else if (feature === 'listening') await expect(host.locator('#listening-start')).toBeEnabled();
   else if (feature === 'vocabulary' || feature === 'review') await expect(host.locator('#vocabulary-start')).toBeEnabled();
   else if (feature === 'progress') await expect(host.locator('#open-data-manager')).toBeEnabled();
-  else await expect(host.locator('[data-module-action="preview"]')).toBeEnabled();
+  else {
+    await expect(host.locator('#home-module .lesson-card')).toHaveCount(15);
+    await expect(host.locator('#home-progress')).toBeVisible();
+  }
 }
 
 test('a fresh localhost session stays gated despite old flags and rejects empty or wrong passwords', async ({ page }) => {
@@ -97,21 +100,21 @@ test('all seven module entries and all fifteen lesson choices remain reachable w
   }
 });
 
-test('the shell and metadata preview remain readable without horizontal overflow at four viewport widths', async ({ page }) => {
+test('the shell and home course overview remain readable without horizontal overflow at four viewport widths', async ({ page }) => {
   await useExistingTabSession(page);
   await page.goto('/');
   await expectReady(page, 'home', 1);
-  await page.locator('[data-module-action="preview"]').click();
   for (const width of [320, 390, 768, 1104]) {
     await page.setViewportSize({ width, height: 800 });
     await expect(page.locator('#feature-nav')).toBeVisible();
     await expect(page.locator('#lesson-select')).toBeVisible();
     await expect(page.locator('#module-host h1')).toBeVisible();
-    await expect(page.locator('#entry-details')).toBeVisible();
+    await expect(page.locator('#home-progress')).toBeVisible();
+    await expect(page.locator('.lesson-grid')).toBeVisible();
     const layout = await page.evaluate(() => ({
       viewport: innerWidth,
       documentWidth: document.documentElement.scrollWidth,
-      boxes: ['#feature-nav', '#lesson-select', '#module-host', '#module-host h1', '#entry-details'].map(selector => {
+      boxes: ['#feature-nav', '#lesson-select', '#module-host', '#module-host h1', '#home-progress', '.lesson-grid'].map(selector => {
         const node = document.querySelector<HTMLElement>(selector)!;
         const box = node.getBoundingClientRect();
         return { selector, left: box.left, right: box.right, fontSize: Number.parseFloat(getComputedStyle(node).fontSize) };
@@ -126,7 +129,7 @@ test('the shell and metadata preview remain readable without horizontal overflow
   }
 });
 
-test('repeated mounts keep one preview listener and load only ESM without legacy app globals', async ({ page }) => {
+test('repeated mounts keep one home view and route listener and load only ESM without legacy app globals', async ({ page }) => {
   const errors: string[] = [];
   const scripts: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
@@ -140,10 +143,14 @@ test('repeated mounts keep one preview listener and load only ESM without legacy
   }
   await page.locator('#feature-nav a[data-feature="home"]').click();
   await expectReady(page, 'home', 1);
-  await expect(page.locator('#entry-details')).toHaveAttribute('data-click-count', '0');
-  await page.locator('[data-module-action="preview"]').click();
-  await expect(page.locator('#entry-details')).toBeVisible();
-  await expect(page.locator('#entry-details')).toHaveAttribute('data-click-count', '1');
+  await expect(page.locator('#home-module')).toHaveCount(1);
+  await expect(page.locator('#home-progress')).toHaveCount(1);
+  await expect(page.locator('.lesson-card')).toHaveCount(15);
+  await expect(page.locator('[data-module-action="preview"], #entry-details')).toHaveCount(0);
+  const before = await page.evaluate(() => history.length);
+  await page.locator('.lesson-card[data-lesson="10"] a[href^="#/textbook?"]').click();
+  await expectReady(page, 'textbook', 10);
+  expect(await page.evaluate(() => history.length)).toBe(before + 1);
   const runtime = await page.evaluate(() => ({
     scripts: [...document.querySelectorAll<HTMLScriptElement>('script[src]')].map(script => ({ type: script.type, src: script.src })),
     legacyGlobals: ['HSK1_LESSONS', '__NEW_HSK1_3_DATA', '__NEW_HSK1_ENRICHMENT', 'HSKStep3Entry', 'initGate'].filter(key => key in window),

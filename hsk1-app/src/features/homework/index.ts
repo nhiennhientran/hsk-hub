@@ -3,12 +3,12 @@ import { PARTS } from '../../app/contracts.ts';
 import { partLabels } from '../../app/labels.ts';
 import { routeHref } from '../../app/router.ts';
 import { loadCourseIndex } from '../../services/content/index.ts';
-import { createHomeworkController } from './controller.ts';
+import { createHomeworkController, HOMEWORK_LIMITS } from './controller.ts';
 import { loadHomeworkBank, type HomeworkQuestion, type SortQuestion } from '../../services/content/homework.ts';
 import { createReceipt } from './receipt.ts';
 import './homework.css';
 
-const MAX_TEXT = 12000;
+const MAX_TEXT = HOMEWORK_LIMITS.text;
 function element<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag);
   if (text !== undefined) node.textContent = text;
@@ -53,7 +53,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const textareaCollectors = new Map<string, () => void>();
     for (const [field, id, label] of [['name', 'homework-name', 'Họ và tên'], ['className', 'homework-class', 'Lớp']] as const) {
       const wrapper = element('label', label);
-      const input = element('input'); input.id = id; input.type = 'text'; input.maxLength = 200;
+      const input = element('input'); input.id = id; input.type = 'text'; input.maxLength = HOMEWORK_LIMITS.profile;
       input.value = homework.read().profile[field]; input.autocomplete = field === 'name' ? 'name' : 'off';
       profileInputs[field] = input;
       input.addEventListener('input', () => {
@@ -104,10 +104,9 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       retrySave.hidden = ['empty', 'saved', 'saving'].includes(current.status);
       retrySave.disabled = current.status === 'saving' || !current.canWrite;
       if (current.status === 'saved' && current.updatedAt) saveStatus.textContent += ` ${localTime(current.updatedAt)}`;
-      const row = current.data.homework.lessons[String(lesson.id)];
       for (const anchor of nav.querySelectorAll<HTMLAnchorElement>('a[data-homework-part]')) {
-        const target = anchor.dataset.homeworkPart;
-        const locked = target !== 'choice' && !(row?.choice?.completed && row.choice.first) || target === 'translation' && !(row?.sort?.completed && row.sort.first);
+        const target = anchor.dataset.homeworkPart as typeof part;
+        const locked = !homework.canOpen(target);
         anchor.dataset.locked = String(locked);
         anchor.textContent = `${partLabels[target as typeof part]}${locked ? ' · Chưa mở' : ''}`;
       }

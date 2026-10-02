@@ -95,7 +95,6 @@ const cancelled: PlaybackResult = { ok: false, code: 'cancelled' };
 export function createAudioService(options: {
   audio: AudioPort;
   speech?: SpeechPort;
-  stopExternal?: () => void;
   setTimer?: (callback: () => void, delay: number) => ReturnType<typeof setTimeout>;
   clearTimer?: (id: ReturnType<typeof setTimeout>) => void;
   voiceWaitMs?: number;
@@ -169,7 +168,6 @@ export function createAudioService(options: {
   function start(optionsSignal?: AbortSignal): Active | undefined {
     if (disposed || optionsSignal?.aborted) return undefined;
     halt();
-    try { options.stopExternal?.(); } catch { /* External legacy media must not own this service. */ }
     if (disposed || optionsSignal?.aborted) return undefined;
     const request: Active = { generation, signal: optionsSignal, label: '', index: 0,
       paused: false, playVersion: 0, trackStarted: false, cleanups: [], trackCleanups: [], pending: [] };
@@ -505,9 +503,5 @@ export function createBrowserAudioService(): AudioService {
     addEventListener: (type, listener) => synthesis.addEventListener(type, listener),
     removeEventListener: (type, listener) => synthesis.removeEventListener(type, listener),
   } : undefined;
-  return createAudioService({ audio, speech, stopExternal: () => {
-    for (const media of document.querySelectorAll('audio,video')) {
-      if (media instanceof HTMLMediaElement) media.pause();
-    }
-  } });
+  return createAudioService({ audio, speech });
 }

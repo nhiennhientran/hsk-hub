@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import engine from '../src/domain/homework/engine.js';
-import { createHomeworkController } from '../src/features/homework/controller.ts';
+import { createHomeworkController, HOMEWORK_LIMITS } from '../src/features/homework/controller.ts';
 import { createStore, STORAGE_KEY } from '../src/services/storage/index.ts';
 import { createCompatibility } from '../src/services/storage/compatibility.ts';
 
@@ -176,4 +176,15 @@ test('retained history stays bounded while first attempt and unrelated learning 
   assert.equal(group.history.length, 20); assert.equal(group.history[0].at, at + 3);
   assert.equal(group.first.at, at); assert.equal(group.first.correct, 0); assert.equal(group.latest.correct, 5);
   for (const key of ['reading', 'practice', 'navigation', 'legacyRaw']) assert.deepEqual(after[key], unrelated[key]);
+});
+
+
+test('view limits and navigation availability reuse the canonical homework rules', () => {
+  assert.deepEqual(HOMEWORK_LIMITS, { text: engine.MAX_TRANSLATION_LENGTH, profile: engine.MAX_PROFILE_LENGTH });
+  assert.equal(Object.isFrozen(HOMEWORK_LIMITS), true);
+  const ctx = setup();
+  const choice = ctx.controller(1, 'choice');
+  for (const part of ['choice', 'sort', 'translation']) assert.equal(choice.canOpen(part), engine.canOpen(ctx.store.snapshot().data.homework, 1, part));
+  unlockTranslation(ctx);
+  for (const part of ['choice', 'sort', 'translation']) assert.equal(choice.canOpen(part), true);
 });

@@ -97,16 +97,14 @@ test('pending controls ignore early clicks and rapid switching aborts old fetche
   const host = page.locator('#module-host');
   await expect(host).toHaveAttribute('data-state', 'loading');
   await expect(host.locator('h1')).toBeVisible();
-  await expect(host.locator('fieldset[data-module-controls]')).toHaveAttribute('disabled', '');
-  await expect(host.locator('[data-module-action="preview"]')).toBeDisabled();
-  // Native disabled activation is a no-op; force-clicking would bypass the user contract.
-  await host.locator('[data-module-action="preview"]').evaluate(button => (button as HTMLButtonElement).click());
-  await expect(page.locator('#entry-details')).toBeHidden();
-  await expect(page.locator('#entry-details')).toHaveAttribute('data-click-count', '0');
+  await expect(host.locator('#home-course-status')).toContainText('Đang tải');
+  await expect(host.locator('.lesson-card')).toHaveCount(0);
+  await expect(host.locator('a[data-route-link]')).toHaveCount(0);
   await page.locator('#feature-nav a[data-feature="listening"]').click();
   await expect.poll(() => pending.length).toBe(2);
   await expect(host).toHaveAttribute('data-feature', 'listening');
   await expect(host.locator('#listening-start')).toBeDisabled();
+  // Native disabled activation is a no-op; force-clicking would bypass the user contract.
   await host.locator('#listening-start').evaluate(button => (button as HTMLButtonElement).click());
   await expect(host.locator('#listening-question')).toHaveCount(0);
   await page.locator('#feature-nav a[data-feature="homework"]').click();

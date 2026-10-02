@@ -1,4 +1,4 @@
-import type { AudioService } from '../../services/audio/index.ts';
+import { AUDIO_RATES, type AudioService } from '../../services/audio/index.ts';
 import { button, element } from './dom.ts';
 
 /** A view of the shared player. It never owns a second media element. */
@@ -13,7 +13,7 @@ export function mountPlayer(host: HTMLElement, audio: AudioService, signal: Abor
   const replay = button('Nghe lại từ đầu', () => { void audio.replay(); }, signal); replay.id = 'audio-replay';
   const stop = button('Dừng', () => audio.stop(), signal); stop.id = 'audio-stop';
   const rateLabel = element('label', 'Tốc độ '); const rate = element('select'); rate.id = 'audio-rate';
-  for (const value of [.65, .75, 1, 1.25, 1.5]) { const option = element('option', `${value}×`); option.value = String(value); rate.append(option); }
+  for (const value of AUDIO_RATES) { const option = element('option', `${value}×`); option.value = String(value); rate.append(option); }
   rate.addEventListener('change', () => audio.setRate(Number(rate.value)), { signal }); rateLabel.append(rate);
   actions.append(pause, resume, replay, stop, rateLabel); panel.append(status, position, actions); host.append(panel);
   function update(): void {

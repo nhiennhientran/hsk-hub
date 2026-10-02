@@ -92,3 +92,7 @@ Vite build和TypeScript检查分别执行；开发可运行不代表类型通过
 `services/content/vocabulary.ts`复用冻结目录并核对344义项/319词形、330原词音/14明确无音项及引用指纹；不新增音源。`domain/vocabulary/controller.ts`调用既有practice纯规则；`features/vocabulary/view.ts`由vocabulary/review两个入口复用，只有显式开始才替换队列。当前卡始终从已保存review.lessons/senseIds/direction恢复，偏好变化与筛选成员变化不会改写在学队列。拼音是当前视图开关，不扩展旧schema。
 
 `services/learning/progress.ts`只读投影阅读、作业首次/最近、翻译草稿/已交和独立听力、词卡自评/到期；首页及进度复用同一会话与展示组件，继续链接以真实已保存卡/题位置为准。没有新增持久化键、重复评分或学习算法。
+
+## 第8步候选清理与系统验收
+
+首页移除临时entry预览工厂，直接拥有课次网格及真实进度；删除AudioService.stopExternal和旧媒体DOM扫描。教材速度、作业输入上限/菜单解锁直接使用既有规范规则。保留汉字生命周期适配和旧规则/迁移对照；不改原生产目录。构建后student:check逐一检查同一HTML别名、唯一启动脚本以及全部产物/source-map来源，防止旧桥接和教师答案源混入学生dist。跨模块、故障、四视口及证据限制见[第8步验收](step8-acceptance.md)。
