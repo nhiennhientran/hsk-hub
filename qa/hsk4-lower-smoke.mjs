@@ -86,6 +86,9 @@ function load(env){
  vm.runInContext(read('hsk4/runtime.js'),env.ctx,{filename:'hsk4/runtime.js'});
  vm.runInContext(read('hsk4/content-audit.js'),env.ctx,{filename:'hsk4/content-audit.js'});
  vm.runInContext(read('hsk4/modules.js'),env.ctx,{filename:'hsk4/modules.js'});
+ // Production loads session-auth before practice.js; its HSK4 write guard prevents
+ // the legacy duplicate document.write in practice.js from rewriting the page.
+ vm.runInContext('document.write=()=>{}',env.ctx);
  vm.runInContext(read('hsk4/practice.js'),env.ctx,{filename:'hsk4/practice.js'});
  vm.runInContext('boot()',env.ctx);
 }
