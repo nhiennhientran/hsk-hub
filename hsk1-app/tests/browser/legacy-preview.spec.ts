@@ -19,12 +19,21 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 1024 }, { name: 
     for (const [name, route] of routes) {
       await page.goto(route);
       await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
+      if (await page.locator('#reading-save-status').count()) await expect(page.locator('#reading-save-status')).toHaveAttribute('data-state', 'saved');
       if (name === 'home') {
         await expect(page.locator('.lesson-card')).toHaveCount(15);
         await expect(page.locator('.lesson-card [data-lesson-section]')).toHaveCount(75);
         await expect(page.locator('.course-hero')).toHaveCSS('background-image', /linear-gradient/);
       }
       if (name === 'dialogue') await expect(page.locator('[data-tongue-text="1"]')).toHaveText(tongueTwisters[1].zh);
+      if (name === 'vocabulary' && viewport.name === 'mobile') {
+        const word = await page.locator('.vocab-front h3').first().boundingBox();
+        expect(word!.y + word!.height, 'the first word should appear before the mobile fold').toBeLessThanOrEqual(viewport.height);
+      }
+      if (name === 'original-exercises' && viewport.name === 'desktop') {
+        const question = await page.locator('.exercise-question > p').first().boundingBox();
+        expect(question!.y + question!.height, 'the first question should be visible without scrolling past settings').toBeLessThanOrEqual(viewport.height);
+      }
       if (name === 'listening') { await page.locator('#listening-start').click(); await expect(page.locator('#listening-question')).toBeVisible(); }
       if (name === 'mixed-vocabulary') { await page.locator('#vocabulary-start').click(); await expect(page.locator('#vocabulary-prompt')).toBeVisible(); }
       if (name === 'original-exercises' || name === 'pilot-reading') await expect(page.locator('#exercise-save-status')).toHaveAttribute('data-state', 'saved');

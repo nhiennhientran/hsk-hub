@@ -127,7 +127,7 @@ export const audioStatusCopy: Record<AudioStatus, BilingualCopy> = {
 };
 export const readingStatusCopy: Record<StoreStatus, BilingualCopy> = {
   empty: pair('暂无需要保存的数据。', 'Chưa có dữ liệu cần lưu.'), saved: pair('已保存到此设备。', 'Đã lưu trên thiết bị này.'),
-  unsaved: pair('有尚未保存的更改。', 'Có thay đổi chưa lưu.'), saving: pair('正在保存…', 'Đang lưu…'),
+  unsaved: pair('正在准备保存更改…', 'Đang chuẩn bị lưu thay đổi…'), saving: pair('正在保存…', 'Đang lưu…'),
   conflict: pair('其他标签页有更改。你的更改仍保留在此标签页。', 'Có thay đổi ở tab khác. Thay đổi của bạn vẫn còn trong tab này.'),
   corrupt: pair('无法读取数据。请在数据管理中保留原始数据。', 'Dữ liệu không đọc được. Hãy giữ lại dữ liệu gốc trong mục quản lý dữ liệu.'),
   unavailable: pair('尚未保存到设备，更改仅保留在此标签页。', 'Chưa lưu được trên thiết bị. Thay đổi chỉ ở trong tab này.'),

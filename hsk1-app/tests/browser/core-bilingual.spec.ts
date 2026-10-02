@@ -40,5 +40,8 @@ for (const width of [320, 390, 1440]) test(`bilingual home and progress remain r
     await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
     for (const selector of ['#feature-nav', '#module-host']) await expect(page.locator(selector)).toBeVisible();
+    const active = await page.locator('#feature-nav [aria-current="page"]').boundingBox();
+    expect(active!.x).toBeGreaterThanOrEqual(0);
+    expect(active!.x + active!.width).toBeLessThanOrEqual(width);
   }
 });

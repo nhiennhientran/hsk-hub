@@ -86,7 +86,9 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       const model = reading.read(); complete.checked = model.complete;
       setBilingual(progress, copy.readingProgress(model.modules.length, model.complete));
       const snapshot = session.store.snapshot(); status.dataset.state = snapshot.status;
-      setBilingual(status, textbookIssue(snapshot.issue, readingStatusCopy[snapshot.status])); retry.hidden = ['empty', 'saved', 'saving'].includes(snapshot.status); retry.disabled = !snapshot.canWrite || snapshot.status === 'saving'; updateView(model.mastered);
+      setBilingual(status, textbookIssue(snapshot.issue, readingStatusCopy[snapshot.status]));
+      retry.hidden = ['empty', 'saved', 'saving'].includes(snapshot.status) || (snapshot.status === 'unsaved' && !snapshot.issue);
+      retry.disabled = !snapshot.canWrite || snapshot.status === 'saving'; updateView(model.mastered);
     }
     unsubscribe = session.store.subscribe(update); reading.visit(); update();
   });

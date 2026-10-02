@@ -115,6 +115,13 @@ function startApplication(): () => void {
       anchor.href = router.href(feature === route.feature ? route : normalizeRoute({ feature, lesson: route.lesson }));
       if (route.feature === feature) anchor.setAttribute('aria-current', 'page'); else anchor.removeAttribute('aria-current');
     });
+    const navigation = root.querySelector<HTMLElement>('#feature-nav')!;
+    const active = navigation.querySelector<HTMLElement>('[aria-current="page"]');
+    if (active && navigation.scrollWidth > navigation.clientWidth) {
+      const bounds = active.getBoundingClientRect(), viewport = navigation.getBoundingClientRect();
+      // Move only this horizontal strip; never jump the reader's page position.
+      navigation.scrollLeft += bounds.left - viewport.left - (navigation.clientWidth - bounds.width) / 2;
+    }
     document.title = `${featureChinese[route.feature]} · ${featureLabels[route.feature]} · ${bilingualText(lessonCopy(route.lesson))} · HSK 1`;
   }
   function begin(): void {

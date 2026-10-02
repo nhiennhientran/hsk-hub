@@ -102,3 +102,13 @@
 
 .textbook-player:is([data-state="loading"], [data-state="playing"], [data-state="paused"], [data-state="error"]) { max-height: min(45vh, 320px); overflow-y: auto; }
 .textbook:has(.textbook-player:is([data-state="loading"], [data-state="playing"], [data-state="paused"], [data-state="error"])) { padding-bottom: min(48vh, 350px); }
+@media (max-width: 600px) {
+ #textbook-vocabulary > .textbook-actions { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; gap: 8px; }
+ #textbook-vocabulary > .textbook-actions button { min-width: 0; padding: 8px; line-height: 1.4; }
+ #textbook-vocabulary > .textbook-actions .bilingual-separator { display: none; }
+ #textbook-vocabulary > .textbook-actions .bilingual-vi { display: block; margin-top: 3px; }
+ .vocab-card { padding-top: 16px; }
+ .vocab-front h3 { margin: .35em 0; line-height: 1.35; }
+ .textbook > .lesson-hero { padding-top: 14px; padding-bottom: 14px; }
+ .textbook > .lesson-hero .eyebrow { margin-bottom: 8px; }
+}

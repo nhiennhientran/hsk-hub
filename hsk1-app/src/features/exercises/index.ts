@@ -70,12 +70,14 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const questionHost = element('section'); questionHost.className = 'exercise-question';
     const navigator = element('nav'); navigator.className = 'exercise-navigator'; navigator.setAttribute('aria-label', bilingualText(copy.navigator));
     const refresh = bilingualButton(copy.refresh, () => { if (collect()) return; audio.stop(); queue = exerciseQueue(catalogue, state(), { set, lesson, group, filter, homework: session.store.snapshot().data.homework }); position = 0; render(); }, lifetime.signal); refresh.id = 'exercise-refresh';
+    const secondary = element('div'); secondary.className = 'exercise-secondary';
     if (group === 'translation') {
       const writing = element('nav'); writing.className = 'study-paths';
       writing.append(bilingualLink(copy.choicePath, { feature: 'exercises', lesson, exerciseSet: 'original', exerciseGroup: 'translation' }), bilingualLink(copy.writingPath, { feature: 'homework', lesson, part: 'translation' }));
-      root.append(writing);
+      secondary.append(writing);
     }
-    root.append(sets, settings, groups, summary, save, saveActions, message, navigator, questionHost, refresh);
+    const setup = element('div'); setup.className = 'exercise-setup'; setup.append(sets, settings);
+    root.append(setup, groups, navigator, message, questionHost, secondary, summary, save, saveActions, refresh);
     root.addEventListener('click', event => { if ((event.target as Element).closest('a[data-route-link]') && collect()) { event.preventDefault(); event.stopPropagation(); } }, { capture: true, signal: lifetime.signal });
     if (set === 'pilot') for (const activity of catalogue.oral) {
       const speaking = element('details'); speaking.className = 'exercise-oral'; speaking.append(bilingualNode('summary', copy.oral), element('h2', activity.title), element('p', activity.prompt));
