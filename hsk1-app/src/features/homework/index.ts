@@ -1,6 +1,8 @@
 import type { FeatureModule } from '../../app/contracts.ts';
 import { PARTS } from '../../app/contracts.ts';
-import { partLabels } from '../../app/labels.ts';
+import { bilingualText, setBilingual, type BilingualCopy } from '../../app/bilingual.ts';
+import { homeworkCopy as copy, homeworkParts, assignmentSaveCopy, assignmentSaveFailed } from '../../app/i18n/homework.ts';
+import '../../app/bilingual.css';
 import { routeHref } from '../../app/router.ts';
 import { loadCourseIndex } from '../../services/content/index.ts';
 import { createHomeworkController, HOMEWORK_LIMITS } from './controller.ts';
@@ -9,22 +11,23 @@ import { createReceipt } from './receipt.ts';
 import './homework.css';
 
 const MAX_TEXT = HOMEWORK_LIMITS.text;
-function element<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string): HTMLElementTagNameMap[K] {
+function element<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string | BilingualCopy): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag);
-  if (text !== undefined) node.textContent = text;
+  if (typeof text === 'string') node.textContent = text;
+  else if (text) { setBilingual(node, text); if (tag === 'p') node.classList.add('bilingual-stacked'); }
   return node;
 }
 const localTime = (stamp: number) => new Date(stamp).toLocaleString('vi-VN');
 
 export const mount: FeatureModule['mount'] = (host, context) => {
   const article = element('article'); article.id = 'homework-module'; article.className = 'module-entry homework';
-  const heading = element('h1', 'Bài tập'); heading.tabIndex = -1;
-  const lessonName = element('p', `Bài ${context.route.lesson} · Đang tải thông tin…`);
-  const nav = element('nav'); nav.className = 'subnav'; nav.dataset.homeworkParts = ''; nav.setAttribute('aria-label', 'Các phần bài tập');
+  const heading = element('h1', copy.title); heading.tabIndex = -1;
+  const lessonName = element('p', copy.loading(context.route.lesson));
+  const nav = element('nav'); nav.className = 'subnav'; nav.dataset.homeworkParts = ''; nav.setAttribute('aria-label', bilingualText(copy.navigation));
   const controls = element('fieldset'); controls.dataset.moduleControls = ''; controls.disabled = true;
-  controls.append(element('legend', 'Bài tập của bạn'));
+  controls.append(element('legend', copy.controls));
   const body = element('div'); body.className = 'homework-body';
-  const loadingSubmit = element('button', 'Nộp bài'); loadingSubmit.id = 'submit-homework'; loadingSubmit.type = 'button'; loadingSubmit.disabled = true; body.append(loadingSubmit); controls.append(body);
+  const loadingSubmit = element('button', copy.submit); loadingSubmit.id = 'submit-homework'; loadingSubmit.type = 'button'; loadingSubmit.disabled = true; body.append(loadingSubmit); controls.append(body);
   article.append(heading, lessonName, nav, controls); host.append(article);
   const lifetime = new AbortController();
   const close = () => lifetime.abort();
@@ -47,29 +50,29 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     flush = () => { void session.flush(); };
     const part = context.route.part ?? 'choice';
     const homework = createHomeworkController({ store: session.store, bank, lesson: lesson.id, part, onChange: session.requestSave });
-    lessonName.textContent = `Bài ${lesson.id} · ${lesson.title} · ${lesson.titleVi}`;
+    setBilingual(lessonName, copy.lesson(lesson.id, lesson.title, lesson.titleVi));
     const profile = element('div'); profile.className = 'homework-profile';
     const profileInputs: Partial<Record<'name' | 'className', HTMLInputElement>> = {};
     const textareaCollectors = new Map<string, () => void>();
-    for (const [field, id, label] of [['name', 'homework-name', 'Họ và tên'], ['className', 'homework-class', 'Lớp']] as const) {
+    for (const [field, id, label] of [['name', 'homework-name', copy.name], ['className', 'homework-class', copy.className]] as const) {
       const wrapper = element('label', label);
       const input = element('input'); input.id = id; input.type = 'text'; input.maxLength = HOMEWORK_LIMITS.profile;
       input.value = homework.read().profile[field]; input.autocomplete = field === 'name' ? 'name' : 'off';
       profileInputs[field] = input;
       input.addEventListener('input', () => {
         if (left) return;
-        if (!homework.profile(field, input.value).ok) showMessage('Tên và lớp được giới hạn ở 200 ký tự.');
+        if (!homework.profile(field, input.value).ok) showMessage(copy.profileLimit);
       }, { signal: lifetime.signal });
       wrapper.append(input); profile.append(wrapper);
     }
-    const profileHint = element('p', 'Bạn có thể học ngay. Điền tên và lớp để ảnh bài nộp có đủ thông tin.');
-    profileHint.className = 'homework-hint';
+    const profileHint = element('p', copy.profileHint);
+    profileHint.classList.add('homework-hint');
     const saveBox = element('div'); saveBox.className = 'homework-save';
     const saveStatus = element('p'); saveStatus.id = 'homework-save-status'; saveStatus.setAttribute('role', 'status');
     const saveActions = element('div'); saveActions.className = 'homework-actions';
-    const retrySave = element('button', 'Thử lưu lại'); retrySave.id = 'retry-homework-save'; retrySave.type = 'button';
-    const exportBackup = element('button', 'Tải bản sao lưu'); exportBackup.id = 'export-homework-backup'; exportBackup.type = 'button';
-    const dataLink = element('a', 'Quản lý dữ liệu'); dataLink.href = routeHref({ feature: 'progress', lesson: lesson.id }); dataLink.dataset.routeLink = '';
+    const retrySave = element('button', copy.retrySave); retrySave.id = 'retry-homework-save'; retrySave.type = 'button';
+    const exportBackup = element('button', copy.backup); exportBackup.id = 'export-homework-backup'; exportBackup.type = 'button';
+    const dataLink = element('a', copy.data); dataLink.href = routeHref({ feature: 'progress', lesson: lesson.id }); dataLink.dataset.routeLink = '';
     saveActions.append(retrySave, exportBackup, dataLink); saveBox.append(saveStatus, saveActions);
     const courseSummary = element('p'); courseSummary.id = 'homework-course-summary';
     const exercise = element('div'); exercise.className = 'homework-exercise';
@@ -84,7 +87,8 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       for (const timer of timers) clearTimeout(timer);
       for (const url of urls) URL.revokeObjectURL(url);
     }, { once: true });
-    function showMessage(text: string): void { message.textContent = text; }
+    function showMessage(text: BilingualCopy | ''): void { if (text) setBilingual(message, text); else message.replaceChildren(); }
+    for (const node of [message, counter, courseSummary, saveStatus]) node.classList.add('bilingual-stacked');
     collectDraft = () => {
       for (const field of ['name', 'className'] as const) {
         const input = profileInputs[field];
@@ -102,24 +106,24 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const score = (correct: number | null, total: number) => `${correct} / ${total} (${total ? Math.round((correct ?? 0) / total * 100) : 0}%)`;
     function updateSummary(): void {
       const model = homework.read();
-      counter.textContent = model.locked ? '' : model.group?.attempt ? 'Đã nộp đủ 5 câu của phần này.' : `Đã trả lời ${model.answered} / ${model.total} câu.`;
+      if (model.locked) counter.replaceChildren();
+      else setBilingual(counter, model.group?.attempt ? copy.allSubmitted : copy.answered(model.answered, model.total));
       const totals = model.courseTotals;
-      courseSummary.textContent = `Bài tập đã nộp: ${totals.homework.submitted} / ${totals.homework.total} câu. Các câu chấm tự động: lần đầu ${totals.automatic.firstCorrect} / ${totals.automatic.submitted}, gần nhất ${totals.automatic.latestCorrect} / ${totals.automatic.submitted}. Dịch tự viết đã nộp: ${totals.manual.submitted} / ${totals.manual.total} câu.`;
+      setBilingual(courseSummary, copy.courseTotals(totals.homework, totals.automatic, totals.manual));
       const current = session.store.snapshot(); saveStatus.dataset.state = current.status;
-      const labels = { empty: 'Chưa có dữ liệu cần lưu.', saved: 'Đã lưu trên thiết bị này.', unsaved: 'Có thay đổi chưa lưu.', saving: 'Đang lưu…', conflict: 'Có thay đổi ở tab khác. Bản nháp trong tab này vẫn còn.', corrupt: 'Dữ liệu cũ không đọc được. Hãy giữ lại dữ liệu gốc trong mục quản lý dữ liệu.', unavailable: 'Chưa lưu được trên thiết bị. Bản nháp chỉ ở trong tab này.' };
-      saveStatus.textContent = current.issue ?? labels[current.status];
-      retrySave.hidden = ['empty', 'saved', 'saving'].includes(current.status);
+      setBilingual(saveStatus, assignmentSaveCopy(current));
+      saveStatus.dataset.failed = String(assignmentSaveFailed(current));
+      retrySave.hidden = !assignmentSaveFailed(current);
       retrySave.disabled = current.status === 'saving' || !current.canWrite;
-      if (current.status === 'saved' && current.updatedAt) saveStatus.textContent += ` ${localTime(current.updatedAt)}`;
       for (const anchor of nav.querySelectorAll<HTMLAnchorElement>('a[data-homework-part]')) {
         const target = anchor.dataset.homeworkPart as typeof part;
         const locked = !homework.canOpen(target);
         anchor.dataset.locked = String(locked);
-        anchor.textContent = `${partLabels[target as typeof part]}${locked ? ' · Chưa mở' : ''}`;
+        setBilingual(anchor, copy.part(target, locked));
       }
     }
     for (const item of PARTS) {
-      const anchor = element('a', partLabels[item]); anchor.href = routeHref({ ...context.route, part: item }); anchor.dataset.routeLink = ''; anchor.dataset.homeworkPart = item;
+      const anchor = element('a', homeworkParts[item]); anchor.href = routeHref({ ...context.route, part: item }); anchor.dataset.routeLink = ''; anchor.dataset.homeworkPart = item;
       if (item === part) anchor.setAttribute('aria-current', 'page');
       nav.append(anchor);
     }
@@ -129,7 +133,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
         const url = URL.createObjectURL(new Blob([session.store.exportBackup()], { type: 'application/json' })); urls.add(url);
         const anchor = element('a'); anchor.href = url; anchor.download = `hsk1-ban-sao-luu-${Date.now()}.json`; document.body.append(anchor); anchor.click(); anchor.remove();
         const timer = setTimeout(() => { URL.revokeObjectURL(url); urls.delete(url); timers.delete(timer); }, 1000); timers.add(timer);
-      } catch { showMessage('Không tạo được bản sao lưu. Vui lòng thử lại.'); }
+      } catch { showMessage(copy.backupFailed); }
     }, { signal: lifetime.signal });
     function openReceipt(selected: 'first' | 'latest'): void {
       collectDraft();
@@ -144,26 +148,26 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       if (!attempt || question.kind === 'translation') return;
       const correct = attempt.results?.[question.id] === true;
       const result = element('div'); result.className = `homework-feedback ${correct ? 'is-correct' : 'is-incorrect'}`; result.dataset.homeworkFeedback = '';
-      result.append(element('strong', correct ? 'Đúng' : 'Chưa đúng'));
+      result.append(element('strong', correct ? copy.correct : copy.incorrect));
       if (question.kind === 'choice') {
-        result.append(element('p', `Đáp án: ${question.options[question.answer]}`));
+        result.append(element('p', `${bilingualText(copy.answer)}: ${question.options[question.answer]}`));
         const selected = attempt.answers[question.id];
         if (typeof selected === 'number' && question.optionFeedback?.[selected]) result.append(element('p', question.optionFeedback[selected]));
-      } else result.append(element('p', `Câu phù hợp: ${question.answers.join(' / ')}`));
+      } else result.append(element('p', `${bilingualText(copy.suitableSentence)}: ${question.answers.join(' / ')}`));
       result.append(element('p', question.explanation)); card.append(result);
     }
     function renderSort(question: SortQuestion, card: HTMLElement, readonly: boolean, signal: AbortSignal): void {
-      const output = element('div'); output.className = 'sort-answer'; output.dataset.sortAnswer = question.id; output.setAttribute('aria-label', 'Câu đã xếp');
-      const available = element('div'); available.className = 'sort-tokens'; available.dataset.sortTokens = question.id; available.setAttribute('aria-label', 'Từ chưa chọn');
-      const clear = element('button', 'Xóa câu đã xếp'); clear.type = 'button'; clear.id = `sort-clear-${question.id}`; clear.disabled = readonly;
+      const output = element('div'); output.className = 'sort-answer'; output.dataset.sortAnswer = question.id; output.setAttribute('aria-label', bilingualText(copy.sorted));
+      const available = element('div'); available.className = 'sort-tokens'; available.dataset.sortTokens = question.id; available.setAttribute('aria-label', bilingualText(copy.unused));
+      const clear = element('button', copy.clearSort); clear.type = 'button'; clear.id = `sort-clear-${question.id}`; clear.disabled = readonly;
       function draw(): void {
         const model = homework.read(); const value = model.group?.draft[question.id];
         const chosen = Array.isArray(value) ? value : [];
         output.replaceChildren(); available.replaceChildren();
-        if (!chosen.length) output.append(element('span', 'Chọn từng từ để tạo câu.'));
+        if (!chosen.length) output.append(element('span', copy.sortHint));
         for (const index of chosen) {
           const button = element('button', question.tokens[index]); button.type = 'button'; button.dataset.sortRemove = question.id; button.dataset.tokenIndex = String(index); button.disabled = readonly;
-          button.setAttribute('aria-label', `Bỏ ${question.tokens[index]} khỏi câu`); output.append(button);
+          button.setAttribute('aria-label', bilingualText(copy.removeToken(question.tokens[index]))); output.append(button);
         }
         const order = model.group?.orders[question.id] ?? question.tokens.map((_, index) => index);
         for (const index of order) {
@@ -196,30 +200,30 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       const signal = formLifetime.signal;
       composing.clear(); invalid.clear(); textareaCollectors.clear(); exercise.replaceChildren();
       const model = homework.read();
-      exercise.append(element('h2', partLabels[part]));
-      const reviewLinks = element('nav'); reviewLinks.className = 'study-paths'; reviewLinks.setAttribute('aria-label', 'Ôn câu và dạng bài khác');
-      for (const [label, filter] of [['Ôn câu sai · 错题', 'wrong'], ['Ôn câu đến hạn · 复习', 'due']] as const) {
+      exercise.append(element('h2', homeworkParts[part]));
+      const reviewLinks = element('nav'); reviewLinks.className = 'study-paths'; reviewLinks.setAttribute('aria-label', bilingualText(copy.reviewNavigation));
+      for (const [label, filter] of [[copy.wrong, 'wrong'], [copy.due, 'due']] as const) {
         const link = element('a', label); link.href = routeHref({ feature: 'exercises', lesson: lesson.id, exerciseSet: 'homework-review', exerciseGroup: part === 'sort' ? 'sort' : 'choice', exerciseFilter: filter }); link.dataset.routeLink = ''; reviewLinks.append(link);
       }
-      if (part === 'translation') { const link = element('a', 'Dịch lựa chọn · 翻译选择'); link.href = routeHref({ feature: 'exercises', lesson: lesson.id, exerciseSet: 'original', exerciseGroup: 'translation' }); link.dataset.routeLink = ''; reviewLinks.append(link); }
+      if (part === 'translation') { const link = element('a', copy.translationChoice); link.href = routeHref({ feature: 'exercises', lesson: lesson.id, exerciseSet: 'original', exerciseGroup: 'translation' }); link.dataset.routeLink = ''; reviewLinks.append(link); }
       exercise.append(reviewLinks);
 
       if (model.locked) {
         const prerequisite = part === 'sort' ? 'choice' : 'sort';
-        exercise.append(element('p', `Hoàn thành và nộp đủ 5 câu ${partLabels[prerequisite].toLowerCase()} để mở phần này. Không cần đạt điểm tối đa.`));
-        const previous = element('a', `Đến phần ${partLabels[prerequisite]}`); previous.href = routeHref({ ...context.route, part: prerequisite }); previous.dataset.routeLink = ''; exercise.append(previous); return;
+        exercise.append(element('p', copy.locked(prerequisite)));
+        const previous = element('a', copy.goToPart(prerequisite)); previous.href = routeHref({ ...context.route, part: prerequisite }); previous.dataset.routeLink = ''; exercise.append(previous); return;
       }
       const submitted = model.group?.attempt;
-      if (part === 'translation') exercise.append(element('p', 'Dịch sang tiếng Trung bằng cách viết của bạn. Bài tự viết không chấm điểm tự động; sau khi nộp, bạn có thể chụp ảnh bài nộp để gửi giáo viên.'));
-      else exercise.append(element('p', 'Trả lời đủ 5 câu rồi nộp để xem kết quả và giải thích.'));
+      if (part === 'translation') exercise.append(element('p', copy.manualHint));
+      else exercise.append(element('p', copy.automaticHint));
       for (const [index, question] of model.questions.entries()) {
         const card = element('article'); card.className = 'homework-question'; card.dataset.questionId = question.id;
-        card.append(element('h3', `Câu ${index + 1}. ${question.prompt}`));
+        card.append(element('h3', `${bilingualText(copy.question(index + 1))}. ${question.prompt}`));
         if (question.stem) { const stem = element('p', question.stem); stem.className = 'homework-stem'; card.append(stem); }
         const source = element('p', question.source.label); source.className = 'homework-source'; card.append(source);
         const value = model.group?.draft[question.id];
         if (question.kind === 'choice') {
-          const options = element('fieldset'); options.className = 'homework-options'; options.append(element('legend', `Chọn đáp án câu ${index + 1}`));
+          const options = element('fieldset'); options.className = 'homework-options'; options.append(element('legend', copy.choose(index + 1)));
           for (const [optionIndex, text] of question.options.entries()) {
             const label = element('label'); const input = element('input'); input.type = 'radio'; input.name = question.id; input.value = String(optionIndex); input.dataset.answerId = question.id; input.checked = value === optionIndex; input.disabled = !!submitted;
             input.addEventListener('change', () => { if (homework.answer(question.id, optionIndex).ok) { card.classList.remove('is-missing'); showMessage(''); } }, { signal });
@@ -228,13 +232,13 @@ export const mount: FeatureModule['mount'] = (host, context) => {
           card.append(options);
         } else if (question.kind === 'sort') renderSort(question, card, !!submitted, signal);
         else {
-          const label = element('label', `Câu trả lời tiếng Trung · Câu ${index + 1}`);
+          const label = element('label', copy.writtenAnswer(index + 1));
           const textarea = element('textarea'); textarea.dataset.answerId = question.id; textarea.rows = 4; textarea.maxLength = MAX_TEXT; textarea.value = typeof value === 'string' ? value : ''; textarea.readOnly = !!submitted; textarea.spellcheck = false;
-          const length = element('p', `${textarea.value.length} / ${MAX_TEXT} ký tự`); length.className = 'homework-hint'; length.dataset.answerLength = question.id;
+          const length = element('p', copy.length(textarea.value.length, MAX_TEXT)); length.classList.add('homework-hint', 'homework-length'); length.dataset.answerLength = question.id;
           const persist = () => {
-            length.textContent = `${textarea.value.length} / ${MAX_TEXT} ký tự`;
+            setBilingual(length, copy.length(textarea.value.length, MAX_TEXT));
             const outcome = homework.answer(question.id, textarea.value);
-            if (!outcome.ok) { invalid.add(question.id); showMessage(`Câu ${index + 1} vượt giới hạn ${MAX_TEXT} ký tự; phần vượt giới hạn chưa được lưu. Hãy rút ngắn trước khi nộp.`); }
+            if (!outcome.ok) { invalid.add(question.id); showMessage(copy.tooLong(index + 1, MAX_TEXT)); }
             else { invalid.delete(question.id); card.classList.remove('is-missing'); if (!invalid.size) showMessage(''); }
           };
           if (!submitted) textareaCollectors.set(question.id, persist);
@@ -247,37 +251,37 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       }
       const actions = element('div'); actions.className = 'homework-actions';
       if (!submitted) {
-        const submit = element('button', part === 'translation' ? 'Nộp bài tự viết' : 'Nộp và xem kết quả'); submit.type = 'button'; submit.id = 'submit-homework'; submit.className = 'primary';
+        const submit = element('button', part === 'translation' ? copy.submitManual : copy.submitAutomatic); submit.type = 'button'; submit.id = 'submit-homework'; submit.className = 'primary';
         submit.addEventListener('click', () => {
-          if (composing.size) { showMessage('Hãy hoàn tất nhập chữ rồi nộp bài.'); return; }
-          if (invalid.size || [...exercise.querySelectorAll('textarea')].some(input => input.value.length > MAX_TEXT)) { showMessage(`Có câu vượt giới hạn ${MAX_TEXT} ký tự chưa lưu. Hãy rút ngắn trước khi nộp.`); return; }
+          if (composing.size) { showMessage(copy.composing); return; }
+          if (invalid.size || [...exercise.querySelectorAll('textarea')].some(input => input.value.length > MAX_TEXT)) { showMessage(copy.unsavedTooLong(MAX_TEXT)); return; }
           collectDraft();
           const outcome = homework.submit();
           if (!outcome.ok) {
             if (outcome.reason === 'missing') {
-              showMessage('Bạn cần trả lời đủ 5 câu trước khi nộp.');
+              showMessage(copy.missing);
               for (const card of exercise.querySelectorAll<HTMLElement>('[data-question-id]')) card.classList.toggle('is-missing', outcome.missing?.includes(card.dataset.questionId!) ?? false);
               exercise.querySelector<HTMLElement>('.is-missing input, .is-missing textarea, .is-missing button')?.focus();
-            } else showMessage('Chưa nộp được bài. Hãy kiểm tra phần đang mở và thử lại.');
+            } else showMessage(copy.submitFailed);
             return;
           }
-          showMessage(outcome.manual ? 'Đã tạo bài nộp tự viết. Không có điểm tự động; hãy xem trạng thái lưu và ảnh bài nộp.' : `Đã nộp: ${score(outcome.correct, outcome.total)} câu đúng. Hãy xem trạng thái lưu trên thiết bị.`);
+          showMessage(outcome.manual ? copy.manualSubmitted : copy.submitted(score(outcome.correct, outcome.total)));
           renderExercise();
         }, { signal }); actions.append(submit);
       } else {
-        const result = element('p', submitted.assessment === 'manual' ? `Bài tự viết đã nộp lúc ${localTime(submitted.at)}. Không có điểm tự động.` : `Kết quả lần nộp hiện tại: ${score(submitted.correct, submitted.total)} câu đúng · ${localTime(submitted.at)}.`); result.id = 'homework-result'; exercise.append(result);
-        const restart = element('button', 'Làm lại phần này'); restart.type = 'button'; restart.id = 'restart-homework';
-        restart.addEventListener('click', () => { if (homework.restart().ok) { homework.ensureSortOrders(); showMessage('Đã mở bản nháp mới. Bài nộp đầu tiên và gần nhất vẫn được giữ lại.'); renderExercise(); } }, { signal }); actions.append(restart);
+        const result = element('p', submitted.assessment === 'manual' ? copy.manualResult(localTime(submitted.at)) : copy.result(score(submitted.correct, submitted.total), localTime(submitted.at))); result.id = 'homework-result'; exercise.append(result);
+        const restart = element('button', copy.restart); restart.type = 'button'; restart.id = 'restart-homework';
+        restart.addEventListener('click', () => { if (homework.restart().ok) { homework.ensureSortOrders(); showMessage(copy.restarted); renderExercise(); } }, { signal }); actions.append(restart);
       }
       if (model.group?.first) {
-        const first = element('button', 'Ảnh bài nộp đầu tiên'); first.type = 'button'; first.id = 'receipt-first'; first.addEventListener('click', () => openReceipt('first'), { signal }); actions.append(first);
+        const first = element('button', copy.firstReceipt); first.type = 'button'; first.id = 'receipt-first'; first.addEventListener('click', () => openReceipt('first'), { signal }); actions.append(first);
       }
       if (model.group?.latest) {
-        const latest = element('button', 'Ảnh bài nộp gần nhất'); latest.type = 'button'; latest.id = 'receipt-latest'; latest.addEventListener('click', () => openReceipt('latest'), { signal }); actions.append(latest);
+        const latest = element('button', copy.latestReceipt); latest.type = 'button'; latest.id = 'receipt-latest'; latest.addEventListener('click', () => openReceipt('latest'), { signal }); actions.append(latest);
         const firstAttempt = model.group.first!; const latestAttempt = model.group.latest;
         const firstScore = firstAttempt.assessment === 'manual' ? '' : ` · ${score(firstAttempt.correct, firstAttempt.total)}`;
         const latestScore = latestAttempt.assessment === 'manual' ? '' : ` · ${score(latestAttempt.correct, latestAttempt.total)}`;
-        const summary = element('p', `Lần nộp đầu: ${localTime(firstAttempt.at)}${firstScore} · Gần nhất: ${localTime(latestAttempt.at)}${latestScore} · Đang giữ ${model.group.history.length} lần nộp gần đây.`); summary.id = 'homework-attempt-summary'; exercise.append(summary);
+        const summary = element('p', copy.attempts(`${localTime(firstAttempt.at)}${firstScore}`, `${localTime(latestAttempt.at)}${latestScore}`, model.group.history.length)); summary.id = 'homework-attempt-summary'; exercise.append(summary);
       }
       exercise.append(actions); updateSummary();
     }

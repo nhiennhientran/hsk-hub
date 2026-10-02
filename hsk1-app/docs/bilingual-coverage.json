@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "scope": "HSK1 application, including login and standalone help; no change to HSK2/3/4 or portal",
+  "policy": "Explicit Chinese/Vietnamese interface copy. Curriculum, answer-bearing content, source texts, and typed learner answers are unchanged. Native OS/browser dialogs follow device language.",
+  "areas": [
+    {
+      "area": "shell-auth-home-progress",
+      "copySources": [
+        "src/app/i18n/core.ts",
+        "src/app/i18n/progress.ts"
+      ],
+      "browserTests": [
+        "core-bilingual.spec.ts"
+      ],
+      "status": "implemented; final browser run is the verification authority"
+    },
+    {
+      "area": "textbook-vocabulary-mixed-review",
+      "copySources": [
+        "src/app/i18n/vocabulary.ts"
+      ],
+      "browserTests": [
+        "bilingual-vocabulary.spec.ts"
+      ],
+      "status": "implemented; final browser run is the verification authority"
+    },
+    {
+      "area": "textbook-reading-hanzi-audio-practice",
+      "copySources": [
+        "src/app/i18n/textbook.ts"
+      ],
+      "browserTests": [
+        "textbook-bilingual.spec.ts"
+      ],
+      "status": "implemented; final browser run is the verification authority"
+    },
+    {
+      "area": "homework-and-receipts",
+      "copySources": [
+        "src/app/i18n/homework.ts"
+      ],
+      "browserTests": [
+        "assignment-bilingual.spec.ts"
+      ],
+      "status": "implemented; final browser run is the verification authority"
+    },
+    {
+      "area": "listening",
+      "copySources": [
+        "src/app/i18n/listening.ts"
+      ],
+      "browserTests": [
+        "assignment-bilingual.spec.ts"
+      ],
+      "status": "implemented; final browser run is the verification authority"
+    },
+    {
+      "area": "restored-exercises-review-writing",
+      "copySources": [
+        "src/app/i18n/exercises.ts"
+      ],
+      "browserTests": [
+        "exercises-bilingual.spec.ts"
+      ],
+      "status": "implemented; final browser run is the verification authority"
+    },
+    {
+      "area": "data-migration-reset-confirmations",
+      "copySources": [
+        "src/services/storage/copy.ts"
+      ],
+      "browserTests": [
+        "data-bilingual.spec.ts"
+      ],
+      "status": "implemented; final browser run is the verification authority"
+    },
+    {
+      "area": "standalone-help",
+      "copySources": [
+        "public/help.html"
+      ],
+      "browserTests": [
+        "core-bilingual.spec.ts"
+      ],
+      "status": "implemented; final browser run is the verification authority"
+    }
+  ],
+  "audit": {
+    "visibleFeatureLiterals": "Reviewed all features TS and main TS for Vietnamese-only UI literals; two internal throw messages are covered by bilingual generic loading errors; search accent folding is not UI copy",
+    "layout": "320,390,768,1104,1440 viewports; final screenshot review pending at commit time",
+    "contentGuardrails": "330 legacy entries, 160 textbook questions, 225 homework, 75 independent listening, 344 senses; no automatic grading for manual writing"
+  }
+}

@@ -1,4 +1,5 @@
 import { readFile } from 'node:fs/promises';
+import { dataCopy } from '../../src/services/storage/copy.ts';
 import { test, expect, type BrowserContext, type Page } from '@playwright/test';
 
 const stateKey = 'ran_hsk1_modular_v1';
@@ -383,7 +384,8 @@ test('discovering old sources with nonempty current progress adds only missing l
   await importBackup(page, JSON.stringify(backup.parsed));
   const current = JSON.parse((await currentRaw(page))!);
   await previewMigration(page);
-  await expect(page.locator('#confirm-data-import')).toHaveText('Xác nhận bổ sung dữ liệu cũ');
+  await expect(page.locator('#confirm-data-import > [lang="zh"]')).toHaveText(dataCopy.confirmSupplement.zh);
+  await expect(page.locator('#confirm-data-import > [lang="vi"]')).toHaveText(dataCopy.confirmSupplement.vi);
   expect(JSON.parse((await currentRaw(page))!).data).toEqual(current.data);
   await page.locator('#confirm-data-import').click();
   await expect(page.locator('#data-status')).toHaveAttribute('data-state', 'saved');

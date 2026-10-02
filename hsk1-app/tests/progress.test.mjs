@@ -124,10 +124,12 @@ test('continuation preserves textbook sections and homework parts, while practic
   data.navigation = { feature: 'listening', lesson: 1 };
   let resume = progressResume(data, catalog);
   assert.equal(resume.route.lesson, 7); assert.match(resume.label, /Câu 2\/15/);
+  assert.match(resume.label, /第2\/15题/);
   for (const feature of ['vocabulary', 'review']) {
     data.navigation = { feature, lesson: 1 }; resume = progressResume(data, catalog);
     const round = data.practice.cards.review, card = catalog.vocabulary.find(row => row.senseId === round.senseIds[round.position]);
     assert.deepEqual(resume.route, { feature, lesson: card.lesson }); assert.match(resume.label, /Thẻ 4\/72/);
+    assert.match(resume.label, /第4\/72张/);
   }
   assert.match(summarize(data).listeningResume.label, /Câu 2\/15/);
   assert.match(summarize(data).vocabularyResume.label, /Thẻ 4\/72/);

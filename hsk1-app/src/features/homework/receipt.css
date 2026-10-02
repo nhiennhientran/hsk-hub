@@ -24,3 +24,20 @@
   .homework-receipt { color: #000; }
   .receipt-note { color: #333; }
 }
+
+.receipt-toolbar > * { min-width: 0; max-width: 100%; line-height: 1.5; }
+.receipt-toolbar button { padding: 9px 13px; font-size: .875rem; }
+.receipt-identity dt { max-width: 150px; overflow-wrap: anywhere; line-height: 1.5; }
+.receipt-submission .receipt-score { display: block; margin-top: 8px; font-weight: 650; }
+.receipt-note { line-height: 1.7; }
+@media (max-width: 600px) {
+  .receipt-identity { grid-template-columns: minmax(80px, 32%) minmax(0, 1fr); gap: 10px; }
+  .receipt-identity dt > .bilingual-vi { display: block; margin-top: 2px; }
+  .receipt-identity dt > .bilingual-separator { display: none; }
+  .receipt-toolbar { gap: 8px; margin-bottom: 18px; }
+}
+@media print {
+  .receipt-identity dt > .bilingual-vi { display: block; }
+  .receipt-identity dt > .bilingual-separator { display: none; }
+  .homework-receipt .bilingual-vi { color: inherit; }
+}

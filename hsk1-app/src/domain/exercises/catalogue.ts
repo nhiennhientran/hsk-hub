@@ -13,7 +13,7 @@ export interface ExerciseEntry { readonly id: string; readonly oldId: string; re
 export interface OralActivity { readonly id: string; readonly lesson: number; readonly title: string; readonly prompt: string; readonly stems: readonly string[]; readonly note: string; readonly source: ExerciseSource }
 export interface ExerciseCatalogue { readonly tasks: ReadonlyMap<string, ExerciseTask>; readonly entries: readonly ExerciseEntry[]; readonly entryById: ReadonlyMap<string, ExerciseEntry>; readonly passages: Readonly<Record<string, { readonly lines: readonly string[]; readonly source: ExerciseSource }>>; readonly oral: readonly OralActivity[] }
 export const exerciseGroupLabels: Record<ExerciseGroup, string> = { choice: 'Chọn đáp án', sort: 'Xếp câu', translation: 'Dịch Việt → Trung', listening: 'Nghe chọn đáp án', words: 'Từ vựng & pinyin', grammar: 'Ngữ pháp', reading: 'Đọc hiểu', ordering: 'Xếp câu' };
-export const exerciseSetLabels: Record<ExerciseSet, string> = { original: 'Bài tập gốc · 300 câu', pilot: 'Bài 9 mở rộng · 30 câu', 'homework-review': 'Ôn câu bài tập hiện tại' };
+export const exerciseSetLabels: Record<ExerciseSet, string> = { original: 'Luyện tổng hợp · 300 câu', pilot: 'Bài 9 mở rộng · 30 câu', 'homework-review': 'Ôn câu đã nộp' };
 type Row = Record<string, unknown>;
 const row = (v: unknown): v is Row => v !== null && typeof v === 'object' && !Array.isArray(v);
 const text = (v: unknown): v is string => typeof v === 'string' && !!v.trim();

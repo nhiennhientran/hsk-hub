@@ -1,0 +1,6 @@
+/* Paired UI copy stays in normal flow so Vietnamese labels wrap on mobile. */
+.bilingual-zh { font-family: var(--zh-font, "Noto Sans CJK SC", sans-serif); }
+.bilingual-vi { font-size: max(14px, .92em); }
+button:has(> .bilingual-zh), label:has(> .bilingual-zh), a:has(> .bilingual-zh) { white-space: normal; overflow-wrap: anywhere; }
+.bilingual-stacked > .bilingual-vi { display: block; margin-top: .25em; }
+.bilingual-stacked > .bilingual-separator { display: none; }

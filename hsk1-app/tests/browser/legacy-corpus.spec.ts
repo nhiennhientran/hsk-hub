@@ -35,16 +35,16 @@ test('every one of the 330 legacy question entries renders its retained task and
           await page.locator(`.exercise-navigator [data-exercise-entry="${entry.id}"]`).click();
           await expect(page.locator('.exercise-question')).toHaveAttribute('data-exercise-entry', entry.id);
           await expect(page.locator('.exercise-question')).toContainText(entry.prompt ?? task.prompt);
-          if (await page.locator('#exercise-submit').textContent() === 'Làm lại câu này') await page.locator('#exercise-submit').click();
+          if (await page.locator('#exercise-submit').getAttribute('data-action') === 'redo') await page.locator('#exercise-submit').click();
           if (task.kind === 'choice') await page.locator(`input[name="exercise-answer"][value="${task.answer}"]`).check();
           else if (task.kind === 'sort') {
-            for (const index of order(task)) await page.locator('.exercise-tokens[aria-label="Từ chưa dùng"]').getByRole('button', { name: task.tokens[index], exact: true }).first().click();
+            for (const index of order(task)) await page.locator('[data-exercise-tokens="available"]').getByRole('button', { name: task.tokens[index], exact: true }).first().click();
           } else await page.locator('#exercise-writing').fill('这是我的学习练习。');
           await page.locator('#exercise-submit').click();
-          await expect(page.locator('#exercise-feedback h3')).toHaveText(task.kind === 'manual' ? 'Đã lưu bài viết · chờ giáo viên xem' : 'Đúng');
+          await expect(page.locator('#exercise-feedback h3 [lang=vi]')).toHaveText(task.kind === 'manual' ? 'Đã lưu bài viết · chờ giáo viên xem' : 'Đúng');
           count++;
         }
-        await expect(page.locator('#exercise-save-status')).toHaveText('Đã lưu trên thiết bị này');
+        await expect(page.locator('#exercise-save-status')).toHaveAttribute('data-state', 'saved');
       }
     }
   }

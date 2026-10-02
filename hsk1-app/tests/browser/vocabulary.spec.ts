@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Page, type Route } from '@playwright/test';
 import practiceEngine from '../../src/domain/practice/engine.js';
+import { vocabularyBatches } from '../vocabulary-batches.ts';
 
 const stateKey = 'ran_hsk1_modular_v1';
 const sessionKey = 'hsk_portal_unlocked_v2';
@@ -129,25 +130,24 @@ test.afterEach(async ({ page }, testInfo) => {
   if (observed) await testInfo.attach('vocabulary-native-media-history', { body: Buffer.from(JSON.stringify(observed, null, 2)), contentType: 'application/json' });
 });
 
-test('all 344 senses reveal exact meanings, distinguish homographs, retain sources and rate once; 330 have audio and 14 explicitly do not', async ({ page }) => {
-  test.setTimeout(240_000);
+for (const batch of vocabularyBatches) test(`exhaustive lessons ${batch.first}–${batch.last}: all ${batch.count} senses retain exact answers, sources, audio availability and one rating`, async ({ page }, testInfo) => {
+  test.setTimeout(150_000);
+  const batchWords = catalog.vocabulary.filter(word => word.lesson >= batch.first && word.lesson <= batch.last);
+  const lessons = Array.from({ length: batch.last - batch.first + 1 }, (_, index) => batch.first + index);
   await authenticate(page);
-  await page.goto('/#/vocabulary?lesson=1');
-  await ready(page);
-  await page.locator('#vocabulary-all').click();
-  await page.locator('#vocabulary-shuffle').uncheck();
-  await page.locator('#vocabulary-direction').selectOption('zh-vi');
-  await page.locator('#vocabulary-start').click();
+  await page.goto(`/#/vocabulary?lesson=${batch.first}`);
+  await ready(page, 'vocabulary', batch.first);
+  await start(page, lessons);
   await page.locator('#vocabulary-pinyin').check();
   const seen: string[] = [];
   let audio = 0, noAudio = 0;
-  for (const [index, word] of catalog.vocabulary.entries()) {
+  for (const [index, word] of batchWords.entries()) {
     await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', word.senseId);
     await expect(page.locator('#vocabulary-position')).toContainText(`${index + 1}`);
     await expect(page.locator('#vocabulary-card')).toContainText(word.zh);
     await expect(page.locator('#vocabulary-answer')).toHaveCount(0);
     await expect(page.locator('#vocabulary-good')).toBeDisabled();
-    if (index < catalog.vocabulary.length - 1) {
+    if (index < batchWords.length - 1) {
       await expect(page.locator('#vocabulary-next')).toBeEnabled();
       await expect(page.locator('#vocabulary-skip')).toBeEnabled();
     } else {
@@ -172,21 +172,62 @@ test('all 344 senses reveal exact meanings, distinguish homographs, retain sourc
     await page.locator('#vocabulary-good').click();
     await expect(page.locator('#vocabulary-good')).toBeDisabled();
     seen.push(word.senseId);
-    if (index < catalog.vocabulary.length - 1) await page.locator('#vocabulary-next').click();
+    if (index < batchWords.length - 1) await page.locator('#vocabulary-next').click();
   }
-  expect(new Set(seen).size).toBe(344);
-  expect({ audio, noAudio }).toEqual({ audio: 330, noAudio: 14 });
+  expect(seen).toEqual(batchWords.map(word => word.senseId));
+  expect(new Set(seen).size).toBe(batch.count);
+  expect({ audio, noAudio }).toEqual({ audio: batch.audio, noAudio: batch.noAudio });
   const stored = (await data(page)).practice.cards;
   expect(stored.review.senseIds).toEqual(seen);
   expect(stored.review.finishedAt).not.toBeNull();
-  expect(Object.keys(stored.schedule)).toHaveLength(344);
-  for (const word of catalog.vocabulary) expect(stored.schedule[word.senseId]).toMatchObject({ level: 1, lastRating: 'good', reviewCount: 1 });
+  expect(Object.keys(stored.schedule)).toHaveLength(batch.count);
+  for (const word of batchWords) {
+    expect(stored.review.ratings).toHaveProperty(word.senseId);
+    expect(stored.schedule[word.senseId]).toMatchObject({ level: 1, lastRating: 'good', reviewCount: 1 });
+  }
+  await testInfo.attach(`exhaustive-vocabulary-${batch.first}-${batch.last}`, {
+    body: Buffer.from(JSON.stringify({ lessons, seen, audio, noAudio }, null, 2)), contentType: 'application/json',
+  });
+});
+
+test('all 21 homograph families keep 46 distinct sense identities and independent ratings across lessons', async ({ page }) => {
+  test.setTimeout(120_000);
   const families = new Map<string, Word[]>();
   for (const word of catalog.vocabulary) families.set(word.zh, [...(families.get(word.zh) ?? []), word]);
-  for (const homographs of [...families.values()].filter(group => group.length > 1)) {
-    expect(new Set(homographs.map(word => word.senseId)).size).toBe(homographs.length);
-    for (const word of homographs) expect(stored.review.ratings).toHaveProperty(word.senseId);
+  const homographs = [...families.values()].filter(group => group.length > 1);
+  expect(homographs).toHaveLength(21);
+  expect(homographs.flat()).toHaveLength(46);
+  await authenticate(page);
+  await page.goto('/#/vocabulary?lesson=1');
+  await ready(page);
+  for (const group of homographs) {
+    await test.step(`Independent senses for ${group[0]!.zh}`, async () => {
+      const ids = group.map(word => word.senseId);
+      expect(new Set(ids).size).toBe(group.length);
+      await select(page, [...new Set(group.map(word => word.lesson))]);
+      await page.locator('#vocabulary-search').fill(group[0]!.zh);
+      await page.locator('#vocabulary-start').click();
+      const queue = (await data(page)).practice.cards.review.senseIds as string[];
+      expect(queue).toEqual(expect.arrayContaining(ids));
+      for (const [index, id] of queue.entries()) {
+        await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', id);
+        if (ids.includes(id)) {
+          const word = words.get(id)!;
+          await rate(page, index % 2 ? 'hard' : 'good');
+          await expect(page.locator('#vocabulary-answer')).toContainText(word.vi);
+          await expect(page.locator('#vocabulary-answer')).toContainText(word.senseZh);
+        }
+        if (index < queue.length - 1) await page.locator('#vocabulary-next').click();
+      }
+      const stored = (await data(page)).practice.cards;
+      expect(Object.keys(stored.review.ratings).sort()).toEqual([...ids].sort());
+      for (const id of ids) {
+        expect(stored.review.ratings).toHaveProperty(id);
+        expect(stored.schedule[id]).toMatchObject({ lastRating: queue.indexOf(id) % 2 ? 'hard' : 'good', reviewCount: 1 });
+      }
+    });
   }
+  expect(Object.keys((await data(page)).practice.cards.schedule)).toHaveLength(46);
 });
 
 for (const feature of ['vocabulary', 'review']) test(`${feature}: previous, next and skip work without ratings and preserve skipped cards across refresh`, async ({ page }) => {
@@ -528,6 +569,7 @@ test('Chinese and Vietnamese cards, settings, source metadata and review control
   await start(page, [7, 10, 15], 'all', 'vi-zh');
   await page.locator('#vocabulary-pinyin').check();
   await rate(page, 'hard');
+  await expect(page.locator('#vocabulary-save-status')).toHaveAttribute('data-state', 'saved');
   for (const width of [320, 390, 768, 1104]) {
     await page.setViewportSize({ width, height: 850 });
     const layout = await page.evaluate(() => ({ documentWidth: document.documentElement.scrollWidth,

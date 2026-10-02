@@ -1,3 +1,5 @@
+import { coreCopy as C } from '../../app/i18n/core.ts';
+import { setBilingual } from '../../app/bilingual.ts';
 import { createDueRefresh } from '../due-refresh.ts';
 import type { FeatureModule } from '../../app/contracts.ts';
 import { summarizeProgress } from '../../services/learning/progress.ts';
@@ -8,15 +10,15 @@ import './progress.css';
 /** Unified read-only progress over the application session; backup behavior remains separate. */
 export const mount: FeatureModule['mount'] = (host, context) => {
   const article = element('article'); article.id = 'progress-module'; article.className = 'module-entry';
-  const heading = element('h1', 'Tiến độ học tập'); heading.tabIndex = -1;
-  article.append(heading, element('p', 'Theo dõi từng phần riêng: đọc giáo trình, nộp bài tập, bản dịch, luyện nghe và tự đánh giá từ vựng.'));
+  const heading = element('h1', C.progressTitle); heading.tabIndex = -1;
+  article.append(heading, element('p', C.progressLead));
   const continuation = element('p'); continuation.id = 'progress-resume'; continuation.hidden = true;
   const status = element('p'); status.id = 'progress-save-status'; status.className = 'progress-save-status'; status.setAttribute('role', 'status');
   const overview = element('div'); overview.id = 'progress-overview'; overview.className = 'progress-overview';
   const lessonProgress = element('section'); lessonProgress.id = 'progress-lessons';
   const controls = element('div');
   const managerHost = element('div'); managerHost.id = 'data-manager-host';
-  const open = element('button', 'Quản lý dữ liệu và bản sao lưu'); open.id = 'open-data-manager'; open.type = 'button'; open.disabled = true;
+  const open = element('button', C.backups); open.id = 'open-data-manager'; open.type = 'button'; open.disabled = true;
   const message = element('p'); message.setAttribute('role', 'status');
   controls.append(open, message); article.append(continuation, status, overview, controls, managerHost, lessonProgress); host.append(article);
   const controller = new AbortController();
@@ -46,7 +48,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     open.disabled = false;
     open.addEventListener('click', async () => {
       if (left || controller.signal.aborted || panel || open.disabled) return;
-      open.disabled = true; message.textContent = 'Đang mở dữ liệu trên thiết bị…';
+      open.disabled = true; setBilingual(message, C.openingData);
       try {
         const feature = await import('./data-panel.ts');
         if (left || controller.signal.aborted) return;
@@ -56,7 +58,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
         message.textContent = ''; open.hidden = true;
       } catch {
         if (left || controller.signal.aborted) return;
-        message.textContent = 'Không mở được dữ liệu. Vui lòng thử lại.'; open.disabled = false;
+        setBilingual(message, C.dataError); open.disabled = false;
       }
     }, { signal: controller.signal });
   });

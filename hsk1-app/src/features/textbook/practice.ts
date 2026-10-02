@@ -1,23 +1,22 @@
+import { textbookCopy } from '../../app/i18n/textbook.ts';
+import { element } from './dom.ts';
 import {gradePractice, practiceQuestions} from '../../domain/textbook/practice.ts';
 import type {PracticeQuestion, PracticeTier} from '../../domain/textbook/practice.ts';
 import type {BookLesson} from '../../services/content/textbook.ts';
 import './practice.css';
 
 export function mountPractice(host: HTMLElement, {lesson, signal}: {lesson: BookLesson; signal: AbortSignal}) {
+  const copy = textbookCopy.practice;
   const bank = practiceQuestions(lesson);
   const state = {basic: {selected: {} as Record<number, number>, submitted: false}, advanced: {selected: {} as Record<number, number>, submitted: false}};
   let tier: PracticeTier = 'basic';
-  const element = <K extends keyof HTMLElementTagNameMap>(tag: K, text?: string) => {
-    const result = document.createElement(tag);
-    if (text !== undefined) result.textContent = text;
-    return result;
-  };
   host.classList.add('textbook-practice');
-  const note = element('p', 'Ôn tập từ vựng và câu thoại của bài này. Kết quả này tách riêng với bài tập về nhà.');
+  const note = element('p', copy.note);
+  note.className = 'bilingual-stacked';
   const tabs = element('div');
   tabs.className = 'practice-tiers';
   for (const level of ['basic', 'advanced'] as const) {
-    const button = element('button', level === 'basic' ? `Cơ bản · ${bank.basic.length} câu` : `Bài khoá · ${bank.advanced.length} câu`);
+    const button = element('button', level === 'basic' ? copy.basic(bank.basic.length) : copy.advanced(bank.advanced.length));
     button.type = 'button';
     button.dataset.practiceTier = level;
     tabs.append(button);
@@ -30,7 +29,11 @@ export function mountPractice(host: HTMLElement, {lesson, signal}: {lesson: Book
     const card = element('article');
     card.className = 'practice-question';
     card.dataset.practiceQuestion = String(index);
-    card.append(element('p', `Câu ${index + 1}/${bank[tier].length} · ${question.type}`), element('h3', question.prompt));
+    const number = element('p', copy.question(index + 1, bank[tier].length));
+    number.append(document.createTextNode(' · '), element('span', copy.types[question.type] ?? question.type));
+    const prompt = element('h3', { zh: copy.prompts[question.type] ?? copy.instruction.zh, vi: question.prompt });
+    prompt.className = 'bilingual-stacked';
+    card.append(number, prompt);
     const stem = element('p', question.stem);
     stem.className = 'practice-stem';
     card.append(stem);
@@ -51,7 +54,9 @@ export function mountPractice(host: HTMLElement, {lesson, signal}: {lesson: Book
       const result = results.results[index];
       const feedback = element('div');
       feedback.dataset.practiceFeedback = result.correct ? 'correct' : result.picked === null ? 'missing' : 'wrong';
-      feedback.append(element('p', `${result.correct ? 'Đúng' : result.picked === null ? 'Chưa chọn' : 'Chưa đúng'} · Đáp án: ${question.answer}`), element('strong', 'Giải thích'), element('p', question.explain));
+      const outcome = element('p', result.correct ? copy.correct : result.picked === null ? copy.missing : copy.wrong);
+      const answer = element('p', copy.answer); answer.append(document.createTextNode(`: ${question.answer}`));
+      feedback.append(outcome, answer, element('strong', copy.explain), element('p', question.explain));
       card.append(feedback);
     }
     return card;
@@ -63,13 +68,13 @@ export function mountPractice(host: HTMLElement, {lesson, signal}: {lesson: Book
     content.dataset.practiceLevel = tier;
     const current = state[tier];
     const results = current.submitted ? gradePractice(bank[tier], current.selected) : null;
-    const score = element('p', results ? `Kết quả: ${results.correct}/${results.total} · ${results.percent}%` : 'Chọn đáp án rồi bấm “Nộp bài”.');
+    const score = element('p', results ? copy.result(results.correct, results.total, results.percent) : copy.instruction);
     score.dataset.practiceScore = tier;
     score.setAttribute('role', 'status');
     const actions = element('div');
     actions.className = 'practice-actions';
     for (const action of ['submit', 'reset'] as const) {
-      const button = element('button', action === 'submit' ? 'Nộp bài' : 'Làm lại');
+      const button = element('button', action === 'submit' ? copy.submit : copy.reset);
       button.type = 'button';
       button.dataset.practiceAction = action;
       button.disabled = action === 'submit' && current.submitted;

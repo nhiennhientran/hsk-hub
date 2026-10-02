@@ -88,3 +88,17 @@
   width: min(850px, calc(100% - 24px)); border: 1px solid #a8c2aa; box-shadow: 0 8px 36px #103e2930;
 }
 .textbook:has(.textbook-player:is([data-state="loading"], [data-state="playing"], [data-state="paused"], [data-state="error"])) { padding-bottom: 160px; }
+@media (max-width: 600px) {
+ .textbook > .subnav { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 10px 8px; gap: 5px; overflow: visible; }
+ .textbook > .subnav a { min-width: 0; padding: 7px 4px; font-size: .875rem; text-align: center; }
+ .textbook > .subnav a [lang="zh"] { margin-bottom: 3px; font-size: 1rem; }
+ .textbook > fieldset[data-module-controls] { margin-top: 14px; }
+ .textbook-body h2 { margin: 0 0 10px; }
+ #vocab-search { margin: 6px 0 10px; }
+ #vocab-count { margin: 8px 0; }
+ .textbook-vocab-grid { margin-top: 12px; }
+ .vocab-card .vocab-front { min-height: 110px; padding: 8px 0; }
+}
+
+.textbook-player:is([data-state="loading"], [data-state="playing"], [data-state="paused"], [data-state="error"]) { max-height: min(45vh, 320px); overflow-y: auto; }
+.textbook:has(.textbook-player:is([data-state="loading"], [data-state="playing"], [data-state="paused"], [data-state="error"])) { padding-bottom: min(48vh, 350px); }

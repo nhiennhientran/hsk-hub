@@ -1,3 +1,6 @@
+import { bilingualText, setBilingual, type BilingualCopy } from '../../app/bilingual.ts';
+import { textbookCopy } from '../../app/i18n/textbook.ts';
+import { element } from './dom.ts';
 import {ManagedHanziWriter} from '../../services/hanzi/vendor.js';
 import type {HanziData} from '../../services/hanzi/vendor.js';
 import type {HanziCurriculum} from '../../services/content/textbook.ts';
@@ -10,6 +13,7 @@ interface HanziOptions {
   signal: AbortSignal;
 }
 
+const copy = textbookCopy.hanzi;
 const dataCache = new Map<string, HanziData>();
 const hanCharacters = (value: string | string[]) => [...new Set((Array.isArray(value) ? value.join('') : value).match(/\p{Script=Han}/gu) ?? [])];
 
@@ -38,7 +42,7 @@ function strokeGallery(character: string, data: HanziData): HTMLElement {
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('viewBox', '0 0 1024 1024');
     svg.setAttribute('role', 'img');
-    svg.setAttribute('aria-label', `${character} · nét ${index + 1}`);
+    svg.setAttribute('aria-label', bilingualText(copy.strokeImage(character, index + 1)));
     const group = document.createElementNS(svg.namespaceURI, 'g');
     group.setAttribute('transform', 'translate(0,900) scale(1,-1)');
     for (let strokeIndex = 0; strokeIndex <= index; strokeIndex++) {
@@ -49,7 +53,8 @@ function strokeGallery(character: string, data: HanziData): HTMLElement {
     }
     svg.append(group);
     const caption = document.createElement('figcaption');
-    caption.textContent = `Nét ${index + 1}`;
+    setBilingual(caption, copy.stroke(index + 1));
+    caption.className = 'bilingual-stacked';
     figure.append(svg, caption);
     gallery.append(figure);
   });
@@ -60,21 +65,15 @@ export function mountHanzi(host: HTMLElement, {chars, words = [], curriculum, si
   const primaryCharacters = hanCharacters(chars);
   const additionalCharacters = hanCharacters(words.map(word => word.zh)).filter(character => !primaryCharacters.includes(character));
   const characters = [...primaryCharacters, ...additionalCharacters];
-  const element = <K extends keyof HTMLElementTagNameMap>(tag: K, text?: string) => {
-    const result = document.createElement(tag);
-    if (text !== undefined) result.textContent = text;
-    return result;
-  };
   host.classList.add('textbook-hanzi');
   const intro = element('div');
   intro.className = 'hanzi-curriculum';
-  const labels = {strokes: 'Nét chữ', order: 'Thứ tự nét', structure: 'Kết cấu chữ', radicals: 'Bộ thủ'};
   for (const key of ['strokes', 'order', 'structure', 'radicals'] as const) {
-    if (curriculum?.[key]) intro.append(element('p', `${labels[key]} · ${curriculum[key]}`));
+    if (curriculum?.[key]) { const row = element('p', copy.curriculum[key]); row.append(document.createTextNode(` · ${curriculum[key]}`)); intro.append(row); }
   }
   const choices = element('div');
   choices.className = 'hanzi-choices';
-  choices.setAttribute('aria-label', 'Chọn chữ để xem thứ tự nét');
+  choices.setAttribute('aria-label', bilingualText(copy.choices));
   function characterButton(character: string) {
     const button = element('button', character);
     button.type = 'button';
@@ -84,10 +83,10 @@ export function mountHanzi(host: HTMLElement, {chars, words = [], curriculum, si
     return button;
   }
   if (curriculum && words.length) {
-    const note = element('p', 'Chữ trọng tâm theo phần Hán tự của giáo trình; các chữ còn lại lấy từ từ vựng của bài.');
-    note.className = 'hanzi-choice-note';
+    const note = element('p', copy.choiceHint);
+    note.className = 'hanzi-choice-note bilingual-stacked';
     choices.append(note);
-    for (const [label, groupCharacters] of [['Chữ trọng tâm', primaryCharacters], ['Chữ trong từ vựng', additionalCharacters]] as const) {
+    for (const [label, groupCharacters] of [[copy.primary, primaryCharacters], [copy.additional, additionalCharacters]] as const) {
       if (!groupCharacters.length) continue;
       const group = element('section');
       group.className = 'hanzi-choice-group';
@@ -118,11 +117,11 @@ export function mountHanzi(host: HTMLElement, {chars, words = [], curriculum, si
     writer = null;
   }
 
-  function updateMode(mode: string, text: string) {
+  function updateMode(mode: string, text: BilingualCopy) {
     if (disposed || signal.aborted) return;
     host.dataset.hanziMode = mode;
     const status = details.querySelector<HTMLElement>('[data-hanzi-status]');
-    if (status) status.textContent = text;
+    if (status) setBilingual(status, text);
     for (const button of details.querySelectorAll<HTMLButtonElement>('[data-hanzi-action]')) button.disabled = mode === 'loading' || (mode === 'animation' && button.dataset.hanziAction === 'animate');
   }
 
@@ -160,41 +159,43 @@ export function mountHanzi(host: HTMLElement, {chars, words = [], curriculum, si
     const canvas = element('div');
     canvas.className = 'hanzi-canvas';
     canvas.dataset.hanziCanvas = '';
-    canvas.setAttribute('aria-label', `Bảng viết chữ ${character}`);
+    canvas.setAttribute('aria-label', bilingualText(copy.canvas(character)));
     const status = element('p');
     status.dataset.hanziStatus = '';
+    status.className = 'bilingual-stacked';
     status.setAttribute('role', 'status');
     const actions = element('div');
     actions.className = 'hanzi-actions';
-    for (const [action, label] of [['animate', 'Xem viết'], ['practice', 'Luyện viết'], ['reset', 'Đặt lại']] as const) {
+    for (const [action, label] of [['animate', copy.animate], ['practice', copy.practice], ['reset', copy.reset]] as const) {
       const button = element('button', label);
       button.type = 'button';
       button.dataset.hanziAction = action;
       actions.append(button);
     }
     const linkedWords = [...new Set(words.filter(word => word.zh.includes(character)).map(word => word.zh))];
-    const associations = element('p', linkedWords.length ? `Từ trong bài: ${linkedWords.join(' · ')}` : '');
+    const associations = element('p');
+    if (linkedWords.length) { setBilingual(associations, copy.words); associations.append(document.createTextNode(`: ${linkedWords.join(' · ')}`)); }
     associations.dataset.hanziWords = '';
     details.replaceChildren(heading, associations, count, canvas, actions, status);
-    updateMode('loading', 'Đang tải nét chữ…');
+    updateMode('loading', copy.loading);
     try {
       const data = await loadCharacter(character, controller.signal);
       if (disposed || signal.aborted || version !== generation) return;
       currentData = data;
-      count.textContent = `${data.strokes.length} nét`;
-      details.append(element('h4', 'Từng nét'), strokeGallery(character, data));
+      setBilingual(count, copy.count(data.strokes.length));
+      details.append(element('h4', copy.strokes), strokeGallery(character, data));
       await createWriter(data, version);
-      if (version === generation) updateMode('display', 'Xem từng nét hoặc chọn “Luyện viết” để viết theo thứ tự.');
+      if (version === generation) updateMode('display', copy.ready);
     } catch (error) {
       if (disposed || signal.aborted || version !== generation) return;
       if (error instanceof DOMException && error.name === 'AbortError') return;
       canvas.replaceChildren();
       actions.replaceChildren();
-      const retry = element('button', 'Thử tải lại nét chữ');
+      const retry = element('button', copy.retry);
       retry.type = 'button';
       retry.dataset.hanziAction = 'retry';
       actions.append(retry);
-      updateMode('error', `Chưa tải được dữ liệu nét chữ “${character}”. Hãy thử lại khi có kết nối.`);
+      updateMode('error', copy.loadError(character));
     }
   }
 
@@ -204,24 +205,24 @@ export function mountHanzi(host: HTMLElement, {chars, words = [], curriculum, si
     const data = currentData;
     if (!data) return;
     const version = ++generation;
-    updateMode('loading', 'Đang mở bảng viết…');
+    updateMode('loading', copy.opening);
     const current = await createWriter(data, version);
     if (!current || disposed || signal.aborted || version !== generation) return;
     if (action === 'animate') {
-      updateMode('animation', 'Đang viết lần lượt từng nét…');
+      updateMode('animation', copy.animating);
       await current.animateCharacter();
-      if (writer === current) updateMode('display', 'Đã xem xong. Có thể xem lại hoặc luyện viết.');
+      if (writer === current) updateMode('display', copy.animated);
     } else if (action === 'practice') {
-      updateMode('practice', `Viết chữ ${active}: bắt đầu từ nét 1. Sau 2 lần chưa đúng, gợi ý nét sẽ xuất hiện.`);
-      await current.quiz({showHintAfterMisses: 2, onMistake(event) {if (writer === current) updateMode('practice', `Thử lại nét ${event.strokeNum + 1}. Đã viết chưa đúng ${event.totalMistakes} lần. Viết theo chiều và thứ tự trong hình.`);}, onCorrectStroke(event) {if (writer === current) updateMode('practice', `Đúng nét ${event.strokeNum + 1}. Còn ${event.strokesRemaining} nét.`);}, onComplete(event) {if (writer === current) updateMode('complete', `Đã viết xong chữ ${active}. Số lần chưa đúng: ${event.totalMistakes}. Chọn “Đặt lại” để luyện thêm.`);}});
-    } else if (action === 'reset') updateMode('display', 'Đã đặt lại. Chọn “Xem viết” hoặc “Luyện viết”.');
+      updateMode('practice', copy.start(active));
+      await current.quiz({showHintAfterMisses: 2, onMistake(event) {if (writer === current) updateMode('practice', copy.mistake(event.strokeNum + 1, event.totalMistakes));}, onCorrectStroke(event) {if (writer === current) updateMode('practice', copy.correct(event.strokeNum + 1, event.strokesRemaining));}, onComplete(event) {if (writer === current) updateMode('complete', copy.complete(active, event.totalMistakes));}});
+    } else if (action === 'reset') updateMode('display', copy.resetDone);
   }
 
   function handleClick(event: MouseEvent) {
     const button = (event.target as Element).closest<HTMLButtonElement>('button');
     if (!button || !host.contains(button) || button.disabled) return;
     if (button.dataset.hanziChar && button.dataset.hanziChar !== active) void showCharacter(button.dataset.hanziChar);
-    if (button.dataset.hanziAction) void performAction(button.dataset.hanziAction).catch(() => {if (!disposed) updateMode('error', 'Chưa mở được bảng viết. Chọn “Đặt lại” để thử lại.');});
+    if (button.dataset.hanziAction) void performAction(button.dataset.hanziAction).catch(() => {if (!disposed) updateMode('error', copy.openError);});
   }
 
   function dispose() {
@@ -236,7 +237,7 @@ export function mountHanzi(host: HTMLElement, {chars, words = [], curriculum, si
   host.addEventListener('click', handleClick);
   signal.addEventListener('abort', dispose, {once: true});
   const ready = active ? showCharacter(active) : Promise.resolve();
-  if (!active) details.append(element('p', 'Chưa có chữ Hán trong nội dung này.'));
+  if (!active) details.append(element('p', copy.empty));
   return {ready, dispose};
 }
 

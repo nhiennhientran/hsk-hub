@@ -58,7 +58,7 @@ fieldset[data-module-controls] > legend { position: absolute; width: 1px; height
 .catalogue-toolbar { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
 .catalogue-toolbar h2 { margin: 0; font-size: 1.25rem; }
 .home-search-label { color: var(--muted); font-size: .75rem; display: flex; gap: 9px; align-items: center; }
-#lesson-search { font-size: .85rem; width: 260px; max-width: 100%; background: #fbfdfb; }
+#lesson-search { font-size: .875rem; width: 260px; max-width: 100%; background: #fbfdfb; }
 #home-course-status { font-size: .82rem; color: var(--muted); margin: 10px 0 20px; }
 .lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .lesson-card { min-width: 0; padding: 19px 18px 13px; border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: 12px; background: white; }
@@ -109,3 +109,41 @@ footer { margin: 30px 4px 12px; font-size: .75rem; color: var(--muted); }
 
 /* Headings receive programmatic focus for screen readers without a button-style outline. */
 .module-entry h1:focus { outline: none; }
+/* Ready pages already announce their focused heading; keep the live status unobtrusive. */
+#app[data-module-state="ready"] #module-status { position: absolute; width: 1px; height: 1px; padding: 0; margin: 0; overflow: hidden; clip-path: inset(50%); }
+@media (max-width: 600px) {
+ .site-header { padding: 13px 17px 10px; }
+ .feature-nav { padding-bottom: 10px; }
+ .lesson-picker { margin: 10px 0; }
+ .lesson-hero { padding: 18px 18px 20px; }
+ .lesson-hero h1 { margin-bottom: 8px; font-size: 1.9rem; }
+ .lesson-hero .eyebrow { margin-top: 0; }
+ .heading-zh { display: inline-block; margin: 0 0 0 .5em; }
+}
+.feature-nav a { display: flex; flex-direction: column; justify-content: center; gap: 1px; text-align: center; padding: 7px 12px; }
+.feature-nav a [lang="zh"] { font-family: var(--zh-font); font-size: 1rem; }
+.feature-nav a [lang="vi"] { font-size: .875rem; }
+.auth-card h1 .bilingual-vi { font-size: 1.05rem; font-weight: 550; color: var(--muted); }
+.lesson-section-links a { display: flex; flex-direction: column; gap: 2px; line-height: 1.4; }
+.lesson-section-links a .bilingual-separator { display: none; }
+.lesson-section-links { justify-content: space-between; gap: 8px; }
+.lesson-card [data-reading-summary] .bilingual-vi, .lesson-card [data-homework-summary] .bilingual-vi { display: block; font-size: .8rem; }
+.lesson-card [data-reading-summary] .bilingual-separator, .lesson-card [data-homework-summary] .bilingual-separator { display: none; }
+.home-catalogue #home-course-status { line-height: 1.7; }
+@media (max-width: 600px) {
+ .feature-nav a { padding: 5px 9px; }
+ .course-hero { padding: 22px 18px; }
+ .course-hero h1 { max-width: 100%; font-size: 1.55rem; }
+ .course-hero h1 .bilingual-zh { display: block; margin-bottom: 6px; font-size: 1rem; color: #eed49b; }
+ .course-hero h1 .bilingual-separator { display: none; }
+ .course-hero p:not(.eyebrow) { font-size: .875rem; max-width: 100%; }
+ .course-hero p:last-child { margin-top: 10px; }
+ .home-search-label { flex-wrap: wrap; }
+ .home-search-label input { flex-basis: 100%; }
+ .course-badge { max-width: 36%; }
+}
+
+.lesson-picker label { text-align: right; line-height: 1.35; }
+.lesson-picker label .bilingual-vi { margin-top: 0; }
+
+.lesson-card [data-reading-summary], .lesson-card [data-homework-summary], .lesson-card [data-reading-summary] .bilingual-vi, .lesson-card [data-homework-summary] .bilingual-vi { font-size: .875rem; }

@@ -27,6 +27,8 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 1024 }, { name: 
       if (name === 'dialogue') await expect(page.locator('[data-tongue-text="1"]')).toHaveText(tongueTwisters[1].zh);
       if (name === 'listening') { await page.locator('#listening-start').click(); await expect(page.locator('#listening-question')).toBeVisible(); }
       if (name === 'mixed-vocabulary') { await page.locator('#vocabulary-start').click(); await expect(page.locator('#vocabulary-prompt')).toBeVisible(); }
+      if (name === 'original-exercises' || name === 'pilot-reading') await expect(page.locator('#exercise-save-status')).toHaveAttribute('data-state', 'saved');
+      if (name === 'mixed-vocabulary') await expect(page.locator('#vocabulary-save-status')).toHaveAttribute('data-state', 'saved');
       const width = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, viewport: innerWidth }));
       expect(width.scroll).toBeLessThanOrEqual(width.viewport);
       await page.screenshot({ path: `${folder}/${viewport.name}-${name}.png`, fullPage: true });
@@ -68,13 +70,42 @@ test('listening offers 5/10/all and resumes a sized round without resetting scor
   for (const [value, count] of [['5', 5], ['10', 10], ['all', 75]] as const) {
     await page.locator('#listening-count').selectOption(value);
     await page.locator('#listening-start').click();
-    await expect(page.locator('#listening-position')).toHaveText(`Câu 1 / ${count}`);
+    await expect(page.locator('#listening-position [lang="vi"]')).toHaveText(`Câu 1 / ${count}`);
+    await expect(page.locator('#listening-position [lang="zh"]')).toHaveText(`第 1 / ${count} 题`);
   }
   await page.locator('#listening-count').selectOption('10');
   await page.locator('#listening-start').click();
   await expect(page.locator('#listening-save-status')).toHaveAttribute('data-state', 'saved');
   await page.reload();
-  await expect(page.locator('#listening-position')).toHaveText('Câu 1 / 10');
+  await expect(page.locator('#listening-position [lang="vi"]')).toHaveText('Câu 1 / 10');
+  await expect(page.locator('#listening-position [lang="zh"]')).toHaveText('第 1 / 10 题');
   await expect(page.locator('#listening-count')).toHaveValue('10');
   await expect(page.locator('#listening-first-score')).toContainText('Đã nộp 0 / 75');
 });
+
+for (const viewport of [{ name: 'desktop', width: 1440, height: 1024 }, { name: 'mobile', width: 390, height: 844 }]) {
+  test(`bilingual login, help and safe-data preview · ${viewport.name}`, async ({ page }, testInfo) => {
+    await page.setViewportSize(viewport);
+    const folder = `.repro-output/legacy-preview/${testInfo.project.name}`;
+    await mkdir(folder, { recursive: true });
+    const capture = async (name: string) => {
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(viewport.width);
+      await page.screenshot({ path: `${folder}/${viewport.name}-${name}.png`, fullPage: true });
+      await page.screenshot({ path: `${folder}/${viewport.name}-${name}-viewport.png` });
+    };
+    await page.goto('/');
+    await expect(page.locator('#auth-title [lang="zh"]')).toBeVisible();
+    await expect(page.locator('#auth-title [lang="vi"]')).toBeVisible();
+    await capture('login');
+    await page.goto('/help.html');
+    await expect(page.locator('main h2 [lang="zh"]')).toHaveCount(7);
+    await capture('help');
+    await page.evaluate(() => sessionStorage.setItem('hsk_portal_unlocked_v2', '1'));
+    await page.goto('/#/progress?lesson=1');
+    await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
+    await page.locator('#open-data-manager').click();
+    await expect(page.locator('.data-panel')).toBeVisible();
+    await page.locator('.data-panel').scrollIntoViewIfNeeded();
+    await capture('data-manager');
+  });
+}

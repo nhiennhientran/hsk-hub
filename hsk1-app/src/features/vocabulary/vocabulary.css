@@ -29,8 +29,13 @@
 .vocabulary-examples ul { list-style: none; padding: 0; margin: 0; }
 .vocabulary-examples li { padding: 14px 0; border-top: 1px solid var(--green-200,#d8e3d9); }
 .vocabulary-examples p { margin: 5px 0; line-height: 1.65; }
-.vocabulary-example-zh { font-size: 1.25rem; }
+.vocabulary-example-zh { font-size: 1.5rem; }
 .vocabulary-example-pinyin { color: var(--muted,#536658); }
 .vocabulary-examples a { display: inline-block; padding: 8px 0; font-size: .9rem; }
 .vocabulary button:disabled { cursor: default; }
 @media (max-width: 420px) { .vocabulary-panel { padding: 14px; } .vocabulary-actions > button { flex: 1 1 auto; } .vocabulary-search-row > button { width: 100%; } }
+
+.vocabulary-lesson-picker .bilingual-vi { white-space: nowrap; }
+.vocabulary button { max-width: 100%; }
+.vocabulary-options label { min-width: 0; }
+.vocabulary select { min-width: 0; }

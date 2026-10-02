@@ -31,3 +31,51 @@
  .exercise-writing-sheet { position: absolute; inset: 0; border: 0; background: white; }
  .exercise-sheet-controls { display: none !important; }
 }
+.exercise-save-actions { display: flex; align-items: center; gap: 12px; font-size: .875rem; }
+@media (max-width: 600px) {
+ .exercises > p { margin: 10px 0; }
+ .exercise-set-tabs { gap: 6px; padding-bottom: 3px; }
+ .exercise-set-tabs a { padding: 8px 10px; }
+ .exercise-settings { padding: 6px 0 12px; margin: 10px 0; }
+ .exercise-group-tabs { gap: 6px; margin: 12px 0; }
+ .exercise-group-tabs a { padding: 8px; }
+ .exercise-navigator { margin: 12px 0; }
+ .exercise-question { margin-top: 12px; }
+}
+
+/* Chinese leads each control; Vietnamese stays equally readable on a second line. */
+.exercises > h1 { font-size: clamp(1.4rem, 3vw, 1.8rem); line-height: 1.35; }
+.exercises > h1 > .bilingual-vi { display: block; margin-top: .2rem; font-size: 1rem; font-weight: 550; color: var(--muted); letter-spacing: 0; }
+.exercises > h1 > .bilingual-separator,
+.exercises :is(.exercise-tabs a, .exercise-actions button, .exercise-player button, .exercise-sheet-controls button) > .bilingual-separator { display: none; }
+.exercises :is(.exercise-tabs a, .exercise-actions button, .exercise-player button, .exercise-sheet-controls button) > .bilingual-vi { display: block; margin-top: .2rem; font-weight: 450; line-height: 1.35; }
+.exercises :is(.exercise-tabs a, .exercise-actions button, .exercise-player button, .exercise-sheet-controls button) > .bilingual-zh { font-weight: 600; }
+.exercise-set-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; }
+.exercise-tabs a { min-width: 0; line-height: 1.35; }
+.exercise-group-tabs a { flex: 1 1 150px; }
+.exercise-settings { min-width: 0; }
+.exercise-settings label { display: block; min-width: 0; max-width: 100%; }
+.exercise-settings select { display: block; width: 100%; max-width: 100%; margin-top: .45rem; box-sizing: border-box; font-size: .875rem; }
+.exercise-introduction, .exercise-source { font-size: .875rem; line-height: 1.6; color: var(--muted); }
+.exercise-question > h2 { line-height: 1.65; }
+.exercise-passage > h3 { font-size: 1rem; line-height: 1.6; }
+.exercise-player { align-items: stretch; }
+.exercise-player > p { flex-basis: 100%; margin: .25rem 0; font-size: .875rem; }
+.exercise-actions { display: grid; grid-template-columns: 1fr 1.6fr 1fr; gap: .6rem; }
+.exercise-actions button { min-width: 0; padding: .7rem; line-height: 1.35; }
+.exercise-save-actions { flex-wrap: wrap; }
+#exercise-message:empty { display: none; }
+#exercise-message:not(:empty) { padding: .8rem 1rem; border-radius: 10px; background: #fff9eb; font-size: .875rem; line-height: 1.6; }
+#exercise-save-status[data-has-issue="true"] { color: #845219; }
+.exercise-writing-sheet :is(h2, h3) { line-height: 1.6; }
+@media (max-width: 600px) {
+ .exercise-set-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; }
+ .exercise-set-tabs a:last-child { grid-column: 1 / -1; }
+ .exercise-group-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+ .exercise-settings, .exercise-settings label { width: 100%; }
+ .exercise-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+ #exercise-submit { grid-column: 1 / -1; grid-row: 1; }
+ .exercise-player > button { flex: 1 1 40%; padding: .6rem .5rem; }
+ .exercise-question, .exercise-writing-sheet { min-width: 0; padding: 16px; }
+ .exercise-sheet-controls { display: grid; grid-template-columns: 1fr; }
+}

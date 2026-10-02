@@ -61,3 +61,32 @@
 .listening-question { border-color: var(--line); padding: 24px; }
 .listening-transcript [lang="zh-CN"] { font-family: var(--zh-font); font-size: 1.5rem; }
 @media (max-width: 600px) { .listening-lesson-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; } .listening-lesson-grid label { padding: 7px; font-size: .875rem; } .listening-options { grid-template-columns: 1fr; } .listening-question { padding: 18px; } }
+
+/* Keep paired controls compact and let descriptive copy wrap naturally. */
+.listening > fieldset, .listening-panel, .listening-question { min-width: 0; }
+.listening .bilingual-stacked { line-height: 1.65; }
+.listening-actions button { padding: 9px 13px; font-size: .875rem; line-height: 1.5; }
+.listening-preferences { gap: 14px 20px; align-items: end; }
+.listening-preferences > label:has(select), .listening-actions > label:has(select) { display: block; min-width: 0; max-width: 100%; }
+.listening-preferences select, .listening-actions > label select { display: block; margin-top: 6px; width: 100%; }
+.listening-preferences > label:has(input) { padding-block: 9px; }
+.listening-lesson-grid label > span { min-width: 0; line-height: 1.45; }
+.listening-lesson-grid .bilingual-vi { white-space: nowrap; }
+#listening-save-status[data-failed='true'] { color: #9b341c; }
+@media (max-width: 600px) {
+  .listening-lesson-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .listening-lesson-grid label { padding: 7px 6px; align-items: flex-start; gap: 5px; }
+  .listening-lesson-grid label > input { margin-top: 3px; }
+  .listening-lesson-grid .bilingual-vi { display: block; font-size: .875rem; }
+  .listening-lesson-grid .bilingual-separator { display: none; }
+  .listening-preferences { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .listening-preferences > label:has(input) { grid-column: 1 / -1; }
+  .listening-preferences > label { width: auto; }
+  .listening-preferences > label > .bilingual-vi { display: block; margin-top: 2px; }
+  .listening-preferences > label > .bilingual-separator { display: none; }
+  .listening-question { padding: 14px; }
+}
+@media (max-width: 359px) {
+  .listening-preferences { grid-template-columns: minmax(0, 1fr); }
+  .listening-lesson-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

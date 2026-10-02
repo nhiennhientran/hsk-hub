@@ -1,3 +1,6 @@
+import { bilingualNode as bi, bilingualText, setBilingual, type BilingualCopy } from '../../app/bilingual.ts';
+import { vocabularyCopy as copy, vocabularyFilters as filters, vocabularyRatings as ratings, vocabularyAudioStatus, vocabularySaveStatus, vocabularyDynamic as dynamic } from '../../app/i18n/vocabulary.ts';
+import '../../app/bilingual.css';
 import type { ModuleContext, MountHandle } from '../../app/contracts.ts';
 import { routeHref } from '../../app/router.ts';
 import { loadVocabulary } from '../../services/content/vocabulary.ts';
@@ -8,19 +11,17 @@ import { createDueRefresh } from '../due-refresh.ts';
 function node<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string): HTMLElementTagNameMap[K] {
   const result = document.createElement(tag); if (text !== undefined) result.textContent = text; return result;
 }
-function button(id: string, text: string): HTMLButtonElement {
-  const result = node('button', text); result.id = `vocabulary-${id}`; result.type = 'button'; return result;
+function button(id: string, text: BilingualCopy): HTMLButtonElement {
+  const result = bi('button', text); result.id = `vocabulary-${id}`; result.type = 'button'; return result;
 }
-const filters = { all: 'Tất cả từ', unfamiliar: 'Chưa thuộc', wrong: 'Cần luyện lại', due: 'Đến hạn và từ mới' };
-const ratings = { again: 'Chưa nhớ', hard: 'Khó nhớ', good: 'Đã nhớ' };
 
 /** Vocabulary and due review are two entrances to one saved sense-based round. */
 export function mountVocabulary(host: HTMLElement, context: ModuleContext, feature: 'vocabulary' | 'review'): MountHandle {
   const article = node('article'); article.id = 'vocabulary-module'; article.className = 'module-entry vocabulary';
-  const title = node('h1', feature === 'review' ? 'Ôn tập từ vựng' : 'Từ vựng nhiều bài'); title.tabIndex = -1;
+  const title = bi('h1', feature === 'review' ? copy.reviewTitle : copy.title); title.tabIndex = -1;
   const controls = node('fieldset'); controls.dataset.moduleControls = ''; controls.disabled = true;
-  controls.className = 'vocabulary-controls'; controls.setAttribute('aria-label', 'Luyện từ theo nghĩa');
-  article.append(title, node('p', 'Bạn có thể tự do chuyển thẻ hoặc bỏ qua. Tự đánh giá là tùy chọn, chỉ dùng để xếp lịch ôn, không phải điểm đúng/sai.'), controls); host.append(article);
+  controls.className = 'vocabulary-controls'; controls.setAttribute('aria-label', bilingualText(copy.controls));
+  article.append(title, bi('p', copy.intro), controls); host.append(article);
   const lifetime = new AbortController(); const abort = () => lifetime.abort();
   context.signal.addEventListener('abort', abort, { once: true }); if (context.signal.aborted) abort();
   let left = false, unsubscribe = () => {}, unsubscribeAudio = () => {}, flush = () => {};
@@ -34,39 +35,39 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
     const controller = createVocabularyController({ session, catalog: content.catalog });
     controller.visit(context.route.lesson, feature); flush = () => { void session.flush(); };
     const settings = node('section'); settings.className = 'vocabulary-panel'; settings.id = 'vocabulary-settings';
-    settings.append(node('h2', 'Chọn phạm vi cho lượt mới'));
+    settings.append(bi('h2', copy.settings));
     const lessons = node('div'); lessons.className = 'vocabulary-lesson-picker'; lessons.setAttribute('role', 'group');
-    const lessonTitle = node('h3', 'Chọn một hoặc nhiều bài'); lessonTitle.id = 'vocabulary-lesson-title';
+    const lessonTitle = bi('h3', copy.selectLessons); lessonTitle.id = 'vocabulary-lesson-title';
     lessons.setAttribute('aria-labelledby', lessonTitle.id); lessons.append(lessonTitle);
     const grid = node('div'); grid.className = 'vocabulary-lessons';
     const inputs = new Map<number, HTMLInputElement>();
     for (const lesson of content.lessons) {
       const label = node('label'); const input = node('input'); input.type = 'checkbox'; input.dataset.vocabularyLesson = String(lesson.id);
-      input.id = `vocabulary-lesson-${lesson.id}`; label.append(input, document.createTextNode(` Bài ${lesson.id}`)); grid.append(label); inputs.set(lesson.id, input);
+      input.id = `vocabulary-lesson-${lesson.id}`; label.append(input, bi('span', dynamic.lesson(lesson.id))); grid.append(label); inputs.set(lesson.id, input);
     }
-    const all = button('all', 'Chọn tất cả'), none = button('none', 'Bỏ chọn tất cả');
+    const all = button('all', copy.all), none = button('none', copy.none);
     const actions = node('div'); actions.className = 'vocabulary-actions'; actions.append(all, none); lessons.append(grid, actions);
-    const searchLabel = node('label', 'Tìm trong các bài đã chọn'); searchLabel.htmlFor = 'vocabulary-search';
+    const searchLabel = bi('label', copy.search); searchLabel.htmlFor = 'vocabulary-search';
     const search = node('input'); search.type = 'search'; search.id = 'vocabulary-search'; search.maxLength = 120;
-    search.placeholder = 'Chữ Hán, pinyin hoặc nghĩa tiếng Việt'; search.autocomplete = 'off'; search.value = controller.read().search;
+    search.placeholder = bilingualText(copy.searchPlaceholder); search.autocomplete = 'off'; search.value = controller.read().search;
     search.setAttribute('aria-describedby', 'vocabulary-search-note vocabulary-available');
-    const clearSearch = button('clear-search', 'Xóa tìm kiếm');
+    const clearSearch = button('clear-search', copy.clearSearch);
     const searchRow = node('div'); searchRow.className = 'vocabulary-search-row'; searchRow.append(search, clearSearch);
-    const searchNote = node('p', 'Tìm có hoặc không dấu; mỗi nghĩa vẫn là một thẻ riêng. Từ khóa chỉ áp dụng khi bắt đầu lượt mới.');
-    searchNote.id = 'vocabulary-search-note'; searchNote.className = 'vocabulary-hint';
+    const searchNote = bi('p', copy.searchNote);
+    searchNote.id = 'vocabulary-search-note'; searchNote.className = 'vocabulary-hint bilingual-stacked';
     const searchPanel = node('div'); searchPanel.className = 'vocabulary-search'; searchPanel.append(searchLabel, searchRow, searchNote);
-    const filterLabel = node('label', 'Bộ lọc '), filter = node('select'); filter.id = 'vocabulary-filter';
-    for (const [value, text] of Object.entries(filters)) { const option = node('option', text); option.value = value; filter.append(option); } filterLabel.append(filter);
-    const directionLabel = node('label', 'Hướng nhớ lại '), direction = node('select'); direction.id = 'vocabulary-direction';
-    for (const [value, text] of [['zh-vi', 'Trung → Việt'], ['vi-zh', 'Việt → Trung']]) { const option = node('option', text); option.value = value; direction.append(option); } directionLabel.append(direction);
-    const shuffleLabel = node('label'), shuffle = node('input'); shuffle.type = 'checkbox'; shuffle.id = 'vocabulary-shuffle'; shuffleLabel.append(shuffle, document.createTextNode(' Trộn thứ tự'));
+    const filterLabel = bi('label', copy.filter), filter = node('select'); filter.id = 'vocabulary-filter';
+    for (const [value, text] of Object.entries(filters)) { const option = node('option', bilingualText(text)); option.value = value; filter.append(option); } filterLabel.append(filter);
+    const directionLabel = bi('label', copy.direction), direction = node('select'); direction.id = 'vocabulary-direction';
+    for (const [value, text] of [['zh-vi', copy.zhVi], ['vi-zh', copy.viZh]] as const) { const option = node('option', bilingualText(text)); option.value = value; direction.append(option); } directionLabel.append(direction);
+    const shuffleLabel = node('label'), shuffle = node('input'); shuffle.type = 'checkbox'; shuffle.id = 'vocabulary-shuffle'; shuffleLabel.append(shuffle, bi('span', copy.shuffle));
     const options = node('div'); options.className = 'vocabulary-options'; options.append(filterLabel, directionLabel, shuffleLabel);
     const available = node('p'); available.id = 'vocabulary-available'; available.setAttribute('role', 'status');
-    const start = button('start', 'Bắt đầu lượt mới'), due = button('due', 'Ôn từ đến hạn và từ mới'), resume = button('resume', 'Tiếp tục lượt đã lưu');
+    const start = button('start', copy.start), due = button('due', copy.due), resume = button('resume', copy.resume);
     const rounds = node('div'); rounds.className = 'vocabulary-actions'; rounds.append(start, due, resume);
-    settings.append(lessons, searchPanel, options, available, rounds, node('p', 'Bắt đầu lượt mới sẽ thay lượt đang học, vẫn giữ mọi tự đánh giá và lịch ôn. Đổi lựa chọn chưa thay lượt đã lưu.'));
+    settings.append(lessons, searchPanel, options, available, rounds, bi('p', copy.newRoundNote));
     const save = node('p'); save.id = 'vocabulary-save-status'; save.setAttribute('role', 'status');
-    const retry = button('retry-save', 'Thử lưu lại'); const backups = node('a', 'Quản lý dữ liệu và bản sao lưu');
+    const retry = button('retry-save', copy.retry); const backups = bi('a', copy.backups);
     backups.href = routeHref({ feature: 'progress', lesson: context.route.lesson }); backups.dataset.routeLink = '';
     const saveActions = node('div'); saveActions.className = 'vocabulary-actions'; saveActions.append(retry, backups);
     const message = node('p'); message.id = 'vocabulary-message'; message.setAttribute('role', 'status');
@@ -74,20 +75,22 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
     const position = node('p'); position.id = 'vocabulary-position';
     const scope = node('p'); scope.id = 'vocabulary-queue-scope';
     const pinyinLabel = node('label'), pinyin = node('input'); pinyin.type = 'checkbox'; pinyin.id = 'vocabulary-pinyin';
-    pinyinLabel.append(pinyin, document.createTextNode(' Hiện pinyin (Việt → Trung: sau khi xem đáp án)'));
+    pinyinLabel.append(pinyin, bi('span', copy.pinyin));
     const cardHost = node('div');
-    const previous = button('prev', '← Thẻ trước'), next = button('next', 'Thẻ tiếp →'), skip = button('skip', 'Bỏ qua thẻ này');
-    const journey = node('nav'); journey.className = 'vocabulary-actions'; journey.setAttribute('aria-label', 'Di chuyển trong lượt từ vựng'); journey.append(previous, next, skip);
-    const skipNote = node('p', 'Bỏ qua chỉ chuyển sang thẻ tiếp, không tính là đã nhớ hoặc đã tự đánh giá, không đổi lịch ôn. Bạn vẫn có thể quay lại thẻ đã bỏ qua.');
+    const previous = button('prev', copy.previous), next = button('next', copy.next), skip = button('skip', copy.skip);
+    const journey = node('nav'); journey.className = 'vocabulary-actions'; journey.setAttribute('aria-label', bilingualText(copy.navigation)); journey.append(previous, next, skip);
+    const skipNote = bi('p', copy.skipNote);
+    skipNote.className = 'vocabulary-hint bilingual-stacked';
     const audioPanel = node('section'); audioPanel.className = 'vocabulary-panel';
     const audioStatus = node('p'); audioStatus.id = 'vocabulary-audio-status'; audioStatus.setAttribute('role', 'status');
-    const play = button('play', 'Nghe từ'), pause = button('pause', 'Tạm dừng'), replay = button('replay', 'Nghe lại');
+    const play = button('play', copy.play), pause = button('pause', copy.pause), replay = button('replay', copy.replay);
     const audioActions = node('div'); audioActions.className = 'vocabulary-actions'; audioActions.append(play, pause, replay); audioPanel.append(audioStatus, audioActions);
     exercise.append(position, scope, pinyinLabel, cardHost, audioPanel, journey, skipNote);
     const summary = node('section'); summary.className = 'vocabulary-panel'; summary.id = 'vocabulary-summary';
     controls.append(settings, save, saveActions, message, exercise, summary);
+    for (const note of article.querySelectorAll(':scope > p, #vocabulary-settings > p')) note.classList.add('bilingual-stacked');
     let key = '', rendered = '';
-    const handle = (result: { ok: boolean; message?: string }) => { message.textContent = result.ok ? '' : result.message ?? 'Chưa thực hiện được thao tác.'; return result.ok; };
+    const handle = (result: { ok: boolean; message?: string }) => { if (result.ok) message.replaceChildren(); else setBilingual(message, dynamic.actionIssue(result.message)); return result.ok; };
     const focusCard = () => cardHost.querySelector<HTMLElement>('h2')?.focus();
     const on = (target: HTMLElement, event: string, action: () => void) => target.addEventListener(event, action, { signal: lifetime.signal });
     const preferences = (patch: Parameters<typeof controller.setPreferences>[0]) => { stop(); handle(controller.setPreferences(patch)); update(); };
@@ -112,10 +115,10 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
       const current = controller.read().current, snapshot = audio.snapshot();
       const state = playback && !playback.signal.aborted ? snapshot.status : 'idle';
       audioStatus.dataset.state = state;
-      const labels = { idle: 'Âm thanh gốc giáo trình.', loading: 'Đang tải âm thanh…', playing: 'Đang phát âm thanh giáo trình.', paused: 'Đã tạm dừng.', ended: 'Đã nghe hết từ.', error: 'Chưa phát được. Kiểm tra kết nối rồi bấm Nghe lại.' };
-      audioStatus.textContent = !current?.audio ? 'Không có âm thanh riêng trong giáo trình cho nghĩa này.' : !current.revealed ? 'Xem đáp án để nghe từ.' : playback && snapshot.issue ? snapshot.issue : labels[state];
+
+      setBilingual(audioStatus, !current?.audio ? copy.noSenseAudio : !current.revealed ? copy.revealAudio : playback && snapshot.issue ? dynamic.audioIssue(snapshot.issue) : vocabularyAudioStatus[state]);
       play.disabled = replay.disabled = !current?.audio || !current.revealed || state === 'loading';
-      pause.disabled = !playback || !['loading', 'playing', 'paused'].includes(state); pause.textContent = state === 'paused' ? 'Tiếp tục' : 'Tạm dừng';
+      pause.disabled = !playback || !['loading', 'playing', 'paused'].includes(state); setBilingual(pause, state === 'paused' ? copy.continueAudio : copy.pause);
     }
     function begin(): void {
       const current = controller.read().current;
@@ -125,7 +128,7 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
       audio.setRate(controller.read().preferences.rate);
       void audio.play(request, { signal: owner.signal }).then(result => {
         if (left || lifetime.signal.aborted || owner.signal.aborted || playback !== owner) return;
-        if (!result.ok && result.code !== 'cancelled') message.textContent = result.issue ?? 'Chưa phát được âm thanh. Hãy thử lại.';
+        if (!result.ok && result.code !== 'cancelled') setBilingual(message, dynamic.audioIssue(result.issue));
         updateAudio();
       }); updateAudio();
     }
@@ -138,36 +141,36 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
       const prompt = node('h2', current.direction === 'zh-vi' ? current.zh : current.vi); prompt.tabIndex = -1; prompt.lang = current.direction === 'zh-vi' ? 'zh-CN' : 'vi'; prompt.id = 'vocabulary-prompt';
       card.append(prompt);
       if (pinyin.checked && (current.direction === 'zh-vi' || current.revealed)) { const py = node('p', current.py); py.lang = 'zh-Latn'; py.dataset.vocabularyPinyin = ''; card.append(py); }
-      const reveal = button('reveal', 'Xem đáp án'); reveal.disabled = current.revealed;
+      const reveal = button('reveal', copy.reveal); reveal.disabled = current.revealed;
       reveal.addEventListener('click', () => { if (handle(controller.reveal())) { update(); cardHost.querySelector<HTMLElement>('#vocabulary-answer')?.focus(); } }, { signal: cardEvents.signal }); card.append(reveal);
       if (current.revealed) {
         const answer = node('section'); answer.id = 'vocabulary-answer'; answer.tabIndex = -1;
         const target = node('p', current.direction === 'zh-vi' ? current.vi : current.zh); target.lang = current.direction === 'zh-vi' ? 'vi' : 'zh-CN'; target.className = 'vocabulary-target';
-        answer.append(target, node('p', `Nghĩa / cách dùng: ${current.senseZh}${current.cueZh ? ` · ${current.cueZh}` : ''}`));
-        answer.append(node('p', `${current.extension ? 'Từ mở rộng' : 'Từ trong giáo trình'} · ${current.category === 'proper_noun' ? 'Tên riêng' : 'Từ thông dụng'}`));
+        answer.append(target, bi('p', dynamic.meaning(current.senseZh, current.cueZh)));
+        answer.append(bi('p', dynamic.category(current.extension, current.category === 'proper_noun')));
         const sources = node('ul'); sources.id = 'vocabulary-sources';
         for (const source of current.sourceRecords) {
-          const row = node('li'); const link = node('a', `Bài ${source.lesson}`); link.href = routeHref({ feature: 'textbook', lesson: source.lesson, section: 'vocab' }); link.dataset.routeLink = '';
-          row.append(link, document.createTextNode(` · ${source.source.section} · Trang sách ${source.source.printPages.join(', ')} · PDF ${source.source.pdfPages.join(', ')}`)); sources.append(row);
+          const row = node('li'); const link = bi('a', dynamic.lesson(source.lesson)); link.href = routeHref({ feature: 'textbook', lesson: source.lesson, section: 'vocab' }); link.dataset.routeLink = '';
+          row.append(link, document.createTextNode(' · '), bi('span', dynamic.source(source.source.section, source.source.printPages, source.source.pdfPages))); sources.append(row);
         }
         answer.append(sources);
         const examples = content.examplesForSense(current.senseId);
         if (examples.length) {
           const details = node('details'); details.id = 'vocabulary-examples'; details.className = 'vocabulary-examples';
-          details.append(node('summary', `Ví dụ trong giáo trình (${examples.length})`));
+          details.append(bi('summary', dynamic.examples(examples.length)));
           const list = node('ul');
           for (const example of examples) {
             const item = node('li'); item.dataset.exampleId = example.id;
             const zh = node('p', example.zh); zh.lang = 'zh-CN'; zh.className = 'vocabulary-example-zh';
             const py = node('p', example.py); py.lang = 'zh-Latn'; py.className = 'vocabulary-example-pinyin';
             const vi = node('p', example.vi); vi.lang = 'vi';
-            const source = node('a', `Bài ${example.lesson} · ${example.section === 'text' ? 'Hội thoại' : 'Ngữ pháp'}`);
+            const source = bi('a', dynamic.exampleSource(example.lesson, example.section === 'text'));
             source.href = routeHref({ feature: 'textbook', lesson: example.lesson, section: example.section }); source.dataset.routeLink = '';
             item.append(zh, py, vi, source); list.append(item);
           }
           details.append(list); answer.append(details);
         } else {
-          const noExample = node('p', 'Chưa có câu ví dụ phù hợp với nghĩa này trong hội thoại hoặc ngữ pháp của bài.');
+          const noExample = bi('p', copy.noSenseExample);
           noExample.id = 'vocabulary-no-examples'; noExample.className = 'vocabulary-hint'; answer.append(noExample);
         }
         card.append(answer);
@@ -179,7 +182,7 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
       }
       card.append(rateActions);
       if (current.rating) {
-        const note = node('p', `${ratings[current.rating.rating]} · Ôn tiếp: ${new Date(current.rating.schedule.dueAt).toLocaleString('vi-VN')}${current.rating.early ? ' · Ôn sớm: giữ nguyên cấp và hạn ôn.' : ''}`);
+        const note = bi('p', dynamic.rating(current.rating.rating, current.rating.schedule.dueAt, current.rating.early));
         note.id = 'vocabulary-rating-result'; note.setAttribute('role', 'status'); card.append(note);
       }
       cardHost.append(card);
@@ -193,18 +196,19 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
       if (rendered !== renderKey) { rendered = renderKey; renderCard(); }
       for (const [id, input] of inputs) input.checked = model.preferences.lessons.includes(id);
       filter.value = model.preferences.vocabularyFilter; direction.value = model.preferences.direction; shuffle.checked = model.preferences.shuffle;
-      available.textContent = !model.preferences.lessons.length ? 'Hãy chọn ít nhất một bài học.' : `Bài đã chọn: ${model.preferences.lessons.join(', ')} · ${model.available.mergedCount} nghĩa / ${model.available.distinctForms} dạng chữ · ${model.availableCount} thẻ theo bộ lọc${model.search ? ` và tìm kiếm “${model.search}”` : ''}.${model.availableCount ? '' : ' Không có thẻ phù hợp; hãy xóa tìm kiếm, đổi bộ lọc hoặc chọn thêm bài.'}`;
+      setBilingual(available, !model.preferences.lessons.length ? copy.selectOne : dynamic.available(model.preferences.lessons, model.available.mergedCount, model.available.distinctForms, model.availableCount, model.search));
       start.disabled = model.availableCount === 0; due.disabled = model.dueCount === 0; clearSearch.disabled = search.value.length === 0;
-      resume.hidden = !current; resume.textContent = `Tiếp tục lượt đã lưu${review ? ` · Thẻ ${review.position + 1}` : ''}`;
+      resume.hidden = !current; setBilingual(resume, dynamic.resume(review?.position));
       exercise.hidden = !current;
-      position.textContent = review ? `Thẻ ${review.position + 1} / ${review.senseIds.length}` : '';
-      scope.textContent = review ? `Lượt đang học: Bài ${review.lessons.join(', ')} · ${filters[review.filter]} · ${review.direction === 'zh-vi' ? 'Trung → Việt' : 'Việt → Trung'}${review.search ? ` · Tìm “${review.search}”` : ''}` : '';
+      if (review) setBilingual(position, dynamic.position(review.position, review.senseIds.length)); else position.replaceChildren();
+      if (review) setBilingual(scope, dynamic.scope(review.lessons, review.filter, review.direction, review.search)); else scope.replaceChildren();
       previous.disabled = !review || review.position === 0; next.disabled = skip.disabled = !review || review.position >= review.senseIds.length - 1;
       const stats = model.summary;
-      summary.replaceChildren(node('h2', 'Tự đánh giá và lịch ôn'), node('p', `Đã tự đánh giá ${stats.rated} / ${stats.totalSenses} nghĩa · Chưa thuộc ${stats.unfamiliar} · Cần luyện lại ${stats.wrong} · Đến hạn và từ mới ${stats.due}.`), node('p', `Lượt đang học: ${stats.review.rated} / ${stats.review.total} thẻ đã tự đánh giá.${stats.review.done ? ' Đã hoàn thành lượt này.' : ''}`), node('p', 'Chưa nhớ: 10 phút. Khó nhớ: 1 ngày. Đã nhớ đúng hạn: 1, 3, 7, 14, 30 ngày. Ôn sớm bằng Đã nhớ không tăng cấp hoặc đẩy hạn ôn.'));
+      summary.replaceChildren(bi('h2', copy.summary), bi('p', dynamic.total(stats.rated, stats.totalSenses, stats.unfamiliar, stats.wrong, stats.due)), bi('p', dynamic.round(stats.review.rated, stats.review.total, stats.review.done)), bi('p', copy.schedule));
+      for (const note of summary.querySelectorAll('p')) note.classList.add('bilingual-stacked');
       const snapshot = session.store.snapshot(); save.dataset.state = snapshot.status;
-      save.textContent = snapshot.issue ?? ({ empty: 'Chưa có dữ liệu cần lưu.', saved: 'Đã lưu trên thiết bị này.', unsaved: 'Có thay đổi chưa lưu.', saving: 'Đang lưu…', conflict: 'Có thay đổi ở tab khác; lượt ôn vẫn ở tab này.', corrupt: 'Dữ liệu không đọc được. Hãy giữ dữ liệu gốc trong quản lý dữ liệu.', unavailable: 'Chưa lưu được. Hãy tải bản sao lưu hoặc thử lưu lại.' }[snapshot.status]);
-      retry.hidden = ['empty', 'saved', 'saving'].includes(snapshot.status); retry.disabled = !snapshot.canWrite || snapshot.status === 'saving';
+      setBilingual(save, vocabularySaveStatus[snapshot.status]); if (snapshot.issue) save.append(document.createTextNode(' '), bi('span', dynamic.saveIssue(snapshot.issue)));
+      retry.hidden = ['empty', 'saved', 'saving'].includes(snapshot.status) || (snapshot.status === 'unsaved' && !snapshot.issue); retry.disabled = !snapshot.canWrite || snapshot.status === 'saving';
       const now = Date.now();
       const nextDueAt = Object.values(snapshot.data.practice.cards.schedule).reduce<number | null>((next, entry) => {
         const at = entry && typeof entry === 'object' && !Array.isArray(entry) ? Number(entry.dueAt) : NaN;

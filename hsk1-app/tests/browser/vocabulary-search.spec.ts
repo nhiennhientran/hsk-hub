@@ -27,7 +27,7 @@ test('Chinese, accent-insensitive Vietnamese and pinyin searches create only mat
     expect(queue.search).toBe(query);
     expect(queue.senseIds).toContain(catalog.vocabulary.find(word => word.zh === '你好')!.senseId);
     expect(queue.senseIds.length).toBeLessThan(10);
-    await expect(page.locator('#vocabulary-position')).toHaveText(`Thẻ 1 / ${queue.senseIds.length}`);
+    await expect(page.locator('#vocabulary-position [lang="vi"]')).toHaveText(`Thẻ 1 / ${queue.senseIds.length}`);
     await expect(page.locator('#vocabulary-available')).toContainText(`${queue.senseIds.length} thẻ`);
   }
   await page.locator('#vocabulary-clear-search').click();
@@ -42,7 +42,7 @@ test('search, selected lessons, and self-rating filters intersect; zero results 
   await open(page);
   await page.locator('#vocabulary-search').fill('nhớ nhung');
   await page.locator('#vocabulary-start').click();
-  await expect(page.locator('#vocabulary-position')).toHaveText('Thẻ 1 / 1');
+  await expect(page.locator('#vocabulary-position [lang="vi"]')).toHaveText('Thẻ 1 / 1');
   await page.locator('#vocabulary-reveal').click(); await page.locator('#vocabulary-again').click();
   await page.locator('#vocabulary-filter').selectOption('wrong');
   await expect(page.locator('#vocabulary-available')).toContainText('1 thẻ');
@@ -77,7 +77,7 @@ test('searched skipped cards restore exactly after reload while changed draft se
   await page.locator('#vocabulary-prev').click(); await expect(page.locator('#vocabulary-answer')).toBeVisible();
   await page.locator('#vocabulary-prev').click(); await expect(page.locator('#vocabulary-answer')).toHaveCount(0);
   await expect(page.locator('#vocabulary-play')).toBeDisabled();
-  await expect(page.locator('#vocabulary-position')).toHaveText(`Thẻ 1 / ${before.cards.review.senseIds.length}`);
+  await expect(page.locator('#vocabulary-position [lang="vi"]')).toHaveText(`Thẻ 1 / ${before.cards.review.senseIds.length}`);
 });
 
 test('Vietnamese fronts expose neither Chinese answers, pinyin, examples nor audio before reveal', async ({ page }) => {
@@ -98,7 +98,7 @@ test('Vietnamese fronts expose neither Chinese answers, pinyin, examples nor aud
   await expect(example).toContainText(exact.zh); await expect(example).toContainText(exact.py); await expect(example).toContainText(exact.vn);
   await expect(example.locator('a')).toHaveAttribute('href', /textbook\?lesson=12&section=text/);
   await expect(page.locator('#vocabulary-examples')).not.toContainText('这里的天不太好');
-  await page.locator('#vocabulary-good').click(); await expect(page.locator('#vocabulary-position')).toHaveText('Thẻ 1 / 1');
+  await page.locator('#vocabulary-good').click(); await expect(page.locator('#vocabulary-position [lang="vi"]')).toHaveText('Thẻ 1 / 1');
 });
 
 test('compact search and exact-sense textbook examples remain usable on a narrow screen', async ({ page }) => {

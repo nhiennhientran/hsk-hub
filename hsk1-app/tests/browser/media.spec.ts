@@ -158,14 +158,14 @@ test('native word and line segments stop at their boundaries and the three origi
   await page.locator('#vocab-play-all').click();
   const playlist = content.vocabPlaylist(1);
   await playing(page, '/course-assets/audio/1-2.mp3', 0);
-  await expect(page.locator('#audio-position')).toHaveText('Mục 1 / 3');
+  await expect(page.locator('#audio-position')).toHaveText('第 1 / 3 项 · Mục 1 / 3');
   const firstDuration = (await native(page)).duration;
   await seekNative(page, firstDuration - .08);
-  await expect(page.locator('#audio-position')).toHaveText('Mục 2 / 3');
+  await expect(page.locator('#audio-position')).toHaveText('第 2 / 3 项 · Mục 2 / 3');
   await playing(page, '/course-assets/audio/1-4.mp3', 0);
   expect(playlist.map(value => value.url)).toEqual(['course-assets/audio/1-2.mp3', 'course-assets/audio/1-4.mp3', 'course-assets/audio/1-6.mp3']);
   await seekNative(page, (await native(page)).duration - .08);
-  await expect(page.locator('#audio-position')).toHaveText('Mục 3 / 3');
+  await expect(page.locator('#audio-position')).toHaveText('第 3 / 3 项 · Mục 3 / 3');
   await playing(page, '/course-assets/audio/1-6.mp3', 0);
   await seekNative(page, (await native(page)).duration - .08);
   await expect(page.locator('#audio-player')).toHaveAttribute('data-state', 'ended');

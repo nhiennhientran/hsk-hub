@@ -141,7 +141,7 @@ test('vocabulary search, keyboard and all-card flips, saved stars, detail naviga
   if (chars.length > 1) {
     await page.locator(`#word-detail [data-hanzi-char="${chars[1]}"]`).click();
     await expect(page.locator(`#word-detail [data-hanzi-char="${chars[1]}"]`)).toHaveAttribute('aria-pressed', 'true');
-    await expect(page.locator('#word-detail [data-hanzi-canvas]')).toHaveAttribute('aria-label', `Bảng viết chữ ${chars[1]}`);
+    await expect(page.locator('#word-detail [data-hanzi-canvas]')).toHaveAttribute('aria-label', `汉字 ${chars[1]} 书写区 · Bảng viết chữ ${chars[1]}`);
   }
   await page.locator('#word-close').click();
   await expect(page.locator('#word-detail')).toBeHidden();

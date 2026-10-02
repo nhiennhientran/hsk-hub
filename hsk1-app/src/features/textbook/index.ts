@@ -1,5 +1,7 @@
 import { SECTIONS, type FeatureModule } from '../../app/contracts.ts';
-import { sectionLabels, sectionChinese } from '../../app/labels.ts';
+import { bilingualText, setBilingual } from '../../app/bilingual.ts';
+import { readingStatusCopy, textbookCopy as copy, textbookIssue, textbookSection } from '../../app/i18n/textbook.ts';
+import '../../app/bilingual.css';
 import { loadCourseIndex } from '../../services/content/index.ts';
 import { loadTextbook } from '../../services/content/textbook.ts';
 import { createReadingController } from '../../services/learning/reading.ts';
@@ -14,11 +16,11 @@ import './textbook.css';
 
 export const mount: FeatureModule['mount'] = (host, context) => {
   const article = element('article'); article.id = 'textbook-module'; article.className = 'module-entry textbook';
-  const heading = element('h1', 'Giáo trình'); heading.tabIndex = -1;
-  const name = element('p', `Bài ${context.route.lesson} · Đang tải thông tin…`);
-  const nav = element('nav'); nav.className = 'subnav'; nav.dataset.textbookSections = ''; nav.setAttribute('aria-label', 'Các mục giáo trình');
-  const controls = element('fieldset'); controls.dataset.moduleControls = ''; controls.disabled = true; controls.append(element('legend', 'Nội dung giáo trình'));
-  const loading = element('button', 'Đánh dấu đã đọc bài'); loading.type = 'button'; loading.disabled = true; loading.id = 'reading-complete'; controls.append(loading);
+  const heading = element('h1', copy.title); heading.tabIndex = -1;
+  const name = element('p', copy.loading(context.route.lesson));
+  const nav = element('nav'); nav.className = 'subnav'; nav.dataset.textbookSections = ''; nav.setAttribute('aria-label', bilingualText(copy.sections));
+  const controls = element('fieldset'); controls.dataset.moduleControls = ''; controls.disabled = true; controls.append(element('legend', copy.contents));
+  const loading = element('button', copy.markRead); loading.type = 'button'; loading.disabled = true; loading.id = 'reading-complete'; controls.append(loading);
   const hero = element('header'); hero.className = 'lesson-hero';
   const eyebrow = element('p', `第 ${context.route.lesson} 课 · BÀI ${context.route.lesson}`); eyebrow.className = 'eyebrow';
   hero.append(eyebrow, heading, name); article.append(hero, nav, controls); host.append(article);
@@ -27,31 +29,29 @@ export const mount: FeatureModule['mount'] = (host, context) => {
   let left = false; let unsubscribe = () => {}; let disposeView = () => {}; let disposePlayer = () => {}; let flush = () => {};
   const ready = loadCourseIndex(lifetime.signal).then(async lessons => {
     if (left || lifetime.signal.aborted) return;
-    const summary = lessons.find(row => row.id === context.route.lesson); if (!summary) throw new Error('Lesson not found.');
-    if (!context.learning || !context.audio) throw new Error('Learning services unavailable.');
+    const summary = lessons.find(row => row.id === context.route.lesson); if (!summary) throw new Error(bilingualText(copy.missingLesson));
+    if (!context.learning || !context.audio) throw new Error(bilingualText(copy.servicesUnavailable));
     const [content, session, audio] = await Promise.all([loadTextbook(lifetime.signal), context.learning(), context.audio()]);
     if (left || lifetime.signal.aborted) return;
-    const lesson = content.lessons.find(row => row.id === summary.id); if (!lesson) throw new Error('Lesson not found.');
+    const lesson = content.lessons.find(row => row.id === summary.id); if (!lesson) throw new Error(bilingualText(copy.missingLesson));
     const section = context.route.section ?? 'vocab';
     const reading = createReadingController({ session, route: { ...context.route, section }, words: lesson.vocab });
     flush = () => { void session.flush(); };
-    heading.textContent = lesson.title; heading.lang = 'zh'; name.textContent = lesson.vn_title;
+    heading.textContent = lesson.title; heading.lang = 'zh'; name.textContent = lesson.vn_title; name.lang = 'vi';
     for (const item of SECTIONS) {
-      const link = routeLink('', { ...context.route, section: item }); link.dataset.section = item;
-      const chinese = element('span', sectionChinese[item]); chinese.lang = 'zh';
-      link.append(chinese, element('span', sectionLabels[item]));
+      const link = routeLink(textbookSection(item, lesson.id), { ...context.route, section: item }); link.dataset.section = item; link.classList.add('bilingual-stacked');
       if (item === section) link.setAttribute('aria-current', 'page'); nav.append(link);
     }
-    controls.replaceChildren(element('legend', sectionLabels[section]));
+    controls.replaceChildren(element('legend', textbookSection(section, lesson.id)));
     const readingBox = element('div'); readingBox.className = 'textbook-reading';
     const progress = element('p'); progress.id = 'reading-section-status';
     const completeLabel = element('label'); const complete = element('input'); complete.type = 'checkbox'; complete.id = 'reading-complete';
-    completeLabel.append(complete, document.createTextNode(' Tôi đã đọc xong bài này'));
+    completeLabel.append(complete, element('span', copy.completed));
     complete.addEventListener('change', () => { reading.setComplete(complete.checked); update(); }, { signal: lifetime.signal });
-    const hint = element('p', 'Đánh dấu đọc giáo trình riêng với điểm và tình trạng nộp bài tập.'); hint.className = 'textbook-hint';
-    const status = element('p'); status.id = 'reading-save-status'; status.setAttribute('role', 'status');
-    const retry = button('Thử lưu lại', () => { void session.flush(); }, lifetime.signal); retry.id = 'retry-reading-save';
-    const data = routeLink('Quản lý dữ liệu và bản sao lưu', { feature: 'progress', lesson: lesson.id });
+    const hint = element('p', copy.readingHint); hint.className = 'textbook-hint bilingual-stacked';
+    const status = element('p'); status.id = 'reading-save-status'; status.className = 'bilingual-stacked'; status.setAttribute('role', 'status');
+    const retry = button(copy.retrySave, () => { void session.flush(); }, lifetime.signal); retry.id = 'retry-reading-save';
+    const data = routeLink(copy.manageData, { feature: 'progress', lesson: lesson.id });
     const saveActions = element('div'); saveActions.className = 'textbook-actions'; saveActions.append(retry, data);
     readingBox.append(progress, completeLabel, hint, status, saveActions);
     const playerHost = element('div'); playerHost.className = 'textbook-player-host';
@@ -69,25 +69,24 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       if (left || lifetime.signal.aborted) return;
     } else {
       disposeView = mountPractice(body, { lesson, signal: lifetime.signal }).dispose;
-      const more = element('nav'); more.className = 'study-paths'; more.setAttribute('aria-label', 'Các dạng luyện tập khác');
-      more.append(routeLink('Bài tập gốc · 选择 / 排序 / 翻译 / 听力', { feature: 'exercises', lesson: lesson.id }), routeLink('Bài tập sau bài · 课后作业', { feature: 'homework', lesson: lesson.id })); body.append(more);
+      const more = element('nav'); more.className = 'study-paths'; more.setAttribute('aria-label', bilingualText(copy.otherPractice));
+      more.append(routeLink(copy.originalPractice, { feature: 'exercises', lesson: lesson.id }), routeLink(copy.homework, { feature: 'homework', lesson: lesson.id })); body.append(more);
     }
-    const journey = element('nav'); journey.className = 'textbook-journey'; journey.setAttribute('aria-label', 'Tiếp tục học');
+    const journey = element('nav'); journey.className = 'textbook-journey'; journey.setAttribute('aria-label', bilingualText(copy.continue));
     const at = SECTIONS.indexOf(section);
-    if (at > 0) journey.append(routeLink(`← ${sectionLabels[SECTIONS[at - 1]]}`, { ...context.route, section: SECTIONS[at - 1] }));
-    if (at < SECTIONS.length - 1) journey.append(routeLink(`${sectionLabels[SECTIONS[at + 1]]} →`, { ...context.route, section: SECTIONS[at + 1] }));
-    else if (lesson.id < 15) journey.append(routeLink(`Tiếp đến bài ${lesson.id + 1} →`, { feature: 'textbook', lesson: lesson.id + 1, section: 'vocab' }));
-    const lessonsNav = element('nav'); lessonsNav.className = 'textbook-journey'; lessonsNav.setAttribute('aria-label', 'Chọn bài khác');
-    if (lesson.id > 1) lessonsNav.append(routeLink(`← Bài ${lesson.id - 1}`, { ...context.route, lesson: lesson.id - 1 }));
-    lessonsNav.append(routeLink('Chọn bài học', { feature: 'home', lesson: lesson.id }));
-    if (lesson.id < 15) lessonsNav.append(routeLink(`Bài ${lesson.id + 1} →`, { ...context.route, lesson: lesson.id + 1 }));
+    if (at > 0) journey.append(routeLink({ zh: `← ${textbookSection(SECTIONS[at - 1], lesson.id).zh}`, vi: textbookSection(SECTIONS[at - 1], lesson.id).vi }, { ...context.route, section: SECTIONS[at - 1] }));
+    if (at < SECTIONS.length - 1) journey.append(routeLink({ zh: `${textbookSection(SECTIONS[at + 1], lesson.id).zh} →`, vi: textbookSection(SECTIONS[at + 1], lesson.id).vi }, { ...context.route, section: SECTIONS[at + 1] }));
+    else if (lesson.id < 15) journey.append(routeLink(copy.nextLesson(lesson.id + 1), { feature: 'textbook', lesson: lesson.id + 1, section: 'vocab' }));
+    const lessonsNav = element('nav'); lessonsNav.className = 'textbook-journey'; lessonsNav.setAttribute('aria-label', bilingualText(copy.otherLesson));
+    if (lesson.id > 1) lessonsNav.append(routeLink(copy.lesson(lesson.id - 1, 'previous'), { ...context.route, lesson: lesson.id - 1 }));
+    lessonsNav.append(routeLink(copy.chooseLesson, { feature: 'home', lesson: lesson.id }));
+    if (lesson.id < 15) lessonsNav.append(routeLink(copy.lesson(lesson.id + 1, 'next'), { ...context.route, lesson: lesson.id + 1 }));
     controls.append(journey, lessonsNav, playerHost, readingBox);
     function update(): void {
       const model = reading.read(); complete.checked = model.complete;
-      progress.textContent = `Đã mở ${model.modules.length} / 5 mục giáo trình${model.complete ? ' · Đã đánh dấu đọc xong bài.' : '.'}`;
+      setBilingual(progress, copy.readingProgress(model.modules.length, model.complete));
       const snapshot = session.store.snapshot(); status.dataset.state = snapshot.status;
-      const labels = { empty: 'Chưa có dữ liệu cần lưu.', saved: 'Đã lưu trên thiết bị này.', unsaved: 'Có thay đổi chưa lưu.', saving: 'Đang lưu…', conflict: 'Có thay đổi ở tab khác. Thay đổi của bạn vẫn còn trong tab này.', corrupt: 'Dữ liệu không đọc được. Hãy giữ lại dữ liệu gốc trong mục quản lý dữ liệu.', unavailable: 'Chưa lưu được trên thiết bị. Thay đổi chỉ ở trong tab này.' };
-      status.textContent = snapshot.issue ?? labels[snapshot.status]; retry.hidden = ['empty', 'saved', 'saving'].includes(snapshot.status); retry.disabled = !snapshot.canWrite || snapshot.status === 'saving'; updateView(model.mastered);
+      setBilingual(status, textbookIssue(snapshot.issue, readingStatusCopy[snapshot.status])); retry.hidden = ['empty', 'saved', 'saving'].includes(snapshot.status); retry.disabled = !snapshot.canWrite || snapshot.status === 'saving'; updateView(model.mastered);
     }
     unsubscribe = session.store.subscribe(update); reading.visit(); update();
   });

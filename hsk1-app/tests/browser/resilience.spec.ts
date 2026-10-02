@@ -1,3 +1,4 @@
+import { blankExercisesState } from '../../src/domain/exercises/engine.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Page } from '@playwright/test';
 import homework from '../../src/domain/homework/engine.js';
@@ -11,7 +12,7 @@ const question = bank.lessons[9].choice[0];
 function initial(): any {
   return { app: 'hsk1-modular', schema: 1, revision: 1, updatedAt: 1789891200000,
     data: { reading: { lessons: { '7': { visited: true, complete: true } }, mastered: {}, modules: {} },
-      homework: homework.blank(), practice: practice.blank(), navigation: null, legacyRaw: {} }, recovery: null };
+      homework: homework.blank(), practice: practice.blank(), exercises: blankExercisesState(), navigation: null, legacyRaw: {} }, recovery: null };
 }
 async function ready(page: Page, feature = 'homework'): Promise<void> {
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');

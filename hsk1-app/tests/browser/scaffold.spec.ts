@@ -1,3 +1,5 @@
+import { bilingualText } from '../../src/app/bilingual.ts';
+import { coreCopy } from '../../src/app/i18n/core.ts';
 import { test, expect, type Page } from '@playwright/test';
 
 test.use({ trace: 'off', video: 'off', screenshot: 'off' });
@@ -51,7 +53,7 @@ test('a fresh localhost session stays gated despite old flags and rejects empty 
   expect(await page.evaluate(key => sessionStorage.getItem(key), sessionKey)).toBeNull();
   await page.locator('#class-password').fill('incorrect-auth-input');
   await page.locator('#class-password').press('Enter');
-  await expect(page.locator('#auth-message')).toHaveText('Mật khẩu chưa đúng. Hãy thử lại.');
+  await expect(page.locator('#auth-message')).toHaveText(bilingualText(coreCopy.incorrect));
   await expect(page.locator('#auth-gate')).toBeVisible();
   await expect(page.locator('#module-host[data-state="ready"]')).toHaveCount(0);
   expect(await page.evaluate(key => sessionStorage.getItem(key), sessionKey)).toBeNull();
@@ -106,7 +108,7 @@ for (const mode of ['unavailable', 'throws', 'rejects'] as const) {
       await enterPassword(page, input);
       await page.locator('#class-password').press('Enter');
       await expect(page.locator('#auth-message')).toHaveText(
-        'Trình duyệt không hỗ trợ kiểm tra mật khẩu an toàn. Hãy mở trang bằng HTTPS trên trình duyệt mới hơn.',
+        bilingualText(coreCopy.unsupported),
       );
       await expect(page.locator('#unlock-session')).toBeEnabled();
       await expect(page.locator('#auth-gate')).toBeVisible();
@@ -155,14 +157,15 @@ test('the shell and home course overview remain readable without horizontal over
   for (const width of [320, 390, 768, 1104]) {
     await page.setViewportSize({ width, height: 800 });
     await expect(page.locator('#feature-nav')).toBeVisible();
-    await expect(page.locator('#lesson-select')).toBeVisible();
+    await expect(page.locator('#lesson-search')).toBeVisible();
+    await page.locator('.home-progress-details').evaluate(node => (node as HTMLDetailsElement).open = true);
     await expect(page.locator('#module-host h1')).toBeVisible();
     await expect(page.locator('#home-progress')).toBeVisible();
     await expect(page.locator('.lesson-grid')).toBeVisible();
     const layout = await page.evaluate(() => ({
       viewport: innerWidth,
       documentWidth: document.documentElement.scrollWidth,
-      boxes: ['#feature-nav', '#lesson-select', '#module-host', '#module-host h1', '#home-progress', '.lesson-grid'].map(selector => {
+      boxes: ['#feature-nav', '#lesson-search', '#module-host', '#module-host h1', '#home-progress', '.lesson-grid'].map(selector => {
         const node = document.querySelector<HTMLElement>(selector)!;
         const box = node.getBoundingClientRect();
         return { selector, left: box.left, right: box.right, fontSize: Number.parseFloat(getComputedStyle(node).fontSize) };

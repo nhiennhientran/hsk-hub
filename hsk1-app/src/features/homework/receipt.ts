@@ -1,4 +1,7 @@
 import type { Answer, HomeworkAttempt } from '../../domain/types.ts';
+import { bilingualText, setBilingual, type BilingualCopy } from '../../app/bilingual.ts';
+import { receiptCopy as copy, homeworkParts } from '../../app/i18n/homework.ts';
+import '../../app/bilingual.css';
 import './receipt.css';
 
 export interface ReceiptQuestion {
@@ -21,20 +24,19 @@ export interface ReceiptOptions {
   onClose(): void;
 }
 
-const partLabels = { choice: 'Chọn đáp án', sort: 'Sắp xếp câu', translation: 'Dịch tự do' };
-
-function element<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string, className?: string): HTMLElementTagNameMap[K] {
+function element<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string | BilingualCopy, className?: string): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag);
-  if (text !== undefined) node.textContent = text;
+  if (typeof text === 'string') node.textContent = text;
+  else if (text) { if (tag === 'option') node.textContent = bilingualText(text); else setBilingual(node, text); }
   if (className) node.className = className;
   return node;
 }
 
 function answerText(question: ReceiptQuestion, answer: Answer | undefined): string {
   if (typeof answer === 'string') return answer;
-  if (typeof answer === 'number') return question.options?.[answer] ?? 'Chưa có câu trả lời trong phiếu này.';
+  if (typeof answer === 'number') return question.options?.[answer] ?? bilingualText(copy.noAnswer);
   if (Array.isArray(answer)) return answer.map(index => question.tokens?.[index] ?? '').join(' ');
-  return 'Chưa có câu trả lời trong phiếu này.';
+  return bilingualText(copy.noAnswer);
 }
 
 /** A receipt reads submitted snapshots only; edits to a redo draft cannot change it. */
@@ -52,39 +54,39 @@ export function createReceipt(host: HTMLElement, options: ReceiptOptions): { dis
   root.setAttribute('role', 'region');
   root.setAttribute('aria-labelledby', 'receipt-title');
   const toolbar = element('div', undefined, 'receipt-toolbar');
-  const versionLabel = element('label', 'Lần nộp');
+  const versionLabel = element('label', copy.version);
   versionLabel.htmlFor = 'receipt-version';
   const version = element('select');
   version.id = 'receipt-version';
-  for (const [value, label] of [['first', 'Lần đầu'], ['latest', 'Gần nhất']] as const) {
+  for (const [value, label] of [['first', copy.first], ['latest', copy.latest]] as const) {
     const option = element('option', label);
     option.value = value;
     option.disabled = !attempts[value];
     version.append(option);
   }
   version.value = selected;
-  const print = element('button', 'In / lưu PDF');
+  const print = element('button', copy.print);
   print.type = 'button';
   print.id = 'print-receipt';
-  const close = element('button', 'Quay lại bài tập');
+  const close = element('button', copy.close);
   close.type = 'button';
   close.id = 'close-receipt';
   toolbar.append(versionLabel, version, print, close);
 
-  const title = element('h2', 'Phiếu bài tập đã nộp');
+  const title = element('h2', copy.title);
   title.id = 'receipt-title';
   title.tabIndex = -1;
   const identity = element('dl', undefined, 'receipt-identity');
   for (const [label, value] of [
-    ['Họ và tên', profile.name || 'Chưa điền'],
-    ['Lớp', profile.className || 'Chưa điền'],
-    ['Bài', `Bài ${options.lesson}${options.lessonTitle ? ` · ${options.lessonTitle}` : ''}`],
-    ['Phần', partLabels[options.part]],
+    [copy.name, profile.name || copy.blank],
+    [copy.className, profile.className || copy.blank],
+    [copy.lesson, copy.lessonValue(options.lesson, options.lessonTitle)],
+    [copy.part, homeworkParts[options.part]],
   ]) identity.append(element('dt', label), element('dd', value));
-  const submission = element('p', undefined, 'receipt-submission');
+  const submission = element('p', undefined, 'receipt-submission bilingual-stacked');
   const note = element('p', options.part === 'translation'
-    ? 'Các câu trả lời dưới đây là bản đã nộp. Hãy chụp phiếu này và gửi cô giáo để nhận nhận xét.'
-    : 'Các câu trả lời dưới đây là bản đã nộp.', 'receipt-note');
+    ? copy.manualNote
+    : copy.note, 'receipt-note bilingual-stacked');
   const answers = element('ol', undefined, 'receipt-answers');
   root.append(toolbar, title, identity, submission, note, answers);
   host.append(root);
@@ -94,14 +96,14 @@ export function createReceipt(host: HTMLElement, options: ReceiptOptions): { dis
     root.dataset.version = selected;
     answers.replaceChildren();
     if (!attempt) {
-      submission.textContent = 'Chưa có lần nộp để tạo phiếu.';
+      setBilingual(submission, copy.noSubmission);
       return;
     }
-    const at = new Date(attempt.at).toLocaleString('vi-VN', { dateStyle: 'medium', timeStyle: 'medium' });
-    const description = selected === 'first' ? 'Lần đầu' : 'Gần nhất';
-    submission.textContent = `${description} · Nộp lúc ${at}`;
+    const date = new Date(attempt.at);
+    const at = { zh: date.toLocaleString('zh-CN', { dateStyle: 'medium', timeStyle: 'medium' }), vi: date.toLocaleString('vi-VN', { dateStyle: 'medium', timeStyle: 'medium' }) };
+    setBilingual(submission, copy.submitted(selected, at));
     if (options.part !== 'translation' && attempt.assessment === 'automatic' && attempt.correct !== null) {
-      const score = element('span', ` · Kết quả ${attempt.correct}/${attempt.total}`, 'receipt-score');
+      const score = element('span', copy.score(attempt.correct, attempt.total), 'receipt-score');
       score.dataset.receiptScore = '';
       submission.append(score);
     }

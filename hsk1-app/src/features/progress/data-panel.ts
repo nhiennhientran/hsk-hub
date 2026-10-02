@@ -1,38 +1,22 @@
 import { LEGACY_KEYS, type AppData, type Compatibility, type SourceReport } from '../../services/storage/compatibility.ts';
 import { RESET_MODULES, type ResetModule } from '../../domain/progress/reset.ts';
 import type { LearningSession } from '../../services/learning/session.ts';
+import { bilingualNode, bilingualText, setBilingual, type BilingualCopy } from '../../app/bilingual.ts';
+import { dataCopy as copy, dataStatusCopy as statusLabels, dataSummaryCopy as summaryLabels, dataModuleCopy as moduleLabels,
+  dataLessonCopy, dataFileCopy, dataSourceCountCopy, dataResetCountCopy, dataDifferenceCopy, dataStorageIssueCopy } from '../../services/storage/copy.ts';
+import '../../app/bilingual.css';
 import './data-panel.css';
 
-function element<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string): HTMLElementTagNameMap[K] {
-  const node = document.createElement(tag);
-  if (text !== undefined) node.textContent = text;
+function element<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string | BilingualCopy): HTMLElementTagNameMap[K] {
+  const node = typeof text === 'object' ? bilingualNode(tag, text) : document.createElement(tag);
+  if (typeof text === 'string') node.textContent = text;
+  if (tag === 'p' || tag === 'li' || tag === 'dt' || tag === 'h2' || tag === 'h3' || tag === 'h4') node.classList.add('bilingual-stacked');
   return node;
 }
 
-function button(id: string, label: string): HTMLButtonElement {
+function button(id: string, label: BilingualCopy): HTMLButtonElement {
   const node = element('button', label); node.id = id; node.type = 'button'; return node;
 }
-
-const statusLabels: Record<string, string> = {
-  empty: 'Chưa có dữ liệu trong ứng dụng mới. Dữ liệu cũ chưa bị thay đổi.',
-  saved: 'Đã lưu dữ liệu trên thiết bị này.',
-  unsaved: 'Chưa lưu được thay đổi. Hãy tải bản sao lưu trước khi rời trang.',
-  saving: 'Đang lưu dữ liệu…',
-  conflict: 'Dữ liệu đã thay đổi ở tab khác. Bản đang mở chưa ghi đè dữ liệu đó.',
-  corrupt: 'Bản ghi hiện tại không đọc được. Hãy tải bản gốc để giữ lại dữ liệu.',
-  unavailable: 'Không truy cập được bộ nhớ thiết bị. Bạn vẫn có thể tải bản sao lưu.',
-};
-
-const summaryLabels: Record<keyof ReturnType<Compatibility['summary']>, string> = {
-  readingVisited: 'Bài giáo trình đã mở', readingCompleted: 'Bài giáo trình đã hoàn thành',
-  masteredWords: 'Từ đã đánh dấu thuộc', homeworkSubmitted: 'Bài tập đã nộp',
-  automaticSubmitted: 'Bài chấm tự động đã nộp', automaticFirstCorrect: 'Số câu đúng ở lần nộp đầu',
-  automaticLatestCorrect: 'Số câu đúng ở lần nộp mới nhất', manualSubmitted: 'Bài dịch đã nộp để giáo viên xem',
-  listeningSubmitted: 'Câu nghe đã nộp', listeningFirstCorrect: 'Câu nghe đúng ở lần đầu',
-  listeningLatestCorrect: 'Câu nghe đúng ở lần mới nhất', scheduledSenses: 'Thẻ nghĩa có lịch ôn',
-  legacySources: 'Bản dữ liệu cũ được giữ lại',
-  exerciseSubmitted: 'Câu luyện bổ sung đã nộp', exerciseDrafts: 'Câu luyện bổ sung đang có nháp',
-};
 
 function renderSummary(host: HTMLElement, compatibility: Compatibility, data: AppData): void {
   const list = element('dl');
@@ -53,47 +37,48 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
   const storage = {
     getItem(key: string) { return window.localStorage.getItem(key); },
   };
-  const panel = element('section'); panel.className = 'data-panel'; panel.setAttribute('aria-label', 'Quản lý dữ liệu');
-  panel.append(element('h2', 'Dữ liệu trên thiết bị và bản sao lưu'));
-  panel.append(element('p', 'Dữ liệu chỉ ở trình duyệt này. Việc chuyển hoặc nhập không sửa các bản ghi cũ và không sao lưu phiên đăng nhập.'));
-  if (!navigator.locks) panel.append(element('p', 'Trình duyệt này không hỗ trợ ghi an toàn giữa các tab. Chỉ xem và tải bản sao lưu; hãy dùng trình duyệt có hỗ trợ để nhập dữ liệu.'));
+  const panel = element('section'); panel.className = 'data-panel'; panel.setAttribute('aria-label', bilingualText(copy.panelLabel));
+  panel.append(element('h2', copy.panelTitle));
+  panel.append(element('p', copy.localOnly));
+  if (!navigator.locks) panel.append(element('p', copy.noLocks));
   const status = element('p'); status.id = 'data-status'; status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
   const summary = element('div'); summary.id = 'data-summary';
-  panel.append(status, element('h3', 'Dữ liệu đang mở'), summary);
+  panel.append(status, element('h3', copy.currentData), summary);
   const actions = element('div'); actions.className = 'data-actions';
-  const migration = button('preview-migration', 'Xem trước dữ liệu cũ trên thiết bị');
-  const exportBackup = button('export-backup', 'Tải bản sao lưu hiện tại');
-  const exportOriginal = button('export-original', 'Tải bản ghi gốc không đọc được');
-  const restore = button('restore-data', 'Khôi phục bản đã giữ trước đó');
-  const reload = button('reload-data', 'Bỏ thay đổi chưa lưu và đọc lại dữ liệu');
+  const migration = button('preview-migration', copy.previewMigration);
+  const exportBackup = button('export-backup', copy.exportBackup);
+  const exportOriginal = button('export-original', copy.exportOriginal);
+  const restore = button('restore-data', copy.restore);
+  const reload = button('reload-data', copy.reload);
   actions.append(migration, exportBackup, exportOriginal, restore, reload); panel.append(actions);
-  const label = element('label', 'Nhập tệp sao lưu mới hoặc cũ: '); label.htmlFor = 'backup-file';
+  const label = element('label', copy.importLabel); label.htmlFor = 'backup-file';
   const fileInput = element('input'); fileInput.type = 'file'; fileInput.id = 'backup-file'; fileInput.accept = '.json,application/json';
-  panel.append(label, fileInput);
+  const chooseFile = button('choose-backup-file', copy.chooseFile); fileInput.hidden = true;
+  chooseFile.addEventListener('click', () => fileInput.click(), { signal: controller.signal });
+  const importControls = element('div'); importControls.className = 'data-import-controls';
+  importControls.append(label, chooseFile, fileInput); panel.append(importControls);
   const resetSection = element('section'); resetSection.className = 'data-reset';
-  resetSection.append(element('h3', 'Đặt lại tiến độ học'));
-  resetSection.append(element('p', 'Chọn một bài, một phần hoặc toàn khóa. Xem rõ phạm vi trước khi xác nhận; bạn có thể khôi phục bản ngay trước lần đặt lại.'));
-  const lessonLabel = element('label', 'Phạm vi bài: '); lessonLabel.htmlFor = 'reset-lesson';
+  resetSection.append(element('h3', copy.resetTitle));
+  resetSection.append(element('p', copy.resetDescription));
+  const lessonLabel = element('label', copy.lessonLabel); lessonLabel.htmlFor = 'reset-lesson';
   const resetLesson = element('select'); resetLesson.id = 'reset-lesson';
-  const allLessons = element('option', 'Toàn khóa · 15 bài'); allLessons.value = 'all'; resetLesson.append(allLessons);
-  for (let id = 1; id <= 15; id++) { const option = element('option', `Bài ${id}`); option.value = String(id); resetLesson.append(option); }
-  const moduleLabel = element('label', 'Phần học: '); moduleLabel.htmlFor = 'reset-module';
+  const allLessons = element('option', bilingualText(copy.allLessons)); allLessons.value = 'all'; resetLesson.append(allLessons);
+  for (let id = 1; id <= 15; id++) { const option = element('option', bilingualText(dataLessonCopy(id))); option.value = String(id); resetLesson.append(option); }
+  const moduleLabel = element('label', copy.moduleLabel); moduleLabel.htmlFor = 'reset-module';
   const resetModule = element('select'); resetModule.id = 'reset-module';
-  const moduleLabels: Record<ResetModule | 'all', string> = { all: 'Tất cả phần học', textbook: 'Giáo trình và dấu từ đã thuộc',
-    homework: 'Bài tập', listening: 'Luyện nghe', vocabulary: 'Lịch ôn từ vựng', exercises: 'Bài gốc, Bài 9 mở rộng và ôn câu' };
-  for (const name of ['all', ...RESET_MODULES] as const) { const option = element('option', moduleLabels[name]); option.value = name; resetModule.append(option); }
-  const resetAction = button('preview-reset', 'Xem trước đặt lại');
-  const resetControls = element('div'); resetControls.className = 'data-actions';
+  for (const name of ['all', ...RESET_MODULES] as const) { const option = element('option', bilingualText(moduleLabels[name])); option.value = name; resetModule.append(option); }
+  const resetAction = button('preview-reset', copy.previewReset);
+  const resetControls = element('div'); resetControls.className = 'data-actions data-reset-controls';
   resetControls.append(lessonLabel, resetLesson, moduleLabel, resetModule, resetAction);
   resetSection.append(resetControls); panel.append(resetSection);
   const preview = element('div'); preview.id = 'migration-preview'; preview.hidden = true; preview.setAttribute('aria-live', 'polite');
   const previewDetails = element('div'); const previewActions = element('div'); previewActions.className = 'data-actions';
-  const confirm = button('confirm-data-import', 'Xác nhận'); confirm.disabled = true;
-  const exportPreview = button('export-preview', 'Tải bản sao lưu của bản xem trước');
-  const cancel = button('cancel-data-import', 'Hủy xem trước');
+  const confirm = button('confirm-data-import', copy.confirm); confirm.disabled = true;
+  const exportPreview = button('export-preview', copy.exportPreview);
+  const cancel = button('cancel-data-import', copy.cancel);
   previewActions.append(confirm, exportPreview, cancel); preview.append(previewDetails, previewActions); panel.append(preview); host.append(panel);
 
-  let left = false; let busy = false; let readId = 0; let actionMessage = '';
+  let left = false; let busy = false; let readId = 0; let actionMessage: BilingualCopy | undefined;
   let pending: ReturnType<typeof store.previewReplacement> | undefined;
   const urls = new Map<string, ReturnType<typeof setTimeout>>();
   const alive = () => !left && !controller.signal.aborted;
@@ -101,9 +86,12 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
     if (!alive()) return;
     const current = store.snapshot();
     status.dataset.state = current.status;
-    status.textContent = [statusLabels[current.status], current.issue, actionMessage].filter(Boolean).join(' ');
+    status.replaceChildren(...[statusLabels[current.status], current.issue ? dataStorageIssueCopy(current.issue) : undefined, actionMessage]
+      .filter((message): message is BilingualCopy => message !== undefined).map(message => {
+        const node = bilingualNode('span', message); node.className = 'data-status-message bilingual-stacked'; return node;
+      }));
     renderSummary(summary, compatibility, current.data);
-    migration.disabled = busy; fileInput.disabled = busy;
+    migration.disabled = busy; fileInput.disabled = busy; chooseFile.disabled = busy;
     exportBackup.disabled = current.status === 'corrupt';
     exportOriginal.hidden = current.status !== 'corrupt';
     restore.disabled = busy || !current.hasRecovery || !current.canWrite || current.status === 'conflict';
@@ -115,8 +103,8 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
     cancel.disabled = busy;
   };
   const clearPreview = () => { pending = undefined; preview.hidden = true; previewDetails.replaceChildren(); confirm.disabled = true; };
-  const showPreview = (candidate: NonNullable<typeof pending>, warnings: readonly string[], description: string, reports: readonly SourceReport[] = [], resetCount?: number) => {
-    pending = candidate; actionMessage = ''; preview.hidden = false; preview.dataset.reason = candidate.reason;
+  const showPreview = (candidate: NonNullable<typeof pending>, warnings: readonly string[], description: string | BilingualCopy, reports: readonly SourceReport[] = [], resetCount?: number) => {
+    pending = candidate; actionMessage = undefined; preview.hidden = false; preview.dataset.reason = candidate.reason;
     previewDetails.replaceChildren(element('h3', description));
     const counts = element('div'); renderSummary(counts, compatibility, candidate.data); previewDetails.append(counts);
     if (warnings.length) {
@@ -125,21 +113,22 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
       previewDetails.append(warningList);
     }
     if (reports.length) {
-      const sources = element('section'); sources.className = 'data-source-list'; sources.setAttribute('aria-label', 'Nguồn dữ liệu cũ');
-      sources.append(element('h4', 'Từng nguồn trên thiết bị / trong tệp'));
-      sources.append(element('p', 'Số mục là câu đã có đáp án, lịch ôn, dấu đọc hoặc bản ghi lịch sử; không phải số câu đúng. Mục chưa hiểu và bản khôi phục được giữ nguyên, không cộng vào điểm.'));
+      const sources = element('section'); sources.className = 'data-source-list'; sources.setAttribute('aria-label', bilingualText(copy.sourcesLabel));
+      sources.append(element('h4', copy.sourcesTitle));
+      sources.append(element('p', copy.sourcesDescription));
       for (const report of reports) {
-        const item = element('article'); item.dataset.source = report.key;
-        item.append(element('strong', report.key), element('p', `${report.understood} mục đã hiểu · ${report.unsupported} mục chỉ giữ bản gốc · ${report.bytes} byte`));
+        const item = element('article'); item.dataset.source = report.key; item.dataset.understood = String(report.understood);
+        item.dataset.unsupported = String(report.unsupported); item.dataset.bytes = String(report.bytes);
+        item.append(element('strong', report.key), element('p', dataSourceCountCopy(report.understood, report.unsupported, report.bytes)));
         for (const warning of report.warnings) item.append(element('p', warning));
         sources.append(item);
       }
       previewDetails.append(sources);
     }
     if (candidate.reason === 'reset') {
-      previewDetails.append(element('p', `${resetCount ?? 0} bản ghi / lượt đang mở sẽ được đặt lại. Điểm lần đầu, lần gần nhất và nháp trong phạm vi đã chọn sẽ bị xóa khỏi tiến độ hoạt động.`));
-      previewDetails.append(element('p', 'Giữ nguyên các bài / phần ngoài phạm vi, hồ sơ học viên, tùy chọn, nguồn cũ và phiên đăng nhập. Một bản dữ liệu đầy đủ ngay trước thao tác sẽ được giữ để khôi phục.'));
-      confirm.textContent = 'Xác nhận đặt lại đúng phạm vi này'; render(); return;
+      previewDetails.append(element('p', dataResetCountCopy(resetCount ?? 0)));
+      previewDetails.append(element('p', copy.resetPreserved));
+      setBilingual(confirm, copy.confirmReset); render(); return;
     }
     const current = store.snapshot();
     const hasExisting = current.revision > 0 || current.status !== 'empty';
@@ -147,24 +136,24 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
       const before = compatibility.summary(current.data), after = compatibility.summary(candidate.data);
       const differences = element('ul'); differences.className = 'data-differences';
       for (const [key, label] of Object.entries(summaryLabels)) if (before[key] !== after[key]) {
-        const item = element('li', `${label}: ${before[key]} → ${after[key]}`);
-        if (after[key]! < before[key]!) item.className = 'data-warning';
+        const item = element('li', dataDifferenceCopy(label, before[key]!, after[key]!));
+        if (after[key]! < before[key]!) item.classList.add('data-warning');
         differences.append(item);
       }
-      if (differences.childElementCount) previewDetails.append(element('h4', 'Thay đổi so với dữ liệu đang mở'), differences);
+      if (differences.childElementCount) previewDetails.append(element('h4', copy.differences), differences);
     }
     if (hasExisting && candidate.reason === 'migration') {
-      previewDetails.append(element('p', 'Xác nhận chỉ bổ sung tiến độ cũ còn thiếu. Dữ liệu mới, nháp và lượt đang mở được giữ nguyên. Toàn bộ trạng thái trước thao tác có thể khôi phục.'));
-      confirm.textContent = 'Xác nhận bổ sung dữ liệu cũ'; render(); return;
+      previewDetails.append(element('p', copy.migrationPreserved));
+      setBilingual(confirm, copy.confirmSupplement); render(); return;
     }
     const note = element('p', hasExisting
-      ? 'Xác nhận sẽ thay thế dữ liệu hiện tại bằng bản xem trước này. Ứng dụng giữ một bản để khôi phục; các bản ghi cũ vẫn nguyên vẹn.'
-      : 'Chỉ khi xác nhận, bản xem trước mới được lưu vào ứng dụng mới. Các bản ghi cũ vẫn nguyên vẹn.');
-    note.className = 'data-warning'; previewDetails.append(note);
-    confirm.textContent = hasExisting ? 'Xác nhận thay thế dữ liệu hiện tại' : 'Xác nhận lưu bản xem trước';
+      ? copy.replacementNote
+      : copy.firstImportNote);
+    note.classList.add('data-warning'); previewDetails.append(note);
+    setBilingual(confirm, hasExisting ? copy.confirmReplace : copy.confirmSave);
     render();
   };
-  const reportError = (message: string) => { actionMessage = message; render(); };
+  const reportError = (message: BilingualCopy) => { actionMessage = message; render(); };
   const download = (text: string, name: string) => {
     const url = URL.createObjectURL(new Blob([text], { type: 'application/json;charset=utf-8' }));
     const anchor = element('a'); anchor.href = url; anchor.download = name; document.body.append(anchor); anchor.click(); anchor.remove();
@@ -172,20 +161,20 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
   };
   const runWrite = async (operation: () => Promise<{ ok: boolean; code: string }>, reason: 'import' | 'restore' | 'reset' = 'import') => {
     if (!alive() || busy) return;
-    readId++; busy = true; actionMessage = ''; render();
+    readId++; busy = true; actionMessage = undefined; render();
     try {
       const result = await operation();
       if (!alive()) return;
-      if (result.ok) { clearPreview(); actionMessage = 'Thao tác đã hoàn tất và được lưu trên thiết bị.'; }
-      else actionMessage = reason === 'reset' ? 'Chưa đặt lại được dữ liệu. Tiến độ đang mở và bản khôi phục trước đó vẫn nguyên vẹn.' : result.code === 'conflict' || result.code === 'stale-preview'
-        ? 'Bản xem trước đã cũ hoặc có thay đổi ở tab khác. Hãy đọc lại dữ liệu và xem trước lần nữa.'
+      if (result.ok) { clearPreview(); actionMessage = copy.completed; }
+      else actionMessage = reason === 'reset' ? copy.resetFailed : result.code === 'conflict' || result.code === 'stale-preview'
+        ? copy.stalePreview
         : reason === 'import'
-          ? 'Chưa lưu được bản xem trước. Hãy tải bản sao lưu của bản xem trước để giữ lại dữ liệu muốn nhập.'
-          : 'Chưa khôi phục được dữ liệu. Bản đang mở và bản khôi phục vẫn được giữ lại.';
+          ? copy.importFailed
+          : copy.restoreFailed;
     } catch {
-      if (alive()) actionMessage = reason === 'reset' ? 'Chưa đặt lại được dữ liệu. Tiến độ đang mở vẫn được giữ nguyên.' : reason === 'import'
-        ? 'Chưa lưu được dữ liệu. Hãy tải bản sao lưu của bản xem trước nếu muốn giữ dữ liệu nhập.'
-        : 'Chưa khôi phục được dữ liệu. Hãy tải bản sao lưu hiện tại để giữ lại dữ liệu.';
+      if (alive()) actionMessage = reason === 'reset' ? copy.resetError : reason === 'import'
+        ? copy.importError
+        : copy.restoreError;
     } finally { if (alive()) { busy = false; render(); } }
   };
   migration.addEventListener('click', () => {
@@ -194,26 +183,26 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
     const raw: Record<string, string | null> = {};
     try {
       for (const key of LEGACY_KEYS) raw[key] = storage.getItem(key);
-      if (!Object.values(raw).some(value => value !== null)) { reportError('Không tìm thấy dữ liệu cũ trên thiết bị này. Không có bản ghi nào bị thay đổi.'); return; }
+      if (!Object.values(raw).some(value => value !== null)) { reportError(copy.noLegacy); return; }
       const current = store.snapshot();
       const result = compatibility.migrate(raw, Date.now(), current.revision > 0 || current.hasUnsavedChanges ? current.data : undefined);
-      showPreview(store.previewReplacement(result.data, 'migration'), result.warnings, 'Xem trước dữ liệu chuyển từ ứng dụng cũ', result.reports);
-    } catch { reportError('Không đọc hoặc chuyển được dữ liệu cũ. Các bản ghi cũ vẫn được giữ nguyên.'); }
+      showPreview(store.previewReplacement(result.data, 'migration'), result.warnings, copy.migrationTitle, result.reports);
+    } catch { reportError(copy.migrationError); }
   }, { signal: controller.signal });
   fileInput.addEventListener('change', async () => {
     const file = fileInput.files?.[0]; if (!file || !alive() || busy) return;
-    const currentRead = ++readId; clearPreview(); actionMessage = 'Đang đọc tệp sao lưu…'; render();
+    const currentRead = ++readId; clearPreview(); actionMessage = copy.readingFile; render();
     try {
       const text = await file.text(); if (!alive() || currentRead !== readId) return;
       const parsed: unknown = JSON.parse(text);
       const app = typeof parsed === 'object' && parsed !== null && 'app' in parsed ? parsed.app : undefined;
       if (typeof app === 'string' && app.startsWith('hsk1-modular')) {
-        showPreview(store.previewBackup(text), [], `Xem trước tệp ${file.name}`);
+        showPreview(store.previewBackup(text), [], dataFileCopy(file.name));
       } else {
         const result = compatibility.importLegacy(text, store.snapshot().data, Date.now());
-        showPreview(store.previewReplacement(result.data, 'import'), result.warnings, `Xem trước tệp cũ ${file.name}`, result.reports);
+        showPreview(store.previewReplacement(result.data, 'import'), result.warnings, dataFileCopy(file.name, true), result.reports);
       }
-    } catch { if (alive() && currentRead === readId) reportError('Tệp không hợp lệ hoặc không thuộc định dạng sao lưu được hỗ trợ. Chưa thay đổi dữ liệu.'); }
+    } catch { if (alive() && currentRead === readId) reportError(copy.invalidFile); }
     finally { if (alive() && currentRead === readId) fileInput.value = ''; }
   }, { signal: controller.signal });
   resetAction.addEventListener('click', () => {
@@ -223,19 +212,19 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
       const result = compatibility.reset(store.snapshot().data, { module: resetModule.value as ResetModule | 'all',
         lesson: resetLesson.value === 'all' ? null : Number(resetLesson.value) });
       showPreview(store.previewReplacement(result.data, 'reset'), result.warnings, result.title, [], result.removed);
-    } catch { reportError('Không tạo được bản xem trước đặt lại. Chưa thay đổi tiến độ.'); }
+    } catch { reportError(copy.resetPreviewError); }
   }, { signal: controller.signal });
   for (const select of [resetLesson, resetModule]) select.addEventListener('change', () => {
-    if (pending?.reason === 'reset') { clearPreview(); actionMessage = 'Phạm vi đã đổi. Hãy xem trước lại trước khi xác nhận.'; render(); }
+    if (pending?.reason === 'reset') { clearPreview(); actionMessage = copy.scopeChanged; render(); }
   }, { signal: controller.signal });
   confirm.addEventListener('click', () => { if (pending) {
     const candidate = pending;
     void runWrite(() => store.confirm(candidate, controller.signal), candidate.reason === 'reset' ? 'reset' : 'import');
   } }, { signal: controller.signal });
-  cancel.addEventListener('click', () => { readId++; clearPreview(); actionMessage = 'Đã hủy xem trước. Chưa thay đổi dữ liệu.'; render(); }, { signal: controller.signal });
+  cancel.addEventListener('click', () => { readId++; clearPreview(); actionMessage = copy.cancelled; render(); }, { signal: controller.signal });
   exportBackup.addEventListener('click', () => {
     try { download(store.exportBackup(), `hsk1-backup-${new Date().toISOString().replace(/[:.]/g, '-')}.json`); }
-    catch { reportError('Không tạo được bản sao lưu. Dữ liệu đang mở vẫn được giữ nguyên.'); }
+    catch { reportError(copy.exportError); }
   }, { signal: controller.signal });
   exportOriginal.addEventListener('click', () => {
     const original = store.exportOriginal();
@@ -244,10 +233,10 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
   exportPreview.addEventListener('click', () => {
     if (!pending) return;
     try { download(store.exportPreview(pending), `hsk1-preview-${new Date().toISOString().replace(/[:.]/g, '-')}.json`); }
-    catch { reportError('Không tạo được bản sao lưu của bản xem trước. Chưa thay đổi dữ liệu.'); }
+    catch { reportError(copy.exportPreviewError); }
   }, { signal: controller.signal });
   restore.addEventListener('click', () => { clearPreview(); void runWrite(() => store.restore(controller.signal), 'restore'); }, { signal: controller.signal });
-  reload.addEventListener('click', () => { readId++; clearPreview(); store.reloadDiscardingDraft(); actionMessage = 'Đã đọc lại bản trên thiết bị; bản thay đổi chưa lưu đã được bỏ.'; render(); }, { signal: controller.signal });
+  reload.addEventListener('click', () => { readId++; clearPreview(); store.reloadDiscardingDraft(); actionMessage = copy.reloaded; render(); }, { signal: controller.signal });
   const unsubscribe = store.subscribe(render); render();
   return {
     dispose() {
