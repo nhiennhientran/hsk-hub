@@ -1,0 +1,90 @@
+name: HSK1 immutable frozen artifact verification
+on:
+  push:
+    branches: ['verify/hsk1-frozen-dist-20261002']
+    paths: ['.github/workflows/hsk1-modular-frozen-artifact.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  checkpoint:
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [webkit]
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: hsk1-app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: e00086a2ed665adc3d5fc4ec2b4d7fa07a797296
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+          cache: npm
+          cache-dependency-path: hsk1-app/package-lock.json
+      - run: npm ci
+      - run: npm run catalog:check && npm run fixtures:check && npm test
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: '11208389672'
+          run-id: '36964557056'
+          github-token: ${{ github.token }}
+          merge-multiple: true
+          path: hsk1-app/dist
+      - name: Verify immutable tested bytes before browser execution
+        run: |
+          node --input-type=module - <<'JS'
+          import { readFileSync } from 'node:fs';
+          import { createHash } from 'node:crypto';
+          import assert from 'node:assert/strict';
+          const digest = x => createHash('sha256').update(x).digest('hex');
+          const raw = readFileSync('dist/release-manifest.json');
+          assert.equal(digest(raw), '58a0984b4e8d2bec374ac9a4900ccdad7e1446bb684d2a0a2b99ef1e17f47ccc');
+          const manifest = JSON.parse(raw);
+          assert.equal(manifest.sourceCommit, 'e00086a2ed665adc3d5fc4ec2b4d7fa07a797296');
+          assert.equal(manifest.buildId, '21e78e1e06a9eb45600bc5d26b5cbc89c3e91035a0227245e018ede55a1b7e8c');
+          for (const file of manifest.files) {
+            const bytes = readFileSync('dist/' + file.path);
+            assert.equal(bytes.length, file.bytes); assert.equal(digest(bytes), file.sha256);
+          }
+          console.log(JSON.stringify({ sourceCommit: manifest.sourceCommit, buildId: manifest.buildId, verifiedFiles: manifest.files.length }));
+          JS
+          npm run assets:check && npm run student:check && node tools/test-release-architecture.mjs
+      - name: Use official Ubuntu archive for fixed browser dependencies
+        run: |
+          sudo python3 - <<'PY'
+          from pathlib import Path
+          source_dir = Path('/etc/apt/sources.list.d')
+          for path in [Path('/etc/apt/sources.list'), Path('/etc/apt/apt-mirrors.txt'), *source_dir.glob('*.list'), *source_dir.glob('*.sources')]:
+              if path.exists():
+                  text = path.read_text()
+                  path.write_text(text.replace('http://azure.archive.ubuntu.com/ubuntu', 'https://archive.ubuntu.com/ubuntu').replace('https://azure.archive.ubuntu.com/ubuntu', 'https://archive.ubuntu.com/ubuntu'))
+          PY
+      - name: Install fixed browser
+        timeout-minutes: 8
+        run: |
+          npx playwright install-deps ${{ matrix.browser }}
+          sudo apt-get install -y fonts-noto-cjk
+          npx playwright install ${{ matrix.browser }}
+      - run: npm run test:smoke -- --project=${{ matrix.browser }}
+      - run: npm run test:release -- --project=${{ matrix.browser }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: step9-frozen-${{ matrix.browser }}-evidence
+          path: |
+            hsk1-app/.repro-output/
+            hsk1-app/test-results/
+            hsk1-app/test-results-release/
+          include-hidden-files: true
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: step9-frozen-${{ matrix.browser }}-dist
+          path: hsk1-app/dist/
