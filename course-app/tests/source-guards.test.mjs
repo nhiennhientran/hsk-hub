@@ -1,0 +1,4 @@
+import test from'node:test';import assert from'node:assert/strict';import{verifySourceGuards}from'../tools/source-guards.mjs';
+const lesson={id:'course:l18',grammar:[{practice:[{zh:'我不是______开始的。',source:{pdfPage:179}}]}]};
+const guards={schemaVersion:1,records:[{lessonId:lesson.id,path:['grammar',0,'practice',0],expected:{zh:'我不是______开始的。'},pdfPage:179}]};
+test('reviewed-source guards reject a subject/negation substitution, relocated blank and wrong page',()=>{assert.deepEqual(verifySourceGuards([lesson],guards),[]);for(const zh of['他是______开始的。','我______不是开始的。']){const l=structuredClone(lesson);l.grammar[0].practice[0].zh=zh;assert.equal(verifySourceGuards([l],guards).length,1)}const l=structuredClone(lesson);l.grammar[0].practice[0].source.pdfPage=178;assert.equal(verifySourceGuards([l],guards).length,1);assert.equal(verifySourceGuards([],guards).length,1)});

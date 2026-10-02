@@ -1,3 +1,4 @@
+import {verifySourceGuards} from './source-guards.mjs';
 import {readFileSync,readdirSync,existsSync,mkdirSync,writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {resolve} from 'node:path';
@@ -5,7 +6,7 @@ const root=resolve(import.meta.dirname,'..');
 const pilot=process.env.HSK_PILOT==='1';
 const counts={2:15,3:18}, grammar={2:Array(15).fill(3),3:[3,3,3,3,4,3,4,4,3,3,4,4,3,3,4,4,4,4]};
 const totals={lessons:0,words:0,texts:0,grammar:0,homework:0,listening:0,sections:0};
-const seen=new Set(),questionSignatures=new Set(),issues=[],lessons=[];
+const seen=new Set(),questionSignatures=new Set(),issues=[],lessons=[],fullLessons=[];
 const check=(condition,message)=>{if(!condition)issues.push(message)};
 const text=v=>typeof v==='string'&&v.trim().length>0;
 const copy=v=>v&&text(v.zh)&&text(v.vi);
@@ -15,7 +16,8 @@ for(const level of [2,3]){
  if(!pilot)check(files.length===counts[level],`HSK${level}: ${files.length}/${counts[level]} lessons`);
  for(const file of files){const l=JSON.parse(readFileSync(resolve(dir,file),'utf8')),tag=`HSK${level} lesson ${l.number}`,prefix=`hsk${level}-fltrp-2026:l${String(l.number).padStart(2,'0')}`;
  check(l.schemaVersion===1&&l.courseId===`hsk${level}-fltrp-2026`&&l.version==='2026.1'&&l.id===prefix,tag+' identity');check(copy(l.title)&&text(l.title.py),tag+' title');
- const source=s=>{check(s&&Number.isInteger(s.pdfPage)&&Number.isInteger(s.printedPage)&&s.pdfPage-s.printedPage===(level===2?15:12)&&text(s.section)&&['textbook','supplemental'].includes(s.provenance),tag+' source mapping')};
+ fullLessons.push(l);
+ const source=s=>{check(s?.pdfPage>=l.source.startPdfPage&&s?.pdfPage<=l.source.endPdfPage,tag+' source outside lesson');check(s&&Number.isInteger(s.pdfPage)&&Number.isInteger(s.printedPage)&&s.pdfPage-s.printedPage===(level===2?15:12)&&text(s.section)&&['textbook','supplemental'].includes(s.provenance),tag+' source mapping')};
  const id=x=>{check(text(x.id)&&x.id.startsWith(prefix+':')&&!seen.has(x.id),tag+' duplicate or wrong id '+x.id);seen.add(x.id);source(x.source)};
  for(const key of ['objectives','warmup','texts','vocabulary','grammar','sections','homework','listening'])check(Array.isArray(l[key])&&l[key].length>0,tag+' missing '+key);
  if(issues.some(x=>x===tag+' missing texts'))continue;
@@ -43,4 +45,6 @@ for(const level of [2,3]){
  lessons.push({id:l.id,level,number:l.number,title:l.title,words:l.vocabulary.length,texts:l.texts.length,grammar:l.grammar.length,homework:l.homework.length,sha256:createHash('sha256').update(readFileSync(resolve(dir,file))).digest('hex')});
  }
 }
+const guardsFile=resolve(root,'content/source-sentinels.json');
+if(existsSync(guardsFile))issues.push(...verifySourceGuards(fullLessons,JSON.parse(readFileSync(guardsFile,'utf8'))));else if(!pilot)issues.push('Missing reviewed source sentinels');
 const report={mode:pilot?'pilot':'release',totals,lessons,issues};mkdirSync(resolve(root,'docs'),{recursive:true});writeFileSync(resolve(root,'docs/content-validation.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(issues.length)process.exitCode=1;

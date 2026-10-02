@@ -54,7 +54,7 @@ for(const width of [320,390,768,1440])test(`later HSK3 lesson18 complex narrativ
  await page.setViewportSize({width,height:900});await login(page,'#view=lesson&lesson=18',3);
  await expect(page.locator('.text-section')).toHaveCount(4);await expect(page.locator('.grammar')).toHaveCount(4);await expect(page.locator('.word-card')).toHaveCount(30);
  await expect(page.locator('#text-pinyin')).not.toBeChecked();await expect(page.locator('#text-4 .pinyin-line').first()).toBeHidden();
- const review=page.locator('[data-kind=review]');await expect(review).toContainText('16—18');await expect(review.locator('p>[lang=zh]').filter({hasText:'理解□'})).toHaveCount(12);await expect(review).toContainText('只要');await expect(review).toContainText('从……起');
+ const review=page.locator('[data-kind=review]');await expect(review).toContainText('16—18');await expect(review.locator('[data-block-kind=table]')).toHaveCount(12);await expect(review).toContainText('只要');await expect(review).toContainText('从……起');
  for(const [name,section] of [['narrative',page.locator('#text-4')],['grammar',page.locator('.grammar').nth(2)],['review',review]] as const){await section.scrollIntoViewIfNeeded();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`test-results/hsk3-later18-${width}-${name}.png`,fullPage:false})}
  await page.locator('#text-pinyin').check();await expect(page.locator('#text-4 .pinyin-line').first()).toBeVisible();await page.locator('#text-4').scrollIntoViewIfNeeded();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`test-results/hsk3-later18-${width}-pinyin.png`,fullPage:false});
 });
