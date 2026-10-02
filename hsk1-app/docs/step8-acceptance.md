@@ -35,7 +35,9 @@
 
 ## 证据和当前状态
 
-本地190项既有单元及新增规范规则复用测试通过；最终完整单元/类型/构建/内容/迁移/资源/学生产物隔离检查在本步提交前重跑。浏览器固定版本在GitHub Actions `HSK1 modular step8`的Chromium和WebKit独立job中运行，0 retries，最终结果必须按本文件所在的最终远端head核对。首轮CI如有真实失败，在本节记录修复后再跑完整最终候选。
+受测代码：`8effedf11ad04c3c3d19011ae80d1dd2f5a41318`。[完整CI 36961126745](https://github.com/nhiennhientran/hsk-hub/actions/runs/36961126745)两个独立job均通过：200单元、类型/build/catalog、12个迁移fixture、93原轨/267汉字资源及student:check。Chromium75/75、WebKit75/75；两份实际下载JSON均为expected75、unexpected0、skipped0、flaky0，retries0。40张本步四宽度截图已生成并从制品读取；截图目检结论单独核对，不能由测试状态替代。
+
+此处记录代码候选的已验证证据；本步文档归档提交若有不同SHA，不将上述旧CI说成测试了新SHA。后续同head CI另行核对；源码、测试、工作流与构建输入不因文档归档改变。制品SHA256、清理清单和未执行项见`review/step8-validation.json`。
 
 本地浏览器已有socket权限限制；本步一次聚焦启动还遇到固定Chromium binary缺失，未进入页面后停止，没有绕过权限或把启动失败算功能通过。CI制品包含 `.repro-output/step8-browser.json` 与截图；每个最终job的pass/fail/skipped/flaky和截图检查在完成回复及本步验证记录核对，不继承第7步结果。
 

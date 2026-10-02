@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "step": 8,
+  "branch": "work/hsk1-modular-step8-20261002",
+  "baseCommit": "190802508f677a587e5c0ea983429a0bae1357b0",
+  "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
+  "verifiedCi": {
+    "runId": 36961126745,
+    "url": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36961126745",
+    "unit": {
+      "passed": 200,
+      "failed": 0,
+      "skipped": 0
+    },
+    "chromium": {
+      "passed": 75,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "jobId": 110694832975
+    },
+    "webkit": {
+      "passed": 75,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "jobId": 110694832752
+    },
+    "retries": 0,
+    "checks": [
+      "catalog",
+      "12 migration fixtures",
+      "typecheck",
+      "build",
+      "93 original audio and267 Hanzi assets",
+      "student build isolation"
+    ]
+  },
+  "artifacts": [
+    {
+      "id": 11208032370,
+      "name": "step8-chromium-evidence",
+      "sha256": "4b53e9612adf900026e5068897578bee647d774d2e9454df3bef4b79080f393e",
+      "bytes": 14170951
+    },
+    {
+      "id": 11208101350,
+      "name": "step8-webkit-evidence",
+      "sha256": "30a5d7a350cb5a0f3a1233580f0bb03c7b199a790587eaab90d7e10d67164ab7",
+      "bytes": 16478512
+    }
+  ],
+  "screenshots": {
+    "step8ImagesPerBrowser": 20,
+    "widths": [
+      320,
+      390,
+      768,
+      1104
+    ],
+    "surfaces": [
+      "long translation controls",
+      "long submitted receipt",
+      "listening feedback",
+      "mixed vocabulary",
+      "independent progress"
+    ],
+    "scope": "Actual Playwright browser screenshots; viewport emulation, not physical devices. Visual inspection conclusions reported separately."
+  },
+  "removedLegacy": [
+    "73-line temporary features/entry.ts preview factory and dead branches",
+    "AudioService.stopExternal and document-wide legacy media sweep",
+    "duplicated textbook speed list",
+    "duplicated homework view unlock predicate and numeric limits"
+  ],
+  "preserved": [
+    "frozen content and pure engine bodies",
+    "original audio hashes",
+    "old learning keys and schema",
+    "old production runtime pending step9",
+    "migration/provenance oracle",
+    "ManagedHanziWriter lifecycle adapter"
+  ],
+  "fixes": [
+    "Explicit single-owner draft collection before native exit protection; avoids Chromium listener registration ordering",
+    "Transient unsaved flag retains quota/conflict/queued-lock drafts without changing durable schema",
+    "Untouched empty translation collection is no-op; deleting real text stays a persisted change"
+  ],
+  "notRun": [
+    "physical iPhone/Safari",
+    "physical Android",
+    "real system Chinese IME and mobile keyboard",
+    "system Chinese voice listening",
+    "new human language review",
+    "75-question human-ear review",
+    "step9 merge/deployment/production-origin smoke"
+  ],
+  "limits": [
+    "Confirming Leave may discard unsaved work",
+    "OS kill/power loss may not dispatch beforeunload",
+    "Visibility/pagehide async flush is best effort, not durable completion guarantee",
+    "Local browser startup restricted; final native engines executed in GitHub CI"
+  ],
+  "productionPublished": false,
+  "merged": false,
+  "documentationCommitPolicy": "This record identifies the exact tested code commit; later documentation-only heads are distinct and their CI must be verified independently."
+}
