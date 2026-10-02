@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T17:58:00Z",
+  "updatedAt": "2026-10-02T18:25:00Z",
   "phases": [
     {
       "phase": 1,
@@ -60,20 +60,30 @@
     {
       "phase": 5,
       "title": "HSK2 lessons 4–9",
-      "status": "in_progress",
-      "content": "Lessons4–6 and7–9 independently reviewed in separate checkpoints; browser checkpoint pending."
+      "status": "complete",
+      "content": "Lessons4–6 and7–9 independently reviewed in separate checkpoints; all270 homework across1–9 exercised in both browsers.",
+      "evidence": {
+        "ciRun": 37044635349,
+        "remoteSource": "2db571058cd40fc7ef535348ff8ac3422e9107d2",
+        "courseTestsPerEngine": 30,
+        "hsk1MediaTestsPerEngine": 6,
+        "homeworkItemsExercised": 300,
+        "reviewedLessonRange": "HSK2 1–10",
+        "visualScreensInspected": 8,
+        "nativeAudioEvents": "Observed native playing and real advancing clock with UI playing in both engines."
+      }
     },
     {
       "phase": 6,
       "title": "HSK2 lessons 10–15",
       "status": "in_progress",
-      "content": "Lesson10 independently reviewed;11–12 authoring underway."
+      "content": "Lessons10–12 independently reviewed;13–15 authoring underway."
     },
     {
       "phase": 7,
       "title": "HSK3 lessons 1–3 pilot",
       "status": "pending",
-      "content": "Lesson1 authored from PDF13–21 and answers1–2; independent review pending."
+      "content": "HSK3lesson1 independently reviewed;lesson2 independent review ongoing;lesson3 authored and pending independent review."
     },
     {
       "phase": 8,
@@ -104,13 +114,13 @@
   "limitations": [],
   "currentWork": "Expand independent content checkpoints to reviewedlessons4–10; author11–15 and HSK3pilot. Full33-lesson acceptance remains open.",
   "ci": {
-    "latestSourceCommit": "eef81e65f128bf8baf9c093d602034953686db28",
+    "latestSourceCommit": "2db571058cd40fc7ef535348ff8ac3422e9107d2",
     "productionUnchanged": true,
     "previousSetupFailures": [
       "37034491695 lockfile",
       "37035113663 shallowhistory"
     ],
-    "latestRun": 37042775656,
-    "latestResult": "Green: both engines19/19 course tests plus6/6 HSK1 native media;333+12 unit tests;8 new visual views inspected acrossfour widths."
+    "latestRun": 37044635349,
+    "latestResult": "Green: both engines30/30 course tests and6/6 HSK1 native media. Exact report zero skipped,unexpected,flaky.300 homework items andfourwidth lesson layout.8 lesson screenshots inspected."
   }
 }

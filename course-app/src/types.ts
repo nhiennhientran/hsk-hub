@@ -11,8 +11,8 @@ export interface Lesson {
  source:{startPdfPage:number;endPdfPage:number;startPrintedPage:number;endPrintedPage:number};
  reviewStatus:{sourceVisual:boolean;vietnamese:boolean;pinyin:boolean;reviewer:string;notes:string[]};
  objectives:(Copy & {id:string;source:Source})[];
- warmup:{id:string;title:Copy;items:Copy[];source:Source}[];
- texts:{id:string;number:number;title:Copy;context:Copy;audioTrack:string;lines:Line[];questions:(Copy & {id:string;options?:string[];answer?:number;source:Source})[];source:Source}[];
+ warmup:{id:string;title:Copy;items:(Copy & {source?:Source})[];source:Source}[];
+ texts:{id:string;number:number;title:Copy;context:Copy;contextSource?:Source;audioTrack:string;lines:Line[];questions:(Copy & {id:string;options?:string[];answer?:number;editorialNote?:Copy & {source:Source};source:Source})[];source:Source}[];
  vocabulary:Word[];
  grammar:{id:string;title:Copy;structure:string;explanation:Copy;examples:(Copy & {py:string;source:Source})[];practice:(Copy & {source:Source})[];source:Source}[];
  sections:{id:string;kind:'practice'|'activity'|'culture'|'tip'|'review'|'other';title:Copy;blocks:(Copy & {kind:string;items?:Copy[];source:Source})[];source:Source}[];

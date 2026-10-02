@@ -9,6 +9,7 @@ const seen=new Set(),questionSignatures=new Set(),issues=[],lessons=[];
 const check=(condition,message)=>{if(!condition)issues.push(message)};
 const text=v=>typeof v==='string'&&v.trim().length>0;
 const copy=v=>v&&text(v.zh)&&text(v.vi);
+const normalizedPrompt=s=>s.normalize('NFC').toLocaleLowerCase('vi').replace(/[^\p{L}\p{N}]/gu,'');
 for(const level of [2,3]){
  const dir=resolve(root,`content/hsk${level}`), files=existsSync(dir)?readdirSync(dir).filter(x=>/^lesson-\d\d.json$/.test(x)):[];
  if(!pilot)check(files.length===counts[level],`HSK${level}: ${files.length}/${counts[level]} lessons`);
@@ -20,8 +21,8 @@ for(const level of [2,3]){
  if(issues.some(x=>x===tag+' missing texts'))continue;
  check(l.texts.length===4,tag+' 4 texts');check(l.grammar.length===grammar[level][l.number-1],tag+' grammar count');
  for(const o of l.objectives){id(o);check(copy(o),tag+' objective copy')}
- for(const w of l.warmup){id(w);check(copy(w.title)&&w.items.length>0,tag+' warmup')}
- for(const t of l.texts){id(t);check(t.audioTrack===`${l.number}-${2*t.number-1}`,tag+' text audio');check(copy(t.context)&&copy(t.title)&&t.lines.length>0,tag+' text');for(const line of t.lines){id(line);check(copy(line)&&text(line.py)&&text(line.speaker),tag+' line')}for(const q of t.questions??[])id(q)}
+ for(const w of l.warmup){id(w);check(copy(w.title)&&w.items.length>0,tag+' warmup');for(const item of w.items){check(copy(item),tag+' warmup item');if(item.source)source(item.source)}}
+ for(const t of l.texts){id(t);if(t.contextSource)source(t.contextSource);check(t.audioTrack===`${l.number}-${2*t.number-1}`,tag+' text audio');check(copy(t.context)&&copy(t.title)&&t.lines.length>0,tag+' text');for(const line of t.lines){id(line);check(copy(line)&&text(line.py)&&text(line.speaker),tag+' line')}for(const q of t.questions??[]){id(q);if(q.editorialNote){check(copy(q.editorialNote)&&q.editorialNote.source?.provenance==='supplemental',tag+' editorial source-note');source(q.editorialNote.source)}}}
  for(const w of l.vocabulary){id(w);check(copy(w)&&text(w.py)&&text(w.pos)&&w.audioTrack===`${l.number}-${2*w.sourceText}`,tag+' word '+w.zh)}
  for(const g of l.grammar){id(g);check(copy(g.title)&&copy(g.explanation)&&text(g.structure)&&g.examples.length>0,tag+' grammar');for(const ex of [...g.examples,...g.practice]){source(ex.source);check(copy(ex),tag+' grammar example')}}
  for(const s of l.sections){id(s);check(copy(s.title)&&s.blocks.length>0,tag+' section');for(const b of s.blocks){source(b.source);check(copy(b),tag+' section block')}}
@@ -30,6 +31,8 @@ for(const level of [2,3]){
  check(l.homework.length===30,tag+' homework count');const distribution={vocabGrammar:10,ordering:5,listening:5,translationChoice:5,writing:5};
  for(const [part,n]of Object.entries(distribution))check(l.homework.filter(q=>q.part===part).length===n,tag+' '+part+' count');
  const stems=new Set();
+ const autoVietnamese=new Set(l.homework.filter(q=>q.part!=='writing').map(q=>normalizedPrompt(q.prompt.vi)));
+ for(const q of l.homework.filter(q=>q.part==='writing'))check(!autoVietnamese.has(normalizedPrompt(q.prompt.vi)),tag+' manual prompt duplicates an auto-graded question');
  for(const q of [...l.homework,...l.listening]){id(q);check(copy(q.prompt)&&text(q.focus)&&q.source.provenance==='supplemental',tag+' question provenance');const signature=JSON.stringify([q.part,q.prompt,q.stem,q.options,q.tokens]);check(!stems.has(signature),tag+' duplicate question');stems.add(signature);check(!questionSignatures.has(signature),tag+' duplicate full question across course corpus');questionSignatures.add(signature);
  if(q.part==='writing'){check(!/\p{Script=Han}/u.test(q.focus),tag+' manual focus clue');for(const name of ['answer','solution','modelAnswer','explanation','tokens','options'])check(!(name in q),tag+' manual answer leak '+name)}
  else if(q.part==='ordering'){check(Array.isArray(q.tokens)&&q.tokens.length>=5&&Array.isArray(q.answer)&&q.answer.length===q.tokens.length&&new Set(q.answer).size===q.tokens.length&&q.answer.every(n=>Number.isInteger(n)&&n>=0&&n<q.tokens.length),tag+' ordering')}else check(Array.isArray(q.options)&&q.options.length>=3&&new Set(q.options).size===q.options.length&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<q.options.length,tag+' choice');
