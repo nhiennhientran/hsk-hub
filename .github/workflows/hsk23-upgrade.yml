@@ -100,6 +100,7 @@ jobs:
           path: |
             course-app/.repro-output/
             course-app/test-results/
+            course-app/test-results-package/
             hsk1-app/.repro-output/
             hsk1-app/test-results/
           include-hidden-files: true
