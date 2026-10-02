@@ -409,3 +409,79 @@ test('production textbook, exact manual receipt, native listening and vocabulary
   } finally { await restoredContext.close(); }
   await audit(testInfo);
 });
+
+test('live restored exercises, distinct manual writing, bilingual controls and unrated card navigation persist in an isolated profile', async ({ page, baseURL }, testInfo) => {
+  const base = deployment(baseURL), audit = networkEvidence(page, base);
+  const { createExerciseCatalogue } = await import('../../src/domain/exercises/catalogue.ts');
+  const legacy = JSON.parse(await readFile(new URL('../../content/legacy-exercises.json', import.meta.url), 'utf8'));
+  const exercises = createExerciseCatalogue(legacy, bank);
+  const choiceEntry = exercises.entryById.get('original:l01-translation-01')!;
+  const choiceTask = exercises.tasks.get(choiceEntry.authorityId)!;
+  if (choiceTask.kind !== 'choice') throw new Error('Expected preserved original translation choice.');
+  await page.goto(new URL('index.html?lesson=1', base).href);
+  await login(page); await ready(page, 'home', 1);
+  await expect(page.locator('#feature-nav [lang="zh"]')).toHaveCount(8);
+  await expect(page.locator('#feature-nav [lang="vi"]')).toHaveCount(8);
+  await expect(page.locator('[data-lesson-section]')).toHaveCount(75);
+
+  await page.goto(new URL('index.html#/exercises?lesson=1&set=original&group=translation&filter=all', base).href);
+  await ready(page, 'exercises', 1);
+  await expect(page.locator('[data-exercise-group="translation"]')).toContainText('自动评分');
+  await expect(page.locator('[data-exercise-group="translation"]')).toContainText('tự chấm');
+  await expect(page.locator('#exercise-feedback')).toBeEmpty();
+  await page.locator(`input[name="exercise-answer"][value="${choiceTask.answer}"]`).check();
+  await page.locator('#exercise-submit').click();
+  await expect(page.locator('#exercise-feedback')).toHaveAttribute('data-result', 'correct');
+  await expect(page.locator('#exercise-save-status')).toHaveAttribute('data-state', 'saved');
+  await page.reload(); await ready(page, 'exercises', 1);
+  await expect(page.locator('#exercise-feedback')).toHaveAttribute('data-result', 'correct');
+
+  await page.goto(new URL('index.html#/exercises?lesson=9&set=pilot&group=translation&filter=all', base).href);
+  await ready(page, 'exercises', 9);
+  const answer = '这是独立浏览器中的测试作答。\nBản kiểm tra triển khai, không phải bài học viên.';
+  await page.locator('#exercise-writing').fill(answer); await page.locator('#exercise-submit').click();
+  await expect(page.locator('#exercise-feedback')).toHaveAttribute('data-result', 'manual');
+  await expect(page.locator('#exercise-feedback')).toContainText('等待教师批阅');
+  await expect(page.locator('#exercise-save-status')).toHaveAttribute('data-state', 'saved');
+  await page.reload(); await ready(page, 'exercises', 9);
+  await expect(page.locator('#exercise-writing')).toHaveValue(answer);
+  await expect(page.locator('#exercise-feedback')).toHaveAttribute('data-result', 'manual');
+  await page.locator('#exercise-sheet-show').click();
+  await expect(page.locator('.exercise-written-answer').first()).toHaveText(answer);
+  await page.locator('#exercise-sheet-close').click();
+  const untouched = await page.evaluate(key => JSON.parse(localStorage.getItem(key)!).data, stateKey);
+  expect(Object.keys(untouched.homework.lessons)).toHaveLength(0);
+  expect(Object.keys(untouched.practice.listening.records)).toHaveLength(0);
+
+  await page.goto(new URL('index.html#/vocabulary?lesson=1', base).href); await ready(page, 'vocabulary', 1);
+  await page.locator('#vocabulary-none').click(); await page.locator('[data-vocabulary-lesson="1"]').check();
+  await page.locator('#vocabulary-filter').selectOption('all'); await page.locator('#vocabulary-direction').selectOption('zh-vi');
+  await page.locator('#vocabulary-shuffle').uncheck(); await page.locator('#vocabulary-start').click();
+  const first = await page.locator('#vocabulary-card').getAttribute('data-sense-id');
+  await expect(page.locator('#vocabulary-play')).toBeDisabled();
+  await page.locator('#vocabulary-next').click();
+  await expect(page.locator('#vocabulary-card')).not.toHaveAttribute('data-sense-id', first!);
+  await page.locator('#vocabulary-prev').click();
+  await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', first!);
+  await page.locator('#vocabulary-skip').click();
+  const skippedTo = await page.locator('#vocabulary-card').getAttribute('data-sense-id');
+  const state = await saved(page, 'vocabulary'); expect(Object.keys(state.practice.cards.schedule)).toHaveLength(0);
+  await page.reload(); await ready(page, 'vocabulary', 1);
+  await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', skippedTo!);
+  await page.locator('#vocabulary-search').fill('bu ke qi'); await page.locator('#vocabulary-start').click();
+  await expect(page.locator('#vocabulary-prompt')).toHaveText('不客气');
+  await expect(page.locator('#vocabulary-answer')).toHaveCount(0);
+  await page.locator('#vocabulary-reveal').click();
+  await expect(page.locator('#vocabulary-examples')).toBeVisible();
+  await saved(page, 'vocabulary');
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(new URL('lesson.html?id=1&sec=vocab', base).href); await ready(page, 'textbook', 1);
+  await expect(page.locator('#vocab-play-all [lang="zh"]')).toBeVisible();
+  await expect(page.locator('#vocab-play-all [lang="vi"]')).toBeVisible();
+  await saved(page, 'reading');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
+  const word = await page.locator('.vocab-front h3').first().boundingBox(); expect(word!.y + word!.height).toBeLessThanOrEqual(844);
+  await testInfo.attach('live-bilingual-mobile.png', { body: await page.screenshot(), contentType: 'image/png' });
+  await audit(testInfo);
+});

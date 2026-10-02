@@ -1,8 +1,8 @@
 name: HSK1 modular live verification
 on:
   push:
-    branches: ['verify/hsk1-modular-live-20261002']
-    paths: ['hsk1-app/docs/release-manifest.json', '.github/workflows/hsk1-modular-live.yml']
+    branches: ['verify/hsk1-modular-live-20261002', 'verify/hsk1-restoration-live-20261002']
+    paths: ['hsk1-app/docs/release-manifest.json', 'hsk1-app/tests/browser/release.spec.ts', '.github/workflows/hsk1-modular-live.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -46,6 +46,7 @@ jobs:
       - run: npm run test:release -- --project=${{ matrix.browser }}
         env:
           HSK_LIVE_URL: https://nhiennhientran.github.io/hsk-hub/new-hsk1/hsk1/
+          HSK_EXPECTED_COMMIT: 4ec260f9b7b08b793cd12e589fd5bcf1c301718f
       - uses: actions/upload-artifact@v4
         if: always()
         with:
