@@ -22,7 +22,9 @@
     "fixtures:generate": "node tools/migration-fixtures.mjs --write",
     "fixtures:check": "node tools/migration-fixtures.mjs --check",
     "assets:check": "node tools/check-course-assets.mjs",
-    "student:check": "node tools/check-student-build.mjs"
+    "student:check": "node tools/check-student-build.mjs",
+    "release:manifest": "node tools/release-manifest.mjs",
+    "test:release": "node tools/run-checkpoint.mjs browser --config=playwright.release.config.ts"
   },
   "devDependencies": {
     "@playwright/test": "1.62.1",

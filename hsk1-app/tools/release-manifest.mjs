@@ -1,0 +1,12 @@
+import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { resolve, relative } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
+const root = fileURLToPath(new URL('../', import.meta.url)), dist = resolve(root, 'dist');
+const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+const walk = dir => readdirSync(dir).flatMap(name => { const path = resolve(dir, name); return statSync(path).isDirectory() ? walk(path) : [path]; });
+const records = walk(dist).filter(path => !path.endsWith('/release-manifest.json')).map(path => { const bytes = readFileSync(path); return { path: relative(dist, path).replaceAll('\\', '/'), bytes: bytes.length, sha256: hash(bytes) }; }).sort((a,b) => a.path < b.path ? -1 : a.path > b.path ? 1 : 0);
+const manifest = { schema: 1, sourceCommit: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(), buildId: hash(JSON.stringify(records)), productionBase: '/hsk-hub/new-hsk1/hsk1/', productionRecoveryCommit: '069f9d956c9a600a91e6b4ce82241ceccc184dce', content: ['textbook.json','stage2-bank.json','stage3-catalog.json','media-references.json','course-index.json'].map(path => ({ path: 'content/'+path, sha256: hash(readFileSync(resolve(root, 'content', path))) })), runtime: { node: process.version }, files: records };
+writeFileSync(resolve(dist, 'release-manifest.json'), JSON.stringify(manifest, null, 2)+'\n');
+console.log(JSON.stringify({sourceCommit:manifest.sourceCommit,buildId:manifest.buildId, files:records.length,bytes:records.reduce((s,r)=>s+r.bytes,0)}));

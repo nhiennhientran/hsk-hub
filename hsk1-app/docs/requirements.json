@@ -3,7 +3,7 @@
   "title": "HSK1 模块化改造需求与验收矩阵",
   "baseline": {
     "sourceCommit": "71b39192133c82f684384f450dda6079d3253440",
-    "workBranch": "work/hsk1-modular-step8-20261002",
+    "workBranch": "work/hsk1-modular-step9-20261002",
     "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
     "independentStep2Commit": "2c6d3b38866dcfbcf101974302609c470f1d2443",
     "independentStep3Commit": "de823050e97cbab64144197f3bf9241321b73c59",
@@ -13,12 +13,13 @@
     "step4StartCommit": "5b4c4fe316356d7795ddd4bb36533562679122ad",
     "step5StartCommit": "4c1569c3e0d830cf22758ba116f876512978c3d0",
     "step7StartCommit": "e06dbe7303a23906f8eea276ff39f06c5ac3c214",
-    "step8StartCommit": "190802508f677a587e5c0ea983429a0bae1357b0"
+    "step8StartCommit": "190802508f677a587e5c0ea983429a0bae1357b0",
+    "step9StartCommit": "55a497efe8096aa037216c55a878261e0fbe2224"
   },
   "scope": {
-    "currentStep": 8,
+    "currentStep": 9,
     "authorizedStepsThisTurn": [
-      8
+      9
     ],
     "runtimeChanged": true,
     "productionPublished": false,
@@ -1192,7 +1193,7 @@
     },
     {
       "id": "R036",
-      "requirement": "访问口令Ranlaoshimeimei和原首页/课堂入口继续可用；沿用会话解锁语义，不增加帐号系统。",
+      "requirement": "访问口令[既有课堂口令，不在文档中记录]和原首页/课堂入口继续可用；沿用会话解锁语义，不增加帐号系统。",
       "targetSteps": [
         2,
         9
@@ -1206,7 +1207,7 @@
       "targetLocations": [
         "src/services/auth/",
         "src/app/router.ts",
-        "public/legacy-route-map.json"
+        "src/app/router.ts"
       ],
       "acceptance": "错误/正确口令、Enter、刷新/会话；原URL入口和返回选级；受测正式域实际验证，不借测试域绕过算通过。",
       "evidenceStatus": "code",
