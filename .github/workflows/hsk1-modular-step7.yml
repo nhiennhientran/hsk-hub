@@ -1,0 +1,64 @@
+name: HSK1 modular step7
+on:
+  push:
+    branches: ['work/hsk1-modular-step7-20261002']
+    paths: ['hsk1-app/**', '.github/workflows/hsk1-modular-step7.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  checkpoint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: hsk1-app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+          cache: npm
+          cache-dependency-path: hsk1-app/package-lock.json
+      - run: npm ci
+      - run: npm run catalog:check
+      - run: npm run fixtures:check
+      - run: npm test
+      - run: npm run build
+      - run: npm run assets:check
+      - name: Use the official Ubuntu archive for browser dependencies
+        timeout-minutes: 1
+        run: |
+          sudo python3 - <<'PY'
+          from pathlib import Path
+          source_dir = Path('/etc/apt/sources.list.d')
+          sources = [Path('/etc/apt/sources.list'), Path('/etc/apt/apt-mirrors.txt'), *source_dir.glob('*.list'), *source_dir.glob('*.sources')]
+          for path in sources:
+              if not path.exists():
+                  continue
+              original = path.read_text()
+              updated = original.replace('http://azure.archive.ubuntu.com/ubuntu', 'https://archive.ubuntu.com/ubuntu')
+              updated = updated.replace('https://azure.archive.ubuntu.com/ubuntu', 'https://archive.ubuntu.com/ubuntu')
+              if updated != original:
+                  path.write_text(updated)
+                  print('Updated Ubuntu archive:', path.name)
+          PY
+      - name: Install browser system dependencies
+        timeout-minutes: 5
+        run: |
+          npx playwright install-deps chromium webkit
+          sudo apt-get install -y fonts-noto-cjk
+      - name: Install fixed Playwright browsers
+        timeout-minutes: 3
+        run: npx playwright install chromium webkit
+      - run: npm run test:smoke
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: step7-browser-evidence
+          path: |
+            hsk1-app/.repro-output/step7-browser.json
+            hsk1-app/test-results/
+          include-hidden-files: true

@@ -1,2 +1,3 @@
-import { createEntryModule } from '../entry.ts';
-export const mount = createEntryModule('review').mount;
+import type { FeatureModule } from '../../app/contracts.ts';
+import { mountVocabulary } from '../vocabulary/view.ts';
+export const mount: FeatureModule['mount'] = (host, context) => mountVocabulary(host, context, 'review');

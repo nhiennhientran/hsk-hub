@@ -1,5 +1,7 @@
 import type { PracticeState } from '../types.ts';
 import type { ListeningCatalog } from '../../services/content/listening.ts';
+import type { VocabularyCatalog } from '../../services/content/vocabulary.ts';
+import type { VocabularyDeck, VocabularyDeckOptions, VocabularyRating, VocabularyRatingResult, VocabularyReview, VocabularySummary } from '../vocabulary/types.ts';
 import type { ListeningPreferences, ListeningResponse, ListeningSession, ListeningSummary } from '../listening/types.ts';
 declare const engine: {
   APP: 'hsk1-stage3'; KEY: string; SCHEMA: 1; MAX_BACKUP_BYTES: number;
@@ -18,5 +20,12 @@ declare const engine: {
   moveListening(state: PracticeState, position: number, now?: number): { position: number; done: boolean };
   nextListening(state: PracticeState, now?: number): { position: number; done: boolean };
   listeningSummary(state: PracticeState, catalog: ListeningCatalog): ListeningSummary;
+  makeDeck(state: PracticeState, catalog: VocabularyCatalog, options?: VocabularyDeckOptions, now?: number, random?: () => number): VocabularyDeck;
+  startReview(state: PracticeState, catalog: VocabularyCatalog, options?: VocabularyDeckOptions, now?: number, random?: () => number): VocabularyReview;
+  revealCard(state: PracticeState, id: string, now?: number): VocabularyReview;
+  rateCard(state: PracticeState, catalog: VocabularyCatalog, rating: VocabularyRating, now?: number): VocabularyRatingResult;
+  moveCard(state: PracticeState, position: number, now?: number): { position: number; done: boolean };
+  nextCard(state: PracticeState, now?: number): { position: number; done: boolean };
+  cardSummary(state: PracticeState, catalog: VocabularyCatalog, now?: number): VocabularySummary;
 };
 export default engine;

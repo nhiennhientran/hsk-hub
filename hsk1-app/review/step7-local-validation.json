@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "step": 7,
+  "createdAt": "2026-10-02T01:56:30.514914+00:00",
+  "branch": "work/hsk1-modular-step7-20261002",
+  "baseCommit": "e06dbe7303a23906f8eea276ff39f06c5ac3c214",
+  "contentBaseline": "71b39192133c82f684384f450dda6079d3253440",
+  "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
+  "checks": {
+    "unit": {
+      "passed": 186,
+      "failed": 0,
+      "skipped": 0,
+      "baseline": 152,
+      "newVocabulary": 25,
+      "newProgress": 9
+    },
+    "typecheck": "passed",
+    "build": "passed",
+    "catalog": "passed",
+    "migrationFixtures": 12,
+    "assets": "passed",
+    "localBrowser": {
+      "attempted": 18,
+      "enteredPage": 0,
+      "passed": 0,
+      "assertionFailures": 0,
+      "launchBlocked": 18,
+      "reason": "Chromium socket() Operation not permitted, including approved elevated retry. Fixed browser download also returned invalid archive.",
+      "binary": "System Chromium154.0.8037.57"
+    },
+    "ci": {
+      "workflow": "HSK1 modular step7",
+      "projects": [
+        "chromium",
+        "webkit"
+      ],
+      "casesPerProject": 63,
+      "retries": 0,
+      "verification": "Final exact-head run/job results and screenshots verified in completion reply; not inherited from step6."
+    },
+    "scope": {
+      "records": 344,
+      "forms": 319,
+      "wordAudio": 330,
+      "explicitNoAudio": 14,
+      "homeworkSubmissions": 225,
+      "homeworkObjective": 150,
+      "manualTranslation": 75,
+      "independentListening": 75
+    },
+    "unchanged": [
+      "original content",
+      "legacy runtime",
+      "original MP3",
+      "pure engine bodies",
+      "dependencies and lock",
+      "storage schema and keys"
+    ],
+    "limitations": [
+      "No human word/question listening audit",
+      "No new Chinese/Vietnamese final language audit",
+      "No physical mobile or OS IME certification",
+      "No production deployment"
+    ],
+    "reviewFix": "Display-only deadline/visibility refresh prevents an idle due-filter view remaining empty after cards become due."
+  }
+}

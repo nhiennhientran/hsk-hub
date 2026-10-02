@@ -3,7 +3,7 @@
   "title": "HSK1 模块化改造需求与验收矩阵",
   "baseline": {
     "sourceCommit": "71b39192133c82f684384f450dda6079d3253440",
-    "workBranch": "work/hsk1-modular-step5-20261002",
+    "workBranch": "work/hsk1-modular-step7-20261002",
     "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
     "independentStep2Commit": "2c6d3b38866dcfbcf101974302609c470f1d2443",
     "independentStep3Commit": "de823050e97cbab64144197f3bf9241321b73c59",
@@ -11,12 +11,13 @@
     "step2StartCommit": "7f2e012e4eeecec5ccc868ddef96b2da28c3ab21",
     "step3StartCommit": "1ad97b223c89a7c9183f7f09763d3d9c5139a69e",
     "step4StartCommit": "5b4c4fe316356d7795ddd4bb36533562679122ad",
-    "step5StartCommit": "4c1569c3e0d830cf22758ba116f876512978c3d0"
+    "step5StartCommit": "4c1569c3e0d830cf22758ba116f876512978c3d0",
+    "step7StartCommit": "e06dbe7303a23906f8eea276ff39f06c5ac3c214"
   },
   "scope": {
-    "currentStep": 5,
+    "currentStep": 7,
     "authorizedStepsThisTurn": [
-      5
+      7
     ],
     "runtimeChanged": true,
     "productionPublished": false,
@@ -557,7 +558,11 @@
           "report": "docs/step4-acceptance.md",
           "limits": "每课15作业/10自动，课程225/150/75人工，实际作业页与公共摘要通过；独立听力和完整进度视图留第6/7步。"
         }
-      ]
+      ],
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R018",
@@ -599,7 +604,11 @@
           "report": "docs/step6-acceptance.md",
           "limits": "听力75题首次/最近及重做独立保留，作业/阅读/词卡状态隔离；完整全领域统计待第7步。"
         }
-      ]
+      ],
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R019",
@@ -808,7 +817,11 @@
           "report": "docs/step6-acceptance.md",
           "limits": "代表原MP3边界、404重试、晚响应、切题/跨模块取消，复用唯一Audio；全75逐题完整播放和实体环境未新增。"
         }
-      ]
+      ],
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R026",
@@ -854,7 +867,11 @@
       ],
       "acceptance": "1课、7+10等非连续课、全15、空选择；切模块/刷新恢复选择；计数与真实义项一致。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "step7_automated_verification_pending",
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R028",
@@ -873,7 +890,11 @@
       ],
       "acceptance": "344/319与唯一senseId；多义词抽查和跨课deck去重契约；有效来源信息/指纹不丢失；不能把342教材行当344义卡。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "step7_automated_verification_pending",
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R029",
@@ -891,7 +912,11 @@
       ],
       "acceptance": "各筛选用非空自评种子核对；两方向先隐藏答案、揭示/翻页；空集给可操作提示。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "step7_automated_verification_pending",
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R030",
@@ -910,7 +935,7 @@
       ],
       "acceptance": "固定时钟核对再次/困难/熟悉、重复自评、到期/早复习；重进会话和备份恢复；不扩成复杂自适应算法。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "step7_automated_verification_pending",
       "stepEvidence": [
         {
           "step": 3,
@@ -918,7 +943,11 @@
           "report": "docs/step3-acceptance.md",
           "limits": "非空三档schedule/部分review及不同senseId恢复，纯规则正文保留；复习UI与早复习完整流程待第7步。"
         }
-      ]
+      ],
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R031",
@@ -940,7 +969,11 @@
       ],
       "acceptance": "330+14=344；每音引用存在/哈希/边界；14无音卡UI逐项检查且无虚构media；人工词音语义检查另记。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "step7_automated_verification_pending",
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R032",
@@ -962,7 +995,11 @@
       ],
       "acceptance": "分类/extension/sourceSenseIds字段对照；来源页码与课次可查；界面计数解释；新语言审查不写成完成。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "step7_automated_verification_pending",
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R033",
@@ -984,7 +1021,11 @@
       ],
       "acceptance": "非空跨领域种子核对统计及继续位置；阅读标记不冒充掌握/作业完成；切换和后退状态正确。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "step7_automated_verification_pending",
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R034",
@@ -1033,7 +1074,11 @@
           "report": "docs/step6-acceptance.md",
           "limits": "听力公共容器自动保存/刷新恢复与已有备份工具导出；没有云同步或新增schema。"
         }
-      ]
+      ],
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R035",
@@ -1082,7 +1127,11 @@
           "report": "docs/step6-acceptance.md",
           "limits": "听力容量失败内存提交可导出、可重试；原坏备份/冲突保护回归保留，实体配额压力待后续。"
         }
-      ]
+      ],
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R036",
@@ -1153,7 +1202,11 @@
           "report": "docs/step2-acceptance.md",
           "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
         }
-      ]
+      ],
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R038",
@@ -1211,7 +1264,11 @@
           "report": "docs/step2-acceptance.md",
           "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
         }
-      ]
+      ],
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R040",
@@ -1303,7 +1360,11 @@
           "report": "docs/step6-acceptance.md",
           "limits": "听力初始化禁用/ready、慢内容/失败重试、旧加载取消，切题/离页取消所属播放；旧整合WebKit历史根因未标已解决。"
         }
-      ]
+      ],
+      "step7Evidence": {
+        "report": "docs/step7-acceptance.md",
+        "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
+      }
     },
     {
       "id": "R042",

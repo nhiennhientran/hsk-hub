@@ -124,3 +124,9 @@ stage3的 `preferences` 仅支持 `module,lessons,listeningMode,vocabularyFilter
 `createListeningController`只编辑practice及听力继续导航，原practice格式和schema不变。显式开始新轮次才替换queue/responses，保留records及词卡schedule/review；选课/筛选变化只改变偏好。首次成绩不被重做覆盖，最近错题筛选按latest.correct=false。选项顺序和原索引、未提交选择、听次数、逐题提交及position均可刷新恢复；相同动作不重复保存。
 
 视图在原音真实playing成功后以当前sessionId/questionId/playbackId记一次听次数，过期题/轮次被拒绝，同标识重复回调不写；暂停恢复沿同标识，首次加载中暂停后的实际初次播放仍计一次。播放请求、DOM、AbortController和计数去重集合不持久化。切页flush；保存失败保留内存稿并提供重试/现有备份工具，不另建键。原引擎FNV题意身份和content的编辑SHA分别核验，不能互相替代。
+
+## 第7步词卡与统计调用
+
+`createVocabularyController`仅更新practice.preferences/cards和词卡继续导航。`review.lessons/filter/direction/senseIds/position`为已开始轮次的固定范围与队列；界面改选课或筛选只影响下一轮。恢复当前卡用已保存范围、所有义项和保存位置，不用当前筛选重新生成队列；自评后从due/unfamiliar消失不会丢失正在学习的卡。
+
+`again/hard/good`、提前复习、重复自评拒绝和导入重算均沿原引擎。教材星标与senseId日程独立。拼音开关为视图偏好，每次进入默认隐藏，不写入不支持的旧schema字段；选课、方向、筛选、打乱、队列、揭示、自评与位置仍完整保存。进度只读首次/最近与各领域分母，打开统计不重置轮次、不覆盖学习继续位置。

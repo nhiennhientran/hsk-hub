@@ -86,3 +86,9 @@ Hanzi Writer固定3.7.3原正文，ESM内不建立旧学生全局。因无公开
 Vite build和TypeScript检查分别执行；开发可运行不代表类型通过或生产base正确。第1步只证明工程骨架与数据抽取可检查。功能步骤完成后才把学生dist接入原入口；到第8步去除学生运行中的旧双app、动态脚本注入、全局函数覆盖和重复样式/播放器。第9步冻结受测commit与dist哈希，发布同一构建、实际网址冒烟、保留回滚点。
 
 自动数据/规则、真实浏览器媒体、语言审校、人耳听辨和实体设备是不同证据。旧阶段证据可追溯复用，但新UI/服务必须按需求矩阵验收，不能自动继承“全部通过”。
+
+## 第7步混课词汇、复习及进度
+
+`services/content/vocabulary.ts`复用冻结目录并核对344义项/319词形、330原词音/14明确无音项及引用指纹；不新增音源。`domain/vocabulary/controller.ts`调用既有practice纯规则；`features/vocabulary/view.ts`由vocabulary/review两个入口复用，只有显式开始才替换队列。当前卡始终从已保存review.lessons/senseIds/direction恢复，偏好变化与筛选成员变化不会改写在学队列。拼音是当前视图开关，不扩展旧schema。
+
+`services/learning/progress.ts`只读投影阅读、作业首次/最近、翻译草稿/已交和独立听力、词卡自评/到期；首页及进度复用同一会话与展示组件，继续链接以真实已保存卡/题位置为准。没有新增持久化键、重复评分或学习算法。

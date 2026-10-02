@@ -1,6 +1,6 @@
 # HSK 1 重构工程
 
-第1—3步完成需求/数据冻结、统一外壳与公共存储；第4步开放全部15课225作业、选择/排序评分、自由翻译提交、首次/最近收据及输入自动保存。第5步开放15课教材五节、原练习与公共音频/本地笔顺、阅读星标及继续位置。第6步接入75道独立听力、逐题反馈、首次/最近成绩与刷新继续。混课词卡/复习/完整进度留第7步，生产入口未发布。详情见`docs/step6-acceptance.md`。
+第1—3步完成需求/数据冻结、统一外壳与公共存储；第4步开放全部15课225作业、选择/排序评分、自由翻译提交、首次/最近收据及输入自动保存。第5步开放15课教材五节、原练习与公共音频/本地笔顺、阅读星标及继续位置。第6步接入75道独立听力、逐题反馈、首次/最近成绩与刷新继续。第7步接入344义项混课词卡、双向回忆、简单复习日程和分领域进度。生产入口未发布。详情见`docs/step7-acceptance.md`。
 
 ## 运行
 
@@ -27,7 +27,7 @@ npm run test:smoke
 npm run test:repro
 ```
 
-`test:smoke` 在Chromium/WebKit各运行50个场景（10个外壳、6个数据/故障、9个作业、9个教材、6个教材真实媒体、10个独立听力场景），结果写入 `.repro-output/step6-browser.json`；使用 `-- --project=chromium` 可定向运行。`npm test` 和 `test:smoke` 从原公开静态gate注入兼容验收口令，日志不输出口令；也支持环境变量 `HSK_TEST_PASSWORD` 覆盖，不省略正确口令检查。
+`test:smoke` 在Chromium/WebKit各运行63个场景（原50个回归加13个词汇/复习/进度专项），结果写入 `.repro-output/step7-browser.json`；使用 `-- --project=chromium` 可定向运行。`npm test` 和 `test:smoke` 从原公开静态gate注入兼容验收口令，日志不输出口令；也支持环境变量 `HSK_TEST_PASSWORD` 覆盖，不省略正确口令检查。
 
 `test:repro` 仍针对未修改的旧页面，控制延迟 `stage3/app.js`，确认原初始化窗口；不是新外壳回归。默认输出 `.repro-output/init-race.json`，可加 `-- --browser=webkit`。兼容Chromium可通过 `HSK_BROWSER_PATH` 指定，仅应用于Chromium项目。
 
@@ -37,7 +37,7 @@ npm run test:repro
 
 新记录用`ran_hsk1_modular_v1`，导入/迁移必须预览并确认；当前记录及一份恢复快照同一次写入。原11个旧学习键保持不变，会话gate不进入备份。相同origin的新应用tab通过Web Locks协调写入；不支持安全锁时仅查看/下载，不用不安全读写冒充原子更新。
 
-应用会话`src/services/learning/session.ts`持有共享存储，300ms防抖保存，切页先收集最终草稿再flush；保存失败原文仍可跨模块下载备份，视图退出不关闭学习会话。作业控制器`features/homework/controller.ts`调用纯规则，收据只取已提交快照。公共服务为`src/services/storage/index.ts`；格式适配与校验为`compatibility.ts`，純规则位于`src/domain/homework`和`practice`。已保存、未保存、冲突、损坏状态分开。失败时可下载当前内存稿，导入失败可另下载预览候选；损坏主记录提供原字符串下载。服务API、容量和兼容限制见`docs/storage-contract.md`，本步证据见`docs/step6-acceptance.md`。
+应用会话`src/services/learning/session.ts`持有共享存储，300ms防抖保存，切页先收集最终草稿再flush；保存失败原文仍可跨模块下载备份，视图退出不关闭学习会话。作业控制器`features/homework/controller.ts`调用纯规则，收据只取已提交快照。公共服务为`src/services/storage/index.ts`；格式适配与校验为`compatibility.ts`，純规则位于`src/domain/homework`和`practice`。已保存、未保存、冲突、损坏状态分开。失败时可下载当前内存稿，导入失败可另下载预览候选；损坏主记录提供原字符串下载。服务API、容量和兼容限制见`docs/storage-contract.md`，本步证据见`docs/step7-acceptance.md`。
 
 ## 接续依据
 

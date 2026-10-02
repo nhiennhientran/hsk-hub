@@ -1,0 +1,14 @@
+.vocabulary-panel { padding: 14px; border: 1px solid #d8e3d9; border-radius: 10px; margin: 16px 0; background: #f8faf7; }
+.vocabulary-lessons { display: grid; grid-template-columns: repeat(auto-fit,minmax(110px,1fr)); gap: 8px; }
+.vocabulary-lessons label, .vocabulary-options label { display: flex; align-items: center; gap: 8px; min-height: 44px; }
+.vocabulary input[type="checkbox"] { width: 20px; height: 20px; flex-shrink: 0; }
+.vocabulary-actions, .vocabulary-options { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 12px 0; }
+.vocabulary-options label { flex-wrap: wrap; }
+.vocabulary select { max-width: 100%; }
+.vocabulary-card { border: 2px solid #8ca596; border-radius: 14px; padding: clamp(16px,4vw,32px); margin: 18px 0; overflow-wrap: anywhere; }
+#vocabulary-prompt, .vocabulary-target { font-size: clamp(1.5rem,5vw,2.4rem); font-weight: 650; line-height: 1.5; margin: 10px 0; }
+#vocabulary-answer { margin: 16px 0; padding: 12px; background: #eef5ec; border-radius: 10px; }
+#vocabulary-sources { padding-left: 20px; }
+#vocabulary-message { color: #a33225; }
+.vocabulary button:disabled { cursor: default; }
+@media (max-width: 420px) { .vocabulary-panel { padding: 10px; } .vocabulary-actions > button { flex: 1 1 auto; } }
