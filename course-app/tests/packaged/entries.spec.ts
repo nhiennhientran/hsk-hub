@@ -10,6 +10,9 @@ for(const level of [2,3])test(`HSK${level} final lesson plays its original text 
  await last.locator('.audio-control button').last().click();await expect(page.locator('.player-bar')).toHaveAttribute('data-state','playing');await expect(page.locator('.player-bar>span')).toContainText(`${number}-8`);await expect(page.locator('.player-bar>span')).not.toContainText('0.0s');
 });
 async function legacyGate(page:any){
+ // Legacy pages may restore the already-authorized session after their dynamic loader finishes.
+ if(new URL(page.url()).pathname.endsWith('/hsk2.html'))await expect(page.locator('#lessonGrid .lesson-card')).toHaveCount(15);
+ else await page.waitForFunction(()=>Boolean((window as any).__HSK_SESSION_AUTH_API));
  for(let stage=0;stage<2&&await page.locator('#pwOverlay').isVisible();stage++){
   const title=await page.locator('#pwOverlay h2').textContent();await page.locator('#pwInput').fill(process.env.HSK_TEST_PASSWORD!);await page.locator('#pwBtn').click();
   await page.waitForFunction(previous=>{const gate=document.querySelector<HTMLElement>('#pwOverlay');return gate?.style.display==='none'||gate?.querySelector('h2')?.textContent!==previous||document.querySelector('#pwError')?.classList.contains('show')},title);
