@@ -2,6 +2,36 @@ const fs=require('fs'),path=require('path'),vm=require('vm'),crypto=require('cry
 const root=__dirname;
 function assert(c,m){if(!c)throw new Error(m)}
 function read(n){return fs.readFileSync(path.join(root,n),'utf8')}
+// Modular release: verify the actual frozen payload instead of classic-script ordering.
+// Either marker opts into strict validation; a partial or corrupt release must fail.
+if(fs.existsSync(path.join(root,'release-manifest.json')) || /<script\s+type="module"/.test(read('index.html'))){
+  const manifest=JSON.parse(read('release-manifest.json'));
+  assert(manifest.schema===1 && /^[a-f0-9]{40}$/.test(manifest.sourceCommit),'Invalid release identity');
+  assert(manifest.productionBase==='/hsk-hub/new-hsk1/hsk1/','Wrong production base');
+  assert(manifest.productionRecoveryCommit==='069f9d956c9a600a91e6b4ce82241ceccc184dce','Wrong production recovery point');
+  assert(Array.isArray(manifest.files)&&manifest.files.length>360,'Incomplete release inventory');
+  const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
+  assert(hash(JSON.stringify(manifest.files))===manifest.buildId,'Build identity mismatch');
+  const paths=new Set();
+  for(const file of manifest.files){
+    assert(typeof file.path==='string'&&!path.isAbsolute(file.path)&&!file.path.includes('\\')&&!file.path.includes('\0')&&file.path.split('/').every(part=>part&&part!=='.'&&part!=='..')&&!paths.has(file.path),'Unsafe or duplicate release path');
+    paths.add(file.path);
+    const bytes=fs.readFileSync(path.join(root,file.path));
+    assert(bytes.length===file.bytes && hash(bytes)===file.sha256,'Release payload mismatch: '+file.path);
+  }
+  for(const entry of ['index.html','lesson.html','learning.html','lesson9-pilot.html','help.html'])assert(paths.has(entry),'Required release entry missing: '+entry);
+  assert(!manifest.files.some(file=>file.path.endsWith('.map')),'Public source maps are forbidden');
+  for(const file of manifest.files.filter(file=>/\.(?:js|css)$/.test(file.path)))assert(!/sourceMappingURL=|PASSWORD_SIGNATURE/.test(read(file.path)),'Public source-map or reversible fallback reference');
+  const html=read('index.html');
+  assert(read('lesson.html')===html&&read('learning.html')===html,'Entry alias drift');
+  assert((html.match(/<script\b/g)||[]).length===1&&/<script type="module"/.test(html),'Expected one modular boot');
+  for(const match of html.matchAll(/(?:src|href)="(\.\/[^"#?]+)"/g))assert(paths.has(match[1].slice(2)),'Untracked entry asset');
+  assert(manifest.files.filter(f=>/^course-assets\/audio\/.*\.mp3$/.test(f.path)).length===93,'Original audio inventory mismatch');
+  assert(manifest.files.filter(f=>/^course-assets\/hanzi\/.*\.json$/.test(f.path)).length===267,'Hanzi inventory mismatch');
+  for(const file of manifest.files.filter(f=>/\.(?:js|css|html|map)$/.test(f.path)))assert(!/learning-integrated\.js|createEntryModule|stopExternal|window\.(?:HSK1Stage2|HSK1Stage3|HSKLearning)/.test(read(file.path)),'Legacy runtime in modular release: '+file.path);
+  console.log(JSON.stringify({ok:true,architecture:'modular',sourceCommit:manifest.sourceCommit,buildId:manifest.buildId,verifiedFiles:manifest.files.length,originalTracks:93,hanzi:267}));
+  process.exit(0);
+}
 const core=read('app-core.js'),lesson=read('lesson.html'),player=read('textbook-segment-audio.js'),guard=read('textbook-audio-guard.js'),tts=read('tts-only.js'),segments=read('textbook-audio-segments.js'),parity=read('../assets/hsk2-parity.js');
 
 assert(!core.includes('speak(w.zh)'),'app-core still routes vocab to TTS');
@@ -46,7 +76,9 @@ for(const name of required){const p=lesson.indexOf(name);assert(p>prev,`bad/miss
 assert(!lesson.includes('audio-fix.js'),'lesson still loads legacy audio-fix');
 assert(!lesson.includes('_audio-work'),'lesson references underscore runtime assets');
 assert(lesson.includes('../assets/hsk2-parity.js?v=20260818-5'),'parity cache-bust missing');
-assert(lesson.includes('textbook-segment-audio.js?v=20260818-5'),'player cache-bust missing');
+assert(lesson.includes('textbook-segment-audio.js?v=20261001-i2'),'current player cache-bust missing');
+assert(player.includes('const remaining=end-audio.currentTime'),'native-clock range stop missing');
+assert(!player.includes('audio.currentTime=end'),'range completion must not be manufactured by seeking to end');
 
 const sandbox={window:{},console};sandbox.window.window=sandbox.window;
 vm.runInNewContext(segments,sandbox,{filename:'textbook-audio-segments.js'});
