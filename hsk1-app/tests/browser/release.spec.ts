@@ -343,11 +343,12 @@ test('production textbook, exact manual receipt, native listening and vocabulary
   const sense = catalog.vocabulary.find(row => row.lesson === 10)!;
   await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', sense.senseId);
   if (!sense.audio) throw new Error('Release representative vocabulary must have original audio.');
+  await expect(page.locator('#vocabulary-play')).toBeDisabled();
+  await page.locator('#vocabulary-reveal').click();
+  await expect(page.locator('#vocabulary-answer')).toBeVisible();
   await page.locator('#vocabulary-play').click();
   await playing(page, base, '#vocabulary-audio-status', sense.audio.track, sense.audio.start, sense.audio.end);
   await page.locator('#vocabulary-pause').click();
-  await page.locator('#vocabulary-reveal').click();
-  await expect(page.locator('#vocabulary-answer')).toBeVisible();
   await page.locator('#vocabulary-good').click();
   const vocabulary = (await saved(page, 'vocabulary')).practice.cards;
   expect(vocabulary.schedule[sense.senseId]).toMatchObject({ lastRating: 'good', reviewCount: 1 });
