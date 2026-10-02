@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "step": 6,
+  "createdAt": "2026-10-02T01:15:39.795618+00:00",
+  "branch": "work/hsk1-modular-step6-20261002",
+  "baseCommit": "65baaf035d739fd97e2c8f6cdd6f64e84fd09f6c",
+  "contentBaseline": "71b39192133c82f684384f450dda6079d3253440",
+  "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
+  "environment": {
+    "node": "24.19.0",
+    "npm": "11.9.0",
+    "localChromium": "153.0.8010.0",
+    "localCjkFonts": false
+  },
+  "checks": {
+    "unit": {
+      "passed": 152,
+      "failed": 0,
+      "skipped": 0,
+      "baseline": 131,
+      "newContent": 10,
+      "newController": 11,
+      "sourceReport": ".repro-output/step6-unit.log"
+    },
+    "browserInitialLocal": {
+      "project": "chromium",
+      "stats": {
+        "startTime": "2026-10-02T01:09:20.014Z",
+        "duration": 172188.676,
+        "expected": 48,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "sourceReport": ".repro-output/step6-chromium-initial-full.json",
+      "failureCause": "Two synthetic test seeds used reading.modules[1] instead of required reading.modules[hsk1:1]. Product validation correctly refused corrupt seed before fault injection.",
+      "passingScope": "All previous40 and new8, including all75actualquestionUI/native1/10/15/rates/initialpause/mediafailure/screens."
+    },
+    "browserAffectedLocal": {
+      "project": "chromium",
+      "stats": {
+        "startTime": "2026-10-02T01:13:01.704Z",
+        "duration": 6702.233,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cases": [
+        "refresh with valid synthetic data",
+        "quota failure with valid synthetic data",
+        "native held MP3 paused before first genuine playing and resume counts once"
+      ],
+      "sourceReport": ".repro-output/step6-chromium-affected.json",
+      "runtimeChangedAfterInitial": false,
+      "assertionCorrection": "Removed incidental requirement that native decoder preloads metadata while paused; kept real playing/clock/count1 and ordinaryresume1/replay2."
+    },
+    "ci": {
+      "projects": [
+        "chromium",
+        "webkit"
+      ],
+      "casesPerProject": 50,
+      "casesTotal": 100,
+      "retries": 0,
+      "globalTimeoutMs": 20000,
+      "assertionTimeoutMs": 5000,
+      "full75CaseDeclaredTimeoutMs": 90000,
+      "verification": "Matching-head run/job logs and artifact report are checked in completion reply, not inherited.",
+      "infraFix": "Include actual /etc/apt/apt-mirrors.txt in existing exact Azure-to-official archive replacement."
+    },
+    "build": "passed",
+    "catalog": "passed",
+    "fixtures": 12,
+    "listening": {
+      "questions": 75,
+      "lessons": 15,
+      "perLesson": 5,
+      "word": 30,
+      "sentence": 30,
+      "dialogue": 15,
+      "originalTracksReferenced": 68,
+      "optionsPerQuestion": 4,
+      "originalIndexGradeCases": 300,
+      "firstWrongThenLatestCorrectCases": 75,
+      "originalEngineBodyUnchanged": true,
+      "defaultRate": 1,
+      "rates": [
+        0.65,
+        0.75,
+        1,
+        1.25,
+        1.5
+      ],
+      "filterModes": [
+        "all",
+        "wrong"
+      ],
+      "newPersistentModeOrKey": false
+    },
+    "scopeIsolation": "Only practice listening/preference fields and navigation; homework, reading, cards preserved. Existing public session/store/audio reused.",
+    "firstPlaybackPauseFix": "Keep request identity/count flag; first actual playing after initial loading pause counts once; ordinary resume does not increment.",
+    "dependencyVersionsAndLockUnchanged": true,
+    "frozenContentAndLegacyRuntimeUnchanged": true,
+    "sharedAudioServiceUnchanged": true,
+    "limitations": [
+      "No new75question human-ear review",
+      "No new Chinese/Vietnamese language finalreview",
+      "Native media evidence uses representative1/10/15, not all75fullplayback",
+      "Viewport layouts are not physical iOS/Android or touch/IME certification",
+      "No actual Chinese systemvoice audition",
+      "No production deployment"
+    ]
+  },
+  "courseAssets": {
+    "schemaVersion": 1,
+    "baseline": "71b39192133c82f684384f450dda6079d3253440",
+    "output": "dist/course-assets",
+    "audio": {
+      "files": 93,
+      "bytes": 27491142,
+      "manifestHashesVerified": 93,
+      "originalFilesUnchanged": 93
+    },
+    "hanzi": {
+      "files": 267,
+      "bytes": 567732,
+      "originalLocalFiles": 250,
+      "supplements": 17,
+      "strokeDataValidated": 267,
+      "sourceCopiesEqual": 267,
+      "supplementHashesVerified": 17
+    },
+    "licenses": [
+      {
+        "path": "HANZI-DATA-LICENSE.txt",
+        "bytes": 6900,
+        "sha256": "5590533436c70f10f2f524ee61456238c290175c6662fbe1c700b5f038a6d328"
+      },
+      {
+        "path": "HANZI-WRITER-LICENSE.txt",
+        "bytes": 1079,
+        "sha256": "7735d83cdf892c8db41c27103b42c89b4b63149770c1e08ae13cbbebb81da637"
+      }
+    ],
+    "totalBytes": 28066853,
+    "assetManifestSha256": "5311f266eb62db26974f673ac03a257991538ddfb0af6cb03bbc920bb20df9d4"
+  },
+  "sourceSha256": {
+    ".github/workflows/hsk1-modular-step6.yml": "88fc3de175aef02f3764a4c59b6d122b2e03f0a3806c83585c51592849df0294",
+    "hsk1-app/README.md": "72112d8674f8cccde8c2ee5607ab0645d26e214df94542cd05befa0ad7b1beca",
+    "hsk1-app/docs/architecture.md": "6c9f6d67458c29f0f9159ddb25be5c71109e4493f5fad3ab97eab3df7ef2893b",
+    "hsk1-app/docs/known-issues.md": "3e736565ddbb373d55266c6df9ed9d9beb25cf4329a78707dec2b3374277af30",
+    "hsk1-app/docs/progress.md": "f77c9b1a3ad6f5d6771a76ef1fd2df8595e45aab40313578a0aa1a9d394a151d",
+    "hsk1-app/docs/requirements.json": "dd0c7aed490b350029bcf68f2f4d4bb17754bd6b46e196a6fbf7a3c13c30da5a",
+    "hsk1-app/docs/requirements.md": "6fb28e19f3b42f7154e201824e0f9cfe94219b5af02843e6e67dc9f8e01dffa5",
+    "hsk1-app/docs/step6-acceptance.md": "2daf6d6ffed3236d9888dafc139bb845bf4fe270e312dc6aad5cf6a30d6c8529",
+    "hsk1-app/docs/storage-contract.md": "95dc5f11359025fd9e2ad995d8789e6e16e8960c3a88c9e817a339c093e96abf",
+    "hsk1-app/playwright.config.ts": "b80ac3bc24a5bfe6f92f579e444e4086ca620f0c817b0655b98da0e190ac64e5",
+    "hsk1-app/src/domain/listening/controller.ts": "340ca4f74e3d1250fadb4466d6fd1a048da021ad6cb7a14ca17b32811f78e49b",
+    "hsk1-app/src/domain/listening/types.ts": "33f85754d8fac118e17f5a75a8858e2fa2102ff33e2f4f9d00c31753d3f278b9",
+    "hsk1-app/src/domain/practice/engine.d.ts": "615d945a368844a924114f25f758586d36f1669a938749a40da4cbdbdd47f5bf",
+    "hsk1-app/src/features/listening/index.ts": "cca869dd128ef7cc400a6846cc60932a43c393b66919e0b516f5a8699cf9ae41",
+    "hsk1-app/src/features/listening/listening.css": "61e264020b0d0867f9f9ae9c0a5f5f5800a576127d5995e724f7849c121617aa",
+    "hsk1-app/src/services/content/listening.ts": "46d272327aa56115e3b97c4d952b842b247c6060bf55ddabe54cc2265257351b",
+    "hsk1-app/tests/browser/listening.spec.ts": "b0c2469227ccf8501d77dec9d3f1e2f01474fe143eb94836ea774402c9c98a5d",
+    "hsk1-app/tests/browser/navigation.spec.ts": "e463d93a151816237c5701e1824012a391171fce0823a05216098281d5c56644",
+    "hsk1-app/tests/browser/scaffold.spec.ts": "e656b9a8595e00f24f8539cd39f54e9d993229a7d2232baa24379531032da94b",
+    "hsk1-app/tests/listening-content.test.mjs": "83bba13e70227bd9a964418a4cef17845903b03a5e716724b5270d4c30800818",
+    "hsk1-app/tests/listening.test.mjs": "f60df4c32c10704a6ad0d859ba0e30050c8746ba6348c4dcf96f83492a1f1851"
+  }
+}

@@ -79,7 +79,7 @@ test('pending controls ignore early clicks and rapid switching aborts old fetche
     const originalFetch = window.fetch.bind(window);
     window.fetch = (input, init) => {
       const url = input instanceof Request ? input.url : String(input);
-      if (!url.includes('course-index') || !url.includes('.json')) return originalFetch(input, init);
+      if ((!url.includes('course-index') && !url.includes('media-references')) || !url.includes('.json')) return originalFetch(input, init);
       const signal = init?.signal ?? (input instanceof Request ? input.signal : undefined);
       const observation = { signalPresent: Boolean(signal), aborted: Boolean(signal?.aborted), settled: false };
       state.__metadataFetches.push(observation);
@@ -90,7 +90,8 @@ test('pending controls ignore early clicks and rapid switching aborts old fetche
       );
     };
   });
-  await page.route(metadataPattern, route => { pending.push(route); });
+  // Listening loads its actual media map, while home/homework use the course index.
+  await page.route(/(?:course-index|media-references)[^/]*\.json(?:\?.*)?$/, route => { pending.push(route); });
   await page.goto('/#/home?lesson=10', { waitUntil: 'domcontentloaded' });
   await expect.poll(() => pending.length).toBe(1);
   const host = page.locator('#module-host');
@@ -105,6 +106,9 @@ test('pending controls ignore early clicks and rapid switching aborts old fetche
   await page.locator('#feature-nav a[data-feature="listening"]').click();
   await expect.poll(() => pending.length).toBe(2);
   await expect(host).toHaveAttribute('data-feature', 'listening');
+  await expect(host.locator('#listening-start')).toBeDisabled();
+  await host.locator('#listening-start').evaluate(button => (button as HTMLButtonElement).click());
+  await expect(host.locator('#listening-question')).toHaveCount(0);
   await page.locator('#feature-nav a[data-feature="homework"]').click();
   await expect.poll(() => pending.length).toBe(3);
   await expect(host).toHaveAttribute('data-feature', 'homework');

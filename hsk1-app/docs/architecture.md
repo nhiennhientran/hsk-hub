@@ -12,6 +12,8 @@
 
 第5步已接入真实教材五节与公共媒体。应用懒加载唯一AudioService；视图以局部signal拥有请求，真实playing启动确认、片段停止及TTS互斥由服务负责。`services/learning/reading.ts`复用共享session，只更新reading及教材继续位置；模块打开、阅读自标完成与作业成绩独立。原教材练习在`domain/textbook`纯生成/评分，不改变独立practice记录。证据见[`step5-acceptance.md`](step5-acceptance.md)。
 
+第6步已接入独立75听力。`services/content/listening.ts`校验唯一目录及原音引用；`domain/listening/controller.ts`调用保留的practice纯引擎，按原选项索引评分，首次/最近与当前轮次分开。视图只管理界面和所属播放请求，复用应用Audio与保存会话；真实播放成功才记次数，加载中暂停后首次继续也准确计数。保存/时钟通知不替换已聚焦的单选控件。见[`step6-acceptance.md`](step6-acceptance.md)。
+
 ## 目录与职责
 
 | 位置 | 所有权 | 目标阶段 |

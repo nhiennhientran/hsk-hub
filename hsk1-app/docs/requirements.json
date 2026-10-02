@@ -592,6 +592,12 @@
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "作业first/latest/history、先错后对、20条历史上限、重做/刷新/备份恢复；独立听力UI留第6步。"
+        },
+        {
+          "step": 6,
+          "status": "passed_for_step6_scope",
+          "report": "docs/step6-acceptance.md",
+          "limits": "听力75题首次/最近及重做独立保留，作业/阅读/词卡状态隔离；完整全领域统计待第7步。"
         }
       ]
     },
@@ -713,7 +719,15 @@
       ],
       "acceptance": "75唯一ID/15×5/选项及答案映射；75题实际作答、真实媒体ended；语义/人耳审查独立标记。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 6,
+          "status": "passed_for_step6_scope",
+          "report": "docs/step6-acceptance.md",
+          "limits": "75题真实界面四选项及提交反馈；75元数据原轨/片段映射；代表1/10/15实际媒体。未新增75题真人耳听/语言终审。"
+        }
+      ]
     },
     {
       "id": "R023",
@@ -732,7 +746,15 @@
       ],
       "acceptance": "真实audio.playbackRate核对五档；播放中换速/暂停重播；评分与播放次数无关；恢复默认/用户选择规则明确。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 6,
+          "status": "passed_for_step6_scope",
+          "report": "docs/step6-acceptance.md",
+          "limits": "五档实际playbackRate，暂停/继续/重播与真实开始计数，速度/次数不扣分；实体设备待后续。"
+        }
+      ]
     },
     {
       "id": "R024",
@@ -748,7 +770,15 @@
       ],
       "acceptance": "提交前DOM/可访问文本不泄露；错误/正确提交后展示；换题/重做重新隐藏；教材听力模式另验。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 6,
+          "status": "passed_for_step6_scope",
+          "report": "docs/step6-acceptance.md",
+          "limits": "提交前题目DOM无中文转写/拼音/反馈；提交后显示，换题/新轮次重新隐藏。静态内容JSON仍随网站提供。"
+        }
+      ]
     },
     {
       "id": "R025",
@@ -770,7 +800,15 @@
       ],
       "acceptance": "真实媒体事件和边界；慢加载/503/缺文件重试；播放中切模块；过期加载不能启动上一题；不同播放器互斥。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 6,
+          "status": "passed_for_step6_scope",
+          "report": "docs/step6-acceptance.md",
+          "limits": "代表原MP3边界、404重试、晚响应、切题/跨模块取消，复用唯一Audio；全75逐题完整播放和实体环境未新增。"
+        }
+      ]
     },
     {
       "id": "R026",
@@ -790,7 +828,15 @@
       ],
       "acceptance": "单课/多课/全选/空选择/错误筛选；首次及最近错题；刷新继续；作业未做时可进听力。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "partially_verified",
+      "stepEvidence": [
+        {
+          "step": 6,
+          "status": "passed_for_step6_scope",
+          "report": "docs/step6-acceptance.md",
+          "limits": "单课/混课/全选/清选、全部/最近错题、队列及选项顺序/答案/位置/听次数刷新恢复。原逐题提交，未扩出考试模式。"
+        }
+      ]
     },
     {
       "id": "R027",
@@ -980,6 +1026,12 @@
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "复用公共session/store的reading/mastered/模块访问/继续位置；教材保存与已有作业/备份兼容回归，不新增键或云同步。"
+        },
+        {
+          "step": 6,
+          "status": "passed_for_step6_scope",
+          "report": "docs/step6-acceptance.md",
+          "limits": "听力公共容器自动保存/刷新恢复与已有备份工具导出；没有云同步或新增schema。"
         }
       ]
     },
@@ -1023,6 +1075,12 @@
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "教材保存失败内存稿跨模块可导出、重试恢复；原25浏览器回归保留，实际物理配额压力仍待后续。"
+        },
+        {
+          "step": 6,
+          "status": "passed_for_step6_scope",
+          "report": "docs/step6-acceptance.md",
+          "limits": "听力容量失败内存提交可导出、可重试；原坏备份/冲突保护回归保留，实体配额压力待后续。"
         }
       ]
     },
@@ -1191,6 +1249,12 @@
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "教材详情/汉字/所有节320/390/768/1104无横向溢出、截图目检；容器本地无CJK字体，CI装NotoCJK；不是实体iOS/Android或IME认证。"
+        },
+        {
+          "step": 6,
+          "status": "passed_for_step6_scope",
+          "report": "docs/step6-acceptance.md",
+          "limits": "听力320/390/768/1104四视口布局与截图；CI NotoCJK，非实体手机/触屏认证。"
         }
       ]
     },
@@ -1232,6 +1296,12 @@
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "真实就绪/慢教材/晚汉字及MP3/旧playPromise/切词关闭/切页取消验证；音频由应用唯一实例持有且以真实playing启动。"
+        },
+        {
+          "step": 6,
+          "status": "passed_for_step6_scope",
+          "report": "docs/step6-acceptance.md",
+          "limits": "听力初始化禁用/ready、慢内容/失败重试、旧加载取消，切题/离页取消所属播放；旧整合WebKit历史根因未标已解决。"
         }
       ]
     },

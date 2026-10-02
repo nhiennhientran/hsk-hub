@@ -118,3 +118,9 @@ stage3的 `preferences` 仅支持 `module,lessons,listeningMode,vocabularyFilter
 `createReadingController`复用应用会话，只更新`data.reading`及教材`data.navigation`。成功挂载记录`lessons[课].visited=true`和`modules["hsk1:课"].modules`已打开节；同一继续位置/节重复访问不编辑或再排保存。模块访问不表示完成；`complete`仅由学生勾选/取消，作业first/latest/completed不受影响。
 
 教材星标继续使用`"课号-词形"`，按当课合法词形校验，避免和第7步按senseId自评时间表混用。首页读取同一内存session显示自标/访问与继续位置，不建立另一个store。切页flush，quota/conflict时保留内存稿及可导出状态；关闭视图不能dispose应用会话。备份/迁移格式与旧键保持不变。
+
+## 第6步听力调用
+
+`createListeningController`只编辑practice及听力继续导航，原practice格式和schema不变。显式开始新轮次才替换queue/responses，保留records及词卡schedule/review；选课/筛选变化只改变偏好。首次成绩不被重做覆盖，最近错题筛选按latest.correct=false。选项顺序和原索引、未提交选择、听次数、逐题提交及position均可刷新恢复；相同动作不重复保存。
+
+视图在原音真实playing成功后以当前sessionId/questionId/playbackId记一次听次数，过期题/轮次被拒绝，同标识重复回调不写；暂停恢复沿同标识，首次加载中暂停后的实际初次播放仍计一次。播放请求、DOM、AbortController和计数去重集合不持久化。切页flush；保存失败保留内存稿并提供重试/现有备份工具，不另建键。原引擎FNV题意身份和content的编辑SHA分别核验，不能互相替代。

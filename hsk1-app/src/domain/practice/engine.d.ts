@@ -1,9 +1,22 @@
 import type { PracticeState } from '../types.ts';
+import type { ListeningCatalog } from '../../services/content/listening.ts';
+import type { ListeningPreferences, ListeningResponse, ListeningSession, ListeningSummary } from '../listening/types.ts';
 declare const engine: {
   APP: 'hsk1-stage3'; KEY: string; SCHEMA: 1; MAX_BACKUP_BYTES: number;
+  RATES: readonly number[];
   blank(): PracticeState;
   importBackup(input: unknown, catalog: unknown): PracticeState;
   exportBackup(input: unknown, catalog: unknown): PracticeState;
   backupByteLength(input: unknown): number;
+  setPreferences(state: PracticeState, patch: Partial<PracticeState['preferences']>, now?: number): PracticeState['preferences'];
+  createListeningSession(state: PracticeState, catalog: ListeningCatalog, options?: {
+    lessons?: ListeningPreferences['lessons']; mode?: ListeningPreferences['listeningMode']; shuffle?: boolean;
+  }, now?: number, random?: () => number): ListeningSession;
+  selectListening(state: PracticeState, catalog: ListeningCatalog, id: string, optionIndex: number, now?: number): ListeningResponse;
+  recordListen(state: PracticeState, catalog: ListeningCatalog, id: string, now?: number): number;
+  submitListening(state: PracticeState, catalog: ListeningCatalog, now?: number): import('../types.ts').ListeningSubmission;
+  moveListening(state: PracticeState, position: number, now?: number): { position: number; done: boolean };
+  nextListening(state: PracticeState, now?: number): { position: number; done: boolean };
+  listeningSummary(state: PracticeState, catalog: ListeningCatalog): ListeningSummary;
 };
 export default engine;
