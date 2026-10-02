@@ -499,3 +499,21 @@ test('zero-metadata clock recovery cannot certify bounded clips, paused clocks o
  assert.equal(b.service.snapshot().status,'loading');b.audio.paused=true;b.audio.time(21);
  assert.equal(b.service.snapshot().status,'loading');b.clock.fire();assert.equal((await whole).ok,false);b.service.dispose();
 });
+
+
+test('WebKit silent positive duration on timeupdate confirms playback without restarting the original', async () => {
+ const {audio,service}=setup();const pending=service.play({url:'original.mp3',label:'Original'});
+ audio.metadata(0);audio.readyState=4;audio.playing();assert.equal(service.snapshot().status,'loading');
+ audio.duration=27.408;audio.mediaTime=.2505;const seeks=audio.seekAssignments.length;audio.emit('timeupdate');
+ assert.equal((await pending).ok,true);assert.equal(service.snapshot().status,'playing');
+ assert.equal(audio.currentTime,.2505);assert.equal(audio.seekAssignments.length,seeks);service.dispose();
+});
+test('silent positive duration still rejects truncated segments and does not certify a paused or seeking clock', async () => {
+ const a=setup();const bounded=a.service.play({url:'short.mp3',label:'Short',start:0,end:5});
+ a.audio.metadata(0);a.audio.playing();a.audio.duration=3;a.audio.time(.25);
+ assert.equal((await bounded).ok,false);assert.equal(a.service.snapshot().status,'error');a.service.dispose();
+ const b=setup();const whole=b.service.play({url:'whole.mp3',label:'Whole'});
+ b.audio.metadata(0);b.audio.playing();b.audio.duration=10;b.audio.seeking=true;b.audio.time(2);
+ assert.equal(b.service.snapshot().status,'loading');b.audio.seeking=false;b.audio.paused=true;b.audio.time(3);
+ assert.equal(b.service.snapshot().status,'loading');b.clock.fire();assert.equal((await whole).ok,false);b.service.dispose();
+});

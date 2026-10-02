@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T17:12:00Z",
+  "updatedAt": "2026-10-02T17:42:00Z",
   "phases": [
     {
       "phase": 1,
@@ -45,43 +45,44 @@
         ],
         "visualScreensInspected": 8
       },
-      "remaining": "Stronger WebKit assertion revealed persistent zero metadata with advancing native clock but loading UI; require validated clock-based whole-track recovery."
+      "remaining": "Real WebKit positive duration arriving only on timeupdate, rapid redo race and emergency backup accessibility fixes require stronger browser acceptance."
     },
     {
       "phase": 4,
-      "title": "HSK2 lessons 1\u20133 pilot",
+      "title": "HSK2 lessons 1–3 pilot",
       "status": "in_progress",
-      "content": "Lessons1\u20133 independently reviewed; browser gate pending"
+      "content": "Lessons1–3 independently reviewed; browser gate pending"
     },
     {
       "phase": 5,
-      "title": "HSK2 lessons 4\u20139",
-      "status": "pending",
-      "content": "Lessons4\u20136 independently reviewed; lessons7\u20139 authored, final checks/review pending"
+      "title": "HSK2 lessons 4–9",
+      "status": "in_progress",
+      "content": "Lessons4–6 and7–9 independently reviewed in separate checkpoints; browser checkpoint pending."
     },
     {
       "phase": 6,
-      "title": "HSK2 lessons 10\u201315",
-      "status": "pending"
+      "title": "HSK2 lessons 10–15",
+      "status": "in_progress",
+      "content": "Lesson10 authored and independent review underway; lessons11–15 author assigned."
     },
     {
       "phase": 7,
-      "title": "HSK3 lessons 1\u20133 pilot",
+      "title": "HSK3 lessons 1–3 pilot",
       "status": "pending"
     },
     {
       "phase": 8,
-      "title": "HSK3 lessons 4\u20139",
+      "title": "HSK3 lessons 4–9",
       "status": "pending"
     },
     {
       "phase": 9,
-      "title": "HSK3 lessons 10\u201315",
+      "title": "HSK3 lessons 10–15",
       "status": "pending"
     },
     {
       "phase": 10,
-      "title": "HSK3 lessons 16\u201318 and coverage closure",
+      "title": "HSK3 lessons 16–18 and coverage closure",
       "status": "pending"
     },
     {
@@ -96,13 +97,15 @@
     }
   ],
   "limitations": [],
-  "currentWork": "CI on exact shared snapshot; HSK2 lessons7\u20139 authoring and independent4\u20136 review; all264 local automatic audio transcripts available",
+  "currentWork": "Fix and verify native metadata event handling and asynchronous redo; content10 independent review plus11–15 authoring.",
   "ci": {
-    "latestSourceCommit": "39d93d662393daf8a8e81c15bb174b8ef07f3653",
+    "latestSourceCommit": "5af975d866bd8703f250bc1a4b65ac7187545003",
     "productionUnchanged": true,
     "previousSetupFailures": [
       "37034491695 lockfile",
       "37035113663 shallowhistory"
-    ]
+    ],
+    "latestRun": 37039693562,
+    "latestResult": "Chromium17/18 rapid-redo race; WebKit17/18 native playing but UI loading;333 local HSK1 unit tests after fixes,12 shared-course tests."
   }
 }

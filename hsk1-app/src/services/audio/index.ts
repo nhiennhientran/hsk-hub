@@ -261,7 +261,7 @@ export function createAudioService(options: {
         const startTime = track.start ?? 0;
         // WebKit MP3 metadata can transiently report zero before the positive
         // decoded duration arrives. Zero is not yet a usable range boundary.
-        // Later durationchange still validates every requested segment in full.
+        // Later metadata events or timeupdate validate requested segments in full.
         if (audio.duration === 0) return;
         const durationKnown = Number.isFinite(audio.duration) && audio.duration > 0;
         if (durationKnown && startTime >= audio.duration) {
@@ -275,9 +275,13 @@ export function createAudioService(options: {
           return;
         }
         if (positioned) return;
-        if (Math.abs(audio.currentTime - startTime) > 0.001) audio.currentTime = startTime;
+        // An unbounded original may already be playing when WebKit supplies
+        // its first usable duration. Preserve that real clock, without replaying
+        // its opening. Segments still require their explicit start position.
+        const preserveClock = nativePlaying && startTime === 0 && track.end === undefined;
+        if (!preserveClock && Math.abs(audio.currentTime - startTime) > 0.001) audio.currentTime = startTime;
         positioned = true;
-        publish({ currentTime: startTime });
+        publish({ currentTime: audio.currentTime });
         confirmPlaying();
       } catch (error) { fail(request, playbackIssue(error)); }
     };
@@ -321,6 +325,12 @@ export function createAudioService(options: {
     }, request.trackCleanups);
     listen(audio, 'timeupdate', () => {
       if (!current(request)) return;
+      // Real WebKit MP3 traces can change duration from 0 to positive on the
+      // first timeupdate without emitting a second durationchange. Revalidate
+      // the now-usable metadata, rather than leaving genuine playback loading.
+      if (!positioned && nativePlaying && !request.paused && !audio.paused &&
+          !audio.seeking && Number.isFinite(audio.duration) && audio.duration > 0) position();
+      if (!current(request) || state.status === 'error') return;
       // Some WebKit MP3 decoders retain duration=0 even while the original
       // recording genuinely advances. Only a whole, unbounded recording can
       // recover from this: require native playing plus two non-seeking clock
