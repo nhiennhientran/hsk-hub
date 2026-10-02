@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T19:29:00Z",
+  "updatedAt": "2026-10-02T20:01:00Z",
   "phases": [
     {
       "phase": 1,
@@ -93,23 +93,25 @@
       "phase": 7,
       "title": "HSK3 lessons 1–3 pilot",
       "status": "in_progress",
-      "content": "HSK3lessons1–3 independently reviewed; all90 homework and 320/390/768/1440 text,grammar,review layouts pass both engines.24 HSK3screens inspected in this run. Later complex lesson18 source inspected; authoring/stress-fit remains."
+      "content": "HSK3lessons1–3 and latercomplexlesson18 independently reviewed. Pilot1–3 dual-engine layout/homework passed; later18 narrative/grammar/review/pinyin stress tests now prepared for both engines."
     },
     {
       "phase": 8,
       "title": "HSK3 lessons 4–9",
       "status": "in_progress",
-      "content": "HSK3lessons4–6 independently reviewed, including exact visible correction of2 supplied-answer errors;7–9 authoring. Browser checkpoint for4–6 being prepared."
+      "content": "HSK3lessons4–6 and7–9 independently reviewed in separate checkpoints.4–6 accepted in CI37054676272;7–9 browser checkpoint being submitted."
     },
     {
       "phase": 9,
       "title": "HSK3 lessons 10–15",
-      "status": "pending"
+      "status": "in_progress",
+      "content": "Authoring10–12 first, then13–15; independent review pending."
     },
     {
       "phase": 10,
       "title": "HSK3 lessons 16–18 and coverage closure",
-      "status": "pending"
+      "status": "pending",
+      "content": "Lesson18 early complex sample independently reviewed.16–17 and fullcoverage closure remain pending."
     },
     {
       "phase": 11,
@@ -125,13 +127,13 @@
   "limitations": [],
   "currentWork": "HSK3content checkpoints and earlylesson18 complex sample; preserve same frozen tested bytes for scoped release. Full33-lesson acceptance remains open.",
   "ci": {
-    "latestSourceCommit": "07c5b248ff060abe3c8253c519ebeccd62acafe6",
+    "latestSourceCommit": "13f6f5a2b17926cbc16f360b3c674ff6de20305f",
     "productionUnchanged": true,
     "previousSetupFailures": [
       "37034491695 lockfile",
       "37035113663 shallowhistory"
     ],
-    "latestRun": 37051662090,
-    "latestResult": "Green: each engine43course +4packaged +6HSK1media tests; no skipped,unexpected or flaky results. New output dirs retain37screens perengine;24HSK3text/grammar/review screenshots visually inspected."
+    "latestRun": 37054676272,
+    "latestResult": "Green47course+4packaged+6HSK1media perengine; zero skipped,unexpected or flaky. Frozen-code artifact SHAverified and all293package files restored locally from exact frozen bytes plus264hash-bound original MP3 files; no rebuild."
   }
 }
