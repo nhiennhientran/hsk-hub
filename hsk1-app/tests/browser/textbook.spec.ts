@@ -111,6 +111,7 @@ test('vocabulary search, keyboard and all-card flips, saved stars, detail naviga
   await expect(flip).toHaveAttribute('aria-pressed', 'true');
   await page.keyboard.press('Space');
   await expect(flip).toHaveAttribute('aria-pressed', 'false');
+  await page.locator('#vocab-tools > summary').click();
   await page.locator('#vocab-flip-all').click();
   for (const item of words) await expect(page.locator(`[data-vocab-flip="${item.id}"]`)).toHaveAttribute('aria-pressed', 'true');
   await page.locator('#vocab-flip-all').click();

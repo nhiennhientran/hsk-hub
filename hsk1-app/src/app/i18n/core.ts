@@ -24,7 +24,7 @@ export const coreCopy = {
   homeLead: { zh: '跟随教材，选择现在想学的内容。', vi: 'Học theo giáo trình, chọn đúng phần bạn cần.' },
   homeFacts: { zh: '15课 · 每课5部分 · 教材内容与原音', vi: '15 bài học · 5 phần / bài · Nội dung và âm thanh giáo trình' },
   loadingLessons: { zh: '正在读取课程和学习记录…', vi: 'Đang tải danh sách bài học và tiến độ đã lưu…' },
-  allOpen: { zh: '15课全部开放，可直接进入各部分', vi: '15 bài luôn mở · Vào thẳng từng mục, không cần học theo thứ tự' },
+  allOpen: { zh: '15课均可自由选择', vi: 'Tự do chọn trong 15 bài học' },
   startWhere: { zh: '从想学的一课开始', vi: 'Bắt đầu từ bài bạn muốn' },
   lessonSearch: { zh: '搜索课程', vi: 'Tìm bài học' },
   lessonSearchHint: { zh: '课名、汉字或课次…', vi: 'Tên bài, chữ Hán hoặc số bài…' },

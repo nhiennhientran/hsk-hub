@@ -156,6 +156,7 @@ test('native word and line segments stop at their boundaries and the three origi
   expect(ended.paused).toBe(true);
   expect(ended.time).toBeGreaterThanOrEqual(sound.request.end! - .08);
   expect(ended.time).toBeLessThanOrEqual(sound.request.end! + .15);
+  await page.locator('#vocab-tools > summary').click();
   await page.locator('#vocab-play-all').click();
   const playlist = content.vocabPlaylist(1);
   await playing(page, '/course-assets/audio/1-2.mp3', 0);

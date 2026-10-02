@@ -227,7 +227,7 @@ export const mountHomework30: FeatureModule['mount'] = (host, context) => {
       const signal = formLifetime.signal;
       composing.clear(); invalid.clear(); textareaCollectors.clear(); exercise.replaceChildren();
       const model = homework.read();
-      exercise.append(element('h2', homeworkParts[part]));
+      const partHeading = element('h2', homeworkParts[part]); partHeading.className = 'homework-part-heading'; exercise.append(partHeading);
       if (model.locked) {
         const prerequisite = PARTS[Math.max(0, PARTS.indexOf(part) - 1)]!;
         exercise.append(element('p', copy.locked(prerequisite)));
@@ -235,7 +235,7 @@ export const mountHomework30: FeatureModule['mount'] = (host, context) => {
       }
       const submitted = model.group?.attempt;
       if (part === 'translation') exercise.append(element('p', copy.manualHint));
-      else exercise.append(element('p', copy.automaticHint));
+      // Automatic submission guidance is adjacent to the submit action rather than repeated above the first question.
       for (const [index, question] of model.questions.entries()) {
         const card = element('article'); card.className = 'homework-question'; card.dataset.questionId = question.id;
         card.append(element('h3', `${bilingualText(copy.question(index + 1))}. ${question.prompt}`));
@@ -292,6 +292,7 @@ export const mountHomework30: FeatureModule['mount'] = (host, context) => {
       }
       const actions = element('div'); actions.className = 'homework-actions';
       if (!submitted) {
+        if (part !== 'translation') exercise.append(element('p', copy.automaticHint));
         const submit = element('button', part === 'translation' ? copy.submitManual : copy.submitAutomatic); submit.type = 'button'; submit.id = 'submit-homework'; submit.className = 'primary';
         submit.addEventListener('click', () => {
           if (composing.size) { showMessage(copy.composing); return; }

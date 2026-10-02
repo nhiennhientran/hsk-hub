@@ -16,7 +16,11 @@ export interface VocabularyOptions {
 }
 export function mountVocabulary(host: HTMLElement, options: VocabularyOptions): { dispose(): void; update(mastered?: Readonly<Record<string, boolean>>): void } {
   const { lesson, content, audio, signal } = options;
-  const section = element('section'); section.id = 'textbook-vocabulary'; section.append(bi('h2', copy.textbookTitle));
+  const section = element('section'); section.id = 'textbook-vocabulary';
+  const heading = bi('h2', copy.textbookTitle); heading.id = 'vocab-heading'; heading.className = 'textbook-vocabulary-heading';
+  section.setAttribute('aria-labelledby', heading.id);
+  const tools = element('details'); tools.id = 'vocab-tools';
+  tools.append(bi('summary', { zh: '搜索与工具', vi: 'Tìm và công cụ' }));
   const searchLabel = bi('label', copy.textbookSearch);
   const search = element('input'); search.id = 'vocab-search'; search.type = 'search'; search.autocomplete = 'off'; searchLabel.append(search);
   const actions = element('div'); actions.className = 'textbook-actions';
@@ -32,7 +36,8 @@ export function mountVocabulary(host: HTMLElement, options: VocabularyOptions): 
     for (const word of visible) flipped.set(word.id, next);
     draw();
   }, signal); flipAll.id = 'vocab-flip-all';
-  actions.append(flipAll, playAll); section.append(searchLabel, actions, count, grid, detail); host.append(section);
+  actions.append(flipAll, playAll); tools.append(searchLabel, actions, count);
+  section.append(heading, tools, grid, detail); host.append(section);
   function visibleWords() { const query = searchKey(search.value); return lesson.vocab.filter(word => !query || searchKey(`${word.zh}${word.py}${word.vn}`).includes(query)); }
   function audioButton(wordId: string, localSignal: AbortSignal): HTMLButtonElement {
     const resolved = content.resolveWord(lesson.id, wordId);

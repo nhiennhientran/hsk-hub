@@ -17,7 +17,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
   const heading = element('h1', C.homeTitle); heading.tabIndex = -1;
   const description = element('p', C.loadingLessons); description.id = 'home-course-status';
   const hero = element('header'); hero.className = 'course-hero';
-  hero.append(heading, element('p', C.homeLead));
+  hero.append(heading);
   article.append(hero, description); host.append(article);
   const controller = new AbortController();
   const abort = () => controller.abort();
@@ -42,7 +42,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const toolbar = element('div'); toolbar.className = 'catalogue-toolbar';
     const searchLabel = element('label', C.lessonSearch); searchLabel.className = 'home-search-label';
     const search = element('input'); search.type = 'search'; search.id = 'lesson-search'; search.placeholder = bilingualText(C.lessonSearchHint); searchLabel.append(search);
-    toolbar.append(element('h2', C.startWhere), searchLabel);
+    toolbar.append(searchLabel);
     catalogue.append(toolbar, description);
     const grid = element('div'); grid.className = 'lesson-grid';
     for (const lesson of lessons) {

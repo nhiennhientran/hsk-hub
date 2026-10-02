@@ -42,6 +42,15 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       const link = routeLink(textbookSection(item, lesson.id), { ...context.route, section: item }); link.dataset.section = item; link.classList.add('bilingual-stacked');
       if (item === section) link.setAttribute('aria-current', 'page'); nav.append(link);
     }
+    // Only the section row scrolls: opening a later section must not move the page.
+    const showActiveSection = () => {
+      const active = nav.querySelector<HTMLElement>('[aria-current="page"]');
+      if (!active || nav.scrollWidth <= nav.clientWidth) return;
+      const row = nav.getBoundingClientRect(), item = active.getBoundingClientRect();
+      nav.scrollLeft += item.left - row.left - (nav.clientWidth - item.width) / 2;
+    };
+    window.addEventListener('resize', showActiveSection, { signal: lifetime.signal });
+    showActiveSection();
     controls.replaceChildren(element('legend', textbookSection(section, lesson.id)));
     const readingBox = element('div'); readingBox.className = 'textbook-reading';
     const progress = element('p'); progress.id = 'reading-section-status';

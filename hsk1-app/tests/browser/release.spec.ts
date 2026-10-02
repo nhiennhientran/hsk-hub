@@ -64,7 +64,8 @@ async function ready(page: Page, feature: string, lesson = 10, hash?: string): P
   const location = new URL(page.url());
   expect(location.pathname.startsWith(productionBase)).toBe(true);
   expect(location.search).toBe('');
-  if (hash) expect(location.hash).toBe(hash);
+  // An explicit legacy-version link is equivalent to an old unversioned bookmark.
+  if (hash) expect(location.hash.replace(/&version=legacy(?=&|$)/, '')).toBe(hash);
 }
 
 async function navigate(page: Page, feature: string): Promise<void> {
@@ -249,8 +250,11 @@ test('normal login, index/lesson/learning/pilot legacy entry parameters, refresh
   await ready(page, 'textbook');
   await navigate(page, 'homework');
   await navigate(page, 'listening');
+  await page.goBack(); await ready(page, 'review', 10, '#/review?lesson=10');
   await page.goBack(); await ready(page, 'homework', 10, '#/homework?lesson=10&part=choice');
+  await page.goBack(); await ready(page, 'homework', 10, '#/homework?lesson=10&part=choice&version=30-v1');
   await page.goBack(); await ready(page, 'textbook', 10, '#/textbook?lesson=10&section=text');
+  await page.goForward(); await ready(page, 'homework', 10, '#/homework?lesson=10&part=choice&version=30-v1');
   await page.goForward(); await ready(page, 'homework', 10, '#/homework?lesson=10&part=choice');
   const fresh = await browser.newContext({ storageState: { cookies: [], origins: [] } });
   try {

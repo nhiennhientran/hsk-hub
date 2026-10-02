@@ -21,6 +21,8 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 1024 }, { name: 
       await page.goto(route);
       await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
       if (await page.locator('#reading-save-status').count()) await expect(page.locator('#reading-save-status')).toHaveAttribute('data-state', 'saved');
+      // Preserve the actual failed layout too, before any visual acceptance assertion.
+      await page.screenshot({ path: `${folder}/${viewport.name}-${name}-initial.png`, fullPage: true });
       if (name === 'home') {
         await expect(page.locator('.lesson-card')).toHaveCount(15);
         await expect(page.locator('.lesson-card [data-lesson-section]')).toHaveCount(75);

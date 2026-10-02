@@ -43,16 +43,16 @@ for (const width of [320, 390, 1440]) {
     await ready(page, 'text');
     const tabs = page.locator('[data-textbook-sections] a');
     await expect(tabs).toHaveCount(5);
-    const tabBounds = [];
+    let rowTop: number | undefined;
     for (const tab of await tabs.all()) {
       await paired(tab);
       await unobscured(tab);
-      tabBounds.push((await tab.boundingBox())!);
-    }
-    for (let index = 1; index < tabBounds.length; index++) {
-      if (Math.abs(tabBounds[index].y - tabBounds[index - 1].y) < 1) {
-        expect(tabBounds[index].x).toBeGreaterThanOrEqual(tabBounds[index - 1].x + tabBounds[index - 1].width - 1);
-      } else expect(tabBounds[index].y).toBeGreaterThanOrEqual(tabBounds[index - 1].y + tabBounds[index - 1].height - 1);
+      const bounds = (await tab.boundingBox())!;
+      const navBounds = (await page.locator('[data-textbook-sections]').boundingBox())!;
+      expect(bounds.x).toBeGreaterThanOrEqual(navBounds.x);
+      expect(bounds.x + bounds.width).toBeLessThanOrEqual(navBounds.x + navBounds.width + 1);
+      if (rowTop !== undefined) expect(Math.abs(bounds.y - rowTop)).toBeLessThan(1);
+      rowTop = bounds.y;
     }
     for (const node of ['#textbook-text h2', '#scene-slow', '[data-scene-audio]', '[data-line-audio]', width <= 600 ? '.textbook-scene-picker' : '[data-scene-tab]']) await paired(page.locator(node).first());
     for (const [index, scene] of book.lessons[0].scenes.entries()) {

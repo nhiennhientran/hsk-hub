@@ -24,6 +24,10 @@
 .textbook-body { min-width: 0; }
 .textbook-body h2 { font-size: 1.35rem; }
 .textbook-body label { display: block; }
+.textbook-vocabulary-heading { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+#vocab-tools { border-bottom: 1px solid var(--line, #ccdcd5); }
+#vocab-tools > summary { min-height: 44px; padding: 8px 2px; cursor: pointer; color: var(--green-900, #164b3b); font-weight: 650; }
+#vocab-tools[open] > summary { margin-bottom: 10px; }
 #vocab-search { display: block; width: 100%; min-height: 44px; padding: 9px 12px; margin: 8px 0 14px; border: 1px solid #8ca596; border-radius: 8px; }
 .textbook-vocab-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
 .vocab-card { min-width: 0; display: flex; flex-direction: column; padding: 20px 16px 16px; border: 1px solid var(--line, #ccdcd5); border-radius: 12px; background: white; box-shadow: 0 3px 9px #183e2603; }
@@ -78,15 +82,15 @@
 @media (max-width: 900px) { .textbook-vocab-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) {
  .textbook > .lesson-hero { padding: 14px 16px; }
- .textbook > .subnav { grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 10px 12px; gap: 7px; }
- .textbook > .subnav a { min-width: 0; padding: 8px 5px; text-align: center; }
+ .textbook > .subnav { display: flex; flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scrollbar-width: thin; scroll-padding-inline: 8px; padding: 8px 12px; gap: 7px; }
+ .textbook > .subnav a { flex: 0 0 104px; min-width: 0; padding: 8px 5px; text-align: center; }
  .textbook > fieldset[data-module-controls] { padding: 0 16px 20px; }
  .textbook-body h2 { margin: 0 0 10px; }
  #vocab-search { margin: 6px 0 10px; }
  #vocab-count { margin: 8px 0; }
- #textbook-vocabulary > .textbook-actions { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; gap: 8px; }
- #textbook-vocabulary > .textbook-actions button { min-width: 0; padding: 8px; line-height: 1.4; }
- #textbook-vocabulary > .textbook-actions .bilingual-vi { margin-top: 3px; }
+ #vocab-tools > .textbook-actions { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; gap: 8px; }
+ #vocab-tools > .textbook-actions button { min-width: 0; padding: 8px; line-height: 1.4; }
+ #vocab-tools > .textbook-actions .bilingual-vi { margin-top: 3px; }
  .textbook-vocab-grid { grid-template-columns: 1fr; margin-top: 12px; }
  .vocab-card { padding: 16px 18px 18px; }
  .vocab-card .vocab-front { min-height: 110px; padding: 8px 0; }

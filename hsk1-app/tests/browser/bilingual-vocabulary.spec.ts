@@ -19,6 +19,11 @@ test('textbook vocabulary toolbar, flip/star/detail controls and dynamic counts 
   await page.setViewportSize({ width: 320, height: 850 });
   await open(page, '/#/textbook?lesson=1&section=vocab');
   await paired(page.locator('#textbook-vocabulary h2'), '生词', 'Từ vựng');
+  await expect(page.locator('#vocab-tools')).not.toHaveAttribute('open', '');
+  await expect(page.locator('.vocab-card').first()).toBeVisible();
+  await paired(page.locator('#vocab-tools > summary'), '搜索与工具', 'Tìm và công cụ');
+  await page.locator('#vocab-tools > summary').click();
+  await expect(page.locator('#vocab-tools')).toHaveAttribute('open', '');
   await expect(page.getByRole('searchbox', { name: '搜索汉字、越南语或拼音 · Tìm chữ Hán, tiếng Việt hoặc pinyin', exact: true })).toBeVisible();
   await paired(page.locator('#vocab-flip-all'), '翻转全部', 'Lật tất cả thẻ');
   await paired(page.locator('#vocab-play-all'), '播放本课原音', 'Nghe toàn bộ từ có âm thanh gốc');
