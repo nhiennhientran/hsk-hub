@@ -273,6 +273,12 @@ export function createAudioService(options: {
     if (!current(request)) return;
     listen(audio, 'loadedmetadata', position, request.trackCleanups);
     listen(audio, 'durationchange', position, request.trackCleanups);
+    listen(audio, 'play', () => {
+      // WebKit can resume a previously confirmed track without another
+      // playing event. Capture a real native-play baseline; only subsequent
+      // non-seeking clock advancement at usable readiness can confirm resume.
+      if (current(request) && request.trackStarted && !request.paused && state.status === 'loading') waitingTime = audio.currentTime;
+    }, request.trackCleanups);
     listen(audio, 'playing', () => {
       if (!current(request)) return;
       if (request.paused) { audio.pause(); return; }

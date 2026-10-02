@@ -8,13 +8,13 @@
   "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
   "checks": {
     "unit": {
-      "passed": 188,
+      "passed": 190,
       "failed": 0,
       "skipped": 0,
       "baseline": 152,
       "newVocabulary": 25,
       "newProgress": 9,
-      "newAudioBoundary": 2
+      "newAudioBoundary": 4
     },
     "typecheck": "passed",
     "build": "passed",
@@ -86,6 +86,22 @@
       ],
       "full344EachBrowser": "passed",
       "deadlineRefreshEachBrowser": "passed"
+    },
+    "ciSecond": {
+      "commit": "8e5e9a8db1426ef27a44ab62a401292f0adfe1f0",
+      "run": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36955029799",
+      "chromium": {
+        "passed": 63,
+        "failed": 0,
+        "skipped": 0
+      },
+      "webkit": {
+        "passed": 62,
+        "failed": 1,
+        "skipped": 0
+      },
+      "cause": "Existing textbook WebKit resume omitted second playing event despite real ready/nonpaused/nonseeking advancing clock. Added a native play baseline for already-confirmed tracks; actual timeupdate advancement still required.",
+      "newVocabularyAll13EachBrowser": "passed"
     }
   }
 }

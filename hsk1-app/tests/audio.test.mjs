@@ -398,3 +398,27 @@ test('a retired native play rejection at a sequence boundary cannot fail the nex
   assert.equal(service.snapshot().status, 'loading'); audio.metadata(); audio.playing(1);
   assert.equal(service.snapshot().status, 'playing'); assert.equal(service.snapshot().label, 'second'); service.dispose();
 });
+
+
+test('native play plus real advancing ready clock confirms resume when WebKit omits another playing event', async () => {
+  const { audio, service } = setup();
+  const first = service.play({ url: 'lesson.mp3', label: 'Lesson' }); audio.metadata(); audio.playing(); await first;
+  audio.readyState = 2; audio.time(.28); service.pause(); const resumed = service.resume();
+  audio.paused = false; audio.emit('play'); audio.emit('waiting');
+  assert.equal(service.snapshot().status, 'loading');
+  audio.time(.28); assert.equal(service.snapshot().status, 'loading');
+  audio.time(.47); assert.equal(service.snapshot().status, 'playing');
+  assert.deepEqual(await resumed, { ok: true, code: 'playing' }); service.dispose();
+});
+
+test('native play alone cannot invent a first playing event, a stalled resume or a seek jump', async () => {
+  const { audio, service, clock } = setup();
+  const first = service.play({ url: 'lesson.mp3', label: 'Lesson' }); audio.metadata(); audio.readyState = 2;
+  audio.paused = false; audio.emit('play'); audio.time(.2); assert.equal(service.snapshot().status, 'loading');
+  audio.playing(); await first; service.pause(); const resumed = service.resume();
+  audio.paused = false; audio.emit('play'); audio.seeking = true; audio.emit('seeking'); audio.time(2);
+  assert.equal(service.snapshot().status, 'loading');
+  audio.seeking = false; audio.emit('seeked'); audio.time(2);
+  assert.equal(service.snapshot().status, 'loading');
+  clock.fire(); assert.equal(service.snapshot().status, 'error'); assert.equal((await resumed).code, 'error'); service.dispose();
+});

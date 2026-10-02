@@ -30,7 +30,7 @@
 
 ## 自动化验收
 
-`npm test`完整188项通过（原152项、9项进度、25项词汇领域/内容及2项音频边界回归），0失败/跳过；TypeScript、build、catalog、12份非空迁移fixture及资源检查通过。浏览器配置为每引擎63场景，0重试。最终数字见 `review/step7-local-validation.json` 与对应提交的 GitHub Actions `HSK1 modular step7`。本文件将在最终提交前记录本地结果；同提交双浏览器CI需独立核对，不继承第6步的成功。
+`npm test`完整190项通过（原152项、9项进度、25项词汇领域/内容及4项音频边界/恢复回归），0失败/跳过；TypeScript、build、catalog、12份非空迁移fixture及资源检查通过。浏览器配置为每引擎63场景，0重试。最终数字见 `review/step7-local-validation.json` 与对应提交的 GitHub Actions `HSK1 modular step7`。本文件将在最终提交前记录本地结果；同提交双浏览器CI需独立核对，不继承第6步的成功。
 
 覆盖包括：全344卡真实页面揭示/自评与来源、330/14音频可用状态、同形义项、两向答案隐藏、拼音、非连续选课/空筛选、随机队列、三档时间表和提前复习、刷新与跨模块选择隔离、导出新环境恢复、独立统计、到期边界、原音代表播放/暂停/重播/失败/取消、存储失败及四视口。原第1—6步自动化回归保留。
 
@@ -43,6 +43,8 @@
 两项失败来自测试把fieldset当可交互控件调用Playwright禁用判断；实际DOM已有disabled属性，改为校验属性和未生成可操作卡片，不删除提前交互验证。另一项WebKit记录显示恢复后真实音频时钟正常到达原片段边界并暂停，随后未解决的原生play Promise迟到拒绝覆盖了ended状态。公共音频在主动结束片段前推进playVersion，使旧播放尝试不能再更改结果或下一片段。旧代码在新增定向单测中复现`error != ended`，修正后完整188单测通过；不是把真实浏览器验证换成mock。
 
 浏览器原音测试保留所有播放、暂停/继续、结束范围与换模块断言，并增加原生Promise状态诊断。最终CI分别在隔离的Chromium/WebKit job中各跑63场景，独立保留制品；没有减项、增重试或修改题库/音段。最终同head结果在完成回复核对。
+
+第二轮提交`8e5e9a8db1426ef27a44ab62a401292f0adfe1f0`的[CI](https://github.com/nhiennhientran/hsk-hub/actions/runs/36955029799)为Chromium63/63、WebKit62/63，上轮三项均通过。保留的旧教材原音回归捕捉到WebKit暂停恢复后未再次发playing事件：原生时钟持续从0.279秒前进到4.03秒（readyState=2、未暂停、未seek），界面仍loading。新增native play事件只为已确认过的同一轨采样恢复基线；沿现有timeupdate的实际推进/就绪/非暂停/非seek检查才恢复playing。play事件或Promise本身不能宣称成功；初播、停滞和seek跳跃仍不能冒充播放。旧代码在新定向单测中复现loading不恢复，修复后190单元全过，独立音频23项复核通过。最后完整两引擎重验仍为63项/引擎，未删旧教材或听力测试。
 
 ## 未执行与证据边界
 

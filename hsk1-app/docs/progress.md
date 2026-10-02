@@ -1,10 +1,10 @@
 # 当前进度
 
-- 当前步骤：第7步功能、188项单元和构建检查完成；最终同head双浏览器CI在完成回复核对。第8步尚未执行。
+- 当前步骤：第7步功能、190项单元和构建检查完成；最终同head双浏览器CI在完成回复核对。第8步尚未执行。
 - 分支：`work/hsk1-modular-step7-20261002`；本步基线：`e06dbe7303a23906f8eea276ff39f06c5ac3c214`；有效内容基线仍为`71b39192133c82f684384f450dda6079d3253440`。
 - 生产恢复点：`069f9d956c9a600a91e6b4ce82241ceccc184dce`；原运行、内容、原音、纯引擎正文、依赖版本/锁文件不变，没有部署。
 - 已交付第1—6步；第7步新增344义项/319词形混课词卡、两向回忆/拼音、筛选/打乱、三档自评/早复习、固定轮次恢复、330词音/14明确无音、分领域进度和首页任务/继续入口。
-- 本地验证：188单元0失败/跳过，TypeScript/build/catalog/12fixture/assets通过。当前电脑浏览器被socket权限阻止，18定向场景未进入页面；标准Chromium/WebKit各63项由最终提交CI验证，不继承第6步结果。报告见`step7-acceptance.md`及`review/step7-local-validation.json`。
+- 本地验证：190单元0失败/跳过，TypeScript/build/catalog/12fixture/assets通过。当前电脑浏览器被socket权限阻止，18定向场景未进入页面；标准Chromium/WebKit各63项由最终提交CI验证，不继承第6步结果。报告见`step7-acceptance.md`及`review/step7-local-validation.json`。
 - 独立代码审查发现到期筛选跨时刻不刷新，已采用只读deadline/visibility刷新修复并加入回归。
 - 人工语言审校、真人逐词/逐题听辨、实体手机/IME、系统voice及正式域/发布验证仍待核验，不把自动化冒称真实设备验收。
 
