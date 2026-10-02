@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "status": "ENGINEERING_RELEASE_COMPLETE_MANUAL_CHECKS_NOT_RUN",
+  "verifiedAt": "2026-10-02T05:33:48.390434+00:00",
+  "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+  "productionCommit": "f7d87df013d38613c11326088f27dff26532cc90",
+  "productionTree": "8317a87d487924f8641d8149e500d7752597a622",
+  "buildId": "57426872d096c495aab71155c8a40731e25e5fa3b5cfbdcacff47d067db57dee",
+  "manifestSha256": "8b8b0cf9f2d8946c3cdedadd76ed5046702912db51c3231aa743f15e643096c1",
+  "productionUrl": "https://nhiennhientran.github.io/hsk-hub/new-hsk1/hsk1/index.html",
+  "ciRun": 36968290517,
+  "ciPassed": true,
+  "liveRun": 36969161845,
+  "livePassed": true,
+  "liveWorkflowCommit": "d800d25a424bc20a05409c09daac7e69b0bb3ca8",
+  "liveAppSourceDiff": "only expected manifest added to source6ac4a451; no application/test change",
+  "pagesRun": 36969085286,
+  "pagesPassed": true,
+  "siteQaRun": 36969085794,
+  "siteQaStatus": "success",
+  "officialAudioQaRun": 36969085871,
+  "officialAudioQaStatus": "success",
+  "unitTests": 203,
+  "unitFailed": 0,
+  "unitSkipped": 0,
+  "releaseArchitecturePositiveNegativeChecks": 7,
+  "typedBuildCatalogFixturesAssetsStudentPublicAudit": "PASS",
+  "migrationFixtures": 12,
+  "content": {
+    "lessons": 15,
+    "homeworkTasks": 225,
+    "listeningTasks": 75,
+    "uniqueTasks": 300,
+    "sortAcceptedExpressions": 95,
+    "vocabularySenses": 344,
+    "wordForms": 319,
+    "wordAudioAvailable": 330,
+    "wordAudioUnavailableExplicit": 14,
+    "originalAudioTracks": 93,
+    "hanziAssets": 267,
+    "relativeToStep8": "content, scoring/review engines, media and dependency lock unchanged"
+  },
+  "publicPayload": {
+    "files": 402,
+    "bytes": 30022295,
+    "sourceMaps": 0,
+    "sourceMappingURLReferences": 0,
+    "plaintextOrReversibleCredentialCopies": 0,
+    "oneWayClassroomVerifier": "same previously public verifier, unchanged classroom password; WebCrypto missing/throw/reject fails closed",
+    "historyLimit": "unchanged old auth-patch.js and public Git history retain old classroom credential information; this frontend gate is not private-account security"
+  },
+  "artifacts": [
+    {
+      "id": 11210473914,
+      "name": "step9-shared-release",
+      "sha256": "c9131bb031fcfe53ec23fff6e4ee05d1246f9e3a10a523863b0fb22dc4af1b27",
+      "role": "single frozen public artifact consumed by both engines; no rebuild"
+    },
+    {
+      "id": 11209944120,
+      "name": "step9-chromium-evidence",
+      "sha256": "253ebfc44b7211bda60cbc1461e12e857213b8b6a6dab1833f125b66484c19c4"
+    },
+    {
+      "id": 11211185202,
+      "name": "step9-webkit-evidence",
+      "sha256": "701750d265c5a3c3419517cd19246bc7db8e651be4a26f130517385c7aad5637"
+    },
+    {
+      "id": 11210524261,
+      "name": "step9-live-chromium-evidence",
+      "sha256": "bad8290ac52a5b54e617f740e1bd29421c608305a7b9584fa798add6c5221356"
+    },
+    {
+      "id": 11210004760,
+      "name": "step9-live-webkit-evidence",
+      "sha256": "da7ec5b93c75c2ee04c2f873920795a2c687696fe7747f8dda5eae52dbfad2d3"
+    }
+  ],
+  "browserResults": {
+    "chromium": {
+      "full": {
+        "report": "step8-browser.json",
+        "sha256": "420bf42e6a591031dc6466890278e643e9d0d16842706557e06a9bf22d723d6f",
+        "passed": 78,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "retries": 0,
+        "startedAt": "2026-10-02T05:19:15.039Z",
+        "durationMs": 341874.674
+      },
+      "productionPath": {
+        "report": "step9-release.json",
+        "sha256": "409a46cddffe606f93b9772cb8ddc95d50d9bd711bc770e552ef94ab0888c338",
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "retries": 0,
+        "startedAt": "2026-10-02T05:24:57.790Z",
+        "durationMs": 17259.862999999998
+      },
+      "live": {
+        "report": "step9-live.json",
+        "sha256": "2836096b47025b573ccdb2b33534a3ee59f436ded80d6467a72858db6a965662",
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "retries": 0,
+        "startedAt": "2026-10-02T05:30:50.412Z",
+        "durationMs": 17418.502
+      }
+    },
+    "webkit": {
+      "full": {
+        "report": "step8-browser.json",
+        "sha256": "e896e2628b2c7e4d2779df0f7aff2ebc8940cb0c1fb3323bcb71fbd6d1b8ce66",
+        "passed": 78,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "retries": 0,
+        "startedAt": "2026-10-02T05:19:33.530Z",
+        "durationMs": 418301.32300000003
+      },
+      "productionPath": {
+        "report": "step9-release.json",
+        "sha256": "e7c5a8f492fa44d995eabcd573caf248a5d5a80858e28c646f1a2ee3ef37a84e",
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "retries": 0,
+        "startedAt": "2026-10-02T05:26:32.723Z",
+        "durationMs": 19541.69
+      },
+      "live": {
+        "report": "step9-live.json",
+        "sha256": "50275855ce2e70ab573a1a0d8b36d3c2ac57418cce000cb4328336ab3fd39479",
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "retries": 0,
+        "startedAt": "2026-10-02T05:30:40.369Z",
+        "durationMs": 24676.376
+      }
+    }
+  },
+  "deploymentScope": {
+    "changedFiles": 404,
+    "outsideTargetChanges": 0,
+    "deletions": 0,
+    "target": "new-hsk1/hsk1/",
+    "payloadPlusManifestPlusChecker": 404,
+    "otherCoursesPreserved": true
+  },
+  "recovery": {
+    "commit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
+    "branch": "backup/hsk1-pre-modular-step9-20261002",
+    "verifiedBeforePublication": true,
+    "dataRollback": "code restoration is not reverse migration; preserve modular backup/key and old keys"
+  },
+  "visualReview": {
+    "uniqueViews": 68,
+    "files": 76,
+    "widths": [
+      320,
+      390,
+      768,
+      1104
+    ],
+    "chromiumHashIdenticalToEarlierReviewed": 16,
+    "chromiumChangedViewsVisuallyInspected": 18,
+    "webkitHashIdenticalToEarlierReviewed": 14,
+    "webkitChangedViewsVisuallyInspected": 20,
+    "blockers": 0,
+    "limits": "post-login screenshots only; not live/auth/physical/audio/persistence proof"
+  },
+  "manualNotRun": [
+    "fresh language final review",
+    "human listening to every one of75 listening questions",
+    "physical iPhone/Safari and Android",
+    "actual system Chinese IME and soft keyboard",
+    "actual installed Chinese voice listening",
+    "production rollback drill"
+  ],
+  "unresolvedEngineeringReleaseBlockers": [],
+  "knownLimits": [
+    "beforeunload does not guarantee saving on forced process kill, power loss, or explicit user choice to leave",
+    "unsupported WebCrypto browsers fail closed",
+    "frontend classroom gate does not protect private accounts/content",
+    "code rollback does not reverse-migrate learning state"
+  ],
+  "historicalAttempts": [
+    {
+      "run": 36963676131,
+      "source": "a0ac617",
+      "mainPerEngine": 75,
+      "releasePerEnginePassed": 2,
+      "releasePerEngineFailed": 1,
+      "cause": "new smoke script clicked vocabulary play before required reveal; corrected test order without weakening assertion"
+    },
+    {
+      "run": 36964557056,
+      "source": "e00086a",
+      "mainPerEngine": 75,
+      "releasePerEngine": 3,
+      "limitation": "independent build source maps had differing internal IDs; not treated as one identical artifact"
+    },
+    {
+      "run": 36965473918,
+      "source": "e00086a",
+      "mainWebKit": 75,
+      "releaseWebKit": 3,
+      "purpose": "retest immutable Chromium artifact in WebKit; later superseded by user-approved hardening and final shared-artifact build"
+    }
+  ]
+}

@@ -14,7 +14,9 @@
     "step5StartCommit": "4c1569c3e0d830cf22758ba116f876512978c3d0",
     "step7StartCommit": "e06dbe7303a23906f8eea276ff39f06c5ac3c214",
     "step8StartCommit": "190802508f677a587e5c0ea983429a0bae1357b0",
-    "step9StartCommit": "55a497efe8096aa037216c55a878261e0fbe2224"
+    "step9StartCommit": "55a497efe8096aa037216c55a878261e0fbe2224",
+    "step9SourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+    "step9ProductionCommit": "f7d87df013d38613c11326088f27dff26532cc90"
   },
   "scope": {
     "currentStep": 9,
@@ -22,7 +24,7 @@
       9
     ],
     "runtimeChanged": true,
-    "productionPublished": false,
+    "productionPublished": true,
     "excluded": [
       "教师后台",
       "学生云帐号",
@@ -97,13 +99,22 @@
       ],
       "acceptance": "核对基线SHA、原路径diff、数据/媒体哈希、9步范围；第1步不改旧runtime、不发布。",
       "evidenceStatus": "scope",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 2,
           "status": "passed_for_step2_scope",
           "report": "docs/step2-acceptance.md",
           "limits": "仅统一外壳、路由、门禁及生命周期；完整功能、原域发布和真实媒体仍待目标阶段。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -127,13 +138,22 @@
       ],
       "acceptance": "比较有效数据和抽取JSON；15课逐模块浏览器回归，不以新增作业替代原练习。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 5,
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "15课五节、342教材行、45课文203行、40语法+3语音字段和150原练习验证；内容语言审校另记，不扩写为完整网站终验。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -154,13 +174,22 @@
       ],
       "acceptance": "按库存逐操作；Enter/空格翻卡；搜索中越/pinyin；刷新星标恢复；详情字切换和关闭可用。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 5,
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "搜索/翻卡/键盘/星标刷新/详情导航/例句及本地逐字笔顺验证；实体触屏、实际中文字体待第8步。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -182,13 +211,22 @@
       ],
       "acceptance": "真实播放整课及单词；边界、换课停止、无音按钮/提示核对；原音来源哈希一致。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 5,
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "330义项音段映射/14缺音、93原轨构建哈希；真实浏览器代表词音与3轨连播验证，未逐词人耳听辨。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -211,13 +249,22 @@
       ],
       "acceptance": "45篇数量与来源对照；逐场景/逐句呈现及播放；核销明确教材差异，保留说话人和顺序。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 5,
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "45场景203行字段及全播放入口核对；代表课1/10/15整轨、逐句片段原生播放，未逐句人耳认证。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -239,13 +286,22 @@
       ],
       "acceptance": "切换听力/显示原文；暂停/重播/教材速度选项；1—3跟读播放和提示；与独立听力规则分开验。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 5,
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "隐藏原文/听力模式/慢速/暂停/重播/离页停音及1—3绕口令原轨真实播放；原冻结教材未含绕口令文本，不新增猜测文本。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -268,13 +324,22 @@
       ],
       "acceptance": "抽取40+3计数，逐项字段对照；语法/语音例句播放与系统无中文voice提示；新语言审查另记状态。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 5,
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "40+3条解释/结构/例句与助力字段、明确TTS/无中文voice报错；中文voice启动与互斥由受控端口单测覆盖，未真人系统语音听辨。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -298,13 +363,22 @@
       ],
       "acceptance": "15课汉字专项字段对照；字/词详情中演示、练写、重置；切入可见区后画布正确；触屏待实体检。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 5,
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "267所需字符本地笔顺校验、专项/词详情动画/练写/重置/可见区尺寸/晚请求清理；17缺失按原库版本补齐来源许可；实体触屏留第8步。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -326,13 +400,22 @@
       ],
       "acceptance": "从同份教材生成原题；每课两层级题量/答案对照并实际提交重做；不恢复已禁用旧HSK题库。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 5,
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "原生成函数逐题对照150题；每课7基础+3进阶的控件提交/解析/重做验证，未答算错保持原规则，不写作业/独立听力成绩。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -358,7 +441,7 @@
       ],
       "acceptance": "旧URL映射、课次/节参数、后退前进/刷新/继续；课程阅读标记与作业完成分开。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 2,
@@ -371,6 +454,15 @@
           "status": "passed_for_step5_scope",
           "report": "docs/step5-acceptance.md",
           "limits": "五节/课次/前后导航/手动阅读完成/星标/首页继续/刷新恢复；打开模块仅表示访问，独立于阅读自标完成与作业成绩。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -390,13 +482,22 @@
       ],
       "acceptance": "数据检查225唯一ID、15×5/5/5；每课完成15题；若题意修改先核销来源而非重生成整库。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 4,
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "15课225题真实控件完整提交；稳定ID/来源/教学范围及冻结内容不变。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -417,13 +518,22 @@
       ],
       "acceptance": "75题全选项答案检查；正确/错误/未答路径；15课反馈显示；语言自然性不能由答案布尔测试认证。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 4,
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "75题四选项共300判断；15课自动反馈、正确答案/越语解析/选项原因与分数；不认证越语语言自然性。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -445,13 +555,22 @@
       ],
       "acceptance": "95条核定接受表达全部通过、每题明确错序拒绝；重复词块/空答/撤销/重排/键盘实测。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 4,
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "95条核定表达接受、75题明确错序拒绝；点选/撤销/清空/索引重复词块/键盘与排序顺序恢复；实体触摸留第8步。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -472,13 +591,22 @@
       ],
       "acceptance": "检查manual correct/results为null；UI/进度/备份没有译文判分；任意有效学生原文可提交；学生dist无教师答案。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 4,
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "75自由翻译有效任意原文提交；correct/results均null，不计自动分母，无教师参考译文；没有人工批改结果。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -498,13 +626,22 @@
       ],
       "acceptance": "各类型缺题、纯空白、重复提交、完整提交；组句需完整词块；错误提示可定位未答题。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 4,
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "缺题、空白、零宽字符、重复提交与全答提交；未提交新稿不覆盖已有提交。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -523,13 +660,22 @@
       ],
       "acceptance": "0/5客观分也能下一组；未提交不能进入；重做/刷新/迁移完成状态一致；可任意选择15课。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 4,
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "选择0/5可解锁排序，排序0/5规则可解锁翻译；重做/刷新保留完成；15课任意切换。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -552,13 +698,22 @@
       ],
       "acceptance": "部分提交/全提交/低分重做时核对分母和统计；翻译/听力/自评分别展示，避免300项均计对错。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 4,
           "status": "passed_for_step4_scope",
           "report": "docs/step4-acceptance.md",
           "limits": "每课15作业/10自动，课程225/150/75人工，实际作业页与公共摘要通过；独立听力和完整进度视图留第6/7步。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ],
       "step7Evidence": {
@@ -586,7 +741,7 @@
       ],
       "acceptance": "先错后对/多次重做/刷新/备份导入；首次保持原答和分数、最近变化；相容迁移不得伪造first。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 3,
@@ -613,6 +768,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ],
       "step7Evidence": {
@@ -639,7 +803,7 @@
       ],
       "acceptance": "提交A→重做写未完B→开截图仍为A；刷新/切课/导入后两份分别恢复；再次提交才更新提交稿。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 3,
@@ -660,6 +824,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -681,7 +854,7 @@
       ],
       "acceptance": "15课收据实测；320/390/768/1104长中越混排及换行；打印预览；仅提示学生发送老师，不声称老师已收到。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 4,
@@ -696,6 +869,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -719,7 +901,7 @@
       ],
       "acceptance": "1500字符中越混排+换行/输入中切换恢复；超长边界；composition流程模拟与真实手机中文输入分别记录。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 3,
@@ -740,6 +922,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -762,13 +953,22 @@
       ],
       "acceptance": "75唯一ID/15×5/选项及答案映射；75题实际作答、真实媒体ended；语义/人耳审查独立标记。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 6,
           "status": "passed_for_step6_scope",
           "report": "docs/step6-acceptance.md",
           "limits": "75题真实界面四选项及提交反馈；75元数据原轨/片段映射；代表1/10/15实际媒体。未新增75题真人耳听/语言终审。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -789,13 +989,22 @@
       ],
       "acceptance": "真实audio.playbackRate核对五档；播放中换速/暂停重播；评分与播放次数无关；恢复默认/用户选择规则明确。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 6,
           "status": "passed_for_step6_scope",
           "report": "docs/step6-acceptance.md",
           "limits": "五档实际playbackRate，暂停/继续/重播与真实开始计数，速度/次数不扣分；实体设备待后续。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -813,13 +1022,22 @@
       ],
       "acceptance": "提交前DOM/可访问文本不泄露；错误/正确提交后展示；换题/重做重新隐藏；教材听力模式另验。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 6,
           "status": "passed_for_step6_scope",
           "report": "docs/step6-acceptance.md",
           "limits": "提交前题目DOM无中文转写/拼音/反馈；提交后显示，换题/新轮次重新隐藏。静态内容JSON仍随网站提供。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -843,7 +1061,7 @@
       ],
       "acceptance": "真实媒体事件和边界；慢加载/503/缺文件重试；播放中切模块；过期加载不能启动上一题；不同播放器互斥。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 6,
@@ -858,6 +1076,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ],
       "step7Evidence": {
@@ -883,13 +1110,22 @@
       ],
       "acceptance": "单课/多课/全选/空选择/错误筛选；首次及最近错题；刷新继续；作业未做时可进听力。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 6,
           "status": "passed_for_step6_scope",
           "report": "docs/step6-acceptance.md",
           "limits": "单课/混课/全选/清选、全部/最近错题、队列及选项顺序/答案/位置/听次数刷新恢复。原逐题提交，未扩出考试模式。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -909,11 +1145,22 @@
       ],
       "acceptance": "1课、7+10等非连续课、全15、空选择；切模块/刷新恢复选择；计数与真实义项一致。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "step7_scope_implemented_see_acceptance",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "step7Evidence": {
         "report": "docs/step7-acceptance.md",
         "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
-      }
+      },
+      "stepEvidence": [
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
+        }
+      ]
     },
     {
       "id": "R028",
@@ -932,11 +1179,22 @@
       ],
       "acceptance": "344/319与唯一senseId；多义词抽查和跨课deck去重契约；有效来源信息/指纹不丢失；不能把342教材行当344义卡。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "step7_scope_implemented_see_acceptance",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "step7Evidence": {
         "report": "docs/step7-acceptance.md",
         "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
-      }
+      },
+      "stepEvidence": [
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
+        }
+      ]
     },
     {
       "id": "R029",
@@ -954,11 +1212,22 @@
       ],
       "acceptance": "各筛选用非空自评种子核对；两方向先隐藏答案、揭示/翻页；空集给可操作提示。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "step7_scope_implemented_see_acceptance",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "step7Evidence": {
         "report": "docs/step7-acceptance.md",
         "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
-      }
+      },
+      "stepEvidence": [
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
+        }
+      ]
     },
     {
       "id": "R030",
@@ -977,13 +1246,22 @@
       ],
       "acceptance": "固定时钟核对再次/困难/熟悉、重复自评、到期/早复习；重进会话和备份恢复；不扩成复杂自适应算法。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "step7_scope_implemented_see_acceptance",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 3,
           "status": "passed_for_step3_scope",
           "report": "docs/step3-acceptance.md",
           "limits": "非空三档schedule/部分review及不同senseId恢复，纯规则正文保留；复习UI与早复习完整流程待第7步。"
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ],
       "step7Evidence": {
@@ -1011,11 +1289,22 @@
       ],
       "acceptance": "330+14=344；每音引用存在/哈希/边界；14无音卡UI逐项检查且无虚构media；人工词音语义检查另记。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "step7_scope_implemented_see_acceptance",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "step7Evidence": {
         "report": "docs/step7-acceptance.md",
         "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
-      }
+      },
+      "stepEvidence": [
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
+        }
+      ]
     },
     {
       "id": "R032",
@@ -1037,11 +1326,22 @@
       ],
       "acceptance": "分类/extension/sourceSenseIds字段对照；来源页码与课次可查；界面计数解释；新语言审查不写成完成。",
       "evidenceStatus": "data",
-      "acceptanceStatus": "step7_scope_implemented_see_acceptance",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "step7Evidence": {
         "report": "docs/step7-acceptance.md",
         "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
-      }
+      },
+      "stepEvidence": [
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
+        }
+      ]
     },
     {
       "id": "R033",
@@ -1063,11 +1363,22 @@
       ],
       "acceptance": "非空跨领域种子核对统计及继续位置；阅读标记不冒充掌握/作业完成；切换和后退状态正确。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "step7_scope_implemented_see_acceptance",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "step7Evidence": {
         "report": "docs/step7-acceptance.md",
         "scope": "本步混课词义卡、复习及独立领域统计；同提交自动化结果按报告核对，人工语言/听辨和实体设备不冒称通过。"
-      }
+      },
+      "stepEvidence": [
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
+        }
+      ]
     },
     {
       "id": "R034",
@@ -1090,7 +1401,7 @@
       ],
       "acceptance": "旧教材读星标、learning_v2、stage1_v3、stage2_v3、stage3_v1非空样本；导出→新环境恢复；旧翻译选择只能归档。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 3,
@@ -1123,6 +1434,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ],
       "step7Evidence": {
@@ -1151,7 +1471,7 @@
       ],
       "acceptance": "故意故障注入后前后数据哈希和恢复路径；不显示假保存成功；在内存中保留未保存内容并可导出。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 3,
@@ -1184,6 +1504,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ],
       "step7Evidence": {
@@ -1211,7 +1540,7 @@
       ],
       "acceptance": "错误/正确口令、Enter、刷新/会话；原URL入口和返回选级；受测正式域实际验证，不借测试域绕过算通过。",
       "evidenceStatus": "code",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 2,
@@ -1232,6 +1561,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -1260,7 +1598,7 @@
       ],
       "acceptance": "第1步骨架build/typecheck；后续学生dist只有一套应用，不运行旧双app桥接/补丁链；审查依赖和职责。",
       "evidenceStatus": "architecture",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 2,
@@ -1275,6 +1613,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ],
       "step7Evidence": {
@@ -1305,7 +1652,7 @@
       ],
       "acceptance": "原引擎作为行为对照：相同输入得同结果；适用既有规则测试转接；数据语义/95答案/媒体哈希守恒。",
       "evidenceStatus": "architecture",
-      "acceptanceStatus": "pending_for_new_app",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 8,
@@ -1314,6 +1661,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -1340,7 +1696,7 @@
       ],
       "acceptance": "依赖审查：规则不依赖DOM/storage/media，视图仅本领域，服务无页面ID；新功能修改点可说明。",
       "evidenceStatus": "architecture",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 2,
@@ -1355,6 +1711,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ],
       "step7Evidence": {
@@ -1385,7 +1750,7 @@
       ],
       "acceptance": "4视口无横向溢出/截断，关键任务截图目检；WebKit与实体iOS/Android和中文IME分别记录，不互相代替。",
       "evidenceStatus": "scope",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 4,
@@ -1412,6 +1777,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -1434,7 +1808,7 @@
       ],
       "acceptance": "慢加载提前点击、快速切换、连续通知、反复挂载；ready依据真实初始化；相同状态不重复history写入。",
       "evidenceStatus": "architecture",
-      "acceptanceStatus": "partially_verified",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 2,
@@ -1467,6 +1841,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ],
       "step7Evidence": {
@@ -1493,7 +1876,7 @@
       ],
       "acceptance": "数据结构全量快检；适用规则检查；Chromium/WebKit完整浏览器要求维持；题目数不因浏览器数翻倍。",
       "evidenceStatus": "scope",
-      "acceptanceStatus": "pending_for_new_app",
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
       "stepEvidence": [
         {
           "step": 8,
@@ -1502,6 +1885,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -1525,7 +1917,7 @@
       ],
       "acceptance": "审查者/时间/问题/处理记录；不把ASR/PCM/hash/native ended或Playwright模拟写为人耳/实体通过。",
       "evidenceStatus": "scope",
-      "acceptanceStatus": "pending_for_new_app",
+      "acceptanceStatus": "manual_checks_not_run",
       "stepEvidence": [
         {
           "step": 8,
@@ -1534,6 +1926,15 @@
           "limits": "自动化跨模块/故障/布局及候选隔离；实体手机/IME、人耳、语言终审和正式域发布未执行。",
           "testedCodeCommit": "8effedf11ad04c3c3d19011ae80d1dd2f5a41318",
           "ciRun": 36961126745
+        },
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "manual_checks_not_run",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
         }
       ]
     },
@@ -1555,7 +1956,18 @@
       ],
       "acceptance": "锁定提交及dist哈希，部署后入口/口令/教材/作业/截图/听力/词汇/保存冒烟；回滚构建和地址恢复验证。",
       "evidenceStatus": "scope",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
+      "stepEvidence": [
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
+        }
+      ]
     },
     {
       "id": "R045",
@@ -1576,7 +1988,18 @@
       ],
       "acceptance": "第1步定义维护路径；第9步用实际工程写可复现小修改示例与必要测试；不增加教师后台、云收作业、AI批改。",
       "evidenceStatus": "scope",
-      "acceptanceStatus": "pending_for_new_app"
+      "acceptanceStatus": "engineering_verified_manual_limits_apply",
+      "stepEvidence": [
+        {
+          "step": 9,
+          "sourceCommit": "6ac4a451da89df88faffe387fac67d67f2b805a6",
+          "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36968290517",
+          "liveCi": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36969161845",
+          "report": "docs/step9-acceptance.md",
+          "status": "engineering_scope_verified",
+          "limits": "语言、人耳、实体设备/系统IME和中文voice未执行；生产回滚演练未执行"
+        }
+      ]
     }
   ],
   "baselineDataCounts": {
