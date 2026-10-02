@@ -575,6 +575,7 @@ test('exit protection captures an unreported composition tail before refresh, pr
   expect((await savedData(page, 'homework')).homework.lessons['10']!.translation!.latest).toBeNull();
   // Even rejected over-limit composition remains visible only in the DOM and must not silently disappear.
   const oversized = '字'.repeat(homework.MAX_TRANSLATION_LENGTH + 1);
+  await textarea.click(); // Reload cleared the previous document's sticky activation.
   await textarea.evaluate((node, value) => {
     node.dispatchEvent(new CompositionEvent('compositionstart', { bubbles: true }));
     (node as HTMLTextAreaElement).value = value;
