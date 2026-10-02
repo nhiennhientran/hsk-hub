@@ -1,1 +1,0 @@
-function e(e,t){let n,r=()=>{n!==void 0&&clearTimeout(n),n=void 0},i=()=>{t.aborted||e()};return document.addEventListener(`visibilitychange`,()=>{document.visibilityState===`visible`&&i()},{signal:t}),t.addEventListener(`abort`,r,{once:!0}),{schedule(e){r(),e!==null&&!t.aborted&&(n=setTimeout(i,Math.min(2147483647,Math.max(1,e-Date.now()+1))))},dispose:r}}export{e as t};
