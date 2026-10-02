@@ -1,3 +1,4 @@
+import { pairedAccessibleName, revealControl } from './ui-actions.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Page, type Locator } from '@playwright/test';
 import homework from '../../src/domain/homework/engine.js';
@@ -46,9 +47,9 @@ function manualReady(): string {
 
 test('homework labels, locked instructions and validation are paired without translating question content', async ({ page }) => {
   await open(page, 'homework');
-  await expect(page.locator('#homework-module h1')).toHaveAccessibleName('课后作业 · Bài tập');
-  await expect(page.locator('#homework-name')).toHaveAccessibleName('姓名 · Họ và tên');
-  await expect(page.locator('#homework-class')).toHaveAccessibleName('班级 · Lớp');
+  await expect(page.locator('#homework-module h1')).toHaveAccessibleName(pairedAccessibleName('课后作业 · Bài tập'));
+  await expect(page.locator('#homework-name')).toHaveAccessibleName(pairedAccessibleName('姓名 · Họ và tên'));
+  await expect(page.locator('#homework-class')).toHaveAccessibleName(pairedAccessibleName('班级 · Lớp'));
   await paired(page.locator('[data-homework-part="sort"]'));
   await expect(page.locator('[data-homework-part="sort"]')).toContainText('未解锁');
   await expect(page.locator('[data-homework-part="sort"]')).toContainText('Chưa mở');
@@ -81,8 +82,8 @@ test('manual receipt has paired profile, status and print controls while preserv
   await paired(page.locator('#homework-result'));
   await expect(page.locator('#homework-result')).toContainText('不自动评分');
   await page.locator('#receipt-latest').click();
-  await expect(page.locator('#receipt-title')).toHaveAccessibleName('作业提交单 · Phiếu bài tập đã nộp');
-  await expect(page.locator('#print-receipt')).toHaveAccessibleName('打印 / 存为 PDF · In / lưu PDF');
+  await expect(page.locator('#receipt-title')).toHaveAccessibleName(pairedAccessibleName('作业提交单 · Phiếu bài tập đã nộp'));
+  await expect(page.locator('#print-receipt')).toHaveAccessibleName(pairedAccessibleName('打印 / 存为 PDF · In / lưu PDF'));
   await expect(page.locator('#receipt-version option')).toHaveText(['首次 · Lần đầu', '最近 · Gần nhất']);
   await paired(page.locator('.receipt-submission'));
   await expect(page.locator('#homework-receipt [data-receipt-score], #homework-receipt [data-homework-feedback]')).toHaveCount(0);
@@ -122,14 +123,14 @@ for (const feature of ['homework', 'listening'] as const) test(`${feature} pendi
   await paired(page.locator(`#${feature}-save-status`));
   await expect(page.locator(`#${feature}-save-status`)).toContainText('存储空间已满');
   await expect(page.locator(`#${feature}-save-status`)).toContainText('Bộ nhớ đã đầy');
-  await expect(page.locator(`#retry-${feature}-save`)).toHaveAccessibleName('重试保存 · Thử lưu lại');
+  await expect(page.locator(`#retry-${feature}-save`)).toHaveAccessibleName(pairedAccessibleName('重试保存 · Thử lưu lại'));
   await expect(page.locator(`#retry-${feature}-save`)).toBeVisible();
 });
 
 test('listening 5/10/all controls, empty states and first/latest scores remain paired and independent', async ({ page }, testInfo) => {
   await open(page, 'listening');
-  await expect(page.locator('#listening-module h1')).toHaveAccessibleName('听力练习 · Luyện nghe');
-  await expect(page.locator('#listening-count')).toHaveAccessibleName('每轮题数 · Số câu mỗi lượt');
+  await expect(page.locator('#listening-module h1')).toHaveAccessibleName(pairedAccessibleName('听力练习 · Luyện nghe'));
+  await expect(page.locator('#listening-count')).toHaveAccessibleName(pairedAccessibleName('每轮题数 · Số câu mỗi lượt'));
   await expect(page.locator('#listening-count option')).toHaveText(['5 题 · 5 câu', '10 题 · 10 câu', '全部题目 · Tất cả câu']);
   await page.locator('#listening-none').click();
   await paired(page.locator('#listening-available'));
@@ -137,6 +138,7 @@ test('listening 5/10/all controls, empty states and first/latest scores remain p
   await page.locator('#listening-all').click();
   await page.locator('#listening-shuffle').uncheck();
   for (const count of ['5', '10', 'all']) {
+    await revealControl(page, '#listening-count');
     await page.locator('#listening-count').selectOption(count);
     await page.locator('#listening-start').click();
     await expect(page.locator('#listening-position [lang="zh"]')).toHaveText(`第 1 / ${count === 'all' ? 75 : count} 题`);
@@ -146,6 +148,7 @@ test('listening 5/10/all controls, empty states and first/latest scores remain p
   await expect(page.locator('#listening-question')).toHaveAttribute('data-question-id', first.id);
   await page.locator(`input[data-option-index="${(first.answer + 1) % 4}"]`).check();
   await page.locator('#listening-submit').click();
+  await revealControl(page, '#listening-redo');
   await page.locator('#listening-redo').click();
   await expect(page.locator('#listening-feedback, [data-listening-transcript]')).toHaveCount(0);
   await page.locator(`input[data-option-index="${first.answer}"]`).check();
@@ -157,7 +160,7 @@ test('listening 5/10/all controls, empty states and first/latest scores remain p
   await expect(page.locator('#listening-latest-score [lang="zh"]')).toContainText('1 / 1');
   await expect(page.locator('#listening-latest-score [lang="vi"]')).toContainText('1 / 1');
   await expect(page.locator('#listening-feedback')).toContainText(first.explanationVi);
-  await expect(page.locator('#listening-feedback h4')).toHaveAccessibleName('录音内容 · Nội dung đã nghe');
+  await expect(page.locator('#listening-feedback h4')).toHaveAccessibleName(pairedAccessibleName('录音内容 · Nội dung đã nghe'));
   for (const width of [320, 390, 768]) await fits(page, ['#listening-settings', '#listening-question', '#listening-feedback', '#listening-summary', '#listening-rate'], width);
   await testInfo.attach('bilingual-listening.png', { body: await page.screenshot({ fullPage: true }), contentType: 'image/png' });
 });

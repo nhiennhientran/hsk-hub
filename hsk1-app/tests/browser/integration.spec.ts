@@ -541,6 +541,7 @@ test('keyboard activation and synthetic composition/paste preserve exact multili
   await keyboardActivate(page.locator('#vocabulary-good'));
   await expect(page.locator('#vocabulary-next')).toBeFocused();
   await keyboardActivate(page.locator('#feature-nav [data-feature="homework"]'));
+  await ready(page, 'homework', 'choice');
   if (await page.locator('#homework-legacy-link').count()) { await revealControl(page, '#homework-legacy-link'); await keyboardActivate(page.locator('#homework-legacy-link')); } 
   await ready(page, 'homework', 'choice');
   await keyboardActivate(page.locator('[data-homework-part="translation"]'));

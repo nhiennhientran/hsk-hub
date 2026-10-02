@@ -62,10 +62,12 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
   resetSection.append(element('p', copy.resetDescription));
   const lessonLabel = element('label', copy.lessonLabel); lessonLabel.htmlFor = 'reset-lesson';
   const resetLesson = element('select'); resetLesson.id = 'reset-lesson';
+  const chooseLessonScope = element('option', '请选择 · Chọn phạm vi'); chooseLessonScope.value = ''; chooseLessonScope.disabled = true; chooseLessonScope.selected = true; resetLesson.append(chooseLessonScope);
   const allLessons = element('option', bilingualText(copy.allLessons)); allLessons.value = 'all'; resetLesson.append(allLessons);
   for (let id = 1; id <= 15; id++) { const option = element('option', bilingualText(dataLessonCopy(id))); option.value = String(id); resetLesson.append(option); }
   const moduleLabel = element('label', copy.moduleLabel); moduleLabel.htmlFor = 'reset-module';
   const resetModule = element('select'); resetModule.id = 'reset-module';
+  const chooseModuleScope = element('option', '请选择 · Chọn phạm vi'); chooseModuleScope.value = ''; chooseModuleScope.disabled = true; chooseModuleScope.selected = true; resetModule.append(chooseModuleScope);
   for (const name of ['all', ...RESET_MODULES] as const) { const option = element('option', bilingualText(moduleLabels[name])); option.value = name; resetModule.append(option); }
   const resetAction = button('preview-reset', copy.previewReset);
   const resetControls = element('div'); resetControls.className = 'data-actions data-reset-controls';
@@ -96,7 +98,7 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
     exportOriginal.hidden = current.status !== 'corrupt';
     restore.disabled = busy || !current.hasRecovery || !current.canWrite || current.status === 'conflict';
     reload.disabled = busy;
-    resetAction.disabled = busy || !current.canWrite || current.status === 'conflict';
+    resetAction.disabled = busy || !current.canWrite || current.status === 'conflict' || !resetLesson.value || !resetModule.value;
     resetLesson.disabled = busy; resetModule.disabled = busy;
     confirm.disabled = busy || !pending || !current.canWrite || current.status === 'conflict';
     exportPreview.disabled = !pending;
@@ -206,7 +208,7 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
     finally { if (alive() && currentRead === readId) fileInput.value = ''; }
   }, { signal: controller.signal });
   resetAction.addEventListener('click', () => {
-    if (!alive() || busy) return;
+    if (!alive() || busy || !resetLesson.value || !resetModule.value) return;
     readId++; clearPreview();
     try {
       const result = compatibility.reset(store.snapshot().data, { module: resetModule.value as ResetModule | 'all',
@@ -215,7 +217,8 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
     } catch { reportError(copy.resetPreviewError); }
   }, { signal: controller.signal });
   for (const select of [resetLesson, resetModule]) select.addEventListener('change', () => {
-    if (pending?.reason === 'reset') { clearPreview(); actionMessage = copy.scopeChanged; render(); }
+    if (pending?.reason === 'reset') { clearPreview(); actionMessage = copy.scopeChanged; }
+    render();
   }, { signal: controller.signal });
   confirm.addEventListener('click', () => { if (pending) {
     const candidate = pending;

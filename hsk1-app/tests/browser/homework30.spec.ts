@@ -122,3 +122,25 @@ test('mobile homework puts tasks first and keeps all five parts reachable in one
   await expect.poll(() => page.locator('[data-homework-part="translation"]').evaluate(anchor => { const item = anchor.getBoundingClientRect(), row = anchor.parentElement!.getBoundingClientRect(); return item.left >= row.left - 1 && item.right <= row.right + 1; })).toBe(true);
   await page.locator('#homework-study-details-toggle').click(); await expect(page.locator('#export-homework-backup')).toBeVisible(); await expect(page.locator('[data-homework-version]')).toContainText('25');
 });
+
+
+test('a new-version save failure exposes immediate export without opening secondary tools', async ({ page }) => {
+  await login(page); await page.goto('/#/homework?lesson=1&part=choice&version=30-v1'); await ready(page, 'choice');
+  const before = await page.evaluate(key => localStorage.getItem(key), key);
+  await page.evaluate(key => {
+    const original = Storage.prototype.setItem;
+    Storage.prototype.setItem = function (name, value) { if (this === localStorage && name === key) throw new DOMException('Full', 'QuotaExceededError'); return original.call(this, name, value); };
+  }, key);
+  const input = page.locator('.homework-question input').first(); const id = await input.getAttribute('data-answer-id'); const value = Number(await input.getAttribute('value'));
+  await input.check();
+  await expect(page.locator('#homework-save-status')).toHaveAttribute('data-failed', 'true');
+  await expect(page.locator('#homework-study-details')).not.toHaveAttribute('open');
+  await expect(page.locator('.homework-save #export-homework-backup')).toBeVisible();
+  await expect(page.locator('#retry-homework-save')).toBeVisible();
+  expect(await page.evaluate(key => localStorage.getItem(key), key)).toBe(before);
+  const pending = page.waitForEvent('download'); await page.locator('#export-homework-backup').click(); const download = await pending;
+  const stream = await download.createReadStream(); const chunks: Buffer[] = []; for await (const chunk of stream!) chunks.push(Buffer.from(chunk));
+  const backup = JSON.parse(Buffer.concat(chunks).toString('utf8'));
+  expect(backup.data.homework30.lessons['1'].choice.draft[id!]).toBe(value);
+  expect(backup.data.homework).toEqual(JSON.parse(before!).data.homework);
+});

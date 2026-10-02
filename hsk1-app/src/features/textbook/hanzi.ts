@@ -179,9 +179,9 @@ export function mountHanzi(host: HTMLElement, {chars, words = [], curriculum, si
     }
     const linkedWords = [...new Set(words.filter(word => word.zh.includes(character)).map(word => word.zh))];
     const associations = element('p');
-    if (linkedWords.length) { setBilingual(associations, copy.words); associations.append(document.createTextNode(`: ${linkedWords.join(' · ')}`)); }
+    if (linkedWords.length) setBilingual(associations, { zh: `${copy.words.zh}：${linkedWords.join(' · ')}`, vi: `${copy.words.vi}: ${linkedWords.join(' · ')}` });
     associations.dataset.hanziWords = '';
-    details.replaceChildren(heading, associations, count, canvas, actions, status);
+    details.replaceChildren(heading, canvas, actions, count, associations, status);
     updateMode('loading', copy.loading);
     try {
       const data = await loadCharacter(character, controller.signal);

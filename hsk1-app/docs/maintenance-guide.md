@@ -1,5 +1,7 @@
 # HSK 1 发布后维护指南
 
+> 本预览分支已增加严格30题的新版本与四组导航；本轮尚未发布。请先读 [simplification-preview.md](simplification-preview.md) 和 [homework30-versioning.md](homework30-versioning.md)。下述225题、330练习入口等恢复版本数量仍是旧版历史，不是新学生额外作业。
+
 本指南面向维护仓库的开发者，说明在哪里修改、如何验证，以及哪些修改会影响学生现有记录。学生操作见 [student-guide.md](student-guide.md)，教师收据与成绩口径见 [teacher-guide.md](teacher-guide.md)。示例是后续维护步骤，不是本次变更清单。恢复功能已获预览确认并发布。受测范围见 [legacy-restoration-acceptance.md](legacy-restoration-acceptance.md)，实际生产提交、线上核验及恢复点见 [legacy-restoration-production.md](legacy-restoration-production.md)。
 
 ## 工作目录与边界
@@ -21,13 +23,15 @@ Node 要求 `>=22.12.0`；依赖以 `package.json` 和 `package-lock.json` 为�
 | 要改什么 | 首先查看 |
 |---|---|
 | 教材词义、课文、语法、语音、汉字专项 | `content/textbook.json`、`src/services/content/textbook.ts`、`src/features/textbook/` |
-| 选择题、排序题、自写翻译题干 | `content/stage2-bank.json`、`src/services/content/homework.ts` |
-| 作业评分、完整提交、解锁、首次与最近 | `src/domain/homework/engine.js`、`src/features/homework/controller.ts` |
+| 旧版15题作业的选择、排序、自写翻译题干 | `content/stage2-bank.json`、`src/services/content/homework.ts` |
+| 旧版作业评分、完整提交、解锁、首次与最近 | `src/domain/homework/engine.js`、`src/features/homework/controller.ts` |
 | 听力题和词卡义项 | `content/stage3-catalog.json`、`src/services/content/listening.ts`、`src/services/content/vocabulary.ts` |
 | 词卡复习间隔、听力提交规则 | `src/domain/practice/engine.js`；对应控制器在 `src/domain/vocabulary/`、`src/domain/listening/` |
 | 原音索引、片段边界、构建复制 | `content/media-references.json`、`tools/course-assets.ts`、`tools/check-course-assets.mjs` |
 | 作业收据和打印 | `src/features/homework/receipt.ts`、`receipt.css` |
-| 导航和新增入口 | `src/app/contracts.ts`、`labels.ts`、`main.ts`、`router.ts` |
+| 导航分组和新增入口 | `src/app/navigation.ts`、`contracts.ts`、`labels.ts`、`main.ts`、`router.ts` |
+| 新版30题作业与来源映射 | `content/homework30-bank.json`、`tools/homework30-content.mjs`、`docs/homework30-mapping.json` |
+| 新版作业评分/状态/继续 | `src/domain/homework30/engine.ts`、`features/homework/controller30.ts`、`services/learning/homework30-progress.ts` |
 | 保存、导入、迁移、恢复 | `src/services/storage/index.ts`、`compatibility.ts`、`src/services/learning/session.ts` |
 | 原版练习、pilot、逐题错题/到期复习 | `content/legacy-exercises.json`、`src/domain/exercises/`、`src/features/exercises/`、`src/features/review/index.ts` |
 | 教材恢复目标、词卡例句与搜索 | `content/textbook-restored-targets.json`、`src/domain/textbook/practice.ts`、`src/services/content/vocabulary.ts`、`src/features/vocabulary/view.ts` |
@@ -179,7 +183,7 @@ npm run test:smoke -- tests/browser/media.spec.ts tests/browser/listening.spec.t
 
 1. 新建 `src/features/help/index.ts`，导出 `mount(host, context): MountHandle`。返回真实 `ready` 和幂等 `unmount`；异步完成前检查 `context.signal`，监听、计时器、请求在退出时清理
 2. 在 `src/app/contracts.ts::FEATURES` 加入 `help`，在 `src/app/labels.ts::featureLabels` 加入对应越语标签
-3. 在 `src/app/main.ts::loaders` 加入 `help: () => import('../features/help/index.ts')`；主导航由 `FEATURES` 生成，不另造一套导航
+3. 在 `src/app/main.ts::loaders` 加入 `help: () => import('../features/help/index.ts')`；主导航由 `navigation.ts` 的四个显示组生成。`FEATURES` 保留路由身份，新增模块须显式归入一个显示组，不把每个模块自动加成顶级标签
 4. 普通无额外参数的入口可使用现有 `#/help?lesson=1` 形式。特殊参数或历史地址映射才修改 `src/app/router.ts`。视图用 `context.navigate` 或 `routeHref`，不得直接写 `history`
 5. 静态帮助页不需要新学习存储。确需记录继续位置时，审查 `src/services/storage/compatibility.ts`、`src/services/learning/progress.ts` 与 `src/features/progress/` 对新领域的处理；不要建立第二个store或播放器
 6. 补 `tests/router.test.mjs` 的解析/规范化、同路由不重复写history、返回前进；补 `tests/browser/navigation.spec.ts`、`tests/browser/scaffold.spec.ts` 的打开、刷新、慢加载、快速退出和失败重试。新旧地址同时涉及发布时，再补 `tests/browser/release.spec.ts`

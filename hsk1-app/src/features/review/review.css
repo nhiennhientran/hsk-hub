@@ -8,3 +8,5 @@
 .review-hub .bilingual-vi { display: block; margin-top: .2em; font-size: max(15px, .95rem); line-height: 1.5; }
 .review-hub .bilingual-separator { display: none; }
 @media (min-width: 900px) { .review-paths { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; } .review-paths a { padding: 26px 4px; } }
+
+.review-hub h1 > .bilingual-vi { font-size: 1.0625rem; }

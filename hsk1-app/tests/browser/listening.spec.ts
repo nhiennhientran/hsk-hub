@@ -330,7 +330,7 @@ test('native original MP3 segments in lessons 1, 10 and 15 advance, stop within 
   await observeNative(page);
   await page.goto('/#/listening?lesson=1');
   for (const lesson of [1, 10, 15]) {
-    if (lesson !== 1) await page.locator('#lesson-select').selectOption(String(lesson));
+    if (lesson !== 1) await page.evaluate(lesson => { location.hash = `#/listening?lesson=${lesson}`; }, lesson);
     await ready(page, lesson);
     await start(page, [lesson]);
     await page.locator('#listening-rate').selectOption('1.5');
@@ -428,14 +428,14 @@ test('an MP3 HTTP failure can retry; a superseded delayed response cannot count,
   await playing(page, first);
   let delayed: Route | undefined;
   await page.route('**/course-assets/audio/15-6.mp3', route => { delayed = route; });
-  await page.locator('#lesson-select').selectOption('15');
+  await page.evaluate(() => { location.hash = '#/listening?lesson=15'; });
   await ready(page, 15);
   await start(page, [15]);
   await page.locator('#listening-play').click();
   await expect.poll(() => Boolean(delayed)).toBe(true);
   await expect(page.locator('#listening-audio-status')).toHaveAttribute('data-state', 'loading');
   expect((await data(page)).practice.listening.session.responses['l15-listen-01'].listenCount).toBe(0);
-  await page.locator('#lesson-select').selectOption('10');
+  await page.evaluate(() => { location.hash = '#/listening?lesson=10'; });
   await ready(page, 10);
   await start(page, [10]);
   await page.locator('#listening-play').click();

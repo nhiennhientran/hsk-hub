@@ -1,0 +1,271 @@
+{
+  "sourceCommit": "a63e64775345d3a155deb3bfdd0849803fa014b1",
+  "sourceBankSha256": "2eabb473486eb9ede2af17df8605293ce115ab2ec1b56e199bb004f7f9597840",
+  "synthetic": true,
+  "note": "Unreleased engineering candidate; synthetic data only. No student history or production migration.",
+  "envelope": {
+    "app": "hsk1-modular",
+    "schema": 1,
+    "revision": 1,
+    "updatedAt": 1790812800000,
+    "data": {
+      "reading": {
+        "lessons": {},
+        "mastered": {},
+        "modules": {}
+      },
+      "homework": {
+        "app": "hsk1-stage2",
+        "schema": 3,
+        "lessons": {},
+        "profile": {
+          "name": "",
+          "className": ""
+        },
+        "words": {},
+        "questionReviews": {},
+        "preferences": {},
+        "archive": {},
+        "updatedAt": null
+      },
+      "homework30": {
+        "version": "hsk1-homework-30-v1",
+        "lessons": {
+          "1": {
+            "choice": {
+              "draft": {
+                "hw30-v1-l01-choice-01": 1,
+                "hw30-v1-l01-choice-02": 2,
+                "hw30-v1-l01-choice-03": 0,
+                "hw30-v1-l01-choice-04": 3,
+                "hw30-v1-l01-choice-05": 2,
+                "hw30-v1-l01-choice-06": 2,
+                "hw30-v1-l01-choice-07": 0,
+                "hw30-v1-l01-choice-08": 1,
+                "hw30-v1-l01-choice-09": 3,
+                "hw30-v1-l01-choice-10": 1
+              },
+              "orders": {},
+              "first": {
+                "assessment": "automatic",
+                "answers": {
+                  "hw30-v1-l01-choice-01": 1,
+                  "hw30-v1-l01-choice-02": 2,
+                  "hw30-v1-l01-choice-03": 0,
+                  "hw30-v1-l01-choice-04": 3,
+                  "hw30-v1-l01-choice-05": 2,
+                  "hw30-v1-l01-choice-06": 2,
+                  "hw30-v1-l01-choice-07": 0,
+                  "hw30-v1-l01-choice-08": 1,
+                  "hw30-v1-l01-choice-09": 3,
+                  "hw30-v1-l01-choice-10": 1
+                },
+                "results": {
+                  "hw30-v1-l01-choice-01": true,
+                  "hw30-v1-l01-choice-02": true,
+                  "hw30-v1-l01-choice-03": true,
+                  "hw30-v1-l01-choice-04": true,
+                  "hw30-v1-l01-choice-05": true,
+                  "hw30-v1-l01-choice-06": true,
+                  "hw30-v1-l01-choice-07": true,
+                  "hw30-v1-l01-choice-08": true,
+                  "hw30-v1-l01-choice-09": true,
+                  "hw30-v1-l01-choice-10": true
+                },
+                "correct": 10,
+                "total": 10,
+                "at": 1790812800000,
+                "questionFingerprints": {
+                  "hw30-v1-l01-choice-01": "8a118a805bf0dd790a1b6bdb539c4a43897d2a99a0a0f0bf8519c8ff25850ed2",
+                  "hw30-v1-l01-choice-02": "62924dfe18eb24981cf6285be1b9f38da460592888f1cc0f7e2ef812771e6632",
+                  "hw30-v1-l01-choice-03": "9a064b2d4e9d7bf98ef78f9eb3b376f924935ab7aa26c5bbe591659867578f50",
+                  "hw30-v1-l01-choice-04": "b80e9646d6c4c7f2c9aafdef6603ddf4b45af7f4d7f2a9759c06db6472f45abe",
+                  "hw30-v1-l01-choice-05": "af997d7b05c58a551c5c8ba7b091f7212bf77fdba7e05e7ba51ee13b572179f9",
+                  "hw30-v1-l01-choice-06": "ae8161ceff22ac1342f5bd1cc3b68920591213b170d2ad07aca53de458f170a2",
+                  "hw30-v1-l01-choice-07": "e02ff2ba1db78fbe1521c4237e9550e4c9b314214ace5d981c5262f747eb9f8b",
+                  "hw30-v1-l01-choice-08": "f17d99a05fd3683dce10e67c326df4dcbbff7fc300e674f7d3c2076f85cd95db",
+                  "hw30-v1-l01-choice-09": "52cb00936b1da605839aa9e8904db5fa916a03818c8d2b03740a590e4dce9a88",
+                  "hw30-v1-l01-choice-10": "654c430f865cd28c2dcf8f256ce68c4863fdf9ba9923f03c96d546f634485dca"
+                }
+              },
+              "attempt": {
+                "assessment": "automatic",
+                "answers": {
+                  "hw30-v1-l01-choice-01": 1,
+                  "hw30-v1-l01-choice-02": 2,
+                  "hw30-v1-l01-choice-03": 0,
+                  "hw30-v1-l01-choice-04": 3,
+                  "hw30-v1-l01-choice-05": 2,
+                  "hw30-v1-l01-choice-06": 2,
+                  "hw30-v1-l01-choice-07": 0,
+                  "hw30-v1-l01-choice-08": 1,
+                  "hw30-v1-l01-choice-09": 3,
+                  "hw30-v1-l01-choice-10": 1
+                },
+                "results": {
+                  "hw30-v1-l01-choice-01": true,
+                  "hw30-v1-l01-choice-02": true,
+                  "hw30-v1-l01-choice-03": true,
+                  "hw30-v1-l01-choice-04": true,
+                  "hw30-v1-l01-choice-05": true,
+                  "hw30-v1-l01-choice-06": true,
+                  "hw30-v1-l01-choice-07": true,
+                  "hw30-v1-l01-choice-08": true,
+                  "hw30-v1-l01-choice-09": true,
+                  "hw30-v1-l01-choice-10": true
+                },
+                "correct": 10,
+                "total": 10,
+                "at": 1790812800000,
+                "questionFingerprints": {
+                  "hw30-v1-l01-choice-01": "8a118a805bf0dd790a1b6bdb539c4a43897d2a99a0a0f0bf8519c8ff25850ed2",
+                  "hw30-v1-l01-choice-02": "62924dfe18eb24981cf6285be1b9f38da460592888f1cc0f7e2ef812771e6632",
+                  "hw30-v1-l01-choice-03": "9a064b2d4e9d7bf98ef78f9eb3b376f924935ab7aa26c5bbe591659867578f50",
+                  "hw30-v1-l01-choice-04": "b80e9646d6c4c7f2c9aafdef6603ddf4b45af7f4d7f2a9759c06db6472f45abe",
+                  "hw30-v1-l01-choice-05": "af997d7b05c58a551c5c8ba7b091f7212bf77fdba7e05e7ba51ee13b572179f9",
+                  "hw30-v1-l01-choice-06": "ae8161ceff22ac1342f5bd1cc3b68920591213b170d2ad07aca53de458f170a2",
+                  "hw30-v1-l01-choice-07": "e02ff2ba1db78fbe1521c4237e9550e4c9b314214ace5d981c5262f747eb9f8b",
+                  "hw30-v1-l01-choice-08": "f17d99a05fd3683dce10e67c326df4dcbbff7fc300e674f7d3c2076f85cd95db",
+                  "hw30-v1-l01-choice-09": "52cb00936b1da605839aa9e8904db5fa916a03818c8d2b03740a590e4dce9a88",
+                  "hw30-v1-l01-choice-10": "654c430f865cd28c2dcf8f256ce68c4863fdf9ba9923f03c96d546f634485dca"
+                }
+              },
+              "latest": {
+                "assessment": "automatic",
+                "answers": {
+                  "hw30-v1-l01-choice-01": 1,
+                  "hw30-v1-l01-choice-02": 2,
+                  "hw30-v1-l01-choice-03": 0,
+                  "hw30-v1-l01-choice-04": 3,
+                  "hw30-v1-l01-choice-05": 2,
+                  "hw30-v1-l01-choice-06": 2,
+                  "hw30-v1-l01-choice-07": 0,
+                  "hw30-v1-l01-choice-08": 1,
+                  "hw30-v1-l01-choice-09": 3,
+                  "hw30-v1-l01-choice-10": 1
+                },
+                "results": {
+                  "hw30-v1-l01-choice-01": true,
+                  "hw30-v1-l01-choice-02": true,
+                  "hw30-v1-l01-choice-03": true,
+                  "hw30-v1-l01-choice-04": true,
+                  "hw30-v1-l01-choice-05": true,
+                  "hw30-v1-l01-choice-06": true,
+                  "hw30-v1-l01-choice-07": true,
+                  "hw30-v1-l01-choice-08": true,
+                  "hw30-v1-l01-choice-09": true,
+                  "hw30-v1-l01-choice-10": true
+                },
+                "correct": 10,
+                "total": 10,
+                "at": 1790812800000,
+                "questionFingerprints": {
+                  "hw30-v1-l01-choice-01": "8a118a805bf0dd790a1b6bdb539c4a43897d2a99a0a0f0bf8519c8ff25850ed2",
+                  "hw30-v1-l01-choice-02": "62924dfe18eb24981cf6285be1b9f38da460592888f1cc0f7e2ef812771e6632",
+                  "hw30-v1-l01-choice-03": "9a064b2d4e9d7bf98ef78f9eb3b376f924935ab7aa26c5bbe591659867578f50",
+                  "hw30-v1-l01-choice-04": "b80e9646d6c4c7f2c9aafdef6603ddf4b45af7f4d7f2a9759c06db6472f45abe",
+                  "hw30-v1-l01-choice-05": "af997d7b05c58a551c5c8ba7b091f7212bf77fdba7e05e7ba51ee13b572179f9",
+                  "hw30-v1-l01-choice-06": "ae8161ceff22ac1342f5bd1cc3b68920591213b170d2ad07aca53de458f170a2",
+                  "hw30-v1-l01-choice-07": "e02ff2ba1db78fbe1521c4237e9550e4c9b314214ace5d981c5262f747eb9f8b",
+                  "hw30-v1-l01-choice-08": "f17d99a05fd3683dce10e67c326df4dcbbff7fc300e674f7d3c2076f85cd95db",
+                  "hw30-v1-l01-choice-09": "52cb00936b1da605839aa9e8904db5fa916a03818c8d2b03740a590e4dce9a88",
+                  "hw30-v1-l01-choice-10": "654c430f865cd28c2dcf8f256ce68c4863fdf9ba9923f03c96d546f634485dca"
+                }
+              },
+              "completed": true,
+              "history": [
+                {
+                  "assessment": "automatic",
+                  "answers": {
+                    "hw30-v1-l01-choice-01": 1,
+                    "hw30-v1-l01-choice-02": 2,
+                    "hw30-v1-l01-choice-03": 0,
+                    "hw30-v1-l01-choice-04": 3,
+                    "hw30-v1-l01-choice-05": 2,
+                    "hw30-v1-l01-choice-06": 2,
+                    "hw30-v1-l01-choice-07": 0,
+                    "hw30-v1-l01-choice-08": 1,
+                    "hw30-v1-l01-choice-09": 3,
+                    "hw30-v1-l01-choice-10": 1
+                  },
+                  "results": {
+                    "hw30-v1-l01-choice-01": true,
+                    "hw30-v1-l01-choice-02": true,
+                    "hw30-v1-l01-choice-03": true,
+                    "hw30-v1-l01-choice-04": true,
+                    "hw30-v1-l01-choice-05": true,
+                    "hw30-v1-l01-choice-06": true,
+                    "hw30-v1-l01-choice-07": true,
+                    "hw30-v1-l01-choice-08": true,
+                    "hw30-v1-l01-choice-09": true,
+                    "hw30-v1-l01-choice-10": true
+                  },
+                  "correct": 10,
+                  "total": 10,
+                  "at": 1790812800000,
+                  "questionFingerprints": {
+                    "hw30-v1-l01-choice-01": "8a118a805bf0dd790a1b6bdb539c4a43897d2a99a0a0f0bf8519c8ff25850ed2",
+                    "hw30-v1-l01-choice-02": "62924dfe18eb24981cf6285be1b9f38da460592888f1cc0f7e2ef812771e6632",
+                    "hw30-v1-l01-choice-03": "9a064b2d4e9d7bf98ef78f9eb3b376f924935ab7aa26c5bbe591659867578f50",
+                    "hw30-v1-l01-choice-04": "b80e9646d6c4c7f2c9aafdef6603ddf4b45af7f4d7f2a9759c06db6472f45abe",
+                    "hw30-v1-l01-choice-05": "af997d7b05c58a551c5c8ba7b091f7212bf77fdba7e05e7ba51ee13b572179f9",
+                    "hw30-v1-l01-choice-06": "ae8161ceff22ac1342f5bd1cc3b68920591213b170d2ad07aca53de458f170a2",
+                    "hw30-v1-l01-choice-07": "e02ff2ba1db78fbe1521c4237e9550e4c9b314214ace5d981c5262f747eb9f8b",
+                    "hw30-v1-l01-choice-08": "f17d99a05fd3683dce10e67c326df4dcbbff7fc300e674f7d3c2076f85cd95db",
+                    "hw30-v1-l01-choice-09": "52cb00936b1da605839aa9e8904db5fa916a03818c8d2b03740a590e4dce9a88",
+                    "hw30-v1-l01-choice-10": "654c430f865cd28c2dcf8f256ce68c4863fdf9ba9923f03c96d546f634485dca"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "profile": {
+          "name": "",
+          "className": ""
+        },
+        "updatedAt": 1790812800000
+      },
+      "practice": {
+        "app": "hsk1-stage3",
+        "schema": 1,
+        "sequence": 0,
+        "updatedAt": null,
+        "preferences": {
+          "module": "listening",
+          "lessons": [
+            1
+          ],
+          "listeningMode": "all",
+          "vocabularyFilter": "all",
+          "direction": "zh-vi",
+          "shuffle": true,
+          "rate": 1
+        },
+        "listening": {
+          "records": {},
+          "session": null
+        },
+        "cards": {
+          "schedule": {},
+          "review": null
+        }
+      },
+      "exercises": {
+        "schema": 1,
+        "drafts": {},
+        "records": {},
+        "positions": {},
+        "retrying": []
+      },
+      "navigation": {
+        "feature": "homework",
+        "lesson": 1,
+        "part": "choice",
+        "homeworkVersion": "30-v1"
+      },
+      "legacyRaw": {}
+    },
+    "recovery": null
+  }
+}

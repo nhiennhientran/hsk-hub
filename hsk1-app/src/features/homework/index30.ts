@@ -127,7 +127,11 @@ export const mountHomework30: FeatureModule['mount'] = (host, context) => {
       const current = session.store.snapshot(); saveStatus.dataset.state = current.status;
       setBilingual(saveStatus, current.status === 'saved' && !current.issue ? { zh: '已保存到本设备', vi: 'Đã lưu trên thiết bị này' } : assignmentSaveCopy(current));
       saveStatus.dataset.failed = String(assignmentSaveFailed(current));
-      retrySave.hidden = !assignmentSaveFailed(current);
+      const saveFailed = assignmentSaveFailed(current);
+      retrySave.hidden = !saveFailed;
+      // Recovery must stay immediately reachable even when secondary tools are collapsed.
+      const toolsHost = saveFailed ? saveBox : studyDetails;
+      if (saveActions.parentElement !== toolsHost) toolsHost.append(saveActions);
       retrySave.disabled = current.status === 'saving' || !current.canWrite;
       for (const anchor of nav.querySelectorAll<HTMLAnchorElement>('a[data-homework-part]')) {
         const target = anchor.dataset.homeworkPart as typeof part;

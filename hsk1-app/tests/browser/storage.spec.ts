@@ -312,6 +312,8 @@ test('scoped reset requires preview confirmation, cancellation preserves data, a
   const beforeRaw = (await currentRaw(page))!, before = JSON.parse(beforeRaw);
   await page.locator('#reset-lesson').selectOption('1');
   await page.locator('#reset-module').selectOption('homework');
+  if (!await page.locator('#reset-lesson').inputValue()) await page.locator('#reset-lesson').selectOption('all');
+  if (!await page.locator('#reset-module').inputValue()) await page.locator('#reset-module').selectOption('all');
   await page.locator('#preview-reset').click();
   await expect(page.locator('#migration-preview')).toHaveAttribute('data-reason', 'reset');
   await expect(page.locator('#migration-preview')).toContainText('Bài 1');
@@ -319,11 +321,15 @@ test('scoped reset requires preview confirmation, cancellation preserves data, a
   expect(await currentRaw(page)).toBe(beforeRaw);
   await page.locator('#cancel-data-import').click();
   expect(await currentRaw(page)).toBe(beforeRaw);
+  if (!await page.locator('#reset-lesson').inputValue()) await page.locator('#reset-lesson').selectOption('all');
+  if (!await page.locator('#reset-module').inputValue()) await page.locator('#reset-module').selectOption('all');
   await page.locator('#preview-reset').click();
   await page.locator('#reset-lesson').selectOption('15');
   await expect(page.locator('#migration-preview')).toBeHidden();
   await expect(page.locator('#confirm-data-import')).toBeDisabled();
   await page.locator('#reset-lesson').selectOption('1');
+  if (!await page.locator('#reset-lesson').inputValue()) await page.locator('#reset-lesson').selectOption('all');
+  if (!await page.locator('#reset-module').inputValue()) await page.locator('#reset-module').selectOption('all');
   await page.locator('#preview-reset').click();
   await page.locator('#confirm-data-import').click();
   await expect(page.locator('#data-status')).toHaveAttribute('data-state', 'saved');
@@ -346,6 +352,8 @@ test('scoped reset requires preview confirmation, cancellation preserves data, a
 test('failed reset preserves current state and previous recovery, and leaving aborts a queued reset', async ({ page }) => {
   await seedLegacy(page); await openManager(page); await migrate(page);
   const before = (await currentRaw(page))!;
+  if (!await page.locator('#reset-lesson').inputValue()) await page.locator('#reset-lesson').selectOption('all');
+  if (!await page.locator('#reset-module').inputValue()) await page.locator('#reset-module').selectOption('all');
   await page.locator('#preview-reset').click();
   await page.evaluate(stateKey => {
     const original = Storage.prototype.setItem;
@@ -360,6 +368,8 @@ test('failed reset preserves current state and previous recovery, and leaving ab
   expect(await currentRaw(page)).toBe(before);
   await page.evaluate(() => (window as any).__restoreStorage());
   await page.locator('#cancel-data-import').click();
+  if (!await page.locator('#reset-lesson').inputValue()) await page.locator('#reset-lesson').selectOption('all');
+  if (!await page.locator('#reset-module').inputValue()) await page.locator('#reset-module').selectOption('all');
   await page.locator('#preview-reset').click();
   await holdWriteLock(page);
   try {

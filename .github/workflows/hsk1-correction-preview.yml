@@ -93,6 +93,16 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
+          name: correction-preview-${{ matrix.browser }}-reports
+          path: |
+            hsk1-app/.repro-output/step8-browser.json
+            hsk1-app/.repro-output/step9-release.json
+            hsk1-app/test-results/**/error-context.md
+            hsk1-app/test-results-release/**/error-context.md
+          include-hidden-files: true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
           name: correction-preview-${{ matrix.browser }}-evidence
           path: |
             hsk1-app/.repro-output/

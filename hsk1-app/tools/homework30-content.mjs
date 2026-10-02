@@ -3,6 +3,8 @@ import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { REVISIONS, applyContentRevision } from './homework30-review.mjs';
+import { buildContentEvidence } from './homework30-evidence.mjs';
 
 /** Materialize the versioned homework snapshot; never rewrite its source banks. */
 export const VERSION = 'hsk1-homework-30-v1';
@@ -143,68 +145,6 @@ function materializeQuestion(lesson, part, position, question, reference, source
 const normalSentence = value => value.normalize('NFKC').replace(/[\s\p{P}\p{S}]/gu, '').toLowerCase();
 const sentenceFragments = value => value.split(/[。！？!?；;\n]+/).map(value => value.trim()).filter(value => (value.match(/[\u3400-\u9fff]/g) ?? []).length >= 3);
 
-function buildContentEvidence(bank, mapping) {
-  const inventory = bank.lessons.flatMap(lesson => Object.keys(PART_COUNTS).flatMap(part => lesson[part].map(question => ({
-    questionId: question.id, lesson: lesson.lesson, part, skill: question.skill, prompt: question.prompt,
-    ...(question.stem ? { stem: question.stem } : {}), ...(question.meaning ? { meaning: question.meaning } : {}),
-    assessment: question.assessment, source: question.source, provenance: question.provenance, fingerprint: question.fingerprint,
-  }))));
-  const overlaps = [], duplicateCores = [], lessonCoverage = [];
-  for (const lesson of bank.lessons) {
-    const targets = new Map(), cores = new Map();
-    for (const part of Object.keys(PART_COUNTS)) for (const question of lesson[part]) {
-      if (['choice', 'listening', 'translationChoice'].includes(part)) {
-        const signature = fingerprint({ prompt: question.prompt, stem: question.stem ?? '', options: question.options, answer: question.answer });
-        const core = cores.get(signature) ?? []; core.push(question.id); cores.set(signature, core);
-      }
-      const values = part === 'sort' ? question.answers : part === 'listening' ? [question.transcript] : ['choice', 'translationChoice'].includes(part) ? [question.options[question.answer]] : [];
-      for (const value of values) for (const sentence of sentenceFragments(value)) {
-        const normalized = normalSentence(sentence), group = targets.get(normalized) ?? { sentence, normalized, occurrences: [] };
-        if (!group.occurrences.some(row => row.questionId === question.id)) group.occurrences.push({ questionId: question.id, part, skill: question.skill });
-        targets.set(normalized, group);
-      }
-    }
-    for (const [signature, questionIds] of cores) if (questionIds.length > 1) duplicateCores.push({ lesson: lesson.lesson, signature, questionIds });
-    for (const group of targets.values()) if (group.occurrences.length > 1) overlaps.push({ lesson: lesson.lesson, ...group, disposition: 'Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective.' });
-    lessonCoverage.push({ lesson: lesson.lesson, total: Object.keys(PART_COUNTS).reduce((sum, part) => sum + lesson[part].length, 0), parts: PART_COUNTS, skills: Object.keys(PART_COUNTS).flatMap(part => lesson[part].map(question => ({ questionId: question.id, part, skill: question.skill }))), exactRepeatedMcCores: [...cores.values()].filter(ids => ids.length > 1).length, sentenceOverlapGroups: [...targets.values()].filter(group => group.occurrences.length > 1).length });
-  }
-  const adaptations = mapping.selections.filter(row => row.transformation).map(selection => {
-    const lesson = bank.lessons.find(lesson => lesson.lesson === selection.lesson), question = lesson[selection.part][selection.position - 1];
-    const audit = LESSON3_ADAPTATION_AUDIT[selection.entry.sourceId];
-    const oldSentence = audit.sourceTarget, newSentence = question.options[question.answer];
-    const retainedTargets = Object.keys(PART_COUNTS).flatMap(part => lesson[part].filter(other => other.id !== question.id).flatMap(other => {
-      const values = part === 'sort' ? other.answers : part === 'listening' ? [other.transcript] : ['choice', 'translationChoice'].includes(part) ? [other.options[other.answer]] : [];
-      return values.flatMap(value => sentenceFragments(value).map(sentence => ({ questionId: other.id, sentence })));
-    }));
-    const collisions = retainedTargets.filter(row => normalSentence(row.sentence) === normalSentence(newSentence));
-    assert.equal(collisions.length, 0, `Authored scenario repeats another lesson-3 automatic target: ${question.id}`);
-    assert.ok(lesson.translation.every(other => normalSentence(other.prompt) !== normalSentence(question.meaning)), `Authored scenario repeats manual prompt: ${question.id}`);
-    return {
-      questionId: question.id, sourceEntryId: selection.entry.sourceId, sourceTarget: oldSentence,
-      substantiveChange: audit.change, correctChinese: newSentence, vietnameseMeaning: question.meaning,
-      optionChecks: question.options.map((option, index) => ({ index, chinese: option, keyedCorrect: index === question.answer, rationaleVi: question.optionFeedback[index] })),
-      exactTargetCollisionsWithOtherLesson3Questions: collisions,
-      manualPromptReview: 'Meaning and scenario compared with all five unchanged manual prompts; no repeated proposition.',
-      vocabularyEvidence: selection.supportingVocabulary,
-    };
-  });
-  return {
-    'docs/homework30-inventory.json': { schemaVersion: 1, version: VERSION, total: inventory.length, questions: inventory },
-    'docs/homework30-content-audit.json': {
-      schemaVersion: 1, version: VERSION,
-      method: {
-        quotas: 'Exhaustive per-lesson count, type, source and identity checks.',
-        exactMcQuestionCores: 'Compare prompt, stem, ordered options and correct index within each lesson across all MC parts.',
-        sentenceOverlap: 'Compare punctuation/space-normalized Chinese sentence fragments containing at least three Hanzi from keyed MC answers, accepted sort answers and listening transcripts; list every repeated string, not just duplicates by widget type.',
-        manualBoundary: 'No teacher answers are created for manual writing. Authored lesson-3 scenarios are separately compared with the five manual Vietnamese prompts.',
-        linguisticAudit: 'Five new lesson-3 scenarios have explicit Chinese answers, Vietnamese meaning checks, corrected lesson-vocabulary references and an individual reason for every distractor. Inherited questions preserve the corrected source bank; no new human audio or PDF review is claimed.',
-      },
-      summary: { lessons: 15, questions: 450, automatic: 375, manual: 75, exactRepeatedMcQuestionCores: duplicateCores.length, sourcePreservedSentenceOverlapGroups: overlaps.length, authoredLesson3Scenarios: adaptations.length, authoredLesson3TargetCollisions: adaptations.reduce((sum, row) => sum + row.exactTargetCollisionsWithOtherLesson3Questions.length, 0) },
-      lessonCoverage, exactRepeatedMcQuestionCores: duplicateCores, sourcePreservedSentenceOverlaps: overlaps, authoredLesson3Scenarios: adaptations,
-    },
-  };
-}
-
 export function buildHomeworkArtifacts(appRoot = APP_ROOT) {
   const sources = Object.fromEntries(Object.entries(SOURCE_HASHES).map(([file, expected]) => {
     const bytes = readFileSync(path.join(appRoot, file));
@@ -214,6 +154,11 @@ export function buildHomeworkArtifacts(appRoot = APP_ROOT) {
   const stage2 = sources['content/stage2-bank.json'];
   const legacy = sources['content/legacy-exercises.json'];
   const stage3 = sources['content/stage3-catalog.json'];
+  const textbookBytes = readFileSync(path.join(appRoot, 'content/textbook.json'));
+  assert.equal(sha256(textbookBytes), '5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7', 'Teaching evidence changed: content/textbook.json');
+  const textbook = JSON.parse(textbookBytes);
+  const reviewCases = JSON.parse(readFileSync(path.join(appRoot, 'docs/homework30-review-cases.json'), 'utf8'));
+  const contentRevisions = [];
   const authorities = new Map();
   for (const lesson of stage2.lessons) for (const part of ['choice', 'sort', 'translation']) for (const question of lesson[part]) {
     assertFingerprint(question);
@@ -230,7 +175,9 @@ export function buildHomeworkArtifacts(appRoot = APP_ROOT) {
     const output = { ...clone(metadata), ...Object.fromEntries(Object.keys(PART_COUNTS).map(part => [part, []])) };
     const append = (part, question, reference, source, entry = null) => {
       const position = output[part].length + 1;
-      const record = materializeQuestion(lesson.lesson, part, position, question, reference, source);
+      const original = materializeQuestion(lesson.lesson, part, position, question, reference, source);
+      const { question: record, audit: revision } = applyContentRevision(original, stage3, textbook);
+      if (revision) contentRevisions.push(revision);
       output[part].push(record);
       const selection = {
         questionId: record.id, lesson: lesson.lesson, part, position, ...reference,
@@ -238,6 +185,7 @@ export function buildHomeworkArtifacts(appRoot = APP_ROOT) {
         questionFingerprint: record.fingerprint,
         origin: entry ? 'comprehensive-original' : 'existing-homework',
       };
+      if (revision) selection.revision = { transformation: 'reviewed-distinct-scenario-v1', revisionFingerprint: revision.revisionFingerprint, changedFields: revision.changedFields, originalObjective: revision.originalObjective, revisedObjective: revision.revisedObjective, auditQuestionId: record.id };
       if (entry) {
         selection.entry = { sourceFile: 'content/legacy-exercises.json', sourceId: entry.id, sourceFingerprint: fingerprint(entry), oldId: entry.oldId, set: entry.set, group: entry.group };
         selection.overrides = overrideFields.filter(key => Object.hasOwn(entry, key));
@@ -293,15 +241,18 @@ export function buildHomeworkArtifacts(appRoot = APP_ROOT) {
   const bank = { schemaVersion: 1, version: VERSION, lessons };
   const mapping = {
     schemaVersion: 1, version: VERSION,
-    purpose: 'Authoritative, exhaustive source-to-homework identity mapping; source banks remain immutable.',
+    purpose: 'Authoritative source/entry identities, plus explicit version-only scenario revisions. Original objectives and records remain immutable; they are not represented as verbatim authored questions.',
     sourceFiles: Object.entries(SOURCE_HASHES).map(([sourceFile, sha256]) => ({ sourceFile, sha256 })),
+    teachingEvidenceSource: { sourceFile: 'content/textbook.json', sha256: sha256(textbookBytes) },
+    authoredRevisionCount: contentRevisions.length,
+    reviewCaseCount: reviewCases.cases.length,
     fingerprintContract: {
       question: 'SHA-256 of canonical JSON containing all question fields except fingerprint; object keys sorted recursively, array order preserved.',
       provenance: 'sourceFingerprint is the existing fingerprint of the immutable authority question identified by sourceFile/sourceId.',
       comprehensiveEntry: 'entry.sourceFingerprint is SHA-256 of the complete canonical entry, including overrides and its authority reference.',
     },
     quota: { lessons: 15, perLesson: 30, total: 450, partsPerLesson: PART_COUNTS, automaticPerLesson: 25, manualPerLesson: 5 },
-    selectionPolicy: { stage2: 'All 225 existing homework questions, preserving lesson and part order.', comprehensive: 'For each lesson, original-set choice 01–05, listening 01–05, and translation 01–05; lesson 3 replaces duplicate original choice entries with new grammar scenarios anchored to original sort 01–05, with different propositions and targets. Resolve shared authority and entry-specific overrides.', sourceOrder: 'Existing homework choice first, followed by comprehensive choice. Other parts preserve source order.' },
+    selectionPolicy: { stage2: 'Retain 225 immutable source references and ordering; explicitly revise new-version prompts/contexts where duplicate propositions or exposed manual targets were found.', comprehensive: 'For each lesson, original-set choice 01–05, listening 01–05, and translation 01–05; lesson 3 replaces duplicate original choice entries with new grammar scenarios anchored to original sort 01–05, with different propositions and targets. Resolve shared authority and entry-specific overrides.', sourceOrder: 'Existing homework choice first, followed by comprehensive choice. Other parts preserve source order.' },
     selections,
     sharedAuthorities,
     maintenanceArchive: {
@@ -326,13 +277,14 @@ export function buildHomeworkArtifacts(appRoot = APP_ROOT) {
       repeatedSharedAuthorities: sharedAuthorities.length,
       inheritedCorrectedTranscript: 'original:l10-listening-04: 我想买两斤苹果。 / Wǒ xiǎng mǎi liǎng jīn píngguǒ.',
       authoredGrammarChoiceAdaptations: 5,
+      reviewedVersionOnlyRevisions: contentRevisions.length,
       authoredAdaptationSources: Object.keys(LESSON3_GRAMMAR_ADAPTATIONS),
       sourceBankReauthoringPerformed: false,
       newHumanEarReviewPerformed: false,
       newTextbookPageReviewPerformed: false,
     },
   };
-  return { 'content/homework30-bank.json': bank, 'docs/homework30-mapping.json': mapping, ...buildContentEvidence(bank, mapping) };
+  return { 'content/homework30-bank.json': bank, 'docs/homework30-mapping.json': mapping, ...buildContentEvidence(bank, mapping, contentRevisions, reviewCases) };
 }
 
 export function persistHomeworkArtifacts(artifacts, appRoot = APP_ROOT, check = true) {

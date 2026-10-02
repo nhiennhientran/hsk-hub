@@ -51,6 +51,8 @@ test('nonempty historical records survive home, hub and progressive data-managem
   await page.locator('#open-data-manager').click();
   await expect(page.locator('#progress-overview')).toBeHidden();
   await expect(page.locator('.data-panel')).toBeVisible();
+  await expect(page.locator('#reset-lesson')).toHaveValue(''); await expect(page.locator('#reset-module')).toHaveValue('');
+  await expect(page.locator('#preview-reset')).toBeDisabled();
   await page.locator('#close-data-manager').click();
   await expect(page.locator('#open-data-manager')).toBeFocused();
   await expect(page.locator('#progress-overview')).toBeVisible();

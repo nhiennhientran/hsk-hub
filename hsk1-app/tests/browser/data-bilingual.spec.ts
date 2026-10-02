@@ -76,7 +76,9 @@ for (const width of [320, 390]) {
     await page.setViewportSize({ width, height: 844 }); await openManager(page); await importStage2(page);
     const before = (await currentRaw(page))!, original = JSON.parse(before);
     await page.locator('#reset-lesson').selectOption('1'); await page.locator('#reset-module').selectOption('homework');
-    await page.locator('#preview-reset').click();
+    if (!await page.locator('#reset-lesson').inputValue()) await page.locator('#reset-lesson').selectOption('all');
+  if (!await page.locator('#reset-module').inputValue()) await page.locator('#reset-module').selectOption('all');
+  await page.locator('#preview-reset').click();
     await expect(page.locator('#migration-preview')).toHaveAttribute('data-reason', 'reset');
     await expect(page.locator('#migration-preview h3')).toContainText('第1课');
     await expect(page.locator('#migration-preview h3')).toContainText('Bài 1');
@@ -99,7 +101,9 @@ for (const width of [320, 390]) {
     expect(await currentRaw(page)).toBe(before); await noOverflow(page);
     await page.evaluate(() => (window as unknown as { restoreDataWrite: () => void }).restoreDataWrite());
     await page.locator('#cancel-data-import').click();
-    await page.locator('#preview-reset').click(); await page.locator('#confirm-data-import').click();
+    if (!await page.locator('#reset-lesson').inputValue()) await page.locator('#reset-lesson').selectOption('all');
+  if (!await page.locator('#reset-module').inputValue()) await page.locator('#reset-module').selectOption('all');
+  await page.locator('#preview-reset').click(); await page.locator('#confirm-data-import').click();
     await expect(page.locator('#data-status')).toHaveAttribute('data-state', 'saved');
     const reset = JSON.parse((await currentRaw(page))!);
     expect(reset.data.homework.lessons['1']).toBeUndefined();

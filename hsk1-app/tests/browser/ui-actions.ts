@@ -26,3 +26,6 @@ export async function navigateFeature(page: Page, feature: string, lesson = 10, 
   }
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
 }
+
+/** Stacked bilingual text retains both languages; the visual separator is optional in its accessible name. */
+export const pairedAccessibleName = (value: string): RegExp => new RegExp('^' + value.split(' · ').map(part => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('\\s*(?:·\\s*)?') + '$');

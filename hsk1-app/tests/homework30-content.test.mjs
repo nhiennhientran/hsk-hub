@@ -5,6 +5,8 @@ import { readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync } from 'nod
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { REVISIONS } from '../tools/homework30-review.mjs';
+import { scanContent, questionTargets, normalizeVietnamese } from '../tools/homework30-evidence.mjs';
 import { buildHomeworkArtifacts, persistHomeworkArtifacts, LESSON3_GRAMMAR_ADAPTATIONS, LESSON3_ADAPTATION_AUDIT, resolveLegacyEntry } from '../tools/homework30-content.mjs';
 
 const appRoot = fileURLToPath(new URL('../', import.meta.url));
@@ -98,8 +100,11 @@ test('manual translation content is prompt-only and cannot leak answers or autom
     assert.deepEqual(Object.keys(question).sort(), allowed, question.id);
     assert.equal(question.assessment, 'manual'); assert.equal(question.kind, 'translation');
     const source = sourceMaps[question.provenance.sourceFile].get(question.provenance.sourceId);
-    assert.equal(question.prompt, source.prompt); assert.equal(question.skill, source.skill);
-    assert.deepEqual(question.source, source.source);
+    const revised = REVISIONS[question.id]?.question;
+    assert.equal(question.prompt, revised?.prompt ?? source.prompt); assert.equal(question.skill, revised?.skill ?? source.skill);
+    for (const key of ['printPages', 'pdfPages']) assert.deepEqual(question.source[key], source.source[key]);
+    if (revised) assert.equal(question.provenance.transformation, 'reviewed-distinct-scenario-v1');
+    else assert.deepEqual(question.source, source.source);
   }
 });
 
@@ -129,14 +134,20 @@ test('the authoritative mapping exhaustively resolves every question to immutabl
         for (const [key, value] of Object.entries(adaptation)) assert.deepEqual(question[key], value, `${question.id}:${key}`);
       } else {
         for (const key of ['prompt', 'stem', 'meaning', 'skill', 'options', 'answer', 'explanation', 'audio', 'transcript', 'pinyin']) {
-          assert.deepEqual(question[key], Object.hasOwn(entry, key) ? entry[key] : source[key], `${question.id}:${key}`);
+          const revision = REVISIONS[question.id]?.question;
+          assert.deepEqual(question[key], revision && Object.hasOwn(revision, key) ? revision[key] : Object.hasOwn(entry, key) ? entry[key] : source[key], `${question.id}:${key}`);
         }
-        if (source.optionFeedback) assert.deepEqual(question.optionFeedback, source.optionFeedback);
+        if (REVISIONS[question.id]?.question.optionFeedback) assert.deepEqual(question.optionFeedback, REVISIONS[question.id].question.optionFeedback);
+        else if (source.optionFeedback) assert.deepEqual(question.optionFeedback, source.optionFeedback);
         else assert.deepEqual(question.optionFeedback, question.options.map((_, i) => `${i === question.answer ? 'Đúng.' : 'Chưa đúng.'} ${question.explanation}`));
       }
     } else {
       assert.equal(selection.origin, 'existing-homework'); assert.equal(selection.sourceFile, 'content/stage2-bank.json');
-      for (const key of ['prompt', 'stem', 'meaning', 'skill', 'options', 'answer', 'answers', 'tokens', 'explanation', 'optionFeedback', 'source']) assert.deepEqual(question[key], source[key], `${question.id}:${key}`);
+      for (const key of ['prompt', 'stem', 'meaning', 'skill', 'options', 'answer', 'answers', 'tokens', 'explanation', 'optionFeedback']) {
+        const revision = REVISIONS[question.id]?.question;
+        assert.deepEqual(question[key], revision && Object.hasOwn(revision, key) ? revision[key] : source[key], `${question.id}:${key}`);
+      }
+      if (!REVISIONS[question.id]) assert.deepEqual(question.source, source.source);
     }
   }
   assert.deepEqual(mapping.selections.filter(row => row.origin === 'existing-homework').map(row => row.sourceId).sort(), stage2Questions.map(question => question.id).sort());
@@ -220,7 +231,7 @@ test('lesson-3 authored scenarios have distinct propositions and individual Chin
   assert.equal(archived.length, 5); assert.ok(archived.every(entry => entry.reason === 'shared-choice-core-already-present-in-existing-homework'));
 });
 
-test('450-item inventory and coverage evidence expose retained overlaps without inventing manual answers', () => {
+test('450-item inventory and exhaustive evidence track revisions and only three explicit reinforcement exceptions', () => {
   assert.equal(inventory.total, 450); assert.equal(inventory.questions.length, 450);
   assert.deepEqual(inventory.questions.map(row => row.questionId).sort(), questions.map(question => question.id).sort());
   for (const row of inventory.questions) {
@@ -228,24 +239,87 @@ test('450-item inventory and coverage evidence expose retained overlaps without 
     assert.equal(row.fingerprint, question.fingerprint); assert.deepEqual(row.provenance, question.provenance);
     for (const field of ['answer', 'answers', 'reference', 'accepted', 'sampleAnswer', 'modelAnswer']) assert.ok(!Object.hasOwn(row, field));
   }
+  assert.equal(audit.status, 'independently-reviewed');
+  assert.equal(audit.independentReview.status, 'passed');
+  assert.equal(audit.independentReview.bankSha256, sha(readFileSync(path.join(appRoot, 'content/homework30-bank.json'))));
   assert.equal(audit.lessonCoverage.length, 15); assert.equal(audit.lessonCoverage.flatMap(lesson => lesson.skills).length, 450);
-  assert.deepEqual(audit.summary, { lessons: 15, questions: 450, automatic: 375, manual: 75, exactRepeatedMcQuestionCores: 0, sourcePreservedSentenceOverlapGroups: 43, authoredLesson3Scenarios: 5, authoredLesson3TargetCollisions: 0 });
-  assert.deepEqual(audit.exactRepeatedMcQuestionCores, []); assert.equal(audit.sourcePreservedSentenceOverlaps.length, 43);
-  for (const overlap of audit.sourcePreservedSentenceOverlaps) {
-    assert.ok(overlap.occurrences.length > 1);
-    assert.equal(new Set(overlap.occurrences.map(row => row.questionId)).size, overlap.occurrences.length);
+  assert.deepEqual(audit.summary, { lessons: 15, questions: 450, automatic: 375, manual: 75, versionOnlyRevisions: 191, initialReviewedCases: 160, exactRepeatedMcRecords: 0, sameLessonLiteralGroups: 2, crossLessonLiteralGroups: 1, unreviewedLiteralGroups: 0, exactVietnameseManualExposureFindings: 0 });
+  assert.deepEqual(audit.exactRepeatedMcRecords, []); assert.equal(audit.retainedLiteralRecurrences.length, 3);
+  assert.deepEqual(audit.exactVietnameseManualExposureFindings, []);
+  const scan = scanContent(bank);
+  assert.deepEqual(scan.overlaps, audit.retainedLiteralRecurrences);
+  assert.deepEqual(scan.unresolvedOverlaps, []); assert.deepEqual(scan.exactVietnameseManualLeaks, []);
+  for (const overlap of audit.retainedLiteralRecurrences) {
+    assert.ok(overlap.rationale.length > 150); assert.equal(overlap.disposition, 'reviewed-distinct-objective-reinforcement');
     for (const occurrence of overlap.occurrences) {
-      const question = byId.get(occurrence.questionId); assert.equal(question.lesson, overlap.lesson); assert.equal(question.skill, occurrence.skill);
-      const values = occurrence.part === 'sort' ? question.answers : occurrence.part === 'listening' ? [question.transcript] : [question.options[question.answer]];
-      assert.ok(values.some(value => value.split(/[。！？!?；;\n]+/).some(sentence => normalSentence(sentence) === overlap.normalized)));
+      const question = byId.get(occurrence.questionId);
+      assert.ok(questionTargets(question, occurrence.part).some(target => target.normalized === overlap.normalized));
     }
   }
-  for (const scenario of audit.authoredLesson3Scenarios) {
-    const question = byId.get(scenario.questionId); assert.equal(scenario.correctChinese, question.options[question.answer]);
-    assert.equal(scenario.vietnameseMeaning, question.meaning); assert.deepEqual(scenario.exactTargetCollisionsWithOtherLesson3Questions, []);
-    assert.equal(scenario.optionChecks.filter(option => option.keyedCorrect).length, 1);
-    for (const option of scenario.optionChecks) assert.equal(option.rationaleVi, question.optionFeedback[option.index]);
+  assert.equal(audit.initialCaseDispositions.length, 160);
+  assert.equal(audit.manualMeaningReview.length, 75);
+});
+
+test('all 191 reviewed overlays have resolved current-or-earlier scope and exact public content change records', () => {
+  const textbook = read('content/textbook.json');
+  const records = new Map([...stage3.vocabulary, ...textbook.lessons.flatMap(lesson => [...lesson.grammar, ...lesson.scenes.flatMap(scene => scene.lines)])].map(record => [record.id, record]));
+  assert.equal(Object.keys(REVISIONS).length, 191); assert.equal(audit.authoredRevisions.length, 191);
+  assert.equal(mapping.authoredRevisionCount, 191);
+  for (const revision of audit.authoredRevisions) {
+    const question = byId.get(revision.questionId), authored = REVISIONS[revision.questionId];
+    assert.ok(authored && revision.reason.length > 20 && revision.changedFields.length > 0);
+    assert.equal(revision.revisionFingerprint, hash(authored.question));
+    assert.equal(question.provenance.revisionFingerprint, revision.revisionFingerprint);
+    assert.equal(question.provenance.transformation, 'reviewed-distinct-scenario-v1');
+    assert.equal(revision.revisedObjective, question.skill);
+    for (const [key, value] of Object.entries(authored.question)) assert.deepEqual(question[key], value, `${question.id}:${key}`);
+    const scope = revision.scope;
+    assert.ok(scope.vocabularyEvidence.length + scope.textEvidence.length > 0);
+    for (const ref of [...scope.vocabularyEvidence, ...scope.grammarEvidence, ...scope.textEvidence]) {
+      assert.ok(ref.lesson <= question.lesson, `${question.id}:${ref.sourceId}`);
+      const record = records.get(ref.sourceId); assert.ok(record, ref.sourceId);
+      assert.equal(ref.sourceFingerprint, record.fingerprint, ref.sourceId);
+    }
+    if (question.assessment === 'manual') {
+      assert.ok(revision.manualRubric); assert.ok(!revision.optionChecks && !revision.sortingChecks);
+      for (const key of ['answer', 'answers', 'modelAnswer', 'acceptedAnswers', 'correctChinese']) assert.ok(!Object.hasOwn(revision, key));
+    } else if (question.options) {
+      assert.equal(revision.optionChecks.length, 4); assert.equal(revision.optionChecks.filter(option => option.keyedCorrect).length, 1);
+      for (const option of revision.optionChecks) { assert.equal(option.option, question.options[option.index]); assert.equal(option.rationaleVi, question.optionFeedback[option.index]); }
+    } else assert.deepEqual(revision.sortingChecks.acceptedExpressions, question.answers);
   }
+});
+
+test('new sorting expressions are exact permutations of their own tokens, including all accepted variants', () => {
+  function order(tokens, answer, used = [], prefix = '') {
+    const target = normalSentence(answer);
+    if (used.length === tokens.length) return prefix === target ? used : null;
+    for (let index = 0; index < tokens.length; index++) if (!used.includes(index)) {
+      const next = prefix + normalSentence(tokens[index]);
+      if (target.startsWith(next)) { const found = order(tokens, answer, [...used, index], next); if (found) return found; }
+    }
+    return null;
+  }
+  for (const lesson of bank.lessons) for (const question of lesson.sort) for (const answer of question.answers) {
+    const found = order(question.tokens, answer); assert.ok(found, `${question.id}: ${answer}`);
+    assert.equal(new Set(found).size, question.tokens.length);
+    assert.equal(normalSentence(found.map(index => question.tokens[index]).join('')), normalSentence(answer));
+  }
+});
+
+test('duplicate/leak regression checks catch reordered MC options, completed clozes and wrong-option/manual exposure', () => {
+  const duplicate = structuredClone(bank), original = duplicate.lessons[0].choice[0], target = duplicate.lessons[0].choice[5];
+  Object.assign(target, { prompt: original.prompt, stem: original.stem, options: [...original.options].reverse(), answer: 3 - original.answer });
+  assert.ok(scanContent(duplicate).repeatedMcCores.some(ids => ids.includes(original.id) && ids.includes(target.id)));
+  const cloze = structuredClone(bank), sort = cloze.lessons[8].sort[3], mc = cloze.lessons[8].choice[7];
+  const last = sort.tokens.at(-1); mc.stem = sort.answers[0].replace(last, '___'); mc.options = [last, '错误甲', '错误乙', '错误丙']; mc.answer = 0;
+  assert.ok(scanContent(cloze).unresolvedOverlaps.some(group => group.occurrences.some(row => row.questionId === sort.id) && group.occurrences.some(row => row.questionId === mc.id)));
+  const leak = structuredClone(bank), manual = leak.lessons[0].translation[0], automatic = leak.lessons[14].choice[0];
+  automatic.options[(automatic.answer + 1) % 4] = manual.prompt;
+  assert.ok(scanContent(leak).exactVietnameseManualLeaks.some(row => row.manualId === manual.id && row.automaticId === automatic.id && row.scope === 'cross-lesson' && row.field === 'options'));
+  assert.equal(normalizeVietnamese('Năm sau con gái tôi sẽ học trung học.'), normalizeVietnamese('Năm sau con gái tôi học trung học.'));
+  assert.equal(normalizeVietnamese('Xin chào mọi người!'), normalizeVietnamese('Chào mọi người.'));
+  assert.equal(audit.initialCaseDispositions.filter(item => item.changedQuestionIds.length === 0).length, 0);
 });
 
 test('mapping accounts for every unselected comprehensive and pilot entry and standalone authority', () => {
@@ -295,7 +369,7 @@ test('all three source banks remain byte-identical and generated artifacts are r
 test('check mode rejects drift without repairing it and generation refuses changed source bytes', () => {
   const temporary = mkdtempSync(path.join(os.tmpdir(), 'hsk1-homework30-'));
   try {
-    for (const file of Object.keys(lockedSources)) { mkdirSync(path.dirname(path.join(temporary, file)), { recursive: true }); writeFileSync(path.join(temporary, file), readFileSync(path.join(appRoot, file))); }
+    for (const file of [...Object.keys(lockedSources), 'content/textbook.json', 'docs/homework30-review-cases.json']) { mkdirSync(path.dirname(path.join(temporary, file)), { recursive: true }); writeFileSync(path.join(temporary, file), readFileSync(path.join(appRoot, file))); }
     const generated = buildHomeworkArtifacts(temporary); persistHomeworkArtifacts(generated, temporary, false);
     const target = path.join(temporary, 'content/homework30-bank.json'); writeFileSync(target, '{}\n');
     assert.throws(() => persistHomeworkArtifacts(generated, temporary, true), /Generated homework artifact is stale/);

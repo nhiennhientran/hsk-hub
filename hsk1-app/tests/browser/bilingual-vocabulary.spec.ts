@@ -1,3 +1,4 @@
+import { pairedAccessibleName } from './ui-actions.ts';
 import { openLearningSettings } from './active-view-helpers.ts';
 import { test, expect, type Locator, type Page } from '@playwright/test';
 
@@ -24,7 +25,7 @@ test('textbook vocabulary toolbar, flip/star/detail controls and dynamic counts 
   await paired(page.locator('#vocab-tools > summary'), '搜索与工具', 'Tìm và công cụ');
   await page.locator('#vocab-tools > summary').click();
   await expect(page.locator('#vocab-tools')).toHaveAttribute('open', '');
-  await expect(page.getByRole('searchbox', { name: '搜索汉字、越南语或拼音 · Tìm chữ Hán, tiếng Việt hoặc pinyin', exact: true })).toBeVisible();
+  await expect(page.getByRole('searchbox', { name: pairedAccessibleName('搜索汉字、越南语或拼音 · Tìm chữ Hán, tiếng Việt hoặc pinyin'), exact: true })).toBeVisible();
   await paired(page.locator('#vocab-flip-all'), '翻转全部', 'Lật tất cả thẻ');
   await paired(page.locator('#vocab-play-all'), '播放本课原音', 'Nghe toàn bộ từ có âm thanh gốc');
   await paired(page.locator('#vocab-count'), '本课显示 13 / 13 个词', '13 / 13 từ trong bài');

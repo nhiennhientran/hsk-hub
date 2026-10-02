@@ -28,6 +28,10 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 1024 }, { name: 
         await expect(page.locator('.lesson-card [data-lesson-section]')).toHaveCount(75);
         await expect(page.locator('.course-hero')).toHaveCSS('background-image', /linear-gradient/);
       }
+      if (name === 'hanzi' && viewport.name === 'mobile') {
+        const canvas = await page.locator('[data-hanzi-canvas]').boundingBox();
+        expect(canvas!.y, 'writing canvas starts before the long character bank and metadata').toBeLessThan(650);
+      }
       if (name === 'dialogue') await expect(page.locator('[data-tongue-text="1"]')).toHaveText(tongueTwisters[1].zh);
       if (name === 'vocabulary' && viewport.name === 'mobile') {
         const word = await page.locator('.vocab-front h3').first().boundingBox();

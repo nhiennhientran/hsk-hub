@@ -33,7 +33,7 @@ async function expectReady(page: Page, feature: string, lesson: number): Promise
   else if (feature === 'exercises') await expect(host.locator('#exercise-submit')).toHaveCount(0);
   else {
     await expect(host.locator('#home-module .lesson-card')).toHaveCount(15);
-    await expect(host.locator('.home-progress-details summary')).toBeVisible();
+    await expect(host.locator('.home-progress-details > summary')).toBeVisible();
     await expect(host.locator('#home-progress')).toHaveCount(1);
   }
 }
