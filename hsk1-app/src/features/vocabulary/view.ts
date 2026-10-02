@@ -20,7 +20,7 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
   const title = node('h1', feature === 'review' ? 'Ôn tập từ vựng' : 'Từ vựng nhiều bài'); title.tabIndex = -1;
   const controls = node('fieldset'); controls.dataset.moduleControls = ''; controls.disabled = true;
   controls.append(node('legend', 'Luyện từ theo nghĩa'));
-  article.append(title, node('p', 'Nhớ lại trước khi xem đáp án, rồi tự đánh giá. Kết quả này không phải điểm đúng/sai.'), controls); host.append(article);
+  article.append(title, node('p', 'Bạn có thể tự do chuyển thẻ hoặc bỏ qua. Tự đánh giá là tùy chọn, chỉ dùng để xếp lịch ôn, không phải điểm đúng/sai.'), controls); host.append(article);
   const lifetime = new AbortController(); const abort = () => lifetime.abort();
   context.signal.addEventListener('abort', abort, { once: true }); if (context.signal.aborted) abort();
   let left = false, unsubscribe = () => {}, unsubscribeAudio = () => {}, flush = () => {};
@@ -65,13 +65,14 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
     const pinyinLabel = node('label'), pinyin = node('input'); pinyin.type = 'checkbox'; pinyin.id = 'vocabulary-pinyin';
     pinyinLabel.append(pinyin, document.createTextNode(' Hiện pinyin (Việt → Trung: sau khi xem đáp án)'));
     const cardHost = node('div');
-    const previous = button('prev', '← Thẻ trước'), next = button('next', 'Thẻ tiếp →');
-    const journey = node('nav'); journey.className = 'vocabulary-actions'; journey.setAttribute('aria-label', 'Di chuyển trong lượt từ vựng'); journey.append(previous, next);
+    const previous = button('prev', '← Thẻ trước'), next = button('next', 'Thẻ tiếp →'), skip = button('skip', 'Bỏ qua thẻ này');
+    const journey = node('nav'); journey.className = 'vocabulary-actions'; journey.setAttribute('aria-label', 'Di chuyển trong lượt từ vựng'); journey.append(previous, next, skip);
+    const skipNote = node('p', 'Bỏ qua chỉ chuyển sang thẻ tiếp, không tính là đã nhớ hoặc đã tự đánh giá, không đổi lịch ôn. Bạn vẫn có thể quay lại thẻ đã bỏ qua.');
     const audioPanel = node('section'); audioPanel.className = 'vocabulary-panel';
     const audioStatus = node('p'); audioStatus.id = 'vocabulary-audio-status'; audioStatus.setAttribute('role', 'status');
     const play = button('play', 'Nghe từ'), pause = button('pause', 'Tạm dừng'), replay = button('replay', 'Nghe lại');
     const audioActions = node('div'); audioActions.className = 'vocabulary-actions'; audioActions.append(play, pause, replay); audioPanel.append(audioStatus, audioActions);
-    exercise.append(position, scope, pinyinLabel, cardHost, audioPanel, journey);
+    exercise.append(position, scope, pinyinLabel, cardHost, audioPanel, journey, skipNote);
     const summary = node('section'); summary.className = 'vocabulary-panel'; summary.id = 'vocabulary-summary';
     controls.append(settings, save, saveActions, message, exercise, summary);
     let key = '', rendered = '';
@@ -89,7 +90,8 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
     on(due, 'click', () => { stop(); if (handle(controller.start('due'))) { update(); focusCard(); } });
     on(resume, 'click', focusCard);
     on(previous, 'click', () => { const review = controller.read().review; if (review && handle(controller.move(review.position - 1))) { update(); focusCard(); } });
-    on(next, 'click', () => { if (handle(controller.next())) { update(); focusCard(); } });
+    const advance = () => { if (handle(controller.next())) { update(); focusCard(); } };
+    on(next, 'click', advance); on(skip, 'click', advance);
     on(pinyin, 'change', () => { rendered = ''; update(); });
     on(retry, 'click', () => { void session.flush(); });
     function updateAudio(): void {
@@ -164,7 +166,7 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
       exercise.hidden = !current;
       position.textContent = review ? `Thẻ ${review.position + 1} / ${review.senseIds.length}` : '';
       scope.textContent = review ? `Lượt đang học: Bài ${review.lessons.join(', ')} · ${filters[review.filter]} · ${review.direction === 'zh-vi' ? 'Trung → Việt' : 'Việt → Trung'}` : '';
-      previous.disabled = !review || review.position === 0; next.disabled = !review || !current?.rating || review.position >= review.senseIds.length - 1;
+      previous.disabled = !review || review.position === 0; next.disabled = skip.disabled = !review || review.position >= review.senseIds.length - 1;
       const stats = model.summary;
       summary.replaceChildren(node('h2', 'Tự đánh giá và lịch ôn'), node('p', `Đã tự đánh giá ${stats.rated} / ${stats.totalSenses} nghĩa · Chưa thuộc ${stats.unfamiliar} · Cần luyện lại ${stats.wrong} · Đến hạn và từ mới ${stats.due}.`), node('p', `Lượt đang học: ${stats.review.rated} / ${stats.review.total} thẻ đã tự đánh giá.${stats.review.done ? ' Đã hoàn thành lượt này.' : ''}`), node('p', 'Chưa nhớ: 10 phút. Khó nhớ: 1 ngày. Đã nhớ đúng hạn: 1, 3, 7, 14, 30 ngày. Ôn sớm bằng Đã nhớ không tăng cấp hoặc đẩy hạn ôn.'));
       const snapshot = session.store.snapshot(); save.dataset.state = snapshot.status;

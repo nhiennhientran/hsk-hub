@@ -1,6 +1,7 @@
 /* Pure ESM adaptation of new-hsk1/hsk1/stage3/engine.js.
  * Source SHA-256: 010cfde850b1b9a49f90b5b2ceb2c70991d255750c3514761f7b064401d36a17
- * Only the UMD wrapper and final export change; grading/state rules stay identical. */
+ * Approved preview exception: free card navigation, skipped-card restore and
+ * out-of-order completion time. Grading and scheduling calculations stay identical. */
   const APP = 'hsk1-stage3', KEY = 'ran_hsk1_stage3_v1', SCHEMA = 1;
   const MAX_BACKUP_BYTES = 4 * 1024 * 1024;
   const DAY = 86400000, MINUTE = 60000, MAX_TIME = 8640000000000000;
@@ -306,13 +307,12 @@
   function moveCard(state, position, now = Date.now()) {
     clock(now); const {review} = currentReview(state);
     if (!Number.isInteger(position) || position < 0 || position >= review.senseIds.length) fail('INVALID_POSITION', 'Vị trí thẻ không hợp lệ.');
-    if (review.senseIds.slice(0, position).some(id => !own(review.ratings, id))) fail('RATING_REQUIRED', 'Hãy tự đánh giá thẻ hiện tại trước khi chuyển tiếp.');
+    // Browsing does not reveal, rate, complete, or reschedule any card.
     review.position = position; state.updatedAt = now;
     return {position, done: review.senseIds.every(id => own(review.ratings, id))};
   }
   function nextCard(state, now = Date.now()) {
-    const {review, id} = currentReview(state);
-    if (!own(review.ratings, id)) fail('RATING_REQUIRED', 'Hãy tự đánh giá thẻ hiện tại trước khi chuyển tiếp.');
+    const {review} = currentReview(state);
     return moveCard(state, Math.min(review.position + 1, review.senseIds.length - 1), now);
   }
   function cardSummary(state, catalog, now = Date.now()) {
@@ -433,9 +433,8 @@
       }
       const expected = makeDeck(before, catalog, {lessons: selected, filter: active.filter, direction: active.direction, shuffle: false}, active.startedAt);
       if (!sameSet(ids, expected.senseIds)) fail('INVALID_SESSION', 'Danh sách thẻ không khớp bộ lọc khi bắt đầu lượt.');
-      if (ids.slice(0, common.position).some(id => !own(ratings, id))) fail('INVALID_SESSION', 'Lượt ôn đã bỏ qua thẻ chưa tự đánh giá.');
       state.cards.review = {...common, filter: active.filter, direction: active.direction, senseIds: ids.slice(), revealed, ratings,
-        finishedAt: ids.length && ids.every(id => own(ratings, id)) ? ratings[ids.at(-1)].at : null};
+        finishedAt: ids.length && ids.every(id => own(ratings, id)) ? Math.max(...ids.map(id => ratings[id].at)) : null};
     }
     return state;
   }

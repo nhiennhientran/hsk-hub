@@ -117,7 +117,7 @@ export function createVocabularyController({ session: learning, catalog, now = D
     },
     next(): VocabularyResult {
       const review = reviewState(state());
-      if (review?.senseIds.length && review.position === review.senseIds.length - 1 && review.ratings[review.senseIds[review.position]]) return success;
+      if (review?.senseIds.length && review.position === review.senseIds.length - 1) return success;
       return change((practice, stamp) => { engine.nextCard(practice, stamp); }, true);
     },
   };

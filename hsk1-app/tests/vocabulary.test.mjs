@@ -141,11 +141,18 @@ test('all, unfamiliar, wrong and due use selected senses and latest self-ratings
   assert.equal(c.read().preferences.vocabularyFilter, 'wrong');
 });
 
-test('reveal and self-rating gate forward movement, repeated operations have no duplicate writes or ratings', () => {
+test('free movement preserves each card while reveal still gates rating and repeated actions do not duplicate writes', () => {
   const ctx = setup({ content: threeCards }), c = ctx.controller(); c.setPreferences({ shuffle: false }); c.start();
   assert.equal(c.read().current.revealed, false); assert.equal(c.read().current.rating, null);
-  noChange(ctx, () => c.rate('good'), 'reveal-required'); noChange(ctx, () => c.next(), 'rating-required');
-  noChange(ctx, () => c.move(2), 'rating-required');
+  noChange(ctx, () => c.rate('good'), 'reveal-required');
+  assert.equal(c.next().ok, true); assert.equal(c.read().review.position, 1);
+  assert.equal(c.move(2).ok, true); assert.equal(c.read().review.position, 2);
+  assert.deepEqual(ctx.store.snapshot().data.practice.cards.schedule, {});
+  assert.deepEqual(c.read().review.revealed, {}); assert.deepEqual(c.read().review.ratings, {});
+  assert.equal(c.read().summary.review.done, false); assert.equal(c.read().review.finishedAt, null);
+  const skippedSaves = ctx.requests(); ctx.setTime(stamp + 1); c.next();
+  assert.equal(ctx.requests(), skippedSaves); assert.equal(c.read().review.position, 2);
+  ctx.setTime(stamp); c.move(0);
   c.reveal(); const requests = ctx.requests(); c.reveal(); c.move(0); assert.equal(ctx.requests(), requests);
   for (const rating of ['known', '', null, 1]) noChange(ctx, () => c.rate(rating), 'invalid-rating');
   c.rate('good'); noChange(ctx, () => c.rate('again'), 'already-rated'); c.next();
@@ -154,6 +161,73 @@ test('reveal and self-rating gate forward movement, repeated operations have no 
   const finished = c.read(); assert.equal(finished.summary.review.done, true); assert.equal(finished.review.finishedAt, stamp);
   const saves = ctx.requests(); c.next(); c.move(2); assert.equal(ctx.requests(), saves);
   for (const position of [-1, 3, 0.25, '0']) noChange(ctx, () => c.move(position), 'invalid-position');
+});
+
+test('skipping preserves existing schedules and all queue options, including due cards with an earlier unrated gap', () => {
+  const ctx = setup({ content: threeCards }), c = ctx.controller();
+  c.setPreferences({ shuffle: false }); c.start(); rate(c, 'again');
+  ctx.setTime(stamp + 10 * 60000);
+  c.setPreferences({ direction: 'vi-zh', vocabularyFilter: 'due' }); c.start();
+  const before = ctx.store.snapshot().data.practice, queue = c.read().review;
+  assert.equal(c.next().ok, true); c.reveal(); assert.equal(c.next().ok, true);
+  assert.equal(c.read().current.revealed, false); assert.equal(c.read().current.rating, null);
+  c.setPreferences({ lessons: [], direction: 'zh-vi', vocabularyFilter: 'wrong', shuffle: true });
+  assert.equal(c.move(1).ok, true); assert.equal(c.read().current.revealed, true);
+  assert.equal(c.read().current.rating, null); assert.equal(c.read().current.direction, 'vi-zh');
+  assert.deepEqual(c.read().review.senseIds, queue.senseIds); assert.deepEqual(c.read().review.lessons, queue.lessons);
+  assert.equal(c.read().review.filter, 'due'); assert.equal(c.read().review.startedAt, queue.startedAt);
+  assert.deepEqual(ctx.store.snapshot().data.practice.cards.schedule, before.cards.schedule);
+  assert.equal(c.read().summary.review.rated, 0); assert.equal(c.read().summary.review.done, false);
+  assert.equal(c.read().review.finishedAt, null); assert.equal(c.read().summary.due, 3);
+});
+
+test('unrated gaps and the exact saved position survive reload and backup import without losing skipped cards', async () => {
+  const ctx = setup(), c = ctx.controller(); c.visit(1, 'review');
+  c.setPreferences({ lessons: [1, 10, 15], direction: 'vi-zh', vocabularyFilter: 'due' }); c.start();
+  const ids = [...c.read().review.senseIds];
+  c.next(); c.reveal(); c.next(); rate(c, 'hard'); c.next();
+  const before = c.read(); assert.equal(before.review.position, 3);
+  assert.equal(before.summary.review.rated, 1); assert.equal(before.review.finishedAt, null);
+  assert.equal((await ctx.session.flush()).ok, true);
+  const loaded = setup({ memory: ctx.memory }), resumed = loaded.controller();
+  assert.deepEqual(resumed.read(), before); assert.equal(loaded.requests(), 0);
+  const imported = setup(); assert.equal((await imported.store.confirm(imported.store.previewBackup(ctx.store.exportBackup()))).ok, true);
+  const restored = imported.controller(); assert.deepEqual(restored.read(), before);
+  for (const d of [resumed, restored]) {
+    assert.equal(d.move(0).ok, true); assert.equal(d.read().current.senseId, ids[0]);
+    assert.equal(d.read().current.revealed, false); assert.equal(d.read().current.schedule, null);
+    assert.equal(d.next().ok, true); assert.equal(d.read().current.senseId, ids[1]);
+    assert.equal(d.read().current.revealed, true); assert.equal(d.read().current.rating, null);
+    assert.equal(d.next().ok, true); assert.equal(d.read().current.rating.rating, 'hard');
+    assert.equal(d.read().review.position, 2); // Rating itself never auto-advances.
+  }
+  await ctx.session.dispose(); await loaded.session.dispose(); await imported.session.dispose();
+});
+
+test('out-of-order self-ratings complete only after every card is rated and preserve the true completion time', async () => {
+  const ctx = setup({ content: threeCards }), c = ctx.controller(); c.setPreferences({ shuffle: false }); c.start();
+  c.move(2); rate(c, 'good'); assert.equal(c.read().review.position, 2);
+  assert.equal(c.read().summary.review.done, false); assert.equal(c.read().review.finishedAt, null);
+  ctx.setTime(stamp + 1000); c.move(0); rate(c, 'again');
+  assert.equal(c.read().summary.review.done, false);
+  ctx.setTime(stamp + 2000); c.move(1); rate(c, 'hard');
+  assert.equal(c.read().review.position, 1); assert.equal(c.read().summary.review.done, true);
+  assert.equal(c.read().review.finishedAt, stamp + 2000);
+  assert.equal((await ctx.session.flush()).ok, true);
+  const loaded = setup({ content: threeCards, memory: ctx.memory });
+  assert.equal(loaded.controller().read().review.finishedAt, stamp + 2000);
+  assert.equal(JSON.parse(ctx.store.exportBackup()).data.practice.cards.review.finishedAt, stamp + 2000);
+  await ctx.session.dispose(); await loaded.session.dispose();
+});
+
+test('single-card and last-card next calls are no-ops even without revealing or rating', () => {
+  const ctx = setup({ content: oneCard }), c = ctx.controller(); c.start();
+  const before = ctx.store.snapshot(), requests = ctx.requests(); ctx.setTime(stamp + day);
+  assert.equal(c.next().ok, true); assert.equal(c.move(0).ok, true);
+  assert.deepEqual(ctx.store.snapshot(), before); assert.equal(ctx.requests(), requests);
+  assert.equal(c.read().current.revealed, false); assert.equal(c.read().current.rating, null);
+  assert.equal(c.read().summary.review.done, false);
+  for (const position of [-1, 1, 0.25, '0']) noChange(ctx, () => c.move(position), 'invalid-position');
 });
 
 test('again, hard, good and early good exactly preserve the existing simple schedule semantics', () => {

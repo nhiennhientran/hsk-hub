@@ -22,13 +22,27 @@ const raw = () => ({ ...fixture('reading-shared'), ...fixture('navigation'),
 const migrated = () => compatibility.migrate(raw(), at).data;
 
 // This equivalence check makes future changes to rule behavior explicit; it is not a copied grading test.
-test('domain rules are pure ESM adaptations of the pinned original bodies', () => {
+test('domain rules match pinned original bodies except the explicitly approved free-card-navigation changes', () => {
   const manifest = json('../src/domain/provenance.json');
   for (const item of manifest.engines) {
     const source = readFileSync(new URL(`../../${item.source}`, import.meta.url), 'utf8');
     assert.equal(createHash('sha256').update(source).digest('hex'), item.sha256);
     const start = source.indexOf("  'use strict';", source.indexOf('})(typeof window')) + "  'use strict';\n".length;
-    const expected = source.slice(start, source.lastIndexOf('\n});')).replace(/^  return \{/m, '  export default {');
+    let expected = source.slice(start, source.lastIndexOf('\n});')).replace(/^  return \{/m, '  export default {');
+    if (item.module === 'src/domain/practice/engine.js') {
+      // Keep the full-body guard. Only these exact approved differences are allowed;
+      // listening gates, scheduling calculations and every other validation stay pinned.
+      const changes = [
+        ["    if (review.senseIds.slice(0, position).some(id => !own(review.ratings, id))) fail('RATING_REQUIRED', 'Hãy tự đánh giá thẻ hiện tại trước khi chuyển tiếp.');", '    // Browsing does not reveal, rate, complete, or reschedule any card.'],
+        ["    const {review, id} = currentReview(state);\n    if (!own(review.ratings, id)) fail('RATING_REQUIRED', 'Hãy tự đánh giá thẻ hiện tại trước khi chuyển tiếp.');", '    const {review} = currentReview(state);'],
+        ["      if (ids.slice(0, common.position).some(id => !own(ratings, id))) fail('INVALID_SESSION', 'Lượt ôn đã bỏ qua thẻ chưa tự đánh giá.');\n", ''],
+        ["? ratings[ids.at(-1)].at : null", '? Math.max(...ids.map(id => ratings[id].at)) : null'],
+      ];
+      for (const [before, after] of changes) {
+        assert.equal(expected.split(before).length - 1, 1, `Approved difference must match exactly once: ${before}`);
+        expected = expected.replace(before, after);
+      }
+    }
     const output = readFileSync(new URL(`../${item.module}`, import.meta.url), 'utf8');
     assert.equal(output.slice(output.indexOf(' */\n') + 4).trimEnd(), expected.trimEnd());
     assert.equal(/window\.|module\.exports|localStorage|document\./.test(expected), false);
