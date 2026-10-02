@@ -2,6 +2,7 @@ import {readFileSync,readdirSync,existsSync,mkdirSync,writeFileSync} from 'node:
 import {createHash} from 'node:crypto';
 import {resolve} from 'node:path';
 const root=resolve(import.meta.dirname,'..');
+const pilot=process.env.HSK_PILOT==='1';
 const counts={2:15,3:18}, grammar={2:Array(15).fill(3),3:[3,3,3,3,4,3,4,4,3,3,4,4,3,3,4,4,4,4]};
 const totals={lessons:0,words:0,texts:0,grammar:0,homework:0,listening:0,sections:0};
 const seen=new Set(),questionSignatures=new Set(),issues=[],lessons=[];
@@ -10,7 +11,7 @@ const text=v=>typeof v==='string'&&v.trim().length>0;
 const copy=v=>v&&text(v.zh)&&text(v.vi);
 for(const level of [2,3]){
  const dir=resolve(root,`content/hsk${level}`), files=existsSync(dir)?readdirSync(dir).filter(x=>/^lesson-\d\d.json$/.test(x)):[];
- if(!process.env.HSK_PILOT)check(files.length===counts[level],`HSK${level}: ${files.length}/${counts[level]} lessons`);
+ if(!pilot)check(files.length===counts[level],`HSK${level}: ${files.length}/${counts[level]} lessons`);
  for(const file of files){const l=JSON.parse(readFileSync(resolve(dir,file),'utf8')),tag=`HSK${level} lesson ${l.number}`,prefix=`hsk${level}-fltrp-2026:l${String(l.number).padStart(2,'0')}`;
  check(l.schemaVersion===1&&l.courseId===`hsk${level}-fltrp-2026`&&l.version==='2026.1'&&l.id===prefix,tag+' identity');check(copy(l.title)&&text(l.title.py),tag+' title');
  const source=s=>{check(s&&Number.isInteger(s.pdfPage)&&Number.isInteger(s.printedPage)&&s.pdfPage-s.printedPage===(level===2?15:12)&&text(s.section)&&['textbook','supplemental'].includes(s.provenance),tag+' source mapping')};
@@ -34,9 +35,9 @@ for(const level of [2,3]){
  else if(q.part==='ordering'){check(Array.isArray(q.tokens)&&q.tokens.length>=5&&Array.isArray(q.answer)&&q.answer.length===q.tokens.length&&new Set(q.answer).size===q.tokens.length&&q.answer.every(n=>Number.isInteger(n)&&n>=0&&n<q.tokens.length),tag+' ordering')}else check(Array.isArray(q.options)&&q.options.length>=3&&new Set(q.options).size===q.options.length&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<q.options.length,tag+' choice');
  if(q.part==='listening')check(new RegExp(`^${l.number}-[1357]$`).test(q.audioTrack),tag+' listening original track');
  }
- if(!process.env.HSK_PILOT)check(l.reviewStatus.sourceVisual&&l.reviewStatus.vietnamese&&l.reviewStatus.pinyin&&text(l.reviewStatus.reviewer)&&!l.reviewStatus.reviewer.includes('pending'),tag+' pending independent review');
+ if(!pilot)check(l.reviewStatus.sourceVisual&&l.reviewStatus.vietnamese&&l.reviewStatus.pinyin&&text(l.reviewStatus.reviewer)&&!l.reviewStatus.reviewer.includes('pending'),tag+' pending independent review');
  totals.lessons++;totals.words+=l.vocabulary.length;totals.texts+=l.texts.length;totals.grammar+=l.grammar.length;totals.homework+=l.homework.length;totals.listening+=l.listening.length;totals.sections+=l.sections.length;
  lessons.push({id:l.id,level,number:l.number,title:l.title,words:l.vocabulary.length,texts:l.texts.length,grammar:l.grammar.length,homework:l.homework.length,sha256:createHash('sha256').update(readFileSync(resolve(dir,file))).digest('hex')});
  }
 }
-const report={mode:process.env.HSK_PILOT?'pilot':'release',totals,lessons,issues};mkdirSync(resolve(root,'docs'),{recursive:true});writeFileSync(resolve(root,'docs/content-validation.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(issues.length)process.exitCode=1;
+const report={mode:pilot?'pilot':'release',totals,lessons,issues};mkdirSync(resolve(root,'docs'),{recursive:true});writeFileSync(resolve(root,'docs/content-validation.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(issues.length)process.exitCode=1;

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T14:56:00Z",
+  "updatedAt": "2026-10-02T16:43:00Z",
   "phases": [
     {
       "phase": 1,
@@ -24,7 +24,8 @@
     {
       "phase": 4,
       "title": "HSK2 lessons 1\u20133 pilot",
-      "status": "pending"
+      "status": "in_progress",
+      "content": "Lessons1\u20133 independently reviewed; browser gate pending"
     },
     {
       "phase": 5,
@@ -68,5 +69,13 @@
     }
   ],
   "limitations": [],
-  "currentWork": "Shared engine and persistence verification; independent pilot content authoring"
+  "currentWork": "CI on exact shared snapshot; HSK2 lessons7\u20139 authoring and independent4\u20136 review; all264 local automatic audio transcripts available",
+  "ci": {
+    "latestSourceCommit": "39d93d662393daf8a8e81c15bb174b8ef07f3653",
+    "productionUnchanged": true,
+    "previousSetupFailures": [
+      "37034491695 lockfile",
+      "37035113663 shallowhistory"
+    ]
+  }
 }

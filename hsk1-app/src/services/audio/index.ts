@@ -244,18 +244,32 @@ export function createAudioService(options: {
     request.paused = false;
     request.trackStarted = false;
     let positioned = false;
+    let nativePlaying = false;
     let waitingTime: number | undefined;
+    const confirmPlaying = () => {
+      if (!nativePlaying || !positioned || !current(request) || request.paused || state.status === 'error') return;
+      request.trackStarted = true;
+      waitingTime = undefined;
+      publish({ status: 'playing', issue: null, currentTime: audio.currentTime });
+      settle(request, { ok: true, code: 'playing' });
+      scheduleBoundary(request);
+    };
     const position = () => {
       if (!current(request) || audio.readyState < 1) return;
       try {
         const startTime = track.start ?? 0;
-        if (Number.isFinite(audio.duration) && startTime >= audio.duration) {
+        // WebKit MP3 metadata can transiently report zero before the positive
+        // decoded duration arrives. Zero is not yet a usable range boundary.
+        // Later durationchange still validates every requested segment in full.
+        if (audio.duration === 0) return;
+        const durationKnown = Number.isFinite(audio.duration) && audio.duration > 0;
+        if (durationKnown && startTime >= audio.duration) {
           fail(request, 'Đoạn âm thanh nằm ngoài bản ghi.');
           return;
         }
         // MP3 decoder duration estimates can differ by approximately one frame.
         // A larger truncation means this is not the promised complete segment.
-        if (track.end !== undefined && Number.isFinite(audio.duration) && track.end > audio.duration + 0.05) {
+        if (track.end !== undefined && durationKnown && track.end > audio.duration + 0.05) {
           fail(request, 'Bản ghi ngắn hơn đoạn âm thanh đã chọn. Hãy thử lại.');
           return;
         }
@@ -263,6 +277,7 @@ export function createAudioService(options: {
         if (Math.abs(audio.currentTime - startTime) > 0.001) audio.currentTime = startTime;
         positioned = true;
         publish({ currentTime: startTime });
+        confirmPlaying();
       } catch (error) { fail(request, playbackIssue(error)); }
     };
     publish({ status: 'loading', label: track.label, request: track,
@@ -280,13 +295,9 @@ export function createAudioService(options: {
     listen(audio, 'playing', () => {
       if (!current(request)) return;
       if (request.paused) { audio.pause(); return; }
+      nativePlaying = true;
       position();
-      if (!current(request) || state.status === 'error') return;
-      request.trackStarted = true;
-      waitingTime = undefined;
-      publish({ status: 'playing', issue: null, currentTime: audio.currentTime });
-      settle(request, { ok: true, code: 'playing' });
-      scheduleBoundary(request);
+      confirmPlaying();
     }, request.trackCleanups);
     listen(audio, 'pause', () => {
       if (!current(request) || !audio.paused || state.status !== 'playing') return;

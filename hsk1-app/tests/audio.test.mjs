@@ -422,3 +422,63 @@ test('native play alone cannot invent a first playing event, a stalled resume or
   assert.equal(service.snapshot().status, 'loading');
   clock.fire(); assert.equal(service.snapshot().status, 'error'); assert.equal((await resumed).code, 'error'); service.dispose();
 });
+
+
+test('transient WebKit zero-duration metadata does not reject an original recording or claim playback early', async () => {
+  const { audio, service } = setup();
+  const pending = service.play({ url: 'original.mp3', label: 'Original', sourceKind: 'original' });
+  audio.metadata(0);
+  assert.equal(service.snapshot().status, 'loading');
+  assert.equal(service.snapshot().issue, null);
+  audio.duration = 44.4; audio.emit('durationchange');
+  audio.playing(); assert.deepEqual(await pending, { ok: true, code: 'playing' });
+  audio.time(0.2); assert.equal(service.snapshot().currentTime, 0.2);
+  service.dispose();
+});
+
+test('zero-duration placeholder never bypasses a later real truncated-segment check', async () => {
+  const { audio, service } = setup();
+  const pending = service.play({ url: 'short.mp3', label: 'Segment', start: 1, end: 5 });
+  audio.metadata(0); assert.equal(service.snapshot().status, 'loading');
+  audio.duration = 3; audio.emit('durationchange');
+  assert.equal((await pending).ok, false);
+  assert.equal(service.snapshot().status, 'error');
+  service.dispose();
+});
+
+
+test('playing before positive metadata waits; positive duration then confirms the actual native start', async () => {
+  const { audio, service } = setup();
+  const pending = service.play({ url: 'delayed.mp3', label: 'Delayed metadata' });
+  audio.metadata(0); audio.playing();
+  assert.equal(service.snapshot().status, 'loading');
+  audio.duration = 12; audio.emit('durationchange');
+  assert.equal((await pending).ok, true);
+  assert.equal(service.snapshot().status, 'playing');
+  service.dispose();
+});
+
+test('canplay or permanent zero duration never substitutes for confirmed usable playback', async () => {
+  const { audio, service, clock } = setup();
+  const pending = service.play({ url: 'empty.mp3', label: 'Empty recording' });
+  audio.metadata(0); audio.emit('canplay'); audio.playing();
+  assert.equal(service.snapshot().status, 'loading');
+  clock.fire();
+  assert.equal((await pending).ok, false);
+  assert.equal(service.snapshot().status, 'error');
+  service.dispose();
+});
+
+test('empty/corrupt media ending at zero and metadata seek exceptions remain hard failures', async () => {
+  const first = setup();
+  const empty = first.service.play({ url: 'empty.mp3', label: 'Empty' });
+  first.audio.metadata(0); first.audio.emit('ended');
+  assert.equal((await empty).ok, false); first.service.dispose();
+  const second = setup();
+  const seeking = second.service.play(track());
+  Object.defineProperty(second.audio, 'currentTime', { get() { return 0; }, set(value) { if (value !== 0) throw new DOMException('Seek failed', 'InvalidStateError'); } });
+  second.audio.metadata(100);
+  assert.equal((await seeking).ok, false);
+  assert.equal(second.service.snapshot().status, 'error');
+  second.service.dispose();
+});
