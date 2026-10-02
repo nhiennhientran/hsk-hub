@@ -1,6 +1,6 @@
 # HSK3 lesson 18: independent content review
 
-Reviewed 2026-10-02. Scope: `content/hsk3/lesson-18.json`, author baseline `2f29abe`; independent reviewer `review_hsk3_lesson_eighteen`. This review did not reuse the author's visual or audio pass as evidence. No AGENTS.md was found in the accessible workspace/checkout. The reviewer read `docs/content-contract.md` and the local verified source manifest before reviewing.
+Reviewed 2026-10-02. Scope: `content/hsk3/lesson-18.json`, author baseline `2f29abe`; a separate independent AI reviewer. This review did not reuse the author's visual or audio pass as evidence. The reviewer read `docs/content-contract.md` and the local verified source manifest before reviewing.
 
 ## Source and visual coverage
 

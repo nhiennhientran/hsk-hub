@@ -5,3 +5,5 @@
 
 /* Keep the bilingual disclosure marker on the same compact block. */
 .lesson-selection summary{list-style:none;position:relative;padding-left:20px}.lesson-selection summary::-webkit-details-marker{display:none}.lesson-selection summary::before{content:"▸";position:absolute;left:0;top:0}.lesson-selection[open] summary::before{content:"▾"}
+
+.card-pos{font-size:.85rem;color:var(--muted);font-weight:400}.card-pinyin,.card-meaning,.card-pos{overflow-wrap:anywhere;max-width:100%}

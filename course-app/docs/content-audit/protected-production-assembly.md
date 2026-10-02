@@ -1,0 +1,7 @@
+# Exact production baseline assembly
+
+- Production baseline remains caeac03798b91095f6fb0916e3c0bfd908381f45, tree c4711eaf5707ba21a2aff705ed7e507b4474c127. The inventory contains1141 tracked files. Normalized523 Git C-quoted Unicode display paths to actual UTF-8 filenames using NUL-delimited `git ls-tree -rz`; all1141 blob hashes and the tree identity remain unchanged.
+- The assembler rejects extra/missing baseline files, changed Git blob bytes, symlinks, unscoped package paths, altered frozen bytes, and overwrites of existing files except the authorized portal index. It compares all1140 protected outputs byte-for-byte and all package files against their frozen manifest. No rebuilding occurs.
+- Rehearsal with the previously accepted pilot8359232 assembled1438 files, preserving1140 and adding/replacing298 package files including the manifest. Full static site QA passed on this actual production-shaped tree:36 HTML files, legacy HSK1=15/HSK2=15/HSK3=20/HSK4 lower=10. Existing236 grammar audit also passed. Those legacy counts are preservation checks, not counts of the new editions.
+- The old site-QA portal assertion now recognizes the new2/3 links only when an actual frozen course-engine manifest is present. All other legacy checks are retained. Its earlier source-worktree help-page warning does not occur on the assembled production tree.
+- This is a rehearsal. Final release must repeat these checks on the full33-lesson, independently reviewed, frozen release artifact and repeat browser/online acceptance before completion.

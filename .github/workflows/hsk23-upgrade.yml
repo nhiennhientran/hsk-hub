@@ -45,6 +45,15 @@ jobs:
           name: hsk23-frozen-code
           path: course-app/frozen-code/
           include-hidden-files: true
+      - name: Assemble exact production baseline and protect every existing course
+        working-directory: course-app
+        run: |
+          mkdir baseline-site
+          git -C .. archive caeac03798b91095f6fb0916e3c0bfd908381f45 | tar -x -C baseline-site
+          node tools/assemble-production.mjs baseline-site release-package docs/baseline.json release-site "$GITHUB_SHA" .repro-output/production-assembly.json
+          cd release-site
+          node ../../tools/site-qa.mjs > ../.repro-output/full-site-qa.json
+          node qa/grammar-236-audit.mjs > ../.repro-output/protected-grammar-236.json
       - name: Preserve HSK1 default storage contract
         run: npm ci --prefix hsk1-app && npm test --prefix hsk1-app && npm run build:release --prefix hsk1-app
       - uses: actions/upload-artifact@v4
@@ -102,7 +111,17 @@ jobs:
         run: npx playwright install --with-deps ${{ matrix.browser }} && sudo apt-get install -y fonts-noto-cjk
       - name: Test the same frozen bytes without rebuilding
         run: npm run test:browser -- --project=${{ matrix.browser }}
-      - name: Test nested production-shaped course entries and shared frozen asset hashes
+      - name: Assemble the same frozen bytes onto the protected production baseline
+        run: |
+          mkdir baseline-site
+          git -C .. archive caeac03798b91095f6fb0916e3c0bfd908381f45 | tar -x -C baseline-site
+          node tools/assemble-production.mjs baseline-site release-package docs/baseline.json release-site "$GITHUB_SHA" .repro-output/production-assembly.json
+          cd release-site
+          node ../../tools/site-qa.mjs > ../.repro-output/full-site-qa.json
+          node qa/grammar-236-audit.mjs > ../.repro-output/protected-grammar-236.json
+      - name: Test frozen entries, complete portal and protected course regressions
+        env:
+          HSK_PACKAGE_ROOT: release-site
         run: npm run test:browser -- --config=playwright.package.config.ts --project=${{ matrix.browser }}
       - name: Verify HSK1 native word, line, sequence, seek and interruption audio
         working-directory: hsk1-app

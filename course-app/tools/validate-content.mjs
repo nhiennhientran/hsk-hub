@@ -1,3 +1,4 @@
+import {verifyLexicon} from './verify-lexicon.mjs';
 import {verifySourceGuards} from './source-guards.mjs';
 import {readFileSync,readdirSync,existsSync,mkdirSync,writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -38,7 +39,7 @@ for(const level of [2,3]){
  for(const q of [...l.homework,...l.listening]){id(q);check(copy(q.prompt)&&text(q.focus)&&q.source.provenance==='supplemental',tag+' question provenance');const signature=JSON.stringify([q.part,q.prompt,q.stem,q.options,q.tokens]);check(!stems.has(signature),tag+' duplicate question');stems.add(signature);check(!questionSignatures.has(signature),tag+' duplicate full question across course corpus');questionSignatures.add(signature);
  if(q.part==='writing'){check(!/\p{Script=Han}/u.test(q.focus),tag+' manual focus clue');for(const name of ['answer','solution','modelAnswer','explanation','tokens','options'])check(!(name in q),tag+' manual answer leak '+name)}
  else if(q.part==='ordering'){check(Array.isArray(q.tokens)&&q.tokens.length>=5&&Array.isArray(q.answer)&&q.answer.length===q.tokens.length&&new Set(q.answer).size===q.tokens.length&&q.answer.every(n=>Number.isInteger(n)&&n>=0&&n<q.tokens.length),tag+' ordering')}else check(Array.isArray(q.options)&&q.options.length>=3&&new Set(q.options).size===q.options.length&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<q.options.length,tag+' choice');
- if(q.part==='listening')check(new RegExp(`^${l.number}-[1357]$`).test(q.audioTrack),tag+' listening original track');
+ if(q.part==='listening'){check(new RegExp(`^${l.number}-[1357]$`).test(q.audioTrack),tag+' listening original track');const t=l.texts.find(t=>t.audioTrack===q.audioTrack);check(t?.lines.some(line=>line.source.pdfPage===q.source.pdfPage),tag+' listening evidence page outside linked text: '+q.id)}
  }
  if(!pilot)check(l.reviewStatus.sourceVisual&&l.reviewStatus.vietnamese&&l.reviewStatus.pinyin&&text(l.reviewStatus.reviewer)&&!l.reviewStatus.reviewer.includes('pending'),tag+' pending independent review');
  totals.lessons++;totals.words+=l.vocabulary.length;totals.texts+=l.texts.length;totals.grammar+=l.grammar.length;totals.homework+=l.homework.length;totals.listening+=l.listening.length;totals.sections+=l.sections.length;
@@ -47,4 +48,5 @@ for(const level of [2,3]){
 }
 const guardsFile=resolve(root,'content/source-sentinels.json');
 if(existsSync(guardsFile))issues.push(...verifySourceGuards(fullLessons,JSON.parse(readFileSync(guardsFile,'utf8'))));else if(!pilot)issues.push('Missing reviewed source sentinels');
-const report={mode:pilot?'pilot':'release',totals,lessons,issues};mkdirSync(resolve(root,'docs'),{recursive:true});writeFileSync(resolve(root,'docs/content-validation.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(issues.length)process.exitCode=1;
+const lexicons=[];for(const level of [2,3]){const p=resolve(root,`content/hsk${level}-lexicon.json`);if(existsSync(p)){const catalogue=JSON.parse(readFileSync(p,'utf8'));issues.push(...verifyLexicon(fullLessons,catalogue,{requireReview:!pilot}));lexicons.push({courseId:catalogue.courseId,counts:catalogue.counts,sha256:createHash('sha256').update(readFileSync(p)).digest('hex')})}else issues.push(`Missing HSK${level} canonical lexicon`)}
+const report={mode:pilot?'pilot':'release',totals,lessons,lexicons,issues};mkdirSync(resolve(root,'docs'),{recursive:true});writeFileSync(resolve(root,'docs/content-validation.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(issues.length)process.exitCode=1;
