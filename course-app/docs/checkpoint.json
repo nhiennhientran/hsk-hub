@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T18:25:00Z",
+  "updatedAt": "2026-10-02T19:29:00Z",
   "phases": [
     {
       "phase": 1,
@@ -76,19 +76,30 @@
     {
       "phase": 6,
       "title": "HSK2 lessons 10–15",
-      "status": "in_progress",
-      "content": "Lessons10–12 independently reviewed;13–15 authoring underway."
+      "status": "complete",
+      "content": "All HSK2 lessons10–15 independently reviewed. Full HSK2 450 homework items exercised in Chromium and WebKit; cumulative 540 with HSK3pilot.",
+      "evidence": {
+        "ciRun": 37051662090,
+        "remoteSource": "07c5b248ff060abe3c8253c519ebeccd62acafe6",
+        "courseTestsPerEngine": 43,
+        "packagedEntryTestsPerEngine": 4,
+        "hsk1NativeMediaTestsPerEngine": 6,
+        "unexpected": 0,
+        "skipped": 0,
+        "flaky": 0
+      }
     },
     {
       "phase": 7,
       "title": "HSK3 lessons 1–3 pilot",
-      "status": "pending",
-      "content": "HSK3lesson1 independently reviewed;lesson2 independent review ongoing;lesson3 authored and pending independent review."
+      "status": "in_progress",
+      "content": "HSK3lessons1–3 independently reviewed; all90 homework and 320/390/768/1440 text,grammar,review layouts pass both engines.24 HSK3screens inspected in this run. Later complex lesson18 source inspected; authoring/stress-fit remains."
     },
     {
       "phase": 8,
       "title": "HSK3 lessons 4–9",
-      "status": "pending"
+      "status": "in_progress",
+      "content": "HSK3lessons4–6 independently reviewed, including exact visible correction of2 supplied-answer errors;7–9 authoring. Browser checkpoint for4–6 being prepared."
     },
     {
       "phase": 9,
@@ -112,15 +123,15 @@
     }
   ],
   "limitations": [],
-  "currentWork": "Expand independent content checkpoints to reviewedlessons4–10; author11–15 and HSK3pilot. Full33-lesson acceptance remains open.",
+  "currentWork": "HSK3content checkpoints and earlylesson18 complex sample; preserve same frozen tested bytes for scoped release. Full33-lesson acceptance remains open.",
   "ci": {
-    "latestSourceCommit": "2db571058cd40fc7ef535348ff8ac3422e9107d2",
+    "latestSourceCommit": "07c5b248ff060abe3c8253c519ebeccd62acafe6",
     "productionUnchanged": true,
     "previousSetupFailures": [
       "37034491695 lockfile",
       "37035113663 shallowhistory"
     ],
-    "latestRun": 37044635349,
-    "latestResult": "Green: both engines30/30 course tests and6/6 HSK1 native media. Exact report zero skipped,unexpected,flaky.300 homework items andfourwidth lesson layout.8 lesson screenshots inspected."
+    "latestRun": 37051662090,
+    "latestResult": "Green: each engine43course +4packaged +6HSK1media tests; no skipped,unexpected or flaky results. New output dirs retain37screens perengine;24HSK3text/grammar/review screenshots visually inspected."
   }
 }

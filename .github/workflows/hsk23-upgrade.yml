@@ -31,6 +31,20 @@ jobs:
           name: hsk23-frozen-package
           path: course-app/release-package/
           include-hidden-files: true
+      - name: Verify small exact-byte transfer without rebuilding
+        working-directory: course-app
+        run: |
+          python3 - <<'PYCODE'
+          import shutil
+          shutil.copytree('release-package','frozen-code',ignore=shutil.ignore_patterns('*.mp3'))
+          PYCODE
+          node tools/restore-frozen.mjs frozen-code public restored-check "$GITHUB_SHA"
+          diff -rq release-package restored-check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hsk23-frozen-code
+          path: course-app/frozen-code/
+          include-hidden-files: true
       - name: Preserve HSK1 default storage contract
         run: npm ci --prefix hsk1-app && npm test --prefix hsk1-app && npm run build:release --prefix hsk1-app
       - uses: actions/upload-artifact@v4
