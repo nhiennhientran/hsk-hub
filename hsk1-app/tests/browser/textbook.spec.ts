@@ -1,3 +1,4 @@
+import { selectDialogueScene } from './active-view-helpers.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Page } from '@playwright/test';
 import homework from '../../src/domain/homework/engine.js';
@@ -55,7 +56,7 @@ for (const start of [1, 6, 11]) {
       await section(page, lesson, 'text');
       await expect(page.locator('[data-scene-tab]')).toHaveCount(row.scenes.length);
       for (const [sceneIndex, scene] of row.scenes.entries()) {
-        await page.locator('#scene-select').selectOption(String(sceneIndex));
+        await selectDialogueScene(page, sceneIndex);
         const view = page.locator(`[data-scene-id="${scene.id}"]`);
         await expect(view).toBeVisible();
         await expect(view.locator('[data-line-id]')).toHaveCount(scene.lines.length);

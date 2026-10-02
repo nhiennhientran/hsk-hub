@@ -34,8 +34,9 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
     if (left || lifetime.signal.aborted) return;
     const controller = createVocabularyController({ session, catalog: content.catalog });
     controller.visit(context.route.lesson, feature); flush = () => { void session.flush(); };
-    const settings = node('section'); settings.className = 'vocabulary-panel'; settings.id = 'vocabulary-settings';
-    settings.append(bi('h2', copy.settings));
+    const settings = node('details'); settings.className = 'vocabulary-panel vocabulary-settings'; settings.id = 'vocabulary-settings';
+    settings.open = !controller.read().current;
+    settings.append(bi('summary', copy.settings));
     const lessons = node('div'); lessons.className = 'vocabulary-lesson-picker'; lessons.setAttribute('role', 'group');
     const lessonTitle = bi('h3', copy.selectLessons); lessonTitle.id = 'vocabulary-lesson-title';
     lessons.setAttribute('aria-labelledby', lessonTitle.id); lessons.append(lessonTitle);
@@ -86,14 +87,15 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
     const play = button('play', copy.play), pause = button('pause', copy.pause), replay = button('replay', copy.replay);
     const audioActions = node('div'); audioActions.className = 'vocabulary-actions'; audioActions.append(play, pause, replay); audioPanel.append(audioStatus, audioActions);
     exercise.append(position, scope, pinyinLabel, cardHost, audioPanel, journey, skipNote);
-    const summary = node('section'); summary.className = 'vocabulary-panel'; summary.id = 'vocabulary-summary';
-    controls.append(settings, save, saveActions, message, exercise, summary);
+    const summary = node('details'); summary.className = 'vocabulary-panel vocabulary-summary'; summary.id = 'vocabulary-summary';
+    const summaryTitle = bi('summary', copy.summary), summaryBody = node('div'); summary.append(summaryTitle, summaryBody);
+    controls.append(message, exercise, settings, summary, save, saveActions);
     for (const note of article.querySelectorAll(':scope > p, #vocabulary-settings > p')) note.classList.add('bilingual-stacked');
     let key = '', rendered = '';
     const handle = (result: { ok: boolean; message?: string }) => { if (result.ok) message.replaceChildren(); else setBilingual(message, dynamic.actionIssue(result.message)); return result.ok; };
     const focusCard = () => cardHost.querySelector<HTMLElement>('h2')?.focus();
     const on = (target: HTMLElement, event: string, action: () => void) => target.addEventListener(event, action, { signal: lifetime.signal });
-    const preferences = (patch: Parameters<typeof controller.setPreferences>[0]) => { stop(); handle(controller.setPreferences(patch)); update(); };
+    const preferences = (patch: Parameters<typeof controller.setPreferences>[0]) => { handle(controller.setPreferences(patch)); update(); };
     for (const input of inputs.values()) on(input, 'change', () => preferences({ lessons: [...inputs].filter(([, value]) => value.checked).map(([id]) => id) }));
     on(all, 'click', () => preferences({ lessons: content.lessons.map(lesson => lesson.id) }));
     on(none, 'click', () => preferences({ lessons: [] }));
@@ -102,9 +104,9 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
     on(filter, 'change', () => preferences({ vocabularyFilter: filter.value as keyof typeof filters }));
     on(direction, 'change', () => preferences({ direction: direction.value as 'zh-vi' | 'vi-zh' }));
     on(shuffle, 'change', () => preferences({ shuffle: shuffle.checked }));
-    on(start, 'click', () => { stop(); if (handle(controller.start())) { update(); focusCard(); } });
-    on(due, 'click', () => { stop(); if (handle(controller.start('due'))) { update(); focusCard(); } });
-    on(resume, 'click', focusCard);
+    on(start, 'click', () => { stop(); if (handle(controller.start())) { settings.open = false; update(); focusCard(); } });
+    on(due, 'click', () => { stop(); if (handle(controller.start('due'))) { settings.open = false; update(); focusCard(); } });
+    on(resume, 'click', () => { settings.open = false; focusCard(); });
     on(previous, 'click', () => { const review = controller.read().review; if (review && handle(controller.move(review.position - 1))) { update(); focusCard(); } });
     const advance = () => { if (handle(controller.next())) { update(); focusCard(); } };
     on(next, 'click', advance); on(skip, 'click', advance);
@@ -153,7 +155,8 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
           const row = node('li'); const link = bi('a', dynamic.lesson(source.lesson)); link.href = routeHref({ feature: 'textbook', lesson: source.lesson, section: 'vocab' }); link.dataset.routeLink = '';
           row.append(link, document.createTextNode(' · '), bi('span', dynamic.source(source.source.section, source.source.printPages, source.source.pdfPages))); sources.append(row);
         }
-        answer.append(sources);
+        const sourceDetails = node('details'); sourceDetails.className = 'vocabulary-sources';
+        sourceDetails.append(bi('summary', copy.sources), sources); answer.append(sourceDetails);
         const examples = content.examplesForSense(current.senseId);
         if (examples.length) {
           const details = node('details'); details.id = 'vocabulary-examples'; details.className = 'vocabulary-examples';
@@ -176,11 +179,13 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
         card.append(answer);
       }
       const rateActions = node('div'); rateActions.className = 'vocabulary-actions';
+      rateActions.setAttribute('aria-label', bilingualText(copy.optionalRating));
       for (const [value, text] of Object.entries(ratings)) {
         const rate = button(value, text); rate.disabled = !current.revealed || !!current.rating;
         rate.addEventListener('click', () => { if (handle(controller.rate(value as keyof typeof ratings))) { update(); next.focus(); } }, { signal: cardEvents.signal }); rateActions.append(rate);
       }
-      card.append(rateActions);
+      if (current.revealed) { const ratingNote = bi('p', copy.optionalRating); ratingNote.className = 'vocabulary-hint'; card.append(ratingNote); }
+      rateActions.hidden = !current.revealed; card.append(rateActions);
       if (current.rating) {
         const note = bi('p', dynamic.rating(current.rating.rating, current.rating.schedule.dueAt, current.rating.early));
         note.id = 'vocabulary-rating-result'; note.setAttribute('role', 'status'); card.append(note);
@@ -204,8 +209,8 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
       if (review) setBilingual(scope, dynamic.scope(review.lessons, review.filter, review.direction, review.search)); else scope.replaceChildren();
       previous.disabled = !review || review.position === 0; next.disabled = skip.disabled = !review || review.position >= review.senseIds.length - 1;
       const stats = model.summary;
-      summary.replaceChildren(bi('h2', copy.summary), bi('p', dynamic.total(stats.rated, stats.totalSenses, stats.unfamiliar, stats.wrong, stats.due)), bi('p', dynamic.round(stats.review.rated, stats.review.total, stats.review.done)), bi('p', copy.schedule));
-      for (const note of summary.querySelectorAll('p')) note.classList.add('bilingual-stacked');
+      summaryBody.replaceChildren(bi('p', dynamic.total(stats.rated, stats.totalSenses, stats.unfamiliar, stats.wrong, stats.due)), bi('p', dynamic.round(stats.review.rated, stats.review.total, stats.review.done)), bi('p', copy.schedule));
+      for (const note of summaryBody.querySelectorAll('p')) note.classList.add('bilingual-stacked');
       const snapshot = session.store.snapshot(); save.dataset.state = snapshot.status;
       setBilingual(save, vocabularySaveStatus[snapshot.status]); if (snapshot.issue) save.append(document.createTextNode(' '), bi('span', dynamic.saveIssue(snapshot.issue)));
       retry.hidden = ['empty', 'saved', 'saving'].includes(snapshot.status) || (snapshot.status === 'unsaved' && !snapshot.issue); retry.disabled = !snapshot.canWrite || snapshot.status === 'saving';

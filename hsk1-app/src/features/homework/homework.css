@@ -61,3 +61,27 @@
   .homework .homework-actions button, .homework .homework-actions a { flex: 0 1 auto; }
   .homework .homework-question { padding: 14px; }
 }
+
+/* Version30: activity first; optional identity, course detail and tools stay secondary.
+   Every rule is scoped so historical homework retains its tested layout. */
+.homework30 { min-width: 0; }
+.homework30 [data-homework-parts] { position: relative; flex-wrap: nowrap; gap: 6px; width: 100%; max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-width: thin; padding: 4px 3px 8px; scroll-padding-inline: 4px; }
+.homework30 [data-homework-part] { flex: 0 0 auto; white-space: nowrap; overflow-wrap: normal; text-align: center; padding: 8px 12px; font-size: .82rem; line-height: 1.35; }
+.homework30 [data-homework-part] > .bilingual-zh, .homework30 [data-homework-part] > .bilingual-vi { display: block; white-space: nowrap; }
+.homework30 [data-homework-part] > .bilingual-vi { font-size: .8rem; margin-top: 3px; }
+.homework30 [data-homework-part] > .bilingual-separator { display: none; }
+.homework30 .homework-save { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; padding: 5px 0; border: 0; }
+.homework30 .homework-save p { margin: 0; line-height: 1.4; }
+.homework30 .homework-save .bilingual-vi { display: inline; margin: 0; }
+.homework30 .homework-save .bilingual-separator { display: inline; }
+.homework30 #homework-message:empty { display: none; }
+.homework30 #homework-answer-count { margin: 8px 0; font-size: .85rem; }
+.homework30 .homework-exercise > h2 { margin-top: 10px; }
+.homework30 .homework-secondary, .homework30 #homework-version-history { margin-top: 16px; border-top: 1px solid var(--line, #d8e3d9); padding-top: 12px; }
+.homework30 .homework-secondary summary, .homework30 #homework-version-history summary { min-height: 44px; padding: 10px 4px; font-size: .85rem; cursor: pointer; color: var(--green-800, #1d603e); }
+.homework30 .homework-secondary > p { font-size: .85rem; }
+.homework30 :focus-visible { outline: 3px solid #15803d; outline-offset: 3px; }
+@media (max-width: 600px) {
+  .homework30 [data-homework-part] { flex: 0 0 auto; }
+  .homework30 .homework-save { font-size: .78rem; }
+}

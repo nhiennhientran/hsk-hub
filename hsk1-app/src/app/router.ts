@@ -12,7 +12,7 @@ function isSection(value: unknown): value is Section {
 }
 
 function isPart(value: unknown): value is Part {
-  return PARTS.some(part => part === value);
+  return PARTS.some(part => part === value) || value === 'listening' || value === 'translationChoice';
 }
 
 /** Routes only contain the fields relevant to their feature. */
@@ -25,7 +25,9 @@ export function normalizeRoute(input: Partial<Route>): Route {
     return Object.freeze({ feature, lesson, section: isSection(input.section) ? input.section : 'vocab' });
   }
   if (feature === 'homework') {
-    return Object.freeze({ feature, lesson, part: isPart(input.part) ? input.part : 'choice' });
+    const isNew = input.homeworkVersion === '30-v1';
+    const part = isPart(input.part) && (isNew || PARTS.some(part => part === input.part)) ? input.part : 'choice';
+    return Object.freeze({ feature, lesson, part, ...(isNew ? { homeworkVersion: '30-v1' as const } : input.homeworkVersion === 'legacy' ? { homeworkVersion: 'legacy' as const } : {}) });
   }
   if (feature === 'exercises') {
     const exerciseSet = input.exerciseSet === 'pilot' || input.exerciseSet === 'homework-review' ? input.exerciseSet : 'original';
@@ -64,6 +66,7 @@ export function parseRoute(input: URL | string): Route {
       lesson: readLesson(params.get('lesson')),
       section: isSection(params.get('section')) ? params.get('section') as Section : undefined,
       part: isPart(params.get('part')) ? params.get('part') as Part : undefined,
+      homeworkVersion: params.get('version') === '30-v1' ? '30-v1' : params.get('version') === 'legacy' ? 'legacy' : undefined,
       exerciseSet: params.get('set') as Route['exerciseSet'],
       exerciseGroup: params.get('group') as Route['exerciseGroup'],
       exerciseFilter: params.get('filter') as Route['exerciseFilter'],
@@ -102,6 +105,7 @@ export function routeHref(route: Route): string {
   const params = new URLSearchParams({ lesson: String(normalized.lesson) });
   if (normalized.section) params.set('section', normalized.section);
   if (normalized.part) params.set('part', normalized.part);
+  if (normalized.homeworkVersion) params.set('version', normalized.homeworkVersion);
   if (normalized.exerciseSet) params.set('set', normalized.exerciseSet);
   if (normalized.exerciseGroup) params.set('group', normalized.exerciseGroup);
   if (normalized.exerciseFilter) params.set('filter', normalized.exerciseFilter);

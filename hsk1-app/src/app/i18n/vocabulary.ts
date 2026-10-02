@@ -1,5 +1,6 @@
 import type { BilingualCopy } from '../bilingual.ts';
 const pair = (zh: string, vi: string): BilingualCopy => ({ zh, vi });
+const lessonScope = (lessons: readonly number[]): string => lessons.length > 2 && lessons.every((lesson, index) => !index || lesson === lessons[index - 1] + 1) ? `${lessons[0]}–${lessons.at(-1)}` : lessons.join(', ');
 export const vocabularyCopy = {
   textbookTitle: pair('生词', 'Từ vựng'),
   textbookSearch: pair('搜索汉字、越南语或拼音', 'Tìm chữ Hán, tiếng Việt hoặc pinyin'),
@@ -27,8 +28,10 @@ export const vocabularyCopy = {
   title: pair('混课词汇', 'Từ vựng nhiều bài'),
   reviewTitle: pair('词汇复习', 'Ôn tập từ vựng'),
   controls: pair('按词义练习', 'Luyện từ theo nghĩa'),
-  intro: pair('可自由切换或跳过词卡。自评可选，仅安排复习，不计对错分。', 'Bạn có thể tự do chuyển thẻ hoặc bỏ qua. Tự đánh giá là tùy chọn, chỉ dùng để xếp lịch ôn, không phải điểm đúng/sai.'),
-  settings: pair('选择新一轮范围', 'Chọn phạm vi cho lượt mới'),
+  intro: pair('自由翻卡，自评可选。', 'Tự do chuyển thẻ; tự đánh giá là tùy chọn.'),
+  settings: pair('下一轮设置', 'Cài đặt lượt tiếp theo'),
+  sources: pair('教材出处', 'Nguồn giáo trình'),
+  optionalRating: pair('可选自评 · 仅安排复习', 'Tự đánh giá tùy chọn · chỉ xếp lịch ôn'),
   selectLessons: pair('选择一课或多课', 'Chọn một hoặc nhiều bài'),
   all: pair('全选', 'Chọn tất cả'),
   none: pair('取消全选', 'Bỏ chọn tất cả'),
@@ -52,7 +55,7 @@ export const vocabularyCopy = {
   next: pair('下一张 →', 'Thẻ tiếp'),
   skip: pair('跳过本张', 'Bỏ qua thẻ này'),
   navigation: pair('词卡导航', 'Di chuyển trong lượt từ vựng'),
-  skipNote: pair('跳过仅切到下一张，不算记住或已自评，不改复习日程；可随时返回。', 'Bỏ qua chỉ chuyển sang thẻ tiếp, không tính là đã nhớ hoặc đã tự đánh giá, không đổi lịch ôn. Bạn vẫn có thể quay lại thẻ đã bỏ qua.'),
+  skipNote: pair('跳过不算记住，也不改复习日程；可随时返回。', 'Bỏ qua không tính là đã nhớ, không đổi lịch ôn; bạn có thể quay lại.'),
   play: pair('播放单词', 'Nghe từ'),
   pause: pair('暂停', 'Tạm dừng'),
   continueAudio: pair('继续播放', 'Tiếp tục'),
@@ -124,7 +127,7 @@ export const vocabularyDynamic = {
   available: (lessons: readonly number[], merged: number, forms: number, count: number, search: string) => pair(`已选课程：${lessons.join(', ')} · ${merged} 个义项 / ${forms} 种字形 · 筛选${search ? `及搜索“${search}”` : ''}后 ${count} 张卡${count ? '' : '。无匹配词卡，请清空搜索、更改筛选或多选课程。'}`, `Bài đã chọn: ${lessons.join(', ')} · ${merged} nghĩa / ${forms} dạng chữ · ${count} thẻ theo bộ lọc${search ? ` và tìm kiếm “${search}”` : ''}.${count ? '' : ' Không có thẻ phù hợp; hãy xóa tìm kiếm, đổi bộ lọc hoặc chọn thêm bài.'}`),
   resume: (position?: number) => pair(`继续已存词卡${position === undefined ? '' : ` · 第 ${position + 1} 张`}`, `Tiếp tục lượt đã lưu${position === undefined ? '' : ` · Thẻ ${position + 1}`}`),
   position: (position: number, total: number) => pair(`第 ${position + 1} / ${total} 张`, `Thẻ ${position + 1} / ${total}`),
-  scope: (lessons: readonly number[], filter: keyof typeof vocabularyFilters, direction: string, search?: string) => pair(`当前轮次：第 ${lessons.join(', ')} 课 · ${vocabularyFilters[filter].zh} · ${direction === 'zh-vi' ? '中 → 越' : '越 → 中'}${search ? ` · 搜索“${search}”` : ''}`, `Lượt đang học: Bài ${lessons.join(', ')} · ${vocabularyFilters[filter].vi} · ${direction === 'zh-vi' ? 'Trung → Việt' : 'Việt → Trung'}${search ? ` · Tìm “${search}”` : ''}`),
+  scope: (lessons: readonly number[], filter: keyof typeof vocabularyFilters, direction: string, search?: string) => pair(`当前轮次：第 ${lessonScope(lessons)} 课 · ${vocabularyFilters[filter].zh} · ${direction === 'zh-vi' ? '中 → 越' : '越 → 中'}${search ? ` · 搜索“${search}”` : ''}`, `Lượt đang học: Bài ${lessonScope(lessons)} · ${vocabularyFilters[filter].vi} · ${direction === 'zh-vi' ? 'Trung → Việt' : 'Việt → Trung'}${search ? ` · Tìm “${search}”` : ''}`),
   total: (rated: number, total: number, unfamiliar: number, wrong: number, due: number) => pair(`已自评 ${rated} / ${total} 个义项 · 尚未掌握 ${unfamiliar} · 需要再练 ${wrong} · 到期词和新词 ${due}。`, `Đã tự đánh giá ${rated} / ${total} nghĩa · Chưa thuộc ${unfamiliar} · Cần luyện lại ${wrong} · Đến hạn và từ mới ${due}.`),
   round: (rated: number, total: number, done: boolean) => pair(`当前轮次：已自评 ${rated} / ${total} 张。${done ? ' 本轮已完成。' : ''}`, `Lượt đang học: ${rated} / ${total} thẻ đã tự đánh giá.${done ? ' Đã hoàn thành lượt này.' : ''}`),
   // Keep diagnostic detail verbatim: unexpected service errors must remain useful.

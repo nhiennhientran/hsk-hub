@@ -1,3 +1,4 @@
+import { navigateFeature } from './ui-actions.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Page } from '@playwright/test';
 import { createTextbookContent } from '../../src/services/content/textbook.ts';
@@ -212,7 +213,7 @@ test('pause, resume, slow rate and replay control the native clock, listening mo
   expect((await native(page)).time).toBeLessThan(1);
   await page.locator('#audio-rate').selectOption('0.65');
   expect((await native(page)).rate).toBe(.65);
-  await page.locator('#feature-nav [data-feature="homework"]').click();
+  await navigateFeature(page, 'homework');
   await expect(page.locator('#module-host')).toHaveAttribute('data-feature', 'homework');
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
   expect((await native(page)).paused).toBe(true);

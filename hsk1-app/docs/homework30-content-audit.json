@@ -1,0 +1,3679 @@
+{
+  "schemaVersion": 1,
+  "version": "hsk1-homework-30-v1",
+  "method": {
+    "quotas": "Exhaustive per-lesson count, type, source and identity checks.",
+    "exactMcQuestionCores": "Compare prompt, stem, ordered options and correct index within each lesson across all MC parts.",
+    "sentenceOverlap": "Compare punctuation/space-normalized Chinese sentence fragments containing at least three Hanzi from keyed MC answers, accepted sort answers and listening transcripts; list every repeated string, not just duplicates by widget type.",
+    "manualBoundary": "No teacher answers are created for manual writing. Authored lesson-3 scenarios are separately compared with the five manual Vietnamese prompts.",
+    "linguisticAudit": "Five new lesson-3 scenarios have explicit Chinese answers, Vietnamese meaning checks, corrected lesson-vocabulary references and an individual reason for every distractor. Inherited questions preserve the corrected source bank; no new human audio or PDF review is claimed."
+  },
+  "summary": {
+    "lessons": 15,
+    "questions": 450,
+    "automatic": 375,
+    "manual": 75,
+    "exactRepeatedMcQuestionCores": 0,
+    "sourcePreservedSentenceOverlapGroups": 43,
+    "authoredLesson3Scenarios": 5,
+    "authoredLesson3TargetCollisions": 0
+  },
+  "lessonCoverage": [
+    {
+      "lesson": 1,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l01-choice-01",
+          "part": "choice",
+          "skill": "见面问候与敬称"
+        },
+        {
+          "questionId": "hw30-v1-l01-choice-02",
+          "part": "choice",
+          "skill": "复数你们"
+        },
+        {
+          "questionId": "hw30-v1-l01-choice-03",
+          "part": "choice",
+          "skill": "告别语的交际功能"
+        },
+        {
+          "questionId": "hw30-v1-l01-choice-04",
+          "part": "choice",
+          "skill": "感谢与回应"
+        },
+        {
+          "questionId": "hw30-v1-l01-choice-05",
+          "part": "choice",
+          "skill": "感谢对象与大家"
+        },
+        {
+          "questionId": "hw30-v1-l01-choice-06",
+          "part": "choice",
+          "skill": "回应感谢"
+        },
+        {
+          "questionId": "hw30-v1-l01-choice-07",
+          "part": "choice",
+          "skill": "尊称您"
+        },
+        {
+          "questionId": "hw30-v1-l01-choice-08",
+          "part": "choice",
+          "skill": "告别"
+        },
+        {
+          "questionId": "hw30-v1-l01-choice-09",
+          "part": "choice",
+          "skill": "群体问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-choice-10",
+          "part": "choice",
+          "skill": "表达感谢"
+        },
+        {
+          "questionId": "hw30-v1-l01-sort-01",
+          "part": "sort",
+          "skill": "称呼与敬称问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-sort-02",
+          "part": "sort",
+          "skill": "复数问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-sort-03",
+          "part": "sort",
+          "skill": "感谢对象"
+        },
+        {
+          "questionId": "hw30-v1-l01-sort-04",
+          "part": "sort",
+          "skill": "复数称呼与告别"
+        },
+        {
+          "questionId": "hw30-v1-l01-sort-05",
+          "part": "sort",
+          "skill": "带称呼的见面问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-listening-01",
+          "part": "listening",
+          "skill": "称呼与问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-listening-02",
+          "part": "listening",
+          "skill": "群体问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-listening-03",
+          "part": "listening",
+          "skill": "尊称听辨"
+        },
+        {
+          "questionId": "hw30-v1-l01-listening-04",
+          "part": "listening",
+          "skill": "感谢回应听辨"
+        },
+        {
+          "questionId": "hw30-v1-l01-listening-05",
+          "part": "listening",
+          "skill": "告别听辨"
+        },
+        {
+          "questionId": "hw30-v1-l01-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "礼貌问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "感谢回应"
+        },
+        {
+          "questionId": "hw30-v1-l01-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "群体问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "称呼与感谢"
+        },
+        {
+          "questionId": "hw30-v1-l01-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "复数告别"
+        },
+        {
+          "questionId": "hw30-v1-l01-translation-01",
+          "part": "translation",
+          "skill": "大家的群体问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-translation-02",
+          "part": "translation",
+          "skill": "感谢教师"
+        },
+        {
+          "questionId": "hw30-v1-l01-translation-03",
+          "part": "translation",
+          "skill": "回应感谢"
+        },
+        {
+          "questionId": "hw30-v1-l01-translation-04",
+          "part": "translation",
+          "skill": "指名告别"
+        },
+        {
+          "questionId": "hw30-v1-l01-translation-05",
+          "part": "translation",
+          "skill": "单人问候"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 6
+    },
+    {
+      "lesson": 2,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l02-choice-01",
+          "part": "choice",
+          "skill": "姓名信息识别"
+        },
+        {
+          "questionId": "hw30-v1-l02-choice-02",
+          "part": "choice",
+          "skill": "道歉与话轮角色"
+        },
+        {
+          "questionId": "hw30-v1-l02-choice-03",
+          "part": "choice",
+          "skill": "道歉后的自然回应"
+        },
+        {
+          "questionId": "hw30-v1-l02-choice-04",
+          "part": "choice",
+          "skill": "也的已学语块"
+        },
+        {
+          "questionId": "hw30-v1-l02-choice-05",
+          "part": "choice",
+          "skill": "主谓宾与施受关系"
+        },
+        {
+          "questionId": "hw30-v1-l02-choice-06",
+          "part": "choice",
+          "skill": "问姓名"
+        },
+        {
+          "questionId": "hw30-v1-l02-choice-07",
+          "part": "choice",
+          "skill": "否定与身份更正"
+        },
+        {
+          "questionId": "hw30-v1-l02-choice-08",
+          "part": "choice",
+          "skill": "回应道歉"
+        },
+        {
+          "questionId": "hw30-v1-l02-choice-09",
+          "part": "choice",
+          "skill": "也的位置"
+        },
+        {
+          "questionId": "hw30-v1-l02-choice-10",
+          "part": "choice",
+          "skill": "叫与认识"
+        },
+        {
+          "questionId": "hw30-v1-l02-sort-01",
+          "part": "sort",
+          "skill": "我叫加姓名"
+        },
+        {
+          "questionId": "hw30-v1-l02-sort-02",
+          "part": "sort",
+          "skill": "礼貌问名语序"
+        },
+        {
+          "questionId": "hw30-v1-l02-sort-03",
+          "part": "sort",
+          "skill": "认识你后的回应语块"
+        },
+        {
+          "questionId": "hw30-v1-l02-sort-04",
+          "part": "sort",
+          "skill": "身份纠正语块"
+        },
+        {
+          "questionId": "hw30-v1-l02-sort-05",
+          "part": "sort",
+          "skill": "认识的否定与基本语序"
+        },
+        {
+          "questionId": "hw30-v1-l02-listening-01",
+          "part": "listening",
+          "skill": "姓名听辨"
+        },
+        {
+          "questionId": "hw30-v1-l02-listening-02",
+          "part": "listening",
+          "skill": "自我介绍听辨"
+        },
+        {
+          "questionId": "hw30-v1-l02-listening-03",
+          "part": "listening",
+          "skill": "道歉听辨"
+        },
+        {
+          "questionId": "hw30-v1-l02-listening-04",
+          "part": "listening",
+          "skill": "问候与姓名"
+        },
+        {
+          "questionId": "hw30-v1-l02-listening-05",
+          "part": "listening",
+          "skill": "初识表达听辨"
+        },
+        {
+          "questionId": "hw30-v1-l02-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "礼貌问姓名"
+        },
+        {
+          "questionId": "hw30-v1-l02-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "身份否定"
+        },
+        {
+          "questionId": "hw30-v1-l02-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "认识与情感"
+        },
+        {
+          "questionId": "hw30-v1-l02-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "道歉"
+        },
+        {
+          "questionId": "hw30-v1-l02-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "回应道歉"
+        },
+        {
+          "questionId": "hw30-v1-l02-translation-01",
+          "part": "translation",
+          "skill": "姓名自我介绍"
+        },
+        {
+          "questionId": "hw30-v1-l02-translation-02",
+          "part": "translation",
+          "skill": "有称呼的道歉"
+        },
+        {
+          "questionId": "hw30-v1-l02-translation-03",
+          "part": "translation",
+          "skill": "复数对象的认识表达"
+        },
+        {
+          "questionId": "hw30-v1-l02-translation-04",
+          "part": "translation",
+          "skill": "已学身份语块"
+        },
+        {
+          "questionId": "hw30-v1-l02-translation-05",
+          "part": "translation",
+          "skill": "认识与也"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 4
+    },
+    {
+      "lesson": 3,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l03-choice-01",
+          "part": "choice",
+          "skill": "问国籍"
+        },
+        {
+          "questionId": "hw30-v1-l03-choice-02",
+          "part": "choice",
+          "skill": "的与亲属关系"
+        },
+        {
+          "questionId": "hw30-v1-l03-choice-03",
+          "part": "choice",
+          "skill": "吗问句"
+        },
+        {
+          "questionId": "hw30-v1-l03-choice-04",
+          "part": "choice",
+          "skill": "不太"
+        },
+        {
+          "questionId": "hw30-v1-l03-choice-05",
+          "part": "choice",
+          "skill": "也是"
+        },
+        {
+          "questionId": "hw30-v1-l03-choice-06",
+          "part": "choice",
+          "skill": "谁问身份而非哪国人问国籍"
+        },
+        {
+          "questionId": "hw30-v1-l03-choice-07",
+          "part": "choice",
+          "skill": "还的持续状态与还很忙语序"
+        },
+        {
+          "questionId": "hw30-v1-l03-choice-08",
+          "part": "choice",
+          "skill": "名词短语我姐姐加的表示所属"
+        },
+        {
+          "questionId": "hw30-v1-l03-choice-09",
+          "part": "choice",
+          "skill": "不是否定身份关系而非不太否定程度"
+        },
+        {
+          "questionId": "hw30-v1-l03-choice-10",
+          "part": "choice",
+          "skill": "想的主语与宾语方向区别"
+        },
+        {
+          "questionId": "hw30-v1-l03-sort-01",
+          "part": "sort",
+          "skill": "国籍表达"
+        },
+        {
+          "questionId": "hw30-v1-l03-sort-02",
+          "part": "sort",
+          "skill": "吗问句"
+        },
+        {
+          "questionId": "hw30-v1-l03-sort-03",
+          "part": "sort",
+          "skill": "的字结构"
+        },
+        {
+          "questionId": "hw30-v1-l03-sort-04",
+          "part": "sort",
+          "skill": "不太忙"
+        },
+        {
+          "questionId": "hw30-v1-l03-sort-05",
+          "part": "sort",
+          "skill": "想与也"
+        },
+        {
+          "questionId": "hw30-v1-l03-listening-01",
+          "part": "listening",
+          "skill": "国籍听辨"
+        },
+        {
+          "questionId": "hw30-v1-l03-listening-02",
+          "part": "listening",
+          "skill": "两句信息听辨"
+        },
+        {
+          "questionId": "hw30-v1-l03-listening-03",
+          "part": "listening",
+          "skill": "人物关系听辨"
+        },
+        {
+          "questionId": "hw30-v1-l03-listening-04",
+          "part": "listening",
+          "skill": "工作状态听辨"
+        },
+        {
+          "questionId": "hw30-v1-l03-listening-05",
+          "part": "listening",
+          "skill": "否定程度与想念"
+        },
+        {
+          "questionId": "hw30-v1-l03-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "所属与国籍"
+        },
+        {
+          "questionId": "hw30-v1-l03-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "哪国人"
+        },
+        {
+          "questionId": "hw30-v1-l03-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "不太"
+        },
+        {
+          "questionId": "hw30-v1-l03-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "这与关系介绍"
+        },
+        {
+          "questionId": "hw30-v1-l03-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "也是与吗"
+        },
+        {
+          "questionId": "hw30-v1-l03-translation-01",
+          "part": "translation",
+          "skill": "所属关系与国籍"
+        },
+        {
+          "questionId": "hw30-v1-l03-translation-02",
+          "part": "translation",
+          "skill": "人物关系与吗问句"
+        },
+        {
+          "questionId": "hw30-v1-l03-translation-03",
+          "part": "translation",
+          "skill": "这与关系介绍"
+        },
+        {
+          "questionId": "hw30-v1-l03-translation-04",
+          "part": "translation",
+          "skill": "不是与身份关系"
+        },
+        {
+          "questionId": "hw30-v1-l03-translation-05",
+          "part": "translation",
+          "skill": "想念义与人称"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 3
+    },
+    {
+      "lesson": 4,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l04-choice-01",
+          "part": "choice",
+          "skill": "二两与数量结构"
+        },
+        {
+          "questionId": "hw30-v1-l04-choice-02",
+          "part": "choice",
+          "skill": "没有与不是"
+        },
+        {
+          "questionId": "hw30-v1-l04-choice-03",
+          "part": "choice",
+          "skill": "家庭人数问答"
+        },
+        {
+          "questionId": "hw30-v1-l04-choice-04",
+          "part": "choice",
+          "skill": "呢的承前回问"
+        },
+        {
+          "questionId": "hw30-v1-l04-choice-05",
+          "part": "choice",
+          "skill": "二十二与年龄数字"
+        },
+        {
+          "questionId": "hw30-v1-l04-choice-06",
+          "part": "choice",
+          "skill": "没有"
+        },
+        {
+          "questionId": "hw30-v1-l04-choice-07",
+          "part": "choice",
+          "skill": "家庭人数与口"
+        },
+        {
+          "questionId": "hw30-v1-l04-choice-08",
+          "part": "choice",
+          "skill": "两与数量"
+        },
+        {
+          "questionId": "hw30-v1-l04-choice-09",
+          "part": "choice",
+          "skill": "年龄问答"
+        },
+        {
+          "questionId": "hw30-v1-l04-choice-10",
+          "part": "choice",
+          "skill": "呢反问"
+        },
+        {
+          "questionId": "hw30-v1-l04-sort-01",
+          "part": "sort",
+          "skill": "家庭人数与口"
+        },
+        {
+          "questionId": "hw30-v1-l04-sort-02",
+          "part": "sort",
+          "skill": "多大与今年的位置"
+        },
+        {
+          "questionId": "hw30-v1-l04-sort-03",
+          "part": "sort",
+          "skill": "第三人称与没有"
+        },
+        {
+          "questionId": "hw30-v1-l04-sort-04",
+          "part": "sort",
+          "skill": "和连接并列人物"
+        },
+        {
+          "questionId": "hw30-v1-l04-sort-05",
+          "part": "sort",
+          "skill": "一个与亲属数量"
+        },
+        {
+          "questionId": "hw30-v1-l04-listening-01",
+          "part": "listening",
+          "skill": "二十与人数"
+        },
+        {
+          "questionId": "hw30-v1-l04-listening-02",
+          "part": "listening",
+          "skill": "数量与反问听辨"
+        },
+        {
+          "questionId": "hw30-v1-l04-listening-03",
+          "part": "listening",
+          "skill": "家庭人数听辨"
+        },
+        {
+          "questionId": "hw30-v1-l04-listening-04",
+          "part": "listening",
+          "skill": "家庭成员听辨"
+        },
+        {
+          "questionId": "hw30-v1-l04-listening-05",
+          "part": "listening",
+          "skill": "儿女与数量听辨"
+        },
+        {
+          "questionId": "hw30-v1-l04-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "家庭人数"
+        },
+        {
+          "questionId": "hw30-v1-l04-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "亲属与否定"
+        },
+        {
+          "questionId": "hw30-v1-l04-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "年龄问句"
+        },
+        {
+          "questionId": "hw30-v1-l04-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "和与家庭"
+        },
+        {
+          "questionId": "hw30-v1-l04-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "呢与国籍"
+        },
+        {
+          "questionId": "hw30-v1-l04-translation-01",
+          "part": "translation",
+          "skill": "两与亲属数量"
+        },
+        {
+          "questionId": "hw30-v1-l04-translation-02",
+          "part": "translation",
+          "skill": "她家与家庭人数"
+        },
+        {
+          "questionId": "hw30-v1-l04-translation-03",
+          "part": "translation",
+          "skill": "儿子八岁与今年"
+        },
+        {
+          "questionId": "hw30-v1-l04-translation-04",
+          "part": "translation",
+          "skill": "没有与呢回问"
+        },
+        {
+          "questionId": "hw30-v1-l04-translation-05",
+          "part": "translation",
+          "skill": "父母与和"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 1
+    },
+    {
+      "lesson": 5,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l05-choice-01",
+          "part": "choice",
+          "skill": "月份与日期顺序"
+        },
+        {
+          "questionId": "hw30-v1-l05-choice-02",
+          "part": "choice",
+          "skill": "星期问句与越语星期对应"
+        },
+        {
+          "questionId": "hw30-v1-l05-choice-03",
+          "part": "choice",
+          "skill": "不会与技能"
+        },
+        {
+          "questionId": "hw30-v1-l05-choice-04",
+          "part": "choice",
+          "skill": "也喜欢与它的指代"
+        },
+        {
+          "questionId": "hw30-v1-l05-choice-05",
+          "part": "choice",
+          "skill": "会做什么与吗问句区别"
+        },
+        {
+          "questionId": "hw30-v1-l05-choice-06",
+          "part": "choice",
+          "skill": "日期问答"
+        },
+        {
+          "questionId": "hw30-v1-l05-choice-07",
+          "part": "choice",
+          "skill": "会表示能力"
+        },
+        {
+          "questionId": "hw30-v1-l05-choice-08",
+          "part": "choice",
+          "skill": "不会与喜欢"
+        },
+        {
+          "questionId": "hw30-v1-l05-choice-09",
+          "part": "choice",
+          "skill": "星期与日期区别"
+        },
+        {
+          "questionId": "hw30-v1-l05-choice-10",
+          "part": "choice",
+          "skill": "时间与休息"
+        },
+        {
+          "questionId": "hw30-v1-l05-sort-01",
+          "part": "sort",
+          "skill": "今天的位置"
+        },
+        {
+          "questionId": "hw30-v1-l05-sort-02",
+          "part": "sort",
+          "skill": "会加动词与吗"
+        },
+        {
+          "questionId": "hw30-v1-l05-sort-03",
+          "part": "sort",
+          "skill": "年龄名词谓语句"
+        },
+        {
+          "questionId": "hw30-v1-l05-sort-04",
+          "part": "sort",
+          "skill": "领属与新电脑"
+        },
+        {
+          "questionId": "hw30-v1-l05-sort-05",
+          "part": "sort",
+          "skill": "我们也很喜欢它"
+        },
+        {
+          "questionId": "hw30-v1-l05-listening-01",
+          "part": "listening",
+          "skill": "日期听辨"
+        },
+        {
+          "questionId": "hw30-v1-l05-listening-02",
+          "part": "listening",
+          "skill": "星期与安排听辨"
+        },
+        {
+          "questionId": "hw30-v1-l05-listening-03",
+          "part": "listening",
+          "skill": "会做饭听辨"
+        },
+        {
+          "questionId": "hw30-v1-l05-listening-04",
+          "part": "listening",
+          "skill": "技能疑问听辨"
+        },
+        {
+          "questionId": "hw30-v1-l05-listening-05",
+          "part": "listening",
+          "skill": "物品所属听辨"
+        },
+        {
+          "questionId": "hw30-v1-l05-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "日期转换"
+        },
+        {
+          "questionId": "hw30-v1-l05-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "也会"
+        },
+        {
+          "questionId": "hw30-v1-l05-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "的与新电脑"
+        },
+        {
+          "questionId": "hw30-v1-l05-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "会与什么"
+        },
+        {
+          "questionId": "hw30-v1-l05-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "能力否定"
+        },
+        {
+          "questionId": "hw30-v1-l05-translation-01",
+          "part": "translation",
+          "skill": "日期表达与名词谓语"
+        },
+        {
+          "questionId": "hw30-v1-l05-translation-02",
+          "part": "translation",
+          "skill": "父亲与会做饺子"
+        },
+        {
+          "questionId": "hw30-v1-l05-translation-03",
+          "part": "translation",
+          "skill": "星期天与也休息"
+        },
+        {
+          "questionId": "hw30-v1-l05-translation-04",
+          "part": "translation",
+          "skill": "新电脑与真好看"
+        },
+        {
+          "questionId": "hw30-v1-l05-translation-05",
+          "part": "translation",
+          "skill": "不会做面条儿"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 4
+    },
+    {
+      "lesson": 6,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l06-choice-01",
+          "part": "choice",
+          "skill": "询问手机号"
+        },
+        {
+          "questionId": "hw30-v1-l06-choice-02",
+          "part": "choice",
+          "skill": "想与目的连动句"
+        },
+        {
+          "questionId": "hw30-v1-l06-choice-03",
+          "part": "choice",
+          "skill": "怎么与交通方式"
+        },
+        {
+          "questionId": "hw30-v1-l06-choice-04",
+          "part": "choice",
+          "skill": "想与不想"
+        },
+        {
+          "questionId": "hw30-v1-l06-choice-05",
+          "part": "choice",
+          "skill": "连动句表示目的"
+        },
+        {
+          "questionId": "hw30-v1-l06-choice-06",
+          "part": "choice",
+          "skill": "想＋动词"
+        },
+        {
+          "questionId": "hw30-v1-l06-choice-07",
+          "part": "choice",
+          "skill": "怎么／出行方式"
+        },
+        {
+          "questionId": "hw30-v1-l06-choice-08",
+          "part": "choice",
+          "skill": "手机号是多少"
+        },
+        {
+          "questionId": "hw30-v1-l06-choice-09",
+          "part": "choice",
+          "skill": "连动句：去＋处所＋目的"
+        },
+        {
+          "questionId": "hw30-v1-l06-choice-10",
+          "part": "choice",
+          "skill": "不想"
+        },
+        {
+          "questionId": "hw30-v1-l06-sort-01",
+          "part": "sort",
+          "skill": "询问手机号"
+        },
+        {
+          "questionId": "hw30-v1-l06-sort-02",
+          "part": "sort",
+          "skill": "想与些"
+        },
+        {
+          "questionId": "hw30-v1-l06-sort-03",
+          "part": "sort",
+          "skill": "连动句表示目的"
+        },
+        {
+          "questionId": "hw30-v1-l06-sort-04",
+          "part": "sort",
+          "skill": "连动句表示方式"
+        },
+        {
+          "questionId": "hw30-v1-l06-sort-05",
+          "part": "sort",
+          "skill": "不想"
+        },
+        {
+          "questionId": "hw30-v1-l06-listening-01",
+          "part": "listening",
+          "skill": "听辨手机号"
+        },
+        {
+          "questionId": "hw30-v1-l06-listening-02",
+          "part": "listening",
+          "skill": "听辨连动句"
+        },
+        {
+          "questionId": "hw30-v1-l06-listening-03",
+          "part": "listening",
+          "skill": "听辨买／牛奶"
+        },
+        {
+          "questionId": "hw30-v1-l06-listening-04",
+          "part": "listening",
+          "skill": "听辨非常好吃／想吃"
+        },
+        {
+          "questionId": "hw30-v1-l06-listening-05",
+          "part": "listening",
+          "skill": "听辨肯否与食物"
+        },
+        {
+          "questionId": "hw30-v1-l06-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "想买些＋名词"
+        },
+        {
+          "questionId": "hw30-v1-l06-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "交通方式＋去＋目的地"
+        },
+        {
+          "questionId": "hw30-v1-l06-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "明天／去哪儿"
+        },
+        {
+          "questionId": "hw30-v1-l06-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "想／不想"
+        },
+        {
+          "questionId": "hw30-v1-l06-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "地点修饰语／好吃"
+        },
+        {
+          "questionId": "hw30-v1-l06-translation-01",
+          "part": "translation",
+          "skill": "询问手机号"
+        },
+        {
+          "questionId": "hw30-v1-l06-translation-02",
+          "part": "translation",
+          "skill": "想与目的连动句"
+        },
+        {
+          "questionId": "hw30-v1-l06-translation-03",
+          "part": "translation",
+          "skill": "不想与亲属关系"
+        },
+        {
+          "questionId": "hw30-v1-l06-translation-04",
+          "part": "translation",
+          "skill": "连动句表示方式"
+        },
+        {
+          "questionId": "hw30-v1-l06-translation-05",
+          "part": "translation",
+          "skill": "的与食物评价"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 3
+    },
+    {
+      "lesson": 7,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l07-choice-01",
+          "part": "choice",
+          "skill": "钟点与半"
+        },
+        {
+          "questionId": "hw30-v1-l07-choice-02",
+          "part": "choice",
+          "skill": "吧表示提议"
+        },
+        {
+          "questionId": "hw30-v1-l07-choice-03",
+          "part": "choice",
+          "skill": "在表示位置"
+        },
+        {
+          "questionId": "hw30-v1-l07-choice-04",
+          "part": "choice",
+          "skill": "时间与有没有课"
+        },
+        {
+          "questionId": "hw30-v1-l07-choice-05",
+          "part": "choice",
+          "skill": "陈述句末的呢"
+        },
+        {
+          "questionId": "hw30-v1-l07-choice-06",
+          "part": "choice",
+          "skill": "时间表达：点半"
+        },
+        {
+          "questionId": "hw30-v1-l07-choice-07",
+          "part": "choice",
+          "skill": "几点"
+        },
+        {
+          "questionId": "hw30-v1-l07-choice-08",
+          "part": "choice",
+          "skill": "语气助词吧"
+        },
+        {
+          "questionId": "hw30-v1-l07-choice-09",
+          "part": "choice",
+          "skill": "分钟后与点"
+        },
+        {
+          "questionId": "hw30-v1-l07-choice-10",
+          "part": "choice",
+          "skill": "下班时间"
+        },
+        {
+          "questionId": "hw30-v1-l07-sort-01",
+          "part": "sort",
+          "skill": "时间状语的位置"
+        },
+        {
+          "questionId": "hw30-v1-l07-sort-02",
+          "part": "sort",
+          "skill": "时间与吧"
+        },
+        {
+          "questionId": "hw30-v1-l07-sort-03",
+          "part": "sort",
+          "skill": "时间与有课"
+        },
+        {
+          "questionId": "hw30-v1-l07-sort-04",
+          "part": "sort",
+          "skill": "位置动词在与陈述呢"
+        },
+        {
+          "questionId": "hw30-v1-l07-sort-05",
+          "part": "sort",
+          "skill": "一段时间后"
+        },
+        {
+          "questionId": "hw30-v1-l07-listening-01",
+          "part": "listening",
+          "skill": "听辨现在几点"
+        },
+        {
+          "questionId": "hw30-v1-l07-listening-02",
+          "part": "listening",
+          "skill": "听辨十点十分"
+        },
+        {
+          "questionId": "hw30-v1-l07-listening-03",
+          "part": "listening",
+          "skill": "听辨约见时间"
+        },
+        {
+          "questionId": "hw30-v1-l07-listening-04",
+          "part": "listening",
+          "skill": "听辨下班／六点半"
+        },
+        {
+          "questionId": "hw30-v1-l07-listening-05",
+          "part": "listening",
+          "skill": "听辨时刻与时段"
+        },
+        {
+          "questionId": "hw30-v1-l07-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "时刻与课程安排"
+        },
+        {
+          "questionId": "hw30-v1-l07-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "时间／不去"
+        },
+        {
+          "questionId": "hw30-v1-l07-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "时间／见吧"
+        },
+        {
+          "questionId": "hw30-v1-l07-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "十分钟后"
+        },
+        {
+          "questionId": "hw30-v1-l07-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "在＋哪儿"
+        },
+        {
+          "questionId": "hw30-v1-l07-translation-01",
+          "part": "translation",
+          "skill": "钟点与下课"
+        },
+        {
+          "questionId": "hw30-v1-l07-translation-02",
+          "part": "translation",
+          "skill": "时间与想、连动句"
+        },
+        {
+          "questionId": "hw30-v1-l07-translation-03",
+          "part": "translation",
+          "skill": "时间与吧"
+        },
+        {
+          "questionId": "hw30-v1-l07-translation-04",
+          "part": "translation",
+          "skill": "现在与位置动词在"
+        },
+        {
+          "questionId": "hw30-v1-l07-translation-05",
+          "part": "translation",
+          "skill": "时间后与去医院上班"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 4
+    },
+    {
+      "lesson": 8,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l08-choice-01",
+          "part": "choice",
+          "skill": "方位词下"
+        },
+        {
+          "questionId": "hw30-v1-l08-choice-02",
+          "part": "choice",
+          "skill": "量词只"
+        },
+        {
+          "questionId": "hw30-v1-l08-choice-03",
+          "part": "choice",
+          "skill": "在作介词与工作作动词"
+        },
+        {
+          "questionId": "hw30-v1-l08-choice-04",
+          "part": "choice",
+          "skill": "能表示条件许可"
+        },
+        {
+          "questionId": "hw30-v1-l08-choice-05",
+          "part": "choice",
+          "skill": "没看见"
+        },
+        {
+          "questionId": "hw30-v1-l08-choice-06",
+          "part": "choice",
+          "skill": "方位词下"
+        },
+        {
+          "questionId": "hw30-v1-l08-choice-07",
+          "part": "choice",
+          "skill": "在＋处所＋工作"
+        },
+        {
+          "questionId": "hw30-v1-l08-choice-08",
+          "part": "choice",
+          "skill": "能＋动词"
+        },
+        {
+          "questionId": "hw30-v1-l08-choice-09",
+          "part": "choice",
+          "skill": "介词在"
+        },
+        {
+          "questionId": "hw30-v1-l08-choice-10",
+          "part": "choice",
+          "skill": "在哪儿／方位"
+        },
+        {
+          "questionId": "hw30-v1-l08-sort-01",
+          "part": "sort",
+          "skill": "名词与方位词"
+        },
+        {
+          "questionId": "hw30-v1-l08-sort-02",
+          "part": "sort",
+          "skill": "在地点动作"
+        },
+        {
+          "questionId": "hw30-v1-l08-sort-03",
+          "part": "sort",
+          "skill": "在、方位与吧"
+        },
+        {
+          "questionId": "hw30-v1-l08-sort-04",
+          "part": "sort",
+          "skill": "能与时间"
+        },
+        {
+          "questionId": "hw30-v1-l08-sort-05",
+          "part": "sort",
+          "skill": "没看见"
+        },
+        {
+          "questionId": "hw30-v1-l08-listening-01",
+          "part": "listening",
+          "skill": "听辨房间外／小猫"
+        },
+        {
+          "questionId": "hw30-v1-l08-listening-02",
+          "part": "listening",
+          "skill": "听辨方位下"
+        },
+        {
+          "questionId": "hw30-v1-l08-listening-03",
+          "part": "listening",
+          "skill": "听辨见面地点"
+        },
+        {
+          "questionId": "hw30-v1-l08-listening-04",
+          "part": "listening",
+          "skill": "听辨能到／时间"
+        },
+        {
+          "questionId": "hw30-v1-l08-listening-05",
+          "part": "listening",
+          "skill": "听辨病人多／医生忙"
+        },
+        {
+          "questionId": "hw30-v1-l08-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "方位词下"
+        },
+        {
+          "questionId": "hw30-v1-l08-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "也在＋处所＋工作"
+        },
+        {
+          "questionId": "hw30-v1-l08-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "能到吗／时间"
+        },
+        {
+          "questionId": "hw30-v1-l08-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "学校书店前／见吧"
+        },
+        {
+          "questionId": "hw30-v1-l08-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "在学校吃午饭"
+        },
+        {
+          "questionId": "hw30-v1-l08-translation-01",
+          "part": "translation",
+          "skill": "方位词外"
+        },
+        {
+          "questionId": "hw30-v1-l08-translation-02",
+          "part": "translation",
+          "skill": "在地点工作"
+        },
+        {
+          "questionId": "hw30-v1-l08-translation-03",
+          "part": "translation",
+          "skill": "在与方位、吧"
+        },
+        {
+          "questionId": "hw30-v1-l08-translation-04",
+          "part": "translation",
+          "skill": "不能与时间"
+        },
+        {
+          "questionId": "hw30-v1-l08-translation-05",
+          "part": "translation",
+          "skill": "还没与吃午饭"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 2
+    },
+    {
+      "lesson": 9,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l09-choice-01",
+          "part": "choice",
+          "skill": "处所有名词"
+        },
+        {
+          "questionId": "hw30-v1-l09-choice-02",
+          "part": "choice",
+          "skill": "本与处所信息"
+        },
+        {
+          "questionId": "hw30-v1-l09-choice-03",
+          "part": "choice",
+          "skill": "第与数量区别"
+        },
+        {
+          "questionId": "hw30-v1-l09-choice-04",
+          "part": "choice",
+          "skill": "时间处所动作"
+        },
+        {
+          "questionId": "hw30-v1-l09-choice-05",
+          "part": "choice",
+          "skill": "白天晚上与活动"
+        },
+        {
+          "questionId": "hw30-v1-l09-choice-06",
+          "part": "choice",
+          "skill": "处所＋有＋事物"
+        },
+        {
+          "questionId": "hw30-v1-l09-choice-07",
+          "part": "choice",
+          "skill": "第＋数词＋量词"
+        },
+        {
+          "questionId": "hw30-v1-l09-choice-08",
+          "part": "choice",
+          "skill": "时间／处所顺序"
+        },
+        {
+          "questionId": "hw30-v1-l09-choice-09",
+          "part": "choice",
+          "skill": "谁的／我的"
+        },
+        {
+          "questionId": "hw30-v1-l09-choice-10",
+          "part": "choice",
+          "skill": "和＋人＋动词"
+        },
+        {
+          "questionId": "hw30-v1-l09-sort-01",
+          "part": "sort",
+          "skill": "存现句与本"
+        },
+        {
+          "questionId": "hw30-v1-l09-sort-02",
+          "part": "sort",
+          "skill": "存现句与家"
+        },
+        {
+          "questionId": "hw30-v1-l09-sort-03",
+          "part": "sort",
+          "skill": "第数词量词"
+        },
+        {
+          "questionId": "hw30-v1-l09-sort-04",
+          "part": "sort",
+          "skill": "时间处所状语顺序"
+        },
+        {
+          "questionId": "hw30-v1-l09-sort-05",
+          "part": "sort",
+          "skill": "和与时间位置"
+        },
+        {
+          "questionId": "hw30-v1-l09-listening-01",
+          "part": "listening",
+          "skill": "听辨前边／电影院"
+        },
+        {
+          "questionId": "hw30-v1-l09-listening-02",
+          "part": "listening",
+          "skill": "听辨时间地点活动"
+        },
+        {
+          "questionId": "hw30-v1-l09-listening-03",
+          "part": "listening",
+          "skill": "听辨星期六／做什么"
+        },
+        {
+          "questionId": "hw30-v1-l09-listening-04",
+          "part": "listening",
+          "skill": "听辨唱歌好听"
+        },
+        {
+          "questionId": "hw30-v1-l09-listening-05",
+          "part": "listening",
+          "skill": "听辨也有／小狗"
+        },
+        {
+          "questionId": "hw30-v1-l09-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "椅子上有"
+        },
+        {
+          "questionId": "hw30-v1-l09-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "时间／处所顺序"
+        },
+        {
+          "questionId": "hw30-v1-l09-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "第二本与两本"
+        },
+        {
+          "questionId": "hw30-v1-l09-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "和＋人／唱歌"
+        },
+        {
+          "questionId": "hw30-v1-l09-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "处所＋有＋建筑"
+        },
+        {
+          "questionId": "hw30-v1-l09-translation-01",
+          "part": "translation",
+          "skill": "存现句与本"
+        },
+        {
+          "questionId": "hw30-v1-l09-translation-02",
+          "part": "translation",
+          "skill": "存现句与家"
+        },
+        {
+          "questionId": "hw30-v1-l09-translation-03",
+          "part": "translation",
+          "skill": "第与序数"
+        },
+        {
+          "questionId": "hw30-v1-l09-translation-04",
+          "part": "translation",
+          "skill": "时间处所动作"
+        },
+        {
+          "questionId": "hw30-v1-l09-translation-05",
+          "part": "translation",
+          "skill": "和表示共同活动"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 3
+    },
+    {
+      "lesson": 10,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l10-choice-01",
+          "part": "choice",
+          "skill": "钱数的口语表达"
+        },
+        {
+          "questionId": "hw30-v1-l10-choice-02",
+          "part": "choice",
+          "skill": "件与数量"
+        },
+        {
+          "questionId": "hw30-v1-l10-choice-03",
+          "part": "choice",
+          "skill": "怎么样询问评价"
+        },
+        {
+          "questionId": "hw30-v1-l10-choice-04",
+          "part": "choice",
+          "skill": "这些那些与单价"
+        },
+        {
+          "questionId": "hw30-v1-l10-choice-05",
+          "part": "choice",
+          "skill": "不太与形容词谓语"
+        },
+        {
+          "questionId": "hw30-v1-l10-choice-06",
+          "part": "choice",
+          "skill": "钱数：块／毛"
+        },
+        {
+          "questionId": "hw30-v1-l10-choice-07",
+          "part": "choice",
+          "skill": "量词件"
+        },
+        {
+          "questionId": "hw30-v1-l10-choice-08",
+          "part": "choice",
+          "skill": "多少钱"
+        },
+        {
+          "questionId": "hw30-v1-l10-choice-09",
+          "part": "choice",
+          "skill": "单位斤"
+        },
+        {
+          "questionId": "hw30-v1-l10-choice-10",
+          "part": "choice",
+          "skill": "怎么样"
+        },
+        {
+          "questionId": "hw30-v1-l10-sort-01",
+          "part": "sort",
+          "skill": "询问价格"
+        },
+        {
+          "questionId": "hw30-v1-l10-sort-02",
+          "part": "sort",
+          "skill": "想与量词件"
+        },
+        {
+          "questionId": "hw30-v1-l10-sort-03",
+          "part": "sort",
+          "skill": "形容词谓语与真"
+        },
+        {
+          "questionId": "hw30-v1-l10-sort-04",
+          "part": "sort",
+          "skill": "不太与贵"
+        },
+        {
+          "questionId": "hw30-v1-l10-sort-05",
+          "part": "sort",
+          "skill": "件与怎么样"
+        },
+        {
+          "questionId": "hw30-v1-l10-listening-01",
+          "part": "listening",
+          "skill": "听辨有杯子吗"
+        },
+        {
+          "questionId": "hw30-v1-l10-listening-02",
+          "part": "listening",
+          "skill": "听辨这些／那些／价格"
+        },
+        {
+          "questionId": "hw30-v1-l10-listening-03",
+          "part": "listening",
+          "skill": "听辨真不少"
+        },
+        {
+          "questionId": "hw30-v1-l10-listening-04",
+          "part": "listening",
+          "skill": "听辨两斤苹果"
+        },
+        {
+          "questionId": "hw30-v1-l10-listening-05",
+          "part": "listening",
+          "skill": "听辨苹果／便宜"
+        },
+        {
+          "questionId": "hw30-v1-l10-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "便宜与多"
+        },
+        {
+          "questionId": "hw30-v1-l10-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "想买些衣服"
+        },
+        {
+          "questionId": "hw30-v1-l10-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "多少钱"
+        },
+        {
+          "questionId": "hw30-v1-l10-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "不贵"
+        },
+        {
+          "questionId": "hw30-v1-l10-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "两斤＝一千克"
+        },
+        {
+          "questionId": "hw30-v1-l10-translation-01",
+          "part": "translation",
+          "skill": "钱数表达"
+        },
+        {
+          "questionId": "hw30-v1-l10-translation-02",
+          "part": "translation",
+          "skill": "想与斤"
+        },
+        {
+          "questionId": "hw30-v1-l10-translation-03",
+          "part": "translation",
+          "skill": "的与不太贵"
+        },
+        {
+          "questionId": "hw30-v1-l10-translation-04",
+          "part": "translation",
+          "skill": "怎么样询问评价"
+        },
+        {
+          "questionId": "hw30-v1-l10-translation-05",
+          "part": "translation",
+          "skill": "那些与形容词谓语"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 3
+    },
+    {
+      "lesson": 11,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l11-choice-01",
+          "part": "choice",
+          "skill": "正在表示进行"
+        },
+        {
+          "questionId": "hw30-v1-l11-choice-02",
+          "part": "choice",
+          "skill": "正反问的形式与功能"
+        },
+        {
+          "questionId": "hw30-v1-l11-choice-03",
+          "part": "choice",
+          "skill": "要表示打算"
+        },
+        {
+          "questionId": "hw30-v1-l11-choice-04",
+          "part": "choice",
+          "skill": "读大学与持续状态"
+        },
+        {
+          "questionId": "hw30-v1-l11-choice-05",
+          "part": "choice",
+          "skill": "饭店与地点询问"
+        },
+        {
+          "questionId": "hw30-v1-l11-choice-06",
+          "part": "choice",
+          "skill": "正在 + động từ"
+        },
+        {
+          "questionId": "hw30-v1-l11-choice-07",
+          "part": "choice",
+          "skill": "Câu hỏi chính–phản"
+        },
+        {
+          "questionId": "hw30-v1-l11-choice-08",
+          "part": "choice",
+          "skill": "起床 / 没……呢"
+        },
+        {
+          "questionId": "hw30-v1-l11-choice-09",
+          "part": "choice",
+          "skill": "要 + động từ"
+        },
+        {
+          "questionId": "hw30-v1-l11-choice-10",
+          "part": "choice",
+          "skill": "大学 / 大学生"
+        },
+        {
+          "questionId": "hw30-v1-l11-sort-01",
+          "part": "sort",
+          "skill": "正在与句末呢"
+        },
+        {
+          "questionId": "hw30-v1-l11-sort-02",
+          "part": "sort",
+          "skill": "正反问与时间位置"
+        },
+        {
+          "questionId": "hw30-v1-l11-sort-03",
+          "part": "sort",
+          "skill": "要加去表示打算"
+        },
+        {
+          "questionId": "hw30-v1-l11-sort-04",
+          "part": "sort",
+          "skill": "对引出说话对象"
+        },
+        {
+          "questionId": "hw30-v1-l11-sort-05",
+          "part": "sort",
+          "skill": "是不是与身份确认"
+        },
+        {
+          "questionId": "hw30-v1-l11-listening-01",
+          "part": "listening",
+          "skill": "Nghe phân biệt 开车 / 坐车"
+        },
+        {
+          "questionId": "hw30-v1-l11-listening-02",
+          "part": "listening",
+          "skill": "Nghe 还在读大学"
+        },
+        {
+          "questionId": "hw30-v1-l11-listening-03",
+          "part": "listening",
+          "skill": "Nghe ngành học và mức độ bận"
+        },
+        {
+          "questionId": "hw30-v1-l11-listening-04",
+          "part": "listening",
+          "skill": "Nghe 起床没起床"
+        },
+        {
+          "questionId": "hw30-v1-l11-listening-05",
+          "part": "listening",
+          "skill": "Nghe trạng thái chưa dậy"
+        },
+        {
+          "questionId": "hw30-v1-l11-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "读大学 / 正在"
+        },
+        {
+          "questionId": "hw30-v1-l11-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "还没 + động từ"
+        },
+        {
+          "questionId": "hw30-v1-l11-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "去不去"
+        },
+        {
+          "questionId": "hw30-v1-l11-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "明天 + 要 + 去"
+        },
+        {
+          "questionId": "hw30-v1-l11-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "学医 / 课很多"
+        },
+        {
+          "questionId": "hw30-v1-l11-translation-01",
+          "part": "translation",
+          "skill": "正在找与所属关系"
+        },
+        {
+          "questionId": "hw30-v1-l11-translation-02",
+          "part": "translation",
+          "skill": "正反问或吗问句"
+        },
+        {
+          "questionId": "hw30-v1-l11-translation-03",
+          "part": "translation",
+          "skill": "要或想表达打算"
+        },
+        {
+          "questionId": "hw30-v1-l11-translation-04",
+          "part": "translation",
+          "skill": "读大学的持续状态"
+        },
+        {
+          "questionId": "hw30-v1-l11-translation-05",
+          "part": "translation",
+          "skill": "没与进行中的对比"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 2
+    },
+    {
+      "lesson": 12,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l12-choice-01",
+          "part": "choice",
+          "skill": "句末了报告天气变化"
+        },
+        {
+          "questionId": "hw30-v1-l12-choice-02",
+          "part": "choice",
+          "skill": "有点儿加形容词"
+        },
+        {
+          "questionId": "hw30-v1-l12-choice-03",
+          "part": "choice",
+          "skill": "一点儿加名词"
+        },
+        {
+          "questionId": "hw30-v1-l12-choice-04",
+          "part": "choice",
+          "skill": "太……了感叹程度"
+        },
+        {
+          "questionId": "hw30-v1-l12-choice-05",
+          "part": "choice",
+          "skill": "生病与看病的地点理解"
+        },
+        {
+          "questionId": "hw30-v1-l12-choice-06",
+          "part": "choice",
+          "skill": "太 + tính từ + 了"
+        },
+        {
+          "questionId": "hw30-v1-l12-choice-07",
+          "part": "choice",
+          "skill": "了 ở cuối câu: thay đổi"
+        },
+        {
+          "questionId": "hw30-v1-l12-choice-08",
+          "part": "choice",
+          "skill": "天气 / 有点儿冷"
+        },
+        {
+          "questionId": "hw30-v1-l12-choice-09",
+          "part": "choice",
+          "skill": "吃药"
+        },
+        {
+          "questionId": "hw30-v1-l12-choice-10",
+          "part": "choice",
+          "skill": "昨天 + 没来"
+        },
+        {
+          "questionId": "hw30-v1-l12-sort-01",
+          "part": "sort",
+          "skill": "句末了与新时间状态"
+        },
+        {
+          "questionId": "hw30-v1-l12-sort-02",
+          "part": "sort",
+          "skill": "觉得与有点儿"
+        },
+        {
+          "questionId": "hw30-v1-l12-sort-03",
+          "part": "sort",
+          "skill": "太……了的语序"
+        },
+        {
+          "questionId": "hw30-v1-l12-sort-04",
+          "part": "sort",
+          "skill": "喝一点儿热水"
+        },
+        {
+          "questionId": "hw30-v1-l12-sort-05",
+          "part": "sort",
+          "skill": "生病了的新情况"
+        },
+        {
+          "questionId": "hw30-v1-l12-listening-01",
+          "part": "listening",
+          "skill": "Nghe 天气怎么样"
+        },
+        {
+          "questionId": "hw30-v1-l12-listening-02",
+          "part": "listening",
+          "skill": "Nghe 昨天 / 下雪"
+        },
+        {
+          "questionId": "hw30-v1-l12-listening-03",
+          "part": "listening",
+          "skill": "Nghe thời gian và mục đích đi viện"
+        },
+        {
+          "questionId": "hw30-v1-l12-listening-04",
+          "part": "listening",
+          "skill": "Nghe lời dặn: thuốc và nghỉ ngơi"
+        },
+        {
+          "questionId": "hw30-v1-l12-listening-05",
+          "part": "listening",
+          "skill": "Nghe 回家后 / 热水"
+        },
+        {
+          "questionId": "hw30-v1-l12-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "昨天 / 下雪"
+        },
+        {
+          "questionId": "hw30-v1-l12-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "觉得有点儿冷"
+        },
+        {
+          "questionId": "hw30-v1-l12-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "太小了"
+        },
+        {
+          "questionId": "hw30-v1-l12-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "没来 + nơi chốn"
+        },
+        {
+          "questionId": "hw30-v1-l12-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "……后再……"
+        },
+        {
+          "questionId": "hw30-v1-l12-translation-01",
+          "part": "translation",
+          "skill": "病了与生病了"
+        },
+        {
+          "questionId": "hw30-v1-l12-translation-02",
+          "part": "translation",
+          "skill": "句末了与时间表达"
+        },
+        {
+          "questionId": "hw30-v1-l12-translation-03",
+          "part": "translation",
+          "skill": "一点儿与吧的自然请求"
+        },
+        {
+          "questionId": "hw30-v1-l12-translation-04",
+          "part": "translation",
+          "skill": "来或到与句末了"
+        },
+        {
+          "questionId": "hw30-v1-l12-translation-05",
+          "part": "translation",
+          "skill": "太……了与天气评价"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 2
+    },
+    {
+      "lesson": 13,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l13-choice-01",
+          "part": "choice",
+          "skill": "可以请求许可与坐的意义"
+        },
+        {
+          "questionId": "hw30-v1-l13-choice-02",
+          "part": "choice",
+          "skill": "动词加一下"
+        },
+        {
+          "questionId": "hw30-v1-l13-choice-03",
+          "part": "choice",
+          "skill": "给双宾语与施受关系"
+        },
+        {
+          "questionId": "hw30-v1-l13-choice-04",
+          "part": "choice",
+          "skill": "杯作为饮品量词"
+        },
+        {
+          "questionId": "hw30-v1-l13-choice-05",
+          "part": "choice",
+          "skill": "再表示又一次"
+        },
+        {
+          "questionId": "hw30-v1-l13-choice-06",
+          "part": "choice",
+          "skill": "可以 + động từ + 吗"
+        },
+        {
+          "questionId": "hw30-v1-l13-choice-07",
+          "part": "choice",
+          "skill": "一杯茶"
+        },
+        {
+          "questionId": "hw30-v1-l13-choice-08",
+          "part": "choice",
+          "skill": "Động từ + 一下"
+        },
+        {
+          "questionId": "hw30-v1-l13-choice-09",
+          "part": "choice",
+          "skill": "给 + người + vật"
+        },
+        {
+          "questionId": "hw30-v1-l13-choice-10",
+          "part": "choice",
+          "skill": "一半 / số lượng"
+        },
+        {
+          "questionId": "hw30-v1-l13-sort-01",
+          "part": "sort",
+          "skill": "请给与双宾语"
+        },
+        {
+          "questionId": "hw30-v1-l13-sort-02",
+          "part": "sort",
+          "skill": "问的双宾语与可以吗"
+        },
+        {
+          "questionId": "hw30-v1-l13-sort-03",
+          "part": "sort",
+          "skill": "动词一下与吧"
+        },
+        {
+          "questionId": "hw30-v1-l13-sort-04",
+          "part": "sort",
+          "skill": "给的接受者与数量宾语"
+        },
+        {
+          "questionId": "hw30-v1-l13-sort-05",
+          "part": "sort",
+          "skill": "要与打电话问一下"
+        },
+        {
+          "questionId": "hw30-v1-l13-listening-01",
+          "part": "listening",
+          "skill": "Nghe 卖不卖手机"
+        },
+        {
+          "questionId": "hw30-v1-l13-listening-02",
+          "part": "listening",
+          "skill": "Nghe gợi ý gọi điện"
+        },
+        {
+          "questionId": "hw30-v1-l13-listening-03",
+          "part": "listening",
+          "skill": "Nghe gọi sữa"
+        },
+        {
+          "questionId": "hw30-v1-l13-listening-04",
+          "part": "listening",
+          "skill": "Nghe số lượng và 一半"
+        },
+        {
+          "questionId": "hw30-v1-l13-listening-05",
+          "part": "listening",
+          "skill": "Nghe 一杯茶"
+        },
+        {
+          "questionId": "hw30-v1-l13-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "请给我一杯牛奶"
+        },
+        {
+          "questionId": "hw30-v1-l13-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "可以 / 再 / 问双宾语"
+        },
+        {
+          "questionId": "hw30-v1-l13-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "还没吃早饭"
+        },
+        {
+          "questionId": "hw30-v1-l13-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "打电话问一下"
+        },
+        {
+          "questionId": "hw30-v1-l13-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "太多了 / 一半"
+        },
+        {
+          "questionId": "hw30-v1-l13-translation-01",
+          "part": "translation",
+          "skill": "请给与两杯"
+        },
+        {
+          "questionId": "hw30-v1-l13-translation-02",
+          "part": "translation",
+          "skill": "可以请求许可与地点状语"
+        },
+        {
+          "questionId": "hw30-v1-l13-translation-03",
+          "part": "translation",
+          "skill": "一下或看看表示短时动作"
+        },
+        {
+          "questionId": "hw30-v1-l13-translation-04",
+          "part": "translation",
+          "skill": "卖与是非问"
+        },
+        {
+          "questionId": "hw30-v1-l13-translation-05",
+          "part": "translation",
+          "skill": "给与双宾语的角色"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 4
+    },
+    {
+      "lesson": 14,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l14-choice-01",
+          "part": "choice",
+          "skill": "动词后了与已发生动作"
+        },
+        {
+          "questionId": "hw30-v1-l14-choice-02",
+          "part": "choice",
+          "skill": "没否定动作的发生"
+        },
+        {
+          "questionId": "hw30-v1-l14-choice-03",
+          "part": "choice",
+          "skill": "都的范围与位置"
+        },
+        {
+          "questionId": "hw30-v1-l14-choice-04",
+          "part": "choice",
+          "skill": "离合词睡觉的插入位置"
+        },
+        {
+          "questionId": "hw30-v1-l14-choice-05",
+          "part": "choice",
+          "skill": "不要的课堂请求"
+        },
+        {
+          "questionId": "hw30-v1-l14-choice-06",
+          "part": "choice",
+          "skill": "没 + động từ / phủ định 了"
+        },
+        {
+          "questionId": "hw30-v1-l14-choice-07",
+          "part": "choice",
+          "skill": "都不 / 不都"
+        },
+        {
+          "questionId": "hw30-v1-l14-choice-08",
+          "part": "choice",
+          "skill": "不都: không phải tất cả"
+        },
+        {
+          "questionId": "hw30-v1-l14-choice-09",
+          "part": "choice",
+          "skill": "不要 + động từ"
+        },
+        {
+          "questionId": "hw30-v1-l14-choice-10",
+          "part": "choice",
+          "skill": "Từ ly hợp: 吃了饭"
+        },
+        {
+          "questionId": "hw30-v1-l14-sort-01",
+          "part": "sort",
+          "skill": "动词后了与时间位置"
+        },
+        {
+          "questionId": "hw30-v1-l14-sort-02",
+          "part": "sort",
+          "skill": "都没与全部否定"
+        },
+        {
+          "questionId": "hw30-v1-l14-sort-03",
+          "part": "sort",
+          "skill": "哪些与书写技能"
+        },
+        {
+          "questionId": "hw30-v1-l14-sort-04",
+          "part": "sort",
+          "skill": "明年与上小学"
+        },
+        {
+          "questionId": "hw30-v1-l14-sort-05",
+          "part": "sort",
+          "skill": "睡了一觉与中午的位置"
+        },
+        {
+          "questionId": "hw30-v1-l14-listening-01",
+          "part": "listening",
+          "skill": "Nghe 看了一个电影"
+        },
+        {
+          "questionId": "hw30-v1-l14-listening-02",
+          "part": "listening",
+          "skill": "Nghe 都会写了"
+        },
+        {
+          "questionId": "hw30-v1-l14-listening-03",
+          "part": "listening",
+          "skill": "Nghe 听不见"
+        },
+        {
+          "questionId": "hw30-v1-l14-listening-04",
+          "part": "listening",
+          "skill": "Nghe 明年 / 女儿 / 中学"
+        },
+        {
+          "questionId": "hw30-v1-l14-listening-05",
+          "part": "listening",
+          "skill": "Nghe 太晚了 / 睡觉吧"
+        },
+        {
+          "questionId": "hw30-v1-l14-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "昨天 + 看了"
+        },
+        {
+          "questionId": "hw30-v1-l14-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "都会写汉字"
+        },
+        {
+          "questionId": "hw30-v1-l14-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "请 + 不要"
+        },
+        {
+          "questionId": "hw30-v1-l14-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "明年 / 女儿 / 上中学"
+        },
+        {
+          "questionId": "hw30-v1-l14-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "都不 + động từ"
+        },
+        {
+          "questionId": "hw30-v1-l14-translation-01",
+          "part": "translation",
+          "skill": "动词后了与数量宾语"
+        },
+        {
+          "questionId": "hw30-v1-l14-translation-02",
+          "part": "translation",
+          "skill": "她们与都"
+        },
+        {
+          "questionId": "hw30-v1-l14-translation-03",
+          "part": "translation",
+          "skill": "没听见与所属问题"
+        },
+        {
+          "questionId": "hw30-v1-l14-translation-04",
+          "part": "translation",
+          "skill": "明年与上中学"
+        },
+        {
+          "questionId": "hw30-v1-l14-translation-05",
+          "part": "translation",
+          "skill": "离合词下班的自然了位置"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 0
+    },
+    {
+      "lesson": 15,
+      "total": 30,
+      "parts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "skills": [
+        {
+          "questionId": "hw30-v1-l15-choice-01",
+          "part": "choice",
+          "skill": "还连接并列喜好"
+        },
+        {
+          "questionId": "hw30-v1-l15-choice-02",
+          "part": "choice",
+          "skill": "要表示所需时长"
+        },
+        {
+          "questionId": "hw30-v1-l15-choice-03",
+          "part": "choice",
+          "skill": "爱在饮食语境中的喜欢义"
+        },
+        {
+          "questionId": "hw30-v1-l15-choice-04",
+          "part": "choice",
+          "skill": "机场接人与星期信息"
+        },
+        {
+          "questionId": "hw30-v1-l15-choice-05",
+          "part": "choice",
+          "skill": "去年今年与地点信息"
+        },
+        {
+          "questionId": "hw30-v1-l15-choice-06",
+          "part": "choice",
+          "skill": "Câu song song với 也"
+        },
+        {
+          "questionId": "hw30-v1-l15-choice-07",
+          "part": "choice",
+          "skill": "小时: thời lượng"
+        },
+        {
+          "questionId": "hw30-v1-l15-choice-08",
+          "part": "choice",
+          "skill": "机场 / 接"
+        },
+        {
+          "questionId": "hw30-v1-l15-choice-09",
+          "part": "choice",
+          "skill": "去年 / 明年"
+        },
+        {
+          "questionId": "hw30-v1-l15-choice-10",
+          "part": "choice",
+          "skill": "还 nối hai đặc điểm"
+        },
+        {
+          "questionId": "hw30-v1-l15-sort-01",
+          "part": "sort",
+          "skill": "也连接同一主语的两种喜好"
+        },
+        {
+          "questionId": "hw30-v1-l15-sort-02",
+          "part": "sort",
+          "skill": "在加地点的会面安排"
+        },
+        {
+          "questionId": "hw30-v1-l15-sort-03",
+          "part": "sort",
+          "skill": "去机场要与时长"
+        },
+        {
+          "questionId": "hw30-v1-l15-sort-04",
+          "part": "sort",
+          "skill": "去年与去西安的自然了位置"
+        },
+        {
+          "questionId": "hw30-v1-l15-sort-05",
+          "part": "sort",
+          "skill": "住与哪里"
+        },
+        {
+          "questionId": "hw30-v1-l15-listening-01",
+          "part": "listening",
+          "skill": "Nghe hai đặc điểm của món ăn"
+        },
+        {
+          "questionId": "hw30-v1-l15-listening-02",
+          "part": "listening",
+          "skill": "Nghe 去年 / 今年 và địa điểm"
+        },
+        {
+          "questionId": "hw30-v1-l15-listening-03",
+          "part": "listening",
+          "skill": "Nghe 都是北京人"
+        },
+        {
+          "questionId": "hw30-v1-l15-listening-04",
+          "part": "listening",
+          "skill": "Nghe thời lượng 九个小时"
+        },
+        {
+          "questionId": "hw30-v1-l15-listening-05",
+          "part": "listening",
+          "skill": "Nghe thời gian và nơi đến"
+        },
+        {
+          "questionId": "hw30-v1-l15-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "去机场接你"
+        },
+        {
+          "questionId": "hw30-v1-l15-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "……，也……"
+        },
+        {
+          "questionId": "hw30-v1-l15-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "都 / 还 nối đặc điểm"
+        },
+        {
+          "questionId": "hw30-v1-l15-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "Thứ + buổi + giờ + 到机场"
+        },
+        {
+          "questionId": "hw30-v1-l15-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "要 + thời lượng"
+        },
+        {
+          "questionId": "hw30-v1-l15-translation-01",
+          "part": "translation",
+          "skill": "也或还连接并列喜好"
+        },
+        {
+          "questionId": "hw30-v1-l15-translation-02",
+          "part": "translation",
+          "skill": "机场接人与明天安排"
+        },
+        {
+          "questionId": "hw30-v1-l15-translation-03",
+          "part": "translation",
+          "skill": "要与三个小时"
+        },
+        {
+          "questionId": "hw30-v1-l15-translation-04",
+          "part": "translation",
+          "skill": "去年与住西安"
+        },
+        {
+          "questionId": "hw30-v1-l15-translation-05",
+          "part": "translation",
+          "skill": "家人都与住处"
+        }
+      ],
+      "exactRepeatedMcCores": 0,
+      "sentenceOverlapGroups": 2
+    }
+  ],
+  "exactRepeatedMcQuestionCores": [],
+  "sourcePreservedSentenceOverlaps": [
+    {
+      "lesson": 1,
+      "sentence": "不客气",
+      "normalized": "不客气",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l01-choice-04",
+          "part": "choice",
+          "skill": "感谢与回应"
+        },
+        {
+          "questionId": "hw30-v1-l01-choice-06",
+          "part": "choice",
+          "skill": "回应感谢"
+        },
+        {
+          "questionId": "hw30-v1-l01-listening-04",
+          "part": "listening",
+          "skill": "感谢回应听辨"
+        },
+        {
+          "questionId": "hw30-v1-l01-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "感谢回应"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 1,
+      "sentence": "老师，您好",
+      "normalized": "老师您好",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l01-choice-07",
+          "part": "choice",
+          "skill": "尊称您"
+        },
+        {
+          "questionId": "hw30-v1-l01-sort-01",
+          "part": "sort",
+          "skill": "称呼与敬称问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-listening-03",
+          "part": "listening",
+          "skill": "尊称听辨"
+        },
+        {
+          "questionId": "hw30-v1-l01-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "礼貌问候"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 1,
+      "sentence": "谢谢王老师",
+      "normalized": "谢谢王老师",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l01-sort-03",
+          "part": "sort",
+          "skill": "感谢对象"
+        },
+        {
+          "questionId": "hw30-v1-l01-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "称呼与感谢"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 1,
+      "sentence": "同学们，再见",
+      "normalized": "同学们再见",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l01-sort-04",
+          "part": "sort",
+          "skill": "复数称呼与告别"
+        },
+        {
+          "questionId": "hw30-v1-l01-listening-05",
+          "part": "listening",
+          "skill": "告别听辨"
+        },
+        {
+          "questionId": "hw30-v1-l01-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "复数告别"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 1,
+      "sentence": "王老师，你好",
+      "normalized": "王老师你好",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l01-sort-05",
+          "part": "sort",
+          "skill": "带称呼的见面问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-listening-01",
+          "part": "listening",
+          "skill": "称呼与问候"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 1,
+      "sentence": "大家好",
+      "normalized": "大家好",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l01-listening-02",
+          "part": "listening",
+          "skill": "群体问候"
+        },
+        {
+          "questionId": "hw30-v1-l01-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "群体问候"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 2,
+      "sentence": "对不起",
+      "normalized": "对不起",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l02-choice-02",
+          "part": "choice",
+          "skill": "道歉与话轮角色"
+        },
+        {
+          "questionId": "hw30-v1-l02-listening-03",
+          "part": "listening",
+          "skill": "道歉听辨"
+        },
+        {
+          "questionId": "hw30-v1-l02-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "道歉"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 2,
+      "sentence": "我叫李文",
+      "normalized": "我叫李文",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l02-choice-06",
+          "part": "choice",
+          "skill": "问姓名"
+        },
+        {
+          "questionId": "hw30-v1-l02-listening-04",
+          "part": "listening",
+          "skill": "问候与姓名"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 2,
+      "sentence": "没关系",
+      "normalized": "没关系",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l02-choice-08",
+          "part": "choice",
+          "skill": "回应道歉"
+        },
+        {
+          "questionId": "hw30-v1-l02-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "回应道歉"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 2,
+      "sentence": "请问，你叫什么名字",
+      "normalized": "请问你叫什么名字",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l02-sort-02",
+          "part": "sort",
+          "skill": "礼貌问名语序"
+        },
+        {
+          "questionId": "hw30-v1-l02-listening-01",
+          "part": "listening",
+          "skill": "姓名听辨"
+        },
+        {
+          "questionId": "hw30-v1-l02-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "礼貌问姓名"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 3,
+      "sentence": "我是法国人",
+      "normalized": "我是法国人",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l03-choice-01",
+          "part": "choice",
+          "skill": "问国籍"
+        },
+        {
+          "questionId": "hw30-v1-l03-listening-02",
+          "part": "listening",
+          "skill": "两句信息听辨"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 3,
+      "sentence": "我不太忙",
+      "normalized": "我不太忙",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l03-choice-04",
+          "part": "choice",
+          "skill": "不太"
+        },
+        {
+          "questionId": "hw30-v1-l03-listening-05",
+          "part": "listening",
+          "skill": "否定程度与想念"
+        },
+        {
+          "questionId": "hw30-v1-l03-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "不太"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 3,
+      "sentence": "这是我女朋友",
+      "normalized": "这是我女朋友",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l03-listening-03",
+          "part": "listening",
+          "skill": "人物关系听辨"
+        },
+        {
+          "questionId": "hw30-v1-l03-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "这与关系介绍"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 4,
+      "sentence": "你家有几口人",
+      "normalized": "你家有几口人",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l04-choice-03",
+          "part": "choice",
+          "skill": "家庭人数问答"
+        },
+        {
+          "questionId": "hw30-v1-l04-listening-03",
+          "part": "listening",
+          "skill": "家庭人数听辨"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 5,
+      "sentence": "你会做什么",
+      "normalized": "你会做什么",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l05-choice-05",
+          "part": "choice",
+          "skill": "会做什么与吗问句区别"
+        },
+        {
+          "questionId": "hw30-v1-l05-listening-04",
+          "part": "listening",
+          "skill": "技能疑问听辨"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 5,
+      "sentence": "我不会做饺子",
+      "normalized": "我不会做饺子",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l05-choice-08",
+          "part": "choice",
+          "skill": "不会与喜欢"
+        },
+        {
+          "questionId": "hw30-v1-l05-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "能力否定"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 5,
+      "sentence": "我今天休息",
+      "normalized": "我今天休息",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l05-choice-10",
+          "part": "choice",
+          "skill": "时间与休息"
+        },
+        {
+          "questionId": "hw30-v1-l05-sort-01",
+          "part": "sort",
+          "skill": "今天的位置"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 5,
+      "sentence": "今天我休息",
+      "normalized": "今天我休息",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l05-sort-01",
+          "part": "sort",
+          "skill": "今天的位置"
+        },
+        {
+          "questionId": "hw30-v1-l05-listening-02",
+          "part": "listening",
+          "skill": "星期与安排听辨"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 6,
+      "sentence": "你的手机号是多少",
+      "normalized": "你的手机号是多少",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l06-choice-01",
+          "part": "choice",
+          "skill": "询问手机号"
+        },
+        {
+          "questionId": "hw30-v1-l06-choice-08",
+          "part": "choice",
+          "skill": "手机号是多少"
+        },
+        {
+          "questionId": "hw30-v1-l06-sort-01",
+          "part": "sort",
+          "skill": "询问手机号"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 6,
+      "sentence": "我们坐出租车去西安饭店",
+      "normalized": "我们坐出租车去西安饭店",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l06-sort-04",
+          "part": "sort",
+          "skill": "连动句表示方式"
+        },
+        {
+          "questionId": "hw30-v1-l06-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "交通方式＋去＋目的地"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 6,
+      "sentence": "我想买些牛奶",
+      "normalized": "我想买些牛奶",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l06-listening-03",
+          "part": "listening",
+          "skill": "听辨买／牛奶"
+        },
+        {
+          "questionId": "hw30-v1-l06-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "想买些＋名词"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 7,
+      "sentence": "现在几点",
+      "normalized": "现在几点",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l07-choice-07",
+          "part": "choice",
+          "skill": "几点"
+        },
+        {
+          "questionId": "hw30-v1-l07-listening-01",
+          "part": "listening",
+          "skill": "听辨现在几点"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 7,
+      "sentence": "我晚上六点半下班",
+      "normalized": "我晚上六点半下班",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l07-choice-10",
+          "part": "choice",
+          "skill": "下班时间"
+        },
+        {
+          "questionId": "hw30-v1-l07-listening-04",
+          "part": "listening",
+          "skill": "听辨下班／六点半"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 7,
+      "sentence": "我们下午三点见吧",
+      "normalized": "我们下午三点见吧",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l07-sort-02",
+          "part": "sort",
+          "skill": "时间与吧"
+        },
+        {
+          "questionId": "hw30-v1-l07-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "时间／见吧"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 7,
+      "sentence": "我上午十点十分有课",
+      "normalized": "我上午十点十分有课",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l07-listening-02",
+          "part": "listening",
+          "skill": "听辨十点十分"
+        },
+        {
+          "questionId": "hw30-v1-l07-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "时刻与课程安排"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 8,
+      "sentence": "小猫在桌子下",
+      "normalized": "小猫在桌子下",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l08-choice-01",
+          "part": "choice",
+          "skill": "方位词下"
+        },
+        {
+          "questionId": "hw30-v1-l08-sort-01",
+          "part": "sort",
+          "skill": "名词与方位词"
+        },
+        {
+          "questionId": "hw30-v1-l08-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "方位词下"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 8,
+      "sentence": "下午两点你能到吗",
+      "normalized": "下午两点你能到吗",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l08-listening-04",
+          "part": "listening",
+          "skill": "听辨能到／时间"
+        },
+        {
+          "questionId": "hw30-v1-l08-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "能到吗／时间"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 9,
+      "sentence": "我明天上午在学校学习",
+      "normalized": "我明天上午在学校学习",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l09-choice-04",
+          "part": "choice",
+          "skill": "时间处所动作"
+        },
+        {
+          "questionId": "hw30-v1-l09-choice-08",
+          "part": "choice",
+          "skill": "时间／处所顺序"
+        },
+        {
+          "questionId": "hw30-v1-l09-sort-04",
+          "part": "sort",
+          "skill": "时间处所状语顺序"
+        },
+        {
+          "questionId": "hw30-v1-l09-listening-02",
+          "part": "listening",
+          "skill": "听辨时间地点活动"
+        },
+        {
+          "questionId": "hw30-v1-l09-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "时间／处所顺序"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 9,
+      "sentence": "我和朋友们唱歌",
+      "normalized": "我和朋友们唱歌",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l09-choice-10",
+          "part": "choice",
+          "skill": "和＋人＋动词"
+        },
+        {
+          "questionId": "hw30-v1-l09-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "和＋人／唱歌"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 9,
+      "sentence": "学校前边有一家电影院",
+      "normalized": "学校前边有一家电影院",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l09-listening-01",
+          "part": "listening",
+          "skill": "听辨前边／电影院"
+        },
+        {
+          "questionId": "hw30-v1-l09-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "处所＋有＋建筑"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 10,
+      "sentence": "这件衣服怎么样",
+      "normalized": "这件衣服怎么样",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l10-choice-03",
+          "part": "choice",
+          "skill": "怎么样询问评价"
+        },
+        {
+          "questionId": "hw30-v1-l10-sort-05",
+          "part": "sort",
+          "skill": "件与怎么样"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 10,
+      "sentence": "这个杯子多少钱",
+      "normalized": "这个杯子多少钱",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l10-sort-01",
+          "part": "sort",
+          "skill": "询问价格"
+        },
+        {
+          "questionId": "hw30-v1-l10-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "多少钱"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 10,
+      "sentence": "我想买两斤苹果",
+      "normalized": "我想买两斤苹果",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l10-listening-04",
+          "part": "listening",
+          "skill": "听辨两斤苹果"
+        },
+        {
+          "questionId": "hw30-v1-l10-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "两斤＝一千克"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 11,
+      "sentence": "妈妈正在做饭呢",
+      "normalized": "妈妈正在做饭呢",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l11-choice-01",
+          "part": "choice",
+          "skill": "正在表示进行"
+        },
+        {
+          "questionId": "hw30-v1-l11-sort-01",
+          "part": "sort",
+          "skill": "正在与句末呢"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 11,
+      "sentence": "没起床呢，还在睡觉",
+      "normalized": "没起床呢还在睡觉",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l11-choice-08",
+          "part": "choice",
+          "skill": "起床 / 没……呢"
+        },
+        {
+          "questionId": "hw30-v1-l11-listening-05",
+          "part": "listening",
+          "skill": "Nghe trạng thái chưa dậy"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 12,
+      "sentence": "我昨天没来公司",
+      "normalized": "我昨天没来公司",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l12-choice-10",
+          "part": "choice",
+          "skill": "昨天 + 没来"
+        },
+        {
+          "questionId": "hw30-v1-l12-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "没来 + nơi chốn"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 12,
+      "sentence": "昨天下雪了",
+      "normalized": "昨天下雪了",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l12-listening-02",
+          "part": "listening",
+          "skill": "Nghe 昨天 / 下雪"
+        },
+        {
+          "questionId": "hw30-v1-l12-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "昨天 / 下雪"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 13,
+      "sentence": "我看一下",
+      "normalized": "我看一下",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l13-choice-08",
+          "part": "choice",
+          "skill": "Động từ + 一下"
+        },
+        {
+          "questionId": "hw30-v1-l13-listening-03",
+          "part": "listening",
+          "skill": "Nghe gọi sữa"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 13,
+      "sentence": "你可以打电话问一下",
+      "normalized": "你可以打电话问一下",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l13-listening-02",
+          "part": "listening",
+          "skill": "Nghe gợi ý gọi điện"
+        },
+        {
+          "questionId": "hw30-v1-l13-translationChoice-04",
+          "part": "translationChoice",
+          "skill": "打电话问一下"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 13,
+      "sentence": "请给我一杯牛奶",
+      "normalized": "请给我一杯牛奶",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l13-listening-03",
+          "part": "listening",
+          "skill": "Nghe gọi sữa"
+        },
+        {
+          "questionId": "hw30-v1-l13-translationChoice-01",
+          "part": "translationChoice",
+          "skill": "请给我一杯牛奶"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 13,
+      "sentence": "四十个太多了，我要一半吧",
+      "normalized": "四十个太多了我要一半吧",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l13-listening-04",
+          "part": "listening",
+          "skill": "Nghe số lượng và 一半"
+        },
+        {
+          "questionId": "hw30-v1-l13-translationChoice-05",
+          "part": "translationChoice",
+          "skill": "太多了 / 一半"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 15,
+      "sentence": "我喜欢喝茶，也喜欢喝牛奶",
+      "normalized": "我喜欢喝茶也喜欢喝牛奶",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l15-sort-01",
+          "part": "sort",
+          "skill": "也连接同一主语的两种喜好"
+        },
+        {
+          "questionId": "hw30-v1-l15-translationChoice-02",
+          "part": "translationChoice",
+          "skill": "……，也……"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    },
+    {
+      "lesson": 15,
+      "sentence": "这些菜都好吃，还很好看",
+      "normalized": "这些菜都好吃还很好看",
+      "occurrences": [
+        {
+          "questionId": "hw30-v1-l15-listening-01",
+          "part": "listening",
+          "skill": "Nghe hai đặc điểm của món ăn"
+        },
+        {
+          "questionId": "hw30-v1-l15-translationChoice-03",
+          "part": "translationChoice",
+          "skill": "都 / 还 nối đặc điểm"
+        }
+      ],
+      "disposition": "Visible source-preserved sentence overlap; inspect listed skills/modalities. Equal strings alone do not establish a duplicate learning objective."
+    }
+  ],
+  "authoredLesson3Scenarios": [
+    {
+      "questionId": "hw30-v1-l03-choice-06",
+      "sourceEntryId": "original:l03-sort-01",
+      "sourceTarget": "我是泰国人。",
+      "substantiveChange": "From declaring one’s Thai nationality to asking who an unidentified person in a photo is; distinguish identity from nationality and a known relationship.",
+      "correctChinese": "这是谁？",
+      "vietnameseMeaning": "Đây là ai?",
+      "optionChecks": [
+        {
+          "index": 0,
+          "chinese": "这是哪国人？",
+          "keyedCorrect": false,
+          "rationaleVi": "这是哪国人？ hỏi người trong ảnh là người nước nào, không hỏi danh tính như yêu cầu."
+        },
+        {
+          "index": 1,
+          "chinese": "这是谁？",
+          "keyedCorrect": true,
+          "rationaleVi": "Đúng: 这是谁？ hỏi “Đây là ai?”, phù hợp khi chưa biết người trong ảnh."
+        },
+        {
+          "index": 2,
+          "chinese": "这是我姐姐。",
+          "keyedCorrect": false,
+          "rationaleVi": "这是我姐姐。 khẳng định “Đây là chị gái tôi”; bạn chưa biết người trong ảnh nên chưa thể khẳng định như vậy."
+        },
+        {
+          "index": 3,
+          "chinese": "这是谁吗？",
+          "keyedCorrect": false,
+          "rationaleVi": "Câu hỏi đã dùng 谁 thì không thêm 吗 theo mẫu hỏi danh tính này; dùng 这是谁？"
+        }
+      ],
+      "exactTargetCollisionsWithOtherLesson3Questions": [],
+      "manualPromptReview": "Meaning and scenario compared with all five unchanged manual prompts; no repeated proposition.",
+      "vocabularyEvidence": [
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-542523173c-s1",
+          "sourceFingerprint": "69118ae92fb3cc6ffcbd756624da16e8240e486f1c30a266b6ad8da8272417cd",
+          "zh": "这",
+          "vi": "đây; này"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-f0ef38a883-s1",
+          "sourceFingerprint": "82266a50899e451dbe22f9fb27e477646395fd38022c5bb6da11a99ce97ca3ca",
+          "zh": "谁",
+          "vi": "ai"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-cd963c6bfd-s1",
+          "sourceFingerprint": "ef412a12930d05e376982e7a79cd447988b162496dd3bf743d62c2eaa20525b6",
+          "zh": "哪",
+          "vi": "nào"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-f4bba5643a-s1",
+          "sourceFingerprint": "fb3c0f7a7826fa8266960c764f3e860fd18d5736a3e60e49d0270fd229a6f033",
+          "zh": "国",
+          "vi": "nước; quốc gia"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-4912771a42-s1",
+          "sourceFingerprint": "6564955004e8c28d47de729055e07a9a18ebe101e527ea523ad6d88d2ea6a04b",
+          "zh": "人",
+          "vi": "người"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-2d4e3b70d0-s1",
+          "sourceFingerprint": "5e68c28404c843283fc65829ff1f1c501a50eaa5eb1da8c6742f355d46137d21",
+          "zh": "姐姐",
+          "vi": "chị gái"
+        }
+      ]
+    },
+    {
+      "questionId": "hw30-v1-l03-choice-07",
+      "sourceEntryId": "original:l03-sort-02",
+      "sourceTarget": "你是中国人吗？",
+      "substantiveChange": "From a yes/no nationality question to a third-person declarative statement of continued busyness; test 还 before 很忙, not adding 吗.",
+      "correctChinese": "她工作还很忙。",
+      "vietnameseMeaning": "Cô ấy vẫn rất bận công việc.",
+      "optionChecks": [
+        {
+          "index": 0,
+          "chinese": "她工作很还忙。",
+          "keyedCorrect": false,
+          "rationaleVi": "还 phải đứng trước 很忙, không chen giữa 很 và 忙."
+        },
+        {
+          "index": 1,
+          "chinese": "她工作还忙很。",
+          "keyedCorrect": false,
+          "rationaleVi": "很 bổ nghĩa mức độ cho 忙 nên đứng trước 忙, không đứng cuối câu."
+        },
+        {
+          "index": 2,
+          "chinese": "她工作还很忙。",
+          "keyedCorrect": true,
+          "rationaleVi": "Đúng: 她工作还很忙 nói rằng cô ấy vẫn rất bận công việc."
+        },
+        {
+          "index": 3,
+          "chinese": "她工作吗还忙。",
+          "keyedCorrect": false,
+          "rationaleVi": "吗 không đứng giữa câu; đề bài yêu cầu câu trần thuật nên không dùng 吗."
+        }
+      ],
+      "exactTargetCollisionsWithOtherLesson3Questions": [],
+      "manualPromptReview": "Meaning and scenario compared with all five unchanged manual prompts; no repeated proposition.",
+      "vocabularyEvidence": [
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-7f2fa5ddbe-s1",
+          "sourceFingerprint": "c1ab9b51cbd658d5bf1c16f898c932de1f69d3c2db613f7e348fb9f99a2485b4",
+          "zh": "她",
+          "vi": "cô ấy; chị ấy"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-dd9fc2c0a1-s1",
+          "sourceFingerprint": "68bcc720ea9f975e00b2e1ddb8cedc24454725e27d85459bfa57e34a4a227a0e",
+          "zh": "工作",
+          "vi": "công việc"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-08819c1294-s1",
+          "sourceFingerprint": "487eb812484e26f5c77e082c0e91c64767715b1b3d23fe2218f35d2a9875759e",
+          "zh": "还",
+          "vi": "vẫn; còn (trạng thái tiếp diễn)"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-cc5c537e83-s1",
+          "sourceFingerprint": "488b054291d238f265263d209c3e307b9c29046d56bcd0b7a6ed1f686691387c",
+          "zh": "忙",
+          "vi": "bận"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-8c49e4b3ed-s1",
+          "sourceFingerprint": "8ab457129c87706d4e15c1df35d62eee7ed8d1b51de6bded1e05e74d3d95132d",
+          "zh": "吗",
+          "vi": "trợ từ cuối câu hỏi có–không"
+        }
+      ]
+    },
+    {
+      "questionId": "hw30-v1-l03-choice-08",
+      "sourceEntryId": "original:l03-sort-03",
+      "sourceTarget": "她是我的中文老师。",
+      "substantiveChange": "From my teacher to my sister’s teacher; construct possession from the full noun phrase 我姐姐 + 的 and introduce with 这.",
+      "correctChinese": "这是我姐姐的中文老师。",
+      "vietnameseMeaning": "Đây là giáo viên tiếng Trung của chị gái tôi.",
+      "optionChecks": [
+        {
+          "index": 0,
+          "chinese": "这是我姐姐的中文老师。",
+          "keyedCorrect": true,
+          "rationaleVi": "Đúng: 这是 + 我姐姐的中文老师 giới thiệu giáo viên tiếng Trung của chị gái tôi."
+        },
+        {
+          "index": 1,
+          "chinese": "这是我姐姐是中文老师。",
+          "keyedCorrect": false,
+          "rationaleVi": "Dùng 的 sau 我姐姐 để chỉ quan hệ sở hữu; không dùng 是 để nối 我姐姐 với 中文老师."
+        },
+        {
+          "index": 2,
+          "chinese": "这我姐姐的中文老师是。",
+          "keyedCorrect": false,
+          "rationaleVi": "是 đứng sau 这 và trước cả cụm 我姐姐的中文老师, không đứng cuối câu."
+        },
+        {
+          "index": 3,
+          "chinese": "这是的我姐姐中文老师。",
+          "keyedCorrect": false,
+          "rationaleVi": "的 phải đứng sau người sở hữu 我姐姐, không đứng trước cụm này."
+        }
+      ],
+      "exactTargetCollisionsWithOtherLesson3Questions": [],
+      "manualPromptReview": "Meaning and scenario compared with all five unchanged manual prompts; no repeated proposition.",
+      "vocabularyEvidence": [
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-542523173c-s1",
+          "sourceFingerprint": "69118ae92fb3cc6ffcbd756624da16e8240e486f1c30a266b6ad8da8272417cd",
+          "zh": "这",
+          "vi": "đây; này"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-2d4e3b70d0-s1",
+          "sourceFingerprint": "5e68c28404c843283fc65829ff1f1c501a50eaa5eb1da8c6742f355d46137d21",
+          "zh": "姐姐",
+          "vi": "chị gái"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-0746bd6249-s1",
+          "sourceFingerprint": "a46a0e59ffdf57807ca8fe66f5cae6fdabe0ed4217a985dec347dd4cf8fb9e97",
+          "zh": "的",
+          "vi": "của (trợ từ chỉ quan hệ sở hữu)"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-7be2d2d20c-s1",
+          "sourceFingerprint": "63b20111261c6077165963fc88739f5064901c3ff5d74f6605ab5d2f630443a6",
+          "zh": "中文",
+          "vi": "tiếng Trung"
+        }
+      ]
+    },
+    {
+      "questionId": "hw30-v1-l03-choice-09",
+      "sourceEntryId": "original:l03-sort-04",
+      "sourceTarget": "我姐姐不太忙。",
+      "substantiveChange": "From low degree of busyness (不太忙) to denying a mistaken girlfriend relationship (不是); distinguish identity negation from degree.",
+      "correctChinese": "她不是我女朋友。",
+      "vietnameseMeaning": "Cô ấy không phải là bạn gái của tôi.",
+      "optionChecks": [
+        {
+          "index": 0,
+          "chinese": "她不我女朋友是。",
+          "keyedCorrect": false,
+          "rationaleVi": "Đặt 是 ngay sau 不 để tạo 不是; không tách 不是 bằng 我女朋友."
+        },
+        {
+          "index": 1,
+          "chinese": "她是我不女朋友。",
+          "keyedCorrect": false,
+          "rationaleVi": "不 phải đứng trước 是 để phủ định quan hệ, không chen vào cụm 我女朋友."
+        },
+        {
+          "index": 2,
+          "chinese": "她是我女朋友。",
+          "keyedCorrect": false,
+          "rationaleVi": "她是我女朋友。 khẳng định cô ấy là bạn gái của tôi, trái với điều cần đính chính."
+        },
+        {
+          "index": 3,
+          "chinese": "她不是我女朋友。",
+          "keyedCorrect": true,
+          "rationaleVi": "Đúng: 她不是我女朋友。 phủ định quan hệ bạn gái."
+        }
+      ],
+      "exactTargetCollisionsWithOtherLesson3Questions": [],
+      "manualPromptReview": "Meaning and scenario compared with all five unchanged manual prompts; no repeated proposition.",
+      "vocabularyEvidence": [
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-7f2fa5ddbe-s1",
+          "sourceFingerprint": "c1ab9b51cbd658d5bf1c16f898c932de1f69d3c2db613f7e348fb9f99a2485b4",
+          "zh": "她",
+          "vi": "cô ấy; chị ấy"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-c24c2c376d-s1",
+          "sourceFingerprint": "f62b762779dd9437675c689928522475707fffe0414c792c64b30f88d6cefb3e",
+          "zh": "女朋友",
+          "vi": "bạn gái (người yêu)"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-2d4e3b70d0-s1",
+          "sourceFingerprint": "5e68c28404c843283fc65829ff1f1c501a50eaa5eb1da8c6742f355d46137d21",
+          "zh": "姐姐",
+          "vi": "chị gái"
+        }
+      ]
+    },
+    {
+      "questionId": "hw30-v1-l03-choice-10",
+      "sourceEntryId": "original:l03-sort-05",
+      "sourceTarget": "我们也很想你。",
+      "substantiveChange": "From adding 也 to a first-person plural expression of longing to distinguishing the subject and object of 想 in a different relationship.",
+      "correctChinese": "姐姐很想我们。",
+      "vietnameseMeaning": "Chị gái rất nhớ chúng tôi.",
+      "optionChecks": [
+        {
+          "index": 0,
+          "chinese": "我们很想姐姐。",
+          "keyedCorrect": false,
+          "rationaleVi": "我们很想姐姐。 nói “Chúng tôi rất nhớ chị gái”, đảo ngược người nhớ và người được nhớ so với đề bài."
+        },
+        {
+          "index": 1,
+          "chinese": "姐姐很想吗我们。",
+          "keyedCorrect": false,
+          "rationaleVi": "吗 không đứng giữa 想 và tân ngữ 我们; đây là câu trần thuật, không phải câu hỏi."
+        },
+        {
+          "index": 2,
+          "chinese": "姐姐很想我们。",
+          "keyedCorrect": true,
+          "rationaleVi": "Đúng: 姐姐 là người nhớ và 我们 là những người được nhớ."
+        },
+        {
+          "index": 3,
+          "chinese": "姐姐很我们想。",
+          "keyedCorrect": false,
+          "rationaleVi": "Không đặt 我们 giữa 很 và 想; dùng 很想我们."
+        }
+      ],
+      "exactTargetCollisionsWithOtherLesson3Questions": [],
+      "manualPromptReview": "Meaning and scenario compared with all five unchanged manual prompts; no repeated proposition.",
+      "vocabularyEvidence": [
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-2d4e3b70d0-s1",
+          "sourceFingerprint": "5e68c28404c843283fc65829ff1f1c501a50eaa5eb1da8c6742f355d46137d21",
+          "zh": "姐姐",
+          "vi": "chị gái"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-a48f3ad06d-s1",
+          "sourceFingerprint": "20a6c835e0f52182da37481e9ba66c8dbb762ae51e3f13cb6cc31cc4cc5241a7",
+          "zh": "想",
+          "vi": "nhớ; nhớ nhung"
+        },
+        {
+          "sourceFile": "content/stage3-catalog.json",
+          "sourceId": "v-l03-lex-0805949359-s1",
+          "sourceFingerprint": "2eccf3fb7e016b82a22a6c5c4c27cf87e3f63570761dae43398ecf3ceb3454bc",
+          "zh": "我们",
+          "vi": "chúng tôi; chúng ta"
+        }
+      ]
+    }
+  ]
+}

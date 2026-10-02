@@ -1,3 +1,4 @@
+import { selectDialogueScene } from './active-view-helpers.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Locator, type Page } from '@playwright/test';
 import { practiceQuestions } from '../../src/domain/textbook/practice.ts';
@@ -49,9 +50,11 @@ for (const width of [320, 390, 1440]) {
       tabBounds.push((await tab.boundingBox())!);
     }
     for (let index = 1; index < tabBounds.length; index++) {
-      expect(tabBounds[index].x).toBeGreaterThanOrEqual(tabBounds[index - 1].x + tabBounds[index - 1].width - 1);
+      if (Math.abs(tabBounds[index].y - tabBounds[index - 1].y) < 1) {
+        expect(tabBounds[index].x).toBeGreaterThanOrEqual(tabBounds[index - 1].x + tabBounds[index - 1].width - 1);
+      } else expect(tabBounds[index].y).toBeGreaterThanOrEqual(tabBounds[index - 1].y + tabBounds[index - 1].height - 1);
     }
-    for (const node of ['#textbook-text h2', '#scene-slow', '[data-scene-audio]', '[data-line-audio]', '[data-scene-tab]']) await paired(page.locator(node).first());
+    for (const node of ['#textbook-text h2', '#scene-slow', '[data-scene-audio]', '[data-line-audio]', width <= 600 ? '.textbook-scene-picker' : '[data-scene-tab]']) await paired(page.locator(node).first());
     for (const [index, scene] of book.lessons[0].scenes.entries()) {
       await expect(page.locator(`#scene-select option[value="${index}"]`)).toHaveText(`${index + 1}. ${scene.place} · ${scene.place_vn}`);
     }
@@ -72,7 +75,7 @@ for (const width of [320, 390, 1440]) {
     await expect(original).toBeHidden();
     await expect(page.locator('#audio-status')).not.toContainText(line.zh);
     await page.locator('#audio-stop').click();
-    await page.locator('[data-scene-tab]').nth(1).click();
+    await selectDialogueScene(page, 1);
     await expect(page.locator('[data-scene-tab]').nth(1)).toHaveAttribute('aria-selected', 'true');
     await noOverflow(page);
 

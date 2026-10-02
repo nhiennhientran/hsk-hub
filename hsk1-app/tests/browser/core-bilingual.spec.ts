@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { FEATURES } from '../../src/app/contracts.ts';
+import { NAVIGATION_GROUPS } from '../../src/app/navigation.ts';
 import { coreCopy } from '../../src/app/i18n/core.ts';
 
 test('login, navigation, home, progress and help expose deliberate Chinese and Vietnamese labels', async ({ page }) => {
@@ -15,8 +15,8 @@ test('login, navigation, home, progress and help expose deliberate Chinese and V
   await page.evaluate(() => sessionStorage.setItem('hsk_portal_unlocked_v2', '1'));
   await page.reload();
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
-  await expect(page.locator('#feature-nav [lang="zh"]')).toHaveCount(FEATURES.length);
-  await expect(page.locator('#feature-nav [lang="vi"]')).toHaveCount(FEATURES.length);
+  await expect(page.locator('#feature-nav [lang="zh"]')).toHaveCount(NAVIGATION_GROUPS.length);
+  await expect(page.locator('#feature-nav [lang="vi"]')).toHaveCount(NAVIGATION_GROUPS.length);
   await expect(page.locator('#home-module h1 [lang="zh"]')).toHaveText(coreCopy.homeTitle.zh);
   await expect(page.locator('#home-module h1 [lang="vi"]')).toHaveText(coreCopy.homeTitle.vi);
   await expect(page.locator('[data-lesson-section] [lang="zh"]')).toHaveCount(75);

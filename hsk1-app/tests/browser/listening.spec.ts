@@ -1,3 +1,5 @@
+import { navigateFeature, revealControl } from './ui-actions.ts';
+import { openLearningSettings, openPracticeFeature } from './active-view-helpers.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Page, type Route } from '@playwright/test';
 
@@ -31,14 +33,14 @@ async function ready(page: Page, lesson: number): Promise<void> {
   await expect(page.locator('#listening-module fieldset[data-module-controls]')).not.toHaveAttribute('disabled', '');
 }
 async function selectedLessons(page: Page, lessons: number[], shuffle = false, mode = 'all'): Promise<void> {
-  await page.locator('#listening-none').click();
+  await openLearningSettings(page, 'listening'); await page.locator('#listening-none').click();
   for (const lesson of lessons) await page.locator(`[data-listening-lesson="${lesson}"]`).check();
-  await page.locator('#listening-shuffle').setChecked(shuffle);
-  await page.locator('#listening-mode').selectOption(mode);
+  await openLearningSettings(page, 'listening'); await page.locator('#listening-shuffle').setChecked(shuffle);
+  await openLearningSettings(page, 'listening'); await page.locator('#listening-mode').selectOption(mode);
 }
 async function start(page: Page, lessons: number[], shuffle = false, mode = 'all'): Promise<void> {
   await selectedLessons(page, lessons, shuffle, mode);
-  await page.locator('#listening-start').click();
+  await openLearningSettings(page, 'listening'); await page.locator('#listening-start').click();
   await expect(page.locator('#listening-question')).toBeVisible();
 }
 async function saved(page: Page): Promise<void> { await expect(page.locator('#listening-save-status')).toHaveAttribute('data-state', 'saved'); }
@@ -148,9 +150,9 @@ test.describe('complete independent listening course', () => {
     await authenticate(page);
     await page.goto('/#/listening?lesson=1');
     await ready(page, 1);
-    await page.locator('#listening-all').click();
-    await page.locator('#listening-shuffle').uncheck();
-    await page.locator('#listening-start').click();
+    await openLearningSettings(page, 'listening'); await page.locator('#listening-all').click();
+    await openLearningSettings(page, 'listening'); await page.locator('#listening-shuffle').uncheck();
+    await openLearningSettings(page, 'listening'); await page.locator('#listening-start').click();
     const seen: string[] = [];
     for (const [index, question] of catalog.listening.entries()) {
       await expect(page.locator('#listening-question')).toHaveAttribute('data-question-id', question.id);
@@ -210,7 +212,7 @@ test('mixed lessons preserve first and latest scores while wrong-only redoing hi
   const first = (await data(page)).practice.listening.records;
   expect(Object.keys(first)).toHaveLength(20);
   expect(Object.values(first).filter((record: any) => record.latest.correct)).toHaveLength(16);
-  await page.locator('#listening-redo').click();
+  await openLearningSettings(page, 'listening'); await page.locator('#listening-redo').click();
   const redo = (await data(page)).practice.listening.session;
   expect(redo.questionIds).toEqual(wrongIds);
   expect(redo.mode).toBe('wrong');
@@ -243,7 +245,7 @@ test('single, mixed and all lessons create exact queues; empty selection and an 
   expect([...shuffled.questionIds].sort()).toEqual(catalog.listening.filter(q => [1, 7, 10, 15].includes(q.lesson)).map(q => q.id).sort());
   for (const order of Object.values(shuffled.optionOrders) as number[][]) expect([...order].sort()).toEqual([0, 1, 2, 3]);
   // Random output is checked as a persisted permutation; no probabilistic "must differ" assertion.
-  await page.locator('#listening-none').click();
+  await openLearningSettings(page, 'listening'); await page.locator('#listening-none').click();
   await expect(page.locator('#listening-start')).toBeDisabled();
   await page.locator('#listening-start').evaluate(button => (button as HTMLButtonElement).click());
   expect((await data(page)).practice.listening.session).toEqual(shuffled);
@@ -251,9 +253,9 @@ test('single, mixed and all lessons create exact queues; empty selection and an 
   await expect(page.locator('#listening-start')).toBeDisabled();
   await page.locator('#listening-start').evaluate(button => (button as HTMLButtonElement).click());
   expect((await data(page)).practice.listening.session).toEqual(shuffled);
-  await page.locator('#listening-all').click();
-  await page.locator('#listening-mode').selectOption('all');
-  await page.locator('#listening-start').click();
+  await openLearningSettings(page, 'listening'); await page.locator('#listening-all').click();
+  await openLearningSettings(page, 'listening'); await page.locator('#listening-mode').selectOption('all');
+  await openLearningSettings(page, 'listening'); await page.locator('#listening-start').click();
   expect((await data(page)).practice.listening.session.questionIds).toHaveLength(75);
 });
 
@@ -316,7 +318,7 @@ test('loading controls reject early activation, HTTP 503 retries the same route 
   expect(await page.evaluate(() => ({ href: location.href, length: history.length }))).toEqual(before);
   await page.reload({ waitUntil: 'domcontentloaded' });
   await expect.poll(() => pending.length).toBeGreaterThan(2);
-  await page.locator('#feature-nav [data-feature="homework"]').click();
+  await navigateFeature(page, 'homework');
   await expect(page.locator('#module-host')).toHaveAttribute('data-feature', 'homework');
   await pending[2]!.abort('failed');
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
@@ -393,7 +395,7 @@ test('pausing a held real MP3 before first playing then resuming counts once; fi
   await playing(page, question);
   expect((await native(page)).time).toBeLessThan(question.audio.start + 1);
   expect((await data(page)).practice.listening.session.responses[question.id].listenCount).toBe(2);
-  await page.locator('#feature-nav [data-feature="textbook"]').click();
+  await openPracticeFeature(page, 'textbook');
   await expect(page.locator('#module-host')).toHaveAttribute('data-feature', 'textbook');
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
   expect((await native(page)).paused).toBe(true);
@@ -467,13 +469,13 @@ test('quota failure preserves submitted listening in memory, exports it after na
   expect(await page.evaluate(key => localStorage.getItem(key), stateKey)).toBe(raw);
   await page.locator('#feature-nav [data-feature="progress"]').click();
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
-  await page.locator('#open-data-manager').click();
+  await revealControl(page, '#open-data-manager'); await page.locator('#open-data-manager').click();
   await expect(page.locator('#data-status')).toHaveAttribute('data-state', /^(unsaved|unavailable)$/);
   const backup = await downloadBackup(page);
   const expected = backup.data.practice.listening;
   expect(expected.session.responses[question.id]).toMatchObject({ selected: question.answer, submission: { correct: true }, listenCount: 0 });
   expect(expected.records[question.id]).toMatchObject({ first: { correct: true }, latest: { correct: true }, attempts: 1 });
-  await page.locator('#feature-nav [data-feature="listening"]').click();
+  await openPracticeFeature(page, 'listening');
   await ready(page, 7);
   await expect(page.locator('#listening-question')).toHaveAttribute('data-question-id', question.id);
   await expect(page.locator('#listening-feedback')).toBeVisible();

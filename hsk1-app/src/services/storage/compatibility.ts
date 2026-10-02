@@ -1,3 +1,5 @@
+import { blankHomework30, validateHomework30, homework30CourseTotals, type Homework30State } from '../../domain/homework30/engine.ts';
+import { getHomework30Bank } from '../content/homework30.ts';
 import { dataWarning, dataOriginalWarning, dataExerciseWarnings } from './copy.ts';
 import legacyExercises from '../../../content/legacy-exercises.json' with { type: 'json' };
 import { migrateLegacyExercises } from '../../domain/exercises/migration.ts';
@@ -29,6 +31,8 @@ export interface ReadingState {
 export interface AppData {
   reading: ReadingState;
   homework: HomeworkState;
+  /** New version is isolated: legacy answers and grades never count here. */
+  homework30?: Homework30State;
   practice: PracticeState;
   exercises: ExercisesState;
   navigation: Route | null;
@@ -146,7 +150,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
     for (const word of row.vocab) if (record(word) && typeof word.zh === 'string') stars.add(`${row.id}-${word.zh}`);
   }
   const blank = (): AppData => ({ reading: { lessons: {}, mastered: {}, modules: {} },
-    homework: homework.blank(), practice: practice.blank(), exercises: blankExercisesState(), navigation: null, legacyRaw: {} });
+    homework: homework.blank(), homework30: blankHomework30(), practice: practice.blank(), exercises: blankExercisesState(), navigation: null, legacyRaw: {} });
   function reading(input: unknown): ReadingState {
     if (!record(input) || !record(input.lessons) || !record(input.mastered) || !record(input.modules)) fail(dataWarning({"zh": "阅读进度无效。", "vi": "Tiến độ đọc không hợp lệ."}));
     exact(input, ['lessons', 'mastered', 'modules']);
@@ -186,7 +190,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
   }
   function validate(input: unknown): AppData {
     if (!record(input)) fail(dataWarning({"zh": "学习备份无效。", "vi": "Bản lưu học tập không hợp lệ."}));
-    exact(input, ['reading', 'homework', 'practice', 'exercises', 'navigation', 'legacyRaw']);
+    exact(input, ['reading', 'homework', 'homework30', 'practice', 'exercises', 'navigation', 'legacyRaw']);
     const h = homework.validateImport(input.homework, bank), p = practice.importBackup(input.practice, catalog);
     const issues = [...homeworkScoreIssues(input.homework, h), ...practiceScoreIssues(input.practice, p)];
     if (issues.length) fail(dataWarning({ zh: `成绩或提交状态被修改，已拒绝导入（${issues[0]}）。`, vi: `Điểm hoặc trạng thái nộp bị sửa; nhập bị từ chối (${issues[0]}).` }));
@@ -199,7 +203,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
       if (!same(source, normalized)) fail(dataWarning({"zh": "继续学习的位置包含无效字段。", "vi": "Vị trí tiếp tục có trường không hợp lệ."}));
       navigation = normalized;
     }
-    return { reading: reading(input.reading), homework: h, practice: p, exercises: validateExercisesState(input.exercises, exerciseCatalogue), navigation, legacyRaw: rawSources(input.legacyRaw) };
+    return { reading: reading(input.reading), homework: h, ...(input.homework30 === undefined ? {} : { homework30: validateHomework30(input.homework30, getHomework30Bank()) }), practice: p, exercises: validateExercisesState(input.exercises, exerciseCatalogue), navigation, legacyRaw: rawSources(input.legacyRaw) };
   }
   function convert(input: unknown, now: number): { state: HomeworkState | PracticeState; key: string; warnings: string[] } {
     if (!record(input)) fail(dataWarning({"zh": "此文件不是受支持的 HSK 1 备份。", "vi": "Tệp không phải bản sao lưu HSK 1 được hỗ trợ."}));
@@ -476,6 +480,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
   }
   function summary(data: AppData): Record<string, number> {
     const totals = homework.courseTotals(data.homework, bank);
+    const newTotals = homework30CourseTotals(data.homework30 ?? blankHomework30());
     const records = Object.values(data.practice.listening.records);
     return {
       readingVisited: Object.values(data.reading.lessons).filter(row => row.visited).length,
@@ -483,7 +488,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
       masteredWords: Object.values(data.reading.mastered).filter(Boolean).length,
       homeworkSubmitted: totals.homework.submitted, automaticSubmitted: totals.automatic.submitted,
       automaticFirstCorrect: totals.automatic.firstCorrect, automaticLatestCorrect: totals.automatic.latestCorrect,
-      manualSubmitted: totals.manual.submitted, listeningSubmitted: records.length,
+      manualSubmitted: totals.manual.submitted, homework30Submitted: newTotals.homework.submitted, homework30FirstCorrect: newTotals.automatic.firstCorrect, homework30LatestCorrect: newTotals.automatic.latestCorrect, homework30ManualSubmitted: newTotals.manual.submitted, listeningSubmitted: records.length,
       listeningFirstCorrect: records.filter(row => row.first.correct).length,
       listeningLatestCorrect: records.filter(row => row.latest.correct).length,
       scheduledSenses: Object.keys(data.practice.cards.schedule).length,

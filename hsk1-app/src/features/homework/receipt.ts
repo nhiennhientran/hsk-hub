@@ -1,5 +1,7 @@
 import type { Answer, HomeworkAttempt } from '../../domain/types.ts';
 import { bilingualText, setBilingual, type BilingualCopy } from '../../app/bilingual.ts';
+import { homework30Parts } from '../../app/i18n/homework30.ts';
+import type { Homework30Part } from '../../domain/homework30/engine.ts';
 import { receiptCopy as copy, homeworkParts } from '../../app/i18n/homework.ts';
 import '../../app/bilingual.css';
 import './receipt.css';
@@ -15,7 +17,8 @@ export interface ReceiptQuestion {
 export interface ReceiptOptions {
   lesson: number;
   lessonTitle?: string;
-  part: 'choice' | 'sort' | 'translation';
+  part: Homework30Part;
+  homeworkVersion?: '30-v1' | 'legacy';
   questions: readonly ReceiptQuestion[];
   profile: { name: string; className: string };
   first: HomeworkAttempt | null;
@@ -81,7 +84,8 @@ export function createReceipt(host: HTMLElement, options: ReceiptOptions): { dis
     [copy.name, profile.name || copy.blank],
     [copy.className, profile.className || copy.blank],
     [copy.lesson, copy.lessonValue(options.lesson, options.lessonTitle)],
-    [copy.part, homeworkParts[options.part]],
+    [copy.part, options.homeworkVersion === '30-v1' ? homework30Parts[options.part] : homeworkParts[options.part as keyof typeof homeworkParts]],
+    [{ zh: '题库版本', vi: 'Phiên bản bộ câu hỏi' }, options.homeworkVersion === '30-v1' ? '30题 · 30 câu · hsk1-homework-30-v1' : '旧版15题 · Bản cũ 15 câu · stage2'],
   ]) identity.append(element('dt', label), element('dd', value));
   const submission = element('p', undefined, 'receipt-submission bilingual-stacked');
   const note = element('p', options.part === 'translation'

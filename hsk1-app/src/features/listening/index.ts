@@ -47,8 +47,9 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     flush = () => { void session.flush(); };
     listening.visit(context.route.lesson);
 
-    const settings = element('section'); settings.id = 'listening-settings'; settings.className = 'listening-panel';
-    settings.append(element('h2', copy.settings));
+    const settings = element('details'); settings.id = 'listening-settings'; settings.className = 'listening-panel listening-settings';
+    settings.open = !listening.read().current;
+    settings.append(element('summary', copy.settings));
     const lessons = element('fieldset'); lessons.className = 'listening-lessons'; lessons.append(element('legend', copy.lessons));
     const lessonGrid = element('div'); lessonGrid.className = 'listening-lesson-grid';
     const lessonInputs = new Map<number, HTMLInputElement>();
@@ -82,11 +83,12 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const retrySave = button('retry-listening-save', copy.retrySave);
     const dataLink = element('a', copy.data); dataLink.href = routeHref({ feature: 'progress', lesson: context.route.lesson }); dataLink.dataset.routeLink = '';
     const saveActions = element('div'); saveActions.className = 'listening-actions'; saveActions.append(retrySave, dataLink); saveBox.append(saveStatus, saveActions);
-    const summary = element('div'); summary.id = 'listening-summary'; summary.className = 'listening-panel';
+    const summary = element('details'); summary.id = 'listening-summary'; summary.className = 'listening-panel listening-summary';
+    let roundComplete = listening.read().summary.session.done; summary.open = roundComplete;
     const sessionScore = element('p'); sessionScore.id = 'listening-session-score';
     const firstScore = element('p'); firstScore.id = 'listening-first-score'; const latestScore = element('p'); latestScore.id = 'listening-latest-score';
     const completed = element('p'); completed.id = 'listening-completed'; completed.setAttribute('role', 'status');
-    summary.append(element('h2', copy.results), sessionScore, firstScore, latestScore, completed);
+    summary.append(element('summary', copy.results), sessionScore, firstScore, latestScore, completed);
     const message = element('p'); message.id = 'listening-message'; message.setAttribute('role', 'status');
 
     const exercise = element('section'); exercise.className = 'listening-exercise';
@@ -106,7 +108,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const journey = element('nav'); journey.className = 'listening-actions'; journey.setAttribute('aria-label', bilingualText(copy.navigation));
     const previous = button('listening-prev', copy.previous); const next = button('listening-next', copy.next); journey.append(previous, next);
     exercise.append(position, queueScope, player, listenCount, questionHost, journey);
-    controls.replaceChildren(element('legend', copy.controls), settings, saveBox, message, exercise, summary);
+    controls.replaceChildren(element('legend', copy.controls), message, exercise, settings, summary, saveBox);
 
     for (const node of [available, saveStatus, message, sessionScore, firstScore, latestScore, completed, queueScope, audioStatus]) node.classList.add('bilingual-stacked');
 
@@ -120,7 +122,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const showMessage = (text: BilingualCopy | '') => { if (!left && !lifetime.signal.aborted) { if (text) setBilingual(message, text); else message.replaceChildren(); } };
     const handle = (outcome: { ok: boolean; reason?: string; message?: string }) => { showMessage(outcome.ok ? '' : listeningFailure(outcome)); return outcome.ok; };
     function changedPreferences(patch: Parameters<typeof listening.setPreferences>[0]): void {
-      stopPlayback(); handle(listening.setPreferences(patch)); update();
+      handle(listening.setPreferences(patch)); update();
     }
     for (const input of lessonInputs.values()) input.addEventListener('change', () => {
       changedPreferences({ lessons: [...lessonInputs].filter(([, field]) => field.checked).map(([id]) => id) });
@@ -132,9 +134,9 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     shuffle.addEventListener('change', () => changedPreferences({ shuffle: shuffle.checked }), { signal: lifetime.signal });
     rate.addEventListener('change', () => { const value = Number(rate.value); if (handle(listening.setPreferences({ rate: value }))) audio.setRate(value); update(); }, { signal: lifetime.signal });
     count.addEventListener('change', () => update(), { signal: lifetime.signal });
-    start.addEventListener('click', () => { stopPlayback(); if (handle(listening.start(requestedCount()))) { update(); focusQuestion(); } }, { signal: lifetime.signal });
-    redo.addEventListener('click', () => { stopPlayback(); if (handle(listening.redo(requestedCount()))) { update(); focusQuestion(); } }, { signal: lifetime.signal });
-    resume.addEventListener('click', () => { showMessage(''); focusQuestion(); }, { signal: lifetime.signal });
+    start.addEventListener('click', () => { stopPlayback(); if (handle(listening.start(requestedCount()))) { settings.open = false; summary.open = false; update(); focusQuestion(); } }, { signal: lifetime.signal });
+    redo.addEventListener('click', () => { stopPlayback(); if (handle(listening.redo(requestedCount()))) { settings.open = false; summary.open = false; update(); focusQuestion(); } }, { signal: lifetime.signal });
+    resume.addEventListener('click', () => { showMessage(''); settings.open = false; focusQuestion(); }, { signal: lifetime.signal });
     previous.addEventListener('click', () => { const model = listening.read(); if (model.session && handle(listening.move(model.session.position - 1))) { update(); focusQuestion(); } }, { signal: lifetime.signal });
     next.addEventListener('click', () => { if (handle(listening.next())) { update(); focusQuestion(); } }, { signal: lifetime.signal });
     retrySave.addEventListener('click', () => { void session.flush(); }, { signal: lifetime.signal });
@@ -253,7 +255,8 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       setBilingual(firstScore, copy.firstScore(overall.firstCorrect, overall.answered, overall.total));
       setBilingual(latestScore, copy.latestScore(overall.latestCorrect, overall.answered));
       if (round.done) setBilingual(completed, copy.completed); else completed.replaceChildren();
-      summary.dataset.complete = String(round.done);
+      if (round.done && !roundComplete) summary.open = true;
+      roundComplete = round.done; summary.dataset.complete = String(round.done);
       const snapshot = session.store.snapshot(); saveStatus.dataset.state = snapshot.status;
       setBilingual(saveStatus, assignmentSaveCopy(snapshot));
       saveStatus.dataset.failed = String(assignmentSaveFailed(snapshot));

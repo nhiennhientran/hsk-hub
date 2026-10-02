@@ -1,3 +1,4 @@
+import { openLearningSettings } from './active-view-helpers.ts';
 import { test, expect, type Locator, type Page } from '@playwright/test';
 
 const stateKey = 'ran_hsk1_modular_v1';
@@ -48,12 +49,12 @@ test('mixed bilingual controls preserve 33-card free navigation, hidden answers,
   await paired(page.locator('#vocabulary-start'), '开始新一轮', 'Bắt đầu lượt mới');
   await paired(page.locator('#vocabulary-search-note'), '可带声调或不带声调搜索；每个义项单独成卡。搜索仅用于新一轮。', 'Tìm có hoặc không dấu; mỗi nghĩa vẫn là một thẻ riêng. Từ khóa chỉ áp dụng khi bắt đầu lượt mới.');
   await expect(page.locator('#vocabulary-filter option[value="all"]')).toHaveText('全部词汇 · Tất cả từ');
-  await page.locator('#vocabulary-none').click();
-  await page.locator('#vocabulary-lesson-1').check(); await page.locator('#vocabulary-lesson-15').check();
-  await page.locator('#vocabulary-shuffle').uncheck(); await page.locator('#vocabulary-direction').selectOption('vi-zh');
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-none').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-lesson-1').check(); await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-lesson-15').check();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-shuffle').uncheck(); await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-direction').selectOption('vi-zh');
   await expect(page.locator('#vocabulary-available [lang="zh"]')).toContainText('33 张卡');
   await expect(page.locator('#vocabulary-available [lang="vi"]')).toContainText('33 thẻ');
-  await page.locator('#vocabulary-start').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-start').click();
   await paired(page.locator('#vocabulary-position'), '第 1 / 33 张', 'Thẻ 1 / 33');
   await expect(page.locator('#vocabulary-retry-save')).toBeHidden();
   await expect(page.locator('#vocabulary-answer, #vocabulary-examples, [data-vocabulary-pinyin]')).toHaveCount(0);

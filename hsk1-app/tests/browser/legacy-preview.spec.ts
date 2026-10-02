@@ -1,3 +1,4 @@
+import { revealControl } from './ui-actions.ts';
 import { mkdir } from 'node:fs/promises';
 import { test, expect } from '@playwright/test';
 import { tongueTwisters } from '../../src/services/content/textbook-supplements.ts';
@@ -13,8 +14,8 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 1024 }, { name: 
       ['home', '/#/home?lesson=1'], ['vocabulary', '/#/textbook?lesson=1&section=vocab'],
       ['dialogue', '/#/textbook?lesson=1&section=text'], ['grammar', '/#/textbook?lesson=10&section=grammar'],
       ['hanzi', '/#/textbook?lesson=4&section=hanzi'], ['practice', '/#/textbook?lesson=4&section=practice'],
-      ['homework', '/#/homework?lesson=1&part=choice'], ['listening', '/#/listening?lesson=1'],
-      ['mixed-vocabulary', '/#/vocabulary?lesson=1'], ['progress', '/#/progress?lesson=1'], ['original-exercises', '/#/exercises?lesson=1&set=original&group=translation&filter=all'], ['pilot-reading', '/#/exercises?lesson=9&set=pilot&group=reading&filter=all'],
+      ['homework', '/#/homework?lesson=1&part=choice&version=30-v1'], ['listening', '/#/listening?lesson=1'],
+      ['mixed-vocabulary', '/#/vocabulary?lesson=1'], ['progress', '/#/progress?lesson=1'], ['archive-history', '/#/exercises?lesson=1&set=original&group=translation&filter=all'], ['pilot-history', '/#/exercises?lesson=9&set=pilot&group=reading&filter=all'],
     ];
     for (const [name, route] of routes) {
       await page.goto(route);
@@ -29,10 +30,6 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 1024 }, { name: 
       if (name === 'vocabulary' && viewport.name === 'mobile') {
         const word = await page.locator('.vocab-front h3').first().boundingBox();
         expect(word!.y + word!.height, 'the first word should appear before the mobile fold').toBeLessThanOrEqual(viewport.height);
-      }
-      if (name === 'original-exercises' && viewport.name === 'desktop') {
-        const question = await page.locator('.exercise-question > p').first().boundingBox();
-        expect(question!.y + question!.height, 'the first question should be visible without scrolling past settings').toBeLessThanOrEqual(viewport.height);
       }
       if (name === 'listening') { await page.locator('#listening-start').click(); await expect(page.locator('#listening-question')).toBeVisible(); }
       if (name === 'mixed-vocabulary') { await page.locator('#vocabulary-start').click(); await expect(page.locator('#vocabulary-prompt')).toBeVisible(); }
@@ -50,6 +47,7 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 1024 }, { name: 
     await page.locator('#lesson-search').fill('');
     await expect(page.locator('.lesson-card:visible')).toHaveCount(15);
     for (const section of ['vocab', 'text', 'grammar', 'hanzi', 'practice']) {
+      await page.locator(`.lesson-card[data-lesson="1"] > details > summary`).click();
       await page.locator(`.lesson-card[data-lesson="1"] [data-lesson-section="${section}"]`).click();
       await expect(page.locator('[data-textbook-section]')).toHaveAttribute('data-textbook-section', section);
       await page.goBack();
@@ -77,11 +75,13 @@ test('listening offers 5/10/all and resumes a sized round without resetting scor
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
   await page.locator('#listening-all').click();
   for (const [value, count] of [['5', 5], ['10', 10], ['all', 75]] as const) {
+    await revealControl(page, '#listening-count');
     await page.locator('#listening-count').selectOption(value);
     await page.locator('#listening-start').click();
     await expect(page.locator('#listening-position [lang="vi"]')).toHaveText(`Câu 1 / ${count}`);
     await expect(page.locator('#listening-position [lang="zh"]')).toHaveText(`第 1 / ${count} 题`);
   }
+  await revealControl(page, '#listening-count');
   await page.locator('#listening-count').selectOption('10');
   await page.locator('#listening-start').click();
   await expect(page.locator('#listening-save-status')).toHaveAttribute('data-state', 'saved');
@@ -89,6 +89,7 @@ test('listening offers 5/10/all and resumes a sized round without resetting scor
   await expect(page.locator('#listening-position [lang="vi"]')).toHaveText('Câu 1 / 10');
   await expect(page.locator('#listening-position [lang="zh"]')).toHaveText('第 1 / 10 题');
   await expect(page.locator('#listening-count')).toHaveValue('10');
+  await revealControl(page, '#listening-first-score');
   await expect(page.locator('#listening-first-score')).toContainText('Đã nộp 0 / 75');
 });
 

@@ -4,7 +4,7 @@ import type { AppData } from '../../services/storage/compatibility.ts';
 
 export const RESET_MODULES = ['textbook', 'homework', 'listening', 'vocabulary', 'exercises'] as const;
 export type ResetModule = typeof RESET_MODULES[number];
-export type ResetScope = { module: ResetModule | 'all'; lesson: number | null };
+export type ResetScope = { module: ResetModule | 'all'; lesson: number | null; homeworkVersion?: '30-v1' | 'legacy' | 'all' };
 export interface ResetResult { data: AppData; title: string; removed: number; warnings: string[] }
 const chineseLabels: Record<ResetModule | 'all', string> = {
   all: '所有学习模块', textbook: '教材与掌握标记', homework: '作业', listening: '听力练习',
@@ -36,7 +36,7 @@ type Catalog = { listening: { id: string; lesson: number }[]; vocabulary: { sens
 
 /** Pure candidate only. The caller must show scope and confirm through the atomic store. */
 export function resetProgress(input: AppData, scope: ResetScope, catalog: Catalog): ResetResult {
-  if (!['all', ...RESET_MODULES].includes(scope.module) ||
+  if ((scope.homeworkVersion !== undefined && !['30-v1', 'legacy', 'all'].includes(scope.homeworkVersion)) || !['all', ...RESET_MODULES].includes(scope.module) ||
       (scope.lesson !== null && (!Number.isInteger(scope.lesson) || scope.lesson < 1 || scope.lesson > 15))) {
     throw new Error(dataWarning({"zh": "重置范围无效。", "vi": "Phạm vi đặt lại không hợp lệ."}));
   }
@@ -52,7 +52,10 @@ export function resetProgress(input: AppData, scope: ResetScope, catalog: Catalo
     for (const id of Object.keys(data.reading.mastered)) if (matches(id.split('-')[0]!)) erase(data.reading.mastered, id);
     for (const id of Object.keys(data.reading.modules)) if (matches(id.slice(5))) erase(data.reading.modules, id);
   }
-  if (targets('homework')) {
+  if (targets('homework') && scope.homeworkVersion !== 'legacy' && data.homework30) {
+    for (const id of Object.keys(data.homework30.lessons)) if (matches(id)) erase(data.homework30.lessons, id);
+  }
+  if (targets('homework') && scope.homeworkVersion !== '30-v1') {
     for (const id of Object.keys(data.homework.lessons)) if (matches(id)) erase(data.homework.lessons, id);
     for (const [id, record] of Object.entries(data.exercises.records)) {
       if (!id.startsWith('homework:')) continue;
@@ -107,6 +110,7 @@ export function resetProgress(input: AppData, scope: ResetScope, catalog: Catalo
         : dataWarning({"zh": "此范围内的词卡练习将结束，范围之外的复习计划仍保留。", "vi": "Lượt thẻ trong phạm vi này sẽ kết thúc. Các lịch ôn ngoài phạm vi vẫn được giữ."}));
     }
   }
+  if (targets('homework')) warnings.push(dataWarning({ zh: scope.homeworkVersion === 'legacy' ? '仅重置旧版15题作业；新版30题记录保留。' : scope.homeworkVersion === '30-v1' ? '仅重置新版30题作业；旧版15题记录保留。' : '此范围包括新版30题与旧版15题作业；两版记录均会移除。', vi: scope.homeworkVersion === 'legacy' ? 'Chỉ đặt lại bài tập cũ 15 câu; giữ bản 30 câu.' : scope.homeworkVersion === '30-v1' ? 'Chỉ đặt lại bài tập mới 30 câu; giữ bản cũ 15 câu.' : 'Phạm vi gồm cả bài tập mới 30 câu và bản cũ 15 câu; xóa bản ghi của cả hai.' }));
   return { data, title: dataWarning({ zh: `重置${chineseLabels[scope.module]} · ${scope.lesson === null ? '15课' : `第${scope.lesson}课`}`,
     vi: `Đặt lại ${labels[scope.module]} · ${scope.lesson === null ? '15 bài' : `Bài ${scope.lesson}`}` }),
     removed, warnings };

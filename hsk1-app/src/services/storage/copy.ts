@@ -251,25 +251,29 @@ export const dataSummaryCopy = {
     "zh": "已标记掌握的词语",
     "vi": "Từ đã đánh dấu thuộc"
   },
+  "homework30Submitted": { "zh": "新版30题作业已提交题数", "vi": "Câu đã nộp trong bài tập mới 30 câu" },
+  "homework30FirstCorrect": { "zh": "新版作业首次答对题数", "vi": "Câu đúng lần đầu ở bài tập mới" },
+  "homework30LatestCorrect": { "zh": "新版作业最近答对题数", "vi": "Câu đúng gần nhất ở bài tập mới" },
+  "homework30ManualSubmitted": { "zh": "新版翻译写作已提交题数", "vi": "Câu dịch tự viết đã nộp ở bản mới" },
   "homeworkSubmitted": {
-    "zh": "已提交的作业",
-    "vi": "Bài tập đã nộp"
+    "zh": "旧版15题作业已提交题数",
+    "vi": "Câu đã nộp trong bài tập cũ 15 câu"
   },
   "automaticSubmitted": {
-    "zh": "已提交的自动评分作业",
-    "vi": "Bài chấm tự động đã nộp"
+    "zh": "旧版已提交的自动评分作业",
+    "vi": "Bài chấm tự động bản cũ đã nộp"
   },
   "automaticFirstCorrect": {
-    "zh": "首次提交答对题数",
-    "vi": "Số câu đúng ở lần nộp đầu"
+    "zh": "旧版首次提交答对题数",
+    "vi": "Số câu đúng ở lần nộp đầu bản cũ"
   },
   "automaticLatestCorrect": {
-    "zh": "最近提交答对题数",
-    "vi": "Số câu đúng ở lần nộp mới nhất"
+    "zh": "旧版最近提交答对题数",
+    "vi": "Số câu đúng ở lần nộp mới nhất bản cũ"
   },
   "manualSubmitted": {
-    "zh": "已提交待教师查看的翻译",
-    "vi": "Bài dịch đã nộp để giáo viên xem"
+    "zh": "旧版已提交待教师查看的翻译",
+    "vi": "Bài dịch bản cũ đã nộp để giáo viên xem"
   },
   "listeningSubmitted": {
     "zh": "已提交的听力题",

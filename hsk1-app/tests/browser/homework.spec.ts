@@ -1,3 +1,4 @@
+import { navigateFeature } from './ui-actions.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Page } from '@playwright/test';
 import homework from '../../src/domain/homework/engine.js';
@@ -286,10 +287,10 @@ test('an unfinished composition tail in the actual textarea is captured before m
     (element as HTMLTextAreaElement).value = value;
     // Deliberately omit input and compositionend: teardown must read the displayed value.
   }, draft);
-  await page.locator('#feature-nav a[data-feature="textbook"]').click();
+  await navigateFeature(page, 'textbook', Number(await page.locator('#lesson-select').inputValue()));
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
   await expect(page.locator('#module-host')).toHaveAttribute('data-feature', 'textbook');
-  await page.locator('#feature-nav a[data-feature="homework"]').click();
+  await navigateFeature(page, 'homework', Number(await page.locator('#lesson-select').inputValue()));
   await ready(page, 1, 'choice');
   await part(page, 1, 'translation');
   await expect(page.locator(`textarea[data-answer-id="${id}"]`)).toHaveValue(draft);
@@ -318,11 +319,11 @@ test('repeated sort token text has independent indexes and draft, profile and to
   await page.locator(`button[data-sort-remove="${question.id}"][data-token-index="0"]`).click();
   await expect(page.locator(`button[data-sort-remove="${question.id}"][data-token-index="5"]`)).toBeVisible();
   await expect(page.locator(`button[data-sort-add="${question.id}"][data-token-index="0"]`)).toBeEnabled();
-  await page.locator('#feature-nav a[data-feature="textbook"]').click();
+  await navigateFeature(page, 'textbook', Number(await page.locator('#lesson-select').inputValue()));
   await expect(page.locator('#module-host')).toHaveAttribute('data-feature', 'textbook');
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
   await page.locator('#lesson-select').selectOption('3');
-  await page.locator('#feature-nav a[data-feature="homework"]').click();
+  await navigateFeature(page, 'homework', Number(await page.locator('#lesson-select').inputValue()));
   await ready(page, 3, 'choice');
   await expect(page.locator('#homework-name')).toHaveValue('An');
   await expect(page.locator('#homework-class')).toHaveValue('Lớp 15');
@@ -373,7 +374,7 @@ test('quota and denied writes keep manual edits in the app session, export them 
       const backup = await downloadBackup(page, '#export-backup');
       expect(backup.data.homework.lessons['1'].translation.draft[id]).toBe(draft);
       expect(backup.data.homework.lessons['1'].translation.latest).toBeNull();
-      await page.locator('#feature-nav a[data-feature="homework"]').click();
+      await navigateFeature(page, 'homework', Number(await page.locator('#lesson-select').inputValue()));
       await ready(page, 1, 'choice');
       await part(page, 1, 'translation');
       await expect(page.locator(`textarea[data-answer-id="${id}"]`)).toHaveValue(draft);

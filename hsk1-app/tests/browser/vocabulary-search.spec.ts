@@ -1,3 +1,4 @@
+import { openLearningSettings } from './active-view-helpers.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Page } from '@playwright/test';
 
@@ -10,8 +11,8 @@ async function open(page: Page, lesson = 1) {
   await page.addInitScript(() => sessionStorage.setItem('hsk_portal_unlocked_v2', '1'));
   await page.goto(`/#/vocabulary?lesson=${lesson}`);
   await expect(page.locator('#vocabulary-settings')).toBeVisible();
-  await page.locator('#vocabulary-all').click();
-  await page.locator('#vocabulary-shuffle').uncheck();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-all').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-shuffle').uncheck();
 }
 async function savedData(page: Page) {
   await expect(page.locator('#vocabulary-save-status')).toHaveAttribute('data-state', 'saved');
@@ -21,8 +22,8 @@ async function savedData(page: Page) {
 test('Chinese, accent-insensitive Vietnamese and pinyin searches create only matching sense queues', async ({ page }) => {
   await open(page);
   for (const query of ['你好', 'NǏ HǍO', 'nihao', 'xin chao']) {
-    await page.locator('#vocabulary-search').fill(query);
-    await page.locator('#vocabulary-start').click();
+    await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-search').fill(query);
+    await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-start').click();
     const state = await savedData(page), queue = state.practice.cards.review;
     expect(queue.search).toBe(query);
     expect(queue.senseIds).toContain(catalog.vocabulary.find(word => word.zh === '你好')!.senseId);
@@ -30,46 +31,46 @@ test('Chinese, accent-insensitive Vietnamese and pinyin searches create only mat
     await expect(page.locator('#vocabulary-position [lang="vi"]')).toHaveText(`Thẻ 1 / ${queue.senseIds.length}`);
     await expect(page.locator('#vocabulary-available')).toContainText(`${queue.senseIds.length} thẻ`);
   }
-  await page.locator('#vocabulary-clear-search').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-clear-search').click();
   await expect(page.locator('#vocabulary-search')).toHaveValue('');
   await expect(page.locator('#vocabulary-available')).toContainText('344 thẻ');
-  await page.locator('#vocabulary-start').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-start').click();
   expect((await savedData(page)).practice.cards.review.senseIds).toHaveLength(344);
   await expect(page.locator('#vocabulary-queue-scope')).not.toContainText('Tìm');
 });
 
 test('search, selected lessons, and self-rating filters intersect; zero results preserve the active round', async ({ page }) => {
   await open(page);
-  await page.locator('#vocabulary-search').fill('nhớ nhung');
-  await page.locator('#vocabulary-start').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-search').fill('nhớ nhung');
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-start').click();
   await expect(page.locator('#vocabulary-position [lang="vi"]')).toHaveText('Thẻ 1 / 1');
   await page.locator('#vocabulary-reveal').click(); await page.locator('#vocabulary-again').click();
-  await page.locator('#vocabulary-filter').selectOption('wrong');
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-filter').selectOption('wrong');
   await expect(page.locator('#vocabulary-available')).toContainText('1 thẻ');
   await expect(page.locator('#vocabulary-due')).toBeDisabled();
   const before = (await savedData(page)).practice.cards.review;
-  await page.locator('#vocabulary-lesson-3').uncheck();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-lesson-3').uncheck();
   await expect(page.locator('#vocabulary-available')).toContainText('0 thẻ');
   await expect(page.locator('#vocabulary-start')).toBeDisabled();
   expect((await savedData(page)).practice.cards.review).toEqual(before);
-  await page.locator('#vocabulary-search').fill('no-such-word');
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-search').fill('no-such-word');
   await expect(page.locator('#vocabulary-start')).toBeDisabled();
-  await page.locator('#vocabulary-lesson-3').check();
-  await page.locator('#vocabulary-clear-search').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-lesson-3').check();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-clear-search').click();
   await expect(page.locator('#vocabulary-start')).toBeEnabled();
   await expect(page.locator('#vocabulary-queue-scope')).toContainText('nhớ nhung');
 });
 
 test('searched skipped cards restore exactly after reload while changed draft settings never replace them', async ({ page }) => {
-  await open(page); await page.locator('#vocabulary-direction').selectOption('vi-zh');
-  await page.locator('#vocabulary-search').fill('家'); await page.locator('#vocabulary-start').click();
+  await open(page); await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-direction').selectOption('vi-zh');
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-search').fill('家'); await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-start').click();
   await page.locator('#vocabulary-skip').click(); await page.locator('#vocabulary-reveal').click();
   await page.locator('#vocabulary-skip').click();
   const before = (await savedData(page)).practice;
   expect(before.cards.review.position).toBe(2); expect(before.cards.review.ratings).toEqual({});
-  await page.locator('#vocabulary-search').fill('no-such-word');
-  await page.locator('#vocabulary-none').click(); await page.locator('#vocabulary-lesson-15').check();
-  await page.locator('#vocabulary-direction').selectOption('zh-vi'); await savedData(page);
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-search').fill('no-such-word');
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-none').click(); await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-lesson-15').check();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-direction').selectOption('zh-vi'); await savedData(page);
   await page.reload(); await expect(page.locator('#vocabulary-card')).toBeVisible();
   await expect(page.locator('#vocabulary-search')).toHaveValue('家');
   const after = (await savedData(page)).practice;
@@ -81,9 +82,9 @@ test('searched skipped cards restore exactly after reload while changed draft se
 });
 
 test('Vietnamese fronts expose neither Chinese answers, pinyin, examples nor audio before reveal', async ({ page }) => {
-  await open(page); await page.locator('#vocabulary-direction').selectOption('vi-zh');
-  await page.locator('#vocabulary-search').fill('ngày (đơn vị thời gian)');
-  await page.locator('#vocabulary-start').click(); await page.locator('#vocabulary-pinyin').check();
+  await open(page); await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-direction').selectOption('vi-zh');
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-search').fill('ngày (đơn vị thời gian)');
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-start').click(); await page.locator('#vocabulary-pinyin').check();
   await expect(page.locator('#vocabulary-prompt')).toHaveText('ngày (đơn vị thời gian)');
   await expect(page.locator('#vocabulary-card')).not.toContainText('天');
   await expect(page.locator('#vocabulary-examples')).toHaveCount(0);
@@ -103,7 +104,7 @@ test('Vietnamese fronts expose neither Chinese answers, pinyin, examples nor aud
 
 test('compact search and exact-sense textbook examples remain usable on a narrow screen', async ({ page }) => {
   await page.setViewportSize({ width: 360, height: 800 }); await open(page);
-  await page.locator('#vocabulary-search').fill('lên (tàu, xe)'); await page.locator('#vocabulary-start').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-search').fill('lên (tàu, xe)'); await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-start').click();
   await page.locator('#vocabulary-reveal').click(); await page.locator('#vocabulary-examples summary').click();
   await expect(page.locator('#vocabulary-examples')).toContainText('上火车');
   await expect(page.locator('#vocabulary-examples')).not.toContainText('上中学');

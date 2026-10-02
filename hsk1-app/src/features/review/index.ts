@@ -1,22 +1,25 @@
-import type { FeatureModule } from '../../app/contracts.ts';
-import { mountVocabulary } from '../vocabulary/view.ts';
-import { element, routeLink } from '../textbook/dom.ts';
+import type { FeatureModule, Route } from '../../app/contracts.ts';
 import { bilingualNode, bilingualText } from '../../app/bilingual.ts';
-import { exerciseCopy as copy } from '../../app/i18n/exercises.ts';
+import { routeLink } from '../textbook/dom.ts';
+import { reviewCopy as copy } from '../../app/i18n/review.ts';
 import '../../app/bilingual.css';
+import './review.css';
 
-/** Separate question review and vocabulary self-ratings, with one doorway. */
+/** One practice doorway; legacy exercise routes remain compatibility-only. */
 export const mount: FeatureModule['mount'] = (host, context) => {
-  const paths = element('nav'); paths.className = 'study-paths review-paths'; paths.setAttribute('aria-label', bilingualText(copy.reviewPaths));
-  for (const [label, set, filter] of [
-    [copy.reviewWrong, 'homework-review', 'wrong'],
-    [copy.reviewDue, 'homework-review', 'due'],
-    [copy.reviewOriginal, 'original', 'due'],
-  ] as const) {
-    const link = routeLink('', { feature: 'exercises', lesson: context.route.lesson, exerciseSet: set, exerciseFilter: filter });
-    const text = bilingualNode('span', label); text.className = 'bilingual-stacked'; link.append(text); paths.append(link);
+  const article = document.createElement('article'); article.id = 'review-module'; article.className = 'module-entry review-hub';
+  const heading = bilingualNode('h1', copy.title); heading.tabIndex = -1;
+  const paths = document.createElement('nav'); paths.className = 'review-paths'; paths.setAttribute('aria-label', bilingualText(copy.paths));
+  const lesson = context.route.lesson;
+  const destinations = [
+    { title: copy.vocabulary, detail: copy.vocabularyDetail, route: { feature: 'vocabulary', lesson } },
+    { title: copy.listening, detail: copy.listeningDetail, route: { feature: 'listening', lesson } },
+    { title: copy.textbook, detail: copy.textbookDetail(lesson), route: { feature: 'textbook', lesson, section: 'practice' } },
+  ] satisfies Array<{ title: typeof copy.title; detail: typeof copy.title; route: Route }>;
+  for (const destination of destinations) {
+    const link = routeLink('', destination.route); link.id = `review-${destination.route.feature}`;
+    link.append(bilingualNode('h2', destination.title), bilingualNode('p', destination.detail)); paths.append(link);
   }
-  host.append(paths);
-  const mounted = mountVocabulary(host, context, 'review');
-  return { ready: mounted.ready, unmount() { mounted.unmount(); paths.remove(); } };
+  article.append(heading, bilingualNode('p', copy.introduction), paths); host.append(article);
+  return { ready: Promise.resolve(), unmount() { article.remove(); } };
 };

@@ -1,3 +1,4 @@
+import { navigateFeature, revealControl } from './ui-actions.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Locator, type Page, type TestInfo } from '@playwright/test';
 import homework from '../../src/domain/homework/engine.js';
@@ -80,7 +81,7 @@ async function savedData(page: Page, feature: 'homework' | 'listening' | 'vocabu
 }
 
 async function navigate(page: Page, feature: string): Promise<void> {
-  await page.locator(`#feature-nav [data-feature="${feature}"]`).click();
+  await navigateFeature(page, feature, 10);
   await ready(page, feature);
 }
 
@@ -103,6 +104,7 @@ async function receipt(page: Page, answers: Record<string, string>): Promise<voi
 }
 
 async function startListening(page: Page): Promise<void> {
+  await revealControl(page, '#listening-none');
   await page.locator('#listening-none').click();
   await page.locator('[data-listening-lesson="10"]').check();
   await page.locator('#listening-mode').selectOption('all');
@@ -112,6 +114,7 @@ async function startListening(page: Page): Promise<void> {
 }
 
 async function startVocabulary(page: Page): Promise<void> {
+  await revealControl(page, '#vocabulary-none');
   await page.locator('#vocabulary-none').click();
   for (const id of [7, 10]) await page.locator(`[data-vocabulary-lesson="${id}"]`).check();
   await page.locator('#vocabulary-filter').selectOption('all');
@@ -373,7 +376,7 @@ test.describe('step 8 cross-module acceptance', () => {
 
 async function layoutEvidence(page: Page, testInfo: TestInfo, label: string, selectors: string[]): Promise<void> {
   const width = page.viewportSize()!.width;
-  for (const selector of selectors) await expect(page.locator(selector)).toBeVisible();
+  for (const selector of selectors) { await revealControl(page, selector); await expect(page.locator(selector)).toBeVisible(); }
   const boxes = await page.evaluate(selectors => ({ documentWidth: document.documentElement.scrollWidth,
     boxes: selectors.map(selector => {
       const element = document.querySelector<HTMLElement>(selector)!;
@@ -514,8 +517,10 @@ test('keyboard activation and synthetic composition/paste preserve exact multili
   }, tail);
   exact += tail;
   answers[id] = exact;
-  await keyboardActivate(page.locator('#feature-nav [data-feature="listening"]'));
+  await keyboardActivate(page.locator('#feature-nav [data-feature="review"]'));
+  await keyboardActivate(page.locator('#review-module a[href^="#/listening?"]')); 
   await ready(page, 'listening');
+  await revealControl(page, '#listening-none');
   await keyboardActivate(page.locator('#listening-none'), 'Space');
   await keyboardActivate(page.locator('[data-listening-lesson="10"]'), 'Space');
   await expect(page.locator('[data-listening-lesson="10"]')).toBeChecked();
@@ -526,14 +531,17 @@ test('keyboard activation and synthetic composition/paste preserve exact multili
   await keyboardActivate(page.locator(`input[data-option-index="${listeningQuestions[0]!.answer}"]`), 'Space');
   await keyboardActivate(page.locator('#listening-submit'));
   await expect(page.locator('#listening-feedback')).toBeVisible();
-  await keyboardActivate(page.locator('#feature-nav [data-feature="vocabulary"]'));
+  await keyboardActivate(page.locator('#feature-nav [data-feature="review"]'));
+  await keyboardActivate(page.locator('#review-module a[href^="#/vocabulary?"]')); 
   await ready(page, 'vocabulary');
+  await revealControl(page, '#vocabulary-start');
   await keyboardActivate(page.locator('#vocabulary-start'));
   await keyboardActivate(page.locator('#vocabulary-reveal'), 'Space');
   await expect(page.locator('#vocabulary-answer')).toBeVisible();
   await keyboardActivate(page.locator('#vocabulary-good'));
   await expect(page.locator('#vocabulary-next')).toBeFocused();
   await keyboardActivate(page.locator('#feature-nav [data-feature="homework"]'));
+  if (await page.locator('#homework-legacy-link').count()) { await revealControl(page, '#homework-legacy-link'); await keyboardActivate(page.locator('#homework-legacy-link')); } 
   await ready(page, 'homework', 'choice');
   await keyboardActivate(page.locator('[data-homework-part="translation"]'));
   await ready(page, 'homework', 'translation');

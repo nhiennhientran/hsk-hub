@@ -22,7 +22,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
   const controls = element('fieldset'); controls.dataset.moduleControls = ''; controls.disabled = true; controls.append(element('legend', copy.contents));
   const loading = element('button', copy.markRead); loading.type = 'button'; loading.disabled = true; loading.id = 'reading-complete'; controls.append(loading);
   const hero = element('header'); hero.className = 'lesson-hero';
-  const eyebrow = element('p', `第 ${context.route.lesson} 课 · BÀI ${context.route.lesson}`); eyebrow.className = 'eyebrow';
+  const eyebrow = element('p', copy.lessonContext(context.route.lesson)); eyebrow.className = 'eyebrow';
   hero.append(eyebrow, heading, name); article.append(hero, nav, controls); host.append(article);
   const lifetime = new AbortController(); const close = () => lifetime.abort();
   context.signal.addEventListener('abort', close, { once: true }); if (context.signal.aborted) close();
@@ -70,7 +70,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     } else {
       disposeView = mountPractice(body, { lesson, signal: lifetime.signal }).dispose;
       const more = element('nav'); more.className = 'study-paths'; more.setAttribute('aria-label', bilingualText(copy.otherPractice));
-      more.append(routeLink(copy.originalPractice, { feature: 'exercises', lesson: lesson.id }), routeLink(copy.homework, { feature: 'homework', lesson: lesson.id })); body.append(more);
+      more.append(routeLink(copy.practiceHub, { feature: 'review', lesson: lesson.id })); body.append(more);
     }
     const journey = element('nav'); journey.className = 'textbook-journey'; journey.setAttribute('aria-label', bilingualText(copy.continue));
     const at = SECTIONS.indexOf(section);

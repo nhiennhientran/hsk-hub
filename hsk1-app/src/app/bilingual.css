@@ -1,6 +1,9 @@
-/* Paired UI copy stays in normal flow so Vietnamese labels wrap on mobile. */
-.bilingual-zh { font-family: var(--zh-font, "Noto Sans CJK SC", sans-serif); }
-.bilingual-vi { font-size: max(14px, .92em); }
-button:has(> .bilingual-zh), label:has(> .bilingual-zh), a:has(> .bilingual-zh) { white-space: normal; overflow-wrap: anywhere; }
-.bilingual-stacked > .bilingual-vi { display: block; margin-top: .25em; }
-.bilingual-stacked > .bilingual-separator { display: none; }
+/* Chinese is the primary label; Vietnamese follows in normal flow at a readable size. */
+.bilingual-zh { font-family:var(--zh-font,"Noto Sans CJK SC",sans-serif); }
+.bilingual-vi { font-size:max(14px,.94em); line-height:1.5; }
+:has(> .bilingual-zh) > .bilingual-zh { display:block; }
+:has(> .bilingual-zh) > .bilingual-vi { display:block; margin-top:2px; }
+:has(> .bilingual-zh) > .bilingual-separator { display:none; }
+button:has(> .bilingual-zh), label:has(> .bilingual-zh), a:has(> .bilingual-zh) { white-space:normal; overflow-wrap:anywhere; }
+.bilingual-stacked > .bilingual-vi { display:block; margin-top:.25em; }
+.bilingual-stacked > .bilingual-separator { display:none; }

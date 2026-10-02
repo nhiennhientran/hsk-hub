@@ -1,3 +1,5 @@
+import { navigateFeature, revealControl } from './ui-actions.ts';
+import { openLearningSettings, openPracticeFeature } from './active-view-helpers.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Page, type Route } from '@playwright/test';
 import practiceEngine from '../../src/domain/practice/engine.js';
@@ -37,16 +39,24 @@ async function ready(page: Page, feature = 'vocabulary', lesson = 1): Promise<vo
   await expect(page.locator('#module-host')).toHaveAttribute('data-lesson', String(lesson));
   await expect(page.locator('#vocabulary-settings')).toBeVisible();
 }
+async function enterVocabularyFromReview(page: Page): Promise<void> {
+  await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
+  await expect(page.locator('#module-host')).toHaveAttribute('data-feature', 'review');
+  await expect(page.locator('.review-paths a')).toHaveCount(3);
+  await expect(page.locator('#review-module h1')).toContainText('Luyện tập và ôn tập');
+  await expect(page.locator('#vocabulary-card')).toHaveCount(0);
+  await page.locator('#review-vocabulary').click();
+}
 async function select(page: Page, lessons: number[], filter = 'all', direction = 'zh-vi', shuffle = false): Promise<void> {
-  await page.locator('#vocabulary-none').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-none').click();
   for (const lesson of lessons) await page.locator(`[data-vocabulary-lesson="${lesson}"]`).check();
-  await page.locator('#vocabulary-filter').selectOption(filter);
-  await page.locator('#vocabulary-direction').selectOption(direction);
-  await page.locator('#vocabulary-shuffle').setChecked(shuffle);
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-filter').selectOption(filter);
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-direction').selectOption(direction);
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-shuffle').setChecked(shuffle);
 }
 async function start(page: Page, lessons: number[], filter = 'all', direction = 'zh-vi', shuffle = false): Promise<void> {
   await select(page, lessons, filter, direction, shuffle);
-  await page.locator('#vocabulary-start').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-start').click();
   await expect(page.locator('#vocabulary-card')).toBeVisible();
 }
 async function saved(page: Page): Promise<void> { await expect(page.locator('#vocabulary-save-status')).toHaveAttribute('data-state', 'saved'); }
@@ -205,8 +215,8 @@ test('all 21 homograph families keep 46 distinct sense identities and independen
       const ids = group.map(word => word.senseId);
       expect(new Set(ids).size).toBe(group.length);
       await select(page, [...new Set(group.map(word => word.lesson))]);
-      await page.locator('#vocabulary-search').fill(group[0]!.zh);
-      await page.locator('#vocabulary-start').click();
+      await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-search').fill(group[0]!.zh);
+      await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-start').click();
       const queue = (await data(page)).practice.cards.review.senseIds as string[];
       expect(queue).toEqual(expect.arrayContaining(ids));
       for (const [index, id] of queue.entries()) {
@@ -233,7 +243,8 @@ test('all 21 homograph families keep 46 distinct sense identities and independen
 for (const feature of ['vocabulary', 'review']) test(`${feature}: previous, next and skip work without ratings and preserve skipped cards across refresh`, async ({ page }) => {
   await authenticate(page);
   await page.goto(`/#/${feature}?lesson=1`);
-  await ready(page, feature);
+  if (feature === 'review') await enterVocabularyFromReview(page);
+  await ready(page);
   await start(page, [1], 'due', 'vi-zh');
   const ids = (await data(page)).practice.cards.review.senseIds as string[];
   await expect(page.locator('#vocabulary-prev')).toBeDisabled();
@@ -255,7 +266,7 @@ for (const feature of ['vocabulary', 'review']) test(`${feature}: previous, next
   expect(Object.keys(before.review.ratings)).toEqual([ids[2]]);
   expect(before.review.finishedAt).toBeNull();
   await page.reload();
-  await ready(page, feature);
+  await ready(page);
   expect((await data(page)).practice.cards).toEqual(before);
   await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', ids[3]!);
   await expect(page.locator('#vocabulary-answer')).toHaveCount(0);
@@ -280,8 +291,8 @@ for (const feature of ['vocabulary', 'review']) test(`${feature}: previous, next
   const after = (await data(page)).practice.cards;
   expect(after.schedule).toEqual(before.schedule);
   expect(after.review).toEqual({ ...before.review, position: ids.length - 1 });
-  await page.locator(`#feature-nav [data-feature="${feature === 'review' ? 'vocabulary' : 'review'}"]`).click();
-  await ready(page, feature === 'review' ? 'vocabulary' : 'review');
+  await openPracticeFeature(page, 'vocabulary');
+  await ready(page);
   expect((await data(page)).practice.cards).toEqual(after);
 });
 
@@ -296,7 +307,7 @@ test('non-contiguous lessons 7 and 10 yield exactly 50 cards, shuffled order per
   await start(page, [7, 10], 'all', 'zh-vi', true);
   const shuffled = (await data(page)).practice.cards.review;
   expect([...shuffled.senseIds].sort()).toEqual([...exact].sort());
-  await page.locator('#vocabulary-none').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-none').click();
   await expect(page.locator('#vocabulary-start')).toBeDisabled();
   await page.locator('#vocabulary-start').evaluate(button => (button as HTMLButtonElement).click());
   expect((await data(page)).practice.cards.review).toEqual(shuffled);
@@ -307,9 +318,9 @@ test('non-contiguous lessons 7 and 10 yield exactly 50 cards, shuffled order per
   await ready(page, 'vocabulary', 7);
   await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', shuffled.senseIds[0]);
   expect((await data(page)).practice.cards.review).toEqual(shuffled);
-  await page.locator('#vocabulary-all').click();
-  await page.locator('#vocabulary-filter').selectOption('all');
-  await page.locator('#vocabulary-start').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-all').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-filter').selectOption('all');
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-start').click();
   expect((await data(page)).practice.cards.review.senseIds).toHaveLength(344);
 });
 
@@ -397,11 +408,12 @@ test('reload and review keep the saved queue, ratings, position and scope when c
   await expect(page.locator('#vocabulary-prompt')).toHaveText(second.vi);
   await expect(page.locator('#vocabulary-answer')).toContainText(second.zh);
   expect((await data(page)).practice.cards).toEqual(before);
-  await page.locator('#vocabulary-resume').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-resume').click();
   expect((await data(page)).practice.cards).toEqual(before);
   await page.locator('#feature-nav [data-feature="review"]').click();
-  await ready(page, 'review', 7);
-  await expect(page.locator('#module-host h1')).toContainText('Ôn tập');
+  await enterVocabularyFromReview(page);
+  await ready(page, 'vocabulary', 7);
+  await expect(page.locator('#module-host h1')).toContainText('Từ vựng');
   await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', second.senseId);
   await expect(page.locator('#vocabulary-queue-scope')).toContainText('7, 10');
   const after = await data(page);
@@ -410,7 +422,7 @@ test('reload and review keep the saved queue, ratings, position and scope when c
   expect(after.homework).toEqual(seeded.homework);
   expect(after.practice.listening).toEqual(seeded.practice.listening);
   await select(page, [7, 10], 'all');
-  await page.locator('#vocabulary-due').click();
+  await openLearningSettings(page, 'vocabulary'); await page.locator('#vocabulary-due').click();
   const due = (await data(page)).practice.cards.review;
   expect(due.filter).toBe('due');
   expect(due.senseIds).not.toContain(first.senseId);
@@ -521,12 +533,12 @@ test('quota failure keeps revealed ratings available across modules, exports the
   expect(await page.evaluate(key => localStorage.getItem(key), stateKey)).toBe(raw);
   await page.locator('#feature-nav [data-feature="progress"]').click();
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
-  await page.locator('#open-data-manager').click();
+  await revealControl(page, '#open-data-manager'); await page.locator('#open-data-manager').click();
   const backup = await downloadBackup(page);
   const expected = backup.data.practice.cards;
   expect(expected.review.revealed[word.senseId]).toBe(true);
   expect(expected.schedule[word.senseId]).toMatchObject({ lastRating: 'again', reviewCount: 1 });
-  await page.locator('#feature-nav [data-feature="vocabulary"]').click();
+  await openPracticeFeature(page, 'vocabulary');
   await ready(page, 'vocabulary', 7);
   await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', word.senseId);
   await expect(page.locator('#vocabulary-answer')).toBeVisible();
@@ -552,9 +564,9 @@ test('vocabulary loading rejects early interaction, failed metadata retries, and
   await ready(page, 'vocabulary', 7);
   await page.locator('#feature-nav [data-feature="home"]').click();
   await expect(page.locator('#module-host')).toHaveAttribute('data-feature', 'home');
-  await page.locator('#feature-nav [data-feature="vocabulary"]').click();
+  await openPracticeFeature(page, 'vocabulary');
   await expect.poll(() => pending.length).toBe(3);
-  await page.locator('#feature-nav [data-feature="homework"]').click();
+  await navigateFeature(page, 'homework');
   await expect(page.locator('#module-host')).toHaveAttribute('data-feature', 'homework');
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
   await pending[2]!.abort('failed');
@@ -589,7 +601,8 @@ test('Chinese and Vietnamese cards, settings, source metadata and review control
     if ([390, 1104].includes(width)) await testInfo.attach(`vocabulary-${testInfo.project.name}-${width}.png`, { body: await page.screenshot({ fullPage: true }), contentType: 'image/png' });
   }
   await page.locator('#feature-nav [data-feature="review"]').click();
-  await ready(page, 'review', 15);
+  await enterVocabularyFromReview(page);
+  await ready(page, 'vocabulary', 15);
   await expect(page.locator('#vocabulary-answer')).toBeVisible();
   await testInfo.attach(`review-${testInfo.project.name}-1104.png`, { body: await page.screenshot({ fullPage: true }), contentType: 'image/png' });
 });
@@ -659,7 +672,7 @@ test('a mixed-lesson queue with skipped and rated cards exports, imports and res
   const before = await data(page);
   await page.locator('#feature-nav [data-feature="progress"]').click();
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
-  await page.locator('#open-data-manager').click();
+  await revealControl(page, '#open-data-manager'); await page.locator('#open-data-manager').click();
   const backup = await downloadBackup(page);
   const context = await browser.newContext();
   try {
@@ -672,7 +685,7 @@ test('a mixed-lesson queue with skipped and rated cards exports, imports and res
     await expect(fresh.locator('#confirm-data-import')).toBeEnabled();
     await fresh.locator('#confirm-data-import').click();
     await expect(fresh.locator('#data-status')).toHaveAttribute('data-state', 'saved');
-    await fresh.locator('#feature-nav [data-feature="vocabulary"]').click();
+    await openPracticeFeature(fresh, 'vocabulary');
     await ready(fresh, 'vocabulary', 7);
     await expect(fresh.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', word.senseId);
     await expect(fresh.locator('#vocabulary-answer')).toBeVisible();

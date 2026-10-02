@@ -10,7 +10,7 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
   const copy = textbookCopy.text;
   const section = element('section'); section.id = 'textbook-text'; section.append(element('h2', copy.heading));
   const toolbar = element('div'); toolbar.className = 'textbook-actions';
-  const pickerLabel = element('label', copy.select); const picker = element('select'); picker.id = 'scene-select';
+  const pickerLabel = element('label', copy.select); pickerLabel.className = 'textbook-scene-picker'; const picker = element('select'); picker.id = 'scene-select';
   const tabs = element('div'); tabs.className = 'textbook-scene-tabs'; tabs.setAttribute('role', 'tablist'); tabs.setAttribute('aria-label', bilingualText(copy.scenes));
   const tabButtons: HTMLButtonElement[] = [];
   const modeLabel = element('label'); const mode = element('input'); mode.type = 'checkbox'; mode.id = 'text-listen-mode'; modeLabel.append(mode, element('span', copy.listenMode));
@@ -22,9 +22,10 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
     const scene = lesson.scenes[index]; if (!scene || signal.aborted) return;
     // A scene switch is a new listening choice. Abort its media before rendering.
     sceneLifetime?.abort(); sceneLifetime = new AbortController(); const sceneSignal = sceneLifetime.signal; current = index;
-    body.replaceChildren(); body.dataset.sceneId = scene.id; body.setAttribute('aria-labelledby', `scene-tab-${index}`); picker.value = String(index);
+    body.replaceChildren(); body.dataset.sceneId = scene.id; body.setAttribute('aria-labelledby', 'scene-title'); picker.value = String(index);
     for (let i = 0; i < tabButtons.length; i++) { tabButtons[i].setAttribute('aria-selected', String(i === index)); tabButtons[i].tabIndex = i === index ? 0 : -1; }
-    body.append(element('h3', `${index + 1}. ${scene.place}`), element('p', scene.place_vn));
+    const sceneTitle = element('h3', { zh: `${index + 1}. ${scene.place}`, vi: scene.place_vn }); sceneTitle.id = 'scene-title';
+    body.append(sceneTitle);
     const resolved = content.resolveScene(lesson.id, scene.id);
     const play = button(copy.playScene, () => { if (resolved.available) void audio.play({ ...resolved.request, label: bilingualText(scene.place, scene.place_vn) }, { signal: sceneSignal }); }, sceneSignal); play.dataset.sceneAudio = scene.id; play.disabled = !resolved.available;
     if (!resolved.available) play.title = bilingualText(textbookIssue(resolved.reason, copy.audioUnavailable));

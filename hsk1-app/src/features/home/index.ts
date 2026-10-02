@@ -17,8 +17,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
   const heading = element('h1', C.homeTitle); heading.tabIndex = -1;
   const description = element('p', C.loadingLessons); description.id = 'home-course-status';
   const hero = element('header'); hero.className = 'course-hero';
-  const eyebrow = element('p', '新HSK教程 1 · 15 BÀI HỌC'); eyebrow.className = 'eyebrow';
-  hero.append(eyebrow, heading, element('p', C.homeLead), element('p', C.homeFacts));
+  hero.append(heading, element('p', C.homeLead));
   article.append(hero, description); host.append(article);
   const controller = new AbortController();
   const abort = () => controller.abort();
@@ -57,10 +56,12 @@ export const mount: FeatureModule['mount'] = (host, context) => {
         const link = routeLink({ zh: sectionChinese[section], vi: sectionLabels[section] }, { feature: 'textbook', lesson: lesson.id, section });
         link.title = `${sectionChinese[section]} · ${sectionLabels[section]}`; link.dataset.lessonSection = section; sections.append(link);
       }
-      card.append(sections);
+      const detail = element('details'); detail.className = 'lesson-detail';
+      detail.append(element('summary', { zh: '查看各部分', vi: 'Xem các phần' }), sections);
+      card.append(detail);
       const actions = element('div'); actions.className = 'lesson-actions';
-      for (const feature of ['exercises', 'homework', 'listening'] as const) actions.append(routeLink({ zh: featureChinese[feature], vi: featureLabels[feature] }, { feature, lesson: lesson.id }));
-      card.append(actions); grid.append(card);
+      for (const feature of ['homework', 'listening'] as const) actions.append(routeLink({ zh: featureChinese[feature], vi: featureLabels[feature] }, { feature, lesson: lesson.id, ...(feature === 'homework' ? { homeworkVersion: '30-v1' as const } : {}) }));
+      detail.append(actions); grid.append(card);
     }
     catalogue.append(grid);
     search.addEventListener('input', () => {
@@ -80,14 +81,15 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       for (const card of host.querySelectorAll<HTMLElement>('.lesson-card[data-lesson]')) {
         const id = card.dataset.lesson!, row = model.lessons.find(lesson => String(lesson.lesson) === id)!;
         let state = card.querySelector<HTMLElement>('[data-reading-summary]');
-        if (!state) { state = element('p'); state.dataset.readingSummary = ''; card.append(state); }
+        if (!state) { state = element('p'); state.dataset.readingSummary = ''; card.querySelector('.lesson-detail')!.append(state); }
         setBilingual(state, M.readingState(row.reading.complete, row.reading.visited, row.reading.modules));
         let work = card.querySelector<HTMLElement>('[data-homework-summary]');
-        if (!work) { work = element('p'); work.dataset.homeworkSummary = ''; card.append(work); }
-        setBilingual(work, M.shortWork(row.homework.submitted, row.homework.total, row.listening.answered, row.listening.total));
+        if (!work) { work = element('p'); work.dataset.homeworkSummary = ''; card.insertBefore(work, card.querySelector('.lesson-detail')); }
+        const current = model.currentHomework.lessons.find(item => item.lesson === row.lesson)!;
+        setBilingual(work, { zh: `新版作业 ${current.homework.submitted}/30 · 教材 ${row.reading.modules}/5 部分`, vi: `Bài tập mới ${current.homework.submitted}/30 · Giáo trình ${row.reading.modules}/5 phần` });
         // Keep the existing one-link-per-domain card contract, pointing homework at the next unlocked group.
         const homework = card.querySelector<HTMLAnchorElement>('a[href^="#/homework?"]');
-        if (homework) homework.href = routeHref(row.homeworkRoute);
+        if (homework) homework.href = routeHref(current.nextRoute);
       }
       dueRefresh?.schedule(model.vocabulary.nextDueAt);
     };

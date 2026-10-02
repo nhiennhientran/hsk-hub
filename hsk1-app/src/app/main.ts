@@ -2,8 +2,9 @@ import './bilingual.css';
 import { bilingualText, setBilingual } from './bilingual.ts';
 import { coreCopy, lessonCopy } from './i18n/core.ts';
 import './styles.css';
-import { FEATURES, type Feature, type FeatureModule, type Route } from './contracts.ts';
+import { type Feature, type FeatureModule, type Route } from './contracts.ts';
 import { featureLabels, featureChinese } from './labels.ts';
+import { NAVIGATION_GROUPS, navigationGroup } from './navigation.ts';
 import { createRouter, normalizeRoute, parseRoute } from './router.ts';
 import { createLifecycle } from './lifecycle.ts';
 import { createSessionAuth } from '../services/auth/index.ts';
@@ -12,7 +13,7 @@ const loaders: Record<Feature, () => Promise<FeatureModule>> = {
   home: () => import('../features/home/index.ts'),
   textbook: () => import('../features/textbook/index.ts'),
   homework: () => import('../features/homework/index.ts'),
-  exercises: () => import('../features/exercises/index.ts'),
+  exercises: () => import('../features/exercises/archive.ts'),
   listening: () => import('../features/listening/index.ts'),
   vocabulary: () => import('../features/vocabulary/index.ts'),
   review: () => import('../features/review/index.ts'),
@@ -45,7 +46,7 @@ function startApplication(): () => void {
   root.innerHTML = `
     <a class="skip-link" href="#module-host">${bilingualText(coreCopy.skip)}</a>
     <header class="site-header"><a class="brand" data-route-link href="${router.href({ feature: 'home', lesson: 1 })}"><span lang="zh">汉语课件</span><small>然老师 · Cô Nhiên · HSK 1</small></a><span class="course-badge">${bilingualText(coreCopy.course)}</span></header>
-    <nav id="feature-nav" class="feature-nav" aria-label="${bilingualText(coreCopy.navigation)}">${FEATURES.map(feature => `<a data-route-link data-feature="${feature}" href="${router.href({ feature, lesson: 1 })}"><span lang="zh">${featureChinese[feature]}</span><span lang="vi">${featureLabels[feature]}</span></a>`).join('')}</nav>
+    <nav id="feature-nav" class="feature-nav" aria-label="${bilingualText(coreCopy.navigation)}">${NAVIGATION_GROUPS.map(group => `<a data-route-link data-feature="${group.feature}" data-nav-group="${group.id}" href="${router.href({ feature: group.feature, lesson: 1, ...(group.feature === 'homework' ? { homeworkVersion: '30-v1' as const } : {}) })}"><span lang="zh">${group.label.zh}</span><span lang="vi">${group.label.vi}</span></a>`).join('')}</nav>
     <main>
       <div class="lesson-picker"><label for="lesson-select">${bilingualText(coreCopy.chooseLesson)}</label><select id="lesson-select">${Array.from({ length: 15 }, (_, index) => `<option value="${index + 1}">${bilingualText(lessonCopy(index + 1))}</option>`).join('')}</select></div>
       <p id="module-status" role="status" aria-live="polite"></p>
@@ -109,11 +110,11 @@ function startApplication(): () => void {
   function updateNavigation(route: Route): void {
     lessons.value = String(route.lesson);
     root.dataset.feature = route.feature;
-    root.querySelector<HTMLElement>('.lesson-picker')!.hidden = route.feature === 'home';
+    root.querySelector<HTMLElement>('.lesson-picker')!.hidden = !['textbook', 'homework', 'exercises'].includes(route.feature);
     root.querySelectorAll<HTMLAnchorElement>('#feature-nav a[data-feature]').forEach(anchor => {
       const feature = anchor.dataset.feature as Feature;
-      anchor.href = router.href(feature === route.feature ? route : normalizeRoute({ feature, lesson: route.lesson }));
-      if (route.feature === feature) anchor.setAttribute('aria-current', 'page'); else anchor.removeAttribute('aria-current');
+      anchor.href = router.href(feature === 'homework' ? normalizeRoute({ feature, lesson: route.lesson, homeworkVersion: '30-v1', part: route.feature === 'homework' && route.homeworkVersion === '30-v1' ? route.part : undefined }) : feature === route.feature ? route : normalizeRoute({ feature, lesson: route.lesson }));
+      if (navigationGroup(route.feature).id === anchor.dataset.navGroup) anchor.setAttribute('aria-current', 'page'); else anchor.removeAttribute('aria-current');
     });
     const navigation = root.querySelector<HTMLElement>('#feature-nav')!;
     const active = navigation.querySelector<HTMLElement>('[aria-current="page"]');

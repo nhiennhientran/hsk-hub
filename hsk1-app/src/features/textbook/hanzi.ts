@@ -101,7 +101,12 @@ export function mountHanzi(host: HTMLElement, {chars, words = [], curriculum, si
   }
   const details = element('div');
   details.className = 'hanzi-details';
-  host.replaceChildren(intro, choices, details);
+  const bank = element('details'); bank.className = 'hanzi-bank'; bank.open = true;
+  bank.append(element('summary', copy.choices), choices);
+  const curriculumDetails = element('details'); curriculumDetails.className = 'hanzi-curriculum-details';
+  curriculumDetails.append(element('summary', copy.lessonNotes), intro);
+  host.replaceChildren(details, bank);
+  if (intro.childNodes.length) host.append(curriculumDetails);
   let active = characters[0] ?? '';
   let controller: AbortController | null = null;
   let writer: ManagedHanziWriter | null = null;
@@ -153,7 +158,7 @@ export function mountHanzi(host: HTMLElement, {chars, words = [], curriculum, si
     controller = new AbortController();
     if (signal.aborted || disposed) {controller.abort(); return;}
     for (const button of choices.querySelectorAll<HTMLButtonElement>('button')) button.setAttribute('aria-pressed', String(button.dataset.hanziChar === character));
-    const heading = element('h3', character);
+    const heading = element('h3', character); heading.tabIndex = -1;
     const count = element('p');
     count.dataset.hanziStrokeCount = '';
     const canvas = element('div');
@@ -183,7 +188,8 @@ export function mountHanzi(host: HTMLElement, {chars, words = [], curriculum, si
       if (disposed || signal.aborted || version !== generation) return;
       currentData = data;
       setBilingual(count, copy.count(data.strokes.length));
-      details.append(element('h4', copy.strokes), strokeGallery(character, data));
+      const strokes = element('details'); strokes.className = 'hanzi-stroke-details';
+      strokes.append(element('summary', copy.strokes), strokeGallery(character, data)); details.append(strokes);
       await createWriter(data, version);
       if (version === generation) updateMode('display', copy.ready);
     } catch (error) {
@@ -221,7 +227,10 @@ export function mountHanzi(host: HTMLElement, {chars, words = [], curriculum, si
   function handleClick(event: MouseEvent) {
     const button = (event.target as Element).closest<HTMLButtonElement>('button');
     if (!button || !host.contains(button) || button.disabled) return;
-    if (button.dataset.hanziChar && button.dataset.hanziChar !== active) void showCharacter(button.dataset.hanziChar);
+    if (button.dataset.hanziChar && button.dataset.hanziChar !== active) {
+      const chosen = button.dataset.hanziChar;
+      void showCharacter(chosen).then(() => { if (!disposed && active === chosen) details.querySelector<HTMLElement>('h3')?.focus(); });
+    }
     if (button.dataset.hanziAction) void performAction(button.dataset.hanziAction).catch(() => {if (!disposed) updateMode('error', copy.openError);});
   }
 

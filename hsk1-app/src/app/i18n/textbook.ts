@@ -8,6 +8,8 @@ const pair = (zh: string, vi: string): BilingualCopy => ({ zh, vi });
 /** Interface copy only: never transforms curriculum text, answer options or saved data. */
 export const textbookCopy = {
   title: pair('教材', 'Giáo trình'),
+  lessonContext: (lesson: number) => pair(`第 ${lesson} 课`, `Bài ${lesson}`),
+  practiceHub: pair('更多练习与复习', 'Luyện tập và ôn thêm'),
   missingLesson: pair('未找到本课内容，请重新选择课程。', 'Không tìm thấy bài học. Hãy chọn lại bài.'),
   servicesUnavailable: pair('学习服务暂不可用，请刷新后重试。', 'Chưa mở được dịch vụ học tập. Hãy tải lại trang.'),
   loading: (lesson: number) => pair(`第 ${lesson} 课 · 正在加载…`, `Bài ${lesson} · Đang tải thông tin…`),
@@ -67,6 +69,7 @@ export const textbookCopy = {
     details: pair('错误详情', 'Chi tiết lỗi'),
   },
   hanzi: {
+    lessonNotes: pair('本课汉字要点', 'Ghi chú chữ Hán của bài'),
     curriculum: {
       strokes: pair('笔画', 'Nét chữ'), order: pair('笔顺', 'Thứ tự nét'),
       structure: pair('字形结构', 'Kết cấu chữ'), radicals: pair('部首', 'Bộ thủ'),

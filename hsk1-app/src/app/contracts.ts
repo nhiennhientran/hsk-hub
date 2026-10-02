@@ -3,13 +3,16 @@ export type Feature = typeof FEATURES[number];
 export const SECTIONS = ['vocab', 'text', 'grammar', 'hanzi', 'practice'] as const;
 export type Section = typeof SECTIONS[number];
 export const PARTS = ['choice', 'sort', 'translation'] as const;
-export type Part = typeof PARTS[number];
+export type LegacyPart = typeof PARTS[number];
+export type Part = LegacyPart | 'listening' | 'translationChoice';
 
 export interface Route {
   readonly feature: Feature;
   readonly lesson: number;
   readonly section?: Section;
   readonly part?: Part;
+  /** Absent is a historical 15-question route. New student links explicitly use 30-v1. */
+  readonly homeworkVersion?: '30-v1' | 'legacy';
   readonly exerciseSet?: import('../domain/exercises/catalogue.ts').ExerciseSet;
   readonly exerciseGroup?: import('../domain/exercises/catalogue.ts').ExerciseGroup;
   readonly exerciseFilter?: import('../domain/exercises/catalogue.ts').ExerciseFilter;

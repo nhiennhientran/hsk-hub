@@ -2,17 +2,18 @@ import type { BilingualCopy } from '../bilingual.ts';
 import type { AudioStatus, PlaybackResult } from '../../services/audio/index.ts';
 const copy = (zh: string, vi: string): BilingualCopy => ({ zh, vi });
 const percent = (right: number, total: number, language: 'zh' | 'vi') => total ? `${Math.round(right / total * 100)}%` : language === 'zh' ? '暂无成绩' : 'chưa có điểm';
+const lessonScope = (lessons: readonly number[]): string => lessons.length > 2 && lessons.every((lesson, index) => !index || lesson === lessons[index - 1] + 1) ? `${lessons[0]}–${lessons.at(-1)}` : lessons.join(', ');
 export const listeningCopy = {
   title: copy('听力练习', 'Luyện nghe'), controls: copy('我的听力练习', 'Luyện nghe của bạn'),
-  introduction: copy('听教材中的中文录音，选择合适的越南语含义，逐题提交。', 'Nghe tiếng Trung từ bản ghi giáo trình, chọn nghĩa phù hợp bằng tiếng Việt rồi nộp từng câu.'),
-  start: copy('开始新一轮', 'Bắt đầu lượt mới'), settings: copy('选择本轮题目', 'Chọn câu cho lượt mới'), lessons: copy('选择一课或多课', 'Chọn một hoặc nhiều bài học'),
+  introduction: copy('75道自主听力练习，不计入课后作业。', '75 câu luyện nghe tự chọn, không tính vào bài tập được giao.'),
+  start: copy('开始新一轮', 'Bắt đầu lượt mới'), settings: copy('下一轮设置', 'Cài đặt lượt tiếp theo'), lessons: copy('选择一课或多课', 'Chọn một hoặc nhiều bài học'),
   lesson: (number: number) => copy(`第 ${number} 课`, `Bài ${number}`), all: copy('全选', 'Chọn tất cả'), none: copy('清空选择', 'Bỏ chọn tất cả'),
   currentLesson: (number: number) => copy(`选择当前第 ${number} 课`, `Chọn bài đang mở · Bài ${number}`),
   mode: copy('练习范围', 'Câu cần luyện'), allQuestions: copy('全部题目', 'Tất cả câu'), wrongQuestions: copy('最近答错的题', 'Câu gần nhất còn sai'),
   shuffle: copy('打乱题序', 'Trộn thứ tự câu hỏi'), count: copy('每轮题数', 'Số câu mỗi lượt'), questionCount: (count: number) => copy(`${count} 题`, `${count} câu`),
   resume: (position?: number) => copy(`继续已保存的练习${position ? ` · 第 ${position} 题` : ''}`, `Tiếp tục lượt đã lưu${position ? ` · Câu ${position}` : ''}`),
   redo: copy('重做错题', 'Làm lại câu còn sai'),
-  replaceHint: copy('选择范围后开始，新一轮将替换当前练习；首次和最近的成绩仍保留。', 'Chọn phạm vi mới rồi bấm bắt đầu. Lượt đang học sẽ được thay bằng lượt mới; điểm lần đầu và gần nhất vẫn được giữ.'),
+  replaceHint: copy('修改设置不影响当前轮次。点击开始才会替换，首次和最近成绩保留。', 'Đổi cài đặt không thay lượt đang học. Chỉ bấm bắt đầu mới thay lượt; điểm lần đầu và gần nhất vẫn giữ.'),
   retrySave: copy('重试保存', 'Thử lưu lại'), data: copy('数据与备份管理', 'Quản lý dữ liệu và bản sao lưu'), results: copy('听力成绩', 'Kết quả nghe'),
   playerTitle: copy('教材原声', 'Âm thanh giáo trình'), play: copy('播放', 'Nghe'), pause: copy('暂停', 'Tạm dừng'), continue: copy('继续播放', 'Tiếp tục'), replay: copy('从头重听', 'Nghe lại từ đầu'), rate: copy('播放速度', 'Tốc độ'), normal: copy('正常', 'Bình thường'),
   playerHint: copy('可以重复播放并调整速度，播放次数不影响得分。', 'Bạn có thể nghe nhiều lần và đổi tốc độ. Số lần nghe không làm giảm điểm.'),
@@ -27,7 +28,7 @@ export const listeningCopy = {
   available: (selected: number, available: number) => copy(`已选范围共 ${available} 题，本轮练习 ${selected} 题。`, `${selected} / ${available} câu trong phạm vi đã chọn cho lượt mới.`),
   noWrong: copy('所选范围内没有仍答错的题，可选择全部题目继续练习。', 'Không có câu còn sai trong phạm vi đã chọn. Bạn có thể chọn tất cả câu để luyện thêm.'),
   position: (position: number, total: number) => copy(`第 ${position} / ${total} 题`, `Câu ${position} / ${total}`),
-  scope: (lessons: readonly number[], mode: 'all' | 'wrong', count: number) => copy(`当前练习：第 ${lessons.join(', ')} 课 · ${mode === 'wrong' ? '重做错题' : '全部题目'} · ${count} 题`, `Lượt đang học: Bài ${lessons.join(', ')} · ${mode === 'wrong' ? 'Làm lại câu còn sai' : 'Tất cả câu'} · ${count} câu`),
+  scope: (lessons: readonly number[], mode: 'all' | 'wrong', count: number) => copy(`当前练习：第 ${lessonScope(lessons)} 课 · ${mode === 'wrong' ? '重做错题' : '全部题目'} · ${count} 题`, `Lượt đang học: Bài ${lessonScope(lessons)} · ${mode === 'wrong' ? 'Làm lại câu còn sai' : 'Tất cả câu'} · ${count} câu`),
   listens: (count: number) => copy(`已开始播放 ${count} 次`, `Số lần đã bắt đầu nghe: ${count}`),
   sessionScore: (answered: number, total: number, correct: number) => copy(`本轮：已提交 ${answered} / ${total} 题 · 答对 ${correct} / ${answered} 题（${percent(correct, answered, 'zh')}）。`, `Lượt này: đã nộp ${answered} / ${total} câu · Đúng ${correct} / ${answered} câu đã nộp (${percent(correct, answered, 'vi')}).`),
   firstScore: (correct: number, answered: number, total: number) => copy(`首次：答对 ${correct} / ${answered} 题（${percent(correct, answered, 'zh')}）· 已提交 ${answered} / ${total} 题。`, `Lần đầu: đúng ${correct} / ${answered} câu đã nộp (${percent(correct, answered, 'vi')}) · Đã nộp ${answered} / ${total} câu.`),

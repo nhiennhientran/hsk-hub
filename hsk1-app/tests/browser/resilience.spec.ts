@@ -1,3 +1,4 @@
+import { revealControl } from './ui-actions.ts';
 import { blankExercisesState } from '../../src/domain/exercises/engine.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect, type Page } from '@playwright/test';
@@ -50,7 +51,7 @@ test('denied localStorage reads preserve the inaccessible original and keep a ne
   await expect(page.locator(`input[data-answer-id="${question.id}"][value="0"]`)).toBeChecked();
   await expect(page.locator('#homework-save-status')).toHaveAttribute('data-state', 'unavailable');
   await page.locator('#feature-nav a[data-feature="progress"]').click(); await ready(page, 'progress');
-  await page.locator('#open-data-manager').click();
+  await revealControl(page, '#open-data-manager'); await page.locator('#open-data-manager').click();
   await expect(page.locator('#data-status')).toHaveAttribute('data-state', 'unavailable');
   expect((await download(page, '#export-backup')).data).toEqual(backup.data);
   await page.evaluate(() => { (window as unknown as { __denyReads: boolean }).__denyReads = false; });

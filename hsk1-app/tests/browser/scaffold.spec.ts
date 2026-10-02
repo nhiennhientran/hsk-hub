@@ -27,9 +27,10 @@ async function expectReady(page: Page, feature: string, lesson: number): Promise
   if (feature === 'homework') await expect(host.locator('#submit-homework')).toBeEnabled();
   else if (feature === 'textbook') await expect(host.locator('#reading-complete')).toBeEnabled();
   else if (feature === 'listening') await expect(host.locator('#listening-start')).toBeEnabled();
-  else if (feature === 'vocabulary' || feature === 'review') await expect(host.locator('#vocabulary-start')).toBeEnabled();
+  else if (feature === 'vocabulary') await expect(host.locator('#vocabulary-start')).toBeEnabled();
+  else if (feature === 'review') await expect(host.locator('#review-vocabulary')).toBeVisible();
   else if (feature === 'progress') await expect(host.locator('#open-data-manager')).toBeEnabled();
-  else if (feature === 'exercises') await expect(host.locator('#exercise-submit')).toBeEnabled();
+  else if (feature === 'exercises') await expect(host.locator('#exercise-submit')).toHaveCount(0);
   else {
     await expect(host.locator('#home-module .lesson-card')).toHaveCount(15);
     await expect(host.locator('.home-progress-details summary')).toBeVisible();
@@ -119,11 +120,11 @@ for (const mode of ['unavailable', 'throws', 'rejects'] as const) {
   });
 }
 
-test('all seven module entries and all fifteen lesson choices remain reachable with interactive textbook, homework, listening, vocabulary, review and progress', async ({ page }) => {
+test('four task groups, legacy routes and fifteen lessons remain reachable without extra assigned exercises', async ({ page }) => {
   await useExistingTabSession(page);
   await page.goto('/');
   await expectReady(page, 'home', 1);
-  await expect(page.locator('#feature-nav a[data-feature]')).toHaveCount(features.length);
+  await expect(page.locator('#feature-nav a[data-feature]')).toHaveCount(4);
   await expect(page.locator('#lesson-select option')).toHaveCount(15);
   await expect(page.locator('#module-host .lesson-card[data-lesson]')).toHaveCount(15);
   for (let lesson = 1; lesson <= 15; lesson++) {
@@ -134,14 +135,16 @@ test('all seven module entries and all fifteen lesson choices remain reachable w
     }
   }
   for (const feature of features) {
-    await page.locator(`#feature-nav a[data-feature="${feature}"]`).click();
+    await page.evaluate(feature => { location.hash = `#/${feature}?lesson=1`; }, feature);
     await expectReady(page, feature, 1);
     if (feature === 'homework') await expect(page.locator('#module-host [data-question-id]')).toHaveCount(5);
     else if (feature === 'listening') await expect(page.locator('#listening-settings [data-listening-lesson]')).toHaveCount(15);
-    else if (feature === 'vocabulary' || feature === 'review') await expect(page.locator('[data-vocabulary-lesson]')).toHaveCount(15);
+    else if (feature === 'vocabulary') await expect(page.locator('[data-vocabulary-lesson]')).toHaveCount(15);
+    else if (feature === 'review') await expect(page.locator('#review-module a')).toHaveCount(3);
     else if (feature === 'progress') await expect(page.locator('#module-host')).not.toContainText('chưa mở để làm bài');
   }
-  await page.locator('#feature-nav a[data-feature="textbook"]').click();
+  await page.evaluate(() => { location.hash = '#/textbook?lesson=1&section=vocab'; });
+  await expectReady(page, 'textbook', 1);
   for (let lesson = 1; lesson <= 15; lesson++) {
     await page.locator('#lesson-select').selectOption(String(lesson));
     await expectReady(page, 'textbook', lesson);
@@ -189,7 +192,7 @@ test('repeated mounts keep one home view and route listener and load only ESM wi
   await page.goto('/');
   await expectReady(page, 'home', 1);
   for (const feature of [...features, ...features]) {
-    await page.locator(`#feature-nav a[data-feature="${feature}"]`).click();
+    await page.evaluate(feature => { location.hash = `#/${feature}?lesson=1`; }, feature);
     await expectReady(page, feature, 1);
   }
   await page.locator('#feature-nav a[data-feature="home"]').click();
@@ -199,7 +202,7 @@ test('repeated mounts keep one home view and route listener and load only ESM wi
   await expect(page.locator('.lesson-card')).toHaveCount(15);
   await expect(page.locator('[data-module-action="preview"], #entry-details')).toHaveCount(0);
   const before = await page.evaluate(() => history.length);
-  await page.locator('.lesson-card[data-lesson="10"] [data-lesson-section="vocab"]').click();
+  await page.locator('.lesson-card[data-lesson="10"] h2 a').click();
   await expectReady(page, 'textbook', 10);
   expect(await page.evaluate(() => history.length)).toBe(before + 1);
   const runtime = await page.evaluate(() => ({

@@ -81,6 +81,7 @@ test('real nonempty old records retain reading, first/latest, submitted translat
   assert.deepEqual(compatibility.summary(state), {
     readingVisited: 2, readingCompleted: 1, masteredWords: 2, homeworkSubmitted: 30,
     automaticSubmitted: 20, automaticFirstCorrect: 0, automaticLatestCorrect: 20, manualSubmitted: 10,
+    homework30Submitted: 0, homework30FirstCorrect: 0, homework30LatestCorrect: 0, homework30ManualSubmitted: 0,
     listeningSubmitted: 1, listeningFirstCorrect: 0, listeningLatestCorrect: 1, scheduledSenses: 3, legacySources: 9, exerciseSubmitted: 0, exerciseDrafts: 0,
   });
 });

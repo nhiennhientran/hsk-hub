@@ -16,11 +16,12 @@ export const mount: FeatureModule['mount'] = (host, context) => {
   const status = element('p'); status.id = 'progress-save-status'; status.className = 'progress-save-status'; status.setAttribute('role', 'status');
   const overview = element('div'); overview.id = 'progress-overview'; overview.className = 'progress-overview';
   const lessonProgress = element('section'); lessonProgress.id = 'progress-lessons';
-  const controls = element('div');
+  const controls = element('div'); controls.className = 'data-manager-controls';
   const managerHost = element('div'); managerHost.id = 'data-manager-host';
   const open = element('button', C.backups); open.id = 'open-data-manager'; open.type = 'button'; open.disabled = true;
+  const close = element('button', { zh: '返回学习进度', vi: 'Trở lại tiến độ học' }); close.type = 'button'; close.id = 'close-data-manager'; close.className = 'data-manager-close'; close.hidden = true;
   const message = element('p'); message.setAttribute('role', 'status');
-  controls.append(open, message); article.append(continuation, status, overview, controls, managerHost, lessonProgress); host.append(article);
+  controls.append(open, close, message); article.append(continuation, status, overview, controls, managerHost, lessonProgress); host.append(article);
   const controller = new AbortController();
   let left = false, unsubscribe = () => {};
   let panel: { dispose(): void } | undefined;
@@ -39,6 +40,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       status.dataset.state = snapshot.status;
       status.textContent = storageStatusText(snapshot.status, snapshot.issue);
       renderContinuation(continuation, model.resume, 'progress-resume-link');
+      if (!close.hidden) continuation.hidden = true;
       renderProgressOverview(overview, model);
       renderLessonProgress(lessonProgress, model);
       dueRefresh?.schedule(model.vocabulary.nextDueAt);
@@ -47,7 +49,8 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     unsubscribe = session.store.subscribe(render); render();
     open.disabled = false;
     open.addEventListener('click', async () => {
-      if (left || controller.signal.aborted || panel || open.disabled) return;
+      if (left || controller.signal.aborted || open.disabled) return;
+      if (panel) { overview.hidden = true; lessonProgress.hidden = true; continuation.hidden = true; managerHost.hidden = false; open.hidden = true; close.hidden = false; close.focus(); return; }
       open.disabled = true; setBilingual(message, C.openingData);
       try {
         const feature = await import('./data-panel.ts');
@@ -55,12 +58,13 @@ export const mount: FeatureModule['mount'] = (host, context) => {
         if (!context.learning) throw new Error('Learning session is missing.');
         panel = await feature.mountDataPanel(managerHost, controller.signal, context.learning);
         if (left || controller.signal.aborted) { panel.dispose(); return; }
-        message.textContent = ''; open.hidden = true;
+        message.textContent = ''; open.hidden = true; open.disabled = false; close.hidden = false; overview.hidden = true; lessonProgress.hidden = true; continuation.hidden = true; managerHost.hidden = false; close.focus();
       } catch {
         if (left || controller.signal.aborted) return;
         setBilingual(message, C.dataError); open.disabled = false;
       }
     }, { signal: controller.signal });
+    close.addEventListener('click', () => { managerHost.hidden = true; overview.hidden = false; lessonProgress.hidden = false; open.hidden = false; close.hidden = true; render(); open.focus(); }, { signal: controller.signal });
   });
   return {
     ready,

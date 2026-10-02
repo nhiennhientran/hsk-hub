@@ -1,3 +1,5 @@
+import { mountHomework30 } from './index30.ts';
+import type { HomeworkPart } from '../../services/content/homework.ts';
 import type { FeatureModule } from '../../app/contracts.ts';
 import { PARTS } from '../../app/contracts.ts';
 import { bilingualText, setBilingual, type BilingualCopy } from '../../app/bilingual.ts';
@@ -20,6 +22,10 @@ function element<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string | 
 const localTime = (stamp: number) => new Date(stamp).toLocaleString('vi-VN');
 
 export const mount: FeatureModule['mount'] = (host, context) => {
+  if (context.route.homeworkVersion === '30-v1') return mountHomework30(host, context);
+  return mountLegacy(host, context);
+};
+const mountLegacy: FeatureModule['mount'] = (host, context) => {
   const article = element('article'); article.id = 'homework-module'; article.className = 'module-entry homework';
   const heading = element('h1', copy.title); heading.tabIndex = -1;
   const lessonName = element('p', copy.loading(context.route.lesson));
@@ -28,7 +34,9 @@ export const mount: FeatureModule['mount'] = (host, context) => {
   controls.append(element('legend', copy.controls));
   const body = element('div'); body.className = 'homework-body';
   const loadingSubmit = element('button', copy.submit); loadingSubmit.id = 'submit-homework'; loadingSubmit.type = 'button'; loadingSubmit.disabled = true; body.append(loadingSubmit); controls.append(body);
-  article.append(heading, lessonName, nav, controls); host.append(article);
+  const version = element('p', { zh: '旧版15题作业与提交记录', vi: 'Bài tập cũ 15 câu và lịch sử bài nộp' });
+  const current = element('a', { zh: '打开新版30题作业', vi: 'Mở bài tập mới 30 câu' }); current.href = routeHref({ feature: 'homework', lesson: context.route.lesson, part: 'choice', homeworkVersion: '30-v1' }); current.dataset.routeLink = '';
+  article.append(heading, version, current, lessonName, nav, controls); host.append(article);
   const lifetime = new AbortController();
   const close = () => lifetime.abort();
   context.signal.addEventListener('abort', close, { once: true });
@@ -48,7 +56,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const [session, bank] = await Promise.all([context.learning(), loadHomeworkBank(lifetime.signal)]);
     if (left || lifetime.signal.aborted) return;
     flush = () => { void session.flush(); };
-    const part = context.route.part ?? 'choice';
+    const part = (context.route.part ?? 'choice') as HomeworkPart;
     const homework = createHomeworkController({ store: session.store, bank, lesson: lesson.id, part, onChange: session.requestSave });
     setBilingual(lessonName, copy.lesson(lesson.id, lesson.title, lesson.titleVi));
     const profile = element('div'); profile.className = 'homework-profile';
@@ -140,7 +148,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       const model = homework.read();
       receipt?.dispose(); body.hidden = true; controls.hidden = true;
       receipt = createReceipt(article, { lesson: lesson.id, lessonTitle: lesson.title, part, questions: model.questions,
-        profile: model.profile, first: model.group?.first ?? null, latest: model.group?.latest ?? null, selected,
+        homeworkVersion: 'legacy', profile: model.profile, first: model.group?.first ?? null, latest: model.group?.latest ?? null, selected,
         onClose() { receipt?.dispose(); receipt = undefined; body.hidden = false; controls.hidden = false; article.querySelector<HTMLButtonElement>(selected === 'first' ? '#receipt-first' : '#receipt-latest')?.focus(); } });
     }
     function feedback(question: HomeworkQuestion, card: HTMLElement): void {

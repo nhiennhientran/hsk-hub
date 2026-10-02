@@ -1,3 +1,4 @@
+import { summarizeHomework30 } from './homework30-progress.ts';
 import { blankExercisesState, exerciseQueue, exerciseTotals } from '../../domain/exercises/engine.ts';
 import type { ExerciseCatalogue } from '../../domain/exercises/catalogue.ts';
 import homework from '../../domain/homework/engine.js';
@@ -29,7 +30,7 @@ export function progressResume(data: AppData, catalog: ListeningCatalog): Progre
   } else if (route.feature === 'vocabulary' || route.feature === 'review') {
     const round = data.practice.cards.review as unknown as SavedReview | null;
     const card = round && catalog.vocabulary.find(item => item.senseId === round.senseIds[round.position] && round.lessons.includes(item.lesson));
-    if (card && round) { route = { feature: route.feature, lesson: card.lesson }; suffix = `Bài ${card.lesson} · Thẻ ${round.position + 1}/${round.senseIds.length}`; chinesePosition = ` · 第${round.position + 1}/${round.senseIds.length}张`; }
+    if (card && round) { route = { feature: 'vocabulary', lesson: card.lesson }; suffix = `Bài ${card.lesson} · Thẻ ${round.position + 1}/${round.senseIds.length}`; chinesePosition = ` · 第${round.position + 1}/${round.senseIds.length}张`; }
   } else if (route.feature === 'textbook') suffix += ` · ${sectionChinese[route.section ?? 'vocab']} · ${sectionLabels[route.section ?? 'vocab']}`;
   else if (route.feature === 'homework') suffix += ` · ${partChinese[route.part ?? 'choice']} · ${partLabels[route.part ?? 'choice']}`;
   return { label: `继续${featureChinese[route.feature]} · 第${route.lesson}课${chinesePosition} · Tiếp tục ${featureLabels[route.feature].toLocaleLowerCase('vi')} · ${suffix}`, route };
@@ -94,6 +95,7 @@ export function summarizeProgress(data: AppData, { bank, catalog, exercises }: P
     reviewDue: bank.reduce((total, lesson) => total + exerciseQueue(exercises, exerciseState, { set: 'homework-review', lesson: lesson.lesson, filter: 'due', homework: data.homework, now }).length, 0),
   } : null;
   return {
+    currentHomework: summarizeHomework30(data),
     extraExercises,
     reading: { total: bank.length, visited: lessons.filter(row => row.reading.visited).length,
       complete: lessons.filter(row => row.reading.complete).length,
@@ -108,7 +110,7 @@ export function summarizeProgress(data: AppData, { bank, catalog, exercises }: P
       label: `继续听力 · 第${listeningRound.position + 1}/${listeningRound.questionIds.length}题 · Tiếp tục lượt nghe · Câu ${listeningRound.position + 1}/${listeningRound.questionIds.length}`,
     } : null,
     vocabularyResume: reviewCard && review ? {
-      route: { feature: data.navigation?.feature === 'review' ? 'review' : 'vocabulary', lesson: reviewCard.lesson } as Route,
+      route: { feature: 'vocabulary', lesson: reviewCard.lesson } as Route,
       label: `继续词卡 · 第${review.position + 1}/${review.senseIds.length}张 · Tiếp tục lượt từ vựng · Thẻ ${review.position + 1}/${review.senseIds.length}`,
     } : null,
   };

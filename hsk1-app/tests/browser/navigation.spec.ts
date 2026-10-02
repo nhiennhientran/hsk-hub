@@ -41,13 +41,13 @@ test('module changes preserve lesson and browser back, forward and refresh resto
   await useExistingTabSession(page);
   await page.goto('/#/textbook?lesson=10&section=text');
   await expectRoute(page, 'textbook', 10, '#/textbook?lesson=10&section=text');
-  await page.locator('#feature-nav a[data-feature="homework"]').click();
+  await page.evaluate(() => { location.hash = '#/homework?lesson=10&part=choice'; });
   await expectRoute(page, 'homework', 10, '#/homework?lesson=10&part=choice');
   await page.locator('#lesson-select').selectOption('15');
   await expectRoute(page, 'homework', 15, '#/homework?lesson=15&part=choice');
   await page.locator('#module-host a[href="#/homework?lesson=15&part=sort"]').click();
   await expectRoute(page, 'homework', 15, '#/homework?lesson=15&part=sort');
-  await page.locator('#feature-nav a[data-feature="vocabulary"]').click();
+  await page.evaluate(() => { location.hash = '#/vocabulary?lesson=15'; });
   await expectRoute(page, 'vocabulary', 15, '#/vocabulary?lesson=15');
   await page.goBack();
   await expectRoute(page, 'homework', 15, '#/homework?lesson=15&part=sort');
@@ -100,14 +100,14 @@ test('pending controls ignore early clicks and rapid switching aborts old fetche
   await expect(host.locator('#home-course-status')).toContainText('Đang tải');
   await expect(host.locator('.lesson-card')).toHaveCount(0);
   await expect(host.locator('a[data-route-link]')).toHaveCount(0);
-  await page.locator('#feature-nav a[data-feature="listening"]').click();
+  await page.evaluate(() => { location.hash = '#/listening?lesson=10'; });
   await expect.poll(() => pending.length).toBe(2);
   await expect(host).toHaveAttribute('data-feature', 'listening');
   await expect(host.locator('#listening-start')).toBeDisabled();
   // Native disabled activation is a no-op; force-clicking would bypass the user contract.
   await host.locator('#listening-start').evaluate(button => (button as HTMLButtonElement).click());
   await expect(host.locator('#listening-question')).toHaveCount(0);
-  await page.locator('#feature-nav a[data-feature="homework"]').click();
+  await page.evaluate(() => { location.hash = '#/homework?lesson=10&part=choice'; });
   await expect.poll(() => pending.length).toBe(3);
   await expect(host).toHaveAttribute('data-feature', 'homework');
   await expect(host.locator('#submit-homework')).toBeDisabled();
@@ -181,7 +181,7 @@ test('five hundred clicks on the current module produce no history writes or rem
     history.pushState = function (...args) { pushes++; return originalPush.apply(this, args); };
     history.replaceState = function (...args) { replacements++; return originalReplace.apply(this, args); };
     try {
-      const anchor = document.querySelector<HTMLAnchorElement>('#feature-nav a[data-feature="textbook"]')!;
+      const anchor = document.querySelector<HTMLAnchorElement>('#textbook-module [data-section="text"]')!;
       for (let click = 0; click < 500; click++) anchor.click();
       return { pushes, replacements, before, after: { href: location.href, length: history.length } };
     } finally {

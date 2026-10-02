@@ -1,3 +1,4 @@
+import { navigateFeature, revealControl } from './ui-actions.ts';
 import { createHash } from 'node:crypto';
 import { readFile, readdir } from 'node:fs/promises';
 import { resolve } from 'node:path';
@@ -67,7 +68,7 @@ async function ready(page: Page, feature: string, lesson = 10, hash?: string): P
 }
 
 async function navigate(page: Page, feature: string): Promise<void> {
-  await page.locator(`#feature-nav [data-feature="${feature}"]`).click();
+  await navigateFeature(page, feature, 10);
   await ready(page, feature);
 }
 
@@ -317,6 +318,7 @@ test('production textbook, exact manual receipt, native listening and vocabulary
   await page.locator('#close-receipt').click();
 
   await navigate(page, 'listening');
+  await revealControl(page, '#listening-none');
   await page.locator('#listening-none').click();
   await page.locator('[data-listening-lesson="10"]').check();
   await page.locator('#listening-mode').selectOption('all');
@@ -334,6 +336,7 @@ test('production textbook, exact manual receipt, native listening and vocabulary
   expect(listening.records[question.id]!.latest.correct).toBe(true);
 
   await navigate(page, 'vocabulary');
+  await revealControl(page, '#vocabulary-none');
   await page.locator('#vocabulary-none').click();
   await page.locator('[data-vocabulary-lesson="10"]').check();
   await page.locator('#vocabulary-filter').selectOption('all');
