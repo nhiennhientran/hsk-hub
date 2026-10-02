@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "oldCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
   "baseCommit": "9bae5c173817d6b7f46e876ea144380d0627ab7d",
-  "releaseStatus": "preview-only; production approval required",
+  "releaseStatus": "published after user preview approval; live dual-engine verification passed",
   "counts": {
     "oldQuestionEntries": 480,
     "oldTextbookEntries": 150,
@@ -41,7 +41,7 @@
       "tests": [
         "browser/legacy-preview.spec.ts"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "fifteen-lessons-five-direct-sections",
@@ -49,7 +49,7 @@
       "tests": [
         "browser/legacy-preview.spec.ts"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "free-card-navigation-and-skip",
@@ -58,7 +58,7 @@
         "vocabulary.test.mjs",
         "browser/vocabulary.spec.ts"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "mixed-hanzi-vietnamese-pinyin-search",
@@ -67,7 +67,7 @@
         "vocabulary.test.mjs",
         "browser/vocabulary-search.spec.ts"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "current-textbook-vocabulary-examples",
@@ -76,7 +76,7 @@
         "vocabulary-content.test.mjs",
         "browser/vocabulary-search.spec.ts"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "listening-five-ten-all",
@@ -85,7 +85,7 @@
         "listening.test.mjs",
         "browser/legacy-preview.spec.ts"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "tongue-twister-original-text-pinyin",
@@ -93,7 +93,7 @@
       "tests": [
         "browser/legacy-preview.spec.ts"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "original-three-hundred-exercises",
@@ -102,7 +102,7 @@
         "legacy-content.test.mjs",
         "exercises.test.mjs"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "pilot-thirty-plus-separate-speaking",
@@ -111,7 +111,7 @@
         "legacy-content.test.mjs",
         "exercises.test.mjs"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "translation-choice-and-manual-separated",
@@ -121,7 +121,7 @@
         "exercises.test.mjs",
         "homework.test.mjs"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "question-level-wrong-due-review",
@@ -129,7 +129,7 @@
       "tests": [
         "exercises.test.mjs"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "legacy-source-discovery-and-safe-migration",
@@ -138,7 +138,7 @@
         "compatibility.test.mjs",
         "browser/storage.spec.ts"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "per-lesson-module-all-reset-confirmation",
@@ -147,7 +147,7 @@
         "reset.test.mjs",
         "browser/storage.spec.ts"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "unchanged-auth-and-original-audio",
@@ -157,7 +157,7 @@
         "audio.test.mjs",
         "browser/release.spec.ts"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     },
     {
       "id": "full-hsk1-bilingual-interfaces",
@@ -170,7 +170,7 @@
         "browser/exercises-bilingual.spec.ts",
         "browser/data-bilingual.spec.ts"
       ],
-      "status": "verified-preview-awaiting-user-production-approval"
+      "status": "published-and-live-verified"
     }
   ],
   "questions": [
@@ -9493,12 +9493,16 @@
       "browserPassed": 130,
       "releasePassed": 3
     },
-    "productionDeployed": false,
+    "productionDeployed": true,
     "limits": [
       "physical devices and system IMEs not run",
       "fresh human per-question listening not run",
       "new complete teacher linguistic review not run",
       "real installed-device TTS quality not run"
-    ]
+    ],
+    "productionCommit": "f7127ccd656f9ce49ebb05673625ecd991e26403",
+    "liveWorkflowRun": 36988536520,
+    "livePassedPerEngine": 4,
+    "recoveryCommit": "f7d87df013d38613c11326088f27dff26532cc90"
   }
 }

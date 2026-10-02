@@ -1,6 +1,6 @@
 # HSK1 legacy restoration and bilingual preview acceptance
 
-Status: independent preview; production replacement requires the user's approval of the actual pages.
+Status: the user approved the actual preview; the exact artifact is now published and live-verified. See [production acceptance](legacy-restoration-production.md).
 
 ## Candidate identity
 
@@ -55,6 +55,6 @@ Actual Chromium and WebKit screenshots cover desktop 1440 and mobile 390: home, 
 
 NOT RUN: physical iPhone/Android and their system IMEs; fresh human listening to every recording; complete new teacher linguistic review; installed-device TTS voice quality. Browser/asset/automated composition tests do not substitute for those checks. Force-closing a browser, power loss or explicitly leaving with unsaved changes can still lose an unsaved draft.
 
-Production `gh-pages` was independently rechecked at `f7d87df013d38613c11326088f27dff26532cc90`, unchanged.
+Before publication, production `gh-pages` was independently rechecked at `f7d87df013d38613c11326088f27dff26532cc90` and retained as the recovery point.
 
-The preview package listens only on 127.0.0.1 and stores separate-origin test data. No new public website, production branch, live learner records or production deployment has been changed. Publication remains pending explicit approval after actual preview review.
+The preview package listens only on 127.0.0.1 and stores separate-origin test data. After explicit preview approval, only the existing HSK1 course output was published as `f7127ccd656f9ce49ebb05673625ecd991e26403`. The original URL passed live verification; no learner profile or other course was changed.

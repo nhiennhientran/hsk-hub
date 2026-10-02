@@ -2,7 +2,7 @@
 
 Ứng dụng hỗ trợ học giáo trình, làm bài, luyện nghe và tự ôn từ trên thiết bị của học viên. Không có bảng quản trị giáo viên, tài khoản học viên, hộp nhận bài trên máy chủ hoặc chấm bài dịch bằng AI. Giáo viên nhận bài qua ảnh/PDF do học viên tự gửi và phản hồi qua kênh của lớp.
 
-Giao diện ứng dụng dùng nhãn/hướng dẫn/thông báo tiếng Trung và tiếng Việt; nội dung giáo trình, đề bài và bài viết của học viên không bị dịch lại. Hộp thoại tệp/in/cảnh báo rời trang theo trình duyệt và ngôn ngữ thiết bị. Các chức năng khôi phục dưới đây thuộc bản xem trước; tình trạng nghiệm thu hiện tại theo [nghiệm thu khôi phục](legacy-restoration-acceptance.md), không suy ra đã phát hành từ hướng dẫn này.
+Giao diện ứng dụng dùng nhãn/hướng dẫn/thông báo tiếng Trung và tiếng Việt; nội dung giáo trình, đề bài và bài viết của học viên không bị dịch lại. Hộp thoại tệp/in/cảnh báo rời trang theo trình duyệt và ngôn ngữ thiết bị. Các chức năng khôi phục đã được phát hành sau khi xác nhận bản xem trước; phạm vi và giới hạn kiểm thử theo [nghiệm thu khôi phục](legacy-restoration-acceptance.md) và [kiểm tra trang chính thức](legacy-restoration-production.md).
 
 ## Giao bài rõ phần và phiên bản cần nhận
 

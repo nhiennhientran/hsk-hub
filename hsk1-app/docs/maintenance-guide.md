@@ -1,6 +1,6 @@
 # HSK 1 发布后维护指南
 
-本指南面向维护仓库的开发者，说明在哪里修改、如何验证，以及哪些修改会影响学生现有记录。学生操作见 [student-guide.md](student-guide.md)，教师收据与成绩口径见 [teacher-guide.md](teacher-guide.md)。示例是后续维护步骤，不是本次变更清单。下述恢复功能属于预览候选，不能据此宣称已通过最终浏览器验收或已正式发布；当前证据以 [legacy-restoration-acceptance.md](legacy-restoration-acceptance.md) 为准。
+本指南面向维护仓库的开发者，说明在哪里修改、如何验证，以及哪些修改会影响学生现有记录。学生操作见 [student-guide.md](student-guide.md)，教师收据与成绩口径见 [teacher-guide.md](teacher-guide.md)。示例是后续维护步骤，不是本次变更清单。恢复功能已获预览确认并发布。受测范围见 [legacy-restoration-acceptance.md](legacy-restoration-acceptance.md)，实际生产提交、线上核验及恢复点见 [legacy-restoration-production.md](legacy-restoration-production.md)。
 
 ## 工作目录与边界
 

@@ -2,7 +2,7 @@
 
 Ứng dụng gồm 15 bài học, bài tập, luyện nghe và thẻ từ vựng. Bạn có thể chọn bất kỳ bài nào. Bài làm được giữ trong trình duyệt trên thiết bị đang dùng; ứng dụng không tự gửi bài cho giáo viên và không đồng bộ giữa các thiết bị.
 
-Hướng dẫn này cũng mô tả các chức năng khôi phục trong bản xem trước. Việc có chức năng không đồng nghĩa đã nghiệm thu hay phát hành chính thức; tình trạng kiểm thử được ghi tại [nghiệm thu khôi phục](legacy-restoration-acceptance.md).
+Các chức năng khôi phục đã được phát hành sau khi xác nhận bản xem trước. Phạm vi và giới hạn kiểm thử được ghi tại [nghiệm thu khôi phục](legacy-restoration-acceptance.md) và [kiểm tra trang chính thức](legacy-restoration-production.md).
 
 Giao diện của ứng dụng hiển thị cả tiếng Trung và tiếng Việt, gồm điều hướng, nút, hướng dẫn, kết quả và thông báo lưu/sao lưu. Nội dung giáo trình, câu hỏi và bài học viên viết giữ nguyên ngôn ngữ của chúng. Hộp thoại chọn tệp, in và cảnh báo rời trang do trình duyệt/thiết bị quản lý nên có thể dùng ngôn ngữ của thiết bị.
 

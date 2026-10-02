@@ -1,6 +1,6 @@
 # Vocabulary search and textbook examples (preview)
 
-Integrated final preview acceptance: [legacy-restoration-acceptance.md](legacy-restoration-acceptance.md). The local implementation checkpoints below are historical; final exact-head Chromium and WebKit verification is recorded in that acceptance note. Production remains unmodified pending user review.
+Integrated final preview acceptance: [legacy-restoration-acceptance.md](legacy-restoration-acceptance.md). The local implementation checkpoints below are historical; final exact-head Chromium and WebKit verification is recorded in that acceptance note. The user subsequently approved publication; exact artifact and live acceptance are recorded in [legacy-restoration-production.md](legacy-restoration-production.md).
 
 ## Behavior
 

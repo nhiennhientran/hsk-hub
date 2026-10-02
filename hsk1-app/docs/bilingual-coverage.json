@@ -12,7 +12,7 @@
       "browserTests": [
         "core-bilingual.spec.ts"
       ],
-      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
+      "status": "published with approved artifact; exact-head preview and live verification passed"
     },
     {
       "area": "textbook-vocabulary-mixed-review",
@@ -22,7 +22,7 @@
       "browserTests": [
         "bilingual-vocabulary.spec.ts"
       ],
-      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
+      "status": "published with approved artifact; exact-head preview and live verification passed"
     },
     {
       "area": "textbook-reading-hanzi-audio-practice",
@@ -32,7 +32,7 @@
       "browserTests": [
         "textbook-bilingual.spec.ts"
       ],
-      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
+      "status": "published with approved artifact; exact-head preview and live verification passed"
     },
     {
       "area": "homework-and-receipts",
@@ -42,7 +42,7 @@
       "browserTests": [
         "assignment-bilingual.spec.ts"
       ],
-      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
+      "status": "published with approved artifact; exact-head preview and live verification passed"
     },
     {
       "area": "listening",
@@ -52,7 +52,7 @@
       "browserTests": [
         "assignment-bilingual.spec.ts"
       ],
-      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
+      "status": "published with approved artifact; exact-head preview and live verification passed"
     },
     {
       "area": "restored-exercises-review-writing",
@@ -62,7 +62,7 @@
       "browserTests": [
         "exercises-bilingual.spec.ts"
       ],
-      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
+      "status": "published with approved artifact; exact-head preview and live verification passed"
     },
     {
       "area": "data-migration-reset-confirmations",
@@ -72,7 +72,7 @@
       "browserTests": [
         "data-bilingual.spec.ts"
       ],
-      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
+      "status": "published with approved artifact; exact-head preview and live verification passed"
     },
     {
       "area": "standalone-help",
@@ -82,7 +82,7 @@
       "browserTests": [
         "core-bilingual.spec.ts"
       ],
-      "status": "verified in exact-head Chromium and WebKit preview; user production approval pending"
+      "status": "published with approved artifact; exact-head preview and live verification passed"
     }
   ],
   "audit": {
@@ -95,6 +95,9 @@
     "workflowRun": 36985143506,
     "browserPassedPerEngine": 130,
     "releasePassedPerEngine": 3,
-    "visualReview": "actual 390px and 1440px screenshots in both engines; responsive interaction checks include 320/390/768/1104/1440px"
+    "visualReview": "actual 390px and 1440px screenshots in both engines; responsive interaction checks include 320/390/768/1104/1440px",
+    "productionCommit": "f7127ccd656f9ce49ebb05673625ecd991e26403",
+    "liveWorkflowRun": 36988536520,
+    "livePassedPerEngine": 4
   }
 }
