@@ -23,6 +23,9 @@ export function updatePortal(html){
   const next=old.replace(/href="[^"]*"/,`href="new-hsk${level}/hsk${level}/"`).replace(`标准教程 ${level}`,`新HSK教程 ${level} · 2026`).replace(/<div class="level-desc">[\s\S]*?<\/div>/,`<div class="level-desc">${count} bài theo ấn bản 2026, bài khóa song ngữ, âm thanh gốc, 30 câu bài tập mỗi bài và thẻ từ trộn nhiều bài.</div>`).replace(/<div class="level-stats">[\s\S]*?(?=<div class="enter-row">)/,`<div class="level-stats"><div class="level-stat"><b>${count}</b><span>BÀI HỌC</span></div><div class="level-stat"><b>${count*30}</b><span>BÀI TẬP</span></div><div class="level-stat"><b>原音</b><span>ÂM THANH GỐC</span></div></div>`);
   output=output.replace(old,next);
  }
+ const legacy='<section class="portal-note legacy-course-links" aria-label="旧版课程与记录 · Khóa học và dữ liệu bản cũ"><strong>旧版课程与记录 · Khóa học và dữ liệu bản cũ</strong><p>下方是2026新版之前的旧课程，旧成绩仍独立保留。<br>Đây là khóa học cũ trước bản 2026; điểm cũ được giữ riêng, không chuyển sang bản mới.</p><div style="display:flex;gap:12px;flex-wrap:wrap"><a style="display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border:1px solid #b5c7bb;border-radius:8px" href="hsk2.html">旧版 HSK 2 · 15课 / Bản cũ · 15 bài</a><a style="display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border:1px solid #b5c7bb;border-radius:8px" href="hsk3/index.html">旧版 HSK 3 · 20课 / Bản cũ · 20 bài</a></div><p>2026新版3级有18课，请使用上方主课程入口。<br>HSK 3 bản mới 2026 có 18 bài; hãy dùng thẻ khóa học chính ở phía trên.</p></section>';
+ if(!/<div class="portal-note">[\s\S]*?<\/div>/.test(output))throw Error('Missing original portal note');
+ output=output.replace(/(<div class="portal-note">[\s\S]*?<\/div>)/,'$1'+legacy);
  for(const card of protectedCards)if(!output.includes(card))throw Error('Protected course card changed');
  return output;
 }

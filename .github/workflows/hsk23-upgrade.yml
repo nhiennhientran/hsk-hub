@@ -54,6 +54,38 @@ jobs:
           cd release-site
           node ../../tools/site-qa.mjs > ../.repro-output/full-site-qa.json
           node qa/grammar-236-audit.mjs > ../.repro-output/protected-grammar-236.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run the unchanged production-branch legacy QA suite
+        working-directory: course-app/release-site
+        run: |
+          npm install --no-save --package-lock=false jsdom@26.1.0
+          while IFS= read -r -d '' file; do node --check "$file"; done < <(find . -type f -name '*.js' -not -path './.git/*' -print0)
+          for script in \
+            new-hsk1/hsk1/audio-architecture-check.cjs \
+            new-hsk1/hsk1/audio-architecture-runtime.cjs \
+            qa/vocab-front-pinyin-smoke.mjs \
+            qa/hotfix-runtime.mjs \
+            qa/session-hanzi-hotfix.mjs \
+            qa/site-shell-smoke.mjs \
+            qa/source-canonical-audit.mjs \
+            tools/site-qa.mjs \
+            tools/hsk12-content-audit.mjs \
+            tools/hsk12-textbook-locked-audit.mjs \
+            tools/hsk3-textbook-locked-audit.mjs \
+            tools/hsk4u-textbook-locked-audit.mjs \
+            qa/grammar-236-audit.mjs \
+            qa/hsk4-upper-grammar-ui.mjs \
+            qa/reviewed-practice-smoke.mjs \
+            qa/hsk4-vocab-hanzi-smoke.mjs
+          do
+            node "$script"
+          done
+          cp qa/*.json ../.repro-output/
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
       - name: Preserve HSK1 default storage contract
         run: npm ci --prefix hsk1-app && npm test --prefix hsk1-app && npm run build:release --prefix hsk1-app
       - uses: actions/upload-artifact@v4
@@ -65,6 +97,12 @@ jobs:
         with:
           name: hsk23-hsk1-media-regression
           path: hsk1-app/dist/
+          include-hidden-files: true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk23-production-regression
+          path: course-app/.repro-output/
           include-hidden-files: true
   browser:
     needs: freeze

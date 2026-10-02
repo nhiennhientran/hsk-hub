@@ -119,8 +119,8 @@ for(const file of htmlFiles){
 // Product-level invariants.
 const portal=read('index.html');
 ok(/hsk1\/index\.html/.test(portal),'Portal: HSK1 link missing');
-ok(exists('course-engine/release-manifest.json')?/new-hsk2\/hsk2\//.test(portal):/hsk2\.html/.test(portal),'Portal: HSK2 link missing');
-ok(exists('course-engine/release-manifest.json')?/new-hsk3\/hsk3\//.test(portal):/hsk3\/index\.html/.test(portal),'Portal: HSK3 link missing');
+ok(/hsk2\.html/.test(portal),'Portal: HSK2 link missing');
+ok(/hsk3\/index\.html/.test(portal),'Portal: HSK3 link missing');
 ok(/hsk4\/index\.html/.test(portal),'Portal: HSK4 Lower link missing');
 const sessionKey='hsk_portal_unlocked_v2';
 for(const file of ['assets/session-auth.js','hsk1/auth-patch.js','assets/app.js'])ok(read(file).includes(sessionKey),`${file}: session-only one-password key missing`);
