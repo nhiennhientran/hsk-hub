@@ -1,0 +1,11 @@
+# HSK3 lesson12 independent review
+
+Reviewer: implementation lead, separate from author. Independent AI source/language review, not native-speaker certification.
+
+- Inspected all eleven textbook pages PDF116–126 / printed104–114 and supplied answer PDF16–18. Verified four texts/23 lines,27 numbered headwords expanded into28 POS records, four grammar points/13 examples/12 tasks, the 不A不B tip, ten integrated fill-ins, all three picture dialogues, six classroom questions plus the continuation prompt, culture panel and all eleven grammar review rows.
+- Source negatives, subjects and blanks match the images. The consecutive B speaker labels in picture dialogue3 are actually printed that way and remain with a visible editorial note; no speculative correction. Added the printed 草地 cǎodì and 周末 zhōumò glosses. Culture video12-1 is identified but unavailable; no invented city names or substitute media.
+- Fixed a real structural omission in the review: the first two grammar rows were paragraphs and none of the eleven rows retained separate 理解/会用 checks. All eleven now have table semantics and both self-check labels; the final improvement prompt is not misclassified as a grammar row.
+- Replaced weak distractors with meaningful alternatives, varied the ordering permutations, introduced original sentences rather than reusing a printed example, and constrained the alternative-valid placement of the time/把 phrases. Nine audio comprehension items now have specific evidence explanations and source pages; independently added listening avoids repeating the printed questions.
+- Optional pinyin and Vietnamese checked, including 地方 dìfang, 下起来/住下来, 长跑 chángpǎo, 得de and tone changes in 一/不. Twenty-five automatic plus five manual homework and four separate listening items retained. Manual writing does not expose answers.
+- All eight original MP3 SHA256 values freshly match and full ffmpeg decodes pass. Complete ASRs compared, rejecting homophones such as 接/钢材/瓜/散/语一/鱼 against 街/刚才/刮/伞/雨衣/雨. This is auxiliary semantic evidence, not full human listening certification.
+- Pilot validator reports no lesson12 issue; author-owned unfinished lesson17 remains outside this checkpoint's acceptance.

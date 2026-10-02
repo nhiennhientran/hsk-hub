@@ -10,7 +10,7 @@ test('manual Chinese composition and submitted receipts preserve exact text and 
 test('homework choice submits a real score while legacy nonempty data is untouched',async({page})=>{await page.addInitScript(()=>{localStorage.setItem('hsk2_ranteacher_progress_v1','{"1":{"score":9}}');localStorage.setItem('hsk3_ranteacher_progress_v1','{"20":{"score":8}}');localStorage.setItem('ran_hsk1_modular_v1','{"sentinel":1}')});await login(page,'#view=homework&lesson=1&part=vocabGrammar');for(const q of lesson.homework.filter((q:any)=>q.part==='vocabGrammar'))await page.locator(`input[name="${q.id}"][value="${q.answer}"]`).check();await page.locator('#assignment button[type=submit]').click();await expect(page.locator('#receipt')).toContainText('10/10');const data=await page.evaluate(()=>({h2:localStorage.getItem('hsk2_ranteacher_progress_v1'),h3:localStorage.getItem('hsk3_ranteacher_progress_v1'),h1:localStorage.getItem('ran_hsk1_modular_v1')}));expect(data).toEqual({h2:'{"1":{"score":9}}',h3:'{"20":{"score":8}}',h1:'{"sentinel":1}'});await page.locator('nav.feature-nav a[data-view=progress]').click();await expect(page.locator('.data-panel').last()).toContainText('"score":9')});
 test('manual public payload contains no model answers or solution keys',async()=>{for(const q of lesson.homework.filter((q:any)=>q.part==='writing'))for(const key of ['answer','solution','modelAnswer','explanation','options','tokens'])expect(q).not.toHaveProperty(key)});
 
-for (const [level,number] of [...Array.from({length:15},(_,i)=>[2,i+1]),...Array.from({length:9},(_,i)=>[3,i+1]),[3,18]]) test(`reviewed HSK${level} lesson ${number} completes every homework part with isolated exact receipts`, async ({page}) => {
+for (const [level,number] of [...Array.from({length:15},(_,i)=>[2,i+1]),...Array.from({length:12},(_,i)=>[3,i+1]),[3,18]]) test(`reviewed HSK${level} lesson ${number} completes every homework part with isolated exact receipts`, async ({page}) => {
  const source=JSON.parse(readFileSync(new URL(`../../content/hsk${level}/lesson-${String(number).padStart(2,'0')}.json`,import.meta.url),'utf8'));
  await login(page,`#view=homework&lesson=${number}&part=vocabGrammar`,level);
  for(const part of ['vocabGrammar','ordering','listening','translationChoice','writing']){
@@ -57,4 +57,13 @@ for(const width of [320,390,768,1440])test(`later HSK3 lesson18 complex narrativ
  const review=page.locator('[data-kind=review]');await expect(review).toContainText('16—18');await expect(review.locator('[data-block-kind=table]')).toHaveCount(12);await expect(review).toContainText('只要');await expect(review).toContainText('从……起');
  for(const [name,section] of [['narrative',page.locator('#text-4')],['grammar',page.locator('.grammar').nth(2)],['review',review]] as const){await section.scrollIntoViewIfNeeded();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`test-results/hsk3-later18-${width}-${name}.png`,fullPage:false})}
  await page.locator('#text-pinyin').check();await expect(page.locator('#text-4 .pinyin-line').first()).toBeVisible();await page.locator('#text-4').scrollIntoViewIfNeeded();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`test-results/hsk3-later18-${width}-pinyin.png`,fullPage:false});
+});
+
+// All unit10–12 review rows retain their two separate learning checks.
+test('HSK3 unit10–12 review retains eleven source rows and available culture metadata',async({page})=>{
+ await page.setViewportSize({width:390,height:900});await login(page,'#view=lesson&lesson=12',3);
+ const review=page.locator('[data-kind=review]');await expect(review.locator('[data-block-kind=table]')).toHaveCount(11);
+ for(const row of await review.locator('[data-block-kind=table]').all()){await expect(row).toContainText('理解□');await expect(row).toContainText('会用□')}
+ await expect(page.locator('[data-kind=culture]')).toContainText('12-1');await expect(page.locator('[data-kind=culture]')).toContainText('不可播放');
+ await review.scrollIntoViewIfNeeded();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:'test-results/hsk3-unit12-review-390.png',fullPage:false});
 });

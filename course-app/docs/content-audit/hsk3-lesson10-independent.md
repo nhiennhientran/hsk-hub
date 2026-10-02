@@ -1,0 +1,10 @@
+# HSK3 lesson10 independent review
+
+Reviewer: implementation lead, separate from author. AI source/language review, not native-speaker certification.
+
+- Inspected all nine textbook pages PDF98–106 / printed86–94 and supplied answer PDF14–15. Checked all structured fields: four texts/26 lines,28 numbered headwords expanded into33 POS records, three grammar points/12 examples/nine tasks, ten integrated fill-ins, three picture dialogues, the group activity and the culture panel. Source subjects, negatives and blank positions match the printed pages.
+- Printed vocabulary pinyin and optional editorial sentence pinyin checked in context, including 还huán/hái, 得de/dé, 一般yìbān and 这几个句子. No source Chinese line correction was required. Vietnamese is an editorial translation, not a printed textbook translation.
+- Retained the printed 关于 guānyú gloss and culture video identifier10-1. Culture video remains explicitly unavailable; its illustrative picture has a separately labeled editorial description. Word banks and task instructions have semantic instruction blocks.
+- Replaced implausible word-salad distractors with contextual contrasts, added question-specific explanations, and gave the five ordering tasks different permutations while preserving unique answers under their opening constraints. Revised a listening task that duplicated a printed question into combined comprehension. Thirty original homework items retain the required25 auto/five manual distribution, plus four independent listening items. Manual prompts have no published answers.
+- Corrected supplemental listening source references to the actual source-text pages rather than the generic assignment page. All eight original audio SHA256 values freshly match the manifest and all eight full ffmpeg decodes pass; entire ASR outputs compared to textbook as auxiliary evidence. This is not full human listening certification.
+- Course unit suite20/20 and TypeScript pass. The validator reports no lesson10 issue; another author's unfinished lesson16 prevents a whole-worktree content pass at this checkpoint.
