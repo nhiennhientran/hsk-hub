@@ -125,6 +125,8 @@ test('continuation preserves textbook sections and homework parts, while practic
   let resume = progressResume(data, catalog);
   assert.equal(resume.route.lesson, 7); assert.match(resume.label, /Câu 2\/15/);
   assert.match(resume.label, /第2\/15题/);
+  // Mixed browsing can resume an old position only for the same all/zh-vi pool.
+  data.practice.cards.review.direction = 'zh-vi';
   for (const feature of ['vocabulary', 'review']) {
     data.navigation = { feature, lesson: 1 }; resume = progressResume(data, catalog);
     const round = data.practice.cards.review, card = catalog.vocabulary.find(row => row.senseId === round.senseIds[round.position]);

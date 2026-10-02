@@ -9,6 +9,8 @@ import type { AppData } from '../storage/compatibility.ts';
 import type { HomeworkLesson } from '../content/homework.ts';
 import type { ListeningCatalog } from '../content/listening.ts';
 import type { ListeningSession } from '../../domain/listening/types.ts';
+import type { VocabularyReview } from '../../domain/vocabulary/types.ts';
+import { compatibleLegacyMixedRound } from '../../domain/vocabulary/mixed-state.ts';
 
 export interface ProgressSources {
   bank: readonly HomeworkLesson[];
@@ -17,6 +19,14 @@ export interface ProgressSources {
 }
 export interface ProgressLink { label: string; route: Route }
 interface SavedReview { senseIds: string[]; position: number; lessons: number[] }
+
+function vocabularyResumeRound(data: AppData, catalog: ListeningCatalog): SavedReview | null {
+  // Explicit null means the new round was cleared; it must not revive the old one.
+  const round = data.mixedVocabulary === undefined
+    ? compatibleLegacyMixedRound(data.practice.cards.review as unknown as VocabularyReview | null, catalog)
+    : data.mixedVocabulary.round;
+  return round ? { senseIds: round.senseIds, position: round.anchor, lessons: round.lessons } : null;
+}
 
 /** Read the real saved position, never infer continuation from scores or completion. */
 export function progressResume(data: AppData, catalog: ListeningCatalog): ProgressLink | null {
@@ -28,7 +38,7 @@ export function progressResume(data: AppData, catalog: ListeningCatalog): Progre
     const question = round && catalog.listening.find(item => item.id === round.questionIds[round.position]);
     if (question && round) { route = { feature: 'listening', lesson: question.lesson }; suffix = `Bài ${question.lesson} · Câu ${round.position + 1}/${round.questionIds.length}`; chinesePosition = ` · 第${round.position + 1}/${round.questionIds.length}题`; }
   } else if (route.feature === 'vocabulary' || route.feature === 'review') {
-    const round = data.practice.cards.review as unknown as SavedReview | null;
+    const round = vocabularyResumeRound(data, catalog);
     const card = round && catalog.vocabulary.find(item => item.senseId === round.senseIds[round.position] && round.lessons.includes(item.lesson));
     if (card && round) { route = { feature: 'vocabulary', lesson: card.lesson }; suffix = `Bài ${card.lesson} · Thẻ ${round.position + 1}/${round.senseIds.length}`; chinesePosition = ` · 第${round.position + 1}/${round.senseIds.length}张`; }
   } else if (route.feature === 'textbook') suffix += ` · ${sectionChinese[route.section ?? 'vocab']} · ${sectionLabels[route.section ?? 'vocab']}`;
@@ -84,7 +94,7 @@ export function summarizeProgress(data: AppData, { bank, catalog, exercises }: P
     };
   });
   const listeningRound = data.practice.listening.session as unknown as ListeningSession | null;
-  const review = data.practice.cards.review as unknown as SavedReview | null;
+  const review = vocabularyResumeRound(data, catalog);
   const listeningQuestion = listeningRound && catalog.listening.find(item => item.id === listeningRound.questionIds[listeningRound.position]);
   const reviewCard = review && catalog.vocabulary.find(item => item.senseId === review.senseIds[review.position] && review.lessons.includes(item.lesson));
   const exerciseState = data.exercises ?? blankExercisesState();

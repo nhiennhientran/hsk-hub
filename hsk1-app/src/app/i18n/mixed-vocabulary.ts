@@ -1,0 +1,28 @@
+import type { BilingualCopy } from '../bilingual.ts';
+const pair = (zh: string, vi: string): BilingualCopy => ({ zh, vi });
+export const mixedVocabularyCopy = {
+  title: pair('混课词卡', 'Thẻ từ vựng nhiều bài'),
+  intro: pair('选好课程，按自己的节奏翻卡。', 'Chọn bài học và lật thẻ theo nhịp của bạn.'),
+  settings: pair('选择课程', 'Chọn bài học'),
+  change: pair('更改课程', 'Đổi bài học'),
+  lessons: pair('选择要练习的课程', 'Chọn các bài muốn luyện'),
+  lesson: (id: number) => pair(`第 ${id} 课`, `Bài ${id}`),
+  all: pair('全选', 'Chọn tất cả'), none: pair('清空', 'Bỏ chọn'),
+  start: pair('开始练习', 'Bắt đầu luyện'), update: pair('更新词卡', 'Cập nhật thẻ'),
+  cancel: pair('保留当前词卡', 'Giữ lượt thẻ hiện tại'),
+  available: (lessons: number, cards: number) => pair(`已选 ${lessons} 课 · ${cards} 张词卡`, `Đã chọn ${lessons} bài · ${cards} thẻ`),
+  empty: pair('请至少选择一课', 'Vui lòng chọn ít nhất một bài'),
+  pending: pair('选课尚未应用；更新后会重新打乱词卡。', 'Lựa chọn chưa được áp dụng; cập nhật sẽ xáo trộn lượt thẻ mới.'),
+  hint: pair('点击词卡，查看拼音和意思；再点一次翻回正面。', 'Chạm vào thẻ để xem phiên âm và nghĩa; chạm lần nữa để lật lại.'),
+  navigation: pair('切换词卡', 'Chuyển thẻ'),
+  previous: (single: boolean) => pair(single ? '上一张' : '上一组', single ? 'Thẻ trước' : 'Nhóm trước'),
+  next: (single: boolean) => pair(single ? '下一张' : '下一组', single ? 'Thẻ tiếp' : 'Nhóm tiếp'),
+  position: (start: number, end: number, total: number) => pair(start === end ? `第 ${start} / ${total} 张` : `第 ${start}–${end} / ${total} 张`, start === end ? `Thẻ ${start} / ${total}` : `Thẻ ${start}–${end} / ${total}`),
+  scope: (lessons: number[]) => pair(`第 ${lessons.join('、')} 课`, `Bài ${lessons.join(', ')}`),
+  summary: (lessons: number, count: number) => pair(`${lessons} 课 · ${count} 张词卡`, `${lessons} bài · ${count} thẻ`),
+  last: (single: boolean) => pair(single ? '已到最后一张' : '已到最后一组', single ? 'Đây là thẻ cuối' : 'Đây là nhóm thẻ cuối'),
+  reshuffle: pair('打乱再练', 'Xáo trộn và luyện lại'),
+  play: pair('听发音', 'Nghe phát âm'), stop: pair('停止播放', 'Dừng phát'),
+  noAudio: pair('此词暂无原音', 'Từ này chưa có âm thanh gốc'),
+  legacy: pair('旧轮次和学习记录已保留。请选择课程，开始新的混课词卡。', 'Lượt thẻ cũ và tiến độ đã được giữ lại. Hãy chọn bài để bắt đầu lượt thẻ mới.'),
+};

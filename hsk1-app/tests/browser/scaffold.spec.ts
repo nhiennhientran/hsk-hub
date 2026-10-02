@@ -28,7 +28,7 @@ async function expectReady(page: Page, feature: string, lesson: number): Promise
   else if (feature === 'textbook') await expect(host.locator('#reading-complete')).toBeEnabled();
   else if (feature === 'listening') await expect(host.locator('#listening-start')).toBeEnabled();
   else if (feature === 'vocabulary') await expect(host.locator('#vocabulary-start')).toBeEnabled();
-  else if (feature === 'review') await expect(host.locator('#review-vocabulary')).toBeVisible();
+  else if (feature === 'review') await expect(host.locator('#vocabulary-settings')).toBeVisible();
   else if (feature === 'progress') await expect(host.locator('#open-data-manager')).toBeEnabled();
   else if (feature === 'exercises') await expect(host.locator('#exercise-submit')).toHaveCount(0);
   else {
@@ -140,7 +140,7 @@ test('four task groups, legacy routes and fifteen lessons remain reachable witho
     if (feature === 'homework') await expect(page.locator('#module-host [data-question-id]')).toHaveCount(5);
     else if (feature === 'listening') await expect(page.locator('#listening-settings [data-listening-lesson]')).toHaveCount(15);
     else if (feature === 'vocabulary') await expect(page.locator('[data-vocabulary-lesson]')).toHaveCount(15);
-    else if (feature === 'review') await expect(page.locator('#review-module a')).toHaveCount(3);
+    else if (feature === 'review') await expect(page.locator('[data-vocabulary-lesson]')).toHaveCount(15);
     else if (feature === 'progress') await expect(page.locator('#module-host')).not.toContainText('chưa mở để làm bài');
   }
   await page.evaluate(() => { location.hash = '#/textbook?lesson=1&section=vocab'; });

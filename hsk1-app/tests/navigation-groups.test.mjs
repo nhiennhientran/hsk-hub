@@ -10,5 +10,5 @@ test('four presentation groups retain every existing route exactly once', () => 
   for (const group of NAVIGATION_GROUPS) { assert.ok(group.label.zh); assert.ok(group.label.vi); }
   assert.equal(navigationGroup('exercises').id, 'homework');
   assert.equal(navigationGroup('textbook').id, 'courses');
-  assert.equal(navigationGroup('listening').id, 'practice');
+  assert.equal(navigationGroup('listening').id, 'courses');
 });

@@ -1,3 +1,4 @@
+import { navigateFeature } from './ui-actions.ts';
 import { readFile } from 'node:fs/promises';
 import { test, expect } from '@playwright/test';
 
@@ -24,10 +25,11 @@ test('four groups and compact lesson cards expose the new 30-question version wi
   await page.goBack();
   await expect(page.locator('#home-module')).toBeVisible();
   await page.locator('#feature-nav [data-feature="review"]').click();
-  await expect(page.locator('#review-module a')).toHaveCount(3);
-  await expect(page.locator('#review-module a[href^="#/exercises"]')).toHaveCount(0);
-  await page.locator('#review-listening').click();
+  await expect(page.locator('#vocabulary-module')).toBeVisible();
+  await expect(page.locator('#review-module')).toHaveCount(0);
   await expect(page.locator('#feature-nav [data-nav-group="practice"]')).toHaveAttribute('aria-current', 'page');
+  await navigateFeature(page, 'listening', 10);
+  await expect(page.locator('#feature-nav [data-nav-group="courses"]')).toHaveAttribute('aria-current', 'page');
   await expect(page.locator('.lesson-picker')).toBeHidden();
 });
 

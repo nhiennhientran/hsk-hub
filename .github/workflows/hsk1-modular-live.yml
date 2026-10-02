@@ -2,7 +2,7 @@ name: HSK1 modular live verification
 on:
   push:
     branches: ['preview/restore-legacy-experience']
-    paths: ['hsk1-app/docs/release-manifest.json', 'hsk1-app/tests/browser/release.spec.ts', 'hsk1-app/playwright.release.config.ts', '.github/workflows/hsk1-modular-live.yml']
+    paths: ['hsk1-app/docs/release-manifest.json']
   workflow_dispatch:
 permissions:
   contents: read

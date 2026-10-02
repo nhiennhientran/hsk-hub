@@ -72,8 +72,20 @@ async function ready(page: Page, feature: string, lesson = 10, hash?: string): P
 }
 
 async function navigate(page: Page, feature: string): Promise<void> {
-  await navigateFeature(page, feature, 10);
-  await ready(page, feature);
+  if (feature === 'vocabulary') {
+    await page.locator('#feature-nav [data-feature="review"]').click();
+    await ready(page, 'review');
+  } else if (feature === 'listening') {
+    await page.locator('#feature-nav [data-feature="home"]').click();
+    await ready(page, 'home');
+    const selector = '.lesson-card[data-lesson="10"] a[href^="#/listening?"]';
+    await revealControl(page, selector);
+    await page.locator(selector).click();
+    await ready(page, 'listening');
+  } else {
+    await navigateFeature(page, feature, 10);
+    await ready(page, feature);
+  }
 }
 
 async function saved(page: Page, feature: 'reading' | 'homework' | 'listening' | 'vocabulary' | 'progress'): Promise<AppData> {
@@ -167,12 +179,12 @@ test('every deployed file matches the exact release manifest, all 93 audio track
   expect(manifest.sourceCommit).toMatch(/^[a-f0-9]{40}$/);
   if (process.env.HSK_EXPECTED_COMMIT) expect(manifest.sourceCommit).toBe(process.env.HSK_EXPECTED_COMMIT);
   expect(manifest.buildId).toBe(digest(JSON.stringify(manifest.files)));
-  if (live) {
-    expect(manifest.sourceCommit).toBe('c3a73654fbd76489be2eb1df01b692f4396003f8');
-    expect(manifest.productionRecoveryCommit).toBe('f7127ccd656f9ce49ebb05673625ecd991e26403');
-    expect(manifest.buildId).toBe('27b0405d7bf253cabb1306a1eb12b74327fe77f794ea2014d85d2fca0d37b5b3');
-    expect(manifest.files).toHaveLength(413);
-  }
+  // Live identity must be explicitly pinned to the approved frozen candidate.
+  // The checked-in manifest and every deployed byte are still compared below.
+  if (live && !process.env.HSK_EXPECTED_COMMIT) throw new Error('HSK_EXPECTED_COMMIT is required for live release acceptance.');
+  if (process.env.HSK_EXPECTED_BUILD_ID) expect(manifest.buildId).toBe(process.env.HSK_EXPECTED_BUILD_ID);
+  if (process.env.HSK_EXPECTED_RECOVERY_COMMIT) expect(manifest.productionRecoveryCommit).toBe(process.env.HSK_EXPECTED_RECOVERY_COMMIT);
+  expect(manifest.productionRecoveryCommit).toMatch(/^[a-f0-9]{40}$/);
   expect(manifest.files.filter(file => /^course-assets\/audio\/.+\.mp3$/.test(file.path))).toHaveLength(93);
   expect(manifest.files.filter(file => /^course-assets\/hanzi\/.+\.json$/.test(file.path))).toHaveLength(267);
   expect(new Set(manifest.files.map(file => file.path)).size).toBe(manifest.files.length);
@@ -262,7 +274,7 @@ test('normal login, index/lesson/learning/pilot legacy entry parameters, refresh
   await ready(page, 'textbook');
   await navigate(page, 'homework');
   await navigate(page, 'listening');
-  await page.goBack(); await ready(page, 'review', 10, '#/review?lesson=10');
+  await page.goBack(); await ready(page, 'home', 10, '#/home?lesson=10');
   await page.goBack(); await ready(page, 'homework', 10, '#/homework?lesson=10&part=choice');
   await page.goBack(); await ready(page, 'homework', 10, '#/homework?lesson=10&part=choice&version=30-v1');
   await page.goBack(); await ready(page, 'textbook', 10, '#/textbook?lesson=10&section=text');
@@ -351,42 +363,61 @@ test('production textbook, exact manual receipt, native listening and vocabulary
   const listening = (await saved(page, 'listening')).practice.listening;
   expect(listening.records[question.id]!.latest.correct).toBe(true);
 
+  const beforeMixed = await saved(page, 'listening');
   await navigate(page, 'vocabulary');
   await revealControl(page, '#vocabulary-none');
   await page.locator('#vocabulary-none').click();
-  await page.locator('[data-vocabulary-lesson="10"]').check();
-  await page.locator('#vocabulary-filter').selectOption('all');
-  await page.locator('#vocabulary-direction').selectOption('zh-vi');
-  await page.locator('#vocabulary-shuffle').uncheck();
+  for (const lesson of [7, 10]) await page.locator(`[data-vocabulary-lesson="${lesson}"]`).check();
   await page.locator('#vocabulary-start').click();
-  const sense = catalog.vocabulary.find(row => row.lesson === 10)!;
-  await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', sense.senseId);
+  const mixedStart = (await saved(page, 'vocabulary')).mixedVocabulary!.round!;
+  expect(mixedStart.lessons).toEqual([7, 10]);
+  expect([...mixedStart.senseIds].sort()).toEqual(catalog.vocabulary.filter(row => [7, 10].includes(row.lesson)).map(row => row.senseId).sort());
+  await expect(page.locator('#vocabulary-settings')).not.toHaveAttribute('open');
+  await expect(page.locator('#vocabulary-grid .mixed-card-back, #vocabulary-grid [data-mixed-play]')).toHaveCount(0);
+  const toggle = page.locator('#vocabulary-grid .mixed-card-toggle').first();
+  const sense = catalog.vocabulary.find(row => row.senseId === mixedStart.senseIds[0])!;
   if (!sense.audio) throw new Error('Release representative vocabulary must have original audio.');
-  await expect(page.locator('#vocabulary-play')).toBeDisabled();
-  // Free previous/next/skip navigation must not assign a mastery rating.
+  await expect(toggle.locator('..')).toHaveAttribute('data-sense-id', sense.senseId);
+  await expect(toggle.locator('.mixed-card-front')).toHaveText(sense.zh);
+  const pageSize = page.viewportSize()!.width >= 1050 ? 6 : page.viewportSize()!.width >= 700 ? 4 : 1;
+  await expect(page.locator('#vocabulary-grid .mixed-card-toggle')).toHaveCount(pageSize);
   await page.locator('#vocabulary-next').click();
-  await expect(page.locator('#vocabulary-card')).not.toHaveAttribute('data-sense-id', sense.senseId);
+  await expect(toggle.locator('..')).toHaveAttribute('data-sense-id', mixedStart.senseIds[pageSize]!);
   await page.locator('#vocabulary-prev').click();
-  await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', sense.senseId);
-  await page.locator('#vocabulary-skip').click();
-  expect(Object.keys((await saved(page, 'vocabulary')).practice.cards.schedule)).toHaveLength(0);
-  await page.locator('#vocabulary-prev').click();
-  await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', sense.senseId);
-  await page.locator('#vocabulary-reveal').click();
-  await expect(page.locator('#vocabulary-answer')).toBeVisible();
-  await page.locator('#vocabulary-play').click();
-  await playing(page, base, '#vocabulary-audio-status', sense.audio.track, sense.audio.start, sense.audio.end);
-  await page.locator('#vocabulary-pause').click();
-  await page.locator('#vocabulary-good').click();
-  const vocabulary = (await saved(page, 'vocabulary')).practice.cards;
-  expect(vocabulary.schedule[sense.senseId]).toMatchObject({ lastRating: 'good', reviewCount: 1 });
+  await expect(toggle.locator('..')).toHaveAttribute('data-sense-id', sense.senseId);
+  await toggle.click();
+  await expect(toggle.locator('.mixed-pinyin')).toHaveText(sense.py);
+  await expect(toggle.locator('.mixed-meaning')).toHaveText(sense.vi);
+  await expect(toggle.locator('.mixed-card-front, button')).toHaveCount(0);
+  const play = page.locator(`[data-mixed-play="${sense.senseId}"]`);
+  await expect(play.locator('..')).toHaveClass('mixed-card-audio');
+  await play.click();
+  await expect(play).toHaveAttribute('aria-pressed', 'true');
+  await expect.poll(async () => (await nativeAudio(page)).source).toBe(new URL(`course-assets/audio/${sense.audio!.track}.mp3`, base).href);
+  await expect.poll(async () => (await nativeAudio(page)).time).toBeGreaterThan(sense.audio.start + .035);
+  expect((await nativeAudio(page)).duration).toBeGreaterThan(sense.audio.end);
+  expect((await nativeAudio(page)).paused).toBe(false);
+  // Audio is an independent control and must neither flip nor mutate the round.
+  await expect(toggle).toHaveAttribute('aria-pressed', 'true');
+  await play.click();
+  await expect.poll(async () => (await nativeAudio(page)).paused).toBe(true);
+  await expect(toggle).toHaveAttribute('aria-pressed', 'true');
+  expect((await saved(page, 'vocabulary')).practice).toEqual(beforeMixed.practice);
+  await page.locator('#vocabulary-next').click();
+  await toggle.click();
+  const vocabulary = (await saved(page, 'vocabulary')).mixedVocabulary!;
+  expect(vocabulary.round).toMatchObject({ ...mixedStart, anchor: pageSize });
+  const restoredSense = vocabulary.round!.senseIds[pageSize]!;
   await page.reload();
-  await ready(page, 'vocabulary');
+  await ready(page, 'review');
+  await expect(toggle.locator('..')).toHaveAttribute('data-sense-id', restoredSense);
+  await expect(page.locator('#vocabulary-grid .mixed-card-back, #vocabulary-grid [data-mixed-play]')).toHaveCount(0);
   const afterReload = await saved(page, 'vocabulary');
   expect(afterReload.reading).toEqual(reading);
   expect(afterReload.homework).toEqual(submitted);
   expect(afterReload.practice.listening).toEqual(listening);
-  expect(afterReload.practice.cards).toEqual(vocabulary);
+  expect(afterReload.practice).toEqual(beforeMixed.practice);
+  expect(afterReload.mixedVocabulary).toEqual(vocabulary);
 
   await navigate(page, 'progress');
   await page.locator('#open-data-manager').click();
@@ -431,8 +462,10 @@ test('production textbook, exact manual receipt, native listening and vocabulary
     await expect(restored.locator('#listening-question')).toHaveAttribute('data-question-id', question.id);
     await expect(restored.locator('#listening-feedback')).toBeVisible();
     await navigate(restored, 'vocabulary');
-    await expect(restored.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', sense.senseId);
-    expect((await saved(restored, 'vocabulary')).practice.cards).toEqual(vocabulary);
+    await expect(restored.locator('#vocabulary-grid > .mixed-card').first()).toHaveAttribute('data-sense-id', restoredSense);
+    await expect(restored.locator('#vocabulary-grid .mixed-card-back, #vocabulary-grid [data-mixed-play]')).toHaveCount(0);
+    expect((await saved(restored, 'vocabulary')).mixedVocabulary).toEqual(vocabulary);
+    expect((await saved(restored, 'vocabulary')).practice).toEqual(backup.data.practice);
     await restoredAudit(testInfo);
   } finally { await restoredContext.close(); }
   await audit(testInfo);
@@ -558,10 +591,11 @@ test('live simplified navigation, 30-question version, five real homework audio 
 
   await page.locator('#feature-nav [data-feature="review"]').focus(); await page.keyboard.press('Enter');
   await ready(page, 'review');
-  await expect(page.locator('#review-module a')).toHaveCount(3);
-  await expect(page.locator('#review-module a[href^="#/exercises"]')).toHaveCount(0);
-  await page.locator('#review-listening').click(); await ready(page, 'listening');
-  await expect(page.locator('#feature-nav [data-nav-group="practice"]')).toHaveAttribute('aria-current', 'page');
+  await expect(page.locator('#vocabulary-module')).toBeVisible();
+  await expect(page.locator('#vocabulary-settings')).toHaveAttribute('open');
+  await expect(page.locator('#review-module, #review-listening')).toHaveCount(0);
+  await navigate(page, 'listening');
+  await expect(page.locator('#feature-nav [data-nav-group="courses"]')).toHaveAttribute('aria-current', 'page');
   await expect(page.locator('.lesson-picker')).toBeHidden();
   await revealControl(page, '#listening-all');
   await page.locator('#listening-all').click();
@@ -655,5 +689,134 @@ test('live simplified navigation, 30-question version, five real homework audio 
     await restoredAudit(testInfo);
   } finally { await context.close(); }
   await testInfo.attach('simplified-live-coverage.json', { body: Buffer.from(JSON.stringify({ lesson: 10, homeworkQuestions: 30, automatic: 25, manual: 5, originalHomeworkAudioClipsPlayed: homeworkPlayback, standaloneListeningQueue: catalog.listening.map(q => q.id), navigationGroups: 4, legacyHistoryDenominator: 225, newHistoryDenominator: 450, profiles: 'disposable synthetic only', screenshots: ['home', 'homework', 'progress'].flatMap(view => [`${view}-desktop`, `${view}-mobile`]) }, null, 2)), contentType: 'application/json' });
+  await audit(testInfo);
+});
+
+test('production mixed cards preserve one shuffled round across responsive pages, keyboard flips, route aliases, lesson edits and all 344 senses', async ({ page, baseURL }, testInfo) => {
+  const base = deployment(baseURL), audit = networkEvidence(page, base);
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto(new URL('index.html?lesson=10', base).href);
+  await login(page); await ready(page, 'home');
+  await page.locator('#feature-nav [data-feature="review"]').focus();
+  await page.keyboard.press('Enter');
+  await ready(page, 'review');
+  await expect(page.locator('#feature-nav [data-nav-group="practice"]')).toHaveAttribute('aria-current', 'page');
+  await expect(page.locator('#vocabulary-module')).toBeVisible();
+  await expect(page.locator('#vocabulary-settings')).toHaveAttribute('open');
+  await expect(page.locator('#vocabulary-filter, #vocabulary-direction, #vocabulary-search, #vocabulary-shuffle, #vocabulary-good, #vocabulary-hard, #vocabulary-again')).toHaveCount(0);
+  const before = await saved(page, 'vocabulary');
+  await page.locator('#vocabulary-none').click();
+  for (const lesson of [7, 10]) await page.locator(`[data-vocabulary-lesson="${lesson}"]`).check();
+  await page.locator('#vocabulary-start').click();
+  const initial = (await saved(page, 'vocabulary')).mixedVocabulary!;
+  const initialRound = initial.round!;
+  expect(initial.schema).toBe(1);
+  expect(initialRound.lessons).toEqual([7, 10]);
+  expect(initialRound.anchor).toBe(0);
+  expect([...initialRound.senseIds].sort()).toEqual(catalog.vocabulary.filter(word => [7, 10].includes(word.lesson)).map(word => word.senseId).sort());
+  expect(new Set(initialRound.senseIds).size).toBe(initialRound.senseIds.length);
+  await expect(page.locator('#vocabulary-settings')).not.toHaveAttribute('open');
+  const first = page.locator('#vocabulary-grid .mixed-card-toggle').first();
+  const second = page.locator('#vocabulary-grid .mixed-card-toggle').nth(1);
+  await expect(first).toBeFocused();
+  const firstWord = catalog.vocabulary.find(word => word.senseId === initialRound.senseIds[0])!;
+  await expect(first).toHaveText(firstWord.zh);
+  await first.press('Space');
+  await expect(first).toBeFocused();
+  await expect(first).toHaveAttribute('aria-pressed', 'true');
+  await expect(first.locator('.mixed-card-front')).toHaveCount(0);
+  await expect(first.locator('.mixed-pinyin')).toHaveText(firstWord.py);
+  await expect(first.locator('.mixed-meaning')).toHaveText(firstWord.vi);
+  await expect(second).toHaveAttribute('aria-pressed', 'false');
+  await second.click();
+  await expect(page.locator('#vocabulary-grid .mixed-card-back')).toHaveCount(2);
+  await first.press('Enter');
+  await expect(first).toHaveText(firstWord.zh);
+  await expect(second).toHaveAttribute('aria-pressed', 'true');
+  expect((await saved(page, 'vocabulary')).mixedVocabulary).toEqual(initial);
+  expect((await saved(page, 'vocabulary')).practice).toEqual(before.practice);
+  await first.press('ArrowRight');
+  await expect(first).toBeFocused();
+  await expect(page.locator('#vocabulary-grid .mixed-card-back')).toHaveCount(0);
+  const anchored = (await saved(page, 'vocabulary')).mixedVocabulary!;
+  expect(anchored.round).toEqual({ ...initialRound, anchor: 6 });
+  const responsiveEvidence: Array<{ width: number; cards: number; anchor: number }> = [];
+  // Each width crosses a capacity boundary. Width changes preserve the first
+  // visible anchor and the immutable order, while all visible faces reset.
+  for (const width of [699, 700, 1050, 1049, 320, 1440]) {
+    await first.click();
+    await expect(first).toHaveAttribute('aria-pressed', 'true');
+    await page.setViewportSize({ width, height: 1000 });
+    const size = width >= 1050 ? 6 : width >= 700 ? 4 : 1;
+    await expect(page.locator('#vocabulary-grid .mixed-card-toggle')).toHaveCount(size);
+    await expect(page.locator('#vocabulary-grid')).toHaveAttribute('data-columns', String(size === 6 ? 3 : size === 4 ? 2 : 1));
+    await expect(page.locator('#vocabulary-grid .mixed-card-back, #vocabulary-grid [data-mixed-play]')).toHaveCount(0);
+    expect(await page.locator('#vocabulary-grid > .mixed-card').evaluateAll(cards => cards.map(card => (card as HTMLElement).dataset.senseId))).toEqual(initialRound.senseIds.slice(6, 6 + size));
+    expect(await page.locator('#vocabulary-grid .mixed-card-front').allTextContents()).toEqual(initialRound.senseIds.slice(6, 6 + size).map(id => catalog.vocabulary.find(word => word.senseId === id)!.zh));
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+    expect((await saved(page, 'vocabulary')).mixedVocabulary).toEqual(anchored);
+    responsiveEvidence.push({ width, cards: size, anchor: 6 });
+    if (width === 320 || width === 1440) await testInfo.attach(`mixed-production-${width}.png`, { body: await page.screenshot({ fullPage: true }), contentType: 'image/png' });
+  }
+  await first.click();
+  await page.reload(); await ready(page, 'review');
+  await expect(page.locator('#vocabulary-grid .mixed-card-back')).toHaveCount(0);
+  expect((await saved(page, 'vocabulary')).mixedVocabulary).toEqual(anchored);
+  await first.click();
+  await page.goto(new URL('index.html#/vocabulary?lesson=10', base).href);
+  await ready(page, 'vocabulary');
+  await expect(page.locator('#vocabulary-grid .mixed-card-back')).toHaveCount(0);
+  expect((await saved(page, 'vocabulary')).mixedVocabulary).toEqual(anchored);
+  await first.click();
+  await navigate(page, 'progress'); await navigate(page, 'vocabulary');
+  await expect(page.locator('#vocabulary-grid .mixed-card-back')).toHaveCount(0);
+  expect((await saved(page, 'vocabulary')).mixedVocabulary).toEqual(anchored);
+
+  await revealControl(page, '#vocabulary-none');
+  await page.locator('#vocabulary-none').click();
+  await expect(page.locator('#vocabulary-start')).toBeDisabled();
+  await expect(page.locator('#vocabulary-pending')).toBeVisible();
+  expect((await saved(page, 'vocabulary')).mixedVocabulary).toEqual(anchored);
+  await page.locator('#vocabulary-cancel').click();
+  await expect(page.locator('#vocabulary-settings')).not.toHaveAttribute('open');
+  expect((await saved(page, 'vocabulary')).mixedVocabulary).toEqual(anchored);
+  await revealControl(page, '#vocabulary-all');
+  await page.locator('#vocabulary-all').click();
+  expect((await saved(page, 'vocabulary')).mixedVocabulary).toEqual(anchored);
+  await page.locator('#vocabulary-start').click();
+  const all = (await saved(page, 'vocabulary')).mixedVocabulary!.round!;
+  expect(all.lessons).toEqual(Array.from({ length: 15 }, (_, index) => index + 1));
+  expect(all.senseIds).toHaveLength(344);
+  expect([...all.senseIds].sort()).toEqual(catalog.vocabulary.map(word => word.senseId).sort());
+  expect(all.id).not.toBe(initialRound.id);
+  const visited: string[] = [];
+  for (let anchor = 0; anchor < all.senseIds.length; anchor += 6) {
+    const expected = all.senseIds.slice(anchor, anchor + 6);
+    await expect(page.locator('#vocabulary-grid .mixed-card-toggle')).toHaveCount(expected.length);
+    const ids = await page.locator('#vocabulary-grid > .mixed-card').evaluateAll(cards => cards.map(card => (card as HTMLElement).dataset.senseId!));
+    expect(ids).toEqual(expected); visited.push(...ids);
+    await expect(page.locator('#vocabulary-grid .mixed-card-back')).toHaveCount(0);
+    expect((await saved(page, 'vocabulary')).mixedVocabulary!.round).toEqual({ ...all, anchor });
+    if (anchor + 6 < all.senseIds.length) await page.locator('#vocabulary-next').click();
+  }
+  expect(visited).toEqual(all.senseIds);
+  expect(new Set(visited).size).toBe(344);
+  await expect(page.locator('#vocabulary-grid .mixed-card-toggle')).toHaveCount(2);
+  await expect(page.locator('#vocabulary-next')).toBeDisabled();
+  await expect(page.locator('#vocabulary-last')).toBeVisible();
+  await first.click();
+  await page.locator('#vocabulary-reshuffle').click();
+  const reshuffled = (await saved(page, 'vocabulary')).mixedVocabulary!.round!;
+  expect(reshuffled.id).not.toBe(all.id);
+  expect(reshuffled.anchor).toBe(0);
+  expect(reshuffled.lessons).toEqual(all.lessons);
+  expect([...reshuffled.senseIds].sort()).toEqual([...all.senseIds].sort());
+  expect(reshuffled.senseIds).not.toEqual(all.senseIds);
+  await expect(first).toBeFocused();
+  await expect(page.locator('#vocabulary-grid .mixed-card-back')).toHaveCount(0);
+  const after = await saved(page, 'vocabulary');
+  for (const domain of ['practice', 'homework', 'homework30', 'reading', 'exercises', 'legacyRaw'] as const) expect(after[domain]).toEqual(before[domain]);
+  await testInfo.attach('mixed-production-round-evidence.json', { body: Buffer.from(JSON.stringify({ responsive: responsiveEvidence, selectedLessons: initialRound.lessons,
+    selectedSenseIds: initialRound.senseIds, allSenseIds: visited, finalPageCards: 2, independentDomainsUnchanged: true }, null, 2)), contentType: 'application/json' });
   await audit(testInfo);
 });

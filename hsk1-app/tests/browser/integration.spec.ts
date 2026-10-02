@@ -3,11 +3,11 @@ import { readFile } from 'node:fs/promises';
 import { test, expect, type Locator, type Page, type TestInfo } from '@playwright/test';
 import homework from '../../src/domain/homework/engine.js';
 import practice from '../../src/domain/practice/engine.js';
+import { blankExercisesState } from '../../src/domain/exercises/engine.ts';
 import type { AppData } from '../../src/services/storage/compatibility.ts';
 import type { HomeworkLesson, SortQuestion } from '../../src/services/content/homework.ts';
 import type { ListeningCatalog, ListeningQuestion } from '../../src/services/content/listening.ts';
 import type { ListeningSession } from '../../src/domain/listening/types.ts';
-import type { VocabularyReview, VocabularySchedule } from '../../src/domain/vocabulary/types.ts';
 
 const stateKey = 'ran_hsk1_modular_v1';
 const sessionKey = 'hsk_portal_unlocked_v2';
@@ -55,7 +55,7 @@ function unlockedData(): AppData {
       [question.id, question.kind === 'choice' ? question.answer : orderFor(question)]));
     if (!homework.submit(state, 10, kind, lesson[kind], fixedTime).ok) throw new Error(`Could not unlock ${kind}`);
   }
-  return { reading: { lessons: {}, mastered: {}, modules: {} }, homework: state, practice: practice.blank(), navigation: null, legacyRaw: {} };
+  return { reading: { lessons: {}, mastered: {}, modules: {} }, homework: state, practice: practice.blank(), exercises: blankExercisesState(), navigation: null, legacyRaw: {} };
 }
 
 async function authenticate(page: Page, data?: AppData, rawByKey?: Record<string, string>): Promise<void> {
@@ -81,8 +81,20 @@ async function savedData(page: Page, feature: 'homework' | 'listening' | 'vocabu
 }
 
 async function navigate(page: Page, feature: string): Promise<void> {
-  await navigateFeature(page, feature, 10);
-  await ready(page, feature);
+  if (feature === 'vocabulary') {
+    await page.locator('#feature-nav [data-feature="review"]').click();
+    await ready(page, 'review');
+  } else if (feature === 'listening') {
+    await page.locator('#feature-nav [data-feature="home"]').click();
+    await ready(page, 'home');
+    const selector = '.lesson-card[data-lesson="10"] a[href^="#/listening?"]';
+    await revealControl(page, selector);
+    await page.locator(selector).click();
+    await ready(page, 'listening');
+  } else {
+    await navigateFeature(page, feature, 10);
+    await ready(page, feature);
+  }
 }
 
 async function translations(page: Page, answers: Record<string, string>): Promise<void> {
@@ -117,11 +129,9 @@ async function startVocabulary(page: Page): Promise<void> {
   await revealControl(page, '#vocabulary-none');
   await page.locator('#vocabulary-none').click();
   for (const id of [7, 10]) await page.locator(`[data-vocabulary-lesson="${id}"]`).check();
-  await page.locator('#vocabulary-filter').selectOption('all');
-  await page.locator('#vocabulary-direction').selectOption('vi-zh');
-  await page.locator('#vocabulary-shuffle').uncheck();
   await page.locator('#vocabulary-start').click();
-  await expect(page.locator('#vocabulary-card')).toBeVisible();
+  await expect(page.locator('#vocabulary-grid')).toBeVisible();
+  await expect(page.locator('#vocabulary-settings')).not.toHaveAttribute('open');
   await expect(page.locator('#vocabulary-queue-scope')).toContainText('7, 10');
 }
 
@@ -245,26 +255,33 @@ test.describe('step 8 cross-module acceptance', () => {
     await navigate(page, 'vocabulary');
     expect((await nativeAudio(page)).paused).toBe(true);
     await startVocabulary(page);
-    const reviewStart = (await savedData(page, 'vocabulary')).practice.cards.review as unknown as VocabularyReview;
+    const reviewStart = (await savedData(page, 'vocabulary')).mixedVocabulary!.round!;
     expect(reviewStart.lessons).toEqual([7, 10]);
-    expect(reviewStart.senseIds).toEqual(catalog.vocabulary.filter(word => [7, 10].includes(word.lesson)).map(word => word.senseId));
-    for (const rating of ['again', 'hard', 'good']) {
-      const id = await page.locator('#vocabulary-card').getAttribute('data-sense-id');
-      await page.locator('#vocabulary-reveal').click();
-      await page.locator(`#vocabulary-${rating}`).click();
-      const rated = await savedData(page, 'vocabulary');
-      const schedule = rated.practice.cards.schedule[id!] as unknown as VocabularySchedule;
-      expect(schedule.lastRating).toBe(rating);
-      expect(schedule.reviewCount).toBeGreaterThan(0);
-      expect(schedule.dueAt).toBeGreaterThan(schedule.ratedAt);
+    const expectedIds = [...new Set(catalog.vocabulary.filter(word => [7, 10].includes(word.lesson)).map(word => word.senseId))];
+    expect([...reviewStart.senseIds].sort()).toEqual(expectedIds.sort());
+    expect(new Set(reviewStart.senseIds).size).toBe(reviewStart.senseIds.length);
+    const pageSize = page.viewportSize()!.width >= 1050 ? 6 : page.viewportSize()!.width >= 700 ? 4 : 1;
+    for (let index = 0; index < 3; index++) {
+      await expect(page.locator('#vocabulary-grid .mixed-card-toggle')).toHaveCount(pageSize);
+      await expect(page.locator('#vocabulary-grid .mixed-card-back')).toHaveCount(0);
+      const toggle = page.locator('#vocabulary-grid .mixed-card-toggle').first();
+      const id = await toggle.locator('..').getAttribute('data-sense-id');
+      const word = catalog.vocabulary.find(word => word.senseId === id)!;
+      await expect(toggle.locator('.mixed-card-front')).toHaveText(word.zh);
+      await toggle.click();
+      await expect(toggle.locator('.mixed-pinyin')).toHaveText(word.py);
+      await expect(toggle.locator('.mixed-meaning')).toHaveText(word.vi);
+      await expect(toggle.locator('.mixed-card-front')).toHaveCount(0);
+      expect((await savedData(page, 'vocabulary')).practice).toEqual(afterListening.practice);
       await page.locator('#vocabulary-next').click();
     }
-    await page.locator('#vocabulary-reveal').click();
-    const restoredSense = await page.locator('#vocabulary-card').getAttribute('data-sense-id');
+    await page.locator('#vocabulary-grid .mixed-card-toggle').first().click();
+    const restoredSense = await page.locator('#vocabulary-grid .mixed-card-toggle').first().locator('..').getAttribute('data-sense-id');
     const afterVocabulary = await savedData(page, 'vocabulary');
+    expect(afterVocabulary.mixedVocabulary!.round).toMatchObject({ ...reviewStart, anchor: 3 * pageSize });
     expect(afterVocabulary.homework).toEqual(draftBeforeLeaving.homework);
     expect(afterVocabulary.reading).toEqual(migrated.reading);
-    expect(afterVocabulary.practice.listening).toEqual(afterListening.practice.listening);
+    expect(afterVocabulary.practice).toEqual(afterListening.practice);
 
     await navigate(page, 'homework');
     await page.locator('[data-homework-part="translation"]').click();
@@ -293,6 +310,7 @@ test.describe('step 8 cross-module acceptance', () => {
     expect(beforeExport.homework.lessons['10']!.translation).toMatchObject({ draft: { [lesson.translation[0]!.id]: unfinished }, attempt: null,
       first: firstTranslation, latest: secondSubmission.latest, history: secondSubmission.history });
     expect(beforeExport.practice).toEqual(afterVocabulary.practice);
+    expect(beforeExport.mixedVocabulary).toEqual(afterVocabulary.mixedVocabulary);
     await navigate(page, 'progress');
     await expect(page.locator('[data-progress-lesson="10"]')).toContainText('Bài tập đã nộp 15/15');
     await expect(page.locator('[data-progress-lesson="10"]')).toContainText('Dịch: đã nộp 5/5 · nháp chưa nộp 1/5 · không chấm điểm');
@@ -351,11 +369,12 @@ test.describe('step 8 cross-module acceptance', () => {
       await expect(fresh.locator('#listening-rate')).toHaveValue('0.75');
       expect((await savedData(fresh, 'listening')).practice.listening).toEqual(backup.data.practice.listening);
       await navigate(fresh, 'vocabulary');
-      await expect(fresh.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', restoredSense!);
-      await expect(fresh.locator('#vocabulary-answer')).toBeVisible();
-      await expect(fresh.locator('#vocabulary-direction')).toHaveValue('vi-zh');
+      await expect(fresh.locator('#vocabulary-grid > .mixed-card').first()).toHaveAttribute('data-sense-id', restoredSense!);
+      await expect(fresh.locator('#vocabulary-grid .mixed-card-back, #vocabulary-grid [data-mixed-play]')).toHaveCount(0);
+      await expect(fresh.locator('#vocabulary-settings')).not.toHaveAttribute('open');
       const restored = await savedData(fresh, 'vocabulary');
-      expect(restored.practice.cards).toEqual(backup.data.practice.cards);
+      expect(restored.mixedVocabulary).toEqual(backup.data.mixedVocabulary);
+      expect(restored.practice).toEqual(backup.data.practice);
       expect(restored.practice.listening).toEqual(backup.data.practice.listening);
       expect(restored.homework).toEqual(backup.data.homework);
       expect(restored.reading).toEqual(backup.data.reading);
@@ -367,8 +386,10 @@ test.describe('step 8 cross-module acceptance', () => {
           if (attempt) expect(attempt).toMatchObject({ assessment: 'manual', correct: null, results: null });
       }
       await fresh.reload();
-      await ready(fresh, 'vocabulary');
-      expect((await savedData(fresh, 'vocabulary')).practice.cards).toEqual(backup.data.practice.cards);
+      await ready(fresh, 'review');
+      await expect(fresh.locator('#vocabulary-grid .mixed-card-back')).toHaveCount(0);
+      expect((await savedData(fresh, 'vocabulary')).mixedVocabulary).toEqual(backup.data.mixedVocabulary);
+      expect((await savedData(fresh, 'vocabulary')).practice).toEqual(backup.data.practice);
     } finally { await freshContext.close(); }
     expect(errors).toEqual([]);
   });
@@ -448,9 +469,14 @@ test.describe('step 8 responsive cross-module evidence', () => {
       await layoutEvidence(page, testInfo, 'listening-feedback', ['#listening-settings', '#listening-question', '#listening-feedback', '#listening-rate', '#listening-play']);
       await navigate(page, 'vocabulary');
       await startVocabulary(page);
-      await page.locator('#vocabulary-reveal').click();
-      await page.locator('#vocabulary-hard').click();
-      await layoutEvidence(page, testInfo, 'mixed-vocabulary', ['#vocabulary-settings', '#vocabulary-card', '#vocabulary-answer', '#vocabulary-rating-result', '#vocabulary-next']);
+      const beforeFlip = await savedData(page, 'vocabulary');
+      const pageSize = width >= 1050 ? 6 : width >= 700 ? 4 : 1;
+      await expect(page.locator('#vocabulary-grid .mixed-card-toggle')).toHaveCount(pageSize);
+      await page.locator('#vocabulary-grid .mixed-card-toggle').first().click();
+      await expect(page.locator('#vocabulary-grid .mixed-card-back')).toHaveCount(1);
+      expect((await savedData(page, 'vocabulary')).practice).toEqual(beforeFlip.practice);
+      await layoutEvidence(page, testInfo, 'mixed-vocabulary', ['#vocabulary-settings', '#vocabulary-grid', '#vocabulary-grid > .mixed-card:first-child',
+        '#vocabulary-grid > .mixed-card:first-child .mixed-card-back', '#vocabulary-next']);
       await navigate(page, 'progress');
       await expect(page.locator('[data-progress-lesson="10"]')).toContainText('Dịch: đã nộp 5/5');
       await layoutEvidence(page, testInfo, 'independent-progress', ['#progress-overview', '#progress-translation-submitted', '#progress-listening-objective', '#progress-vocabulary-ratings', '[data-progress-lesson="10"]']);
@@ -517,8 +543,10 @@ test('keyboard activation and synthetic composition/paste preserve exact multili
   }, tail);
   exact += tail;
   answers[id] = exact;
-  await keyboardActivate(page.locator('#feature-nav [data-feature="review"]'));
-  await keyboardActivate(page.locator('#review-module a[href^="#/listening?"]')); 
+  await keyboardActivate(page.locator('#feature-nav [data-feature="home"]'));
+  await ready(page, 'home');
+  await revealControl(page, '.lesson-card[data-lesson="10"] a[href^="#/listening?"]');
+  await keyboardActivate(page.locator('.lesson-card[data-lesson="10"] a[href^="#/listening?"]'));
   await ready(page, 'listening');
   await revealControl(page, '#listening-none');
   await keyboardActivate(page.locator('#listening-none'), 'Space');
@@ -532,14 +560,25 @@ test('keyboard activation and synthetic composition/paste preserve exact multili
   await keyboardActivate(page.locator('#listening-submit'));
   await expect(page.locator('#listening-feedback')).toBeVisible();
   await keyboardActivate(page.locator('#feature-nav [data-feature="review"]'));
-  await keyboardActivate(page.locator('#review-module a[href^="#/vocabulary?"]')); 
-  await ready(page, 'vocabulary');
+  await ready(page, 'review');
   await revealControl(page, '#vocabulary-start');
   await keyboardActivate(page.locator('#vocabulary-start'));
-  await keyboardActivate(page.locator('#vocabulary-reveal'), 'Space');
-  await expect(page.locator('#vocabulary-answer')).toBeVisible();
-  await keyboardActivate(page.locator('#vocabulary-good'));
-  await expect(page.locator('#vocabulary-next')).toBeFocused();
+  const firstToggle = page.locator('#vocabulary-grid .mixed-card-toggle').first();
+  await expect(firstToggle).toBeFocused();
+  const beforeFlip = await savedData(page, 'vocabulary');
+  await keyboardActivate(firstToggle, 'Space');
+  await expect(firstToggle).toHaveAttribute('aria-pressed', 'true');
+  await expect(firstToggle.locator('.mixed-card-back')).toBeVisible();
+  await keyboardActivate(firstToggle, 'Enter');
+  await expect(firstToggle).toHaveAttribute('aria-pressed', 'false');
+  await expect(firstToggle.locator('.mixed-card-front')).toBeVisible();
+  await firstToggle.press('ArrowRight');
+  await expect(firstToggle).toBeFocused();
+  await expect(firstToggle.locator('..')).not.toHaveAttribute('data-sense-id', beforeFlip.mixedVocabulary!.round!.senseIds[0]!);
+  await firstToggle.press('ArrowLeft');
+  await expect(firstToggle.locator('..')).toHaveAttribute('data-sense-id', beforeFlip.mixedVocabulary!.round!.senseIds[0]!);
+  expect((await savedData(page, 'vocabulary')).practice).toEqual(beforeFlip.practice);
+  expect((await savedData(page, 'vocabulary')).mixedVocabulary).toEqual(beforeFlip.mixedVocabulary);
   await keyboardActivate(page.locator('#feature-nav [data-feature="homework"]'));
   await ready(page, 'homework', 'choice');
   if (await page.locator('#homework-legacy-link').count()) { await revealControl(page, '#homework-legacy-link'); await keyboardActivate(page.locator('#homework-legacy-link')); } 

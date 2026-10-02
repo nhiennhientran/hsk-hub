@@ -6,7 +6,7 @@ export const progressCopy = {
   original: pair('综合练习 · 300题', 'Luyện tổng hợp · 300 câu'), pilot: pair('第9课拓展 · 30题', 'Bài 9 mở rộng · 30 câu'),
   perLesson: pair('每课进度', 'Tiến độ từng bài'), openBook: pair('打开教材', 'Mở giáo trình'), viewWork: pair('查看作业', 'Xem bài tập'),
   continueWork: pair('继续作业', 'Tiếp tục bài tập'), viewTranslation: pair('查看已提交翻译', 'Xem bản dịch đã nộp'), openTranslation: pair('开始翻译', 'Mở bài dịch'),
-  review: pair('打开复习计划', 'Mở lịch ôn'), openExercise: pair('打开练习', 'Mở bài tập'),
+  review: pair('打开混课词卡', 'Mở thẻ từ vựng nhiều bài'), openExercise: pair('打开练习', 'Mở bài tập'),
   translationNote: pair('重做草稿与已提交内容分开保存。可打开翻译查看或打印最近一次提交；保存到本机不代表老师已收到。', 'Bản nháp làm lại được giữ riêng với bản đã nộp. Mở bài dịch để xem hoặc in bản nộp gần nhất. Lưu trên thiết bị không có nghĩa là giáo viên đã nhận.'),
   ratingNote: pair('词汇自评不是对错分数。同一汉字的不同词义或读音分别安排复习。', 'Tự đánh giá không phải điểm đúng/sai. Các nghĩa hoặc cách đọc khác nhau của cùng một dạng chữ được giữ riêng.'),
 };

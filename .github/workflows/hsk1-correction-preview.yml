@@ -80,12 +80,14 @@ jobs:
       - name: Capture reviewable desktop and mobile pages before the long regression suite
         # The full required suite repeats these tests; still collect all other failures if an early layout fails.
         continue-on-error: true
-        run: npm run test:smoke -- --project=${{ matrix.browser }} legacy-preview.spec.ts
+        run: npm run test:smoke -- --project=${{ matrix.browser }} legacy-preview.spec.ts mixed-cards.spec.ts
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: correction-preview-${{ matrix.browser }}-screens
-          path: hsk1-app/.repro-output/legacy-preview/
+          path: |
+            hsk1-app/.repro-output/legacy-preview/
+            hsk1-app/.repro-output/mixed-preview/
           include-hidden-files: true
       - run: npm run test:smoke -- --project=${{ matrix.browser }}
       - run: npm run test:release -- --project=${{ matrix.browser }}

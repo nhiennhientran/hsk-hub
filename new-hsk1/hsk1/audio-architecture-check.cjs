@@ -8,7 +8,7 @@ if(fs.existsSync(path.join(root,'release-manifest.json')) || /<script\s+type="mo
   const manifest=JSON.parse(read('release-manifest.json'));
   assert(manifest.schema===1 && /^[a-f0-9]{40}$/.test(manifest.sourceCommit),'Invalid release identity');
   assert(manifest.productionBase==='/hsk-hub/new-hsk1/hsk1/','Wrong production base');
-  assert(manifest.productionRecoveryCommit==='069f9d956c9a600a91e6b4ce82241ceccc184dce','Wrong production recovery point');
+  assert(manifest.productionRecoveryCommit==='a74bd15736e894e1640a4a1848942f4cbc7ca9f8','Wrong production recovery point');
   assert(Array.isArray(manifest.files)&&manifest.files.length>360,'Incomplete release inventory');
   const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
   assert(hash(JSON.stringify(manifest.files))===manifest.buildId,'Build identity mismatch');

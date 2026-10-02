@@ -14,10 +14,14 @@ export async function navigateFeature(page: Page, feature: string, lesson = 10, 
       await page.locator('#feature-nav [data-feature="home"]').click();
       await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
       await page.locator(`.lesson-card[data-lesson="${lesson}"] h2 a`).click();
+    } else if (feature === 'listening') {
+      await page.locator('#feature-nav [data-feature="home"]').click();
+      await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
+      const selector = `.lesson-card[data-lesson="${lesson}"] a[href^="#/listening?"]`;
+      await revealControl(page, selector);
+      await page.locator(selector).click();
     } else {
       await page.locator('#feature-nav [data-feature="review"]').click();
-      await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
-      await page.locator(`#review-module a[href^="#/${feature}?"]`).first().click();
     }
   } else {
     await page.locator(`#feature-nav [data-feature="${feature}"]`).click();

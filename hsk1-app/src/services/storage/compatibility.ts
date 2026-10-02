@@ -13,6 +13,8 @@ import { FEATURES, PARTS, SECTIONS } from '../../app/contracts.ts';
 import type { Route, Section } from '../../app/contracts.ts';
 import { normalizeRoute, parseRoute } from '../../app/router.ts';
 import type { HomeworkState, PracticeState } from '../../domain/types.ts';
+import { resetMixedVocabulary, validateMixedVocabulary, type MixedVocabularyState } from '../../domain/vocabulary/mixed-state.ts';
+import type { VocabularyCatalog } from '../content/vocabulary.ts';
 
 export const LEGACY_KEYS = Object.freeze([
   'hsk1_ranteacher_progress_v1', 'hsk1_ranteacher_mastered_v1',
@@ -34,6 +36,8 @@ export interface AppData {
   /** New version is isolated: legacy answers and grades never count here. */
   homework30?: Homework30State;
   practice: PracticeState;
+  /** Independent browse-only round; old backups may omit it. */
+  mixedVocabulary?: MixedVocabularyState;
   exercises: ExercisesState;
   navigation: Route | null;
   /** Original bytes are kept once under their real source key. Access gates are excluded. */
@@ -190,7 +194,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
   }
   function validate(input: unknown): AppData {
     if (!record(input)) fail(dataWarning({"zh": "学习备份无效。", "vi": "Bản lưu học tập không hợp lệ."}));
-    exact(input, ['reading', 'homework', 'homework30', 'practice', 'exercises', 'navigation', 'legacyRaw']);
+    exact(input, ['reading', 'homework', 'homework30', 'practice', 'mixedVocabulary', 'exercises', 'navigation', 'legacyRaw']);
     const h = homework.validateImport(input.homework, bank), p = practice.importBackup(input.practice, catalog);
     const issues = [...homeworkScoreIssues(input.homework, h), ...practiceScoreIssues(input.practice, p)];
     if (issues.length) fail(dataWarning({ zh: `成绩或提交状态被修改，已拒绝导入（${issues[0]}）。`, vi: `Điểm hoặc trạng thái nộp bị sửa; nhập bị từ chối (${issues[0]}).` }));
@@ -203,7 +207,9 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
       if (!same(source, normalized)) fail(dataWarning({"zh": "继续学习的位置包含无效字段。", "vi": "Vị trí tiếp tục có trường không hợp lệ."}));
       navigation = normalized;
     }
-    return { reading: reading(input.reading), homework: h, ...(input.homework30 === undefined ? {} : { homework30: validateHomework30(input.homework30, getHomework30Bank()) }), practice: p, exercises: validateExercisesState(input.exercises, exerciseCatalogue), navigation, legacyRaw: rawSources(input.legacyRaw) };
+    return { reading: reading(input.reading), homework: h, ...(input.homework30 === undefined ? {} : { homework30: validateHomework30(input.homework30, getHomework30Bank()) }), practice: p,
+      ...(input.mixedVocabulary === undefined ? {} : { mixedVocabulary: validateMixedVocabulary(input.mixedVocabulary, catalog as VocabularyCatalog) }),
+      exercises: validateExercisesState(input.exercises, exerciseCatalogue), navigation, legacyRaw: rawSources(input.legacyRaw) };
   }
   function convert(input: unknown, now: number): { state: HomeworkState | PracticeState; key: string; warnings: string[] } {
     if (!record(input)) fail(dataWarning({"zh": "此文件不是受支持的 HSK 1 备份。", "vi": "Tệp không phải bản sao lưu HSK 1 được hỗ trợ."}));
@@ -500,6 +506,16 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
   const dataExerciseEntries = (state: ExercisesState) => Object.keys(state.records).length + Object.keys(state.drafts).length + Object.keys(state.positions).length;
   function reset(input: AppData, scope: ResetScope): ResetResult {
     const result = resetProgress(validate(input), scope, catalog as Parameters<typeof resetProgress>[2]);
+    if ((scope.module === 'all' || scope.module === 'vocabulary') && result.data.mixedVocabulary !== undefined) {
+      const before = result.data.mixedVocabulary;
+      result.data.mixedVocabulary = resetMixedVocabulary(before, scope.lesson, catalog as VocabularyCatalog);
+      if (!same(before, result.data.mixedVocabulary)) {
+        result.removed++;
+        result.warnings.push(result.data.mixedVocabulary.round
+          ? dataWarning({ zh: '混合词卡移除所选课次，保留其他课次的顺序与位置。', vi: 'Lượt từ trộn bỏ bài đã chọn, giữ thứ tự và vị trí của các bài còn lại.' })
+          : dataWarning({ zh: '此范围内的混合词卡练习将结束。', vi: 'Lượt từ trộn trong phạm vi này sẽ kết thúc.' }));
+      }
+    }
     if (scope.module === 'all' || scope.module === 'exercises') {
       const before = dataExerciseEntries(result.data.exercises);
       result.data.exercises = resetExercises(result.data.exercises, exerciseCatalogue, scope.lesson ?? undefined);

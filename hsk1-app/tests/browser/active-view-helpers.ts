@@ -1,3 +1,4 @@
+import { navigateFeature } from './ui-actions.ts';
 import { expect, type Page } from '@playwright/test';
 
 /** Exercise the native summary control rather than mutating the open attribute. */
@@ -8,12 +9,11 @@ export async function openLearningSettings(page: Page, feature: 'vocabulary' | '
   await expect(details).toHaveAttribute('open', '');
 }
 
-/** Student navigation uses the practice hub while feature URLs remain compatible. */
+/** Mixed cards open directly from practice; listening remains in course navigation. */
 export async function openPracticeFeature(page: Page, feature: 'vocabulary' | 'listening' | 'textbook'): Promise<void> {
-  await page.locator('#feature-nav [data-feature="review"]').click();
-  await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
-  await expect(page.locator('#review-module')).toBeVisible();
-  await page.locator(`#review-${feature}`).click();
+  const lesson = Number(await page.locator('#module-host').getAttribute('data-lesson')) || 1;
+  await navigateFeature(page, feature, lesson);
+  await expect(page.locator(feature === 'vocabulary' ? '#vocabulary-module' : `#${feature}-module`)).toBeVisible();
 }
 
 export async function selectDialogueScene(page: Page, index: number): Promise<void> {

@@ -38,7 +38,7 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 1024 }, { name: 
         expect(word!.y + word!.height, 'the first word should appear before the mobile fold').toBeLessThanOrEqual(viewport.height);
       }
       if (name === 'listening') { await page.locator('#listening-start').click(); await expect(page.locator('#listening-question')).toBeVisible(); }
-      if (name === 'mixed-vocabulary') { await page.locator('#vocabulary-start').click(); await expect(page.locator('#vocabulary-prompt')).toBeVisible(); }
+      if (name === 'mixed-vocabulary') { await page.locator('#vocabulary-start').click(); await expect(page.locator('.mixed-card-front').first()).toBeVisible(); }
       if (name === 'original-exercises' || name === 'pilot-reading') await expect(page.locator('#exercise-save-status')).toHaveAttribute('data-state', 'saved');
       if (name === 'mixed-vocabulary') await expect(page.locator('#vocabulary-save-status')).toHaveAttribute('data-state', 'saved');
       const width = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, viewport: innerWidth }));
