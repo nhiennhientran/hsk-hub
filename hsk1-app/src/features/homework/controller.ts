@@ -67,6 +67,9 @@ export function createHomeworkController(options: ControllerOptions) {
           new Set(value).size === value.length && Array.from(value).every(index => Number.isInteger(index) && index >= 0 && index < question.tokens.length)
           : engine.isAnswered(question, value);
       if (!valid) return { ok: false, reason: 'invalid' };
+      // Collecting an untouched textarea must not create a draft or an exit warning.
+      // Clearing previously entered text still persists the explicit empty answer.
+      if (question.kind === 'translation' && value === '' && current(state)?.draft[id] === undefined) return { ok: true };
       if (!equalAnswer(current(state)?.draft[id], value)) changed(draft => { engine.group(draft, lesson.lesson, part).draft[id] = value; });
       return { ok: true };
     },

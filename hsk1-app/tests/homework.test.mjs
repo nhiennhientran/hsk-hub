@@ -188,3 +188,19 @@ test('view limits and navigation availability reuse the canonical homework rules
   unlockTranslation(ctx);
   for (const part of ['choice', 'sort', 'translation']) assert.equal(choice.canOpen(part), true);
 });
+
+
+test('collecting untouched empty translations is a no-op while deleting entered text remains a dirty edit', async () => {
+  const ctx = setup(); const manual = unlockTranslation(ctx);
+  await ctx.store.save();
+  const before = ctx.store.snapshot(); const count = ctx.changes();
+  for (const question of manual.read().questions) assert.equal(manual.answer(question.id, '').ok, true);
+  assert.deepEqual(ctx.store.snapshot(), before); assert.equal(ctx.changes(), count);
+  const id = manual.read().questions[0].id;
+  assert.equal(manual.answer(id, '已有的中文').ok, true); await ctx.store.save();
+  assert.equal(manual.answer(id, '').ok, true);
+  assert.equal(ctx.store.snapshot().hasUnsavedChanges, true);
+  assert.equal(manual.read().group.draft[id], '');
+  await ctx.store.save();
+  assert.equal(ctx.store.snapshot().hasUnsavedChanges, false);
+});

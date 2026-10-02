@@ -43,9 +43,9 @@ test('denied localStorage reads preserve the inaccessible original and keep a ne
   const backup = await download(page);
   expect(backup.data.homework.lessons['10'].choice.draft[question.id]).toBe(0);
   const pendingExit = page.waitForEvent('dialog');
-  const failedRefresh = page.reload().catch(error => String(error));
+  await page.evaluate(() => { setTimeout(() => location.reload(), 0); });
   const exit = await pendingExit; expect(exit.type()).toBe('beforeunload');
-  await exit.dismiss(); await failedRefresh;
+  await exit.dismiss();
   await expect(page.locator(`input[data-answer-id="${question.id}"][value="0"]`)).toBeChecked();
   await expect(page.locator('#homework-save-status')).toHaveAttribute('data-state', 'unavailable');
   await page.locator('#feature-nav a[data-feature="progress"]').click(); await ready(page, 'progress');
@@ -108,9 +108,9 @@ test('an immediate refresh during a held save warns before discarding, retains t
     await page.locator(`input[data-answer-id="${question.id}"][value="2"]`).check();
     await page.locator('#homework-module').evaluate(node => { (node as HTMLElement).dataset.exitIdentity = 'retained'; });
     const pending = page.waitForEvent('dialog');
-    const refresh = page.reload().catch(error => String(error));
+    await page.evaluate(() => { setTimeout(() => location.reload(), 0); });
     const dialog = await pending; expect(dialog.type()).toBe('beforeunload');
-    await dialog.dismiss(); await refresh;
+    await dialog.dismiss();
     await expect(page.locator('#homework-module')).toHaveAttribute('data-exit-identity', 'retained');
     await expect(page.locator(`input[data-answer-id="${question.id}"][value="2"]`)).toBeChecked();
     expect(await page.evaluate(key => localStorage.getItem(key), key)).toBeNull();

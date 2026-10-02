@@ -557,6 +557,7 @@ test('exit protection captures an unreported composition tail before refresh, pr
   await page.goto('/#/homework?lesson=10&part=translation'); await ready(page, 'homework', 'translation');
   const id = lesson.translation[0]!.id;
   const textarea = page.locator(`textarea[data-answer-id="${id}"]`);
+  await textarea.click(); // Chromium requires sticky user activation before showing a native exit confirmation.
   await textarea.fill('已保存的前文'); await savedData(page, 'homework');
   const exact = '已保存的前文\n尚未发出input事件的中文尾字：字';
   await textarea.evaluate((node, value) => {
@@ -564,9 +565,9 @@ test('exit protection captures an unreported composition tail before refresh, pr
     (node as HTMLTextAreaElement).value = value;
   }, exact);
   const pending = page.waitForEvent('dialog');
-  const refresh = page.reload().catch(error => String(error));
+  await page.evaluate(() => { setTimeout(() => location.reload(), 0); });
   const dialog = await pending; expect(dialog.type()).toBe('beforeunload');
-  await dialog.dismiss(); await refresh;
+  await dialog.dismiss();
   await expect(textarea).toHaveValue(exact);
   await savedData(page, 'homework');
   await page.reload(); await ready(page, 'homework', 'translation');
@@ -580,10 +581,22 @@ test('exit protection captures an unreported composition tail before refresh, pr
     node.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertCompositionText', isComposing: true }));
   }, oversized);
   const invalidExit = page.waitForEvent('dialog');
-  const invalidRefresh = page.reload().catch(error => String(error));
+  await page.evaluate(() => { setTimeout(() => location.reload(), 0); });
   const invalidDialog = await invalidExit; expect(invalidDialog.type()).toBe('beforeunload');
-  await invalidDialog.dismiss(); await invalidRefresh;
+  await invalidDialog.dismiss();
   await expect(textarea).toHaveValue(oversized);
   expect((await savedData(page, 'homework')).homework.lessons['10']!.translation!.draft[id]).toBe(exact);
   await expect(page.locator('#homework-message')).toContainText('vượt giới hạn');
+});
+
+test('refreshing an untouched unlocked translation does not create empty drafts or an unnecessary exit warning', async ({ page }) => {
+  await authenticate(page, unlockedData());
+  await page.goto('/#/homework?lesson=10&part=translation'); await ready(page, 'homework', 'translation');
+  await page.locator('#homework-name').click(); // Real user activation makes an erroneous beforeunload guard observable.
+  const raw = await page.evaluate(key => localStorage.getItem(key), stateKey);
+  let warnings = 0; page.on('dialog', dialog => { warnings++; void dialog.dismiss(); });
+  await page.reload(); await ready(page, 'homework', 'translation');
+  expect(warnings).toBe(0);
+  expect(await page.evaluate(key => localStorage.getItem(key), stateKey)).toBe(raw);
+  for (const question of lesson.translation) await expect(page.locator(`textarea[data-answer-id="${question.id}"]`)).toHaveValue('');
 });
