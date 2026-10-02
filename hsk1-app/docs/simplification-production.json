@@ -479,7 +479,7 @@
   },
   "backupBranch": "backup/hsk1-pre-simplification-20261002",
   "productionCommit": "a74bd15736e894e1640a4a1848942f4cbc7ca9f8",
-  "status": "pages-published-awaiting-live-browser-verification",
+  "status": "published-live-verified",
   "url": "https://nhiennhientran.github.io/hsk-hub/new-hsk1/hsk1/",
   "approvalTimestamp": "2026-10-02T11:52:01Z",
   "runtimeRebuilt": false,
@@ -502,5 +502,54 @@
     }
   ],
   "remoteTreeVerified": true,
-  "remoteManagedFilesHashVerified": 413
+  "remoteManagedFilesHashVerified": 413,
+  "liveVerification": {
+    "runId": 37004908450,
+    "url": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37004908450",
+    "verificationSource": "39c3cc86945f5793ce49570ac0dbde7b59d3f770",
+    "runtimeSource": "c3a73654fbd76489be2eb1df01b692f4396003f8",
+    "chromium": {
+      "passed": 4,
+      "unexpected": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "retries": 0,
+      "durationSeconds": 43.015907,
+      "verifiedFiles": 413,
+      "verifiedBytes": 31156831,
+      "evidenceArtifactId": 11225054009,
+      "evidenceSHA256": "fc2e91c5c2b769967e3b0a9abbe4dfd450b3585df156aa055fdf58354b7e30d7"
+    },
+    "webkit": {
+      "passed": 4,
+      "unexpected": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "retries": 0,
+      "durationSeconds": 55.698365,
+      "verifiedFiles": 413,
+      "verifiedBytes": 31156831,
+      "evidenceArtifactId": 11225740673,
+      "evidenceSHA256": "bcda74989f4d83d5c287790ddf599b99a3d69f799361e8a752420264e7c54b71"
+    },
+    "profilePolicy": "Disposable synthetic browser contexts; no existing learner profiles used",
+    "screenshotsPerEngine": 6,
+    "coverage": [
+      "normal login without authentication bypass",
+      "index/lesson/learning/pilot entry parameters, refresh and history",
+      "all 413 actual published files, manifest exact bytes, real 404",
+      "30-question representative lesson including 25 automatic and 5 manual",
+      "five actual original homework audio clips with native currentTime observations",
+      "entire 75-ID independent listening queue and separate score domain",
+      "nonempty legacy history with 225-question denominator preserved",
+      "first/latest receipts, exact manual writing whitespace and drafts",
+      "export and import of complete versioned backup in fresh browser context",
+      "four navigation groups and desktop/mobile screenshot layouts"
+    ]
+  },
+  "limitations": [
+    "No physical iPhone/Android or system IME certification",
+    "No native teacher final language signoff or human item-by-item audio listening",
+    "No production rollback drill; code rollback does not reverse-migrate new learner records"
+  ]
 }
