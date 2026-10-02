@@ -4,6 +4,8 @@ import { readFile, readdir } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { test, expect, type Page, type TestInfo } from '@playwright/test';
+import { HOMEWORK30_PARTS, HOMEWORK30_COUNTS } from '../../src/domain/homework30/engine.ts';
+import type { Homework30Lesson } from '../../src/services/content/homework30.ts';
 import type { HomeworkLesson, SortQuestion } from '../../src/services/content/homework.ts';
 import type { BookLesson } from '../../src/services/content/textbook.ts';
 import type { ListeningCatalog } from '../../src/services/content/listening.ts';
@@ -21,11 +23,12 @@ const dist = resolve(process.env.HSK_RELEASE_DIST ?? fileURLToPath(new URL('../.
 const digest = (bytes: Buffer | string): string => createHash('sha256').update(bytes).digest('hex');
 const book = JSON.parse(await readFile(new URL('../../content/textbook.json', import.meta.url), 'utf8')) as { lessons: BookLesson[] };
 const bank = JSON.parse(await readFile(new URL('../../content/stage2-bank.json', import.meta.url), 'utf8')) as { lessons: HomeworkLesson[] };
+const bank30 = JSON.parse(await readFile(new URL('../../content/homework30-bank.json', import.meta.url), 'utf8')) as { lessons: Homework30Lesson[] };
 const catalog = JSON.parse(await readFile(new URL('../../content/stage3-catalog.json', import.meta.url), 'utf8')) as ListeningCatalog;
 const homeworkLesson = bank.lessons.find(row => row.id === 10)!;
 const textbookLesson = book.lessons.find(row => row.id === 10)!;
 type ReleaseFile = { path: string; bytes: number; sha256: string };
-type ReleaseManifest = { schema: number; sourceCommit: string; buildId: string; productionBase: string; files: ReleaseFile[] };
+type ReleaseManifest = { schema: number; sourceCommit: string; buildId: string; productionBase: string; productionRecoveryCommit: string; files: ReleaseFile[] };
 
 function deployment(baseURL: string | undefined): URL {
   if (!baseURL) throw new Error('Use playwright.release.config.ts with a production-path baseURL.');
@@ -164,6 +167,12 @@ test('every deployed file matches the exact release manifest, all 93 audio track
   expect(manifest.sourceCommit).toMatch(/^[a-f0-9]{40}$/);
   if (process.env.HSK_EXPECTED_COMMIT) expect(manifest.sourceCommit).toBe(process.env.HSK_EXPECTED_COMMIT);
   expect(manifest.buildId).toBe(digest(JSON.stringify(manifest.files)));
+  if (live) {
+    expect(manifest.sourceCommit).toBe('c3a73654fbd76489be2eb1df01b692f4396003f8');
+    expect(manifest.productionRecoveryCommit).toBe('f7127ccd656f9ce49ebb05673625ecd991e26403');
+    expect(manifest.buildId).toBe('27b0405d7bf253cabb1306a1eb12b74327fe77f794ea2014d85d2fca0d37b5b3');
+    expect(manifest.files).toHaveLength(413);
+  }
   expect(manifest.files.filter(file => /^course-assets\/audio\/.+\.mp3$/.test(file.path))).toHaveLength(93);
   expect(manifest.files.filter(file => /^course-assets\/hanzi\/.+\.json$/.test(file.path))).toHaveLength(267);
   expect(new Set(manifest.files.map(file => file.path)).size).toBe(manifest.files.length);
@@ -211,6 +220,9 @@ test('every deployed file matches the exact release manifest, all 93 audio track
   expect(bank.lessons.reduce((count, row) => count + row.choice.length + row.sort.length + row.translation.length, 0)).toBe(225);
   expect(catalog.listening).toHaveLength(75);
   expect(catalog.vocabulary).toHaveLength(344);
+  expect(bank30.lessons).toHaveLength(15);
+  for (const lesson of bank30.lessons) for (const part of HOMEWORK30_PARTS) expect(lesson[part]).toHaveLength(HOMEWORK30_COUNTS[part]);
+  expect(bank30.lessons.reduce((total, lesson) => total + HOMEWORK30_PARTS.reduce((count, part) => count + lesson[part].length, 0), 0)).toBe(450);
   await testInfo.attach('verified-release-identity.json', { body: Buffer.from(JSON.stringify({ sourceCommit: manifest.sourceCommit, buildId: manifest.buildId, base: base.href, verifiedFiles: manifest.files.length, bytes: manifest.files.reduce((count, row) => count + row.bytes, 0) }, null, 2)), contentType: 'application/json' });
 });
 
@@ -351,6 +363,15 @@ test('production textbook, exact manual receipt, native listening and vocabulary
   await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', sense.senseId);
   if (!sense.audio) throw new Error('Release representative vocabulary must have original audio.');
   await expect(page.locator('#vocabulary-play')).toBeDisabled();
+  // Free previous/next/skip navigation must not assign a mastery rating.
+  await page.locator('#vocabulary-next').click();
+  await expect(page.locator('#vocabulary-card')).not.toHaveAttribute('data-sense-id', sense.senseId);
+  await page.locator('#vocabulary-prev').click();
+  await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', sense.senseId);
+  await page.locator('#vocabulary-skip').click();
+  expect(Object.keys((await saved(page, 'vocabulary')).practice.cards.schedule)).toHaveLength(0);
+  await page.locator('#vocabulary-prev').click();
+  await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', sense.senseId);
   await page.locator('#vocabulary-reveal').click();
   await expect(page.locator('#vocabulary-answer')).toBeVisible();
   await page.locator('#vocabulary-play').click();
@@ -414,5 +435,225 @@ test('production textbook, exact manual receipt, native listening and vocabulary
     expect((await saved(restored, 'vocabulary')).practice.cards).toEqual(vocabulary);
     await restoredAudit(testInfo);
   } finally { await restoredContext.close(); }
+  await audit(testInfo);
+});
+
+async function captureLayout(page: Page, testInfo: TestInfo, name: string): Promise<void> {
+  await expect(page.locator('#auth-gate')).toBeHidden();
+  await page.evaluate(() => document.fonts.ready);
+  for (const [label, width, height] of [['desktop', 1440, 1000], ['mobile', 390, 844]] as const) {
+    await page.setViewportSize({ width, height });
+    await page.evaluate(() => window.scrollTo(0, 0));
+    expect(await page.evaluate(() => document.documentElement.scrollWidth), `${name} ${label} must not overflow`).toBeLessThanOrEqual(width);
+    await testInfo.attach(`live-simplified-${name}-${label}.png`, { body: await page.screenshot({ fullPage: true }), contentType: 'image/png' });
+  }
+  await page.setViewportSize({ width: 1440, height: 1000 });
+}
+
+test('live simplified navigation, 30-question version, five real homework audio clips, separate 75-question listening pool and version-safe backup restore', async ({ page, browser, baseURL }, testInfo) => {
+  const base = deployment(baseURL), audit = networkEvidence(page, base);
+  const lesson = bank30.lessons.find(row => row.id === 10)!;
+  const homeworkPlayback: Array<{ id: string; source: string; time: number; duration: number; paused: boolean }> = [];
+  await observeNativeAudio(page);
+  await page.goto(new URL('index.html?lesson=10', base).href);
+  await login(page); await ready(page, 'home');
+  await expect(page.locator('#feature-nav a')).toHaveCount(4);
+  expect(await page.locator('#feature-nav a').evaluateAll(links => links.map(link => (link as HTMLElement).dataset.feature))).toEqual(['home', 'homework', 'review', 'progress']);
+  await expect(page.locator('#feature-nav [lang="zh"]')).toHaveCount(4);
+  await expect(page.locator('#feature-nav [lang="vi"]')).toHaveCount(4);
+  await expect(page.locator('.lesson-card')).toHaveCount(15);
+  await expect(page.locator('.lesson-card a:visible')).toHaveCount(15);
+  await expect(page.locator('.lesson-card details[open]')).toHaveCount(0);
+  await expect(page.locator('.lesson-card a[href^="#/exercises"]')).toHaveCount(0);
+  await captureLayout(page, testInfo, 'home');
+  const card = page.locator('.lesson-card[data-lesson="10"]');
+  await card.locator('summary').focus(); await page.keyboard.press('Enter');
+  await expect(card.locator('[data-lesson-section]:visible')).toHaveCount(5);
+  await card.locator('a[href^="#/homework?"]').focus(); await page.keyboard.press('Enter');
+  await ready(page, 'homework', 10, '#/homework?lesson=10&part=choice&version=30-v1');
+  await expect(page.locator('[data-homework-part]')).toHaveCount(5);
+  await expect(page.locator('[data-question-id]')).toHaveCount(10);
+  await expect(page.locator('#homework-submission-details')).not.toHaveAttribute('open');
+  await expect(page.locator('#homework-study-details')).not.toHaveAttribute('open');
+  await captureLayout(page, testInfo, 'homework');
+
+  // Produce nonempty legacy history through the existing form, never seed a
+  // profile or rescale historical scores to the new version's denominator.
+  await revealControl(page, '#homework-legacy-link');
+  await page.locator('#homework-legacy-link').click();
+  await ready(page, 'homework', 10, '#/homework?lesson=10&part=choice');
+  for (const q of homeworkLesson.choice) await page.locator(`input[data-answer-id="${q.id}"][value="${q.answer}"]`).check();
+  await page.locator('#submit-homework').click();
+  const legacy = (await saved(page, 'homework')).homework;
+  expect(legacy.lessons['10']!.choice!.latest).toMatchObject({ correct: 5, total: 5 });
+  await page.locator('#feature-nav [data-feature="homework"]').click();
+  await ready(page, 'homework', 10, '#/homework?lesson=10&part=choice&version=30-v1');
+  const beforeNewWork = await saved(page, 'homework');
+  const answers = Object.fromEntries(lesson.translation.map((q, index) => [q.id, `  新版第 ${index + 1} 题。\nBản thử độc lập, giữ nguyên e\u0301.\n\n  `]));
+  await page.locator('#submit-homework').click();
+  await expect(page.locator('.is-missing')).toHaveCount(10);
+  for (const part of HOMEWORK30_PARTS) {
+    if (part !== 'choice') await page.locator(`[data-homework-part="${part}"]`).click();
+    await ready(page, 'homework', 10, `#/homework?lesson=10&part=${part}&version=30-v1`);
+    await expect(page.locator('[data-question-id]')).toHaveCount(HOMEWORK30_COUNTS[part]);
+    if (part === 'choice') {
+      // The first and latest scores must remain different after an honest redo.
+      for (const q of lesson.choice) await page.locator(`input[data-answer-id="${q.id}"][value="${(q.answer + 1) % 4}"]`).check();
+      await page.locator('#submit-homework').click(); await saved(page, 'homework');
+      await expect(page.locator('#homework-result')).toContainText('0 / 10');
+      await page.locator('#restart-homework').click();
+    }
+    if (part === 'listening') {
+      await expect(page.locator('[data-homework-audio]')).toHaveCount(5);
+      await expect(page.locator('.homework-question details')).toHaveCount(0);
+      const beforePlay = (await saved(page, 'homework')).homework30;
+      for (const q of lesson.listening) {
+        await page.locator(`[data-homework-audio="${q.id}"]`).click();
+        await expect.poll(async () => (await nativeAudio(page)).source).toBe(new URL(`course-assets/audio/${q.audio.track}.mp3`, base).href);
+        await expect.poll(async () => (await nativeAudio(page)).time).toBeGreaterThan(q.audio.start + .035);
+        expect((await nativeAudio(page)).duration).toBeGreaterThan(q.audio.end);
+        expect((await nativeAudio(page)).paused).toBe(false);
+        homeworkPlayback.push({ id: q.id, ...await nativeAudio(page) });
+        await page.locator(`[data-homework-audio="${q.id}"]`).locator('..').locator('button').nth(1).click();
+        await expect.poll(async () => (await nativeAudio(page)).paused).toBe(true);
+      }
+      expect((await saved(page, 'homework')).homework30).toEqual(beforePlay);
+      expect((await saved(page, 'homework')).practice).toEqual(beforeNewWork.practice);
+    }
+    for (const q of lesson[part]) {
+      if (q.kind === 'sort') for (const index of orderFor(q)) await page.locator(`[data-sort-add="${q.id}"][data-token-index="${index}"]`).click();
+      else if (q.kind === 'translation') await page.locator(`textarea[data-answer-id="${q.id}"]`).fill(answers[q.id]!);
+      else await page.locator(`input[data-answer-id="${q.id}"][value="${q.answer}"]`).check();
+    }
+    await page.locator('#submit-homework').click();
+    const state = await saved(page, 'homework');
+    expect(state.homework).toEqual(legacy);
+    expect(state.practice).toEqual(beforeNewWork.practice);
+    expect(state.exercises).toEqual(beforeNewWork.exercises);
+    const attempt = state.homework30!.lessons['10']![part]!.latest!;
+    expect(attempt.total).toBe(HOMEWORK30_COUNTS[part]);
+    expect(attempt.assessment).toBe(part === 'translation' ? 'manual' : 'automatic');
+    expect(attempt.correct).toBe(part === 'translation' ? null : HOMEWORK30_COUNTS[part]);
+    if (part === 'translation') expect(attempt).toMatchObject({ answers, results: null });
+    else await expect(page.locator('#homework-result')).toContainText(`${HOMEWORK30_COUNTS[part]} / ${HOMEWORK30_COUNTS[part]}`);
+    if (part === 'listening') await expect(page.locator('.homework-question details')).toHaveCount(5);
+  }
+  const complete = (await saved(page, 'homework')).homework30!;
+  expect(HOMEWORK30_PARTS.filter(part => part !== 'translation').reduce((total, part) => total + complete.lessons['10']![part]!.latest!.correct!, 0)).toBe(25);
+  expect(complete.lessons['10']!.choice!.first!.correct).toBe(0);
+  expect(complete.lessons['10']!.choice!.latest!.correct).toBe(10);
+  await page.locator('#receipt-latest').click(); await receipt(page, answers);
+  await expect(page.locator('#homework-receipt')).toContainText('hsk1-homework-30-v1');
+  await page.locator('#close-receipt').focus(); await page.keyboard.press('Enter');
+  await expect(page.locator('#receipt-latest')).toBeFocused();
+  await page.locator('#restart-homework').click();
+  const draftId = lesson.translation[0]!.id, draft = '  尚未提交的新草稿\nGiữ nguyên bản nháp.  ';
+  await page.locator(`textarea[data-answer-id="${draftId}"]`).fill(draft);
+  await saved(page, 'homework');
+  await page.reload(); await ready(page, 'homework');
+  await expect(page.locator(`textarea[data-answer-id="${draftId}"]`)).toHaveValue(draft);
+  await page.locator('#receipt-latest').click(); await receipt(page, answers);
+  await page.locator('#close-receipt').click();
+  const completedWithDraft = (await saved(page, 'homework')).homework30;
+
+  await page.locator('#feature-nav [data-feature="review"]').focus(); await page.keyboard.press('Enter');
+  await ready(page, 'review');
+  await expect(page.locator('#review-module a')).toHaveCount(3);
+  await expect(page.locator('#review-module a[href^="#/exercises"]')).toHaveCount(0);
+  await page.locator('#review-listening').click(); await ready(page, 'listening');
+  await expect(page.locator('#feature-nav [data-nav-group="practice"]')).toHaveAttribute('aria-current', 'page');
+  await expect(page.locator('.lesson-picker')).toBeHidden();
+  await revealControl(page, '#listening-all');
+  await page.locator('#listening-all').click();
+  await page.locator('#listening-count').selectOption('all');
+  await page.locator('#listening-mode').selectOption('all');
+  await page.locator('#listening-shuffle').uncheck();
+  await page.locator('#listening-start').click();
+  const pool = (await saved(page, 'listening')).practice.listening;
+  // Verify the entire actual saved queue, while the frozen smoke suite remains
+  // the exhaustive 75-question answer/feedback acceptance (no redundant replay).
+  expect(pool.session!.questionIds).toEqual(catalog.listening.map(q => q.id));
+  expect(new Set(pool.session!.questionIds as string[]).size).toBe(75);
+  expect(Object.keys(pool.records)).toHaveLength(0);
+  const q = catalog.listening[0]!;
+  await expect(page.locator('#listening-question')).toHaveAttribute('data-question-id', q.id);
+  await expect(page.locator('[data-listening-transcript], [data-listening-pinyin], #listening-feedback')).toHaveCount(0);
+  await page.locator('#listening-play').click();
+  await playing(page, base, '#listening-audio-status', q.audio.track, q.audio.start, q.audio.end);
+  await page.locator('#listening-pause').click();
+  await page.locator(`input[data-option-index="${q.answer}"]`).check();
+  await page.locator('#listening-submit').click();
+  await expect(page.locator('#listening-feedback')).toBeVisible();
+  const afterListening = await saved(page, 'listening');
+  expect(Object.keys(afterListening.practice.listening.records)).toHaveLength(1);
+  expect(afterListening.homework30).toEqual(completedWithDraft);
+  expect(afterListening.homework).toEqual(legacy);
+
+  await navigate(page, 'progress');
+  await expect(page.locator('#progress-current-homework-submitted')).toContainText('30/450');
+  await expect(page.locator('#progress-current-translation-submitted')).toContainText('5/75');
+  await expect(page.locator('#progress-listening-submitted')).toContainText('1/75');
+  await expect(page.locator('[data-progress-lesson]')).toHaveCount(15);
+  await expect(page.locator('[data-progress-lesson][open]')).toHaveCount(0);
+  await captureLayout(page, testInfo, 'progress');
+  await revealControl(page, '#progress-homework-submitted');
+  await expect(page.locator('#progress-homework-submitted')).toContainText('5/225');
+  await page.locator('[data-progress-lesson="10"] > summary').focus(); await page.keyboard.press('Enter');
+  await expect(page.locator('[data-progress-lesson="10"]')).toContainText('30/30');
+  await expect(page.locator('[data-progress-lesson="10"]')).toContainText('25/25');
+  await page.locator('#open-data-manager').click();
+  await expect(page.locator('#reset-lesson')).toHaveValue('');
+  await expect(page.locator('#reset-module')).toHaveValue('');
+  await expect(page.locator('#preview-reset')).toBeDisabled();
+  await page.locator('#close-data-manager').focus(); await page.keyboard.press('Enter');
+  await expect(page.locator('#open-data-manager')).toBeFocused();
+  await page.locator('#open-data-manager').click();
+  const pending = page.waitForEvent('download'); await page.locator('#export-backup').click();
+  const download = await pending;
+  expect(await download.failure()).toBeNull();
+  const stream = await download.createReadStream();
+  if (!stream) throw new Error('Downloaded simplified-release backup stream is unavailable.');
+  const chunks: Buffer[] = []; for await (const chunk of stream) chunks.push(Buffer.from(chunk));
+  const raw = Buffer.concat(chunks), backup = JSON.parse(raw.toString('utf8')) as { data: AppData };
+  expect(backup.data).toEqual(await saved(page, 'progress'));
+  expect(raw.toString('utf8')).not.toContain(sessionKey);
+  expect(backup.data.homework).toEqual(legacy);
+  expect(backup.data.homework30).toEqual(completedWithDraft);
+
+  const context = await browser.newContext({ storageState: { cookies: [], origins: [] } });
+  try {
+    const restored = await context.newPage(), restoredAudit = networkEvidence(restored, base);
+    await restored.goto(new URL('index.html#/progress?lesson=10', base).href);
+    expect(await restored.evaluate(key => localStorage.getItem(key), stateKey)).toBeNull();
+    await login(restored); await ready(restored, 'progress');
+    await restored.locator('#open-data-manager').click();
+    await restored.locator('#backup-file').setInputFiles({ name: download.suggestedFilename(), mimeType: 'application/json', buffer: raw });
+    await expect(restored.locator('#migration-preview')).toBeVisible();
+    await restored.locator('#confirm-data-import').click();
+    await expect(restored.locator('#data-status')).toHaveAttribute('data-state', 'saved');
+    expect(await saved(restored, 'progress')).toEqual(backup.data);
+    await restored.reload(); await ready(restored, 'progress');
+    expect(await saved(restored, 'progress')).toEqual(backup.data);
+    await restored.goto(new URL('index.html#/homework?lesson=10&part=translation&version=30-v1', base).href);
+    await ready(restored, 'homework');
+    await expect(restored.locator(`textarea[data-answer-id="${draftId}"]`)).toHaveValue(draft);
+    await restored.locator('#receipt-latest').click(); await receipt(restored, answers);
+    await restored.locator('#close-receipt').click();
+    await restored.locator('[data-homework-part="choice"]').click(); await ready(restored, 'homework');
+    await restored.locator('#receipt-first').click();
+    await expect(restored.locator('[data-receipt-score]')).toContainText('0/10');
+    await restored.locator('#receipt-version').selectOption('latest');
+    await expect(restored.locator('[data-receipt-score]')).toContainText('10/10');
+    await restored.locator('#close-receipt').click();
+    await restored.goto(new URL('learning.html#/exercises?lesson=10&set=homework-review&group=choice&filter=wrong', base).href);
+    await ready(restored, 'exercises');
+    await expect(restored.locator('#exercises-module.exercise-archive')).toBeVisible();
+    await expect(restored.locator('#exercises-module input, #exercises-module textarea, #exercises-module select, #exercises-module button')).toHaveCount(0);
+    await expect(restored.locator('.archive-question')).toHaveCount(5);
+    await expect(restored.locator('[data-archive-source="homework"] > [data-result="correct"]')).toHaveCount(10);
+    expect((await restored.evaluate(key => JSON.parse(localStorage.getItem(key)!).data, stateKey)).homework).toEqual(legacy);
+    await restoredAudit(testInfo);
+  } finally { await context.close(); }
+  await testInfo.attach('simplified-live-coverage.json', { body: Buffer.from(JSON.stringify({ lesson: 10, homeworkQuestions: 30, automatic: 25, manual: 5, originalHomeworkAudioClipsPlayed: homeworkPlayback, standaloneListeningQueue: catalog.listening.map(q => q.id), navigationGroups: 4, legacyHistoryDenominator: 225, newHistoryDenominator: 450, profiles: 'disposable synthetic only', screenshots: ['home', 'homework', 'progress'].flatMap(view => [`${view}-desktop`, `${view}-mobile`]) }, null, 2)), contentType: 'application/json' });
   await audit(testInfo);
 });

@@ -1,6 +1,6 @@
 # HSK 1 简化学习流程预览
 
-这是独立预览分支的后续优化，尚未获得本轮正式发布批准。生产恢复版本的证据仍在 `legacy-restoration-production.md`；不能把它的通过结果当作本轮验收。
+这是独立预览分支的后续优化，已于2026-10-02 11:52 UTC获得本轮正式发布批准；部署和线上验收见 `simplification-production.json`。生产恢复版本的证据仍在 `legacy-restoration-production.md`；不能把它的通过结果当作本轮验收。
 
 ## 学生入口
 
@@ -31,6 +31,10 @@
 - `src/features/exercises/archive-data.ts`：只读历史投影，不创建新提交、回填分数或排序原时间
 
 不要为减少按钮重写音频服务、学习store、路由、学习规则或引入新的框架。纯展示状态留在DOM；不要为展开面板新增持久化格式。新内容的语义修订在未发布版本中完成；已发布后不得仅改指纹来冒充兼容。
+
+## 最终验收结果
+
+本轮最终源提交 `c3a73654` 已通过 309 单元测试，Chromium 与 WebKit 各 146 完整浏览器检查 + 3 严格发布路径检查。详细结果、哈希与验证边界见 [最终预览验收](simplification-acceptance.md) 和 `simplification-acceptance.json`。当前生产/回退基线为 `f7127ccd656f9ce49ebb05673625ecd991e26403`；后续已获本轮正式发布批准。
 
 ## 最终验收流程
 

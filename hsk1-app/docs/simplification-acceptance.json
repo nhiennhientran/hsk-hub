@@ -1,0 +1,72 @@
+{
+  "sourceCommit": "c3a73654fbd76489be2eb1df01b692f4396003f8",
+  "buildId": "27b0405d7bf253cabb1306a1eb12b74327fe77f794ea2014d85d2fca0d37b5b3",
+  "verifiedFiles": 413,
+  "bankSHA256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+  "artifacts": [
+    {
+      "sha256": "7b31035b1dc42d6ee2ebb912f0321a5e6fcf9af582ff1815e6abd53c6b66b663",
+      "file": "correction-preview-shared-build-c3a7365.zip"
+    },
+    {
+      "sha256": "6f45d43f400dc538e9474a143a1b9eb9e61e8d5f587eda412d74c6e6777490f6",
+      "file": "correction-preview-chromium-screens-c3a7365.zip"
+    },
+    {
+      "sha256": "2bcb0c831cc826ba36e623b26e1c9cea3121ba165fc763a850cf0efe159b860a",
+      "file": "correction-preview-webkit-screens-c3a7365.zip"
+    }
+  ],
+  "status": "preview-tested-production-authorized",
+  "sourceTree": "5b59da50bc39c2b32fdfab3568fd3c25b66e112a",
+  "ciRun": 37000497275,
+  "ciUrl": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37000497275",
+  "unitTests": 309,
+  "browserTests": {
+    "chromium": {
+      "fullSmoke": 146,
+      "strictRelease": 3,
+      "earlyScreensIncludedInSmoke": 6
+    },
+    "webkit": {
+      "fullSmoke": 146,
+      "strictRelease": 3,
+      "earlyScreensIncludedInSmoke": 6
+    }
+  },
+  "homework": {
+    "lessons": 15,
+    "perLesson": 30,
+    "total": 450,
+    "automatic": 375,
+    "manual": 75,
+    "adaptationFlags": 196
+  },
+  "correctCurrentRollbackBaseline": "f7127ccd656f9ce49ebb05673625ecd991e26403",
+  "productionDeploymentAuthorized": true,
+  "portablePreviewSHA256": "2c0bcbc114150c790f07988963dc7acd2070a0cf240cb6e39a2624cbeecbdd84",
+  "inventoryWorkbookSHA256": "787d9fa3f7048ef874aa3250a5e4a8d4c63286cf3f708395fa3919c14c8b871d",
+  "limitations": [
+    "No human native-teacher final language signoff",
+    "No human item-by-item listening certification",
+    "No physical iPhone/Android device validation",
+    "IME coverage uses synthetic composition/paste and keyboard paths",
+    "No standalone ESLint configuration; no separate ESLint pass claimed",
+    "Workbook rendered/recalculated/exported/XML checked, not operated in native Microsoft Excel"
+  ],
+  "approvalTimestamp": "2026-10-02T11:52:01Z",
+  "portablePreviewParts": [
+    {
+      "filename": "HSK1-受测预览-第1包-主程序.zip",
+      "bytes": 9648531,
+      "sha256": "8d6d999449ae1561a89b7cbc20f6645cca70c33b01b71a67d384b03c1af85eb1"
+    },
+    {
+      "filename": "HSK1-受测预览-第2包-配套音频.zip",
+      "bytes": 11461126,
+      "sha256": "dc17c0ef5cac77db63e4ee873736bccf1607dd31c87a0407ef5bd67c4920bd14"
+    }
+  ],
+  "originalPortablePreviewOverChatLimit": true,
+  "productionBeforePublication": "f7127ccd656f9ce49ebb05673625ecd991e26403"
+}
