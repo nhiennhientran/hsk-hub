@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T20:01:00Z",
+  "updatedAt": "2026-10-02T21:35:00Z",
   "phases": [
     {
       "phase": 1,
@@ -92,31 +92,56 @@
     {
       "phase": 7,
       "title": "HSK3 lessons 1–3 pilot",
-      "status": "in_progress",
-      "content": "HSK3lessons1–3 and latercomplexlesson18 independently reviewed. Pilot1–3 dual-engine layout/homework passed; later18 narrative/grammar/review/pinyin stress tests now prepared for both engines."
+      "status": "complete",
+      "content": "HSK3lessons1–3 and latercomplexlesson18 independently reviewed. Pilot1–3 dual-engine layout/homework passed; later18 narrative/grammar/review/pinyin stress tests now prepared for both engines.",
+      "evidence": {
+        "ciRun": 37060569230,
+        "source": "835923270466a8748346be62b53ec0429a81db61",
+        "rawTestsPerEngine": 55,
+        "packagedTestsPerEngine": 4,
+        "hsk1NativeTestsPerEngine": 6,
+        "laterComplexScreensInspected": 32
+      }
     },
     {
       "phase": 8,
       "title": "HSK3 lessons 4–9",
-      "status": "in_progress",
-      "content": "HSK3lessons4–6 and7–9 independently reviewed in separate checkpoints.4–6 accepted in CI37054676272;7–9 browser checkpoint being submitted."
+      "status": "complete",
+      "content": "HSK3lessons4–6 and7–9 independently reviewed in separate checkpoints.4–6 accepted in CI37054676272;7–9 browser checkpoint being submitted.",
+      "evidence": {
+        "ciRun": 37060569230,
+        "source": "835923270466a8748346be62b53ec0429a81db61",
+        "rawTestsPerEngine": 55,
+        "packagedTestsPerEngine": 4,
+        "hsk1NativeTestsPerEngine": 6,
+        "laterComplexScreensInspected": 32
+      }
     },
     {
       "phase": 9,
       "title": "HSK3 lessons 10–15",
-      "status": "in_progress",
-      "content": "Authoring10–12 first, then13–15; independent review pending."
+      "status": "content-complete; final browser acceptance in progress",
+      "content": "All final HSK3 lessons independently reviewed; all33 lesson and catalogue release gates pass. Canonical catalogue review8cedfdb."
     },
     {
       "phase": 10,
       "title": "HSK3 lessons 16–18 and coverage closure",
-      "status": "pending",
-      "content": "Lesson18 early complex sample independently reviewed.16–17 and fullcoverage closure remain pending."
+      "status": "content-complete; final browser acceptance in progress",
+      "content": "All final HSK3 lessons independently reviewed; all33 lesson and catalogue release gates pass. Canonical catalogue review8cedfdb."
     },
     {
       "phase": 11,
       "title": "Full frozen-artifact QA",
-      "status": "pending"
+      "status": "in_progress",
+      "evidence": {
+        "localUnitTests": 30,
+        "releaseContentIssues": 0,
+        "protectedAssemblyFiles": 1140,
+        "staticSiteErrors": 0,
+        "legacyGrammarAudit": 236,
+        "latestFullPilotRun": 37066695453,
+        "latestFullPilotResult": "Chromium74/79, WebKit75/79; test level parameter and asynchronous pagination waits corrected; final release candidate must rerun without borrowing earlier passes."
+      }
     },
     {
       "phase": 12,
@@ -124,7 +149,11 @@
       "status": "pending"
     }
   ],
-  "limitations": [],
+  "limitations": [
+    "AI independent language/source review, not native-speaker certification",
+    "Full audio decode and ASR comparison, not full human listening",
+    "Simulated composition events; physical Chinese IME still unverified"
+  ],
   "currentWork": "HSK3content checkpoints and earlylesson18 complex sample; preserve same frozen tested bytes for scoped release. Full33-lesson acceptance remains open.",
   "ci": {
     "latestSourceCommit": "13f6f5a2b17926cbc16f360b3c674ff6de20305f",
@@ -135,5 +164,6 @@
     ],
     "latestRun": 37054676272,
     "latestResult": "Green47course+4packaged+6HSK1media perengine; zero skipped,unexpected or flaky. Frozen-code artifact SHAverified and all293package files restored locally from exact frozen bytes plus264hash-bound original MP3 files; no rebuild."
-  }
+  },
+  "productionUnchanged": "caeac03798b91095f6fb0916e3c0bfd908381f45"
 }

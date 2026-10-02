@@ -1,0 +1,15 @@
+# Full two-edition content closure
+
+All33 lesson files have separate author and independent AI source/language review. HSK2 contains15 lessons,60 texts,45 grammar points,450 homework questions and60 independent listening questions. HSK3 contains18 lessons,72 texts,63 grammar points,540 homework questions and72 independent listening questions. Combined:132 texts,108 grammar points,990 homework (825 auto/165 manual),132 independent listening and264 original MP3 tracks. Manual questions contain no public model answers or scoring keys.
+
+Canonical vocabulary: HSK2 has226 POS/meaning cards across209 Chinese forms; HSK3 has523 cards across487 forms. All749 source bindings and52 same-form groups were independently checked, including48 original word-list pages. Zero repeated-sense merges were warranted. These counts are distinct from the source's200/500 syllabus targets and from counting printed word-list headwords.
+
+The entire scanned lesson content was compared with source images in authored and independent passes, including objectives, warmups, four texts, vocabulary, grammar/tasks, learning tips, integrated exercises, classroom activities, printed culture panels and three-lesson reviews. Vietnamese and optional HSK3 sentence pinyin are editorial; vocabulary pinyin is printed source content. Culture videos were not provided and remain explicitly unavailable, with printed theme/identifier preserved.
+
+All264 original files were hash-checked and fully decoded. Complete auxiliary ASR was compared in lesson reviews; homophone/name errors were rejected against the printed source. Automated decode and ASR do not certify full human listening. Language review is AI-assisted, not a claim of native-speaker proofreading. HSK3 pinyin defaults off and selected multi-reading contexts have additional permanent guards.
+
+Recorded source issues remain visible rather than silently misrepresenting the supplied answers: HSK2 lesson13's underdetermined individual/collective inference; HSK3 lesson6's two answer-key letters corrected by the text with 按课文核订 notes; lesson12's consecutive B speaker labels preserved as printed; lesson15's overlapping numerical options; lesson16's answer-key text-number typo. None becomes an ambiguous auto-graded homework item.
+
+Final cross-review of the revised HSK3 lessons10–12 audio explanations covered all27 questions against12 original text pages and12 complete auxiliary ASRs;11 later ellipsis excerpts were checked against source pages. No remaining unsupported explanation was found after repairs. All297 supplemental audio questions now point to a page containing their linked original text.
+
+Release validation now requires all33 independently reviewed lessons, exact30-question distributions, no manual answer leakage, no duplicated full questions, complete page identity, reviewed canonical catalogues and explicit homograph decisions. Browser and online release acceptance are separate gates; content completion alone does not authorize claiming that those tests passed.

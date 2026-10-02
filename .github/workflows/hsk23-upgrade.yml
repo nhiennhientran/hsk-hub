@@ -24,8 +24,8 @@ jobs:
         run: |
           npm test
           npm run check
-          HSK_PILOT=1 npm run build
-          node tools/package-release.mjs --pilot
+          npm run build
+          node tools/package-release.mjs
       - uses: actions/upload-artifact@v4
         with:
           name: hsk23-frozen-package
@@ -58,7 +58,7 @@ jobs:
         run: npm ci --prefix hsk1-app && npm test --prefix hsk1-app && npm run build:release --prefix hsk1-app
       - uses: actions/upload-artifact@v4
         with:
-          name: hsk23-frozen-pilot
+          name: hsk23-frozen-app
           path: course-app/dist/
           include-hidden-files: true
       - uses: actions/upload-artifact@v4
@@ -87,7 +87,7 @@ jobs:
       - run: npm ci && npm ci --prefix ../hsk1-app
       - uses: actions/download-artifact@v4
         with:
-          name: hsk23-frozen-pilot
+          name: hsk23-frozen-app
           path: course-app/dist/
       - uses: actions/download-artifact@v4
         with:
@@ -129,7 +129,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: hsk23-pilot-${{ matrix.browser }}-evidence
+          name: hsk23-acceptance-${{ matrix.browser }}-evidence
           path: |
             course-app/.repro-output/
             course-app/test-results/

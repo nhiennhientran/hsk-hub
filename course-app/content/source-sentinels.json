@@ -97,9 +97,10 @@
       ],
       "pdfPage": 16,
       "expected": {
-        "zh": "别着急，我们拿着护照和机票，去服务台问问吧。"
+        "zh": "别着急，我们拿着护照和机票，去服务台问问吧。",
+        "py": "Bié zháojí, wǒmen názhe hùzhào hé jīpiào, qù fúwùtái wènwen ba."
       },
-      "review": "2026-10-02 retrospective pixel check; OCR discrepancy resolved from page image"
+      "review": "2026-10-02 retrospective pixel check; OCR discrepancy resolved from page image; editorial pinyin contextual recheck: 着急: zháojí versus 拿着: názhe"
     },
     {
       "lessonId": "hsk2-fltrp-2026:l08",
@@ -953,6 +954,201 @@
         "zh": "并列复句“一会儿……，一会儿……”：它一会儿在你脚边睡觉，一会儿在你身上爬。　理解□　会用□"
       },
       "review": "Independent18 correction audit ac969418; snapshot preserves reviewed field and source page"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l01",
+      "path": [
+        "texts",
+        1,
+        "lines",
+        4
+      ],
+      "pdfPage": 16,
+      "expected": {
+        "zh": "我们快找谁问一下吧，箱子里有不少重要的东西。",
+        "py": "Wǒmen kuài zhǎo shéi wèn yíxià ba, xiāngzi lǐ yǒu bù shǎo zhòngyào de dōngxi."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 重要: zhòngyào, importance"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l02",
+      "path": [
+        "texts",
+        1,
+        "lines",
+        4
+      ],
+      "pdfPage": 25,
+      "expected": {
+        "zh": "这里的饭菜又便宜又好吃，我们经常来，服务员都记住我们爱吃的菜了。",
+        "py": "Zhèlǐ de fàncài yòu piányi yòu hǎochī, wǒmen jīngcháng lái, fúwùyuán dōu jìzhù wǒmen ài chī de cài le."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 便宜: piányi versus 方便: fāngbiàn"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l02",
+      "path": [
+        "texts",
+        2,
+        "lines",
+        5
+      ],
+      "pdfPage": 26,
+      "expected": {
+        "zh": "那真是太方便了！",
+        "py": "Nà zhēn shì tài fāngbiàn le!"
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 方便: fāngbiàn"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l03",
+      "path": [
+        "texts",
+        2,
+        "lines",
+        2
+      ],
+      "pdfPage": 35,
+      "expected": {
+        "zh": "咱们办张信用卡吧，花的钱可以慢慢还。听说中国银行的服务不错，办了信用卡买东西还能便宜。",
+        "py": "Zánmen bàn zhāng xìnyòngkǎ ba, huā de qián kěyǐ mànmàn huán. Tīngshuō Zhōngguó Yínháng de fúwù búcuò, bàn le xìnyòngkǎ mǎi dōngxi hái néng piányi."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 还: huán repayment versus hái still; 银行: yínháng"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l05",
+      "path": [
+        "texts",
+        2,
+        "lines",
+        5
+      ],
+      "pdfPage": 54,
+      "expected": {
+        "zh": "你不用看着我，想干什么都可以。",
+        "py": "Nǐ búyòng kànzhe wǒ, xiǎng gàn shénme dōu kěyǐ."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 看着: kànzhe; 干: gàn action"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l05",
+      "path": [
+        "texts",
+        3,
+        "lines",
+        2
+      ],
+      "pdfPage": 55,
+      "expected": {
+        "zh": "不知道你对中国的音乐有没有兴趣？我送你一张明天下午音乐会的门票。",
+        "py": "Bù zhīdào nǐ duì Zhōngguó de yīnyuè yǒu méiyǒu xìngqù? Wǒ sòng nǐ yì zhāng míngtiān xiàwǔ yīnyuèhuì de ménpiào."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 音乐: yīnyuè"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l09",
+      "path": [
+        "texts",
+        1,
+        "lines",
+        6
+      ],
+      "pdfPage": 91,
+      "expected": {
+        "zh": "我在教天中打羽毛球，你可以过来跟我们一起练。",
+        "py": "Wǒ zài jiāo Tiānzhōng dǎ yǔmáoqiú, nǐ kěyǐ guòlai gēn wǒmen yìqǐ liàn."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 教: jiāo teach; 过来: guòlai"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l09",
+      "path": [
+        "texts",
+        2,
+        "lines",
+        5
+      ],
+      "pdfPage": 92,
+      "expected": {
+        "zh": "越看越着急。我不看了，你们告诉我得分吧。",
+        "py": "Yuè kàn yuè zháojí. Wǒ bú kàn le, nǐmen gàosu wǒ défēn ba."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 得分: défēn versus 着急: zháojí"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l10",
+      "path": [
+        "texts",
+        2,
+        "lines",
+        7
+      ],
+      "pdfPage": 103,
+      "expected": {
+        "zh": "我这本书上还有几个练习，你们回家也做一做，明天再把书还给我。",
+        "py": "Wǒ zhè běn shū shàng hái yǒu jǐ ge liànxí, nǐmen huí jiā yě zuò yi zuò, míngtiān zài bǎ shū huán gěi wǒ."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 还有: hái yǒu versus 还给: huán gěi"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l10",
+      "path": [
+        "texts",
+        3,
+        "lines",
+        1
+      ],
+      "pdfPage": 104,
+      "expected": {
+        "zh": "我现在上初中二年级，学习越来越忙，后年就要考高中了。中国的学校一般是小学六年，初中三年，高中三年。妈妈说想考上好大学，就得上一个好高中；为了考上好高中，初中就得有一个不错的成绩，所以我现在非常努力。",
+        "py": "Wǒ xiànzài shàng chūzhōng èr niánjí, xuéxí yuè lái yuè máng, hòunián jiù yào kǎo gāozhōng le. Zhōngguó de xuéxiào yìbān shì xiǎoxué liù nián, chūzhōng sān nián, gāozhōng sān nián. Māma shuō xiǎng kǎo shàng hǎo dàxué, jiù děi shàng yí ge hǎo gāozhōng; wèile kǎo shàng hǎo gāozhōng, chūzhōng jiù děi yǒu yí ge búcuò de chéngjì, suǒyǐ wǒ xiànzài fēicháng nǔlì."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 得: děi obligation; 为了: wèile purpose"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l15",
+      "path": [
+        "texts",
+        2,
+        "lines",
+        4
+      ],
+      "pdfPage": 150,
+      "expected": {
+        "zh": "不是。黄河虽然不是最长的河，可是在历史上很重要。",
+        "py": "Bú shì. Huáng Hé suīrán bú shì zuì cháng de hé, kěshì zài lìshǐ shàng hěn zhòngyào."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 最长: cháng, length; 重要: zhòngyào"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l15",
+      "path": [
+        "texts",
+        3,
+        "lines",
+        0
+      ],
+      "pdfPage": 151,
+      "expected": {
+        "zh": "我小时候住在北京的西北边，有一条非常有名的河经过那里。我家就住在河边。那里有高高的大树和绿绿的草地。春天，河边的花都开了，看起来特别漂亮。还记得小时候，一到夏天我就去河里游泳。长大以后，遇到什么不开心的事情，我就去河边的树下坐着，听听鸟叫，看看河水，跟遇见的朋友聊聊天儿，难过的事情不一会儿就忘了。那是我最喜欢的地方。",
+        "py": "Wǒ xiǎo shíhou zhù zài Běijīng de xīběi biān, yǒu yì tiáo fēicháng yǒumíng de hé jīngguò nàlǐ. Wǒ jiā jiù zhù zài hé biān. Nàlǐ yǒu gāogāo de dà shù hé lǜlǜ de cǎodì. Chūntiān, hé biān de huā dōu kāi le, kàn qǐlai tèbié piàoliang. Hái jìde xiǎo shíhou, yí dào xiàtiān wǒ jiù qù hé lǐ yóuyǒng. Zhǎng dà yǐhòu, yùdào shénme bù kāixīn de shìqing, wǒ jiù qù hé biān de shù xià zuòzhe, tīngting niǎo jiào, kànkan héshuǐ, gēn yùjiàn de péngyou liáoliao tiānr, nánguò de shìqing bù yíhuìr jiù wàng le. Nà shì wǒ zuì xǐhuan de dìfang."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 长大: zhǎng dà; 坐着: zuòzhe"
+    },
+    {
+      "lessonId": "hsk3-fltrp-2026:l18",
+      "path": [
+        "texts",
+        3,
+        "lines",
+        0
+      ],
+      "pdfPage": 181,
+      "expected": {
+        "zh": "这次来中国，我最高兴的是认识了李文的父母。他们给我看了李文出生时的照片，还给我讲了很多他过去的故事。",
+        "py": "Zhè cì lái Zhōngguó, wǒ zuì gāoxìng de shì rènshi le Lǐ Wén de fùmǔ. Tāmen gěi wǒ kàn le Lǐ Wén chūshēng shí de zhàopiàn, hái gěi wǒ jiǎng le hěn duō tā guòqù de gùshi."
+      },
+      "review": "2026-10-02 contextual editorial pinyin check on independently pixel-reviewed source text: 还给我讲: hái gěi, additional action not repayment"
     }
   ]
 }

@@ -3,11 +3,13 @@
   "courseId": "hsk3-fltrp-2026",
   "version": "2026.1",
   "reviewStatus": {
-    "independent": false,
-    "reviewer": "pending",
+    "independent": true,
+    "reviewer": "independent canonical-identity reviewer (2026-10-02)",
     "notes": [
-      "Draft explicit identity. Each source POS/sense is retained separately; no spelling-only or translation-string merging.",
-      "Syllabus targets200/500 are not this catalogue's counts."
+      "Checked every one of 523 lesson-local source bindings against current reviewed lesson JSON, including identity, pronunciation, Vietnamese, POS, text, original audio group, and exact PDF/printed page provenance.",
+      "Independently inspected original word-list pixels for all 36 same-form groups. Page-specific reasons record the printed POS, pronunciation or semantic distinction; see docs/content-audit/canonical-lexicon-independent.md.",
+      "No legitimate repeated-sense merges exist within this edition under the printed POS/sense contract. All source IDs and stable canonical sense IDs are retained; translation strings alone never decide identity.",
+      "Counts are source-backed POS/sense cards and Chinese forms, not the books' advertised 200/500 syllabus targets. AI source/identity review is not native-speaker or full human-listening certification."
     ]
   },
   "counts": {
@@ -25,8 +27,8 @@
         "hsk3-fltrp-2026:sense:l16-word06"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF16/printed4 prints hǎoxiàng, adv., seemingly; PDF158/printed146 prints hǎoxiàng, v., seem/be like. The earlier tentative adverb and later resemblance predicate are explicitly POS-distinct, even where Vietnamese glosses overlap.",
+      "reviewed": true
     },
     {
       "zh": "客气",
@@ -35,8 +37,8 @@
         "hsk3-fltrp-2026:sense:l02-word06"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF23/printed11 explicitly prints v./adj.: be polite versus polite. Preserve action/state-of-behaving and adjectival description separately.",
+      "reviewed": true
     },
     {
       "zh": "张",
@@ -45,8 +47,8 @@
         "hsk3-fltrp-2026:sense:l16-word20"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF27/printed15 prints zhāng, m., for paper/pictures; PDF161/printed149 prints zhāng, v., open (the mouth). Counter and opening verb are distinct.",
+      "reviewed": true
     },
     {
       "zh": "外卖",
@@ -55,8 +57,8 @@
         "hsk3-fltrp-2026:sense:l02-word25"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF27/printed15 explicitly prints n./v.: takeout versus offer a takeout service. Food/service noun and selling action have different POS.",
+      "reviewed": true
     },
     {
       "zh": "需要",
@@ -65,8 +67,8 @@
         "hsk3-fltrp-2026:sense:l03-word27"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF37/printed25 explicitly prints v./n. with the shared English gloss need. Keep verbal need and nominal need/demand separate; a shared gloss does not merge printed POS.",
+      "reviewed": true
     },
     {
       "zh": "特别",
@@ -75,8 +77,8 @@
         "hsk3-fltrp-2026:sense:l04-word14"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF44/printed32 explicitly prints adj./adv.: special versus especially. Property adjective and degree/focus adverb remain separate.",
+      "reviewed": true
     },
     {
       "zh": "比较",
@@ -85,8 +87,8 @@
         "hsk3-fltrp-2026:sense:l05-word14"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF53/printed41 explicitly prints v./adv.: compare versus relatively. Comparison action and degree adverb are distinct.",
+      "reviewed": true
     },
     {
       "zh": "打算",
@@ -95,8 +97,8 @@
         "hsk3-fltrp-2026:sense:l06-word03"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF60/printed48 explicitly prints v./n.: plan versus intention. Planning action and intended plan remain separate.",
+      "reviewed": true
     },
     {
       "zh": "行",
@@ -105,8 +107,8 @@
         "hsk3-fltrp-2026:sense:l06-word06"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF60/printed48 explicitly prints v./adj.: be all right versus capable. Acceptance/feasibility predicate and capability adjective are distinct.",
+      "reviewed": true
     },
     {
       "zh": "小心",
@@ -115,8 +117,8 @@
         "hsk3-fltrp-2026:sense:l06-word09"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF62/printed50 explicitly prints v./adj.: take care versus careful. Caution as an action and as an adjectival quality remain separate.",
+      "reviewed": true
     },
     {
       "zh": "急",
@@ -125,8 +127,8 @@
         "hsk3-fltrp-2026:sense:l06-word14"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF62/printed50 explicitly prints adj./v.: urgent versus be anxious. Urgency adjective and anxiety verb differ.",
+      "reviewed": true
     },
     {
       "zh": "决定",
@@ -135,8 +137,8 @@
         "hsk3-fltrp-2026:sense:l07-word13"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF72/printed60 explicitly prints v./n.: decide versus decision. Both Vietnamese fields say quyết định, but identical translation text does not justify merging the printed verbal and nominal uses.",
+      "reviewed": true
     },
     {
       "zh": "冰",
@@ -145,8 +147,8 @@
         "hsk3-fltrp-2026:sense:l07-word19"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF74/printed62 explicitly prints v./n.: freeze versus ice. Chilling action and frozen-water substance have different POS.",
+      "reviewed": true
     },
     {
       "zh": "声",
@@ -155,8 +157,8 @@
         "hsk3-fltrp-2026:sense:l07-word29"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF75/printed63 explicitly prints m./n.: a unit used for sounds versus sound. Sound counter and sound noun remain separate.",
+      "reviewed": true
     },
     {
       "zh": "习惯",
@@ -165,8 +167,8 @@
         "hsk3-fltrp-2026:sense:l08-word05"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF80/printed68 explicitly prints n./v.: habit versus be used to. Habit noun and habituation verb differ.",
+      "reviewed": true
     },
     {
       "zh": "感冒",
@@ -175,8 +177,8 @@
         "hsk3-fltrp-2026:sense:l08-word12"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF82/printed70 explicitly prints v./n.: catch a cold versus cold. Being ill and the illness noun remain separate.",
+      "reviewed": true
     },
     {
       "zh": "差不多",
@@ -185,8 +187,8 @@
         "hsk3-fltrp-2026:sense:l08-word23"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF83/printed71 explicitly prints adv./adj.: almost versus similar. Approximation adverb and similarity adjective differ.",
+      "reviewed": true
     },
     {
       "zh": "比赛",
@@ -195,8 +197,8 @@
         "hsk3-fltrp-2026:sense:l09-word11"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF89/printed77 explicitly prints n./v.: match versus have a match. Event noun and competing verb remain separate.",
+      "reviewed": true
     },
     {
       "zh": "练习",
@@ -205,8 +207,8 @@
         "hsk3-fltrp-2026:sense:l09-word13"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF89/printed77 explicitly prints v./n.: practice versus exercise. Practising action and practice exercise noun remain separate.",
+      "reviewed": true
     },
     {
       "zh": "只是",
@@ -215,8 +217,8 @@
         "hsk3-fltrp-2026:sense:l09-word17"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF91/printed79 explicitly prints adv./conj. Restrictive only and adversative only/but uses remain separate despite overlapping English wording.",
+      "reviewed": true
     },
     {
       "zh": "影响",
@@ -225,8 +227,8 @@
         "hsk3-fltrp-2026:sense:l09-word24"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF93/printed81 explicitly prints n./v.: effect versus affect. Effect noun and influencing verb differ.",
+      "reviewed": true
     },
     {
       "zh": "得分",
@@ -235,8 +237,8 @@
         "hsk3-fltrp-2026:sense:l09-word26"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF93/printed81 explicitly prints v./n. with the shared English gloss score (points). Scoring action and points scored remain POS-distinct.",
+      "reviewed": true
     },
     {
       "zh": "清楚",
@@ -245,8 +247,8 @@
         "hsk3-fltrp-2026:sense:l10-word05"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF99/printed87 explicitly prints adj./v.: clear versus know. Clarity adjective and knowing/understanding verb differ.",
+      "reviewed": true
     },
     {
       "zh": "把",
@@ -255,8 +257,8 @@
         "hsk3-fltrp-2026:sense:l12-word13"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF99/printed87 prints bǎ, prep., fronting an object in the disposal construction; PDF119/printed107 prints bǎ, m., for handled or splayed-legged objects. Grammatical marker and object counter are distinct.",
+      "reviewed": true
     },
     {
       "zh": "要求",
@@ -265,8 +267,8 @@
         "hsk3-fltrp-2026:sense:l10-word14"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF101/printed89 explicitly prints n./v.: requirement versus require. Requirement noun and requiring action differ.",
+      "reviewed": true
     },
     {
       "zh": "差",
@@ -275,8 +277,8 @@
         "hsk3-fltrp-2026:sense:l10-word16"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF101/printed89 explicitly prints adj./v.: poor versus be short of. Poor-quality adjective and lacking verb differ.",
+      "reviewed": true
     },
     {
       "zh": "明白",
@@ -285,8 +287,8 @@
         "hsk3-fltrp-2026:sense:l10-word25"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF103/printed91 explicitly prints v./adj.: understand versus clear. Understanding verb and clarity adjective remain separate.",
+      "reviewed": true
     },
     {
       "zh": "努力",
@@ -295,8 +297,8 @@
         "hsk3-fltrp-2026:sense:l10-word33"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF104/printed92 explicitly prints adj./v.: hard-working versus make an effort. Effortful quality and deliberate effort action remain separate.",
+      "reviewed": true
     },
     {
       "zh": "生活",
@@ -305,8 +307,8 @@
         "hsk3-fltrp-2026:sense:l11-word27"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF113/printed101 explicitly prints n./v.: life versus live. Life noun and living verb differ.",
+      "reviewed": true
     },
     {
       "zh": "变化",
@@ -315,8 +317,8 @@
         "hsk3-fltrp-2026:sense:l12-word18"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF119/printed107 explicitly prints v./n.: change versus variation. Changing action and change/variation noun remain separate.",
+      "reviewed": true
     },
     {
       "zh": "节",
@@ -325,8 +327,8 @@
         "hsk3-fltrp-2026:sense:l18-word03"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF137/printed125 prints jié, m., for class periods/lesson sections; PDF176/printed164 prints jié, n., festival. Lesson counter and festival noun differ.",
+      "reviewed": true
     },
     {
       "zh": "一块儿",
@@ -335,8 +337,8 @@
         "hsk3-fltrp-2026:sense:l14-word26"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF142/printed130 explicitly prints adv./n.: together versus the same place. Joint-action adverb and shared-location noun remain separate.",
+      "reviewed": true
     },
     {
       "zh": "根据",
@@ -345,8 +347,8 @@
         "hsk3-fltrp-2026:sense:l15-word10"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF146/printed134 explicitly prints prep./v.: according to versus depend on. Basis-marking preposition and reliance verb differ.",
+      "reviewed": true
     },
     {
       "zh": "经过",
@@ -355,8 +357,8 @@
         "hsk3-fltrp-2026:sense:l15-word26"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF151/printed139 explicitly prints v./n.: pass by versus process. Passing action and course-of-events noun remain separate.",
+      "reviewed": true
     },
     {
       "zh": "有关",
@@ -365,8 +367,8 @@
         "hsk3-fltrp-2026:sense:l17-word15"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF169/printed157 explicitly prints v./prep.: have something to do with versus about. Relational predicate and topic preposition differ.",
+      "reviewed": true
     },
     {
       "zh": "大概",
@@ -375,8 +377,8 @@
         "hsk3-fltrp-2026:sense:l18-word07"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF176/printed164 explicitly prints adv./adj.: probably versus rough. Probability/approximation adverb and rough-outline adjective differ.",
+      "reviewed": true
     }
   ],
   "senses": [

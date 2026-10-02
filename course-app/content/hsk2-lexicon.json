@@ -3,11 +3,13 @@
   "courseId": "hsk2-fltrp-2026",
   "version": "2026.1",
   "reviewStatus": {
-    "independent": false,
-    "reviewer": "pending",
+    "independent": true,
+    "reviewer": "independent canonical-identity reviewer (2026-10-02)",
     "notes": [
-      "Draft explicit identity. Each source POS/sense is retained separately; no spelling-only or translation-string merging.",
-      "Syllabus targets200/500 are not this catalogue's counts."
+      "Checked every one of 226 lesson-local source bindings against current reviewed lesson JSON, including identity, pronunciation, Vietnamese, POS, text, original audio group, and exact PDF/printed page provenance.",
+      "Independently inspected original word-list pixels for all 16 same-form groups. Page-specific reasons record the printed POS, pronunciation or semantic distinction; see docs/content-audit/canonical-lexicon-independent.md.",
+      "No legitimate repeated-sense merges exist within this edition under the printed POS/sense contract. All source IDs and stable canonical sense IDs are retained; translation strings alone never decide identity.",
+      "Counts are source-backed POS/sense cards and Chinese forms, not the books' advertised 200/500 syllabus targets. AI source/identity review is not native-speaker or full human-listening certification."
     ]
   },
   "counts": {
@@ -25,8 +27,8 @@
         "hsk2-fltrp-2026:sense:l10-word12"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF26/printed11 labels the recommendation use adv. (had better); PDF102/printed87 labels alternative-question or as conj. Both háishi, but distinct printed POS and grammatical function.",
+      "reviewed": true
     },
     {
       "zh": "过",
@@ -35,8 +37,8 @@
         "hsk2-fltrp-2026:sense:l06-word12"
       ],
       "action": "keep-distinct",
-      "reason": "Different printed pronunciation and grammatical meaning.",
-      "reviewed": false
+      "reason": "PDF45/printed30 prints neutral-tone guo, part., marking past experience; PDF66/printed51 prints guò, v., spend time/celebrate a birthday. Pronunciation, POS and meaning differ.",
+      "reviewed": true
     },
     {
       "zh": "快",
@@ -45,8 +47,8 @@
         "hsk2-fltrp-2026:sense:l05-word02"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF53/printed38 explicitly prints adv./adj.: hurry up versus fast. Keep the urging adverb and speed adjective separate.",
+      "reviewed": true
     },
     {
       "zh": "跟",
@@ -55,8 +57,8 @@
         "hsk2-fltrp-2026:sense:l05-word18"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF57/printed42 explicitly prints prep./conj.: with versus and. The prepositional companion and conjunction uses are distinct.",
+      "reviewed": true
     },
     {
       "zh": "画",
@@ -65,8 +67,8 @@
         "hsk2-fltrp-2026:sense:l06-word04"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF62/printed47 explicitly prints v./n.: draw versus painting. Action and resulting picture have different POS.",
+      "reviewed": true
     },
     {
       "zh": "往",
@@ -75,8 +77,8 @@
         "hsk2-fltrp-2026:sense:l07-word03"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF72/printed57 explicitly prints prep./v.: towards versus go. Directional preposition and motion verb are distinct.",
+      "reviewed": true
     },
     {
       "zh": "打",
@@ -85,8 +87,8 @@
         "hsk2-fltrp-2026:sense:l07-word06"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed senses despite identical spelling, pronunciation and part of speech.",
-      "reviewed": false
+      "reason": "PDF72/printed57 prints dǎ, v., with two meanings: play (games) and hit. Preserve l07-word05 for playing a hand-based sport/game and l07-word06 for striking; identical spelling, pronunciation and POS do not erase this semantic distinction.",
+      "reviewed": true
     },
     {
       "zh": "运动",
@@ -95,8 +97,8 @@
         "hsk2-fltrp-2026:sense:l07-word09"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF74/printed59 explicitly prints n./v.: sports versus exercise. The activity noun and exercise verb remain separate.",
+      "reviewed": true
     },
     {
       "zh": "爱好",
@@ -105,8 +107,8 @@
         "hsk2-fltrp-2026:sense:l07-word18"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF77/printed62 explicitly prints n./v.: hobby versus be fond of. Possessed interest and liking action have different POS.",
+      "reviewed": true
     },
     {
       "zh": "开始",
@@ -115,8 +117,8 @@
         "hsk2-fltrp-2026:sense:l07-word20"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF77/printed62 explicitly prints v./n.: start versus beginning. The starting verb and initial-stage noun remain separate.",
+      "reviewed": true
     },
     {
       "zh": "比",
@@ -125,8 +127,8 @@
         "hsk2-fltrp-2026:sense:l08-word05"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF80/printed65 explicitly prints prep./v.: than versus compare. Comparison marker and comparing action differ in POS and use.",
+      "reviewed": true
     },
     {
       "zh": "花",
@@ -135,8 +137,8 @@
         "hsk2-fltrp-2026:sense:l13-word03"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF84/printed69 prints huā, v., spend; PDF128/printed113 prints huā, n., flower. Spending money/time is not the flower noun.",
+      "reviewed": true
     },
     {
       "zh": "笔",
@@ -145,8 +147,8 @@
         "hsk2-fltrp-2026:sense:l13-word08"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF100/printed85 prints bǐ, n., pen/pencil; PDF130/printed115 prints bǐ, m., stroke. Writing instrument and counted writing stroke are distinct.",
+      "reviewed": true
     },
     {
       "zh": "考试",
@@ -155,8 +157,8 @@
         "hsk2-fltrp-2026:sense:l10-word07"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF102/printed87 explicitly prints v./n.: take an examination versus examination. Taking the test and the test event have different POS.",
+      "reviewed": true
     },
     {
       "zh": "站",
@@ -165,8 +167,8 @@
         "hsk2-fltrp-2026:sense:l14-word01"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF124/printed109 prints zhàn, n., stop/station; PDF137/printed122 prints zhàn, v., stand. Place and standing action differ.",
+      "reviewed": true
     },
     {
       "zh": "包",
@@ -176,8 +178,8 @@
         "hsk2-fltrp-2026:sense:l14-word04"
       ],
       "action": "keep-distinct",
-      "reason": "Distinct printed parts of speech or grammatical uses.",
-      "reviewed": false
+      "reason": "PDF137/printed122 explicitly prints n./v./m.: bag, wrap, bundle. Preserve all three printed POS: container noun, wrapping verb, and package/bundle counter.",
+      "reviewed": true
     }
   ],
   "senses": [

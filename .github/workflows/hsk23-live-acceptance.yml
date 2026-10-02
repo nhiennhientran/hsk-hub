@@ -1,0 +1,74 @@
+name: HSK2 and HSK3 exact live release acceptance
+on:
+  push:
+    branches: ['verify/hsk23-live-*']
+    paths: ['course-app/docs/online-target.json']
+permissions:
+  contents: read
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: course-app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - name: Bind unchanged test source to the accepted release
+        run: |
+          frozen=$(node -p "JSON.parse(require('fs').readFileSync('docs/online-target.json')).sourceCommit")
+          test "$(git -C .. diff --name-only "$frozen" "$GITHUB_SHA")" = 'course-app/docs/online-target.json'
+      - name: Hash every new frozen file and protected public runtime file
+        run: node tools/verify-online.mjs docs/online-target.json .repro-output/live-integrity.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk23-live-integrity
+          path: course-app/.repro-output/
+          include-hidden-files: true
+  browser:
+    needs: integrity
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: course-app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - run: npm ci
+      - name: Use official Ubuntu archive for browser dependencies
+        run: |
+          sudo python3 - <<'PY'
+          from pathlib import Path
+          d=Path('/etc/apt/sources.list.d')
+          for p in [Path('/etc/apt/sources.list'),Path('/etc/apt/apt-mirrors.txt'),*d.glob('*.list'),*d.glob('*.sources')]:
+              if p.exists():
+                  s=p.read_text()
+                  p.write_text(s.replace('http://azure.archive.ubuntu.com/ubuntu','https://archive.ubuntu.com/ubuntu').replace('https://azure.archive.ubuntu.com/ubuntu','https://archive.ubuntu.com/ubuntu'))
+          PY
+      - name: Install browser and Chinese fonts
+        run: npx playwright install --with-deps ${{ matrix.browser }} && sudo apt-get install -y fonts-noto-cjk
+      - name: Verify actual deployed URLs without rebuilding
+        env:
+          HSK_PACKAGE_URL: https://nhiennhientran.github.io/hsk-hub/
+        run: npm run test:browser -- --config=playwright.package.config.ts --project=${{ matrix.browser }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk23-live-${{ matrix.browser }}-evidence
+          path: |
+            course-app/.repro-output/
+            course-app/test-results-package/
+          include-hidden-files: true
