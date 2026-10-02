@@ -149,7 +149,7 @@ test('four task groups, legacy routes and fifteen lessons remain reachable witho
     await page.locator('#lesson-select').selectOption(String(lesson));
     await expectReady(page, 'textbook', lesson);
     await expect(page.locator('#lesson-select')).toHaveValue(String(lesson));
-    await expect(page.locator('.lesson-hero .eyebrow')).toContainText(`BÀI ${lesson}`);
+    await expect(page.locator('.lesson-hero .eyebrow')).toContainText(`Bài ${lesson}`);
   }
 });
 

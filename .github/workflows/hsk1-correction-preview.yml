@@ -71,6 +71,7 @@ jobs:
                   path.write_text(text.replace('http://azure.archive.ubuntu.com/ubuntu', 'https://archive.ubuntu.com/ubuntu').replace('https://azure.archive.ubuntu.com/ubuntu', 'https://archive.ubuntu.com/ubuntu'))
           PY
       - name: Install fixed browser
+        id: browser_ready
         timeout-minutes: 8
         run: |
           npx playwright install-deps ${{ matrix.browser }}
@@ -88,6 +89,7 @@ jobs:
           include-hidden-files: true
       - run: npm run test:smoke -- --project=${{ matrix.browser }}
       - run: npm run test:release -- --project=${{ matrix.browser }}
+        if: always() && steps.browser_ready.outcome == 'success'
         env:
           HSK_EXPECTED_COMMIT: ${{ github.sha }}
       - uses: actions/upload-artifact@v4

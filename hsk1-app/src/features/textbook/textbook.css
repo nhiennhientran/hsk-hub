@@ -34,7 +34,7 @@
 .vocab-card .vocab-front, .vocab-card .vocab-back { min-height: 120px; flex: 1; }
 .vocab-card .vocab-front { text-align: center; padding: 12px 0; }
 .vocab-front h3 { font-family: var(--zh-font); font-size: 2.2rem; margin: 6px 0 16px; font-weight: 650; color: var(--green-900); }
-.vocab-front > p, .vocab-back > p:first-child { font-size: .8rem; color: var(--muted, #526b5d); }
+.vocab-front > p, .vocab-back > p:first-child { font-size: .875rem; color: var(--muted, #526b5d); }
 .vocab-back p { margin: 6px 0 12px; }
 .vocab-card[data-flipped="true"] { background: #f4f8f0; }
 .vocab-card .textbook-actions { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line, #ccdcd5); gap: 6px; }
