@@ -482,3 +482,20 @@ test('empty/corrupt media ending at zero and metadata seek exceptions remain har
   assert.equal(second.service.snapshot().status, 'error');
   second.service.dispose();
 });
+
+
+test('persistent zero metadata on a whole recording requires two real native clock advances', async () => {
+ const {audio,service}=setup();const pending=service.play({url:'whole.mp3',label:'Whole original'});
+ audio.metadata(0);audio.readyState=2;audio.playing();audio.time(.2);
+ assert.equal(service.snapshot().status,'loading');audio.time(.4);
+ assert.equal((await pending).ok,true);assert.equal(service.snapshot().status,'playing');service.dispose();
+});
+test('zero-metadata clock recovery cannot certify bounded clips, paused clocks or seek jumps', async () => {
+ const a=setup();const bounded=a.service.play({url:'segment.mp3',label:'Bounded',start:0,end:5});
+ a.audio.metadata(0);a.audio.readyState=2;a.audio.playing();a.audio.time(.2);a.audio.time(.4);
+ assert.equal(a.service.snapshot().status,'loading');a.clock.fire();assert.equal((await bounded).ok,false);a.service.dispose();
+ const b=setup();const whole=b.service.play({url:'whole.mp3',label:'Whole'});b.audio.metadata(0);b.audio.readyState=2;b.audio.playing();
+ b.audio.seeking=true;b.audio.emit('seeking');b.audio.time(20);b.audio.seeking=false;b.audio.emit('seeked');b.audio.time(20);
+ assert.equal(b.service.snapshot().status,'loading');b.audio.paused=true;b.audio.time(21);
+ assert.equal(b.service.snapshot().status,'loading');b.clock.fire();assert.equal((await whole).ok,false);b.service.dispose();
+});

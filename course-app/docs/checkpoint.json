@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T16:43:00Z",
+  "updatedAt": "2026-10-02T17:12:00Z",
   "phases": [
     {
       "phase": 1,
@@ -19,7 +19,33 @@
     {
       "phase": 3,
       "title": "Shared course engine and isolated storage",
-      "status": "in_progress"
+      "status": "in_progress",
+      "evidence": {
+        "ciRun": 37037498657,
+        "remoteSource": "31ddbcd50bbc0cacb28370afa17eb51d39a23001",
+        "unitTests": {
+          "hsk1": 329,
+          "newCourse": 12
+        },
+        "browsers": {
+          "chromium": {
+            "pilot": 15,
+            "hsk1NativeMedia": 6
+          },
+          "webkit": {
+            "pilot": 15,
+            "hsk1NativeMedia": 6
+          }
+        },
+        "visualWidths": [
+          320,
+          390,
+          768,
+          1440
+        ],
+        "visualScreensInspected": 8
+      },
+      "remaining": "Stronger WebKit assertion revealed persistent zero metadata with advancing native clock but loading UI; require validated clock-based whole-track recovery."
     },
     {
       "phase": 4,
@@ -30,7 +56,8 @@
     {
       "phase": 5,
       "title": "HSK2 lessons 4\u20139",
-      "status": "pending"
+      "status": "pending",
+      "content": "Lessons4\u20136 independently reviewed; lessons7\u20139 authored, final checks/review pending"
     },
     {
       "phase": 6,

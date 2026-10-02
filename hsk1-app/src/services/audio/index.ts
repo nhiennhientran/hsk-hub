@@ -245,6 +245,7 @@ export function createAudioService(options: {
     request.trackStarted = false;
     let positioned = false;
     let nativePlaying = false;
+    let zeroDurationClock: number | undefined;
     let waitingTime: number | undefined;
     const confirmPlaying = () => {
       if (!nativePlaying || !positioned || !current(request) || request.paused || state.status === 'error') return;
@@ -296,6 +297,7 @@ export function createAudioService(options: {
       if (!current(request)) return;
       if (request.paused) { audio.pause(); return; }
       nativePlaying = true;
+      zeroDurationClock = undefined;
       position();
       confirmPlaying();
     }, request.trackCleanups);
@@ -312,13 +314,28 @@ export function createAudioService(options: {
       if (current(request)) guardStartup(request);
     }, request.trackCleanups);
     listen(audio, 'seeking', () => {
-      if (current(request) && state.status === 'loading') waitingTime = undefined;
+      if (current(request) && state.status === 'loading') { waitingTime = undefined; zeroDurationClock = undefined; }
     }, request.trackCleanups);
     listen(audio, 'seeked', () => {
       if (current(request) && request.trackStarted && state.status === 'loading') waitingTime = audio.currentTime;
     }, request.trackCleanups);
     listen(audio, 'timeupdate', () => {
       if (!current(request)) return;
+      // Some WebKit MP3 decoders retain duration=0 even while the original
+      // recording genuinely advances. Only a whole, unbounded recording can
+      // recover from this: require native playing plus two non-seeking clock
+      // observations. A canplay event, seek jump, resolved promise, or empty
+      // recording cannot pass this gate; bounded segments still need metadata.
+      if (!request.trackStarted && state.status === 'loading' && nativePlaying && audio.duration === 0 &&
+          (track.start ?? 0) === 0 && track.end === undefined && !request.paused && !audio.paused &&
+          !audio.seeking && audio.readyState >= 2) {
+        const previous = zeroDurationClock;
+        zeroDurationClock = audio.currentTime;
+        if (previous !== undefined && audio.currentTime > previous + 0.01) {
+          positioned = true;
+          confirmPlaying();
+        }
+      }
       // Some engines resume the real clock after seeking without another
       // playing event. Only a track already confirmed by playing may recover;
       // seek jumps, a paused clock and a merely resolved play promise do not.
