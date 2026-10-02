@@ -22,13 +22,32 @@ const raw = () => ({ ...fixture('reading-shared'), ...fixture('navigation'),
 const migrated = () => compatibility.migrate(raw(), at).data;
 
 // This equivalence check makes future changes to rule behavior explicit; it is not a copied grading test.
-test('domain rules are pure ESM adaptations of the pinned original bodies', () => {
+test('domain rules match pinned original bodies except the explicitly approved navigation and listening-size changes', () => {
   const manifest = json('../src/domain/provenance.json');
   for (const item of manifest.engines) {
     const source = readFileSync(new URL(`../../${item.source}`, import.meta.url), 'utf8');
     assert.equal(createHash('sha256').update(source).digest('hex'), item.sha256);
     const start = source.indexOf("  'use strict';", source.indexOf('})(typeof window')) + "  'use strict';\n".length;
-    const expected = source.slice(start, source.lastIndexOf('\n});')).replace(/^  return \{/m, '  export default {');
+    let expected = source.slice(start, source.lastIndexOf('\n});')).replace(/^  return \{/m, '  export default {');
+    if (item.module === 'src/domain/practice/engine.js') {
+      // Keep the full-body guard. Only these exact approved differences are allowed;
+      // listening gates, scheduling calculations and every other validation stay pinned.
+      const changes = [
+        ["    if (!['all', 'wrong'].includes(mode) || typeof shuffle !== 'boolean') fail('INVALID_OPTIONS', 'Kiểu luyện nghe không hợp lệ.');", "    const limit = options.limit ?? 'all';\n    if (!['all', 5, 10].includes(limit)) fail('INVALID_OPTIONS', 'Số câu nghe cần là 5, 10 hoặc tất cả.');\n    if (!['all', 'wrong'].includes(mode) || typeof shuffle !== 'boolean') fail('INVALID_OPTIONS', 'Kiểu luyện nghe không hợp lệ.');"],
+        ["    if (shuffle) ids = shuffled(ids, random);\n    const optionOrders", "    if (shuffle) ids = shuffled(ids, random);\n    if (limit !== 'all') ids = ids.slice(0, limit);\n    const optionOrders"],
+        ["const session = {id: sequenceId(state, 'listen', now), lessons: selected, mode, questionIds: ids,", "const session = {id: sequenceId(state, 'listen', now), lessons: selected, mode, ...(limit !== 'all' ? {limit} : {}), questionIds: ids,"],
+        ["      if (source.mode === 'all' && !sameSet(ids, allIds)) fail('INVALID_SESSION', 'Lượt nghe thiếu câu của các bài đã chọn.');", "      const limit = source.limit ?? 'all';\n      if (!['all', 5, 10].includes(limit) || (limit !== 'all' && ids.length > limit)) fail('INVALID_SESSION', 'Số câu trong lượt nghe không hợp lệ.');\n      if (source.mode === 'all' && (limit === 'all' ? !sameSet(ids, allIds) : ids.length !== Math.min(limit, allIds.length))) fail('INVALID_SESSION', 'Lượt nghe thiếu câu của các bài đã chọn.');"],
+        ["state.listening.session = {...common, mode: source.mode, questionIds: ids.slice(),", "state.listening.session = {...common, mode: source.mode, ...(limit !== 'all' ? {limit} : {}), questionIds: ids.slice(),"],
+        ["    if (review.senseIds.slice(0, position).some(id => !own(review.ratings, id))) fail('RATING_REQUIRED', 'Hãy tự đánh giá thẻ hiện tại trước khi chuyển tiếp.');", '    // Browsing does not reveal, rate, complete, or reschedule any card.'],
+        ["    const {review, id} = currentReview(state);\n    if (!own(review.ratings, id)) fail('RATING_REQUIRED', 'Hãy tự đánh giá thẻ hiện tại trước khi chuyển tiếp.');", '    const {review} = currentReview(state);'],
+        ["      if (ids.slice(0, common.position).some(id => !own(ratings, id))) fail('INVALID_SESSION', 'Lượt ôn đã bỏ qua thẻ chưa tự đánh giá.');\n", ''],
+        ["? ratings[ids.at(-1)].at : null", '? Math.max(...ids.map(id => ratings[id].at)) : null'],
+      ];
+      for (const [before, after] of changes) {
+        assert.equal(expected.split(before).length - 1, 1, `Approved difference must match exactly once: ${before}`);
+        expected = expected.replace(before, after);
+      }
+    }
     const output = readFileSync(new URL(`../${item.module}`, import.meta.url), 'utf8');
     assert.equal(output.slice(output.indexOf(' */\n') + 4).trimEnd(), expected.trimEnd());
     assert.equal(/window\.|module\.exports|localStorage|document\./.test(expected), false);

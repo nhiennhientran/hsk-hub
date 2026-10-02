@@ -124,7 +124,8 @@ test('all seven module entries and all fifteen lesson choices remain reachable w
   await expect(page.locator('#module-host .lesson-card[data-lesson]')).toHaveCount(15);
   for (let lesson = 1; lesson <= 15; lesson++) {
     const card = page.locator(`#module-host .lesson-card[data-lesson="${lesson}"]`);
-    for (const feature of ['textbook', 'homework', 'listening']) {
+    await expect(card.locator('[data-lesson-section]')).toHaveCount(5);
+    for (const feature of ['homework', 'listening']) {
       await expect(card.locator(`a[href^="#/${feature}?lesson=${lesson}"]`)).toHaveCount(1);
     }
   }
@@ -141,7 +142,7 @@ test('all seven module entries and all fifteen lesson choices remain reachable w
     await page.locator('#lesson-select').selectOption(String(lesson));
     await expectReady(page, 'textbook', lesson);
     await expect(page.locator('#lesson-select')).toHaveValue(String(lesson));
-    await expect(page.locator('#module-host')).toContainText(`Bài ${lesson} ·`);
+    await expect(page.locator('.lesson-hero .eyebrow')).toContainText(`BÀI ${lesson}`);
   }
 });
 
@@ -193,7 +194,7 @@ test('repeated mounts keep one home view and route listener and load only ESM wi
   await expect(page.locator('.lesson-card')).toHaveCount(15);
   await expect(page.locator('[data-module-action="preview"], #entry-details')).toHaveCount(0);
   const before = await page.evaluate(() => history.length);
-  await page.locator('.lesson-card[data-lesson="10"] a[href^="#/textbook?"]').click();
+  await page.locator('.lesson-card[data-lesson="10"] [data-lesson-section="vocab"]').click();
   await expectReady(page, 'textbook', 10);
   expect(await page.evaluate(() => history.length)).toBe(before + 1);
   const runtime = await page.evaluate(() => ({

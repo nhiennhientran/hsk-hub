@@ -1,6 +1,6 @@
 import { createDueRefresh } from '../due-refresh.ts';
-import type { FeatureModule } from '../../app/contracts.ts';
-import { featureLabels } from '../../app/labels.ts';
+import { SECTIONS, type FeatureModule } from '../../app/contracts.ts';
+import { sectionLabels, sectionChinese, featureLabels } from '../../app/labels.ts';
 import { routeHref } from '../../app/router.ts';
 import { loadCourseIndex } from '../../services/content/index.ts';
 import { summarizeProgress } from '../../services/learning/progress.ts';
@@ -11,9 +11,12 @@ import '../progress/progress.css';
 /** Home keeps the course overview and projects the same session as the progress page. */
 export const mount: FeatureModule['mount'] = (host, context) => {
   const article = element('article'); article.id = 'home-module'; article.className = 'module-entry';
-  const heading = element('h1', featureLabels.home); heading.tabIndex = -1;
+  const heading = element('h1', 'Tự do chọn bài học'); heading.tabIndex = -1;
   const description = element('p', 'Đang tải danh sách bài học và tiến độ đã lưu…'); description.id = 'home-course-status';
-  article.append(heading, description); host.append(article);
+  const hero = element('header'); hero.className = 'course-hero';
+  const eyebrow = element('p', '新HSK教程 1 · 15 BÀI HỌC'); eyebrow.className = 'eyebrow';
+  hero.append(eyebrow, heading, element('p', 'Học theo giáo trình, chọn đúng phần bạn cần.'), element('p', '15 bài học · 5 phần / bài · Nội dung và âm thanh giáo trình'));
+  article.append(hero); host.append(article);
   const controller = new AbortController();
   const abort = () => controller.abort();
   context.signal.addEventListener('abort', abort, { once: true });
@@ -32,16 +35,38 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     if (left || controller.signal.aborted) return;
     const selected = lessons.find(lesson => lesson.id === context.route.lesson);
     if (!selected) throw new Error('Lesson not found.');
-    description.textContent = `Bài đang chọn: ${selected.id} · ${selected.title} · ${selected.titleVi}`;
+    description.textContent = '15 bài luôn mở · Vào thẳng từng mục, không cần học theo thứ tự';
+    const catalogue = element('section'); catalogue.className = 'home-catalogue';
+    const toolbar = element('div'); toolbar.className = 'catalogue-toolbar';
+    const searchLabel = element('label', 'Tìm bài học'); searchLabel.className = 'home-search-label';
+    const search = element('input'); search.type = 'search'; search.id = 'lesson-search'; search.placeholder = 'Tên bài, chữ Hán hoặc số bài…'; searchLabel.append(search);
+    toolbar.append(element('h2', 'Bắt đầu từ bài bạn muốn'), searchLabel);
+    catalogue.append(toolbar, description);
     const grid = element('div'); grid.className = 'lesson-grid';
     for (const lesson of lessons) {
       const card = element('article'); card.className = 'lesson-card'; card.dataset.lesson = String(lesson.id);
-      card.append(element('p', `Bài ${lesson.id}`), element('h2', lesson.title), element('p', lesson.titleVi));
+      const number = element('p', `BÀI ${String(lesson.id).padStart(2, '0')}`); number.className = 'lesson-number';
+      const title = element('h2'); const titleLink = routeLink(lesson.title, { feature: 'textbook', lesson: lesson.id, section: 'vocab' }); titleLink.lang = 'zh'; title.append(titleLink);
+      const subtitle = element('p', lesson.titleVi); subtitle.className = 'lesson-subtitle';
+      card.append(number, title, subtitle);
+      const sections = element('nav'); sections.className = 'lesson-section-links'; sections.setAttribute('aria-label', `Năm mục giáo trình bài ${lesson.id}`);
+      for (const section of SECTIONS) {
+        const link = routeLink(sectionLabels[section], { feature: 'textbook', lesson: lesson.id, section });
+        link.title = `${sectionChinese[section]} · ${sectionLabels[section]}`; link.dataset.lessonSection = section; sections.append(link);
+      }
+      card.append(sections);
       const actions = element('div'); actions.className = 'lesson-actions';
-      for (const feature of ['textbook', 'homework', 'listening'] as const) actions.append(routeLink(featureLabels[feature], { feature, lesson: lesson.id }));
+      for (const feature of ['homework', 'listening'] as const) actions.append(routeLink(featureLabels[feature], { feature, lesson: lesson.id }));
       card.append(actions); grid.append(card);
     }
-    article.append(continuation, overview, grid);
+    catalogue.append(grid);
+    search.addEventListener('input', () => {
+      const key = (value: string) => value.normalize('NFD').replace(/\p{M}/gu, '').replace(/đ/gi, 'd').toLowerCase();
+      const query = key(search.value.trim());
+      for (const card of grid.querySelectorAll<HTMLElement>('.lesson-card')) card.hidden = !!query && !key(card.textContent ?? '').includes(query);
+    }, { signal: controller.signal });
+    const progressDetails = element('details'); progressDetails.className = 'home-progress-details'; progressDetails.append(element('summary', 'Việc học của bạn · Tiến độ và việc cần ôn'), overview);
+    article.append(continuation, catalogue, progressDetails);
     const render = () => {
       if (left || controller.signal.aborted) return;
       const snapshot = session.store.snapshot(), data = snapshot.data;

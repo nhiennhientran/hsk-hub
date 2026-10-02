@@ -63,7 +63,11 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     modeLabel.append(mode);
     const shuffleLabel = element('label'); const shuffle = element('input'); shuffle.type = 'checkbox'; shuffle.id = 'listening-shuffle';
     shuffleLabel.append(shuffle, document.createTextNode(' Trộn thứ tự câu hỏi'));
-    const preferences = element('div'); preferences.className = 'listening-preferences'; preferences.append(modeLabel, shuffleLabel);
+    const countLabel = element('label', 'Số câu mỗi lượt'); const count = element('select'); count.id = 'listening-count';
+    for (const [value, text] of [['5', '5 câu'], ['10', '10 câu'], ['all', 'Tất cả câu']]) { const option = element('option', text); option.value = value; count.append(option); }
+    count.value = String(listening.read().session?.limit ?? 'all'); countLabel.append(count);
+    const requestedCount = (): 5 | 10 | 'all' => count.value === 'all' ? 'all' : Number(count.value) as 5 | 10;
+    const preferences = element('div'); preferences.className = 'listening-preferences'; preferences.append(modeLabel, countLabel, shuffleLabel);
     const available = element('p'); available.id = 'listening-available'; available.setAttribute('role', 'status');
     const resume = button('listening-resume', 'Tiếp tục lượt đã lưu'); const redo = button('listening-redo', 'Làm lại câu còn sai');
     const sessionActions = element('div'); sessionActions.className = 'listening-actions'; sessionActions.append(start, resume, redo);
@@ -121,8 +125,9 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     mode.addEventListener('change', () => changedPreferences({ listeningMode: mode.value as 'all' | 'wrong' }), { signal: lifetime.signal });
     shuffle.addEventListener('change', () => changedPreferences({ shuffle: shuffle.checked }), { signal: lifetime.signal });
     rate.addEventListener('change', () => { const value = Number(rate.value); if (handle(listening.setPreferences({ rate: value }))) audio.setRate(value); update(); }, { signal: lifetime.signal });
-    start.addEventListener('click', () => { stopPlayback(); if (handle(listening.start())) { update(); focusQuestion(); } }, { signal: lifetime.signal });
-    redo.addEventListener('click', () => { stopPlayback(); if (handle(listening.redo())) { update(); focusQuestion(); } }, { signal: lifetime.signal });
+    count.addEventListener('change', () => update(), { signal: lifetime.signal });
+    start.addEventListener('click', () => { stopPlayback(); if (handle(listening.start(requestedCount()))) { update(); focusQuestion(); } }, { signal: lifetime.signal });
+    redo.addEventListener('click', () => { stopPlayback(); if (handle(listening.redo(requestedCount()))) { update(); focusQuestion(); } }, { signal: lifetime.signal });
     resume.addEventListener('click', () => { showMessage(''); focusQuestion(); }, { signal: lifetime.signal });
     previous.addEventListener('click', () => { const model = listening.read(); if (model.session && handle(listening.move(model.session.position - 1))) { update(); focusQuestion(); } }, { signal: lifetime.signal });
     next.addEventListener('click', () => { if (handle(listening.next())) { update(); focusQuestion(); } }, { signal: lifetime.signal });
@@ -228,12 +233,12 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       mode.value = model.preferences.listeningMode; shuffle.checked = model.preferences.shuffle; rate.value = String(model.preferences.rate);
       const wrong = new Set(model.summary.wrongIds);
       const wrongInRange = content.items.filter(row => model.preferences.lessons.includes(row.lesson) && wrong.has(row.id)).length;
-      available.textContent = !model.preferences.lessons.length ? 'Hãy chọn ít nhất một bài học.' : model.availableCount ? `${model.availableCount} câu trong phạm vi đã chọn.` : 'Không có câu còn sai trong phạm vi đã chọn. Bạn có thể chọn tất cả câu để luyện thêm.';
+      available.textContent = !model.preferences.lessons.length ? 'Hãy chọn ít nhất một bài học.' : model.availableCount ? `${requestedCount() === 'all' ? model.availableCount : Math.min(Number(requestedCount()), model.availableCount)} / ${model.availableCount} câu trong phạm vi đã chọn cho lượt mới.` : 'Không có câu còn sai trong phạm vi đã chọn. Bạn có thể chọn tất cả câu để luyện thêm.';
       start.disabled = !model.availableCount; redo.disabled = !wrongInRange;
       resume.hidden = !current; resume.textContent = `Tiếp tục lượt đã lưu${model.session ? ` · Câu ${model.session.position + 1}` : ''}`;
       exercise.hidden = !current;
       position.textContent = model.session && current ? `Câu ${model.session.position + 1} / ${model.session.questionIds.length}` : '';
-      queueScope.textContent = model.session ? `Lượt đang học: Bài ${model.session.lessons.join(', ')} · ${model.session.mode === 'wrong' ? 'Làm lại câu còn sai' : 'Tất cả câu'}` : '';
+      queueScope.textContent = model.session ? `Lượt đang học: Bài ${model.session.lessons.join(', ')} · ${model.session.mode === 'wrong' ? 'Làm lại câu còn sai' : 'Tất cả câu'} · ${model.session.questionIds.length} câu` : '';
       listenCount.textContent = current ? `Số lần đã bắt đầu nghe: ${current.listenCount}` : '';
       previous.disabled = !model.session || model.session.position === 0;
       next.disabled = !model.session || !current?.submitted || model.session.position >= model.session.questionIds.length - 1;

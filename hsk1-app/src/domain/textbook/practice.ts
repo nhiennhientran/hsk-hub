@@ -1,3 +1,5 @@
+import restoredTargets from '../../../content/textbook-restored-targets.json' with { type: 'json' };
+
 export interface PracticeLesson {
   id: number;
   vocab: readonly {zh: string; py: string; vn: string; kind: string}[];
@@ -39,6 +41,20 @@ export function practiceQuestions(lesson: PracticeLesson): PracticeBank {
     if (!x) return;
     advanced.push({type: 'Bài khoá', prompt: `Chọn bản dịch đúng của câu trong ${s.place_vn.toLowerCase()}.`, stem: `${x.py}\n${x.zh}`, options: stableOptions(x.vn, lines.map(y => y.vn), i + id), answer: x.vn, explain: `Câu này xuất hiện nguyên văn trong Bài khoá ${i + 1}: “${x.zh}”.`});
   });
+  // Explicit stable targets recover useful old questions lost when the corrected
+  // vocabulary changed the generator's positional picks. Text remains authoritative
+  // in the current textbook; corrected old sentences are never resurrected.
+  for (const target of restoredTargets.filter(row => row.lesson === id)) {
+    const word = words.find(row => row.zh === target.word);
+    if (!word) throw new Error(`Missing restored textbook target: ${target.contentId}`);
+    const meaning = target.kind === 'meaning';
+    const prompt = meaning ? `“${word.zh}” có nghĩa tiếng Việt là gì?` : `Chọn pinyin đúng của “${word.zh}”.`;
+    if (basic.some(question => question.prompt === prompt)) continue;
+    const answer = meaning ? word.vn : word.py;
+    basic.push({ type: meaning ? 'Từ vựng' : 'Pinyin', prompt, stem: meaning ? word.py : word.vn,
+      options: stableOptions(answer, meaning ? meaningPool : pinyinPool, id + basic.length), answer,
+      explain: meaning ? `${word.zh} · ${word.py} · ${word.vn}` : `Cách đọc trong bài: ${word.zh} — ${word.py}.` });
+  }
   return {basic, advanced};
 }
 

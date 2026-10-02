@@ -56,12 +56,12 @@ export function createListeningController({ session: learning, catalog, now = Da
       return success;
     } catch (error) { return errorResult(error); }
   }
-  function start(mode?: ListeningPreferences['listeningMode']): ListeningResult {
+  function start(mode?: ListeningPreferences['listeningMode'], limit: 5 | 10 | 'all' = 'all'): ListeningResult {
     if (!available(state(), mode).length) return failed('empty', 'Không có câu nghe trong các bài và bộ lọc đã chọn.');
     const result = change(practice => {
       const stamp = now();
       engine.setPreferences(practice, { module: 'listening', ...(mode ? { listeningMode: mode } : {}) }, stamp);
-      engine.createListeningSession(practice, catalog, {}, stamp, random);
+      engine.createListeningSession(practice, catalog, { limit }, stamp, random);
     }, true);
     if (result.ok) listened.clear();
     return result;
@@ -102,8 +102,8 @@ export function createListeningController({ session: learning, catalog, now = Da
         if (same(previous, practice.preferences)) practice.updatedAt = stamp;
       });
     },
-    start() { return start(); },
-    redo() { return start('wrong'); },
+    start(limit: 5 | 10 | 'all' = 'all') { return start(undefined, limit); },
+    redo(limit: 5 | 10 | 'all' = 'all') { return start('wrong', limit); },
     select(id: string, optionIndex: number): ListeningResult {
       const model = current(state());
       if (!model) return failed('empty', 'Hãy bắt đầu một lượt nghe.');

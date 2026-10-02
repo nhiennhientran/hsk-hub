@@ -1,5 +1,5 @@
 import { SECTIONS, type FeatureModule } from '../../app/contracts.ts';
-import { sectionLabels } from '../../app/labels.ts';
+import { sectionLabels, sectionChinese } from '../../app/labels.ts';
 import { loadCourseIndex } from '../../services/content/index.ts';
 import { loadTextbook } from '../../services/content/textbook.ts';
 import { createReadingController } from '../../services/learning/reading.ts';
@@ -19,7 +19,9 @@ export const mount: FeatureModule['mount'] = (host, context) => {
   const nav = element('nav'); nav.className = 'subnav'; nav.dataset.textbookSections = ''; nav.setAttribute('aria-label', 'Các mục giáo trình');
   const controls = element('fieldset'); controls.dataset.moduleControls = ''; controls.disabled = true; controls.append(element('legend', 'Nội dung giáo trình'));
   const loading = element('button', 'Đánh dấu đã đọc bài'); loading.type = 'button'; loading.disabled = true; loading.id = 'reading-complete'; controls.append(loading);
-  article.append(heading, name, nav, controls); host.append(article);
+  const hero = element('header'); hero.className = 'lesson-hero';
+  const eyebrow = element('p', `第 ${context.route.lesson} 课 · BÀI ${context.route.lesson}`); eyebrow.className = 'eyebrow';
+  hero.append(eyebrow, heading, name); article.append(hero, nav, controls); host.append(article);
   const lifetime = new AbortController(); const close = () => lifetime.abort();
   context.signal.addEventListener('abort', close, { once: true }); if (context.signal.aborted) close();
   let left = false; let unsubscribe = () => {}; let disposeView = () => {}; let disposePlayer = () => {}; let flush = () => {};
@@ -33,9 +35,11 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const section = context.route.section ?? 'vocab';
     const reading = createReadingController({ session, route: { ...context.route, section }, words: lesson.vocab });
     flush = () => { void session.flush(); };
-    name.textContent = `Bài ${lesson.id} · ${lesson.title} · ${lesson.vn_title}`;
+    heading.textContent = lesson.title; heading.lang = 'zh'; name.textContent = lesson.vn_title;
     for (const item of SECTIONS) {
-      const link = routeLink(sectionLabels[item], { ...context.route, section: item }); link.dataset.section = item;
+      const link = routeLink('', { ...context.route, section: item }); link.dataset.section = item;
+      const chinese = element('span', sectionChinese[item]); chinese.lang = 'zh';
+      link.append(chinese, element('span', sectionLabels[item]));
       if (item === section) link.setAttribute('aria-current', 'page'); nav.append(link);
     }
     controls.replaceChildren(element('legend', sectionLabels[section]));
@@ -49,8 +53,9 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const retry = button('Thử lưu lại', () => { void session.flush(); }, lifetime.signal); retry.id = 'retry-reading-save';
     const data = routeLink('Quản lý dữ liệu và bản sao lưu', { feature: 'progress', lesson: lesson.id });
     const saveActions = element('div'); saveActions.className = 'textbook-actions'; saveActions.append(retry, data);
-    readingBox.append(progress, completeLabel, hint, status, saveActions); controls.append(readingBox);
-    disposePlayer = mountPlayer(controls, audio, lifetime.signal);
+    readingBox.append(progress, completeLabel, hint, status, saveActions);
+    const playerHost = element('div'); playerHost.className = 'textbook-player-host';
+    disposePlayer = mountPlayer(playerHost, audio, lifetime.signal);
     const body = element('div'); body.className = 'textbook-body'; body.dataset.textbookSection = section; controls.append(body);
     let updateView: (mastered: Readonly<Record<string, boolean>>) => void = () => {};
     if (section === 'vocab') {
@@ -72,7 +77,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     if (lesson.id > 1) lessonsNav.append(routeLink(`← Bài ${lesson.id - 1}`, { ...context.route, lesson: lesson.id - 1 }));
     lessonsNav.append(routeLink('Chọn bài học', { feature: 'home', lesson: lesson.id }));
     if (lesson.id < 15) lessonsNav.append(routeLink(`Bài ${lesson.id + 1} →`, { ...context.route, lesson: lesson.id + 1 }));
-    controls.append(journey, lessonsNav);
+    controls.append(journey, lessonsNav, playerHost, readingBox);
     function update(): void {
       const model = reading.read(); complete.checked = model.complete;
       progress.textContent = `Đã mở ${model.modules.length} / 5 mục giáo trình${model.complete ? ' · Đã đánh dấu đọc xong bài.' : '.'}`;

@@ -39,7 +39,7 @@ function startApplication(): () => void {
   const router = createRouter(window);
   root.innerHTML = `
     <a class="skip-link" href="#module-host">Đến nội dung</a>
-    <header class="site-header"><a class="brand" data-route-link href="${router.href({ feature: 'home', lesson: 1 })}">然老师 · HSK 1</a><span>新HSK教程 1 · 15 bài</span></header>
+    <header class="site-header"><a class="brand" data-route-link href="${router.href({ feature: 'home', lesson: 1 })}"><span lang="zh">汉语课件</span><small>然老师 · HSK 1</small></a><span class="course-badge">新HSK教程 1 · 15 bài</span></header>
     <nav id="feature-nav" class="feature-nav" aria-label="Nội dung học">${FEATURES.map(feature => `<a data-route-link data-feature="${feature}" href="${router.href({ feature, lesson: 1 })}">${featureLabels[feature]}</a>`).join('')}</nav>
     <main>
       <div class="lesson-picker"><label for="lesson-select">Bài đang chọn</label><select id="lesson-select">${Array.from({ length: 15 }, (_, index) => `<option value="${index + 1}">Bài ${index + 1}</option>`).join('')}</select></div>
@@ -64,12 +64,22 @@ function startApplication(): () => void {
       host.dataset.feature = route.feature; host.dataset.lesson = String(route.lesson);
       retry.hidden = state !== 'error';
       status.textContent = state === 'loading' ? 'Đang chuẩn bị nội dung…' : state === 'error' ? 'Chưa tải được nội dung. Hãy thử lại; bài đang chọn vẫn được giữ.' : `${featureLabels[route.feature]} · Bài ${route.lesson}`;
-      if (state === 'ready') host.querySelector<HTMLElement>('h1')?.focus({ preventScroll: true });
+      if (state === 'ready') {
+        const heading = host.querySelector<HTMLElement>('h1');
+        if (heading && !heading.querySelector('[lang="zh"]') && route.feature !== 'textbook') {
+          const chinese = { home: '自由选课', homework: '课后作业', listening: '听力练习', vocabulary: '生词卡', review: '复习', progress: '学习进度' };
+          const translation = document.createElement('span'); translation.lang = 'zh'; translation.className = 'heading-zh';
+          translation.textContent = chinese[route.feature as keyof typeof chinese] ?? ''; heading.append(translation);
+        }
+        heading?.focus({ preventScroll: true });
+      }
     },
   });
   let unsubscribe: (() => void) | undefined;
   function updateNavigation(route: Route): void {
     lessons.value = String(route.lesson);
+    root.dataset.feature = route.feature;
+    root.querySelector<HTMLElement>('.lesson-picker')!.hidden = route.feature === 'home';
     root.querySelectorAll<HTMLAnchorElement>('#feature-nav a[data-feature]').forEach(anchor => {
       const feature = anchor.dataset.feature as Feature;
       anchor.href = router.href(feature === route.feature ? route : normalizeRoute({ feature, lesson: route.lesson }));

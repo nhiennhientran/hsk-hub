@@ -12,7 +12,7 @@ declare const engine: {
   backupByteLength(input: unknown): number;
   setPreferences(state: PracticeState, patch: Partial<PracticeState['preferences']>, now?: number): PracticeState['preferences'];
   createListeningSession(state: PracticeState, catalog: ListeningCatalog, options?: {
-    lessons?: ListeningPreferences['lessons']; mode?: ListeningPreferences['listeningMode']; shuffle?: boolean;
+    lessons?: ListeningPreferences['lessons']; mode?: ListeningPreferences['listeningMode']; shuffle?: boolean; limit?: 5 | 10 | 'all';
   }, now?: number, random?: () => number): ListeningSession;
   selectListening(state: PracticeState, catalog: ListeningCatalog, id: string, optionIndex: number, now?: number): ListeningResponse;
   recordListen(state: PracticeState, catalog: ListeningCatalog, id: string, now?: number): number;

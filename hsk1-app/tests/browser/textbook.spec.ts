@@ -81,7 +81,7 @@ for (const start of [1, 6, 11]) {
       for (const field of ['strokes', 'order', 'structure', 'radicals']) if (row.hanzi[field]) await expect(page.locator('#textbook-module')).toContainText(row.hanzi[field]);
       for (const char of [...new Set(row.hanzi.chars.match(/\p{Script=Han}/gu))]) await expect(page.locator(`[data-hanzi-char="${char}"]`)).toHaveCount(1);
       await section(page, lesson, 'practice');
-      await expect(page.locator('[data-practice-question]')).toHaveCount(7);
+      await expect(page.locator('[data-practice-question]')).toHaveCount(practiceQuestions(row).basic.length);
       await expect(page.locator('[data-practice-tier="advanced"]')).toBeEnabled();
       await section(page, lesson, 'vocab');
     }
@@ -180,7 +180,7 @@ test('reading visit, section marks and completion survive reload independently o
   expect(current.homework.lessons['1'].choice.first).toEqual(first);
 });
 
-test('all original practice questions in fifteen lessons submit through both tiers and reset independently', async ({ page }) => {
+test('all retained and restored practice questions in fifteen lessons submit through both tiers and reset independently', async ({ page }) => {
   test.setTimeout(60_000);
   await authenticate(page);
   await page.goto('/#/textbook?lesson=1&section=practice');
@@ -222,7 +222,7 @@ test('all original practice questions in fifteen lessons submit through both tie
       }
     }
   }
-  expect(answered).toBe(150);
+  expect(answered).toBe(160);
 });
 
 test('Hanzi renders strokes, animates, accepts pen practice, resets and cancels a late character request when leaving', async ({ page }) => {

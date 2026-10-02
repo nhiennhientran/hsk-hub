@@ -1,6 +1,7 @@
 /* Pure ESM adaptation of new-hsk1/hsk1/stage3/engine.js.
  * Source SHA-256: 010cfde850b1b9a49f90b5b2ceb2c70991d255750c3514761f7b064401d36a17
- * Only the UMD wrapper and final export change; grading/state rules stay identical. */
+ * Approved preview exception: free card navigation, skipped-card restore and
+ * out-of-order completion time. Grading and scheduling calculations stay identical. */
   const APP = 'hsk1-stage3', KEY = 'ran_hsk1_stage3_v1', SCHEMA = 1;
   const MAX_BACKUP_BYTES = 4 * 1024 * 1024;
   const DAY = 86400000, MINUTE = 60000, MAX_TIME = 8640000000000000;
@@ -155,17 +156,20 @@
     assertState(state); clock(now); const index = indexCatalog(catalog);
     const selected = lessons(options.lessons ?? state.preferences.lessons);
     const mode = options.mode ?? state.preferences.listeningMode, shuffle = options.shuffle ?? state.preferences.shuffle;
+    const limit = options.limit ?? 'all';
+    if (!['all', 5, 10].includes(limit)) fail('INVALID_OPTIONS', 'Số câu nghe cần là 5, 10 hoặc tất cả.');
     if (!['all', 'wrong'].includes(mode) || typeof shuffle !== 'boolean') fail('INVALID_OPTIONS', 'Kiểu luyện nghe không hợp lệ.');
     let ids = catalog.listening.filter(q => selected.includes(q.lesson) &&
       (mode === 'all' || state.listening.records[q.id]?.latest.correct === false)).map(q => q.id);
     if (shuffle) ids = shuffled(ids, random);
+    if (limit !== 'all') ids = ids.slice(0, limit);
     const optionOrders = {}, responses = {}, fingerprints = {};
     for (const id of ids) {
       optionOrders[id] = shuffled([0, 1, 2, 3], random);
       responses[id] = {selected: null, submission: null, listenCount: 0};
       fingerprints[id] = index.questions.get(id).fingerprint;
     }
-    const session = {id: sequenceId(state, 'listen', now), lessons: selected, mode, questionIds: ids,
+    const session = {id: sequenceId(state, 'listen', now), lessons: selected, mode, ...(limit !== 'all' ? {limit} : {}), questionIds: ids,
       optionOrders, fingerprints, position: 0, responses, startedAt: now, finishedAt: null};
     state.listening.session = session; state.updatedAt = now; return session;
   }
@@ -306,13 +310,12 @@
   function moveCard(state, position, now = Date.now()) {
     clock(now); const {review} = currentReview(state);
     if (!Number.isInteger(position) || position < 0 || position >= review.senseIds.length) fail('INVALID_POSITION', 'Vị trí thẻ không hợp lệ.');
-    if (review.senseIds.slice(0, position).some(id => !own(review.ratings, id))) fail('RATING_REQUIRED', 'Hãy tự đánh giá thẻ hiện tại trước khi chuyển tiếp.');
+    // Browsing does not reveal, rate, complete, or reschedule any card.
     review.position = position; state.updatedAt = now;
     return {position, done: review.senseIds.every(id => own(review.ratings, id))};
   }
   function nextCard(state, now = Date.now()) {
-    const {review, id} = currentReview(state);
-    if (!own(review.ratings, id)) fail('RATING_REQUIRED', 'Hãy tự đánh giá thẻ hiện tại trước khi chuyển tiếp.');
+    const {review} = currentReview(state);
     return moveCard(state, Math.min(review.position + 1, review.senseIds.length - 1), now);
   }
   function cardSummary(state, catalog, now = Date.now()) {
@@ -383,7 +386,9 @@
         fail('INVALID_SESSION', 'Câu nghe không thuộc các bài đã chọn.');
       }
       const allIds = catalog.listening.filter(q => selected.includes(q.lesson)).map(q => q.id);
-      if (source.mode === 'all' && !sameSet(ids, allIds)) fail('INVALID_SESSION', 'Lượt nghe thiếu câu của các bài đã chọn.');
+      const limit = source.limit ?? 'all';
+      if (!['all', 5, 10].includes(limit) || (limit !== 'all' && ids.length > limit)) fail('INVALID_SESSION', 'Số câu trong lượt nghe không hợp lệ.');
+      if (source.mode === 'all' && (limit === 'all' ? !sameSet(ids, allIds) : ids.length !== Math.min(limit, allIds.length))) fail('INVALID_SESSION', 'Lượt nghe thiếu câu của các bài đã chọn.');
       exactKeys(source.optionOrders, ids); exactKeys(source.responses, ids);
       const optionOrders = {}, responses = {};
       for (const id of ids) {
@@ -398,7 +403,7 @@
         optionOrders[id] = order.slice(); responses[id] = {selected: response.selected, submission, listenCount: response.listenCount};
       }
       if (ids.slice(0, common.position).some(id => !responses[id].submission)) fail('INVALID_SESSION', 'Lượt nghe đã bỏ qua câu chưa nộp.');
-      state.listening.session = {...common, mode: source.mode, questionIds: ids.slice(), optionOrders, responses,
+      state.listening.session = {...common, mode: source.mode, ...(limit !== 'all' ? {limit} : {}), questionIds: ids.slice(), optionOrders, responses,
         finishedAt: ids.length && ids.every(id => responses[id].submission) ? responses[ids.at(-1)].submission.at : null};
     }
     for (const [id, schedule] of Object.entries(raw.cards.schedule)) {
@@ -433,9 +438,8 @@
       }
       const expected = makeDeck(before, catalog, {lessons: selected, filter: active.filter, direction: active.direction, shuffle: false}, active.startedAt);
       if (!sameSet(ids, expected.senseIds)) fail('INVALID_SESSION', 'Danh sách thẻ không khớp bộ lọc khi bắt đầu lượt.');
-      if (ids.slice(0, common.position).some(id => !own(ratings, id))) fail('INVALID_SESSION', 'Lượt ôn đã bỏ qua thẻ chưa tự đánh giá.');
       state.cards.review = {...common, filter: active.filter, direction: active.direction, senseIds: ids.slice(), revealed, ratings,
-        finishedAt: ids.length && ids.every(id => own(ratings, id)) ? ratings[ids.at(-1)].at : null};
+        finishedAt: ids.length && ids.every(id => own(ratings, id)) ? Math.max(...ids.map(id => ratings[id].at)) : null};
     }
     return state;
   }

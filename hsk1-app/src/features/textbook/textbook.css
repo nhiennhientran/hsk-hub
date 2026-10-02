@@ -43,3 +43,42 @@
   .textbook-reading, .textbook-player, .vocab-card, .textbook-word-detail, .textbook-line, .textbook-language-card { padding: 12px; }
   .textbook-actions > label { flex-basis: 100%; }
 }
+/* The lesson is one reading surface; controls do not add another nested frame. */
+.module-entry.textbook { padding: 0; overflow: clip; }
+.textbook > .subnav { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 18px 26px; border-bottom: 1px solid var(--line); }
+.textbook > .subnav a { display: flex; flex-direction: column; justify-content: center; padding: 10px 13px; color: var(--ink); background: white; border: 1px solid var(--line); font-size: .76rem; line-height: 1.35; }
+.textbook > .subnav a [lang="zh"] { font-family: var(--zh-font); font-size: 1rem; margin-bottom: 3px; }
+.textbook > .subnav a[aria-current="page"] { border-color: var(--gold); background: #fff8e9; }
+.textbook > fieldset[data-module-controls] { padding: 0 28px 28px; margin-top: 24px; }
+.textbook-body h2 { font-size: 1.35rem; }
+.textbook-vocab-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
+.vocab-card { background: white; border-color: var(--line); padding: 20px 16px 16px; box-shadow: 0 3px 9px #183e2603; }
+.vocab-card .vocab-front { text-align: center; padding: 12px 0; }
+.vocab-front h3 { font-family: var(--zh-font); font-size: 2.2rem; font-weight: 650; color: var(--green-900); }
+.vocab-card .textbook-actions { padding-top: 12px; border-top: 1px solid var(--line); gap: 6px; }
+.vocab-card button { padding: 6px 10px; font-size: .78rem; border-radius: 24px; }
+.vocab-card[data-flipped="true"] { background: #f4f8f0; }
+.textbook-reading { margin: 26px 0 0; padding: 18px; background: #f7f9f4; border: 1px solid var(--line); font-size: .8rem; }
+.textbook-reading #reading-section-status { font-weight: 650; margin-top: 0; }
+.textbook-reading .textbook-hint { font-size: .75rem; }
+.textbook-reading #reading-save-status { color: var(--muted); }
+.textbook-player-host { margin-top: 20px; }
+.textbook-player { margin: 0; background: #edf4ed; font-size: .8rem; }
+.textbook-player button, .textbook-player select { font-size: .8rem; min-height: 38px; }
+.textbook-journey { padding-top: 18px; border-top: 1px solid var(--line); gap: 10px; }
+.textbook-journey a { padding: 9px 16px; text-decoration: none; border: 1px solid var(--line); border-radius: 28px; font-size: .82rem; }
+.textbook-journey:first-of-type a:last-child { background: var(--green-900); color: white; border-color: var(--green-900); }
+.textbook-zh, .textbook-detail-head h3, .textbook-language-card h3, .textbook-line h3 { font-family: var(--zh-font); }
+.textbook-line { background: #fbfcf8; border-color: var(--line); padding: 20px; }
+.textbook-line .textbook-zh { font-size: 1.5rem; margin: 12px 0 5px; }
+.textbook-tip { border-color: #eeddb7; background: #fff9ee; }
+.textbook-tip h3 { color: #74581a; }
+@media (max-width: 900px) { .textbook-vocab-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+ .textbook > .subnav { display: flex; overflow-x: auto; flex-wrap: nowrap; padding: 14px; gap: 8px; scroll-snap-type: x proximity; }
+ .textbook > .subnav a { min-width: 100px; flex: 0 0 100px; scroll-snap-align: start; padding: 10px; }
+ .textbook > fieldset[data-module-controls] { padding: 0 16px 20px; margin-top: 20px; }
+ .textbook-vocab-grid { grid-template-columns: 1fr; }
+ .vocab-card { padding: 24px 18px 18px; } .vocab-card .vocab-front { min-height: 155px; padding-top: 28px; } .vocab-front h3 { font-size: 2.5rem; }
+ .textbook-reading, .textbook-player { padding: 15px; } .textbook-journey a { padding: 9px 12px; }
+}

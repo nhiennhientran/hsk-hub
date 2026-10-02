@@ -147,7 +147,13 @@ test('all 344 senses reveal exact meanings, distinguish homographs, retain sourc
     await expect(page.locator('#vocabulary-card')).toContainText(word.zh);
     await expect(page.locator('#vocabulary-answer')).toHaveCount(0);
     await expect(page.locator('#vocabulary-good')).toBeDisabled();
-    await expect(page.locator('#vocabulary-next')).toBeDisabled();
+    if (index < catalog.vocabulary.length - 1) {
+      await expect(page.locator('#vocabulary-next')).toBeEnabled();
+      await expect(page.locator('#vocabulary-skip')).toBeEnabled();
+    } else {
+      await expect(page.locator('#vocabulary-next')).toBeDisabled();
+      await expect(page.locator('#vocabulary-skip')).toBeDisabled();
+    }
     await expect(page.locator('#vocabulary-play')).toBeDisabled();
     await page.locator('#vocabulary-reveal').click();
     if (word.audio) { await expect(page.locator('#vocabulary-play')).toBeEnabled(); audio++; }
@@ -181,6 +187,61 @@ test('all 344 senses reveal exact meanings, distinguish homographs, retain sourc
     expect(new Set(homographs.map(word => word.senseId)).size).toBe(homographs.length);
     for (const word of homographs) expect(stored.review.ratings).toHaveProperty(word.senseId);
   }
+});
+
+for (const feature of ['vocabulary', 'review']) test(`${feature}: previous, next and skip work without ratings and preserve skipped cards across refresh`, async ({ page }) => {
+  await authenticate(page);
+  await page.goto(`/#/${feature}?lesson=1`);
+  await ready(page, feature);
+  await start(page, [1], 'due', 'vi-zh');
+  const ids = (await data(page)).practice.cards.review.senseIds as string[];
+  await expect(page.locator('#vocabulary-prev')).toBeDisabled();
+  await expect(page.locator('#vocabulary-next')).toBeEnabled();
+  await expect(page.locator('#vocabulary-skip')).toBeEnabled();
+  await expect(page.locator('#vocabulary-good')).toBeDisabled();
+  await page.locator('#vocabulary-next').click();
+  await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', ids[1]!);
+  await expect(page.locator('#vocabulary-prompt')).toBeFocused();
+  await page.locator('#vocabulary-reveal').click();
+  await page.locator('#vocabulary-skip').click();
+  await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', ids[2]!);
+  await expect(page.locator('#vocabulary-answer')).toHaveCount(0);
+  await rate(page, 'hard');
+  await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', ids[2]!); // No auto-advance.
+  await page.locator('#vocabulary-next').click();
+  const before = (await data(page)).practice.cards;
+  expect(before.review.position).toBe(3);
+  expect(Object.keys(before.review.ratings)).toEqual([ids[2]]);
+  expect(before.review.finishedAt).toBeNull();
+  await page.reload();
+  await ready(page, feature);
+  expect((await data(page)).practice.cards).toEqual(before);
+  await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', ids[3]!);
+  await expect(page.locator('#vocabulary-answer')).toHaveCount(0);
+  await page.locator('#vocabulary-prev').click();
+  await expect(page.locator('#vocabulary-rating-result')).toContainText('Khó nhớ');
+  await expect(page.locator('#vocabulary-good')).toBeDisabled();
+  await page.locator('#vocabulary-prev').click();
+  await expect(page.locator('#vocabulary-answer')).toBeVisible();
+  await expect(page.locator('#vocabulary-rating-result')).toHaveCount(0);
+  await expect(page.locator('#vocabulary-good')).toBeEnabled();
+  await page.locator('#vocabulary-prev').click();
+  await expect(page.locator('#vocabulary-answer')).toHaveCount(0);
+  await expect(page.locator('#vocabulary-prev')).toBeDisabled();
+  for (let index = 1; index < ids.length; index++) {
+    await page.locator('#vocabulary-skip').click();
+    await expect(page.locator('#vocabulary-card')).toHaveAttribute('data-sense-id', ids[index]!);
+  }
+  await expect(page.locator('#vocabulary-next')).toBeDisabled();
+  await expect(page.locator('#vocabulary-skip')).toBeDisabled();
+  await expect(page.locator('#vocabulary-prev')).toBeEnabled();
+  await expect(page.locator('#vocabulary-summary')).not.toContainText('Đã hoàn thành lượt này.');
+  const after = (await data(page)).practice.cards;
+  expect(after.schedule).toEqual(before.schedule);
+  expect(after.review).toEqual({ ...before.review, position: ids.length - 1 });
+  await page.locator(`#feature-nav [data-feature="${feature === 'review' ? 'vocabulary' : 'review'}"]`).click();
+  await ready(page, feature === 'review' ? 'vocabulary' : 'review');
+  expect((await data(page)).practice.cards).toEqual(after);
 });
 
 test('non-contiguous lessons 7 and 10 yield exactly 50 cards, shuffled order persists, and empty settings cannot erase the queue', async ({ page }) => {
@@ -543,11 +604,12 @@ test('home and progress keep objective scores, translations, reading marks and v
   expect(after.practice).toEqual(before.practice);
 });
 
-test('a rated mixed-lesson queue exports, imports into a new browser context and restores without recomputing current filter membership', async ({ page, browser }) => {
+test('a mixed-lesson queue with skipped and rated cards exports, imports and restores without recomputing current filter membership', async ({ page, browser }) => {
   await authenticate(page, envelope(seededData()));
   await page.goto('/#/vocabulary?lesson=7');
   await ready(page, 'vocabulary', 7);
   await start(page, [7, 10], 'unfamiliar', 'vi-zh', true);
+  await page.locator('#vocabulary-skip').click();
   await rate(page, 'good');
   await page.locator('#vocabulary-next').click();
   await page.locator('#vocabulary-reveal').click();

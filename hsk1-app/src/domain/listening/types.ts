@@ -10,6 +10,7 @@ export interface ListeningSession {
   id: string;
   lessons: number[];
   mode: 'all' | 'wrong';
+  limit?: 5 | 10;
   questionIds: string[];
   optionOrders: Record<string, number[]>;
   fingerprints: Record<string, string>;

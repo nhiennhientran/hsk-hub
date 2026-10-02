@@ -6,3 +6,5 @@ export const featureLabels: Record<Feature, string> = {
 };
 export const sectionLabels = { vocab: 'Từ vựng', text: 'Bài khoá', grammar: 'Ngữ âm / Ngữ pháp', hanzi: 'Hán tự', practice: 'Luyện tập' };
 export const partLabels = { choice: 'Chọn đáp án', sort: 'Xếp câu', translation: 'Dịch tự viết' };
+
+export const sectionChinese = { vocab: '生词', text: '课文', grammar: '语音 · 语法', hanzi: '汉字', practice: '练习' };

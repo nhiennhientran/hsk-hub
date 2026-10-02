@@ -1,3 +1,4 @@
+import { tongueTwisters } from '../../services/content/textbook-supplements.ts';
 import type { AudioService } from '../../services/audio/index.ts';
 import type { BookLesson, TextbookContent } from '../../services/content/textbook.ts';
 import { button, element } from './dom.ts';
@@ -54,6 +55,11 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
   const tongue = content.tongue(lesson.id);
   if (tongue.available) {
     const box = element('aside'); box.className = 'textbook-tip'; box.append(element('h3', 'Luyện đọc câu khó · 绕口令'), element('p', 'Nghe âm thanh gốc giáo trình rồi đọc theo. Bạn có thể chọn tốc độ chậm ở thanh điều khiển.'));
+    const original = tongueTwisters[lesson.id];
+    if (original) {
+      const text = element('p', original.zh); text.lang = 'zh'; text.className = 'textbook-zh'; text.dataset.tongueText = String(lesson.id);
+      box.append(text, element('p', original.py), element('small', '教材原文 · Nguyên văn trong giáo trình'));
+    }
     const control = button('Nghe 绕口令 · âm thanh gốc', () => { void audio.play(tongue.request, { signal }); }, signal); control.dataset.tongueAudio = String(lesson.id); box.append(control); section.append(box);
   }
   host.append(section); signal.addEventListener('abort', () => sceneLifetime?.abort(), { once: true }); draw(0);

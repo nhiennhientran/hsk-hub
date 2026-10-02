@@ -9,18 +9,19 @@ const book = JSON.parse(fs.readFileSync(new URL('../content/textbook.json', impo
 const legacy = fs.readFileSync(new URL('../../new-hsk1/hsk1/app-practice.js', import.meta.url), 'utf8').split('function qHtml')[0];
 const clone = value => JSON.parse(JSON.stringify(value));
 
-test('all 15 textbook practice banks match the independent original-script oracle, including option order and explanations', () => {
+test('the existing 150 corrected textbook questions remain unchanged while explicit legacy targets are added', () => {
   for (const lesson of book.lessons) {
     const context = vm.createContext({L: clone(lesson), id: lesson.id});
     vm.runInContext(legacy, context);
     const expected = vm.runInContext('JSON.stringify(practiceQuestions())', context);
-    assert.deepEqual(practiceQuestions(lesson), JSON.parse(expected), `lesson ${lesson.id}`);
-    assert.equal(practiceQuestions(lesson).basic.length, 7);
+    const actual = practiceQuestions(lesson);
+    assert.deepEqual({ basic: actual.basic.slice(0, 7), advanced: actual.advanced }, JSON.parse(expected), `lesson ${lesson.id}`);
+    assert.ok(practiceQuestions(lesson).basic.length >= 7);
     assert.equal(practiceQuestions(lesson).advanced.length, 3);
   }
 });
 
-test('textbook review grades all 150 original questions separately and permits unselected submissions', () => {
+test('textbook review grades all 160 retained and restored questions separately and permits unselected submissions', () => {
   let total = 0;
   for (const lesson of book.lessons) {
     for (const items of Object.values(practiceQuestions(lesson))) {
@@ -35,7 +36,7 @@ test('textbook review grades all 150 original questions separately and permits u
       assert.ok(missing.results.every(result => result.picked === null && result.correct === false));
     }
   }
-  assert.equal(total, 150);
+  assert.equal(total, 160);
 });
 
 test('review generation and grading do not mutate the frozen lesson or caller selections; invalid indexes count as unselected', () => {
@@ -91,4 +92,22 @@ test('the Hanzi lifecycle adapter removes every pointer listener and cancels act
   for (const type of ['mousedown', 'touchstart', 'mousemove', 'touchmove']) node.dispatchEvent(new Event(type));
   for (const type of ['mouseup', 'touchend', 'touchcancel']) documentTarget.dispatchEvent(new Event(type));
   assert.equal(calls.length, count, 'disposed writer must never receive new pointer work');
+});
+
+
+test('all ten audited legacy word targets use current corrected text and no replaced source sentence returns', () => {
+  const targets = JSON.parse(fs.readFileSync(new URL('../content/textbook-restored-targets.json', import.meta.url), 'utf8'));
+  assert.equal(targets.length, 10);
+  for (const target of targets) {
+    const lesson = book.lessons.find(row => row.id === target.lesson);
+    const word = lesson.vocab.find(row => row.id === target.contentId);
+    assert.equal(word.zh, target.word);
+    const rows = practiceQuestions(lesson).basic.filter(row => row.prompt.includes(`“${target.word}”`) && row.type === (target.kind === 'meaning' ? 'Từ vựng' : 'Pinyin'));
+    assert.equal(rows.length, 1);
+    assert.equal(rows[0].answer, target.kind === 'meaning' ? word.vn : word.py);
+    assert.equal(rows[0].options.filter(value => value === rows[0].answer).length, 1);
+  }
+  for (const [id, sentence] of [[3, '她是哪国人？'], [4, '他今年几岁？'], [10, '您好，有杯子吗？'], [13, '一斤四十个。']]) {
+    assert.ok(practiceQuestions(book.lessons[id - 1]).advanced.every(row => !row.stem.includes(sentence)));
+  }
 });

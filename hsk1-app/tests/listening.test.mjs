@@ -215,3 +215,26 @@ test('invalid random source and invalid clock fail before dirtying global data o
   assertNoChange(ctx, () => badClock.setPreferences({ rate: 0.75 }), 'invalid-time');
   assertNoChange(ctx, () => badClock.submit(), 'invalid-time');
 });
+
+
+test('5/10/all listening round sizes preserve fingerprints, exact saved queue and unrelated scores', async () => {
+  const ctx = setup(), c = ctx.controller();
+  c.setPreferences({ lessons: [1, 2, 3], shuffle: false });
+  for (const [limit, size] of [[5, 5], [10, 10], ['all', 15]]) {
+    assert.equal(c.start(limit).ok, true);
+    assert.equal(c.read().session.questionIds.length, size);
+    assert.equal(c.read().availableCount, 15);
+    const before = c.read().session;
+    await ctx.session.flush();
+    const reopened = setup(ctx.memory).controller();
+    assert.deepEqual(reopened.read().session, before);
+    assert.equal(reopened.read().summary.overall.answered, 0);
+  }
+  c.setPreferences({ lessons: [1] });
+  assert.equal(c.start(10).ok, true);
+  assert.equal(c.read().session.questionIds.length, 5);
+  assertNoChange(ctx, () => c.start(3));
+  const tampered = structuredClone(ctx.store.snapshot().data.practice);
+  tampered.listening.session.limit = 3;
+  assert.throws(() => engine.importBackup(tampered, catalog));
+});
