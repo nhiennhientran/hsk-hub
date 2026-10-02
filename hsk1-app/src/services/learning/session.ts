@@ -20,6 +20,7 @@ export function createLearningSession(options: SessionOptions) {
   let requested = false;
   let closed = false;
   let disposal: Promise<void> | undefined;
+  let exitDraft: { collect: () => boolean } | undefined;
   const cancelTimer = () => { if (timer !== undefined) clearTimer(timer); timer = undefined; };
 
   function flush(): Promise<StoreResult> {
@@ -49,9 +50,16 @@ export function createLearningSession(options: SessionOptions) {
       timer = setTimer(() => { timer = undefined; void flush(); }, options.delay ?? 300);
     },
     flush,
+    registerExitDraft(collect: () => boolean): () => void {
+      if (closed) return () => {};
+      const registration = { collect };
+      exitDraft = registration;
+      return () => { if (exitDraft === registration) exitDraft = undefined; };
+    },
+    prepareExit(): boolean { return !closed && (exitDraft?.collect() ?? false); },
     dispose(): Promise<void> {
       if (disposal) return disposal;
-      closed = true; cancelTimer();
+      closed = true; exitDraft = undefined; cancelTimer();
       disposal = flush().then(() => undefined).finally(() => store.dispose());
       return disposal;
     },
@@ -60,14 +68,18 @@ export function createLearningSession(options: SessionOptions) {
 export type LearningSession = ReturnType<typeof createLearningSession>;
 
 /** Unload cannot await a Web Lock. Keep the draft unless the learner chooses to leave. */
-export function bindUnsavedExit(target: EventTarget, session: Pick<LearningSession, 'store' | 'flush'>): () => void {
+export function bindUnsavedExit(target: EventTarget, session: Pick<LearningSession, 'store' | 'flush' | 'prepareExit'>): () => void {
   const beforeUnload = (event: Event) => {
-    if (!session.store.snapshot().hasUnsavedChanges) return;
+    let invalidDraft = false;
+    try { invalidDraft = session.prepareExit(); }
+    catch { invalidDraft = true; } // A failed collector must not silently discard visible input.
+    if (!invalidDraft && !session.store.snapshot().hasUnsavedChanges) return;
     void session.flush();
     event.preventDefault();
     (event as BeforeUnloadEvent).returnValue = '';
   };
-  // A feature's capture listener may collect its final DOM/IME draft first.
+  // Native Window events do not consistently order capture before bubble.
+  // One owner collects the active view's DOM/IME draft before deciding to warn.
   target.addEventListener('beforeunload', beforeUnload);
   return () => target.removeEventListener('beforeunload', beforeUnload);
 }

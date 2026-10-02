@@ -63,12 +63,101 @@ function makeSession(options = {}) {
 
 const persisted = setup => JSON.parse(setup.values.get(STORAGE_KEY)).data.homework.lessons['1'].translation.draft[qid];
 
+test('the single exit guard collects a DOM-only tail before checking dirty state and coalesces repeated exit attempts', async () => {
+  let gate;
+  const setup = makeSession({ lock: async task => gate ? gate.lock(task) : task() });
+  setup.edit('已保存的输入'); await setup.session.flush();
+  assert.equal(setup.store.snapshot().hasUnsavedChanges, false);
+  const target = new EventTarget();
+  // The native listener exists before the view registers its collector.
+  const cleanup = bindUnsavedExit(target, setup.session);
+  let collections = 0, visibleText = '尚未发送 input 事件的中文尾部';
+  const removeDraft = setup.session.registerExitDraft(() => {
+    collections++;
+    const current = setup.store.snapshot().data.homework.lessons['1'].translation.draft[qid];
+    if (current !== visibleText) setup.edit(visibleText);
+    return false;
+  });
+  gate = heldLock();
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const event = new Event('beforeunload', { cancelable: true });
+    target.dispatchEvent(event);
+    assert.equal(event.defaultPrevented, true);
+  }
+  assert.equal(collections, 2, 'exactly one collection per exit attempt');
+  assert.equal(gate.calls, 1, 'repeated exits share the same pending locked save');
+  assert.equal(setup.writes.length, 1, 'no exit write bypasses the lock');
+  assert.equal(persisted(setup), '已保存的输入');
+  assert.equal(setup.store.snapshot().data.homework.lessons['1'].translation.draft[qid], visibleText);
+  gate.release(); await setup.session.flush();
+  assert.equal(setup.writes.length, 2);
+  assert.equal(persisted(setup), visibleText);
+  const savedExit = new Event('beforeunload', { cancelable: true });
+  target.dispatchEvent(savedExit);
+  assert.equal(savedExit.defaultPrevented, false);
+  assert.equal(setup.writes.length, 2, 'unchanged collection does not create another write');
+  removeDraft(); removeDraft(); visibleText = '卸载后的旧 DOM';
+  assert.equal(setup.session.prepareExit(), false);
+  assert.equal(collections, 3);
+  cleanup(); await setup.session.dispose();
+});
+
+test('an invalid DOM-only draft warns even when the store is clean without inventing a persisted draft', async () => {
+  const setup = makeSession(), target = new EventTarget();
+  const cleanup = bindUnsavedExit(target, setup.session);
+  const removeDraft = setup.session.registerExitDraft(() => true);
+  const invalidExit = new Event('beforeunload', { cancelable: true });
+  target.dispatchEvent(invalidExit);
+  assert.equal(invalidExit.defaultPrevented, true);
+  assert.equal(setup.store.snapshot().hasUnsavedChanges, false);
+  assert.equal(setup.writes.length, 0);
+  removeDraft();
+  const cleanExit = new Event('beforeunload', { cancelable: true });
+  target.dispatchEvent(cleanExit);
+  assert.equal(cleanExit.defaultPrevented, false);
+  cleanup(); await setup.session.dispose();
+});
+
+test('only the current exit collector runs; stale unsubscribe and disposal cannot revive or clear another registration', async () => {
+  const setup = makeSession();
+  let oldCalls = 0, currentCalls = 0;
+  const removeOld = setup.session.registerExitDraft(() => { oldCalls++; return true; });
+  const current = () => { currentCalls++; return false; };
+  const removeFirst = setup.session.registerExitDraft(current);
+  const removeSecond = setup.session.registerExitDraft(current);
+  removeOld(); removeFirst(); removeFirst();
+  assert.equal(setup.session.prepareExit(), false);
+  assert.equal(oldCalls, 0);
+  assert.equal(currentCalls, 1, 'same function re-registration has its own ownership');
+  removeSecond();
+  assert.equal(setup.session.prepareExit(), false);
+  assert.equal(currentCalls, 1);
+  setup.session.registerExitDraft(current);
+  await setup.session.dispose();
+  assert.equal(setup.session.prepareExit(), false);
+  setup.session.registerExitDraft(current)();
+  assert.equal(setup.session.prepareExit(), false);
+  assert.equal(currentCalls, 1, 'closed sessions retain no collector');
+});
+
+test('an exit collector failure cannot silently permit abandoning visible input', async () => {
+  const setup = makeSession(), target = new EventTarget();
+  setup.session.registerExitDraft(() => { throw new Error('Draft collection failed'); });
+  const cleanup = bindUnsavedExit(target, setup.session);
+  const event = new Event('beforeunload', { cancelable: true });
+  target.dispatchEvent(event);
+  assert.equal(event.defaultPrevented, true);
+  assert.equal(setup.writes.length, 0);
+  cleanup(); await setup.session.dispose();
+});
+
 test('beforeunload protects an unsaved draft while its normal locked flush is pending, and saved state does not prompt', async () => {
   const held = heldLock();
   const setup = makeSession({ lock: held.lock });
   const target = new EventTarget();
   let flushes = 0;
-  const cleanup = bindUnsavedExit(target, { store: setup.store, flush() { flushes++; return setup.session.flush(); } });
+  const cleanup = bindUnsavedExit(target, { store: setup.store, prepareExit: setup.session.prepareExit,
+    flush() { flushes++; return setup.session.flush(); } });
   const emptyExit = new Event('beforeunload', { cancelable: true });
   target.dispatchEvent(emptyExit);
   assert.equal(emptyExit.defaultPrevented, false);

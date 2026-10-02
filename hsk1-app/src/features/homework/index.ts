@@ -92,12 +92,13 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       }
       for (const collect of textareaCollectors.values()) collect();
     };
-    window.addEventListener('beforeunload', event => {
+    const removeExitDraft = session.registerExitDraft(() => {
       collectDraft();
       // An oversized composition may still exist only in the DOM because the
       // domain correctly rejected it. Never truncate or silently discard it.
-      if (invalid.size) { event.preventDefault(); event.returnValue = ''; }
-    }, { capture: true, signal: lifetime.signal });
+      return invalid.size > 0;
+    });
+    lifetime.signal.addEventListener('abort', removeExitDraft, { once: true });
     const score = (correct: number | null, total: number) => `${correct} / ${total} (${total ? Math.round((correct ?? 0) / total * 100) : 0}%)`;
     function updateSummary(): void {
       const model = homework.read();

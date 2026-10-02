@@ -413,7 +413,8 @@ test.describe('step 8 responsive cross-module evidence', () => {
       const textareaLayout = await textarea.evaluate(node => ({ font: parseFloat(getComputedStyle(node).fontSize), client: node.clientHeight, scroll: node.scrollHeight, top: node.scrollTop }));
       expect(textareaLayout.font).toBeGreaterThanOrEqual(16);
       expect(textareaLayout.scroll).toBeGreaterThan(textareaLayout.client);
-      expect(textareaLayout.top).toBeGreaterThan(0);
+      // Native caret scrolling can complete on the next rendering update in WebKit.
+      await expect.poll(() => textarea.evaluate(node => node.scrollTop)).toBeGreaterThan(0);
       await layoutEvidence(page, testInfo, 'long-translation-controls', ['#feature-nav', '#lesson-select', '#homework-name', '#homework-class',
         `textarea[data-answer-id="${lesson.translation[0]!.id}"]`, '#submit-homework']);
       await page.locator('#submit-homework').click();
