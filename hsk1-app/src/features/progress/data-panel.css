@@ -9,3 +9,8 @@
 .data-panel .data-warning { font-weight: 600; }
 .data-panel #data-status { min-height: 1.5em; }
 .data-panel #data-status[data-state="unsaved"], .data-panel #data-status[data-state="conflict"], .data-panel #data-status[data-state="corrupt"], .data-panel #data-status[data-state="unavailable"] { color: #9a3412; }
+
+.data-panel .data-reset { margin-top: 1.25rem; border-top: 1px solid var(--border, #cbd5e1); padding-top: 1rem; }
+.data-panel select { max-width: 100%; min-height: 2.5rem; }
+.data-panel .data-source-list article { border-left: 3px solid var(--border, #cbd5e1); padding: .25rem .75rem; margin: .75rem 0; overflow-wrap: anywhere; }
+.data-panel .data-source-list p { margin: .35rem 0; }

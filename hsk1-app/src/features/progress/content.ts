@@ -1,3 +1,5 @@
+import { createExerciseCatalogue } from '../../domain/exercises/catalogue.ts';
+import legacyExercises from '../../../content/legacy-exercises.json';
 import { loadHomeworkBank } from '../../services/content/homework.ts';
 import practice from '../../domain/practice/engine.js';
 import type { ListeningCatalog } from '../../services/content/listening.ts';
@@ -14,5 +16,5 @@ export async function loadProgressSources(signal: AbortSignal): Promise<Progress
     return value as ListeningCatalog;
   })()]);
   signal.throwIfAborted();
-  return { bank, catalog };
+  return { bank, catalog, exercises: createExerciseCatalogue(legacyExercises, bank) };
 }

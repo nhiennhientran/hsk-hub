@@ -69,7 +69,17 @@ export function renderProgressOverview(host: HTMLElement, model: ProgressSummary
   actions.append(routeLink('Mở lịch ôn', { feature: 'review', lesson: model.resume?.route.lesson ?? 1 }));
   if (model.vocabularyResume) actions.append(routeLink(model.vocabularyResume.label, model.vocabularyResume.route));
   vocabulary.append(actions);
-  host.replaceChildren(reading, homework, translation, listening, vocabulary);
+  const restored: HTMLElement[] = [];
+  if (model.extraExercises) {
+    for (const [kind, title] of [['original', 'Bài tập gốc · 300 câu'], ['pilot', 'Bài 9 mở rộng · 30 câu']] as const) {
+      const totals = model.extraExercises[kind], panel = section(title, kind);
+      metric(panel, `${prefix}-${kind}-submitted`, `Đã nộp ${totals.submitted}/${totals.automatic} câu tự chấm · Lần đầu đúng ${totals.firstCorrect} · Gần nhất đúng ${totals.latestCorrect}`);
+      if (totals.manual) panel.append(element('p', `Bài tự viết: ${totals.manualSubmitted}/${totals.manual} · giáo viên xem, không có điểm tự động`));
+      panel.append(routeLink('Mở bài tập', { feature: 'exercises', lesson: kind === 'pilot' ? 9 : model.resume?.route.lesson ?? 1, exerciseSet: kind })); restored.push(panel);
+    }
+    homework.append(element('p', `${model.extraExercises.reviewWrong} câu còn sai · ${model.extraExercises.reviewDue} câu đến hạn ôn. Lượt ôn từng câu không thay điểm bài nộp đầu tiên.`));
+  }
+  host.replaceChildren(reading, homework, translation, listening, vocabulary, ...restored);
 }
 
 export function renderLessonProgress(host: HTMLElement, model: ProgressSummary): void {

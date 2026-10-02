@@ -243,3 +243,14 @@ test('navigation inside a subscriber does not deliver an obsolete route afterwar
   assert.equal(fake.writes.length, 2);
   router.dispose();
 });
+
+test('original/pilot/homework-review routes roundtrip with bounded groups and independent filters', () => {
+  for (const route of [
+    {feature:'exercises',lesson:4,exerciseSet:'original',exerciseGroup:'translation',exerciseFilter:'all'},
+    {feature:'exercises',lesson:9,exerciseSet:'pilot',exerciseGroup:'reading',exerciseFilter:'all'},
+    {feature:'exercises',lesson:3,exerciseSet:'homework-review',exerciseGroup:'sort',exerciseFilter:'due'},
+  ]) assert.deepEqual(parseRoute(routeHref(route)),route);
+  assert.deepEqual(parseRoute('lesson9-pilot.html?id=9&sec=practice'),{feature:'exercises',lesson:9,exerciseSet:'pilot',exerciseGroup:'words',exerciseFilter:'all'});
+  assert.deepEqual(normalizeRoute({feature:'exercises',lesson:1,exerciseSet:'pilot',exerciseGroup:'bogus'}),{feature:'exercises',lesson:9,exerciseSet:'pilot',exerciseGroup:'words',exerciseFilter:'all'});
+  assert.deepEqual(normalizeRoute({feature:'exercises',lesson:3,exerciseSet:'homework-review',exerciseGroup:'translation'}),{feature:'exercises',lesson:3,exerciseSet:'homework-review',exerciseGroup:'choice',exerciseFilter:'wrong'});
+});

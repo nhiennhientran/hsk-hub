@@ -197,6 +197,13 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       composing.clear(); invalid.clear(); textareaCollectors.clear(); exercise.replaceChildren();
       const model = homework.read();
       exercise.append(element('h2', partLabels[part]));
+      const reviewLinks = element('nav'); reviewLinks.className = 'study-paths'; reviewLinks.setAttribute('aria-label', 'Ôn câu và dạng bài khác');
+      for (const [label, filter] of [['Ôn câu sai · 错题', 'wrong'], ['Ôn câu đến hạn · 复习', 'due']] as const) {
+        const link = element('a', label); link.href = routeHref({ feature: 'exercises', lesson: lesson.id, exerciseSet: 'homework-review', exerciseGroup: part === 'sort' ? 'sort' : 'choice', exerciseFilter: filter }); link.dataset.routeLink = ''; reviewLinks.append(link);
+      }
+      if (part === 'translation') { const link = element('a', 'Dịch lựa chọn · 翻译选择'); link.href = routeHref({ feature: 'exercises', lesson: lesson.id, exerciseSet: 'original', exerciseGroup: 'translation' }); link.dataset.routeLink = ''; reviewLinks.append(link); }
+      exercise.append(reviewLinks);
+
       if (model.locked) {
         const prerequisite = part === 'sort' ? 'choice' : 'sort';
         exercise.append(element('p', `Hoàn thành và nộp đủ 5 câu ${partLabels[prerequisite].toLowerCase()} để mở phần này. Không cần đạt điểm tối đa.`));

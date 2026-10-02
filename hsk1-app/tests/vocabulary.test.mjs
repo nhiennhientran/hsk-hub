@@ -316,3 +316,76 @@ test('quota failure and cross-tab conflict preserve the self-rating in exportabl
   assert.equal(JSON.parse(right.memory.get(STORAGE_KEY)).data.practice.cards.review.ratings[l.read().current.senseId].rating, 'good');
   await quota.session.dispose(); await left.session.dispose(); await right.session.dispose();
 });
+
+test('mixed search matches Chinese, Vietnamese and unaccented/spaceless pinyin without merging senses', () => {
+  const ctx = setup(), c = ctx.controller(); c.setPreferences({ lessons: allLessons, shuffle: false });
+  const requests = ctx.requests(), original = ctx.store.snapshot();
+  for (const [query, id] of [['你好', 'lex-'], ['NǏ HǍO', 'lex-'], ['nihao', 'lex-'], ['xin chao', 'lex-']]) {
+    assert.equal(c.setSearch(query).ok, true);
+    assert.ok(c.read().available.cards.some(card => card.zh === '你好' && card.senseId.startsWith(id)), query);
+    assert.equal(c.read().availableCount, c.read().available.cards.length);
+  }
+  c.setSearch('gia dinh'); assert.ok(c.read().available.cards.some(card => card.zh === '家' && card.vi === 'gia đình'));
+  c.setSearch('đúng'); const accented = c.read().available.senseIds;
+  c.setSearch('DUNG'); assert.deepEqual(c.read().available.senseIds, accented);
+  c.setSearch('shang');
+  assert.equal(c.read().available.cards.filter(card => card.zh === '上').length, 3);
+  c.setSearch('lượng từ'); assert.ok(c.read().available.cards.some(card => card.zh === '家' && card.senseId.endsWith('s3')));
+  c.setSearch('   '); assert.equal(c.read().availableCount, 344);
+  assert.deepEqual(ctx.store.snapshot(), original); assert.equal(ctx.requests(), requests);
+  for (const invalid of [null, 1, {}, 'x'.repeat(121)]) noChange(ctx, () => c.setSearch(invalid), 'invalid-search');
+  assert.equal(c.read().search, '');
+});
+
+test('search intersects lesson and rating filters; empty searches cannot replace a saved round', () => {
+  const ctx = setup(), c = ctx.controller(); c.setPreferences({ lessons: allLessons, shuffle: false });
+  c.setSearch('nhớ nhung'); assert.equal(c.read().availableCount, 1); c.start();
+  const id = c.read().current.senseId; rate(c, 'again');
+  c.setPreferences({ vocabularyFilter: 'wrong' }); assert.deepEqual(c.read().available.senseIds, [id]);
+  assert.equal(c.read().dueCount, 0); noChange(ctx, () => c.start('due'), 'empty');
+  c.setPreferences({ lessons: [6] }); assert.equal(c.read().availableCount, 0);
+  noChange(ctx, () => c.start(), 'empty');
+  assert.equal(c.read().current.senseId, id); assert.equal(c.read().review.search, 'nhớ nhung');
+  c.setSearch('no-such-word'); noChange(ctx, () => c.start(), 'empty');
+  c.setSearch(''); c.setPreferences({ lessons: [3], vocabularyFilter: 'all' });
+  assert.equal(c.read().availableCount, catalog.vocabulary.filter(item => item.lesson === 3).length);
+  assert.equal(c.read().review.search, 'nhớ nhung');
+  c.start(); assert.equal('search' in c.read().review, false);
+});
+
+test('searched queues retain exact ordering, saved scope and unrated gaps through reload and backup import', async () => {
+  const ctx = setup(), c = ctx.controller(); c.setPreferences({ lessons: [4, 7, 9], direction: 'vi-zh', shuffle: false });
+  c.setSearch('家'); const expected = c.read().available.senseIds; assert.ok(expected.length >= 3);
+  c.start(); assert.deepEqual(c.read().review.senseIds, expected);
+  c.next(); c.reveal(); c.next(); rate(c, 'hard');
+  assert.equal(c.read().review.position, 2); assert.equal(c.read().review.finishedAt, null);
+  const round = c.read().review, schedules = ctx.store.snapshot().data.practice.cards.schedule;
+  c.setSearch('无匹配词'); c.setPreferences({ lessons: [15], vocabularyFilter: 'wrong', direction: 'zh-vi' });
+  assert.deepEqual(c.read().review, round); assert.equal(c.read().current.direction, 'vi-zh');
+  assert.equal((await ctx.session.flush()).ok, true);
+  const loaded = setup({ memory: ctx.memory }), resumed = loaded.controller();
+  assert.deepEqual(resumed.read().review, round); assert.equal(resumed.read().search, '家');
+  const imported = setup(); assert.equal((await imported.store.confirm(imported.store.previewBackup(ctx.store.exportBackup()))).ok, true);
+  const restored = imported.controller(); assert.deepEqual(restored.read().review, round);
+  for (const d of [resumed, restored]) {
+    d.move(0); assert.equal(d.read().current.revealed, false); assert.equal(d.read().current.rating, null);
+    d.next(); assert.equal(d.read().current.revealed, true); assert.equal(d.read().current.rating, null);
+    d.next(); assert.equal(d.read().current.rating.rating, 'hard');
+  }
+  assert.deepEqual(loaded.store.snapshot().data.practice.cards.schedule, schedules);
+  await ctx.session.dispose(); await loaded.session.dispose(); await imported.session.dispose();
+});
+
+test('saved search never permits foreign, omitted, or substituted queue members', () => {
+  const ctx = setup(), c = ctx.controller(); c.setPreferences({ lessons: allLessons, shuffle: false }); c.setSearch('家'); c.start();
+  const original = ctx.store.snapshot().data.practice;
+  for (const mutate of [
+    state => { state.cards.review.search = ''; },
+    state => { state.cards.review.search = 'x'.repeat(121); },
+    state => { state.cards.review.search = null; },
+    state => { state.cards.review.search = 4; },
+    state => { const id = state.cards.review.senseIds.pop(); delete state.cards.review.fingerprints[id]; },
+    state => { const id = state.cards.review.senseIds[0]; state.cards.review.senseIds[0] = catalog.vocabulary[0].senseId; state.cards.review.fingerprints[catalog.vocabulary[0].senseId] = state.cards.review.fingerprints[id]; delete state.cards.review.fingerprints[id]; },
+  ]) { const changed = structuredClone(original); mutate(changed); assert.throws(() => engine.importBackup(changed, catalog)); }
+  assert.deepEqual(engine.importBackup(original, catalog), original);
+});

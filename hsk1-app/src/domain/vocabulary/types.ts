@@ -24,6 +24,8 @@ export interface VocabularyRatingResult {
 }
 export interface VocabularyReview {
   id: string;
+  /** Immutable scope of this saved queue. Absent on existing unsearched rounds. */
+  search?: string;
   lessons: number[];
   filter: VocabularyFilter;
   direction: VocabularyDirection;
@@ -76,6 +78,7 @@ export interface VocabularyCurrent extends VocabularyCard {
   direction: VocabularyDirection;
 }
 export interface VocabularyDeckOptions {
+  search?: string;
   lessons?: number[];
   filter?: VocabularyFilter;
   direction?: VocabularyDirection;

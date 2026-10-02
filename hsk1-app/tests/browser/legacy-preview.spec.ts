@@ -14,7 +14,7 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 1024 }, { name: 
       ['dialogue', '/#/textbook?lesson=1&section=text'], ['grammar', '/#/textbook?lesson=10&section=grammar'],
       ['hanzi', '/#/textbook?lesson=4&section=hanzi'], ['practice', '/#/textbook?lesson=4&section=practice'],
       ['homework', '/#/homework?lesson=1&part=choice'], ['listening', '/#/listening?lesson=1'],
-      ['mixed-vocabulary', '/#/vocabulary?lesson=1'], ['progress', '/#/progress?lesson=1'],
+      ['mixed-vocabulary', '/#/vocabulary?lesson=1'], ['progress', '/#/progress?lesson=1'], ['original-exercises', '/#/exercises?lesson=1&set=original&group=translation&filter=all'], ['pilot-reading', '/#/exercises?lesson=9&set=pilot&group=reading&filter=all'],
     ];
     for (const [name, route] of routes) {
       await page.goto(route);
@@ -25,9 +25,12 @@ for (const viewport of [{ name: 'desktop', width: 1440, height: 1024 }, { name: 
         await expect(page.locator('.course-hero')).toHaveCSS('background-image', /linear-gradient/);
       }
       if (name === 'dialogue') await expect(page.locator('[data-tongue-text="1"]')).toHaveText(tongueTwisters[1].zh);
+      if (name === 'listening') { await page.locator('#listening-start').click(); await expect(page.locator('#listening-question')).toBeVisible(); }
+      if (name === 'mixed-vocabulary') { await page.locator('#vocabulary-start').click(); await expect(page.locator('#vocabulary-prompt')).toBeVisible(); }
       const width = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, viewport: innerWidth }));
       expect(width.scroll).toBeLessThanOrEqual(width.viewport);
       await page.screenshot({ path: `${folder}/${viewport.name}-${name}.png`, fullPage: true });
+      await page.screenshot({ path: `${folder}/${viewport.name}-${name}-viewport.png` });
     }
     await page.goto('/#/home?lesson=1');
     await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');

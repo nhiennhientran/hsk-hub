@@ -1,7 +1,8 @@
 /* Pure ESM adaptation of new-hsk1/hsk1/stage3/engine.js.
  * Source SHA-256: 010cfde850b1b9a49f90b5b2ceb2c70991d255750c3514761f7b064401d36a17
  * Approved preview exception: free card navigation, skipped-card restore and
- * out-of-order completion time. Grading and scheduling calculations stay identical. */
+ * out-of-order completion time, and validated search-scoped vocabulary queues.
+ * Grading and scheduling calculations stay identical. */
   const APP = 'hsk1-stage3', KEY = 'ran_hsk1_stage3_v1', SCHEMA = 1;
   const MAX_BACKUP_BYTES = 4 * 1024 * 1024;
   const DAY = 86400000, MINUTE = 60000, MAX_TIME = 8640000000000000;
@@ -234,11 +235,24 @@
         firstPercentAmongAnswered: percent(firstCorrect, records.length), latestPercentAmongAnswered: percent(latestCorrect, records.length)},
       wrongIds: [...index.questions.keys()].filter(id => state.listening.records[id]?.latest.correct === false)};
   }
+  function vocabularySearch(value = '') {
+    if (typeof value !== 'string' || value.length > 120) fail('INVALID_SEARCH', 'Từ khóa tìm kiếm tối đa 120 ký tự.');
+    return value.trim().replace(/\s+/gu, ' ');
+  }
+  const foldSearch = value => value.normalize('NFKD').replace(/\p{M}/gu, '').replace(/[đĐ]/gu, 'd').toLowerCase().replace(/\s+/gu, ' ').trim();
+  function matchesVocabulary(card, query) {
+    if (!query) return true;
+    const needle = foldSearch(query), compact = needle.replace(/\s+/gu, '');
+    return card.sourceRecords.some(item =>
+      [item.zh, item.vi].some(value => foldSearch(value).includes(needle)) ||
+      foldSearch(item.py).replace(/\s+/gu, '').includes(compact));
+  }
   function makeDeck(state, catalog, options = {}, now = Date.now(), random = Math.random) {
     assertState(state); clock(now); indexCatalog(catalog);
     const selected = lessons(options.lessons ?? state.preferences.lessons);
     const filter = options.filter ?? state.preferences.vocabularyFilter, direction = options.direction ?? state.preferences.direction;
     const shuffle = options.shuffle ?? state.preferences.shuffle;
+    const search = vocabularySearch(options.search);
     if (!FILTERS.includes(filter) || !DIRECTIONS.includes(direction) || typeof shuffle !== 'boolean') fail('INVALID_OPTIONS', 'Kiểu ôn từ không hợp lệ.');
     const groups = new Map();
     for (const item of catalog.vocabulary) if (selected.includes(item.lesson)) {
@@ -253,7 +267,7 @@
         extension: records.some(item => item.extension), audio: audioRecord?.audio || null, audioRecordId: audioRecord?.id || null};
     });
     const mergedCount = cards.length, distinctForms = new Set(cards.map(card => card.zh.normalize('NFKC'))).size;
-    cards = cards.filter(card => {
+    cards = cards.filter(card => matchesVocabulary(card, search)).filter(card => {
       const entry = state.cards.schedule[card.senseId];
       return filter === 'all' || (filter === 'unfamiliar' && (!entry || entry.lastRating !== 'good')) ||
         (filter === 'wrong' && entry?.lastRating === 'again') || (filter === 'due' && (!entry || entry.dueAt <= now));
@@ -267,6 +281,7 @@
     const review = {id: sequenceId(state, 'cards', now), lessons: deck.lessons, filter: deck.filter, direction: deck.direction,
       senseIds: deck.senseIds, position: 0, revealed: {}, ratings: {},
       fingerprints: Object.fromEntries(deck.senseIds.map(id => [id, index.senses.get(id).fingerprint])),
+      ...(vocabularySearch(options.search) ? {search: vocabularySearch(options.search)} : {}),
       startedAt: now, finishedAt: null};
     state.cards.review = review; state.updatedAt = now; return review;
   }
@@ -388,7 +403,22 @@
       const allIds = catalog.listening.filter(q => selected.includes(q.lesson)).map(q => q.id);
       const limit = source.limit ?? 'all';
       if (!['all', 5, 10].includes(limit) || (limit !== 'all' && ids.length > limit)) fail('INVALID_SESSION', 'Số câu trong lượt nghe không hợp lệ.');
-      if (source.mode === 'all' && (limit === 'all' ? !sameSet(ids, allIds) : ids.length !== Math.min(limit, allIds.length))) fail('INVALID_SESSION', 'Lượt nghe thiếu câu của các bài đã chọn.');
+      let resetScope;
+      if (source.resetScope !== undefined) {
+        const witness = source.resetScope;
+        if (!record(witness) || Object.keys(witness).some(key => !['lessons', 'questionIds', 'removedLessons'].includes(key))) fail('INVALID_SESSION', 'Phạm vi đặt lại lượt nghe không hợp lệ.');
+        const originalLessons = lessons(witness.lessons), removedLessons = lessons(witness.removedLessons), originalIds = witness.questionIds;
+        if (!same(originalLessons, witness.lessons) || !same(removedLessons, witness.removedLessons) || !removedLessons.length ||
+            removedLessons.some(id => !originalLessons.includes(id)) || !Array.isArray(originalIds) || new Set(originalIds).size !== originalIds.length ||
+            originalIds.some(id => !index.questions.has(id) || !originalLessons.includes(index.questions.get(id).q.lesson))) fail('INVALID_SESSION', 'Nguồn lượt nghe trước đặt lại không hợp lệ.');
+        const originalAll = catalog.listening.filter(q => originalLessons.includes(q.lesson)).map(q => q.id);
+        if (limit !== 'all' && originalIds.length > limit) fail('INVALID_SESSION', 'Lượt nghe gốc vượt số câu đã chọn.');
+        if (source.mode === 'all' && (limit === 'all' ? !sameSet(originalIds, originalAll) : originalIds.length !== Math.min(limit, originalAll.length))) fail('INVALID_SESSION', 'Lượt nghe gốc thiếu câu.');
+        const remainingLessons = originalLessons.filter(id => !removedLessons.includes(id));
+        const remainingIds = originalIds.filter(id => remainingLessons.includes(index.questions.get(id).q.lesson));
+        if (!same(selected, remainingLessons) || !same(ids, remainingIds)) fail('INVALID_SESSION', 'Lượt nghe đặt lại không giữ đúng câu ngoài phạm vi.');
+        resetScope = {lessons: originalLessons, questionIds: originalIds.slice(), removedLessons};
+      } else if (source.mode === 'all' && (limit === 'all' ? !sameSet(ids, allIds) : ids.length !== Math.min(limit, allIds.length))) fail('INVALID_SESSION', 'Lượt nghe thiếu câu của các bài đã chọn.');
       exactKeys(source.optionOrders, ids); exactKeys(source.responses, ids);
       const optionOrders = {}, responses = {};
       for (const id of ids) {
@@ -403,7 +433,7 @@
         optionOrders[id] = order.slice(); responses[id] = {selected: response.selected, submission, listenCount: response.listenCount};
       }
       if (ids.slice(0, common.position).some(id => !responses[id].submission)) fail('INVALID_SESSION', 'Lượt nghe đã bỏ qua câu chưa nộp.');
-      state.listening.session = {...common, mode: source.mode, ...(limit !== 'all' ? {limit} : {}), questionIds: ids.slice(), optionOrders, responses,
+      state.listening.session = {...common, mode: source.mode, ...(limit !== 'all' ? {limit} : {}), ...(resetScope ? {resetScope} : {}), questionIds: ids.slice(), optionOrders, responses,
         finishedAt: ids.length && ids.every(id => responses[id].submission) ? responses[ids.at(-1)].submission.at : null};
     }
     for (const [id, schedule] of Object.entries(raw.cards.schedule)) {
@@ -436,9 +466,11 @@
         ratings[id] = calculated;
         if (previous) before.cards.schedule[id] = previous; else delete before.cards.schedule[id];
       }
-      const expected = makeDeck(before, catalog, {lessons: selected, filter: active.filter, direction: active.direction, shuffle: false}, active.startedAt);
+      const search = vocabularySearch(active.search);
+      const expected = makeDeck(before, catalog, {lessons: selected, filter: active.filter, direction: active.direction, shuffle: false, search}, active.startedAt);
       if (!sameSet(ids, expected.senseIds)) fail('INVALID_SESSION', 'Danh sách thẻ không khớp bộ lọc khi bắt đầu lượt.');
       state.cards.review = {...common, filter: active.filter, direction: active.direction, senseIds: ids.slice(), revealed, ratings,
+        ...(search ? {search} : {}),
         finishedAt: ids.length && ids.every(id => own(ratings, id)) ? Math.max(...ids.map(id => ratings[id].at)) : null};
     }
     return state;

@@ -11,6 +11,7 @@ export interface ListeningSession {
   lessons: number[];
   mode: 'all' | 'wrong';
   limit?: 5 | 10;
+  resetScope?: { lessons: number[]; questionIds: string[]; removedLessons: number[] };
   questionIds: string[];
   optionOrders: Record<string, number[]>;
   fingerprints: Record<string, string>;

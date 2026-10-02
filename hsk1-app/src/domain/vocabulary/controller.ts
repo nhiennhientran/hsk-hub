@@ -26,6 +26,9 @@ export function createVocabularyController({ session: learning, catalog, now = D
   engine.importBackup(store.snapshot().data.practice, catalog);
   let feature: 'vocabulary' | 'review' = store.snapshot().data.navigation?.feature === 'review' ? 'review' : 'vocabulary';
   const state = () => store.snapshot().data.practice;
+  // A draft search never changes an active queue. Once started, its query is
+  // saved with the queue and validated by the engine on reload/import.
+  let search = reviewState(state())?.search ?? '';
   function current(practice: PracticeState, stamp: number): VocabularyCurrent | null {
     const review = reviewState(practice), id = review?.senseIds[review.position];
     if (!review || !id) return null;
@@ -53,9 +56,10 @@ export function createVocabularyController({ session: learning, catalog, now = D
     read() {
       const practice = state(), stamp = now();
       const { lessons, vocabularyFilter, direction, shuffle, rate } = practice.preferences;
-      const available = engine.makeDeck(practice, catalog, { shuffle: false }, stamp);
-      return { preferences: { lessons, vocabularyFilter, direction, shuffle, rate }, review: reviewState(practice),
+      const available = engine.makeDeck(practice, catalog, { shuffle: false, search }, stamp);
+      return { preferences: { lessons, vocabularyFilter, direction, shuffle, rate }, search, review: reviewState(practice),
         current: current(practice, stamp), available, availableCount: available.filteredCount,
+        dueCount: engine.makeDeck(practice, catalog, { shuffle: false, filter: 'due', search }, stamp).filteredCount,
         summary: engine.cardSummary(practice, catalog, stamp) };
     },
     visit(routeLesson: number, routeFeature: 'vocabulary' | 'review' = 'vocabulary'): VocabularyResult {
@@ -91,15 +95,23 @@ export function createVocabularyController({ session: learning, catalog, now = D
         if (same(previous, practice.preferences)) practice.updatedAt = updatedAt;
       });
     },
+    setSearch(value: string): VocabularyResult {
+      try {
+        // Use the engine's validation and matching rules without a storage write.
+        engine.makeDeck(state(), catalog, { shuffle: false, search: value }, now());
+        search = value.trim().replace(/\s+/gu, ' ');
+        return success;
+      } catch (error) { return errorResult(error); }
+    },
     start(filter?: VocabularyFilter): VocabularyResult {
       try {
         const stamp = now();
-        if (!engine.makeDeck(state(), catalog, { ...(filter !== undefined ? { filter } : {}), shuffle: false }, stamp).filteredCount) {
+        if (!engine.makeDeck(state(), catalog, { ...(filter !== undefined ? { filter } : {}), shuffle: false, search }, stamp).filteredCount) {
           return failed('empty', 'Không có thẻ trong các bài và bộ lọc đã chọn.');
         }
         return change(practice => {
           engine.setPreferences(practice, { module: 'vocabulary', ...(filter !== undefined ? { vocabularyFilter: filter } : {}) }, stamp);
-          engine.startReview(practice, catalog, {}, stamp, random);
+          engine.startReview(practice, catalog, { search }, stamp, random);
         }, true);
       } catch (error) { return errorResult(error); }
     },

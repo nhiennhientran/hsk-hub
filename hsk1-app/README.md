@@ -35,7 +35,7 @@ npm run test:repro
 
 ## 数据与维护
 
-新记录用`ran_hsk1_modular_v1`，导入/迁移必须预览并确认；当前记录及一份恢复快照同一次写入。原11个旧学习键保持不变，会话gate不进入备份。相同origin的新应用tab通过Web Locks协调写入；不支持安全锁时仅查看/下载，不用不安全读写冒充原子更新。
+新记录用`ran_hsk1_modular_v1`，导入/迁移必须预览并确认；当前记录及一份恢复快照同一次写入。原12个旧学习键保持不变，会话gate不进入备份。相同origin的新应用tab通过Web Locks协调写入；不支持安全锁时仅查看/下载，不用不安全读写冒充原子更新。
 
 应用会话`src/services/learning/session.ts`持有共享存储，300ms防抖保存，切页先收集最终草稿再flush；保存失败原文仍可跨模块下载备份，视图退出不关闭学习会话。作业控制器`features/homework/controller.ts`调用纯规则，收据只取已提交快照。公共服务为`src/services/storage/index.ts`；格式适配与校验为`compatibility.ts`，純规则位于`src/domain/homework`和`practice`。已保存、未保存、冲突、损坏状态分开。失败时可下载当前内存稿，导入失败可另下载预览候选；损坏主记录提供原字符串下载。服务API、容量和兼容限制见`docs/storage-contract.md`，本步证据见`docs/step7-acceptance.md`。
 

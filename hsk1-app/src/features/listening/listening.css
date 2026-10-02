@@ -60,4 +60,4 @@
 .listening-options label { padding: 16px; background: white; }
 .listening-question { border-color: var(--line); padding: 24px; }
 .listening-transcript [lang="zh-CN"] { font-family: var(--zh-font); font-size: 1.5rem; }
-@media (max-width: 600px) { .listening-lesson-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; } .listening-lesson-grid label { padding: 7px; font-size: .75rem; } .listening-options { grid-template-columns: 1fr; } .listening-question { padding: 18px; } }
+@media (max-width: 600px) { .listening-lesson-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; } .listening-lesson-grid label { padding: 7px; font-size: .875rem; } .listening-options { grid-template-columns: 1fr; } .listening-question { padding: 18px; } }

@@ -31,3 +31,15 @@
 .homework button:disabled { cursor: default; }
 .homework [data-homework-part][data-locked='true']:not([aria-current='page']) { background: #eff0eb; color: #59695f; }
 @media (max-width: 540px) { .homework-profile { grid-template-columns: 1fr; } .homework > fieldset { padding: 10px; } }
+.homework-profile { padding: 18px; background: #f7faf4; border: 1px solid var(--line); border-radius: 12px; }
+.homework-profile label { font-size: .875rem; }
+.homework-save { background: none; border-bottom: 1px solid var(--line); border-radius: 0; padding: 12px 0; font-size: .82rem; }
+.homework-source { font-size: .75rem; }
+.homework-question { border-color: var(--line); border-radius: 14px; padding: 24px; }
+.homework-stem, .sort-answer, .sort-tokens { font-family: var(--zh-font); }
+.homework-options { border: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.homework-options legend { margin-bottom: 12px; color: var(--muted); font-size: .82rem; }
+.homework-options label { border: 1px solid var(--line); padding: 14px; border-radius: 10px; }
+.homework-options label:has(input:checked) { border-color: var(--green-700); background: #eff6ea; }
+#homework-course-summary { font-size: .82rem; color: var(--muted); }
+@media (max-width: 600px) { .homework-options { grid-template-columns: 1fr; } .homework-question { padding: 18px; } }

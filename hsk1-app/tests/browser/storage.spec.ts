@@ -291,3 +291,106 @@ test('leaving the manager while a real write lock is held cancels the queued imp
   await expect(page.locator('#module-host')).toHaveAttribute('data-feature', 'home');
   expect(errors).toEqual([]);
 });
+
+test('legacy source preview names every discovered source including unsupported pilot data and cancel writes nothing', async ({ page }) => {
+  await seedLegacy(page);
+  await page.addInitScript(() => localStorage.setItem('hsk1_lesson9_pilot_progress_v1', '  {"version":1,"bankVersion":"20260930-pilot9-v1","groups":{"words":{"draft":{"unknown-pilot-item":"answer"},"attempts":[]}},"words":{}}  '));
+  await openManager(page);
+  const before = await currentRaw(page);
+  await previewMigration(page);
+  await expect(page.locator('[data-source="hsk1_lesson9_pilot_progress_v1"]')).toContainText('0 mục đã hiểu');
+  await expect(page.locator('[data-source="hsk1_lesson9_pilot_progress_v1"]')).toContainText('1 mục chỉ giữ bản gốc');
+  await page.locator('#cancel-data-import').click();
+  expect(await currentRaw(page)).toBe(before);
+  await expect(page.locator('#migration-preview')).toBeHidden();
+  expect(await page.evaluate(() => localStorage.getItem('hsk1_lesson9_pilot_progress_v1'))).toContain('unknown-pilot-item');
+});
+
+test('scoped reset requires preview confirmation, cancellation preserves data, and recovery restores the exact prior state', async ({ page }) => {
+  await seedLegacy(page); await openManager(page); await migrate(page);
+  const beforeRaw = (await currentRaw(page))!, before = JSON.parse(beforeRaw);
+  await page.locator('#reset-lesson').selectOption('1');
+  await page.locator('#reset-module').selectOption('homework');
+  await page.locator('#preview-reset').click();
+  await expect(page.locator('#migration-preview')).toHaveAttribute('data-reason', 'reset');
+  await expect(page.locator('#migration-preview')).toContainText('Bài 1');
+  await expect(page.locator('#migration-preview')).toContainText('Giữ nguyên');
+  expect(await currentRaw(page)).toBe(beforeRaw);
+  await page.locator('#cancel-data-import').click();
+  expect(await currentRaw(page)).toBe(beforeRaw);
+  await page.locator('#preview-reset').click();
+  await page.locator('#reset-lesson').selectOption('15');
+  await expect(page.locator('#migration-preview')).toBeHidden();
+  await expect(page.locator('#confirm-data-import')).toBeDisabled();
+  await page.locator('#reset-lesson').selectOption('1');
+  await page.locator('#preview-reset').click();
+  await page.locator('#confirm-data-import').click();
+  await expect(page.locator('#data-status')).toHaveAttribute('data-state', 'saved');
+  const after = JSON.parse((await currentRaw(page))!);
+  expect(after.data.homework.lessons['1']).toBeUndefined();
+  expect(after.data.homework.lessons['15']).toEqual(before.data.homework.lessons['15']);
+  expect(after.data.practice).toEqual(before.data.practice);
+  expect(after.data.reading).toEqual(before.data.reading);
+  expect(after.data.legacyRaw).toEqual(before.data.legacyRaw);
+  expect(after.recovery.data).toEqual(before.data);
+  expect(after.recovery.reason).toBe('reset');
+  expect(await page.evaluate(key => sessionStorage.getItem(key), sessionKey)).toBe('1');
+  await page.locator('#restore-data').click();
+  await expect(page.locator('#data-status')).toHaveAttribute('data-state', 'saved');
+  expect(JSON.parse((await currentRaw(page))!).data).toEqual(before.data);
+  await page.setViewportSize({ width: 320, height: 800 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
+test('failed reset preserves current state and previous recovery, and leaving aborts a queued reset', async ({ page }) => {
+  await seedLegacy(page); await openManager(page); await migrate(page);
+  const before = (await currentRaw(page))!;
+  await page.locator('#preview-reset').click();
+  await page.evaluate(stateKey => {
+    const original = Storage.prototype.setItem;
+    (window as any).__restoreStorage = () => { Storage.prototype.setItem = original; };
+    Storage.prototype.setItem = function (key, value) {
+      if (this === localStorage && key === stateKey) throw new DOMException('Full', 'QuotaExceededError');
+      original.call(this, key, value);
+    };
+  }, stateKey);
+  await page.locator('#confirm-data-import').click();
+  await expect(page.locator('#data-status')).toContainText('Chưa đặt lại được dữ liệu');
+  expect(await currentRaw(page)).toBe(before);
+  await page.evaluate(() => (window as any).__restoreStorage());
+  await page.locator('#cancel-data-import').click();
+  await page.locator('#preview-reset').click();
+  await holdWriteLock(page);
+  try {
+    await page.locator('#confirm-data-import').click();
+    await expect(page.locator('#data-status')).toHaveAttribute('data-state', 'saving');
+    await page.locator('#feature-nav a[data-feature="home"]').click();
+    await expect(page.locator('#module-host')).toHaveAttribute('data-feature', 'home');
+  } finally { await releaseWriteLock(page); }
+  await page.evaluate(name => navigator.locks.request(name, () => undefined), writeLock);
+  expect(await currentRaw(page)).toBe(before);
+});
+
+test('discovering old sources with nonempty current progress adds only missing lessons after explicit confirmation', async ({ page }) => {
+  await seedLegacy(page); await openManager(page); await migrate(page);
+  const backup = await exportBackup(page);
+  delete backup.parsed.data.homework.lessons['15'];
+  backup.parsed.data.homework.profile.name = 'Current preview learner';
+  const group = backup.parsed.data.homework.lessons['1'].translation;
+  group.draft[Object.keys(group.draft)[0]!] = '新的草稿保留。'; group.attempt = null;
+  // Scores/reviews are derived; remove stale reviews for the deliberately absent lesson.
+  for (const [id, review] of Object.entries(backup.parsed.data.homework.questionReviews)) if ((review as any).lesson === 15) delete backup.parsed.data.homework.questionReviews[id];
+  await importBackup(page, JSON.stringify(backup.parsed));
+  const current = JSON.parse((await currentRaw(page))!);
+  await previewMigration(page);
+  await expect(page.locator('#confirm-data-import')).toHaveText('Xác nhận bổ sung dữ liệu cũ');
+  expect(JSON.parse((await currentRaw(page))!).data).toEqual(current.data);
+  await page.locator('#confirm-data-import').click();
+  await expect(page.locator('#data-status')).toHaveAttribute('data-state', 'saved');
+  const after = JSON.parse((await currentRaw(page))!);
+  expect(after.data.homework.lessons['1']).toEqual(current.data.homework.lessons['1']);
+  expect(after.data.homework.profile).toEqual(current.data.homework.profile);
+  expect(after.data.homework.lessons['15']).toEqual(legacyStage2.lessons['15']);
+  expect(after.data.practice).toEqual(current.data.practice);
+  expect(after.recovery.data).toEqual(current.data);
+});

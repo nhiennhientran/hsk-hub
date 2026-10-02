@@ -9,6 +9,7 @@ const loaders: Record<Feature, () => Promise<FeatureModule>> = {
   home: () => import('../features/home/index.ts'),
   textbook: () => import('../features/textbook/index.ts'),
   homework: () => import('../features/homework/index.ts'),
+  exercises: () => import('../features/exercises/index.ts'),
   listening: () => import('../features/listening/index.ts'),
   vocabulary: () => import('../features/vocabulary/index.ts'),
   review: () => import('../features/review/index.ts'),
@@ -29,9 +30,10 @@ function startApplication(): () => void {
     return audio;
   };
   let learning: Promise<import('../services/learning/session.ts').LearningSession> | undefined;
+  let sessionForExit: import('../services/learning/session.ts').LearningSession | undefined;
   const getLearning = () => {
     if (!learning) {
-      learning = import('../services/learning/session.ts').then(module => module.loadLearningSession(events.signal));
+      learning = import('../services/learning/session.ts').then(module => module.loadLearningSession(events.signal)).then(session => { sessionForExit = session; return session; });
       void learning.catch(() => { learning = undefined; });
     }
     return learning;
@@ -45,6 +47,7 @@ function startApplication(): () => void {
       <div class="lesson-picker"><label for="lesson-select">Bài đang chọn</label><select id="lesson-select">${Array.from({ length: 15 }, (_, index) => `<option value="${index + 1}">Bài ${index + 1}</option>`).join('')}</select></div>
       <p id="module-status" role="status" aria-live="polite"></p>
       <p id="session-message" role="status" hidden></p>
+      <p id="navigation-message" role="alert" hidden></p>
       <button id="retry-module" type="button" hidden>Thử tải lại</button>
       <section id="module-host" tabindex="-1" aria-label="Nội dung bài học"></section>
     </main>
@@ -55,7 +58,7 @@ function startApplication(): () => void {
   const retry = root.querySelector<HTMLButtonElement>('#retry-module')!;
   const lessons = root.querySelector<HTMLSelectElement>('#lesson-select')!;
   const lifecycle = createLifecycle({
-    host, learning: getLearning, audio: getAudio, navigate: route => router.navigate(route),
+    host, learning: getLearning, audio: getAudio, navigate: route => navigateSafely(route),
     loadModule: (feature, signal) => {
       if (signal.aborted) return Promise.reject(new DOMException('Module left.', 'AbortError'));
       return loaders[feature]();
@@ -67,7 +70,7 @@ function startApplication(): () => void {
       if (state === 'ready') {
         const heading = host.querySelector<HTMLElement>('h1');
         if (heading && !heading.querySelector('[lang="zh"]') && route.feature !== 'textbook') {
-          const chinese = { home: '自由选课', homework: '课后作业', listening: '听力练习', vocabulary: '生词卡', review: '复习', progress: '学习进度' };
+          const chinese = { home: '自由选课', homework: '课后作业', exercises: '练习', listening: '听力练习', vocabulary: '生词卡', review: '复习', progress: '学习进度' };
           const translation = document.createElement('span'); translation.lang = 'zh'; translation.className = 'heading-zh';
           translation.textContent = chinese[route.feature as keyof typeof chinese] ?? ''; heading.append(translation);
         }
@@ -76,6 +79,20 @@ function startApplication(): () => void {
     },
   });
   let unsubscribe: (() => void) | undefined;
+  let displayedRoute: Route | undefined;
+  function canLeave(): boolean {
+    let blocked = false;
+    try { blocked = sessionForExit?.prepareExit() ?? false; } catch { blocked = true; }
+    const warning = root.querySelector<HTMLElement>('#navigation-message')!;
+    warning.hidden = !blocked;
+    warning.textContent = blocked ? 'Bản nháp đang nhập chưa thể lưu đầy đủ. Hãy hoàn tất nhập chữ hoặc rút ngắn nội dung trước khi đổi trang; phần đang viết vẫn được giữ nguyên.' : '';
+    return !blocked;
+  }
+  function navigateSafely(route: Route): void {
+    if (!canLeave()) { if (displayedRoute) updateNavigation(displayedRoute); return; }
+    router.navigate(route);
+    updateNavigation(router.current());
+  }
   function updateNavigation(route: Route): void {
     lessons.value = String(route.lesson);
     root.dataset.feature = route.feature;
@@ -90,7 +107,13 @@ function startApplication(): () => void {
   function begin(): void {
     if (unsubscribe || events.signal.aborted) return;
     root.inert = false;
-    const render = (route: Route) => { updateNavigation(route); void lifecycle.show(route); };
+    const render = (route: Route) => {
+      if (displayedRoute && router.href(route) === router.href(displayedRoute)) { updateNavigation(route); return; }
+      if (displayedRoute && !canLeave()) {
+        router.navigate(displayedRoute, { replace: true }); updateNavigation(displayedRoute); return;
+      }
+      displayedRoute = route; updateNavigation(route); void lifecycle.show(route);
+    };
     unsubscribe = router.subscribe(render);
     render(router.current());
   }
@@ -100,9 +123,9 @@ function startApplication(): () => void {
     if (event.target.closest('.skip-link')) { event.preventDefault(); host.focus(); return; }
     const anchor = (event.target as Element).closest<HTMLAnchorElement>('a[data-route-link]');
     if (!anchor || !root.contains(anchor) || anchor.target || anchor.hasAttribute('download')) return;
-    event.preventDefault(); router.navigate(parseRoute(anchor.href));
+    event.preventDefault(); navigateSafely(parseRoute(anchor.href));
   }, { signal: events.signal });
-  lessons.addEventListener('change', () => router.navigate(normalizeRoute({ ...router.current(), lesson: Number(lessons.value) })), { signal: events.signal });
+  lessons.addEventListener('change', () => navigateSafely(normalizeRoute({ ...router.current(), lesson: Number(lessons.value) })), { signal: events.signal });
   retry.addEventListener('click', () => { void lifecycle.retry(); }, { signal: events.signal });
 
   let storage: Pick<Storage, 'getItem' | 'setItem' | 'removeItem'>;

@@ -1,3 +1,5 @@
+import { blankExercisesState, exerciseQueue, exerciseTotals } from '../../domain/exercises/engine.ts';
+import type { ExerciseCatalogue } from '../../domain/exercises/catalogue.ts';
 import homework from '../../domain/homework/engine.js';
 import practice from '../../domain/practice/engine.js';
 import type { Route } from '../../app/contracts.ts';
@@ -10,6 +12,7 @@ import type { ListeningSession } from '../../domain/listening/types.ts';
 export interface ProgressSources {
   bank: readonly HomeworkLesson[];
   catalog: ListeningCatalog;
+  exercises?: ExerciseCatalogue;
 }
 export interface ProgressLink { label: string; route: Route }
 interface SavedReview { senseIds: string[]; position: number; lessons: number[] }
@@ -45,7 +48,7 @@ function translationState(data: AppData, lesson: HomeworkLesson) {
 }
 
 /** Independent read-only projections. A reading mark, translation or self-rating is never an objective score. */
-export function summarizeProgress(data: AppData, { bank, catalog }: ProgressSources, now = Date.now()) {
+export function summarizeProgress(data: AppData, { bank, catalog, exercises }: ProgressSources, now = Date.now()) {
   const totals = homework.courseTotals(data.homework, bank);
   const listening = practice.listeningSummary(data.practice, catalog);
   const cards = practice.cardSummary(data.practice, catalog, now);
@@ -83,7 +86,15 @@ export function summarizeProgress(data: AppData, { bank, catalog }: ProgressSour
   const review = data.practice.cards.review as unknown as SavedReview | null;
   const listeningQuestion = listeningRound && catalog.listening.find(item => item.id === listeningRound.questionIds[listeningRound.position]);
   const reviewCard = review && catalog.vocabulary.find(item => item.senseId === review.senseIds[review.position] && review.lessons.includes(item.lesson));
+  const exerciseState = data.exercises ?? blankExercisesState();
+  const extraExercises = exercises ? {
+    original: exerciseTotals(exercises, exerciseState, exercises.entries.filter(entry => entry.set === 'original')),
+    pilot: exerciseTotals(exercises, exerciseState, exercises.entries.filter(entry => entry.set === 'pilot')),
+    reviewWrong: bank.reduce((total, lesson) => total + exerciseQueue(exercises, exerciseState, { set: 'homework-review', lesson: lesson.lesson, filter: 'wrong', homework: data.homework, now }).length, 0),
+    reviewDue: bank.reduce((total, lesson) => total + exerciseQueue(exercises, exerciseState, { set: 'homework-review', lesson: lesson.lesson, filter: 'due', homework: data.homework, now }).length, 0),
+  } : null;
   return {
+    extraExercises,
     reading: { total: bank.length, visited: lessons.filter(row => row.reading.visited).length,
       complete: lessons.filter(row => row.reading.complete).length,
       starred: Object.values(data.reading.mastered).filter(Boolean).length },

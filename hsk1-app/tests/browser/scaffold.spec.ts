@@ -10,7 +10,7 @@ async function enterPassword(page: Page, value: string): Promise<void> {
 }
 
 const sessionKey = 'hsk_portal_unlocked_v2';
-const features = ['home', 'textbook', 'homework', 'listening', 'vocabulary', 'review', 'progress'] as const;
+const features = ['home', 'textbook', 'exercises', 'homework', 'listening', 'vocabulary', 'review', 'progress'] as const;
 
 async function useExistingTabSession(page: Page): Promise<void> {
   await page.addInitScript(key => sessionStorage.setItem(key, '1'), sessionKey);
@@ -27,9 +27,11 @@ async function expectReady(page: Page, feature: string, lesson: number): Promise
   else if (feature === 'listening') await expect(host.locator('#listening-start')).toBeEnabled();
   else if (feature === 'vocabulary' || feature === 'review') await expect(host.locator('#vocabulary-start')).toBeEnabled();
   else if (feature === 'progress') await expect(host.locator('#open-data-manager')).toBeEnabled();
+  else if (feature === 'exercises') await expect(host.locator('#exercise-submit')).toBeEnabled();
   else {
     await expect(host.locator('#home-module .lesson-card')).toHaveCount(15);
-    await expect(host.locator('#home-progress')).toBeVisible();
+    await expect(host.locator('.home-progress-details summary')).toBeVisible();
+    await expect(host.locator('#home-progress')).toHaveCount(1);
   }
 }
 

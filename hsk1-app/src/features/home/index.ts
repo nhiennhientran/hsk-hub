@@ -16,7 +16,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
   const hero = element('header'); hero.className = 'course-hero';
   const eyebrow = element('p', '新HSK教程 1 · 15 BÀI HỌC'); eyebrow.className = 'eyebrow';
   hero.append(eyebrow, heading, element('p', 'Học theo giáo trình, chọn đúng phần bạn cần.'), element('p', '15 bài học · 5 phần / bài · Nội dung và âm thanh giáo trình'));
-  article.append(hero); host.append(article);
+  article.append(hero, description); host.append(article);
   const controller = new AbortController();
   const abort = () => controller.abort();
   context.signal.addEventListener('abort', abort, { once: true });
@@ -44,7 +44,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     catalogue.append(toolbar, description);
     const grid = element('div'); grid.className = 'lesson-grid';
     for (const lesson of lessons) {
-      const card = element('article'); card.className = 'lesson-card'; card.dataset.lesson = String(lesson.id);
+      const card = element('article'); card.className = 'lesson-card'; card.dataset.lesson = String(lesson.id); card.dataset.searchText = `${lesson.id} ${lesson.title} ${lesson.titleVi}`;
       const number = element('p', `BÀI ${String(lesson.id).padStart(2, '0')}`); number.className = 'lesson-number';
       const title = element('h2'); const titleLink = routeLink(lesson.title, { feature: 'textbook', lesson: lesson.id, section: 'vocab' }); titleLink.lang = 'zh'; title.append(titleLink);
       const subtitle = element('p', lesson.titleVi); subtitle.className = 'lesson-subtitle';
@@ -56,14 +56,14 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       }
       card.append(sections);
       const actions = element('div'); actions.className = 'lesson-actions';
-      for (const feature of ['homework', 'listening'] as const) actions.append(routeLink(featureLabels[feature], { feature, lesson: lesson.id }));
+      for (const feature of ['exercises', 'homework', 'listening'] as const) actions.append(routeLink(featureLabels[feature], { feature, lesson: lesson.id }));
       card.append(actions); grid.append(card);
     }
     catalogue.append(grid);
     search.addEventListener('input', () => {
       const key = (value: string) => value.normalize('NFD').replace(/\p{M}/gu, '').replace(/đ/gi, 'd').toLowerCase();
       const query = key(search.value.trim());
-      for (const card of grid.querySelectorAll<HTMLElement>('.lesson-card')) card.hidden = !!query && !key(card.textContent ?? '').includes(query);
+      for (const card of grid.querySelectorAll<HTMLElement>('.lesson-card')) card.hidden = !!query && !key(card.dataset.searchText ?? '').includes(query);
     }, { signal: controller.signal });
     const progressDetails = element('details'); progressDetails.className = 'home-progress-details'; progressDetails.append(element('summary', 'Việc học của bạn · Tiến độ và việc cần ôn'), overview);
     article.append(continuation, catalogue, progressDetails);

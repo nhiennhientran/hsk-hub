@@ -2,7 +2,7 @@
 export const STORAGE_KEY = 'ran_hsk1_modular_v1';
 export const WRITE_LOCK = 'ran-hsk1-modular-write';
 export type StoreStatus = 'empty' | 'saved' | 'unsaved' | 'saving' | 'conflict' | 'corrupt' | 'unavailable';
-export type ReplacementReason = 'import' | 'migration';
+export type ReplacementReason = 'import' | 'migration' | 'reset';
 export type StoragePort = Pick<Storage, 'getItem' | 'setItem'>;
 export type StoreResult = Readonly<{ ok: boolean; code: string }>;
 export type Preview<T> = Readonly<{ id: number; reason: ReplacementReason; data: T }>;
@@ -55,7 +55,7 @@ export function createStore<T>(options: StoreOptions<T>) {
   function readRecovery(value: unknown): Recovery<T> | null {
     if (value === null) return null;
     if (!record(value) || !revision(value.revision) || !(value.updatedAt === null || time(value.updatedAt)) ||
-        !['import', 'migration', 'restore'].includes(String(value.reason)) || 'recovery' in value) {
+        !['import', 'migration', 'reset', 'restore'].includes(String(value.reason)) || 'recovery' in value) {
       throw new Error('Bản khôi phục không hợp lệ.');
     }
     return { data: validate(value.data), revision: value.revision, updatedAt: value.updatedAt,
@@ -157,7 +157,7 @@ export function createStore<T>(options: StoreOptions<T>) {
   }
   function previewReplacement(candidate: unknown, reason: ReplacementReason): Preview<T> {
     if (disposed) throw new Error('Trang dữ liệu đã đóng.');
-    if (reason !== 'import' && reason !== 'migration') throw new Error('Loại nhập dữ liệu không được hỗ trợ.');
+    if (!['import', 'migration', 'reset'].includes(reason)) throw new Error('Loại nhập dữ liệu không được hỗ trợ.');
     if (blocked) throw new Error(issue ?? 'Không đọc được dữ liệu hiện tại.');
     const changed = checkCurrent(); if (changed) throw new Error(issue!);
     const validated = validate(candidate);

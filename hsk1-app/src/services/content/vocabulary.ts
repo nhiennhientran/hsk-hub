@@ -1,16 +1,106 @@
 import { createListeningContent } from './listening.ts';
 import type { ListeningCatalog, ListeningLesson, ListeningVocabulary } from './listening.ts';
 import type { AudioRequest } from '../audio/index.ts';
+import { validateTextbook } from './textbook.ts';
+import type { BookLesson } from './textbook.ts';
 
 export type VocabularyCatalog = ListeningCatalog;
 export type VocabularyItem = ListeningVocabulary;
 export type VocabularyLesson = ListeningLesson;
+export interface VocabularyExample {
+  readonly id: string;
+  readonly lesson: number;
+  readonly section: 'text' | 'grammar';
+  readonly sourceId: string;
+  readonly zh: string;
+  readonly py: string;
+  readonly vi: string;
+}
 export interface VocabularyContent {
   readonly catalog: VocabularyCatalog;
   readonly lessons: readonly VocabularyLesson[];
   readonly items: readonly VocabularyItem[];
   /** Only an exact original record ID resolves; a sense or word is never an audio lookup key. */
   resolveAudio(recordId: string): AudioRequest | null;
+  /** Exact current-textbook sentences; homographs use reviewed sense links. */
+  examplesForSense(senseId: string): readonly VocabularyExample[];
+}
+
+// References, never a second copy of the textbook. Character matching alone
+// would mix 家 (home/classifier), 在 (location/progressive), 天 (weather/day),
+// 上 (location/boarding/school), and other polysemous senses.
+const senseExamples: Readonly<Record<string, readonly string[]>> = {
+  'lex-02b83ec7cc-s1': ['textbook-l03-text-3-line-04'],
+  'lex-02b83ec7cc-s2': ['textbook-l11-text-3-line-06'],
+  'lex-dd9fc2c0a1-s1': ['textbook-l03-text-3-line-03'],
+  'lex-dd9fc2c0a1-s2': ['textbook-l08-grammar-02:example:2'],
+  'lex-a48f3ad06d-s1': ['textbook-l03-text-3-line-05', 'textbook-l03-text-3-line-06'],
+  'lex-a48f3ad06d-s2': ['textbook-l06-grammar-01:example:1', 'textbook-l06-grammar-01:example:2'],
+  'lex-0889c34972-s1': ['textbook-l04-text-3-line-05'],
+  'lex-0889c34972-s2': ['textbook-l08-text-3-line-03'],
+  'lex-451b1366af-s1': ['textbook-l04-text-3-line-05'],
+  'lex-451b1366af-s2': ['textbook-l08-text-3-line-03'],
+  'lex-9a3eb34097-s1': ['textbook-l04-text-2-line-04'],
+  'lex-9a3eb34097-s2': ['textbook-l09-text-3-line-02'],
+  'lex-68bf29eb00-s1': ['textbook-l04-text-2-line-03', 'textbook-l04-text-3-line-03'],
+  'lex-68bf29eb00-s2': ['textbook-l15-text-2-line-03'],
+  'lex-7de8177ce7-s1': ['textbook-l04-text-2-line-04'],
+  'lex-7de8177ce7-s2': ['textbook-l07-text-3-line-02'],
+  'lex-7de8177ce7-s3': ['textbook-l09-grammar-01:example:1', 'textbook-l09-grammar-01:example:2'],
+  'lex-dcf66dcd60-s1': ['textbook-l04-grammar-03:example:1', 'textbook-l04-grammar-03:example:2'],
+  'lex-dcf66dcd60-s2': ['textbook-l07-grammar-04:example:1', 'textbook-l07-grammar-04:example:2'],
+  'lex-7b4bb888fb-s1': ['textbook-l05-grammar-03:example:3'],
+  'lex-7b4bb888fb-s2': ['textbook-l07-text-3-line-05'],
+  'lex-7f5716be5c-s1': ['textbook-l05-grammar-01:example:1'],
+  'lex-7f5716be5c-s2': ['textbook-l06-text-1-line-01'],
+  'lex-715fb2c0ef-s1': ['textbook-l05-grammar-03:example:2'],
+  'lex-715fb2c0ef-s2': ['textbook-l09-text-3-line-01'],
+  'lex-4a1e3b19fa-s1': ['textbook-l06-grammar-02:example:2'],
+  'lex-4a1e3b19fa-s2': ['textbook-l13-grammar-01:example:2'],
+  'lex-686b703f41-s1': ['textbook-l07-text-3-line-02'],
+  'lex-686b703f41-s2': ['textbook-l08-grammar-02:example:1', 'textbook-l08-grammar-02:example:2'],
+  'lex-686b703f41-s3': ['textbook-l11-grammar-02:example:1', 'textbook-l11-grammar-02:example:2'],
+  'lex-a6caf2effb-s1': ['textbook-l08-text-1-line-03'],
+  'lex-a6caf2effb-s2': ['textbook-l12-grammar-01:example:1', 'textbook-l12-grammar-01:example:2'],
+  'lex-b967ce841a-s1': ['textbook-l09-grammar-01:example:3'],
+  'lex-b967ce841a-s2': ['textbook-l14-text-1-line-01'],
+  'lex-b967ce841a-s3': ['textbook-l14-text-3-line-01', 'textbook-l14-text-3-line-02'],
+  'lex-327049aa37-s1': ['textbook-l09-text-2-line-01'],
+  'lex-327049aa37-s2': ['textbook-l15-text-3-line-06'],
+  'lex-93e27107a1-s1': ['textbook-l11-grammar-03:example:1', 'textbook-l11-grammar-03:example:2'],
+  'lex-93e27107a1-s2': ['textbook-l13-text-3-line-02'],
+  'lex-93e27107a1-s3': ['textbook-l15-text-3-line-01'],
+  'lex-c3304d1e49-s1': ['textbook-l12-text-1-line-02'],
+  'lex-c3304d1e49-s2': ['textbook-l12-text-3-line-04'],
+  'lex-a5933e2a9e-s1': ['textbook-l12-grammar-02:example:2', 'textbook-l12-grammar-03:example:2'],
+  'lex-a5933e2a9e-s2': ['textbook-l14-grammar-01:example:1', 'textbook-l14-grammar-01:example:2'],
+  'lex-95fd8be0d9-s1': ['textbook-l12-text-3-line-06'],
+  'lex-95fd8be0d9-s2': ['textbook-l13-grammar-01:example:1'],
+};
+
+function indexExamples(lessons: readonly BookLesson[], items: readonly VocabularyItem[]): ReadonlyMap<string, readonly VocabularyExample[]> {
+  const examples: VocabularyExample[] = lessons.flatMap(lesson => [
+    ...lesson.scenes.flatMap(scene => scene.lines.map(line => ({ id: line.id, lesson: lesson.id,
+      section: 'text' as const, sourceId: scene.id, zh: line.zh, py: line.py, vi: line.vn }))),
+    ...lesson.grammar.flatMap(grammar => grammar.examples.map((example, index) => ({
+      id: `${grammar.id}:example:${index + 1}`, lesson: lesson.id, section: 'grammar' as const,
+      sourceId: grammar.id, zh: example.zh, py: example.py, vi: example.vn }))),
+  ]);
+  const forms = new Map<string, Set<string>>();
+  for (const item of items) {
+    const senses = forms.get(item.zh) ?? new Set<string>(); senses.add(item.senseId); forms.set(item.zh, senses);
+  }
+  return new Map(items.map(item => {
+    const references = senseExamples[item.senseId];
+    const matched = examples.filter(example => example.lesson === item.lesson && example.zh.includes(item.zh) &&
+      (references ? references.includes(example.id) : forms.get(item.zh)!.size === 1));
+    const seen = new Set<string>();
+    const unique = matched.filter(example => {
+      const key = JSON.stringify([example.zh, example.py, example.vi]);
+      if (seen.has(key)) return false; seen.add(key); return true;
+    }).slice(0, 3).map(example => Object.freeze(example));
+    return [item.senseId, Object.freeze(unique)];
+  }));
 }
 
 type Row = Record<string, unknown>;
@@ -47,13 +137,18 @@ async function fingerprint(value: Row, signal?: AbortSignal): Promise<void> {
 export async function createVocabularyContent(catalogValue: unknown, mediaValue: unknown,
   audioURL: (trackId: string) => string = id => typeof document === 'undefined'
     ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, document.baseURI).href,
-  signal?: AbortSignal): Promise<VocabularyContent> {
+  signal?: AbortSignal, textbookValue?: unknown): Promise<VocabularyContent> {
   signal?.throwIfAborted();
-  // Keep both inputs stable across the asynchronous shared metadata/hash validation.
+  // Keep inputs stable across the asynchronous shared metadata/hash validation.
   const rawCatalog = structuredClone(catalogValue), rawMedia: unknown = structuredClone(mediaValue);
+  const rawTextbook: unknown = structuredClone(textbookValue);
+  const textbook = rawTextbook === undefined ? [] : validateTextbook(rawTextbook);
   // Reuse the established catalog identity and all 93 original-track validation.
   // This also keeps listening and vocabulary bound to one content baseline.
   const { catalog } = await createListeningContent(rawCatalog, rawMedia, audioURL, signal);
+  if (rawTextbook !== undefined && (!row(rawTextbook) || rawTextbook.baseline !== catalog.baseline)) {
+    fail('Ví dụ giáo trình không cùng phiên bản với từ vựng.');
+  }
   if (!row(rawMedia) || !Array.isArray(rawMedia.clips) || rawMedia.clips.length !== 405 ||
       !Array.isArray(rawMedia.originalTracks) || !Array.isArray(rawMedia.missingWordAudio) || rawMedia.missingWordAudio.length !== 14) {
     fail('Chỉ mục âm thanh từ vựng không hợp lệ.');
@@ -72,6 +167,9 @@ export async function createVocabularyContent(catalogValue: unknown, mediaValue:
     missing.set(value.id, value);
   }
   const ids = new Set<string>(), senses = new Set<string>(), forms = new Set<string>(), verified = new Set<Row>();
+  for (const lesson of textbook) {
+    for (const item of [...lesson.scenes, ...lesson.grammar]) verified.add(item as unknown as Row);
+  }
   let audioCount = 0, missingCount = 0;
   for (const item of catalog.vocabulary) {
     if (item.id !== `v-l${String(item.lesson).padStart(2, '0')}-${item.senseId}` || !item.senseId.startsWith(`${item.lexId}-`) ||
@@ -108,8 +206,11 @@ export async function createVocabularyContent(catalogValue: unknown, mediaValue:
   await Promise.all([...verified].map(value => fingerprint(value, signal)));
   signal?.throwIfAborted();
   const records = new Map(catalog.vocabulary.map(item => [item.id, item]));
+  const examples = indexExamples(textbook, catalog.vocabulary);
+  const noExamples: readonly VocabularyExample[] = Object.freeze([]);
   return Object.freeze({
     catalog, lessons: catalog.lessons, items: catalog.vocabulary,
+    examplesForSense(senseId: string) { return examples.get(senseId) ?? noExamples; },
     resolveAudio(recordId: string): AudioRequest | null {
       const item = records.get(recordId);
       if (!item?.audio) return null;
@@ -121,7 +222,7 @@ export async function createVocabularyContent(catalogValue: unknown, mediaValue:
 
 export async function loadVocabulary(signal: AbortSignal): Promise<VocabularyContent> {
   signal.throwIfAborted();
-  const urls = [new URL('../../../content/stage3-catalog.json', import.meta.url), new URL('../../../content/media-references.json', import.meta.url)];
+  const urls = [new URL('../../../content/stage3-catalog.json', import.meta.url), new URL('../../../content/media-references.json', import.meta.url), new URL('../../../content/textbook.json', import.meta.url)];
   const values = await Promise.all(urls.map(async url => {
     const response = await fetch(url, { signal });
     if (!response.ok) throw new Error(`Không tải được nội dung từ vựng (HTTP ${response.status}).`);
@@ -129,5 +230,5 @@ export async function loadVocabulary(signal: AbortSignal): Promise<VocabularyCon
     signal.throwIfAborted();
     return value;
   }));
-  return createVocabularyContent(values[0], values[1], undefined, signal);
+  return createVocabularyContent(values[0], values[1], undefined, signal, values[2]);
 }

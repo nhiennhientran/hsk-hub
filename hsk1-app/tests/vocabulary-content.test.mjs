@@ -5,7 +5,7 @@ import { createHash } from 'node:crypto';
 import { createVocabularyContent, loadVocabulary } from '../src/services/content/vocabulary.ts';
 
 const json = file => JSON.parse(readFileSync(new URL(`../content/${file}.json`, import.meta.url), 'utf8'));
-const catalog = json('stage3-catalog'), media = json('media-references');
+const catalog = json('stage3-catalog'), media = json('media-references'), textbook = json('textbook');
 const audioURL = id => `https://course.example/hsk-hub/hsk1/course-assets/audio/${id}.mp3`;
 const create = (c = catalog, m = media, signal) => createVocabularyContent(c, m, audioURL, signal);
 const canonical = value => Array.isArray(value) ? `[${value.map(canonical).join(',')}]`
@@ -141,14 +141,14 @@ test('content snapshots are deeply readonly and stable across caller mutations d
   const stable = await pending; assert.equal(stable.resolveAudio(stable.items[0].id).end, catalog.vocabulary[0].audio.end);
 });
 
-test('loader uses exactly the two existing source JSON files and AbortSignal, with HTTP failure visible', async t => {
+test('loader uses the three existing source JSON files and AbortSignal, with HTTP failure visible', async t => {
   const seen = [], controller = new AbortController();
   t.mock.method(globalThis, 'fetch', async (url, options) => {
     seen.push({ path: url.pathname, signal: options.signal });
-    return { ok: true, json: async () => url.pathname.endsWith('stage3-catalog.json') ? catalog : media };
+    return { ok: true, json: async () => url.pathname.endsWith('stage3-catalog.json') ? catalog : url.pathname.endsWith('textbook.json') ? textbook : media };
   });
   assert.equal((await loadVocabulary(controller.signal)).items.length, 344);
-  assert.deepEqual(seen.map(entry => entry.path.split('/').at(-1)), ['stage3-catalog.json', 'media-references.json']);
+  assert.deepEqual(seen.map(entry => entry.path.split('/').at(-1)), ['stage3-catalog.json', 'media-references.json', 'textbook.json']);
   assert.ok(seen.every(entry => entry.signal === controller.signal));
   t.mock.method(globalThis, 'fetch', async () => ({ ok: false, status: 503 }));
   await assert.rejects(loadVocabulary(controller.signal), /HTTP 503/);
@@ -166,4 +166,56 @@ test('aborted loads and in-flight hashes cannot deliver content to a departed vi
   await assert.rejects(loadVocabulary(late.signal), { name: 'AbortError' });
   const digest = new AbortController(), pending = create(catalog, media, digest.signal); digest.abort();
   await assert.rejects(pending, { name: 'AbortError' });
+});
+
+test('current textbook examples preserve exact Chinese, pinyin, Vietnamese and lesson sources without copying audio', async () => {
+  const loaded = await createVocabularyContent(catalog, media, audioURL, undefined, textbook);
+  const source = new Map(textbook.lessons.flatMap(lesson => [
+    ...lesson.scenes.flatMap(scene => scene.lines.map(line => [line.id, { lesson: lesson.id, section: 'text', sourceId: scene.id, line }])),
+    ...lesson.grammar.flatMap(grammar => grammar.examples.map((line, index) => [`${grammar.id}:example:${index + 1}`, { lesson: lesson.id, section: 'grammar', sourceId: grammar.id, line }])),
+  ]));
+  let covered = 0;
+  for (const item of loaded.items) {
+    const examples = loaded.examplesForSense(item.senseId); assert.ok(examples.length <= 3);
+    if (examples.length) covered++;
+    assert.equal(new Set(examples.map(example => JSON.stringify([example.zh, example.py, example.vi]))).size, examples.length);
+    for (const example of examples) {
+      const exact = source.get(example.id); assert.ok(exact, example.id);
+      assert.deepEqual(example, { id: example.id, lesson: item.lesson, section: exact.section, sourceId: exact.sourceId,
+        zh: exact.line.zh, py: exact.line.py, vi: exact.line.vn });
+      assert.ok(example.zh.includes(item.zh)); assert.equal(example.lesson, exact.lesson);
+      assert.equal('audio' in example, false); assert.ok(Object.isFrozen(example));
+    }
+    assert.ok(Object.isFrozen(examples));
+  }
+  assert.ok(covered > 250, `Expected broad source-backed coverage, got ${covered}`);
+  assert.deepEqual(loaded.examplesForSense('unknown'), []);
+  assert.deepEqual(loaded.examplesForSense('__proto__'), []);
+  assert.deepEqual((await create()).examplesForSense(catalog.vocabulary[0].senseId), []);
+});
+
+test('every polysemous sense has a reviewed same-lesson example; homographs never share the wrong use', async () => {
+  const loaded = await createVocabularyContent(catalog, media, audioURL, undefined, textbook);
+  const groups = Object.groupBy(catalog.vocabulary, item => item.zh);
+  for (const items of Object.values(groups).filter(items => items.length > 1)) for (const item of items) {
+    assert.ok(loaded.examplesForSense(item.senseId).length > 0, `${item.zh}: ${item.vi}`);
+  }
+  const sentences = sense => loaded.examplesForSense(sense).map(example => example.zh).join('\n');
+  assert.match(sentences('lex-7de8177ce7-s3'), /一家/); assert.doesNotMatch(sentences('lex-7de8177ce7-s3'), /在家里/);
+  assert.match(sentences('lex-686b703f41-s3'), /在读大学|正在上课/); assert.doesNotMatch(sentences('lex-686b703f41-s3'), /超市后边/);
+  assert.match(sentences('lex-c3304d1e49-s1'), /的天不太好/); assert.doesNotMatch(sentences('lex-c3304d1e49-s1'), /半天/);
+  assert.match(sentences('lex-c3304d1e49-s2'), /半天/); assert.doesNotMatch(sentences('lex-c3304d1e49-s2'), /天不太好/);
+  assert.match(sentences('lex-b967ce841a-s2'), /上火车/); assert.doesNotMatch(sentences('lex-b967ce841a-s2'), /上中学|上小学/);
+  assert.match(sentences('lex-b967ce841a-s3'), /上中学|上小学/); assert.doesNotMatch(sentences('lex-b967ce841a-s3'), /上火车/);
+  assert.match(sentences('lex-a5933e2a9e-s2'), /看了|买了/); assert.doesNotMatch(sentences('lex-a5933e2a9e-s2'), /都会写了/);
+});
+
+test('examples reject another baseline and unverified text; asynchronous reads do not expose caller mutations', async () => {
+  const wrong = structuredClone(textbook); wrong.baseline = '1'.repeat(40);
+  await assert.rejects(createVocabularyContent(catalog, media, audioURL, undefined, wrong), /cùng phiên bản/);
+  const changed = structuredClone(textbook); changed.lessons[0].scenes[0].lines[0].vn += ' changed';
+  await assert.rejects(createVocabularyContent(catalog, media, audioURL, undefined, changed), /Dấu kiểm tra/);
+  const source = structuredClone(textbook), pending = createVocabularyContent(catalog, media, audioURL, undefined, source);
+  source.lessons[0].scenes[0].lines[0].zh = '改'; source.baseline = '1'.repeat(40);
+  const stable = await pending; assert.ok(stable.examplesForSense(catalog.vocabulary.find(item => item.zh === '你好').senseId).every(example => example.zh.includes('你好')));
 });

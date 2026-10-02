@@ -56,7 +56,7 @@
 .vocab-card .vocab-front { text-align: center; padding: 12px 0; }
 .vocab-front h3 { font-family: var(--zh-font); font-size: 2.2rem; font-weight: 650; color: var(--green-900); }
 .vocab-card .textbook-actions { padding-top: 12px; border-top: 1px solid var(--line); gap: 6px; }
-.vocab-card button { padding: 6px 10px; font-size: .78rem; border-radius: 24px; }
+.vocab-card button { padding: 6px 10px; font-size: .875rem; border-radius: 24px; }
 .vocab-card[data-flipped="true"] { background: #f4f8f0; }
 .textbook-reading { margin: 26px 0 0; padding: 18px; background: #f7f9f4; border: 1px solid var(--line); font-size: .8rem; }
 .textbook-reading #reading-section-status { font-weight: 650; margin-top: 0; }
@@ -64,7 +64,7 @@
 .textbook-reading #reading-save-status { color: var(--muted); }
 .textbook-player-host { margin-top: 20px; }
 .textbook-player { margin: 0; background: #edf4ed; font-size: .8rem; }
-.textbook-player button, .textbook-player select { font-size: .8rem; min-height: 38px; }
+.textbook-player button, .textbook-player select { font-size: .875rem; min-height: 44px; }
 .textbook-journey { padding-top: 18px; border-top: 1px solid var(--line); gap: 10px; }
 .textbook-journey a { padding: 9px 16px; text-decoration: none; border: 1px solid var(--line); border-radius: 28px; font-size: .82rem; }
 .textbook-journey:first-of-type a:last-child { background: var(--green-900); color: white; border-color: var(--green-900); }
@@ -82,3 +82,9 @@
  .vocab-card { padding: 24px 18px 18px; } .vocab-card .vocab-front { min-height: 155px; padding-top: 28px; } .vocab-front h3 { font-size: 2.5rem; }
  .textbook-reading, .textbook-player { padding: 15px; } .textbook-journey a { padding: 9px 12px; }
 }
+/* Keep the single shared player reachable while listening to a long lesson. */
+.textbook-player:is([data-state="loading"], [data-state="playing"], [data-state="paused"], [data-state="error"]) {
+  position: fixed; z-index: 2; bottom: 16px; left: 50%; transform: translateX(-50%);
+  width: min(850px, calc(100% - 24px)); border: 1px solid #a8c2aa; box-shadow: 0 8px 36px #103e2930;
+}
+.textbook:has(.textbook-player:is([data-state="loading"], [data-state="playing"], [data-state="paused"], [data-state="error"])) { padding-bottom: 160px; }

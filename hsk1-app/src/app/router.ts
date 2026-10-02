@@ -27,6 +27,13 @@ export function normalizeRoute(input: Partial<Route>): Route {
   if (feature === 'homework') {
     return Object.freeze({ feature, lesson, part: isPart(input.part) ? input.part : 'choice' });
   }
+  if (feature === 'exercises') {
+    const exerciseSet = input.exerciseSet === 'pilot' || input.exerciseSet === 'homework-review' ? input.exerciseSet : 'original';
+    const groups = exerciseSet === 'pilot' ? ['words', 'grammar', 'listening', 'reading', 'ordering', 'translation'] : exerciseSet === 'homework-review' ? ['choice', 'sort'] : ['choice', 'sort', 'translation', 'listening'];
+    const exerciseGroup = groups.includes(input.exerciseGroup ?? '') ? input.exerciseGroup! : groups[0] as NonNullable<Route['exerciseGroup']>;
+    const exerciseFilter = input.exerciseFilter === 'wrong' || input.exerciseFilter === 'due' || input.exerciseFilter === 'all' ? input.exerciseFilter : exerciseSet === 'homework-review' ? 'wrong' : 'all';
+    return Object.freeze({ feature, lesson: exerciseSet === 'pilot' ? 9 : lesson, exerciseSet, exerciseGroup, exerciseFilter });
+  }
   return Object.freeze({ feature, lesson });
 }
 
@@ -57,10 +64,14 @@ export function parseRoute(input: URL | string): Route {
       lesson: readLesson(params.get('lesson')),
       section: isSection(params.get('section')) ? params.get('section') as Section : undefined,
       part: isPart(params.get('part')) ? params.get('part') as Part : undefined,
+      exerciseSet: params.get('set') as Route['exerciseSet'],
+      exerciseGroup: params.get('group') as Route['exerciseGroup'],
+      exerciseFilter: params.get('filter') as Route['exerciseFilter'],
     });
   }
 
   const filename = url.pathname.split('/').at(-1) ?? '';
+  if (/^lesson9-pilot\.html$/i.test(filename)) return normalizeRoute({ feature: 'exercises', lesson: 9, exerciseSet: 'pilot' });
   const textbookPage = /^lesson\.html$/i.test(filename);
   const defaultFeature = textbookPage ? 'textbook' : /^learning.*\.html$/i.test(filename) ? 'homework' : 'home';
   const mode = url.searchParams.get('mode');
@@ -91,6 +102,9 @@ export function routeHref(route: Route): string {
   const params = new URLSearchParams({ lesson: String(normalized.lesson) });
   if (normalized.section) params.set('section', normalized.section);
   if (normalized.part) params.set('part', normalized.part);
+  if (normalized.exerciseSet) params.set('set', normalized.exerciseSet);
+  if (normalized.exerciseGroup) params.set('group', normalized.exerciseGroup);
+  if (normalized.exerciseFilter) params.set('filter', normalized.exerciseFilter);
   return `#/${normalized.feature}?${params}`;
 }
 

@@ -1,4 +1,4 @@
-export const FEATURES = ['home', 'textbook', 'homework', 'listening', 'vocabulary', 'review', 'progress'] as const;
+export const FEATURES = ['home', 'textbook', 'exercises', 'homework', 'listening', 'vocabulary', 'review', 'progress'] as const;
 export type Feature = typeof FEATURES[number];
 export const SECTIONS = ['vocab', 'text', 'grammar', 'hanzi', 'practice'] as const;
 export type Section = typeof SECTIONS[number];
@@ -10,6 +10,9 @@ export interface Route {
   readonly lesson: number;
   readonly section?: Section;
   readonly part?: Part;
+  readonly exerciseSet?: import('../domain/exercises/catalogue.ts').ExerciseSet;
+  readonly exerciseGroup?: import('../domain/exercises/catalogue.ts').ExerciseGroup;
+  readonly exerciseFilter?: import('../domain/exercises/catalogue.ts').ExerciseFilter;
 }
 
 export interface ModuleContext {

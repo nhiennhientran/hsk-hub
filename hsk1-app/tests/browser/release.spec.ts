@@ -234,7 +234,7 @@ test('normal login, index/lesson/learning/pilot legacy entry parameters, refresh
     { url: 'learning.html?mode=homework&lesson=2#lesson=10&part=sort', feature: 'homework', lesson: 10, hash: '#/homework?lesson=10&part=sort', pathname: 'learning.html' },
     { url: 'learning.html?mode=homework&lesson=1&stage=choice#lesson=15&part=translation', feature: 'homework', lesson: 15, hash: '#/homework?lesson=15&part=translation', pathname: 'learning.html' },
     { url: 'learning.html?mode=listening&lesson=1#/textbook?lesson=10&section=grammar', feature: 'textbook', lesson: 10, hash: '#/textbook?lesson=10&section=grammar', pathname: 'learning.html' },
-    { url: 'lesson9-pilot.html', feature: 'textbook', lesson: 9, hash: '#/textbook?lesson=9&section=vocab', pathname: 'lesson.html' },
+    { url: 'lesson9-pilot.html', feature: 'exercises', lesson: 9, hash: '#/exercises?lesson=9&set=pilot&group=words&filter=all', pathname: 'lesson9-pilot.html' },
   ];
   for (const row of cases) {
     await page.goto(new URL(row.url, base).href);

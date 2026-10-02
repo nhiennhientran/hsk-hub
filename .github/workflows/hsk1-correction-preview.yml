@@ -40,7 +40,7 @@ jobs:
       matrix:
         browser: [chromium, webkit]
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     defaults:
       run:
         working-directory: hsk1-app
@@ -76,6 +76,14 @@ jobs:
           npx playwright install-deps ${{ matrix.browser }}
           sudo apt-get install -y fonts-noto-cjk
           npx playwright install ${{ matrix.browser }}
+      - name: Capture reviewable desktop and mobile pages before the long regression suite
+        run: npm run test:smoke -- --project=${{ matrix.browser }} legacy-preview.spec.ts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: correction-preview-${{ matrix.browser }}-screens
+          path: hsk1-app/.repro-output/legacy-preview/
+          include-hidden-files: true
       - run: npm run test:smoke -- --project=${{ matrix.browser }}
       - run: npm run test:release -- --project=${{ matrix.browser }}
         env:

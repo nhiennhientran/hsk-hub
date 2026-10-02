@@ -67,7 +67,11 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       const view = mountHanzi(body, { chars: lesson.hanzi.chars, words: lesson.vocab, curriculum: lesson.hanzi, signal: lifetime.signal }); disposeView = view.dispose;
       await view.ready;
       if (left || lifetime.signal.aborted) return;
-    } else disposeView = mountPractice(body, { lesson, signal: lifetime.signal }).dispose;
+    } else {
+      disposeView = mountPractice(body, { lesson, signal: lifetime.signal }).dispose;
+      const more = element('nav'); more.className = 'study-paths'; more.setAttribute('aria-label', 'Các dạng luyện tập khác');
+      more.append(routeLink('Bài tập gốc · 选择 / 排序 / 翻译 / 听力', { feature: 'exercises', lesson: lesson.id }), routeLink('Bài tập sau bài · 课后作业', { feature: 'homework', lesson: lesson.id })); body.append(more);
+    }
     const journey = element('nav'); journey.className = 'textbook-journey'; journey.setAttribute('aria-label', 'Tiếp tục học');
     const at = SECTIONS.indexOf(section);
     if (at > 0) journey.append(routeLink(`← ${sectionLabels[SECTIONS[at - 1]]}`, { ...context.route, section: SECTIONS[at - 1] }));

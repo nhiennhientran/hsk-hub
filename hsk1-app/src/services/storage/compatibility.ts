@@ -1,6 +1,11 @@
+import legacyExercises from '../../../content/legacy-exercises.json' with { type: 'json' };
+import { migrateLegacyExercises } from '../../domain/exercises/migration.ts';
+import { createExerciseCatalogue } from '../../domain/exercises/catalogue.ts';
+import { blankExercisesState, validateExercisesState, resetExercises, type ExercisesState } from '../../domain/exercises/engine.ts';
 import homework from '../../domain/homework/engine.js';
 import practice from '../../domain/practice/engine.js';
 import legacyIdentities from '../../domain/homework/legacy-identities.json' with { type: 'json' };
+import { resetProgress, type ResetScope, type ResetResult } from '../../domain/progress/reset.ts';
 import { FEATURES, PARTS, SECTIONS } from '../../app/contracts.ts';
 import type { Route, Section } from '../../app/contracts.ts';
 import { normalizeRoute, parseRoute } from '../../app/router.ts';
@@ -12,7 +17,7 @@ export const LEGACY_KEYS = Object.freeze([
   'ran_hsk1_learning_v2', 'ran_hsk1_stage1_v3',
   'ran_hsk1_stage2_v3', 'ran_hsk1_stage2_v3_recovery',
   'ran_hsk1_stage3_v1', 'ran_hsk1_stage3_v1_previous',
-  'ran_hsk1_integrated_nav_v1',
+  'ran_hsk1_integrated_nav_v1', 'hsk1_lesson9_pilot_progress_v1',
 ] as const);
 
 export interface ReadingState {
@@ -24,17 +29,27 @@ export interface AppData {
   reading: ReadingState;
   homework: HomeworkState;
   practice: PracticeState;
+  exercises: ExercisesState;
   navigation: Route | null;
   /** Original bytes are kept once under their real source key. Access gates are excluded. */
   legacyRaw: Record<string, string>;
 }
-export interface MigrationResult { data: AppData; warnings: string[]; sources: string[] }
+export interface SourceReport {
+  key: string;
+  status: 'mapped' | 'retained' | 'invalid';
+  understood: number;
+  unsupported: number;
+  bytes: number;
+  warnings: string[];
+}
+export interface MigrationResult { data: AppData; warnings: string[]; sources: string[]; reports: SourceReport[] }
 export interface Compatibility {
   blank(): AppData;
   validate(data: unknown): AppData;
-  migrate(raw: Record<string, string | null>, now?: number): MigrationResult;
+  migrate(raw: Record<string, string | null>, now?: number, base?: AppData): MigrationResult;
   importLegacy(input: unknown, base: AppData, now?: number): MigrationResult;
   summary(data: AppData): Record<string, number>;
+  reset(data: AppData, scope: ResetScope): ResetResult;
 }
 type Row = Record<string, unknown>;
 const own = (row: object, key: string) => Object.prototype.hasOwnProperty.call(row, key);
@@ -122,6 +137,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
   homework.validateImport(homework.blank(), bank);
   practice.importBackup(practice.blank(), catalog);
   const compatibleBank = legacyBank(bank);
+  const exerciseCatalogue = createExerciseCatalogue(legacyExercises, bank, catalog);
   const stars = new Set<string>();
   const bookRows = record(textbook) && Array.isArray(textbook.lessons) ? textbook.lessons : Array.isArray(textbook) ? textbook : null;
   if (bookRows) for (const row of bookRows) {
@@ -129,7 +145,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
     for (const word of row.vocab) if (record(word) && typeof word.zh === 'string') stars.add(`${row.id}-${word.zh}`);
   }
   const blank = (): AppData => ({ reading: { lessons: {}, mastered: {}, modules: {} },
-    homework: homework.blank(), practice: practice.blank(), navigation: null, legacyRaw: {} });
+    homework: homework.blank(), practice: practice.blank(), exercises: blankExercisesState(), navigation: null, legacyRaw: {} });
   function reading(input: unknown): ReadingState {
     if (!record(input) || !record(input.lessons) || !record(input.mastered) || !record(input.modules)) fail('Tiến độ đọc không hợp lệ.');
     exact(input, ['lessons', 'mastered', 'modules']);
@@ -169,7 +185,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
   }
   function validate(input: unknown): AppData {
     if (!record(input)) fail('Bản lưu học tập không hợp lệ.');
-    exact(input, ['reading', 'homework', 'practice', 'navigation', 'legacyRaw']);
+    exact(input, ['reading', 'homework', 'practice', 'exercises', 'navigation', 'legacyRaw']);
     const h = homework.validateImport(input.homework, bank), p = practice.importBackup(input.practice, catalog);
     const issues = [...homeworkScoreIssues(input.homework, h), ...practiceScoreIssues(input.practice, p)];
     if (issues.length) fail(`Điểm hoặc trạng thái nộp bị sửa; nhập bị từ chối (${issues[0]}).`);
@@ -182,7 +198,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
       if (!same(source, normalized)) fail('Vị trí tiếp tục có trường không hợp lệ.');
       navigation = normalized;
     }
-    return { reading: reading(input.reading), homework: h, practice: p, navigation, legacyRaw: rawSources(input.legacyRaw) };
+    return { reading: reading(input.reading), homework: h, practice: p, exercises: validateExercisesState(input.exercises, exerciseCatalogue), navigation, legacyRaw: rawSources(input.legacyRaw) };
   }
   function convert(input: unknown, now: number): { state: HomeworkState | PracticeState; key: string; warnings: string[] } {
     if (!record(input)) fail('Tệp không phải bản sao lưu HSK 1 được hỗ trợ.');
@@ -204,8 +220,9 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
     } else fail('Ứng dụng hoặc phiên bản bản sao lưu không được hỗ trợ.');
     const warnings: string[] = [];
     if (key === homework.LEGACY_KEY) {
+      warnings.push('Định dạng cũ không có dấu vân tay nội dung. Đối chiếu chỉ áp dụng cho bộ câu hỏi gốc đã xác minh; không thể xác thực tệp từng bị sửa bên ngoài.');
       warnings.push('Bản cũ: điểm chỉ được chuyển khi cả mã và nội dung câu hỏi khớp; các nhóm đã đổi chỉ giữ bản gốc hoặc nháp đã xác minh.');
-      warnings.push('Bài dịch trắc nghiệm cũ chỉ được lưu nguồn; bài dịch tự viết mới chưa được nộp và không có điểm.');
+      warnings.push('Bài dịch trắc nghiệm cũ chỉ nối với bài gốc tương ứng; không chuyển điểm hoặc trạng thái nộp sang bài dịch tự viết mới.');
     } else if (homeworkScoreIssues(input, state).length) {
       warnings.push('Điểm và trạng thái bài tập cũ đã được tính lại từ đáp án đã xác minh.');
     }
@@ -214,18 +231,148 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
     }
     return { state, key, warnings };
   }
+  // Old mixed-card keys include the answer domain (meaning), not only the Hanzi.
+  // Never guess a changed meaning or fan one old rating out to several current senses.
+  const plain = (text: string) => text.normalize('NFKC').trim().toLowerCase();
+  const compact = (text: string) => plain(text).replace(/\s+/g, '');
+  const vocabulary = record(catalog) && Array.isArray(catalog.vocabulary) ? catalog.vocabulary.filter(record) : [];
+  const cardFingerprints = practice.startReview(practice.blank(), catalog as Parameters<typeof practice.startReview>[1],
+    { lessons: Array.from({ length: 15 }, (_, index) => index + 1), filter: 'all', shuffle: false }, 0).fingerprints;
+  function mapWords(raw: unknown, state: PracticeState): { understood: number; unsupported: number } {
+    const words = record(raw) && raw.schema === 2 && raw.app === undefined && record(raw.lessons) && record(raw.words) ? raw.words : {};
+    let understood = 0, unsupported = 0;
+    for (const [key, value] of Object.entries(words)) {
+      try {
+        const identity: unknown = JSON.parse(key);
+        if (!Array.isArray(identity) || identity.length !== 3 || identity.some(item => typeof item !== 'string') || !record(value)) throw Error();
+        const matches = vocabulary.filter(item => typeof item.zh === 'string' && typeof item.py === 'string' && typeof item.vi === 'string' &&
+          compact(item.zh) === identity[0] && compact(item.py) === identity[1] && plain(item.vi) === identity[2]);
+        const ids = [...new Set(matches.map(item => String(item.senseId)))];
+        if (ids.length !== 1 || typeof value.zh !== 'string' || compact(value.zh) !== identity[0] ||
+            !['known', 'again'].includes(String(value.lastRating)) || !time(value.reviewedAt) || !time(value.due) ||
+            !Number.isInteger(value.level) || Number(value.level) < 0 || Number(value.level) > 4 ||
+            !Number.isSafeInteger(value.reviews) || Number(value.reviews) < 1 || Number(value.reviews) > 1000000000 ||
+            value.source !== 'self-assessment' ||
+            (value.lastRating === 'again' && (value.level !== 0 || value.due !== value.reviewedAt)) ||
+            (value.lastRating === 'known' && (Number(value.level) < 1 || value.due !== value.reviewedAt + [1, 3, 7, 14][Number(value.level) - 1]! * 86400000))) throw Error();
+        const id = ids[0]!;
+        // A newer domain and its active queue always win; the source remains downloadable.
+        if (own(state.cards.schedule, id) || state.cards.review) { unsupported++; continue; }
+        const fingerprint = cardFingerprints[id]!;
+        const candidate = structuredClone(state);
+        candidate.cards.schedule[id] = { fingerprint, level: value.lastRating === 'again' ? 0 : value.level as number,
+          lastRating: value.lastRating === 'known' ? 'good' : 'again', ratedAt: value.reviewedAt,
+          dueAt: value.lastRating === 'again' ? value.reviewedAt + 600000 : value.due, reviewCount: value.reviews as number };
+        state.cards.schedule = practice.importBackup(candidate, catalog).cards.schedule; understood++;
+      } catch { unsupported++; }
+    }
+    return { understood, unsupported };
+  }
+  function entryIds(raw: unknown): Set<string> {
+    const ids = new Set<string>();
+    if (!record(raw)) return ids;
+    if (record(raw.lessons)) for (const [lessonId, groups] of Object.entries(raw.lessons)) {
+      if (!record(groups)) continue;
+      for (const [kind, group] of Object.entries(groups)) {
+        if (!record(group)) continue;
+        for (const part of [group.draft, ...['first', 'attempt', 'latest'].map(field => record(group[field]) ? group[field].answers : null),
+          ...(Array.isArray(group.history) ? group.history.map(item => record(item) ? item.answers : null) : [])]) {
+          if (record(part)) for (const id of Object.keys(part)) ids.add(`${lessonId}:${kind}:${id}`);
+        }
+      }
+    }
+    if (record(raw.groups)) for (const [groupId, group] of Object.entries(raw.groups)) {
+      if (!record(group)) continue;
+      for (const part of [group.draft, ...(Array.isArray(group.attempts) ? group.attempts.map(item => record(item) ? item.answers : null) : [])]) {
+        if (record(part)) for (const id of Object.keys(part)) ids.add(`${groupId}:${id}`);
+      }
+    }
+    return ids;
+  }
+  function sourceReports(raw: Record<string, string>, data: AppData, sources: string[], warnings: string[], wordCounts?: { understood: number; unsupported: number }, exerciseBase?: ExercisesState): SourceReport[] {
+    return Object.entries(raw).map(([key, text]) => {
+      let value: unknown;
+      try { value = parse(text); } catch { return { key, status: 'invalid' as const, understood: 0, unsupported: 1, bytes: new TextEncoder().encode(text).byteLength,
+        warnings: ['Không đọc được JSON; giữ nguyên toàn bộ bản gốc.'] }; }
+      const active = sources.includes(key), recoveryOnly = key.endsWith('_recovery') || key.endsWith('_previous');
+      let total = record(value) ? Object.keys(value).length : 1, understood = 0, scoreOnlyHistory = 0;
+      if (key === homework.LEGACY_KEY || key === homework.KEY || key === homework.STEP1_KEY) {
+        const entries = entryIds(value), mapped = entryIds(data.homework);
+        const homeworkSource = [homework.KEY, homework.STEP1_KEY, homework.LEGACY_KEY].find(source => sources.includes(source));
+        const recognized = new Set(key === homeworkSource ? mapped : []);
+        if (key === homework.LEGACY_KEY) for (const entry of exerciseCatalogue.entries) {
+          if (entry.set === 'original' && (data.exercises.records[entry.authorityId] || data.exercises.drafts[entry.authorityId] !== undefined) &&
+              !exerciseBase?.records[entry.authorityId] && exerciseBase?.drafts[entry.authorityId] === undefined) {
+            recognized.add(`${entry.lesson}:${entry.group}:${entry.oldId}`);
+          }
+        }
+        if (key === homework.LEGACY_KEY && record(value) && record(value.lessons)) {
+          for (const groups of Object.values(value.lessons)) if (record(groups)) {
+            for (const group of Object.values(groups)) if (record(group) && Array.isArray(group.history)) {
+              scoreOnlyHistory += group.history.filter(item => record(item) && !record(item.answers)).length;
+            }
+          }
+        }
+        total = entries.size + scoreOnlyHistory;
+        understood = [...entries].filter(id => recognized.has(id)).length;
+        const count = key === homework.LEGACY_KEY ? wordCounts : undefined;
+        total += record(value) && record(value.words) ? Object.keys(value.words).length : 0;
+        understood += count?.understood ?? 0;
+      } else if (key === 'hsk1_lesson9_pilot_progress_v1') {
+        total = entryIds(value).size + (record(value) && record(value.words) ? Object.keys(value.words).length : 0);
+      } else if (key === practice.KEY) {
+        total = record(value) && record(value.listening) && record(value.listening.records) ? Object.keys(value.listening.records).length : 0;
+        total += record(value) && record(value.cards) && record(value.cards.schedule) ? Object.keys(value.cards.schedule).length : 0;
+        understood = active ? total : 0;
+      } else if (key === 'hsk_module_progress_v1') understood = active && record(value) ? Object.keys(value).filter(id => id.startsWith('hsk1:')).length : 0;
+      else understood = active && !recoveryOnly ? total : 0;
+      const unsupported = Math.max(0, total - understood);
+      const notes = warnings.filter(warning => warning.includes(key));
+      if (scoreOnlyHistory) notes.push(`${scoreOnlyHistory} bản ghi lịch sử chỉ có tổng điểm, không có đáp án: giữ nguyên nguồn, không tạo lần nộp.`);
+      if (recoveryOnly) notes.push('Bản khôi phục chỉ được giữ nguyên; không tự động kích hoạt.');
+      if (key === 'hsk1_lesson9_pilot_progress_v1') notes.push('Giữ nguyên nguồn Bài 9; chưa chuyển điểm khi chưa xác minh đầy đủ danh tính câu hỏi.');
+      if (!active && !recoveryOnly && understood === 0) notes.push('Nguồn này chưa được đưa vào tiến độ hoạt động; bản gốc vẫn nằm trong bản sao lưu.');
+      return { key, status: (active || understood > 0) && !recoveryOnly ? 'mapped' : 'retained', understood, unsupported,
+        bytes: new TextEncoder().encode(text).byteLength, warnings: notes };
+    });
+  }
   function importLegacy(input: unknown, base: AppData, now = Date.now()): MigrationResult {
     const data = validate(base), text = typeof input === 'string' ? input : JSON.stringify(input);
     if (typeof text !== 'string') fail('Tệp không phải JSON học tập.');
-    const result = convert(typeof input === 'string' ? parse(input) : input, now);
+    const parsed = typeof input === 'string' ? parse(input) : input;
+    if (record(parsed) && parsed.version === 1 && typeof parsed.bankVersion === 'string' && record(parsed.groups)) {
+      const key = 'hsk1_lesson9_pilot_progress_v1'; data.legacyRaw[key] = text;
+      const warnings = ['Nguồn Bài 9 được giữ nguyên để khôi phục; chưa nhập điểm vì cần xác minh đúng câu hỏi và định dạng đáp án.'];
+      return { data: validate(data), warnings, sources: [], reports: sourceReports({ [key]: text }, data, [], warnings) };
+    }
+    const result = convert(parsed, now);
     if (result.key === practice.KEY) data.practice = result.state as PracticeState;
-    else data.homework = result.state as HomeworkState;
+    else {
+      const incoming = result.state as HomeworkState;
+      for (const [id, entry] of Object.entries(data.exercises.records)) {
+        const latest = entry.submissions.at(-1);
+        if (id.startsWith('homework:') && latest?.homeworkAttempts !== undefined &&
+            !same(data.homework.questionReviews[id.slice(9)], incoming.questionReviews[id.slice(9)])) latest.homeworkAttempts = 0;
+      }
+      data.homework = incoming;
+    }
+    const exerciseBase = structuredClone(data.exercises);
+    if (result.key === homework.LEGACY_KEY) {
+      const exercises = migrateLegacyExercises(parsed, exerciseCatalogue, data.exercises);
+      data.exercises = exercises.state; result.warnings.push(...exercises.warnings);
+      result.warnings.push(`${exercises.submitted} câu khôi phục lần nộp, ${exercises.drafts} câu giữ nháp. Điểm nguồn chỉ được tính lại trong đúng miền đáp án.`);
+    }
+    const words = result.key === homework.LEGACY_KEY ? mapWords(parsed, data.practice) : undefined;
+    if (words && words.understood) result.warnings.push(`${words.understood} lịch ôn tự đánh giá được chuyển sang thẻ có cùng chữ, pinyin và nghĩa. Mức “ôn lại” dùng lịch 10 phút; không phải điểm thi.`);
+    if (words?.unsupported) result.warnings.push(`${words.unsupported} mục từ chưa khớp nghĩa hoặc đã có tiến độ mới: chỉ giữ bản gốc, không ghi đè.`);
     data.legacyRaw[result.key] = text;
     rawSources(data.legacyRaw);
-    return { data: validate(data), warnings: result.warnings, sources: [result.key] };
+    return { data: validate(data), warnings: result.warnings, sources: [result.key],
+      reports: sourceReports({ [result.key]: text }, data, [result.key], result.warnings, words, exerciseBase) };
   }
-  function migrate(raw: Record<string, string | null>, now = Date.now()): MigrationResult {
-    const data = blank(), warnings: string[] = [], sources: string[] = [];
+  function migrate(raw: Record<string, string | null>, now = Date.now(), base?: AppData): MigrationResult {
+    let data = blank();
+    const warnings: string[] = [], sources: string[] = [];
     // Unknown keys are ignored before validation: shared gates never enter a backup.
     const allowed = Object.fromEntries(LEGACY_KEYS.filter(key => own(raw, key) && raw[key] !== null).map(key => [key, raw[key]]));
     data.legacyRaw = rawSources(allowed);
@@ -253,6 +400,19 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
       if (result.key !== practice.KEY) fail('Nguồn không phải bản nghe và từ vựng.');
       data.practice = result.state as PracticeState; warnings.push(...result.warnings);
     });
+    let words: { understood: number; unsupported: number } | undefined;
+    if (own(data.legacyRaw, homework.LEGACY_KEY)) {
+      try {
+        const parsed = parse(data.legacyRaw[homework.LEGACY_KEY]!);
+        const exercises = migrateLegacyExercises(parsed, exerciseCatalogue, base?.exercises);
+        data.exercises = exercises.state; warnings.push(...exercises.warnings);
+        if (!sources.includes(homework.LEGACY_KEY)) sources.push(homework.LEGACY_KEY);
+        warnings.push(`${exercises.submitted} câu khôi phục lần nộp, ${exercises.drafts} câu giữ nháp. Điểm được tính lại theo câu hỏi gốc đã đối chiếu.`);
+        words = mapWords(parsed, data.practice);
+        if (words.understood) warnings.push(`${words.understood} lịch ôn tự đánh giá đã khớp chữ, pinyin và nghĩa; chuyển sang thẻ từ vựng. Mức “ôn lại” dùng lịch 10 phút.`);
+        if (words.unsupported) warnings.push(`${words.unsupported} mục từ chưa xác minh hoặc đã có lịch mới: giữ bản gốc, không ghi đè.`);
+      } catch (error) { warnings.push(`${homework.LEGACY_KEY}: ${message(error)} Nguồn gốc được giữ nguyên; không khôi phục câu chưa xác minh.`); }
+    }
     read('hsk_recent_lesson_v1', value => {
       if (!record(value)) fail('Vị trí đọc gần đây không hợp lệ.');
       if (value.code !== 'hsk1') return;
@@ -275,7 +435,43 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
         if (engine === 'homework') homework.validateImport(value, bank); else practice.importBackup(value, catalog);
       });
     }
-    return { data: validate(data), warnings: [...new Set(warnings)], sources };
+    const reports = sourceReports(data.legacyRaw, data, sources, warnings, words, base?.exercises);
+    if (base) {
+      const current = validate(base), incoming = data;
+      // Discovery adds missing identities only. Explicit backup import remains a replacement flow.
+      for (const key of ['lessons', 'mastered', 'modules'] as const) {
+        Object.assign(current.reading[key], Object.fromEntries(Object.entries(incoming.reading[key]).filter(([id]) => !own(current.reading[key], id))));
+      }
+      let held = 0;
+      for (const [id, groups] of Object.entries(incoming.homework.lessons)) {
+        if (own(current.homework.lessons, id)) held++; else current.homework.lessons[id] = groups;
+      }
+      for (const [id, value] of Object.entries(incoming.practice.listening.records)) {
+        if (own(current.practice.listening.records, id)) held++; else current.practice.listening.records[id] = value;
+      }
+      for (const [id, value] of Object.entries(incoming.practice.cards.schedule)) {
+        if (own(current.practice.cards.schedule, id) || current.practice.cards.review) held++;
+        else current.practice.cards.schedule[id] = value;
+      }
+      for (const [id, value] of Object.entries(incoming.exercises.records)) {
+        if (own(current.exercises.records, id) || own(current.exercises.drafts, id)) held++;
+        else {
+          current.exercises.records[id] = value;
+          if (incoming.exercises.retrying.includes(id)) current.exercises.retrying.push(id);
+          if (own(incoming.exercises.drafts, id)) current.exercises.drafts[id] = incoming.exercises.drafts[id]!;
+        }
+      }
+      for (const [id, value] of Object.entries(incoming.exercises.drafts)) {
+        if (!own(current.exercises.records, id) && !own(current.exercises.drafts, id)) current.exercises.drafts[id] = value;
+      }
+      // Existing positions, settings and active queues are authoritative, including unfinished drafts.
+      current.legacyRaw = { ...current.legacyRaw, ...incoming.legacyRaw };
+      data = current;
+      warnings.push('Chỉ bổ sung bài / câu / nghĩa còn thiếu. Tiến độ, nháp, hồ sơ, tùy chọn và lượt đang mở của ứng dụng mới được ưu tiên giữ nguyên.');
+      if (held) warnings.push(`${held} bản ghi cũ trùng phạm vi hoặc ảnh hưởng lượt đang mở chỉ được giữ trong nguồn; không ghi đè tiến độ mới.`);
+      warnings.push('Nếu nguồn cũ đã thay đổi, bản sao nguồn mới được giữ trong dữ liệu; toàn bộ bản hiện tại vẫn nằm trong bản khôi phục trước khi xác nhận.');
+    }
+    return { data: validate(data), warnings: [...new Set(warnings)], sources, reports };
   }
   function summary(data: AppData): Record<string, number> {
     const totals = homework.courseTotals(data.homework, bank);
@@ -291,9 +487,21 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
       listeningLatestCorrect: records.filter(row => row.latest.correct).length,
       scheduledSenses: Object.keys(data.practice.cards.schedule).length,
       legacySources: Object.keys(data.legacyRaw).length,
+      exerciseSubmitted: Object.keys(data.exercises.records).length,
+      exerciseDrafts: Object.keys(data.exercises.drafts).length,
     };
   }
-  return { blank, validate, migrate, importLegacy, summary };
+  const dataExerciseEntries = (state: ExercisesState) => Object.keys(state.records).length + Object.keys(state.drafts).length + Object.keys(state.positions).length;
+  function reset(input: AppData, scope: ResetScope): ResetResult {
+    const result = resetProgress(validate(input), scope, catalog as Parameters<typeof resetProgress>[2]);
+    if (scope.module === 'all' || scope.module === 'exercises') {
+      const before = dataExerciseEntries(result.data.exercises);
+      result.data.exercises = resetExercises(result.data.exercises, exerciseCatalogue, scope.lesson ?? undefined);
+      result.removed += before - dataExerciseEntries(result.data.exercises);
+    }
+    return { ...result, data: validate(result.data) };
+  }
+  return { blank, validate, migrate, importLegacy, summary, reset };
 }
 
 export async function loadCompatibility(signal?: AbortSignal): Promise<Compatibility> {

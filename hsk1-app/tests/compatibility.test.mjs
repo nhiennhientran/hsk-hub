@@ -1,3 +1,4 @@
+import { withVocabularySearch } from './vocabulary-engine-exceptions.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -22,7 +23,7 @@ const raw = () => ({ ...fixture('reading-shared'), ...fixture('navigation'),
 const migrated = () => compatibility.migrate(raw(), at).data;
 
 // This equivalence check makes future changes to rule behavior explicit; it is not a copied grading test.
-test('domain rules match pinned original bodies except the explicitly approved navigation and listening-size changes', () => {
+test('domain rules match pinned bodies except approved navigation, search and listening-size changes', () => {
   const manifest = json('../src/domain/provenance.json');
   for (const item of manifest.engines) {
     const source = readFileSync(new URL(`../../${item.source}`, import.meta.url), 'utf8');
@@ -30,6 +31,7 @@ test('domain rules match pinned original bodies except the explicitly approved n
     const start = source.indexOf("  'use strict';", source.indexOf('})(typeof window')) + "  'use strict';\n".length;
     let expected = source.slice(start, source.lastIndexOf('\n});')).replace(/^  return \{/m, '  export default {');
     if (item.module === 'src/domain/practice/engine.js') {
+      expected = withVocabularySearch(expected);
       // Keep the full-body guard. Only these exact approved differences are allowed;
       // listening gates, scheduling calculations and every other validation stay pinned.
       const changes = [
@@ -43,6 +45,7 @@ test('domain rules match pinned original bodies except the explicitly approved n
         ["      if (ids.slice(0, common.position).some(id => !own(ratings, id))) fail('INVALID_SESSION', 'Lượt ôn đã bỏ qua thẻ chưa tự đánh giá.');\n", ''],
         ["? ratings[ids.at(-1)].at : null", '? Math.max(...ids.map(id => ratings[id].at)) : null'],
       ];
+      changes.push(["      if (source.mode === 'all' && (limit === 'all' ? !sameSet(ids, allIds) : ids.length !== Math.min(limit, allIds.length))) fail('INVALID_SESSION', 'Lượt nghe thiếu câu của các bài đã chọn.');", "      let resetScope;\n      if (source.resetScope !== undefined) {\n        const witness = source.resetScope;\n        if (!record(witness) || Object.keys(witness).some(key => !['lessons', 'questionIds', 'removedLessons'].includes(key))) fail('INVALID_SESSION', 'Phạm vi đặt lại lượt nghe không hợp lệ.');\n        const originalLessons = lessons(witness.lessons), removedLessons = lessons(witness.removedLessons), originalIds = witness.questionIds;\n        if (!same(originalLessons, witness.lessons) || !same(removedLessons, witness.removedLessons) || !removedLessons.length ||\n            removedLessons.some(id => !originalLessons.includes(id)) || !Array.isArray(originalIds) || new Set(originalIds).size !== originalIds.length ||\n            originalIds.some(id => !index.questions.has(id) || !originalLessons.includes(index.questions.get(id).q.lesson))) fail('INVALID_SESSION', 'Nguồn lượt nghe trước đặt lại không hợp lệ.');\n        const originalAll = catalog.listening.filter(q => originalLessons.includes(q.lesson)).map(q => q.id);\n        if (limit !== 'all' && originalIds.length > limit) fail('INVALID_SESSION', 'Lượt nghe gốc vượt số câu đã chọn.');\n        if (source.mode === 'all' && (limit === 'all' ? !sameSet(originalIds, originalAll) : originalIds.length !== Math.min(limit, originalAll.length))) fail('INVALID_SESSION', 'Lượt nghe gốc thiếu câu.');\n        const remainingLessons = originalLessons.filter(id => !removedLessons.includes(id));\n        const remainingIds = originalIds.filter(id => remainingLessons.includes(index.questions.get(id).q.lesson));\n        if (!same(selected, remainingLessons) || !same(ids, remainingIds)) fail('INVALID_SESSION', 'Lượt nghe đặt lại không giữ đúng câu ngoài phạm vi.');\n        resetScope = {lessons: originalLessons, questionIds: originalIds.slice(), removedLessons};\n      } else if (source.mode === 'all' && (limit === 'all' ? !sameSet(ids, allIds) : ids.length !== Math.min(limit, allIds.length))) fail('INVALID_SESSION', 'Lượt nghe thiếu câu của các bài đã chọn.');"], ["state.listening.session = {...common, mode: source.mode, ...(limit !== 'all' ? {limit} : {}), questionIds: ids.slice(),", "state.listening.session = {...common, mode: source.mode, ...(limit !== 'all' ? {limit} : {}), ...(resetScope ? {resetScope} : {}), questionIds: ids.slice(),"]);
       for (const [before, after] of changes) {
         assert.equal(expected.split(before).length - 1, 1, `Approved difference must match exactly once: ${before}`);
         expected = expected.replace(before, after);
@@ -78,7 +81,7 @@ test('real nonempty old records retain reading, first/latest, submitted translat
   assert.deepEqual(compatibility.summary(state), {
     readingVisited: 2, readingCompleted: 1, masteredWords: 2, homeworkSubmitted: 30,
     automaticSubmitted: 20, automaticFirstCorrect: 0, automaticLatestCorrect: 20, manualSubmitted: 10,
-    listeningSubmitted: 1, listeningFirstCorrect: 0, listeningLatestCorrect: 1, scheduledSenses: 3, legacySources: 9,
+    listeningSubmitted: 1, listeningFirstCorrect: 0, listeningLatestCorrect: 1, scheduledSenses: 3, legacySources: 9, exerciseSubmitted: 0, exerciseDrafts: 0,
   });
 });
 
@@ -241,7 +244,7 @@ test('repeated new-format validation and migration round trips add no archive la
 
 test('access gates are excluded from migration and forbidden in new learning backups', () => {
   const keys = ['hsk_portal_unlocked_v2', 'hsk_site_unlocked_v1', 'hsk1_ranteacher_unlocked'];
-  assert.equal(LEGACY_KEYS.length, 11);
+  assert.equal(LEGACY_KEYS.length, 12);
   assert.ok(keys.every(key => !LEGACY_KEYS.includes(key)));
   const result = compatibility.migrate({ ...raw(), ...Object.fromEntries(keys.map(key => [key, '1'])) }, at);
   assert.ok(keys.every(key => !(key in result.data.legacyRaw)));
@@ -271,4 +274,121 @@ test('clock rollback does not redefine semantic first/latest or reject an otherw
   assert.equal(normalized.homework.lessons['1'].choice.first.correct, 0);
   assert.equal(Object.values(normalized.practice.listening.records)[0].latest.correct, true);
   assert.equal(Object.values(normalized.practice.listening.records)[0].first.correct, false);
+});
+
+test('old self-ratings map to active cards only with an exact unique Hanzi, pinyin and meaning identity', () => {
+  const value = { schema: 2, lessons: {}, words: {
+    '["大家","dàjiā","mọi người"]': { zh: '大家', lastRating: 'known', level: 2, due: at + 3 * 86400000,
+      reviewedAt: at, reviews: 2, source: 'self-assessment' },
+    '["老师","lǎoshī","changed meaning"]': { zh: '老师', lastRating: 'known', level: 1, due: at + 86400000,
+      reviewedAt: at, reviews: 1, source: 'self-assessment' },
+    '["在","zài","location"]': { zh: '在', lastRating: 'again', level: 0, due: at,
+      reviewedAt: at, reviews: 4, source: 'self-assessment' },
+  } };
+  const raw = ` \n${JSON.stringify(value)}\n`;
+  const result = compatibility.migrate({ [homework.LEGACY_KEY]: raw }, at);
+  const id = catalog.vocabulary.find(item => item.zh === '大家').senseId;
+  assert.deepEqual(Object.keys(result.data.practice.cards.schedule), [id]);
+  assert.equal(result.data.practice.cards.schedule[id].reviewCount, 2);
+  assert.equal(result.data.practice.cards.schedule[id].dueAt, value.words['["大家","dàjiā","mọi người"]'].due);
+  assert.equal(result.data.practice.cards.schedule[id].lastRating, 'good');
+  assert.equal(result.data.legacyRaw[homework.LEGACY_KEY], raw);
+  assert.equal(result.reports[0].understood, 1); assert.equal(result.reports[0].unsupported, 2);
+  assert.ok(result.warnings.some(message => message.includes('chưa xác minh')));
+  assert.deepEqual(compatibility.validate(result.data), result.data);
+  const retained = compatibility.importLegacy(raw, result.data, at);
+  assert.deepEqual(retained.data.practice, result.data.practice, 'reimport never overwrites a current schedule');
+  const ambiguous = copy(catalog);
+  ambiguous.vocabulary.push({ ...ambiguous.vocabulary.find(item => item.senseId === id), id: 'another-source', senseId: 'different-sense' });
+  assert.deepEqual(createCompatibility(bank, ambiguous, book).migrate({ [homework.LEGACY_KEY]: raw }, at).data.practice.cards.schedule, {});
+});
+
+test('known old again rating becomes a validated active again schedule without fabricating test scores', () => {
+  const old = { schema: 2, lessons: {}, words: {
+    '["大家","dàjiā","mọi người"]': { zh: '大家', lastRating: 'again', level: 0, due: at,
+      reviewedAt: at, reviews: 4, source: 'self-assessment' },
+  } };
+  const result = compatibility.migrate({ [homework.LEGACY_KEY]: JSON.stringify(old), [homework.KEY]: text('stage2') }, at);
+  const record = Object.values(result.data.practice.cards.schedule)[0];
+  assert.equal(record.lastRating, 'again'); assert.equal(record.dueAt, at + 600000);
+  assert.equal(compatibility.summary(result.data).listeningSubmitted, 0);
+  assert.equal(compatibility.summary(result.data).homeworkSubmitted, 30);
+});
+
+test('pilot source discovery and uploaded backup retain exact bytes and expose unsupported answers without invented grades', () => {
+  const pilot = { version: 1, bankVersion: '20260930-pilot9-v1', groups: {
+    words: { draft: { '9-w1': 'Một người bạn' }, attempts: [{ answers: { '9-w1': 'Một người bạn', '9-w2': 'wrong' }, correct: 5 }] },
+  }, words: {}, selectedLessons: [9] };
+  const raw = `\n ${JSON.stringify(pilot)} `;
+  for (const result of [compatibility.migrate({ hsk1_lesson9_pilot_progress_v1: raw }, at), compatibility.importLegacy(raw, compatibility.blank(), at)]) {
+    assert.equal(result.data.legacyRaw.hsk1_lesson9_pilot_progress_v1, raw);
+    assert.equal(result.reports[0].understood, 0); assert.equal(result.reports[0].unsupported, 2);
+    assert.equal(result.reports[0].status, 'retained');
+    assert.deepEqual(result.data.homework.lessons, {});
+    assert.deepEqual(result.data.practice.listening.records, {});
+  }
+  const corrupt = compatibility.migrate({ hsk1_lesson9_pilot_progress_v1: '{broken' }, at);
+  assert.equal(corrupt.reports[0].status, 'invalid');
+  assert.equal(corrupt.data.legacyRaw.hsk1_lesson9_pilot_progress_v1, '{broken');
+});
+
+test('on-device discovery adds missing old lessons while preserving every existing current answer, draft and active queue', () => {
+  const current = migrated();
+  const firstBefore = copy(current.homework.lessons['1']);
+  delete current.homework.lessons['15'];
+  current.homework.profile.name = 'Current learner';
+  const draftId = Object.keys(current.homework.lessons['1'].translation.draft)[0];
+  current.homework.lessons['1'].translation.draft[draftId] = '这是一份新草稿。';
+  current.homework.lessons['1'].translation.attempt = null;
+  const unchanged = copy(current);
+  const normalized = compatibility.validate(current);
+  const old = fixture('stage2'); old.profile.name = 'Older learner'; old.lessons['1'].translation.draft[draftId] = 'old draft'; old.lessons['1'].translation.attempt = null;
+  const result = compatibility.migrate({ [homework.KEY]: JSON.stringify(old), [practice.KEY]: text('stage3-previous') }, at, normalized);
+  assert.deepEqual(result.data.homework.lessons['1'], normalized.homework.lessons['1']);
+  assert.deepEqual(result.data.homework.lessons['15'], old.lessons['15']);
+  assert.notDeepEqual(result.data.homework.lessons['1'], firstBefore);
+  assert.deepEqual(result.data.homework.profile, normalized.homework.profile);
+  assert.deepEqual(result.data.practice.listening.session, normalized.practice.listening.session);
+  assert.deepEqual(result.data.practice.cards, normalized.practice.cards);
+  for (const [id, value] of Object.entries(normalized.practice.listening.records)) assert.deepEqual(result.data.practice.listening.records[id], value);
+  assert.deepEqual(result.data.reading, normalized.reading);
+  assert.deepEqual(result.data.navigation, normalized.navigation);
+  assert.ok(result.warnings.some(message => message.includes('không ghi đè')));
+  assert.deepEqual(current, unchanged, 'discovery does not mutate caller data');
+});
+
+test('full original answer corpus maps 299 original-domain submissions and excludes the corrected task without scoring rewritten homework', () => {
+  const context = { window: {} };
+  vm.runInNewContext(readFileSync(new URL('../../new-hsk1/hsk1/learning-bank.js', import.meta.url), 'utf8'), context);
+  const lessons = {};
+  for (const lesson of context.window.HSK1_NEW_BANK) {
+    const groups = {};
+    for (const kind of ['choice', 'sort', 'translation', 'listening']) {
+      const answers = Object.fromEntries(lesson[kind].map(q => [q.id, kind === 'sort' ? q.tokens.map((_, index) => index) : q.answer]));
+      groups[kind] = { draft: answers, first: { answers, at, correct: 999, total: 999 }, attempt: { answers, at, correct: 999, total: 999 }, history: [{ at, correct: 999, total: 999 }] };
+    }
+    lessons[lesson.lesson] = groups;
+  }
+  const old = JSON.stringify({ schema: 2, lessons, words: {} });
+  const result = compatibility.migrate({ [homework.LEGACY_KEY]: old }, at);
+  assert.equal(Object.keys(result.data.exercises.records).length, 299);
+  assert.equal(result.data.exercises.records['legacy:l10-listening-04'], undefined);
+  assert.equal(compatibility.summary(result.data).homeworkSubmitted, 0);
+  assert.equal(result.reports[0].understood, 299);
+  assert.equal(result.reports[0].unsupported, 61, 'one corrected answer plus sixty score-only history records');
+  assert.equal(result.data.legacyRaw[homework.LEGACY_KEY], old);
+  assert.ok(result.warnings.some(message => message.includes('không có dấu vân tay')));
+  const base = compatibility.validate(result.data);
+  const preserved = compatibility.migrate({ [homework.LEGACY_KEY]: old }, at, base);
+  assert.deepEqual(preserved.data.exercises, base.exercises);
+});
+
+test('score-only original history stays in raw and is counted unsupported, never converted into a submission', () => {
+  const raw = ' {"schema":2,"lessons":{"1":{"choice":{"history":[{"at":123,"correct":5,"total":5}],"completed":true}}}} ';
+  const result = compatibility.migrate({ [homework.LEGACY_KEY]: raw }, at);
+  assert.deepEqual(result.data.exercises.records, {});
+  assert.equal(result.reports[0].understood, 0); assert.equal(result.reports[0].unsupported, 1);
+  assert.equal(result.data.legacyRaw[homework.LEGACY_KEY], raw);
+  const invalid = fixture('learning-v2'); invalid.lessons['1'].choice.first.answers['l01-choice-01'] = 'different answer domain';
+  assert.throws(() => compatibility.importLegacy(invalid, compatibility.blank(), at), /miền câu hỏi/);
 });
