@@ -7,13 +7,9 @@ on:
 permissions:
   contents: read
 jobs:
-  checkpoint:
-    strategy:
-      fail-fast: false
-      matrix:
-        browser: [chromium, webkit]
+  freeze:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 10
     defaults:
       run:
         working-directory: hsk1-app
@@ -28,7 +24,42 @@ jobs:
           cache-dependency-path: hsk1-app/package-lock.json
       - run: npm ci
       - run: npm run catalog:check && npm run fixtures:check && npm test
-      - run: npm run build && npm run assets:check && npm run student:check && npm run release:manifest && node tools/test-release-architecture.mjs
+      - name: Build once, audit sources privately, strip public maps, freeze exact public bytes
+        run: npm run build:release && npm run public:check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: step9-shared-release
+          path: |
+            hsk1-app/dist/
+            hsk1-app/.repro-output/student-build-source-audit.json
+          include-hidden-files: true
+  checkpoint:
+    needs: freeze
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: hsk1-app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+          cache: npm
+          cache-dependency-path: hsk1-app/package-lock.json
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: step9-shared-release
+          path: hsk1-app
+      - name: Verify the one shared public artifact without rebuilding
+        run: npm run public:check && npm run student:check && npm run assets:check && node tools/test-release-architecture.mjs
       - name: Use official Ubuntu archive for fixed browser dependencies
         run: |
           sudo python3 - <<'PY'
@@ -47,6 +78,8 @@ jobs:
           npx playwright install ${{ matrix.browser }}
       - run: npm run test:smoke -- --project=${{ matrix.browser }}
       - run: npm run test:release -- --project=${{ matrix.browser }}
+        env:
+          HSK_EXPECTED_COMMIT: ${{ github.sha }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -56,8 +89,3 @@ jobs:
             hsk1-app/test-results/
             hsk1-app/test-results-release/
           include-hidden-files: true
-      - uses: actions/upload-artifact@v4
-        if: success()
-        with:
-          name: step9-${{ matrix.browser }}-frozen-dist
-          path: hsk1-app/dist/

@@ -150,7 +150,7 @@ npm run test:smoke -- tests/browser/textbook.spec.ts tests/browser/vocabulary.sp
 
 ```sh
 node --experimental-strip-types --test tests/audio.test.mjs tests/listening-content.test.mjs tests/vocabulary-content.test.mjs tests/textbook-content.test.mjs
-npm run build
+npm run build:release
 npm run assets:check
 npm run test:smoke -- tests/browser/media.spec.ts tests/browser/listening.spec.ts tests/browser/vocabulary.spec.ts
 ```
@@ -191,7 +191,7 @@ npm run fixtures:check
 npm run index:check
 npm run check
 npm test
-npm run build
+npm run build:release
 npm run assets:check
 npm run student:check
 npx playwright install chromium webkit
@@ -231,3 +231,7 @@ HSK_LIVE_URL=https://nhiennhientran.github.io/hsk-hub/new-hsk1/hsk1/ npm run tes
 回滚须使用已保留的受测产物/清单或已确认恢复点，核对入口与资源一起恢复，再在正式原URL验证。代码回滚不等于学习记录反向迁移：旧应用不能读取新应用的 `ran_hsk1_modular_v1`。回滚前提醒保留新版JSON备份，不删除新键、原旧键或恢复副本，不承诺旧应用显示回滚前新增的学习进度。恢复新应用后再用受支持的预览/导入方式处理新版备份。
 
 备份含学生身份与作答时应私下保存，不能加入公开仓库。损坏或冲突时先保留原数据和内存稿，避免在修复中覆盖唯一副本。详细行为以 [storage-contract.md](storage-contract.md) 为准。
+
+## 单一公共产物流程
+
+当前发布用 `npm run build:release`：构建后先在CI内检查完整source map的模块来源，再移除全部公共.map和sourceMappingURL，校验没有可还原口令材料，生成冻结清单。源模块路径/哈希审计留CI，不包含源码正文。两引擎均下载同一份step9-shared-release制品，只测不重建，避免RollDown调试虚拟ID不确定性。现有口令与会话语义保持，只保留WebCrypto单向校验；无WebCrypto/异常浏览器明确拒绝，不恢复可逆fallback。旧公开仓库历史并未因此变成秘密。

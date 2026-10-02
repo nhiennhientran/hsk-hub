@@ -94,3 +94,7 @@ Nếu đã học ở phiên bản cũ trên cùng trình duyệt, chọn **Xem t
 - Trình duyệt chỉ cho xem/tải: ứng dụng chưa có khả năng ghi an toàn ở trình duyệt đó; giữ bản sao và dùng một trình duyệt hỗ trợ đầy đủ
 
 Khi báo lỗi, gửi bài/phần, thao tác vừa làm, thông báo lỗi và loại trình duyệt. Không gửi mật khẩu; chỉ gửi tệp chứa bài làm cho người bạn tin cậy. Không xóa dữ liệu trang, đổi sang chế độ riêng tư hoặc mở một địa chỉ khác để “sửa nhanh” trước khi sao lưu.
+
+## Yêu cầu trình duyệt
+
+Mật khẩu lớp không thay đổi. Phiên bản phát hành chỉ kiểm tra một chiều bằng WebCrypto trên HTTPS; trình duyệt không hỗ trợ hoặc kiểm tra bị lỗi sẽ không mở khóa và hiển thị hướng dẫn. Đây vẫn là cổng lớp học tĩnh, không phải hệ thống bảo vệ tài khoản hoặc dữ liệu bí mật.

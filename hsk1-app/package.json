@@ -24,7 +24,9 @@
     "assets:check": "node tools/check-course-assets.mjs",
     "student:check": "node tools/check-student-build.mjs",
     "release:manifest": "node tools/release-manifest.mjs",
-    "test:release": "node tools/run-checkpoint.mjs browser --config=playwright.release.config.ts"
+    "test:release": "node tools/run-checkpoint.mjs browser --config=playwright.release.config.ts",
+    "build:release": "npm run build && node tools/check-student-build.mjs --private && node tools/prepare-public-dist.mjs && npm run student:check && npm run assets:check && npm run release:manifest && node tools/test-release-architecture.mjs",
+    "public:check": "node tools/prepare-public-dist.mjs --check"
   },
   "devDependencies": {
     "@playwright/test": "1.62.1",

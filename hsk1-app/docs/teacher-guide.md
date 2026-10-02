@@ -63,3 +63,7 @@ Kiểm tra tự động trong Chromium/WebKit, mô phỏng màn hình hẹp, s�
 Chưa có bằng chứng hoàn tất trong đợt này cho các kiểm tra thủ công và thiết bị thật nêu trên. Tình trạng cụ thể được duy trì trong [các vấn đề và giới hạn đã biết](known-issues.md); bằng chứng triển khai được ghi riêng trong tài liệu phát hành. Không quảng bá “đã kiểm thử mọi thiết bị” hoặc “toàn bộ nội dung đã được duyệt lại” từ kết quả tự động.
 
 Hướng dẫn thao tác đầy đủ cho học viên: [Hướng dẫn học HSK 1](student-guide.md). Vị trí sửa nội dung, quy tắc, âm thanh và chức năng: [维护指南](maintenance-guide.md).
+
+## Yêu cầu trình duyệt
+
+Mật khẩu lớp không thay đổi. Phiên bản phát hành chỉ kiểm tra một chiều bằng WebCrypto trên HTTPS; trình duyệt không hỗ trợ hoặc kiểm tra bị lỗi sẽ không mở khóa và hiển thị hướng dẫn. Đây vẫn là cổng lớp học tĩnh, không phải hệ thống bảo vệ tài khoản hoặc dữ liệu bí mật.

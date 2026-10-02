@@ -10,26 +10,28 @@ const SESSION_ALIASES = [
   'hsk4_lower_ranteacher_unlocked',
 ] as const;
 const PASSWORD_HASH = '5b363ff1986142a6f34d3e259948aa38ec4773ad293a0cc03f2357877433a0c5';
-const PASSWORD_SIGNATURE = '52.61.6e.6c.61.6f.73.68.69.6d.65.69.6d.65.69';
 
-async function acceptsPassword(password: string): Promise<boolean> {
+type PasswordCheck = 'accepted' | 'rejected' | 'unsupported-crypto';
+
+async function checkPassword(password: string): Promise<PasswordCheck> {
   let raw: string;
   try {
     raw = password.trim();
   } catch {
-    return false;
+    return 'rejected';
   }
+  if (!raw) return 'rejected';
 
   try {
-    if (globalThis.crypto?.subtle) {
-      const digest = await globalThis.crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw));
-      const hash = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
-      return hash === PASSWORD_HASH;
-    }
+    const subtle = globalThis.crypto?.subtle;
+    if (!subtle) return 'unsupported-crypto';
+    const digest = await subtle.digest('SHA-256', new TextEncoder().encode(raw));
+    const hash = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
+    return hash === PASSWORD_HASH ? 'accepted' : 'rejected';
   } catch {
-    // The original gate also supports browsers without a working SHA-256 helper.
+    // Never substitute a reversible verifier when secure hashing is unavailable.
+    return 'unsupported-crypto';
   }
-  return [...raw].map(character => character.codePointAt(0)!.toString(16)).join('.') === PASSWORD_SIGNATURE;
 }
 
 /** Tab-session access only; legacy keys are compatibility outputs, never authority. */
@@ -48,8 +50,10 @@ export function createSessionAuth(storage: SessionStorage) {
       return unlockedInMemory || hasPersistedSession();
     },
 
-    async unlock(password: string): Promise<{accepted: boolean; persisted: boolean}> {
-      if (!await acceptsPassword(password)) return {accepted: false, persisted: false};
+    async unlock(password: string): Promise<{accepted: boolean; persisted: boolean; reason?: 'unsupported-crypto'}> {
+      const result = await checkPassword(password);
+      if (result === 'unsupported-crypto') return {accepted: false, persisted: false, reason: result};
+      if (result !== 'accepted') return {accepted: false, persisted: false};
 
       // A denied storage write must not prevent valid access in this tab.
       unlockedInMemory = true;

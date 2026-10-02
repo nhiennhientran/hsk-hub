@@ -20,6 +20,8 @@ if(fs.existsSync(path.join(root,'release-manifest.json')) || /<script\s+type="mo
     assert(bytes.length===file.bytes && hash(bytes)===file.sha256,'Release payload mismatch: '+file.path);
   }
   for(const entry of ['index.html','lesson.html','learning.html','lesson9-pilot.html','help.html'])assert(paths.has(entry),'Required release entry missing: '+entry);
+  assert(!manifest.files.some(file=>file.path.endsWith('.map')),'Public source maps are forbidden');
+  for(const file of manifest.files.filter(file=>/\.(?:js|css)$/.test(file.path)))assert(!/sourceMappingURL=|PASSWORD_SIGNATURE/.test(read(file.path)),'Public source-map or reversible fallback reference');
   const html=read('index.html');
   assert(read('lesson.html')===html&&read('learning.html')===html,'Entry alias drift');
   assert((html.match(/<script\b/g)||[]).length===1&&/<script type="module"/.test(html),'Expected one modular boot');

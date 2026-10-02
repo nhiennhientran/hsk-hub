@@ -119,7 +119,12 @@ function startApplication(): () => void {
     try {
       const result = await auth.unlock(password.value);
       if (events.signal.aborted) return;
-      if (!result.accepted) { message.textContent = 'Mật khẩu chưa đúng. Hãy thử lại.'; password.select(); return; }
+      if (!result.accepted) {
+        message.textContent = result.reason === 'unsupported-crypto'
+          ? 'Trình duyệt không hỗ trợ kiểm tra mật khẩu an toàn. Hãy mở trang bằng HTTPS trên trình duyệt mới hơn.'
+          : 'Mật khẩu chưa đúng. Hãy thử lại.';
+        password.select(); return;
+      }
       password.value = ''; gate.hidden = true; begin();
       if (!result.persisted) {
         const warning = root.querySelector<HTMLElement>('#session-message')!;

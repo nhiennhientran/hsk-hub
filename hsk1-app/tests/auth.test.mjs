@@ -108,18 +108,33 @@ test('correct password reports a failed persistence read without losing memory a
   assert.equal(createSessionAuth(storage).isUnlocked(), false);
 });
 
-test('original signature fallback works when WebCrypto is unavailable', requiresPassword, async () => {
-  const descriptor = Object.getOwnPropertyDescriptor(globalThis, 'crypto');
-  Object.defineProperty(globalThis, 'crypto', {configurable: true, value: undefined});
-  try {
-    const storage = storageFixture();
-    const auth = createSessionAuth(storage);
-    assert.deepEqual(await auth.unlock('incorrect-auth-input'), {accepted: false, persisted: false});
-    assert.deepEqual(storage.writes, []);
-    assert.deepEqual(await auth.unlock(password), {accepted: true, persisted: true});
-    assert.equal(auth.isUnlocked(), true);
-  } finally {
-    if (descriptor) Object.defineProperty(globalThis, 'crypto', descriptor);
-    else delete globalThis.crypto;
-  }
-});
+for (const [name, crypto] of [
+  ['WebCrypto is unavailable', undefined],
+  ['SubtleCrypto is unavailable', {}],
+  ['WebCrypto digest throws', {subtle: {digest() { throw new Error('Digest unavailable'); }}}],
+  ['WebCrypto digest rejects', {subtle: {digest() { return Promise.reject(new Error('Digest unavailable')); }}}],
+]) {
+  test(`password verification fails closed when ${name}`, requiresPassword, async () => {
+    const descriptor = Object.getOwnPropertyDescriptor(globalThis, 'crypto');
+    Object.defineProperty(globalThis, 'crypto', {configurable: true, value: crypto});
+    try {
+      const storage = storageFixture();
+      const auth = createSessionAuth(storage);
+      for (const input of ['incorrect-auth-input', password, `  ${password}  `]) {
+        assert.deepEqual(await auth.unlock(input), {accepted: false, persisted: false, reason: 'unsupported-crypto'});
+        assert.equal(auth.isUnlocked(), false);
+      }
+      for (const input of ['', '   ']) {
+        assert.deepEqual(await auth.unlock(input), {accepted: false, persisted: false});
+        assert.equal(auth.isUnlocked(), false);
+      }
+      assert.deepEqual(storage.writes, []);
+      const existing = storageFixture({[sessionKey]: '1'});
+      assert.equal(createSessionAuth(existing).isUnlocked(), true);
+      assert.deepEqual(existing.writes, []);
+    } finally {
+      if (descriptor) Object.defineProperty(globalThis, 'crypto', descriptor);
+      else delete globalThis.crypto;
+    }
+  });
+}

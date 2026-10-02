@@ -1,5 +1,14 @@
 import { test, expect, type Page } from '@playwright/test';
 
+test.use({ trace: 'off', video: 'off', screenshot: 'off' });
+
+async function enterPassword(page: Page, value: string): Promise<void> {
+  await page.locator('#class-password').evaluate((element, input) => {
+    const field = element as HTMLInputElement; field.value = input;
+    field.dispatchEvent(new Event('input', { bubbles: true }));
+  }, value);
+}
+
 const sessionKey = 'hsk_portal_unlocked_v2';
 const features = ['home', 'textbook', 'homework', 'listening', 'vocabulary', 'review', 'progress'] as const;
 
@@ -40,7 +49,7 @@ test('a fresh localhost session stays gated despite old flags and rejects empty 
   expect(await page.evaluate(key => sessionStorage.getItem(key), sessionKey)).toBeNull();
   await page.locator('#class-password').fill('incorrect-auth-input');
   await page.locator('#class-password').press('Enter');
-  await expect(page.locator('#auth-message')).not.toHaveText('');
+  await expect(page.locator('#auth-message')).toHaveText('Mật khẩu chưa đúng. Hãy thử lại.');
   await expect(page.locator('#auth-gate')).toBeVisible();
   await expect(page.locator('#module-host[data-state="ready"]')).toHaveCount(0);
   expect(await page.evaluate(key => sessionStorage.getItem(key), sessionKey)).toBeNull();
@@ -51,7 +60,7 @@ test('the real password works with Enter, reload reuses this tab session, and a 
   test.skip(!password, 'Set HSK_TEST_PASSWORD to run the correct-password browser acceptance.');
   await page.goto('/#/textbook?lesson=10&section=text');
   await expect(page.locator('#auth-gate')).toBeVisible();
-  await page.locator('#class-password').fill(password!);
+  await enterPassword(page, password!);
   await page.locator('#class-password').press('Enter');
   await expect(page.locator('#auth-gate')).toBeHidden();
   await expectReady(page, 'textbook', 10);
@@ -69,6 +78,42 @@ test('the real password works with Enter, reload reuses this tab session, and a 
     await freshContext.close();
   }
 });
+
+for (const mode of ['unavailable', 'throws', 'rejects'] as const) {
+  test(`the gate fails closed with a browser/HTTPS explanation when WebCrypto ${mode}`, async ({ page }) => {
+    const password = process.env.HSK_TEST_PASSWORD;
+    test.skip(!password, 'Set HSK_TEST_PASSWORD to run the correct-password browser acceptance.');
+    const errors: string[] = [];
+    page.on('pageerror', error => errors.push(error.message));
+    await page.addInitScript(failure => {
+      Object.defineProperty(globalThis, 'crypto', {
+        configurable: true,
+        value: failure === 'unavailable' ? undefined : {
+          subtle: {
+            digest() {
+              if (failure === 'throws') throw new Error('Digest unavailable');
+              return Promise.reject(new Error('Digest unavailable'));
+            },
+          },
+        },
+      });
+    }, mode);
+    await page.goto('/');
+    await expect(page.locator('#auth-gate')).toBeVisible();
+    for (const input of ['incorrect-auth-input', password!]) {
+      await enterPassword(page, input);
+      await page.locator('#class-password').press('Enter');
+      await expect(page.locator('#auth-message')).toHaveText(
+        'Trình duyệt không hỗ trợ kiểm tra mật khẩu an toàn. Hãy mở trang bằng HTTPS trên trình duyệt mới hơn.',
+      );
+      await expect(page.locator('#unlock-session')).toBeEnabled();
+      await expect(page.locator('#auth-gate')).toBeVisible();
+      await expect(page.locator('#module-host[data-state="ready"]')).toHaveCount(0);
+      expect(await page.evaluate(() => Object.keys(sessionStorage).filter(key => key.includes('unlocked')))).toEqual([]);
+    }
+    expect(errors).toEqual([]);
+  });
+}
 
 test('all seven module entries and all fifteen lesson choices remain reachable with interactive textbook, homework, listening, vocabulary, review and progress', async ({ page }) => {
   await useExistingTabSession(page);
