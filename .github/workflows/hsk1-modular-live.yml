@@ -48,11 +48,18 @@ jobs:
       - run: npm run test:release -- --project=${{ matrix.browser }}
         env:
           HSK_LIVE_URL: https://nhiennhientran.github.io/hsk-hub/new-hsk1/hsk1/
-          HSK_EXPECTED_COMMIT: c3a73654fbd76489be2eb1df01b692f4396003f8
+          HSK_EXPECTED_COMMIT: 3b1b21ec242fead39d4b88247f0c8f18ae9f7ec6
+          HSK_EXPECTED_BUILD_ID: 08029843450f18e6e149f2c1c6d05f198934f630c4a8302eb9a2b8e0e31efed5
+          HSK_EXPECTED_RECOVERY_COMMIT: a74bd15736e894e1640a4a1848942f4cbc7ca9f8
+      - name: Capture stable mobile and desktop faces from the actual deployment
+        run: node docs/mixed-live-screens.mjs
+        env:
+          HSK_BROWSER: ${{ matrix.browser }}
+          HSK_LIVE_URL: https://nhiennhientran.github.io/hsk-hub/new-hsk1/hsk1/
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: simplified-live-${{ matrix.browser }}-evidence
+          name: mixed-cards-live-${{ matrix.browser }}-evidence
           path: |
             hsk1-app/.repro-output/
             hsk1-app/test-results/

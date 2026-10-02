@@ -1,0 +1,67 @@
+{
+  "status": "published-awaiting-live-verification",
+  "productionCommit": "caeac03798b91095f6fb0916e3c0bfd908381f45",
+  "sourceCommit": "3b1b21ec242fead39d4b88247f0c8f18ae9f7ec6",
+  "localSourceCommit": "db152b27a4cf872f1f9003304ec9b96cb0ebabaa",
+  "sourceTree": "655ccc3aa782f270e1b89391c7f9816391731eb8",
+  "productionTree": "c4711eaf5707ba21a2aff705ed7e507b4474c127",
+  "recoveryCommit": "a74bd15736e894e1640a4a1848942f4cbc7ca9f8",
+  "backupBranch": "backup/hsk1-pre-mixed-cards-20261002",
+  "buildId": "08029843450f18e6e149f2c1c6d05f198934f630c4a8302eb9a2b8e0e31efed5",
+  "frozenArtifactId": 11227629348,
+  "frozenArtifactSHA256": "7bbe7870df9b7de483e1e387213a2194d8215a3c09952f226671327b75ba1fb0",
+  "frozenFiles": 414,
+  "frozenBytes": 31160154,
+  "runtimeRebuiltForPublication": false,
+  "outsideTargetFilesUnchanged": 591,
+  "removedStaleManagedAssets": 18,
+  "previewRunId": 37013001853,
+  "previewRunURL": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37013001853",
+  "unitTests": 324,
+  "chromium": {
+    "fullBrowser": 142,
+    "strictRelease": 5,
+    "unexpected": 0,
+    "skipped": 0,
+    "flaky": 0
+  },
+  "webkit": {
+    "fullBrowser": 142,
+    "strictRelease": 5
+  },
+  "visual": {
+    "screenshots": 24,
+    "engines": [
+      "chromium",
+      "webkit"
+    ],
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "result": "passed"
+  },
+  "checks": [
+    "TypeScript",
+    "catalog/fixtures/index/homework30 corpus",
+    "private source audit and public artifact safety",
+    "93 original audio hashes",
+    "267 Hanzi assets",
+    "7 release architecture checks",
+    "all-site JavaScript syntax",
+    "full Site QA including 236 grammar points and HSK2–4 regression"
+  ],
+  "authorization": {
+    "directProductionReplacement": "2026-10-02T12:54:12Z",
+    "noAdditionalPreviewApproval": "2026-10-02T12:54:29Z",
+    "publicReleaseManifestExplicitApproval": "2026-10-02T13:37:16Z"
+  },
+  "url": "https://nhiennhientran.github.io/hsk-hub/new-hsk1/hsk1/",
+  "limitations": [
+    "No physical iPhone/Android certification",
+    "No system IME certification or teacher final language signoff",
+    "No production rollback drill; preserve backups before any downgrade"
+  ]
+}
