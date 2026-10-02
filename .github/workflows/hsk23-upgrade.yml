@@ -110,6 +110,8 @@ jobs:
       - name: Install browser and Chinese fonts
         run: npx playwright install --with-deps ${{ matrix.browser }} && sudo apt-get install -y fonts-noto-cjk
       - name: Test the same frozen bytes without rebuilding
+        id: raw_course_tests
+        continue-on-error: true
         run: npm run test:browser -- --project=${{ matrix.browser }}
       - name: Assemble the same frozen bytes onto the protected production baseline
         run: |
@@ -120,12 +122,23 @@ jobs:
           node ../../tools/site-qa.mjs > ../.repro-output/full-site-qa.json
           node qa/grammar-236-audit.mjs > ../.repro-output/protected-grammar-236.json
       - name: Test frozen entries, complete portal and protected course regressions
+        id: packaged_tests
+        continue-on-error: true
         env:
           HSK_PACKAGE_ROOT: release-site
         run: npm run test:browser -- --config=playwright.package.config.ts --project=${{ matrix.browser }}
       - name: Verify HSK1 native word, line, sequence, seek and interruption audio
+        id: hsk1_media_tests
+        continue-on-error: true
         working-directory: hsk1-app
         run: npm run test:smoke -- tests/browser/media.spec.ts --project=${{ matrix.browser }}
+      - name: Require every independent browser stage to pass
+        if: always()
+        env:
+          RAW_RESULT: ${{ steps.raw_course_tests.outcome }}
+          PACKAGE_RESULT: ${{ steps.packaged_tests.outcome }}
+          HSK1_RESULT: ${{ steps.hsk1_media_tests.outcome }}
+        run: test "$RAW_RESULT" = success && test "$PACKAGE_RESULT" = success && test "$HSK1_RESULT" = success
       - uses: actions/upload-artifact@v4
         if: always()
         with:

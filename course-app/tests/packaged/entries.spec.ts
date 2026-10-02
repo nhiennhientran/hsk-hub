@@ -30,3 +30,16 @@ for(const width of [320,390,768,1440])test(`assembled portal and final HSK3 home
  await page.setViewportSize({width,height:900});await open(page,3);await page.goto('./index.html');await legacyGate(page);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`test-results-package/portal-${width}.png`,fullPage:true});
  await page.goto('./new-hsk3/hsk3/#view=homework&lesson=18&part=translationChoice');await expect(page.locator('#assignment fieldset')).toHaveCount(5);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`test-results-package/hsk3-homework-${width}.png`,fullPage:true});
 });
+
+test('protected production HSK1 original audio still plays, pauses, resumes and stops on navigation',async({page})=>{
+ await page.addInitScript(()=>{const native=HTMLMediaElement.prototype.play;HTMLMediaElement.prototype.play=function(){(window as any).__protectedAudio=this;return native.call(this)}});
+ await open(page,2);await page.goto('./new-hsk1/hsk1/#/textbook?lesson=1&section=text');
+ await expect(page.locator('#module-host')).toHaveAttribute('data-state','ready');await expect(page.locator('#module-host')).toHaveAttribute('data-feature','textbook');
+ await page.locator('[data-scene-audio]').first().click();await expect(page.locator('#audio-player')).toHaveAttribute('data-state','playing');
+ const snapshot=()=>page.evaluate(()=>{const a=(window as any).__protectedAudio as HTMLMediaElement|undefined;return{src:a?.currentSrc,time:a?.currentTime??0,duration:a?.duration??0,paused:a?.paused??true}});
+ await expect.poll(async()=>(await snapshot()).time).toBeGreaterThan(.035);const first=await snapshot();expect(first.src).toContain('/new-hsk1/hsk1/course-assets/audio/1-1.mp3');expect(first.duration).toBeGreaterThan(0);expect(first.paused).toBe(false);
+ await page.locator('#audio-pause').click();await expect(page.locator('#audio-player')).toHaveAttribute('data-state','paused');const paused=await snapshot();expect(paused.paused).toBe(true);
+ await page.locator('#audio-resume').click();await expect(page.locator('#audio-player')).toHaveAttribute('data-state','playing');await expect.poll(async()=>(await snapshot()).time).toBeGreaterThan(paused.time+.035);
+ await page.locator('#feature-nav [data-feature=home]').click();await expect(page.locator('#module-host')).toHaveAttribute('data-feature','home');expect((await snapshot()).paused).toBe(true);await expect(page.locator('#audio-player')).toHaveCount(0);
+ await test.info().attach('protected-hsk1-native-media.json',{body:JSON.stringify({first,paused,afterNavigation:await snapshot()}),contentType:'application/json'});
+});
