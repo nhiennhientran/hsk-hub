@@ -42,6 +42,12 @@ test('denied localStorage reads preserve the inaccessible original and keep a ne
   await expect(page.locator('#retry-homework-save')).toBeDisabled();
   const backup = await download(page);
   expect(backup.data.homework.lessons['10'].choice.draft[question.id]).toBe(0);
+  const pendingExit = page.waitForEvent('dialog');
+  const failedRefresh = page.reload().catch(error => String(error));
+  const exit = await pendingExit; expect(exit.type()).toBe('beforeunload');
+  await exit.dismiss(); await failedRefresh;
+  await expect(page.locator(`input[data-answer-id="${question.id}"][value="0"]`)).toBeChecked();
+  await expect(page.locator('#homework-save-status')).toHaveAttribute('data-state', 'unavailable');
   await page.locator('#feature-nav a[data-feature="progress"]').click(); await ready(page, 'progress');
   await page.locator('#open-data-manager').click();
   await expect(page.locator('#data-status')).toHaveAttribute('data-state', 'unavailable');
@@ -89,11 +95,33 @@ test('two actual homework tabs serialize simultaneous edits without silently ove
   expect(await other.evaluate(key => localStorage.getItem(key), key)).toBe(JSON.stringify(stored));
 });
 
-test('an immediate refresh after editing preserves the final answer without waiting for the debounce status', async ({ page }) => {
+test('an immediate refresh during a held save warns before discarding, retains the final answer on cancel, then reloads after saving', async ({ page }) => {
   await page.addInitScript(auth => sessionStorage.setItem(auth, '1'), auth);
   await page.goto('/#/homework?lesson=10&part=choice'); await ready(page);
-  await page.locator(`input[data-answer-id="${question.id}"][value="2"]`).check();
+  await page.evaluate(async name => {
+    const state = window as unknown as { __release?: () => void; __held?: Promise<unknown> };
+    let entered!: () => void; const started = new Promise<void>(resolve => { entered = resolve; });
+    state.__held = navigator.locks.request(name, async () => { const held = new Promise<void>(resolve => { state.__release = resolve; }); entered(); await held; });
+    await started;
+  }, lock);
+  try {
+    await page.locator(`input[data-answer-id="${question.id}"][value="2"]`).check();
+    await page.locator('#homework-module').evaluate(node => { (node as HTMLElement).dataset.exitIdentity = 'retained'; });
+    const pending = page.waitForEvent('dialog');
+    const refresh = page.reload().catch(error => String(error));
+    const dialog = await pending; expect(dialog.type()).toBe('beforeunload');
+    await dialog.dismiss(); await refresh;
+    await expect(page.locator('#homework-module')).toHaveAttribute('data-exit-identity', 'retained');
+    await expect(page.locator(`input[data-answer-id="${question.id}"][value="2"]`)).toBeChecked();
+    expect(await page.evaluate(key => localStorage.getItem(key), key)).toBeNull();
+    expect((await download(page)).data.homework.lessons['10'].choice.draft[question.id]).toBe(2);
+  } finally {
+    await page.evaluate(async () => { const state = window as unknown as { __release?: () => void; __held?: Promise<unknown> }; state.__release?.(); await state.__held; });
+  }
+  await expect(page.locator('#homework-save-status')).toHaveAttribute('data-state', 'saved');
+  let extraDialogs = 0; page.on('dialog', dialog => { extraDialogs++; void dialog.dismiss(); });
   await page.reload(); await ready(page);
+  expect(extraDialogs).toBe(0);
   await expect(page.locator(`input[data-answer-id="${question.id}"][value="2"]`)).toBeChecked();
   await expect(page.locator('#homework-save-status')).toHaveAttribute('data-state', 'saved');
 });

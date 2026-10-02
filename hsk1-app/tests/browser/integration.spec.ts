@@ -518,6 +518,8 @@ test('keyboard activation and synthetic composition/paste preserve exact multili
   await keyboardActivate(page.locator('#listening-none'), 'Space');
   await keyboardActivate(page.locator('[data-listening-lesson="10"]'), 'Space');
   await expect(page.locator('[data-listening-lesson="10"]')).toBeChecked();
+  if (await page.locator('#listening-shuffle').isChecked()) await keyboardActivate(page.locator('#listening-shuffle'), 'Space');
+  await expect(page.locator('#listening-shuffle')).not.toBeChecked();
   await keyboardActivate(page.locator('#listening-start'));
   await expect(page.locator('#listening-question')).toHaveAttribute('data-question-id', listeningQuestions[0]!.id);
   await keyboardActivate(page.locator(`input[data-option-index="${listeningQuestions[0]!.answer}"]`), 'Space');
@@ -548,4 +550,40 @@ test('keyboard activation and synthetic composition/paste preserve exact multili
   await testInfo.attach('synthetic-input-scope.txt', { body: Buffer.from('Keyboard activation, scripted ClipboardEvent/InputEvent and CompositionEvent coverage only. Real phone keyboard, physical Chinese IME, touch and human language review remain manual acceptance.'), contentType: 'text/plain' });
   await keyboardActivate(page.locator('#close-receipt'));
   await expect(page.locator('#receipt-latest')).toBeFocused();
+});
+
+test('exit protection captures an unreported composition tail before refresh, preserving it after cancel and confirmed save', async ({ page }) => {
+  await authenticate(page, unlockedData());
+  await page.goto('/#/homework?lesson=10&part=translation'); await ready(page, 'homework', 'translation');
+  const id = lesson.translation[0]!.id;
+  const textarea = page.locator(`textarea[data-answer-id="${id}"]`);
+  await textarea.fill('已保存的前文'); await savedData(page, 'homework');
+  const exact = '已保存的前文\n尚未发出input事件的中文尾字：字';
+  await textarea.evaluate((node, value) => {
+    node.dispatchEvent(new CompositionEvent('compositionstart', { bubbles: true }));
+    (node as HTMLTextAreaElement).value = value;
+  }, exact);
+  const pending = page.waitForEvent('dialog');
+  const refresh = page.reload().catch(error => String(error));
+  const dialog = await pending; expect(dialog.type()).toBe('beforeunload');
+  await dialog.dismiss(); await refresh;
+  await expect(textarea).toHaveValue(exact);
+  await savedData(page, 'homework');
+  await page.reload(); await ready(page, 'homework', 'translation');
+  await expect(textarea).toHaveValue(exact);
+  expect((await savedData(page, 'homework')).homework.lessons['10']!.translation!.latest).toBeNull();
+  // Even rejected over-limit composition remains visible only in the DOM and must not silently disappear.
+  const oversized = '字'.repeat(homework.MAX_TRANSLATION_LENGTH + 1);
+  await textarea.evaluate((node, value) => {
+    node.dispatchEvent(new CompositionEvent('compositionstart', { bubbles: true }));
+    (node as HTMLTextAreaElement).value = value;
+    node.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertCompositionText', isComposing: true }));
+  }, oversized);
+  const invalidExit = page.waitForEvent('dialog');
+  const invalidRefresh = page.reload().catch(error => String(error));
+  const invalidDialog = await invalidExit; expect(invalidDialog.type()).toBe('beforeunload');
+  await invalidDialog.dismiss(); await invalidRefresh;
+  await expect(textarea).toHaveValue(oversized);
+  expect((await savedData(page, 'homework')).homework.lessons['10']!.translation!.draft[id]).toBe(exact);
+  await expect(page.locator('#homework-message')).toContainText('vượt giới hạn');
 });

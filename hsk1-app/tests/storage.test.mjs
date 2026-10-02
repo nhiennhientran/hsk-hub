@@ -73,6 +73,46 @@ function makeStore(storage, overrides = {}) {
 
 function exportedData(store) { return JSON.parse(store.exportBackup()).data; }
 
+test('dirty state is transient, survives a queued write, and clears only after confirmed save or explicit reload', async () => {
+  const storage = memoryStorage();
+  const held = heldLock();
+  const store = makeStore(storage, {lock: held.lock});
+  assert.equal(store.snapshot().hasUnsavedChanges, false);
+  assert.throws(() => store.edit(data => { data.schema = 99; }), /Invalid learning schema/);
+  assert.equal(store.snapshot().hasUnsavedChanges, false);
+  store.edit(data => { data.homework.draft.q3 = '尚未确认保存的新稿'; });
+  assert.equal(store.snapshot().hasUnsavedChanges, true);
+  const pending = store.save();
+  await held.entered;
+  assert.equal(store.snapshot().status, 'saving');
+  assert.equal(store.snapshot().hasUnsavedChanges, true);
+  held.release();
+  assert.deepEqual(await pending, {ok: true, code: 'saved'});
+  assert.equal(store.snapshot().hasUnsavedChanges, false);
+  assert.equal('hasUnsavedChanges' in JSON.parse(storage.values.get(STORAGE_KEY)), false);
+  assert.equal('hasUnsavedChanges' in JSON.parse(store.exportBackup()), false);
+  store.edit(data => { data.homework.draft.q3 = '明确放弃的草稿'; });
+  assert.equal(store.snapshot().hasUnsavedChanges, true);
+  store.reloadDiscardingDraft();
+  assert.equal(store.snapshot().hasUnsavedChanges, false);
+  assert.equal(store.snapshot().data.homework.draft.q3, '尚未确认保存的新稿');
+});
+
+test('a clean external conflict is not dirty, but a conflicting local edit remains dirty after failed save', async () => {
+  const storage = memoryStorage();
+  const clean = makeStore(storage), edited = makeStore(storage);
+  edited.edit(data => { data.homework.draft.q3 = '本标签页尚未保存'; });
+  storage.values.set(STORAGE_KEY, envelope(learningData('other tab'), null, 8));
+  clean.observeExternalChange(); edited.observeExternalChange();
+  assert.equal(clean.snapshot().status, 'conflict');
+  assert.equal(clean.snapshot().hasUnsavedChanges, false);
+  assert.equal(edited.snapshot().hasUnsavedChanges, true);
+  assert.deepEqual(await edited.save(), {ok: false, code: 'conflict'});
+  assert.equal(edited.snapshot().hasUnsavedChanges, true);
+  edited.reloadDiscardingDraft();
+  assert.equal(edited.snapshot().hasUnsavedChanges, false);
+});
+
 test('replacement and recovery commit in one write, never nest, and restore submitted A with draft B', async () => {
   const original = learningData();
   const imported = learningData('first import');
@@ -112,6 +152,7 @@ test('quota leaves original raw intact and exports the actual unsaved multiline 
   assert.equal(storage.values.get(STORAGE_KEY), raw);
   assert.equal(storage.writes.length, 1, 'no fallback write may discard recovery to force a save');
   assert.equal(store.snapshot().status, 'unsaved');
+  assert.equal(store.snapshot().hasUnsavedChanges, true);
   assert.equal(exportedData(store).homework.draft.q3, '未保存的新草稿 B\n不要丢失我的输入。');
   assert.deepEqual(makeStore(memoryStorage(raw)).snapshot().data, learningData());
 });
@@ -137,6 +178,7 @@ test('read access denial and missing Web Locks prevent writes but allow exportin
   unreadable.edit(data => { data.homework.draft.q3 = '只在内存中的稿\n可以备份。'; });
   assert.deepEqual(await unreadable.save(), {ok: false, code: 'unavailable'});
   assert.equal(unreadable.snapshot().status, 'unavailable');
+  assert.equal(unreadable.snapshot().hasUnsavedChanges, true);
   assert.equal(exportedData(unreadable).homework.draft.q3, '只在内存中的稿\n可以备份。');
   assert.deepEqual(denied.writes, []);
 

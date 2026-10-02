@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { createStore, STORAGE_KEY } from '../src/services/storage/index.ts';
 import { createCompatibility } from '../src/services/storage/compatibility.ts';
-import { createLearningSession } from '../src/services/learning/session.ts';
+import { bindUnsavedExit, createLearningSession } from '../src/services/learning/session.ts';
 
 const json = name => JSON.parse(readFileSync(new URL(`../content/${name}.json`, import.meta.url), 'utf8'));
 const bank = json('stage2-bank');
@@ -62,6 +62,60 @@ function makeSession(options = {}) {
 }
 
 const persisted = setup => JSON.parse(setup.values.get(STORAGE_KEY)).data.homework.lessons['1'].translation.draft[qid];
+
+test('beforeunload protects an unsaved draft while its normal locked flush is pending, and saved state does not prompt', async () => {
+  const held = heldLock();
+  const setup = makeSession({ lock: held.lock });
+  const target = new EventTarget();
+  let flushes = 0;
+  const cleanup = bindUnsavedExit(target, { store: setup.store, flush() { flushes++; return setup.session.flush(); } });
+  const emptyExit = new Event('beforeunload', { cancelable: true });
+  target.dispatchEvent(emptyExit);
+  assert.equal(emptyExit.defaultPrevented, false);
+  assert.equal(flushes, 0);
+  setup.edit('立即刷新之前的最后稿');
+  const dirtyExit = new Event('beforeunload', { cancelable: true });
+  target.dispatchEvent(dirtyExit);
+  assert.equal(dirtyExit.defaultPrevented, true);
+  assert.equal(flushes, 1);
+  assert.equal(held.calls, 1);
+  assert.equal(setup.clock.count, 0);
+  assert.equal(setup.writes.length, 0, 'exit protection must never bypass the queued Web Lock');
+  assert.equal(setup.store.snapshot().hasUnsavedChanges, true);
+  held.release();
+  await setup.session.flush();
+  assert.equal(persisted(setup), '立即刷新之前的最后稿');
+  const savedExit = new Event('beforeunload', { cancelable: true });
+  target.dispatchEvent(savedExit);
+  assert.equal(savedExit.defaultPrevented, false);
+  assert.equal(flushes, 1);
+  cleanup(); cleanup();
+  setup.edit('移除保护监听之后的草稿');
+  const disposedExit = new Event('beforeunload', { cancelable: true });
+  target.dispatchEvent(disposedExit);
+  assert.equal(disposedExit.defaultPrevented, false);
+  assert.equal(flushes, 1, 'cleanup must detach the listener');
+  await setup.session.dispose();
+});
+
+test('failed saves keep exit protection active and an explicit discard reload clears it', async () => {
+  const setup = makeSession();
+  const target = new EventTarget();
+  const cleanup = bindUnsavedExit(target, setup.session);
+  setup.fail(true); setup.edit('容量不足但仍需保护的稿');
+  assert.deepEqual(await setup.session.flush(), { ok: false, code: 'quota' });
+  const failedExit = new Event('beforeunload', { cancelable: true });
+  target.dispatchEvent(failedExit);
+  assert.equal(failedExit.defaultPrevented, true);
+  assert.deepEqual(await setup.session.flush(), { ok: false, code: 'quota' });
+  assert.equal(setup.store.snapshot().hasUnsavedChanges, true);
+  assert.equal(JSON.parse(setup.store.exportBackup()).data.homework.lessons['1'].translation.draft[qid], '容量不足但仍需保护的稿');
+  setup.store.reloadDiscardingDraft();
+  const discardedExit = new Event('beforeunload', { cancelable: true });
+  target.dispatchEvent(discardedExit);
+  assert.equal(discardedExit.defaultPrevented, false);
+  cleanup(); await setup.session.dispose();
+});
 
 test('opening or flushing a clean app does not create a learning record', async () => {
   const setup = makeSession();

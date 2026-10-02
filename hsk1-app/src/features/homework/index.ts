@@ -92,6 +92,12 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       }
       for (const collect of textareaCollectors.values()) collect();
     };
+    window.addEventListener('beforeunload', event => {
+      collectDraft();
+      // An oversized composition may still exist only in the DOM because the
+      // domain correctly rejected it. Never truncate or silently discard it.
+      if (invalid.size) { event.preventDefault(); event.returnValue = ''; }
+    }, { capture: true, signal: lifetime.signal });
     const score = (correct: number | null, total: number) => `${correct} / ${total} (${total ? Math.round((correct ?? 0) / total * 100) : 0}%)`;
     function updateSummary(): void {
       const model = homework.read();

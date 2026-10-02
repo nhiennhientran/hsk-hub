@@ -43,6 +43,7 @@ export function createStore<T>(options: StoreOptions<T>) {
   let recovery: Recovery<T> | null = null;
   let blocked = false;
   let disposed = false;
+  let hasUnsavedChanges = false;
   let editVersion = 0;
   let nextPreview = 0;
   const listeners = new Set<() => void>();
@@ -71,7 +72,7 @@ export function createStore<T>(options: StoreOptions<T>) {
   }
   function load(): void {
     editVersion++;
-    data = options.blank(); rev = 0; updatedAt = null; recovery = null; issue = null; blocked = false;
+    data = options.blank(); rev = 0; updatedAt = null; recovery = null; issue = null; blocked = false; hasUnsavedChanges = false;
     try { expectedRaw = options.storage.getItem(STORAGE_KEY); }
     catch { expectedRaw = null; blocked = true; status = 'unavailable'; issue = 'Không đọc được bộ nhớ của trình duyệt. Bản nháp chỉ ở trong tab này.'; publish(); return; }
     if (expectedRaw === null) { status = 'empty'; publish(); return; }
@@ -132,7 +133,7 @@ export function createStore<T>(options: StoreOptions<T>) {
       return storageFailure(writeError ?? new Error('Write was not retained.'));
     }
     expectedRaw = raw; data = envelope.data; rev = envelope.revision; updatedAt = stamp;
-    recovery = previous; editVersion++; status = 'saved'; issue = null;
+    recovery = previous; editVersion++; status = 'saved'; issue = null; hasUnsavedChanges = false;
     publish(); return result(true, 'saved');
   }
   async function locked(action: () => StoreResult, signal?: AbortSignal): Promise<StoreResult> {
@@ -167,11 +168,11 @@ export function createStore<T>(options: StoreOptions<T>) {
   load();
   return {
     snapshot() { return { data: copy(data), status, revision: rev, updatedAt, hasRecovery: recovery !== null,
-      canWrite: !!options.lock && !blocked && !disposed, issue }; },
+      canWrite: !!options.lock && !blocked && !disposed, hasUnsavedChanges, issue }; },
     subscribe(listener: () => void) { listeners.add(listener); return () => { listeners.delete(listener); }; },
     edit(mutator: (draft: T) => void): void {
       if (disposed) throw new Error('Trang dữ liệu đã đóng.');
-      const draft = copy(data); mutator(draft); data = validate(draft); editVersion++;
+      const draft = copy(data); mutator(draft); data = validate(draft); editVersion++; hasUnsavedChanges = true;
       if (!blocked && status !== 'conflict') { status = 'unsaved'; issue = null; }
       publish();
     },

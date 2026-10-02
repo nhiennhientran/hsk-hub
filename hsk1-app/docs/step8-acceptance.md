@@ -39,6 +39,15 @@
 
 本地浏览器已有socket权限限制；本步一次聚焦启动还遇到固定Chromium binary缺失，未进入页面后停止，没有绕过权限或把启动失败算功能通过。CI制品包含 `.repro-output/step8-browser.json` 与截图；每个最终job的pass/fail/skipped/flaky和截图检查在完成回复及本步验证记录核对，不继承第7步结果。
 
+## 首轮CI发现与修复
+
+首轮 `b5b4902201f797462d3fae7b1f3f5b8855056a63` 的[CI 36957734726](https://github.com/nhiennhientran/hsk-hub/actions/runs/36957734726)两引擎各71通过/2失败/0跳过/0flaky，191单元和全部构建检查通过。完整L10跨模块恢复和全部四宽度长文场景通过，原音、全册题卡及旧回归未失败。
+
+1. 新即时刷新测试真实复现：输入后300ms合并保存尚未完成，pagehide中的异步Web Lock写入不能保证在浏览器关闭执行环境前完成，最后选择丢失。修复用瞬态hasUnsavedChanges区分本地脏稿与单纯外部冲突；保存确认成功/明确读回才清脏标记。beforeunload在有未存稿时启动正常flush并触发浏览器离开确认；取消后保留内存稿/导出，锁释放并保存后可正常刷新。作业capture阶段先读取仍在DOM中的中文组合尾字，再由session判断脏稿。没有新增持久化键/格式、绕过Web Lock或每按键同步写盘，300ms合并保存保持。新增真实浏览器持锁→刷新确认→取消→导出→保存→刷新及未上报composition尾字回归。
+2. 键盘场景错误假定默认听力不随机，实际默认shuffle为true。测试现在用键盘明确关闭随机后核对固定首题；不改应用默认或移除键盘验证。
+
+离开保护不是同步保存承诺：用户明确选择离开可能丢失尚未保存的更改；beforeunload依赖浏览器及用户交互，并非所有移动系统杀进程/断电都会触发。visibility/pagehide flush仍为尽力保存。保存状态未确认时应继续停留或下载备份；本步不宣称对强制结束进程具备持久化保证。
+
 ## 未执行和第9步边界
 
 实体iPhone/Safari、Android、系统中文IME/软键盘、系统中文voice试听、逐题真人耳听及新语言终审没有可用真实执行证据，保持未执行。Playwright WebKit不等于实体Safari，viewport/composition/paste模拟不等于物理手机与系统输入法测试。93原轨哈希、75题native播放和字段校验也不能替代人耳与语言审校。

@@ -59,6 +59,19 @@ export function createLearningSession(options: SessionOptions) {
 }
 export type LearningSession = ReturnType<typeof createLearningSession>;
 
+/** Unload cannot await a Web Lock. Keep the draft unless the learner chooses to leave. */
+export function bindUnsavedExit(target: EventTarget, session: Pick<LearningSession, 'store' | 'flush'>): () => void {
+  const beforeUnload = (event: Event) => {
+    if (!session.store.snapshot().hasUnsavedChanges) return;
+    void session.flush();
+    event.preventDefault();
+    (event as BeforeUnloadEvent).returnValue = '';
+  };
+  // A feature's capture listener may collect its final DOM/IME draft first.
+  target.addEventListener('beforeunload', beforeUnload);
+  return () => target.removeEventListener('beforeunload', beforeUnload);
+}
+
 export async function loadLearningSession(signal: AbortSignal): Promise<LearningSession> {
   const compatibility = await loadCompatibility(signal);
   signal.throwIfAborted();
@@ -75,7 +88,8 @@ export async function loadLearningSession(signal: AbortSignal): Promise<Learning
     if (event.key === STORAGE_KEY || event.key === null) session.store.observeExternalChange();
   }, { signal: events.signal });
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') void session.flush(); }, { signal: events.signal });
+  const removeExitProtection = bindUnsavedExit(window, session);
   const dispose = session.dispose;
-  session.dispose = () => { events.abort(); return dispose(); };
+  session.dispose = () => { events.abort(); removeExitProtection(); return dispose(); };
   return session;
 }
