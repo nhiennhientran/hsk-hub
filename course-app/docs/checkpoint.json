@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T17:42:00Z",
+  "updatedAt": "2026-10-02T17:58:00Z",
   "phases": [
     {
       "phase": 1,
@@ -19,21 +19,21 @@
     {
       "phase": 3,
       "title": "Shared course engine and isolated storage",
-      "status": "in_progress",
+      "status": "complete",
       "evidence": {
-        "ciRun": 37037498657,
-        "remoteSource": "31ddbcd50bbc0cacb28370afa17eb51d39a23001",
+        "ciRun": 37042775656,
+        "remoteSource": "eef81e65f128bf8baf9c093d602034953686db28",
         "unitTests": {
-          "hsk1": 329,
+          "hsk1": 333,
           "newCourse": 12
         },
         "browsers": {
           "chromium": {
-            "pilot": 15,
+            "pilot": 19,
             "hsk1NativeMedia": 6
           },
           "webkit": {
-            "pilot": 15,
+            "pilot": 19,
             "hsk1NativeMedia": 6
           }
         },
@@ -43,15 +43,19 @@
           768,
           1440
         ],
-        "visualScreensInspected": 8
-      },
-      "remaining": "Real WebKit positive duration arriving only on timeupdate, rapid redo race and emergency backup accessibility fixes require stronger browser acceptance."
+        "visualScreensInspected": 8,
+        "strongRegressions": [
+          "native-playing state after silent positive duration",
+          "controlled delayed-save redo",
+          "emergency unsaved draft export"
+        ]
+      }
     },
     {
       "phase": 4,
       "title": "HSK2 lessons 1–3 pilot",
-      "status": "in_progress",
-      "content": "Lessons1–3 independently reviewed; browser gate pending"
+      "status": "complete",
+      "content": "Lessons1–3 independently reviewed; all90 homework exercised, isolated manual receipts and independent listening; same frozen artifact passed both browsers."
     },
     {
       "phase": 5,
@@ -63,12 +67,13 @@
       "phase": 6,
       "title": "HSK2 lessons 10–15",
       "status": "in_progress",
-      "content": "Lesson10 authored and independent review underway; lessons11–15 author assigned."
+      "content": "Lesson10 independently reviewed;11–12 authoring underway."
     },
     {
       "phase": 7,
       "title": "HSK3 lessons 1–3 pilot",
-      "status": "pending"
+      "status": "pending",
+      "content": "Lesson1 authored from PDF13–21 and answers1–2; independent review pending."
     },
     {
       "phase": 8,
@@ -97,15 +102,15 @@
     }
   ],
   "limitations": [],
-  "currentWork": "Fix and verify native metadata event handling and asynchronous redo; content10 independent review plus11–15 authoring.",
+  "currentWork": "Expand independent content checkpoints to reviewedlessons4–10; author11–15 and HSK3pilot. Full33-lesson acceptance remains open.",
   "ci": {
-    "latestSourceCommit": "5af975d866bd8703f250bc1a4b65ac7187545003",
+    "latestSourceCommit": "eef81e65f128bf8baf9c093d602034953686db28",
     "productionUnchanged": true,
     "previousSetupFailures": [
       "37034491695 lockfile",
       "37035113663 shallowhistory"
     ],
-    "latestRun": 37039693562,
-    "latestResult": "Chromium17/18 rapid-redo race; WebKit17/18 native playing but UI loading;333 local HSK1 unit tests after fixes,12 shared-course tests."
+    "latestRun": 37042775656,
+    "latestResult": "Green: both engines19/19 course tests plus6/6 HSK1 native media;333+12 unit tests;8 new visual views inspected acrossfour widths."
   }
 }
