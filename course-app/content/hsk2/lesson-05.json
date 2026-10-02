@@ -19,17 +19,16 @@
     "sourceVisual": true,
     "vietnamese": true,
     "pinyin": true,
-    "reviewer": "author-reviewed; independent reviewer pending",
+    "reviewer": "independent AI source, language and assessment review completed; not native-speaker or qualified-teacher certification",
     "notes": [
-      "Chinese source content checked against all lesson page images; source pinyin retained and editorial pinyin checked.",
-      "All Vietnamese text is an editorial translation, not printed textbook content.",
-      "Original homework and independent listening questions are supplemental.",
-      "Final independent source, Vietnamese, pinyin, audio and pedagogical review is pending.",
-      "Source textbook PDF pages 52–60 and answer-key pages 6–7 were visually inspected.",
-      "Vocabulary has 17 numbered source entries plus the separately printed 下面 headword; 快 and 跟 each have two source POS senses represented separately (20 records).",
-      "Original audio labels and printed-text semantic support checked; full human-equivalent audio listening and qualified native/teacher certification have not been completed.",
-      "The culture video 5-1 is not included in supplied assets.",
-      "All eight original local MP3s SHA256-match the ingestion manifest and pass full ffmpeg decode. Automated faster-whisper-small-int8 transcripts were compared with the printed text/list; expected name/homophone/erhua errors do not alter task semantic support. This is not human listening certification."
+      "Independent AI reviewer opened every textbook PDF page 52–60 (printed 37–45) and the corresponding answer-PDF pages 6–7; OCR was not substituted for actual pixel inspection.",
+      "Chinese texts, speakers, vocabulary senses, grammar examples, source exercises and original assessments reviewed. Source pinyin retained after pixel corrections; grammar-example pinyin is editorial.",
+      "All Vietnamese text is an editorial translation, not printed textbook content. Image descriptions and original homework/listening tasks are labelled supplemental.",
+      "All eight local original MP3s independently SHA256-match the ingestion manifest and pass full ffmpeg decode. All eight faster-whisper-small-int8 transcripts were read against source text and word-list pixels, supporting track identity, coverage and listening-question semantics.",
+      "ASR homophones, proper-name spellings, traditional script and missed erhua are recognition limitations, not source corrections. No full human/native listening or pronunciation certification is claimed.",
+      "Thirty homework questions retain the 10/5/5/5/5 split; ordering has 5–7 distinct tokens and explicit constraints where needed; five manual-writing items contain no answers, models or target-Chinese hints. Four additional listening questions remain separate.",
+      "Vocabulary comprises 17 numbered entries plus printed 下面, with separate 快 and 跟 POS senses: 20 records. Culture video 5-1 is absent from supplied assets; lesson MP3 5-1 is not presented as that video.",
+      "The printed grammar example uses 起来, not 起床; its Chinese and editorial pinyin were corrected."
     ]
   },
   "objectives": [
@@ -137,7 +136,7 @@
       },
       "context": {
         "zh": "在宾馆楼下，安妮给白家月打电话。",
-        "vi": "Dưới tầng trệt khách sạn, Annie gọi điện cho Bạch Gia Nguyệt.",
+        "vi": "Ở tầng dưới của khách sạn, Annie gọi điện cho Bạch Gia Nguyệt.",
         "source": {
           "pdfPage": 53,
           "printedPage": 38,
@@ -1093,7 +1092,7 @@
         },
         {
           "zh": "家月到下边了，你下去接她吧。（说话人在上边，听话人在上边）",
-          "vi": "Gia Nguyệt đã đến dưới rồi, bạn xuống đón cô ấy đi. (Cả người nói và người nghe đều ở trên.)",
+          "vi": "Gia Nguyệt đã đến tầng dưới rồi, bạn xuống đón cô ấy đi. (Cả người nói và người nghe đều ở trên.)",
           "py": "Jiāyuè dào xiàbian le, nǐ xiàqù jiē tā ba. (Shuōhuàrén zài shàngbian, tīnghuàrén zài shàngbian.)",
           "source": {
             "pdfPage": 54,
@@ -1148,7 +1147,7 @@
         },
         {
           "zh": "你起来吧，让小妹妹坐这儿。",
-          "vi": "Bạn đứng dậy nhé, nhường chỗ này cho em gái nhỏ ngồi.",
+          "vi": "Bạn đứng dậy nhé, nhường chỗ này cho bé gái ngồi.",
           "py": "Nǐ qǐlái ba, ràng xiǎo mèimei zuò zhèr.",
           "source": {
             "pdfPage": 54,
@@ -1328,9 +1327,9 @@
           }
         },
         {
-          "zh": "都8点半了，你还不起床吗？",
+          "zh": "都8点半了，你还不起来吗？",
           "vi": "Đã 8 giờ rưỡi rồi, bạn vẫn chưa dậy sao?",
-          "py": "Dōu bā diǎn bàn le, nǐ hái bù qǐchuáng ma?",
+          "py": "Dōu bā diǎn bàn le, nǐ hái bù qǐlái ma?",
           "source": {
             "pdfPage": 58,
             "printedPage": 43,
@@ -1758,9 +1757,9 @@
         "vi": "Câu nào nói bố đã mua trái cây rồi mang về nhà?"
       },
       "options": [
-        "爸爸买去了很多水果。",
+        "爸爸买好了很多水果。",
         "爸爸买回了很多水果。",
-        "爸爸买出了很多水果。"
+        "爸爸送出了很多水果。"
       ],
       "answer": 1,
       "focus": "回",
@@ -1855,13 +1854,13 @@
       "part": "ordering",
       "prompt": {
         "zh": "按越南语意思排列词块；带标点的词块位置固定。",
-        "vi": "Bắt đầu bằng “我”: Tôi đợi bạn ở phía dưới khách sạn. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+        "vi": "Bắt đầu bằng “我”: Tôi đợi bạn ở tầng dưới của khách sạn. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
       },
       "tokens": [
         "你。",
         "酒店",
         "我",
-        "下面",
+        "楼下",
         "在",
         "等"
       ],
@@ -1875,8 +1874,8 @@
       ],
       "focus": "地点短语",
       "explanation": {
-        "zh": "我在酒店下面等你。",
-        "vi": "在酒店下面 nêu địa điểm và đứng trước 等你."
+        "zh": "我在酒店楼下等你。",
+        "vi": "在酒店楼下 nêu địa điểm và đứng trước 等你."
       },
       "source": {
         "pdfPage": 53,
@@ -1890,15 +1889,15 @@
       "part": "ordering",
       "prompt": {
         "zh": "按越南语意思排列词块；带标点的词块位置固定。",
-        "vi": "Thầy ở trong lớp. Bắt đầu bằng “你们”: Các em mau vào lớp đây đi. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+        "vi": "Người nói ở trong phòng. Bắt đầu bằng “你”: Bạn mau vào phòng đây đi. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
       },
       "tokens": [
         "来",
-        "你们",
+        "你",
         "吧。",
         "进",
         "快",
-        "教室"
+        "房间"
       ],
       "answer": [
         1,
@@ -1910,8 +1909,8 @@
       ],
       "focus": "地点宾语与方向",
       "explanation": {
-        "zh": "你们快进教室来吧。",
-        "vi": "教室 phải đứng trước 来; 快 bổ nghĩa cho hành động 进."
+        "zh": "你快进房间来吧。",
+        "vi": "房间 là tân ngữ địa điểm, đứng sau 进 và trước 来; 快 đứng trước hành động."
       },
       "source": {
         "pdfPage": 56,
@@ -1925,13 +1924,13 @@
       "part": "ordering",
       "prompt": {
         "zh": "按越南语意思排列词块；带标点的词块位置固定。",
-        "vi": "Bắt đầu bằng “爸爸”: Bố đã mua về rất nhiều trái cây. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+        "vi": "Bắt đầu bằng “姐姐”: Chị gái đã mua về ba quyển sách tiếng Trung. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
       },
       "tokens": [
-        "很多",
+        "三本",
         "了",
-        "爸爸",
-        "水果。",
+        "姐姐",
+        "中文书。",
         "买",
         "回"
       ],
@@ -1945,8 +1944,8 @@
       ],
       "focus": "动词与趋向补语",
       "explanation": {
-        "zh": "爸爸买回了很多水果。",
-        "vi": "买回 là động từ kèm bổ ngữ xu hướng, sau đó là 了 và tân ngữ."
+        "zh": "姐姐买回了三本中文书。",
+        "vi": "买回 chỉ mua rồi mang về; 三本中文书 là tân ngữ chỉ ba quyển sách tiếng Trung."
       },
       "source": {
         "pdfPage": 56,
@@ -1960,13 +1959,13 @@
       "part": "ordering",
       "prompt": {
         "zh": "按越南语意思排列词块；带标点的词块位置固定。",
-        "vi": "Bắt đầu bằng “都”: Đã mười giờ rồi, sao bạn vẫn chưa ngủ? (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+        "vi": "Bắt đầu bằng “都”: Đã mười một giờ rồi, sao bạn vẫn chưa ngủ? (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
       },
       "tokens": [
         "你",
         "都",
         "睡觉？",
-        "十点了，",
+        "十一点了，",
         "还",
         "不"
       ],
@@ -1980,8 +1979,8 @@
       ],
       "focus": "都……了",
       "explanation": {
-        "zh": "都十点了，你还不睡觉？",
-        "vi": "都十点了 đứng trước dấu phẩy; 还不 nêu việc vẫn chưa làm."
+        "zh": "都十一点了，你还不睡觉？",
+        "vi": "都十一点了 nhấn mạnh giờ đã muộn; 还不 nêu việc vẫn chưa làm."
       },
       "source": {
         "pdfPage": 58,
@@ -2055,7 +2054,7 @@
       "id": "hsk2-fltrp-2026:l05:hw17",
       "part": "listening",
       "prompt": {
-        "zh": "听音频：谁收到了白家月为孩子们准备的礼物说明？",
+        "zh": "听音频：白家月对谁说，这是给孩子们准备的礼物？",
         "vi": "Nghe: Gia Nguyệt nói với ai rằng đây là quà chuẩn bị cho các cháu?"
       },
       "options": [
@@ -2285,7 +2284,7 @@
       "part": "writing",
       "prompt": {
         "zh": "请把越南语句子译成中文。",
-        "vi": "Tôi không lên nữa, tôi sẽ đợi bạn ở dưới khách sạn."
+        "vi": "Tôi không lên nữa, tôi sẽ đợi bạn ở tầng dưới của khách sạn."
       },
       "focus": "Dịch viết tổng hợp",
       "source": {

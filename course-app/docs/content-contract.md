@@ -17,3 +17,7 @@ Each lesson is a JSON file in `content/hsk2/lesson-01.json` or `content/hsk3/les
 - `listening:[Question]`: independent audio-listening set per lesson, separate from homework and reachable from the lesson. Questions may target different comprehension points on original tracks, with explicit identity separate from homework.
 
 Prefer complete, correctly grounded items over automatic quantity padding. Report source uncertainty as a blocker or review note; do not fabricate missing pages. All published content needs pixel validation. Validate JSON and section/count contracts before claiming a batch is complete. Keep content audit evidence in `docs/content-audit/` with pages viewed and any corrected OCR errors.
+
+## Final lexical-identity closure
+
+Before release, materialize and independently review a canonical word-sense catalogue for each edition. Lesson-local word IDs retain page/word-list provenance; shared sense IDs must explicitly distinguish POS and meanings and document repeated-sense merges. Do not let Vietnamese wording differences accidentally create two study senses, or merge homographs merely because Chinese spelling matches. The current exact-signature practice grouping is a pilot mechanism; full-edition sense closure is a phase10 release gate.

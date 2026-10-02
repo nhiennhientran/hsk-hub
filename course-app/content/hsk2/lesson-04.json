@@ -19,13 +19,15 @@
     "sourceVisual": true,
     "vietnamese": true,
     "pinyin": true,
-    "reviewer": "author-reviewed; independent reviewer pending",
+    "reviewer": "independent AI source, language and assessment review completed; not native-speaker or qualified-teacher certification",
     "notes": [
-      "Chinese source content checked against all lesson page images; source pinyin retained and editorial pinyin checked.",
-      "All Vietnamese text is an editorial translation, not printed textbook content.",
-      "Original homework and independent listening questions are supplemental.",
-      "Final independent source, Vietnamese, pinyin, audio and pedagogical review is pending.",
-      "Lesson4 printed pages29–36 have no culture/video panel; next page37 begins lesson5. No invented culture section added."
+      "Independent AI reviewer opened every textbook PDF page 44–51 (printed 29–36) and the corresponding answer-PDF pages 5–6; OCR was not substituted for actual pixel inspection.",
+      "Chinese texts, speakers, vocabulary senses, grammar examples, source exercises and original assessments reviewed. Source pinyin retained after pixel corrections; grammar-example pinyin is editorial.",
+      "All Vietnamese text is an editorial translation, not printed textbook content. Image descriptions and original homework/listening tasks are labelled supplemental.",
+      "All eight local original MP3s independently SHA256-match the ingestion manifest and pass full ffmpeg decode. All eight faster-whisper-small-int8 transcripts were read against source text and word-list pixels, supporting track identity, coverage and listening-question semantics.",
+      "ASR homophones, proper-name spellings, traditional script and missed erhua are recognition limitations, not source corrections. No full human/native listening or pronunciation certification is claimed.",
+      "Thirty homework questions retain the 10/5/5/5/5 split; ordering has 5–7 distinct tokens and explicit constraints where needed; five manual-writing items contain no answers, models or target-Chinese hints. Four additional listening questions remain separate.",
+      "Lesson 4 has no printed culture/video panel. Four context-page sources and three printed 的-phrase expansion annotations are now explicit."
     ]
   },
   "objectives": [
@@ -131,7 +133,13 @@
       },
       "context": {
         "zh": "在商场门口，王一雪和刘小雪在聊天儿。",
-        "vi": "Ở cửa trung tâm thương mại, Vương Nhất Tuyết và Lưu Tiểu Tuyết trò chuyện."
+        "vi": "Ở cửa trung tâm thương mại, Vương Nhất Tuyết và Lưu Tiểu Tuyết trò chuyện.",
+        "source": {
+          "pdfPage": 45,
+          "printedPage": 30,
+          "section": "课文1：情境",
+          "provenance": "textbook"
+        }
       },
       "audioTrack": "4-1",
       "lines": [
@@ -288,7 +296,13 @@
       },
       "context": {
         "zh": "在商场，王一雪和刘小雪在看衣服。",
-        "vi": "Trong trung tâm thương mại, Nhất Tuyết và Tiểu Tuyết xem quần áo."
+        "vi": "Trong trung tâm thương mại, Nhất Tuyết và Tiểu Tuyết xem quần áo.",
+        "source": {
+          "pdfPage": 46,
+          "printedPage": 31,
+          "section": "课文2：情境",
+          "provenance": "textbook"
+        }
       },
       "audioTrack": "4-3",
       "lines": [
@@ -445,7 +459,13 @@
       },
       "context": {
         "zh": "在商场，王一雪和刘小雪在看书包。",
-        "vi": "Trong trung tâm thương mại, Nhất Tuyết và Tiểu Tuyết xem cặp sách."
+        "vi": "Trong trung tâm thương mại, Nhất Tuyết và Tiểu Tuyết xem cặp sách.",
+        "source": {
+          "pdfPage": 48,
+          "printedPage": 33,
+          "section": "课文3：情境",
+          "provenance": "textbook"
+        }
       },
       "audioTrack": "4-5",
       "lines": [
@@ -454,7 +474,7 @@
           "vi": "Mẹ ơi, con muốn mua một chiếc cặp sách mới.",
           "id": "hsk2-fltrp-2026:l04:text3:line1",
           "speaker": "刘小雪",
-          "py": "Māma, wǒ xiǎng mǎi ge xīn shūbāo.",
+          "py": "Māma, wǒ xiǎng mǎi gè xīn shūbāo.",
           "source": {
             "pdfPage": 48,
             "printedPage": 33,
@@ -602,7 +622,13 @@
       },
       "context": {
         "zh": "在房间，刘小雪在写日记。",
-        "vi": "Trong phòng, Tiểu Tuyết viết nhật ký."
+        "vi": "Trong phòng, Tiểu Tuyết viết nhật ký.",
+        "source": {
+          "pdfPage": 50,
+          "printedPage": 35,
+          "section": "课文4：情境",
+          "provenance": "textbook"
+        }
       },
       "audioTrack": "4-7",
       "lines": [
@@ -1155,9 +1181,9 @@
       },
       "examples": [
         {
-          "zh": "红色的、绿色的、黑色的，你想买哪个？",
-          "vi": "Cái đỏ, cái xanh lá, cái đen, bạn muốn mua cái nào?",
-          "py": "Hóngsè de, lǜsè de, hēisè de, nǐ xiǎng mǎi nǎge?",
+          "zh": "红色的、绿色的、黑色的，你想买哪个？（=红色的书包、绿色的书包、黑色的书包）",
+          "vi": "Cái đỏ, cái xanh lá, cái đen, bạn muốn mua cái nào? (Tức là: cặp đỏ, cặp xanh lá, cặp đen.)",
+          "py": "Hóngsè de, lǜsè de, hēisè de, nǐ xiǎng mǎi nǎge? (=Hóngsè de shūbāo, lǜsè de shūbāo, hēisè de shūbāo.)",
           "source": {
             "pdfPage": 49,
             "printedPage": 34,
@@ -1166,9 +1192,9 @@
           }
         },
         {
-          "zh": "这个面包是爸爸买的，妈妈买的在那儿。",
-          "vi": "Bánh mì này bố mua; cái mẹ mua ở đằng kia.",
-          "py": "Zhège miànbāo shì bàba mǎi de, māma mǎi de zài nàr.",
+          "zh": "这个面包是爸爸买的，妈妈买的在那儿。（=买的面包）",
+          "vi": "Bánh mì này bố mua; cái mẹ mua ở đằng kia. (买的 chỉ bánh mì đã mua.)",
+          "py": "Zhège miànbāo shì bàba mǎi de, māma mǎi de zài nàr. (=Mǎi de miànbāo.)",
           "source": {
             "pdfPage": 49,
             "printedPage": 34,
@@ -1177,9 +1203,9 @@
           }
         },
         {
-          "zh": "这件衣服太贵了，还是买那件便宜的吧。",
-          "vi": "Bộ quần áo này đắt quá, hay là mua bộ rẻ kia đi.",
-          "py": "Zhè jiàn yīfu tài guì le, háishi mǎi nà jiàn piányi de ba.",
+          "zh": "这件衣服太贵了，还是买那件便宜的吧。（=便宜的衣服）",
+          "vi": "Bộ quần áo này đắt quá, hay là mua bộ rẻ kia đi. (便宜的 chỉ món quần áo rẻ.)",
+          "py": "Zhè jiàn yīfu tài guì le, háishi mǎi nà jiàn piányi de ba. (=Piányi de yīfu.)",
           "source": {
             "pdfPage": 49,
             "printedPage": 34,
@@ -1211,7 +1237,7 @@
         },
         {
           "zh": "A：今天的饭菜是爸爸做的，好吃吗？B：好吃，但我更喜欢吃妈妈______。",
-          "vi": "A: Hôm nay cơm và thức ăn là bố nấu, ngon không? B: Ngon, nhưng con thích ăn ______ mẹ hơn.",
+          "vi": "A: Hôm nay cơm và thức ăn là bố nấu, ngon không? B: Ngon, nhưng con thích ăn đồ mẹ ______ hơn.",
           "source": {
             "pdfPage": 49,
             "printedPage": 34,
@@ -1401,8 +1427,8 @@
       },
       "options": [
         "我没吃过饺子。",
-        "我不吃过饺子。",
-        "我没吃饺子过。"
+        "我已经吃过饺子。",
+        "我不想吃饺子。"
       ],
       "answer": 0,
       "focus": "negative-experience",
@@ -1451,7 +1477,7 @@
       },
       "options": [
         "看看颜色",
-        "听听",
+        "洗洗",
         "试试"
       ],
       "answer": 2,
@@ -1496,8 +1522,8 @@
       "id": "hsk2-fltrp-2026:l04:hw06",
       "part": "vocabGrammar",
       "prompt": {
-        "zh": "选择原因在前、结果在后的句子。",
-        "vi": "Chọn câu nêu nguyên nhân trước, kết quả sau."
+        "zh": "今天下雨，我们因此没出去。哪句按“原因在前、结果在后”的顺序准确表达这件事？",
+        "vi": "Hôm nay trời mưa nên chúng tôi không ra ngoài. Câu nào diễn đạt đúng sự việc, nêu nguyên nhân trước và kết quả sau?"
       },
       "options": [
         "因为下雨了，所以我们没出去。",
@@ -1521,13 +1547,13 @@
       "id": "hsk2-fltrp-2026:l04:hw07",
       "part": "vocabGrammar",
       "prompt": {
-        "zh": "两个书包一个红、一个黑。我喜欢______。",
-        "vi": "Có hai cặp, một đỏ một đen. Tôi thích cái màu đen."
+        "zh": "两个书包一个红、一个黑。小林说“我喜欢黑色的”。这里“黑色的”指什么？",
+        "vi": "Có hai chiếc cặp, một đỏ, một đen. Tiểu Lâm nói “Tôi thích cái màu đen”. 黑色的 ở đây chỉ gì?"
       },
       "options": [
-        "黑色是",
-        "黑色得",
-        "黑色的"
+        "黑色的书",
+        "黑色的裤子",
+        "黑色的书包"
       ],
       "answer": 2,
       "focus": "nominal-de",
@@ -1551,8 +1577,8 @@
       },
       "options": [
         "更",
-        "过",
-        "条"
+        "很",
+        "也"
       ],
       "answer": 0,
       "focus": "comparative-degree",
@@ -1724,8 +1750,8 @@
       "id": "hsk2-fltrp-2026:l04:hw14",
       "part": "ordering",
       "prompt": {
-        "zh": "按越南语意思与常规语序排列词语；带标点的词语放在对应分句末尾。",
-        "vi": "Bắt đầu bằng “你”: Bạn thử chiếc quần đỏ kia đi. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+        "zh": "按越南语意思，以“主语—动词—宾语—语气助词”的顺序排列；带标点的词块放在句末。",
+        "vi": "Bắt đầu bằng “你”; đặt hành động ngay sau chủ ngữ, rồi đến đồ vật: Bạn thử chiếc quần đỏ kia đi. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
       },
       "tokens": [
         "你",
@@ -1761,8 +1787,8 @@
       "id": "hsk2-fltrp-2026:l04:hw15",
       "part": "ordering",
       "prompt": {
-        "zh": "按越南语意思与常规语序排列词语；带标点的词语放在对应分句末尾。",
-        "vi": "Bắt đầu bằng “你”: Bạn đã từng xem bộ phim này chưa? (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+        "zh": "按越南语意思排列；宾语放在“动词+过”后面，带标点的词块放在句末。",
+        "vi": "Bắt đầu bằng “你”; đặt cụm chỉ bộ phim sau động từ và trợ từ chỉ trải nghiệm: Bạn đã từng xem bộ phim này chưa? (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
       },
       "tokens": [
         "这个",
@@ -1796,7 +1822,7 @@
       "id": "hsk2-fltrp-2026:l04:hw16",
       "part": "listening",
       "prompt": {
-        "zh": "听原音4-1：这家商场以前开过门接待她们吗？",
+        "zh": "听原音4-1：王一雪和刘小雪以前来过这家商场吗？",
         "vi": "Nghe 4-1: trước đây hai mẹ con đã đến trung tâm này chưa?"
       },
       "options": [
@@ -1930,9 +1956,9 @@
         "vi": "Tôi từng ăn món này."
       },
       "options": [
-        "我吃这个菜过。",
+        "我还没吃过这个菜。",
         "我吃过这个菜。",
-        "我过吃这个菜。"
+        "我想吃这个菜。"
       ],
       "answer": 1,
       "focus": "translation-meaning",
@@ -1952,22 +1978,22 @@
       "part": "translationChoice",
       "prompt": {
         "zh": "选择正确的中文翻译。",
-        "vi": "Vì trời mưa nên hôm nay tôi không ra ngoài."
+        "vi": "Vì chưa từng mặc màu đỏ nên tôi muốn thử chiếc quần này."
       },
       "options": [
-        "因为下雨，所以我今天没出去。",
-        "因为我今天没出去，所以下雨。",
-        "所以今天下雨，因为我没出去。"
+        "因为没穿过红色的，所以我想试试这条裤子。",
+        "因为没穿过红色的，所以我不想试这条裤子。",
+        "因为已经穿过红色的，所以我想试试这条裤子。"
       ],
       "answer": 0,
       "focus": "translation-meaning",
       "explanation": {
-        "zh": "原因是下雨，结果是不出去。",
-        "vi": "Nguyên nhân là mưa; kết quả là không ra ngoài."
+        "zh": "原因是没穿过红色的，结果是想试试这条裤子。",
+        "vi": "Nguyên nhân là chưa từng mặc màu đỏ; kết quả là muốn thử chiếc quần này."
       },
       "source": {
-        "pdfPage": 48,
-        "printedPage": 33,
+        "pdfPage": 47,
+        "printedPage": 32,
         "section": "原创课后作业",
         "provenance": "supplemental"
       }
@@ -1980,8 +2006,8 @@
         "vi": "Tôi muốn cái màu đỏ, không muốn cái màu đen."
       },
       "options": [
-        "我想要红色是，不想要黑色是。",
-        "我想要的红色，不想要的黑色。",
+        "我想要黑色的，不想要红色的。",
+        "我想要红色的，也想要黑色的。",
         "我想要红色的，不想要黑色的。"
       ],
       "answer": 2,
@@ -2002,18 +2028,18 @@
       "part": "translationChoice",
       "prompt": {
         "zh": "选择正确的中文翻译。",
-        "vi": "Chiếc cặp này đẹp hơn chiếc kia."
+        "vi": "Đang so sánh hai chiếc cặp: Chiếc cặp này đẹp hơn."
       },
       "options": [
-        "这个书包那更个好看。",
-        "这个书包比那个更好看。",
-        "这个书包更那个好看比。"
+        "这个书包也很好看。",
+        "这个书包更好看。",
+        "那个书包更好看。"
       ],
       "answer": 1,
       "focus": "translation-meaning",
       "explanation": {
-        "zh": "“比”引出比较对象，“更”放在形容词前。",
-        "vi": "比 nêu đối tượng so sánh; 更 đứng trước tính từ."
+        "zh": "“这个”指这一件，“更”表示相比之下程度更高。",
+        "vi": "这个 chỉ chiếc này; 更 cho biết mức độ đẹp cao hơn khi so sánh."
       },
       "source": {
         "pdfPage": 49,
@@ -2030,11 +2056,11 @@
         "vi": "Bạn thử chiếc quần này trước đi."
       },
       "options": [
+        "你先买这条裤子吧。",
         "你先试试这条裤子吧。",
-        "你试先这条裤子过。",
-        "你先这条试试裤子吧。"
+        "你先试试那条裤子吧。"
       ],
-      "answer": 0,
+      "answer": 1,
       "focus": "translation-meaning",
       "explanation": {
         "zh": "先+试试+宾语+吧。",
@@ -2054,7 +2080,7 @@
         "zh": "请把越南语句子译成中文。",
         "vi": "Tôi chưa từng đến Pháp."
       },
-      "focus": "writing-experience",
+      "focus": "Dịch viết tổng hợp",
       "source": {
         "pdfPage": 46,
         "printedPage": 31,
@@ -2069,7 +2095,7 @@
         "zh": "请把越南语句子译成中文。",
         "vi": "Vì tôi thích màu trắng nên tôi muốn mua chiếc quần này."
       },
-      "focus": "writing-cause-result",
+      "focus": "Dịch viết tổng hợp",
       "source": {
         "pdfPage": 47,
         "printedPage": 32,
@@ -2084,7 +2110,7 @@
         "zh": "请把越南语句子译成中文。",
         "vi": "Cái màu xanh lá đẹp hơn."
       },
-      "focus": "writing-description",
+      "focus": "Dịch viết tổng hợp",
       "source": {
         "pdfPage": 49,
         "printedPage": 34,
@@ -2097,9 +2123,9 @@
       "part": "writing",
       "prompt": {
         "zh": "请把越南语句子译成中文。",
-        "vi": "Bạn thử chiếc quần màu đỏ kia đi."
+        "vi": "Tôi muốn thử chiếc quần màu đen trước, rồi xem chiếc màu trắng."
       },
-      "focus": "writing-shopping",
+      "focus": "Dịch viết tổng hợp",
       "source": {
         "pdfPage": 47,
         "printedPage": 32,
@@ -2112,9 +2138,9 @@
       "part": "writing",
       "prompt": {
         "zh": "请把越南语句子译成中文。",
-        "vi": "Bạn đã từng xem bộ phim này chưa?"
+        "vi": "Chị gái bạn đã từng đến trung tâm thương mại này chưa?"
       },
-      "focus": "writing-question",
+      "focus": "Dịch viết tổng hợp",
       "source": {
         "pdfPage": 46,
         "printedPage": 31,

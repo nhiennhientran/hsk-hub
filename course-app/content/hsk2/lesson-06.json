@@ -19,17 +19,17 @@
     "sourceVisual": true,
     "vietnamese": true,
     "pinyin": true,
-    "reviewer": "author-reviewed; independent reviewer pending",
+    "reviewer": "independent AI source, language and assessment review completed; not native-speaker or qualified-teacher certification",
     "notes": [
-      "Chinese source content checked against all lesson page images; source pinyin retained and editorial pinyin checked.",
-      "All Vietnamese text is an editorial translation, not printed textbook content.",
-      "Original homework and independent listening questions are supplemental.",
-      "Final independent source, Vietnamese, pinyin, audio and pedagogical review is pending.",
-      "All textbook PDF pages 61–70 and answer-key pages 7–9 visually inspected; original numbered vocabulary has 14 entries, with the noun and verb senses of 画 split into 15 records.",
-      "The complete nine-row Lessons 4–6 self-review, both vocabulary fields, separate understand/can-use checks, and improvement field are retained.",
-      "Culture video 6-1 is absent from supplied assets. The birthday-noodle tip on printed page 51 is retained separately.",
-      "Original audio labels and printed-text semantic support checked; full human-equivalent audio listening and qualified native/teacher certification remain pending.",
-      "All eight original local MP3s SHA256-match the ingestion manifest and pass full ffmpeg decode. Automated faster-whisper-small-int8 transcripts were compared with the printed text/list; expected name/homophone/erhua errors do not alter task semantic support. This is not human listening certification."
+      "Independent AI reviewer opened every textbook PDF page 61–70 (printed 46–55) and the corresponding answer-PDF pages 7–9; OCR was not substituted for actual pixel inspection.",
+      "Chinese texts, speakers, vocabulary senses, grammar examples, source exercises and original assessments reviewed. Source pinyin retained after pixel corrections; grammar-example pinyin is editorial.",
+      "All Vietnamese text is an editorial translation, not printed textbook content. Image descriptions and original homework/listening tasks are labelled supplemental.",
+      "All eight local original MP3s independently SHA256-match the ingestion manifest and pass full ffmpeg decode. All eight faster-whisper-small-int8 transcripts were read against source text and word-list pixels, supporting track identity, coverage and listening-question semantics.",
+      "ASR homophones, proper-name spellings, traditional script and missed erhua are recognition limitations, not source corrections. No full human/native listening or pronunciation certification is claimed.",
+      "Thirty homework questions retain the 10/5/5/5/5 split; ordering has 5–7 distinct tokens and explicit constraints where needed; five manual-writing items contain no answers, models or target-Chinese hints. Four additional listening questions remain separate.",
+      "Vocabulary comprises 14 numbered entries, with separate verb/noun senses of 画: 15 records. 过 is guò here, distinct from the guo aspect particle in lesson 4; 长 is cháng and 地 is de.",
+      "All nine Lessons 4–6 review rows, both vocabulary fields, separate 理解/会用 checks and the improvement field are retained. The birthday-noodle tip remains separate from the culture panel.",
+      "Culture video 6-1 is absent from supplied assets; lesson MP3 6-1 is not presented as that video."
     ]
   },
   "objectives": [
@@ -176,7 +176,7 @@
           "vi": "Em không nhắc thì anh quên thật đấy. Mình chuẩn bị quà gì cho con nhỉ?",
           "id": "hsk2-fltrp-2026:l06:text1:line2",
           "speaker": "刘明",
-          "py": "Nǐ bù shuō, wǒ hái zhēn wàng le. Wǒmen gěi tā zhǔnbèi ge shénme lǐwù ne?",
+          "py": "Nǐ bù shuō, wǒ hái zhēn wàng le. Wǒmen gěi tā zhǔnbèi gè shénme lǐwù ne?",
           "source": {
             "pdfPage": 62,
             "printedPage": 47,
@@ -228,7 +228,7 @@
           "vi": "Được! Anh mua thêm cho con một chiếc bánh sinh nhật thật to.",
           "id": "hsk2-fltrp-2026:l06:text1:line6",
           "speaker": "刘明",
-          "py": "Hǎo de! Wǒ zài gěi tā mǎi ge dàdà de shēngrì dàngāo.",
+          "py": "Hǎo de! Wǒ zài gěi tā mǎi gè dàdà de shēngrì dàngāo.",
           "source": {
             "pdfPage": 62,
             "printedPage": 47,
@@ -417,7 +417,7 @@
           "vi": "Thế con sẽ vẽ chị mặc áo trắng.",
           "id": "hsk2-fltrp-2026:l06:text2:line8",
           "speaker": "刘小明",
-          "py": "Nà wǒ yào huà yí ge chuān báisè yīfu de jiějie.",
+          "py": "Nà wǒ yào huà yí gè chuān báisè yīfu de jiějie.",
           "source": {
             "pdfPage": 64,
             "printedPage": 49,
@@ -691,7 +691,7 @@
           "vi": "Hôm nay là sinh nhật con gái. Chúng tôi mua bánh kem, làm mì, còn nấu cá, thịt và nhiều món nữa. Ăn tối xong, cả nhà đi xem một bộ phim. Về nhà, các con lên giường từ sớm. Ngày mai không đi học, các con nói muốn ngủ một giấc thật thoải mái, dặn chúng tôi gọi dậy muộn một chút. Đây là một ngày rất bận, rất mệt nhưng rất vui.",
           "id": "hsk2-fltrp-2026:l06:text4:line1",
           "speaker": "王一雪",
-          "py": "Jīntiān shì nǚ'ér de shēngrì. Wǒmen mǎile dàngāo, zuòle miàntiáor, hái zuòle yú a ròu a shénmede. Chīwán wǎnfàn, yì jiā rén qù kànle ge diànyǐng. Huí jiā hòu, háizimen zǎozǎo de jiù shàng chuáng le. Míngtiān bú shàngxué, tāmen shuō yào shūshūfúfú de shuì yí jiào, ràng wǒmen wǎn diǎnr jiào tāmen qǐchuáng. Zhè shì hěn máng, hěn lèi, dàn hěn kuàilè de yì tiān.",
+          "py": "Jīntiān shì nǚ'ér de shēngrì. Wǒmen mǎile dàngāo, zuòle miàntiáor, hái zuòle yú a ròu a shénmede. Chīwán wǎnfàn, yì jiā rén qù kànle gè diànyǐng. Huí jiā hòu, háizimen zǎozǎo de jiù shàng chuáng le. Míngtiān bú shàngxué, tāmen shuō yào shūshūfúfú de shuì yí jiào, ràng wǒmen wǎn diǎnr jiào tāmen qǐchuáng. Zhè shì hěn máng, hěn lèi, dàn hěn kuàilè de yì tiān.",
           "source": {
             "pdfPage": 67,
             "printedPage": 52,
@@ -1019,7 +1019,7 @@
         {
           "zh": "我再给她买个大大的生日蛋糕。",
           "vi": "Tôi mua thêm cho con một chiếc bánh sinh nhật thật to.",
-          "py": "Wǒ zài gěi tā mǎi ge dàdà de shēngrì dàngāo.",
+          "py": "Wǒ zài gěi tā mǎi gè dàdà de shēngrì dàngāo.",
           "source": {
             "pdfPage": 63,
             "printedPage": 48,
@@ -1233,7 +1233,7 @@
         },
         {
           "zh": "A：你回家______睡一觉，明天也别来上班了。（好） B：好的，您也别太累了。",
-          "vi": "A: Bạn về nhà ngủ một giấc ______, mai cũng đừng đi làm. (好) B: Vâng, anh/chị cũng đừng làm mệt quá.",
+          "vi": "A: Bạn về nhà ngủ một giấc ______, mai cũng đừng đi làm. (好) B: Vâng, anh/chị cũng đừng làm mình quá mệt.",
           "source": {
             "pdfPage": 67,
             "printedPage": 52,
@@ -1331,7 +1331,7 @@
         },
         {
           "zh": "（3）看，这是我妹妹______的，漂亮不漂亮？",
-          "vi": "(3) Nhìn này, đây là em gái tôi ______, có đẹp không?",
+          "vi": "(3) Nhìn này, đây là bức tranh em gái tôi ______, có đẹp không?",
           "kind": "question",
           "source": {
             "pdfPage": 68,
@@ -1776,8 +1776,8 @@
       },
       "options": [
         "打开",
-        "忘了",
-        "过了"
+        "拿走",
+        "关上"
       ],
       "answer": 0,
       "focus": "打开",
@@ -1836,8 +1836,8 @@
         "vi": "地 nối cách thức 很快 với hành động 吃."
       },
       "source": {
-        "pdfPage": 66,
-        "printedPage": 51,
+        "pdfPage": 67,
+        "printedPage": 52,
         "section": "原创课后作业",
         "provenance": "supplemental"
       }
@@ -1850,8 +1850,8 @@
         "vi": "过 trong 过生日 đọc thế nào và nghĩa là gì?"
       },
       "options": [
-        "guo，曾经",
-        "guō，一种食物",
+        "guo，表示曾经的经历",
+        "guò，表示从一个地方经过",
         "guò，庆祝或度过"
       ],
       "answer": 2,
@@ -1900,9 +1900,9 @@
         "vi": "Câu nào diễn đạt đúng ý “thầy/cô đến lớp rất sớm”?"
       },
       "options": [
-        "老师到了早早地教室。",
+        "老师早早地离开了教室。",
         "老师早早地到了教室。",
-        "老师早早的到了地教室。"
+        "老师很晚才到了教室。"
       ],
       "answer": 1,
       "focus": "地的位置",
@@ -1995,21 +1995,19 @@
         "vi": "Bắt đầu bằng “这是”: Đây là món quà bố tặng cho chị gái. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
       },
       "tokens": [
-        "送",
+        "送给",
         "礼物。",
         "爸爸",
-        "给",
         "这是",
         "的",
         "姐姐"
       ],
       "answer": [
-        4,
+        3,
         2,
         0,
-        3,
-        6,
         5,
+        4,
         1
       ],
       "focus": "礼物的定语",
@@ -2028,18 +2026,22 @@
       "id": "hsk2-fltrp-2026:l06:hw14",
       "part": "ordering",
       "prompt": {
-        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
-        "vi": "Bắt đầu bằng “妈妈让我”: Mẹ bảo tôi ở nhà nghỉ ngơi cho tốt hai ngày. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+        "zh": "按越南语意思排列；“在家”放在“让我”后、“好好地”前，带标点的词块放在句末。",
+        "vi": "Bắt đầu bằng “妈妈”; đặt cụm chỉ nơi chốn ngay sau “让我” và trước cụm chỉ cách thức: Mẹ bảo tôi ở nhà nghỉ ngơi cho tốt hai ngày. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
       },
       "tokens": [
         "好好地",
         "两天。",
-        "妈妈让我",
+        "妈妈",
         "休息",
-        "在家"
+        "在家",
+        "让",
+        "我"
       ],
       "answer": [
         2,
+        5,
+        6,
         4,
         0,
         3,
@@ -2061,24 +2063,22 @@
       "id": "hsk2-fltrp-2026:l06:hw15",
       "part": "ordering",
       "prompt": {
-        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
-        "vi": "Bắt đầu bằng “明天”: Mai không đi học, chúng tôi muốn ngủ một giấc thật thoải mái. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+        "zh": "按越南语意思排列；第二个分句以“我们想”开头，标点分别放在分句和全句末尾。",
+        "vi": "Bắt đầu bằng “明天”: Mai không đi học, chúng tôi muốn ngủ một giấc thật thoải mái. (Mệnh đề thứ hai bắt đầu sau dấu phẩy bằng “我们想”.)"
       },
       "tokens": [
-        "我们",
+        "我们想",
         "舒舒服服地",
         "明天",
-        "想",
         "睡一觉。",
         "不上学，"
       ],
       "answer": [
         2,
-        5,
+        4,
         0,
-        3,
         1,
-        4
+        3
       ],
       "focus": "AABB与地",
       "explanation": {
@@ -2122,7 +2122,7 @@
       "id": "hsk2-fltrp-2026:l06:hw17",
       "part": "listening",
       "prompt": {
-        "zh": "听音频：小雪听说礼物是画笔后是什么态度？",
+        "zh": "听音频：小雪打开礼物、看到画笔后是什么态度？",
         "vi": "Nghe: Tiểu Tuyết có thái độ gì khi thấy quà là bút vẽ?"
       },
       "options": [
@@ -2291,8 +2291,8 @@
         "vi": "很快地 mô tả cách ăn; ăn xong mới đi làm."
       },
       "source": {
-        "pdfPage": 66,
-        "printedPage": 51,
+        "pdfPage": 67,
+        "printedPage": 52,
         "section": "原创课后作业",
         "provenance": "supplemental"
       }
