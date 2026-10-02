@@ -4,7 +4,7 @@ import {resolve} from 'node:path';
 const root=resolve(import.meta.dirname,'..');
 const counts={2:15,3:18}, grammar={2:Array(15).fill(3),3:[3,3,3,3,4,3,4,4,3,3,4,4,3,3,4,4,4,4]};
 const totals={lessons:0,words:0,texts:0,grammar:0,homework:0,listening:0,sections:0};
-const seen=new Set(),issues=[],lessons=[];
+const seen=new Set(),questionSignatures=new Set(),issues=[],lessons=[];
 const check=(condition,message)=>{if(!condition)issues.push(message)};
 const text=v=>typeof v==='string'&&v.trim().length>0;
 const copy=v=>v&&text(v.zh)&&text(v.vi);
@@ -29,9 +29,9 @@ for(const level of [2,3]){
  check(l.homework.length===30,tag+' homework count');const distribution={vocabGrammar:10,ordering:5,listening:5,translationChoice:5,writing:5};
  for(const [part,n]of Object.entries(distribution))check(l.homework.filter(q=>q.part===part).length===n,tag+' '+part+' count');
  const stems=new Set();
- for(const q of [...l.homework,...l.listening]){id(q);check(copy(q.prompt)&&text(q.focus)&&q.source.provenance==='supplemental',tag+' question provenance');const signature=JSON.stringify([q.part,q.prompt,q.stem,q.options,q.tokens]);check(!stems.has(signature),tag+' duplicate question');stems.add(signature);
- if(q.part==='writing'){for(const name of ['answer','solution','modelAnswer','explanation','tokens','options'])check(!(name in q),tag+' manual answer leak '+name)}
- else if(q.part==='ordering'){check(Array.isArray(q.tokens)&&q.tokens.length>=3&&Array.isArray(q.answer)&&q.answer.length===q.tokens.length&&new Set(q.answer).size===q.tokens.length&&q.answer.every(n=>Number.isInteger(n)&&n>=0&&n<q.tokens.length),tag+' ordering')}else check(Array.isArray(q.options)&&q.options.length>=3&&new Set(q.options).size===q.options.length&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<q.options.length,tag+' choice');
+ for(const q of [...l.homework,...l.listening]){id(q);check(copy(q.prompt)&&text(q.focus)&&q.source.provenance==='supplemental',tag+' question provenance');const signature=JSON.stringify([q.part,q.prompt,q.stem,q.options,q.tokens]);check(!stems.has(signature),tag+' duplicate question');stems.add(signature);check(!questionSignatures.has(signature),tag+' duplicate full question across course corpus');questionSignatures.add(signature);
+ if(q.part==='writing'){check(!/\p{Script=Han}/u.test(q.focus),tag+' manual focus clue');for(const name of ['answer','solution','modelAnswer','explanation','tokens','options'])check(!(name in q),tag+' manual answer leak '+name)}
+ else if(q.part==='ordering'){check(Array.isArray(q.tokens)&&q.tokens.length>=5&&Array.isArray(q.answer)&&q.answer.length===q.tokens.length&&new Set(q.answer).size===q.tokens.length&&q.answer.every(n=>Number.isInteger(n)&&n>=0&&n<q.tokens.length),tag+' ordering')}else check(Array.isArray(q.options)&&q.options.length>=3&&new Set(q.options).size===q.options.length&&Number.isInteger(q.answer)&&q.answer>=0&&q.answer<q.options.length,tag+' choice');
  if(q.part==='listening')check(new RegExp(`^${l.number}-[1357]$`).test(q.audioTrack),tag+' listening original track');
  }
  if(!process.env.HSK_PILOT)check(l.reviewStatus.sourceVisual&&l.reviewStatus.vietnamese&&l.reviewStatus.pinyin&&text(l.reviewStatus.reviewer)&&!l.reviewStatus.reviewer.includes('pending'),tag+' pending independent review');
