@@ -1,5 +1,5 @@
 {
-  "status": "published-awaiting-live-verification",
+  "status": "published-live-verified",
   "productionCommit": "caeac03798b91095f6fb0916e3c0bfd908381f45",
   "sourceCommit": "3b1b21ec242fead39d4b88247f0c8f18ae9f7ec6",
   "localSourceCommit": "db152b27a4cf872f1f9003304ec9b96cb0ebabaa",
@@ -27,7 +27,10 @@
   },
   "webkit": {
     "fullBrowser": 142,
-    "strictRelease": 5
+    "strictRelease": 5,
+    "unexpected": 0,
+    "skipped": 0,
+    "flaky": 0
   },
   "visual": {
     "screenshots": 24,
@@ -63,5 +66,64 @@
     "No physical iPhone/Android certification",
     "No system IME certification or teacher final language signoff",
     "No production rollback drill; preserve backups before any downgrade"
-  ]
+  ],
+  "productionChecks": [
+    {
+      "name": "Pages",
+      "runId": 37014757772,
+      "result": "success"
+    },
+    {
+      "name": "Site QA",
+      "runId": 37014759822,
+      "result": "success"
+    },
+    {
+      "name": "Official audio release",
+      "runId": 37014760137,
+      "result": "success"
+    }
+  ],
+  "liveVerification": {
+    "runId": 37015199026,
+    "url": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37015199026",
+    "verificationSource": "5aac25f670e79bc265b105fef622019f3f3b88d2",
+    "profilePolicy": "Disposable synthetic browser contexts; existing learner profiles untouched",
+    "screenshotsPerEngine": 12,
+    "chromium": {
+      "passed": 5,
+      "unexpected": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "retries": 0,
+      "durationSeconds": 105.760707,
+      "verifiedFiles": 414,
+      "verifiedBytes": 31160154,
+      "artifactId": 11230190691,
+      "artifactSHA256": "f9fd1ea7e2a2c832e6062c32550cadf482131c3acf041140696f8c9cd9b46ebe"
+    },
+    "webkit": {
+      "passed": 5,
+      "unexpected": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "retries": 0,
+      "durationSeconds": 104.482914,
+      "verifiedFiles": 414,
+      "verifiedBytes": 31160154,
+      "artifactId": 11230081519,
+      "artifactSHA256": "28c1e52ea89690dc513c09a6a603781011f7e8bdfcc884a857bf721b99757115"
+    },
+    "coverage": [
+      "normal classroom login",
+      "exact served manifest and every published asset byte",
+      "legacy entry aliases and back/forward/reload",
+      "native original word and homework audio",
+      "30-question homework version and 75 independent listening questions",
+      "exact manual receipts, drafts, legacy history and complete backup import",
+      "independent keyboard flips and responsive anchors at699/700/1049/1050/320/1440",
+      "all344 senses reachable and reshuffle preserves selected pool",
+      "stable live screenshots at320/390/768/1440"
+    ]
+  }
 }
