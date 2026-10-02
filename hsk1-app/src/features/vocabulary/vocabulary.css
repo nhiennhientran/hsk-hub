@@ -79,4 +79,5 @@
   .mixed-navigation { gap:10px; }
   .mixed-navigation button { min-width:0; flex:1; max-width:230px; padding-inline:8px; }
 }
+@media (max-width:359px) { .mixed-lessons { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media (prefers-reduced-motion:reduce) { .mixed-vocabulary *, .mixed-vocabulary *::before, .mixed-vocabulary *::after { animation:none !important; transition:none !important; } }

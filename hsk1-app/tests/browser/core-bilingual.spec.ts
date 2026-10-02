@@ -27,7 +27,7 @@ test('login, navigation, home, progress and help expose deliberate Chinese and V
   await expect(page.locator('#progress-homework-submitted')).toContainText('Đã nộp');
   await page.goto('/help.html');
   await expect(page.locator('main h2 [lang="zh"]')).toHaveCount(7);
-  await expect(page.locator('main p[lang="vi"]')).toHaveCount(7);
+  await expect(page.locator('main p[lang="vi"]')).toHaveCount(8);
   await expect(page.locator('main')).toContainText('浏览器或系统自带');
   await expect(page.locator('main')).toContainText('Hộp thoại in');
 });

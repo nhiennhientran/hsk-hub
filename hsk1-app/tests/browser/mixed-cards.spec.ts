@@ -87,7 +87,7 @@ for (const width of [320, 390, 768, 1440]) test(`mixed-card preview: direct revi
   await expect(page.locator('[data-vocabulary-lesson]')).toHaveCount(15);
   const folder = `.repro-output/mixed-preview/${testInfo.project.name}`;
   await mkdir(folder, { recursive: true });
-  await page.screenshot({ path: `${folder}/${width}-selector.png`, fullPage: true });
+  await page.screenshot({ path: `${folder}/${width}-selector.png`, fullPage: true, animations: 'disabled' });
   await start(page, [1, 15]);
   const active = await round(page);
   expect(active.lessons).toEqual([1, 15]);
@@ -103,10 +103,10 @@ for (const width of [320, 390, 768, 1440]) test(`mixed-card preview: direct revi
   for (const control of await page.locator('#vocabulary-module button:visible').all()) {
     expect((await control.boundingBox())!.height).toBeGreaterThanOrEqual(44);
   }
-  await testInfo.attach(`mixed-cards-front-${width}-${testInfo.project.name}`, { body: await page.screenshot({ path: `${folder}/${width}-front.png`, fullPage: true }), contentType: 'image/png' });
+  await testInfo.attach(`mixed-cards-front-${width}-${testInfo.project.name}`, { body: await page.screenshot({ path: `${folder}/${width}-front.png`, fullPage: true, animations: 'disabled' }), contentType: 'image/png' });
   await toggles(page).first().click();
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
-  await testInfo.attach(`mixed-cards-back-${width}-${testInfo.project.name}`, { body: await page.screenshot({ path: `${folder}/${width}-back.png`, fullPage: true }), contentType: 'image/png' });
+  await testInfo.attach(`mixed-cards-back-${width}-${testInfo.project.name}`, { body: await page.screenshot({ path: `${folder}/${width}-back.png`, fullPage: true, animations: 'disabled' }), contentType: 'image/png' });
 });
 
 test('all lessons show 344 sense cards and 319 written forms, deduplicate selection, and apply lesson drafts only on start', async ({ page }) => {
