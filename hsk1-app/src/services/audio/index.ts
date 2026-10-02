@@ -201,6 +201,10 @@ export function createAudioService(options: {
     }
     clearBoundary();
     for (const cleanup of request.trackCleanups.splice(0)) cleanup();
+    // WebKit may reject an unresolved resume play() when this intentional
+    // segment-boundary pause runs. That retired attempt cannot turn ended
+    // into an error (or affect the next item of a sequence).
+    request.playVersion++;
     audio.pause();
     if (request.requests && request.index + 1 < request.requests.length) {
       request.index++;

@@ -82,22 +82,29 @@ async function observeNative(page: Page): Promise<void> {
     const state = window as unknown as { __vocabularyMedia: HTMLMediaElement[]; __vocabularyEvents: any[] };
     state.__vocabularyMedia = []; state.__vocabularyEvents = [];
     const watched = new WeakSet<HTMLMediaElement>();
-    const record = (event: string, media: HTMLMediaElement) => {
-      state.__vocabularyEvents.push({ event, src: media.currentSrc, time: media.currentTime, duration: media.duration,
-        paused: media.paused, at: performance.now(), card: document.querySelector('#vocabulary-card')?.getAttribute('data-sense-id') });
+    const record = (event: string, media: HTMLMediaElement, detail?: string) => {
+      state.__vocabularyEvents.push({ event, detail, src: media.currentSrc, time: media.currentTime, duration: media.duration,
+        paused: media.paused, ended: media.ended, readyState: media.readyState, seeking: media.seeking, errorCode: media.error?.code,
+        uiState: document.querySelector<HTMLElement>('#vocabulary-audio-status')?.dataset.state,
+        at: performance.now(), card: document.querySelector('#vocabulary-card')?.getAttribute('data-sense-id') });
       if (state.__vocabularyEvents.length > 200) state.__vocabularyEvents.shift();
     };
     const observe = (media: HTMLMediaElement) => {
       if (watched.has(media)) return;
       watched.add(media); state.__vocabularyMedia.push(media);
-      for (const event of ['play', 'playing', 'pause', 'timeupdate', 'ended', 'error', 'loadedmetadata']) media.addEventListener(event, () => record(event, media));
+      for (const event of ['play', 'playing', 'pause', 'timeupdate', 'ended', 'error', 'loadedmetadata', 'loadeddata', 'canplay', 'waiting', 'stalled', 'seeking', 'seeked']) media.addEventListener(event, () => record(event, media));
     };
     const load = HTMLMediaElement.prototype.load;
-    HTMLMediaElement.prototype.load = function () { observe(this); return load.call(this); };
+    HTMLMediaElement.prototype.load = function () { observe(this); record('load-call', this); return load.call(this); };
     const play = HTMLMediaElement.prototype.play;
-    HTMLMediaElement.prototype.play = function () { observe(this); return play.call(this); };
+    HTMLMediaElement.prototype.play = function () {
+      observe(this); record('play-call', this);
+      const real = play.call(this);
+      void real.then(() => record('play-resolved', this), error => record('play-rejected', this, `${error?.name}: ${error?.message}`));
+      return real;
+    };
     const pause = HTMLMediaElement.prototype.pause;
-    HTMLMediaElement.prototype.pause = function () { observe(this); return pause.call(this); };
+    HTMLMediaElement.prototype.pause = function () { observe(this); record('pause-call', this); return pause.call(this); };
   });
 }
 async function native(page: Page): Promise<{ src: string; time: number; duration: number; paused: boolean; count: number }> {
@@ -433,7 +440,7 @@ test('vocabulary loading rejects early interaction, failed metadata retries, and
   await page.goto('/#/vocabulary?lesson=7', { waitUntil: 'domcontentloaded' });
   await expect.poll(() => pending.length).toBe(1);
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'loading');
-  await expect(page.locator('#vocabulary-module fieldset[data-module-controls]')).toBeDisabled();
+  await expect(page.locator('#vocabulary-module fieldset[data-module-controls]')).toHaveAttribute('disabled', '');
   await expect(page.locator('#vocabulary-card')).toHaveCount(0);
   await pending[0]!.fulfill({ status: 503, body: 'temporary unavailable' });
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'error');

@@ -8,12 +8,13 @@
   "productionRollbackCommit": "069f9d956c9a600a91e6b4ce82241ceccc184dce",
   "checks": {
     "unit": {
-      "passed": 186,
+      "passed": 188,
       "failed": 0,
       "skipped": 0,
       "baseline": 152,
       "newVocabulary": 25,
-      "newProgress": 9
+      "newProgress": 9,
+      "newAudioBoundary": 2
     },
     "typecheck": "passed",
     "build": "passed",
@@ -37,7 +38,8 @@
       ],
       "casesPerProject": 63,
       "retries": 0,
-      "verification": "Final exact-head run/job results and screenshots verified in completion reply; not inherited from step6."
+      "verification": "Final exact-head run/job results and screenshots verified in completion reply; not inherited from step6.",
+      "strategy": "Isolated Chromium and WebKit jobs; fail-fast false; 63 cases each, full unit/build/catalog/assets in each."
     },
     "scope": {
       "records": 344,
@@ -63,6 +65,27 @@
       "No physical mobile or OS IME certification",
       "No production deployment"
     ],
-    "reviewFix": "Display-only deadline/visibility refresh prevents an idle due-filter view remaining empty after cards become due."
+    "reviewFix": "Display-only deadline/visibility refresh prevents an idle due-filter view remaining empty after cards become due. A real WebKit segment-completion race now invalidates the retired native play attempt before its intentional pause; old-code focused regression fails and repaired full unit suite passes.",
+    "ciFirst": {
+      "commit": "f472793f5d68986accfee43f1bc3e38b4d886a83",
+      "run": "https://github.com/nhiennhientran/hsk-hub/actions/runs/36953461743",
+      "passed": 123,
+      "failed": 3,
+      "skipped": 0,
+      "chromium": {
+        "passed": 62,
+        "failed": 1
+      },
+      "webkit": {
+        "passed": 61,
+        "failed": 2
+      },
+      "causes": [
+        "Two fieldset-disabled matcher assertions despite actual disabled attribute; corrected attribute assertion.",
+        "Late native resume play rejection after an intentional WebKit segment pause replaced ended with error; playVersion invalidated before pause."
+      ],
+      "full344EachBrowser": "passed",
+      "deadlineRefreshEachBrowser": "passed"
+    }
   }
 }

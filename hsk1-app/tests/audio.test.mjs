@@ -370,3 +370,31 @@ test('a view stopping synchronously on a loading notification cannot resurrect m
   assert.equal(clock.count, 0);
   service.dispose();
 });
+
+
+test('a late native resume rejection after the intentional segment boundary cannot replace ended with error', async () => {
+  const { audio, service } = setup();
+  const first = service.play(track()); audio.metadata(); audio.playing(); await first;
+  service.pause();
+  const resumed = service.resume();
+  // A real engine can dispatch playing while the native resume promise is
+  // still unresolved; finishTrack will intentionally pause that attempt.
+  audio.paused = false; audio.emit('playing');
+  assert.deepEqual(await resumed, { ok: true, code: 'playing' });
+  audio.time(3);
+  assert.equal(service.snapshot().status, 'ended');
+  audio.calls[1].reject(Object.assign(new Error('play interrupted by boundary pause'), { name: 'AbortError' }));
+  await turns();
+  assert.equal(service.snapshot().status, 'ended'); assert.equal(service.snapshot().issue, null);
+  assert.equal(audio.paused, true); service.dispose();
+});
+
+test('a retired native play rejection at a sequence boundary cannot fail the next segment', async () => {
+  const { audio, service } = setup();
+  const first = service.playSequence([track('first'), { ...track('second'), start: 4, end: 6 }]);
+  audio.metadata(); audio.paused = false; audio.emit('playing'); await first;
+  audio.time(3); assert.equal(service.snapshot().label, 'second');
+  audio.calls[0].reject(Object.assign(new Error('old boundary interruption'), { name: 'AbortError' })); await turns();
+  assert.equal(service.snapshot().status, 'loading'); audio.metadata(); audio.playing(1);
+  assert.equal(service.snapshot().status, 'playing'); assert.equal(service.snapshot().label, 'second'); service.dispose();
+});
