@@ -22,7 +22,7 @@ export function normalizeRoute(input: Partial<Route>): Route {
     ? input.lesson!
     : 1;
   if (feature === 'textbook') {
-    return Object.freeze({ feature, lesson, section: isSection(input.section) ? input.section : 'vocab' });
+    return Object.freeze({ feature, lesson, section: isSection(input.section) ? input.section : 'vocab', ...(input.section==='text'&&Number.isInteger(input.scene)&&input.scene!>=1&&input.scene!<=3?{scene:input.scene}:{}) });
   }
   if (feature === 'homework') {
     const isNew = input.homeworkVersion === '30-v1';
@@ -65,6 +65,7 @@ export function parseRoute(input: URL | string): Route {
       feature: isFeature(feature) ? feature : undefined,
       lesson: readLesson(params.get('lesson')),
       section: isSection(params.get('section')) ? params.get('section') as Section : undefined,
+      scene:params.has('scene')?Number(params.get('scene')):undefined,
       part: isPart(params.get('part')) ? params.get('part') as Part : undefined,
       homeworkVersion: params.get('version') === '30-v1' ? '30-v1' : params.get('version') === 'legacy' ? 'legacy' : undefined,
       exerciseSet: params.get('set') as Route['exerciseSet'],
@@ -104,6 +105,7 @@ export function routeHref(route: Route): string {
   const normalized = normalizeRoute(route);
   const params = new URLSearchParams({ lesson: String(normalized.lesson) });
   if (normalized.section) params.set('section', normalized.section);
+  if(normalized.scene)params.set('scene',String(normalized.scene));
   if (normalized.part) params.set('part', normalized.part);
   if (normalized.homeworkVersion) params.set('version', normalized.homeworkVersion);
   if (normalized.exerciseSet) params.set('set', normalized.exerciseSet);

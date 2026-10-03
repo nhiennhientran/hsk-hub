@@ -1,5 +1,14 @@
 npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 Listing tests:
+  [chromium] › media.spec.ts:8:46 › HSK 2 original word clips 1–8 end at verified boundaries
+  [chromium] › media.spec.ts:8:46 › HSK 2 original word clips 9–13 end at verified boundaries
+  [chromium] › media.spec.ts:8:46 › HSK 3 original word clips 1–8 end at verified boundaries
+  [chromium] › media.spec.ts:8:46 › HSK 3 original word clips 9–16 end at verified boundaries
+  [chromium] › media.spec.ts:8:46 › HSK 3 original word clips 17–23 end at verified boundaries
+  [chromium] › media.spec.ts:13:1 › multi-sentence source uses separate genuine sentence controls and HSK1 scenes preserve URL
+  [chromium] › media.spec.ts:16:1 › pending short word never advertises a verified standalone original clip
+  [chromium] › media.spec.ts:17:1 › supplemental illustration zoom closes by Escape and restores the opener
+  [chromium] › media.spec.ts:18:1 › all three levels load licensed handwriting, animate, practice and reset
   [chromium] › unified.spec.ts:4:66 › shared classroom HSK1 viewport 320
   [chromium] › unified.spec.ts:4:66 › shared classroom HSK2 viewport 320
   [chromium] › unified.spec.ts:4:66 › shared classroom HSK3 viewport 320
@@ -17,6 +26,15 @@ Listing tests:
   [chromium] › unified.spec.ts:16:1 › homework receipts store immutable questions and scores
   [chromium] › unified.spec.ts:19:1 › portal shows all three levels and retains HSK4 and legacy courses
   [chromium] › unified.spec.ts:20:1 › shared backup exports all three course identities and restores only the selected level
+  [webkit] › media.spec.ts:8:46 › HSK 2 original word clips 1–8 end at verified boundaries
+  [webkit] › media.spec.ts:8:46 › HSK 2 original word clips 9–13 end at verified boundaries
+  [webkit] › media.spec.ts:8:46 › HSK 3 original word clips 1–8 end at verified boundaries
+  [webkit] › media.spec.ts:8:46 › HSK 3 original word clips 9–16 end at verified boundaries
+  [webkit] › media.spec.ts:8:46 › HSK 3 original word clips 17–23 end at verified boundaries
+  [webkit] › media.spec.ts:13:1 › multi-sentence source uses separate genuine sentence controls and HSK1 scenes preserve URL
+  [webkit] › media.spec.ts:16:1 › pending short word never advertises a verified standalone original clip
+  [webkit] › media.spec.ts:17:1 › supplemental illustration zoom closes by Escape and restores the opener
+  [webkit] › media.spec.ts:18:1 › all three levels load licensed handwriting, animate, practice and reset
   [webkit] › unified.spec.ts:4:66 › shared classroom HSK1 viewport 320
   [webkit] › unified.spec.ts:4:66 › shared classroom HSK2 viewport 320
   [webkit] › unified.spec.ts:4:66 › shared classroom HSK3 viewport 320
@@ -34,4 +52,4 @@ Listing tests:
   [webkit] › unified.spec.ts:16:1 › homework receipts store immutable questions and scores
   [webkit] › unified.spec.ts:19:1 › portal shows all three levels and retains HSK4 and legacy courses
   [webkit] › unified.spec.ts:20:1 › shared backup exports all three course identities and restores only the selected level
-Total: 34 tests in 1 file
+Total: 52 tests in 2 files

@@ -70,7 +70,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     if (section === 'vocab') {
       const view = mountVocabulary(body, { lesson, content, audio, signal: lifetime.signal,
         getMastered: () => reading.read().mastered, markMastered: reading.setMastered }); disposeView = view.dispose; updateView = view.update;
-    } else if (section === 'text') disposeView = mountText(body, { lesson, content, audio, signal: lifetime.signal }).dispose;
+    } else if (section === 'text') disposeView = mountText(body, { lesson, content, audio, signal: lifetime.signal,scene:context.route.scene,onSceneChange:scene=>context.navigate({...context.route,scene}) }).dispose;
     else if (section === 'grammar') disposeView = mountLanguage(body, { lesson, audio, signal: lifetime.signal }).dispose;
     else if (section === 'hanzi') {
       const view = mountHanzi(body, { chars: lesson.hanzi.chars, words: lesson.vocab, curriculum: lesson.hanzi, signal: lifetime.signal }); disposeView = view.dispose;

@@ -1,3 +1,4 @@
+import {originalSegment,sentenceSegments,isSingleSentence} from "./segment-resolver.ts";
 import { el, button, link, copy, sourceNote } from "./dom.ts";
 import { routeHref, type Route, type Section } from "./router.ts";
 import type {
@@ -47,10 +48,10 @@ export function mountLesson(
   main.dataset.section = section;
   const heading = el(
     "h1",
-    copy(`第${l.number}课 · ${l.title.zh}`, `Bài ${l.number} · ${l.title.vi}`),
+    l.title,
   );
   heading.tabIndex = -1;
-  main.append(heading);
+  const hero=el("header",undefined,"lesson-hero");hero.append(el("p",copy(`第${l.number}课`,`BÀI ${l.number}`),"eyebrow"),heading);main.append(hero);
   const subnav = el("nav", undefined, "textbook-tabs");
   subnav.setAttribute("aria-label", "教材分部 · Các mục giáo trình");
   for (const [id, title] of sections) {
@@ -116,7 +117,7 @@ export function mountLesson(
         const pic = l.illustrationManifest?.find(
           (p) => p.id === f.illustrationId,
         );
-        if (pic){row.append(illustration(pic,c.assetBase));renderedIllustrations.add(pic.id)}
+        if (pic){row.append(illustration(pic,c.assetBase,events.signal));renderedIllustrations.add(pic.id)}
       }
       const label = el("label", f.prompt);
       label.htmlFor = f.id;
@@ -417,6 +418,7 @@ export function mountLesson(
         list.append(el("p", copy("没有符合条件的词汇", "Không có từ phù hợp")));
       for (const w of words) {
         const row = el("article", undefined, "vocabulary-item");
+        row.dataset.wordId=w.id;
         const open = button("", () => {
           const dialog = el("dialog", undefined, "word-dialog"),
             inner = el("div");
@@ -431,6 +433,7 @@ export function mountLesson(
             el("p", `${w.pos} · ${w.vi}`),
             sourceNote(w.source.printedPage),
                 ...(w.supplementarySyllabus?[el("p",copy("★ 教材拓展词（本级超纲）","★ Từ mở rộng trong giáo trình (ngoài phạm vi cấp này)"))]:[]),
+            ...(originalSegment('words',w.id,c.assetBase)?[button(copy('播放单词原音','Nghe từ gốc'),async()=>{const request=originalSegment('words',w.id,c.assetBase)!;const result=await c.audio.play(request,{signal:events.signal});if(!result.ok&&result.code!=='cancelled')c.message(copy('原音未播放，请重试','Chưa phát được âm thanh gốc, hãy thử lại'))})]:[el('p',copy('本词独立原音尚待核验，可听所在整组原音。','Âm thanh riêng của từ này đang chờ kiểm chứng; có thể nghe cả nhóm từ.'))]),
             c.audioControl(
               w.audioTrack,
               copy("听所在生词组原音", "Nghe nhóm từ gốc"),
@@ -445,7 +448,7 @@ export function mountLesson(
               },
             ),
           );
-          const examples = l.texts.flatMap((t) =>
+          const examples = l.texts.filter(t=>t.number===w.sourceText).flatMap((t) =>
             t.lines
               .filter((line) => line.zh.includes(w.zh))
               .map((line) => ({ line, text: t })),
@@ -574,7 +577,7 @@ export function mountLesson(
     body.append(pyLabel);
     body.classList.toggle("show-pinyin", py.checked);
     py.onchange = () => body.classList.toggle("show-pinyin", py.checked);
-    for(const pic of l.illustrationManifest??[])if(pic.textbookRelation?.owner===text.id)body.append(illustration(pic,c.assetBase));
+    for(const pic of l.illustrationManifest??[])if(pic.textbookRelation?.owner===text.id)body.append(illustration(pic,c.assetBase,events.signal));
     const textBody = el("section", undefined, "dialogue-text");
     for (const line of text.lines) {
       const row = el("div", undefined, "dialogue-line");
@@ -584,6 +587,8 @@ export function mountLesson(
         el("p", line.py, "pinyin-line"),
         el("p", line.vi, "vietnamese-line"),
       );
+      const chunks=sentenceSegments(line.id,c.assetBase),original=originalSegment('lines',line.id,c.assetBase);
+      if(chunks.length){const actions=el('div',undefined,'sentence-audio');for(const [i,chunk]of chunks.entries())actions.append(button(copy(`第${i+1}句原音`,`Âm thanh câu ${i+1}`),async()=>{await c.audio.play(chunk.request,{signal:events.signal})}));row.append(actions)}else if(original)row.append(button(isSingleSentence(line.id)?copy('本句原音','Nghe câu gốc'):copy('本段原音','Nghe đoạn gốc'),async()=>{await c.audio.play(original,{signal:events.signal})}));
       textBody.append(row);
     }
     body.append(
@@ -657,7 +662,7 @@ export function mountLesson(
       }
     });
   } else {
-    if(section==='culture')for(const pic of l.illustrationManifest??[])if(pic.textbookRelation?.owner===l.id+':culture')body.append(illustration(pic,c.assetBase));
+    if(section==='culture')for(const pic of l.illustrationManifest??[])if(pic.textbookRelation?.owner===l.id+':culture')body.append(illustration(pic,c.assetBase,events.signal));
     const chosen = l.sections.filter((s) =>
       section === "practice"
         ? ["practice", "activity"].includes(s.kind)
@@ -779,7 +784,7 @@ export function mountLesson(
     main.remove();
   };
 }
-function illustration(pic: Illustration,assetBase:string): HTMLElement {
+function illustration(pic: Illustration,assetBase:string,signal?:AbortSignal): HTMLElement {
   const figure = el("figure", undefined, "teaching-illustration");
   figure.dataset.illustrationId = pic.id;
   if (pic.file && pic.publicationStatus === "approved") {
@@ -787,7 +792,7 @@ function illustration(pic: Illustration,assetBase:string): HTMLElement {
     img.src = new URL(pic.file,new URL(assetBase,location.href)).href;
     img.alt = pic.alt.zh + " · " + pic.alt.vi;
     img.loading = "lazy";
-    figure.append(img);
+    const zoom=button('',()=>{const dialog=el('dialog',undefined,'illustration-dialog'),close=button(copy('关闭大图','Đóng hình lớn'),()=>dialog.close()),large=el('img');large.src=img.src;large.alt=img.alt;dialog.setAttribute('aria-label','查看示意图 · Xem hình minh họa');dialog.append(close,large,el('p',pic.description));document.body.append(dialog);dialog.addEventListener('close',()=>{dialog.remove();if(zoom.isConnected)zoom.focus()},{once:true});signal?.addEventListener('abort',()=>dialog.remove(),{once:true});dialog.showModal();close.focus()});zoom.className='illustration-zoom';zoom.setAttribute('aria-label','放大查看示意图 · Phóng to hình minh họa');zoom.append(img,el('span',copy('放大查看','Phóng to')));figure.append(zoom);
   } else {
     const scene = el("div", undefined, "illustration-description");
     scene.setAttribute("role", "img");

@@ -10,6 +10,7 @@ export interface Route {
   readonly feature: Feature;
   readonly lesson: number;
   readonly section?: Section;
+  readonly scene?:number;
   readonly part?: Part;
   /** Absent is a historical 15-question route. New student links explicitly use 30-v1. */
   readonly homeworkVersion?: '30-v1' | 'legacy';

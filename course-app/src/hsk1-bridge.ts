@@ -40,6 +40,7 @@ export function toHSK1(route: Route): HSK1Route {
       } as const
     )[route.view],
     lesson: route.lesson,
+    scene:route.scene,
     section: ["vocab", "text", "grammar", "hanzi", "practice"].includes(
       route.section ?? "",
     )
@@ -72,6 +73,7 @@ export function fromHSK1(route: HSK1Route): Route {
       Object.entries(partMap).find(([, v]) => v === route.part)?.[0] ??
       "vocabGrammar",
     ...(route.section ? { section: route.section } : {}),
+    ...(route.scene?{scene:route.scene}:{}),
     ...(route.feature === "homework"
       ? { homeworkVersion: route.homeworkVersion ?? "legacy" }
       : {}),

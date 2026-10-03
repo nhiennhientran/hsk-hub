@@ -5,7 +5,7 @@ import type { AudioService } from '../../services/audio/index.ts';
 import type { BookLesson, TextbookContent } from '../../services/content/textbook.ts';
 import { button, element } from './dom.ts';
 
-export function mountText(host: HTMLElement, options: { lesson: BookLesson; content: TextbookContent; audio: AudioService; signal: AbortSignal }): { dispose(): void } {
+export function mountText(host: HTMLElement, options: { lesson: BookLesson; content: TextbookContent; audio: AudioService; signal: AbortSignal;scene?:number;onSceneChange?:(scene:number)=>void }): { dispose(): void } {
   const { lesson, content, audio, signal } = options;
   const copy = textbookCopy.text;
   const section = element('section'); section.id = 'textbook-text'; section.append(element('h2', copy.heading));
@@ -45,16 +45,17 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
     }
     if (mode.checked) show.checked = false; originalVisibility();
   }
+  const selectScene=(index:number)=>{if(options.onSceneChange){audio.stop();options.onSceneChange(index+1)}else draw(index)};
   for (const [index, scene] of lesson.scenes.entries()) {
     const option = element('option', `${index + 1}. ${scene.place} · ${scene.place_vn}`); option.value = String(index); picker.append(option);
-    const tab = button({ zh: `${index + 1}. ${scene.place}`, vi: scene.place_vn }, () => draw(index), signal); tab.classList.add('bilingual-stacked'); tab.dataset.sceneTab = scene.id; tab.id = `scene-tab-${index}`; tab.setAttribute('role', 'tab'); tab.setAttribute('aria-controls', body.id);
+    const tab = button({ zh: `${index + 1}. ${scene.place}`, vi: scene.place_vn }, () => selectScene(index), signal); tab.classList.add('bilingual-stacked'); tab.dataset.sceneTab = scene.id; tab.id = `scene-tab-${index}`; tab.setAttribute('role', 'tab'); tab.setAttribute('aria-controls', body.id);
     tab.addEventListener('keydown', event => {
       if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
       event.preventDefault(); const target = event.key === 'Home' ? 0 : event.key === 'End' ? lesson.scenes.length - 1 : (current + (event.key === 'ArrowRight' ? 1 : -1) + lesson.scenes.length) % lesson.scenes.length;
-      draw(target); tabButtons[target].focus();
+      selectScene(target); tabButtons[target].focus();
     }, { signal }); tabs.append(tab); tabButtons.push(tab);
   }
-  picker.addEventListener('change', () => draw(Number(picker.value)), { signal });
+  picker.addEventListener('change', () => selectScene(Number(picker.value)), { signal });
   mode.addEventListener('change', () => { show.checked = !mode.checked; originalVisibility(); }, { signal });
   show.addEventListener('change', originalVisibility, { signal });
   pickerLabel.append(picker); toolbar.append(pickerLabel, modeLabel, showLabel); section.append(tabs, toolbar, body);
@@ -68,6 +69,6 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
     }
     const control = button(copy.tonguePlay, () => { void audio.play({ ...tongue.request, label: bilingualText(copy.tongueLabel(lesson.id)) }, { signal }); }, signal); control.dataset.tongueAudio = String(lesson.id); box.append(control); section.append(box);
   }
-  host.append(section); signal.addEventListener('abort', () => sceneLifetime?.abort(), { once: true }); draw(0);
+  host.append(section); signal.addEventListener('abort', () => sceneLifetime?.abort(), { once: true }); draw(Math.max(0,Math.min((options.scene??1)-1,lesson.scenes.length-1)));
   return { dispose() { sceneLifetime?.abort(); section.remove(); } };
 }

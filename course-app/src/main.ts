@@ -1,3 +1,4 @@
+import {loadSegments} from "./segments.ts";
 import type {BackupProvider} from "./backup-view.ts";
 import { mountListening } from "./listening-view.ts";
 import { mountLesson } from "./lesson-view.ts";
@@ -97,9 +98,10 @@ let store = levelStore(level === 3 ? 3 : 2);
 const audio = createBrowserAudioService();
 let available = availableLessons(config);
 let loaded: Lesson[] = [];
-let route = location.hash.startsWith("#/")
+const legacyHSK1Entry=level===1&&/\/(?:lesson|learning|lesson9-pilot)\.html$/.test(location.pathname);
+let route = location.hash.startsWith("#/")||legacyHSK1Entry
     ? fromHSK1(parseHSK1Route(location.href))
-    : parseRoute(location.hash, level === 3 ? 18 : 15, level),
+    : parseRoute(location.hash||`#view=${document.querySelector<HTMLMetaElement>('meta[name="hsk-entry-view"]')?.content??'courses'}`, level === 3 ? 18 : 15, level),
   generation = 0,
   cleanup: () => void = () => {},
   draftTimer: ReturnType<typeof setTimeout> | undefined,
@@ -188,11 +190,12 @@ function syncStatus() {
   }
   status.hidden = false;
   const s = store.snapshot();
-  status.replaceChildren(el("span", stateLabel[s.status]));
+  status.replaceChildren(el("span",s.status==="unsaved"&&!s.issue?copy("正在自动保存…","Đang tự động lưu…"):stateLabel[s.status]));
   status.dataset.status = s.status;
+  status.dataset.problem=String(!!s.issue||["conflict","corrupt","unavailable"].includes(s.status));
   if (s.issue) status.append(el("span", s.issue));
   if (
-    s.hasUnsavedChanges ||
+    !!s.issue ||
     ["conflict", "corrupt", "unavailable"].includes(s.status)
   )
     status.append(
@@ -474,6 +477,8 @@ async function render() {
         .filter((n) => !loaded.some((l) => l.number === n))
         .map((n) => loadLesson(config, n)),
     );
+    if(token!==generation||config!==requestedConfig)return;
+    await loadSegments();
     if(token!==generation||config!==requestedConfig)return;
     loaded.push(...lessons.filter(l=>l.courseId===requestedConfig.id&&!loaded.some(old=>old.id===l.id)));
     if (requestedRoute.view === "practice") await loadLexicon(requestedConfig);
