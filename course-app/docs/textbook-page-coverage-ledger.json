@@ -29,7 +29,7 @@
     }
   ],
   "totalPages": 422,
-  "updated": "2026-10-03",
+  "updated": "2026-10-03T05:34:00Z",
   "statusDefinitions": {
     "pending": "No fresh visual inspection of this page in this revision. Any content bindings are an inventory, not acceptance.",
     "author_visual_verified": "The content author inspected the freshly rendered page; not independent review, not proof of UI or final image coverage.",
@@ -53,7 +53,7 @@
     {
       "path": "page-coverage/hsk2-answers-front-appendices.json",
       "pages": 14,
-      "sha256": "9e153269835874da06bc2473f6cf46594e4ea35991cbaeab9372ee2a1560107c"
+      "sha256": "0a7d4333a91b158e59cc7f9c348b917a50592beb6e2fda01db8c64877bcb36bf"
     },
     {
       "path": "page-coverage/hsk2-answers-lesson-01.json",
@@ -88,7 +88,7 @@
     {
       "path": "page-coverage/hsk2-textbook-front-appendices.json",
       "pages": 22,
-      "sha256": "4dc88fa3dbf475c50e92060ca730c8ae837d226f9b2c83c9e7ba52fcbfd328cb"
+      "sha256": "2e674321bbea5a43c5510373665976951768b7035e768fa025e0907a96a209e1"
     },
     {
       "path": "page-coverage/hsk2-textbook-lesson-01.json",
@@ -98,12 +98,12 @@
     {
       "path": "page-coverage/hsk2-textbook-lesson-02.json",
       "pages": 9,
-      "sha256": "1050c4dc0432e003dc65b6fca9193a2ebba3ab12c9a55fd4a91a095583b145b6"
+      "sha256": "27253cc456a9366ecc9f791fb3c8cda218929997192d6e6fb8110ea7866d8100"
     },
     {
       "path": "page-coverage/hsk2-textbook-lesson-03.json",
       "pages": 10,
-      "sha256": "fbcb1831d3a72a91a2fc8fda1928de93415a57d5b025f463911190ee4b818677"
+      "sha256": "8ced51cc157bcfd3bc3821f6b55a5839f4a0c226d6d78f47c8f62820d0ef7935"
     },
     {
       "path": "page-coverage/hsk2-textbook-lesson-04.json",
@@ -312,5 +312,5 @@
     }
   ],
   "preservedPageCount": 422,
-  "note": "Each original page entry is preserved in its document/lesson shard. This index is not a content-completion claim."
+  "note": "All422 page records preserved. HSK2 lessons1–3 and HSK3 lesson1 have authored interaction models; every page retains its own explicit source, independent and browser status. Do not infer corpus completion from record counts."
 }

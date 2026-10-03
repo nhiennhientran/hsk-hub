@@ -1,3 +1,4 @@
+import {verifyActivities} from './verify-activities.mjs';
 import {verifyLexicon} from './verify-lexicon.mjs';
 import {verifySourceGuards} from './source-guards.mjs';
 import {readFileSync,readdirSync,existsSync,mkdirSync,writeFileSync} from 'node:fs';
@@ -17,7 +18,7 @@ for(const level of [2,3]){
  if(!pilot)check(files.length===counts[level],`HSK${level}: ${files.length}/${counts[level]} lessons`);
  for(const file of files){const l=JSON.parse(readFileSync(resolve(dir,file),'utf8')),tag=`HSK${level} lesson ${l.number}`,prefix=`hsk${level}-fltrp-2026:l${String(l.number).padStart(2,'0')}`;
  check(l.schemaVersion===1&&l.courseId===`hsk${level}-fltrp-2026`&&l.version==='2026.1'&&l.id===prefix,tag+' identity');check(copy(l.title)&&text(l.title.py),tag+' title');
- fullLessons.push(l);
+ fullLessons.push(l);issues.push(...verifyActivities(l));
  const source=s=>{check(s?.pdfPage>=l.source.startPdfPage&&s?.pdfPage<=l.source.endPdfPage,tag+' source outside lesson');check(s&&Number.isInteger(s.pdfPage)&&Number.isInteger(s.printedPage)&&s.pdfPage-s.printedPage===(level===2?15:12)&&text(s.section)&&['textbook','supplemental'].includes(s.provenance),tag+' source mapping')};
  const id=x=>{check(text(x.id)&&x.id.startsWith(prefix+':')&&!seen.has(x.id),tag+' duplicate or wrong id '+x.id);seen.add(x.id);source(x.source)};
  for(const key of ['objectives','warmup','texts','vocabulary','grammar','sections','homework','listening'])check(Array.isArray(l[key])&&l[key].length>0,tag+' missing '+key);

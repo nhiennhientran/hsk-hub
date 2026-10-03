@@ -112,7 +112,7 @@ export function mountLesson(
       feedback.replaceChildren();
     };
     const renderedIllustrations=new Set<string>();
-    function field(f: ActivityField) {
+    function field(f: ActivityField, cell=false) {
       const row = el("div", undefined, "activity-field");
       if (f.illustrationId&&!renderedIllustrations.has(f.illustrationId)) {
         const pic = l.illustrationManifest?.find(
@@ -121,6 +121,7 @@ export function mountLesson(
         if (pic){row.append(illustration(pic,c.assetBase,events.signal));renderedIllustrations.add(pic.id)}
       }
       const label = el("label", f.prompt);
+      if(cell)label.classList.add("matrix-check-label");
       label.htmlFor = f.id;
       row.append(label);
       if (f.input === "select") {
@@ -164,7 +165,15 @@ export function mountLesson(
       }
       return row;
     }
-    a.fields.forEach((f) => fields.append(field(f)));
+    if(a.matrix){
+      const table=el('table',undefined,'self-assessment-matrix'),head=el('thead'),headRow=el('tr');
+      table.append(el('caption',a.title));
+      const subject=el('th',copy('语言点与例句','Ngữ pháp và ví dụ'));subject.setAttribute('scope','col');headRow.append(subject);
+      for(const col of a.matrix.columns){const th=el('th',col);th.setAttribute('scope','col');headRow.append(th)}
+      head.append(headRow);table.append(head);const rows=el('tbody');
+      for(const entry of a.matrix.rows){const tr=el('tr'),th=el('th',entry.prompt);th.setAttribute('scope','row');tr.append(th);for(const id of entry.fieldIds){const f=a.fields.find(f=>f.id===id);if(!f)throw Error('Missing self-assessment matrix field');const td=el('td');td.append(field(f,true));tr.append(td)}rows.append(tr)}
+      table.append(rows);fields.append(table);
+    }else a.fields.forEach((f) => fields.append(field(f)));
     wrap.append(fields);
     function showFeedback() {
       feedback.replaceChildren();
@@ -664,8 +673,10 @@ export function mountLesson(
       body.append(el("h2", s.title));
       const exact = mapped(s.id);
       if (exact.length) {
-        for(const b of s.blocks)if(["instruction","example","paragraph"].includes(b.kind))body.append(el("p",b));
+        const hints=s.blocks.filter(b=>b.source?.provenance==='supplemental'&&/^图片描述/.test(b.zh));
+        for(const b of s.blocks)if(["instruction","example","paragraph"].includes(b.kind)&&!hints.includes(b))body.append(el("p",b));
         exact.forEach((a) => body.append(activity(a)));
+        if(hints.length){const details=el('details',undefined,'picture-editorial-hints');details.append(el('summary',copy('图片文字提示（含参考表达）','Gợi ý bằng chữ cho hình (có cách diễn đạt tham khảo)')));for(const hint of hints)details.append(el('p',hint));body.append(details)}
         continue;
       }
       for (const [i, b] of s.blocks.entries()) {

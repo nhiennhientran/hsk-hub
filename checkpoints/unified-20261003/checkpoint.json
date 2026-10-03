@@ -73,7 +73,7 @@
     }
   ],
   "checks": {
-    "course_unit": "39 passed at local f731d303",
+    "course_unit": "42 passed",
     "hsk1_unit": "335 passed at local f731d303",
     "course_build": "passed",
     "nonempty_storage": "passed in successful checkpoint for cross-level drafts, legacy HSK3 preservation and scoped backup restore",
@@ -82,26 +82,26 @@
     "human_listening": "not run"
   },
   "publication": "blocked until all sixteen required acceptance gates pass",
-  "updated": "2026-10-03T05:05:00Z",
+  "updated": "2026-10-03T05:35:00Z",
   "remoteSourceCommit": "aa3ee66457860403166ad57d037097010f0b9a54",
   "localSourceCommit": "f731d30357c8a1352871e59f91003e42d11c3e0d",
   "testedSuccessfulCheckpoint": {
-    "remote": "aa3ee66457860403166ad57d037097010f0b9a54",
-    "local": "f731d30357c8a1352871e59f91003e42d11c3e0d",
-    "tree": "54788827107648743fa0de30d878ac881d2e444f",
-    "run": 37097911726,
+    "remote": "6a091595f79aeb17d23d648f25135559c93f04cc",
+    "local": "8b749de67b9b64e5b92a806ea05938d62acaa94b",
+    "tree": "fc81b1f41346e4db3e665559e36df2f468bf1d88",
+    "run": 37098888704,
     "browsers": [
       "chromium",
       "webkit"
     ],
-    "tests": 52,
-    "scope": "Five native HSK1 / seven HSK2+3 sections at four widths; actual 36 word clips; one genuine sentence; zoom; all three handwriting modules; drafts, immutable receipts, backup restore. Full 54 sentence browser playback is the next pending expansion."
+    "tests": 68,
+    "scope": "Pilot all54 actual source sentences and36 words played in each engine with individually retained native event bounds; full pilot section/viewport matrix and data flows"
   },
   "currentCI": {
-    "run": 37097911726,
+    "lastRun": 37098888704,
     "status": "success",
-    "testsExecuted": 52,
-    "nextLocalTestsDiscoverable": 68
+    "nextLocalTestsDiscoverable": 86,
+    "nextScope": "HSK2 lessons2/3 source-reviewed integration; self-assessment9x2 matrix and withheld image hints; actual refresh/backup restore"
   },
   "contentPilot": {
     "levels": [
@@ -123,10 +123,21 @@
   "phasesNote": "Steps1–4 foundation/pilot work progressed. No claim that all16 gates or all33 new-course deep reviews have passed. Later lesson authoring, all48-class regressions, immutable final assembly and production deployment remain pending.",
   "draftOnly": {
     "hsk2Lessons": [
-      2,
-      3
+      4,
+      5
     ],
-    "merged": false,
-    "reviewStatus": "author preparing source-grounded draft; independent review pending"
+    "activities": 52,
+    "fields": 102,
+    "illustrations": 29,
+    "independentSource": "in_progress",
+    "merged": false
+  },
+  "contentBatch23": {
+    "activities": 55,
+    "fields": 117,
+    "illustrations": 25,
+    "independentSource": "passed",
+    "independentTemplateRecheck": "passed",
+    "browser": "pending"
   }
 }

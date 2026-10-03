@@ -1,0 +1,1475 @@
+{
+  "date": "2026-10-03",
+  "scope": "independent source/data/asset and renderer-structure review; browser attempt blocked",
+  "result": "data-and-asset-checks-pass; integration-hold-for-two-findings",
+  "checks": [
+    {
+      "check": "L2: every pre-existing data key/value unchanged, not only counts",
+      "passed": true
+    },
+    {
+      "check": "L2: original 30 supplemental homework items deep-equal",
+      "passed": true
+    },
+    {
+      "check": "L2: homework distribution 25 automatic + 5 manual",
+      "passed": true
+    },
+    {
+      "check": "L2: source-confirmed official key warmup-matching",
+      "passed": true
+    },
+    {
+      "check": "L2: exact answer-book lesson/page attribution warmup-matching",
+      "passed": true
+    },
+    {
+      "check": "L2: source-confirmed official key text1-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: exact answer-book lesson/page attribution text1-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: retained listen-twice text1-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: retained role-reading text1-reading",
+      "passed": true
+    },
+    {
+      "check": "L2: source-confirmed official key text2-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: exact answer-book lesson/page attribution text2-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: retained listen-twice text2-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: retained role-reading text2-reading",
+      "passed": true
+    },
+    {
+      "check": "L2: source-confirmed official key text3-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: exact answer-book lesson/page attribution text3-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: retained listen-twice text3-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: retained role-reading text3-reading",
+      "passed": true
+    },
+    {
+      "check": "L2: source-confirmed official key text4-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: exact answer-book lesson/page attribution text4-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: retained listen-twice text4-listening",
+      "passed": true
+    },
+    {
+      "check": "L2: source-confirmed official key text4-reading",
+      "passed": true
+    },
+    {
+      "check": "L2: exact answer-book lesson/page attribution text4-reading",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count grammar1-practice1",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count grammar1-practice2",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count grammar1-practice3",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count grammar2-practice1",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count grammar2-practice2",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count grammar2-practice3",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count grammar3-practice1",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count grammar3-practice2",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count grammar3-practice3",
+      "passed": true
+    },
+    {
+      "check": "L2: source-confirmed official key comprehensive-words",
+      "passed": true
+    },
+    {
+      "check": "L2: exact answer-book lesson/page attribution comprehensive-words",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count picture-dialogue1",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count picture-dialogue2",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count picture-dialogue3",
+      "passed": true
+    },
+    {
+      "check": "L2: original blank count picture-dialogue4",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:objective1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:objective2: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:objective3: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:objective4: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:preference-1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:preference-2: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:preference-3: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:text1-reading-1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:text1-reading-2: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:text2-reading-1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:text2-reading-2: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:text3-reading-1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:text3-reading-2: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:grammar1-practice1-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:grammar1-practice2-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:grammar1-practice3-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:grammar2-practice1-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:grammar2-practice2-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:grammar2-practice3-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:grammar3-practice1-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:grammar3-practice2-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:grammar3-practice3-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:picture1-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:picture2-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:picture3-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:picture4-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:field:roleplay-notes: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "L2: exactly 19 official fields",
+      "passed": true
+    },
+    {
+      "check": "L2: unique activity/field IDs",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word01 公交车: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word01: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word02 但: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word02: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word03 车站: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word03: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word04 远: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word04: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word05 打车: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word05: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word06 还是: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word06: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word07 北京大学: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word07: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word08 啊: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word08: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word09 万: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word09: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word10 名: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word10: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word11 网上: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word11: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word12 外国: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word12: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word13 间: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word13: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word14 教室: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word14: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word15 票: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word15: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word16 别: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word16: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word17 过来: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:word17: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-1: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-1: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-1: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-1: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-2: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-2: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-2: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-2: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-3: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-3: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-3: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-3: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-4: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-4: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-4: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:warmup-4: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text1: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text1: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text1: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text1: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text2: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text2: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text2: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text2: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text3: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text3: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text3: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text3: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text4: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text4: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text4: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:text4: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-1: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-1: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-1: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-1: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-2: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-2: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-2: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-2: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-3: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-3: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-3: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-3: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-4: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-4: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-4: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:practice-4: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:culture: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:culture: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:culture: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l02:illustration:culture: no release copy",
+      "passed": true
+    },
+    {
+      "check": "L3: every pre-existing data key/value unchanged, not only counts",
+      "passed": true
+    },
+    {
+      "check": "L3: original 30 supplemental homework items deep-equal",
+      "passed": true
+    },
+    {
+      "check": "L3: homework distribution 25 automatic + 5 manual",
+      "passed": true
+    },
+    {
+      "check": "L3: source-confirmed official key warmup-matching",
+      "passed": true
+    },
+    {
+      "check": "L3: exact answer-book lesson/page attribution warmup-matching",
+      "passed": true
+    },
+    {
+      "check": "L3: source-confirmed official key text1-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: exact answer-book lesson/page attribution text1-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: retained listen-twice text1-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: retained role-reading text1-reading",
+      "passed": true
+    },
+    {
+      "check": "L3: source-confirmed official key text2-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: exact answer-book lesson/page attribution text2-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: retained listen-twice text2-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: retained role-reading text2-reading",
+      "passed": true
+    },
+    {
+      "check": "L3: source-confirmed official key text3-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: exact answer-book lesson/page attribution text3-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: retained listen-twice text3-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: retained role-reading text3-reading",
+      "passed": true
+    },
+    {
+      "check": "L3: source-confirmed official key text4-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: exact answer-book lesson/page attribution text4-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: retained listen-twice text4-listening",
+      "passed": true
+    },
+    {
+      "check": "L3: source-confirmed official key text4-reading",
+      "passed": true
+    },
+    {
+      "check": "L3: exact answer-book lesson/page attribution text4-reading",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count grammar1-practice1",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count grammar1-practice2",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count grammar1-practice3",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count grammar2-practice1",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count grammar2-practice2",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count grammar2-practice3",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count grammar3-practice1",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count grammar3-practice2",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count grammar3-practice3",
+      "passed": true
+    },
+    {
+      "check": "L3: source-confirmed official key comprehensive-words",
+      "passed": true
+    },
+    {
+      "check": "L3: exact answer-book lesson/page attribution comprehensive-words",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count picture-dialogue1",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count picture-dialogue2",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count picture-dialogue3",
+      "passed": true
+    },
+    {
+      "check": "L3: original blank count picture-dialogue4",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:objective1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:objective2: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:objective3: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:objective4: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:verb-object-1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:verb-object-2: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:verb-object-3: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:verb-object-4: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:verb-object-5: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:verb-object-6: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:text1-reading-1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:text1-reading-2: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:text2-reading-1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:text2-reading-2: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:text3-reading-1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:text3-reading-2: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:grammar1-practice1-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:grammar1-practice2-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:grammar1-practice3-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:grammar2-practice1-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:grammar2-practice2-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:grammar2-practice3-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:grammar3-practice1-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:grammar3-practice2-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:grammar3-practice3-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:grammar3-practice3-blank2: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:picture1-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:picture2-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:picture3-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:picture4-blank1: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:roleplay-notes: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-remembered: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-not-remembered: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-1-understand: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-1-use: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-2-understand: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-2-use: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-3-understand: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-3-use: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-4-understand: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-4-use: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-5-understand: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-5-use: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-6-understand: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-6-use: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-7-understand: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-7-use: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-8-understand: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-8-use: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-9-understand: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-grammar-9-use: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:field:review-improve: non-official has no grade key or official source",
+      "passed": true
+    },
+    {
+      "check": "L3: exactly 19 official fields",
+      "passed": true
+    },
+    {
+      "check": "L3: unique activity/field IDs",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word01 回来: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word01: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word02 这么: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word02: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word03 完: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word03: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word04 一起: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word04: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word05 出去: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word05: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word06 洗: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word06: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word07 自己: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word07: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word08 拿: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word08: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word09 手: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word09: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word10 为什么: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word10: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word11 不错: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word11: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word12 送: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word12: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word13 回去: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word13: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word14 每: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word14: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word15 累: exact appendix entry and absent star visually confirmed",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:word15: contextual sourceText contains word",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-1: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-1: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-1: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-1: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-2: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-2: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-2: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-2: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-3: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-3: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-3: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-3: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-4: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-4: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-4: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:warmup-4: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text1: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text1: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text1: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text1: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text2: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text2: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text2: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text2: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text3: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text3: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text3: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:text3: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-1: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-1: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-1: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-1: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-2: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-2: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-2: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-2: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-3: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-3: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-3: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-3: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-4: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-4: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-4: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:practice-4: no release copy",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:culture: manifest matches independently rendered source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:culture: self-authored schematic and unpublished labels",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:culture: no embedded raster/script/external source",
+      "passed": true
+    },
+    {
+      "check": "hsk2-fltrp-2026:l03:illustration:culture: no release copy",
+      "passed": true
+    },
+    {
+      "check": "还是: distinct recommendation adverb / alternative conjunction, independently read PDF26 and102",
+      "passed": true
+    },
+    {
+      "check": "L2: real mountLesson structure reaches every activity exactly once",
+      "passed": true
+    },
+    {
+      "check": "L2: real mountLesson structure reaches every field exactly once",
+      "passed": true
+    },
+    {
+      "check": "L3: real mountLesson structure reaches every activity exactly once",
+      "passed": true
+    },
+    {
+      "check": "L3: real mountLesson structure reaches every field exactly once",
+      "passed": true
+    }
+  ],
+  "dataIssues": [],
+  "lessons": [
+    {
+      "lesson": 2,
+      "activities": 26,
+      "fields": 46,
+      "assessmentCounts": {
+        "open": 8,
+        "official": 19,
+        "reference": 19
+      },
+      "vocabulary": 17,
+      "illustrations": 13,
+      "homework": 30
+    },
+    {
+      "lesson": 3,
+      "activities": 29,
+      "fields": 71,
+      "assessmentCounts": {
+        "open": 26,
+        "official": 19,
+        "reference": 26
+      },
+      "vocabulary": 15,
+      "illustrations": 12,
+      "homework": 30
+    }
+  ],
+  "snapshots": [
+    {
+      "file": "course-app/content/hsk2/lesson-02.json",
+      "sha256": "42efd0c5b5659a4013e4816499ad278836b7a5ae724fcb5ca971b626f4dfcdd8"
+    },
+    {
+      "file": "course-app/drafts/hsk2/lesson-02.json",
+      "sha256": "704d0085849421a892a3d353a18fdfcc4cc8c7d0fe101c43dad34c88d86c9022"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-warmup-1.svg",
+      "sha256": "b8d274c51b955b0b171dfb17b0b0bcab711d9338fe7d1ea0b82ecb6f8c0de80e"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-warmup-2.svg",
+      "sha256": "1ba4fce391658ab32437874b3e9d88e91d3ea1b30124590bb03f6f3e904b2f78"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-warmup-3.svg",
+      "sha256": "618bbfd371d9f8106049bd7742b61445027f433a130f897c7d56b5ca4eac3d92"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-warmup-4.svg",
+      "sha256": "7210e44de23466cc3bf5fe75837c5d9bd4d2a97bce70513716465c85c4e65edc"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-text1.svg",
+      "sha256": "85fb0ad9899865c56d3194d72b7c1895ee6cc4686d41d33ab5b29acba5769b5c"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-text2.svg",
+      "sha256": "10639f4da3943585fb5a4bcc0242056d68a3038cb7b632065f5fd2159919e540"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-text3.svg",
+      "sha256": "1a6e10e39e074b07832fda8bad19d64de06fc408dbc21ea1c398b8738f4cd3a4"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-text4.svg",
+      "sha256": "c10ffadc85c437e2eb5f5c7868ea63e7f884cedfc5258225ef49e223b897b781"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-practice-1.svg",
+      "sha256": "33726733a656ccd448b2986bb095574e29845bbd2d03c2c0d452335a518f8bd1"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-practice-2.svg",
+      "sha256": "07fadb63c283054e66d4638242bd2e0899849cabd76a10857d2a254af9e55ddb"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-practice-3.svg",
+      "sha256": "95d0b5f885a9924eff05b2eb9c787c33f0d97e6c96b60a12ec9c7b5cb840f5d1"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-practice-4.svg",
+      "sha256": "5538d49a8ffb8df2cd376e7f416b6c43d6e5ee9dbb54175ef11ab6f0a70f9fd2"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l02-culture.svg",
+      "sha256": "f56fc21e35df93fab69f1fac70df84a91abd6f9c16c8cdb793665362104f5c17"
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-03.json",
+      "sha256": "8106b732fe9fd9b8c06494a4276306e1a4ea55f6467ca9a1cf217e144447063d"
+    },
+    {
+      "file": "course-app/drafts/hsk2/lesson-03.json",
+      "sha256": "c905cd6951fb8f4a370d1712270ae5e71dec911726b215ad7a896c77d1a3ca17"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-warmup-1.svg",
+      "sha256": "f081f90edb43734f5638cf094036142d3031a37ae5f91041d4f511622517fa36"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-warmup-2.svg",
+      "sha256": "370a40fc312ca9be2921bdc37409616c311a30b390e8e904610680da73efe0af"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-warmup-3.svg",
+      "sha256": "3ae546c2c38f1f4ce1c9cf56d14b9675eae2431de1401b000530f9560f3725cd"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-warmup-4.svg",
+      "sha256": "648f80bec718e726d053cf61ab638316fc9ad9ca419f03aacfbf02b6de10dbca"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-text1.svg",
+      "sha256": "c3b2043fda5700a01456344a993b6444aef91da79190b41733346ed4b4f1ec07"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-text2.svg",
+      "sha256": "f2a2763824fd82e00f89cec939252acfd28c99c2c5d095f469ad4305d2197b2b"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-text3.svg",
+      "sha256": "93408366f159a35ac0e498e0c417c4c52908110ea61b963234ff4ddcec3f730b"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-practice-1.svg",
+      "sha256": "9a34b449eee25f8e0c327f477a9a882212c84d0affbd0d84ddc1cf4f697db2c6"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-practice-2.svg",
+      "sha256": "0777c39ce89973f10c82dd91eef887f106b4d094217acdbc66d2f6123a55ba0f"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-practice-3.svg",
+      "sha256": "88c9d3a9f67c225bb8d51b0bc1d4b6efb6f946f21a228c4fdb9b7c2083f48b8f"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-practice-4.svg",
+      "sha256": "37ac8e628377f98ed83843d701924536454a300110f1f40fd67c5bd67b8cdce3"
+    },
+    {
+      "file": "course-app/drafts/illustrations/hsk2-l03-culture.svg",
+      "sha256": "0cbce2b455a314bba00e1a977ea492096b56e49181fb85e51d5cbb637ce5eab5"
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "sha256": "7945836db8da11f0559677bc62670910b26a59e52fda1d9bd1fd72b2f7434344"
+    },
+    {
+      "file": "course-app/src/style.css",
+      "sha256": "ee61e1c3946951a105f42b90dfd760371693897a909a6fd0d2309ead8d4aea02"
+    },
+    {
+      "file": "course-app/content/hsk2-lexicon.json",
+      "sha256": "fe9e1342d8f6729330f538078543701898fa90388094bc714a5ecd1b3c398458"
+    }
+  ],
+  "browserStatus": "blocked: Chromium socket EPERM; no new browser pixel claim",
+  "integrationFindings": [
+    "IR-01: source nine-row/two-column matrix becomes 18 ungrouped block fields",
+    "IR-02: legacy supplemental picture-description paragraph reveals target words before picture tasks"
+  ]
+}
