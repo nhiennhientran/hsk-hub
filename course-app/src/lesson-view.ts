@@ -131,7 +131,7 @@ export function mountLesson(
         select.id = f.id;
         const empty = el(
           "option",
-          copy("请选择", "Hãy chọn").zh + " · Hãy chọn",
+          a.menu ? "选 · Chọn" : copy("请选择", "Hãy chọn").zh + " · Hãy chọn",
         );
         empty.value = "";
         select.append(empty);
@@ -642,15 +642,20 @@ export function mountLesson(
         el("p", g.structure, "structure"),
         el("p", g.explanation),
       );
-      for (const x of g.examples) {
-        const ex = el("div", undefined, "example");
-        ex.append(
-          el("p", x.zh, "chinese-line"),
-          el("p", x.py, "pinyin-visible"),
-          el("p", x.vi),
-        );
-        sec.append(ex);
-      }
+      const example=(x:Lesson['grammar'][number]['examples'][number],explanationSource=g.source)=>{
+        const ex=el('div',undefined,'example');
+        ex.append(el('p',x.zh,'chinese-line'),el('p',x.py,'pinyin-visible'),el('p',x.vi));if(x.source.pdfPage!==explanationSource.pdfPage||x.source.printedPage!==explanationSource.printedPage||x.source.provenance!==explanationSource.provenance)ex.append(sourceNote(x.source.printedPage,x.source.provenance==='supplemental'));return ex;
+      };
+      const presentation=l.grammarPresentations?.find(p=>p.grammarId===g.id);
+      if(presentation){
+        sec.append(el('p',copy('按教材用法分组，保留全部原例句','Nhóm theo cách dùng trong sách, giữ đầy đủ các ví dụ gốc'),'task-note'));
+        for(const [index,group]of presentation.groups.entries()){
+          const part=el('section',undefined,'grammar-explanation-group');part.dataset.grammarGroup=String(index+1);
+          part.append(el('h3',group.title),el('p',group.explanation));
+          for(const i of group.exampleIndices)part.append(example(g.examples[i],group.source));
+          part.append(sourceNote(group.source.printedPage));sec.append(part);
+        }
+      }else for(const x of g.examples)sec.append(example(x));
       sec.append(sourceNote(g.source.printedPage));
       body.append(sec);
       const exact = mapped(g.id);
@@ -701,7 +706,7 @@ export function mountLesson(
       body.append(el("h2", s.title));
       const exact = mapped(s.id);
       if (exact.length) {
-        const hints=s.blocks.filter(b=>b.source?.provenance==='supplemental'&&/^图片描述/.test(b.zh));
+        const hints=s.blocks.filter(b=>b.source?.provenance==='supplemental'&&/^图片(?:描述|说明)/.test(b.zh));
         for(const b of s.blocks)if(["instruction","example","paragraph"].includes(b.kind)&&!hints.includes(b))body.append(el("p",b));
         exact.forEach((a) => body.append(activity(a)));
         if(hints.length){const details=el('details',undefined,'picture-editorial-hints');details.append(el('summary',copy('图片文字提示（含参考表达）','Gợi ý bằng chữ cho hình (có cách diễn đạt tham khảo)')));for(const hint of hints)details.append(el('p',hint));body.append(details)}

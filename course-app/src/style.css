@@ -656,3 +656,8 @@ h1.bi>span[lang=vi],h1>.bilingual-vi{font-size:17px;font-weight:450;line-height:
 @media(max-width:640px){.activity-menu-section{padding:10px}.activity-menu-title{padding:12px}.activity-menu .activity-field select{font-size:16px;padding-left:5px;padding-right:18px}.activity-support-figures{grid-template-columns:1fr}}
 
 .matrix-row-source{display:block;margin-top:.5rem;font-size:.8rem;font-weight:400;color:var(--muted)}
+
+.grammar-explanation-group{border-left:3px solid var(--gold);padding:4px 0 4px 18px;margin:24px 0}
+.grammar-explanation-group h3{font-size:20px;color:var(--green-700);margin:0 0 12px}
+.grammar-explanation-group>.source-note{display:block;margin-top:12px}
+@media(max-width:640px){.grammar-explanation-group{padding-left:12px}}

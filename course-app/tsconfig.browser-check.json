@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {"types": ["node"]},
+  "include": [
+    "tests/unified/lesson-ready.ts",
+    "tests/unified/hsk3-lesson-batch.spec.ts",
+    "tests/unified/hsk3-lessons45.spec.ts"
+  ]
+}

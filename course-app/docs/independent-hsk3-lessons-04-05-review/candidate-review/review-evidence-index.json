@@ -1,0 +1,995 @@
+{
+  "date": "2026-10-03",
+  "status": "accepted-reviewed-local-source-renderer-state-and-readiness-scope",
+  "parentOwns": [
+    "runtime integration",
+    "remote CI execution",
+    "native browser screenshots and behavior",
+    "audio listening/alignment",
+    "release authorization"
+  ],
+  "executedCounts": {
+    "sourcePagesOpenedAndFreshRenderPixelIdentical": 30,
+    "originalSvgPixelsOpened": 28,
+    "dataChecks": 8548,
+    "rendererStateChecks": 1886,
+    "priorL2L3RendererStateRegressionChecks": 1723,
+    "rowSourceChecks": 156,
+    "deferredSaveAssertions": 12,
+    "deferredSaveScenarios": 9,
+    "readinessAdversarialChecks": 38,
+    "negativeCorruptionsRejected": 40,
+    "unitTestsPassed": 71,
+    "currentNativeBrowserIdentitiesRetained": 268,
+    "additionalL4L5BrowserCasesCollected": 24,
+    "nativeBrowsersExecutedByThisReviewer": 0
+  },
+  "finalInputsUnchangedSinceSnapshot": true,
+  "files": [
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+      "sha256": "4cda1a5dea8b3bff054ba962202008f7e0556502751f4554813bacaccf94ad54",
+      "bytes": 10819
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/assertion-preservation.json",
+      "sha256": "9014bed263a785ffe206fbeb2f85c2b0bf0bde7703d2634f61b48db2cc89c7f4",
+      "bytes": 2733
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/browser-candidate-code-review.md",
+      "sha256": "930768230685de192cbebe294db7f547352d347c6de67d0aaf586b9b3df7c811",
+      "bytes": 3560
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/browser-candidate-collection.log",
+      "sha256": "a95010b5ba7eca671834e57fb70c1bf23a63e79cf08d84f72bec9bd639fee7a2",
+      "bytes": 3023
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/browser-candidate-reviewed.spec.ts",
+      "sha256": "07aac850d424219fe17230ed2a04d13b1c1c27815f6bb3c2c40a96021fe712d9",
+      "bytes": 14133
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/browser-candidate-source.ts.txt",
+      "sha256": "d11b72e05d351b582f5a9d06c40cb1b8840a9d556ebfa755c921cb998409001e",
+      "bytes": 14118
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/browser-candidate-tsconfig.json",
+      "sha256": "1e1bdaa1f665e7698d2a875c7b65c2fc9ef4d4e5a51aacb9f18ff4585865d8de",
+      "bytes": 222
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/browser-candidate-typecheck.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/browser-candidate.config.ts",
+      "sha256": "fd88be67da5c5ae06b0da5fd49288436ed9a9420a65b6eeccc1f1e6ec8495174",
+      "bytes": 238
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/check-data.py",
+      "sha256": "267f025aa1fff73ac5a87b8f5a04ab8899889c8bfa2b0a74c774c0483081300c",
+      "bytes": 9401
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/collection-equivalence.json",
+      "sha256": "03d101d79098e1a324e4018ba6abdfecac18bcdbde6c1b2e0be97181e7cd59a7",
+      "bytes": 64240
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/collection.log",
+      "sha256": "f1204cd4229f46107ff85cfaaff275478544b2d8af60edecb229382562a81ada",
+      "bytes": 364
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/corruption-results.json",
+      "sha256": "13a833884719f1a49e74cf970bad05fd500b69d132a5822f26a3fb99879750ab",
+      "bytes": 8889
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/data-results.json",
+      "sha256": "a0f61630e6e1e869eeb288bc221f7ebfc0681f55f50d4f7a145cfb141798cc56",
+      "bytes": 808843
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/data.log",
+      "sha256": "488e98ec7f9c209c883b1d768ea194bbd7771cec19e9f8f89f7070b65beefed6",
+      "bytes": 700
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/delayed-save-final-results.json",
+      "sha256": "186611812f036d2d69a12daa34cc36571c8fc39a8513acc462b5ca31226da42b",
+      "bytes": 5106
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/delayed.log",
+      "sha256": "47dbdad64bb1a812e3b28b9abc2aab2f7acc88e17efb9961f7313925a6c742f6",
+      "bytes": 354
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__hsk3__lesson-04.json",
+      "sha256": "b5be60bfdbbc74e263c1a83e82948939e10960abdf8c360edbe8af5c590b2047",
+      "bytes": 224007
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__hsk3__lesson-05.json",
+      "sha256": "570c9045311fc9ca323f0ee6f307fbbeb148d95810a244b5a6326026cb16071d",
+      "bytes": 244442
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-practice-1.svg",
+      "sha256": "ebb8dbb0a49e526942cf4d1e201768aec083ee13890a68b5c2f439a2a5cc8a06",
+      "bytes": 4774
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-practice-2.svg",
+      "sha256": "a9aabe0106fddccfabb13cf4f6c8b02c06912ede4f0b54ff42ccceaa9ada32e2",
+      "bytes": 8866
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-practice-3.svg",
+      "sha256": "413932b989d58e833d49339fe0cc024d4240904a8a1471c58769fb5bf70ccc30",
+      "bytes": 2767
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-text1.svg",
+      "sha256": "fa55eb3afbe3af22549749ba1b040573e97166db2fd62e698d72c304cd1aa7ff",
+      "bytes": 1468
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-text2.svg",
+      "sha256": "76e1c30f760ef93d1d390c47802a44ac690df99c946147eb9594d1fde7e4099d",
+      "bytes": 4818
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-text4.svg",
+      "sha256": "5a366f0113f49014f0823524079c71571b052a71366c08ce35903cb400f7838a",
+      "bytes": 3520
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-warmup1-1.svg",
+      "sha256": "5a10b38a24c04bf15be4cef395df5939ad39bdf5d3cd13116024508f1b286da3",
+      "bytes": 2949
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-warmup1-2.svg",
+      "sha256": "6536031d732d4c2a4d2f6500dc09aef946fd466733086141dfec23911dcd6c70",
+      "bytes": 5819
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-warmup1-3.svg",
+      "sha256": "2f4a9ce53552e7f52c0cc689a890294d10983f42e54f1c91a756da03f2798eb6",
+      "bytes": 1929
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-warmup1-4.svg",
+      "sha256": "5f9935ea9829800d415e693e5aff5e7c322c7adc061d4cc5968841adf4b44eec",
+      "bytes": 3031
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-warmup1-5.svg",
+      "sha256": "8fcfaeba61976ea8230610fb7388c980dc293467757058ee31ce416785a8fab6",
+      "bytes": 2050
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l04-warmup1-6.svg",
+      "sha256": "85b68b7884b040aabd97f2d6f38610e252f91f26876c71e2acc7323d67efc488",
+      "bytes": 4658
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-culture.svg",
+      "sha256": "183b86402cba31cae5ac3a1b7cb68f76557a0cc9aa4c4f632b4db42ec1dc0a44",
+      "bytes": 2367
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-practice-1.svg",
+      "sha256": "9eda7446edd26bb84f9935c413cdbfaf6ec8ec0bc4f29f032156b6f0ed9aff7d",
+      "bytes": 6191
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-practice-2.svg",
+      "sha256": "50e7eed7af0068f7d0daf05df0bfa8c5d57927becfcd4da76e426ca2b0f314ab",
+      "bytes": 4182
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-practice-3.svg",
+      "sha256": "58509777a8ef95a5cda763efa0302d42ce638f3e33cae327aed70d0f00642337",
+      "bytes": 6306
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-text1.svg",
+      "sha256": "4c1c75cbffea216627561f2b19bd2e7bad89bbf6393846bc92027fa3aeda662c",
+      "bytes": 13589
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-text2-1.svg",
+      "sha256": "0c52234ecbe52f4f6ed0465046a3390596ed779e5c70374ac9734edc4b1cd9ab",
+      "bytes": 6807
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-text2-2.svg",
+      "sha256": "852a300dd775540eae58190989f687dc0a7aa50344fc1e62aee555a366d3d3fe",
+      "bytes": 12061
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-text2-3.svg",
+      "sha256": "4b966357ec13b3e1fb4fe220128de35a4d10c305f85c9dae213226104c20ec9e",
+      "bytes": 3983
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-text3.svg",
+      "sha256": "34c5050eca96c22d1c355b1201a1bd242be994a25337cc15e933ee0852ddfcf7",
+      "bytes": 1892
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-text4.svg",
+      "sha256": "88d586aa1283ea4b93f171dd34356953217ccf10cfbb455d53848198295b0735",
+      "bytes": 6744
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-warmup1-1.svg",
+      "sha256": "3aabda52d2c9d094327fb52dd14c06923377960c9e9c70f0c4de1f714c4c181e",
+      "bytes": 4824
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-warmup1-2.svg",
+      "sha256": "563af7f517e0d6f23e4aebe1e579eba2d7f650eec3999e76a0264585bb65a942",
+      "bytes": 3443
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-warmup1-3.svg",
+      "sha256": "d44fefcd76d42efce9d4bda7188349cc964d806786bce53642139952e29c2190",
+      "bytes": 1593
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-warmup1-4.svg",
+      "sha256": "447b3f08bc33a0d8f9618887f0e6c4b06419e81491502d845f5c05471435eb88",
+      "bytes": 1393
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-warmup1-5.svg",
+      "sha256": "ac76ebcb6bd57ee55dbc52d40dd7787794c0ae7f31f5aca4fbb8b702a00a5ccb",
+      "bytes": 1982
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/drafts__illustrations__hsk3-l05-warmup1-6.svg",
+      "sha256": "ee642331cf7cbbcbb3486244f0c74c790e59ee435b4459f12421487139379153",
+      "bytes": 3005
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/field-linkage.json",
+      "sha256": "530bbea18ebffd715b79e70de534a7135b51884cd8d7d89e96c3dcbe9ae310b1",
+      "bytes": 50406
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__hsk3__lesson-04.json",
+      "sha256": "b5be60bfdbbc74e263c1a83e82948939e10960abdf8c360edbe8af5c590b2047",
+      "bytes": 224007
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__hsk3__lesson-05.json",
+      "sha256": "570c9045311fc9ca323f0ee6f307fbbeb148d95810a244b5a6326026cb16071d",
+      "bytes": 244442
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-practice-1.svg",
+      "sha256": "ebb8dbb0a49e526942cf4d1e201768aec083ee13890a68b5c2f439a2a5cc8a06",
+      "bytes": 4774
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-practice-2.svg",
+      "sha256": "a9aabe0106fddccfabb13cf4f6c8b02c06912ede4f0b54ff42ccceaa9ada32e2",
+      "bytes": 8866
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-practice-3.svg",
+      "sha256": "413932b989d58e833d49339fe0cc024d4240904a8a1471c58769fb5bf70ccc30",
+      "bytes": 2767
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-text1.svg",
+      "sha256": "fa55eb3afbe3af22549749ba1b040573e97166db2fd62e698d72c304cd1aa7ff",
+      "bytes": 1468
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-text2.svg",
+      "sha256": "76e1c30f760ef93d1d390c47802a44ac690df99c946147eb9594d1fde7e4099d",
+      "bytes": 4818
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-text4.svg",
+      "sha256": "5a366f0113f49014f0823524079c71571b052a71366c08ce35903cb400f7838a",
+      "bytes": 3520
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-warmup1-1.svg",
+      "sha256": "5a10b38a24c04bf15be4cef395df5939ad39bdf5d3cd13116024508f1b286da3",
+      "bytes": 2949
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-warmup1-2.svg",
+      "sha256": "6536031d732d4c2a4d2f6500dc09aef946fd466733086141dfec23911dcd6c70",
+      "bytes": 5819
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-warmup1-3.svg",
+      "sha256": "2f4a9ce53552e7f52c0cc689a890294d10983f42e54f1c91a756da03f2798eb6",
+      "bytes": 1929
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-warmup1-4.svg",
+      "sha256": "5f9935ea9829800d415e693e5aff5e7c322c7adc061d4cc5968841adf4b44eec",
+      "bytes": 3031
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-warmup1-5.svg",
+      "sha256": "8fcfaeba61976ea8230610fb7388c980dc293467757058ee31ce416785a8fab6",
+      "bytes": 2050
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l04-warmup1-6.svg",
+      "sha256": "85b68b7884b040aabd97f2d6f38610e252f91f26876c71e2acc7323d67efc488",
+      "bytes": 4658
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-culture.svg",
+      "sha256": "183b86402cba31cae5ac3a1b7cb68f76557a0cc9aa4c4f632b4db42ec1dc0a44",
+      "bytes": 2367
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-practice-1.svg",
+      "sha256": "9eda7446edd26bb84f9935c413cdbfaf6ec8ec0bc4f29f032156b6f0ed9aff7d",
+      "bytes": 6191
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-practice-2.svg",
+      "sha256": "50e7eed7af0068f7d0daf05df0bfa8c5d57927becfcd4da76e426ca2b0f314ab",
+      "bytes": 4182
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-practice-3.svg",
+      "sha256": "58509777a8ef95a5cda763efa0302d42ce638f3e33cae327aed70d0f00642337",
+      "bytes": 6306
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-text1.svg",
+      "sha256": "4c1c75cbffea216627561f2b19bd2e7bad89bbf6393846bc92027fa3aeda662c",
+      "bytes": 13589
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-text2-1.svg",
+      "sha256": "0c52234ecbe52f4f6ed0465046a3390596ed779e5c70374ac9734edc4b1cd9ab",
+      "bytes": 6807
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-text2-2.svg",
+      "sha256": "852a300dd775540eae58190989f687dc0a7aa50344fc1e62aee555a366d3d3fe",
+      "bytes": 12061
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-text2-3.svg",
+      "sha256": "4b966357ec13b3e1fb4fe220128de35a4d10c305f85c9dae213226104c20ec9e",
+      "bytes": 3983
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-text3.svg",
+      "sha256": "34c5050eca96c22d1c355b1201a1bd242be994a25337cc15e933ee0852ddfcf7",
+      "bytes": 1892
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-text4.svg",
+      "sha256": "88d586aa1283ea4b93f171dd34356953217ccf10cfbb455d53848198295b0735",
+      "bytes": 6744
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-warmup1-1.svg",
+      "sha256": "3aabda52d2c9d094327fb52dd14c06923377960c9e9c70f0c4de1f714c4c181e",
+      "bytes": 4824
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-warmup1-2.svg",
+      "sha256": "563af7f517e0d6f23e4aebe1e579eba2d7f650eec3999e76a0264585bb65a942",
+      "bytes": 3443
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-warmup1-3.svg",
+      "sha256": "d44fefcd76d42efce9d4bda7188349cc964d806786bce53642139952e29c2190",
+      "bytes": 1593
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-warmup1-4.svg",
+      "sha256": "447b3f08bc33a0d8f9618887f0e6c4b06419e81491502d845f5c05471435eb88",
+      "bytes": 1393
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-warmup1-5.svg",
+      "sha256": "ac76ebcb6bd57ee55dbc52d40dd7787794c0ae7f31f5aca4fbb8b702a00a5ccb",
+      "bytes": 1982
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-drafts__illustrations__hsk3-l05-warmup1-6.svg",
+      "sha256": "ee642331cf7cbbcbb3486244f0c74c790e59ee435b4459f12421487139379153",
+      "bytes": 3005
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-reviewed-hashes.json",
+      "sha256": "131f7e2a27efe489309c35604799eae11d6cec9d2e48977ee00db791dcc6fca9",
+      "bytes": 11104
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-src__activity-provenance.ts",
+      "sha256": "59b711b1d57a5c6d0d61d033356d37830e5c7caefe5ae53988091a47a32cef67",
+      "bytes": 899
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-src__dom.ts",
+      "sha256": "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e",
+      "bytes": 1408
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-src__lesson-view.ts",
+      "sha256": "efb15e86c16eb2374656f42ec0ae0a48936c6341666f3b414ebe4b134d9d53b1",
+      "bytes": 37091
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-src__main.ts",
+      "sha256": "f387429413f87ee96e29c9abed2eadbbfa0afdd29a83e820c9efae5aa94d43cc",
+      "bytes": 60027
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-src__state.ts",
+      "sha256": "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c",
+      "bytes": 12140
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-src__style.css",
+      "sha256": "8dc65c7a68c5d47a48cfef79a36ed73198e9ed814aeeae065fbc745ea1531b10",
+      "bytes": 25812
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-src__types.ts",
+      "sha256": "3426edf99be8b70d7de8ab6e80a2176974226fece919fb8fe76591924bc4f220",
+      "bytes": 4051
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-tests__grammar-groups.test.mjs",
+      "sha256": "5fd17854935482a63b52af864d02ba7af1eaee4ebd5f36310cd3c09cbb9578c4",
+      "bytes": 9061
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-tests__source-menu.test.mjs",
+      "sha256": "b8b736f01b8d6defa3bde0fccc34263d5279fb7f2fc408f7f28abb8756c2c3b3",
+      "bytes": 11024
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-tests__unified__hsk3-lesson-batch.spec.ts",
+      "sha256": "01f673ddd0a3ae4473b56a5c415a9b1f1e71ba495bd6de2361fcccb15da6db3a",
+      "bytes": 17284
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-tests__unified__lesson-ready.ts",
+      "sha256": "9613d8476d44d306cd55c3928f7233f45d1165c35b7671aea77847e391f03821",
+      "bytes": 7749
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/final-tools__verify-activities.mjs",
+      "sha256": "81e25b20bb0a735ce83e0eebdbdb377d8031b1f290150cc8fdda3b21237b7327",
+      "bytes": 7137
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/git-baseline-lesson-04.json",
+      "sha256": "46d69e3855dacfae167a9280d3f740af1ae9700c8f1531f811b0c9fccb2ad295",
+      "bytes": 88221
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/git-baseline-lesson-05.json",
+      "sha256": "22bf424d4cb4318099ea5fe16f05c9b423963dda48232dfb45640d7600b026e7",
+      "bytes": 94529
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/independent-artwork-pixel-review.json",
+      "sha256": "6148b8e7236708447fa0bac29048fa9abca4d126dadcb3abbfa470e567dab64a",
+      "bytes": 18376
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/independent-source-pixel-review.json",
+      "sha256": "b5f1686dc6562fe1d20a8af38b700613d6984443f8ae9387e81da34a2fbf331f",
+      "bytes": 26637
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/independent-svg-renders.json",
+      "sha256": "a71e0581f40368bf1a42608b0cbb451e61365767879da906d510bcee179a7638",
+      "bytes": 9554
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/initial-reviewed-input-hashes.json",
+      "sha256": "dc9e5ad494ea5025ad3cb3f12ae6ca9041f528b6ad4f965984991622fb4e78e2",
+      "bytes": 6439
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/instrumented-readiness.mjs",
+      "sha256": "10bed9791841d50f679ca3fede7bc917e2a2d92fad09c5bb5391365a2451f935",
+      "bytes": 7724
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/answer-5.png",
+      "sha256": "3edb5bc7b892678b65147371dd60f9ddf60ce319d981ec8c98be300e48bc2b43",
+      "bytes": 252131
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/answer-6.png",
+      "sha256": "3a6e12dca28559cb310bf4c707a9fc12f10b53e2c097156127cc511e6db8bac7",
+      "bytes": 175138
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/answer-7.png",
+      "sha256": "8517740fe20654e9eb70a02913b6d84ed156222e79ed4807a91ebc97eab59cfb",
+      "bytes": 55134
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-practice-1.png",
+      "sha256": "f9df7c9b3440894173316829fe1e699588fce5b508448fa407b3d6e49e55f847",
+      "bytes": 24961
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-practice-2.png",
+      "sha256": "bf3d5c34662286bfec489cfc838238c5641f66f634a26c5eb2c9d8432adf2891",
+      "bytes": 26601
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-practice-3.png",
+      "sha256": "04ce8eac14e487052f30f275e29d3e7f6e0492d90989cb5323002afbcedb0d06",
+      "bytes": 13467
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-text1.png",
+      "sha256": "33fd191241f5a04d76b4258c92ba49418e7149a84a1c9878da3fe4b5ab738127",
+      "bytes": 16384
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-text2.png",
+      "sha256": "4eff4318d58ed92539a01cc108eaacbe8ab7a1d12d51650b632ad9ede26fe0be",
+      "bytes": 26827
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-text4.png",
+      "sha256": "c9cad9ba31d6e491fa57aa58ca11701148eca324f307feebb0d46cff693eafd8",
+      "bytes": 22657
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-warmup1-1.png",
+      "sha256": "bd22fa901c3f64d909da40a9b26f82f9f43789e0207d1b9fdeb989e23f1e9cb4",
+      "bytes": 14456
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-warmup1-2.png",
+      "sha256": "21e92ffaa699f94f0186ab92d316deaeadb44223cfeb375d80752984e55f57b6",
+      "bytes": 29978
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-warmup1-3.png",
+      "sha256": "2f4cb84ab37fd7163b04e8bfa5ad7160908eee3e2535dfdc29c1edfdde49593f",
+      "bytes": 18397
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-warmup1-4.png",
+      "sha256": "d713501a7dce604f8ef78ae42d5980b43381b29eb6b5ed2834948c373af6df2e",
+      "bytes": 32221
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-warmup1-5.png",
+      "sha256": "5cbbf76a95685826704a9535fb5ea84c2f22cf385bf734b580dec0fb249620aa",
+      "bytes": 27981
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l04-warmup1-6.png",
+      "sha256": "1a0c0895fa6a1a4b06922c5144645a68f9e383130a7435afb3c12d7f4ac62dbe",
+      "bytes": 11906
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-culture.png",
+      "sha256": "3238fcd99651c0b419d70219549a145904c96fe2e22d6f19b402348de2ef67aa",
+      "bytes": 40742
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-practice-1.png",
+      "sha256": "372bc1fd35d33bbe36e61e6cadec7adce5d4e973d273b92aee7d003b4832366d",
+      "bytes": 25076
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-practice-2.png",
+      "sha256": "0fa4b65a26e8938e6aa7409adbf3b66ff9fdfe57167b06de2d648d771fb3045b",
+      "bytes": 43981
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-practice-3.png",
+      "sha256": "324d9159046fc0e03f78139a2c86410ef04a927d453ee8e1a1ef0023bfaedba3",
+      "bytes": 25748
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-text1.png",
+      "sha256": "4fa5bad3fc7170afa1561ac4320faa5f251a0a10f717d2de857b5ac2816a5479",
+      "bytes": 23445
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-text2-1.png",
+      "sha256": "04e5826a186f774954e402d842b5dce9bcb0a8ec673ee3c677a4f8b24b91f205",
+      "bytes": 17104
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-text2-2.png",
+      "sha256": "6f7ca0dcf937e4b4a465a4fd568136e91a4d84c885e705134f6caddb96b63d08",
+      "bytes": 17276
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-text2-3.png",
+      "sha256": "2caec670ff47bae4e61fdacdac8cddc6ce06fdb5feece65bcf655e5202356e84",
+      "bytes": 17388
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-text3.png",
+      "sha256": "9663294809c181ee79029bd6fed4e93b854ccb02398da778bf758565a768683d",
+      "bytes": 22766
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-text4.png",
+      "sha256": "07402b7ab5f218d5d740e4c02255fdd35c701dfebaac6a63d3f2ab74d5a4231e",
+      "bytes": 22382
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-warmup1-1.png",
+      "sha256": "0cd81607b93bff4f969992161f90cf760d616fcf615584652062f4060447b295",
+      "bytes": 31387
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-warmup1-2.png",
+      "sha256": "72cf43e42e6fdaae41d312ba5f248f664788a545ecf98902a769e64672444bb3",
+      "bytes": 41624
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-warmup1-3.png",
+      "sha256": "dbd97a430cf173ec9dc09d2e0180f8c88a33f7d1b5087041951973ff7434b17b",
+      "bytes": 13587
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-warmup1-4.png",
+      "sha256": "969a5c818f0a916897bb3dac905a6ad1520c651012dbdcddbcce34f1a8124d05",
+      "bytes": 11031
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-warmup1-5.png",
+      "sha256": "ce008405a1ce4ce890c3da0498b4856ce7173e777a409d9ecf3b37a0e4147be6",
+      "bytes": 21837
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/hsk3-l05-warmup1-6.png",
+      "sha256": "190c00fec9298334d24f301bc01c928b7587d9eee9050efc0136ad0988de7ce6",
+      "bytes": 31752
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/l4-sheet-1.png",
+      "sha256": "04a3591a96425ede705ae091de7cd16945a5f039496e44f53cfc40fa2b4ffb22",
+      "bytes": 75600
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/l4-sheet-2.png",
+      "sha256": "93270afaa1c582867037bf07dddbd1a126ffdbdd009284ee610079f025f15e30",
+      "bytes": 88099
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/l4-sheet-3.png",
+      "sha256": "6147ca456bc5df60547de782a1e24921b75e8c1be6ac0aa7292c4daf9f8df9df",
+      "bytes": 84692
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/l5-sheet-1.png",
+      "sha256": "ae05665a0df041d4fad0cbaa8f76a24d9b883491e7cfcca0bf8f98a10266df0e",
+      "bytes": 128887
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/l5-sheet-2.png",
+      "sha256": "26427ca1185a6436dd01b1f912f57588b987f10ed15d4a0db645dedb4beb1e75",
+      "bytes": 67916
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/l5-sheet-3.png",
+      "sha256": "90bfaf6fd649ad9eb473d2c1f35457e94df1d50ab570889b06ac27d668f22e54",
+      "bytes": 110962
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/l5-sheet-4.png",
+      "sha256": "63150bccd7a2d36f8932388bbc58a6b990d62b50e0d5502ef9c5cf1b5692bcdf",
+      "bytes": 72771
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-186.png",
+      "sha256": "1181e9dc935482249a735bcec0a758febd8125d00f0981e4f1ebd0120d694f4c",
+      "bytes": 404643
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-187.png",
+      "sha256": "356dfdf8bc0b3304ea706ec06cbb2814bd2bde59a06306f870a7dee8a513c39e",
+      "bytes": 385436
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-41.png",
+      "sha256": "6200832420a17d30c7e5f58f79fe24667b269611c10fd7267f9c361e51f92ef9",
+      "bytes": 573658
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-42.png",
+      "sha256": "a5833218680ec9518eca15b7a79acd572fe82cd867451e463a25a305698fe4ee",
+      "bytes": 600032
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-43.png",
+      "sha256": "29f8611096b104566a82e843ce8781e0d721b14b6cac32e30f9c6e67ee561c4d",
+      "bytes": 1468610
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-44.png",
+      "sha256": "ea32cc240485231cf02f8f2d696748239ad44170043acf1284c996b531c9bd9b",
+      "bytes": 603155
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-45.png",
+      "sha256": "fd6ffaff8f4de7503f6e7506b6be461507c513fb773e782ced1e099baf9fbf4a",
+      "bytes": 1515338
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-46.png",
+      "sha256": "8b3edc6eaaf4baf193ca035fc727300cf42d02494a57d30322a7989fd52dfd4a",
+      "bytes": 358894
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-47.png",
+      "sha256": "0dfb5c151ec7fd14f3028771877fe6a054bd431fb97e650d1e8c4b8ab8b89fc6",
+      "bytes": 1330534
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-48.png",
+      "sha256": "e3c9eb8d032b7bc0d0a1ed0d7bb126805e3281da63894a1cf82ba7ff07b7a7fd",
+      "bytes": 384742
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-49.png",
+      "sha256": "612f6a7f5edf010c471ccf6920b0fe82f168521b9595bb332cbb366d56af803a",
+      "bytes": 1462592
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-50.png",
+      "sha256": "839b8ef25003cde5064e8a31130e153f58fcca4e158a4e7ed22359a0842b86b5",
+      "bytes": 560242
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-51.png",
+      "sha256": "ed53c5fb0859bb8b25b14927b15421101cdafa8183a6ac74f02396c106ec0127",
+      "bytes": 1447177
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-52.png",
+      "sha256": "13ea43511f2d60bc4b7e3a51279df1e5c4048da57b8cdc2c1bccf9b131ffb5cf",
+      "bytes": 424983
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-53.png",
+      "sha256": "7960c248c6009420c72a9b04902c61182fda4419ca5ea148e486d104b8556baf",
+      "bytes": 1546831
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-54.png",
+      "sha256": "f4b359f57ce6781f415e79041d0741b25a386743d4dadde11a38d978b2b02e24",
+      "bytes": 537153
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-55.png",
+      "sha256": "d335c2f6ded3421787c493774ff7641187c14ececc2bc137d52863d22ec2a310",
+      "bytes": 1376936
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-56.png",
+      "sha256": "01ee46f6493c4d5c0d214ccc4a33f1c35988d3b09e8e1110f88e926c252eb3a5",
+      "bytes": 580173
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-57.png",
+      "sha256": "17acb4ee7751dd967a23feb462900517776e4bba29b60b46051b177335b26c22",
+      "bytes": 1650609
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/pixels/source-58.png",
+      "sha256": "1f998f4aa6ae4a119e795031a6e2e0411f1402816c6c4bb2fea34ebb8d0919ec",
+      "bytes": 536071
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/prior-l2l3-renderer-results.json",
+      "sha256": "995866cc079abb747031153c92f0a8428f4d82166da942172db0a98abf71ecde",
+      "bytes": 212172
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/prior-l2l3-renderer.log",
+      "sha256": "14241fab5791a14d0be509b141d9ff87f274c142ad18dc2033db68c29c777fd3",
+      "bytes": 992
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/probe-corruptions.mjs",
+      "sha256": "dd5a6ddd53111a402a67b947e66ce68d597ee9a245a3aa14e6483ee9115ed5a4",
+      "bytes": 4804
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/probe-delayed-final.mjs",
+      "sha256": "b887057b06ca4d4aabaa792aed8fbd030a4b799c7aa6b75c14b1ae8b8b6b6ee1",
+      "bytes": 8683
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/probe-prior-l2l3.mjs",
+      "sha256": "122f8878642fad6c0825f59cad15335f8098bb37ee6130e82dc5ac62cce10b54",
+      "bytes": 18100
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/probe-readiness.mjs",
+      "sha256": "0c4ab844e521e40f09d98a6135fa36667f4be0f449178d6378ea6cee5af1757c",
+      "bytes": 10153
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/probe-renderer.mjs",
+      "sha256": "350b6608cafce4d7ac1e34f3455eb6287400d331620cca90bcf164fef34410cb",
+      "bytes": 21436
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/probe-row-sources.mjs",
+      "sha256": "0c7fafe98c9a6ad2c88a9761b05e2f643437aa85e726e8df5baef4ffcdeaca4a",
+      "bytes": 7105
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/readable-4.txt",
+      "sha256": "9d017f2510283a78a10e6088cbb1e5df5a5789c8bcafb20b5eb8abb54dcdd6ce",
+      "bytes": 49981
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/readable-5.txt",
+      "sha256": "703fe554f683ba1148edb5f0653614f6efe31dace382766423dc22bf26f01c9f",
+      "bytes": 51589
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/readiness-probes.json",
+      "sha256": "c403563ce9cb61c63b2e452488f1448c9d46a9bf0a92040c600f8d58b353da27",
+      "bytes": 7029
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/readiness-probes.log",
+      "sha256": "5e8e7e7bb7a11e651ee753ce8fc7b78db3730980fe1ab720f13414bef0a66b78",
+      "bytes": 296
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/readiness-strict-typecheck.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/record-pixels.py",
+      "sha256": "665f4d17ebc76ffab203247d34fc4b61600e2fd5608bc3681bb0a92ecf18a385",
+      "bytes": 7040
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/renderer-initial-harness-assumption.log",
+      "sha256": "c4b74e5f3b5e7e257059760f0e00714b4a5e646f3f3be60ca6b5cd414743c732",
+      "bytes": 1380
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/renderer-results.json",
+      "sha256": "a5eadbf745490bf773df60fb6b78947e766fdc4cf8cc12c896249772c170e548",
+      "bytes": 224800
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/renderer-source-provenance-failure.json",
+      "sha256": "294eee8f91cc809b2f6b392c2a7e79476feba8d1a08c8dbb39224c935499c57b",
+      "bytes": 224500
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/renderer.log",
+      "sha256": "f07d86959416d770fce817e2124c5d367459f97829ada643e99033db9124785c",
+      "bytes": 992
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/row-source-results.json",
+      "sha256": "e61a641fe359ccc163535b1f7569ff3b52e31d05cbc7466b6bb3497c533a9307",
+      "bytes": 35553
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/row-sources.log",
+      "sha256": "86ffcaf1e3040e7b1ee4aab43f6f479b091bb2314890894ef79534cad15b193f",
+      "bytes": 341
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/source-render-verification.json",
+      "sha256": "3547bac960cb39ed492e391d01752b56711b0efbddac98a041d65bc898ea445d",
+      "bytes": 20927
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/src__activity-provenance.ts",
+      "sha256": "59b711b1d57a5c6d0d61d033356d37830e5c7caefe5ae53988091a47a32cef67",
+      "bytes": 899
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/src__dom.ts",
+      "sha256": "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e",
+      "bytes": 1408
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/src__lesson-view.ts",
+      "sha256": "92acd5ccb35c0ddcc62fad0b166b695d621cdc02cf88c45a720449f037eb7793",
+      "bytes": 36778
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/src__main.ts",
+      "sha256": "f387429413f87ee96e29c9abed2eadbbfa0afdd29a83e820c9efae5aa94d43cc",
+      "bytes": 60027
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/src__state.ts",
+      "sha256": "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c",
+      "bytes": 12140
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/src__style.css",
+      "sha256": "8dc65c7a68c5d47a48cfef79a36ed73198e9ed814aeeae065fbc745ea1531b10",
+      "bytes": 25812
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/src__types.ts",
+      "sha256": "3426edf99be8b70d7de8ab6e80a2176974226fece919fb8fe76591924bc4f220",
+      "bytes": 4051
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/tests__unified__hsk3-lesson-batch.spec.ts",
+      "sha256": "2bf0cee37b1277d6e3d2ec7e618881ce62dffbd456cdf8291fc722bcf5ae86c1",
+      "bytes": 17141
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/tests__unified__lesson-ready.ts",
+      "sha256": "202f721f9a787a9a096b8c137259bd1f4260e6e19d41943126cc8eaf28d5691c",
+      "bytes": 4488
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/tools__verify-activities.mjs",
+      "sha256": "81e25b20bb0a735ce83e0eebdbdb377d8031b1f290150cc8fdda3b21237b7327",
+      "bytes": 7137
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/typecheck-final.log",
+      "sha256": "d4f092fedd226092bbf6a231543d6396316d6c6c50cb8ab096ac0ea8e6785960",
+      "bytes": 152
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/typecheck.log",
+      "sha256": "d4f092fedd226092bbf6a231543d6396316d6c6c50cb8ab096ac0ea8e6785960",
+      "bytes": 152
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/unit-tests-final.log",
+      "sha256": "72e1246eceae2d6565999aa8497eed1568a3becd1cf1abecd9e5ec6e37f74be9",
+      "bytes": 7453
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/unit-tests.log",
+      "sha256": "81f9842f23c643e85179ea7baf4447cbca06051b380498a31793f152bd6bb6e6",
+      "bytes": 7217
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/verify-collection.mjs",
+      "sha256": "f4651619cbe483d9dba486d26130cb42ec041b97af58cb764ce279786f17cc2e",
+      "bytes": 3803
+    },
+    {
+      "path": "docs/independent-hsk3-lessons-04-05-review/candidate-review/verify-source-rasters.py",
+      "sha256": "8ad7282fac230ed413523398d80feb1b96e111c4e9a8fdce329f75849ad5af52",
+      "bytes": 1741
+    }
+  ]
+}

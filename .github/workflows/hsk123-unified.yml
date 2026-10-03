@@ -24,6 +24,8 @@ jobs:
       - run: npm ci --prefix course-app && npm ci --prefix hsk1-app
       - run: npm test --prefix course-app && npm test --prefix hsk1-app
       - run: npm run build --prefix course-app
+      - name: Typecheck new browser fixtures and readiness helpers
+        run: npm run check:browser-fixtures --prefix course-app
       - name: Install browser and Chinese fonts
         working-directory: course-app
         run: npx playwright install --with-deps ${{ matrix.browser }} && sudo apt-get install -y fonts-noto-cjk
@@ -34,7 +36,7 @@ jobs:
       - name: Focused mobile and content preflight
         if: matrix.shard == 1
         working-directory: course-app
-        run: npx playwright test --config=playwright.unified.config.ts --project=${{ matrix.browser }} --grep 'lesson 2 reviewed textbook sections at (320|390)|lesson7 source surveys|lesson9 headerless source comparison|lesson12 four-person survey|lesson13 original ambiguous-key explanation|lesson15 frequency table|lesson15 cross-page review|HSK3 lesson 2 reviewed textbook sections at 320|HSK3 lesson2 source menu|HSK3 lesson2 group support'
+        run: npx playwright test --config=playwright.unified.config.ts --project=${{ matrix.browser }} --grep 'lesson 2 reviewed textbook sections at (320|390)|lesson7 source surveys|lesson9 headerless source comparison|lesson12 four-person survey|lesson13 original ambiguous-key explanation|lesson15 frequency table|lesson15 cross-page review|HSK3 lesson 2 reviewed textbook sections at 320|HSK3 lesson2 source menu|HSK3 lesson2 group support|HSK3 lesson 4 source-specific textbook views at 320|HSK3 lesson4 grouped source explanations|HSK3 lesson5 pair table'
       - name: Test unified app checkpoint
         working-directory: course-app
         run: npx playwright test --config=playwright.unified.config.ts --project=${{ matrix.browser }} --shard=${{ matrix.shard }}/2
@@ -101,3 +103,9 @@ jobs:
         with:
           name: hsk123-hsk3lessons23-screens-${{ matrix.browser }}-shard${{ matrix.shard }}
           path: course-app/test-results/unified-hsk3-lesson[23]-*.png
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk123-hsk3lessons45-screens-${{ matrix.browser }}-shard${{ matrix.shard }}
+          path: course-app/test-results/unified-hsk3-lesson[45]-*.png

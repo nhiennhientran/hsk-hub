@@ -1,0 +1,44 @@
+{
+  "scope": "HSK3 lessons4–5 controlled integration; source, independent renderer/state and readiness review only",
+  "checks": {
+    "data": 8548,
+    "rendererState": 1886,
+    "readiness": 38,
+    "corruptions": 40,
+    "unit": 71
+  },
+  "browserCollection": 292,
+  "browserExecutionPending": true,
+  "sourceAndArtworkPixels": {
+    "sourcePages": 30,
+    "svgAssets": 28
+  },
+  "evidence": [
+    {
+      "file": "data-results.json",
+      "bytes": 808843,
+      "sha256": "a0f61630e6e1e869eeb288bc221f7ebfc0681f55f50d4f7a145cfb141798cc56"
+    },
+    {
+      "file": "renderer-results.json",
+      "bytes": 224800,
+      "sha256": "a5eadbf745490bf773df60fb6b78947e766fdc4cf8cc12c896249772c170e548"
+    },
+    {
+      "file": "corruption-results.json",
+      "bytes": 8889,
+      "sha256": "13a833884719f1a49e74cf970bad05fd500b69d132a5822f26a3fb99879750ab"
+    },
+    {
+      "file": "review-evidence-index.json",
+      "bytes": 44628,
+      "sha256": "3e9dfbbe8d7333561723df7f3be7ca3d05da94ec72183befe90f0ae89fcc899c"
+    },
+    {
+      "file": "final-reviewed-hashes.json",
+      "bytes": 11104,
+      "sha256": "131f7e2a27efe489309c35604799eae11d6cec9d2e48977ee00db791dcc6fca9"
+    }
+  ],
+  "rawEvidencePreservedInRecovery": true
+}

@@ -289,6 +289,41 @@
       "webkit": 122,
       "preflightPassed": 16,
       "actualLogsRead": true
+    },
+    {
+      "run": 37121310489,
+      "commit": "b3932b7d1d4df181197955caf7032f8266ab6f05",
+      "status": "failed",
+      "passed": 96,
+      "notRun": 172,
+      "preflightPassed": 18,
+      "preflightFailed": 6,
+      "actualLogsRead": true,
+      "cause": "source-specific hint count and open-task submit label assumptions in test"
+    },
+    {
+      "run": 37121778453,
+      "commit": "0988b76e963aacdc687a6b71885051d9b854d6ed",
+      "status": "failed",
+      "passed": 181,
+      "failed": 1,
+      "notRun": 86,
+      "preflightPassed": 23,
+      "preflightFailed": 1,
+      "actualLogsRead": true,
+      "cause": "test enumerated lazy reading controls before mount; app rejected empty submission"
+    },
+    {
+      "run": 37122087391,
+      "commit": "6e522f20eff2d571333e30c8f250aae7061be6e9",
+      "status": "success",
+      "passed": 268,
+      "failed": 0,
+      "chromium": 134,
+      "webkit": 134,
+      "preflightPassed": 24,
+      "actualLogsRead": true,
+      "nativeRaceVerified": "held HSK3 lock, edit before save release, no stale feedback, durable reload, populated HSK2 record unchanged"
     }
   ],
   "audioBatch23": {
@@ -352,7 +387,7 @@
     "independentAsyncChecks": 12,
     "sourcePagesInspected": 32,
     "unitTests": 67,
-    "browser": "268cases collected, notyetexecuted",
+    "browser": "passed268/268 run37122087391; all actual logs and mobile/menu screenshots inspected",
     "sharedImprovements": [
       "source-faithful2×2menu with5distinctslots",
       "support-gallery excludesfieldboundfigures",
@@ -360,5 +395,41 @@
       "delayed submit epochs prevent stale feedback after edits,newsubmits,disposal,failed writes"
     ],
     "remaining": "HSK3lessons4–18, remaining audio and overallreleasegates"
+  },
+  "contentHSK3Batch45": {
+    "activities": 55,
+    "sourceFields": 128,
+    "optionalFields": 6,
+    "fields": 134,
+    "officialFields": 48,
+    "illustrations": 28,
+    "independentDataChecks": 8548,
+    "independentRendererStateChecks": 1886,
+    "independentReadinessProbes": 38,
+    "independentCorruptionChecks": 40,
+    "sourcePagesInspected": 30,
+    "unitTests": 71,
+    "browser": "292 cases collected; not yet executed",
+    "sourceDifferences": [
+      "L4 three/two grammar explanation groups retain full original examples",
+      "L4 cross-page grammar32 explanation/33 examples separately cited",
+      "L5 three distinct text2 portraits and four grammar groups",
+      "L5 eight independent pair-table responses retain printed example frames"
+    ],
+    "remaining": "HSK3 lessons6–18, remaining audio work and overall release gates"
+  },
+  "browserTestReadinessImprovement": {
+    "status": "independently reviewed locally; awaits next real browser run",
+    "gates": [
+      "exact scene identity",
+      "exact per-view source activity/figure inventory",
+      "input tag and type",
+      "source-kind button semantic",
+      "normal save compares durable actual values",
+      "incomplete errors explicit",
+      "intentional lock/race paths kept separate"
+    ],
+    "strictTestTypecheck": "new test-only types node config runs in CI",
+    "existing268Identities": "preserved"
   }
 }

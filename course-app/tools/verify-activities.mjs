@@ -12,5 +12,21 @@ export function verifyActivities(lesson){
   if(a.recommendedPlays!==undefined)check(Number.isInteger(a.recommendedPlays)&&a.recommendedPlays>0&&typeof a.audioTrack==='string',a.id,'invalid listening directive');
   if(a.matrix){const m=a.matrix;check((m.hideColumnHeaders===undefined||typeof m.hideColumnHeaders==='boolean')&&(m.horizontalScroll===undefined||typeof m.horizontalScroll==='boolean'),a.id,'invalid matrix display flags');const headers=Array.isArray(m.headerFieldIds)?m.headerFieldIds:[],headerIds=headers.filter(id=>id!==null);check(m.headerFieldIds===undefined||(Array.isArray(m.headerFieldIds)&&headers.length===m.columns?.length&&headers.every(id=>id===null||typeof id==='string')&&a.kind==='survey'&&!m.hideColumnHeaders&&headerIds.every(id=>a.fields.some(f=>f.id===id&&f.input==='text'&&f.assessment==='open'))),a.id,'invalid or hidden editable matrix headers');const ids=[...headerIds,...(m.rows?.flatMap(r=>r.fieldIds)??[])];check(['self-assessment','survey'].includes(a.kind)&&m.columns?.length>=1&&(!m.mode||['checks','responses'].includes(m.mode))&&m.columns.every(copy)&&(m.rowHeading===undefined||copy(m.rowHeading)||(m.rowHeading?.zh===''&&m.rowHeading?.vi===''))&&(!m.contextHeaders||m.contextHeaders.every(copy))&&m.rows?.length,a.id,'invalid matrix shape');check(m.rows?.every(r=>copy(r.prompt)&&((r.contextCells?.length??0)===(m.contextHeaders?.length??0))&&(!r.contextCells||r.contextCells.every(copy))&&Array.isArray(r.fieldIds)&&r.fieldIds.length===m.columns.length&&(!r.cellLabels||(r.cellLabels.length===m.columns.length&&r.cellLabels.every(copy)))),a.id,'matrix row/column mismatch');check(new Set(ids).size===ids.length&&ids.length===a.fields.length&&ids.every(id=>a.fields.some(f=>f.id===id&&(a.kind==='survey'||m.mode==='responses'||f.input==='checkbox')&&f.assessment==='open')),a.id,'matrix must bind every open field exactly once; self-assessment cells must be checkboxes')}
  }
+ if(lesson.grammarPresentations!==undefined){
+  const presentations=Array.isArray(lesson.grammarPresentations)?lesson.grammarPresentations:[];
+  check(Array.isArray(lesson.grammarPresentations)&&presentations.length>0,lesson.id,'invalid grammar presentations');
+  const grammarIds=new Set();
+  for(const p of presentations){
+   const g=lesson.grammar?.find(g=>g.id===p?.grammarId),groups=Array.isArray(p?.groups)?p.groups:[];
+   check(Boolean(g)&&!grammarIds.has(p?.grammarId)&&groups.length>=2,p?.grammarId??lesson.id,'invalid or duplicate grammar presentation');grammarIds.add(p?.grammarId);
+   const indices=[];
+   for(const group of groups){
+    check(copy(group?.title)&&copy(group?.explanation)&&Array.isArray(group?.exampleIndices)&&group.exampleIndices.length>0&&group.exampleIndices.every(Number.isInteger),p?.grammarId,'invalid grammar explanation group');
+    if(Array.isArray(group?.exampleIndices))indices.push(...group.exampleIndices);
+    const src=group?.source;check(src?.provenance==='textbook'&&typeof src.section==='string'&&src.section.trim()&&Number.isInteger(src.pdfPage)&&src.pdfPage>=lesson.source.startPdfPage&&src.pdfPage<=lesson.source.endPdfPage&&src.printedPage===src.pdfPage-(lesson.courseId.startsWith('hsk2')?15:12),p?.grammarId,'invalid grammar group source');
+   }
+   check(Boolean(g)&&JSON.stringify(indices)===JSON.stringify(g?.examples.map((_,i)=>i)),p?.grammarId,'grammar groups must preserve every original example once in original order');
+  }
+ }
  return issues;
 }

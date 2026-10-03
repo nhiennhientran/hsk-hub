@@ -10,7 +10,8 @@
     "content:check": "node tools/validate-content.mjs",
     "build": "node tools/sync-shared-assets.mjs && npm run content:check && npm run check && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test:browser": "node tools/run-browser.mjs"
+    "test:browser": "node tools/run-browser.mjs",
+    "check:browser-fixtures": "tsc -p tsconfig.browser-check.json"
   },
   "devDependencies": {
     "@playwright/test": "1.62.1",
