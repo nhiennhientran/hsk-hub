@@ -1,0 +1,57 @@
+{
+  "status": "passed-independent-candidate-gate",
+  "reviewedAt": "2026-10-03 UTC",
+  "blockingDefects": [],
+  "scope": [
+    "source inventory and provenance",
+    "baseline/homework/listening preservation",
+    "added bilingual references and choices",
+    "all29actual SVG pixels",
+    "real renderer deterministic DOM/state execution"
+  ],
+  "notCertified": [
+    "actual browser layout/focus/accessibility",
+    "browser persistent storage",
+    "real media playback",
+    "new audio/native-speaker review",
+    "release/build/CI/publication"
+  ],
+  "candidates": {
+    "10": "5483522f9ffdc4890b72b9987ef67e4e9dbda0c9f6c857083553328e3ed09fb5",
+    "11": "312302260a98348355a201bdf9a000d9f9ebc46b77f30ca37d61eed3e28022b3"
+  },
+  "counts": {
+    "activities": 52,
+    "sourceFields": 90,
+    "optionalChecks": 6,
+    "officialKeys": 40,
+    "referenceFields": 45,
+    "sourceOpenFields": 5,
+    "illustrations": 29,
+    "dataAssertions": 957,
+    "rendererAssertions": 1479,
+    "unitTests": 52
+  },
+  "evidenceHashes": {
+    "check-data.py": "18d1185673925bffa8d8857db1b9d62f071efbdbe49a692a44e8e98303349e9d",
+    "check-render.mjs": "6417aa914ab378d51466ce2ad39ce805799e1aa3080858f368445c3bec0a1cbf",
+    "field-linkage.json": "9122b574a9b0aa17c5fca8e04c4ce11da76f0f79fba163e4e3366628ddcec0aa",
+    "illustration-index.json": "fcf16ce7ec5777d4320797707720d473569fef2d545b56771163d23b3654c15b",
+    "independent-candidate-review.md": "8e066eaa86327818e00c80a578a301b55f36e7d18c53bb8791f7833faeda3192",
+    "independent-data-checks.json": "a02601c85c91abbe2598bcf18843e325ea7d4d9c371f6d345759b32345bae90c",
+    "lesson-10.json": "5483522f9ffdc4890b72b9987ef67e4e9dbda0c9f6c857083553328e3ed09fb5",
+    "lesson-11.json": "312302260a98348355a201bdf9a000d9f9ebc46b77f30ca37d61eed3e28022b3",
+    "render-execution.log": "9f6fe7000bd64c1250cd9cce1b289b975b551d2c97265f00898092fef2e85a57",
+    "render-function-checks.json": "fec15aca577ce9a4594135fde1545a046acc707a5bbc76bab3058c9a0f79f4d6",
+    "reviewed-hashes.json": "f8a4b32c8733361021e2271e288fa857a91a55b7311c0a7de7f88d9aa3b574c2",
+    "src__activity-provenance.ts.txt": "12721fefeda69d0727b449478c47312c777b3f8e52f0960e6fd1888f50a45563",
+    "src__dom.ts.txt": "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e",
+    "src__lesson-view.ts.txt": "51c500a899c6f8799e69f0ebb1d4986c9c27f2340d83f164df9ccc57fcdbf9d1",
+    "src__segment-resolver.ts.txt": "cc5949627d7acdab15ca5159d8e146ef79932196763406984a138b44902d0bed",
+    "src__style.css.txt": "2657c35f7378f94a02393027fb26e646daf762ca63abc1e06b09512170d6aa3d",
+    "src__types.ts.txt": "1234904e2a44bd985b1814272ac7a236ec272233eaac02957e6c96522f1b7fc1",
+    "tools__verify-activities.mjs.txt": "124f88b2e829734265ce9f62a00cb07f8d3b6cea09f15cc69e36e50e13ab3167",
+    "typecheck.log": "d4f092fedd226092bbf6a231543d6396316d6c6c50cb8ab096ac0ea8e6785960",
+    "unit-tests.log": "11273cf00659b0bfa198d802aaebb88b47991a09c46659cc6b3a4c82c99f0a07"
+  }
+}

@@ -75,9 +75,9 @@
   "checks": {
     "course_unit": "52passed",
     "hsk1_unit": "335 passed after audio integration; unchangedHSK1 sources",
-    "course_build": "passed with integratedL8–9",
+    "course_build": "passed with integrated L10–11",
     "nonempty_storage": "passed in successful checkpoint for cross-level drafts, legacy HSK3 preservation and scoped backup restore",
-    "browsers": "52 cases passed, 26 each Chromium and WebKit, at remote aa3ee664 / exact local tree f731d303",
+    "browsers": "174/174 passed at remotee8b7aef,run37109960704;196test expanded L10–11suite collected,pending remote browserexecution",
     "physical_devices": "not run",
     "human_listening": "not run"
   },
@@ -131,11 +131,21 @@
   "phasesNote": "Steps1–4 foundation/pilot work progressed. No claim that all16 gates or all33 new-course deep reviews have passed. Later lesson authoring, all48-class regressions, immutable final assembly and production deployment remain pending.",
   "draftOnly": {
     "audioHsk2Lessons": [
-      2,
-      3
+      4,
+      5
     ],
-    "merged": true,
-    "status": "independently reviewed25words/7pending;integratedremote3cb40b9,CI37106355777running"
+    "merged": false,
+    "status": "author candidate complete; independent review pending",
+    "draftSha256": "c6362a6e121a9bb36300d596471b8f946fc43d40415000d79197f0dcb1fbb6ce",
+    "words": 34,
+    "unresolvedWords": 2,
+    "sourceLines": 41,
+    "sentenceUnits": 52,
+    "unsupportedCertifications": [
+      "humanListening",
+      "pronunciationTone",
+      "physicalDevice"
+    ]
   },
   "contentBatch23": {
     "activities": 55,
@@ -143,7 +153,7 @@
     "illustrations": 25,
     "independentSource": "passed",
     "independentTemplateRecheck": "passed",
-    "browser": "passed at f37364c; subsequent survey table changes require nextCI"
+    "browser": "passed in current174case aggregate run37109960704"
   },
   "contentBatch45": {
     "activities": 52,
@@ -163,15 +173,12 @@
   },
   "nextDraft": {
     "hsk2Lessons": [
-      8,
-      9
+      12,
+      13
     ],
-    "activities": 55,
-    "fields": 124,
-    "illustrations": 26,
-    "independentReview": "passed1758 assertions,26 actualSVGpixels,9 prior matrix regressions",
-    "integrated": true,
-    "sharedRenderer": "reviewed additive flags and source-footer deduplication; awaiting174case browserCI"
+    "integrated": false,
+    "authoring": "inprogress",
+    "sourceSpecificWork": "L12four-personsurvey with3headernamefields;L13hasnotext1/text2/text4photo;fullappendixandindependentreviewpending"
   },
   "contentBatch89": {
     "activities": 55,
@@ -180,6 +187,66 @@
     "illustrations": 26,
     "officialFields": 38,
     "independentChecks": 1758,
-    "browser": "pending174case aggregateCI"
+    "browser": "passed174/174 aggregate browser cases and8/8mobilepreflight, run37109960704, remotee8b7aef"
+  },
+  "updatedAt": "2026-10-03T09:10:00Z",
+  "remoteDevelopmentCommit": "e8b7aef9bd394d059879c93572470ad4233ef8df",
+  "localDevelopmentCommit": "9e4657ba0dd7c3e7aff1fa48ec5fccd389b6887c",
+  "exactSharedTree": "5506f247e846f0cd64f7c1b80c0cfc75975126d2",
+  "ciHistoryActual": [
+    {
+      "run": 37105595387,
+      "status": "success",
+      "passed": 104,
+      "failed": 0
+    },
+    {
+      "run": 37106355777,
+      "status": "failure",
+      "passed": 130,
+      "failed": 4,
+      "cause": "mobile document overflow; audio tests passed"
+    },
+    {
+      "run": 37107213747,
+      "status": "failure",
+      "passed": 144,
+      "failed": 10,
+      "cause": "same CSS containing-block family"
+    },
+    {
+      "run": 37107556124,
+      "status": "success",
+      "passed": 154,
+      "failed": 0,
+      "preflightPassed": 6
+    },
+    {
+      "run": 37109960704,
+      "status": "success",
+      "passed": 174,
+      "failed": 0,
+      "preflightPassed": 8,
+      "chromium": 87,
+      "webkit": 87,
+      "logReadback": "2026-10-03T08:49Z"
+    }
+  ],
+  "audioBatch23": {
+    "words": 25,
+    "unresolved": 7,
+    "status": "independently reviewed and integrated",
+    "browser": "audio tests passed in37106355777; all suite later passed in37107556124 and37109960704"
+  },
+  "contentBatch1011": {
+    "activities": 52,
+    "fields": 96,
+    "sourceFields": 90,
+    "officialFields": 40,
+    "illustrations": 29,
+    "independentDataAssertions": 957,
+    "independentRendererAssertions": 1479,
+    "independentArtworkPixels": "all29passed",
+    "browser": "196fulltests collected,notyetexecuted"
   }
 }
