@@ -460,6 +460,7 @@ async function render() {
       await renderHSK1();
       return;
     }
+    const requestedConfig=config,requestedRoute=route;
     const wanted =
       route.view === "courses" || route.view === "progress"
         ? []
@@ -471,8 +472,9 @@ async function render() {
         .filter((n) => !loaded.some((l) => l.number === n))
         .map((n) => loadLesson(config, n)),
     );
-    loaded.push(...lessons);
-    if (route.view === "practice") await loadLexicon(config);
+    if(token!==generation||config!==requestedConfig)return;
+    loaded.push(...lessons.filter(l=>l.courseId===requestedConfig.id&&!loaded.some(old=>old.id===l.id)));
+    if (requestedRoute.view === "practice") await loadLexicon(requestedConfig);
     if (token !== generation) return;
     if (route.view === "courses") renderCourses();
     else if (route.view === "practice") renderPractice();

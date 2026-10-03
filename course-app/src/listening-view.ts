@@ -122,10 +122,9 @@ export function mountListening(
         startedAt: Date.now(),
       };
       save();
-      if (await c.flush()) {
-        settings.open = false;
-        draw();
-      }
+      settings.open=false;
+      draw();
+      await c.flush();
     },
     "primary",
   );
@@ -214,13 +213,16 @@ export function mountListening(
       field.append(label);
     }
     card.append(field);
+    const displayedRound=round;
     const submit = button(
       copy("提交本题", "Nộp câu này"),
       async () => {
+        if(retired||round!==displayedRound||round?.submitted[id!]||submit.disabled)return;
         if (!round || round.answers[id!] === undefined) {
           c.message(copy("请先选择答案", "Hãy chọn đáp án trước"));
           return;
         }
+        submit.disabled=true;
         const a = grade(
           [question],
           { [id!]: round.answers[id!]! },
@@ -232,7 +234,8 @@ export function mountListening(
           recordAttempt(s, id! + ":individual", a, "listening");
           s.listeningRound = structuredClone(round);
         });
-        if (await c.flush()) draw();
+        draw();
+        await c.flush();
       },
       "primary",
     );

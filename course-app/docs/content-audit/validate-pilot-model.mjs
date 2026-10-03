@@ -5,6 +5,7 @@ import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 const root=path.resolve(import.meta.dirname,'../..');
 const ledger=JSON.parse(fs.readFileSync(path.join(root,'docs/textbook-page-coverage-ledger.json')));
+if(ledger.schemaVersion===2){ledger.entries=ledger.shards.flatMap(shard=>{const bytes=fs.readFileSync(path.join(root,'docs',shard.path));assert.equal(createHash('sha256').update(bytes).digest('hex'),shard.sha256);const data=JSON.parse(bytes);assert.equal(data.entries.length,shard.pages);return data.entries}).sort((a,b)=>a.documentId.localeCompare(b.documentId)||a.pdfPage-b.pdfPage)}
 const expected={'hsk2-textbook':162,'hsk3-textbook':212,'hsk2-answers':21,'hsk3-answers':27};
 assert.equal(ledger.entries.length,422);
 for(const [doc,count] of Object.entries(expected)){const es=ledger.entries.filter(e=>e.documentId===doc);assert.equal(es.length,count);assert.deepEqual(es.map(e=>e.pdfPage),Array.from({length:count},(_,i)=>i+1));}

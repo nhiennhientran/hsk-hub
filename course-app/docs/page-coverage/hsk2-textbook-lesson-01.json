@@ -1,0 +1,1653 @@
+{
+  "schemaVersion": 1,
+  "documentId": "hsk2-textbook",
+  "entries": [
+    {
+      "documentId": "hsk2-textbook",
+      "pdfPage": 16,
+      "printedPage": 1,
+      "unit": "第1课：她请我们吃了北京烤鸭",
+      "lesson": 1,
+      "categories": {
+        "text": false,
+        "vocabulary": false,
+        "grammar": false,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": true,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/objectives/0",
+          "nodeId": "hsk2-fltrp-2026:l01:objective1",
+          "section": "目标",
+          "label": "能听懂并使用“请”“让”“叫”表达请求。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/objectives/1",
+          "nodeId": "hsk2-fltrp-2026:l01:objective2",
+          "section": "目标",
+          "label": "掌握语气助词“吧”（2）的用法，能表达揣测、估计的语气。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/objectives/2",
+          "nodeId": "hsk2-fltrp-2026:l01:objective3",
+          "section": "目标",
+          "label": "掌握“是……的”句，能以此强调事情发生的时间、地点、方式等信息。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/objectives/3",
+          "nodeId": "hsk2-fltrp-2026:l01:objective4",
+          "section": "目标",
+          "label": "了解北京名菜烤鸭及其吃法。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/warmup/0",
+          "nodeId": "hsk2-fltrp-2026:l01:warmup1",
+          "section": "热身",
+          "label": "给下面的词语选择对应的图片。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/warmup/1",
+          "nodeId": "hsk2-fltrp-2026:l01:warmup2",
+          "section": "热身",
+          "label": "回忆自己上次出行的经历，完成下面的调查表。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk2-textbook-016.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "8fbb350eacf8dc834ae49567c6966676f67b5eec691dcae27a1c3eb745b119f0"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "目标4项自评",
+        "热身4幅图配4词",
+        "旅行经历调查表3行"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:objectives",
+          "targetRef": "objectives",
+          "kind": "self-assessment",
+          "fieldCount": 4,
+          "assessmentModes": [
+            "open"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:warmup-matching",
+          "targetRef": "hsk2-fltrp-2026:l01:warmup1",
+          "kind": "matching",
+          "fieldCount": 4,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:travel-survey",
+          "targetRef": "hsk2-fltrp-2026:l01:warmup2",
+          "kind": "survey",
+          "fieldCount": 3,
+          "assessmentModes": [
+            "open"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:warmup-1",
+          "sceneKey": "carry-bags",
+          "owner": "hsk2-fltrp-2026:l01:warmup1",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-carry-bags.svg",
+          "assetSha256": "5241e8ad15a7ce4fd0cebc9bb60bc26cdece9a60fc68b3b0efab16f4915da40e",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:warmup-2",
+          "sceneKey": "apology",
+          "owner": "hsk2-fltrp-2026:l01:warmup1",
+          "position": 2,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-apology.svg",
+          "assetSha256": "dc70fb9a83c169914b425dfc808640a9eebfb2c49f0ebc334a3e2b5b50b6820d",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:warmup-3",
+          "sceneKey": "sightseeing",
+          "owner": "hsk2-fltrp-2026:l01:warmup1",
+          "position": 3,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-sightseeing.svg",
+          "assetSha256": "b746d0918170f50be05127e4c78786d4d48823dfb95434092cb3f221d5b5e650",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:warmup-4",
+          "sceneKey": "introducing",
+          "owner": "hsk2-fltrp-2026:l01:warmup1",
+          "position": 4,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-introducing.svg",
+          "assetSha256": "609fab5340dcabd1482e2029565795660223301a924daecf5bf6f1ddf80164a4",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    },
+    {
+      "documentId": "hsk2-textbook",
+      "pdfPage": 17,
+      "printedPage": 2,
+      "unit": "第1课：她请我们吃了北京烤鸭",
+      "lesson": 1,
+      "categories": {
+        "text": true,
+        "vocabulary": true,
+        "grammar": false,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0",
+          "nodeId": "hsk2-fltrp-2026:l01:text1",
+          "section": "课文1",
+          "label": "课文1"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0/context",
+          "nodeId": null,
+          "section": "课文1：情境",
+          "label": "在机场，王一雪接到了白家月和安妮。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/0",
+          "nodeId": "hsk2-fltrp-2026:l01:text1:line1",
+          "section": "课文1",
+          "label": "请问，您是王一飞老师的姐姐吗？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/1",
+          "nodeId": "hsk2-fltrp-2026:l01:text1:line2",
+          "section": "课文1",
+          "label": "是的，你们就是她的学生吧？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/2",
+          "nodeId": "hsk2-fltrp-2026:l01:text1:line3",
+          "section": "课文1",
+          "label": "对。我是白家月，她是安妮。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/3",
+          "nodeId": "hsk2-fltrp-2026:l01:text1:line4",
+          "section": "课文1",
+          "label": "你们好，我叫王一雪。一飞给我打电话了，让我来接你们。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/4",
+          "nodeId": "hsk2-fltrp-2026:l01:text1:line5",
+          "section": "课文1",
+          "label": "谢谢您。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/5",
+          "nodeId": "hsk2-fltrp-2026:l01:text1:line6",
+          "section": "课文1",
+          "label": "不客气。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0/questions/0",
+          "nodeId": "hsk2-fltrp-2026:l01:text1:question1",
+          "section": "课文1：听后/读后练习",
+          "label": "谁来接白家月了？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0/questions/1",
+          "nodeId": "hsk2-fltrp-2026:l01:text1:question2",
+          "section": "课文1：听后/读后练习",
+          "label": "王一飞给谁打电话了？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/0",
+          "nodeId": "hsk2-fltrp-2026:l01:word01",
+          "section": "课文1：生词",
+          "label": "就"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/1",
+          "nodeId": "hsk2-fltrp-2026:l01:word02",
+          "section": "课文1：生词",
+          "label": "给"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/2",
+          "nodeId": "hsk2-fltrp-2026:l01:word03",
+          "section": "课文1：生词",
+          "label": "让"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/3",
+          "nodeId": "hsk2-fltrp-2026:l01:word04",
+          "section": "课文1：生词",
+          "label": "接"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk2-textbook-017.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "2babdabe2c77ca86a6fac893f408975c95a0e98a26f8d282173716719a34621d"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "课文1机场接机情境与照片",
+        "课文1对话6条",
+        "课文1听后选择2题",
+        "生词1–4（就、给、让、接）",
+        "原音1-1/1-2"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:text1-listening",
+          "targetRef": "hsk2-fltrp-2026:l01:text1:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text1:question1",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text1-listening-1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text1:question2",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text1-listening-2"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:text1",
+          "sceneKey": "airport-welcome",
+          "owner": "hsk2-fltrp-2026:l01:text1",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-airport-welcome.svg",
+          "assetSha256": "b2a673a10fb792727698f1a71deb8c6bd95878c0bb55799ba6bb9bbaa431ba06",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    },
+    {
+      "documentId": "hsk2-textbook",
+      "pdfPage": 18,
+      "printedPage": 3,
+      "unit": "第1课：她请我们吃了北京烤鸭",
+      "lesson": 1,
+      "categories": {
+        "text": true,
+        "vocabulary": false,
+        "grammar": true,
+        "illustrationOrTable": false,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0/questions/2",
+          "nodeId": "hsk2-fltrp-2026:l01:text1:question3",
+          "section": "课文1：听后/读后练习",
+          "label": "来北京前，白家月认识王一雪吗？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/0/questions/3",
+          "nodeId": "hsk2-fltrp-2026:l01:text1:question4",
+          "section": "课文1：听后/读后练习",
+          "label": "王一雪在做什么？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1/context",
+          "nodeId": null,
+          "section": "课文2：情境",
+          "label": "在王一雪的车里，白家月、安妮和王一雪在聊天儿。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1/questions/0",
+          "nodeId": "hsk2-fltrp-2026:l01:text2:question1",
+          "section": "课文2：听后/读后练习",
+          "label": "白家月是第几次来北京？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1/questions/1",
+          "nodeId": "hsk2-fltrp-2026:l01:text2:question2",
+          "section": "课文2：听后/读后练习",
+          "label": "白家月和安妮是来北京做什么的？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/0",
+          "nodeId": "hsk2-fltrp-2026:l01:grammar1",
+          "section": "语气助词“吧”（2）",
+          "label": "语气助词“吧”（2）"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/0/examples/0",
+          "nodeId": null,
+          "section": "语气助词“吧”（2）",
+          "label": "你们就是她的学生吧？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/0/examples/1",
+          "nodeId": null,
+          "section": "语气助词“吧”（2）",
+          "label": "她唱歌很好听吧？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/0/examples/2",
+          "nodeId": null,
+          "section": "语气助词“吧”（2）",
+          "label": "陈天中是泰国人吧？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/0/practice/0",
+          "nodeId": null,
+          "section": "语气助词“吧”（2）：完成对话",
+          "label": "A：这是______？ B：对，是我的手机，谢谢你！"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/0/practice/1",
+          "nodeId": null,
+          "section": "语气助词“吧”（2）：完成对话",
+          "label": "A：你______？认识你很高兴。 B：是。认识你，我也很高兴。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/0/practice/2",
+          "nodeId": null,
+          "section": "语气助词“吧”（2）：完成对话",
+          "label": "A：很晚了，老师______？ B：那我们明天再去学校找她。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "教材英文翻译未作为网页默认辅助层重新发布；网页保留原有越南语编辑翻译；中文题目与正文逐项对应。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk2-textbook-018.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "12d9d5d28689ef631856ff20def6efd0bf04b62ccde90c5d8e472a184814ee4e"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "课文1英文辅助层",
+        "课文1读后开放2题",
+        "语法1 吧(2)：规则、例句3条、完成对话3题",
+        "课文2情境",
+        "课文2听后选择2题与原音1-3"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:text1-reading",
+          "targetRef": "hsk2-fltrp-2026:l01:text1:reading",
+          "kind": "open",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:text2-listening",
+          "targetRef": "hsk2-fltrp-2026:l01:text2:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:grammar1-practice1",
+          "targetRef": "hsk2-fltrp-2026:l01:grammar1:practice:1",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:grammar1-practice2",
+          "targetRef": "hsk2-fltrp-2026:l01:grammar1:practice:2",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:grammar1-practice3",
+          "targetRef": "hsk2-fltrp-2026:l01:grammar1:practice:3",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text1:question3",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text1-reading-1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text1:question4",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text1-reading-2"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text2:question1",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text2-listening-1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text2:question2",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text2-listening-2"
+        }
+      ],
+      "illustrationBindings": []
+    },
+    {
+      "documentId": "hsk2-textbook",
+      "pdfPage": 19,
+      "printedPage": 4,
+      "unit": "第1课：她请我们吃了北京烤鸭",
+      "lesson": 1,
+      "categories": {
+        "text": true,
+        "vocabulary": true,
+        "grammar": true,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1",
+          "nodeId": "hsk2-fltrp-2026:l01:text2",
+          "section": "课文2",
+          "label": "课文2"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/0",
+          "nodeId": "hsk2-fltrp-2026:l01:text2:line1",
+          "section": "课文2",
+          "label": "你们是第一次来北京吗？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/1",
+          "nodeId": "hsk2-fltrp-2026:l01:text2:line2",
+          "section": "课文2",
+          "label": "是的，我们都是第一次来。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/2",
+          "nodeId": "hsk2-fltrp-2026:l01:text2:line3",
+          "section": "课文2",
+          "label": "你们是来学中文的吗？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/3",
+          "nodeId": "hsk2-fltrp-2026:l01:text2:line4",
+          "section": "课文2",
+          "label": "不是，我们是来旅游的。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/4",
+          "nodeId": "hsk2-fltrp-2026:l01:text2:line5",
+          "section": "课文2",
+          "label": "我这几天都不忙，你们有事就找我。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/5",
+          "nodeId": "hsk2-fltrp-2026:l01:text2:line6",
+          "section": "课文2",
+          "label": "好的，谢谢您。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1/questions/2",
+          "nodeId": "hsk2-fltrp-2026:l01:text2:question3",
+          "section": "课文2：听后/读后练习",
+          "label": "王一雪这几天忙不忙？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/1/questions/3",
+          "nodeId": "hsk2-fltrp-2026:l01:text2:question4",
+          "section": "课文2：听后/读后练习",
+          "label": "白家月有事可以找谁？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/4",
+          "nodeId": "hsk2-fltrp-2026:l01:word05",
+          "section": "课文2：生词",
+          "label": "次"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/5",
+          "nodeId": "hsk2-fltrp-2026:l01:word06",
+          "section": "课文2：生词",
+          "label": "旅游"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/1",
+          "nodeId": "hsk2-fltrp-2026:l01:grammar2",
+          "section": "“是……的”句",
+          "label": "“是……的”句"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "教材英文翻译未作为网页默认辅助层重新发布；网页保留原有越南语编辑翻译；中文题目与正文逐项对应。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk2-textbook-019.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "019f20107a0fe4e5e826d60952e63fd67ea6e9c3a0b52176fd57df52deeb9890"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "课文2对话6条、驾车照片",
+        "生词5–6（次、旅游）及原音1-4",
+        "课文2英文辅助层",
+        "课文2读后开放2题",
+        "语法2 是……的规则（跨页）"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:text2-reading",
+          "targetRef": "hsk2-fltrp-2026:l01:text2:reading",
+          "kind": "open",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text2:question3",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text2-reading-1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text2:question4",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text2-reading-2"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:text2",
+          "sceneKey": "car-conversation",
+          "owner": "hsk2-fltrp-2026:l01:text2",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-car-conversation.svg",
+          "assetSha256": "0f3fdd53973bf745a0acbae056856c75c25805557bbcc7c0fa4b4b6348942509",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    },
+    {
+      "documentId": "hsk2-textbook",
+      "pdfPage": 20,
+      "printedPage": 5,
+      "unit": "第1课：她请我们吃了北京烤鸭",
+      "lesson": 1,
+      "categories": {
+        "text": true,
+        "vocabulary": true,
+        "grammar": true,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2",
+          "nodeId": "hsk2-fltrp-2026:l01:text3",
+          "section": "课文3",
+          "label": "课文3"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2/context",
+          "nodeId": null,
+          "section": "课文3：情境",
+          "label": "在王一雪的车上，白家月接了个电话。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/0",
+          "nodeId": "hsk2-fltrp-2026:l01:text3:line1",
+          "section": "课文3",
+          "label": "喂，家月，你明天有时间吗？我想请你帮个忙。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/1",
+          "nodeId": "hsk2-fltrp-2026:l01:text3:line2",
+          "section": "课文3",
+          "label": "不好意思，天中，我已经到北京了。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/2",
+          "nodeId": "hsk2-fltrp-2026:l01:text3:line3",
+          "section": "课文3",
+          "label": "你是什么时候到的？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/3",
+          "nodeId": "hsk2-fltrp-2026:l01:text3:line4",
+          "section": "课文3",
+          "label": "我是今天早上到的。你有事可以叫李文帮忙，他还在学校呢。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/4",
+          "nodeId": "hsk2-fltrp-2026:l01:text3:line5",
+          "section": "课文3",
+          "label": "好的，那我给他打个电话。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/5",
+          "nodeId": "hsk2-fltrp-2026:l01:text3:line6",
+          "section": "课文3",
+          "label": "好，再见！"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2/questions/0",
+          "nodeId": "hsk2-fltrp-2026:l01:text3:question1",
+          "section": "课文3：听后/读后练习",
+          "label": "陈天中为什么给白家月打电话？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2/questions/1",
+          "nodeId": "hsk2-fltrp-2026:l01:text3:question2",
+          "section": "课文3：听后/读后练习",
+          "label": "白家月是什么时候到北京的？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/6",
+          "nodeId": "hsk2-fltrp-2026:l01:word07",
+          "section": "课文3：生词",
+          "label": "帮忙"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/7",
+          "nodeId": "hsk2-fltrp-2026:l01:word08",
+          "section": "课文3：生词",
+          "label": "不好意思"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/8",
+          "nodeId": "hsk2-fltrp-2026:l01:word09",
+          "section": "课文3：生词",
+          "label": "已经"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/9",
+          "nodeId": "hsk2-fltrp-2026:l01:word10",
+          "section": "课文3：生词",
+          "label": "那"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/1/examples/0",
+          "nodeId": null,
+          "section": "“是……的”句",
+          "label": "我们是来旅游的。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/1/examples/1",
+          "nodeId": null,
+          "section": "“是……的”句",
+          "label": "苹果在哪儿买的？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/1/examples/2",
+          "nodeId": null,
+          "section": "“是……的”句",
+          "label": "我们不是坐出租车去的。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/1/practice/0",
+          "nodeId": null,
+          "section": "“是……的”句：完成对话",
+          "label": "A：你是坐车来学校的吗？ B：______。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/1/practice/1",
+          "nodeId": null,
+          "section": "“是……的”句：完成对话",
+          "label": "A：你今天是几点到学校的？ B：______。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/1/practice/2",
+          "nodeId": null,
+          "section": "“是……的”句：完成对话",
+          "label": "A：______？ B：我是在书店看见安妮的。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk2-textbook-020.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "3d8fbf55e1a0ebe354a64d3bcf8d36f690a2b34b32e967957e49170fbfce49cf"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "语法2例句3条与对话3题",
+        "课文3情境、对话6条、车中通话照片",
+        "课文3听后选择2题",
+        "生词7–10（帮忙、不好意思、已经、那）",
+        "原音1-5/1-6"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:text3-listening",
+          "targetRef": "hsk2-fltrp-2026:l01:text3:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:grammar2-practice1",
+          "targetRef": "hsk2-fltrp-2026:l01:grammar2:practice:1",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:grammar2-practice2",
+          "targetRef": "hsk2-fltrp-2026:l01:grammar2:practice:2",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:grammar2-practice3",
+          "targetRef": "hsk2-fltrp-2026:l01:grammar2:practice:3",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text3:question1",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text3-listening-1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text3:question2",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text3-listening-2"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:text3",
+          "sceneKey": "phone-in-car",
+          "owner": "hsk2-fltrp-2026:l01:text3",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-phone-in-car.svg",
+          "assetSha256": "39bb8accfb8fbce02c84afc4a2840647d8adebb3c6e13dcadc219593dd88ea97",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    },
+    {
+      "documentId": "hsk2-textbook",
+      "pdfPage": 21,
+      "printedPage": 6,
+      "unit": "第1课：她请我们吃了北京烤鸭",
+      "lesson": 1,
+      "categories": {
+        "text": false,
+        "vocabulary": false,
+        "grammar": true,
+        "illustrationOrTable": false,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2/questions/2",
+          "nodeId": "hsk2-fltrp-2026:l01:text3:question3",
+          "section": "课文3：听后/读后练习",
+          "label": "白家月现在在哪儿？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/2/questions/3",
+          "nodeId": "hsk2-fltrp-2026:l01:text3:question4",
+          "section": "课文3：听后/读后练习",
+          "label": "白家月让陈天中找谁帮忙？为什么？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/2",
+          "nodeId": "hsk2-fltrp-2026:l01:grammar3",
+          "section": "兼语句",
+          "label": "兼语句"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/2/examples/0",
+          "nodeId": null,
+          "section": "兼语句",
+          "label": "我想请你帮个忙。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/2/examples/1",
+          "nodeId": null,
+          "section": "兼语句",
+          "label": "王老师让我们说中文。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/2/examples/2",
+          "nodeId": null,
+          "section": "兼语句",
+          "label": "妈妈叫孩子们回家。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/2/practice/0",
+          "nodeId": null,
+          "section": "兼语句：完成对话",
+          "label": "A：明天我想请______来______。 B：好的，我下班后去买点儿菜。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/2/practice/1",
+          "nodeId": null,
+          "section": "兼语句：完成对话",
+          "label": "A：家月，王老师让______去______。 B：好的，我现在就去找她。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/grammar/2/practice/2",
+          "nodeId": null,
+          "section": "兼语句：完成对话",
+          "label": "A：小雪，你去哪儿？ B：我去超市。妈妈叫______。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "教材英文翻译未作为网页默认辅助层重新发布；网页保留原有越南语编辑翻译；中文题目与正文逐项对应。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk2-textbook-021.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "c89c785f6553117d55e1028300471c10583c3be2c67da71fe9182d327fbfbc98"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "课文3英文辅助层",
+        "课文3读后开放2题",
+        "语法3兼语句：规则、结构、例句3条、对话3题"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:text3-reading",
+          "targetRef": "hsk2-fltrp-2026:l01:text3:reading",
+          "kind": "open",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:grammar3-practice1",
+          "targetRef": "hsk2-fltrp-2026:l01:grammar3:practice:1",
+          "kind": "fill",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:grammar3-practice2",
+          "targetRef": "hsk2-fltrp-2026:l01:grammar3:practice:2",
+          "kind": "fill",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:grammar3-practice3",
+          "targetRef": "hsk2-fltrp-2026:l01:grammar3:practice:3",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text3:question3",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text3-reading-1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text3:question4",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text3-reading-2"
+        }
+      ],
+      "illustrationBindings": []
+    },
+    {
+      "documentId": "hsk2-textbook",
+      "pdfPage": 22,
+      "printedPage": 7,
+      "unit": "第1课：她请我们吃了北京烤鸭",
+      "lesson": 1,
+      "categories": {
+        "text": true,
+        "vocabulary": true,
+        "grammar": false,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/3",
+          "nodeId": "hsk2-fltrp-2026:l01:text4",
+          "section": "课文4",
+          "label": "课文4"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/3/context",
+          "nodeId": null,
+          "section": "课文4：情境",
+          "label": "在酒店，白家月给王一飞发信息。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/3/lines/0",
+          "nodeId": "hsk2-fltrp-2026:l01:text4:line1",
+          "section": "课文4",
+          "label": "王老师，我们已经到北京了，是您姐姐来接的我们。她请我们吃了北京烤鸭，还给我们介绍了很多东西。我们的中文不太好，有时不太懂她的意思。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/3/questions/0",
+          "nodeId": "hsk2-fltrp-2026:l01:text4:question1",
+          "section": "课文4：听后/读后练习",
+          "label": "王老师到北京了，是她姐姐来接的她。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/3/questions/1",
+          "nodeId": "hsk2-fltrp-2026:l01:text4:question2",
+          "section": "课文4：听后/读后练习",
+          "label": "白家月现在要去饭店吃北京烤鸭。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/3/questions/2",
+          "nodeId": "hsk2-fltrp-2026:l01:text4:question3",
+          "section": "课文4：听后/读后练习",
+          "label": "王老师的姐姐请白家月吃什么了？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/texts/3/questions/3",
+          "nodeId": "hsk2-fltrp-2026:l01:text4:question4",
+          "section": "课文4：听后/读后练习",
+          "label": "白家月为什么不懂王老师姐姐的意思？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/10",
+          "nodeId": "hsk2-fltrp-2026:l01:word11",
+          "section": "课文4：生词",
+          "label": "介绍"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/11",
+          "nodeId": "hsk2-fltrp-2026:l01:word12",
+          "section": "课文4：生词",
+          "label": "有时"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/12",
+          "nodeId": "hsk2-fltrp-2026:l01:word13",
+          "section": "课文4：生词",
+          "label": "懂"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/13",
+          "nodeId": "hsk2-fltrp-2026:l01:word14",
+          "section": "课文4：生词",
+          "label": "意思"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/vocabulary/14",
+          "nodeId": "hsk2-fltrp-2026:l01:word15",
+          "section": "课文4：生词",
+          "label": "北京烤鸭"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "教材英文翻译未作为网页默认辅助层重新发布；网页保留原有越南语编辑翻译；中文题目与正文逐项对应。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk2-textbook-022.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "127a38e6e55eb9c898d285b6f3e75afb3ef4a7dd4c44333db5af3651ffc15af2"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "课文4酒店消息全文与烤鸭照片",
+        "课文4听后判断2题",
+        "生词11–14与专名北京烤鸭",
+        "课文4英文辅助层",
+        "课文4读后选择2题",
+        "原音1-7/1-8"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:text4-listening",
+          "targetRef": "hsk2-fltrp-2026:l01:text4:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:text4-reading",
+          "targetRef": "hsk2-fltrp-2026:l01:text4:reading",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text4:question1",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text4-listening-1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text4:question2",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text4-listening-2"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text4:question3",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text4-reading-1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l01:text4:question4",
+          "activityFieldId": "hsk2-fltrp-2026:l01:field:text4-reading-2"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:text4",
+          "sceneKey": "duck-message",
+          "owner": "hsk2-fltrp-2026:l01:text4",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-duck-message.svg",
+          "assetSha256": "9aac4d5260a1cfa29f7ee96b2409d69df80d38541ea57ffe7e1602e84c422c4d",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    },
+    {
+      "documentId": "hsk2-textbook",
+      "pdfPage": 23,
+      "printedPage": 8,
+      "unit": "第1课：她请我们吃了北京烤鸭",
+      "lesson": 1,
+      "categories": {
+        "text": false,
+        "vocabulary": false,
+        "grammar": false,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/0",
+          "nodeId": "hsk2-fltrp-2026:l01:section1",
+          "section": "综合练习：选词填空",
+          "label": "综合练习：选词填空"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/0",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "选词填空。A 帮忙；B 已经；C 意思；D 介绍；E 有时。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/1",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "（1）我______去电影院看个电影。\n（2）上课要多听、多说，你懂我的______吗？\n（3）我很喜欢北京，这______是我第三次来北京了。\n（4）A：安妮，我给你______一下，这是我的中国朋"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/1",
+          "nodeId": "hsk2-fltrp-2026:l01:section2",
+          "section": "小语助力：多听、多说",
+          "label": "小语助力：多听、多说"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/1/blocks/0",
+          "nodeId": null,
+          "section": "小语助力：多听、多说",
+          "label": "此处“多听、多说”表示反复多次地听和说。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/2",
+          "nodeId": "hsk2-fltrp-2026:l01:section3",
+          "section": "综合练习：描述图片",
+          "label": "综合练习：描述图片"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/2/blocks/0",
+          "nodeId": null,
+          "section": "综合练习：描述图片",
+          "label": "用本课新学的词语和语言点描述图片。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/2/blocks/1",
+          "nodeId": null,
+          "section": "综合练习：描述图片",
+          "label": "（1）他们是开车______。\n（2）妈妈______孩子们______。\n（3）他们______去的。\n（4）她______7点______。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk2-textbook-023.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "86d497d8f45fd633f9f58fb6ecc06f5420010a9b6f784de54a2c780fe68f0771"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "综合选词填空5题及词库",
+        "小语助力：多听、多说",
+        "综合看图4组，共6空"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:comprehensive-words",
+          "targetRef": "hsk2-fltrp-2026:l01:section1",
+          "kind": "fill",
+          "fieldCount": 5,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:picture-dialogue1",
+          "targetRef": "hsk2-fltrp-2026:l01:section3:picture:1",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:picture-dialogue2",
+          "targetRef": "hsk2-fltrp-2026:l01:section3:picture:2",
+          "kind": "fill",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:picture-dialogue3",
+          "targetRef": "hsk2-fltrp-2026:l01:section3:picture:3",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:picture-dialogue4",
+          "targetRef": "hsk2-fltrp-2026:l01:section3:picture:4",
+          "kind": "fill",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:comprehensive-1",
+          "sceneKey": "family-road-trip",
+          "owner": "hsk2-fltrp-2026:l01:section3",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-family-road-trip.svg",
+          "assetSha256": "c9a5d6b6f9987ad47ded824ee8a47358ef7dbe70ac3378334f25212505002129",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:comprehensive-2",
+          "sceneKey": "family-meal",
+          "owner": "hsk2-fltrp-2026:l01:section3",
+          "position": 2,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-family-meal.svg",
+          "assetSha256": "647aacff83c95fd439228367bece2ad001e04d65af3b6931545819dfc608458b",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:comprehensive-3",
+          "sceneKey": "boarding-plane",
+          "owner": "hsk2-fltrp-2026:l01:section3",
+          "position": 3,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-boarding-plane.svg",
+          "assetSha256": "a762a5e1c94897efb9a89448f1a9eb250f9f001bb70b3147e7d8d2d8e4842876",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:comprehensive-4",
+          "sceneKey": "wake-seven",
+          "owner": "hsk2-fltrp-2026:l01:section3",
+          "position": 4,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-wake-seven.svg",
+          "assetSha256": "714ad2f3e3e6de08ce5656071bb4d30b494c248b40aa68cb320bca28048e727f",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    },
+    {
+      "documentId": "hsk2-textbook",
+      "pdfPage": 24,
+      "printedPage": 9,
+      "unit": "第1课：她请我们吃了北京烤鸭",
+      "lesson": 1,
+      "categories": {
+        "text": false,
+        "vocabulary": false,
+        "grammar": false,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/3",
+          "nodeId": "hsk2-fltrp-2026:l01:section4",
+          "section": "课堂活动：角色扮演",
+          "label": "课堂活动：角色扮演"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/3/blocks/0",
+          "nodeId": null,
+          "section": "课堂活动：角色扮演",
+          "label": "两人一组，一人来火车站接朋友，一人刚出站、是接站人的朋友。接站人向朋友询问来这里的目的和现在要去的地方，等等。尽可能使用本课所学生词和语法。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/3/blocks/1",
+          "nodeId": null,
+          "section": "课堂活动：角色扮演",
+          "label": "A：你是第一次来北京吗？\nB：不是，已经是第二次来北京了。\n……"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/4",
+          "nodeId": "hsk2-fltrp-2026:l01:section5",
+          "section": "小语的彩蛋：北京烤鸭的吃法",
+          "label": "小语的彩蛋：北京烤鸭的吃法"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk2/lesson-01.json",
+          "jsonPointer": "/sections/4/blocks/0",
+          "nodeId": null,
+          "section": "小语的彩蛋：北京烤鸭的吃法",
+          "label": "北京烤鸭的吃法（视频1-1）"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "文化视频1-1未提供，保留缺失说明，不用MP3冒充视频。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk2-textbook-024.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "927c75b37e84d716fc34adc71ccf740e8b96f36b8136b2de0705070217ae2b9c"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "课堂角色扮演：火车站接朋友及例子",
+        "文化：北京烤鸭吃法；原图视频静帧与视频1-1标记"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l01:activity:roleplay",
+          "targetRef": "hsk2-fltrp-2026:l01:section4",
+          "kind": "open",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "open"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l01:illustration:culture",
+          "sceneKey": "duck-serving",
+          "owner": "hsk2-fltrp-2026:l01:culture",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk2-l01-duck-serving.svg",
+          "assetSha256": "ab632e9d1aecf35fae3a3b52311f477576fcadcf0e2b68060d2a5d11723d24d3",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    }
+  ]
+}

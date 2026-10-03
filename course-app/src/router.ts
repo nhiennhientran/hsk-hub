@@ -67,7 +67,7 @@ export function parseRoute(
     ].includes(section ?? "")
       ? { section: section as Section }
       : {}),
-    ...(scene >= 1 && scene <= 4 ? { scene } : {}),
+    ...(Number.isInteger(scene) && scene >= 1 && scene <= 4 ? { scene } : {}),
     ...(["30-v1", "legacy"].includes(p.get("version") ?? "")
       ? { homeworkVersion: p.get("version") as "30-v1" | "legacy" }
       : {}),

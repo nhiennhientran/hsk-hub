@@ -1,0 +1,1870 @@
+{
+  "schemaVersion": 1,
+  "documentId": "hsk3-textbook",
+  "entries": [
+    {
+      "documentId": "hsk3-textbook",
+      "pdfPage": 13,
+      "printedPage": 1,
+      "unit": "第1课：我们去机场接你们",
+      "lesson": 1,
+      "categories": {
+        "text": false,
+        "vocabulary": false,
+        "grammar": false,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": true,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/objectives/0",
+          "nodeId": "hsk3-fltrp-2026:l01:objective1",
+          "section": "目标",
+          "label": "能听懂并使用多项定语描述人或事物的特征。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/objectives/1",
+          "nodeId": "hsk3-fltrp-2026:l01:objective2",
+          "section": "目标",
+          "label": "能听懂并解决物品丢失的问题。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/objectives/2",
+          "nodeId": "hsk3-fltrp-2026:l01:objective3",
+          "section": "目标",
+          "label": "掌握疑问代词的用法，能表达不确定的人、事物或地方等信息。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/warmup/0",
+          "nodeId": "hsk3-fltrp-2026:l01:warmup1",
+          "section": "热身",
+          "label": "给下面的词语选择对应的图片。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/warmup/1",
+          "nodeId": "hsk3-fltrp-2026:l01:warmup2",
+          "section": "热身",
+          "label": "两人一组，根据实际情况对话。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk3-textbook-013.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "4c5a5e9751fac30c8dd048b9c9f2106400d5d6e096e6f0df4e5b8b8561ca5f06"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "目标3项自评",
+        "热身6幅图配6词",
+        "热身讨论2场景（丢物品、接陌生人）"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:objectives",
+          "targetRef": "objectives",
+          "kind": "self-assessment",
+          "fieldCount": 3,
+          "assessmentModes": [
+            "open"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:warmup-matching",
+          "targetRef": "hsk3-fltrp-2026:l01:warmup1",
+          "kind": "matching",
+          "fieldCount": 6,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:warmup-pair",
+          "targetRef": "hsk3-fltrp-2026:l01:warmup2",
+          "kind": "open",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "open"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [],
+      "illustrationBindings": [
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:warmup-1",
+          "sceneKey": "long-hair",
+          "owner": "hsk3-fltrp-2026:l01:warmup1",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-long-hair.svg",
+          "assetSha256": "f0dd6576b6e0b813265591e845b3317f3b245bc66c026243e3655559107e0dbe",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:warmup-2",
+          "sceneKey": "photo-wall",
+          "owner": "hsk3-fltrp-2026:l01:warmup1",
+          "position": 2,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-photo-wall.svg",
+          "assetSha256": "2b7807b2e27c8190b78345309ed448ce40e87cd40e4d2a3a9a89bfd736961c48",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:warmup-3",
+          "sceneKey": "airport-greeting",
+          "owner": "hsk3-fltrp-2026:l01:warmup1",
+          "position": 3,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-airport-greeting.svg",
+          "assetSha256": "d9227a52a0bb2c1790efd18878c265b87348b9ca8749a9956b8c861159ee4bca",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:warmup-4",
+          "sceneKey": "height-measure",
+          "owner": "hsk3-fltrp-2026:l01:warmup1",
+          "position": 4,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-height-measure.svg",
+          "assetSha256": "c6e7c6e7b6d5ffb04462c19ed71cce3f6baa3aa5fd9c1e9ccd7cba6e49818844",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:warmup-5",
+          "sceneKey": "suitcases",
+          "owner": "hsk3-fltrp-2026:l01:warmup1",
+          "position": 5,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-suitcases.svg",
+          "assetSha256": "c708da3888fd47eebd5dd0f032897de7aa8e416d6b7824f05126243952e6a7b5",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:warmup-6",
+          "sceneKey": "travel-document",
+          "owner": "hsk3-fltrp-2026:l01:warmup1",
+          "position": 6,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-travel-document.svg",
+          "assetSha256": "e9bb037e64c5367eb20cbed964d70906f0a93fe25a709d8512c295cd0aae40b0",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    },
+    {
+      "documentId": "hsk3-textbook",
+      "pdfPage": 14,
+      "printedPage": 2,
+      "unit": "第1课：我们去机场接你们",
+      "lesson": 1,
+      "categories": {
+        "text": true,
+        "vocabulary": true,
+        "grammar": false,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0",
+          "nodeId": "hsk3-fltrp-2026:l01:text1",
+          "section": "课文1",
+          "label": "课文1"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/context",
+          "nodeId": null,
+          "section": "课文1情景",
+          "label": "在家里，刘明和王一雪在沙发上聊天儿。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/0",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:line1",
+          "section": "课文1",
+          "label": "这是杨同乐吗？他怎么跟白家月在一起？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/1",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:line2",
+          "section": "课文1",
+          "label": "他不是杨同乐，他叫李文，是白家月的好朋友。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/2",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:line3",
+          "section": "课文1",
+          "label": "我还以为是同乐呢，他们看上去有点儿像。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/3",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:line4",
+          "section": "课文1",
+          "label": "是长得有点儿像，但是他比同乐高，身高有一米八。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/4",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:line5",
+          "section": "课文1",
+          "label": "看起来也比同乐瘦一点儿。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/5",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:line6",
+          "section": "课文1",
+          "label": "下个星期家月和李文要来北京，我去机场接他们。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/lines/6",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:line7",
+          "section": "课文1",
+          "label": "他们哪天到北京？我跟你一起去机场接他们吧。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/questions/0",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:question1",
+          "section": "课文1：听后/读后练习",
+          "label": "刘明和王一雪在做什么？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/questions/1",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:question2",
+          "section": "课文1：听后/读后练习",
+          "label": "刘明跟王一雪一起去机场做什么？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/questions/2",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:question3",
+          "section": "课文1：听后/读后练习",
+          "label": "刘明为什么以为李文是杨同乐？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/questions/3",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:question4",
+          "section": "课文1：听后/读后练习",
+          "label": "李文长什么样？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/0/questions/4",
+          "nodeId": "hsk3-fltrp-2026:l01:text1:question5",
+          "section": "课文1：听后/读后练习",
+          "label": "白家月什么时候来中国？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/0",
+          "nodeId": "hsk3-fltrp-2026:l01:word01",
+          "section": "课文1：生词",
+          "label": "以为"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/1",
+          "nodeId": "hsk3-fltrp-2026:l01:word02",
+          "section": "课文1：生词",
+          "label": "像"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/2",
+          "nodeId": "hsk3-fltrp-2026:l01:word03",
+          "section": "课文1：生词",
+          "label": "长"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/3",
+          "nodeId": "hsk3-fltrp-2026:l01:word04",
+          "section": "课文1：生词",
+          "label": "身高"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/4",
+          "nodeId": "hsk3-fltrp-2026:l01:word05",
+          "section": "课文1：生词",
+          "label": "米"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/5",
+          "nodeId": "hsk3-fltrp-2026:l01:word06",
+          "section": "课文1：生词",
+          "label": "瘦"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/6",
+          "nodeId": "hsk3-fltrp-2026:l01:word07",
+          "section": "课文1：生词",
+          "label": "接"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk3-textbook-014.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "dbf443e3f5072123b7841bbc91a1e8727360491d927aafa5546631e3fd9e6aa8"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "课文1沙发看照片情境、对话7条与照片",
+        "课文1听后选择2题及读后开放3题",
+        "生词1–7（以为至接）",
+        "原音1-1/1-2"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:text1-listening",
+          "targetRef": "hsk3-fltrp-2026:l01:text1:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:text1-reading",
+          "targetRef": "hsk3-fltrp-2026:l01:text1:reading",
+          "kind": "open",
+          "fieldCount": 3,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text1:question1",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text1-listening-1"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text1:question2",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text1-listening-2"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text1:question3",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text1-reading-1"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text1:question4",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text1-reading-2"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text1:question5",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text1-reading-3"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:text1",
+          "sceneKey": "sofa-phone",
+          "owner": "hsk3-fltrp-2026:l01:text1",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-sofa-phone.svg",
+          "assetSha256": "adf62b15cfeb89a46c74f0a7720d8470c8f09e81feb99b56f0c0c540954a7429",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    },
+    {
+      "documentId": "hsk3-textbook",
+      "pdfPage": 15,
+      "printedPage": 3,
+      "unit": "第1课：我们去机场接你们",
+      "lesson": 1,
+      "categories": {
+        "text": true,
+        "vocabulary": false,
+        "grammar": true,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/context",
+          "nodeId": null,
+          "section": "课文2情景",
+          "label": "在机场，李文和白家月在行李领取处。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/questions/0",
+          "nodeId": "hsk3-fltrp-2026:l01:text2:question1",
+          "section": "课文2：听后/读后练习",
+          "label": "李文和白家月在机场做什么？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/questions/1",
+          "nodeId": "hsk3-fltrp-2026:l01:text2:question2",
+          "section": "课文2：听后/读后练习",
+          "label": "白家月为什么很着急？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/0",
+          "nodeId": "hsk3-fltrp-2026:l01:grammar1",
+          "section": "固定短语“看上去／看起来”",
+          "label": "固定短语“看上去／看起来”"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/0/examples/0",
+          "nodeId": null,
+          "section": "固定短语“看上去／看起来”",
+          "label": "他们看上去有点儿像。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/0/examples/1",
+          "nodeId": null,
+          "section": "固定短语“看上去／看起来”",
+          "label": "这些菜看起来都很好吃。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/0/examples/2",
+          "nodeId": null,
+          "section": "固定短语“看上去／看起来”",
+          "label": "那个新来的老师看上去很年轻。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/0/practice/0",
+          "nodeId": null,
+          "section": "固定短语“看上去／看起来”：完成对话",
+          "label": "你______长得更像你妈妈。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/0/practice/1",
+          "nodeId": null,
+          "section": "固定短语“看上去／看起来”：完成对话",
+          "label": "你______，好好休息一下吧。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/0/practice/2",
+          "nodeId": null,
+          "section": "固定短语“看上去／看起来”：完成对话",
+          "label": "你怎么了？今天______。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk3-textbook-015.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "eb3dc0d7ff7da7077f78cc2ba2342a64b36ae4453bf3356d0f303b4130dc8b1a"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "语法1看上去/看起来：规则、例句3条、完成句子3题",
+        "课文2行李领取处情境与传送带照片",
+        "课文2听后选择2题及原音1-3"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:text2-listening",
+          "targetRef": "hsk3-fltrp-2026:l01:text2:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:grammar1-practice1",
+          "targetRef": "hsk3-fltrp-2026:l01:grammar1:practice:1",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:grammar1-practice2",
+          "targetRef": "hsk3-fltrp-2026:l01:grammar1:practice:2",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:grammar1-practice3",
+          "targetRef": "hsk3-fltrp-2026:l01:grammar1:practice:3",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text2:question1",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text2-listening-1"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text2:question2",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text2-listening-2"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:text2",
+          "sceneKey": "baggage-carousel",
+          "owner": "hsk3-fltrp-2026:l01:text2",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-baggage-carousel.svg",
+          "assetSha256": "1acd9682a1330e67eb1451728dc0c5bf52ad178b60d6314cede6b344f1e7a83f",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    },
+    {
+      "documentId": "hsk3-textbook",
+      "pdfPage": 16,
+      "printedPage": 4,
+      "unit": "第1课：我们去机场接你们",
+      "lesson": 1,
+      "categories": {
+        "text": true,
+        "vocabulary": true,
+        "grammar": true,
+        "illustrationOrTable": false,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1",
+          "nodeId": "hsk3-fltrp-2026:l01:text2",
+          "section": "课文2",
+          "label": "课文2"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/0",
+          "nodeId": "hsk3-fltrp-2026:l01:text2:line1",
+          "section": "课文2",
+          "label": "我的行李怎么还没出来？是不是丢了？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/1",
+          "nodeId": "hsk3-fltrp-2026:l01:text2:line2",
+          "section": "课文2",
+          "label": "你的行李箱是什么样的？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/2",
+          "nodeId": "hsk3-fltrp-2026:l01:text2:line3",
+          "section": "课文2",
+          "label": "是一个黑色的箱子，上面写着我的名字和电话号码。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/3",
+          "nodeId": "hsk3-fltrp-2026:l01:text2:line4",
+          "section": "课文2",
+          "label": "我好像在哪儿看到过这个箱子，是不是有人拿错了？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/4",
+          "nodeId": "hsk3-fltrp-2026:l01:text2:line5",
+          "section": "课文2",
+          "label": "我们快找谁问一下吧，箱子里有不少重要的东西。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/lines/5",
+          "nodeId": "hsk3-fltrp-2026:l01:text2:line6",
+          "section": "课文2",
+          "label": "别着急，我们拿着护照和机票，去服务台问问吧。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/questions/2",
+          "nodeId": "hsk3-fltrp-2026:l01:text2:question3",
+          "section": "课文2：听后/读后练习",
+          "label": "白家月的箱子是什么样的？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/questions/3",
+          "nodeId": "hsk3-fltrp-2026:l01:text2:question4",
+          "section": "课文2：听后/读后练习",
+          "label": "李文看到过白家月的箱子吗？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/1/questions/4",
+          "nodeId": "hsk3-fltrp-2026:l01:text2:question5",
+          "section": "课文2：听后/读后练习",
+          "label": "他们现在要做什么？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/7",
+          "nodeId": "hsk3-fltrp-2026:l01:word08",
+          "section": "课文2：生词",
+          "label": "行李"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/8",
+          "nodeId": "hsk3-fltrp-2026:l01:word09",
+          "section": "课文2：生词",
+          "label": "丢"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/9",
+          "nodeId": "hsk3-fltrp-2026:l01:word10",
+          "section": "课文2：生词",
+          "label": "箱子"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/10",
+          "nodeId": "hsk3-fltrp-2026:l01:word11",
+          "section": "课文2：生词",
+          "label": "号码"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/11",
+          "nodeId": "hsk3-fltrp-2026:l01:word12",
+          "section": "课文2：生词",
+          "label": "好像"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/12",
+          "nodeId": "hsk3-fltrp-2026:l01:word13",
+          "section": "课文2：生词",
+          "label": "重要"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/13",
+          "nodeId": "hsk3-fltrp-2026:l01:word14",
+          "section": "课文2：生词",
+          "label": "着急"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/14",
+          "nodeId": "hsk3-fltrp-2026:l01:word15",
+          "section": "课文2：生词",
+          "label": "护照"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/15",
+          "nodeId": "hsk3-fltrp-2026:l01:word16",
+          "section": "课文2：生词",
+          "label": "服务台"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/1",
+          "nodeId": "hsk3-fltrp-2026:l01:grammar2",
+          "section": "疑问代词的非疑问用法（1）",
+          "label": "疑问代词的非疑问用法（1）"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/1/examples/0",
+          "nodeId": null,
+          "section": "疑问代词的非疑问用法（1）",
+          "label": "我好像在哪儿看到过这个箱子。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/1/examples/1",
+          "nodeId": null,
+          "section": "疑问代词的非疑问用法（1）",
+          "label": "你吃点儿什么再走吧。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/1/examples/2",
+          "nodeId": null,
+          "section": "疑问代词的非疑问用法（1）",
+          "label": "我们哪天一起去踢足球吧。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk3-textbook-016.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "b117b1fb6032ddfa95f071867af00bcaa4758c0440092c6d9659c239ac83dd77"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "课文2对话6条",
+        "生词8–16（行李至服务台）及原音1-4",
+        "课文2读后开放3题",
+        "语法2疑问代词非疑问(1)：规则与例句3条"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:text2-reading",
+          "targetRef": "hsk3-fltrp-2026:l01:text2:reading",
+          "kind": "open",
+          "fieldCount": 3,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text2:question3",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text2-reading-1"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text2:question4",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text2-reading-2"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text2:question5",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text2-reading-3"
+        }
+      ],
+      "illustrationBindings": []
+    },
+    {
+      "documentId": "hsk3-textbook",
+      "pdfPage": 17,
+      "printedPage": 5,
+      "unit": "第1课：我们去机场接你们",
+      "lesson": 1,
+      "categories": {
+        "text": true,
+        "vocabulary": false,
+        "grammar": true,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/context",
+          "nodeId": null,
+          "section": "课文3情景",
+          "label": "在机场大厅，刘明和王一雪接机。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/questions/0",
+          "nodeId": "hsk3-fltrp-2026:l01:text3:question1",
+          "section": "课文3：听后/读后练习",
+          "label": "刘明和王一雪在机场做什么？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/questions/1",
+          "nodeId": "hsk3-fltrp-2026:l01:text3:question2",
+          "section": "课文3：听后/读后练习",
+          "label": "刘明为什么要站到中间？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/1/practice/0",
+          "nodeId": null,
+          "section": "疑问代词的非疑问用法（1）：完成对话",
+          "label": "A：我们是不是走错了？ B：我也不知道，我去______。（谁）"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/1/practice/1",
+          "nodeId": null,
+          "section": "疑问代词的非疑问用法（1）：完成对话",
+          "label": "A：你有时间了来我家，我______给你吃。（什么） B：好的，谢谢你。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/1/practice/2",
+          "nodeId": null,
+          "section": "疑问代词的非疑问用法（1）：完成对话",
+          "label": "A：这几天太累了，我想______。（哪儿） B：那你去西安吧。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk3-textbook-017.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "34e1d6eca67e5c452b1dee13b74bc74155d2f026e15b06717d478a6018f4f84d"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "语法2完成对话3题",
+        "课文3机场大厅情境与挥手照片",
+        "课文3听后选择2题及原音1-5"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:text3-listening",
+          "targetRef": "hsk3-fltrp-2026:l01:text3:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:grammar2-practice1",
+          "targetRef": "hsk3-fltrp-2026:l01:grammar2:practice:1",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:grammar2-practice2",
+          "targetRef": "hsk3-fltrp-2026:l01:grammar2:practice:2",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:grammar2-practice3",
+          "targetRef": "hsk3-fltrp-2026:l01:grammar2:practice:3",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text3:question1",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text3-listening-1"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text3:question2",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text3-listening-2"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:text3",
+          "sceneKey": "arrival-wave",
+          "owner": "hsk3-fltrp-2026:l01:text3",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-arrival-wave.svg",
+          "assetSha256": "1c65571389a70524ea58f15bcd25033409289c2e4448f122c3dec56dd1038404",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    },
+    {
+      "documentId": "hsk3-textbook",
+      "pdfPage": 18,
+      "printedPage": 6,
+      "unit": "第1课：我们去机场接你们",
+      "lesson": 1,
+      "categories": {
+        "text": true,
+        "vocabulary": true,
+        "grammar": true,
+        "illustrationOrTable": false,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2",
+          "nodeId": "hsk3-fltrp-2026:l01:text3",
+          "section": "课文3",
+          "label": "课文3"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/0",
+          "nodeId": "hsk3-fltrp-2026:l01:text3:line1",
+          "section": "课文3",
+          "label": "飞机早就到了，你看见白家月他们了吗？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/1",
+          "nodeId": "hsk3-fltrp-2026:l01:text3:line2",
+          "section": "课文3",
+          "label": "没有，他们应该快出来了。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/2",
+          "nodeId": "hsk3-fltrp-2026:l01:text3:line3",
+          "section": "课文3",
+          "label": "我们站到中间去吧，这样他们好找一些。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/3",
+          "nodeId": "hsk3-fltrp-2026:l01:text3:line4",
+          "section": "课文3",
+          "label": "你看那个高个子的人是李文吗？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/4",
+          "nodeId": "hsk3-fltrp-2026:l01:text3:line5",
+          "section": "课文3",
+          "label": "你说的是哪个？那个穿着黑衣服的短头发的年轻人？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/lines/5",
+          "nodeId": "hsk3-fltrp-2026:l01:text3:line6",
+          "section": "课文3",
+          "label": "对，那个人就是李文！你看，家月在他后面呢。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/questions/2",
+          "nodeId": "hsk3-fltrp-2026:l01:text3:question3",
+          "section": "课文3：听后/读后练习",
+          "label": "王一雪为什么说白家月他们应该快出来了？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/questions/3",
+          "nodeId": "hsk3-fltrp-2026:l01:text3:question4",
+          "section": "课文3：听后/读后练习",
+          "label": "刘明看见的年轻人长什么样？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/2/questions/4",
+          "nodeId": "hsk3-fltrp-2026:l01:text3:question5",
+          "section": "课文3：听后/读后练习",
+          "label": "王一雪怎么知道那个年轻人就是李文？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/16",
+          "nodeId": "hsk3-fltrp-2026:l01:word17",
+          "section": "课文3：生词",
+          "label": "应该"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/17",
+          "nodeId": "hsk3-fltrp-2026:l01:word18",
+          "section": "课文3：生词",
+          "label": "站"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/18",
+          "nodeId": "hsk3-fltrp-2026:l01:word19",
+          "section": "课文3：生词",
+          "label": "中间"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/19",
+          "nodeId": "hsk3-fltrp-2026:l01:word20",
+          "section": "课文3：生词",
+          "label": "短"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/20",
+          "nodeId": "hsk3-fltrp-2026:l01:word21",
+          "section": "课文3：生词",
+          "label": "头发"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/21",
+          "nodeId": "hsk3-fltrp-2026:l01:word22",
+          "section": "课文3：生词",
+          "label": "年轻"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/2",
+          "nodeId": "hsk3-fltrp-2026:l01:grammar3",
+          "section": "多项定语",
+          "label": "多项定语"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk3-textbook-018.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "1d39725e3d66a227e65048e9ec3676abbe5adf92e8a82b21366ff4426a9b8957"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "课文3对话6条",
+        "生词17–22（应该至年轻）及原音1-6",
+        "课文3读后开放3题",
+        "语法3多项定语：规则（跨页）"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:text3-reading",
+          "targetRef": "hsk3-fltrp-2026:l01:text3:reading",
+          "kind": "open",
+          "fieldCount": 3,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text3:question3",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text3-reading-1"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text3:question4",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text3-reading-2"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text3:question5",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text3-reading-3"
+        }
+      ],
+      "illustrationBindings": []
+    },
+    {
+      "documentId": "hsk3-textbook",
+      "pdfPage": 19,
+      "printedPage": 7,
+      "unit": "第1课：我们去机场接你们",
+      "lesson": 1,
+      "categories": {
+        "text": true,
+        "vocabulary": false,
+        "grammar": true,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/3",
+          "nodeId": "hsk3-fltrp-2026:l01:text4",
+          "section": "课文4",
+          "label": "课文4"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/3/context",
+          "nodeId": null,
+          "section": "课文4情景",
+          "label": "在宾馆房间，李文在写日记。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/3/lines/0",
+          "nodeId": "hsk3-fltrp-2026:l01:text4:line1",
+          "section": "课文4",
+          "label": "昨天我到北京了。虽然路上花了十几个小时，但是跟家月坐在一起，我觉得时间过得很快。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/3/lines/1",
+          "nodeId": "hsk3-fltrp-2026:l01:text4:line2",
+          "section": "课文4",
+          "label": "到机场的时候，家月发现行李箱不见了，我带她去服务台，帮助她找到了行李箱。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/3/lines/2",
+          "nodeId": "hsk3-fltrp-2026:l01:text4:line3",
+          "section": "课文4",
+          "label": "走出机场的时候，已经八点多了，我们一出来就看见了王老师的姐姐，她看起来比照片上年轻。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/3/lines/3",
+          "nodeId": "hsk3-fltrp-2026:l01:text4:line4",
+          "section": "课文4",
+          "label": "晚上，一雪姐带我们去吃了一家很好吃的中国菜。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/3/questions/0",
+          "nodeId": "hsk3-fltrp-2026:l01:text4:question1",
+          "section": "课文4：听后/读后练习",
+          "label": "李文回北京的路上花了多长时间？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/3/questions/1",
+          "nodeId": "hsk3-fltrp-2026:l01:text4:question2",
+          "section": "课文4：听后/读后练习",
+          "label": "李文觉得王老师的姐姐看起来怎么样？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/2/examples/0",
+          "nodeId": null,
+          "section": "多项定语",
+          "label": "李文是那个穿着黑衣服的短头发的年轻人吗？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/2/examples/1",
+          "nodeId": null,
+          "section": "多项定语",
+          "label": "昨天和家月一起看电影的两个人是我的朋友。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/2/examples/2",
+          "nodeId": null,
+          "section": "多项定语",
+          "label": "我那件新买的白色的衣服在哪儿？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/2/practice/0",
+          "nodeId": null,
+          "section": "多项定语：完成对话",
+          "label": "那本______的书是我最喜欢的。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/2/practice/1",
+          "nodeId": null,
+          "section": "多项定语：完成对话",
+          "label": "A：哪个人是你男朋友？ B：______。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/grammar/2/practice/2",
+          "nodeId": null,
+          "section": "多项定语：完成对话",
+          "label": "A：你们上课的楼在哪儿？ B：在______的楼后面。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk3-textbook-019.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "0a004e011e1bfc3abc53b55b6e48d2aa6fa889348057a105369f300716b9c72d"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "语法3例句3条与完成句子3题",
+        "课文4酒店日记全文与夜间航站楼照片",
+        "课文4听后选择2题及原音1-7"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:text4-listening",
+          "targetRef": "hsk3-fltrp-2026:l01:text4:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:grammar3-practice1",
+          "targetRef": "hsk3-fltrp-2026:l01:grammar3:practice:1",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:grammar3-practice2",
+          "targetRef": "hsk3-fltrp-2026:l01:grammar3:practice:2",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:grammar3-practice3",
+          "targetRef": "hsk3-fltrp-2026:l01:grammar3:practice:3",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text4:question1",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text4-listening-1"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text4:question2",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text4-listening-2"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:text4",
+          "sceneKey": "airport-at-night",
+          "owner": "hsk3-fltrp-2026:l01:text4",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-airport-at-night.svg",
+          "assetSha256": "bf5a3031390d9e5148816d2d3d6f0517d55742969d969a6f06f4d2718ccf77c9",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    },
+    {
+      "documentId": "hsk3-textbook",
+      "pdfPage": 20,
+      "printedPage": 8,
+      "unit": "第1课：我们去机场接你们",
+      "lesson": 1,
+      "categories": {
+        "text": false,
+        "vocabulary": true,
+        "grammar": false,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/3/questions/2",
+          "nodeId": "hsk3-fltrp-2026:l01:text4:question3",
+          "section": "课文4：听后/读后练习",
+          "label": "李文为什么觉得时间过得很快？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/3/questions/3",
+          "nodeId": "hsk3-fltrp-2026:l01:text4:question4",
+          "section": "课文4：听后/读后练习",
+          "label": "到机场的时候，白家月发现了什么问题？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/texts/3/questions/4",
+          "nodeId": "hsk3-fltrp-2026:l01:text4:question5",
+          "section": "课文4：听后/读后练习",
+          "label": "王一雪带他们去做什么了？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/22",
+          "nodeId": "hsk3-fltrp-2026:l01:word23",
+          "section": "课文4：生词",
+          "label": "发现"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/23",
+          "nodeId": "hsk3-fltrp-2026:l01:word24",
+          "section": "课文4：生词",
+          "label": "不见"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/24",
+          "nodeId": "hsk3-fltrp-2026:l01:word25",
+          "section": "课文4：生词",
+          "label": "带"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/25",
+          "nodeId": "hsk3-fltrp-2026:l01:word26",
+          "section": "课文4：生词",
+          "label": "帮助"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/vocabulary/26",
+          "nodeId": "hsk3-fltrp-2026:l01:word27",
+          "section": "课文4：生词",
+          "label": "照片"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0",
+          "nodeId": "hsk3-fltrp-2026:l01:section1",
+          "section": "综合练习：选词填空",
+          "label": "综合练习：选词填空"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/0",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "第一组：A 带；B 接；C 丢；D 重要；E 应该。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/1",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "1. 服务台______在前面，我们过去问问吧。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/2",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "2. 他已经到了，我们快出去______他吧。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/3",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "3. 我的护照不见了，是不是在机场______了？"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/4",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "4. 行李票很______，你们出机场的时候有人看。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/5",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "5. 我______了两个行李箱和一个大包，所以走得非常慢。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/6",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "第二组：A 发现；B 以为；C 好像；D 年轻；E 帮助。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/7",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "6. A：这个头发很短的男孩儿是我弟弟。 B：我______这个是你，你们长得太像了。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/8",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "7. A：我______坐飞机来北京的人非常多。 B：对，很多人这个时候来北京旅游。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/9",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "8. A：这是我和哥哥的照片，你看我们像吗？ B：你们很像，你哥哥看起来也很______。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/10",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "9. A：你的行李箱找到了，你看看是不是这个？ B：对，太好了！谢谢您的______。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/0/blocks/11",
+          "nodeId": null,
+          "section": "综合练习：选词填空",
+          "label": "10. A：那个穿着黑衣服的高个子的人是王老师吗？ B：______是吧，我也不知道。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk3-textbook-020.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "972487eafc1855d83acc01ee02dfa2ac72c0c803f770c283ad01c734a272ac7f"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "生词23–27（发现至照片）及原音1-8",
+        "课文4读后开放3题",
+        "综合选词填空2组共10题"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:text4-reading",
+          "targetRef": "hsk3-fltrp-2026:l01:text4:reading",
+          "kind": "open",
+          "fieldCount": 3,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:comprehensive-words",
+          "targetRef": "hsk3-fltrp-2026:l01:section1",
+          "kind": "fill",
+          "fieldCount": 10,
+          "assessmentModes": [
+            "official"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text4:question3",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text4-reading-1"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text4:question4",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text4-reading-2"
+        },
+        {
+          "questionId": "hsk3-fltrp-2026:l01:text4:question5",
+          "activityFieldId": "hsk3-fltrp-2026:l01:field:text4-reading-3"
+        }
+      ],
+      "illustrationBindings": []
+    },
+    {
+      "documentId": "hsk3-textbook",
+      "pdfPage": 21,
+      "printedPage": 9,
+      "unit": "第1课：我们去机场接你们",
+      "lesson": 1,
+      "categories": {
+        "text": false,
+        "vocabulary": false,
+        "grammar": false,
+        "illustrationOrTable": true,
+        "exercise": true,
+        "selfAssessment": false,
+        "appendix": false,
+        "starredVocabulary": false
+      },
+      "existingWebLocations": [
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/1",
+          "nodeId": "hsk3-fltrp-2026:l01:section2",
+          "section": "综合练习：描述图片",
+          "label": "综合练习：描述图片"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/1/blocks/0",
+          "nodeId": null,
+          "section": "综合练习：描述图片",
+          "label": "用本课新学的词语和语言点描述图片。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/1/blocks/2",
+          "nodeId": null,
+          "section": "综合练习：描述图片",
+          "label": "A：照片上的这个人是你男朋友吗？ B：不是，他是我同学。 A：我______他是你男朋友。我好像______。 B：你应该没见过。他今天来北京，下午我去机场______。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/1/blocks/3",
+          "nodeId": null,
+          "section": "综合练习：描述图片",
+          "label": "A：我的行李箱______，里面有很多重要的东西。 B：你______问一问。 A：请问，我的行李丢了，可以帮我找找吗？ C：好的，给我看一下您的______。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/1/blocks/4",
+          "nodeId": null,
+          "section": "综合练习：描述图片",
+          "label": "A：______的那个人是小文吗？ B：前面站着好几个人，你说的是哪个？ A：那个______。 B：不是，小文比她高，头发也______。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/2",
+          "nodeId": "hsk3-fltrp-2026:l01:section3",
+          "section": "课堂活动：双人活动",
+          "label": "课堂活动：双人活动"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/2/blocks/0",
+          "nodeId": null,
+          "section": "课堂活动：双人活动",
+          "label": "两人一组，完成下面两个场景的对话。回答时，使用本课所学的词语和语言点。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/2/blocks/1",
+          "nodeId": null,
+          "section": "课堂活动：双人活动",
+          "label": "场景一：在机场接人。A 到机场接 B，但不知道 B 长什么样；B 刚下飞机，拿着行李箱，打电话告诉 A 自己在哪儿。"
+        },
+        {
+          "lesson": 1,
+          "contentFile": "content/hsk3/lesson-01.json",
+          "jsonPointer": "/sections/2/blocks/2",
+          "nodeId": null,
+          "section": "课堂活动：双人活动",
+          "label": "场景二：护照丢了。A 刚到机场，发现护照不见了，感到很着急；B 是 A 的朋友，帮忙找护照。"
+        }
+      ],
+      "missingOrPlanned": [
+        "结构化题目数据已补齐；需应用渲染与本地保存并由另一审查者独立验收。",
+        "本页所需自制SVG已制作并经作者逐图像素核验；仍需在实际网页路由/视口中验证显示、题图关系及独立教学审查。"
+      ],
+      "verification": {
+        "pdfPageLoaded": true,
+        "visualStatus": "author_visual_verified",
+        "semanticCoverage": "text_and_activity_model_mapped_author_svg_checked_independent_and_ui_pending",
+        "independentReview": "pending",
+        "renderedEvidence": "hsk3-textbook-021.png",
+        "reviewerRole": "content-author",
+        "inspectedOn": "2026-10-03",
+        "uiVerification": "pending",
+        "renderSha256": "92b22c0187e029ab37bdc6aaf0546a6a6df57881706c9bf3bcd136e3190f7e67"
+      },
+      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "pageInventory": [
+        "综合看图对话3组，共9空",
+        "课堂双人活动2场景（机场接人、护照丢失）"
+      ],
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:picture-dialogue1",
+          "targetRef": "hsk3-fltrp-2026:l01:section2:picture:1",
+          "kind": "fill",
+          "fieldCount": 3,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:picture-dialogue2",
+          "targetRef": "hsk3-fltrp-2026:l01:section2:picture:2",
+          "kind": "fill",
+          "fieldCount": 3,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:picture-dialogue3",
+          "targetRef": "hsk3-fltrp-2026:l01:section2:picture:3",
+          "kind": "fill",
+          "fieldCount": 3,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk3-fltrp-2026:l01:activity:roleplay",
+          "targetRef": "hsk3-fltrp-2026:l01:section3",
+          "kind": "open",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "open"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [],
+      "illustrationBindings": [
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:comprehensive-1",
+          "sceneKey": "viewing-phone",
+          "owner": "hsk3-fltrp-2026:l01:section2",
+          "position": 1,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-viewing-phone.svg",
+          "assetSha256": "8a811632488ca089f436d922548d90da09a7aebcd210f80036db9c882381542d",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:comprehensive-2",
+          "sceneKey": "service-desk",
+          "owner": "hsk3-fltrp-2026:l01:section2",
+          "position": 2,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-service-desk.svg",
+          "assetSha256": "5fb67149d5fa9c21f039c15200d3ce29e316d5e0bacce2cdc7ff6bb88762cc05",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l01:illustration:comprehensive-3",
+          "sceneKey": "identify-traveler",
+          "owner": "hsk3-fltrp-2026:l01:section2",
+          "position": 3,
+          "publicationStatus": "approved",
+          "file": "illustrations/hsk3-l01-identify-traveler.svg",
+          "assetSha256": "95867a96e8d0734785ff3216065da1bfe58d1851f1c5ba4590a8e252c99f4f22",
+          "authorPixelReview": "passed",
+          "independentReview": "pending"
+        }
+      ]
+    }
+  ]
+}

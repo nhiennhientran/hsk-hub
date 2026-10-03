@@ -87,6 +87,7 @@ export function mountLesson(
     wrap.dataset.activityId = a.id;
     wrap.append(el("h3", a.title));
     if(a.audioTrack)wrap.append(c.audioControl(a.audioTrack,copy("听本篇原音","Nghe âm thanh gốc bài này")));
+    if(a.recommendedPlays)wrap.append(el("p",copy(`先听${a.recommendedPlays}遍，再回答问题。`,`Nghe ${a.recommendedPlays} lần rồi trả lời câu hỏi.`),"task-note"));
     if (a.note) wrap.append(el("p", a.note, "task-note"));
     const current: ActivityRecord = c.state().activities[a.id] ?? {
       values: {},
@@ -108,13 +109,14 @@ export function mountLesson(
       });
       feedback.replaceChildren();
     };
+    const renderedIllustrations=new Set<string>();
     function field(f: ActivityField) {
       const row = el("div", undefined, "activity-field");
-      if (f.illustrationId) {
+      if (f.illustrationId&&!renderedIllustrations.has(f.illustrationId)) {
         const pic = l.illustrationManifest?.find(
           (p) => p.id === f.illustrationId,
         );
-        if (pic) row.append(illustration(pic,c.assetBase));
+        if (pic){row.append(illustration(pic,c.assetBase));renderedIllustrations.add(pic.id)}
       }
       const label = el("label", f.prompt);
       label.htmlFor = f.id;
@@ -545,7 +547,7 @@ export function mountLesson(
       tabs.append(a);
     }
     body.append(tabs);
-    const text = l.texts.find((t) => t.number === scene)!;
+    const text = l.texts.find((t) => t.number === scene)??l.texts[0]!;
     body.append(
       el(
         "h2",
