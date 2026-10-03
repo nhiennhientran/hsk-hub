@@ -1,0 +1,115 @@
+{
+  "scope": "actual mountLesson plus production createLearningStore with isolated deferred locks and StoragePort; not browser",
+  "checks": [
+    {
+      "pass": true,
+      "name": "pending save: edit immediately clears state and feedback"
+    },
+    {
+      "pass": true,
+      "name": "pending save: old callback cannot restore stale feedback"
+    },
+    {
+      "pass": true,
+      "name": "newer submit: older save cannot display feedback"
+    },
+    {
+      "pass": true,
+      "name": "newer submit: latest save displays exact current answers"
+    },
+    {
+      "pass": true,
+      "name": "reversed completion: old callback cannot rewrite latest feedback"
+    },
+    {
+      "pass": true,
+      "name": "repeated same answers: older submission remains silent"
+    },
+    {
+      "pass": true,
+      "name": "repeated same answers: latest submission displays"
+    },
+    {
+      "pass": true,
+      "name": "new incomplete attempt cannot be overwritten by old response"
+    },
+    {
+      "pass": true,
+      "name": "disposed section: late completion cannot show feedback"
+    },
+    {
+      "pass": true,
+      "name": "failed flush: no feedback and unsaved state retained"
+    },
+    {
+      "pass": true,
+      "name": "external same-record value change suppresses stale feedback"
+    },
+    {
+      "pass": true,
+      "name": "external record replacement suppresses stale feedback"
+    }
+  ],
+  "failures": [],
+  "scenarios": [
+    {
+      "name": "original edit race repaired",
+      "checkedAt": null,
+      "status": "saved",
+      "feedback": ""
+    },
+    {
+      "name": "old then new completion",
+      "checkedAt": 1791028019994,
+      "status": "saved",
+      "feedback": "再看看这题Hãy xem lại câu này参考答案：菜单Đáp án: 菜单配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：鸡肉Đáp án: 鸡肉配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：蛋糕Đáp án: 蛋糕配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：饮料Đáp án: 饮料配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：绿茶Đáp án: 绿茶配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2"
+    },
+    {
+      "name": "new then old completion",
+      "checkedAt": 1791028019999,
+      "status": "saved",
+      "feedback": "再看看这题Hãy xem lại câu này参考答案：菜单Đáp án: 菜单配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：鸡肉Đáp án: 鸡肉配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：蛋糕Đáp án: 蛋糕配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：饮料Đáp án: 饮料配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：绿茶Đáp án: 绿茶配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2"
+    },
+    {
+      "name": "repeated same-value submit",
+      "checkedAt": 1791028020001,
+      "status": "saved",
+      "feedback": "回答正确Trả lời đúng参考答案：菜单Đáp án: 菜单配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：鸡肉Đáp án: 鸡肉配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：蛋糕Đáp án: 蛋糕配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：饮料Đáp án: 饮料配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2回答正确Trả lời đúng参考答案：绿茶Đáp án: 绿茶配套客观题答案 · PDF第2页Đáp án kèm sách · PDF trang 2"
+    },
+    {
+      "name": "incomplete supersedes earlier complete",
+      "checkedAt": null,
+      "status": "saved",
+      "feedback": "请先完成本组输入Hãy điền hết nhóm này trước"
+    },
+    {
+      "name": "disposed mount",
+      "checkedAt": 1791028020009,
+      "status": "saved",
+      "feedback": ""
+    },
+    {
+      "name": "quota failure",
+      "checkedAt": 1791028020012,
+      "status": "unsaved",
+      "feedback": ""
+    },
+    {
+      "name": "state values changed independently",
+      "checkedAt": 1791028020017,
+      "status": "saved",
+      "feedback": ""
+    },
+    {
+      "name": "state record removed",
+      "checkedAt": null,
+      "status": "saved",
+      "feedback": ""
+    }
+  ],
+  "hashes": {
+    "src/lesson-view.ts": "f3592f5053eb088a7e16f6b68f187bd2b5b28de94df904a5fdc6683f04970211",
+    "src/state.ts": "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c",
+    "../hsk1-app/src/services/storage/index.ts": "e7f8ef9021f78be7a2ab75ee3fd927b45de6f05de31b5d7f78facdf03fbfdfe1"
+  }
+}

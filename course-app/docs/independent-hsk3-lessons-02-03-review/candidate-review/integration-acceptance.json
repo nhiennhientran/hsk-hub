@@ -1,0 +1,49 @@
+{
+  "scope": "HSK3lessons2–3 controlledintegration; source+independent acceptance only",
+  "checks": {
+    "data": 8956,
+    "rendererState": 1723,
+    "rowProvenance": 156,
+    "asyncRace": 12,
+    "unit": 67
+  },
+  "browserCollection": 268,
+  "browserExecutionPending": true,
+  "sourceAndArtworkPixels": {
+    "sourcePages": 32,
+    "svgAssets": 24
+  },
+  "evidence": [
+    {
+      "file": "data-results.json",
+      "bytes": 843078,
+      "sha256": "baf70c1ebec89092db4c193301b61b447c9be3a2fabfbfe5be7dec64548c149f"
+    },
+    {
+      "file": "renderer-results.json",
+      "bytes": 212216,
+      "sha256": "5d45bb4f872fbb1a7cebafbcca0abdf72bacb5a84526b547a6d835be2ef424d7"
+    },
+    {
+      "file": "row-source-results.json",
+      "bytes": 35553,
+      "sha256": "c3b0ece36b40639faf930cd535fc74dc723cd5a9dbc59fae99195d5af9acd9dd"
+    },
+    {
+      "file": "delayed-save-original-failure.json",
+      "bytes": 1063,
+      "sha256": "767f2776dcfa433a88434cf4bcd34a5701438c093a7aea64dca531d86be2cbe8"
+    },
+    {
+      "file": "delayed-save-final-results.json",
+      "bytes": 5106,
+      "sha256": "dc210cb976996cc087c5d91c8eb3d7a74f8f5d5651f331c27e78755f342cc56f"
+    },
+    {
+      "file": "final-reviewed-hashes.json",
+      "bytes": 10220,
+      "sha256": "0ed1148ae480c19c786f6b6e499034ada958dce82526dd86453df6f9f9c124c6"
+    }
+  ],
+  "rawEvidencePreservedInRecovery": true
+}

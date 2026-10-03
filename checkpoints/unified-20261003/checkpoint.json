@@ -278,6 +278,17 @@
       "preflightPassed": 12,
       "actualLogsRead": true,
       "rapidSaveLifecycle": "native refresh, pending level switch, back-forward, failed write, retry, durable reload passed both engines"
+    },
+    {
+      "run": 37119478999,
+      "commit": "22d38c3cbe1c7e144add50d1e10079c56cdd267b",
+      "status": "success",
+      "passed": 244,
+      "failed": 0,
+      "chromium": 122,
+      "webkit": 122,
+      "preflightPassed": 16,
+      "actualLogsRead": true
     }
   ],
   "audioBatch23": {
@@ -324,8 +335,30 @@
     "independentDataChecks": 8152,
     "independentRendererStorageChecks": 1972,
     "sourcePagesOpened": 82,
-    "browser": "244cases collected; pending execution",
+    "browser": "passed244/244 run37119478999; all4actual logs and both-engine mobile/table screenshots inspected",
     "appendix": "all210printed entries226stable sense rows10stars; 148approved newmetadata and78existingmetadata reconciled",
     "sourceCorrection": "OnlyL9word02 dictionary py pángbian→pángbiān; contextualPángbian preserved"
+  },
+  "contentHSK3Batch23": {
+    "activities": 55,
+    "sourceFields": 141,
+    "optionalFields": 6,
+    "fields": 147,
+    "officialFields": 47,
+    "illustrations": 24,
+    "independentDataChecks": 8956,
+    "independentRendererStateChecks": 1723,
+    "independentProvenanceChecks": 156,
+    "independentAsyncChecks": 12,
+    "sourcePagesInspected": 32,
+    "unitTests": 67,
+    "browser": "268cases collected, notyetexecuted",
+    "sharedImprovements": [
+      "source-faithful2×2menu with5distinctslots",
+      "support-gallery excludesfieldboundfigures",
+      "same-full-source row citations consolidated without metadata/ID loss",
+      "delayed submit epochs prevent stale feedback after edits,newsubmits,disposal,failed writes"
+    ],
+    "remaining": "HSK3lessons4–18, remaining audio and overallreleasegates"
   }
 }

@@ -24,5 +24,8 @@ export interface Track {id:string;level:number;lesson:number;track:number;kind:'
 
 export interface ActivityField {targetRef?:string;source?:Source;id:string;prompt:Copy;input:'text'|'textarea'|'select'|'checkbox';options?:Copy[];answer?:string|string[];assessment:'official'|'reference'|'open';answerSource?:{document:string;pdfPage:number;item:string};referenceAnswer?:Copy;illustrationId?:string}
 export interface ActivityMatrix {headerFieldIds?:(string|null)[];hideColumnHeaders?:boolean;horizontalScroll?:boolean;mode?:'checks'|'responses';rowHeading?:Copy;contextHeaders?:Copy[];columns:Copy[];rows:{prompt:Copy;contextCells?:Copy[];fieldIds:string[];cellLabels?:Copy[]}[]}
-export interface TextbookActivity {matrix?:ActivityMatrix;audioTrack?:string;recommendedPlays?:number;id:string;kind:'choice'|'matching'|'fill'|'open'|'survey'|'self-assessment';title:Copy;source:Source;origin:'textbook';targetRef:string;fields:ActivityField[];illustrationIds?:string[];note?:Copy}
+export type ActivityMenuItem = {text:Copy;fieldId?:never}|{fieldId:string;text?:never};
+export type ActivityMenuSection = ({heading:Copy;headingFieldId?:never}|{headingFieldId:string;heading?:never}) & {items:ActivityMenuItem[]};
+export interface ActivityMenu {titleFieldId:string;columns:2;sections:ActivityMenuSection[]}
+export interface TextbookActivity {menu?:ActivityMenu;matrix?:ActivityMatrix;audioTrack?:string;recommendedPlays?:number;id:string;kind:'choice'|'matching'|'fill'|'open'|'survey'|'self-assessment';title:Copy;source:Source;origin:'textbook';targetRef:string;fields:ActivityField[];illustrationIds?:string[];note?:Copy}
 export interface Illustration {textbookRelation?:{owner:string;position?:number};id:string;kind:'original-crop'|'original-illustration';source:Source;alt:Copy;description:Copy;file?:string;publicationStatus:string;sceneKey?:string;originalTextbookImage?:boolean}

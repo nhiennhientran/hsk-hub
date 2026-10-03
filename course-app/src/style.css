@@ -639,3 +639,20 @@ h1.bi>span[lang=vi],h1>.bilingual-vi{font-size:17px;font-weight:450;line-height:
 .self-assessment-matrix{position:relative}.matrix-hidden-head{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.self-assessment-matrix .matrix-visible-label{display:flex;position:static;white-space:normal}
 
 .self-assessment-matrix .matrix-header-field{margin-top:.5rem}.self-assessment-matrix[data-header-inputs=true] th:first-child{width:22%}
+
+/* The source menu stays a two-by-two diagram, including on phones. */
+.activity-menu{border:2px solid #cdb975;border-radius:14px;background:#fffdf5;overflow:hidden;min-width:0}
+.activity-menu-title{padding:12px 18px;border-bottom:1px solid #cdb975;background:#f3eedb}
+.activity-menu-title .activity-field{max-width:28rem;margin:0 auto}
+.activity-menu-sections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.activity-menu-section{min-width:0;padding:16px;border-bottom:1px solid #e5dac0}
+.activity-menu-section:nth-child(odd){border-right:1px solid #e5dac0}
+.activity-menu-section:nth-last-child(-n+2){border-bottom:0}
+.activity-menu-heading{min-width:0;margin-bottom:12px;color:var(--green-700)}
+.activity-menu-heading h4{margin:0;font-size:21px}
+.activity-menu ul{list-style:none;padding:0;margin:0}.activity-menu li{min-width:0}.activity-menu li p{margin:12px 0}
+.activity-menu .activity-field{min-width:0;margin:12px 0}.activity-menu input,.activity-menu select{min-width:0;max-width:100%}.activity-menu label{overflow-wrap:anywhere;font-size:15px}
+.activity-support-figures{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.activity-support-figures>*{min-width:0}
+@media(max-width:640px){.activity-menu-section{padding:10px}.activity-menu-title{padding:12px}.activity-menu .activity-field select{font-size:16px;padding-left:5px;padding-right:18px}.activity-support-figures{grid-template-columns:1fr}}
+
+.matrix-row-source{display:block;margin-top:.5rem;font-size:.8rem;font-weight:400;color:var(--muted)}

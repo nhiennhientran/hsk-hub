@@ -1,4 +1,4 @@
-import {fieldSourcesNeedNotes} from './activity-provenance.ts';
+import {fieldSourcesNeedNotes,sharedRowSource} from './activity-provenance.ts';
 import {originalSegment,sentenceSegments,isSingleSentence} from "./segment-resolver.ts";
 import { el, button, link, copy, sourceNote } from "./dom.ts";
 import { routeHref, type Route, type Section } from "./router.ts";
@@ -97,11 +97,12 @@ export function mountLesson(
       checkedAt: null,
       updatedAt: 0,
     };
-    let values = { ...current.values };
+    let values = { ...current.values }, feedbackEpoch=0;
     const fields = el("div", undefined, "activity-fields"),
       feedback = el("div", undefined, "activity-feedback");
     feedback.setAttribute("aria-live", "polite");
     const change = (id: string, value: string | boolean) => {
+      feedbackEpoch++;
       values[id] = value;
       c.edit((s) => {
         s.activities[a.id] = {
@@ -113,7 +114,7 @@ export function mountLesson(
       feedback.replaceChildren();
     };
     const renderedIllustrations=new Set<string>(),showFieldSourceNotes=fieldSourcesNeedNotes(a.source,a.fields);
-    function field(f: ActivityField, cell=false, cellLabel?:Copy) {
+    function field(f: ActivityField, cell=false, cellLabel?:Copy, sourceInRow=false) {
       const row = el("div", undefined, "activity-field");
       if (f.illustrationId&&!renderedIllustrations.has(f.illustrationId)) {
         const pic = l.illustrationManifest?.find(
@@ -165,17 +166,32 @@ export function mountLesson(
         input.oninput = () => change(f.id, input.value);
         row.append(input);
       }
-      if(f.source&&showFieldSourceNotes)row.append(sourceNote(f.source.printedPage));
+      if(f.source&&showFieldSourceNotes&&!sourceInRow)row.append(sourceNote(f.source.printedPage));
       return row;
     }
-    if(a.matrix){
+    // Only group-support scenes belong here. Field-bound pictures remain beside their inputs.
+    const fieldPictures=new Set(a.fields.map(f=>f.illustrationId));
+    const supportPictures=(a.illustrationIds??[]).filter(id=>!fieldPictures.has(id));
+    if(supportPictures.length){const gallery=el('div',undefined,'activity-support-figures');for(const id of supportPictures){if(renderedIllustrations.has(id))continue;const pic=l.illustrationManifest?.find(p=>p.id===id);if(pic){gallery.append(illustration(pic,c.assetBase,events.signal));renderedIllustrations.add(id)}}if(gallery.children.length)wrap.append(gallery)}
+    if(a.menu){
+      const menu=el('div',undefined,'activity-menu');menu.setAttribute('role','group');menu.setAttribute('aria-label',a.title.zh+' · '+a.title.vi);
+      const menuField=(id:string)=>{const f=a.fields.find(f=>f.id===id);if(!f)throw Error('Missing menu field');return field(f)};
+      const title=el('div',undefined,'activity-menu-title');title.append(menuField(a.menu.titleFieldId));menu.append(title);
+      const grid=el('div',undefined,'activity-menu-sections');
+      for(const [index,section]of a.menu.sections.entries()){
+        const block=el('section',undefined,'activity-menu-section');block.dataset.menuSection=String(index+1);const heading=el('div',undefined,'activity-menu-heading');
+        if(section.headingFieldId)heading.append(menuField(section.headingFieldId));else if(section.heading)heading.append(el('h4',section.heading));block.append(heading);
+        const items=el('ul');for(const item of section.items){const li=el('li');if(item.fieldId)li.append(menuField(item.fieldId));else if(item.text)li.append(el('p',item.text));items.append(li)}block.append(items);grid.append(block);
+      }
+      menu.append(grid);fields.append(menu);
+    }else if(a.matrix){
       const table=el('table',undefined,'self-assessment-matrix'),head=el('thead'),headRow=el('tr');
       const matrixColumns=1+(a.matrix.contextHeaders?.length??0)+a.matrix.columns.length;table.dataset.matrixKind=a.kind;table.dataset.matrixMode=a.matrix.mode??(a.kind==='survey'?'responses':'checks');table.dataset.matrixColumns=String(matrixColumns);table.append(el('caption',a.title,'matrix-caption'));
       const subject=el('th',a.matrix.rowHeading??copy('语言点与例句','Ngữ pháp và ví dụ'));subject.setAttribute('scope','col');headRow.append(subject);
       for(const col of a.matrix.contextHeaders??[]){const th=el('th',col);th.setAttribute('scope','col');headRow.append(th)}
       for(const [column,col]of a.matrix.columns.entries()){const th=el('th',col);th.setAttribute('scope','col');const id=a.matrix.headerFieldIds?.[column];if(id){const f=a.fields.find(f=>f.id===id);if(!f)throw Error('Missing matrix header field');const input=field(f,true);input.classList.add('matrix-header-field');th.append(input);table.dataset.headerInputs='true'}headRow.append(th)}
       head.append(headRow);if(a.matrix.hideColumnHeaders)head.classList.add('matrix-hidden-head');table.append(head);const rows=el('tbody');
-      for(const entry of a.matrix.rows){const tr=el('tr'),th=el('th',entry.prompt.zh===entry.prompt.vi?entry.prompt.zh:entry.prompt);th.setAttribute('scope','row');tr.append(th);for(const context of entry.contextCells??[])tr.append(el('td',context));for(const [column,id]of entry.fieldIds.entries()){const f=a.fields.find(f=>f.id===id);if(!f)throw Error('Missing self-assessment matrix field');const td=el('td');td.append(field(f,true,entry.cellLabels?.[column]));tr.append(td)}rows.append(tr)}
+      for(const entry of a.matrix.rows){const rowFields=entry.fieldIds.map(id=>{const f=a.fields.find(f=>f.id===id);if(!f)throw Error('Missing self-assessment matrix field');return f}),rowSource=showFieldSourceNotes?sharedRowSource(a.source,rowFields):null;const tr=el('tr'),th=el('th',entry.prompt.zh===entry.prompt.vi?entry.prompt.zh:entry.prompt);th.setAttribute('scope','row');if(rowSource){const note=sourceNote(rowSource.printedPage);note.classList.add('matrix-row-source');th.append(note)}tr.append(th);for(const context of entry.contextCells??[])tr.append(el('td',context));for(const [column,f]of rowFields.entries()){const td=el('td');td.append(field(f,true,entry.cellLabels?.[column],Boolean(rowSource)));tr.append(td)}rows.append(tr)}
       table.append(rows);if(matrixColumns>=4||a.matrix.horizontalScroll){const scroll=el('div',undefined,'matrix-scroll');scroll.tabIndex=0;scroll.setAttribute('role','region');scroll.setAttribute('aria-label',a.title.zh+' · '+a.title.vi);scroll.append(table);fields.append(el('p',copy('左右滑动查看表格的其余列','Vuốt ngang để xem các cột còn lại'), 'matrix-scroll-hint'),scroll)}else fields.append(table);
     }else a.fields.forEach((f) => fields.append(field(f)));
     wrap.append(fields);
@@ -265,6 +281,8 @@ export function mountLesson(
           : "Nộp & xem phản hồi",
       ),
       async () => {
+        const requestEpoch=++feedbackEpoch;
+        feedback.replaceChildren();
         const incomplete = a.fields.some(
           (f) => f.input !== "checkbox" && !String(values[f.id] ?? "").trim(),
         );
@@ -274,14 +292,17 @@ export function mountLesson(
           );
           return;
         }
+        const submittedValues={...values},checkedAt=Date.now();
         c.edit((s) => {
           s.activities[a.id] = {
-            values: { ...values },
-            checkedAt: Date.now(),
-            updatedAt: Date.now(),
+            values: submittedValues,
+            checkedAt,
+            updatedAt: checkedAt,
           };
         });
-        if (await c.flush()) showFeedback();
+        const saved=await c.flush(),record=c.state().activities[a.id];
+        // A delayed submit cannot reveal stale answers after editing, a newer submit or leaving.
+        if(saved&&requestEpoch===feedbackEpoch&&!events.signal.aborted&&record?.checkedAt===checkedAt&&a.fields.every(f=>record.values[f.id]===submittedValues[f.id]))showFeedback();
       },
       "primary",
     );
