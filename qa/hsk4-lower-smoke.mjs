@@ -86,6 +86,8 @@ function load(env){
  vm.runInContext(read('hsk4/runtime.js'),env.ctx,{filename:'hsk4/runtime.js'});
  vm.runInContext(read('hsk4/content-audit.js'),env.ctx,{filename:'hsk4/content-audit.js'});
  vm.runInContext(read('hsk4/modules.js'),env.ctx,{filename:'hsk4/modules.js'});
+ // Match the real page: auth installs the legacy document.write guard before practice.
+ vm.runInContext(read('assets/session-auth.js'),env.ctx,{filename:'assets/session-auth.js'});
  vm.runInContext(read('hsk4/practice.js'),env.ctx,{filename:'hsk4/practice.js'});
  vm.runInContext('boot()',env.ctx);
 }
