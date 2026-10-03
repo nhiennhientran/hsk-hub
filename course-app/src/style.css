@@ -637,3 +637,5 @@ h1.bi>span[lang=vi],h1>.bilingual-vi{font-size:17px;font-weight:450;line-height:
 .matrix-scroll{position:relative;min-width:0;width:100%}.self-assessment-matrix .activity-field{position:relative}
 
 .self-assessment-matrix{position:relative}.matrix-hidden-head{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.self-assessment-matrix .matrix-visible-label{display:flex;position:static;white-space:normal}
+
+.self-assessment-matrix .matrix-header-field{margin-top:.5rem}.self-assessment-matrix[data-header-inputs=true] th:first-child{width:22%}

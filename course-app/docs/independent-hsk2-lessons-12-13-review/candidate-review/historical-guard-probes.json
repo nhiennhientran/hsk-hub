@@ -1,0 +1,62 @@
+{
+  "scope": "Exact updated guard body mutation-tested under controlled VM; no browser execution; no external output writes",
+  "checks": [
+    {
+      "passed": true,
+      "label": "chromium: frozen baseline equals independently collected complete JSON identities"
+    },
+    {
+      "passed": true,
+      "label": "chromium: baseline exact identity digest"
+    },
+    {
+      "passed": true,
+      "label": "webkit: frozen baseline equals independently collected complete JSON identities"
+    },
+    {
+      "passed": true,
+      "label": "webkit: baseline exact identity digest"
+    },
+    {
+      "passed": true,
+      "label": "exact reviewed guard accepts current196 with zero additions"
+    },
+    {
+      "passed": true,
+      "label": "chromium: deleting a test from full AND shards fails historical guard despite exact union"
+    },
+    {
+      "passed": true,
+      "label": "chromium: renamed historical ID rejected"
+    },
+    {
+      "passed": true,
+      "label": "webkit: deleting a test from full AND shards fails historical guard despite exact union"
+    },
+    {
+      "passed": true,
+      "label": "webkit: renamed historical ID rejected"
+    },
+    {
+      "passed": true,
+      "label": "synthetic220 correctly reports196 old +24 new; this is not collection of actual future220"
+    },
+    {
+      "passed": true,
+      "label": "invalid frozen baseline rejected"
+    },
+    {
+      "passed": true,
+      "label": "invalid frozen baseline rejected"
+    },
+    {
+      "passed": true,
+      "label": "invalid frozen baseline rejected"
+    }
+  ],
+  "failures": [],
+  "hashes": {
+    "guard": "251d50b1be8f548c728c0b8ca657bdd91baa0abafbcf07ff67aca8890ce1130e",
+    "baseline": "1f92b77a10d3936b70fc492a00ce4aca7fb101c0b14da3150e94cc80845ded8d"
+  }
+}

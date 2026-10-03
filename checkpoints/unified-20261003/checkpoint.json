@@ -33,7 +33,7 @@
     },
     {
       "step": 7,
-      "status": "pending"
+      "status": "in_progress"
     },
     {
       "step": 8,
@@ -73,11 +73,11 @@
     }
   ],
   "checks": {
-    "course_unit": "52passed",
+    "course_unit": "58 passed with reviewed matrix headers and delayed source editorial notes",
     "hsk1_unit": "335 passed after audio integration; unchangedHSK1 sources",
-    "course_build": "passed with integrated L10–11",
+    "course_build": "passed with integrated L12–13",
     "nonempty_storage": "passed in successful checkpoint for cross-level drafts, legacy HSK3 preservation and scoped backup restore",
-    "browsers": "174/174 passed at remotee8b7aef,run37109960704;196test expanded L10–11suite collected,pending remote browserexecution",
+    "browsers": "196/196 passed at21da869,run37113836125;220case L12–13 expansion collected with allhistorical196identities retained, pendingrealexecution",
     "physical_devices": "not run",
     "human_listening": "not run"
   },
@@ -173,12 +173,11 @@
   },
   "nextDraft": {
     "hsk2Lessons": [
-      12,
-      13
+      14,
+      15
     ],
     "integrated": false,
-    "authoring": "inprogress",
-    "sourceSpecificWork": "L12four-personsurvey with3headernamefields;L13hasnotext1/text2/text4photo;fullappendixandindependentreviewpending"
+    "authoring": "in progress with full HSK2 appendix reconciliation"
   },
   "contentBatch89": {
     "activities": 55,
@@ -189,10 +188,10 @@
     "independentChecks": 1758,
     "browser": "passed174/174 aggregate browser cases and8/8mobilepreflight, run37109960704, remotee8b7aef"
   },
-  "updatedAt": "2026-10-03T09:10:00Z",
-  "remoteDevelopmentCommit": "e8b7aef9bd394d059879c93572470ad4233ef8df",
-  "localDevelopmentCommit": "9e4657ba0dd7c3e7aff1fa48ec5fccd389b6887c",
-  "exactSharedTree": "5506f247e846f0cd64f7c1b80c0cfc75975126d2",
+  "updatedAt": "2026-10-03T10:08:00Z",
+  "remoteDevelopmentCommit": "21da86991b8114dba00703a5f5f9a519cf9656da",
+  "localDevelopmentCommit": "7e2b2fb4e6a87f836cd2b5a57915daffda35a22e",
+  "exactSharedTree": "84f43ab2cc37080627e050e6913606d98f53be06",
   "ciHistoryActual": [
     {
       "run": 37105595387,
@@ -230,6 +229,23 @@
       "chromium": 87,
       "webkit": 87,
       "logReadback": "2026-10-03T08:49Z"
+    },
+    {
+      "run": 37112494707,
+      "status": "failure",
+      "passed": 188,
+      "failed": 8,
+      "cause": "All8: added L10 test wrongly expected empty extension route despite source particle呢 tip. Corrected only assertion; did not remove source content."
+    },
+    {
+      "run": 37113836125,
+      "status": "success",
+      "passed": 196,
+      "failed": 0,
+      "chromium": 98,
+      "webkit": 98,
+      "preflightPassed": 8,
+      "actualLogsRead": true
     }
   ],
   "audioBatch23": {
@@ -247,6 +263,23 @@
     "independentDataAssertions": 957,
     "independentRendererAssertions": 1479,
     "independentArtworkPixels": "all29passed",
-    "browser": "196fulltests collected,notyetexecuted"
+    "browser": "passed196/196 after source-corrected test, run37113836125"
+  },
+  "contentBatch1213": {
+    "activities": 56,
+    "sourceFields": 126,
+    "optionalFields": 6,
+    "fields": 132,
+    "officialFields": 40,
+    "illustrations": 23,
+    "independentDataChecks": 6674,
+    "independentRendererStorageChecks": 1956,
+    "independentShardChecks": 433,
+    "independentHistoricalGuardChecks": 13,
+    "repairs": [
+      "L13新增参考答用中性教师称谓",
+      "原题歧义说明在映射/非映射两种反馈路径均保留，中越文+页码仅提交后显示"
+    ],
+    "browser": "220cases collected, notyetexecuted"
   }
 }
