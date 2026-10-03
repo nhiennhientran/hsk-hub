@@ -633,3 +633,5 @@ h1.bi>span[lang=vi],h1>.bilingual-vi{font-size:17px;font-weight:450;line-height:
 .matrix-scroll{max-width:100%;overflow-x:auto;border-radius:6px;overscroll-behavior-x:contain}.matrix-scroll .self-assessment-matrix{min-width:560px}.matrix-scroll th[scope=row],.matrix-scroll thead th:first-child{position:sticky;left:0;z-index:1;background:#edf3ec}.self-assessment-matrix[data-matrix-columns="5"] th:first-child{width:10%}.matrix-scroll-hint{font-size:.875rem;color:var(--muted);margin:.5rem 0}
 
 .self-assessment-matrix[data-matrix-mode="responses"][data-matrix-columns="2"] th:first-child{width:50%}
+/* Keep clipped accessible labels inside the scroll container's containing block. */
+.matrix-scroll{position:relative;min-width:0;width:100%}.self-assessment-matrix .activity-field{position:relative}

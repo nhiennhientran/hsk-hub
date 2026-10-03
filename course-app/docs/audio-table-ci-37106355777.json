@@ -1,0 +1,23 @@
+{
+  "run": 37106355777,
+  "remoteCommit": "3cb40b9596233420cb6fc94a50b8d9ff857497df",
+  "conclusion": "failed",
+  "chromium": {
+    "passed": 65,
+    "failed": 2,
+    "duration": "10.9m"
+  },
+  "webkit": {
+    "passed": 65,
+    "failed": 2,
+    "duration": "11.4m"
+  },
+  "total": {
+    "passed": 130,
+    "failed": 4
+  },
+  "failures": "L2 overviewdocument horizontal overflow at320/390 inbothengines; all originalaudio media tests passed",
+  "fixCandidate": "Position the matrixscroll container and its activityfields relatively so visuallyhidden absoluteselectlabels stay in its clipping/positioning context. Preserve allcolumns and genuineinnerscrolling. Awaitbrowserconfirmation.",
+  "tests": "No removedorloosenedassertions; overflow failure now emitssection,viewport andoffendingelementgeometry; focusedlayoutpreflight runs before complete154case suite.",
+  "scope": "HSK2L6–7 tree fbbcd537 was uploaded while thisrunfinished. Itsseparaterun37107213747 remains tracked and may reproduce theknownCSSfailure. No productionrelease."
+}

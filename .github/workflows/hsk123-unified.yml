@@ -26,6 +26,9 @@ jobs:
       - name: Install browser and Chinese fonts
         working-directory: course-app
         run: npx playwright install --with-deps ${{ matrix.browser }} && sudo apt-get install -y fonts-noto-cjk
+      - name: Fast mobile layout preflight
+        working-directory: course-app
+        run: npx playwright test --config=playwright.unified.config.ts --project=${{ matrix.browser }} --grep 'lesson 2 reviewed textbook sections at (320|390)|lesson7 source surveys'
       - name: Test unified app checkpoint
         working-directory: course-app
         run: npx playwright test --config=playwright.unified.config.ts --project=${{ matrix.browser }}
