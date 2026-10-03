@@ -1,0 +1,48 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> hsk-shared-course-app@1.0.0 test
+> node --experimental-strip-types --test tests/*.test.mjs
+
+✔ assembly preserves1140 baseline files and rejects changed baseline/frozen bytes (97.831755ms)
+✔ every printed POS/sense maps once with exact pages, audio and translation (13.93868ms)
+✔ same-spelling different meanings and POS remain separate canonical cards (1.476824ms)
+✔ the complete catalogue count is actual POS/sense records, not syllabus targets (2.864103ms)
+✔ release validation rejects pending review, stale translations and missing homograph evidence (2.720287ms)
+✔ wrong course, duplicate mapping, missing source and unreviewed merge fail closed (3.847884ms)
+✔ an explicitly reviewed repeated sense uses selected-lesson provenance, never an unselected audio group (0.329646ms)
+✔ online verification binds full release identity and checks new/protected bytes (21.427788ms)
+✔ online verifier rejects a stale manifest and never accepts changed protected bytes (8.734182ms)
+✔ online verifier refuses another origin, pilot release and unscoped paths (9.682491ms)
+✔ two locked course entries share identical frozen assets with nested relative media paths (1.24167ms)
+✔ portal updates only2/3 course cards and retains exact HSK1 and both HSK4 cards (0.771321ms)
+✔ package manifest binds every scoped output byte to the frozen source input without copying raw sources (31.615049ms)
+✔ missing audio, unknown raw PDF, symlinks and wrong identity fail before release creation (37.749507ms)
+✔ output and public-input allowlists reject legacy overwrites and source package paths (0.282636ms)
+✔ small frozen-code transfer restores all exact tested bytes from264 hash-bound originals without rebuilding (34.399397ms)
+✔ frozen transfer fails before output on changed audio, code, extra raw source or wrong source commit (67.389933ms)
+✔ reviewed-source guards reject a subject/negation substitution, relocated blank and wrong page (1.46723ms)
+✔ edition and level identities reject cross-course data (1.610135ms)
+✔ new stores do not read or mutate nonempty legacy and HSK1 records (1.769204ms)
+✔ first submission is immutable, latest updates without overwriting draft answer text (3.926092ms)
+✔ manual writing never receives automatic points (0.212149ms)
+✔ automatic choices and ordering grade exact IDs (0.327343ms)
+✔ save failure preserves draft and does not create success (0.526333ms)
+✔ competing tabs produce conflict instead of lost updates (0.581876ms)
+✔ backup preview, import and reset recovery are edition-isolated (1.149ms)
+✔ stale import preview cannot replace later edits (0.393423ms)
+✔ corrupt original storage is protected and exportable (0.532983ms)
+✔ invalid imported scores, duplicate queues and legacy lesson numbers fail (0.330678ms)
+✔ routing normalizes invalid courses while retaining valid lesson 18 (0.641246ms)
+✔ historical question snapshots survive source edits and reorder without rescoring (5.026129ms)
+✔ legacy nonempty stores receive optional learning fields without overwriting submissions (0.329707ms)
+✔ routes preserve per-level lesson bounds and native HSK1 historical contracts (1.182541ms)
+✔ textbook activity and reading records reject foreign identities (0.530348ms)
+✔ independent listening round retains immutable per-question submissions and validates queue (0.594846ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 260.283807

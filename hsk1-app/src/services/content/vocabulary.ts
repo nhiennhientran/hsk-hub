@@ -1,3 +1,4 @@
+import {courseAssetBase} from './asset-base.ts';
 import { createListeningContent } from './listening.ts';
 import type { ListeningCatalog, ListeningLesson, ListeningVocabulary } from './listening.ts';
 import type { AudioRequest } from '../audio/index.ts';
@@ -136,7 +137,7 @@ async function fingerprint(value: Row, signal?: AbortSignal): Promise<void> {
 /** Validate the frozen 344 senses and exact 330 clips before exposing any word audio. */
 export async function createVocabularyContent(catalogValue: unknown, mediaValue: unknown,
   audioURL: (trackId: string) => string = id => typeof document === 'undefined'
-    ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, document.baseURI).href,
+    ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, courseAssetBase()).href,
   signal?: AbortSignal, textbookValue?: unknown): Promise<VocabularyContent> {
   signal?.throwIfAborted();
   // Keep inputs stable across the asynchronous shared metadata/hash validation.

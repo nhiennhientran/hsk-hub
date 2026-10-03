@@ -19,13 +19,12 @@
     "sourceVisual": true,
     "vietnamese": true,
     "pinyin": true,
-    "reviewer": "independent AI content review: HSK2 pilot lessons 01–03, 2026-10-02",
+    "reviewer": "Content author visual verification, 2026-10-03; separate independent acceptance required",
     "notes": [
-      "Independent visual comparison completed for every textbook PDF page 16–24; relevant objective keys checked against answer-PDF pages 1–4.",
-      "Chinese text, printed pinyin, word senses, Vietnamese translations, all grammar points, source activities and all original questions reviewed. Vietnamese and added grammar-example pinyin are editorial supplements.",
-      "All manual-writing prompts have neutral metadata and no answer, model solution, options, tokens or explanation. Original choice keys and ordering keys independently rechecked; choice positions varied and ordering expanded to 5–6 chunks.",
-      "Audio grounding verified against source text and printed track labels. All 24 pilot MP3 files independently SHA256-matched to the supplied manifest and fully decoded with ffmpeg. No full semantic listening or transcription certification was performed by this reviewer.",
-      "This is an independent AI review, not a qualified-teacher or native-speaker certification. Culture videos 1-1, 2-1 and 3-1 were not supplied; text MP3s do not replace them."
+      "This revision is authored and visually checked by the content author, not an independent review.",
+      "All nine lesson pages and answer PDF pages 1–2 were freshly rendered and inspected. Chinese/Vietnamese/pinyin learning layers remain; generated reference expressions and image descriptions are marked as supplements.",
+      "Prior review statements in repository history apply to the earlier revision only and are not certification of the new activity model.",
+      "Independent acceptance and interactive UI checks are tracked separately in coverageReview."
     ]
   },
   "objectives": [
@@ -745,6 +744,13 @@
         "printedPage": 2,
         "section": "课文1：生词",
         "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "附录词语表",
+        "provenance": "textbook"
       }
     },
     {
@@ -759,6 +765,13 @@
         "pdfPage": 17,
         "printedPage": 2,
         "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "附录词语表",
         "provenance": "textbook"
       }
     },
@@ -775,6 +788,13 @@
         "printedPage": 2,
         "section": "课文1：生词",
         "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 159,
+        "printedPage": 144,
+        "section": "附录词语表",
+        "provenance": "textbook"
       }
     },
     {
@@ -789,6 +809,13 @@
         "pdfPage": 17,
         "printedPage": 2,
         "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "附录词语表",
         "provenance": "textbook"
       }
     },
@@ -805,6 +832,13 @@
         "printedPage": 4,
         "section": "课文2：生词",
         "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "附录词语表",
+        "provenance": "textbook"
       }
     },
     {
@@ -819,6 +853,13 @@
         "pdfPage": 19,
         "printedPage": 4,
         "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "附录词语表",
         "provenance": "textbook"
       }
     },
@@ -835,6 +876,13 @@
         "printedPage": 5,
         "section": "课文3：生词",
         "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "附录词语表",
+        "provenance": "textbook"
       }
     },
     {
@@ -849,6 +897,13 @@
         "pdfPage": 20,
         "printedPage": 5,
         "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "附录词语表",
         "provenance": "textbook"
       }
     },
@@ -865,6 +920,13 @@
         "printedPage": 5,
         "section": "课文3：生词",
         "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "附录词语表",
+        "provenance": "textbook"
       }
     },
     {
@@ -879,6 +941,13 @@
         "pdfPage": 20,
         "printedPage": 5,
         "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 159,
+        "printedPage": 144,
+        "section": "附录词语表",
         "provenance": "textbook"
       }
     },
@@ -895,6 +964,13 @@
         "printedPage": 7,
         "section": "课文4：生词",
         "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "附录词语表",
+        "provenance": "textbook"
       }
     },
     {
@@ -909,6 +985,13 @@
         "pdfPage": 22,
         "printedPage": 7,
         "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "附录词语表",
         "provenance": "textbook"
       }
     },
@@ -925,6 +1008,13 @@
         "printedPage": 7,
         "section": "课文4：生词",
         "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "附录词语表",
+        "provenance": "textbook"
       }
     },
     {
@@ -940,6 +1030,13 @@
         "printedPage": 7,
         "section": "课文4：生词",
         "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "附录词语表",
+        "provenance": "textbook"
       }
     },
     {
@@ -954,6 +1051,13 @@
         "pdfPage": 22,
         "printedPage": 7,
         "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 161,
+        "printedPage": 146,
+        "section": "附录词语表：专有名词",
         "provenance": "textbook"
       }
     }
@@ -2261,5 +2365,2343 @@
       },
       "audioTrack": "1-7"
     }
-  ]
+  ],
+  "activities": [
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:objectives",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "本课目标自评",
+        "vi": "Tự đánh giá mục tiêu bài học"
+      },
+      "source": {
+        "pdfPage": 16,
+        "printedPage": 1,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "objectives",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:objective1",
+          "prompt": {
+            "zh": "能听懂并使用“请”“让”“叫”表达请求。",
+            "vi": "Nghe hiểu và dùng 请, 让, 叫 để diễn đạt lời nhờ hoặc yêu cầu."
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:objective2",
+          "prompt": {
+            "zh": "掌握语气助词“吧”（2）的用法，能表达揣测、估计的语气。",
+            "vi": "Nắm cách dùng trợ từ ngữ khí 吧 (2) để thể hiện sự phỏng đoán."
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:objective3",
+          "prompt": {
+            "zh": "掌握“是……的”句，能以此强调事情发生的时间、地点、方式等信息。",
+            "vi": "Dùng câu 是……的 để nhấn mạnh thời gian, địa điểm, cách thức xảy ra sự việc."
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:objective4",
+          "prompt": {
+            "zh": "了解北京名菜烤鸭及其吃法。",
+            "vi": "Tìm hiểu món vịt quay nổi tiếng của Bắc Kinh và cách ăn."
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "勾选表示自我判断，不能当作练习成绩。",
+        "vi": "Dấu chọn là tự đánh giá, không phải điểm bài tập."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:warmup-matching",
+      "kind": "matching",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với tranh tương ứng."
+      },
+      "source": {
+        "pdfPage": 16,
+        "printedPage": 1,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:warmup1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:warmup-picture1",
+          "prompt": {
+            "zh": "图1：选择相应词语",
+            "vi": "Hình 1: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "不好意思",
+              "vi": "ngại quá / xin lỗi"
+            },
+            {
+              "zh": "旅游",
+              "vi": "du lịch"
+            },
+            {
+              "zh": "介绍",
+              "vi": "giới thiệu"
+            },
+            {
+              "zh": "帮忙",
+              "vi": "giúp đỡ"
+            }
+          ],
+          "answer": "帮忙",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P1 热身 图1"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l01:illustration:warmup-1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:warmup-picture2",
+          "prompt": {
+            "zh": "图2：选择相应词语",
+            "vi": "Hình 2: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "不好意思",
+              "vi": "ngại quá / xin lỗi"
+            },
+            {
+              "zh": "旅游",
+              "vi": "du lịch"
+            },
+            {
+              "zh": "介绍",
+              "vi": "giới thiệu"
+            },
+            {
+              "zh": "帮忙",
+              "vi": "giúp đỡ"
+            }
+          ],
+          "answer": "不好意思",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P1 热身 图2"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l01:illustration:warmup-2"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:warmup-picture3",
+          "prompt": {
+            "zh": "图3：选择相应词语",
+            "vi": "Hình 3: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "不好意思",
+              "vi": "ngại quá / xin lỗi"
+            },
+            {
+              "zh": "旅游",
+              "vi": "du lịch"
+            },
+            {
+              "zh": "介绍",
+              "vi": "giới thiệu"
+            },
+            {
+              "zh": "帮忙",
+              "vi": "giúp đỡ"
+            }
+          ],
+          "answer": "旅游",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P1 热身 图3"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l01:illustration:warmup-3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:warmup-picture4",
+          "prompt": {
+            "zh": "图4：选择相应词语",
+            "vi": "Hình 4: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "不好意思",
+              "vi": "ngại quá / xin lỗi"
+            },
+            {
+              "zh": "旅游",
+              "vi": "du lịch"
+            },
+            {
+              "zh": "介绍",
+              "vi": "giới thiệu"
+            },
+            {
+              "zh": "帮忙",
+              "vi": "giúp đỡ"
+            }
+          ],
+          "answer": "介绍",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P1 热身 图4"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l01:illustration:warmup-4"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l01:illustration:warmup-1",
+        "hsk2-fltrp-2026:l01:illustration:warmup-2",
+        "hsk2-fltrp-2026:l01:illustration:warmup-3",
+        "hsk2-fltrp-2026:l01:illustration:warmup-4"
+      ],
+      "note": {
+        "zh": "辅助示意图为教学重绘方案，不是教材原照片；图号和题目关系保持对应。",
+        "vi": "Hình minh họa hỗ trợ do khóa học tự thiết kế, không phải ảnh gốc trong sách; giữ nguyên thứ tự và quan hệ với câu hỏi."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:travel-survey",
+      "kind": "survey",
+      "title": {
+        "zh": "回忆自己上次出行的经历，完成下面的调查表。",
+        "vi": "Nhớ lại chuyến đi gần nhất và hoàn thành bảng khảo sát."
+      },
+      "source": {
+        "pdfPage": 16,
+        "printedPage": 1,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:warmup2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:travel-time",
+          "prompt": {
+            "zh": "出发时间：什么时候去的？",
+            "vi": "Thời điểm khởi hành: đã đi lúc nào?"
+          },
+          "input": "text",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:travel-companion",
+          "prompt": {
+            "zh": "同伴：和谁去的？",
+            "vi": "Người đi cùng: đã đi cùng ai?"
+          },
+          "input": "text",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:travel-method",
+          "prompt": {
+            "zh": "旅行方式：怎么去的？",
+            "vi": "Cách đi: đã đi bằng phương tiện nào?"
+          },
+          "input": "text",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "按实际情况回答，保存在本机，不设标准答案；可用“是……的”组织回答。",
+        "vi": "Trả lời theo thực tế, lưu trên thiết bị, không có đáp án cố định; có thể dùng 是……的."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:text1-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文1：听后练习",
+        "vi": "Bài khóa 1: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 17,
+        "printedPage": 2,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:text1:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text1-listening-1",
+          "prompt": {
+            "zh": "谁来接白家月了？",
+            "vi": "Ai đã đến đón Bạch Gia Nguyệt?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "targetRef": "hsk2-fltrp-2026:l01:text1:question1",
+          "options": [
+            {
+              "zh": "王一飞",
+              "vi": "Vương Nhất Phi"
+            },
+            {
+              "zh": "王一雪",
+              "vi": "Vương Nhất Tuyết"
+            },
+            {
+              "zh": "她的姐姐",
+              "vi": "chị gái của cô ấy"
+            }
+          ],
+          "answer": "王一雪",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P2 课文1 听后 第1题"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text1-listening-2",
+          "prompt": {
+            "zh": "王一飞给谁打电话了？",
+            "vi": "Vương Nhất Phi đã gọi cho ai?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "targetRef": "hsk2-fltrp-2026:l01:text1:question2",
+          "options": [
+            {
+              "zh": "安妮",
+              "vi": "Annie"
+            },
+            {
+              "zh": "白家月",
+              "vi": "Bạch Gia Nguyệt"
+            },
+            {
+              "zh": "王一雪",
+              "vi": "Vương Nhất Tuyết"
+            }
+          ],
+          "answer": "王一雪",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P2 课文1 听后 第2题"
+          }
+        }
+      ],
+      "audioTrack": "1-1",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:text1-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文1：读后练习",
+        "vi": "Bài khóa 1: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 18,
+        "printedPage": 3,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:text1:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text1-reading-1",
+          "prompt": {
+            "zh": "来北京前，白家月认识王一雪吗？",
+            "vi": "Trước khi đến Bắc Kinh, Gia Nguyệt có quen Nhất Tuyết không?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk2-fltrp-2026:l01:text1:question3",
+          "referenceAnswer": {
+            "zh": "不认识。",
+            "vi": "Chưa quen."
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text1-reading-2",
+          "prompt": {
+            "zh": "王一雪在做什么？",
+            "vi": "Nhất Tuyết đang làm gì?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk2-fltrp-2026:l01:text1:question4",
+          "referenceAnswer": {
+            "zh": "她在机场接白家月和安妮。",
+            "vi": "Cô ấy đang đón Gia Nguyệt và Annie ở sân bay."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:text2-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文2：听后练习",
+        "vi": "Bài khóa 2: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 18,
+        "printedPage": 3,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:text2:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text2-listening-1",
+          "prompt": {
+            "zh": "白家月是第几次来北京？",
+            "vi": "Đây là lần thứ mấy Gia Nguyệt đến Bắc Kinh?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "targetRef": "hsk2-fltrp-2026:l01:text2:question1",
+          "options": [
+            {
+              "zh": "第一次",
+              "vi": "lần đầu"
+            },
+            {
+              "zh": "第四次",
+              "vi": "lần thứ tư"
+            },
+            {
+              "zh": "第七次",
+              "vi": "lần thứ bảy"
+            }
+          ],
+          "answer": "第一次",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P3 课文2 听后 第1题"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text2-listening-2",
+          "prompt": {
+            "zh": "白家月和安妮是来北京做什么的？",
+            "vi": "Gia Nguyệt và Annie đến Bắc Kinh làm gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "targetRef": "hsk2-fltrp-2026:l01:text2:question2",
+          "options": [
+            {
+              "zh": "旅游",
+              "vi": "du lịch"
+            },
+            {
+              "zh": "学中文",
+              "vi": "học tiếng Trung"
+            },
+            {
+              "zh": "找王一雪",
+              "vi": "tìm Vương Nhất Tuyết"
+            }
+          ],
+          "answer": "旅游",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P3 课文2 听后 第2题"
+          }
+        }
+      ],
+      "audioTrack": "1-3",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:text2-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文2：读后练习",
+        "vi": "Bài khóa 2: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 19,
+        "printedPage": 4,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:text2:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text2-reading-1",
+          "prompt": {
+            "zh": "王一雪这几天忙不忙？",
+            "vi": "Mấy hôm nay Nhất Tuyết có bận không?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk2-fltrp-2026:l01:text2:question3",
+          "referenceAnswer": {
+            "zh": "她这几天都不忙。",
+            "vi": "Mấy hôm nay cô ấy đều không bận."
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text2-reading-2",
+          "prompt": {
+            "zh": "白家月有事可以找谁？",
+            "vi": "Gia Nguyệt có việc thì có thể tìm ai?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk2-fltrp-2026:l01:text2:question4",
+          "referenceAnswer": {
+            "zh": "可以找王一雪。",
+            "vi": "Có thể tìm Vương Nhất Tuyết."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:text3-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文3：听后练习",
+        "vi": "Bài khóa 3: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 20,
+        "printedPage": 5,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:text3:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text3-listening-1",
+          "prompt": {
+            "zh": "陈天中为什么给白家月打电话？",
+            "vi": "Vì sao Thiên Trung gọi cho Gia Nguyệt?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "targetRef": "hsk2-fltrp-2026:l01:text3:question1",
+          "options": [
+            {
+              "zh": "找她帮忙",
+              "vi": "nhờ cô ấy giúp"
+            },
+            {
+              "zh": "请她吃饭",
+              "vi": "mời cô ấy ăn cơm"
+            },
+            {
+              "zh": "让她接个朋友",
+              "vi": "nhờ cô ấy đón một người bạn"
+            }
+          ],
+          "answer": "找她帮忙",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P5 课文3 听后 第1题"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text3-listening-2",
+          "prompt": {
+            "zh": "白家月是什么时候到北京的？",
+            "vi": "Gia Nguyệt đã đến Bắc Kinh lúc nào?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "targetRef": "hsk2-fltrp-2026:l01:text3:question2",
+          "options": [
+            {
+              "zh": "昨天中午",
+              "vi": "trưa hôm qua"
+            },
+            {
+              "zh": "昨天晚上",
+              "vi": "tối hôm qua"
+            },
+            {
+              "zh": "今天早上",
+              "vi": "sáng nay"
+            }
+          ],
+          "answer": "今天早上",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P5 课文3 听后 第2题"
+          }
+        }
+      ],
+      "audioTrack": "1-5",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:text3-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文3：读后练习",
+        "vi": "Bài khóa 3: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 21,
+        "printedPage": 6,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:text3:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text3-reading-1",
+          "prompt": {
+            "zh": "白家月现在在哪儿？",
+            "vi": "Bây giờ Gia Nguyệt ở đâu?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk2-fltrp-2026:l01:text3:question3",
+          "referenceAnswer": {
+            "zh": "她现在在北京，在王一雪的车上。",
+            "vi": "Cô ấy đang ở Bắc Kinh, trên xe của Nhất Tuyết."
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text3-reading-2",
+          "prompt": {
+            "zh": "白家月让陈天中找谁帮忙？为什么？",
+            "vi": "Gia Nguyệt bảo Thiên Trung nhờ ai giúp? Vì sao?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk2-fltrp-2026:l01:text3:question4",
+          "referenceAnswer": {
+            "zh": "找李文帮忙，因为他还在学校。",
+            "vi": "Nhờ Lý Văn giúp, vì anh ấy vẫn ở trường."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:text4-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：听后练习",
+        "vi": "Bài khóa 4: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 22,
+        "printedPage": 7,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:text4:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text4-listening-1",
+          "prompt": {
+            "zh": "王老师到北京了，是她姐姐来接的她。",
+            "vi": "Cô giáo Vương đã đến Bắc Kinh và được chị gái đón."
+          },
+          "input": "select",
+          "assessment": "official",
+          "targetRef": "hsk2-fltrp-2026:l01:text4:question1",
+          "options": [
+            {
+              "zh": "正确",
+              "vi": "đúng"
+            },
+            {
+              "zh": "错误",
+              "vi": "sai"
+            }
+          ],
+          "answer": "错误",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P7 课文4 听后 第1题"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text4-listening-2",
+          "prompt": {
+            "zh": "白家月现在要去饭店吃北京烤鸭。",
+            "vi": "Bây giờ Gia Nguyệt sắp đi nhà hàng ăn vịt quay Bắc Kinh."
+          },
+          "input": "select",
+          "assessment": "official",
+          "targetRef": "hsk2-fltrp-2026:l01:text4:question2",
+          "options": [
+            {
+              "zh": "正确",
+              "vi": "đúng"
+            },
+            {
+              "zh": "错误",
+              "vi": "sai"
+            }
+          ],
+          "answer": "错误",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P7 课文4 听后 第2题"
+          }
+        }
+      ],
+      "audioTrack": "1-7",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:text4-reading",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：读后练习",
+        "vi": "Bài khóa 4: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 22,
+        "printedPage": 7,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:text4:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text4-reading-1",
+          "prompt": {
+            "zh": "王老师的姐姐请白家月吃什么了？",
+            "vi": "Chị gái cô Vương đã mời Gia Nguyệt ăn gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "targetRef": "hsk2-fltrp-2026:l01:text4:question3",
+          "options": [
+            {
+              "zh": "面包",
+              "vi": "bánh mì"
+            },
+            {
+              "zh": "饺子",
+              "vi": "sủi cảo"
+            },
+            {
+              "zh": "北京烤鸭",
+              "vi": "vịt quay Bắc Kinh"
+            }
+          ],
+          "answer": "北京烤鸭",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 1,
+            "item": "第1课 P7 课文4 读后 第1题"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:text4-reading-2",
+          "prompt": {
+            "zh": "白家月为什么不懂王老师姐姐的意思？",
+            "vi": "Vì sao Gia Nguyệt chưa hiểu ý chị gái cô Vương?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "targetRef": "hsk2-fltrp-2026:l01:text4:question4",
+          "options": [
+            {
+              "zh": "她不会中文",
+              "vi": "cô ấy không biết tiếng Trung"
+            },
+            {
+              "zh": "她的中文不太好",
+              "vi": "tiếng Trung của cô ấy chưa tốt lắm"
+            },
+            {
+              "zh": "没有王老师帮忙",
+              "vi": "không có cô Vương giúp"
+            }
+          ],
+          "answer": "她的中文不太好",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 2,
+            "item": "第1课 P7 课文4 读后 第2题"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:grammar1-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：这是______？ B：对，是我的手机，谢谢你！",
+        "vi": "A: Đây là ______? B: Đúng, là điện thoại của tôi, cảm ơn bạn!"
+      },
+      "source": {
+        "pdfPage": 18,
+        "printedPage": 3,
+        "section": "语气助词“吧”（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:grammar1:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:grammar1-practice1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "你的手机吧",
+            "vi": "điện thoại của bạn nhỉ"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:grammar1-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你______？认识你很高兴。 B：是。认识你，我也很高兴。",
+        "vi": "A: Bạn ______? Rất vui được biết bạn. B: Đúng vậy. Tôi cũng rất vui được biết bạn."
+      },
+      "source": {
+        "pdfPage": 18,
+        "printedPage": 3,
+        "section": "语气助词“吧”（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:grammar1:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:grammar1-practice2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "是安妮吧",
+            "vi": "là Annie nhỉ"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:grammar1-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：很晚了，老师______？ B：那我们明天再去学校找她。",
+        "vi": "A: Muộn rồi, cô giáo ______? B: Vậy ngày mai chúng ta lại đến trường tìm cô ấy."
+      },
+      "source": {
+        "pdfPage": 18,
+        "printedPage": 3,
+        "section": "语气助词“吧”（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:grammar1:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:grammar1-practice3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "已经回家了吧",
+            "vi": "chắc đã về nhà rồi nhỉ"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:grammar2-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你是坐车来学校的吗？ B：______。",
+        "vi": "A: Bạn đã đi xe đến trường phải không? B: ______."
+      },
+      "source": {
+        "pdfPage": 20,
+        "printedPage": 5,
+        "section": "“是……的”句：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:grammar2:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:grammar2-practice1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "不是，我是走路来的",
+            "vi": "Không, tôi đi bộ đến"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:grammar2-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你今天是几点到学校的？ B：______。",
+        "vi": "A: Hôm nay bạn đã đến trường lúc mấy giờ? B: ______."
+      },
+      "source": {
+        "pdfPage": 20,
+        "printedPage": 5,
+        "section": "“是……的”句：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:grammar2:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:grammar2-practice2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我是八点到学校的",
+            "vi": "Tôi đến trường lúc tám giờ"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:grammar2-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：______？ B：我是在书店看见安妮的。",
+        "vi": "A: ______? B: Tôi đã nhìn thấy Annie ở hiệu sách."
+      },
+      "source": {
+        "pdfPage": 20,
+        "printedPage": 5,
+        "section": "“是……的”句：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:grammar2:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:grammar2-practice3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "你是在哪儿看见安妮的",
+            "vi": "Bạn đã thấy Annie ở đâu"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:grammar3-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：明天我想请______来______。 B：好的，我下班后去买点儿菜。",
+        "vi": "A: Ngày mai tôi muốn mời ______ đến ______. B: Được, tan làm tôi sẽ đi mua ít thức ăn."
+      },
+      "source": {
+        "pdfPage": 21,
+        "printedPage": 6,
+        "section": "兼语句：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:grammar3:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:grammar3-practice1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "朋友",
+            "vi": "bạn"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:grammar3-practice1-blank2",
+          "prompt": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "吃饭",
+            "vi": "ăn cơm"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:grammar3-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：家月，王老师让______去______。 B：好的，我现在就去找她。",
+        "vi": "A: Gia Nguyệt, cô Vương bảo ______ đi ______. B: Được, bây giờ tôi đi tìm cô ấy ngay."
+      },
+      "source": {
+        "pdfPage": 21,
+        "printedPage": 6,
+        "section": "兼语句：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:grammar3:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:grammar3-practice2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "你",
+            "vi": "bạn"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:grammar3-practice2-blank2",
+          "prompt": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "找她",
+            "vi": "tìm cô ấy"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:grammar3-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：小雪，你去哪儿？ B：我去超市。妈妈叫______。",
+        "vi": "A: Tiểu Tuyết, con đi đâu? B: Con đi siêu thị. Mẹ bảo ______."
+      },
+      "source": {
+        "pdfPage": 21,
+        "printedPage": 6,
+        "section": "兼语句：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:grammar3:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:grammar3-practice3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我去买东西",
+            "vi": "con đi mua đồ"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:comprehensive-words",
+      "kind": "fill",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: chọn từ điền chỗ trống"
+      },
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:section1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:comprehensive-word1",
+          "prompt": {
+            "zh": "（1）我______去电影院看个电影。",
+            "vi": "(1) Tôi ______ đến rạp xem phim."
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "帮忙",
+              "vi": "giúp đỡ"
+            },
+            {
+              "zh": "已经",
+              "vi": "đã"
+            },
+            {
+              "zh": "意思",
+              "vi": "ý nghĩa"
+            },
+            {
+              "zh": "介绍",
+              "vi": "giới thiệu"
+            },
+            {
+              "zh": "有时",
+              "vi": "đôi khi"
+            }
+          ],
+          "answer": "有时",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 2,
+            "item": "第1课 P8 选词填空 第1题"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:comprehensive-word2",
+          "prompt": {
+            "zh": "（2）上课要多听、多说，你懂我的______吗？",
+            "vi": "(2) Trong giờ học cần nghe nhiều, nói nhiều, bạn hiểu ______ của tôi không?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "帮忙",
+              "vi": "giúp đỡ"
+            },
+            {
+              "zh": "已经",
+              "vi": "đã"
+            },
+            {
+              "zh": "意思",
+              "vi": "ý nghĩa"
+            },
+            {
+              "zh": "介绍",
+              "vi": "giới thiệu"
+            },
+            {
+              "zh": "有时",
+              "vi": "đôi khi"
+            }
+          ],
+          "answer": "意思",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 2,
+            "item": "第1课 P8 选词填空 第2题"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:comprehensive-word3",
+          "prompt": {
+            "zh": "（3）我很喜欢北京，这______是我第三次来北京了。",
+            "vi": "(3) Tôi rất thích Bắc Kinh; đây ______ là lần thứ ba tôi đến Bắc Kinh."
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "帮忙",
+              "vi": "giúp đỡ"
+            },
+            {
+              "zh": "已经",
+              "vi": "đã"
+            },
+            {
+              "zh": "意思",
+              "vi": "ý nghĩa"
+            },
+            {
+              "zh": "介绍",
+              "vi": "giới thiệu"
+            },
+            {
+              "zh": "有时",
+              "vi": "đôi khi"
+            }
+          ],
+          "answer": "已经",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 2,
+            "item": "第1课 P8 选词填空 第3题"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:comprehensive-word4",
+          "prompt": {
+            "zh": "（4）A：安妮，我给你______一下，这是我的中国朋友李文。B：你好，李文。认识你很高兴。",
+            "vi": "(4) A: Annie, để tôi ______ với bạn, đây là Lý Văn, bạn Trung Quốc của tôi. B: Chào Lý Văn, rất vui được biết bạn."
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "帮忙",
+              "vi": "giúp đỡ"
+            },
+            {
+              "zh": "已经",
+              "vi": "đã"
+            },
+            {
+              "zh": "意思",
+              "vi": "ý nghĩa"
+            },
+            {
+              "zh": "介绍",
+              "vi": "giới thiệu"
+            },
+            {
+              "zh": "有时",
+              "vi": "đôi khi"
+            }
+          ],
+          "answer": "介绍",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 2,
+            "item": "第1课 P8 选词填空 第4题"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:comprehensive-word5",
+          "prompt": {
+            "zh": "（5）A：今天的工作太多了！B：那你找个人来______吧。",
+            "vi": "(5) A: Hôm nay nhiều việc quá! B: Vậy bạn tìm người đến ______ đi."
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "帮忙",
+              "vi": "giúp đỡ"
+            },
+            {
+              "zh": "已经",
+              "vi": "đã"
+            },
+            {
+              "zh": "意思",
+              "vi": "ý nghĩa"
+            },
+            {
+              "zh": "介绍",
+              "vi": "giới thiệu"
+            },
+            {
+              "zh": "有时",
+              "vi": "đôi khi"
+            }
+          ],
+          "answer": "帮忙",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 2,
+            "item": "第1课 P8 选词填空 第5题"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:picture-dialogue1",
+      "kind": "fill",
+      "title": {
+        "zh": "（1）他们是开车______。",
+        "vi": "(1) Họ đã lái xe ______."
+      },
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:section3:picture:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:picture1-blank1",
+          "prompt": {
+            "zh": "图1第1空",
+            "vi": "Hình 1, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "去旅游的",
+            "vi": "đi du lịch"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l01:illustration:comprehensive-1"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l01:illustration:comprehensive-1"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:picture-dialogue2",
+      "kind": "fill",
+      "title": {
+        "zh": "（2）妈妈______孩子们______。",
+        "vi": "(2) Mẹ ______ các con ______."
+      },
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:section3:picture:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:picture2-blank1",
+          "prompt": {
+            "zh": "图2第1空",
+            "vi": "Hình 2, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "叫",
+            "vi": "bảo"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l01:illustration:comprehensive-2"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:picture2-blank2",
+          "prompt": {
+            "zh": "图2第2空",
+            "vi": "Hình 2, chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "吃饭",
+            "vi": "ăn cơm"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l01:illustration:comprehensive-2"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l01:illustration:comprehensive-2"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:picture-dialogue3",
+      "kind": "fill",
+      "title": {
+        "zh": "（3）他们______去的。",
+        "vi": "(3) Họ đã ______ đi."
+      },
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:section3:picture:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:picture3-blank1",
+          "prompt": {
+            "zh": "图3第1空",
+            "vi": "Hình 3, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "是坐飞机",
+            "vi": "đi bằng máy bay"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l01:illustration:comprehensive-3"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l01:illustration:comprehensive-3"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:picture-dialogue4",
+      "kind": "fill",
+      "title": {
+        "zh": "（4）她______7点______。",
+        "vi": "(4) Cô ấy ______ lúc 7 giờ ______."
+      },
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:section3:picture:4",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:picture4-blank1",
+          "prompt": {
+            "zh": "图4第1空",
+            "vi": "Hình 4, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "是",
+            "vi": "đã"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l01:illustration:comprehensive-4"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l01:field:picture4-blank2",
+          "prompt": {
+            "zh": "图4第2空",
+            "vi": "Hình 4, chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "起床的",
+            "vi": "thức dậy"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l01:illustration:comprehensive-4"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l01:illustration:comprehensive-4"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm sai theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:activity:roleplay",
+      "kind": "open",
+      "title": {
+        "zh": "课堂活动：角色扮演",
+        "vi": "Hoạt động trên lớp: đóng vai"
+      },
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 9,
+        "section": "课堂活动：角色扮演",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk2-fltrp-2026:l01:section4",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l01:field:roleplay-dialogue",
+          "prompt": {
+            "zh": "两人一组，一人来火车站接朋友，一人刚出站、是接站人的朋友。接站人向朋友询问来这里的目的和现在要去的地方，等等。尽可能使用本课所学生词和语法。",
+            "vi": "Làm việc theo cặp: một người đến ga đón bạn, một người vừa ra khỏi ga. Người đón hỏi mục đích chuyến đi, nơi bạn sắp đến và các thông tin liên quan. Cố gắng dùng từ mới và ngữ pháp trong bài."
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "先写提示，再分角色练习；只保存练习记录，不自动判分。",
+        "vi": "Viết gợi ý rồi đóng vai; chỉ lưu bản luyện tập, không chấm điểm tự động."
+      }
+    }
+  ],
+  "illustrationManifest": [
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:warmup-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 16,
+        "printedPage": 1,
+        "section": "辅助示意图：warmup-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 16,
+        "printedPage": 1,
+        "owner": "hsk2-fltrp-2026:l01:warmup1",
+        "position": 1
+      },
+      "title": {
+        "zh": "辅助示意图 1",
+        "vi": "Hình minh họa hỗ trợ 1"
+      },
+      "alt": {
+        "zh": "情境1：两个人并肩行走；年轻人手里拎着几个袋子，身旁老人拄杖。",
+        "vi": "Tình huống 1: Hai người đi cạnh nhau; người trẻ xách nhiều túi, người cao tuổi bên cạnh chống gậy."
+      },
+      "description": {
+        "zh": "两个人并肩行走；年轻人手里拎着几个袋子，身旁老人拄杖。",
+        "vi": "Hai người đi cạnh nhau; người trẻ xách nhiều túi, người cao tuổi bên cạnh chống gậy."
+      },
+      "sceneKey": "carry-bags",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-carry-bags.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "5241e8ad15a7ce4fd0cebc9bb60bc26cdece9a60fc68b3b0efab16f4915da40e",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:warmup-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 16,
+        "printedPage": 1,
+        "section": "辅助示意图：warmup-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 16,
+        "printedPage": 1,
+        "owner": "hsk2-fltrp-2026:l01:warmup1",
+        "position": 2
+      },
+      "title": {
+        "zh": "辅助示意图 2",
+        "vi": "Hình minh họa hỗ trợ 2"
+      },
+      "alt": {
+        "zh": "情境2：一个人坐着看向来人；来人略微弯身，手放在头边，呈歉意姿态。",
+        "vi": "Tình huống 2: Một người ngồi nhìn người vừa đến; người đến hơi cúi mình, đưa tay lên bên đầu, tỏ vẻ áy náy."
+      },
+      "description": {
+        "zh": "一个人坐着看向来人；来人略微弯身，手放在头边，呈歉意姿态。",
+        "vi": "Một người ngồi nhìn người vừa đến; người đến hơi cúi mình, đưa tay lên bên đầu, tỏ vẻ áy náy."
+      },
+      "sceneKey": "apology",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-apology.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "dc70fb9a83c169914b425dfc808640a9eebfb2c49f0ebc334a3e2b5b50b6820d",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:warmup-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 16,
+        "printedPage": 1,
+        "section": "辅助示意图：warmup-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 16,
+        "printedPage": 1,
+        "owner": "hsk2-fltrp-2026:l01:warmup1",
+        "position": 3
+      },
+      "title": {
+        "zh": "辅助示意图 3",
+        "vi": "Hình minh họa hỗ trợ 3"
+      },
+      "alt": {
+        "zh": "情境3：三位游客在有宫殿屋顶的景点合影，一人举手机，两人面向镜头。",
+        "vi": "Tình huống 3: Ba du khách chụp ảnh ở địa điểm có mái cung điện; một người giơ điện thoại, hai người nhìn vào máy ảnh."
+      },
+      "description": {
+        "zh": "三位游客在有宫殿屋顶的景点合影，一人举手机，两人面向镜头。",
+        "vi": "Ba du khách chụp ảnh ở địa điểm có mái cung điện; một người giơ điện thoại, hai người nhìn vào máy ảnh."
+      },
+      "sceneKey": "sightseeing",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-sightseeing.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "b746d0918170f50be05127e4c78786d4d48823dfb95434092cb3f221d5b5e650",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:warmup-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 16,
+        "printedPage": 1,
+        "section": "辅助示意图：warmup-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 16,
+        "printedPage": 1,
+        "owner": "hsk2-fltrp-2026:l01:warmup1",
+        "position": 4
+      },
+      "title": {
+        "zh": "辅助示意图 4",
+        "vi": "Hình minh họa hỗ trợ 4"
+      },
+      "alt": {
+        "zh": "情境4：三个人站在一起，中间的人以张开的手势指向旁边的人。",
+        "vi": "Tình huống 4: Ba người đứng cùng nhau; người ở giữa mở tay hướng về người bên cạnh."
+      },
+      "description": {
+        "zh": "三个人站在一起，中间的人以张开的手势指向旁边的人。",
+        "vi": "Ba người đứng cùng nhau; người ở giữa mở tay hướng về người bên cạnh."
+      },
+      "sceneKey": "introducing",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-introducing.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "609fab5340dcabd1482e2029565795660223301a924daecf5bf6f1ddf80164a4",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:comprehensive-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "section": "辅助示意图：comprehensive-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "owner": "hsk2-fltrp-2026:l01:section3",
+        "position": 1
+      },
+      "title": {
+        "zh": "辅助示意图 1",
+        "vi": "Hình minh họa hỗ trợ 1"
+      },
+      "alt": {
+        "zh": "情境1：一家人提着旅行包站在房车旁；箱包、车辆和同行人物同框。",
+        "vi": "Tình huống 1: Một gia đình mang túi du lịch đứng cạnh xe nhà di động; người, hành lý và xe ở cùng khung."
+      },
+      "description": {
+        "zh": "一家人提着旅行包站在房车旁；箱包、车辆和同行人物同框。",
+        "vi": "Một gia đình mang túi du lịch đứng cạnh xe nhà di động; người, hành lý và xe ở cùng khung."
+      },
+      "sceneKey": "family-road-trip",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-family-road-trip.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "c9a5d6b6f9987ad47ded824ee8a47358ef7dbe70ac3378334f25212505002129",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:comprehensive-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "section": "辅助示意图：comprehensive-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "owner": "hsk2-fltrp-2026:l01:section3",
+        "position": 2
+      },
+      "title": {
+        "zh": "辅助示意图 2",
+        "vi": "Hình minh họa hỗ trợ 2"
+      },
+      "alt": {
+        "zh": "情境2：一位妈妈端着餐盘，两个孩子在旁边；桌上有饭菜，妈妈朝餐桌示意。",
+        "vi": "Tình huống 2: Người mẹ cầm đĩa, hai con ở bên; bàn có thức ăn, mẹ ra hiệu về phía bàn."
+      },
+      "description": {
+        "zh": "一位妈妈端着餐盘，两个孩子在旁边；桌上有饭菜，妈妈朝餐桌示意。",
+        "vi": "Người mẹ cầm đĩa, hai con ở bên; bàn có thức ăn, mẹ ra hiệu về phía bàn."
+      },
+      "sceneKey": "family-meal",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-family-meal.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "647aacff83c95fd439228367bece2ad001e04d65af3b6931545819dfc608458b",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:comprehensive-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "section": "辅助示意图：comprehensive-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "owner": "hsk2-fltrp-2026:l01:section3",
+        "position": 3
+      },
+      "title": {
+        "zh": "辅助示意图 3",
+        "vi": "Hình minh họa hỗ trợ 3"
+      },
+      "alt": {
+        "zh": "情境3：两位旅客拉着箱子走向停在前方的飞机，保留人物、行李和飞机的方向关系。",
+        "vi": "Tình huống 3: Hai hành khách kéo va-li đi về phía máy bay trước mặt; giữ rõ quan hệ hướng đi."
+      },
+      "description": {
+        "zh": "两位旅客拉着箱子走向停在前方的飞机，保留人物、行李和飞机的方向关系。",
+        "vi": "Hai hành khách kéo va-li đi về phía máy bay trước mặt; giữ rõ quan hệ hướng đi."
+      },
+      "sceneKey": "boarding-plane",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-boarding-plane.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "a762a5e1c94897efb9a89448f1a9eb250f9f001bb70b3147e7d8d2d8e4842876",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:comprehensive-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "section": "辅助示意图：comprehensive-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 23,
+        "printedPage": 8,
+        "owner": "hsk2-fltrp-2026:l01:section3",
+        "position": 4
+      },
+      "title": {
+        "zh": "辅助示意图 4",
+        "vi": "Hình minh họa hỗ trợ 4"
+      },
+      "alt": {
+        "zh": "情境4：一位女子刚在床上坐起、伸展双臂；床边钟面明确显示7:00。",
+        "vi": "Tình huống 4: Một phụ nữ vừa ngồi dậy trên giường và duỗi tay; đồng hồ bên giường chỉ rõ 7:00."
+      },
+      "description": {
+        "zh": "一位女子刚在床上坐起、伸展双臂；床边钟面明确显示7:00。",
+        "vi": "Một phụ nữ vừa ngồi dậy trên giường và duỗi tay; đồng hồ bên giường chỉ rõ 7:00."
+      },
+      "sceneKey": "wake-seven",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-wake-seven.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "714ad2f3e3e6de08ce5656071bb4d30b494c248b40aa68cb320bca28048e727f",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:text1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 17,
+        "printedPage": 2,
+        "section": "辅助示意图：text1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 17,
+        "printedPage": 2,
+        "owner": "hsk2-fltrp-2026:l01:text1",
+        "position": 1
+      },
+      "title": {
+        "zh": "辅助示意图 1",
+        "vi": "Hình minh họa hỗ trợ 1"
+      },
+      "alt": {
+        "zh": "情境1：机场到达大厅，一人举手向两名刚到的旅客示意。",
+        "vi": "Tình huống 1: Sảnh đến sân bay, một người giơ tay ra hiệu cho hai hành khách vừa đến."
+      },
+      "description": {
+        "zh": "机场到达大厅，一人举手向两名刚到的旅客示意。",
+        "vi": "Sảnh đến sân bay, một người giơ tay ra hiệu cho hai hành khách vừa đến."
+      },
+      "sceneKey": "airport-welcome",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-airport-welcome.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "b2a673a10fb792727698f1a71deb8c6bd95878c0bb55799ba6bb9bbaa431ba06",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:text2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 19,
+        "printedPage": 4,
+        "section": "辅助示意图：text2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 19,
+        "printedPage": 4,
+        "owner": "hsk2-fltrp-2026:l01:text2",
+        "position": 1
+      },
+      "title": {
+        "zh": "辅助示意图 1",
+        "vi": "Hình minh họa hỗ trợ 1"
+      },
+      "alt": {
+        "zh": "情境1：一位司机与车内两位乘客交谈，方向盘和座椅提供情境，不描摹原照片人物。",
+        "vi": "Tình huống 1: Một tài xế trò chuyện với hai hành khách; vô-lăng và ghế thể hiện bối cảnh, không sao chép người trong ảnh gốc."
+      },
+      "description": {
+        "zh": "一位司机与车内两位乘客交谈，方向盘和座椅提供情境，不描摹原照片人物。",
+        "vi": "Một tài xế trò chuyện với hai hành khách; vô-lăng và ghế thể hiện bối cảnh, không sao chép người trong ảnh gốc."
+      },
+      "sceneKey": "car-conversation",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-car-conversation.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "0f3fdd53973bf745a0acbae056856c75c25805557bbcc7c0fa4b4b6348942509",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:text3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 20,
+        "printedPage": 5,
+        "section": "辅助示意图：text3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 20,
+        "printedPage": 5,
+        "owner": "hsk2-fltrp-2026:l01:text3",
+        "position": 1
+      },
+      "title": {
+        "zh": "辅助示意图 1",
+        "vi": "Hình minh họa hỗ trợ 1"
+      },
+      "alt": {
+        "zh": "情境1：车内乘客拿手机通话，窗框与座椅表示所在位置。",
+        "vi": "Tình huống 1: Hành khách trong xe gọi điện; khung cửa và ghế cho thấy bối cảnh."
+      },
+      "description": {
+        "zh": "车内乘客拿手机通话，窗框与座椅表示所在位置。",
+        "vi": "Hành khách trong xe gọi điện; khung cửa và ghế cho thấy bối cảnh."
+      },
+      "sceneKey": "phone-in-car",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-phone-in-car.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "39bb8accfb8fbce02c84afc4a2840647d8adebb3c6e13dcadc219593dd88ea97",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:text4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 22,
+        "printedPage": 7,
+        "section": "辅助示意图：text4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 22,
+        "printedPage": 7,
+        "owner": "hsk2-fltrp-2026:l01:text4",
+        "position": 1
+      },
+      "title": {
+        "zh": "辅助示意图 1",
+        "vi": "Hình minh họa hỗ trợ 1"
+      },
+      "alt": {
+        "zh": "情境1：酒店里的消息卡旁放一盘片好的烤鸭；消息正文仍用网页文本。",
+        "vi": "Tình huống 1: Thẻ tin nhắn trong khách sạn bên đĩa vịt quay thái lát; nội dung tin nhắn vẫn là văn bản web."
+      },
+      "description": {
+        "zh": "酒店里的消息卡旁放一盘片好的烤鸭；消息正文仍用网页文本。",
+        "vi": "Thẻ tin nhắn trong khách sạn bên đĩa vịt quay thái lát; nội dung tin nhắn vẫn là văn bản web."
+      },
+      "sceneKey": "duck-message",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-duck-message.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "9aac4d5260a1cfa29f7ee96b2409d69df80d38541ea57ffe7e1602e84c422c4d",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l01:illustration:culture",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 9,
+        "section": "辅助示意图：culture",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 24,
+        "printedPage": 9,
+        "owner": "hsk2-fltrp-2026:l01:culture",
+        "position": 1
+      },
+      "title": {
+        "zh": "辅助示意图 1",
+        "vi": "Hình minh họa hỗ trợ 1"
+      },
+      "alt": {
+        "zh": "情境1：分区展示薄饼、切片烤鸭、葱丝、黄瓜条和酱料；它是材料示意，不能冒充缺失的视频。",
+        "vi": "Tình huống 1: Các phần riêng gồm bánh mỏng, vịt quay thái lát, hành, dưa chuột và sốt; đây chỉ là sơ đồ nguyên liệu, không thay video còn thiếu."
+      },
+      "description": {
+        "zh": "分区展示薄饼、切片烤鸭、葱丝、黄瓜条和酱料；它是材料示意，不能冒充缺失的视频。",
+        "vi": "Các phần riêng gồm bánh mỏng, vịt quay thái lát, hành, dưa chuột và sốt; đây chỉ là sơ đồ nguyên liệu, không thay video còn thiếu."
+      },
+      "sceneKey": "duck-serving",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "displayRequirements": [
+        "Preserve item number and binding to the corresponding exercise.",
+        "Do not embed the correct vocabulary label or answer in the drawing.",
+        "Provide an equivalent description-based exercise for screen readers.",
+        "Use HTML text for question prompts; do not rasterize the entire page."
+      ],
+      "file": "illustrations/hsk2-l01-duck-serving.svg",
+      "creator": "Course content author, native SVG (2026-10-03)",
+      "assetSha256": "ab632e9d1aecf35fae3a3b52311f477576fcadcf0e2b68060d2a5d11723d24d3",
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "rights": "Original code-authored instructional schematic; no embedded textbook pixels, photos, external assets, or trademarks. Textbook task correspondence is metadata only.",
+      "authorVisualReview": {
+        "status": "passed",
+        "date": "2026-10-03",
+        "renderer": "MuPDF SVG rasterization; viewed all 26 diagrams, re-viewed changed diagrams",
+        "independentReview": "pending"
+      }
+    }
+  ],
+  "coverageReview": {
+    "author": "content author",
+    "date": "2026-10-03",
+    "method": "Fresh MuPDF rasterization and visual inspection of every page in this lesson; objective-answer PDF pages 1–2 visually inspected. Existing Chinese/Vietnamese/pinyin layers retained.",
+    "textbookPdfPages": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "answerPdfPages": [
+      1,
+      2
+    ],
+    "independentReview": "pending",
+    "uiVerification": "pending",
+    "originalHomeworkSeparated": true,
+    "homeworkCount": 30,
+    "officialAnswersOnlyWherePublished": true,
+    "limitations": [
+      "No full-textbook semantic completeness claim.",
+      "Open response references are editorial examples, not official answers.",
+      "No full semantic audio listening certification.",
+      "Culture video 1-1 is not in the supplied MP3 package and remains unavailable; no audio is substituted.",
+      "26 original SVG schematics were authored across the two pilots; source photo correspondence is conceptual, not a reproduction. Independent visual/teaching acceptance remains pending."
+    ],
+    "appendixPdfPages": [
+      156,
+      157,
+      158,
+      159,
+      160,
+      161
+    ],
+    "appendixStarNote": {
+      "zh": "* 表示本级超纲词；是教材正式收录的拓展词，不应删去。",
+      "vi": "Dấu * chỉ từ ngoài đề cương cấp này; vẫn là từ mở rộng được sách đưa vào, không nên bỏ."
+    },
+    "originalIllustrations": {
+      "count": 13,
+      "authorPixelReview": "passed",
+      "independentReview": "pending"
+    }
+  }
 }

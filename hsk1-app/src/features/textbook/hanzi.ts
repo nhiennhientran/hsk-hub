@@ -1,3 +1,4 @@
+import {courseAssetBase} from '../../services/content/asset-base.ts';
 import { bilingualText, setBilingual, type BilingualCopy } from '../../app/bilingual.ts';
 import { textbookCopy } from '../../app/i18n/textbook.ts';
 import { element } from './dom.ts';
@@ -20,7 +21,7 @@ const hanCharacters = (value: string | string[]) => [...new Set((Array.isArray(v
 async function loadCharacter(character: string, signal: AbortSignal): Promise<HanziData> {
   const cached = dataCache.get(character);
   if (cached) return cached;
-  const url = new URL(`course-assets/hanzi/${encodeURIComponent(character)}.json`, document.baseURI);
+  const url = new URL(`course-assets/hanzi/${encodeURIComponent(character)}.json`, courseAssetBase());
   const response = await fetch(url, {signal});
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const data: unknown = await response.json();

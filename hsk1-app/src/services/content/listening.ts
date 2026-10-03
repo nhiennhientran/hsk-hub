@@ -1,3 +1,4 @@
+import {courseAssetBase} from './asset-base.ts';
 import practice from '../../domain/practice/engine.js';
 import type { AudioRequest } from '../audio/index.ts';
 
@@ -111,7 +112,7 @@ async function fingerprint(value: Row, signal?: AbortSignal): Promise<void> {
 /** Validate only existing JSON metadata. No media extraction, re-timing or store is created. */
 export async function createListeningContent(catalogValue: unknown, mediaValue: unknown,
   audioURL: (trackId: string) => string = id => typeof document === 'undefined'
-    ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, document.baseURI).href,
+    ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, courseAssetBase()).href,
   signal?: AbortSignal): Promise<ListeningContent> {
   signal?.throwIfAborted();
   // Hash and expose the same snapshot even if a caller edits its inputs while

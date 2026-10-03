@@ -1,3 +1,4 @@
+import {courseAssetBase} from './asset-base.ts';
 import content from '../../../content/homework30-bank.json' with { type: 'json' };
 import type { ChoiceQuestion, SortQuestion, TranslationQuestion, HomeworkLesson, QuestionSource } from './homework.ts';
 import { HOMEWORK30_VERSION, HOMEWORK30_PARTS, HOMEWORK30_COUNTS } from '../../domain/homework30/engine.ts';
@@ -46,6 +47,6 @@ export function validateHomework30Bank(value: unknown): readonly Homework30Lesso
 let bank: readonly Homework30Lesson[] | undefined;
 export function getHomework30Bank(): readonly Homework30Lesson[] { return bank ??= validateHomework30Bank(content); }
 export async function loadHomework30Bank(signal: AbortSignal): Promise<readonly Homework30Lesson[]> { signal.throwIfAborted(); return getHomework30Bank(); }
-export function homework30Audio(question: Homework30ListeningQuestion, base = document.baseURI): AudioRequest {
+export function homework30Audio(question: Homework30ListeningQuestion, base = courseAssetBase()): AudioRequest {
   return { url: new URL(`course-assets/audio/${question.audio.track}.mp3`, base).href, start: question.audio.start, end: question.audio.end, label: `第${question.lesson}课 · Bài ${question.lesson} · ${question.prompt}`, sourceKind: 'segment' };
 }

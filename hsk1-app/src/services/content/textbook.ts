@@ -1,3 +1,4 @@
+import {courseAssetBase} from './asset-base.ts';
 import type { AudioRequest } from '../audio/index.ts';
 
 export interface BookSource {
@@ -232,7 +233,7 @@ function freeze<T>(value: T): T {
 }
 
 export function createTextbookContent(bookValue: unknown, mediaValue: unknown, catalogValue: unknown,
-  audioURL: (trackId: string) => string = id => typeof document === 'undefined' ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, document.baseURI).href): TextbookContent {
+  audioURL: (trackId: string) => string = id => typeof document === 'undefined' ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, courseAssetBase()).href): TextbookContent {
   const lessons = freeze(structuredClone(validateTextbook(bookValue)));
   const media = freeze(structuredClone(validateMedia(mediaValue)));
   if (!row(catalogValue) || catalogValue.schemaVersion !== 1 || !commitHash(catalogValue.baseline) || !Array.isArray(catalogValue.vocabulary) || catalogValue.vocabulary.length !== 344) fail('Chỉ mục nghĩa từ không hợp lệ.');

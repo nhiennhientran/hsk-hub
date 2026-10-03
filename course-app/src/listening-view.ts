@@ -1,0 +1,309 @@
+import { el, button, copy } from "./dom.ts";
+import type { Lesson, Question, Copy } from "./types.ts";
+import type { State, ListeningRound } from "./state.ts";
+import { grade, recordAttempt } from "./state.ts";
+export function mountListening(
+  host: HTMLElement,
+  lessons: Lesson[],
+  c: {
+    state(): State;
+    edit(fn: (s: State) => void): void;
+    flush(): Promise<boolean>;
+    play(q: Question): Promise<boolean>;
+    stop(): void;
+    message(text: Copy): void;
+  },
+): () => void {
+  const root = el("article", undefined, "listening-module");
+  root.append(
+    el("h1", copy("听一题，懂一句", "Nghe từng câu, hiểu từng ý")),
+    el(
+      "p",
+      copy(
+        "选择任意课程，自由练听力。提交本题后才展开原文与解析。",
+        "Chọn bài tùy ý để luyện nghe. Nguyên văn và giải thích chỉ hiện sau khi nộp từng câu.",
+      ),
+    ),
+  );
+  host.append(root);
+  const bank = new Map(
+      lessons.flatMap((l) =>
+        l.listening.map((q) => [q.id, { q, lesson: l }] as const),
+      ),
+    ),
+    selection = new Set(
+      c.state().listeningRound?.selected ?? lessons.map((l) => l.number),
+    );
+  const settings = el("details", undefined, "lesson-selection");
+  settings.append(
+    el("summary", copy("选择课程、题数与错题", "Chọn bài, số câu & câu sai")),
+  );
+  const choices = el("div", undefined, "lesson-choices");
+  for (const l of lessons) {
+    const label = el("label"),
+      input = el("input");
+    input.type = "checkbox";
+    input.checked = selection.has(l.number);
+    input.onchange = () =>
+      input.checked ? selection.add(l.number) : selection.delete(l.number);
+    label.append(input, el("span", `第${l.number}课 · Bài ${l.number}`));
+    choices.append(label);
+  }
+  settings.append(choices);
+  const count = el("select");
+  count.setAttribute("aria-label", "题数 · Số câu");
+  for (const n of [5, 10, "all"]) {
+    const o = el("option", n === "all" ? "全部 · Tất cả" : `${n}题 · ${n} câu`);
+    o.value = String(n);
+    count.append(o);
+  }
+  count.value = String(c.state().listeningRound?.limit ?? 5);
+  const wrong = el("input");
+  wrong.type = "checkbox";
+  wrong.checked = c.state().listeningRound?.wrongOnly ?? false;
+  const wrongLabel = el("label", copy("只练错题", "Chỉ luyện câu sai"));
+  wrongLabel.prepend(wrong);
+  settings.append(count, wrongLabel);
+  root.append(settings);
+  let round: ListeningRound | null = c.state().listeningRound ?? null;
+  let retired = false,
+    playing = false;
+  const work = el("section"),
+    roundStatus = el("p");
+  roundStatus.setAttribute("role", "status");
+  root.append(roundStatus, work);
+  const save = () => {
+    const current = structuredClone(round);
+    c.edit((s) => {
+      s.listeningRound = current;
+    });
+  };
+  const start = button(
+    copy(
+      round ? "按当前设置开始新一组" : "开始听力",
+      round ? "Bắt đầu nhóm mới" : "Bắt đầu luyện nghe",
+    ),
+    async () => {
+      if (!selection.size) {
+        c.message(copy("请至少选择一课", "Hãy chọn ít nhất một bài"));
+        return;
+      }
+      let queue = [...bank.values()]
+        .filter(
+          ({ q, lesson }) =>
+            selection.has(lesson.number) &&
+            (!wrong.checked ||
+              c.state().listening[q.id + ":individual"]?.latest?.correct === 0),
+        )
+        .map(({ q }) => q.id);
+      for (let i = queue.length - 1; i > 0; i--) {
+        const values = new Uint32Array(1);
+        crypto.getRandomValues(values);
+        const j = values[0]! % (i + 1);
+        [queue[i], queue[j]] = [queue[j]!, queue[i]!];
+      }
+      if (!queue.length) {
+        c.message(
+          copy("这个范围还没有可练的题目", "Phạm vi này chưa có câu để luyện"),
+        );
+        return;
+      }
+      if (count.value !== "all") queue = queue.slice(0, Number(count.value));
+      c.stop();
+      round = {
+        selected: [...selection],
+        limit: count.value === "all" ? "all" : (Number(count.value) as 5 | 10),
+        wrongOnly: wrong.checked,
+        queue,
+        index: 0,
+        answers: {},
+        submitted: {},
+        playCounts: {},
+        startedAt: Date.now(),
+      };
+      save();
+      if (await c.flush()) {
+        settings.open = false;
+        draw();
+      }
+    },
+    "primary",
+  );
+  settings.append(start);
+  if (!round) settings.open = true;
+  function draw() {
+    if (retired) return;
+    work.replaceChildren();
+    if (!round) {
+      roundStatus.replaceChildren(
+        el("span", copy("选好课程后开始", "Chọn bài rồi bắt đầu")),
+      );
+      return;
+    }
+    const id = round.queue[round.index],
+      entry = id ? bank.get(id) : undefined;
+    if (!entry) {
+      roundStatus.replaceChildren(
+        el(
+          "span",
+          copy(
+            "这组内容已经变更，请开始新一组；历史提交仍保留。",
+            "Nội dung nhóm này đã thay đổi. Hãy bắt đầu nhóm mới; bản ghi đã nộp vẫn được giữ.",
+          ),
+        ),
+      );
+      return;
+    }
+    const { q, lesson } = entry,
+      attempt = round.submitted[id!],
+      question = attempt?.questions?.[0] ?? q;
+    roundStatus.textContent = `${round.index + 1} / ${round.queue.length} · 第${lesson.number}课 / Bài ${lesson.number} · 已提交 ${Object.keys(round.submitted).length} / ${round.queue.length}`;
+    const card = el("div", undefined, "activity-card"),
+      title = el("h2", question.prompt),
+      plays = el(
+        "p",
+        copy(
+          `已成功播放${round.playCounts[id!] ?? 0}次`,
+          `Đã phát thành công ${round.playCounts[id!] ?? 0} lần`,
+        ),
+      );
+    card.append(title);
+    const play = button(copy("播放原音", "Phát âm thanh gốc"), async () => {
+      if (playing || retired || !round) return;
+      playing = true;
+      play.disabled = true;
+      const activeRound = round,
+        activeId = id!;
+      const ok = await c.play(question);
+      playing = false;
+      if (retired) return;
+      play.disabled = false;
+      if (ok && round === activeRound) {
+        round.playCounts[activeId] = (round.playCounts[activeId] ?? 0) + 1;
+        save();
+        plays.replaceChildren(
+          el(
+            "span",
+            copy(
+              `已成功播放${round.playCounts[activeId]}次`,
+              `Đã phát thành công ${round.playCounts[activeId]} lần`,
+            ),
+          ),
+        );
+      }
+    });
+    card.append(play, plays);
+    const field = el("fieldset"),
+      legend = el("legend", copy("选择答案", "Chọn đáp án"));
+    field.append(legend);
+    for (const [index, option] of (question.options ?? []).entries()) {
+      const label = el("label", undefined, "choice-option"),
+        radio = el("input");
+      radio.type = "radio";
+      radio.name = id!;
+      radio.value = String(index);
+      radio.checked = round.answers[id!] === index;
+      radio.disabled = !!attempt;
+      radio.onchange = () => {
+        if (round) {
+          round.answers[id!] = index;
+          save();
+        }
+      };
+      label.append(radio, el("span", option));
+      field.append(label);
+    }
+    card.append(field);
+    const submit = button(
+      copy("提交本题", "Nộp câu này"),
+      async () => {
+        if (!round || round.answers[id!] === undefined) {
+          c.message(copy("请先选择答案", "Hãy chọn đáp án trước"));
+          return;
+        }
+        const a = grade(
+          [question],
+          { [id!]: round.answers[id!]! },
+          Date.now(),
+          c.state().profile,
+        );
+        round.submitted[id!] = a;
+        c.edit((s) => {
+          recordAttempt(s, id! + ":individual", a, "listening");
+          s.listeningRound = structuredClone(round);
+        });
+        if (await c.flush()) draw();
+      },
+      "primary",
+    );
+    submit.disabled = !!attempt;
+    card.append(submit);
+    if (attempt) {
+      const feedback = el("section", undefined, "activity-feedback");
+      feedback.append(
+        el(
+          "h3",
+          copy(
+            attempt.correct ? "回答正确" : "再听一次，看看线索",
+            attempt.correct ? "Trả lời đúng" : "Nghe lại và xem gợi ý",
+          ),
+        ),
+        el(
+          "p",
+          copy(
+            "正确答案：" +
+              (question.options?.[question.answer as number] ?? ""),
+            "Đáp án: " + (question.options?.[question.answer as number] ?? ""),
+          ),
+        ),
+      );
+      if (question.explanation) feedback.append(el("p", question.explanation));
+      const text = lesson.texts.find(
+        (t) => t.audioTrack === question.audioTrack,
+      );
+      if (text) {
+        feedback.append(el("h3", copy("听力原文", "Nguyên văn bài nghe")));
+        for (const line of text.lines)
+          feedback.append(el("p", line.zh, "chinese-line"), el("p", line.vi));
+      }
+      card.append(feedback);
+    }
+    const pager = el("nav", undefined, "mixed-pager");
+    const previous = button(copy("上一题", "Câu trước"), () => {
+        if (round && round.index > 0) {
+          c.stop();
+          round.index--;
+          save();
+          draw();
+        }
+      }),
+      next = button(copy("下一题", "Câu tiếp"), () => {
+        if (round && round.index + 1 < round.queue.length) {
+          c.stop();
+          round.index++;
+          save();
+          draw();
+        }
+      });
+    previous.disabled = round.index === 0;
+    next.disabled = round.index + 1 === round.queue.length;
+    pager.append(previous, next);
+    work.append(card, pager);
+    if (Object.keys(round.submitted).length === round.queue.length)
+      work.append(
+        el(
+          "p",
+          copy(
+            `本组完成 · ${Object.values(round.submitted).reduce((n, a) => n + (a.correct ?? 0), 0)}/${round.queue.length}`,
+            `Đã hoàn thành nhóm · ${Object.values(round.submitted).reduce((n, a) => n + (a.correct ?? 0), 0)}/${round.queue.length}`,
+          ),
+        ),
+      );
+  }
+  draw();
+  return () => {
+    retired = true;
+    c.stop();
+    root.remove();
+  };
+}

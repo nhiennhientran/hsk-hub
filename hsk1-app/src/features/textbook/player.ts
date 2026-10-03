@@ -18,7 +18,8 @@ export function mountPlayer(host: HTMLElement, audio: AudioService, signal: Abor
   const rateLabel = element('label', copy.rate); const rate = element('select'); rate.id = 'audio-rate';
   for (const value of AUDIO_RATES) { const option = element('option', `${value}×`); option.value = String(value); rate.append(option); }
   rate.addEventListener('change', () => audio.setRate(Number(rate.value)), { signal }); rateLabel.append(rate);
-  actions.append(pause, resume, replay, stop, rateLabel); panel.append(status, position, actions); host.append(panel);
+  const seek=element('input');seek.type='range';seek.step='0.1';seek.setAttribute('aria-label','播放位置 · Vị trí phát');seek.addEventListener('input',()=>audio.seek(Number(seek.value)),{signal});
+  actions.append(seek,pause, resume, replay, stop, rateLabel); panel.append(status, position, actions); host.append(panel);
   function update(): void {
     const state = audio.snapshot(); panel.dataset.state = state.status;
     const label = textbookIssue(state.issue, audioStatusCopy[state.status]);
@@ -29,6 +30,7 @@ export function mountPlayer(host: HTMLElement, audio: AudioService, signal: Abor
     if (state.sourceKind === 'tts') setBilingual(position, copy.rateHint);
     else if (state.total > 1) setBilingual(position, copy.position(state.index, state.total));
     else position.replaceChildren();
+    const start=state.request?.start??0,end=state.request?.end??state.duration;seek.min=String(start);seek.max=String(end||1);seek.value=String(state.currentTime);seek.disabled=!end||state.sourceKind==='tts';if(end&&state.sourceKind!=='tts')position.append(element('span',` · ${Math.max(0,state.currentTime-start).toFixed(1)} / ${(end-start).toFixed(1)}s`));
     rate.value = String(state.rate); pause.disabled = state.status !== 'playing';
     resume.disabled = state.status !== 'paused'; replay.disabled = ['idle', 'loading'].includes(state.status);
     stop.disabled = state.status === 'idle';

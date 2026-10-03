@@ -19,6 +19,7 @@ export type AudioSnapshot = Readonly<{
   issue: string | null;
   rate: number;
   currentTime: number;
+  duration: number;
   request: AudioRequest | null;
   index: number;
   total: number;
@@ -67,6 +68,7 @@ export interface AudioService {
   replay(): Promise<PlaybackResult>;
   stop(): void;
   setRate(rate: number): void;
+  seek(time:number):boolean;
   snapshot(): AudioSnapshot;
   subscribe(listener: () => void): () => void;
   dispose(): void;
@@ -105,7 +107,7 @@ export function createAudioService(options: {
   const clearTimer = options.clearTimer ?? (id => clearTimeout(id));
   const listeners = new Set<() => void>();
   let state: AudioSnapshot = { status: 'idle', label: '', sourceKind: null, issue: null,
-    rate: 1, currentTime: 0, request: null, index: 0, total: 0 };
+    rate: 1, currentTime: 0, duration:0, request: null, index: 0, total: 0 };
   let generation = 0;
   let active: Active | undefined;
   let boundaryTimer: ReturnType<typeof setTimeout> | undefined;
@@ -274,6 +276,7 @@ export function createAudioService(options: {
           fail(request, 'Bản ghi ngắn hơn đoạn âm thanh đã chọn. Hãy thử lại.');
           return;
         }
+        if(durationKnown)publish({duration:audio.duration});
         if (positioned) return;
         // An unbounded original may already be playing when WebKit supplies
         // its first usable duration. Preserve that real clock, without replaying
@@ -287,7 +290,7 @@ export function createAudioService(options: {
     };
     publish({ status: 'loading', label: track.label, request: track,
       sourceKind: track.sourceKind ?? (track.start !== undefined || track.end !== undefined ? 'segment' : 'original'),
-      issue: null, currentTime: track.start ?? 0, index: request.index + 1, total: request.requests.length });
+      issue: null, duration:0, currentTime: track.start ?? 0, index: request.index + 1, total: request.requests.length });
     if (!current(request)) return;
     listen(audio, 'loadedmetadata', position, request.trackCleanups);
     listen(audio, 'durationchange', position, request.trackCleanups);
@@ -502,7 +505,13 @@ export function createAudioService(options: {
     audio.removeAttribute('src');
     audio.load();
     publish({ status: 'idle', label: '', sourceKind: null, issue: null,
-      request: null, currentTime: 0, index: 0, total: 0 });
+      request: null, currentTime: 0, duration:0, index: 0, total: 0 });
+  }
+  function seek(time:number):boolean {
+    if(disposed||!active?.requests||!state.request||!Number.isFinite(time)||!['playing','paused','ended'].includes(state.status))return false;
+    const start=state.request.start??0,end=state.request.end??state.duration;
+    if(!Number.isFinite(end)||end<=start)return false;
+    try{audio.currentTime=Math.max(start,Math.min(time,end));publish({currentTime:audio.currentTime});if(state.status==='playing')scheduleBoundary(active);return true}catch{return false}
   }
   function setRate(rate: number): void {
     if (disposed || !AUDIO_RATES.some(value => value === rate)) return;
@@ -522,7 +531,7 @@ export function createAudioService(options: {
   }
   return {
     play: (request, playbackOptions) => playSequence([request], playbackOptions), playSequence,
-    speak, pause, resume, replay, stop, setRate,
+    speak, pause, resume, replay, stop, setRate, seek,
     snapshot: () => ({ ...state, request: state.request ? { ...state.request } : null }),
     subscribe: listener => { if (disposed) return () => {}; listeners.add(listener); return () => listeners.delete(listener); },
     dispose,

@@ -1,0 +1,591 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> hsk-shared-course-app@1.0.0 build
+> npm run content:check && npm run check && vite build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> hsk-shared-course-app@1.0.0 content:check
+> node tools/validate-content.mjs
+
+{
+  "mode": "release",
+  "totals": {
+    "lessons": 33,
+    "words": 749,
+    "texts": 132,
+    "grammar": 108,
+    "homework": 990,
+    "listening": 132,
+    "sections": 162
+  },
+  "lessons": [
+    {
+      "id": "hsk2-fltrp-2026:l01",
+      "level": 2,
+      "number": 1,
+      "title": {
+        "zh": "她请我们吃了北京烤鸭",
+        "vi": "Cô ấy đã mời chúng tôi ăn vịt quay Bắc Kinh",
+        "py": "Tā qǐng wǒmen chīle Běijīng Kǎoyā"
+      },
+      "words": 15,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "174d242ccf5b55cbfcc3f423f4479483e9cf970921dab36259c37c93df6c5ba9"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l02",
+      "level": 2,
+      "number": 2,
+      "title": {
+        "zh": "还是打车去北大吧",
+        "vi": "Hay là đi taxi đến Đại học Bắc Kinh nhé",
+        "py": "Háishi dǎchē qù Běidà ba"
+      },
+      "words": 17,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "42efd0c5b5659a4013e4816499ad278836b7a5ae724fcb5ca971b626f4dfcdd8"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l03",
+      "level": 2,
+      "number": 3,
+      "title": {
+        "zh": "我想去西安旅游",
+        "vi": "Tôi muốn đi du lịch Tây An",
+        "py": "Wǒ xiǎng qù Xī'ān lǚyóu"
+      },
+      "words": 15,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "8106b732fe9fd9b8c06494a4276306e1a4ea55f6467ca9a1cf217e144447063d"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04",
+      "level": 2,
+      "number": 4,
+      "title": {
+        "zh": "你穿红色的很好看",
+        "vi": "Bạn mặc màu đỏ rất đẹp",
+        "py": "Nǐ chuān hóngsè de hěn hǎokàn"
+      },
+      "words": 16,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "7c3497a4b91ff53206f20bf0b4e80b44b8c6529a4b39738b3268340cf050385f"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05",
+      "level": 2,
+      "number": 5,
+      "title": {
+        "zh": "第一次去中国朋友家",
+        "vi": "Lần đầu đến nhà bạn người Trung Quốc",
+        "py": "Dì-yī cì qù Zhōngguó péngyou jiā"
+      },
+      "words": 20,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "5da226c23422b228373414ee5c126533da9adde3174dc2ebe33db239762213ee"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06",
+      "level": 2,
+      "number": 6,
+      "title": {
+        "zh": "小雪，生日快乐！",
+        "vi": "Tiểu Tuyết, chúc mừng sinh nhật!",
+        "py": "Xiǎoxuě, shēngrì kuàilè!"
+      },
+      "words": 15,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "720606ebf5b8dd24ef338326b3233a1da4185ffecccb923112ff25ae052015d5"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l07",
+      "level": 2,
+      "number": 7,
+      "title": {
+        "zh": "他篮球打得很好",
+        "vi": "Anh ấy chơi bóng rổ rất giỏi",
+        "py": "Tā lánqiú dǎ de hěn hǎo"
+      },
+      "words": 20,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "f7c90af0deda392b0bb68f017a1c6bbd5111dc92edba955a69243e67dc8ac51a"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l08",
+      "level": 2,
+      "number": 8,
+      "title": {
+        "zh": "虽然你忘了，但是我记得",
+        "vi": "Dù em quên nhưng anh vẫn nhớ",
+        "py": "Suīrán nǐ wàng le, dànshì wǒ jìde"
+      },
+      "words": 17,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "52838966b10600d641fc7d0b9d13b2d5f592381ae92cb35309e703f0288d5a84"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l09",
+      "level": 2,
+      "number": 9,
+      "title": {
+        "zh": "我去买杯奶茶",
+        "vi": "Tôi đi mua một cốc trà sữa",
+        "py": "Wǒ qù mǎi bēi nǎichá"
+      },
+      "words": 13,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "7688c20750c6de2e42c1490c08ad2f0c8a3e5f176e52e6df5864b90299096d51"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10",
+      "level": 2,
+      "number": 10,
+      "title": {
+        "zh": "就要考试了",
+        "vi": "Sắp thi rồi",
+        "py": "Jiù yào kǎoshì le"
+      },
+      "words": 15,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "82c8c636d874a65ab2a7d8a827e94a39cbc9550e91cedc903587f6287fd2160c"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11",
+      "level": 2,
+      "number": 11,
+      "title": {
+        "zh": "我最喜欢吃中国菜",
+        "vi": "Tôi thích ăn món Trung Quốc nhất",
+        "py": "Wǒ zuì xǐhuan chī Zhōngguó cài"
+      },
+      "words": 13,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "00649e169416b6c6601388582e7a8ba74753f6a83118041aebff4c65e59b73c4"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12",
+      "level": 2,
+      "number": 12,
+      "title": {
+        "zh": "这里比北京冷多了",
+        "vi": "Ở đây lạnh hơn Bắc Kinh nhiều",
+        "py": "Zhèlǐ bǐ Běijīng lěngduō le"
+      },
+      "words": 11,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "5196c717cdb0f188c0d893667fcaa89c15ea44ed63faacefac07a185812d46ca"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l13",
+      "level": 2,
+      "number": 13,
+      "title": {
+        "zh": "我们爱上中文课",
+        "vi": "Chúng tôi thích học tiết tiếng Trung",
+        "py": "Wǒmen ài shàng Zhōngwén kè"
+      },
+      "words": 13,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "6a5bf4ef2b7246bc021ecd926a17c2de1637a71f95207e490b3fd18aae368554"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l14",
+      "level": 2,
+      "number": 14,
+      "title": {
+        "zh": "一个人过年多没意思啊",
+        "vi": "Ăn Tết một mình buồn biết bao",
+        "py": "Yí gè rén guònián duō méi yìsi a"
+      },
+      "words": 14,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "98b476edfe7237e591006f76b97ba273a076d6bf92d4ea5df1f52b6d358d4ede"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15",
+      "level": 2,
+      "number": 15,
+      "title": {
+        "zh": "我想再去一次中国",
+        "vi": "Tôi muốn đến Trung Quốc thêm một lần nữa",
+        "py": "Wǒ xiǎng zài qù yí cì Zhōngguó"
+      },
+      "words": 12,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "c1bae766456aea0f136dd146df6b5b1218ec30f28fec14e68a7b2fe1a8054503"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l01",
+      "level": 3,
+      "number": 1,
+      "title": {
+        "zh": "我们去机场接你们",
+        "vi": "Chúng tôi sẽ ra sân bay đón các bạn",
+        "py": "Wǒmen qù jīchǎng jiē nǐmen"
+      },
+      "words": 27,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "c88761ac2cc1b6f5effaf30095fca3866889b99490dd33e2755f0bbaa6579fa6"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02",
+      "level": 3,
+      "number": 2,
+      "title": {
+        "zh": "你们想吃什么就点什么",
+        "vi": "Các bạn muốn ăn gì thì gọi món đó",
+        "py": "Nǐmen xiǎng chī shénme jiù diǎn shénme"
+      },
+      "words": 30,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "1b9837df972fb34c314ca0c11a8a8e7f1c0f5d83e376a9a1f36e4337c1fecd4f"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03",
+      "level": 3,
+      "number": 3,
+      "title": {
+        "zh": "这个小区挺好的",
+        "vi": "Khu dân cư này khá tốt",
+        "py": "Zhè ge xiǎoqū tǐng hǎo de"
+      },
+      "words": 27,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "1a4bfce63c8739d412f676ed5d1b080bc0beb642d98f95ba69f44941b664b3c8"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04",
+      "level": 3,
+      "number": 4,
+      "title": {
+        "zh": "这家宾馆跟别的都不一样",
+        "vi": "Khách sạn này khác hẳn những nơi khác",
+        "py": "Zhè jiā bīnguǎn gēn biéde dōu bù yíyàng"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "46d69e3855dacfae167a9280d3f740af1ae9700c8f1531f811b0c9fccb2ad295"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l05",
+      "level": 3,
+      "number": 5,
+      "title": {
+        "zh": "这样的照片才好看",
+        "vi": "Ảnh như thế này mới đẹp",
+        "py": "Zhèyàng de zhàopiàn cái hǎokàn"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "22bf424d4cb4318099ea5fe16f05c9b423963dda48232dfb45640d7600b026e7"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l06",
+      "level": 3,
+      "number": 6,
+      "title": {
+        "zh": "高铁上还可以点外卖",
+        "vi": "Trên tàu cao tốc còn có thể gọi đồ ăn giao tận nơi",
+        "py": "Gāotiě shàng hái kěyǐ diǎn wàimài"
+      },
+      "words": 31,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "89dc63338034d05953cec76358f773ad65d6ad02292df8b7fa20abc9b2fed9d6"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l07",
+      "level": 3,
+      "number": 7,
+      "title": {
+        "zh": "那条裙子比短裤更好看",
+        "vi": "Chiếc váy kia đẹp hơn quần soóc",
+        "py": "Nà tiáo qúnzi bǐ duǎnkù gèng hǎokàn"
+      },
+      "words": 30,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "60ee77860f50cba711ba5e957888f86a4c1c73d5f99a42c35b26eeea4102c575"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l08",
+      "level": 3,
+      "number": 8,
+      "title": {
+        "zh": "今天我出院了",
+        "vi": "Hôm nay tôi xuất viện",
+        "py": "Jīntiān wǒ chūyuàn le"
+      },
+      "words": 31,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "0b1aaa3edd20093f73f3db9734d75986967a495a8fa20d32d4287d184df81366"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09",
+      "level": 3,
+      "number": 9,
+      "title": {
+        "zh": "打不好没关系",
+        "vi": "Chơi chưa tốt cũng không sao",
+        "py": "Dǎ bu hǎo méi guānxi"
+      },
+      "words": 33,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "b9c0abc960bc7d31c6e059695184955501d8c89ee6238f76d15abee9bee93df0"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l10",
+      "level": 3,
+      "number": 10,
+      "title": {
+        "zh": "你明天再把书还给我",
+        "vi": "Ngày mai bạn hãy trả sách cho tôi",
+        "py": "Nǐ míngtiān zài bǎ shū huán gěi wǒ"
+      },
+      "words": 33,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "a43e5f2b020690d52b3dce0c1119dc5897eb68efe6a5c175cb22d66a38a7fa33"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11",
+      "level": 3,
+      "number": 11,
+      "title": {
+        "zh": "看来我没办法解决这个问题",
+        "vi": "Xem ra tôi không có cách giải quyết vấn đề này",
+        "py": "Kànlái wǒ méi bànfǎ jiějué zhège wèntí"
+      },
+      "words": 29,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "3410c84ed3d532f1fe9c5c39d0b5b1ffe571b2127e47f7c299beef7386d2ac8a"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l12",
+      "level": 3,
+      "number": 12,
+      "title": {
+        "zh": "这个季节天气变化很快",
+        "vi": "Mùa này thời tiết thay đổi rất nhanh",
+        "py": "Zhège jìjié tiānqì biànhuà hěn kuài"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "51ff6e46fc9a45728917e98de11ce92ba21c4f5f1ab4b91cdbbf717e0c5a7631"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l13",
+      "level": 3,
+      "number": 13,
+      "title": {
+        "zh": "我的新邻居来自英国",
+        "vi": "Hàng xóm mới của tôi đến từ Anh",
+        "py": "Wǒ de xīn línjū láizì Yīngguó"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "a8c5869c9243bb03be2e9350239ebfe827d60efe6e514f4bce9cf419c5e40024"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l14",
+      "level": 3,
+      "number": 14,
+      "title": {
+        "zh": "这本书被别人借走了",
+        "vi": "Cuốn sách này đã được người khác mượn rồi",
+        "py": "Zhè běn shū bèi biérén jiè zǒu le"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "d7af8ae062df0908dca299693a354d6d0d222a18de411697c83a6ad9346f27e6"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l15",
+      "level": 3,
+      "number": 15,
+      "title": {
+        "zh": "我是半个南京人",
+        "vi": "Tôi có thể coi là nửa người Nam Kinh",
+        "py": "Wǒ shì bàn ge Nánjīngrén"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "d67983e936c976bff80eddece26eb5be2ce269f8da064a949c652da7eec9f0ae"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16",
+      "level": 3,
+      "number": 16,
+      "title": {
+        "zh": "我听说有的熊猫出国了",
+        "vi": "Tôi nghe nói có gấu trúc đã ra nước ngoài",
+        "py": "Wǒ tīngshuō yǒude xióngmāo chū guó le"
+      },
+      "words": 26,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "de2ff99c21709ea4320339fc589af5cd2dde6a89a9a7262f484df02efc51463f"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l17",
+      "level": 3,
+      "number": 17,
+      "title": {
+        "zh": "我要多向认真的人学习",
+        "vi": "Tôi phải học hỏi nhiều hơn từ những người cẩn thận",
+        "py": "Wǒ yào duō xiàng rènzhēn de rén xuéxí"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "4811c3cdea5d3c0dc9a7728b5dd38d751a3c37c5eb074d17c45f2ede26e7e3ea"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18",
+      "level": 3,
+      "number": 18,
+      "title": {
+        "zh": "我学会了包饺子",
+        "vi": "Tôi đã học được cách gói sủi cảo",
+        "py": "Wǒ xuéhuì le bāo jiǎozi"
+      },
+      "words": 30,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "064c5dc0feb7a70857befe12417540f8ef612b7d019ec690d1e5fe0fb7f36607"
+    }
+  ],
+  "lexicons": [
+    {
+      "courseId": "hsk2-fltrp-2026",
+      "counts": {
+        "sourceRecords": 226,
+        "senses": 226,
+        "chineseForms": 209,
+        "verifiedMerges": 0
+      },
+      "sha256": "fe9e1342d8f6729330f538078543701898fa90388094bc714a5ecd1b3c398458"
+    },
+    {
+      "courseId": "hsk3-fltrp-2026",
+      "counts": {
+        "sourceRecords": 523,
+        "senses": 523,
+        "chineseForms": 487,
+        "verifiedMerges": 0
+      },
+      "sha256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3"
+    }
+  ],
+  "issues": []
+}
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> hsk-shared-course-app@1.0.0 check
+> tsc --noEmit
+
+vite v8.3.2 building client environment for production...
+transforming...
+✓ 52 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                      0.45 kB │ gzip:  0.33 kB
+dist/content-manifest.json          53.70 kB │ gzip: 14.30 kB
+dist/assets/index-CrsSuqGu.css      18.47 kB │ gzip:  4.70 kB
+dist/assets/lesson-01-CZMllnAG.js   48.32 kB │ gzip: 13.09 kB
+dist/assets/lesson-04-C786PgqZ.js   49.22 kB │ gzip: 12.92 kB
+dist/assets/lesson-07-5aB1DaOx.js   49.48 kB │ gzip: 12.65 kB
+dist/assets/lesson-10-CuyRmN_V.js   49.71 kB │ gzip: 13.64 kB
+dist/assets/lesson-03-C2GvziRz.js   50.30 kB │ gzip: 13.59 kB
+dist/assets/lesson-02-DrQHk3rw.js   50.37 kB │ gzip: 13.30 kB
+dist/assets/lesson-13-D1Nsh94T.js   50.40 kB │ gzip: 14.32 kB
+dist/assets/lesson-14-Bq2HvBvn.js   50.93 kB │ gzip: 14.72 kB
+dist/assets/lesson-11-D4rZPGBB.js   51.62 kB │ gzip: 14.13 kB
+dist/assets/lesson-08-Gu3kgU-A.js   52.58 kB │ gzip: 14.47 kB
+dist/assets/lesson-12-F-Kt3ut2.js   52.82 kB │ gzip: 14.62 kB
+dist/assets/lesson-05-L2eULTQW.js   56.43 kB │ gzip: 15.52 kB
+dist/assets/lesson-15-BK0AeZkM.js   56.54 kB │ gzip: 15.51 kB
+dist/assets/lesson-06-CWCnH2pQ.js   56.89 kB │ gzip: 15.51 kB
+dist/assets/lesson-04-3V2R5M0W.js   59.09 kB │ gzip: 15.99 kB
+dist/assets/lesson-14-CvzB6jq7.js   59.54 kB │ gzip: 16.46 kB
+dist/assets/lesson-09-CuH-gZTU.js   60.31 kB │ gzip: 16.56 kB
+dist/assets/lesson-13-9kw6gs_A.js   61.26 kB │ gzip: 17.25 kB
+dist/assets/lesson-01-DdgbX36y.js   62.02 kB │ gzip: 17.10 kB
+dist/assets/lesson-17-C6FKIUKs.js   63.16 kB │ gzip: 17.51 kB
+dist/assets/lesson-05-C7gtDgc4.js   63.61 kB │ gzip: 17.42 kB
+dist/assets/lesson-02-B9N9GytJ.js   64.36 kB │ gzip: 17.61 kB
+dist/assets/lesson-11-DOVD04uW.js   64.47 kB │ gzip: 17.54 kB
+dist/assets/lesson-10-Dvtf8ub8.js   64.73 kB │ gzip: 17.67 kB
+dist/assets/lesson-16-CD-_wlwV.js   65.70 kB │ gzip: 18.32 kB
+dist/assets/lesson-03-CdyNGRzB.js   66.39 kB │ gzip: 17.76 kB
+dist/assets/lesson-07-BOKEbadj.js   66.43 kB │ gzip: 18.33 kB
+dist/assets/lesson-09-DT0-GFRy.js   67.09 kB │ gzip: 17.92 kB
+dist/assets/lesson-08-B9FHkZLA.js   67.16 kB │ gzip: 18.61 kB
+dist/assets/lesson-06-BR2obn73.js   68.68 kB │ gzip: 18.06 kB
+dist/assets/lesson-15-CpBHhMef.js   68.74 kB │ gzip: 19.07 kB
+dist/assets/lesson-12-zxY68Bvh.js   70.76 kB │ gzip: 19.02 kB
+dist/assets/lesson-18-K14lDKRi.js   72.48 kB │ gzip: 19.77 kB
+dist/assets/index-Dy7SdlFq.js      388.41 kB │ gzip: 68.79 kB
+
+✓ built in 217ms

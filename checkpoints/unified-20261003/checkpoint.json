@@ -1,0 +1,84 @@
+{
+  "created": "2026-10-03",
+  "productionCommit": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
+  "sourceCommit": "437b65867ab8114aa2eefff27f9b167eef2667c3",
+  "branch": "feature/hsk123-unified-learning-20261003",
+  "baselineBundle": "hsk123-baseline-20261003.bundle",
+  "baseline": "immutable git tags and independent git bundle; no production changes",
+  "steps": [
+    {
+      "step": 1,
+      "status": "in_progress"
+    },
+    {
+      "step": 2,
+      "status": "in_progress"
+    },
+    {
+      "step": 3,
+      "status": "pending"
+    },
+    {
+      "step": 4,
+      "status": "pending"
+    },
+    {
+      "step": 5,
+      "status": "pending"
+    },
+    {
+      "step": 6,
+      "status": "pending"
+    },
+    {
+      "step": 7,
+      "status": "pending"
+    },
+    {
+      "step": 8,
+      "status": "pending"
+    },
+    {
+      "step": 9,
+      "status": "pending"
+    },
+    {
+      "step": 10,
+      "status": "pending"
+    },
+    {
+      "step": 11,
+      "status": "pending"
+    },
+    {
+      "step": 12,
+      "status": "pending"
+    },
+    {
+      "step": 13,
+      "status": "pending"
+    },
+    {
+      "step": 14,
+      "status": "pending"
+    },
+    {
+      "step": 15,
+      "status": "pending"
+    },
+    {
+      "step": 16,
+      "status": "pending"
+    }
+  ],
+  "checks": {
+    "course_unit": "passed",
+    "hsk1_unit": "passed",
+    "course_build": "passed",
+    "nonempty_storage": "included in baseline tests; browser flows pending",
+    "browsers": "not run",
+    "physical_devices": "not run",
+    "human_listening": "not run"
+  },
+  "publication": "blocked until all sixteen required acceptance gates pass"
+}

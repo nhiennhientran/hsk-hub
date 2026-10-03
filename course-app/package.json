@@ -1,1 +1,21 @@
-{"name":"hsk-shared-course-app","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"vite --host 127.0.0.1","check":"tsc --noEmit","test":"node --experimental-strip-types --test tests/*.test.mjs","content:check":"node tools/validate-content.mjs","build":"npm run content:check && npm run check && vite build","preview":"vite preview --host 127.0.0.1","test:browser":"node tools/run-browser.mjs"},"devDependencies":{"@playwright/test":"1.62.1","@types/node":"24.19.0","typescript":"7.0.2","vite":"8.3.2"}}
+{
+  "name": "hsk-shared-course-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "check": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "content:check": "node tools/validate-content.mjs",
+    "build": "node tools/sync-shared-assets.mjs && npm run content:check && npm run check && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test:browser": "node tools/run-browser.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "@types/node": "24.19.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.2"
+  }
+}
