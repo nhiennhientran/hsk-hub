@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {fieldSourcesNeedNotes} from '../src/activity-provenance.ts';
+const source={pdfPage:50,printedPage:35,section:'practice',provenance:'textbook'};
+test('one source page keeps the group citation without duplicate field notes',()=>{assert.equal(fieldSourcesNeedNotes(source,[{source},{source}]),false);assert.equal(fieldSourcesNeedNotes(source,[{},{}]),false);assert.equal(fieldSourcesNeedNotes(source,[]),false)});
+test('cross-page fields and differing group page always retain field-level citations',()=>{const later={...source,pdfPage:51,printedPage:36};assert.equal(fieldSourcesNeedNotes(source,[{source},{source:later}]),true);assert.equal(fieldSourcesNeedNotes(source,[{source:later},{source:later}]),true);assert.equal(fieldSourcesNeedNotes(source,[{}, {source:later}]),true);assert.equal(source.pdfPage,50)});

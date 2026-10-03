@@ -1,0 +1,27 @@
+{
+  "run": 37107556124,
+  "remoteCommit": "084bd5f1751422303c92a52d8f0cd72e07c59322",
+  "localCommit": "a31f6724c5694397a608e9f046e4d37324eb1361",
+  "tree": "c10a99b882c7be4e1b37d5511fd56d2e69cffaff",
+  "browsers": {
+    "chromium": {
+      "passed": 77,
+      "failed": 0,
+      "extraPreflight": 3,
+      "fullDuration": "12.4m"
+    },
+    "webkit": {
+      "passed": 77,
+      "failed": 0,
+      "extraPreflight": 3,
+      "fullDuration": "13.3m"
+    }
+  },
+  "oldRunsPreserved": {
+    "37106355777": "130passed4failed",
+    "37107213747": "144passed10failed"
+  },
+  "fixed": "Accessible absolute-positioned labels now stay in local scroll containing blocks; all source columns and independent inputs preserved.",
+  "visualReview": "56 CI screenshots materialized; full-resolution mobile L7 group table in both engines, L6 review matrix and L7 warmup inspected. Redundant cell citations identified and separately improved in next candidate; that later improvement requires its own CI.",
+  "acceptanceLimit": "Not full48lesson,physicaldevice,humanlistening or productionacceptance"
+}

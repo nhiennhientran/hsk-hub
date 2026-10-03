@@ -73,41 +73,43 @@
     }
   ],
   "checks": {
-    "course_unit": "50 passed on integratedL6–7 content",
+    "course_unit": "52passed",
     "hsk1_unit": "335 passed after audio integration; unchangedHSK1 sources",
-    "course_build": "passed with integratedL6–7 content",
+    "course_build": "passed with integratedL8–9",
     "nonempty_storage": "passed in successful checkpoint for cross-level drafts, legacy HSK3 preservation and scoped backup restore",
     "browsers": "52 cases passed, 26 each Chromium and WebKit, at remote aa3ee664 / exact local tree f731d303",
     "physical_devices": "not run",
     "human_listening": "not run"
   },
   "publication": "blocked until all sixteen required acceptance gates pass",
-  "updated": "2026-10-03T07:33:00Z",
+  "updated": "2026-10-03T08:19:00Z",
   "remoteSourceCommit": "1f091355561bef02f1b518fab81bb468dc1fc7d9",
   "localSourceCommit": "f37364c280534d7505ad8250e89bef482272faaa",
   "testedSuccessfulCheckpoint": {
-    "remote": "1f091355561bef02f1b518fab81bb468dc1fc7d9",
-    "local": "f37364c280534d7505ad8250e89bef482272faaa",
-    "tree": "9e3f9201b1587fca5ceea7ec788114d037e4b8ba",
-    "run": 37100816011,
+    "remote": "084bd5f1751422303c92a52d8f0cd72e07c59322",
+    "local": "a31f6724c5694397a608e9f046e4d37324eb1361",
+    "tree": "c10a99b882c7be4e1b37d5511fd56d2e69cffaff",
+    "run": 37107556124,
     "browsers": [
       "chromium",
       "webkit"
     ],
-    "tests": 86,
-    "scope": "HSK2L2–3 added across all7 sections and4 widths;9x2 self-assessment refresh and scoped backup restore; all pilot audio/48-route foundation checks retained, not all48lesson acceptance."
+    "tests": 154,
+    "extraPreflightCases": 6,
+    "scope": "HSK2L1–7integratedcontent and priorpilot HSK3L1, originalreviewed clipranges, records andfoundation routes;not all48lessonfinalacceptance"
   },
   "currentCI": {
-    "lastPassedRun": 37105595387,
-    "lastPassedBrowserCases": 104,
+    "lastPassedRun": 37107556124,
+    "lastPassedBrowserCases": 154,
     "audioIntegrationRun": 37106355777,
-    "audioIntegrationStatus": "failed130passed4failed;L2mobilelayout",
+    "audioIntegrationStatus": "original37106355777failed130passed4failed;repaired37107556124passed154",
     "audioCases": 134,
-    "nextLocalTestsDiscoverable": 154,
-    "nextScope": "HSK2L6–7 all source activities,27image associations,original reflection/group tables,persistence and mobile inner scrolling",
+    "nextLocalTestsDiscoverable": 174,
+    "nextScope": "HSK2L8–9 source-specific comparison/self-assessment tables,26figures,legacy matrix regression,source-note deduplication and boundedL5bedrepair",
     "lessons67Run": 37107213747,
-    "lessons67Status": "in_progress",
-    "nextFix": "Anchor accessiblehiddenlabels in local table scrollcontainingblock; preserve full154case suite plus mobilepreflight"
+    "lessons67Status": "previous37107213747failed144passed10failed;repaired37107556124passed154",
+    "nextFix": "Anchor accessiblehiddenlabels in local table scrollcontainingblock; preserve full154case suite plus mobilepreflight",
+    "extraPreflightCases": 6
   },
   "contentPilot": {
     "levels": [
@@ -157,6 +159,27 @@
     "illustrations": 27,
     "officialFields": 42,
     "independentSourceAndArtwork": "949assertions passed;27actualindependentSVGpixelreviews;finalsource/drafthashes archived",
-    "browser": "pending154case aggregateCI"
+    "browser": "passed154aggregate cases at frozenremote084bd5f"
+  },
+  "nextDraft": {
+    "hsk2Lessons": [
+      8,
+      9
+    ],
+    "activities": 55,
+    "fields": 124,
+    "illustrations": 26,
+    "independentReview": "passed1758 assertions,26 actualSVGpixels,9 prior matrix regressions",
+    "integrated": true,
+    "sharedRenderer": "reviewed additive flags and source-footer deduplication; awaiting174case browserCI"
+  },
+  "contentBatch89": {
+    "activities": 55,
+    "fields": 124,
+    "sourceFields": 117,
+    "illustrations": 26,
+    "officialFields": 38,
+    "independentChecks": 1758,
+    "browser": "pending174case aggregateCI"
   }
 }

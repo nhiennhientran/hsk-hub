@@ -11,5 +11,5 @@ test('cross-page activities reject unrelated or inconsistent per-field source pa
 test('every approved instructional illustration exists with its reviewed bytes and no external source',async()=>{
  const {createHash}=await import('node:crypto');let count=0;
  for(const level of [2,3])for(const name of fs.readdirSync(new URL(`../content/hsk${level}/`,import.meta.url)).filter(n=>/^lesson-\d\d\.json$/.test(n))){const lesson=JSON.parse(fs.readFileSync(new URL(`../content/hsk${level}/${name}`,import.meta.url)));const ids=new Set();for(const figure of lesson.illustrationManifest??[]){assert.ok(!ids.has(figure.id));ids.add(figure.id);if(figure.publicationStatus!=='approved')continue;assert.match(figure.file,/^illustrations\/[a-z0-9-]+\.svg$/);const bytes=fs.readFileSync(new URL('../public/'+figure.file,import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),figure.assetSha256);assert.equal(figure.originalTextbookImage,false);assert.ok(!/<(?:image|script|foreignObject)\b|(?:href=|url\()/i.test(bytes.toString()));assert.ok(figure.alt.zh&&figure.alt.vi);count++}}
- assert.equal(count,107);
+ assert.equal(count,133);
 });

@@ -51,16 +51,21 @@
         }
       ],
       "missingOrPlanned": [
-        "逐页实看正文、词汇、语法、图片/表格、练习、自评、附录和星号；核对下列JSON来源映射，不能将存在映射视为已覆盖。"
+        "交互、题图、表格与持久化需在包含本批新内容的真实浏览器CI中验证。",
+        "逐词逐句原音时间定位尚待专项，不将整组音频标为独立片段。"
       ],
       "verification": {
         "pdfPageLoaded": true,
-        "visualStatus": "pending",
-        "semanticCoverage": "pending",
-        "independentReview": "pending",
-        "renderedEvidence": null
+        "visualStatus": "author-and-independent-source-verified",
+        "semanticCoverage": "source-content-and-activity-model-reviewed",
+        "independentReview": "passed-source-and-template-structure",
+        "renderedEvidence": "textbook-pdf088.png",
+        "independentReviewReport": "independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+        "uiVerification": "pending-integrated-CI",
+        "renderSha256": "15f57eac0f68c39184389723f4557d65cf2931cb70675d656299bd72ac121431",
+        "inspectedOn": "2026-10-03"
       },
-      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "categoryMappingBasis": "Original mapped source elements plus fresh author and independent visual review; source-review report contains the full page inventory. Browser verification remains separate.",
       "categoriesFromCurrentJson": {
         "text": false,
         "vocabulary": false,
@@ -72,15 +77,235 @@
         "starredVocabulary": null
       },
       "categories": {
-        "text": null,
-        "vocabulary": null,
-        "grammar": null,
-        "illustrationOrTable": null,
-        "exercise": null,
-        "selfAssessment": null,
-        "appendix": null,
-        "starredVocabulary": null
-      }
+        "text": false,
+        "vocabulary": false,
+        "grammar": false,
+        "exercise": true,
+        "appendix": false,
+        "illustrationOrTable": true,
+        "selfAssessment": true,
+        "starredVocabulary": false
+      },
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:objectives",
+          "targetRef": "objectives",
+          "kind": "self-assessment",
+          "fieldCount": 3,
+          "assessmentModes": [
+            "open"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup1-matching",
+          "targetRef": "hsk2-fltrp-2026:l09:warmup1",
+          "kind": "matching",
+          "fieldCount": 4,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup2-personal",
+          "targetRef": "hsk2-fltrp-2026:l09:warmup2",
+          "kind": "survey",
+          "fieldCount": 8,
+          "assessmentModes": [
+            "open"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:warmup1-1",
+          "file": "illustrations/hsk2-l09-warmup1-1.svg",
+          "assetSha256": "aca15edfea3bfc9fc93cf5bdbbb600b8311d79fe84d17cff34880da046871f26",
+          "owner": "hsk2-fltrp-2026:l09:warmup1",
+          "position": 1,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:warmup1-2",
+          "file": "illustrations/hsk2-l09-warmup1-2.svg",
+          "assetSha256": "7cc28b487cf81bf87a908d54ab04e565978e631ecf268b5d04c7e6dd1d7fb4ab",
+          "owner": "hsk2-fltrp-2026:l09:warmup1",
+          "position": 2,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:warmup1-3",
+          "file": "illustrations/hsk2-l09-warmup1-3.svg",
+          "assetSha256": "4b89b96b3279896f7b8ee91085649699b9f3d5b3d547009e819d48841ec89b9e",
+          "owner": "hsk2-fltrp-2026:l09:warmup1",
+          "position": 3,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:warmup1-4",
+          "file": "illustrations/hsk2-l09-warmup1-4.svg",
+          "assetSha256": "3778c0b947ccdd6a2143f5e21368c3762c5ffcf605cacf6a83a921775217f3b4",
+          "owner": "hsk2-fltrp-2026:l09:warmup1",
+          "position": 4,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        }
+      ],
+      "currentFieldBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:objectives",
+          "fieldId": "hsk2-fltrp-2026:l09:field:objective1",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:objectives",
+          "fieldId": "hsk2-fltrp-2026:l09:field:objective2",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:objectives",
+          "fieldId": "hsk2-fltrp-2026:l09:field:objective3",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup1-matching",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup1-picture1",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup1-matching",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup1-picture2",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup1-matching",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup1-picture3",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup1-matching",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup1-picture4",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup2-personal",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup2-cell1",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身2：实际情况表",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup2-personal",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup2-cell2",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身2：实际情况表",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup2-personal",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup2-cell3",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身2：实际情况表",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup2-personal",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup2-cell4",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身2：实际情况表",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup2-personal",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup2-cell5",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身2：实际情况表",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup2-personal",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup2-cell6",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身2：实际情况表",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup2-personal",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup2-cell7",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身2：实际情况表",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:warmup2-personal",
+          "fieldId": "hsk2-fltrp-2026:l09:field:warmup2-cell8",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 73,
+            "section": "热身2：实际情况表",
+            "provenance": "textbook"
+          }
+        }
+      ]
     },
     {
       "documentId": "hsk2-textbook",
@@ -251,16 +476,21 @@
         }
       ],
       "missingOrPlanned": [
-        "逐页实看正文、词汇、语法、图片/表格、练习、自评、附录和星号；核对下列JSON来源映射，不能将存在映射视为已覆盖。"
+        "交互、题图、表格与持久化需在包含本批新内容的真实浏览器CI中验证。",
+        "逐词逐句原音时间定位尚待专项，不将整组音频标为独立片段。"
       ],
       "verification": {
         "pdfPageLoaded": true,
-        "visualStatus": "pending",
-        "semanticCoverage": "pending",
-        "independentReview": "pending",
-        "renderedEvidence": null
+        "visualStatus": "author-and-independent-source-verified",
+        "semanticCoverage": "source-content-and-activity-model-reviewed",
+        "independentReview": "passed-source-and-template-structure",
+        "renderedEvidence": "textbook-pdf089.png",
+        "independentReviewReport": "independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+        "uiVerification": "pending-integrated-CI",
+        "renderSha256": "1f58d1ea08a6972e341556efe295af0f989f02fc78264116abbe97895474d190",
+        "inspectedOn": "2026-10-03"
       },
-      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "categoryMappingBasis": "Original mapped source elements plus fresh author and independent visual review; source-review report contains the full page inventory. Browser verification remains separate.",
       "categoriesFromCurrentJson": {
         "text": true,
         "vocabulary": true,
@@ -272,15 +502,69 @@
         "starredVocabulary": null
       },
       "categories": {
-        "text": null,
-        "vocabulary": null,
-        "grammar": null,
-        "illustrationOrTable": null,
-        "exercise": null,
-        "selfAssessment": null,
-        "appendix": null,
-        "starredVocabulary": null
-      }
+        "text": true,
+        "vocabulary": true,
+        "grammar": false,
+        "exercise": true,
+        "appendix": false,
+        "illustrationOrTable": true,
+        "selfAssessment": false,
+        "starredVocabulary": false
+      },
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text1-listening",
+          "targetRef": "hsk2-fltrp-2026:l09:text1:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text1:question1",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text1-question1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text1:question2",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text1-question2"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:text1",
+          "file": "illustrations/hsk2-l09-text1.svg",
+          "assetSha256": "32b673d4cc3a9bb1b74d122e5a657ac6c6ef1a8bbc43831fabddbd7aa6d237bf",
+          "owner": "hsk2-fltrp-2026:l09:text1",
+          "position": 1,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        }
+      ],
+      "currentFieldBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text1-listening",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text1-question1",
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 74,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text1-listening",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text1-question2",
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 74,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ]
     },
     {
       "documentId": "hsk2-textbook",
@@ -363,16 +647,21 @@
         }
       ],
       "missingOrPlanned": [
-        "逐页实看正文、词汇、语法、图片/表格、练习、自评、附录和星号；核对下列JSON来源映射，不能将存在映射视为已覆盖。"
+        "交互、题图、表格与持久化需在包含本批新内容的真实浏览器CI中验证。",
+        "逐词逐句原音时间定位尚待专项，不将整组音频标为独立片段。"
       ],
       "verification": {
         "pdfPageLoaded": true,
-        "visualStatus": "pending",
-        "semanticCoverage": "pending",
-        "independentReview": "pending",
-        "renderedEvidence": null
+        "visualStatus": "author-and-independent-source-verified",
+        "semanticCoverage": "source-content-and-activity-model-reviewed",
+        "independentReview": "passed-source-and-template-structure",
+        "renderedEvidence": "textbook-pdf090.png",
+        "independentReviewReport": "independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+        "uiVerification": "pending-integrated-CI",
+        "renderSha256": "279c47b35ff95dd34fa6f476d8fe4bcd8601164c4651bc778093c8a25763ac53",
+        "inspectedOn": "2026-10-03"
       },
-      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "categoryMappingBasis": "Original mapped source elements plus fresh author and independent visual review; source-review report contains the full page inventory. Browser verification remains separate.",
       "categoriesFromCurrentJson": {
         "text": true,
         "vocabulary": false,
@@ -384,15 +673,78 @@
         "starredVocabulary": null
       },
       "categories": {
-        "text": null,
-        "vocabulary": null,
-        "grammar": null,
-        "illustrationOrTable": null,
-        "exercise": null,
-        "selfAssessment": null,
-        "appendix": null,
-        "starredVocabulary": null
-      }
+        "text": true,
+        "vocabulary": false,
+        "grammar": true,
+        "exercise": true,
+        "appendix": false,
+        "illustrationOrTable": false,
+        "selfAssessment": false,
+        "starredVocabulary": false
+      },
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text1-reading",
+          "targetRef": "hsk2-fltrp-2026:l09:text1:reading",
+          "kind": "open",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar1-practice1",
+          "targetRef": "hsk2-fltrp-2026:l09:grammar1:practice:1",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text1:question3",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text1-question3"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text1:question4",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text1-question4"
+        }
+      ],
+      "illustrationBindings": [],
+      "currentFieldBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text1-reading",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text1-question3",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 75,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text1-reading",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text1-question4",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 75,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar1-practice1",
+          "fieldId": "hsk2-fltrp-2026:l09:field:grammar1-dialogue1-blank1",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 75,
+            "section": "比较句（3）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ]
     },
     {
       "documentId": "hsk2-textbook",
@@ -531,16 +883,21 @@
         }
       ],
       "missingOrPlanned": [
-        "逐页实看正文、词汇、语法、图片/表格、练习、自评、附录和星号；核对下列JSON来源映射，不能将存在映射视为已覆盖。"
+        "交互、题图、表格与持久化需在包含本批新内容的真实浏览器CI中验证。",
+        "逐词逐句原音时间定位尚待专项，不将整组音频标为独立片段。"
       ],
       "verification": {
         "pdfPageLoaded": true,
-        "visualStatus": "pending",
-        "semanticCoverage": "pending",
-        "independentReview": "pending",
-        "renderedEvidence": null
+        "visualStatus": "author-and-independent-source-verified",
+        "semanticCoverage": "source-content-and-activity-model-reviewed",
+        "independentReview": "passed-source-and-template-structure",
+        "renderedEvidence": "textbook-pdf091.png",
+        "independentReviewReport": "independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+        "uiVerification": "pending-integrated-CI",
+        "renderSha256": "aa74d2dde509275d31dd967f8c3d1d1635fea7cb864e7c16c2222e7e46a11de5",
+        "inspectedOn": "2026-10-03"
       },
-      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "categoryMappingBasis": "Original mapped source elements plus fresh author and independent visual review; source-review report contains the full page inventory. Browser verification remains separate.",
       "categoriesFromCurrentJson": {
         "text": true,
         "vocabulary": true,
@@ -552,15 +909,117 @@
         "starredVocabulary": null
       },
       "categories": {
-        "text": null,
-        "vocabulary": null,
-        "grammar": null,
-        "illustrationOrTable": null,
-        "exercise": null,
-        "selfAssessment": null,
-        "appendix": null,
-        "starredVocabulary": null
-      }
+        "text": true,
+        "vocabulary": true,
+        "grammar": true,
+        "exercise": true,
+        "appendix": false,
+        "illustrationOrTable": true,
+        "selfAssessment": false,
+        "starredVocabulary": false
+      },
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text2-listening",
+          "targetRef": "hsk2-fltrp-2026:l09:text2:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar1-practice2",
+          "targetRef": "hsk2-fltrp-2026:l09:grammar1:practice:2",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar1-practice3",
+          "targetRef": "hsk2-fltrp-2026:l09:grammar1:practice:3",
+          "kind": "fill",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text2:question1",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text2-question1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text2:question2",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text2-question2"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:text2",
+          "file": "illustrations/hsk2-l09-text2.svg",
+          "assetSha256": "c812ebe9f8ec36108d88cb60d719685bc255e4101e812e986f1deeb36e793c3f",
+          "owner": "hsk2-fltrp-2026:l09:text2",
+          "position": 1,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        }
+      ],
+      "currentFieldBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text2-listening",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text2-question1",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 76,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text2-listening",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text2-question2",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 76,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar1-practice2",
+          "fieldId": "hsk2-fltrp-2026:l09:field:grammar1-dialogue2-blank1",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 76,
+            "section": "比较句（3）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar1-practice3",
+          "fieldId": "hsk2-fltrp-2026:l09:field:grammar1-dialogue3-blank1",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 76,
+            "section": "比较句（3）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar1-practice3",
+          "fieldId": "hsk2-fltrp-2026:l09:field:grammar1-dialogue3-blank2",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 76,
+            "section": "比较句（3）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ]
     },
     {
       "documentId": "hsk2-textbook",
@@ -667,16 +1126,21 @@
         }
       ],
       "missingOrPlanned": [
-        "逐页实看正文、词汇、语法、图片/表格、练习、自评、附录和星号；核对下列JSON来源映射，不能将存在映射视为已覆盖。"
+        "交互、题图、表格与持久化需在包含本批新内容的真实浏览器CI中验证。",
+        "逐词逐句原音时间定位尚待专项，不将整组音频标为独立片段。"
       ],
       "verification": {
         "pdfPageLoaded": true,
-        "visualStatus": "pending",
-        "semanticCoverage": "pending",
-        "independentReview": "pending",
-        "renderedEvidence": null
+        "visualStatus": "author-and-independent-source-verified",
+        "semanticCoverage": "source-content-and-activity-model-reviewed",
+        "independentReview": "passed-source-and-template-structure",
+        "renderedEvidence": "textbook-pdf092.png",
+        "independentReviewReport": "independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+        "uiVerification": "pending-integrated-CI",
+        "renderSha256": "454c2e095e944fc5c8037bd40ae0edb16706b2ef74e076f51c47247caed15634",
+        "inspectedOn": "2026-10-03"
       },
-      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "categoryMappingBasis": "Original mapped source elements plus fresh author and independent visual review; source-review report contains the full page inventory. Browser verification remains separate.",
       "categoriesFromCurrentJson": {
         "text": true,
         "vocabulary": false,
@@ -688,15 +1152,153 @@
         "starredVocabulary": null
       },
       "categories": {
-        "text": null,
-        "vocabulary": null,
-        "grammar": null,
-        "illustrationOrTable": null,
-        "exercise": null,
-        "selfAssessment": null,
-        "appendix": null,
-        "starredVocabulary": null
-      }
+        "text": true,
+        "vocabulary": false,
+        "grammar": true,
+        "exercise": true,
+        "appendix": false,
+        "illustrationOrTable": false,
+        "selfAssessment": false,
+        "starredVocabulary": false
+      },
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text2-reading",
+          "targetRef": "hsk2-fltrp-2026:l09:text2:reading",
+          "kind": "open",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text3-listening",
+          "targetRef": "hsk2-fltrp-2026:l09:text3:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar2-practice1",
+          "targetRef": "hsk2-fltrp-2026:l09:grammar2:practice:1",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar2-practice2",
+          "targetRef": "hsk2-fltrp-2026:l09:grammar2:practice:2",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar2-practice3",
+          "targetRef": "hsk2-fltrp-2026:l09:grammar2:practice:3",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text2:question3",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text2-question3"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text2:question4",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text2-question4"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text3:question1",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text3-question1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text3:question2",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text3-question2"
+        }
+      ],
+      "illustrationBindings": [],
+      "currentFieldBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text2-reading",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text2-question3",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 77,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text2-reading",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text2-question4",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 77,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text3-listening",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text3-question1",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 77,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text3-listening",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text3-question2",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 77,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar2-practice1",
+          "fieldId": "hsk2-fltrp-2026:l09:field:grammar2-dialogue1-blank1",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 77,
+            "section": "动词“离”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar2-practice2",
+          "fieldId": "hsk2-fltrp-2026:l09:field:grammar2-dialogue2-blank1",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 77,
+            "section": "动词“离”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar2-practice3",
+          "fieldId": "hsk2-fltrp-2026:l09:field:grammar2-dialogue3-blank1",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 77,
+            "section": "动词“离”：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ]
     },
     {
       "documentId": "hsk2-textbook",
@@ -795,16 +1397,21 @@
         }
       ],
       "missingOrPlanned": [
-        "逐页实看正文、词汇、语法、图片/表格、练习、自评、附录和星号；核对下列JSON来源映射，不能将存在映射视为已覆盖。"
+        "交互、题图、表格与持久化需在包含本批新内容的真实浏览器CI中验证。",
+        "逐词逐句原音时间定位尚待专项，不将整组音频标为独立片段。"
       ],
       "verification": {
         "pdfPageLoaded": true,
-        "visualStatus": "pending",
-        "semanticCoverage": "pending",
-        "independentReview": "pending",
-        "renderedEvidence": null
+        "visualStatus": "author-and-independent-source-verified",
+        "semanticCoverage": "source-content-and-activity-model-reviewed",
+        "independentReview": "passed-source-and-template-structure",
+        "renderedEvidence": "textbook-pdf093.png",
+        "independentReviewReport": "independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+        "uiVerification": "pending-integrated-CI",
+        "renderSha256": "022ca7618d45416d942d676fdf2cd243a8d3c05f4e759953da5862572e5b2900",
+        "inspectedOn": "2026-10-03"
       },
-      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "categoryMappingBasis": "Original mapped source elements plus fresh author and independent visual review; source-review report contains the full page inventory. Browser verification remains separate.",
       "categoriesFromCurrentJson": {
         "text": true,
         "vocabulary": true,
@@ -816,15 +1423,69 @@
         "starredVocabulary": null
       },
       "categories": {
-        "text": null,
-        "vocabulary": null,
-        "grammar": null,
-        "illustrationOrTable": null,
-        "exercise": null,
-        "selfAssessment": null,
-        "appendix": null,
-        "starredVocabulary": null
-      }
+        "text": true,
+        "vocabulary": true,
+        "grammar": true,
+        "exercise": true,
+        "appendix": false,
+        "illustrationOrTable": true,
+        "selfAssessment": false,
+        "starredVocabulary": false
+      },
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text3-reading",
+          "targetRef": "hsk2-fltrp-2026:l09:text3:reading",
+          "kind": "open",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text3:question3",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text3-question3"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text3:question4",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text3-question4"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:text3",
+          "file": "illustrations/hsk2-l09-text3.svg",
+          "assetSha256": "a4a386ac65dca471d32350369a2c6586033f78da075e31acbba66c3980cf3d73",
+          "owner": "hsk2-fltrp-2026:l09:text3",
+          "position": 1,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        }
+      ],
+      "currentFieldBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text3-reading",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text3-question3",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 78,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text3-reading",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text3-question4",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 78,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ]
     },
     {
       "documentId": "hsk2-textbook",
@@ -955,16 +1616,21 @@
         }
       ],
       "missingOrPlanned": [
-        "逐页实看正文、词汇、语法、图片/表格、练习、自评、附录和星号；核对下列JSON来源映射，不能将存在映射视为已覆盖。"
+        "交互、题图、表格与持久化需在包含本批新内容的真实浏览器CI中验证。",
+        "逐词逐句原音时间定位尚待专项，不将整组音频标为独立片段。"
       ],
       "verification": {
         "pdfPageLoaded": true,
-        "visualStatus": "pending",
-        "semanticCoverage": "pending",
-        "independentReview": "pending",
-        "renderedEvidence": null
+        "visualStatus": "author-and-independent-source-verified",
+        "semanticCoverage": "source-content-and-activity-model-reviewed",
+        "independentReview": "passed-source-and-template-structure",
+        "renderedEvidence": "textbook-pdf094.png",
+        "independentReviewReport": "independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+        "uiVerification": "pending-integrated-CI",
+        "renderSha256": "085642cf1abdc0bd01c7cbc6b69102dfc34df8595c3fc85170d3a7cbd6d1c97c",
+        "inspectedOn": "2026-10-03"
       },
-      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "categoryMappingBasis": "Original mapped source elements plus fresh author and independent visual review; source-review report contains the full page inventory. Browser verification remains separate.",
       "categoriesFromCurrentJson": {
         "text": false,
         "vocabulary": false,
@@ -976,15 +1642,78 @@
         "starredVocabulary": null
       },
       "categories": {
-        "text": null,
-        "vocabulary": null,
-        "grammar": null,
-        "illustrationOrTable": null,
-        "exercise": null,
-        "selfAssessment": null,
-        "appendix": null,
-        "starredVocabulary": null
-      }
+        "text": false,
+        "vocabulary": false,
+        "grammar": true,
+        "exercise": true,
+        "appendix": false,
+        "illustrationOrTable": false,
+        "selfAssessment": false,
+        "starredVocabulary": false
+      },
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar3-practice1",
+          "targetRef": "hsk2-fltrp-2026:l09:grammar3:practice:1",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar3-practice2",
+          "targetRef": "hsk2-fltrp-2026:l09:grammar3:practice:2",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar3-practice3",
+          "targetRef": "hsk2-fltrp-2026:l09:grammar3:practice:3",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [],
+      "illustrationBindings": [],
+      "currentFieldBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar3-practice1",
+          "fieldId": "hsk2-fltrp-2026:l09:field:grammar3-dialogue1-blank1",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 79,
+            "section": "时量补语（1）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar3-practice2",
+          "fieldId": "hsk2-fltrp-2026:l09:field:grammar3-dialogue2-blank1",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 79,
+            "section": "时量补语（1）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:grammar3-practice3",
+          "fieldId": "hsk2-fltrp-2026:l09:field:grammar3-dialogue3-blank1",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 79,
+            "section": "时量补语（1）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ]
     },
     {
       "documentId": "hsk2-textbook",
@@ -1075,16 +1804,21 @@
         }
       ],
       "missingOrPlanned": [
-        "逐页实看正文、词汇、语法、图片/表格、练习、自评、附录和星号；核对下列JSON来源映射，不能将存在映射视为已覆盖。"
+        "交互、题图、表格与持久化需在包含本批新内容的真实浏览器CI中验证。",
+        "逐词逐句原音时间定位尚待专项，不将整组音频标为独立片段。"
       ],
       "verification": {
         "pdfPageLoaded": true,
-        "visualStatus": "pending",
-        "semanticCoverage": "pending",
-        "independentReview": "pending",
-        "renderedEvidence": null
+        "visualStatus": "author-and-independent-source-verified",
+        "semanticCoverage": "source-content-and-activity-model-reviewed",
+        "independentReview": "passed-source-and-template-structure",
+        "renderedEvidence": "textbook-pdf095.png",
+        "independentReviewReport": "independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+        "uiVerification": "pending-integrated-CI",
+        "renderSha256": "d980a4f291aac28ed04c73bf30a69cc0e6fff7c65e43230124d27508097d5c5d",
+        "inspectedOn": "2026-10-03"
       },
-      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "categoryMappingBasis": "Original mapped source elements plus fresh author and independent visual review; source-review report contains the full page inventory. Browser verification remains separate.",
       "categoriesFromCurrentJson": {
         "text": true,
         "vocabulary": true,
@@ -1096,15 +1830,106 @@
         "starredVocabulary": null
       },
       "categories": {
-        "text": null,
-        "vocabulary": null,
-        "grammar": null,
-        "illustrationOrTable": null,
-        "exercise": null,
-        "selfAssessment": null,
-        "appendix": null,
-        "starredVocabulary": null
-      }
+        "text": true,
+        "vocabulary": true,
+        "grammar": false,
+        "exercise": true,
+        "appendix": false,
+        "illustrationOrTable": true,
+        "selfAssessment": false,
+        "starredVocabulary": false
+      },
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text4-listening",
+          "targetRef": "hsk2-fltrp-2026:l09:text4:listening",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text4-reading",
+          "targetRef": "hsk2-fltrp-2026:l09:text4:reading",
+          "kind": "choice",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "official"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text4:question1",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text4-question1"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text4:question2",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text4-question2"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text4:question3",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text4-question3"
+        },
+        {
+          "questionId": "hsk2-fltrp-2026:l09:text4:question4",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text4-question4"
+        }
+      ],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:text4",
+          "file": "illustrations/hsk2-l09-text4.svg",
+          "assetSha256": "45f5c337f4d8a8ab26caced911b7653bf403eb7106f4e12f9f396ff0b7d838cc",
+          "owner": "hsk2-fltrp-2026:l09:text4",
+          "position": 1,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        }
+      ],
+      "currentFieldBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text4-listening",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text4-question1",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 80,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text4-listening",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text4-question2",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 80,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text4-reading",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text4-question3",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 80,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:text4-reading",
+          "fieldId": "hsk2-fltrp-2026:l09:field:text4-question4",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 80,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ]
     },
     {
       "documentId": "hsk2-textbook",
@@ -1195,16 +2020,21 @@
         }
       ],
       "missingOrPlanned": [
-        "逐页实看正文、词汇、语法、图片/表格、练习、自评、附录和星号；核对下列JSON来源映射，不能将存在映射视为已覆盖。"
+        "交互、题图、表格与持久化需在包含本批新内容的真实浏览器CI中验证。",
+        "逐词逐句原音时间定位尚待专项，不将整组音频标为独立片段。"
       ],
       "verification": {
         "pdfPageLoaded": true,
-        "visualStatus": "pending",
-        "semanticCoverage": "pending",
-        "independentReview": "pending",
-        "renderedEvidence": null
+        "visualStatus": "author-and-independent-source-verified",
+        "semanticCoverage": "source-content-and-activity-model-reviewed",
+        "independentReview": "passed-source-and-template-structure",
+        "renderedEvidence": "textbook-pdf096.png",
+        "independentReviewReport": "independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+        "uiVerification": "pending-integrated-CI",
+        "renderSha256": "da7f5bd9cf64a3d08b8c1ff1b42054e6cb26a0826d046667089c57ae82b435cf",
+        "inspectedOn": "2026-10-03"
       },
-      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "categoryMappingBasis": "Original mapped source elements plus fresh author and independent visual review; source-review report contains the full page inventory. Browser verification remains separate.",
       "categoriesFromCurrentJson": {
         "text": false,
         "vocabulary": false,
@@ -1216,15 +2046,213 @@
         "starredVocabulary": null
       },
       "categories": {
-        "text": null,
-        "vocabulary": null,
-        "grammar": null,
-        "illustrationOrTable": null,
-        "exercise": null,
-        "selfAssessment": null,
-        "appendix": null,
-        "starredVocabulary": null
-      }
+        "text": false,
+        "vocabulary": false,
+        "grammar": false,
+        "exercise": true,
+        "appendix": false,
+        "illustrationOrTable": true,
+        "selfAssessment": false,
+        "starredVocabulary": false
+      },
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:comprehensive-words",
+          "targetRef": "hsk2-fltrp-2026:l09:section3",
+          "kind": "fill",
+          "fieldCount": 5,
+          "assessmentModes": [
+            "official"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:picture-dialogue1",
+          "targetRef": "hsk2-fltrp-2026:l09:section4:picture:1",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:picture-dialogue2",
+          "targetRef": "hsk2-fltrp-2026:l09:section4:picture:2",
+          "kind": "fill",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:picture-dialogue3",
+          "targetRef": "hsk2-fltrp-2026:l09:section4:picture:3",
+          "kind": "fill",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "reference"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:picture-dialogue4",
+          "targetRef": "hsk2-fltrp-2026:l09:section4:picture:4",
+          "kind": "fill",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "reference"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:practice-1",
+          "file": "illustrations/hsk2-l09-practice-1.svg",
+          "assetSha256": "2c21198b07e03a12d64a89ad4479ed209223791327378ab2ae359ce1aa1bf3c7",
+          "owner": "hsk2-fltrp-2026:l09:section4",
+          "position": 1,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:practice-2",
+          "file": "illustrations/hsk2-l09-practice-2.svg",
+          "assetSha256": "a6d37bac918deafb284f919b6a2ea72e370665fb31600e88d9744749b8bd4fdf",
+          "owner": "hsk2-fltrp-2026:l09:section4",
+          "position": 2,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:practice-3",
+          "file": "illustrations/hsk2-l09-practice-3.svg",
+          "assetSha256": "ec4fd6b8fd0fb2a2eabd6a503e49b26b97982ee1457786c72e7792431da162dd",
+          "owner": "hsk2-fltrp-2026:l09:section4",
+          "position": 3,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:practice-4",
+          "file": "illustrations/hsk2-l09-practice-4.svg",
+          "assetSha256": "8d1d7bb273628604877dfcfdad035ea551215011d72d2c1dc8f46499132212c2",
+          "owner": "hsk2-fltrp-2026:l09:section4",
+          "position": 4,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        }
+      ],
+      "currentFieldBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:comprehensive-words",
+          "fieldId": "hsk2-fltrp-2026:l09:field:wordchoice1",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 81,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:comprehensive-words",
+          "fieldId": "hsk2-fltrp-2026:l09:field:wordchoice2",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 81,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:comprehensive-words",
+          "fieldId": "hsk2-fltrp-2026:l09:field:wordchoice3",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 81,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:comprehensive-words",
+          "fieldId": "hsk2-fltrp-2026:l09:field:wordchoice4",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 81,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:comprehensive-words",
+          "fieldId": "hsk2-fltrp-2026:l09:field:wordchoice5",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 81,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:picture-dialogue1",
+          "fieldId": "hsk2-fltrp-2026:l09:field:picture1-blank1",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 81,
+            "section": "综合练习：看图说话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:picture-dialogue2",
+          "fieldId": "hsk2-fltrp-2026:l09:field:picture2-blank1",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 81,
+            "section": "综合练习：看图说话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:picture-dialogue2",
+          "fieldId": "hsk2-fltrp-2026:l09:field:picture2-blank2",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 81,
+            "section": "综合练习：看图说话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:picture-dialogue3",
+          "fieldId": "hsk2-fltrp-2026:l09:field:picture3-blank1",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 81,
+            "section": "综合练习：看图说话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:picture-dialogue4",
+          "fieldId": "hsk2-fltrp-2026:l09:field:picture4-blank1",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 81,
+            "section": "综合练习：看图说话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:picture-dialogue4",
+          "fieldId": "hsk2-fltrp-2026:l09:field:picture4-blank2",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 81,
+            "section": "综合练习：看图说话",
+            "provenance": "textbook"
+          }
+        }
+      ]
     },
     {
       "documentId": "hsk2-textbook",
@@ -1307,16 +2335,21 @@
         }
       ],
       "missingOrPlanned": [
-        "逐页实看正文、词汇、语法、图片/表格、练习、自评、附录和星号；核对下列JSON来源映射，不能将存在映射视为已覆盖。"
+        "交互、题图、表格与持久化需在包含本批新内容的真实浏览器CI中验证。",
+        "逐词逐句原音时间定位尚待专项，不将整组音频标为独立片段。"
       ],
       "verification": {
         "pdfPageLoaded": true,
-        "visualStatus": "pending",
-        "semanticCoverage": "pending",
-        "independentReview": "pending",
-        "renderedEvidence": null
+        "visualStatus": "author-and-independent-source-verified",
+        "semanticCoverage": "source-content-and-activity-model-reviewed",
+        "independentReview": "passed-source-and-template-structure",
+        "renderedEvidence": "textbook-pdf097.png",
+        "independentReviewReport": "independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+        "uiVerification": "pending-integrated-CI",
+        "renderSha256": "6ae875f7e93045c5046626f4a12e11ff1cc9841a25aa4c4bc4106c8a1fca6d9a",
+        "inspectedOn": "2026-10-03"
       },
-      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "categoryMappingBasis": "Original mapped source elements plus fresh author and independent visual review; source-review report contains the full page inventory. Browser verification remains separate.",
       "categoriesFromCurrentJson": {
         "text": false,
         "vocabulary": false,
@@ -1328,15 +2361,79 @@
         "starredVocabulary": null
       },
       "categories": {
-        "text": null,
-        "vocabulary": null,
-        "grammar": null,
-        "illustrationOrTable": null,
-        "exercise": null,
-        "selfAssessment": null,
-        "appendix": null,
-        "starredVocabulary": null
-      }
+        "text": false,
+        "vocabulary": false,
+        "grammar": false,
+        "exercise": true,
+        "appendix": false,
+        "illustrationOrTable": true,
+        "selfAssessment": true,
+        "starredVocabulary": false
+      },
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:roleplay",
+          "targetRef": "hsk2-fltrp-2026:l09:section5",
+          "kind": "open",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "open"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-vocabulary",
+          "targetRef": "hsk2-fltrp-2026:l09:section7:vocabulary",
+          "kind": "self-assessment",
+          "fieldCount": 2,
+          "assessmentModes": [
+            "open"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [],
+      "illustrationBindings": [
+        {
+          "id": "hsk2-fltrp-2026:l09:illustration:culture",
+          "file": "illustrations/hsk2-l09-culture.svg",
+          "assetSha256": "3455704df0e77708ee7145a77933291907d70bbb49d5181e0fb8304c957f6895",
+          "owner": "hsk2-fltrp-2026:l09:culture",
+          "position": 1,
+          "publicationStatus": "approved",
+          "independentReview": "passed-source-and-pixels"
+        }
+      ],
+      "currentFieldBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:roleplay",
+          "fieldId": "hsk2-fltrp-2026:l09:field:classroom-pairwork",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 82,
+            "section": "课堂活动：双人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-vocabulary",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-vocabulary1",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 82,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-vocabulary",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-vocabulary2",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 82,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        }
+      ]
     },
     {
       "documentId": "hsk2-textbook",
@@ -1435,16 +2532,21 @@
         }
       ],
       "missingOrPlanned": [
-        "逐页实看正文、词汇、语法、图片/表格、练习、自评、附录和星号；核对下列JSON来源映射，不能将存在映射视为已覆盖。"
+        "交互、题图、表格与持久化需在包含本批新内容的真实浏览器CI中验证。",
+        "逐词逐句原音时间定位尚待专项，不将整组音频标为独立片段。"
       ],
       "verification": {
         "pdfPageLoaded": true,
-        "visualStatus": "pending",
-        "semanticCoverage": "pending",
-        "independentReview": "pending",
-        "renderedEvidence": null
+        "visualStatus": "author-and-independent-source-verified",
+        "semanticCoverage": "source-content-and-activity-model-reviewed",
+        "independentReview": "passed-source-and-template-structure",
+        "renderedEvidence": "textbook-pdf098.png",
+        "independentReviewReport": "independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+        "uiVerification": "pending-integrated-CI",
+        "renderSha256": "f66c83b92b29331df4ad8292c0035c257f8895f549bb6498a8091fdb990a3eec",
+        "inspectedOn": "2026-10-03"
       },
-      "categoryMappingBasis": "Current JSON metadata only unless verification.visualStatus explicitly says visual inspection.",
+      "categoryMappingBasis": "Original mapped source elements plus fresh author and independent visual review; source-review report contains the full page inventory. Browser verification remains separate.",
       "categoriesFromCurrentJson": {
         "text": false,
         "vocabulary": false,
@@ -1456,15 +2558,229 @@
         "starredVocabulary": null
       },
       "categories": {
-        "text": null,
-        "vocabulary": null,
-        "grammar": null,
-        "illustrationOrTable": null,
-        "exercise": null,
-        "selfAssessment": null,
-        "appendix": null,
-        "starredVocabulary": null
-      }
+        "text": false,
+        "vocabulary": false,
+        "grammar": false,
+        "exercise": false,
+        "appendix": false,
+        "illustrationOrTable": true,
+        "selfAssessment": true,
+        "starredVocabulary": false
+      },
+      "currentActivityBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "targetRef": "hsk2-fltrp-2026:l09:section7:grammar",
+          "kind": "self-assessment",
+          "fieldCount": 18,
+          "assessmentModes": [
+            "open"
+          ]
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-improvement",
+          "targetRef": "hsk2-fltrp-2026:l09:section7:improvement",
+          "kind": "self-assessment",
+          "fieldCount": 1,
+          "assessmentModes": [
+            "open"
+          ]
+        }
+      ],
+      "currentQuestionBindings": [],
+      "illustrationBindings": [],
+      "currentFieldBindings": [
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar1-1",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar1-2",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar2-1",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar2-2",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar3-1",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar3-2",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar4-1",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar4-2",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar5-1",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar5-2",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar6-1",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar6-2",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar7-1",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar7-2",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar8-1",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar8-2",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar9-1",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-grammar",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-grammar9-2",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "activityId": "hsk2-fltrp-2026:l09:activity:review-improvement",
+          "fieldId": "hsk2-fltrp-2026:l09:field:review-improvement",
+          "source": {
+            "pdfPage": 98,
+            "printedPage": 83,
+            "section": "学习小结：7～9课",
+            "provenance": "textbook"
+          }
+        }
+      ]
     }
   ]
 }
