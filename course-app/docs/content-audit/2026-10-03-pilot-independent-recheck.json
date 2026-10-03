@@ -1,0 +1,69 @@
+{
+  "commit": "8c1ffbf1e2ab7241c936f8234bf07c9bf6084997",
+  "method": "Independent minimal DOM test double and exact extracted load-guard block with controlled deferred promises; not a browser.",
+  "activities": [
+    {
+      "level": 2,
+      "activities": 26,
+      "illustrations": 13,
+      "allRenderedExactlyOnce": true,
+      "listeningInstructions": 4,
+      "roleplayInstructions": 3,
+      "readAloudInstructions": 1
+    },
+    {
+      "level": 3,
+      "activities": 25,
+      "illustrations": 13,
+      "allRenderedExactlyOnce": true,
+      "listeningInstructions": 4,
+      "roleplayInstructions": 3,
+      "readAloudInstructions": 1
+    }
+  ],
+  "sceneIntegerAndFallback": true,
+  "failedFlushReplacementRoundMatchesVisibleQuestion": true,
+  "staleRoundSubmitRejected": true,
+  "duplicateSubmitCount": 1,
+  "asyncLoadGuard": {
+    "crossLevel": true,
+    "sameLevelNewerRender": true,
+    "validLoad": true
+  },
+  "ledger": {
+    "shards": 52,
+    "entries": 422,
+    "hashesMatched": true,
+    "unchangedEntriesDeepEqualTo771fdf5": 420,
+    "changedEntries": [
+      {
+        "documentId": "hsk3-textbook",
+        "pdfPage": 14,
+        "onlyChangedPath": "illustrationBindings[0].assetSha256"
+      },
+      {
+        "documentId": "hsk3-textbook",
+        "pdfPage": 21,
+        "onlyChangedPath": "illustrationBindings[0].assetSha256"
+      }
+    ],
+    "pageRangesCompleteUnique": true
+  },
+  "changedSvgPixels": {
+    "hsk3-l01-viewing-phone.svg": {
+      "assetSha256": "8a811632488ca089f436d922548d90da09a7aebcd210f80036db9c882381542d",
+      "rasterSha256": "9b8ca8d7a66f9cc3376a2137ccf3439cd6adb79021b5ab11dcdbf3ac5df3fbbc",
+      "independentPixelReview": "passed: portrait/group photo now visible"
+    },
+    "hsk3-l01-sofa-phone.svg": {
+      "assetSha256": "adf62b15cfeb89a46c74f0a7720d8470c8f09e81feb99b56f0c0c540954a7429",
+      "rasterSha256": "f45c3f8f8955b79bd9be0e44415ba48db8cd7d0faedc07d0e6c7f2828bd38e37",
+      "independentPixelReview": "passed: portrait/group photo now visible"
+    }
+  },
+  "verification": {
+    "unit": "35/35 passed",
+    "typescript": "passed",
+    "realBrowser": "not tested"
+  }
+}

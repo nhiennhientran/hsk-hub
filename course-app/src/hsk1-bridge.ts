@@ -98,6 +98,8 @@ export function createHSK1Bridge(options: {
         return s;
       }));
   return {
+    collectCurrentDraft(){return current?.prepareExit()??false},
+    async store(){return (await learning()).store},
     async render(target: HTMLElement, route: Route) {
       lifecycle?.dispose();
       host = document.createElement("section");

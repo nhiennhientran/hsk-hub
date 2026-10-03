@@ -711,7 +711,7 @@ export function mountLesson(
     async () => {
       c.edit((s) => {
         const r = s.reading[l.id]!;
-        r.completed = [...new Set([...r.completed, section])];
+        r.completed = [...new Set([...r.completed, section])];if(sections.every(([id])=>r.completed.includes(id))&&!s.completed.includes(l.id))s.completed.push(l.id);
       });
       if (await c.flush()) {
         complete.replaceChildren(

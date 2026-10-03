@@ -1,3 +1,4 @@
+import type {BackupProvider} from "./backup-view.ts";
 import { mountListening } from "./listening-view.ts";
 import { mountLesson } from "./lesson-view.ts";
 import "../../hsk1-app/src/app/bilingual.css";
@@ -297,6 +298,7 @@ async function navigate(next: Route) {
     setRouteLevel(level);
     config = configs[level === 3 ? 3 : 2];
     store = levelStore(level === 3 ? 3 : 2);
+    store.observeExternalChange();
     available = availableLessons(config);
     loaded = [];
     unsubscribeStatus = store.subscribe(syncStatus);
@@ -558,10 +560,13 @@ function renderCourses() {
     ),
   );
   main.append(hero);
+  const searchLabel=el("label",copy("查找课程","Tìm bài học")),search=el("input");search.type="search";search.id="lesson-search";search.placeholder="课次 / 标题 / tiêu đề";searchLabel.htmlFor=search.id;main.append(searchLabel,search);
   const grid = el("div", undefined, "course-grid"),
     done = store.snapshot().data.completed;
   for (const lesson of lessonSummaries(config)) {
     const card = el("article", undefined, "lesson-card");
+    card.dataset.searchText=`${lesson.number} ${lesson.title.zh} ${lesson.title.vi} ${lesson.title.py}`;
+    const reading=store.snapshot().data.reading[lesson.id];
     card.append(
       el("small", `HSK ${level} · ${String(lesson.number).padStart(2, "0")}`),
       el("h2", lesson.title),
@@ -578,12 +583,15 @@ function renderCourses() {
           done.includes(lesson.id) ? "继续学习" : "开始学习",
           done.includes(lesson.id) ? "Học tiếp" : "Bắt đầu học",
         ),
-        routeHref({ view: "lesson", lesson: lesson.number }),
+        routeHref({ view: "lesson", lesson: lesson.number,section:reading?.lastSection as Route["section"]??"overview",scene:reading?.scene }),
         "lesson-open",
       ),
     );
+    card.append(el("p",copy(`教材分部 ${reading?.completed.length??0}/7 已学 · ${reading?.visited.length??0}/7 已访问`,`Mục SGK: ${reading?.completed.length??0}/7 đã học · ${reading?.visited.length??0}/7 đã xem`)));
+    const actions=el('nav',undefined,'lesson-actions');for(const [section,title]of [['vocab',copy('词汇','Từ vựng')],['text',copy('课文','Bài khóa')],['grammar',copy('语言点','Ngữ pháp')]] as const)actions.append(link(title,routeHref({view:'lesson',lesson:lesson.number,section})));actions.append(link(copy('听力','Luyện nghe'),routeHref({view:'listening',lesson:lesson.number})));card.append(actions);
     grid.append(card);
   }
+  const normalize=(text:string)=>text.normalize('NFD').replace(/\p{M}/gu,'').replace(/đ/gi,'d').toLowerCase();search.oninput=()=>{for(const card of grid.querySelectorAll<HTMLElement>('.lesson-card'))card.hidden=!normalize(card.dataset.searchText??'').includes(normalize(search.value.trim()))};
   main.append(grid);
   if (lessonSummaries(config).length !== config.count)
     main.append(
@@ -966,7 +974,7 @@ function renderPractice() {
     selection = new Set(data.mixed?.selected ?? available),
     controls = el("details", undefined, "lesson-selection");
   controls.append(
-    el("summary", copy("选择要混合的课程", "Chọn các bài để trộn")),
+    el("summary", copy(`已选${selection.size}课 · 调整范围`, `Đã chọn ${selection.size} bài · Đổi phạm vi`)),
   );
   const choices = el("div", undefined, "lesson-choices");
   for (const n of available) {
@@ -1045,7 +1053,8 @@ function renderPractice() {
       "primary",
     ),
   );
-  main.append(setup, counter, grid, pager);
+  controls.append(setup);
+  main.append(counter, grid, pager);
   const previous = button(copy("上一组", "Nhóm trước"), async () => {
       if (!mixed || mixed.index === 0) return;
       mixed.index = Math.max(0, mixed.index - pageSize);
@@ -1112,6 +1121,7 @@ function renderPractice() {
             : `${w.zh} · 翻面 · Lật thẻ`,
         );
         if (back) {
+          flip.append(el("small",w.zh,"card-hanzi-label"));
           flip.append(
             el("span", w.py, "card-pinyin"),
             el("span", w.vi, "card-meaning"),
@@ -1136,6 +1146,7 @@ function renderPractice() {
       grid.append(card);
     }
   }
+  if(!mixed)controls.open=true;
   draw();
   const resize = () => {
     const size = innerWidth < 700 ? 1 : innerWidth < 1050 ? 4 : 6;
@@ -1205,6 +1216,8 @@ function renderProgress() {
     ),
   );
   main.append(summary);
+  const details=el('section',undefined,'progress-lessons');details.append(el('h2',copy('按课继续学习','Học tiếp theo bài')));
+  for(const lesson of lessonSummaries(config)){const r=data.reading[lesson.id],homework=Object.values(data.homework).flatMap(h=>h.latest&&h.latest.questionIds.some(id=>id.startsWith(lesson.id+':'))?[h.latest]:[]),listening=Object.values(data.listening).flatMap(h=>h.latest&&h.latest.questionIds.some(id=>id.startsWith(lesson.id+':'))?[h.latest]:[]);const card=el('article',undefined,'lesson-card');card.append(el('h3',copy(`第${lesson.number}课 · ${lesson.title.zh}`,`Bài ${lesson.number} · ${lesson.title.vi}`)),el('p',copy(`教材 ${r?.completed.length??0}/7 部分已学 · 作业 ${homework.reduce((n,a)=>n+a.total,0)}/30题已提交 · 听力 ${listening.length}份记录`,`SGK: ${r?.completed.length??0}/7 mục đã học · Bài tập: ${homework.reduce((n,a)=>n+a.total,0)}/30 câu đã nộp · Nghe: ${listening.length} bản ghi`)),link(copy('继续教材','Học tiếp giáo trình'),routeHref({view:'lesson',lesson:lesson.number,section:r?.lastSection as Route['section']??'overview',scene:r?.scene})),link(copy('查看作业','Xem bài tập'),routeHref({view:'homework',lesson:lesson.number})));details.append(card)}main.append(details);
   const profile = el("section", undefined, "data-panel");
   profile.append(el("h2", copy("学习档案", "Hồ sơ học tập")));
   for (const [name, title] of [
@@ -1463,6 +1476,16 @@ async function renderHSK1() {
   }
   await hsk1.render(main, route);
 }
+async function openUnifiedBackup(){
+ if(composing||(level===1&&hsk1?.collectCurrentDraft())){message(copy('请先完成当前输入法输入','Hãy hoàn thành nhập liệu hiện tại trước'));return}
+ if(!hsk1)hsk1=createHSK1Bridge({audio,navigate:r=>{location.hash=routeHref(r)},error:message});
+ try{const one=await hsk1.store(),providers:BackupProvider[]=[{level:1,edition:'现行教材 · Giáo trình hiện hành',status:()=>one.snapshot().status,export:()=>one.exportBackup(),original:()=>one.exportOriginal(),preview:text=>{const p=one.previewBackup(text);return {data:p.data,confirm:signal=>one.confirm(p,signal)}}}];
+ for(const n of [2,3] as const){const st=levelStore(n);providers.push({level:n,edition:'2026 · 第一版 / Ấn bản đầu',status:()=>st.snapshot().status,export:()=>st.exportBackup(),original:()=>st.exportOriginal(),preview:text=>{const p=st.previewBackup(text);return {data:p.data,confirm:signal=>st.confirm(p,signal)}}})}
+ const legacyKeys=[...configs[2].legacyKeys,...configs[3].legacyKeys];const legacy:Record<string,string|null>={};for(const key of legacyKeys){try{legacy[key]=local.getItem(key)}catch{legacy[key]=null}}
+ const {openBackupPanel}=await import('./backup-view.ts');openBackupPanel(providers,legacy,()=>{void render()});
+ }catch(error){message(error instanceof Error?error.message:String(error))}
+}
+footer.append(button(copy('统一备份与恢复','Sao lưu & khôi phục'),openUnifiedBackup));
 const assetMeta = el("meta");
 assetMeta.name = "hsk1-asset-base";
 assetMeta.content = new URL(assetBase, location.href).href;
@@ -1517,7 +1540,7 @@ function updateShell() {
   const recent = recentRoutes();
   for (const a of levelSwitch.querySelectorAll<HTMLAnchorElement>("a")) {
     const n = Number(a.dataset.level) as Level;
-    a.href = routeHref(recent[n] ?? { level: n, view: "courses" });
+    a.href = n===level?routeHref(route):routeHref(recent[n] ?? { level: n, view: "courses" });
     a.setAttribute("aria-current", n === level ? "true" : "false");
   }
   if (route.view !== "portal") {
