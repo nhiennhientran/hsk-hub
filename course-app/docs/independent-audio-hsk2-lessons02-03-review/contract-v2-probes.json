@@ -1,0 +1,296 @@
+{
+  "candidateSha256": "9bd2278cf872cf1d9bdccfbb3a8ff54ed96477833d73e258c724671746da91ef",
+  "authoritySha256": "0931b8ec8d0ba58df8453906cc01da4c89238059095039662ecef86d1726c0a4",
+  "special": [
+    {
+      "name": "missing authority",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: shape or source/range authority missing"
+    },
+    {
+      "name": "wrong scope source authority",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed lesson scope hsk2-fltrp-2026:l02"
+    },
+    {
+      "name": "source authority wrong sourceText",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "source authority wrong sourcePinyin",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "source authority wrong track",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "actual sentence authority wrong sourceText",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:text1:line5:sentence1"
+    },
+    {
+      "name": "actual sentence authority wrong sourcePinyin",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:text1:line5:sentence1"
+    },
+    {
+      "name": "original 26-word author draft against 25-word approved timing",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l03:word09"
+    },
+    {
+      "name": "duplicate validated manifests",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: duplicate segment across manifests hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "valid disjoint pilot and candidate merge",
+      "shouldReject": false,
+      "rejected": false,
+      "error": null
+    },
+    {
+      "name": "sentence order reversal",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: multi-sentence labeling/order hsk2-fltrp-2026:l02:text1:line5"
+    },
+    {
+      "name": "sentence source text changed",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:text1:line5:sentence1"
+    },
+    {
+      "name": "sentence pinyin changed",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:text1:line5:sentence1"
+    },
+    {
+      "name": "missing source line",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source-line coverage"
+    },
+    {
+      "name": "missing word partition entry",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: word/unresolved partition"
+    },
+    {
+      "name": "missing source track",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: missing or extra source tracks"
+    },
+    {
+      "name": "duplicate pending word",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: word/unresolved partition"
+    },
+    {
+      "name": "mismatched word repetition",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "unknown verification method",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "fake exact content-match class",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:text1:line2"
+    },
+    {
+      "name": "out-of-source finite range",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "NaN boundary",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "infinite boundary",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "word kind changed to sentence",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "pending word source hash changed",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:word09"
+    },
+    {
+      "name": "pending word fallback changed",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unresolved word hsk2-fltrp-2026:l02:word09"
+    }
+  ],
+  "extra": [
+    {
+      "name": "pending object exposes start/end",
+      "accepted": false,
+      "error": "Error: Invalid original-audio manifest: unresolved word hsk2-fltrp-2026:l02:word09"
+    },
+    {
+      "name": "declared decoded duration inflated",
+      "accepted": false,
+      "error": "Error: Invalid original-audio manifest: source hash/duration course-assets/hsk2/audio/2-1.mp3"
+    },
+    {
+      "name": "observed transcript modified without range change",
+      "accepted": false,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "source metadata claims completed human listening at root",
+      "accepted": false,
+      "error": "Error: Invalid original-audio manifest: unsupported root certification humanListening"
+    },
+    {
+      "name": "merge-only unvalidated pending object collides with a line ID",
+      "accepted": false,
+      "note": "Direct unvalidated helper boundary; ordinary loadSegments separately validates each input."
+    }
+  ],
+  "contractSha256": "7f6d5ec47182c1075be739ebef35cf39069e5c0a0a2065fd1163ce271e66fe7a",
+  "reviewTime": "2026-10-03T07:03:30.812Z",
+  "note": "Mutation tests are integration gate probes. Some require a source-content-aware contract or pre-import promotion gate, beyond a shape-only runtime validator.",
+  "results": [
+    {
+      "name": "valid draft",
+      "shouldReject": false,
+      "rejected": false,
+      "error": null
+    },
+    {
+      "name": "zero range",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "word sourceHash mismatch",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "changed lesson word text",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "changed lesson pinyin",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "single word replaced by complete group",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "out-of-scope lesson added",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: missing or extra source tracks"
+    },
+    {
+      "name": "invented same-lesson stable ID",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: word/unresolved partition"
+    },
+    {
+      "name": "fake certified tone",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: range or unsupported certification hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "fake human listening",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: range or unsupported certification hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "fake device certification",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: range or unsupported certification hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "missing verification method",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "missing sourceHash",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:word01"
+    },
+    {
+      "name": "unresolved word marked published",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: word/unresolved partition"
+    },
+    {
+      "name": "orphan sentence",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: unreviewed timing/evidence binding hsk2-fltrp-2026:l02:text1:line5:sentence1"
+    },
+    {
+      "name": "unrepresented multisentece parent",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: missing or orphan actual sentences"
+    },
+    {
+      "name": "unknown same-kind source track",
+      "shouldReject": true,
+      "rejected": true,
+      "error": "Error: Invalid original-audio manifest: source identity, text, pinyin or track hsk2-fltrp-2026:l02:word01"
+    }
+  ]
+}

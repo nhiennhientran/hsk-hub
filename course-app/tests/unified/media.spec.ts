@@ -1,12 +1,14 @@
 import {test,expect} from '@playwright/test';
-import segments from '../../content/audio-segments-pilot.json' with {type:'json'};
+import pilot from '../../content/audio-segments-pilot.json' with {type:'json'};
+import lessons23 from '../../content/audio-segments-hsk2-lessons02-03.json' with {type:'json'};
+const scopes=[{level:2,lesson:1,segments:pilot},{level:3,lesson:1,segments:pilot},{level:2,lesson:2,segments:lessons23},{level:2,lesson:3,segments:lessons23}];
 import {observeNativeMedia,attachNativeMedia} from '../browser/media-observer';
 test.beforeEach(async({page})=>{await page.addInitScript(()=>sessionStorage.setItem('hsk_portal_unlocked_v2','1'));await observeNativeMedia(page)});
 test.afterEach(async({page},info)=>attachNativeMedia(page,info));
-for(const level of [2,3]){
- const words=Object.entries(segments.words).filter(([id])=>id.startsWith(`hsk${level}`));
- for(let begin=0;begin<words.length;begin+=8)test(`HSK ${level} original word clips ${begin+1}–${Math.min(words.length,begin+8)} end at verified boundaries`,async({page},info)=>{
-  test.setTimeout(90000);await page.goto(`/#view=lesson&level=${level}&lesson=1&section=vocab`);
+for(const {level,lesson,segments} of scopes){
+ const words=Object.entries(segments.words).filter(([id])=>id.startsWith(`hsk${level}-fltrp-2026:l${String(lesson).padStart(2,'0')}:`));
+ for(let begin=0;begin<words.length;begin+=8)test(`HSK ${level} lesson ${lesson} original word clips ${begin+1}–${Math.min(words.length,begin+8)} end at verified boundaries`,async({page},info)=>{
+  test.setTimeout(90000);await page.goto(`/#view=lesson&level=${level}&lesson=${lesson}&section=vocab`);
   for(const [id,s]of words.slice(begin,begin+8)){await page.locator(`[data-word-id="${id}"] .word-open`).click();const dialog=page.getByRole('dialog',{name:s.sourceText,exact:true});await expect(dialog).toBeVisible();await page.evaluate(()=>(window as any).__hskNativeEvents=[]);await dialog.getByRole('button',{name:'播放单词原音'}).click();await expect.poll(()=>page.evaluate(()=>(window as any).__hskNativeEvents.some((e:any)=>e.event==='playing'))).toBe(true);await expect(page.locator('.player-bar')).toHaveAttribute('data-state','ended',{timeout:20000});const events=await page.evaluate(()=>(window as any).__hskNativeEvents as any[]);expect(events.some(e=>String(e.source).endsWith(s.track))).toBe(true);const startAt=events.findIndex(e=>e.event==='playing'&&String(e.source).endsWith(s.track));const times=events.slice(startAt).filter(e=>String(e.source).endsWith(s.track)&&!e.muted&&(e.event==='playing'||e.event==='pause'||e.event==='timeupdate'||e.event==='seeked'||e.event==='volumechange')).map(e=>Number(e.time));expect(times.length).toBeGreaterThan(0);expect(Math.min(...times)).toBeGreaterThanOrEqual(s.start-.08);expect(Math.max(...times)).toBeLessThanOrEqual(s.end+.16);await info.attach(id,{body:Buffer.from(JSON.stringify({id,start:s.start,end:s.end,events})),contentType:'application/json'});await dialog.getByRole('button',{name:'关闭',exact:false}).click()}
  });
 }
@@ -19,8 +21,13 @@ test('all three levels load licensed handwriting, animate, practice and reset',a
  test.setTimeout(120000);for(const [level,character]of [[1,'你'],[2,'鸭'],[3,'瘦']] as const){await page.goto(`/#view=lesson&level=${level}&lesson=1&section=hanzi`);await page.locator(`[data-hanzi-char="${character}"]`).click();const panel=page.locator('[data-hanzi-mode]');await expect(panel).toHaveAttribute('data-hanzi-mode','display');await expect(page.locator('[data-hanzi-canvas] svg')).toBeVisible();await page.locator('[data-hanzi-action=animate]').click();await expect(panel).toHaveAttribute('data-hanzi-mode','animation');await expect(panel).toHaveAttribute('data-hanzi-mode','display',{timeout:45000});await page.locator('[data-hanzi-action=practice]').click();await expect(panel).toHaveAttribute('data-hanzi-mode','practice');await page.locator('[data-hanzi-action=reset]').click();await expect(panel).toHaveAttribute('data-hanzi-mode','display');}
 });
 
-for(const level of [2,3])for(const scene of [1,2,3,4])test(`HSK ${level} scene ${scene} all original sentences obey native boundaries`,async({page},info)=>{
- test.setTimeout(150000);const sentences=[...Object.entries(segments.lines).filter(([,s])=>!(s as any).subsegments?.length),...Object.entries(segments.subsegments)].filter(([id])=>id.startsWith(`hsk${level}-fltrp-2026:l01:text${scene}:`));expect(sentences.length).toBeGreaterThan(0);
- await page.goto(`/#view=lesson&level=${level}&lesson=1&section=text&scene=${scene}`);await expect(page.locator('[data-audio-segment]')).toHaveCount(sentences.length);
+for(const {level,lesson,segments} of scopes)for(const scene of [1,2,3,4])test(`HSK ${level} lesson ${lesson} scene ${scene} all original sentences obey native boundaries`,async({page},info)=>{
+ test.setTimeout(150000);const sentences=[...Object.entries(segments.lines).filter(([,s])=>!(s as any).subsegments?.length),...Object.entries(segments.subsegments)].filter(([id])=>id.startsWith(`hsk${level}-fltrp-2026:l${String(lesson).padStart(2,'0')}:text${scene}:`));expect(sentences.length).toBeGreaterThan(0);
+ await page.goto(`/#view=lesson&level=${level}&lesson=${lesson}&section=text&scene=${scene}`);await expect(page.locator('[data-audio-segment]')).toHaveCount(sentences.length);
  for(const [id,s]of sentences){await page.evaluate(()=>(window as any).__hskNativeEvents=[]);await page.locator(`[data-audio-segment="${id}"]`).click();await expect(page.locator('.player-bar')).toHaveAttribute('data-state','playing',{timeout:20000});await expect(page.locator('.player-bar')).toHaveAttribute('data-state','ended',{timeout:25000});const events=await page.evaluate(()=>(window as any).__hskNativeEvents as any[]);const audible=events.filter(e=>String(e.source).endsWith(s.track)&&!e.muted&&!e.seeking&&['playing','pause','timeupdate','seeked','volumechange'].includes(e.event)).map(e=>Number(e.time));expect(audible.length).toBeGreaterThan(0);expect(Math.min(...audible)).toBeGreaterThanOrEqual(s.start-.08);expect(Math.max(...audible)).toBeLessThanOrEqual(s.end+.16);await info.attach(id,{body:Buffer.from(JSON.stringify({id,start:s.start,end:s.end,events})),contentType:'application/json'})}
+});
+
+for(const lesson of [2,3])test(`HSK2 lesson ${lesson} pending short words show only honestly labeled source groups`,async({page})=>{
+ await page.goto(`/#view=lesson&level=2&lesson=${lesson}&section=vocab`);
+ for(const word of lessons23.unresolved.filter(w=>w.id.includes(`:l${String(lesson).padStart(2,'0')}:`))){await page.locator(`[data-word-id="${word.id}"] .word-open`).click();const dialog=page.getByRole('dialog',{name:word.sourceText,exact:true});await expect(dialog).toBeVisible();await expect(dialog.getByRole('button',{name:'播放单词原音'})).toHaveCount(0);await expect(dialog).toContainText('独立原音尚待核验');await expect(dialog.getByRole('button',{name:'听所在生词组原音'})).toBeVisible();await dialog.getByRole('button',{name:'关闭',exact:false}).click()}
 });

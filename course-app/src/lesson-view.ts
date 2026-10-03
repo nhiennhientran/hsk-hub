@@ -169,12 +169,12 @@ export function mountLesson(
     }
     if(a.matrix){
       const table=el('table',undefined,'self-assessment-matrix'),head=el('thead'),headRow=el('tr');
-      table.dataset.matrixKind=a.kind;table.append(el('caption',a.title,'matrix-caption'));
+      const matrixColumns=1+(a.matrix.contextHeaders?.length??0)+a.matrix.columns.length;table.dataset.matrixKind=a.kind;table.dataset.matrixMode=a.matrix.mode??(a.kind==='survey'?'responses':'checks');table.dataset.matrixColumns=String(matrixColumns);table.append(el('caption',a.title,'matrix-caption'));
       const subject=el('th',a.matrix.rowHeading??copy('语言点与例句','Ngữ pháp và ví dụ'));subject.setAttribute('scope','col');headRow.append(subject);
       for(const col of [...(a.matrix.contextHeaders??[]),...a.matrix.columns]){const th=el('th',col);th.setAttribute('scope','col');headRow.append(th)}
       head.append(headRow);table.append(head);const rows=el('tbody');
-      for(const entry of a.matrix.rows){const tr=el('tr'),th=el('th',entry.prompt);th.setAttribute('scope','row');tr.append(th);for(const context of entry.contextCells??[])tr.append(el('td',context));for(const [column,id]of entry.fieldIds.entries()){const f=a.fields.find(f=>f.id===id);if(!f)throw Error('Missing self-assessment matrix field');const td=el('td');td.append(field(f,true,entry.cellLabels?.[column]));tr.append(td)}rows.append(tr)}
-      table.append(rows);fields.append(table);
+      for(const entry of a.matrix.rows){const tr=el('tr'),th=el('th',entry.prompt.zh===entry.prompt.vi?entry.prompt.zh:entry.prompt);th.setAttribute('scope','row');tr.append(th);for(const context of entry.contextCells??[])tr.append(el('td',context));for(const [column,id]of entry.fieldIds.entries()){const f=a.fields.find(f=>f.id===id);if(!f)throw Error('Missing self-assessment matrix field');const td=el('td');td.append(field(f,true,entry.cellLabels?.[column]));tr.append(td)}rows.append(tr)}
+      table.append(rows);if(matrixColumns>=4){const scroll=el('div',undefined,'matrix-scroll');scroll.tabIndex=0;scroll.setAttribute('role','region');scroll.setAttribute('aria-label',a.title.zh+' · '+a.title.vi);scroll.append(table);fields.append(el('p',copy('左右滑动查看表格的其余列','Vuốt ngang để xem các cột còn lại'), 'matrix-scroll-hint'),scroll)}else fields.append(table);
     }else a.fields.forEach((f) => fields.append(field(f)));
     wrap.append(fields);
     function showFeedback() {

@@ -4118,7 +4118,40 @@
           "input": "textarea",
           "assessment": "open"
         }
-      ]
+      ],
+      "matrix": {
+        "mode": "responses",
+        "rowHeading": {
+          "zh": "学习情况",
+          "vi": "Tình hình học"
+        },
+        "columns": [
+          {
+            "zh": "词语",
+            "vi": "Từ vựng"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "我已经记住并会使用的词语",
+              "vi": "Các từ tôi đã nhớ và biết dùng"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l03:field:review-remembered"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "我还没记住的词语",
+              "vi": "Các từ tôi chưa nhớ"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l03:field:review-not-remembered"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "hsk2-fltrp-2026:l03:activity:review-grammar",

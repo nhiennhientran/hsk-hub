@@ -23,6 +23,6 @@ export interface CourseConfig {id:CourseId;level:2|3;version:'2026.1';count:numb
 export interface Track {id:string;level:number;lesson:number;track:number;kind:'text'|'vocab';text:number;file:string;duration:number;bytes:number;sha256:string;decode:string;semanticVerification:string}
 
 export interface ActivityField {source?:Source;id:string;prompt:Copy;input:'text'|'textarea'|'select'|'checkbox';options?:Copy[];answer?:string|string[];assessment:'official'|'reference'|'open';answerSource?:{document:string;pdfPage:number;item:string};referenceAnswer?:Copy;illustrationId?:string}
-export interface ActivityMatrix {rowHeading?:Copy;contextHeaders?:Copy[];columns:Copy[];rows:{prompt:Copy;contextCells?:Copy[];fieldIds:string[];cellLabels?:Copy[]}[]}
+export interface ActivityMatrix {mode?:'checks'|'responses';rowHeading?:Copy;contextHeaders?:Copy[];columns:Copy[];rows:{prompt:Copy;contextCells?:Copy[];fieldIds:string[];cellLabels?:Copy[]}[]}
 export interface TextbookActivity {matrix?:ActivityMatrix;audioTrack?:string;recommendedPlays?:number;id:string;kind:'choice'|'matching'|'fill'|'open'|'survey'|'self-assessment';title:Copy;source:Source;origin:'textbook';targetRef:string;fields:ActivityField[];illustrationIds?:string[];note?:Copy}
 export interface Illustration {textbookRelation?:{owner:string;position?:number};id:string;kind:'original-crop'|'original-illustration';source:Source;alt:Copy;description:Copy;file?:string;publicationStatus:string;sceneKey?:string;originalTextbookImage?:boolean}

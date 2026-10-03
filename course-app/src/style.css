@@ -629,3 +629,7 @@ h1.bi>span[lang=vi],h1>.bilingual-vi{font-size:17px;font-weight:450;line-height:
 .matrix-input-label{position:absolute!important;width:1px;height:1px;padding:0!important;margin:-1px!important;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.self-assessment-matrix select,.self-assessment-matrix input:not([type=checkbox]){min-width:0;max-width:100%;font-size:16px;padding:.5rem .15rem}
 
 .self-assessment-matrix .matrix-caption{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.matrix-scroll{max-width:100%;overflow-x:auto;border-radius:6px;overscroll-behavior-x:contain}.matrix-scroll .self-assessment-matrix{min-width:560px}.matrix-scroll th[scope=row],.matrix-scroll thead th:first-child{position:sticky;left:0;z-index:1;background:#edf3ec}.self-assessment-matrix[data-matrix-columns="5"] th:first-child{width:10%}.matrix-scroll-hint{font-size:.875rem;color:var(--muted);margin:.5rem 0}
+
+.self-assessment-matrix[data-matrix-mode="responses"][data-matrix-columns="2"] th:first-child{width:50%}

@@ -1,0 +1,82 @@
+{
+  "createdAt": "2026-10-03T07:21:00Z",
+  "scope": "Previously independently reviewed HSK2L2–3 audio integration plus originalL3 free-text vocabulary table and horizontal inner-scroll layout",
+  "courseUnitTests": 49,
+  "hsk1UnitTests": 335,
+  "contentTypeBuild": "passed",
+  "browserTestsCollected": 134,
+  "browserTestsResult": "not-yet-run-for-this-tree; cloudexecutor Chromium socket denied, using authorized repositoryCI",
+  "audioCandidateSha256": "9bd2278cf872cf1d9bdccfbb3a8ff54ed96477833d73e258c724671746da91ef",
+  "independentReview": "independent-audio-hsk2-lessons02-03-review/README.md",
+  "authorityBindingComparison": "All source,word,line,track,and approvedrange bindings equal independently reviewed snapshot; only manifest filename/order differs after integration",
+  "newCoverage": {
+    "words": 25,
+    "pendingWords": 7,
+    "sourceLines": 36,
+    "childSentences": 10,
+    "actualSentences": 41
+  },
+  "certifications": {
+    "humanListening": false,
+    "pronunciationTones": false,
+    "physicalDevices": false
+  },
+  "fileHashes": [
+    {
+      "path": "course-app/content/audio-segment-authority.json",
+      "sha256": "4c28025a19057f63887c405b102dc6ece6bbad5509e14e288deda38b3f90504f"
+    },
+    {
+      "path": "course-app/content/audio-segments-hsk2-lessons02-03.json",
+      "sha256": "9bd2278cf872cf1d9bdccfbb3a8ff54ed96477833d73e258c724671746da91ef"
+    },
+    {
+      "path": "course-app/content/audio-segments-pilot.json",
+      "sha256": "6989e0f2a7f9824bdde9e9003099c1ca98a4c212764e8c364149c81ee6882cda"
+    },
+    {
+      "path": "course-app/content/hsk2/lesson-03.json",
+      "sha256": "c9c082cc83d971cfeca0f61ffaeedc9d9549edeadf7c16c86373cca40fed55b3"
+    },
+    {
+      "path": "course-app/src/audio-segment-contract.ts",
+      "sha256": "7f6d5ec47182c1075be739ebef35cf39069e5c0a0a2065fd1163ce271e66fe7a"
+    },
+    {
+      "path": "course-app/src/lesson-view.ts",
+      "sha256": "a320d30dd623e54f8ff5d0f1a27185a82b765b0127b3e679d942cd18e0f95ccc"
+    },
+    {
+      "path": "course-app/src/segments.ts",
+      "sha256": "bda61eb4fa676a501d8570cd0770e94fd65d463341f431b8fb46700e1b3b7e72"
+    },
+    {
+      "path": "course-app/src/style.css",
+      "sha256": "0dc3c3b3e97b064e620fe32c2fc2e5fc4f271ef086d92971a1f789062cd00c0d"
+    },
+    {
+      "path": "course-app/src/types.ts",
+      "sha256": "b06d06e761be9f5e38633b56be9d2d8997703f30a11cd5cf165692c64c60bdc6"
+    },
+    {
+      "path": "course-app/tests/audio-segments.test.mjs",
+      "sha256": "8f509ab274d1a03d918f81853f590226ef0174d486a7e1051bb0cf23bade7de8"
+    },
+    {
+      "path": "course-app/tests/unified/lesson-batch.spec.ts",
+      "sha256": "101ef8d1889bcf0b2a6862403ae8112ca58f2ec15b5cd742cef061e326ed16a6"
+    },
+    {
+      "path": "course-app/tests/unified/media.spec.ts",
+      "sha256": "2d9475ceb0a29fcee7e1934dc2f6b776c3b445d26ca1b551336391ddf2aa933d"
+    },
+    {
+      "path": "course-app/tools/build-audio-authority.mjs",
+      "sha256": "71166267cc9277a268b8e7450069b49e7bd2db42267d9eee0f6f7f882529f3cf"
+    },
+    {
+      "path": "course-app/tools/verify-activities.mjs",
+      "sha256": "6dde0042abfcc899bd2fe2095287b978b7f048ba3bb01096a44fe8d10131ed93"
+    }
+  ]
+}
