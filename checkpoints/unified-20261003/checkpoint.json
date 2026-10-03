@@ -246,6 +246,38 @@
       "webkit": 98,
       "preflightPassed": 8,
       "actualLogsRead": true
+    },
+    {
+      "run": 37116102536,
+      "status": "failed",
+      "passed": 158,
+      "notRun": 62,
+      "preflightPassed": 11,
+      "preflightFailed": 1,
+      "cause": "test reloaded before asynchronous save confirmation",
+      "actualLogsRead": true
+    },
+    {
+      "run": 37117149568,
+      "status": "failed",
+      "passed": 158,
+      "notRun": 62,
+      "preflightPassed": 11,
+      "preflightFailed": 1,
+      "cause": "test restored storage before rejected navigation save had settled; WebKit paths passed",
+      "actualLogsRead": true
+    },
+    {
+      "run": 37117746265,
+      "commit": "bf54a10e81632decb1c83d5b0ba364a860eac349",
+      "status": "success",
+      "passed": 220,
+      "failed": 0,
+      "chromium": 110,
+      "webkit": 110,
+      "preflightPassed": 12,
+      "actualLogsRead": true,
+      "rapidSaveLifecycle": "native refresh, pending level switch, back-forward, failed write, retry, durable reload passed both engines"
     }
   ],
   "audioBatch23": {
@@ -280,6 +312,20 @@
       "L13新增参考答用中性教师称谓",
       "原题歧义说明在映射/非映射两种反馈路径均保留，中越文+页码仅提交后显示"
     ],
-    "browser": "220cases collected, notyetexecuted"
+    "browser": "passed220/220 run37117746265; all4job logs read; top mobile screenshots checked both engines"
+  },
+  "contentBatch1415": {
+    "activities": 55,
+    "sourceFields": 107,
+    "optionalFields": 6,
+    "fields": 113,
+    "officialFields": 38,
+    "illustrations": 26,
+    "independentDataChecks": 8152,
+    "independentRendererStorageChecks": 1972,
+    "sourcePagesOpened": 82,
+    "browser": "244cases collected; pending execution",
+    "appendix": "all210printed entries226stable sense rows10stars; 148approved newmetadata and78existingmetadata reconciled",
+    "sourceCorrection": "OnlyL9word02 dictionary py pángbian→pángbiān; contextualPángbian preserved"
   }
 }
