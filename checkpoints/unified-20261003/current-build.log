@@ -1,10 +1,8 @@
-npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 
 > hsk-shared-course-app@1.0.0 build
 > node tools/sync-shared-assets.mjs && npm run content:check && npm run check && vite build
 
-Copied protected HSK1 audio and licensed Hanzi assets into shared runtime.
-npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+{"originalHSK1Audio":93,"requiredCharacters":671,"preservedCharacters":271,"licensedAdditions":400,"complete":true}
 
 > hsk-shared-course-app@1.0.0 content:check
 > node tools/validate-content.mjs
@@ -34,7 +32,7 @@ npm warn Unknown env config "http-proxy". This will stop working in the next maj
       "texts": 4,
       "grammar": 3,
       "homework": 30,
-      "sha256": "dc3d289e2c73952dfe01ca17ef20c5ef716eba9d1a9b0d307d964c0b96940779"
+      "sha256": "45d08500362f647ecba27057f4792b2c7f98614b063f0660882e07cdce727fd7"
     },
     {
       "id": "hsk2-fltrp-2026:l02",
@@ -259,7 +257,7 @@ npm warn Unknown env config "http-proxy". This will stop working in the next maj
       "texts": 4,
       "grammar": 3,
       "homework": 30,
-      "sha256": "270cc2831fc39d4cfb1adf2d914445072f93e44ad9b894db374e618c329eb756"
+      "sha256": "a0f86a24e8b33f61c1b619dbc77a722ea3e02b4d218c103844eccbb8617a1a0d"
     },
     {
       "id": "hsk3-fltrp-2026:l02",
@@ -541,108 +539,103 @@ npm warn Unknown env config "http-proxy". This will stop working in the next maj
   ],
   "issues": []
 }
-npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 
 > hsk-shared-course-app@1.0.0 check
 > tsc --noEmit
 
 vite v8.3.2 building client environment for production...
 transforming...
-✓ 144 modules transformed.
+✓ 148 modules transformed.
 rendering chunks...
 computing gzip size...
-dist/index.html                               0.45 kB │ gzip:   0.33 kB
-dist/assets/course-index-BKGnz4SX.json        4.87 kB │ gzip:   1.18 kB
-dist/content-manifest.json                   53.70 kB │ gzip:  14.30 kB
-dist/assets/stage2-bank-DOB9KrMv.json       269.65 kB │ gzip:  47.51 kB
-dist/assets/media-references-DD5E_5K_.json  287.06 kB │ gzip:  57.51 kB
-dist/assets/stage3-catalog-CH6Cx7h7.json    384.02 kB │ gzip:  67.91 kB
-dist/assets/textbook-ksDEYuz_.json          741.67 kB │ gzip:  91.65 kB
-dist/assets/progress-DgeKDxiU.css             1.57 kB │ gzip:   0.62 kB
-dist/assets/archive-BMfTkVw2.css              1.93 kB │ gzip:   0.74 kB
-dist/assets/hanzi-D0sNO2-t.css                2.24 kB │ gzip:   0.79 kB
-dist/assets/data-panel-BgEWndCN.css           3.56 kB │ gzip:   1.10 kB
-dist/assets/listening-DTyrhIy_.css            5.80 kB │ gzip:   1.60 kB
-dist/assets/view-BYaiqWuX.css                 6.25 kB │ gzip:   1.79 kB
-dist/assets/homework-8E-U9jBU.css             8.11 kB │ gzip:   2.06 kB
-dist/assets/textbook-AaGDGsMr.css             9.16 kB │ gzip:   2.55 kB
-dist/assets/index-qX0jTGWM.css               27.13 kB │ gzip:   6.38 kB
-dist/assets/textbook-BNPI77hK.js              0.08 kB │ gzip:   0.10 kB
-dist/assets/review-DcF9rOu4.js                0.08 kB │ gzip:   0.09 kB
-dist/assets/stage3-catalog-BDgGKH7A.js        0.08 kB │ gzip:   0.10 kB
-dist/assets/media-references-DyNdsQyY.js      0.09 kB │ gzip:   0.10 kB
-dist/assets/vocabulary-bistYTCy.js            0.09 kB │ gzip:   0.10 kB
-dist/assets/rolldown-runtime-DK3Fl9T5.js      0.15 kB │ gzip:   0.15 kB
-dist/assets/asset-base-DAkFL0yR.js            0.16 kB │ gzip:   0.15 kB
-dist/assets/ui-DbNjRfP0.js                    0.38 kB │ gzip:   0.27 kB
-dist/assets/dom-DqIsmKJn.js                   0.51 kB │ gzip:   0.35 kB
-dist/assets/bilingual-YzyU8AOp.js             0.55 kB │ gzip:   0.29 kB
-dist/assets/content-Dtx46D9v.js               0.86 kB │ gzip:   0.50 kB
-dist/assets/session-DExI4JQo.js               1.75 kB │ gzip:   0.90 kB
-dist/assets/homework-C7rR7QKa.js              1.81 kB │ gzip:   1.01 kB
-dist/assets/mixed-state-7Oiw2hir.js           3.10 kB │ gzip:   1.40 kB
-dist/assets/progress-DDrTVY1C.js              3.17 kB │ gzip:   1.49 kB
-dist/assets/home-CCWshIyK.js                  4.32 kB │ gzip:   2.02 kB
-dist/assets/backup-view-Ba3tysLl.js           4.50 kB │ gzip:   2.39 kB
-dist/assets/catalogue-C_U9rwbD.js             4.81 kB │ gzip:   2.04 kB
-dist/assets/listening-BrTa9oFu.js             5.53 kB │ gzip:   2.36 kB
-dist/assets/engine-CBi3sj57.js                5.90 kB │ gzip:   2.45 kB
-dist/assets/data-panel-yTx97UQ0.js            8.25 kB │ gzip:   3.25 kB
-dist/assets/listening-DBDMSzg-.js            16.01 kB │ gzip:   5.87 kB
-dist/assets/engine-BAT6QHsN.js               16.10 kB │ gzip:   6.03 kB
-dist/assets/copy-yY9kyqvF.js                 18.33 kB │ gzip:   6.90 kB
-dist/assets/listening-BXM9emsG.js            19.05 kB │ gzip:   7.03 kB
-dist/assets/archive-DLwvJxic.js              20.25 kB │ gzip:   8.45 kB
-dist/assets/textbook-BfSuKdX0.js             20.89 kB │ gzip:   8.36 kB
-dist/assets/engine-DJNGzNN8.js               22.15 kB │ gzip:   7.49 kB
-dist/assets/view-Cq5S2avU.js                 22.78 kB │ gzip:   8.61 kB
-dist/assets/textbook-CrjkVWFP.js             24.32 kB │ gzip:   8.77 kB
-dist/assets/progress-C5zJycRb.js             24.58 kB │ gzip:   9.30 kB
-dist/assets/homework-BQ9wVskv.js             35.01 kB │ gzip:  10.65 kB
-dist/assets/compatibility-DBGG7pe6.js        36.18 kB │ gzip:  13.00 kB
-dist/assets/lesson-04-C786PgqZ.js            49.22 kB │ gzip:  12.92 kB
-dist/assets/lesson-07-5aB1DaOx.js            49.48 kB │ gzip:  12.65 kB
-dist/assets/lesson-10-CuyRmN_V.js            49.71 kB │ gzip:  13.64 kB
-dist/assets/lesson-03-C2GvziRz.js            50.30 kB │ gzip:  13.59 kB
-dist/assets/lesson-02-DrQHk3rw.js            50.37 kB │ gzip:  13.30 kB
-dist/assets/lesson-13-D1Nsh94T.js            50.40 kB │ gzip:  14.32 kB
-dist/assets/lesson-14-Bq2HvBvn.js            50.93 kB │ gzip:  14.72 kB
-dist/assets/lesson-11-D4rZPGBB.js            51.62 kB │ gzip:  14.13 kB
-dist/assets/lesson-08-Gu3kgU-A.js            52.58 kB │ gzip:  14.47 kB
-dist/assets/lesson-12-F-Kt3ut2.js            52.82 kB │ gzip:  14.62 kB
-dist/assets/hanzi-CjDaeRMY.js                55.11 kB │ gzip:  18.43 kB
-dist/assets/lesson-05-L2eULTQW.js            56.43 kB │ gzip:  15.52 kB
-dist/assets/lesson-15-BK0AeZkM.js            56.54 kB │ gzip:  15.51 kB
-dist/assets/lesson-06-CWCnH2pQ.js            56.89 kB │ gzip:  15.51 kB
-dist/assets/lesson-04-3V2R5M0W.js            59.09 kB │ gzip:  15.99 kB
-dist/assets/lesson-14-CvzB6jq7.js            59.54 kB │ gzip:  16.46 kB
-dist/assets/lesson-09-CuH-gZTU.js            60.31 kB │ gzip:  16.56 kB
-dist/assets/lesson-13-9kw6gs_A.js            61.26 kB │ gzip:  17.25 kB
-dist/assets/lesson-17-C6FKIUKs.js            63.16 kB │ gzip:  17.51 kB
-dist/assets/lesson-05-C7gtDgc4.js            63.61 kB │ gzip:  17.42 kB
-dist/assets/lesson-02-B9N9GytJ.js            64.36 kB │ gzip:  17.61 kB
-dist/assets/lesson-11-DOVD04uW.js            64.47 kB │ gzip:  17.54 kB
-dist/assets/lesson-10-Dvtf8ub8.js            64.73 kB │ gzip:  17.67 kB
-dist/assets/lesson-16-CD-_wlwV.js            65.70 kB │ gzip:  18.32 kB
-dist/assets/lesson-03-CdyNGRzB.js            66.39 kB │ gzip:  17.76 kB
-dist/assets/lesson-07-BOKEbadj.js            66.43 kB │ gzip:  18.33 kB
-dist/assets/lesson-09-DT0-GFRy.js            67.09 kB │ gzip:  17.92 kB
-dist/assets/lesson-08-B9FHkZLA.js            67.16 kB │ gzip:  18.61 kB
-dist/assets/lesson-06-BR2obn73.js            68.68 kB │ gzip:  18.06 kB
-dist/assets/lesson-15-CpBHhMef.js            68.74 kB │ gzip:  19.07 kB
-dist/assets/lesson-12-zxY68Bvh.js            70.76 kB │ gzip:  19.02 kB
-dist/assets/lesson-18-K14lDKRi.js            72.48 kB │ gzip:  19.77 kB
-dist/assets/hsk2-lexicon-CXBVkqS0.js         75.89 kB │ gzip:  10.34 kB
-dist/assets/lesson-01-s6S_Ykjg.js           107.05 kB │ gzip:  22.80 kB
-dist/assets/lesson-01-DjmSEeyL.js           128.90 kB │ gzip:  28.42 kB
-dist/assets/hsk3-lexicon-BbvKIHAe.js        172.94 kB │ gzip:  20.72 kB
-dist/assets/index-D9fsGTaM.js               187.29 kB │ gzip:  54.54 kB
-dist/assets/legacy-exercises-Bz3UuW2N.js    326.82 kB │ gzip:  82.57 kB
-dist/assets/homework30-BVBKAbRf.js          613.90 kB │ gzip: 135.38 kB
+dist/index.html                                 0.45 kB │ gzip:   0.33 kB
+dist/assets/course-index-BKGnz4SX.json          4.87 kB │ gzip:   1.18 kB
+dist/content-manifest.json                     53.70 kB │ gzip:  14.30 kB
+dist/assets/stage2-bank-DOB9KrMv.json         269.65 kB │ gzip:  47.51 kB
+dist/assets/media-references-DD5E_5K_.json    287.06 kB │ gzip:  57.51 kB
+dist/assets/stage3-catalog-CH6Cx7h7.json      384.02 kB │ gzip:  67.91 kB
+dist/assets/textbook-ksDEYuz_.json            741.67 kB │ gzip:  91.65 kB
+dist/assets/progress-DgeKDxiU.css               1.57 kB │ gzip:   0.62 kB
+dist/assets/archive-BMfTkVw2.css                1.93 kB │ gzip:   0.74 kB
+dist/assets/hanzi-D0sNO2-t.css                  2.24 kB │ gzip:   0.79 kB
+dist/assets/data-panel-BgEWndCN.css             3.56 kB │ gzip:   1.10 kB
+dist/assets/listening-DTyrhIy_.css              5.80 kB │ gzip:   1.60 kB
+dist/assets/view-BYaiqWuX.css                   6.25 kB │ gzip:   1.79 kB
+dist/assets/homework-8E-U9jBU.css               8.11 kB │ gzip:   2.06 kB
+dist/assets/textbook-AaGDGsMr.css               9.16 kB │ gzip:   2.55 kB
+dist/assets/index-CD8duXlX.css                 29.26 kB │ gzip:   6.73 kB
+dist/assets/textbook-BNPI77hK.js                0.08 kB │ gzip:   0.10 kB
+dist/assets/review-CS9UlsQh.js                  0.08 kB │ gzip:   0.09 kB
+dist/assets/stage3-catalog-BDgGKH7A.js          0.08 kB │ gzip:   0.10 kB
+dist/assets/media-references-DyNdsQyY.js        0.09 kB │ gzip:   0.10 kB
+dist/assets/vocabulary-t5OTEbPH.js              0.09 kB │ gzip:   0.10 kB
+dist/assets/rolldown-runtime-DK3Fl9T5.js        0.15 kB │ gzip:   0.15 kB
+dist/assets/asset-base-DAkFL0yR.js              0.16 kB │ gzip:   0.15 kB
+dist/assets/ui-Z_WC6QDn.js                      0.38 kB │ gzip:   0.27 kB
+dist/assets/dom-BLYher89.js                     0.51 kB │ gzip:   0.34 kB
+dist/assets/bilingual-YzyU8AOp.js               0.55 kB │ gzip:   0.29 kB
+dist/assets/content-Dtx46D9v.js                 0.86 kB │ gzip:   0.50 kB
+dist/assets/session-v8oySlSz.js                 1.75 kB │ gzip:   0.90 kB
+dist/assets/homework-C7rR7QKa.js                1.81 kB │ gzip:   1.01 kB
+dist/assets/mixed-state-7Oiw2hir.js             3.10 kB │ gzip:   1.40 kB
+dist/assets/progress-Bul06aVg.js                3.17 kB │ gzip:   1.48 kB
+dist/assets/home-BnOq_oGO.js                    4.32 kB │ gzip:   2.02 kB
+dist/assets/backup-view-C1DK94xk.js             4.77 kB │ gzip:   2.46 kB
+dist/assets/catalogue-C_U9rwbD.js               4.81 kB │ gzip:   2.04 kB
+dist/assets/listening-BrTa9oFu.js               5.53 kB │ gzip:   2.36 kB
+dist/assets/engine-CBi3sj57.js                  5.90 kB │ gzip:   2.45 kB
+dist/assets/data-panel-oZXzKQ_0.js              8.25 kB │ gzip:   3.25 kB
+dist/assets/listening-N6EVmJUn.js              16.01 kB │ gzip:   5.88 kB
+dist/assets/engine-BAT6QHsN.js                 16.10 kB │ gzip:   6.03 kB
+dist/assets/copy-yY9kyqvF.js                   18.33 kB │ gzip:   6.90 kB
+dist/assets/listening-BXM9emsG.js              19.05 kB │ gzip:   7.03 kB
+dist/assets/archive-C6SYyfm5.js                20.25 kB │ gzip:   8.45 kB
+dist/assets/textbook-Bf3Tb-GG.js               20.89 kB │ gzip:   8.36 kB
+dist/assets/engine-DJNGzNN8.js                 22.15 kB │ gzip:   7.49 kB
+dist/assets/view-C1ZJHS9a.js                   22.78 kB │ gzip:   8.61 kB
+dist/assets/textbook-C4DWnmDj.js               24.50 kB │ gzip:   8.84 kB
+dist/assets/progress-ChrESBgC.js               24.58 kB │ gzip:   9.30 kB
+dist/assets/homework-BOjPSnxz.js               35.01 kB │ gzip:  10.65 kB
+dist/assets/compatibility-CADHAZSx.js          36.18 kB │ gzip:  13.00 kB
+dist/assets/lesson-04-C786PgqZ.js              49.22 kB │ gzip:  12.92 kB
+dist/assets/lesson-07-5aB1DaOx.js              49.48 kB │ gzip:  12.65 kB
+dist/assets/lesson-10-CuyRmN_V.js              49.71 kB │ gzip:  13.64 kB
+dist/assets/lesson-03-C2GvziRz.js              50.30 kB │ gzip:  13.59 kB
+dist/assets/lesson-02-DrQHk3rw.js              50.37 kB │ gzip:  13.30 kB
+dist/assets/lesson-13-D1Nsh94T.js              50.40 kB │ gzip:  14.32 kB
+dist/assets/lesson-14-Bq2HvBvn.js              50.93 kB │ gzip:  14.72 kB
+dist/assets/lesson-11-D4rZPGBB.js              51.62 kB │ gzip:  14.13 kB
+dist/assets/lesson-08-Gu3kgU-A.js              52.58 kB │ gzip:  14.47 kB
+dist/assets/lesson-12-F-Kt3ut2.js              52.82 kB │ gzip:  14.62 kB
+dist/assets/hanzi-BXl-erT8.js                  55.11 kB │ gzip:  18.43 kB
+dist/assets/lesson-05-L2eULTQW.js              56.43 kB │ gzip:  15.52 kB
+dist/assets/lesson-15-BK0AeZkM.js              56.54 kB │ gzip:  15.51 kB
+dist/assets/lesson-06-CWCnH2pQ.js              56.89 kB │ gzip:  15.51 kB
+dist/assets/lesson-04-3V2R5M0W.js              59.09 kB │ gzip:  15.99 kB
+dist/assets/lesson-14-CvzB6jq7.js              59.54 kB │ gzip:  16.46 kB
+dist/assets/lesson-09-CuH-gZTU.js              60.31 kB │ gzip:  16.56 kB
+dist/assets/lesson-13-9kw6gs_A.js              61.26 kB │ gzip:  17.25 kB
+dist/assets/lesson-17-C6FKIUKs.js              63.16 kB │ gzip:  17.51 kB
+dist/assets/lesson-05-C7gtDgc4.js              63.61 kB │ gzip:  17.42 kB
+dist/assets/lesson-02-B9N9GytJ.js              64.36 kB │ gzip:  17.61 kB
+dist/assets/lesson-11-DOVD04uW.js              64.47 kB │ gzip:  17.54 kB
+dist/assets/lesson-10-Dvtf8ub8.js              64.73 kB │ gzip:  17.67 kB
+dist/assets/lesson-16-CD-_wlwV.js              65.70 kB │ gzip:  18.32 kB
+dist/assets/lesson-03-CdyNGRzB.js              66.39 kB │ gzip:  17.76 kB
+dist/assets/lesson-07-BOKEbadj.js              66.43 kB │ gzip:  18.33 kB
+dist/assets/lesson-09-DT0-GFRy.js              67.09 kB │ gzip:  17.92 kB
+dist/assets/lesson-08-B9FHkZLA.js              67.16 kB │ gzip:  18.61 kB
+dist/assets/lesson-06-BR2obn73.js              68.68 kB │ gzip:  18.06 kB
+dist/assets/lesson-15-CpBHhMef.js              68.74 kB │ gzip:  19.07 kB
+dist/assets/lesson-12-zxY68Bvh.js              70.76 kB │ gzip:  19.02 kB
+dist/assets/lesson-18-K14lDKRi.js              72.48 kB │ gzip:  19.77 kB
+dist/assets/hsk2-lexicon-CXBVkqS0.js           75.89 kB │ gzip:  10.34 kB
+dist/assets/audio-segments-pilot-DbQMQkGo.js   82.63 kB │ gzip:   7.64 kB
+dist/assets/lesson-01-BqWxyqcI.js             107.05 kB │ gzip:  22.79 kB
+dist/assets/lesson-01-DD-Udyhi.js             128.90 kB │ gzip:  28.42 kB
+dist/assets/hsk3-lexicon-BbvKIHAe.js          172.94 kB │ gzip:  20.72 kB
+dist/assets/index-CqkZ0Afk.js                 193.08 kB │ gzip:  56.00 kB
+dist/assets/legacy-exercises-Bz3UuW2N.js      326.82 kB │ gzip:  82.57 kB
+dist/assets/homework30-BVBKAbRf.js            613.90 kB │ gzip: 135.38 kB
 
-✓ built in 362ms
-[plugin builtin:vite-reporter] 
-(!) Some chunks are larger than 500 kB after minification. Consider:
-- Using dynamic import() to code-split the application
-- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
-- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 417ms

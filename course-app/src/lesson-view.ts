@@ -66,6 +66,7 @@ export function mountLesson(
   const body = el("div", undefined, "textbook-body");
   main.append(body);
   host.append(main);
+  const showActiveSection=()=>{const active=subnav.querySelector<HTMLElement>('[aria-current="page"]');if(!active||subnav.scrollWidth<=subnav.clientWidth)return;const item=active.getBoundingClientRect(),row=subnav.getBoundingClientRect();subnav.scrollLeft+=item.left-row.left-(subnav.clientWidth-item.width)/2};showActiveSection();window.addEventListener('resize',showActiveSection,{signal:events.signal});
   const reading = c.state().reading[l.id] ?? {
     visited: [],
     completed: [],
@@ -588,7 +589,7 @@ export function mountLesson(
         el("p", line.vi, "vietnamese-line"),
       );
       const chunks=sentenceSegments(line.id,c.assetBase),original=originalSegment('lines',line.id,c.assetBase);
-      if(chunks.length){const actions=el('div',undefined,'sentence-audio');for(const [i,chunk]of chunks.entries())actions.append(button(copy(`第${i+1}句原音`,`Âm thanh câu ${i+1}`),async()=>{await c.audio.play(chunk.request,{signal:events.signal})}));row.append(actions)}else if(original)row.append(button(isSingleSentence(line.id)?copy('本句原音','Nghe câu gốc'):copy('本段原音','Nghe đoạn gốc'),async()=>{await c.audio.play(original,{signal:events.signal})}));
+      if(chunks.length){const actions=el('div',undefined,'sentence-audio');for(const [i,chunk]of chunks.entries()){const play=button(copy(`第${i+1}句原音`,`Âm thanh câu ${i+1}`),async()=>{await c.audio.play(chunk.request,{signal:events.signal})});play.dataset.audioSegment=chunk.id;actions.append(play)}row.append(actions)}else if(original){const play=button(isSingleSentence(line.id)?copy('本句原音','Nghe câu gốc'):copy('本段原音','Nghe đoạn gốc'),async()=>{await c.audio.play(original,{signal:events.signal})});play.dataset.audioSegment=line.id;row.append(play)}
       textBody.append(row);
     }
     body.append(
@@ -631,16 +632,7 @@ export function mountLesson(
         );
     }
   } else if (section === "hanzi") {
-    body.append(
-      el("h2", copy("本课汉字与笔顺", "Chữ Hán & thứ tự nét trong bài")),
-      el(
-        "p",
-        copy(
-          "按本课词汇练习。动画与练字为辅助材料，缺少字形时明确提示。",
-          "Luyện theo từ vựng bài này. Hoạt hình nét và tập viết là tài liệu hỗ trợ; chữ thiếu dữ liệu sẽ được báo rõ.",
-        ),
-      ),
-    );
+    body.append(el('p',copy('本课词汇汉字 · 辅助书写','Chữ Hán trong từ vựng bài này · Luyện viết hỗ trợ'),'task-note'));
     const mount = el("div");
     body.append(mount);
     void import("../../hsk1-app/src/features/textbook/hanzi.ts").then((m) => {

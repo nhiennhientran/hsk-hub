@@ -8,7 +8,8 @@
   "steps": [
     {
       "step": 1,
-      "status": "in_progress"
+      "status": "passed",
+      "evidence": "Protected source and production baseline tags/bundle; inherited unit suites and nonempty cross-level browser storage test"
     },
     {
       "step": 2,
@@ -16,11 +17,11 @@
     },
     {
       "step": 3,
-      "status": "pending"
+      "status": "in_progress"
     },
     {
       "step": 4,
-      "status": "pending"
+      "status": "in_progress"
     },
     {
       "step": 5,
@@ -72,13 +73,60 @@
     }
   ],
   "checks": {
-    "course_unit": "passed",
-    "hsk1_unit": "passed",
+    "course_unit": "39 passed at local f731d303",
+    "hsk1_unit": "335 passed at local f731d303",
     "course_build": "passed",
-    "nonempty_storage": "included in baseline tests; browser flows pending",
-    "browsers": "not run",
+    "nonempty_storage": "passed in successful checkpoint for cross-level drafts, legacy HSK3 preservation and scoped backup restore",
+    "browsers": "52 cases passed, 26 each Chromium and WebKit, at remote aa3ee664 / exact local tree f731d303",
     "physical_devices": "not run",
     "human_listening": "not run"
   },
-  "publication": "blocked until all sixteen required acceptance gates pass"
+  "publication": "blocked until all sixteen required acceptance gates pass",
+  "updated": "2026-10-03T05:05:00Z",
+  "remoteSourceCommit": "aa3ee66457860403166ad57d037097010f0b9a54",
+  "localSourceCommit": "f731d30357c8a1352871e59f91003e42d11c3e0d",
+  "testedSuccessfulCheckpoint": {
+    "remote": "aa3ee66457860403166ad57d037097010f0b9a54",
+    "local": "f731d30357c8a1352871e59f91003e42d11c3e0d",
+    "tree": "54788827107648743fa0de30d878ac881d2e444f",
+    "run": 37097911726,
+    "browsers": [
+      "chromium",
+      "webkit"
+    ],
+    "tests": 52,
+    "scope": "Five native HSK1 / seven HSK2+3 sections at four widths; actual 36 word clips; one genuine sentence; zoom; all three handwriting modules; drafts, immutable receipts, backup restore. Full 54 sentence browser playback is the next pending expansion."
+  },
+  "currentCI": {
+    "run": 37097911726,
+    "status": "success",
+    "testsExecuted": 52,
+    "nextLocalTestsDiscoverable": 68
+  },
+  "contentPilot": {
+    "levels": [
+      2,
+      3
+    ],
+    "lessons": [
+      1
+    ],
+    "activities": 51,
+    "fields": 111,
+    "illustrations": 26,
+    "independentContent": "passed with repaired findings",
+    "verifiedWords": 36,
+    "unresolvedWords": 6,
+    "sentenceUnits": 54,
+    "audioVerification": "offline ASR/waveform and independent rerun; not human/tone/device certification"
+  },
+  "phasesNote": "Steps1–4 foundation/pilot work progressed. No claim that all16 gates or all33 new-course deep reviews have passed. Later lesson authoring, all48-class regressions, immutable final assembly and production deployment remain pending.",
+  "draftOnly": {
+    "hsk2Lessons": [
+      2,
+      3
+    ],
+    "merged": false,
+    "reviewStatus": "author preparing source-grounded draft; independent review pending"
+  }
 }

@@ -14,7 +14,7 @@ class Element {
  focus(){} querySelector(){return null}
 }
 class Textarea extends Element{}
-globalThis.HTMLTextAreaElement=Textarea;globalThis.document={createElement:t=>t==='textarea'?new Textarea(t):new Element(t)};globalThis.location={href:'https://example.com/new/hsk2/'};
+globalThis.HTMLTextAreaElement=Textarea;globalThis.document={createElement:t=>t==='textarea'?new Textarea(t):new Element(t)};globalThis.location={href:'https://example.com/new/hsk2/'};globalThis.window=new EventTarget();
 const {mountLesson}=await import(root+'/course-app/src/lesson-view.ts');
 const {mountListening}=await import(root+'/course-app/src/listening-view.ts');
 const {blank,validateState}=await import(root+'/course-app/src/state.ts');
@@ -57,5 +57,5 @@ const factory=new Function('env',`let {config,route,available,loaded,generation,
 for(const mode of ['cross-level','same-level-newer-render','valid-load']){
  let resolve;const pending=new Promise(r=>resolve=r),conf=configs[2];const x=factory({config:conf,route:{view:'lesson',lesson:1},available:[1],loaded:[],generation:0,loadLesson:()=>pending,loadLexicon:async()=>{},loadSegments:async()=>{}});const running=x.run(0);if(mode==='cross-level')x.switchLevel(configs[3]);else if(mode==='same-level-newer-render')x.invalidate();resolve(data);await running;assert.equal(x.read().length,mode==='valid-load'?1:0);
 }
-const result={commit:'8c1ffbf1e2ab7241c936f8234bf07c9bf6084997',method:'Independent minimal DOM test double and exact extracted load-guard block with controlled deferred promises; not a browser.',activities:results,sceneIntegerAndFallback:true,failedFlushReplacementRoundMatchesVisibleQuestion:true,staleRoundSubmitRejected:true,duplicateSubmitCount:state.listening[activeId+':individual'].submissions,asyncLoadGuard:{crossLevel:true,sameLevelNewerRender:true,validLoad:true}};
+const result={originalIndependentReviewCommit:'8c1ffbf1e2ab7241c936f8234bf07c9bf6084997',method:'Re-run of the independent minimal DOM test double and exact extracted load-guard block with controlled deferred promises; not a browser. Window event stub added by implementer for the resize listener, so this rerun is not a new independent review.',activities:results,sceneIntegerAndFallback:true,failedFlushReplacementRoundMatchesVisibleQuestion:true,staleRoundSubmitRejected:true,duplicateSubmitCount:state.listening[activeId+':individual'].submissions,asyncLoadGuard:{crossLevel:true,sameLevelNewerRender:true,validLoad:true}};
 console.log(JSON.stringify(result,null,2));

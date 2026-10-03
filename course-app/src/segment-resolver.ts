@@ -4,5 +4,5 @@ let data:SegmentData|undefined;
 export function registerSegments(value:SegmentData){data=value}
 function request(s:VerifiedSegment,assetBase:string):AudioRequest{return {url:new URL(s.track,new URL(assetBase,location.href)).href,start:s.start,end:s.end,sourceKind:'segment',label:`原音 · Âm thanh gốc · ${s.sourceText}`}}
 export function originalSegment(kind:'words'|'lines',id:string,assetBase:string):AudioRequest|undefined{const s=data?.[kind][id];return s?request(s,assetBase):undefined}
-export function sentenceSegments(id:string,assetBase:string):{text:string;request:AudioRequest}[]{const s=data?.lines[id];return (s?.subsegments??[]).flatMap(key=>{const p=data?.subsegments[key];return p?[{text:p.sourceText,request:request(p,assetBase)}]:[]})}
+export function sentenceSegments(id:string,assetBase:string):{id:string;text:string;request:AudioRequest}[]{const s=data?.lines[id];return (s?.subsegments??[]).flatMap(key=>{const p=data?.subsegments[key];return p?[{id:key,text:p.sourceText,request:request(p,assetBase)}]:[]})}
 export function isSingleSentence(id:string):boolean{const s=data?.lines[id];return !!s&&s.sourceText.split(/[。！？!?]/).filter(t=>t.trim()).length<=1}
