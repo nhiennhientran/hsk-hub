@@ -30,6 +30,21 @@
       "name": "《新HSK教程3》客观题答案.pdf",
       "size_bytes": 7228714,
       "sha256": "7cc42aa78c6b1c32f03f6deccac606c31bd787fd1f72717d45afafa29155e473"
+    },
+    {
+      "name": "《新HSK教程1》客观题答案(5).pdf",
+      "size_bytes": 1040826,
+      "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5"
+    },
+    {
+      "name": "新HSK教程1(HSK3.0) (郭风岚、汤旭编著) (z-library.sk, 1lib.sk, z-lib.sk) (1)(3).pdf",
+      "size_bytes": 66692625,
+      "sha256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba"
+    },
+    {
+      "name": "新HSK教程1+配套音频(3).rar",
+      "size_bytes": 32297512,
+      "sha256": "19bde58bb2e35a430a28110e365546b8416e33a2e1b070d61543aada3db686cc"
     }
   ],
   "hsk2": {
@@ -200,5 +215,38 @@
     "audio": "Archive inventories read fully; HSK3 ZIP CRC check passed; 10 MP3 samples extracted and fully decoded with ffmpeg without errors. Printed audio identifiers spot-checked against archive filenames. No full listening/transcription audit performed.",
     "missing_files": [],
     "changes": "Read-only source inspection; no website code or publishing changes."
+  },
+  "hsk1": {
+    "textbook_pages": 144,
+    "answer_pages": 13,
+    "edition": "January2026 first edition/first printing, FLTRP; ISBN978-7-5213-6774-4; actual copyright pagePDF3 inspected",
+    "audio_mp3_count": 93,
+    "sourceBookNature": "scanned pages; source-pixel review required",
+    "sourceAuditStatus": "inventory recovered; full lesson source comparison pending",
+    "audioIdentity": "All93originalRAR MP3 encoded audio streams match current website; whole-file bytes differ due cover/metadata/remuxing. Native-source Git byte preservation is a separate assertion. Decode/time-boundary review pending.",
+    "lessons": 15,
+    "texts_per_lesson": 3,
+    "language_points": 40,
+    "vocabulary_syllabus_alignment": 300,
+    "vocabulary_note": "Syllabus matching target with slight extension, not a counted glossary/sense total.",
+    "recommended_class_hours": [
+      30,
+      36
+    ],
+    "recommended_hours_per_lesson": [
+      2,
+      3
+    ],
+    "sourceGuide": {
+      "pdfPage": 7,
+      "printedPage": "IV",
+      "actualPixelsInspected": true,
+      "distinctions": [
+        "Lessons1–3 include 跟读绕口令; lessons4–15 add warmup",
+        "Pronunciation bonus in lesson1, writing bonus inlesson7",
+        "Learning summary every3lessons",
+        "Eight bonus sections in source; original culturevideos remain separate resources"
+      ]
+    }
   }
 }

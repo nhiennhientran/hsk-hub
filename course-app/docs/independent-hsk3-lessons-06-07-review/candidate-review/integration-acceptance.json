@@ -1,0 +1,48 @@
+{
+  "scope": "HSK3L6–7 controlled integration; all source/independent/renderer/style/test-code evidence accepted; integrated browser pending",
+  "checks": {
+    "data": 9317,
+    "rendererState": 2040,
+    "sourceExplanation": 52,
+    "adversarialVariants": 79,
+    "race": 24,
+    "unit": 73,
+    "hsk1Unit": 335,
+    "sixSourceRegistration": 393
+  },
+  "browserCollection": 320,
+  "browserExecutionPending": true,
+  "approvedSvgTotal": 295,
+  "finalIntegratedChanges": [
+    "draftimports switched tocanonical withouttestlogicchange",
+    "L7 approvedpaired更/firsthơn canonicalfix",
+    "approved32SVGbytes copiedexactly",
+    "illustrationassertion263→295, notweakened",
+    "pageledger bindings populated and source579summarykept"
+  ],
+  "initialLocalUnitFailure": "First postintegration unit run72passed1failed because frozenasset-count263 needed approved32addition; strict295assertion then73/73. Rawlog preserved in recovery.",
+  "pendingRefinement": "Optional explicitvalidatedgrammarID backlink for L7hint-only practice section; do notinferfrompage/title and do notduplicateinputs",
+  "finalFiles": [
+    {
+      "file": "src/lesson-view.ts",
+      "sha256": "b6da4ede536f08a9efb9fc54882cdff71764b56339938613c656e34bc8669b85"
+    },
+    {
+      "file": "tests/activities.test.mjs",
+      "sha256": "6ca4b29ee8b7d503ee9684e96091e2810bd82406274b96f8349f413530fe1440"
+    },
+    {
+      "file": "tests/unified/hsk3-lessons67.spec.ts",
+      "sha256": "d96f924a02a4141a800b818307e5869dd3d4694b3615bd6e1e8422fde1e5087e"
+    },
+    {
+      "file": "content/hsk3/lesson-06.json",
+      "sha256": "931aaeecc243e8baeebb3c347c93ee3daf25338b4ad8deca69b20907ff9d8031"
+    },
+    {
+      "file": "content/hsk3/lesson-07.json",
+      "sha256": "90fc52e39950a2202753b76a106b5ff1595773377e8751dfad35fc3d05605d8c"
+    }
+  ],
+  "rawEvidencePreservedInRecovery": true
+}

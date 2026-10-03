@@ -642,6 +642,8 @@ export function mountLesson(
         el("p", g.structure, "structure"),
         el("p", g.explanation),
       );
+      const sourceExplanation=l.grammarSourceExplanations?.find(item=>item.grammarId===g.id);
+      if(sourceExplanation){const original=el('section',undefined,'grammar-source-explanation');original.append(el('h3',copy('教材中的说明','Giải thích trong sách')),el('p',sourceExplanation.explanation),sourceNote(sourceExplanation.source.printedPage));sec.append(original)}
       const example=(x:Lesson['grammar'][number]['examples'][number],explanationSource=g.source)=>{
         const ex=el('div',undefined,'example');
         ex.append(el('p',x.zh,'chinese-line'),el('p',x.py,'pinyin-visible'),el('p',x.vi));if(x.source.pdfPage!==explanationSource.pdfPage||x.source.printedPage!==explanationSource.printedPage||x.source.provenance!==explanationSource.provenance)ex.append(sourceNote(x.source.printedPage,x.source.provenance==='supplemental'));return ex;
@@ -705,14 +707,22 @@ export function mountLesson(
     for (const s of chosen) {
       body.append(el("h2", s.title));
       const exact = mapped(s.id);
+      const hints = section === 'practice' ? s.blocks.filter(b => b.kind === 'paragraph' && b.source?.provenance === 'supplemental' && /^图片(?:描述|说明)/.test(b.zh)) : [];
+      const appendHints = () => {
+        if (!hints.length) return;
+        const details = el('details', undefined, 'picture-editorial-hints');
+        details.append(el('summary', copy('图片文字提示（含参考表达）', 'Gợi ý bằng chữ cho hình (có cách diễn đạt tham khảo)')));
+        for (const hint of hints) details.append(el('p', hint));
+        body.append(details);
+      };
       if (exact.length) {
-        const hints=s.blocks.filter(b=>b.source?.provenance==='supplemental'&&/^图片(?:描述|说明)/.test(b.zh));
         for(const b of s.blocks)if(["instruction","example","paragraph"].includes(b.kind)&&!hints.includes(b))body.append(el("p",b));
         exact.forEach((a) => body.append(activity(a)));
-        if(hints.length){const details=el('details',undefined,'picture-editorial-hints');details.append(el('summary',copy('图片文字提示（含参考表达）','Gợi ý bằng chữ cho hình (có cách diễn đạt tham khảo)')));for(const hint of hints)details.append(el('p',hint));body.append(details)}
+        appendHints();
         continue;
       }
       for (const [i, b] of s.blocks.entries()) {
+        if (hints.includes(b)) continue;
         if (b.kind === "question" || b.kind === "task" || /[□_＿]/.test(b.zh))
           body.append(
             manual(
@@ -729,6 +739,7 @@ export function mountLesson(
             manual(s.id + ":block" + i + ":item" + j, s.title, item, b.source),
           );
       }
+      appendHints();
       body.append(sourceNote(s.source.printedPage));
     }
     for (const a of l.activities ?? [])

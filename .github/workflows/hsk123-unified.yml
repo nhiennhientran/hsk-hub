@@ -36,7 +36,7 @@ jobs:
       - name: Focused mobile and content preflight
         if: matrix.shard == 1
         working-directory: course-app
-        run: npx playwright test --config=playwright.unified.config.ts --project=${{ matrix.browser }} --grep 'lesson 2 reviewed textbook sections at (320|390)|lesson7 source surveys|lesson9 headerless source comparison|lesson12 four-person survey|lesson13 original ambiguous-key explanation|lesson15 frequency table|lesson15 cross-page review|HSK3 lesson 2 reviewed textbook sections at 320|HSK3 lesson2 source menu|HSK3 lesson2 group support|HSK3 lesson 4 source-specific textbook views at 320|HSK3 lesson4 grouped source explanations|HSK3 lesson5 pair table'
+        run: npx playwright test --config=playwright.unified.config.ts --project=${{ matrix.browser }} --grep 'lesson 2 reviewed textbook sections at (320|390)|lesson7 source surveys|lesson9 headerless source comparison|lesson12 four-person survey|lesson13 original ambiguous-key explanation|lesson15 frequency table|lesson15 cross-page review|HSK3 lesson 2 reviewed textbook sections at 320|HSK3 lesson2 source menu|HSK3 lesson2 group support|HSK3 lesson 4 source-specific textbook views at 320|HSK3 lesson4 grouped source explanations|HSK3 lesson5 pair table|HSK3 lesson6 ten-row review|HSK3 lesson7 typed measure words|HSK3 lesson7 source explanation|HSK3 lesson7 twelve picture blanks'
       - name: Test unified app checkpoint
         working-directory: course-app
         run: npx playwright test --config=playwright.unified.config.ts --project=${{ matrix.browser }} --shard=${{ matrix.shard }}/2
@@ -109,3 +109,9 @@ jobs:
         with:
           name: hsk123-hsk3lessons45-screens-${{ matrix.browser }}-shard${{ matrix.shard }}
           path: course-app/test-results/unified-hsk3-lesson[45]-*.png
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk123-hsk3lessons67-screens-${{ matrix.browser }}-shard${{ matrix.shard }}
+          path: course-app/test-results/unified-hsk3-lesson[67]-*.png

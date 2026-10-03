@@ -324,6 +324,17 @@
       "preflightPassed": 24,
       "actualLogsRead": true,
       "nativeRaceVerified": "held HSK3 lock, edit before save release, no stale feedback, durable reload, populated HSK2 record unchanged"
+    },
+    {
+      "run": 37125032194,
+      "commit": "c881cef5860ddb40453c01fa9de5d688c57597c7",
+      "status": "success",
+      "passed": 292,
+      "failed": 0,
+      "chromium": 146,
+      "webkit": 146,
+      "preflightPassed": 30,
+      "actualLogsRead": true
     }
   ],
   "audioBatch23": {
@@ -409,7 +420,7 @@
     "independentCorruptionChecks": 40,
     "sourcePagesInspected": 30,
     "unitTests": 71,
-    "browser": "292 cases collected; not yet executed",
+    "browser": "passed292/292 run37125032194; all four actual logs and scoped mobile/source-group/pair-table screenshots inspected",
     "sourceDifferences": [
       "L4 three/two grammar explanation groups retain full original examples",
       "L4 cross-page grammar32 explanation/33 examples separately cited",
@@ -419,7 +430,7 @@
     "remaining": "HSK3 lessons6–18, remaining audio work and overall release gates"
   },
   "browserTestReadinessImprovement": {
-    "status": "independently reviewed locally; awaits next real browser run",
+    "status": "passed real Chromium/WebKit292 full and30 preflight checks on c881cef",
     "gates": [
       "exact scene identity",
       "exact per-view source activity/figure inventory",
@@ -431,5 +442,33 @@
     ],
     "strictTestTypecheck": "new test-only types node config runs in CI",
     "existing268Identities": "preserved"
+  },
+  "contentHSK3Batch67": {
+    "activities": 58,
+    "sourceFields": 148,
+    "optionalFields": 8,
+    "fields": 156,
+    "officialFields": 48,
+    "referenceFields": 67,
+    "openFields": 33,
+    "illustrations": 32,
+    "independentDataChecks": 9317,
+    "independentRendererStateChecks": 2040,
+    "sourceExplanationChecks": 52,
+    "adversarialVariants": 79,
+    "raceChecks": 24,
+    "sourcePagesInspected": 32,
+    "unitTests": 73,
+    "browser": "320cases collected and strictly typechecked; not yet run",
+    "pairedCorrection": "L7G2practice1 deleteextra更/firsthơn only after independently checkingPDF73P61",
+    "remaining": "HSK3L8–18,HSK1whole-original-source review,audio/handwriting and allfinal gates"
+  },
+  "originalSources": {
+    "pdfDocuments": 6,
+    "pages": 579,
+    "priorPagesPreserved": 422,
+    "hsk1PagesAdded": 157,
+    "hsk1OriginalBodyAudit": "pending",
+    "hsk1OriginalAudio": "93encodedstreams identical; decodedPCM identical after529sample/channel startoffset; fullfilediff due cover/tag/remux. Human/clipalignment pending"
   }
 }

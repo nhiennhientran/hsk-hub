@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "created": "2026-10-03",
-  "scope": "四份用户提供PDF的每一页；只对明确标记的页做内容作者视觉核验。全量PDF载入/哈希并不等于视觉核验。",
+  "scope": "六份用户提供PDF的每一页；原始文件载入/哈希仅证明来源身份，不等于逐页语义、视觉、浏览器或音频验收。",
   "documents": [
     {
       "documentId": "hsk2-textbook",
@@ -26,40 +26,71 @@
       "name": "《新HSK教程3》客观题答案.pdf",
       "pageCount": 27,
       "sha256": "7cc42aa78c6b1c32f03f6deccac606c31bd787fd1f72717d45afafa29155e473"
+    },
+    {
+      "documentId": "hsk1-textbook",
+      "name": "新HSK教程1(HSK3.0) (郭风岚、汤旭编著) (z-library.sk, 1lib.sk, z-lib.sk) (1)(3).pdf",
+      "pageCount": 144,
+      "sha256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba"
+    },
+    {
+      "documentId": "hsk1-answers",
+      "name": "《新HSK教程1》客观题答案(5).pdf",
+      "pageCount": 13,
+      "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5"
     }
   ],
-  "totalPages": 422,
-  "updated": "2026-10-03T12:53:00Z",
+  "totalPages": 579,
+  "updated": "2026-10-03T13:55:00Z",
   "statusDefinitions": {
     "pending": "No fresh visual inspection of this page in this revision. Any content bindings are an inventory, not acceptance.",
     "author_visual_verified": "The content author inspected the freshly rendered page; not independent review, not proof of UI or final image coverage.",
     "partial": "Only the explicitly stated appendix/answer scope was checked."
   },
   "summary": {
-    "totalPages": 422,
-    "textbookPages": 374,
-    "answerPages": 48,
+    "totalPages": 579,
+    "textbookPages": 518,
+    "answerPages": 61,
     "integratedActivityLessons": [
       "hsk2-fltrp-2026:l01",
-      "hsk2-fltrp-2026:l04",
       "hsk2-fltrp-2026:l02",
-      "hsk2-fltrp-2026:l05",
       "hsk2-fltrp-2026:l03",
-      "hsk3-fltrp-2026:l01"
+      "hsk2-fltrp-2026:l04",
+      "hsk2-fltrp-2026:l05",
+      "hsk2-fltrp-2026:l06",
+      "hsk2-fltrp-2026:l07",
+      "hsk2-fltrp-2026:l08",
+      "hsk2-fltrp-2026:l09",
+      "hsk2-fltrp-2026:l10",
+      "hsk2-fltrp-2026:l11",
+      "hsk2-fltrp-2026:l12",
+      "hsk2-fltrp-2026:l13",
+      "hsk2-fltrp-2026:l14",
+      "hsk2-fltrp-2026:l15",
+      "hsk3-fltrp-2026:l01",
+      "hsk3-fltrp-2026:l02",
+      "hsk3-fltrp-2026:l03",
+      "hsk3-fltrp-2026:l04",
+      "hsk3-fltrp-2026:l05",
+      "hsk3-fltrp-2026:l06",
+      "hsk3-fltrp-2026:l07"
     ],
-    "integratedActivities": 158,
-    "integratedFields": 330,
-    "integratedOriginalSvgAssets": 80,
-    "sourceReview": "HSK2L1–5 and HSK3L1 reviewed for current interaction additions; remainder pending",
+    "integratedActivities": 599,
+    "integratedFields": 1357,
+    "integratedOriginalSvgAssets": 295,
+    "sourceReview": "HSK2L1–15 andHSK3L1–7 source/independent additive-content acceptance complete; HSK3L6–7 integrated browser pending; remainingHSK3 andHSK1 whole-source audit pending",
     "lastSuccessfulPilotBrowserRun": 37098888704,
-    "latestTableChanges": "pending new browser verification; original fields preserved",
+    "latestTableChanges": "Current remote pair/menu/matrix tests pass292; later uncommitted work not covered",
     "batchHsk2L2L3BrowserRun": 37100816011,
     "batchHsk2L2L3BrowserState": "passed-before-latest-table-regression",
     "remainingWholeBookSemanticAudit": "pending",
     "physicalDeviceListening": "not-run",
     "humanListening": "not-run",
     "pilotShortWordsPending": 6,
-    "batchHsk2L4L5BrowserState": "pending"
+    "batchHsk2L4L5BrowserState": "pending",
+    "latestBrowserRun": 37125032194,
+    "latestBrowserResult": "292full+30preflights success on c881cef; actual logs read",
+    "hsk1OriginalSourceAudit": "157original pages registered; content comparison pending"
   },
   "shards": [
     {
@@ -180,7 +211,7 @@
     {
       "path": "page-coverage/hsk3-answers-front-appendices.json",
       "pages": 17,
-      "sha256": "698a3acd5ba0751dff86ad97715163b2fdb29261a153ab0fe07f66d75770bbbb"
+      "sha256": "879216c77304e723a6e12154e6c7bcbf6cff0d07ac7921a9b930f58b7de5e870"
     },
     {
       "path": "page-coverage/hsk3-answers-lesson-01.json",
@@ -230,7 +261,7 @@
     {
       "path": "page-coverage/hsk3-textbook-front-appendices.json",
       "pages": 39,
-      "sha256": "e1e4638c78157f6729f24501f3a0026bfc514bd40fdbddd243973b2dbbd03a97"
+      "sha256": "8f623060492eb6e8e9f05ef5034b28a7f405dddb79f860ad6f53d0c9560b55d4"
     },
     {
       "path": "page-coverage/hsk3-textbook-lesson-01.json",
@@ -250,22 +281,22 @@
     {
       "path": "page-coverage/hsk3-textbook-lesson-04.json",
       "pages": 9,
-      "sha256": "fd0b5a7ccf9e14cec67d494eaa811315063c0e491a5322d2f7fb9e56a3c15d59"
+      "sha256": "32db6592c90fdd8965aa8daa480309eb556bf154aa252d43fe6b28753c48d193"
     },
     {
       "path": "page-coverage/hsk3-textbook-lesson-05.json",
       "pages": 9,
-      "sha256": "4b289f9e6a8b7042c734eb9cb9f1d9eb349ab89822a816b191aee18193fbcbc2"
+      "sha256": "726c8cd22fdd904f7c3a00fd2d576dbdccf77d89351bdd9445edbded813112dc"
     },
     {
       "path": "page-coverage/hsk3-textbook-lesson-06.json",
       "pages": 10,
-      "sha256": "93ad95bf4159ecc5bb8b63cf1b63d75e8d23508526eeaf9a522bf5469bb4b236"
+      "sha256": "7bf94e3dafd42f752ee281782da1bb217bee06f5fa1e96a1b7fc89158d0f05d1"
     },
     {
       "path": "page-coverage/hsk3-textbook-lesson-07.json",
       "pages": 10,
-      "sha256": "69cc61e9686b500f3bc93e1637dd7dfe143b13468eb425980c148cd1b9976ebc"
+      "sha256": "23148b6b8adbafdf99e93ee5296b5be745ea71084d9c6848ec966c027e35a81a"
     },
     {
       "path": "page-coverage/hsk3-textbook-lesson-08.json",
@@ -321,10 +352,20 @@
       "path": "page-coverage/hsk3-textbook-lesson-18.json",
       "pages": 11,
       "sha256": "71862180403727f9dc4cf3f0a0c706c03927a73de28b6f6163ec450a3d2277e7"
+    },
+    {
+      "path": "page-coverage/hsk1-textbook-source-pending.json",
+      "pages": 144,
+      "sha256": "555ddc2a8587298669c88c7dbb71dfcba833c6240fe0400cb878d65a63749474"
+    },
+    {
+      "path": "page-coverage/hsk1-answers-source-pending.json",
+      "pages": 13,
+      "sha256": "ebd89a81b115bca7e685d7da3231ae44a865d4939d7488c5d6207e45cca28371"
     }
   ],
   "preservedPageCount": 422,
-  "note": "All422page records preserved. HSK2lessons1–15 andHSK3lessons1–5 have authored interaction models. Source,independent,browser,audio and release acceptance remain separate per record.",
+  "note": "All579page records preserved (422HSK2/3+157HSK1). HSK2lessons1–15 andHSK3lessons1–7 have authored interaction models. Source,independent,browser,audio and release acceptance remain separate per record.",
   "initialPilotAuthorSummary": {
     "totalPages": 422,
     "textbookPages": 374,
@@ -338,5 +379,6 @@
     "originalSvgAssets": 26,
     "originalSvgAuthorPixelReview": "passed",
     "originalSvgIndependentReview": "pending"
-  }
+  },
+  "addedOriginalHSK1Pages": 157
 }

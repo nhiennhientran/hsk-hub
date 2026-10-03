@@ -1,0 +1,36 @@
+{
+  "status": "author-confirmed-proposal-pending-independent-verification",
+  "baselineModified": false,
+  "additiveActivityTitleUsesCorrectSource": true,
+  "source": {
+    "pdfPage": 73,
+    "printedPage": 61,
+    "raster": "course-app/docs/independent-hsk3-lessons-06-07-review/source-rasters/textbook-pdf073.png",
+    "rasterSha256": "70d8e8fe2b290d9ef01f127ef53492f77c68a404f254119b7fe0655abf33cb00",
+    "printedChinese": "A：天中学中文的时间长，他的中文水平比家月高吗？ B：______。"
+  },
+  "changes": [
+    {
+      "file": "course-app/content/hsk3/lesson-07.json",
+      "path": "grammar[1].practice[0].zh",
+      "old": "A：天中学中文的时间更长，他的中文水平比家月高吗？ B：______。",
+      "proposed": "A：天中学中文的时间长，他的中文水平比家月高吗？ B：______。",
+      "reason": "The source prints 时间长, without 更. Main authorized source-faithful additive activity title; canonical baseline correction awaits independent verification."
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-07.json",
+      "path": "grammar[1].practice[0].vi",
+      "old": "A: Thiên Trung học tiếng Trung lâu hơn, trình độ của anh ấy có cao hơn Gia Nguyệt không? B: ______.",
+      "proposed": "A: Thiên Trung học tiếng Trung lâu, trình độ của anh ấy có cao hơn Gia Nguyệt không? B: ______.",
+      "reason": "Remove extra comparative hơn introduced by baseline Chinese extra 更. Keep the later legitimate cao hơn Gia Nguyệt comparison."
+    }
+  ],
+  "separateAdditiveExplanation": {
+    "field": "grammarSourceExplanations[0]",
+    "reason": "Full printed 不比 explanation is now visible separately. The prior contextual summary and supplemental caution remain unchanged."
+  },
+  "independentDecision": "approve exactly paired canonical correction",
+  "independentSource": "Actual PDF73/P61 pixels independently read; freshPDF-raster identity verified",
+  "runtimeModifiedByReviewer": false,
+  "scope": "Delete exactly extra更 andfirst Vietnamese hơn; retain later cao hơn Gia Nguyệt. No other existing baseline edits approved."
+}

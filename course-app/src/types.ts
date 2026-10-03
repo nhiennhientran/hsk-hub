@@ -16,6 +16,7 @@ export interface Lesson {
  vocabulary:Word[];
  grammar:{id:string;title:Copy;structure:string;explanation:Copy;examples:(Copy & {py:string;source:Source})[];practice:(Copy & {source:Source})[];source:Source}[];
  sections:{id:string;kind:'practice'|'activity'|'culture'|'tip'|'review'|'other';title:Copy;blocks:(Copy & {kind:string;items?:Copy[];source:Source})[];source:Source}[];
+ grammarSourceExplanations?:{grammarId:string;explanation:Copy;source:Source}[];
  grammarPresentations?:{grammarId:string;groups:{title:Copy;explanation:Copy;exampleIndices:number[];source:Source}[]}[];
  activities?:TextbookActivity[];illustrationManifest?:Illustration[];
  homework:Question[];listening:Question[];
