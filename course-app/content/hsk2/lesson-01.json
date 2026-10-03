@@ -2636,6 +2636,71 @@
       "note": {
         "zh": "按实际情况回答，保存在本机，不设标准答案；可用“是……的”组织回答。",
         "vi": "Trả lời theo thực tế, lưu trên thiết bị, không có đáp án cố định; có thể dùng 是……的."
+      },
+      "matrix": {
+        "rowHeading": {
+          "zh": "项目",
+          "vi": "Mục"
+        },
+        "contextHeaders": [
+          {
+            "zh": "关键词",
+            "vi": "Từ khóa"
+          }
+        ],
+        "columns": [
+          {
+            "zh": "回答",
+            "vi": "Trả lời"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "出发时间",
+              "vi": "Thời điểm khởi hành"
+            },
+            "contextCells": [
+              {
+                "zh": "什么时候去的",
+                "vi": "Đã đi lúc nào"
+              }
+            ],
+            "fieldIds": [
+              "hsk2-fltrp-2026:l01:field:travel-time"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "同伴",
+              "vi": "Người đi cùng"
+            },
+            "contextCells": [
+              {
+                "zh": "和谁去的",
+                "vi": "Đã đi cùng ai"
+              }
+            ],
+            "fieldIds": [
+              "hsk2-fltrp-2026:l01:field:travel-companion"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "旅行方式",
+              "vi": "Cách đi"
+            },
+            "contextCells": [
+              {
+                "zh": "怎么去的",
+                "vi": "Đã đi bằng cách nào"
+              }
+            ],
+            "fieldIds": [
+              "hsk2-fltrp-2026:l01:field:travel-method"
+            ]
+          }
+        ]
       }
     },
     {

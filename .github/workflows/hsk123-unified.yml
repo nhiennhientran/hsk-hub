@@ -32,9 +32,26 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: hsk123-unified-${{ matrix.browser }}
+          name: hsk123-reports-${{ matrix.browser }}
           path: |
             course-app/.repro-output/
-            course-app/test-results/
+            course-app/test-results/**/*.md
             checkpoints/unified-20261003/
           include-hidden-files: true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk123-pilot-screens-${{ matrix.browser }}
+          path: |
+            course-app/test-results/*.png
+            !course-app/test-results/unified-hsk2-lesson*.png
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk123-lessons23-screens-${{ matrix.browser }}
+          path: course-app/test-results/unified-hsk2-lesson[23]-*.png
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk123-lessons45-screens-${{ matrix.browser }}
+          path: course-app/test-results/unified-hsk2-lesson[45]-*.png

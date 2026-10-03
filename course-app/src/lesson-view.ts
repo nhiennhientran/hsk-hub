@@ -112,7 +112,7 @@ export function mountLesson(
       feedback.replaceChildren();
     };
     const renderedIllustrations=new Set<string>();
-    function field(f: ActivityField, cell=false) {
+    function field(f: ActivityField, cell=false, cellLabel?:Copy) {
       const row = el("div", undefined, "activity-field");
       if (f.illustrationId&&!renderedIllustrations.has(f.illustrationId)) {
         const pic = l.illustrationManifest?.find(
@@ -120,8 +120,8 @@ export function mountLesson(
         );
         if (pic){row.append(illustration(pic,c.assetBase,events.signal));renderedIllustrations.add(pic.id)}
       }
-      const label = el("label", f.prompt);
-      if(cell)label.classList.add("matrix-check-label");
+      const label = el("label", cellLabel??f.prompt);
+      if(cell)label.classList.add(f.input==="checkbox"?"matrix-check-label":"matrix-input-label");if(cellLabel)label.classList.add("matrix-visible-label");
       label.htmlFor = f.id;
       row.append(label);
       if (f.input === "select") {
@@ -150,6 +150,7 @@ export function mountLesson(
         input.type = "checkbox";
         input.id = f.id;
         input.checked = values[f.id] === true;
+        input.setAttribute("aria-label",f.prompt.zh+" · "+f.prompt.vi);
         input.onchange = () => change(f.id, input.checked);
         label.prepend(input);
         row.classList.add("check-field");
@@ -163,15 +164,16 @@ export function mountLesson(
         input.oninput = () => change(f.id, input.value);
         row.append(input);
       }
+      if(f.source)row.append(sourceNote(f.source.printedPage));
       return row;
     }
     if(a.matrix){
       const table=el('table',undefined,'self-assessment-matrix'),head=el('thead'),headRow=el('tr');
-      table.append(el('caption',a.title));
-      const subject=el('th',copy('语言点与例句','Ngữ pháp và ví dụ'));subject.setAttribute('scope','col');headRow.append(subject);
-      for(const col of a.matrix.columns){const th=el('th',col);th.setAttribute('scope','col');headRow.append(th)}
+      table.dataset.matrixKind=a.kind;table.append(el('caption',a.title,'matrix-caption'));
+      const subject=el('th',a.matrix.rowHeading??copy('语言点与例句','Ngữ pháp và ví dụ'));subject.setAttribute('scope','col');headRow.append(subject);
+      for(const col of [...(a.matrix.contextHeaders??[]),...a.matrix.columns]){const th=el('th',col);th.setAttribute('scope','col');headRow.append(th)}
       head.append(headRow);table.append(head);const rows=el('tbody');
-      for(const entry of a.matrix.rows){const tr=el('tr'),th=el('th',entry.prompt);th.setAttribute('scope','row');tr.append(th);for(const id of entry.fieldIds){const f=a.fields.find(f=>f.id===id);if(!f)throw Error('Missing self-assessment matrix field');const td=el('td');td.append(field(f,true));tr.append(td)}rows.append(tr)}
+      for(const entry of a.matrix.rows){const tr=el('tr'),th=el('th',entry.prompt);th.setAttribute('scope','row');tr.append(th);for(const context of entry.contextCells??[])tr.append(el('td',context));for(const [column,id]of entry.fieldIds.entries()){const f=a.fields.find(f=>f.id===id);if(!f)throw Error('Missing self-assessment matrix field');const td=el('td');td.append(field(f,true,entry.cellLabels?.[column]));tr.append(td)}rows.append(tr)}
       table.append(rows);fields.append(table);
     }else a.fields.forEach((f) => fields.append(field(f)));
     wrap.append(fields);
@@ -279,7 +281,7 @@ export function mountLesson(
       },
       "primary",
     );
-    wrap.append(check, feedback, sourceNote(a.source.printedPage));
+    const sourcePages=[...new Set([a.source.printedPage,...a.fields.flatMap(f=>f.source?[f.source.printedPage]:[])])].sort((a,b)=>a-b);wrap.append(check,feedback,el("small",copy(`教材第${sourcePages.join("、")}页`,`SGK trang ${sourcePages.join(", ")}`),"source-note"));
     if (current.checkedAt) showFeedback();
     return wrap;
   }
@@ -669,6 +671,7 @@ export function mountLesson(
         ? ["practice", "activity"].includes(s.kind)
         : !["practice", "activity"].includes(s.kind),
     );
+    if(section==='culture'&&!chosen.length)body.append(el('p',copy('本课没有单独的拓展或学习小结页。可回到导学检查本课目标。','Bài này không có trang mở rộng hoặc tự tổng kết riêng. Có thể quay lại phần mở đầu để kiểm tra mục tiêu.')),link(copy('回到本课目标','Về mục tiêu bài học'),routeHref({...c.route,section:'overview'})));
     for (const s of chosen) {
       body.append(el("h2", s.title));
       const exact = mapped(s.id);

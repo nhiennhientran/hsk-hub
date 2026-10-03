@@ -73,7 +73,7 @@
     }
   ],
   "checks": {
-    "course_unit": "42 passed",
+    "course_unit": "44 passed",
     "hsk1_unit": "335 passed at local f731d303",
     "course_build": "passed",
     "nonempty_storage": "passed in successful checkpoint for cross-level drafts, legacy HSK3 preservation and scoped backup restore",
@@ -82,26 +82,26 @@
     "human_listening": "not run"
   },
   "publication": "blocked until all sixteen required acceptance gates pass",
-  "updated": "2026-10-03T05:35:00Z",
-  "remoteSourceCommit": "aa3ee66457860403166ad57d037097010f0b9a54",
-  "localSourceCommit": "f731d30357c8a1352871e59f91003e42d11c3e0d",
+  "updated": "2026-10-03T06:05:00Z",
+  "remoteSourceCommit": "1f091355561bef02f1b518fab81bb468dc1fc7d9",
+  "localSourceCommit": "f37364c280534d7505ad8250e89bef482272faaa",
   "testedSuccessfulCheckpoint": {
-    "remote": "6a091595f79aeb17d23d648f25135559c93f04cc",
-    "local": "8b749de67b9b64e5b92a806ea05938d62acaa94b",
-    "tree": "fc81b1f41346e4db3e665559e36df2f468bf1d88",
-    "run": 37098888704,
+    "remote": "1f091355561bef02f1b518fab81bb468dc1fc7d9",
+    "local": "f37364c280534d7505ad8250e89bef482272faaa",
+    "tree": "9e3f9201b1587fca5ceea7ec788114d037e4b8ba",
+    "run": 37100816011,
     "browsers": [
       "chromium",
       "webkit"
     ],
-    "tests": 68,
-    "scope": "Pilot all54 actual source sentences and36 words played in each engine with individually retained native event bounds; full pilot section/viewport matrix and data flows"
+    "tests": 86,
+    "scope": "HSK2L2–3 added across all7 sections and4 widths;9x2 self-assessment refresh and scoped backup restore; all pilot audio/48-route foundation checks retained, not all48lesson acceptance."
   },
   "currentCI": {
-    "lastRun": 37098888704,
+    "lastRun": 37100816011,
     "status": "success",
-    "nextLocalTestsDiscoverable": 86,
-    "nextScope": "HSK2 lessons2/3 source-reviewed integration; self-assessment9x2 matrix and withheld image hints; actual refresh/backup restore"
+    "nextLocalTestsDiscoverable": 104,
+    "nextScope": "HSK2L4–5, revised original survey table layouts inL1/L2, L4 experience table and cross-page sources, local persisted survey independence"
   },
   "contentPilot": {
     "levels": [
@@ -122,15 +122,12 @@
   },
   "phasesNote": "Steps1–4 foundation/pilot work progressed. No claim that all16 gates or all33 new-course deep reviews have passed. Later lesson authoring, all48-class regressions, immutable final assembly and production deployment remain pending.",
   "draftOnly": {
-    "hsk2Lessons": [
-      4,
-      5
+    "audioHsk2Lessons": [
+      2,
+      3
     ],
-    "activities": 52,
-    "fields": 102,
-    "illustrations": 29,
-    "independentSource": "in_progress",
-    "merged": false
+    "merged": false,
+    "status": "author-alignment-in-progress"
   },
   "contentBatch23": {
     "activities": 55,
@@ -138,6 +135,14 @@
     "illustrations": 25,
     "independentSource": "passed",
     "independentTemplateRecheck": "passed",
+    "browser": "passed at f37364c; subsequent survey table changes require nextCI"
+  },
+  "contentBatch45": {
+    "activities": 52,
+    "fields": 102,
+    "illustrations": 29,
+    "officialFields": 44,
+    "independentSourceAndRecheck": "passed,497assertions plus actualsource/SVGpixels",
     "browser": "pending"
   }
 }

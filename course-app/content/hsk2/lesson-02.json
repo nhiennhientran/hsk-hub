@@ -2749,6 +2749,87 @@
       "note": {
         "zh": "按自己的喜好选择，再说说理由；不设标准答案。",
         "vi": "Chọn theo sở thích của mình rồi nói lý do; không có đáp án cố định."
+      },
+      "matrix": {
+        "rowHeading": {
+          "zh": "情况",
+          "vi": "Tình huống"
+        },
+        "contextHeaders": [
+          {
+            "zh": "方式1",
+            "vi": "Cách 1"
+          },
+          {
+            "zh": "方式2",
+            "vi": "Cách 2"
+          }
+        ],
+        "columns": [
+          {
+            "zh": "我的选择",
+            "vi": "Lựa chọn của tôi"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "去旅游的时候",
+              "vi": "Khi đi du lịch"
+            },
+            "contextCells": [
+              {
+                "zh": "坐火车去",
+                "vi": "đi tàu hỏa"
+              },
+              {
+                "zh": "坐飞机去",
+                "vi": "đi máy bay"
+              }
+            ],
+            "fieldIds": [
+              "hsk2-fltrp-2026:l02:field:preference-1"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "很晚下班的时候",
+              "vi": "Khi tan làm rất muộn"
+            },
+            "contextCells": [
+              {
+                "zh": "回家做饭",
+                "vi": "về nhà nấu cơm"
+              },
+              {
+                "zh": "去饭店吃饭",
+                "vi": "đi nhà hàng ăn"
+              }
+            ],
+            "fieldIds": [
+              "hsk2-fltrp-2026:l02:field:preference-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "星期六的晚上",
+              "vi": "Tối thứ Bảy"
+            },
+            "contextCells": [
+              {
+                "zh": "在家休息",
+                "vi": "nghỉ ở nhà"
+              },
+              {
+                "zh": "去看电影",
+                "vi": "đi xem phim"
+              }
+            ],
+            "fieldIds": [
+              "hsk2-fltrp-2026:l02:field:preference-3"
+            ]
+          }
+        ]
       }
     },
     {
