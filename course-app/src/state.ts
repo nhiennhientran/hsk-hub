@@ -137,39 +137,23 @@ export function validateState(value: unknown, config: CourseConfig): State {
       )
     );
   }
-  function attempt(a: unknown): boolean {
-    return (
-      a === null ||
-      (object(a) &&
-        str(a.id) &&
-        integer(a.at) &&
-        a.at > 0 &&
-        answers(a.answers) &&
-        (a.correct === null || integer(a.correct)) &&
-        integer(a.total) &&
-        ((a.assessment === "manual" && a.correct === null) ||
-          (a.assessment === "automatic" &&
-            integer(a.correct) &&
-            a.correct <= a.total)) &&
-        array(a.questionIds) &&
-        a.questionIds.every((x) => str(x) && x.startsWith(prefix)) &&
-        a.questionIds.length === a.total &&
-        new Set(a.questionIds).size === a.questionIds.length &&
-        a.version === "2026.1" &&
-        object(a.profile) &&
-        str(a.profile.name) &&
-        str(a.profile.className) &&
-        (a.contentRevision === undefined || str(a.contentRevision)) &&
-        (a.questions === undefined ||
-          (array(a.questions) &&
-            a.questions.length === a.total &&
-            a.questions.every(
-              (q, i) =>
-                object(q) &&
-                q.id === (a.questionIds as string[])[i] &&
-                parts.includes(q.part as Part),
-            ))))
-    );
+  function snapshotQuestion(q:unknown,id:unknown):q is Question {
+    if(!object(q)||q.id!==id||!str(q.id)||!q.id.startsWith(prefix)||!parts.includes(q.part as Part))return false;
+    if(q.prompt!==undefined&&(!object(q.prompt)||!str(q.prompt.zh)||!str(q.prompt.vi)))return false;
+    if(q.options!==undefined&&(!array(q.options)||!q.options.every(str)))return false;
+    if(q.tokens!==undefined&&(!array(q.tokens)||!q.tokens.every(str)))return false;
+    if(q.explanation!==undefined&&(!object(q.explanation)||!str(q.explanation.zh)||!str(q.explanation.vi)))return false;
+    return q.part==='writing'||isAnswered(q as unknown as Question,q.answer as Answer);
+  }
+  function attempt(a:unknown):boolean {
+    if(a===null)return true;
+    if(!object(a)||!str(a.id)||!integer(a.at)||a.at<=0||!answers(a.answers)||!(a.correct===null||integer(a.correct))||!integer(a.total)||a.total<1||!((a.assessment==='manual'&&a.correct===null)||(a.assessment==='automatic'&&integer(a.correct)&&a.correct<=a.total))||!array(a.questionIds)||!a.questionIds.every(id=>str(id)&&id.startsWith(prefix))||a.questionIds.length!==a.total||new Set(a.questionIds).size!==a.questionIds.length||a.version!=='2026.1'||!object(a.profile)||!str(a.profile.name)||!str(a.profile.className)||(a.contentRevision!==undefined&&!str(a.contentRevision)))return false;
+    if(a.questions===undefined)return true; // Historical receipts without snapshots remain raw and are never reinterpreted with current content.
+    if(!array(a.questions)||a.questions.length!==a.total||!a.questions.every((q,i)=>snapshotQuestion(q,(a.questionIds as unknown[])[i])))return false;
+    const questions=a.questions as unknown as Question[],responses=a.answers as Record<string,Answer>;
+    if(questions.some(q=>!isAnswered(q,responses[q.id])))return false;
+    if(a.assessment==='manual')return questions.every(q=>q.part==='writing');
+    return questions.every(q=>q.part!=='writing')&&a.correct===questions.filter(q=>JSON.stringify(q.answer)===JSON.stringify(responses[q.id])).length;
   }
   for (const [key, draft] of Object.entries(value.drafts))
     if (
@@ -187,7 +171,7 @@ export function validateState(value: unknown, config: CourseConfig): State {
         !attempt(h.first) ||
         !attempt(h.latest) ||
         !integer(h.submissions) ||
-        (h.submissions === 0) !== (h.first === null && h.latest === null)
+        (h.submissions === 0 ? h.first !== null || h.latest !== null : h.first === null || h.latest === null)
       )
         return bad();
   if (value.mixed !== null) {

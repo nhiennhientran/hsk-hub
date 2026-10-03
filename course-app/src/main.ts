@@ -98,7 +98,7 @@ let store = levelStore(level === 3 ? 3 : 2);
 const audio = createBrowserAudioService();
 let available = availableLessons(config);
 let loaded: Lesson[] = [];
-const legacyHSK1Entry=level===1&&/\/(?:lesson|learning|lesson9-pilot)\.html$/.test(location.pathname);
+const legacyHSK1Entry=level===1&&(/\/(?:lesson|learning|lesson9-pilot)\.html$/.test(location.pathname)||new URLSearchParams(location.search).has('mode'));
 let route = location.hash.startsWith("#/")||legacyHSK1Entry
     ? fromHSK1(parseHSK1Route(location.href))
     : parseRoute(location.hash||`#view=${document.querySelector<HTMLMetaElement>('meta[name="hsk-entry-view"]')?.content??'courses'}`, level === 3 ? 18 : 15, level),
@@ -938,6 +938,7 @@ function renderReceipt(
           el("p", q.prompt),
           el("p", answerText(q, a.answers[q.id]), "submitted-answer"),
         );
+        if(a.assessment==='automatic'){item.append(el('p',copy(`正确答案：${answerText(q,q.answer)}`,`Đáp án: ${answerText(q,q.answer)}`)));if(q.explanation)item.append(el('p',q.explanation))}
         ol.append(item);
       } else {
         const item = el("li");

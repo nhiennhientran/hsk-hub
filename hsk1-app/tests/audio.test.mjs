@@ -517,3 +517,9 @@ test('silent positive duration still rejects truncated segments and does not cer
  assert.equal(b.service.snapshot().status,'loading');b.audio.seeking=false;b.audio.paused=true;b.audio.time(3);
  assert.equal(b.service.snapshot().status,'loading');b.clock.fire();assert.equal((await whole).ok,false);b.service.dispose();
 });
+test('bounded original clips stay silent through WebKit zero duration and until the initial seek settles',async()=>{
+ const {audio,service}=setup();const pending=service.play(track());assert.equal(audio.muted,true);audio.readyState=4;audio.duration=0;audio.playing();assert.equal(service.snapshot().status,'loading');assert.equal(audio.muted,true);audio.duration=100;audio.seeking=true;audio.emit('durationchange');assert.equal(audio.currentTime,1);assert.equal(audio.muted,true);assert.equal(service.snapshot().status,'loading');audio.seeking=false;audio.emit('seeked');assert.equal(audio.muted,false);assert.equal(service.snapshot().status,'playing');assert.equal((await pending).ok,true);service.dispose();
+});
+test('an original whole track is not accidentally left muted after a cancelled bounded clip',async()=>{
+ const {audio,service}=setup();const pending=service.play(track());assert.equal(audio.muted,true);service.stop();assert.equal((await pending).code,'cancelled');const whole=service.play({url:'whole.mp3',label:'Whole original'});assert.equal(audio.muted,false);audio.metadata();audio.playing();assert.equal((await whole).ok,true);service.dispose();
+});

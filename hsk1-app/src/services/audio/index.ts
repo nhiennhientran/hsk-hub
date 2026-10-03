@@ -37,6 +37,8 @@ export interface AudioPort extends EventPort {
   playbackRate: number;
   defaultPlaybackRate: number;
   preservesPitch: boolean;
+  /** Temporarily silent until a bounded segment has valid metadata and a settled seek. */
+  muted?:boolean;
   readonly paused: boolean;
   readonly seeking: boolean;
   error?: { message?: string } | null;
@@ -250,7 +252,8 @@ export function createAudioService(options: {
     let zeroDurationClock: number | undefined;
     let waitingTime: number | undefined;
     const confirmPlaying = () => {
-      if (!nativePlaying || !positioned || !current(request) || request.paused || state.status === 'error') return;
+      if (!nativePlaying || !positioned || audio.seeking || !current(request) || request.paused || state.status === 'error') return;
+      audio.muted=false;
       request.trackStarted = true;
       waitingTime = undefined;
       publish({ status: 'playing', issue: null, currentTime: audio.currentTime });
@@ -324,7 +327,8 @@ export function createAudioService(options: {
       if (current(request) && state.status === 'loading') { waitingTime = undefined; zeroDurationClock = undefined; }
     }, request.trackCleanups);
     listen(audio, 'seeked', () => {
-      if (current(request) && request.trackStarted && state.status === 'loading') waitingTime = audio.currentTime;
+      if (current(request) && !request.trackStarted) confirmPlaying();
+      else if (current(request) && request.trackStarted && state.status === 'loading') waitingTime = audio.currentTime;
     }, request.trackCleanups);
     listen(audio, 'timeupdate', () => {
       if (!current(request)) return;
@@ -368,14 +372,16 @@ export function createAudioService(options: {
     listen(audio, 'error', () => fail(request, audio.error?.message
       ? `Không phát được âm thanh: ${audio.error.message}` : 'Không tải được âm thanh. Kiểm tra kết nối rồi thử lại.'), request.trackCleanups);
     try {
+      audio.muted=track.start!==undefined||track.end!==undefined;
       audio.src = track.url;
       audio.defaultPlaybackRate = state.rate;
       audio.playbackRate = state.rate;
       audio.preservesPitch = true;
       audio.load();
       position();
-      // Call play within the original gesture. Metadata seeking happens before
-      // confirming playback, without awaiting a fetch that loses user activation.
+      // Preserve the original user gesture, but bounded clips stay silent until
+      // positive metadata and a settled seek establish the exact source range.
+      // WebKit can emit native playing at zero while reporting duration=0.
       if (state.status !== 'error') nativePlay(request);
     } catch (error) { fail(request, playbackIssue(error)); }
   }
