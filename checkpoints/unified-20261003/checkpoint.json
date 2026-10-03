@@ -25,11 +25,11 @@
     },
     {
       "step": 5,
-      "status": "pending"
+      "status": "in_progress"
     },
     {
       "step": 6,
-      "status": "pending"
+      "status": "in_progress"
     },
     {
       "step": 7,
@@ -73,16 +73,16 @@
     }
   ],
   "checks": {
-    "course_unit": "44 passed",
-    "hsk1_unit": "335 passed at local f731d303",
-    "course_build": "passed",
+    "course_unit": "50 passed on integratedL6–7 content",
+    "hsk1_unit": "335 passed after audio integration; unchangedHSK1 sources",
+    "course_build": "passed with integratedL6–7 content",
     "nonempty_storage": "passed in successful checkpoint for cross-level drafts, legacy HSK3 preservation and scoped backup restore",
     "browsers": "52 cases passed, 26 each Chromium and WebKit, at remote aa3ee664 / exact local tree f731d303",
     "physical_devices": "not run",
     "human_listening": "not run"
   },
   "publication": "blocked until all sixteen required acceptance gates pass",
-  "updated": "2026-10-03T06:05:00Z",
+  "updated": "2026-10-03T07:33:00Z",
   "remoteSourceCommit": "1f091355561bef02f1b518fab81bb468dc1fc7d9",
   "localSourceCommit": "f37364c280534d7505ad8250e89bef482272faaa",
   "testedSuccessfulCheckpoint": {
@@ -98,10 +98,13 @@
     "scope": "HSK2L2–3 added across all7 sections and4 widths;9x2 self-assessment refresh and scoped backup restore; all pilot audio/48-route foundation checks retained, not all48lesson acceptance."
   },
   "currentCI": {
-    "lastRun": 37100816011,
-    "status": "success",
-    "nextLocalTestsDiscoverable": 104,
-    "nextScope": "HSK2L4–5, revised original survey table layouts inL1/L2, L4 experience table and cross-page sources, local persisted survey independence"
+    "lastPassedRun": 37105595387,
+    "lastPassedBrowserCases": 104,
+    "audioIntegrationRun": 37106355777,
+    "audioIntegrationStatus": "in_progress",
+    "audioCases": 134,
+    "nextLocalTestsDiscoverable": 154,
+    "nextScope": "HSK2L6–7 all source activities,27image associations,original reflection/group tables,persistence and mobile inner scrolling"
   },
   "contentPilot": {
     "levels": [
@@ -126,8 +129,8 @@
       2,
       3
     ],
-    "merged": false,
-    "status": "author-alignment-in-progress"
+    "merged": true,
+    "status": "independently reviewed25words/7pending;integratedremote3cb40b9,CI37106355777running"
   },
   "contentBatch23": {
     "activities": 55,
@@ -143,6 +146,14 @@
     "illustrations": 29,
     "officialFields": 44,
     "independentSourceAndRecheck": "passed,497assertions plus actualsource/SVGpixels",
-    "browser": "pending"
+    "browser": "passed104/104,52eachChromium/WebKit,run37105595387,remote0353994/localbad2466 exacttree48683c3163e417a7e6ab39ef6bd8f91e7f8acaf6"
+  },
+  "contentBatch67": {
+    "activities": 55,
+    "fields": 125,
+    "illustrations": 27,
+    "officialFields": 42,
+    "independentSourceAndArtwork": "949assertions passed;27actualindependentSVGpixelreviews;finalsource/drafthashes archived",
+    "browser": "pending154case aggregateCI"
   }
 }
