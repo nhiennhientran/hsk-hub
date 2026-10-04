@@ -73,44 +73,45 @@
     }
   ],
   "checks": {
-    "course_unit": "112 passed locally after16 glossary star additions",
-    "hsk1_unit": "335 passed locally; HSK1 code and30-v1 bank unchanged",
-    "course_build": "passed locally for star metadata candidate",
-    "nonempty_storage": "504 native regression atad6d677 passed; star patch changes no IDs, meanings, grades or records",
-    "browsers": "504/504 plus53preflight each atad6d677; new506 collection pending execution",
+    "course_unit": "112 passed locally for listening integration",
+    "hsk1_unit": "339 passed locally including four new listening navigation checks; bank unchanged",
+    "course_build": "both course and HSK1 builds passed locally",
+    "nonempty_storage": "506native baseline passed; real bridge/lifecycle nonempty old data retention passed locally",
+    "browsers": "506/506 plus53preflight each at03cb7d4; next514 unified and8 standalone collected, execution pending",
     "physical_devices": "not run",
     "human_listening": "not run"
   },
   "publication": "blocked until all sixteen required acceptance gates pass; production unchanged",
-  "updated": "2026-10-04T08:33:00Z",
+  "updated": "2026-10-04T09:02:00Z",
   "remoteSourceCommit": "1f091355561bef02f1b518fab81bb468dc1fc7d9",
   "localSourceCommit": "f37364c280534d7505ad8250e89bef482272faaa",
   "testedSuccessfulCheckpoint": {
-    "remote": "ad6d677fedb1912cf1d9764b4d22a1aa17bc28f7",
-    "local": "ad6d677fedb1912cf1d9764b4d22a1aa17bc28f7",
-    "tree": "e767424224e909be394be3660a5e347dca4ad2a4",
-    "run": 37187762775,
+    "remote": "03cb7d4a53cbd7aca9f90c69a66e9dd8cd428f44",
+    "local": "03cb7d4a53cbd7aca9f90c69a66e9dd8cd428f44",
+    "tree": "5304db1c6e7034e367fbc2a480ba57fd868011f4",
+    "run": 37189551087,
     "browsers": [
       "chromium",
       "webkit"
     ],
-    "tests": 504,
+    "tests": 506,
     "preflightPerEngine": 53,
-    "scope": "HSK2L1–15 and HSK3L1–18 deep body/activity regression; appendices/audio/HSK1 source completion and final48 gates remain"
+    "scope": "HSK2L1–15, HSK3L1–18 body/activity and supplement flags; final48/HSK1/audio gates incomplete"
   },
   "currentCI": {
-    "lastPassedRun": 37187762775,
-    "lastPassedBrowserCases": 504,
+    "lastPassedRun": 37189551087,
+    "lastPassedBrowserCases": 506,
     "audioIntegrationRun": 37106355777,
     "audioIntegrationStatus": "original37106355777failed130passed4failed;repaired37107556124passed154",
     "audioCases": 134,
-    "nextLocalTestsDiscoverable": 506,
-    "nextScope": "16 existing HSK3 word-sense glossary star flags and sources, preserving prior504",
+    "nextLocalTestsDiscoverable": 514,
+    "nextScope": "HSK1 same-lesson hidden/listening scene navigation in both hosts; prior506 retention",
     "lessons67Run": 37107213747,
     "lessons67Status": "previous37107213747failed144passed10failed;repaired37107556124passed154",
     "extraPreflightCases": 53,
-    "newCandidateStatus": "Star source crosswalk independently reviewed;112unit/build/types and506collection passed; native execution pending",
-    "extraPreflightScope": "last successful count atad6d677"
+    "newCandidateStatus": "339HSK1+112course units/both builds/types and actual bridge regression passed;514 unified plus8 standalone native pending",
+    "extraPreflightScope": "last successful count at03cb7d4",
+    "nextStandaloneBrowserCases": 8
   },
   "contentPilot": {
     "levels": [
@@ -197,10 +198,10 @@
     "independentChecks": 1758,
     "browser": "passed174/174 aggregate browser cases and8/8mobilepreflight, run37109960704, remotee8b7aef"
   },
-  "updatedAt": "2026-10-04T08:33:00Z",
-  "remoteDevelopmentCommit": "ad6d677fedb1912cf1d9764b4d22a1aa17bc28f7",
-  "localDevelopmentCommit": "ad6d677fedb1912cf1d9764b4d22a1aa17bc28f7",
-  "exactSharedTree": "e767424224e909be394be3660a5e347dca4ad2a4",
+  "updatedAt": "2026-10-04T09:02:00Z",
+  "remoteDevelopmentCommit": "03cb7d4a53cbd7aca9f90c69a66e9dd8cd428f44",
+  "localDevelopmentCommit": "03cb7d4a53cbd7aca9f90c69a66e9dd8cd428f44",
+  "exactSharedTree": "5304db1c6e7034e367fbc2a480ba57fd868011f4",
   "ciHistoryActual": [
     {
       "run": 37105595387,
@@ -428,6 +429,18 @@
       "preflightPerEngine": 53,
       "actualLogsRead": true,
       "visualEvidence": "course-app/docs/hsk3-lessons1618-integration/ci-acceptance.json"
+    },
+    {
+      "run": 37189551087,
+      "commit": "03cb7d4a53cbd7aca9f90c69a66e9dd8cd428f44",
+      "status": "success",
+      "passed": 506,
+      "failed": 0,
+      "chromium": 253,
+      "webkit": 253,
+      "preflightPerEngine": 53,
+      "actualLogsRead": true,
+      "evidence": "course-app/docs/hsk3-appendix-stars/ci-acceptance.json"
     }
   ],
   "audioBatch23": {
@@ -583,7 +596,7 @@
       "pinnedBrowserDownload": "invalid/truncated ZIP; not installed"
     },
     "draftRecovery": "Lost local-only L8–9 and HSK2 L4–5 audio drafts not recovered; do not infer presence from historical hash",
-    "newCandidateStatus": "ad6d677 accepted504; isolated star metadata506 pending"
+    "newCandidateStatus": "03cb7d4 accepted506; listening integration514+8 pending"
   },
   "contentHSK3Batch89": {
     "status": "scoped source/content/figure/browser accepted at d5feac8",
@@ -699,7 +712,7 @@
     "browserExecution": "504/504 plus53preflight each; four actual logs and bounded screenshot samples inspected"
   },
   "hsk3GlossaryStars": {
-    "status": "reviewed metadata candidate; native506 pending",
+    "status": "source crosswalk and506native regression accepted at03cb7d4",
     "sourcePdfPages": [
       186,
       187,
@@ -717,5 +730,15 @@
     "newlyMarked": 16,
     "allowedDiff": "supplementarySyllabus and appendixSource only; original values byte-restorable",
     "fullOrdinaryGlossaryAndEnglishAppendixAudit": false
+  },
+  "hsk1ListeningRepair": {
+    "status": "local integration passed; both-host native pending",
+    "persistentKeysAdded": 0,
+    "bankAndFingerprintsChanged": false,
+    "ordinaryRoutePersistence": "unchanged",
+    "boundedRepair": "active text section href tracks accepted scene update",
+    "unifiedCases": 8,
+    "standaloneCases": 8,
+    "totalSuiteUnified": 514
   }
 }

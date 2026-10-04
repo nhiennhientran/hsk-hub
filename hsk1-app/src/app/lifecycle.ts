@@ -20,6 +20,7 @@ interface Attempt {
   controller: AbortController;
   surface: HTMLElement;
   handle?: MountHandle;
+  ready?: boolean;
 }
 
 const aborted = Symbol('aborted');
@@ -112,6 +113,15 @@ export function createLifecycle(options: LifecycleOptions): Lifecycle {
 
   async function show(route: Route): Promise<void> {
     if (disposed) return;
+    // A ready feature may retain its ephemeral view for a narrow route change.
+    // No loading/ready transition is emitted: this is the same mounted view.
+    if (active?.ready && active.handle?.updateRoute) {
+      try {
+        if (active.handle.updateRoute(route)) {
+          active.route = route; lastRoute = route; return;
+        }
+      } catch (error) { fail(active, [error]); return; }
+    }
     const previous = active;
     const attempt: Attempt = {
       route,
@@ -164,6 +174,7 @@ export function createLifecycle(options: LifecycleOptions): Lifecycle {
       const result = await ready;
       if (result === aborted || !isCurrent(attempt)) return;
       controls(attempt, false);
+      attempt.ready = true;
       setState('ready');
       onState({ state: 'ready', route });
     } catch (error) {

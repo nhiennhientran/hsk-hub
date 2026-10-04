@@ -40,6 +40,9 @@ jobs:
       - name: Test unified app checkpoint
         working-directory: course-app
         run: npx playwright test --config=playwright.unified.config.ts --project=${{ matrix.browser }} --shard=${{ matrix.shard }}/2
+      - name: Build and verify standalone HSK1 listening scene regression
+        if: matrix.shard == 2
+        run: npm run build --prefix hsk1-app && cd hsk1-app && npx playwright test textbook-scene-navigation.spec.ts --project=${{ matrix.browser }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -145,3 +148,13 @@ jobs:
         with:
           name: hsk123-hsk3lessons1618-screens-${{ matrix.browser }}-shard${{ matrix.shard }}
           path: course-app/test-results/unified-hsk3-lesson1[678]-*.png
+
+      - uses: actions/upload-artifact@v4
+        if: always() && matrix.shard == 2
+        with:
+          name: hsk1-standalone-scene-${{ matrix.browser }}
+          path: |
+            hsk1-app/.repro-output/step8-browser.json
+            hsk1-app/test-results/hsk1-scene-*.png
+            hsk1-app/test-results/**/*.md
+          include-hidden-files: true

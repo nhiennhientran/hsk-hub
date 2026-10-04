@@ -5,7 +5,7 @@ import type { AudioService } from '../../services/audio/index.ts';
 import type { BookLesson, TextbookContent } from '../../services/content/textbook.ts';
 import { button, element } from './dom.ts';
 
-export function mountText(host: HTMLElement, options: { lesson: BookLesson; content: TextbookContent; audio: AudioService; signal: AbortSignal;scene?:number;onSceneChange?:(scene:number)=>void }): { dispose(): void } {
+export function mountText(host: HTMLElement, options: { lesson: BookLesson; content: TextbookContent; audio: AudioService; signal: AbortSignal;scene?:number;onSceneChange?:(scene:number)=>void }): { dispose(): void; updateScene(scene: number): void } {
   const { lesson, content, audio, signal } = options;
   const copy = textbookCopy.text;
   const section = element('section'); section.id = 'textbook-text'; section.append(element('h2', copy.heading));
@@ -16,6 +16,7 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
   const modeLabel = element('label'); const mode = element('input'); mode.type = 'checkbox'; mode.id = 'text-listen-mode'; modeLabel.append(mode, element('span', copy.listenMode));
   const showLabel = element('label'); const show = element('input'); show.type = 'checkbox'; show.id = 'text-show-original'; show.checked = true; showLabel.append(show, element('span', copy.showOriginal));
   const body = element('div'); body.id = 'scene-content'; body.setAttribute('role', 'tabpanel');
+  let pendingFocus: 'picker' | undefined;
   let current = 0; let sceneLifetime: AbortController | undefined;
   function originalVisibility(): void { for (const node of body.querySelectorAll<HTMLElement>('[data-original-text]')) node.hidden = !show.checked; }
   function draw(index: number): void {
@@ -43,7 +44,7 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
       if (!source.available) { setBilingual(one, copy.noLineAudio); one.title = bilingualText(textbookIssue(source.reason, copy.audioUnavailable)); }
       card.append(text, one); body.append(card);
     }
-    if (mode.checked) show.checked = false; originalVisibility();
+    originalVisibility();
   }
   const selectScene=(index:number)=>{if(options.onSceneChange){audio.stop();options.onSceneChange(index+1)}else draw(index)};
   for (const [index, scene] of lesson.scenes.entries()) {
@@ -55,7 +56,7 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
       selectScene(target); tabButtons[target].focus();
     }, { signal }); tabs.append(tab); tabButtons.push(tab);
   }
-  picker.addEventListener('change', () => selectScene(Number(picker.value)), { signal });
+  picker.addEventListener('change', () => { pendingFocus = 'picker'; selectScene(Number(picker.value)); }, { signal });
   mode.addEventListener('change', () => { show.checked = !mode.checked; originalVisibility(); }, { signal });
   show.addEventListener('change', originalVisibility, { signal });
   pickerLabel.append(picker); toolbar.append(pickerLabel, modeLabel, showLabel); section.append(tabs, toolbar, body);
@@ -70,5 +71,14 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
     const control = button(copy.tonguePlay, () => { void audio.play({ ...tongue.request, label: bilingualText(copy.tongueLabel(lesson.id)) }, { signal }); }, signal); control.dataset.tongueAudio = String(lesson.id); box.append(control); section.append(box);
   }
   host.append(section); signal.addEventListener('abort', () => sceneLifetime?.abort(), { once: true }); draw(Math.max(0,Math.min((options.scene??1)-1,lesson.scenes.length-1)));
-  return { dispose() { sceneLifetime?.abort(); section.remove(); } };
+  return {
+    updateScene(scene) {
+      audio.stop();
+      draw(Math.max(0, Math.min(scene - 1, lesson.scenes.length - 1)));
+      // The unified shell temporarily detaches this view. Restore the originating
+      // control, or the selected tab on history navigation, after reattachment.
+      (pendingFocus === 'picker' || picker.getClientRects().length > 0 ? picker : tabButtons[current])?.focus({ preventScroll: true });
+      pendingFocus = undefined;
+    },
+    dispose() { sceneLifetime?.abort(); section.remove(); } };
 }

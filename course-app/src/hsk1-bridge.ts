@@ -103,34 +103,38 @@ export function createHSK1Bridge(options: {
     collectCurrentDraft(){return current?.prepareExit()??false},
     async store(){return (await learning()).store},
     async render(target: HTMLElement, route: Route) {
-      lifecycle?.dispose();
-      host = document.createElement("section");
-      host.id = "module-host";
-      host.tabIndex = -1;
-      target.append(host);
-      lifecycle = createLifecycle({
-        host,
-        learning,
-        audio: () => Promise.resolve(options.audio),
-        navigate: (r) => options.navigate(fromHSK1(r)),
-        loadModule: (feature) => loaders[feature](),
-        onState: (state) => {
-          target.dataset.moduleState = state.state;
-          if (state.state === "error") {
-            options.error(
-              "暂时无法打开本部分，请重试 · Tạm thời không mở được mục này, hãy thử lại",
-            );
-          }
-          if (state.state === "ready") {
-            target
-              .querySelector<HTMLElement>("h1")
-              ?.setAttribute("tabindex", "-1");
-            target
-              .querySelector<HTMLElement>("h1")
-              ?.focus({ preventScroll: true });
-          }
-        },
-      });
+      if (!lifecycle) {
+        host = document.createElement("section");
+        host.id = "module-host";
+        host.tabIndex = -1;
+        target.append(host);
+        lifecycle = createLifecycle({
+          host,
+          learning,
+          audio: () => Promise.resolve(options.audio),
+          navigate: (r) => options.navigate(fromHSK1(r)),
+          loadModule: (feature) => loaders[feature](),
+          onState: (state) => {
+            target.dataset.moduleState = state.state;
+            if (state.state === "error") {
+              options.error(
+                "暂时无法打开本部分，请重试 · Tạm thời không mở được mục này, hãy thử lại",
+              );
+            }
+            if (state.state === "ready") {
+              target
+                .querySelector<HTMLElement>("h1")
+                ?.setAttribute("tabindex", "-1");
+              target
+                .querySelector<HTMLElement>("h1")
+                ?.focus({ preventScroll: true });
+            }
+          },
+        });
+      }
+      // The shell replaces its children before each route render. Reattach the
+      // same lifecycle host so same-lesson scene changes can retain their view.
+      target.append(host!);
       await lifecycle.show(toHSK1(route));
     },
     async flush() {

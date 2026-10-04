@@ -29,6 +29,8 @@ export interface ModuleContext {
 
 export interface MountHandle {
   readonly ready: Promise<void>;
+  /** Optional in-place navigation after ready; false requests the normal remount. */
+  updateRoute?(route: Route): boolean;
   unmount(): void;
 }
 

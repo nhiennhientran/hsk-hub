@@ -1,0 +1,44 @@
+{
+  "commit": "03cb7d4a53cbd7aca9f90c69a66e9dd8cd428f44",
+  "tree": "5304db1c6e7034e367fbc2a480ba57fd868011f4",
+  "runId": 37189551087,
+  "runUrl": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37189551087",
+  "conclusion": "success",
+  "fullBrowserPassed": 506,
+  "preflightPassedPerEngine": 53,
+  "workers": 1,
+  "retries": 0,
+  "allFourActualLogsRead": true,
+  "jobs": [
+    {
+      "id": 111398698177,
+      "engine": "chromium",
+      "shard": 1,
+      "fullPassed": 127,
+      "preflightPassed": 53
+    },
+    {
+      "id": 111398698274,
+      "engine": "chromium",
+      "shard": 2,
+      "fullPassed": 126
+    },
+    {
+      "id": 111398698303,
+      "engine": "webkit",
+      "shard": 2,
+      "fullPassed": 126
+    },
+    {
+      "id": 111398698315,
+      "engine": "webkit",
+      "shard": 1,
+      "fullPassed": 127,
+      "preflightPassed": 53
+    }
+  ],
+  "scope": "16 supplementary flags and source-page references; all22 heads/23 senses retained, native dialogs show bilingual labels without record mutations",
+  "visualScope": "No app layout/code changed. Native word-dialog content assertions passed; additional popup screenshot sampling is queued with the next listening regression batch. Prior504 body/figure visual evidence remains in its own acceptance record.",
+  "productionCommit": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
+  "productionUnchanged": true
+}

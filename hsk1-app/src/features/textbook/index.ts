@@ -1,4 +1,5 @@
-import { SECTIONS, type FeatureModule } from '../../app/contracts.ts';
+import { SECTIONS, type FeatureModule, type Route } from '../../app/contracts.ts';
+import { normalizeRoute, routeKey, routeHref } from '../../app/router.ts';
 import { bilingualText, setBilingual } from '../../app/bilingual.ts';
 import { readingStatusCopy, textbookCopy as copy, textbookIssue, textbookSection } from '../../app/i18n/textbook.ts';
 import '../../app/bilingual.css';
@@ -15,6 +16,7 @@ import { button, element, routeLink } from './dom.ts';
 import './textbook.css';
 
 export const mount: FeatureModule['mount'] = (host, context) => {
+  let updateRoute: (route: Route) => boolean = () => false;
   const article = element('article'); article.id = 'textbook-module'; article.className = 'module-entry textbook';
   const heading = element('h1', copy.title); heading.tabIndex = -1;
   const name = element('p', copy.loading(context.route.lesson));
@@ -70,7 +72,29 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     if (section === 'vocab') {
       const view = mountVocabulary(body, { lesson, content, audio, signal: lifetime.signal,
         getMastered: () => reading.read().mastered, markMastered: reading.setMastered }); disposeView = view.dispose; updateView = view.update;
-    } else if (section === 'text') disposeView = mountText(body, { lesson, content, audio, signal: lifetime.signal,scene:context.route.scene,onSceneChange:scene=>context.navigate({...context.route,scene}) }).dispose;
+    } else if (section === 'text') {
+      let currentRoute = context.route;
+      const view = mountText(body, { lesson, content, audio, signal: lifetime.signal,
+        scene: currentRoute.scene, onSceneChange: scene => context.navigate({ ...currentRoute, scene }) });
+      disposeView = view.dispose;
+      // Preferences belong only to this uninterrupted lesson's text view. Other
+      // routes use the normal unmount, and reloads always start with defaults.
+      updateRoute = route => {
+        if (left || route.feature !== 'textbook' || route.section !== 'text' || route.lesson !== lesson.id) return false;
+        currentRoute = route;
+        view.updateScene(route.scene ?? 1);
+        const currentTextLink=nav.querySelector<HTMLAnchorElement>('a[data-section="text"]');
+        if(currentTextLink)currentTextLink.href=routeHref(route);
+        // Only the continuation route changes; scene selection must not revisit
+        // the section, touch progress timestamps, or persist display preferences.
+        const next = normalizeRoute(route), saved = session.store.snapshot().data.navigation;
+        if (!saved || routeKey(saved) !== routeKey(next)) {
+          session.store.edit(draft => { draft.navigation = next; });
+          session.requestSave();
+        }
+        return true;
+      };
+    }
     else if (section === 'grammar') disposeView = mountLanguage(body, { lesson, audio, signal: lifetime.signal }).dispose;
     else if (section === 'hanzi') {
       const view = mountHanzi(body, { chars: lesson.hanzi.chars, words: lesson.vocab, curriculum: lesson.hanzi, signal: lifetime.signal }); disposeView = view.dispose;
@@ -101,5 +125,5 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     }
     unsubscribe = session.store.subscribe(update); reading.visit(); update();
   });
-  return { ready, unmount() { if (left) return; left = true; lifetime.abort(); context.signal.removeEventListener('abort', close); unsubscribe(); disposeView(); disposePlayer(); flush(); article.remove(); } };
+  return { ready, updateRoute: route => updateRoute(route), unmount() { if (left) return; left = true; lifetime.abort(); context.signal.removeEventListener('abort', close); unsubscribe(); disposeView(); disposePlayer(); flush(); article.remove(); } };
 };

@@ -420,3 +420,37 @@ test('dispose inside a throwing unmount still reports the cleanup failure', asyn
   lifecycle.dispose();
   assert.equal(unmounts, 1);
 });
+
+test('ready in-place route updates keep their view, skip remount focus, and retry the latest route', async () => {
+  const main = host(), seen = [], states = [];
+  let mounts = 0, unmounts = 0, rejectUpdate = false;
+  const lifecycle = createLifecycle({ host: main, navigate() {}, onState: s => states.push(s.state),
+    loadModule: async () => ({ mount: (_, context) => {
+      mounts++;
+      return { ready: Promise.resolve(), updateRoute(next) {
+        seen.push(next); if (rejectUpdate) return false;
+        return next.feature === context.route.feature && next.lesson === context.route.lesson;
+      }, unmount() { unmounts++; } };
+    } }) });
+  await lifecycle.show({ feature: 'textbook', lesson: 1, section: 'text', scene: 1 });
+  const surface = main.children[0];
+  await lifecycle.show({ feature: 'textbook', lesson: 1, section: 'text', scene: 2 });
+  assert.equal(mounts, 1); assert.equal(unmounts, 0); assert.equal(main.children[0], surface);
+  assert.deepEqual(states, ['loading', 'ready']);
+  rejectUpdate = true; await lifecycle.retry();
+  assert.equal(seen.at(-1).scene, 2); assert.equal(mounts, 2); assert.equal(unmounts, 1);
+  await lifecycle.show({ feature: 'home', lesson: 1 });
+  assert.equal(mounts, 3); lifecycle.dispose(); assert.equal(unmounts, 3);
+});
+
+test('in-place updates are never attempted on loading or disposed views', async () => {
+  const pending = deferred(); let updates = 0, mounts = 0;
+  const lifecycle = createLifecycle({ host: host(), navigate() {}, onState() {},
+    loadModule: async () => ({ mount: () => ({ ready: ++mounts === 1 ? pending.promise : Promise.resolve(),
+      updateRoute() { updates++; return true; }, unmount() {} }) }) });
+  const first = lifecycle.show(route('textbook')); await turn();
+  await lifecycle.show(route('textbook', 2)); await first;
+  assert.equal(updates, 0); assert.equal(mounts, 2);
+  lifecycle.dispose(); await lifecycle.show(route('textbook', 3));
+  assert.equal(updates, 0); pending.resolve();
+});

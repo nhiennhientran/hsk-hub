@@ -8,7 +8,7 @@ test('HSK3 all sixteen reconciled glossary stars show bilingual supplement label
  for(const n of [...new Set(report.edits.map(e=>e.lesson))]){
   const lesson=lessons.find(l=>l.number===n)!;await openLesson(page,lesson,'vocab');const before=await page.evaluate(()=>Object.fromEntries(Object.keys(localStorage).filter(k=>!k.includes('route')).map(k=>[k,localStorage.getItem(k)])));
   for(const e of report.edits.filter(e=>e.lesson===n)){
-   await page.locator(`[data-word-id="${e.id}"] button`).first().click();const dialog=page.getByRole('dialog');await expect(dialog).toContainText('★ 教材拓展词（本级超纲）');await expect(dialog).toContainText('ngoài phạm vi cấp này');await expect(dialog.locator('h2')).toHaveText(e.word);await dialog.getByRole('button',{name:/关闭/}).click();await expect(dialog).not.toBeVisible();
+   await page.locator(`[data-word-id="${e.id}"] button`).first().click();const dialog=page.getByRole('dialog');await expect(dialog).toContainText('★ 教材拓展词（本级超纲）');await expect(dialog).toContainText('ngoài phạm vi cấp này');await expect(dialog.locator('h2')).toHaveText(e.word);if(e.id===report.edits.find(x=>x.lesson===n)!.id)await dialog.screenshot({path:`test-results/unified-hsk3-glossary-stars-l${n}-${test.info().project.name}.png`});await dialog.getByRole('button',{name:/关闭/}).click();await expect(dialog).not.toBeVisible();
   }
   expect(await page.evaluate(()=>Object.fromEntries(Object.keys(localStorage).filter(k=>!k.includes('route')).map(k=>[k,localStorage.getItem(k)])))).toEqual(before);
  }
