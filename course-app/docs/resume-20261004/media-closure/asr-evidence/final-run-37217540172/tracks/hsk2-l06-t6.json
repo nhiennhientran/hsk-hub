@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l06:audio6",
+    "level": 2,
+    "lesson": 6,
+    "track": 6,
+    "kind": "vocab",
+    "text": 3,
+    "file": "course-assets/hsk2/audio/6-6.mp3",
+    "sha256": "c0081dd71b04f7f81c08da805de9cba523841bc07996354a93ddf6a2f9519303",
+    "bytes": 343995,
+    "manifestDurationSeconds": 12.461333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 199296,
+      "durationSeconds": 12.456,
+      "sha256": "043cbd2075e35c95acac0ca3ed3f108d58735c82a58791e80b4a29a715fdad13"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 12.456,
+    "duration_after_vad": 12.456,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 1.04,
+      "text": "长",
+      "tokens": [
+        50364,
+        32271,
+        50514
+      ],
+      "avg_logprob": -0.498928878042433,
+      "compression_ratio": 0.625,
+      "no_speech_prob": 0.14171941578388214,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 1.04,
+          "word": "长",
+          "probability": 0.25805166363716125
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.0,
+      "end": 3.86,
+      "text": "鱼",
+      "tokens": [
+        50514,
+        165,
+        109,
+        120,
+        50614
+      ],
+      "avg_logprob": -0.498928878042433,
+      "compression_ratio": 0.625,
+      "no_speech_prob": 0.14171941578388214,
+      "words": [
+        {
+          "start": 3.0,
+          "end": 3.86,
+          "word": "鱼",
+          "probability": 0.6986282989382744
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.0,
+      "end": 5.76,
+      "text": "肉",
+      "tokens": [
+        50614,
+        31980,
+        50714
+      ],
+      "avg_logprob": -0.498928878042433,
+      "compression_ratio": 0.625,
+      "no_speech_prob": 0.14171941578388214,
+      "words": [
+        {
+          "start": 5.0,
+          "end": 5.76,
+          "word": "肉",
+          "probability": 0.6590768694877625
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 7.0,
+      "end": 7.9,
+      "text": "过",
+      "tokens": [
+        50714,
+        16866,
+        50864
+      ],
+      "avg_logprob": -0.498928878042433,
+      "compression_ratio": 0.625,
+      "no_speech_prob": 0.14171941578388214,
+      "words": [
+        {
+          "start": 7.0,
+          "end": 7.9,
+          "word": "过",
+          "probability": 0.9643494486808777
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 10.0,
+      "end": 10.56,
+      "text": "登",
+      "tokens": [
+        50864,
+        25874,
+        50964
+      ],
+      "avg_logprob": -0.498928878042433,
+      "compression_ratio": 0.625,
+      "no_speech_prob": 0.14171941578388214,
+      "words": [
+        {
+          "start": 9.860000000000001,
+          "end": 10.56,
+          "word": "登",
+          "probability": 0.03667519986629486
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 0.9664062639999997,
+  "realTimeFactor": 0.07758560244059086,
+  "observationChecks": {
+    "rawWordCount": 5,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "reviewedAtUtc": "2026-10-04T17:51:14.681Z",
+  "status": "passed",
+  "scope": "Independent actual negative probes and byte inventory. No browser rerun, no deployment, no modification of original baseline/frozen/dist.",
+  "negativeProbes": 27,
+  "results": [
+    {
+      "kind": "baseline-byte",
+      "status": "passed",
+      "error": "Protected baseline mismatch hsk4/index.html",
+      "outputCreated": false
+    },
+    {
+      "kind": "baseline-extra",
+      "status": "passed",
+      "error": "Missing or extra protected baseline files",
+      "outputCreated": false
+    },
+    {
+      "kind": "symlink",
+      "target": "source-activities/figures/l01-text-1-photo.png",
+      "status": "passed",
+      "error": "Symbolic links are not release inputs",
+      "outputCreated": false
+    },
+    {
+      "kind": "forged-legacy-overwrite",
+      "target": "hsk4/index.html",
+      "status": "passed",
+      "error": "Frozen checkpoint mismatch hsk4/index.html",
+      "outputCreated": false
+    },
+    {
+      "kind": "extra-private-pdf",
+      "target": "course-engine/source-activities/figures/private-book.pdf",
+      "status": "passed",
+      "error": "Frozen checkpoint mismatch course-engine/source-activities/figures/private-book.pdf",
+      "outputCreated": false
+    },
+    {
+      "kind": "extra-backend",
+      "target": "course-engine/tools/backend.js",
+      "status": "passed",
+      "error": "Frozen checkpoint mismatch course-engine/tools/backend.js",
+      "outputCreated": false
+    },
+    {
+      "kind": "poisoned-source-png",
+      "target": "course-engine/source-activities/figures/l01-text-1-photo.png",
+      "status": "passed",
+      "error": "Unapproved frozen original crop course-engine/source-activities/figures/l01-text-1-photo.png",
+      "outputCreated": false
+    },
+    {
+      "kind": "poisoned-auxiliary-svg",
+      "target": "course-engine/illustrations/hsk2-l01-airport-welcome.svg",
+      "status": "passed",
+      "error": "Unapproved frozen auxiliary illustration course-engine/illustrations/hsk2-l01-airport-welcome.svg",
+      "outputCreated": false
+    },
+    {
+      "kind": "poisoned-original-hsk1-audio",
+      "target": "course-engine/course-assets/audio/1-1.mp3",
+      "status": "passed",
+      "error": "Missing or changed required original audio course-engine/course-assets/audio/1-1.mp3",
+      "outputCreated": false
+    },
+    {
+      "kind": "poisoned-stroke-json",
+      "target": "course-engine/course-assets/hanzi/一.json",
+      "status": "passed",
+      "error": "Frozen handwriting identity mismatch course-engine/course-assets/hanzi/一.json",
+      "outputCreated": false
+    },
+    {
+      "kind": "poisoned-handwriting-provenance",
+      "target": "course-engine/course-assets/HANZI-PROVENANCE.json",
+      "status": "passed",
+      "error": "Untrusted frozen handwriting provenance",
+      "outputCreated": false
+    },
+    {
+      "kind": "poisoned-handwriting-license",
+      "target": "course-engine/course-assets/HANZI-DATA-LICENSE.txt",
+      "status": "passed",
+      "error": "Frozen handwriting license identity mismatch HANZI-DATA-LICENSE.txt",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-entry-crop",
+      "target": "new-hsk2/hsk2/source-activities/figures/l01-text-1-photo.png",
+      "status": "passed",
+      "error": "Missing required unified output new-hsk2/hsk2/source-activities/figures/l01-text-1-photo.png",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-engine-crop",
+      "target": "course-engine/source-activities/figures/l01-text-1-photo.png",
+      "status": "passed",
+      "error": "Missing required unified output course-engine/source-activities/figures/l01-text-1-photo.png",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-entry-html",
+      "target": "new-hsk3/hsk3/index.html",
+      "status": "passed",
+      "error": "Missing required unified output new-hsk3/hsk3/index.html",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-main-js",
+      "target": "course-engine/assets/index-Ke5oARNM.js",
+      "status": "passed",
+      "error": "Missing required bundle dependency course-engine/assets/index-Ke5oARNM.js from index.html",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-course-index-json",
+      "target": "course-engine/assets/course-index-BKGnz4SX.json",
+      "status": "passed",
+      "error": "Missing required bundle dependency course-engine/assets/course-index-BKGnz4SX.json from course-engine/assets/content-Dtx46D9v.js",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-textbook-json",
+      "target": "course-engine/assets/textbook-ksDEYuz_.json",
+      "status": "passed",
+      "error": "Missing required bundle dependency course-engine/assets/textbook-ksDEYuz_.json from course-engine/assets/compatibility-C9Qy_vBc.js",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-media-json",
+      "target": "course-engine/assets/media-references-DD5E_5K_.json",
+      "status": "passed",
+      "error": "Missing required bundle dependency course-engine/assets/media-references-DD5E_5K_.json from course-engine/assets/listening-BrTa9oFu.js",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-stage2-json",
+      "target": "course-engine/assets/stage2-bank-DOB9KrMv.json",
+      "status": "passed",
+      "error": "Missing required bundle dependency course-engine/assets/stage2-bank-DOB9KrMv.json from course-engine/assets/compatibility-C9Qy_vBc.js",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-stage3-json",
+      "target": "course-engine/assets/stage3-catalog-CH6Cx7h7.json",
+      "status": "passed",
+      "error": "Missing required bundle dependency course-engine/assets/stage3-catalog-CH6Cx7h7.json from course-engine/assets/compatibility-C9Qy_vBc.js",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-display-revisions-json",
+      "target": "course-engine/assets/textbook-display-revisions-DWScioD2.json",
+      "status": "passed",
+      "error": "Missing required bundle dependency course-engine/assets/textbook-display-revisions-DWScioD2.json from course-engine/assets/textbook-display-revisions-CGs5GDJK.js",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-stroke-json",
+      "target": "course-engine/course-assets/hanzi/一.json",
+      "status": "passed",
+      "error": "Missing required unified output course-engine/course-assets/hanzi/一.json",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-approved-svg",
+      "target": "course-engine/illustrations/hsk2-l01-airport-welcome.svg",
+      "status": "passed",
+      "error": "Missing required unified output course-engine/illustrations/hsk2-l01-airport-welcome.svg",
+      "outputCreated": false
+    },
+    {
+      "kind": "manifest-duplicate",
+      "status": "passed",
+      "error": "Missing or extra frozen checkpoint files",
+      "outputCreated": false
+    },
+    {
+      "kind": "wrong-production",
+      "status": "passed",
+      "error": "Wrong unified checkpoint identity",
+      "outputCreated": false
+    },
+    {
+      "kind": "fake-release",
+      "status": "passed",
+      "error": "Wrong unified checkpoint identity",
+      "outputCreated": false
+    }
+  ],
+  "positive": {
+    "baselineGitObjects": 1446,
+    "unservedDeveloperFiles": 55,
+    "authorizedReplacementSlots": 11,
+    "protectedPublicBytes": 1380,
+    "assembledFiles": 3893,
+    "uniqueSourceCrops": 150,
+    "verifiedCropPathCopies": 1200,
+    "sevenEntriesAllCropsResolve": true,
+    "approvedSVGs": 438,
+    "trustedMP3s": 357,
+    "releaseGateRejectedCases": 7,
+    "handwritingJSONs": 671,
+    "handwritingLicenses": 2
+  },
+  "artifact": {
+    "sourceCommit": "c9c515fcba394534787edcbd95968c58d8cf80d2",
+    "sourceDirty": true,
+    "sourceSnapshotSHA256": "3089f02f0392fc0171c82333011334e94d4da9e487419d993327bdef4a85ad9e",
+    "mode": "checkpoint",
+    "manifestSHA256": "644d3634e615d7e6c6ad5afdf139c0eb60a719a5a871f7f7d9b730e113a53032"
+  },
+  "reviewedTools": {
+    "packageUnifiedSHA256": "acd9c9b664104bd9311dc624c1769d3a0f8c05546cc831aa2e270bddc6983a34",
+    "assemblerSHA256": "b47964a655f069084f8c1de15098ea490c4e16e141b8bd9abf9b4baa7a87117d"
+  },
+  "priorFindings": [
+    {
+      "id": "release-dirty-build-scopes",
+      "status": "fixed with shared runtimeSourceScopes"
+    },
+    {
+      "id": "missing-entry-crop-and-manifest-row",
+      "before": "Actual assembly accepted 3892 files and omitted required aliased crop",
+      "status": "now rejected"
+    },
+    {
+      "id": "missing-static-json-and-manifest-rows",
+      "before": "Actual assembly accepted 3892 files and omitted course-index-BKGnz4SX.json",
+      "status": "now rejected"
+    },
+    {
+      "id": "self-authorized-stroke-json",
+      "before": "Actual assembly accepted non-JSON 一.json after file/input SHA metadata updates; unchanged provenance was ignored",
+      "status": "now rejected"
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l04:audio2",
+    "level": 2,
+    "lesson": 4,
+    "track": 2,
+    "kind": "vocab",
+    "text": 1,
+    "file": "course-assets/hsk2/audio/4-2.mp3",
+    "sha256": "32aa300cf8989cd526e0a87adbfecbed61955a9c5cbf6700c17879f6c9dee68d",
+    "bytes": 358395,
+    "manifestDurationSeconds": 13.061333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 208896,
+      "durationSeconds": 13.056,
+      "sha256": "73b705d250d975fc8a5494fb04357b80ee3c37af7878134ce7ef1fb9af960201"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 13.056,
+    "duration_after_vad": 13.056,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 0.7,
+      "text": "过",
+      "tokens": [
+        50364,
+        16866,
+        50480
+      ],
+      "avg_logprob": -0.7728591419401623,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.1684788167476654,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.7,
+          "word": "过",
+          "probability": 0.5835809707641602
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.32,
+      "end": 5.04,
+      "text": "商场",
+      "tokens": [
+        50480,
+        45581,
+        50255,
+        50642
+      ],
+      "avg_logprob": -0.7728591419401623,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.1684788167476654,
+      "words": [
+        {
+          "start": 2.26,
+          "end": 2.96,
+          "word": "商",
+          "probability": 0.11073677241802216
+        },
+        {
+          "start": 2.96,
+          "end": 5.04,
+          "word": "场",
+          "probability": 0.818040132522583
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.5600000000000005,
+      "end": 7.98,
+      "text": "进去",
+      "tokens": [
+        50642,
+        36700,
+        6734,
+        50778
+      ],
+      "avg_logprob": -0.7728591419401623,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.1684788167476654,
+      "words": [
+        {
+          "start": 5.4399999999999995,
+          "end": 6.14,
+          "word": "进",
+          "probability": 0.9866602420806885
+        },
+        {
+          "start": 6.14,
+          "end": 7.98,
+          "word": "去",
+          "probability": 0.9970728158950806
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 7.98,
+      "end": 10.2,
+      "text": "调",
+      "tokens": [
+        50778,
+        8897,
+        225,
+        50892
+      ],
+      "avg_logprob": -0.7728591419401623,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.1684788167476654,
+      "words": [
+        {
+          "start": 7.98,
+          "end": 10.2,
+          "word": "调",
+          "probability": 0.66782546043396
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 10.2,
+      "end": 11.52,
+      "text": "裤子",
+      "tokens": [
+        50892,
+        8083,
+        97,
+        7626,
+        51012
+      ],
+      "avg_logprob": -0.7728591419401623,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.1684788167476654,
+      "words": [
+        {
+          "start": 10.2,
+          "end": 11.06,
+          "word": "裤",
+          "probability": 0.986200213432312
+        },
+        {
+          "start": 11.06,
+          "end": 11.52,
+          "word": "子",
+          "probability": 0.9957751631736755
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 0.9744578509999826,
+  "realTimeFactor": 0.07463678393075848,
+  "observationChecks": {
+    "rawWordCount": 8,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

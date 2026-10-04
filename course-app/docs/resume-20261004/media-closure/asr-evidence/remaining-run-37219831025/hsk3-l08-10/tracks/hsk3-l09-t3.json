@@ -1,0 +1,1011 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l09:audio3",
+    "level": 3,
+    "lesson": 9,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk3/audio/9-3.mp3",
+    "sha256": "47293de2ff791a3c810e33c620b270eb077c67b28f8de16cb0f2c9a912c4c6a1",
+    "bytes": 624950,
+    "manifestDurationSeconds": 36.521567,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 585561,
+      "durationSeconds": 36.5975625,
+      "sha256": "95f17da139b9c5a1a7c113325b09a668954e1e7f890eb0152b42eadab11b7166"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 36.5975625,
+    "duration_after_vad": 36.5975625,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.8000000000000005,
+      "end": 3.94,
+      "text": "家悦,你跟我们一起打羽毛球吧。",
+      "tokens": [
+        50364,
+        5155,
+        14696,
+        99,
+        11,
+        2166,
+        9678,
+        15003,
+        29567,
+        12467,
+        7248,
+        121,
+        39057,
+        28533,
+        6062,
+        1543,
+        50564
+      ],
+      "avg_logprob": -0.10893987510669029,
+      "compression_ratio": 1.3516949152542372,
+      "no_speech_prob": 0.11001509428024292,
+      "words": [
+        {
+          "start": 0.8000000000000005,
+          "end": 1.32,
+          "word": "家",
+          "probability": 0.3292306065559387
+        },
+        {
+          "start": 1.32,
+          "end": 1.5,
+          "word": "悦,",
+          "probability": 0.5416824221611023
+        },
+        {
+          "start": 1.82,
+          "end": 2.14,
+          "word": "你",
+          "probability": 0.9379754662513733
+        },
+        {
+          "start": 2.14,
+          "end": 2.26,
+          "word": "跟",
+          "probability": 0.9265527129173279
+        },
+        {
+          "start": 2.26,
+          "end": 2.52,
+          "word": "我们",
+          "probability": 0.687478244304657
+        },
+        {
+          "start": 2.52,
+          "end": 2.84,
+          "word": "一起",
+          "probability": 0.9860215783119202
+        },
+        {
+          "start": 2.84,
+          "end": 3.16,
+          "word": "打",
+          "probability": 0.9693942070007324
+        },
+        {
+          "start": 3.16,
+          "end": 3.32,
+          "word": "羽",
+          "probability": 0.9946705400943756
+        },
+        {
+          "start": 3.32,
+          "end": 3.44,
+          "word": "毛",
+          "probability": 0.9987295269966125
+        },
+        {
+          "start": 3.44,
+          "end": 3.7,
+          "word": "球",
+          "probability": 0.9994804263114929
+        },
+        {
+          "start": 3.7,
+          "end": 3.94,
+          "word": "吧。",
+          "probability": 0.9787721633911133
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.760000000000001,
+      "end": 9.06,
+      "text": "我好多年没打羽毛球了,几乎忘了怎么打了。",
+      "tokens": [
+        50564,
+        1654,
+        2131,
+        6392,
+        5157,
+        10062,
+        12467,
+        7248,
+        121,
+        39057,
+        28533,
+        2289,
+        11,
+        6336,
+        254,
+        2930,
+        236,
+        26677,
+        2289,
+        15282,
+        12467,
+        2289,
+        1543,
+        50814
+      ],
+      "avg_logprob": -0.10893987510669029,
+      "compression_ratio": 1.3516949152542372,
+      "no_speech_prob": 0.11001509428024292,
+      "words": [
+        {
+          "start": 4.760000000000001,
+          "end": 5.28,
+          "word": "我",
+          "probability": 0.9629344344139099
+        },
+        {
+          "start": 5.28,
+          "end": 5.52,
+          "word": "好",
+          "probability": 0.9973176121711731
+        },
+        {
+          "start": 5.52,
+          "end": 5.68,
+          "word": "多",
+          "probability": 0.9989111423492432
+        },
+        {
+          "start": 5.68,
+          "end": 5.86,
+          "word": "年",
+          "probability": 0.997168242931366
+        },
+        {
+          "start": 5.86,
+          "end": 6.04,
+          "word": "没",
+          "probability": 0.9882181286811829
+        },
+        {
+          "start": 6.04,
+          "end": 6.22,
+          "word": "打",
+          "probability": 0.9975574016571045
+        },
+        {
+          "start": 6.22,
+          "end": 6.36,
+          "word": "羽",
+          "probability": 0.9991832971572876
+        },
+        {
+          "start": 6.36,
+          "end": 6.54,
+          "word": "毛",
+          "probability": 0.9994679093360901
+        },
+        {
+          "start": 6.54,
+          "end": 6.8,
+          "word": "球",
+          "probability": 0.9990988969802856
+        },
+        {
+          "start": 6.8,
+          "end": 7.0,
+          "word": "了,",
+          "probability": 0.9330928325653076
+        },
+        {
+          "start": 7.48,
+          "end": 7.66,
+          "word": "几",
+          "probability": 0.992015540599823
+        },
+        {
+          "start": 7.66,
+          "end": 7.9,
+          "word": "乎",
+          "probability": 0.9998787939548492
+        },
+        {
+          "start": 7.9,
+          "end": 8.2,
+          "word": "忘",
+          "probability": 0.9959413409233093
+        },
+        {
+          "start": 8.2,
+          "end": 8.36,
+          "word": "了",
+          "probability": 0.9969834685325623
+        },
+        {
+          "start": 8.36,
+          "end": 8.54,
+          "word": "怎么",
+          "probability": 0.9882872700691223
+        },
+        {
+          "start": 8.54,
+          "end": 8.78,
+          "word": "打",
+          "probability": 0.9989897608757019
+        },
+        {
+          "start": 8.78,
+          "end": 9.06,
+          "word": "了。",
+          "probability": 0.9830034971237183
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 10.1,
+      "end": 12.82,
+      "text": "不是比赛,打不好没关系。",
+      "tokens": [
+        50814,
+        7296,
+        11706,
+        5266,
+        249,
+        11,
+        12467,
+        15769,
+        10062,
+        28053,
+        25368,
+        1543,
+        51014
+      ],
+      "avg_logprob": -0.10893987510669029,
+      "compression_ratio": 1.3516949152542372,
+      "no_speech_prob": 0.11001509428024292,
+      "words": [
+        {
+          "start": 10.1,
+          "end": 10.6,
+          "word": "不是",
+          "probability": 0.9886267781257629
+        },
+        {
+          "start": 10.6,
+          "end": 10.86,
+          "word": "比",
+          "probability": 0.9970217347145081
+        },
+        {
+          "start": 10.86,
+          "end": 11.06,
+          "word": "赛,",
+          "probability": 0.999639242887497
+        },
+        {
+          "start": 11.6,
+          "end": 11.74,
+          "word": "打",
+          "probability": 0.9910565614700317
+        },
+        {
+          "start": 11.74,
+          "end": 12.06,
+          "word": "不好",
+          "probability": 0.9940921664237976
+        },
+        {
+          "start": 12.06,
+          "end": 12.34,
+          "word": "没",
+          "probability": 0.9384512901306152
+        },
+        {
+          "start": 12.34,
+          "end": 12.56,
+          "word": "关",
+          "probability": 0.9987747073173523
+        },
+        {
+          "start": 12.56,
+          "end": 12.82,
+          "word": "系。",
+          "probability": 0.9847247004508972
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 13.94,
+      "end": 19.18,
+      "text": "这么多同学一起打,如果总是接不住球,就太不好意思了。",
+      "tokens": [
+        51014,
+        31889,
+        6392,
+        13089,
+        29618,
+        29567,
+        12467,
+        11,
+        13119,
+        33440,
+        1541,
+        14468,
+        1960,
+        21632,
+        28533,
+        11,
+        3111,
+        9455,
+        32351,
+        2289,
+        1543,
+        51314
+      ],
+      "avg_logprob": -0.10893987510669029,
+      "compression_ratio": 1.3516949152542372,
+      "no_speech_prob": 0.11001509428024292,
+      "words": [
+        {
+          "start": 13.94,
+          "end": 14.16,
+          "word": "这么",
+          "probability": 0.9880288243293762
+        },
+        {
+          "start": 14.16,
+          "end": 14.38,
+          "word": "多",
+          "probability": 0.9981890320777893
+        },
+        {
+          "start": 14.38,
+          "end": 14.56,
+          "word": "同",
+          "probability": 0.9983980059623718
+        },
+        {
+          "start": 14.56,
+          "end": 14.76,
+          "word": "学",
+          "probability": 0.9965720176696777
+        },
+        {
+          "start": 14.76,
+          "end": 15.08,
+          "word": "一起",
+          "probability": 0.9671018719673157
+        },
+        {
+          "start": 15.08,
+          "end": 15.44,
+          "word": "打,",
+          "probability": 0.9990597367286682
+        },
+        {
+          "start": 16.1,
+          "end": 16.28,
+          "word": "如果",
+          "probability": 0.9888067245483398
+        },
+        {
+          "start": 16.28,
+          "end": 16.58,
+          "word": "总",
+          "probability": 0.9952907562255859
+        },
+        {
+          "start": 16.58,
+          "end": 16.76,
+          "word": "是",
+          "probability": 0.9982067346572876
+        },
+        {
+          "start": 16.76,
+          "end": 16.92,
+          "word": "接",
+          "probability": 0.9903789758682251
+        },
+        {
+          "start": 16.92,
+          "end": 17.06,
+          "word": "不",
+          "probability": 0.9974870681762695
+        },
+        {
+          "start": 17.06,
+          "end": 17.2,
+          "word": "住",
+          "probability": 0.9992409944534302
+        },
+        {
+          "start": 17.2,
+          "end": 17.52,
+          "word": "球,",
+          "probability": 0.9996994733810425
+        },
+        {
+          "start": 17.92,
+          "end": 18.06,
+          "word": "就",
+          "probability": 0.9961177110671997
+        },
+        {
+          "start": 18.06,
+          "end": 18.32,
+          "word": "太",
+          "probability": 0.9902487397193909
+        },
+        {
+          "start": 18.32,
+          "end": 18.7,
+          "word": "不好意思",
+          "probability": 0.9782482385635376
+        },
+        {
+          "start": 18.7,
+          "end": 19.18,
+          "word": "了。",
+          "probability": 0.9661114811897278
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 20.580000000000002,
+      "end": 25.22,
+      "text": "你想得太多了,大家打球只是为了锻炼身体。",
+      "tokens": [
+        51314,
+        38386,
+        5916,
+        9455,
+        6392,
+        2289,
+        11,
+        6868,
+        12467,
+        28533,
+        36859,
+        13992,
+        2289,
+        23049,
+        119,
+        4804,
+        120,
+        19847,
+        29485,
+        1543,
+        51614
+      ],
+      "avg_logprob": -0.10893987510669029,
+      "compression_ratio": 1.3516949152542372,
+      "no_speech_prob": 0.11001509428024292,
+      "words": [
+        {
+          "start": 20.580000000000002,
+          "end": 21.1,
+          "word": "你想",
+          "probability": 0.855824887752533
+        },
+        {
+          "start": 21.1,
+          "end": 21.26,
+          "word": "得",
+          "probability": 0.47422540187835693
+        },
+        {
+          "start": 21.26,
+          "end": 21.5,
+          "word": "太",
+          "probability": 0.9974452257156372
+        },
+        {
+          "start": 21.5,
+          "end": 21.74,
+          "word": "多",
+          "probability": 0.9997105002403259
+        },
+        {
+          "start": 21.74,
+          "end": 21.92,
+          "word": "了,",
+          "probability": 0.976647138595581
+        },
+        {
+          "start": 22.5,
+          "end": 22.74,
+          "word": "大家",
+          "probability": 0.9948723912239075
+        },
+        {
+          "start": 22.74,
+          "end": 23.02,
+          "word": "打",
+          "probability": 0.9984839558601379
+        },
+        {
+          "start": 23.02,
+          "end": 23.36,
+          "word": "球",
+          "probability": 0.9994863271713257
+        },
+        {
+          "start": 23.36,
+          "end": 23.78,
+          "word": "只是",
+          "probability": 0.8726933002471924
+        },
+        {
+          "start": 23.78,
+          "end": 24.06,
+          "word": "为",
+          "probability": 0.9945242404937744
+        },
+        {
+          "start": 24.06,
+          "end": 24.34,
+          "word": "了",
+          "probability": 0.998524010181427
+        },
+        {
+          "start": 24.34,
+          "end": 24.56,
+          "word": "锻",
+          "probability": 0.9731453061103821
+        },
+        {
+          "start": 24.56,
+          "end": 24.68,
+          "word": "炼",
+          "probability": 0.9950696527957916
+        },
+        {
+          "start": 24.68,
+          "end": 24.94,
+          "word": "身",
+          "probability": 0.996551513671875
+        },
+        {
+          "start": 24.94,
+          "end": 25.22,
+          "word": "体。",
+          "probability": 0.9991717338562012
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 26.06,
+      "end": 29.38,
+      "text": "我先自己练练吧,下周再跟你们一起打。",
+      "tokens": [
+        51614,
+        1654,
+        10108,
+        17645,
+        10115,
+        225,
+        10115,
+        225,
+        6062,
+        11,
+        4438,
+        37390,
+        8623,
+        24131,
+        9497,
+        29567,
+        12467,
+        1543,
+        51814
+      ],
+      "avg_logprob": -0.10893987510669029,
+      "compression_ratio": 1.3516949152542372,
+      "no_speech_prob": 0.11001509428024292,
+      "words": [
+        {
+          "start": 26.06,
+          "end": 26.34,
+          "word": "我",
+          "probability": 0.9983243346214294
+        },
+        {
+          "start": 26.34,
+          "end": 26.54,
+          "word": "先",
+          "probability": 0.995420515537262
+        },
+        {
+          "start": 26.54,
+          "end": 26.82,
+          "word": "自己",
+          "probability": 0.9881950616836548
+        },
+        {
+          "start": 26.82,
+          "end": 27.1,
+          "word": "练",
+          "probability": 0.9749703407287598
+        },
+        {
+          "start": 27.1,
+          "end": 27.26,
+          "word": "练",
+          "probability": 0.9958729445934296
+        },
+        {
+          "start": 27.26,
+          "end": 27.48,
+          "word": "吧,",
+          "probability": 0.992886483669281
+        },
+        {
+          "start": 27.88,
+          "end": 28.04,
+          "word": "下",
+          "probability": 0.6445284485816956
+        },
+        {
+          "start": 28.04,
+          "end": 28.3,
+          "word": "周",
+          "probability": 0.9611386060714722
+        },
+        {
+          "start": 28.3,
+          "end": 28.52,
+          "word": "再",
+          "probability": 0.98114013671875
+        },
+        {
+          "start": 28.52,
+          "end": 28.68,
+          "word": "跟你",
+          "probability": 0.9070571660995483
+        },
+        {
+          "start": 28.68,
+          "end": 28.86,
+          "word": "们",
+          "probability": 0.9889878630638123
+        },
+        {
+          "start": 28.86,
+          "end": 29.1,
+          "word": "一起",
+          "probability": 0.9961883425712585
+        },
+        {
+          "start": 29.1,
+          "end": 29.38,
+          "word": "打。",
+          "probability": 0.9977540373802185
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2938,
+      "start": 30.740000000000002,
+      "end": 35.5,
+      "text": "我再教天中打羽毛球,你可以过来跟我们一起练。",
+      "tokens": [
+        50364,
+        1654,
+        8623,
+        21936,
+        6135,
+        5975,
+        12467,
+        7248,
+        121,
+        39057,
+        28533,
+        11,
+        42766,
+        16866,
+        6912,
+        9678,
+        15003,
+        29567,
+        10115,
+        225,
+        1543,
+        50664
+      ],
+      "avg_logprob": -0.3000359172406404,
+      "compression_ratio": 0.8533333333333334,
+      "no_speech_prob": 0.5019674301147461,
+      "words": [
+        {
+          "start": 30.740000000000002,
+          "end": 31.28,
+          "word": "我",
+          "probability": 0.34085899591445923
+        },
+        {
+          "start": 31.28,
+          "end": 31.44,
+          "word": "再",
+          "probability": 0.8502619862556458
+        },
+        {
+          "start": 31.44,
+          "end": 31.68,
+          "word": "教",
+          "probability": 0.9890790581703186
+        },
+        {
+          "start": 31.68,
+          "end": 31.98,
+          "word": "天",
+          "probability": 0.8978016376495361
+        },
+        {
+          "start": 31.98,
+          "end": 32.24,
+          "word": "中",
+          "probability": 0.9583739638328552
+        },
+        {
+          "start": 32.24,
+          "end": 32.44,
+          "word": "打",
+          "probability": 0.44364213943481445
+        },
+        {
+          "start": 32.44,
+          "end": 32.56,
+          "word": "羽",
+          "probability": 0.9893545806407928
+        },
+        {
+          "start": 32.56,
+          "end": 32.72,
+          "word": "毛",
+          "probability": 0.991476833820343
+        },
+        {
+          "start": 32.72,
+          "end": 32.96,
+          "word": "球,",
+          "probability": 0.9993454813957214
+        },
+        {
+          "start": 33.42,
+          "end": 33.86,
+          "word": "你可以",
+          "probability": 0.9594209790229797
+        },
+        {
+          "start": 33.86,
+          "end": 34.16,
+          "word": "过",
+          "probability": 0.8192844986915588
+        },
+        {
+          "start": 34.16,
+          "end": 34.44,
+          "word": "来",
+          "probability": 0.9963501691818237
+        },
+        {
+          "start": 34.44,
+          "end": 34.7,
+          "word": "跟",
+          "probability": 0.7840588688850403
+        },
+        {
+          "start": 34.7,
+          "end": 34.88,
+          "word": "我们",
+          "probability": 0.986933708190918
+        },
+        {
+          "start": 34.88,
+          "end": 35.2,
+          "word": "一起",
+          "probability": 0.9912636280059814
+        },
+        {
+          "start": 35.2,
+          "end": 35.5,
+          "word": "练。",
+          "probability": 0.9908981323242188
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 7.646766506999995,
+  "realTimeFactor": 0.2089419618314743,
+  "observationChecks": {
+    "rawWordCount": 97,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

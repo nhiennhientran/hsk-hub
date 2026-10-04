@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l07:audio5",
+    "level": 2,
+    "lesson": 7,
+    "track": 5,
+    "kind": "text",
+    "text": 3,
+    "file": "course-assets/hsk2/audio/7-5.mp3",
+    "sha256": "3f0a2a8cc434813f933cb47f12945c40e9a88dad2e67f4380252058cc67a7951",
+    "bytes": 512573,
+    "manifestDurationSeconds": 19.469333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 311424,
+      "durationSeconds": 19.464,
+      "sha256": "d7f4cdd72eaaddcdf8981a171831688ea527d2db3b6cf931ec2615dc52f65bee"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 19.464,
+    "duration_after_vad": 19.464,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.26,
+      "text": "你篮球打得怎么样?",
+      "tokens": [
+        50364,
+        2166,
+        20878,
+        106,
+        28533,
+        12467,
+        5916,
+        48200,
+        30,
+        50504
+      ],
+      "avg_logprob": -0.21026277378813862,
+      "compression_ratio": 1.2537313432835822,
+      "no_speech_prob": 0.4462793469429016,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.94,
+          "word": "你",
+          "probability": 0.7602049112319946
+        },
+        {
+          "start": 0.94,
+          "end": 1.14,
+          "word": "篮",
+          "probability": 0.93766188621521
+        },
+        {
+          "start": 1.14,
+          "end": 1.44,
+          "word": "球",
+          "probability": 0.9998254179954529
+        },
+        {
+          "start": 1.44,
+          "end": 1.78,
+          "word": "打",
+          "probability": 0.9161819815635681
+        },
+        {
+          "start": 1.78,
+          "end": 1.9,
+          "word": "得",
+          "probability": 0.77317214012146
+        },
+        {
+          "start": 1.9,
+          "end": 2.26,
+          "word": "怎么样?",
+          "probability": 0.3921929597854614
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.28,
+      "end": 4.54,
+      "text": "打得还可以。",
+      "tokens": [
+        50504,
+        12467,
+        5916,
+        14852,
+        6723,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.21026277378813862,
+      "compression_ratio": 1.2537313432835822,
+      "no_speech_prob": 0.4462793469429016,
+      "words": [
+        {
+          "start": 3.28,
+          "end": 3.5,
+          "word": "打",
+          "probability": 0.8827469944953918
+        },
+        {
+          "start": 3.5,
+          "end": 3.7,
+          "word": "得",
+          "probability": 0.8151284456253052
+        },
+        {
+          "start": 3.7,
+          "end": 4.06,
+          "word": "还",
+          "probability": 0.9329833388328552
+        },
+        {
+          "start": 4.06,
+          "end": 4.54,
+          "word": "可以。",
+          "probability": 0.9972048401832581
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.28,
+      "end": 7.98,
+      "text": "跑步呢?你跑得快不快?",
+      "tokens": [
+        50614,
+        32585,
+        31429,
+        6240,
+        30,
+        2166,
+        32585,
+        5916,
+        10251,
+        1960,
+        10251,
+        30,
+        50764
+      ],
+      "avg_logprob": -0.21026277378813862,
+      "compression_ratio": 1.2537313432835822,
+      "no_speech_prob": 0.4462793469429016,
+      "words": [
+        {
+          "start": 5.28,
+          "end": 5.56,
+          "word": "跑",
+          "probability": 0.9727597236633301
+        },
+        {
+          "start": 5.56,
+          "end": 5.84,
+          "word": "步",
+          "probability": 0.9995381832122803
+        },
+        {
+          "start": 5.84,
+          "end": 6.1,
+          "word": "呢?",
+          "probability": 0.9716417789459229
+        },
+        {
+          "start": 6.64,
+          "end": 6.74,
+          "word": "你",
+          "probability": 0.9368780255317688
+        },
+        {
+          "start": 6.74,
+          "end": 6.98,
+          "word": "跑",
+          "probability": 0.9993663430213928
+        },
+        {
+          "start": 6.98,
+          "end": 7.2,
+          "word": "得",
+          "probability": 0.773983359336853
+        },
+        {
+          "start": 7.2,
+          "end": 7.52,
+          "word": "快",
+          "probability": 0.9962660670280457
+        },
+        {
+          "start": 7.52,
+          "end": 7.68,
+          "word": "不",
+          "probability": 0.995634138584137
+        },
+        {
+          "start": 7.68,
+          "end": 7.98,
+          "word": "快?",
+          "probability": 0.9990442395210266
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 8.68,
+      "end": 11.54,
+      "text": "我跑得不快,也不太喜欢跑步。",
+      "tokens": [
+        50764,
+        1654,
+        32585,
+        5916,
+        1960,
+        10251,
+        11,
+        6404,
+        1960,
+        9455,
+        41606,
+        32585,
+        31429,
+        1543,
+        50964
+      ],
+      "avg_logprob": -0.21026277378813862,
+      "compression_ratio": 1.2537313432835822,
+      "no_speech_prob": 0.4462793469429016,
+      "words": [
+        {
+          "start": 8.68,
+          "end": 8.84,
+          "word": "我",
+          "probability": 0.9923192858695984
+        },
+        {
+          "start": 8.84,
+          "end": 9.06,
+          "word": "跑",
+          "probability": 0.9996614456176758
+        },
+        {
+          "start": 9.06,
+          "end": 9.22,
+          "word": "得",
+          "probability": 0.8421323299407959
+        },
+        {
+          "start": 9.22,
+          "end": 9.42,
+          "word": "不",
+          "probability": 0.9992156028747559
+        },
+        {
+          "start": 9.42,
+          "end": 9.72,
+          "word": "快,",
+          "probability": 0.9990094900131226
+        },
+        {
+          "start": 10.16,
+          "end": 10.28,
+          "word": "也",
+          "probability": 0.9686859250068665
+        },
+        {
+          "start": 10.28,
+          "end": 10.46,
+          "word": "不",
+          "probability": 0.9983591437339783
+        },
+        {
+          "start": 10.46,
+          "end": 10.64,
+          "word": "太",
+          "probability": 0.9985346794128418
+        },
+        {
+          "start": 10.64,
+          "end": 11.0,
+          "word": "喜欢",
+          "probability": 0.9929755926132202
+        },
+        {
+          "start": 11.0,
+          "end": 11.32,
+          "word": "跑",
+          "probability": 0.9989370703697205
+        },
+        {
+          "start": 11.32,
+          "end": 11.54,
+          "word": "步。",
+          "probability": 0.9998757839202881
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 12.86,
+      "end": 14.52,
+      "text": "那你喜欢游泳吗?",
+      "tokens": [
+        50964,
+        4184,
+        2166,
+        41606,
+        9592,
+        116,
+        6847,
+        111,
+        14769,
+        30,
+        51114
+      ],
+      "avg_logprob": -0.21026277378813862,
+      "compression_ratio": 1.2537313432835822,
+      "no_speech_prob": 0.4462793469429016,
+      "words": [
+        {
+          "start": 12.86,
+          "end": 13.08,
+          "word": "那",
+          "probability": 0.9889645576477051
+        },
+        {
+          "start": 13.08,
+          "end": 13.3,
+          "word": "你",
+          "probability": 0.9681995511054993
+        },
+        {
+          "start": 13.3,
+          "end": 13.7,
+          "word": "喜欢",
+          "probability": 0.9977512955665588
+        },
+        {
+          "start": 13.7,
+          "end": 14.02,
+          "word": "游",
+          "probability": 0.9971848130226135
+        },
+        {
+          "start": 14.02,
+          "end": 14.24,
+          "word": "泳",
+          "probability": 0.9976890683174133
+        },
+        {
+          "start": 14.24,
+          "end": 14.52,
+          "word": "吗?",
+          "probability": 0.9881350994110107
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 15.3,
+      "end": 18.34,
+      "text": "喜欢,但我游泳游得不快。",
+      "tokens": [
+        51114,
+        41606,
+        11,
+        8395,
+        1654,
+        9592,
+        116,
+        6847,
+        111,
+        9592,
+        116,
+        5916,
+        1960,
+        10251,
+        1543,
+        51314
+      ],
+      "avg_logprob": -0.21026277378813862,
+      "compression_ratio": 1.2537313432835822,
+      "no_speech_prob": 0.4462793469429016,
+      "words": [
+        {
+          "start": 15.3,
+          "end": 15.86,
+          "word": "喜欢,",
+          "probability": 0.9855591058731079
+        },
+        {
+          "start": 16.48,
+          "end": 16.76,
+          "word": "但",
+          "probability": 0.9862544536590576
+        },
+        {
+          "start": 16.76,
+          "end": 16.96,
+          "word": "我",
+          "probability": 0.8868954181671143
+        },
+        {
+          "start": 16.96,
+          "end": 17.22,
+          "word": "游",
+          "probability": 0.9994681477546692
+        },
+        {
+          "start": 17.22,
+          "end": 17.48,
+          "word": "泳",
+          "probability": 0.9997004568576813
+        },
+        {
+          "start": 17.48,
+          "end": 17.76,
+          "word": "游",
+          "probability": 0.9798177480697632
+        },
+        {
+          "start": 17.76,
+          "end": 17.88,
+          "word": "得",
+          "probability": 0.8534895181655884
+        },
+        {
+          "start": 17.88,
+          "end": 18.08,
+          "word": "不",
+          "probability": 0.9994465708732605
+        },
+        {
+          "start": 18.08,
+          "end": 18.34,
+          "word": "快。",
+          "probability": 0.9994118213653564
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.7008721159999993,
+  "realTimeFactor": 0.19013934011508424,
+  "observationChecks": {
+    "rawWordCount": 45,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

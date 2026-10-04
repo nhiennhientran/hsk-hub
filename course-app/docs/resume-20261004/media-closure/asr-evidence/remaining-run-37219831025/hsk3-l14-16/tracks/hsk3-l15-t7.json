@@ -1,0 +1,1156 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l15:audio7",
+    "level": 3,
+    "lesson": 15,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/15-7.mp3",
+    "sha256": "8ce48baacf43653e3bb0daf6830e1691d04954b2709f9a272a23e7712b9e1e5d",
+    "bytes": 772975,
+    "manifestDurationSeconds": 45.773756,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 733936,
+      "durationSeconds": 45.871,
+      "sha256": "5eefb0d1e3d5cf9b00a78c187ccec3e2d90c466bc3cc652fb64861376dfe6281"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 45.871,
+    "duration_after_vad": 45.871,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.5999999999999996,
+      "end": 6.94,
+      "text": "我小時候住在北京的西北邊,有一條非常有名的河經過那裡。",
+      "tokens": [
+        50364,
+        1654,
+        7322,
+        14010,
+        21632,
+        3581,
+        26668,
+        31375,
+        1546,
+        16220,
+        26668,
+        14901,
+        11,
+        32241,
+        31106,
+        14392,
+        2412,
+        15940,
+        1546,
+        3308,
+        111,
+        15145,
+        8816,
+        4184,
+        11066,
+        1543,
+        50714
+      ],
+      "avg_logprob": -0.09128990221996697,
+      "compression_ratio": 1.2574257425742574,
+      "no_speech_prob": 0.02978147380053997,
+      "words": [
+        {
+          "start": 0.5999999999999996,
+          "end": 1.08,
+          "word": "我",
+          "probability": 0.6335285902023315
+        },
+        {
+          "start": 1.08,
+          "end": 1.26,
+          "word": "小",
+          "probability": 0.9581546187400818
+        },
+        {
+          "start": 1.26,
+          "end": 1.64,
+          "word": "時候",
+          "probability": 0.7075504660606384
+        },
+        {
+          "start": 1.64,
+          "end": 1.9,
+          "word": "住",
+          "probability": 0.9562469124794006
+        },
+        {
+          "start": 1.9,
+          "end": 2.1,
+          "word": "在",
+          "probability": 0.9921265840530396
+        },
+        {
+          "start": 2.1,
+          "end": 2.32,
+          "word": "北",
+          "probability": 0.9973433613777161
+        },
+        {
+          "start": 2.32,
+          "end": 2.54,
+          "word": "京",
+          "probability": 0.9994731545448303
+        },
+        {
+          "start": 2.54,
+          "end": 2.72,
+          "word": "的",
+          "probability": 0.9864314198493958
+        },
+        {
+          "start": 2.72,
+          "end": 2.96,
+          "word": "西",
+          "probability": 0.9884251356124878
+        },
+        {
+          "start": 2.96,
+          "end": 3.18,
+          "word": "北",
+          "probability": 0.9920139908790588
+        },
+        {
+          "start": 3.18,
+          "end": 3.48,
+          "word": "邊,",
+          "probability": 0.9751285910606384
+        },
+        {
+          "start": 3.72,
+          "end": 4.42,
+          "word": "有一",
+          "probability": 0.8689119219779968
+        },
+        {
+          "start": 4.42,
+          "end": 4.74,
+          "word": "條",
+          "probability": 0.9949083924293518
+        },
+        {
+          "start": 4.74,
+          "end": 5.12,
+          "word": "非常",
+          "probability": 0.9877381324768066
+        },
+        {
+          "start": 5.12,
+          "end": 5.44,
+          "word": "有",
+          "probability": 0.9992758631706238
+        },
+        {
+          "start": 5.44,
+          "end": 5.66,
+          "word": "名",
+          "probability": 0.9988898634910583
+        },
+        {
+          "start": 5.66,
+          "end": 5.88,
+          "word": "的",
+          "probability": 0.989568293094635
+        },
+        {
+          "start": 5.88,
+          "end": 6.06,
+          "word": "河",
+          "probability": 0.9927153289318085
+        },
+        {
+          "start": 6.06,
+          "end": 6.32,
+          "word": "經",
+          "probability": 0.9939672946929932
+        },
+        {
+          "start": 6.32,
+          "end": 6.54,
+          "word": "過",
+          "probability": 0.9972037076950073
+        },
+        {
+          "start": 6.54,
+          "end": 6.72,
+          "word": "那",
+          "probability": 0.996752917766571
+        },
+        {
+          "start": 6.72,
+          "end": 6.94,
+          "word": "裡。",
+          "probability": 0.7415524125099182
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 7.88,
+      "end": 14.42,
+      "text": "我家就住在河邊,那裡有高高的大樹和綠綠的草地。",
+      "tokens": [
+        50714,
+        1654,
+        5155,
+        3111,
+        21632,
+        3581,
+        3308,
+        111,
+        14901,
+        11,
+        4184,
+        11066,
+        2412,
+        12979,
+        12979,
+        1546,
+        3582,
+        47169,
+        12565,
+        9261,
+        254,
+        9261,
+        254,
+        1546,
+        31409,
+        231,
+        10928,
+        1543,
+        51114
+      ],
+      "avg_logprob": -0.09128990221996697,
+      "compression_ratio": 1.2574257425742574,
+      "no_speech_prob": 0.02978147380053997,
+      "words": [
+        {
+          "start": 7.88,
+          "end": 8.36,
+          "word": "我",
+          "probability": 0.9569132924079895
+        },
+        {
+          "start": 8.36,
+          "end": 8.56,
+          "word": "家",
+          "probability": 0.9994493126869202
+        },
+        {
+          "start": 8.56,
+          "end": 8.86,
+          "word": "就",
+          "probability": 0.9618050456047058
+        },
+        {
+          "start": 8.86,
+          "end": 9.04,
+          "word": "住",
+          "probability": 0.991672933101654
+        },
+        {
+          "start": 9.04,
+          "end": 9.26,
+          "word": "在",
+          "probability": 0.9934023022651672
+        },
+        {
+          "start": 9.26,
+          "end": 9.48,
+          "word": "河",
+          "probability": 0.9993372857570648
+        },
+        {
+          "start": 9.48,
+          "end": 9.72,
+          "word": "邊,",
+          "probability": 0.9945567846298218
+        },
+        {
+          "start": 10.84,
+          "end": 11.4,
+          "word": "那",
+          "probability": 0.9909406900405884
+        },
+        {
+          "start": 11.4,
+          "end": 11.56,
+          "word": "裡",
+          "probability": 0.9611802101135254
+        },
+        {
+          "start": 11.56,
+          "end": 11.74,
+          "word": "有",
+          "probability": 0.9972345232963562
+        },
+        {
+          "start": 11.74,
+          "end": 11.98,
+          "word": "高",
+          "probability": 0.9905893802642822
+        },
+        {
+          "start": 11.98,
+          "end": 12.2,
+          "word": "高",
+          "probability": 0.9924325942993164
+        },
+        {
+          "start": 12.2,
+          "end": 12.36,
+          "word": "的",
+          "probability": 0.9477754831314087
+        },
+        {
+          "start": 12.36,
+          "end": 12.54,
+          "word": "大",
+          "probability": 0.9950272440910339
+        },
+        {
+          "start": 12.54,
+          "end": 12.84,
+          "word": "樹",
+          "probability": 0.9773056507110596
+        },
+        {
+          "start": 12.84,
+          "end": 13.32,
+          "word": "和",
+          "probability": 0.9478038549423218
+        },
+        {
+          "start": 13.32,
+          "end": 13.54,
+          "word": "綠",
+          "probability": 0.9882993102073669
+        },
+        {
+          "start": 13.54,
+          "end": 13.72,
+          "word": "綠",
+          "probability": 0.9969230890274048
+        },
+        {
+          "start": 13.72,
+          "end": 13.9,
+          "word": "的",
+          "probability": 0.9896818995475769
+        },
+        {
+          "start": 13.9,
+          "end": 14.16,
+          "word": "草",
+          "probability": 0.9983623623847961
+        },
+        {
+          "start": 14.16,
+          "end": 14.42,
+          "word": "地。",
+          "probability": 0.9892172813415527
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 15.94,
+      "end": 20.44,
+      "text": "春天,河邊的花都開了,看起來特別漂亮。",
+      "tokens": [
+        51114,
+        46953,
+        6135,
+        11,
+        3308,
+        111,
+        14901,
+        1546,
+        20127,
+        7182,
+        8949,
+        2289,
+        11,
+        4200,
+        21670,
+        38446,
+        29019,
+        1543,
+        51414
+      ],
+      "avg_logprob": -0.09128990221996697,
+      "compression_ratio": 1.2574257425742574,
+      "no_speech_prob": 0.02978147380053997,
+      "words": [
+        {
+          "start": 15.94,
+          "end": 16.18,
+          "word": "春",
+          "probability": 0.9973143935203552
+        },
+        {
+          "start": 16.18,
+          "end": 16.5,
+          "word": "天,",
+          "probability": 0.9974135756492615
+        },
+        {
+          "start": 16.96,
+          "end": 17.22,
+          "word": "河",
+          "probability": 0.9885912835597992
+        },
+        {
+          "start": 17.22,
+          "end": 17.4,
+          "word": "邊",
+          "probability": 0.9982101917266846
+        },
+        {
+          "start": 17.4,
+          "end": 17.54,
+          "word": "的",
+          "probability": 0.9952356219291687
+        },
+        {
+          "start": 17.54,
+          "end": 17.76,
+          "word": "花",
+          "probability": 0.9974517226219177
+        },
+        {
+          "start": 17.76,
+          "end": 17.96,
+          "word": "都",
+          "probability": 0.9896696209907532
+        },
+        {
+          "start": 17.96,
+          "end": 18.24,
+          "word": "開",
+          "probability": 0.9970651268959045
+        },
+        {
+          "start": 18.24,
+          "end": 18.52,
+          "word": "了,",
+          "probability": 0.9927114248275757
+        },
+        {
+          "start": 18.92,
+          "end": 19.28,
+          "word": "看",
+          "probability": 0.9929437041282654
+        },
+        {
+          "start": 19.28,
+          "end": 19.56,
+          "word": "起來",
+          "probability": 0.9749479293823242
+        },
+        {
+          "start": 19.56,
+          "end": 19.92,
+          "word": "特別",
+          "probability": 0.9886384606361389
+        },
+        {
+          "start": 19.92,
+          "end": 20.44,
+          "word": "漂亮。",
+          "probability": 0.9970353841781616
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 21.92,
+      "end": 26.26,
+      "text": "還記得小時候,一到夏天我就去河裡游泳。",
+      "tokens": [
+        51414,
+        7824,
+        30872,
+        7322,
+        14010,
+        11,
+        2257,
+        4511,
+        42708,
+        6135,
+        22020,
+        6734,
+        3308,
+        111,
+        11066,
+        9592,
+        116,
+        6847,
+        111,
+        1543,
+        51714
+      ],
+      "avg_logprob": -0.09128990221996697,
+      "compression_ratio": 1.2574257425742574,
+      "no_speech_prob": 0.02978147380053997,
+      "words": [
+        {
+          "start": 21.92,
+          "end": 22.28,
+          "word": "還",
+          "probability": 0.9950495362281799
+        },
+        {
+          "start": 22.28,
+          "end": 22.52,
+          "word": "記得",
+          "probability": 0.9981977343559265
+        },
+        {
+          "start": 22.52,
+          "end": 22.84,
+          "word": "小",
+          "probability": 0.9691519141197205
+        },
+        {
+          "start": 22.84,
+          "end": 23.3,
+          "word": "時候,",
+          "probability": 0.9956287145614624
+        },
+        {
+          "start": 23.9,
+          "end": 24.08,
+          "word": "一",
+          "probability": 0.9728736877441406
+        },
+        {
+          "start": 24.08,
+          "end": 24.24,
+          "word": "到",
+          "probability": 0.9925958514213562
+        },
+        {
+          "start": 24.24,
+          "end": 24.46,
+          "word": "夏",
+          "probability": 0.9892169237136841
+        },
+        {
+          "start": 24.46,
+          "end": 24.86,
+          "word": "天",
+          "probability": 0.9995423555374146
+        },
+        {
+          "start": 24.86,
+          "end": 25.2,
+          "word": "我就",
+          "probability": 0.8275867700576782
+        },
+        {
+          "start": 25.2,
+          "end": 25.44,
+          "word": "去",
+          "probability": 0.9967076778411865
+        },
+        {
+          "start": 25.44,
+          "end": 25.66,
+          "word": "河",
+          "probability": 0.9985457956790924
+        },
+        {
+          "start": 25.66,
+          "end": 25.82,
+          "word": "裡",
+          "probability": 0.8550852537155151
+        },
+        {
+          "start": 25.82,
+          "end": 26.04,
+          "word": "游",
+          "probability": 0.9838270843029022
+        },
+        {
+          "start": 26.04,
+          "end": 26.26,
+          "word": "泳。",
+          "probability": 0.9973395764827728
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 2626,
+      "start": 27.54,
+      "end": 44.32,
+      "text": "長大以後,遇到什麼不開心的事情,我就去河邊的樹下坐著,聽聽鳥叫,看看河水,跟遇見的朋友聊聊天,難過的事情不一會兒就忘了,那是我最喜歡的地方。",
+      "tokens": [
+        50364,
+        15353,
+        3582,
+        3588,
+        5661,
+        11,
+        3330,
+        229,
+        4511,
+        7598,
+        1960,
+        37809,
+        1546,
+        24675,
+        11,
+        22020,
+        6734,
+        3308,
+        111,
+        14901,
+        1546,
+        47169,
+        4438,
+        31123,
+        19382,
+        11,
+        21524,
+        21524,
+        47238,
+        98,
+        19855,
+        11,
+        22884,
+        3308,
+        111,
+        15590,
+        11,
+        9678,
+        3330,
+        229,
+        10470,
+        1546,
+        19828,
+        40096,
+        40096,
+        6135,
+        11,
+        21192,
+        8816,
+        1546,
+        24675,
+        1960,
+        2257,
+        6236,
+        35125,
+        3111,
+        26677,
+        2289,
+        11,
+        4184,
+        42614,
+        8661,
+        21385,
+        1546,
+        30146,
+        1543,
+        51264
+      ],
+      "avg_logprob": -0.13748151217313373,
+      "compression_ratio": 1.1461988304093567,
+      "no_speech_prob": 0.27233007550239563,
+      "words": [
+        {
+          "start": 27.54,
+          "end": 28.02,
+          "word": "長",
+          "probability": 0.8257847428321838
+        },
+        {
+          "start": 28.02,
+          "end": 28.26,
+          "word": "大",
+          "probability": 0.9987612962722778
+        },
+        {
+          "start": 28.26,
+          "end": 28.5,
+          "word": "以",
+          "probability": 0.9198974967002869
+        },
+        {
+          "start": 28.5,
+          "end": 28.74,
+          "word": "後,",
+          "probability": 0.9952400922775269
+        },
+        {
+          "start": 29.14,
+          "end": 29.38,
+          "word": "遇",
+          "probability": 0.9898732602596283
+        },
+        {
+          "start": 29.38,
+          "end": 29.54,
+          "word": "到",
+          "probability": 0.9710412621498108
+        },
+        {
+          "start": 29.54,
+          "end": 29.78,
+          "word": "什麼",
+          "probability": 0.8848779797554016
+        },
+        {
+          "start": 29.78,
+          "end": 30.0,
+          "word": "不",
+          "probability": 0.9946381449699402
+        },
+        {
+          "start": 30.0,
+          "end": 30.32,
+          "word": "開心",
+          "probability": 0.9926669001579285
+        },
+        {
+          "start": 30.32,
+          "end": 30.52,
+          "word": "的",
+          "probability": 0.9974231719970703
+        },
+        {
+          "start": 30.52,
+          "end": 30.88,
+          "word": "事情,",
+          "probability": 0.9397789835929871
+        },
+        {
+          "start": 31.36,
+          "end": 31.68,
+          "word": "我就",
+          "probability": 0.9419427514076233
+        },
+        {
+          "start": 31.68,
+          "end": 31.92,
+          "word": "去",
+          "probability": 0.9925901889801025
+        },
+        {
+          "start": 31.92,
+          "end": 32.14,
+          "word": "河",
+          "probability": 0.9778675138950348
+        },
+        {
+          "start": 32.14,
+          "end": 32.32,
+          "word": "邊",
+          "probability": 0.995267391204834
+        },
+        {
+          "start": 32.32,
+          "end": 32.46,
+          "word": "的",
+          "probability": 0.9876991510391235
+        },
+        {
+          "start": 32.46,
+          "end": 32.68,
+          "word": "樹",
+          "probability": 0.957185685634613
+        },
+        {
+          "start": 32.68,
+          "end": 32.9,
+          "word": "下",
+          "probability": 0.9976281523704529
+        },
+        {
+          "start": 32.9,
+          "end": 33.1,
+          "word": "坐",
+          "probability": 0.9768427610397339
+        },
+        {
+          "start": 33.1,
+          "end": 33.34,
+          "word": "著,",
+          "probability": 0.9672228693962097
+        },
+        {
+          "start": 33.94,
+          "end": 34.2,
+          "word": "聽",
+          "probability": 0.9645000696182251
+        },
+        {
+          "start": 34.2,
+          "end": 34.42,
+          "word": "聽",
+          "probability": 0.9946224689483643
+        },
+        {
+          "start": 34.42,
+          "end": 34.66,
+          "word": "鳥",
+          "probability": 0.9959650635719299
+        },
+        {
+          "start": 34.66,
+          "end": 34.94,
+          "word": "叫,",
+          "probability": 0.9825762510299683
+        },
+        {
+          "start": 35.38,
+          "end": 35.68,
+          "word": "看看",
+          "probability": 0.9804466962814331
+        },
+        {
+          "start": 35.68,
+          "end": 35.98,
+          "word": "河",
+          "probability": 0.9738945066928864
+        },
+        {
+          "start": 35.98,
+          "end": 36.34,
+          "word": "水,",
+          "probability": 0.9994827508926392
+        },
+        {
+          "start": 37.02,
+          "end": 37.18,
+          "word": "跟",
+          "probability": 0.9585307836532593
+        },
+        {
+          "start": 37.18,
+          "end": 37.38,
+          "word": "遇",
+          "probability": 0.9171301424503326
+        },
+        {
+          "start": 37.38,
+          "end": 37.56,
+          "word": "見",
+          "probability": 0.996740996837616
+        },
+        {
+          "start": 37.56,
+          "end": 37.68,
+          "word": "的",
+          "probability": 0.9960997104644775
+        },
+        {
+          "start": 37.68,
+          "end": 38.04,
+          "word": "朋友",
+          "probability": 0.9990963935852051
+        },
+        {
+          "start": 38.04,
+          "end": 38.36,
+          "word": "聊",
+          "probability": 0.9851625561714172
+        },
+        {
+          "start": 38.36,
+          "end": 38.58,
+          "word": "聊",
+          "probability": 0.9809033274650574
+        },
+        {
+          "start": 38.58,
+          "end": 38.82,
+          "word": "天,",
+          "probability": 0.999757707118988
+        },
+        {
+          "start": 39.42,
+          "end": 39.72,
+          "word": "難",
+          "probability": 0.9406414031982422
+        },
+        {
+          "start": 39.72,
+          "end": 39.92,
+          "word": "過",
+          "probability": 0.9973933696746826
+        },
+        {
+          "start": 39.92,
+          "end": 40.06,
+          "word": "的",
+          "probability": 0.9987391829490662
+        },
+        {
+          "start": 40.06,
+          "end": 40.46,
+          "word": "事情",
+          "probability": 0.979074239730835
+        },
+        {
+          "start": 40.46,
+          "end": 40.92,
+          "word": "不",
+          "probability": 0.852073073387146
+        },
+        {
+          "start": 40.92,
+          "end": 41.04,
+          "word": "一",
+          "probability": 0.9971994161605835
+        },
+        {
+          "start": 41.04,
+          "end": 41.26,
+          "word": "會",
+          "probability": 0.8885709047317505
+        },
+        {
+          "start": 41.26,
+          "end": 41.46,
+          "word": "兒",
+          "probability": 0.7775772213935852
+        },
+        {
+          "start": 41.46,
+          "end": 41.54,
+          "word": "就",
+          "probability": 0.9896608591079712
+        },
+        {
+          "start": 41.54,
+          "end": 41.78,
+          "word": "忘",
+          "probability": 0.9954083561897278
+        },
+        {
+          "start": 41.78,
+          "end": 42.06,
+          "word": "了,",
+          "probability": 0.9984219074249268
+        },
+        {
+          "start": 42.64,
+          "end": 42.94,
+          "word": "那",
+          "probability": 0.9876120686531067
+        },
+        {
+          "start": 42.94,
+          "end": 43.16,
+          "word": "是我",
+          "probability": 0.9739661812782288
+        },
+        {
+          "start": 43.16,
+          "end": 43.48,
+          "word": "最",
+          "probability": 0.9931146502494812
+        },
+        {
+          "start": 43.48,
+          "end": 43.86,
+          "word": "喜歡",
+          "probability": 0.9938117265701294
+        },
+        {
+          "start": 43.86,
+          "end": 44.02,
+          "word": "的",
+          "probability": 0.9993059635162354
+        },
+        {
+          "start": 44.02,
+          "end": 44.32,
+          "word": "地方。",
+          "probability": 0.9977791905403137
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.666635479000007,
+  "realTimeFactor": 0.07993362863246947,
+  "observationChecks": {
+    "rawWordCount": 122,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

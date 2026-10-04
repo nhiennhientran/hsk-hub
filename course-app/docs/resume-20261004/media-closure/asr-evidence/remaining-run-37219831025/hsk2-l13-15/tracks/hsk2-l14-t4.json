@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l14:audio4",
+    "level": 2,
+    "lesson": 14,
+    "track": 4,
+    "kind": "vocab",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/14-4.mp3",
+    "sha256": "1e55b17ec0ec2ab4422a0e29e2d62c6c5c4dfe696749d62035157a4e66a057bb",
+    "bytes": 324573,
+    "manifestDurationSeconds": 11.669333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 186624,
+      "durationSeconds": 11.664,
+      "sha256": "190e8d671214d08817b4a5ea3eb50cee0007e613bb7bed9d45cf9415e7d2424e"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 11.664,
+    "duration_after_vad": 11.664,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 1.16,
+      "text": "过年",
+      "tokens": [
+        50364,
+        16866,
+        5157,
+        50514
+      ],
+      "avg_logprob": -0.4009538423269987,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.333879679441452,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.66,
+          "word": "过",
+          "probability": 0.5436248779296875
+        },
+        {
+          "start": 0.66,
+          "end": 1.16,
+          "word": "年",
+          "probability": 0.9936732053756714
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.0,
+      "end": 5.62,
+      "text": "没意思",
+      "tokens": [
+        50514,
+        10062,
+        16697,
+        50664
+      ],
+      "avg_logprob": -0.4009538423269987,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.333879679441452,
+      "words": [
+        {
+          "start": 2.8,
+          "end": 3.5,
+          "word": "没",
+          "probability": 0.8658735156059265
+        },
+        {
+          "start": 3.5,
+          "end": 5.62,
+          "word": "意思",
+          "probability": 0.9951983094215393
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.62,
+      "end": 6.72,
+      "text": "位",
+      "tokens": [
+        50664,
+        11160,
+        50764
+      ],
+      "avg_logprob": -0.4009538423269987,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.333879679441452,
+      "words": [
+        {
+          "start": 5.62,
+          "end": 6.72,
+          "word": "位",
+          "probability": 0.016633812338113785
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 8.0,
+      "end": 9.32,
+      "text": "前面",
+      "tokens": [
+        50764,
+        8945,
+        8833,
+        50914
+      ],
+      "avg_logprob": -0.4009538423269987,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.333879679441452,
+      "words": [
+        {
+          "start": 7.88,
+          "end": 8.58,
+          "word": "前",
+          "probability": 0.9675132632255554
+        },
+        {
+          "start": 8.58,
+          "end": 9.32,
+          "word": "面",
+          "probability": 0.9995447993278503
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.4596009230000107,
+  "realTimeFactor": 0.12513725334362233,
+  "observationChecks": {
+    "rawWordCount": 7,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

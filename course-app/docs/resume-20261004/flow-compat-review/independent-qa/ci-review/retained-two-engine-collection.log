@@ -1,0 +1,70 @@
+Listing tests:
+  [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:149:3 › complete independent listening course › all 75 real questions map four shuffled options, hide transcripts before submission and show exact feedback afterward
+  [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:199:1 › mixed lessons preserve first and latest scores while wrong-only redoing hides feedback again and removes corrected mistakes
+  [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:237:1 › single, mixed and all lessons create exact queues; empty selection and an empty wrong filter preserve the saved round
+  [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:262:1 › reload retains queue, option orders, selected answer, listen count, rate and position without modifying homework, reading or cards
+  [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:297:1 › loading controls reject early activation, HTTP 503 retries the same route and retired media-map requests cannot mount or save late
+  [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:329:1 › native original MP3 segments in lessons 1, 10 and 15 advance, stop within their frozen boundaries and stop when changing questions
+  [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:355:1 › pausing a held real MP3 before first playing then resuming counts once; five speeds, ordinary resume and replay keep exact counts
+  [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:410:1 › an MP3 HTTP failure can retry; a superseded delayed response cannot count, start or stop the current native track
+  [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:449:1 › quota failure preserves submitted listening in memory, exports it after navigation and recovers with a normal retry
+  [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:487:1 › listening settings, native controls and submitted feedback fit four viewport widths with readable Chinese and Vietnamese
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:84:44 › mixed-card preview: direct review and responsive layout at 320px
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:84:44 › mixed-card preview: direct review and responsive layout at 390px
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:84:44 › mixed-card preview: direct review and responsive layout at 768px
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:84:44 › mixed-card preview: direct review and responsive layout at 1440px
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:112:1 › all lessons show 344 sense cards and 319 written forms, deduplicate selection, and apply lesson drafts only on start
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:144:1 › a card flips repeatedly with Enter and Space, retains focus and exposes no hidden answer on its front
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:171:1 › desktop cards flip independently and their separate audio controls do not flip or advance another card
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:197:1 › mobile previous and next skip freely, return to fronts and never write mastery or legacy review data
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:220:1 › resize preserves the exact anchor and shuffled order, resets fronts and uses the new page size on next
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:250:1 › reload, route aliases and browser back/forward keep order and anchor while discarding flips and unstarted lesson drafts
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:285:1 › explicit reshuffle restarts the applied scope without applying a different lesson draft
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:301:38 › a legacy all/reverse round stays historical and is never masqueraded as a new mixed round
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:301:38 › a legacy due/reverse round stays historical and is never masqueraded as a new mixed round
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:326:1 › a failed save keeps the active in-memory page usable and retries without losing the saved queue
+  [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:355:1 › all 344 shuffled senses remain reachable once with exact Hanzi fronts and pinyin/Vietnamese backs
+  [chromium] › ../../../../hsk1-app/tests/browser/storage.spec.ts:104:1 › nonempty multi-key migration keeps submitted versions, drafts and exact old strings, and excludes authentication
+  [chromium] › ../../../../hsk1-app/tests/browser/storage.spec.ts:174:1 › broken JSON, wrong schema, unknown IDs, forged fingerprints and scores cannot change saved data
+  [chromium] › ../../../../hsk1-app/tests/browser/storage.spec.ts:203:1 › two real tabs serialize competing imports and reject a preview after equal-revision raw changes
+  [chromium] › ../../../../hsk1-app/tests/browser/storage.spec.ts:247:1 › quota and denied-write browser exceptions preserve old data and export the unsaved nonempty candidate
+  [chromium] › ../../../../hsk1-app/tests/browser/storage.spec.ts:274:1 › leaving the manager while a real write lock is held cancels the queued import and all late UI writes
+  [chromium] › ../../../../hsk1-app/tests/browser/storage.spec.ts:296:1 › legacy source preview names every discovered source including unsupported pilot data and cancel writes nothing
+  [chromium] › ../../../../hsk1-app/tests/browser/storage.spec.ts:310:1 › scoped reset requires preview confirmation, cancellation preserves data, and recovery restores the exact prior state
+  [chromium] › ../../../../hsk1-app/tests/browser/storage.spec.ts:352:1 › failed reset preserves current state and previous recovery, and leaving aborts a queued reset
+  [chromium] › ../../../../hsk1-app/tests/browser/storage.spec.ts:385:1 › discovering old sources with nonempty current progress adds only missing lessons after explicit confirmation
+  [webkit] › ../../../../hsk1-app/tests/browser/listening.spec.ts:149:3 › complete independent listening course › all 75 real questions map four shuffled options, hide transcripts before submission and show exact feedback afterward
+  [webkit] › ../../../../hsk1-app/tests/browser/listening.spec.ts:199:1 › mixed lessons preserve first and latest scores while wrong-only redoing hides feedback again and removes corrected mistakes
+  [webkit] › ../../../../hsk1-app/tests/browser/listening.spec.ts:237:1 › single, mixed and all lessons create exact queues; empty selection and an empty wrong filter preserve the saved round
+  [webkit] › ../../../../hsk1-app/tests/browser/listening.spec.ts:262:1 › reload retains queue, option orders, selected answer, listen count, rate and position without modifying homework, reading or cards
+  [webkit] › ../../../../hsk1-app/tests/browser/listening.spec.ts:297:1 › loading controls reject early activation, HTTP 503 retries the same route and retired media-map requests cannot mount or save late
+  [webkit] › ../../../../hsk1-app/tests/browser/listening.spec.ts:329:1 › native original MP3 segments in lessons 1, 10 and 15 advance, stop within their frozen boundaries and stop when changing questions
+  [webkit] › ../../../../hsk1-app/tests/browser/listening.spec.ts:355:1 › pausing a held real MP3 before first playing then resuming counts once; five speeds, ordinary resume and replay keep exact counts
+  [webkit] › ../../../../hsk1-app/tests/browser/listening.spec.ts:410:1 › an MP3 HTTP failure can retry; a superseded delayed response cannot count, start or stop the current native track
+  [webkit] › ../../../../hsk1-app/tests/browser/listening.spec.ts:449:1 › quota failure preserves submitted listening in memory, exports it after navigation and recovers with a normal retry
+  [webkit] › ../../../../hsk1-app/tests/browser/listening.spec.ts:487:1 › listening settings, native controls and submitted feedback fit four viewport widths with readable Chinese and Vietnamese
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:84:44 › mixed-card preview: direct review and responsive layout at 320px
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:84:44 › mixed-card preview: direct review and responsive layout at 390px
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:84:44 › mixed-card preview: direct review and responsive layout at 768px
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:84:44 › mixed-card preview: direct review and responsive layout at 1440px
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:112:1 › all lessons show 344 sense cards and 319 written forms, deduplicate selection, and apply lesson drafts only on start
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:144:1 › a card flips repeatedly with Enter and Space, retains focus and exposes no hidden answer on its front
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:171:1 › desktop cards flip independently and their separate audio controls do not flip or advance another card
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:197:1 › mobile previous and next skip freely, return to fronts and never write mastery or legacy review data
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:220:1 › resize preserves the exact anchor and shuffled order, resets fronts and uses the new page size on next
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:250:1 › reload, route aliases and browser back/forward keep order and anchor while discarding flips and unstarted lesson drafts
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:285:1 › explicit reshuffle restarts the applied scope without applying a different lesson draft
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:301:38 › a legacy all/reverse round stays historical and is never masqueraded as a new mixed round
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:301:38 › a legacy due/reverse round stays historical and is never masqueraded as a new mixed round
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:326:1 › a failed save keeps the active in-memory page usable and retries without losing the saved queue
+  [webkit] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:355:1 › all 344 shuffled senses remain reachable once with exact Hanzi fronts and pinyin/Vietnamese backs
+  [webkit] › ../../../../hsk1-app/tests/browser/storage.spec.ts:104:1 › nonempty multi-key migration keeps submitted versions, drafts and exact old strings, and excludes authentication
+  [webkit] › ../../../../hsk1-app/tests/browser/storage.spec.ts:174:1 › broken JSON, wrong schema, unknown IDs, forged fingerprints and scores cannot change saved data
+  [webkit] › ../../../../hsk1-app/tests/browser/storage.spec.ts:203:1 › two real tabs serialize competing imports and reject a preview after equal-revision raw changes
+  [webkit] › ../../../../hsk1-app/tests/browser/storage.spec.ts:247:1 › quota and denied-write browser exceptions preserve old data and export the unsaved nonempty candidate
+  [webkit] › ../../../../hsk1-app/tests/browser/storage.spec.ts:274:1 › leaving the manager while a real write lock is held cancels the queued import and all late UI writes
+  [webkit] › ../../../../hsk1-app/tests/browser/storage.spec.ts:296:1 › legacy source preview names every discovered source including unsupported pilot data and cancel writes nothing
+  [webkit] › ../../../../hsk1-app/tests/browser/storage.spec.ts:310:1 › scoped reset requires preview confirmation, cancellation preserves data, and recovery restores the exact prior state
+  [webkit] › ../../../../hsk1-app/tests/browser/storage.spec.ts:352:1 › failed reset preserves current state and previous recovery, and leaving aborts a queued reset
+  [webkit] › ../../../../hsk1-app/tests/browser/storage.spec.ts:385:1 › discovering old sources with nonempty current progress adds only missing lessons after explicit confirmation
+Total: 68 tests in 3 files

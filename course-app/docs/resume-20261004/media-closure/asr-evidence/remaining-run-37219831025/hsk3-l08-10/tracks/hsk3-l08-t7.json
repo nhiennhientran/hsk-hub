@@ -1,0 +1,856 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l08:audio7",
+    "level": 3,
+    "lesson": 8,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/8-7.mp3",
+    "sha256": "b11a25c24e149010c96c3daf4c61f5cf1f0990ee3593a8d0adf7373b056df1d9",
+    "bytes": 567404,
+    "manifestDurationSeconds": 32.924938,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 527883,
+      "durationSeconds": 32.9926875,
+      "sha256": "15381dddd48aa762196265484f1a0aace8158ed69fde44edf0d12f0ab6825aab"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 32.9926875,
+    "duration_after_vad": 32.9926875,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 1.3399999999999994,
+      "end": 9.6,
+      "text": "今天我出院了。出院前,医生给我开了几种药,而且告诉了我吃药的方法。",
+      "tokens": [
+        50364,
+        12074,
+        1654,
+        7781,
+        38358,
+        2289,
+        1543,
+        7781,
+        38358,
+        8945,
+        11,
+        9937,
+        119,
+        8244,
+        49076,
+        18937,
+        2289,
+        6336,
+        254,
+        39810,
+        31409,
+        107,
+        11,
+        22942,
+        44816,
+        2289,
+        1654,
+        10123,
+        31409,
+        107,
+        1546,
+        9249,
+        11148,
+        1543,
+        50864
+      ],
+      "avg_logprob": -0.11480872990920189,
+      "compression_ratio": 1.3020833333333333,
+      "no_speech_prob": 0.15194590389728546,
+      "words": [
+        {
+          "start": 1.3399999999999994,
+          "end": 1.9,
+          "word": "今天",
+          "probability": 0.6176511645317078
+        },
+        {
+          "start": 1.9,
+          "end": 2.46,
+          "word": "我",
+          "probability": 0.8373765349388123
+        },
+        {
+          "start": 2.46,
+          "end": 2.7,
+          "word": "出",
+          "probability": 0.9969072937965393
+        },
+        {
+          "start": 2.7,
+          "end": 2.94,
+          "word": "院",
+          "probability": 0.9972123503684998
+        },
+        {
+          "start": 2.94,
+          "end": 3.3,
+          "word": "了。",
+          "probability": 0.9926544427871704
+        },
+        {
+          "start": 3.62,
+          "end": 4.12,
+          "word": "出",
+          "probability": 0.9258402585983276
+        },
+        {
+          "start": 4.12,
+          "end": 4.28,
+          "word": "院",
+          "probability": 0.9995589852333069
+        },
+        {
+          "start": 4.28,
+          "end": 4.58,
+          "word": "前,",
+          "probability": 0.9910299777984619
+        },
+        {
+          "start": 5.04,
+          "end": 5.12,
+          "word": "医",
+          "probability": 0.9361075758934021
+        },
+        {
+          "start": 5.12,
+          "end": 5.36,
+          "word": "生",
+          "probability": 0.9984265565872192
+        },
+        {
+          "start": 5.36,
+          "end": 5.64,
+          "word": "给我",
+          "probability": 0.7922250628471375
+        },
+        {
+          "start": 5.64,
+          "end": 5.94,
+          "word": "开",
+          "probability": 0.9920557141304016
+        },
+        {
+          "start": 5.94,
+          "end": 6.1,
+          "word": "了",
+          "probability": 0.9966893196105957
+        },
+        {
+          "start": 6.1,
+          "end": 6.24,
+          "word": "几",
+          "probability": 0.9980849623680115
+        },
+        {
+          "start": 6.24,
+          "end": 6.46,
+          "word": "种",
+          "probability": 0.9901620149612427
+        },
+        {
+          "start": 6.46,
+          "end": 6.74,
+          "word": "药,",
+          "probability": 0.9953222572803497
+        },
+        {
+          "start": 7.26,
+          "end": 7.46,
+          "word": "而且",
+          "probability": 0.9802875518798828
+        },
+        {
+          "start": 7.46,
+          "end": 7.78,
+          "word": "告诉",
+          "probability": 0.9903948903083801
+        },
+        {
+          "start": 7.78,
+          "end": 8.06,
+          "word": "了",
+          "probability": 0.8977168202400208
+        },
+        {
+          "start": 8.06,
+          "end": 8.28,
+          "word": "我",
+          "probability": 0.9973288774490356
+        },
+        {
+          "start": 8.28,
+          "end": 8.68,
+          "word": "吃",
+          "probability": 0.8710272908210754
+        },
+        {
+          "start": 8.68,
+          "end": 8.88,
+          "word": "药",
+          "probability": 0.999748170375824
+        },
+        {
+          "start": 8.88,
+          "end": 9.02,
+          "word": "的",
+          "probability": 0.9962974190711975
+        },
+        {
+          "start": 9.02,
+          "end": 9.26,
+          "word": "方",
+          "probability": 0.9972801208496094
+        },
+        {
+          "start": 9.26,
+          "end": 9.6,
+          "word": "法。",
+          "probability": 0.9984453320503235
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 10.5,
+      "end": 18.0,
+      "text": "有一种药需要每天睡前吃一次,其他几种每天吃三次饭后吃。",
+      "tokens": [
+        50864,
+        32241,
+        39810,
+        31409,
+        107,
+        35748,
+        23664,
+        6135,
+        40490,
+        8945,
+        10123,
+        27505,
+        11,
+        9572,
+        5000,
+        6336,
+        254,
+        39810,
+        23664,
+        6135,
+        10123,
+        10960,
+        9487,
+        41520,
+        255,
+        13547,
+        10123,
+        1543,
+        51264
+      ],
+      "avg_logprob": -0.11480872990920189,
+      "compression_ratio": 1.3020833333333333,
+      "no_speech_prob": 0.15194590389728546,
+      "words": [
+        {
+          "start": 10.5,
+          "end": 10.78,
+          "word": "有一",
+          "probability": 0.6280940175056458
+        },
+        {
+          "start": 10.78,
+          "end": 11.04,
+          "word": "种",
+          "probability": 0.9946969747543335
+        },
+        {
+          "start": 11.04,
+          "end": 11.32,
+          "word": "药",
+          "probability": 0.9920690953731537
+        },
+        {
+          "start": 11.32,
+          "end": 11.68,
+          "word": "需要",
+          "probability": 0.8786249160766602
+        },
+        {
+          "start": 11.68,
+          "end": 12.08,
+          "word": "每",
+          "probability": 0.9740250706672668
+        },
+        {
+          "start": 12.08,
+          "end": 12.46,
+          "word": "天",
+          "probability": 0.9958147406578064
+        },
+        {
+          "start": 12.46,
+          "end": 12.7,
+          "word": "睡",
+          "probability": 0.9982802867889404
+        },
+        {
+          "start": 12.7,
+          "end": 12.98,
+          "word": "前",
+          "probability": 0.9933807849884033
+        },
+        {
+          "start": 12.98,
+          "end": 13.22,
+          "word": "吃",
+          "probability": 0.9755465984344482
+        },
+        {
+          "start": 13.22,
+          "end": 13.64,
+          "word": "一次,",
+          "probability": 0.9701191782951355
+        },
+        {
+          "start": 14.3,
+          "end": 14.48,
+          "word": "其",
+          "probability": 0.9964224696159363
+        },
+        {
+          "start": 14.48,
+          "end": 14.66,
+          "word": "他",
+          "probability": 0.8747573494911194
+        },
+        {
+          "start": 14.66,
+          "end": 14.84,
+          "word": "几",
+          "probability": 0.9976149797439575
+        },
+        {
+          "start": 14.84,
+          "end": 15.1,
+          "word": "种",
+          "probability": 0.9919165968894958
+        },
+        {
+          "start": 15.1,
+          "end": 15.46,
+          "word": "每",
+          "probability": 0.8773921132087708
+        },
+        {
+          "start": 15.46,
+          "end": 15.86,
+          "word": "天",
+          "probability": 0.9951300621032715
+        },
+        {
+          "start": 15.86,
+          "end": 16.16,
+          "word": "吃",
+          "probability": 0.9955018162727356
+        },
+        {
+          "start": 16.16,
+          "end": 16.46,
+          "word": "三",
+          "probability": 0.9409144520759583
+        },
+        {
+          "start": 16.46,
+          "end": 16.86,
+          "word": "次",
+          "probability": 0.9956896901130676
+        },
+        {
+          "start": 16.86,
+          "end": 17.38,
+          "word": "饭",
+          "probability": 0.7892406284809113
+        },
+        {
+          "start": 17.38,
+          "end": 17.7,
+          "word": "后",
+          "probability": 0.9844488501548767
+        },
+        {
+          "start": 17.7,
+          "end": 18.0,
+          "word": "吃。",
+          "probability": 0.9919862747192383
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 18.94,
+      "end": 25.08,
+      "text": "除了吃药,医生还说最重要的是多休息。我都记在心里了。",
+      "tokens": [
+        51264,
+        32999,
+        2289,
+        10123,
+        31409,
+        107,
+        11,
+        9937,
+        119,
+        8244,
+        14852,
+        8090,
+        8661,
+        24928,
+        24620,
+        6392,
+        39437,
+        26460,
+        1543,
+        1654,
+        7182,
+        34756,
+        3581,
+        7945,
+        15759,
+        2289,
+        1543,
+        51614
+      ],
+      "avg_logprob": -0.11480872990920189,
+      "compression_ratio": 1.3020833333333333,
+      "no_speech_prob": 0.15194590389728546,
+      "words": [
+        {
+          "start": 18.94,
+          "end": 19.14,
+          "word": "除",
+          "probability": 0.9916902780532837
+        },
+        {
+          "start": 19.14,
+          "end": 19.3,
+          "word": "了",
+          "probability": 0.9990420937538147
+        },
+        {
+          "start": 19.3,
+          "end": 19.48,
+          "word": "吃",
+          "probability": 0.9896222352981567
+        },
+        {
+          "start": 19.48,
+          "end": 19.78,
+          "word": "药,",
+          "probability": 0.9997732937335968
+        },
+        {
+          "start": 20.08,
+          "end": 20.26,
+          "word": "医",
+          "probability": 0.9917906224727631
+        },
+        {
+          "start": 20.26,
+          "end": 20.42,
+          "word": "生",
+          "probability": 0.9996697902679443
+        },
+        {
+          "start": 20.42,
+          "end": 20.6,
+          "word": "还",
+          "probability": 0.9982225298881531
+        },
+        {
+          "start": 20.6,
+          "end": 20.84,
+          "word": "说",
+          "probability": 0.9985305070877075
+        },
+        {
+          "start": 20.84,
+          "end": 21.14,
+          "word": "最",
+          "probability": 0.9082385301589966
+        },
+        {
+          "start": 21.14,
+          "end": 21.46,
+          "word": "重要",
+          "probability": 0.9986727237701416
+        },
+        {
+          "start": 21.46,
+          "end": 22.14,
+          "word": "的是",
+          "probability": 0.8544343113899231
+        },
+        {
+          "start": 22.14,
+          "end": 22.46,
+          "word": "多",
+          "probability": 0.9864308834075928
+        },
+        {
+          "start": 22.46,
+          "end": 22.74,
+          "word": "休",
+          "probability": 0.9971672892570496
+        },
+        {
+          "start": 22.74,
+          "end": 23.02,
+          "word": "息。",
+          "probability": 0.9993699193000793
+        },
+        {
+          "start": 23.58,
+          "end": 23.84,
+          "word": "我",
+          "probability": 0.9950839877128601
+        },
+        {
+          "start": 23.84,
+          "end": 24.0,
+          "word": "都",
+          "probability": 0.999637246131897
+        },
+        {
+          "start": 24.0,
+          "end": 24.22,
+          "word": "记",
+          "probability": 0.9658911228179932
+        },
+        {
+          "start": 24.22,
+          "end": 24.4,
+          "word": "在",
+          "probability": 0.9944559931755066
+        },
+        {
+          "start": 24.4,
+          "end": 24.64,
+          "word": "心",
+          "probability": 0.9975044131278992
+        },
+        {
+          "start": 24.64,
+          "end": 24.88,
+          "word": "里",
+          "probability": 0.9749850034713745
+        },
+        {
+          "start": 24.88,
+          "end": 25.08,
+          "word": "了。",
+          "probability": 0.9861388802528381
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 2508,
+      "start": 25.08,
+      "end": 31.56,
+      "text": "回家以后一定会多注意,希望我的腿能快一点好。",
+      "tokens": [
+        50364,
+        8350,
+        5155,
+        3588,
+        13547,
+        24272,
+        12949,
+        6392,
+        40794,
+        11,
+        29955,
+        14200,
+        21184,
+        123,
+        8225,
+        10251,
+        49042,
+        2131,
+        1543,
+        50714
+      ],
+      "avg_logprob": -0.2881940205891927,
+      "compression_ratio": 0.8533333333333334,
+      "no_speech_prob": 0.06763581931591034,
+      "words": [
+        {
+          "start": 25.08,
+          "end": 25.92,
+          "word": "回",
+          "probability": 0.9386643767356873
+        },
+        {
+          "start": 25.92,
+          "end": 26.12,
+          "word": "家",
+          "probability": 0.9990008473396301
+        },
+        {
+          "start": 26.12,
+          "end": 26.32,
+          "word": "以",
+          "probability": 0.9874135255813599
+        },
+        {
+          "start": 26.32,
+          "end": 26.54,
+          "word": "后",
+          "probability": 0.6819582581520081
+        },
+        {
+          "start": 26.54,
+          "end": 26.98,
+          "word": "一定",
+          "probability": 0.9064012169837952
+        },
+        {
+          "start": 26.98,
+          "end": 27.4,
+          "word": "会",
+          "probability": 0.9364312291145325
+        },
+        {
+          "start": 27.4,
+          "end": 27.64,
+          "word": "多",
+          "probability": 0.9968229532241821
+        },
+        {
+          "start": 27.64,
+          "end": 27.98,
+          "word": "注意,",
+          "probability": 0.9917927384376526
+        },
+        {
+          "start": 28.66,
+          "end": 29.16,
+          "word": "希望",
+          "probability": 0.9337603449821472
+        },
+        {
+          "start": 29.16,
+          "end": 29.42,
+          "word": "我的",
+          "probability": 0.9695305228233337
+        },
+        {
+          "start": 29.42,
+          "end": 29.98,
+          "word": "腿",
+          "probability": 0.9963269531726837
+        },
+        {
+          "start": 29.98,
+          "end": 30.44,
+          "word": "能",
+          "probability": 0.9895824193954468
+        },
+        {
+          "start": 30.44,
+          "end": 30.8,
+          "word": "快",
+          "probability": 0.9903928637504578
+        },
+        {
+          "start": 30.8,
+          "end": 31.16,
+          "word": "一点",
+          "probability": 0.975257933139801
+        },
+        {
+          "start": 31.16,
+          "end": 31.56,
+          "word": "好。",
+          "probability": 0.9325070977210999
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 7.037151050999995,
+  "realTimeFactor": 0.21329426561567605,
+  "observationChecks": {
+    "rawWordCount": 83,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

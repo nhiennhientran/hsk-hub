@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-04T17:27:32.133449+00:00",
+  "mode": "unprompted-asr",
+  "scriptSHA256": "6c32b71904d6829ed2fb7944fcdb3dad61f88eec198db5e837f4d7551ffcc3c4",
+  "repositoryCommit": "3f7285359c2f7fc0c552157df68feb61c9758f53",
+  "requirementsSHA256": "03008384064075527124583a612e69fe4f58591324b265e3ac64b4b9153a5a49",
+  "requestedModel": {
+    "repository": "Systran/faster-whisper-small",
+    "revision": "536b0662742c02347bc0e980a01041f333bce120"
+  },
+  "python": "3.11.13 (main, Jun  4 2025, 04:12:12) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "packages": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.6.0",
+    "huggingface-hub": "0.34.4",
+    "av": "15.1.0",
+    "tokenizers": "0.21.4",
+    "onnxruntime": "1.22.1",
+    "numpy": "2.2.6",
+    "coloredlogs": "15.0.1",
+    "flatbuffers": "25.2.10",
+    "packaging": "25.0",
+    "protobuf": "6.32.0",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "humanfriendly": "10.0",
+    "filelock": "3.19.1",
+    "fsspec": "2025.7.0",
+    "PyYAML": "6.0.2",
+    "requests": "2.32.5",
+    "tqdm": "4.67.1",
+    "typing_extensions": "4.15.0",
+    "hf-xet": "1.1.8",
+    "certifi": "2025.8.3",
+    "charset-normalizer": "3.4.3",
+    "idna": "3.10",
+    "urllib3": "2.5.0",
+    "setuptools": "80.9.0",
+    "pip": "25.2"
+  },
+  "dependenciesMatchPinnedRequirements": true,
+  "ffmpegVersion": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  },
+  "status": "completed-asr-evidence-awaiting-review",
+  "completedTracks": [
+    {
+      "id": "hsk3-fltrp-2026:l17:audio1",
+      "file": "tracks/hsk3-l17-t1.json",
+      "sha256": "16e33932d432261e955de5a3c2bd58572c9e93f75798351b0aa42b1e30a078b3",
+      "elapsedInferenceSeconds": 5.751578279,
+      "rawWordCount": 124,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l17:audio2",
+      "file": "tracks/hsk3-l17-t2.json",
+      "sha256": "1df0c414779537ff95d6d7c7fe24af8ab9367251ecdc0c8962798ddeaf909198",
+      "elapsedInferenceSeconds": 1.6871322209999562,
+      "rawWordCount": 14,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l17:audio3",
+      "file": "tracks/hsk3-l17-t3.json",
+      "sha256": "bf5b78928916d4c85928d39926e429453ad1382731c10a67a10e52796b299d7a",
+      "elapsedInferenceSeconds": 5.775989274999972,
+      "rawWordCount": 121,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l17:audio4",
+      "file": "tracks/hsk3-l17-t4.json",
+      "sha256": "e50041b613db3efe8ab86d6d687dcb437250fc2d2a803e97a2bb4998125177e8",
+      "elapsedInferenceSeconds": 1.6395492130000093,
+      "rawWordCount": 10,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l17:audio5",
+      "file": "tracks/hsk3-l17-t5.json",
+      "sha256": "0c169147d96a6078a08114262f44fe2e43efa44c5f30ac42a458e4892e040392",
+      "elapsedInferenceSeconds": 5.165432291000002,
+      "rawWordCount": 108,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l17:audio6",
+      "file": "tracks/hsk3-l17-t6.json",
+      "sha256": "c3e9be1859a7717f66ad6a872ab8df60e52f3070e8238e424ad6ce4ebc7e64a3",
+      "elapsedInferenceSeconds": 1.638193187000013,
+      "rawWordCount": 12,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l17:audio7",
+      "file": "tracks/hsk3-l17-t7.json",
+      "sha256": "d0bed61249f24f521a8472e8ea48085e1168f26f292de29380f0298a6811a521",
+      "elapsedInferenceSeconds": 5.0562242820000165,
+      "rawWordCount": 107,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l17:audio8",
+      "file": "tracks/hsk3-l17-t8.json",
+      "sha256": "d8228538fb2d79777e6ea1642f9c3c60d6ae8fb70f80a80981b2e608ff4ec4bf",
+      "elapsedInferenceSeconds": 1.492065350999951,
+      "rawWordCount": 10,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:audio1",
+      "file": "tracks/hsk3-l18-t1.json",
+      "sha256": "8c764c8427ac033dc41f651fa3467ab7d69d65b15b9fd2f06f15ac5f024df099",
+      "elapsedInferenceSeconds": 4.984402868000018,
+      "rawWordCount": 99,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:audio2",
+      "file": "tracks/hsk3-l18-t2.json",
+      "sha256": "2261090a1f29848f62fdc854c83453059057204404cba22222b2a188652a6ca1",
+      "elapsedInferenceSeconds": 1.5693568300000038,
+      "rawWordCount": 12,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:audio3",
+      "file": "tracks/hsk3-l18-t3.json",
+      "sha256": "5024f1d1d2d2788eec84f79ff6e1c36c087c73aa3b629704ef67c1bcf08b1fe9",
+      "elapsedInferenceSeconds": 5.1726135410000325,
+      "rawWordCount": 105,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:audio4",
+      "file": "tracks/hsk3-l18-t4.json",
+      "sha256": "3cd53f56cc80b9e147997c9598a6d92c1ace2651dd8568249754301e257a9027",
+      "elapsedInferenceSeconds": 2.1935538849999716,
+      "rawWordCount": 34,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:audio5",
+      "file": "tracks/hsk3-l18-t5.json",
+      "sha256": "320728c1d907d08fc118821152d75821fe211df1be15f2e884f5054d66b09314",
+      "elapsedInferenceSeconds": 4.759379115999991,
+      "rawWordCount": 97,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:audio6",
+      "file": "tracks/hsk3-l18-t6.json",
+      "sha256": "db7e21ee9e3dd2aa5bc5b0f95806608e8c725f820e289f494f7565756d116093",
+      "elapsedInferenceSeconds": 1.6307369460000132,
+      "rawWordCount": 13,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:audio7",
+      "file": "tracks/hsk3-l18-t7.json",
+      "sha256": "7ddeb63f027765c68534ea9b5f0532e2979e7487861f74273b64dee860f4c7d7",
+      "elapsedInferenceSeconds": 4.912301837999962,
+      "rawWordCount": 108,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:audio8",
+      "file": "tracks/hsk3-l18-t8.json",
+      "sha256": "0508906d13d37ba98bca216a562c6b2d88ddb35b0d18801f2e7c03db53d2f70b",
+      "elapsedInferenceSeconds": 1.6146680269999933,
+      "rawWordCount": 13,
+      "invalidWordTimeCount": 0
+    }
+  ],
+  "preflightSHA256": "e7604e1c74bf8fcada7f466f2b2ca251a32dab72db775e7f6d34b8e8493a8ec1",
+  "preflightSeconds": 1.7457303670000215,
+  "requestedTrackCount": 16,
+  "model": {
+    "repository": "Systran/faster-whisper-small",
+    "requestedRevision": "536b0662742c02347bc0e980a01041f333bce120",
+    "actualSnapshotRevision": "536b0662742c02347bc0e980a01041f333bce120",
+    "files": [
+      {
+        "file": "config.json",
+        "bytes": 2370,
+        "sha256": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+      },
+      {
+        "file": "model.bin",
+        "bytes": 483546902,
+        "sha256": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671"
+      },
+      {
+        "file": "tokenizer.json",
+        "bytes": 2203239,
+        "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      {
+        "file": "vocabulary.txt",
+        "bytes": 459861,
+        "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+      }
+    ],
+    "device": "cpu",
+    "requestedComputeType": "int8",
+    "cpuThreads": 2,
+    "numWorkers": 1,
+    "actualComputeType": "int8_float32",
+    "downloadAndLoadSeconds": 0.9543856110000206
+  },
+  "totalInferenceSeconds": 55.043177149999906,
+  "realTimeFactor": 0.11700377856920684,
+  "elapsedTotalSeconds": 59.68667118799999,
+  "peakResidentMemoryKiB": 773056,
+  "finishedAt": "2026-10-04T17:28:31.917679+00:00"
+}

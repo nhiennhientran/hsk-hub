@@ -1,0 +1,843 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l06:audio3",
+    "level": 2,
+    "lesson": 6,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/6-3.mp3",
+    "sha256": "2531cac062456bbbfcf47ba21bcf649a26dbf6ff8f59e9dd3e412d3d4a5df28c",
+    "bytes": 829632,
+    "manifestDurationSeconds": 32.501333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 519936,
+      "durationSeconds": 32.496,
+      "sha256": "cbdbe2135761200738f51435efbfbac74cb5c0729afad0711cae9a8ae2ad2283"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 32.496,
+    "duration_after_vad": 32.496,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.42,
+      "text": "小雪,生日快乐。",
+      "tokens": [
+        50364,
+        7322,
+        47939,
+        11,
+        8244,
+        6890,
+        10251,
+        44365,
+        1543,
+        50514
+      ],
+      "avg_logprob": -0.1477403198320841,
+      "compression_ratio": 1.4120879120879122,
+      "no_speech_prob": 0.046884529292583466,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.86,
+          "word": "小",
+          "probability": 0.787144660949707
+        },
+        {
+          "start": 0.86,
+          "end": 1.06,
+          "word": "雪,",
+          "probability": 0.9962866306304932
+        },
+        {
+          "start": 1.54,
+          "end": 1.74,
+          "word": "生",
+          "probability": 0.16436730325222015
+        },
+        {
+          "start": 1.74,
+          "end": 1.98,
+          "word": "日",
+          "probability": 0.9997789263725281
+        },
+        {
+          "start": 1.98,
+          "end": 2.18,
+          "word": "快",
+          "probability": 0.9986240863800049
+        },
+        {
+          "start": 2.18,
+          "end": 2.42,
+          "word": "乐。",
+          "probability": 0.3336727023124695
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.320000000000002,
+      "end": 5.1,
+      "text": "姐姐,生日快乐。",
+      "tokens": [
+        50514,
+        18102,
+        18102,
+        11,
+        8244,
+        6890,
+        10251,
+        44365,
+        1543,
+        50664
+      ],
+      "avg_logprob": -0.1477403198320841,
+      "compression_ratio": 1.4120879120879122,
+      "no_speech_prob": 0.046884529292583466,
+      "words": [
+        {
+          "start": 3.320000000000002,
+          "end": 3.92,
+          "word": "姐",
+          "probability": 0.4576334059238434
+        },
+        {
+          "start": 3.92,
+          "end": 4.12,
+          "word": "姐,",
+          "probability": 0.9967536330223083
+        },
+        {
+          "start": 4.32,
+          "end": 4.52,
+          "word": "生",
+          "probability": 0.9838629364967346
+        },
+        {
+          "start": 4.52,
+          "end": 4.7,
+          "word": "日",
+          "probability": 0.9995513558387756
+        },
+        {
+          "start": 4.7,
+          "end": 4.88,
+          "word": "快",
+          "probability": 0.9992645382881165
+        },
+        {
+          "start": 4.88,
+          "end": 5.1,
+          "word": "乐。",
+          "probability": 0.9861375689506531
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 6.12,
+      "end": 10.1,
+      "text": "小雪,这是爸爸、妈妈送你的礼物。",
+      "tokens": [
+        50664,
+        7322,
+        47939,
+        11,
+        27455,
+        49105,
+        1231,
+        32462,
+        32462,
+        29309,
+        18961,
+        14971,
+        120,
+        23516,
+        1543,
+        50914
+      ],
+      "avg_logprob": -0.1477403198320841,
+      "compression_ratio": 1.4120879120879122,
+      "no_speech_prob": 0.046884529292583466,
+      "words": [
+        {
+          "start": 6.12,
+          "end": 6.52,
+          "word": "小",
+          "probability": 0.9796367287635803
+        },
+        {
+          "start": 6.52,
+          "end": 6.76,
+          "word": "雪,",
+          "probability": 0.9997085928916931
+        },
+        {
+          "start": 7.4,
+          "end": 7.58,
+          "word": "这是",
+          "probability": 0.9812321662902832
+        },
+        {
+          "start": 7.58,
+          "end": 8.0,
+          "word": "爸爸、",
+          "probability": 0.9764159321784973
+        },
+        {
+          "start": 8.46,
+          "end": 8.6,
+          "word": "妈",
+          "probability": 0.9948797225952148
+        },
+        {
+          "start": 8.6,
+          "end": 8.86,
+          "word": "妈",
+          "probability": 0.9991889595985413
+        },
+        {
+          "start": 8.86,
+          "end": 9.26,
+          "word": "送",
+          "probability": 0.9809245467185974
+        },
+        {
+          "start": 9.26,
+          "end": 9.56,
+          "word": "你的",
+          "probability": 0.9478435516357422
+        },
+        {
+          "start": 9.56,
+          "end": 9.84,
+          "word": "礼",
+          "probability": 0.9975824058055878
+        },
+        {
+          "start": 9.84,
+          "end": 10.1,
+          "word": "物。",
+          "probability": 0.9996028542518616
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 11.2,
+      "end": 13.56,
+      "text": "你打开看看,喜欢不喜欢。",
+      "tokens": [
+        50914,
+        2166,
+        12467,
+        18937,
+        22884,
+        11,
+        41606,
+        1960,
+        41606,
+        1543,
+        51064
+      ],
+      "avg_logprob": -0.1477403198320841,
+      "compression_ratio": 1.4120879120879122,
+      "no_speech_prob": 0.046884529292583466,
+      "words": [
+        {
+          "start": 11.2,
+          "end": 11.46,
+          "word": "你",
+          "probability": 0.9554832577705383
+        },
+        {
+          "start": 11.46,
+          "end": 11.64,
+          "word": "打",
+          "probability": 0.9769974946975708
+        },
+        {
+          "start": 11.64,
+          "end": 11.78,
+          "word": "开",
+          "probability": 0.9961888194084167
+        },
+        {
+          "start": 11.78,
+          "end": 12.12,
+          "word": "看看,",
+          "probability": 0.9573183059692383
+        },
+        {
+          "start": 12.6,
+          "end": 12.98,
+          "word": "喜欢",
+          "probability": 0.9216896295547485
+        },
+        {
+          "start": 12.98,
+          "end": 13.22,
+          "word": "不",
+          "probability": 0.9741771221160889
+        },
+        {
+          "start": 13.22,
+          "end": 13.56,
+          "word": "喜欢。",
+          "probability": 0.9990505576133728
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 14.82,
+      "end": 16.96,
+      "text": "画笔,我很喜欢。",
+      "tokens": [
+        51064,
+        27126,
+        5437,
+        242,
+        11,
+        46257,
+        41606,
+        1543,
+        51264
+      ],
+      "avg_logprob": -0.1477403198320841,
+      "compression_ratio": 1.4120879120879122,
+      "no_speech_prob": 0.046884529292583466,
+      "words": [
+        {
+          "start": 14.82,
+          "end": 15.12,
+          "word": "画",
+          "probability": 0.8928698897361755
+        },
+        {
+          "start": 15.12,
+          "end": 15.34,
+          "word": "笔,",
+          "probability": 0.9825260043144226
+        },
+        {
+          "start": 15.96,
+          "end": 16.28,
+          "word": "我很",
+          "probability": 0.947799026966095
+        },
+        {
+          "start": 16.28,
+          "end": 16.96,
+          "word": "喜欢。",
+          "probability": 0.9987579584121704
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 18.04,
+      "end": 19.46,
+      "text": "那你想画点什么?",
+      "tokens": [
+        51264,
+        4184,
+        38386,
+        27126,
+        12579,
+        10440,
+        30,
+        51364
+      ],
+      "avg_logprob": -0.1477403198320841,
+      "compression_ratio": 1.4120879120879122,
+      "no_speech_prob": 0.046884529292583466,
+      "words": [
+        {
+          "start": 18.04,
+          "end": 18.34,
+          "word": "那",
+          "probability": 0.967645525932312
+        },
+        {
+          "start": 18.34,
+          "end": 18.68,
+          "word": "你想",
+          "probability": 0.9517683386802673
+        },
+        {
+          "start": 18.68,
+          "end": 19.0,
+          "word": "画",
+          "probability": 0.994719386100769
+        },
+        {
+          "start": 19.0,
+          "end": 19.16,
+          "word": "点",
+          "probability": 0.9833947420120239
+        },
+        {
+          "start": 19.16,
+          "end": 19.46,
+          "word": "什么?",
+          "probability": 0.9544135332107544
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 20.32,
+      "end": 28.36,
+      "text": "画我们的家,有爸爸、妈妈、弟弟,还有黑色的狗、白色的猫什么的。",
+      "tokens": [
+        51364,
+        27126,
+        15003,
+        1546,
+        5155,
+        11,
+        2412,
+        49105,
+        1231,
+        32462,
+        32462,
+        1231,
+        19630,
+        19630,
+        11,
+        35091,
+        32141,
+        17673,
+        1546,
+        18637,
+        245,
+        1231,
+        13558,
+        17673,
+        1546,
+        25266,
+        104,
+        10440,
+        1546,
+        1543,
+        51814
+      ],
+      "avg_logprob": -0.1477403198320841,
+      "compression_ratio": 1.4120879120879122,
+      "no_speech_prob": 0.046884529292583466,
+      "words": [
+        {
+          "start": 20.32,
+          "end": 20.72,
+          "word": "画",
+          "probability": 0.9840033650398254
+        },
+        {
+          "start": 20.72,
+          "end": 20.94,
+          "word": "我们",
+          "probability": 0.99332594871521
+        },
+        {
+          "start": 20.94,
+          "end": 21.14,
+          "word": "的",
+          "probability": 0.9632152318954468
+        },
+        {
+          "start": 21.14,
+          "end": 21.4,
+          "word": "家,",
+          "probability": 0.9990366697311401
+        },
+        {
+          "start": 22.1,
+          "end": 22.28,
+          "word": "有",
+          "probability": 0.9713655710220337
+        },
+        {
+          "start": 22.28,
+          "end": 22.72,
+          "word": "爸爸、",
+          "probability": 0.990439772605896
+        },
+        {
+          "start": 23.3,
+          "end": 23.56,
+          "word": "妈",
+          "probability": 0.9974174499511719
+        },
+        {
+          "start": 23.56,
+          "end": 23.92,
+          "word": "妈、",
+          "probability": 0.9961745738983154
+        },
+        {
+          "start": 24.4,
+          "end": 24.6,
+          "word": "弟",
+          "probability": 0.9953770637512207
+        },
+        {
+          "start": 24.6,
+          "end": 24.94,
+          "word": "弟,",
+          "probability": 0.9997065663337708
+        },
+        {
+          "start": 25.54,
+          "end": 25.84,
+          "word": "还有",
+          "probability": 0.9878537654876709
+        },
+        {
+          "start": 25.84,
+          "end": 26.24,
+          "word": "黑",
+          "probability": 0.9839081168174744
+        },
+        {
+          "start": 26.24,
+          "end": 26.44,
+          "word": "色",
+          "probability": 0.9977983832359314
+        },
+        {
+          "start": 26.44,
+          "end": 26.56,
+          "word": "的",
+          "probability": 0.9876032471656799
+        },
+        {
+          "start": 26.56,
+          "end": 26.78,
+          "word": "狗、",
+          "probability": 0.9904387891292572
+        },
+        {
+          "start": 27.1,
+          "end": 27.24,
+          "word": "白",
+          "probability": 0.9959614872932434
+        },
+        {
+          "start": 27.24,
+          "end": 27.48,
+          "word": "色",
+          "probability": 0.9990304708480835
+        },
+        {
+          "start": 27.48,
+          "end": 27.62,
+          "word": "的",
+          "probability": 0.9600443243980408
+        },
+        {
+          "start": 27.62,
+          "end": 27.82,
+          "word": "猫",
+          "probability": 0.9982249736785889
+        },
+        {
+          "start": 27.82,
+          "end": 28.1,
+          "word": "什么",
+          "probability": 0.9739992022514343
+        },
+        {
+          "start": 28.1,
+          "end": 28.36,
+          "word": "的。",
+          "probability": 0.998874843120575
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2836,
+      "start": 29.04,
+      "end": 31.62,
+      "text": "那我要画一个穿白色衣服的姐姐",
+      "tokens": [
+        50364,
+        4184,
+        32186,
+        27126,
+        20182,
+        13740,
+        123,
+        13558,
+        17673,
+        9890,
+        96,
+        27408,
+        1546,
+        18102,
+        18102,
+        50544
+      ],
+      "avg_logprob": -0.27157020568847656,
+      "compression_ratio": 0.7924528301886793,
+      "no_speech_prob": 0.09448733925819397,
+      "words": [
+        {
+          "start": 29.04,
+          "end": 29.46,
+          "word": "那",
+          "probability": 0.7322943210601807
+        },
+        {
+          "start": 29.46,
+          "end": 29.72,
+          "word": "我要",
+          "probability": 0.9506618976593018
+        },
+        {
+          "start": 29.72,
+          "end": 29.94,
+          "word": "画",
+          "probability": 0.8106837868690491
+        },
+        {
+          "start": 29.94,
+          "end": 30.16,
+          "word": "一个",
+          "probability": 0.951943039894104
+        },
+        {
+          "start": 30.16,
+          "end": 30.4,
+          "word": "穿",
+          "probability": 0.9859428405761719
+        },
+        {
+          "start": 30.4,
+          "end": 30.64,
+          "word": "白",
+          "probability": 0.9897904992103577
+        },
+        {
+          "start": 30.64,
+          "end": 30.84,
+          "word": "色",
+          "probability": 0.9982055425643921
+        },
+        {
+          "start": 30.84,
+          "end": 31.02,
+          "word": "衣",
+          "probability": 0.9722597599029541
+        },
+        {
+          "start": 31.02,
+          "end": 31.14,
+          "word": "服",
+          "probability": 0.998223602771759
+        },
+        {
+          "start": 31.14,
+          "end": 31.24,
+          "word": "的",
+          "probability": 0.9977887868881226
+        },
+        {
+          "start": 31.24,
+          "end": 31.44,
+          "word": "姐",
+          "probability": 0.9092113971710205
+        },
+        {
+          "start": 31.44,
+          "end": 31.62,
+          "word": "姐",
+          "probability": 0.9939666986465454
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.008590411,
+  "realTimeFactor": 0.09258340752708025,
+  "observationChecks": {
+    "rawWordCount": 71,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

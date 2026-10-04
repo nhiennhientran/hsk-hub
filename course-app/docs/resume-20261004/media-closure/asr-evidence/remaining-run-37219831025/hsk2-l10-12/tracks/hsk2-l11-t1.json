@@ -1,0 +1,754 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l11:audio1",
+    "level": 2,
+    "lesson": 11,
+    "track": 1,
+    "kind": "text",
+    "text": 1,
+    "file": "course-assets/hsk2/audio/11-1.mp3",
+    "sha256": "459530c2517cbef0cbe942e9190c98af25f4a8110574356d321ff02a59a5c3ce",
+    "bytes": 756271,
+    "manifestDurationSeconds": 29.573333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 473088,
+      "durationSeconds": 29.568,
+      "sha256": "d5574fc5cea8aa309fdb20088614a30106329b6eb03083aaaa27beb4650fe4a7"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 29.568,
+    "duration_after_vad": 29.568,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.9599999999999969,
+      "end": 4.84,
+      "text": "家喻,都下課了,你怎麼還不回家?",
+      "tokens": [
+        50364,
+        5155,
+        5234,
+        119,
+        11,
+        7182,
+        4438,
+        3549,
+        110,
+        2289,
+        11,
+        2166,
+        11614,
+        7824,
+        1960,
+        8350,
+        5155,
+        30,
+        50614
+      ],
+      "avg_logprob": -0.16146926879882811,
+      "compression_ratio": 1.2284263959390862,
+      "no_speech_prob": 0.035416990518569946,
+      "words": [
+        {
+          "start": 0.9599999999999969,
+          "end": 1.48,
+          "word": "家",
+          "probability": 0.2847348749637604
+        },
+        {
+          "start": 1.48,
+          "end": 1.68,
+          "word": "喻,",
+          "probability": 0.5524592250585556
+        },
+        {
+          "start": 2.28,
+          "end": 2.42,
+          "word": "都",
+          "probability": 0.9094407558441162
+        },
+        {
+          "start": 2.42,
+          "end": 2.62,
+          "word": "下",
+          "probability": 0.9969983100891113
+        },
+        {
+          "start": 2.62,
+          "end": 2.88,
+          "word": "課",
+          "probability": 0.9242877960205078
+        },
+        {
+          "start": 2.88,
+          "end": 3.16,
+          "word": "了,",
+          "probability": 0.9947428703308105
+        },
+        {
+          "start": 3.64,
+          "end": 3.76,
+          "word": "你",
+          "probability": 0.9444661140441895
+        },
+        {
+          "start": 3.76,
+          "end": 4.0,
+          "word": "怎麼",
+          "probability": 0.8953275680541992
+        },
+        {
+          "start": 4.0,
+          "end": 4.24,
+          "word": "還",
+          "probability": 0.9801622629165649
+        },
+        {
+          "start": 4.24,
+          "end": 4.38,
+          "word": "不",
+          "probability": 0.9963018894195557
+        },
+        {
+          "start": 4.38,
+          "end": 4.58,
+          "word": "回",
+          "probability": 0.992021381855011
+        },
+        {
+          "start": 4.58,
+          "end": 4.84,
+          "word": "家?",
+          "probability": 0.9994359612464905
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 6.18,
+      "end": 8.28,
+      "text": "我頭疼不太舒服。",
+      "tokens": [
+        50614,
+        1654,
+        19921,
+        18140,
+        120,
+        1960,
+        9455,
+        46204,
+        27408,
+        1543,
+        50814
+      ],
+      "avg_logprob": -0.16146926879882811,
+      "compression_ratio": 1.2284263959390862,
+      "no_speech_prob": 0.035416990518569946,
+      "words": [
+        {
+          "start": 6.18,
+          "end": 6.52,
+          "word": "我",
+          "probability": 0.9485722780227661
+        },
+        {
+          "start": 6.52,
+          "end": 6.8,
+          "word": "頭",
+          "probability": 0.9919078350067139
+        },
+        {
+          "start": 6.8,
+          "end": 7.12,
+          "word": "疼",
+          "probability": 0.9898011386394501
+        },
+        {
+          "start": 7.12,
+          "end": 7.54,
+          "word": "不",
+          "probability": 0.7041676044464111
+        },
+        {
+          "start": 7.54,
+          "end": 7.7,
+          "word": "太",
+          "probability": 0.995810866355896
+        },
+        {
+          "start": 7.7,
+          "end": 7.98,
+          "word": "舒",
+          "probability": 0.9975706934928894
+        },
+        {
+          "start": 7.98,
+          "end": 8.28,
+          "word": "服。",
+          "probability": 0.9963833093643188
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 9.8,
+      "end": 13.76,
+      "text": "你這幾天經常頭疼,去醫院看看吧。",
+      "tokens": [
+        50814,
+        2166,
+        2664,
+        23575,
+        6135,
+        15145,
+        11279,
+        19921,
+        18140,
+        120,
+        11,
+        6734,
+        48351,
+        38358,
+        22884,
+        6062,
+        1543,
+        51064
+      ],
+      "avg_logprob": -0.16146926879882811,
+      "compression_ratio": 1.2284263959390862,
+      "no_speech_prob": 0.035416990518569946,
+      "words": [
+        {
+          "start": 9.8,
+          "end": 10.32,
+          "word": "你",
+          "probability": 0.9687445759773254
+        },
+        {
+          "start": 10.32,
+          "end": 10.54,
+          "word": "這",
+          "probability": 0.9883484244346619
+        },
+        {
+          "start": 10.54,
+          "end": 10.7,
+          "word": "幾",
+          "probability": 0.9935600757598877
+        },
+        {
+          "start": 10.7,
+          "end": 10.96,
+          "word": "天",
+          "probability": 0.9983149766921997
+        },
+        {
+          "start": 10.96,
+          "end": 11.18,
+          "word": "經",
+          "probability": 0.9544026851654053
+        },
+        {
+          "start": 11.18,
+          "end": 11.42,
+          "word": "常",
+          "probability": 0.9996800422668457
+        },
+        {
+          "start": 11.42,
+          "end": 11.66,
+          "word": "頭",
+          "probability": 0.9868708848953247
+        },
+        {
+          "start": 11.66,
+          "end": 11.9,
+          "word": "疼,",
+          "probability": 0.9970857203006744
+        },
+        {
+          "start": 12.34,
+          "end": 12.6,
+          "word": "去",
+          "probability": 0.9915580749511719
+        },
+        {
+          "start": 12.6,
+          "end": 12.84,
+          "word": "醫",
+          "probability": 0.9952884912490845
+        },
+        {
+          "start": 12.84,
+          "end": 13.04,
+          "word": "院",
+          "probability": 0.99965500831604
+        },
+        {
+          "start": 13.04,
+          "end": 13.36,
+          "word": "看看",
+          "probability": 0.9726354479789734
+        },
+        {
+          "start": 13.36,
+          "end": 13.76,
+          "word": "吧。",
+          "probability": 0.9849711060523987
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 15.08,
+      "end": 19.56,
+      "text": "我想休息一下,現在不能動,一動就疼。",
+      "tokens": [
+        51064,
+        25246,
+        39437,
+        26460,
+        8861,
+        11,
+        12648,
+        28590,
+        12572,
+        11,
+        2257,
+        12572,
+        3111,
+        18140,
+        120,
+        1543,
+        51364
+      ],
+      "avg_logprob": -0.16146926879882811,
+      "compression_ratio": 1.2284263959390862,
+      "no_speech_prob": 0.035416990518569946,
+      "words": [
+        {
+          "start": 15.08,
+          "end": 15.6,
+          "word": "我想",
+          "probability": 0.9845251441001892
+        },
+        {
+          "start": 15.6,
+          "end": 15.98,
+          "word": "休",
+          "probability": 0.9950432777404785
+        },
+        {
+          "start": 15.98,
+          "end": 16.26,
+          "word": "息",
+          "probability": 0.9985118508338928
+        },
+        {
+          "start": 16.26,
+          "end": 16.58,
+          "word": "一下,",
+          "probability": 0.9868358373641968
+        },
+        {
+          "start": 17.24,
+          "end": 17.46,
+          "word": "現在",
+          "probability": 0.9896849393844604
+        },
+        {
+          "start": 17.46,
+          "end": 17.86,
+          "word": "不能",
+          "probability": 0.9877921938896179
+        },
+        {
+          "start": 17.86,
+          "end": 18.18,
+          "word": "動,",
+          "probability": 0.9918435215950012
+        },
+        {
+          "start": 18.64,
+          "end": 18.82,
+          "word": "一",
+          "probability": 0.9871440529823303
+        },
+        {
+          "start": 18.82,
+          "end": 19.02,
+          "word": "動",
+          "probability": 0.9975144863128662
+        },
+        {
+          "start": 19.02,
+          "end": 19.26,
+          "word": "就",
+          "probability": 0.9920979738235474
+        },
+        {
+          "start": 19.26,
+          "end": 19.56,
+          "word": "疼。",
+          "probability": 0.998183399438858
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 21.06,
+      "end": 25.98,
+      "text": "那你在這兒坐著,我去開車,一會兒送你去醫院。",
+      "tokens": [
+        51364,
+        4184,
+        41410,
+        2664,
+        35125,
+        31123,
+        19382,
+        11,
+        1654,
+        6734,
+        8949,
+        25941,
+        11,
+        2257,
+        6236,
+        35125,
+        29309,
+        2166,
+        6734,
+        48351,
+        38358,
+        1543,
+        51664
+      ],
+      "avg_logprob": -0.16146926879882811,
+      "compression_ratio": 1.2284263959390862,
+      "no_speech_prob": 0.035416990518569946,
+      "words": [
+        {
+          "start": 21.06,
+          "end": 21.58,
+          "word": "那",
+          "probability": 0.9747200012207031
+        },
+        {
+          "start": 21.58,
+          "end": 21.86,
+          "word": "你在",
+          "probability": 0.9406785368919373
+        },
+        {
+          "start": 21.86,
+          "end": 22.2,
+          "word": "這",
+          "probability": 0.8778091669082642
+        },
+        {
+          "start": 22.2,
+          "end": 22.3,
+          "word": "兒",
+          "probability": 0.7562035322189331
+        },
+        {
+          "start": 22.3,
+          "end": 22.44,
+          "word": "坐",
+          "probability": 0.9821836948394775
+        },
+        {
+          "start": 22.44,
+          "end": 22.68,
+          "word": "著,",
+          "probability": 0.9698373079299927
+        },
+        {
+          "start": 23.14,
+          "end": 23.3,
+          "word": "我",
+          "probability": 0.9961202144622803
+        },
+        {
+          "start": 23.3,
+          "end": 23.46,
+          "word": "去",
+          "probability": 0.9676034450531006
+        },
+        {
+          "start": 23.46,
+          "end": 23.64,
+          "word": "開",
+          "probability": 0.9976773858070374
+        },
+        {
+          "start": 23.64,
+          "end": 23.94,
+          "word": "車,",
+          "probability": 0.9993162155151367
+        },
+        {
+          "start": 24.5,
+          "end": 24.64,
+          "word": "一",
+          "probability": 0.9837005734443665
+        },
+        {
+          "start": 24.64,
+          "end": 24.84,
+          "word": "會",
+          "probability": 0.9937607645988464
+        },
+        {
+          "start": 24.84,
+          "end": 24.98,
+          "word": "兒",
+          "probability": 0.8910677433013916
+        },
+        {
+          "start": 24.98,
+          "end": 25.14,
+          "word": "送",
+          "probability": 0.9950875639915466
+        },
+        {
+          "start": 25.14,
+          "end": 25.3,
+          "word": "你",
+          "probability": 0.9909421801567078
+        },
+        {
+          "start": 25.3,
+          "end": 25.5,
+          "word": "去",
+          "probability": 0.9953193068504333
+        },
+        {
+          "start": 25.5,
+          "end": 25.72,
+          "word": "醫",
+          "probability": 0.9979523420333862
+        },
+        {
+          "start": 25.72,
+          "end": 25.98,
+          "word": "院。",
+          "probability": 0.9994680285453796
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 27.62,
+      "end": 28.76,
+      "text": "謝謝王老師。",
+      "tokens": [
+        51664,
+        11003,
+        19940,
+        23907,
+        1543,
+        51814
+      ],
+      "avg_logprob": -0.16146926879882811,
+      "compression_ratio": 1.2284263959390862,
+      "no_speech_prob": 0.035416990518569946,
+      "words": [
+        {
+          "start": 27.62,
+          "end": 28.14,
+          "word": "謝謝",
+          "probability": 0.9917382597923279
+        },
+        {
+          "start": 28.14,
+          "end": 28.44,
+          "word": "王",
+          "probability": 0.9820924997329712
+        },
+        {
+          "start": 28.44,
+          "end": 28.76,
+          "word": "老師。",
+          "probability": 0.9923215508460999
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.9707636099999917,
+  "realTimeFactor": 0.06665190780573564,
+  "observationChecks": {
+    "rawWordCount": 64,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

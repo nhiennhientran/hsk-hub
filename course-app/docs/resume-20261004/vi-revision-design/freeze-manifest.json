@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "design-only",
+  "authorFiles": [
+    {
+      "path": "README.md",
+      "bytes": 14490,
+      "sha256": "7b91b962be15546b480be10cdf5ab53fdeb8931e65038e6d4bb00eeaf8167d6f"
+    },
+    {
+      "path": "implementation-files.json",
+      "bytes": 8356,
+      "sha256": "62d5e7ebf74bf3132ad9a716059ad5e21d20ab625e79cfb54093a19b00ab2621"
+    },
+    {
+      "path": "manifest-contract.json",
+      "bytes": 3422,
+      "sha256": "6960605f64eaecc80fab4f8726bc3d7e84895cc4676896d5c1afb9df430056ed"
+    },
+    {
+      "path": "read-ledger.json",
+      "bytes": 16082,
+      "sha256": "33e75387358e301006eac239973f701c8fcd065c5f7d62bed2be85ff7587e20a"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 303,
+      "sha256": "87d8e00a63d0785a014aaa45157217bf214f8846a04ed99ad48e3f81857fc71d"
+    }
+  ],
+  "independentReview": "not-requested-yet; design is a proposal, not accepted engineering implementation",
+  "officialViAudit": "not-started-by-this-task",
+  "productionMutations": 0,
+  "protectedBanksUnchanged": "Current hashes in read-ledger; no writes by this task",
+  "recordedAtUtc": "2026-10-04T18:11:09.316370+00:00"
+}

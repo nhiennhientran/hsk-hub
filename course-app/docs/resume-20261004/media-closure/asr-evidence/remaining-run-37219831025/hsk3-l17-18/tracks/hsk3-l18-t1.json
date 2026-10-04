@@ -1,0 +1,1068 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l18:audio1",
+    "level": 3,
+    "lesson": 18,
+    "track": 1,
+    "kind": "text",
+    "text": 1,
+    "file": "course-assets/hsk3/audio/18-1.mp3",
+    "sha256": "2654f447847618211a2c3b21f07c4a07c277e0be3f53758b74acc41219b4289f",
+    "bytes": 645802,
+    "manifestDurationSeconds": 37.824689,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 606459,
+      "durationSeconds": 37.9036875,
+      "sha256": "47c44173075a0f70a0504492a2f3969d34f2266c37079a66b99be6b75155bdaf"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 37.9036875,
+    "duration_after_vad": 37.9036875,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.5000000000000016,
+      "end": 3.04,
+      "text": "我要在中国过年,真开心。",
+      "tokens": [
+        50364,
+        32186,
+        3581,
+        38165,
+        16866,
+        5157,
+        11,
+        6303,
+        18937,
+        7945,
+        1543,
+        50539
+      ],
+      "avg_logprob": -0.15808382715497699,
+      "compression_ratio": 1.3101851851851851,
+      "no_speech_prob": 0.09366608411073685,
+      "words": [
+        {
+          "start": 0.5000000000000016,
+          "end": 0.98,
+          "word": "我要",
+          "probability": 0.6416012644767761
+        },
+        {
+          "start": 0.98,
+          "end": 1.22,
+          "word": "在",
+          "probability": 0.9891647696495056
+        },
+        {
+          "start": 1.22,
+          "end": 1.54,
+          "word": "中国",
+          "probability": 0.5837687253952026
+        },
+        {
+          "start": 1.54,
+          "end": 1.82,
+          "word": "过",
+          "probability": 0.9735750555992126
+        },
+        {
+          "start": 1.82,
+          "end": 2.08,
+          "word": "年,",
+          "probability": 0.9937453269958496
+        },
+        {
+          "start": 2.38,
+          "end": 2.5,
+          "word": "真",
+          "probability": 0.9753495454788208
+        },
+        {
+          "start": 2.5,
+          "end": 2.74,
+          "word": "开",
+          "probability": 0.9939595460891724
+        },
+        {
+          "start": 2.74,
+          "end": 3.04,
+          "word": "心。",
+          "probability": 0.999534010887146
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.860000000000001,
+      "end": 8.12,
+      "text": "第一次请外国朋友来家里过春节,我也很高兴。",
+      "tokens": [
+        50539,
+        18049,
+        9487,
+        27908,
+        12022,
+        16086,
+        19828,
+        6912,
+        5155,
+        15759,
+        16866,
+        46953,
+        45161,
+        11,
+        27761,
+        4563,
+        12979,
+        2347,
+        112,
+        1543,
+        50789
+      ],
+      "avg_logprob": -0.15808382715497699,
+      "compression_ratio": 1.3101851851851851,
+      "no_speech_prob": 0.09366608411073685,
+      "words": [
+        {
+          "start": 3.860000000000001,
+          "end": 4.34,
+          "word": "第一",
+          "probability": 0.9431858062744141
+        },
+        {
+          "start": 4.34,
+          "end": 4.66,
+          "word": "次",
+          "probability": 0.9970808625221252
+        },
+        {
+          "start": 4.66,
+          "end": 4.88,
+          "word": "请",
+          "probability": 0.9538806080818176
+        },
+        {
+          "start": 4.88,
+          "end": 5.1,
+          "word": "外",
+          "probability": 0.9929764866828918
+        },
+        {
+          "start": 5.1,
+          "end": 5.26,
+          "word": "国",
+          "probability": 0.9953200221061707
+        },
+        {
+          "start": 5.26,
+          "end": 5.56,
+          "word": "朋友",
+          "probability": 0.9969801306724548
+        },
+        {
+          "start": 5.56,
+          "end": 5.8,
+          "word": "来",
+          "probability": 0.9486314058303833
+        },
+        {
+          "start": 5.8,
+          "end": 6.0,
+          "word": "家",
+          "probability": 0.8667936325073242
+        },
+        {
+          "start": 6.0,
+          "end": 6.14,
+          "word": "里",
+          "probability": 0.9137640595436096
+        },
+        {
+          "start": 6.14,
+          "end": 6.3,
+          "word": "过",
+          "probability": 0.9877668619155884
+        },
+        {
+          "start": 6.3,
+          "end": 6.52,
+          "word": "春",
+          "probability": 0.9993249177932739
+        },
+        {
+          "start": 6.52,
+          "end": 6.74,
+          "word": "节,",
+          "probability": 0.9952310919761658
+        },
+        {
+          "start": 7.26,
+          "end": 7.44,
+          "word": "我也",
+          "probability": 0.9641388654708862
+        },
+        {
+          "start": 7.44,
+          "end": 7.7,
+          "word": "很",
+          "probability": 0.997246265411377
+        },
+        {
+          "start": 7.7,
+          "end": 7.9,
+          "word": "高",
+          "probability": 0.99783855676651
+        },
+        {
+          "start": 7.9,
+          "end": 8.12,
+          "word": "兴。",
+          "probability": 0.9992409646511078
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 8.96,
+      "end": 10.32,
+      "text": "你们怎样过节?",
+      "tokens": [
+        50789,
+        29806,
+        7627,
+        14496,
+        16866,
+        45161,
+        30,
+        50914
+      ],
+      "avg_logprob": -0.15808382715497699,
+      "compression_ratio": 1.3101851851851851,
+      "no_speech_prob": 0.09366608411073685,
+      "words": [
+        {
+          "start": 8.96,
+          "end": 9.44,
+          "word": "你们",
+          "probability": 0.962878942489624
+        },
+        {
+          "start": 9.44,
+          "end": 9.72,
+          "word": "怎",
+          "probability": 0.9820099472999573
+        },
+        {
+          "start": 9.72,
+          "end": 9.9,
+          "word": "样",
+          "probability": 0.9988552331924438
+        },
+        {
+          "start": 9.9,
+          "end": 10.1,
+          "word": "过",
+          "probability": 0.9961870312690735
+        },
+        {
+          "start": 10.1,
+          "end": 10.32,
+          "word": "节?",
+          "probability": 0.9979782700538635
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 11.58,
+      "end": 14.02,
+      "text": "春节是中国最重要的节日。",
+      "tokens": [
+        50914,
+        46953,
+        45161,
+        1541,
+        38165,
+        8661,
+        24928,
+        1546,
+        45161,
+        6890,
+        1543,
+        51089
+      ],
+      "avg_logprob": -0.15808382715497699,
+      "compression_ratio": 1.3101851851851851,
+      "no_speech_prob": 0.09366608411073685,
+      "words": [
+        {
+          "start": 11.58,
+          "end": 11.82,
+          "word": "春",
+          "probability": 0.994653582572937
+        },
+        {
+          "start": 11.82,
+          "end": 12.02,
+          "word": "节",
+          "probability": 0.9984924793243408
+        },
+        {
+          "start": 12.02,
+          "end": 12.48,
+          "word": "是",
+          "probability": 0.9450574517250061
+        },
+        {
+          "start": 12.48,
+          "end": 12.78,
+          "word": "中国",
+          "probability": 0.992775559425354
+        },
+        {
+          "start": 12.78,
+          "end": 13.16,
+          "word": "最",
+          "probability": 0.9961363673210144
+        },
+        {
+          "start": 13.16,
+          "end": 13.48,
+          "word": "重要",
+          "probability": 0.99659663438797
+        },
+        {
+          "start": 13.48,
+          "end": 13.62,
+          "word": "的",
+          "probability": 0.9977754950523376
+        },
+        {
+          "start": 13.62,
+          "end": 13.8,
+          "word": "节",
+          "probability": 0.9780052304267883
+        },
+        {
+          "start": 13.8,
+          "end": 14.02,
+          "word": "日。",
+          "probability": 0.9994164705276489
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 14.6,
+      "end": 17.44,
+      "text": "我们一般会回家,跟家人一起过。",
+      "tokens": [
+        51089,
+        15003,
+        2257,
+        49640,
+        12949,
+        8350,
+        5155,
+        11,
+        9678,
+        5155,
+        4035,
+        29567,
+        16866,
+        1543,
+        51264
+      ],
+      "avg_logprob": -0.15808382715497699,
+      "compression_ratio": 1.3101851851851851,
+      "no_speech_prob": 0.09366608411073685,
+      "words": [
+        {
+          "start": 14.6,
+          "end": 14.82,
+          "word": "我们",
+          "probability": 0.9920221567153931
+        },
+        {
+          "start": 14.82,
+          "end": 15.0,
+          "word": "一",
+          "probability": 0.9985979199409485
+        },
+        {
+          "start": 15.0,
+          "end": 15.18,
+          "word": "般",
+          "probability": 0.9990102052688599
+        },
+        {
+          "start": 15.18,
+          "end": 15.4,
+          "word": "会",
+          "probability": 0.9912972450256348
+        },
+        {
+          "start": 15.4,
+          "end": 15.62,
+          "word": "回",
+          "probability": 0.9989343285560608
+        },
+        {
+          "start": 15.62,
+          "end": 15.92,
+          "word": "家,",
+          "probability": 0.9993958473205566
+        },
+        {
+          "start": 16.34,
+          "end": 16.46,
+          "word": "跟",
+          "probability": 0.9836201667785645
+        },
+        {
+          "start": 16.46,
+          "end": 16.68,
+          "word": "家",
+          "probability": 0.9482281804084778
+        },
+        {
+          "start": 16.68,
+          "end": 16.9,
+          "word": "人",
+          "probability": 0.9994726777076721
+        },
+        {
+          "start": 16.9,
+          "end": 17.12,
+          "word": "一起",
+          "probability": 0.99845290184021
+        },
+        {
+          "start": 17.12,
+          "end": 17.44,
+          "word": "过。",
+          "probability": 0.9948604702949524
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 18.880000000000003,
+      "end": 21.2,
+      "text": "那你跟家人会一起做什么?",
+      "tokens": [
+        51264,
+        4184,
+        2166,
+        9678,
+        5155,
+        4035,
+        12949,
+        29567,
+        10907,
+        10440,
+        30,
+        51464
+      ],
+      "avg_logprob": -0.15808382715497699,
+      "compression_ratio": 1.3101851851851851,
+      "no_speech_prob": 0.09366608411073685,
+      "words": [
+        {
+          "start": 18.880000000000003,
+          "end": 19.36,
+          "word": "那",
+          "probability": 0.9703880548477173
+        },
+        {
+          "start": 19.36,
+          "end": 19.52,
+          "word": "你",
+          "probability": 0.9877244234085083
+        },
+        {
+          "start": 19.52,
+          "end": 19.64,
+          "word": "跟",
+          "probability": 0.9854505062103271
+        },
+        {
+          "start": 19.64,
+          "end": 19.9,
+          "word": "家",
+          "probability": 0.9952977299690247
+        },
+        {
+          "start": 19.9,
+          "end": 20.18,
+          "word": "人",
+          "probability": 0.9992976188659668
+        },
+        {
+          "start": 20.18,
+          "end": 20.42,
+          "word": "会",
+          "probability": 0.9733091592788696
+        },
+        {
+          "start": 20.42,
+          "end": 20.72,
+          "word": "一起",
+          "probability": 0.9984442591667175
+        },
+        {
+          "start": 20.72,
+          "end": 20.96,
+          "word": "做",
+          "probability": 0.9959516525268555
+        },
+        {
+          "start": 20.96,
+          "end": 21.2,
+          "word": "什么?",
+          "probability": 0.9811558723449707
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 22.660000000000004,
+      "end": 27.14,
+      "text": "我们家会一边包饺子,一边看春节联欢晚会,",
+      "tokens": [
+        51464,
+        15003,
+        5155,
+        12949,
+        2257,
+        40503,
+        23305,
+        41520,
+        118,
+        7626,
+        11,
+        2257,
+        40503,
+        4200,
+        46953,
+        45161,
+        8171,
+        242,
+        28566,
+        27080,
+        12949,
+        11,
+        51739
+      ],
+      "avg_logprob": -0.15808382715497699,
+      "compression_ratio": 1.3101851851851851,
+      "no_speech_prob": 0.09366608411073685,
+      "words": [
+        {
+          "start": 22.660000000000004,
+          "end": 23.14,
+          "word": "我们",
+          "probability": 0.9945840239524841
+        },
+        {
+          "start": 23.14,
+          "end": 23.4,
+          "word": "家",
+          "probability": 0.998691976070404
+        },
+        {
+          "start": 23.4,
+          "end": 23.78,
+          "word": "会",
+          "probability": 0.9931371212005615
+        },
+        {
+          "start": 23.78,
+          "end": 23.96,
+          "word": "一",
+          "probability": 0.9974206686019897
+        },
+        {
+          "start": 23.96,
+          "end": 24.14,
+          "word": "边",
+          "probability": 0.9907682538032532
+        },
+        {
+          "start": 24.14,
+          "end": 24.32,
+          "word": "包",
+          "probability": 0.9218605160713196
+        },
+        {
+          "start": 24.32,
+          "end": 24.54,
+          "word": "饺",
+          "probability": 0.9701057970523834
+        },
+        {
+          "start": 24.54,
+          "end": 24.76,
+          "word": "子,",
+          "probability": 0.9999957084655762
+        },
+        {
+          "start": 25.16,
+          "end": 25.32,
+          "word": "一",
+          "probability": 0.9911900758743286
+        },
+        {
+          "start": 25.32,
+          "end": 25.48,
+          "word": "边",
+          "probability": 0.9973053932189941
+        },
+        {
+          "start": 25.48,
+          "end": 25.72,
+          "word": "看",
+          "probability": 0.9990237951278687
+        },
+        {
+          "start": 25.72,
+          "end": 26.06,
+          "word": "春",
+          "probability": 0.9972710013389587
+        },
+        {
+          "start": 26.06,
+          "end": 26.32,
+          "word": "节",
+          "probability": 0.9991974234580994
+        },
+        {
+          "start": 26.32,
+          "end": 26.52,
+          "word": "联",
+          "probability": 0.8081777989864349
+        },
+        {
+          "start": 26.52,
+          "end": 26.72,
+          "word": "欢",
+          "probability": 0.9928065538406372
+        },
+        {
+          "start": 26.72,
+          "end": 26.92,
+          "word": "晚",
+          "probability": 0.988145112991333
+        },
+        {
+          "start": 26.92,
+          "end": 27.14,
+          "word": "会,",
+          "probability": 0.9870613217353821
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2714,
+      "start": 27.14,
+      "end": 30.14,
+      "text": "一直到12点以后才睡觉。",
+      "tokens": [
+        50364,
+        34448,
+        4511,
+        4762,
+        12579,
+        3588,
+        13547,
+        18888,
+        40490,
+        24447,
+        1543,
+        50514
+      ],
+      "avg_logprob": -0.23116161839829552,
+      "compression_ratio": 0.9405940594059405,
+      "no_speech_prob": 0.06131421774625778,
+      "words": [
+        {
+          "start": 27.14,
+          "end": 27.94,
+          "word": "一直",
+          "probability": 0.4751977026462555
+        },
+        {
+          "start": 27.94,
+          "end": 28.24,
+          "word": "到",
+          "probability": 0.9964278340339661
+        },
+        {
+          "start": 28.24,
+          "end": 28.64,
+          "word": "12",
+          "probability": 0.6131736636161804
+        },
+        {
+          "start": 28.64,
+          "end": 28.92,
+          "word": "点",
+          "probability": 0.7901349067687988
+        },
+        {
+          "start": 28.92,
+          "end": 29.12,
+          "word": "以",
+          "probability": 0.9071336984634399
+        },
+        {
+          "start": 29.12,
+          "end": 29.32,
+          "word": "后",
+          "probability": 0.9961063265800476
+        },
+        {
+          "start": 29.32,
+          "end": 29.54,
+          "word": "才",
+          "probability": 0.9886759519577026
+        },
+        {
+          "start": 29.54,
+          "end": 29.74,
+          "word": "睡",
+          "probability": 0.9949272871017456
+        },
+        {
+          "start": 29.74,
+          "end": 30.14,
+          "word": "觉。",
+          "probability": 0.9978481531143188
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 2714,
+      "start": 31.14,
+      "end": 35.0,
+      "text": "听起来很有意思。春节放几天假。",
+      "tokens": [
+        50564,
+        31022,
+        9147,
+        6912,
+        49295,
+        16697,
+        1543,
+        46953,
+        45161,
+        12744,
+        6336,
+        254,
+        6135,
+        31706,
+        1543,
+        50764
+      ],
+      "avg_logprob": -0.23116161839829552,
+      "compression_ratio": 0.9405940594059405,
+      "no_speech_prob": 0.06131421774625778,
+      "words": [
+        {
+          "start": 31.14,
+          "end": 31.7,
+          "word": "听",
+          "probability": 0.8192587494850159
+        },
+        {
+          "start": 31.7,
+          "end": 31.9,
+          "word": "起",
+          "probability": 0.9917265176773071
+        },
+        {
+          "start": 31.9,
+          "end": 32.14,
+          "word": "来",
+          "probability": 0.9996833801269531
+        },
+        {
+          "start": 32.14,
+          "end": 32.4,
+          "word": "很有",
+          "probability": 0.994570791721344
+        },
+        {
+          "start": 32.4,
+          "end": 32.88,
+          "word": "意思。",
+          "probability": 0.9995918869972229
+        },
+        {
+          "start": 33.5,
+          "end": 33.76,
+          "word": "春",
+          "probability": 0.9949228167533875
+        },
+        {
+          "start": 33.76,
+          "end": 34.04,
+          "word": "节",
+          "probability": 0.979017972946167
+        },
+        {
+          "start": 34.04,
+          "end": 34.36,
+          "word": "放",
+          "probability": 0.9753309488296509
+        },
+        {
+          "start": 34.36,
+          "end": 34.56,
+          "word": "几",
+          "probability": 0.8899424374103546
+        },
+        {
+          "start": 34.56,
+          "end": 34.72,
+          "word": "天",
+          "probability": 0.9974443912506104
+        },
+        {
+          "start": 34.72,
+          "end": 35.0,
+          "word": "假。",
+          "probability": 0.9541743993759155
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 10,
+      "seek": 2714,
+      "start": 35.9,
+      "end": 37.08,
+      "text": "大概七八天。",
+      "tokens": [
+        50764,
+        32044,
+        29920,
+        33453,
+        6135,
+        1543,
+        50864
+      ],
+      "avg_logprob": -0.23116161839829552,
+      "compression_ratio": 0.9405940594059405,
+      "no_speech_prob": 0.06131421774625778,
+      "words": [
+        {
+          "start": 35.9,
+          "end": 36.24,
+          "word": "大概",
+          "probability": 0.9457474946975708
+        },
+        {
+          "start": 36.24,
+          "end": 36.7,
+          "word": "七",
+          "probability": 0.899600088596344
+        },
+        {
+          "start": 36.7,
+          "end": 36.86,
+          "word": "八",
+          "probability": 0.5382513403892517
+        },
+        {
+          "start": 36.86,
+          "end": 37.08,
+          "word": "天。",
+          "probability": 0.9978529214859009
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 4.984402868000018,
+  "realTimeFactor": 0.13150179301156434,
+  "observationChecks": {
+    "rawWordCount": 99,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

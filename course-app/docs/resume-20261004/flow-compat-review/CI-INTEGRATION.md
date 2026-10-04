@@ -12,10 +12,10 @@ cp native-flow-results.json formal64-${BROWSER}.json
 
 The default main config collects exactly **64** formal cases in five files. It does not include the four old diagnostic assertions. Default asset root is the checked-out `course-app/dist`; `FLOW_DIST_DIR`, `FLOW_BROWSER_PATH` and `FLOW_PORT` are optional. A collection-only command must use `--reporter=list` to avoid overwriting a result JSON.
 
-Run the **34 retained standalone HSK1 definitions** separately from the **one explicitly test-authorized fresh-context backup case**. The original password-dependent case stays unchanged and is excluded from this isolated backup-flow job. This excludes one exact original title, not a general substring matching other backup checks.
+Run the **34 retained standalone HSK1 definitions** separately from the **one explicitly test-authorized fresh-context backup case**. The original password-dependent case stays unchanged and is excluded from this isolated backup-flow job. The filter uses that test's full, unique title without anchors because Playwright matches the project/file-prefixed full title. Collection independently verified 34 retained cases per engine with this filter.
 
 ```sh
-node ../../../../hsk1-app/node_modules/@playwright/test/cli.js test --config=playwright.hsk1-retained.config.ts --project="${BROWSER}" --grep-invert='^a downloaded nonempty backup restores identical data in a new context and one import-before recovery$'
+node ../../../../hsk1-app/node_modules/@playwright/test/cli.js test --config=playwright.hsk1-retained.config.ts --project="${BROWSER}" --grep-invert='a downloaded nonempty backup restores identical data in a new context and one import-before recovery'
 cp hsk1-retained-results.json retained34-${BROWSER}.json
 FLOW_HSK1_MATCH=hsk1-fresh-backup.retained.ts node ../../../../hsk1-app/node_modules/@playwright/test/cli.js test --config=playwright.hsk1-retained.config.ts --project="${BROWSER}"
 cp hsk1-retained-results.json authorized-backup1-${BROWSER}.json

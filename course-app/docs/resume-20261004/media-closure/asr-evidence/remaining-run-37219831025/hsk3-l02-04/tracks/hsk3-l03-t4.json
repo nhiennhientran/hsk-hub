@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l03:audio4",
+    "level": 3,
+    "lesson": 3,
+    "track": 4,
+    "kind": "vocab",
+    "text": 2,
+    "file": "course-assets/hsk3/audio/3-4.mp3",
+    "sha256": "273645fcacd65ee783057dc1174ae9af8097467a63c3dccdc9f57ab578144ee8",
+    "bytes": 305945,
+    "manifestDurationSeconds": 16.583756,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 265822,
+      "durationSeconds": 16.613875,
+      "sha256": "ebae50461904f66a273824aab128b563be948dfb73cfd89995b01cb8ce316b56"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 16.613875,
+    "duration_after_vad": 16.613875,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 0.84,
+      "text": "登",
+      "tokens": [
+        50364,
+        25874,
+        50464
+      ],
+      "avg_logprob": -0.26711441319564294,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.5440481901168823,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.84,
+          "word": "登",
+          "probability": 0.3744997978210449
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.0,
+      "end": 3.3,
+      "text": "关",
+      "tokens": [
+        50464,
+        28053,
+        50564
+      ],
+      "avg_logprob": -0.26711441319564294,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.5440481901168823,
+      "words": [
+        {
+          "start": 2.0,
+          "end": 3.3,
+          "word": "关",
+          "probability": 0.025457926094532013
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 4.0,
+      "end": 6.76,
+      "text": "冰箱",
+      "tokens": [
+        50564,
+        5676,
+        108,
+        11249,
+        109,
+        50714
+      ],
+      "avg_logprob": -0.26711441319564294,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.5440481901168823,
+      "words": [
+        {
+          "start": 4.0,
+          "end": 4.92,
+          "word": "冰",
+          "probability": 0.9855029582977295
+        },
+        {
+          "start": 4.92,
+          "end": 6.76,
+          "word": "箱",
+          "probability": 0.949199765920639
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 6.76,
+      "end": 9.88,
+      "text": "卫生间",
+      "tokens": [
+        50714,
+        5322,
+        104,
+        8244,
+        31685,
+        50864
+      ],
+      "avg_logprob": -0.26711441319564294,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.5440481901168823,
+      "words": [
+        {
+          "start": 6.76,
+          "end": 7.6,
+          "word": "卫",
+          "probability": 0.717169925570488
+        },
+        {
+          "start": 7.6,
+          "end": 7.94,
+          "word": "生",
+          "probability": 0.9686832427978516
+        },
+        {
+          "start": 7.94,
+          "end": 9.88,
+          "word": "间",
+          "probability": 0.9374092221260071
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 9.88,
+      "end": 12.5,
+      "text": "打扫",
+      "tokens": [
+        50864,
+        12467,
+        3416,
+        104,
+        51014
+      ],
+      "avg_logprob": -0.26711441319564294,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.5440481901168823,
+      "words": [
+        {
+          "start": 9.88,
+          "end": 10.58,
+          "word": "打",
+          "probability": 0.9627037644386292
+        },
+        {
+          "start": 10.58,
+          "end": 12.5,
+          "word": "扫",
+          "probability": 0.9688431322574615
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 12.5,
+      "end": 14.46,
+      "text": "搬家",
+      "tokens": [
+        51014,
+        22220,
+        105,
+        5155,
+        51164
+      ],
+      "avg_logprob": -0.26711441319564294,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.5440481901168823,
+      "words": [
+        {
+          "start": 12.5,
+          "end": 13.66,
+          "word": "搬",
+          "probability": 0.8731972575187683
+        },
+        {
+          "start": 13.66,
+          "end": 14.46,
+          "word": "家",
+          "probability": 0.9976122379302979
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.7842746460000285,
+  "realTimeFactor": 0.10739665767318152,
+  "observationChecks": {
+    "rawWordCount": 11,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

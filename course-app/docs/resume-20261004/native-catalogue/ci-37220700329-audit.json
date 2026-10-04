@@ -1,0 +1,595 @@
+{
+  "runId": 37220700329,
+  "runUrl": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37220700329",
+  "sourceCommit": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+  "sourceTree": "09f9b5dd4ebb456c960103d679584f5b7bdc06c6",
+  "workflowSha256": "124eb42c20245f6f790c51ecd3a55f6c9dd84e95a38763164424f35bfaf6cd42",
+  "workflowTimeoutMinutes": 60,
+  "allFourJobsCompletedSuccess": true,
+  "jobs": [
+    {
+      "id": 111490273086,
+      "name": "checkpoint (webkit, 2)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 111490273195,
+      "name": "checkpoint (webkit, 1)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 111490273206,
+      "name": "checkpoint (chromium, 2)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 111490273220,
+      "name": "checkpoint (chromium, 1)",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "actualMainPassed": 860,
+  "actualUnifiedPassed": 688,
+  "actualModularPassed": 172,
+  "skipped": 0,
+  "unexpected": 0,
+  "flaky": 0,
+  "retried": 0,
+  "reports": [
+    {
+      "scope": "unified/chromium/shard1",
+      "artifact": "hsk123-reports-chromium-shard1",
+      "path": "course-app/.repro-output/unified-browser.json",
+      "sha256": "532d784eef5bff9b03e9e61c8cbd887e300fea7bd20f27ea65dcfdccfdc338df",
+      "stats": {
+        "startTime": "2026-10-04T17:35:15.972Z",
+        "duration": 979327.428,
+        "expected": 172,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "globalErrors": [],
+      "exactCommit": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "allOneResultPassedRetry0": true,
+      "identitiesSha256": "1c08503feb73b34efc7074843c6900dfebaf5e449d6a3ee93b492be446145ce3",
+      "savedReport": "ci-37220700329-reports/unified-chromium-shard1.json"
+    },
+    {
+      "scope": "unified/chromium/shard2",
+      "artifact": "hsk123-reports-chromium-shard2",
+      "path": "course-app/.repro-output/unified-browser.json",
+      "sha256": "12c1068b61d950cb8c199988a8e4e83e134860b5500b20e2f45139cb6eed4a70",
+      "stats": {
+        "startTime": "2026-10-04T17:30:53.462Z",
+        "duration": 1367077.843,
+        "expected": 172,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "globalErrors": [],
+      "exactCommit": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "allOneResultPassedRetry0": true,
+      "identitiesSha256": "45f5ee2cea91ad4c1a8475b15ba3167e9590c82169270f4bb9657d883c53e31e",
+      "savedReport": "ci-37220700329-reports/unified-chromium-shard2.json"
+    },
+    {
+      "scope": "modular/chromium",
+      "artifact": "hsk123-reports-chromium-shard2",
+      "path": "hsk1-app/.repro-output/step8-browser.json",
+      "sha256": "8097090499a21c6c755395eb27228186ce2650cc08df956fb4268b8b98ea3463",
+      "stats": {
+        "startTime": "2026-10-04T17:53:43.259Z",
+        "duration": 376876.022,
+        "expected": 86,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "globalErrors": [],
+      "exactCommit": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "allOneResultPassedRetry0": true,
+      "identitiesSha256": "13ce61c3445d075a446e67ea056508b86a152bc81ff2ef6183d0dd64be71e4cb",
+      "savedReport": "ci-37220700329-reports/modular-chromium.json"
+    },
+    {
+      "scope": "unified/webkit/shard1",
+      "artifact": "hsk123-reports-webkit-shard1",
+      "path": "course-app/.repro-output/unified-browser.json",
+      "sha256": "817a03c13b9412e5173e55a4c12499fb0015458b02ea6ca0b95196be38981460",
+      "stats": {
+        "startTime": "2026-10-04T17:35:12.085Z",
+        "duration": 936152.721,
+        "expected": 172,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "globalErrors": [],
+      "exactCommit": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "allOneResultPassedRetry0": true,
+      "identitiesSha256": "2da95af86005c70452a63c547d2a41d2747c93252411f42dbb90880ea62246a1",
+      "savedReport": "ci-37220700329-reports/unified-webkit-shard1.json"
+    },
+    {
+      "scope": "unified/webkit/shard2",
+      "artifact": "hsk123-reports-webkit-shard2",
+      "path": "course-app/.repro-output/unified-browser.json",
+      "sha256": "c7c62b3bf625fcb2b3e7a6fa07f36095dffe945beffc6f624ae57abcf34ffe2f",
+      "stats": {
+        "startTime": "2026-10-04T17:30:46.757Z",
+        "duration": 1369618.998,
+        "expected": 172,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "globalErrors": [],
+      "exactCommit": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "allOneResultPassedRetry0": true,
+      "identitiesSha256": "bbeae8f4eb50a6a3805570fb844c051eae7b2ec7144bf5adc650da7268ec33ca",
+      "savedReport": "ci-37220700329-reports/unified-webkit-shard2.json"
+    },
+    {
+      "scope": "modular/webkit",
+      "artifact": "hsk123-reports-webkit-shard2",
+      "path": "hsk1-app/.repro-output/step8-browser.json",
+      "sha256": "9b55aa78fb5013d63a12fb1bbdb7c083ea5284157d1d8c0b4abcc81e0ea90a0c",
+      "stats": {
+        "startTime": "2026-10-04T17:53:38.228Z",
+        "duration": 353612.394,
+        "expected": 86,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "globalErrors": [],
+      "exactCommit": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "allOneResultPassedRetry0": true,
+      "identitiesSha256": "b059665a8607582a897a728b3afe1a5a4f96a43b54e0c896db9fb53bbdc91fd1",
+      "savedReport": "ci-37220700329-reports/modular-webkit.json"
+    }
+  ],
+  "retention": {
+    "unified/chromium": {
+      "actual": 344,
+      "old600IdentitiesPassed": 279,
+      "catalogueIdentitiesPassed": 63,
+      "newGalleryIdentitiesPassed": 2,
+      "missingOld": [],
+      "otherNew": [],
+      "all15Lessons4Widths": true,
+      "actualIdentitiesSha256": "29cf12d4fc67c2eea2108809350849895135119b3d4eb630f0e8d04ef6b5f0bc"
+    },
+    "modular/chromium": {
+      "actual": 86,
+      "old600IdentitiesPassed": 21,
+      "catalogueIdentitiesPassed": 63,
+      "newGalleryIdentitiesPassed": 2,
+      "missingOld": [],
+      "otherNew": [],
+      "all15Lessons4Widths": true,
+      "actualIdentitiesSha256": "13ce61c3445d075a446e67ea056508b86a152bc81ff2ef6183d0dd64be71e4cb"
+    },
+    "unified/webkit": {
+      "actual": 344,
+      "old600IdentitiesPassed": 279,
+      "catalogueIdentitiesPassed": 63,
+      "newGalleryIdentitiesPassed": 2,
+      "missingOld": [],
+      "otherNew": [],
+      "all15Lessons4Widths": true,
+      "actualIdentitiesSha256": "141784c9e3b42cd7af2112bc8353463cc75a839ab8aaa3406e05b01ba275024e"
+    },
+    "modular/webkit": {
+      "actual": 86,
+      "old600IdentitiesPassed": 21,
+      "catalogueIdentitiesPassed": 63,
+      "newGalleryIdentitiesPassed": 2,
+      "missingOld": [],
+      "otherNew": [],
+      "all15Lessons4Widths": true,
+      "actualIdentitiesSha256": "b059665a8607582a897a728b3afe1a5a4f96a43b54e0c896db9fb53bbdc91fd1"
+    }
+  },
+  "countsByActualFile": {
+    "unified/chromium": {
+      "../../../hsk1-app/tests/browser/source-catalogue-cases.ts": 63,
+      "../../../hsk1-app/tests/browser/source-pair-cases.ts": 6,
+      "../../../hsk1-app/tests/browser/source-pilot-cases.ts": 11,
+      "../../../hsk1-app/tests/browser/textbook-scene-regression.ts": 6,
+      "activity-commit.spec.ts": 4,
+      "hsk1-source-pilot.spec.ts": 1,
+      "hsk3-appendix-stars.spec.ts": 1,
+      "hsk3-lesson-batch.spec.ts": 12,
+      "hsk3-lessons1011.spec.ts": 16,
+      "hsk3-lessons1213.spec.ts": 16,
+      "hsk3-lessons1415.spec.ts": 17,
+      "hsk3-lessons1618.spec.ts": 24,
+      "hsk3-lessons45.spec.ts": 12,
+      "hsk3-lessons67.spec.ts": 14,
+      "hsk3-lessons89.spec.ts": 19,
+      "lesson-batch.spec.ts": 74,
+      "media.spec.ts": 31,
+      "unified.spec.ts": 17
+    },
+    "modular/chromium": {
+      "source-catalogue-cases.ts": 63,
+      "source-pair-cases.ts": 6,
+      "source-pilot-cases.ts": 11,
+      "textbook-scene-regression.ts": 6
+    },
+    "unified/webkit": {
+      "../../../hsk1-app/tests/browser/source-catalogue-cases.ts": 63,
+      "../../../hsk1-app/tests/browser/source-pair-cases.ts": 6,
+      "../../../hsk1-app/tests/browser/source-pilot-cases.ts": 11,
+      "../../../hsk1-app/tests/browser/textbook-scene-regression.ts": 6,
+      "activity-commit.spec.ts": 4,
+      "hsk1-source-pilot.spec.ts": 1,
+      "hsk3-appendix-stars.spec.ts": 1,
+      "hsk3-lesson-batch.spec.ts": 12,
+      "hsk3-lessons1011.spec.ts": 16,
+      "hsk3-lessons1213.spec.ts": 16,
+      "hsk3-lessons1415.spec.ts": 17,
+      "hsk3-lessons1618.spec.ts": 24,
+      "hsk3-lessons45.spec.ts": 12,
+      "hsk3-lessons67.spec.ts": 14,
+      "hsk3-lessons89.spec.ts": 19,
+      "lesson-batch.spec.ts": 74,
+      "media.spec.ts": 31,
+      "unified.spec.ts": 17
+    },
+    "modular/webkit": {
+      "source-catalogue-cases.ts": 63,
+      "source-pair-cases.ts": 6,
+      "source-pilot-cases.ts": 11,
+      "textbook-scene-regression.ts": 6
+    }
+  },
+  "downloadedArtifacts": [
+    {
+      "id": 11311105324,
+      "name": "hsk1-unified-source-webkit-shard1",
+      "bytes": 17132305,
+      "githubDigest": "sha256:f72b5dfdb4a4a6303d8a7931984949312753291fab7c713dfb4542d5aafba642",
+      "actualSha256": "f72b5dfdb4a4a6303d8a7931984949312753291fab7c713dfb4542d5aafba642",
+      "head": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "crc": "pass",
+      "uniqueMembers": true,
+      "members": 199,
+      "zipDownloadPath": "/workspace/scratch/28b55072841a/attachments/3aa85bd5-e830-4735-9bd3-03ce87a41ffa/github-actions-artifact-11311105324.zip"
+    },
+    {
+      "id": 11311055309,
+      "name": "hsk123-pilot-screens-webkit-shard1",
+      "bytes": 21178285,
+      "githubDigest": "sha256:fc51dda561f372704652f5457097878f8f6c9b4afc680de8a5379cbae80eade9",
+      "actualSha256": "fc51dda561f372704652f5457097878f8f6c9b4afc680de8a5379cbae80eade9",
+      "head": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "crc": "pass",
+      "uniqueMembers": true,
+      "members": 216,
+      "zipDownloadPath": "/workspace/scratch/28b55072841a/attachments/4d7e7bb1-ecb8-450e-8d1c-8ffd8ddc0d95/github-actions-artifact-11311055309.zip"
+    },
+    {
+      "id": 11310472344,
+      "name": "hsk1-unified-source-chromium-shard1",
+      "bytes": 15245518,
+      "githubDigest": "sha256:917a94d1807926649bd7ad633e167ca0170f00170a64223d94b98f9afd43d2d2",
+      "actualSha256": "917a94d1807926649bd7ad633e167ca0170f00170a64223d94b98f9afd43d2d2",
+      "head": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "crc": "pass",
+      "uniqueMembers": true,
+      "members": 199,
+      "zipDownloadPath": "/workspace/scratch/28b55072841a/attachments/338ed4cc-8921-4a08-8fba-d4a5e9caca7a/github-actions-artifact-11310472344.zip"
+    },
+    {
+      "id": 11310397893,
+      "name": "hsk123-reports-webkit-shard1",
+      "bytes": 101636,
+      "githubDigest": "sha256:b146a825dbd6c32edf0d6f4800ce3feb589cfaccc31a8c1515626529030c3b54",
+      "actualSha256": "b146a825dbd6c32edf0d6f4800ce3feb589cfaccc31a8c1515626529030c3b54",
+      "head": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "crc": "pass",
+      "uniqueMembers": true,
+      "members": 20,
+      "zipDownloadPath": "/workspace/scratch/28b55072841a/attachments/ea825e5d-d60e-4f9d-9af5-58f12591006b/github-actions-artifact-11310397893.zip"
+    },
+    {
+      "id": 11309734416,
+      "name": "hsk123-reports-chromium-shard1",
+      "bytes": 118612,
+      "githubDigest": "sha256:69bb03beec1df10d9c456f60b536e3b2f0d682340e728fca07c9fced37fd97dc",
+      "actualSha256": "69bb03beec1df10d9c456f60b536e3b2f0d682340e728fca07c9fced37fd97dc",
+      "head": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "crc": "pass",
+      "uniqueMembers": true,
+      "members": 20,
+      "zipDownloadPath": "/workspace/scratch/28b55072841a/attachments/136fec4b-b0cf-47a4-bf66-1feee00f83be/github-actions-artifact-11309734416.zip"
+    },
+    {
+      "id": 11309499594,
+      "name": "hsk123-pilot-screens-chromium-shard1",
+      "bytes": 19073934,
+      "githubDigest": "sha256:f6ceee992b675ca193eeb57cc55b27029653baf9d47255c8c8c67b8fbcd1c4d4",
+      "actualSha256": "f6ceee992b675ca193eeb57cc55b27029653baf9d47255c8c8c67b8fbcd1c4d4",
+      "head": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "crc": "pass",
+      "uniqueMembers": true,
+      "members": 216,
+      "zipDownloadPath": "/workspace/scratch/28b55072841a/attachments/b25343a3-31ec-4aae-ac8c-8b72277cd499/github-actions-artifact-11309499594.zip"
+    },
+    {
+      "id": 11311056293,
+      "name": "hsk123-reports-chromium-shard2",
+      "bytes": 168407,
+      "githubDigest": "sha256:b50ce80b43877bae8083745991a320ab162d6c3bcf2b6b3c16a8a4d9a24a5f24",
+      "actualSha256": "b50ce80b43877bae8083745991a320ab162d6c3bcf2b6b3c16a8a4d9a24a5f24",
+      "head": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "crc": "pass",
+      "uniqueMembers": true,
+      "members": 20,
+      "zipDownloadPath": "/workspace/scratch/28b55072841a/attachments/3f1d2087-9baa-4c1a-924a-b7dafad33779/github-actions-artifact-11311056293.zip"
+    },
+    {
+      "id": 11310129392,
+      "name": "hsk123-reports-webkit-shard2",
+      "bytes": 178727,
+      "githubDigest": "sha256:ae98cdd46a0a9c23c2d44950f43ec87bed5b755482bbedc3f5f106fe5d658d2f",
+      "actualSha256": "ae98cdd46a0a9c23c2d44950f43ec87bed5b755482bbedc3f5f106fe5d658d2f",
+      "head": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "crc": "pass",
+      "uniqueMembers": true,
+      "members": 20,
+      "zipDownloadPath": "/workspace/scratch/28b55072841a/attachments/fcd3e88b-4297-4242-b67a-142fd9fa6cc2/github-actions-artifact-11310129392.zip"
+    },
+    {
+      "id": 11311350084,
+      "name": "hsk1-standalone-scene-webkit",
+      "bytes": 21242054,
+      "githubDigest": "sha256:9740ac4578dd247afff0be4034d267e311d7621312330aff20f430858c4acdd2",
+      "actualSha256": "9740ac4578dd247afff0be4034d267e311d7621312330aff20f430858c4acdd2",
+      "head": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "crc": "pass",
+      "uniqueMembers": true,
+      "members": 207,
+      "zipDownloadPath": "/workspace/scratch/28b55072841a/attachments/8420366f-1a04-4a07-a80f-411a35d17af5/github-actions-artifact-11311350084.zip"
+    },
+    {
+      "id": 11310652436,
+      "name": "hsk1-standalone-scene-chromium",
+      "bytes": 19496561,
+      "githubDigest": "sha256:0d4d277faff3ea94a05a875627df3fff64a683232b3c8d6573c64b10e4f9df00",
+      "actualSha256": "0d4d277faff3ea94a05a875627df3fff64a683232b3c8d6573c64b10e4f9df00",
+      "head": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "crc": "pass",
+      "uniqueMembers": true,
+      "members": 207,
+      "zipDownloadPath": "/workspace/scratch/28b55072841a/attachments/9bde2bfc-0f77-4054-bde3-97605f31db47/github-actions-artifact-11310652436.zip"
+    }
+  ],
+  "collectionReportSha256": "9821641a5abbe0f91ac02ba2b2cb6a11893c28ba9f892285a6fdab438bd7af3f",
+  "logs": [
+    {
+      "job": "chromium/shard1",
+      "sha256": "d7d96246ab814954e8ac244439082357b15136a7e499227351361e5e31bd3810",
+      "bytes": 270676,
+      "fontInstallVerified": true,
+      "checkoutHashVerified": true,
+      "evidence": [
+        {
+          "line": 164,
+          "text": "2026-10-04T17:29:42.6332417Z ce374837090017fd76e7e65ea8e6e1d95851a8db"
+        },
+        {
+          "line": 187,
+          "text": "2026-10-04T17:29:43.8344856Z ce374837090017fd76e7e65ea8e6e1d95851a8db"
+        },
+        {
+          "line": 1945,
+          "text": "2026-10-04T17:30:54.9998971Z Setting up fonts-noto-cjk (1:20230817+repack1-3) ..."
+        },
+        {
+          "line": 2045,
+          "text": "2026-10-04T17:35:15.2406406Z   53 passed (4.2m)"
+        },
+        {
+          "line": 2226,
+          "text": "2026-10-04T17:51:35.3005921Z   172 passed (16.3m)"
+        }
+      ]
+    },
+    {
+      "job": "chromium/shard2",
+      "sha256": "2ca4d54b5f69ef6d8b3b3ebe00647cd5611700c1e40f455fe825ea91281ecd43",
+      "bytes": 284634,
+      "fontInstallVerified": true,
+      "checkoutHashVerified": true,
+      "evidence": [
+        {
+          "line": 164,
+          "text": "2026-10-04T17:29:43.7528089Z ce374837090017fd76e7e65ea8e6e1d95851a8db"
+        },
+        {
+          "line": 187,
+          "text": "2026-10-04T17:29:44.9740980Z ce374837090017fd76e7e65ea8e6e1d95851a8db"
+        },
+        {
+          "line": 1945,
+          "text": "2026-10-04T17:30:51.2738774Z Setting up fonts-noto-cjk (1:20230817+repack1-3) ..."
+        },
+        {
+          "line": 2140,
+          "text": "2026-10-04T17:53:40.5414143Z   172 passed (22.8m)"
+        },
+        {
+          "line": 2317,
+          "text": "2026-10-04T18:00:00.1361543Z   86 passed (6.3m)"
+        }
+      ]
+    },
+    {
+      "job": "webkit/shard1",
+      "sha256": "5c2c173369f6f5f8cbf06313cdfca82fdab558fcd5a9fb6cd1c7e988930ff98b",
+      "bytes": 362837,
+      "fontInstallVerified": true,
+      "checkoutHashVerified": true,
+      "evidence": [
+        {
+          "line": 164,
+          "text": "2026-10-04T17:29:42.6905505Z ce374837090017fd76e7e65ea8e6e1d95851a8db"
+        },
+        {
+          "line": 176,
+          "text": "2026-10-04T17:29:43.5466430Z ce374837090017fd76e7e65ea8e6e1d95851a8db"
+        },
+        {
+          "line": 2886,
+          "text": "2026-10-04T17:31:01.2001766Z Setting up fonts-noto-cjk (1:20230817+repack1-3) ..."
+        },
+        {
+          "line": 2959,
+          "text": "2026-10-04T17:34:54.5874430Z   53 passed (3.9m)"
+        },
+        {
+          "line": 2972,
+          "text": "2026-10-04T17:35:11.4692069Z   1 passed (16.2s)"
+        },
+        {
+          "line": 3153,
+          "text": "2026-10-04T17:50:48.2389136Z   172 passed (15.6m)"
+        }
+      ]
+    },
+    {
+      "job": "webkit/shard2",
+      "sha256": "a22b11bcbaa34466a2022d3d187dc1f7892f607057a10113c00475533d82d879",
+      "bytes": 376753,
+      "fontInstallVerified": true,
+      "checkoutHashVerified": true,
+      "evidence": [
+        {
+          "line": 164,
+          "text": "2026-10-04T17:29:41.8321660Z ce374837090017fd76e7e65ea8e6e1d95851a8db"
+        },
+        {
+          "line": 176,
+          "text": "2026-10-04T17:29:42.5675265Z ce374837090017fd76e7e65ea8e6e1d95851a8db"
+        },
+        {
+          "line": 2886,
+          "text": "2026-10-04T17:30:45.2893528Z Setting up fonts-noto-cjk (1:20230817+repack1-3) ..."
+        },
+        {
+          "line": 3081,
+          "text": "2026-10-04T17:53:36.3773635Z   172 passed (22.8m)"
+        },
+        {
+          "line": 3258,
+          "text": "2026-10-04T17:59:31.8413314Z   86 passed (5.9m)"
+        }
+      ]
+    }
+  ],
+  "extraFocusedOutsideMainDenominator": {
+    "preflightChromium": {
+      "passed": 53,
+      "evidence": "chromium-shard1.log; final JSON not uploaded"
+    },
+    "preflightWebkit": {
+      "passed": 53,
+      "evidence": "webkit-shard1.log; final JSON not uploaded"
+    },
+    "focusedStartupWebkit": {
+      "stats": {
+        "startTime": "2026-10-04T17:34:55.220Z",
+        "duration": 16248.091999999999,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "sha256": "b871d015af744b87b51bfbdab84061acb4077383e4afd6dcfda7d4a4464d30b8"
+    }
+  },
+  "visualEvidence": "See ci-37220700329-review.md; no new24-field-pinyin or L3/L6/L7 blanktable screenshots in original run; no claim of visual review of all45 scenes",
+  "visuallyReviewedFreshScreenshots": [
+    {
+      "file": "ci-37220700329-samples/unified-webkit-source-picture-1440.png",
+      "originalArtifactPath": "hsk1-unified-source-webkit-shard1/unified-hsk1-source-l04-1440-activity-15.png",
+      "sha256": "fce3c9044a2dbc2944229c368d549e19661fb84b4a01431a328e0b5229159d6c",
+      "width": 392,
+      "height": 943,
+      "independentVisualReview": "pass",
+      "note": "原图与双语活动正文，桌面布局"
+    },
+    {
+      "file": "ci-37220700329-samples/unified-chromium-number-table-320.png",
+      "originalArtifactPath": "hsk1-unified-source-chromium-shard1/unified-hsk1-source-l04-320-table-0-part-0.png",
+      "sha256": "b5663180d39a1f2c043df607006143c8d555c3634f970be7e7817f245c7a4731",
+      "width": 218,
+      "height": 1020,
+      "independentVisualReview": "pass",
+      "note": "数字表横向分段第0段，CJK/带调拼音/保留印刷空格"
+    },
+    {
+      "file": "ci-37220700329-samples/unified-webkit-scene-shown-390.png",
+      "originalArtifactPath": "hsk123-pilot-screens-webkit-shard1/hsk1-scene-hide-390-reload-webkit.png",
+      "sha256": "ccaaa8d99ba082128be6695179c442a048208abf02bbd1c4cdd2e673f3cbd8f0",
+      "width": 390,
+      "height": 4358,
+      "independentVisualReview": "pass",
+      "note": "reload后L1第3场景照片/汉字/拼音/越南语重新显示"
+    },
+    {
+      "file": "ci-37220700329-samples/unified-chromium-scene-hidden-390.png",
+      "originalArtifactPath": "hsk123-pilot-screens-chromium-shard1/hsk1-scene-listen-390-hidden-chromium.png",
+      "sha256": "f5ff124e4b33bdf1966327289b21979600e6818ed1798d95f1da96e5ab29069d",
+      "width": 390,
+      "height": 3544,
+      "independentVisualReview": "pass",
+      "note": "听力隐藏模式：照片与正文整体隐藏，音频控制保留"
+    },
+    {
+      "file": "ci-37220700329-samples/modular-webkit-scene-shown-390.png",
+      "originalArtifactPath": "hsk1-standalone-scene-webkit/test-results/hsk1-scene-hide-390-reload-webkit.png",
+      "sha256": "1795ed08b2779e48c9d0771c71365ca2111264df3200b099f80629e77c5f880a",
+      "width": 390,
+      "height": 4204,
+      "independentVisualReview": "pass",
+      "note": "独立宿主reload后场景照片/中越文与拼音显示"
+    },
+    {
+      "file": "ci-37220700329-samples/modular-webkit-scene-hidden-1280.png",
+      "originalArtifactPath": "hsk1-standalone-scene-webkit/test-results/hsk1-scene-listen-1280-hidden-webkit.png",
+      "sha256": "769378802d3e291c57663dc1757785e4a4d690344cbf0b9e72a399d32cfdbe74",
+      "width": 1280,
+      "height": 2896,
+      "independentVisualReview": "pass",
+      "note": "独立宿主桌面听力隐藏模式"
+    },
+    {
+      "file": "ci-37220700329-samples/modular-webkit-headerless-number-table-1440.png",
+      "originalArtifactPath": "hsk1-standalone-scene-webkit/test-results/modular-hsk1-source-l04-1440-table-2-part-0.png",
+      "sha256": "dd8af810af474a100b7e63f18f4196c4ccbbcf90f40326729e039e587293fffa",
+      "width": 1036,
+      "height": 252,
+      "independentVisualReview": "pass",
+      "note": "无表头数字2示例，文字单元格和带调拼音无伪造标题"
+    },
+    {
+      "file": "ci-37220700329-samples/modular-chromium-source-picture-320.png",
+      "originalArtifactPath": "hsk1-standalone-scene-chromium/test-results/modular-hsk1-source-l04-320-activity-15.png",
+      "sha256": "c73765ec3857500246fe82f85b2177790d6d520683fd0b20f52fc9bdea21bb12",
+      "width": 262,
+      "height": 872,
+      "independentVisualReview": "pass",
+      "note": "独立宿主手机原图/中越文/作答框布局"
+    }
+  ]
+}

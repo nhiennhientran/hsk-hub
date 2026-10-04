@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l08:audio3",
+    "level": 2,
+    "lesson": 8,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/8-3.mp3",
+    "sha256": "cba6637473e1a0707b87f8c52863dd158165490d4e654a020d435a0114d36f25",
+    "bytes": 828332,
+    "manifestDurationSeconds": 32.573333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 521088,
+      "durationSeconds": 32.568,
+      "sha256": "488d62a09cc8b2d9f781cd6bc58d9fe2eb0f0eb2c12b58dba1e3746b3b5407e7"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 32.568,
+    "duration_after_vad": 32.568,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 4.48,
+      "text": "今天有不少电影,我们看个电影吧。",
+      "tokens": [
+        50364,
+        12074,
+        2412,
+        1960,
+        15686,
+        42182,
+        16820,
+        11,
+        15003,
+        4200,
+        7549,
+        42182,
+        16820,
+        6062,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.1617856015419138,
+      "compression_ratio": 1.372093023255814,
+      "no_speech_prob": 0.10716751217842102,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.8,
+          "word": "今天",
+          "probability": 0.5436005592346191
+        },
+        {
+          "start": 0.8,
+          "end": 1.42,
+          "word": "有",
+          "probability": 0.7403401732444763
+        },
+        {
+          "start": 1.42,
+          "end": 1.62,
+          "word": "不",
+          "probability": 0.9881473183631897
+        },
+        {
+          "start": 1.62,
+          "end": 1.78,
+          "word": "少",
+          "probability": 0.9991618394851685
+        },
+        {
+          "start": 1.78,
+          "end": 1.98,
+          "word": "电",
+          "probability": 0.9257156252861023
+        },
+        {
+          "start": 1.98,
+          "end": 2.22,
+          "word": "影,",
+          "probability": 0.9982331991195679
+        },
+        {
+          "start": 2.98,
+          "end": 3.22,
+          "word": "我们",
+          "probability": 0.8119127154350281
+        },
+        {
+          "start": 3.22,
+          "end": 3.66,
+          "word": "看",
+          "probability": 0.97664475440979
+        },
+        {
+          "start": 3.66,
+          "end": 3.8,
+          "word": "个",
+          "probability": 0.9175177812576294
+        },
+        {
+          "start": 3.8,
+          "end": 3.98,
+          "word": "电",
+          "probability": 0.9983993172645569
+        },
+        {
+          "start": 3.98,
+          "end": 4.26,
+          "word": "影",
+          "probability": 0.9996040463447571
+        },
+        {
+          "start": 4.26,
+          "end": 4.48,
+          "word": "吧。",
+          "probability": 0.9904306530952454
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.480000000000001,
+      "end": 7.7,
+      "text": "好啊,我们看哪个?",
+      "tokens": [
+        50614,
+        2131,
+        4905,
+        11,
+        15003,
+        4200,
+        17028,
+        7549,
+        30,
+        50764
+      ],
+      "avg_logprob": -0.1617856015419138,
+      "compression_ratio": 1.372093023255814,
+      "no_speech_prob": 0.10716751217842102,
+      "words": [
+        {
+          "start": 5.480000000000001,
+          "end": 6.04,
+          "word": "好",
+          "probability": 0.8311182856559753
+        },
+        {
+          "start": 6.04,
+          "end": 6.28,
+          "word": "啊,",
+          "probability": 0.8619380593299866
+        },
+        {
+          "start": 6.72,
+          "end": 6.94,
+          "word": "我们",
+          "probability": 0.9337193965911865
+        },
+        {
+          "start": 6.94,
+          "end": 7.22,
+          "word": "看",
+          "probability": 0.9964810609817505
+        },
+        {
+          "start": 7.22,
+          "end": 7.5,
+          "word": "哪",
+          "probability": 0.953934371471405
+        },
+        {
+          "start": 7.5,
+          "end": 7.7,
+          "word": "个?",
+          "probability": 0.9748619198799133
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 8.76,
+      "end": 14.08,
+      "text": "我记得你喜欢看爱情片,我们看那个爱情片,怎么样?",
+      "tokens": [
+        50764,
+        1654,
+        34756,
+        5916,
+        2166,
+        41606,
+        4200,
+        27324,
+        10570,
+        16668,
+        11,
+        15003,
+        4200,
+        43083,
+        27324,
+        10570,
+        16668,
+        11,
+        48200,
+        30,
+        51114
+      ],
+      "avg_logprob": -0.1617856015419138,
+      "compression_ratio": 1.372093023255814,
+      "no_speech_prob": 0.10716751217842102,
+      "words": [
+        {
+          "start": 8.76,
+          "end": 9.26,
+          "word": "我",
+          "probability": 0.9723189473152161
+        },
+        {
+          "start": 9.26,
+          "end": 9.44,
+          "word": "记",
+          "probability": 0.9914819002151489
+        },
+        {
+          "start": 9.44,
+          "end": 9.64,
+          "word": "得",
+          "probability": 0.996912956237793
+        },
+        {
+          "start": 9.64,
+          "end": 9.96,
+          "word": "你",
+          "probability": 0.9293017387390137
+        },
+        {
+          "start": 9.96,
+          "end": 10.24,
+          "word": "喜欢",
+          "probability": 0.9910860657691956
+        },
+        {
+          "start": 10.24,
+          "end": 10.56,
+          "word": "看",
+          "probability": 0.9974021911621094
+        },
+        {
+          "start": 10.56,
+          "end": 10.78,
+          "word": "爱",
+          "probability": 0.9687947630882263
+        },
+        {
+          "start": 10.78,
+          "end": 10.98,
+          "word": "情",
+          "probability": 0.825404703617096
+        },
+        {
+          "start": 10.98,
+          "end": 11.22,
+          "word": "片,",
+          "probability": 0.979300856590271
+        },
+        {
+          "start": 11.94,
+          "end": 12.16,
+          "word": "我们",
+          "probability": 0.9492314457893372
+        },
+        {
+          "start": 12.16,
+          "end": 12.44,
+          "word": "看",
+          "probability": 0.9975290894508362
+        },
+        {
+          "start": 12.44,
+          "end": 12.76,
+          "word": "那个",
+          "probability": 0.7238696217536926
+        },
+        {
+          "start": 12.76,
+          "end": 13.06,
+          "word": "爱",
+          "probability": 0.9821893572807312
+        },
+        {
+          "start": 13.06,
+          "end": 13.26,
+          "word": "情",
+          "probability": 0.997989296913147
+        },
+        {
+          "start": 13.26,
+          "end": 13.56,
+          "word": "片,",
+          "probability": 0.9962273836135864
+        },
+        {
+          "start": 13.82,
+          "end": 14.08,
+          "word": "怎么样?",
+          "probability": 0.9651265740394592
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 15.72,
+      "end": 18.86,
+      "text": "还是看这个吧。我看网上说,",
+      "tokens": [
+        51114,
+        45726,
+        4200,
+        15368,
+        6062,
+        1543,
+        1654,
+        4200,
+        16469,
+        239,
+        5708,
+        8090,
+        11,
+        51314
+      ],
+      "avg_logprob": -0.1617856015419138,
+      "compression_ratio": 1.372093023255814,
+      "no_speech_prob": 0.10716751217842102,
+      "words": [
+        {
+          "start": 15.72,
+          "end": 16.0,
+          "word": "还是",
+          "probability": 0.9879732131958008
+        },
+        {
+          "start": 16.0,
+          "end": 16.28,
+          "word": "看",
+          "probability": 0.9981473684310913
+        },
+        {
+          "start": 16.28,
+          "end": 16.6,
+          "word": "这个",
+          "probability": 0.9802252650260925
+        },
+        {
+          "start": 16.6,
+          "end": 16.92,
+          "word": "吧。",
+          "probability": 0.9812405705451965
+        },
+        {
+          "start": 17.8,
+          "end": 17.98,
+          "word": "我",
+          "probability": 0.9883432984352112
+        },
+        {
+          "start": 17.98,
+          "end": 18.16,
+          "word": "看",
+          "probability": 0.9958345890045166
+        },
+        {
+          "start": 18.16,
+          "end": 18.36,
+          "word": "网",
+          "probability": 0.9976997673511505
+        },
+        {
+          "start": 18.36,
+          "end": 18.6,
+          "word": "上",
+          "probability": 0.9960326552391052
+        },
+        {
+          "start": 18.6,
+          "end": 18.86,
+          "word": "说,",
+          "probability": 0.995722770690918
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 19.14,
+      "end": 22.1,
+      "text": "这个电影比那个爱情片更有意思。",
+      "tokens": [
+        51314,
+        15368,
+        42182,
+        16820,
+        11706,
+        43083,
+        27324,
+        10570,
+        16668,
+        19002,
+        2412,
+        16697,
+        1543,
+        51514
+      ],
+      "avg_logprob": -0.1617856015419138,
+      "compression_ratio": 1.372093023255814,
+      "no_speech_prob": 0.10716751217842102,
+      "words": [
+        {
+          "start": 19.14,
+          "end": 19.32,
+          "word": "这个",
+          "probability": 0.9482452273368835
+        },
+        {
+          "start": 19.32,
+          "end": 19.58,
+          "word": "电",
+          "probability": 0.9957723021507263
+        },
+        {
+          "start": 19.58,
+          "end": 19.92,
+          "word": "影",
+          "probability": 0.9998782873153687
+        },
+        {
+          "start": 19.92,
+          "end": 20.16,
+          "word": "比",
+          "probability": 0.9719077944755554
+        },
+        {
+          "start": 20.16,
+          "end": 20.46,
+          "word": "那个",
+          "probability": 0.9165211915969849
+        },
+        {
+          "start": 20.46,
+          "end": 20.78,
+          "word": "爱",
+          "probability": 0.9900887608528137
+        },
+        {
+          "start": 20.78,
+          "end": 21.02,
+          "word": "情",
+          "probability": 0.9973291158676147
+        },
+        {
+          "start": 21.02,
+          "end": 21.32,
+          "word": "片",
+          "probability": 0.9915307760238647
+        },
+        {
+          "start": 21.32,
+          "end": 21.54,
+          "word": "更",
+          "probability": 0.9961361289024353
+        },
+        {
+          "start": 21.54,
+          "end": 21.76,
+          "word": "有",
+          "probability": 0.9930949211120605
+        },
+        {
+          "start": 21.76,
+          "end": 22.1,
+          "word": "意思。",
+          "probability": 0.9980204105377197
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 23.46,
+      "end": 25.56,
+      "text": "好,我去买票。",
+      "tokens": [
+        51514,
+        2131,
+        11,
+        1654,
+        6734,
+        2930,
+        108,
+        41925,
+        1543,
+        51664
+      ],
+      "avg_logprob": -0.1617856015419138,
+      "compression_ratio": 1.372093023255814,
+      "no_speech_prob": 0.10716751217842102,
+      "words": [
+        {
+          "start": 23.46,
+          "end": 24.02,
+          "word": "好,",
+          "probability": 0.9960857629776001
+        },
+        {
+          "start": 24.76,
+          "end": 25.04,
+          "word": "我",
+          "probability": 0.9944361448287964
+        },
+        {
+          "start": 25.04,
+          "end": 25.18,
+          "word": "去",
+          "probability": 0.9983737468719482
+        },
+        {
+          "start": 25.18,
+          "end": 25.34,
+          "word": "买",
+          "probability": 0.9973919093608856
+        },
+        {
+          "start": 25.34,
+          "end": 25.56,
+          "word": "票。",
+          "probability": 0.999357283115387
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2556,
+      "start": 27.1,
+      "end": 31.56,
+      "text": "到网上买吧。网上买比在这里买便宜。",
+      "tokens": [
+        50364,
+        4511,
+        16469,
+        239,
+        5708,
+        2930,
+        108,
+        6062,
+        1543,
+        16469,
+        239,
+        5708,
+        2930,
+        108,
+        11706,
+        3581,
+        35102,
+        2930,
+        108,
+        27364,
+        2415,
+        250,
+        1543,
+        50664
+      ],
+      "avg_logprob": -0.21170196533203126,
+      "compression_ratio": 0.9622641509433962,
+      "no_speech_prob": 0.47876790165901184,
+      "words": [
+        {
+          "start": 27.1,
+          "end": 27.64,
+          "word": "到",
+          "probability": 0.7669413089752197
+        },
+        {
+          "start": 27.64,
+          "end": 27.86,
+          "word": "网",
+          "probability": 0.8526521921157837
+        },
+        {
+          "start": 27.86,
+          "end": 28.12,
+          "word": "上",
+          "probability": 0.637907087802887
+        },
+        {
+          "start": 28.12,
+          "end": 28.36,
+          "word": "买",
+          "probability": 0.9976769685745239
+        },
+        {
+          "start": 28.36,
+          "end": 28.64,
+          "word": "吧。",
+          "probability": 0.9877544045448303
+        },
+        {
+          "start": 28.84,
+          "end": 29.38,
+          "word": "网",
+          "probability": 0.9868928790092468
+        },
+        {
+          "start": 29.38,
+          "end": 29.58,
+          "word": "上",
+          "probability": 0.9889018535614014
+        },
+        {
+          "start": 29.58,
+          "end": 29.88,
+          "word": "买",
+          "probability": 0.9979425668716431
+        },
+        {
+          "start": 29.88,
+          "end": 30.18,
+          "word": "比",
+          "probability": 0.9332055449485779
+        },
+        {
+          "start": 30.18,
+          "end": 30.36,
+          "word": "在",
+          "probability": 0.9741652607917786
+        },
+        {
+          "start": 30.36,
+          "end": 30.62,
+          "word": "这里",
+          "probability": 0.9909327030181885
+        },
+        {
+          "start": 30.62,
+          "end": 30.98,
+          "word": "买",
+          "probability": 0.9979919493198395
+        },
+        {
+          "start": 30.98,
+          "end": 31.22,
+          "word": "便",
+          "probability": 0.9997230172157288
+        },
+        {
+          "start": 31.22,
+          "end": 31.56,
+          "word": "宜。",
+          "probability": 0.9987867474555969
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 6.552473208999999,
+  "realTimeFactor": 0.20119360135716038,
+  "observationChecks": {
+    "rawWordCount": 73,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

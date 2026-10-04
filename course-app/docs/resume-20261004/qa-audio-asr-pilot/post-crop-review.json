@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "independent crop/source/boundary reviewer",
+  "status": "two sentence ranges conditionally accepted for machine-reviewed runtime use; one original-word track accepted as whole-track only",
+  "supersedesScope": "This post-crop evidence resolves only the two sentence priority gates held in review.json. The prior fulltrack/raw-endpoint audit remains unchanged and all other precision holds remain valid.",
+  "actualRunId": 37219656715,
+  "actualCommit": "70e001fa0cee9f6a01fe2dc7fed2a04d1cd5db5f",
+  "checksPassed": 169,
+  "verificationFile": {
+    "file": "post-crop-review-verification.json",
+    "sha256": "61db5034d15c7c17d1c004edfbbfe8e35861f907c998abcf6a2bd314b3a9bd2b"
+  },
+  "verificationScript": {
+    "file": "post-crop-audit.py",
+    "sha256": "1fdffe29dd29a96ea67956c9020728747954fce32e863a69a075e9df4053528e"
+  },
+  "frozenAuthorInputs": [
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/padded-crop-review-input.json",
+      "sha256": "3ccb4354bc7ff3a899adb7543c97524989d6e9ca4ed5a348d7299456d7ee3ccf"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/padded-crop-expected-source.json",
+      "sha256": "88a651c0b8785e85d560b47e45499bff6acc993f4494f903de0f5a8922e77672"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/transcribe-candidate-crops.py",
+      "sha256": "233ece05705436f3840f2ff68da9b7c7b2d817bd842d715707670696a85b4b15"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/three-crop-crosscheck-verification.json",
+      "sha256": "6bd4f764844b9b3dfda7b218e24028c993c0a47b89d07b8ea564cbcce90f1ac7"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/small/run.json",
+      "sha256": "57682e3e13846ff5bb9ed7d4352edbb28bfdb16d845aa23565f21528038830dc"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/medium/run.json",
+      "sha256": "5f7c8a253531cfb5a58d95ee605d5330042e9d5461429d65f7c10aa550cebc30"
+    }
+  ],
+  "actualZIPs": [
+    {
+      "model": "small",
+      "path": "/workspace/scratch/28b55072841a/attachments/89ab26d9-ec9b-47bb-bb07-210b02c2533f/hsk-three-crop-small-37219656715.zip",
+      "sha256": "4e8da10af65906235a39166dfd097f13dcbf79d89f11a2c7671aae838173f296",
+      "bytes": 106188,
+      "fileCount": 6,
+      "crc": "passed",
+      "expandedByteIdentity": "passed"
+    },
+    {
+      "model": "medium",
+      "path": "/workspace/scratch/28b55072841a/attachments/90fa608e-c494-4437-b982-6011e5e6cc4b/hsk-three-crop-medium-37219656715.zip",
+      "sha256": "2cbbf0eb68986aaffe4406696f7dc5820db396e6440f60077e4f854d8291ed4c",
+      "bytes": 106192,
+      "fileCount": 6,
+      "crc": "passed",
+      "expandedByteIdentity": "passed"
+    }
+  ],
+  "acceptedObservationGlyphMapping": {
+    "為": "为",
+    "歡": "欢",
+    "們": "们",
+    "別": "别",
+    "氣": "气"
+  },
+  "normalizationDecision": {
+    "status": "accepted-only-for-six-observation-comparisons-of-these3targets",
+    "strictRawCJKMatches": 3,
+    "afterExplicitFiveGlyphsMatches": 6,
+    "sourceChineseUnchanged": true,
+    "rawTranscriptsUnchanged": true,
+    "homophoneNumberErhuaSubstitutionAllowed": false,
+    "wholeBookConversionAuthorized": false
+  },
+  "sentenceDecisions": [
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line3",
+      "sourceText": "因为我喜欢白色啊！",
+      "sourceLessonFile": "course-app/content/hsk2/lesson-04.json",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "sourceHash": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+      "sourcePCM_SHA256": "d167901daaffea375fabf9b67b10a321a590cd21a2c33e5ed92532a0f8dea020",
+      "sampleRate": 16000,
+      "sourceSampleRange": [
+        159680,
+        197921
+      ],
+      "start": 9.98,
+      "end": 12.3700625,
+      "cropPCM_SHA256": "9b5134a228ed340812cfddae48fd6fd0e70e58645b0aa78df2a2467ea88c2686",
+      "guardedWAV": {
+        "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/guarded-three-crop-wav-probes/guarded-crop-01.wav",
+        "sha256": "5def96a35fc1a747560756d8b230b5e8eca4e6a070e79cc1785dda0d3144a112"
+      },
+      "actualFrameBoundaryRMSDbFS20ms": {
+        "beforeStart": -64.134,
+        "afterStart": -67.004,
+        "beforeEnd": -58.599,
+        "afterEnd": -60.49
+      },
+      "rawModelEvidence": [
+        {
+          "model": "small",
+          "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/small/crops/crop-01.json",
+          "sha256": "726aca5009b92b2a164e7444a537a7f40062df079df99d522aa78d58c094458f",
+          "rawTranscript": "因為我喜歡白色啊",
+          "strictCJKExact": false,
+          "observationGlyphNormalizedCJK": "因为我喜欢白色啊",
+          "minimumRawProbability": 0.4858502745628357,
+          "rawLowProbabilityWordsBelow0_5": [
+            {
+              "start": 0.0,
+              "end": 0.66,
+              "word": "因為",
+              "probability": 0.4858502745628357
+            }
+          ]
+        },
+        {
+          "model": "medium",
+          "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/medium/crops/crop-01.json",
+          "sha256": "f0884967efb00b7c6e5df6da49c7e5dfdf52bc83326c0aa662c84ad994332eac",
+          "rawTranscript": "因为我喜欢白色啊!",
+          "strictCJKExact": true,
+          "observationGlyphNormalizedCJK": "因为我喜欢白色啊",
+          "minimumRawProbability": 0.8010820150375366,
+          "rawLowProbabilityWordsBelow0_5": []
+        }
+      ],
+      "humanListening": false,
+      "nativeSpeakerReview": false,
+      "pronunciationToneCertified": false,
+      "devicePlaybackCertified": false,
+      "productionMutationPerformed": false,
+      "status": "independently-accepted-guarded-sentence-source-frames-machine-review",
+      "unit": "sentence",
+      "eligibleForReviewedRuntimeFragment": true,
+      "newPrecisionSentenceCut": true,
+      "perWordOrCharacterTimesAccepted": false,
+      "lowProbabilityFlagReviewOutcome": "retained in raw/evidence; reviewed as a whole-sentence flag with supporting exact full-track source context, complementary crop model, complete normalized phrase and quiet actual source-frame bounds; no probability threshold changed",
+      "rangeAcceptanceScope": "only the exact frozen source sample interval/WAV bytes above; no raw-word endpoint or new padding recipe approved",
+      "runtimeConditions": [
+        "Use independently accepted target ID, exact original source SHA and exact source sample interval or verified equivalent exported crop",
+        "Keep raw transcripts and these five observation-only glyph mappings separately from unchanged textbook Chinese",
+        "Mark machine review and human/device/tone certifications truthfully",
+        "Do not infer acceptance of neighboring lines, sibling sentence1, a parent dialogue turn, or per-word times",
+        "Integrate as a genuinely partial fragment overlay/fallback partition; never fill unreviewed full-manifest entries with verified flags to satisfy schema"
+      ],
+      "parentMultiSentenceLineAcceptedByThisDecision": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "sourceText": "你们别客气，快坐吧！",
+      "sourceLessonFile": "course-app/content/hsk2/lesson-05.json",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "sourceHash": "7692432ee007f962b2e0d8a76642a0ad69e2696125f74b3572e1e287e249dcbd",
+      "sourcePCM_SHA256": "a5a433f2b95eca57609e5f752bb0aeeb52d66ebc3f46e126f62575670a9a7e95",
+      "sampleRate": 16000,
+      "sourceSampleRange": [
+        572480,
+        614240
+      ],
+      "start": 35.78,
+      "end": 38.39,
+      "cropPCM_SHA256": "fecfb51cc9cdcf8d4961e69ceb0265780c7375352667e500ef09821d97144072",
+      "guardedWAV": {
+        "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/guarded-three-crop-wav-probes/guarded-crop-03.wav",
+        "sha256": "5738aa74c5eed339d01138e24f0ea9a013de9999cd6cae90251bae3be0d014ae"
+      },
+      "actualFrameBoundaryRMSDbFS20ms": {
+        "beforeStart": -63.075,
+        "afterStart": -58.559,
+        "beforeEnd": -73.044,
+        "afterEnd": -60.25
+      },
+      "rawModelEvidence": [
+        {
+          "model": "small",
+          "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/small/crops/crop-03.json",
+          "sha256": "30df21b4756161daeceb3e84e89e146d5c5ea6f2accd419ee5048715379ebc2e",
+          "rawTranscript": "你們別客氣,快坐吧!",
+          "strictCJKExact": false,
+          "observationGlyphNormalizedCJK": "你们别客气快坐吧",
+          "minimumRawProbability": 0.7468985319137573,
+          "rawLowProbabilityWordsBelow0_5": []
+        },
+        {
+          "model": "medium",
+          "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/medium/crops/crop-03.json",
+          "sha256": "50676a4a65ddb0794d391fbd1b928a50d8efc31eded14d84c3210882ae16565e",
+          "rawTranscript": "你們別客氣,快坐吧!",
+          "strictCJKExact": false,
+          "observationGlyphNormalizedCJK": "你们别客气快坐吧",
+          "minimumRawProbability": 0.46422383189201355,
+          "rawLowProbabilityWordsBelow0_5": [
+            {
+              "start": 0.0,
+              "end": 0.44,
+              "word": "你們",
+              "probability": 0.46422383189201355
+            }
+          ]
+        }
+      ],
+      "humanListening": false,
+      "nativeSpeakerReview": false,
+      "pronunciationToneCertified": false,
+      "devicePlaybackCertified": false,
+      "productionMutationPerformed": false,
+      "status": "independently-accepted-guarded-sentence-source-frames-machine-review",
+      "unit": "sentence",
+      "eligibleForReviewedRuntimeFragment": true,
+      "newPrecisionSentenceCut": true,
+      "perWordOrCharacterTimesAccepted": false,
+      "lowProbabilityFlagReviewOutcome": "retained in raw/evidence; reviewed as a whole-sentence flag with supporting exact full-track source context, complementary crop model, complete normalized phrase and quiet actual source-frame bounds; no probability threshold changed",
+      "rangeAcceptanceScope": "only the exact frozen source sample interval/WAV bytes above; no raw-word endpoint or new padding recipe approved",
+      "runtimeConditions": [
+        "Use independently accepted target ID, exact original source SHA and exact source sample interval or verified equivalent exported crop",
+        "Keep raw transcripts and these five observation-only glyph mappings separately from unchanged textbook Chinese",
+        "Mark machine review and human/device/tone certifications truthfully",
+        "Do not infer acceptance of neighboring lines, sibling sentence1, a parent dialogue turn, or per-word times",
+        "Integrate as a genuinely partial fragment overlay/fallback partition; never fill unreviewed full-manifest entries with verified flags to satisfy schema"
+      ],
+      "parentMultiSentenceLineAcceptedByThisDecision": false
+    }
+  ],
+  "wordTrackDecisions": [
+    {
+      "id": "hsk2-fltrp-2026:l04:word16",
+      "sourceText": "颜色",
+      "sourceLessonFile": "course-app/content/hsk2/lesson-04.json",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "sourceTrack": "course-assets/hsk2/audio/4-8.mp3",
+      "sourceHash": "8d0a18324f7ef67634da7c2a941247c5807f63a3cbf89d1dad706d27d5e38020",
+      "sourcePCM_SHA256": "010c423f798fd0a3eea112ba61aa398680a25acc965943be5d138ce751e2caa5",
+      "sampleRate": 16000,
+      "sourceSampleRange": [
+        0,
+        50688
+      ],
+      "start": 0.0,
+      "end": 3.168,
+      "cropPCM_SHA256": "010c423f798fd0a3eea112ba61aa398680a25acc965943be5d138ce751e2caa5",
+      "guardedWAV": {
+        "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/guarded-three-crop-wav-probes/guarded-crop-02.wav",
+        "sha256": "e34799a6516ca25a0e899b1c2e3a26d1fb147ab6ce4d47daf0406428f9ceb5b7"
+      },
+      "actualFrameBoundaryRMSDbFS20ms": {
+        "beforeStart": null,
+        "afterStart": -240.0,
+        "beforeEnd": -57.252,
+        "afterEnd": null
+      },
+      "rawModelEvidence": [
+        {
+          "model": "small",
+          "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/small/crops/crop-02.json",
+          "sha256": "d7dbae643ada9fdfc54e3a3f01df098b9ce99bb117ff2ad7bedbf740eb8625fc",
+          "rawTranscript": "颜色",
+          "strictCJKExact": true,
+          "observationGlyphNormalizedCJK": "颜色",
+          "minimumRawProbability": 0.9884420037269592,
+          "rawLowProbabilityWordsBelow0_5": []
+        },
+        {
+          "model": "medium",
+          "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/medium/crops/crop-02.json",
+          "sha256": "af801138d28b9b426829140ce02aa58745a47013140836f16f73f6a85f802b29",
+          "rawTranscript": "颜色",
+          "strictCJKExact": true,
+          "observationGlyphNormalizedCJK": "颜色",
+          "minimumRawProbability": 0.9835443496704102,
+          "rawLowProbabilityWordsBelow0_5": []
+        }
+      ],
+      "humanListening": false,
+      "nativeSpeakerReview": false,
+      "pronunciationToneCertified": false,
+      "devicePlaybackCertified": false,
+      "productionMutationPerformed": false,
+      "status": "accepted-single-printed-headword-original-full-track-use-only",
+      "classification": "original-vocabulary-track-containing-one-printed-headword",
+      "wholeDecodedTrack": true,
+      "newPrecisionCut": false,
+      "repetition": null,
+      "repetitionStatus": "unverified; both ASR outputs recognize one textual word and the waveform has separated active blocks",
+      "sourceBindingScope": "the only printed vocabulary headword on original L4 track8 is 颜色",
+      "eligibleForSingleOriginalPronunciationContract": false,
+      "runtimeAction": "retain whole-source-vocabulary-track-with-explicit-label; alternatively add a distinct original-headword-track unit with whole decoded range and no repetition claim or precision-count increase"
+    }
+  ],
+  "counts": {
+    "acceptedGuardedSentenceFragments": 2,
+    "acceptedOriginalHeadwordWholeTracks": 1,
+    "newSinglePronunciationWordCuts": 0,
+    "newHumanCertifiedAudio": 0,
+    "productionAssetsOrManifestMutatedByReviewer": 0
+  },
+  "remainingScope": {
+    "remaining26Lesson208TrackASR": "candidate evidence generation only; no final gate passed by analogy",
+    "unreviewedPilotTargets": "retain previous fallback and holds",
+    "mediumL5T2FailureStillBlocked": true
+  },
+  "limitations": [
+    "This is machine-based source/content/window review, not human/native listening, phonetic/tone or device certification",
+    "Shared model architecture means cross-model agreement is not an independently calibrated probability of correctness",
+    "RMS quietness alone is not semantic proof; acceptance combines source identity, fulltrack context, six actual crop observations and exact source-frame window review",
+    "Only the2exact sentence intervals are precision eligible; 颜色 remains an original full track with unverified repetition count",
+    "Model binary hash values were recorded by the verified fixed worker and match prior evidence; model binaries were not locally rehashed"
+  ],
+  "acceptedRuntimeFragmentIds": [
+    "hsk2-fltrp-2026:l04:text2:line3",
+    "hsk2-fltrp-2026:l05:text2:line8:sentence2"
+  ],
+  "narrativeFile": {
+    "file": "post-crop-review.md",
+    "sha256": "b4aaf453f28663e6d43217fa507dc42a12a39545e42b9c9fe7e5fc0e43c01115"
+  }
+}

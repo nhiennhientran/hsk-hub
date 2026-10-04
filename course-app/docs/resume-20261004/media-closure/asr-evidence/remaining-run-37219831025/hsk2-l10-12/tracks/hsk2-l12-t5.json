@@ -1,0 +1,875 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l12:audio5",
+    "level": 2,
+    "lesson": 12,
+    "track": 5,
+    "kind": "text",
+    "text": 3,
+    "file": "course-assets/hsk2/audio/12-5.mp3",
+    "sha256": "f64552b99419c79e87f24604285451912cd9faa374f0cdb839ab5f97302b3078",
+    "bytes": 927902,
+    "manifestDurationSeconds": 37.157333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 594432,
+      "durationSeconds": 37.152,
+      "sha256": "1f1a23c3833f68fef7d6fd7064cb0a4cb48535177ff1055ae805aef9a70c939c"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 37.152,
+    "duration_after_vad": 37.152,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.6999999999999977,
+      "end": 6.5,
+      "text": "喂,佳玥,今天天气不错,我们去跑步吧。",
+      "tokens": [
+        50364,
+        35142,
+        11,
+        1593,
+        111,
+        8051,
+        98,
+        11,
+        12074,
+        6135,
+        42204,
+        1960,
+        29900,
+        11,
+        15003,
+        6734,
+        32585,
+        31429,
+        6062,
+        1543,
+        50714
+      ],
+      "avg_logprob": -0.1514782716246212,
+      "compression_ratio": 1.2586206896551724,
+      "no_speech_prob": 0.32852187752723694,
+      "words": [
+        {
+          "start": 0.6999999999999977,
+          "end": 1.26,
+          "word": "喂,",
+          "probability": 0.2604600489139557
+        },
+        {
+          "start": 1.84,
+          "end": 2.0,
+          "word": "佳",
+          "probability": 0.7034244686365128
+        },
+        {
+          "start": 2.0,
+          "end": 2.22,
+          "word": "玥,",
+          "probability": 0.525001548230648
+        },
+        {
+          "start": 3.14,
+          "end": 3.4,
+          "word": "今天",
+          "probability": 0.9806632399559021
+        },
+        {
+          "start": 3.4,
+          "end": 3.82,
+          "word": "天",
+          "probability": 0.9978493452072144
+        },
+        {
+          "start": 3.82,
+          "end": 4.0,
+          "word": "气",
+          "probability": 0.8624649047851562
+        },
+        {
+          "start": 4.0,
+          "end": 4.26,
+          "word": "不",
+          "probability": 0.9927431344985962
+        },
+        {
+          "start": 4.26,
+          "end": 4.46,
+          "word": "错,",
+          "probability": 0.9992640614509583
+        },
+        {
+          "start": 5.2,
+          "end": 5.48,
+          "word": "我们",
+          "probability": 0.9723442196846008
+        },
+        {
+          "start": 5.48,
+          "end": 5.72,
+          "word": "去",
+          "probability": 0.9943917393684387
+        },
+        {
+          "start": 5.72,
+          "end": 5.98,
+          "word": "跑",
+          "probability": 0.9834684133529663
+        },
+        {
+          "start": 5.98,
+          "end": 6.22,
+          "word": "步",
+          "probability": 0.9994509816169739
+        },
+        {
+          "start": 6.22,
+          "end": 6.5,
+          "word": "吧。",
+          "probability": 0.9857850670814514
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 7.54,
+      "end": 12.12,
+      "text": "你跑步跑得比我快,我们能一起跑吗?",
+      "tokens": [
+        50714,
+        2166,
+        32585,
+        31429,
+        32585,
+        5916,
+        11706,
+        1654,
+        10251,
+        11,
+        15003,
+        8225,
+        29567,
+        32585,
+        14769,
+        30,
+        51014
+      ],
+      "avg_logprob": -0.1514782716246212,
+      "compression_ratio": 1.2586206896551724,
+      "no_speech_prob": 0.32852187752723694,
+      "words": [
+        {
+          "start": 7.54,
+          "end": 8.1,
+          "word": "你",
+          "probability": 0.9535658955574036
+        },
+        {
+          "start": 8.1,
+          "end": 8.36,
+          "word": "跑",
+          "probability": 0.9982282519340515
+        },
+        {
+          "start": 8.36,
+          "end": 8.62,
+          "word": "步",
+          "probability": 0.9993901252746582
+        },
+        {
+          "start": 8.62,
+          "end": 8.96,
+          "word": "跑",
+          "probability": 0.9738143086433411
+        },
+        {
+          "start": 8.96,
+          "end": 9.1,
+          "word": "得",
+          "probability": 0.7980473041534424
+        },
+        {
+          "start": 9.1,
+          "end": 9.24,
+          "word": "比",
+          "probability": 0.9991961121559143
+        },
+        {
+          "start": 9.24,
+          "end": 9.44,
+          "word": "我",
+          "probability": 0.9950525164604187
+        },
+        {
+          "start": 9.44,
+          "end": 9.74,
+          "word": "快,",
+          "probability": 0.9992600083351135
+        },
+        {
+          "start": 10.5,
+          "end": 10.78,
+          "word": "我们",
+          "probability": 0.9831924438476562
+        },
+        {
+          "start": 10.78,
+          "end": 11.1,
+          "word": "能",
+          "probability": 0.9972695708274841
+        },
+        {
+          "start": 11.1,
+          "end": 11.5,
+          "word": "一起",
+          "probability": 0.9974243640899658
+        },
+        {
+          "start": 11.5,
+          "end": 11.86,
+          "word": "跑",
+          "probability": 0.9989749193191528
+        },
+        {
+          "start": 11.86,
+          "end": 12.12,
+          "word": "吗?",
+          "probability": 0.9869301319122314
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 13.46,
+      "end": 16.96,
+      "text": "可以的,我慢慢跑,等着你。",
+      "tokens": [
+        51014,
+        6723,
+        1546,
+        11,
+        1654,
+        41439,
+        32585,
+        11,
+        10187,
+        20708,
+        2166,
+        1543,
+        51214
+      ],
+      "avg_logprob": -0.1514782716246212,
+      "compression_ratio": 1.2586206896551724,
+      "no_speech_prob": 0.32852187752723694,
+      "words": [
+        {
+          "start": 13.46,
+          "end": 13.92,
+          "word": "可以",
+          "probability": 0.9798086285591125
+        },
+        {
+          "start": 13.92,
+          "end": 14.16,
+          "word": "的,",
+          "probability": 0.9842574596405029
+        },
+        {
+          "start": 14.82,
+          "end": 15.02,
+          "word": "我",
+          "probability": 0.992673933506012
+        },
+        {
+          "start": 15.02,
+          "end": 15.3,
+          "word": "慢慢",
+          "probability": 0.9944891929626465
+        },
+        {
+          "start": 15.3,
+          "end": 15.72,
+          "word": "跑,",
+          "probability": 0.9990234375
+        },
+        {
+          "start": 16.38,
+          "end": 16.56,
+          "word": "等",
+          "probability": 0.9973092079162598
+        },
+        {
+          "start": 16.56,
+          "end": 16.74,
+          "word": "着",
+          "probability": 0.9978464841842651
+        },
+        {
+          "start": 16.74,
+          "end": 16.96,
+          "word": "你。",
+          "probability": 0.9990041851997375
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 17.7,
+      "end": 20.58,
+      "text": "好吧,你真爱跑步啊。",
+      "tokens": [
+        51214,
+        40221,
+        11,
+        2166,
+        6303,
+        27324,
+        32585,
+        31429,
+        4905,
+        1543,
+        51414
+      ],
+      "avg_logprob": -0.1514782716246212,
+      "compression_ratio": 1.2586206896551724,
+      "no_speech_prob": 0.32852187752723694,
+      "words": [
+        {
+          "start": 17.7,
+          "end": 18.26,
+          "word": "好吧,",
+          "probability": 0.9578456282615662
+        },
+        {
+          "start": 19.08,
+          "end": 19.28,
+          "word": "你",
+          "probability": 0.9967725872993469
+        },
+        {
+          "start": 19.28,
+          "end": 19.5,
+          "word": "真",
+          "probability": 0.9967620372772217
+        },
+        {
+          "start": 19.5,
+          "end": 19.78,
+          "word": "爱",
+          "probability": 0.9887908697128296
+        },
+        {
+          "start": 19.78,
+          "end": 20.08,
+          "word": "跑",
+          "probability": 0.9988852143287659
+        },
+        {
+          "start": 20.08,
+          "end": 20.36,
+          "word": "步",
+          "probability": 0.9998527765274048
+        },
+        {
+          "start": 20.36,
+          "end": 20.58,
+          "word": "啊。",
+          "probability": 0.920616090297699
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 21.62,
+      "end": 27.48,
+      "text": "我从小就经常跟爸爸跑步,跑步能让人快乐。",
+      "tokens": [
+        51414,
+        1654,
+        35630,
+        7322,
+        3111,
+        30276,
+        11279,
+        9678,
+        49105,
+        32585,
+        31429,
+        11,
+        32585,
+        31429,
+        8225,
+        33650,
+        4035,
+        10251,
+        44365,
+        1543,
+        51764
+      ],
+      "avg_logprob": -0.1514782716246212,
+      "compression_ratio": 1.2586206896551724,
+      "no_speech_prob": 0.32852187752723694,
+      "words": [
+        {
+          "start": 21.62,
+          "end": 21.92,
+          "word": "我",
+          "probability": 0.9970281720161438
+        },
+        {
+          "start": 21.92,
+          "end": 22.2,
+          "word": "从",
+          "probability": 0.9920440912246704
+        },
+        {
+          "start": 22.2,
+          "end": 22.52,
+          "word": "小",
+          "probability": 0.9986843466758728
+        },
+        {
+          "start": 22.52,
+          "end": 22.84,
+          "word": "就",
+          "probability": 0.979464054107666
+        },
+        {
+          "start": 22.84,
+          "end": 23.1,
+          "word": "经",
+          "probability": 0.9966654181480408
+        },
+        {
+          "start": 23.1,
+          "end": 23.44,
+          "word": "常",
+          "probability": 0.9999338388442993
+        },
+        {
+          "start": 23.44,
+          "end": 23.74,
+          "word": "跟",
+          "probability": 0.9806700944900513
+        },
+        {
+          "start": 23.74,
+          "end": 24.08,
+          "word": "爸爸",
+          "probability": 0.9945423603057861
+        },
+        {
+          "start": 24.08,
+          "end": 24.44,
+          "word": "跑",
+          "probability": 0.9986240863800049
+        },
+        {
+          "start": 24.44,
+          "end": 24.7,
+          "word": "步,",
+          "probability": 0.9991641044616699
+        },
+        {
+          "start": 25.5,
+          "end": 25.82,
+          "word": "跑",
+          "probability": 0.9953180551528931
+        },
+        {
+          "start": 25.82,
+          "end": 26.12,
+          "word": "步",
+          "probability": 0.9998113512992859
+        },
+        {
+          "start": 26.12,
+          "end": 26.6,
+          "word": "能",
+          "probability": 0.9821295142173767
+        },
+        {
+          "start": 26.6,
+          "end": 26.8,
+          "word": "让",
+          "probability": 0.9972544312477112
+        },
+        {
+          "start": 26.8,
+          "end": 26.98,
+          "word": "人",
+          "probability": 0.9989866614341736
+        },
+        {
+          "start": 26.98,
+          "end": 27.24,
+          "word": "快",
+          "probability": 0.9798708558082581
+        },
+        {
+          "start": 27.24,
+          "end": 27.48,
+          "word": "乐。",
+          "probability": 0.9990854263305664
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 2748,
+      "start": 28.66,
+      "end": 31.06,
+      "text": "好,那我准备一下。",
+      "tokens": [
+        50364,
+        2131,
+        11,
+        4184,
+        1654,
+        6336,
+        228,
+        1787,
+        229,
+        8861,
+        1543,
+        50564
+      ],
+      "avg_logprob": -0.21098310281248653,
+      "compression_ratio": 0.9024390243902439,
+      "no_speech_prob": 0.31995701789855957,
+      "words": [
+        {
+          "start": 28.66,
+          "end": 29.14,
+          "word": "好,",
+          "probability": 0.8012394309043884
+        },
+        {
+          "start": 29.78,
+          "end": 30.08,
+          "word": "那",
+          "probability": 0.7466064691543579
+        },
+        {
+          "start": 30.08,
+          "end": 30.22,
+          "word": "我",
+          "probability": 0.9948524832725525
+        },
+        {
+          "start": 30.22,
+          "end": 30.46,
+          "word": "准",
+          "probability": 0.9327977895736694
+        },
+        {
+          "start": 30.46,
+          "end": 30.7,
+          "word": "备",
+          "probability": 0.9997763931751251
+        },
+        {
+          "start": 30.7,
+          "end": 31.06,
+          "word": "一下。",
+          "probability": 0.9863905906677246
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2748,
+      "start": 32.260000000000005,
+      "end": 35.68,
+      "text": "我现在坐地铁去找你,一会儿楼下见。",
+      "tokens": [
+        50564,
+        1654,
+        25040,
+        31123,
+        10928,
+        165,
+        241,
+        223,
+        6734,
+        25085,
+        2166,
+        11,
+        2257,
+        12949,
+        22933,
+        162,
+        2429,
+        4438,
+        23813,
+        1543,
+        50814
+      ],
+      "avg_logprob": -0.21098310281248653,
+      "compression_ratio": 0.9024390243902439,
+      "no_speech_prob": 0.31995701789855957,
+      "words": [
+        {
+          "start": 32.260000000000005,
+          "end": 32.74,
+          "word": "我",
+          "probability": 0.9525332450866699
+        },
+        {
+          "start": 32.74,
+          "end": 32.92,
+          "word": "现在",
+          "probability": 0.9845679998397827
+        },
+        {
+          "start": 32.92,
+          "end": 33.28,
+          "word": "坐",
+          "probability": 0.8839212656021118
+        },
+        {
+          "start": 33.28,
+          "end": 33.46,
+          "word": "地",
+          "probability": 0.9899007678031921
+        },
+        {
+          "start": 33.46,
+          "end": 33.64,
+          "word": "铁",
+          "probability": 0.9969988266626993
+        },
+        {
+          "start": 33.64,
+          "end": 33.9,
+          "word": "去",
+          "probability": 0.9789217710494995
+        },
+        {
+          "start": 33.9,
+          "end": 34.1,
+          "word": "找",
+          "probability": 0.9982926249504089
+        },
+        {
+          "start": 34.1,
+          "end": 34.32,
+          "word": "你,",
+          "probability": 0.9941363334655762
+        },
+        {
+          "start": 34.66,
+          "end": 34.8,
+          "word": "一",
+          "probability": 0.7907273173332214
+        },
+        {
+          "start": 34.8,
+          "end": 34.98,
+          "word": "会",
+          "probability": 0.9989379048347473
+        },
+        {
+          "start": 34.98,
+          "end": 35.14,
+          "word": "儿",
+          "probability": 0.9283713102340698
+        },
+        {
+          "start": 35.14,
+          "end": 35.26,
+          "word": "楼",
+          "probability": 0.9898164570331573
+        },
+        {
+          "start": 35.26,
+          "end": 35.5,
+          "word": "下",
+          "probability": 0.9967460632324219
+        },
+        {
+          "start": 35.5,
+          "end": 35.68,
+          "word": "见。",
+          "probability": 0.9807224869728088
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.940436845000008,
+  "realTimeFactor": 0.07914612524224827,
+  "observationChecks": {
+    "rawWordCount": 78,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

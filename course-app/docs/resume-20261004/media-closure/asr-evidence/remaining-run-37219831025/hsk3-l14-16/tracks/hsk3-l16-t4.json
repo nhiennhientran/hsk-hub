@@ -1,0 +1,435 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l16:audio4",
+    "level": 3,
+    "lesson": 16,
+    "track": 4,
+    "kind": "vocab",
+    "text": 2,
+    "file": "course-assets/hsk3/audio/16-4.mp3",
+    "sha256": "6336dea3e1b32b4ebc5bf2192dbef1de165bd6a87a37c8840dedaef8e71fd498",
+    "bytes": 355570,
+    "manifestDurationSeconds": 19.685189,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 315559,
+      "durationSeconds": 19.7224375,
+      "sha256": "814cbcac32dbd6c0b555d7ddac8375ea586f1679db2b41ce6ce2c748e11d6089"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 19.7224375,
+    "duration_after_vad": 19.7224375,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.02,
+      "text": "大熊猫",
+      "tokens": [
+        50364,
+        3582,
+        21805,
+        232,
+        25266,
+        104,
+        50514
+      ],
+      "avg_logprob": -0.25640641450881957,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.5648258328437805,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.96,
+          "word": "大",
+          "probability": 0.9450889825820923
+        },
+        {
+          "start": 0.96,
+          "end": 1.26,
+          "word": "熊",
+          "probability": 0.9185994267463684
+        },
+        {
+          "start": 1.26,
+          "end": 2.02,
+          "word": "猫",
+          "probability": 0.9913887977600098
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.0,
+      "end": 4.18,
+      "text": "奇怪",
+      "tokens": [
+        50514,
+        44082,
+        50614
+      ],
+      "avg_logprob": -0.25640641450881957,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.5648258328437805,
+      "words": [
+        {
+          "start": 3.0,
+          "end": 4.18,
+          "word": "奇怪",
+          "probability": 0.10851678252220154
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.0,
+      "end": 6.56,
+      "text": "骑士",
+      "tokens": [
+        50614,
+        49657,
+        239,
+        30337,
+        50764
+      ],
+      "avg_logprob": -0.25640641450881957,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.5648258328437805,
+      "words": [
+        {
+          "start": 5.0,
+          "end": 5.98,
+          "word": "骑",
+          "probability": 0.6202541366219521
+        },
+        {
+          "start": 5.98,
+          "end": 6.56,
+          "word": "士",
+          "probability": 0.23168937861919403
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 8.0,
+      "end": 9.88,
+      "text": "竹子",
+      "tokens": [
+        50764,
+        11957,
+        117,
+        7626,
+        50864
+      ],
+      "avg_logprob": -0.25640641450881957,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.5648258328437805,
+      "words": [
+        {
+          "start": 7.7,
+          "end": 8.4,
+          "word": "竹",
+          "probability": 0.9297515153884888
+        },
+        {
+          "start": 8.4,
+          "end": 9.88,
+          "word": "子",
+          "probability": 0.9992274045944214
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 9.88,
+      "end": 12.24,
+      "text": "国宝",
+      "tokens": [
+        50864,
+        16086,
+        2415,
+        251,
+        50964
+      ],
+      "avg_logprob": -0.25640641450881957,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.5648258328437805,
+      "words": [
+        {
+          "start": 9.88,
+          "end": 10.44,
+          "word": "国",
+          "probability": 0.7031155228614807
+        },
+        {
+          "start": 10.44,
+          "end": 12.24,
+          "word": "宝",
+          "probability": 0.9628050923347473
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 12.24,
+      "end": 14.2,
+      "text": "犬",
+      "tokens": [
+        50964,
+        35276,
+        105,
+        51064
+      ],
+      "avg_logprob": -0.25640641450881957,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.5648258328437805,
+      "words": [
+        {
+          "start": 12.24,
+          "end": 14.2,
+          "word": "犬",
+          "probability": 0.5660742893815041
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 14.2,
+      "end": 16.0,
+      "text": "野生",
+      "tokens": [
+        51064,
+        37178,
+        8244,
+        51164
+      ],
+      "avg_logprob": -0.25640641450881957,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.5648258328437805,
+      "words": [
+        {
+          "start": 14.2,
+          "end": 14.88,
+          "word": "野",
+          "probability": 0.9165260195732117
+        },
+        {
+          "start": 14.88,
+          "end": 16.0,
+          "word": "生",
+          "probability": 0.991409957408905
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 16.6,
+      "end": 18.04,
+      "text": "关鱼",
+      "tokens": [
+        51164,
+        28053,
+        165,
+        109,
+        120,
+        51314
+      ],
+      "avg_logprob": -0.25640641450881957,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.5648258328437805,
+      "words": [
+        {
+          "start": 16.6,
+          "end": 17.2,
+          "word": "关",
+          "probability": 0.8715566992759705
+        },
+        {
+          "start": 17.2,
+          "end": 18.04,
+          "word": "鱼",
+          "probability": 0.8590713342030843
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.20050552699999,
+  "realTimeFactor": 0.06087003835098932,
+  "observationChecks": {
+    "rawWordCount": 15,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

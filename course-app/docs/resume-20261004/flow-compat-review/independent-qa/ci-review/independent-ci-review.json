@@ -1,0 +1,158 @@
+{
+  "reviewer": "qa_hsk1_01_03",
+  "reviewedAt": "2026-10-04T17:55:48.718324+00:00",
+  "status": "accepted-ci-configuration-conditional-on-complete-source-checkout-before-trigger",
+  "reviewedFiles": [
+    {
+      "path": ".github/workflows/hsk-flow-package-checkpoint.yml",
+      "sha256": "94deee35b5f3649bc75f5d0ccdbea0ae76f997915fbe8020d32ee930eec38665"
+    },
+    {
+      "path": "course-app/tsconfig.flow-check.json",
+      "sha256": "dcb394630cf44cae9e913fce039f7f29ce2787233f7942bebade120e9de8496c"
+    }
+  ],
+  "matrix": {
+    "browserEngines": [
+      "chromium",
+      "webkit"
+    ],
+    "scopes": [
+      "shared",
+      "retained-hsk1",
+      "package"
+    ],
+    "jobs": 6,
+    "isolatedPushBranch": "work/hsk-flow-package-ci-20261004",
+    "manualDispatchAlsoAvailable": true
+  },
+  "repositoryPermissions": "contents: read only; no deployment, publishing or repository-writing step",
+  "actualCollectionOnlyChecks": [
+    {
+      "scope": "shared",
+      "perEngine": {
+        "chromium": 64,
+        "webkit": 64
+      },
+      "log": "shared-two-engine-collection.log",
+      "sha256": "982cc42876cc505fffd5b91260804499e6d8e812c44c03fe902f74e9f3ed2359"
+    },
+    {
+      "scope": "retained",
+      "perEngine": {
+        "chromium": 34,
+        "webkit": 34
+      },
+      "log": "retained-two-engine-collection.log",
+      "sha256": "969eb0e94e8ab4e4b1409cb9cc88b23eb4a767b1d27a6e4cf1e5b6a822291f8e"
+    },
+    {
+      "scope": "fresh",
+      "perEngine": {
+        "chromium": 1,
+        "webkit": 1
+      },
+      "log": "fresh-two-engine-collection.log",
+      "sha256": "0142d11555a881543e0522937f8bdf81a3cd2fa2bbf9eb157db4ebb29c21ebd1"
+    },
+    {
+      "scope": "package",
+      "perEngine": {
+        "chromium": 9,
+        "webkit": 9
+      },
+      "log": "package-two-engine-collection.log",
+      "sha256": "21f7e92309bd543ac35b4898315d5928fc412873048755471c80a266cdb3114b"
+    },
+    {
+      "scope": "legacy",
+      "perEngine": {
+        "chromium": 3,
+        "webkit": 3
+      },
+      "log": "legacy-two-engine-collection.log",
+      "sha256": "b2a6b932294710372b8b2fd880fe6bd8b62c22f3017e5705a0f882b24bc61f88"
+    }
+  ],
+  "paths": {
+    "sharedCLI": "course-app/node_modules/@playwright/test/cli.js",
+    "retainedCLI": "hsk1-app/node_modules/@playwright/test/cli.js",
+    "sharedDefaultDist": "course-app/dist",
+    "retainedDefaultDist": "hsk1-app/dist"
+  },
+  "webServerWorkingDirectories": {
+    "sharedAndRetained": "flow-compat-review config directory; node serve-frozen.mjs; correct default dist selected by config/env",
+    "package": "course-app config directory; node tools/serve-package.mjs with unified-site-flow-package",
+    "legacy": "flow-compat-review config directory; node serve-legacy.mjs with absolute github.workspace/course-app/unified-site-flow-package"
+  },
+  "singleRuntimePerInvocation": {
+    "sharedPackageLegacy": "course-app installed @playwright/test CLI/config/tests",
+    "retained": "hsk1-app installed CLI; wrapper/config runtime facade and retained tests use same HSK1 package",
+    "lockfileVersions": {
+      "course-app": {
+        "@playwright/test": "1.62.1",
+        "playwright": "1.62.1",
+        "playwright-core": "1.62.1"
+      },
+      "hsk1-app": {
+        "@playwright/test": "1.62.1",
+        "playwright": "1.62.1",
+        "playwright-core": "1.62.1"
+      }
+    },
+    "browserCacheVersionsIdentical": true
+  },
+  "protectedProduction": {
+    "commit": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
+    "actualTree": "34dc16aa1e042f5f6fc6ea6edb80b9b6926cb344",
+    "fullHistoryCheckout": true,
+    "archiveCommandCwdCorrect": true,
+    "assemblerValidates1446OriginalGitBlobsAndProtectedPublicBytes": true,
+    "assemblyMode": "checkpoint, no --release"
+  },
+  "reportCapture": {
+    "separateScopeAndEngineJobsIsolateFilenames": true,
+    "firstRetainedSuccessfulReportCopiedBeforeSecondInvocation": true,
+    "genericLatestRetainedReportAlwaysUploadedAfterOwnerFix": true,
+    "firstFailureGenericSaved": true,
+    "secondFailureFirstDedicatedPlusLatestGenericSaved": true,
+    "artifactStepAlways": true
+  },
+  "authenticationScope": {
+    "retainedOriginalPasswordDependentCaseExactlyExcludedInActualCollection": true,
+    "freshSessionFixtureSeparateOneCasePerEngine": true,
+    "passwordValidationCertified": false,
+    "legacyExtraH4StageExplicitSyntheticSession": true,
+    "normalCDNLegacyRunDoesNotEnableLocalPakoFulfill": true
+  },
+  "typing": {
+    "command": "course-app/node_modules/.bin/tsc -p course-app/tsconfig.flow-check.json",
+    "actualReviewerExitCode": 0,
+    "originalLog": "ci-review-typecheck.log",
+    "compilerScope": "strict inherited; five formal candidates, fresh and legacy fixtures, three configs plus Vite declaration",
+    "emptyDiagnosticLogSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "triggerPrerequisite": {
+    "requiredBeforeActualCITrigger": "Include all package dependencies and audited packager revisions in the same CI source commit. Root confirmed A7-only checkpoint will not trigger this CI branch and will verify the eventual commit tree.",
+    "currentUntrackedRequiredFiles": [
+      "course-app/tsconfig.package-check.json",
+      "course-app/playwright.package-closure.config.ts",
+      "course-app/tests/packaged/unified-source.spec.ts",
+      "course-app/tools/assemble-unified-checkpoint.mjs"
+    ],
+    "unconditionalPackageTypingAffectsAllSixJobs": true,
+    "productionReleaseRequiresUserConfirmation": true
+  },
+  "additionalSupplementFinding": {
+    "scope": "author supplemental CI-INTEGRATION.md command, not root workflow",
+    "anchoredTitleOnlyGrepCollected35PerEngine": true,
+    "rootActualUnanchoredUniqueTitleGrepCollected34PerEngine": true,
+    "ownerNotifiedForBoundedSupplementRepair": true,
+    "negativeCollectionLog": "supplement-anchored-grep-negative.log"
+  },
+  "limits": [
+    "Collection and typecheck were actually run; browser CI jobs were not executed by this review.",
+    "No production deployment or new runtime acceptance is inferred.",
+    "Frozen author43 files were not modified by reviewer."
+  ]
+}

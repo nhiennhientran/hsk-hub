@@ -1,0 +1,104 @@
+# Candidate observations only; no precision-cut acceptance or deployment.
+# This workflow reads tracked original MP3s and uploads diagnostics; no deploy/write.
+name: HSK remaining original audio observations
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - work/hsk-audio-asr-pilot-20261004
+    paths:
+      - .github/workflows/hsk-audio-asr-remaining.yml
+      - course-app/docs/resume-20261004/media-closure/asr-evidence/transcribe-original-tracks.py
+      - course-app/docs/resume-20261004/media-closure/asr-evidence/requirements.txt
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hsk-audio-asr-remaining-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  remaining-small-evidence:
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        include:
+          - id: hsk2-l07-09
+            level: 2
+            lessons: "7,8,9"
+          - id: hsk2-l10-12
+            level: 2
+            lessons: "10,11,12"
+          - id: hsk2-l13-15
+            level: 2
+            lessons: "13,14,15"
+          - id: hsk3-l02-04
+            level: 3
+            lessons: "2,3,4"
+          - id: hsk3-l05-07
+            level: 3
+            lessons: "5,6,7"
+          - id: hsk3-l08-10
+            level: 3
+            lessons: "8,9,10"
+          - id: hsk3-l11-13
+            level: 3
+            lessons: "11,12,13"
+          - id: hsk3-l14-16
+            level: 3
+            lessons: "14,15,16"
+          - id: hsk3-l17-18
+            level: 3
+            lessons: "17,18"
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      EVIDENCE_SCRIPT: course-app/docs/resume-20261004/media-closure/asr-evidence/transcribe-original-tracks.py
+      EVIDENCE_REQUIREMENTS: course-app/docs/resume-20261004/media-closure/asr-evidence/requirements.txt
+      EVIDENCE_OUTPUT: .repro-output/asr-evidence/${{ matrix.id }}-small
+      EVIDENCE_CACHE: .repro-output/asr-model-cache
+      HF_HUB_DISABLE_IMPLICIT_TOKEN: "1"
+      HF_HUB_DISABLE_XET: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      OMP_NUM_THREADS: "2"
+      OPENBLAS_NUM_THREADS: "2"
+    steps:
+      - name: Read repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Fixed Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.11.13"
+      - name: Prepare evidence directory
+        run: mkdir -p "$EVIDENCE_OUTPUT"
+      - name: Install FFmpeg for explicit identical PCM decode
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends --yes ffmpeg
+      - name: Install fixed CPU dependencies and save wheel provenance
+        run: |
+          python -m pip install pip==25.2
+          python -m pip install --only-binary=:all: --report "$EVIDENCE_OUTPUT/pip-install-report.json" -r "$EVIDENCE_REQUIREMENTS"
+          python -m pip check
+          python -m pip freeze --all > "$EVIDENCE_OUTPUT/pip-freeze.txt"
+      - name: Cache only the pinned public model snapshot
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        with:
+          path: .repro-output/asr-model-cache/models--Systran--faster-whisper-small
+          key: hsk-asr-small-536b0662742c02347bc0e980a01041f333bce120-${{ runner.os }}-${{ hashFiles('course-app/docs/resume-20261004/media-closure/asr-evidence/requirements.txt') }}
+      - name: Unprompted remaining original tracks; observations only
+        run: |
+          python "$EVIDENCE_SCRIPT" --level ${{ matrix.level }} --lessons ${{ matrix.lessons }} --allow-expanded-batch --cpu-threads 2 --model-id Systran/faster-whisper-small --model-revision 536b0662742c02347bc0e980a01041f333bce120 --cache "$EVIDENCE_CACHE" --output "$EVIDENCE_OUTPUT"
+      - name: Preserve partial evidence on failure and complete evidence on success
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ${{ matrix.id }}-small-observations-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .repro-output/asr-evidence/${{ matrix.id }}-small/
+          if-no-files-found: warn
+          retention-days: 30

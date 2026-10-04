@@ -1,0 +1,13 @@
+{
+  "source": "course-app/src/segments.ts",
+  "productionSHA256": "d093a3d14f566a4a2e281946e6024dd31bf2255776d1b6be1f85c9e27b394379",
+  "method": "actual loader body with only Vite glob/JSON imports adapted; actual contract SHA-256 digest temporarily delayed before real crypto call",
+  "secondCallResolvedBeforeAsyncGate": true,
+  "legacyAvailableDuringGate": true,
+  "approvedMissingBeforeRelease": [
+    true,
+    true
+  ],
+  "approvedLinePresentAfterBothSettle": true,
+  "finding": "concurrent loadSegments can return legacy-only data before the already-running reviewed gate completes"
+}

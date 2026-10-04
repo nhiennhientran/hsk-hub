@@ -1,0 +1,883 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l11:audio3",
+    "level": 2,
+    "lesson": 11,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/11-3.mp3",
+    "sha256": "ed13ccf74797e8954e569b22f983e640e263712bec36f3c686dee3ff19b75159",
+    "bytes": 975135,
+    "manifestDurationSeconds": 38.621333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 617856,
+      "durationSeconds": 38.616,
+      "sha256": "6520034182d80f5ad3285350b135ac0314afde0d239edcba7525900720bfa18b"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 38.616,
+    "duration_after_vad": 38.616,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 1.02,
+      "end": 5.2,
+      "text": "现在路上车多,还下着雪,我开慢一点。",
+      "tokens": [
+        50364,
+        25040,
+        24658,
+        5708,
+        17819,
+        99,
+        6392,
+        11,
+        14852,
+        4438,
+        20708,
+        47939,
+        11,
+        1654,
+        18937,
+        20645,
+        49042,
+        1543,
+        50664
+      ],
+      "avg_logprob": -0.13870893936408193,
+      "compression_ratio": 1.2060301507537687,
+      "no_speech_prob": 0.05336848273873329,
+      "words": [
+        {
+          "start": 1.02,
+          "end": 1.54,
+          "word": "现在",
+          "probability": 0.4741286337375641
+        },
+        {
+          "start": 1.54,
+          "end": 1.94,
+          "word": "路",
+          "probability": 0.9825055599212646
+        },
+        {
+          "start": 1.94,
+          "end": 2.16,
+          "word": "上",
+          "probability": 0.9986593723297119
+        },
+        {
+          "start": 2.16,
+          "end": 2.42,
+          "word": "车",
+          "probability": 0.974045068025589
+        },
+        {
+          "start": 2.42,
+          "end": 2.68,
+          "word": "多,",
+          "probability": 0.9802554845809937
+        },
+        {
+          "start": 3.1,
+          "end": 3.28,
+          "word": "还",
+          "probability": 0.9249817728996277
+        },
+        {
+          "start": 3.28,
+          "end": 3.44,
+          "word": "下",
+          "probability": 0.9230526089668274
+        },
+        {
+          "start": 3.44,
+          "end": 3.62,
+          "word": "着",
+          "probability": 0.952537477016449
+        },
+        {
+          "start": 3.62,
+          "end": 3.9,
+          "word": "雪,",
+          "probability": 0.9718244671821594
+        },
+        {
+          "start": 4.4,
+          "end": 4.5,
+          "word": "我",
+          "probability": 0.96614009141922
+        },
+        {
+          "start": 4.5,
+          "end": 4.7,
+          "word": "开",
+          "probability": 0.9934152364730835
+        },
+        {
+          "start": 4.7,
+          "end": 4.92,
+          "word": "慢",
+          "probability": 0.9888893365859985
+        },
+        {
+          "start": 4.92,
+          "end": 5.2,
+          "word": "一点。",
+          "probability": 0.9902645349502563
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 6.74,
+      "end": 10.86,
+      "text": "没问题,现在头没那么疼了。",
+      "tokens": [
+        50664,
+        10062,
+        34069,
+        11,
+        25040,
+        39862,
+        10062,
+        35693,
+        18140,
+        120,
+        2289,
+        1543,
+        50914
+      ],
+      "avg_logprob": -0.13870893936408193,
+      "compression_ratio": 1.2060301507537687,
+      "no_speech_prob": 0.05336848273873329,
+      "words": [
+        {
+          "start": 6.74,
+          "end": 7.26,
+          "word": "没",
+          "probability": 0.9737662672996521
+        },
+        {
+          "start": 7.26,
+          "end": 7.58,
+          "word": "问题,",
+          "probability": 0.9965537786483765
+        },
+        {
+          "start": 8.62,
+          "end": 9.08,
+          "word": "现在",
+          "probability": 0.9811736345291138
+        },
+        {
+          "start": 9.08,
+          "end": 9.62,
+          "word": "头",
+          "probability": 0.9951152801513672
+        },
+        {
+          "start": 9.62,
+          "end": 9.88,
+          "word": "没",
+          "probability": 0.8223938345909119
+        },
+        {
+          "start": 9.88,
+          "end": 10.2,
+          "word": "那么",
+          "probability": 0.9713796973228455
+        },
+        {
+          "start": 10.2,
+          "end": 10.52,
+          "word": "疼",
+          "probability": 0.9893006980419159
+        },
+        {
+          "start": 10.52,
+          "end": 10.86,
+          "word": "了。",
+          "probability": 0.8970152139663696
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 12.24,
+      "end": 16.02,
+      "text": "好,李文来电话了,你帮我接一下。",
+      "tokens": [
+        50914,
+        2131,
+        11,
+        31206,
+        17174,
+        6912,
+        42182,
+        21596,
+        2289,
+        11,
+        2166,
+        4845,
+        106,
+        1654,
+        14468,
+        8861,
+        1543,
+        51214
+      ],
+      "avg_logprob": -0.13870893936408193,
+      "compression_ratio": 1.2060301507537687,
+      "no_speech_prob": 0.05336848273873329,
+      "words": [
+        {
+          "start": 12.24,
+          "end": 12.76,
+          "word": "好,",
+          "probability": 0.9862781167030334
+        },
+        {
+          "start": 13.56,
+          "end": 13.68,
+          "word": "李",
+          "probability": 0.9779990911483765
+        },
+        {
+          "start": 13.68,
+          "end": 13.84,
+          "word": "文",
+          "probability": 0.8891183733940125
+        },
+        {
+          "start": 13.84,
+          "end": 14.0,
+          "word": "来",
+          "probability": 0.98574298620224
+        },
+        {
+          "start": 14.0,
+          "end": 14.18,
+          "word": "电",
+          "probability": 0.9979302883148193
+        },
+        {
+          "start": 14.18,
+          "end": 14.42,
+          "word": "话",
+          "probability": 0.9994617104530334
+        },
+        {
+          "start": 14.42,
+          "end": 14.64,
+          "word": "了,",
+          "probability": 0.9813696146011353
+        },
+        {
+          "start": 15.06,
+          "end": 15.2,
+          "word": "你",
+          "probability": 0.982001006603241
+        },
+        {
+          "start": 15.2,
+          "end": 15.32,
+          "word": "帮",
+          "probability": 0.9989814162254333
+        },
+        {
+          "start": 15.32,
+          "end": 15.52,
+          "word": "我",
+          "probability": 0.9988793730735779
+        },
+        {
+          "start": 15.52,
+          "end": 15.7,
+          "word": "接",
+          "probability": 0.9922620058059692
+        },
+        {
+          "start": 15.7,
+          "end": 16.02,
+          "word": "一下。",
+          "probability": 0.9919716119766235
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 17.38,
+      "end": 23.58,
+      "text": "喂,李文,王老师开着车呢,你找他有事吗?",
+      "tokens": [
+        51214,
+        35142,
+        11,
+        31206,
+        17174,
+        11,
+        19940,
+        10439,
+        29186,
+        18937,
+        20708,
+        17819,
+        99,
+        6240,
+        11,
+        2166,
+        25085,
+        5000,
+        2412,
+        6973,
+        14769,
+        30,
+        51564
+      ],
+      "avg_logprob": -0.13870893936408193,
+      "compression_ratio": 1.2060301507537687,
+      "no_speech_prob": 0.05336848273873329,
+      "words": [
+        {
+          "start": 17.38,
+          "end": 17.9,
+          "word": "喂,",
+          "probability": 0.9659630656242371
+        },
+        {
+          "start": 18.48,
+          "end": 18.68,
+          "word": "李",
+          "probability": 0.9946892261505127
+        },
+        {
+          "start": 18.68,
+          "end": 18.98,
+          "word": "文,",
+          "probability": 0.9995018243789673
+        },
+        {
+          "start": 19.98,
+          "end": 20.24,
+          "word": "王",
+          "probability": 0.9832130074501038
+        },
+        {
+          "start": 20.24,
+          "end": 20.42,
+          "word": "老",
+          "probability": 0.9912329316139221
+        },
+        {
+          "start": 20.42,
+          "end": 20.7,
+          "word": "师",
+          "probability": 0.9997201561927795
+        },
+        {
+          "start": 20.7,
+          "end": 21.0,
+          "word": "开",
+          "probability": 0.9868772029876709
+        },
+        {
+          "start": 21.0,
+          "end": 21.16,
+          "word": "着",
+          "probability": 0.9933962225914001
+        },
+        {
+          "start": 21.16,
+          "end": 21.46,
+          "word": "车",
+          "probability": 0.99934121966362
+        },
+        {
+          "start": 21.46,
+          "end": 21.68,
+          "word": "呢,",
+          "probability": 0.8026077151298523
+        },
+        {
+          "start": 22.34,
+          "end": 22.5,
+          "word": "你",
+          "probability": 0.9848892688751221
+        },
+        {
+          "start": 22.5,
+          "end": 22.68,
+          "word": "找",
+          "probability": 0.9992581009864807
+        },
+        {
+          "start": 22.68,
+          "end": 22.86,
+          "word": "他",
+          "probability": 0.8996617197990417
+        },
+        {
+          "start": 22.86,
+          "end": 23.04,
+          "word": "有",
+          "probability": 0.9918944239616394
+        },
+        {
+          "start": 23.04,
+          "end": 23.34,
+          "word": "事",
+          "probability": 0.9983218312263489
+        },
+        {
+          "start": 23.34,
+          "end": 23.58,
+          "word": "吗?",
+          "probability": 0.9568628668785095
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 24.9,
+      "end": 29.1,
+      "text": "没什么事,今天雪这么大,你们开车去哪儿啊?",
+      "tokens": [
+        51564,
+        10062,
+        10440,
+        6973,
+        11,
+        12074,
+        47939,
+        31889,
+        3582,
+        11,
+        29806,
+        18937,
+        17819,
+        99,
+        6734,
+        17028,
+        22933,
+        4905,
+        30,
+        51814
+      ],
+      "avg_logprob": -0.13870893936408193,
+      "compression_ratio": 1.2060301507537687,
+      "no_speech_prob": 0.05336848273873329,
+      "words": [
+        {
+          "start": 24.9,
+          "end": 25.14,
+          "word": "没",
+          "probability": 0.9904690384864807
+        },
+        {
+          "start": 25.14,
+          "end": 25.36,
+          "word": "什么",
+          "probability": 0.9917283654212952
+        },
+        {
+          "start": 25.36,
+          "end": 25.6,
+          "word": "事,",
+          "probability": 0.9973443150520325
+        },
+        {
+          "start": 26.06,
+          "end": 26.3,
+          "word": "今天",
+          "probability": 0.9956733584403992
+        },
+        {
+          "start": 26.3,
+          "end": 26.72,
+          "word": "雪",
+          "probability": 0.9946574568748474
+        },
+        {
+          "start": 26.72,
+          "end": 27.0,
+          "word": "这么",
+          "probability": 0.97981196641922
+        },
+        {
+          "start": 27.0,
+          "end": 27.22,
+          "word": "大,",
+          "probability": 0.9990647435188293
+        },
+        {
+          "start": 27.64,
+          "end": 27.78,
+          "word": "你们",
+          "probability": 0.9857123494148254
+        },
+        {
+          "start": 27.78,
+          "end": 28.04,
+          "word": "开",
+          "probability": 0.995995283126831
+        },
+        {
+          "start": 28.04,
+          "end": 28.28,
+          "word": "车",
+          "probability": 0.996403157711029
+        },
+        {
+          "start": 28.28,
+          "end": 28.56,
+          "word": "去",
+          "probability": 0.9876896142959595
+        },
+        {
+          "start": 28.56,
+          "end": 28.8,
+          "word": "哪",
+          "probability": 0.9954942464828491
+        },
+        {
+          "start": 28.8,
+          "end": 28.94,
+          "word": "儿",
+          "probability": 0.7851230502128601
+        },
+        {
+          "start": 28.94,
+          "end": 29.1,
+          "word": "啊?",
+          "probability": 0.9423238039016724
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 2910,
+      "start": 30.24,
+      "end": 33.94,
+      "text": "去医院,我头有点疼。",
+      "tokens": [
+        50364,
+        6734,
+        9937,
+        119,
+        38358,
+        11,
+        1654,
+        39862,
+        2412,
+        12579,
+        18140,
+        120,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.23628381582406852,
+      "compression_ratio": 0.8787878787878788,
+      "no_speech_prob": 0.25646743178367615,
+      "words": [
+        {
+          "start": 30.24,
+          "end": 30.88,
+          "word": "去",
+          "probability": 0.6535651683807373
+        },
+        {
+          "start": 30.88,
+          "end": 31.14,
+          "word": "医",
+          "probability": 0.9406452775001526
+        },
+        {
+          "start": 31.14,
+          "end": 31.5,
+          "word": "院,",
+          "probability": 0.9982821941375732
+        },
+        {
+          "start": 32.24,
+          "end": 32.78,
+          "word": "我",
+          "probability": 0.9388736486434937
+        },
+        {
+          "start": 32.78,
+          "end": 33.1,
+          "word": "头",
+          "probability": 0.995625376701355
+        },
+        {
+          "start": 33.1,
+          "end": 33.42,
+          "word": "有",
+          "probability": 0.968445360660553
+        },
+        {
+          "start": 33.42,
+          "end": 33.56,
+          "word": "点",
+          "probability": 0.9989174604415894
+        },
+        {
+          "start": 33.56,
+          "end": 33.94,
+          "word": "疼。",
+          "probability": 0.9880131483078003
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2910,
+      "start": 35.36,
+      "end": 37.52,
+      "text": "那我一会儿去看看你。",
+      "tokens": [
+        50614,
+        4184,
+        1654,
+        2257,
+        12949,
+        22933,
+        6734,
+        22884,
+        2166,
+        1543,
+        50814
+      ],
+      "avg_logprob": -0.23628381582406852,
+      "compression_ratio": 0.8787878787878788,
+      "no_speech_prob": 0.25646743178367615,
+      "words": [
+        {
+          "start": 35.36,
+          "end": 35.98,
+          "word": "那",
+          "probability": 0.9351366758346558
+        },
+        {
+          "start": 35.98,
+          "end": 36.24,
+          "word": "我",
+          "probability": 0.9568107724189758
+        },
+        {
+          "start": 36.24,
+          "end": 36.5,
+          "word": "一",
+          "probability": 0.991534948348999
+        },
+        {
+          "start": 36.5,
+          "end": 36.66,
+          "word": "会",
+          "probability": 0.9979550838470459
+        },
+        {
+          "start": 36.66,
+          "end": 36.8,
+          "word": "儿",
+          "probability": 0.6292176842689514
+        },
+        {
+          "start": 36.8,
+          "end": 36.96,
+          "word": "去",
+          "probability": 0.9881026148796082
+        },
+        {
+          "start": 36.96,
+          "end": 37.2,
+          "word": "看看",
+          "probability": 0.9827828407287598
+        },
+        {
+          "start": 37.2,
+          "end": 37.52,
+          "word": "你。",
+          "probability": 0.9875801205635071
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.9201830020000017,
+  "realTimeFactor": 0.07562106385954014,
+  "observationChecks": {
+    "rawWordCount": 79,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source": "course-app/src/segments.ts",
+  "productionSHA256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00",
+  "method": "actual loader body with only Vite glob/JSON imports adapted; actual contract SHA-256 digest temporarily delayed before real crypto call",
+  "checksumFailureInjected": true,
+  "secondCallResolvedBeforeAsyncGate": false,
+  "legacyAvailableDuringGate": true,
+  "approvedMissingBeforeRelease": [
+    true,
+    true
+  ],
+  "approvedLinePresentAfterBothSettle": false,
+  "approvedChildOrdinalAfterBothSettle": [],
+  "oldWordAvailableAfterBothSettle": true,
+  "finding": "concurrent loadSegments waits for the shared reviewed gate"
+}

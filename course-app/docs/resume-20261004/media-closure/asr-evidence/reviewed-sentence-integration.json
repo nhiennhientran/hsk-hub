@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "status": "author integration and independent code QA accepted; final local Chromium4 passed; remote WebKit pending",
+  "independentSourceFrameReview": {
+    "file": "course-app/docs/resume-20261004/qa-audio-asr-pilot/post-crop-review.json",
+    "sha256": "76c0d3571f5ea0ce1c2d40de7baeffe3a58155ee6782a27636d99865c761501c",
+    "checks": 169
+  },
+  "productionFiles": [
+    {
+      "file": "course-app/content/audio-segments-hsk2-reviewed-sentences.json",
+      "sha256": "e01a625335ac02409922d26bcf29d728f1ab0d032dea36e47d5192bd659b7ae8"
+    },
+    {
+      "file": "course-app/content/audio-segment-reviewed-sentences-authority.json",
+      "sha256": "44aec78b3cc2a161e1db266f56854e5f94082c310c618b8e46a2a3e798b85306"
+    },
+    {
+      "file": "course-app/src/audio-segment-contract.ts",
+      "sha256": "42d2daff068e43f8d957dcbc6f640b7a8ce6f2136db590c94a87b64214583657"
+    },
+    {
+      "file": "course-app/src/segments.ts",
+      "sha256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00"
+    },
+    {
+      "file": "course-app/src/segment-resolver.ts",
+      "sha256": "f07829059f3426d5d57e79b5e7cf0739bfa8bba2b7737a68f2773b683e186a61"
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "sha256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a"
+    },
+    {
+      "file": "course-app/tests/audio-reviewed-sentences.test.mjs",
+      "sha256": "be6106f29cbeeabf04469ff3561b5433be2d1d4ead09b30b90aa7126b5290c9c"
+    },
+    {
+      "file": "course-app/tests/unified/reviewed-sentence-subset.spec.ts",
+      "sha256": "09c03fd071b8d416723f2bf52205d475ac43ad768cc115a4489ad41a1fe9e867"
+    },
+    {
+      "file": "course-app/playwright.reviewed-sentences.config.ts",
+      "sha256": "fe7ac3c287bb1135b819979cab0845d4ba0d25f62f8a38c2ed5c1ef707a672cd"
+    },
+    {
+      "file": "course-app/tsconfig.reviewed-sentences-check.json",
+      "sha256": "8620fd04cca093305e65b97614a626b2e8364a0eb30f02a35916cf87839fbe22"
+    },
+    {
+      "file": "course-app/tests/audio-segment-loader.test.mjs",
+      "sha256": "22f3b121c4e645e057a0702fce8e47962ad54ae475a6e4f75415b0be8e761c51"
+    }
+  ],
+  "unchangedLegacy": [
+    {
+      "file": "course-app/content/audio-segments-pilot.json",
+      "sha256": "6989e0f2a7f9824bdde9e9003099c1ca98a4c212764e8c364149c81ee6882cda"
+    },
+    {
+      "file": "course-app/content/audio-segments-hsk2-lessons02-03.json",
+      "sha256": "9bd2278cf872cf1d9bdccfbb3a8ff54ed96477833d73e258c724671746da91ef"
+    },
+    {
+      "file": "course-app/content/audio-segment-authority.json",
+      "sha256": "4c28025a19057f63887c405b102dc6ece6bbad5509e14e288deda38b3f90504f"
+    }
+  ],
+  "runtimeCounts": {
+    "words": 61,
+    "explicitWordHolds": 13,
+    "sourceLines": 79,
+    "subsentenceRecords": 34,
+    "actualSentenceFragments": 97,
+    "newSentenceFragments": 2,
+    "newWordFragments": 0,
+    "newPrecisionParentLines": 0
+  },
+  "acceptanceScope": {
+    "allowedIds": [
+      "hsk2-fltrp-2026:l04:text2:line3",
+      "hsk2-fltrp-2026:l05:text2:line8:sentence2"
+    ],
+    "source16kFrames": [
+      [
+        159680,
+        197921
+      ],
+      [
+        572480,
+        614240
+      ]
+    ],
+    "partialSourceOrdinal": 2,
+    "colorOriginalTrackOnly": true,
+    "colorRepetition": null,
+    "parentAndSiblingPrecision": false,
+    "unreviewedCandidatesRemainWholeTrackFallback": true
+  },
+  "checks": {
+    "newAndOldNecessaryUnitTests": 18,
+    "unitResult": "passed",
+    "sourceTypeScript": "passed",
+    "nativeFixtureTypeScript": "passed",
+    "isolatedBuild": ".repro-output/media-reviewed-subset/dist",
+    "nativeChromium": "4/4 actually passed after final source+independent outDir rebuild",
+    "nativeWebKit": "0 locally executed; root remote CI required",
+    "nativeChromiumReport": "reviewed-sentence-native-chromium/browser-results.json",
+    "nativeChromiumReportSHA256": "440920105bce54d604e0fad0f8f3445b886e5d1733eb789879f186d5ca0cc7bd",
+    "failureGuards": [
+      "shared in-flight awaiting full gate",
+      "checksum rejection keeps old registry",
+      "optional new chunk load rejection keeps old registry",
+      "invalid old manifests reject with no cached false readiness"
+    ]
+  },
+  "humanListening": false,
+  "nativeSpeakerReview": false,
+  "devicePlaybackCertified": false,
+  "pronunciationToneCertified": false,
+  "published": false,
+  "remainingRawCollection": {
+    "runId": 37219831025,
+    "verifiedTracks": 208,
+    "verifiedSourceLessons": 26,
+    "sourceDrift": 0,
+    "summary": "remaining-run-37219831025/diagnostic-summary.json",
+    "summarySHA256": "1372f085d6f2253a347bef6881a668ffaf28c7facd6da67b9968638f9328dd5d",
+    "precisionApproval": 0
+  },
+  "independentIntegrationReview": {
+    "file": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-review.json",
+    "sha256": "acac6ebbd051e09a1fe3fc4d5ca1494efda96c473e4649fe61dfd4b97ddebfa6",
+    "sourceChecks": 30,
+    "negativeMutations": 81,
+    "necessaryUnitTests": 18,
+    "actualChromiumCases": 4,
+    "localWebKitCases": 0
+  }
+}

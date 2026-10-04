@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l10:audio8",
+    "level": 3,
+    "lesson": 10,
+    "track": 8,
+    "kind": "vocab",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/10-8.mp3",
+    "sha256": "9403505c2022443dd42ff68597b13653a3f0b9863d674793ad3ac4d6827ee2fd",
+    "bytes": 228385,
+    "manifestDurationSeconds": 11.736125,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 188082,
+      "durationSeconds": 11.755125,
+      "sha256": "4863c44edead28acbf30be923da4dc840a24f352f34dbac0deb60591c9c6158b"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 11.755125,
+    "duration_after_vad": 11.755125,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.8,
+      "text": "年纪",
+      "tokens": [
+        50364,
+        5157,
+        16853,
+        103,
+        50514
+      ],
+      "avg_logprob": -0.386922372014899,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.3433511257171631,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.94,
+          "word": "年",
+          "probability": 0.9673355221748352
+        },
+        {
+          "start": 0.94,
+          "end": 2.8,
+          "word": "纪",
+          "probability": 0.42082730680704117
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.8,
+      "end": 5.68,
+      "text": "后年",
+      "tokens": [
+        50514,
+        13547,
+        5157,
+        50664
+      ],
+      "avg_logprob": -0.386922372014899,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.3433511257171631,
+      "words": [
+        {
+          "start": 2.8,
+          "end": 3.84,
+          "word": "后",
+          "probability": 0.460685133934021
+        },
+        {
+          "start": 3.84,
+          "end": 5.68,
+          "word": "年",
+          "probability": 0.9984960556030273
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.68,
+      "end": 8.28,
+      "text": "一般",
+      "tokens": [
+        50664,
+        2257,
+        49640,
+        50764
+      ],
+      "avg_logprob": -0.386922372014899,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.3433511257171631,
+      "words": [
+        {
+          "start": 5.68,
+          "end": 6.52,
+          "word": "一",
+          "probability": 0.8600096702575684
+        },
+        {
+          "start": 6.52,
+          "end": 8.28,
+          "word": "般",
+          "probability": 0.9705078601837158
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 8.28,
+      "end": 9.96,
+      "text": "努力",
+      "tokens": [
+        50764,
+        5087,
+        103,
+        13486,
+        50914
+      ],
+      "avg_logprob": -0.386922372014899,
+      "compression_ratio": 0.6857142857142857,
+      "no_speech_prob": 0.3433511257171631,
+      "words": [
+        {
+          "start": 8.28,
+          "end": 9.14,
+          "word": "努",
+          "probability": 0.9846843779087067
+        },
+        {
+          "start": 9.14,
+          "end": 9.96,
+          "word": "力",
+          "probability": 0.998741090297699
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.4027940130000047,
+  "realTimeFactor": 0.20440395257387775,
+  "observationChecks": {
+    "rawWordCount": 8,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

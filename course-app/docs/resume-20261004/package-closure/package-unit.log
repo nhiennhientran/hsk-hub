@@ -1,0 +1,15 @@
+✔ all seven routeable entries resolve activity crops and shared textbook/audio against real packaged paths (133.54163ms)
+✔ unknown source images, PDF, changed accepted crops/audio/strokes and symlinks fail before freezing (148.651106ms)
+✔ source or frozen-input drift fails before output; dirty or prebuilt data cannot be labeled release (59.374294ms)
+✔ release gate still requires exact commit, 48 lessons, 33 textbook lessons, 579 pages, sixteen stages and both engines (0.414767ms)
+✔ actual current crop registry uses lesson 4 current version and rejects path traversal/private sources (56.00217ms)
+✔ production assembly anchors the actual 1446-file 2da tree and explicitly separates developer-only files (9.742134ms)
+✔ entry and build-configuration edits are dirty even when runtime src/content are untouched (80.082164ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 579.134066

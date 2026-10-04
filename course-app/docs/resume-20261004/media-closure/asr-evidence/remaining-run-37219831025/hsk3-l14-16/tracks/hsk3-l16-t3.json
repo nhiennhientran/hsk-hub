@@ -1,0 +1,1231 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l16:audio3",
+    "level": 3,
+    "lesson": 16,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk3/audio/16-3.mp3",
+    "sha256": "8d58490a6d76d912475da9473c1504c8778b6757d1d3b25012df04d328114d1f",
+    "bytes": 858472,
+    "manifestDurationSeconds": 51.116567,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 819618,
+      "durationSeconds": 51.226125,
+      "sha256": "e92740b8ca7d5d1e29a9767d946946ec732337f09353b8ecfb8f949161885a05"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 51.226125,
+    "duration_after_vad": 51.226125,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 5.54,
+      "text": "妈妈,大熊猫这个名字很奇怪,他们跟猫有什么关系?",
+      "tokens": [
+        50364,
+        32462,
+        32462,
+        11,
+        3582,
+        21805,
+        232,
+        25266,
+        104,
+        15368,
+        15940,
+        22381,
+        4563,
+        44082,
+        11,
+        47911,
+        9678,
+        25266,
+        104,
+        2412,
+        10440,
+        28053,
+        25368,
+        30,
+        50664
+      ],
+      "avg_logprob": -0.11748093408401881,
+      "compression_ratio": 1.3891625615763548,
+      "no_speech_prob": 0.06420297175645828,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.94,
+          "word": "妈",
+          "probability": 0.35764196515083313
+        },
+        {
+          "start": 0.94,
+          "end": 1.16,
+          "word": "妈,",
+          "probability": 0.9762532114982605
+        },
+        {
+          "start": 1.52,
+          "end": 1.68,
+          "word": "大",
+          "probability": 0.8949337601661682
+        },
+        {
+          "start": 1.68,
+          "end": 1.84,
+          "word": "熊",
+          "probability": 0.989677369594574
+        },
+        {
+          "start": 1.84,
+          "end": 2.0,
+          "word": "猫",
+          "probability": 0.9981178045272827
+        },
+        {
+          "start": 2.0,
+          "end": 2.2,
+          "word": "这个",
+          "probability": 0.9801648855209351
+        },
+        {
+          "start": 2.2,
+          "end": 2.42,
+          "word": "名",
+          "probability": 0.9975536465644836
+        },
+        {
+          "start": 2.42,
+          "end": 2.6,
+          "word": "字",
+          "probability": 0.9902998208999634
+        },
+        {
+          "start": 2.6,
+          "end": 2.8,
+          "word": "很",
+          "probability": 0.9814525246620178
+        },
+        {
+          "start": 2.8,
+          "end": 3.22,
+          "word": "奇怪,",
+          "probability": 0.9975382089614868
+        },
+        {
+          "start": 3.82,
+          "end": 4.14,
+          "word": "他们",
+          "probability": 0.8365865349769592
+        },
+        {
+          "start": 4.14,
+          "end": 4.36,
+          "word": "跟",
+          "probability": 0.9917539358139038
+        },
+        {
+          "start": 4.36,
+          "end": 4.62,
+          "word": "猫",
+          "probability": 0.9978337585926056
+        },
+        {
+          "start": 4.62,
+          "end": 4.78,
+          "word": "有",
+          "probability": 0.9972546696662903
+        },
+        {
+          "start": 4.78,
+          "end": 4.98,
+          "word": "什么",
+          "probability": 0.9870702028274536
+        },
+        {
+          "start": 4.98,
+          "end": 5.22,
+          "word": "关",
+          "probability": 0.9993361830711365
+        },
+        {
+          "start": 5.22,
+          "end": 5.54,
+          "word": "系?",
+          "probability": 0.9904491305351257
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 6.58,
+      "end": 13.42,
+      "text": "这个问题问得好,他们跟猫没什么关系,其实应该叫大猫熊。",
+      "tokens": [
+        50664,
+        15368,
+        34069,
+        22064,
+        5916,
+        2131,
+        11,
+        47911,
+        9678,
+        25266,
+        104,
+        10062,
+        10440,
+        28053,
+        25368,
+        11,
+        41646,
+        44297,
+        44646,
+        19855,
+        3582,
+        25266,
+        104,
+        21805,
+        232,
+        1543,
+        51064
+      ],
+      "avg_logprob": -0.11748093408401881,
+      "compression_ratio": 1.3891625615763548,
+      "no_speech_prob": 0.06420297175645828,
+      "words": [
+        {
+          "start": 6.58,
+          "end": 7.1,
+          "word": "这个",
+          "probability": 0.91213059425354
+        },
+        {
+          "start": 7.1,
+          "end": 7.5,
+          "word": "问题",
+          "probability": 0.994376540184021
+        },
+        {
+          "start": 7.5,
+          "end": 7.8,
+          "word": "问",
+          "probability": 0.9924235343933105
+        },
+        {
+          "start": 7.8,
+          "end": 7.94,
+          "word": "得",
+          "probability": 0.6942678689956665
+        },
+        {
+          "start": 7.94,
+          "end": 8.22,
+          "word": "好,",
+          "probability": 0.9986182451248169
+        },
+        {
+          "start": 8.72,
+          "end": 8.96,
+          "word": "他们",
+          "probability": 0.9523472785949707
+        },
+        {
+          "start": 8.96,
+          "end": 9.18,
+          "word": "跟",
+          "probability": 0.9975329637527466
+        },
+        {
+          "start": 9.18,
+          "end": 9.52,
+          "word": "猫",
+          "probability": 0.9990354478359222
+        },
+        {
+          "start": 9.52,
+          "end": 9.86,
+          "word": "没",
+          "probability": 0.9796584844589233
+        },
+        {
+          "start": 9.86,
+          "end": 10.12,
+          "word": "什么",
+          "probability": 0.9971936345100403
+        },
+        {
+          "start": 10.12,
+          "end": 10.38,
+          "word": "关",
+          "probability": 0.9995836615562439
+        },
+        {
+          "start": 10.38,
+          "end": 10.7,
+          "word": "系,",
+          "probability": 0.9986107349395752
+        },
+        {
+          "start": 11.24,
+          "end": 11.62,
+          "word": "其实",
+          "probability": 0.9552252888679504
+        },
+        {
+          "start": 11.62,
+          "end": 12.1,
+          "word": "应",
+          "probability": 0.8840087056159973
+        },
+        {
+          "start": 12.1,
+          "end": 12.26,
+          "word": "该",
+          "probability": 0.9994045495986938
+        },
+        {
+          "start": 12.26,
+          "end": 12.44,
+          "word": "叫",
+          "probability": 0.9968791007995605
+        },
+        {
+          "start": 12.44,
+          "end": 12.78,
+          "word": "大",
+          "probability": 0.939392626285553
+        },
+        {
+          "start": 12.78,
+          "end": 13.02,
+          "word": "猫",
+          "probability": 0.9953868687152863
+        },
+        {
+          "start": 13.02,
+          "end": 13.42,
+          "word": "熊。",
+          "probability": 0.9977973997592926
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 14.86,
+      "end": 17.68,
+      "text": "大熊猫为什么只吃竹子不吃肉?",
+      "tokens": [
+        51064,
+        3582,
+        21805,
+        232,
+        25266,
+        104,
+        31006,
+        14003,
+        10123,
+        11957,
+        117,
+        7626,
+        1960,
+        10123,
+        31980,
+        30,
+        51314
+      ],
+      "avg_logprob": -0.11748093408401881,
+      "compression_ratio": 1.3891625615763548,
+      "no_speech_prob": 0.06420297175645828,
+      "words": [
+        {
+          "start": 14.86,
+          "end": 15.22,
+          "word": "大",
+          "probability": 0.9206769466400146
+        },
+        {
+          "start": 15.22,
+          "end": 15.46,
+          "word": "熊",
+          "probability": 0.9996653199195862
+        },
+        {
+          "start": 15.46,
+          "end": 15.7,
+          "word": "猫",
+          "probability": 0.9996272623538971
+        },
+        {
+          "start": 15.7,
+          "end": 15.96,
+          "word": "为什么",
+          "probability": 0.9466356635093689
+        },
+        {
+          "start": 15.96,
+          "end": 16.36,
+          "word": "只",
+          "probability": 0.9838237762451172
+        },
+        {
+          "start": 16.36,
+          "end": 16.6,
+          "word": "吃",
+          "probability": 0.9960493445396423
+        },
+        {
+          "start": 16.6,
+          "end": 16.84,
+          "word": "竹",
+          "probability": 0.9883430004119873
+        },
+        {
+          "start": 16.84,
+          "end": 17.06,
+          "word": "子",
+          "probability": 0.9909669756889343
+        },
+        {
+          "start": 17.06,
+          "end": 17.24,
+          "word": "不",
+          "probability": 0.44699177145957947
+        },
+        {
+          "start": 17.24,
+          "end": 17.44,
+          "word": "吃",
+          "probability": 0.9992716908454895
+        },
+        {
+          "start": 17.44,
+          "end": 17.68,
+          "word": "肉?",
+          "probability": 0.9994567036628723
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 19.5,
+      "end": 24.12,
+      "text": "他们跟人一样,也可以吃肉,但是对肉不感兴趣。",
+      "tokens": [
+        51314,
+        47911,
+        9678,
+        4035,
+        2257,
+        14496,
+        11,
+        47935,
+        10123,
+        31980,
+        11,
+        11189,
+        8713,
+        31980,
+        1960,
+        9709,
+        2347,
+        112,
+        39835,
+        1543,
+        51614
+      ],
+      "avg_logprob": -0.11748093408401881,
+      "compression_ratio": 1.3891625615763548,
+      "no_speech_prob": 0.06420297175645828,
+      "words": [
+        {
+          "start": 19.5,
+          "end": 19.88,
+          "word": "他们",
+          "probability": 0.9366839528083801
+        },
+        {
+          "start": 19.88,
+          "end": 20.14,
+          "word": "跟",
+          "probability": 0.9899416565895081
+        },
+        {
+          "start": 20.14,
+          "end": 20.38,
+          "word": "人",
+          "probability": 0.9919922947883606
+        },
+        {
+          "start": 20.38,
+          "end": 20.64,
+          "word": "一",
+          "probability": 0.983317494392395
+        },
+        {
+          "start": 20.64,
+          "end": 20.88,
+          "word": "样,",
+          "probability": 0.999293327331543
+        },
+        {
+          "start": 21.14,
+          "end": 21.36,
+          "word": "也可以",
+          "probability": 0.9547320604324341
+        },
+        {
+          "start": 21.36,
+          "end": 21.92,
+          "word": "吃",
+          "probability": 0.9975723624229431
+        },
+        {
+          "start": 21.92,
+          "end": 22.18,
+          "word": "肉,",
+          "probability": 0.999333918094635
+        },
+        {
+          "start": 22.48,
+          "end": 22.72,
+          "word": "但是",
+          "probability": 0.9824466705322266
+        },
+        {
+          "start": 22.72,
+          "end": 22.9,
+          "word": "对",
+          "probability": 0.9947394728660583
+        },
+        {
+          "start": 22.9,
+          "end": 23.16,
+          "word": "肉",
+          "probability": 0.998745322227478
+        },
+        {
+          "start": 23.16,
+          "end": 23.44,
+          "word": "不",
+          "probability": 0.990104615688324
+        },
+        {
+          "start": 23.44,
+          "end": 23.6,
+          "word": "感",
+          "probability": 0.9361941814422607
+        },
+        {
+          "start": 23.6,
+          "end": 23.84,
+          "word": "兴",
+          "probability": 0.999313622713089
+        },
+        {
+          "start": 23.84,
+          "end": 24.12,
+          "word": "趣。",
+          "probability": 0.9981949925422668
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 25.6,
+      "end": 28.04,
+      "text": "大熊猫为什么是中国的国宝?",
+      "tokens": [
+        51614,
+        3582,
+        21805,
+        232,
+        25266,
+        104,
+        31006,
+        1541,
+        38165,
+        1546,
+        16086,
+        2415,
+        251,
+        30,
+        51814
+      ],
+      "avg_logprob": -0.11748093408401881,
+      "compression_ratio": 1.3891625615763548,
+      "no_speech_prob": 0.06420297175645828,
+      "words": [
+        {
+          "start": 25.6,
+          "end": 26.12,
+          "word": "大",
+          "probability": 0.9922481775283813
+        },
+        {
+          "start": 26.12,
+          "end": 26.34,
+          "word": "熊",
+          "probability": 0.9997510612010956
+        },
+        {
+          "start": 26.34,
+          "end": 26.56,
+          "word": "猫",
+          "probability": 0.999418169260025
+        },
+        {
+          "start": 26.56,
+          "end": 26.86,
+          "word": "为什么",
+          "probability": 0.9874581694602966
+        },
+        {
+          "start": 26.86,
+          "end": 27.18,
+          "word": "是",
+          "probability": 0.9960349202156067
+        },
+        {
+          "start": 27.18,
+          "end": 27.42,
+          "word": "中国",
+          "probability": 0.9959325194358826
+        },
+        {
+          "start": 27.42,
+          "end": 27.62,
+          "word": "的",
+          "probability": 0.992976188659668
+        },
+        {
+          "start": 27.62,
+          "end": 27.78,
+          "word": "国",
+          "probability": 0.9667211771011353
+        },
+        {
+          "start": 27.78,
+          "end": 28.04,
+          "word": "宝?",
+          "probability": 0.9324983954429626
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 2804,
+      "start": 29.7,
+      "end": 35.68,
+      "text": "全世界只有中國有野生大熊貓,中國是大熊貓的家。",
+      "tokens": [
+        50364,
+        11319,
+        24486,
+        35244,
+        21854,
+        2412,
+        37178,
+        8244,
+        3582,
+        21805,
+        232,
+        11561,
+        241,
+        11,
+        21854,
+        1541,
+        3582,
+        21805,
+        232,
+        11561,
+        241,
+        1546,
+        5155,
+        1543,
+        50714
+      ],
+      "avg_logprob": -0.14923319220542908,
+      "compression_ratio": 1.1607142857142858,
+      "no_speech_prob": 0.05258888006210327,
+      "words": [
+        {
+          "start": 29.7,
+          "end": 30.18,
+          "word": "全",
+          "probability": 0.8608260750770569
+        },
+        {
+          "start": 30.18,
+          "end": 30.62,
+          "word": "世界",
+          "probability": 0.9965454936027527
+        },
+        {
+          "start": 30.62,
+          "end": 31.04,
+          "word": "只有",
+          "probability": 0.96962571144104
+        },
+        {
+          "start": 31.04,
+          "end": 31.56,
+          "word": "中國",
+          "probability": 0.7613642811775208
+        },
+        {
+          "start": 31.56,
+          "end": 32.04,
+          "word": "有",
+          "probability": 0.7535840272903442
+        },
+        {
+          "start": 32.04,
+          "end": 32.28,
+          "word": "野",
+          "probability": 0.982180118560791
+        },
+        {
+          "start": 32.28,
+          "end": 32.52,
+          "word": "生",
+          "probability": 0.9893755912780762
+        },
+        {
+          "start": 32.52,
+          "end": 32.74,
+          "word": "大",
+          "probability": 0.9879298210144043
+        },
+        {
+          "start": 32.74,
+          "end": 32.92,
+          "word": "熊",
+          "probability": 0.9628891944885254
+        },
+        {
+          "start": 32.92,
+          "end": 33.14,
+          "word": "貓,",
+          "probability": 0.9907607138156891
+        },
+        {
+          "start": 33.74,
+          "end": 34.24,
+          "word": "中國",
+          "probability": 0.8617992997169495
+        },
+        {
+          "start": 34.24,
+          "end": 34.64,
+          "word": "是",
+          "probability": 0.993384063243866
+        },
+        {
+          "start": 34.64,
+          "end": 34.92,
+          "word": "大",
+          "probability": 0.9860060214996338
+        },
+        {
+          "start": 34.92,
+          "end": 35.1,
+          "word": "熊",
+          "probability": 0.9998226761817932
+        },
+        {
+          "start": 35.1,
+          "end": 35.3,
+          "word": "貓",
+          "probability": 0.9994461536407471
+        },
+        {
+          "start": 35.3,
+          "end": 35.44,
+          "word": "的",
+          "probability": 0.9748641848564148
+        },
+        {
+          "start": 35.44,
+          "end": 35.68,
+          "word": "家。",
+          "probability": 0.9988179802894592
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2804,
+      "start": 37.6,
+      "end": 41.32,
+      "text": "我聽說有的熊貓出國了,他們去哪兒了?",
+      "tokens": [
+        50714,
+        1654,
+        21524,
+        4622,
+        2412,
+        1546,
+        21805,
+        232,
+        11561,
+        241,
+        7781,
+        8053,
+        2289,
+        11,
+        20486,
+        6734,
+        17028,
+        35125,
+        2289,
+        30,
+        51014
+      ],
+      "avg_logprob": -0.14923319220542908,
+      "compression_ratio": 1.1607142857142858,
+      "no_speech_prob": 0.05258888006210327,
+      "words": [
+        {
+          "start": 37.6,
+          "end": 38.08,
+          "word": "我",
+          "probability": 0.6170125007629395
+        },
+        {
+          "start": 38.08,
+          "end": 38.26,
+          "word": "聽",
+          "probability": 0.99814772605896
+        },
+        {
+          "start": 38.26,
+          "end": 38.52,
+          "word": "說",
+          "probability": 0.9890418648719788
+        },
+        {
+          "start": 38.52,
+          "end": 38.76,
+          "word": "有",
+          "probability": 0.8835659027099609
+        },
+        {
+          "start": 38.76,
+          "end": 38.86,
+          "word": "的",
+          "probability": 0.9756798148155212
+        },
+        {
+          "start": 38.86,
+          "end": 39.04,
+          "word": "熊",
+          "probability": 0.9989632666110992
+        },
+        {
+          "start": 39.04,
+          "end": 39.2,
+          "word": "貓",
+          "probability": 0.9997469484806061
+        },
+        {
+          "start": 39.2,
+          "end": 39.42,
+          "word": "出",
+          "probability": 0.9983835220336914
+        },
+        {
+          "start": 39.42,
+          "end": 39.7,
+          "word": "國",
+          "probability": 0.9960015416145325
+        },
+        {
+          "start": 39.7,
+          "end": 39.9,
+          "word": "了,",
+          "probability": 0.9558819532394409
+        },
+        {
+          "start": 40.36,
+          "end": 40.6,
+          "word": "他們",
+          "probability": 0.8879625797271729
+        },
+        {
+          "start": 40.6,
+          "end": 40.84,
+          "word": "去",
+          "probability": 0.9695156216621399
+        },
+        {
+          "start": 40.84,
+          "end": 41.06,
+          "word": "哪",
+          "probability": 0.9778252243995667
+        },
+        {
+          "start": 41.06,
+          "end": 41.14,
+          "word": "兒",
+          "probability": 0.6726052761077881
+        },
+        {
+          "start": 41.14,
+          "end": 41.32,
+          "word": "了?",
+          "probability": 0.9705619812011719
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2804,
+      "start": 42.8,
+      "end": 45.96,
+      "text": "關於這個問題,我得慢慢給你講。",
+      "tokens": [
+        51014,
+        14899,
+        19488,
+        6287,
+        17197,
+        11,
+        1654,
+        5916,
+        41439,
+        17798,
+        2166,
+        11932,
+        1543,
+        51264
+      ],
+      "avg_logprob": -0.14923319220542908,
+      "compression_ratio": 1.1607142857142858,
+      "no_speech_prob": 0.05258888006210327,
+      "words": [
+        {
+          "start": 42.8,
+          "end": 43.28,
+          "word": "關",
+          "probability": 0.9923995137214661
+        },
+        {
+          "start": 43.28,
+          "end": 43.48,
+          "word": "於",
+          "probability": 0.9963628649711609
+        },
+        {
+          "start": 43.48,
+          "end": 43.72,
+          "word": "這個",
+          "probability": 0.9800113439559937
+        },
+        {
+          "start": 43.72,
+          "end": 44.14,
+          "word": "問題,",
+          "probability": 0.9976907968521118
+        },
+        {
+          "start": 44.6,
+          "end": 44.7,
+          "word": "我",
+          "probability": 0.9734116792678833
+        },
+        {
+          "start": 44.7,
+          "end": 44.82,
+          "word": "得",
+          "probability": 0.9856919646263123
+        },
+        {
+          "start": 44.82,
+          "end": 45.2,
+          "word": "慢慢",
+          "probability": 0.9877354502677917
+        },
+        {
+          "start": 45.2,
+          "end": 45.5,
+          "word": "給",
+          "probability": 0.8203223347663879
+        },
+        {
+          "start": 45.5,
+          "end": 45.68,
+          "word": "你",
+          "probability": 0.9348655939102173
+        },
+        {
+          "start": 45.68,
+          "end": 45.96,
+          "word": "講。",
+          "probability": 0.994439959526062
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 2804,
+      "start": 47.48,
+      "end": 50.06,
+      "text": "弟弟,你真是十萬個為什麼?",
+      "tokens": [
+        51264,
+        19630,
+        19630,
+        11,
+        2166,
+        6303,
+        1541,
+        20145,
+        14099,
+        3338,
+        18987,
+        30,
+        51464
+      ],
+      "avg_logprob": -0.14923319220542908,
+      "compression_ratio": 1.1607142857142858,
+      "no_speech_prob": 0.05258888006210327,
+      "words": [
+        {
+          "start": 47.48,
+          "end": 47.9,
+          "word": "弟",
+          "probability": 0.9284263849258423
+        },
+        {
+          "start": 47.9,
+          "end": 48.08,
+          "word": "弟,",
+          "probability": 0.9942873120307922
+        },
+        {
+          "start": 48.48,
+          "end": 48.64,
+          "word": "你",
+          "probability": 0.9848812818527222
+        },
+        {
+          "start": 48.64,
+          "end": 48.9,
+          "word": "真",
+          "probability": 0.9832747578620911
+        },
+        {
+          "start": 48.9,
+          "end": 49.22,
+          "word": "是",
+          "probability": 0.9835920333862305
+        },
+        {
+          "start": 49.22,
+          "end": 49.46,
+          "word": "十",
+          "probability": 0.9236782789230347
+        },
+        {
+          "start": 49.46,
+          "end": 49.62,
+          "word": "萬",
+          "probability": 0.9969632029533386
+        },
+        {
+          "start": 49.62,
+          "end": 49.78,
+          "word": "個",
+          "probability": 0.9984962940216064
+        },
+        {
+          "start": 49.78,
+          "end": 50.06,
+          "word": "為什麼?",
+          "probability": 0.6027724146842957
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.922154928999987,
+  "realTimeFactor": 0.07656552060106024,
+  "observationChecks": {
+    "rawWordCount": 122,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

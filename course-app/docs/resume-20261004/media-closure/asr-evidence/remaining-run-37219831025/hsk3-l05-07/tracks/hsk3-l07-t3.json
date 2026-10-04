@@ -1,0 +1,945 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l07:audio3",
+    "level": 3,
+    "lesson": 7,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk3/audio/7-3.mp3",
+    "sha256": "4567f6cddbcd3617f384ff9fc33cfe04f62a5af6482bcc863976cd6ffba1c569",
+    "bytes": 527789,
+    "manifestDurationSeconds": 30.449,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 488176,
+      "durationSeconds": 30.511,
+      "sha256": "b5455f9c25fa84185c75bd9349d6123d09f5c8d01fef8f16a7fac5936265c9e5"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 30.511,
+    "duration_after_vad": 30.511,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 3.44,
+      "text": "你看我穿這條黃色的短褲好看嗎?",
+      "tokens": [
+        50364,
+        16529,
+        1654,
+        13740,
+        123,
+        2664,
+        31106,
+        39214,
+        17673,
+        1546,
+        5881,
+        255,
+        164,
+        97,
+        110,
+        2131,
+        4200,
+        7434,
+        30,
+        50551
+      ],
+      "avg_logprob": -0.22920337943143623,
+      "compression_ratio": 1.4505494505494505,
+      "no_speech_prob": 0.1157480850815773,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.84,
+          "word": "你看",
+          "probability": 0.8722507953643799
+        },
+        {
+          "start": 0.84,
+          "end": 1.1,
+          "word": "我",
+          "probability": 0.8280620574951172
+        },
+        {
+          "start": 1.1,
+          "end": 1.3,
+          "word": "穿",
+          "probability": 0.9957143068313599
+        },
+        {
+          "start": 1.3,
+          "end": 1.54,
+          "word": "這",
+          "probability": 0.46463149785995483
+        },
+        {
+          "start": 1.54,
+          "end": 1.72,
+          "word": "條",
+          "probability": 0.9864545464515686
+        },
+        {
+          "start": 1.72,
+          "end": 2.02,
+          "word": "黃",
+          "probability": 0.9653214812278748
+        },
+        {
+          "start": 2.02,
+          "end": 2.22,
+          "word": "色",
+          "probability": 0.9990517497062683
+        },
+        {
+          "start": 2.22,
+          "end": 2.36,
+          "word": "的",
+          "probability": 0.9881330132484436
+        },
+        {
+          "start": 2.36,
+          "end": 2.54,
+          "word": "短",
+          "probability": 0.9963200390338898
+        },
+        {
+          "start": 2.54,
+          "end": 2.76,
+          "word": "褲",
+          "probability": 0.9920967618624369
+        },
+        {
+          "start": 2.76,
+          "end": 3.04,
+          "word": "好",
+          "probability": 0.6466313600540161
+        },
+        {
+          "start": 3.04,
+          "end": 3.22,
+          "word": "看",
+          "probability": 0.9996116757392883
+        },
+        {
+          "start": 3.22,
+          "end": 3.44,
+          "word": "嗎?",
+          "probability": 0.9482783675193787
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.26,
+      "end": 9.18,
+      "text": "大小合適,但我覺得那條裙子比短褲更好看。",
+      "tokens": [
+        50551,
+        3582,
+        7322,
+        14245,
+        3330,
+        102,
+        11,
+        8395,
+        17689,
+        4184,
+        31106,
+        8083,
+        247,
+        7626,
+        11706,
+        5881,
+        255,
+        164,
+        97,
+        110,
+        19002,
+        2131,
+        4200,
+        1543,
+        50835
+      ],
+      "avg_logprob": -0.22920337943143623,
+      "compression_ratio": 1.4505494505494505,
+      "no_speech_prob": 0.1157480850815773,
+      "words": [
+        {
+          "start": 4.26,
+          "end": 4.48,
+          "word": "大",
+          "probability": 0.9396645426750183
+        },
+        {
+          "start": 4.48,
+          "end": 4.64,
+          "word": "小",
+          "probability": 0.9955982565879822
+        },
+        {
+          "start": 4.64,
+          "end": 4.86,
+          "word": "合",
+          "probability": 0.8713871836662292
+        },
+        {
+          "start": 4.86,
+          "end": 5.06,
+          "word": "適,",
+          "probability": 0.9921862185001373
+        },
+        {
+          "start": 5.46,
+          "end": 5.8,
+          "word": "但",
+          "probability": 0.8625451922416687
+        },
+        {
+          "start": 5.8,
+          "end": 6.14,
+          "word": "我覺得",
+          "probability": 0.96639084815979
+        },
+        {
+          "start": 6.14,
+          "end": 6.72,
+          "word": "那",
+          "probability": 0.9275692701339722
+        },
+        {
+          "start": 6.72,
+          "end": 6.94,
+          "word": "條",
+          "probability": 0.9891751408576965
+        },
+        {
+          "start": 6.94,
+          "end": 7.18,
+          "word": "裙",
+          "probability": 0.9987598359584808
+        },
+        {
+          "start": 7.18,
+          "end": 7.44,
+          "word": "子",
+          "probability": 0.9994968175888062
+        },
+        {
+          "start": 7.44,
+          "end": 7.76,
+          "word": "比",
+          "probability": 0.9500522613525391
+        },
+        {
+          "start": 7.76,
+          "end": 8.06,
+          "word": "短",
+          "probability": 0.9991292059421539
+        },
+        {
+          "start": 8.06,
+          "end": 8.38,
+          "word": "褲",
+          "probability": 0.9994537830352783
+        },
+        {
+          "start": 8.38,
+          "end": 8.6,
+          "word": "更",
+          "probability": 0.9834632277488708
+        },
+        {
+          "start": 8.6,
+          "end": 8.96,
+          "word": "好",
+          "probability": 0.9915375709533691
+        },
+        {
+          "start": 8.96,
+          "end": 9.18,
+          "word": "看。",
+          "probability": 0.9989500641822815
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 9.72,
+      "end": 11.58,
+      "text": "裙子比短褲貴一點。",
+      "tokens": [
+        50835,
+        8083,
+        247,
+        7626,
+        11706,
+        5881,
+        255,
+        164,
+        97,
+        110,
+        11561,
+        112,
+        19202,
+        1543,
+        50960
+      ],
+      "avg_logprob": -0.22920337943143623,
+      "compression_ratio": 1.4505494505494505,
+      "no_speech_prob": 0.1157480850815773,
+      "words": [
+        {
+          "start": 9.72,
+          "end": 10.2,
+          "word": "裙",
+          "probability": 0.9907754063606262
+        },
+        {
+          "start": 10.2,
+          "end": 10.38,
+          "word": "子",
+          "probability": 0.9994704127311707
+        },
+        {
+          "start": 10.38,
+          "end": 10.54,
+          "word": "比",
+          "probability": 0.9836122393608093
+        },
+        {
+          "start": 10.54,
+          "end": 10.8,
+          "word": "短",
+          "probability": 0.9996748864650726
+        },
+        {
+          "start": 10.8,
+          "end": 11.0,
+          "word": "褲",
+          "probability": 0.9996845523516337
+        },
+        {
+          "start": 11.0,
+          "end": 11.22,
+          "word": "貴",
+          "probability": 0.992131382226944
+        },
+        {
+          "start": 11.22,
+          "end": 11.58,
+          "word": "一點。",
+          "probability": 0.9644918441772461
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 12.34,
+      "end": 13.1,
+      "text": "貴多少?",
+      "tokens": [
+        50960,
+        11561,
+        112,
+        41492,
+        30,
+        51045
+      ],
+      "avg_logprob": -0.22920337943143623,
+      "compression_ratio": 1.4505494505494505,
+      "no_speech_prob": 0.1157480850815773,
+      "words": [
+        {
+          "start": 12.34,
+          "end": 12.78,
+          "word": "貴",
+          "probability": 0.9574198722839355
+        },
+        {
+          "start": 12.78,
+          "end": 13.1,
+          "word": "多少?",
+          "probability": 0.994671642780304
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 14.2,
+      "end": 16.66,
+      "text": "裙子四百八,短褲四百。",
+      "tokens": [
+        51045,
+        8083,
+        247,
+        7626,
+        19425,
+        31906,
+        33453,
+        11,
+        5881,
+        255,
+        164,
+        97,
+        110,
+        19425,
+        31906,
+        1543,
+        51218
+      ],
+      "avg_logprob": -0.22920337943143623,
+      "compression_ratio": 1.4505494505494505,
+      "no_speech_prob": 0.1157480850815773,
+      "words": [
+        {
+          "start": 14.2,
+          "end": 14.52,
+          "word": "裙",
+          "probability": 0.9982698559761047
+        },
+        {
+          "start": 14.52,
+          "end": 14.7,
+          "word": "子",
+          "probability": 0.9993938207626343
+        },
+        {
+          "start": 14.7,
+          "end": 14.9,
+          "word": "四",
+          "probability": 0.7738571166992188
+        },
+        {
+          "start": 14.9,
+          "end": 15.06,
+          "word": "百",
+          "probability": 0.9953176975250244
+        },
+        {
+          "start": 15.06,
+          "end": 15.28,
+          "word": "八,",
+          "probability": 0.9791298508644104
+        },
+        {
+          "start": 15.68,
+          "end": 15.92,
+          "word": "短",
+          "probability": 0.9973683059215546
+        },
+        {
+          "start": 15.92,
+          "end": 16.14,
+          "word": "褲",
+          "probability": 0.9996073047320048
+        },
+        {
+          "start": 16.14,
+          "end": 16.38,
+          "word": "四",
+          "probability": 0.9938737154006958
+        },
+        {
+          "start": 16.38,
+          "end": 16.66,
+          "word": "百。",
+          "probability": 0.9997746348381042
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 17.8,
+      "end": 19.92,
+      "text": "裙子不比短褲貴多少?",
+      "tokens": [
+        51218,
+        8083,
+        247,
+        7626,
+        1960,
+        11706,
+        5881,
+        255,
+        164,
+        97,
+        110,
+        11561,
+        112,
+        41492,
+        30,
+        51377
+      ],
+      "avg_logprob": -0.22920337943143623,
+      "compression_ratio": 1.4505494505494505,
+      "no_speech_prob": 0.1157480850815773,
+      "words": [
+        {
+          "start": 17.8,
+          "end": 18.26,
+          "word": "裙",
+          "probability": 0.9984832108020782
+        },
+        {
+          "start": 18.26,
+          "end": 18.46,
+          "word": "子",
+          "probability": 0.9998599290847778
+        },
+        {
+          "start": 18.46,
+          "end": 18.74,
+          "word": "不",
+          "probability": 0.9899161458015442
+        },
+        {
+          "start": 18.74,
+          "end": 18.9,
+          "word": "比",
+          "probability": 0.9870457649230957
+        },
+        {
+          "start": 18.9,
+          "end": 19.12,
+          "word": "短",
+          "probability": 0.9997372031211853
+        },
+        {
+          "start": 19.12,
+          "end": 19.36,
+          "word": "褲",
+          "probability": 0.9995854496955872
+        },
+        {
+          "start": 19.36,
+          "end": 19.54,
+          "word": "貴",
+          "probability": 0.996793270111084
+        },
+        {
+          "start": 19.54,
+          "end": 19.92,
+          "word": "多少?",
+          "probability": 0.9984809756278992
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 20.42,
+      "end": 23.66,
+      "text": "還是買裙子吧,你穿裙子更好看。",
+      "tokens": [
+        51377,
+        25583,
+        31001,
+        8083,
+        247,
+        7626,
+        6062,
+        11,
+        2166,
+        13740,
+        123,
+        8083,
+        247,
+        7626,
+        19002,
+        2131,
+        4200,
+        1543,
+        51564
+      ],
+      "avg_logprob": -0.22920337943143623,
+      "compression_ratio": 1.4505494505494505,
+      "no_speech_prob": 0.1157480850815773,
+      "words": [
+        {
+          "start": 20.42,
+          "end": 20.64,
+          "word": "還是",
+          "probability": 0.9654820561408997
+        },
+        {
+          "start": 20.64,
+          "end": 20.86,
+          "word": "買",
+          "probability": 0.9920903444290161
+        },
+        {
+          "start": 20.86,
+          "end": 21.12,
+          "word": "裙",
+          "probability": 0.9993695020675659
+        },
+        {
+          "start": 21.12,
+          "end": 21.32,
+          "word": "子",
+          "probability": 0.9995502829551697
+        },
+        {
+          "start": 21.32,
+          "end": 21.48,
+          "word": "吧,",
+          "probability": 0.9905295968055725
+        },
+        {
+          "start": 22.0,
+          "end": 22.16,
+          "word": "你",
+          "probability": 0.9447125196456909
+        },
+        {
+          "start": 22.16,
+          "end": 22.36,
+          "word": "穿",
+          "probability": 0.9987359046936035
+        },
+        {
+          "start": 22.36,
+          "end": 22.68,
+          "word": "裙",
+          "probability": 0.9993428289890289
+        },
+        {
+          "start": 22.68,
+          "end": 22.92,
+          "word": "子",
+          "probability": 0.9995890259742737
+        },
+        {
+          "start": 22.92,
+          "end": 23.2,
+          "word": "更",
+          "probability": 0.8278596997261047
+        },
+        {
+          "start": 23.2,
+          "end": 23.46,
+          "word": "好",
+          "probability": 0.9964950680732727
+        },
+        {
+          "start": 23.46,
+          "end": 23.66,
+          "word": "看。",
+          "probability": 0.9997683167457581
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 24.94,
+      "end": 26.56,
+      "text": "我多看看再決定。",
+      "tokens": [
+        51564,
+        1654,
+        6392,
+        22884,
+        8623,
+        33540,
+        12088,
+        1543,
+        51714
+      ],
+      "avg_logprob": -0.22920337943143623,
+      "compression_ratio": 1.4505494505494505,
+      "no_speech_prob": 0.1157480850815773,
+      "words": [
+        {
+          "start": 24.94,
+          "end": 25.42,
+          "word": "我",
+          "probability": 0.9958896040916443
+        },
+        {
+          "start": 25.42,
+          "end": 25.6,
+          "word": "多",
+          "probability": 0.9971670508384705
+        },
+        {
+          "start": 25.6,
+          "end": 25.86,
+          "word": "看看",
+          "probability": 0.9793724417686462
+        },
+        {
+          "start": 25.86,
+          "end": 26.18,
+          "word": "再",
+          "probability": 0.9274649620056152
+        },
+        {
+          "start": 26.18,
+          "end": 26.38,
+          "word": "決",
+          "probability": 0.9901830554008484
+        },
+        {
+          "start": 26.38,
+          "end": 26.56,
+          "word": "定。",
+          "probability": 0.9998633861541748
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 2656,
+      "start": 27.259999999999998,
+      "end": 29.58,
+      "text": "你看,那邊有買二送一",
+      "tokens": [
+        50364,
+        16529,
+        11,
+        4184,
+        14901,
+        2412,
+        31001,
+        11217,
+        29309,
+        2257,
+        50524
+      ],
+      "avg_logprob": -0.4165402203798294,
+      "compression_ratio": 0.717948717948718,
+      "no_speech_prob": 0.33929890394210815,
+      "words": [
+        {
+          "start": 27.259999999999998,
+          "end": 27.66,
+          "word": "你看,",
+          "probability": 0.8833088278770447
+        },
+        {
+          "start": 28.2,
+          "end": 28.36,
+          "word": "那",
+          "probability": 0.9855855107307434
+        },
+        {
+          "start": 28.36,
+          "end": 28.54,
+          "word": "邊",
+          "probability": 0.9761204123497009
+        },
+        {
+          "start": 28.54,
+          "end": 28.7,
+          "word": "有",
+          "probability": 0.9777054190635681
+        },
+        {
+          "start": 28.7,
+          "end": 28.92,
+          "word": "買",
+          "probability": 0.8870816826820374
+        },
+        {
+          "start": 28.92,
+          "end": 29.1,
+          "word": "二",
+          "probability": 0.9545162916183472
+        },
+        {
+          "start": 29.1,
+          "end": 29.3,
+          "word": "送",
+          "probability": 0.9833453893661499
+        },
+        {
+          "start": 29.3,
+          "end": 29.58,
+          "word": "一",
+          "probability": 0.9925771355628967
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 5.048670381000022,
+  "realTimeFactor": 0.16547049854151036,
+  "observationChecks": {
+    "rawWordCount": 81,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

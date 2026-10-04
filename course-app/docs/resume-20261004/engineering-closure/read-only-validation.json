@@ -1,0 +1,62 @@
+{
+  "reviewer": "release_assembly",
+  "checkedAtUTC": "2026-10-04T18:20:24.947964+00:00",
+  "status": "passed-document-and-current-ci-delta-integrity",
+  "checks": [
+    "nine authorized A rows and16 old-plan mappings retained",
+    "all80 evidence refs exist and exact SHA match",
+    "1446 baseline partition reconciles",
+    "860 exact core actual scope reconciles",
+    "236 supplemental native counts marked planned-not-passed",
+    "formal gate remains absent",
+    "accepted packager/assembler SHA unchanged",
+    "current delta workflow SHA unchanged",
+    "actual70/8/4 collection logs match",
+    "new font/partial typechecking exit0"
+  ],
+  "evidenceFiles": [
+    {
+      "path": "course-app/docs/resume-20261004/engineering-closure/README.md",
+      "bytes": 5015,
+      "sha256": "57b118723dacf98c4812babd372b6112dfe07d3e2fbf18da163aa0918d560eb8"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/engineering-closure/actual-gates.json",
+      "bytes": 75758,
+      "sha256": "6a64d22f8f633700167b7e3c966a93d032cf39e8131f2f5c385875c26ca82b89"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/engineering-closure/ci-delta-review.json",
+      "bytes": 7825,
+      "sha256": "d8051a49b16332c41c38e458ce531b9a56c1c42b0863f39bc470752653530717"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/engineering-closure/new-fixture-typecheck.log",
+      "bytes": 116,
+      "sha256": "52146c037ebdf5148590d455289c0352b74ab47cfa2c7ff3cd1ae492667f98ef"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/engineering-closure/partial-fixture-typecheck.log",
+      "bytes": 101,
+      "sha256": "8c81ca0c957dde9be261d640ed65656c0d369aaec3375fc31a1a6f3410dccdac"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/engineering-closure/partial-sentence-collection.log",
+      "bytes": 1256,
+      "sha256": "afe2b09815e599a78b6d48a0458edf9247b6867121959ffa315d58d526a079db"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/engineering-closure/retained35-collection.log",
+      "bytes": 12966,
+      "sha256": "e8f022515b30496a566b6f5a8e8cfc842d00aae17f223d9477ae8152337bac91"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/engineering-closure/source-font-collection.log",
+      "bytes": 798,
+      "sha256": "55388f7b6071508ae49c822db43ad8e345498d1d7c082a455cd90455132cb12b"
+    }
+  ],
+  "runtimeModificationByThisReview": false,
+  "formalGateWritten": false,
+  "productionChanged": false
+}

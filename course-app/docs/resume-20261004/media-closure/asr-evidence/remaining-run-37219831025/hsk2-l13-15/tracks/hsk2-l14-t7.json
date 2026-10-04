@@ -1,0 +1,692 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l14:audio7",
+    "level": 2,
+    "lesson": 14,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk2/audio/14-7.mp3",
+    "sha256": "f1d0296a3bf2783d07bf82239e1d1759937de802f66b20407517e237a69314af",
+    "bytes": 677980,
+    "manifestDurationSeconds": 26.429333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 422784,
+      "durationSeconds": 26.424,
+      "sha256": "12a9d962e45846fba1110abde63f5929fd3197e37097d011c412f427fab4f532"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 26.424,
+    "duration_after_vad": 26.424,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 1.0000000000000013,
+      "end": 4.44,
+      "text": "我男朋友姓杨,叫杨同乐。",
+      "tokens": [
+        50364,
+        1654,
+        25243,
+        19828,
+        7795,
+        241,
+        4422,
+        101,
+        11,
+        19855,
+        4422,
+        101,
+        13089,
+        44365,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.11970399628425467,
+      "compression_ratio": 1.2116402116402116,
+      "no_speech_prob": 0.01847545988857746,
+      "words": [
+        {
+          "start": 1.0000000000000013,
+          "end": 1.56,
+          "word": "我",
+          "probability": 0.9097245335578918
+        },
+        {
+          "start": 1.56,
+          "end": 1.78,
+          "word": "男",
+          "probability": 0.9911173582077026
+        },
+        {
+          "start": 1.78,
+          "end": 2.2,
+          "word": "朋友",
+          "probability": 0.9982080459594727
+        },
+        {
+          "start": 2.2,
+          "end": 2.48,
+          "word": "姓",
+          "probability": 0.9970353543758392
+        },
+        {
+          "start": 2.48,
+          "end": 2.84,
+          "word": "杨,",
+          "probability": 0.7983189225196838
+        },
+        {
+          "start": 3.26,
+          "end": 3.54,
+          "word": "叫",
+          "probability": 0.8793286681175232
+        },
+        {
+          "start": 3.54,
+          "end": 3.86,
+          "word": "杨",
+          "probability": 0.936587005853653
+        },
+        {
+          "start": 3.86,
+          "end": 4.14,
+          "word": "同",
+          "probability": 0.515906572341919
+        },
+        {
+          "start": 4.14,
+          "end": 4.44,
+          "word": "乐。",
+          "probability": 0.8650317192077637
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.4,
+      "end": 11.78,
+      "text": "他高个子,大眼睛,唱歌唱得很好,跳舞跳得也不错。",
+      "tokens": [
+        50614,
+        5000,
+        12979,
+        7549,
+        7626,
+        11,
+        3582,
+        25281,
+        14221,
+        249,
+        11,
+        39861,
+        29582,
+        39861,
+        5916,
+        23801,
+        11,
+        29366,
+        32721,
+        29366,
+        5916,
+        6404,
+        1960,
+        29900,
+        1543,
+        50964
+      ],
+      "avg_logprob": -0.11970399628425467,
+      "compression_ratio": 1.2116402116402116,
+      "no_speech_prob": 0.01847545988857746,
+      "words": [
+        {
+          "start": 5.4,
+          "end": 5.64,
+          "word": "他",
+          "probability": 0.8645377159118652
+        },
+        {
+          "start": 5.64,
+          "end": 5.92,
+          "word": "高",
+          "probability": 0.9925218224525452
+        },
+        {
+          "start": 5.92,
+          "end": 6.16,
+          "word": "个",
+          "probability": 0.9119472503662109
+        },
+        {
+          "start": 6.16,
+          "end": 6.4,
+          "word": "子,",
+          "probability": 0.993926465511322
+        },
+        {
+          "start": 6.76,
+          "end": 6.92,
+          "word": "大",
+          "probability": 0.987065851688385
+        },
+        {
+          "start": 6.92,
+          "end": 7.22,
+          "word": "眼",
+          "probability": 0.9898056983947754
+        },
+        {
+          "start": 7.22,
+          "end": 7.46,
+          "word": "睛,",
+          "probability": 0.9980898499488831
+        },
+        {
+          "start": 8.16,
+          "end": 8.36,
+          "word": "唱",
+          "probability": 0.996238112449646
+        },
+        {
+          "start": 8.36,
+          "end": 8.64,
+          "word": "歌",
+          "probability": 0.998331606388092
+        },
+        {
+          "start": 8.64,
+          "end": 8.92,
+          "word": "唱",
+          "probability": 0.9790163040161133
+        },
+        {
+          "start": 8.92,
+          "end": 9.08,
+          "word": "得",
+          "probability": 0.8060506582260132
+        },
+        {
+          "start": 9.08,
+          "end": 9.52,
+          "word": "很好,",
+          "probability": 0.985170304775238
+        },
+        {
+          "start": 10.22,
+          "end": 10.42,
+          "word": "跳",
+          "probability": 0.9910208582878113
+        },
+        {
+          "start": 10.42,
+          "end": 10.68,
+          "word": "舞",
+          "probability": 0.9988356232643127
+        },
+        {
+          "start": 10.68,
+          "end": 10.96,
+          "word": "跳",
+          "probability": 0.9960638880729675
+        },
+        {
+          "start": 10.96,
+          "end": 11.14,
+          "word": "得",
+          "probability": 0.7428827881813049
+        },
+        {
+          "start": 11.14,
+          "end": 11.32,
+          "word": "也",
+          "probability": 0.997422456741333
+        },
+        {
+          "start": 11.32,
+          "end": 11.56,
+          "word": "不",
+          "probability": 0.982944905757904
+        },
+        {
+          "start": 11.56,
+          "end": 11.78,
+          "word": "错。",
+          "probability": 0.9998031258583069
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 12.98,
+      "end": 17.44,
+      "text": "他和我姐姐一起工作,是姐姐介绍我们认识的。",
+      "tokens": [
+        50964,
+        5000,
+        12565,
+        1654,
+        18102,
+        18102,
+        29567,
+        41315,
+        11,
+        1541,
+        18102,
+        18102,
+        30312,
+        10115,
+        235,
+        15003,
+        7422,
+        97,
+        5233,
+        228,
+        1546,
+        1543,
+        51264
+      ],
+      "avg_logprob": -0.11970399628425467,
+      "compression_ratio": 1.2116402116402116,
+      "no_speech_prob": 0.01847545988857746,
+      "words": [
+        {
+          "start": 12.98,
+          "end": 13.26,
+          "word": "他",
+          "probability": 0.9759328365325928
+        },
+        {
+          "start": 13.26,
+          "end": 13.42,
+          "word": "和",
+          "probability": 0.986957311630249
+        },
+        {
+          "start": 13.42,
+          "end": 13.56,
+          "word": "我",
+          "probability": 0.9944248199462891
+        },
+        {
+          "start": 13.56,
+          "end": 13.8,
+          "word": "姐",
+          "probability": 0.9793127775192261
+        },
+        {
+          "start": 13.8,
+          "end": 14.0,
+          "word": "姐",
+          "probability": 0.9965761303901672
+        },
+        {
+          "start": 14.0,
+          "end": 14.28,
+          "word": "一起",
+          "probability": 0.9956983327865601
+        },
+        {
+          "start": 14.28,
+          "end": 14.74,
+          "word": "工作,",
+          "probability": 0.9985889792442322
+        },
+        {
+          "start": 15.44,
+          "end": 15.7,
+          "word": "是",
+          "probability": 0.9932621121406555
+        },
+        {
+          "start": 15.7,
+          "end": 15.94,
+          "word": "姐",
+          "probability": 0.9964393973350525
+        },
+        {
+          "start": 15.94,
+          "end": 16.22,
+          "word": "姐",
+          "probability": 0.9975318908691406
+        },
+        {
+          "start": 16.22,
+          "end": 16.42,
+          "word": "介",
+          "probability": 0.9997909665107727
+        },
+        {
+          "start": 16.42,
+          "end": 16.58,
+          "word": "绍",
+          "probability": 0.9552984833717346
+        },
+        {
+          "start": 16.58,
+          "end": 16.82,
+          "word": "我们",
+          "probability": 0.9762330055236816
+        },
+        {
+          "start": 16.82,
+          "end": 17.06,
+          "word": "认",
+          "probability": 0.9970996081829071
+        },
+        {
+          "start": 17.06,
+          "end": 17.26,
+          "word": "识",
+          "probability": 0.994939923286438
+        },
+        {
+          "start": 17.26,
+          "end": 17.44,
+          "word": "的。",
+          "probability": 0.9991843104362488
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 18.78,
+      "end": 24.68,
+      "text": "他告诉我,从见到我的第一天开始,他就喜欢上我了。",
+      "tokens": [
+        51264,
+        5000,
+        44816,
+        1654,
+        11,
+        35630,
+        23813,
+        4511,
+        14200,
+        18049,
+        6135,
+        45213,
+        11,
+        5000,
+        3111,
+        41606,
+        5708,
+        1654,
+        2289,
+        1543,
+        51664
+      ],
+      "avg_logprob": -0.11970399628425467,
+      "compression_ratio": 1.2116402116402116,
+      "no_speech_prob": 0.01847545988857746,
+      "words": [
+        {
+          "start": 18.78,
+          "end": 19.22,
+          "word": "他",
+          "probability": 0.8091563582420349
+        },
+        {
+          "start": 19.22,
+          "end": 19.5,
+          "word": "告诉",
+          "probability": 0.9960261583328247
+        },
+        {
+          "start": 19.5,
+          "end": 19.84,
+          "word": "我,",
+          "probability": 0.9972129464149475
+        },
+        {
+          "start": 20.56,
+          "end": 20.82,
+          "word": "从",
+          "probability": 0.9791074395179749
+        },
+        {
+          "start": 20.82,
+          "end": 21.08,
+          "word": "见",
+          "probability": 0.9866449236869812
+        },
+        {
+          "start": 21.08,
+          "end": 21.26,
+          "word": "到",
+          "probability": 0.9955472946166992
+        },
+        {
+          "start": 21.26,
+          "end": 21.52,
+          "word": "我的",
+          "probability": 0.9907307028770447
+        },
+        {
+          "start": 21.52,
+          "end": 21.86,
+          "word": "第一",
+          "probability": 0.980256974697113
+        },
+        {
+          "start": 21.86,
+          "end": 22.16,
+          "word": "天",
+          "probability": 0.999575674533844
+        },
+        {
+          "start": 22.16,
+          "end": 22.64,
+          "word": "开始,",
+          "probability": 0.9857402443885803
+        },
+        {
+          "start": 23.14,
+          "end": 23.28,
+          "word": "他",
+          "probability": 0.9726062417030334
+        },
+        {
+          "start": 23.28,
+          "end": 23.48,
+          "word": "就",
+          "probability": 0.9972168207168579
+        },
+        {
+          "start": 23.48,
+          "end": 23.98,
+          "word": "喜欢",
+          "probability": 0.9955505132675171
+        },
+        {
+          "start": 23.98,
+          "end": 24.26,
+          "word": "上",
+          "probability": 0.9971328973770142
+        },
+        {
+          "start": 24.26,
+          "end": 24.5,
+          "word": "我",
+          "probability": 0.9962588548660278
+        },
+        {
+          "start": 24.5,
+          "end": 24.68,
+          "word": "了。",
+          "probability": 0.9880747199058533
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.822868529999994,
+  "realTimeFactor": 0.10682972033000279,
+  "observationChecks": {
+    "rawWordCount": 60,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

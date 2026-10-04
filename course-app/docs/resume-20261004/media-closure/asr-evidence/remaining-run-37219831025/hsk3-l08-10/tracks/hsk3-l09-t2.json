@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l09:audio2",
+    "level": 3,
+    "lesson": 9,
+    "track": 2,
+    "kind": "vocab",
+    "text": 1,
+    "file": "course-assets/hsk3/audio/9-2.mp3",
+    "sha256": "26ed58211d0244d8fea3ee619522b5c177e121330b5276eecdeea639a96a07a0",
+    "bytes": 498599,
+    "manifestDurationSeconds": 28.624625,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 458919,
+      "durationSeconds": 28.6824375,
+      "sha256": "c68ad9aba40494d52e456a7f647f959a191046874c583af1ce10c95396cf66de"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 28.6824375,
+    "duration_after_vad": 28.6824375,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 26.88,
+      "text": "校园 卡 球场 为了 运动会 男生 练 参加 网球 比赛 练习",
+      "tokens": [
+        50364,
+        49684,
+        3919,
+        255,
+        220,
+        32681,
+        220,
+        28533,
+        50255,
+        220,
+        13992,
+        2289,
+        220,
+        3316,
+        238,
+        34961,
+        12949,
+        220,
+        25243,
+        8244,
+        220,
+        10115,
+        225,
+        220,
+        2129,
+        224,
+        9990,
+        220,
+        16469,
+        239,
+        28533,
+        220,
+        11706,
+        5266,
+        249,
+        220,
+        10115,
+        225,
+        2930,
+        254,
+        51792
+      ],
+      "avg_logprob": -0.2345698724190394,
+      "compression_ratio": 0.8690476190476191,
+      "no_speech_prob": 0.5784388780593872,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.86,
+          "word": "校",
+          "probability": 0.9859281778335571
+        },
+        {
+          "start": 0.86,
+          "end": 2.78,
+          "word": "园",
+          "probability": 0.7065946757793427
+        },
+        {
+          "start": 3.34,
+          "end": 3.82,
+          "word": " 卡",
+          "probability": 0.9352432489395142
+        },
+        {
+          "start": 5.54,
+          "end": 5.82,
+          "word": " 球",
+          "probability": 0.8771910667419434
+        },
+        {
+          "start": 5.82,
+          "end": 7.9,
+          "word": "场",
+          "probability": 0.9624362587928772
+        },
+        {
+          "start": 8.78,
+          "end": 8.8,
+          "word": " 为",
+          "probability": 0.6435657739639282
+        },
+        {
+          "start": 8.8,
+          "end": 10.48,
+          "word": "了",
+          "probability": 0.9949991703033447
+        },
+        {
+          "start": 11.18,
+          "end": 11.34,
+          "word": " 运",
+          "probability": 0.9907748997211456
+        },
+        {
+          "start": 11.34,
+          "end": 11.62,
+          "word": "动",
+          "probability": 0.9961821436882019
+        },
+        {
+          "start": 11.62,
+          "end": 13.48,
+          "word": "会",
+          "probability": 0.9887601137161255
+        },
+        {
+          "start": 14.08,
+          "end": 14.28,
+          "word": " 男",
+          "probability": 0.9679691195487976
+        },
+        {
+          "start": 14.28,
+          "end": 16.06,
+          "word": "生",
+          "probability": 0.946354329586029
+        },
+        {
+          "start": 16.62,
+          "end": 17.52,
+          "word": " 练",
+          "probability": 0.8827679753303528
+        },
+        {
+          "start": 18.52,
+          "end": 18.8,
+          "word": " 参",
+          "probability": 0.9882494807243347
+        },
+        {
+          "start": 18.8,
+          "end": 19.62,
+          "word": "加",
+          "probability": 0.9971789121627808
+        },
+        {
+          "start": 21.16,
+          "end": 21.3,
+          "word": " 网",
+          "probability": 0.8784441649913788
+        },
+        {
+          "start": 21.3,
+          "end": 23.2,
+          "word": "球",
+          "probability": 0.997752845287323
+        },
+        {
+          "start": 23.58,
+          "end": 23.82,
+          "word": " 比",
+          "probability": 0.9311428070068359
+        },
+        {
+          "start": 23.82,
+          "end": 25.58,
+          "word": "赛",
+          "probability": 0.999507337808609
+        },
+        {
+          "start": 26.0,
+          "end": 26.36,
+          "word": " 练",
+          "probability": 0.9921840727329254
+        },
+        {
+          "start": 26.36,
+          "end": 26.88,
+          "word": "习",
+          "probability": 0.9993804097175598
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.034408997000014,
+  "realTimeFactor": 0.10579327496137712,
+  "observationChecks": {
+    "rawWordCount": 21,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

@@ -1,0 +1,990 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l05:audio3",
+    "level": 3,
+    "lesson": 5,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk3/audio/5-3.mp3",
+    "sha256": "cab8d3dba02fab9222d41fbc35c9107d9559795e000f0ebb34076c4a81828fe0",
+    "bytes": 664982,
+    "manifestDurationSeconds": 39.023567,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 625685,
+      "durationSeconds": 39.1053125,
+      "sha256": "5fc0edad1f25a62bf92239fd162f7ca937afe9d763571a150d4d44603efdac90"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 39.1053125,
+    "duration_after_vad": 39.1053125,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 5.14,
+      "text": "這些照片是誰給您照的? 張張都非常好看",
+      "tokens": [
+        50364,
+        29869,
+        32150,
+        16668,
+        1541,
+        20757,
+        17798,
+        23414,
+        32150,
+        1546,
+        30,
+        220,
+        18889,
+        18889,
+        7182,
+        14392,
+        2131,
+        4200,
+        50664
+      ],
+      "avg_logprob": -0.17444127190269923,
+      "compression_ratio": 1.1881720430107527,
+      "no_speech_prob": 0.014992615208029747,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 1.02,
+          "word": "這些",
+          "probability": 0.20506291091442108
+        },
+        {
+          "start": 1.02,
+          "end": 1.3,
+          "word": "照",
+          "probability": 0.9921687245368958
+        },
+        {
+          "start": 1.3,
+          "end": 1.56,
+          "word": "片",
+          "probability": 0.9994691014289856
+        },
+        {
+          "start": 1.56,
+          "end": 1.88,
+          "word": "是",
+          "probability": 0.9532248973846436
+        },
+        {
+          "start": 1.88,
+          "end": 2.14,
+          "word": "誰",
+          "probability": 0.9965009689331055
+        },
+        {
+          "start": 2.14,
+          "end": 2.36,
+          "word": "給",
+          "probability": 0.9830307364463806
+        },
+        {
+          "start": 2.36,
+          "end": 2.54,
+          "word": "您",
+          "probability": 0.9390896558761597
+        },
+        {
+          "start": 2.54,
+          "end": 2.78,
+          "word": "照",
+          "probability": 0.9819554686546326
+        },
+        {
+          "start": 2.78,
+          "end": 3.12,
+          "word": "的?",
+          "probability": 0.9875826239585876
+        },
+        {
+          "start": 3.58,
+          "end": 3.72,
+          "word": " 張",
+          "probability": 0.745822012424469
+        },
+        {
+          "start": 3.72,
+          "end": 3.98,
+          "word": "張",
+          "probability": 0.8062017560005188
+        },
+        {
+          "start": 3.98,
+          "end": 4.2,
+          "word": "都",
+          "probability": 0.9781556129455566
+        },
+        {
+          "start": 4.2,
+          "end": 4.56,
+          "word": "非常",
+          "probability": 0.9692212343215942
+        },
+        {
+          "start": 4.56,
+          "end": 4.92,
+          "word": "好",
+          "probability": 0.9907763600349426
+        },
+        {
+          "start": 4.92,
+          "end": 5.14,
+          "word": "看",
+          "probability": 0.9993367791175842
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 6.54,
+      "end": 7.24,
+      "text": "伊菲",
+      "tokens": [
+        50664,
+        48141,
+        16616,
+        110,
+        50764
+      ],
+      "avg_logprob": -0.17444127190269923,
+      "compression_ratio": 1.1881720430107527,
+      "no_speech_prob": 0.014992615208029747,
+      "words": [
+        {
+          "start": 6.54,
+          "end": 7.06,
+          "word": "伊",
+          "probability": 0.08283094316720963
+        },
+        {
+          "start": 7.06,
+          "end": 7.24,
+          "word": "菲",
+          "probability": 0.806063324213028
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 8.120000000000001,
+      "end": 12.4,
+      "text": "她對拍照一直很感興趣 經常給我照相",
+      "tokens": [
+        50764,
+        15555,
+        2855,
+        31113,
+        32150,
+        34448,
+        4563,
+        9709,
+        44089,
+        39835,
+        220,
+        15145,
+        11279,
+        17798,
+        1654,
+        32150,
+        15106,
+        51014
+      ],
+      "avg_logprob": -0.17444127190269923,
+      "compression_ratio": 1.1881720430107527,
+      "no_speech_prob": 0.014992615208029747,
+      "words": [
+        {
+          "start": 8.120000000000001,
+          "end": 8.64,
+          "word": "她",
+          "probability": 0.22090473771095276
+        },
+        {
+          "start": 8.64,
+          "end": 8.8,
+          "word": "對",
+          "probability": 0.9938380122184753
+        },
+        {
+          "start": 8.8,
+          "end": 9.0,
+          "word": "拍",
+          "probability": 0.9973800778388977
+        },
+        {
+          "start": 9.0,
+          "end": 9.22,
+          "word": "照",
+          "probability": 0.9996246099472046
+        },
+        {
+          "start": 9.22,
+          "end": 9.56,
+          "word": "一直",
+          "probability": 0.9333604574203491
+        },
+        {
+          "start": 9.56,
+          "end": 9.86,
+          "word": "很",
+          "probability": 0.973006010055542
+        },
+        {
+          "start": 9.86,
+          "end": 10.04,
+          "word": "感",
+          "probability": 0.996494472026825
+        },
+        {
+          "start": 10.04,
+          "end": 10.24,
+          "word": "興",
+          "probability": 0.9934396147727966
+        },
+        {
+          "start": 10.24,
+          "end": 10.52,
+          "word": "趣",
+          "probability": 0.996025562286377
+        },
+        {
+          "start": 11.06,
+          "end": 11.2,
+          "word": " 經",
+          "probability": 0.9918982982635498
+        },
+        {
+          "start": 11.2,
+          "end": 11.44,
+          "word": "常",
+          "probability": 0.9999130964279175
+        },
+        {
+          "start": 11.44,
+          "end": 11.62,
+          "word": "給",
+          "probability": 0.9987455606460571
+        },
+        {
+          "start": 11.62,
+          "end": 11.78,
+          "word": "我",
+          "probability": 0.9975675344467163
+        },
+        {
+          "start": 11.78,
+          "end": 11.96,
+          "word": "照",
+          "probability": 0.9970718622207642
+        },
+        {
+          "start": 11.96,
+          "end": 12.4,
+          "word": "相",
+          "probability": 0.9193131923675537
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 13.540000000000001,
+      "end": 17.5,
+      "text": "我喜歡您大笑的這張 看起來很漂亮",
+      "tokens": [
+        51014,
+        1654,
+        21385,
+        23414,
+        3582,
+        11600,
+        1546,
+        2664,
+        18889,
+        220,
+        4200,
+        21670,
+        4563,
+        29019,
+        51264
+      ],
+      "avg_logprob": -0.17444127190269923,
+      "compression_ratio": 1.1881720430107527,
+      "no_speech_prob": 0.014992615208029747,
+      "words": [
+        {
+          "start": 13.540000000000001,
+          "end": 14.06,
+          "word": "我",
+          "probability": 0.7462269067764282
+        },
+        {
+          "start": 14.06,
+          "end": 14.32,
+          "word": "喜歡",
+          "probability": 0.9911038875579834
+        },
+        {
+          "start": 14.32,
+          "end": 14.54,
+          "word": "您",
+          "probability": 0.9893832802772522
+        },
+        {
+          "start": 14.54,
+          "end": 14.78,
+          "word": "大",
+          "probability": 0.9926565289497375
+        },
+        {
+          "start": 14.78,
+          "end": 14.96,
+          "word": "笑",
+          "probability": 0.9466570019721985
+        },
+        {
+          "start": 14.96,
+          "end": 15.12,
+          "word": "的",
+          "probability": 0.9909895062446594
+        },
+        {
+          "start": 15.12,
+          "end": 15.3,
+          "word": "這",
+          "probability": 0.9743093848228455
+        },
+        {
+          "start": 15.3,
+          "end": 15.54,
+          "word": "張",
+          "probability": 0.9880375862121582
+        },
+        {
+          "start": 16.1,
+          "end": 16.3,
+          "word": " 看",
+          "probability": 0.9990015625953674
+        },
+        {
+          "start": 16.3,
+          "end": 16.64,
+          "word": "起來",
+          "probability": 0.9691072702407837
+        },
+        {
+          "start": 16.64,
+          "end": 17.02,
+          "word": "很",
+          "probability": 0.9897594451904297
+        },
+        {
+          "start": 17.02,
+          "end": 17.5,
+          "word": "漂亮",
+          "probability": 0.9946345090866089
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 18.8,
+      "end": 24.2,
+      "text": "我覺得這張有點難看 那時候我不知道她在給我照相",
+      "tokens": [
+        51264,
+        17689,
+        2664,
+        18889,
+        42440,
+        21192,
+        4200,
+        18625,
+        14010,
+        47826,
+        15555,
+        3581,
+        17798,
+        1654,
+        32150,
+        15106,
+        51614
+      ],
+      "avg_logprob": -0.17444127190269923,
+      "compression_ratio": 1.1881720430107527,
+      "no_speech_prob": 0.014992615208029747,
+      "words": [
+        {
+          "start": 18.8,
+          "end": 19.32,
+          "word": "我覺得",
+          "probability": 0.9213298559188843
+        },
+        {
+          "start": 19.32,
+          "end": 19.74,
+          "word": "這",
+          "probability": 0.9887852668762207
+        },
+        {
+          "start": 19.74,
+          "end": 19.9,
+          "word": "張",
+          "probability": 0.995027482509613
+        },
+        {
+          "start": 19.9,
+          "end": 20.18,
+          "word": "有點",
+          "probability": 0.9772273898124695
+        },
+        {
+          "start": 20.18,
+          "end": 20.5,
+          "word": "難",
+          "probability": 0.974606990814209
+        },
+        {
+          "start": 20.5,
+          "end": 20.84,
+          "word": "看",
+          "probability": 0.9993784427642822
+        },
+        {
+          "start": 20.84,
+          "end": 21.76,
+          "word": " 那",
+          "probability": 0.5934825539588928
+        },
+        {
+          "start": 21.76,
+          "end": 22.06,
+          "word": "時候",
+          "probability": 0.9664648175239563
+        },
+        {
+          "start": 22.06,
+          "end": 22.68,
+          "word": "我不知道",
+          "probability": 0.5572311878204346
+        },
+        {
+          "start": 22.68,
+          "end": 23.18,
+          "word": "她",
+          "probability": 0.9134840369224548
+        },
+        {
+          "start": 23.18,
+          "end": 23.34,
+          "word": "在",
+          "probability": 0.9161927700042725
+        },
+        {
+          "start": 23.34,
+          "end": 23.5,
+          "word": "給",
+          "probability": 0.9984690546989441
+        },
+        {
+          "start": 23.5,
+          "end": 23.64,
+          "word": "我",
+          "probability": 0.9959730505943298
+        },
+        {
+          "start": 23.64,
+          "end": 23.82,
+          "word": "照",
+          "probability": 0.997015118598938
+        },
+        {
+          "start": 23.82,
+          "end": 24.2,
+          "word": "相",
+          "probability": 0.9633763432502747
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 2420,
+      "start": 25.48,
+      "end": 32.88,
+      "text": "这样的照片才好看。我也喜欢拍照。爬山的时候我给您照几张照片吧。",
+      "tokens": [
+        50364,
+        21209,
+        1546,
+        32150,
+        16668,
+        18888,
+        2131,
+        4200,
+        1543,
+        27761,
+        41606,
+        31113,
+        32150,
+        1543,
+        8164,
+        105,
+        24113,
+        49873,
+        1654,
+        23197,
+        23414,
+        32150,
+        6336,
+        254,
+        44059,
+        32150,
+        16668,
+        6062,
+        1543,
+        50814
+      ],
+      "avg_logprob": -0.1561703383922577,
+      "compression_ratio": 1.0724637681159421,
+      "no_speech_prob": 0.01438913494348526,
+      "words": [
+        {
+          "start": 25.48,
+          "end": 25.96,
+          "word": "这样",
+          "probability": 0.3766804337501526
+        },
+        {
+          "start": 25.96,
+          "end": 26.18,
+          "word": "的",
+          "probability": 0.9920420050621033
+        },
+        {
+          "start": 26.18,
+          "end": 26.34,
+          "word": "照",
+          "probability": 0.998384952545166
+        },
+        {
+          "start": 26.34,
+          "end": 26.68,
+          "word": "片",
+          "probability": 0.9988270401954651
+        },
+        {
+          "start": 26.68,
+          "end": 26.92,
+          "word": "才",
+          "probability": 0.9817513823509216
+        },
+        {
+          "start": 26.92,
+          "end": 27.18,
+          "word": "好",
+          "probability": 0.9731780290603638
+        },
+        {
+          "start": 27.18,
+          "end": 27.44,
+          "word": "看。",
+          "probability": 0.9994920492172241
+        },
+        {
+          "start": 28.12,
+          "end": 28.4,
+          "word": "我也",
+          "probability": 0.8829392194747925
+        },
+        {
+          "start": 28.4,
+          "end": 28.74,
+          "word": "喜欢",
+          "probability": 0.9951884746551514
+        },
+        {
+          "start": 28.74,
+          "end": 29.02,
+          "word": "拍",
+          "probability": 0.9968276619911194
+        },
+        {
+          "start": 29.02,
+          "end": 29.26,
+          "word": "照。",
+          "probability": 0.9993509650230408
+        },
+        {
+          "start": 29.96,
+          "end": 30.2,
+          "word": "爬",
+          "probability": 0.9929354786872864
+        },
+        {
+          "start": 30.2,
+          "end": 30.38,
+          "word": "山",
+          "probability": 0.9982773065567017
+        },
+        {
+          "start": 30.38,
+          "end": 30.72,
+          "word": "的时候",
+          "probability": 0.9730291366577148
+        },
+        {
+          "start": 30.72,
+          "end": 31.2,
+          "word": "我",
+          "probability": 0.46701210737228394
+        },
+        {
+          "start": 31.2,
+          "end": 31.36,
+          "word": "给",
+          "probability": 0.990529477596283
+        },
+        {
+          "start": 31.36,
+          "end": 31.56,
+          "word": "您",
+          "probability": 0.9724201560020447
+        },
+        {
+          "start": 31.56,
+          "end": 31.8,
+          "word": "照",
+          "probability": 0.9912046790122986
+        },
+        {
+          "start": 31.8,
+          "end": 32.0,
+          "word": "几",
+          "probability": 0.9967015981674194
+        },
+        {
+          "start": 32.0,
+          "end": 32.14,
+          "word": "张",
+          "probability": 0.996271014213562
+        },
+        {
+          "start": 32.14,
+          "end": 32.32,
+          "word": "照",
+          "probability": 0.9991328120231628
+        },
+        {
+          "start": 32.32,
+          "end": 32.64,
+          "word": "片",
+          "probability": 0.9990693926811218
+        },
+        {
+          "start": 32.64,
+          "end": 32.88,
+          "word": "吧。",
+          "probability": 0.9694321751594543
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2420,
+      "start": 34.28,
+      "end": 38.7,
+      "text": "好,我可以比较一下你们两个谁的水平高。",
+      "tokens": [
+        50814,
+        2131,
+        11,
+        1654,
+        6723,
+        11706,
+        9830,
+        225,
+        8861,
+        29806,
+        36257,
+        7549,
+        33556,
+        1546,
+        15590,
+        16716,
+        12979,
+        1543,
+        51114
+      ],
+      "avg_logprob": -0.1561703383922577,
+      "compression_ratio": 1.0724637681159421,
+      "no_speech_prob": 0.01438913494348526,
+      "words": [
+        {
+          "start": 34.28,
+          "end": 34.76,
+          "word": "好,",
+          "probability": 0.9101371169090271
+        },
+        {
+          "start": 35.36,
+          "end": 35.52,
+          "word": "我",
+          "probability": 0.9666413068771362
+        },
+        {
+          "start": 35.52,
+          "end": 35.76,
+          "word": "可以",
+          "probability": 0.9699992537498474
+        },
+        {
+          "start": 35.76,
+          "end": 36.0,
+          "word": "比",
+          "probability": 0.9223261475563049
+        },
+        {
+          "start": 36.0,
+          "end": 36.18,
+          "word": "较",
+          "probability": 0.9971230030059814
+        },
+        {
+          "start": 36.18,
+          "end": 36.48,
+          "word": "一下",
+          "probability": 0.9908549785614014
+        },
+        {
+          "start": 36.48,
+          "end": 36.96,
+          "word": "你们",
+          "probability": 0.8799250721931458
+        },
+        {
+          "start": 36.96,
+          "end": 37.28,
+          "word": "两",
+          "probability": 0.9918590188026428
+        },
+        {
+          "start": 37.28,
+          "end": 37.5,
+          "word": "个",
+          "probability": 0.992175281047821
+        },
+        {
+          "start": 37.5,
+          "end": 37.9,
+          "word": "谁",
+          "probability": 0.943733811378479
+        },
+        {
+          "start": 37.9,
+          "end": 38.08,
+          "word": "的",
+          "probability": 0.9962049126625061
+        },
+        {
+          "start": 38.08,
+          "end": 38.28,
+          "word": "水",
+          "probability": 0.9989728927612305
+        },
+        {
+          "start": 38.28,
+          "end": 38.48,
+          "word": "平",
+          "probability": 0.9357790350914001
+        },
+        {
+          "start": 38.48,
+          "end": 38.7,
+          "word": "高。",
+          "probability": 0.9470949172973633
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 4.762116928000012,
+  "realTimeFactor": 0.12177672606503304,
+  "observationChecks": {
+    "rawWordCount": 96,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

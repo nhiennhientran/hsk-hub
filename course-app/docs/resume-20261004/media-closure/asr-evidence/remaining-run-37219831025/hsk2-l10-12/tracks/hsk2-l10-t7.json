@@ -1,0 +1,733 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l10:audio7",
+    "level": 2,
+    "lesson": 10,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk2/audio/10-7.mp3",
+    "sha256": "02ab571fb0767040117817eb78d59bc56b4126b4052950b6aeacabd1ab8b7aa3",
+    "bytes": 676403,
+    "manifestDurationSeconds": 26.381333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 422016,
+      "durationSeconds": 26.376,
+      "sha256": "0c9b2fed2cdb60143e41849ad5989165466e27ff8a9d87fc7ede2fed8cae495d"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 26.376,
+    "duration_after_vad": 26.376,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 6.52,
+      "text": "快要开学了,爸爸帮弟弟准备书包、本子、和笔。",
+      "tokens": [
+        50364,
+        10251,
+        4275,
+        18937,
+        29618,
+        2289,
+        11,
+        49105,
+        4845,
+        106,
+        19630,
+        19630,
+        6336,
+        228,
+        1787,
+        229,
+        2930,
+        99,
+        23305,
+        1231,
+        8802,
+        7626,
+        1231,
+        12565,
+        5437,
+        242,
+        1543,
+        50714
+      ],
+      "avg_logprob": -0.1736161448453602,
+      "compression_ratio": 1.3535911602209945,
+      "no_speech_prob": 0.1258542239665985,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.78,
+          "word": "快",
+          "probability": 0.8524006605148315
+        },
+        {
+          "start": 0.78,
+          "end": 0.96,
+          "word": "要",
+          "probability": 0.9967727065086365
+        },
+        {
+          "start": 0.96,
+          "end": 1.16,
+          "word": "开",
+          "probability": 0.21923360228538513
+        },
+        {
+          "start": 1.16,
+          "end": 1.46,
+          "word": "学",
+          "probability": 0.9948046803474426
+        },
+        {
+          "start": 1.46,
+          "end": 1.72,
+          "word": "了,",
+          "probability": 0.9962600469589233
+        },
+        {
+          "start": 2.42,
+          "end": 2.82,
+          "word": "爸爸",
+          "probability": 0.9619885087013245
+        },
+        {
+          "start": 2.82,
+          "end": 3.28,
+          "word": "帮",
+          "probability": 0.9830228090286255
+        },
+        {
+          "start": 3.28,
+          "end": 3.54,
+          "word": "弟",
+          "probability": 0.9933205842971802
+        },
+        {
+          "start": 3.54,
+          "end": 3.78,
+          "word": "弟",
+          "probability": 0.9983687996864319
+        },
+        {
+          "start": 3.78,
+          "end": 4.04,
+          "word": "准",
+          "probability": 0.9884840846061707
+        },
+        {
+          "start": 4.04,
+          "end": 4.22,
+          "word": "备",
+          "probability": 0.9997538030147552
+        },
+        {
+          "start": 4.22,
+          "end": 4.48,
+          "word": "书",
+          "probability": 0.9770210683345795
+        },
+        {
+          "start": 4.48,
+          "end": 4.78,
+          "word": "包、",
+          "probability": 0.9937760829925537
+        },
+        {
+          "start": 5.24,
+          "end": 5.38,
+          "word": "本",
+          "probability": 0.9698523283004761
+        },
+        {
+          "start": 5.38,
+          "end": 5.7,
+          "word": "子、",
+          "probability": 0.9896669387817383
+        },
+        {
+          "start": 6.16,
+          "end": 6.26,
+          "word": "和",
+          "probability": 0.31711992621421814
+        },
+        {
+          "start": 6.26,
+          "end": 6.52,
+          "word": "笔。",
+          "probability": 0.9683173298835754
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 7.42,
+      "end": 12.22,
+      "text": "我就要考试了,妈妈让我看书,看做错的题。",
+      "tokens": [
+        50714,
+        22020,
+        4275,
+        26504,
+        5233,
+        243,
+        2289,
+        11,
+        32462,
+        32462,
+        33650,
+        1654,
+        4200,
+        2930,
+        99,
+        11,
+        4200,
+        10907,
+        29900,
+        1546,
+        30716,
+        1543,
+        51014
+      ],
+      "avg_logprob": -0.1736161448453602,
+      "compression_ratio": 1.3535911602209945,
+      "no_speech_prob": 0.1258542239665985,
+      "words": [
+        {
+          "start": 7.42,
+          "end": 7.9,
+          "word": "我就",
+          "probability": 0.9567184448242188
+        },
+        {
+          "start": 7.9,
+          "end": 8.1,
+          "word": "要",
+          "probability": 0.9978813529014587
+        },
+        {
+          "start": 8.1,
+          "end": 8.36,
+          "word": "考",
+          "probability": 0.9982120990753174
+        },
+        {
+          "start": 8.36,
+          "end": 8.62,
+          "word": "试",
+          "probability": 0.9960097670555115
+        },
+        {
+          "start": 8.62,
+          "end": 8.88,
+          "word": "了,",
+          "probability": 0.9962843656539917
+        },
+        {
+          "start": 9.46,
+          "end": 9.64,
+          "word": "妈",
+          "probability": 0.9673770070075989
+        },
+        {
+          "start": 9.64,
+          "end": 9.8,
+          "word": "妈",
+          "probability": 0.9963082671165466
+        },
+        {
+          "start": 9.8,
+          "end": 9.92,
+          "word": "让",
+          "probability": 0.9962040781974792
+        },
+        {
+          "start": 9.92,
+          "end": 10.1,
+          "word": "我",
+          "probability": 0.9974060654640198
+        },
+        {
+          "start": 10.1,
+          "end": 10.3,
+          "word": "看",
+          "probability": 0.9984064698219299
+        },
+        {
+          "start": 10.3,
+          "end": 10.68,
+          "word": "书,",
+          "probability": 0.999064028263092
+        },
+        {
+          "start": 11.1,
+          "end": 11.34,
+          "word": "看",
+          "probability": 0.9972898960113525
+        },
+        {
+          "start": 11.34,
+          "end": 11.56,
+          "word": "做",
+          "probability": 0.7777010202407837
+        },
+        {
+          "start": 11.56,
+          "end": 11.76,
+          "word": "错",
+          "probability": 0.9923893809318542
+        },
+        {
+          "start": 11.76,
+          "end": 11.92,
+          "word": "的",
+          "probability": 0.9743372201919556
+        },
+        {
+          "start": 11.92,
+          "end": 12.22,
+          "word": "题。",
+          "probability": 0.9955703616142273
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 13.2,
+      "end": 16.88,
+      "text": "我们上学,爸爸妈妈比我们还忙。",
+      "tokens": [
+        51014,
+        15003,
+        5708,
+        29618,
+        11,
+        49105,
+        32462,
+        32462,
+        11706,
+        15003,
+        14852,
+        48839,
+        1543,
+        51214
+      ],
+      "avg_logprob": -0.1736161448453602,
+      "compression_ratio": 1.3535911602209945,
+      "no_speech_prob": 0.1258542239665985,
+      "words": [
+        {
+          "start": 13.2,
+          "end": 13.5,
+          "word": "我们",
+          "probability": 0.9675722122192383
+        },
+        {
+          "start": 13.5,
+          "end": 13.8,
+          "word": "上",
+          "probability": 0.9985600113868713
+        },
+        {
+          "start": 13.8,
+          "end": 14.16,
+          "word": "学,",
+          "probability": 0.9985828399658203
+        },
+        {
+          "start": 14.7,
+          "end": 14.98,
+          "word": "爸爸",
+          "probability": 0.9813200235366821
+        },
+        {
+          "start": 14.98,
+          "end": 15.3,
+          "word": "妈",
+          "probability": 0.8716588616371155
+        },
+        {
+          "start": 15.3,
+          "end": 15.6,
+          "word": "妈",
+          "probability": 0.9984076619148254
+        },
+        {
+          "start": 15.6,
+          "end": 15.96,
+          "word": "比",
+          "probability": 0.9883771538734436
+        },
+        {
+          "start": 15.96,
+          "end": 16.32,
+          "word": "我们",
+          "probability": 0.9763408303260803
+        },
+        {
+          "start": 16.32,
+          "end": 16.6,
+          "word": "还",
+          "probability": 0.9913921356201172
+        },
+        {
+          "start": 16.6,
+          "end": 16.88,
+          "word": "忙。",
+          "probability": 0.9976180195808411
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 17.66,
+      "end": 22.18,
+      "text": "我问他们,是我和弟弟上学,还是你们上学?",
+      "tokens": [
+        51214,
+        1654,
+        22064,
+        47911,
+        11,
+        42614,
+        12565,
+        19630,
+        19630,
+        5708,
+        29618,
+        11,
+        45726,
+        29806,
+        5708,
+        29618,
+        30,
+        51514
+      ],
+      "avg_logprob": -0.1736161448453602,
+      "compression_ratio": 1.3535911602209945,
+      "no_speech_prob": 0.1258542239665985,
+      "words": [
+        {
+          "start": 17.66,
+          "end": 17.86,
+          "word": "我",
+          "probability": 0.992944061756134
+        },
+        {
+          "start": 17.86,
+          "end": 18.08,
+          "word": "问",
+          "probability": 0.9983736276626587
+        },
+        {
+          "start": 18.08,
+          "end": 18.42,
+          "word": "他们,",
+          "probability": 0.7704149484634399
+        },
+        {
+          "start": 19.12,
+          "end": 19.52,
+          "word": "是我",
+          "probability": 0.7960039973258972
+        },
+        {
+          "start": 19.52,
+          "end": 19.74,
+          "word": "和",
+          "probability": 0.9840217232704163
+        },
+        {
+          "start": 19.74,
+          "end": 19.94,
+          "word": "弟",
+          "probability": 0.9958479404449463
+        },
+        {
+          "start": 19.94,
+          "end": 20.1,
+          "word": "弟",
+          "probability": 0.9984675049781799
+        },
+        {
+          "start": 20.1,
+          "end": 20.3,
+          "word": "上",
+          "probability": 0.9981915354728699
+        },
+        {
+          "start": 20.3,
+          "end": 20.7,
+          "word": "学,",
+          "probability": 0.9984764456748962
+        },
+        {
+          "start": 21.0,
+          "end": 21.1,
+          "word": "还是",
+          "probability": 0.9865259528160095
+        },
+        {
+          "start": 21.1,
+          "end": 21.48,
+          "word": "你们",
+          "probability": 0.9922851324081421
+        },
+        {
+          "start": 21.48,
+          "end": 21.86,
+          "word": "上",
+          "probability": 0.9979174733161926
+        },
+        {
+          "start": 21.86,
+          "end": 22.18,
+          "word": "学?",
+          "probability": 0.9991975426673889
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 22.92,
+      "end": 25.28,
+      "text": "我问完,他们都笑了。",
+      "tokens": [
+        51514,
+        1654,
+        22064,
+        14128,
+        11,
+        47911,
+        7182,
+        11600,
+        2289,
+        1543,
+        51664
+      ],
+      "avg_logprob": -0.1736161448453602,
+      "compression_ratio": 1.3535911602209945,
+      "no_speech_prob": 0.1258542239665985,
+      "words": [
+        {
+          "start": 22.92,
+          "end": 23.26,
+          "word": "我",
+          "probability": 0.9922939538955688
+        },
+        {
+          "start": 23.26,
+          "end": 23.46,
+          "word": "问",
+          "probability": 0.9978227615356445
+        },
+        {
+          "start": 23.46,
+          "end": 23.76,
+          "word": "完,",
+          "probability": 0.9633527398109436
+        },
+        {
+          "start": 24.2,
+          "end": 24.42,
+          "word": "他们",
+          "probability": 0.9810727834701538
+        },
+        {
+          "start": 24.42,
+          "end": 24.7,
+          "word": "都",
+          "probability": 0.9960417747497559
+        },
+        {
+          "start": 24.7,
+          "end": 25.02,
+          "word": "笑",
+          "probability": 0.9914929270744324
+        },
+        {
+          "start": 25.02,
+          "end": 25.28,
+          "word": "了。",
+          "probability": 0.9975925087928772
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.010882275,
+  "realTimeFactor": 0.07623909140885654,
+  "observationChecks": {
+    "rawWordCount": 63,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

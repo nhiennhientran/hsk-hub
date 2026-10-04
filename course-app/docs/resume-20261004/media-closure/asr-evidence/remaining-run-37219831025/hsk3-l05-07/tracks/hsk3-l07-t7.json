@@ -1,0 +1,1052 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l07:audio7",
+    "level": 3,
+    "lesson": 7,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/7-7.mp3",
+    "sha256": "509f29c08a618c1e58d683332f2f971eaf20db70682105a88bb867715a2ae989",
+    "bytes": 624950,
+    "manifestDurationSeconds": 36.521567,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 585561,
+      "durationSeconds": 36.5975625,
+      "sha256": "f6d8780fc7d5616fd47040c88c29a5627e9d229bf3a48e6a0bb374b568b5b6b5"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 36.5975625,
+    "duration_after_vad": 36.5975625,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 10.76,
+      "text": "这几天,我们在新家做着看电视的时候,又发现了新问题,房子大了,电视看起来就有点小。",
+      "tokens": [
+        50364,
+        5562,
+        6336,
+        254,
+        6135,
+        11,
+        15003,
+        3581,
+        12560,
+        5155,
+        10907,
+        20708,
+        4200,
+        42182,
+        40656,
+        49873,
+        11,
+        17047,
+        28926,
+        20204,
+        2289,
+        12560,
+        34069,
+        11,
+        38242,
+        7626,
+        3582,
+        2289,
+        11,
+        42182,
+        40656,
+        4200,
+        9147,
+        6912,
+        3111,
+        2412,
+        12579,
+        7322,
+        1543,
+        50914
+      ],
+      "avg_logprob": -0.1480162215291285,
+      "compression_ratio": 1.2831050228310503,
+      "no_speech_prob": 0.1586180478334427,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.96,
+          "word": "这",
+          "probability": 0.6917117238044739
+        },
+        {
+          "start": 0.96,
+          "end": 1.14,
+          "word": "几",
+          "probability": 0.9983198344707489
+        },
+        {
+          "start": 1.14,
+          "end": 1.42,
+          "word": "天,",
+          "probability": 0.9962014555931091
+        },
+        {
+          "start": 1.86,
+          "end": 2.06,
+          "word": "我们",
+          "probability": 0.8795990943908691
+        },
+        {
+          "start": 2.06,
+          "end": 2.3,
+          "word": "在",
+          "probability": 0.9971223473548889
+        },
+        {
+          "start": 2.3,
+          "end": 2.56,
+          "word": "新",
+          "probability": 0.9789515137672424
+        },
+        {
+          "start": 2.56,
+          "end": 2.84,
+          "word": "家",
+          "probability": 0.8602926731109619
+        },
+        {
+          "start": 2.84,
+          "end": 3.1,
+          "word": "做",
+          "probability": 0.4202130138874054
+        },
+        {
+          "start": 3.1,
+          "end": 3.3,
+          "word": "着",
+          "probability": 0.952278196811676
+        },
+        {
+          "start": 3.3,
+          "end": 3.52,
+          "word": "看",
+          "probability": 0.995973527431488
+        },
+        {
+          "start": 3.52,
+          "end": 3.72,
+          "word": "电",
+          "probability": 0.9980319142341614
+        },
+        {
+          "start": 3.72,
+          "end": 3.96,
+          "word": "视",
+          "probability": 0.9967392086982727
+        },
+        {
+          "start": 3.96,
+          "end": 4.42,
+          "word": "的时候,",
+          "probability": 0.9858343005180359
+        },
+        {
+          "start": 4.8,
+          "end": 5.06,
+          "word": "又",
+          "probability": 0.9220763444900513
+        },
+        {
+          "start": 5.06,
+          "end": 5.32,
+          "word": "发",
+          "probability": 0.9980446100234985
+        },
+        {
+          "start": 5.32,
+          "end": 5.58,
+          "word": "现",
+          "probability": 0.9987666606903076
+        },
+        {
+          "start": 5.58,
+          "end": 5.8,
+          "word": "了",
+          "probability": 0.9962983727455139
+        },
+        {
+          "start": 5.8,
+          "end": 6.12,
+          "word": "新",
+          "probability": 0.9947386384010315
+        },
+        {
+          "start": 6.12,
+          "end": 6.46,
+          "word": "问题,",
+          "probability": 0.994353175163269
+        },
+        {
+          "start": 7.3,
+          "end": 7.62,
+          "word": "房",
+          "probability": 0.9943053126335144
+        },
+        {
+          "start": 7.62,
+          "end": 7.8,
+          "word": "子",
+          "probability": 0.9938899278640747
+        },
+        {
+          "start": 7.8,
+          "end": 8.02,
+          "word": "大",
+          "probability": 0.9882988929748535
+        },
+        {
+          "start": 8.02,
+          "end": 8.24,
+          "word": "了,",
+          "probability": 0.9954221844673157
+        },
+        {
+          "start": 8.6,
+          "end": 8.68,
+          "word": "电",
+          "probability": 0.9869866967201233
+        },
+        {
+          "start": 8.68,
+          "end": 8.88,
+          "word": "视",
+          "probability": 0.996980607509613
+        },
+        {
+          "start": 8.88,
+          "end": 9.14,
+          "word": "看",
+          "probability": 0.9981338381767273
+        },
+        {
+          "start": 9.14,
+          "end": 9.34,
+          "word": "起",
+          "probability": 0.99573814868927
+        },
+        {
+          "start": 9.34,
+          "end": 9.68,
+          "word": "来",
+          "probability": 0.9992940425872803
+        },
+        {
+          "start": 9.68,
+          "end": 10.04,
+          "word": "就",
+          "probability": 0.9025316834449768
+        },
+        {
+          "start": 10.04,
+          "end": 10.3,
+          "word": "有",
+          "probability": 0.9873965382575989
+        },
+        {
+          "start": 10.3,
+          "end": 10.48,
+          "word": "点",
+          "probability": 0.9986878037452698
+        },
+        {
+          "start": 10.48,
+          "end": 10.76,
+          "word": "小。",
+          "probability": 0.9840137362480164
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 11.72,
+      "end": 17.06,
+      "text": "这个电视是我们结婚时买的,是时候换个新电视了。",
+      "tokens": [
+        50914,
+        15368,
+        42182,
+        40656,
+        1541,
+        15003,
+        45641,
+        26112,
+        248,
+        15729,
+        2930,
+        108,
+        1546,
+        11,
+        1541,
+        29111,
+        26075,
+        95,
+        7549,
+        12560,
+        42182,
+        40656,
+        2289,
+        1543,
+        51214
+      ],
+      "avg_logprob": -0.1480162215291285,
+      "compression_ratio": 1.2831050228310503,
+      "no_speech_prob": 0.1586180478334427,
+      "words": [
+        {
+          "start": 11.72,
+          "end": 12.02,
+          "word": "这个",
+          "probability": 0.9379470348358154
+        },
+        {
+          "start": 12.02,
+          "end": 12.24,
+          "word": "电",
+          "probability": 0.9949041604995728
+        },
+        {
+          "start": 12.24,
+          "end": 12.5,
+          "word": "视",
+          "probability": 0.9959600567817688
+        },
+        {
+          "start": 12.5,
+          "end": 12.94,
+          "word": "是",
+          "probability": 0.8890962600708008
+        },
+        {
+          "start": 12.94,
+          "end": 13.22,
+          "word": "我们",
+          "probability": 0.9976623058319092
+        },
+        {
+          "start": 13.22,
+          "end": 13.48,
+          "word": "结",
+          "probability": 0.993664026260376
+        },
+        {
+          "start": 13.48,
+          "end": 13.72,
+          "word": "婚",
+          "probability": 0.9994364678859711
+        },
+        {
+          "start": 13.72,
+          "end": 13.92,
+          "word": "时",
+          "probability": 0.9819279909133911
+        },
+        {
+          "start": 13.92,
+          "end": 14.1,
+          "word": "买",
+          "probability": 0.9990665316581726
+        },
+        {
+          "start": 14.1,
+          "end": 14.38,
+          "word": "的,",
+          "probability": 0.9940040707588196
+        },
+        {
+          "start": 14.9,
+          "end": 15.14,
+          "word": "是",
+          "probability": 0.9718644618988037
+        },
+        {
+          "start": 15.14,
+          "end": 15.54,
+          "word": "时候",
+          "probability": 0.9939454197883606
+        },
+        {
+          "start": 15.54,
+          "end": 15.96,
+          "word": "换",
+          "probability": 0.9942288994789124
+        },
+        {
+          "start": 15.96,
+          "end": 16.18,
+          "word": "个",
+          "probability": 0.9865058064460754
+        },
+        {
+          "start": 16.18,
+          "end": 16.42,
+          "word": "新",
+          "probability": 0.9974460601806641
+        },
+        {
+          "start": 16.42,
+          "end": 16.66,
+          "word": "电",
+          "probability": 0.9967098236083984
+        },
+        {
+          "start": 16.66,
+          "end": 16.9,
+          "word": "视",
+          "probability": 0.9977610111236572
+        },
+        {
+          "start": 16.9,
+          "end": 17.06,
+          "word": "了。",
+          "probability": 0.963988184928894
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 17.82,
+      "end": 26.08,
+      "text": "今天,我一直在网上选电视,没想到现在的电视不但便宜,而且用着非常方便。",
+      "tokens": [
+        51214,
+        12074,
+        11,
+        1654,
+        34448,
+        3581,
+        16469,
+        239,
+        5708,
+        2215,
+        231,
+        42182,
+        40656,
+        11,
+        10062,
+        7093,
+        4511,
+        25040,
+        1546,
+        42182,
+        40656,
+        1960,
+        8395,
+        27364,
+        2415,
+        250,
+        11,
+        22942,
+        9254,
+        20708,
+        14392,
+        9249,
+        27364,
+        1543,
+        51664
+      ],
+      "avg_logprob": -0.1480162215291285,
+      "compression_ratio": 1.2831050228310503,
+      "no_speech_prob": 0.1586180478334427,
+      "words": [
+        {
+          "start": 17.82,
+          "end": 18.1,
+          "word": "今天,",
+          "probability": 0.9957838654518127
+        },
+        {
+          "start": 18.56,
+          "end": 18.7,
+          "word": "我",
+          "probability": 0.9958550333976746
+        },
+        {
+          "start": 18.7,
+          "end": 19.04,
+          "word": "一直",
+          "probability": 0.9992110729217529
+        },
+        {
+          "start": 19.04,
+          "end": 19.28,
+          "word": "在",
+          "probability": 0.9961345195770264
+        },
+        {
+          "start": 19.28,
+          "end": 19.46,
+          "word": "网",
+          "probability": 0.9983222484588623
+        },
+        {
+          "start": 19.46,
+          "end": 19.74,
+          "word": "上",
+          "probability": 0.9982249140739441
+        },
+        {
+          "start": 19.74,
+          "end": 19.94,
+          "word": "选",
+          "probability": 0.9024020433425903
+        },
+        {
+          "start": 19.94,
+          "end": 20.2,
+          "word": "电",
+          "probability": 0.9956660270690918
+        },
+        {
+          "start": 20.2,
+          "end": 20.48,
+          "word": "视,",
+          "probability": 0.9979113936424255
+        },
+        {
+          "start": 20.98,
+          "end": 21.16,
+          "word": "没",
+          "probability": 0.9934988021850586
+        },
+        {
+          "start": 21.16,
+          "end": 21.4,
+          "word": "想",
+          "probability": 0.9988502264022827
+        },
+        {
+          "start": 21.4,
+          "end": 21.7,
+          "word": "到",
+          "probability": 0.9992198944091797
+        },
+        {
+          "start": 21.7,
+          "end": 22.3,
+          "word": "现在",
+          "probability": 0.5519327521324158
+        },
+        {
+          "start": 22.3,
+          "end": 22.6,
+          "word": "的",
+          "probability": 0.9965754151344299
+        },
+        {
+          "start": 22.6,
+          "end": 22.78,
+          "word": "电",
+          "probability": 0.9972023963928223
+        },
+        {
+          "start": 22.78,
+          "end": 23.04,
+          "word": "视",
+          "probability": 0.997560977935791
+        },
+        {
+          "start": 23.04,
+          "end": 23.3,
+          "word": "不",
+          "probability": 0.9953472018241882
+        },
+        {
+          "start": 23.3,
+          "end": 23.46,
+          "word": "但",
+          "probability": 0.9824755191802979
+        },
+        {
+          "start": 23.46,
+          "end": 23.7,
+          "word": "便",
+          "probability": 0.9995480179786682
+        },
+        {
+          "start": 23.7,
+          "end": 24.02,
+          "word": "宜,",
+          "probability": 0.995568573474884
+        },
+        {
+          "start": 24.26,
+          "end": 24.56,
+          "word": "而且",
+          "probability": 0.997329831123352
+        },
+        {
+          "start": 24.56,
+          "end": 24.86,
+          "word": "用",
+          "probability": 0.9944320321083069
+        },
+        {
+          "start": 24.86,
+          "end": 25.08,
+          "word": "着",
+          "probability": 0.9316165447235107
+        },
+        {
+          "start": 25.08,
+          "end": 25.48,
+          "word": "非常",
+          "probability": 0.9967305660247803
+        },
+        {
+          "start": 25.48,
+          "end": 25.86,
+          "word": "方",
+          "probability": 0.998228132724762
+        },
+        {
+          "start": 25.86,
+          "end": 26.08,
+          "word": "便。",
+          "probability": 0.9999440908432007
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 2608,
+      "start": 26.08,
+      "end": 29.56,
+      "text": "有的电视叫他一声就能开机",
+      "tokens": [
+        50364,
+        2412,
+        1546,
+        42182,
+        40656,
+        19855,
+        5000,
+        2257,
+        32045,
+        3111,
+        8225,
+        18937,
+        37960,
+        50544
+      ],
+      "avg_logprob": -0.22170090093845274,
+      "compression_ratio": 0.8942307692307693,
+      "no_speech_prob": 0.07719261944293976,
+      "words": [
+        {
+          "start": 26.08,
+          "end": 26.9,
+          "word": "有",
+          "probability": 0.8749316930770874
+        },
+        {
+          "start": 26.9,
+          "end": 27.04,
+          "word": "的",
+          "probability": 0.9794021844863892
+        },
+        {
+          "start": 27.04,
+          "end": 27.18,
+          "word": "电",
+          "probability": 0.7353743314743042
+        },
+        {
+          "start": 27.18,
+          "end": 27.46,
+          "word": "视",
+          "probability": 0.9829099774360657
+        },
+        {
+          "start": 27.46,
+          "end": 27.92,
+          "word": "叫",
+          "probability": 0.8908828496932983
+        },
+        {
+          "start": 27.92,
+          "end": 28.16,
+          "word": "他",
+          "probability": 0.6714109182357788
+        },
+        {
+          "start": 28.16,
+          "end": 28.34,
+          "word": "一",
+          "probability": 0.9970205426216125
+        },
+        {
+          "start": 28.34,
+          "end": 28.56,
+          "word": "声",
+          "probability": 0.9881061315536499
+        },
+        {
+          "start": 28.56,
+          "end": 28.9,
+          "word": "就",
+          "probability": 0.9469424486160278
+        },
+        {
+          "start": 28.9,
+          "end": 29.04,
+          "word": "能",
+          "probability": 0.9959308505058289
+        },
+        {
+          "start": 29.04,
+          "end": 29.28,
+          "word": "开",
+          "probability": 0.9937189817428589
+        },
+        {
+          "start": 29.28,
+          "end": 29.56,
+          "word": "机",
+          "probability": 0.9986475110054016
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 2608,
+      "start": 29.56,
+      "end": 32.42,
+      "text": "我看了好几个都很满意",
+      "tokens": [
+        50544,
+        1654,
+        4200,
+        2289,
+        2131,
+        6336,
+        254,
+        7549,
+        7182,
+        4563,
+        15868,
+        94,
+        9042,
+        50684
+      ],
+      "avg_logprob": -0.22170090093845274,
+      "compression_ratio": 0.8942307692307693,
+      "no_speech_prob": 0.07719261944293976,
+      "words": [
+        {
+          "start": 29.56,
+          "end": 30.2,
+          "word": "我",
+          "probability": 0.7642030715942383
+        },
+        {
+          "start": 30.2,
+          "end": 30.42,
+          "word": "看",
+          "probability": 0.9811588525772095
+        },
+        {
+          "start": 30.42,
+          "end": 30.58,
+          "word": "了",
+          "probability": 0.9924598336219788
+        },
+        {
+          "start": 30.58,
+          "end": 30.78,
+          "word": "好",
+          "probability": 0.998836100101471
+        },
+        {
+          "start": 30.78,
+          "end": 31.0,
+          "word": "几",
+          "probability": 0.9988841116428375
+        },
+        {
+          "start": 31.0,
+          "end": 31.22,
+          "word": "个",
+          "probability": 0.9985612034797668
+        },
+        {
+          "start": 31.22,
+          "end": 31.66,
+          "word": "都",
+          "probability": 0.9760251045227051
+        },
+        {
+          "start": 31.66,
+          "end": 31.92,
+          "word": "很",
+          "probability": 0.987703800201416
+        },
+        {
+          "start": 31.92,
+          "end": 32.1,
+          "word": "满",
+          "probability": 0.9989715814590454
+        },
+        {
+          "start": 32.1,
+          "end": 32.42,
+          "word": "意",
+          "probability": 0.9998799562454224
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 2608,
+      "start": 32.42,
+      "end": 35.36,
+      "text": "晚上让医学来决定吧",
+      "tokens": [
+        50684,
+        50157,
+        33650,
+        9937,
+        119,
+        29618,
+        6912,
+        5676,
+        111,
+        12088,
+        6062,
+        50834
+      ],
+      "avg_logprob": -0.22170090093845274,
+      "compression_ratio": 0.8942307692307693,
+      "no_speech_prob": 0.07719261944293976,
+      "words": [
+        {
+          "start": 32.42,
+          "end": 33.14,
+          "word": "晚上",
+          "probability": 0.766232967376709
+        },
+        {
+          "start": 33.14,
+          "end": 33.78,
+          "word": "让",
+          "probability": 0.9720793962478638
+        },
+        {
+          "start": 33.78,
+          "end": 34.08,
+          "word": "医",
+          "probability": 0.922619491815567
+        },
+        {
+          "start": 34.08,
+          "end": 34.42,
+          "word": "学",
+          "probability": 0.987583339214325
+        },
+        {
+          "start": 34.42,
+          "end": 34.74,
+          "word": "来",
+          "probability": 0.9480266571044922
+        },
+        {
+          "start": 34.74,
+          "end": 34.94,
+          "word": "决",
+          "probability": 0.998030960559845
+        },
+        {
+          "start": 34.94,
+          "end": 35.16,
+          "word": "定",
+          "probability": 0.9990599751472473
+        },
+        {
+          "start": 35.16,
+          "end": 35.36,
+          "word": "吧",
+          "probability": 0.9906214475631714
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 5.012121596999975,
+  "realTimeFactor": 0.1369523338337075,
+  "observationChecks": {
+    "rawWordCount": 106,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

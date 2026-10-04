@@ -1,0 +1,726 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l15:audio7",
+    "level": 2,
+    "lesson": 15,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk2/audio/15-7.mp3",
+    "sha256": "82d919ca3b7fe3ccfb92d6dffc6dc20e0a59b1284935f99399262d8022b04f40",
+    "bytes": 684318,
+    "manifestDurationSeconds": 26.693333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 427008,
+      "durationSeconds": 26.688,
+      "sha256": "27eb5a0ea38eac910a1d26cc8b24e39f21dd4f9a6ae6ac99401c756b0ad2e599"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 26.688,
+    "duration_after_vad": 26.688,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.7399999999999995,
+      "end": 6.04,
+      "text": "我六月的时候回过一次北京,现在有半年多没回去了。",
+      "tokens": [
+        50364,
+        1654,
+        30566,
+        6939,
+        49873,
+        8350,
+        16866,
+        27505,
+        26668,
+        31375,
+        11,
+        25040,
+        2412,
+        30018,
+        5157,
+        6392,
+        10062,
+        8350,
+        45190,
+        1543,
+        50664
+      ],
+      "avg_logprob": -0.15244501468899485,
+      "compression_ratio": 1.328125,
+      "no_speech_prob": 0.04727843776345253,
+      "words": [
+        {
+          "start": 0.7399999999999995,
+          "end": 1.22,
+          "word": "我",
+          "probability": 0.7548537254333496
+        },
+        {
+          "start": 1.22,
+          "end": 1.44,
+          "word": "六",
+          "probability": 0.5007951259613037
+        },
+        {
+          "start": 1.44,
+          "end": 1.6,
+          "word": "月",
+          "probability": 0.9948837161064148
+        },
+        {
+          "start": 1.6,
+          "end": 1.94,
+          "word": "的时候",
+          "probability": 0.5657570958137512
+        },
+        {
+          "start": 1.94,
+          "end": 2.36,
+          "word": "回",
+          "probability": 0.9343231320381165
+        },
+        {
+          "start": 2.36,
+          "end": 2.56,
+          "word": "过",
+          "probability": 0.995511531829834
+        },
+        {
+          "start": 2.56,
+          "end": 2.78,
+          "word": "一次",
+          "probability": 0.9978799819946289
+        },
+        {
+          "start": 2.78,
+          "end": 3.02,
+          "word": "北",
+          "probability": 0.9930453896522522
+        },
+        {
+          "start": 3.02,
+          "end": 3.24,
+          "word": "京,",
+          "probability": 0.9989711046218872
+        },
+        {
+          "start": 3.98,
+          "end": 4.38,
+          "word": "现在",
+          "probability": 0.9399309158325195
+        },
+        {
+          "start": 4.38,
+          "end": 4.78,
+          "word": "有",
+          "probability": 0.979103147983551
+        },
+        {
+          "start": 4.78,
+          "end": 4.96,
+          "word": "半",
+          "probability": 0.997239351272583
+        },
+        {
+          "start": 4.96,
+          "end": 5.14,
+          "word": "年",
+          "probability": 0.9982321858406067
+        },
+        {
+          "start": 5.14,
+          "end": 5.34,
+          "word": "多",
+          "probability": 0.9933874607086182
+        },
+        {
+          "start": 5.34,
+          "end": 5.54,
+          "word": "没",
+          "probability": 0.989909291267395
+        },
+        {
+          "start": 5.54,
+          "end": 5.74,
+          "word": "回",
+          "probability": 0.99433833360672
+        },
+        {
+          "start": 5.74,
+          "end": 6.04,
+          "word": "去了。",
+          "probability": 0.9987101554870605
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 6.7,
+      "end": 12.02,
+      "text": "我有点想家,就要过年了,我要回家过年。",
+      "tokens": [
+        50664,
+        39732,
+        12579,
+        7093,
+        5155,
+        11,
+        3111,
+        4275,
+        16866,
+        5157,
+        2289,
+        11,
+        32186,
+        8350,
+        5155,
+        16866,
+        5157,
+        1543,
+        50964
+      ],
+      "avg_logprob": -0.15244501468899485,
+      "compression_ratio": 1.328125,
+      "no_speech_prob": 0.04727843776345253,
+      "words": [
+        {
+          "start": 6.7,
+          "end": 7.1,
+          "word": "我有",
+          "probability": 0.945992648601532
+        },
+        {
+          "start": 7.1,
+          "end": 7.36,
+          "word": "点",
+          "probability": 0.9989728927612305
+        },
+        {
+          "start": 7.36,
+          "end": 7.7,
+          "word": "想",
+          "probability": 0.7408289909362793
+        },
+        {
+          "start": 7.7,
+          "end": 7.96,
+          "word": "家,",
+          "probability": 0.6734123229980469
+        },
+        {
+          "start": 9.02,
+          "end": 9.3,
+          "word": "就",
+          "probability": 0.975445032119751
+        },
+        {
+          "start": 9.3,
+          "end": 9.46,
+          "word": "要",
+          "probability": 0.9968204498291016
+        },
+        {
+          "start": 9.46,
+          "end": 9.64,
+          "word": "过",
+          "probability": 0.995270311832428
+        },
+        {
+          "start": 9.64,
+          "end": 9.84,
+          "word": "年",
+          "probability": 0.9916284084320068
+        },
+        {
+          "start": 9.84,
+          "end": 10.08,
+          "word": "了,",
+          "probability": 0.9974995255470276
+        },
+        {
+          "start": 10.7,
+          "end": 10.94,
+          "word": "我要",
+          "probability": 0.9775890111923218
+        },
+        {
+          "start": 10.94,
+          "end": 11.34,
+          "word": "回",
+          "probability": 0.9989184141159058
+        },
+        {
+          "start": 11.34,
+          "end": 11.56,
+          "word": "家",
+          "probability": 0.9809517860412598
+        },
+        {
+          "start": 11.56,
+          "end": 11.76,
+          "word": "过",
+          "probability": 0.9962475895881653
+        },
+        {
+          "start": 11.76,
+          "end": 12.02,
+          "word": "年。",
+          "probability": 0.996875524520874
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 13.48,
+      "end": 18.16,
+      "text": "佳月这次也要去北京,我们都是星期五的飞机。",
+      "tokens": [
+        50964,
+        1593,
+        111,
+        6939,
+        5562,
+        9487,
+        6404,
+        4275,
+        6734,
+        26668,
+        31375,
+        11,
+        15003,
+        22796,
+        20682,
+        16786,
+        21001,
+        1546,
+        11808,
+        252,
+        37960,
+        1543,
+        51264
+      ],
+      "avg_logprob": -0.15244501468899485,
+      "compression_ratio": 1.328125,
+      "no_speech_prob": 0.04727843776345253,
+      "words": [
+        {
+          "start": 13.48,
+          "end": 13.62,
+          "word": "佳",
+          "probability": 0.7551771402359009
+        },
+        {
+          "start": 13.62,
+          "end": 13.8,
+          "word": "月",
+          "probability": 0.21992352604866028
+        },
+        {
+          "start": 13.8,
+          "end": 14.0,
+          "word": "这",
+          "probability": 0.9921463131904602
+        },
+        {
+          "start": 14.0,
+          "end": 14.24,
+          "word": "次",
+          "probability": 0.9985180497169495
+        },
+        {
+          "start": 14.24,
+          "end": 14.6,
+          "word": "也",
+          "probability": 0.9622088670730591
+        },
+        {
+          "start": 14.6,
+          "end": 14.82,
+          "word": "要",
+          "probability": 0.9980283379554749
+        },
+        {
+          "start": 14.82,
+          "end": 14.98,
+          "word": "去",
+          "probability": 0.9981550574302673
+        },
+        {
+          "start": 14.98,
+          "end": 15.16,
+          "word": "北",
+          "probability": 0.9990585446357727
+        },
+        {
+          "start": 15.16,
+          "end": 15.4,
+          "word": "京,",
+          "probability": 0.9999172687530518
+        },
+        {
+          "start": 16.24,
+          "end": 16.48,
+          "word": "我们",
+          "probability": 0.9936447143554688
+        },
+        {
+          "start": 16.48,
+          "end": 16.88,
+          "word": "都是",
+          "probability": 0.9946958422660828
+        },
+        {
+          "start": 16.88,
+          "end": 17.2,
+          "word": "星",
+          "probability": 0.997729480266571
+        },
+        {
+          "start": 17.2,
+          "end": 17.4,
+          "word": "期",
+          "probability": 0.9996449947357178
+        },
+        {
+          "start": 17.4,
+          "end": 17.62,
+          "word": "五",
+          "probability": 0.996698260307312
+        },
+        {
+          "start": 17.62,
+          "end": 17.78,
+          "word": "的",
+          "probability": 0.9942787885665894
+        },
+        {
+          "start": 17.78,
+          "end": 17.96,
+          "word": "飞",
+          "probability": 0.9980392158031464
+        },
+        {
+          "start": 17.96,
+          "end": 18.16,
+          "word": "机。",
+          "probability": 0.9984021782875061
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 19.24,
+      "end": 25.14,
+      "text": "佳月说,我们好像小鸟一起飞到北京,在一起飞回这里。",
+      "tokens": [
+        51264,
+        1593,
+        111,
+        6939,
+        8090,
+        11,
+        15003,
+        33242,
+        7322,
+        165,
+        116,
+        253,
+        29567,
+        11808,
+        252,
+        4511,
+        26668,
+        31375,
+        11,
+        3581,
+        29567,
+        11808,
+        252,
+        8350,
+        35102,
+        1543,
+        51614
+      ],
+      "avg_logprob": -0.15244501468899485,
+      "compression_ratio": 1.328125,
+      "no_speech_prob": 0.04727843776345253,
+      "words": [
+        {
+          "start": 19.24,
+          "end": 19.54,
+          "word": "佳",
+          "probability": 0.9971430897712708
+        },
+        {
+          "start": 19.54,
+          "end": 19.74,
+          "word": "月",
+          "probability": 0.9969441294670105
+        },
+        {
+          "start": 19.74,
+          "end": 19.98,
+          "word": "说,",
+          "probability": 0.9963862895965576
+        },
+        {
+          "start": 20.6,
+          "end": 20.78,
+          "word": "我们",
+          "probability": 0.9080355167388916
+        },
+        {
+          "start": 20.78,
+          "end": 21.08,
+          "word": "好像",
+          "probability": 0.9501720070838928
+        },
+        {
+          "start": 21.08,
+          "end": 21.46,
+          "word": "小",
+          "probability": 0.9754860997200012
+        },
+        {
+          "start": 21.46,
+          "end": 21.66,
+          "word": "鸟",
+          "probability": 0.9972570935885111
+        },
+        {
+          "start": 21.66,
+          "end": 22.48,
+          "word": "一起",
+          "probability": 0.6517560482025146
+        },
+        {
+          "start": 22.48,
+          "end": 22.78,
+          "word": "飞",
+          "probability": 0.9932132363319397
+        },
+        {
+          "start": 22.78,
+          "end": 22.96,
+          "word": "到",
+          "probability": 0.9888611435890198
+        },
+        {
+          "start": 22.96,
+          "end": 23.14,
+          "word": "北",
+          "probability": 0.999301552772522
+        },
+        {
+          "start": 23.14,
+          "end": 23.4,
+          "word": "京,",
+          "probability": 0.9998818635940552
+        },
+        {
+          "start": 23.8,
+          "end": 23.94,
+          "word": "在",
+          "probability": 0.6916900277137756
+        },
+        {
+          "start": 23.94,
+          "end": 24.3,
+          "word": "一起",
+          "probability": 0.9991822838783264
+        },
+        {
+          "start": 24.3,
+          "end": 24.68,
+          "word": "飞",
+          "probability": 0.9915747046470642
+        },
+        {
+          "start": 24.68,
+          "end": 24.9,
+          "word": "回",
+          "probability": 0.9904925227165222
+        },
+        {
+          "start": 24.9,
+          "end": 25.14,
+          "word": "这里。",
+          "probability": 0.9781266450881958
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.8728792080000005,
+  "realTimeFactor": 0.10764685281774583,
+  "observationChecks": {
+    "rawWordCount": 65,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

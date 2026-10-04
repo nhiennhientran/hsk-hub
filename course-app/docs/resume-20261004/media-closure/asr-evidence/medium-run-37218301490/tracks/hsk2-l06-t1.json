@@ -1,0 +1,747 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l06:audio1",
+    "level": 2,
+    "lesson": 6,
+    "track": 1,
+    "kind": "text",
+    "text": 1,
+    "file": "course-assets/hsk2/audio/6-1.mp3",
+    "sha256": "ed1e9c6c1c856d87898005be33d08fcc8977cfe2305397414a3a2d6c4363d161",
+    "bytes": 681285,
+    "manifestDurationSeconds": 26.429333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 422784,
+      "durationSeconds": 26.424,
+      "sha256": "dea38b5143e594847394204a5a5ac835a37f3cb32569a1c6878708730ebd4a84"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-medium",
+  "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 26.424,
+    "duration_after_vad": 26.424,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.94,
+      "text": "明天就是女儿的生日了。",
+      "tokens": [
+        50364,
+        11100,
+        6135,
+        5620,
+        17015,
+        22933,
+        1546,
+        8244,
+        6890,
+        2289,
+        1543,
+        50514
+      ],
+      "avg_logprob": -0.11823983569728568,
+      "compression_ratio": 1.231578947368421,
+      "no_speech_prob": 0.13400782644748688,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.66,
+          "word": "明",
+          "probability": 0.8776395916938782
+        },
+        {
+          "start": 0.66,
+          "end": 0.92,
+          "word": "天",
+          "probability": 0.9992221593856812
+        },
+        {
+          "start": 0.92,
+          "end": 1.26,
+          "word": "就是",
+          "probability": 0.9865412712097168
+        },
+        {
+          "start": 1.26,
+          "end": 1.56,
+          "word": "女",
+          "probability": 0.996086597442627
+        },
+        {
+          "start": 1.56,
+          "end": 1.7,
+          "word": "儿",
+          "probability": 0.9532518982887268
+        },
+        {
+          "start": 1.7,
+          "end": 1.88,
+          "word": "的",
+          "probability": 0.9952327609062195
+        },
+        {
+          "start": 1.88,
+          "end": 2.04,
+          "word": "生",
+          "probability": 0.9980947375297546
+        },
+        {
+          "start": 2.04,
+          "end": 2.28,
+          "word": "日",
+          "probability": 0.9998012185096741
+        },
+        {
+          "start": 2.28,
+          "end": 2.94,
+          "word": "了。",
+          "probability": 0.9813017249107361
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.58,
+      "end": 9.6,
+      "text": "你不说,我还真忘了,我们给她准备个什么礼物呢?",
+      "tokens": [
+        50564,
+        2166,
+        1960,
+        8090,
+        11,
+        1654,
+        14852,
+        6303,
+        26677,
+        2289,
+        11,
+        15003,
+        23197,
+        15555,
+        6336,
+        228,
+        1787,
+        229,
+        7549,
+        10440,
+        14971,
+        120,
+        23516,
+        6240,
+        30,
+        50864
+      ],
+      "avg_logprob": -0.11823983569728568,
+      "compression_ratio": 1.231578947368421,
+      "no_speech_prob": 0.13400782644748688,
+      "words": [
+        {
+          "start": 4.58,
+          "end": 4.78,
+          "word": "你",
+          "probability": 0.9489631056785583
+        },
+        {
+          "start": 4.78,
+          "end": 4.98,
+          "word": "不",
+          "probability": 0.9988675117492676
+        },
+        {
+          "start": 4.98,
+          "end": 5.3,
+          "word": "说,",
+          "probability": 0.9993906021118164
+        },
+        {
+          "start": 5.42,
+          "end": 5.66,
+          "word": "我",
+          "probability": 0.9844738245010376
+        },
+        {
+          "start": 5.66,
+          "end": 5.8,
+          "word": "还",
+          "probability": 0.9951469302177429
+        },
+        {
+          "start": 5.8,
+          "end": 5.96,
+          "word": "真",
+          "probability": 0.99956876039505
+        },
+        {
+          "start": 5.96,
+          "end": 6.28,
+          "word": "忘",
+          "probability": 0.9990994930267334
+        },
+        {
+          "start": 6.28,
+          "end": 6.62,
+          "word": "了,",
+          "probability": 0.9920927882194519
+        },
+        {
+          "start": 7.06,
+          "end": 7.42,
+          "word": "我们",
+          "probability": 0.9539273381233215
+        },
+        {
+          "start": 7.42,
+          "end": 7.6,
+          "word": "给",
+          "probability": 0.9983123540878296
+        },
+        {
+          "start": 7.6,
+          "end": 7.9,
+          "word": "她",
+          "probability": 0.9538328647613525
+        },
+        {
+          "start": 7.9,
+          "end": 8.22,
+          "word": "准",
+          "probability": 0.9992294609546661
+        },
+        {
+          "start": 8.22,
+          "end": 8.36,
+          "word": "备",
+          "probability": 0.9987979233264923
+        },
+        {
+          "start": 8.36,
+          "end": 8.58,
+          "word": "个",
+          "probability": 0.9724464416503906
+        },
+        {
+          "start": 8.58,
+          "end": 8.76,
+          "word": "什么",
+          "probability": 0.9976119995117188
+        },
+        {
+          "start": 8.76,
+          "end": 9.14,
+          "word": "礼",
+          "probability": 0.9987990856170654
+        },
+        {
+          "start": 9.14,
+          "end": 9.24,
+          "word": "物",
+          "probability": 0.9997825026512146
+        },
+        {
+          "start": 9.24,
+          "end": 9.6,
+          "word": "呢?",
+          "probability": 0.9758256077766418
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 10.76,
+      "end": 14.42,
+      "text": "她喜欢画画,你觉得画笔怎么样?",
+      "tokens": [
+        50914,
+        15555,
+        41606,
+        27126,
+        27126,
+        11,
+        2166,
+        29992,
+        27126,
+        5437,
+        242,
+        48200,
+        30,
+        51114
+      ],
+      "avg_logprob": -0.11823983569728568,
+      "compression_ratio": 1.231578947368421,
+      "no_speech_prob": 0.13400782644748688,
+      "words": [
+        {
+          "start": 10.76,
+          "end": 11.14,
+          "word": "她",
+          "probability": 0.9951521158218384
+        },
+        {
+          "start": 11.14,
+          "end": 11.5,
+          "word": "喜欢",
+          "probability": 0.9994822144508362
+        },
+        {
+          "start": 11.5,
+          "end": 11.82,
+          "word": "画",
+          "probability": 0.995550274848938
+        },
+        {
+          "start": 11.82,
+          "end": 12.1,
+          "word": "画,",
+          "probability": 0.9970236420631409
+        },
+        {
+          "start": 12.9,
+          "end": 13.12,
+          "word": "你",
+          "probability": 0.9552749991416931
+        },
+        {
+          "start": 13.12,
+          "end": 13.52,
+          "word": "觉得",
+          "probability": 0.999231219291687
+        },
+        {
+          "start": 13.52,
+          "end": 13.84,
+          "word": "画",
+          "probability": 0.9785147309303284
+        },
+        {
+          "start": 13.84,
+          "end": 14.0,
+          "word": "笔",
+          "probability": 0.9983683824539185
+        },
+        {
+          "start": 14.0,
+          "end": 14.42,
+          "word": "怎么样?",
+          "probability": 0.9838814735412598
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 15.88,
+      "end": 17.28,
+      "text": "就送画笔吧。",
+      "tokens": [
+        51164,
+        3111,
+        29309,
+        27126,
+        5437,
+        242,
+        6062,
+        1543,
+        51214
+      ],
+      "avg_logprob": -0.11823983569728568,
+      "compression_ratio": 1.231578947368421,
+      "no_speech_prob": 0.13400782644748688,
+      "words": [
+        {
+          "start": 15.88,
+          "end": 16.3,
+          "word": "就",
+          "probability": 0.9896101951599121
+        },
+        {
+          "start": 16.3,
+          "end": 16.42,
+          "word": "送",
+          "probability": 0.99470055103302
+        },
+        {
+          "start": 16.42,
+          "end": 16.74,
+          "word": "画",
+          "probability": 0.9864640235900879
+        },
+        {
+          "start": 16.74,
+          "end": 16.88,
+          "word": "笔",
+          "probability": 0.9997997283935547
+        },
+        {
+          "start": 16.88,
+          "end": 17.28,
+          "word": "吧。",
+          "probability": 0.9976429343223572
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 18.4,
+      "end": 20.26,
+      "text": "那我明天上午就去买。",
+      "tokens": [
+        51264,
+        4184,
+        1654,
+        11100,
+        6135,
+        5708,
+        44237,
+        3111,
+        6734,
+        2930,
+        108,
+        1543,
+        51364
+      ],
+      "avg_logprob": -0.11823983569728568,
+      "compression_ratio": 1.231578947368421,
+      "no_speech_prob": 0.13400782644748688,
+      "words": [
+        {
+          "start": 18.4,
+          "end": 18.68,
+          "word": "那",
+          "probability": 0.9846335053443909
+        },
+        {
+          "start": 18.68,
+          "end": 18.8,
+          "word": "我",
+          "probability": 0.990665853023529
+        },
+        {
+          "start": 18.8,
+          "end": 18.98,
+          "word": "明",
+          "probability": 0.9968509078025818
+        },
+        {
+          "start": 18.98,
+          "end": 19.2,
+          "word": "天",
+          "probability": 0.998950183391571
+        },
+        {
+          "start": 19.2,
+          "end": 19.46,
+          "word": "上",
+          "probability": 0.9954025745391846
+        },
+        {
+          "start": 19.46,
+          "end": 19.58,
+          "word": "午",
+          "probability": 0.9999469518661499
+        },
+        {
+          "start": 19.58,
+          "end": 19.76,
+          "word": "就",
+          "probability": 0.9833465814590454
+        },
+        {
+          "start": 19.76,
+          "end": 19.92,
+          "word": "去",
+          "probability": 0.9994322657585144
+        },
+        {
+          "start": 19.92,
+          "end": 20.26,
+          "word": "买。",
+          "probability": 0.9995509684085846
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 21.42,
+      "end": 25.76,
+      "text": "好的,我再给她买个大大的生日蛋糕。",
+      "tokens": [
+        51414,
+        20715,
+        11,
+        1654,
+        8623,
+        23197,
+        15555,
+        2930,
+        108,
+        7549,
+        3582,
+        39156,
+        8244,
+        6890,
+        35081,
+        15239,
+        243,
+        1543,
+        51664
+      ],
+      "avg_logprob": -0.11823983569728568,
+      "compression_ratio": 1.231578947368421,
+      "no_speech_prob": 0.13400782644748688,
+      "words": [
+        {
+          "start": 21.42,
+          "end": 21.98,
+          "word": "好的,",
+          "probability": 0.9785588979721069
+        },
+        {
+          "start": 22.72,
+          "end": 22.94,
+          "word": "我",
+          "probability": 0.9656789898872375
+        },
+        {
+          "start": 22.94,
+          "end": 23.08,
+          "word": "再",
+          "probability": 0.9989888072013855
+        },
+        {
+          "start": 23.08,
+          "end": 23.22,
+          "word": "给",
+          "probability": 0.9975503087043762
+        },
+        {
+          "start": 23.22,
+          "end": 23.72,
+          "word": "她",
+          "probability": 0.9958944320678711
+        },
+        {
+          "start": 23.72,
+          "end": 24.02,
+          "word": "买",
+          "probability": 0.9991067945957184
+        },
+        {
+          "start": 24.02,
+          "end": 24.26,
+          "word": "个",
+          "probability": 0.9796550869941711
+        },
+        {
+          "start": 24.26,
+          "end": 24.6,
+          "word": "大",
+          "probability": 0.9884108304977417
+        },
+        {
+          "start": 24.6,
+          "end": 24.88,
+          "word": "大的",
+          "probability": 0.9835768342018127
+        },
+        {
+          "start": 24.88,
+          "end": 25.14,
+          "word": "生",
+          "probability": 0.9947947859764099
+        },
+        {
+          "start": 25.14,
+          "end": 25.34,
+          "word": "日",
+          "probability": 0.9996695518493652
+        },
+        {
+          "start": 25.34,
+          "end": 25.6,
+          "word": "蛋",
+          "probability": 0.9991771578788757
+        },
+        {
+          "start": 25.6,
+          "end": 25.76,
+          "word": "糕。",
+          "probability": 0.9998170137405396
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 8.288122041000008,
+  "realTimeFactor": 0.31365887227520467,
+  "observationChecks": {
+    "rawWordCount": 63,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

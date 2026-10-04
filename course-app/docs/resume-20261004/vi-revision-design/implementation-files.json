@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "status": "design-only-not-implemented",
+  "awaits": "A9 source freeze plus independent official-VI per-item review",
+  "protectedFiveBanks": [
+    "hsk1-app/content/textbook.json",
+    "hsk1-app/content/homework30-bank.json",
+    "hsk1-app/content/stage2-bank.json",
+    "hsk1-app/content/stage3-catalog.json",
+    "hsk1-app/content/legacy-exercises.json"
+  ],
+  "scopes": [
+    {
+      "owner": "hsk1-display-and-presentation",
+      "scope": "Thin display DTOs and optional parallel presentation slots; frozen grading authorities unchanged",
+      "new": [
+        "hsk1-app/src/services/content/official-vi-revisions.ts",
+        "hsk1-app/src/services/content/vi-presentation-state.ts",
+        "hsk1-app/tests/official-vi-revisions.test.mjs",
+        "hsk1-app/tests/vi-presentation-state.test.mjs",
+        "hsk1-app/tests/browser/official-vi-history.spec.ts"
+      ],
+      "modify": [
+        "hsk1-app/src/services/content/textbook.ts",
+        "hsk1-app/src/services/content/vocabulary.ts",
+        "hsk1-app/src/services/content/listening.ts",
+        "hsk1-app/src/services/storage/compatibility.ts",
+        "hsk1-app/src/features/textbook/vocabulary.ts",
+        "hsk1-app/src/features/vocabulary/view.ts",
+        "hsk1-app/src/features/listening/index.ts",
+        "hsk1-app/src/features/homework/index.ts",
+        "hsk1-app/src/features/homework/index30.ts",
+        "hsk1-app/src/features/homework/receipt.ts"
+      ],
+      "metadataHookOnly": [
+        "hsk1-app/src/features/homework/controller.ts",
+        "hsk1-app/src/features/homework/controller30.ts",
+        "hsk1-app/src/domain/listening/controller.ts"
+      ],
+      "readOnly": [
+        "hsk1-app/src/domain/homework/engine.js",
+        "hsk1-app/src/domain/practice/engine.js",
+        "hsk1-app/src/domain/homework30/engine.ts",
+        "hsk1-app/src/domain/vocabulary/mixed-state.ts",
+        "hsk1-app/src/domain/vocabulary/mixed-controller.ts",
+        "hsk1-app/src/features/exercises/archive-data.ts",
+        "hsk1-app/src/features/exercises/archive.ts",
+        "hsk1-app/src/services/content/exercises.ts",
+        "hsk1-app/src/features/progress/content.ts",
+        "hsk1-app/src/services/storage/index.ts",
+        "hsk1-app/src/services/source-activities/paired.ts",
+        "hsk1-app/src/services/source-activities/state.ts"
+      ],
+      "notes": [
+        "Existing raw controller constructor inputs remain original validated bank/catalog. Metadata hooks only join the same AppData mutation; grading fingerprint/random indexes are sealed.",
+        "Receipt must resolve each selected first/latest slot independently, including old-null first and new-revision latest.",
+        "Snapshot payload and byte/count limits need measurement before enabling; no new storage owner."
+      ]
+    },
+    {
+      "owner": "hsk23-display-adapter",
+      "scope": "Current lesson/lexicon projections; existing Attempt.questions and immutable history bypass projection",
+      "new": [
+        "course-app/src/official-vi-revisions.ts",
+        "course-app/tests/official-vi-revisions.test.mjs",
+        "course-app/tests/unified/official-vi-history.spec.ts"
+      ],
+      "modify": [
+        "course-app/src/content.ts",
+        "course-app/src/listening-view.ts"
+      ],
+      "readOnly": [
+        "course-app/src/state.ts",
+        "course-app/src/lexicon.ts",
+        "course-app/src/activity-history.ts"
+      ],
+      "conditionalModify": [
+        "course-app/src/main.ts"
+      ],
+      "notes": [
+        "main.ts only if actual presentational provenance/old-no-snapshot UI requires a bounded change; existing grade/attempt-commit semantics stay.",
+        "Listening submitted-no-snapshot fallback must not pass a current projected Question off as historical copy.",
+        "No modification of stored questions/contentRevision/answers/correct/profile or raw additionalSourceEvidence."
+      ]
+    },
+    {
+      "owner": "official-source-manifest-authors",
+      "scope": "Per-item visually reviewed official VI changes and explicit consumer graph after A9; independent reviewer is another owner",
+      "new": [
+        "hsk1-app/content/official-vi-revisions.json",
+        "course-app/content/hsk2-official-vi-revisions.json",
+        "course-app/content/hsk3-official-vi-revisions.json"
+      ],
+      "modifyAfterActualReview": [
+        "hsk1-app/content/source-activities/lesson-01.json",
+        "hsk1-app/content/source-activities/lesson-02.json",
+        "hsk1-app/content/source-activities/lesson-03.json",
+        "hsk1-app/content/source-activities/lesson-04-current.json",
+        "hsk1-app/content/source-activities/lesson-05.json",
+        "hsk1-app/content/source-activities/lesson-06.json",
+        "hsk1-app/content/source-activities/lesson-07.json",
+        "hsk1-app/content/source-activities/lesson-08.json",
+        "hsk1-app/content/source-activities/lesson-09.json",
+        "hsk1-app/content/source-activities/lesson-10.json",
+        "hsk1-app/content/source-activities/lesson-11.json",
+        "hsk1-app/content/source-activities/lesson-12.json",
+        "hsk1-app/content/source-activities/lesson-13.json",
+        "hsk1-app/content/source-activities/lesson-14.json",
+        "hsk1-app/content/source-activities/lesson-15.json"
+      ],
+      "readOnly": [
+        "hsk1-app/content/textbook-display-revisions.json",
+        "hsk1-app/content/source-activities/lesson-04.json"
+      ],
+      "notes": [
+        "Current H1 context VI change always bumps affected activity.version; old record context/history are immutable. Source Chinese SHA/sourceRevision remains Chinese source, new official VI source identity goes in revision manifest.",
+        "H2/H3 canonical/lesson data should be projected from sidecars for wording-only changes; any semantic IDs/answers revision gets a separate explicit proposal.",
+        "Classify each consumer independently. Do not synchronize solely by shared Chinese form or VI string. No blanket lesson ordinal mapping between old20 and new18 HSK3."
+      ]
+    },
+    {
+      "owner": "ui-copy-and-assets",
+      "scope": "Editorial UI/ALT/captions actual active candidates, disjoint from owners above",
+      "candidateRoots": [
+        "hsk1-app/src/app/i18n",
+        "course-app/src",
+        "hsk1-app/content/source-activities/figures",
+        "course-app/public/illustrations"
+      ],
+      "notes": [
+        "Reserve concrete files per batch before editing; source adapters/controller/main files owned above cannot be claimed simultaneously.",
+        "Old H1/H2/H3/H4 hosts remain protected until an explicit same-item mapping and host mechanism proposal is reviewed. No current claim that all legacy copy matches new books.",
+        "Changed SVG bytes require new asset SHA/review and fresh package; archived H1 source context retains original figure ID/SHA, its archive UI does not render historical pictures."
+      ]
+    },
+    {
+      "owner": "validation-and-package",
+      "scope": "Offline accepted-manifest guard, actual consumer/browser checks, complete evidence and new release manifest",
+      "new": [
+        "course-app/tools/verify-official-vi-revisions.mjs",
+        "course-app/tests/official-vi-manifest.test.mjs"
+      ],
+      "modify": [
+        "course-app/tools/validate-content.mjs",
+        "course-app/tools/package-unified.mjs",
+        "hsk1-app/tools/release-manifest.mjs"
+      ],
+      "conditionalModify": [
+        "course-app/src/backup-view.ts"
+      ],
+      "readOnly": [
+        "course-app/src/attempt-commit.ts"
+      ],
+      "notes": [
+        "backup-view/paired generic transport already delegates AppData validation; only change if actual schema/summary capability display needs it. Test full and ordinary backup regardless.",
+        "Package active revision/source/review SHAs and all manifest assets. Retest both hosts and exact new assembled consumer bytes; do not reuse A9 native bytes as B acceptance.",
+        "Keep existing A7 frozen43 and accepted CI evidence unchanged; add B-specific fixtures/evidence under a new directory."
+      ]
+    }
+  ],
+  "ownershipRule": "Assign one owner per concrete file before edits; source manifests are data-reviewed separately from runtime implementation; controller hook-only permission does not include fingerprint algorithms or grading input changes."
+}

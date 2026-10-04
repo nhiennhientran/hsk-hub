@@ -1,0 +1,936 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l06:audio7",
+    "level": 2,
+    "lesson": 6,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk2/audio/6-7.mp3",
+    "sha256": "6871ba6ea479c2a042acd9a70eacefbb77fc47ff1d203828e833c3764896cb5c",
+    "bytes": 800652,
+    "manifestDurationSeconds": 31.541333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 504576,
+      "durationSeconds": 31.536,
+      "sha256": "c7b6bd316a01175d022c32cf0fe30106392377c7923e86591a64eed5cdbd770a"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 31.536,
+    "duration_after_vad": 31.536,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.2,
+      "text": "今天是女兒的生日",
+      "tokens": [
+        50364,
+        12074,
+        1541,
+        17015,
+        35125,
+        1546,
+        8244,
+        6890,
+        50489
+      ],
+      "avg_logprob": -0.17961995408992576,
+      "compression_ratio": 1.256281407035176,
+      "no_speech_prob": 0.008261920884251595,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.7,
+          "word": "今天",
+          "probability": 0.5862722992897034
+        },
+        {
+          "start": 0.7,
+          "end": 1.04,
+          "word": "是",
+          "probability": 0.9840351343154907
+        },
+        {
+          "start": 1.04,
+          "end": 1.3,
+          "word": "女",
+          "probability": 0.9704146981239319
+        },
+        {
+          "start": 1.3,
+          "end": 1.48,
+          "word": "兒",
+          "probability": 0.9611989259719849
+        },
+        {
+          "start": 1.48,
+          "end": 1.6,
+          "word": "的",
+          "probability": 0.9851265549659729
+        },
+        {
+          "start": 1.6,
+          "end": 1.82,
+          "word": "生",
+          "probability": 0.9978992938995361
+        },
+        {
+          "start": 1.82,
+          "end": 2.2,
+          "word": "日",
+          "probability": 0.999843955039978
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.2,
+      "end": 5.54,
+      "text": "我們買了蛋糕,做了麵條",
+      "tokens": [
+        50489,
+        5884,
+        31001,
+        2289,
+        35081,
+        15239,
+        243,
+        11,
+        10907,
+        2289,
+        3994,
+        113,
+        31106,
+        50664
+      ],
+      "avg_logprob": -0.17961995408992576,
+      "compression_ratio": 1.256281407035176,
+      "no_speech_prob": 0.008261920884251595,
+      "words": [
+        {
+          "start": 2.2,
+          "end": 3.18,
+          "word": "我們",
+          "probability": 0.6041361689567566
+        },
+        {
+          "start": 3.18,
+          "end": 3.46,
+          "word": "買",
+          "probability": 0.9967830181121826
+        },
+        {
+          "start": 3.46,
+          "end": 3.62,
+          "word": "了",
+          "probability": 0.9964256882667542
+        },
+        {
+          "start": 3.62,
+          "end": 3.84,
+          "word": "蛋",
+          "probability": 0.9980150461196899
+        },
+        {
+          "start": 3.84,
+          "end": 4.16,
+          "word": "糕,",
+          "probability": 0.9996273517608643
+        },
+        {
+          "start": 4.44,
+          "end": 4.8,
+          "word": "做",
+          "probability": 0.9463515877723694
+        },
+        {
+          "start": 4.8,
+          "end": 4.94,
+          "word": "了",
+          "probability": 0.9930194020271301
+        },
+        {
+          "start": 4.94,
+          "end": 5.12,
+          "word": "麵",
+          "probability": 0.9673338234424591
+        },
+        {
+          "start": 5.12,
+          "end": 5.54,
+          "word": "條",
+          "probability": 0.9962628483772278
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.54,
+      "end": 8.5,
+      "text": "還做了魚啊、肉啊什麼的",
+      "tokens": [
+        50664,
+        7824,
+        10907,
+        2289,
+        40042,
+        4905,
+        1231,
+        31980,
+        4905,
+        7598,
+        1546,
+        50814
+      ],
+      "avg_logprob": -0.17961995408992576,
+      "compression_ratio": 1.256281407035176,
+      "no_speech_prob": 0.008261920884251595,
+      "words": [
+        {
+          "start": 5.54,
+          "end": 6.42,
+          "word": "還",
+          "probability": 0.5688359141349792
+        },
+        {
+          "start": 6.42,
+          "end": 6.62,
+          "word": "做",
+          "probability": 0.9930179119110107
+        },
+        {
+          "start": 6.62,
+          "end": 6.82,
+          "word": "了",
+          "probability": 0.9938287138938904
+        },
+        {
+          "start": 6.82,
+          "end": 7.14,
+          "word": "魚",
+          "probability": 0.9819090366363525
+        },
+        {
+          "start": 7.14,
+          "end": 7.38,
+          "word": "啊、",
+          "probability": 0.6669825911521912
+        },
+        {
+          "start": 7.48,
+          "end": 7.66,
+          "word": "肉",
+          "probability": 0.996517539024353
+        },
+        {
+          "start": 7.66,
+          "end": 7.88,
+          "word": "啊",
+          "probability": 0.9398765563964844
+        },
+        {
+          "start": 7.88,
+          "end": 8.12,
+          "word": "什麼",
+          "probability": 0.8246216177940369
+        },
+        {
+          "start": 8.12,
+          "end": 8.5,
+          "word": "的",
+          "probability": 0.9969371557235718
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 8.5,
+      "end": 12.56,
+      "text": "吃完晚飯,一家人去看了個電影",
+      "tokens": [
+        50814,
+        10123,
+        14128,
+        27080,
+        45229,
+        11,
+        2257,
+        5155,
+        4035,
+        6734,
+        4200,
+        2289,
+        3338,
+        20545,
+        16820,
+        51014
+      ],
+      "avg_logprob": -0.17961995408992576,
+      "compression_ratio": 1.256281407035176,
+      "no_speech_prob": 0.008261920884251595,
+      "words": [
+        {
+          "start": 8.5,
+          "end": 9.42,
+          "word": "吃",
+          "probability": 0.9059944152832031
+        },
+        {
+          "start": 9.42,
+          "end": 9.62,
+          "word": "完",
+          "probability": 0.9006648063659668
+        },
+        {
+          "start": 9.62,
+          "end": 9.86,
+          "word": "晚",
+          "probability": 0.9913075566291809
+        },
+        {
+          "start": 9.86,
+          "end": 10.2,
+          "word": "飯,",
+          "probability": 0.9916423559188843
+        },
+        {
+          "start": 10.46,
+          "end": 10.76,
+          "word": "一",
+          "probability": 0.9754298329353333
+        },
+        {
+          "start": 10.76,
+          "end": 10.94,
+          "word": "家",
+          "probability": 0.9917961359024048
+        },
+        {
+          "start": 10.94,
+          "end": 11.18,
+          "word": "人",
+          "probability": 0.9986327290534973
+        },
+        {
+          "start": 11.18,
+          "end": 11.4,
+          "word": "去",
+          "probability": 0.977375864982605
+        },
+        {
+          "start": 11.4,
+          "end": 11.62,
+          "word": "看",
+          "probability": 0.9954700469970703
+        },
+        {
+          "start": 11.62,
+          "end": 11.78,
+          "word": "了",
+          "probability": 0.9936578869819641
+        },
+        {
+          "start": 11.78,
+          "end": 11.92,
+          "word": "個",
+          "probability": 0.971114456653595
+        },
+        {
+          "start": 11.92,
+          "end": 12.12,
+          "word": "電",
+          "probability": 0.9972561001777649
+        },
+        {
+          "start": 12.12,
+          "end": 12.56,
+          "word": "影",
+          "probability": 0.999281108379364
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 13.220000000000004,
+      "end": 16.98,
+      "text": "回家後,孩子們早早的就上床了",
+      "tokens": [
+        51014,
+        8350,
+        5155,
+        5661,
+        11,
+        48989,
+        4623,
+        21176,
+        21176,
+        1546,
+        3111,
+        5708,
+        6346,
+        232,
+        2289,
+        51239
+      ],
+      "avg_logprob": -0.17961995408992576,
+      "compression_ratio": 1.256281407035176,
+      "no_speech_prob": 0.008261920884251595,
+      "words": [
+        {
+          "start": 13.220000000000004,
+          "end": 13.74,
+          "word": "回",
+          "probability": 0.9714235067367554
+        },
+        {
+          "start": 13.74,
+          "end": 13.96,
+          "word": "家",
+          "probability": 0.9996684789657593
+        },
+        {
+          "start": 13.96,
+          "end": 14.26,
+          "word": "後,",
+          "probability": 0.9963487386703491
+        },
+        {
+          "start": 14.6,
+          "end": 14.86,
+          "word": "孩子",
+          "probability": 0.9961657524108887
+        },
+        {
+          "start": 14.86,
+          "end": 15.14,
+          "word": "們",
+          "probability": 0.9973168969154358
+        },
+        {
+          "start": 15.14,
+          "end": 15.36,
+          "word": "早",
+          "probability": 0.9932071566581726
+        },
+        {
+          "start": 15.36,
+          "end": 15.64,
+          "word": "早",
+          "probability": 0.9829385280609131
+        },
+        {
+          "start": 15.64,
+          "end": 15.82,
+          "word": "的",
+          "probability": 0.7635671496391296
+        },
+        {
+          "start": 15.82,
+          "end": 16.02,
+          "word": "就",
+          "probability": 0.985066294670105
+        },
+        {
+          "start": 16.02,
+          "end": 16.24,
+          "word": "上",
+          "probability": 0.9972148537635803
+        },
+        {
+          "start": 16.24,
+          "end": 16.52,
+          "word": "床",
+          "probability": 0.991435319185257
+        },
+        {
+          "start": 16.52,
+          "end": 16.98,
+          "word": "了",
+          "probability": 0.9924099445343018
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 17.760000000000005,
+      "end": 22.42,
+      "text": "明天不上學,他們說要叔叔夫夫的睡一覺",
+      "tokens": [
+        51239,
+        11100,
+        6135,
+        1960,
+        5708,
+        21372,
+        11,
+        20486,
+        4622,
+        4275,
+        39936,
+        39936,
+        26364,
+        26364,
+        1546,
+        40490,
+        2257,
+        9463,
+        51514
+      ],
+      "avg_logprob": -0.17961995408992576,
+      "compression_ratio": 1.256281407035176,
+      "no_speech_prob": 0.008261920884251595,
+      "words": [
+        {
+          "start": 17.760000000000005,
+          "end": 18.28,
+          "word": "明",
+          "probability": 0.9176676273345947
+        },
+        {
+          "start": 18.28,
+          "end": 18.54,
+          "word": "天",
+          "probability": 0.9977723956108093
+        },
+        {
+          "start": 18.54,
+          "end": 18.7,
+          "word": "不",
+          "probability": 0.9932031631469727
+        },
+        {
+          "start": 18.7,
+          "end": 18.88,
+          "word": "上",
+          "probability": 0.9993062019348145
+        },
+        {
+          "start": 18.88,
+          "end": 19.26,
+          "word": "學,",
+          "probability": 0.9982061386108398
+        },
+        {
+          "start": 19.54,
+          "end": 20.02,
+          "word": "他們",
+          "probability": 0.9661051630973816
+        },
+        {
+          "start": 20.02,
+          "end": 20.32,
+          "word": "說",
+          "probability": 0.9935175180435181
+        },
+        {
+          "start": 20.32,
+          "end": 20.62,
+          "word": "要",
+          "probability": 0.9824817776679993
+        },
+        {
+          "start": 20.62,
+          "end": 20.88,
+          "word": "叔",
+          "probability": 0.7017524838447571
+        },
+        {
+          "start": 20.88,
+          "end": 21.08,
+          "word": "叔",
+          "probability": 0.9995386600494385
+        },
+        {
+          "start": 21.08,
+          "end": 21.28,
+          "word": "夫",
+          "probability": 0.9080108404159546
+        },
+        {
+          "start": 21.28,
+          "end": 21.5,
+          "word": "夫",
+          "probability": 0.8791822195053101
+        },
+        {
+          "start": 21.5,
+          "end": 21.68,
+          "word": "的",
+          "probability": 0.7610763311386108
+        },
+        {
+          "start": 21.68,
+          "end": 21.96,
+          "word": "睡",
+          "probability": 0.9980137348175049
+        },
+        {
+          "start": 21.96,
+          "end": 22.18,
+          "word": "一",
+          "probability": 0.9924242496490479
+        },
+        {
+          "start": 22.18,
+          "end": 22.42,
+          "word": "覺",
+          "probability": 0.9968920350074768
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 23.0,
+      "end": 25.28,
+      "text": "讓我們晚點叫他們起床",
+      "tokens": [
+        51514,
+        21195,
+        5884,
+        27080,
+        8216,
+        19855,
+        20486,
+        9147,
+        6346,
+        232,
+        51664
+      ],
+      "avg_logprob": -0.17961995408992576,
+      "compression_ratio": 1.256281407035176,
+      "no_speech_prob": 0.008261920884251595,
+      "words": [
+        {
+          "start": 23.0,
+          "end": 23.4,
+          "word": "讓",
+          "probability": 0.939620852470398
+        },
+        {
+          "start": 23.4,
+          "end": 23.68,
+          "word": "我們",
+          "probability": 0.9983273148536682
+        },
+        {
+          "start": 23.68,
+          "end": 23.96,
+          "word": "晚",
+          "probability": 0.9959766268730164
+        },
+        {
+          "start": 23.96,
+          "end": 24.2,
+          "word": "點",
+          "probability": 0.9540409445762634
+        },
+        {
+          "start": 24.2,
+          "end": 24.44,
+          "word": "叫",
+          "probability": 0.8632065057754517
+        },
+        {
+          "start": 24.44,
+          "end": 24.72,
+          "word": "他們",
+          "probability": 0.9820448160171509
+        },
+        {
+          "start": 24.72,
+          "end": 24.96,
+          "word": "起",
+          "probability": 0.9957542419433594
+        },
+        {
+          "start": 24.96,
+          "end": 25.28,
+          "word": "床",
+          "probability": 0.9998664557933807
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2528,
+      "start": 26.26,
+      "end": 30.32,
+      "text": "这是很忙、很累、但很快乐的一天。",
+      "tokens": [
+        50364,
+        27455,
+        4563,
+        48839,
+        1231,
+        4563,
+        43656,
+        1231,
+        8395,
+        4563,
+        10251,
+        44365,
+        1546,
+        2257,
+        6135,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.24728881650500828,
+      "compression_ratio": 0.8888888888888888,
+      "no_speech_prob": 0.30112189054489136,
+      "words": [
+        {
+          "start": 26.26,
+          "end": 26.82,
+          "word": "这是",
+          "probability": 0.4006618559360504
+        },
+        {
+          "start": 26.82,
+          "end": 27.12,
+          "word": "很",
+          "probability": 0.9710615277290344
+        },
+        {
+          "start": 27.12,
+          "end": 27.4,
+          "word": "忙、",
+          "probability": 0.9968811273574829
+        },
+        {
+          "start": 27.9,
+          "end": 28.0,
+          "word": "很",
+          "probability": 0.994252622127533
+        },
+        {
+          "start": 28.0,
+          "end": 28.32,
+          "word": "累、",
+          "probability": 0.997437596321106
+        },
+        {
+          "start": 28.78,
+          "end": 29.0,
+          "word": "但",
+          "probability": 0.933002233505249
+        },
+        {
+          "start": 29.0,
+          "end": 29.24,
+          "word": "很",
+          "probability": 0.9909432530403137
+        },
+        {
+          "start": 29.24,
+          "end": 29.54,
+          "word": "快",
+          "probability": 0.998602569103241
+        },
+        {
+          "start": 29.54,
+          "end": 29.76,
+          "word": "乐",
+          "probability": 0.9952979683876038
+        },
+        {
+          "start": 29.76,
+          "end": 29.88,
+          "word": "的",
+          "probability": 0.9904050827026367
+        },
+        {
+          "start": 29.88,
+          "end": 30.06,
+          "word": "一",
+          "probability": 0.995031476020813
+        },
+        {
+          "start": 30.06,
+          "end": 30.32,
+          "word": "天。",
+          "probability": 0.9992135763168335
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.065792154999997,
+  "realTimeFactor": 0.09721563150050726,
+  "observationChecks": {
+    "rawWordCount": 86,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

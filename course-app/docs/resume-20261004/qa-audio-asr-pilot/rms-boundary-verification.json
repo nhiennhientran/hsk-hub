@@ -1,0 +1,713 @@
+{
+  "status": "100/100 four raw RMS windows and two padded-outside windows independently recomputed equal; hold conditions verified",
+  "inputSHA256": "f90d926aa65f94b1461bdee4fc1f0265c399c1ac1952526780365047b5b247a4",
+  "counts": {
+    "probes": 100,
+    "activeBoundaryHolds": 67,
+    "lowProbabilityHolds": 16
+  },
+  "probeChecks": [
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line3",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line4:sentence1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line5",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line6",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word01",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word02",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word03",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word05",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line3",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line4",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line5",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line6",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word06",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word07",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word09",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word10",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line3",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line4",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line5",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line6",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word11",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word12",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word13",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word14",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word15",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word16",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line3",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line4",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word01",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word02",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word03",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word04",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word05",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word06",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word08",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word09",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line1:sentence2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line5",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line6",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8:sentence1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word11",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word12",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word13",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word14",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word15",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line4",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line5",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line6",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line6:sentence1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line6:sentence2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line7",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word16",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word19",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word20",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line2:sentence1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line2:sentence2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line3",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line4",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line5",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line6",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line6:sentence1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line6:sentence2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word01",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word05",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word06",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line3",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line4",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line5",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line5:sentence1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line5:sentence2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line7",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line7:sentence1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line7:sentence2",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line8",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line1",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line3",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line4",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line5",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line6",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word09",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word10",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word11",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word12",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence6",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": true,
+      "lowProbabilityHold": true,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word14",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word15",
+      "all20msRMSValuesRecomputedEqual": true,
+      "activeBoundaryHold": false,
+      "lowProbabilityHold": false,
+      "paddingRemainsUnapproved": true
+    }
+  ],
+  "humanListening": false,
+  "productionApprovedClipCount": 0
+}

@@ -1,0 +1,104 @@
+{
+  "generatedAt": "2026-10-04T17:39:05.269Z",
+  "status": "passed",
+  "negativeProbes": 16,
+  "scope": "Actual protected 2da baseline and actual frozen checkpoint; source inputs remain unchanged",
+  "results": [
+    {
+      "kind": "baseline-byte",
+      "status": "passed",
+      "observedError": "Protected baseline mismatch hsk4/index.html",
+      "outputCreated": false
+    },
+    {
+      "kind": "baseline-extra",
+      "status": "passed",
+      "observedError": "Missing or extra protected baseline files",
+      "outputCreated": false
+    },
+    {
+      "kind": "package-byte",
+      "status": "passed",
+      "observedError": "Frozen checkpoint mismatch course-engine/source-activities/figures/l01-text-1-photo.png",
+      "outputCreated": false
+    },
+    {
+      "kind": "poisoned-approved-crop",
+      "status": "passed",
+      "observedError": "Unapproved frozen original crop course-engine/source-activities/figures/l01-text-1-photo.png",
+      "outputCreated": false
+    },
+    {
+      "kind": "extra-private-pdf",
+      "status": "passed",
+      "observedError": "Frozen checkpoint mismatch course-engine/source-activities/figures/whole-page.pdf",
+      "outputCreated": false
+    },
+    {
+      "kind": "extra-private-svg",
+      "status": "passed",
+      "observedError": "Frozen checkpoint mismatch course-engine/illustrations/private-full-page.svg",
+      "outputCreated": false
+    },
+    {
+      "kind": "extra-backend-js",
+      "status": "passed",
+      "observedError": "Frozen checkpoint mismatch course-engine/tools/backend.js",
+      "outputCreated": false
+    },
+    {
+      "kind": "legacy-overwrite",
+      "status": "passed",
+      "observedError": "Frozen checkpoint mismatch hsk4/index.html",
+      "outputCreated": false
+    },
+    {
+      "kind": "manifest-duplicate",
+      "status": "passed",
+      "observedError": "Missing or extra frozen checkpoint files",
+      "outputCreated": false
+    },
+    {
+      "kind": "wrong-production",
+      "status": "passed",
+      "observedError": "Wrong unified checkpoint identity",
+      "outputCreated": false
+    },
+    {
+      "kind": "fake-release",
+      "status": "passed",
+      "observedError": "Wrong unified checkpoint identity",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-required-alias-crop",
+      "status": "passed",
+      "observedError": "Missing required unified output new-hsk2/hsk2/source-activities/figures/l01-text-1-photo.png",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-required-entry",
+      "status": "passed",
+      "observedError": "Missing required unified output new-hsk3/hsk3/index.html",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-main-bundle",
+      "status": "passed",
+      "observedError": "Missing required bundle dependency course-engine/assets/index-Ke5oARNM.js from index.html",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-original-audio",
+      "status": "passed",
+      "observedError": "Missing or changed required original audio course-engine/course-assets/audio/1-1.mp3",
+      "outputCreated": false
+    },
+    {
+      "kind": "missing-handwriting",
+      "status": "passed",
+      "observedError": "Missing required unified output course-engine/course-assets/hanzi/一.json",
+      "outputCreated": false
+    }
+  ]
+}

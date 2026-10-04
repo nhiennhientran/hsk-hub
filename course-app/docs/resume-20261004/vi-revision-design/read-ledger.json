@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "status": "design-read-identity-only",
+  "recordedAtUtc": "2026-10-04T18:09:42.303499+00:00",
+  "baselinePolicy": "Worktree actual SHA; recheck against A9 freeze before implementation. No source hashes invented for inaccessible old PDFs.",
+  "files": [
+    {
+      "path": "course-app/docs/resume-20261004/TEXTBOOK-DISPLAY-REVISIONS.md",
+      "bytes": 5074,
+      "sha256": "ad7777da93492728cf04e364badd98297697156432abbf74251f9e6ae5c07fb4",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory/README.md",
+      "bytes": 11865,
+      "sha256": "d2a10aa6eac7698fd9b977faee3fd0cd217f937c04b66c0f0dc677b6d3865aee",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory/pilot-source-index.json",
+      "bytes": 3015,
+      "sha256": "032978c310edc47fe083794e8e20f80bb48d621457098837b99fac634eab4190",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory/summary.json",
+      "bytes": 6053,
+      "sha256": "948cbd143632ec4022532f8fe911a5418a47b827510dcc76c3f1d54f06071d44",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/src/content.ts",
+      "bytes": 2186,
+      "sha256": "0388a6882b8db4065b56f92526ebfe4ff91d8d3abd8b50fc60086360c0c56f67",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/src/lexicon.ts",
+      "bytes": 1341,
+      "sha256": "eea19bf5871009d76c7af075a53d737ecba9e5587696343407fd391c04dd73bf",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/src/types.ts",
+      "bytes": 4181,
+      "sha256": "b7b2dfee504bd764ac6560f0d698d5ae996110100ec98577fc4f378dfa832626",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/src/state.ts",
+      "bytes": 12140,
+      "sha256": "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/src/activity-history.ts",
+      "bytes": 2674,
+      "sha256": "7edeeacf227f030bcf5377f7f9b364c80c844e37dcc2843e37aa2197d7e1bc46",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/src/lesson-view.ts",
+      "bytes": 40716,
+      "sha256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/src/main.ts",
+      "bytes": 61910,
+      "sha256": "9f0309622e30f4362132ddfa381b18494de99df3761ae609cd5c60b9bbaa928d",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/src/listening-view.ts",
+      "bytes": 11701,
+      "sha256": "3c7384db55bf7fba043c76e3ff8120a278f576fec4310a836a1fdfcb9d4a8050",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/src/backup-view.ts",
+      "bytes": 12964,
+      "sha256": "c0da5580179d6aadbb1f22cd1679fa410cf31f413db20f7dd7020e5cd31a779b",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/src/hsk1-bridge.ts",
+      "bytes": 6122,
+      "sha256": "013b682bf884bef3211277166fb285114f8824392e88bb615885596057bd7ae5",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/tools/package-unified.mjs",
+      "bytes": 12485,
+      "sha256": "acd9c9b664104bd9311dc624c1769d3a0f8c05546cc831aa2e270bddc6983a34",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "course-app/tools/package-core.mjs",
+      "bytes": 8516,
+      "sha256": "cbd2a2d8e2bbe301bf8cfd4ec4137a5c84c8d927ab8de4cf8df8f99a34485d2a",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/content/textbook-display-revisions.ts",
+      "bytes": 5154,
+      "sha256": "2ee435e327f656981fc4bf30ecd680907c2d33b31ef79f7074cef8176f308a09",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/content/textbook.ts",
+      "bytes": 20651,
+      "sha256": "0628c59d758196ebe924568e1b8cb1977a99e2562bbdc1de7656e33204d54ce1",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/content/vocabulary.ts",
+      "bytes": 17105,
+      "sha256": "11285cbb3907225e79413ab0a902602935b16e312ea7bee9eaaccdb825bd8cbe",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/content/listening.ts",
+      "bytes": 11903,
+      "sha256": "f3e141a36d98ad7abf1576c5fc4f267a81a696b3f3c98b5708ecfc4c60d344e1",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/content/homework.ts",
+      "bytes": 4460,
+      "sha256": "b0c023917c79a096ff62860eb3e4a309054b5ce4f1fa1420169e08374bc306e3",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/content/homework30.ts",
+      "bytes": 4981,
+      "sha256": "83e025aa50bf6264fe680c2b31037009def653bb40f63b4ec5e1e4818e0b0c62",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/content/exercises.ts",
+      "bytes": 1155,
+      "sha256": "7df974c888f176d3b8661cda9fd86d951c74f7b4be37601fc5f95941f05fc9a2",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/storage/compatibility.ts",
+      "bytes": 43416,
+      "sha256": "ce624cc1b417586aea6d6c674608d890ff5483652d5e742eb072392cde3cff6f",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/storage/index.ts",
+      "bytes": 18336,
+      "sha256": "a0f3c1838c7c83c4af7ae46c61418f674d332499a61e56b69cfbcb080a4efab0",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/learning/session.ts",
+      "bytes": 5372,
+      "sha256": "50460eb3f8015997acbf68ee837da8f0f5fbe8d6b3c20d1efbfb17d296853a8f",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/source-activities/content.ts",
+      "bytes": 4898,
+      "sha256": "e77761c05bcc24418eee07cfedd217950cdbb381157d21f8b8c019d52d062d44",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/source-activities/state.ts",
+      "bytes": 10025,
+      "sha256": "7678c98fa0d2a53d335971de3f8c9e0346d19d732ac734b99e8191443ac9c34a",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/services/source-activities/store.ts",
+      "bytes": 4653,
+      "sha256": "630613cdc164b142fee6f2fd159736576fb761e47958001df8b676058b0fa9a6",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/domain/listening/controller.ts",
+      "bytes": 9063,
+      "sha256": "4af055a9b23c3e943bee4c19b66d783260977e33cbcae133feb60fe079e7d8b0",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/domain/vocabulary/mixed-controller.ts",
+      "bytes": 7282,
+      "sha256": "f7d4d6aa00649abebbf376ce34ef58b9dda02cb6b23306f32b742e33e93fbae3",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/domain/vocabulary/mixed-state.ts",
+      "bytes": 6532,
+      "sha256": "763a4a30a5eccad4c0d1cc25d743f1d14af013f4235868a398e57b91254f11ac",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/domain/homework30/engine.ts",
+      "bytes": 11748,
+      "sha256": "f5684607b1cb73ce316e6c65fa135b645ee274859ac14a428d6d50cc654532cb",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/domain/homework/engine.js",
+      "bytes": 29611,
+      "sha256": "5a8ac5bbab07bf3dc505c46d3d0ea8ef48d14017e6875742ff816d4646295321",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/domain/practice/engine.js",
+      "bytes": 36082,
+      "sha256": "2c9b3c43f5980b12e4333e56a06cb660a012d3842c5b1e04e22a7756af79452c",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/domain/types.ts",
+      "bytes": 1906,
+      "sha256": "d4dc9527486957232967eb7fd2fc393481560061474cfc753306f154fe7c7601",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/listening/index.ts",
+      "bytes": 23495,
+      "sha256": "9536ff2bb6e3a09f2f9f7acfdb72d465d81e984919edcda528f65c4cfaa627e9",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/homework/controller.ts",
+      "bytes": 6909,
+      "sha256": "687b5df3b4a6af90141a58d23e4f762d196f16db42dfea4ce15500506815a66c",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/homework/controller30.ts",
+      "bytes": 5065,
+      "sha256": "4dc4039edc555cf1010db261dde223c35612e70b94f5ad4ed3ad671e333e900e",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/homework/index.ts",
+      "bytes": 23151,
+      "sha256": "461c0a88e13fd7cf539724326332b6556cc331a7676c037e0c4501fbeb948b91",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/homework/index30.ts",
+      "bytes": 27423,
+      "sha256": "29ac0b1fb16fe910cb1350775cb08bcff38af586840e8b36293cbaf30660b889",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/homework/receipt.ts",
+      "bytes": 6262,
+      "sha256": "181c78deff63c6b2a9414b57fb8d229a93ac6d3d58e7511dc32e6a41dab7f0be",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/exercises/archive-data.ts",
+      "bytes": 3876,
+      "sha256": "ddc94ee93ca6235b942769d7876be757d0c171946546c91e7b9cdd86128e9fac",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/exercises/archive.ts",
+      "bytes": 13893,
+      "sha256": "3ce482e147eccf909fd7ec81b42d2cb4b3f0bd740209cd9549416df2d03fdbaf",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/exercises/index.ts",
+      "bytes": 22525,
+      "sha256": "9cb023534e3eddb12254ea9bb18636b0fb394c5fcd89813317b58b61ca76bc14",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/progress/content.ts",
+      "bytes": 1215,
+      "sha256": "515d1f6823c57a8ad5631489de5eb0ce98748e8ffdbc29d7eca659cc30e8537e",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/textbook/vocabulary.ts",
+      "bytes": 9881,
+      "sha256": "73af993be2ba0a20bcc90c80f2e59710326cadc9c8772d4e9bc972a159a059ca",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/src/features/vocabulary/view.ts",
+      "bytes": 16808,
+      "sha256": "db2c3cd7aa923222240b68c5eb8d8924b3a2566c3689e428118941d243f3a53f",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/tools/release-manifest.mjs",
+      "bytes": 1674,
+      "sha256": "241744c94d9be39e078c44388eac145da1c956c021182b04d9ce8170b42b87ab",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/content/textbook-display-revisions.json",
+      "bytes": 26130,
+      "sha256": "3d3e325b587fd3b41fb11a908db6e74a37f2c9d95cac247a663112e71f8f9e55",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/content/textbook.json",
+      "bytes": 741675,
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/content/homework30-bank.json",
+      "bytes": 854221,
+      "sha256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/content/stage2-bank.json",
+      "bytes": 269656,
+      "sha256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/content/stage3-catalog.json",
+      "bytes": 384024,
+      "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    },
+    {
+      "path": "hsk1-app/content/legacy-exercises.json",
+      "bytes": 446661,
+      "sha256": "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c",
+      "readScope": "engineering structure/selected semantic paths; not full textbook language audit"
+    }
+  ],
+  "sourcesReusedFromInventory": [
+    {
+      "level": 1,
+      "sha256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764"
+    },
+    {
+      "level": 2,
+      "sha256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b"
+    },
+    {
+      "level": 3,
+      "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+    }
+  ],
+  "sourceReadScope": "Official PDF identities reused from accepted inventory; no PDF pages or official VI strings audited during this design."
+}

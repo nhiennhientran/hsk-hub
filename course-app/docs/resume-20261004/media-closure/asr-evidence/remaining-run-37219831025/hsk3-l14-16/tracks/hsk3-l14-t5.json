@@ -1,0 +1,1044 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l14:audio5",
+    "level": 3,
+    "lesson": 14,
+    "track": 5,
+    "kind": "text",
+    "text": 3,
+    "file": "course-assets/hsk3/audio/14-5.mp3",
+    "sha256": "08c11eef35ab2f8addcd60b64715034b732a4b968f039c279af3f68da72572ee",
+    "bytes": 533629,
+    "manifestDurationSeconds": 30.813878,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 494028,
+      "durationSeconds": 30.87675,
+      "sha256": "15c5e9f08823173927ed05dc60e473745ef8ee2b293c5d45867b235b4253a4b8"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 30.87675,
+    "duration_after_vad": 30.87675,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.82,
+      "text": "下周学校有晚会你知道吗",
+      "tokens": [
+        50364,
+        4438,
+        37390,
+        29618,
+        49684,
+        2412,
+        27080,
+        12949,
+        28945,
+        14769,
+        50514
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.74,
+          "word": "下",
+          "probability": 0.34175676107406616
+        },
+        {
+          "start": 0.74,
+          "end": 0.94,
+          "word": "周",
+          "probability": 0.9250271916389465
+        },
+        {
+          "start": 0.94,
+          "end": 1.16,
+          "word": "学",
+          "probability": 0.5441120862960815
+        },
+        {
+          "start": 1.16,
+          "end": 1.32,
+          "word": "校",
+          "probability": 0.9990290403366089
+        },
+        {
+          "start": 1.32,
+          "end": 1.44,
+          "word": "有",
+          "probability": 0.9844792485237122
+        },
+        {
+          "start": 1.44,
+          "end": 1.62,
+          "word": "晚",
+          "probability": 0.98533695936203
+        },
+        {
+          "start": 1.62,
+          "end": 1.84,
+          "word": "会",
+          "probability": 0.9956619143486023
+        },
+        {
+          "start": 1.84,
+          "end": 2.34,
+          "word": "你知道",
+          "probability": 0.6774546504020691
+        },
+        {
+          "start": 2.34,
+          "end": 2.82,
+          "word": "吗",
+          "probability": 0.977239727973938
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.82,
+      "end": 3.74,
+      "text": "知道",
+      "tokens": [
+        50514,
+        7758,
+        50564
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 2.82,
+          "end": 3.74,
+          "word": "知道",
+          "probability": 0.5756955742835999
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 3.74,
+      "end": 6.62,
+      "text": "我和几个女生要表演一个节目",
+      "tokens": [
+        50564,
+        1654,
+        12565,
+        6336,
+        254,
+        7549,
+        17015,
+        8244,
+        4275,
+        17571,
+        31382,
+        20182,
+        45161,
+        11386,
+        50714
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 3.74,
+          "end": 4.46,
+          "word": "我",
+          "probability": 0.5419371724128723
+        },
+        {
+          "start": 4.46,
+          "end": 4.62,
+          "word": "和",
+          "probability": 0.9949474334716797
+        },
+        {
+          "start": 4.62,
+          "end": 4.78,
+          "word": "几",
+          "probability": 0.9981491267681122
+        },
+        {
+          "start": 4.78,
+          "end": 4.88,
+          "word": "个",
+          "probability": 0.9981393814086914
+        },
+        {
+          "start": 4.88,
+          "end": 5.04,
+          "word": "女",
+          "probability": 0.998993456363678
+        },
+        {
+          "start": 5.04,
+          "end": 5.3,
+          "word": "生",
+          "probability": 0.9991198182106018
+        },
+        {
+          "start": 5.3,
+          "end": 5.54,
+          "word": "要",
+          "probability": 0.9676297903060913
+        },
+        {
+          "start": 5.54,
+          "end": 5.74,
+          "word": "表",
+          "probability": 0.9976268410682678
+        },
+        {
+          "start": 5.74,
+          "end": 5.92,
+          "word": "演",
+          "probability": 0.9997925162315369
+        },
+        {
+          "start": 5.92,
+          "end": 6.1,
+          "word": "一个",
+          "probability": 0.995522141456604
+        },
+        {
+          "start": 6.1,
+          "end": 6.34,
+          "word": "节",
+          "probability": 0.9991663694381714
+        },
+        {
+          "start": 6.34,
+          "end": 6.62,
+          "word": "目",
+          "probability": 0.9995607733726501
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 6.62,
+      "end": 8.18,
+      "text": "你也参加吗",
+      "tokens": [
+        50714,
+        2166,
+        6404,
+        2129,
+        224,
+        9990,
+        14769,
+        50814
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 6.62,
+          "end": 7.28,
+          "word": "你",
+          "probability": 0.8932790160179138
+        },
+        {
+          "start": 7.28,
+          "end": 7.42,
+          "word": "也",
+          "probability": 0.9949790835380554
+        },
+        {
+          "start": 7.42,
+          "end": 7.6,
+          "word": "参",
+          "probability": 0.9981670081615448
+        },
+        {
+          "start": 7.6,
+          "end": 7.78,
+          "word": "加",
+          "probability": 0.9996830224990845
+        },
+        {
+          "start": 7.78,
+          "end": 8.18,
+          "word": "吗",
+          "probability": 0.9939927458763123
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 9.0,
+      "end": 10.16,
+      "text": "我想唱中文歌",
+      "tokens": [
+        50814,
+        25246,
+        39861,
+        5975,
+        17174,
+        29582,
+        50914
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 8.88,
+          "end": 9.12,
+          "word": "我想",
+          "probability": 0.9686939716339111
+        },
+        {
+          "start": 9.12,
+          "end": 9.46,
+          "word": "唱",
+          "probability": 0.9987159967422485
+        },
+        {
+          "start": 9.46,
+          "end": 9.78,
+          "word": "中",
+          "probability": 0.9839149713516235
+        },
+        {
+          "start": 9.78,
+          "end": 9.94,
+          "word": "文",
+          "probability": 0.9996024966239929
+        },
+        {
+          "start": 9.94,
+          "end": 10.16,
+          "word": "歌",
+          "probability": 0.9943462014198303
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 11.0,
+      "end": 13.18,
+      "text": "但是还没找到人一起表演",
+      "tokens": [
+        50914,
+        11189,
+        14852,
+        10062,
+        25085,
+        4511,
+        4035,
+        29567,
+        17571,
+        31382,
+        51014
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 10.860000000000001,
+          "end": 11.1,
+          "word": "但是",
+          "probability": 0.9454883337020874
+        },
+        {
+          "start": 11.1,
+          "end": 11.66,
+          "word": "还",
+          "probability": 0.9634965062141418
+        },
+        {
+          "start": 11.66,
+          "end": 11.78,
+          "word": "没",
+          "probability": 0.9724211096763611
+        },
+        {
+          "start": 11.78,
+          "end": 11.96,
+          "word": "找",
+          "probability": 0.9989333748817444
+        },
+        {
+          "start": 11.96,
+          "end": 12.14,
+          "word": "到",
+          "probability": 0.9985400438308716
+        },
+        {
+          "start": 12.14,
+          "end": 12.36,
+          "word": "人",
+          "probability": 0.9984682202339172
+        },
+        {
+          "start": 12.36,
+          "end": 12.62,
+          "word": "一起",
+          "probability": 0.9967072606086731
+        },
+        {
+          "start": 12.62,
+          "end": 12.88,
+          "word": "表",
+          "probability": 0.9985596537590027
+        },
+        {
+          "start": 12.88,
+          "end": 13.18,
+          "word": "演",
+          "probability": 0.9999194145202637
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 13.18,
+      "end": 14.36,
+      "text": "不知道怎么办",
+      "tokens": [
+        51014,
+        17572,
+        15282,
+        39453,
+        51114
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 13.18,
+          "end": 13.62,
+          "word": "不知道",
+          "probability": 0.9505387544631958
+        },
+        {
+          "start": 13.62,
+          "end": 13.94,
+          "word": "怎么",
+          "probability": 0.9941064119338989
+        },
+        {
+          "start": 13.94,
+          "end": 14.36,
+          "word": "办",
+          "probability": 0.9994701743125916
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 15.200000000000003,
+      "end": 17.84,
+      "text": "找不到人你就一个人唱吧",
+      "tokens": [
+        51114,
+        25085,
+        35728,
+        4035,
+        41045,
+        20182,
+        4035,
+        39861,
+        6062,
+        51264
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 15.200000000000003,
+          "end": 15.68,
+          "word": "找",
+          "probability": 0.9608299732208252
+        },
+        {
+          "start": 15.68,
+          "end": 15.86,
+          "word": "不到",
+          "probability": 0.9984986782073975
+        },
+        {
+          "start": 15.86,
+          "end": 16.28,
+          "word": "人",
+          "probability": 0.9982932209968567
+        },
+        {
+          "start": 16.28,
+          "end": 16.7,
+          "word": "你就",
+          "probability": 0.9459167122840881
+        },
+        {
+          "start": 16.7,
+          "end": 16.98,
+          "word": "一个",
+          "probability": 0.994403064250946
+        },
+        {
+          "start": 16.98,
+          "end": 17.16,
+          "word": "人",
+          "probability": 0.9981879591941833
+        },
+        {
+          "start": 17.16,
+          "end": 17.38,
+          "word": "唱",
+          "probability": 0.9977604150772095
+        },
+        {
+          "start": 17.38,
+          "end": 17.84,
+          "word": "吧",
+          "probability": 0.9857195019721985
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 0,
+      "start": 17.84,
+      "end": 20.74,
+      "text": "一想到要在校长老师",
+      "tokens": [
+        51264,
+        2257,
+        7093,
+        4511,
+        4275,
+        3581,
+        49684,
+        32271,
+        10439,
+        29186,
+        51414
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 17.84,
+          "end": 18.78,
+          "word": "一",
+          "probability": 0.8045241236686707
+        },
+        {
+          "start": 18.78,
+          "end": 19.0,
+          "word": "想",
+          "probability": 0.9997101426124573
+        },
+        {
+          "start": 19.0,
+          "end": 19.24,
+          "word": "到",
+          "probability": 0.9839287996292114
+        },
+        {
+          "start": 19.24,
+          "end": 19.42,
+          "word": "要",
+          "probability": 0.9944466352462769
+        },
+        {
+          "start": 19.42,
+          "end": 19.6,
+          "word": "在",
+          "probability": 0.9942810535430908
+        },
+        {
+          "start": 19.6,
+          "end": 19.8,
+          "word": "校",
+          "probability": 0.9993164539337158
+        },
+        {
+          "start": 19.8,
+          "end": 20.08,
+          "word": "长",
+          "probability": 0.9983338713645935
+        },
+        {
+          "start": 20.08,
+          "end": 20.4,
+          "word": "老",
+          "probability": 0.805396556854248
+        },
+        {
+          "start": 20.4,
+          "end": 20.74,
+          "word": "师",
+          "probability": 0.997383177280426
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 10,
+      "seek": 0,
+      "start": 20.74,
+      "end": 22.8,
+      "text": "和那么多同学面前表演",
+      "tokens": [
+        51414,
+        12565,
+        35693,
+        6392,
+        13089,
+        29618,
+        8833,
+        8945,
+        17571,
+        31382,
+        51514
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 20.74,
+          "end": 21.12,
+          "word": "和",
+          "probability": 0.9967920184135437
+        },
+        {
+          "start": 21.12,
+          "end": 21.32,
+          "word": "那么",
+          "probability": 0.9697699546813965
+        },
+        {
+          "start": 21.32,
+          "end": 21.54,
+          "word": "多",
+          "probability": 0.9972841739654541
+        },
+        {
+          "start": 21.54,
+          "end": 21.72,
+          "word": "同",
+          "probability": 0.9980189800262451
+        },
+        {
+          "start": 21.72,
+          "end": 21.9,
+          "word": "学",
+          "probability": 0.998842179775238
+        },
+        {
+          "start": 21.9,
+          "end": 22.06,
+          "word": "面",
+          "probability": 0.9962713718414307
+        },
+        {
+          "start": 22.06,
+          "end": 22.26,
+          "word": "前",
+          "probability": 0.999367892742157
+        },
+        {
+          "start": 22.26,
+          "end": 22.48,
+          "word": "表",
+          "probability": 0.9968096613883972
+        },
+        {
+          "start": 22.48,
+          "end": 22.8,
+          "word": "演",
+          "probability": 0.9997791647911072
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 11,
+      "seek": 0,
+      "start": 22.8,
+      "end": 24.52,
+      "text": "我就有些紧张",
+      "tokens": [
+        51514,
+        22020,
+        2412,
+        13824,
+        7732,
+        100,
+        44059,
+        51614
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 22.8,
+          "end": 23.26,
+          "word": "我就",
+          "probability": 0.9753394722938538
+        },
+        {
+          "start": 23.26,
+          "end": 23.46,
+          "word": "有",
+          "probability": 0.9904614090919495
+        },
+        {
+          "start": 23.46,
+          "end": 23.64,
+          "word": "些",
+          "probability": 0.9965822100639343
+        },
+        {
+          "start": 23.64,
+          "end": 23.9,
+          "word": "紧",
+          "probability": 0.9978104531764984
+        },
+        {
+          "start": 23.9,
+          "end": 24.52,
+          "word": "张",
+          "probability": 0.997556209564209
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 12,
+      "seek": 0,
+      "start": 25.040000000000003,
+      "end": 26.14,
+      "text": "紧张什么",
+      "tokens": [
+        51614,
+        7732,
+        100,
+        44059,
+        10440,
+        51714
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 25.040000000000003,
+          "end": 25.52,
+          "word": "紧",
+          "probability": 0.9902099967002869
+        },
+        {
+          "start": 25.52,
+          "end": 25.82,
+          "word": "张",
+          "probability": 0.9986642599105835
+        },
+        {
+          "start": 25.82,
+          "end": 26.14,
+          "word": "什么",
+          "probability": 0.9897111654281616
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 13,
+      "seek": 0,
+      "start": 26.660000000000004,
+      "end": 28.48,
+      "text": "我们都喜欢听你唱歌",
+      "tokens": [
+        51714,
+        15003,
+        7182,
+        41606,
+        31022,
+        2166,
+        39861,
+        29582,
+        51814
+      ],
+      "avg_logprob": -0.12626199895500118,
+      "compression_ratio": 1.3205128205128205,
+      "no_speech_prob": 0.15426845848560333,
+      "words": [
+        {
+          "start": 26.660000000000004,
+          "end": 27.14,
+          "word": "我们",
+          "probability": 0.852824330329895
+        },
+        {
+          "start": 27.14,
+          "end": 27.34,
+          "word": "都",
+          "probability": 0.9989092350006104
+        },
+        {
+          "start": 27.34,
+          "end": 27.58,
+          "word": "喜欢",
+          "probability": 0.9987220168113708
+        },
+        {
+          "start": 27.58,
+          "end": 27.82,
+          "word": "听",
+          "probability": 0.9896625280380249
+        },
+        {
+          "start": 27.82,
+          "end": 27.96,
+          "word": "你",
+          "probability": 0.9958130717277527
+        },
+        {
+          "start": 27.96,
+          "end": 28.16,
+          "word": "唱",
+          "probability": 0.9991503953933716
+        },
+        {
+          "start": 28.16,
+          "end": 28.48,
+          "word": "歌",
+          "probability": 0.9993593096733093
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 14,
+      "seek": 2848,
+      "start": 28.48,
+      "end": 29.74,
+      "text": "你要相信自己",
+      "tokens": [
+        50364,
+        32085,
+        35428,
+        17645,
+        50464
+      ],
+      "avg_logprob": -0.5058746039867401,
+      "compression_ratio": 0.6206896551724138,
+      "no_speech_prob": 0.6644033193588257,
+      "words": [
+        {
+          "start": 28.48,
+          "end": 29.02,
+          "word": "你要",
+          "probability": 0.6799770593643188
+        },
+        {
+          "start": 29.02,
+          "end": 29.4,
+          "word": "相信",
+          "probability": 0.9847940802574158
+        },
+        {
+          "start": 29.4,
+          "end": 29.74,
+          "word": "自己",
+          "probability": 0.9945908784866333
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.14753020900001,
+  "realTimeFactor": 0.10193852037536366,
+  "observationChecks": {
+    "rawWordCount": 88,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

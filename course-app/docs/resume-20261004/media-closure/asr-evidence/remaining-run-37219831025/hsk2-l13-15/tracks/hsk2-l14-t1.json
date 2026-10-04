@@ -1,0 +1,648 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l14:audio1",
+    "level": 2,
+    "lesson": 14,
+    "track": 1,
+    "kind": "text",
+    "text": 1,
+    "file": "course-assets/hsk2/audio/14-1.mp3",
+    "sha256": "5b250eee8e408bca83df22a559a464209123101bca576d8e3c5cb106d08ba0ff",
+    "bytes": 590018,
+    "manifestDurationSeconds": 22.661333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 362496,
+      "durationSeconds": 22.656,
+      "sha256": "23667c285680a99eb2558c78d723c64b5dc58db8f31bbfd1223e6630d2dfc260"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 22.656,
+    "duration_after_vad": 22.656,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.9399999999999986,
+      "end": 3.82,
+      "text": "王老师,你家楼下站着一个人。",
+      "tokens": [
+        50364,
+        19940,
+        10439,
+        29186,
+        11,
+        2166,
+        5155,
+        162,
+        2429,
+        4438,
+        34155,
+        20708,
+        20182,
+        4035,
+        1543,
+        50564
+      ],
+      "avg_logprob": -0.15303627342769974,
+      "compression_ratio": 1.2922077922077921,
+      "no_speech_prob": 0.013306321576237679,
+      "words": [
+        {
+          "start": 0.9399999999999986,
+          "end": 1.38,
+          "word": "王",
+          "probability": 0.9188392162322998
+        },
+        {
+          "start": 1.38,
+          "end": 1.52,
+          "word": "老",
+          "probability": 0.7651088237762451
+        },
+        {
+          "start": 1.52,
+          "end": 1.76,
+          "word": "师,",
+          "probability": 0.9987564086914062
+        },
+        {
+          "start": 2.22,
+          "end": 2.32,
+          "word": "你",
+          "probability": 0.8781024813652039
+        },
+        {
+          "start": 2.32,
+          "end": 2.48,
+          "word": "家",
+          "probability": 0.9750242829322815
+        },
+        {
+          "start": 2.48,
+          "end": 2.66,
+          "word": "楼",
+          "probability": 0.9841791391372681
+        },
+        {
+          "start": 2.66,
+          "end": 2.88,
+          "word": "下",
+          "probability": 0.9952874183654785
+        },
+        {
+          "start": 2.88,
+          "end": 3.14,
+          "word": "站",
+          "probability": 0.8746770620346069
+        },
+        {
+          "start": 3.14,
+          "end": 3.26,
+          "word": "着",
+          "probability": 0.9874465465545654
+        },
+        {
+          "start": 3.26,
+          "end": 3.48,
+          "word": "一个",
+          "probability": 0.9861792325973511
+        },
+        {
+          "start": 3.48,
+          "end": 3.82,
+          "word": "人。",
+          "probability": 0.99903404712677
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.28,
+      "end": 7.24,
+      "text": "我家楼下,我看看。",
+      "tokens": [
+        50564,
+        1654,
+        5155,
+        162,
+        2429,
+        4438,
+        11,
+        1654,
+        22884,
+        1543,
+        50764
+      ],
+      "avg_logprob": -0.15303627342769974,
+      "compression_ratio": 1.2922077922077921,
+      "no_speech_prob": 0.013306321576237679,
+      "words": [
+        {
+          "start": 5.28,
+          "end": 5.72,
+          "word": "我",
+          "probability": 0.9349302053451538
+        },
+        {
+          "start": 5.72,
+          "end": 5.9,
+          "word": "家",
+          "probability": 0.9912219047546387
+        },
+        {
+          "start": 5.9,
+          "end": 6.12,
+          "word": "楼",
+          "probability": 0.9952768683433533
+        },
+        {
+          "start": 6.12,
+          "end": 6.42,
+          "word": "下,",
+          "probability": 0.9960801005363464
+        },
+        {
+          "start": 6.84,
+          "end": 7.0,
+          "word": "我",
+          "probability": 0.9799730777740479
+        },
+        {
+          "start": 7.0,
+          "end": 7.24,
+          "word": "看看。",
+          "probability": 0.9936259984970093
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 9.2,
+      "end": 13.48,
+      "text": "那个人穿着黑色的裤子,手里还拿着一个黑色的包。",
+      "tokens": [
+        50764,
+        43083,
+        4035,
+        13740,
+        123,
+        20708,
+        32141,
+        17673,
+        1546,
+        8083,
+        97,
+        7626,
+        11,
+        11389,
+        15759,
+        14852,
+        24351,
+        20708,
+        20182,
+        32141,
+        17673,
+        1546,
+        23305,
+        1543,
+        51064
+      ],
+      "avg_logprob": -0.15303627342769974,
+      "compression_ratio": 1.2922077922077921,
+      "no_speech_prob": 0.013306321576237679,
+      "words": [
+        {
+          "start": 9.2,
+          "end": 9.64,
+          "word": "那个",
+          "probability": 0.9536442756652832
+        },
+        {
+          "start": 9.64,
+          "end": 9.9,
+          "word": "人",
+          "probability": 0.999345600605011
+        },
+        {
+          "start": 9.9,
+          "end": 10.16,
+          "word": "穿",
+          "probability": 0.9856738448143005
+        },
+        {
+          "start": 10.16,
+          "end": 10.3,
+          "word": "着",
+          "probability": 0.9854176044464111
+        },
+        {
+          "start": 10.3,
+          "end": 10.52,
+          "word": "黑",
+          "probability": 0.9919503927230835
+        },
+        {
+          "start": 10.52,
+          "end": 10.68,
+          "word": "色",
+          "probability": 0.9973471164703369
+        },
+        {
+          "start": 10.68,
+          "end": 10.78,
+          "word": "的",
+          "probability": 0.9827266931533813
+        },
+        {
+          "start": 10.78,
+          "end": 10.98,
+          "word": "裤",
+          "probability": 0.9791883230209351
+        },
+        {
+          "start": 10.98,
+          "end": 11.22,
+          "word": "子,",
+          "probability": 0.998524010181427
+        },
+        {
+          "start": 11.66,
+          "end": 11.78,
+          "word": "手",
+          "probability": 0.9574775099754333
+        },
+        {
+          "start": 11.78,
+          "end": 11.98,
+          "word": "里",
+          "probability": 0.9826762676239014
+        },
+        {
+          "start": 11.98,
+          "end": 12.18,
+          "word": "还",
+          "probability": 0.9753756523132324
+        },
+        {
+          "start": 12.18,
+          "end": 12.34,
+          "word": "拿",
+          "probability": 0.9921354055404663
+        },
+        {
+          "start": 12.34,
+          "end": 12.5,
+          "word": "着",
+          "probability": 0.9977924823760986
+        },
+        {
+          "start": 12.5,
+          "end": 12.68,
+          "word": "一个",
+          "probability": 0.9782866835594177
+        },
+        {
+          "start": 12.68,
+          "end": 13.0,
+          "word": "黑",
+          "probability": 0.9906792044639587
+        },
+        {
+          "start": 13.0,
+          "end": 13.16,
+          "word": "色",
+          "probability": 0.9978095889091492
+        },
+        {
+          "start": 13.16,
+          "end": 13.26,
+          "word": "的",
+          "probability": 0.9863067269325256
+        },
+        {
+          "start": 13.26,
+          "end": 13.48,
+          "word": "包。",
+          "probability": 0.9779722690582275
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 15.1,
+      "end": 18.16,
+      "text": "我看见那个人了,他是我男朋友。",
+      "tokens": [
+        51064,
+        1654,
+        4200,
+        23813,
+        43083,
+        4035,
+        2289,
+        11,
+        47046,
+        1654,
+        25243,
+        19828,
+        1543,
+        51314
+      ],
+      "avg_logprob": -0.15303627342769974,
+      "compression_ratio": 1.2922077922077921,
+      "no_speech_prob": 0.013306321576237679,
+      "words": [
+        {
+          "start": 15.1,
+          "end": 15.52,
+          "word": "我",
+          "probability": 0.9945029020309448
+        },
+        {
+          "start": 15.52,
+          "end": 15.74,
+          "word": "看",
+          "probability": 0.9782353639602661
+        },
+        {
+          "start": 15.74,
+          "end": 15.92,
+          "word": "见",
+          "probability": 0.9989145994186401
+        },
+        {
+          "start": 15.92,
+          "end": 16.12,
+          "word": "那个",
+          "probability": 0.9945717453956604
+        },
+        {
+          "start": 16.12,
+          "end": 16.44,
+          "word": "人",
+          "probability": 0.9997827410697937
+        },
+        {
+          "start": 16.44,
+          "end": 16.6,
+          "word": "了,",
+          "probability": 0.9730647206306458
+        },
+        {
+          "start": 17.08,
+          "end": 17.34,
+          "word": "他是",
+          "probability": 0.5828821659088135
+        },
+        {
+          "start": 17.34,
+          "end": 17.56,
+          "word": "我",
+          "probability": 0.9893317222595215
+        },
+        {
+          "start": 17.56,
+          "end": 17.74,
+          "word": "男",
+          "probability": 0.994839608669281
+        },
+        {
+          "start": 17.74,
+          "end": 18.16,
+          "word": "朋友。",
+          "probability": 0.9993768334388733
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 19.98,
+      "end": 21.68,
+      "text": "那我们快过去吧。",
+      "tokens": [
+        51314,
+        4184,
+        15003,
+        10251,
+        16866,
+        6734,
+        6062,
+        1543,
+        51464
+      ],
+      "avg_logprob": -0.15303627342769974,
+      "compression_ratio": 1.2922077922077921,
+      "no_speech_prob": 0.013306321576237679,
+      "words": [
+        {
+          "start": 19.98,
+          "end": 20.42,
+          "word": "那",
+          "probability": 0.9781782031059265
+        },
+        {
+          "start": 20.42,
+          "end": 20.74,
+          "word": "我们",
+          "probability": 0.973594069480896
+        },
+        {
+          "start": 20.74,
+          "end": 21.06,
+          "word": "快",
+          "probability": 0.9360682964324951
+        },
+        {
+          "start": 21.06,
+          "end": 21.24,
+          "word": "过",
+          "probability": 0.9979270696640015
+        },
+        {
+          "start": 21.24,
+          "end": 21.5,
+          "word": "去",
+          "probability": 0.9973621964454651
+        },
+        {
+          "start": 21.5,
+          "end": 21.68,
+          "word": "吧。",
+          "probability": 0.9953967928886414
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.58784686300001,
+  "realTimeFactor": 0.11422346676377164,
+  "observationChecks": {
+    "rawWordCount": 52,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

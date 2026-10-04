@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l03:audio2",
+    "level": 3,
+    "lesson": 3,
+    "track": 2,
+    "kind": "vocab",
+    "text": 1,
+    "file": "course-assets/hsk3/audio/3-2.mp3",
+    "sha256": "8ad54d8f8ee744daca8f74b9d65169008165fd8112bda5080b409212c1e0ceb7",
+    "bytes": 488591,
+    "manifestDurationSeconds": 27.999125,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 448888,
+      "durationSeconds": 28.0555,
+      "sha256": "f195a6854be5277f18b4112a00633b73dd3beb4cde7e06c311f22ddf77b360c9"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 28.0555,
+    "duration_after_vad": 28.0555,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.62,
+      "text": "初中",
+      "tokens": [
+        50364,
+        28727,
+        5975,
+        50514
+      ],
+      "avg_logprob": -0.4767943246691835,
+      "compression_ratio": 0.8450704225352113,
+      "no_speech_prob": 0.6128972768783569,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.8,
+          "word": "初",
+          "probability": 0.720413088798523
+        },
+        {
+          "start": 0.8,
+          "end": 2.62,
+          "word": "中",
+          "probability": 0.8509533405303955
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.62,
+      "end": 5.18,
+      "text": "咱们",
+      "tokens": [
+        50514,
+        8975,
+        109,
+        9497,
+        50640
+      ],
+      "avg_logprob": -0.4767943246691835,
+      "compression_ratio": 0.8450704225352113,
+      "no_speech_prob": 0.6128972768783569,
+      "words": [
+        {
+          "start": 2.62,
+          "end": 3.54,
+          "word": "咱",
+          "probability": 0.7268862724304199
+        },
+        {
+          "start": 3.54,
+          "end": 5.18,
+          "word": "们",
+          "probability": 0.7702292799949646
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.18,
+      "end": 7.28,
+      "text": "换",
+      "tokens": [
+        50640,
+        26075,
+        95,
+        50748
+      ],
+      "avg_logprob": -0.4767943246691835,
+      "compression_ratio": 0.8450704225352113,
+      "no_speech_prob": 0.6128972768783569,
+      "words": [
+        {
+          "start": 5.18,
+          "end": 7.28,
+          "word": "换",
+          "probability": 0.7383123636245728
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 7.28,
+      "end": 9.88,
+      "text": "房子",
+      "tokens": [
+        50748,
+        38242,
+        7626,
+        50868
+      ],
+      "avg_logprob": -0.4767943246691835,
+      "compression_ratio": 0.8450704225352113,
+      "no_speech_prob": 0.6128972768783569,
+      "words": [
+        {
+          "start": 7.28,
+          "end": 8.12,
+          "word": "房",
+          "probability": 0.9847055077552795
+        },
+        {
+          "start": 8.12,
+          "end": 9.88,
+          "word": "子",
+          "probability": 0.999221920967102
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 9.88,
+      "end": 12.4,
+      "text": "小区",
+      "tokens": [
+        50868,
+        7322,
+        9937,
+        118,
+        51000
+      ],
+      "avg_logprob": -0.4767943246691835,
+      "compression_ratio": 0.8450704225352113,
+      "no_speech_prob": 0.6128972768783569,
+      "words": [
+        {
+          "start": 9.88,
+          "end": 10.56,
+          "word": "小",
+          "probability": 0.980394721031189
+        },
+        {
+          "start": 10.56,
+          "end": 12.4,
+          "word": "区",
+          "probability": 0.9949882924556732
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 12.4,
+      "end": 14.96,
+      "text": "环境",
+      "tokens": [
+        51000,
+        8051,
+        107,
+        47885,
+        51126
+      ],
+      "avg_logprob": -0.4767943246691835,
+      "compression_ratio": 0.8450704225352113,
+      "no_speech_prob": 0.6128972768783569,
+      "words": [
+        {
+          "start": 12.4,
+          "end": 13.18,
+          "word": "环",
+          "probability": 0.9580861330032349
+        },
+        {
+          "start": 13.18,
+          "end": 14.96,
+          "word": "境",
+          "probability": 0.99599289894104
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 14.96,
+      "end": 16.2,
+      "text": "挺",
+      "tokens": [
+        51126,
+        41046,
+        51242
+      ],
+      "avg_logprob": -0.4767943246691835,
+      "compression_ratio": 0.8450704225352113,
+      "no_speech_prob": 0.6128972768783569,
+      "words": [
+        {
+          "start": 14.96,
+          "end": 16.2,
+          "word": "挺",
+          "probability": 0.25550585985183716
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 17.56,
+      "end": 19.98,
+      "text": "空调",
+      "tokens": [
+        51242,
+        23322,
+        8897,
+        225,
+        51376
+      ],
+      "avg_logprob": -0.4767943246691835,
+      "compression_ratio": 0.8450704225352113,
+      "no_speech_prob": 0.6128972768783569,
+      "words": [
+        {
+          "start": 17.26,
+          "end": 17.96,
+          "word": "空",
+          "probability": 0.9990181922912598
+        },
+        {
+          "start": 17.96,
+          "end": 19.98,
+          "word": "调",
+          "probability": 0.8698696792125702
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 0,
+      "start": 19.98,
+      "end": 22.82,
+      "text": "洗衣机",
+      "tokens": [
+        51376,
+        43252,
+        9890,
+        96,
+        37960,
+        51518
+      ],
+      "avg_logprob": -0.4767943246691835,
+      "compression_ratio": 0.8450704225352113,
+      "no_speech_prob": 0.6128972768783569,
+      "words": [
+        {
+          "start": 19.98,
+          "end": 20.68,
+          "word": "洗",
+          "probability": 0.7240156531333923
+        },
+        {
+          "start": 20.68,
+          "end": 22.58,
+          "word": "衣",
+          "probability": 0.99967822432518
+        },
+        {
+          "start": 22.58,
+          "end": 22.82,
+          "word": "机",
+          "probability": 0.9929068088531494
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 10,
+      "seek": 0,
+      "start": 22.82,
+      "end": 24.18,
+      "text": "层",
+      "tokens": [
+        51518,
+        9636,
+        224,
+        51622
+      ],
+      "avg_logprob": -0.4767943246691835,
+      "compression_ratio": 0.8450704225352113,
+      "no_speech_prob": 0.6128972768783569,
+      "words": [
+        {
+          "start": 22.82,
+          "end": 24.18,
+          "word": "层",
+          "probability": 0.7510495483875275
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 11,
+      "seek": 0,
+      "start": 25.16,
+      "end": 26.16,
+      "text": "花园",
+      "tokens": [
+        51622,
+        20127,
+        3919,
+        255,
+        51756
+      ],
+      "avg_logprob": -0.4767943246691835,
+      "compression_ratio": 0.8450704225352113,
+      "no_speech_prob": 0.6128972768783569,
+      "words": [
+        {
+          "start": 24.900000000000002,
+          "end": 25.6,
+          "word": "花",
+          "probability": 0.9984672665596008
+        },
+        {
+          "start": 25.6,
+          "end": 26.16,
+          "word": "园",
+          "probability": 0.817304253578186
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.085945207000009,
+  "realTimeFactor": 0.07435066945875173,
+  "observationChecks": {
+    "rawWordCount": 20,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

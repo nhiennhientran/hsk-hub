@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-04T17:13:56.574429+00:00",
+  "scriptSHA256": "233ece05705436f3840f2ff68da9b7c7b2d817bd842d715707670696a85b4b15",
+  "originalASRScriptSHA256": "6c32b71904d6829ed2fb7944fcdb3dad61f88eec198db5e837f4d7551ffcc3c4",
+  "requirementsSHA256": "03008384064075527124583a612e69fe4f58591324b265e3ac64b4b9153a5a49",
+  "inputSHA256": "3ccb4354bc7ff3a899adb7543c97524989d6e9ca4ed5a348d7299456d7ee3ccf",
+  "repositoryCommit": "70e001fa0cee9f6a01fe2dc7fed2a04d1cd5db5f",
+  "python": "3.11.13 (main, Jun  4 2025, 04:12:12) [GCC 13.3.0]",
+  "packages": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.6.0",
+    "huggingface-hub": "0.34.4",
+    "av": "15.1.0",
+    "tokenizers": "0.21.4",
+    "onnxruntime": "1.22.1",
+    "numpy": "2.2.6",
+    "coloredlogs": "15.0.1",
+    "flatbuffers": "25.2.10",
+    "packaging": "25.0",
+    "protobuf": "6.32.0",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "humanfriendly": "10.0",
+    "filelock": "3.19.1",
+    "fsspec": "2025.7.0",
+    "PyYAML": "6.0.2",
+    "requests": "2.32.5",
+    "tqdm": "4.67.1",
+    "typing_extensions": "4.15.0",
+    "hf-xet": "1.1.8",
+    "certifi": "2025.8.3",
+    "charset-normalizer": "3.4.3",
+    "idna": "3.10",
+    "urllib3": "2.5.0",
+    "setuptools": "80.9.0"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "completedCrops": [
+    {
+      "candidateId": "hsk2-fltrp-2026:l04:text2:line3",
+      "file": "crops/crop-01.json",
+      "sha256": "f0884967efb00b7c6e5df6da49c7e5dfdf52bc83326c0aa662c84ad994332eac"
+    },
+    {
+      "candidateId": "hsk2-fltrp-2026:l04:word16",
+      "file": "crops/crop-02.json",
+      "sha256": "af801138d28b9b426829140ce02aa58745a47013140836f16f73f6a85f802b29"
+    },
+    {
+      "candidateId": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "file": "crops/crop-03.json",
+      "sha256": "50676a4a65ddb0794d391fbd1b928a50d8efc31eded14d84c3210882ae16565e"
+    }
+  ],
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  },
+  "status": "3-crop-ASR-evidence-complete-awaiting-independent-review",
+  "ffmpegVersion": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "preflightPassedCrops": 3,
+  "model": {
+    "repository": "Systran/faster-whisper-medium",
+    "requestedRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+    "actualSnapshotRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+    "files": [
+      {
+        "file": "config.json",
+        "sha256": "3622a2ddc41ec0e0fd4e68c13c6830f03b90c38d89aaad184de02c8c642cf807",
+        "bytes": 2257
+      },
+      {
+        "file": "model.bin",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "bytes": 1527906378
+      },
+      {
+        "file": "tokenizer.json",
+        "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+        "bytes": 2203239
+      },
+      {
+        "file": "vocabulary.txt",
+        "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913",
+        "bytes": 459861
+      }
+    ],
+    "device": "cpu",
+    "requestedComputeType": "int8",
+    "cpuThreads": 2,
+    "actualComputeType": "int8_float32"
+  },
+  "elapsedTotalSeconds": 19.314378841999996,
+  "peakResidentMemoryKiB": 2105292,
+  "finishedAt": "2026-10-04T17:14:15.966183+00:00"
+}

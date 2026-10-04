@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l06:audio8",
+    "level": 3,
+    "lesson": 6,
+    "track": 8,
+    "kind": "vocab",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/6-8.mp3",
+    "sha256": "78e4a3584d254d7bf8074cb03a49e78f1354d1ee7ab16229918325dbfdde9dcb",
+    "bytes": 326795,
+    "manifestDurationSeconds": 17.886878,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 286720,
+      "durationSeconds": 17.92,
+      "sha256": "d8e69f31ad6694d41ec931f94b5c6f4114ca1dcc26506ad103857c5169082ade"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 17.92,
+    "duration_after_vad": 17.92,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.38,
+      "text": "放假",
+      "tokens": [
+        50364,
+        12744,
+        31706,
+        50500
+      ],
+      "avg_logprob": -0.5181683627041903,
+      "compression_ratio": 0.7924528301886793,
+      "no_speech_prob": 0.39524468779563904,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.74,
+          "word": "放",
+          "probability": 0.939527690410614
+        },
+        {
+          "start": 0.74,
+          "end": 2.38,
+          "word": "假",
+          "probability": 0.9690383076667786
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.38,
+      "end": 5.08,
+      "text": "沙发",
+      "tokens": [
+        50500,
+        3308,
+        247,
+        28926,
+        50630
+      ],
+      "avg_logprob": -0.5181683627041903,
+      "compression_ratio": 0.7924528301886793,
+      "no_speech_prob": 0.39524468779563904,
+      "words": [
+        {
+          "start": 2.38,
+          "end": 3.28,
+          "word": "沙",
+          "probability": 0.6057191491127014
+        },
+        {
+          "start": 3.28,
+          "end": 5.08,
+          "word": "发",
+          "probability": 0.9032694101333618
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.08,
+      "end": 7.84,
+      "text": "安静",
+      "tokens": [
+        50630,
+        16206,
+        5363,
+        247,
+        50760
+      ],
+      "avg_logprob": -0.5181683627041903,
+      "compression_ratio": 0.7924528301886793,
+      "no_speech_prob": 0.39524468779563904,
+      "words": [
+        {
+          "start": 5.08,
+          "end": 5.78,
+          "word": "安",
+          "probability": 0.9959845542907715
+        },
+        {
+          "start": 5.78,
+          "end": 7.84,
+          "word": "静",
+          "probability": 0.9957334101200104
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 7.84,
+      "end": 10.6,
+      "text": "选择",
+      "tokens": [
+        50760,
+        2215,
+        231,
+        6852,
+        102,
+        50898
+      ],
+      "avg_logprob": -0.5181683627041903,
+      "compression_ratio": 0.7924528301886793,
+      "no_speech_prob": 0.39524468779563904,
+      "words": [
+        {
+          "start": 7.84,
+          "end": 8.46,
+          "word": "选",
+          "probability": 0.9809371829032898
+        },
+        {
+          "start": 8.46,
+          "end": 10.6,
+          "word": "择",
+          "probability": 0.991606593132019
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 10.6,
+      "end": 13.04,
+      "text": "必须",
+      "tokens": [
+        50898,
+        28531,
+        10178,
+        119,
+        51030
+      ],
+      "avg_logprob": -0.5181683627041903,
+      "compression_ratio": 0.7924528301886793,
+      "no_speech_prob": 0.39524468779563904,
+      "words": [
+        {
+          "start": 10.6,
+          "end": 11.08,
+          "word": "必",
+          "probability": 0.9903392195701599
+        },
+        {
+          "start": 11.08,
+          "end": 13.04,
+          "word": "须",
+          "probability": 0.9731576442718506
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 13.04,
+      "end": 15.2,
+      "text": "北京南战",
+      "tokens": [
+        51030,
+        26668,
+        31375,
+        31021,
+        1486,
+        246,
+        51232
+      ],
+      "avg_logprob": -0.5181683627041903,
+      "compression_ratio": 0.7924528301886793,
+      "no_speech_prob": 0.39524468779563904,
+      "words": [
+        {
+          "start": 13.04,
+          "end": 13.64,
+          "word": "北",
+          "probability": 0.9730789661407471
+        },
+        {
+          "start": 13.64,
+          "end": 14.14,
+          "word": "京",
+          "probability": 0.9974599480628967
+        },
+        {
+          "start": 14.14,
+          "end": 14.48,
+          "word": "南",
+          "probability": 0.9460770487785339
+        },
+        {
+          "start": 14.48,
+          "end": 15.2,
+          "word": "战",
+          "probability": 0.6727229952812195
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.82141035799998,
+  "realTimeFactor": 0.10164120301339173,
+  "observationChecks": {
+    "rawWordCount": 14,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

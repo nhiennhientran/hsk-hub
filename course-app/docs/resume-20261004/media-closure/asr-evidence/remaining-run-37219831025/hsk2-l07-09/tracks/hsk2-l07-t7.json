@@ -1,0 +1,588 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l07:audio7",
+    "level": 2,
+    "lesson": 7,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk2/audio/7-7.mp3",
+    "sha256": "d9d19000ab9d47d790b51a2c6bc0617510e13fe437e854799e5805fcf022f66d",
+    "bytes": 513409,
+    "manifestDurationSeconds": 19.589333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 313344,
+      "durationSeconds": 19.584,
+      "sha256": "f4ffb05b961f3c586c1a04376c196a10feba5cc5f17e8c4cf943f4f3431881cd"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 19.584,
+    "duration_after_vad": 19.584,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 7.44,
+      "text": "我的爱好是运动。从上小学开始,我每天都跟爸爸去运动。",
+      "tokens": [
+        50364,
+        14200,
+        27324,
+        2131,
+        1541,
+        3316,
+        238,
+        34961,
+        1543,
+        35630,
+        5708,
+        7322,
+        29618,
+        45213,
+        11,
+        1654,
+        23664,
+        6135,
+        7182,
+        9678,
+        49105,
+        6734,
+        3316,
+        238,
+        34961,
+        1543,
+        50764
+      ],
+      "avg_logprob": -0.1398340242249625,
+      "compression_ratio": 1.1493506493506493,
+      "no_speech_prob": 0.15425936877727509,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.82,
+          "word": "我的",
+          "probability": 0.7550861239433289
+        },
+        {
+          "start": 0.82,
+          "end": 1.06,
+          "word": "爱",
+          "probability": 0.8372659683227539
+        },
+        {
+          "start": 1.06,
+          "end": 1.36,
+          "word": "好",
+          "probability": 0.9622268676757812
+        },
+        {
+          "start": 1.36,
+          "end": 1.72,
+          "word": "是",
+          "probability": 0.9499713778495789
+        },
+        {
+          "start": 1.72,
+          "end": 2.02,
+          "word": "运",
+          "probability": 0.9927465617656708
+        },
+        {
+          "start": 2.02,
+          "end": 2.3,
+          "word": "动。",
+          "probability": 0.9977723956108093
+        },
+        {
+          "start": 3.06,
+          "end": 3.38,
+          "word": "从",
+          "probability": 0.979272186756134
+        },
+        {
+          "start": 3.38,
+          "end": 3.68,
+          "word": "上",
+          "probability": 0.9841408729553223
+        },
+        {
+          "start": 3.68,
+          "end": 3.92,
+          "word": "小",
+          "probability": 0.9622299075126648
+        },
+        {
+          "start": 3.92,
+          "end": 4.14,
+          "word": "学",
+          "probability": 0.9959971904754639
+        },
+        {
+          "start": 4.14,
+          "end": 4.48,
+          "word": "开始,",
+          "probability": 0.9946118593215942
+        },
+        {
+          "start": 5.12,
+          "end": 5.22,
+          "word": "我",
+          "probability": 0.9484535455703735
+        },
+        {
+          "start": 5.22,
+          "end": 5.4,
+          "word": "每",
+          "probability": 0.9966955184936523
+        },
+        {
+          "start": 5.4,
+          "end": 5.72,
+          "word": "天",
+          "probability": 0.9966933727264404
+        },
+        {
+          "start": 5.72,
+          "end": 5.96,
+          "word": "都",
+          "probability": 0.9965826869010925
+        },
+        {
+          "start": 5.96,
+          "end": 6.16,
+          "word": "跟",
+          "probability": 0.9751162528991699
+        },
+        {
+          "start": 6.16,
+          "end": 6.52,
+          "word": "爸爸",
+          "probability": 0.9923769235610962
+        },
+        {
+          "start": 6.52,
+          "end": 6.92,
+          "word": "去",
+          "probability": 0.9879527688026428
+        },
+        {
+          "start": 6.92,
+          "end": 7.16,
+          "word": "运",
+          "probability": 0.9987667500972748
+        },
+        {
+          "start": 7.16,
+          "end": 7.44,
+          "word": "动。",
+          "probability": 0.9995582699775696
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 8.46,
+      "end": 15.44,
+      "text": "现在我篮球打得很好,足球踢得不错,游泳游得也很快。",
+      "tokens": [
+        50764,
+        25040,
+        1654,
+        20878,
+        106,
+        28533,
+        12467,
+        5916,
+        23801,
+        11,
+        37236,
+        28533,
+        41166,
+        95,
+        5916,
+        1960,
+        29900,
+        11,
+        9592,
+        116,
+        6847,
+        111,
+        9592,
+        116,
+        5916,
+        6404,
+        4563,
+        10251,
+        1543,
+        51164
+      ],
+      "avg_logprob": -0.1398340242249625,
+      "compression_ratio": 1.1493506493506493,
+      "no_speech_prob": 0.15425936877727509,
+      "words": [
+        {
+          "start": 8.46,
+          "end": 8.78,
+          "word": "现在",
+          "probability": 0.980028510093689
+        },
+        {
+          "start": 8.78,
+          "end": 9.44,
+          "word": "我",
+          "probability": 0.6239515542984009
+        },
+        {
+          "start": 9.44,
+          "end": 9.74,
+          "word": "篮",
+          "probability": 0.9892212748527527
+        },
+        {
+          "start": 9.74,
+          "end": 10.12,
+          "word": "球",
+          "probability": 0.9998804330825806
+        },
+        {
+          "start": 10.12,
+          "end": 10.42,
+          "word": "打",
+          "probability": 0.9922183752059937
+        },
+        {
+          "start": 10.42,
+          "end": 10.56,
+          "word": "得",
+          "probability": 0.8199679255485535
+        },
+        {
+          "start": 10.56,
+          "end": 10.86,
+          "word": "很好,",
+          "probability": 0.954912006855011
+        },
+        {
+          "start": 11.52,
+          "end": 11.66,
+          "word": "足",
+          "probability": 0.9948464632034302
+        },
+        {
+          "start": 11.66,
+          "end": 12.08,
+          "word": "球",
+          "probability": 0.9998039603233337
+        },
+        {
+          "start": 12.08,
+          "end": 12.36,
+          "word": "踢",
+          "probability": 0.9904209673404694
+        },
+        {
+          "start": 12.36,
+          "end": 12.48,
+          "word": "得",
+          "probability": 0.8807242512702942
+        },
+        {
+          "start": 12.48,
+          "end": 12.74,
+          "word": "不",
+          "probability": 0.9915653467178345
+        },
+        {
+          "start": 12.74,
+          "end": 13.02,
+          "word": "错,",
+          "probability": 0.9997239708900452
+        },
+        {
+          "start": 13.52,
+          "end": 13.76,
+          "word": "游",
+          "probability": 0.8433474600315094
+        },
+        {
+          "start": 13.76,
+          "end": 14.08,
+          "word": "泳",
+          "probability": 0.996389776468277
+        },
+        {
+          "start": 14.08,
+          "end": 14.56,
+          "word": "游",
+          "probability": 0.9488424062728882
+        },
+        {
+          "start": 14.56,
+          "end": 14.7,
+          "word": "得",
+          "probability": 0.9196786880493164
+        },
+        {
+          "start": 14.7,
+          "end": 14.88,
+          "word": "也",
+          "probability": 0.99824059009552
+        },
+        {
+          "start": 14.88,
+          "end": 15.14,
+          "word": "很",
+          "probability": 0.9979878664016724
+        },
+        {
+          "start": 15.14,
+          "end": 15.44,
+          "word": "快。",
+          "probability": 0.9994298815727234
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 16.44,
+      "end": 18.88,
+      "text": "我一有时间就去运动。",
+      "tokens": [
+        51164,
+        1654,
+        2257,
+        2412,
+        44848,
+        3111,
+        6734,
+        3316,
+        238,
+        34961,
+        1543,
+        51314
+      ],
+      "avg_logprob": -0.1398340242249625,
+      "compression_ratio": 1.1493506493506493,
+      "no_speech_prob": 0.15425936877727509,
+      "words": [
+        {
+          "start": 16.44,
+          "end": 16.68,
+          "word": "我",
+          "probability": 0.9874911308288574
+        },
+        {
+          "start": 16.68,
+          "end": 16.92,
+          "word": "一",
+          "probability": 0.9559214115142822
+        },
+        {
+          "start": 16.92,
+          "end": 17.16,
+          "word": "有",
+          "probability": 0.9980619549751282
+        },
+        {
+          "start": 17.16,
+          "end": 17.54,
+          "word": "时间",
+          "probability": 0.9936723709106445
+        },
+        {
+          "start": 17.54,
+          "end": 18.14,
+          "word": "就",
+          "probability": 0.8555125594139099
+        },
+        {
+          "start": 18.14,
+          "end": 18.36,
+          "word": "去",
+          "probability": 0.9972014427185059
+        },
+        {
+          "start": 18.36,
+          "end": 18.62,
+          "word": "运",
+          "probability": 0.9988992214202881
+        },
+        {
+          "start": 18.62,
+          "end": 18.88,
+          "word": "动。",
+          "probability": 0.9994250535964966
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.6348572520000033,
+  "realTimeFactor": 0.18560341360294136,
+  "observationChecks": {
+    "rawWordCount": 48,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

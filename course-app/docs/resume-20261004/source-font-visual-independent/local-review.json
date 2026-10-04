@@ -1,0 +1,996 @@
+{
+  "status": "accepted-local-string-layout-evidence-only",
+  "fixtureSHA256": "fabb7c9af846aa487ef51e94635ba348da80246f9fbeee136b58ce6be28ee2e0",
+  "authorFreezeSHA256": "b0c403245f580cd551afba55202ae6eafdf876e379be4a9e4faf903acb6b3115",
+  "frozenHashedFiles": 52,
+  "stagePathsExact": 54,
+  "rawReporterSHA256": "3b9f3a109724e54c5d6132314df290b7c119b9722347a169af43ca11dca2e7a2",
+  "actualStats": {
+    "startTime": "2026-10-04T18:10:34.499Z",
+    "duration": 15239.797,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "globalErrors": [],
+  "retried": 0,
+  "typedLedgerEvidence": [
+    {
+      "width": 320,
+      "ledgerSHA256": "70a759889d2ac8a2225bb5ad1697c783f23508623b0e6880a4cfa080f5f0c083",
+      "attachedLedgerSHA256": "70a759889d2ac8a2225bb5ad1697c783f23508623b0e6880a4cfa080f5f0c083",
+      "fields": 24,
+      "tables": 5,
+      "pngs": 17,
+      "testDurationMs": 6397
+    },
+    {
+      "width": 1440,
+      "ledgerSHA256": "21a3a8f6a5dca75ebf10c1763ad1d13a21427c8b20bdf694a1b88b76cea62c7f",
+      "attachedLedgerSHA256": "21a3a8f6a5dca75ebf10c1763ad1d13a21427c8b20bdf694a1b88b76cea62c7f",
+      "fields": 24,
+      "tables": 5,
+      "pngs": 17,
+      "testDurationMs": 8252
+    }
+  ],
+  "currentSevenSourceInputs": [
+    {
+      "path": "hsk1-app/content/source-activities/lesson-03.json",
+      "sha256": "ccd76ad50a2dc66dcea0a5a97a72c67d76c6e36e20beeb543824d6dc2e161103"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-06.json",
+      "sha256": "bb61cb1f0d6e3b6f19b7ddf17c08b47370d3c46c812cbf15bc4b56d9acb2fd29"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-07.json",
+      "sha256": "1c4525238cfd7385e207211f36f57633a6440ccea7b69be58522bc0091bdddb4"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-12.json",
+      "sha256": "59940d4585d7a14793455d54755fa0f54508be1266765aa8a7fa970000161d8c"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-13.json",
+      "sha256": "18de1697c9b9f05646b5c5688989488895e6b48ae8ef9591d554d189565b5b7b"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-14.json",
+      "sha256": "820e147f58196529e195aaf40352604bc8b3c6edf5adee51ab5122f0ae70bfdd"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-15.json",
+      "sha256": "d23b2601ab51382ec8f775bb21cbdd2386b14dd0f649230b457e6b813cf32a9e"
+    }
+  ],
+  "expectedFields": [
+    {
+      "lesson": 12,
+      "activityId": "hsk1-original-2026-l12-p087-text-1-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）王一飞那儿的天气（　）。",
+        "vi": "(1) Thời tiết ở chỗ Vương Nhất Phi (　)."
+      },
+      "pinyin": "Wáng Yīfēi nàr de tiānqì（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 87,
+        "pdfPage": 102,
+        "section": "text-1-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 12,
+      "activityId": "hsk1-original-2026-l12-p087-text-1-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）王一飞觉得（　）。",
+        "vi": "(2) Vương Nhất Phi cảm thấy (　)."
+      },
+      "pinyin": "Wáng Yīfēi juéde（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 87,
+        "pdfPage": 102,
+        "section": "text-1-listening",
+        "ordinal": 2
+      }
+    },
+    {
+      "lesson": 12,
+      "activityId": "hsk1-original-2026-l12-p089-text-2-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）杨同乐昨天（　）了。",
+        "vi": "(1) Hôm qua Dương Đồng Lạc đã (　)."
+      },
+      "pinyin": "Yáng Tónglè zuótiān（　）le.",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 89,
+        "pdfPage": 104,
+        "section": "text-2-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 12,
+      "activityId": "hsk1-original-2026-l12-p089-text-2-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）杨同乐今天（　）了。",
+        "vi": "(2) Hôm nay Dương Đồng Lạc đã (　)."
+      },
+      "pinyin": "Yáng Tónglè jīntiān（　）le.",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 89,
+        "pdfPage": 104,
+        "section": "text-2-listening",
+        "ordinal": 2
+      }
+    },
+    {
+      "lesson": 12,
+      "activityId": "hsk1-original-2026-l12-p090-text-3-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）杨同乐觉得（　）。",
+        "vi": "(1) Dương Đồng Lạc cảm thấy (　)."
+      },
+      "pinyin": "Yáng Tónglè juéde（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 90,
+        "pdfPage": 105,
+        "section": "text-3-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 12,
+      "activityId": "hsk1-original-2026-l12-p090-text-3-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）医生对杨同乐说：“今天（　）吧。”",
+        "vi": "(2) Bác sĩ nói với Dương Đồng Lạc: “Hôm nay hãy (　).”"
+      },
+      "pinyin": "Yīshēng duì Yáng Tónglè shuō: “Jīntiān（　）ba.”",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 90,
+        "pdfPage": 105,
+        "section": "text-3-listening",
+        "ordinal": 2
+      }
+    },
+    {
+      "lesson": 13,
+      "activityId": "hsk1-original-2026-l13-p096-text-1-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）白家月想再问王老师（　）。",
+        "vi": "(1) Bạch Gia Nguyệt muốn hỏi cô Vương thêm (　)."
+      },
+      "pinyin": "Bái Jiāyuè xiǎng zài wèn Wáng lǎoshī（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 96,
+        "pdfPage": 111,
+        "section": "text-1-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 13,
+      "activityId": "hsk1-original-2026-l13-p096-text-1-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）王老师（　）那里卖不卖手机。",
+        "vi": "(2) Cô Vương (　) ở đó có bán điện thoại hay không."
+      },
+      "pinyin": "Wáng lǎoshī（　）nàlǐ mài bu mài shǒujī.",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 96,
+        "pdfPage": 111,
+        "section": "text-1-listening",
+        "ordinal": 2
+      }
+    },
+    {
+      "lesson": 13,
+      "activityId": "hsk1-original-2026-l13-p098-text-2-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）王一雪要喝（　）。",
+        "vi": "(1) Vương Nhất Tuyết muốn uống (　)."
+      },
+      "pinyin": "Wáng Yīxuě yào hē（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 98,
+        "pdfPage": 113,
+        "section": "text-2-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 13,
+      "activityId": "hsk1-original-2026-l13-p098-text-2-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）王一雪还想吃（　）。",
+        "vi": "(2) Vương Nhất Tuyết còn muốn ăn (　)."
+      },
+      "pinyin": "Wáng Yīxuě hái xiǎng chī（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 98,
+        "pdfPage": 113,
+        "section": "text-2-listening",
+        "ordinal": 2
+      }
+    },
+    {
+      "lesson": 13,
+      "activityId": "hsk1-original-2026-l13-p099-text-3-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）刘明想吃（　）。",
+        "vi": "(1) Lưu Minh muốn ăn (　)."
+      },
+      "pinyin": "Liú Míng xiǎng chī（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 99,
+        "pdfPage": 114,
+        "section": "text-3-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 13,
+      "activityId": "hsk1-original-2026-l13-p099-text-3-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）刘明想喝（　）。",
+        "vi": "(2) Lưu Minh muốn uống (　)."
+      },
+      "pinyin": "Liú Míng xiǎng hē（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 100,
+        "pdfPage": 115,
+        "section": "text-3-listening",
+        "ordinal": 2
+      }
+    },
+    {
+      "lesson": 14,
+      "activityId": "hsk1-original-2026-l14-p104-text-1-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）陈天中（　）王老师。",
+        "vi": "(1) Trần Thiên Trung (　) cô Vương."
+      },
+      "pinyin": "Chén Tiānzhōng（　）Wáng lǎoshī.",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 104,
+        "pdfPage": 119,
+        "section": "text-1-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 14,
+      "activityId": "hsk1-original-2026-l14-p104-text-1-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）陈天中在火车上（　）。",
+        "vi": "(2) Trần Thiên Trung (　) trên tàu hỏa."
+      },
+      "pinyin": "Chén Tiānzhōng zài huǒchē shang（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 104,
+        "pdfPage": 119,
+        "section": "text-1-listening",
+        "ordinal": 2
+      }
+    },
+    {
+      "lesson": 14,
+      "activityId": "hsk1-original-2026-l14-p106-text-2-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）同学们（　）汉语了。",
+        "vi": "(1) Các bạn học sinh đã (　) tiếng Trung."
+      },
+      "pinyin": "Tóngxuémen（　）Hànyǔ le.",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 106,
+        "pdfPage": 121,
+        "section": "text-2-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 14,
+      "activityId": "hsk1-original-2026-l14-p106-text-2-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）陈天中（　）王老师在说什么。",
+        "vi": "(2) Trần Thiên Trung (　) cô Vương đang nói gì."
+      },
+      "pinyin": "Chén Tiānzhōng（　）Wáng lǎoshī zài shuō shénme.",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 106,
+        "pdfPage": 121,
+        "section": "text-2-listening",
+        "ordinal": 2
+      }
+    },
+    {
+      "lesson": 14,
+      "activityId": "hsk1-original-2026-l14-p108-text-3-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）明年刘明和王一雪的女儿（　）。",
+        "vi": "(1) Năm sau con gái của Lưu Minh và Vương Nhất Tuyết (　)."
+      },
+      "pinyin": "Míngnián Liú Míng hé Wáng Yīxuě de nǚ’ér（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 108,
+        "pdfPage": 123,
+        "section": "text-3-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 14,
+      "activityId": "hsk1-original-2026-l14-p108-text-3-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）（　）孩子们都忙了。",
+        "vi": "(2) (　), các con đều bận."
+      },
+      "pinyin": "（　）háizimen dōu máng le.",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 108,
+        "pdfPage": 123,
+        "section": "text-3-listening",
+        "ordinal": 2
+      }
+    },
+    {
+      "lesson": 15,
+      "activityId": "hsk1-original-2026-l15-p113-text-1-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）李文问大家（　）吃哪个菜。",
+        "vi": "(1) Lý Văn hỏi mọi người (　) ăn món nào."
+      },
+      "pinyin": "Lǐ Wén wèn dàjiā（　）chī nǎge cài.",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 113,
+        "pdfPage": 128,
+        "section": "text-1-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 15,
+      "activityId": "hsk1-original-2026-l15-p113-text-1-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）李文说：“大家（　）。”",
+        "vi": "(2) Lý Văn nói: “Mọi người (　).”"
+      },
+      "pinyin": "Lǐ Wén shuō: “Dàjiā（　）。”",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 113,
+        "pdfPage": 128,
+        "section": "text-1-listening",
+        "ordinal": 2
+      }
+    },
+    {
+      "lesson": 15,
+      "activityId": "hsk1-original-2026-l15-p114-text-2-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）安妮和她男朋友去年去了（　）。",
+        "vi": "(1) Năm ngoái Annie và bạn trai đã đến (　)."
+      },
+      "pinyin": "Ānní hé tā nánpéngyou qùnián qùle（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 114,
+        "pdfPage": 129,
+        "section": "text-2-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 15,
+      "activityId": "hsk1-original-2026-l15-p114-text-2-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）王老师和李文都是（　）。",
+        "vi": "(2) Cô Vương và Lý Văn đều là (　)."
+      },
+      "pinyin": "Wáng lǎoshī hé Lǐ Wén dōu shì（　）。",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 114,
+        "pdfPage": 129,
+        "section": "text-2-listening",
+        "ordinal": 2
+      }
+    },
+    {
+      "lesson": 15,
+      "activityId": "hsk1-original-2026-l15-p116-text-3-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-1",
+      "label": {
+        "zh": "（1）白家月和安妮坐（　）去北京。",
+        "vi": "(1) Bạch Gia Nguyệt và Annie đi (　) đến Bắc Kinh."
+      },
+      "pinyin": "Bái Jiāyuè hé Ānní zuò（　）qù Běijīng.",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 116,
+        "pdfPage": 131,
+        "section": "text-3-listening",
+        "ordinal": 1
+      }
+    },
+    {
+      "lesson": 15,
+      "activityId": "hsk1-original-2026-l15-p116-text-3-listening-01",
+      "activityVersion": "source-resume-20261004-reviewed-2",
+      "fieldId": "blank-2",
+      "label": {
+        "zh": "（2）王老师的（　）都在北京。",
+        "vi": "(2) (　) của cô Vương đều ở Bắc Kinh."
+      },
+      "pinyin": "Wáng lǎoshī de（　）dōu zài Běijīng.",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 116,
+        "pdfPage": 131,
+        "section": "text-3-listening",
+        "ordinal": 2
+      }
+    }
+  ],
+  "expectedTables": [
+    {
+      "lesson": 3,
+      "activityId": "hsk1-original-2026-l03-p017-summary-skills-01",
+      "activityVersion": "source-resume-20261004-candidate-2",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 17,
+        "pdfPage": 32,
+        "section": "summary-skills",
+        "ordinal": 1
+      },
+      "columns": [
+        {
+          "zh": "",
+          "vi": ""
+        },
+        {
+          "zh": "理解",
+          "vi": "Hiểu"
+        },
+        {
+          "zh": "会用",
+          "vi": "Biết dùng"
+        }
+      ],
+      "blankHeaderIndexes": [
+        0
+      ],
+      "rowCount": 9,
+      "blankBodyCells": 0
+    },
+    {
+      "lesson": 6,
+      "activityId": "hsk1-original-2026-l06-p042-classroom-table-01",
+      "activityVersion": "source-resume-20261004-candidate-1",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 42,
+        "pdfPage": 57,
+        "section": "classroom-table",
+        "ordinal": 1
+      },
+      "columns": [
+        {
+          "zh": "",
+          "vi": ""
+        },
+        {
+          "zh": "星期一",
+          "vi": "Thứ Hai"
+        },
+        {
+          "zh": "星期二",
+          "vi": "Thứ Ba"
+        },
+        {
+          "zh": "星期六",
+          "vi": "Thứ Bảy"
+        }
+      ],
+      "blankHeaderIndexes": [
+        0
+      ],
+      "rowCount": 2,
+      "blankBodyCells": 0
+    },
+    {
+      "lesson": 6,
+      "activityId": "hsk1-original-2026-l06-p042-classroom-table-example-01",
+      "activityVersion": "source-resume-20261004-candidate-1",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 42,
+        "pdfPage": 57,
+        "section": "classroom-table-example",
+        "ordinal": 1
+      },
+      "columns": [
+        {
+          "zh": "",
+          "vi": ""
+        },
+        {
+          "zh": "星期一",
+          "vi": "Thứ Hai"
+        },
+        {
+          "zh": "星期二",
+          "vi": "Thứ Ba"
+        },
+        {
+          "zh": "星期六",
+          "vi": "Thứ Bảy"
+        }
+      ],
+      "blankHeaderIndexes": [
+        0
+      ],
+      "rowCount": 1,
+      "blankBodyCells": 0
+    },
+    {
+      "lesson": 7,
+      "activityId": "hsk1-original-2026-l07-p053-classroom-table-01",
+      "activityVersion": "source-resume-20261004-candidate-1",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 53,
+        "pdfPage": 68,
+        "section": "classroom-table",
+        "ordinal": 1
+      },
+      "columns": [
+        {
+          "zh": "",
+          "vi": ""
+        },
+        {
+          "zh": "午饭",
+          "vi": "Ăn trưa"
+        },
+        {
+          "zh": "休息",
+          "vi": "Nghỉ ngơi"
+        },
+        {
+          "zh": "下课",
+          "vi": "Tan học"
+        }
+      ],
+      "blankHeaderIndexes": [
+        0
+      ],
+      "rowCount": 3,
+      "blankBodyCells": 0
+    },
+    {
+      "lesson": 7,
+      "activityId": "hsk1-original-2026-l07-p053-classroom-example-01",
+      "activityVersion": "source-resume-20261004-candidate-1",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 53,
+        "pdfPage": 68,
+        "section": "classroom-example",
+        "ordinal": 1
+      },
+      "columns": [
+        {
+          "zh": "",
+          "vi": ""
+        },
+        {
+          "zh": "午饭（wǔfàn）",
+          "vi": "Ăn trưa"
+        },
+        {
+          "zh": "休息",
+          "vi": "Nghỉ ngơi"
+        },
+        {
+          "zh": "下课",
+          "vi": "Tan học"
+        }
+      ],
+      "blankHeaderIndexes": [
+        0
+      ],
+      "rowCount": 1,
+      "blankBodyCells": 0
+    }
+  ],
+  "actualPNGs": [
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l12-p087-text-1-listening-01.png",
+      "sha256": "5787667c36ba4949cabd5de97f2e1a9d57cc154bf0376205f6566e37f1ad7706",
+      "pixels": [
+        238,
+        1252
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l12-p089-text-2-listening-01.png",
+      "sha256": "1e3aaae9f4b38f06358b4987a1243d2f56f9ae68dc7b093682c8b65ef1a1a6f1",
+      "pixels": [
+        238,
+        1200
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l12-p090-text-3-listening-01.png",
+      "sha256": "b545ccb15a6873bb1aef8a485081beef99d6747476d5592d62002564570894d9",
+      "pixels": [
+        238,
+        1205
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l13-p096-text-1-listening-01.png",
+      "sha256": "f18f371e58ce78a2b2adc24afa4b8b1dde0024b1bccf00ff31dba31bf1553cbc",
+      "pixels": [
+        238,
+        1251
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l13-p098-text-2-listening-01.png",
+      "sha256": "8a7584860412ffce9b69199c2cddcf0268eebf6a61db8ab328985e6a67f560a6",
+      "pixels": [
+        238,
+        1204
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l13-p099-text-3-listening-01.png",
+      "sha256": "bd28293903d3e8a816454e699c3d15feaf90be5a640e28e85d3c22485ca1cb7a",
+      "pixels": [
+        238,
+        1137
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l14-p104-text-1-listening-01.png",
+      "sha256": "23e6a323eb7a300e3ffa36460e8f0b45daed973f7cb7266b4fc501252333ebbf",
+      "pixels": [
+        238,
+        1300
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l14-p106-text-2-listening-01.png",
+      "sha256": "bb3e2f20193d8d765e42dccc5cee968d1e9e7104227cecfa31450b31de7b60da",
+      "pixels": [
+        238,
+        1226
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l14-p108-text-3-listening-01.png",
+      "sha256": "c70174daad68db4508f38b3a55df610d7237e54fb4dd102e18b5088f8416c44e",
+      "pixels": [
+        238,
+        1225
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l15-p113-text-1-listening-01.png",
+      "sha256": "89886b26c8d49f5cd2b8f57f362c7957a4bba4e4e4a21b405916ba3ae712eecb",
+      "pixels": [
+        238,
+        1273
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l15-p114-text-2-listening-01.png",
+      "sha256": "868d2f061304fe8affcc0769a8fe76013a8984fad0bad785bef632f6cff09a32",
+      "pixels": [
+        238,
+        1251
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l15-p116-text-3-listening-01.png",
+      "sha256": "6948318296b837a4eb1bf9661f4b4e2bc17ca880f41f0093e6d7dc19f2472f02",
+      "pixels": [
+        238,
+        1278
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l03-p017-summary-skills-01.png",
+      "sha256": "88b79ba7a81079100c5f0d7a2cbe766913e943e546d7c1017b594556f936961f",
+      "pixels": [
+        238,
+        2549
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l06-p042-classroom-table-01.png",
+      "sha256": "e228b2e55f28ec3530e9db6dbe990df764e7de0b5969820ba287942bdb441091",
+      "pixels": [
+        238,
+        1205
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l06-p042-classroom-table-example-01.png",
+      "sha256": "2bf7e538318efc2a7a6fea2ed6e459cbbbf63338418ebbbe0bc1fb7c832d1ee0",
+      "pixels": [
+        238,
+        599
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l07-p053-classroom-table-01.png",
+      "sha256": "1bc04fa6458ff6ae2f9fad538817bc87d182ffd49d3941408314554c006def6c",
+      "pixels": [
+        238,
+        1335
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/chromium-320-hsk1-original-2026-l07-p053-classroom-example-01.png",
+      "sha256": "bbaa5a1d7dbba3c62bfab1f7e95347d9019509e2d824f29e652cdba94fa77bdf",
+      "pixels": [
+        238,
+        599
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l12-p087-text-1-listening-01.png",
+      "sha256": "e5cb8946ad666379e4a7478aef34cc5e9223ca4706ab8cd0f5454b1c2efc671e",
+      "pixels": [
+        392,
+        1032
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l12-p089-text-2-listening-01.png",
+      "sha256": "433dfc5cdaf3ee601e7a34740c7b9ab581b02be3d2276f5a08b02757d25706ff",
+      "pixels": [
+        392,
+        1032
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l12-p090-text-3-listening-01.png",
+      "sha256": "9f9385cd7b2de4dc125af5149c289f2736cb85515874049eb13c89f6e546ef21",
+      "pixels": [
+        392,
+        1053
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l13-p096-text-1-listening-01.png",
+      "sha256": "324cf18f929fd4d0a3c087bc6035bde3e42b8ec56d4ba50c1761e58475a88ade",
+      "pixels": [
+        392,
+        1074
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l13-p098-text-2-listening-01.png",
+      "sha256": "b3907ac4d72631fb72927403e78df21e4e827b82aa74a578bd348c73f57ffaa7",
+      "pixels": [
+        392,
+        1032
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l13-p099-text-3-listening-01.png",
+      "sha256": "9f1d7406d80df8d16e15f15ceab793aa7041fca4e5bd925bb4630afafab1e04c",
+      "pixels": [
+        392,
+        1011
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l14-p104-text-1-listening-01.png",
+      "sha256": "4d5ad63e438517fe13edd02770917765a6e8f42a6f7f6d164a6e7694010fadaa",
+      "pixels": [
+        392,
+        1053
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l14-p106-text-2-listening-01.png",
+      "sha256": "019b842455d0a2d0338e7151aa47f5557f2ecaee21cf548c3e75844e5915c920",
+      "pixels": [
+        392,
+        1058
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l14-p108-text-3-listening-01.png",
+      "sha256": "a71f62ef6aa18bde1dda96f83cde3e6e9e065c847f28c4c9f121cbceac265486",
+      "pixels": [
+        392,
+        1079
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l15-p113-text-1-listening-01.png",
+      "sha256": "57ad45deccef3538c512860336a9f613bfbf1ff239aa4acf7e13b27418147771",
+      "pixels": [
+        392,
+        1053
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l15-p114-text-2-listening-01.png",
+      "sha256": "2a8603340e3065aeff1400db805152dcfd959e8ca97fbdc1a928bfd7bc49f657",
+      "pixels": [
+        392,
+        1032
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l15-p116-text-3-listening-01.png",
+      "sha256": "5a775a63a827b322dd49ca050b135b7802a260c1f7dbe3bc055ec1ab92f828ef",
+      "pixels": [
+        392,
+        1053
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l03-p017-summary-skills-01.png",
+      "sha256": "c2eba4ba5b555fc3972d05bc86726d9bc5f15a491286ece31e86852ef48a8c8b",
+      "pixels": [
+        800,
+        2410
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l06-p042-classroom-table-01.png",
+      "sha256": "235f46e799b74acbd8a401768262cbed7306b103c9fbd2f988482882dda5113a",
+      "pixels": [
+        800,
+        989
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l06-p042-classroom-table-example-01.png",
+      "sha256": "b59bf399cb5b292ac4405d59c4fc835f8634637b6414e148259527b58cfffa0a",
+      "pixels": [
+        800,
+        501
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l07-p053-classroom-table-01.png",
+      "sha256": "ea98442e56757ac9599d7b6207767781bf7a31b9794aa94c104e229d6f133723",
+      "pixels": [
+        800,
+        1098
+      ]
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/chromium-1440-hsk1-original-2026-l07-p053-classroom-example-01.png",
+      "sha256": "259f412c101827e6d260e13031e296c1cc75faf76867a1bf9a46561b63d59841",
+      "pixels": [
+        800,
+        501
+      ]
+    }
+  ],
+  "frozenBuild": {
+    "manifestSHA256": "9e348d9560ce27c49e70bc86e38d18f7952cad8da836967354325f2f19bfa20c",
+    "root": "/workspace/scratch/28b55072841a/flow-compat-repaired-build",
+    "files": 1717,
+    "allActualBytesAndSHAExact": true,
+    "extraOrMissing": []
+  },
+  "glyphFontCertification": false,
+  "localVisualSampleRead": {
+    "count": 4,
+    "finding": "Chinese and fullwidth punctuation visibly contain missing-glyph boxes; VI and Latin pinyin visible. This is not remote Noto certification."
+  },
+  "limitations": [
+    "Local Chromium only; remote Chromium/WebKit 68 current PNGs still required.",
+    "Mobile original table PNGs show leftmost internally scrolled region, preserving blank first header; do not claim all horizontal columns visible in one mobile PNG.",
+    "Five tables contain no truly blank body cells; only empty headers and retained body topology are exercised.",
+    "24 field pinyin values are exact current runtime source strings; textbook provenance accepted separately."
+  ]
+}

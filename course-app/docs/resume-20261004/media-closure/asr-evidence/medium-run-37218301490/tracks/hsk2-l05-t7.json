@@ -1,0 +1,544 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l05:audio7",
+    "level": 2,
+    "lesson": 5,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk2/audio/5-7.mp3",
+    "sha256": "878989cd84906a059777b64e883fb180ab8e139dfbdaa17b61882f32e33f46aa",
+    "bytes": 460896,
+    "manifestDurationSeconds": 17.333333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 277248,
+      "durationSeconds": 17.328,
+      "sha256": "58a93034143176a77e62bd0b720fca91998dd9779b75551d960f4c5be8998ff0"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-medium",
+  "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 17.328,
+    "duration_after_vad": 17.328,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 16.48,
+      "text": "回国前一天,我们去医学姐家了,到她家的时候饭菜都做好了,刘爷爷还准备了奶茶,因为吃了太多东西,我们吃完饭是走回酒店的。",
+      "tokens": [
+        50364,
+        8350,
+        16086,
+        8945,
+        2257,
+        6135,
+        11,
+        15003,
+        6734,
+        9937,
+        119,
+        29618,
+        18102,
+        5155,
+        2289,
+        11,
+        4511,
+        15555,
+        5155,
+        49873,
+        41520,
+        255,
+        33025,
+        7182,
+        10907,
+        12621,
+        11,
+        2437,
+        246,
+        43725,
+        43725,
+        14852,
+        6336,
+        228,
+        1787,
+        229,
+        2289,
+        42525,
+        43499,
+        11,
+        34627,
+        10123,
+        2289,
+        9455,
+        6392,
+        38409,
+        16220,
+        11,
+        15003,
+        10123,
+        14128,
+        41520,
+        255,
+        1541,
+        9575,
+        8350,
+        37486,
+        22469,
+        1546,
+        1543,
+        51214
+      ],
+      "avg_logprob": -0.1622842071998504,
+      "compression_ratio": 1.1133333333333333,
+      "no_speech_prob": 0.14476895332336426,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.94,
+          "word": "回",
+          "probability": 0.9687905311584473
+        },
+        {
+          "start": 0.94,
+          "end": 1.22,
+          "word": "国",
+          "probability": 0.2877732217311859
+        },
+        {
+          "start": 1.22,
+          "end": 1.44,
+          "word": "前",
+          "probability": 0.9972965121269226
+        },
+        {
+          "start": 1.44,
+          "end": 1.7,
+          "word": "一",
+          "probability": 0.9930114150047302
+        },
+        {
+          "start": 1.7,
+          "end": 2.1,
+          "word": "天,",
+          "probability": 0.9982536435127258
+        },
+        {
+          "start": 2.34,
+          "end": 2.52,
+          "word": "我们",
+          "probability": 0.9884459972381592
+        },
+        {
+          "start": 2.52,
+          "end": 2.78,
+          "word": "去",
+          "probability": 0.948009192943573
+        },
+        {
+          "start": 2.78,
+          "end": 3.08,
+          "word": "医",
+          "probability": 0.9161316752433777
+        },
+        {
+          "start": 3.08,
+          "end": 3.22,
+          "word": "学",
+          "probability": 0.9976401329040527
+        },
+        {
+          "start": 3.22,
+          "end": 3.4,
+          "word": "姐",
+          "probability": 0.9982703924179077
+        },
+        {
+          "start": 3.4,
+          "end": 3.68,
+          "word": "家",
+          "probability": 0.9895351529121399
+        },
+        {
+          "start": 3.68,
+          "end": 4.82,
+          "word": "了,",
+          "probability": 0.9803240895271301
+        },
+        {
+          "start": 4.84,
+          "end": 5.02,
+          "word": "到",
+          "probability": 0.9627054333686829
+        },
+        {
+          "start": 5.02,
+          "end": 5.2,
+          "word": "她",
+          "probability": 0.9051446318626404
+        },
+        {
+          "start": 5.2,
+          "end": 5.46,
+          "word": "家",
+          "probability": 0.996311366558075
+        },
+        {
+          "start": 5.46,
+          "end": 6.12,
+          "word": "的时候",
+          "probability": 0.9886868000030518
+        },
+        {
+          "start": 6.12,
+          "end": 6.56,
+          "word": "饭",
+          "probability": 0.9403604567050934
+        },
+        {
+          "start": 6.56,
+          "end": 6.84,
+          "word": "菜",
+          "probability": 0.988660454750061
+        },
+        {
+          "start": 6.84,
+          "end": 7.12,
+          "word": "都",
+          "probability": 0.9956679344177246
+        },
+        {
+          "start": 7.12,
+          "end": 7.44,
+          "word": "做",
+          "probability": 0.9945105314254761
+        },
+        {
+          "start": 7.44,
+          "end": 7.9,
+          "word": "好了,",
+          "probability": 0.9889832139015198
+        },
+        {
+          "start": 8.6,
+          "end": 8.82,
+          "word": "刘",
+          "probability": 0.987207442522049
+        },
+        {
+          "start": 8.82,
+          "end": 9.04,
+          "word": "爷",
+          "probability": 0.9884804487228394
+        },
+        {
+          "start": 9.04,
+          "end": 9.28,
+          "word": "爷",
+          "probability": 0.9960111379623413
+        },
+        {
+          "start": 9.28,
+          "end": 9.52,
+          "word": "还",
+          "probability": 0.9928111433982849
+        },
+        {
+          "start": 9.52,
+          "end": 9.84,
+          "word": "准",
+          "probability": 0.9987397491931915
+        },
+        {
+          "start": 9.84,
+          "end": 9.96,
+          "word": "备",
+          "probability": 0.9998638927936554
+        },
+        {
+          "start": 9.96,
+          "end": 10.08,
+          "word": "了",
+          "probability": 0.996487021446228
+        },
+        {
+          "start": 10.08,
+          "end": 10.3,
+          "word": "奶",
+          "probability": 0.9963971972465515
+        },
+        {
+          "start": 10.3,
+          "end": 10.98,
+          "word": "茶,",
+          "probability": 0.9994897842407227
+        },
+        {
+          "start": 11.66,
+          "end": 11.94,
+          "word": "因为",
+          "probability": 0.9928132891654968
+        },
+        {
+          "start": 11.94,
+          "end": 12.18,
+          "word": "吃",
+          "probability": 0.9963590502738953
+        },
+        {
+          "start": 12.18,
+          "end": 12.32,
+          "word": "了",
+          "probability": 0.979454517364502
+        },
+        {
+          "start": 12.32,
+          "end": 12.56,
+          "word": "太",
+          "probability": 0.9978803396224976
+        },
+        {
+          "start": 12.56,
+          "end": 12.74,
+          "word": "多",
+          "probability": 0.9991416931152344
+        },
+        {
+          "start": 12.74,
+          "end": 13.08,
+          "word": "东",
+          "probability": 0.9959505796432495
+        },
+        {
+          "start": 13.08,
+          "end": 13.5,
+          "word": "西,",
+          "probability": 0.9998493194580078
+        },
+        {
+          "start": 13.72,
+          "end": 13.9,
+          "word": "我们",
+          "probability": 0.9966455101966858
+        },
+        {
+          "start": 13.9,
+          "end": 14.1,
+          "word": "吃",
+          "probability": 0.9979442954063416
+        },
+        {
+          "start": 14.1,
+          "end": 14.36,
+          "word": "完",
+          "probability": 0.9970128536224365
+        },
+        {
+          "start": 14.36,
+          "end": 14.66,
+          "word": "饭",
+          "probability": 0.9984064996242523
+        },
+        {
+          "start": 14.66,
+          "end": 14.98,
+          "word": "是",
+          "probability": 0.9341742396354675
+        },
+        {
+          "start": 14.98,
+          "end": 15.26,
+          "word": "走",
+          "probability": 0.9812760353088379
+        },
+        {
+          "start": 15.26,
+          "end": 15.54,
+          "word": "回",
+          "probability": 0.9867292642593384
+        },
+        {
+          "start": 15.54,
+          "end": 15.78,
+          "word": "酒",
+          "probability": 0.9966756105422974
+        },
+        {
+          "start": 15.78,
+          "end": 15.96,
+          "word": "店",
+          "probability": 0.9986013770103455
+        },
+        {
+          "start": 15.96,
+          "end": 16.48,
+          "word": "的。",
+          "probability": 0.9901424050331116
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 6.306808263999983,
+  "realTimeFactor": 0.3639663125577091,
+  "observationChecks": {
+    "rawWordCount": 47,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

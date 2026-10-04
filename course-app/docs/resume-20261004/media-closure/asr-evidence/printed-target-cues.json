@@ -1,0 +1,2274 @@
+{
+  "schemaVersion": 1,
+  "mode": "source-target-cues-only",
+  "sourceAudioManifestSHA256": "c11bca42ca19055ff9f7c7d48aa6fa39551035fda3191b8a54876cb47ca4519f",
+  "normalization": "NFKC+CJK-only; no script/phonetic/erhua replacements",
+  "deterministicCueScope": "Printed source-to-track group identity/order only; no intra-track time cues",
+  "tracks": [
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l04:audio1",
+        "level": 2,
+        "lesson": 4,
+        "track": 1,
+        "kind": "text",
+        "text": 1,
+        "file": "course-assets/hsk2/audio/4-1.mp3",
+        "duration": 18.053333,
+        "bytes": 481056,
+        "sha256": "484210eadb0d17687e75912fbeec010749ad6bc335641ecfd539179f57fb1624",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l04:text1:line1",
+          "unit": "line",
+          "zh": "妈妈，我们来过这家商场吗？",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text1:line2",
+          "unit": "line",
+          "zh": "没来过，这是新开的。",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text1:line3",
+          "unit": "line",
+          "zh": "我们进去看看吧。",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text1:line4",
+          "unit": "line",
+          "zh": "好啊！你想买点儿什么？",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text1:line4:sentence1",
+          "unit": "sentence",
+          "zh": "好啊！",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l04:text1:line4"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text1:line4:sentence2",
+          "unit": "sentence",
+          "zh": "你想买点儿什么？",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l04:text1:line4"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text1:line5",
+          "unit": "line",
+          "zh": "我想买条裤子。",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text1:line6",
+          "unit": "line",
+          "zh": "没问题。",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l04:audio2",
+        "level": 2,
+        "lesson": 4,
+        "track": 2,
+        "kind": "vocab",
+        "text": 1,
+        "file": "course-assets/hsk2/audio/4-2.mp3",
+        "duration": 13.061333,
+        "bytes": 358395,
+        "sha256": "32aa300cf8989cd526e0a87adbfecbed61955a9c5cbf6700c17879f6c9dee68d",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l04:word01",
+          "unit": "word",
+          "zh": "过",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word02",
+          "unit": "word",
+          "zh": "商场",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word03",
+          "unit": "word",
+          "zh": "进去",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word04",
+          "unit": "word",
+          "zh": "条",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word05",
+          "unit": "word",
+          "zh": "裤子",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 30,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l04:audio3",
+        "level": 2,
+        "lesson": 4,
+        "track": 3,
+        "kind": "text",
+        "text": 2,
+        "file": "course-assets/hsk2/audio/4-3.mp3",
+        "duration": 29.501333,
+        "bytes": 754606,
+        "sha256": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l04:text2:line1",
+          "unit": "line",
+          "zh": "妈妈，我想买这条白色的裤子。",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text2:line2",
+          "unit": "line",
+          "zh": "你有很多白色的衣服，为什么还买白色的？",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text2:line3",
+          "unit": "line",
+          "zh": "因为我喜欢白色啊！",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text2:line4",
+          "unit": "line",
+          "zh": "我觉得这条白色的不太好看，你试试那条红色的吧。",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text2:line5",
+          "unit": "line",
+          "zh": "我没穿过红色的，红色的好看吗？",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text2:line6",
+          "unit": "line",
+          "zh": "就是因为没穿过，所以要试试啊！",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l04:audio4",
+        "level": 2,
+        "lesson": 4,
+        "track": 4,
+        "kind": "vocab",
+        "text": 2,
+        "file": "course-assets/hsk2/audio/4-4.mp3",
+        "duration": 14.909333,
+        "bytes": 402747,
+        "sha256": "fdf482462bffd69724e9c1e7f045127296882da22a73277b0a85c93ea47090eb",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l04:word06",
+          "unit": "word",
+          "zh": "白色",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 32,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word07",
+          "unit": "word",
+          "zh": "因为",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 32,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word08",
+          "unit": "word",
+          "zh": "试",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 32,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word09",
+          "unit": "word",
+          "zh": "红色",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 32,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word10",
+          "unit": "word",
+          "zh": "所以",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 32,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l04:audio5",
+        "level": 2,
+        "lesson": 4,
+        "track": 5,
+        "kind": "text",
+        "text": 3,
+        "file": "course-assets/hsk2/audio/4-5.mp3",
+        "duration": 22.301333,
+        "bytes": 581801,
+        "sha256": "4ab3deb04bcd1abaafbb0074fc7261f1cb95e85875166fc7b9ad9adefd50372b",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l04:text3:line1",
+          "unit": "line",
+          "zh": "妈妈，我想买个新书包。",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text3:line2",
+          "unit": "line",
+          "zh": "好，那边卖书包，我们过去看看吧。",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text3:line3",
+          "unit": "line",
+          "zh": "这么多漂亮的书包！",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text3:line4",
+          "unit": "line",
+          "zh": "红色的、绿色的、黑色的，你想买哪个？",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text3:line5",
+          "unit": "line",
+          "zh": "绿色的吧。",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text3:line6",
+          "unit": "line",
+          "zh": "不错，我也觉得绿色的更好看。",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l04:audio6",
+        "level": 2,
+        "lesson": 4,
+        "track": 6,
+        "kind": "vocab",
+        "text": 3,
+        "file": "course-assets/hsk2/audio/4-6.mp3",
+        "duration": 14.861333,
+        "bytes": 399942,
+        "sha256": "3643207f6e244d6387e2cf88f10ba38f6df148bea59cbcfc559b12137361b1b7",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l04:word11",
+          "unit": "word",
+          "zh": "书包",
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 34,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word12",
+          "unit": "word",
+          "zh": "过去",
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 34,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word13",
+          "unit": "word",
+          "zh": "绿色",
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 34,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word14",
+          "unit": "word",
+          "zh": "黑色",
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 34,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:word15",
+          "unit": "word",
+          "zh": "更",
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 34,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l04:audio7",
+        "level": 2,
+        "lesson": 4,
+        "track": 7,
+        "kind": "text",
+        "text": 4,
+        "file": "course-assets/hsk2/audio/4-7.mp3",
+        "duration": 19.541333,
+        "bytes": 512262,
+        "sha256": "c1ed7157c1e66262624aa3f69b43cd62997b993902af74b2c8fd41c07bc7211d",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l04:text4:line1",
+          "unit": "line",
+          "zh": "我和妈妈去了一家商场。因为是新开的，所以这几天东西很便宜。商场里的衣服颜色很多。我没穿过红色的裤子，妈妈让我试了试，我觉得我穿红色的也很好看。",
+          "source": {
+            "pdfPage": 50,
+            "printedPage": 35,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 4
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text4:line1:sentence1",
+          "unit": "sentence",
+          "zh": "我和妈妈去了一家商场。",
+          "source": {
+            "pdfPage": 50,
+            "printedPage": 35,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l04:text4:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text4:line1:sentence2",
+          "unit": "sentence",
+          "zh": "因为是新开的，所以这几天东西很便宜。",
+          "source": {
+            "pdfPage": 50,
+            "printedPage": 35,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l04:text4:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text4:line1:sentence3",
+          "unit": "sentence",
+          "zh": "商场里的衣服颜色很多。",
+          "source": {
+            "pdfPage": 50,
+            "printedPage": 35,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l04:text4:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l04:text4:line1:sentence4",
+          "unit": "sentence",
+          "zh": "我没穿过红色的裤子，妈妈让我试了试，我觉得我穿红色的也很好看。",
+          "source": {
+            "pdfPage": 50,
+            "printedPage": 35,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l04:text4:line1"
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l04:audio8",
+        "level": 2,
+        "lesson": 4,
+        "track": 8,
+        "kind": "vocab",
+        "text": 4,
+        "file": "course-assets/hsk2/audio/4-8.mp3",
+        "duration": 3.173333,
+        "bytes": 119427,
+        "sha256": "8d0a18324f7ef67634da7c2a941247c5807f63a3cbf89d1dad706d27d5e38020",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l04:word16",
+          "unit": "word",
+          "zh": "颜色",
+          "source": {
+            "pdfPage": 50,
+            "printedPage": 35,
+            "section": "课文4：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 4
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l05:audio1",
+        "level": 2,
+        "lesson": 5,
+        "track": 1,
+        "kind": "text",
+        "text": 1,
+        "file": "course-assets/hsk2/audio/5-1.mp3",
+        "duration": 24.821333,
+        "bytes": 643487,
+        "sha256": "b8659e2a15e660f907133bf2fd07b39ec338572d0658ec8315b6fefaf3fe5ba6",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l05:text1:line1",
+          "unit": "line",
+          "zh": "家月，快下来吧，第一次去中国朋友家，别晚了。",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text1:line2",
+          "unit": "line",
+          "zh": "还有时间，你上来吧。",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text1:line3",
+          "unit": "line",
+          "zh": "我不上去了，就在下面等你。",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text1:line4",
+          "unit": "line",
+          "zh": "那我一会儿就下去。",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text1:line5",
+          "unit": "line",
+          "zh": "你快点儿吧。",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text1:line6",
+          "unit": "line",
+          "zh": "没事，一雪姐说11点前到就可以。",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l05:audio2",
+        "level": 2,
+        "lesson": 5,
+        "track": 2,
+        "kind": "vocab",
+        "text": 1,
+        "file": "course-assets/hsk2/audio/5-2.mp3",
+        "duration": 26.813333,
+        "bytes": 691289,
+        "sha256": "e0aa8f1c2c9f6d4f2cad6b7515e91c43862e289e748a4e32e42cbcabae11ec7d",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l05:word01",
+          "unit": "word",
+          "zh": "快",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word02",
+          "unit": "word",
+          "zh": "快",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word03",
+          "unit": "word",
+          "zh": "下来",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word04",
+          "unit": "word",
+          "zh": "上来",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word05",
+          "unit": "word",
+          "zh": "上去",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word06",
+          "unit": "word",
+          "zh": "下面",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word07",
+          "unit": "word",
+          "zh": "面",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word08",
+          "unit": "word",
+          "zh": "等",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word09",
+          "unit": "word",
+          "zh": "一会儿",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word10",
+          "unit": "word",
+          "zh": "下去",
+          "source": {
+            "pdfPage": 53,
+            "printedPage": 38,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l05:audio3",
+        "level": 2,
+        "lesson": 5,
+        "track": 3,
+        "kind": "text",
+        "text": 2,
+        "file": "course-assets/hsk2/audio/5-3.mp3",
+        "duration": 39.293333,
+        "bytes": 992382,
+        "sha256": "7692432ee007f962b2e0d8a76642a0ad69e2696125f74b3572e1e287e249dcbd",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line1",
+          "unit": "line",
+          "zh": "家月、安妮，快进来！我给你们介绍一下，这是孩子们的爷爷、奶奶。",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line1:sentence1",
+          "unit": "sentence",
+          "zh": "家月、安妮，快进来！",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text2:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line1:sentence2",
+          "unit": "sentence",
+          "zh": "我给你们介绍一下，这是孩子们的爷爷、奶奶。",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text2:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line2",
+          "unit": "line",
+          "zh": "你们好！",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line3",
+          "unit": "line",
+          "zh": "爸，妈，这是白家月，这是安妮。她们都是一飞的学生。",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line3:sentence1",
+          "unit": "sentence",
+          "zh": "爸，妈，这是白家月，这是安妮。",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text2:line3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line3:sentence2",
+          "unit": "sentence",
+          "zh": "她们都是一飞的学生。",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text2:line3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line4",
+          "unit": "line",
+          "zh": "家月、安妮，你们好！",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line5",
+          "unit": "line",
+          "zh": "这是送你们的礼物。",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line6",
+          "unit": "line",
+          "zh": "你们太客气了，还拿这么多礼物来！",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line7",
+          "unit": "line",
+          "zh": "一雪姐，这是给孩子们准备的礼物。",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line8",
+          "unit": "line",
+          "zh": "谢谢！你们别客气，快坐吧！",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line8:sentence1",
+          "unit": "sentence",
+          "zh": "谢谢！",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text2:line8"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+          "unit": "sentence",
+          "zh": "你们别客气，快坐吧！",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text2:line8"
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l05:audio4",
+        "level": 2,
+        "lesson": 5,
+        "track": 4,
+        "kind": "vocab",
+        "text": 2,
+        "file": "course-assets/hsk2/audio/5-4.mp3",
+        "duration": 14.261333,
+        "bytes": 387195,
+        "sha256": "06ed5080f783a74eb18c727c861c42c7cae949e0662fe45cce71b44eb168dbf0",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l05:word11",
+          "unit": "word",
+          "zh": "进来",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word12",
+          "unit": "word",
+          "zh": "爷爷",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word13",
+          "unit": "word",
+          "zh": "奶奶",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word14",
+          "unit": "word",
+          "zh": "礼物",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word15",
+          "unit": "word",
+          "zh": "准备",
+          "source": {
+            "pdfPage": 55,
+            "printedPage": 40,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l05:audio5",
+        "level": 2,
+        "lesson": 5,
+        "track": 5,
+        "kind": "text",
+        "text": 3,
+        "file": "course-assets/hsk2/audio/5-5.mp3",
+        "duration": 33.773333,
+        "bytes": 858756,
+        "sha256": "f89f260075f41cfe11a31a32e13d810292ff47882f7b2f04a7cf17fcb7abe09c",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l05:text3:line1",
+          "unit": "line",
+          "zh": "都12点了，我们吃饭吧。",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text3:line2",
+          "unit": "line",
+          "zh": "这么多好吃的，您太客气了！",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text3:line3",
+          "unit": "line",
+          "zh": "都是我自己做的，你们多吃点儿。",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text3:line4",
+          "unit": "line",
+          "zh": "奶茶也很好喝，是您自己做的吗？",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text3:line5",
+          "unit": "line",
+          "zh": "不是，奶茶是爷爷买的。",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text3:line6",
+          "unit": "line",
+          "zh": "在哪儿买的？我还没喝过这么好喝的奶茶。",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text3:line6:sentence1",
+          "unit": "sentence",
+          "zh": "在哪儿买的？",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text3:line6"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text3:line6:sentence2",
+          "unit": "sentence",
+          "zh": "我还没喝过这么好喝的奶茶。",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text3:line6"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text3:line7",
+          "unit": "line",
+          "zh": "就在前边的商场，吃完饭你们可以跟我去看看。",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l05:audio6",
+        "level": 2,
+        "lesson": 5,
+        "track": 6,
+        "kind": "vocab",
+        "text": 3,
+        "file": "course-assets/hsk2/audio/5-6.mp3",
+        "duration": 5.261333,
+        "bytes": 169953,
+        "sha256": "be104a032ce34d467c2c5feaba84067a792062dda355808f2f6379ddbd76a8e7",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l05:word16",
+          "unit": "word",
+          "zh": "奶茶",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word17",
+          "unit": "word",
+          "zh": "跟",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word18",
+          "unit": "word",
+          "zh": "跟",
+          "source": {
+            "pdfPage": 57,
+            "printedPage": 42,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l05:audio7",
+        "level": 2,
+        "lesson": 5,
+        "track": 7,
+        "kind": "text",
+        "text": 4,
+        "file": "course-assets/hsk2/audio/5-7.mp3",
+        "duration": 17.333333,
+        "bytes": 460896,
+        "sha256": "878989cd84906a059777b64e883fb180ab8e139dfbdaa17b61882f32e33f46aa",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l05:text4:line1",
+          "unit": "line",
+          "zh": "回国前一天，我们去一雪姐家了。到她家的时候，饭菜都做好了。刘爷爷还准备了奶茶。因为吃了太多东西，我们吃完饭是走回酒店的。",
+          "source": {
+            "pdfPage": 58,
+            "printedPage": 43,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 4
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text4:line1:sentence1",
+          "unit": "sentence",
+          "zh": "回国前一天，我们去一雪姐家了。",
+          "source": {
+            "pdfPage": 58,
+            "printedPage": 43,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text4:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text4:line1:sentence2",
+          "unit": "sentence",
+          "zh": "到她家的时候，饭菜都做好了。",
+          "source": {
+            "pdfPage": 58,
+            "printedPage": 43,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text4:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text4:line1:sentence3",
+          "unit": "sentence",
+          "zh": "刘爷爷还准备了奶茶。",
+          "source": {
+            "pdfPage": 58,
+            "printedPage": 43,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text4:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text4:line1:sentence4",
+          "unit": "sentence",
+          "zh": "因为吃了太多东西，我们吃完饭是走回酒店的。",
+          "source": {
+            "pdfPage": 58,
+            "printedPage": 43,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l05:text4:line1"
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l05:audio8",
+        "level": 2,
+        "lesson": 5,
+        "track": 8,
+        "kind": "vocab",
+        "text": 4,
+        "file": "course-assets/hsk2/audio/5-8.mp3",
+        "duration": 5.669333,
+        "bytes": 179334,
+        "sha256": "84743cd3115896ae4c0eee3fdeb4bdf02f0bca1041d77c61d582ab64b3fc49f1",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l05:word19",
+          "unit": "word",
+          "zh": "走",
+          "source": {
+            "pdfPage": 58,
+            "printedPage": 43,
+            "section": "课文4：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 4
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:word20",
+          "unit": "word",
+          "zh": "酒店",
+          "source": {
+            "pdfPage": 58,
+            "printedPage": 43,
+            "section": "课文4：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 4
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l06:audio1",
+        "level": 2,
+        "lesson": 6,
+        "track": 1,
+        "kind": "text",
+        "text": 1,
+        "file": "course-assets/hsk2/audio/6-1.mp3",
+        "duration": 26.429333,
+        "bytes": 681285,
+        "sha256": "ed1e9c6c1c856d87898005be33d08fcc8977cfe2305397414a3a2d6c4363d161",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l06:text1:line1",
+          "unit": "line",
+          "zh": "明天就是女儿的生日了。",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text1:line2",
+          "unit": "line",
+          "zh": "你不说，我还真忘了。我们给她准备个什么礼物呢？",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text1:line2:sentence1",
+          "unit": "sentence",
+          "zh": "你不说，我还真忘了。",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text1:line2"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text1:line2:sentence2",
+          "unit": "sentence",
+          "zh": "我们给她准备个什么礼物呢？",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text1:line2"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text1:line3",
+          "unit": "line",
+          "zh": "她喜欢画画，你觉得画笔怎么样？",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text1:line4",
+          "unit": "line",
+          "zh": "就送画笔吧！",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text1:line5",
+          "unit": "line",
+          "zh": "那我明天上午就去买。",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text1:line6",
+          "unit": "line",
+          "zh": "好的！我再给她买个大大的生日蛋糕。",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text1:line6:sentence1",
+          "unit": "sentence",
+          "zh": "好的！",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text1:line6"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text1:line6:sentence2",
+          "unit": "sentence",
+          "zh": "我再给她买个大大的生日蛋糕。",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text1:line6"
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l06:audio2",
+        "level": 2,
+        "lesson": 6,
+        "track": 2,
+        "kind": "vocab",
+        "text": 1,
+        "file": "course-assets/hsk2/audio/6-2.mp3",
+        "duration": 14.381333,
+        "bytes": 390075,
+        "sha256": "b32ff8eb3f5d04e1ac19ea4c46f5779b19845c66d084233f593b4f47e36ccf29",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l06:word01",
+          "unit": "word",
+          "zh": "生日",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:word02",
+          "unit": "word",
+          "zh": "忘",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:word03",
+          "unit": "word",
+          "zh": "画",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:word04",
+          "unit": "word",
+          "zh": "画",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:word05",
+          "unit": "word",
+          "zh": "画笔",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:word06",
+          "unit": "word",
+          "zh": "蛋糕",
+          "source": {
+            "pdfPage": 62,
+            "printedPage": 47,
+            "section": "课文1：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 1
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l06:audio3",
+        "level": 2,
+        "lesson": 6,
+        "track": 3,
+        "kind": "text",
+        "text": 2,
+        "file": "course-assets/hsk2/audio/6-3.mp3",
+        "duration": 32.501333,
+        "bytes": 829632,
+        "sha256": "2531cac062456bbbfcf47ba21bcf649a26dbf6ff8f59e9dd3e412d3d4a5df28c",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line1",
+          "unit": "line",
+          "zh": "小雪，生日快乐！",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line2",
+          "unit": "line",
+          "zh": "姐姐，生日快乐！",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line3",
+          "unit": "line",
+          "zh": "小雪，这是爸爸、妈妈送你的礼物。",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line4",
+          "unit": "line",
+          "zh": "你打开看看喜欢不喜欢。",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line5",
+          "unit": "line",
+          "zh": "画笔！我很喜欢！",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line5:sentence1",
+          "unit": "sentence",
+          "zh": "画笔！",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text2:line5"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line5:sentence2",
+          "unit": "sentence",
+          "zh": "我很喜欢！",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text2:line5"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line6",
+          "unit": "line",
+          "zh": "那你想画点儿什么？",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line7",
+          "unit": "line",
+          "zh": "画我们的家！有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line7:sentence1",
+          "unit": "sentence",
+          "zh": "画我们的家！",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text2:line7"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line7:sentence2",
+          "unit": "sentence",
+          "zh": "有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text2:line7"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text2:line8",
+          "unit": "line",
+          "zh": "那我要画一个穿白色衣服的姐姐。",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l06:audio4",
+        "level": 2,
+        "lesson": 6,
+        "track": 4,
+        "kind": "vocab",
+        "text": 2,
+        "file": "course-assets/hsk2/audio/6-4.mp3",
+        "duration": 6.461333,
+        "bytes": 198753,
+        "sha256": "fc51a4923a88b02b081b70933608365028290df7680e0aeb6d938517aa272c83",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l06:word07",
+          "unit": "word",
+          "zh": "快乐",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:word08",
+          "unit": "word",
+          "zh": "打开",
+          "source": {
+            "pdfPage": 64,
+            "printedPage": 49,
+            "section": "课文2：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 2
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l06:audio5",
+        "level": 2,
+        "lesson": 6,
+        "track": 5,
+        "kind": "text",
+        "text": 3,
+        "file": "course-assets/hsk2/audio/6-5.mp3",
+        "duration": 31.181333,
+        "bytes": 795342,
+        "sha256": "e36e33b86b2ffce1c200b23e40fe5a37855d8925f99eb31f22e6538f79c225d5",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l06:text3:line1",
+          "unit": "line",
+          "zh": "小雪，看看今天有什么好吃的。",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text3:line2",
+          "unit": "line",
+          "zh": "长长的面条儿，大大的蛋糕。",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text3:line3",
+          "unit": "line",
+          "zh": "你看，还有鱼啊肉啊什么的，都是你喜欢吃的。",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text3:line4",
+          "unit": "line",
+          "zh": "谢谢爸爸、妈妈！",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text3:line5",
+          "unit": "line",
+          "zh": "快去叫弟弟过来吃饭吧，吃完饭我们还要出去玩呢。",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text3:line6",
+          "unit": "line",
+          "zh": "过生日真好啊！",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text3:line7",
+          "unit": "line",
+          "zh": "是的，过生日就要吃好吃的，还要高高兴兴地玩。",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 1
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l06:audio6",
+        "level": 2,
+        "lesson": 6,
+        "track": 6,
+        "kind": "vocab",
+        "text": 3,
+        "file": "course-assets/hsk2/audio/6-6.mp3",
+        "duration": 12.461333,
+        "bytes": 343995,
+        "sha256": "c0081dd71b04f7f81c08da805de9cba523841bc07996354a93ddf6a2f9519303",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l06:word09",
+          "unit": "word",
+          "zh": "长",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:word10",
+          "unit": "word",
+          "zh": "鱼",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:word11",
+          "unit": "word",
+          "zh": "肉",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:word12",
+          "unit": "word",
+          "zh": "过",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:word13",
+          "unit": "word",
+          "zh": "地",
+          "source": {
+            "pdfPage": 66,
+            "printedPage": 51,
+            "section": "课文3：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 3
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l06:audio7",
+        "level": 2,
+        "lesson": 6,
+        "track": 7,
+        "kind": "text",
+        "text": 4,
+        "file": "course-assets/hsk2/audio/6-7.mp3",
+        "duration": 31.541333,
+        "bytes": 800652,
+        "sha256": "6871ba6ea479c2a042acd9a70eacefbb77fc47ff1d203828e833c3764896cb5c",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l06:text4:line1",
+          "unit": "line",
+          "zh": "今天是女儿的生日。我们买了蛋糕，做了面条儿，还做了鱼啊肉啊什么的。吃完晚饭，一家人去看了个电影。回家后，孩子们早早地就上床了。明天不上学，他们说要舒舒服服地睡一觉，让我们晚点儿叫他们起床。这是很忙、很累，但很快乐的一天。",
+          "source": {
+            "pdfPage": 67,
+            "printedPage": 52,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "sentenceCount": 6
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text4:line1:sentence1",
+          "unit": "sentence",
+          "zh": "今天是女儿的生日。",
+          "source": {
+            "pdfPage": 67,
+            "printedPage": 52,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text4:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text4:line1:sentence2",
+          "unit": "sentence",
+          "zh": "我们买了蛋糕，做了面条儿，还做了鱼啊肉啊什么的。",
+          "source": {
+            "pdfPage": 67,
+            "printedPage": 52,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text4:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text4:line1:sentence3",
+          "unit": "sentence",
+          "zh": "吃完晚饭，一家人去看了个电影。",
+          "source": {
+            "pdfPage": 67,
+            "printedPage": 52,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text4:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text4:line1:sentence4",
+          "unit": "sentence",
+          "zh": "回家后，孩子们早早地就上床了。",
+          "source": {
+            "pdfPage": 67,
+            "printedPage": 52,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text4:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text4:line1:sentence5",
+          "unit": "sentence",
+          "zh": "明天不上学，他们说要舒舒服服地睡一觉，让我们晚点儿叫他们起床。",
+          "source": {
+            "pdfPage": 67,
+            "printedPage": 52,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text4:line1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:text4:line1:sentence6",
+          "unit": "sentence",
+          "zh": "这是很忙、很累，但很快乐的一天。",
+          "source": {
+            "pdfPage": 67,
+            "printedPage": 52,
+            "section": "课文4",
+            "provenance": "textbook"
+          },
+          "parentLineId": "hsk2-fltrp-2026:l06:text4:line1"
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    },
+    {
+      "track": {
+        "id": "hsk2-fltrp-2026:l06:audio8",
+        "level": 2,
+        "lesson": 6,
+        "track": 8,
+        "kind": "vocab",
+        "text": 4,
+        "file": "course-assets/hsk2/audio/6-8.mp3",
+        "duration": 5.309333,
+        "bytes": 171105,
+        "sha256": "91102de6d169203dfedbc233d8bb16e15082177676d9c25ae026ea733d8e593e",
+        "decode": "passed",
+        "semanticVerification": "printed-track-label; full listening not certified"
+      },
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l06:word14",
+          "unit": "word",
+          "zh": "床",
+          "source": {
+            "pdfPage": 67,
+            "printedPage": 52,
+            "section": "课文4：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 4
+        },
+        {
+          "id": "hsk2-fltrp-2026:l06:word15",
+          "unit": "word",
+          "zh": "舒服",
+          "source": {
+            "pdfPage": 67,
+            "printedPage": 52,
+            "section": "课文4：生词",
+            "provenance": "textbook"
+          },
+          "sourceText": 4
+        }
+      ],
+      "timeCuesWithoutASR": [],
+      "cueTimeCertification": "none"
+    }
+  ],
+  "promotedClipCount": 0,
+  "humanListening": false,
+  "sourceTargetCounts": {
+    "tracks": 24,
+    "vocabularyEntries": 51,
+    "lines": 63,
+    "singleSentenceLines": 51,
+    "multiSentenceChildren": 32
+  }
+}

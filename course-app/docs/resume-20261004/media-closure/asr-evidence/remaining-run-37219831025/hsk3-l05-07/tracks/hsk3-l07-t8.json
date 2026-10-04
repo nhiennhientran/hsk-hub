@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l07:audio8",
+    "level": 3,
+    "lesson": 7,
+    "track": 8,
+    "kind": "vocab",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/7-8.mp3",
+    "sha256": "10b045130758d9ec7b80b855d896a1f3b7a92caa0e45e88e6d1d4a9303700b48",
+    "bytes": 250067,
+    "manifestDurationSeconds": 13.091378,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 209816,
+      "durationSeconds": 13.1135,
+      "sha256": "948b77347d500fb508382350d58bb0b08cb72bf2ba12c1fa53e86db28f164d3c"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 13.1135,
+    "duration_after_vad": 13.1135,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 1.64,
+      "text": "结婚",
+      "tokens": [
+        50364,
+        45641,
+        26112,
+        248,
+        50506
+      ],
+      "avg_logprob": -0.6785079687833786,
+      "compression_ratio": 0.7105263157894737,
+      "no_speech_prob": 0.225768581032753,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.78,
+          "word": "结",
+          "probability": 0.6711755990982056
+        },
+        {
+          "start": 0.78,
+          "end": 1.64,
+          "word": "婚",
+          "probability": 0.9997236430644989
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.84,
+      "end": 4.88,
+      "text": "不但",
+      "tokens": [
+        50506,
+        1960,
+        8395,
+        50628
+      ],
+      "avg_logprob": -0.6785079687833786,
+      "compression_ratio": 0.7105263157894737,
+      "no_speech_prob": 0.225768581032753,
+      "words": [
+        {
+          "start": 2.4400000000000004,
+          "end": 3.14,
+          "word": "不",
+          "probability": 0.6418129205703735
+        },
+        {
+          "start": 3.14,
+          "end": 4.88,
+          "word": "但",
+          "probability": 0.8900623321533203
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 4.88,
+      "end": 6.48,
+      "text": "而且",
+      "tokens": [
+        50628,
+        22942,
+        50768
+      ],
+      "avg_logprob": -0.6785079687833786,
+      "compression_ratio": 0.7105263157894737,
+      "no_speech_prob": 0.225768581032753,
+      "words": [
+        {
+          "start": 4.88,
+          "end": 6.48,
+          "word": "而且",
+          "probability": 0.8762654066085815
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 8.08,
+      "end": 8.76,
+      "text": "生",
+      "tokens": [
+        50768,
+        8244,
+        50868
+      ],
+      "avg_logprob": -0.6785079687833786,
+      "compression_ratio": 0.7105263157894737,
+      "no_speech_prob": 0.225768581032753,
+      "words": [
+        {
+          "start": 8.06,
+          "end": 8.76,
+          "word": "生",
+          "probability": 0.8419346809387207
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 10.08,
+      "end": 11.26,
+      "text": "开机",
+      "tokens": [
+        50868,
+        18937,
+        37960,
+        51012
+      ],
+      "avg_logprob": -0.6785079687833786,
+      "compression_ratio": 0.7105263157894737,
+      "no_speech_prob": 0.225768581032753,
+      "words": [
+        {
+          "start": 9.8,
+          "end": 10.5,
+          "word": "开",
+          "probability": 0.9227067232131958
+        },
+        {
+          "start": 10.5,
+          "end": 11.26,
+          "word": "机",
+          "probability": 0.8901726007461548
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.5342782129999932,
+  "realTimeFactor": 0.11699990185686454,
+  "observationChecks": {
+    "rawWordCount": 8,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

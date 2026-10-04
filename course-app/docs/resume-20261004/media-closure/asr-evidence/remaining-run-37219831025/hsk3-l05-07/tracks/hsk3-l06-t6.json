@@ -1,0 +1,465 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l06:audio6",
+    "level": 3,
+    "lesson": 6,
+    "track": 6,
+    "kind": "vocab",
+    "text": 3,
+    "file": "course-assets/hsk3/audio/6-6.mp3",
+    "sha256": "8395359505be0df7c5fff4aba560c8921f5bae311df5d9cb38534f375e91be94",
+    "bytes": 414365,
+    "manifestDurationSeconds": 23.36,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 374492,
+      "durationSeconds": 23.40575,
+      "sha256": "6c5c32bc4dc603af57fc29b20b38542ddea08226cf583192ad8c4bb8dfcfaab1"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 23.40575,
+    "duration_after_vad": 23.40575,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.44,
+      "text": "耳机",
+      "tokens": [
+        50364,
+        4450,
+        111,
+        37960,
+        50492
+      ],
+      "avg_logprob": -0.5345853483954142,
+      "compression_ratio": 0.8225806451612904,
+      "no_speech_prob": 0.39619699120521545,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.68,
+          "word": "耳",
+          "probability": 0.9780993163585663
+        },
+        {
+          "start": 0.68,
+          "end": 2.44,
+          "word": "机",
+          "probability": 0.9462038278579712
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.44,
+      "end": 5.42,
+      "text": "充电宝",
+      "tokens": [
+        50492,
+        2347,
+        227,
+        42182,
+        2415,
+        251,
+        50642
+      ],
+      "avg_logprob": -0.5345853483954142,
+      "compression_ratio": 0.8225806451612904,
+      "no_speech_prob": 0.39619699120521545,
+      "words": [
+        {
+          "start": 2.44,
+          "end": 3.08,
+          "word": "充",
+          "probability": 0.8384198546409607
+        },
+        {
+          "start": 3.08,
+          "end": 3.38,
+          "word": "电",
+          "probability": 0.9935089945793152
+        },
+        {
+          "start": 3.38,
+          "end": 5.42,
+          "word": "宝",
+          "probability": 0.9429739713668823
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.42,
+      "end": 7.96,
+      "text": "常用",
+      "tokens": [
+        50642,
+        11279,
+        9254,
+        50780
+      ],
+      "avg_logprob": -0.5345853483954142,
+      "compression_ratio": 0.8225806451612904,
+      "no_speech_prob": 0.39619699120521545,
+      "words": [
+        {
+          "start": 5.42,
+          "end": 6.06,
+          "word": "常",
+          "probability": 0.7125093340873718
+        },
+        {
+          "start": 6.06,
+          "end": 7.96,
+          "word": "用",
+          "probability": 0.9990720748901367
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 7.96,
+      "end": 9.02,
+      "text": "月",
+      "tokens": [
+        50780,
+        6939,
+        50892
+      ],
+      "avg_logprob": -0.5345853483954142,
+      "compression_ratio": 0.8225806451612904,
+      "no_speech_prob": 0.39619699120521545,
+      "words": [
+        {
+          "start": 7.96,
+          "end": 9.02,
+          "word": "月",
+          "probability": 0.7679058909416199
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 10.56,
+      "end": 12.94,
+      "text": "分开",
+      "tokens": [
+        50892,
+        6627,
+        18937,
+        51018
+      ],
+      "avg_logprob": -0.5345853483954142,
+      "compression_ratio": 0.8225806451612904,
+      "no_speech_prob": 0.39619699120521545,
+      "words": [
+        {
+          "start": 10.360000000000001,
+          "end": 11.06,
+          "word": "分",
+          "probability": 0.9440240263938904
+        },
+        {
+          "start": 11.06,
+          "end": 12.94,
+          "word": "开",
+          "probability": 0.9976589679718018
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 12.94,
+      "end": 15.48,
+      "text": "检查",
+      "tokens": [
+        51018,
+        16407,
+        222,
+        42623,
+        51142
+      ],
+      "avg_logprob": -0.5345853483954142,
+      "compression_ratio": 0.8225806451612904,
+      "no_speech_prob": 0.39619699120521545,
+      "words": [
+        {
+          "start": 12.94,
+          "end": 13.58,
+          "word": "检",
+          "probability": 0.9523839354515076
+        },
+        {
+          "start": 13.58,
+          "end": 15.48,
+          "word": "查",
+          "probability": 0.9870849251747131
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 15.48,
+      "end": 17.32,
+      "text": "刷",
+      "tokens": [
+        51142,
+        2437,
+        115,
+        51240
+      ],
+      "avg_logprob": -0.5345853483954142,
+      "compression_ratio": 0.8225806451612904,
+      "no_speech_prob": 0.39619699120521545,
+      "words": [
+        {
+          "start": 15.48,
+          "end": 17.32,
+          "word": "刷",
+          "probability": 0.9278871417045593
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 17.32,
+      "end": 19.86,
+      "text": "检票",
+      "tokens": [
+        51240,
+        16407,
+        222,
+        41925,
+        51378
+      ],
+      "avg_logprob": -0.5345853483954142,
+      "compression_ratio": 0.8225806451612904,
+      "no_speech_prob": 0.39619699120521545,
+      "words": [
+        {
+          "start": 17.32,
+          "end": 18.16,
+          "word": "检",
+          "probability": 0.9020950496196747
+        },
+        {
+          "start": 18.16,
+          "end": 19.86,
+          "word": "票",
+          "probability": 0.9903765320777893
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 0,
+      "start": 19.86,
+      "end": 22.58,
+      "text": "电梯",
+      "tokens": [
+        51378,
+        42182,
+        19017,
+        107,
+        51518
+      ],
+      "avg_logprob": -0.5345853483954142,
+      "compression_ratio": 0.8225806451612904,
+      "no_speech_prob": 0.39619699120521545,
+      "words": [
+        {
+          "start": 19.86,
+          "end": 20.68,
+          "word": "电",
+          "probability": 0.9801210165023804
+        },
+        {
+          "start": 20.68,
+          "end": 22.58,
+          "word": "梯",
+          "probability": 0.994828075170517
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.9896849059999795,
+  "realTimeFactor": 0.08500838067568779,
+  "observationChecks": {
+    "rawWordCount": 17,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

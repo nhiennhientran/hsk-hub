@@ -1,0 +1,465 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config=playwright.package-closure.config.ts",
+      "--project=chromium"
+    ],
+    "configFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/playwright.package-closure.config.ts",
+    "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package-closure",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged",
+        "testIgnore": [],
+        "testMatch": [
+          "unified-source.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package-closure",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged",
+        "testIgnore": [],
+        "testMatch": [
+          "unified-source.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": ".repro-output/package-closure-browser.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node tools/serve-package.mjs",
+      "url": "http://127.0.0.1:18785/hsk-hub/course-engine/unified-release-manifest.json",
+      "reuseExistingServer": false,
+      "env": {
+        "HSK_PACKAGE_PORT": "18785",
+        "HSK_PACKAGE_ROOT": "/workspace/scratch/28b55072841a/package-closure-assembled"
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "unified-source.spec.ts",
+      "file": "unified-source.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "unified packaged entry portal loads actual source crops with nonempty legacy state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1388,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:21:29.934Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "packaged-entry-original-images.json",
+                      "contentType": "application/json",
+                      "body": "eyJlbnRyeSI6ImluZGV4Lmh0bWwiLCJ1cmxzIjpbImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDEucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDQucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA2LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtdGV4dDIucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXRleHQzLnBuZyJdLCJsZXNzb24iOjR9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-26ac44264fe47755d8d9",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1270,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:21:31.398Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "packaged-entry-original-images.json",
+                      "contentType": "application/json",
+                      "body": "eyJlbnRyeSI6Im5ldy1oc2sxL2luZGV4Lmh0bWwiLCJ1cmxzIjpbImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDEucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDQucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA2LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtdGV4dDIucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXRleHQzLnBuZyJdLCJsZXNzb24iOjR9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-5400409ffca121b290e9",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1405,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:21:32.677Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "packaged-entry-original-images.json",
+                      "contentType": "application/json",
+                      "body": "eyJlbnRyeSI6Im5ldy1oc2sxL2hzazEvaW5kZXguaHRtbCIsInVybHMiOlsiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL2hzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL2hzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDYucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL2hzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wMS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXBpY3R1cmUtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL2hzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wNC5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0Mi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0My5wbmciXSwibGVzc29uIjo0fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-0341a27f445f4c39d719",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1358,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:21:34.091Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "packaged-entry-original-images.json",
+                      "contentType": "application/json",
+                      "body": "eyJlbnRyeSI6Im5ldy1oc2syL2luZGV4Lmh0bWwiLCJ1cmxzIjpbImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDEucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDQucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA2LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtdGV4dDIucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXRleHQzLnBuZyJdLCJsZXNzb24iOjR9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-f13135a35b177057ebac",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1403,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:21:35.458Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "packaged-entry-original-images.json",
+                      "contentType": "application/json",
+                      "body": "eyJlbnRyeSI6Im5ldy1oc2syL2hzazIvaW5kZXguaHRtbCIsInVybHMiOlsiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL2hzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL2hzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDYucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL2hzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wMS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXBpY3R1cmUtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL2hzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wNC5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0Mi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0My5wbmciXSwibGVzc29uIjo0fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-7366db40280b1072078f",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1302,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:21:36.870Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "packaged-entry-original-images.json",
+                      "contentType": "application/json",
+                      "body": "eyJlbnRyeSI6Im5ldy1oc2szL2luZGV4Lmh0bWwiLCJ1cmxzIjpbImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDEucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDQucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA2LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtdGV4dDIucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXRleHQzLnBuZyJdLCJsZXNzb24iOjR9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-9c8876ae50a4e9627e09",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1298,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:21:38.179Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "packaged-entry-original-images.json",
+                      "contentType": "application/json",
+                      "body": "eyJlbnRyeSI6Im5ldy1oc2szL2hzazMvaW5kZXguaHRtbCIsInVybHMiOlsiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL2hzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL2hzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDYucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL2hzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wMS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXBpY3R1cmUtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL2hzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wNC5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0Mi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0My5wbmciXSwibGVzc29uIjo0fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-286d46bb32631025315d",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "nested HSK1 textbook originals and original audio resolve against shared course engine",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 678,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:21:39.485Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "nested-audio.json",
+                      "contentType": "application/json",
+                      "body": "eyJzcmMiOiJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvY291cnNlLWVuZ2luZS9jb3Vyc2UtYXNzZXRzL2F1ZGlvLzEtMS5tcDMiLCJ0aW1lIjowLjAwMTMzNSwiZHVyYXRpb24iOjYuMzczODc4fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-545436c89bd7809c3bca",
+          "file": "unified-source.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "assembled HTTP bytes match frozen identity and private baseline/source paths are not served",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 235,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:21:40.171Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-866729f381ee99c18f2f",
+          "file": "unified-source.spec.ts",
+          "line": 39,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T17:21:29.356Z",
+    "duration": 11106.592,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

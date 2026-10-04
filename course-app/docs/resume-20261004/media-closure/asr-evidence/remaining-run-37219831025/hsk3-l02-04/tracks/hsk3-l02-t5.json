@@ -1,0 +1,919 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l02:audio5",
+    "level": 3,
+    "lesson": 2,
+    "track": 5,
+    "kind": "text",
+    "text": 3,
+    "file": "course-assets/hsk3/audio/2-5.mp3",
+    "sha256": "6cd00ad42260c25fd0a47da84c3f48af88e3ca8bfe1f4d3fde1ad9942a5b9ffc",
+    "bytes": 526121,
+    "manifestDurationSeconds": 30.344756,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 486505,
+      "durationSeconds": 30.4065625,
+      "sha256": "13bf882a9f7adfba55aa5e1a0aa73231f9b9c12dc893e9694f1df4870b81a504"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 30.4065625,
+    "duration_after_vad": 30.4065625,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 4.62,
+      "text": "这个鸡肉饭太好吃了 我要再来吃一次",
+      "tokens": [
+        50364,
+        15368,
+        165,
+        116,
+        94,
+        31980,
+        41520,
+        255,
+        9455,
+        34669,
+        2289,
+        8624,
+        4275,
+        8623,
+        6912,
+        10123,
+        27505,
+        50614
+      ],
+      "avg_logprob": -0.11081047298260105,
+      "compression_ratio": 1.3,
+      "no_speech_prob": 0.047227807343006134,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 1.0,
+          "word": "这个",
+          "probability": 0.3164420425891876
+        },
+        {
+          "start": 1.0,
+          "end": 1.2,
+          "word": "鸡",
+          "probability": 0.9973049958546957
+        },
+        {
+          "start": 1.2,
+          "end": 1.4,
+          "word": "肉",
+          "probability": 0.9996992349624634
+        },
+        {
+          "start": 1.4,
+          "end": 1.66,
+          "word": "饭",
+          "probability": 0.9944610297679901
+        },
+        {
+          "start": 1.66,
+          "end": 2.02,
+          "word": "太",
+          "probability": 0.978691577911377
+        },
+        {
+          "start": 2.02,
+          "end": 2.48,
+          "word": "好吃",
+          "probability": 0.9885067939758301
+        },
+        {
+          "start": 2.48,
+          "end": 2.76,
+          "word": "了",
+          "probability": 0.9875168204307556
+        },
+        {
+          "start": 2.76,
+          "end": 3.36,
+          "word": " 我",
+          "probability": 0.19157250225543976
+        },
+        {
+          "start": 3.36,
+          "end": 3.5,
+          "word": "要",
+          "probability": 0.9545215368270874
+        },
+        {
+          "start": 3.5,
+          "end": 3.74,
+          "word": "再",
+          "probability": 0.8311125636100769
+        },
+        {
+          "start": 3.74,
+          "end": 3.98,
+          "word": "来",
+          "probability": 0.9981904625892639
+        },
+        {
+          "start": 3.98,
+          "end": 4.24,
+          "word": "吃",
+          "probability": 0.9873172640800476
+        },
+        {
+          "start": 4.24,
+          "end": 4.62,
+          "word": "一次",
+          "probability": 0.9826658964157104
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.5200000000000005,
+      "end": 9.62,
+      "text": "你可以拿走这张菜单 看看下次还吃点什么",
+      "tokens": [
+        50614,
+        42766,
+        24351,
+        9575,
+        5562,
+        44059,
+        33025,
+        47446,
+        220,
+        22884,
+        35829,
+        14852,
+        10123,
+        12579,
+        10440,
+        50864
+      ],
+      "avg_logprob": -0.11081047298260105,
+      "compression_ratio": 1.3,
+      "no_speech_prob": 0.047227807343006134,
+      "words": [
+        {
+          "start": 5.5200000000000005,
+          "end": 6.04,
+          "word": "你可以",
+          "probability": 0.8511885404586792
+        },
+        {
+          "start": 6.04,
+          "end": 6.4,
+          "word": "拿",
+          "probability": 0.9988928437232971
+        },
+        {
+          "start": 6.4,
+          "end": 6.66,
+          "word": "走",
+          "probability": 0.997553288936615
+        },
+        {
+          "start": 6.66,
+          "end": 6.84,
+          "word": "这",
+          "probability": 0.9927247166633606
+        },
+        {
+          "start": 6.84,
+          "end": 6.98,
+          "word": "张",
+          "probability": 0.9961231350898743
+        },
+        {
+          "start": 6.98,
+          "end": 7.22,
+          "word": "菜",
+          "probability": 0.9982035160064697
+        },
+        {
+          "start": 7.22,
+          "end": 7.42,
+          "word": "单",
+          "probability": 0.9977485537528992
+        },
+        {
+          "start": 7.88,
+          "end": 8.14,
+          "word": " 看看",
+          "probability": 0.9785429239273071
+        },
+        {
+          "start": 8.14,
+          "end": 8.52,
+          "word": "下次",
+          "probability": 0.975343644618988
+        },
+        {
+          "start": 8.52,
+          "end": 8.94,
+          "word": "还",
+          "probability": 0.9247872233390808
+        },
+        {
+          "start": 8.94,
+          "end": 9.16,
+          "word": "吃",
+          "probability": 0.9933292865753174
+        },
+        {
+          "start": 9.16,
+          "end": 9.32,
+          "word": "点",
+          "probability": 0.9941983222961426
+        },
+        {
+          "start": 9.32,
+          "end": 9.62,
+          "word": "什么",
+          "probability": 0.9564037919044495
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 10.4,
+      "end": 13.76,
+      "text": "不用拿菜单 在手机上就能看到",
+      "tokens": [
+        50864,
+        24384,
+        24351,
+        33025,
+        47446,
+        37286,
+        11389,
+        37960,
+        5708,
+        3111,
+        8225,
+        18032,
+        51064
+      ],
+      "avg_logprob": -0.11081047298260105,
+      "compression_ratio": 1.3,
+      "no_speech_prob": 0.047227807343006134,
+      "words": [
+        {
+          "start": 10.4,
+          "end": 10.92,
+          "word": "不用",
+          "probability": 0.9485153555870056
+        },
+        {
+          "start": 10.92,
+          "end": 11.2,
+          "word": "拿",
+          "probability": 0.9968829154968262
+        },
+        {
+          "start": 11.2,
+          "end": 11.42,
+          "word": "菜",
+          "probability": 0.9988445043563843
+        },
+        {
+          "start": 11.42,
+          "end": 11.68,
+          "word": "单",
+          "probability": 0.9979111552238464
+        },
+        {
+          "start": 11.68,
+          "end": 12.42,
+          "word": " 在",
+          "probability": 0.8302343487739563
+        },
+        {
+          "start": 12.42,
+          "end": 12.64,
+          "word": "手",
+          "probability": 0.9985949397087097
+        },
+        {
+          "start": 12.64,
+          "end": 12.82,
+          "word": "机",
+          "probability": 0.9982396364212036
+        },
+        {
+          "start": 12.82,
+          "end": 13.04,
+          "word": "上",
+          "probability": 0.9953663349151611
+        },
+        {
+          "start": 13.04,
+          "end": 13.24,
+          "word": "就",
+          "probability": 0.987236499786377
+        },
+        {
+          "start": 13.24,
+          "end": 13.38,
+          "word": "能",
+          "probability": 0.9979372024536133
+        },
+        {
+          "start": 13.38,
+          "end": 13.76,
+          "word": "看到",
+          "probability": 0.9959487915039062
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 13.76,
+      "end": 16.62,
+      "text": "也可以选好了让他们给你送",
+      "tokens": [
+        51064,
+        47935,
+        2215,
+        231,
+        12621,
+        33650,
+        47911,
+        23197,
+        2166,
+        29309,
+        51214
+      ],
+      "avg_logprob": -0.11081047298260105,
+      "compression_ratio": 1.3,
+      "no_speech_prob": 0.047227807343006134,
+      "words": [
+        {
+          "start": 13.76,
+          "end": 14.54,
+          "word": "也可以",
+          "probability": 0.5072519183158875
+        },
+        {
+          "start": 14.54,
+          "end": 14.96,
+          "word": "选",
+          "probability": 0.9943802058696747
+        },
+        {
+          "start": 14.96,
+          "end": 15.36,
+          "word": "好了",
+          "probability": 0.953734815120697
+        },
+        {
+          "start": 15.36,
+          "end": 15.66,
+          "word": "让",
+          "probability": 0.90290766954422
+        },
+        {
+          "start": 15.66,
+          "end": 15.94,
+          "word": "他们",
+          "probability": 0.788718044757843
+        },
+        {
+          "start": 15.94,
+          "end": 16.2,
+          "word": "给",
+          "probability": 0.9899084568023682
+        },
+        {
+          "start": 16.2,
+          "end": 16.38,
+          "word": "你",
+          "probability": 0.9970089793205261
+        },
+        {
+          "start": 16.38,
+          "end": 16.62,
+          "word": "送",
+          "probability": 0.9965888261795044
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 17.54,
+      "end": 19.38,
+      "text": "他们家还能送外卖",
+      "tokens": [
+        51214,
+        47911,
+        5155,
+        14852,
+        8225,
+        29309,
+        12022,
+        5322,
+        244,
+        51364
+      ],
+      "avg_logprob": -0.11081047298260105,
+      "compression_ratio": 1.3,
+      "no_speech_prob": 0.047227807343006134,
+      "words": [
+        {
+          "start": 17.54,
+          "end": 18.06,
+          "word": "他们",
+          "probability": 0.9312437176704407
+        },
+        {
+          "start": 18.06,
+          "end": 18.38,
+          "word": "家",
+          "probability": 0.9990198612213135
+        },
+        {
+          "start": 18.38,
+          "end": 18.68,
+          "word": "还",
+          "probability": 0.9849764108657837
+        },
+        {
+          "start": 18.68,
+          "end": 18.84,
+          "word": "能",
+          "probability": 0.9980194568634033
+        },
+        {
+          "start": 18.84,
+          "end": 19.0,
+          "word": "送",
+          "probability": 0.9979158043861389
+        },
+        {
+          "start": 19.0,
+          "end": 19.2,
+          "word": "外",
+          "probability": 0.9953723549842834
+        },
+        {
+          "start": 19.2,
+          "end": 19.38,
+          "word": "卖",
+          "probability": 0.9973650276660919
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 20.52,
+      "end": 23.98,
+      "text": "对 现在很多饭馆都能送外卖",
+      "tokens": [
+        51364,
+        8713,
+        220,
+        25040,
+        20778,
+        41520,
+        255,
+        11748,
+        228,
+        7182,
+        8225,
+        29309,
+        12022,
+        5322,
+        244,
+        51564
+      ],
+      "avg_logprob": -0.11081047298260105,
+      "compression_ratio": 1.3,
+      "no_speech_prob": 0.047227807343006134,
+      "words": [
+        {
+          "start": 20.52,
+          "end": 21.04,
+          "word": "对",
+          "probability": 0.8347015380859375
+        },
+        {
+          "start": 21.76,
+          "end": 21.96,
+          "word": " 现在",
+          "probability": 0.9962762594223022
+        },
+        {
+          "start": 21.96,
+          "end": 22.42,
+          "word": "很多",
+          "probability": 0.9956010580062866
+        },
+        {
+          "start": 22.42,
+          "end": 22.68,
+          "word": "饭",
+          "probability": 0.9681484997272491
+        },
+        {
+          "start": 22.68,
+          "end": 22.86,
+          "word": "馆",
+          "probability": 0.9953266680240631
+        },
+        {
+          "start": 22.86,
+          "end": 23.12,
+          "word": "都",
+          "probability": 0.996975302696228
+        },
+        {
+          "start": 23.12,
+          "end": 23.26,
+          "word": "能",
+          "probability": 0.9956308603286743
+        },
+        {
+          "start": 23.26,
+          "end": 23.44,
+          "word": "送",
+          "probability": 0.9965811371803284
+        },
+        {
+          "start": 23.44,
+          "end": 23.66,
+          "word": "外",
+          "probability": 0.9966877102851868
+        },
+        {
+          "start": 23.66,
+          "end": 23.98,
+          "word": "卖",
+          "probability": 0.9998842775821686
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 23.98,
+      "end": 26.06,
+      "text": "想吃什么就点什么",
+      "tokens": [
+        51564,
+        7093,
+        10123,
+        10440,
+        3111,
+        12579,
+        10440,
+        51714
+      ],
+      "avg_logprob": -0.11081047298260105,
+      "compression_ratio": 1.3,
+      "no_speech_prob": 0.047227807343006134,
+      "words": [
+        {
+          "start": 23.98,
+          "end": 24.6,
+          "word": "想",
+          "probability": 0.15813283622264862
+        },
+        {
+          "start": 24.6,
+          "end": 24.84,
+          "word": "吃",
+          "probability": 0.9974006414413452
+        },
+        {
+          "start": 24.84,
+          "end": 25.14,
+          "word": "什么",
+          "probability": 0.9965084195137024
+        },
+        {
+          "start": 25.14,
+          "end": 25.44,
+          "word": "就",
+          "probability": 0.9676110148429871
+        },
+        {
+          "start": 25.44,
+          "end": 25.66,
+          "word": "点",
+          "probability": 0.9950224161148071
+        },
+        {
+          "start": 25.66,
+          "end": 26.06,
+          "word": "什么",
+          "probability": 0.9962181448936462
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 27.2,
+      "end": 29.08,
+      "text": "那真是太方便了",
+      "tokens": [
+        51714,
+        4184,
+        6303,
+        1541,
+        9455,
+        9249,
+        27364,
+        2289,
+        51814
+      ],
+      "avg_logprob": -0.11081047298260105,
+      "compression_ratio": 1.3,
+      "no_speech_prob": 0.047227807343006134,
+      "words": [
+        {
+          "start": 27.2,
+          "end": 27.72,
+          "word": "那",
+          "probability": 0.89545738697052
+        },
+        {
+          "start": 27.72,
+          "end": 27.94,
+          "word": "真",
+          "probability": 0.9967942833900452
+        },
+        {
+          "start": 27.94,
+          "end": 28.1,
+          "word": "是",
+          "probability": 0.9956628680229187
+        },
+        {
+          "start": 28.1,
+          "end": 28.34,
+          "word": "太",
+          "probability": 0.998816967010498
+        },
+        {
+          "start": 28.34,
+          "end": 28.58,
+          "word": "方",
+          "probability": 0.9962813258171082
+        },
+        {
+          "start": 28.58,
+          "end": 28.82,
+          "word": "便",
+          "probability": 0.9998928308486938
+        },
+        {
+          "start": 28.82,
+          "end": 29.08,
+          "word": "了",
+          "probability": 0.9804829359054565
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 2908,
+      "start": 29.08,
+      "end": 30.38,
+      "text": "字幕by索兰娅",
+      "tokens": [
+        50364,
+        22381,
+        40211,
+        2322,
+        7732,
+        95,
+        2347,
+        108,
+        19976,
+        227,
+        50464
+      ],
+      "avg_logprob": -0.6787924071153005,
+      "compression_ratio": 0.6538461538461539,
+      "no_speech_prob": 0.868583083152771,
+      "words": [
+        {
+          "start": 29.08,
+          "end": 30.38,
+          "word": "字",
+          "probability": 0.0182151198387146
+        },
+        {
+          "start": 30.38,
+          "end": 30.38,
+          "word": "幕",
+          "probability": 0.9921244978904724
+        },
+        {
+          "start": 30.38,
+          "end": 30.38,
+          "word": "by",
+          "probability": 0.051138896495103836
+        },
+        {
+          "start": 30.38,
+          "end": 30.38,
+          "word": "索",
+          "probability": 0.6704952120780945
+        },
+        {
+          "start": 30.38,
+          "end": 30.38,
+          "word": "兰",
+          "probability": 0.8875647187232971
+        },
+        {
+          "start": 30.38,
+          "end": 30.38,
+          "word": "娅",
+          "probability": 0.8617841303348541
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 4.61534783099998,
+  "realTimeFactor": 0.1517878856250186,
+  "observationChecks": {
+    "rawWordCount": 81,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

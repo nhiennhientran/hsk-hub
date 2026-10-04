@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "status": "pilot raw evidence independently reviewed; remaining raw collection authorized; no automatic cuts or precision promotion",
+  "purpose": "29 lessons without a precise clip manifest; 232 original tracks",
+  "pilot": {
+    "id": "hsk2-l04-06",
+    "level": 2,
+    "lessons": "4,5,6",
+    "tracks": 24,
+    "smallRunId": 37217540172,
+    "mediumRunId": 37218301490,
+    "status": "24/24 original inputs and both raw runs reviewed; many ASR boundaries held; precision unapproved"
+  },
+  "expansionGate": [
+    "Successful pilot with original MP3 hashes, pinned model snapshot and package/wheel provenance",
+    "Read all 24 raw transcripts and timestamps against trusted printed-source lines and word lists",
+    "Record actual runtime, memory/failures, text recognition errors and timestamp residuals",
+    "Independently review proposed clips plus acoustic boundaries and source coverage",
+    "Keep unresolved entries on honestly labelled original whole-track/group fallback"
+  ],
+  "matrixAfterPilotReview": {
+    "maxParallel": 2,
+    "include": [
+      {
+        "id": "hsk2-l04-06",
+        "level": 2,
+        "lessons": "4,5,6",
+        "tracks": 24
+      },
+      {
+        "id": "hsk2-l07-09",
+        "level": 2,
+        "lessons": "7,8,9",
+        "tracks": 24
+      },
+      {
+        "id": "hsk2-l10-12",
+        "level": 2,
+        "lessons": "10,11,12",
+        "tracks": 24
+      },
+      {
+        "id": "hsk2-l13-15",
+        "level": 2,
+        "lessons": "13,14,15",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l02-04",
+        "level": 3,
+        "lessons": "2,3,4",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l05-07",
+        "level": 3,
+        "lessons": "5,6,7",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l08-10",
+        "level": 3,
+        "lessons": "8,9,10",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l11-13",
+        "level": 3,
+        "lessons": "11,12,13",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l14-16",
+        "level": 3,
+        "lessons": "14,15,16",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l17-18",
+        "level": 3,
+        "lessons": "17,18",
+        "tracks": 16
+      }
+    ],
+    "status": "reference for complete originally unprocessed precision scope, includes already collected 3 pilot lessons; do not rerun pilot automatically"
+  },
+  "recoverySeparateFromExpansion": {
+    "previouslyPreciseLessons": [
+      "hsk2:1",
+      "hsk2:2",
+      "hsk2:3",
+      "hsk3:1"
+    ],
+    "heldVocabularyEntries": 13,
+    "rule": "Do not count old metadata-only references as recovered raw ASR; rerun in a separately versioned evidence batch if needed"
+  },
+  "evidenceCollectionForRemainingBatches": {
+    "purpose": "diagnostic raw evidence only, not automatic clip generation",
+    "maxParallel": 2,
+    "remainingLessonCount": 26,
+    "remainingOriginalTrackCount": 208,
+    "modelId": "Systran/faster-whisper-small",
+    "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+    "include": [
+      {
+        "id": "hsk2-l07-09",
+        "level": 2,
+        "lessons": "7,8,9",
+        "tracks": 24
+      },
+      {
+        "id": "hsk2-l10-12",
+        "level": 2,
+        "lessons": "10,11,12",
+        "tracks": 24
+      },
+      {
+        "id": "hsk2-l13-15",
+        "level": 2,
+        "lessons": "13,14,15",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l02-04",
+        "level": 3,
+        "lessons": "2,3,4",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l05-07",
+        "level": 3,
+        "lessons": "5,6,7",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l08-10",
+        "level": 3,
+        "lessons": "8,9,10",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l11-13",
+        "level": 3,
+        "lessons": "11,12,13",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l14-16",
+        "level": 3,
+        "lessons": "14,15,16",
+        "tracks": 24
+      },
+      {
+        "id": "hsk3-l17-18",
+        "level": 3,
+        "lessons": "17,18",
+        "tracks": 16
+      }
+    ],
+    "commandTemplate": "python course-app/docs/resume-20261004/media-closure/asr-evidence/transcribe-original-tracks.py --level LEVEL --lessons LESSONS --allow-expanded-batch --cpu-threads 2 --model-id Systran/faster-whisper-small --model-revision 536b0662742c02347bc0e980a01041f333bce120 --cache .repro-output/asr-model-cache --output .repro-output/asr-evidence/BATCH_ID",
+    "productionPromotion": false,
+    "gate": "Root and independent QA authorize diagnostic collection after source identity and real pilot model provenance/performance checks; per-target source/boundary/crop QA still required for cuts",
+    "actualCollection": {
+      "status": "actual-successfully-downloaded-and-verified; diagnostic-only",
+      "runId": 37219831025,
+      "headSHA": "3f7285359c2f7fc0c552157df68feb61c9758f53",
+      "artifacts": 9,
+      "originalTracksAndFullPCM_SHA_Matched": 208,
+      "currentLessonJSON_SHA_Mismatches": 0,
+      "report": "remaining-run-37219831025/verified-collection.json",
+      "diagnostics": "remaining-run-37219831025/diagnostic-summary.json",
+      "productionPromotion": false
+    }
+  }
+}

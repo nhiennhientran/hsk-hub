@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l07:audio4",
+    "level": 2,
+    "lesson": 7,
+    "track": 4,
+    "kind": "vocab",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/7-4.mp3",
+    "sha256": "59e0c7b5e8218db74c2d7c0cd78569ea22a8d5d094ac5716431afb6d226abc3b",
+    "bytes": 349755,
+    "manifestDurationSeconds": 12.701333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 203136,
+      "durationSeconds": 12.696,
+      "sha256": "a7b4cf339ec488a147f2fb96af99b0ad3edf425c848a1855b8809438c3710c3e"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 12.696,
+    "duration_after_vad": 12.696,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.46,
+      "text": "运动",
+      "tokens": [
+        50364,
+        3316,
+        238,
+        34961,
+        50514
+      ],
+      "avg_logprob": -0.45587196201086044,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.2577097415924072,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.6,
+          "word": "运",
+          "probability": 0.8328412175178528
+        },
+        {
+          "start": 0.6,
+          "end": 2.46,
+          "word": "动",
+          "probability": 0.9915488958358765
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.0,
+      "end": 4.68,
+      "text": "踢",
+      "tokens": [
+        50514,
+        41166,
+        95,
+        50614
+      ],
+      "avg_logprob": -0.45587196201086044,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.2577097415924072,
+      "words": [
+        {
+          "start": 3.0,
+          "end": 4.68,
+          "word": "踢",
+          "probability": 0.5304760150611401
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 4.68,
+      "end": 7.58,
+      "text": "足球",
+      "tokens": [
+        50614,
+        37236,
+        28533,
+        50764
+      ],
+      "avg_logprob": -0.45587196201086044,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.2577097415924072,
+      "words": [
+        {
+          "start": 4.68,
+          "end": 5.4,
+          "word": "足",
+          "probability": 0.9952640533447266
+        },
+        {
+          "start": 5.4,
+          "end": 7.58,
+          "word": "球",
+          "probability": 0.9942019581794739
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 7.58,
+      "end": 8.54,
+      "text": "球",
+      "tokens": [
+        50764,
+        28533,
+        50864
+      ],
+      "avg_logprob": -0.45587196201086044,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.2577097415924072,
+      "words": [
+        {
+          "start": 7.58,
+          "end": 8.54,
+          "word": "球",
+          "probability": 0.005151198245584965
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 10.0,
+      "end": 10.72,
+      "text": "的",
+      "tokens": [
+        50864,
+        1546,
+        50964
+      ],
+      "avg_logprob": -0.45587196201086044,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.2577097415924072,
+      "words": [
+        {
+          "start": 10.0,
+          "end": 10.72,
+          "word": "的",
+          "probability": 0.8717140555381775
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.3954904059999933,
+  "realTimeFactor": 0.1886807188090732,
+  "observationChecks": {
+    "rawWordCount": 7,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

@@ -3,12 +3,12 @@
   "scope": "New CI-only supplemental files; accepted original43 author artifacts unchanged",
   "acceptedAuthorFreezeSHA256": "a91404a54eafa0b19250d37a8ac47be3086119a23b944265ae7f3bb38f5dfc39",
   "independentReviewSHA256": "4fee9ce7cd02a7a2653fa285e3f68b31b77ca85dbe86d44bda43b55c446fe486",
-  "createdAtUtc": "2026-10-04T17:48:20.717890+00:00",
+  "createdAtUtc": "2026-10-04T17:58:07.339562+00:00",
   "files": [
     {
       "path": "CI-INTEGRATION.md",
-      "bytes": 3922,
-      "sha256": "2ab936a4220c70cc1e4ba7f9937dd8d4a590754e929974a2e6e58e7337fc60d4"
+      "bytes": 4035,
+      "sha256": "e4b971c88c3802895c3df7c9ea114b50c3c3a081dc4a271b16536886385264f2"
     },
     {
       "path": "tsconfig.candidates.json",
@@ -22,8 +22,14 @@
     },
     {
       "path": "STAGE-FILES.txt",
-      "bytes": 6462,
-      "sha256": "c9e7c23f2372a229df9b59cfec34f213e53d0901b7cb6d72dbda76e75194a0b5"
+      "bytes": 6549,
+      "sha256": "a2fe6fbf044e172d139921190ea84d99060ac9e804eb001b907b83ebb7500c11"
+    },
+    {
+      "path": "candidate-retained34-collection.log",
+      "bytes": 12610,
+      "sha256": "969eb0e94e8ab4e4b1409cb9cc88b23eb4a767b1d27a6e4cf1e5b6a822291f8e"
     }
-  ]
+  ],
+  "correction": "Use unique full test title without anchors; Playwright includes project/file in matched title. Actual list collection: 68 = 34 Chromium + 34 WebKit. Original author43 unchanged."
 }

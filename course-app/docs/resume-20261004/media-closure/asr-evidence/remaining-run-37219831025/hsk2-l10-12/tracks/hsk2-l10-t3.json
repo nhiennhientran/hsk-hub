@@ -1,0 +1,739 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l10:audio3",
+    "level": 2,
+    "lesson": 10,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/10-3.mp3",
+    "sha256": "64bcd99bffdd5c12dc46a33fa0161b354f599f47cdccd5bd941faa989559c62b",
+    "bytes": 720044,
+    "manifestDurationSeconds": 28.061333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 448896,
+      "durationSeconds": 28.056,
+      "sha256": "7fccfd7a7804bf44d597b8b7e6b7fd1d4a3df3da2f5497ed141e57490c8a3432"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 28.056,
+    "duration_after_vad": 28.056,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.7000000000000004,
+      "end": 3.2,
+      "text": "小雪,你在做什么呢?",
+      "tokens": [
+        50364,
+        7322,
+        47939,
+        11,
+        41410,
+        10907,
+        10440,
+        6240,
+        30,
+        50564
+      ],
+      "avg_logprob": -0.1197566662964068,
+      "compression_ratio": 1.2556818181818181,
+      "no_speech_prob": 0.10716891288757324,
+      "words": [
+        {
+          "start": 0.7000000000000004,
+          "end": 1.22,
+          "word": "小",
+          "probability": 0.7136828303337097
+        },
+        {
+          "start": 1.22,
+          "end": 1.46,
+          "word": "雪,",
+          "probability": 0.9710022807121277
+        },
+        {
+          "start": 2.0,
+          "end": 2.26,
+          "word": "你在",
+          "probability": 0.8159732222557068
+        },
+        {
+          "start": 2.26,
+          "end": 2.58,
+          "word": "做",
+          "probability": 0.9977249503135681
+        },
+        {
+          "start": 2.58,
+          "end": 2.86,
+          "word": "什么",
+          "probability": 0.8228967785835266
+        },
+        {
+          "start": 2.86,
+          "end": 3.2,
+          "word": "呢?",
+          "probability": 0.9419006705284119
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.68,
+      "end": 7.06,
+      "text": "明天考试,我在看书呢。",
+      "tokens": [
+        50564,
+        11100,
+        6135,
+        26504,
+        5233,
+        243,
+        11,
+        40528,
+        4200,
+        2930,
+        99,
+        6240,
+        1543,
+        50764
+      ],
+      "avg_logprob": -0.1197566662964068,
+      "compression_ratio": 1.2556818181818181,
+      "no_speech_prob": 0.10716891288757324,
+      "words": [
+        {
+          "start": 4.68,
+          "end": 4.86,
+          "word": "明",
+          "probability": 0.9316645860671997
+        },
+        {
+          "start": 4.86,
+          "end": 5.12,
+          "word": "天",
+          "probability": 0.997736930847168
+        },
+        {
+          "start": 5.12,
+          "end": 5.36,
+          "word": "考",
+          "probability": 0.9928761720657349
+        },
+        {
+          "start": 5.36,
+          "end": 5.64,
+          "word": "试,",
+          "probability": 0.9933842718601227
+        },
+        {
+          "start": 6.06,
+          "end": 6.24,
+          "word": "我在",
+          "probability": 0.9118055105209351
+        },
+        {
+          "start": 6.24,
+          "end": 6.5,
+          "word": "看",
+          "probability": 0.9970710277557373
+        },
+        {
+          "start": 6.5,
+          "end": 6.8,
+          "word": "书",
+          "probability": 0.9987152516841888
+        },
+        {
+          "start": 6.8,
+          "end": 7.06,
+          "word": "呢。",
+          "probability": 0.945634126663208
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 8.46,
+      "end": 10.38,
+      "text": "这些词要好好看看。",
+      "tokens": [
+        50764,
+        5562,
+        13824,
+        5233,
+        235,
+        4275,
+        30164,
+        22884,
+        1543,
+        50914
+      ],
+      "avg_logprob": -0.1197566662964068,
+      "compression_ratio": 1.2556818181818181,
+      "no_speech_prob": 0.10716891288757324,
+      "words": [
+        {
+          "start": 8.46,
+          "end": 8.68,
+          "word": "这",
+          "probability": 0.9608087539672852
+        },
+        {
+          "start": 8.68,
+          "end": 8.88,
+          "word": "些",
+          "probability": 0.9992126226425171
+        },
+        {
+          "start": 8.88,
+          "end": 9.12,
+          "word": "词",
+          "probability": 0.9958002865314484
+        },
+        {
+          "start": 9.12,
+          "end": 9.46,
+          "word": "要",
+          "probability": 0.9658790230751038
+        },
+        {
+          "start": 9.46,
+          "end": 9.88,
+          "word": "好好",
+          "probability": 0.9954584836959839
+        },
+        {
+          "start": 9.88,
+          "end": 10.38,
+          "word": "看看。",
+          "probability": 0.9242597222328186
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 11.6,
+      "end": 14.66,
+      "text": "我看过了,意思也都懂了。",
+      "tokens": [
+        50914,
+        1654,
+        4200,
+        16866,
+        2289,
+        11,
+        16697,
+        6404,
+        7182,
+        29624,
+        2289,
+        1543,
+        51114
+      ],
+      "avg_logprob": -0.1197566662964068,
+      "compression_ratio": 1.2556818181818181,
+      "no_speech_prob": 0.10716891288757324,
+      "words": [
+        {
+          "start": 11.6,
+          "end": 11.92,
+          "word": "我",
+          "probability": 0.9904599189758301
+        },
+        {
+          "start": 11.92,
+          "end": 12.22,
+          "word": "看",
+          "probability": 0.9956992864608765
+        },
+        {
+          "start": 12.22,
+          "end": 12.46,
+          "word": "过",
+          "probability": 0.9906108975410461
+        },
+        {
+          "start": 12.46,
+          "end": 12.72,
+          "word": "了,",
+          "probability": 0.9804785847663879
+        },
+        {
+          "start": 13.22,
+          "end": 13.56,
+          "word": "意思",
+          "probability": 0.9285535216331482
+        },
+        {
+          "start": 13.56,
+          "end": 13.98,
+          "word": "也",
+          "probability": 0.9879734516143799
+        },
+        {
+          "start": 13.98,
+          "end": 14.16,
+          "word": "都",
+          "probability": 0.9945487380027771
+        },
+        {
+          "start": 14.16,
+          "end": 14.36,
+          "word": "懂",
+          "probability": 0.9975058436393738
+        },
+        {
+          "start": 14.36,
+          "end": 14.66,
+          "word": "了。",
+          "probability": 0.9812058210372925
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 16.08,
+      "end": 17.16,
+      "text": "你的本子呢?",
+      "tokens": [
+        51114,
+        18961,
+        8802,
+        7626,
+        6240,
+        30,
+        51264
+      ],
+      "avg_logprob": -0.1197566662964068,
+      "compression_ratio": 1.2556818181818181,
+      "no_speech_prob": 0.10716891288757324,
+      "words": [
+        {
+          "start": 16.08,
+          "end": 16.4,
+          "word": "你的",
+          "probability": 0.9842669367790222
+        },
+        {
+          "start": 16.4,
+          "end": 16.76,
+          "word": "本",
+          "probability": 0.9951326251029968
+        },
+        {
+          "start": 16.76,
+          "end": 16.98,
+          "word": "子",
+          "probability": 0.9821245670318604
+        },
+        {
+          "start": 16.98,
+          "end": 17.16,
+          "word": "呢?",
+          "probability": 0.9880487322807312
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 18.08,
+      "end": 20.8,
+      "text": "本子上做错的题也要看一看。",
+      "tokens": [
+        51264,
+        8802,
+        7626,
+        5708,
+        10907,
+        29900,
+        1546,
+        30716,
+        6404,
+        4275,
+        4200,
+        2257,
+        4200,
+        1543,
+        51464
+      ],
+      "avg_logprob": -0.1197566662964068,
+      "compression_ratio": 1.2556818181818181,
+      "no_speech_prob": 0.10716891288757324,
+      "words": [
+        {
+          "start": 18.08,
+          "end": 18.36,
+          "word": "本",
+          "probability": 0.9693526029586792
+        },
+        {
+          "start": 18.36,
+          "end": 18.52,
+          "word": "子",
+          "probability": 0.9931349754333496
+        },
+        {
+          "start": 18.52,
+          "end": 18.72,
+          "word": "上",
+          "probability": 0.9982045888900757
+        },
+        {
+          "start": 18.72,
+          "end": 18.96,
+          "word": "做",
+          "probability": 0.9215301871299744
+        },
+        {
+          "start": 18.96,
+          "end": 19.14,
+          "word": "错",
+          "probability": 0.9921338558197021
+        },
+        {
+          "start": 19.14,
+          "end": 19.3,
+          "word": "的",
+          "probability": 0.9809562563896179
+        },
+        {
+          "start": 19.3,
+          "end": 19.6,
+          "word": "题",
+          "probability": 0.9939352869987488
+        },
+        {
+          "start": 19.6,
+          "end": 20.04,
+          "word": "也",
+          "probability": 0.8058245182037354
+        },
+        {
+          "start": 20.04,
+          "end": 20.22,
+          "word": "要",
+          "probability": 0.9979276657104492
+        },
+        {
+          "start": 20.22,
+          "end": 20.44,
+          "word": "看",
+          "probability": 0.9832914471626282
+        },
+        {
+          "start": 20.44,
+          "end": 20.6,
+          "word": "一",
+          "probability": 0.999157190322876
+        },
+        {
+          "start": 20.6,
+          "end": 20.8,
+          "word": "看。",
+          "probability": 0.9994588494300842
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 22.64,
+      "end": 26.74,
+      "text": "妈妈,是您准备考试,还是我准备考试?",
+      "tokens": [
+        51464,
+        32462,
+        32462,
+        11,
+        1541,
+        23414,
+        6336,
+        228,
+        1787,
+        229,
+        26504,
+        5233,
+        243,
+        11,
+        45726,
+        1654,
+        6336,
+        228,
+        1787,
+        229,
+        26504,
+        5233,
+        243,
+        30,
+        51764
+      ],
+      "avg_logprob": -0.1197566662964068,
+      "compression_ratio": 1.2556818181818181,
+      "no_speech_prob": 0.10716891288757324,
+      "words": [
+        {
+          "start": 22.64,
+          "end": 23.08,
+          "word": "妈",
+          "probability": 0.9874210357666016
+        },
+        {
+          "start": 23.08,
+          "end": 23.32,
+          "word": "妈,",
+          "probability": 0.9932581186294556
+        },
+        {
+          "start": 23.74,
+          "end": 24.04,
+          "word": "是",
+          "probability": 0.996132493019104
+        },
+        {
+          "start": 24.04,
+          "end": 24.26,
+          "word": "您",
+          "probability": 0.9559160470962524
+        },
+        {
+          "start": 24.26,
+          "end": 24.52,
+          "word": "准",
+          "probability": 0.997910350561142
+        },
+        {
+          "start": 24.52,
+          "end": 24.66,
+          "word": "备",
+          "probability": 0.9999645352363586
+        },
+        {
+          "start": 24.66,
+          "end": 24.9,
+          "word": "考",
+          "probability": 0.9968127608299255
+        },
+        {
+          "start": 24.9,
+          "end": 25.18,
+          "word": "试,",
+          "probability": 0.9996521770954132
+        },
+        {
+          "start": 25.34,
+          "end": 25.5,
+          "word": "还是",
+          "probability": 0.9203938841819763
+        },
+        {
+          "start": 25.5,
+          "end": 25.88,
+          "word": "我",
+          "probability": 0.9953253269195557
+        },
+        {
+          "start": 25.88,
+          "end": 26.14,
+          "word": "准",
+          "probability": 0.9996495842933655
+        },
+        {
+          "start": 26.14,
+          "end": 26.28,
+          "word": "备",
+          "probability": 0.9999905228614807
+        },
+        {
+          "start": 26.28,
+          "end": 26.5,
+          "word": "考",
+          "probability": 0.9901145696640015
+        },
+        {
+          "start": 26.5,
+          "end": 26.74,
+          "word": "试?",
+          "probability": 0.9998397529125214
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.9950452650000017,
+  "realTimeFactor": 0.07110939781151987,
+  "observationChecks": {
+    "rawWordCount": 59,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

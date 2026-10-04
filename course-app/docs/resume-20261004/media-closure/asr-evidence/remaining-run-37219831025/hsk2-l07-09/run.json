@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-04T17:16:57.298021+00:00",
+  "mode": "unprompted-asr",
+  "scriptSHA256": "6c32b71904d6829ed2fb7944fcdb3dad61f88eec198db5e837f4d7551ffcc3c4",
+  "repositoryCommit": "3f7285359c2f7fc0c552157df68feb61c9758f53",
+  "requirementsSHA256": "03008384064075527124583a612e69fe4f58591324b265e3ac64b4b9153a5a49",
+  "requestedModel": {
+    "repository": "Systran/faster-whisper-small",
+    "revision": "536b0662742c02347bc0e980a01041f333bce120"
+  },
+  "python": "3.11.13 (main, Jun  4 2025, 04:12:12) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "packages": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.6.0",
+    "huggingface-hub": "0.34.4",
+    "av": "15.1.0",
+    "tokenizers": "0.21.4",
+    "onnxruntime": "1.22.1",
+    "numpy": "2.2.6",
+    "coloredlogs": "15.0.1",
+    "flatbuffers": "25.2.10",
+    "packaging": "25.0",
+    "protobuf": "6.32.0",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "humanfriendly": "10.0",
+    "filelock": "3.19.1",
+    "fsspec": "2025.7.0",
+    "PyYAML": "6.0.2",
+    "requests": "2.32.5",
+    "tqdm": "4.67.1",
+    "typing_extensions": "4.15.0",
+    "hf-xet": "1.1.8",
+    "certifi": "2025.8.3",
+    "charset-normalizer": "3.4.3",
+    "idna": "3.10",
+    "urllib3": "2.5.0",
+    "setuptools": "80.9.0",
+    "pip": "25.2"
+  },
+  "dependenciesMatchPinnedRequirements": true,
+  "ffmpegVersion": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  },
+  "status": "completed-asr-evidence-awaiting-review",
+  "completedTracks": [
+    {
+      "id": "hsk2-fltrp-2026:l07:audio1",
+      "file": "tracks/hsk2-l07-t1.json",
+      "sha256": "b7a4019edfb732ee8a66138f0a7699e17859596e4515cd74299ed7228f723658",
+      "elapsedInferenceSeconds": 3.6983283280000023,
+      "rawWordCount": 45,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l07:audio2",
+      "file": "tracks/hsk2-l07-t2.json",
+      "sha256": "60f266d1569cb80cab30c060bcf70c6b73eb01ca069540b0c26ced8c8ce62589",
+      "elapsedInferenceSeconds": 2.2704095139999936,
+      "rawWordCount": 6,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l07:audio3",
+      "file": "tracks/hsk2-l07-t3.json",
+      "sha256": "f72f3af9af76a7c2fce0513b3c3b6016af66eb9acd343407303030832625e336",
+      "elapsedInferenceSeconds": 3.662675847999992,
+      "rawWordCount": 44,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l07:audio4",
+      "file": "tracks/hsk2-l07-t4.json",
+      "sha256": "3595842d3009c5db961bbf0539c9b1a37e9f77c3bf3449a19d1a6cf8de573c54",
+      "elapsedInferenceSeconds": 2.3954904059999933,
+      "rawWordCount": 7,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l07:audio5",
+      "file": "tracks/hsk2-l07-t5.json",
+      "sha256": "959ac1ee24791755a379bcb97a234df96f664f74e3d2409080c833179085e52a",
+      "elapsedInferenceSeconds": 3.7008721159999993,
+      "rawWordCount": 45,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l07:audio6",
+      "file": "tracks/hsk2-l07-t6.json",
+      "sha256": "7de93c2abef0337dc24dcacc043b0c59b206304de49ce10e2c0ebfee2e6ed32f",
+      "elapsedInferenceSeconds": 2.1072484469999893,
+      "rawWordCount": 4,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l07:audio7",
+      "file": "tracks/hsk2-l07-t7.json",
+      "sha256": "89ee629ef50c1d89b044648a4a50e87efe5a7f95064cc082a72f30411072ce2a",
+      "elapsedInferenceSeconds": 3.6348572520000033,
+      "rawWordCount": 48,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l07:audio8",
+      "file": "tracks/hsk2-l07-t8.json",
+      "sha256": "11c68252722f4497db642b1bc0e1c89478983ecbb3a1d6a34bf9fef286c8d060",
+      "elapsedInferenceSeconds": 2.1132715210000015,
+      "rawWordCount": 3,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l08:audio1",
+      "file": "tracks/hsk2-l08-t1.json",
+      "sha256": "38c3452d2b1ad31ad4d4a29b20b40f77ab6ce8f3fae7aaa51caf66dd413b2630",
+      "elapsedInferenceSeconds": 3.3356842189999867,
+      "rawWordCount": 37,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l08:audio2",
+      "file": "tracks/hsk2-l08-t2.json",
+      "sha256": "26e50d3fc314bbdec5143e65d62c3b3be091d2820704d923228f1f82db798e72",
+      "elapsedInferenceSeconds": 2.4472536539999936,
+      "rawWordCount": 9,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l08:audio3",
+      "file": "tracks/hsk2-l08-t3.json",
+      "sha256": "47a814d443dcddb45aff401971427d9567724f1ec4494868b853947f7d66755f",
+      "elapsedInferenceSeconds": 6.552473208999999,
+      "rawWordCount": 73,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l08:audio4",
+      "file": "tracks/hsk2-l08-t4.json",
+      "sha256": "239a3d5b0d527bd3dd1c7edbeb056751a078cddd38296cb6076a365075334f51",
+      "elapsedInferenceSeconds": 2.20790581899999,
+      "rawWordCount": 7,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l08:audio5",
+      "file": "tracks/hsk2-l08-t5.json",
+      "sha256": "9591402f73e76d1a276aaede4bbaf53453215d3a279ca9fede11a80e8997521b",
+      "elapsedInferenceSeconds": 6.915237528000006,
+      "rawWordCount": 80,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l08:audio6",
+      "file": "tracks/hsk2-l08-t6.json",
+      "sha256": "714bdecb1cb8e66216c0974caa4c95df38f6da11621c137b885f8c3a4a0eed8b",
+      "elapsedInferenceSeconds": 2.1858375830000227,
+      "rawWordCount": 5,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l08:audio7",
+      "file": "tracks/hsk2-l08-t7.json",
+      "sha256": "ce0df544083047e2ad5df00add63d76d5725caf3c52c17e0006b7aca292cdf07",
+      "elapsedInferenceSeconds": 3.63623389899999,
+      "rawWordCount": 51,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l08:audio8",
+      "file": "tracks/hsk2-l08-t8.json",
+      "sha256": "620298187eebd3f90ca704ebb349333b70467e56b6be83a3aff3979aca43772d",
+      "elapsedInferenceSeconds": 2.279144016999993,
+      "rawWordCount": 5,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l09:audio1",
+      "file": "tracks/hsk2-l09-t1.json",
+      "sha256": "8339704a12bb536f8495ff6cc26e140a76806998156f4c1d6a8198a25a40773e",
+      "elapsedInferenceSeconds": 6.651915510999999,
+      "rawWordCount": 73,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l09:audio2",
+      "file": "tracks/hsk2-l09-t2.json",
+      "sha256": "8a0638399f5b1f0390e84e98edc0761b446f4ca36707206d5b2980eb1ca102f4",
+      "elapsedInferenceSeconds": 2.4368308759999877,
+      "rawWordCount": 9,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l09:audio3",
+      "file": "tracks/hsk2-l09-t3.json",
+      "sha256": "90652d609cbb8c45fdc867c7feb4d7f393dcadb772ac672cd2ffe5e0f289fca2",
+      "elapsedInferenceSeconds": 6.97498997400001,
+      "rawWordCount": 76,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l09:audio4",
+      "file": "tracks/hsk2-l09-t4.json",
+      "sha256": "23f47e21107cdcde70fb23261958caa01c736d17f5cfd322160ae24eec22a60a",
+      "elapsedInferenceSeconds": 2.2506949490000068,
+      "rawWordCount": 5,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l09:audio5",
+      "file": "tracks/hsk2-l09-t5.json",
+      "sha256": "e3caf08ddf327e361e5a0a3eca7c15e74b7ebb5f628e102ae6733074d55c97ee",
+      "elapsedInferenceSeconds": 3.4384596069999986,
+      "rawWordCount": 42,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l09:audio6",
+      "file": "tracks/hsk2-l09-t6.json",
+      "sha256": "acf1f9cd377573a247a3da2838a80f439fd6cb8a72d2bbec5abec2465456960e",
+      "elapsedInferenceSeconds": 2.0836800540000127,
+      "rawWordCount": 3,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l09:audio7",
+      "file": "tracks/hsk2-l09-t7.json",
+      "sha256": "1a0da32900f083f5de3cee88622a2815e480287bc4c5caf482d7abd022c94eaa",
+      "elapsedInferenceSeconds": 3.9910479870000017,
+      "rawWordCount": 67,
+      "invalidWordTimeCount": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l09:audio8",
+      "file": "tracks/hsk2-l09-t8.json",
+      "sha256": "bbd3efd9d2c4a6eb46fed84d128b545e9bfbf9dd770cebaa9db3aad03c0d8927",
+      "elapsedInferenceSeconds": 2.036352813999997,
+      "rawWordCount": 1,
+      "invalidWordTimeCount": 0
+    }
+  ],
+  "preflightSHA256": "de45cf0b8ce159d1e6419e6a0ca06e3343701d333a1c77d6f57bfcda5e2ff5e0",
+  "preflightSeconds": 2.889884705,
+  "requestedTrackCount": 24,
+  "model": {
+    "repository": "Systran/faster-whisper-small",
+    "requestedRevision": "536b0662742c02347bc0e980a01041f333bce120",
+    "actualSnapshotRevision": "536b0662742c02347bc0e980a01041f333bce120",
+    "files": [
+      {
+        "file": "config.json",
+        "bytes": 2370,
+        "sha256": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+      },
+      {
+        "file": "model.bin",
+        "bytes": 483546902,
+        "sha256": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671"
+      },
+      {
+        "file": "tokenizer.json",
+        "bytes": 2203239,
+        "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      {
+        "file": "vocabulary.txt",
+        "bytes": 459861,
+        "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+      }
+    ],
+    "device": "cpu",
+    "requestedComputeType": "int8",
+    "cpuThreads": 2,
+    "numWorkers": 1,
+    "actualComputeType": "int8_float32",
+    "downloadAndLoadSeconds": 1.066013764999994
+  },
+  "totalInferenceSeconds": 83.00689513199997,
+  "realTimeFactor": 0.19837227591052475,
+  "elapsedTotalSeconds": 89.974719541,
+  "peakResidentMemoryKiB": 767152,
+  "finishedAt": "2026-10-04T17:18:27.361572+00:00"
+}

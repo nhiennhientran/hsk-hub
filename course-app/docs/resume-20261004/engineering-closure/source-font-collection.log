@@ -1,0 +1,9 @@
+command: node node_modules/@playwright/test/cli.js test --config=docs/resume-20261004/source-font-visual/playwright.source-font-visual.config.ts --list --reporter=list
+cwd: course-app
+exitCode: 0
+Listing tests:
+  [chromium] › hsk1-source-font-visual.spec.ts:38:31 › HSK1 printed field pinyin and original empty table headers visual evidence at 320
+  [chromium] › hsk1-source-font-visual.spec.ts:38:31 › HSK1 printed field pinyin and original empty table headers visual evidence at 1440
+  [webkit] › hsk1-source-font-visual.spec.ts:38:31 › HSK1 printed field pinyin and original empty table headers visual evidence at 320
+  [webkit] › hsk1-source-font-visual.spec.ts:38:31 › HSK1 printed field pinyin and original empty table headers visual evidence at 1440
+Total: 4 tests in 1 file

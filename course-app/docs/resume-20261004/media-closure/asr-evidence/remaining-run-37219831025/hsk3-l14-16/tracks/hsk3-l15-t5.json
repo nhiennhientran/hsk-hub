@@ -1,0 +1,1167 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l15:audio5",
+    "level": 3,
+    "lesson": 15,
+    "track": 5,
+    "kind": "text",
+    "text": 3,
+    "file": "course-assets/hsk3/audio/15-5.mp3",
+    "sha256": "0f3bef196249c46ae4063e9ef6aac7cc9761c62a7f6316d8d5ad0c815a5e5606",
+    "bytes": 800914,
+    "manifestDurationSeconds": 47.519938,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 761940,
+      "durationSeconds": 47.62125,
+      "sha256": "ca1ad41b517aab0bd0c73f086ed2eb464b08606170a408b16e5f245070a48fcd"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 47.62125,
+    "duration_after_vad": 47.62125,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 8.46,
+      "text": "小明,中国有一条大河,它的名字跟颜色有关系,你知道是什么河吗?",
+      "tokens": [
+        50364,
+        7322,
+        11100,
+        11,
+        38165,
+        32241,
+        48837,
+        3582,
+        3308,
+        111,
+        11,
+        45224,
+        15940,
+        22381,
+        9678,
+        12501,
+        250,
+        17673,
+        2412,
+        28053,
+        25368,
+        11,
+        28945,
+        1541,
+        10440,
+        3308,
+        111,
+        14769,
+        30,
+        50814
+      ],
+      "avg_logprob": -0.12716506361961366,
+      "compression_ratio": 1.3282051282051281,
+      "no_speech_prob": 0.025861898437142372,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 1.08,
+          "word": "小",
+          "probability": 0.4980974793434143
+        },
+        {
+          "start": 1.08,
+          "end": 1.28,
+          "word": "明,",
+          "probability": 0.8234672546386719
+        },
+        {
+          "start": 1.8,
+          "end": 2.12,
+          "word": "中国",
+          "probability": 0.3057117164134979
+        },
+        {
+          "start": 2.12,
+          "end": 2.66,
+          "word": "有一",
+          "probability": 0.9334170818328857
+        },
+        {
+          "start": 2.66,
+          "end": 2.88,
+          "word": "条",
+          "probability": 0.9931353330612183
+        },
+        {
+          "start": 2.88,
+          "end": 3.16,
+          "word": "大",
+          "probability": 0.9561433792114258
+        },
+        {
+          "start": 3.16,
+          "end": 3.4,
+          "word": "河,",
+          "probability": 0.9225746989250183
+        },
+        {
+          "start": 4.08,
+          "end": 4.28,
+          "word": "它的",
+          "probability": 0.695885419845581
+        },
+        {
+          "start": 4.28,
+          "end": 4.58,
+          "word": "名",
+          "probability": 0.9942848086357117
+        },
+        {
+          "start": 4.58,
+          "end": 4.84,
+          "word": "字",
+          "probability": 0.9902432560920715
+        },
+        {
+          "start": 4.84,
+          "end": 5.08,
+          "word": "跟",
+          "probability": 0.9547461867332458
+        },
+        {
+          "start": 5.08,
+          "end": 5.32,
+          "word": "颜",
+          "probability": 0.9948498010635376
+        },
+        {
+          "start": 5.32,
+          "end": 5.56,
+          "word": "色",
+          "probability": 0.9997970461845398
+        },
+        {
+          "start": 5.56,
+          "end": 5.74,
+          "word": "有",
+          "probability": 0.9957350492477417
+        },
+        {
+          "start": 5.74,
+          "end": 5.94,
+          "word": "关",
+          "probability": 0.9958894848823547
+        },
+        {
+          "start": 5.94,
+          "end": 6.28,
+          "word": "系,",
+          "probability": 0.9835211038589478
+        },
+        {
+          "start": 6.88,
+          "end": 7.22,
+          "word": "你知道",
+          "probability": 0.9413312077522278
+        },
+        {
+          "start": 7.22,
+          "end": 7.62,
+          "word": "是",
+          "probability": 0.9491651058197021
+        },
+        {
+          "start": 7.62,
+          "end": 7.9,
+          "word": "什么",
+          "probability": 0.9667977094650269
+        },
+        {
+          "start": 7.9,
+          "end": 8.2,
+          "word": "河",
+          "probability": 0.9994214177131653
+        },
+        {
+          "start": 8.2,
+          "end": 8.46,
+          "word": "吗?",
+          "probability": 0.9813852310180664
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 9.479999999999997,
+      "end": 11.22,
+      "text": "我知道,是黄河。",
+      "tokens": [
+        50814,
+        33838,
+        11,
+        1541,
+        6173,
+        226,
+        3308,
+        111,
+        1543,
+        50964
+      ],
+      "avg_logprob": -0.12716506361961366,
+      "compression_ratio": 1.3282051282051281,
+      "no_speech_prob": 0.025861898437142372,
+      "words": [
+        {
+          "start": 9.479999999999997,
+          "end": 10.04,
+          "word": "我知道,",
+          "probability": 0.9440921545028687
+        },
+        {
+          "start": 10.44,
+          "end": 10.62,
+          "word": "是",
+          "probability": 0.9939557909965515
+        },
+        {
+          "start": 10.62,
+          "end": 10.9,
+          "word": "黄",
+          "probability": 0.9861595332622528
+        },
+        {
+          "start": 10.9,
+          "end": 11.22,
+          "word": "河。",
+          "probability": 0.9992364346981049
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 12.28,
+      "end": 17.84,
+      "text": "你说对了,我再问问你,你知道它为什么叫黄河吗?",
+      "tokens": [
+        50964,
+        42405,
+        8713,
+        2289,
+        11,
+        1654,
+        8623,
+        22064,
+        22064,
+        2166,
+        11,
+        28945,
+        11284,
+        31006,
+        19855,
+        6173,
+        226,
+        3308,
+        111,
+        14769,
+        30,
+        51314
+      ],
+      "avg_logprob": -0.12716506361961366,
+      "compression_ratio": 1.3282051282051281,
+      "no_speech_prob": 0.025861898437142372,
+      "words": [
+        {
+          "start": 12.28,
+          "end": 12.78,
+          "word": "你说",
+          "probability": 0.9557214379310608
+        },
+        {
+          "start": 12.78,
+          "end": 13.04,
+          "word": "对",
+          "probability": 0.9795376062393188
+        },
+        {
+          "start": 13.04,
+          "end": 13.26,
+          "word": "了,",
+          "probability": 0.8563594818115234
+        },
+        {
+          "start": 13.84,
+          "end": 14.02,
+          "word": "我",
+          "probability": 0.9527566432952881
+        },
+        {
+          "start": 14.02,
+          "end": 14.16,
+          "word": "再",
+          "probability": 0.9974023103713989
+        },
+        {
+          "start": 14.16,
+          "end": 14.34,
+          "word": "问",
+          "probability": 0.9936648607254028
+        },
+        {
+          "start": 14.34,
+          "end": 14.56,
+          "word": "问",
+          "probability": 0.9354694485664368
+        },
+        {
+          "start": 14.56,
+          "end": 14.78,
+          "word": "你,",
+          "probability": 0.9903428554534912
+        },
+        {
+          "start": 15.34,
+          "end": 15.72,
+          "word": "你知道",
+          "probability": 0.9792103171348572
+        },
+        {
+          "start": 15.72,
+          "end": 16.3,
+          "word": "它",
+          "probability": 0.9280908107757568
+        },
+        {
+          "start": 16.3,
+          "end": 16.6,
+          "word": "为什么",
+          "probability": 0.9802933931350708
+        },
+        {
+          "start": 16.6,
+          "end": 17.0,
+          "word": "叫",
+          "probability": 0.9963990449905396
+        },
+        {
+          "start": 17.0,
+          "end": 17.32,
+          "word": "黄",
+          "probability": 0.9918232858181
+        },
+        {
+          "start": 17.32,
+          "end": 17.62,
+          "word": "河",
+          "probability": 0.999808132648468
+        },
+        {
+          "start": 17.62,
+          "end": 17.84,
+          "word": "吗?",
+          "probability": 0.9934033751487732
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 19.14,
+      "end": 23.08,
+      "text": "因为河水看起来是黄色的,所以叫这个名字。",
+      "tokens": [
+        51314,
+        34627,
+        3308,
+        111,
+        15590,
+        4200,
+        9147,
+        6912,
+        1541,
+        6173,
+        226,
+        17673,
+        1546,
+        11,
+        7239,
+        19855,
+        15368,
+        15940,
+        22381,
+        1543,
+        51564
+      ],
+      "avg_logprob": -0.12716506361961366,
+      "compression_ratio": 1.3282051282051281,
+      "no_speech_prob": 0.025861898437142372,
+      "words": [
+        {
+          "start": 19.14,
+          "end": 19.46,
+          "word": "因为",
+          "probability": 0.9659290313720703
+        },
+        {
+          "start": 19.46,
+          "end": 19.8,
+          "word": "河",
+          "probability": 0.9858340322971344
+        },
+        {
+          "start": 19.8,
+          "end": 20.08,
+          "word": "水",
+          "probability": 0.9988825917243958
+        },
+        {
+          "start": 20.08,
+          "end": 20.36,
+          "word": "看",
+          "probability": 0.9962014555931091
+        },
+        {
+          "start": 20.36,
+          "end": 20.52,
+          "word": "起",
+          "probability": 0.9548298716545105
+        },
+        {
+          "start": 20.52,
+          "end": 20.66,
+          "word": "来",
+          "probability": 0.9978633522987366
+        },
+        {
+          "start": 20.66,
+          "end": 20.84,
+          "word": "是",
+          "probability": 0.9866342544555664
+        },
+        {
+          "start": 20.84,
+          "end": 21.14,
+          "word": "黄",
+          "probability": 0.997951090335846
+        },
+        {
+          "start": 21.14,
+          "end": 21.44,
+          "word": "色",
+          "probability": 0.9990515112876892
+        },
+        {
+          "start": 21.44,
+          "end": 21.64,
+          "word": "的,",
+          "probability": 0.990610659122467
+        },
+        {
+          "start": 21.92,
+          "end": 22.22,
+          "word": "所以",
+          "probability": 0.9902253746986389
+        },
+        {
+          "start": 22.22,
+          "end": 22.42,
+          "word": "叫",
+          "probability": 0.9830394387245178
+        },
+        {
+          "start": 22.42,
+          "end": 22.64,
+          "word": "这个",
+          "probability": 0.9959248304367065
+        },
+        {
+          "start": 22.64,
+          "end": 22.82,
+          "word": "名",
+          "probability": 0.9990074038505554
+        },
+        {
+          "start": 22.82,
+          "end": 23.08,
+          "word": "字。",
+          "probability": 0.9934936165809631
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 23.9,
+      "end": 26.12,
+      "text": "黄河是中国最长的河吗?",
+      "tokens": [
+        51564,
+        6173,
+        226,
+        3308,
+        111,
+        1541,
+        38165,
+        8661,
+        32271,
+        1546,
+        3308,
+        111,
+        14769,
+        30,
+        51714
+      ],
+      "avg_logprob": -0.12716506361961366,
+      "compression_ratio": 1.3282051282051281,
+      "no_speech_prob": 0.025861898437142372,
+      "words": [
+        {
+          "start": 23.9,
+          "end": 24.26,
+          "word": "黄",
+          "probability": 0.9916332364082336
+        },
+        {
+          "start": 24.26,
+          "end": 24.54,
+          "word": "河",
+          "probability": 0.9998407363891602
+        },
+        {
+          "start": 24.54,
+          "end": 24.74,
+          "word": "是",
+          "probability": 0.9820743203163147
+        },
+        {
+          "start": 24.74,
+          "end": 25.0,
+          "word": "中国",
+          "probability": 0.9961875081062317
+        },
+        {
+          "start": 25.0,
+          "end": 25.28,
+          "word": "最",
+          "probability": 0.9929721355438232
+        },
+        {
+          "start": 25.28,
+          "end": 25.54,
+          "word": "长",
+          "probability": 0.9769324064254761
+        },
+        {
+          "start": 25.54,
+          "end": 25.68,
+          "word": "的",
+          "probability": 0.9698050618171692
+        },
+        {
+          "start": 25.68,
+          "end": 25.9,
+          "word": "河",
+          "probability": 0.9997408390045166
+        },
+        {
+          "start": 25.9,
+          "end": 26.12,
+          "word": "吗?",
+          "probability": 0.9896042346954346
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 2612,
+      "start": 27.3,
+      "end": 33.08,
+      "text": "不是,黃河雖然不是最長的河,可是在歷史上很重要。",
+      "tokens": [
+        50364,
+        7296,
+        11,
+        39214,
+        3308,
+        111,
+        6306,
+        244,
+        5823,
+        7296,
+        8661,
+        15353,
+        1546,
+        3308,
+        111,
+        11,
+        23359,
+        3581,
+        4287,
+        115,
+        45399,
+        5708,
+        4563,
+        24928,
+        1543,
+        50714
+      ],
+      "avg_logprob": -0.11409578915383364,
+      "compression_ratio": 1.2352941176470589,
+      "no_speech_prob": 0.07804900407791138,
+      "words": [
+        {
+          "start": 27.3,
+          "end": 27.86,
+          "word": "不是,",
+          "probability": 0.3999932110309601
+        },
+        {
+          "start": 28.6,
+          "end": 28.8,
+          "word": "黃",
+          "probability": 0.7838414311408997
+        },
+        {
+          "start": 28.8,
+          "end": 28.98,
+          "word": "河",
+          "probability": 0.9838137030601501
+        },
+        {
+          "start": 28.98,
+          "end": 29.26,
+          "word": "雖",
+          "probability": 0.9948056936264038
+        },
+        {
+          "start": 29.26,
+          "end": 29.42,
+          "word": "然",
+          "probability": 0.9815196990966797
+        },
+        {
+          "start": 29.42,
+          "end": 29.62,
+          "word": "不是",
+          "probability": 0.9781564474105835
+        },
+        {
+          "start": 29.62,
+          "end": 29.9,
+          "word": "最",
+          "probability": 0.988690972328186
+        },
+        {
+          "start": 29.9,
+          "end": 30.24,
+          "word": "長",
+          "probability": 0.9726415276527405
+        },
+        {
+          "start": 30.24,
+          "end": 30.44,
+          "word": "的",
+          "probability": 0.9275628924369812
+        },
+        {
+          "start": 30.44,
+          "end": 30.64,
+          "word": "河,",
+          "probability": 0.9997919797897339
+        },
+        {
+          "start": 30.98,
+          "end": 31.4,
+          "word": "可是",
+          "probability": 0.9634661674499512
+        },
+        {
+          "start": 31.4,
+          "end": 31.84,
+          "word": "在",
+          "probability": 0.8800164461135864
+        },
+        {
+          "start": 31.84,
+          "end": 32.02,
+          "word": "歷",
+          "probability": 0.9956101179122925
+        },
+        {
+          "start": 32.02,
+          "end": 32.2,
+          "word": "史",
+          "probability": 0.9998192191123962
+        },
+        {
+          "start": 32.2,
+          "end": 32.4,
+          "word": "上",
+          "probability": 0.9974651336669922
+        },
+        {
+          "start": 32.4,
+          "end": 32.62,
+          "word": "很",
+          "probability": 0.9737733006477356
+        },
+        {
+          "start": 32.62,
+          "end": 33.08,
+          "word": "重要。",
+          "probability": 0.999098539352417
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2612,
+      "start": 34.06,
+      "end": 38.94,
+      "text": "這個我知道,很久以前很多中國人都住在黃河邊上。",
+      "tokens": [
+        50714,
+        6287,
+        33838,
+        11,
+        4563,
+        25320,
+        44996,
+        20778,
+        21854,
+        4035,
+        7182,
+        21632,
+        3581,
+        39214,
+        3308,
+        111,
+        14901,
+        5708,
+        1543,
+        51014
+      ],
+      "avg_logprob": -0.11409578915383364,
+      "compression_ratio": 1.2352941176470589,
+      "no_speech_prob": 0.07804900407791138,
+      "words": [
+        {
+          "start": 34.06,
+          "end": 34.62,
+          "word": "這個",
+          "probability": 0.790428102016449
+        },
+        {
+          "start": 34.62,
+          "end": 35.02,
+          "word": "我知道,",
+          "probability": 0.9732585549354553
+        },
+        {
+          "start": 35.54,
+          "end": 35.76,
+          "word": "很",
+          "probability": 0.9830764532089233
+        },
+        {
+          "start": 35.76,
+          "end": 35.92,
+          "word": "久",
+          "probability": 0.9789162278175354
+        },
+        {
+          "start": 35.92,
+          "end": 36.22,
+          "word": "以前",
+          "probability": 0.9962765574455261
+        },
+        {
+          "start": 36.22,
+          "end": 36.86,
+          "word": "很多",
+          "probability": 0.5218443870544434
+        },
+        {
+          "start": 36.86,
+          "end": 37.24,
+          "word": "中國",
+          "probability": 0.9927656650543213
+        },
+        {
+          "start": 37.24,
+          "end": 37.52,
+          "word": "人",
+          "probability": 0.9976173043251038
+        },
+        {
+          "start": 37.52,
+          "end": 37.74,
+          "word": "都",
+          "probability": 0.973050594329834
+        },
+        {
+          "start": 37.74,
+          "end": 37.92,
+          "word": "住",
+          "probability": 0.9923062920570374
+        },
+        {
+          "start": 37.92,
+          "end": 38.08,
+          "word": "在",
+          "probability": 0.9962930083274841
+        },
+        {
+          "start": 38.08,
+          "end": 38.26,
+          "word": "黃",
+          "probability": 0.9960821270942688
+        },
+        {
+          "start": 38.26,
+          "end": 38.4,
+          "word": "河",
+          "probability": 0.9999824166297913
+        },
+        {
+          "start": 38.4,
+          "end": 38.58,
+          "word": "邊",
+          "probability": 0.9721277356147766
+        },
+        {
+          "start": 38.58,
+          "end": 38.94,
+          "word": "上。",
+          "probability": 0.9028312563896179
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2612,
+      "start": 40.2,
+      "end": 46.12,
+      "text": "對,在我們中國人看來,黃河像媽媽一樣,養了我們幾千年。",
+      "tokens": [
+        51014,
+        2855,
+        11,
+        3581,
+        5884,
+        21854,
+        4035,
+        4200,
+        3763,
+        11,
+        39214,
+        3308,
+        111,
+        12760,
+        24812,
+        24812,
+        22977,
+        11,
+        22217,
+        232,
+        2289,
+        5884,
+        23575,
+        20787,
+        5157,
+        1543,
+        51364
+      ],
+      "avg_logprob": -0.11409578915383364,
+      "compression_ratio": 1.2352941176470589,
+      "no_speech_prob": 0.07804900407791138,
+      "words": [
+        {
+          "start": 40.2,
+          "end": 40.64,
+          "word": "對,",
+          "probability": 0.9818738698959351
+        },
+        {
+          "start": 41.18,
+          "end": 41.3,
+          "word": "在",
+          "probability": 0.9937276840209961
+        },
+        {
+          "start": 41.3,
+          "end": 41.52,
+          "word": "我們",
+          "probability": 0.9908090829849243
+        },
+        {
+          "start": 41.52,
+          "end": 41.84,
+          "word": "中國",
+          "probability": 0.9969099164009094
+        },
+        {
+          "start": 41.84,
+          "end": 42.1,
+          "word": "人",
+          "probability": 0.9979369640350342
+        },
+        {
+          "start": 42.1,
+          "end": 42.32,
+          "word": "看",
+          "probability": 0.9954108595848083
+        },
+        {
+          "start": 42.32,
+          "end": 42.62,
+          "word": "來,",
+          "probability": 0.9946601986885071
+        },
+        {
+          "start": 42.94,
+          "end": 43.08,
+          "word": "黃",
+          "probability": 0.996842622756958
+        },
+        {
+          "start": 43.08,
+          "end": 43.3,
+          "word": "河",
+          "probability": 0.9999304413795471
+        },
+        {
+          "start": 43.3,
+          "end": 43.52,
+          "word": "像",
+          "probability": 0.9779477715492249
+        },
+        {
+          "start": 43.52,
+          "end": 43.8,
+          "word": "媽",
+          "probability": 0.9745386242866516
+        },
+        {
+          "start": 43.8,
+          "end": 44.0,
+          "word": "媽",
+          "probability": 0.9953092932701111
+        },
+        {
+          "start": 44.0,
+          "end": 44.32,
+          "word": "一樣,",
+          "probability": 0.9787518382072449
+        },
+        {
+          "start": 44.66,
+          "end": 44.82,
+          "word": "養",
+          "probability": 0.9924910366535187
+        },
+        {
+          "start": 44.82,
+          "end": 44.98,
+          "word": "了",
+          "probability": 0.9959632158279419
+        },
+        {
+          "start": 44.98,
+          "end": 45.22,
+          "word": "我們",
+          "probability": 0.9917854070663452
+        },
+        {
+          "start": 45.22,
+          "end": 45.56,
+          "word": "幾",
+          "probability": 0.9951877593994141
+        },
+        {
+          "start": 45.56,
+          "end": 45.84,
+          "word": "千",
+          "probability": 0.9985032081604004
+        },
+        {
+          "start": 45.84,
+          "end": 46.12,
+          "word": "年。",
+          "probability": 0.9975072741508484
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.774284344999998,
+  "realTimeFactor": 0.07925630564086407,
+  "observationChecks": {
+    "rawWordCount": 115,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

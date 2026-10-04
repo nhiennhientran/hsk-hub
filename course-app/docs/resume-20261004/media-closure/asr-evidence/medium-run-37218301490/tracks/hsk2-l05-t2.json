@@ -1,0 +1,1366 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l05:audio2",
+    "level": 2,
+    "lesson": 5,
+    "track": 2,
+    "kind": "vocab",
+    "text": 1,
+    "file": "course-assets/hsk2/audio/5-2.mp3",
+    "sha256": "e0aa8f1c2c9f6d4f2cad6b7515e91c43862e289e748a4e32e42cbcabae11ec7d",
+    "bytes": 691289,
+    "manifestDurationSeconds": 26.813333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 428928,
+      "durationSeconds": 26.808,
+      "sha256": "419a84b6f962b1adff516c9fc81cfc941261d7b314eaa78465b0a6ebcdbded19"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-medium",
+  "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 26.808,
+    "duration_after_vad": 26.808,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 1.2399999999999989,
+      "end": 26.64,
+      "text": "快,快,下来,下来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,上来,",
+      "tokens": [
+        50364,
+        10251,
+        11,
+        10251,
+        11,
+        4438,
+        6912,
+        11,
+        4438,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11,
+        5708,
+        6912,
+        11
+      ],
+      "avg_logprob": -0.043691746923658584,
+      "compression_ratio": 18.535714285714285,
+      "no_speech_prob": 0.2541179358959198,
+      "words": [
+        {
+          "start": 1.2399999999999989,
+          "end": 2.14,
+          "word": "快,",
+          "probability": 0.9768717885017395
+        },
+        {
+          "start": 3.4,
+          "end": 3.4,
+          "word": "快,",
+          "probability": 0.6273473501205444
+        },
+        {
+          "start": 3.46,
+          "end": 3.88,
+          "word": "下",
+          "probability": 0.7882885932922363
+        },
+        {
+          "start": 3.88,
+          "end": 4.42,
+          "word": "来,",
+          "probability": 0.9971234202384949
+        },
+        {
+          "start": 4.82,
+          "end": 5.28,
+          "word": "下",
+          "probability": 0.993953287601471
+        },
+        {
+          "start": 5.28,
+          "end": 5.78,
+          "word": "来,",
+          "probability": 0.9993071556091309
+        },
+        {
+          "start": 6.26,
+          "end": 6.68,
+          "word": "上",
+          "probability": 0.9954159259796143
+        },
+        {
+          "start": 6.68,
+          "end": 7.26,
+          "word": "来,",
+          "probability": 0.9987108707427979
+        },
+        {
+          "start": 7.62,
+          "end": 8.18,
+          "word": "上",
+          "probability": 0.9970153570175171
+        },
+        {
+          "start": 8.18,
+          "end": 8.94,
+          "word": "来,",
+          "probability": 0.9883506298065186
+        },
+        {
+          "start": 9.72,
+          "end": 9.78,
+          "word": "上",
+          "probability": 0.996619462966919
+        },
+        {
+          "start": 9.78,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.04621822014451027
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9965863227844238
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.6456591486930847
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9954408407211304
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.8916207551956177
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9946337938308716
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9391525983810425
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.993126392364502
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9697898030281067
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9929541945457458
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9778454899787903
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9940690994262695
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9895955920219421
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9938602447509766
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.991675853729248
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9922342300415039
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9919667840003967
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9928745031356812
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9927571415901184
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9919188618659973
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.992905855178833
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9908447861671448
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9888951778411865
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9916681051254272
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9907168745994568
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9888201355934143
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9917801022529602
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9885894060134888
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9922528862953186
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9893088340759277
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9902896285057068
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.991027295589447
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9898237586021423
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9918832778930664
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9889556765556335
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9920578598976135
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9930077791213989
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9901178479194641
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9936991930007935
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9873305559158325
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9957802295684814
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9802554845809937
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9935925602912903
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9789837002754211
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9874559044837952
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.961817741394043
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9897756576538086
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9727109670639038
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9878188371658325
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9721623659133911
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9905858635902405
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9678623080253601
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.992870032787323
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9580925703048706
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "来,",
+          "probability": 0.9898762106895447
+        },
+        {
+          "start": 11.66,
+          "end": 11.66,
+          "word": "上",
+          "probability": 0.9539989233016968
+        },
+        {
+          "start": 11.66,
+          "end": 11.7,
+          "word": "来,",
+          "probability": 0.9918021559715271
+        },
+        {
+          "start": 11.72,
+          "end": 11.72,
+          "word": "上",
+          "probability": 0.9700115919113159
+        },
+        {
+          "start": 11.72,
+          "end": 11.72,
+          "word": "来,",
+          "probability": 0.9933730363845825
+        },
+        {
+          "start": 11.72,
+          "end": 11.72,
+          "word": "上",
+          "probability": 0.965488612651825
+        },
+        {
+          "start": 11.72,
+          "end": 11.72,
+          "word": "来,",
+          "probability": 0.9953485131263733
+        },
+        {
+          "start": 11.72,
+          "end": 11.72,
+          "word": "上",
+          "probability": 0.9725899696350098
+        },
+        {
+          "start": 11.72,
+          "end": 11.72,
+          "word": "来,",
+          "probability": 0.9958427548408508
+        },
+        {
+          "start": 11.72,
+          "end": 11.72,
+          "word": "上",
+          "probability": 0.9656148552894592
+        },
+        {
+          "start": 11.72,
+          "end": 11.72,
+          "word": "来,",
+          "probability": 0.9975705742835999
+        },
+        {
+          "start": 11.72,
+          "end": 11.72,
+          "word": "上",
+          "probability": 0.9629428386688232
+        },
+        {
+          "start": 11.72,
+          "end": 11.72,
+          "word": "来,",
+          "probability": 0.9975252747535706
+        },
+        {
+          "start": 12.06,
+          "end": 12.06,
+          "word": "上",
+          "probability": 0.973727285861969
+        },
+        {
+          "start": 12.06,
+          "end": 12.06,
+          "word": "来,",
+          "probability": 0.9977722764015198
+        },
+        {
+          "start": 12.06,
+          "end": 12.06,
+          "word": "上",
+          "probability": 0.9709826111793518
+        },
+        {
+          "start": 12.06,
+          "end": 12.06,
+          "word": "来,",
+          "probability": 0.9977880716323853
+        },
+        {
+          "start": 12.28,
+          "end": 12.98,
+          "word": "上",
+          "probability": 0.9596635103225708
+        },
+        {
+          "start": 12.98,
+          "end": 12.98,
+          "word": "来,",
+          "probability": 0.997962474822998
+        },
+        {
+          "start": 13.28,
+          "end": 13.28,
+          "word": "上",
+          "probability": 0.9648405909538269
+        },
+        {
+          "start": 13.28,
+          "end": 13.28,
+          "word": "来,",
+          "probability": 0.9979923963546753
+        },
+        {
+          "start": 13.92,
+          "end": 14.4,
+          "word": "上",
+          "probability": 0.9672524333000183
+        },
+        {
+          "start": 14.4,
+          "end": 14.6,
+          "word": "来,",
+          "probability": 0.9974985718727112
+        },
+        {
+          "start": 17.92,
+          "end": 17.92,
+          "word": "上",
+          "probability": 0.964249849319458
+        },
+        {
+          "start": 17.92,
+          "end": 17.92,
+          "word": "来,",
+          "probability": 0.9980133771896362
+        },
+        {
+          "start": 17.92,
+          "end": 18.4,
+          "word": "上",
+          "probability": 0.979353129863739
+        },
+        {
+          "start": 18.4,
+          "end": 18.4,
+          "word": "来,",
+          "probability": 0.9978941082954407
+        },
+        {
+          "start": 18.8,
+          "end": 18.8,
+          "word": "上",
+          "probability": 0.9637439846992493
+        },
+        {
+          "start": 18.8,
+          "end": 18.8,
+          "word": "来,",
+          "probability": 0.998120129108429
+        },
+        {
+          "start": 18.8,
+          "end": 18.8,
+          "word": "上",
+          "probability": 0.9770060181617737
+        },
+        {
+          "start": 18.8,
+          "end": 18.8,
+          "word": "来,",
+          "probability": 0.9983371496200562
+        },
+        {
+          "start": 18.8,
+          "end": 18.8,
+          "word": "上",
+          "probability": 0.962687075138092
+        },
+        {
+          "start": 18.8,
+          "end": 18.8,
+          "word": "来,",
+          "probability": 0.9980546236038208
+        },
+        {
+          "start": 18.8,
+          "end": 18.8,
+          "word": "上",
+          "probability": 0.9787059426307678
+        },
+        {
+          "start": 18.8,
+          "end": 18.8,
+          "word": "来,",
+          "probability": 0.9976205229759216
+        },
+        {
+          "start": 18.8,
+          "end": 18.8,
+          "word": "上",
+          "probability": 0.9839572906494141
+        },
+        {
+          "start": 18.8,
+          "end": 18.8,
+          "word": "来,",
+          "probability": 0.9982616305351257
+        },
+        {
+          "start": 18.88,
+          "end": 19.48,
+          "word": "上",
+          "probability": 0.9776532649993896
+        },
+        {
+          "start": 19.48,
+          "end": 19.48,
+          "word": "来,",
+          "probability": 0.998153030872345
+        },
+        {
+          "start": 19.76,
+          "end": 19.76,
+          "word": "上",
+          "probability": 0.9773169159889221
+        },
+        {
+          "start": 19.76,
+          "end": 19.82,
+          "word": "来,",
+          "probability": 0.9981874823570251
+        },
+        {
+          "start": 19.82,
+          "end": 19.82,
+          "word": "上",
+          "probability": 0.9827600717544556
+        },
+        {
+          "start": 19.82,
+          "end": 19.86,
+          "word": "来,",
+          "probability": 0.9984336495399475
+        },
+        {
+          "start": 19.86,
+          "end": 19.86,
+          "word": "上",
+          "probability": 0.9792485237121582
+        },
+        {
+          "start": 19.86,
+          "end": 19.86,
+          "word": "来,",
+          "probability": 0.9984683394432068
+        },
+        {
+          "start": 20.34,
+          "end": 20.34,
+          "word": "上",
+          "probability": 0.9679468870162964
+        },
+        {
+          "start": 20.34,
+          "end": 20.34,
+          "word": "来,",
+          "probability": 0.9983822107315063
+        },
+        {
+          "start": 20.34,
+          "end": 20.34,
+          "word": "上",
+          "probability": 0.9741525650024414
+        },
+        {
+          "start": 20.34,
+          "end": 20.34,
+          "word": "来,",
+          "probability": 0.9985780715942383
+        },
+        {
+          "start": 20.34,
+          "end": 20.34,
+          "word": "上",
+          "probability": 0.9768323302268982
+        },
+        {
+          "start": 20.34,
+          "end": 20.34,
+          "word": "来,",
+          "probability": 0.9984569549560547
+        },
+        {
+          "start": 20.34,
+          "end": 20.34,
+          "word": "上",
+          "probability": 0.9640219807624817
+        },
+        {
+          "start": 20.34,
+          "end": 20.34,
+          "word": "来,",
+          "probability": 0.9987911581993103
+        },
+        {
+          "start": 20.34,
+          "end": 20.34,
+          "word": "上",
+          "probability": 0.9647626280784607
+        },
+        {
+          "start": 20.34,
+          "end": 20.34,
+          "word": "来,",
+          "probability": 0.9988365769386292
+        },
+        {
+          "start": 20.5,
+          "end": 20.5,
+          "word": "上",
+          "probability": 0.9604334235191345
+        },
+        {
+          "start": 20.5,
+          "end": 20.5,
+          "word": "来,",
+          "probability": 0.9985951781272888
+        },
+        {
+          "start": 20.52,
+          "end": 20.52,
+          "word": "上",
+          "probability": 0.9571275115013123
+        },
+        {
+          "start": 20.52,
+          "end": 20.52,
+          "word": "来,",
+          "probability": 0.9986818432807922
+        },
+        {
+          "start": 20.54,
+          "end": 21.22,
+          "word": "上",
+          "probability": 0.9524602293968201
+        },
+        {
+          "start": 21.22,
+          "end": 21.5,
+          "word": "来,",
+          "probability": 0.9988055229187012
+        },
+        {
+          "start": 21.96,
+          "end": 22.72,
+          "word": "上",
+          "probability": 0.9700548052787781
+        },
+        {
+          "start": 22.72,
+          "end": 22.72,
+          "word": "来,",
+          "probability": 0.9988399147987366
+        },
+        {
+          "start": 22.72,
+          "end": 22.72,
+          "word": "上",
+          "probability": 0.9669359922409058
+        },
+        {
+          "start": 22.72,
+          "end": 22.72,
+          "word": "来,",
+          "probability": 0.9988467693328857
+        },
+        {
+          "start": 22.72,
+          "end": 22.72,
+          "word": "上",
+          "probability": 0.9653290510177612
+        },
+        {
+          "start": 22.72,
+          "end": 22.72,
+          "word": "来,",
+          "probability": 0.9988586902618408
+        },
+        {
+          "start": 22.72,
+          "end": 22.72,
+          "word": "上",
+          "probability": 0.9601691365242004
+        },
+        {
+          "start": 22.72,
+          "end": 22.72,
+          "word": "来,",
+          "probability": 0.9989990592002869
+        },
+        {
+          "start": 22.72,
+          "end": 22.72,
+          "word": "上",
+          "probability": 0.9667497277259827
+        },
+        {
+          "start": 22.72,
+          "end": 22.72,
+          "word": "来,",
+          "probability": 0.9988225102424622
+        },
+        {
+          "start": 22.72,
+          "end": 22.72,
+          "word": "上",
+          "probability": 0.9531558156013489
+        },
+        {
+          "start": 22.72,
+          "end": 22.92,
+          "word": "来,",
+          "probability": 0.9988215565681458
+        },
+        {
+          "start": 23.16,
+          "end": 23.16,
+          "word": "上",
+          "probability": 0.9572436809539795
+        },
+        {
+          "start": 23.16,
+          "end": 23.16,
+          "word": "来,",
+          "probability": 0.9989845156669617
+        },
+        {
+          "start": 23.16,
+          "end": 23.16,
+          "word": "上",
+          "probability": 0.9456376433372498
+        },
+        {
+          "start": 23.16,
+          "end": 23.16,
+          "word": "来,",
+          "probability": 0.9989225268363953
+        },
+        {
+          "start": 23.16,
+          "end": 23.16,
+          "word": "上",
+          "probability": 0.9307258725166321
+        },
+        {
+          "start": 23.16,
+          "end": 23.16,
+          "word": "来,",
+          "probability": 0.9987809062004089
+        },
+        {
+          "start": 24.4,
+          "end": 24.4,
+          "word": "上",
+          "probability": 0.9297862648963928
+        },
+        {
+          "start": 24.4,
+          "end": 24.9,
+          "word": "来,",
+          "probability": 0.9985988736152649
+        },
+        {
+          "start": 25.34,
+          "end": 25.98,
+          "word": "上",
+          "probability": 0.9080632925033569
+        },
+        {
+          "start": 25.98,
+          "end": 26.64,
+          "word": "来,",
+          "probability": 0.9988431930541992
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 2664,
+      "start": 26.64,
+      "end": 26.78,
+      "text": "中文字幕组",
+      "tokens": [
+        50364,
+        5975,
+        17174,
+        22381,
+        40211,
+        10115,
+        226,
+        50514
+      ],
+      "avg_logprob": -0.9318667517768012,
+      "compression_ratio": 0.625,
+      "no_speech_prob": 0.8429438471794128,
+      "words": [
+        {
+          "start": 26.64,
+          "end": 26.64,
+          "word": "中",
+          "probability": 0.014940964989364147
+        },
+        {
+          "start": 26.64,
+          "end": 26.7,
+          "word": "文",
+          "probability": 0.9747111797332764
+        },
+        {
+          "start": 26.7,
+          "end": 26.72,
+          "word": "字",
+          "probability": 0.9885104298591614
+        },
+        {
+          "start": 26.72,
+          "end": 26.78,
+          "word": "幕",
+          "probability": 0.9991917014122009
+        },
+        {
+          "start": 26.78,
+          "end": 26.78,
+          "word": "组",
+          "probability": 0.4767472038511187
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 21.680200324999987,
+  "realTimeFactor": 0.8087212893539237,
+  "observationChecks": {
+    "rawWordCount": 153,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

@@ -1,0 +1,883 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l02:audio1",
+    "level": 3,
+    "lesson": 2,
+    "track": 1,
+    "kind": "text",
+    "text": 1,
+    "file": "course-assets/hsk3/audio/2-1.mp3",
+    "sha256": "1640a6d0cbac990d964cb7469720c04004e9ea7b3b001f24a4d48f5bfaa3d0c1",
+    "bytes": 532376,
+    "manifestDurationSeconds": 30.735689,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 492774,
+      "durationSeconds": 30.798375,
+      "sha256": "0f245b8638d35265e4f828c0884fccdb945f34091b9f5d22a6ea175a7bf59f31"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 30.798375,
+    "duration_after_vad": 30.798375,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.539999999999996,
+      "end": 5.22,
+      "text": "佳月 李文 你們看看菜單想吃點什麼",
+      "tokens": [
+        50364,
+        1593,
+        111,
+        6939,
+        220,
+        31206,
+        17174,
+        10930,
+        4623,
+        22884,
+        33025,
+        24227,
+        7093,
+        10123,
+        8216,
+        7598,
+        50664
+      ],
+      "avg_logprob": -0.14767349872392477,
+      "compression_ratio": 1.3010204081632653,
+      "no_speech_prob": 0.167817160487175,
+      "words": [
+        {
+          "start": 0.539999999999996,
+          "end": 1.02,
+          "word": "佳",
+          "probability": 0.6023561954498291
+        },
+        {
+          "start": 1.02,
+          "end": 1.26,
+          "word": "月",
+          "probability": 0.3746394217014313
+        },
+        {
+          "start": 1.82,
+          "end": 1.96,
+          "word": " 李",
+          "probability": 0.9643868207931519
+        },
+        {
+          "start": 1.96,
+          "end": 2.18,
+          "word": "文",
+          "probability": 0.8823977708816528
+        },
+        {
+          "start": 2.18,
+          "end": 3.06,
+          "word": " 你",
+          "probability": 0.7595878839492798
+        },
+        {
+          "start": 3.06,
+          "end": 3.2,
+          "word": "們",
+          "probability": 0.5525822043418884
+        },
+        {
+          "start": 3.2,
+          "end": 3.4,
+          "word": "看看",
+          "probability": 0.9903956055641174
+        },
+        {
+          "start": 3.4,
+          "end": 3.76,
+          "word": "菜",
+          "probability": 0.9902560114860535
+        },
+        {
+          "start": 3.76,
+          "end": 3.96,
+          "word": "單",
+          "probability": 0.9942023158073425
+        },
+        {
+          "start": 3.96,
+          "end": 4.44,
+          "word": "想",
+          "probability": 0.7329939007759094
+        },
+        {
+          "start": 4.44,
+          "end": 4.7,
+          "word": "吃",
+          "probability": 0.9922926425933838
+        },
+        {
+          "start": 4.7,
+          "end": 4.88,
+          "word": "點",
+          "probability": 0.9813283681869507
+        },
+        {
+          "start": 4.88,
+          "end": 5.22,
+          "word": "什麼",
+          "probability": 0.8802503347396851
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 6.579999999999996,
+      "end": 10.02,
+      "text": "謝謝醫學姐 我都可以 你們點吧",
+      "tokens": [
+        50664,
+        11003,
+        48351,
+        21372,
+        18102,
+        8624,
+        7182,
+        6723,
+        10930,
+        4623,
+        8216,
+        6062,
+        50864
+      ],
+      "avg_logprob": -0.14767349872392477,
+      "compression_ratio": 1.3010204081632653,
+      "no_speech_prob": 0.167817160487175,
+      "words": [
+        {
+          "start": 6.579999999999996,
+          "end": 7.06,
+          "word": "謝謝",
+          "probability": 0.5521352887153625
+        },
+        {
+          "start": 7.06,
+          "end": 7.32,
+          "word": "醫",
+          "probability": 0.43123751878738403
+        },
+        {
+          "start": 7.32,
+          "end": 7.46,
+          "word": "學",
+          "probability": 0.9984117746353149
+        },
+        {
+          "start": 7.46,
+          "end": 7.68,
+          "word": "姐",
+          "probability": 0.9642339944839478
+        },
+        {
+          "start": 7.68,
+          "end": 8.16,
+          "word": " 我",
+          "probability": 0.7071351408958435
+        },
+        {
+          "start": 8.16,
+          "end": 8.3,
+          "word": "都",
+          "probability": 0.9958165287971497
+        },
+        {
+          "start": 8.3,
+          "end": 8.62,
+          "word": "可以",
+          "probability": 0.9993900060653687
+        },
+        {
+          "start": 8.62,
+          "end": 9.16,
+          "word": " 你",
+          "probability": 0.7224385142326355
+        },
+        {
+          "start": 9.16,
+          "end": 9.32,
+          "word": "們",
+          "probability": 0.9993869066238403
+        },
+        {
+          "start": 9.32,
+          "end": 9.46,
+          "word": "點",
+          "probability": 0.9992501139640808
+        },
+        {
+          "start": 9.46,
+          "end": 10.02,
+          "word": "吧",
+          "probability": 0.994078516960144
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 10.02,
+      "end": 13.72,
+      "text": "飛了這麼遠 現在還真是又餓又渴",
+      "tokens": [
+        50864,
+        34629,
+        2289,
+        21269,
+        34489,
+        220,
+        12648,
+        7824,
+        6303,
+        1541,
+        17047,
+        22217,
+        241,
+        17047,
+        9592,
+        112,
+        51064
+      ],
+      "avg_logprob": -0.14767349872392477,
+      "compression_ratio": 1.3010204081632653,
+      "no_speech_prob": 0.167817160487175,
+      "words": [
+        {
+          "start": 10.02,
+          "end": 10.66,
+          "word": "飛",
+          "probability": 0.6509371995925903
+        },
+        {
+          "start": 10.66,
+          "end": 10.8,
+          "word": "了",
+          "probability": 0.9327301979064941
+        },
+        {
+          "start": 10.8,
+          "end": 11.02,
+          "word": "這麼",
+          "probability": 0.9389569163322449
+        },
+        {
+          "start": 11.02,
+          "end": 11.32,
+          "word": "遠",
+          "probability": 0.9977444410324097
+        },
+        {
+          "start": 11.72,
+          "end": 11.98,
+          "word": " 現在",
+          "probability": 0.9905878305435181
+        },
+        {
+          "start": 11.98,
+          "end": 12.4,
+          "word": "還",
+          "probability": 0.9774077534675598
+        },
+        {
+          "start": 12.4,
+          "end": 12.58,
+          "word": "真",
+          "probability": 0.9985575079917908
+        },
+        {
+          "start": 12.58,
+          "end": 12.8,
+          "word": "是",
+          "probability": 0.9962517619132996
+        },
+        {
+          "start": 12.8,
+          "end": 13.02,
+          "word": "又",
+          "probability": 0.9735702276229858
+        },
+        {
+          "start": 13.02,
+          "end": 13.24,
+          "word": "餓",
+          "probability": 0.9691965579986572
+        },
+        {
+          "start": 13.24,
+          "end": 13.46,
+          "word": "又",
+          "probability": 0.9996132254600525
+        },
+        {
+          "start": 13.46,
+          "end": 13.72,
+          "word": "渴",
+          "probability": 0.9909219443798065
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 14.239999999999997,
+      "end": 18.4,
+      "text": "那多點點 別客氣 你們喝什麼飲料",
+      "tokens": [
+        51064,
+        4184,
+        6392,
+        8216,
+        8216,
+        220,
+        16158,
+        32316,
+        24090,
+        10930,
+        4623,
+        26784,
+        7598,
+        11808,
+        110,
+        33404,
+        51314
+      ],
+      "avg_logprob": -0.14767349872392477,
+      "compression_ratio": 1.3010204081632653,
+      "no_speech_prob": 0.167817160487175,
+      "words": [
+        {
+          "start": 14.239999999999997,
+          "end": 14.72,
+          "word": "那",
+          "probability": 0.9655308127403259
+        },
+        {
+          "start": 14.72,
+          "end": 14.92,
+          "word": "多",
+          "probability": 0.9977610111236572
+        },
+        {
+          "start": 14.92,
+          "end": 15.16,
+          "word": "點",
+          "probability": 0.9991356730461121
+        },
+        {
+          "start": 15.16,
+          "end": 15.44,
+          "word": "點",
+          "probability": 0.9948082566261292
+        },
+        {
+          "start": 15.74,
+          "end": 15.9,
+          "word": " 別",
+          "probability": 0.9953762292861938
+        },
+        {
+          "start": 15.9,
+          "end": 16.1,
+          "word": "客",
+          "probability": 0.9992662072181702
+        },
+        {
+          "start": 16.1,
+          "end": 16.38,
+          "word": "氣",
+          "probability": 0.9972014427185059
+        },
+        {
+          "start": 16.38,
+          "end": 17.08,
+          "word": " 你",
+          "probability": 0.7330262064933777
+        },
+        {
+          "start": 17.08,
+          "end": 17.24,
+          "word": "們",
+          "probability": 0.9980897307395935
+        },
+        {
+          "start": 17.24,
+          "end": 17.42,
+          "word": "喝",
+          "probability": 0.9974538683891296
+        },
+        {
+          "start": 17.42,
+          "end": 17.68,
+          "word": "什麼",
+          "probability": 0.9629601836204529
+        },
+        {
+          "start": 17.68,
+          "end": 17.9,
+          "word": "飲",
+          "probability": 0.9687357246875763
+        },
+        {
+          "start": 17.9,
+          "end": 18.4,
+          "word": "料",
+          "probability": 0.9996799230575562
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 19.039999999999996,
+      "end": 22.9,
+      "text": "好久沒喝中國茶 也好久沒吃餃子了",
+      "tokens": [
+        51314,
+        2131,
+        25320,
+        4913,
+        26784,
+        21854,
+        43499,
+        220,
+        6404,
+        2131,
+        25320,
+        4913,
+        10123,
+        22217,
+        225,
+        7626,
+        2289,
+        51514
+      ],
+      "avg_logprob": -0.14767349872392477,
+      "compression_ratio": 1.3010204081632653,
+      "no_speech_prob": 0.167817160487175,
+      "words": [
+        {
+          "start": 19.039999999999996,
+          "end": 19.52,
+          "word": "好",
+          "probability": 0.8713067173957825
+        },
+        {
+          "start": 19.52,
+          "end": 19.72,
+          "word": "久",
+          "probability": 0.9707895517349243
+        },
+        {
+          "start": 19.72,
+          "end": 19.9,
+          "word": "沒",
+          "probability": 0.9942857623100281
+        },
+        {
+          "start": 19.9,
+          "end": 20.1,
+          "word": "喝",
+          "probability": 0.9985685348510742
+        },
+        {
+          "start": 20.1,
+          "end": 20.34,
+          "word": "中國",
+          "probability": 0.9712206125259399
+        },
+        {
+          "start": 20.34,
+          "end": 20.76,
+          "word": "茶",
+          "probability": 0.9992332458496094
+        },
+        {
+          "start": 21.24,
+          "end": 21.36,
+          "word": " 也",
+          "probability": 0.9990358352661133
+        },
+        {
+          "start": 21.36,
+          "end": 21.6,
+          "word": "好",
+          "probability": 0.9958661794662476
+        },
+        {
+          "start": 21.6,
+          "end": 21.82,
+          "word": "久",
+          "probability": 0.9975314140319824
+        },
+        {
+          "start": 21.82,
+          "end": 22.0,
+          "word": "沒",
+          "probability": 0.9969910383224487
+        },
+        {
+          "start": 22.0,
+          "end": 22.24,
+          "word": "吃",
+          "probability": 0.9985675811767578
+        },
+        {
+          "start": 22.24,
+          "end": 22.48,
+          "word": "餃",
+          "probability": 0.9050589203834534
+        },
+        {
+          "start": 22.48,
+          "end": 22.68,
+          "word": "子",
+          "probability": 0.999984860420227
+        },
+        {
+          "start": 22.68,
+          "end": 22.9,
+          "word": "了",
+          "probability": 0.9890077114105225
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 22.9,
+      "end": 26.34,
+      "text": "我想喝綠茶吃餃子 可以嗎",
+      "tokens": [
+        51514,
+        25246,
+        26784,
+        9261,
+        254,
+        43499,
+        10123,
+        22217,
+        225,
+        7626,
+        43269,
+        7434,
+        51714
+      ],
+      "avg_logprob": -0.14767349872392477,
+      "compression_ratio": 1.3010204081632653,
+      "no_speech_prob": 0.167817160487175,
+      "words": [
+        {
+          "start": 22.9,
+          "end": 23.76,
+          "word": "我想",
+          "probability": 0.8779650926589966
+        },
+        {
+          "start": 23.76,
+          "end": 24.16,
+          "word": "喝",
+          "probability": 0.9970952272415161
+        },
+        {
+          "start": 24.16,
+          "end": 24.34,
+          "word": "綠",
+          "probability": 0.991135984659195
+        },
+        {
+          "start": 24.34,
+          "end": 24.68,
+          "word": "茶",
+          "probability": 0.9995248317718506
+        },
+        {
+          "start": 24.68,
+          "end": 25.04,
+          "word": "吃",
+          "probability": 0.5341538190841675
+        },
+        {
+          "start": 25.04,
+          "end": 25.32,
+          "word": "餃",
+          "probability": 0.9976818859577179
+        },
+        {
+          "start": 25.32,
+          "end": 25.62,
+          "word": "子",
+          "probability": 0.999913215637207
+        },
+        {
+          "start": 25.62,
+          "end": 26.08,
+          "word": " 可以",
+          "probability": 0.6426737904548645
+        },
+        {
+          "start": 26.08,
+          "end": 26.34,
+          "word": "嗎",
+          "probability": 0.9109250903129578
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2634,
+      "start": 26.34,
+      "end": 29.8,
+      "text": "沒問題 你們看看還想吃什麼",
+      "tokens": [
+        50364,
+        4913,
+        17197,
+        10930,
+        4623,
+        22884,
+        7824,
+        7093,
+        10123,
+        7598,
+        50564
+      ],
+      "avg_logprob": -0.37930691490570706,
+      "compression_ratio": 0.8043478260869565,
+      "no_speech_prob": 0.25194311141967773,
+      "words": [
+        {
+          "start": 26.34,
+          "end": 27.32,
+          "word": "沒",
+          "probability": 0.7391706705093384
+        },
+        {
+          "start": 27.32,
+          "end": 27.68,
+          "word": "問題",
+          "probability": 0.9973430037498474
+        },
+        {
+          "start": 27.68,
+          "end": 28.34,
+          "word": " 你",
+          "probability": 0.42373204231262207
+        },
+        {
+          "start": 28.34,
+          "end": 28.46,
+          "word": "們",
+          "probability": 0.9778822064399719
+        },
+        {
+          "start": 28.46,
+          "end": 28.72,
+          "word": "看看",
+          "probability": 0.993093729019165
+        },
+        {
+          "start": 28.72,
+          "end": 29.1,
+          "word": "還",
+          "probability": 0.9740940928459167
+        },
+        {
+          "start": 29.1,
+          "end": 29.32,
+          "word": "想",
+          "probability": 0.9911252856254578
+        },
+        {
+          "start": 29.32,
+          "end": 29.54,
+          "word": "吃",
+          "probability": 0.9890774488449097
+        },
+        {
+          "start": 29.54,
+          "end": 29.8,
+          "word": "什麼",
+          "probability": 0.9513895511627197
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 4.572874835999983,
+  "realTimeFactor": 0.14847779585773543,
+  "observationChecks": {
+    "rawWordCount": 81,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

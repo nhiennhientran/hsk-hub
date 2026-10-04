@@ -1,0 +1,914 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l13:audio1",
+    "level": 2,
+    "lesson": 13,
+    "track": 1,
+    "kind": "text",
+    "text": 1,
+    "file": "course-assets/hsk2/audio/13-1.mp3",
+    "sha256": "c113ff8774535f1b0724738aa1f073db8cc38066822f1bf10737789c1acd8805",
+    "bytes": 1000619,
+    "manifestDurationSeconds": 39.773333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 636288,
+      "durationSeconds": 39.768,
+      "sha256": "6caeae757d9117b9ef20704f7c7539d19e756913b2813d072d6405881c7aaef4"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 39.768,
+    "duration_after_vad": 39.768,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 4.44,
+      "text": "時間過得真快呀,新年就要到了。",
+      "tokens": [
+        50364,
+        20788,
+        8816,
+        5916,
+        6303,
+        10251,
+        15348,
+        11,
+        12560,
+        5157,
+        3111,
+        4275,
+        21381,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.1689948865884467,
+      "compression_ratio": 1.21875,
+      "no_speech_prob": 0.08807965368032455,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 1.0,
+          "word": "時間",
+          "probability": 0.22741106152534485
+        },
+        {
+          "start": 1.0,
+          "end": 1.38,
+          "word": "過",
+          "probability": 0.9854303598403931
+        },
+        {
+          "start": 1.38,
+          "end": 1.52,
+          "word": "得",
+          "probability": 0.6127570867538452
+        },
+        {
+          "start": 1.52,
+          "end": 1.72,
+          "word": "真",
+          "probability": 0.9766935706138611
+        },
+        {
+          "start": 1.72,
+          "end": 2.06,
+          "word": "快",
+          "probability": 0.9980003237724304
+        },
+        {
+          "start": 2.06,
+          "end": 2.66,
+          "word": "呀,",
+          "probability": 0.31845125555992126
+        },
+        {
+          "start": 3.08,
+          "end": 3.28,
+          "word": "新",
+          "probability": 0.7102406024932861
+        },
+        {
+          "start": 3.28,
+          "end": 3.6,
+          "word": "年",
+          "probability": 0.99714595079422
+        },
+        {
+          "start": 3.6,
+          "end": 3.86,
+          "word": "就",
+          "probability": 0.9819400906562805
+        },
+        {
+          "start": 3.86,
+          "end": 4.02,
+          "word": "要",
+          "probability": 0.9904627203941345
+        },
+        {
+          "start": 4.02,
+          "end": 4.44,
+          "word": "到了。",
+          "probability": 0.9744632244110107
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.9,
+      "end": 10.82,
+      "text": "這一年王老師教我們中文,每天工作都很累。",
+      "tokens": [
+        50614,
+        32260,
+        5157,
+        19940,
+        23907,
+        21936,
+        5884,
+        5975,
+        17174,
+        11,
+        23664,
+        6135,
+        41315,
+        7182,
+        4563,
+        43656,
+        1543,
+        50914
+      ],
+      "avg_logprob": -0.1689948865884467,
+      "compression_ratio": 1.21875,
+      "no_speech_prob": 0.08807965368032455,
+      "words": [
+        {
+          "start": 5.9,
+          "end": 6.5,
+          "word": "這一",
+          "probability": 0.4224398136138916
+        },
+        {
+          "start": 6.5,
+          "end": 6.9,
+          "word": "年",
+          "probability": 0.9967183470726013
+        },
+        {
+          "start": 6.9,
+          "end": 7.28,
+          "word": "王",
+          "probability": 0.6559703350067139
+        },
+        {
+          "start": 7.28,
+          "end": 7.64,
+          "word": "老師",
+          "probability": 0.9930679798126221
+        },
+        {
+          "start": 7.64,
+          "end": 7.88,
+          "word": "教",
+          "probability": 0.9990993738174438
+        },
+        {
+          "start": 7.88,
+          "end": 8.14,
+          "word": "我們",
+          "probability": 0.9917575716972351
+        },
+        {
+          "start": 8.14,
+          "end": 8.4,
+          "word": "中",
+          "probability": 0.997215747833252
+        },
+        {
+          "start": 8.4,
+          "end": 8.68,
+          "word": "文,",
+          "probability": 0.999874472618103
+        },
+        {
+          "start": 9.1,
+          "end": 9.28,
+          "word": "每",
+          "probability": 0.9324665665626526
+        },
+        {
+          "start": 9.28,
+          "end": 9.6,
+          "word": "天",
+          "probability": 0.9994103908538818
+        },
+        {
+          "start": 9.6,
+          "end": 10.04,
+          "word": "工作",
+          "probability": 0.9937102794647217
+        },
+        {
+          "start": 10.04,
+          "end": 10.34,
+          "word": "都",
+          "probability": 0.9937292337417603
+        },
+        {
+          "start": 10.34,
+          "end": 10.58,
+          "word": "很",
+          "probability": 0.9979503750801086
+        },
+        {
+          "start": 10.58,
+          "end": 10.82,
+          "word": "累。",
+          "probability": 0.9970852732658386
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 11.78,
+      "end": 18.42,
+      "text": "是啊,他教得很好,因為他我們都非常愛上中文課。",
+      "tokens": [
+        50914,
+        39282,
+        11,
+        5000,
+        21936,
+        5916,
+        23801,
+        11,
+        11471,
+        5000,
+        5884,
+        7182,
+        14392,
+        15157,
+        5708,
+        5975,
+        17174,
+        3549,
+        110,
+        1543,
+        51314
+      ],
+      "avg_logprob": -0.1689948865884467,
+      "compression_ratio": 1.21875,
+      "no_speech_prob": 0.08807965368032455,
+      "words": [
+        {
+          "start": 11.78,
+          "end": 12.38,
+          "word": "是啊,",
+          "probability": 0.9375503659248352
+        },
+        {
+          "start": 13.22,
+          "end": 13.38,
+          "word": "他",
+          "probability": 0.8944296836853027
+        },
+        {
+          "start": 13.38,
+          "end": 13.62,
+          "word": "教",
+          "probability": 0.9977626800537109
+        },
+        {
+          "start": 13.62,
+          "end": 13.76,
+          "word": "得",
+          "probability": 0.8431577086448669
+        },
+        {
+          "start": 13.76,
+          "end": 14.24,
+          "word": "很好,",
+          "probability": 0.9325138330459595
+        },
+        {
+          "start": 15.0,
+          "end": 15.28,
+          "word": "因為",
+          "probability": 0.9610914587974548
+        },
+        {
+          "start": 15.28,
+          "end": 15.66,
+          "word": "他",
+          "probability": 0.9783726334571838
+        },
+        {
+          "start": 15.66,
+          "end": 16.32,
+          "word": "我們",
+          "probability": 0.6877944469451904
+        },
+        {
+          "start": 16.32,
+          "end": 16.58,
+          "word": "都",
+          "probability": 0.9959836006164551
+        },
+        {
+          "start": 16.58,
+          "end": 17.06,
+          "word": "非常",
+          "probability": 0.9963412880897522
+        },
+        {
+          "start": 17.06,
+          "end": 17.44,
+          "word": "愛",
+          "probability": 0.987676739692688
+        },
+        {
+          "start": 17.44,
+          "end": 17.7,
+          "word": "上",
+          "probability": 0.99928879737854
+        },
+        {
+          "start": 17.7,
+          "end": 17.94,
+          "word": "中",
+          "probability": 0.9971914887428284
+        },
+        {
+          "start": 17.94,
+          "end": 18.12,
+          "word": "文",
+          "probability": 0.9999338388442993
+        },
+        {
+          "start": 18.12,
+          "end": 18.42,
+          "word": "課。",
+          "probability": 0.9948666095733643
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 20.34,
+      "end": 25.5,
+      "text": "我們給他準備個新年禮物吧,你覺得送給他什麼好呢?",
+      "tokens": [
+        51314,
+        5884,
+        17798,
+        5000,
+        36241,
+        3338,
+        12560,
+        5157,
+        18614,
+        106,
+        23516,
+        6062,
+        11,
+        2166,
+        11274,
+        29309,
+        17798,
+        5000,
+        7598,
+        2131,
+        6240,
+        30,
+        51664
+      ],
+      "avg_logprob": -0.1689948865884467,
+      "compression_ratio": 1.21875,
+      "no_speech_prob": 0.08807965368032455,
+      "words": [
+        {
+          "start": 20.34,
+          "end": 20.6,
+          "word": "我們",
+          "probability": 0.9818117022514343
+        },
+        {
+          "start": 20.6,
+          "end": 20.78,
+          "word": "給",
+          "probability": 0.9980720281600952
+        },
+        {
+          "start": 20.78,
+          "end": 20.96,
+          "word": "他",
+          "probability": 0.979203462600708
+        },
+        {
+          "start": 20.96,
+          "end": 21.24,
+          "word": "準備",
+          "probability": 0.9912148714065552
+        },
+        {
+          "start": 21.24,
+          "end": 21.6,
+          "word": "個",
+          "probability": 0.5955370664596558
+        },
+        {
+          "start": 21.6,
+          "end": 21.92,
+          "word": "新",
+          "probability": 0.9861479997634888
+        },
+        {
+          "start": 21.92,
+          "end": 22.14,
+          "word": "年",
+          "probability": 0.9935781955718994
+        },
+        {
+          "start": 22.14,
+          "end": 22.34,
+          "word": "禮",
+          "probability": 0.9991679489612579
+        },
+        {
+          "start": 22.34,
+          "end": 22.62,
+          "word": "物",
+          "probability": 0.997806966304779
+        },
+        {
+          "start": 22.62,
+          "end": 22.84,
+          "word": "吧,",
+          "probability": 0.9532309770584106
+        },
+        {
+          "start": 23.4,
+          "end": 23.52,
+          "word": "你",
+          "probability": 0.979032039642334
+        },
+        {
+          "start": 23.52,
+          "end": 23.8,
+          "word": "覺得",
+          "probability": 0.9898483157157898
+        },
+        {
+          "start": 23.8,
+          "end": 24.32,
+          "word": "送",
+          "probability": 0.9843973517417908
+        },
+        {
+          "start": 24.32,
+          "end": 24.46,
+          "word": "給",
+          "probability": 0.9967703819274902
+        },
+        {
+          "start": 24.46,
+          "end": 24.64,
+          "word": "他",
+          "probability": 0.9858875870704651
+        },
+        {
+          "start": 24.64,
+          "end": 24.96,
+          "word": "什麼",
+          "probability": 0.8085314035415649
+        },
+        {
+          "start": 24.96,
+          "end": 25.3,
+          "word": "好",
+          "probability": 0.9914997220039368
+        },
+        {
+          "start": 25.3,
+          "end": 25.5,
+          "word": "呢?",
+          "probability": 0.9692650437355042
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 2550,
+      "start": 26.64,
+      "end": 30.54,
+      "text": "王老师喜欢花,就送给他花吧。",
+      "tokens": [
+        50364,
+        19940,
+        10439,
+        29186,
+        41606,
+        20127,
+        11,
+        3111,
+        29309,
+        23197,
+        5000,
+        20127,
+        6062,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.1639398939907551,
+      "compression_ratio": 1.0084033613445378,
+      "no_speech_prob": 0.1452014148235321,
+      "words": [
+        {
+          "start": 26.64,
+          "end": 27.26,
+          "word": "王",
+          "probability": 0.7284043431282043
+        },
+        {
+          "start": 27.26,
+          "end": 27.48,
+          "word": "老",
+          "probability": 0.30393359065055847
+        },
+        {
+          "start": 27.48,
+          "end": 27.76,
+          "word": "师",
+          "probability": 0.9985198378562927
+        },
+        {
+          "start": 27.76,
+          "end": 28.16,
+          "word": "喜欢",
+          "probability": 0.9576379656791687
+        },
+        {
+          "start": 28.16,
+          "end": 28.52,
+          "word": "花,",
+          "probability": 0.9776195287704468
+        },
+        {
+          "start": 29.18,
+          "end": 29.34,
+          "word": "就",
+          "probability": 0.8863400816917419
+        },
+        {
+          "start": 29.34,
+          "end": 29.56,
+          "word": "送",
+          "probability": 0.9969005584716797
+        },
+        {
+          "start": 29.56,
+          "end": 29.72,
+          "word": "给",
+          "probability": 0.9870976805686951
+        },
+        {
+          "start": 29.72,
+          "end": 29.94,
+          "word": "他",
+          "probability": 0.7600817680358887
+        },
+        {
+          "start": 29.94,
+          "end": 30.22,
+          "word": "花",
+          "probability": 0.9942249655723572
+        },
+        {
+          "start": 30.22,
+          "end": 30.54,
+          "word": "吧。",
+          "probability": 0.9716387391090393
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 2550,
+      "start": 31.74,
+      "end": 38.54,
+      "text": "那我们去花店看看,现在买花的人多,希望花店还有漂亮的花。",
+      "tokens": [
+        50614,
+        4184,
+        15003,
+        6734,
+        20127,
+        22469,
+        22884,
+        11,
+        25040,
+        2930,
+        108,
+        20127,
+        29979,
+        6392,
+        11,
+        29955,
+        20127,
+        22469,
+        35091,
+        29019,
+        1546,
+        20127,
+        1543,
+        51014
+      ],
+      "avg_logprob": -0.1639398939907551,
+      "compression_ratio": 1.0084033613445378,
+      "no_speech_prob": 0.1452014148235321,
+      "words": [
+        {
+          "start": 31.74,
+          "end": 32.34,
+          "word": "那",
+          "probability": 0.753107488155365
+        },
+        {
+          "start": 32.34,
+          "end": 32.54,
+          "word": "我们",
+          "probability": 0.9781728386878967
+        },
+        {
+          "start": 32.54,
+          "end": 32.76,
+          "word": "去",
+          "probability": 0.9895380735397339
+        },
+        {
+          "start": 32.76,
+          "end": 32.98,
+          "word": "花",
+          "probability": 0.9866206645965576
+        },
+        {
+          "start": 32.98,
+          "end": 33.16,
+          "word": "店",
+          "probability": 0.7247252464294434
+        },
+        {
+          "start": 33.16,
+          "end": 33.5,
+          "word": "看看,",
+          "probability": 0.9825987815856934
+        },
+        {
+          "start": 34.1,
+          "end": 34.32,
+          "word": "现在",
+          "probability": 0.9671615362167358
+        },
+        {
+          "start": 34.32,
+          "end": 34.78,
+          "word": "买",
+          "probability": 0.9929035604000092
+        },
+        {
+          "start": 34.78,
+          "end": 35.04,
+          "word": "花",
+          "probability": 0.9930257797241211
+        },
+        {
+          "start": 35.04,
+          "end": 35.2,
+          "word": "的人",
+          "probability": 0.9934943318367004
+        },
+        {
+          "start": 35.2,
+          "end": 35.6,
+          "word": "多,",
+          "probability": 0.9978857636451721
+        },
+        {
+          "start": 35.96,
+          "end": 36.26,
+          "word": "希望",
+          "probability": 0.971835732460022
+        },
+        {
+          "start": 36.26,
+          "end": 36.72,
+          "word": "花",
+          "probability": 0.9865155220031738
+        },
+        {
+          "start": 36.72,
+          "end": 37.0,
+          "word": "店",
+          "probability": 0.9876630902290344
+        },
+        {
+          "start": 37.0,
+          "end": 37.34,
+          "word": "还有",
+          "probability": 0.9503339529037476
+        },
+        {
+          "start": 37.34,
+          "end": 37.98,
+          "word": "漂亮",
+          "probability": 0.984741747379303
+        },
+        {
+          "start": 37.98,
+          "end": 38.3,
+          "word": "的",
+          "probability": 0.9800370931625366
+        },
+        {
+          "start": 38.3,
+          "end": 38.54,
+          "word": "花。",
+          "probability": 0.9984654188156128
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 4.697071336999997,
+  "realTimeFactor": 0.11811183205089512,
+  "observationChecks": {
+    "rawWordCount": 87,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

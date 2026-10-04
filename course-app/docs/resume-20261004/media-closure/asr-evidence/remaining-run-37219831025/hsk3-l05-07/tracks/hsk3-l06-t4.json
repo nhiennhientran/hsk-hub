@@ -1,0 +1,417 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l06:audio4",
+    "level": 3,
+    "lesson": 6,
+    "track": 4,
+    "kind": "vocab",
+    "text": 2,
+    "file": "course-assets/hsk3/audio/6-4.mp3",
+    "sha256": "e9f35c8575a780028e527bf4d889122861d58035666b749bc515873106ac8bfe",
+    "bytes": 393932,
+    "manifestDurationSeconds": 22.082938,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 354012,
+      "durationSeconds": 22.12575,
+      "sha256": "2a8aef9f816b76613d1a9c44c8cb60ab10998da2b897a315887d750fb5c7b10c"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 22.12575,
+    "duration_after_vad": 22.12575,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.64,
+      "text": "路口",
+      "tokens": [
+        50364,
+        24658,
+        18144,
+        50515
+      ],
+      "avg_logprob": -0.6493454838500303,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.41418659687042236,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.64,
+          "word": "路",
+          "probability": 0.9361855387687683
+        },
+        {
+          "start": 0.64,
+          "end": 2.64,
+          "word": "口",
+          "probability": 0.9988608360290527
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.64,
+      "end": 4.3,
+      "text": "小心",
+      "tokens": [
+        50515,
+        34021,
+        50643
+      ],
+      "avg_logprob": -0.6493454838500303,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.41418659687042236,
+      "words": [
+        {
+          "start": 2.64,
+          "end": 4.3,
+          "word": "小心",
+          "probability": 0.6571659445762634
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.58,
+      "end": 8.08,
+      "text": "迟到",
+      "tokens": [
+        50643,
+        3316,
+        253,
+        4511,
+        50778
+      ],
+      "avg_logprob": -0.6493454838500303,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.41418659687042236,
+      "words": [
+        {
+          "start": 5.3999999999999995,
+          "end": 6.1,
+          "word": "迟",
+          "probability": 0.661755844950676
+        },
+        {
+          "start": 6.1,
+          "end": 8.08,
+          "word": "到",
+          "probability": 0.9900599718093872
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 8.08,
+      "end": 11.12,
+      "text": "红绿灯",
+      "tokens": [
+        50778,
+        16853,
+        95,
+        10115,
+        123,
+        13290,
+        107,
+        50928
+      ],
+      "avg_logprob": -0.6493454838500303,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.41418659687042236,
+      "words": [
+        {
+          "start": 8.08,
+          "end": 8.84,
+          "word": "红",
+          "probability": 0.8762121498584747
+        },
+        {
+          "start": 8.84,
+          "end": 9.12,
+          "word": "绿",
+          "probability": 0.9811460673809052
+        },
+        {
+          "start": 9.12,
+          "end": 11.12,
+          "word": "灯",
+          "probability": 0.9985909759998322
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 11.12,
+      "end": 13.54,
+      "text": "后来",
+      "tokens": [
+        50928,
+        13547,
+        6912,
+        51053
+      ],
+      "avg_logprob": -0.6493454838500303,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.41418659687042236,
+      "words": [
+        {
+          "start": 11.12,
+          "end": 11.7,
+          "word": "后",
+          "probability": 0.9780943989753723
+        },
+        {
+          "start": 11.7,
+          "end": 13.54,
+          "word": "来",
+          "probability": 0.9958946704864502
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 13.54,
+      "end": 14.56,
+      "text": "急",
+      "tokens": [
+        51053,
+        36379,
+        51157
+      ],
+      "avg_logprob": -0.6493454838500303,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.41418659687042236,
+      "words": [
+        {
+          "start": 13.54,
+          "end": 14.56,
+          "word": "急",
+          "probability": 0.277425616979599
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 15.860000000000001,
+      "end": 17.12,
+      "text": "如果",
+      "tokens": [
+        51157,
+        13119,
+        51307
+      ],
+      "avg_logprob": -0.6493454838500303,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.41418659687042236,
+      "words": [
+        {
+          "start": 15.860000000000001,
+          "end": 17.12,
+          "word": "如果",
+          "probability": 0.8090734481811523
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 18.86,
+      "end": 19.72,
+      "text": "以前",
+      "tokens": [
+        51307,
+        44996,
+        51457
+      ],
+      "avg_logprob": -0.6493454838500303,
+      "compression_ratio": 0.8135593220338984,
+      "no_speech_prob": 0.41418659687042236,
+      "words": [
+        {
+          "start": 18.86,
+          "end": 19.72,
+          "word": "以前",
+          "probability": 0.9619656801223755
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.7821895480000194,
+  "realTimeFactor": 0.08054820957481755,
+  "observationChecks": {
+    "rawWordCount": 13,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

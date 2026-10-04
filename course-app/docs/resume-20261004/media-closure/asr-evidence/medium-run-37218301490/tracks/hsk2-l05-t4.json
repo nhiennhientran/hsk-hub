@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l05:audio4",
+    "level": 2,
+    "lesson": 5,
+    "track": 4,
+    "kind": "vocab",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/5-4.mp3",
+    "sha256": "06ed5080f783a74eb18c727c861c42c7cae949e0662fe45cce71b44eb168dbf0",
+    "bytes": 387195,
+    "manifestDurationSeconds": 14.261333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 228096,
+      "durationSeconds": 14.256,
+      "sha256": "1159694bd88a3ee9f0bf902dff221abb75912a3e99ba1dc80340d50022749a23"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-medium",
+  "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 14.256,
+    "duration_after_vad": 14.256,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.92,
+      "text": "进来",
+      "tokens": [
+        50364,
+        36700,
+        6912,
+        50514
+      ],
+      "avg_logprob": -0.3227512526015441,
+      "compression_ratio": 0.8108108108108109,
+      "no_speech_prob": 0.10856372863054276,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 1.14,
+          "word": "进",
+          "probability": 0.6263723969459534
+        },
+        {
+          "start": 1.14,
+          "end": 2.92,
+          "word": "来",
+          "probability": 0.9980853796005249
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.92,
+      "end": 5.94,
+      "text": "爷爷",
+      "tokens": [
+        50514,
+        43725,
+        43725,
+        50664
+      ],
+      "avg_logprob": -0.3227512526015441,
+      "compression_ratio": 0.8108108108108109,
+      "no_speech_prob": 0.10856372863054276,
+      "words": [
+        {
+          "start": 2.92,
+          "end": 4.0,
+          "word": "爷",
+          "probability": 0.09871068596839905
+        },
+        {
+          "start": 4.0,
+          "end": 5.94,
+          "word": "爷",
+          "probability": 0.9998270869255066
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.94,
+      "end": 8.46,
+      "text": "奶奶",
+      "tokens": [
+        50664,
+        42525,
+        42525,
+        50764
+      ],
+      "avg_logprob": -0.3227512526015441,
+      "compression_ratio": 0.8108108108108109,
+      "no_speech_prob": 0.10856372863054276,
+      "words": [
+        {
+          "start": 5.94,
+          "end": 6.78,
+          "word": "奶",
+          "probability": 0.939900279045105
+        },
+        {
+          "start": 6.78,
+          "end": 8.46,
+          "word": "奶",
+          "probability": 0.9994974136352539
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 8.46,
+      "end": 11.44,
+      "text": "礼物",
+      "tokens": [
+        50764,
+        14971,
+        120,
+        23516,
+        50914
+      ],
+      "avg_logprob": -0.3227512526015441,
+      "compression_ratio": 0.8108108108108109,
+      "no_speech_prob": 0.10856372863054276,
+      "words": [
+        {
+          "start": 8.46,
+          "end": 9.1,
+          "word": "礼",
+          "probability": 0.9920443594455719
+        },
+        {
+          "start": 9.1,
+          "end": 11.44,
+          "word": "物",
+          "probability": 0.9997093081474304
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 11.44,
+      "end": 12.9,
+      "text": "准备",
+      "tokens": [
+        50914,
+        6336,
+        228,
+        1787,
+        229,
+        51064
+      ],
+      "avg_logprob": -0.3227512526015441,
+      "compression_ratio": 0.8108108108108109,
+      "no_speech_prob": 0.10856372863054276,
+      "words": [
+        {
+          "start": 11.44,
+          "end": 12.34,
+          "word": "准",
+          "probability": 0.9969824850559235
+        },
+        {
+          "start": 12.34,
+          "end": 12.9,
+          "word": "备",
+          "probability": 0.9999803900718689
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 4.318412404000014,
+  "realTimeFactor": 0.302918939674524,
+  "observationChecks": {
+    "rawWordCount": 10,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

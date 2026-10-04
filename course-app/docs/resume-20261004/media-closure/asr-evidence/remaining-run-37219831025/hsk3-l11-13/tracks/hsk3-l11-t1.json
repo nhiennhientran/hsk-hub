@@ -1,0 +1,1023 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l11:audio1",
+    "level": 3,
+    "lesson": 11,
+    "track": 1,
+    "kind": "text",
+    "text": 1,
+    "file": "course-assets/hsk3/audio/11-1.mp3",
+    "sha256": "05f1f4a237a29c3afc360ab2e055dec66239a5132ae24a74fa9bb0f7d12f5cee",
+    "bytes": 595762,
+    "manifestDurationSeconds": 34.697189,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 556304,
+      "durationSeconds": 34.769,
+      "sha256": "32c096b23d931cd07dd710ecb9f0ee463674ea7ae6dd0f6a56c49729f2188984"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 34.769,
+    "duration_after_vad": 34.769,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.7599999999999996,
+      "end": 2.6,
+      "text": "会议下午几点开始?",
+      "tokens": [
+        50364,
+        12949,
+        7422,
+        106,
+        4438,
+        44237,
+        6336,
+        254,
+        12579,
+        45213,
+        30,
+        50514
+      ],
+      "avg_logprob": -0.13385635260187212,
+      "compression_ratio": 1.375,
+      "no_speech_prob": 0.2465284764766693,
+      "words": [
+        {
+          "start": 0.7599999999999996,
+          "end": 1.24,
+          "word": "会",
+          "probability": 0.3842955529689789
+        },
+        {
+          "start": 1.24,
+          "end": 1.4,
+          "word": "议",
+          "probability": 0.9935582876205444
+        },
+        {
+          "start": 1.4,
+          "end": 1.62,
+          "word": "下",
+          "probability": 0.9797049760818481
+        },
+        {
+          "start": 1.62,
+          "end": 1.82,
+          "word": "午",
+          "probability": 0.9993584752082825
+        },
+        {
+          "start": 1.82,
+          "end": 2.06,
+          "word": "几",
+          "probability": 0.9967802166938782
+        },
+        {
+          "start": 2.06,
+          "end": 2.26,
+          "word": "点",
+          "probability": 0.9984768033027649
+        },
+        {
+          "start": 2.26,
+          "end": 2.6,
+          "word": "开始?",
+          "probability": 0.8101098537445068
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.0,
+      "end": 7.34,
+      "text": "今天下午经理不在,不开会了。",
+      "tokens": [
+        50514,
+        12074,
+        4438,
+        44237,
+        30276,
+        13876,
+        1960,
+        3581,
+        11,
+        1960,
+        18937,
+        12949,
+        2289,
+        1543,
+        50764
+      ],
+      "avg_logprob": -0.13385635260187212,
+      "compression_ratio": 1.375,
+      "no_speech_prob": 0.2465284764766693,
+      "words": [
+        {
+          "start": 4.0,
+          "end": 4.44,
+          "word": "今天",
+          "probability": 0.9427477121353149
+        },
+        {
+          "start": 4.44,
+          "end": 4.82,
+          "word": "下",
+          "probability": 0.992975115776062
+        },
+        {
+          "start": 4.82,
+          "end": 5.08,
+          "word": "午",
+          "probability": 0.9998606443405151
+        },
+        {
+          "start": 5.08,
+          "end": 5.32,
+          "word": "经",
+          "probability": 0.9317004680633545
+        },
+        {
+          "start": 5.32,
+          "end": 5.52,
+          "word": "理",
+          "probability": 0.9864424467086792
+        },
+        {
+          "start": 5.52,
+          "end": 5.74,
+          "word": "不",
+          "probability": 0.9975036978721619
+        },
+        {
+          "start": 5.74,
+          "end": 5.96,
+          "word": "在,",
+          "probability": 0.9909520149230957
+        },
+        {
+          "start": 6.52,
+          "end": 6.68,
+          "word": "不",
+          "probability": 0.9687528014183044
+        },
+        {
+          "start": 6.68,
+          "end": 6.88,
+          "word": "开",
+          "probability": 0.9979764819145203
+        },
+        {
+          "start": 6.88,
+          "end": 7.12,
+          "word": "会",
+          "probability": 0.9962949156761169
+        },
+        {
+          "start": 7.12,
+          "end": 7.34,
+          "word": "了。",
+          "probability": 0.9903938174247742
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 8.48,
+      "end": 10.12,
+      "text": "那什么时候开会?",
+      "tokens": [
+        50764,
+        4184,
+        10440,
+        29111,
+        18937,
+        12949,
+        30,
+        50914
+      ],
+      "avg_logprob": -0.13385635260187212,
+      "compression_ratio": 1.375,
+      "no_speech_prob": 0.2465284764766693,
+      "words": [
+        {
+          "start": 8.48,
+          "end": 8.96,
+          "word": "那",
+          "probability": 0.9758120179176331
+        },
+        {
+          "start": 8.96,
+          "end": 9.28,
+          "word": "什么",
+          "probability": 0.9638817310333252
+        },
+        {
+          "start": 9.28,
+          "end": 9.62,
+          "word": "时候",
+          "probability": 0.9986228942871094
+        },
+        {
+          "start": 9.62,
+          "end": 9.88,
+          "word": "开",
+          "probability": 0.9895842671394348
+        },
+        {
+          "start": 9.88,
+          "end": 10.12,
+          "word": "会?",
+          "probability": 0.9989480376243591
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 11.26,
+      "end": 15.64,
+      "text": "后天上午10点,会议地点换到第一会议室。",
+      "tokens": [
+        50914,
+        13547,
+        6135,
+        5708,
+        44237,
+        3279,
+        12579,
+        11,
+        12949,
+        7422,
+        106,
+        10928,
+        12579,
+        26075,
+        95,
+        4511,
+        18049,
+        12949,
+        7422,
+        106,
+        2415,
+        97,
+        1543,
+        51164
+      ],
+      "avg_logprob": -0.13385635260187212,
+      "compression_ratio": 1.375,
+      "no_speech_prob": 0.2465284764766693,
+      "words": [
+        {
+          "start": 11.26,
+          "end": 11.52,
+          "word": "后",
+          "probability": 0.986697256565094
+        },
+        {
+          "start": 11.52,
+          "end": 11.8,
+          "word": "天",
+          "probability": 0.9982272982597351
+        },
+        {
+          "start": 11.8,
+          "end": 12.1,
+          "word": "上",
+          "probability": 0.9913585186004639
+        },
+        {
+          "start": 12.1,
+          "end": 12.32,
+          "word": "午",
+          "probability": 0.9997861981391907
+        },
+        {
+          "start": 12.32,
+          "end": 12.6,
+          "word": "10",
+          "probability": 0.6090704798698425
+        },
+        {
+          "start": 12.6,
+          "end": 12.92,
+          "word": "点,",
+          "probability": 0.9957815408706665
+        },
+        {
+          "start": 13.4,
+          "end": 13.56,
+          "word": "会",
+          "probability": 0.9695683121681213
+        },
+        {
+          "start": 13.56,
+          "end": 13.76,
+          "word": "议",
+          "probability": 0.9980132877826691
+        },
+        {
+          "start": 13.76,
+          "end": 13.92,
+          "word": "地",
+          "probability": 0.8303019404411316
+        },
+        {
+          "start": 13.92,
+          "end": 14.2,
+          "word": "点",
+          "probability": 0.9991876482963562
+        },
+        {
+          "start": 14.2,
+          "end": 14.46,
+          "word": "换",
+          "probability": 0.93824103474617
+        },
+        {
+          "start": 14.46,
+          "end": 14.68,
+          "word": "到",
+          "probability": 0.9877138137817383
+        },
+        {
+          "start": 14.68,
+          "end": 15.02,
+          "word": "第一",
+          "probability": 0.9434434771537781
+        },
+        {
+          "start": 15.02,
+          "end": 15.28,
+          "word": "会",
+          "probability": 0.9900250434875488
+        },
+        {
+          "start": 15.28,
+          "end": 15.4,
+          "word": "议",
+          "probability": 0.9996498227119446
+        },
+        {
+          "start": 15.4,
+          "end": 15.64,
+          "word": "室。",
+          "probability": 0.9644573032855988
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 16.18,
+      "end": 17.88,
+      "text": "我正要给大家发邮件。",
+      "tokens": [
+        51164,
+        1654,
+        15789,
+        4275,
+        23197,
+        6868,
+        28926,
+        3023,
+        106,
+        20485,
+        1543,
+        51314
+      ],
+      "avg_logprob": -0.13385635260187212,
+      "compression_ratio": 1.375,
+      "no_speech_prob": 0.2465284764766693,
+      "words": [
+        {
+          "start": 16.18,
+          "end": 16.44,
+          "word": "我",
+          "probability": 0.9876842498779297
+        },
+        {
+          "start": 16.44,
+          "end": 16.56,
+          "word": "正",
+          "probability": 0.4178244471549988
+        },
+        {
+          "start": 16.56,
+          "end": 16.74,
+          "word": "要",
+          "probability": 0.9962491393089294
+        },
+        {
+          "start": 16.74,
+          "end": 16.9,
+          "word": "给",
+          "probability": 0.9909237027168274
+        },
+        {
+          "start": 16.9,
+          "end": 17.2,
+          "word": "大家",
+          "probability": 0.9995680451393127
+        },
+        {
+          "start": 17.2,
+          "end": 17.46,
+          "word": "发",
+          "probability": 0.992374837398529
+        },
+        {
+          "start": 17.46,
+          "end": 17.66,
+          "word": "邮",
+          "probability": 0.9967378973960876
+        },
+        {
+          "start": 17.66,
+          "end": 17.88,
+          "word": "件。",
+          "probability": 0.9983318448066711
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 19.0,
+      "end": 24.02,
+      "text": "开会的时候,我们用会议室的电脑,还是自己的笔记本电脑?",
+      "tokens": [
+        51314,
+        18937,
+        12949,
+        49873,
+        11,
+        15003,
+        9254,
+        12949,
+        7422,
+        106,
+        2415,
+        97,
+        1546,
+        42182,
+        27067,
+        239,
+        11,
+        45726,
+        17645,
+        1546,
+        5437,
+        242,
+        34756,
+        8802,
+        42182,
+        27067,
+        239,
+        30,
+        51564
+      ],
+      "avg_logprob": -0.13385635260187212,
+      "compression_ratio": 1.375,
+      "no_speech_prob": 0.2465284764766693,
+      "words": [
+        {
+          "start": 19.0,
+          "end": 19.28,
+          "word": "开",
+          "probability": 0.991224467754364
+        },
+        {
+          "start": 19.28,
+          "end": 19.5,
+          "word": "会",
+          "probability": 0.9990200996398926
+        },
+        {
+          "start": 19.5,
+          "end": 19.92,
+          "word": "的时候,",
+          "probability": 0.9867479801177979
+        },
+        {
+          "start": 20.38,
+          "end": 20.52,
+          "word": "我们",
+          "probability": 0.9835351705551147
+        },
+        {
+          "start": 20.52,
+          "end": 20.78,
+          "word": "用",
+          "probability": 0.9952274560928345
+        },
+        {
+          "start": 20.78,
+          "end": 21.0,
+          "word": "会",
+          "probability": 0.9965981841087341
+        },
+        {
+          "start": 21.0,
+          "end": 21.16,
+          "word": "议",
+          "probability": 0.9993093013763428
+        },
+        {
+          "start": 21.16,
+          "end": 21.36,
+          "word": "室",
+          "probability": 0.8153827488422394
+        },
+        {
+          "start": 21.36,
+          "end": 21.5,
+          "word": "的",
+          "probability": 0.9967827796936035
+        },
+        {
+          "start": 21.5,
+          "end": 21.66,
+          "word": "电",
+          "probability": 0.9952338337898254
+        },
+        {
+          "start": 21.66,
+          "end": 21.98,
+          "word": "脑,",
+          "probability": 0.9985321760177612
+        },
+        {
+          "start": 22.1,
+          "end": 22.32,
+          "word": "还是",
+          "probability": 0.9887056946754456
+        },
+        {
+          "start": 22.32,
+          "end": 22.74,
+          "word": "自己",
+          "probability": 0.9956551790237427
+        },
+        {
+          "start": 22.74,
+          "end": 23.0,
+          "word": "的",
+          "probability": 0.9986587762832642
+        },
+        {
+          "start": 23.0,
+          "end": 23.2,
+          "word": "笔",
+          "probability": 0.9976630806922913
+        },
+        {
+          "start": 23.2,
+          "end": 23.38,
+          "word": "记",
+          "probability": 0.9563688039779663
+        },
+        {
+          "start": 23.38,
+          "end": 23.56,
+          "word": "本",
+          "probability": 0.9982628226280212
+        },
+        {
+          "start": 23.56,
+          "end": 23.78,
+          "word": "电",
+          "probability": 0.9951260685920715
+        },
+        {
+          "start": 23.78,
+          "end": 24.02,
+          "word": "脑?",
+          "probability": 0.9998959302902222
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 24.94,
+      "end": 28.18,
+      "text": "会议室的电脑或者自己的电脑都可以。",
+      "tokens": [
+        51564,
+        12949,
+        7422,
+        106,
+        2415,
+        97,
+        1546,
+        42182,
+        27067,
+        239,
+        31148,
+        17645,
+        1546,
+        42182,
+        27067,
+        239,
+        7182,
+        6723,
+        1543,
+        51814
+      ],
+      "avg_logprob": -0.13385635260187212,
+      "compression_ratio": 1.375,
+      "no_speech_prob": 0.2465284764766693,
+      "words": [
+        {
+          "start": 24.94,
+          "end": 25.36,
+          "word": "会",
+          "probability": 0.9967442750930786
+        },
+        {
+          "start": 25.36,
+          "end": 25.5,
+          "word": "议",
+          "probability": 0.9996731579303741
+        },
+        {
+          "start": 25.5,
+          "end": 25.68,
+          "word": "室",
+          "probability": 0.9996986985206604
+        },
+        {
+          "start": 25.68,
+          "end": 25.82,
+          "word": "的",
+          "probability": 0.9973548650741577
+        },
+        {
+          "start": 25.82,
+          "end": 26.02,
+          "word": "电",
+          "probability": 0.9966540336608887
+        },
+        {
+          "start": 26.02,
+          "end": 26.26,
+          "word": "脑",
+          "probability": 0.9999292492866516
+        },
+        {
+          "start": 26.26,
+          "end": 26.5,
+          "word": "或者",
+          "probability": 0.7055049538612366
+        },
+        {
+          "start": 26.5,
+          "end": 26.88,
+          "word": "自己",
+          "probability": 0.9972733855247498
+        },
+        {
+          "start": 26.88,
+          "end": 27.14,
+          "word": "的",
+          "probability": 0.9990590214729309
+        },
+        {
+          "start": 27.14,
+          "end": 27.32,
+          "word": "电",
+          "probability": 0.9984878301620483
+        },
+        {
+          "start": 27.32,
+          "end": 27.56,
+          "word": "脑",
+          "probability": 0.9999447464942932
+        },
+        {
+          "start": 27.56,
+          "end": 27.8,
+          "word": "都",
+          "probability": 0.9725553393363953
+        },
+        {
+          "start": 27.8,
+          "end": 28.18,
+          "word": "可以。",
+          "probability": 0.9982181191444397
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2818,
+      "start": 29.06,
+      "end": 33.64,
+      "text": "那到時候咱們早點過去 你幫我把電腦接好吧",
+      "tokens": [
+        50364,
+        4184,
+        4511,
+        14010,
+        8975,
+        109,
+        4623,
+        21176,
+        8216,
+        36910,
+        10930,
+        32187,
+        1654,
+        16075,
+        20545,
+        21184,
+        99,
+        14468,
+        2131,
+        6062,
+        50664
+      ],
+      "avg_logprob": -0.2138225409117612,
+      "compression_ratio": 0.8405797101449275,
+      "no_speech_prob": 0.13965196907520294,
+      "words": [
+        {
+          "start": 29.06,
+          "end": 29.5,
+          "word": "那",
+          "probability": 0.8549448847770691
+        },
+        {
+          "start": 29.5,
+          "end": 29.68,
+          "word": "到",
+          "probability": 0.9774355292320251
+        },
+        {
+          "start": 29.68,
+          "end": 30.0,
+          "word": "時候",
+          "probability": 0.941747784614563
+        },
+        {
+          "start": 30.0,
+          "end": 30.3,
+          "word": "咱",
+          "probability": 0.9616763889789581
+        },
+        {
+          "start": 30.3,
+          "end": 30.44,
+          "word": "們",
+          "probability": 0.9945425987243652
+        },
+        {
+          "start": 30.44,
+          "end": 30.62,
+          "word": "早",
+          "probability": 0.9938748478889465
+        },
+        {
+          "start": 30.62,
+          "end": 30.84,
+          "word": "點",
+          "probability": 0.9965227842330933
+        },
+        {
+          "start": 30.84,
+          "end": 31.22,
+          "word": "過去",
+          "probability": 0.939899206161499
+        },
+        {
+          "start": 31.22,
+          "end": 31.82,
+          "word": " 你",
+          "probability": 0.3871544301509857
+        },
+        {
+          "start": 31.82,
+          "end": 32.0,
+          "word": "幫",
+          "probability": 0.9912556409835815
+        },
+        {
+          "start": 32.0,
+          "end": 32.22,
+          "word": "我",
+          "probability": 0.9989562034606934
+        },
+        {
+          "start": 32.22,
+          "end": 32.42,
+          "word": "把",
+          "probability": 0.9813405275344849
+        },
+        {
+          "start": 32.42,
+          "end": 32.64,
+          "word": "電",
+          "probability": 0.9964960217475891
+        },
+        {
+          "start": 32.64,
+          "end": 32.94,
+          "word": "腦",
+          "probability": 0.9996341466903687
+        },
+        {
+          "start": 32.94,
+          "end": 33.12,
+          "word": "接",
+          "probability": 0.9661588072776794
+        },
+        {
+          "start": 33.12,
+          "end": 33.44,
+          "word": "好",
+          "probability": 0.7394302487373352
+        },
+        {
+          "start": 33.44,
+          "end": 33.64,
+          "word": "吧",
+          "probability": 0.91889488697052
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 7.5062731589999885,
+  "realTimeFactor": 0.21588982021340816,
+  "observationChecks": {
+    "rawWordCount": 96,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

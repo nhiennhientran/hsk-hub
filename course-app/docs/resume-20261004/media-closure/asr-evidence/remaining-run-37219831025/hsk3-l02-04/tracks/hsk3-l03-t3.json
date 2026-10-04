@@ -1,0 +1,894 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l03:audio3",
+    "level": 3,
+    "lesson": 3,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk3/audio/3-3.mp3",
+    "sha256": "c33438c395424a4ea60448f8ead232968431656cce80d5d45452f265efe4d40a",
+    "bytes": 534461,
+    "manifestDurationSeconds": 30.866,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 494864,
+      "durationSeconds": 30.929,
+      "sha256": "58a54d445f8e644a48e66ad29263fea469e49ede1c1fcb3272b3939e89939b3b"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 30.929,
+    "duration_after_vad": 30.929,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.8400000000000005,
+      "end": 3.98,
+      "text": "我今天早上来的时候,灯还开着。",
+      "tokens": [
+        50364,
+        1654,
+        12074,
+        21176,
+        5708,
+        6912,
+        49873,
+        11,
+        13290,
+        107,
+        14852,
+        18937,
+        20708,
+        1543,
+        50564
+      ],
+      "avg_logprob": -0.08861168859792608,
+      "compression_ratio": 1.2836538461538463,
+      "no_speech_prob": 0.07508659362792969,
+      "words": [
+        {
+          "start": 0.8400000000000005,
+          "end": 1.32,
+          "word": "我",
+          "probability": 0.4052375257015228
+        },
+        {
+          "start": 1.32,
+          "end": 1.54,
+          "word": "今天",
+          "probability": 0.9155822992324829
+        },
+        {
+          "start": 1.54,
+          "end": 1.82,
+          "word": "早",
+          "probability": 0.997107207775116
+        },
+        {
+          "start": 1.82,
+          "end": 2.04,
+          "word": "上",
+          "probability": 0.9921473860740662
+        },
+        {
+          "start": 2.04,
+          "end": 2.26,
+          "word": "来",
+          "probability": 0.49913376569747925
+        },
+        {
+          "start": 2.26,
+          "end": 2.7,
+          "word": "的时候,",
+          "probability": 0.9202601909637451
+        },
+        {
+          "start": 3.18,
+          "end": 3.3,
+          "word": "灯",
+          "probability": 0.9654338359832764
+        },
+        {
+          "start": 3.3,
+          "end": 3.5,
+          "word": "还",
+          "probability": 0.9938739538192749
+        },
+        {
+          "start": 3.5,
+          "end": 3.72,
+          "word": "开",
+          "probability": 0.9920130372047424
+        },
+        {
+          "start": 3.72,
+          "end": 3.98,
+          "word": "着。",
+          "probability": 0.9989972710609436
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.68,
+      "end": 9.14,
+      "text": "我这几天忙坏了,可能走的时候忘关了。",
+      "tokens": [
+        50564,
+        1654,
+        5562,
+        6336,
+        254,
+        6135,
+        48839,
+        14872,
+        237,
+        2289,
+        11,
+        16657,
+        9575,
+        49873,
+        26677,
+        28053,
+        2289,
+        1543,
+        50814
+      ],
+      "avg_logprob": -0.08861168859792608,
+      "compression_ratio": 1.2836538461538463,
+      "no_speech_prob": 0.07508659362792969,
+      "words": [
+        {
+          "start": 4.68,
+          "end": 5.1,
+          "word": "我",
+          "probability": 0.8239800333976746
+        },
+        {
+          "start": 5.1,
+          "end": 5.28,
+          "word": "这",
+          "probability": 0.9986037611961365
+        },
+        {
+          "start": 5.28,
+          "end": 5.44,
+          "word": "几",
+          "probability": 0.9984482228755951
+        },
+        {
+          "start": 5.44,
+          "end": 5.68,
+          "word": "天",
+          "probability": 0.9983071088790894
+        },
+        {
+          "start": 5.68,
+          "end": 5.92,
+          "word": "忙",
+          "probability": 0.9735814929008484
+        },
+        {
+          "start": 5.92,
+          "end": 6.26,
+          "word": "坏",
+          "probability": 0.9981085360050201
+        },
+        {
+          "start": 6.26,
+          "end": 6.54,
+          "word": "了,",
+          "probability": 0.9934146404266357
+        },
+        {
+          "start": 7.06,
+          "end": 7.38,
+          "word": "可能",
+          "probability": 0.9571605920791626
+        },
+        {
+          "start": 7.38,
+          "end": 7.74,
+          "word": "走",
+          "probability": 0.9938814640045166
+        },
+        {
+          "start": 7.74,
+          "end": 8.18,
+          "word": "的时候",
+          "probability": 0.9862788319587708
+        },
+        {
+          "start": 8.18,
+          "end": 8.62,
+          "word": "忘",
+          "probability": 0.6511156558990479
+        },
+        {
+          "start": 8.62,
+          "end": 8.84,
+          "word": "关",
+          "probability": 0.8828476071357727
+        },
+        {
+          "start": 8.84,
+          "end": 9.14,
+          "word": "了。",
+          "probability": 0.9801138043403625
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 10.260000000000002,
+      "end": 14.1,
+      "text": "冰箱不能用,这些吃的东西放在哪儿?",
+      "tokens": [
+        50814,
+        5676,
+        108,
+        11249,
+        109,
+        28590,
+        9254,
+        11,
+        5562,
+        13824,
+        10123,
+        1546,
+        38409,
+        16220,
+        12744,
+        3581,
+        17028,
+        22933,
+        30,
+        51064
+      ],
+      "avg_logprob": -0.08861168859792608,
+      "compression_ratio": 1.2836538461538463,
+      "no_speech_prob": 0.07508659362792969,
+      "words": [
+        {
+          "start": 10.260000000000002,
+          "end": 10.74,
+          "word": "冰",
+          "probability": 0.9914419054985046
+        },
+        {
+          "start": 10.74,
+          "end": 10.94,
+          "word": "箱",
+          "probability": 0.9919100701808929
+        },
+        {
+          "start": 10.94,
+          "end": 11.18,
+          "word": "不能",
+          "probability": 0.9907715320587158
+        },
+        {
+          "start": 11.18,
+          "end": 11.5,
+          "word": "用,",
+          "probability": 0.9979433417320251
+        },
+        {
+          "start": 12.06,
+          "end": 12.2,
+          "word": "这",
+          "probability": 0.9936569333076477
+        },
+        {
+          "start": 12.2,
+          "end": 12.32,
+          "word": "些",
+          "probability": 0.9995470643043518
+        },
+        {
+          "start": 12.32,
+          "end": 12.54,
+          "word": "吃",
+          "probability": 0.957996129989624
+        },
+        {
+          "start": 12.54,
+          "end": 12.68,
+          "word": "的",
+          "probability": 0.9975277781486511
+        },
+        {
+          "start": 12.68,
+          "end": 12.84,
+          "word": "东",
+          "probability": 0.9970455765724182
+        },
+        {
+          "start": 12.84,
+          "end": 13.04,
+          "word": "西",
+          "probability": 0.9997877478599548
+        },
+        {
+          "start": 13.04,
+          "end": 13.26,
+          "word": "放",
+          "probability": 0.983290433883667
+        },
+        {
+          "start": 13.26,
+          "end": 13.44,
+          "word": "在",
+          "probability": 0.9846478700637817
+        },
+        {
+          "start": 13.44,
+          "end": 13.64,
+          "word": "哪",
+          "probability": 0.996035635471344
+        },
+        {
+          "start": 13.64,
+          "end": 14.1,
+          "word": "儿?",
+          "probability": 0.8525941371917725
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 14.82,
+      "end": 18.66,
+      "text": "不可能吧,冰箱是新买的,我来看看。",
+      "tokens": [
+        51064,
+        1960,
+        16657,
+        6062,
+        11,
+        5676,
+        108,
+        11249,
+        109,
+        1541,
+        12560,
+        2930,
+        108,
+        1546,
+        11,
+        1654,
+        6912,
+        22884,
+        1543,
+        51314
+      ],
+      "avg_logprob": -0.08861168859792608,
+      "compression_ratio": 1.2836538461538463,
+      "no_speech_prob": 0.07508659362792969,
+      "words": [
+        {
+          "start": 14.82,
+          "end": 15.04,
+          "word": "不",
+          "probability": 0.9919849038124084
+        },
+        {
+          "start": 15.04,
+          "end": 15.36,
+          "word": "可能",
+          "probability": 0.9948921203613281
+        },
+        {
+          "start": 15.36,
+          "end": 15.72,
+          "word": "吧,",
+          "probability": 0.9157042503356934
+        },
+        {
+          "start": 16.3,
+          "end": 16.48,
+          "word": "冰",
+          "probability": 0.9981675446033478
+        },
+        {
+          "start": 16.48,
+          "end": 16.68,
+          "word": "箱",
+          "probability": 0.9998950064182281
+        },
+        {
+          "start": 16.68,
+          "end": 16.86,
+          "word": "是",
+          "probability": 0.9983198046684265
+        },
+        {
+          "start": 16.86,
+          "end": 17.06,
+          "word": "新",
+          "probability": 0.9795204401016235
+        },
+        {
+          "start": 17.06,
+          "end": 17.26,
+          "word": "买",
+          "probability": 0.9987878501415253
+        },
+        {
+          "start": 17.26,
+          "end": 17.48,
+          "word": "的,",
+          "probability": 0.9967259168624878
+        },
+        {
+          "start": 18.02,
+          "end": 18.2,
+          "word": "我",
+          "probability": 0.9929044842720032
+        },
+        {
+          "start": 18.2,
+          "end": 18.36,
+          "word": "来",
+          "probability": 0.9988265633583069
+        },
+        {
+          "start": 18.36,
+          "end": 18.66,
+          "word": "看看。",
+          "probability": 0.9926062822341919
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 20.06,
+      "end": 21.34,
+      "text": "洗衣机也坏了吗?",
+      "tokens": [
+        51314,
+        43252,
+        9890,
+        96,
+        37960,
+        6404,
+        14872,
+        237,
+        2289,
+        14769,
+        30,
+        51414
+      ],
+      "avg_logprob": -0.08861168859792608,
+      "compression_ratio": 1.2836538461538463,
+      "no_speech_prob": 0.07508659362792969,
+      "words": [
+        {
+          "start": 20.06,
+          "end": 20.26,
+          "word": "洗",
+          "probability": 0.9931496977806091
+        },
+        {
+          "start": 20.26,
+          "end": 20.42,
+          "word": "衣",
+          "probability": 0.996498703956604
+        },
+        {
+          "start": 20.42,
+          "end": 20.56,
+          "word": "机",
+          "probability": 0.9931754469871521
+        },
+        {
+          "start": 20.56,
+          "end": 20.78,
+          "word": "也",
+          "probability": 0.9907017946243286
+        },
+        {
+          "start": 20.78,
+          "end": 20.98,
+          "word": "坏",
+          "probability": 0.9997825920581818
+        },
+        {
+          "start": 20.98,
+          "end": 21.14,
+          "word": "了",
+          "probability": 0.9892402291297913
+        },
+        {
+          "start": 21.14,
+          "end": 21.34,
+          "word": "吗?",
+          "probability": 0.9644367098808289
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 22.32,
+      "end": 27.16,
+      "text": "没坏,但是卫生间没打扫好,还不能洗衣服。",
+      "tokens": [
+        51414,
+        10062,
+        14872,
+        237,
+        11,
+        11189,
+        5322,
+        104,
+        8244,
+        31685,
+        10062,
+        12467,
+        3416,
+        104,
+        2131,
+        11,
+        14852,
+        28590,
+        43252,
+        9890,
+        96,
+        27408,
+        1543,
+        51714
+      ],
+      "avg_logprob": -0.08861168859792608,
+      "compression_ratio": 1.2836538461538463,
+      "no_speech_prob": 0.07508659362792969,
+      "words": [
+        {
+          "start": 22.32,
+          "end": 22.58,
+          "word": "没",
+          "probability": 0.992259681224823
+        },
+        {
+          "start": 22.58,
+          "end": 22.82,
+          "word": "坏,",
+          "probability": 0.9999043047428131
+        },
+        {
+          "start": 23.42,
+          "end": 23.8,
+          "word": "但是",
+          "probability": 0.9838305115699768
+        },
+        {
+          "start": 23.8,
+          "end": 24.02,
+          "word": "卫",
+          "probability": 0.9849985539913177
+        },
+        {
+          "start": 24.02,
+          "end": 24.2,
+          "word": "生",
+          "probability": 0.9910127520561218
+        },
+        {
+          "start": 24.2,
+          "end": 24.44,
+          "word": "间",
+          "probability": 0.9948815107345581
+        },
+        {
+          "start": 24.44,
+          "end": 24.82,
+          "word": "没",
+          "probability": 0.9754143357276917
+        },
+        {
+          "start": 24.82,
+          "end": 25.02,
+          "word": "打",
+          "probability": 0.9912680387496948
+        },
+        {
+          "start": 25.02,
+          "end": 25.16,
+          "word": "扫",
+          "probability": 0.9886498153209686
+        },
+        {
+          "start": 25.16,
+          "end": 25.5,
+          "word": "好,",
+          "probability": 0.995477020740509
+        },
+        {
+          "start": 25.92,
+          "end": 26.12,
+          "word": "还",
+          "probability": 0.990978479385376
+        },
+        {
+          "start": 26.12,
+          "end": 26.42,
+          "word": "不能",
+          "probability": 0.9958580136299133
+        },
+        {
+          "start": 26.42,
+          "end": 26.7,
+          "word": "洗",
+          "probability": 0.9944044351577759
+        },
+        {
+          "start": 26.7,
+          "end": 26.96,
+          "word": "衣",
+          "probability": 0.9995823502540588
+        },
+        {
+          "start": 26.96,
+          "end": 27.16,
+          "word": "服。",
+          "probability": 0.9923945665359497
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2716,
+      "start": 27.68,
+      "end": 30.04,
+      "text": "星期天 我們真的能搬家嗎?",
+      "tokens": [
+        50364,
+        20682,
+        16786,
+        6135,
+        27338,
+        8034,
+        8225,
+        22220,
+        105,
+        5155,
+        7434,
+        30,
+        50514
+      ],
+      "avg_logprob": -0.22123214496033533,
+      "compression_ratio": 0.7608695652173914,
+      "no_speech_prob": 0.24797822535037994,
+      "words": [
+        {
+          "start": 27.68,
+          "end": 28.14,
+          "word": "星",
+          "probability": 0.8925885558128357
+        },
+        {
+          "start": 28.14,
+          "end": 28.32,
+          "word": "期",
+          "probability": 0.9977284073829651
+        },
+        {
+          "start": 28.32,
+          "end": 28.62,
+          "word": "天",
+          "probability": 0.9895580410957336
+        },
+        {
+          "start": 28.62,
+          "end": 28.92,
+          "word": " 我們",
+          "probability": 0.6904498338699341
+        },
+        {
+          "start": 28.92,
+          "end": 29.18,
+          "word": "真的",
+          "probability": 0.9955552220344543
+        },
+        {
+          "start": 29.18,
+          "end": 29.4,
+          "word": "能",
+          "probability": 0.987059473991394
+        },
+        {
+          "start": 29.4,
+          "end": 29.62,
+          "word": "搬",
+          "probability": 0.9395778179168701
+        },
+        {
+          "start": 29.62,
+          "end": 29.82,
+          "word": "家",
+          "probability": 0.9973884224891663
+        },
+        {
+          "start": 29.82,
+          "end": 30.04,
+          "word": "嗎?",
+          "probability": 0.9349972009658813
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 4.745667759000014,
+  "realTimeFactor": 0.1534374780626601,
+  "observationChecks": {
+    "rawWordCount": 80,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

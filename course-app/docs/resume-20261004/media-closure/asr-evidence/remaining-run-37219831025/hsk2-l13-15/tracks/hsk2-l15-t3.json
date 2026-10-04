@@ -1,0 +1,1132 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l15:audio3",
+    "level": 2,
+    "lesson": 15,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/15-3.mp3",
+    "sha256": "6e8d974f339ed60c430c062208f58d6d731d25d50f1dfb22b2416febdf3895d2",
+    "bytes": 1174598,
+    "manifestDurationSeconds": 46.949333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 751104,
+      "durationSeconds": 46.944,
+      "sha256": "7b8f33b00ae2ab56c3fa0fb41a7a0c144c0b69506798364e91bf7fd1047e37e2"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 46.944,
+    "duration_after_vad": 46.944,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.8199999999999985,
+      "end": 5.12,
+      "text": "考完试了,我现在可以出国旅游了。",
+      "tokens": [
+        50364,
+        26504,
+        14128,
+        5233,
+        243,
+        2289,
+        11,
+        1654,
+        25040,
+        6723,
+        7781,
+        16086,
+        4479,
+        227,
+        9592,
+        116,
+        2289,
+        1543,
+        50664
+      ],
+      "avg_logprob": -0.13718816256800362,
+      "compression_ratio": 1.2569832402234637,
+      "no_speech_prob": 0.11416934430599213,
+      "words": [
+        {
+          "start": 0.8199999999999985,
+          "end": 1.42,
+          "word": "考",
+          "probability": 0.1124834343791008
+        },
+        {
+          "start": 1.42,
+          "end": 1.64,
+          "word": "完",
+          "probability": 0.9913621544837952
+        },
+        {
+          "start": 1.64,
+          "end": 1.9,
+          "word": "试",
+          "probability": 0.6990747451782227
+        },
+        {
+          "start": 1.9,
+          "end": 2.18,
+          "word": "了,",
+          "probability": 0.9898199439048767
+        },
+        {
+          "start": 2.64,
+          "end": 2.9,
+          "word": "我",
+          "probability": 0.9215400815010071
+        },
+        {
+          "start": 2.9,
+          "end": 3.1,
+          "word": "现在",
+          "probability": 0.9907180666923523
+        },
+        {
+          "start": 3.1,
+          "end": 3.8,
+          "word": "可以",
+          "probability": 0.9925732612609863
+        },
+        {
+          "start": 3.8,
+          "end": 4.1,
+          "word": "出",
+          "probability": 0.996436357498169
+        },
+        {
+          "start": 4.1,
+          "end": 4.34,
+          "word": "国",
+          "probability": 0.9953228831291199
+        },
+        {
+          "start": 4.34,
+          "end": 4.64,
+          "word": "旅",
+          "probability": 0.9981943368911743
+        },
+        {
+          "start": 4.64,
+          "end": 4.9,
+          "word": "游",
+          "probability": 0.9981151819229126
+        },
+        {
+          "start": 4.9,
+          "end": 5.12,
+          "word": "了。",
+          "probability": 0.9658908247947693
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.92,
+      "end": 7.62,
+      "text": "你要去哪儿?",
+      "tokens": [
+        50664,
+        32085,
+        6734,
+        17028,
+        22933,
+        30,
+        50764
+      ],
+      "avg_logprob": -0.13718816256800362,
+      "compression_ratio": 1.2569832402234637,
+      "no_speech_prob": 0.11416934430599213,
+      "words": [
+        {
+          "start": 5.92,
+          "end": 6.52,
+          "word": "你要",
+          "probability": 0.8379647731781006
+        },
+        {
+          "start": 6.52,
+          "end": 6.82,
+          "word": "去",
+          "probability": 0.9946449995040894
+        },
+        {
+          "start": 6.82,
+          "end": 7.04,
+          "word": "哪",
+          "probability": 0.9964247345924377
+        },
+        {
+          "start": 7.04,
+          "end": 7.62,
+          "word": "儿?",
+          "probability": 0.7922444939613342
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 8.36,
+      "end": 10.4,
+      "text": "我要再去一次北京。",
+      "tokens": [
+        50764,
+        32186,
+        8623,
+        6734,
+        27505,
+        26668,
+        31375,
+        1543,
+        50914
+      ],
+      "avg_logprob": -0.13718816256800362,
+      "compression_ratio": 1.2569832402234637,
+      "no_speech_prob": 0.11416934430599213,
+      "words": [
+        {
+          "start": 8.36,
+          "end": 8.8,
+          "word": "我要",
+          "probability": 0.9782654643058777
+        },
+        {
+          "start": 8.8,
+          "end": 9.2,
+          "word": "再",
+          "probability": 0.9833903908729553
+        },
+        {
+          "start": 9.2,
+          "end": 9.54,
+          "word": "去",
+          "probability": 0.9915728569030762
+        },
+        {
+          "start": 9.54,
+          "end": 9.86,
+          "word": "一次",
+          "probability": 0.9869793653488159
+        },
+        {
+          "start": 9.86,
+          "end": 10.08,
+          "word": "北",
+          "probability": 0.9965711832046509
+        },
+        {
+          "start": 10.08,
+          "end": 10.4,
+          "word": "京。",
+          "probability": 0.9994761347770691
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 11.58,
+      "end": 13.22,
+      "text": "为什么还去北京?",
+      "tokens": [
+        50914,
+        31006,
+        14852,
+        6734,
+        26668,
+        31375,
+        30,
+        51064
+      ],
+      "avg_logprob": -0.13718816256800362,
+      "compression_ratio": 1.2569832402234637,
+      "no_speech_prob": 0.11416934430599213,
+      "words": [
+        {
+          "start": 11.58,
+          "end": 12.18,
+          "word": "为什么",
+          "probability": 0.9497716426849365
+        },
+        {
+          "start": 12.18,
+          "end": 12.56,
+          "word": "还",
+          "probability": 0.8740244507789612
+        },
+        {
+          "start": 12.56,
+          "end": 12.78,
+          "word": "去",
+          "probability": 0.982386589050293
+        },
+        {
+          "start": 12.78,
+          "end": 12.98,
+          "word": "北",
+          "probability": 0.9992021918296814
+        },
+        {
+          "start": 12.98,
+          "end": 13.22,
+          "word": "京?",
+          "probability": 0.9998964071273804
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 14.22,
+      "end": 18.6,
+      "text": "因为我想再吃一次烤鸭,再喝一次奶茶,",
+      "tokens": [
+        51064,
+        34627,
+        25246,
+        8623,
+        10123,
+        27505,
+        23661,
+        97,
+        165,
+        116,
+        255,
+        11,
+        8623,
+        26784,
+        27505,
+        42525,
+        43499,
+        11,
+        51314
+      ],
+      "avg_logprob": -0.13718816256800362,
+      "compression_ratio": 1.2569832402234637,
+      "no_speech_prob": 0.11416934430599213,
+      "words": [
+        {
+          "start": 14.22,
+          "end": 14.7,
+          "word": "因为",
+          "probability": 0.9856597185134888
+        },
+        {
+          "start": 14.7,
+          "end": 15.22,
+          "word": "我想",
+          "probability": 0.9535804390907288
+        },
+        {
+          "start": 15.22,
+          "end": 15.62,
+          "word": "再",
+          "probability": 0.9929543137550354
+        },
+        {
+          "start": 15.62,
+          "end": 15.88,
+          "word": "吃",
+          "probability": 0.5505639314651489
+        },
+        {
+          "start": 15.88,
+          "end": 16.12,
+          "word": "一次",
+          "probability": 0.9946674108505249
+        },
+        {
+          "start": 16.12,
+          "end": 16.42,
+          "word": "烤",
+          "probability": 0.8672585189342499
+        },
+        {
+          "start": 16.42,
+          "end": 16.72,
+          "word": "鸭,",
+          "probability": 0.8934974273045858
+        },
+        {
+          "start": 17.26,
+          "end": 17.4,
+          "word": "再",
+          "probability": 0.9893781542778015
+        },
+        {
+          "start": 17.4,
+          "end": 17.66,
+          "word": "喝",
+          "probability": 0.9990624785423279
+        },
+        {
+          "start": 17.66,
+          "end": 18.02,
+          "word": "一次",
+          "probability": 0.998022198677063
+        },
+        {
+          "start": 18.02,
+          "end": 18.28,
+          "word": "奶",
+          "probability": 0.9896486401557922
+        },
+        {
+          "start": 18.28,
+          "end": 18.6,
+          "word": "茶,",
+          "probability": 0.9977400302886963
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 19.2,
+      "end": 21.98,
+      "text": "再去北京大学看一次电影。",
+      "tokens": [
+        51314,
+        8623,
+        6734,
+        26668,
+        31375,
+        3582,
+        29618,
+        4200,
+        27505,
+        42182,
+        16820,
+        1543,
+        51514
+      ],
+      "avg_logprob": -0.13718816256800362,
+      "compression_ratio": 1.2569832402234637,
+      "no_speech_prob": 0.11416934430599213,
+      "words": [
+        {
+          "start": 19.2,
+          "end": 19.42,
+          "word": "再",
+          "probability": 0.995358407497406
+        },
+        {
+          "start": 19.42,
+          "end": 19.66,
+          "word": "去",
+          "probability": 0.9977942705154419
+        },
+        {
+          "start": 19.66,
+          "end": 19.84,
+          "word": "北",
+          "probability": 0.999153733253479
+        },
+        {
+          "start": 19.84,
+          "end": 20.04,
+          "word": "京",
+          "probability": 0.9996569156646729
+        },
+        {
+          "start": 20.04,
+          "end": 20.28,
+          "word": "大",
+          "probability": 0.9978253841400146
+        },
+        {
+          "start": 20.28,
+          "end": 20.54,
+          "word": "学",
+          "probability": 0.9990717172622681
+        },
+        {
+          "start": 20.54,
+          "end": 20.92,
+          "word": "看",
+          "probability": 0.9568325281143188
+        },
+        {
+          "start": 20.92,
+          "end": 21.34,
+          "word": "一次",
+          "probability": 0.9894788861274719
+        },
+        {
+          "start": 21.34,
+          "end": 21.64,
+          "word": "电",
+          "probability": 0.9981391429901123
+        },
+        {
+          "start": 21.64,
+          "end": 21.98,
+          "word": "影。",
+          "probability": 0.9996902942657471
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 23.76,
+      "end": 25.94,
+      "text": "你想做的事情很多啊?",
+      "tokens": [
+        51514,
+        38386,
+        10907,
+        1546,
+        24675,
+        20778,
+        4905,
+        30,
+        51714
+      ],
+      "avg_logprob": -0.13718816256800362,
+      "compression_ratio": 1.2569832402234637,
+      "no_speech_prob": 0.11416934430599213,
+      "words": [
+        {
+          "start": 23.76,
+          "end": 24.36,
+          "word": "你想",
+          "probability": 0.9524677395820618
+        },
+        {
+          "start": 24.36,
+          "end": 24.64,
+          "word": "做",
+          "probability": 0.9968543648719788
+        },
+        {
+          "start": 24.64,
+          "end": 24.78,
+          "word": "的",
+          "probability": 0.9964461922645569
+        },
+        {
+          "start": 24.78,
+          "end": 25.06,
+          "word": "事情",
+          "probability": 0.9951960444450378
+        },
+        {
+          "start": 25.06,
+          "end": 25.62,
+          "word": "很多",
+          "probability": 0.934723436832428
+        },
+        {
+          "start": 25.62,
+          "end": 25.94,
+          "word": "啊?",
+          "probability": 0.8777996301651001
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2594,
+      "start": 27.2,
+      "end": 32.22,
+      "text": "是啊,你看,我还在网上买好仪合园的门票了呢。",
+      "tokens": [
+        50364,
+        39282,
+        11,
+        16529,
+        11,
+        1654,
+        14852,
+        3581,
+        16469,
+        239,
+        5708,
+        2930,
+        108,
+        2131,
+        1550,
+        103,
+        14245,
+        3919,
+        255,
+        1546,
+        8259,
+        101,
+        41925,
+        2289,
+        6240,
+        1543,
+        50684
+      ],
+      "avg_logprob": -0.20239835900145692,
+      "compression_ratio": 1.16875,
+      "no_speech_prob": 0.09929460287094116,
+      "words": [
+        {
+          "start": 27.2,
+          "end": 27.64,
+          "word": "是啊,",
+          "probability": 0.583956778049469
+        },
+        {
+          "start": 28.1,
+          "end": 28.32,
+          "word": "你看,",
+          "probability": 0.9224539399147034
+        },
+        {
+          "start": 29.12,
+          "end": 29.28,
+          "word": "我",
+          "probability": 0.9492998719215393
+        },
+        {
+          "start": 29.28,
+          "end": 29.44,
+          "word": "还",
+          "probability": 0.7957696318626404
+        },
+        {
+          "start": 29.44,
+          "end": 29.6,
+          "word": "在",
+          "probability": 0.9828406572341919
+        },
+        {
+          "start": 29.6,
+          "end": 29.78,
+          "word": "网",
+          "probability": 0.99791020154953
+        },
+        {
+          "start": 29.78,
+          "end": 30.12,
+          "word": "上",
+          "probability": 0.9982207417488098
+        },
+        {
+          "start": 30.12,
+          "end": 30.38,
+          "word": "买",
+          "probability": 0.9949943423271179
+        },
+        {
+          "start": 30.38,
+          "end": 30.68,
+          "word": "好",
+          "probability": 0.9969320297241211
+        },
+        {
+          "start": 30.68,
+          "end": 30.88,
+          "word": "仪",
+          "probability": 0.6798265427350998
+        },
+        {
+          "start": 30.88,
+          "end": 31.02,
+          "word": "合",
+          "probability": 0.5308998227119446
+        },
+        {
+          "start": 31.02,
+          "end": 31.18,
+          "word": "园",
+          "probability": 0.8851594030857086
+        },
+        {
+          "start": 31.18,
+          "end": 31.36,
+          "word": "的",
+          "probability": 0.9980827569961548
+        },
+        {
+          "start": 31.36,
+          "end": 31.58,
+          "word": "门",
+          "probability": 0.9866229295730591
+        },
+        {
+          "start": 31.58,
+          "end": 31.84,
+          "word": "票",
+          "probability": 0.9977789521217346
+        },
+        {
+          "start": 31.84,
+          "end": 32.04,
+          "word": "了",
+          "probability": 0.9751519560813904
+        },
+        {
+          "start": 32.04,
+          "end": 32.22,
+          "word": "呢。",
+          "probability": 0.9602882862091064
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 2594,
+      "start": 33.88,
+      "end": 40.0,
+      "text": "我的高中同学就在仪合园上班,可以让他给你好好介绍介绍。",
+      "tokens": [
+        50684,
+        14200,
+        12979,
+        5975,
+        13089,
+        29618,
+        3111,
+        3581,
+        1550,
+        103,
+        14245,
+        3919,
+        255,
+        5708,
+        44695,
+        11,
+        6723,
+        33650,
+        5000,
+        23197,
+        26410,
+        2131,
+        30312,
+        10115,
+        235,
+        30312,
+        10115,
+        235,
+        1543,
+        51074
+      ],
+      "avg_logprob": -0.20239835900145692,
+      "compression_ratio": 1.16875,
+      "no_speech_prob": 0.09929460287094116,
+      "words": [
+        {
+          "start": 33.88,
+          "end": 34.32,
+          "word": "我的",
+          "probability": 0.9020793437957764
+        },
+        {
+          "start": 34.32,
+          "end": 34.58,
+          "word": "高",
+          "probability": 0.9979693293571472
+        },
+        {
+          "start": 34.58,
+          "end": 34.76,
+          "word": "中",
+          "probability": 0.9941422343254089
+        },
+        {
+          "start": 34.76,
+          "end": 34.98,
+          "word": "同",
+          "probability": 0.9951600432395935
+        },
+        {
+          "start": 34.98,
+          "end": 35.22,
+          "word": "学",
+          "probability": 0.9983698725700378
+        },
+        {
+          "start": 35.22,
+          "end": 35.5,
+          "word": "就",
+          "probability": 0.9753427505493164
+        },
+        {
+          "start": 35.5,
+          "end": 35.72,
+          "word": "在",
+          "probability": 0.9991963505744934
+        },
+        {
+          "start": 35.72,
+          "end": 35.92,
+          "word": "仪",
+          "probability": 0.9946804940700531
+        },
+        {
+          "start": 35.92,
+          "end": 36.1,
+          "word": "合",
+          "probability": 0.99808669090271
+        },
+        {
+          "start": 36.1,
+          "end": 36.32,
+          "word": "园",
+          "probability": 0.9983687102794647
+        },
+        {
+          "start": 36.32,
+          "end": 36.52,
+          "word": "上",
+          "probability": 0.9995642304420471
+        },
+        {
+          "start": 36.52,
+          "end": 36.72,
+          "word": "班,",
+          "probability": 0.9991138577461243
+        },
+        {
+          "start": 37.36,
+          "end": 37.62,
+          "word": "可以",
+          "probability": 0.9461025595664978
+        },
+        {
+          "start": 37.62,
+          "end": 37.82,
+          "word": "让",
+          "probability": 0.9979462027549744
+        },
+        {
+          "start": 37.82,
+          "end": 38.04,
+          "word": "他",
+          "probability": 0.5507945418357849
+        },
+        {
+          "start": 38.04,
+          "end": 38.24,
+          "word": "给",
+          "probability": 0.993959903717041
+        },
+        {
+          "start": 38.24,
+          "end": 38.64,
+          "word": "你好",
+          "probability": 0.7998397350311279
+        },
+        {
+          "start": 38.64,
+          "end": 39.08,
+          "word": "好",
+          "probability": 0.9864874482154846
+        },
+        {
+          "start": 39.08,
+          "end": 39.4,
+          "word": "介",
+          "probability": 0.9910083413124084
+        },
+        {
+          "start": 39.4,
+          "end": 39.6,
+          "word": "绍",
+          "probability": 0.9991000592708588
+        },
+        {
+          "start": 39.6,
+          "end": 39.78,
+          "word": "介",
+          "probability": 0.9976129531860352
+        },
+        {
+          "start": 39.78,
+          "end": 40.0,
+          "word": "绍。",
+          "probability": 0.9999306797981262
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 10,
+      "seek": 2594,
+      "start": 41.760000000000005,
+      "end": 45.86,
+      "text": "太好了,出门旅游多个朋友多条路。",
+      "tokens": [
+        51074,
+        9455,
+        12621,
+        11,
+        7781,
+        8259,
+        101,
+        4479,
+        227,
+        9592,
+        116,
+        6392,
+        7549,
+        19828,
+        6392,
+        48837,
+        24658,
+        1543,
+        51364
+      ],
+      "avg_logprob": -0.20239835900145692,
+      "compression_ratio": 1.16875,
+      "no_speech_prob": 0.09929460287094116,
+      "words": [
+        {
+          "start": 41.760000000000005,
+          "end": 42.2,
+          "word": "太",
+          "probability": 0.9903477430343628
+        },
+        {
+          "start": 42.2,
+          "end": 42.56,
+          "word": "好了,",
+          "probability": 0.9888082146644592
+        },
+        {
+          "start": 43.2,
+          "end": 43.4,
+          "word": "出",
+          "probability": 0.9958199262619019
+        },
+        {
+          "start": 43.4,
+          "end": 43.58,
+          "word": "门",
+          "probability": 0.9996659457683563
+        },
+        {
+          "start": 43.58,
+          "end": 43.78,
+          "word": "旅",
+          "probability": 0.9966390132904053
+        },
+        {
+          "start": 43.78,
+          "end": 44.04,
+          "word": "游",
+          "probability": 0.9972572922706604
+        },
+        {
+          "start": 44.04,
+          "end": 44.38,
+          "word": "多",
+          "probability": 0.5081884860992432
+        },
+        {
+          "start": 44.38,
+          "end": 44.54,
+          "word": "个",
+          "probability": 0.9933433532714844
+        },
+        {
+          "start": 44.54,
+          "end": 44.92,
+          "word": "朋友",
+          "probability": 0.9994009733200073
+        },
+        {
+          "start": 44.92,
+          "end": 45.34,
+          "word": "多",
+          "probability": 0.833718478679657
+        },
+        {
+          "start": 45.34,
+          "end": 45.58,
+          "word": "条",
+          "probability": 0.9814597368240356
+        },
+        {
+          "start": 45.58,
+          "end": 45.86,
+          "word": "路。",
+          "probability": 0.9990379810333252
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 5.370067460000001,
+  "realTimeFactor": 0.11439305257327882,
+  "observationChecks": {
+    "rawWordCount": 106,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

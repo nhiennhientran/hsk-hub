@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l13:audio6",
+    "level": 3,
+    "lesson": 13,
+    "track": 6,
+    "kind": "vocab",
+    "text": 3,
+    "file": "course-assets/hsk3/audio/13-6.mp3",
+    "sha256": "3c891959d007b2ca76c55809acf5a2669f2fd18e2ea9e02b1b2a52f37e112b5a",
+    "bytes": 291352,
+    "manifestDurationSeconds": 15.671567,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 251194,
+      "durationSeconds": 15.699625,
+      "sha256": "6e727ea0814e83a29bf6eeba4257a7d64cd39a8dc21ed2425cfab1b9772bac83"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 15.699625,
+    "duration_after_vad": 15.699625,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 13.38,
+      "text": "晚会、晚会、礼物、礼物、画家、画家、盘子、盘子、一边、一边、聊天。",
+      "tokens": [
+        50364,
+        27080,
+        12949,
+        1231,
+        27080,
+        12949,
+        1231,
+        14971,
+        120,
+        23516,
+        1231,
+        14971,
+        120,
+        23516,
+        1231,
+        27126,
+        5155,
+        1231,
+        27126,
+        5155,
+        1231,
+        5419,
+        246,
+        7626,
+        1231,
+        5419,
+        246,
+        7626,
+        1231,
+        2257,
+        40503,
+        1231,
+        2257,
+        40503,
+        1231,
+        40096,
+        6135,
+        1543,
+        51132
+      ],
+      "avg_logprob": -0.25567879155278206,
+      "compression_ratio": 1.6229508196721312,
+      "no_speech_prob": 0.31513169407844543,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.7,
+          "word": "晚",
+          "probability": 0.6377776861190796
+        },
+        {
+          "start": 0.7,
+          "end": 1.28,
+          "word": "会、",
+          "probability": 0.798182487487793
+        },
+        {
+          "start": 1.46,
+          "end": 2.04,
+          "word": "晚",
+          "probability": 0.8015232086181641
+        },
+        {
+          "start": 2.04,
+          "end": 2.58,
+          "word": "会、",
+          "probability": 0.9964106678962708
+        },
+        {
+          "start": 2.92,
+          "end": 3.22,
+          "word": "礼",
+          "probability": 0.9437592029571533
+        },
+        {
+          "start": 3.22,
+          "end": 3.72,
+          "word": "物、",
+          "probability": 0.9964761137962341
+        },
+        {
+          "start": 4.02,
+          "end": 4.48,
+          "word": "礼",
+          "probability": 0.9947963953018188
+        },
+        {
+          "start": 4.48,
+          "end": 4.96,
+          "word": "物、",
+          "probability": 0.9991570711135864
+        },
+        {
+          "start": 5.26,
+          "end": 5.58,
+          "word": "画",
+          "probability": 0.9220868945121765
+        },
+        {
+          "start": 5.58,
+          "end": 6.06,
+          "word": "家、",
+          "probability": 0.9976555109024048
+        },
+        {
+          "start": 6.58,
+          "end": 6.96,
+          "word": "画",
+          "probability": 0.9767388105392456
+        },
+        {
+          "start": 6.96,
+          "end": 7.46,
+          "word": "家、",
+          "probability": 0.999359667301178
+        },
+        {
+          "start": 7.78,
+          "end": 8.2,
+          "word": "盘",
+          "probability": 0.9728789329528809
+        },
+        {
+          "start": 8.2,
+          "end": 8.6,
+          "word": "子、",
+          "probability": 0.9999551773071289
+        },
+        {
+          "start": 8.92,
+          "end": 9.44,
+          "word": "盘",
+          "probability": 0.9913613200187683
+        },
+        {
+          "start": 9.44,
+          "end": 9.84,
+          "word": "子、",
+          "probability": 0.9999330043792725
+        },
+        {
+          "start": 10.24,
+          "end": 10.46,
+          "word": "一",
+          "probability": 0.5451329350471497
+        },
+        {
+          "start": 10.46,
+          "end": 10.98,
+          "word": "边、",
+          "probability": 0.9920188784599304
+        },
+        {
+          "start": 11.44,
+          "end": 11.72,
+          "word": "一",
+          "probability": 0.9878143072128296
+        },
+        {
+          "start": 11.72,
+          "end": 12.22,
+          "word": "边、",
+          "probability": 0.9969202280044556
+        },
+        {
+          "start": 12.72,
+          "end": 12.98,
+          "word": "聊",
+          "probability": 0.9939630627632141
+        },
+        {
+          "start": 12.98,
+          "end": 13.38,
+          "word": "天。",
+          "probability": 0.9974802136421204
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.8461859660000073,
+  "realTimeFactor": 0.18129006049507598,
+  "observationChecks": {
+    "rawWordCount": 22,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

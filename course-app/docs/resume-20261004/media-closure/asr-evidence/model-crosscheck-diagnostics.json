@@ -1,0 +1,2542 @@
+{
+  "schemaVersion": 1,
+  "purpose": "cross-model raw observation diagnostics only; 0 production approval",
+  "smallRunId": 37217540172,
+  "mediumRunId": 37218301490,
+  "smallExactReportSHA256": "79811fe798d90818a28d5bdb0c3558f3d796b208a3bf02259f611e2396b2d022",
+  "mediumExactReportSHA256": "6632c358c8163422a32173ff074df5014c58b765deb0e4fa3cfdb1a14606f5e5",
+  "normalization": "strict NFKC+CJK only; script/homophone/erhua differences remain visible",
+  "byUnit": {
+    "word": {
+      "sourceTargets": 51,
+      "smallUnique": 39,
+      "mediumUnique": 31,
+      "bothUnique": 28,
+      "bothRawEndpointsWithin200ms": 2,
+      "atLeastOneUnique": 42,
+      "productionApproved": 0
+    },
+    "line": {
+      "sourceTargets": 63,
+      "smallUnique": 46,
+      "mediumUnique": 46,
+      "bothUnique": 43,
+      "bothRawEndpointsWithin200ms": 7,
+      "atLeastOneUnique": 49,
+      "productionApproved": 0
+    },
+    "sentence": {
+      "sourceTargets": 32,
+      "smallUnique": 15,
+      "mediumUnique": 27,
+      "bothUnique": 15,
+      "bothRawEndpointsWithin200ms": 6,
+      "atLeastOneUnique": 27,
+      "productionApproved": 0
+    }
+  },
+  "targets": [
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line1",
+      "unit": "line",
+      "sourceText": "妈妈，我们来过这家商场吗？",
+      "sourceTrack": "course-assets/hsk2/audio/4-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line2",
+      "unit": "line",
+      "sourceText": "没来过，这是新开的。",
+      "sourceTrack": "course-assets/hsk2/audio/4-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        4.74,
+        7.1
+      ],
+      "mediumRange": [
+        4.9,
+        7.48
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3800000000000008,
+      "smallMinimumRawProbability": 0.9426447749137878,
+      "mediumMinimumRawProbability": 0.9782164096832275,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line3",
+      "unit": "line",
+      "sourceText": "我们进去看看吧。",
+      "sourceTrack": "course-assets/hsk2/audio/4-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        7.76,
+        9.68
+      ],
+      "mediumRange": [
+        8.18,
+        9.74
+      ],
+      "maximumEndpointDifferenceSeconds": 0.41999999999999993,
+      "smallMinimumRawProbability": 0.9658560752868652,
+      "mediumMinimumRawProbability": 0.9927589893341064,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line4",
+      "unit": "line",
+      "sourceText": "好啊！你想买点儿什么？",
+      "sourceTrack": "course-assets/hsk2/audio/4-1.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line4:sentence1",
+      "unit": "sentence",
+      "sourceText": "好啊！",
+      "sourceTrack": "course-assets/hsk2/audio/4-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        10.38,
+        10.88
+      ],
+      "mediumRange": [
+        10.5,
+        11.3
+      ],
+      "maximumEndpointDifferenceSeconds": 0.41999999999999993,
+      "smallMinimumRawProbability": 0.8041224479675293,
+      "mediumMinimumRawProbability": 0.9651122689247131,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line4:sentence2",
+      "unit": "sentence",
+      "sourceText": "你想买点儿什么？",
+      "sourceTrack": "course-assets/hsk2/audio/4-1.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line5",
+      "unit": "line",
+      "sourceText": "我想买条裤子。",
+      "sourceTrack": "course-assets/hsk2/audio/4-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        13.58,
+        15.12
+      ],
+      "mediumRange": [
+        13.76,
+        15.56
+      ],
+      "maximumEndpointDifferenceSeconds": 0.4400000000000013,
+      "smallMinimumRawProbability": 0.6029080152511597,
+      "mediumMinimumRawProbability": 0.979057788848877,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line6",
+      "unit": "line",
+      "sourceText": "没问题。",
+      "sourceTrack": "course-assets/hsk2/audio/4-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        16.2,
+        16.74
+      ],
+      "mediumRange": [
+        16.42,
+        16.92
+      ],
+      "maximumEndpointDifferenceSeconds": 0.22000000000000242,
+      "smallMinimumRawProbability": 0.9975132942199707,
+      "mediumMinimumRawProbability": 0.9952530860900879,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word01",
+      "unit": "word",
+      "sourceText": "过",
+      "sourceTrack": "course-assets/hsk2/audio/4-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        0.7
+      ],
+      "mediumRange": [
+        0.0,
+        1.5
+      ],
+      "maximumEndpointDifferenceSeconds": 0.8,
+      "smallMinimumRawProbability": 0.5835809707641602,
+      "mediumMinimumRawProbability": 0.9537394642829895,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word02",
+      "unit": "word",
+      "sourceText": "商场",
+      "sourceTrack": "course-assets/hsk2/audio/4-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        2.26,
+        5.04
+      ],
+      "mediumRange": [
+        2.3600000000000003,
+        5.7
+      ],
+      "maximumEndpointDifferenceSeconds": 0.6600000000000001,
+      "smallMinimumRawProbability": 0.11073677241802216,
+      "mediumMinimumRawProbability": 0.11699917167425156,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word03",
+      "unit": "word",
+      "sourceText": "进去",
+      "sourceTrack": "course-assets/hsk2/audio/4-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        5.4399999999999995,
+        7.98
+      ],
+      "mediumRange": [
+        5.7,
+        8.36
+      ],
+      "maximumEndpointDifferenceSeconds": 0.379999999999999,
+      "smallMinimumRawProbability": 0.9866602420806885,
+      "mediumMinimumRawProbability": 0.9777491688728333,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word04",
+      "unit": "word",
+      "sourceText": "条",
+      "sourceTrack": "course-assets/hsk2/audio/4-2.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word05",
+      "unit": "word",
+      "sourceText": "裤子",
+      "sourceTrack": "course-assets/hsk2/audio/4-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        10.2,
+        11.52
+      ],
+      "mediumRange": [
+        10.2,
+        11.82
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3000000000000007,
+      "smallMinimumRawProbability": 0.986200213432312,
+      "mediumMinimumRawProbability": 0.9929425716400146,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line1",
+      "unit": "line",
+      "sourceText": "妈妈，我想买这条白色的裤子。",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        3.52
+      ],
+      "mediumRange": [
+        0.0,
+        4.44
+      ],
+      "maximumEndpointDifferenceSeconds": 0.9200000000000004,
+      "smallMinimumRawProbability": 0.44956299662590027,
+      "mediumMinimumRawProbability": 0.8786843419075012,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line2",
+      "unit": "line",
+      "sourceText": "你有很多白色的衣服，为什么还买白色的？",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        4.760000000000004,
+        8.9
+      ],
+      "mediumRange": [
+        5.1,
+        9.14
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3399999999999954,
+      "smallMinimumRawProbability": 0.7400052547454834,
+      "mediumMinimumRawProbability": 0.8878046870231628,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line3",
+      "unit": "line",
+      "sourceText": "因为我喜欢白色啊！",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        10.100000000000003,
+        12.08
+      ],
+      "mediumRange": [
+        10.16,
+        12.22
+      ],
+      "maximumEndpointDifferenceSeconds": 0.14000000000000057,
+      "smallMinimumRawProbability": 0.7344670295715332,
+      "mediumMinimumRawProbability": 0.9636027216911316,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line4",
+      "unit": "line",
+      "sourceText": "我觉得这条白色的不太好看，你试试那条红色的吧。",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        13.280000000000005,
+        18.44
+      ],
+      "mediumRange": [
+        13.42,
+        18.86
+      ],
+      "maximumEndpointDifferenceSeconds": 0.41999999999999815,
+      "smallMinimumRawProbability": 0.944987952709198,
+      "mediumMinimumRawProbability": 0.9511163234710693,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line5",
+      "unit": "line",
+      "sourceText": "我没穿过红色的，红色的好看吗？",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        20.26,
+        24.02
+      ],
+      "mediumRange": [
+        20.48,
+        24.22
+      ],
+      "maximumEndpointDifferenceSeconds": 0.21999999999999886,
+      "smallMinimumRawProbability": 0.9732009768486023,
+      "mediumMinimumRawProbability": 0.9934148788452148,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line6",
+      "unit": "line",
+      "sourceText": "就是因为没穿过，所以要试试啊！",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        25.26,
+        28.36
+      ],
+      "mediumRange": [
+        25.38,
+        28.76
+      ],
+      "maximumEndpointDifferenceSeconds": 0.40000000000000213,
+      "smallMinimumRawProbability": 0.9294241666793823,
+      "mediumMinimumRawProbability": 0.9930891394615173,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word06",
+      "unit": "word",
+      "sourceText": "白色",
+      "sourceTrack": "course-assets/hsk2/audio/4-4.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        2.56
+      ],
+      "mediumRange": [
+        0.0,
+        2.82
+      ],
+      "maximumEndpointDifferenceSeconds": 0.2599999999999998,
+      "smallMinimumRawProbability": 0.9548920392990112,
+      "mediumMinimumRawProbability": 0.9788154363632202,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word07",
+      "unit": "word",
+      "sourceText": "因为",
+      "sourceTrack": "course-assets/hsk2/audio/4-4.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        3.52,
+        4.38
+      ],
+      "mediumRange": [
+        3.5,
+        5.6
+      ],
+      "maximumEndpointDifferenceSeconds": 1.2199999999999998,
+      "smallMinimumRawProbability": 0.19835083186626434,
+      "mediumMinimumRawProbability": 0.2863638401031494,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word08",
+      "unit": "word",
+      "sourceText": "试",
+      "sourceTrack": "course-assets/hsk2/audio/4-4.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word09",
+      "unit": "word",
+      "sourceText": "红色",
+      "sourceTrack": "course-assets/hsk2/audio/4-4.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        8.56,
+        11.0
+      ],
+      "mediumRange": [
+        8.46,
+        11.3
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3000000000000007,
+      "smallMinimumRawProbability": 0.9652149081230164,
+      "mediumMinimumRawProbability": 0.9740847647190094,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word10",
+      "unit": "word",
+      "sourceText": "所以",
+      "sourceTrack": "course-assets/hsk2/audio/4-4.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        11.0,
+        12.16
+      ],
+      "mediumRange": [
+        11.3,
+        12.62
+      ],
+      "maximumEndpointDifferenceSeconds": 0.4599999999999991,
+      "smallMinimumRawProbability": 0.7230529189109802,
+      "mediumMinimumRawProbability": 0.473739892244339,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line1",
+      "unit": "line",
+      "sourceText": "妈妈，我想买个新书包。",
+      "sourceTrack": "course-assets/hsk2/audio/4-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        2.5
+      ],
+      "mediumRange": [
+        0.0,
+        2.62
+      ],
+      "maximumEndpointDifferenceSeconds": 0.1200000000000001,
+      "smallMinimumRawProbability": 0.3264639675617218,
+      "mediumMinimumRawProbability": 0.8927085995674133,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line2",
+      "unit": "line",
+      "sourceText": "好，那边卖书包，我们过去看看吧。",
+      "sourceTrack": "course-assets/hsk2/audio/4-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        3.1,
+        7.54
+      ],
+      "mediumRange": [
+        3.3199999999999994,
+        7.66
+      ],
+      "maximumEndpointDifferenceSeconds": 0.2199999999999993,
+      "smallMinimumRawProbability": 0.6239771246910095,
+      "mediumMinimumRawProbability": 0.9507471919059753,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line3",
+      "unit": "line",
+      "sourceText": "这么多漂亮的书包！",
+      "sourceTrack": "course-assets/hsk2/audio/4-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        7.54,
+        9.82
+      ],
+      "mediumRange": [
+        8.36,
+        9.94
+      ],
+      "maximumEndpointDifferenceSeconds": 0.8199999999999994,
+      "smallMinimumRawProbability": 0.911291241645813,
+      "mediumMinimumRawProbability": 0.9879882335662842,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line4",
+      "unit": "line",
+      "sourceText": "红色的、绿色的、黑色的，你想买哪个？",
+      "sourceTrack": "course-assets/hsk2/audio/4-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        10.5,
+        15.56
+      ],
+      "mediumRange": [
+        10.8,
+        15.68
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3000000000000007,
+      "smallMinimumRawProbability": 0.6045981049537659,
+      "mediumMinimumRawProbability": 0.9468604326248169,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line5",
+      "unit": "line",
+      "sourceText": "绿色的吧。",
+      "sourceTrack": "course-assets/hsk2/audio/4-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        16.46,
+        17.58
+      ],
+      "mediumRange": [
+        16.44,
+        17.36
+      ],
+      "maximumEndpointDifferenceSeconds": 0.21999999999999886,
+      "smallMinimumRawProbability": 0.9559526443481445,
+      "mediumMinimumRawProbability": 0.9915967583656311,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line6",
+      "unit": "line",
+      "sourceText": "不错，我也觉得绿色的更好看。",
+      "sourceTrack": "course-assets/hsk2/audio/4-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        17.58,
+        20.88
+      ],
+      "mediumRange": [
+        18.16,
+        21.04
+      ],
+      "maximumEndpointDifferenceSeconds": 0.5800000000000018,
+      "smallMinimumRawProbability": 0.74344402551651,
+      "mediumMinimumRawProbability": 0.9903252124786377,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word11",
+      "unit": "word",
+      "sourceText": "书包",
+      "sourceTrack": "course-assets/hsk2/audio/4-6.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        3.28
+      ],
+      "mediumRange": [
+        0.0,
+        2.26
+      ],
+      "maximumEndpointDifferenceSeconds": 1.02,
+      "smallMinimumRawProbability": 0.635724738240242,
+      "mediumMinimumRawProbability": 0.989310085773468,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word12",
+      "unit": "word",
+      "sourceText": "过去",
+      "sourceTrack": "course-assets/hsk2/audio/4-6.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        3.28,
+        5.82
+      ],
+      "mediumRange": [
+        3.12,
+        6.2
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3799999999999999,
+      "smallMinimumRawProbability": 0.8553064465522766,
+      "mediumMinimumRawProbability": 0.19110481441020966,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word13",
+      "unit": "word",
+      "sourceText": "绿色",
+      "sourceTrack": "course-assets/hsk2/audio/4-6.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        5.82,
+        8.72
+      ],
+      "mediumRange": [
+        6.2,
+        9.04
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3799999999999999,
+      "smallMinimumRawProbability": 0.9528211653232574,
+      "mediumMinimumRawProbability": 0.9858599901199341,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word14",
+      "unit": "word",
+      "sourceText": "黑色",
+      "sourceTrack": "course-assets/hsk2/audio/4-6.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        8.72,
+        11.8
+      ],
+      "mediumRange": [
+        9.04,
+        12.3
+      ],
+      "maximumEndpointDifferenceSeconds": 0.5,
+      "smallMinimumRawProbability": 0.94197016954422,
+      "mediumMinimumRawProbability": 0.9858113527297974,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word15",
+      "unit": "word",
+      "sourceText": "更",
+      "sourceTrack": "course-assets/hsk2/audio/4-6.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text4:line1",
+      "unit": "line",
+      "sourceText": "我和妈妈去了一家商场。因为是新开的，所以这几天东西很便宜。商场里的衣服颜色很多。我没穿过红色的裤子，妈妈让我试了试，我觉得我穿红色的也很好看。",
+      "sourceTrack": "course-assets/hsk2/audio/4-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text4:line1:sentence1",
+      "unit": "sentence",
+      "sourceText": "我和妈妈去了一家商场。",
+      "sourceTrack": "course-assets/hsk2/audio/4-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text4:line1:sentence2",
+      "unit": "sentence",
+      "sourceText": "因为是新开的，所以这几天东西很便宜。",
+      "sourceTrack": "course-assets/hsk2/audio/4-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text4:line1:sentence3",
+      "unit": "sentence",
+      "sourceText": "商场里的衣服颜色很多。",
+      "sourceTrack": "course-assets/hsk2/audio/4-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text4:line1:sentence4",
+      "unit": "sentence",
+      "sourceText": "我没穿过红色的裤子，妈妈让我试了试，我觉得我穿红色的也很好看。",
+      "sourceTrack": "course-assets/hsk2/audio/4-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word16",
+      "unit": "word",
+      "sourceText": "颜色",
+      "sourceTrack": "course-assets/hsk2/audio/4-8.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        1.28
+      ],
+      "mediumRange": [
+        0.0,
+        1.52
+      ],
+      "maximumEndpointDifferenceSeconds": 0.24,
+      "smallMinimumRawProbability": 0.9884420037269592,
+      "mediumMinimumRawProbability": 0.9858124852180481,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line1",
+      "unit": "line",
+      "sourceText": "家月，快下来吧，第一次去中国朋友家，别晚了。",
+      "sourceTrack": "course-assets/hsk2/audio/5-1.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line2",
+      "unit": "line",
+      "sourceText": "还有时间，你上来吧。",
+      "sourceTrack": "course-assets/hsk2/audio/5-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        7.2200000000000015,
+        9.48
+      ],
+      "mediumRange": [
+        7.66,
+        9.96
+      ],
+      "maximumEndpointDifferenceSeconds": 0.4800000000000004,
+      "smallMinimumRawProbability": 0.946767270565033,
+      "mediumMinimumRawProbability": 0.9761748313903809,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line3",
+      "unit": "line",
+      "sourceText": "我不上去了，就在下面等你。",
+      "sourceTrack": "course-assets/hsk2/audio/5-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        10.8,
+        13.48
+      ],
+      "mediumRange": [
+        10.98,
+        13.98
+      ],
+      "maximumEndpointDifferenceSeconds": 0.5,
+      "smallMinimumRawProbability": 0.9502174258232117,
+      "mediumMinimumRawProbability": 0.9835807681083679,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line4",
+      "unit": "line",
+      "sourceText": "那我一会儿就下去。",
+      "sourceTrack": "course-assets/hsk2/audio/5-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        14.46,
+        15.92
+      ],
+      "mediumRange": [
+        14.64,
+        16.12
+      ],
+      "maximumEndpointDifferenceSeconds": 0.20000000000000107,
+      "smallMinimumRawProbability": 0.6398563385009766,
+      "mediumMinimumRawProbability": 0.8417018055915833,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line5",
+      "unit": "line",
+      "sourceText": "你快点儿吧。",
+      "sourceTrack": "course-assets/hsk2/audio/5-1.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line6",
+      "unit": "line",
+      "sourceText": "没事，一雪姐说11点前到就可以。",
+      "sourceTrack": "course-assets/hsk2/audio/5-1.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word01",
+      "unit": "word",
+      "sourceText": "快",
+      "sourceTrack": "course-assets/hsk2/audio/5-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word02",
+      "unit": "word",
+      "sourceText": "快",
+      "sourceTrack": "course-assets/hsk2/audio/5-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word03",
+      "unit": "word",
+      "sourceText": "下来",
+      "sourceTrack": "course-assets/hsk2/audio/5-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word04",
+      "unit": "word",
+      "sourceText": "上来",
+      "sourceTrack": "course-assets/hsk2/audio/5-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word05",
+      "unit": "word",
+      "sourceText": "上去",
+      "sourceTrack": "course-assets/hsk2/audio/5-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word06",
+      "unit": "word",
+      "sourceText": "下面",
+      "sourceTrack": "course-assets/hsk2/audio/5-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word07",
+      "unit": "word",
+      "sourceText": "面",
+      "sourceTrack": "course-assets/hsk2/audio/5-2.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word08",
+      "unit": "word",
+      "sourceText": "等",
+      "sourceTrack": "course-assets/hsk2/audio/5-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word09",
+      "unit": "word",
+      "sourceText": "一会儿",
+      "sourceTrack": "course-assets/hsk2/audio/5-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word10",
+      "unit": "word",
+      "sourceText": "下去",
+      "sourceTrack": "course-assets/hsk2/audio/5-2.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line1",
+      "unit": "line",
+      "sourceText": "家月、安妮，快进来！我给你们介绍一下，这是孩子们的爷爷、奶奶。",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line1:sentence1",
+      "unit": "sentence",
+      "sourceText": "家月、安妮，快进来！",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line1:sentence2",
+      "unit": "sentence",
+      "sourceText": "我给你们介绍一下，这是孩子们的爷爷、奶奶。",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        2.94,
+        7.96
+      ],
+      "mediumRange": [
+        3.78,
+        8.26
+      ],
+      "maximumEndpointDifferenceSeconds": 0.8399999999999999,
+      "smallMinimumRawProbability": 0.4341927766799927,
+      "mediumMinimumRawProbability": 0.40279102325439453,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line2",
+      "unit": "line",
+      "sourceText": "你们好！",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line3",
+      "unit": "line",
+      "sourceText": "爸，妈，这是白家月，这是安妮。她们都是一飞的学生。",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line3:sentence1",
+      "unit": "sentence",
+      "sourceText": "爸，妈，这是白家月，这是安妮。",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line3:sentence2",
+      "unit": "sentence",
+      "sourceText": "她们都是一飞的学生。",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line4",
+      "unit": "line",
+      "sourceText": "家月、安妮，你们好！",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line5",
+      "unit": "line",
+      "sourceText": "这是送你们的礼物。",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        22.72,
+        24.58
+      ],
+      "mediumRange": [
+        23.0,
+        24.84
+      ],
+      "maximumEndpointDifferenceSeconds": 0.28000000000000114,
+      "smallMinimumRawProbability": 0.990307092666626,
+      "mediumMinimumRawProbability": 0.9914694428443909,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line6",
+      "unit": "line",
+      "sourceText": "你们太客气了，还拿这么多礼物来！",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        25.179999999999996,
+        28.76
+      ],
+      "mediumRange": [
+        25.58,
+        29.04
+      ],
+      "maximumEndpointDifferenceSeconds": 0.40000000000000213,
+      "smallMinimumRawProbability": 0.9396462440490723,
+      "mediumMinimumRawProbability": 0.9785144925117493,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line7",
+      "unit": "line",
+      "sourceText": "一雪姐，这是给孩子们准备的礼物。",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8",
+      "unit": "line",
+      "sourceText": "谢谢！你们别客气，快坐吧！",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        34.580000000000005,
+        38.06
+      ],
+      "mediumRange": [
+        34.94,
+        38.24
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3599999999999923,
+      "smallMinimumRawProbability": 0.9161765575408936,
+      "mediumMinimumRawProbability": 0.9585112929344177,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8:sentence1",
+      "unit": "sentence",
+      "sourceText": "谢谢！",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        34.580000000000005,
+        35.1
+      ],
+      "mediumRange": [
+        34.94,
+        35.26
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3599999999999923,
+      "smallMinimumRawProbability": 0.9776061773300171,
+      "mediumMinimumRawProbability": 0.9788878560066223,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "unit": "sentence",
+      "sourceText": "你们别客气，快坐吧！",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        35.9,
+        38.06
+      ],
+      "mediumRange": [
+        36.0,
+        38.24
+      ],
+      "maximumEndpointDifferenceSeconds": 0.17999999999999972,
+      "smallMinimumRawProbability": 0.9161765575408936,
+      "mediumMinimumRawProbability": 0.9585112929344177,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word11",
+      "unit": "word",
+      "sourceText": "进来",
+      "sourceTrack": "course-assets/hsk2/audio/5-4.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        1.4
+      ],
+      "mediumRange": [
+        0.0,
+        2.92
+      ],
+      "maximumEndpointDifferenceSeconds": 1.52,
+      "smallMinimumRawProbability": 0.6612902283668518,
+      "mediumMinimumRawProbability": 0.6263723969459534,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word12",
+      "unit": "word",
+      "sourceText": "爷爷",
+      "sourceTrack": "course-assets/hsk2/audio/5-4.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        3.22,
+        4.64
+      ],
+      "mediumRange": [
+        2.92,
+        5.94
+      ],
+      "maximumEndpointDifferenceSeconds": 1.3000000000000007,
+      "smallMinimumRawProbability": 0.9728677868843079,
+      "mediumMinimumRawProbability": 0.09871068596839905,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word13",
+      "unit": "word",
+      "sourceText": "奶奶",
+      "sourceTrack": "course-assets/hsk2/audio/5-4.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        5.9,
+        8.18
+      ],
+      "mediumRange": [
+        5.94,
+        8.46
+      ],
+      "maximumEndpointDifferenceSeconds": 0.28000000000000114,
+      "smallMinimumRawProbability": 0.9966092109680176,
+      "mediumMinimumRawProbability": 0.939900279045105,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word14",
+      "unit": "word",
+      "sourceText": "礼物",
+      "sourceTrack": "course-assets/hsk2/audio/5-4.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        8.54,
+        10.8
+      ],
+      "mediumRange": [
+        8.46,
+        11.44
+      ],
+      "maximumEndpointDifferenceSeconds": 0.6399999999999988,
+      "smallMinimumRawProbability": 0.9848154485225677,
+      "mediumMinimumRawProbability": 0.9920443594455719,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word15",
+      "unit": "word",
+      "sourceText": "准备",
+      "sourceTrack": "course-assets/hsk2/audio/5-4.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        11.36,
+        12.6
+      ],
+      "mediumRange": [
+        11.44,
+        12.9
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3000000000000007,
+      "smallMinimumRawProbability": 0.6846887469291687,
+      "mediumMinimumRawProbability": 0.9969824850559235,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line1",
+      "unit": "line",
+      "sourceText": "都12点了，我们吃饭吧。",
+      "sourceTrack": "course-assets/hsk2/audio/5-5.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line2",
+      "unit": "line",
+      "sourceText": "这么多好吃的，您太客气了！",
+      "sourceTrack": "course-assets/hsk2/audio/5-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        4.14,
+        7.08
+      ],
+      "mediumRange": [
+        4.5,
+        7.44
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3600000000000003,
+      "smallMinimumRawProbability": 0.9165928959846497,
+      "mediumMinimumRawProbability": 0.9608166813850403,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line3",
+      "unit": "line",
+      "sourceText": "都是我自己做的，你们多吃点儿。",
+      "sourceTrack": "course-assets/hsk2/audio/5-5.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line4",
+      "unit": "line",
+      "sourceText": "奶茶也很好喝，是您自己做的吗？",
+      "sourceTrack": "course-assets/hsk2/audio/5-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        12.74,
+        16.4
+      ],
+      "mediumRange": [
+        12.96,
+        16.64
+      ],
+      "maximumEndpointDifferenceSeconds": 0.240000000000002,
+      "smallMinimumRawProbability": 0.9072265625,
+      "mediumMinimumRawProbability": 0.9839788675308228,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line5",
+      "unit": "line",
+      "sourceText": "不是，奶茶是爷爷买的。",
+      "sourceTrack": "course-assets/hsk2/audio/5-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        17.700000000000003,
+        20.36
+      ],
+      "mediumRange": [
+        18.02,
+        21.18
+      ],
+      "maximumEndpointDifferenceSeconds": 0.8200000000000003,
+      "smallMinimumRawProbability": 0.9761807322502136,
+      "mediumMinimumRawProbability": 0.9968309998512268,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line6",
+      "unit": "line",
+      "sourceText": "在哪儿买的？我还没喝过这么好喝的奶茶。",
+      "sourceTrack": "course-assets/hsk2/audio/5-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        22.4,
+        26.42
+      ],
+      "mediumRange": [
+        22.66,
+        26.58
+      ],
+      "maximumEndpointDifferenceSeconds": 0.26000000000000156,
+      "smallMinimumRawProbability": 0.4100522994995117,
+      "mediumMinimumRawProbability": 0.6272752285003662,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line6:sentence1",
+      "unit": "sentence",
+      "sourceText": "在哪儿买的？",
+      "sourceTrack": "course-assets/hsk2/audio/5-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        22.4,
+        23.6
+      ],
+      "mediumRange": [
+        22.66,
+        23.86
+      ],
+      "maximumEndpointDifferenceSeconds": 0.26000000000000156,
+      "smallMinimumRawProbability": 0.4100522994995117,
+      "mediumMinimumRawProbability": 0.6272752285003662,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line6:sentence2",
+      "unit": "sentence",
+      "sourceText": "我还没喝过这么好喝的奶茶。",
+      "sourceTrack": "course-assets/hsk2/audio/5-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        24.2,
+        26.42
+      ],
+      "mediumRange": [
+        24.28,
+        26.58
+      ],
+      "maximumEndpointDifferenceSeconds": 0.1599999999999966,
+      "smallMinimumRawProbability": 0.9253048896789551,
+      "mediumMinimumRawProbability": 0.9823194146156311,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line7",
+      "unit": "line",
+      "sourceText": "就在前边的商场，吃完饭你们可以跟我去看看。",
+      "sourceTrack": "course-assets/hsk2/audio/5-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word16",
+      "unit": "word",
+      "sourceText": "奶茶",
+      "sourceTrack": "course-assets/hsk2/audio/5-6.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        2.66
+      ],
+      "mediumRange": [
+        0.0,
+        2.8
+      ],
+      "maximumEndpointDifferenceSeconds": 0.13999999999999968,
+      "smallMinimumRawProbability": 0.8869572281837463,
+      "mediumMinimumRawProbability": 0.9893890023231506,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word17",
+      "unit": "word",
+      "sourceText": "跟",
+      "sourceTrack": "course-assets/hsk2/audio/5-6.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word18",
+      "unit": "word",
+      "sourceText": "跟",
+      "sourceTrack": "course-assets/hsk2/audio/5-6.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text4:line1",
+      "unit": "line",
+      "sourceText": "回国前一天，我们去一雪姐家了。到她家的时候，饭菜都做好了。刘爷爷还准备了奶茶。因为吃了太多东西，我们吃完饭是走回酒店的。",
+      "sourceTrack": "course-assets/hsk2/audio/5-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text4:line1:sentence1",
+      "unit": "sentence",
+      "sourceText": "回国前一天，我们去一雪姐家了。",
+      "sourceTrack": "course-assets/hsk2/audio/5-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text4:line1:sentence2",
+      "unit": "sentence",
+      "sourceText": "到她家的时候，饭菜都做好了。",
+      "sourceTrack": "course-assets/hsk2/audio/5-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text4:line1:sentence3",
+      "unit": "sentence",
+      "sourceText": "刘爷爷还准备了奶茶。",
+      "sourceTrack": "course-assets/hsk2/audio/5-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text4:line1:sentence4",
+      "unit": "sentence",
+      "sourceText": "因为吃了太多东西，我们吃完饭是走回酒店的。",
+      "sourceTrack": "course-assets/hsk2/audio/5-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word19",
+      "unit": "word",
+      "sourceText": "走",
+      "sourceTrack": "course-assets/hsk2/audio/5-8.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        1.08
+      ],
+      "mediumRange": [
+        0.0,
+        1.94
+      ],
+      "maximumEndpointDifferenceSeconds": 0.8599999999999999,
+      "smallMinimumRawProbability": 0.9162423014640808,
+      "mediumMinimumRawProbability": 0.9637140035629272,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word20",
+      "unit": "word",
+      "sourceText": "酒店",
+      "sourceTrack": "course-assets/hsk2/audio/5-8.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        1.34,
+        3.72
+      ],
+      "mediumRange": [
+        2.98,
+        3.98
+      ],
+      "maximumEndpointDifferenceSeconds": 1.64,
+      "smallMinimumRawProbability": 0.9596812129020691,
+      "mediumMinimumRawProbability": 0.9935761094093323,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line1",
+      "unit": "line",
+      "sourceText": "明天就是女儿的生日了。",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        2.48
+      ],
+      "mediumRange": [
+        0.0,
+        2.94
+      ],
+      "maximumEndpointDifferenceSeconds": 0.45999999999999996,
+      "smallMinimumRawProbability": 0.4580957889556885,
+      "mediumMinimumRawProbability": 0.8776395916938782,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line2",
+      "unit": "line",
+      "sourceText": "你不说，我还真忘了。我们给她准备个什么礼物呢？",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        4.22,
+        9.36
+      ],
+      "mediumRange": [
+        4.58,
+        9.6
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3600000000000003,
+      "smallMinimumRawProbability": 0.7281635999679565,
+      "mediumMinimumRawProbability": 0.9489631056785583,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line2:sentence1",
+      "unit": "sentence",
+      "sourceText": "你不说，我还真忘了。",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        4.22,
+        6.4
+      ],
+      "mediumRange": [
+        4.58,
+        6.62
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3600000000000003,
+      "smallMinimumRawProbability": 0.7782014608383179,
+      "mediumMinimumRawProbability": 0.9489631056785583,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line2:sentence2",
+      "unit": "sentence",
+      "sourceText": "我们给她准备个什么礼物呢？",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        7.16,
+        9.36
+      ],
+      "mediumRange": [
+        7.06,
+        9.6
+      ],
+      "maximumEndpointDifferenceSeconds": 0.2400000000000002,
+      "smallMinimumRawProbability": 0.7281635999679565,
+      "mediumMinimumRawProbability": 0.9538328647613525,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line3",
+      "unit": "line",
+      "sourceText": "她喜欢画画，你觉得画笔怎么样？",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        10.82,
+        14.28
+      ],
+      "mediumRange": [
+        10.76,
+        14.42
+      ],
+      "maximumEndpointDifferenceSeconds": 0.14000000000000057,
+      "smallMinimumRawProbability": 0.967173159122467,
+      "mediumMinimumRawProbability": 0.9552749991416931,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line4",
+      "unit": "line",
+      "sourceText": "就送画笔吧！",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        15.96,
+        17.06
+      ],
+      "mediumRange": [
+        15.88,
+        17.28
+      ],
+      "maximumEndpointDifferenceSeconds": 0.22000000000000242,
+      "smallMinimumRawProbability": 0.3192944824695587,
+      "mediumMinimumRawProbability": 0.9864640235900879,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line5",
+      "unit": "line",
+      "sourceText": "那我明天上午就去买。",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        18.28,
+        20.06
+      ],
+      "mediumRange": [
+        18.4,
+        20.26
+      ],
+      "maximumEndpointDifferenceSeconds": 0.20000000000000284,
+      "smallMinimumRawProbability": 0.9755723476409912,
+      "mediumMinimumRawProbability": 0.9833465814590454,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line6",
+      "unit": "line",
+      "sourceText": "好的！我再给她买个大大的生日蛋糕。",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        21.299999999999997,
+        25.64
+      ],
+      "mediumRange": [
+        21.42,
+        25.76
+      ],
+      "maximumEndpointDifferenceSeconds": 0.12000000000000455,
+      "smallMinimumRawProbability": 0.9373658895492554,
+      "mediumMinimumRawProbability": 0.9656789898872375,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line6:sentence1",
+      "unit": "sentence",
+      "sourceText": "好的！",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        21.299999999999997,
+        21.78
+      ],
+      "mediumRange": [
+        21.42,
+        21.98
+      ],
+      "maximumEndpointDifferenceSeconds": 0.1999999999999993,
+      "smallMinimumRawProbability": 0.9566639065742493,
+      "mediumMinimumRawProbability": 0.9785588979721069,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line6:sentence2",
+      "unit": "sentence",
+      "sourceText": "我再给她买个大大的生日蛋糕。",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        22.7,
+        25.64
+      ],
+      "mediumRange": [
+        22.72,
+        25.76
+      ],
+      "maximumEndpointDifferenceSeconds": 0.120000000000001,
+      "smallMinimumRawProbability": 0.9373658895492554,
+      "mediumMinimumRawProbability": 0.9656789898872375,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word01",
+      "unit": "word",
+      "sourceText": "生日",
+      "sourceTrack": "course-assets/hsk2/audio/6-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        3.1
+      ],
+      "mediumRange": [
+        0.0,
+        3.26
+      ],
+      "maximumEndpointDifferenceSeconds": 0.1599999999999997,
+      "smallMinimumRawProbability": 0.9727411866188049,
+      "mediumMinimumRawProbability": 0.9919256567955017,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word02",
+      "unit": "word",
+      "sourceText": "忘",
+      "sourceTrack": "course-assets/hsk2/audio/6-2.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word03",
+      "unit": "word",
+      "sourceText": "画",
+      "sourceTrack": "course-assets/hsk2/audio/6-2.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word04",
+      "unit": "word",
+      "sourceText": "画",
+      "sourceTrack": "course-assets/hsk2/audio/6-2.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word05",
+      "unit": "word",
+      "sourceText": "画笔",
+      "sourceTrack": "course-assets/hsk2/audio/6-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        6.6,
+        9.7
+      ],
+      "mediumRange": [
+        8.78,
+        10.86
+      ],
+      "maximumEndpointDifferenceSeconds": 2.1799999999999997,
+      "smallMinimumRawProbability": 0.7933169603347778,
+      "mediumMinimumRawProbability": 0.970005452632904,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word06",
+      "unit": "word",
+      "sourceText": "蛋糕",
+      "sourceTrack": "course-assets/hsk2/audio/6-2.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        10.92,
+        12.18
+      ],
+      "mediumRange": [
+        11.74,
+        12.46
+      ],
+      "maximumEndpointDifferenceSeconds": 0.8200000000000003,
+      "smallMinimumRawProbability": 0.8828088045120239,
+      "mediumMinimumRawProbability": 0.9982563853263855,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line1",
+      "unit": "line",
+      "sourceText": "小雪，生日快乐！",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        2.42
+      ],
+      "mediumRange": [
+        0.0,
+        3.38
+      ],
+      "maximumEndpointDifferenceSeconds": 0.96,
+      "smallMinimumRawProbability": 0.16436730325222015,
+      "mediumMinimumRawProbability": 0.4316503703594208,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line2",
+      "unit": "line",
+      "sourceText": "姐姐，生日快乐！",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        3.320000000000002,
+        5.1
+      ],
+      "mediumRange": [
+        3.92,
+        5.34
+      ],
+      "maximumEndpointDifferenceSeconds": 0.5999999999999979,
+      "smallMinimumRawProbability": 0.4576334059238434,
+      "mediumMinimumRawProbability": 0.8701967597007751,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line3",
+      "unit": "line",
+      "sourceText": "小雪，这是爸爸、妈妈送你的礼物。",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        6.12,
+        10.1
+      ],
+      "mediumRange": [
+        6.36,
+        10.72
+      ],
+      "maximumEndpointDifferenceSeconds": 0.620000000000001,
+      "smallMinimumRawProbability": 0.9478435516357422,
+      "mediumMinimumRawProbability": 0.6741604804992676,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line4",
+      "unit": "line",
+      "sourceText": "你打开看看喜欢不喜欢。",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        11.2,
+        13.56
+      ],
+      "mediumRange": [
+        11.36,
+        14.04
+      ],
+      "maximumEndpointDifferenceSeconds": 0.47999999999999865,
+      "smallMinimumRawProbability": 0.9216896295547485,
+      "mediumMinimumRawProbability": 0.941373348236084,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line5",
+      "unit": "line",
+      "sourceText": "画笔！我很喜欢！",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        14.82,
+        16.96
+      ],
+      "mediumRange": [
+        14.92,
+        17.12
+      ],
+      "maximumEndpointDifferenceSeconds": 0.16000000000000014,
+      "smallMinimumRawProbability": 0.8928698897361755,
+      "mediumMinimumRawProbability": 0.9110503196716309,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line5:sentence1",
+      "unit": "sentence",
+      "sourceText": "画笔！",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        14.82,
+        15.34
+      ],
+      "mediumRange": [
+        14.92,
+        15.6
+      ],
+      "maximumEndpointDifferenceSeconds": 0.2599999999999998,
+      "smallMinimumRawProbability": 0.8928698897361755,
+      "mediumMinimumRawProbability": 0.9110503196716309,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line5:sentence2",
+      "unit": "sentence",
+      "sourceText": "我很喜欢！",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        15.96,
+        16.96
+      ],
+      "mediumRange": [
+        16.1,
+        17.12
+      ],
+      "maximumEndpointDifferenceSeconds": 0.16000000000000014,
+      "smallMinimumRawProbability": 0.947799026966095,
+      "mediumMinimumRawProbability": 0.9788540601730347,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line6",
+      "unit": "line",
+      "sourceText": "那你想画点儿什么？",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line7",
+      "unit": "line",
+      "sourceText": "画我们的家！有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        20.32,
+        28.36
+      ],
+      "mediumRange": [
+        20.52,
+        28.74
+      ],
+      "maximumEndpointDifferenceSeconds": 0.379999999999999,
+      "smallMinimumRawProbability": 0.9600443243980408,
+      "mediumMinimumRawProbability": 0.7349824905395508,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line7:sentence1",
+      "unit": "sentence",
+      "sourceText": "画我们的家！",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        20.32,
+        21.4
+      ],
+      "mediumRange": [
+        20.52,
+        21.62
+      ],
+      "maximumEndpointDifferenceSeconds": 0.22000000000000242,
+      "smallMinimumRawProbability": 0.9632152318954468,
+      "mediumMinimumRawProbability": 0.9731893539428711,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line7:sentence2",
+      "unit": "sentence",
+      "sourceText": "有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        22.1,
+        28.36
+      ],
+      "mediumRange": [
+        22.1,
+        28.74
+      ],
+      "maximumEndpointDifferenceSeconds": 0.379999999999999,
+      "smallMinimumRawProbability": 0.9600443243980408,
+      "mediumMinimumRawProbability": 0.7349824905395508,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line8",
+      "unit": "line",
+      "sourceText": "那我要画一个穿白色衣服的姐姐。",
+      "sourceTrack": "course-assets/hsk2/audio/6-3.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word07",
+      "unit": "word",
+      "sourceText": "快乐",
+      "sourceTrack": "course-assets/hsk2/audio/6-4.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word08",
+      "unit": "word",
+      "sourceText": "打开",
+      "sourceTrack": "course-assets/hsk2/audio/6-4.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line1",
+      "unit": "line",
+      "sourceText": "小雪，看看今天有什么好吃的。",
+      "sourceTrack": "course-assets/hsk2/audio/6-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        4.06
+      ],
+      "mediumRange": [
+        0.0,
+        4.74
+      ],
+      "maximumEndpointDifferenceSeconds": 0.6800000000000006,
+      "smallMinimumRawProbability": 0.7127190828323364,
+      "mediumMinimumRawProbability": 0.6230875253677368,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line2",
+      "unit": "line",
+      "sourceText": "长长的面条儿，大大的蛋糕。",
+      "sourceTrack": "course-assets/hsk2/audio/6-5.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line3",
+      "unit": "line",
+      "sourceText": "你看，还有鱼啊肉啊什么的，都是你喜欢吃的。",
+      "sourceTrack": "course-assets/hsk2/audio/6-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        8.48,
+        13.88
+      ],
+      "mediumRange": [
+        8.72,
+        14.14
+      ],
+      "maximumEndpointDifferenceSeconds": 0.2599999999999998,
+      "smallMinimumRawProbability": 0.39802923798561096,
+      "mediumMinimumRawProbability": 0.8630421161651611,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line4",
+      "unit": "line",
+      "sourceText": "谢谢爸爸、妈妈！",
+      "sourceTrack": "course-assets/hsk2/audio/6-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        14.36,
+        16.04
+      ],
+      "mediumRange": [
+        14.42,
+        16.3
+      ],
+      "maximumEndpointDifferenceSeconds": 0.26000000000000156,
+      "smallMinimumRawProbability": 0.9717385768890381,
+      "mediumMinimumRawProbability": 0.9431140422821045,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line5",
+      "unit": "line",
+      "sourceText": "快去叫弟弟过来吃饭吧，吃完饭我们还要出去玩呢。",
+      "sourceTrack": "course-assets/hsk2/audio/6-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        17.04,
+        22.06
+      ],
+      "mediumRange": [
+        17.22,
+        22.44
+      ],
+      "maximumEndpointDifferenceSeconds": 0.38000000000000256,
+      "smallMinimumRawProbability": 0.8929229974746704,
+      "mediumMinimumRawProbability": 0.8856896162033081,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line6",
+      "unit": "line",
+      "sourceText": "过生日真好啊！",
+      "sourceTrack": "course-assets/hsk2/audio/6-5.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        23.26,
+        24.66
+      ],
+      "mediumRange": [
+        23.34,
+        25.06
+      ],
+      "maximumEndpointDifferenceSeconds": 0.3999999999999986,
+      "smallMinimumRawProbability": 0.977202832698822,
+      "mediumMinimumRawProbability": 0.9805542230606079,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line7",
+      "unit": "line",
+      "sourceText": "是的，过生日就要吃好吃的，还要高高兴兴地玩。",
+      "sourceTrack": "course-assets/hsk2/audio/6-5.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word09",
+      "unit": "word",
+      "sourceText": "长",
+      "sourceTrack": "course-assets/hsk2/audio/6-6.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word10",
+      "unit": "word",
+      "sourceText": "鱼",
+      "sourceTrack": "course-assets/hsk2/audio/6-6.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        3.0,
+        3.86
+      ],
+      "mediumRange": [
+        2.88,
+        4.66
+      ],
+      "maximumEndpointDifferenceSeconds": 0.8000000000000003,
+      "smallMinimumRawProbability": 0.6986282989382744,
+      "mediumMinimumRawProbability": 0.9477148056030273,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word11",
+      "unit": "word",
+      "sourceText": "肉",
+      "sourceTrack": "course-assets/hsk2/audio/6-6.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        5.0,
+        5.76
+      ],
+      "mediumRange": [
+        6.32,
+        6.8
+      ],
+      "maximumEndpointDifferenceSeconds": 1.3200000000000003,
+      "smallMinimumRawProbability": 0.6590768694877625,
+      "mediumMinimumRawProbability": 0.994200587272644,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word12",
+      "unit": "word",
+      "sourceText": "过",
+      "sourceTrack": "course-assets/hsk2/audio/6-6.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        7.0,
+        7.9
+      ],
+      "mediumRange": [
+        8.52,
+        8.9
+      ],
+      "maximumEndpointDifferenceSeconds": 1.5199999999999996,
+      "smallMinimumRawProbability": 0.9643494486808777,
+      "mediumMinimumRawProbability": 0.9723807573318481,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word13",
+      "unit": "word",
+      "sourceText": "地",
+      "sourceTrack": "course-assets/hsk2/audio/6-6.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1",
+      "unit": "line",
+      "sourceText": "今天是女儿的生日。我们买了蛋糕，做了面条儿，还做了鱼啊肉啊什么的。吃完晚饭，一家人去看了个电影。回家后，孩子们早早地就上床了。明天不上学，他们说要舒舒服服地睡一觉，让我们晚点儿叫他们起床。这是很忙、很累，但很快乐的一天。",
+      "sourceTrack": "course-assets/hsk2/audio/6-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence1",
+      "unit": "sentence",
+      "sourceText": "今天是女儿的生日。",
+      "sourceTrack": "course-assets/hsk2/audio/6-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence2",
+      "unit": "sentence",
+      "sourceText": "我们买了蛋糕，做了面条儿，还做了鱼啊肉啊什么的。",
+      "sourceTrack": "course-assets/hsk2/audio/6-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence3",
+      "unit": "sentence",
+      "sourceText": "吃完晚饭，一家人去看了个电影。",
+      "sourceTrack": "course-assets/hsk2/audio/6-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence4",
+      "unit": "sentence",
+      "sourceText": "回家后，孩子们早早地就上床了。",
+      "sourceTrack": "course-assets/hsk2/audio/6-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence5",
+      "unit": "sentence",
+      "sourceText": "明天不上学，他们说要舒舒服服地睡一觉，让我们晚点儿叫他们起床。",
+      "sourceTrack": "course-assets/hsk2/audio/6-7.mp3",
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback",
+      "mediumStatus": "unmatched-in-unprompted-ASR; keep whole-track fallback"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence6",
+      "unit": "sentence",
+      "sourceText": "这是很忙、很累，但很快乐的一天。",
+      "sourceTrack": "course-assets/hsk2/audio/6-7.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        26.26,
+        30.32
+      ],
+      "mediumRange": [
+        26.32,
+        30.52
+      ],
+      "maximumEndpointDifferenceSeconds": 0.1999999999999993,
+      "smallMinimumRawProbability": 0.4006618559360504,
+      "mediumMinimumRawProbability": 0.7566209435462952,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word14",
+      "unit": "word",
+      "sourceText": "床",
+      "sourceTrack": "course-assets/hsk2/audio/6-8.mp3",
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review",
+      "smallRange": [
+        0.0,
+        1.42
+      ],
+      "mediumRange": [
+        0.0,
+        2.22
+      ],
+      "maximumEndpointDifferenceSeconds": 0.8000000000000003,
+      "smallMinimumRawProbability": 0.9436682760715485,
+      "mediumMinimumRawProbability": 0.9317362010478973,
+      "status": "two raw observations agree in strict source characters; acoustic/crop review still required"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word15",
+      "unit": "word",
+      "sourceText": "舒服",
+      "sourceTrack": "course-assets/hsk2/audio/6-8.mp3",
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallStatus": "ASR-exact-observations-awaiting-review",
+      "mediumStatus": "ASR-exact-observations-awaiting-review"
+    }
+  ],
+  "hardHeldMediumTracks": [
+    {
+      "level": 2,
+      "lesson": 5,
+      "track": 2,
+      "reason": "71 textual 上来 occurrences, subtitles hallucination and zero-duration words; no validation of small"
+    }
+  ],
+  "productionApprovedCount": 0,
+  "humanListening": false
+}

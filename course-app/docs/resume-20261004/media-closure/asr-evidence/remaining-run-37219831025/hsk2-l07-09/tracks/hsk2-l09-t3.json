@@ -1,0 +1,885 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l09:audio3",
+    "level": 2,
+    "lesson": 9,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/9-3.mp3",
+    "sha256": "8cd4c638a2ca6e1ed22d2da9a14b6f6333c3d2318897630e33d2a560f2057c50",
+    "bytes": 750984,
+    "manifestDurationSeconds": 29.333333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 469248,
+      "durationSeconds": 29.328,
+      "sha256": "649d65025bf5006802a8bc53926a1ad96cab156914118bc6a092d6c1b148dc52"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 29.328,
+    "duration_after_vad": 29.328,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.5799999999999996,
+      "end": 4.86,
+      "text": "门口有家奶茶店,你想喝杯奶茶吗?",
+      "tokens": [
+        50364,
+        8259,
+        101,
+        18144,
+        2412,
+        5155,
+        42525,
+        43499,
+        22469,
+        11,
+        38386,
+        26784,
+        45458,
+        42525,
+        43499,
+        14769,
+        30,
+        50614
+      ],
+      "avg_logprob": -0.10099911343371659,
+      "compression_ratio": 1.3602150537634408,
+      "no_speech_prob": 0.18496878445148468,
+      "words": [
+        {
+          "start": 0.5799999999999996,
+          "end": 1.06,
+          "word": "门",
+          "probability": 0.8059353530406952
+        },
+        {
+          "start": 1.06,
+          "end": 1.26,
+          "word": "口",
+          "probability": 0.9940324425697327
+        },
+        {
+          "start": 1.26,
+          "end": 1.5,
+          "word": "有",
+          "probability": 0.9837693572044373
+        },
+        {
+          "start": 1.5,
+          "end": 1.7,
+          "word": "家",
+          "probability": 0.9863980412483215
+        },
+        {
+          "start": 1.7,
+          "end": 1.94,
+          "word": "奶",
+          "probability": 0.9903700947761536
+        },
+        {
+          "start": 1.94,
+          "end": 2.12,
+          "word": "茶",
+          "probability": 0.9994126558303833
+        },
+        {
+          "start": 2.12,
+          "end": 2.38,
+          "word": "店,",
+          "probability": 0.9933324456214905
+        },
+        {
+          "start": 3.38,
+          "end": 3.68,
+          "word": "你想",
+          "probability": 0.7689608931541443
+        },
+        {
+          "start": 3.68,
+          "end": 4.0,
+          "word": "喝",
+          "probability": 0.9956468939781189
+        },
+        {
+          "start": 4.0,
+          "end": 4.18,
+          "word": "杯",
+          "probability": 0.9924019575119019
+        },
+        {
+          "start": 4.18,
+          "end": 4.38,
+          "word": "奶",
+          "probability": 0.9892393350601196
+        },
+        {
+          "start": 4.38,
+          "end": 4.62,
+          "word": "茶",
+          "probability": 0.9997465014457703
+        },
+        {
+          "start": 4.62,
+          "end": 4.86,
+          "word": "吗?",
+          "probability": 0.9002965092658997
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.96,
+      "end": 9.46,
+      "text": "我想喝咖啡,还是去咖啡店吧。",
+      "tokens": [
+        50614,
+        25246,
+        26784,
+        8975,
+        244,
+        3284,
+        94,
+        11,
+        45726,
+        6734,
+        8975,
+        244,
+        3284,
+        94,
+        22469,
+        6062,
+        1543,
+        50864
+      ],
+      "avg_logprob": -0.10099911343371659,
+      "compression_ratio": 1.3602150537634408,
+      "no_speech_prob": 0.18496878445148468,
+      "words": [
+        {
+          "start": 5.96,
+          "end": 6.42,
+          "word": "我想",
+          "probability": 0.9618229269981384
+        },
+        {
+          "start": 6.42,
+          "end": 6.82,
+          "word": "喝",
+          "probability": 0.9957603812217712
+        },
+        {
+          "start": 6.82,
+          "end": 7.04,
+          "word": "咖",
+          "probability": 0.9947786927223206
+        },
+        {
+          "start": 7.04,
+          "end": 7.26,
+          "word": "啡,",
+          "probability": 0.9988853335380554
+        },
+        {
+          "start": 7.84,
+          "end": 8.14,
+          "word": "还是",
+          "probability": 0.9309718012809753
+        },
+        {
+          "start": 8.14,
+          "end": 8.46,
+          "word": "去",
+          "probability": 0.9936002492904663
+        },
+        {
+          "start": 8.46,
+          "end": 8.76,
+          "word": "咖",
+          "probability": 0.9956478178501129
+        },
+        {
+          "start": 8.76,
+          "end": 8.96,
+          "word": "啡",
+          "probability": 0.9991092085838318
+        },
+        {
+          "start": 8.96,
+          "end": 9.18,
+          "word": "店",
+          "probability": 0.9987941980361938
+        },
+        {
+          "start": 9.18,
+          "end": 9.46,
+          "word": "吧。",
+          "probability": 0.9670398831367493
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 10.48,
+      "end": 12.22,
+      "text": "咖啡店离这儿有点远。",
+      "tokens": [
+        50864,
+        8975,
+        244,
+        3284,
+        94,
+        22469,
+        18614,
+        119,
+        5562,
+        22933,
+        2412,
+        12579,
+        3316,
+        250,
+        1543,
+        51014
+      ],
+      "avg_logprob": -0.10099911343371659,
+      "compression_ratio": 1.3602150537634408,
+      "no_speech_prob": 0.18496878445148468,
+      "words": [
+        {
+          "start": 10.48,
+          "end": 10.66,
+          "word": "咖",
+          "probability": 0.9940033257007599
+        },
+        {
+          "start": 10.66,
+          "end": 10.82,
+          "word": "啡",
+          "probability": 0.999205082654953
+        },
+        {
+          "start": 10.82,
+          "end": 11.1,
+          "word": "店",
+          "probability": 0.9989925026893616
+        },
+        {
+          "start": 11.1,
+          "end": 11.32,
+          "word": "离",
+          "probability": 0.9970660209655762
+        },
+        {
+          "start": 11.32,
+          "end": 11.48,
+          "word": "这",
+          "probability": 0.9620582461357117
+        },
+        {
+          "start": 11.48,
+          "end": 11.6,
+          "word": "儿",
+          "probability": 0.7726920247077942
+        },
+        {
+          "start": 11.6,
+          "end": 11.74,
+          "word": "有",
+          "probability": 0.9578308463096619
+        },
+        {
+          "start": 11.74,
+          "end": 11.9,
+          "word": "点",
+          "probability": 0.9955092668533325
+        },
+        {
+          "start": 11.9,
+          "end": 12.22,
+          "word": "远。",
+          "probability": 0.998114824295044
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 13.48,
+      "end": 16.92,
+      "text": "没关系,那家店的咖啡很好喝。",
+      "tokens": [
+        51014,
+        10062,
+        28053,
+        25368,
+        11,
+        4184,
+        5155,
+        22469,
+        1546,
+        8975,
+        244,
+        3284,
+        94,
+        23801,
+        26784,
+        1543,
+        51214
+      ],
+      "avg_logprob": -0.10099911343371659,
+      "compression_ratio": 1.3602150537634408,
+      "no_speech_prob": 0.18496878445148468,
+      "words": [
+        {
+          "start": 13.48,
+          "end": 13.76,
+          "word": "没",
+          "probability": 0.9873535633087158
+        },
+        {
+          "start": 13.76,
+          "end": 13.96,
+          "word": "关",
+          "probability": 0.9949237704277039
+        },
+        {
+          "start": 13.96,
+          "end": 14.18,
+          "word": "系,",
+          "probability": 0.9668678045272827
+        },
+        {
+          "start": 14.9,
+          "end": 15.06,
+          "word": "那",
+          "probability": 0.9777624011039734
+        },
+        {
+          "start": 15.06,
+          "end": 15.28,
+          "word": "家",
+          "probability": 0.99652498960495
+        },
+        {
+          "start": 15.28,
+          "end": 15.46,
+          "word": "店",
+          "probability": 0.9943291544914246
+        },
+        {
+          "start": 15.46,
+          "end": 15.6,
+          "word": "的",
+          "probability": 0.9990447163581848
+        },
+        {
+          "start": 15.6,
+          "end": 15.84,
+          "word": "咖",
+          "probability": 0.999016135931015
+        },
+        {
+          "start": 15.84,
+          "end": 16.1,
+          "word": "啡",
+          "probability": 0.999521791934967
+        },
+        {
+          "start": 16.1,
+          "end": 16.58,
+          "word": "很好",
+          "probability": 0.9642710089683533
+        },
+        {
+          "start": 16.58,
+          "end": 16.92,
+          "word": "喝。",
+          "probability": 0.9989128112792969
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 17.78,
+      "end": 21.5,
+      "text": "那你等一下,我去买杯奶茶。",
+      "tokens": [
+        51214,
+        4184,
+        2166,
+        24554,
+        11,
+        1654,
+        6734,
+        2930,
+        108,
+        45458,
+        42525,
+        43499,
+        1543,
+        51464
+      ],
+      "avg_logprob": -0.10099911343371659,
+      "compression_ratio": 1.3602150537634408,
+      "no_speech_prob": 0.18496878445148468,
+      "words": [
+        {
+          "start": 17.78,
+          "end": 18.2,
+          "word": "那",
+          "probability": 0.9863402843475342
+        },
+        {
+          "start": 18.2,
+          "end": 18.4,
+          "word": "你",
+          "probability": 0.9773298501968384
+        },
+        {
+          "start": 18.4,
+          "end": 18.84,
+          "word": "等一下,",
+          "probability": 0.8242210745811462
+        },
+        {
+          "start": 20.06,
+          "end": 20.44,
+          "word": "我",
+          "probability": 0.9936270713806152
+        },
+        {
+          "start": 20.44,
+          "end": 20.6,
+          "word": "去",
+          "probability": 0.9985212683677673
+        },
+        {
+          "start": 20.6,
+          "end": 20.8,
+          "word": "买",
+          "probability": 0.9968652427196503
+        },
+        {
+          "start": 20.8,
+          "end": 20.98,
+          "word": "杯",
+          "probability": 0.9992726445198059
+        },
+        {
+          "start": 20.98,
+          "end": 21.2,
+          "word": "奶",
+          "probability": 0.9938230514526367
+        },
+        {
+          "start": 21.2,
+          "end": 21.5,
+          "word": "茶。",
+          "probability": 0.999693751335144
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 22.52,
+      "end": 24.16,
+      "text": "你不想喝咖啡吗?",
+      "tokens": [
+        51464,
+        2166,
+        1960,
+        7093,
+        26784,
+        8975,
+        244,
+        3284,
+        94,
+        14769,
+        30,
+        51614
+      ],
+      "avg_logprob": -0.10099911343371659,
+      "compression_ratio": 1.3602150537634408,
+      "no_speech_prob": 0.18496878445148468,
+      "words": [
+        {
+          "start": 22.52,
+          "end": 22.8,
+          "word": "你",
+          "probability": 0.9874914884567261
+        },
+        {
+          "start": 22.8,
+          "end": 22.94,
+          "word": "不",
+          "probability": 0.9969584941864014
+        },
+        {
+          "start": 22.94,
+          "end": 23.18,
+          "word": "想",
+          "probability": 0.998854398727417
+        },
+        {
+          "start": 23.18,
+          "end": 23.48,
+          "word": "喝",
+          "probability": 0.9972215890884399
+        },
+        {
+          "start": 23.48,
+          "end": 23.74,
+          "word": "咖",
+          "probability": 0.9993172883987427
+        },
+        {
+          "start": 23.74,
+          "end": 23.94,
+          "word": "啡",
+          "probability": 0.9994222819805145
+        },
+        {
+          "start": 23.94,
+          "end": 24.16,
+          "word": "吗?",
+          "probability": 0.9731743335723877
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 25.4,
+      "end": 28.4,
+      "text": "喝了咖啡,晚上就别想睡觉了。",
+      "tokens": [
+        51614,
+        26784,
+        2289,
+        8975,
+        244,
+        3284,
+        94,
+        11,
+        50157,
+        3111,
+        18453,
+        7093,
+        40490,
+        24447,
+        2289,
+        1543,
+        51814
+      ],
+      "avg_logprob": -0.10099911343371659,
+      "compression_ratio": 1.3602150537634408,
+      "no_speech_prob": 0.18496878445148468,
+      "words": [
+        {
+          "start": 25.4,
+          "end": 25.64,
+          "word": "喝",
+          "probability": 0.9961889386177063
+        },
+        {
+          "start": 25.64,
+          "end": 25.78,
+          "word": "了",
+          "probability": 0.9966049194335938
+        },
+        {
+          "start": 25.78,
+          "end": 25.98,
+          "word": "咖",
+          "probability": 0.9991538822650909
+        },
+        {
+          "start": 25.98,
+          "end": 26.26,
+          "word": "啡,",
+          "probability": 0.9996382296085358
+        },
+        {
+          "start": 26.76,
+          "end": 27.06,
+          "word": "晚上",
+          "probability": 0.9908418655395508
+        },
+        {
+          "start": 27.06,
+          "end": 27.36,
+          "word": "就",
+          "probability": 0.9931754469871521
+        },
+        {
+          "start": 27.36,
+          "end": 27.56,
+          "word": "别",
+          "probability": 0.9906249642372131
+        },
+        {
+          "start": 27.56,
+          "end": 27.76,
+          "word": "想",
+          "probability": 0.9984756112098694
+        },
+        {
+          "start": 27.76,
+          "end": 27.96,
+          "word": "睡",
+          "probability": 0.9975861310958862
+        },
+        {
+          "start": 27.96,
+          "end": 28.2,
+          "word": "觉",
+          "probability": 0.9983463287353516
+        },
+        {
+          "start": 28.2,
+          "end": 28.4,
+          "word": "了。",
+          "probability": 0.9827877879142761
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2840,
+      "start": 29.220000000000002,
+      "end": 29.3,
+      "text": "字幕by索兰娅",
+      "tokens": [
+        50364,
+        22381,
+        40211,
+        2322,
+        7732,
+        95,
+        2347,
+        108,
+        19976,
+        227,
+        50464
+      ],
+      "avg_logprob": -0.5506527225176493,
+      "compression_ratio": 0.6538461538461539,
+      "no_speech_prob": 0.5698304176330566,
+      "words": [
+        {
+          "start": 29.220000000000002,
+          "end": 29.26,
+          "word": "字",
+          "probability": 0.07898882031440735
+        },
+        {
+          "start": 29.26,
+          "end": 29.28,
+          "word": "幕",
+          "probability": 0.9966024160385132
+        },
+        {
+          "start": 29.28,
+          "end": 29.28,
+          "word": "by",
+          "probability": 0.07541416585445404
+        },
+        {
+          "start": 29.28,
+          "end": 29.28,
+          "word": "索",
+          "probability": 0.7029588967561722
+        },
+        {
+          "start": 29.28,
+          "end": 29.28,
+          "word": "兰",
+          "probability": 0.9087976813316345
+        },
+        {
+          "start": 29.28,
+          "end": 29.3,
+          "word": "娅",
+          "probability": 0.7968936860561371
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 6.97498997400001,
+  "realTimeFactor": 0.23782699038461574,
+  "observationChecks": {
+    "rawWordCount": 76,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

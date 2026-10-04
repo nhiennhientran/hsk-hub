@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "status": "passed-evidence-integrity; candidate quality not certified",
+  "runId": 37217540172,
+  "artifactId": 11308883505,
+  "artifactZIPDigest": "90a2e29e7bc756852f60255c9c1f4539cc7c09810a2ad21a93f1da6dff39c209",
+  "checks": [
+    "final CI source commit matches",
+    "frozen transcribe script SHA matches",
+    "fixed dependency input SHA matches",
+    "run completed ASR only, not production approval",
+    "actual model snapshot equals official fixed revision",
+    "runtime version guard passed",
+    "all 26 pinned actual runtime dependency versions independently compared",
+    "preflight evidence SHA matches run",
+    "source comparison bytes equal frozen local pilot input",
+    "frozen full original audio manifest SHA matches",
+    "all three frozen complete lesson JSON file hashes match",
+    "24/24 final raw evidence file hashes and original MP3 hashes match",
+    "24/24 worker PCM hashes/samples/durations equal actual local full decode",
+    "24/24 raw option records reject source prompt, prefix, hotwords or previous-text conditioning"
+  ],
+  "sourceTrackCount": 24,
+  "frozenLessonCount": 3,
+  "modelFileHashScope": "computed and recorded by verified frozen worker script; model binary not included in evidence artifact",
+  "modelFiles": [
+    {
+      "file": "config.json",
+      "bytes": 2370,
+      "sha256": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+    },
+    {
+      "file": "model.bin",
+      "bytes": 483546902,
+      "sha256": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671"
+    },
+    {
+      "file": "tokenizer.json",
+      "bytes": 2203239,
+      "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+    },
+    {
+      "file": "vocabulary.txt",
+      "bytes": 459861,
+      "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+    }
+  ],
+  "actualComputeType": "int8_float32",
+  "totalDecodedSeconds": 462.7679999999999,
+  "totalInferenceSeconds": 38.772731376999985,
+  "realTimeFactor": 0.08378438305371157,
+  "peakResidentMemoryKiB": 764788,
+  "humanListening": false,
+  "productionApprovedClipCount": 0
+}

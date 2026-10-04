@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "purpose": "post-ASR comparison only; never inference input",
+  "targets": [
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line3",
+      "sourceText": "因为我喜欢白色啊！",
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 32,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "unit": "sentence"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word16",
+      "sourceText": "颜色",
+      "source": {
+        "pdfPage": 50,
+        "printedPage": 35,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "unit": "word"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "sourceText": "你们别客气，快坐吧！",
+      "source": {
+        "pdfPage": 55,
+        "printedPage": 40,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "unit": "sentence"
+    }
+  ]
+}

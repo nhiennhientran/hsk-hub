@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l15:audio6",
+    "level": 2,
+    "lesson": 15,
+    "track": 6,
+    "kind": "vocab",
+    "text": 3,
+    "file": "course-assets/hsk2/audio/15-6.mp3",
+    "sha256": "f0ea70611863844c846a23c431ef3f59c140b5edd3e493ffd194ad6ea9a2c01c",
+    "bytes": 257916,
+    "manifestDurationSeconds": 8.909333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 142464,
+      "durationSeconds": 8.904,
+      "sha256": "99589855368434ff5abddef4525299e3063c07daf8e5c2b90e73952e1ef0d704"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 8.904,
+    "duration_after_vad": 8.904,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 1.54,
+      "text": "机场",
+      "tokens": [
+        50364,
+        37960,
+        50255,
+        50538
+      ],
+      "avg_logprob": -0.7374315812037542,
+      "compression_ratio": 0.5769230769230769,
+      "no_speech_prob": 0.4553939998149872,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.84,
+          "word": "机",
+          "probability": 0.7484893798828125
+        },
+        {
+          "start": 0.84,
+          "end": 1.54,
+          "word": "场",
+          "probability": 0.966339111328125
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.48,
+      "end": 4.6,
+      "text": "机票",
+      "tokens": [
+        50538,
+        37960,
+        41925,
+        50684
+      ],
+      "avg_logprob": -0.7374315812037542,
+      "compression_ratio": 0.5769230769230769,
+      "no_speech_prob": 0.4553939998149872,
+      "words": [
+        {
+          "start": 3.26,
+          "end": 3.96,
+          "word": "机",
+          "probability": 0.6484581828117371
+        },
+        {
+          "start": 3.96,
+          "end": 4.6,
+          "word": "票",
+          "probability": 0.9953857064247131
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 6.4,
+      "end": 7.26,
+      "text": "飞",
+      "tokens": [
+        50684,
+        11808,
+        252,
+        50800
+      ],
+      "avg_logprob": -0.7374315812037542,
+      "compression_ratio": 0.5769230769230769,
+      "no_speech_prob": 0.4553939998149872,
+      "words": [
+        {
+          "start": 6.4,
+          "end": 7.26,
+          "word": "飞",
+          "probability": 0.6867633163928986
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.4600035679999905,
+  "realTimeFactor": 0.16397164959568628,
+  "observationChecks": {
+    "rawWordCount": 5,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

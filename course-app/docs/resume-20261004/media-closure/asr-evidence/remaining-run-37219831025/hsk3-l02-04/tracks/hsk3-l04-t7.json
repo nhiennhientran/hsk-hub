@@ -1,0 +1,881 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l04:audio7",
+    "level": 3,
+    "lesson": 4,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/4-7.mp3",
+    "sha256": "7745da8ff964b2051f11960ad59ce4437d0507c32269e3221315419211af411f",
+    "bytes": 522785,
+    "manifestDurationSeconds": 30.136256,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 483161,
+      "durationSeconds": 30.1975625,
+      "sha256": "3992810318cbc078d48e4d0884ac91ff40839ffe404aea72f9e9a2cb102336d4"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 30.1975625,
+    "duration_after_vad": 30.1975625,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 7.42,
+      "text": "今天是我們旅遊的第一天,我們很早就起床去機場了,沒想到飛機晚點了。",
+      "tokens": [
+        50364,
+        12074,
+        1541,
+        5884,
+        4479,
+        227,
+        31878,
+        1546,
+        18049,
+        6135,
+        11,
+        5884,
+        4563,
+        21176,
+        3111,
+        9147,
+        6346,
+        232,
+        6734,
+        17543,
+        21446,
+        2289,
+        11,
+        4913,
+        7093,
+        4511,
+        34629,
+        17543,
+        27080,
+        8216,
+        2289,
+        1543,
+        50758
+      ],
+      "avg_logprob": -0.09927703577211533,
+      "compression_ratio": 1.2641509433962264,
+      "no_speech_prob": 0.0009253851021640003,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.58,
+          "word": "今天",
+          "probability": 0.7151513695716858
+        },
+        {
+          "start": 0.58,
+          "end": 1.04,
+          "word": "是",
+          "probability": 0.9414593577384949
+        },
+        {
+          "start": 1.04,
+          "end": 1.3,
+          "word": "我們",
+          "probability": 0.7540572881698608
+        },
+        {
+          "start": 1.3,
+          "end": 1.56,
+          "word": "旅",
+          "probability": 0.9996924698352814
+        },
+        {
+          "start": 1.56,
+          "end": 1.72,
+          "word": "遊",
+          "probability": 0.9776322841644287
+        },
+        {
+          "start": 1.72,
+          "end": 1.88,
+          "word": "的",
+          "probability": 0.9990710020065308
+        },
+        {
+          "start": 1.88,
+          "end": 2.14,
+          "word": "第一",
+          "probability": 0.9868329167366028
+        },
+        {
+          "start": 2.14,
+          "end": 2.52,
+          "word": "天,",
+          "probability": 0.9995556473731995
+        },
+        {
+          "start": 3.02,
+          "end": 3.24,
+          "word": "我們",
+          "probability": 0.9873749017715454
+        },
+        {
+          "start": 3.24,
+          "end": 3.5,
+          "word": "很",
+          "probability": 0.9976167678833008
+        },
+        {
+          "start": 3.5,
+          "end": 3.72,
+          "word": "早",
+          "probability": 0.9993883371353149
+        },
+        {
+          "start": 3.72,
+          "end": 3.96,
+          "word": "就",
+          "probability": 0.9969797730445862
+        },
+        {
+          "start": 3.96,
+          "end": 4.18,
+          "word": "起",
+          "probability": 0.959757387638092
+        },
+        {
+          "start": 4.18,
+          "end": 4.34,
+          "word": "床",
+          "probability": 0.9983673095703125
+        },
+        {
+          "start": 4.34,
+          "end": 4.58,
+          "word": "去",
+          "probability": 0.991950273513794
+        },
+        {
+          "start": 4.58,
+          "end": 4.76,
+          "word": "機",
+          "probability": 0.9963255524635315
+        },
+        {
+          "start": 4.76,
+          "end": 5.02,
+          "word": "場",
+          "probability": 0.9932181239128113
+        },
+        {
+          "start": 5.02,
+          "end": 5.26,
+          "word": "了,",
+          "probability": 0.9869797229766846
+        },
+        {
+          "start": 5.84,
+          "end": 6.02,
+          "word": "沒",
+          "probability": 0.9915395379066467
+        },
+        {
+          "start": 6.02,
+          "end": 6.18,
+          "word": "想",
+          "probability": 0.9985033273696899
+        },
+        {
+          "start": 6.18,
+          "end": 6.34,
+          "word": "到",
+          "probability": 0.9993011951446533
+        },
+        {
+          "start": 6.34,
+          "end": 6.5,
+          "word": "飛",
+          "probability": 0.9968529343605042
+        },
+        {
+          "start": 6.5,
+          "end": 6.64,
+          "word": "機",
+          "probability": 0.9941256046295166
+        },
+        {
+          "start": 6.64,
+          "end": 6.88,
+          "word": "晚",
+          "probability": 0.9721497297286987
+        },
+        {
+          "start": 6.88,
+          "end": 7.16,
+          "word": "點",
+          "probability": 0.9902322292327881
+        },
+        {
+          "start": 7.16,
+          "end": 7.42,
+          "word": "了。",
+          "probability": 0.9910934567451477
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 8.16,
+      "end": 16.26,
+      "text": "我們到的時候,天已經黑了,但是司機小李一直在機場等我們,一點也沒著急。",
+      "tokens": [
+        50758,
+        5884,
+        4511,
+        20643,
+        11,
+        6135,
+        25338,
+        32141,
+        2289,
+        11,
+        11189,
+        32981,
+        17543,
+        7322,
+        31206,
+        34448,
+        3581,
+        17543,
+        21446,
+        10187,
+        5884,
+        11,
+        19202,
+        6404,
+        4913,
+        19382,
+        36379,
+        1543,
+        51202
+      ],
+      "avg_logprob": -0.09927703577211533,
+      "compression_ratio": 1.2641509433962264,
+      "no_speech_prob": 0.0009253851021640003,
+      "words": [
+        {
+          "start": 8.16,
+          "end": 8.5,
+          "word": "我們",
+          "probability": 0.9794600605964661
+        },
+        {
+          "start": 8.5,
+          "end": 8.74,
+          "word": "到",
+          "probability": 0.9688838720321655
+        },
+        {
+          "start": 8.74,
+          "end": 9.16,
+          "word": "的時候,",
+          "probability": 0.9090330600738525
+        },
+        {
+          "start": 9.64,
+          "end": 9.82,
+          "word": "天",
+          "probability": 0.9970095157623291
+        },
+        {
+          "start": 9.82,
+          "end": 10.2,
+          "word": "已經",
+          "probability": 0.9911837577819824
+        },
+        {
+          "start": 10.2,
+          "end": 10.6,
+          "word": "黑",
+          "probability": 0.9967339038848877
+        },
+        {
+          "start": 10.6,
+          "end": 10.88,
+          "word": "了,",
+          "probability": 0.999652624130249
+        },
+        {
+          "start": 11.44,
+          "end": 11.86,
+          "word": "但是",
+          "probability": 0.9916062355041504
+        },
+        {
+          "start": 11.86,
+          "end": 12.08,
+          "word": "司",
+          "probability": 0.8449828028678894
+        },
+        {
+          "start": 12.08,
+          "end": 12.24,
+          "word": "機",
+          "probability": 0.998399555683136
+        },
+        {
+          "start": 12.24,
+          "end": 12.48,
+          "word": "小",
+          "probability": 0.9765114188194275
+        },
+        {
+          "start": 12.48,
+          "end": 12.72,
+          "word": "李",
+          "probability": 0.8508305549621582
+        },
+        {
+          "start": 12.72,
+          "end": 13.06,
+          "word": "一直",
+          "probability": 0.9657977223396301
+        },
+        {
+          "start": 13.06,
+          "end": 13.36,
+          "word": "在",
+          "probability": 0.9986547231674194
+        },
+        {
+          "start": 13.36,
+          "end": 13.54,
+          "word": "機",
+          "probability": 0.9990659356117249
+        },
+        {
+          "start": 13.54,
+          "end": 13.78,
+          "word": "場",
+          "probability": 0.9990309476852417
+        },
+        {
+          "start": 13.78,
+          "end": 14.02,
+          "word": "等",
+          "probability": 0.9870331287384033
+        },
+        {
+          "start": 14.02,
+          "end": 14.4,
+          "word": "我們,",
+          "probability": 0.9958992600440979
+        },
+        {
+          "start": 14.92,
+          "end": 15.24,
+          "word": "一點",
+          "probability": 0.9947816729545593
+        },
+        {
+          "start": 15.24,
+          "end": 15.58,
+          "word": "也",
+          "probability": 0.93680340051651
+        },
+        {
+          "start": 15.58,
+          "end": 15.76,
+          "word": "沒",
+          "probability": 0.9929647445678711
+        },
+        {
+          "start": 15.76,
+          "end": 15.94,
+          "word": "著",
+          "probability": 0.8997095227241516
+        },
+        {
+          "start": 15.94,
+          "end": 16.26,
+          "word": "急。",
+          "probability": 0.9990247488021851
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 17.0,
+      "end": 22.56,
+      "text": "他特別熱情,路上給我們介紹了很多東西,還準備了水果。",
+      "tokens": [
+        51202,
+        5000,
+        38446,
+        32745,
+        10570,
+        11,
+        24658,
+        5708,
+        17798,
+        5884,
+        30312,
+        38193,
+        2289,
+        20778,
+        26978,
+        11,
+        7824,
+        36241,
+        2289,
+        15590,
+        9319,
+        1543,
+        51524
+      ],
+      "avg_logprob": -0.09927703577211533,
+      "compression_ratio": 1.2641509433962264,
+      "no_speech_prob": 0.0009253851021640003,
+      "words": [
+        {
+          "start": 17.0,
+          "end": 17.24,
+          "word": "他",
+          "probability": 0.8264078497886658
+        },
+        {
+          "start": 17.24,
+          "end": 17.62,
+          "word": "特別",
+          "probability": 0.9949434399604797
+        },
+        {
+          "start": 17.62,
+          "end": 17.88,
+          "word": "熱",
+          "probability": 0.9946809411048889
+        },
+        {
+          "start": 17.88,
+          "end": 18.1,
+          "word": "情,",
+          "probability": 0.9967688322067261
+        },
+        {
+          "start": 18.6,
+          "end": 18.74,
+          "word": "路",
+          "probability": 0.9897207617759705
+        },
+        {
+          "start": 18.74,
+          "end": 19.0,
+          "word": "上",
+          "probability": 0.9998360872268677
+        },
+        {
+          "start": 19.0,
+          "end": 19.2,
+          "word": "給",
+          "probability": 0.9990255832672119
+        },
+        {
+          "start": 19.2,
+          "end": 19.44,
+          "word": "我們",
+          "probability": 0.9975947737693787
+        },
+        {
+          "start": 19.44,
+          "end": 19.66,
+          "word": "介",
+          "probability": 0.9907295107841492
+        },
+        {
+          "start": 19.66,
+          "end": 19.86,
+          "word": "紹",
+          "probability": 0.9991672039031982
+        },
+        {
+          "start": 19.86,
+          "end": 20.0,
+          "word": "了",
+          "probability": 0.9933997392654419
+        },
+        {
+          "start": 20.0,
+          "end": 20.26,
+          "word": "很多",
+          "probability": 0.9948221445083618
+        },
+        {
+          "start": 20.26,
+          "end": 20.76,
+          "word": "東西,",
+          "probability": 0.9975069165229797
+        },
+        {
+          "start": 21.34,
+          "end": 21.52,
+          "word": "還",
+          "probability": 0.9978101849555969
+        },
+        {
+          "start": 21.52,
+          "end": 21.78,
+          "word": "準備",
+          "probability": 0.9939968585968018
+        },
+        {
+          "start": 21.78,
+          "end": 22.06,
+          "word": "了",
+          "probability": 0.9996587038040161
+        },
+        {
+          "start": 22.06,
+          "end": 22.3,
+          "word": "水",
+          "probability": 0.9974744915962219
+        },
+        {
+          "start": 22.3,
+          "end": 22.56,
+          "word": "果。",
+          "probability": 0.9979196190834045
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 2256,
+      "start": 23.240000000000002,
+      "end": 29.44,
+      "text": "冰管的房间跟我想的一样漂亮,又大又干净,我非常满意。",
+      "tokens": [
+        50364,
+        5676,
+        108,
+        23131,
+        1546,
+        38242,
+        31685,
+        9678,
+        25246,
+        1546,
+        2257,
+        14496,
+        29019,
+        11,
+        17047,
+        3582,
+        17047,
+        26111,
+        6336,
+        222,
+        11,
+        1654,
+        14392,
+        15868,
+        94,
+        9042,
+        1543,
+        50714
+      ],
+      "avg_logprob": -0.21360268880581035,
+      "compression_ratio": 0.891566265060241,
+      "no_speech_prob": 0.09807630628347397,
+      "words": [
+        {
+          "start": 23.240000000000002,
+          "end": 23.76,
+          "word": "冰",
+          "probability": 0.661412388086319
+        },
+        {
+          "start": 23.76,
+          "end": 23.96,
+          "word": "管",
+          "probability": 0.662010908126831
+        },
+        {
+          "start": 23.96,
+          "end": 24.08,
+          "word": "的",
+          "probability": 0.9816704988479614
+        },
+        {
+          "start": 24.08,
+          "end": 24.28,
+          "word": "房",
+          "probability": 0.99791020154953
+        },
+        {
+          "start": 24.28,
+          "end": 24.52,
+          "word": "间",
+          "probability": 0.5338438153266907
+        },
+        {
+          "start": 24.52,
+          "end": 24.76,
+          "word": "跟",
+          "probability": 0.3599434494972229
+        },
+        {
+          "start": 24.76,
+          "end": 25.1,
+          "word": "我想",
+          "probability": 0.986646294593811
+        },
+        {
+          "start": 25.1,
+          "end": 25.34,
+          "word": "的",
+          "probability": 0.9777926206588745
+        },
+        {
+          "start": 25.34,
+          "end": 25.6,
+          "word": "一",
+          "probability": 0.9654788374900818
+        },
+        {
+          "start": 25.6,
+          "end": 25.74,
+          "word": "样",
+          "probability": 0.9996442794799805
+        },
+        {
+          "start": 25.74,
+          "end": 26.1,
+          "word": "漂亮,",
+          "probability": 0.996454119682312
+        },
+        {
+          "start": 26.64,
+          "end": 26.8,
+          "word": "又",
+          "probability": 0.9897801876068115
+        },
+        {
+          "start": 26.8,
+          "end": 27.1,
+          "word": "大",
+          "probability": 0.9991590976715088
+        },
+        {
+          "start": 27.1,
+          "end": 27.38,
+          "word": "又",
+          "probability": 0.917752742767334
+        },
+        {
+          "start": 27.38,
+          "end": 27.62,
+          "word": "干",
+          "probability": 0.9839473962783813
+        },
+        {
+          "start": 27.62,
+          "end": 27.9,
+          "word": "净,",
+          "probability": 0.9938954710960388
+        },
+        {
+          "start": 28.4,
+          "end": 28.58,
+          "word": "我",
+          "probability": 0.9926066398620605
+        },
+        {
+          "start": 28.58,
+          "end": 28.9,
+          "word": "非常",
+          "probability": 0.996465802192688
+        },
+        {
+          "start": 28.9,
+          "end": 29.18,
+          "word": "满",
+          "probability": 0.999086856842041
+        },
+        {
+          "start": 29.18,
+          "end": 29.44,
+          "word": "意。",
+          "probability": 0.9999421834945679
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 4.71046536099999,
+  "realTimeFactor": 0.15598826431769086,
+  "observationChecks": {
+    "rawWordCount": 87,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

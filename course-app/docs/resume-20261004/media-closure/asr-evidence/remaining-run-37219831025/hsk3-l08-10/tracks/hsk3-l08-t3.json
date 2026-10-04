@@ -1,0 +1,917 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l08:audio3",
+    "level": 3,
+    "lesson": 8,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk3/audio/8-3.mp3",
+    "sha256": "0d3008ff17242d6d34590d3d3c635fa0c55dba6ed6bdb60807a1c459a0b3dd00",
+    "bytes": 600764,
+    "manifestDurationSeconds": 35.009938,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 561319,
+      "durationSeconds": 35.0824375,
+      "sha256": "3b9a9941aaac7675c98c1a70ac02728d244332d3e220e265f88088e60d73616e"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 35.0824375,
+    "duration_after_vad": 35.0824375,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 4.02,
+      "text": "你怎么了?看上去有点不舒服。",
+      "tokens": [
+        50364,
+        2166,
+        48838,
+        30,
+        4200,
+        5708,
+        6734,
+        2412,
+        12579,
+        1960,
+        46204,
+        27408,
+        1543,
+        50564
+      ],
+      "avg_logprob": -0.13060096367118285,
+      "compression_ratio": 1.225130890052356,
+      "no_speech_prob": 0.11517226696014404,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.52,
+          "word": "你",
+          "probability": 0.4009818732738495
+        },
+        {
+          "start": 0.52,
+          "end": 1.06,
+          "word": "怎么了?",
+          "probability": 0.5114379525184631
+        },
+        {
+          "start": 1.68,
+          "end": 1.92,
+          "word": "看",
+          "probability": 0.915507435798645
+        },
+        {
+          "start": 1.92,
+          "end": 2.16,
+          "word": "上",
+          "probability": 0.9901798963546753
+        },
+        {
+          "start": 2.16,
+          "end": 2.46,
+          "word": "去",
+          "probability": 0.9919140338897705
+        },
+        {
+          "start": 2.46,
+          "end": 2.84,
+          "word": "有",
+          "probability": 0.7702984809875488
+        },
+        {
+          "start": 2.84,
+          "end": 3.02,
+          "word": "点",
+          "probability": 0.9982097148895264
+        },
+        {
+          "start": 3.02,
+          "end": 3.28,
+          "word": "不",
+          "probability": 0.9891495108604431
+        },
+        {
+          "start": 3.28,
+          "end": 3.56,
+          "word": "舒",
+          "probability": 0.9973785877227783
+        },
+        {
+          "start": 3.56,
+          "end": 4.02,
+          "word": "服。",
+          "probability": 0.9995766282081604
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.38,
+      "end": 8.62,
+      "text": "昨天游完泳以后,耳朵一直有点疼。",
+      "tokens": [
+        50564,
+        47404,
+        6135,
+        9592,
+        116,
+        14128,
+        6847,
+        111,
+        3588,
+        13547,
+        11,
+        4450,
+        111,
+        1474,
+        113,
+        34448,
+        2412,
+        12579,
+        18140,
+        120,
+        1543,
+        50814
+      ],
+      "avg_logprob": -0.13060096367118285,
+      "compression_ratio": 1.225130890052356,
+      "no_speech_prob": 0.11517226696014404,
+      "words": [
+        {
+          "start": 4.38,
+          "end": 4.98,
+          "word": "昨",
+          "probability": 0.9778048396110535
+        },
+        {
+          "start": 4.98,
+          "end": 5.32,
+          "word": "天",
+          "probability": 0.9903711676597595
+        },
+        {
+          "start": 5.32,
+          "end": 5.54,
+          "word": "游",
+          "probability": 0.9513684213161469
+        },
+        {
+          "start": 5.54,
+          "end": 5.72,
+          "word": "完",
+          "probability": 0.8929846882820129
+        },
+        {
+          "start": 5.72,
+          "end": 5.88,
+          "word": "泳",
+          "probability": 0.9878864884376526
+        },
+        {
+          "start": 5.88,
+          "end": 6.1,
+          "word": "以",
+          "probability": 0.9870499968528748
+        },
+        {
+          "start": 6.1,
+          "end": 6.36,
+          "word": "后,",
+          "probability": 0.9988549947738647
+        },
+        {
+          "start": 6.8,
+          "end": 6.94,
+          "word": "耳",
+          "probability": 0.9668008983135223
+        },
+        {
+          "start": 6.94,
+          "end": 7.22,
+          "word": "朵",
+          "probability": 0.9987698495388031
+        },
+        {
+          "start": 7.22,
+          "end": 7.8,
+          "word": "一直",
+          "probability": 0.9711493849754333
+        },
+        {
+          "start": 7.8,
+          "end": 8.1,
+          "word": "有",
+          "probability": 0.9439851641654968
+        },
+        {
+          "start": 8.1,
+          "end": 8.3,
+          "word": "点",
+          "probability": 0.9985730648040771
+        },
+        {
+          "start": 8.3,
+          "end": 8.62,
+          "word": "疼。",
+          "probability": 0.9968573749065399
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 9.68,
+      "end": 12.26,
+      "text": "是不是感冒了?发烧吗?",
+      "tokens": [
+        50814,
+        23034,
+        9709,
+        5676,
+        240,
+        2289,
+        30,
+        28926,
+        23661,
+        100,
+        14769,
+        30,
+        51014
+      ],
+      "avg_logprob": -0.13060096367118285,
+      "compression_ratio": 1.225130890052356,
+      "no_speech_prob": 0.11517226696014404,
+      "words": [
+        {
+          "start": 9.68,
+          "end": 10.06,
+          "word": "是不是",
+          "probability": 0.9212682247161865
+        },
+        {
+          "start": 10.06,
+          "end": 10.48,
+          "word": "感",
+          "probability": 0.9781144857406616
+        },
+        {
+          "start": 10.48,
+          "end": 10.8,
+          "word": "冒",
+          "probability": 0.9967662394046783
+        },
+        {
+          "start": 10.8,
+          "end": 11.08,
+          "word": "了?",
+          "probability": 0.9805231690406799
+        },
+        {
+          "start": 11.52,
+          "end": 11.68,
+          "word": "发",
+          "probability": 0.972030520439148
+        },
+        {
+          "start": 11.68,
+          "end": 11.98,
+          "word": "烧",
+          "probability": 0.9948683381080627
+        },
+        {
+          "start": 11.98,
+          "end": 12.26,
+          "word": "吗?",
+          "probability": 0.9575653076171875
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 12.9,
+      "end": 14.6,
+      "text": "好像发低烧了。",
+      "tokens": [
+        51014,
+        33242,
+        28926,
+        41377,
+        23661,
+        100,
+        2289,
+        1543,
+        51114
+      ],
+      "avg_logprob": -0.13060096367118285,
+      "compression_ratio": 1.225130890052356,
+      "no_speech_prob": 0.11517226696014404,
+      "words": [
+        {
+          "start": 12.9,
+          "end": 13.3,
+          "word": "好像",
+          "probability": 0.9524664282798767
+        },
+        {
+          "start": 13.3,
+          "end": 13.84,
+          "word": "发",
+          "probability": 0.9725854396820068
+        },
+        {
+          "start": 13.84,
+          "end": 14.08,
+          "word": "低",
+          "probability": 0.8721053004264832
+        },
+        {
+          "start": 14.08,
+          "end": 14.38,
+          "word": "烧",
+          "probability": 0.9978536367416382
+        },
+        {
+          "start": 14.38,
+          "end": 14.6,
+          "word": "了。",
+          "probability": 0.9791299700737
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 15.44,
+      "end": 18.94,
+      "text": "我送你去医院,让医生检查一下吧。",
+      "tokens": [
+        51114,
+        1654,
+        29309,
+        2166,
+        6734,
+        9937,
+        119,
+        38358,
+        11,
+        33650,
+        9937,
+        119,
+        8244,
+        16407,
+        222,
+        42623,
+        8861,
+        6062,
+        1543,
+        51364
+      ],
+      "avg_logprob": -0.13060096367118285,
+      "compression_ratio": 1.225130890052356,
+      "no_speech_prob": 0.11517226696014404,
+      "words": [
+        {
+          "start": 15.44,
+          "end": 15.66,
+          "word": "我",
+          "probability": 0.9972540736198425
+        },
+        {
+          "start": 15.66,
+          "end": 15.88,
+          "word": "送",
+          "probability": 0.999152660369873
+        },
+        {
+          "start": 15.88,
+          "end": 16.06,
+          "word": "你",
+          "probability": 0.9983572363853455
+        },
+        {
+          "start": 16.06,
+          "end": 16.28,
+          "word": "去",
+          "probability": 0.9975559711456299
+        },
+        {
+          "start": 16.28,
+          "end": 16.48,
+          "word": "医",
+          "probability": 0.9997178018093109
+        },
+        {
+          "start": 16.48,
+          "end": 16.7,
+          "word": "院,",
+          "probability": 0.9988221526145935
+        },
+        {
+          "start": 17.18,
+          "end": 17.3,
+          "word": "让",
+          "probability": 0.978115975856781
+        },
+        {
+          "start": 17.3,
+          "end": 17.5,
+          "word": "医",
+          "probability": 0.9976218640804291
+        },
+        {
+          "start": 17.5,
+          "end": 17.74,
+          "word": "生",
+          "probability": 0.9996427297592163
+        },
+        {
+          "start": 17.74,
+          "end": 18.04,
+          "word": "检",
+          "probability": 0.9991561472415924
+        },
+        {
+          "start": 18.04,
+          "end": 18.38,
+          "word": "查",
+          "probability": 0.9951896667480469
+        },
+        {
+          "start": 18.38,
+          "end": 18.62,
+          "word": "一下",
+          "probability": 0.9957465529441833
+        },
+        {
+          "start": 18.62,
+          "end": 18.94,
+          "word": "吧。",
+          "probability": 0.9796456694602966
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 20.28,
+      "end": 24.64,
+      "text": "我先回去睡一觉,可能休息休息就好了。",
+      "tokens": [
+        51364,
+        1654,
+        10108,
+        49925,
+        40490,
+        2257,
+        24447,
+        11,
+        16657,
+        39437,
+        26460,
+        39437,
+        26460,
+        3111,
+        12621,
+        1543,
+        51614
+      ],
+      "avg_logprob": -0.13060096367118285,
+      "compression_ratio": 1.225130890052356,
+      "no_speech_prob": 0.11517226696014404,
+      "words": [
+        {
+          "start": 20.28,
+          "end": 20.72,
+          "word": "我",
+          "probability": 0.9971103668212891
+        },
+        {
+          "start": 20.72,
+          "end": 20.92,
+          "word": "先",
+          "probability": 0.998484194278717
+        },
+        {
+          "start": 20.92,
+          "end": 21.26,
+          "word": "回去",
+          "probability": 0.987209677696228
+        },
+        {
+          "start": 21.26,
+          "end": 21.58,
+          "word": "睡",
+          "probability": 0.9984795451164246
+        },
+        {
+          "start": 21.58,
+          "end": 21.82,
+          "word": "一",
+          "probability": 0.9909324645996094
+        },
+        {
+          "start": 21.82,
+          "end": 22.02,
+          "word": "觉,",
+          "probability": 0.974027156829834
+        },
+        {
+          "start": 22.52,
+          "end": 22.8,
+          "word": "可能",
+          "probability": 0.9875181317329407
+        },
+        {
+          "start": 22.8,
+          "end": 23.24,
+          "word": "休",
+          "probability": 0.9950726628303528
+        },
+        {
+          "start": 23.24,
+          "end": 23.42,
+          "word": "息",
+          "probability": 0.9965595602989197
+        },
+        {
+          "start": 23.42,
+          "end": 23.62,
+          "word": "休",
+          "probability": 0.9964652061462402
+        },
+        {
+          "start": 23.62,
+          "end": 23.88,
+          "word": "息",
+          "probability": 0.996871292591095
+        },
+        {
+          "start": 23.88,
+          "end": 24.26,
+          "word": "就",
+          "probability": 0.9720101356506348
+        },
+        {
+          "start": 24.26,
+          "end": 24.64,
+          "word": "好了。",
+          "probability": 0.9557910561561584
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2464,
+      "start": 25.259999999999998,
+      "end": 30.04,
+      "text": "好吧,如果下午還發燒,就一定要去看醫生。",
+      "tokens": [
+        50364,
+        40221,
+        11,
+        13119,
+        4438,
+        44237,
+        7824,
+        14637,
+        24184,
+        240,
+        11,
+        3111,
+        48161,
+        6734,
+        4200,
+        48351,
+        8244,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.22694264208116838,
+      "compression_ratio": 0.8877551020408163,
+      "no_speech_prob": 0.7564033269882202,
+      "words": [
+        {
+          "start": 25.259999999999998,
+          "end": 25.86,
+          "word": "好吧,",
+          "probability": 0.7501427531242371
+        },
+        {
+          "start": 26.62,
+          "end": 26.84,
+          "word": "如果",
+          "probability": 0.9643505811691284
+        },
+        {
+          "start": 26.84,
+          "end": 27.16,
+          "word": "下",
+          "probability": 0.9550871849060059
+        },
+        {
+          "start": 27.16,
+          "end": 27.36,
+          "word": "午",
+          "probability": 0.9994581341743469
+        },
+        {
+          "start": 27.36,
+          "end": 27.58,
+          "word": "還",
+          "probability": 0.5973851680755615
+        },
+        {
+          "start": 27.58,
+          "end": 27.78,
+          "word": "發",
+          "probability": 0.9900280833244324
+        },
+        {
+          "start": 27.78,
+          "end": 28.04,
+          "word": "燒,",
+          "probability": 0.9922395050525665
+        },
+        {
+          "start": 28.46,
+          "end": 28.58,
+          "word": "就",
+          "probability": 0.9709448218345642
+        },
+        {
+          "start": 28.58,
+          "end": 29.02,
+          "word": "一定要",
+          "probability": 0.9877469539642334
+        },
+        {
+          "start": 29.02,
+          "end": 29.36,
+          "word": "去",
+          "probability": 0.9779940247535706
+        },
+        {
+          "start": 29.36,
+          "end": 29.56,
+          "word": "看",
+          "probability": 0.9960594177246094
+        },
+        {
+          "start": 29.56,
+          "end": 29.76,
+          "word": "醫",
+          "probability": 0.9972742199897766
+        },
+        {
+          "start": 29.76,
+          "end": 30.04,
+          "word": "生。",
+          "probability": 0.9977819323539734
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2464,
+      "start": 31.12,
+      "end": 33.84,
+      "text": "謝謝關心,我會注意的。",
+      "tokens": [
+        50664,
+        11003,
+        14899,
+        7945,
+        11,
+        1654,
+        6236,
+        40794,
+        1546,
+        1543,
+        50814
+      ],
+      "avg_logprob": -0.22694264208116838,
+      "compression_ratio": 0.8877551020408163,
+      "no_speech_prob": 0.7564033269882202,
+      "words": [
+        {
+          "start": 31.12,
+          "end": 31.72,
+          "word": "謝謝",
+          "probability": 0.9721889495849609
+        },
+        {
+          "start": 31.72,
+          "end": 31.98,
+          "word": "關",
+          "probability": 0.6807442307472229
+        },
+        {
+          "start": 31.98,
+          "end": 32.28,
+          "word": "心,",
+          "probability": 0.9708465933799744
+        },
+        {
+          "start": 32.84,
+          "end": 33.02,
+          "word": "我",
+          "probability": 0.9921295046806335
+        },
+        {
+          "start": 33.02,
+          "end": 33.2,
+          "word": "會",
+          "probability": 0.9979503750801086
+        },
+        {
+          "start": 33.2,
+          "end": 33.52,
+          "word": "注意",
+          "probability": 0.9727842211723328
+        },
+        {
+          "start": 33.52,
+          "end": 33.84,
+          "word": "的。",
+          "probability": 0.9898596405982971
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 7.081772749999999,
+  "realTimeFactor": 0.2018609097500708,
+  "observationChecks": {
+    "rawWordCount": 81,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

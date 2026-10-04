@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "observedAtUTC": "2026-10-04T18:18:21.081716+00:00",
+  "status": "accepted-ci-delta-conditional-on-frozen-complete-checkout-and-native-execution",
+  "reviewedHead": "078328fc1112d13e9834db478beb02459f776f51",
+  "workflowWorktreeSHA256": "b9202648285c9c97c8eb5e11b30741cc60083c7e2ada96e7ab99204c4ef24964",
+  "priorReviewBoundary": {
+    "path": "course-app/docs/resume-20261004/flow-compat-review/independent-qa/ci-review/independent-ci-review.json",
+    "priorWorkflowSHA256": "94deee35b5f3649bc75f5d0ccdbea0ae76f997915fbe8020d32ee930eec38665",
+    "meaning": "Earlier34-case exclusion configuration accepted there; not reused as acceptance of this changed35-case/partial/font workflow."
+  },
+  "reviewedFiles": [
+    {
+      "path": ".github/workflows/hsk-flow-package-checkpoint.yml",
+      "bytes": 6593,
+      "sha256": "b9202648285c9c97c8eb5e11b30741cc60083c7e2ada96e7ab99204c4ef24964"
+    },
+    {
+      "path": "hsk1-app/tools/run-checkpoint.mjs",
+      "bytes": 1357,
+      "sha256": "c35b063fa2719132fec784068a9f1095a61e733dc7d5ec83ecc015f8a782669d"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/playwright.hsk1-retained.config.ts",
+      "bytes": 996,
+      "sha256": "2cd254ac0ba82faf30214e5542468a7b376a30a365098fdf218470c085da1950"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-runtime.mjs",
+      "bytes": 162,
+      "sha256": "62baba134e523b6205d5406a5f85af64b2d489e380907fb573317ce9eebf2609"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/hsk1-preserved.retained.ts",
+      "bytes": 351,
+      "sha256": "4d967558314cc722070c99d905f0dc97978a8e207f8be12054e3e9b680a5db87"
+    },
+    {
+      "path": "course-app/playwright.reviewed-sentences.config.ts",
+      "bytes": 902,
+      "sha256": "fe7ac3c287bb1135b819979cab0845d4ba0d25f62f8a38c2ed5c1ef707a672cd"
+    },
+    {
+      "path": "course-app/tests/unified/reviewed-sentence-subset.spec.ts",
+      "bytes": 4697,
+      "sha256": "09c03fd071b8d416723f2bf52205d475ac43ad768cc115a4489ad41a1fe9e867"
+    },
+    {
+      "path": "course-app/tests/unified/hsk1-source-font-visual.spec.ts",
+      "bytes": 9357,
+      "sha256": "fabb7c9af846aa487ef51e94635ba348da80246f9fbeee136b58ce6be28ee2e0"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/playwright.source-font-visual.config.ts",
+      "bytes": 1253,
+      "sha256": "1cfb9df2265ee8d7f2d9de628c523fbfa4c1717be33ce6d2cd51f9e221b5d365"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/source-font-visual/tsconfig.json",
+      "bytes": 263,
+      "sha256": "65ab1c8d47e94dcd1cc96920cbb9577148ceb678498bd03f5248ec5ea05a78ad"
+    }
+  ],
+  "actualChecks": [
+    {
+      "id": "retained-wrapper-collection",
+      "result": "passed-collection-only",
+      "cases": 70,
+      "perEngine": 35,
+      "files": 3,
+      "log": "retained35-collection.log",
+      "method": "Actual existing wrapper browser --config=../course-app/... from repo cwd; child cwd hsk1-app. No browser execution."
+    },
+    {
+      "id": "single-playwright-runtime",
+      "result": "passed-static-and-actual-collection",
+      "scope": "Config defineConfig and old test imports resolve hsk1-app/node_modules/@playwright/test, wrapper launches same installed CLI; no duplicate Playwright suite runtime."
+    },
+    {
+      "id": "webserver-cwd",
+      "result": "passed-installed-source-check",
+      "source": "hsk1-app/node_modules/playwright/lib/runner/index.js",
+      "mechanism": "WebServerPlugin.setup resolves options.cwd or defaults to configDir; node serve-frozen.mjs starts in owned config directory despite child runner cwd hsk1-app."
+    },
+    {
+      "id": "private-classroom-fixture",
+      "result": "existing-wrapper-reused",
+      "scope": "Existing wrapper resolves existing public static gate signature in memory and passes HSK_TEST_PASSWORD to child environment; this review neither prints nor records the value, changes the helper, or introduces a new password fixture."
+    },
+    {
+      "id": "retained-report",
+      "result": "passed-static-path-check",
+      "mechanism": "JSON outputFile is absolute fileURL derived from config; repo-cwd cp points to that owned review path. Equivalent fresh step uses separate report filename after normal copied result."
+    },
+    {
+      "id": "package-and-font-build",
+      "result": "passed-static-path-check",
+      "mechanism": "Packager --build --input dist produces course-app/dist used by font owned config default; clean package freeze is separate from later partial dedicated build."
+    },
+    {
+      "id": "partial-build-and-config",
+      "result": "passed-static-path-and-typecheck",
+      "scope": "Explicit build to .repro-output/media-reviewed-subset/dist matches dedicated preview config; port4287 only starts during that step. Actual8collection=4/engine; partial fixture typecheck exit0.",
+      "logs": [
+        "partial-sentence-collection.log",
+        "partial-fixture-typecheck.log"
+      ]
+    },
+    {
+      "id": "font-config",
+      "result": "passed-collection-and-typecheck",
+      "scope": "Actual owned config collects4=2/engine at320/1440, font fixture typecheck exit0. Config fixes course-app webServer cwd and serves dist on18786.",
+      "logs": [
+        "source-font-collection.log",
+        "new-fixture-typecheck.log"
+      ]
+    },
+    {
+      "id": "artifact-path-repair",
+      "result": "accepted-current-paths",
+      "scope": "Root added hsk1-app/.repro-output/mixed-preview/**/*.png for original selector/front/back and now uploads whole source-font-visual/native-output directory plus native-results.json; nested17PNG perwidth and source-font-evidence JSON are covered. Partial dedicated results and artifacts also covered."
+    },
+    {
+      "id": "normal-network-legacy",
+      "result": "preserved-static-gate",
+      "scope": "No local-Pako substitution flag in CI; three normal-network old/nested cases remain necessary."
+    }
+  ],
+  "conditionalDependencies": [
+    "All reviewed runtime, media authority JSON, fixtures, configs and stable accepted package tools must be committed together before push to isolated CI trigger branch.",
+    "Freeze and record exact CI source head/tree and build/assembly inventories; sourceDirty must be false for build-only checkpoint default.",
+    "Run six real jobs and inspect every final report; collection and typechecking are not native passed cases.",
+    "Verify actual retained35 result including original downloaded fresh-context backup; preserve separate explicit-session equivalent1 result.",
+    "Verify partial4 perengine and current native font2 perengine; download and visually inspect installed-CJK-font PNGs.",
+    "This review does not certify all media precision, official Vietnamese, production release or published online results."
+  ],
+  "productionMutation": false,
+  "nativeBrowserExecutedByThisReview": false,
+  "ownedLogHashes": [
+    {
+      "path": "retained35-collection.log",
+      "bytes": 12966,
+      "sha256": "e8f022515b30496a566b6f5a8e8cfc842d00aae17f223d9477ae8152337bac91"
+    },
+    {
+      "path": "partial-sentence-collection.log",
+      "bytes": 1256,
+      "sha256": "afe2b09815e599a78b6d48a0458edf9247b6867121959ffa315d58d526a079db"
+    },
+    {
+      "path": "source-font-collection.log",
+      "bytes": 798,
+      "sha256": "55388f7b6071508ae49c822db43ad8e345498d1d7c082a455cd90455132cb12b"
+    },
+    {
+      "path": "new-fixture-typecheck.log",
+      "bytes": 116,
+      "sha256": "52146c037ebdf5148590d455289c0352b74ab47cfa2c7ff3cd1ae492667f98ef"
+    },
+    {
+      "path": "partial-fixture-typecheck.log",
+      "bytes": 101,
+      "sha256": "8c81ca0c957dde9be261d640ed65656c0d369aaec3375fc31a1a6f3410dccdac"
+    }
+  ]
+}

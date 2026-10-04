@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l09:audio2",
+    "level": 2,
+    "lesson": 9,
+    "track": 2,
+    "kind": "vocab",
+    "text": 1,
+    "file": "course-assets/hsk2/audio/9-2.mp3",
+    "sha256": "57e101b9caeb0137b478af50ddd436cb9e4d1d6124cab48b12a0bff4df022a9a",
+    "bytes": 493431,
+    "manifestDurationSeconds": 18.653333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 298368,
+      "durationSeconds": 18.648,
+      "sha256": "9bb8903387be8a956d999db93746d338dadbebfadbecf29720dbd71cdd5cc910"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 18.648,
+    "duration_after_vad": 18.648,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 2.3200000000000003,
+      "end": 5.12,
+      "text": "旁边",
+      "tokens": [
+        50364,
+        4479,
+        223,
+        40503,
+        50614
+      ],
+      "avg_logprob": -0.2853706841883452,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.6865500211715698,
+      "words": [
+        {
+          "start": 2.3200000000000003,
+          "end": 3.72,
+          "word": "旁",
+          "probability": 0.5850991681218147
+        },
+        {
+          "start": 3.72,
+          "end": 5.12,
+          "word": "边",
+          "probability": 0.860934317111969
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.12,
+      "end": 7.76,
+      "text": "男孩",
+      "tokens": [
+        50614,
+        25243,
+        36269,
+        50764
+      ],
+      "avg_logprob": -0.2853706841883452,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.6865500211715698,
+      "words": [
+        {
+          "start": 5.12,
+          "end": 5.72,
+          "word": "男",
+          "probability": 0.4157960116863251
+        },
+        {
+          "start": 5.72,
+          "end": 7.76,
+          "word": "孩",
+          "probability": 0.9968975782394409
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 7.76,
+      "end": 9.18,
+      "text": "这样",
+      "tokens": [
+        50764,
+        21209,
+        50914
+      ],
+      "avg_logprob": -0.2853706841883452,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.6865500211715698,
+      "words": [
+        {
+          "start": 7.76,
+          "end": 9.18,
+          "word": "这样",
+          "probability": 0.777481734752655
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 11.0,
+      "end": 13.14,
+      "text": "个子",
+      "tokens": [
+        50914,
+        7549,
+        7626,
+        51014
+      ],
+      "avg_logprob": -0.2853706841883452,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.6865500211715698,
+      "words": [
+        {
+          "start": 10.72,
+          "end": 11.42,
+          "word": "个",
+          "probability": 0.8235761523246765
+        },
+        {
+          "start": 11.42,
+          "end": 13.14,
+          "word": "子",
+          "probability": 0.9891862273216248
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 13.14,
+      "end": 14.2,
+      "text": "那么",
+      "tokens": [
+        51014,
+        35693,
+        51164
+      ],
+      "avg_logprob": -0.2853706841883452,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.6865500211715698,
+      "words": [
+        {
+          "start": 13.14,
+          "end": 14.2,
+          "word": "那么",
+          "probability": 0.9507691860198975
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 16.0,
+      "end": 16.66,
+      "text": "高",
+      "tokens": [
+        51164,
+        12979,
+        51264
+      ],
+      "avg_logprob": -0.2853706841883452,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.6865500211715698,
+      "words": [
+        {
+          "start": 15.96,
+          "end": 16.66,
+          "word": "高",
+          "probability": 0.9893274307250977
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.4368308759999877,
+  "realTimeFactor": 0.13067518640068573,
+  "observationChecks": {
+    "rawWordCount": 9,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

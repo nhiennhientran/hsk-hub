@@ -1,0 +1,1855 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "observedAtUTC": "2026-10-04T18:18:21.081716+00:00",
+  "status": "phase-A-open-current-merged-native-and-media-disposition-pending",
+  "purpose": "Read-only engineering closure ledger. Does not grant new source, Phase B, release or deployment acceptance.",
+  "currentObservedWorktree": {
+    "head": "078328fc1112d13e9834db478beb02459f776f51",
+    "tree": "ea7d6e2da920935e7adc30e907682549597ec871",
+    "runtimeSnapshot": {
+      "sourceDirty": true,
+      "sha256": "a17b664ceeaf09937b4b53aa2c7877407df81eafa74490ba2014b7d52db18fcb",
+      "fileCount": 1110,
+      "scopes": [
+        "course-app/src",
+        "course-app/content",
+        "course-app/public",
+        "course-app/tools",
+        "course-app/index.html",
+        "course-app/package.json",
+        "course-app/package-lock.json",
+        "course-app/vite.config.ts",
+        "course-app/tsconfig.json",
+        "hsk1-app/src",
+        "hsk1-app/content",
+        "hsk1-app/public"
+      ],
+      "dirtyPaths": [
+        "M course-app/src/audio-segment-contract.ts",
+        " M course-app/src/lesson-view.ts",
+        " M course-app/src/segment-resolver.ts",
+        " M course-app/src/segments.ts",
+        "A  course-app/tools/assemble-unified-checkpoint.mjs",
+        "M  course-app/tools/package-unified.mjs",
+        "?? course-app/content/audio-segment-reviewed-sentences-authority.json",
+        "?? course-app/content/audio-segments-hsk2-reviewed-sentences.json"
+      ],
+      "committedRuntimeDiffFromCore": []
+    },
+    "warning": "Moving worktree observation, not an immutable final candidate. Rebind after root freezes committed exact source."
+  },
+  "protectedProduction": {
+    "commit": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
+    "tree": "34dc16aa1e042f5f6fc6ea6edb80b9b6926cb344",
+    "gitBlobs": 1446,
+    "protectedPublicBytes": 1380,
+    "explicitDeveloperUnservedExclusions": 55,
+    "authorizedEntryAndManifestReplacementSlots": 11,
+    "scope": "1446 = 1380 + 55 + 11; full baseline preservation does not mean every developer-only baseline file is publicly served. See package inventory/exclusion lists.",
+    "refs": [
+      "package_summary",
+      "package_independent",
+      "package_inventory"
+    ]
+  },
+  "acceptanceLevels": {
+    "independent_source": "Source-specific review at frozen input hashes; runtime/native acceptance remains separate.",
+    "accepted_native_checkpoint": "Only the stated frozen build/head, browser, hosts and cases.",
+    "conditional": "Implementation/evidence accepted within stated boundary; named source/network/media/final-candidate subgate remains open.",
+    "pending": "No truthful passing evidence yet for the stated candidate and scope."
+  },
+  "references": {
+    "autonomous_plan": {
+      "path": "course-app/docs/resume-20261004/AUTONOMOUS-PLAN.md",
+      "bytes": 10106,
+      "sha256": "5a5841aa3daf5e3bf3d8294e66a57af985069410c42b7ef5caa3a8318af0e643",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "old_plan": {
+      "path": "checkpoints/unified-20261003/PLAN.md",
+      "bytes": 1609,
+      "sha256": "fb86699d1d032991df019b676f01c033b5509e491d58b931f139ffe52369e3d1",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "old_checkpoint": {
+      "path": "checkpoints/unified-20261003/checkpoint.json",
+      "bytes": 26863,
+      "sha256": "cb2b880c5fc9c45b2b0b047b374337eee73209fb6e71186267ae05c85b7716d6",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "active_checkpoint": {
+      "path": "course-app/docs/resume-20261004/ACTIVE-CHECKPOINT.json",
+      "bytes": 7078,
+      "sha256": "98cf7a5181da2f3b4a4254bae4ada0e504de4411a89d992c58e610ec6c2165f5",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "content_contract": {
+      "path": "course-app/docs/content-contract.md",
+      "bytes": 6026,
+      "sha256": "cb68ac886a5c4648f300ae968756a7f479c857fe6de79850e2b3344aa54e1c59",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "page_index": {
+      "path": "course-app/docs/textbook-page-coverage-ledger.json",
+      "bytes": 14054,
+      "sha256": "a7dada59787a7f34f1a49caf27a35c5e8cf550d0b435c8ad0594fe4303847d87",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_l01_03": {
+      "path": "course-app/docs/resume-20261004/qa-content-01-03/coverage.json",
+      "bytes": 18529,
+      "sha256": "3b7c9c112e0001579e1bd1c483fb940fb8f493b82789247daa5b50b8d0e5eb74",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_l04_crops": {
+      "path": "course-app/docs/resume-20261004/qa-l04-current/crop-review.json",
+      "bytes": 10811,
+      "sha256": "fbc36b87efe8f07255ee61b0935cb9e67162ef0ec5bcea56c5dd2dd135db6fb7",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_l04_current": {
+      "path": "course-app/docs/resume-20261004/qa-l04-current/current-revision-review.json",
+      "bytes": 13310,
+      "sha256": "c0c143c8b707b8f9d73e1e9ecf986811931d4cb3336fa12562986241c6d21227",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_l05_08": {
+      "path": "course-app/docs/resume-20261004/qa-content-05-08/review.json",
+      "bytes": 43472,
+      "sha256": "c0de4c3037f2aaafc3ebc2c347b044de60c650ed325a6345bb5fed978108c22c",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_l09_11_source": {
+      "path": "course-app/docs/resume-20261004/qa-content-09-11/checks-complete-original.json",
+      "bytes": 40871,
+      "sha256": "ff584a7ff0ef00b4a342e3042e14b8dea76b4d26f2870801051c88e9e0318fe7",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_l09_11_repair": {
+      "path": "course-app/docs/resume-20261004/qa-content-09-11/checks-postfix-original.json",
+      "bytes": 1434,
+      "sha256": "bbe2db53c3871a75d5f070ee75f2abd86c5a184527bf4367ed2202bc036727c9",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_l12_15_source": {
+      "path": "course-app/docs/resume-20261004/qa-content-12-15/independent-audit.json",
+      "bytes": 19821,
+      "sha256": "0d1f8ee1c392869ca52544bc4464af711940dc3da37760d941c0ab8e3acdcf67",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_stem_source": {
+      "path": "course-app/docs/resume-20261004/qa-content-12-15/stem-pinyin-final-review.json",
+      "bytes": 16298,
+      "sha256": "dc02a50e6d5d692bcb5775df20f633008618e8d3bd28bdd1f0d74aa3e3c5a073",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_integration": {
+      "path": "course-app/docs/resume-20261004/integration/accepted-l01-03-l05-08.json",
+      "bytes": 1698,
+      "sha256": "aebb4019d05098706eb2bfea753ab1b4100c58c4b3873502bb0950bb55c7ba97",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_refinements": {
+      "path": "course-app/docs/resume-20261004/integration/reviewed-refinements.json",
+      "bytes": 3774,
+      "sha256": "4531e49ec8bfd0d120fa02b3a3d0abd0a31ea558a21fd5d3dbe077cd67864010",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_refinements_qa": {
+      "path": "course-app/docs/resume-20261004/qa-reviewed-refinements/independent-review.json",
+      "bytes": 26428,
+      "sha256": "9447893c0d992635f818457002be3366ef83c75afcb136fd3a82b690397d6202",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_runtime_bindings": {
+      "path": "course-app/docs/resume-20261004/integration/runtime-binding-review.json",
+      "bytes": 2394,
+      "sha256": "51d472cc39b410b43d769716216d07e79fa80141801d3b1ec3cbaf369dc643ac",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h1_scenes": {
+      "path": "course-app/docs/resume-20261004/qa-scene-bindings/independent-review.json",
+      "bytes": 45451,
+      "sha256": "b3dd9618da767bb792fe4086a5af3ce0d5e4a93634232dcc6c86c9d610a2f136",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h23_pilot": {
+      "path": "course-app/docs/content-audit/2026-10-03-pilot-independent-review.md",
+      "bytes": 13594,
+      "sha256": "8b6db6391095778c15d8be300b36516ace20b3733cf577a3c24bd6a94bafb05c",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h2_l02_03": {
+      "path": "course-app/docs/independent-hsk2-lessons-02-03-review/review.md",
+      "bytes": 15748,
+      "sha256": "f13374dbb8dc656a2e5b862ffc2c08ccb7be5badb8b2454db39314ccbe3165f0",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h2_l04_05": {
+      "path": "course-app/docs/independent-hsk2-lessons-04-05-review/independent-review.md",
+      "bytes": 11141,
+      "sha256": "af35774f79a2924e0b526fb009da071af0a17436863c191fb9c253a1990302c8",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h2_l06_07": {
+      "path": "course-app/docs/independent-hsk2-lessons-06-07-review/recheck-supplement.md",
+      "bytes": 6078,
+      "sha256": "37cf61c90d0281922c57fcad99790b68039bf44d509ae2dad7a4839ff727d791",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h2_l08_09": {
+      "path": "course-app/docs/independent-hsk2-lessons-08-09-review/candidate-review/independent-candidate-review.md",
+      "bytes": 11194,
+      "sha256": "4734d400e62275c2e8a660453b273e4bce50b4cb028a2202a257dfe24c5e2a9b",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h2_l10_11": {
+      "path": "course-app/docs/independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+      "bytes": 11675,
+      "sha256": "8e066eaa86327818e00c80a578a301b55f36e7d18c53bb8791f7833faeda3192",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h2_l12_13": {
+      "path": "course-app/docs/independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+      "bytes": 16635,
+      "sha256": "f890246d04dc67ffa9a849d20ca755b76cd91d110ad8f5b5e6a434db41e31e61",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h2_l14_15": {
+      "path": "course-app/docs/independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+      "bytes": 11313,
+      "sha256": "2af88f09d26f9033d2a1e12e8c121d7258503f5caf637a6be80534af45a73080",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_l02_03": {
+      "path": "course-app/docs/independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+      "bytes": 7111,
+      "sha256": "46d39eb8a820705f474cc1f15cbb104112be773fc07f5c24b177f6a694f302e0",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_l04_05": {
+      "path": "course-app/docs/independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+      "bytes": 10819,
+      "sha256": "4cda1a5dea8b3bff054ba962202008f7e0556502751f4554813bacaccf94ad54",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_l06_07": {
+      "path": "course-app/docs/independent-hsk3-lessons-06-07-review/candidate-review/acceptance-report.md",
+      "bytes": 12281,
+      "sha256": "235d6280c693d838c9808b78e3d800e83e2c2a83a1da509becf7d916c2ea8d55",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_l08_09": {
+      "path": "course-app/docs/content-audit/hsk3-lessons08-09-independent/review.md",
+      "bytes": 7853,
+      "sha256": "fbb1ea716605c4115fe754c804ef8ad26d7aac168ba7754b36e5c487e8697a42",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_l10_11": {
+      "path": "course-app/docs/content-audit/hsk3-lessons10-11-independent/review.md",
+      "bytes": 7392,
+      "sha256": "c590ff30e9247486e3ed4a3b01ea408d973535ede26852e28f66da63bc2af945",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_l12_13": {
+      "path": "course-app/docs/content-audit/hsk3-lessons12-13-independent/review.md",
+      "bytes": 7161,
+      "sha256": "4ab6f79cdafd840855771a4912175181df64aeaddccb83c41456e8d6164f589f",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_l14_15": {
+      "path": "course-app/docs/content-audit/hsk3-lessons14-15-independent/recheck-review.md",
+      "bytes": 2712,
+      "sha256": "ef05c856b232a8e99183e5e1df38ee71f09ce2866f422e246ea70330355d7bee",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_l16_18": {
+      "path": "course-app/docs/content-audit/hsk3-lessons16-18-independent/delta-review.md",
+      "bytes": 1899,
+      "sha256": "2f313b55c04e302ca8a7aada1596d73b5896cd318e3ad09cbdcfb46138ba31ef",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_old_stars": {
+      "path": "course-app/docs/hsk3-appendix-stars/ci-acceptance.json",
+      "bytes": 1393,
+      "sha256": "5e4e7b15f63830466161f9b8630c848308a00d122e540c9a151d803f62aa1044",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_additional_source_qa": {
+      "path": "course-app/docs/resume-20261004/qa-hsk3-official-source/review.json",
+      "bytes": 27442,
+      "sha256": "9f015fbf612d81a8c8ab498ecf6b3af40209f5ae0832d34e78bc961f85d5a23c",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_metadata_qa": {
+      "path": "course-app/docs/resume-20261004/qa-hsk3-metadata-engineering/independent-review.json",
+      "bytes": 7356,
+      "sha256": "99785645daeec70aeef190280c971da6dcddf7fc9436dfc32a961712b4a61f8e",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_metadata_guards": {
+      "path": "course-app/docs/resume-20261004/qa-hsk3-metadata-engineering/final-pipeline-probes.json",
+      "bytes": 39049,
+      "sha256": "b58f8a99fbee453ba27efca0512e37b214eac42b9f78752cd65aae95a8745e2f",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_metadata_applied": {
+      "path": "course-app/docs/resume-20261004/hsk23-source-closure/metadata-integration-result.json",
+      "bytes": 7306,
+      "sha256": "cc49b176a9337dae7da12bb53017edb180170242b01d4b70c0cfe6b75bc92fb5",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h3_old_source_blocker": {
+      "path": "course-app/docs/resume-20261004/source-recovery/hsk3-original-recovery.json",
+      "bytes": 3248,
+      "sha256": "c158b914c26e5a42007ab8aa063894f408cd91b15140c2ac2a89c191db42c2f1",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "h23_source_inventory": {
+      "path": "course-app/docs/resume-20261004/hsk23-source-closure/current-inventory.json",
+      "bytes": 1787624,
+      "sha256": "134debe4a098bfb2b242f73ef306edf70cb7cfd6d75d9e2b227b9827fc332f14",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "media_inventory": {
+      "path": "course-app/docs/resume-20261004/media-closure/inventory.json",
+      "bytes": 1511609,
+      "sha256": "254bab7162e4f9beb80117fb11d6ac02cf8c9589873926a594e95a3974431120",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "media_scope": {
+      "path": "course-app/docs/resume-20261004/media-closure/README.md",
+      "bytes": 9823,
+      "sha256": "81466cfd4155f72fcad14f4f0f2e0cd2019ab2a68815bd949f7581c45a9d59d7",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "audio_pilot_qa": {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/review.json",
+      "bytes": 20007,
+      "sha256": "d2ee1f58558820fd16a94784307b04285115678cfe70028a2aef33874062f67e",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "audio_crop_qa": {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/post-crop-review.json",
+      "bytes": 16053,
+      "sha256": "76c0d3571f5ea0ce1c2d40de7baeffe3a58155ee6782a27636d99865c761501c",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "audio_remaining_integrity": {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/verified-collection.json",
+      "bytes": 161733,
+      "sha256": "f6527b3184235b2ba0a3db7637530140bef6b3df3af95dc818badcadfa7160dc",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "audio_remaining_diagnostics": {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/diagnostic-summary.json",
+      "bytes": 476674,
+      "sha256": "1372f085d6f2253a347bef6881a668ffaf28c7facd6da67b9968638f9328dd5d",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "partial_qa": {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-probe-results.json",
+      "bytes": 21709,
+      "sha256": "4285307a0246705a0ddcda87759e8288303cce83dee4272e53961039c64eeadc",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "partial_concurrency": {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-concurrency-result.json",
+      "bytes": 683,
+      "sha256": "ab6071f022bf7040232b967192b8930d7b0c809d4b989ba6536a46f95aa1a0eb",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "flow_qa": {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/independent-qa/independent-review.json",
+      "bytes": 41908,
+      "sha256": "4fee9ce7cd02a7a2653fa285e3f68b31b77ca85dbe86d44bda43b55c446fe486",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "flow_scope": {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/README.md",
+      "bytes": 11223,
+      "sha256": "0fed61cb7cc4346de9c7cf3563ae3d8694ff7ae361e919b980e59a35490e6007",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "flow_freeze": {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/freeze-manifest.json",
+      "bytes": 7449,
+      "sha256": "a91404a54eafa0b19250d37a8ac47be3086119a23b944265ae7f3bb38f5dfc39",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "shared_native_build": {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/frozen-repaired-build.json",
+      "bytes": 288798,
+      "sha256": "9e348d9560ce27c49e70bc86e38d18f7952cad8da836967354325f2f19bfa20c",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "retained_native_build": {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/frozen-hsk1-standalone-build.json",
+      "bytes": 103205,
+      "sha256": "bd866a9a697dd73761bf8c8580ca0464207bcac25751369d5cc9f9e8e6e3840f",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "synthetic_roundtrip": {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/all48-state-roundtrip-coverage.json",
+      "bytes": 1281,
+      "sha256": "cc96aadff9146b7301c2f200725a3f1fb5907bd262987b0f9f098d274de6c552",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "package_summary": {
+      "path": "course-app/docs/resume-20261004/package-closure/checkpoint-summary.json",
+      "bytes": 3714,
+      "sha256": "be43ac837a69adb62da76afdd39c52465f159a225604a706c30eec11e4895345",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "package_independent": {
+      "path": "course-app/docs/resume-20261004/qa-package-closure/independent-guards.json",
+      "bytes": 8967,
+      "sha256": "c6dbded8bda4351ba26a04e51aa24dacb5eb7a701eaba3bae49642a9439f669d",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "package_inventory": {
+      "path": "course-app/docs/resume-20261004/qa-package-closure/independent-whole-inventory.json",
+      "bytes": 574,
+      "sha256": "345bb12906436235fbab024a072baec32fd0c80e17d3f6630a3b54716f6e03f4",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "core_ci": {
+      "path": "course-app/docs/resume-20261004/native-catalogue/ci-37220700329-audit.json",
+      "bytes": 22987,
+      "sha256": "a66232396f5c6a9dbcc22fc55746c061020c309b4480ed027720f90a72259c04",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "core_ci_review": {
+      "path": "course-app/docs/resume-20261004/native-catalogue/ci-37220700329-review.md",
+      "bytes": 7778,
+      "sha256": "648d0352079d3b7fd6de327828aafaccae78d4c9f5732c6881da83806e7f8c22",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "core_identities": {
+      "path": "course-app/docs/resume-20261004/native-catalogue/ci-37220700329-passed-identities.json",
+      "bytes": 180743,
+      "sha256": "afc2a477cff5894ae906e00e634a889da3395d77866c0b00fa15968ab4d574e8",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "prior_ci": {
+      "path": "course-app/docs/resume-20261004/native-catalogue/ci-37215775744-audit.json",
+      "bytes": 14057,
+      "sha256": "ff5697faf670c6066a36285da6d731bccd3832b8b0fedf4b2cfac831846c396d",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "packager": {
+      "path": "course-app/tools/package-unified.mjs",
+      "bytes": 12485,
+      "sha256": "acd9c9b664104bd9311dc624c1769d3a0f8c05546cc831aa2e270bddc6983a34",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "assembler": {
+      "path": "course-app/tools/assemble-unified-checkpoint.mjs",
+      "bytes": 13624,
+      "sha256": "b47964a655f069084f8c1de15098ea490c4e16e141b8bd9abf9b4baa7a87117d",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "new_flow_workflow": {
+      "path": ".github/workflows/hsk-flow-package-checkpoint.yml",
+      "bytes": 6593,
+      "sha256": "b9202648285c9c97c8eb5e11b30741cc60083c7e2ada96e7ab99204c4ef24964",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "prior_flow_ci_review": {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/independent-qa/ci-review/independent-ci-review.json",
+      "bytes": 6123,
+      "sha256": "1ca3edc89cef536f570f24d349c69e8ad647e348fd91b7acb59cfc5cf461dd8f",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "retained_wrapper": {
+      "path": "hsk1-app/tools/run-checkpoint.mjs",
+      "bytes": 1357,
+      "sha256": "c35b063fa2719132fec784068a9f1095a61e733dc7d5ec83ecc015f8a782669d",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "retained_config": {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/playwright.hsk1-retained.config.ts",
+      "bytes": 996,
+      "sha256": "2cd254ac0ba82faf30214e5542468a7b376a30a365098fdf218470c085da1950",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "retained_runtime": {
+      "path": "course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-runtime.mjs",
+      "bytes": 162,
+      "sha256": "62baba134e523b6205d5406a5f85af64b2d489e380907fb573317ce9eebf2609",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "font_spec": {
+      "path": "course-app/tests/unified/hsk1-source-font-visual.spec.ts",
+      "bytes": 9357,
+      "sha256": "fabb7c9af846aa487ef51e94635ba348da80246f9fbeee136b58ce6be28ee2e0",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "partial_spec": {
+      "path": "course-app/tests/unified/reviewed-sentence-subset.spec.ts",
+      "bytes": 4697,
+      "sha256": "09c03fd071b8d416723f2bf52205d475ac43ad768cc115a4489ad41a1fe9e867",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "partial_config": {
+      "path": "course-app/playwright.reviewed-sentences.config.ts",
+      "bytes": 902,
+      "sha256": "fe7ac3c287bb1135b819979cab0845d4ba0d25f62f8a38c2ed5c1ef707a672cd",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "retained_collection": {
+      "path": "course-app/docs/resume-20261004/engineering-closure/retained35-collection.log",
+      "bytes": 12966,
+      "sha256": "e8f022515b30496a566b6f5a8e8cfc842d00aae17f223d9477ae8152337bac91",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "partial_collection": {
+      "path": "course-app/docs/resume-20261004/engineering-closure/partial-sentence-collection.log",
+      "bytes": 1256,
+      "sha256": "afe2b09815e599a78b6d48a0458edf9247b6867121959ffa315d58d526a079db",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "font_collection": {
+      "path": "course-app/docs/resume-20261004/engineering-closure/source-font-collection.log",
+      "bytes": 798,
+      "sha256": "55388f7b6071508ae49c822db43ad8e345498d1d7c082a455cd90455132cb12b",
+      "scope": "read-only existing evidence; author/reviewer/identity must be interpreted within document"
+    },
+    "font_config": {
+      "path": "course-app/docs/resume-20261004/source-font-visual/playwright.source-font-visual.config.ts",
+      "bytes": 1253,
+      "sha256": "1cfb9df2265ee8d7f2d9de628c523fbfa4c1717be33ce6d2cd51f9e221b5d365",
+      "scope": "Current CI delta source or read-only check; native run pending."
+    },
+    "font_typecheck": {
+      "path": "course-app/docs/resume-20261004/engineering-closure/new-fixture-typecheck.log",
+      "bytes": 116,
+      "sha256": "52146c037ebdf5148590d455289c0352b74ab47cfa2c7ff3cd1ae492667f98ef",
+      "scope": "Current CI delta source or read-only check; native run pending."
+    },
+    "partial_typecheck": {
+      "path": "course-app/docs/resume-20261004/engineering-closure/partial-fixture-typecheck.log",
+      "bytes": 101,
+      "sha256": "8c81ca0c957dde9be261d640ed65656c0d369aaec3375fc31a1a6f3410dccdac",
+      "scope": "Current CI delta source or read-only check; native run pending."
+    },
+    "ci_delta": {
+      "path": "course-app/docs/resume-20261004/engineering-closure/ci-delta-review.json",
+      "bytes": 7825,
+      "sha256": "d8051a49b16332c41c38e458ce531b9a56c1c42b0863f39bc470752653530717",
+      "scope": "Current CI delta source or read-only check; native run pending."
+    }
+  },
+  "originalPageScope": {
+    "ref": "page_index",
+    "originalDocuments": [
+      {
+        "documentId": "hsk2-textbook",
+        "name": "新HSK教程2(HSK3.0) (郭风岚,汤旭) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "pageCount": 162,
+        "sha256": "3a544d951502f8a86137981bb2f60812acfcca0577618ce8f4ff023326cc71ec"
+      },
+      {
+        "documentId": "hsk2-answers",
+        "name": "《新HSK教程2》客观题答案.pdf",
+        "pageCount": 21,
+        "sha256": "c8c78a32643b6800ac1449d34942bb549cfc1ecd562273051af31fd6f0577ac5"
+      },
+      {
+        "documentId": "hsk3-textbook",
+        "name": "新HSK教程3(HSK3.0) (郭风岚,汤旭) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+        "pageCount": 212,
+        "sha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2"
+      },
+      {
+        "documentId": "hsk3-answers",
+        "name": "《新HSK教程3》客观题答案.pdf",
+        "pageCount": 27,
+        "sha256": "7cc42aa78c6b1c32f03f6deccac606c31bd787fd1f72717d45afafa29155e473"
+      },
+      {
+        "documentId": "hsk1-textbook",
+        "name": "新HSK教程1(HSK3.0) (郭风岚、汤旭编著) (z-library.sk, 1lib.sk, z-lib.sk) (1)(3).pdf",
+        "pageCount": 144,
+        "sha256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba"
+      },
+      {
+        "documentId": "hsk1-answers",
+        "name": "《新HSK教程1》客观题答案(5).pdf",
+        "pageCount": 13,
+        "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5"
+      }
+    ],
+    "totalRecords": 579,
+    "uniqueDocumentPageKeys": 579,
+    "textbookPages": 518,
+    "answerPages": 61,
+    "hsk23Pages": 422,
+    "hsk1Pages": 157,
+    "allIndexedShardHashesMatch": true,
+    "shards": [
+      {
+        "path": "course-app/docs/page-coverage/hsk2-answers-front-appendices.json",
+        "records": 14,
+        "sha256": "efb52f9f6cca32f149bf20e0ba10032d9d28c653ddbda231ddb91ba1f2e544cc"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-answers-lesson-01.json",
+        "records": 1,
+        "sha256": "566210e01ed2b6ff000de3d07c422cd27378a49d84a209942a86df7167e0202a"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-answers-lesson-04.json",
+        "records": 1,
+        "sha256": "0516a943667642f69e9b4fff6b7eb69300ead0c086bc9a65d9c83fd699cf1975"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-answers-lesson-06.json",
+        "records": 1,
+        "sha256": "34c05348e3d2eb9ca376236305d64e3fc5a881e17811b41b4368e43dd679306d"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-answers-lesson-09.json",
+        "records": 1,
+        "sha256": "f8de126ab7e38d79467a6dd101d9007a24c10a7b89f8269b462b70f10d1e3730"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-answers-lesson-12.json",
+        "records": 1,
+        "sha256": "deed19cd367ee899233e43faebb70d66a1aeb9a6db2a7a15b9558f3255c801c9"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-answers-lesson-15.json",
+        "records": 2,
+        "sha256": "9463065753e3b6fe43f980e35d29ffb377cb673d3d8bcdfb952d6760c5e68076"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-front-appendices.json",
+        "records": 22,
+        "sha256": "1cdfa038559505efddd95779bba7fbde13843857fcdb895269e5e73f9f26791c"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-01.json",
+        "records": 9,
+        "sha256": "622b5adab79195a93d549e2925368175a1d0c99d7e90991e1474a577a9b49ace"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-02.json",
+        "records": 9,
+        "sha256": "c75db5c69b71818eb36b96b39c634856bf6a55bde80c2904f5ed74344dfaa328"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-03.json",
+        "records": 10,
+        "sha256": "4fc353d5f3eea03502fd643bd3a57a058031e3a8aa233cb3563f6aa617294613"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-04.json",
+        "records": 8,
+        "sha256": "c9601e7c5063a144ebb861bb99da5fb0d351f5680d8d68b1033b95bcf082b12e"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-05.json",
+        "records": 9,
+        "sha256": "17ea66857acadd2d6fa87ab0dfc99893c2ebbbb76081dd08820e388e46a5a9c3"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-06.json",
+        "records": 10,
+        "sha256": "8d46ed8aab77af0bb806b4b26f17a6732d3099b2066c1341187f98de871d6e43"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-07.json",
+        "records": 8,
+        "sha256": "c2687c147de5e4f6d8efdbd59d9031c49efc1cbcade8432667d4f248a2bd256d"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-08.json",
+        "records": 9,
+        "sha256": "fc0c9f53108401986bfade62a718cc0d25d777b4baba3ea0fc97c40425ef7cc3"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-09.json",
+        "records": 11,
+        "sha256": "250f50e819dc7ca6af84e9164e11c12a4f164b53e94c4066b1a942ee763cdf8a"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-10.json",
+        "records": 9,
+        "sha256": "95534c665f95808341c538be5e88d18b9df574e4ad901544027e097e20e4b638"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-11.json",
+        "records": 9,
+        "sha256": "00941d2762877975e668bea42d3c523c5bb4db12588f7a7b8e949dfbc1a5bd57"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-12.json",
+        "records": 10,
+        "sha256": "952ad2c7b794f94429b1376354eb3b768be58c2eace538086e8335a23db1f556"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-13.json",
+        "records": 9,
+        "sha256": "8104ab9c3bbef34eacb3fd9292af464225ff1a93588e794264946b9824fdb27c"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-14.json",
+        "records": 9,
+        "sha256": "8ddd401de81279c8864e37d9769237c42479386259922d806c80cad64ee76c9f"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk2-textbook-lesson-15.json",
+        "records": 11,
+        "sha256": "56a1a1dde3be6f94fea9f3b2b1beb85d51152071c45735ba89572bc305b7018e"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-answers-front-appendices.json",
+        "records": 17,
+        "sha256": "879216c77304e723a6e12154e6c7bcbf6cff0d07ac7921a9b930f58b7de5e870"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-answers-lesson-01.json",
+        "records": 1,
+        "sha256": "8082d57309f3fd6a458f9320c22745319a0b49b86b635ca0be042886b3985909"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-answers-lesson-03.json",
+        "records": 1,
+        "sha256": "e025110d947e8a28ac82f77cd53f835ea143d2d897bf8a40bcc64a11d67a082c"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-answers-lesson-05.json",
+        "records": 1,
+        "sha256": "dd299439a59ff1cb3466a363e1abf86a6bb9d9bdab325d93c55d8cefe6c715e7"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-answers-lesson-08.json",
+        "records": 1,
+        "sha256": "ef9b7f79102e50ce245f880c40c32ffb24a681daebea99977e2f68cbdea96329"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-answers-lesson-10.json",
+        "records": 1,
+        "sha256": "d12a0fa8953b9bb344db41d4cebb3a50ea7d6a227068a276d5cf79bc5547ef6d"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-answers-lesson-12.json",
+        "records": 1,
+        "sha256": "72e482d326ae972db7cbc570e8fe45287d4366dfdcbe73ad6bf0957be5f2105c"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-answers-lesson-14.json",
+        "records": 1,
+        "sha256": "d3c0dcb6c93ea825f28ae6e1a02ffb60489d701e8133fbb98d73f3111cb48a89"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-answers-lesson-16.json",
+        "records": 1,
+        "sha256": "e8519db5bb7826a0f1271057672162cf7c7376d0a9704f389af7ce84d4193800"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-answers-lesson-18.json",
+        "records": 2,
+        "sha256": "27c8f4fdf4443b8c8350675346f4bf0406d088230e2eeb82dcba2046566f1246"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-front-appendices.json",
+        "records": 39,
+        "sha256": "8f623060492eb6e8e9f05ef5034b28a7f405dddb79f860ad6f53d0c9560b55d4"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-01.json",
+        "records": 9,
+        "sha256": "9abe22943f9f72ebcdf7ec2c4887507ca0e9c5902f6aa3fda8e64721ff54fac3"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-02.json",
+        "records": 9,
+        "sha256": "4e535e5ee8d3cb28b366dcfb3696d3e64a521878230a2fc69b0878584435819a"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-03.json",
+        "records": 10,
+        "sha256": "a3a2ccf9dcd85aec11a6c735f4d548f9fa3f3ef3a8f45f0eafa80cc80a74636d"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-04.json",
+        "records": 9,
+        "sha256": "32db6592c90fdd8965aa8daa480309eb556bf154aa252d43fe6b28753c48d193"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-05.json",
+        "records": 9,
+        "sha256": "726c8cd22fdd904f7c3a00fd2d576dbdccf77d89351bdd9445edbded813112dc"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-06.json",
+        "records": 10,
+        "sha256": "7bf94e3dafd42f752ee281782da1bb217bee06f5fa1e96a1b7fc89158d0f05d1"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-07.json",
+        "records": 10,
+        "sha256": "23148b6b8adbafdf99e93ee5296b5be745ea71084d9c6848ec966c027e35a81a"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-08.json",
+        "records": 9,
+        "sha256": "35a44a5cf23d6809ce601250b54000c4338f520d58f6241811a98a1482ea422c"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-09.json",
+        "records": 10,
+        "sha256": "a568e207642b3def20b15d6768ea6e8e71d463367a6c347b60fb1bfda80e00aa"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-10.json",
+        "records": 9,
+        "sha256": "9c7801086c4335e72c93630c7fc7328a7cf14d8ca7ae1b2d964c163513bf922c"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-11.json",
+        "records": 9,
+        "sha256": "18562727b46a15e9e5687ba63b30267d68c60098f67df3db167c180a3e625e37"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-12.json",
+        "records": 11,
+        "sha256": "05475ed9a6eadb05bfd52143580485db35ee6bf483ae91a74d19aeacb58d0672"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-13.json",
+        "records": 9,
+        "sha256": "134a4d2bf003f653b98b5b256985084d5f716897b8254770e93cd31799e30cff"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-14.json",
+        "records": 9,
+        "sha256": "ea6f98a0d637d69d16bff67b680fa0e3b3a550dee7b33b57ef62d5e98c440770"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-15.json",
+        "records": 11,
+        "sha256": "c1416d64332135767fd47097d7db616cb4a29d44961ece13e25d74f8ae8eb834"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-16.json",
+        "records": 10,
+        "sha256": "ea2b6943b46231b15cd9cb0e4154ff6bedb2a632041b71a4342af573a5b0d60c"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-17.json",
+        "records": 9,
+        "sha256": "e25d9bd737b98671ccfbaba24cb37e51790bef1eec0801fab2513eaacf875afa"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk3-textbook-lesson-18.json",
+        "records": 11,
+        "sha256": "71862180403727f9dc4cf3f0a0c706c03927a73de28b6f6163ec450a3d2277e7"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk1-textbook-source-pending.json",
+        "records": 144,
+        "sha256": "555ddc2a8587298669c88c7dbb71dfcba833c6240fe0400cb878d65a63749474"
+      },
+      {
+        "path": "course-app/docs/page-coverage/hsk1-answers-source-pending.json",
+        "records": 13,
+        "sha256": "ebd89a81b115bca7e685d7da3231ae44a865d4939d7488c5d6207e45cca28371"
+      }
+    ],
+    "storedVisualStatus": {
+      "author_visual_checked_lesson1_portion_only": 4,
+      "pending": 340,
+      "author_visual_verified_contents": 6,
+      "author_visual_verified_appendix_structure_and_lesson1_words": 15,
+      "author_visual_verified_non_instructional": 4,
+      "author_visual_verified": 18,
+      "author-and-independent-source-verified": 188,
+      "author_visual_verified_lesson1_translation": 1,
+      "author_visual_verified_structure_only": 1,
+      "cover/copyright-pixels-inspected-only": 2
+    },
+    "storedIndependentStatus": {
+      "pending": 391,
+      "passed-source-and-template-structure": 131,
+      "passed-source-and-real-renderer-state": 57
+    },
+    "interpretation": "Complete inventory of six original Chinese textbook/answer PDFs. Stale per-page author/independent status is not replaced here: additive later source reviews are separate exact-hash evidence. 579 does not prove full semantic review, current source recovery, media completion or Vietnamese alignment.",
+    "differentPhaseBEdition": {
+      "logicalPDFPages": [
+        148,
+        162,
+        212
+      ],
+      "total": 522,
+      "status": "not-reviewed-in-this-ledger",
+      "bodyOffsets": [
+        16,
+        14,
+        12
+      ],
+      "scope": "Three uploaded official Vietnamese books; independent additional HSK3 word/POS evidence and HSK2 Chinese-context crop evidence are bounded engineering inputs, not full Phase B acceptance."
+    },
+    "identifiedOriginalEditionLimitations": [
+      {
+        "id": "original-h3-english-appendix",
+        "status": "blocked-materialization",
+        "sourceSHA256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+        "pdfPages": [
+          195,
+          209
+        ],
+        "refs": [
+          "h3_old_source_blocker",
+          "h3_metadata_applied"
+        ],
+        "reason": "Original 75,121,060-byte source PDF unavailable after recorded HTTP502; additional Vietnamese edition has its own hash and Vietnamese translation appendix. Do not mark old English pages reread or replace old source identity.",
+        "scope": "Known source-consistency evidence gap; no new English UI feature is required."
+      }
+    ]
+  },
+  "candidates": {
+    "core_ce374": {
+      "sourceCommit": "ce374837090017fd76e7e65ea8e6e1d95851a8db",
+      "sourceTree": "09f9b5dd4ebb456c960103d679584f5b7bdc06c6",
+      "runId": 37220700329,
+      "runUrl": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37220700329",
+      "status": "accepted-exact-core-native-checkpoint",
+      "browsers": [
+        "chromium",
+        "webkit"
+      ],
+      "widths": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "hosts": [
+        "unified",
+        "standalone-hsk1"
+      ],
+      "actualMainPassed": 860,
+      "actualUnifiedPassed": 688,
+      "actualStandalonePassed": 172,
+      "oldIdentitiesRetained": 600,
+      "newCatalogueIdentities": 252,
+      "newGalleryIdentities": 8,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "retried": 0,
+      "outsideMainDenominator": {
+        "focusedPreflightLogOnly": {
+          "chromium": 53,
+          "webkit": 53
+        },
+        "webkitStartupFinalJSON": 1
+      },
+      "refs": [
+        "core_ci",
+        "core_ci_review",
+        "core_identities"
+      ],
+      "excludes": "New partial sentence runtime, new font-specific fixture, production-shaped final package and new flow CI are not in this head."
+    },
+    "local_flow": {
+      "sourceCommit": "f87926c765204119e879453755b44ea2853f0ef0",
+      "sourceDirty": true,
+      "identity": "Full build file SHA vectors and runtime hashes in shared_native_build / retained_native_build; sourceCommit alone is insufficient.",
+      "frozenSharedFiles": 1717,
+      "frozenStandaloneFiles": 613,
+      "actualDistinctChromiumCoreCases": 64,
+      "syntheticNodeCases": 4,
+      "additionalRetainedChromiumPassed": 34,
+      "originalFreshPasswordFixtureLocallyBlocked": 1,
+      "explicitSessionEquivalentFreshBackupPassed": 1,
+      "newNestedEntryPassed": 2,
+      "protectedLegacyRoutePassedWithExactLocalPakoIsolation": 1,
+      "refs": [
+        "flow_qa",
+        "flow_freeze",
+        "shared_native_build",
+        "retained_native_build",
+        "synthetic_roundtrip"
+      ],
+      "limits": "No WebKit execution of this supplemental suite; normal CDN legacy acceptance remains pending; local missing CJK fonts do not certify Chinese typography."
+    },
+    "package_v2": {
+      "sourceCommit": "c9c515fcba394534787edcbd95968c58d8cf80d2",
+      "sourceDirty": true,
+      "sourceSnapshotSHA256": "3089f02f0392fc0171c82333011334e94d4da9e487419d993327bdef4a85ad9e",
+      "inventorySHA256": "6475b01b90eaab19b479ef7f8c001f6627f5cc0601fd2296d6cef18f252d348c",
+      "directory": "/workspace/scratch/28b55072841a/package-closure-assembled-final-guarded",
+      "files": 3893,
+      "actualChromiumCases": 9,
+      "webkit": "not-run-locally",
+      "authorNegativeProbes": 22,
+      "independentNegativeProbes": 27,
+      "focusedUnitCases": 7,
+      "allPackageRegressionCases": 15,
+      "refs": [
+        "package_summary",
+        "package_independent",
+        "package_inventory"
+      ],
+      "status": "accepted-private-checkpoint-not-release",
+      "toolRevisionAfterFreeze": true,
+      "limits": "Guarded tools independently accepted after v2 freeze. Same consumer bytes support local package/legacy tests; new CI must rebuild committed exact current source."
+    },
+    "two_sentences": {
+      "status": "independent-source-frame-machine-review-accepted-runtime-conditional",
+      "sourceReviewSHA256": "76c0d3571f5ea0ce1c2d40de7baeffe3a58155ee6782a27636d99865c761501c",
+      "approvedNewSentenceFragments": 2,
+      "approvedNewVocabularyCuts": 0,
+      "targets": [
+        {
+          "id": "hsk2-fltrp-2026:l04:text2:line3",
+          "sampleRate": 16000,
+          "startFrame": 159680,
+          "endFrame": 197921
+        },
+        {
+          "id": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+          "sampleRate": 16000,
+          "startFrame": 572480,
+          "endFrame": 614240,
+          "childOrdinal": 2
+        }
+      ],
+      "overlayChecks": {
+        "checks": 30,
+        "rejectedMutations": 81,
+        "oldWords": 61,
+        "oldHolds": 13,
+        "oldLines": 78,
+        "oldChildren": 33,
+        "newWords": 61,
+        "newHolds": 13,
+        "newLines": 79,
+        "newChildren": 34,
+        "approvedNewSentenceFragments": 2,
+        "approvedNewWordCuts": 0
+      },
+      "loaderConcurrency": {
+        "status": "concurrent loadSegments waits for the shared reviewed gate",
+        "sourceSHA256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00",
+        "secondCallResolvedBeforeAsyncGate": false
+      },
+      "refs": [
+        "audio_crop_qa",
+        "partial_qa",
+        "partial_concurrency",
+        "partial_collection"
+      ],
+      "remaining": "Exact committed native Chromium/WebKit four cases each, fallback/range/resolver/async behavior; no claim that remaining corpus is precision-complete."
+    }
+  },
+  "phaseA": [
+    {
+      "autonomousStage": 1,
+      "title": "真实基线、冻结数据和修订恢复",
+      "status": "accepted-baseline-and-recovery-checkpoint",
+      "oldPlanGates": [
+        1,
+        3,
+        13,
+        14
+      ],
+      "acceptedScope": {
+        "production": "Exact 2da protected tree; explicit exclusions/replacements; old HSK3 remains 20 lessons, new 18.",
+        "frozenH1Files": "Five bank/textbook files retained at ACTIVE-CHECKPOINT hashes.",
+        "identities": "600 old main identities all actually passed in ce374; stable source IDs and history snapshots preserved.",
+        "recovery": "Committed checkpoints and exact build/source snapshots; no automatic restart guarantee."
+      },
+      "remaining": [
+        "Final current candidate must be committed and remotely verified after source/CI delta integration."
+      ],
+      "refs": [
+        "active_checkpoint",
+        "old_checkpoint",
+        "core_ci",
+        "package_summary",
+        "flow_qa",
+        "h1_l04_current"
+      ]
+    },
+    {
+      "autonomousStage": 2,
+      "title": "HSK1 L1–3 原页、答案、接入",
+      "status": "accepted-source-and-core-native",
+      "oldPlanGates": [
+        4,
+        14,
+        15
+      ],
+      "acceptedScope": {
+        "source": "17 original body PDF pages and answer page1 independently reviewed; 65 activities/43 fields/12 crops integrated at reviewed hashes.",
+        "native": "ce374 source catalogue checks all three lessons at both hosts, engines and four widths."
+      },
+      "remaining": [
+        "New source-font fixture covers L3 empty-header typography; final merged source supplementary gates remain separately pending."
+      ],
+      "refs": [
+        "h1_l01_03",
+        "h1_integration",
+        "h1_runtime_bindings",
+        "core_ci"
+      ]
+    },
+    {
+      "autonomousStage": 3,
+      "title": "HSK1 L4–8 原图和历史版本",
+      "status": "accepted-source-and-core-native",
+      "oldPlanGates": [
+        14,
+        15
+      ],
+      "acceptedScope": {
+        "l4": "13 current original crops; 36 IDs/order retained; 21 old source-v2 objects and 10 old SVG bytes preserved; current source SHA dc89c47d7d5e141f628425017af88cd93ebd2f3dba81c8bcaea754f09f0e772e.",
+        "l5_8": "160 activities,159 fields,52 crops; all34 relevant body and5 answer PDF pages independently read.",
+        "native": "Both-host/engine/four-width source catalogue and nonempty history checks passed at ce374."
+      },
+      "remaining": [
+        "New font-specific L6/L7 empty-header PNG review on installed CJK fonts."
+      ],
+      "refs": [
+        "h1_l04_crops",
+        "h1_l04_current",
+        "h1_l05_08",
+        "h1_integration",
+        "core_ci"
+      ]
+    },
+    {
+      "autonomousStage": 4,
+      "title": "HSK1 L9–15 全部来源、24拼音与版本",
+      "status": "accepted-source-integration-and-core-native-with-targeted-visual-pending",
+      "oldPlanGates": [
+        14,
+        15
+      ],
+      "acceptedScope": {
+        "l9_11": "25 original body pages+4 answer pages reviewed; L9 cat/dog repair independently rechecked.",
+        "l12_15": "Prior source/answer/crops accepted; 24 printed field pinyin reread on13 pages, Ānní two name fixes; 17 oral fields optional.",
+        "allH1": "484 activities,513 fields,193 official keys,116 optional fields,150 original crops;484 strict context roundtrips;34 main display revisions with five immutable files preserved.",
+        "native": "All15 lessons source DOM, field pinyin, empty headers and gallery behavior passed at ce374."
+      },
+      "remaining": [
+        "Actual current 320/1440 source-font 24-field/5-table PNG review per engine; fixture collection is not its native result."
+      ],
+      "refs": [
+        "h1_l09_11_source",
+        "h1_l09_11_repair",
+        "h1_l12_15_source",
+        "h1_stem_source",
+        "h1_refinements_qa",
+        "h1_runtime_bindings",
+        "core_ci",
+        "font_collection"
+      ]
+    },
+    {
+      "autonomousStage": 5,
+      "title": "HSK2/3 33课、普通词表/POS和已知原来源限制",
+      "status": "accepted-required-current-source-metadata-with-explicit-original-edition-gap",
+      "oldPlanGates": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        15
+      ],
+      "acceptedScope": {
+        "body": "33 integrated lessons have preserved independent batch source/answer/activity/artwork acceptance; do not rerun merely because central 579-page index summary is older.",
+        "h2Appendix": "210 printed entries/226 stable senses/60 boxes/10 stars accepted.",
+        "h3Additional": "18 actual lesson hashes match independent applied candidates;523 unique stable senses/491 printed appearances/72 boxes/487 glossary entries/81 new-edition pages;508 printed-POS rows,15 explicit no-printed-POS rows.",
+        "preservation": "Original H3 metadata counts217/174/0 and canonical SHA a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3 retained; new source coverage523/523/523;2 positive34 negative guards."
+      },
+      "remaining": [
+        "Original Chinese H3 English appendix PDF195–209 remains unavailable and not reread; root must retain an explicit source limitation/disposition rather than claim all579 pages accepted.",
+        "No official Vietnamese full-text correctness acceptance is given by this metadata audit."
+      ],
+      "refs": [
+        "h23_pilot",
+        "h2_l02_03",
+        "h2_l04_05",
+        "h2_l06_07",
+        "h2_l08_09",
+        "h2_l10_11",
+        "h2_l12_13",
+        "h2_l14_15",
+        "h3_l02_03",
+        "h3_l04_05",
+        "h3_l06_07",
+        "h3_l08_09",
+        "h3_l10_11",
+        "h3_l12_13",
+        "h3_l14_15",
+        "h3_l16_18",
+        "h3_old_stars",
+        "h3_additional_source_qa",
+        "h3_metadata_qa",
+        "h3_metadata_applied",
+        "h3_old_source_blocker"
+      ]
+    },
+    {
+      "autonomousStage": 6,
+      "title": "图音绑定、笔画与精准/整轨分别闭环",
+      "status": "open-partial-native-and-remaining-media-disposition",
+      "oldPlanGates": [
+        11,
+        15
+      ],
+      "acceptedScope": {
+        "images": "H1 150 approved crops;45 main scenes bind48 crops independently accepted; allgallery runtime passed ce374. H2 198/H3 240 auxiliary SVGs explicitly labeled; no requirement inferred to replace438 with book photos.",
+        "originalTracks": "357 original MP3:93 H1+120 H2+144 H3; package identity closure accepted.",
+        "strokes": "671 required unique glyphs match trusted provenance/shape/license and packaged hashes; ce374 media cases passed.",
+        "baselinePrecision": "H2/3 old61 words+13 holds+78 parent lines+33 children unchanged;95 actual sentence units. H1 inherited203 line ranges are not certification of248 separately exposed sentences.",
+        "additionalMachineCrop": "Only two reviewed exact-frame sentence fragments; no color whole-track promotion.",
+        "remainingEvidence": "Pilot24 +remaining208=232 original tracks in29 lessons; nine remaining source-specific batch ZIPs,26 lesson hashes,208 full PCM decodes verified; zero other promotions."
+      },
+      "remaining": [
+        "Two-sentence overlay needs exact committed two-engine native4/engine gate plus independent final source/loader/fallback hashes.",
+        "Remaining diagnostics/ASR alone do not close 688 vocabulary sense precision backlog or660 missing parent-line ranges. Review existing nine batch diagnostics into accepted/held/fallback dispositions; preserve genuinely unresolved original-track fallbacks.",
+        "Do not add two fragments to parent-line/word counts; partial runtime totals are grain-specific.",
+        "Human listening/tone/native-speaker/physical-device certification stays false unless actually performed."
+      ],
+      "refs": [
+        "media_inventory",
+        "media_scope",
+        "h1_scenes",
+        "core_ci",
+        "package_independent",
+        "audio_pilot_qa",
+        "audio_crop_qa",
+        "audio_remaining_integrity",
+        "audio_remaining_diagnostics",
+        "partial_qa",
+        "partial_concurrency"
+      ]
+    },
+    {
+      "autonomousStage": 7,
+      "title": "48课真实学习流程",
+      "status": "accepted-local-flows-current-two-engine-supplement-pending",
+      "oldPlanGates": [
+        3,
+        12,
+        15
+      ],
+      "acceptedScope": {
+        "localDistinctCases": {
+          "all48Homework": 48,
+          "fullH2H3Listening": 2,
+          "fullH2H3MixedCards": 2,
+          "confirmedSaveBoundaries": 8,
+          "finalLessonInputIME": 2,
+          "320Mobile": 2,
+          "total": 64
+        },
+        "homework": "1440 real questions/240 saved groups; first/latest/manual exact persisted receipt checks.",
+        "independentListen": "H2 60+H3 72 stable tasks; first/latest,wrong-only and cross-level restart.",
+        "mixed": "H2 226+H3 523 stable senses full1440 queue traversal; selected long backs at320 and final-page resize390/768/1440.",
+        "retainedH1": "Separate34 native old flows passed, full75 listening/344 sense mappings; explicit-session freshbackup1 separate."
+      },
+      "remaining": [
+        "New six-job exact committed CI must execute64 per engine and retained original35 per engine, not only collection; replay same current source.",
+        "No claim749 card backs all four widths or1440 questions all widths; scope is actual selected views and full mapping traversal."
+      ],
+      "refs": [
+        "flow_qa",
+        "flow_scope",
+        "shared_native_build",
+        "retained_native_build",
+        "new_flow_workflow",
+        "retained_collection"
+      ]
+    },
+    {
+      "autonomousStage": 8,
+      "title": "非空历史、备份/恢复、旧入口和HSK4",
+      "status": "accepted-private-local-compatibility-current-normal-network-pending",
+      "oldPlanGates": [
+        1,
+        13,
+        14,
+        15
+      ],
+      "acceptedScope": {
+        "history": "Native quota/Web Locks/IME/current receipt boundaries; H1 nonempty old raw strings and revision-safe records preserved.",
+        "synthetic": "4 Node memory StoragePort tests cover all48 imported/exported course data; separate from native backup/browser counts.",
+        "routes": "NewnestedH2L15/H3L18 unmodified2cases; oldH1/H2/H3/H4-up/down1case with five old storage strings byte-exact using explicit same-version localPako dependency isolation.",
+        "package": "3893 public consumer files;1380 protected old public bytes;55 unserved developer files and11 replacements explicitly inventoried;1200 crop paths/438 SVG/357 MP3/671 glyph proof closure;27 independent negative guards."
+      },
+      "remaining": [
+        "Normal CDN old routes3case CI must pass without local Pako request substitution; local network ERR_EMPTY_RESPONSE is not normal-network certification.",
+        "Original35 retained password freshbackup must pass through existing private wrapper; equivalent explicit-session1 remains independently labeled.",
+        "Current clean package both-engine9 cases and exact baseline archive must run; private dirty c9 package is not current frozen release."
+      ],
+      "refs": [
+        "flow_qa",
+        "synthetic_roundtrip",
+        "package_summary",
+        "package_independent",
+        "package_inventory",
+        "new_flow_workflow",
+        "retained_wrapper",
+        "retained_collection"
+      ]
+    },
+    {
+      "autonomousStage": 9,
+      "title": "工程候选、双引擎矩阵与冻结",
+      "status": "open-current-merged-supplement-font-media-and-final-freeze",
+      "oldPlanGates": [
+        15
+      ],
+      "acceptedScope": {
+        "core": "ce374 exact core860 actual pass+53/53 focused log-only+WebKit startup1;8 selected actual remote Noto PNGs reviewed.",
+        "source": "At observation HEAD runtime committed scopes equal ce374; current dirty partial/package source is separately hashed and untested by that run.",
+        "fixtureCollection": "Retained70=35/engine,partial8=4/engine,font4=2/engine actual --list, no browser execution.",
+        "releaseTools": "Accepted guarded packager/assembler sources stable; runtime dirty/build inputs share scopes; clean --build/source=HEAD guard retained."
+      },
+      "remaining": [
+        "Commit all accepted source/config/fixture deltas and verify durable remote exact head.",
+        "Execute six jobs for current exact tree and audit real final JSON,case identities,artifact ZIP/SHA,actual assembly; if consumer bytes change core scope requires affected/full justified checks.",
+        "Review remote installed-font 320/1440 PNGs for24 printed pinyin and5 blank-header tables;2perengine seventeen screenshots each width.",
+        "Close media known dispositions and original-edition limitation explicitly; root freezes engineering candidate before authorized Phase B.",
+        "Do not create formal all16passed or deploy."
+      ],
+      "refs": [
+        "core_ci",
+        "core_ci_review",
+        "prior_ci",
+        "new_flow_workflow",
+        "retained_collection",
+        "partial_collection",
+        "font_collection",
+        "packager",
+        "assembler",
+        "font_config",
+        "font_typecheck",
+        "partial_typecheck",
+        "ci_delta"
+      ]
+    }
+  ],
+  "oldPlanMapping": [
+    {
+      "oldGate": 1,
+      "requirement": "Freeze restore points/nonempty baseline",
+      "autonomousPhaseAStages": [
+        1,
+        8
+      ],
+      "actualStatus": "accepted-checkpoint",
+      "refs": [
+        "old_plan",
+        "active_checkpoint",
+        "core_ci",
+        "flow_qa",
+        "h1_l04_current",
+        "new_flow_workflow",
+        "old_checkpoint",
+        "package_independent",
+        "package_inventory",
+        "package_summary",
+        "retained_collection",
+        "retained_wrapper",
+        "synthetic_roundtrip"
+      ]
+    },
+    {
+      "oldGate": 2,
+      "requirement": "579-page inventory/schema/page ledger",
+      "autonomousPhaseAStages": [
+        1,
+        5
+      ],
+      "actualStatus": "inventory-complete-additive-reviews-with-explicit-source-gap",
+      "refs": [
+        "old_plan",
+        "active_checkpoint",
+        "core_ci",
+        "flow_qa",
+        "h1_l04_current",
+        "h23_pilot",
+        "h2_l02_03",
+        "h2_l04_05",
+        "h2_l06_07",
+        "h2_l08_09",
+        "h2_l10_11",
+        "h2_l12_13",
+        "h2_l14_15",
+        "h3_additional_source_qa",
+        "h3_l02_03",
+        "h3_l04_05",
+        "h3_l06_07",
+        "h3_l08_09",
+        "h3_l10_11",
+        "h3_l12_13",
+        "h3_l14_15",
+        "h3_l16_18",
+        "h3_metadata_applied",
+        "h3_metadata_qa",
+        "h3_old_source_blocker",
+        "h3_old_stars",
+        "old_checkpoint",
+        "package_summary"
+      ]
+    },
+    {
+      "oldGate": 3,
+      "requirement": "Unified shell/level routes/lazy loading",
+      "autonomousPhaseAStages": [
+        1,
+        7
+      ],
+      "actualStatus": "core-native-accepted-supplement-pending",
+      "refs": [
+        "old_plan",
+        "active_checkpoint",
+        "core_ci",
+        "flow_qa",
+        "flow_scope",
+        "h1_l04_current",
+        "new_flow_workflow",
+        "old_checkpoint",
+        "package_summary",
+        "retained_collection",
+        "retained_native_build",
+        "shared_native_build"
+      ]
+    },
+    {
+      "oldGate": 4,
+      "requirement": "H2L1/H3L1/H1representative source pilots",
+      "autonomousPhaseAStages": [
+        2,
+        5
+      ],
+      "actualStatus": "source-pilots-retained-and-expanded",
+      "refs": [
+        "old_plan",
+        "core_ci",
+        "h1_integration",
+        "h1_l01_03",
+        "h1_runtime_bindings",
+        "h23_pilot",
+        "h2_l02_03",
+        "h2_l04_05",
+        "h2_l06_07",
+        "h2_l08_09",
+        "h2_l10_11",
+        "h2_l12_13",
+        "h2_l14_15",
+        "h3_additional_source_qa",
+        "h3_l02_03",
+        "h3_l04_05",
+        "h3_l06_07",
+        "h3_l08_09",
+        "h3_l10_11",
+        "h3_l12_13",
+        "h3_l14_15",
+        "h3_l16_18",
+        "h3_metadata_applied",
+        "h3_metadata_qa",
+        "h3_old_source_blocker",
+        "h3_old_stars"
+      ]
+    },
+    {
+      "oldGate": 5,
+      "requirement": "HSK2L1–5 source",
+      "autonomousPhaseAStages": [
+        5
+      ],
+      "actualStatus": "accepted-batch-evidence-retained",
+      "refs": [
+        "old_plan",
+        "h23_pilot",
+        "h2_l02_03",
+        "h2_l04_05",
+        "h2_l06_07",
+        "h2_l08_09",
+        "h2_l10_11",
+        "h2_l12_13",
+        "h2_l14_15",
+        "h3_additional_source_qa",
+        "h3_l02_03",
+        "h3_l04_05",
+        "h3_l06_07",
+        "h3_l08_09",
+        "h3_l10_11",
+        "h3_l12_13",
+        "h3_l14_15",
+        "h3_l16_18",
+        "h3_metadata_applied",
+        "h3_metadata_qa",
+        "h3_old_source_blocker",
+        "h3_old_stars"
+      ]
+    },
+    {
+      "oldGate": 6,
+      "requirement": "HSK2L6–10 source",
+      "autonomousPhaseAStages": [
+        5
+      ],
+      "actualStatus": "accepted-batch-evidence-retained",
+      "refs": [
+        "old_plan",
+        "h23_pilot",
+        "h2_l02_03",
+        "h2_l04_05",
+        "h2_l06_07",
+        "h2_l08_09",
+        "h2_l10_11",
+        "h2_l12_13",
+        "h2_l14_15",
+        "h3_additional_source_qa",
+        "h3_l02_03",
+        "h3_l04_05",
+        "h3_l06_07",
+        "h3_l08_09",
+        "h3_l10_11",
+        "h3_l12_13",
+        "h3_l14_15",
+        "h3_l16_18",
+        "h3_metadata_applied",
+        "h3_metadata_qa",
+        "h3_old_source_blocker",
+        "h3_old_stars"
+      ]
+    },
+    {
+      "oldGate": 7,
+      "requirement": "HSK2L11–15/appendices",
+      "autonomousPhaseAStages": [
+        5
+      ],
+      "actualStatus": "accepted-batch-evidence-retained",
+      "refs": [
+        "old_plan",
+        "h23_pilot",
+        "h2_l02_03",
+        "h2_l04_05",
+        "h2_l06_07",
+        "h2_l08_09",
+        "h2_l10_11",
+        "h2_l12_13",
+        "h2_l14_15",
+        "h3_additional_source_qa",
+        "h3_l02_03",
+        "h3_l04_05",
+        "h3_l06_07",
+        "h3_l08_09",
+        "h3_l10_11",
+        "h3_l12_13",
+        "h3_l14_15",
+        "h3_l16_18",
+        "h3_metadata_applied",
+        "h3_metadata_qa",
+        "h3_old_source_blocker",
+        "h3_old_stars"
+      ]
+    },
+    {
+      "oldGate": 8,
+      "requirement": "HSK3L1–6 source",
+      "autonomousPhaseAStages": [
+        5
+      ],
+      "actualStatus": "accepted-batch-evidence-retained",
+      "refs": [
+        "old_plan",
+        "h23_pilot",
+        "h2_l02_03",
+        "h2_l04_05",
+        "h2_l06_07",
+        "h2_l08_09",
+        "h2_l10_11",
+        "h2_l12_13",
+        "h2_l14_15",
+        "h3_additional_source_qa",
+        "h3_l02_03",
+        "h3_l04_05",
+        "h3_l06_07",
+        "h3_l08_09",
+        "h3_l10_11",
+        "h3_l12_13",
+        "h3_l14_15",
+        "h3_l16_18",
+        "h3_metadata_applied",
+        "h3_metadata_qa",
+        "h3_old_source_blocker",
+        "h3_old_stars"
+      ]
+    },
+    {
+      "oldGate": 9,
+      "requirement": "HSK3L7–12 source",
+      "autonomousPhaseAStages": [
+        5
+      ],
+      "actualStatus": "accepted-batch-evidence-retained",
+      "refs": [
+        "old_plan",
+        "h23_pilot",
+        "h2_l02_03",
+        "h2_l04_05",
+        "h2_l06_07",
+        "h2_l08_09",
+        "h2_l10_11",
+        "h2_l12_13",
+        "h2_l14_15",
+        "h3_additional_source_qa",
+        "h3_l02_03",
+        "h3_l04_05",
+        "h3_l06_07",
+        "h3_l08_09",
+        "h3_l10_11",
+        "h3_l12_13",
+        "h3_l14_15",
+        "h3_l16_18",
+        "h3_metadata_applied",
+        "h3_metadata_qa",
+        "h3_old_source_blocker",
+        "h3_old_stars"
+      ]
+    },
+    {
+      "oldGate": 10,
+      "requirement": "HSK3L13–18/appendices",
+      "autonomousPhaseAStages": [
+        5
+      ],
+      "actualStatus": "body-accepted-additional-glossary-accepted-original-english-gap-explicit",
+      "refs": [
+        "old_plan",
+        "h23_pilot",
+        "h2_l02_03",
+        "h2_l04_05",
+        "h2_l06_07",
+        "h2_l08_09",
+        "h2_l10_11",
+        "h2_l12_13",
+        "h2_l14_15",
+        "h3_additional_source_qa",
+        "h3_l02_03",
+        "h3_l04_05",
+        "h3_l06_07",
+        "h3_l08_09",
+        "h3_l10_11",
+        "h3_l12_13",
+        "h3_l14_15",
+        "h3_l16_18",
+        "h3_metadata_applied",
+        "h3_metadata_qa",
+        "h3_old_source_blocker",
+        "h3_old_stars"
+      ]
+    },
+    {
+      "oldGate": 11,
+      "requirement": "Images/audio segments/handwriting",
+      "autonomousPhaseAStages": [
+        6
+      ],
+      "actualStatus": "open-remaining-media-disposition-and-partial-native",
+      "refs": [
+        "old_plan",
+        "audio_crop_qa",
+        "audio_pilot_qa",
+        "audio_remaining_diagnostics",
+        "audio_remaining_integrity",
+        "core_ci",
+        "h1_scenes",
+        "media_inventory",
+        "media_scope",
+        "package_independent",
+        "partial_concurrency",
+        "partial_qa"
+      ]
+    },
+    {
+      "oldGate": 12,
+      "requirement": "Homework/listening/free mixed cards",
+      "autonomousPhaseAStages": [
+        7
+      ],
+      "actualStatus": "local-native-accepted-two-engine-current-pending",
+      "refs": [
+        "old_plan",
+        "flow_qa",
+        "flow_scope",
+        "new_flow_workflow",
+        "retained_collection",
+        "retained_native_build",
+        "shared_native_build"
+      ]
+    },
+    {
+      "oldGate": 13,
+      "requirement": "Progress/backup/revision-safe history",
+      "autonomousPhaseAStages": [
+        1,
+        8
+      ],
+      "actualStatus": "accepted-checkpoints-current-normal-network-pending",
+      "refs": [
+        "old_plan",
+        "active_checkpoint",
+        "core_ci",
+        "flow_qa",
+        "h1_l04_current",
+        "new_flow_workflow",
+        "old_checkpoint",
+        "package_independent",
+        "package_inventory",
+        "package_summary",
+        "retained_collection",
+        "retained_wrapper",
+        "synthetic_roundtrip"
+      ]
+    },
+    {
+      "oldGate": 14,
+      "requirement": "HSK1 original shortcomings/legacy",
+      "autonomousPhaseAStages": [
+        2,
+        3,
+        4,
+        8
+      ],
+      "actualStatus": "source/core-native-accepted-current-legacy-supplement-pending",
+      "refs": [
+        "old_plan",
+        "core_ci",
+        "flow_qa",
+        "font_collection",
+        "h1_integration",
+        "h1_l01_03",
+        "h1_l04_crops",
+        "h1_l04_current",
+        "h1_l05_08",
+        "h1_l09_11_repair",
+        "h1_l09_11_source",
+        "h1_l12_15_source",
+        "h1_refinements_qa",
+        "h1_runtime_bindings",
+        "h1_stem_source",
+        "new_flow_workflow",
+        "package_independent",
+        "package_inventory",
+        "package_summary",
+        "retained_collection",
+        "retained_wrapper",
+        "synthetic_roundtrip"
+      ]
+    },
+    {
+      "oldGate": 15,
+      "requirement": "48lessons/33 deep source/engines/widths/recovery/a11y/visual",
+      "autonomousPhaseAStages": [
+        9
+      ],
+      "actualStatus": "ce374-core-accepted-current-exact-supplement-font-and-freeze-pending",
+      "refs": [
+        "old_plan",
+        "assembler",
+        "core_ci",
+        "core_ci_review",
+        "font_collection",
+        "new_flow_workflow",
+        "packager",
+        "partial_collection",
+        "prior_ci",
+        "retained_collection"
+      ]
+    },
+    {
+      "oldGate": 16,
+      "requirement": "Publish frozen artifact/online verification",
+      "autonomousPhaseAStages": [],
+      "actualStatus": "withheld-until-user-approval-phase-C",
+      "refs": [
+        "old_plan"
+      ]
+    }
+  ],
+  "formalReleaseGuard": {
+    "path": "course-app/docs/unified-final-acceptance.json",
+    "existsAtObservation": false,
+    "implementationRef": "packager",
+    "requires": {
+      "sourceCommitEqualsHEAD": true,
+      "runtimeInputsCommittedClean": true,
+      "buildFromRecordedCurrentWorktree": true,
+      "lessons": 48,
+      "textbookLessons": 33,
+      "originalInventoryPages": 579,
+      "stages": 16,
+      "everyStageStatus": "passed",
+      "chromium": true,
+      "webkit": true
+    },
+    "status": "not-satisfied-not-written",
+    "semanticDistinction": "AUTONOMOUS16 and oldPLAN16 are differently ordered plans. Their stage numbers must not be substituted. OldPLAN16 includes post-publication online verification, which cannot truthfully be prefilled passed before a release package. Root should define final pre-publication readiness and separate actual online verification at C15/C16 without weakening existing guard silently.",
+    "publicationApproved": false,
+    "productionChangedByThisReview": false
+  },
+  "newSupplementRequiredActualScope": {
+    "workflowRef": "new_flow_workflow",
+    "workflowStatus": "current-worktree-delta-reviewed-conditional; not-triggered-by-this-review",
+    "plannedJobs": 6,
+    "engines": [
+      "chromium",
+      "webkit"
+    ],
+    "perEngine": {
+      "sharedNative": 64,
+      "retainedOriginalNative": 35,
+      "explicitSessionFreshBackupEquivalent": 1,
+      "packageNative": 9,
+      "normalNetworkLegacyAndNested": 3,
+      "partialSentences": 4,
+      "sourceFontWidths": 2
+    },
+    "plannedDistinctNativeTotal": 236,
+    "syntheticNodePerSharedJob": 4,
+    "countsArePlannedNotPassed": true,
+    "fontArtifactsPerEngine": {
+      "widths": [
+        320,
+        1440
+      ],
+      "printedPinyinFieldsPerWidth": 24,
+      "blankHeaderTablesPerWidth": 5,
+      "PNGsPerWidth": 17
+    },
+    "deltaReviewPath": "course-app/docs/resume-20261004/engineering-closure/ci-delta-review.json",
+    "workflowWorktreeSHA256": "b9202648285c9c97c8eb5e11b30741cc60083c7e2ada96e7ab99204c4ef24964",
+    "fontConfig": "font_config"
+  },
+  "notClaimed": [
+    "All9 engineering stages complete",
+    "All16 formal release stages passed",
+    "579pages freshly independently semantically reviewed",
+    "Official Vietnamese comprehensive alignment",
+    "Remaining diagnostics promoted to precise clips",
+    "Physical-device/human-listening/native-speaker certification",
+    "Full749backs at everywidth",
+    "NormalCDN oldhost success from local Pako substitution",
+    "Current new source tested by earlier ce374run",
+    "Deployment or automatic continuation after platform interruption"
+  ]
+}

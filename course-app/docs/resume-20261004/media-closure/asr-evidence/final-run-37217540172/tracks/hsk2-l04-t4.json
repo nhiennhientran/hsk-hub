@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l04:audio4",
+    "level": 2,
+    "lesson": 4,
+    "track": 4,
+    "kind": "vocab",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/4-4.mp3",
+    "sha256": "fdf482462bffd69724e9c1e7f045127296882da22a73277b0a85c93ea47090eb",
+    "bytes": 402747,
+    "manifestDurationSeconds": 14.909333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 238464,
+      "durationSeconds": 14.904,
+      "sha256": "23558ac75ec0689d4ad65499962d54e2bc5f2b59d54262ae2befc8626f891e67"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 14.904,
+    "duration_after_vad": 14.904,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.56,
+      "text": "白色",
+      "tokens": [
+        50364,
+        13558,
+        17673,
+        50515
+      ],
+      "avg_logprob": -0.8442891522457725,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.3064330816268921,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.64,
+          "word": "白",
+          "probability": 0.9548920392990112
+        },
+        {
+          "start": 0.64,
+          "end": 2.56,
+          "word": "色",
+          "probability": 0.9953789710998535
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.52,
+      "end": 4.38,
+      "text": "因为",
+      "tokens": [
+        50540,
+        34627,
+        50682
+      ],
+      "avg_logprob": -0.8442891522457725,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.3064330816268921,
+      "words": [
+        {
+          "start": 3.52,
+          "end": 4.38,
+          "word": "因为",
+          "probability": 0.19835083186626434
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 6.36,
+      "end": 7.16,
+      "text": "是",
+      "tokens": [
+        50682,
+        1541,
+        50795
+      ],
+      "avg_logprob": -0.8442891522457725,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.3064330816268921,
+      "words": [
+        {
+          "start": 6.36,
+          "end": 7.16,
+          "word": "是",
+          "probability": 0.9603897929191589
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 8.620000000000001,
+      "end": 11.0,
+      "text": "红色",
+      "tokens": [
+        50795,
+        16853,
+        95,
+        17673,
+        50932
+      ],
+      "avg_logprob": -0.8442891522457725,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.3064330816268921,
+      "words": [
+        {
+          "start": 8.56,
+          "end": 9.26,
+          "word": "红",
+          "probability": 0.9652149081230164
+        },
+        {
+          "start": 9.26,
+          "end": 11.0,
+          "word": "色",
+          "probability": 0.9993689656257629
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 11.0,
+      "end": 12.16,
+      "text": "所以",
+      "tokens": [
+        50932,
+        7239,
+        51084
+      ],
+      "avg_logprob": -0.8442891522457725,
+      "compression_ratio": 0.75,
+      "no_speech_prob": 0.3064330816268921,
+      "words": [
+        {
+          "start": 11.0,
+          "end": 12.16,
+          "word": "所以",
+          "probability": 0.7230529189109802
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 0.9216713229999982,
+  "realTimeFactor": 0.06184053428609757,
+  "observationChecks": {
+    "rawWordCount": 7,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

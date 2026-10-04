@@ -1,0 +1,1075 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l09:audio7",
+    "level": 3,
+    "lesson": 9,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/9-7.mp3",
+    "sha256": "f733f652df1e1c1ccd880c6ac0a9ac231c5e6fd5c55444afb875e01bc1198125",
+    "bytes": 608270,
+    "manifestDurationSeconds": 35.479067,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 568843,
+      "durationSeconds": 35.5526875,
+      "sha256": "841ca375b8700b42b1b47916e01521306debcf1ee947266a817fb156c435d4be"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 35.5526875,
+    "duration_after_vad": 35.5526875,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.7599999999999978,
+      "end": 2.78,
+      "text": "我喜欢看体育比赛。",
+      "tokens": [
+        50364,
+        1654,
+        41606,
+        4200,
+        29485,
+        14356,
+        110,
+        11706,
+        5266,
+        249,
+        1543,
+        50514
+      ],
+      "avg_logprob": -0.07958536369856013,
+      "compression_ratio": 1.3427230046948357,
+      "no_speech_prob": 0.07452679425477982,
+      "words": [
+        {
+          "start": 0.7599999999999978,
+          "end": 1.32,
+          "word": "我",
+          "probability": 0.649931013584137
+        },
+        {
+          "start": 1.32,
+          "end": 1.56,
+          "word": "喜欢",
+          "probability": 0.9224501848220825
+        },
+        {
+          "start": 1.56,
+          "end": 1.94,
+          "word": "看",
+          "probability": 0.9989770650863647
+        },
+        {
+          "start": 1.94,
+          "end": 2.24,
+          "word": "体",
+          "probability": 0.9695386290550232
+        },
+        {
+          "start": 2.24,
+          "end": 2.4,
+          "word": "育",
+          "probability": 0.9944956302642822
+        },
+        {
+          "start": 2.4,
+          "end": 2.58,
+          "word": "比",
+          "probability": 0.9915210008621216
+        },
+        {
+          "start": 2.58,
+          "end": 2.78,
+          "word": "赛。",
+          "probability": 0.9988218545913696
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.32,
+      "end": 5.76,
+      "text": "最爱看的就是奥运会。",
+      "tokens": [
+        50514,
+        8661,
+        27324,
+        4200,
+        1546,
+        5620,
+        1881,
+        98,
+        3316,
+        238,
+        12949,
+        1543,
+        50664
+      ],
+      "avg_logprob": -0.07958536369856013,
+      "compression_ratio": 1.3427230046948357,
+      "no_speech_prob": 0.07452679425477982,
+      "words": [
+        {
+          "start": 3.32,
+          "end": 3.76,
+          "word": "最",
+          "probability": 0.9277650117874146
+        },
+        {
+          "start": 3.76,
+          "end": 3.96,
+          "word": "爱",
+          "probability": 0.9935280680656433
+        },
+        {
+          "start": 3.96,
+          "end": 4.14,
+          "word": "看",
+          "probability": 0.9973322153091431
+        },
+        {
+          "start": 4.14,
+          "end": 4.38,
+          "word": "的",
+          "probability": 0.9706791043281555
+        },
+        {
+          "start": 4.38,
+          "end": 4.88,
+          "word": "就是",
+          "probability": 0.8214704990386963
+        },
+        {
+          "start": 4.88,
+          "end": 5.3,
+          "word": "奥",
+          "probability": 0.9720815718173981
+        },
+        {
+          "start": 5.3,
+          "end": 5.5,
+          "word": "运",
+          "probability": 0.9985178112983704
+        },
+        {
+          "start": 5.5,
+          "end": 5.76,
+          "word": "会。",
+          "probability": 0.9926989674568176
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 6.88,
+      "end": 10.52,
+      "text": "奥运会是世界上影响最大的体育比赛。",
+      "tokens": [
+        50664,
+        1881,
+        98,
+        3316,
+        238,
+        12949,
+        1541,
+        24486,
+        5708,
+        16820,
+        3858,
+        235,
+        8661,
+        39156,
+        29485,
+        14356,
+        110,
+        11706,
+        5266,
+        249,
+        1543,
+        50914
+      ],
+      "avg_logprob": -0.07958536369856013,
+      "compression_ratio": 1.3427230046948357,
+      "no_speech_prob": 0.07452679425477982,
+      "words": [
+        {
+          "start": 6.88,
+          "end": 7.2,
+          "word": "奥",
+          "probability": 0.9990221858024597
+        },
+        {
+          "start": 7.2,
+          "end": 7.32,
+          "word": "运",
+          "probability": 0.9998414218425751
+        },
+        {
+          "start": 7.32,
+          "end": 7.56,
+          "word": "会",
+          "probability": 0.9984613656997681
+        },
+        {
+          "start": 7.56,
+          "end": 7.96,
+          "word": "是",
+          "probability": 0.9629378318786621
+        },
+        {
+          "start": 7.96,
+          "end": 8.24,
+          "word": "世界",
+          "probability": 0.9969761371612549
+        },
+        {
+          "start": 8.24,
+          "end": 8.56,
+          "word": "上",
+          "probability": 0.9987126588821411
+        },
+        {
+          "start": 8.56,
+          "end": 8.84,
+          "word": "影",
+          "probability": 0.9939716458320618
+        },
+        {
+          "start": 8.84,
+          "end": 9.02,
+          "word": "响",
+          "probability": 0.998914510011673
+        },
+        {
+          "start": 9.02,
+          "end": 9.32,
+          "word": "最",
+          "probability": 0.9849634766578674
+        },
+        {
+          "start": 9.32,
+          "end": 9.62,
+          "word": "大的",
+          "probability": 0.9494525790214539
+        },
+        {
+          "start": 9.62,
+          "end": 9.96,
+          "word": "体",
+          "probability": 0.9970920085906982
+        },
+        {
+          "start": 9.96,
+          "end": 10.14,
+          "word": "育",
+          "probability": 0.9996568262577057
+        },
+        {
+          "start": 10.14,
+          "end": 10.34,
+          "word": "比",
+          "probability": 0.9986193180084229
+        },
+        {
+          "start": 10.34,
+          "end": 10.52,
+          "word": "赛。",
+          "probability": 0.9998773336410522
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 11.08,
+      "end": 14.1,
+      "text": "从1896年到2024年,",
+      "tokens": [
+        50914,
+        35630,
+        6494,
+        22962,
+        5157,
+        4511,
+        2009,
+        7911,
+        5157,
+        11,
+        51064
+      ],
+      "avg_logprob": -0.07958536369856013,
+      "compression_ratio": 1.3427230046948357,
+      "no_speech_prob": 0.07452679425477982,
+      "words": [
+        {
+          "start": 11.08,
+          "end": 11.34,
+          "word": "从",
+          "probability": 0.9889100193977356
+        },
+        {
+          "start": 11.34,
+          "end": 11.74,
+          "word": "18",
+          "probability": 0.8326438665390015
+        },
+        {
+          "start": 11.74,
+          "end": 12.1,
+          "word": "96",
+          "probability": 0.9973236322402954
+        },
+        {
+          "start": 12.1,
+          "end": 12.46,
+          "word": "年",
+          "probability": 0.9412399530410767
+        },
+        {
+          "start": 12.46,
+          "end": 12.94,
+          "word": "到",
+          "probability": 0.9410024881362915
+        },
+        {
+          "start": 12.94,
+          "end": 13.34,
+          "word": "20",
+          "probability": 0.9849932193756104
+        },
+        {
+          "start": 13.34,
+          "end": 13.64,
+          "word": "24",
+          "probability": 0.997627317905426
+        },
+        {
+          "start": 13.64,
+          "end": 14.1,
+          "word": "年,",
+          "probability": 0.9950541257858276
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 14.68,
+      "end": 18.26,
+      "text": "每次奥运会都有非常多的运动员参加。",
+      "tokens": [
+        51064,
+        23664,
+        9487,
+        1881,
+        98,
+        3316,
+        238,
+        12949,
+        48121,
+        14392,
+        6392,
+        1546,
+        3316,
+        238,
+        34961,
+        3606,
+        246,
+        2129,
+        224,
+        9990,
+        1543,
+        51314
+      ],
+      "avg_logprob": -0.07958536369856013,
+      "compression_ratio": 1.3427230046948357,
+      "no_speech_prob": 0.07452679425477982,
+      "words": [
+        {
+          "start": 14.68,
+          "end": 14.84,
+          "word": "每",
+          "probability": 0.7969202995300293
+        },
+        {
+          "start": 14.84,
+          "end": 15.06,
+          "word": "次",
+          "probability": 0.9938196539878845
+        },
+        {
+          "start": 15.06,
+          "end": 15.3,
+          "word": "奥",
+          "probability": 0.999604731798172
+        },
+        {
+          "start": 15.3,
+          "end": 15.44,
+          "word": "运",
+          "probability": 0.9998827278614044
+        },
+        {
+          "start": 15.44,
+          "end": 15.72,
+          "word": "会",
+          "probability": 0.9981512427330017
+        },
+        {
+          "start": 15.72,
+          "end": 16.12,
+          "word": "都有",
+          "probability": 0.9598173499107361
+        },
+        {
+          "start": 16.12,
+          "end": 16.58,
+          "word": "非常",
+          "probability": 0.9919982552528381
+        },
+        {
+          "start": 16.58,
+          "end": 17.0,
+          "word": "多",
+          "probability": 0.9996960163116455
+        },
+        {
+          "start": 17.0,
+          "end": 17.22,
+          "word": "的",
+          "probability": 0.9971743822097778
+        },
+        {
+          "start": 17.22,
+          "end": 17.38,
+          "word": "运",
+          "probability": 0.9941036403179169
+        },
+        {
+          "start": 17.38,
+          "end": 17.52,
+          "word": "动",
+          "probability": 0.9988282322883606
+        },
+        {
+          "start": 17.52,
+          "end": 17.78,
+          "word": "员",
+          "probability": 0.9955444037914276
+        },
+        {
+          "start": 17.78,
+          "end": 18.02,
+          "word": "参",
+          "probability": 0.9973505437374115
+        },
+        {
+          "start": 18.02,
+          "end": 18.26,
+          "word": "加。",
+          "probability": 0.9995077848434448
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 19.52,
+      "end": 23.78,
+      "text": "第一位参加奥运会的中国运动员是刘长春。",
+      "tokens": [
+        51314,
+        18049,
+        11160,
+        2129,
+        224,
+        9990,
+        1881,
+        98,
+        3316,
+        238,
+        12949,
+        1546,
+        38165,
+        3316,
+        238,
+        34961,
+        3606,
+        246,
+        1541,
+        2437,
+        246,
+        32271,
+        46953,
+        1543,
+        51564
+      ],
+      "avg_logprob": -0.07958536369856013,
+      "compression_ratio": 1.3427230046948357,
+      "no_speech_prob": 0.07452679425477982,
+      "words": [
+        {
+          "start": 19.52,
+          "end": 19.9,
+          "word": "第一",
+          "probability": 0.9637883901596069
+        },
+        {
+          "start": 19.9,
+          "end": 20.1,
+          "word": "位",
+          "probability": 0.9916284084320068
+        },
+        {
+          "start": 20.1,
+          "end": 20.3,
+          "word": "参",
+          "probability": 0.9992143213748932
+        },
+        {
+          "start": 20.3,
+          "end": 20.48,
+          "word": "加",
+          "probability": 0.9977535605430603
+        },
+        {
+          "start": 20.48,
+          "end": 20.74,
+          "word": "奥",
+          "probability": 0.9996033906936646
+        },
+        {
+          "start": 20.74,
+          "end": 20.86,
+          "word": "运",
+          "probability": 0.9999191164970398
+        },
+        {
+          "start": 20.86,
+          "end": 21.1,
+          "word": "会",
+          "probability": 0.9991163611412048
+        },
+        {
+          "start": 21.1,
+          "end": 21.3,
+          "word": "的",
+          "probability": 0.9981178045272827
+        },
+        {
+          "start": 21.3,
+          "end": 21.64,
+          "word": "中国",
+          "probability": 0.991793692111969
+        },
+        {
+          "start": 21.64,
+          "end": 21.98,
+          "word": "运",
+          "probability": 0.9986972212791443
+        },
+        {
+          "start": 21.98,
+          "end": 22.08,
+          "word": "动",
+          "probability": 0.9967241883277893
+        },
+        {
+          "start": 22.08,
+          "end": 22.36,
+          "word": "员",
+          "probability": 0.9992846846580505
+        },
+        {
+          "start": 22.36,
+          "end": 22.88,
+          "word": "是",
+          "probability": 0.9317308664321899
+        },
+        {
+          "start": 22.88,
+          "end": 23.2,
+          "word": "刘",
+          "probability": 0.9947238862514496
+        },
+        {
+          "start": 23.2,
+          "end": 23.5,
+          "word": "长",
+          "probability": 0.9476976990699768
+        },
+        {
+          "start": 23.5,
+          "end": 23.78,
+          "word": "春。",
+          "probability": 0.9978373646736145
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 24.24,
+      "end": 28.8,
+      "text": "他1932年参加了100米和200米短跑比赛。",
+      "tokens": [
+        51564,
+        5000,
+        3405,
+        11440,
+        5157,
+        2129,
+        224,
+        9990,
+        2289,
+        6879,
+        27742,
+        12565,
+        7629,
+        27742,
+        5881,
+        255,
+        32585,
+        11706,
+        5266,
+        249,
+        1543,
+        51814
+      ],
+      "avg_logprob": -0.07958536369856013,
+      "compression_ratio": 1.3427230046948357,
+      "no_speech_prob": 0.07452679425477982,
+      "words": [
+        {
+          "start": 24.24,
+          "end": 24.48,
+          "word": "他",
+          "probability": 0.6931682229042053
+        },
+        {
+          "start": 24.48,
+          "end": 24.82,
+          "word": "19",
+          "probability": 0.9678089618682861
+        },
+        {
+          "start": 24.82,
+          "end": 25.2,
+          "word": "32",
+          "probability": 0.9985505938529968
+        },
+        {
+          "start": 25.2,
+          "end": 25.58,
+          "word": "年",
+          "probability": 0.9921940565109253
+        },
+        {
+          "start": 25.58,
+          "end": 25.98,
+          "word": "参",
+          "probability": 0.9362684786319733
+        },
+        {
+          "start": 25.98,
+          "end": 26.18,
+          "word": "加",
+          "probability": 0.9995088577270508
+        },
+        {
+          "start": 26.18,
+          "end": 26.38,
+          "word": "了",
+          "probability": 0.9979612827301025
+        },
+        {
+          "start": 26.38,
+          "end": 26.64,
+          "word": "100",
+          "probability": 0.8534079194068909
+        },
+        {
+          "start": 26.64,
+          "end": 26.96,
+          "word": "米",
+          "probability": 0.9194324016571045
+        },
+        {
+          "start": 26.96,
+          "end": 27.34,
+          "word": "和",
+          "probability": 0.9905937314033508
+        },
+        {
+          "start": 27.34,
+          "end": 27.58,
+          "word": "200",
+          "probability": 0.9946022629737854
+        },
+        {
+          "start": 27.58,
+          "end": 27.9,
+          "word": "米",
+          "probability": 0.9944135546684265
+        },
+        {
+          "start": 27.9,
+          "end": 28.2,
+          "word": "短",
+          "probability": 0.973223477602005
+        },
+        {
+          "start": 28.2,
+          "end": 28.42,
+          "word": "跑",
+          "probability": 0.9844732284545898
+        },
+        {
+          "start": 28.42,
+          "end": 28.64,
+          "word": "比",
+          "probability": 0.9984418749809265
+        },
+        {
+          "start": 28.64,
+          "end": 28.8,
+          "word": "赛。",
+          "probability": 0.999873161315918
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2880,
+      "start": 28.8,
+      "end": 31.56,
+      "text": "虽然他没有得到好成绩,",
+      "tokens": [
+        50364,
+        12026,
+        121,
+        5823,
+        5000,
+        17944,
+        5916,
+        4511,
+        2131,
+        11336,
+        10115,
+        102,
+        11,
+        50514
+      ],
+      "avg_logprob": -0.22906109052045004,
+      "compression_ratio": 0.8589743589743589,
+      "no_speech_prob": 0.18876302242279053,
+      "words": [
+        {
+          "start": 28.8,
+          "end": 29.72,
+          "word": "虽",
+          "probability": 0.8422384262084961
+        },
+        {
+          "start": 29.72,
+          "end": 29.96,
+          "word": "然",
+          "probability": 0.9993252754211426
+        },
+        {
+          "start": 29.96,
+          "end": 30.18,
+          "word": "他",
+          "probability": 0.6706636548042297
+        },
+        {
+          "start": 30.18,
+          "end": 30.36,
+          "word": "没有",
+          "probability": 0.99114590883255
+        },
+        {
+          "start": 30.36,
+          "end": 30.62,
+          "word": "得",
+          "probability": 0.9961910247802734
+        },
+        {
+          "start": 30.62,
+          "end": 30.84,
+          "word": "到",
+          "probability": 0.9933238625526428
+        },
+        {
+          "start": 30.84,
+          "end": 31.1,
+          "word": "好",
+          "probability": 0.994131863117218
+        },
+        {
+          "start": 31.1,
+          "end": 31.32,
+          "word": "成",
+          "probability": 0.9901041388511658
+        },
+        {
+          "start": 31.32,
+          "end": 31.56,
+          "word": "绩,",
+          "probability": 0.9977029263973236
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 2880,
+      "start": 31.86,
+      "end": 34.32,
+      "text": "但是他让世界认识了中国。",
+      "tokens": [
+        50514,
+        11189,
+        5000,
+        33650,
+        24486,
+        7422,
+        97,
+        5233,
+        228,
+        2289,
+        38165,
+        1543,
+        50664
+      ],
+      "avg_logprob": -0.22906109052045004,
+      "compression_ratio": 0.8589743589743589,
+      "no_speech_prob": 0.18876302242279053,
+      "words": [
+        {
+          "start": 31.86,
+          "end": 32.28,
+          "word": "但是",
+          "probability": 0.811343252658844
+        },
+        {
+          "start": 32.28,
+          "end": 32.7,
+          "word": "他",
+          "probability": 0.8404960632324219
+        },
+        {
+          "start": 32.7,
+          "end": 32.88,
+          "word": "让",
+          "probability": 0.9961459636688232
+        },
+        {
+          "start": 32.88,
+          "end": 33.2,
+          "word": "世界",
+          "probability": 0.9962069988250732
+        },
+        {
+          "start": 33.2,
+          "end": 33.64,
+          "word": "认",
+          "probability": 0.9857142567634583
+        },
+        {
+          "start": 33.64,
+          "end": 33.84,
+          "word": "识",
+          "probability": 0.9731618463993073
+        },
+        {
+          "start": 33.84,
+          "end": 33.98,
+          "word": "了",
+          "probability": 0.9965026378631592
+        },
+        {
+          "start": 33.98,
+          "end": 34.32,
+          "word": "中国。",
+          "probability": 0.9827176928520203
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 8.082025531,
+  "realTimeFactor": 0.22732530504198872,
+  "observationChecks": {
+    "rawWordCount": 100,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

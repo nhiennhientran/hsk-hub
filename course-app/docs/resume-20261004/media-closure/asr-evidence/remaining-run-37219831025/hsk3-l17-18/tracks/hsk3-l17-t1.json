@@ -1,0 +1,1238 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l17:audio1",
+    "level": 3,
+    "lesson": 17,
+    "track": 1,
+    "kind": "text",
+    "text": 1,
+    "file": "course-assets/hsk3/audio/17-1.mp3",
+    "sha256": "34311710487887e94f9350654acdf69eb39ff7e514f3c7079e95c95a5a9513d9",
+    "bytes": 834286,
+    "manifestDurationSeconds": 49.604938,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 795376,
+      "durationSeconds": 49.711,
+      "sha256": "83d3f44b6cff6422fb7ba743278531d9eab32947be09732ed7054d23ac98981f"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 49.711,
+    "duration_after_vad": 49.711,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.6399999999999961,
+      "end": 4.46,
+      "text": "别再向前走了,李老师的办公室已经到了。",
+      "tokens": [
+        50364,
+        18453,
+        8623,
+        24282,
+        8945,
+        35267,
+        11,
+        31206,
+        10439,
+        29186,
+        1546,
+        39453,
+        13545,
+        2415,
+        97,
+        49161,
+        21381,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.14932475865564562,
+      "compression_ratio": 1.2459016393442623,
+      "no_speech_prob": 0.27002424001693726,
+      "words": [
+        {
+          "start": 0.6399999999999961,
+          "end": 1.12,
+          "word": "别",
+          "probability": 0.0952676460146904
+        },
+        {
+          "start": 1.12,
+          "end": 1.3,
+          "word": "再",
+          "probability": 0.9620412588119507
+        },
+        {
+          "start": 1.3,
+          "end": 1.46,
+          "word": "向",
+          "probability": 0.9876074194908142
+        },
+        {
+          "start": 1.46,
+          "end": 1.64,
+          "word": "前",
+          "probability": 0.9990507960319519
+        },
+        {
+          "start": 1.64,
+          "end": 1.98,
+          "word": "走了,",
+          "probability": 0.896586537361145
+        },
+        {
+          "start": 2.6,
+          "end": 2.72,
+          "word": "李",
+          "probability": 0.7618592977523804
+        },
+        {
+          "start": 2.72,
+          "end": 2.88,
+          "word": "老",
+          "probability": 0.9853746891021729
+        },
+        {
+          "start": 2.88,
+          "end": 3.02,
+          "word": "师",
+          "probability": 0.9984750151634216
+        },
+        {
+          "start": 3.02,
+          "end": 3.12,
+          "word": "的",
+          "probability": 0.9958296418190002
+        },
+        {
+          "start": 3.12,
+          "end": 3.28,
+          "word": "办",
+          "probability": 0.9936122298240662
+        },
+        {
+          "start": 3.28,
+          "end": 3.48,
+          "word": "公",
+          "probability": 0.9993476271629333
+        },
+        {
+          "start": 3.48,
+          "end": 3.7,
+          "word": "室",
+          "probability": 0.9975303709506989
+        },
+        {
+          "start": 3.7,
+          "end": 4.06,
+          "word": "已经",
+          "probability": 0.9825698137283325
+        },
+        {
+          "start": 4.06,
+          "end": 4.46,
+          "word": "到了。",
+          "probability": 0.968545138835907
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 6.24,
+      "end": 11.48,
+      "text": "你进去吧,我在楼梯那儿等你,我害怕见李老师。",
+      "tokens": [
+        50614,
+        2166,
+        36700,
+        6734,
+        6062,
+        11,
+        40528,
+        162,
+        2429,
+        19017,
+        107,
+        4184,
+        22933,
+        10187,
+        2166,
+        11,
+        1654,
+        14694,
+        21164,
+        23813,
+        31206,
+        10439,
+        29186,
+        1543,
+        50964
+      ],
+      "avg_logprob": -0.14932475865564562,
+      "compression_ratio": 1.2459016393442623,
+      "no_speech_prob": 0.27002424001693726,
+      "words": [
+        {
+          "start": 6.24,
+          "end": 6.72,
+          "word": "你",
+          "probability": 0.9037826657295227
+        },
+        {
+          "start": 6.72,
+          "end": 7.02,
+          "word": "进",
+          "probability": 0.9939875602722168
+        },
+        {
+          "start": 7.02,
+          "end": 7.24,
+          "word": "去",
+          "probability": 0.9964500665664673
+        },
+        {
+          "start": 7.24,
+          "end": 7.46,
+          "word": "吧,",
+          "probability": 0.9964626431465149
+        },
+        {
+          "start": 7.9,
+          "end": 8.24,
+          "word": "我在",
+          "probability": 0.9496078491210938
+        },
+        {
+          "start": 8.24,
+          "end": 8.46,
+          "word": "楼",
+          "probability": 0.9881353974342346
+        },
+        {
+          "start": 8.46,
+          "end": 8.62,
+          "word": "梯",
+          "probability": 0.9855639040470123
+        },
+        {
+          "start": 8.62,
+          "end": 8.78,
+          "word": "那",
+          "probability": 0.9664538502693176
+        },
+        {
+          "start": 8.78,
+          "end": 8.88,
+          "word": "儿",
+          "probability": 0.5007619857788086
+        },
+        {
+          "start": 8.88,
+          "end": 9.02,
+          "word": "等",
+          "probability": 0.9968841671943665
+        },
+        {
+          "start": 9.02,
+          "end": 9.32,
+          "word": "你,",
+          "probability": 0.9943349361419678
+        },
+        {
+          "start": 9.78,
+          "end": 10.0,
+          "word": "我",
+          "probability": 0.9895036220550537
+        },
+        {
+          "start": 10.0,
+          "end": 10.28,
+          "word": "害",
+          "probability": 0.9897034764289856
+        },
+        {
+          "start": 10.28,
+          "end": 10.54,
+          "word": "怕",
+          "probability": 0.9995371103286743
+        },
+        {
+          "start": 10.54,
+          "end": 10.78,
+          "word": "见",
+          "probability": 0.998016357421875
+        },
+        {
+          "start": 10.78,
+          "end": 11.02,
+          "word": "李",
+          "probability": 0.9721413850784302
+        },
+        {
+          "start": 11.02,
+          "end": 11.2,
+          "word": "老",
+          "probability": 0.9988031387329102
+        },
+        {
+          "start": 11.2,
+          "end": 11.48,
+          "word": "师。",
+          "probability": 0.9997231364250183
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 13.22,
+      "end": 14.02,
+      "text": "怎么回事?",
+      "tokens": [
+        50964,
+        15282,
+        8350,
+        6973,
+        30,
+        51114
+      ],
+      "avg_logprob": -0.14932475865564562,
+      "compression_ratio": 1.2459016393442623,
+      "no_speech_prob": 0.27002424001693726,
+      "words": [
+        {
+          "start": 13.22,
+          "end": 13.56,
+          "word": "怎么",
+          "probability": 0.9669795036315918
+        },
+        {
+          "start": 13.56,
+          "end": 13.76,
+          "word": "回",
+          "probability": 0.7454423904418945
+        },
+        {
+          "start": 13.76,
+          "end": 14.02,
+          "word": "事?",
+          "probability": 0.9996448755264282
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 15.759999999999991,
+      "end": 20.22,
+      "text": "最近我做错了好几件事,我怕李老师生气。",
+      "tokens": [
+        51114,
+        46777,
+        1654,
+        10907,
+        29900,
+        2289,
+        2131,
+        6336,
+        254,
+        20485,
+        6973,
+        11,
+        1654,
+        21164,
+        31206,
+        10439,
+        29186,
+        8244,
+        42204,
+        1543,
+        51414
+      ],
+      "avg_logprob": -0.14932475865564562,
+      "compression_ratio": 1.2459016393442623,
+      "no_speech_prob": 0.27002424001693726,
+      "words": [
+        {
+          "start": 15.759999999999991,
+          "end": 16.239999999999995,
+          "word": "最近",
+          "probability": 0.9959955215454102
+        },
+        {
+          "start": 16.239999999999995,
+          "end": 16.72,
+          "word": "我",
+          "probability": 0.6370627880096436
+        },
+        {
+          "start": 16.72,
+          "end": 16.9,
+          "word": "做",
+          "probability": 0.9924833178520203
+        },
+        {
+          "start": 16.9,
+          "end": 17.1,
+          "word": "错",
+          "probability": 0.9969280362129211
+        },
+        {
+          "start": 17.1,
+          "end": 17.26,
+          "word": "了",
+          "probability": 0.9949676394462585
+        },
+        {
+          "start": 17.26,
+          "end": 17.54,
+          "word": "好",
+          "probability": 0.9995064735412598
+        },
+        {
+          "start": 17.54,
+          "end": 17.8,
+          "word": "几",
+          "probability": 0.9983250200748444
+        },
+        {
+          "start": 17.8,
+          "end": 17.98,
+          "word": "件",
+          "probability": 0.9495642185211182
+        },
+        {
+          "start": 17.98,
+          "end": 18.32,
+          "word": "事,",
+          "probability": 0.9969622492790222
+        },
+        {
+          "start": 18.72,
+          "end": 18.88,
+          "word": "我",
+          "probability": 0.989188015460968
+        },
+        {
+          "start": 18.88,
+          "end": 19.12,
+          "word": "怕",
+          "probability": 0.9926344752311707
+        },
+        {
+          "start": 19.12,
+          "end": 19.32,
+          "word": "李",
+          "probability": 0.9942113757133484
+        },
+        {
+          "start": 19.32,
+          "end": 19.5,
+          "word": "老",
+          "probability": 0.9991549253463745
+        },
+        {
+          "start": 19.5,
+          "end": 19.68,
+          "word": "师",
+          "probability": 0.9997438788414001
+        },
+        {
+          "start": 19.68,
+          "end": 19.92,
+          "word": "生",
+          "probability": 0.9992246627807617
+        },
+        {
+          "start": 19.92,
+          "end": 20.22,
+          "word": "气。",
+          "probability": 0.9994515776634216
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 21.72,
+      "end": 25.06,
+      "text": "你想多了,做错事情是很常见的。",
+      "tokens": [
+        51414,
+        38386,
+        6392,
+        2289,
+        11,
+        10907,
+        29900,
+        24675,
+        1541,
+        4563,
+        11279,
+        23813,
+        1546,
+        1543,
+        51664
+      ],
+      "avg_logprob": -0.14932475865564562,
+      "compression_ratio": 1.2459016393442623,
+      "no_speech_prob": 0.27002424001693726,
+      "words": [
+        {
+          "start": 21.72,
+          "end": 22.2,
+          "word": "你想",
+          "probability": 0.9573267102241516
+        },
+        {
+          "start": 22.2,
+          "end": 22.48,
+          "word": "多",
+          "probability": 0.9953860640525818
+        },
+        {
+          "start": 22.48,
+          "end": 22.78,
+          "word": "了,",
+          "probability": 0.9908203482627869
+        },
+        {
+          "start": 23.24,
+          "end": 23.42,
+          "word": "做",
+          "probability": 0.9940849542617798
+        },
+        {
+          "start": 23.42,
+          "end": 23.62,
+          "word": "错",
+          "probability": 0.9974377155303955
+        },
+        {
+          "start": 23.62,
+          "end": 23.96,
+          "word": "事情",
+          "probability": 0.9476945400238037
+        },
+        {
+          "start": 23.96,
+          "end": 24.18,
+          "word": "是",
+          "probability": 0.9787461161613464
+        },
+        {
+          "start": 24.18,
+          "end": 24.32,
+          "word": "很",
+          "probability": 0.9961563944816589
+        },
+        {
+          "start": 24.32,
+          "end": 24.58,
+          "word": "常",
+          "probability": 0.9973742961883545
+        },
+        {
+          "start": 24.58,
+          "end": 24.84,
+          "word": "见",
+          "probability": 0.997868537902832
+        },
+        {
+          "start": 24.84,
+          "end": 25.06,
+          "word": "的。",
+          "probability": 0.9991679191589355
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 2506,
+      "start": 26.68,
+      "end": 32.0,
+      "text": "我把简单的事情做错了,李老师一定觉得我不认真。",
+      "tokens": [
+        50364,
+        1654,
+        16075,
+        11249,
+        222,
+        47446,
+        1546,
+        24675,
+        10907,
+        29900,
+        2289,
+        11,
+        31206,
+        10439,
+        29186,
+        24272,
+        29992,
+        25395,
+        7422,
+        97,
+        6303,
+        1543,
+        50714
+      ],
+      "avg_logprob": -0.09290385398675095,
+      "compression_ratio": 1.304812834224599,
+      "no_speech_prob": 0.22596941888332367,
+      "words": [
+        {
+          "start": 26.68,
+          "end": 27.2,
+          "word": "我",
+          "probability": 0.3885546028614044
+        },
+        {
+          "start": 27.2,
+          "end": 27.4,
+          "word": "把",
+          "probability": 0.9856640100479126
+        },
+        {
+          "start": 27.4,
+          "end": 27.72,
+          "word": "简",
+          "probability": 0.8737444281578064
+        },
+        {
+          "start": 27.72,
+          "end": 27.96,
+          "word": "单",
+          "probability": 0.9942988157272339
+        },
+        {
+          "start": 27.96,
+          "end": 28.12,
+          "word": "的",
+          "probability": 0.9959667921066284
+        },
+        {
+          "start": 28.12,
+          "end": 28.4,
+          "word": "事情",
+          "probability": 0.9788376092910767
+        },
+        {
+          "start": 28.4,
+          "end": 28.76,
+          "word": "做",
+          "probability": 0.9861542582511902
+        },
+        {
+          "start": 28.76,
+          "end": 29.08,
+          "word": "错",
+          "probability": 0.9905693531036377
+        },
+        {
+          "start": 29.08,
+          "end": 29.32,
+          "word": "了,",
+          "probability": 0.9973397850990295
+        },
+        {
+          "start": 29.56,
+          "end": 29.78,
+          "word": "李",
+          "probability": 0.8535564541816711
+        },
+        {
+          "start": 29.78,
+          "end": 29.96,
+          "word": "老",
+          "probability": 0.97966068983078
+        },
+        {
+          "start": 29.96,
+          "end": 30.16,
+          "word": "师",
+          "probability": 0.9990158081054688
+        },
+        {
+          "start": 30.16,
+          "end": 30.46,
+          "word": "一定",
+          "probability": 0.9930592775344849
+        },
+        {
+          "start": 30.46,
+          "end": 30.94,
+          "word": "觉得",
+          "probability": 0.9883246421813965
+        },
+        {
+          "start": 30.94,
+          "end": 31.44,
+          "word": "我不",
+          "probability": 0.9388406872749329
+        },
+        {
+          "start": 31.44,
+          "end": 31.72,
+          "word": "认",
+          "probability": 0.998791366815567
+        },
+        {
+          "start": 31.72,
+          "end": 32.0,
+          "word": "真。",
+          "probability": 0.9686429500579834
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2506,
+      "start": 33.760000000000005,
+      "end": 38.16,
+      "text": "有的人虽然很聪明,但是会在简单的事情中出错,",
+      "tokens": [
+        50714,
+        2412,
+        29979,
+        12026,
+        121,
+        5823,
+        4563,
+        8171,
+        103,
+        11100,
+        11,
+        11189,
+        12949,
+        3581,
+        11249,
+        222,
+        47446,
+        1546,
+        24675,
+        5975,
+        7781,
+        29900,
+        11,
+        51014
+      ],
+      "avg_logprob": -0.09290385398675095,
+      "compression_ratio": 1.304812834224599,
+      "no_speech_prob": 0.22596941888332367,
+      "words": [
+        {
+          "start": 33.760000000000005,
+          "end": 34.28,
+          "word": "有",
+          "probability": 0.8698039054870605
+        },
+        {
+          "start": 34.28,
+          "end": 34.54,
+          "word": "的人",
+          "probability": 0.9967412352561951
+        },
+        {
+          "start": 34.54,
+          "end": 34.88,
+          "word": "虽",
+          "probability": 0.9922006726264954
+        },
+        {
+          "start": 34.88,
+          "end": 35.06,
+          "word": "然",
+          "probability": 0.9980131387710571
+        },
+        {
+          "start": 35.06,
+          "end": 35.18,
+          "word": "很",
+          "probability": 0.9854897260665894
+        },
+        {
+          "start": 35.18,
+          "end": 35.44,
+          "word": "聪",
+          "probability": 0.9956704080104828
+        },
+        {
+          "start": 35.44,
+          "end": 35.68,
+          "word": "明,",
+          "probability": 0.9995740056037903
+        },
+        {
+          "start": 36.08,
+          "end": 36.32,
+          "word": "但是",
+          "probability": 0.954441249370575
+        },
+        {
+          "start": 36.32,
+          "end": 36.54,
+          "word": "会",
+          "probability": 0.9931377172470093
+        },
+        {
+          "start": 36.54,
+          "end": 36.72,
+          "word": "在",
+          "probability": 0.9951334595680237
+        },
+        {
+          "start": 36.72,
+          "end": 36.96,
+          "word": "简",
+          "probability": 0.9953091442584991
+        },
+        {
+          "start": 36.96,
+          "end": 37.14,
+          "word": "单",
+          "probability": 0.9997249245643616
+        },
+        {
+          "start": 37.14,
+          "end": 37.24,
+          "word": "的",
+          "probability": 0.9972829818725586
+        },
+        {
+          "start": 37.24,
+          "end": 37.48,
+          "word": "事情",
+          "probability": 0.9718946218490601
+        },
+        {
+          "start": 37.48,
+          "end": 37.74,
+          "word": "中",
+          "probability": 0.970734179019928
+        },
+        {
+          "start": 37.74,
+          "end": 37.92,
+          "word": "出",
+          "probability": 0.9925007224082947
+        },
+        {
+          "start": 37.92,
+          "end": 38.16,
+          "word": "错,",
+          "probability": 0.9974614381790161
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2506,
+      "start": 38.84,
+      "end": 42.24,
+      "text": "因为他们认为事情简单就不会认真去做了。",
+      "tokens": [
+        51014,
+        34627,
+        47911,
+        7422,
+        97,
+        13992,
+        24675,
+        11249,
+        222,
+        47446,
+        3111,
+        47928,
+        7422,
+        97,
+        6303,
+        6734,
+        10907,
+        2289,
+        1543,
+        51214
+      ],
+      "avg_logprob": -0.09290385398675095,
+      "compression_ratio": 1.304812834224599,
+      "no_speech_prob": 0.22596941888332367,
+      "words": [
+        {
+          "start": 38.84,
+          "end": 39.06,
+          "word": "因为",
+          "probability": 0.9882722496986389
+        },
+        {
+          "start": 39.06,
+          "end": 39.32,
+          "word": "他们",
+          "probability": 0.9699557423591614
+        },
+        {
+          "start": 39.32,
+          "end": 39.56,
+          "word": "认",
+          "probability": 0.9983230829238892
+        },
+        {
+          "start": 39.56,
+          "end": 39.74,
+          "word": "为",
+          "probability": 0.9979866743087769
+        },
+        {
+          "start": 39.74,
+          "end": 40.02,
+          "word": "事情",
+          "probability": 0.9527219533920288
+        },
+        {
+          "start": 40.02,
+          "end": 40.32,
+          "word": "简",
+          "probability": 0.9976913034915924
+        },
+        {
+          "start": 40.32,
+          "end": 40.62,
+          "word": "单",
+          "probability": 0.9997387528419495
+        },
+        {
+          "start": 40.62,
+          "end": 40.94,
+          "word": "就",
+          "probability": 0.879096269607544
+        },
+        {
+          "start": 40.94,
+          "end": 41.22,
+          "word": "不会",
+          "probability": 0.9941806197166443
+        },
+        {
+          "start": 41.22,
+          "end": 41.48,
+          "word": "认",
+          "probability": 0.9982629418373108
+        },
+        {
+          "start": 41.48,
+          "end": 41.64,
+          "word": "真",
+          "probability": 0.9749755859375
+        },
+        {
+          "start": 41.64,
+          "end": 41.8,
+          "word": "去",
+          "probability": 0.9939644932746887
+        },
+        {
+          "start": 41.8,
+          "end": 42.0,
+          "word": "做",
+          "probability": 0.9957006573677063
+        },
+        {
+          "start": 42.0,
+          "end": 42.24,
+          "word": "了。",
+          "probability": 0.98847895860672
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 2506,
+      "start": 43.72,
+      "end": 48.38,
+      "text": "你说的就是我,以后我要多向认真的人学习。",
+      "tokens": [
+        51214,
+        42405,
+        1546,
+        5620,
+        1654,
+        11,
+        3588,
+        13547,
+        32186,
+        6392,
+        24282,
+        7422,
+        97,
+        6303,
+        29979,
+        29618,
+        2930,
+        254,
+        1543,
+        51514
+      ],
+      "avg_logprob": -0.09290385398675095,
+      "compression_ratio": 1.304812834224599,
+      "no_speech_prob": 0.22596941888332367,
+      "words": [
+        {
+          "start": 43.72,
+          "end": 44.24,
+          "word": "你说",
+          "probability": 0.9150875210762024
+        },
+        {
+          "start": 44.24,
+          "end": 44.44,
+          "word": "的",
+          "probability": 0.9895201921463013
+        },
+        {
+          "start": 44.44,
+          "end": 44.7,
+          "word": "就是",
+          "probability": 0.9885824918746948
+        },
+        {
+          "start": 44.7,
+          "end": 45.12,
+          "word": "我,",
+          "probability": 0.996532678604126
+        },
+        {
+          "start": 45.58,
+          "end": 45.74,
+          "word": "以",
+          "probability": 0.995354413986206
+        },
+        {
+          "start": 45.74,
+          "end": 45.96,
+          "word": "后",
+          "probability": 0.99895179271698
+        },
+        {
+          "start": 45.96,
+          "end": 46.44,
+          "word": "我要",
+          "probability": 0.9254213571548462
+        },
+        {
+          "start": 46.44,
+          "end": 46.72,
+          "word": "多",
+          "probability": 0.9976963400840759
+        },
+        {
+          "start": 46.72,
+          "end": 46.96,
+          "word": "向",
+          "probability": 0.7334437966346741
+        },
+        {
+          "start": 46.96,
+          "end": 47.28,
+          "word": "认",
+          "probability": 0.9991303086280823
+        },
+        {
+          "start": 47.28,
+          "end": 47.52,
+          "word": "真",
+          "probability": 0.7903759479522705
+        },
+        {
+          "start": 47.52,
+          "end": 47.76,
+          "word": "的人",
+          "probability": 0.9899381399154663
+        },
+        {
+          "start": 47.76,
+          "end": 48.1,
+          "word": "学",
+          "probability": 0.9950359463691711
+        },
+        {
+          "start": 48.1,
+          "end": 48.38,
+          "word": "习。",
+          "probability": 0.9995968341827393
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 5.751578279,
+  "realTimeFactor": 0.11570031339140231,
+  "observationChecks": {
+    "rawWordCount": 124,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

@@ -1,0 +1,5016 @@
+{
+  "schemaVersion": 1,
+  "inputFiles": [
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/pilot-exact-match-report.json",
+      "sha256": "79811fe798d90818a28d5bdb0c3558f3d796b208a3bf02259f611e2396b2d022"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-exact-match-report.json",
+      "sha256": "6632c358c8163422a32173ff074df5014c58b765deb0e4fa3cfdb1a14606f5e5"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/candidate-boundary-evidence.json",
+      "sha256": "f90d926aa65f94b1461bdee4fc1f0265c399c1ac1952526780365047b5b247a4"
+    }
+  ],
+  "purpose": "same source target comparison using unchanged actual small/medium artifacts; no acoustic certification",
+  "normalizationUnchanged": "NFKC+CJK-only; no script/phonetic/erhua replacements",
+  "counts": {
+    "targetObjects": 146,
+    "smallUnique": {
+      "line": 46,
+      "sentence": 15,
+      "word": 39
+    },
+    "mediumUnique": {
+      "line": 46,
+      "sentence": 27,
+      "word": 31
+    },
+    "bothUnique": {
+      "line": 43,
+      "sentence": 15,
+      "word": 28
+    },
+    "smallOnlyUnique": {
+      "line": 3,
+      "word": 11
+    },
+    "mediumOnlyUnique": {
+      "word": 3,
+      "line": 3,
+      "sentence": 12
+    },
+    "bothUniqueEndpointsWithin200ms": {
+      "line": 5,
+      "sentence": 6,
+      "word": 2
+    },
+    "unheldBothUniqueEndpointsWithin200ms": {
+      "line": 1,
+      "sentence": 1
+    },
+    "printed83SentenceUnitsUniqueSmall": 55,
+    "printed83SentenceUnitsUniqueMedium": 65
+  },
+  "triagePoliciesNotCalibration": {
+    "endpointDeltaSeconds": 0.2,
+    "minimumModelProbability": 0.5,
+    "smallBoundaryHoldMustBeEmpty": true,
+    "promotionRequires": "actual crop source/order/full phoneme-boundary and neighbor exclusion evidence; none yet available"
+  },
+  "targetDecisions": [
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line1",
+      "unit": "line",
+      "sourceZH": "妈妈，我们来过这家商场吗？",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio1",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "blocked-invalid-ASR-word-times"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 3.38,
+        "minimumRawProbability": 0.282436341047287
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line2",
+      "unit": "line",
+      "sourceZH": "没来过，这是新开的。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio1",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 4.74,
+        "rawEnd": 7.1,
+        "minimumRawProbability": 0.9426447749137878
+      },
+      "mediumEndpoint": {
+        "rawStart": 4.9,
+        "rawEnd": 7.48,
+        "minimumRawProbability": 0.9782164096832275
+      },
+      "startDelta": 0.16000000000000014,
+      "endDelta": 0.3800000000000008,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line3",
+      "unit": "line",
+      "sourceZH": "我们进去看看吧。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio1",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 7.76,
+        "rawEnd": 9.68,
+        "minimumRawProbability": 0.9658560752868652
+      },
+      "mediumEndpoint": {
+        "rawStart": 8.18,
+        "rawEnd": 9.74,
+        "minimumRawProbability": 0.9927589893341064
+      },
+      "startDelta": 0.41999999999999993,
+      "endDelta": 0.0600000000000005,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line4",
+      "unit": "line",
+      "sourceZH": "好啊！你想买点儿什么？",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio1",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line4:sentence1",
+      "unit": "sentence",
+      "sourceZH": "好啊！",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio1",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 10.38,
+        "rawEnd": 10.88,
+        "minimumRawProbability": 0.8041224479675293
+      },
+      "mediumEndpoint": {
+        "rawStart": 10.5,
+        "rawEnd": 11.3,
+        "minimumRawProbability": 0.9651122689247131
+      },
+      "startDelta": 0.11999999999999922,
+      "endDelta": 0.41999999999999993,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line4:sentence2",
+      "unit": "sentence",
+      "sourceZH": "你想买点儿什么？",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio1",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line5",
+      "unit": "line",
+      "sourceZH": "我想买条裤子。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio1",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 13.58,
+        "rawEnd": 15.12,
+        "minimumRawProbability": 0.6029080152511597
+      },
+      "mediumEndpoint": {
+        "rawStart": 13.76,
+        "rawEnd": 15.56,
+        "minimumRawProbability": 0.979057788848877
+      },
+      "startDelta": 0.17999999999999972,
+      "endDelta": 0.4400000000000013,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text1:line6",
+      "unit": "line",
+      "sourceZH": "没问题。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio1",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 16.2,
+        "rawEnd": 16.74,
+        "minimumRawProbability": 0.9975132942199707
+      },
+      "mediumEndpoint": {
+        "rawStart": 16.42,
+        "rawEnd": 16.92,
+        "minimumRawProbability": 0.9952530860900879
+      },
+      "startDelta": 0.22000000000000242,
+      "endDelta": 0.18000000000000327,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word01",
+      "unit": "word",
+      "sourceZH": "过",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio2",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 0.7,
+        "minimumRawProbability": 0.5835809707641602
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 1.5,
+        "minimumRawProbability": 0.9537394642829895
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.8,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word02",
+      "unit": "word",
+      "sourceZH": "商场",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio2",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 2.26,
+        "rawEnd": 5.04,
+        "minimumRawProbability": 0.11073677241802216
+      },
+      "mediumEndpoint": {
+        "rawStart": 2.3600000000000003,
+        "rawEnd": 5.7,
+        "minimumRawProbability": 0.11699917167425156
+      },
+      "startDelta": 0.10000000000000053,
+      "endDelta": 0.6600000000000001,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary",
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word03",
+      "unit": "word",
+      "sourceZH": "进去",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio2",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 5.4399999999999995,
+        "rawEnd": 7.98,
+        "minimumRawProbability": 0.9866602420806885
+      },
+      "mediumEndpoint": {
+        "rawStart": 5.7,
+        "rawEnd": 8.36,
+        "minimumRawProbability": 0.9777491688728333
+      },
+      "startDelta": 0.2600000000000007,
+      "endDelta": 0.379999999999999,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word04",
+      "unit": "word",
+      "sourceZH": "条",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio2",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 8.36,
+        "rawEnd": 10.2,
+        "minimumRawProbability": 0.37228330969810486
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word05",
+      "unit": "word",
+      "sourceZH": "裤子",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio2",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 10.2,
+        "rawEnd": 11.52,
+        "minimumRawProbability": 0.986200213432312
+      },
+      "mediumEndpoint": {
+        "rawStart": 10.2,
+        "rawEnd": 11.82,
+        "minimumRawProbability": 0.9929425716400146
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.3000000000000007,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line1",
+      "unit": "line",
+      "sourceZH": "妈妈，我想买这条白色的裤子。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio3",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 3.52,
+        "minimumRawProbability": 0.44956299662590027
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 4.44,
+        "minimumRawProbability": 0.8786843419075012
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.9200000000000004,
+      "authorSmallHoldReasons": [
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line2",
+      "unit": "line",
+      "sourceZH": "你有很多白色的衣服，为什么还买白色的？",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio3",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 4.760000000000004,
+        "rawEnd": 8.9,
+        "minimumRawProbability": 0.7400052547454834
+      },
+      "mediumEndpoint": {
+        "rawStart": 5.1,
+        "rawEnd": 9.14,
+        "minimumRawProbability": 0.8878046870231628
+      },
+      "startDelta": 0.3399999999999954,
+      "endDelta": 0.2400000000000002,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line3",
+      "unit": "line",
+      "sourceZH": "因为我喜欢白色啊！",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio3",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 10.100000000000003,
+        "rawEnd": 12.08,
+        "minimumRawProbability": 0.7344670295715332
+      },
+      "mediumEndpoint": {
+        "rawStart": 10.16,
+        "rawEnd": 12.22,
+        "minimumRawProbability": 0.9636027216911316
+      },
+      "startDelta": 0.059999999999996945,
+      "endDelta": 0.14000000000000057,
+      "authorSmallHoldReasons": [],
+      "status": "priority-for-actual-crop-verification-only",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line4",
+      "unit": "line",
+      "sourceZH": "我觉得这条白色的不太好看，你试试那条红色的吧。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio3",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 13.280000000000005,
+        "rawEnd": 18.44,
+        "minimumRawProbability": 0.944987952709198
+      },
+      "mediumEndpoint": {
+        "rawStart": 13.42,
+        "rawEnd": 18.86,
+        "minimumRawProbability": 0.9511163234710693
+      },
+      "startDelta": 0.13999999999999524,
+      "endDelta": 0.41999999999999815,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line5",
+      "unit": "line",
+      "sourceZH": "我没穿过红色的，红色的好看吗？",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio3",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 20.26,
+        "rawEnd": 24.02,
+        "minimumRawProbability": 0.9732009768486023
+      },
+      "mediumEndpoint": {
+        "rawStart": 20.48,
+        "rawEnd": 24.22,
+        "minimumRawProbability": 0.9934148788452148
+      },
+      "startDelta": 0.21999999999999886,
+      "endDelta": 0.1999999999999993,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line6",
+      "unit": "line",
+      "sourceZH": "就是因为没穿过，所以要试试啊！",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio3",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 25.26,
+        "rawEnd": 28.36,
+        "minimumRawProbability": 0.9294241666793823
+      },
+      "mediumEndpoint": {
+        "rawStart": 25.38,
+        "rawEnd": 28.76,
+        "minimumRawProbability": 0.9930891394615173
+      },
+      "startDelta": 0.11999999999999744,
+      "endDelta": 0.40000000000000213,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word06",
+      "unit": "word",
+      "sourceZH": "白色",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio4",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.56,
+        "minimumRawProbability": 0.9548920392990112
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.82,
+        "minimumRawProbability": 0.9788154363632202
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.2599999999999998,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word07",
+      "unit": "word",
+      "sourceZH": "因为",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio4",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 3.52,
+        "rawEnd": 4.38,
+        "minimumRawProbability": 0.19835083186626434
+      },
+      "mediumEndpoint": {
+        "rawStart": 3.5,
+        "rawEnd": 5.6,
+        "minimumRawProbability": 0.2863638401031494
+      },
+      "startDelta": -0.020000000000000018,
+      "endDelta": 1.2199999999999998,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary",
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word08",
+      "unit": "word",
+      "sourceZH": "试",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio4",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word09",
+      "unit": "word",
+      "sourceZH": "红色",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio4",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 8.56,
+        "rawEnd": 11.0,
+        "minimumRawProbability": 0.9652149081230164
+      },
+      "mediumEndpoint": {
+        "rawStart": 8.46,
+        "rawEnd": 11.3,
+        "minimumRawProbability": 0.9740847647190094
+      },
+      "startDelta": -0.09999999999999964,
+      "endDelta": 0.3000000000000007,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word10",
+      "unit": "word",
+      "sourceZH": "所以",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio4",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 11.0,
+        "rawEnd": 12.16,
+        "minimumRawProbability": 0.7230529189109802
+      },
+      "mediumEndpoint": {
+        "rawStart": 11.3,
+        "rawEnd": 12.62,
+        "minimumRawProbability": 0.473739892244339
+      },
+      "startDelta": 0.3000000000000007,
+      "endDelta": 0.4599999999999991,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line1",
+      "unit": "line",
+      "sourceZH": "妈妈，我想买个新书包。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio5",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.5,
+        "minimumRawProbability": 0.3264639675617218
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.62,
+        "minimumRawProbability": 0.8927085995674133
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.1200000000000001,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary",
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line2",
+      "unit": "line",
+      "sourceZH": "好，那边卖书包，我们过去看看吧。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio5",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 3.1,
+        "rawEnd": 7.54,
+        "minimumRawProbability": 0.6239771246910095
+      },
+      "mediumEndpoint": {
+        "rawStart": 3.3199999999999994,
+        "rawEnd": 7.66,
+        "minimumRawProbability": 0.9507471919059753
+      },
+      "startDelta": 0.2199999999999993,
+      "endDelta": 0.1200000000000001,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line3",
+      "unit": "line",
+      "sourceZH": "这么多漂亮的书包！",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio5",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 7.54,
+        "rawEnd": 9.82,
+        "minimumRawProbability": 0.911291241645813
+      },
+      "mediumEndpoint": {
+        "rawStart": 8.36,
+        "rawEnd": 9.94,
+        "minimumRawProbability": 0.9879882335662842
+      },
+      "startDelta": 0.8199999999999994,
+      "endDelta": 0.11999999999999922,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line4",
+      "unit": "line",
+      "sourceZH": "红色的、绿色的、黑色的，你想买哪个？",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio5",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 10.5,
+        "rawEnd": 15.56,
+        "minimumRawProbability": 0.6045981049537659
+      },
+      "mediumEndpoint": {
+        "rawStart": 10.8,
+        "rawEnd": 15.68,
+        "minimumRawProbability": 0.9468604326248169
+      },
+      "startDelta": 0.3000000000000007,
+      "endDelta": 0.11999999999999922,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line5",
+      "unit": "line",
+      "sourceZH": "绿色的吧。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio5",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 16.46,
+        "rawEnd": 17.58,
+        "minimumRawProbability": 0.9559526443481445
+      },
+      "mediumEndpoint": {
+        "rawStart": 16.44,
+        "rawEnd": 17.36,
+        "minimumRawProbability": 0.9915967583656311
+      },
+      "startDelta": -0.019999999999999574,
+      "endDelta": -0.21999999999999886,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line6",
+      "unit": "line",
+      "sourceZH": "不错，我也觉得绿色的更好看。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio5",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 17.58,
+        "rawEnd": 20.88,
+        "minimumRawProbability": 0.74344402551651
+      },
+      "mediumEndpoint": {
+        "rawStart": 18.16,
+        "rawEnd": 21.04,
+        "minimumRawProbability": 0.9903252124786377
+      },
+      "startDelta": 0.5800000000000018,
+      "endDelta": 0.16000000000000014,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word11",
+      "unit": "word",
+      "sourceZH": "书包",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio6",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 3.28,
+        "minimumRawProbability": 0.635724738240242
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.26,
+        "minimumRawProbability": 0.989310085773468
+      },
+      "startDelta": 0.0,
+      "endDelta": -1.02,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word12",
+      "unit": "word",
+      "sourceZH": "过去",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio6",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 3.28,
+        "rawEnd": 5.82,
+        "minimumRawProbability": 0.8553064465522766
+      },
+      "mediumEndpoint": {
+        "rawStart": 3.12,
+        "rawEnd": 6.2,
+        "minimumRawProbability": 0.19110481441020966
+      },
+      "startDelta": -0.1599999999999997,
+      "endDelta": 0.3799999999999999,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word13",
+      "unit": "word",
+      "sourceZH": "绿色",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio6",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 5.82,
+        "rawEnd": 8.72,
+        "minimumRawProbability": 0.9528211653232574
+      },
+      "mediumEndpoint": {
+        "rawStart": 6.2,
+        "rawEnd": 9.04,
+        "minimumRawProbability": 0.9858599901199341
+      },
+      "startDelta": 0.3799999999999999,
+      "endDelta": 0.3199999999999985,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word14",
+      "unit": "word",
+      "sourceZH": "黑色",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio6",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 8.72,
+        "rawEnd": 11.8,
+        "minimumRawProbability": 0.94197016954422
+      },
+      "mediumEndpoint": {
+        "rawStart": 9.04,
+        "rawEnd": 12.3,
+        "minimumRawProbability": 0.9858113527297974
+      },
+      "startDelta": 0.3199999999999985,
+      "endDelta": 0.5,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word15",
+      "unit": "word",
+      "sourceZH": "更",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio6",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [],
+      "smallEndpoint": {
+        "rawStart": 11.8,
+        "rawEnd": 12.72,
+        "minimumRawProbability": 0.9602183699607849
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text4:line1",
+      "unit": "line",
+      "sourceZH": "我和妈妈去了一家商场。因为是新开的，所以这几天东西很便宜。商场里的衣服颜色很多。我没穿过红色的裤子，妈妈让我试了试，我觉得我穿红色的也很好看。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio7",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 18.54,
+        "minimumRawProbability": 0.8308853507041931
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text4:line1:sentence1",
+      "unit": "sentence",
+      "sourceZH": "我和妈妈去了一家商场。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio7",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 3.02,
+        "minimumRawProbability": 0.8308853507041931
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text4:line1:sentence2",
+      "unit": "sentence",
+      "sourceZH": "因为是新开的，所以这几天东西很便宜。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio7",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 3.58,
+        "rawEnd": 8.22,
+        "minimumRawProbability": 0.9671730399131775
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text4:line1:sentence3",
+      "unit": "sentence",
+      "sourceZH": "商场里的衣服颜色很多。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio7",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 8.54,
+        "rawEnd": 10.56,
+        "minimumRawProbability": 0.9603241086006165
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text4:line1:sentence4",
+      "unit": "sentence",
+      "sourceZH": "我没穿过红色的裤子，妈妈让我试了试，我觉得我穿红色的也很好看。",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio7",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 11.4,
+        "rawEnd": 18.54,
+        "minimumRawProbability": 0.9217624664306641
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word16",
+      "unit": "word",
+      "sourceZH": "颜色",
+      "sourceTrackId": "hsk2-fltrp-2026:l04:audio8",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 1.28,
+        "minimumRawProbability": 0.9884420037269592
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 1.52,
+        "minimumRawProbability": 0.9858124852180481
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.24,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line1",
+      "unit": "line",
+      "sourceZH": "家月，快下来吧，第一次去中国朋友家，别晚了。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio1",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line2",
+      "unit": "line",
+      "sourceZH": "还有时间，你上来吧。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio1",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 7.2200000000000015,
+        "rawEnd": 9.48,
+        "minimumRawProbability": 0.946767270565033
+      },
+      "mediumEndpoint": {
+        "rawStart": 7.66,
+        "rawEnd": 9.96,
+        "minimumRawProbability": 0.9761748313903809
+      },
+      "startDelta": 0.4399999999999986,
+      "endDelta": 0.4800000000000004,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line3",
+      "unit": "line",
+      "sourceZH": "我不上去了，就在下面等你。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio1",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 10.8,
+        "rawEnd": 13.48,
+        "minimumRawProbability": 0.9502174258232117
+      },
+      "mediumEndpoint": {
+        "rawStart": 10.98,
+        "rawEnd": 13.98,
+        "minimumRawProbability": 0.9835807681083679
+      },
+      "startDelta": 0.17999999999999972,
+      "endDelta": 0.5,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line4",
+      "unit": "line",
+      "sourceZH": "那我一会儿就下去。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio1",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 14.46,
+        "rawEnd": 15.92,
+        "minimumRawProbability": 0.6398563385009766
+      },
+      "mediumEndpoint": {
+        "rawStart": 14.64,
+        "rawEnd": 16.12,
+        "minimumRawProbability": 0.8417018055915833
+      },
+      "startDelta": 0.17999999999999972,
+      "endDelta": 0.20000000000000107,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line5",
+      "unit": "line",
+      "sourceZH": "你快点儿吧。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio1",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text1:line6",
+      "unit": "line",
+      "sourceZH": "没事，一雪姐说11点前到就可以。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio1",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word01",
+      "unit": "word",
+      "sourceZH": "快",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio2",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate",
+        "blocked-invalid-ASR-word-times"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 1.22,
+        "minimumRawProbability": 0.9803557395935059
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word02",
+      "unit": "word",
+      "sourceZH": "快",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio2",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate",
+        "blocked-invalid-ASR-word-times"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 1.22,
+        "minimumRawProbability": 0.9803557395935059
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word03",
+      "unit": "word",
+      "sourceZH": "下来",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio2",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate",
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 1.78,
+        "rawEnd": 4.3,
+        "minimumRawProbability": 0.7134270071983337
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word04",
+      "unit": "word",
+      "sourceZH": "上来",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio2",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate",
+        "unreviewed-exact-ASR-candidate",
+        "unreviewed-exact-ASR-candidate",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "unreviewed-exact-ASR-candidate",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "unreviewed-exact-ASR-candidate",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "blocked-invalid-ASR-word-times",
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 6.16,
+        "rawEnd": 8.42,
+        "minimumRawProbability": 0.9724453091621399
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word05",
+      "unit": "word",
+      "sourceZH": "上去",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio2",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [],
+      "smallEndpoint": {
+        "rawStart": 9.46,
+        "rawEnd": 10.18,
+        "minimumRawProbability": 0.9850051403045654
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word06",
+      "unit": "word",
+      "sourceZH": "下面",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio2",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [],
+      "smallEndpoint": {
+        "rawStart": 12.42,
+        "rawEnd": 12.78,
+        "minimumRawProbability": 0.852363109588623
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word07",
+      "unit": "word",
+      "sourceZH": "面",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio2",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "blocked-partial-ASR-word-no-character-timestamp"
+      ],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word08",
+      "unit": "word",
+      "sourceZH": "等",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio2",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [],
+      "smallEndpoint": {
+        "rawStart": 17.82,
+        "rawEnd": 18.06,
+        "minimumRawProbability": 0.8447248935699463
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word09",
+      "unit": "word",
+      "sourceZH": "一会儿",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio2",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [],
+      "smallEndpoint": {
+        "rawStart": 20.54,
+        "rawEnd": 23.26,
+        "minimumRawProbability": 0.7264255285263062
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word10",
+      "unit": "word",
+      "sourceZH": "下去",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio2",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate",
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line1",
+      "unit": "line",
+      "sourceZH": "家月、安妮，快进来！我给你们介绍一下，这是孩子们的爷爷、奶奶。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 8.26,
+        "minimumRawProbability": 0.40279102325439453
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line1:sentence1",
+      "unit": "sentence",
+      "sourceZH": "家月、安妮，快进来！",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 3.3,
+        "minimumRawProbability": 0.4080701470375061
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line1:sentence2",
+      "unit": "sentence",
+      "sourceZH": "我给你们介绍一下，这是孩子们的爷爷、奶奶。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 2.94,
+        "rawEnd": 7.96,
+        "minimumRawProbability": 0.4341927766799927
+      },
+      "mediumEndpoint": {
+        "rawStart": 3.78,
+        "rawEnd": 8.26,
+        "minimumRawProbability": 0.40279102325439453
+      },
+      "startDelta": 0.8399999999999999,
+      "endDelta": 0.2999999999999998,
+      "authorSmallHoldReasons": [
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line2",
+      "unit": "line",
+      "sourceZH": "你们好！",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate",
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate",
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line3",
+      "unit": "line",
+      "sourceZH": "爸，妈，这是白家月，这是安妮。她们都是一飞的学生。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line3:sentence1",
+      "unit": "sentence",
+      "sourceZH": "爸，妈，这是白家月，这是安妮。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 10.8,
+        "rawEnd": 15.16,
+        "minimumRawProbability": 0.9410343766212463
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line3:sentence2",
+      "unit": "sentence",
+      "sourceZH": "她们都是一飞的学生。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line4",
+      "unit": "line",
+      "sourceZH": "家月、安妮，你们好！",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 18.96,
+        "rawEnd": 22.1,
+        "minimumRawProbability": 0.983115017414093
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line5",
+      "unit": "line",
+      "sourceZH": "这是送你们的礼物。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 22.72,
+        "rawEnd": 24.58,
+        "minimumRawProbability": 0.990307092666626
+      },
+      "mediumEndpoint": {
+        "rawStart": 23.0,
+        "rawEnd": 24.84,
+        "minimumRawProbability": 0.9914694428443909
+      },
+      "startDelta": 0.28000000000000114,
+      "endDelta": 0.26000000000000156,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line6",
+      "unit": "line",
+      "sourceZH": "你们太客气了，还拿这么多礼物来！",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 25.179999999999996,
+        "rawEnd": 28.76,
+        "minimumRawProbability": 0.9396462440490723
+      },
+      "mediumEndpoint": {
+        "rawStart": 25.58,
+        "rawEnd": 29.04,
+        "minimumRawProbability": 0.9785144925117493
+      },
+      "startDelta": 0.40000000000000213,
+      "endDelta": 0.2799999999999976,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line7",
+      "unit": "line",
+      "sourceZH": "一雪姐，这是给孩子们准备的礼物。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8",
+      "unit": "line",
+      "sourceZH": "谢谢！你们别客气，快坐吧！",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 34.580000000000005,
+        "rawEnd": 38.06,
+        "minimumRawProbability": 0.9161765575408936
+      },
+      "mediumEndpoint": {
+        "rawStart": 34.94,
+        "rawEnd": 38.24,
+        "minimumRawProbability": 0.9585112929344177
+      },
+      "startDelta": 0.3599999999999923,
+      "endDelta": 0.17999999999999972,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8:sentence1",
+      "unit": "sentence",
+      "sourceZH": "谢谢！",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 34.580000000000005,
+        "rawEnd": 35.1,
+        "minimumRawProbability": 0.9776061773300171
+      },
+      "mediumEndpoint": {
+        "rawStart": 34.94,
+        "rawEnd": 35.26,
+        "minimumRawProbability": 0.9788878560066223
+      },
+      "startDelta": 0.3599999999999923,
+      "endDelta": 0.1599999999999966,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "unit": "sentence",
+      "sourceZH": "你们别客气，快坐吧！",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 35.9,
+        "rawEnd": 38.06,
+        "minimumRawProbability": 0.9161765575408936
+      },
+      "mediumEndpoint": {
+        "rawStart": 36.0,
+        "rawEnd": 38.24,
+        "minimumRawProbability": 0.9585112929344177
+      },
+      "startDelta": 0.10000000000000142,
+      "endDelta": 0.17999999999999972,
+      "authorSmallHoldReasons": [],
+      "status": "priority-for-actual-crop-verification-only",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word11",
+      "unit": "word",
+      "sourceZH": "进来",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio4",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 1.4,
+        "minimumRawProbability": 0.6612902283668518
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.92,
+        "minimumRawProbability": 0.6263723969459534
+      },
+      "startDelta": 0.0,
+      "endDelta": 1.52,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word12",
+      "unit": "word",
+      "sourceZH": "爷爷",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio4",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 3.22,
+        "rawEnd": 4.64,
+        "minimumRawProbability": 0.9728677868843079
+      },
+      "mediumEndpoint": {
+        "rawStart": 2.92,
+        "rawEnd": 5.94,
+        "minimumRawProbability": 0.09871068596839905
+      },
+      "startDelta": -0.30000000000000027,
+      "endDelta": 1.3000000000000007,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word13",
+      "unit": "word",
+      "sourceZH": "奶奶",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio4",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 5.9,
+        "rawEnd": 8.18,
+        "minimumRawProbability": 0.9966092109680176
+      },
+      "mediumEndpoint": {
+        "rawStart": 5.94,
+        "rawEnd": 8.46,
+        "minimumRawProbability": 0.939900279045105
+      },
+      "startDelta": 0.040000000000000036,
+      "endDelta": 0.28000000000000114,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word14",
+      "unit": "word",
+      "sourceZH": "礼物",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio4",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 8.54,
+        "rawEnd": 10.8,
+        "minimumRawProbability": 0.9848154485225677
+      },
+      "mediumEndpoint": {
+        "rawStart": 8.46,
+        "rawEnd": 11.44,
+        "minimumRawProbability": 0.9920443594455719
+      },
+      "startDelta": -0.0799999999999983,
+      "endDelta": 0.6399999999999988,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word15",
+      "unit": "word",
+      "sourceZH": "准备",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio4",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 11.36,
+        "rawEnd": 12.6,
+        "minimumRawProbability": 0.6846887469291687
+      },
+      "mediumEndpoint": {
+        "rawStart": 11.44,
+        "rawEnd": 12.9,
+        "minimumRawProbability": 0.9969824850559235
+      },
+      "startDelta": 0.08000000000000007,
+      "endDelta": 0.3000000000000007,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line1",
+      "unit": "line",
+      "sourceZH": "都12点了，我们吃饭吧。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio5",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "blocked-source-has-non-CJK-letters-or-digits"
+      ],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line2",
+      "unit": "line",
+      "sourceZH": "这么多好吃的，您太客气了！",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio5",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 4.14,
+        "rawEnd": 7.08,
+        "minimumRawProbability": 0.9165928959846497
+      },
+      "mediumEndpoint": {
+        "rawStart": 4.5,
+        "rawEnd": 7.44,
+        "minimumRawProbability": 0.9608166813850403
+      },
+      "startDelta": 0.3600000000000003,
+      "endDelta": 0.3600000000000003,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line3",
+      "unit": "line",
+      "sourceZH": "都是我自己做的，你们多吃点儿。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio5",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line4",
+      "unit": "line",
+      "sourceZH": "奶茶也很好喝，是您自己做的吗？",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio5",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 12.74,
+        "rawEnd": 16.4,
+        "minimumRawProbability": 0.9072265625
+      },
+      "mediumEndpoint": {
+        "rawStart": 12.96,
+        "rawEnd": 16.64,
+        "minimumRawProbability": 0.9839788675308228
+      },
+      "startDelta": 0.22000000000000064,
+      "endDelta": 0.240000000000002,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line5",
+      "unit": "line",
+      "sourceZH": "不是，奶茶是爷爷买的。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio5",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 17.700000000000003,
+        "rawEnd": 20.36,
+        "minimumRawProbability": 0.9761807322502136
+      },
+      "mediumEndpoint": {
+        "rawStart": 18.02,
+        "rawEnd": 21.18,
+        "minimumRawProbability": 0.9968309998512268
+      },
+      "startDelta": 0.31999999999999673,
+      "endDelta": 0.8200000000000003,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line6",
+      "unit": "line",
+      "sourceZH": "在哪儿买的？我还没喝过这么好喝的奶茶。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio5",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 22.4,
+        "rawEnd": 26.42,
+        "minimumRawProbability": 0.4100522994995117
+      },
+      "mediumEndpoint": {
+        "rawStart": 22.66,
+        "rawEnd": 26.58,
+        "minimumRawProbability": 0.6272752285003662
+      },
+      "startDelta": 0.26000000000000156,
+      "endDelta": 0.1599999999999966,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary",
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line6:sentence1",
+      "unit": "sentence",
+      "sourceZH": "在哪儿买的？",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio5",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 22.4,
+        "rawEnd": 23.6,
+        "minimumRawProbability": 0.4100522994995117
+      },
+      "mediumEndpoint": {
+        "rawStart": 22.66,
+        "rawEnd": 23.86,
+        "minimumRawProbability": 0.6272752285003662
+      },
+      "startDelta": 0.26000000000000156,
+      "endDelta": 0.259999999999998,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary",
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line6:sentence2",
+      "unit": "sentence",
+      "sourceZH": "我还没喝过这么好喝的奶茶。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio5",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 24.2,
+        "rawEnd": 26.42,
+        "minimumRawProbability": 0.9253048896789551
+      },
+      "mediumEndpoint": {
+        "rawStart": 24.28,
+        "rawEnd": 26.58,
+        "minimumRawProbability": 0.9823194146156311
+      },
+      "startDelta": 0.08000000000000185,
+      "endDelta": 0.1599999999999966,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line7",
+      "unit": "line",
+      "sourceZH": "就在前边的商场，吃完饭你们可以跟我去看看。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio5",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [],
+      "smallEndpoint": {
+        "rawStart": 28.080000000000002,
+        "rawEnd": 32.74,
+        "minimumRawProbability": 0.2612890303134918
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary",
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word16",
+      "unit": "word",
+      "sourceZH": "奶茶",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio6",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.66,
+        "minimumRawProbability": 0.8869572281837463
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.8,
+        "minimumRawProbability": 0.9893890023231506
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.13999999999999968,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word17",
+      "unit": "word",
+      "sourceZH": "跟",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio6",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word18",
+      "unit": "word",
+      "sourceZH": "跟",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio6",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text4:line1",
+      "unit": "line",
+      "sourceZH": "回国前一天，我们去一雪姐家了。到她家的时候，饭菜都做好了。刘爷爷还准备了奶茶。因为吃了太多东西，我们吃完饭是走回酒店的。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio7",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text4:line1:sentence1",
+      "unit": "sentence",
+      "sourceZH": "回国前一天，我们去一雪姐家了。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio7",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text4:line1:sentence2",
+      "unit": "sentence",
+      "sourceZH": "到她家的时候，饭菜都做好了。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio7",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 4.84,
+        "rawEnd": 7.9,
+        "minimumRawProbability": 0.9051446318626404
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text4:line1:sentence3",
+      "unit": "sentence",
+      "sourceZH": "刘爷爷还准备了奶茶。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio7",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 8.6,
+        "rawEnd": 10.98,
+        "minimumRawProbability": 0.987207442522049
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text4:line1:sentence4",
+      "unit": "sentence",
+      "sourceZH": "因为吃了太多东西，我们吃完饭是走回酒店的。",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio7",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 11.66,
+        "rawEnd": 16.48,
+        "minimumRawProbability": 0.9341742396354675
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word19",
+      "unit": "word",
+      "sourceZH": "走",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio8",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 1.08,
+        "minimumRawProbability": 0.9162423014640808
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 1.94,
+        "minimumRawProbability": 0.9637140035629272
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.8599999999999999,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:word20",
+      "unit": "word",
+      "sourceZH": "酒店",
+      "sourceTrackId": "hsk2-fltrp-2026:l05:audio8",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 1.34,
+        "rawEnd": 3.72,
+        "minimumRawProbability": 0.9596812129020691
+      },
+      "mediumEndpoint": {
+        "rawStart": 2.98,
+        "rawEnd": 3.98,
+        "minimumRawProbability": 0.9935761094093323
+      },
+      "startDelta": 1.64,
+      "endDelta": 0.2599999999999998,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line1",
+      "unit": "line",
+      "sourceZH": "明天就是女儿的生日了。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.48,
+        "minimumRawProbability": 0.4580957889556885
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.94,
+        "minimumRawProbability": 0.8776395916938782
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.45999999999999996,
+      "authorSmallHoldReasons": [
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line2",
+      "unit": "line",
+      "sourceZH": "你不说，我还真忘了。我们给她准备个什么礼物呢？",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 4.22,
+        "rawEnd": 9.36,
+        "minimumRawProbability": 0.7281635999679565
+      },
+      "mediumEndpoint": {
+        "rawStart": 4.58,
+        "rawEnd": 9.6,
+        "minimumRawProbability": 0.9489631056785583
+      },
+      "startDelta": 0.3600000000000003,
+      "endDelta": 0.2400000000000002,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line2:sentence1",
+      "unit": "sentence",
+      "sourceZH": "你不说，我还真忘了。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 4.22,
+        "rawEnd": 6.4,
+        "minimumRawProbability": 0.7782014608383179
+      },
+      "mediumEndpoint": {
+        "rawStart": 4.58,
+        "rawEnd": 6.62,
+        "minimumRawProbability": 0.9489631056785583
+      },
+      "startDelta": 0.3600000000000003,
+      "endDelta": 0.21999999999999975,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line2:sentence2",
+      "unit": "sentence",
+      "sourceZH": "我们给她准备个什么礼物呢？",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 7.16,
+        "rawEnd": 9.36,
+        "minimumRawProbability": 0.7281635999679565
+      },
+      "mediumEndpoint": {
+        "rawStart": 7.06,
+        "rawEnd": 9.6,
+        "minimumRawProbability": 0.9538328647613525
+      },
+      "startDelta": -0.10000000000000053,
+      "endDelta": 0.2400000000000002,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line3",
+      "unit": "line",
+      "sourceZH": "她喜欢画画，你觉得画笔怎么样？",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 10.82,
+        "rawEnd": 14.28,
+        "minimumRawProbability": 0.967173159122467
+      },
+      "mediumEndpoint": {
+        "rawStart": 10.76,
+        "rawEnd": 14.42,
+        "minimumRawProbability": 0.9552749991416931
+      },
+      "startDelta": -0.0600000000000005,
+      "endDelta": 0.14000000000000057,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line4",
+      "unit": "line",
+      "sourceZH": "就送画笔吧！",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 15.96,
+        "rawEnd": 17.06,
+        "minimumRawProbability": 0.3192944824695587
+      },
+      "mediumEndpoint": {
+        "rawStart": 15.88,
+        "rawEnd": 17.28,
+        "minimumRawProbability": 0.9864640235900879
+      },
+      "startDelta": -0.08000000000000007,
+      "endDelta": 0.22000000000000242,
+      "authorSmallHoldReasons": [
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line5",
+      "unit": "line",
+      "sourceZH": "那我明天上午就去买。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 18.28,
+        "rawEnd": 20.06,
+        "minimumRawProbability": 0.9755723476409912
+      },
+      "mediumEndpoint": {
+        "rawStart": 18.4,
+        "rawEnd": 20.26,
+        "minimumRawProbability": 0.9833465814590454
+      },
+      "startDelta": 0.11999999999999744,
+      "endDelta": 0.20000000000000284,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line6",
+      "unit": "line",
+      "sourceZH": "好的！我再给她买个大大的生日蛋糕。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 21.299999999999997,
+        "rawEnd": 25.64,
+        "minimumRawProbability": 0.9373658895492554
+      },
+      "mediumEndpoint": {
+        "rawStart": 21.42,
+        "rawEnd": 25.76,
+        "minimumRawProbability": 0.9656789898872375
+      },
+      "startDelta": 0.12000000000000455,
+      "endDelta": 0.120000000000001,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line6:sentence1",
+      "unit": "sentence",
+      "sourceZH": "好的！",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 21.299999999999997,
+        "rawEnd": 21.78,
+        "minimumRawProbability": 0.9566639065742493
+      },
+      "mediumEndpoint": {
+        "rawStart": 21.42,
+        "rawEnd": 21.98,
+        "minimumRawProbability": 0.9785588979721069
+      },
+      "startDelta": 0.12000000000000455,
+      "endDelta": 0.1999999999999993,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line6:sentence2",
+      "unit": "sentence",
+      "sourceZH": "我再给她买个大大的生日蛋糕。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 22.7,
+        "rawEnd": 25.64,
+        "minimumRawProbability": 0.9373658895492554
+      },
+      "mediumEndpoint": {
+        "rawStart": 22.72,
+        "rawEnd": 25.76,
+        "minimumRawProbability": 0.9656789898872375
+      },
+      "startDelta": 0.019999999999999574,
+      "endDelta": 0.120000000000001,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word01",
+      "unit": "word",
+      "sourceZH": "生日",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio2",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 3.1,
+        "minimumRawProbability": 0.9727411866188049
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 3.26,
+        "minimumRawProbability": 0.9919256567955017
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.1599999999999997,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word02",
+      "unit": "word",
+      "sourceZH": "忘",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio2",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "blocked-invalid-ASR-word-times"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word03",
+      "unit": "word",
+      "sourceZH": "画",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio2",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate",
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate",
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word04",
+      "unit": "word",
+      "sourceZH": "画",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio2",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate",
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate",
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word05",
+      "unit": "word",
+      "sourceZH": "画笔",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio2",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 6.6,
+        "rawEnd": 9.7,
+        "minimumRawProbability": 0.7933169603347778
+      },
+      "mediumEndpoint": {
+        "rawStart": 8.78,
+        "rawEnd": 10.86,
+        "minimumRawProbability": 0.970005452632904
+      },
+      "startDelta": 2.1799999999999997,
+      "endDelta": 1.1600000000000001,
+      "authorSmallHoldReasons": [
+        "contains-other-printed-word-observation:hsk2-fltrp-2026:l06:word03",
+        "contains-other-printed-word-observation:hsk2-fltrp-2026:l06:word04"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word06",
+      "unit": "word",
+      "sourceZH": "蛋糕",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio2",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 10.92,
+        "rawEnd": 12.18,
+        "minimumRawProbability": 0.8828088045120239
+      },
+      "mediumEndpoint": {
+        "rawStart": 11.74,
+        "rawEnd": 12.46,
+        "minimumRawProbability": 0.9982563853263855
+      },
+      "startDelta": 0.8200000000000003,
+      "endDelta": 0.28000000000000114,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line1",
+      "unit": "line",
+      "sourceZH": "小雪，生日快乐！",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.42,
+        "minimumRawProbability": 0.16436730325222015
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 3.38,
+        "minimumRawProbability": 0.4316503703594208
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.96,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary",
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line2",
+      "unit": "line",
+      "sourceZH": "姐姐，生日快乐！",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 3.320000000000002,
+        "rawEnd": 5.1,
+        "minimumRawProbability": 0.4576334059238434
+      },
+      "mediumEndpoint": {
+        "rawStart": 3.92,
+        "rawEnd": 5.34,
+        "minimumRawProbability": 0.8701967597007751
+      },
+      "startDelta": 0.5999999999999979,
+      "endDelta": 0.2400000000000002,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary",
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line3",
+      "unit": "line",
+      "sourceZH": "小雪，这是爸爸、妈妈送你的礼物。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 6.12,
+        "rawEnd": 10.1,
+        "minimumRawProbability": 0.9478435516357422
+      },
+      "mediumEndpoint": {
+        "rawStart": 6.36,
+        "rawEnd": 10.72,
+        "minimumRawProbability": 0.6741604804992676
+      },
+      "startDelta": 0.2400000000000002,
+      "endDelta": 0.620000000000001,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line4",
+      "unit": "line",
+      "sourceZH": "你打开看看喜欢不喜欢。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 11.2,
+        "rawEnd": 13.56,
+        "minimumRawProbability": 0.9216896295547485
+      },
+      "mediumEndpoint": {
+        "rawStart": 11.36,
+        "rawEnd": 14.04,
+        "minimumRawProbability": 0.941373348236084
+      },
+      "startDelta": 0.16000000000000014,
+      "endDelta": 0.47999999999999865,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line5",
+      "unit": "line",
+      "sourceZH": "画笔！我很喜欢！",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 14.82,
+        "rawEnd": 16.96,
+        "minimumRawProbability": 0.8928698897361755
+      },
+      "mediumEndpoint": {
+        "rawStart": 14.92,
+        "rawEnd": 17.12,
+        "minimumRawProbability": 0.9110503196716309
+      },
+      "startDelta": 0.09999999999999964,
+      "endDelta": 0.16000000000000014,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line5:sentence1",
+      "unit": "sentence",
+      "sourceZH": "画笔！",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 14.82,
+        "rawEnd": 15.34,
+        "minimumRawProbability": 0.8928698897361755
+      },
+      "mediumEndpoint": {
+        "rawStart": 14.92,
+        "rawEnd": 15.6,
+        "minimumRawProbability": 0.9110503196716309
+      },
+      "startDelta": 0.09999999999999964,
+      "endDelta": 0.2599999999999998,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line5:sentence2",
+      "unit": "sentence",
+      "sourceZH": "我很喜欢！",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 15.96,
+        "rawEnd": 16.96,
+        "minimumRawProbability": 0.947799026966095
+      },
+      "mediumEndpoint": {
+        "rawStart": 16.1,
+        "rawEnd": 17.12,
+        "minimumRawProbability": 0.9788540601730347
+      },
+      "startDelta": 0.14000000000000057,
+      "endDelta": 0.16000000000000014,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line6",
+      "unit": "line",
+      "sourceZH": "那你想画点儿什么？",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line7",
+      "unit": "line",
+      "sourceZH": "画我们的家！有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 20.32,
+        "rawEnd": 28.36,
+        "minimumRawProbability": 0.9600443243980408
+      },
+      "mediumEndpoint": {
+        "rawStart": 20.52,
+        "rawEnd": 28.74,
+        "minimumRawProbability": 0.7349824905395508
+      },
+      "startDelta": 0.1999999999999993,
+      "endDelta": 0.379999999999999,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line7:sentence1",
+      "unit": "sentence",
+      "sourceZH": "画我们的家！",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 20.32,
+        "rawEnd": 21.4,
+        "minimumRawProbability": 0.9632152318954468
+      },
+      "mediumEndpoint": {
+        "rawStart": 20.52,
+        "rawEnd": 21.62,
+        "minimumRawProbability": 0.9731893539428711
+      },
+      "startDelta": 0.1999999999999993,
+      "endDelta": 0.22000000000000242,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line7:sentence2",
+      "unit": "sentence",
+      "sourceZH": "有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 22.1,
+        "rawEnd": 28.36,
+        "minimumRawProbability": 0.9600443243980408
+      },
+      "mediumEndpoint": {
+        "rawStart": 22.1,
+        "rawEnd": 28.74,
+        "minimumRawProbability": 0.7349824905395508
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.379999999999999,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text2:line8",
+      "unit": "line",
+      "sourceZH": "那我要画一个穿白色衣服的姐姐。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio3",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [],
+      "smallEndpoint": {
+        "rawStart": 29.04,
+        "rawEnd": 31.62,
+        "minimumRawProbability": 0.7322943210601807
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word07",
+      "unit": "word",
+      "sourceZH": "快乐",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio4",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 3.06,
+        "minimumRawProbability": 0.9705468416213989
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word08",
+      "unit": "word",
+      "sourceZH": "打开",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio4",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 3.06,
+        "rawEnd": 4.58,
+        "minimumRawProbability": 0.23404408991336823
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line1",
+      "unit": "line",
+      "sourceZH": "小雪，看看今天有什么好吃的。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio5",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 4.06,
+        "minimumRawProbability": 0.7127190828323364
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 4.74,
+        "minimumRawProbability": 0.6230875253677368
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.6800000000000006,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line2",
+      "unit": "line",
+      "sourceZH": "长长的面条儿，大大的蛋糕。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio5",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line3",
+      "unit": "line",
+      "sourceZH": "你看，还有鱼啊肉啊什么的，都是你喜欢吃的。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio5",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 8.48,
+        "rawEnd": 13.88,
+        "minimumRawProbability": 0.39802923798561096
+      },
+      "mediumEndpoint": {
+        "rawStart": 8.72,
+        "rawEnd": 14.14,
+        "minimumRawProbability": 0.8630421161651611
+      },
+      "startDelta": 0.2400000000000002,
+      "endDelta": 0.2599999999999998,
+      "authorSmallHoldReasons": [
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line4",
+      "unit": "line",
+      "sourceZH": "谢谢爸爸、妈妈！",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio5",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 14.36,
+        "rawEnd": 16.04,
+        "minimumRawProbability": 0.9717385768890381
+      },
+      "mediumEndpoint": {
+        "rawStart": 14.42,
+        "rawEnd": 16.3,
+        "minimumRawProbability": 0.9431140422821045
+      },
+      "startDelta": 0.0600000000000005,
+      "endDelta": 0.26000000000000156,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line5",
+      "unit": "line",
+      "sourceZH": "快去叫弟弟过来吃饭吧，吃完饭我们还要出去玩呢。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio5",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 17.04,
+        "rawEnd": 22.06,
+        "minimumRawProbability": 0.8929229974746704
+      },
+      "mediumEndpoint": {
+        "rawStart": 17.22,
+        "rawEnd": 22.44,
+        "minimumRawProbability": 0.8856896162033081
+      },
+      "startDelta": 0.17999999999999972,
+      "endDelta": 0.38000000000000256,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line6",
+      "unit": "line",
+      "sourceZH": "过生日真好啊！",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio5",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 23.26,
+        "rawEnd": 24.66,
+        "minimumRawProbability": 0.977202832698822
+      },
+      "mediumEndpoint": {
+        "rawStart": 23.34,
+        "rawEnd": 25.06,
+        "minimumRawProbability": 0.9805542230606079
+      },
+      "startDelta": 0.0799999999999983,
+      "endDelta": 0.3999999999999986,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line7",
+      "unit": "line",
+      "sourceZH": "是的，过生日就要吃好吃的，还要高高兴兴地玩。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio5",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": true,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word09",
+      "unit": "word",
+      "sourceZH": "长",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio6",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 1.04,
+        "minimumRawProbability": 0.25805166363716125
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary",
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word10",
+      "unit": "word",
+      "sourceZH": "鱼",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio6",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 3.0,
+        "rawEnd": 3.86,
+        "minimumRawProbability": 0.6986282989382744
+      },
+      "mediumEndpoint": {
+        "rawStart": 2.88,
+        "rawEnd": 4.66,
+        "minimumRawProbability": 0.9477148056030273
+      },
+      "startDelta": -0.1200000000000001,
+      "endDelta": 0.8000000000000003,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word11",
+      "unit": "word",
+      "sourceZH": "肉",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio6",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 5.0,
+        "rawEnd": 5.76,
+        "minimumRawProbability": 0.6590768694877625
+      },
+      "mediumEndpoint": {
+        "rawStart": 6.32,
+        "rawEnd": 6.8,
+        "minimumRawProbability": 0.994200587272644
+      },
+      "startDelta": 1.3200000000000003,
+      "endDelta": 1.04,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word12",
+      "unit": "word",
+      "sourceZH": "过",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio6",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 7.0,
+        "rawEnd": 7.9,
+        "minimumRawProbability": 0.9643494486808777
+      },
+      "mediumEndpoint": {
+        "rawStart": 8.52,
+        "rawEnd": 8.9,
+        "minimumRawProbability": 0.9723807573318481
+      },
+      "startDelta": 1.5199999999999996,
+      "endDelta": 1.0,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word13",
+      "unit": "word",
+      "sourceZH": "地",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio6",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1",
+      "unit": "line",
+      "sourceZH": "今天是女儿的生日。我们买了蛋糕，做了面条儿，还做了鱼啊肉啊什么的。吃完晚饭，一家人去看了个电影。回家后，孩子们早早地就上床了。明天不上学，他们说要舒舒服服地睡一觉，让我们晚点儿叫他们起床。这是很忙、很累，但很快乐的一天。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio7",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence1",
+      "unit": "sentence",
+      "sourceZH": "今天是女儿的生日。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio7",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.38,
+        "minimumRawProbability": 0.3371257185935974
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence2",
+      "unit": "sentence",
+      "sourceZH": "我们买了蛋糕，做了面条儿，还做了鱼啊肉啊什么的。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio7",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence3",
+      "unit": "sentence",
+      "sourceZH": "吃完晚饭，一家人去看了个电影。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio7",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 9.3,
+        "rawEnd": 13.42,
+        "minimumRawProbability": 0.9456392526626587
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence4",
+      "unit": "sentence",
+      "sourceZH": "回家后，孩子们早早地就上床了。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio7",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": true,
+      "smallExactStatus": [],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": null,
+      "mediumEndpoint": {
+        "rawStart": 13.62,
+        "rawEnd": 17.06,
+        "minimumRawProbability": 0.509304404258728
+      },
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence5",
+      "unit": "sentence",
+      "sourceZH": "明天不上学，他们说要舒舒服服地睡一觉，让我们晚点儿叫他们起床。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio7",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": false,
+      "mediumUnique": false,
+      "smallExactStatus": [],
+      "mediumExactStatus": [],
+      "smallEndpoint": null,
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": null,
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text4:line1:sentence6",
+      "unit": "sentence",
+      "sourceZH": "这是很忙、很累，但很快乐的一天。",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio7",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 26.26,
+        "rawEnd": 30.32,
+        "minimumRawProbability": 0.4006618559360504
+      },
+      "mediumEndpoint": {
+        "rawStart": 26.32,
+        "rawEnd": 30.52,
+        "minimumRawProbability": 0.7566209435462952
+      },
+      "startDelta": 0.05999999999999872,
+      "endDelta": 0.1999999999999993,
+      "authorSmallHoldReasons": [
+        "active-energy-at-raw-cut-boundary",
+        "low-raw-word-probability"
+      ],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word14",
+      "unit": "word",
+      "sourceZH": "床",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio8",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": true,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "smallEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 1.42,
+        "minimumRawProbability": 0.9436682760715485
+      },
+      "mediumEndpoint": {
+        "rawStart": 0.0,
+        "rawEnd": 2.22,
+        "minimumRawProbability": 0.9317362010478973
+      },
+      "startDelta": 0.0,
+      "endDelta": 0.8000000000000003,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:word15",
+      "unit": "word",
+      "sourceZH": "舒服",
+      "sourceTrackId": "hsk2-fltrp-2026:l06:audio8",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "singleSentenceLine": false,
+      "smallUnique": true,
+      "mediumUnique": false,
+      "smallExactStatus": [
+        "unreviewed-exact-ASR-candidate"
+      ],
+      "mediumExactStatus": [
+        "blocked-invalid-ASR-word-times"
+      ],
+      "smallEndpoint": {
+        "rawStart": 1.42,
+        "rawEnd": 3.76,
+        "minimumRawProbability": 0.90348219871521
+      },
+      "mediumEndpoint": null,
+      "startDelta": null,
+      "endDelta": null,
+      "authorSmallHoldReasons": [],
+      "status": "whole-track-fallback-until-independent-cut-proof",
+      "productionApproved": false,
+      "humanListening": false
+    }
+  ],
+  "trackDiagnostics": [
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio1",
+      "model": "small",
+      "rawWords": 35,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.0579710144927537,
+      "maxNoSpeechProbability": 0.07459922879934311,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "bf7991753d93f997545c7221b2f784170443d8855d986cb5e736d148fc587b37"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio1",
+      "model": "medium",
+      "rawWords": 35,
+      "zeroDurationWords": 1,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.0579710144927537,
+      "maxNoSpeechProbability": 0.25273969769477844,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "ae1e96be60ffe79413768eb3bd3c156b8f05121e15892d31dc127f1f86400ce5"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio2",
+      "model": "small",
+      "rawWords": 8,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.6857142857142857,
+      "maxNoSpeechProbability": 0.1684788167476654,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "bbf060415bad6505881915f873734850690f6e7801d0413007f532776e9ca3b1"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio2",
+      "model": "medium",
+      "rawWords": 8,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.6857142857142857,
+      "maxNoSpeechProbability": 0.13997766375541687,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "bca849d143ca1de26afabba40c5352abbcb2ddd55e11d41e79049a5173124899"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "model": "small",
+      "rawWords": 72,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.4756756756756757,
+      "maxNoSpeechProbability": 0.01901073567569256,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "c2beed3df483ae2ad9578f6dede5916a4086968adcb4b93f0edccd79bc764ec9"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "model": "medium",
+      "rawWords": 72,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.456989247311828,
+      "maxNoSpeechProbability": 0.15982186794281006,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "728f6e6dc41fd2635b9ac4fd6c418d584a521ab62eeffd4d96526bf0b9d19271"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio4",
+      "model": "small",
+      "rawWords": 7,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.75,
+      "maxNoSpeechProbability": 0.3064330816268921,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "b2f46efb9912fdbacbaf49325278161cdc767f23a5716e096fa2cb114200af19"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio4",
+      "model": "medium",
+      "rawWords": 7,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.75,
+      "maxNoSpeechProbability": 0.09658302366733551,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "462aaaaaf0f221dde3972b13927e1d5867ea9e6f19df7d37f6e8f286a0882e7d"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio5",
+      "model": "small",
+      "rawWords": 52,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.2384105960264902,
+      "maxNoSpeechProbability": 0.009973052889108658,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "424b987664b42c57a35a0b4884486054167135219525f9a4e6cde822f8b4bb61"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio5",
+      "model": "medium",
+      "rawWords": 52,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.28125,
+      "maxNoSpeechProbability": 0.06414283066987991,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "c3b152c97433dc1a79f1bdb252db37891907f9c2b3e70da4bba6ca49cb79ed55"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio6",
+      "model": "small",
+      "rawWords": 9,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.75,
+      "maxNoSpeechProbability": 0.5212229490280151,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "615780f428d641a662e539d22c227f21c35c6b9434fa198547a94ec1e073825e"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio6",
+      "model": "medium",
+      "rawWords": 9,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.75,
+      "maxNoSpeechProbability": 0.5819830894470215,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "cdcbd20439d006b99a69f8bb8756934d3231f665b7fd25ac06006ef9cabe2bde"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio7",
+      "model": "small",
+      "rawWords": 56,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.1851851851851851,
+      "maxNoSpeechProbability": 0.021469322964549065,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "853f01dde8c5d98dd91fa694433cc1c6e51a59f32f5230241d476035fa3917ad"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio7",
+      "model": "medium",
+      "rawWords": 57,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.1871345029239766,
+      "maxNoSpeechProbability": 0.21651016175746918,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "7dd82692b1cd881fb428ea87c957d015c64de5954ded5a373e3afc4aba076d0f"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio8",
+      "model": "small",
+      "rawWords": 2,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.42857142857142855,
+      "maxNoSpeechProbability": 0.4427500069141388,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "32812d4835754b17497b98a7b1527cb8abe057411b389888892f8733bb720b03"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio8",
+      "model": "medium",
+      "rawWords": 2,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.42857142857142855,
+      "maxNoSpeechProbability": 0.47521108388900757,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "d85574d542b4c2853fae2c72525be5bfdbd06f6ccaa6411a597b9113488b0e09"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio1",
+      "model": "small",
+      "rawWords": 50,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.2285714285714286,
+      "maxNoSpeechProbability": 0.059402480721473694,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "23e4c82f25b952d4fc1c7c8aa2b67e525ca1fec501ab914d37681d891adf8717"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio1",
+      "model": "medium",
+      "rawWords": 50,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.2102272727272727,
+      "maxNoSpeechProbability": 0.5722560882568359,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "7f05f76136e3195fdc79d5b0d56381d53467e9fbfcf8f561ef0e038ad62645d7"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "model": "small",
+      "rawWords": 14,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.25,
+      "maxNoSpeechProbability": 0.1472187042236328,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "68a721ae9a3a03e0caac432d38b528ab6371e900a924275f57df6d826aa68936"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "model": "medium",
+      "rawWords": 153,
+      "zeroDurationWords": 124,
+      "zeroDurationProbabilityOver0_9": 119,
+      "maxCompressionRatio": 18.535714285714285,
+      "maxNoSpeechProbability": 0.8429438471794128,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "ea1bdf43e2174643a987c9bf96b25c790de6c1e96a6b50e3bc8c6e144041b6df"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "model": "small",
+      "rawWords": 83,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.3742690058479532,
+      "maxNoSpeechProbability": 0.1840892732143402,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "90766566adad4cc2bfd363d7fcda7abcfecb26f21908a7b472d0531b525f9a21"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "model": "medium",
+      "rawWords": 83,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.4285714285714286,
+      "maxNoSpeechProbability": 0.2780615985393524,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "d53df4cbe25567a972fdcc9322e92e220f2a7ccca6f2cb5dd92577dbfbedfc8d"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio4",
+      "model": "small",
+      "rawWords": 10,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.825,
+      "maxNoSpeechProbability": 0.21945789456367493,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "87b4832bc876266bc447c5e06e4d021b560f20385c89a7e341f2015dc23a8d78"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio4",
+      "model": "medium",
+      "rawWords": 10,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.8108108108108109,
+      "maxNoSpeechProbability": 0.10856372863054276,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "f96afe4c80f7efa7ad08b0fda52002f320455e7284fde310d70e66ac37dd6c06"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "model": "small",
+      "rawWords": 76,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.278688524590164,
+      "maxNoSpeechProbability": 0.11665161699056625,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "bdc37c1d4b0d722c6eb09c04efc7cb3a65beb0b9637101b3a77beac1e2f995da"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "model": "medium",
+      "rawWords": 77,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.2934782608695652,
+      "maxNoSpeechProbability": 0.5444815754890442,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "884a29fda094d63f0915c8e7cfd81936fb6de9aac5c06c9b3efe0f5b3df7ffcf"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio6",
+      "model": "small",
+      "rawWords": 3,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.5,
+      "maxNoSpeechProbability": 0.39727354049682617,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "0c5136d5613508f873c0697c88ca2be62649c3aedcde4d54343c976310ecd5ea"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio6",
+      "model": "medium",
+      "rawWords": 3,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.5,
+      "maxNoSpeechProbability": 0.3117884695529938,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "ea0816aa44e5c0cdc00bc5c6b5502dad0f34c5f14fda10d4c8cf62a3008a637f"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio7",
+      "model": "small",
+      "rawWords": 45,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.087248322147651,
+      "maxNoSpeechProbability": 0.04726533591747284,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "1535cba8622c4020512abc6844f7054f4831cb73c7fb7a4eeb2459b0028e6e1d"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio7",
+      "model": "medium",
+      "rawWords": 47,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.1133333333333333,
+      "maxNoSpeechProbability": 0.14476895332336426,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "d36759766952ed2e52f0261809f78af702f8a0a2ea24d4a4623ad1f6eb20bb11"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio8",
+      "model": "small",
+      "rawWords": 3,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.5263157894736842,
+      "maxNoSpeechProbability": 0.1374916434288025,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "a87567dc63afa1367c0d522594b916fdb2f004a31da83ad056bb1fcefd8a6334"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio8",
+      "model": "medium",
+      "rawWords": 3,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.5263157894736842,
+      "maxNoSpeechProbability": 0.4683285355567932,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "66d64e45c04fcd845854105d38b5c8cd33c1ed0ed35bc5376e416c6e1cf3ad32"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "model": "small",
+      "rawWords": 63,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.2659574468085106,
+      "maxNoSpeechProbability": 0.006681809201836586,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "523fff6044be55e2f7f16f73367d06cd1ccc95dc8d6b43dfa0e63737b3353a8d"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "model": "medium",
+      "rawWords": 63,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.231578947368421,
+      "maxNoSpeechProbability": 0.13400782644748688,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "7212994965a60d5abe62309db1289d01be6789dd45c6abac952db2d57395c090"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio2",
+      "model": "small",
+      "rawWords": 8,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.75,
+      "maxNoSpeechProbability": 0.6527382135391235,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "51894d77a45513df2bb4642530b73a63bc3cf00d41f8b1ee6df1f093278ff1ff"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio2",
+      "model": "medium",
+      "rawWords": 8,
+      "zeroDurationWords": 1,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.7777777777777778,
+      "maxNoSpeechProbability": 0.4511227011680603,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "fd44bec883440afc93373d82b50fe39ddde281cc476cd4a400b8a89061c59ca9"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "model": "small",
+      "rawWords": 71,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.4120879120879122,
+      "maxNoSpeechProbability": 0.09448733925819397,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "a9001ef30c44ca4bb085cea193b8396cba206b11b90e1234005a05ccd28e6ec7"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "model": "medium",
+      "rawWords": 71,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.3631284916201116,
+      "maxNoSpeechProbability": 0.7124795913696289,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "c6473189827d290a5c839bba32c5482cf69762b991900fdde6330f65c062dd9e"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio4",
+      "model": "small",
+      "rawWords": 4,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.5909090909090909,
+      "maxNoSpeechProbability": 0.5087085366249084,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "38fdd392202d971101ebbb6050c5b446acf8e6812a09e6102bf31b557f16593e"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio4",
+      "model": "medium",
+      "rawWords": 4,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.5714285714285714,
+      "maxNoSpeechProbability": 0.49193820357322693,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "e3caa325333020dbc5520b222d14907bd2cc9bfbb2ee3cca6fa8cfbc44c82067"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio5",
+      "model": "small",
+      "rawWords": 76,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.3459715639810426,
+      "maxNoSpeechProbability": 0.16233214735984802,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "6f46b40b3d22cff4554ebdea091e5161bb8374b1d4d0eaf3cf9f7e7fcdbe5bd6"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio5",
+      "model": "medium",
+      "rawWords": 76,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.2385786802030456,
+      "maxNoSpeechProbability": 0.36083534359931946,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "15b6c9a4aa5c1b59f1202ceb824b0a65c0b969f0019819331c6f564d2ca5e06f"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio6",
+      "model": "small",
+      "rawWords": 5,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.625,
+      "maxNoSpeechProbability": 0.14171941578388214,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "312de9a49c78046051175a49ef634c2ac16c91489555d05f124deb1bd3668f57"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio6",
+      "model": "medium",
+      "rawWords": 5,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.6785714285714286,
+      "maxNoSpeechProbability": 0.30958402156829834,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "ae9c440aaeba601b503f009ddfc2d8a6f18e9186592841f4e56a15f8aca43590"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio7",
+      "model": "small",
+      "rawWords": 86,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.256281407035176,
+      "maxNoSpeechProbability": 0.30112189054489136,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "fdaabe48ea4d5356604b275ff36c02ebce913ddc345a8d3ea42d1b78c430b1c7"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio7",
+      "model": "medium",
+      "rawWords": 86,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 1.2242990654205608,
+      "maxNoSpeechProbability": 0.22697357833385468,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "e326b47afa241fdeb26ecce842cd62a66f5ea59ae6fc85df9a9607c740da17cb"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio8",
+      "model": "small",
+      "rawWords": 3,
+      "zeroDurationWords": 0,
+      "zeroDurationProbabilityOver0_9": 0,
+      "maxCompressionRatio": 0.5555555555555556,
+      "maxNoSpeechProbability": 0.15304268896579742,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "08db0bc8594101e787105377d94374f245ce1fae633e1b00941837fd22f32d7f"
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio8",
+      "model": "medium",
+      "rawWords": 3,
+      "zeroDurationWords": 1,
+      "zeroDurationProbabilityOver0_9": 1,
+      "maxCompressionRatio": 0.5555555555555556,
+      "maxNoSpeechProbability": 0.2675013244152069,
+      "observationInvalidWordTimeIndices": [],
+      "rawSHA256": "8791fe3103ce4391893c1925efcd5fcbdffc69012db9ec75dd6d0d4bb46367a0"
+    }
+  ],
+  "candidateCropPriorityIds": [
+    "hsk2-fltrp-2026:l04:text2:line3",
+    "hsk2-fltrp-2026:l05:text2:line8:sentence2"
+  ],
+  "humanListening": false,
+  "productionApprovedClipCount": 0
+}

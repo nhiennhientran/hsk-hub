@@ -1,0 +1,1073 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l12:audio7",
+    "level": 3,
+    "lesson": 12,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/12-7.mp3",
+    "sha256": "e8085f0d7cd260e47b260c310083bed88c6e11727107af52dab6b78332f8e6a7",
+    "bytes": 737959,
+    "manifestDurationSeconds": 43.5845,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 698828,
+      "durationSeconds": 43.67675,
+      "sha256": "493a186428853c11d20cd4ec64df22be7c34aba713d148f9c3cdfb59f9ced9eb"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 43.67675,
+    "duration_after_vad": 43.67675,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.560000000000004,
+      "end": 9.04,
+      "text": "我离开北京到这里工作一年多了,这一年多住下来,我还是更喜欢北京的四季。",
+      "tokens": [
+        50364,
+        1654,
+        18614,
+        119,
+        18937,
+        26668,
+        31375,
+        4511,
+        35102,
+        41315,
+        2257,
+        5157,
+        6392,
+        2289,
+        11,
+        5562,
+        2257,
+        5157,
+        6392,
+        21632,
+        4438,
+        6912,
+        11,
+        1654,
+        45726,
+        19002,
+        41606,
+        26668,
+        31375,
+        1546,
+        19425,
+        8052,
+        96,
+        1543,
+        50864
+      ],
+      "avg_logprob": -0.10015950498043322,
+      "compression_ratio": 1.229665071770335,
+      "no_speech_prob": 0.051003988832235336,
+      "words": [
+        {
+          "start": 0.560000000000004,
+          "end": 1.08,
+          "word": "我",
+          "probability": 0.745705783367157
+        },
+        {
+          "start": 1.08,
+          "end": 1.26,
+          "word": "离",
+          "probability": 0.6968560218811035
+        },
+        {
+          "start": 1.26,
+          "end": 1.44,
+          "word": "开",
+          "probability": 0.970982015132904
+        },
+        {
+          "start": 1.44,
+          "end": 1.66,
+          "word": "北",
+          "probability": 0.9937795996665955
+        },
+        {
+          "start": 1.66,
+          "end": 1.92,
+          "word": "京",
+          "probability": 0.9993801116943359
+        },
+        {
+          "start": 1.92,
+          "end": 2.18,
+          "word": "到",
+          "probability": 0.7915433049201965
+        },
+        {
+          "start": 2.18,
+          "end": 2.46,
+          "word": "这里",
+          "probability": 0.9765165448188782
+        },
+        {
+          "start": 2.46,
+          "end": 2.8,
+          "word": "工作",
+          "probability": 0.9980301260948181
+        },
+        {
+          "start": 2.8,
+          "end": 3.12,
+          "word": "一",
+          "probability": 0.9845361113548279
+        },
+        {
+          "start": 3.12,
+          "end": 3.36,
+          "word": "年",
+          "probability": 0.9973217844963074
+        },
+        {
+          "start": 3.36,
+          "end": 3.6,
+          "word": "多",
+          "probability": 0.9992390871047974
+        },
+        {
+          "start": 3.6,
+          "end": 3.82,
+          "word": "了,",
+          "probability": 0.9787367582321167
+        },
+        {
+          "start": 4.68,
+          "end": 5.08,
+          "word": "这",
+          "probability": 0.8703551292419434
+        },
+        {
+          "start": 5.08,
+          "end": 5.22,
+          "word": "一",
+          "probability": 0.9930819869041443
+        },
+        {
+          "start": 5.22,
+          "end": 5.4,
+          "word": "年",
+          "probability": 0.9926884770393372
+        },
+        {
+          "start": 5.4,
+          "end": 5.58,
+          "word": "多",
+          "probability": 0.9889167547225952
+        },
+        {
+          "start": 5.58,
+          "end": 5.78,
+          "word": "住",
+          "probability": 0.9808181524276733
+        },
+        {
+          "start": 5.78,
+          "end": 6.0,
+          "word": "下",
+          "probability": 0.9805997014045715
+        },
+        {
+          "start": 6.0,
+          "end": 6.34,
+          "word": "来,",
+          "probability": 0.994733452796936
+        },
+        {
+          "start": 6.72,
+          "end": 6.92,
+          "word": "我",
+          "probability": 0.9804527759552002
+        },
+        {
+          "start": 6.92,
+          "end": 7.3,
+          "word": "还是",
+          "probability": 0.9863255620002747
+        },
+        {
+          "start": 7.3,
+          "end": 7.5,
+          "word": "更",
+          "probability": 0.997799813747406
+        },
+        {
+          "start": 7.5,
+          "end": 7.84,
+          "word": "喜欢",
+          "probability": 0.9972232580184937
+        },
+        {
+          "start": 7.84,
+          "end": 8.18,
+          "word": "北",
+          "probability": 0.9968626499176025
+        },
+        {
+          "start": 8.18,
+          "end": 8.44,
+          "word": "京",
+          "probability": 0.9997121691703796
+        },
+        {
+          "start": 8.44,
+          "end": 8.6,
+          "word": "的",
+          "probability": 0.9898210763931274
+        },
+        {
+          "start": 8.6,
+          "end": 8.84,
+          "word": "四",
+          "probability": 0.7192819714546204
+        },
+        {
+          "start": 8.84,
+          "end": 9.04,
+          "word": "季。",
+          "probability": 0.9988351464271545
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 10.880000000000004,
+      "end": 15.22,
+      "text": "北京的春天最舒服,天气不冷不热。",
+      "tokens": [
+        50864,
+        26668,
+        31375,
+        1546,
+        46953,
+        6135,
+        8661,
+        46204,
+        27408,
+        11,
+        6135,
+        42204,
+        1960,
+        32499,
+        1960,
+        23661,
+        255,
+        1543,
+        51164
+      ],
+      "avg_logprob": -0.10015950498043322,
+      "compression_ratio": 1.229665071770335,
+      "no_speech_prob": 0.051003988832235336,
+      "words": [
+        {
+          "start": 10.880000000000004,
+          "end": 11.4,
+          "word": "北",
+          "probability": 0.9686233997344971
+        },
+        {
+          "start": 11.4,
+          "end": 11.62,
+          "word": "京",
+          "probability": 0.9997022747993469
+        },
+        {
+          "start": 11.62,
+          "end": 11.76,
+          "word": "的",
+          "probability": 0.9877800941467285
+        },
+        {
+          "start": 11.76,
+          "end": 11.96,
+          "word": "春",
+          "probability": 0.996992826461792
+        },
+        {
+          "start": 11.96,
+          "end": 12.2,
+          "word": "天",
+          "probability": 0.998814582824707
+        },
+        {
+          "start": 12.2,
+          "end": 12.46,
+          "word": "最",
+          "probability": 0.9542730450630188
+        },
+        {
+          "start": 12.46,
+          "end": 12.7,
+          "word": "舒",
+          "probability": 0.9980851411819458
+        },
+        {
+          "start": 12.7,
+          "end": 12.92,
+          "word": "服,",
+          "probability": 0.9969646334648132
+        },
+        {
+          "start": 13.7,
+          "end": 14.0,
+          "word": "天",
+          "probability": 0.9805800318717957
+        },
+        {
+          "start": 14.0,
+          "end": 14.24,
+          "word": "气",
+          "probability": 0.9965080618858337
+        },
+        {
+          "start": 14.24,
+          "end": 14.56,
+          "word": "不",
+          "probability": 0.9975388050079346
+        },
+        {
+          "start": 14.56,
+          "end": 14.74,
+          "word": "冷",
+          "probability": 0.996658444404602
+        },
+        {
+          "start": 14.74,
+          "end": 15.0,
+          "word": "不",
+          "probability": 0.9930146932601929
+        },
+        {
+          "start": 15.0,
+          "end": 15.22,
+          "word": "热。",
+          "probability": 0.9994221329689026
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 16.62,
+      "end": 20.2,
+      "text": "夏天白天很热,但是晚上比较凉快。",
+      "tokens": [
+        51164,
+        42708,
+        6135,
+        13558,
+        6135,
+        4563,
+        23661,
+        255,
+        11,
+        11189,
+        50157,
+        11706,
+        9830,
+        225,
+        6336,
+        231,
+        10251,
+        1543,
+        51414
+      ],
+      "avg_logprob": -0.10015950498043322,
+      "compression_ratio": 1.229665071770335,
+      "no_speech_prob": 0.051003988832235336,
+      "words": [
+        {
+          "start": 16.62,
+          "end": 16.8,
+          "word": "夏",
+          "probability": 0.9878774881362915
+        },
+        {
+          "start": 16.8,
+          "end": 17.08,
+          "word": "天",
+          "probability": 0.9994971752166748
+        },
+        {
+          "start": 17.08,
+          "end": 17.3,
+          "word": "白",
+          "probability": 0.9802266359329224
+        },
+        {
+          "start": 17.3,
+          "end": 17.58,
+          "word": "天",
+          "probability": 0.9973275661468506
+        },
+        {
+          "start": 17.58,
+          "end": 17.78,
+          "word": "很",
+          "probability": 0.9874600172042847
+        },
+        {
+          "start": 17.78,
+          "end": 18.04,
+          "word": "热,",
+          "probability": 0.9992400109767914
+        },
+        {
+          "start": 18.6,
+          "end": 18.86,
+          "word": "但是",
+          "probability": 0.9765722155570984
+        },
+        {
+          "start": 18.86,
+          "end": 19.24,
+          "word": "晚上",
+          "probability": 0.9925165772438049
+        },
+        {
+          "start": 19.24,
+          "end": 19.6,
+          "word": "比",
+          "probability": 0.9796955585479736
+        },
+        {
+          "start": 19.6,
+          "end": 19.74,
+          "word": "较",
+          "probability": 0.999955415725708
+        },
+        {
+          "start": 19.74,
+          "end": 19.94,
+          "word": "凉",
+          "probability": 0.9948677122592926
+        },
+        {
+          "start": 19.94,
+          "end": 20.2,
+          "word": "快。",
+          "probability": 0.9993659853935242
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 21.74,
+      "end": 27.04,
+      "text": "秋天树上的叶子都变成了红色、黄色,非常漂亮。",
+      "tokens": [
+        51414,
+        40190,
+        6135,
+        8987,
+        239,
+        5708,
+        1546,
+        2129,
+        114,
+        7626,
+        7182,
+        2129,
+        246,
+        11336,
+        2289,
+        16853,
+        95,
+        17673,
+        1231,
+        6173,
+        226,
+        17673,
+        11,
+        14392,
+        29019,
+        1543,
+        51764
+      ],
+      "avg_logprob": -0.10015950498043322,
+      "compression_ratio": 1.229665071770335,
+      "no_speech_prob": 0.051003988832235336,
+      "words": [
+        {
+          "start": 21.74,
+          "end": 21.9,
+          "word": "秋",
+          "probability": 0.991671085357666
+        },
+        {
+          "start": 21.9,
+          "end": 22.2,
+          "word": "天",
+          "probability": 0.9987046718597412
+        },
+        {
+          "start": 22.2,
+          "end": 22.44,
+          "word": "树",
+          "probability": 0.9653114080429077
+        },
+        {
+          "start": 22.44,
+          "end": 22.64,
+          "word": "上",
+          "probability": 0.9948551654815674
+        },
+        {
+          "start": 22.64,
+          "end": 22.78,
+          "word": "的",
+          "probability": 0.9965221881866455
+        },
+        {
+          "start": 22.78,
+          "end": 23.02,
+          "word": "叶",
+          "probability": 0.9944840371608734
+        },
+        {
+          "start": 23.02,
+          "end": 23.3,
+          "word": "子",
+          "probability": 0.9998886585235596
+        },
+        {
+          "start": 23.3,
+          "end": 23.7,
+          "word": "都",
+          "probability": 0.9437066912651062
+        },
+        {
+          "start": 23.7,
+          "end": 23.88,
+          "word": "变",
+          "probability": 0.9991797804832458
+        },
+        {
+          "start": 23.88,
+          "end": 24.1,
+          "word": "成",
+          "probability": 0.992973804473877
+        },
+        {
+          "start": 24.1,
+          "end": 24.34,
+          "word": "了",
+          "probability": 0.9882225394248962
+        },
+        {
+          "start": 24.34,
+          "end": 24.52,
+          "word": "红",
+          "probability": 0.9937175214290619
+        },
+        {
+          "start": 24.52,
+          "end": 24.9,
+          "word": "色、",
+          "probability": 0.9962382316589355
+        },
+        {
+          "start": 25.18,
+          "end": 25.3,
+          "word": "黄",
+          "probability": 0.9957442879676819
+        },
+        {
+          "start": 25.3,
+          "end": 25.7,
+          "word": "色,",
+          "probability": 0.9995785355567932
+        },
+        {
+          "start": 26.22,
+          "end": 26.56,
+          "word": "非常",
+          "probability": 0.9932438731193542
+        },
+        {
+          "start": 26.56,
+          "end": 27.04,
+          "word": "漂亮。",
+          "probability": 0.9986194372177124
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 2704,
+      "start": 28.46,
+      "end": 31.98,
+      "text": "冬天不但冷,而且風很大。",
+      "tokens": [
+        50364,
+        5676,
+        105,
+        6135,
+        1960,
+        8395,
+        32499,
+        11,
+        22942,
+        22713,
+        4563,
+        3582,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.15474323213100433,
+      "compression_ratio": 1.0756302521008403,
+      "no_speech_prob": 0.5937784910202026,
+      "words": [
+        {
+          "start": 28.46,
+          "end": 29.02,
+          "word": "冬",
+          "probability": 0.8226554095745087
+        },
+        {
+          "start": 29.02,
+          "end": 29.28,
+          "word": "天",
+          "probability": 0.9970009922981262
+        },
+        {
+          "start": 29.28,
+          "end": 29.56,
+          "word": "不",
+          "probability": 0.9913660287857056
+        },
+        {
+          "start": 29.56,
+          "end": 29.74,
+          "word": "但",
+          "probability": 0.9919804334640503
+        },
+        {
+          "start": 29.74,
+          "end": 30.04,
+          "word": "冷,",
+          "probability": 0.9873619079589844
+        },
+        {
+          "start": 30.6,
+          "end": 30.98,
+          "word": "而且",
+          "probability": 0.9888916611671448
+        },
+        {
+          "start": 30.98,
+          "end": 31.4,
+          "word": "風",
+          "probability": 0.9574238657951355
+        },
+        {
+          "start": 31.4,
+          "end": 31.68,
+          "word": "很",
+          "probability": 0.9926861524581909
+        },
+        {
+          "start": 31.68,
+          "end": 31.98,
+          "word": "大。",
+          "probability": 0.9988889098167419
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 2704,
+      "start": 33.06,
+      "end": 34.48,
+      "text": "我最不喜歡冬天。",
+      "tokens": [
+        50614,
+        1654,
+        8661,
+        1960,
+        21385,
+        5676,
+        105,
+        6135,
+        1543,
+        50764
+      ],
+      "avg_logprob": -0.15474323213100433,
+      "compression_ratio": 1.0756302521008403,
+      "no_speech_prob": 0.5937784910202026,
+      "words": [
+        {
+          "start": 33.06,
+          "end": 33.24,
+          "word": "我",
+          "probability": 0.972324013710022
+        },
+        {
+          "start": 33.24,
+          "end": 33.48,
+          "word": "最",
+          "probability": 0.9978052973747253
+        },
+        {
+          "start": 33.48,
+          "end": 33.66,
+          "word": "不",
+          "probability": 0.996759831905365
+        },
+        {
+          "start": 33.66,
+          "end": 33.92,
+          "word": "喜歡",
+          "probability": 0.9971691966056824
+        },
+        {
+          "start": 33.92,
+          "end": 34.2,
+          "word": "冬",
+          "probability": 0.9992793202400208
+        },
+        {
+          "start": 34.2,
+          "end": 34.48,
+          "word": "天。",
+          "probability": 0.9995230436325073
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2704,
+      "start": 36.12,
+      "end": 39.24,
+      "text": "每個人都有自己最喜歡的季節。",
+      "tokens": [
+        50764,
+        23664,
+        40104,
+        48121,
+        17645,
+        8661,
+        21385,
+        1546,
+        8052,
+        96,
+        27694,
+        1543,
+        50964
+      ],
+      "avg_logprob": -0.15474323213100433,
+      "compression_ratio": 1.0756302521008403,
+      "no_speech_prob": 0.5937784910202026,
+      "words": [
+        {
+          "start": 36.12,
+          "end": 36.68,
+          "word": "每",
+          "probability": 0.9357784390449524
+        },
+        {
+          "start": 36.68,
+          "end": 37.04,
+          "word": "個人",
+          "probability": 0.9707886576652527
+        },
+        {
+          "start": 37.04,
+          "end": 37.44,
+          "word": "都有",
+          "probability": 0.9769436717033386
+        },
+        {
+          "start": 37.44,
+          "end": 37.78,
+          "word": "自己",
+          "probability": 0.9988002777099609
+        },
+        {
+          "start": 37.78,
+          "end": 38.14,
+          "word": "最",
+          "probability": 0.9791841506958008
+        },
+        {
+          "start": 38.14,
+          "end": 38.6,
+          "word": "喜歡",
+          "probability": 0.9961607456207275
+        },
+        {
+          "start": 38.6,
+          "end": 38.8,
+          "word": "的",
+          "probability": 0.9986521601676941
+        },
+        {
+          "start": 38.8,
+          "end": 38.98,
+          "word": "季",
+          "probability": 0.9925584495067596
+        },
+        {
+          "start": 38.98,
+          "end": 39.24,
+          "word": "節。",
+          "probability": 0.9978016018867493
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2704,
+      "start": 40.1,
+      "end": 42.02,
+      "text": "你最喜歡哪個季節呢?",
+      "tokens": [
+        50964,
+        2166,
+        8661,
+        21385,
+        17028,
+        3338,
+        8052,
+        96,
+        27694,
+        6240,
+        30,
+        51114
+      ],
+      "avg_logprob": -0.15474323213100433,
+      "compression_ratio": 1.0756302521008403,
+      "no_speech_prob": 0.5937784910202026,
+      "words": [
+        {
+          "start": 40.1,
+          "end": 40.34,
+          "word": "你",
+          "probability": 0.9676976203918457
+        },
+        {
+          "start": 40.34,
+          "end": 40.54,
+          "word": "最",
+          "probability": 0.9975072741508484
+        },
+        {
+          "start": 40.54,
+          "end": 40.98,
+          "word": "喜歡",
+          "probability": 0.9979871511459351
+        },
+        {
+          "start": 40.98,
+          "end": 41.28,
+          "word": "哪",
+          "probability": 0.9919173121452332
+        },
+        {
+          "start": 41.28,
+          "end": 41.44,
+          "word": "個",
+          "probability": 0.989443838596344
+        },
+        {
+          "start": 41.44,
+          "end": 41.64,
+          "word": "季",
+          "probability": 0.9992643892765045
+        },
+        {
+          "start": 41.64,
+          "end": 41.86,
+          "word": "節",
+          "probability": 0.9997598528862
+        },
+        {
+          "start": 41.86,
+          "end": 42.02,
+          "word": "呢?",
+          "probability": 0.9142211675643921
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 7.555265742000017,
+  "realTimeFactor": 0.1729814086899785,
+  "observationChecks": {
+    "rawWordCount": 103,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

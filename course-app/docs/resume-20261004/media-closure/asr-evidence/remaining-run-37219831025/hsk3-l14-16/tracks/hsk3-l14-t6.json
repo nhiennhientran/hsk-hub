@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l14:audio6",
+    "level": 3,
+    "lesson": 14,
+    "track": 6,
+    "kind": "vocab",
+    "text": 3,
+    "file": "course-assets/hsk3/audio/14-6.mp3",
+    "sha256": "293a569eb6de5080a95d32ecff13eb8a83e633e6b39123519379ee53400c23d3",
+    "bytes": 374752,
+    "manifestDurationSeconds": 20.884067,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 334785,
+      "durationSeconds": 20.9240625,
+      "sha256": "8d585c845405165855720ef2061b4b210e614a52069440300a4354615ca454a2"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 20.9240625,
+    "duration_after_vad": 20.9240625,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 9.84,
+      "text": "女生,表演,节目,怎么办?",
+      "tokens": [
+        50364,
+        17015,
+        8244,
+        11,
+        17571,
+        31382,
+        11,
+        45161,
+        11386,
+        11,
+        15282,
+        39453,
+        30,
+        50864
+      ],
+      "avg_logprob": -0.3450864404439926,
+      "compression_ratio": 0.8472222222222222,
+      "no_speech_prob": 0.18784107267856598,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.66,
+          "word": "女",
+          "probability": 0.9828877449035645
+        },
+        {
+          "start": 0.66,
+          "end": 1.36,
+          "word": "生,",
+          "probability": 0.8219531178474426
+        },
+        {
+          "start": 1.4,
+          "end": 3.04,
+          "word": "表",
+          "probability": 0.9825416803359985
+        },
+        {
+          "start": 3.04,
+          "end": 4.92,
+          "word": "演,",
+          "probability": 0.9992875456809998
+        },
+        {
+          "start": 5.5,
+          "end": 5.74,
+          "word": "节",
+          "probability": 0.9683384895324707
+        },
+        {
+          "start": 5.74,
+          "end": 7.6,
+          "word": "目,",
+          "probability": 0.9918168187141418
+        },
+        {
+          "start": 8.26,
+          "end": 8.26,
+          "word": "怎么",
+          "probability": 0.7164376974105835
+        },
+        {
+          "start": 8.26,
+          "end": 9.84,
+          "word": "办?",
+          "probability": 0.9994537234306335
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 10.34,
+      "end": 18.72,
+      "text": "校长,面前,有些,相信。",
+      "tokens": [
+        50864,
+        49684,
+        32271,
+        11,
+        8833,
+        8945,
+        11,
+        2412,
+        13824,
+        11,
+        35428,
+        1543,
+        51414
+      ],
+      "avg_logprob": -0.3450864404439926,
+      "compression_ratio": 0.8472222222222222,
+      "no_speech_prob": 0.18784107267856598,
+      "words": [
+        {
+          "start": 10.34,
+          "end": 10.64,
+          "word": "校",
+          "probability": 0.980711042881012
+        },
+        {
+          "start": 10.64,
+          "end": 12.3,
+          "word": "长,",
+          "probability": 0.998184859752655
+        },
+        {
+          "start": 13.0,
+          "end": 13.2,
+          "word": "面",
+          "probability": 0.9939369559288025
+        },
+        {
+          "start": 13.2,
+          "end": 15.08,
+          "word": "前,",
+          "probability": 0.980223536491394
+        },
+        {
+          "start": 15.86,
+          "end": 15.94,
+          "word": "有",
+          "probability": 0.9822216629981995
+        },
+        {
+          "start": 15.94,
+          "end": 17.68,
+          "word": "些,",
+          "probability": 0.9927070736885071
+        },
+        {
+          "start": 18.22,
+          "end": 18.72,
+          "word": "相信。",
+          "probability": 0.9511107802391052
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.052981932999998,
+  "realTimeFactor": 0.05032397188643448,
+  "observationChecks": {
+    "rawWordCount": 15,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

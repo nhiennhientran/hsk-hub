@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l14:audio6",
+    "level": 2,
+    "lesson": 14,
+    "track": 6,
+    "kind": "vocab",
+    "text": 3,
+    "file": "course-assets/hsk2/audio/14-6.mp3",
+    "sha256": "bd2239e6b679321661110e814b57f3967429164fb467c63db680be0fa3ebec89",
+    "bytes": 258495,
+    "manifestDurationSeconds": 8.933333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 142848,
+      "durationSeconds": 8.928,
+      "sha256": "0e55c8d2faa3ba8684f45ce830595fefae812a6cc1fce295b29e8d3712fefdc2"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 8.928,
+    "duration_after_vad": 8.928,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.58,
+      "text": "房子",
+      "tokens": [
+        50364,
+        38242,
+        7626,
+        50514
+      ],
+      "avg_logprob": -0.3002925285926232,
+      "compression_ratio": 0.6923076923076923,
+      "no_speech_prob": 0.3178834021091461,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.76,
+          "word": "房",
+          "probability": 0.9454259872436523
+        },
+        {
+          "start": 0.76,
+          "end": 2.58,
+          "word": "子",
+          "probability": 0.9936968684196472
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.58,
+      "end": 5.44,
+      "text": "小孩",
+      "tokens": [
+        50514,
+        7322,
+        36269,
+        50664
+      ],
+      "avg_logprob": -0.3002925285926232,
+      "compression_ratio": 0.6923076923076923,
+      "no_speech_prob": 0.3178834021091461,
+      "words": [
+        {
+          "start": 2.58,
+          "end": 3.5,
+          "word": "小",
+          "probability": 0.7478720545768738
+        },
+        {
+          "start": 3.5,
+          "end": 5.44,
+          "word": "孩",
+          "probability": 0.9966703057289124
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 6.0,
+      "end": 7.0,
+      "text": "女孩",
+      "tokens": [
+        50664,
+        17015,
+        36269,
+        50814
+      ],
+      "avg_logprob": -0.3002925285926232,
+      "compression_ratio": 0.6923076923076923,
+      "no_speech_prob": 0.3178834021091461,
+      "words": [
+        {
+          "start": 5.64,
+          "end": 6.34,
+          "word": "女",
+          "probability": 0.9907095432281494
+        },
+        {
+          "start": 6.34,
+          "end": 7.0,
+          "word": "孩",
+          "probability": 0.9995623230934143
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.4091583390000153,
+  "realTimeFactor": 0.15783583546147123,
+  "observationChecks": {
+    "rawWordCount": 6,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

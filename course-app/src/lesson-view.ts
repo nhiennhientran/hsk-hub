@@ -632,7 +632,7 @@ export function mountLesson(
         el("p", line.vi, "vietnamese-line"),
       );
       const chunks=sentenceSegments(line.id,c.assetBase),original=originalSegment('lines',line.id,c.assetBase);
-      if(chunks.length){const actions=el('div',undefined,'sentence-audio');for(const [i,chunk]of chunks.entries()){const play=button(copy(`第${i+1}句原音`,`Âm thanh câu ${i+1}`),async()=>{await c.audio.play(chunk.request,{signal:events.signal})});play.dataset.audioSegment=chunk.id;actions.append(play)}row.append(actions)}else if(original){const play=button(isSingleSentence(line.id)?copy('本句原音','Nghe câu gốc'):copy('本段原音','Nghe đoạn gốc'),async()=>{await c.audio.play(original,{signal:events.signal})});play.dataset.audioSegment=line.id;row.append(play)}
+      if(chunks.length){const actions=el('div',undefined,'sentence-audio');for(const chunk of chunks){const play=button(copy(`第${chunk.sentenceNumber}句原音`,`Âm thanh câu ${chunk.sentenceNumber}`),async()=>{await c.audio.play(chunk.request,{signal:events.signal})});play.dataset.audioSegment=chunk.id;actions.append(play)}row.append(actions)}else if(original){const play=button(isSingleSentence(line.id)?copy('本句原音','Nghe câu gốc'):copy('本段原音','Nghe đoạn gốc'),async()=>{await c.audio.play(original,{signal:events.signal})});play.dataset.audioSegment=line.id;row.append(play)}
       textBody.append(row);
     }
     body.append(

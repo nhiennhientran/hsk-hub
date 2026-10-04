@@ -1,0 +1,891 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l15:audio5",
+    "level": 2,
+    "lesson": 15,
+    "track": 5,
+    "kind": "text",
+    "text": 3,
+    "file": "course-assets/hsk2/audio/15-5.mp3",
+    "sha256": "2ae631c6e6d3bdda8bebe3c3d94a6feac76d68e1af213a53dbb60e51f0b0a142",
+    "bytes": 877135,
+    "manifestDurationSeconds": 34.589333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 553344,
+      "durationSeconds": 34.584,
+      "sha256": "b025bb6fa356d3d86da4adcb5f5d64a38961dab8f5ca5863362b2b3957c4aa70"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 34.584,
+    "duration_after_vad": 34.584,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 3.54,
+      "text": "李文,你有一年沒回國了吧?",
+      "tokens": [
+        50364,
+        31206,
+        17174,
+        11,
+        2166,
+        32241,
+        5157,
+        4913,
+        8350,
+        8053,
+        37091,
+        30,
+        50564
+      ],
+      "avg_logprob": -0.16204338346390015,
+      "compression_ratio": 1.2606635071090047,
+      "no_speech_prob": 0.03202436491847038,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.88,
+          "word": "李",
+          "probability": 0.5189548134803772
+        },
+        {
+          "start": 0.88,
+          "end": 1.18,
+          "word": "文,",
+          "probability": 0.8460688591003418
+        },
+        {
+          "start": 1.62,
+          "end": 1.8,
+          "word": "你",
+          "probability": 0.2930769622325897
+        },
+        {
+          "start": 1.8,
+          "end": 2.0,
+          "word": "有一",
+          "probability": 0.9522141814231873
+        },
+        {
+          "start": 2.0,
+          "end": 2.44,
+          "word": "年",
+          "probability": 0.9970101118087769
+        },
+        {
+          "start": 2.44,
+          "end": 2.72,
+          "word": "沒",
+          "probability": 0.43804052472114563
+        },
+        {
+          "start": 2.72,
+          "end": 2.98,
+          "word": "回",
+          "probability": 0.9975799322128296
+        },
+        {
+          "start": 2.98,
+          "end": 3.24,
+          "word": "國",
+          "probability": 0.9905775785446167
+        },
+        {
+          "start": 3.24,
+          "end": 3.54,
+          "word": "了吧?",
+          "probability": 0.9192620515823364
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.92,
+      "end": 8.42,
+      "text": "不到一年,我六月的時候回去了一次。",
+      "tokens": [
+        50564,
+        35728,
+        2257,
+        5157,
+        11,
+        1654,
+        30566,
+        6939,
+        20643,
+        8350,
+        45190,
+        27505,
+        1543,
+        50814
+      ],
+      "avg_logprob": -0.16204338346390015,
+      "compression_ratio": 1.2606635071090047,
+      "no_speech_prob": 0.03202436491847038,
+      "words": [
+        {
+          "start": 4.92,
+          "end": 5.3,
+          "word": "不到",
+          "probability": 0.9401295781135559
+        },
+        {
+          "start": 5.3,
+          "end": 5.6,
+          "word": "一",
+          "probability": 0.9929038882255554
+        },
+        {
+          "start": 5.6,
+          "end": 5.88,
+          "word": "年,",
+          "probability": 0.9987815022468567
+        },
+        {
+          "start": 6.56,
+          "end": 6.74,
+          "word": "我",
+          "probability": 0.9295836091041565
+        },
+        {
+          "start": 6.74,
+          "end": 6.9,
+          "word": "六",
+          "probability": 0.862382709980011
+        },
+        {
+          "start": 6.9,
+          "end": 7.06,
+          "word": "月",
+          "probability": 0.9943086504936218
+        },
+        {
+          "start": 7.06,
+          "end": 7.4,
+          "word": "的時候",
+          "probability": 0.9641119837760925
+        },
+        {
+          "start": 7.4,
+          "end": 7.8,
+          "word": "回",
+          "probability": 0.8825865983963013
+        },
+        {
+          "start": 7.8,
+          "end": 8.14,
+          "word": "去了",
+          "probability": 0.9992281198501587
+        },
+        {
+          "start": 8.14,
+          "end": 8.42,
+          "word": "一次。",
+          "probability": 0.9757172465324402
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 9.52,
+      "end": 13.48,
+      "text": "我怎麼忘了?還是我送你去的機場呢?",
+      "tokens": [
+        50814,
+        1654,
+        11614,
+        26677,
+        2289,
+        30,
+        25583,
+        1654,
+        29309,
+        2166,
+        6734,
+        1546,
+        17543,
+        21446,
+        6240,
+        30,
+        51064
+      ],
+      "avg_logprob": -0.16204338346390015,
+      "compression_ratio": 1.2606635071090047,
+      "no_speech_prob": 0.03202436491847038,
+      "words": [
+        {
+          "start": 9.52,
+          "end": 10.08,
+          "word": "我",
+          "probability": 0.9864468574523926
+        },
+        {
+          "start": 10.08,
+          "end": 10.3,
+          "word": "怎麼",
+          "probability": 0.9756150841712952
+        },
+        {
+          "start": 10.3,
+          "end": 10.62,
+          "word": "忘",
+          "probability": 0.9926232099533081
+        },
+        {
+          "start": 10.62,
+          "end": 10.92,
+          "word": "了?",
+          "probability": 0.9928556680679321
+        },
+        {
+          "start": 11.48,
+          "end": 11.66,
+          "word": "還是",
+          "probability": 0.8677282333374023
+        },
+        {
+          "start": 11.66,
+          "end": 12.02,
+          "word": "我",
+          "probability": 0.9908319115638733
+        },
+        {
+          "start": 12.02,
+          "end": 12.26,
+          "word": "送",
+          "probability": 0.998410701751709
+        },
+        {
+          "start": 12.26,
+          "end": 12.44,
+          "word": "你",
+          "probability": 0.9962848424911499
+        },
+        {
+          "start": 12.44,
+          "end": 12.68,
+          "word": "去",
+          "probability": 0.9926937818527222
+        },
+        {
+          "start": 12.68,
+          "end": 12.82,
+          "word": "的",
+          "probability": 0.988727331161499
+        },
+        {
+          "start": 12.82,
+          "end": 12.98,
+          "word": "機",
+          "probability": 0.997409999370575
+        },
+        {
+          "start": 12.98,
+          "end": 13.26,
+          "word": "場",
+          "probability": 0.9966986775398254
+        },
+        {
+          "start": 13.26,
+          "end": 13.48,
+          "word": "呢?",
+          "probability": 0.9509527087211609
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 15.06,
+      "end": 15.38,
+      "text": "是啊。",
+      "tokens": [
+        51064,
+        39282,
+        1543,
+        51164
+      ],
+      "avg_logprob": -0.16204338346390015,
+      "compression_ratio": 1.2606635071090047,
+      "no_speech_prob": 0.03202436491847038,
+      "words": [
+        {
+          "start": 15.06,
+          "end": 15.38,
+          "word": "是啊。",
+          "probability": 0.8909880518913269
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 16.7,
+      "end": 19.72,
+      "text": "我記得你那次的機票很便宜。",
+      "tokens": [
+        51164,
+        1654,
+        30872,
+        2166,
+        4184,
+        9487,
+        1546,
+        17543,
+        41925,
+        4563,
+        27364,
+        2415,
+        250,
+        1543,
+        51364
+      ],
+      "avg_logprob": -0.16204338346390015,
+      "compression_ratio": 1.2606635071090047,
+      "no_speech_prob": 0.03202436491847038,
+      "words": [
+        {
+          "start": 16.7,
+          "end": 17.26,
+          "word": "我",
+          "probability": 0.991439938545227
+        },
+        {
+          "start": 17.26,
+          "end": 17.52,
+          "word": "記得",
+          "probability": 0.9933266639709473
+        },
+        {
+          "start": 17.52,
+          "end": 17.76,
+          "word": "你",
+          "probability": 0.9887325763702393
+        },
+        {
+          "start": 17.76,
+          "end": 17.96,
+          "word": "那",
+          "probability": 0.9937869310379028
+        },
+        {
+          "start": 17.96,
+          "end": 18.2,
+          "word": "次",
+          "probability": 0.9981052875518799
+        },
+        {
+          "start": 18.2,
+          "end": 18.34,
+          "word": "的",
+          "probability": 0.9929304122924805
+        },
+        {
+          "start": 18.34,
+          "end": 18.52,
+          "word": "機",
+          "probability": 0.9977377653121948
+        },
+        {
+          "start": 18.52,
+          "end": 18.78,
+          "word": "票",
+          "probability": 0.9998729228973389
+        },
+        {
+          "start": 18.78,
+          "end": 19.1,
+          "word": "很",
+          "probability": 0.9874240756034851
+        },
+        {
+          "start": 19.1,
+          "end": 19.4,
+          "word": "便",
+          "probability": 0.9997038245201111
+        },
+        {
+          "start": 19.4,
+          "end": 19.72,
+          "word": "宜。",
+          "probability": 0.9992154538631439
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 21.119999999999997,
+      "end": 25.32,
+      "text": "沒錯,可能因為那個時候去北京的人不多吧?",
+      "tokens": [
+        51364,
+        23800,
+        11,
+        16657,
+        11471,
+        20754,
+        14010,
+        6734,
+        26668,
+        31375,
+        29979,
+        33364,
+        6062,
+        30,
+        51664
+      ],
+      "avg_logprob": -0.16204338346390015,
+      "compression_ratio": 1.2606635071090047,
+      "no_speech_prob": 0.03202436491847038,
+      "words": [
+        {
+          "start": 21.119999999999997,
+          "end": 21.68,
+          "word": "沒錯,",
+          "probability": 0.9817081689834595
+        },
+        {
+          "start": 22.4,
+          "end": 22.64,
+          "word": "可能",
+          "probability": 0.9705673456192017
+        },
+        {
+          "start": 22.64,
+          "end": 22.96,
+          "word": "因為",
+          "probability": 0.9461104869842529
+        },
+        {
+          "start": 22.96,
+          "end": 23.32,
+          "word": "那個",
+          "probability": 0.8770248889923096
+        },
+        {
+          "start": 23.32,
+          "end": 23.7,
+          "word": "時候",
+          "probability": 0.9956183433532715
+        },
+        {
+          "start": 23.7,
+          "end": 24.08,
+          "word": "去",
+          "probability": 0.876289427280426
+        },
+        {
+          "start": 24.08,
+          "end": 24.26,
+          "word": "北",
+          "probability": 0.9972925782203674
+        },
+        {
+          "start": 24.26,
+          "end": 24.44,
+          "word": "京",
+          "probability": 0.9998425245285034
+        },
+        {
+          "start": 24.44,
+          "end": 24.66,
+          "word": "的人",
+          "probability": 0.9959650039672852
+        },
+        {
+          "start": 24.66,
+          "end": 25.04,
+          "word": "不多",
+          "probability": 0.9962739944458008
+        },
+        {
+          "start": 25.04,
+          "end": 25.32,
+          "word": "吧?",
+          "probability": 0.9896111488342285
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 26.5,
+      "end": 28.56,
+      "text": "這次的機票雖然有點貴,",
+      "tokens": [
+        51664,
+        2664,
+        9487,
+        1546,
+        17543,
+        41925,
+        6306,
+        244,
+        5823,
+        42440,
+        11561,
+        112,
+        11,
+        51814
+      ],
+      "avg_logprob": -0.16204338346390015,
+      "compression_ratio": 1.2606635071090047,
+      "no_speech_prob": 0.03202436491847038,
+      "words": [
+        {
+          "start": 26.5,
+          "end": 26.72,
+          "word": "這",
+          "probability": 0.9926356673240662
+        },
+        {
+          "start": 26.72,
+          "end": 26.92,
+          "word": "次",
+          "probability": 0.9971945285797119
+        },
+        {
+          "start": 26.92,
+          "end": 27.04,
+          "word": "的",
+          "probability": 0.9874364137649536
+        },
+        {
+          "start": 27.04,
+          "end": 27.22,
+          "word": "機",
+          "probability": 0.9988732933998108
+        },
+        {
+          "start": 27.22,
+          "end": 27.52,
+          "word": "票",
+          "probability": 0.9999370574951172
+        },
+        {
+          "start": 27.52,
+          "end": 27.78,
+          "word": "雖",
+          "probability": 0.9928843080997467
+        },
+        {
+          "start": 27.78,
+          "end": 27.92,
+          "word": "然",
+          "probability": 0.9948425889015198
+        },
+        {
+          "start": 27.92,
+          "end": 28.12,
+          "word": "有點",
+          "probability": 0.871274471282959
+        },
+        {
+          "start": 28.12,
+          "end": 28.56,
+          "word": "貴,",
+          "probability": 0.9932532906532288
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2856,
+      "start": 28.56,
+      "end": 33.18,
+      "text": "但想到就要飛北京了,我還是很高興的。",
+      "tokens": [
+        50364,
+        8395,
+        7093,
+        4511,
+        3111,
+        4275,
+        34629,
+        26668,
+        31375,
+        2289,
+        11,
+        1654,
+        25583,
+        4563,
+        12979,
+        44089,
+        1546,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.20218822360038757,
+      "compression_ratio": 0.8253968253968254,
+      "no_speech_prob": 0.1767488569021225,
+      "words": [
+        {
+          "start": 28.56,
+          "end": 29.46,
+          "word": "但",
+          "probability": 0.9060085415840149
+        },
+        {
+          "start": 29.46,
+          "end": 29.7,
+          "word": "想",
+          "probability": 0.9946572184562683
+        },
+        {
+          "start": 29.7,
+          "end": 29.94,
+          "word": "到",
+          "probability": 0.9753064513206482
+        },
+        {
+          "start": 29.94,
+          "end": 30.18,
+          "word": "就",
+          "probability": 0.9345813989639282
+        },
+        {
+          "start": 30.18,
+          "end": 30.36,
+          "word": "要",
+          "probability": 0.9905986189842224
+        },
+        {
+          "start": 30.36,
+          "end": 30.56,
+          "word": "飛",
+          "probability": 0.5758935809135437
+        },
+        {
+          "start": 30.56,
+          "end": 30.8,
+          "word": "北",
+          "probability": 0.982124924659729
+        },
+        {
+          "start": 30.8,
+          "end": 31.06,
+          "word": "京",
+          "probability": 0.9997335076332092
+        },
+        {
+          "start": 31.06,
+          "end": 31.32,
+          "word": "了,",
+          "probability": 0.9638643860816956
+        },
+        {
+          "start": 31.8,
+          "end": 31.94,
+          "word": "我",
+          "probability": 0.8967358469963074
+        },
+        {
+          "start": 31.94,
+          "end": 32.22,
+          "word": "還是",
+          "probability": 0.9943971633911133
+        },
+        {
+          "start": 32.22,
+          "end": 32.44,
+          "word": "很",
+          "probability": 0.9928050637245178
+        },
+        {
+          "start": 32.44,
+          "end": 32.68,
+          "word": "高",
+          "probability": 0.997637152671814
+        },
+        {
+          "start": 32.68,
+          "end": 32.96,
+          "word": "興",
+          "probability": 0.9991437196731567
+        },
+        {
+          "start": 32.96,
+          "end": 33.18,
+          "word": "的。",
+          "probability": 0.9500182271003723
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 4.482753993999978,
+  "realTimeFactor": 0.12961930355077428,
+  "observationChecks": {
+    "rawWordCount": 79,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

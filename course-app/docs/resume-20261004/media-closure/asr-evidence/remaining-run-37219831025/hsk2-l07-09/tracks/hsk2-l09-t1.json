@@ -1,0 +1,869 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l09:audio1",
+    "level": 2,
+    "lesson": 9,
+    "track": 1,
+    "kind": "text",
+    "text": 1,
+    "file": "course-assets/hsk2/audio/9-1.mp3",
+    "sha256": "5b5c45652c047ebb32053ca76ed82c224f7880d3c273590d2b6c48228d0f2653",
+    "bytes": 858697,
+    "manifestDurationSeconds": 33.821333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 541056,
+      "durationSeconds": 33.816,
+      "sha256": "db0a499ee07d99e9a59d6c2ccc51bd0787e5351197de9e057fdb55772914a19c"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 33.816,
+    "duration_after_vad": 33.816,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.6799999999999959,
+      "end": 4.76,
+      "text": "儿子的裤子坏了,我们给他买条新的吧。",
+      "tokens": [
+        50364,
+        22933,
+        7626,
+        1546,
+        8083,
+        97,
+        7626,
+        14872,
+        237,
+        2289,
+        11,
+        15003,
+        23197,
+        5000,
+        2930,
+        108,
+        48837,
+        12560,
+        1546,
+        6062,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.1389850631798848,
+      "compression_ratio": 1.3471502590673574,
+      "no_speech_prob": 0.26338133215904236,
+      "words": [
+        {
+          "start": 0.6799999999999959,
+          "end": 1.16,
+          "word": "儿",
+          "probability": 0.1907668262720108
+        },
+        {
+          "start": 1.16,
+          "end": 1.36,
+          "word": "子",
+          "probability": 0.9981786012649536
+        },
+        {
+          "start": 1.36,
+          "end": 1.48,
+          "word": "的",
+          "probability": 0.9595777988433838
+        },
+        {
+          "start": 1.48,
+          "end": 1.7,
+          "word": "裤",
+          "probability": 0.9843796491622925
+        },
+        {
+          "start": 1.7,
+          "end": 1.92,
+          "word": "子",
+          "probability": 0.9957728981971741
+        },
+        {
+          "start": 1.92,
+          "end": 2.16,
+          "word": "坏",
+          "probability": 0.9927076399326324
+        },
+        {
+          "start": 2.16,
+          "end": 2.4,
+          "word": "了,",
+          "probability": 0.970467209815979
+        },
+        {
+          "start": 2.86,
+          "end": 3.04,
+          "word": "我们",
+          "probability": 0.8271556496620178
+        },
+        {
+          "start": 3.04,
+          "end": 3.26,
+          "word": "给",
+          "probability": 0.9825531244277954
+        },
+        {
+          "start": 3.26,
+          "end": 3.44,
+          "word": "他",
+          "probability": 0.8266644477844238
+        },
+        {
+          "start": 3.44,
+          "end": 3.62,
+          "word": "买",
+          "probability": 0.9933250844478607
+        },
+        {
+          "start": 3.62,
+          "end": 3.86,
+          "word": "条",
+          "probability": 0.6821799278259277
+        },
+        {
+          "start": 3.86,
+          "end": 4.14,
+          "word": "新",
+          "probability": 0.9592277407646179
+        },
+        {
+          "start": 4.14,
+          "end": 4.3,
+          "word": "的",
+          "probability": 0.9905397891998291
+        },
+        {
+          "start": 4.3,
+          "end": 4.76,
+          "word": "吧。",
+          "probability": 0.9616824388504028
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 6.0,
+      "end": 6.74,
+      "text": "好啊。",
+      "tokens": [
+        50614,
+        2131,
+        4905,
+        1543,
+        50714
+      ],
+      "avg_logprob": -0.1389850631798848,
+      "compression_ratio": 1.3471502590673574,
+      "no_speech_prob": 0.26338133215904236,
+      "words": [
+        {
+          "start": 6.0,
+          "end": 6.48,
+          "word": "好",
+          "probability": 0.8864508867263794
+        },
+        {
+          "start": 6.48,
+          "end": 6.74,
+          "word": "啊。",
+          "probability": 0.8654515147209167
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 8.04,
+      "end": 9.98,
+      "text": "你看这条黑色的怎么样。",
+      "tokens": [
+        50714,
+        16529,
+        5562,
+        48837,
+        32141,
+        17673,
+        1546,
+        48200,
+        1543,
+        50914
+      ],
+      "avg_logprob": -0.1389850631798848,
+      "compression_ratio": 1.3471502590673574,
+      "no_speech_prob": 0.26338133215904236,
+      "words": [
+        {
+          "start": 8.04,
+          "end": 8.52,
+          "word": "你看",
+          "probability": 0.9412685632705688
+        },
+        {
+          "start": 8.52,
+          "end": 8.78,
+          "word": "这",
+          "probability": 0.9525981545448303
+        },
+        {
+          "start": 8.78,
+          "end": 9.02,
+          "word": "条",
+          "probability": 0.9862959980964661
+        },
+        {
+          "start": 9.02,
+          "end": 9.24,
+          "word": "黑",
+          "probability": 0.9619922637939453
+        },
+        {
+          "start": 9.24,
+          "end": 9.46,
+          "word": "色",
+          "probability": 0.9992706179618835
+        },
+        {
+          "start": 9.46,
+          "end": 9.6,
+          "word": "的",
+          "probability": 0.9852632284164429
+        },
+        {
+          "start": 9.6,
+          "end": 9.98,
+          "word": "怎么样。",
+          "probability": 0.8382188081741333
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 11.72,
+      "end": 14.1,
+      "text": "没有你上次买的那条好看。",
+      "tokens": [
+        50914,
+        17944,
+        2166,
+        5708,
+        9487,
+        2930,
+        108,
+        1546,
+        4184,
+        48837,
+        2131,
+        4200,
+        1543,
+        51114
+      ],
+      "avg_logprob": -0.1389850631798848,
+      "compression_ratio": 1.3471502590673574,
+      "no_speech_prob": 0.26338133215904236,
+      "words": [
+        {
+          "start": 11.72,
+          "end": 12.04,
+          "word": "没有",
+          "probability": 0.9770993590354919
+        },
+        {
+          "start": 12.04,
+          "end": 12.3,
+          "word": "你",
+          "probability": 0.9935637712478638
+        },
+        {
+          "start": 12.3,
+          "end": 12.56,
+          "word": "上",
+          "probability": 0.9946744441986084
+        },
+        {
+          "start": 12.56,
+          "end": 12.8,
+          "word": "次",
+          "probability": 0.9789634943008423
+        },
+        {
+          "start": 12.8,
+          "end": 13.06,
+          "word": "买",
+          "probability": 0.9978832900524139
+        },
+        {
+          "start": 13.06,
+          "end": 13.26,
+          "word": "的",
+          "probability": 0.9903516173362732
+        },
+        {
+          "start": 13.26,
+          "end": 13.44,
+          "word": "那",
+          "probability": 0.9799278974533081
+        },
+        {
+          "start": 13.44,
+          "end": 13.64,
+          "word": "条",
+          "probability": 0.98195481300354
+        },
+        {
+          "start": 13.64,
+          "end": 13.92,
+          "word": "好",
+          "probability": 0.9617342948913574
+        },
+        {
+          "start": 13.92,
+          "end": 14.1,
+          "word": "看。",
+          "probability": 0.9985741376876831
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 15.56,
+      "end": 18.42,
+      "text": "旁边那个男孩就穿了这样的裤子。",
+      "tokens": [
+        51114,
+        4479,
+        223,
+        40503,
+        43083,
+        25243,
+        36269,
+        3111,
+        13740,
+        123,
+        2289,
+        21209,
+        1546,
+        8083,
+        97,
+        7626,
+        1543,
+        51314
+      ],
+      "avg_logprob": -0.1389850631798848,
+      "compression_ratio": 1.3471502590673574,
+      "no_speech_prob": 0.26338133215904236,
+      "words": [
+        {
+          "start": 15.56,
+          "end": 15.9,
+          "word": "旁",
+          "probability": 0.9902511537075043
+        },
+        {
+          "start": 15.9,
+          "end": 16.1,
+          "word": "边",
+          "probability": 0.9746167063713074
+        },
+        {
+          "start": 16.1,
+          "end": 16.4,
+          "word": "那个",
+          "probability": 0.9101952314376831
+        },
+        {
+          "start": 16.4,
+          "end": 16.6,
+          "word": "男",
+          "probability": 0.9965914487838745
+        },
+        {
+          "start": 16.6,
+          "end": 16.86,
+          "word": "孩",
+          "probability": 0.9957044720649719
+        },
+        {
+          "start": 16.86,
+          "end": 17.08,
+          "word": "就",
+          "probability": 0.6310069561004639
+        },
+        {
+          "start": 17.08,
+          "end": 17.3,
+          "word": "穿",
+          "probability": 0.9983308017253876
+        },
+        {
+          "start": 17.3,
+          "end": 17.48,
+          "word": "了",
+          "probability": 0.9667699933052063
+        },
+        {
+          "start": 17.48,
+          "end": 17.76,
+          "word": "这样",
+          "probability": 0.9786444902420044
+        },
+        {
+          "start": 17.76,
+          "end": 17.98,
+          "word": "的",
+          "probability": 0.9901490211486816
+        },
+        {
+          "start": 17.98,
+          "end": 18.18,
+          "word": "裤",
+          "probability": 0.9989954233169556
+        },
+        {
+          "start": 18.18,
+          "end": 18.42,
+          "word": "子。",
+          "probability": 0.9994533658027649
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 19.24,
+      "end": 20.66,
+      "text": "我觉得很好看啊。",
+      "tokens": [
+        51314,
+        45681,
+        23801,
+        4200,
+        4905,
+        1543,
+        51464
+      ],
+      "avg_logprob": -0.1389850631798848,
+      "compression_ratio": 1.3471502590673574,
+      "no_speech_prob": 0.26338133215904236,
+      "words": [
+        {
+          "start": 19.24,
+          "end": 19.64,
+          "word": "我觉得",
+          "probability": 0.9321094751358032
+        },
+        {
+          "start": 19.64,
+          "end": 20.12,
+          "word": "很好",
+          "probability": 0.9565454721450806
+        },
+        {
+          "start": 20.12,
+          "end": 20.46,
+          "word": "看",
+          "probability": 0.9996088147163391
+        },
+        {
+          "start": 20.46,
+          "end": 20.66,
+          "word": "啊。",
+          "probability": 0.9625320434570312
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 22.44,
+      "end": 24.84,
+      "text": "儿子的个子没有他那么高,",
+      "tokens": [
+        51464,
+        22933,
+        7626,
+        1546,
+        7549,
+        7626,
+        17944,
+        5000,
+        35693,
+        12979,
+        11,
+        51614
+      ],
+      "avg_logprob": -0.1389850631798848,
+      "compression_ratio": 1.3471502590673574,
+      "no_speech_prob": 0.26338133215904236,
+      "words": [
+        {
+          "start": 22.44,
+          "end": 22.76,
+          "word": "儿",
+          "probability": 0.9887190461158752
+        },
+        {
+          "start": 22.76,
+          "end": 22.94,
+          "word": "子",
+          "probability": 0.9998884201049805
+        },
+        {
+          "start": 22.94,
+          "end": 23.06,
+          "word": "的",
+          "probability": 0.9905833005905151
+        },
+        {
+          "start": 23.06,
+          "end": 23.24,
+          "word": "个",
+          "probability": 0.9362435936927795
+        },
+        {
+          "start": 23.24,
+          "end": 23.48,
+          "word": "子",
+          "probability": 0.9994816184043884
+        },
+        {
+          "start": 23.48,
+          "end": 24.0,
+          "word": "没有",
+          "probability": 0.9483798742294312
+        },
+        {
+          "start": 24.0,
+          "end": 24.34,
+          "word": "他",
+          "probability": 0.7770398259162903
+        },
+        {
+          "start": 24.34,
+          "end": 24.56,
+          "word": "那么",
+          "probability": 0.9796780347824097
+        },
+        {
+          "start": 24.56,
+          "end": 24.84,
+          "word": "高,",
+          "probability": 0.9990776777267456
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 25.52,
+      "end": 27.5,
+      "text": "穿上就不会太好看。",
+      "tokens": [
+        51614,
+        13740,
+        123,
+        5708,
+        3111,
+        47928,
+        9455,
+        2131,
+        4200,
+        1543,
+        51814
+      ],
+      "avg_logprob": -0.1389850631798848,
+      "compression_ratio": 1.3471502590673574,
+      "no_speech_prob": 0.26338133215904236,
+      "words": [
+        {
+          "start": 25.52,
+          "end": 25.72,
+          "word": "穿",
+          "probability": 0.9730187654495239
+        },
+        {
+          "start": 25.72,
+          "end": 26.0,
+          "word": "上",
+          "probability": 0.9961308240890503
+        },
+        {
+          "start": 26.0,
+          "end": 26.44,
+          "word": "就",
+          "probability": 0.9823516011238098
+        },
+        {
+          "start": 26.44,
+          "end": 26.8,
+          "word": "不会",
+          "probability": 0.9913582801818848
+        },
+        {
+          "start": 26.8,
+          "end": 27.04,
+          "word": "太",
+          "probability": 0.9980500936508179
+        },
+        {
+          "start": 27.04,
+          "end": 27.28,
+          "word": "好",
+          "probability": 0.9961101412773132
+        },
+        {
+          "start": 27.28,
+          "end": 27.5,
+          "word": "看。",
+          "probability": 0.999388575553894
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 2750,
+      "start": 29.740000000000002,
+      "end": 32.12,
+      "text": "好吧,我们再去那边看看。",
+      "tokens": [
+        50364,
+        40221,
+        11,
+        15003,
+        8623,
+        6734,
+        4184,
+        40503,
+        22884,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.3355285997192065,
+      "compression_ratio": 0.7906976744186046,
+      "no_speech_prob": 0.15957984328269958,
+      "words": [
+        {
+          "start": 29.740000000000002,
+          "end": 30.18,
+          "word": "好吧,",
+          "probability": 0.9383265972137451
+        },
+        {
+          "start": 30.92,
+          "end": 31.12,
+          "word": "我们",
+          "probability": 0.339589387178421
+        },
+        {
+          "start": 31.12,
+          "end": 31.34,
+          "word": "再",
+          "probability": 0.9628279805183411
+        },
+        {
+          "start": 31.34,
+          "end": 31.52,
+          "word": "去",
+          "probability": 0.9918890595436096
+        },
+        {
+          "start": 31.52,
+          "end": 31.68,
+          "word": "那",
+          "probability": 0.994966447353363
+        },
+        {
+          "start": 31.68,
+          "end": 31.9,
+          "word": "边",
+          "probability": 0.9821282625198364
+        },
+        {
+          "start": 31.9,
+          "end": 32.12,
+          "word": "看看。",
+          "probability": 0.9456413984298706
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 6.651915510999999,
+  "realTimeFactor": 0.19670911731133187,
+  "observationChecks": {
+    "rawWordCount": 73,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "status": "actual post-final-loader Chromium evidence independently accepted within the stated scope",
+  "rawReportSHA256": "440920105bce54d604e0fad0f8f3445b886e5d1733eb789879f186d5ca0cc7bd",
+  "actualNativeCases": 4,
+  "sourceLoaderSHA256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00",
+  "fixtureSHA256": "09c03fd071b8d416723f2bf52205d475ac43ad768cc115a4489ad41a1fe9e867",
+  "configSHA256": "fe7ac3c287bb1135b819979cab0845d4ba0d25f62f8a38c2ed5c1ef707a672cd",
+  "testedBuildEntry": ".repro-output/media-reviewed-subset/dist/assets/index-DHIMbq_c.js",
+  "testedBuildEntrySHA256": "6c6bfc467b0b7de00490c4f8e96072cf4e022ea184c400f3bbd158a382c4692d",
+  "startTime": "2026-10-04T18:10:46.618Z",
+  "durationMs": 9810.812,
+  "tests": [
+    {
+      "title": "guarded source-frame hsk2-fltrp-2026:l04:text2:line3 plays its exact original range and retains fallback",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 4100
+    },
+    {
+      "title": "guarded source-frame hsk2-fltrp-2026:l05:text2:line8:sentence2 plays its exact original range and retains fallback",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 3355
+    },
+    {
+      "title": "whole-track color retains its honest pending independent-word label",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 181
+    },
+    {
+      "title": "failed new checksum leaves legacy accepted clips and new whole-track fallback available",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 244
+    }
+  ],
+  "observations": [
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line3",
+      "track": "course-assets/hsk2/audio/4-3.mp3",
+      "eventCount": 23,
+      "firstUnmutedPlayingTime": 9.981061,
+      "endedPauseTime": 12.37009,
+      "requestedStart": 9.98,
+      "requestedEnd": 12.3700625,
+      "sourceFrames16k": [
+        159680,
+        197921
+      ],
+      "maximumUnmutedObservedTime": 12.37009,
+      "errors": 0,
+      "status": "native events consistent with fixed requests"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "track": "course-assets/hsk2/audio/5-3.mp3",
+      "eventCount": 23,
+      "firstUnmutedPlayingTime": 35.780907,
+      "endedPauseTime": 38.390348,
+      "requestedStart": 35.78,
+      "requestedEnd": 38.39,
+      "sourceFrames16k": [
+        572480,
+        614240
+      ],
+      "maximumUnmutedObservedTime": 38.390348,
+      "errors": 0,
+      "status": "native events consistent with fixed requests"
+    }
+  ],
+  "scope": [
+    "two original MP3 source ranges: native seek/play/stop",
+    "replay, seek to end, explicit stop, lesson navigation and back assertions in passed fixture",
+    "source ordinal2, no sibling/parent precision and complete-text fallback button availability",
+    "color has whole-vocabulary-track button and pending independent-word label",
+    "bad new checksum hides both new clips and preserves old accepted-word button"
+  ],
+  "limitations": [
+    "Chromium desktop only; local WebKit not run",
+    "headless browser events do not certify physical devices or audible pronunciation",
+    "fallback availability assertions do not claim a new full-track listening test",
+    "no human/native-speaker/tone listening certification",
+    "browser clock sampling is not a proof of sample-perfect hardware playback"
+  ]
+}

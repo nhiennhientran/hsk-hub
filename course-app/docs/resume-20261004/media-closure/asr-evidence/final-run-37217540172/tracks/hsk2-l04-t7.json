@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l04:audio7",
+    "level": 2,
+    "lesson": 4,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk2/audio/4-7.mp3",
+    "sha256": "c1ed7157c1e66262624aa3f69b43cd62997b993902af74b2c8fd41c07bc7211d",
+    "bytes": 512262,
+    "manifestDurationSeconds": 19.541333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 312576,
+      "durationSeconds": 19.536,
+      "sha256": "eb0f2b517e9942bfdd72f92df5258cf61fe633de0d3700cbc3e07c552b5ec2ef"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 19.536,
+    "duration_after_vad": 19.536,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.76,
+      "text": "我和媽媽去了一家商場",
+      "tokens": [
+        50364,
+        1654,
+        12565,
+        24812,
+        24812,
+        45190,
+        2257,
+        5155,
+        45581,
+        21446,
+        50514
+      ],
+      "avg_logprob": -0.1101052973132867,
+      "compression_ratio": 1.1851851851851851,
+      "no_speech_prob": 0.021469322964549065,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.86,
+          "word": "我",
+          "probability": 0.9337090253829956
+        },
+        {
+          "start": 0.86,
+          "end": 1.02,
+          "word": "和",
+          "probability": 0.9655661582946777
+        },
+        {
+          "start": 1.02,
+          "end": 1.26,
+          "word": "媽",
+          "probability": 0.9172017574310303
+        },
+        {
+          "start": 1.26,
+          "end": 1.48,
+          "word": "媽",
+          "probability": 0.9719945192337036
+        },
+        {
+          "start": 1.48,
+          "end": 1.78,
+          "word": "去了",
+          "probability": 0.9577820897102356
+        },
+        {
+          "start": 1.78,
+          "end": 2.04,
+          "word": "一",
+          "probability": 0.9807944893836975
+        },
+        {
+          "start": 2.04,
+          "end": 2.22,
+          "word": "家",
+          "probability": 0.9985357522964478
+        },
+        {
+          "start": 2.22,
+          "end": 2.42,
+          "word": "商",
+          "probability": 0.998623251914978
+        },
+        {
+          "start": 2.42,
+          "end": 2.76,
+          "word": "場",
+          "probability": 0.9874115586280823
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.76,
+      "end": 4.9,
+      "text": "因為是新開的",
+      "tokens": [
+        50514,
+        11471,
+        1541,
+        12560,
+        8949,
+        1546,
+        50614
+      ],
+      "avg_logprob": -0.1101052973132867,
+      "compression_ratio": 1.1851851851851851,
+      "no_speech_prob": 0.021469322964549065,
+      "words": [
+        {
+          "start": 2.76,
+          "end": 3.76,
+          "word": "因為",
+          "probability": 0.587354302406311
+        },
+        {
+          "start": 3.76,
+          "end": 4.12,
+          "word": "是",
+          "probability": 0.9489813446998596
+        },
+        {
+          "start": 4.12,
+          "end": 4.34,
+          "word": "新",
+          "probability": 0.9887409806251526
+        },
+        {
+          "start": 4.34,
+          "end": 4.6,
+          "word": "開",
+          "probability": 0.990996241569519
+        },
+        {
+          "start": 4.6,
+          "end": 4.9,
+          "word": "的",
+          "probability": 0.9874454736709595
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 4.9,
+      "end": 7.56,
+      "text": "所以這幾天東西很便宜",
+      "tokens": [
+        50614,
+        7239,
+        2664,
+        23575,
+        6135,
+        26978,
+        4563,
+        27364,
+        2415,
+        250,
+        50764
+      ],
+      "avg_logprob": -0.1101052973132867,
+      "compression_ratio": 1.1851851851851851,
+      "no_speech_prob": 0.021469322964549065,
+      "words": [
+        {
+          "start": 4.9,
+          "end": 5.68,
+          "word": "所以",
+          "probability": 0.7067381739616394
+        },
+        {
+          "start": 5.68,
+          "end": 6.0,
+          "word": "這",
+          "probability": 0.9781036376953125
+        },
+        {
+          "start": 6.0,
+          "end": 6.14,
+          "word": "幾",
+          "probability": 0.9909043908119202
+        },
+        {
+          "start": 6.14,
+          "end": 6.36,
+          "word": "天",
+          "probability": 0.9986340403556824
+        },
+        {
+          "start": 6.36,
+          "end": 6.72,
+          "word": "東西",
+          "probability": 0.9619690775871277
+        },
+        {
+          "start": 6.72,
+          "end": 7.0,
+          "word": "很",
+          "probability": 0.9903620481491089
+        },
+        {
+          "start": 7.0,
+          "end": 7.26,
+          "word": "便",
+          "probability": 0.9996572732925415
+        },
+        {
+          "start": 7.26,
+          "end": 7.56,
+          "word": "宜",
+          "probability": 0.999799370765686
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 7.56,
+      "end": 10.46,
+      "text": "商場裡的衣服顏色很多",
+      "tokens": [
+        50764,
+        45581,
+        21446,
+        11066,
+        1546,
+        9890,
+        96,
+        27408,
+        10178,
+        237,
+        17673,
+        20778,
+        50914
+      ],
+      "avg_logprob": -0.1101052973132867,
+      "compression_ratio": 1.1851851851851851,
+      "no_speech_prob": 0.021469322964549065,
+      "words": [
+        {
+          "start": 7.56,
+          "end": 8.58,
+          "word": "商",
+          "probability": 0.9356423616409302
+        },
+        {
+          "start": 8.58,
+          "end": 8.82,
+          "word": "場",
+          "probability": 0.9966127276420593
+        },
+        {
+          "start": 8.82,
+          "end": 8.96,
+          "word": "裡",
+          "probability": 0.8954445719718933
+        },
+        {
+          "start": 8.96,
+          "end": 9.06,
+          "word": "的",
+          "probability": 0.9379509091377258
+        },
+        {
+          "start": 9.06,
+          "end": 9.28,
+          "word": "衣",
+          "probability": 0.9987753033638
+        },
+        {
+          "start": 9.28,
+          "end": 9.54,
+          "word": "服",
+          "probability": 0.9944615364074707
+        },
+        {
+          "start": 9.54,
+          "end": 9.82,
+          "word": "顏",
+          "probability": 0.9810429513454437
+        },
+        {
+          "start": 9.82,
+          "end": 10.02,
+          "word": "色",
+          "probability": 0.9997170567512512
+        },
+        {
+          "start": 10.02,
+          "end": 10.46,
+          "word": "很多",
+          "probability": 0.9880266189575195
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 11.0,
+      "end": 13.22,
+      "text": "我沒穿過紅色的褲子",
+      "tokens": [
+        50914,
+        1654,
+        4913,
+        13740,
+        123,
+        8816,
+        33487,
+        17673,
+        1546,
+        164,
+        97,
+        110,
+        7626,
+        51014
+      ],
+      "avg_logprob": -0.1101052973132867,
+      "compression_ratio": 1.1851851851851851,
+      "no_speech_prob": 0.021469322964549065,
+      "words": [
+        {
+          "start": 11.0,
+          "end": 11.5,
+          "word": "我",
+          "probability": 0.9564348459243774
+        },
+        {
+          "start": 11.5,
+          "end": 11.64,
+          "word": "沒",
+          "probability": 0.992088258266449
+        },
+        {
+          "start": 11.64,
+          "end": 11.92,
+          "word": "穿",
+          "probability": 0.9990835785865784
+        },
+        {
+          "start": 11.92,
+          "end": 12.18,
+          "word": "過",
+          "probability": 0.9934477210044861
+        },
+        {
+          "start": 12.18,
+          "end": 12.4,
+          "word": "紅",
+          "probability": 0.9937414526939392
+        },
+        {
+          "start": 12.4,
+          "end": 12.6,
+          "word": "色",
+          "probability": 0.9979082345962524
+        },
+        {
+          "start": 12.6,
+          "end": 12.7,
+          "word": "的",
+          "probability": 0.8492441773414612
+        },
+        {
+          "start": 12.7,
+          "end": 12.92,
+          "word": "褲",
+          "probability": 0.9908864895502726
+        },
+        {
+          "start": 12.92,
+          "end": 13.22,
+          "word": "子",
+          "probability": 0.9998243451118469
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 13.22,
+      "end": 15.1,
+      "text": "媽媽讓我試了試",
+      "tokens": [
+        51014,
+        24812,
+        24812,
+        21195,
+        1654,
+        22099,
+        2289,
+        22099,
+        51114
+      ],
+      "avg_logprob": -0.1101052973132867,
+      "compression_ratio": 1.1851851851851851,
+      "no_speech_prob": 0.021469322964549065,
+      "words": [
+        {
+          "start": 13.22,
+          "end": 13.94,
+          "word": "媽",
+          "probability": 0.918318510055542
+        },
+        {
+          "start": 13.94,
+          "end": 14.14,
+          "word": "媽",
+          "probability": 0.9939661622047424
+        },
+        {
+          "start": 14.14,
+          "end": 14.28,
+          "word": "讓",
+          "probability": 0.9917476177215576
+        },
+        {
+          "start": 14.28,
+          "end": 14.44,
+          "word": "我",
+          "probability": 0.9966580867767334
+        },
+        {
+          "start": 14.44,
+          "end": 14.7,
+          "word": "試",
+          "probability": 0.9968665242195129
+        },
+        {
+          "start": 14.7,
+          "end": 14.86,
+          "word": "了",
+          "probability": 0.9383543133735657
+        },
+        {
+          "start": 14.86,
+          "end": 15.1,
+          "word": "試",
+          "probability": 0.9949187636375427
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 15.1,
+      "end": 18.4,
+      "text": "我覺得我穿紅色的也很好看",
+      "tokens": [
+        51114,
+        17689,
+        1654,
+        13740,
+        123,
+        33487,
+        17673,
+        1546,
+        6404,
+        23801,
+        4200,
+        51314
+      ],
+      "avg_logprob": -0.1101052973132867,
+      "compression_ratio": 1.1851851851851851,
+      "no_speech_prob": 0.021469322964549065,
+      "words": [
+        {
+          "start": 15.1,
+          "end": 16.08,
+          "word": "我覺得",
+          "probability": 0.8524017333984375
+        },
+        {
+          "start": 16.08,
+          "end": 16.54,
+          "word": "我",
+          "probability": 0.9428163766860962
+        },
+        {
+          "start": 16.54,
+          "end": 16.74,
+          "word": "穿",
+          "probability": 0.9985013604164124
+        },
+        {
+          "start": 16.74,
+          "end": 17.0,
+          "word": "紅",
+          "probability": 0.9937166571617126
+        },
+        {
+          "start": 17.0,
+          "end": 17.26,
+          "word": "色",
+          "probability": 0.9954985976219177
+        },
+        {
+          "start": 17.26,
+          "end": 17.42,
+          "word": "的",
+          "probability": 0.9925249814987183
+        },
+        {
+          "start": 17.42,
+          "end": 17.66,
+          "word": "也",
+          "probability": 0.9892444610595703
+        },
+        {
+          "start": 17.66,
+          "end": 18.06,
+          "word": "很好",
+          "probability": 0.9658715724945068
+        },
+        {
+          "start": 18.06,
+          "end": 18.4,
+          "word": "看",
+          "probability": 0.9997883439064026
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.7448297679999882,
+  "realTimeFactor": 0.08931356306306246,
+  "observationChecks": {
+    "rawWordCount": 56,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

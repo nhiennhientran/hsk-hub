@@ -1,0 +1,1173 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l16:audio5",
+    "level": 3,
+    "lesson": 16,
+    "track": 5,
+    "kind": "text",
+    "text": 3,
+    "file": "course-assets/hsk3/audio/16-5.mp3",
+    "sha256": "7fbd0382d8e673e0914f2900c793d4b9ff8dc13f3acd178c38e65a862b57272f",
+    "bytes": 706684,
+    "manifestDurationSeconds": 41.629813,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 667481,
+      "durationSeconds": 41.7175625,
+      "sha256": "997bf8cdddaf19d6d7e0834201860b1560618cbfbb826d312183f75351c0db3b"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 41.7175625,
+    "duration_after_vad": 41.7175625,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.45999999999999874,
+      "end": 5.46,
+      "text": "这只大熊猫一会儿爬上去,一会儿跳下来,可爱急了。",
+      "tokens": [
+        50364,
+        5562,
+        14003,
+        3582,
+        21805,
+        232,
+        25266,
+        104,
+        2257,
+        12949,
+        22933,
+        8164,
+        105,
+        5708,
+        6734,
+        11,
+        2257,
+        12949,
+        22933,
+        29366,
+        4438,
+        6912,
+        11,
+        4429,
+        27324,
+        36379,
+        2289,
+        1543,
+        50664
+      ],
+      "avg_logprob": -0.13893245721082076,
+      "compression_ratio": 1.205607476635514,
+      "no_speech_prob": 0.08126961439847946,
+      "words": [
+        {
+          "start": 0.45999999999999874,
+          "end": 0.9,
+          "word": "这",
+          "probability": 0.16361965239048004
+        },
+        {
+          "start": 0.9,
+          "end": 1.04,
+          "word": "只",
+          "probability": 0.9517197012901306
+        },
+        {
+          "start": 1.04,
+          "end": 1.24,
+          "word": "大",
+          "probability": 0.9944117665290833
+        },
+        {
+          "start": 1.24,
+          "end": 1.46,
+          "word": "熊",
+          "probability": 0.9915456175804138
+        },
+        {
+          "start": 1.46,
+          "end": 1.68,
+          "word": "猫",
+          "probability": 0.9964426755905151
+        },
+        {
+          "start": 1.68,
+          "end": 2.0,
+          "word": "一",
+          "probability": 0.9439812302589417
+        },
+        {
+          "start": 2.0,
+          "end": 2.14,
+          "word": "会",
+          "probability": 0.9974246025085449
+        },
+        {
+          "start": 2.14,
+          "end": 2.22,
+          "word": "儿",
+          "probability": 0.626107931137085
+        },
+        {
+          "start": 2.22,
+          "end": 2.42,
+          "word": "爬",
+          "probability": 0.9959031045436859
+        },
+        {
+          "start": 2.42,
+          "end": 2.66,
+          "word": "上",
+          "probability": 0.9970544576644897
+        },
+        {
+          "start": 2.66,
+          "end": 2.94,
+          "word": "去,",
+          "probability": 0.9796508550643921
+        },
+        {
+          "start": 3.3,
+          "end": 3.38,
+          "word": "一",
+          "probability": 0.911091685295105
+        },
+        {
+          "start": 3.38,
+          "end": 3.52,
+          "word": "会",
+          "probability": 0.999440610408783
+        },
+        {
+          "start": 3.52,
+          "end": 3.58,
+          "word": "儿",
+          "probability": 0.9457657337188721
+        },
+        {
+          "start": 3.58,
+          "end": 3.76,
+          "word": "跳",
+          "probability": 0.9924381375312805
+        },
+        {
+          "start": 3.76,
+          "end": 4.02,
+          "word": "下",
+          "probability": 0.9856539368629456
+        },
+        {
+          "start": 4.02,
+          "end": 4.3,
+          "word": "来,",
+          "probability": 0.9919405579566956
+        },
+        {
+          "start": 4.46,
+          "end": 4.7,
+          "word": "可",
+          "probability": 0.9637395739555359
+        },
+        {
+          "start": 4.7,
+          "end": 4.86,
+          "word": "爱",
+          "probability": 0.9800961017608643
+        },
+        {
+          "start": 4.86,
+          "end": 5.1,
+          "word": "急",
+          "probability": 0.4758789539337158
+        },
+        {
+          "start": 5.1,
+          "end": 5.46,
+          "word": "了。",
+          "probability": 0.9330137372016907
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 6.72,
+      "end": 10.76,
+      "text": "她好像还没吃饱,站起来张着嘴找吃的吗?",
+      "tokens": [
+        50664,
+        15555,
+        33242,
+        14852,
+        10062,
+        10123,
+        41520,
+        109,
+        11,
+        34155,
+        9147,
+        6912,
+        44059,
+        20708,
+        10756,
+        112,
+        25085,
+        10123,
+        1546,
+        14769,
+        30,
+        50914
+      ],
+      "avg_logprob": -0.13893245721082076,
+      "compression_ratio": 1.205607476635514,
+      "no_speech_prob": 0.08126961439847946,
+      "words": [
+        {
+          "start": 6.72,
+          "end": 7.16,
+          "word": "她",
+          "probability": 0.33531755208969116
+        },
+        {
+          "start": 7.16,
+          "end": 7.44,
+          "word": "好像",
+          "probability": 0.9862478375434875
+        },
+        {
+          "start": 7.44,
+          "end": 7.72,
+          "word": "还",
+          "probability": 0.9491086006164551
+        },
+        {
+          "start": 7.72,
+          "end": 7.84,
+          "word": "没",
+          "probability": 0.9892584681510925
+        },
+        {
+          "start": 7.84,
+          "end": 8.06,
+          "word": "吃",
+          "probability": 0.996894359588623
+        },
+        {
+          "start": 8.06,
+          "end": 8.3,
+          "word": "饱,",
+          "probability": 0.9927592277526855
+        },
+        {
+          "start": 8.76,
+          "end": 8.92,
+          "word": "站",
+          "probability": 0.9845622181892395
+        },
+        {
+          "start": 8.92,
+          "end": 9.1,
+          "word": "起",
+          "probability": 0.9970669150352478
+        },
+        {
+          "start": 9.1,
+          "end": 9.28,
+          "word": "来",
+          "probability": 0.996048629283905
+        },
+        {
+          "start": 9.28,
+          "end": 9.5,
+          "word": "张",
+          "probability": 0.7627069354057312
+        },
+        {
+          "start": 9.5,
+          "end": 9.66,
+          "word": "着",
+          "probability": 0.972881555557251
+        },
+        {
+          "start": 9.66,
+          "end": 9.82,
+          "word": "嘴",
+          "probability": 0.9999024868011475
+        },
+        {
+          "start": 9.82,
+          "end": 10.06,
+          "word": "找",
+          "probability": 0.8310117125511169
+        },
+        {
+          "start": 10.06,
+          "end": 10.38,
+          "word": "吃",
+          "probability": 0.9874512553215027
+        },
+        {
+          "start": 10.38,
+          "end": 10.58,
+          "word": "的",
+          "probability": 0.9872962236404419
+        },
+        {
+          "start": 10.58,
+          "end": 10.76,
+          "word": "吗?",
+          "probability": 0.31842631101608276
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 12.22,
+      "end": 16.32,
+      "text": "她身边那只熊猫半天没动,是不是在睡觉呢?",
+      "tokens": [
+        50914,
+        15555,
+        19847,
+        40503,
+        4184,
+        14003,
+        21805,
+        232,
+        25266,
+        104,
+        30018,
+        6135,
+        10062,
+        34961,
+        11,
+        23034,
+        3581,
+        40490,
+        24447,
+        6240,
+        30,
+        51214
+      ],
+      "avg_logprob": -0.13893245721082076,
+      "compression_ratio": 1.205607476635514,
+      "no_speech_prob": 0.08126961439847946,
+      "words": [
+        {
+          "start": 12.22,
+          "end": 12.36,
+          "word": "她",
+          "probability": 0.8162306547164917
+        },
+        {
+          "start": 12.36,
+          "end": 12.54,
+          "word": "身",
+          "probability": 0.9943364262580872
+        },
+        {
+          "start": 12.54,
+          "end": 12.7,
+          "word": "边",
+          "probability": 0.991364598274231
+        },
+        {
+          "start": 12.7,
+          "end": 12.9,
+          "word": "那",
+          "probability": 0.9898362755775452
+        },
+        {
+          "start": 12.9,
+          "end": 13.06,
+          "word": "只",
+          "probability": 0.9963533878326416
+        },
+        {
+          "start": 13.06,
+          "end": 13.28,
+          "word": "熊",
+          "probability": 0.99929079413414
+        },
+        {
+          "start": 13.28,
+          "end": 13.46,
+          "word": "猫",
+          "probability": 0.9991619884967804
+        },
+        {
+          "start": 13.46,
+          "end": 13.7,
+          "word": "半",
+          "probability": 0.9937509894371033
+        },
+        {
+          "start": 13.7,
+          "end": 13.92,
+          "word": "天",
+          "probability": 0.9970455765724182
+        },
+        {
+          "start": 13.92,
+          "end": 14.12,
+          "word": "没",
+          "probability": 0.9966915845870972
+        },
+        {
+          "start": 14.12,
+          "end": 14.36,
+          "word": "动,",
+          "probability": 0.9318584203720093
+        },
+        {
+          "start": 14.82,
+          "end": 15.1,
+          "word": "是不是",
+          "probability": 0.9601268172264099
+        },
+        {
+          "start": 15.1,
+          "end": 15.62,
+          "word": "在",
+          "probability": 0.8321443796157837
+        },
+        {
+          "start": 15.62,
+          "end": 15.8,
+          "word": "睡",
+          "probability": 0.9968129992485046
+        },
+        {
+          "start": 15.8,
+          "end": 16.06,
+          "word": "觉",
+          "probability": 0.9973725080490112
+        },
+        {
+          "start": 16.06,
+          "end": 16.32,
+          "word": "呢?",
+          "probability": 0.9697555899620056
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 17.5,
+      "end": 20.2,
+      "text": "我看不见她的脸,可能是吧?",
+      "tokens": [
+        51214,
+        1654,
+        4200,
+        1960,
+        23813,
+        15555,
+        1546,
+        164,
+        20600,
+        11,
+        16657,
+        1541,
+        6062,
+        30,
+        51414
+      ],
+      "avg_logprob": -0.13893245721082076,
+      "compression_ratio": 1.205607476635514,
+      "no_speech_prob": 0.08126961439847946,
+      "words": [
+        {
+          "start": 17.5,
+          "end": 17.74,
+          "word": "我",
+          "probability": 0.9890071153640747
+        },
+        {
+          "start": 17.74,
+          "end": 17.9,
+          "word": "看",
+          "probability": 0.9993771910667419
+        },
+        {
+          "start": 17.9,
+          "end": 18.06,
+          "word": "不",
+          "probability": 0.9991239905357361
+        },
+        {
+          "start": 18.06,
+          "end": 18.2,
+          "word": "见",
+          "probability": 0.9975491166114807
+        },
+        {
+          "start": 18.2,
+          "end": 18.42,
+          "word": "她",
+          "probability": 0.8476892113685608
+        },
+        {
+          "start": 18.42,
+          "end": 18.56,
+          "word": "的",
+          "probability": 0.9962520003318787
+        },
+        {
+          "start": 18.56,
+          "end": 18.8,
+          "word": "脸,",
+          "probability": 0.9990414977073669
+        },
+        {
+          "start": 19.38,
+          "end": 19.62,
+          "word": "可能",
+          "probability": 0.9815708994865417
+        },
+        {
+          "start": 19.62,
+          "end": 19.94,
+          "word": "是",
+          "probability": 0.9873098731040955
+        },
+        {
+          "start": 19.94,
+          "end": 20.2,
+          "word": "吧?",
+          "probability": 0.98311847448349
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 21.14,
+      "end": 24.54,
+      "text": "一般来说,熊猫每天要睡很多次觉。",
+      "tokens": [
+        51414,
+        2257,
+        49640,
+        6912,
+        8090,
+        11,
+        21805,
+        232,
+        25266,
+        104,
+        23664,
+        6135,
+        4275,
+        40490,
+        20778,
+        9487,
+        24447,
+        1543,
+        51614
+      ],
+      "avg_logprob": -0.13893245721082076,
+      "compression_ratio": 1.205607476635514,
+      "no_speech_prob": 0.08126961439847946,
+      "words": [
+        {
+          "start": 21.14,
+          "end": 21.3,
+          "word": "一",
+          "probability": 0.9896392822265625
+        },
+        {
+          "start": 21.3,
+          "end": 21.42,
+          "word": "般",
+          "probability": 0.999901533126831
+        },
+        {
+          "start": 21.42,
+          "end": 21.6,
+          "word": "来",
+          "probability": 0.9962557554244995
+        },
+        {
+          "start": 21.6,
+          "end": 21.9,
+          "word": "说,",
+          "probability": 0.9968063831329346
+        },
+        {
+          "start": 22.3,
+          "end": 22.46,
+          "word": "熊",
+          "probability": 0.9993362724781036
+        },
+        {
+          "start": 22.46,
+          "end": 22.68,
+          "word": "猫",
+          "probability": 0.999254435300827
+        },
+        {
+          "start": 22.68,
+          "end": 22.98,
+          "word": "每",
+          "probability": 0.9860746264457703
+        },
+        {
+          "start": 22.98,
+          "end": 23.24,
+          "word": "天",
+          "probability": 0.9937964677810669
+        },
+        {
+          "start": 23.24,
+          "end": 23.42,
+          "word": "要",
+          "probability": 0.9876075387001038
+        },
+        {
+          "start": 23.42,
+          "end": 23.62,
+          "word": "睡",
+          "probability": 0.9974465370178223
+        },
+        {
+          "start": 23.62,
+          "end": 24.04,
+          "word": "很多",
+          "probability": 0.9777005314826965
+        },
+        {
+          "start": 24.04,
+          "end": 24.32,
+          "word": "次",
+          "probability": 0.9852355718612671
+        },
+        {
+          "start": 24.32,
+          "end": 24.54,
+          "word": "觉。",
+          "probability": 0.9970169067382812
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 2454,
+      "start": 25.5,
+      "end": 30.48,
+      "text": "对,除了睡觉以外,很多时间都在吃东西。",
+      "tokens": [
+        50364,
+        8713,
+        11,
+        32999,
+        2289,
+        40490,
+        24447,
+        3588,
+        12022,
+        11,
+        20778,
+        44848,
+        7182,
+        3581,
+        10123,
+        38409,
+        16220,
+        1543,
+        50664
+      ],
+      "avg_logprob": -0.13295808333461567,
+      "compression_ratio": 1.0215827338129497,
+      "no_speech_prob": 0.13967345654964447,
+      "words": [
+        {
+          "start": 25.5,
+          "end": 25.94,
+          "word": "对,",
+          "probability": 0.44476205110549927
+        },
+        {
+          "start": 26.58,
+          "end": 26.74,
+          "word": "除",
+          "probability": 0.9694437980651855
+        },
+        {
+          "start": 26.74,
+          "end": 26.88,
+          "word": "了",
+          "probability": 0.9933932423591614
+        },
+        {
+          "start": 26.88,
+          "end": 27.06,
+          "word": "睡",
+          "probability": 0.994318425655365
+        },
+        {
+          "start": 27.06,
+          "end": 27.28,
+          "word": "觉",
+          "probability": 0.9928380846977234
+        },
+        {
+          "start": 27.28,
+          "end": 27.48,
+          "word": "以",
+          "probability": 0.9433436393737793
+        },
+        {
+          "start": 27.48,
+          "end": 27.72,
+          "word": "外,",
+          "probability": 0.9997007846832275
+        },
+        {
+          "start": 28.08,
+          "end": 28.28,
+          "word": "很多",
+          "probability": 0.9481900334358215
+        },
+        {
+          "start": 28.28,
+          "end": 28.76,
+          "word": "时间",
+          "probability": 0.9673945307731628
+        },
+        {
+          "start": 28.76,
+          "end": 29.1,
+          "word": "都",
+          "probability": 0.983734130859375
+        },
+        {
+          "start": 29.1,
+          "end": 29.26,
+          "word": "在",
+          "probability": 0.9964345693588257
+        },
+        {
+          "start": 29.26,
+          "end": 29.46,
+          "word": "吃",
+          "probability": 0.9968245029449463
+        },
+        {
+          "start": 29.46,
+          "end": 29.62,
+          "word": "东",
+          "probability": 0.991927981376648
+        },
+        {
+          "start": 29.62,
+          "end": 30.48,
+          "word": "西。",
+          "probability": 0.9997435212135315
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2454,
+      "start": 31.96,
+      "end": 34.38,
+      "text": "大熊猫的生活真舒服啊!",
+      "tokens": [
+        50664,
+        3582,
+        21805,
+        232,
+        25266,
+        104,
+        1546,
+        49958,
+        6303,
+        46204,
+        27408,
+        4905,
+        0,
+        50864
+      ],
+      "avg_logprob": -0.13295808333461567,
+      "compression_ratio": 1.0215827338129497,
+      "no_speech_prob": 0.13967345654964447,
+      "words": [
+        {
+          "start": 31.96,
+          "end": 32.4,
+          "word": "大",
+          "probability": 0.8835399150848389
+        },
+        {
+          "start": 32.4,
+          "end": 32.62,
+          "word": "熊",
+          "probability": 0.9845528304576874
+        },
+        {
+          "start": 32.62,
+          "end": 32.78,
+          "word": "猫",
+          "probability": 0.9982326328754425
+        },
+        {
+          "start": 32.78,
+          "end": 32.92,
+          "word": "的",
+          "probability": 0.9966339468955994
+        },
+        {
+          "start": 32.92,
+          "end": 33.3,
+          "word": "生活",
+          "probability": 0.998989999294281
+        },
+        {
+          "start": 33.3,
+          "end": 33.66,
+          "word": "真",
+          "probability": 0.9287405014038086
+        },
+        {
+          "start": 33.66,
+          "end": 33.96,
+          "word": "舒",
+          "probability": 0.9876077771186829
+        },
+        {
+          "start": 33.96,
+          "end": 34.18,
+          "word": "服",
+          "probability": 0.9963975548744202
+        },
+        {
+          "start": 34.18,
+          "end": 34.38,
+          "word": "啊!",
+          "probability": 0.7928102612495422
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2454,
+      "start": 35.86,
+      "end": 40.12,
+      "text": "妈妈,您帮我和这两只大熊猫照一张照片吧。",
+      "tokens": [
+        50864,
+        32462,
+        32462,
+        11,
+        23414,
+        4845,
+        106,
+        1654,
+        12565,
+        5562,
+        36257,
+        14003,
+        3582,
+        21805,
+        232,
+        25266,
+        104,
+        32150,
+        2257,
+        44059,
+        32150,
+        16668,
+        6062,
+        1543,
+        51164
+      ],
+      "avg_logprob": -0.13295808333461567,
+      "compression_ratio": 1.0215827338129497,
+      "no_speech_prob": 0.13967345654964447,
+      "words": [
+        {
+          "start": 35.86,
+          "end": 36.3,
+          "word": "妈",
+          "probability": 0.9646205902099609
+        },
+        {
+          "start": 36.3,
+          "end": 36.52,
+          "word": "妈,",
+          "probability": 0.9784653186798096
+        },
+        {
+          "start": 37.02,
+          "end": 37.12,
+          "word": "您",
+          "probability": 0.9841132760047913
+        },
+        {
+          "start": 37.12,
+          "end": 37.34,
+          "word": "帮",
+          "probability": 0.9981991350650787
+        },
+        {
+          "start": 37.34,
+          "end": 37.56,
+          "word": "我",
+          "probability": 0.9938487410545349
+        },
+        {
+          "start": 37.56,
+          "end": 37.72,
+          "word": "和",
+          "probability": 0.9811837673187256
+        },
+        {
+          "start": 37.72,
+          "end": 37.9,
+          "word": "这",
+          "probability": 0.997137188911438
+        },
+        {
+          "start": 37.9,
+          "end": 38.04,
+          "word": "两",
+          "probability": 0.9837639331817627
+        },
+        {
+          "start": 38.04,
+          "end": 38.2,
+          "word": "只",
+          "probability": 0.9894128441810608
+        },
+        {
+          "start": 38.2,
+          "end": 38.4,
+          "word": "大",
+          "probability": 0.9958800077438354
+        },
+        {
+          "start": 38.4,
+          "end": 38.56,
+          "word": "熊",
+          "probability": 0.9994608759880066
+        },
+        {
+          "start": 38.56,
+          "end": 38.82,
+          "word": "猫",
+          "probability": 0.9996465444564819
+        },
+        {
+          "start": 38.82,
+          "end": 39.06,
+          "word": "照",
+          "probability": 0.8789098858833313
+        },
+        {
+          "start": 39.06,
+          "end": 39.24,
+          "word": "一",
+          "probability": 0.9888797998428345
+        },
+        {
+          "start": 39.24,
+          "end": 39.4,
+          "word": "张",
+          "probability": 0.9943506121635437
+        },
+        {
+          "start": 39.4,
+          "end": 39.58,
+          "word": "照",
+          "probability": 0.9991543292999268
+        },
+        {
+          "start": 39.58,
+          "end": 39.88,
+          "word": "片",
+          "probability": 0.9990550875663757
+        },
+        {
+          "start": 39.88,
+          "end": 40.12,
+          "word": "吧。",
+          "probability": 0.983885645866394
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.751713765000005,
+  "realTimeFactor": 0.08993127930233233,
+  "observationChecks": {
+    "rawWordCount": 117,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

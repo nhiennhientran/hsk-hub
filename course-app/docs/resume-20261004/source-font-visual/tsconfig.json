@@ -1,0 +1,9 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": { "types": ["node", "vite/client"] },
+  "include": [
+    "../../../tests/unified/hsk1-source-font-visual.spec.ts",
+    "playwright.source-font-visual.config.ts",
+    "../../../src/vite-env.d.ts"
+  ]
+}

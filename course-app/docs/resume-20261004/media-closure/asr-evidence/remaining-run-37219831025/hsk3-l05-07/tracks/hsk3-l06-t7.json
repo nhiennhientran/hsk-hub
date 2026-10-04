@@ -1,0 +1,1290 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l06:audio7",
+    "level": 3,
+    "lesson": 6,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/6-7.mp3",
+    "sha256": "deb41b9e7f1d48194dc341e4deecc167f44b58e5607cfd432f0a9faa91e8ddec",
+    "bytes": 818021,
+    "manifestDurationSeconds": 48.5885,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 779076,
+      "durationSeconds": 48.69225,
+      "sha256": "4b7aebf3303516b4805d3d6f3ccd21029f0c647750304b4d286c9ced23303896"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 48.69225,
+    "duration_after_vad": 48.69225,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.6999999999999977,
+      "end": 5.02,
+      "text": "這次放假,我去了北京,還去了上海",
+      "tokens": [
+        50364,
+        2664,
+        9487,
+        12744,
+        31706,
+        11,
+        1654,
+        45190,
+        26668,
+        31375,
+        11,
+        7824,
+        45190,
+        5708,
+        20078,
+        50631
+      ],
+      "avg_logprob": -0.20561670005321503,
+      "compression_ratio": 1.3172043010752688,
+      "no_speech_prob": 0.013856128789484501,
+      "words": [
+        {
+          "start": 0.6999999999999977,
+          "end": 1.26,
+          "word": "這",
+          "probability": 0.5859430432319641
+        },
+        {
+          "start": 1.26,
+          "end": 1.5,
+          "word": "次",
+          "probability": 0.9871063232421875
+        },
+        {
+          "start": 1.5,
+          "end": 1.74,
+          "word": "放",
+          "probability": 0.9963118433952332
+        },
+        {
+          "start": 1.74,
+          "end": 2.04,
+          "word": "假,",
+          "probability": 0.995804488658905
+        },
+        {
+          "start": 2.38,
+          "end": 2.52,
+          "word": "我",
+          "probability": 0.9712147116661072
+        },
+        {
+          "start": 2.52,
+          "end": 2.84,
+          "word": "去了",
+          "probability": 0.9824091196060181
+        },
+        {
+          "start": 2.84,
+          "end": 3.14,
+          "word": "北",
+          "probability": 0.9953372478485107
+        },
+        {
+          "start": 3.14,
+          "end": 3.52,
+          "word": "京,",
+          "probability": 0.9993523955345154
+        },
+        {
+          "start": 3.8,
+          "end": 4.04,
+          "word": "還",
+          "probability": 0.9762089252471924
+        },
+        {
+          "start": 4.04,
+          "end": 4.36,
+          "word": "去了",
+          "probability": 0.9680753350257874
+        },
+        {
+          "start": 4.36,
+          "end": 4.66,
+          "word": "上",
+          "probability": 0.9934431314468384
+        },
+        {
+          "start": 4.66,
+          "end": 5.02,
+          "word": "海",
+          "probability": 0.9996222257614136
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 5.619999999999997,
+      "end": 9.56,
+      "text": "我是從北京南站做高鐵去的上海",
+      "tokens": [
+        50631,
+        15914,
+        21068,
+        26668,
+        31375,
+        31021,
+        34155,
+        10907,
+        12979,
+        42411,
+        113,
+        6734,
+        1546,
+        5708,
+        20078,
+        50856
+      ],
+      "avg_logprob": -0.20561670005321503,
+      "compression_ratio": 1.3172043010752688,
+      "no_speech_prob": 0.013856128789484501,
+      "words": [
+        {
+          "start": 5.619999999999997,
+          "end": 6.18,
+          "word": "我是",
+          "probability": 0.5166033506393433
+        },
+        {
+          "start": 6.18,
+          "end": 6.58,
+          "word": "從",
+          "probability": 0.9966764450073242
+        },
+        {
+          "start": 6.58,
+          "end": 6.84,
+          "word": "北",
+          "probability": 0.996422290802002
+        },
+        {
+          "start": 6.84,
+          "end": 7.06,
+          "word": "京",
+          "probability": 0.9988757967948914
+        },
+        {
+          "start": 7.06,
+          "end": 7.28,
+          "word": "南",
+          "probability": 0.9809237718582153
+        },
+        {
+          "start": 7.28,
+          "end": 7.58,
+          "word": "站",
+          "probability": 0.9014988541603088
+        },
+        {
+          "start": 7.58,
+          "end": 7.96,
+          "word": "做",
+          "probability": 0.46242237091064453
+        },
+        {
+          "start": 7.96,
+          "end": 8.22,
+          "word": "高",
+          "probability": 0.992551326751709
+        },
+        {
+          "start": 8.22,
+          "end": 8.52,
+          "word": "鐵",
+          "probability": 0.999369889497757
+        },
+        {
+          "start": 8.52,
+          "end": 8.8,
+          "word": "去",
+          "probability": 0.9034700393676758
+        },
+        {
+          "start": 8.8,
+          "end": 8.94,
+          "word": "的",
+          "probability": 0.9952599406242371
+        },
+        {
+          "start": 8.94,
+          "end": 9.16,
+          "word": "上",
+          "probability": 0.9918689727783203
+        },
+        {
+          "start": 9.16,
+          "end": 9.56,
+          "word": "海",
+          "probability": 0.999771773815155
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 10.679999999999996,
+      "end": 15.08,
+      "text": "我覺得坐在高鐵上跟坐在家裡的沙發上一樣",
+      "tokens": [
+        50856,
+        17689,
+        31123,
+        3581,
+        12979,
+        42411,
+        113,
+        5708,
+        9678,
+        31123,
+        3581,
+        5155,
+        11066,
+        1546,
+        3308,
+        247,
+        14637,
+        5708,
+        22977,
+        51139
+      ],
+      "avg_logprob": -0.20561670005321503,
+      "compression_ratio": 1.3172043010752688,
+      "no_speech_prob": 0.013856128789484501,
+      "words": [
+        {
+          "start": 10.679999999999996,
+          "end": 11.239999999999998,
+          "word": "我覺得",
+          "probability": 0.9212284684181213
+        },
+        {
+          "start": 11.239999999999998,
+          "end": 11.8,
+          "word": "坐",
+          "probability": 0.7871853113174438
+        },
+        {
+          "start": 11.8,
+          "end": 11.98,
+          "word": "在",
+          "probability": 0.9967468976974487
+        },
+        {
+          "start": 11.98,
+          "end": 12.2,
+          "word": "高",
+          "probability": 0.9978467226028442
+        },
+        {
+          "start": 12.2,
+          "end": 12.44,
+          "word": "鐵",
+          "probability": 0.9997299611568451
+        },
+        {
+          "start": 12.44,
+          "end": 12.78,
+          "word": "上",
+          "probability": 0.9107180833816528
+        },
+        {
+          "start": 12.78,
+          "end": 13.1,
+          "word": "跟",
+          "probability": 0.8453651070594788
+        },
+        {
+          "start": 13.1,
+          "end": 13.34,
+          "word": "坐",
+          "probability": 0.9391895532608032
+        },
+        {
+          "start": 13.34,
+          "end": 13.56,
+          "word": "在",
+          "probability": 0.9973148703575134
+        },
+        {
+          "start": 13.56,
+          "end": 13.76,
+          "word": "家",
+          "probability": 0.994965136051178
+        },
+        {
+          "start": 13.76,
+          "end": 13.94,
+          "word": "裡",
+          "probability": 0.917590856552124
+        },
+        {
+          "start": 13.94,
+          "end": 14.08,
+          "word": "的",
+          "probability": 0.9810276031494141
+        },
+        {
+          "start": 14.08,
+          "end": 14.3,
+          "word": "沙",
+          "probability": 0.9991714358329773
+        },
+        {
+          "start": 14.3,
+          "end": 14.48,
+          "word": "發",
+          "probability": 0.9940454959869385
+        },
+        {
+          "start": 14.48,
+          "end": 14.74,
+          "word": "上",
+          "probability": 0.9373914003372192
+        },
+        {
+          "start": 14.74,
+          "end": 15.08,
+          "word": "一樣",
+          "probability": 0.9780845642089844
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 15.08,
+      "end": 17.7,
+      "text": "又安靜又舒服",
+      "tokens": [
+        51139,
+        17047,
+        16206,
+        5363,
+        250,
+        17047,
+        46204,
+        27408,
+        51264
+      ],
+      "avg_logprob": -0.20561670005321503,
+      "compression_ratio": 1.3172043010752688,
+      "no_speech_prob": 0.013856128789484501,
+      "words": [
+        {
+          "start": 15.08,
+          "end": 16.14,
+          "word": "又",
+          "probability": 0.7373795509338379
+        },
+        {
+          "start": 16.14,
+          "end": 16.44,
+          "word": "安",
+          "probability": 0.9993314743041992
+        },
+        {
+          "start": 16.44,
+          "end": 16.76,
+          "word": "靜",
+          "probability": 0.9988842904567719
+        },
+        {
+          "start": 16.76,
+          "end": 17.08,
+          "word": "又",
+          "probability": 0.9377941489219666
+        },
+        {
+          "start": 17.08,
+          "end": 17.38,
+          "word": "舒",
+          "probability": 0.9989572763442993
+        },
+        {
+          "start": 17.38,
+          "end": 17.7,
+          "word": "服",
+          "probability": 0.9951110482215881
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 18.279999999999998,
+      "end": 22.42,
+      "text": "坐累了就站一會兒,餓了就點外賣",
+      "tokens": [
+        51264,
+        31123,
+        43656,
+        2289,
+        3111,
+        34155,
+        2257,
+        6236,
+        35125,
+        11,
+        22217,
+        241,
+        2289,
+        3111,
+        8216,
+        12022,
+        13352,
+        96,
+        51506
+      ],
+      "avg_logprob": -0.20561670005321503,
+      "compression_ratio": 1.3172043010752688,
+      "no_speech_prob": 0.013856128789484501,
+      "words": [
+        {
+          "start": 18.279999999999998,
+          "end": 18.84,
+          "word": "坐",
+          "probability": 0.7009181976318359
+        },
+        {
+          "start": 18.84,
+          "end": 19.08,
+          "word": "累",
+          "probability": 0.989740252494812
+        },
+        {
+          "start": 19.08,
+          "end": 19.36,
+          "word": "了",
+          "probability": 0.9963324666023254
+        },
+        {
+          "start": 19.36,
+          "end": 19.58,
+          "word": "就",
+          "probability": 0.9217972159385681
+        },
+        {
+          "start": 19.58,
+          "end": 19.84,
+          "word": "站",
+          "probability": 0.8978078961372375
+        },
+        {
+          "start": 19.84,
+          "end": 20.04,
+          "word": "一",
+          "probability": 0.981614887714386
+        },
+        {
+          "start": 20.04,
+          "end": 20.24,
+          "word": "會",
+          "probability": 0.9920578598976135
+        },
+        {
+          "start": 20.24,
+          "end": 20.86,
+          "word": "兒,",
+          "probability": 0.878204882144928
+        },
+        {
+          "start": 20.86,
+          "end": 21.18,
+          "word": "餓",
+          "probability": 0.9767869412899017
+        },
+        {
+          "start": 21.18,
+          "end": 21.48,
+          "word": "了",
+          "probability": 0.9987479448318481
+        },
+        {
+          "start": 21.48,
+          "end": 21.74,
+          "word": "就",
+          "probability": 0.9782805442810059
+        },
+        {
+          "start": 21.74,
+          "end": 21.96,
+          "word": "點",
+          "probability": 0.9966204166412354
+        },
+        {
+          "start": 21.96,
+          "end": 22.18,
+          "word": "外",
+          "probability": 0.9950799942016602
+        },
+        {
+          "start": 22.18,
+          "end": 22.42,
+          "word": "賣",
+          "probability": 0.9890424907207489
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 23.119999999999997,
+      "end": 27.9,
+      "text": "對,你沒聽錯,高鐵上可以點外賣",
+      "tokens": [
+        51506,
+        2855,
+        11,
+        2166,
+        4913,
+        21524,
+        13133,
+        11,
+        12979,
+        42411,
+        113,
+        5708,
+        6723,
+        8216,
+        12022,
+        13352,
+        96,
+        51781
+      ],
+      "avg_logprob": -0.20561670005321503,
+      "compression_ratio": 1.3172043010752688,
+      "no_speech_prob": 0.013856128789484501,
+      "words": [
+        {
+          "start": 23.119999999999997,
+          "end": 23.68,
+          "word": "對,",
+          "probability": 0.867319643497467
+        },
+        {
+          "start": 24.3,
+          "end": 24.44,
+          "word": "你",
+          "probability": 0.9504465460777283
+        },
+        {
+          "start": 24.44,
+          "end": 24.6,
+          "word": "沒",
+          "probability": 0.9902560114860535
+        },
+        {
+          "start": 24.6,
+          "end": 24.82,
+          "word": "聽",
+          "probability": 0.9973896145820618
+        },
+        {
+          "start": 24.82,
+          "end": 25.1,
+          "word": "錯,",
+          "probability": 0.9988020658493042
+        },
+        {
+          "start": 25.82,
+          "end": 26.12,
+          "word": "高",
+          "probability": 0.9928733110427856
+        },
+        {
+          "start": 26.12,
+          "end": 26.4,
+          "word": "鐵",
+          "probability": 0.9997768104076385
+        },
+        {
+          "start": 26.4,
+          "end": 26.68,
+          "word": "上",
+          "probability": 0.9324535727500916
+        },
+        {
+          "start": 26.68,
+          "end": 27.16,
+          "word": "可以",
+          "probability": 0.9640510082244873
+        },
+        {
+          "start": 27.16,
+          "end": 27.46,
+          "word": "點",
+          "probability": 0.9993628859519958
+        },
+        {
+          "start": 27.46,
+          "end": 27.68,
+          "word": "外",
+          "probability": 0.998377799987793
+        },
+        {
+          "start": 27.68,
+          "end": 27.9,
+          "word": "賣",
+          "probability": 0.9994860887527466
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2790,
+      "start": 28.540000000000003,
+      "end": 31.86,
+      "text": "只需要選擇好車站和想吃的東西",
+      "tokens": [
+        50364,
+        14003,
+        35748,
+        21625,
+        13167,
+        229,
+        2131,
+        25941,
+        34155,
+        12565,
+        7093,
+        10123,
+        1546,
+        26978,
+        50564
+      ],
+      "avg_logprob": -0.10276345719753856,
+      "compression_ratio": 1.1379310344827587,
+      "no_speech_prob": 0.05139214172959328,
+      "words": [
+        {
+          "start": 28.540000000000003,
+          "end": 29.1,
+          "word": "只",
+          "probability": 0.9652535915374756
+        },
+        {
+          "start": 29.1,
+          "end": 29.4,
+          "word": "需要",
+          "probability": 0.947394847869873
+        },
+        {
+          "start": 29.4,
+          "end": 29.66,
+          "word": "選",
+          "probability": 0.9769445657730103
+        },
+        {
+          "start": 29.66,
+          "end": 29.88,
+          "word": "擇",
+          "probability": 0.9957776665687561
+        },
+        {
+          "start": 29.88,
+          "end": 30.12,
+          "word": "好",
+          "probability": 0.9746749401092529
+        },
+        {
+          "start": 30.12,
+          "end": 30.34,
+          "word": "車",
+          "probability": 0.99812251329422
+        },
+        {
+          "start": 30.34,
+          "end": 30.58,
+          "word": "站",
+          "probability": 0.9865650534629822
+        },
+        {
+          "start": 30.58,
+          "end": 30.88,
+          "word": "和",
+          "probability": 0.9808634519577026
+        },
+        {
+          "start": 30.88,
+          "end": 31.12,
+          "word": "想",
+          "probability": 0.9953752160072327
+        },
+        {
+          "start": 31.12,
+          "end": 31.34,
+          "word": "吃",
+          "probability": 0.9945989847183228
+        },
+        {
+          "start": 31.34,
+          "end": 31.48,
+          "word": "的",
+          "probability": 0.9978379607200623
+        },
+        {
+          "start": 31.48,
+          "end": 31.86,
+          "word": "東西",
+          "probability": 0.9970715045928955
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 2790,
+      "start": 31.86,
+      "end": 34.58,
+      "text": "到站時不用下車",
+      "tokens": [
+        50564,
+        4511,
+        34155,
+        6611,
+        24384,
+        4438,
+        25941,
+        50714
+      ],
+      "avg_logprob": -0.10276345719753856,
+      "compression_ratio": 1.1379310344827587,
+      "no_speech_prob": 0.05139214172959328,
+      "words": [
+        {
+          "start": 31.86,
+          "end": 32.86,
+          "word": "到",
+          "probability": 0.595241367816925
+        },
+        {
+          "start": 32.86,
+          "end": 33.12,
+          "word": "站",
+          "probability": 0.8211687207221985
+        },
+        {
+          "start": 33.12,
+          "end": 33.44,
+          "word": "時",
+          "probability": 0.9785888195037842
+        },
+        {
+          "start": 33.44,
+          "end": 33.78,
+          "word": "不用",
+          "probability": 0.9249792098999023
+        },
+        {
+          "start": 33.78,
+          "end": 34.1,
+          "word": "下",
+          "probability": 0.994115948677063
+        },
+        {
+          "start": 34.1,
+          "end": 34.58,
+          "word": "車",
+          "probability": 0.9989364743232727
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 2790,
+      "start": 34.58,
+      "end": 37.2,
+      "text": "服務員就會給你拿過來",
+      "tokens": [
+        50714,
+        27408,
+        39517,
+        20992,
+        47778,
+        17798,
+        2166,
+        24351,
+        49950,
+        50864
+      ],
+      "avg_logprob": -0.10276345719753856,
+      "compression_ratio": 1.1379310344827587,
+      "no_speech_prob": 0.05139214172959328,
+      "words": [
+        {
+          "start": 34.58,
+          "end": 35.42,
+          "word": "服",
+          "probability": 0.4908064007759094
+        },
+        {
+          "start": 35.42,
+          "end": 35.6,
+          "word": "務",
+          "probability": 0.9998373985290527
+        },
+        {
+          "start": 35.6,
+          "end": 35.86,
+          "word": "員",
+          "probability": 0.9989116191864014
+        },
+        {
+          "start": 35.86,
+          "end": 36.14,
+          "word": "就會",
+          "probability": 0.983244001865387
+        },
+        {
+          "start": 36.14,
+          "end": 36.42,
+          "word": "給",
+          "probability": 0.9949131011962891
+        },
+        {
+          "start": 36.42,
+          "end": 36.56,
+          "word": "你",
+          "probability": 0.9857254028320312
+        },
+        {
+          "start": 36.56,
+          "end": 36.8,
+          "word": "拿",
+          "probability": 0.9958524703979492
+        },
+        {
+          "start": 36.8,
+          "end": 37.2,
+          "word": "過來",
+          "probability": 0.9866877198219299
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 10,
+      "seek": 2790,
+      "start": 38.08,
+      "end": 41.24,
+      "text": "現在喜歡坐高鐵的人越來越多",
+      "tokens": [
+        50864,
+        12648,
+        21385,
+        31123,
+        12979,
+        42411,
+        113,
+        29979,
+        25761,
+        3763,
+        25761,
+        6392,
+        51014
+      ],
+      "avg_logprob": -0.10276345719753856,
+      "compression_ratio": 1.1379310344827587,
+      "no_speech_prob": 0.05139214172959328,
+      "words": [
+        {
+          "start": 38.08,
+          "end": 38.64,
+          "word": "現在",
+          "probability": 0.9546919465065002
+        },
+        {
+          "start": 38.64,
+          "end": 39.2,
+          "word": "喜歡",
+          "probability": 0.964678943157196
+        },
+        {
+          "start": 39.2,
+          "end": 39.48,
+          "word": "坐",
+          "probability": 0.7734048366546631
+        },
+        {
+          "start": 39.48,
+          "end": 39.68,
+          "word": "高",
+          "probability": 0.9966897964477539
+        },
+        {
+          "start": 39.68,
+          "end": 39.88,
+          "word": "鐵",
+          "probability": 0.9987813532352448
+        },
+        {
+          "start": 39.88,
+          "end": 40.2,
+          "word": "的人",
+          "probability": 0.997289776802063
+        },
+        {
+          "start": 40.2,
+          "end": 40.48,
+          "word": "越",
+          "probability": 0.9870692491531372
+        },
+        {
+          "start": 40.48,
+          "end": 40.66,
+          "word": "來",
+          "probability": 0.9988214373588562
+        },
+        {
+          "start": 40.66,
+          "end": 40.84,
+          "word": "越",
+          "probability": 0.9993817806243896
+        },
+        {
+          "start": 40.84,
+          "end": 41.24,
+          "word": "多",
+          "probability": 0.9995275735855103
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 11,
+      "seek": 2790,
+      "start": 41.24,
+      "end": 44.12,
+      "text": "我爸媽來中國旅遊的時候",
+      "tokens": [
+        51014,
+        1654,
+        23855,
+        24812,
+        3763,
+        21854,
+        4479,
+        227,
+        31878,
+        20643,
+        51164
+      ],
+      "avg_logprob": -0.10276345719753856,
+      "compression_ratio": 1.1379310344827587,
+      "no_speech_prob": 0.05139214172959328,
+      "words": [
+        {
+          "start": 41.24,
+          "end": 42.06,
+          "word": "我",
+          "probability": 0.9604510068893433
+        },
+        {
+          "start": 42.06,
+          "end": 42.28,
+          "word": "爸",
+          "probability": 0.9812171459197998
+        },
+        {
+          "start": 42.28,
+          "end": 42.5,
+          "word": "媽",
+          "probability": 0.9975425004959106
+        },
+        {
+          "start": 42.5,
+          "end": 42.76,
+          "word": "來",
+          "probability": 0.9909932017326355
+        },
+        {
+          "start": 42.76,
+          "end": 43.1,
+          "word": "中國",
+          "probability": 0.9901447296142578
+        },
+        {
+          "start": 43.1,
+          "end": 43.46,
+          "word": "旅",
+          "probability": 0.9986717402935028
+        },
+        {
+          "start": 43.46,
+          "end": 43.66,
+          "word": "遊",
+          "probability": 0.9885454773902893
+        },
+        {
+          "start": 43.66,
+          "end": 44.12,
+          "word": "的時候",
+          "probability": 0.9610303640365601
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 12,
+      "seek": 2790,
+      "start": 44.12,
+      "end": 47.44,
+      "text": "必須帶他們也坐一次高鐵",
+      "tokens": [
+        51164,
+        28531,
+        8313,
+        230,
+        32379,
+        20486,
+        6404,
+        31123,
+        27505,
+        12979,
+        42411,
+        113,
+        51364
+      ],
+      "avg_logprob": -0.10276345719753856,
+      "compression_ratio": 1.1379310344827587,
+      "no_speech_prob": 0.05139214172959328,
+      "words": [
+        {
+          "start": 44.12,
+          "end": 44.98,
+          "word": "必",
+          "probability": 0.89832603931427
+        },
+        {
+          "start": 44.98,
+          "end": 45.22,
+          "word": "須",
+          "probability": 0.9981640875339508
+        },
+        {
+          "start": 45.22,
+          "end": 45.4,
+          "word": "帶",
+          "probability": 0.9909007549285889
+        },
+        {
+          "start": 45.4,
+          "end": 45.86,
+          "word": "他們",
+          "probability": 0.8092907071113586
+        },
+        {
+          "start": 45.86,
+          "end": 46.3,
+          "word": "也",
+          "probability": 0.975172221660614
+        },
+        {
+          "start": 46.3,
+          "end": 46.54,
+          "word": "坐",
+          "probability": 0.986190676689148
+        },
+        {
+          "start": 46.54,
+          "end": 46.86,
+          "word": "一次",
+          "probability": 0.9715422987937927
+        },
+        {
+          "start": 46.86,
+          "end": 47.12,
+          "word": "高",
+          "probability": 0.9979934692382812
+        },
+        {
+          "start": 47.12,
+          "end": 47.44,
+          "word": "鐵",
+          "probability": 0.9996640086174011
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 5.541262802000006,
+  "realTimeFactor": 0.11380174056446365,
+  "observationChecks": {
+    "rawWordCount": 126,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

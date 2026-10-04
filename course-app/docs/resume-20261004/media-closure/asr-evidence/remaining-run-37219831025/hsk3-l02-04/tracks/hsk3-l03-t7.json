@@ -1,0 +1,1070 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l03:audio7",
+    "level": 3,
+    "lesson": 3,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/3-7.mp3",
+    "sha256": "a9feebea1e38a1faa2170f4e188e893ca4fb2ca23421e648fca3ff8c35e80db2",
+    "bytes": 526121,
+    "manifestDurationSeconds": 30.344756,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 486505,
+      "durationSeconds": 30.4065625,
+      "sha256": "6b2421c9850017b2be9cda4a769303c8950533951163dcf8a10a5d637ffcc9d4"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 30.4065625,
+    "duration_after_vad": 30.4065625,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.62,
+      "text": "我覺得這個星期就能搬家",
+      "tokens": [
+        50364,
+        17689,
+        6287,
+        20682,
+        16786,
+        3111,
+        8225,
+        22220,
+        105,
+        5155,
+        50514
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.74,
+          "word": "我覺得",
+          "probability": 0.3695111572742462
+        },
+        {
+          "start": 0.74,
+          "end": 1.28,
+          "word": "這個",
+          "probability": 0.8758111596107483
+        },
+        {
+          "start": 1.28,
+          "end": 1.52,
+          "word": "星",
+          "probability": 0.9952338337898254
+        },
+        {
+          "start": 1.52,
+          "end": 1.76,
+          "word": "期",
+          "probability": 0.9999712705612183
+        },
+        {
+          "start": 1.76,
+          "end": 2.04,
+          "word": "就",
+          "probability": 0.9607559442520142
+        },
+        {
+          "start": 2.04,
+          "end": 2.2,
+          "word": "能",
+          "probability": 0.9971574544906616
+        },
+        {
+          "start": 2.2,
+          "end": 2.38,
+          "word": "搬",
+          "probability": 0.8999708592891693
+        },
+        {
+          "start": 2.38,
+          "end": 2.62,
+          "word": "家",
+          "probability": 0.9981836676597595
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.62,
+      "end": 5.14,
+      "text": "我明天去買一些紙箱",
+      "tokens": [
+        50514,
+        1654,
+        11100,
+        6135,
+        6734,
+        31001,
+        38515,
+        7732,
+        247,
+        11249,
+        109,
+        50634
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 2.62,
+          "end": 3.4,
+          "word": "我",
+          "probability": 0.6200229525566101
+        },
+        {
+          "start": 3.4,
+          "end": 3.56,
+          "word": "明",
+          "probability": 0.9973925352096558
+        },
+        {
+          "start": 3.56,
+          "end": 3.86,
+          "word": "天",
+          "probability": 0.9984571933746338
+        },
+        {
+          "start": 3.86,
+          "end": 4.24,
+          "word": "去",
+          "probability": 0.986905038356781
+        },
+        {
+          "start": 4.24,
+          "end": 4.42,
+          "word": "買",
+          "probability": 0.998767614364624
+        },
+        {
+          "start": 4.42,
+          "end": 4.68,
+          "word": "一些",
+          "probability": 0.9634881615638733
+        },
+        {
+          "start": 4.68,
+          "end": 4.88,
+          "word": "紙",
+          "probability": 0.9920581877231598
+        },
+        {
+          "start": 4.88,
+          "end": 5.14,
+          "word": "箱",
+          "probability": 0.9770089089870453
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.14,
+      "end": 7.12,
+      "text": "很快就能準備好",
+      "tokens": [
+        50634,
+        4563,
+        10251,
+        3111,
+        8225,
+        36241,
+        2131,
+        50734
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 5.14,
+          "end": 5.84,
+          "word": "很",
+          "probability": 0.6450963020324707
+        },
+        {
+          "start": 5.84,
+          "end": 6.16,
+          "word": "快",
+          "probability": 0.9977948665618896
+        },
+        {
+          "start": 6.16,
+          "end": 6.36,
+          "word": "就",
+          "probability": 0.9434853196144104
+        },
+        {
+          "start": 6.36,
+          "end": 6.5,
+          "word": "能",
+          "probability": 0.9926624298095703
+        },
+        {
+          "start": 6.5,
+          "end": 6.74,
+          "word": "準備",
+          "probability": 0.9925714135169983
+        },
+        {
+          "start": 6.74,
+          "end": 7.12,
+          "word": "好",
+          "probability": 0.9994446635246277
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 7.12,
+      "end": 8.6,
+      "text": "搬家那天",
+      "tokens": [
+        50734,
+        22220,
+        105,
+        5155,
+        4184,
+        6135,
+        50804
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 7.12,
+          "end": 7.98,
+          "word": "搬",
+          "probability": 0.9556629955768585
+        },
+        {
+          "start": 7.98,
+          "end": 8.16,
+          "word": "家",
+          "probability": 0.9995124340057373
+        },
+        {
+          "start": 8.16,
+          "end": 8.3,
+          "word": "那",
+          "probability": 0.9849114418029785
+        },
+        {
+          "start": 8.3,
+          "end": 8.6,
+          "word": "天",
+          "probability": 0.9991195797920227
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 8.6,
+      "end": 11.08,
+      "text": "我想請幾位朋友來幫忙",
+      "tokens": [
+        50804,
+        25246,
+        16302,
+        23575,
+        11160,
+        19828,
+        3763,
+        32187,
+        48839,
+        50924
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 8.6,
+          "end": 9.16,
+          "word": "我想",
+          "probability": 0.9142533540725708
+        },
+        {
+          "start": 9.16,
+          "end": 9.54,
+          "word": "請",
+          "probability": 0.9984450936317444
+        },
+        {
+          "start": 9.54,
+          "end": 9.76,
+          "word": "幾",
+          "probability": 0.9932296276092529
+        },
+        {
+          "start": 9.76,
+          "end": 9.88,
+          "word": "位",
+          "probability": 0.9766943454742432
+        },
+        {
+          "start": 9.88,
+          "end": 10.22,
+          "word": "朋友",
+          "probability": 0.9977444410324097
+        },
+        {
+          "start": 10.22,
+          "end": 10.54,
+          "word": "來",
+          "probability": 0.9918476343154907
+        },
+        {
+          "start": 10.54,
+          "end": 10.72,
+          "word": "幫",
+          "probability": 0.9912567138671875
+        },
+        {
+          "start": 10.72,
+          "end": 11.08,
+          "word": "忙",
+          "probability": 0.9998798370361328
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 11.08,
+      "end": 13.36,
+      "text": "最多一天就能搬完",
+      "tokens": [
+        50924,
+        8661,
+        6392,
+        2257,
+        6135,
+        3111,
+        8225,
+        22220,
+        105,
+        14128,
+        51054
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 11.08,
+          "end": 11.6,
+          "word": "最",
+          "probability": 0.9644739031791687
+        },
+        {
+          "start": 11.6,
+          "end": 11.86,
+          "word": "多",
+          "probability": 0.9994663596153259
+        },
+        {
+          "start": 11.86,
+          "end": 12.14,
+          "word": "一",
+          "probability": 0.9610505700111389
+        },
+        {
+          "start": 12.14,
+          "end": 12.44,
+          "word": "天",
+          "probability": 0.9967591166496277
+        },
+        {
+          "start": 12.44,
+          "end": 12.72,
+          "word": "就",
+          "probability": 0.9880173206329346
+        },
+        {
+          "start": 12.72,
+          "end": 12.9,
+          "word": "能",
+          "probability": 0.9948156476020813
+        },
+        {
+          "start": 12.9,
+          "end": 13.06,
+          "word": "搬",
+          "probability": 0.9735587537288666
+        },
+        {
+          "start": 13.06,
+          "end": 13.36,
+          "word": "完",
+          "probability": 0.9718287587165833
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 14.400000000000004,
+      "end": 16.62,
+      "text": "我覺得下個月才能搬家",
+      "tokens": [
+        51054,
+        17689,
+        4438,
+        3338,
+        6939,
+        18888,
+        8225,
+        22220,
+        105,
+        5155,
+        51204
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 14.400000000000004,
+          "end": 14.92,
+          "word": "我覺得",
+          "probability": 0.9438025951385498
+        },
+        {
+          "start": 14.92,
+          "end": 15.36,
+          "word": "下",
+          "probability": 0.9806843400001526
+        },
+        {
+          "start": 15.36,
+          "end": 15.54,
+          "word": "個",
+          "probability": 0.995374858379364
+        },
+        {
+          "start": 15.54,
+          "end": 15.68,
+          "word": "月",
+          "probability": 0.998132050037384
+        },
+        {
+          "start": 15.68,
+          "end": 15.88,
+          "word": "才",
+          "probability": 0.9990087747573853
+        },
+        {
+          "start": 15.88,
+          "end": 16.02,
+          "word": "能",
+          "probability": 0.99628084897995
+        },
+        {
+          "start": 16.02,
+          "end": 16.2,
+          "word": "搬",
+          "probability": 0.9990695118904114
+        },
+        {
+          "start": 16.2,
+          "end": 16.62,
+          "word": "家",
+          "probability": 0.9996273517608643
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 17.320000000000004,
+      "end": 18.78,
+      "text": "這週開始準備",
+      "tokens": [
+        51204,
+        2664,
+        38003,
+        21017,
+        36241,
+        51324
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 17.320000000000004,
+          "end": 17.84,
+          "word": "這",
+          "probability": 0.923093318939209
+        },
+        {
+          "start": 17.84,
+          "end": 18.02,
+          "word": "週",
+          "probability": 0.785570502281189
+        },
+        {
+          "start": 18.02,
+          "end": 18.24,
+          "word": "開始",
+          "probability": 0.9983539581298828
+        },
+        {
+          "start": 18.24,
+          "end": 18.78,
+          "word": "準備",
+          "probability": 0.9961307048797607
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 0,
+      "start": 18.78,
+      "end": 20.88,
+      "text": "下週去打掃新家",
+      "tokens": [
+        51324,
+        4438,
+        38003,
+        6734,
+        12467,
+        6900,
+        225,
+        12560,
+        5155,
+        51424
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 18.78,
+          "end": 19.58,
+          "word": "下",
+          "probability": 0.8888804316520691
+        },
+        {
+          "start": 19.58,
+          "end": 19.84,
+          "word": "週",
+          "probability": 0.9584071636199951
+        },
+        {
+          "start": 19.84,
+          "end": 20.04,
+          "word": "去",
+          "probability": 0.9969666600227356
+        },
+        {
+          "start": 20.04,
+          "end": 20.22,
+          "word": "打",
+          "probability": 0.9956472516059875
+        },
+        {
+          "start": 20.22,
+          "end": 20.38,
+          "word": "掃",
+          "probability": 0.9864886403083801
+        },
+        {
+          "start": 20.38,
+          "end": 20.62,
+          "word": "新",
+          "probability": 0.9941815733909607
+        },
+        {
+          "start": 20.62,
+          "end": 20.88,
+          "word": "家",
+          "probability": 0.9907323122024536
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 10,
+      "seek": 0,
+      "start": 20.88,
+      "end": 24.84,
+      "text": "這麼多事情最少需要兩個星期才能做完",
+      "tokens": [
+        51424,
+        21269,
+        6392,
+        24675,
+        8661,
+        15686,
+        35748,
+        34623,
+        20682,
+        16786,
+        18888,
+        8225,
+        10907,
+        14128,
+        51624
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 20.88,
+          "end": 21.84,
+          "word": "這麼",
+          "probability": 0.9545345306396484
+        },
+        {
+          "start": 21.84,
+          "end": 22.06,
+          "word": "多",
+          "probability": 0.9990184307098389
+        },
+        {
+          "start": 22.06,
+          "end": 22.34,
+          "word": "事情",
+          "probability": 0.9888622164726257
+        },
+        {
+          "start": 22.34,
+          "end": 22.74,
+          "word": "最",
+          "probability": 0.9669313430786133
+        },
+        {
+          "start": 22.74,
+          "end": 22.96,
+          "word": "少",
+          "probability": 0.997148334980011
+        },
+        {
+          "start": 22.96,
+          "end": 23.22,
+          "word": "需要",
+          "probability": 0.9936181306838989
+        },
+        {
+          "start": 23.22,
+          "end": 23.56,
+          "word": "兩個",
+          "probability": 0.9556522965431213
+        },
+        {
+          "start": 23.56,
+          "end": 23.86,
+          "word": "星",
+          "probability": 0.9985604882240295
+        },
+        {
+          "start": 23.86,
+          "end": 24.08,
+          "word": "期",
+          "probability": 0.9999775886535645
+        },
+        {
+          "start": 24.08,
+          "end": 24.26,
+          "word": "才",
+          "probability": 0.9994818568229675
+        },
+        {
+          "start": 24.26,
+          "end": 24.4,
+          "word": "能",
+          "probability": 0.9983283877372742
+        },
+        {
+          "start": 24.4,
+          "end": 24.58,
+          "word": "做",
+          "probability": 0.9851426482200623
+        },
+        {
+          "start": 24.58,
+          "end": 24.84,
+          "word": "完",
+          "probability": 0.9989566802978516
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 11,
+      "seek": 0,
+      "start": 24.84,
+      "end": 26.34,
+      "text": "搬家那天",
+      "tokens": [
+        51624,
+        22220,
+        105,
+        5155,
+        4184,
+        6135,
+        51694
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 24.84,
+          "end": 25.66,
+          "word": "搬",
+          "probability": 0.9854070246219635
+        },
+        {
+          "start": 25.66,
+          "end": 25.86,
+          "word": "家",
+          "probability": 0.9998492002487183
+        },
+        {
+          "start": 25.86,
+          "end": 26.02,
+          "word": "那",
+          "probability": 0.9938403367996216
+        },
+        {
+          "start": 26.02,
+          "end": 26.34,
+          "word": "天",
+          "probability": 0.9992677569389343
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 12,
+      "seek": 0,
+      "start": 26.34,
+      "end": 28.7,
+      "text": "我們應該找一家搬家公司",
+      "tokens": [
+        51694,
+        5884,
+        26087,
+        25085,
+        2257,
+        5155,
+        22220,
+        105,
+        5155,
+        13545,
+        32981,
+        51824
+      ],
+      "avg_logprob": -0.18386603085721126,
+      "compression_ratio": 1.4579439252336448,
+      "no_speech_prob": 0.031067121773958206,
+      "words": [
+        {
+          "start": 26.34,
+          "end": 26.86,
+          "word": "我們",
+          "probability": 0.9617147445678711
+        },
+        {
+          "start": 26.86,
+          "end": 27.24,
+          "word": "應該",
+          "probability": 0.9899305105209351
+        },
+        {
+          "start": 27.24,
+          "end": 27.5,
+          "word": "找",
+          "probability": 0.9980125427246094
+        },
+        {
+          "start": 27.5,
+          "end": 27.7,
+          "word": "一",
+          "probability": 0.9927480816841125
+        },
+        {
+          "start": 27.7,
+          "end": 27.84,
+          "word": "家",
+          "probability": 0.998056948184967
+        },
+        {
+          "start": 27.84,
+          "end": 28.1,
+          "word": "搬",
+          "probability": 0.9963452219963074
+        },
+        {
+          "start": 28.1,
+          "end": 28.28,
+          "word": "家",
+          "probability": 0.9999017715454102
+        },
+        {
+          "start": 28.28,
+          "end": 28.44,
+          "word": "公",
+          "probability": 0.9952581524848938
+        },
+        {
+          "start": 28.44,
+          "end": 28.7,
+          "word": "司",
+          "probability": 0.99782794713974
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 13,
+      "seek": 2870,
+      "start": 29.700000000000003,
+      "end": 30.12,
+      "text": "字幕by索兰娅",
+      "tokens": [
+        50364,
+        22381,
+        40211,
+        2322,
+        7732,
+        95,
+        2347,
+        108,
+        19976,
+        227,
+        50464
+      ],
+      "avg_logprob": -0.6715721040964127,
+      "compression_ratio": 0.6538461538461539,
+      "no_speech_prob": 0.7784420251846313,
+      "words": [
+        {
+          "start": 29.700000000000003,
+          "end": 29.94,
+          "word": "字",
+          "probability": 0.024357300251722336
+        },
+        {
+          "start": 29.94,
+          "end": 30.0,
+          "word": "幕",
+          "probability": 0.9967060685157776
+        },
+        {
+          "start": 30.0,
+          "end": 30.0,
+          "word": "by",
+          "probability": 0.06120729446411133
+        },
+        {
+          "start": 30.0,
+          "end": 30.0,
+          "word": "索",
+          "probability": 0.7220024615526199
+        },
+        {
+          "start": 30.0,
+          "end": 30.0,
+          "word": "兰",
+          "probability": 0.9157447814941406
+        },
+        {
+          "start": 30.0,
+          "end": 30.12,
+          "word": "娅",
+          "probability": 0.8413302600383759
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 4.862980492999952,
+  "realTimeFactor": 0.15993193880432727,
+  "observationChecks": {
+    "rawWordCount": 93,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

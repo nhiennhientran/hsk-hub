@@ -1,0 +1,545 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l04:audio1",
+    "level": 2,
+    "lesson": 4,
+    "track": 1,
+    "kind": "text",
+    "text": 1,
+    "file": "course-assets/hsk2/audio/4-1.mp3",
+    "sha256": "484210eadb0d17687e75912fbeec010749ad6bc335641ecfd539179f57fb1624",
+    "bytes": 481056,
+    "manifestDurationSeconds": 18.053333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 288768,
+      "durationSeconds": 18.048,
+      "sha256": "968edec232115a6b5462a3f6b1043dbfc1ddcfef0aebfaf9ce4837cb1c96e4c3"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 18.048,
+    "duration_after_vad": 18.048,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 3.38,
+      "text": "妈妈,我们来过这家商场吗?",
+      "tokens": [
+        50364,
+        32462,
+        32462,
+        11,
+        15003,
+        6912,
+        16866,
+        5562,
+        5155,
+        45581,
+        50255,
+        14769,
+        30,
+        50564
+      ],
+      "avg_logprob": -0.20585575352112453,
+      "compression_ratio": 1.0579710144927537,
+      "no_speech_prob": 0.07459922879934311,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 1.06,
+          "word": "妈",
+          "probability": 0.282436341047287
+        },
+        {
+          "start": 1.06,
+          "end": 1.26,
+          "word": "妈,",
+          "probability": 0.9592864513397217
+        },
+        {
+          "start": 1.74,
+          "end": 1.96,
+          "word": "我们",
+          "probability": 0.8199953436851501
+        },
+        {
+          "start": 1.96,
+          "end": 2.18,
+          "word": "来",
+          "probability": 0.974592387676239
+        },
+        {
+          "start": 2.18,
+          "end": 2.34,
+          "word": "过",
+          "probability": 0.976264476776123
+        },
+        {
+          "start": 2.34,
+          "end": 2.5,
+          "word": "这",
+          "probability": 0.973712682723999
+        },
+        {
+          "start": 2.5,
+          "end": 2.66,
+          "word": "家",
+          "probability": 0.9903263449668884
+        },
+        {
+          "start": 2.66,
+          "end": 2.84,
+          "word": "商",
+          "probability": 0.992633044719696
+        },
+        {
+          "start": 2.84,
+          "end": 3.06,
+          "word": "场",
+          "probability": 0.9200166463851929
+        },
+        {
+          "start": 3.06,
+          "end": 3.38,
+          "word": "吗?",
+          "probability": 0.9304563999176025
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.74,
+      "end": 7.1,
+      "text": "没来过,这是新开的。",
+      "tokens": [
+        50564,
+        10062,
+        6912,
+        16866,
+        11,
+        27455,
+        12560,
+        18937,
+        1546,
+        1543,
+        50714
+      ],
+      "avg_logprob": -0.20585575352112453,
+      "compression_ratio": 1.0579710144927537,
+      "no_speech_prob": 0.07459922879934311,
+      "words": [
+        {
+          "start": 4.74,
+          "end": 5.04,
+          "word": "没",
+          "probability": 0.9553369879722595
+        },
+        {
+          "start": 5.04,
+          "end": 5.24,
+          "word": "来",
+          "probability": 0.984582245349884
+        },
+        {
+          "start": 5.24,
+          "end": 5.48,
+          "word": "过,",
+          "probability": 0.9964888095855713
+        },
+        {
+          "start": 5.92,
+          "end": 6.2,
+          "word": "这是",
+          "probability": 0.9426447749137878
+        },
+        {
+          "start": 6.2,
+          "end": 6.5,
+          "word": "新",
+          "probability": 0.9968041181564331
+        },
+        {
+          "start": 6.5,
+          "end": 6.74,
+          "word": "开",
+          "probability": 0.9956085085868835
+        },
+        {
+          "start": 6.74,
+          "end": 7.1,
+          "word": "的。",
+          "probability": 0.9956249594688416
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 7.76,
+      "end": 9.68,
+      "text": "我们进去看看吧。",
+      "tokens": [
+        50714,
+        15003,
+        36700,
+        6734,
+        22884,
+        6062,
+        1543,
+        50864
+      ],
+      "avg_logprob": -0.20585575352112453,
+      "compression_ratio": 1.0579710144927537,
+      "no_speech_prob": 0.07459922879934311,
+      "words": [
+        {
+          "start": 7.76,
+          "end": 8.26,
+          "word": "我们",
+          "probability": 0.9658560752868652
+        },
+        {
+          "start": 8.26,
+          "end": 8.48,
+          "word": "进",
+          "probability": 0.9905446767807007
+        },
+        {
+          "start": 8.48,
+          "end": 8.72,
+          "word": "去",
+          "probability": 0.9916604161262512
+        },
+        {
+          "start": 8.72,
+          "end": 9.0,
+          "word": "看看",
+          "probability": 0.9941351413726807
+        },
+        {
+          "start": 9.0,
+          "end": 9.68,
+          "word": "吧。",
+          "probability": 0.9882799386978149
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 10.38,
+      "end": 12.58,
+      "text": "好啊,你想买点什么?",
+      "tokens": [
+        50864,
+        2131,
+        4905,
+        11,
+        38386,
+        2930,
+        108,
+        12579,
+        10440,
+        30,
+        51014
+      ],
+      "avg_logprob": -0.20585575352112453,
+      "compression_ratio": 1.0579710144927537,
+      "no_speech_prob": 0.07459922879934311,
+      "words": [
+        {
+          "start": 10.38,
+          "end": 10.62,
+          "word": "好",
+          "probability": 0.9744764566421509
+        },
+        {
+          "start": 10.62,
+          "end": 10.88,
+          "word": "啊,",
+          "probability": 0.8041224479675293
+        },
+        {
+          "start": 11.6,
+          "end": 11.84,
+          "word": "你想",
+          "probability": 0.9548594951629639
+        },
+        {
+          "start": 11.84,
+          "end": 12.12,
+          "word": "买",
+          "probability": 0.9915682077407837
+        },
+        {
+          "start": 12.12,
+          "end": 12.3,
+          "word": "点",
+          "probability": 0.9802619218826294
+        },
+        {
+          "start": 12.3,
+          "end": 12.58,
+          "word": "什么?",
+          "probability": 0.9552332162857056
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 13.58,
+      "end": 15.12,
+      "text": "我想买条裤子。",
+      "tokens": [
+        51014,
+        25246,
+        2930,
+        108,
+        48837,
+        8083,
+        97,
+        7626,
+        1543,
+        51164
+      ],
+      "avg_logprob": -0.20585575352112453,
+      "compression_ratio": 1.0579710144927537,
+      "no_speech_prob": 0.07459922879934311,
+      "words": [
+        {
+          "start": 13.58,
+          "end": 14.0,
+          "word": "我想",
+          "probability": 0.9543198347091675
+        },
+        {
+          "start": 14.0,
+          "end": 14.4,
+          "word": "买",
+          "probability": 0.996427059173584
+        },
+        {
+          "start": 14.4,
+          "end": 14.6,
+          "word": "条",
+          "probability": 0.6029080152511597
+        },
+        {
+          "start": 14.6,
+          "end": 14.86,
+          "word": "裤",
+          "probability": 0.9677720665931702
+        },
+        {
+          "start": 14.86,
+          "end": 15.12,
+          "word": "子。",
+          "probability": 0.9993425011634827
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 16.2,
+      "end": 16.74,
+      "text": "没问题。",
+      "tokens": [
+        51164,
+        10062,
+        34069,
+        1543,
+        51264
+      ],
+      "avg_logprob": -0.20585575352112453,
+      "compression_ratio": 1.0579710144927537,
+      "no_speech_prob": 0.07459922879934311,
+      "words": [
+        {
+          "start": 16.2,
+          "end": 16.44,
+          "word": "没",
+          "probability": 0.997536301612854
+        },
+        {
+          "start": 16.44,
+          "end": 16.74,
+          "word": "问题。",
+          "probability": 0.9975132942199707
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.6146462030000066,
+  "realTimeFactor": 0.08946399617686207,
+  "observationChecks": {
+    "rawWordCount": 35,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

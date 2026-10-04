@@ -1,0 +1,60 @@
+{
+  "status": "independently-accepted-engineering-checkpoint-not-release",
+  "sourceCommit": "c9c515fcba394534787edcbd95968c58d8cf80d2",
+  "sourceDirty": true,
+  "sourceSnapshotSHA256": "3089f02f0392fc0171c82333011334e94d4da9e487419d993327bdef4a85ad9e",
+  "assembledDirectory": "/workspace/scratch/28b55072841a/package-closure-assembled-final-guarded",
+  "inventorySHA256": "6475b01b90eaab19b479ef7f8c001f6627f5cc0601fd2296d6cef18f252d348c",
+  "unifiedManifestSHA256": "644d3634e615d7e6c6ad5afdf139c0eb60a719a5a871f7f7d9b730e113a53032",
+  "baselineFiles": 1446,
+  "baselineUnservedExclusions": 55,
+  "authorizedReplacements": 11,
+  "protectedPublicFiles": 1380,
+  "assembledFiles": 3893,
+  "nativeChromium": {
+    "startTime": "2026-10-04T17:28:48.194Z",
+    "duration": 10602.912,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "packageUnitCases": 7,
+  "allPackageRegressionCases": 15,
+  "negativeProbes": 22,
+  "browserFixtureTypecheck": "passed",
+  "webkit": "not-run-locally",
+  "publication": "not-authorized",
+  "toolRevisionAfterV2Freeze": true,
+  "finalToolFiles": {
+    "course-app/tools/package-unified.mjs": "acd9c9b664104bd9311dc624c1769d3a0f8c05546cc831aa2e270bddc6983a34",
+    "course-app/tools/assemble-unified-checkpoint.mjs": "b47964a655f069084f8c1de15098ea490c4e16e141b8bd9abf9b4baa7a87117d",
+    "course-app/tests/package-unified.test.mjs": "3536fe26d19cd663500e477d6dac4e3df2539630b0ddec62f2b015db13c02d1d",
+    "course-app/tests/packaged/unified-source.spec.ts": "f51048ba409ba5dc19521d763fc135d570c749e8867a52c9ffca00c92c41a33e",
+    "course-app/playwright.package-closure.config.ts": "9f8bafb77f6c3e561d62a8375fd851ba81121c7fcab8f09a970abf5f05a1b353",
+    "course-app/tsconfig.package-check.json": "808445403c37c0aec6c1890ce703f3fc66e4e94ce509cc517e0cf654795aa8c8"
+  },
+  "evidenceFiles": {
+    "assembly-report-final-guarded.json": "5712f34decbcb80f7647fae6b2cefa0d7201a703fe8906520f4f0d28e15361c7",
+    "native-package-chromium.json": "945777f33eece5ea1a07b2f7b9c94904fdbc5e942be40bb4c156fc3c36260c4e",
+    "negative-probes-v2.json": "f77e443e09b9cbb04848c575bc13b1d8d9751dcc75d523516a1f54ce330f4b43",
+    "negative-probes-final-guarded.json": "4472f004cdf06d34c64f90879d66f9080abff42c88778a4589aab75981144301",
+    "native-package-v2-chromium.json": "3ed21f63e38fa06023acffe2396b1cfd9301fa420ae13a65e39d011904c5e8b3",
+    "negative-probes.json": "22f83bdfa102b53e3138819fd4aee4b39f1f3a40306b0614de1c07520d8acaeb",
+    "assembly-report-url-guarded.json": "16a4d7e564087cc444b8591a3fefa70066f413c4e801ec57cbb49478710e7227",
+    "negative-probes-url-guarded.json": "158dc9e5ae6ee35dbe3de159ad3c39c55c64da1bc109598e2747644a689dce26",
+    "negative-probes-guarded.json": "812bb80903553246ae18eb752ffeac326f375fa9897df0a0a97d723f645f35db",
+    "assembly-report-guarded.json": "f335044e01abc4eab2abe03413dd2d0283800f91c38da5c15b533362ea319483",
+    "assembly-report.json": "d84c87a0c263250180c720c40ebcc45b7f9b51f389f77e2f3ac55a9efafa7023",
+    "runtime-byte-comparison-v1-v2.json": "f0fac0f0099d08a75d0544348bcd2bffdd96c834021a90fa174f48a67761e879",
+    "verify-negative-guards.mjs": "bf4ba2a264b998264cd5d3e37f06a9ac0b64eaa36daa60b418b2bd9e7735a274",
+    "assembly-report-v2.json": "ab0b226bb45db07b8b09a09c2581f1d0fd4768abcf4759bfc28b7319add607b5"
+  },
+  "independentReview": {
+    "path": "course-app/docs/resume-20261004/qa-package-closure/independent-guards.json",
+    "sha256": "c6dbded8bda4351ba26a04e51aa24dacb5eb7a701eaba3bae49642a9439f669d",
+    "status": "passed",
+    "negativeProbes": 27,
+    "scope": "Independent actual negative probes and byte inventory. No browser rerun, no deployment, no modification of original baseline/frozen/dist."
+  }
+}

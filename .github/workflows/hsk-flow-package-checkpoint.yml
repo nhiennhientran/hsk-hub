@@ -27,6 +27,8 @@ jobs:
           npm test --prefix course-app
           course-app/node_modules/.bin/tsc -p course-app/tsconfig.flow-check.json
           course-app/node_modules/.bin/tsc -p course-app/tsconfig.package-check.json
+          course-app/node_modules/.bin/tsc -p course-app/tsconfig.reviewed-sentences-check.json
+          course-app/node_modules/.bin/tsc -p course-app/docs/resume-20261004/source-font-visual/tsconfig.json
       - name: Install browser and Chinese fonts
         working-directory: course-app
         run: npx playwright install --with-deps ${{ matrix.browser }} && sudo apt-get install -y fonts-noto-cjk
@@ -44,12 +46,11 @@ jobs:
       - name: Build retained HSK1 app
         if: matrix.scope == 'retained-hsk1'
         run: npm run build --prefix hsk1-app
-      - name: Retained HSK1 flows, excluding original password-dependent fixture
+      - name: All original retained HSK1 flows with existing private test-fixture wrapper
         if: matrix.scope == 'retained-hsk1'
-        working-directory: course-app/docs/resume-20261004/flow-compat-review
         run: |
-          node ../../../../hsk1-app/node_modules/@playwright/test/cli.js test --config=playwright.hsk1-retained.config.ts --project=${{ matrix.browser }} --grep-invert 'a downloaded nonempty backup restores identical data in a new context and one import-before recovery'
-          cp hsk1-retained-results.json hsk1-retained-ci-results.json
+          node hsk1-app/tools/run-checkpoint.mjs browser --config=../course-app/docs/resume-20261004/flow-compat-review/playwright.hsk1-retained.config.ts --project=${{ matrix.browser }}
+          cp course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-results.json course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-ci-results.json
       - name: Fresh-context backup with explicit test-session authorization
         if: matrix.scope == 'retained-hsk1'
         working-directory: course-app/docs/resume-20261004/flow-compat-review
@@ -62,7 +63,7 @@ jobs:
         if: matrix.scope == 'package'
         working-directory: course-app
         run: |
-          node tools/package-unified.mjs --build --input dist-flow-package --output unified-frozen-flow-package
+          node tools/package-unified.mjs --build --input dist --output unified-frozen-flow-package
           mkdir baseline-protected-flow-package
           git -C .. archive 2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4 | tar -x -C baseline-protected-flow-package
           node tools/assemble-unified-checkpoint.mjs baseline-protected-flow-package unified-frozen-flow-package unified-site-flow-package .repro-output/flow-package-assembly.json
@@ -78,6 +79,16 @@ jobs:
         env:
           FLOW_PACKAGE_ROOT: ${{ github.workspace }}/course-app/unified-site-flow-package
         run: node ../../../node_modules/@playwright/test/cli.js test --config=playwright.legacy.config.ts --project=${{ matrix.browser }}
+      - name: Reviewed partial sentence ranges and safe fallback
+        if: matrix.scope == 'package'
+        working-directory: course-app
+        run: |
+          npm run build -- --outDir .repro-output/media-reviewed-subset/dist
+          npx playwright test --config=playwright.reviewed-sentences.config.ts --project=${{ matrix.browser }}
+      - name: Printed listening pinyin and blank source headers in installed fonts
+        if: matrix.scope == 'package'
+        working-directory: course-app
+        run: npx playwright test --config=docs/resume-20261004/source-font-visual/playwright.source-font-visual.config.ts --project=${{ matrix.browser }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -86,7 +97,13 @@ jobs:
           path: |
             course-app/.repro-output/flow-package-assembly.json
             course-app/.repro-output/package-closure-browser.json
+            course-app/.repro-output/media-reviewed-subset/browser-results.json
+            course-app/.repro-output/media-reviewed-subset/browser-artifacts/
             course-app/test-results-package-closure/**/*.md
+            course-app/docs/resume-20261004/source-font-visual/native-results.json
+            course-app/docs/resume-20261004/source-font-visual/native-output/
+            hsk1-app/test-results/**/*.png
+            hsk1-app/.repro-output/mixed-preview/**/*.png
             course-app/docs/resume-20261004/flow-compat-review/native-flow-results.json
             course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-results.json
             course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-ci-results.json

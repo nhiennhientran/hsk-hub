@@ -1,0 +1,645 @@
+{
+  "schemaVersion": 1,
+  "status": "independent actual source/crop/artifact/content/window verification passed; decision is separate",
+  "runId": 37219656715,
+  "checksPassed": 169,
+  "checks": [
+    "limited recipe fixed SHA",
+    "expected source separately SHA bound",
+    "author post-crop frozen SHA",
+    "three unique IDs only",
+    "small completed3",
+    "small actual committed head",
+    "small worker SHA",
+    "small helper/requirements SHA",
+    "small frozen recipe actual",
+    "small exact all unprompted options",
+    "small exact requested/actual model",
+    "small model recorded file SHA match accepted fulltrack",
+    "small actual pinned dependency faster-whisper",
+    "small actual pinned dependency ctranslate2",
+    "small actual pinned dependency huggingface-hub",
+    "small actual pinned dependency av",
+    "small actual pinned dependency tokenizers",
+    "small actual pinned dependency onnxruntime",
+    "small actual pinned dependency numpy",
+    "small actual pinned dependency coloredlogs",
+    "small actual pinned dependency flatbuffers",
+    "small actual pinned dependency packaging",
+    "small actual pinned dependency protobuf",
+    "small actual pinned dependency sympy",
+    "small actual pinned dependency mpmath",
+    "small actual pinned dependency humanfriendly",
+    "small actual pinned dependency filelock",
+    "small actual pinned dependency fsspec",
+    "small actual pinned dependency PyYAML",
+    "small actual pinned dependency requests",
+    "small actual pinned dependency tqdm",
+    "small actual pinned dependency typing_extensions",
+    "small actual pinned dependency hf-xet",
+    "small actual pinned dependency certifi",
+    "small actual pinned dependency charset-normalizer",
+    "small actual pinned dependency idna",
+    "small actual pinned dependency urllib3",
+    "small actual pinned dependency setuptools",
+    "small exactly one actualZIP",
+    "small ZIP CRC",
+    "small ZIP exact expanded crops/crop-01.json",
+    "small ZIP exact expanded crops/crop-02.json",
+    "small ZIP exact expanded crops/crop-03.json",
+    "small ZIP exact expanded pip-freeze.txt",
+    "small ZIP exact expanded pip-install-report.json",
+    "small ZIP exact expanded run.json",
+    "medium completed3",
+    "medium actual committed head",
+    "medium worker SHA",
+    "medium helper/requirements SHA",
+    "medium frozen recipe actual",
+    "medium exact all unprompted options",
+    "medium exact requested/actual model",
+    "medium model recorded file SHA match accepted fulltrack",
+    "medium actual pinned dependency faster-whisper",
+    "medium actual pinned dependency ctranslate2",
+    "medium actual pinned dependency huggingface-hub",
+    "medium actual pinned dependency av",
+    "medium actual pinned dependency tokenizers",
+    "medium actual pinned dependency onnxruntime",
+    "medium actual pinned dependency numpy",
+    "medium actual pinned dependency coloredlogs",
+    "medium actual pinned dependency flatbuffers",
+    "medium actual pinned dependency packaging",
+    "medium actual pinned dependency protobuf",
+    "medium actual pinned dependency sympy",
+    "medium actual pinned dependency mpmath",
+    "medium actual pinned dependency humanfriendly",
+    "medium actual pinned dependency filelock",
+    "medium actual pinned dependency fsspec",
+    "medium actual pinned dependency PyYAML",
+    "medium actual pinned dependency requests",
+    "medium actual pinned dependency tqdm",
+    "medium actual pinned dependency typing_extensions",
+    "medium actual pinned dependency hf-xet",
+    "medium actual pinned dependency certifi",
+    "medium actual pinned dependency charset-normalizer",
+    "medium actual pinned dependency idna",
+    "medium actual pinned dependency urllib3",
+    "medium actual pinned dependency setuptools",
+    "medium exactly one actualZIP",
+    "medium ZIP CRC",
+    "medium ZIP exact expanded crops/crop-01.json",
+    "medium ZIP exact expanded crops/crop-03.json",
+    "medium ZIP exact expanded crops/crop-02.json",
+    "medium ZIP exact expanded pip-freeze.txt",
+    "medium ZIP exact expanded pip-install-report.json",
+    "medium ZIP exact expanded run.json",
+    "frozen canonical lesson SHA hsk2-fltrp-2026:l04:text2:line3",
+    "expected exact canonical Chinese/source hsk2-fltrp-2026:l04:text2:line3",
+    "sourceMP3 exactSHA hsk2-fltrp-2026:l04:text2:line3",
+    "full sourcePCM exactSHA hsk2-fltrp-2026:l04:text2:line3",
+    "sourceframe times exact hsk2-fltrp-2026:l04:text2:line3",
+    "actualcrop PCM exactSHA hsk2-fltrp-2026:l04:text2:line3",
+    "actual frame RMS author agreement hsk2-fltrp-2026:l04:text2:line3",
+    "all physical/quiet edges below57dB hsk2-fltrp-2026:l04:text2:line3",
+    "probe actualSHA hsk2-fltrp-2026:l04:text2:line3",
+    "WAV header/frames/contentexact hsk2-fltrp-2026:l04:text2:line3",
+    "actual WAV complete decode hsk2-fltrp-2026:l04:text2:line3",
+    "raw actual artifact SHA smallhsk2-fltrp-2026:l04:text2:line3",
+    "raw original identity/samples/cropSHA smallhsk2-fltrp-2026:l04:text2:line3",
+    "raw exact model/options smallhsk2-fltrp-2026:l04:text2:line3",
+    "full normalized Chinese exactly target,no neighboring CJK smallhsk2-fltrp-2026:l04:text2:line3",
+    "word arrays coherent with raw segment Chinese smallhsk2-fltrp-2026:l04:text2:line3",
+    "no foreign lexical tokens/digits hidden by CJK filter smallhsk2-fltrp-2026:l04:text2:line3",
+    "no zero/inverted/out-of-bounds word smallhsk2-fltrp-2026:l04:text2:line3",
+    "no overlapping words smallhsk2-fltrp-2026:l04:text2:line3",
+    "raw actual artifact SHA mediumhsk2-fltrp-2026:l04:text2:line3",
+    "raw original identity/samples/cropSHA mediumhsk2-fltrp-2026:l04:text2:line3",
+    "raw exact model/options mediumhsk2-fltrp-2026:l04:text2:line3",
+    "full normalized Chinese exactly target,no neighboring CJK mediumhsk2-fltrp-2026:l04:text2:line3",
+    "word arrays coherent with raw segment Chinese mediumhsk2-fltrp-2026:l04:text2:line3",
+    "no foreign lexical tokens/digits hidden by CJK filter mediumhsk2-fltrp-2026:l04:text2:line3",
+    "no zero/inverted/out-of-bounds word mediumhsk2-fltrp-2026:l04:text2:line3",
+    "no overlapping words mediumhsk2-fltrp-2026:l04:text2:line3",
+    "frozen canonical lesson SHA hsk2-fltrp-2026:l04:word16",
+    "expected exact canonical Chinese/source hsk2-fltrp-2026:l04:word16",
+    "sourceMP3 exactSHA hsk2-fltrp-2026:l04:word16",
+    "full sourcePCM exactSHA hsk2-fltrp-2026:l04:word16",
+    "sourceframe times exact hsk2-fltrp-2026:l04:word16",
+    "actualcrop PCM exactSHA hsk2-fltrp-2026:l04:word16",
+    "actual frame RMS author agreement hsk2-fltrp-2026:l04:word16",
+    "all physical/quiet edges below57dB hsk2-fltrp-2026:l04:word16",
+    "probe actualSHA hsk2-fltrp-2026:l04:word16",
+    "WAV header/frames/contentexact hsk2-fltrp-2026:l04:word16",
+    "actual WAV complete decode hsk2-fltrp-2026:l04:word16",
+    "raw actual artifact SHA smallhsk2-fltrp-2026:l04:word16",
+    "raw original identity/samples/cropSHA smallhsk2-fltrp-2026:l04:word16",
+    "raw exact model/options smallhsk2-fltrp-2026:l04:word16",
+    "full normalized Chinese exactly target,no neighboring CJK smallhsk2-fltrp-2026:l04:word16",
+    "word arrays coherent with raw segment Chinese smallhsk2-fltrp-2026:l04:word16",
+    "no foreign lexical tokens/digits hidden by CJK filter smallhsk2-fltrp-2026:l04:word16",
+    "no zero/inverted/out-of-bounds word smallhsk2-fltrp-2026:l04:word16",
+    "no overlapping words smallhsk2-fltrp-2026:l04:word16",
+    "raw actual artifact SHA mediumhsk2-fltrp-2026:l04:word16",
+    "raw original identity/samples/cropSHA mediumhsk2-fltrp-2026:l04:word16",
+    "raw exact model/options mediumhsk2-fltrp-2026:l04:word16",
+    "full normalized Chinese exactly target,no neighboring CJK mediumhsk2-fltrp-2026:l04:word16",
+    "word arrays coherent with raw segment Chinese mediumhsk2-fltrp-2026:l04:word16",
+    "no foreign lexical tokens/digits hidden by CJK filter mediumhsk2-fltrp-2026:l04:word16",
+    "no zero/inverted/out-of-bounds word mediumhsk2-fltrp-2026:l04:word16",
+    "no overlapping words mediumhsk2-fltrp-2026:l04:word16",
+    "frozen canonical lesson SHA hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "expected exact canonical Chinese/source hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "sourceMP3 exactSHA hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "full sourcePCM exactSHA hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "sourceframe times exact hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "actualcrop PCM exactSHA hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "actual frame RMS author agreement hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "all physical/quiet edges below57dB hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "probe actualSHA hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "WAV header/frames/contentexact hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "actual WAV complete decode hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "raw actual artifact SHA smallhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "raw original identity/samples/cropSHA smallhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "raw exact model/options smallhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "full normalized Chinese exactly target,no neighboring CJK smallhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "word arrays coherent with raw segment Chinese smallhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "no foreign lexical tokens/digits hidden by CJK filter smallhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "no zero/inverted/out-of-bounds word smallhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "no overlapping words smallhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "raw actual artifact SHA mediumhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "raw original identity/samples/cropSHA mediumhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "raw exact model/options mediumhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "full normalized Chinese exactly target,no neighboring CJK mediumhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "word arrays coherent with raw segment Chinese mediumhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "no foreign lexical tokens/digits hidden by CJK filter mediumhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "no zero/inverted/out-of-bounds word mediumhsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "no overlapping words mediumhsk2-fltrp-2026:l05:text2:line8:sentence2"
+  ],
+  "inputFiles": [
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/padded-crop-review-input.json",
+      "sha256": "3ccb4354bc7ff3a899adb7543c97524989d6e9ca4ed5a348d7299456d7ee3ccf"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/padded-crop-expected-source.json",
+      "sha256": "88a651c0b8785e85d560b47e45499bff6acc993f4494f903de0f5a8922e77672"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/transcribe-candidate-crops.py",
+      "sha256": "233ece05705436f3840f2ff68da9b7c7b2d817bd842d715707670696a85b4b15"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/three-crop-crosscheck-verification.json",
+      "sha256": "6bd4f764844b9b3dfda7b218e24028c993c0a47b89d07b8ea564cbcce90f1ac7"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/small/run.json",
+      "sha256": "57682e3e13846ff5bb9ed7d4352edbb28bfdb16d845aa23565f21528038830dc"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/medium/run.json",
+      "sha256": "5f7c8a253531cfb5a58d95ee605d5330042e9d5461429d65f7c10aa550cebc30"
+    }
+  ],
+  "actualZIPs": [
+    {
+      "model": "small",
+      "path": "/workspace/scratch/28b55072841a/attachments/89ab26d9-ec9b-47bb-bb07-210b02c2533f/hsk-three-crop-small-37219656715.zip",
+      "sha256": "4e8da10af65906235a39166dfd097f13dcbf79d89f11a2c7671aae838173f296",
+      "bytes": 106188,
+      "fileCount": 6,
+      "crc": "passed",
+      "expandedByteIdentity": "passed"
+    },
+    {
+      "model": "medium",
+      "path": "/workspace/scratch/28b55072841a/attachments/90fa608e-c494-4437-b982-6011e5e6cc4b/hsk-three-crop-medium-37219656715.zip",
+      "sha256": "2cbbf0eb68986aaffe4406696f7dc5820db396e6440f60077e4f854d8291ed4c",
+      "bytes": 106192,
+      "fileCount": 6,
+      "crc": "passed",
+      "expandedByteIdentity": "passed"
+    }
+  ],
+  "observationGlyphEquivalentsOnly": {
+    "為": "为",
+    "歡": "欢",
+    "們": "们",
+    "別": "别",
+    "氣": "气"
+  },
+  "glyphScope": "Only observed CJK glyphs in these six raw observations; raw unchanged, no textbook replacement, no homophone/number/erhua recovery",
+  "candidates": [
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line3",
+      "sourceChineseUnchanged": "因为我喜欢白色啊！",
+      "sourceLessonFile": "course-app/content/hsk2/lesson-04.json",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "sourceSHA256": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+      "sourcePCM_SHA256": "d167901daaffea375fabf9b67b10a321a590cd21a2c33e5ed92532a0f8dea020",
+      "sourceSampleRange16k": [
+        159680,
+        197921
+      ],
+      "sampleRate": 16000,
+      "start": 9.98,
+      "end": 12.3700625,
+      "cropPCM_SHA256": "9b5134a228ed340812cfddae48fd6fd0e70e58645b0aa78df2a2467ea88c2686",
+      "guardedWAV": {
+        "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/guarded-three-crop-wav-probes/guarded-crop-01.wav",
+        "sha256": "5def96a35fc1a747560756d8b230b5e8eca4e6a070e79cc1785dda0d3144a112"
+      },
+      "actualFrameBoundaryRMSDbFS20ms": {
+        "beforeStart": -64.134,
+        "afterStart": -67.004,
+        "beforeEnd": -58.599,
+        "afterEnd": -60.49
+      },
+      "sourceContext": {
+        "parentLineZH": "因为我喜欢白色啊！",
+        "previousLineZH": "你有很多白色的衣服，为什么还买白色的？",
+        "nextLineZH": "我觉得这条白色的不太好看，你试试那条红色的吧。",
+        "precedingSentenceWithinParent": null
+      },
+      "rawModels": [
+        {
+          "model": "small",
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/small/crops/crop-01.json",
+          "rawSHA256": "726aca5009b92b2a164e7444a537a7f40062df079df99d522aa78d58c094458f",
+          "rawTranscript": "因為我喜歡白色啊",
+          "rawCJK": "因為我喜歡白色啊",
+          "explicitGlyphNormalizedCJK": "因为我喜欢白色啊",
+          "strictCJKExact": false,
+          "afterFiveExplicitGlyphsExact": true,
+          "noRecognizedNeighborCJK": true,
+          "noHiddenForeignLexicalTokens": true,
+          "allRawWords": [
+            {
+              "start": 0.0,
+              "end": 0.66,
+              "word": "因為",
+              "probability": 0.4858502745628357
+            },
+            {
+              "start": 0.66,
+              "end": 0.88,
+              "word": "我",
+              "probability": 0.9834238290786743
+            },
+            {
+              "start": 0.88,
+              "end": 1.26,
+              "word": "喜歡",
+              "probability": 0.9846583604812622
+            },
+            {
+              "start": 1.26,
+              "end": 1.6,
+              "word": "白",
+              "probability": 0.9915069937705994
+            },
+            {
+              "start": 1.6,
+              "end": 1.88,
+              "word": "色",
+              "probability": 0.999896764755249
+            },
+            {
+              "start": 1.88,
+              "end": 2.04,
+              "word": "啊",
+              "probability": 0.8003705739974976
+            }
+          ],
+          "minimumRawWordProbability": 0.4858502745628357,
+          "rawLowProbabilityWordsBelow0_5": [
+            {
+              "start": 0.0,
+              "end": 0.66,
+              "word": "因為",
+              "probability": 0.4858502745628357
+            }
+          ],
+          "zeroDurationWordCount": 0,
+          "humanListening": false
+        },
+        {
+          "model": "medium",
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/medium/crops/crop-01.json",
+          "rawSHA256": "f0884967efb00b7c6e5df6da49c7e5dfdf52bc83326c0aa662c84ad994332eac",
+          "rawTranscript": "因为我喜欢白色啊!",
+          "rawCJK": "因为我喜欢白色啊",
+          "explicitGlyphNormalizedCJK": "因为我喜欢白色啊",
+          "strictCJKExact": true,
+          "afterFiveExplicitGlyphsExact": true,
+          "noRecognizedNeighborCJK": true,
+          "noHiddenForeignLexicalTokens": true,
+          "allRawWords": [
+            {
+              "start": 0.0,
+              "end": 0.74,
+              "word": "因为",
+              "probability": 0.8010820150375366
+            },
+            {
+              "start": 0.74,
+              "end": 1.06,
+              "word": "我",
+              "probability": 0.9956010580062866
+            },
+            {
+              "start": 1.06,
+              "end": 1.44,
+              "word": "喜欢",
+              "probability": 0.9981181621551514
+            },
+            {
+              "start": 1.44,
+              "end": 1.8,
+              "word": "白",
+              "probability": 0.9960108995437622
+            },
+            {
+              "start": 1.8,
+              "end": 1.92,
+              "word": "色",
+              "probability": 0.9988541603088379
+            },
+            {
+              "start": 1.92,
+              "end": 2.2,
+              "word": "啊!",
+              "probability": 0.9320341944694519
+            }
+          ],
+          "minimumRawWordProbability": 0.8010820150375366,
+          "rawLowProbabilityWordsBelow0_5": [],
+          "zeroDurationWordCount": 0,
+          "humanListening": false
+        }
+      ],
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word16",
+      "sourceChineseUnchanged": "颜色",
+      "sourceLessonFile": "course-app/content/hsk2/lesson-04.json",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "sourceTrack": "course-assets/hsk2/audio/4-8.mp3",
+      "sourceSHA256": "8d0a18324f7ef67634da7c2a941247c5807f63a3cbf89d1dad706d27d5e38020",
+      "sourcePCM_SHA256": "010c423f798fd0a3eea112ba61aa398680a25acc965943be5d138ce751e2caa5",
+      "sourceSampleRange16k": [
+        0,
+        50688
+      ],
+      "sampleRate": 16000,
+      "start": 0.0,
+      "end": 3.168,
+      "cropPCM_SHA256": "010c423f798fd0a3eea112ba61aa398680a25acc965943be5d138ce751e2caa5",
+      "guardedWAV": {
+        "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/guarded-three-crop-wav-probes/guarded-crop-02.wav",
+        "sha256": "e34799a6516ca25a0e899b1c2e3a26d1fb147ab6ce4d47daf0406428f9ceb5b7"
+      },
+      "actualFrameBoundaryRMSDbFS20ms": {
+        "beforeStart": null,
+        "afterStart": -240.0,
+        "beforeEnd": -57.252,
+        "afterEnd": null
+      },
+      "sourceContext": {
+        "onlyPrintedHeadwordInSourceTrack": true,
+        "wordAudioTrack": "4-8"
+      },
+      "rawModels": [
+        {
+          "model": "small",
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/small/crops/crop-02.json",
+          "rawSHA256": "d7dbae643ada9fdfc54e3a3f01df098b9ce99bb117ff2ad7bedbf740eb8625fc",
+          "rawTranscript": "颜色",
+          "rawCJK": "颜色",
+          "explicitGlyphNormalizedCJK": "颜色",
+          "strictCJKExact": true,
+          "afterFiveExplicitGlyphsExact": true,
+          "noRecognizedNeighborCJK": true,
+          "noHiddenForeignLexicalTokens": true,
+          "allRawWords": [
+            {
+              "start": 0.0,
+              "end": 0.78,
+              "word": "颜",
+              "probability": 0.9884420037269592
+            },
+            {
+              "start": 0.78,
+              "end": 1.28,
+              "word": "色",
+              "probability": 0.9997369647026062
+            }
+          ],
+          "minimumRawWordProbability": 0.9884420037269592,
+          "rawLowProbabilityWordsBelow0_5": [],
+          "zeroDurationWordCount": 0,
+          "humanListening": false
+        },
+        {
+          "model": "medium",
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/medium/crops/crop-02.json",
+          "rawSHA256": "af801138d28b9b426829140ce02aa58745a47013140836f16f73f6a85f802b29",
+          "rawTranscript": "颜色",
+          "rawCJK": "颜色",
+          "explicitGlyphNormalizedCJK": "颜色",
+          "strictCJKExact": true,
+          "afterFiveExplicitGlyphsExact": true,
+          "noRecognizedNeighborCJK": true,
+          "noHiddenForeignLexicalTokens": true,
+          "allRawWords": [
+            {
+              "start": 0.0,
+              "end": 1.04,
+              "word": "颜",
+              "probability": 0.9835443496704102
+            },
+            {
+              "start": 1.04,
+              "end": 1.54,
+              "word": "色",
+              "probability": 0.9999314546585083
+            }
+          ],
+          "minimumRawWordProbability": 0.9835443496704102,
+          "rawLowProbabilityWordsBelow0_5": [],
+          "zeroDurationWordCount": 0,
+          "humanListening": false
+        }
+      ],
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "sourceChineseUnchanged": "你们别客气，快坐吧！",
+      "sourceLessonFile": "course-app/content/hsk2/lesson-05.json",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "sourceSHA256": "7692432ee007f962b2e0d8a76642a0ad69e2696125f74b3572e1e287e249dcbd",
+      "sourcePCM_SHA256": "a5a433f2b95eca57609e5f752bb0aeeb52d66ebc3f46e126f62575670a9a7e95",
+      "sourceSampleRange16k": [
+        572480,
+        614240
+      ],
+      "sampleRate": 16000,
+      "start": 35.78,
+      "end": 38.39,
+      "cropPCM_SHA256": "fecfb51cc9cdcf8d4961e69ceb0265780c7375352667e500ef09821d97144072",
+      "guardedWAV": {
+        "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/guarded-three-crop-wav-probes/guarded-crop-03.wav",
+        "sha256": "5738aa74c5eed339d01138e24f0ea9a013de9999cd6cae90251bae3be0d014ae"
+      },
+      "actualFrameBoundaryRMSDbFS20ms": {
+        "beforeStart": -63.075,
+        "afterStart": -58.559,
+        "beforeEnd": -73.044,
+        "afterEnd": -60.25
+      },
+      "sourceContext": {
+        "parentLineZH": "谢谢！你们别客气，快坐吧！",
+        "previousLineZH": "一雪姐，这是给孩子们准备的礼物。",
+        "nextLineZH": null,
+        "precedingSentenceWithinParent": "谢谢！"
+      },
+      "rawModels": [
+        {
+          "model": "small",
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/small/crops/crop-03.json",
+          "rawSHA256": "30df21b4756161daeceb3e84e89e146d5c5ea6f2accd419ee5048715379ebc2e",
+          "rawTranscript": "你們別客氣,快坐吧!",
+          "rawCJK": "你們別客氣快坐吧",
+          "explicitGlyphNormalizedCJK": "你们别客气快坐吧",
+          "strictCJKExact": false,
+          "afterFiveExplicitGlyphsExact": true,
+          "noRecognizedNeighborCJK": true,
+          "noHiddenForeignLexicalTokens": true,
+          "allRawWords": [
+            {
+              "start": 0.0,
+              "end": 0.32,
+              "word": "你們",
+              "probability": 0.7468985319137573
+            },
+            {
+              "start": 0.32,
+              "end": 0.6,
+              "word": "別",
+              "probability": 0.9950560331344604
+            },
+            {
+              "start": 0.6,
+              "end": 0.84,
+              "word": "客",
+              "probability": 0.9993925094604492
+            },
+            {
+              "start": 0.84,
+              "end": 1.12,
+              "word": "氣,",
+              "probability": 0.9959861636161804
+            },
+            {
+              "start": 1.52,
+              "end": 1.78,
+              "word": "快",
+              "probability": 0.945342481136322
+            },
+            {
+              "start": 1.78,
+              "end": 2.0,
+              "word": "坐",
+              "probability": 0.8190979957580566
+            },
+            {
+              "start": 2.0,
+              "end": 2.24,
+              "word": "吧!",
+              "probability": 0.9952784776687622
+            }
+          ],
+          "minimumRawWordProbability": 0.7468985319137573,
+          "rawLowProbabilityWordsBelow0_5": [],
+          "zeroDurationWordCount": 0,
+          "humanListening": false
+        },
+        {
+          "model": "medium",
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/crop-run-37219656715/medium/crops/crop-03.json",
+          "rawSHA256": "50676a4a65ddb0794d391fbd1b928a50d8efc31eded14d84c3210882ae16565e",
+          "rawTranscript": "你們別客氣,快坐吧!",
+          "rawCJK": "你們別客氣快坐吧",
+          "explicitGlyphNormalizedCJK": "你们别客气快坐吧",
+          "strictCJKExact": false,
+          "afterFiveExplicitGlyphsExact": true,
+          "noRecognizedNeighborCJK": true,
+          "noHiddenForeignLexicalTokens": true,
+          "allRawWords": [
+            {
+              "start": 0.0,
+              "end": 0.44,
+              "word": "你們",
+              "probability": 0.46422383189201355
+            },
+            {
+              "start": 0.44,
+              "end": 0.76,
+              "word": "別",
+              "probability": 0.9768843054771423
+            },
+            {
+              "start": 0.76,
+              "end": 1.04,
+              "word": "客",
+              "probability": 0.9983575940132141
+            },
+            {
+              "start": 1.04,
+              "end": 1.48,
+              "word": "氣,",
+              "probability": 0.9990862607955933
+            },
+            {
+              "start": 1.72,
+              "end": 1.86,
+              "word": "快",
+              "probability": 0.9753725528717041
+            },
+            {
+              "start": 1.86,
+              "end": 2.14,
+              "word": "坐",
+              "probability": 0.939183235168457
+            },
+            {
+              "start": 2.14,
+              "end": 2.36,
+              "word": "吧!",
+              "probability": 0.993362545967102
+            }
+          ],
+          "minimumRawWordProbability": 0.46422383189201355,
+          "rawLowProbabilityWordsBelow0_5": [
+            {
+              "start": 0.0,
+              "end": 0.44,
+              "word": "你們",
+              "probability": 0.46422383189201355
+            }
+          ],
+          "zeroDurationWordCount": 0,
+          "humanListening": false
+        }
+      ],
+      "humanListening": false
+    }
+  ],
+  "modelBinaryVerificationScope": "recorded immutable snapshot and4file SHA match verified workers; model binaries not rehashed locally",
+  "humanListening": false,
+  "nativeSpeakerReview": false,
+  "productionMutationPerformed": false
+}

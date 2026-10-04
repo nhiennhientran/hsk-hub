@@ -1,13 +1,47 @@
 import type {Track} from './types.ts';
 export interface Verification {status:string;method:string;contentMatch?:string;observedTranscript?:string;humanListening:boolean;devicePlaybackCertified?:boolean;pronunciationToneCertified?:boolean}
-export interface VerifiedSegment {track:string;sourceHash?:string;start:number;end:number;sourceText:string;sourcePinyin?:string;unit?:string;repetition?:number;verification:Verification;subsegments?:string[];parentLineId?:string}
+export interface GuardedSentenceEvidence {sampleRate:number;sourceSampleRange:[number,number];sourcePCM_SHA256:string;cropPCM_SHA256:string;reviewReportSHA256:string;lowProbabilityFlagsRetained:boolean;observationGlyphMapping:Record<string,string>;rawModelEvidence:{model:string;file:string;sha256:string;rawTranscript:string;minimumRawProbability:number;rawLowProbabilityWordsBelow0_5:{start:number;end:number;word:string;probability:number}[]}[]}
+export interface VerifiedSegment {track:string;sourceHash?:string;start:number;end:number;sourceText:string;sourcePinyin?:string;unit?:string;repetition?:number;verification:Verification;subsegments?:string[];parentLineId?:string;sentenceNumber?:number;guardedEvidence?:GuardedSentenceEvidence}
 export interface UnresolvedSegment {id:string;kind:string;track:string;sourceHash?:string;sourceText:string;sourcePinyin?:string;status:string;fallback:string}
 export interface SegmentData {humanListening?:boolean;devicePlaybackCertified?:boolean;pronunciationToneCertified?:boolean;schemaVersion:number;scope?:{levels:number[];lessons:number[]};tracks:Record<string,{sourceHash:string;duration:number;containerDuration?:number}>;words:Record<string,VerifiedSegment>;lines:Record<string,VerifiedSegment>;subsegments:Record<string,VerifiedSegment>;unresolved:UnresolvedSegment[]}
 interface SourceBinding {level:number;lesson:number;track:string;sourceText:string;sourcePinyin:string;sentences?:{id:string;sourceText:string;sourcePinyin:string}[]}
 interface RangeBinding {kind:string;track:string;start:number;end:number;unit?:string;repetition:number|null;parentLineId:string|null;method:string;contentMatch?:string;observedTranscript:string|null}
 export interface SegmentAuthority {schemaVersion:number;tracks:Record<string,{sourceHash:string;decodedDuration:number;containerDuration:number}>;lessons:Record<string,{level:number;number:number;courseId:string}>;words:Record<string,SourceBinding>;lines:Record<string,SourceBinding>;ranges:Record<string,RangeBinding>}
+export interface ReviewedSentenceSubset extends SegmentData {coverageMode:'reviewed-sentence-subset';review:{file:string;sha256:string};acceptedRuntimeFragmentIds:string[]}
+export interface ReviewedSentenceAuthority {schemaVersion:number;coverageMode:'reviewed-sentence-subset';review:{file:string;sha256:string};acceptedRuntimeFragmentIds:string[];tracks:SegmentAuthority['tracks'];fragments:Record<string,{kind:'lines'|'subsegments';level:number;lesson:number;sourceParent?:{id:string;sourceText:string;sourcePinyin:string;sentences:{id:string;sourceText:string;sourcePinyin:string}[]};segment:VerifiedSegment}>}
 function fail(message:string):never{throw Error('Invalid original-audio manifest: '+message)}
 const sameSet=(actual:string[],expected:string[])=>actual.length===expected.length&&new Set(actual).size===actual.length&&actual.every(x=>expected.includes(x));
+// These two exact source-frame gates are the complete scope of the independent
+// post-crop review. They do not authorize a whole lesson, parent turn, or word.
+const reviewedSentenceReport='76c0d3571f5ea0ce1c2d40de7baeffe3a58155ee6782a27636d99865c761501c';
+const reviewedSentenceGates:Record<string,{kind:'lines'|'subsegments';frames:[number,number];parent:string|null;ordinal:number}>={
+ 'hsk2-fltrp-2026:l04:text2:line3':{kind:'lines',frames:[159680,197921],parent:null,ordinal:1},
+ 'hsk2-fltrp-2026:l05:text2:line8:sentence2':{kind:'subsegments',frames:[572480,614240],parent:'hsk2-fltrp-2026:l05:text2:line8',ordinal:2},
+};
+function canonicalJSON(value:unknown):string{if(Array.isArray(value))return '['+value.map(canonicalJSON).join(',')+']';if(value&&typeof value==='object')return '{'+Object.entries(value).sort(([a],[b])=>a<b?-1:a>b?1:0).map(([key,item])=>JSON.stringify(key)+':'+canonicalJSON(item)).join(',')+'}';return JSON.stringify(value)??''}
+// Pin the complete accepted source/evidence snapshot, not merely two mutually
+// agreeing JSON files. This checksum includes low-probability raw observations.
+const reviewedSentenceAuthoritySHA256='5fde9de3374e597ecd7cffaf84223288f51ad6d1c48c41c109374cdefcb4869b';
+export async function validateReviewedSentenceSubset(value:ReviewedSentenceSubset,tracks:readonly Track[],authority:ReviewedSentenceAuthority):Promise<SegmentData> {
+ const ids=Object.keys(reviewedSentenceGates);
+ if(!value||value.schemaVersion!==1||value.coverageMode!=='reviewed-sentence-subset'||authority?.schemaVersion!==1||authority.coverageMode!==value.coverageMode||!value.tracks||!value.words||!value.lines||!value.subsegments||!Array.isArray(value.unresolved)||Object.keys(value.words).length||value.unresolved.length)fail('reviewed sentence subset shape');
+ const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(canonicalJSON(authority)));if([...new Uint8Array(digest)].map(byte=>byte.toString(16).padStart(2,'0')).join('')!==reviewedSentenceAuthoritySHA256)fail('reviewed sentence subset frozen authority checksum');
+ if(value.review?.sha256!==reviewedSentenceReport||authority.review?.sha256!==reviewedSentenceReport||value.review.file!==authority.review.file||!sameSet(value.acceptedRuntimeFragmentIds??[],ids)||!sameSet(authority.acceptedRuntimeFragmentIds??[],ids)||!sameSet(Object.keys(authority.fragments??{}),ids)||!sameSet([...Object.keys(value.lines),...Object.keys(value.subsegments)],ids))fail('reviewed sentence subset authority or exact two IDs');
+ if(JSON.stringify(value.scope)!==JSON.stringify({levels:[2],lessons:[4,5]}))fail('reviewed sentence subset scope');
+ for(const key of ['humanListening','devicePlaybackCertified','pronunciationToneCertified'] as const)if(value[key]!==false)fail('reviewed sentence subset certification '+key);
+ const sources=new Map(tracks.map(t=>[t.file,t]));
+ const expectedTracks=ids.map(id=>authority.fragments[id]!.segment.track);
+ if(!sameSet(Object.keys(value.tracks),expectedTracks)||!sameSet(Object.keys(authority.tracks??{}),expectedTracks))fail('reviewed sentence subset source tracks');
+ for(const [file,declared]of Object.entries(value.tracks)){const source=sources.get(file),approved=authority.tracks[file];if(!source||source.kind!=='text'||!approved||source.sha256!==declared.sourceHash||declared.sourceHash!==approved.sourceHash||declared.duration!==approved.decodedDuration||declared.containerDuration!==approved.containerDuration||Math.abs(source.duration-approved.containerDuration)>.06)fail('reviewed sentence subset source hash/duration '+file)}
+ for(const id of ids){const gate=reviewedSentenceGates[id]!,binding=authority.fragments[id]!,s=value[gate.kind][id],source=sources.get(s?.track);
+  if(!s||binding.kind!==gate.kind||binding.level!==2||binding.lesson!==(gate.kind==='lines'?4:5)||source?.level!==binding.level||source.lesson!==binding.lesson||JSON.stringify(s)!==JSON.stringify(binding.segment))fail('reviewed sentence subset source/evidence binding '+id);
+  const evidence=s.guardedEvidence,verification=s.verification;
+  if(s.sourceHash!==source.sha256||s.unit!=='sentence'||s.repetition!==undefined||s.subsegments!==undefined||s.sentenceNumber!==gate.ordinal||(s.parentLineId??null)!==gate.parent||s.start!==gate.frames[0]/16000||s.end!==gate.frames[1]/16000||s.end>value.tracks[s.track]!.duration||verification?.status!=='verified'||verification.method!=='independently-reviewed-unprompted-dual-model-crop+source-frame-guards'||verification.contentMatch!=='exact-CJK-after-review-scoped-five-glyph-observation-normalization'||verification.humanListening!==false||verification.devicePlaybackCertified!==false||verification.pronunciationToneCertified!==false)fail('reviewed sentence subset range/unit/certification '+id);
+  if(!evidence||evidence.sampleRate!==16000||JSON.stringify(evidence.sourceSampleRange)!==JSON.stringify(gate.frames)||evidence.reviewReportSHA256!==reviewedSentenceReport||evidence.lowProbabilityFlagsRetained!==true||!/^([a-f0-9]{64})$/.test(evidence.sourcePCM_SHA256)||!/^([a-f0-9]{64})$/.test(evidence.cropPCM_SHA256)||!sameSet(evidence.rawModelEvidence.map(e=>e.model),['small','medium'])||evidence.rawModelEvidence.some(e=>!/^([a-f0-9]{64})$/.test(e.sha256)||e.minimumRawProbability<0||e.minimumRawProbability>1))fail('reviewed sentence subset frame/raw evidence '+id);
+  if(gate.parent){const parent=binding.sourceParent,part=parent?.sentences[gate.ordinal-1];if(!parent||parent.id!==gate.parent||parent.sentences.length!==2||part?.id!==id||part.sourceText!==s.sourceText||part.sourcePinyin!==s.sourcePinyin||gate.parent in value.lines||parent.sentences[0]!.id in value.subsegments)fail('reviewed sentence subset parent/sibling/ordinal '+id)}else if(binding.sourceParent)fail('reviewed sentence subset unexpected parent '+id);
+ }
+ return structuredClone(value);
+}
 export function validateSegments(value:SegmentData,tracks:readonly Track[],authority:SegmentAuthority):SegmentData {
  if(!value||value.schemaVersion!==1||!value.tracks||!value.words||!value.lines||!value.subsegments||!Array.isArray(value.unresolved)||authority?.schemaVersion!==1)fail('shape or source/range authority missing');
  for(const key of ['humanListening','devicePlaybackCertified','pronunciationToneCertified'] as const)if(key in value&&value[key]!==false)fail('unsupported root certification '+key);

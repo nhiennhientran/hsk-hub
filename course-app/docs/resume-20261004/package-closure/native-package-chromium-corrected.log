@@ -1,0 +1,18 @@
+[WebServer] (node:47) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 9 tests using 1 worker
+
+(node:59) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry portal loads actual source crops with nonempty legacy state (1.4s)
+  ✓  2 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state (1.3s)
+  ✓  3 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state (1.4s)
+  ✓  4 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state (1.4s)
+  ✓  5 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state (1.4s)
+  ✓  6 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state (1.3s)
+  ✓  7 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state (1.3s)
+  ✓  8 [chromium] › tests/packaged/unified-source.spec.ts:27:1 › nested HSK1 textbook originals and original audio resolve against shared course engine (678ms)
+  ✓  9 [chromium] › tests/packaged/unified-source.spec.ts:39:1 › assembled HTTP bytes match frozen identity and private baseline/source paths are not served (235ms)
+
+  9 passed (11.1s)

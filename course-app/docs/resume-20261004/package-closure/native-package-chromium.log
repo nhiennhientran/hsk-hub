@@ -1,0 +1,724 @@
+
+Running 9 tests using 1 worker
+
+(node:25) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry portal loads actual source crops with nonempty legacy state (2ms)
+(node:37) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state (2ms)
+(node:49) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state (2ms)
+(node:61) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state (1ms)
+(node:73) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  5 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state (1ms)
+(node:85) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  6 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state (2ms)
+(node:97) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  7 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state (1ms)
+(node:109) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  8 [chromium] › tests/packaged/unified-source.spec.ts:27:1 › nested HSK1 textbook originals and original audio resolve against shared course engine (2ms)
+(node:121) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  9 [chromium] › tests/packaged/unified-source.spec.ts:39:1 › assembled HTTP bytes match frozen identity and private baseline/source paths are not served (20ms)
+
+
+  1) [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry portal loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results-package/unified-source-unified-pac-2e1dd--with-nonempty-legacy-state-chromium/error-context.md
+
+  2) [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results-package/unified-source-unified-pac-c9c85--with-nonempty-legacy-state-chromium/error-context.md
+
+  3) [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results-package/unified-source-unified-pac-7a75c--with-nonempty-legacy-state-chromium/error-context.md
+
+  4) [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results-package/unified-source-unified-pac-1a4b0--with-nonempty-legacy-state-chromium/error-context.md
+
+  5) [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results-package/unified-source-unified-pac-bd006--with-nonempty-legacy-state-chromium/error-context.md
+
+  6) [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results-package/unified-source-unified-pac-464e6--with-nonempty-legacy-state-chromium/error-context.md
+
+  7) [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results-package/unified-source-unified-pac-f0df4--with-nonempty-legacy-state-chromium/error-context.md
+
+  8) [chromium] › tests/packaged/unified-source.spec.ts:27:1 › nested HSK1 textbook originals and original audio resolve against shared course engine 
+
+    Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results-package/unified-source-nested-HSK1-e4c2d-gainst-shared-course-engine-chromium/error-context.md
+
+  9) [chromium] › tests/packaged/unified-source.spec.ts:39:1 › assembled HTTP bytes match frozen identity and private baseline/source paths are not served 
+
+    Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:4178
+    Call log:
+      - → GET http://127.0.0.1:4178/hsk-hub/course-engine/unified-release-manifest.json
+        - user-agent: Playwright/1.62.1 (x64; ubuntu 24.04) node/24.19
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+
+
+      38 | });
+      39 | test('assembled HTTP bytes match frozen identity and private baseline/source paths are not served',async({request})=>{
+    > 40 |   const r=await request.get('./course-engine/unified-release-manifest.json');expect(r.status()).toBe(200);const m=await r.json();expect(m.mode).toBe('checkpoint');expect(m.lessons).toBe(48);expect(m.originalSourceCrops).toBe(150);
+         |                         ^
+      41 |   const selected=m.files.filter((f:any)=>f.path==='index.html'||f.path.endsWith('l04-text-1-photo.png')||/^course-engine\/assets\/.+\.(?:js|css)$/.test(f.path)||f.path.endsWith('audio/18-8.mp3'));
+      42 |   expect(selected.length).toBeGreaterThan(3);
+      43 |   for(const f of selected){const response=await request.get('./'+f.path);expect(response.status()).toBe(200);const b=await response.body();expect(b.length).toBe(f.bytes);expect(createHash('sha256').update(b).digest('hex')).toBe(f.sha256);}
+        at /workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged/unified-source.spec.ts:40:25
+
+    Error Context: test-results-package/unified-source-assembled-H-08ba9-source-paths-are-not-served-chromium/error-context.md
+
+  9 failed
+    [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry portal loads actual source crops with nonempty legacy state 
+    [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state 
+    [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state 
+    [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state 
+    [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state 
+    [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state 
+    [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state 
+    [chromium] › tests/packaged/unified-source.spec.ts:27:1 › nested HSK1 textbook originals and original audio resolve against shared course engine 
+    [chromium] › tests/packaged/unified-source.spec.ts:39:1 › assembled HTTP bytes match frozen identity and private baseline/source paths are not served 
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config=playwright.package.config.ts",
+      "--project=chromium",
+      "tests/packaged/unified-source.spec.ts",
+      "--reporter=list,json"
+    ],
+    "configFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/playwright.package.config.ts",
+    "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "unified-source.spec.ts",
+      "file": "unified-source.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "unified packaged entry portal loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:17:09.096Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package/unified-source-unified-pac-2e1dd--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-26ac44264fe47755d8d9",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:17:09.499Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package/unified-source-unified-pac-c9c85--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-5400409ffca121b290e9",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:17:09.927Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package/unified-source-unified-pac-7a75c--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-0341a27f445f4c39d719",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:17:10.318Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package/unified-source-unified-pac-1a4b0--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-f13135a35b177057ebac",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:17:10.690Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package/unified-source-unified-pac-bd006--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-7366db40280b1072078f",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:17:11.098Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package/unified-source-unified-pac-464e6--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-9c8876ae50a4e9627e09",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:17:11.495Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package/unified-source-unified-pac-f0df4--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-286d46bb32631025315d",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "nested HSK1 textbook originals and original audio resolve against shared course engine",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:17:11.875Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package/unified-source-nested-HSK1-e4c2d-gainst-shared-course-engine-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-545436c89bd7809c3bca",
+          "file": "unified-source.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "assembled HTTP bytes match frozen identity and private baseline/source paths are not served",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 20,
+                  "error": {
+                    "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:4178\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:4178/hsk-hub/course-engine/unified-release-manifest.json\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.62.1 (x64; ubuntu 24.04) node/24.19\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n",
+                    "stack": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:4178\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:4178/hsk-hub/course-engine/unified-release-manifest.json\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.62.1 (x64; ubuntu 24.04) node/24.19\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged/unified-source.spec.ts:40:25",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged/unified-source.spec.ts",
+                      "column": 25,
+                      "line": 40
+                    },
+                    "snippet": "  38 | });\n  39 | test('assembled HTTP bytes match frozen identity and private baseline/source paths are not served',async({request})=>{\n> 40 |   const r=await request.get('./course-engine/unified-release-manifest.json');expect(r.status()).toBe(200);const m=await r.json();expect(m.mode).toBe('checkpoint');expect(m.lessons).toBe(48);expect(m.originalSourceCrops).toBe(150);\n     |                         ^\n  41 |   const selected=m.files.filter((f:any)=>f.path==='index.html'||f.path.endsWith('l04-text-1-photo.png')||/^course-engine\\/assets\\/.+\\.(?:js|css)$/.test(f.path)||f.path.endsWith('audio/18-8.mp3'));\n  42 |   expect(selected.length).toBeGreaterThan(3);\n  43 |   for(const f of selected){const response=await request.get('./'+f.path);expect(response.status()).toBe(200);const b=await response.body();expect(b.length).toBe(f.bytes);expect(createHash('sha256').update(b).digest('hex')).toBe(f.sha256);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged/unified-source.spec.ts",
+                        "column": 25,
+                        "line": 40
+                      },
+                      "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:4178\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:4178/hsk-hub/course-engine/unified-release-manifest.json\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.62.1 (x64; ubuntu 24.04) node/24.19\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n\n  38 | });\n  39 | test('assembled HTTP bytes match frozen identity and private baseline/source paths are not served',async({request})=>{\n> 40 |   const r=await request.get('./course-engine/unified-release-manifest.json');expect(r.status()).toBe(200);const m=await r.json();expect(m.mode).toBe('checkpoint');expect(m.lessons).toBe(48);expect(m.originalSourceCrops).toBe(150);\n     |                         ^\n  41 |   const selected=m.files.filter((f:any)=>f.path==='index.html'||f.path.endsWith('l04-text-1-photo.png')||/^course-engine\\/assets\\/.+\\.(?:js|css)$/.test(f.path)||f.path.endsWith('audio/18-8.mp3'));\n  42 |   expect(selected.length).toBeGreaterThan(3);\n  43 |   for(const f of selected){const response=await request.get('./'+f.path);expect(response.status()).toBe(200);const b=await response.body();expect(b.length).toBe(f.bytes);expect(createHash('sha256').update(b).digest('hex')).toBe(f.sha256);}\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged/unified-source.spec.ts:40:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:17:12.256Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/test-results-package/unified-source-assembled-H-08ba9-source-paths-are-not-served-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged/unified-source.spec.ts",
+                    "column": 25,
+                    "line": 40
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-866729f381ee99c18f2f",
+          "file": "unified-source.spec.ts",
+          "line": 39,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T17:17:08.577Z",
+    "duration": 3741.1679999999997,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 9,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,627 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l07:audio3",
+    "level": 2,
+    "lesson": 7,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/7-3.mp3",
+    "sha256": "799f3e1c11ad1672deeed0cbf88d42a589365c70de5020a66d83bcc053cef5b1",
+    "bytes": 541952,
+    "manifestDurationSeconds": 20.693333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 331008,
+      "durationSeconds": 20.688,
+      "sha256": "b6aef464835c5277521222124eceb495c8db3f022391b8740ee305d5038b68e4"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 20.688,
+    "duration_after_vad": 20.688,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 3.94,
+      "text": "天中,你是不是很喜欢打篮球?",
+      "tokens": [
+        50364,
+        6135,
+        5975,
+        11,
+        2166,
+        23034,
+        4563,
+        41606,
+        12467,
+        20878,
+        106,
+        28533,
+        30,
+        50579
+      ],
+      "avg_logprob": -0.26331538370210833,
+      "compression_ratio": 1.1788079470198676,
+      "no_speech_prob": 0.30833932757377625,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.66,
+          "word": "天",
+          "probability": 0.7756197452545166
+        },
+        {
+          "start": 0.66,
+          "end": 0.92,
+          "word": "中,",
+          "probability": 0.9804390668869019
+        },
+        {
+          "start": 1.5,
+          "end": 1.82,
+          "word": "你",
+          "probability": 0.8518543839454651
+        },
+        {
+          "start": 1.82,
+          "end": 2.18,
+          "word": "是不是",
+          "probability": 0.9886334538459778
+        },
+        {
+          "start": 2.18,
+          "end": 2.62,
+          "word": "很",
+          "probability": 0.9968208074569702
+        },
+        {
+          "start": 2.62,
+          "end": 3.04,
+          "word": "喜欢",
+          "probability": 0.5231455564498901
+        },
+        {
+          "start": 3.04,
+          "end": 3.44,
+          "word": "打",
+          "probability": 0.9954712390899658
+        },
+        {
+          "start": 3.44,
+          "end": 3.62,
+          "word": "篮",
+          "probability": 0.9965848028659821
+        },
+        {
+          "start": 3.62,
+          "end": 3.94,
+          "word": "球?",
+          "probability": 0.9999114274978638
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.7,
+      "end": 5.32,
+      "text": "没错。",
+      "tokens": [
+        50579,
+        10062,
+        29900,
+        1543,
+        50649
+      ],
+      "avg_logprob": -0.26331538370210833,
+      "compression_ratio": 1.1788079470198676,
+      "no_speech_prob": 0.30833932757377625,
+      "words": [
+        {
+          "start": 4.7,
+          "end": 4.98,
+          "word": "没",
+          "probability": 0.926441490650177
+        },
+        {
+          "start": 4.98,
+          "end": 5.32,
+          "word": "错。",
+          "probability": 0.999313473701477
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.98,
+      "end": 7.98,
+      "text": "你还喜欢什么运动?",
+      "tokens": [
+        50649,
+        2166,
+        14852,
+        41606,
+        10440,
+        3316,
+        238,
+        34961,
+        30,
+        50779
+      ],
+      "avg_logprob": -0.26331538370210833,
+      "compression_ratio": 1.1788079470198676,
+      "no_speech_prob": 0.30833932757377625,
+      "words": [
+        {
+          "start": 5.98,
+          "end": 6.52,
+          "word": "你",
+          "probability": 0.9852966666221619
+        },
+        {
+          "start": 6.52,
+          "end": 6.74,
+          "word": "还",
+          "probability": 0.9886922836303711
+        },
+        {
+          "start": 6.74,
+          "end": 7.14,
+          "word": "喜欢",
+          "probability": 0.9991732239723206
+        },
+        {
+          "start": 7.14,
+          "end": 7.54,
+          "word": "什么",
+          "probability": 0.9854589700698853
+        },
+        {
+          "start": 7.54,
+          "end": 7.78,
+          "word": "运",
+          "probability": 0.995314359664917
+        },
+        {
+          "start": 7.78,
+          "end": 7.98,
+          "word": "动?",
+          "probability": 0.9983219504356384
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 9.12,
+      "end": 11.02,
+      "text": "我还喜欢踢足球。",
+      "tokens": [
+        50779,
+        1654,
+        14852,
+        41606,
+        41166,
+        95,
+        37236,
+        28533,
+        1543,
+        50929
+      ],
+      "avg_logprob": -0.26331538370210833,
+      "compression_ratio": 1.1788079470198676,
+      "no_speech_prob": 0.30833932757377625,
+      "words": [
+        {
+          "start": 9.12,
+          "end": 9.34,
+          "word": "我",
+          "probability": 0.9950473308563232
+        },
+        {
+          "start": 9.34,
+          "end": 9.52,
+          "word": "还",
+          "probability": 0.9944630265235901
+        },
+        {
+          "start": 9.52,
+          "end": 9.96,
+          "word": "喜欢",
+          "probability": 0.997127115726471
+        },
+        {
+          "start": 9.96,
+          "end": 10.44,
+          "word": "踢",
+          "probability": 0.9943394958972931
+        },
+        {
+          "start": 10.44,
+          "end": 10.64,
+          "word": "足",
+          "probability": 0.9998956918716431
+        },
+        {
+          "start": 10.64,
+          "end": 11.02,
+          "word": "球。",
+          "probability": 0.9998729228973389
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 11.74,
+      "end": 15.22,
+      "text": "一到星期天就跟朋友们去踢球。",
+      "tokens": [
+        50929,
+        2257,
+        4511,
+        20682,
+        16786,
+        6135,
+        3111,
+        9678,
+        19828,
+        9497,
+        6734,
+        41166,
+        95,
+        28533,
+        1543,
+        51139
+      ],
+      "avg_logprob": -0.26331538370210833,
+      "compression_ratio": 1.1788079470198676,
+      "no_speech_prob": 0.30833932757377625,
+      "words": [
+        {
+          "start": 11.74,
+          "end": 11.9,
+          "word": "一",
+          "probability": 0.9721606373786926
+        },
+        {
+          "start": 11.9,
+          "end": 12.14,
+          "word": "到",
+          "probability": 0.9861921668052673
+        },
+        {
+          "start": 12.14,
+          "end": 12.4,
+          "word": "星",
+          "probability": 0.9959217309951782
+        },
+        {
+          "start": 12.4,
+          "end": 12.58,
+          "word": "期",
+          "probability": 0.999624490737915
+        },
+        {
+          "start": 12.58,
+          "end": 12.9,
+          "word": "天",
+          "probability": 0.9984511137008667
+        },
+        {
+          "start": 12.9,
+          "end": 13.14,
+          "word": "就",
+          "probability": 0.8927390575408936
+        },
+        {
+          "start": 13.14,
+          "end": 13.34,
+          "word": "跟",
+          "probability": 0.9908419847488403
+        },
+        {
+          "start": 13.34,
+          "end": 13.74,
+          "word": "朋友",
+          "probability": 0.9987736344337463
+        },
+        {
+          "start": 13.74,
+          "end": 14.02,
+          "word": "们",
+          "probability": 0.996880054473877
+        },
+        {
+          "start": 14.02,
+          "end": 14.48,
+          "word": "去",
+          "probability": 0.9869468212127686
+        },
+        {
+          "start": 14.48,
+          "end": 14.86,
+          "word": "踢",
+          "probability": 0.9994941353797913
+        },
+        {
+          "start": 14.86,
+          "end": 15.22,
+          "word": "球。",
+          "probability": 0.9989615678787231
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 15.98,
+      "end": 17.12,
+      "text": "你踢的怎么样?",
+      "tokens": [
+        51139,
+        2166,
+        41166,
+        95,
+        1546,
+        48200,
+        30,
+        51249
+      ],
+      "avg_logprob": -0.26331538370210833,
+      "compression_ratio": 1.1788079470198676,
+      "no_speech_prob": 0.30833932757377625,
+      "words": [
+        {
+          "start": 15.98,
+          "end": 16.18,
+          "word": "你",
+          "probability": 0.9953294992446899
+        },
+        {
+          "start": 16.18,
+          "end": 16.52,
+          "word": "踢",
+          "probability": 0.9992035627365112
+        },
+        {
+          "start": 16.52,
+          "end": 16.74,
+          "word": "的",
+          "probability": 0.46496710181236267
+        },
+        {
+          "start": 16.74,
+          "end": 17.12,
+          "word": "怎么样?",
+          "probability": 0.9799430966377258
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 18.0,
+      "end": 19.58,
+      "text": "我踢的还可以。",
+      "tokens": [
+        51249,
+        1654,
+        41166,
+        95,
+        1546,
+        14852,
+        6723,
+        1543,
+        51364
+      ],
+      "avg_logprob": -0.26331538370210833,
+      "compression_ratio": 1.1788079470198676,
+      "no_speech_prob": 0.30833932757377625,
+      "words": [
+        {
+          "start": 18.0,
+          "end": 18.24,
+          "word": "我",
+          "probability": 0.9845916032791138
+        },
+        {
+          "start": 18.24,
+          "end": 18.46,
+          "word": "踢",
+          "probability": 0.998794823884964
+        },
+        {
+          "start": 18.46,
+          "end": 18.7,
+          "word": "的",
+          "probability": 0.8895076513290405
+        },
+        {
+          "start": 18.7,
+          "end": 19.1,
+          "word": "还",
+          "probability": 0.9819838404655457
+        },
+        {
+          "start": 19.1,
+          "end": 19.58,
+          "word": "可以。",
+          "probability": 0.9986953139305115
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.662675847999992,
+  "realTimeFactor": 0.17704349613302361,
+  "observationChecks": {
+    "rawWordCount": 44,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

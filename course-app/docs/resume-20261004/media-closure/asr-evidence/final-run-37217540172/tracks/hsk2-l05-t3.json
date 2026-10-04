@@ -1,0 +1,1045 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l05:audio3",
+    "level": 2,
+    "lesson": 5,
+    "track": 3,
+    "kind": "text",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/5-3.mp3",
+    "sha256": "7692432ee007f962b2e0d8a76642a0ad69e2696125f74b3572e1e287e249dcbd",
+    "bytes": 992382,
+    "manifestDurationSeconds": 39.293333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 628608,
+      "durationSeconds": 39.288,
+      "sha256": "a5a433f2b95eca57609e5f752bb0aeeb52d66ebc3f46e126f62575670a9a7e95"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 39.288,
+    "duration_after_vad": 39.288,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.94,
+      "text": "佳月 安妮 快进来",
+      "tokens": [
+        50364,
+        1593,
+        111,
+        6939,
+        220,
+        16206,
+        5648,
+        106,
+        42598,
+        36700,
+        6912,
+        50514
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.84,
+          "word": "佳",
+          "probability": 0.6870483756065369
+        },
+        {
+          "start": 0.84,
+          "end": 1.04,
+          "word": "月",
+          "probability": 0.46684110164642334
+        },
+        {
+          "start": 1.48,
+          "end": 1.66,
+          "word": " 安",
+          "probability": 0.8512994050979614
+        },
+        {
+          "start": 1.66,
+          "end": 1.8,
+          "word": "妮",
+          "probability": 0.9858334958553314
+        },
+        {
+          "start": 1.8,
+          "end": 2.44,
+          "word": " 快",
+          "probability": 0.743182361125946
+        },
+        {
+          "start": 2.44,
+          "end": 2.66,
+          "word": "进",
+          "probability": 0.6822459697723389
+        },
+        {
+          "start": 2.66,
+          "end": 2.94,
+          "word": "来",
+          "probability": 0.988958477973938
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.94,
+      "end": 4.92,
+      "text": "我给你们介绍一下",
+      "tokens": [
+        50514,
+        1654,
+        23197,
+        29806,
+        30312,
+        10115,
+        235,
+        8861,
+        50614
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 2.94,
+          "end": 3.82,
+          "word": "我",
+          "probability": 0.9311651587486267
+        },
+        {
+          "start": 3.82,
+          "end": 3.94,
+          "word": "给",
+          "probability": 0.9928869605064392
+        },
+        {
+          "start": 3.94,
+          "end": 4.18,
+          "word": "你们",
+          "probability": 0.9941163063049316
+        },
+        {
+          "start": 4.18,
+          "end": 4.46,
+          "word": "介",
+          "probability": 0.9985572695732117
+        },
+        {
+          "start": 4.46,
+          "end": 4.64,
+          "word": "绍",
+          "probability": 0.9987949132919312
+        },
+        {
+          "start": 4.64,
+          "end": 4.92,
+          "word": "一下",
+          "probability": 0.9938241243362427
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 4.92,
+      "end": 7.96,
+      "text": "这是孩子们的爷爷奶奶",
+      "tokens": [
+        50614,
+        27455,
+        48989,
+        9497,
+        1546,
+        43725,
+        43725,
+        42525,
+        42525,
+        50764
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 4.92,
+          "end": 5.9,
+          "word": "这是",
+          "probability": 0.9329656958580017
+        },
+        {
+          "start": 5.9,
+          "end": 6.22,
+          "word": "孩子",
+          "probability": 0.9967381358146667
+        },
+        {
+          "start": 6.22,
+          "end": 6.46,
+          "word": "们",
+          "probability": 0.9918276071548462
+        },
+        {
+          "start": 6.46,
+          "end": 6.62,
+          "word": "的",
+          "probability": 0.9686005711555481
+        },
+        {
+          "start": 6.62,
+          "end": 6.86,
+          "word": "爷",
+          "probability": 0.9832530617713928
+        },
+        {
+          "start": 6.86,
+          "end": 7.12,
+          "word": "爷",
+          "probability": 0.9953848719596863
+        },
+        {
+          "start": 7.12,
+          "end": 7.56,
+          "word": "奶",
+          "probability": 0.4341927766799927
+        },
+        {
+          "start": 7.56,
+          "end": 7.96,
+          "word": "奶",
+          "probability": 0.9990676045417786
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 8.639999999999997,
+      "end": 9.62,
+      "text": "你们好",
+      "tokens": [
+        50764,
+        29806,
+        2131,
+        50864
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 8.639999999999997,
+          "end": 9.2,
+          "word": "你们",
+          "probability": 0.9494560956954956
+        },
+        {
+          "start": 9.2,
+          "end": 9.62,
+          "word": "好",
+          "probability": 0.9966193437576294
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 10.439999999999998,
+      "end": 11.7,
+      "text": "爸 妈",
+      "tokens": [
+        50864,
+        23855,
+        220,
+        32462,
+        50964
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 10.439999999999998,
+          "end": 11.0,
+          "word": "爸",
+          "probability": 0.83343106508255
+        },
+        {
+          "start": 11.44,
+          "end": 11.7,
+          "word": " 妈",
+          "probability": 0.994821310043335
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 11.7,
+      "end": 13.58,
+      "text": "这是白佳月",
+      "tokens": [
+        50964,
+        27455,
+        13558,
+        1593,
+        111,
+        6939,
+        51064
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 11.7,
+          "end": 12.76,
+          "word": "这是",
+          "probability": 0.663323700428009
+        },
+        {
+          "start": 12.76,
+          "end": 13.0,
+          "word": "白",
+          "probability": 0.9790822267532349
+        },
+        {
+          "start": 13.0,
+          "end": 13.22,
+          "word": "佳",
+          "probability": 0.9980984926223755
+        },
+        {
+          "start": 13.22,
+          "end": 13.58,
+          "word": "月",
+          "probability": 0.9901719689369202
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 13.58,
+      "end": 15.06,
+      "text": "这是安妮",
+      "tokens": [
+        51064,
+        27455,
+        16206,
+        5648,
+        106,
+        51114
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 13.58,
+          "end": 14.48,
+          "word": "这是",
+          "probability": 0.9316197633743286
+        },
+        {
+          "start": 14.48,
+          "end": 14.78,
+          "word": "安",
+          "probability": 0.9805984497070312
+        },
+        {
+          "start": 14.78,
+          "end": 15.06,
+          "word": "妮",
+          "probability": 0.9992539882659912
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 15.06,
+      "end": 17.54,
+      "text": "他们都是依妃的学生",
+      "tokens": [
+        51114,
+        47911,
+        22796,
+        3254,
+        251,
+        5648,
+        225,
+        1546,
+        29618,
+        8244,
+        51264
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 15.06,
+          "end": 16.02,
+          "word": "他们",
+          "probability": 0.6579047441482544
+        },
+        {
+          "start": 16.02,
+          "end": 16.44,
+          "word": "都是",
+          "probability": 0.995978832244873
+        },
+        {
+          "start": 16.44,
+          "end": 16.68,
+          "word": "依",
+          "probability": 0.7190872132778168
+        },
+        {
+          "start": 16.68,
+          "end": 16.84,
+          "word": "妃",
+          "probability": 0.7471397966146469
+        },
+        {
+          "start": 16.84,
+          "end": 17.0,
+          "word": "的",
+          "probability": 0.9814091920852661
+        },
+        {
+          "start": 17.0,
+          "end": 17.24,
+          "word": "学",
+          "probability": 0.9977214932441711
+        },
+        {
+          "start": 17.24,
+          "end": 17.54,
+          "word": "生",
+          "probability": 0.9998219609260559
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 9,
+      "seek": 0,
+      "start": 18.58,
+      "end": 20.46,
+      "text": "佳月 安妮",
+      "tokens": [
+        51264,
+        1593,
+        111,
+        6939,
+        220,
+        16206,
+        5648,
+        106,
+        51414
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 18.58,
+          "end": 19.14,
+          "word": "佳",
+          "probability": 0.9988127052783966
+        },
+        {
+          "start": 19.14,
+          "end": 19.4,
+          "word": "月",
+          "probability": 0.9969503283500671
+        },
+        {
+          "start": 20.0,
+          "end": 20.2,
+          "word": " 安",
+          "probability": 0.9981728792190552
+        },
+        {
+          "start": 20.2,
+          "end": 20.46,
+          "word": "妮",
+          "probability": 0.9998140037059784
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 10,
+      "seek": 0,
+      "start": 21.0,
+      "end": 21.76,
+      "text": "你们好",
+      "tokens": [
+        51414,
+        29806,
+        2131,
+        51464
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 21.0,
+          "end": 21.36,
+          "word": "你们",
+          "probability": 0.7951016426086426
+        },
+        {
+          "start": 21.36,
+          "end": 21.76,
+          "word": "好",
+          "probability": 0.9997565150260925
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 11,
+      "seek": 0,
+      "start": 22.72,
+      "end": 24.58,
+      "text": "这是送你们的礼物",
+      "tokens": [
+        51464,
+        27455,
+        29309,
+        29806,
+        1546,
+        14971,
+        120,
+        23516,
+        51614
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 22.72,
+          "end": 23.28,
+          "word": "这是",
+          "probability": 0.990307092666626
+        },
+        {
+          "start": 23.28,
+          "end": 23.68,
+          "word": "送",
+          "probability": 0.9927670955657959
+        },
+        {
+          "start": 23.68,
+          "end": 23.84,
+          "word": "你们",
+          "probability": 0.9983687996864319
+        },
+        {
+          "start": 23.84,
+          "end": 24.06,
+          "word": "的",
+          "probability": 0.9982494115829468
+        },
+        {
+          "start": 24.06,
+          "end": 24.28,
+          "word": "礼",
+          "probability": 0.9997396469116211
+        },
+        {
+          "start": 24.28,
+          "end": 24.58,
+          "word": "物",
+          "probability": 0.9994128942489624
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 12,
+      "seek": 0,
+      "start": 25.179999999999996,
+      "end": 27.02,
+      "text": "你们太客气了",
+      "tokens": [
+        51614,
+        29806,
+        9455,
+        32316,
+        42204,
+        2289,
+        51714
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 25.179999999999996,
+          "end": 25.74,
+          "word": "你们",
+          "probability": 0.9958890080451965
+        },
+        {
+          "start": 25.74,
+          "end": 26.1,
+          "word": "太",
+          "probability": 0.9956873059272766
+        },
+        {
+          "start": 26.1,
+          "end": 26.4,
+          "word": "客",
+          "probability": 0.9968149065971375
+        },
+        {
+          "start": 26.4,
+          "end": 26.6,
+          "word": "气",
+          "probability": 0.9987356066703796
+        },
+        {
+          "start": 26.6,
+          "end": 27.02,
+          "word": "了",
+          "probability": 0.9716202616691589
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 13,
+      "seek": 0,
+      "start": 27.02,
+      "end": 28.76,
+      "text": "还拿这么多礼物来",
+      "tokens": [
+        51714,
+        14852,
+        24351,
+        31889,
+        6392,
+        14971,
+        120,
+        23516,
+        6912,
+        51814
+      ],
+      "avg_logprob": -0.15937830152965726,
+      "compression_ratio": 1.3742690058479532,
+      "no_speech_prob": 0.02336394600570202,
+      "words": [
+        {
+          "start": 27.02,
+          "end": 27.44,
+          "word": "还",
+          "probability": 0.9396462440490723
+        },
+        {
+          "start": 27.44,
+          "end": 27.64,
+          "word": "拿",
+          "probability": 0.9937313199043274
+        },
+        {
+          "start": 27.64,
+          "end": 27.96,
+          "word": "这么",
+          "probability": 0.9880565404891968
+        },
+        {
+          "start": 27.96,
+          "end": 28.18,
+          "word": "多",
+          "probability": 0.9990742206573486
+        },
+        {
+          "start": 28.18,
+          "end": 28.36,
+          "word": "礼",
+          "probability": 0.9979968965053558
+        },
+        {
+          "start": 28.36,
+          "end": 28.56,
+          "word": "物",
+          "probability": 0.9996826648712158
+        },
+        {
+          "start": 28.56,
+          "end": 28.76,
+          "word": "来",
+          "probability": 0.9975626468658447
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 14,
+      "seek": 2876,
+      "start": 29.740000000000002,
+      "end": 33.54,
+      "text": "医学姐,这是给孩子们准备的礼物。",
+      "tokens": [
+        50364,
+        9937,
+        119,
+        29618,
+        18102,
+        11,
+        27455,
+        23197,
+        48989,
+        9497,
+        6336,
+        228,
+        1787,
+        229,
+        1546,
+        14971,
+        120,
+        23516,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.21688215478378184,
+      "compression_ratio": 0.9,
+      "no_speech_prob": 0.1840892732143402,
+      "words": [
+        {
+          "start": 29.740000000000002,
+          "end": 30.26,
+          "word": "医",
+          "probability": 0.5643798336386681
+        },
+        {
+          "start": 30.26,
+          "end": 30.5,
+          "word": "学",
+          "probability": 0.9729961156845093
+        },
+        {
+          "start": 30.5,
+          "end": 30.78,
+          "word": "姐,",
+          "probability": 0.8259562253952026
+        },
+        {
+          "start": 31.32,
+          "end": 31.54,
+          "word": "这是",
+          "probability": 0.9663354158401489
+        },
+        {
+          "start": 31.54,
+          "end": 31.78,
+          "word": "给",
+          "probability": 0.985246479511261
+        },
+        {
+          "start": 31.78,
+          "end": 32.12,
+          "word": "孩子",
+          "probability": 0.9942942261695862
+        },
+        {
+          "start": 32.12,
+          "end": 32.36,
+          "word": "们",
+          "probability": 0.965092122554779
+        },
+        {
+          "start": 32.36,
+          "end": 32.58,
+          "word": "准",
+          "probability": 0.995539516210556
+        },
+        {
+          "start": 32.58,
+          "end": 32.76,
+          "word": "备",
+          "probability": 0.9998241066932678
+        },
+        {
+          "start": 32.76,
+          "end": 32.9,
+          "word": "的",
+          "probability": 0.9970490336418152
+        },
+        {
+          "start": 32.9,
+          "end": 33.1,
+          "word": "礼",
+          "probability": 0.9978221654891968
+        },
+        {
+          "start": 33.1,
+          "end": 33.54,
+          "word": "物。",
+          "probability": 0.9994471669197083
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 15,
+      "seek": 2876,
+      "start": 34.580000000000005,
+      "end": 38.06,
+      "text": "谢谢,你们别客气,快坐吧。",
+      "tokens": [
+        50614,
+        19879,
+        11,
+        29806,
+        18453,
+        32316,
+        42204,
+        11,
+        10251,
+        31123,
+        6062,
+        1543,
+        50864
+      ],
+      "avg_logprob": -0.21688215478378184,
+      "compression_ratio": 0.9,
+      "no_speech_prob": 0.1840892732143402,
+      "words": [
+        {
+          "start": 34.580000000000005,
+          "end": 35.1,
+          "word": "谢谢,",
+          "probability": 0.9776061773300171
+        },
+        {
+          "start": 35.9,
+          "end": 36.08,
+          "word": "你们",
+          "probability": 0.9716098308563232
+        },
+        {
+          "start": 36.08,
+          "end": 36.4,
+          "word": "别",
+          "probability": 0.9968888163566589
+        },
+        {
+          "start": 36.4,
+          "end": 36.62,
+          "word": "客",
+          "probability": 0.9997472167015076
+        },
+        {
+          "start": 36.62,
+          "end": 36.88,
+          "word": "气,",
+          "probability": 0.999472439289093
+        },
+        {
+          "start": 37.34,
+          "end": 37.56,
+          "word": "快",
+          "probability": 0.9838265776634216
+        },
+        {
+          "start": 37.56,
+          "end": 37.78,
+          "word": "坐",
+          "probability": 0.9161765575408936
+        },
+        {
+          "start": 37.78,
+          "end": 38.06,
+          "word": "吧。",
+          "probability": 0.9891965389251709
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.2303043379999963,
+  "realTimeFactor": 0.0822211448279372,
+  "observationChecks": {
+    "rawWordCount": 83,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

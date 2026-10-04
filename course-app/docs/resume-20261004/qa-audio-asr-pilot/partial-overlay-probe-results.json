@@ -1,0 +1,591 @@
+{
+  "reviewer": "independent partial overlay reviewer",
+  "checks": [
+    {
+      "name": "frozen bytes content/audio-segments-hsk2-reviewed-sentences.json",
+      "status": "passed"
+    },
+    {
+      "name": "frozen bytes content/audio-segment-reviewed-sentences-authority.json",
+      "status": "passed"
+    },
+    {
+      "name": "frozen bytes src/audio-segment-contract.ts",
+      "status": "passed"
+    },
+    {
+      "name": "frozen bytes src/segments.ts",
+      "status": "passed"
+    },
+    {
+      "name": "frozen bytes src/segment-resolver.ts",
+      "status": "passed"
+    },
+    {
+      "name": "frozen bytes src/lesson-view.ts",
+      "status": "passed"
+    },
+    {
+      "name": "frozen bytes content/audio-segments-pilot.json",
+      "status": "passed"
+    },
+    {
+      "name": "frozen bytes content/audio-segments-hsk2-lessons02-03.json",
+      "status": "passed"
+    },
+    {
+      "name": "frozen bytes content/audio-segment-authority.json",
+      "status": "passed"
+    },
+    {
+      "name": "frozen bytes docs/resume-20261004/qa-audio-asr-pilot/post-crop-review.json",
+      "status": "passed"
+    },
+    {
+      "name": "authority canonical snapshot pins all source/evidence values",
+      "status": "passed"
+    },
+    {
+      "name": "legacy validation and merge function bodies byte-identical to HEAD",
+      "status": "passed"
+    },
+    {
+      "name": "reviewed accepted IDs exact and color not precision eligible",
+      "status": "passed"
+    },
+    {
+      "name": "hsk2-fltrp-2026:l04:text2:line3 lesson frozen bytes",
+      "status": "passed"
+    },
+    {
+      "name": "hsk2-fltrp-2026:l04:text2:line3 source text/frame/PCM/review exact",
+      "status": "passed"
+    },
+    {
+      "name": "hsk2-fltrp-2026:l04:text2:line3 unchanged Chinese/pinyin and original ordinal",
+      "status": "passed"
+    },
+    {
+      "name": "hsk2-fltrp-2026:l04:text2:line3 small original raw transcript/probability/low flags",
+      "status": "passed"
+    },
+    {
+      "name": "hsk2-fltrp-2026:l04:text2:line3 medium original raw transcript/probability/low flags",
+      "status": "passed"
+    },
+    {
+      "name": "hsk2-fltrp-2026:l05:text2:line8:sentence2 lesson frozen bytes",
+      "status": "passed"
+    },
+    {
+      "name": "hsk2-fltrp-2026:l05:text2:line8:sentence2 source text/frame/PCM/review exact",
+      "status": "passed"
+    },
+    {
+      "name": "hsk2-fltrp-2026:l05:text2:line8:sentence2 unchanged Chinese/pinyin and original ordinal",
+      "status": "passed"
+    },
+    {
+      "name": "hsk2-fltrp-2026:l05:text2:line8:sentence2 small original raw transcript/probability/low flags",
+      "status": "passed"
+    },
+    {
+      "name": "hsk2-fltrp-2026:l05:text2:line8:sentence2 medium original raw transcript/probability/low flags",
+      "status": "passed"
+    },
+    {
+      "name": "async positive returns exact isolated clone",
+      "status": "passed"
+    },
+    {
+      "name": "old61/13/78/33 preserved; new61/13/79/34 only",
+      "status": "passed"
+    },
+    {
+      "name": "partial source ordinal2 and exact range; no parent/sibling/color precision",
+      "status": "passed"
+    },
+    {
+      "name": "all legacy child IDs/order/ordinal/ranges retained",
+      "status": "passed"
+    },
+    {
+      "name": "new subset rejected by old complete-coverage validator",
+      "status": "passed"
+    },
+    {
+      "name": "duplicate overlay merge rejected",
+      "status": "passed"
+    },
+    {
+      "name": "rejected overlay retains all registered old clips",
+      "status": "passed"
+    }
+  ],
+  "negativeProbes": [
+    {
+      "name": "missing target",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset authority or exact two IDs"
+    },
+    {
+      "name": "missing accepted ID",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset authority or exact two IDs"
+    },
+    {
+      "name": "duplicate accepted ID",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset authority or exact two IDs"
+    },
+    {
+      "name": "extra sibling",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset authority or exact two IDs"
+    },
+    {
+      "name": "precise parent",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset authority or exact two IDs"
+    },
+    {
+      "name": "color word repetition invention",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset shape"
+    },
+    {
+      "name": "unresolved injected",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset shape"
+    },
+    {
+      "name": "wrong partition",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "unknown mode",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset shape"
+    },
+    {
+      "name": "wrong version",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset shape"
+    },
+    {
+      "name": "widen lessons",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset scope"
+    },
+    {
+      "name": "widen levels",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset scope"
+    },
+    {
+      "name": "root human certification",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset certification humanListening"
+    },
+    {
+      "name": "root device certification",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset certification devicePlaybackCertified"
+    },
+    {
+      "name": "root tone certification",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset certification pronunciationToneCertified"
+    },
+    {
+      "name": "removed root certification",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset certification humanListening"
+    },
+    {
+      "name": "wrong review SHA",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset authority or exact two IDs"
+    },
+    {
+      "name": "wrong review path",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset authority or exact two IDs"
+    },
+    {
+      "name": "extra source track",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source tracks"
+    },
+    {
+      "name": "declared decoded duration",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source hash/duration course-assets/hsk2/audio/4-3.mp3"
+    },
+    {
+      "name": "declared container duration",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source hash/duration course-assets/hsk2/audio/4-3.mp3"
+    },
+    {
+      "name": "source track hash",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source hash/duration course-assets/hsk2/audio/4-3.mp3"
+    },
+    {
+      "name": "source track kind",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source hash/duration course-assets/hsk2/audio/4-3.mp3"
+    },
+    {
+      "name": "source track level",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "source track lesson",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "source track duration outside tolerance",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source hash/duration course-assets/hsk2/audio/4-3.mp3"
+    },
+    {
+      "name": "overlay Chinese",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority Chinese",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay pinyin",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority pinyin",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay source SHA",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority source SHA",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay start one frame",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority start one frame",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay end one frame",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority end one frame",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay unit",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority unit",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay repetition",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority repetition",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay subsegment list",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority subsegment list",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay ordinal",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority ordinal",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay human listening",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority human listening",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay device certificate",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority device certificate",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay tone certificate",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority tone certificate",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay method",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority method",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay status",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority status",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay sample rate",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority sample rate",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay sample interval",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority sample interval",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay source PCM",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority source PCM",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay crop PCM",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority crop PCM",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay evidence review",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority evidence review",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay lowP declaration",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority lowP declaration",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay drop actual lowP record",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority drop actual lowP record",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay raise raw P",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority raise raw P",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay replace raw text",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority replace raw text",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay replace raw SHA",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority replace raw SHA",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "overlay expand glyph conversion",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l04:text2:line3"
+    },
+    {
+      "name": "joint matching authority expand glyph conversion",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "partial child ordinal1",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l05:text2:line8:sentence2"
+    },
+    {
+      "name": "partial child false parent",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset source/evidence binding hsk2-fltrp-2026:l05:text2:line8:sentence2"
+    },
+    {
+      "name": "joint source lesson SHA",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "joint source parent Chinese",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    },
+    {
+      "name": "joint review SHA",
+      "status": "rejected",
+      "error": "Invalid original-audio manifest: reviewed sentence subset frozen authority checksum"
+    }
+  ],
+  "inputHashes": [
+    {
+      "file": "course-app/content/audio-segments-hsk2-reviewed-sentences.json",
+      "sha256": "e01a625335ac02409922d26bcf29d728f1ab0d032dea36e47d5192bd659b7ae8"
+    },
+    {
+      "file": "course-app/content/audio-segment-reviewed-sentences-authority.json",
+      "sha256": "44aec78b3cc2a161e1db266f56854e5f94082c310c618b8e46a2a3e798b85306"
+    },
+    {
+      "file": "course-app/src/audio-segment-contract.ts",
+      "sha256": "42d2daff068e43f8d957dcbc6f640b7a8ce6f2136db590c94a87b64214583657"
+    },
+    {
+      "file": "course-app/src/segments.ts",
+      "sha256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00"
+    },
+    {
+      "file": "course-app/src/segment-resolver.ts",
+      "sha256": "f07829059f3426d5d57e79b5e7cf0739bfa8bba2b7737a68f2773b683e186a61"
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "sha256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a"
+    },
+    {
+      "file": "course-app/content/audio-segments-pilot.json",
+      "sha256": "6989e0f2a7f9824bdde9e9003099c1ca98a4c212764e8c364149c81ee6882cda"
+    },
+    {
+      "file": "course-app/content/audio-segments-hsk2-lessons02-03.json",
+      "sha256": "9bd2278cf872cf1d9bdccfbb3a8ff54ed96477833d73e258c724671746da91ef"
+    },
+    {
+      "file": "course-app/content/audio-segment-authority.json",
+      "sha256": "4c28025a19057f63887c405b102dc6ece6bbad5509e14e288deda38b3f90504f"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-audio-asr-pilot/post-crop-review.json",
+      "sha256": "76c0d3571f5ea0ce1c2d40de7baeffe3a58155ee6782a27636d99865c761501c"
+    }
+  ],
+  "status": "all source/positive/negative checks passed; native and actual loader concurrency reviewed separately",
+  "counts": {
+    "checks": 30,
+    "rejectedMutations": 81,
+    "oldWords": 61,
+    "oldHolds": 13,
+    "oldLines": 78,
+    "oldChildren": 33,
+    "oldActualSentenceFragments": 95,
+    "newWords": 61,
+    "newHolds": 13,
+    "newLines": 79,
+    "newChildren": 34,
+    "newActualSentenceFragments": 97,
+    "approvedNewSentenceFragments": 2,
+    "approvedNewWordCuts": 0
+  }
+}

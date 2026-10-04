@@ -1,0 +1,30 @@
+✔ frozen independent review authorizes exactly two source-frame sentences and retains low probability observations (33.301915ms)
+✔ subset source pinyin, actual lesson bytes, parent and ordinal match unchanged Chinese metadata (3.393915ms)
+✔ wrong ranges, missing gates, source substitutions and invented precision are rejected (27.15456ms)
+✔ joint overlay and authority tampering cannot create a new independent-review acceptance (4.638738ms)
+✔ legacy manifest bytes and all 61 words, 13 holds, 78 lines and 33 children remain unchanged (14.924205ms)
+✔ partial child keeps original ordinal 2 without a precise parent, sibling or color word; legacy children retain sequence (4.541103ms)
+(node:18) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Reviewed sentence overlay rejected; previously reviewed segments and original tracks remain available.
+Reviewed sentence overlay rejected; previously reviewed segments and original tracks remain available.
+✔ concurrent callers await the same delayed actual crypto gate before overlay-ready (43.31667ms)
+✔ concurrent rejection retains baseline and resolves only after rejection, with no phantom subset (10.086772ms)
+✔ invalid legacy input rejects every concurrent caller and cannot cache false readiness (6.361383ms)
+✔ optional new overlay chunk load failure preserves completed legacy registry (5.848079ms)
+✔ verified pilot clip ranges carry exact original identities and source text (8.711213ms)
+✔ unverified, foreign, out-of-track and source-hash substitutions are rejected (5.976871ms)
+✔ multi-sentence source fragments cannot be swapped or replaced (2.985416ms)
+✔ source text, pinyin, per-entry hash, scope and reviewed timing cannot be forged (7.233983ms)
+✔ word partitions and actual sentence coverage reject losses, orphans and relabeled whole paragraphs (2.331503ms)
+✔ no source authority or duplicate merged IDs can silently expose segments (0.73887ms)
+✔ pending bounds, inflated decoded duration, claimed certification and forged transcript are rejected (3.089451ms)
+✔ reviewed HSK2 lessons 2–3 retain exact 25 verified and seven pending words after runtime merge (5.180506ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 327.490876

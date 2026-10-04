@@ -1,0 +1,918 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l07:audio5",
+    "level": 3,
+    "lesson": 7,
+    "track": 5,
+    "kind": "text",
+    "text": 3,
+    "file": "course-assets/hsk3/audio/7-5.mp3",
+    "sha256": "e71961bfd35e5c5499087636bfb0171e54aaad673263d12407bfc7edd2a50f0b",
+    "bytes": 540716,
+    "manifestDurationSeconds": 31.256938,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 501133,
+      "durationSeconds": 31.3208125,
+      "sha256": "abe1cb2fb96dcdc193aef1e07c07c8cc9620b2c6fe0ae51e7e30ab3fae883c5b"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 31.3208125,
+    "duration_after_vad": 31.3208125,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.5199999999999987,
+      "end": 3.72,
+      "text": "西瓜又大又新鮮,不甜不要甜。",
+      "tokens": [
+        50364,
+        16220,
+        36727,
+        17047,
+        3582,
+        17047,
+        12560,
+        165,
+        106,
+        106,
+        11,
+        1960,
+        40536,
+        11962,
+        40536,
+        1543,
+        50564
+      ],
+      "avg_logprob": -0.1453978317821848,
+      "compression_ratio": 1.263681592039801,
+      "no_speech_prob": 0.057643044739961624,
+      "words": [
+        {
+          "start": 0.5199999999999987,
+          "end": 0.96,
+          "word": "西",
+          "probability": 0.8968062996864319
+        },
+        {
+          "start": 0.96,
+          "end": 1.12,
+          "word": "瓜",
+          "probability": 0.9992741942405701
+        },
+        {
+          "start": 1.12,
+          "end": 1.42,
+          "word": "又",
+          "probability": 0.8861246705055237
+        },
+        {
+          "start": 1.42,
+          "end": 1.66,
+          "word": "大",
+          "probability": 0.993412435054779
+        },
+        {
+          "start": 1.66,
+          "end": 1.86,
+          "word": "又",
+          "probability": 0.9945473670959473
+        },
+        {
+          "start": 1.86,
+          "end": 2.08,
+          "word": "新",
+          "probability": 0.9533747434616089
+        },
+        {
+          "start": 2.08,
+          "end": 2.32,
+          "word": "鮮,",
+          "probability": 0.9754486282666525
+        },
+        {
+          "start": 2.64,
+          "end": 2.82,
+          "word": "不",
+          "probability": 0.6935893297195435
+        },
+        {
+          "start": 2.82,
+          "end": 3.04,
+          "word": "甜",
+          "probability": 0.958661675453186
+        },
+        {
+          "start": 3.04,
+          "end": 3.38,
+          "word": "不要",
+          "probability": 0.8163058757781982
+        },
+        {
+          "start": 3.38,
+          "end": 3.72,
+          "word": "甜。",
+          "probability": 0.9201705455780029
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.96,
+      "end": 7.44,
+      "text": "西瓜看起来不错,怎么卖?",
+      "tokens": [
+        50564,
+        16220,
+        36727,
+        4200,
+        9147,
+        6912,
+        1960,
+        29900,
+        11,
+        15282,
+        5322,
+        244,
+        30,
+        50764
+      ],
+      "avg_logprob": -0.1453978317821848,
+      "compression_ratio": 1.263681592039801,
+      "no_speech_prob": 0.057643044739961624,
+      "words": [
+        {
+          "start": 4.96,
+          "end": 5.4,
+          "word": "西",
+          "probability": 0.8950347900390625
+        },
+        {
+          "start": 5.4,
+          "end": 5.56,
+          "word": "瓜",
+          "probability": 0.999572217464447
+        },
+        {
+          "start": 5.56,
+          "end": 5.78,
+          "word": "看",
+          "probability": 0.9799835085868835
+        },
+        {
+          "start": 5.78,
+          "end": 5.94,
+          "word": "起",
+          "probability": 0.4007468819618225
+        },
+        {
+          "start": 5.94,
+          "end": 6.06,
+          "word": "来",
+          "probability": 0.9925560355186462
+        },
+        {
+          "start": 6.06,
+          "end": 6.28,
+          "word": "不",
+          "probability": 0.9725406169891357
+        },
+        {
+          "start": 6.28,
+          "end": 6.5,
+          "word": "错,",
+          "probability": 0.9985207915306091
+        },
+        {
+          "start": 6.94,
+          "end": 7.16,
+          "word": "怎么",
+          "probability": 0.9592325091362
+        },
+        {
+          "start": 7.16,
+          "end": 7.44,
+          "word": "卖?",
+          "probability": 0.9977872967720032
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 8.72,
+      "end": 13.96,
+      "text": "五块钱一公斤。来,您先尝尝这块冰西瓜,甜极了。",
+      "tokens": [
+        50764,
+        21001,
+        47734,
+        39623,
+        2257,
+        13545,
+        4307,
+        97,
+        1543,
+        6912,
+        11,
+        23414,
+        10108,
+        1530,
+        251,
+        1530,
+        251,
+        5562,
+        47734,
+        5676,
+        108,
+        16220,
+        36727,
+        11,
+        40536,
+        7360,
+        223,
+        2289,
+        1543,
+        51064
+      ],
+      "avg_logprob": -0.1453978317821848,
+      "compression_ratio": 1.263681592039801,
+      "no_speech_prob": 0.057643044739961624,
+      "words": [
+        {
+          "start": 8.72,
+          "end": 9.02,
+          "word": "五",
+          "probability": 0.6431952714920044
+        },
+        {
+          "start": 9.02,
+          "end": 9.24,
+          "word": "块",
+          "probability": 0.9900248050689697
+        },
+        {
+          "start": 9.24,
+          "end": 9.42,
+          "word": "钱",
+          "probability": 0.9944721460342407
+        },
+        {
+          "start": 9.42,
+          "end": 9.56,
+          "word": "一",
+          "probability": 0.9602876305580139
+        },
+        {
+          "start": 9.56,
+          "end": 9.74,
+          "word": "公",
+          "probability": 0.8876681923866272
+        },
+        {
+          "start": 9.74,
+          "end": 9.92,
+          "word": "斤。",
+          "probability": 0.9870936274528503
+        },
+        {
+          "start": 10.64,
+          "end": 10.82,
+          "word": "来,",
+          "probability": 0.9548153877258301
+        },
+        {
+          "start": 11.24,
+          "end": 11.36,
+          "word": "您",
+          "probability": 0.9186294078826904
+        },
+        {
+          "start": 11.36,
+          "end": 11.5,
+          "word": "先",
+          "probability": 0.9934050440788269
+        },
+        {
+          "start": 11.5,
+          "end": 11.72,
+          "word": "尝",
+          "probability": 0.9969296455383301
+        },
+        {
+          "start": 11.72,
+          "end": 11.9,
+          "word": "尝",
+          "probability": 0.9985847771167755
+        },
+        {
+          "start": 11.9,
+          "end": 12.14,
+          "word": "这",
+          "probability": 0.9608393311500549
+        },
+        {
+          "start": 12.14,
+          "end": 12.26,
+          "word": "块",
+          "probability": 0.9908097982406616
+        },
+        {
+          "start": 12.26,
+          "end": 12.44,
+          "word": "冰",
+          "probability": 0.989990770816803
+        },
+        {
+          "start": 12.44,
+          "end": 12.68,
+          "word": "西",
+          "probability": 0.987190306186676
+        },
+        {
+          "start": 12.68,
+          "end": 12.88,
+          "word": "瓜,",
+          "probability": 0.999239444732666
+        },
+        {
+          "start": 13.22,
+          "end": 13.48,
+          "word": "甜",
+          "probability": 0.8240952491760254
+        },
+        {
+          "start": 13.48,
+          "end": 13.74,
+          "word": "极",
+          "probability": 0.7718351185321808
+        },
+        {
+          "start": 13.74,
+          "end": 13.96,
+          "word": "了。",
+          "probability": 0.9475470185279846
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 15.12,
+      "end": 19.72,
+      "text": "是挺甜的,帮我选个大点的,再来两斤香蕉。",
+      "tokens": [
+        51064,
+        1541,
+        41046,
+        40536,
+        1546,
+        11,
+        4845,
+        106,
+        1654,
+        2215,
+        231,
+        7549,
+        3582,
+        12579,
+        1546,
+        11,
+        8623,
+        6912,
+        36257,
+        4307,
+        97,
+        16017,
+        164,
+        243,
+        231,
+        1543,
+        51364
+      ],
+      "avg_logprob": -0.1453978317821848,
+      "compression_ratio": 1.263681592039801,
+      "no_speech_prob": 0.057643044739961624,
+      "words": [
+        {
+          "start": 15.12,
+          "end": 15.46,
+          "word": "是",
+          "probability": 0.9725068807601929
+        },
+        {
+          "start": 15.46,
+          "end": 15.66,
+          "word": "挺",
+          "probability": 0.9967262744903564
+        },
+        {
+          "start": 15.66,
+          "end": 15.9,
+          "word": "甜",
+          "probability": 0.999011754989624
+        },
+        {
+          "start": 15.9,
+          "end": 16.14,
+          "word": "的,",
+          "probability": 0.9955824017524719
+        },
+        {
+          "start": 16.62,
+          "end": 16.82,
+          "word": "帮",
+          "probability": 0.9893113374710083
+        },
+        {
+          "start": 16.82,
+          "end": 16.98,
+          "word": "我",
+          "probability": 0.9975013136863708
+        },
+        {
+          "start": 16.98,
+          "end": 17.16,
+          "word": "选",
+          "probability": 0.9971735775470734
+        },
+        {
+          "start": 17.16,
+          "end": 17.34,
+          "word": "个",
+          "probability": 0.9347708225250244
+        },
+        {
+          "start": 17.34,
+          "end": 17.56,
+          "word": "大",
+          "probability": 0.9841071367263794
+        },
+        {
+          "start": 17.56,
+          "end": 17.76,
+          "word": "点",
+          "probability": 0.9555296301841736
+        },
+        {
+          "start": 17.76,
+          "end": 18.02,
+          "word": "的,",
+          "probability": 0.8392438888549805
+        },
+        {
+          "start": 18.5,
+          "end": 18.72,
+          "word": "再",
+          "probability": 0.9833515286445618
+        },
+        {
+          "start": 18.72,
+          "end": 18.88,
+          "word": "来",
+          "probability": 0.9965389966964722
+        },
+        {
+          "start": 18.88,
+          "end": 19.1,
+          "word": "两",
+          "probability": 0.9866034984588623
+        },
+        {
+          "start": 19.1,
+          "end": 19.28,
+          "word": "斤",
+          "probability": 0.9748102426528931
+        },
+        {
+          "start": 19.28,
+          "end": 19.48,
+          "word": "香",
+          "probability": 0.9624731540679932
+        },
+        {
+          "start": 19.48,
+          "end": 19.72,
+          "word": "蕉。",
+          "probability": 0.982231338818868
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 20.88,
+      "end": 22.68,
+      "text": "一共五十八块五毛。",
+      "tokens": [
+        51364,
+        2257,
+        15408,
+        21001,
+        20145,
+        33453,
+        47734,
+        21001,
+        39057,
+        1543,
+        51514
+      ],
+      "avg_logprob": -0.1453978317821848,
+      "compression_ratio": 1.263681592039801,
+      "no_speech_prob": 0.057643044739961624,
+      "words": [
+        {
+          "start": 20.88,
+          "end": 21.1,
+          "word": "一",
+          "probability": 0.9960542917251587
+        },
+        {
+          "start": 21.1,
+          "end": 21.26,
+          "word": "共",
+          "probability": 0.9984323382377625
+        },
+        {
+          "start": 21.26,
+          "end": 21.58,
+          "word": "五",
+          "probability": 0.8720709085464478
+        },
+        {
+          "start": 21.58,
+          "end": 21.78,
+          "word": "十",
+          "probability": 0.9968795776367188
+        },
+        {
+          "start": 21.78,
+          "end": 21.96,
+          "word": "八",
+          "probability": 0.9971638321876526
+        },
+        {
+          "start": 21.96,
+          "end": 22.2,
+          "word": "块",
+          "probability": 0.9921521544456482
+        },
+        {
+          "start": 22.2,
+          "end": 22.48,
+          "word": "五",
+          "probability": 0.9748901724815369
+        },
+        {
+          "start": 22.48,
+          "end": 22.68,
+          "word": "毛。",
+          "probability": 0.9607146978378296
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 24.0,
+      "end": 26.46,
+      "text": "我买了这么多,便宜点吧。",
+      "tokens": [
+        51514,
+        1654,
+        2930,
+        108,
+        2289,
+        31889,
+        6392,
+        11,
+        27364,
+        2415,
+        250,
+        12579,
+        6062,
+        1543,
+        51714
+      ],
+      "avg_logprob": -0.1453978317821848,
+      "compression_ratio": 1.263681592039801,
+      "no_speech_prob": 0.057643044739961624,
+      "words": [
+        {
+          "start": 24.0,
+          "end": 24.28,
+          "word": "我",
+          "probability": 0.9957284331321716
+        },
+        {
+          "start": 24.28,
+          "end": 24.46,
+          "word": "买",
+          "probability": 0.9989786446094513
+        },
+        {
+          "start": 24.46,
+          "end": 24.6,
+          "word": "了",
+          "probability": 0.9914489388465881
+        },
+        {
+          "start": 24.6,
+          "end": 24.84,
+          "word": "这么",
+          "probability": 0.9908822774887085
+        },
+        {
+          "start": 24.84,
+          "end": 25.12,
+          "word": "多,",
+          "probability": 0.9975975155830383
+        },
+        {
+          "start": 25.6,
+          "end": 25.8,
+          "word": "便",
+          "probability": 0.9951948523521423
+        },
+        {
+          "start": 25.8,
+          "end": 26.04,
+          "word": "宜",
+          "probability": 0.9894339442253113
+        },
+        {
+          "start": 26.04,
+          "end": 26.22,
+          "word": "点",
+          "probability": 0.6878789663314819
+        },
+        {
+          "start": 26.22,
+          "end": 26.46,
+          "word": "吧。",
+          "probability": 0.6412802934646606
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 7,
+      "seek": 2646,
+      "start": 27.44,
+      "end": 30.68,
+      "text": "您给我55吧, 不能再便宜了。",
+      "tokens": [
+        50364,
+        23414,
+        49076,
+        13622,
+        6062,
+        11,
+        19021,
+        8225,
+        8623,
+        27364,
+        2415,
+        250,
+        2289,
+        1543,
+        50564
+      ],
+      "avg_logprob": -0.3272387199103832,
+      "compression_ratio": 0.7708333333333334,
+      "no_speech_prob": 0.3222272992134094,
+      "words": [
+        {
+          "start": 27.44,
+          "end": 27.92,
+          "word": "您",
+          "probability": 0.8432952761650085
+        },
+        {
+          "start": 27.92,
+          "end": 28.18,
+          "word": "给我",
+          "probability": 0.8553902506828308
+        },
+        {
+          "start": 28.18,
+          "end": 28.9,
+          "word": "55",
+          "probability": 0.6061504483222961
+        },
+        {
+          "start": 28.9,
+          "end": 29.28,
+          "word": "吧,",
+          "probability": 0.8796132206916809
+        },
+        {
+          "start": 29.68,
+          "end": 29.8,
+          "word": " 不",
+          "probability": 0.29788437485694885
+        },
+        {
+          "start": 29.8,
+          "end": 29.96,
+          "word": "能",
+          "probability": 0.9899803996086121
+        },
+        {
+          "start": 29.96,
+          "end": 30.1,
+          "word": "再",
+          "probability": 0.9912653565406799
+        },
+        {
+          "start": 30.1,
+          "end": 30.32,
+          "word": "便",
+          "probability": 0.9981637597084045
+        },
+        {
+          "start": 30.32,
+          "end": 30.54,
+          "word": "宜",
+          "probability": 0.9990828633308411
+        },
+        {
+          "start": 30.54,
+          "end": 30.68,
+          "word": "了。",
+          "probability": 0.9731248617172241
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 4.89048234400002,
+  "realTimeFactor": 0.1561416181013829,
+  "observationChecks": {
+    "rawWordCount": 83,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

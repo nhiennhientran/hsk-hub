@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l11:audio2",
+    "level": 3,
+    "lesson": 11,
+    "track": 2,
+    "kind": "vocab",
+    "text": 1,
+    "file": "course-assets/hsk3/audio/11-2.mp3",
+    "sha256": "6a2e562893e875ac54c6be3e221344937bbb7c476d2079b0922418b37fec95bf",
+    "bytes": 436051,
+    "manifestDurationSeconds": 24.715256,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 396225,
+      "durationSeconds": 24.7640625,
+      "sha256": "70c846efbbc2c63cc07cab1854916df3899be2903cf36b5cb5b483f82e0e7abf"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 24.7640625,
+    "duration_after_vad": 24.7640625,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 22.96,
+      "text": "会议,经理,开会,后天,地点,是,发,笔记本电脑,获折。",
+      "tokens": [
+        50364,
+        12949,
+        7422,
+        106,
+        11,
+        30276,
+        13876,
+        11,
+        18937,
+        12949,
+        11,
+        13547,
+        6135,
+        11,
+        10928,
+        12579,
+        11,
+        1541,
+        11,
+        28926,
+        11,
+        5437,
+        242,
+        34756,
+        8802,
+        42182,
+        27067,
+        239,
+        11,
+        31127,
+        115,
+        7235,
+        246,
+        1543,
+        51594
+      ],
+      "avg_logprob": -0.3172919982009464,
+      "compression_ratio": 0.8607594936708861,
+      "no_speech_prob": 0.5076593160629272,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.74,
+          "word": "会",
+          "probability": 0.8754797577857971
+        },
+        {
+          "start": 0.74,
+          "end": 1.9,
+          "word": "议,",
+          "probability": 0.967648446559906
+        },
+        {
+          "start": 1.9,
+          "end": 3.5,
+          "word": "经",
+          "probability": 0.9280633926391602
+        },
+        {
+          "start": 3.5,
+          "end": 5.32,
+          "word": "理,",
+          "probability": 0.9840049743652344
+        },
+        {
+          "start": 5.84,
+          "end": 6.06,
+          "word": "开",
+          "probability": 0.9817478060722351
+        },
+        {
+          "start": 6.06,
+          "end": 6.92,
+          "word": "会,",
+          "probability": 0.9953515529632568
+        },
+        {
+          "start": 8.34,
+          "end": 8.64,
+          "word": "后",
+          "probability": 0.899840772151947
+        },
+        {
+          "start": 8.64,
+          "end": 10.46,
+          "word": "天,",
+          "probability": 0.9877557754516602
+        },
+        {
+          "start": 10.98,
+          "end": 11.22,
+          "word": "地",
+          "probability": 0.9645289778709412
+        },
+        {
+          "start": 11.22,
+          "end": 13.16,
+          "word": "点,",
+          "probability": 0.9980767965316772
+        },
+        {
+          "start": 13.7,
+          "end": 14.08,
+          "word": "是,",
+          "probability": 0.370662659406662
+        },
+        {
+          "start": 15.74,
+          "end": 16.08,
+          "word": "发,",
+          "probability": 0.9805998206138611
+        },
+        {
+          "start": 17.68,
+          "end": 17.88,
+          "word": "笔",
+          "probability": 0.9474663138389587
+        },
+        {
+          "start": 17.88,
+          "end": 18.14,
+          "word": "记",
+          "probability": 0.9860122799873352
+        },
+        {
+          "start": 18.14,
+          "end": 18.42,
+          "word": "本",
+          "probability": 0.9996411800384521
+        },
+        {
+          "start": 18.42,
+          "end": 18.68,
+          "word": "电",
+          "probability": 0.9953104853630066
+        },
+        {
+          "start": 18.68,
+          "end": 21.7,
+          "word": "脑,",
+          "probability": 0.998598039150238
+        },
+        {
+          "start": 22.12,
+          "end": 22.38,
+          "word": "获",
+          "probability": 0.5432094223797321
+        },
+        {
+          "start": 22.38,
+          "end": 22.96,
+          "word": "折。",
+          "probability": 0.6857906132936478
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 2.766612484999996,
+  "realTimeFactor": 0.11171884600921177,
+  "observationChecks": {
+    "rawWordCount": 19,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

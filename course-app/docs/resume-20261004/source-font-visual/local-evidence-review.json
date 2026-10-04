@@ -1,0 +1,74 @@
+{
+  "status": "local-string-layout-probe-passed-font-unverified",
+  "rawReporter": {
+    "path": "native-results.json",
+    "sha256": "3b9f3a109724e54c5d6132314df290b7c119b9722347a169af43ca11dca2e7a2",
+    "passed": 2,
+    "skipped": 0,
+    "retries": 0
+  },
+  "results": [
+    {
+      "viewport": {
+        "width": 320,
+        "height": 900
+      },
+      "fieldCount": 24,
+      "tableCount": 5,
+      "pngCount": 17,
+      "ledger": "native-output/hsk1-source-font-visual-HS-e0215-ders-visual-evidence-at-320-chromium/source-font-evidence.json",
+      "ledgerSHA256": "70a759889d2ac8a2225bb5ad1697c783f23508623b0e6880a4cfa080f5f0c083"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fieldCount": 24,
+      "tableCount": 5,
+      "pngCount": 17,
+      "ledger": "native-output/hsk1-source-font-visual-HS-fd5c3-ers-visual-evidence-at-1440-chromium/source-font-evidence.json",
+      "ledgerSHA256": "21a3a8f6a5dca75ebf10c1763ad1d13a21427c8b20bdf694a1b88b76cea62c7f"
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "hsk1-app/content/source-activities/lesson-03.json",
+      "sha256": "ccd76ad50a2dc66dcea0a5a97a72c67d76c6e36e20beeb543824d6dc2e161103"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-06.json",
+      "sha256": "bb61cb1f0d6e3b6f19b7ddf17c08b47370d3c46c812cbf15bc4b56d9acb2fd29"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-07.json",
+      "sha256": "1c4525238cfd7385e207211f36f57633a6440ccea7b69be58522bc0091bdddb4"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-12.json",
+      "sha256": "59940d4585d7a14793455d54755fa0f54508be1266765aa8a7fa970000161d8c"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-13.json",
+      "sha256": "18de1697c9b9f05646b5c5688989488895e6b48ae8ef9591d554d189565b5b7b"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-14.json",
+      "sha256": "820e147f58196529e195aaf40352604bc8b3c6edf5adee51ab5122f0ae70bfdd"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-15.json",
+      "sha256": "d23b2601ab51382ec8f775bb21cbdd2386b14dd0f649230b457e6b813cf32a9e"
+    }
+  ],
+  "servedBuild": {
+    "root": "/workspace/scratch/28b55072841a/flow-compat-repaired-build",
+    "manifest": "course-app/docs/resume-20261004/flow-compat-review/frozen-repaired-build.json",
+    "manifestSHA256": "9e348d9560ce27c49e70bc86e38d18f7952cad8da836967354325f2f19bfa20c",
+    "fileCount": 1717,
+    "allBytesAndSHAExact": true,
+    "noExtraOrMissing": true
+  },
+  "glyphFontCertification": false,
+  "scope": "Actual local Chromium DOM strings/layout only, previously accepted immutable core flow consumer; no new partial-sentence consumer, remote Noto glyph, WebKit, physical-device, audio listening or password-entry certification."
+}

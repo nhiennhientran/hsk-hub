@@ -1,0 +1,637 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l04:audio7",
+    "level": 2,
+    "lesson": 4,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk2/audio/4-7.mp3",
+    "sha256": "c1ed7157c1e66262624aa3f69b43cd62997b993902af74b2c8fd41c07bc7211d",
+    "bytes": 512262,
+    "manifestDurationSeconds": 19.541333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 312576,
+      "durationSeconds": 19.536,
+      "sha256": "eb0f2b517e9942bfdd72f92df5258cf61fe633de0d3700cbc3e07c552b5ec2ef"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-medium",
+  "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 19.536,
+    "duration_after_vad": 19.536,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 8.22,
+      "text": "我和妈妈去了一家商场,因为是新开的,所以这几天东西很便宜。",
+      "tokens": [
+        50364,
+        1654,
+        12565,
+        32462,
+        32462,
+        45190,
+        2257,
+        5155,
+        45581,
+        50255,
+        11,
+        34627,
+        1541,
+        12560,
+        18937,
+        1546,
+        11,
+        7239,
+        5562,
+        6336,
+        254,
+        6135,
+        38409,
+        16220,
+        4563,
+        27364,
+        2415,
+        250,
+        1543,
+        50764
+      ],
+      "avg_logprob": -0.08242832636460662,
+      "compression_ratio": 1.1871345029239766,
+      "no_speech_prob": 0.21651016175746918,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.9,
+          "word": "我",
+          "probability": 0.8969788551330566
+        },
+        {
+          "start": 0.9,
+          "end": 1.12,
+          "word": "和",
+          "probability": 0.9875920414924622
+        },
+        {
+          "start": 1.12,
+          "end": 1.4,
+          "word": "妈",
+          "probability": 0.8308853507041931
+        },
+        {
+          "start": 1.4,
+          "end": 1.6,
+          "word": "妈",
+          "probability": 0.9985914826393127
+        },
+        {
+          "start": 1.6,
+          "end": 1.88,
+          "word": "去了",
+          "probability": 0.9760940670967102
+        },
+        {
+          "start": 1.88,
+          "end": 2.18,
+          "word": "一",
+          "probability": 0.9955150485038757
+        },
+        {
+          "start": 2.18,
+          "end": 2.28,
+          "word": "家",
+          "probability": 0.9994852542877197
+        },
+        {
+          "start": 2.28,
+          "end": 2.6,
+          "word": "商",
+          "probability": 0.9970640540122986
+        },
+        {
+          "start": 2.6,
+          "end": 3.02,
+          "word": "场,",
+          "probability": 0.9976930022239685
+        },
+        {
+          "start": 3.58,
+          "end": 3.92,
+          "word": "因为",
+          "probability": 0.9671730399131775
+        },
+        {
+          "start": 3.92,
+          "end": 4.22,
+          "word": "是",
+          "probability": 0.9718299508094788
+        },
+        {
+          "start": 4.22,
+          "end": 4.48,
+          "word": "新",
+          "probability": 0.998319685459137
+        },
+        {
+          "start": 4.48,
+          "end": 4.74,
+          "word": "开",
+          "probability": 0.9985045194625854
+        },
+        {
+          "start": 4.74,
+          "end": 5.26,
+          "word": "的,",
+          "probability": 0.9931566119194031
+        },
+        {
+          "start": 5.54,
+          "end": 5.88,
+          "word": "所以",
+          "probability": 0.9679453372955322
+        },
+        {
+          "start": 5.88,
+          "end": 6.12,
+          "word": "这",
+          "probability": 0.9926274418830872
+        },
+        {
+          "start": 6.12,
+          "end": 6.26,
+          "word": "几",
+          "probability": 0.9980611503124237
+        },
+        {
+          "start": 6.26,
+          "end": 6.4,
+          "word": "天",
+          "probability": 0.9993093013763428
+        },
+        {
+          "start": 6.4,
+          "end": 6.74,
+          "word": "东",
+          "probability": 0.9851306080818176
+        },
+        {
+          "start": 6.74,
+          "end": 6.88,
+          "word": "西",
+          "probability": 0.9996293783187866
+        },
+        {
+          "start": 6.88,
+          "end": 7.18,
+          "word": "很",
+          "probability": 0.9762932062149048
+        },
+        {
+          "start": 7.18,
+          "end": 7.5,
+          "word": "便",
+          "probability": 0.9994787573814392
+        },
+        {
+          "start": 7.5,
+          "end": 8.22,
+          "word": "宜。",
+          "probability": 0.9991402924060822
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 8.54,
+      "end": 18.54,
+      "text": "商场里的衣服颜色很多,我没穿过红色的裤子,妈妈让我试了试,我觉得我穿红色的也很好看。",
+      "tokens": [
+        50764,
+        45581,
+        50255,
+        15759,
+        1546,
+        9890,
+        96,
+        27408,
+        12501,
+        250,
+        17673,
+        20778,
+        11,
+        1654,
+        10062,
+        13740,
+        123,
+        16866,
+        16853,
+        95,
+        17673,
+        1546,
+        8083,
+        97,
+        7626,
+        11,
+        32462,
+        32462,
+        33650,
+        1654,
+        5233,
+        243,
+        2289,
+        5233,
+        243,
+        11,
+        45681,
+        1654,
+        13740,
+        123,
+        16853,
+        95,
+        17673,
+        1546,
+        6404,
+        23801,
+        4200,
+        1543,
+        51314
+      ],
+      "avg_logprob": -0.08242832636460662,
+      "compression_ratio": 1.1871345029239766,
+      "no_speech_prob": 0.21651016175746918,
+      "words": [
+        {
+          "start": 8.54,
+          "end": 8.68,
+          "word": "商",
+          "probability": 0.9603241086006165
+        },
+        {
+          "start": 8.68,
+          "end": 8.86,
+          "word": "场",
+          "probability": 0.9990467429161072
+        },
+        {
+          "start": 8.86,
+          "end": 9.08,
+          "word": "里",
+          "probability": 0.9966840147972107
+        },
+        {
+          "start": 9.08,
+          "end": 9.22,
+          "word": "的",
+          "probability": 0.9940880537033081
+        },
+        {
+          "start": 9.22,
+          "end": 9.46,
+          "word": "衣",
+          "probability": 0.9985589385032654
+        },
+        {
+          "start": 9.46,
+          "end": 9.7,
+          "word": "服",
+          "probability": 0.9970076680183411
+        },
+        {
+          "start": 9.7,
+          "end": 9.96,
+          "word": "颜",
+          "probability": 0.9900110960006714
+        },
+        {
+          "start": 9.96,
+          "end": 10.12,
+          "word": "色",
+          "probability": 0.999955415725708
+        },
+        {
+          "start": 10.12,
+          "end": 10.56,
+          "word": "很多,",
+          "probability": 0.9938201308250427
+        },
+        {
+          "start": 11.4,
+          "end": 11.58,
+          "word": "我",
+          "probability": 0.9893912076950073
+        },
+        {
+          "start": 11.58,
+          "end": 11.74,
+          "word": "没",
+          "probability": 0.9935351610183716
+        },
+        {
+          "start": 11.74,
+          "end": 12.04,
+          "word": "穿",
+          "probability": 0.9991670548915863
+        },
+        {
+          "start": 12.04,
+          "end": 12.28,
+          "word": "过",
+          "probability": 0.9985268115997314
+        },
+        {
+          "start": 12.28,
+          "end": 12.54,
+          "word": "红",
+          "probability": 0.9957805871963501
+        },
+        {
+          "start": 12.54,
+          "end": 12.72,
+          "word": "色",
+          "probability": 0.998840868473053
+        },
+        {
+          "start": 12.72,
+          "end": 12.9,
+          "word": "的",
+          "probability": 0.992489755153656
+        },
+        {
+          "start": 12.9,
+          "end": 13.1,
+          "word": "裤",
+          "probability": 0.9939882755279541
+        },
+        {
+          "start": 13.1,
+          "end": 13.6,
+          "word": "子,",
+          "probability": 0.9996979236602783
+        },
+        {
+          "start": 13.84,
+          "end": 14.08,
+          "word": "妈",
+          "probability": 0.9923641681671143
+        },
+        {
+          "start": 14.08,
+          "end": 14.2,
+          "word": "妈",
+          "probability": 0.9992945194244385
+        },
+        {
+          "start": 14.2,
+          "end": 14.34,
+          "word": "让",
+          "probability": 0.9979325532913208
+        },
+        {
+          "start": 14.34,
+          "end": 14.66,
+          "word": "我",
+          "probability": 0.9980846643447876
+        },
+        {
+          "start": 14.66,
+          "end": 14.78,
+          "word": "试",
+          "probability": 0.9998771846294403
+        },
+        {
+          "start": 14.78,
+          "end": 15.06,
+          "word": "了",
+          "probability": 0.9954355359077454
+        },
+        {
+          "start": 15.06,
+          "end": 15.44,
+          "word": "试,",
+          "probability": 0.9999416470527649
+        },
+        {
+          "start": 15.84,
+          "end": 16.38,
+          "word": "我觉得",
+          "probability": 0.9217624664306641
+        },
+        {
+          "start": 16.38,
+          "end": 16.64,
+          "word": "我",
+          "probability": 0.9950646758079529
+        },
+        {
+          "start": 16.64,
+          "end": 16.8,
+          "word": "穿",
+          "probability": 0.9991635084152222
+        },
+        {
+          "start": 16.8,
+          "end": 17.14,
+          "word": "红",
+          "probability": 0.9912402331829071
+        },
+        {
+          "start": 17.14,
+          "end": 17.4,
+          "word": "色",
+          "probability": 0.9971868395805359
+        },
+        {
+          "start": 17.4,
+          "end": 17.62,
+          "word": "的",
+          "probability": 0.9919147491455078
+        },
+        {
+          "start": 17.62,
+          "end": 17.78,
+          "word": "也",
+          "probability": 0.9876509308815002
+        },
+        {
+          "start": 17.78,
+          "end": 18.16,
+          "word": "很好",
+          "probability": 0.9914888143539429
+        },
+        {
+          "start": 18.16,
+          "end": 18.54,
+          "word": "看。",
+          "probability": 0.9996808767318726
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 7.461513446999987,
+  "realTimeFactor": 0.3819366015049133,
+  "observationChecks": {
+    "rawWordCount": 57,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

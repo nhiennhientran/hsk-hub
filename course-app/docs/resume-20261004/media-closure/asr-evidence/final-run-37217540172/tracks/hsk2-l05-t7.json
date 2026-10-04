@@ -1,0 +1,573 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l05:audio7",
+    "level": 2,
+    "lesson": 5,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk2/audio/5-7.mp3",
+    "sha256": "878989cd84906a059777b64e883fb180ab8e139dfbdaa17b61882f32e33f46aa",
+    "bytes": 460896,
+    "manifestDurationSeconds": 17.333333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 277248,
+      "durationSeconds": 17.328,
+      "sha256": "58a93034143176a77e62bd0b720fca91998dd9779b75551d960f4c5be8998ff0"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 17.328,
+    "duration_after_vad": 17.328,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 3.86,
+      "text": "回國前一天 我們去醫學姐家了",
+      "tokens": [
+        50364,
+        8350,
+        8053,
+        8945,
+        2257,
+        6135,
+        27338,
+        6734,
+        48351,
+        21372,
+        18102,
+        5155,
+        2289,
+        50584
+      ],
+      "avg_logprob": -0.2168495287669116,
+      "compression_ratio": 1.087248322147651,
+      "no_speech_prob": 0.04726533591747284,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.88,
+          "word": "回",
+          "probability": 0.9684954881668091
+        },
+        {
+          "start": 0.88,
+          "end": 1.1,
+          "word": "國",
+          "probability": 0.982235312461853
+        },
+        {
+          "start": 1.1,
+          "end": 1.38,
+          "word": "前",
+          "probability": 0.9851743578910828
+        },
+        {
+          "start": 1.38,
+          "end": 1.52,
+          "word": "一",
+          "probability": 0.9837048649787903
+        },
+        {
+          "start": 1.52,
+          "end": 1.82,
+          "word": "天",
+          "probability": 0.9933310151100159
+        },
+        {
+          "start": 1.82,
+          "end": 2.4,
+          "word": " 我們",
+          "probability": 0.31465423107147217
+        },
+        {
+          "start": 2.4,
+          "end": 2.72,
+          "word": "去",
+          "probability": 0.9839905500411987
+        },
+        {
+          "start": 2.72,
+          "end": 2.92,
+          "word": "醫",
+          "probability": 0.8936898112297058
+        },
+        {
+          "start": 2.92,
+          "end": 3.16,
+          "word": "學",
+          "probability": 0.9985378980636597
+        },
+        {
+          "start": 3.16,
+          "end": 3.34,
+          "word": "姐",
+          "probability": 0.7148868441581726
+        },
+        {
+          "start": 3.34,
+          "end": 3.66,
+          "word": "家",
+          "probability": 0.8963672518730164
+        },
+        {
+          "start": 3.66,
+          "end": 3.86,
+          "word": "了",
+          "probability": 0.9575859308242798
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.400000000000001,
+      "end": 7.72,
+      "text": "到她家的時候 飯菜都做好了",
+      "tokens": [
+        50584,
+        4511,
+        15555,
+        5155,
+        20643,
+        220,
+        45229,
+        33025,
+        7182,
+        10907,
+        12621,
+        50774
+      ],
+      "avg_logprob": -0.2168495287669116,
+      "compression_ratio": 1.087248322147651,
+      "no_speech_prob": 0.04726533591747284,
+      "words": [
+        {
+          "start": 4.400000000000001,
+          "end": 4.94,
+          "word": "到",
+          "probability": 0.769761323928833
+        },
+        {
+          "start": 4.94,
+          "end": 5.12,
+          "word": "她",
+          "probability": 0.867893397808075
+        },
+        {
+          "start": 5.12,
+          "end": 5.34,
+          "word": "家",
+          "probability": 0.9923547506332397
+        },
+        {
+          "start": 5.34,
+          "end": 5.84,
+          "word": "的時候",
+          "probability": 0.8942805528640747
+        },
+        {
+          "start": 6.3,
+          "end": 6.4,
+          "word": " 飯",
+          "probability": 0.9891504645347595
+        },
+        {
+          "start": 6.4,
+          "end": 6.74,
+          "word": "菜",
+          "probability": 0.9950114488601685
+        },
+        {
+          "start": 6.74,
+          "end": 7.02,
+          "word": "都",
+          "probability": 0.9917196035385132
+        },
+        {
+          "start": 7.02,
+          "end": 7.26,
+          "word": "做",
+          "probability": 0.9965799450874329
+        },
+        {
+          "start": 7.26,
+          "end": 7.72,
+          "word": "好了",
+          "probability": 0.9787046909332275
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 7.72,
+      "end": 10.5,
+      "text": "劉爺爺還準備了奶茶",
+      "tokens": [
+        50774,
+        5087,
+        231,
+        8164,
+        118,
+        8164,
+        118,
+        7824,
+        36241,
+        2289,
+        42525,
+        43499,
+        50924
+      ],
+      "avg_logprob": -0.2168495287669116,
+      "compression_ratio": 1.087248322147651,
+      "no_speech_prob": 0.04726533591747284,
+      "words": [
+        {
+          "start": 7.72,
+          "end": 8.7,
+          "word": "劉",
+          "probability": 0.8462255001068115
+        },
+        {
+          "start": 8.7,
+          "end": 8.94,
+          "word": "爺",
+          "probability": 0.979322612285614
+        },
+        {
+          "start": 8.94,
+          "end": 9.16,
+          "word": "爺",
+          "probability": 0.9996621608734131
+        },
+        {
+          "start": 9.16,
+          "end": 9.38,
+          "word": "還",
+          "probability": 0.9764827489852905
+        },
+        {
+          "start": 9.38,
+          "end": 9.74,
+          "word": "準備",
+          "probability": 0.9941601753234863
+        },
+        {
+          "start": 9.74,
+          "end": 9.98,
+          "word": "了",
+          "probability": 0.9986056685447693
+        },
+        {
+          "start": 9.98,
+          "end": 10.16,
+          "word": "奶",
+          "probability": 0.9950365424156189
+        },
+        {
+          "start": 10.16,
+          "end": 10.5,
+          "word": "茶",
+          "probability": 0.9992238283157349
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 11.260000000000002,
+      "end": 16.14,
+      "text": "因為吃了太多東西 我們吃完飯是走回酒店的",
+      "tokens": [
+        50924,
+        11471,
+        10123,
+        2289,
+        9455,
+        6392,
+        26978,
+        27338,
+        10123,
+        14128,
+        45229,
+        1541,
+        9575,
+        8350,
+        37486,
+        22469,
+        1546,
+        51214
+      ],
+      "avg_logprob": -0.2168495287669116,
+      "compression_ratio": 1.087248322147651,
+      "no_speech_prob": 0.04726533591747284,
+      "words": [
+        {
+          "start": 11.260000000000002,
+          "end": 11.8,
+          "word": "因為",
+          "probability": 0.9272946715354919
+        },
+        {
+          "start": 11.8,
+          "end": 12.1,
+          "word": "吃",
+          "probability": 0.9958673715591431
+        },
+        {
+          "start": 12.1,
+          "end": 12.22,
+          "word": "了",
+          "probability": 0.9938434362411499
+        },
+        {
+          "start": 12.22,
+          "end": 12.42,
+          "word": "太",
+          "probability": 0.9983514547348022
+        },
+        {
+          "start": 12.42,
+          "end": 12.62,
+          "word": "多",
+          "probability": 0.9996040463447571
+        },
+        {
+          "start": 12.62,
+          "end": 13.08,
+          "word": "東西",
+          "probability": 0.9941296577453613
+        },
+        {
+          "start": 13.08,
+          "end": 13.76,
+          "word": " 我們",
+          "probability": 0.7435901761054993
+        },
+        {
+          "start": 13.76,
+          "end": 14.02,
+          "word": "吃",
+          "probability": 0.9963052272796631
+        },
+        {
+          "start": 14.02,
+          "end": 14.22,
+          "word": "完",
+          "probability": 0.9914037585258484
+        },
+        {
+          "start": 14.22,
+          "end": 14.5,
+          "word": "飯",
+          "probability": 0.9962660670280457
+        },
+        {
+          "start": 14.5,
+          "end": 14.88,
+          "word": "是",
+          "probability": 0.8562093377113342
+        },
+        {
+          "start": 14.88,
+          "end": 15.16,
+          "word": "走",
+          "probability": 0.9683248400688171
+        },
+        {
+          "start": 15.16,
+          "end": 15.46,
+          "word": "回",
+          "probability": 0.9986947178840637
+        },
+        {
+          "start": 15.46,
+          "end": 15.64,
+          "word": "酒",
+          "probability": 0.9918534159660339
+        },
+        {
+          "start": 15.64,
+          "end": 15.9,
+          "word": "店",
+          "probability": 0.9982909560203552
+        },
+        {
+          "start": 15.9,
+          "end": 16.14,
+          "word": "的",
+          "probability": 0.990810751914978
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.4670319129999996,
+  "realTimeFactor": 0.08466250652123729,
+  "observationChecks": {
+    "rawWordCount": 45,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

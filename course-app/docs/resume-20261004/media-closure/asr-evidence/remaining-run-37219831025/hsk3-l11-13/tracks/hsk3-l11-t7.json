@@ -1,0 +1,1023 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk3-fltrp-2026:l11:audio7",
+    "level": 3,
+    "lesson": 11,
+    "track": 7,
+    "kind": "text",
+    "text": 4,
+    "file": "course-assets/hsk3/audio/11-7.mp3",
+    "sha256": "d1bc7d9be62e752648e88649343bd8f2139a266cb15be124587232e809395d83",
+    "bytes": 709186,
+    "manifestDurationSeconds": 41.786189,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 669989,
+      "durationSeconds": 41.8743125,
+      "sha256": "0c6925b20dfebef387ed1a3b8405c82e510a38d799e044df804f3cde1e05c616"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 41.8743125,
+    "duration_after_vad": 41.8743125,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.6800000000000039,
+      "end": 13.58,
+      "text": "前幾天,上海的同事來北京了,一起吃飯時,他們跟我說最近有不少同事去上海工作了,問我願意不願意也去上海。",
+      "tokens": [
+        50364,
+        8945,
+        23575,
+        6135,
+        11,
+        5708,
+        20078,
+        1546,
+        13089,
+        6973,
+        3763,
+        26668,
+        31375,
+        2289,
+        11,
+        29567,
+        10123,
+        45229,
+        6611,
+        11,
+        20486,
+        9678,
+        34206,
+        46777,
+        2412,
+        1960,
+        15686,
+        13089,
+        6973,
+        6734,
+        5708,
+        20078,
+        41315,
+        2289,
+        11,
+        11361,
+        1654,
+        20692,
+        9042,
+        1960,
+        20692,
+        9042,
+        6404,
+        6734,
+        5708,
+        20078,
+        1543,
+        51064
+      ],
+      "avg_logprob": -0.13780355919152498,
+      "compression_ratio": 1.3181818181818181,
+      "no_speech_prob": 0.08376078307628632,
+      "words": [
+        {
+          "start": 0.6800000000000039,
+          "end": 1.2,
+          "word": "前",
+          "probability": 0.9338477849960327
+        },
+        {
+          "start": 1.2,
+          "end": 1.38,
+          "word": "幾",
+          "probability": 0.9491413235664368
+        },
+        {
+          "start": 1.38,
+          "end": 1.72,
+          "word": "天,",
+          "probability": 0.9962456822395325
+        },
+        {
+          "start": 1.98,
+          "end": 2.2,
+          "word": "上",
+          "probability": 0.893893837928772
+        },
+        {
+          "start": 2.2,
+          "end": 2.42,
+          "word": "海",
+          "probability": 0.9989198446273804
+        },
+        {
+          "start": 2.42,
+          "end": 2.54,
+          "word": "的",
+          "probability": 0.9830930233001709
+        },
+        {
+          "start": 2.54,
+          "end": 2.72,
+          "word": "同",
+          "probability": 0.9955631494522095
+        },
+        {
+          "start": 2.72,
+          "end": 2.94,
+          "word": "事",
+          "probability": 0.9839879870414734
+        },
+        {
+          "start": 2.94,
+          "end": 3.16,
+          "word": "來",
+          "probability": 0.9476815462112427
+        },
+        {
+          "start": 3.16,
+          "end": 3.38,
+          "word": "北",
+          "probability": 0.9953483939170837
+        },
+        {
+          "start": 3.38,
+          "end": 3.62,
+          "word": "京",
+          "probability": 0.9997544884681702
+        },
+        {
+          "start": 3.62,
+          "end": 3.86,
+          "word": "了,",
+          "probability": 0.9603224992752075
+        },
+        {
+          "start": 4.68,
+          "end": 5.06,
+          "word": "一起",
+          "probability": 0.7734589576721191
+        },
+        {
+          "start": 5.06,
+          "end": 5.36,
+          "word": "吃",
+          "probability": 0.992302656173706
+        },
+        {
+          "start": 5.36,
+          "end": 5.6,
+          "word": "飯",
+          "probability": 0.9986328482627869
+        },
+        {
+          "start": 5.6,
+          "end": 5.92,
+          "word": "時,",
+          "probability": 0.9964273571968079
+        },
+        {
+          "start": 6.32,
+          "end": 6.54,
+          "word": "他們",
+          "probability": 0.9692826271057129
+        },
+        {
+          "start": 6.54,
+          "end": 6.72,
+          "word": "跟",
+          "probability": 0.9557226300239563
+        },
+        {
+          "start": 6.72,
+          "end": 7.0,
+          "word": "我說",
+          "probability": 0.9990461468696594
+        },
+        {
+          "start": 7.0,
+          "end": 7.82,
+          "word": "最近",
+          "probability": 0.4685249328613281
+        },
+        {
+          "start": 7.82,
+          "end": 8.14,
+          "word": "有",
+          "probability": 0.9843242168426514
+        },
+        {
+          "start": 8.14,
+          "end": 8.32,
+          "word": "不",
+          "probability": 0.9887247681617737
+        },
+        {
+          "start": 8.32,
+          "end": 8.54,
+          "word": "少",
+          "probability": 0.9990112781524658
+        },
+        {
+          "start": 8.54,
+          "end": 8.78,
+          "word": "同",
+          "probability": 0.9946789741516113
+        },
+        {
+          "start": 8.78,
+          "end": 9.0,
+          "word": "事",
+          "probability": 0.9932249188423157
+        },
+        {
+          "start": 9.0,
+          "end": 9.26,
+          "word": "去",
+          "probability": 0.9785057902336121
+        },
+        {
+          "start": 9.26,
+          "end": 9.48,
+          "word": "上",
+          "probability": 0.9916778802871704
+        },
+        {
+          "start": 9.48,
+          "end": 9.72,
+          "word": "海",
+          "probability": 0.9971200227737427
+        },
+        {
+          "start": 9.72,
+          "end": 10.04,
+          "word": "工作",
+          "probability": 0.9959767460823059
+        },
+        {
+          "start": 10.04,
+          "end": 10.36,
+          "word": "了,",
+          "probability": 0.9778046011924744
+        },
+        {
+          "start": 10.88,
+          "end": 11.22,
+          "word": "問",
+          "probability": 0.9909031987190247
+        },
+        {
+          "start": 11.22,
+          "end": 11.44,
+          "word": "我",
+          "probability": 0.9815037250518799
+        },
+        {
+          "start": 11.44,
+          "end": 11.68,
+          "word": "願",
+          "probability": 0.9659417271614075
+        },
+        {
+          "start": 11.68,
+          "end": 11.9,
+          "word": "意",
+          "probability": 0.9474769830703735
+        },
+        {
+          "start": 11.9,
+          "end": 12.04,
+          "word": "不",
+          "probability": 0.9833380579948425
+        },
+        {
+          "start": 12.04,
+          "end": 12.24,
+          "word": "願",
+          "probability": 0.9983457326889038
+        },
+        {
+          "start": 12.24,
+          "end": 12.56,
+          "word": "意",
+          "probability": 0.9944930076599121
+        },
+        {
+          "start": 12.56,
+          "end": 12.86,
+          "word": "也",
+          "probability": 0.8778016567230225
+        },
+        {
+          "start": 12.86,
+          "end": 13.06,
+          "word": "去",
+          "probability": 0.9932531714439392
+        },
+        {
+          "start": 13.06,
+          "end": 13.28,
+          "word": "上",
+          "probability": 0.9920896291732788
+        },
+        {
+          "start": 13.28,
+          "end": 13.58,
+          "word": "海。",
+          "probability": 0.9988856911659241
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 14.540000000000004,
+      "end": 28.16,
+      "text": "我是這樣想的,現在丈夫和孩子都在北京,劉明的工作很忙,小雪和小明也還小,我去別的城市工作就要離開他們。",
+      "tokens": [
+        51064,
+        15914,
+        8377,
+        7093,
+        1546,
+        11,
+        12648,
+        39642,
+        12565,
+        48989,
+        7182,
+        3581,
+        26668,
+        31375,
+        11,
+        5087,
+        231,
+        11100,
+        1546,
+        41315,
+        4563,
+        48839,
+        11,
+        7322,
+        47939,
+        12565,
+        7322,
+        11100,
+        6404,
+        7824,
+        7322,
+        11,
+        1654,
+        6734,
+        16158,
+        1546,
+        45277,
+        27261,
+        41315,
+        3111,
+        4275,
+        32662,
+        8949,
+        20486,
+        1543,
+        51814
+      ],
+      "avg_logprob": -0.13780355919152498,
+      "compression_ratio": 1.3181818181818181,
+      "no_speech_prob": 0.08376078307628632,
+      "words": [
+        {
+          "start": 14.540000000000004,
+          "end": 15.06,
+          "word": "我是",
+          "probability": 0.8530053496360779
+        },
+        {
+          "start": 15.06,
+          "end": 15.4,
+          "word": "這樣",
+          "probability": 0.9832574725151062
+        },
+        {
+          "start": 15.4,
+          "end": 15.72,
+          "word": "想",
+          "probability": 0.9975295662879944
+        },
+        {
+          "start": 15.72,
+          "end": 16.12,
+          "word": "的,",
+          "probability": 0.9595874547958374
+        },
+        {
+          "start": 16.98,
+          "end": 17.24,
+          "word": "現在",
+          "probability": 0.9925946593284607
+        },
+        {
+          "start": 17.24,
+          "end": 17.76,
+          "word": "丈夫",
+          "probability": 0.9588184952735901
+        },
+        {
+          "start": 17.76,
+          "end": 18.2,
+          "word": "和",
+          "probability": 0.9748488068580627
+        },
+        {
+          "start": 18.2,
+          "end": 18.58,
+          "word": "孩子",
+          "probability": 0.9974236488342285
+        },
+        {
+          "start": 18.58,
+          "end": 19.0,
+          "word": "都",
+          "probability": 0.9831415414810181
+        },
+        {
+          "start": 19.0,
+          "end": 19.2,
+          "word": "在",
+          "probability": 0.9947940707206726
+        },
+        {
+          "start": 19.2,
+          "end": 19.36,
+          "word": "北",
+          "probability": 0.998939573764801
+        },
+        {
+          "start": 19.36,
+          "end": 19.64,
+          "word": "京,",
+          "probability": 0.9999083280563354
+        },
+        {
+          "start": 20.5,
+          "end": 20.72,
+          "word": "劉",
+          "probability": 0.6387961357831955
+        },
+        {
+          "start": 20.72,
+          "end": 20.86,
+          "word": "明",
+          "probability": 0.716736912727356
+        },
+        {
+          "start": 20.86,
+          "end": 21.02,
+          "word": "的",
+          "probability": 0.9930974841117859
+        },
+        {
+          "start": 21.02,
+          "end": 21.28,
+          "word": "工作",
+          "probability": 0.9986971020698547
+        },
+        {
+          "start": 21.28,
+          "end": 21.62,
+          "word": "很",
+          "probability": 0.9915174245834351
+        },
+        {
+          "start": 21.62,
+          "end": 21.88,
+          "word": "忙,",
+          "probability": 0.9988371729850769
+        },
+        {
+          "start": 22.42,
+          "end": 22.6,
+          "word": "小",
+          "probability": 0.9263609647750854
+        },
+        {
+          "start": 22.6,
+          "end": 22.88,
+          "word": "雪",
+          "probability": 0.968761682510376
+        },
+        {
+          "start": 22.88,
+          "end": 23.18,
+          "word": "和",
+          "probability": 0.9717455506324768
+        },
+        {
+          "start": 23.18,
+          "end": 23.42,
+          "word": "小",
+          "probability": 0.9807729721069336
+        },
+        {
+          "start": 23.42,
+          "end": 23.66,
+          "word": "明",
+          "probability": 0.8601353168487549
+        },
+        {
+          "start": 23.66,
+          "end": 24.02,
+          "word": "也",
+          "probability": 0.9650227427482605
+        },
+        {
+          "start": 24.02,
+          "end": 24.24,
+          "word": "還",
+          "probability": 0.9839006662368774
+        },
+        {
+          "start": 24.24,
+          "end": 24.58,
+          "word": "小,",
+          "probability": 0.9840862154960632
+        },
+        {
+          "start": 25.44,
+          "end": 25.58,
+          "word": "我",
+          "probability": 0.9887599945068359
+        },
+        {
+          "start": 25.58,
+          "end": 25.74,
+          "word": "去",
+          "probability": 0.9980937838554382
+        },
+        {
+          "start": 25.74,
+          "end": 25.92,
+          "word": "別",
+          "probability": 0.9835161566734314
+        },
+        {
+          "start": 25.92,
+          "end": 26.1,
+          "word": "的",
+          "probability": 0.9979808926582336
+        },
+        {
+          "start": 26.1,
+          "end": 26.28,
+          "word": "城",
+          "probability": 0.9878835082054138
+        },
+        {
+          "start": 26.28,
+          "end": 26.46,
+          "word": "市",
+          "probability": 0.9972558617591858
+        },
+        {
+          "start": 26.46,
+          "end": 26.84,
+          "word": "工作",
+          "probability": 0.9982202649116516
+        },
+        {
+          "start": 26.84,
+          "end": 27.22,
+          "word": "就",
+          "probability": 0.8824275732040405
+        },
+        {
+          "start": 27.22,
+          "end": 27.38,
+          "word": "要",
+          "probability": 0.9906941056251526
+        },
+        {
+          "start": 27.38,
+          "end": 27.58,
+          "word": "離",
+          "probability": 0.992994487285614
+        },
+        {
+          "start": 27.58,
+          "end": 27.82,
+          "word": "開",
+          "probability": 0.9977017045021057
+        },
+        {
+          "start": 27.82,
+          "end": 28.16,
+          "word": "他們。",
+          "probability": 0.9638427495956421
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 2816,
+      "start": 29.42,
+      "end": 40.6,
+      "text": "雖然去上海可能會有更好的機會,但是對我來說,生活也很重要。我不願意為工作或學習離開家人。",
+      "tokens": [
+        50364,
+        6306,
+        244,
+        5823,
+        6734,
+        5708,
+        20078,
+        16657,
+        6236,
+        2412,
+        19002,
+        20715,
+        46520,
+        11,
+        11189,
+        2855,
+        1654,
+        36979,
+        11,
+        49958,
+        6404,
+        4563,
+        24928,
+        1543,
+        25395,
+        20692,
+        9042,
+        6344,
+        41315,
+        19780,
+        21372,
+        34025,
+        32662,
+        8949,
+        5155,
+        4035,
+        1543,
+        51014
+      ],
+      "avg_logprob": -0.13942189170764044,
+      "compression_ratio": 0.9770992366412213,
+      "no_speech_prob": 0.1233506128191948,
+      "words": [
+        {
+          "start": 29.42,
+          "end": 30.06,
+          "word": "雖",
+          "probability": 0.8549368977546692
+        },
+        {
+          "start": 30.06,
+          "end": 30.3,
+          "word": "然",
+          "probability": 0.9968138337135315
+        },
+        {
+          "start": 30.3,
+          "end": 30.46,
+          "word": "去",
+          "probability": 0.970039427280426
+        },
+        {
+          "start": 30.46,
+          "end": 30.68,
+          "word": "上",
+          "probability": 0.9855910539627075
+        },
+        {
+          "start": 30.68,
+          "end": 30.94,
+          "word": "海",
+          "probability": 0.9988777041435242
+        },
+        {
+          "start": 30.94,
+          "end": 31.28,
+          "word": "可能",
+          "probability": 0.9574858546257019
+        },
+        {
+          "start": 31.28,
+          "end": 31.48,
+          "word": "會",
+          "probability": 0.9542683959007263
+        },
+        {
+          "start": 31.48,
+          "end": 31.64,
+          "word": "有",
+          "probability": 0.9952568411827087
+        },
+        {
+          "start": 31.64,
+          "end": 31.8,
+          "word": "更",
+          "probability": 0.9875152111053467
+        },
+        {
+          "start": 31.8,
+          "end": 32.18,
+          "word": "好的",
+          "probability": 0.9640684127807617
+        },
+        {
+          "start": 32.18,
+          "end": 32.58,
+          "word": "機會,",
+          "probability": 0.9970617890357971
+        },
+        {
+          "start": 33.12,
+          "end": 33.52,
+          "word": "但是",
+          "probability": 0.8806901574134827
+        },
+        {
+          "start": 33.52,
+          "end": 33.84,
+          "word": "對",
+          "probability": 0.9953634738922119
+        },
+        {
+          "start": 33.84,
+          "end": 34.06,
+          "word": "我",
+          "probability": 0.990270733833313
+        },
+        {
+          "start": 34.06,
+          "end": 34.46,
+          "word": "來說,",
+          "probability": 0.9978669285774231
+        },
+        {
+          "start": 35.0,
+          "end": 35.38,
+          "word": "生活",
+          "probability": 0.9862743020057678
+        },
+        {
+          "start": 35.38,
+          "end": 35.76,
+          "word": "也",
+          "probability": 0.9942020773887634
+        },
+        {
+          "start": 35.76,
+          "end": 36.0,
+          "word": "很",
+          "probability": 0.9945999383926392
+        },
+        {
+          "start": 36.0,
+          "end": 36.38,
+          "word": "重要。",
+          "probability": 0.9992375373840332
+        },
+        {
+          "start": 36.96,
+          "end": 37.26,
+          "word": "我不",
+          "probability": 0.9814888834953308
+        },
+        {
+          "start": 37.26,
+          "end": 37.54,
+          "word": "願",
+          "probability": 0.992247462272644
+        },
+        {
+          "start": 37.54,
+          "end": 37.9,
+          "word": "意",
+          "probability": 0.9746378064155579
+        },
+        {
+          "start": 37.9,
+          "end": 38.1,
+          "word": "為",
+          "probability": 0.9753957390785217
+        },
+        {
+          "start": 38.1,
+          "end": 38.52,
+          "word": "工作",
+          "probability": 0.9959284663200378
+        },
+        {
+          "start": 38.52,
+          "end": 38.94,
+          "word": "或",
+          "probability": 0.9543781876564026
+        },
+        {
+          "start": 38.94,
+          "end": 39.2,
+          "word": "學",
+          "probability": 0.9937847852706909
+        },
+        {
+          "start": 39.2,
+          "end": 39.54,
+          "word": "習",
+          "probability": 0.9953190684318542
+        },
+        {
+          "start": 39.54,
+          "end": 39.9,
+          "word": "離",
+          "probability": 0.8726058602333069
+        },
+        {
+          "start": 39.9,
+          "end": 40.14,
+          "word": "開",
+          "probability": 0.9949510097503662
+        },
+        {
+          "start": 40.14,
+          "end": 40.38,
+          "word": "家",
+          "probability": 0.9941120743751526
+        },
+        {
+          "start": 40.38,
+          "end": 40.6,
+          "word": "人。",
+          "probability": 0.9976211190223694
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 7.1672453479999945,
+  "realTimeFactor": 0.1711609079671456,
+  "observationChecks": {
+    "rawWordCount": 110,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

@@ -1,0 +1,556 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l08:audio1",
+    "level": 2,
+    "lesson": 8,
+    "track": 1,
+    "kind": "text",
+    "text": 1,
+    "file": "course-assets/hsk2/audio/8-1.mp3",
+    "sha256": "89d72e1fd90022c963425095512515838d1f54d999457275a9cd28e03827277e",
+    "bytes": 492517,
+    "manifestDurationSeconds": 18.581333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 297216,
+      "durationSeconds": 18.576,
+      "sha256": "1c314e26ded18f7bc33c48cef102768fd3e9b2d4d4a6006674320fc49a5f6c68"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 18.576,
+    "duration_after_vad": 18.576,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.96,
+      "text": "你看,这两块手表怎么样?",
+      "tokens": [
+        50364,
+        16529,
+        11,
+        5562,
+        36257,
+        47734,
+        11389,
+        17571,
+        48200,
+        30,
+        50534
+      ],
+      "avg_logprob": -0.33410047373529206,
+      "compression_ratio": 1.0555555555555556,
+      "no_speech_prob": 0.2324582189321518,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.92,
+          "word": "你看,",
+          "probability": 0.8658570051193237
+        },
+        {
+          "start": 1.64,
+          "end": 1.76,
+          "word": "这",
+          "probability": 0.7522610425949097
+        },
+        {
+          "start": 1.76,
+          "end": 1.92,
+          "word": "两",
+          "probability": 0.985410213470459
+        },
+        {
+          "start": 1.92,
+          "end": 2.14,
+          "word": "块",
+          "probability": 0.9762820601463318
+        },
+        {
+          "start": 2.14,
+          "end": 2.4,
+          "word": "手",
+          "probability": 0.9867812991142273
+        },
+        {
+          "start": 2.4,
+          "end": 2.58,
+          "word": "表",
+          "probability": 0.7876029014587402
+        },
+        {
+          "start": 2.58,
+          "end": 2.96,
+          "word": "怎么样?",
+          "probability": 0.9720343947410583
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 4.14,
+      "end": 4.8,
+      "text": "都不错。",
+      "tokens": [
+        50534,
+        7182,
+        1960,
+        29900,
+        1543,
+        50614
+      ],
+      "avg_logprob": -0.33410047373529206,
+      "compression_ratio": 1.0555555555555556,
+      "no_speech_prob": 0.2324582189321518,
+      "words": [
+        {
+          "start": 4.14,
+          "end": 4.28,
+          "word": "都",
+          "probability": 0.9553688168525696
+        },
+        {
+          "start": 4.28,
+          "end": 4.54,
+          "word": "不",
+          "probability": 0.9939127564430237
+        },
+        {
+          "start": 4.54,
+          "end": 4.8,
+          "word": "错。",
+          "probability": 0.9998964071273804
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 5.48,
+      "end": 7.02,
+      "text": "我喜欢左边这个。",
+      "tokens": [
+        50614,
+        1654,
+        41606,
+        21975,
+        40503,
+        15368,
+        1543,
+        50734
+      ],
+      "avg_logprob": -0.33410047373529206,
+      "compression_ratio": 1.0555555555555556,
+      "no_speech_prob": 0.2324582189321518,
+      "words": [
+        {
+          "start": 5.48,
+          "end": 5.88,
+          "word": "我",
+          "probability": 0.9846839308738708
+        },
+        {
+          "start": 5.88,
+          "end": 6.14,
+          "word": "喜欢",
+          "probability": 0.99577397108078
+        },
+        {
+          "start": 6.14,
+          "end": 6.48,
+          "word": "左",
+          "probability": 0.9865354895591736
+        },
+        {
+          "start": 6.48,
+          "end": 6.74,
+          "word": "边",
+          "probability": 0.9962557554244995
+        },
+        {
+          "start": 6.74,
+          "end": 7.02,
+          "word": "这个。",
+          "probability": 0.7553022503852844
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 8.18,
+      "end": 11.6,
+      "text": "我也觉得左边的比右边的好看。",
+      "tokens": [
+        50734,
+        27761,
+        29992,
+        21975,
+        40503,
+        1546,
+        11706,
+        22060,
+        40503,
+        1546,
+        2131,
+        4200,
+        1543,
+        50954
+      ],
+      "avg_logprob": -0.33410047373529206,
+      "compression_ratio": 1.0555555555555556,
+      "no_speech_prob": 0.2324582189321518,
+      "words": [
+        {
+          "start": 8.18,
+          "end": 8.68,
+          "word": "我也",
+          "probability": 0.946349561214447
+        },
+        {
+          "start": 8.68,
+          "end": 9.08,
+          "word": "觉得",
+          "probability": 0.998231828212738
+        },
+        {
+          "start": 9.08,
+          "end": 9.66,
+          "word": "左",
+          "probability": 0.8663229942321777
+        },
+        {
+          "start": 9.66,
+          "end": 10.02,
+          "word": "边",
+          "probability": 0.993889570236206
+        },
+        {
+          "start": 10.02,
+          "end": 10.22,
+          "word": "的",
+          "probability": 0.9666792750358582
+        },
+        {
+          "start": 10.22,
+          "end": 10.52,
+          "word": "比",
+          "probability": 0.9201852083206177
+        },
+        {
+          "start": 10.52,
+          "end": 10.78,
+          "word": "右",
+          "probability": 0.9935863614082336
+        },
+        {
+          "start": 10.78,
+          "end": 11.04,
+          "word": "边",
+          "probability": 0.9974798560142517
+        },
+        {
+          "start": 11.04,
+          "end": 11.16,
+          "word": "的",
+          "probability": 0.9891125559806824
+        },
+        {
+          "start": 11.16,
+          "end": 11.34,
+          "word": "好",
+          "probability": 0.994172990322113
+        },
+        {
+          "start": 11.34,
+          "end": 11.6,
+          "word": "看。",
+          "probability": 0.9998383522033691
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 12.66,
+      "end": 14.3,
+      "text": "你看看要多少钱?",
+      "tokens": [
+        50954,
+        16529,
+        4200,
+        4275,
+        41492,
+        39623,
+        30,
+        51094
+      ],
+      "avg_logprob": -0.33410047373529206,
+      "compression_ratio": 1.0555555555555556,
+      "no_speech_prob": 0.2324582189321518,
+      "words": [
+        {
+          "start": 12.66,
+          "end": 13.04,
+          "word": "你看",
+          "probability": 0.9782222509384155
+        },
+        {
+          "start": 13.04,
+          "end": 13.32,
+          "word": "看",
+          "probability": 0.9942470788955688
+        },
+        {
+          "start": 13.32,
+          "end": 13.6,
+          "word": "要",
+          "probability": 0.9848446249961853
+        },
+        {
+          "start": 13.6,
+          "end": 13.9,
+          "word": "多少",
+          "probability": 0.9969311952590942
+        },
+        {
+          "start": 13.9,
+          "end": 14.3,
+          "word": "钱?",
+          "probability": 0.9993618130683899
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 15.62,
+      "end": 17.5,
+      "text": "真不便宜,8800。",
+      "tokens": [
+        51094,
+        6303,
+        1960,
+        27364,
+        2415,
+        250,
+        11,
+        16919,
+        628,
+        1543,
+        51264
+      ],
+      "avg_logprob": -0.33410047373529206,
+      "compression_ratio": 1.0555555555555556,
+      "no_speech_prob": 0.2324582189321518,
+      "words": [
+        {
+          "start": 15.62,
+          "end": 15.88,
+          "word": "真",
+          "probability": 0.9772303700447083
+        },
+        {
+          "start": 15.88,
+          "end": 16.06,
+          "word": "不",
+          "probability": 0.9988516569137573
+        },
+        {
+          "start": 16.06,
+          "end": 16.3,
+          "word": "便",
+          "probability": 0.9992300271987915
+        },
+        {
+          "start": 16.3,
+          "end": 16.52,
+          "word": "宜,",
+          "probability": 0.9966186285018921
+        },
+        {
+          "start": 16.98,
+          "end": 17.32,
+          "word": "88",
+          "probability": 0.29552432894706726
+        },
+        {
+          "start": 17.32,
+          "end": 17.5,
+          "word": "00。",
+          "probability": 0.9707132577896118
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 3.3356842189999867,
+  "realTimeFactor": 0.17956956389965475,
+  "observationChecks": {
+    "rawWordCount": 37,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

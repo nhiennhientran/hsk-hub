@@ -1,0 +1,25 @@
+{
+  "status": "actual final run committed code independently read and hashed",
+  "commit": "b32215e5990c3d9673f6fb0f8c27e804c062b6e6",
+  "blobs": [
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/transcribe-original-tracks.py",
+      "commitBlobSHA256": "6c32b71904d6829ed2fb7944fcdb3dad61f88eec198db5e837f4d7551ffcc3c4",
+      "bytes": 17875,
+      "localEqualAtReview": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/requirements.txt",
+      "commitBlobSHA256": "03008384064075527124583a612e69fe4f58591324b265e3ac64b4b9153a5a49",
+      "bytes": 618,
+      "localEqualAtReview": true
+    },
+    {
+      "path": ".github/workflows/hsk-audio-asr-pilot.yml",
+      "commitBlobSHA256": "48c31ba4587118d82c713127a1c59b3e227b2050c7b6447afe42e54aa9456ba5",
+      "bytes": 3253,
+      "localEqualAtReview": true
+    }
+  ],
+  "modelBinaryVerificationScope": "4 model-file SHA values were recorded by committed worker; model files not included in downloaded evidence, so they were not independently rehashed here"
+}

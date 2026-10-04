@@ -1,0 +1,5016 @@
+{
+  "schemaVersion": 1,
+  "scope": "independent read-only evidence, target binding and risk audit; no listening or production approval",
+  "checksPassed": 477,
+  "checks": [
+    "script SHA matches actual evidence",
+    "requirements SHA matches actual evidence",
+    "run requested/actual official small revision equal",
+    "actual unprompted full options",
+    "actual dependency faster-whisper",
+    "actual dependency ctranslate2",
+    "actual dependency huggingface-hub",
+    "actual dependency av",
+    "actual dependency tokenizers",
+    "actual dependency onnxruntime",
+    "actual dependency numpy",
+    "actual dependency coloredlogs",
+    "actual dependency flatbuffers",
+    "actual dependency packaging",
+    "actual dependency protobuf",
+    "actual dependency sympy",
+    "actual dependency mpmath",
+    "actual dependency humanfriendly",
+    "actual dependency filelock",
+    "actual dependency fsspec",
+    "actual dependency PyYAML",
+    "actual dependency requests",
+    "actual dependency tqdm",
+    "actual dependency typing_extensions",
+    "actual dependency hf-xet",
+    "actual dependency certifi",
+    "actual dependency charset-normalizer",
+    "actual dependency idna",
+    "actual dependency urllib3",
+    "actual dependency setuptools",
+    "24 unique raw track ids",
+    "preflight SHA linked to run",
+    "source comparison SHA linked to preflight",
+    "source manifest SHA current and report",
+    "frozen lesson SHA hsk2-fltrp-2026:l04",
+    "frozen lesson SHA hsk2-fltrp-2026:l05",
+    "frozen lesson SHA hsk2-fltrp-2026:l06",
+    "raw artifact SHA hsk2-fltrp-2026:l04:audio1",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l04:audio1",
+    "raw full track identity hsk2-fltrp-2026:l04:audio1",
+    "raw exact model/options hsk2-fltrp-2026:l04:audio1",
+    "raw CJK regenerated hsk2-fltrp-2026:l04:audio1",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l04:audio1",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text1:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text1:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text1:line2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text1:line2",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text1:line3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text1:line3",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text1:line4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text1:line4",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text1:line4:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text1:line4:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text1:line4:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text1:line4:sentence2",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text1:line5",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text1:line5",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text1:line6",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text1:line6",
+    "raw artifact SHA hsk2-fltrp-2026:l04:audio2",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l04:audio2",
+    "raw full track identity hsk2-fltrp-2026:l04:audio2",
+    "raw exact model/options hsk2-fltrp-2026:l04:audio2",
+    "raw CJK regenerated hsk2-fltrp-2026:l04:audio2",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l04:audio2",
+    "printed word binding hsk2-fltrp-2026:l04:word01",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word01",
+    "printed word binding hsk2-fltrp-2026:l04:word02",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word02",
+    "printed word binding hsk2-fltrp-2026:l04:word03",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word03",
+    "printed word binding hsk2-fltrp-2026:l04:word04",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word04",
+    "printed word binding hsk2-fltrp-2026:l04:word05",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word05",
+    "raw artifact SHA hsk2-fltrp-2026:l04:audio3",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l04:audio3",
+    "raw full track identity hsk2-fltrp-2026:l04:audio3",
+    "raw exact model/options hsk2-fltrp-2026:l04:audio3",
+    "raw CJK regenerated hsk2-fltrp-2026:l04:audio3",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l04:audio3",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text2:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text2:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text2:line2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text2:line2",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text2:line3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text2:line3",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text2:line4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text2:line4",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text2:line5",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text2:line5",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text2:line6",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text2:line6",
+    "raw artifact SHA hsk2-fltrp-2026:l04:audio4",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l04:audio4",
+    "raw full track identity hsk2-fltrp-2026:l04:audio4",
+    "raw exact model/options hsk2-fltrp-2026:l04:audio4",
+    "raw CJK regenerated hsk2-fltrp-2026:l04:audio4",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l04:audio4",
+    "printed word binding hsk2-fltrp-2026:l04:word06",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word06",
+    "printed word binding hsk2-fltrp-2026:l04:word07",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word07",
+    "printed word binding hsk2-fltrp-2026:l04:word08",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word08",
+    "printed word binding hsk2-fltrp-2026:l04:word09",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word09",
+    "printed word binding hsk2-fltrp-2026:l04:word10",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word10",
+    "raw artifact SHA hsk2-fltrp-2026:l04:audio5",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l04:audio5",
+    "raw full track identity hsk2-fltrp-2026:l04:audio5",
+    "raw exact model/options hsk2-fltrp-2026:l04:audio5",
+    "raw CJK regenerated hsk2-fltrp-2026:l04:audio5",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l04:audio5",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text3:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text3:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text3:line2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text3:line2",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text3:line3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text3:line3",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text3:line4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text3:line4",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text3:line5",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text3:line5",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text3:line6",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text3:line6",
+    "raw artifact SHA hsk2-fltrp-2026:l04:audio6",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l04:audio6",
+    "raw full track identity hsk2-fltrp-2026:l04:audio6",
+    "raw exact model/options hsk2-fltrp-2026:l04:audio6",
+    "raw CJK regenerated hsk2-fltrp-2026:l04:audio6",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l04:audio6",
+    "printed word binding hsk2-fltrp-2026:l04:word11",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word11",
+    "printed word binding hsk2-fltrp-2026:l04:word12",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word12",
+    "printed word binding hsk2-fltrp-2026:l04:word13",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word13",
+    "printed word binding hsk2-fltrp-2026:l04:word14",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word14",
+    "printed word binding hsk2-fltrp-2026:l04:word15",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word15",
+    "raw artifact SHA hsk2-fltrp-2026:l04:audio7",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l04:audio7",
+    "raw full track identity hsk2-fltrp-2026:l04:audio7",
+    "raw exact model/options hsk2-fltrp-2026:l04:audio7",
+    "raw CJK regenerated hsk2-fltrp-2026:l04:audio7",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l04:audio7",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text4:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text4:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text4:line1:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text4:line1:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text4:line1:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text4:line1:sentence2",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text4:line1:sentence3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text4:line1:sentence3",
+    "printed line/sentence binding hsk2-fltrp-2026:l04:text4:line1:sentence4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:text4:line1:sentence4",
+    "raw artifact SHA hsk2-fltrp-2026:l04:audio8",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l04:audio8",
+    "raw full track identity hsk2-fltrp-2026:l04:audio8",
+    "raw exact model/options hsk2-fltrp-2026:l04:audio8",
+    "raw CJK regenerated hsk2-fltrp-2026:l04:audio8",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l04:audio8",
+    "printed word binding hsk2-fltrp-2026:l04:word16",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l04:word16",
+    "raw artifact SHA hsk2-fltrp-2026:l05:audio1",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l05:audio1",
+    "raw full track identity hsk2-fltrp-2026:l05:audio1",
+    "raw exact model/options hsk2-fltrp-2026:l05:audio1",
+    "raw CJK regenerated hsk2-fltrp-2026:l05:audio1",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l05:audio1",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text1:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text1:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text1:line2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text1:line2",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text1:line3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text1:line3",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text1:line4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text1:line4",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text1:line5",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text1:line5",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text1:line6",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text1:line6",
+    "raw artifact SHA hsk2-fltrp-2026:l05:audio2",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l05:audio2",
+    "raw full track identity hsk2-fltrp-2026:l05:audio2",
+    "raw exact model/options hsk2-fltrp-2026:l05:audio2",
+    "raw CJK regenerated hsk2-fltrp-2026:l05:audio2",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l05:audio2",
+    "printed word binding hsk2-fltrp-2026:l05:word01",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word01",
+    "printed word binding hsk2-fltrp-2026:l05:word02",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word02",
+    "printed word binding hsk2-fltrp-2026:l05:word03",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word03",
+    "printed word binding hsk2-fltrp-2026:l05:word04",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word04",
+    "printed word binding hsk2-fltrp-2026:l05:word05",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word05",
+    "printed word binding hsk2-fltrp-2026:l05:word06",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word06",
+    "printed word binding hsk2-fltrp-2026:l05:word07",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word07",
+    "printed word binding hsk2-fltrp-2026:l05:word08",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word08",
+    "printed word binding hsk2-fltrp-2026:l05:word09",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word09",
+    "printed word binding hsk2-fltrp-2026:l05:word10",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word10",
+    "raw artifact SHA hsk2-fltrp-2026:l05:audio3",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l05:audio3",
+    "raw full track identity hsk2-fltrp-2026:l05:audio3",
+    "raw exact model/options hsk2-fltrp-2026:l05:audio3",
+    "raw CJK regenerated hsk2-fltrp-2026:l05:audio3",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l05:audio3",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line1:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line1:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line1:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line1:sentence2",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line2",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line3",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line3:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line3:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line3:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line3:sentence2",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line4",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line5",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line5",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line6",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line6",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line7",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line7",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line8",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line8",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line8:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line8:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text2:line8:sentence2",
+    "raw artifact SHA hsk2-fltrp-2026:l05:audio4",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l05:audio4",
+    "raw full track identity hsk2-fltrp-2026:l05:audio4",
+    "raw exact model/options hsk2-fltrp-2026:l05:audio4",
+    "raw CJK regenerated hsk2-fltrp-2026:l05:audio4",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l05:audio4",
+    "printed word binding hsk2-fltrp-2026:l05:word11",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word11",
+    "printed word binding hsk2-fltrp-2026:l05:word12",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word12",
+    "printed word binding hsk2-fltrp-2026:l05:word13",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word13",
+    "printed word binding hsk2-fltrp-2026:l05:word14",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word14",
+    "printed word binding hsk2-fltrp-2026:l05:word15",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word15",
+    "raw artifact SHA hsk2-fltrp-2026:l05:audio5",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l05:audio5",
+    "raw full track identity hsk2-fltrp-2026:l05:audio5",
+    "raw exact model/options hsk2-fltrp-2026:l05:audio5",
+    "raw CJK regenerated hsk2-fltrp-2026:l05:audio5",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l05:audio5",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text3:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text3:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text3:line2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text3:line2",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text3:line3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text3:line3",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text3:line4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text3:line4",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text3:line5",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text3:line5",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text3:line6",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text3:line6",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text3:line6:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text3:line6:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text3:line6:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text3:line6:sentence2",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text3:line7",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text3:line7",
+    "raw artifact SHA hsk2-fltrp-2026:l05:audio6",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l05:audio6",
+    "raw full track identity hsk2-fltrp-2026:l05:audio6",
+    "raw exact model/options hsk2-fltrp-2026:l05:audio6",
+    "raw CJK regenerated hsk2-fltrp-2026:l05:audio6",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l05:audio6",
+    "printed word binding hsk2-fltrp-2026:l05:word16",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word16",
+    "printed word binding hsk2-fltrp-2026:l05:word17",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word17",
+    "printed word binding hsk2-fltrp-2026:l05:word18",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word18",
+    "raw artifact SHA hsk2-fltrp-2026:l05:audio7",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l05:audio7",
+    "raw full track identity hsk2-fltrp-2026:l05:audio7",
+    "raw exact model/options hsk2-fltrp-2026:l05:audio7",
+    "raw CJK regenerated hsk2-fltrp-2026:l05:audio7",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l05:audio7",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text4:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text4:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text4:line1:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text4:line1:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text4:line1:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text4:line1:sentence2",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text4:line1:sentence3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text4:line1:sentence3",
+    "printed line/sentence binding hsk2-fltrp-2026:l05:text4:line1:sentence4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:text4:line1:sentence4",
+    "raw artifact SHA hsk2-fltrp-2026:l05:audio8",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l05:audio8",
+    "raw full track identity hsk2-fltrp-2026:l05:audio8",
+    "raw exact model/options hsk2-fltrp-2026:l05:audio8",
+    "raw CJK regenerated hsk2-fltrp-2026:l05:audio8",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l05:audio8",
+    "printed word binding hsk2-fltrp-2026:l05:word19",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word19",
+    "printed word binding hsk2-fltrp-2026:l05:word20",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l05:word20",
+    "raw artifact SHA hsk2-fltrp-2026:l06:audio1",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l06:audio1",
+    "raw full track identity hsk2-fltrp-2026:l06:audio1",
+    "raw exact model/options hsk2-fltrp-2026:l06:audio1",
+    "raw CJK regenerated hsk2-fltrp-2026:l06:audio1",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l06:audio1",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text1:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text1:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text1:line2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text1:line2",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text1:line2:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text1:line2:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text1:line2:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text1:line2:sentence2",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text1:line3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text1:line3",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text1:line4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text1:line4",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text1:line5",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text1:line5",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text1:line6",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text1:line6",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text1:line6:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text1:line6:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text1:line6:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text1:line6:sentence2",
+    "raw artifact SHA hsk2-fltrp-2026:l06:audio2",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l06:audio2",
+    "raw full track identity hsk2-fltrp-2026:l06:audio2",
+    "raw exact model/options hsk2-fltrp-2026:l06:audio2",
+    "raw CJK regenerated hsk2-fltrp-2026:l06:audio2",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l06:audio2",
+    "printed word binding hsk2-fltrp-2026:l06:word01",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word01",
+    "printed word binding hsk2-fltrp-2026:l06:word02",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word02",
+    "printed word binding hsk2-fltrp-2026:l06:word03",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word03",
+    "printed word binding hsk2-fltrp-2026:l06:word04",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word04",
+    "printed word binding hsk2-fltrp-2026:l06:word05",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word05",
+    "printed word binding hsk2-fltrp-2026:l06:word06",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word06",
+    "raw artifact SHA hsk2-fltrp-2026:l06:audio3",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l06:audio3",
+    "raw full track identity hsk2-fltrp-2026:l06:audio3",
+    "raw exact model/options hsk2-fltrp-2026:l06:audio3",
+    "raw CJK regenerated hsk2-fltrp-2026:l06:audio3",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l06:audio3",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line2",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line3",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line4",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line5",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line5",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line5:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line5:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line5:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line5:sentence2",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line6",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line6",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line7",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line7",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line7:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line7:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line7:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line7:sentence2",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text2:line8",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text2:line8",
+    "raw artifact SHA hsk2-fltrp-2026:l06:audio4",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l06:audio4",
+    "raw full track identity hsk2-fltrp-2026:l06:audio4",
+    "raw exact model/options hsk2-fltrp-2026:l06:audio4",
+    "raw CJK regenerated hsk2-fltrp-2026:l06:audio4",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l06:audio4",
+    "printed word binding hsk2-fltrp-2026:l06:word07",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word07",
+    "printed word binding hsk2-fltrp-2026:l06:word08",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word08",
+    "raw artifact SHA hsk2-fltrp-2026:l06:audio5",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l06:audio5",
+    "raw full track identity hsk2-fltrp-2026:l06:audio5",
+    "raw exact model/options hsk2-fltrp-2026:l06:audio5",
+    "raw CJK regenerated hsk2-fltrp-2026:l06:audio5",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l06:audio5",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text3:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text3:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text3:line2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text3:line2",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text3:line3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text3:line3",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text3:line4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text3:line4",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text3:line5",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text3:line5",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text3:line6",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text3:line6",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text3:line7",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text3:line7",
+    "raw artifact SHA hsk2-fltrp-2026:l06:audio6",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l06:audio6",
+    "raw full track identity hsk2-fltrp-2026:l06:audio6",
+    "raw exact model/options hsk2-fltrp-2026:l06:audio6",
+    "raw CJK regenerated hsk2-fltrp-2026:l06:audio6",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l06:audio6",
+    "printed word binding hsk2-fltrp-2026:l06:word09",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word09",
+    "printed word binding hsk2-fltrp-2026:l06:word10",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word10",
+    "printed word binding hsk2-fltrp-2026:l06:word11",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word11",
+    "printed word binding hsk2-fltrp-2026:l06:word12",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word12",
+    "printed word binding hsk2-fltrp-2026:l06:word13",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word13",
+    "raw artifact SHA hsk2-fltrp-2026:l06:audio7",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l06:audio7",
+    "raw full track identity hsk2-fltrp-2026:l06:audio7",
+    "raw exact model/options hsk2-fltrp-2026:l06:audio7",
+    "raw CJK regenerated hsk2-fltrp-2026:l06:audio7",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l06:audio7",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text4:line1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text4:line1",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text4:line1:sentence1",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text4:line1:sentence1",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text4:line1:sentence2",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text4:line1:sentence2",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text4:line1:sentence3",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text4:line1:sentence3",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text4:line1:sentence4",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text4:line1:sentence4",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text4:line1:sentence5",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text4:line1:sentence5",
+    "printed line/sentence binding hsk2-fltrp-2026:l06:text4:line1:sentence6",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:text4:line1:sentence6",
+    "raw artifact SHA hsk2-fltrp-2026:l06:audio8",
+    "original MP3 SHA/bytes hsk2-fltrp-2026:l06:audio8",
+    "raw full track identity hsk2-fltrp-2026:l06:audio8",
+    "raw exact model/options hsk2-fltrp-2026:l06:audio8",
+    "raw CJK regenerated hsk2-fltrp-2026:l06:audio8",
+    "target lesson SHA source comparison hsk2-fltrp-2026:l06:audio8",
+    "printed word binding hsk2-fltrp-2026:l06:word14",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word14",
+    "printed word binding hsk2-fltrp-2026:l06:word15",
+    "raw exact occurrence regenerated hsk2-fltrp-2026:l06:word15",
+    "counterexample textual candidate remains unapproved ignored-lexical-token",
+    "counterexample textual candidate remains unapproved long-internal-gap",
+    "counterexample textual candidate remains unapproved overlapping-word-times",
+    "counterexample textual candidate remains unapproved low-probability"
+  ],
+  "inputFiles": [
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/transcribe-original-tracks.py",
+      "sha256": "6c32b71904d6829ed2fb7944fcdb3dad61f88eec198db5e837f4d7551ffcc3c4"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/requirements.txt",
+      "sha256": "03008384064075527124583a612e69fe4f58591324b265e3ac64b4b9153a5a49"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/compare-raw-source.py",
+      "sha256": "9c040db55745793509a6f8097f5519f5f189e7aee252a7bc7cbe11cca8a175fa"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/pilot-exact-match-report.json",
+      "sha256": "79811fe798d90818a28d5bdb0c3558f3d796b208a3bf02259f611e2396b2d022"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/printed-target-cues.json",
+      "sha256": "067c0d5bac43dfd89d5f34a986f00035d14a2733fa4b21b3048c082f4916a754"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/run.json",
+      "sha256": "fc8d22eb2cae206e53aa05c7244c6ca44761894bef96a3c6ff7dd675ef9a7e29"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/preflight.json",
+      "sha256": "acfcee5a3588437185471e6f61a0e4d0ac2c813475b853fdbd31844d9cafd961"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/source-comparison-input.json",
+      "sha256": "42c95fdc46c7182a6097aed893436d1cf559446fa5d053eaa819f6351a850191"
+    }
+  ],
+  "runId": 37217540172,
+  "commit": "b32215e5990c3d9673f6fb0f8c27e804c062b6e6",
+  "model": {
+    "repository": "Systran/faster-whisper-small",
+    "requestedRevision": "536b0662742c02347bc0e980a01041f333bce120",
+    "actualSnapshotRevision": "536b0662742c02347bc0e980a01041f333bce120",
+    "files": [
+      {
+        "file": "config.json",
+        "bytes": 2370,
+        "sha256": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+      },
+      {
+        "file": "model.bin",
+        "bytes": 483546902,
+        "sha256": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671"
+      },
+      {
+        "file": "tokenizer.json",
+        "bytes": 2203239,
+        "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+      },
+      {
+        "file": "vocabulary.txt",
+        "bytes": 459861,
+        "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+      }
+    ],
+    "device": "cpu",
+    "requestedComputeType": "int8",
+    "cpuThreads": 2,
+    "numWorkers": 1,
+    "actualComputeType": "int8_float32",
+    "downloadAndLoadSeconds": 0.760384498999997
+  },
+  "totalDecodedSeconds": 462.7679999999999,
+  "totalInferenceSeconds": 38.772731376999985,
+  "candidateCounts": {
+    "tracks": 24,
+    "vocabularyEntries": 51,
+    "lines": 63,
+    "singleSentenceLines": 51,
+    "multiSentenceChildren": 32
+  },
+  "uniqueEndpointCandidates": {
+    "line": 46,
+    "sentence": 15,
+    "word": 39
+  },
+  "riskCountsAmongUniqueOccurrences": {
+    "min-probability-below-0.8-triage-only": 38,
+    "start-at-track-origin-not-acoustic-onset": 18,
+    "cross-ASR-segment-needs-context": 7
+  },
+  "tracks": [
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio1",
+      "rawSHA256": "bf7991753d93f997545c7221b2f784170443d8855d986cb5e736d148fc587b37",
+      "rawCJK": "妈妈我们来过这家商场吗没来过这是新开的我们进去看看吧好啊你想买点什么我想买条裤子没问题",
+      "rawWordCount": 35,
+      "uniqueByUnit": {
+        "line": 5,
+        "sentence": 1
+      },
+      "residual": {
+        "expectedCJK": "妈妈我们来过这家商场吗没来过这是新开的我们进去看看吧好啊你想买点儿什么我想买条裤子没问题",
+        "observedCJK": "妈妈我们来过这家商场吗没来过这是新开的我们进去看看吧好啊你想买点什么我想买条裤子没问题",
+        "sequenceSimilarity": 0.9885057471264368,
+        "residuals": [
+          {
+            "operation": "delete",
+            "sourceRange": [
+              32,
+              33
+            ],
+            "source": "儿",
+            "asrRange": [
+              32,
+              32
+            ],
+            "asr": ""
+          }
+        ]
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio2",
+      "rawSHA256": "bbf060415bad6505881915f873734850690f6e7801d0413007f532776e9ca3b1",
+      "rawCJK": "过商场进去调裤子",
+      "rawWordCount": 8,
+      "uniqueByUnit": {
+        "word": 4
+      },
+      "residual": null,
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "rawSHA256": "c2beed3df483ae2ad9578f6dede5916a4086968adcb4b93f0edccd79bc764ec9",
+      "rawCJK": "妈妈我想买这条白色的裤子你有很多白色的衣服为什么还买白色的因为我喜欢白色啊我觉得这条白色的不太好看你试试那条红色的吧我没穿过红色的红色的好看吗就是因为没穿过所以要试试啊",
+      "rawWordCount": 72,
+      "uniqueByUnit": {
+        "line": 6
+      },
+      "residual": {
+        "expectedCJK": "妈妈我想买这条白色的裤子你有很多白色的衣服为什么还买白色的因为我喜欢白色啊我觉得这条白色的不太好看你试试那条红色的吧我没穿过红色的红色的好看吗就是因为没穿过所以要试试啊",
+        "observedCJK": "妈妈我想买这条白色的裤子你有很多白色的衣服为什么还买白色的因为我喜欢白色啊我觉得这条白色的不太好看你试试那条红色的吧我没穿过红色的红色的好看吗就是因为没穿过所以要试试啊",
+        "sequenceSimilarity": 1.0,
+        "residuals": []
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio4",
+      "rawSHA256": "b2f46efb9912fdbacbaf49325278161cdc767f23a5716e096fa2cb114200af19",
+      "rawCJK": "白色因为是红色所以",
+      "rawWordCount": 7,
+      "uniqueByUnit": {
+        "word": 4
+      },
+      "residual": null,
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio5",
+      "rawSHA256": "424b987664b42c57a35a0b4884486054167135219525f9a4e6cde822f8b4bb61",
+      "rawCJK": "妈妈我想买个新书包好那边卖书包我们过去看看吧这么多漂亮的书包红色的绿色的黑色的你想买哪个绿色的吧不错我也觉得绿色的更好看",
+      "rawWordCount": 52,
+      "uniqueByUnit": {
+        "line": 6
+      },
+      "residual": {
+        "expectedCJK": "妈妈我想买个新书包好那边卖书包我们过去看看吧这么多漂亮的书包红色的绿色的黑色的你想买哪个绿色的吧不错我也觉得绿色的更好看",
+        "observedCJK": "妈妈我想买个新书包好那边卖书包我们过去看看吧这么多漂亮的书包红色的绿色的黑色的你想买哪个绿色的吧不错我也觉得绿色的更好看",
+        "sequenceSimilarity": 1.0,
+        "residuals": []
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio6",
+      "rawSHA256": "615780f428d641a662e539d22c227f21c35c6b9434fa198547a94ec1e073825e",
+      "rawCJK": "书包过去绿色黑色更",
+      "rawWordCount": 9,
+      "uniqueByUnit": {
+        "word": 5
+      },
+      "residual": null,
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio7",
+      "rawSHA256": "853f01dde8c5d98dd91fa694433cc1c6e51a59f32f5230241d476035fa3917ad",
+      "rawCJK": "我和媽媽去了一家商場因為是新開的所以這幾天東西很便宜商場裡的衣服顏色很多我沒穿過紅色的褲子媽媽讓我試了試我覺得我穿紅色的也很好看",
+      "rawWordCount": 56,
+      "uniqueByUnit": {},
+      "residual": {
+        "expectedCJK": "我和妈妈去了一家商场因为是新开的所以这几天东西很便宜商场里的衣服颜色很多我没穿过红色的裤子妈妈让我试了试我觉得我穿红色的也很好看",
+        "observedCJK": "我和媽媽去了一家商場因為是新開的所以這幾天東西很便宜商場裡的衣服顏色很多我沒穿過紅色的褲子媽媽讓我試了試我覺得我穿紅色的也很好看",
+        "sequenceSimilarity": 0.65625,
+        "residuals": [
+          {
+            "operation": "replace",
+            "sourceRange": [
+              2,
+              4
+            ],
+            "source": "妈妈",
+            "asrRange": [
+              2,
+              4
+            ],
+            "asr": "媽媽"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              9,
+              10
+            ],
+            "source": "场",
+            "asrRange": [
+              9,
+              10
+            ],
+            "asr": "場"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              11,
+              12
+            ],
+            "source": "为",
+            "asrRange": [
+              11,
+              12
+            ],
+            "asr": "為"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              14,
+              15
+            ],
+            "source": "开",
+            "asrRange": [
+              14,
+              15
+            ],
+            "asr": "開"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              18,
+              20
+            ],
+            "source": "这几",
+            "asrRange": [
+              18,
+              20
+            ],
+            "asr": "這幾"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              21,
+              22
+            ],
+            "source": "东",
+            "asrRange": [
+              21,
+              22
+            ],
+            "asr": "東"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              27,
+              29
+            ],
+            "source": "场里",
+            "asrRange": [
+              27,
+              29
+            ],
+            "asr": "場裡"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              32,
+              33
+            ],
+            "source": "颜",
+            "asrRange": [
+              32,
+              33
+            ],
+            "asr": "顏"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              37,
+              38
+            ],
+            "source": "没",
+            "asrRange": [
+              37,
+              38
+            ],
+            "asr": "沒"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              39,
+              41
+            ],
+            "source": "过红",
+            "asrRange": [
+              39,
+              41
+            ],
+            "asr": "過紅"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              43,
+              44
+            ],
+            "source": "裤",
+            "asrRange": [
+              43,
+              44
+            ],
+            "asr": "褲"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              45,
+              48
+            ],
+            "source": "妈妈让",
+            "asrRange": [
+              45,
+              48
+            ],
+            "asr": "媽媽讓"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              49,
+              50
+            ],
+            "source": "试",
+            "asrRange": [
+              49,
+              50
+            ],
+            "asr": "試"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              51,
+              52
+            ],
+            "source": "试",
+            "asrRange": [
+              51,
+              52
+            ],
+            "asr": "試"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              53,
+              54
+            ],
+            "source": "觉",
+            "asrRange": [
+              53,
+              54
+            ],
+            "asr": "覺"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              57,
+              58
+            ],
+            "source": "红",
+            "asrRange": [
+              57,
+              58
+            ],
+            "asr": "紅"
+          }
+        ]
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio8",
+      "rawSHA256": "32812d4835754b17497b98a7b1527cb8abe057411b389888892f8733bb720b03",
+      "rawCJK": "颜色",
+      "rawWordCount": 2,
+      "uniqueByUnit": {
+        "word": 1
+      },
+      "residual": null,
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio1",
+      "rawSHA256": "23e4c82f25b952d4fc1c7c8aa2b67e525ca1fec501ab914d37681d891adf8717",
+      "rawCJK": "家悦快下来吧第一次去中国朋友家别晚了还有时间你上来吧我不上去了就在下面等你那我一会儿就下去你快点吧没事医学姐说十一点前到就可以",
+      "rawWordCount": 50,
+      "uniqueByUnit": {
+        "line": 3
+      },
+      "residual": {
+        "expectedCJK": "家月快下来吧第一次去中国朋友家别晚了还有时间你上来吧我不上去了就在下面等你那我一会儿就下去你快点儿吧没事一雪姐说点前到就可以",
+        "observedCJK": "家悦快下来吧第一次去中国朋友家别晚了还有时间你上来吧我不上去了就在下面等你那我一会儿就下去你快点吧没事医学姐说十一点前到就可以",
+        "sequenceSimilarity": 0.928,
+        "residuals": [
+          {
+            "operation": "replace",
+            "sourceRange": [
+              1,
+              2
+            ],
+            "source": "月",
+            "asrRange": [
+              1,
+              2
+            ],
+            "asr": "悦"
+          },
+          {
+            "operation": "delete",
+            "sourceRange": [
+              48,
+              49
+            ],
+            "source": "儿",
+            "asrRange": [
+              48,
+              48
+            ],
+            "asr": ""
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              52,
+              54
+            ],
+            "source": "一雪",
+            "asrRange": [
+              51,
+              53
+            ],
+            "asr": "医学"
+          },
+          {
+            "operation": "insert",
+            "sourceRange": [
+              56,
+              56
+            ],
+            "source": "",
+            "asrRange": [
+              55,
+              57
+            ],
+            "asr": "十一"
+          }
+        ]
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "rawSHA256": "68a721ae9a3a03e0caac432d38b528ab6371e900a924275f57df6d826aa68936",
+      "rawCJK": "快下来上来上去下面等一会儿下去下去",
+      "rawWordCount": 14,
+      "uniqueByUnit": {
+        "word": 8
+      },
+      "residual": null,
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "rawSHA256": "90766566adad4cc2bfd363d7fcda7abcfecb26f21908a7b472d0531b525f9a21",
+      "rawCJK": "佳月安妮快进来我给你们介绍一下这是孩子们的爷爷奶奶你们好爸妈这是白佳月这是安妮他们都是依妃的学生佳月安妮你们好这是送你们的礼物你们太客气了还拿这么多礼物来医学姐这是给孩子们准备的礼物谢谢你们别客气快坐吧",
+      "rawWordCount": 83,
+      "uniqueByUnit": {
+        "sentence": 3,
+        "line": 3
+      },
+      "residual": {
+        "expectedCJK": "家月安妮快进来我给你们介绍一下这是孩子们的爷爷奶奶你们好爸妈这是白家月这是安妮她们都是一飞的学生家月安妮你们好这是送你们的礼物你们太客气了还拿这么多礼物来一雪姐这是给孩子们准备的礼物谢谢你们别客气快坐吧",
+        "observedCJK": "佳月安妮快进来我给你们介绍一下这是孩子们的爷爷奶奶你们好爸妈这是白佳月这是安妮他们都是依妃的学生佳月安妮你们好这是送你们的礼物你们太客气了还拿这么多礼物来医学姐这是给孩子们准备的礼物谢谢你们别客气快坐吧",
+        "sequenceSimilarity": 0.9207920792079208,
+        "residuals": [
+          {
+            "operation": "replace",
+            "sourceRange": [
+              0,
+              1
+            ],
+            "source": "家",
+            "asrRange": [
+              0,
+              1
+            ],
+            "asr": "佳"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              33,
+              34
+            ],
+            "source": "家",
+            "asrRange": [
+              33,
+              34
+            ],
+            "asr": "佳"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              39,
+              40
+            ],
+            "source": "她",
+            "asrRange": [
+              39,
+              40
+            ],
+            "asr": "他"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              43,
+              45
+            ],
+            "source": "一飞",
+            "asrRange": [
+              43,
+              45
+            ],
+            "asr": "依妃"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              48,
+              49
+            ],
+            "source": "家",
+            "asrRange": [
+              48,
+              49
+            ],
+            "asr": "佳"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              77,
+              79
+            ],
+            "source": "一雪",
+            "asrRange": [
+              77,
+              79
+            ],
+            "asr": "医学"
+          }
+        ]
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio4",
+      "rawSHA256": "87b4832bc876266bc447c5e06e4d021b560f20385c89a7e341f2015dc23a8d78",
+      "rawCJK": "进来爷爷奶奶礼物准备",
+      "rawWordCount": 10,
+      "uniqueByUnit": {
+        "word": 5
+      },
+      "residual": null,
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "rawSHA256": "bdc37c1d4b0d722c6eb09c04efc7cb3a65beb0b9637101b3a77beac1e2f995da",
+      "rawCJK": "都点了我们吃饭吧这么多好吃的您太客气了都是我自己做的你们多吃点奶茶也很好喝是您自己做的吗不是奶茶是爷爷买的在哪儿买的我还没喝过这么好喝的奶茶就在前边的商场吃完饭你们可以跟我去看看",
+      "rawWordCount": 76,
+      "uniqueByUnit": {
+        "line": 5,
+        "sentence": 2
+      },
+      "residual": {
+        "expectedCJK": "都点了我们吃饭吧这么多好吃的您太客气了都是我自己做的你们多吃点儿奶茶也很好喝是您自己做的吗不是奶茶是爷爷买的在哪儿买的我还没喝过这么好喝的奶茶就在前边的商场吃完饭你们可以跟我去看看",
+        "observedCJK": "都点了我们吃饭吧这么多好吃的您太客气了都是我自己做的你们多吃点奶茶也很好喝是您自己做的吗不是奶茶是爷爷买的在哪儿买的我还没喝过这么好喝的奶茶就在前边的商场吃完饭你们可以跟我去看看",
+        "sequenceSimilarity": 0.994413407821229,
+        "residuals": [
+          {
+            "operation": "delete",
+            "sourceRange": [
+              31,
+              32
+            ],
+            "source": "儿",
+            "asrRange": [
+              31,
+              31
+            ],
+            "asr": ""
+          }
+        ]
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio6",
+      "rawSHA256": "0c5136d5613508f873c0697c88ca2be62649c3aedcde4d54343c976310ecd5ea",
+      "rawCJK": "奶茶根",
+      "rawWordCount": 3,
+      "uniqueByUnit": {
+        "word": 1
+      },
+      "residual": null,
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio7",
+      "rawSHA256": "1535cba8622c4020512abc6844f7054f4831cb73c7fb7a4eeb2459b0028e6e1d",
+      "rawCJK": "回國前一天我們去醫學姐家了到她家的時候飯菜都做好了劉爺爺還準備了奶茶因為吃了太多東西我們吃完飯是走回酒店的",
+      "rawWordCount": 45,
+      "uniqueByUnit": {},
+      "residual": {
+        "expectedCJK": "回国前一天我们去一雪姐家了到她家的时候饭菜都做好了刘爷爷还准备了奶茶因为吃了太多东西我们吃完饭是走回酒店的",
+        "observedCJK": "回國前一天我們去醫學姐家了到她家的時候飯菜都做好了劉爺爺還準備了奶茶因為吃了太多東西我們吃完飯是走回酒店的",
+        "sequenceSimilarity": 0.6981132075471698,
+        "residuals": [
+          {
+            "operation": "replace",
+            "sourceRange": [
+              1,
+              2
+            ],
+            "source": "国",
+            "asrRange": [
+              1,
+              2
+            ],
+            "asr": "國"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              6,
+              7
+            ],
+            "source": "们",
+            "asrRange": [
+              6,
+              7
+            ],
+            "asr": "們"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              8,
+              10
+            ],
+            "source": "一雪",
+            "asrRange": [
+              8,
+              10
+            ],
+            "asr": "醫學"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              17,
+              18
+            ],
+            "source": "时",
+            "asrRange": [
+              17,
+              18
+            ],
+            "asr": "時"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              19,
+              20
+            ],
+            "source": "饭",
+            "asrRange": [
+              19,
+              20
+            ],
+            "asr": "飯"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              25,
+              31
+            ],
+            "source": "刘爷爷还准备",
+            "asrRange": [
+              25,
+              31
+            ],
+            "asr": "劉爺爺還準備"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              35,
+              36
+            ],
+            "source": "为",
+            "asrRange": [
+              35,
+              36
+            ],
+            "asr": "為"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              40,
+              41
+            ],
+            "source": "东",
+            "asrRange": [
+              40,
+              41
+            ],
+            "asr": "東"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              43,
+              44
+            ],
+            "source": "们",
+            "asrRange": [
+              43,
+              44
+            ],
+            "asr": "們"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              46,
+              47
+            ],
+            "source": "饭",
+            "asrRange": [
+              46,
+              47
+            ],
+            "asr": "飯"
+          }
+        ]
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio8",
+      "rawSHA256": "a87567dc63afa1367c0d522594b916fdb2f004a31da83ad056bb1fcefd8a6334",
+      "rawCJK": "走酒店",
+      "rawWordCount": 3,
+      "uniqueByUnit": {
+        "word": 2
+      },
+      "residual": null,
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "rawSHA256": "523fff6044be55e2f7f16f73367d06cd1ccc95dc8d6b43dfa0e63737b3353a8d",
+      "rawCJK": "明天就是女儿的生日了你不说我还真忘了我们给她准备个什么礼物呢她喜欢画画你觉得画笔怎么样就送画笔吧那我明天上午就去买好的我再给她买个大大的生日蛋糕",
+      "rawWordCount": 63,
+      "uniqueByUnit": {
+        "line": 6,
+        "sentence": 4
+      },
+      "residual": {
+        "expectedCJK": "明天就是女儿的生日了你不说我还真忘了我们给她准备个什么礼物呢她喜欢画画你觉得画笔怎么样就送画笔吧那我明天上午就去买好的我再给她买个大大的生日蛋糕",
+        "observedCJK": "明天就是女儿的生日了你不说我还真忘了我们给她准备个什么礼物呢她喜欢画画你觉得画笔怎么样就送画笔吧那我明天上午就去买好的我再给她买个大大的生日蛋糕",
+        "sequenceSimilarity": 1.0,
+        "residuals": []
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio2",
+      "rawSHA256": "51894d77a45513df2bb4642530b73a63bc3cf00d41f8b1ee6df1f093278ff1ff",
+      "rawCJK": "生日望画画笔蛋糕",
+      "rawWordCount": 8,
+      "uniqueByUnit": {
+        "word": 3
+      },
+      "residual": null,
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "rawSHA256": "a9001ef30c44ca4bb085cea193b8396cba206b11b90e1234005a05ccd28e6ec7",
+      "rawCJK": "小雪生日快乐姐姐生日快乐小雪这是爸爸妈妈送你的礼物你打开看看喜欢不喜欢画笔我很喜欢那你想画点什么画我们的家有爸爸妈妈弟弟还有黑色的狗白色的猫什么的那我要画一个穿白色衣服的姐姐",
+      "rawWordCount": 71,
+      "uniqueByUnit": {
+        "line": 7,
+        "sentence": 4
+      },
+      "residual": {
+        "expectedCJK": "小雪生日快乐姐姐生日快乐小雪这是爸爸妈妈送你的礼物你打开看看喜欢不喜欢画笔我很喜欢那你想画点儿什么画我们的家有爸爸妈妈弟弟还有黑色的狗白色的猫什么的那我要画一个穿白色衣服的姐姐",
+        "observedCJK": "小雪生日快乐姐姐生日快乐小雪这是爸爸妈妈送你的礼物你打开看看喜欢不喜欢画笔我很喜欢那你想画点什么画我们的家有爸爸妈妈弟弟还有黑色的狗白色的猫什么的那我要画一个穿白色衣服的姐姐",
+        "sequenceSimilarity": 0.9942857142857143,
+        "residuals": [
+          {
+            "operation": "delete",
+            "sourceRange": [
+              46,
+              47
+            ],
+            "source": "儿",
+            "asrRange": [
+              46,
+              46
+            ],
+            "asr": ""
+          }
+        ]
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio4",
+      "rawSHA256": "38fdd392202d971101ebbb6050c5b446acf8e6812a09e6102bf31b557f16593e",
+      "rawCJK": "快樂打開",
+      "rawWordCount": 4,
+      "uniqueByUnit": {},
+      "residual": null,
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio5",
+      "rawSHA256": "6f46b40b3d22cff4554ebdea091e5161bb8374b1d4d0eaf3cf9f7e7fcdbe5bd6",
+      "rawCJK": "小雪看看今天有什么好吃的长长的面条大大的蛋糕你看还有鱼啊肉啊什么的都是你喜欢吃的谢谢爸爸妈妈快去叫弟弟过来吃饭吧吃完饭我们还要出去玩呢过生日真好啊是的过生日就要吃好吃的還要高高興興地玩",
+      "rawWordCount": 76,
+      "uniqueByUnit": {
+        "line": 5
+      },
+      "residual": {
+        "expectedCJK": "小雪看看今天有什么好吃的长长的面条儿大大的蛋糕你看还有鱼啊肉啊什么的都是你喜欢吃的谢谢爸爸妈妈快去叫弟弟过来吃饭吧吃完饭我们还要出去玩呢过生日真好啊是的过生日就要吃好吃的还要高高兴兴地玩",
+        "observedCJK": "小雪看看今天有什么好吃的长长的面条大大的蛋糕你看还有鱼啊肉啊什么的都是你喜欢吃的谢谢爸爸妈妈快去叫弟弟过来吃饭吧吃完饭我们还要出去玩呢过生日真好啊是的过生日就要吃好吃的還要高高興興地玩",
+        "sequenceSimilarity": 0.9621621621621622,
+        "residuals": [
+          {
+            "operation": "delete",
+            "sourceRange": [
+              17,
+              18
+            ],
+            "source": "儿",
+            "asrRange": [
+              17,
+              17
+            ],
+            "asr": ""
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              85,
+              86
+            ],
+            "source": "还",
+            "asrRange": [
+              84,
+              85
+            ],
+            "asr": "還"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              89,
+              91
+            ],
+            "source": "兴兴",
+            "asrRange": [
+              88,
+              90
+            ],
+            "asr": "興興"
+          }
+        ]
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio6",
+      "rawSHA256": "312de9a49c78046051175a49ef634c2ac16c91489555d05f124deb1bd3668f57",
+      "rawCJK": "长鱼肉过登",
+      "rawWordCount": 5,
+      "uniqueByUnit": {
+        "word": 4
+      },
+      "residual": null,
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio7",
+      "rawSHA256": "fdaabe48ea4d5356604b275ff36c02ebce913ddc345a8d3ea42d1b78c430b1c7",
+      "rawCJK": "今天是女兒的生日我們買了蛋糕做了麵條還做了魚啊肉啊什麼的吃完晚飯一家人去看了個電影回家後孩子們早早的就上床了明天不上學他們說要叔叔夫夫的睡一覺讓我們晚點叫他們起床这是很忙很累但很快乐的一天",
+      "rawWordCount": 86,
+      "uniqueByUnit": {
+        "sentence": 1
+      },
+      "residual": {
+        "expectedCJK": "今天是女儿的生日我们买了蛋糕做了面条儿还做了鱼啊肉啊什么的吃完晚饭一家人去看了个电影回家后孩子们早早地就上床了明天不上学他们说要舒舒服服地睡一觉让我们晚点儿叫他们起床这是很忙很累但很快乐的一天",
+        "observedCJK": "今天是女兒的生日我們買了蛋糕做了麵條還做了魚啊肉啊什麼的吃完晚飯一家人去看了個電影回家後孩子們早早的就上床了明天不上學他們說要叔叔夫夫的睡一覺讓我們晚點叫他們起床这是很忙很累但很快乐的一天",
+        "sequenceSimilarity": 0.7052631578947368,
+        "residuals": [
+          {
+            "operation": "replace",
+            "sourceRange": [
+              4,
+              5
+            ],
+            "source": "儿",
+            "asrRange": [
+              4,
+              5
+            ],
+            "asr": "兒"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              9,
+              11
+            ],
+            "source": "们买",
+            "asrRange": [
+              9,
+              11
+            ],
+            "asr": "們買"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              16,
+              20
+            ],
+            "source": "面条儿还",
+            "asrRange": [
+              16,
+              19
+            ],
+            "asr": "麵條還"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              22,
+              23
+            ],
+            "source": "鱼",
+            "asrRange": [
+              21,
+              22
+            ],
+            "asr": "魚"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              27,
+              28
+            ],
+            "source": "么",
+            "asrRange": [
+              26,
+              27
+            ],
+            "asr": "麼"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              32,
+              33
+            ],
+            "source": "饭",
+            "asrRange": [
+              31,
+              32
+            ],
+            "asr": "飯"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              39,
+              41
+            ],
+            "source": "个电",
+            "asrRange": [
+              38,
+              40
+            ],
+            "asr": "個電"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              44,
+              45
+            ],
+            "source": "后",
+            "asrRange": [
+              43,
+              44
+            ],
+            "asr": "後"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              47,
+              48
+            ],
+            "source": "们",
+            "asrRange": [
+              46,
+              47
+            ],
+            "asr": "們"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              50,
+              51
+            ],
+            "source": "地",
+            "asrRange": [
+              49,
+              50
+            ],
+            "asr": "的"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              59,
+              60
+            ],
+            "source": "学",
+            "asrRange": [
+              58,
+              59
+            ],
+            "asr": "學"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              61,
+              63
+            ],
+            "source": "们说",
+            "asrRange": [
+              60,
+              62
+            ],
+            "asr": "們說"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              64,
+              69
+            ],
+            "source": "舒舒服服地",
+            "asrRange": [
+              63,
+              68
+            ],
+            "asr": "叔叔夫夫的"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              71,
+              73
+            ],
+            "source": "觉让",
+            "asrRange": [
+              70,
+              72
+            ],
+            "asr": "覺讓"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              74,
+              75
+            ],
+            "source": "们",
+            "asrRange": [
+              73,
+              74
+            ],
+            "asr": "們"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              76,
+              78
+            ],
+            "source": "点儿",
+            "asrRange": [
+              75,
+              76
+            ],
+            "asr": "點"
+          },
+          {
+            "operation": "replace",
+            "sourceRange": [
+              80,
+              81
+            ],
+            "source": "们",
+            "asrRange": [
+              78,
+              79
+            ],
+            "asr": "們"
+          }
+        ]
+      },
+      "allTokensNonoverlap": true
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio8",
+      "rawSHA256": "08db0bc8594101e787105377d94374f245ce1fae633e1b00941837fd22f32d7f",
+      "rawCJK": "床舒服",
+      "rawWordCount": 3,
+      "uniqueByUnit": {
+        "word": 2
+      },
+      "residual": null,
+      "allTokensNonoverlap": true
+    }
+  ],
+  "occurrences": [
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio1",
+      "targetId": "hsk2-fltrp-2026:l04:text1:line1",
+      "unit": "line",
+      "zh": "妈妈，我们来过这家商场吗？",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 3.38,
+      "minimumProbability": 0.282436341047287,
+      "maxInternalGap": 0.48,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 4.74,
+        "end": 5.04,
+        "word": "没",
+        "probability": 0.9553369879722595
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio1",
+      "targetId": "hsk2-fltrp-2026:l04:text1:line2",
+      "unit": "line",
+      "zh": "没来过，这是新开的。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 4.74,
+      "rawEnd": 7.1,
+      "minimumProbability": 0.9426447749137878,
+      "maxInternalGap": 0.4399999999999995,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 3.06,
+        "end": 3.38,
+        "word": "吗?",
+        "probability": 0.9304563999176025
+      },
+      "nextRawWord": {
+        "start": 7.76,
+        "end": 8.26,
+        "word": "我们",
+        "probability": 0.9658560752868652
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio1",
+      "targetId": "hsk2-fltrp-2026:l04:text1:line3",
+      "unit": "line",
+      "zh": "我们进去看看吧。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 7.76,
+      "rawEnd": 9.68,
+      "minimumProbability": 0.9658560752868652,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 6.74,
+        "end": 7.1,
+        "word": "的。",
+        "probability": 0.9956249594688416
+      },
+      "nextRawWord": {
+        "start": 10.38,
+        "end": 10.62,
+        "word": "好",
+        "probability": 0.9744764566421509
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio1",
+      "targetId": "hsk2-fltrp-2026:l04:text1:line4:sentence1",
+      "unit": "sentence",
+      "zh": "好啊！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 10.38,
+      "rawEnd": 10.88,
+      "minimumProbability": 0.8041224479675293,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 9.0,
+        "end": 9.68,
+        "word": "吧。",
+        "probability": 0.9882799386978149
+      },
+      "nextRawWord": {
+        "start": 11.6,
+        "end": 11.84,
+        "word": "你想",
+        "probability": 0.9548594951629639
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio1",
+      "targetId": "hsk2-fltrp-2026:l04:text1:line5",
+      "unit": "line",
+      "zh": "我想买条裤子。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 13.58,
+      "rawEnd": 15.12,
+      "minimumProbability": 0.6029080152511597,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 12.3,
+        "end": 12.58,
+        "word": "什么?",
+        "probability": 0.9552332162857056
+      },
+      "nextRawWord": {
+        "start": 16.2,
+        "end": 16.44,
+        "word": "没",
+        "probability": 0.997536301612854
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio1",
+      "targetId": "hsk2-fltrp-2026:l04:text1:line6",
+      "unit": "line",
+      "zh": "没问题。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 16.2,
+      "rawEnd": 16.74,
+      "minimumProbability": 0.9975132942199707,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 14.86,
+        "end": 15.12,
+        "word": "子。",
+        "probability": 0.9993425011634827
+      },
+      "nextRawWord": null,
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio2",
+      "targetId": "hsk2-fltrp-2026:l04:word01",
+      "unit": "word",
+      "zh": "过",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 0.7,
+      "minimumProbability": 0.5835809707641602,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 2.26,
+        "end": 2.96,
+        "word": "商",
+        "probability": 0.11073677241802216
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio2",
+      "targetId": "hsk2-fltrp-2026:l04:word02",
+      "unit": "word",
+      "zh": "商场",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 2.26,
+      "rawEnd": 5.04,
+      "minimumProbability": 0.11073677241802216,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 0.0,
+        "end": 0.7,
+        "word": "过",
+        "probability": 0.5835809707641602
+      },
+      "nextRawWord": {
+        "start": 5.4399999999999995,
+        "end": 6.14,
+        "word": "进",
+        "probability": 0.9866602420806885
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio2",
+      "targetId": "hsk2-fltrp-2026:l04:word03",
+      "unit": "word",
+      "zh": "进去",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 5.4399999999999995,
+      "rawEnd": 7.98,
+      "minimumProbability": 0.9866602420806885,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 2.96,
+        "end": 5.04,
+        "word": "场",
+        "probability": 0.818040132522583
+      },
+      "nextRawWord": {
+        "start": 7.98,
+        "end": 10.2,
+        "word": "调",
+        "probability": 0.66782546043396
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio2",
+      "targetId": "hsk2-fltrp-2026:l04:word05",
+      "unit": "word",
+      "zh": "裤子",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 10.2,
+      "rawEnd": 11.52,
+      "minimumProbability": 0.986200213432312,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 7.98,
+        "end": 10.2,
+        "word": "调",
+        "probability": 0.66782546043396
+      },
+      "nextRawWord": null,
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "targetId": "hsk2-fltrp-2026:l04:text2:line1",
+      "unit": "line",
+      "zh": "妈妈，我想买这条白色的裤子。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 3.52,
+      "minimumProbability": 0.44956299662590027,
+      "maxInternalGap": 0.4999999999999999,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 4.760000000000004,
+        "end": 5.28,
+        "word": "你有",
+        "probability": 0.7400052547454834
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "targetId": "hsk2-fltrp-2026:l04:text2:line2",
+      "unit": "line",
+      "zh": "你有很多白色的衣服，为什么还买白色的？",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 4.760000000000004,
+      "rawEnd": 8.9,
+      "minimumProbability": 0.7400052547454834,
+      "maxInternalGap": 0.41999999999999993,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 3.2,
+        "end": 3.52,
+        "word": "子。",
+        "probability": 0.9985557198524475
+      },
+      "nextRawWord": {
+        "start": 10.100000000000003,
+        "end": 10.62,
+        "word": "因为",
+        "probability": 0.976291298866272
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "targetId": "hsk2-fltrp-2026:l04:text2:line3",
+      "unit": "line",
+      "zh": "因为我喜欢白色啊！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 10.100000000000003,
+      "rawEnd": 12.08,
+      "minimumProbability": 0.7344670295715332,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 8.74,
+        "end": 8.9,
+        "word": "的?",
+        "probability": 0.9702511429786682
+      },
+      "nextRawWord": {
+        "start": 13.280000000000005,
+        "end": 13.8,
+        "word": "我觉得",
+        "probability": 0.9660873413085938
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "targetId": "hsk2-fltrp-2026:l04:text2:line4",
+      "unit": "line",
+      "zh": "我觉得这条白色的不太好看，你试试那条红色的吧。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 13.280000000000005,
+      "rawEnd": 18.44,
+      "minimumProbability": 0.944987952709198,
+      "maxInternalGap": 0.7999999999999989,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 11.86,
+        "end": 12.08,
+        "word": "啊。",
+        "probability": 0.7344670295715332
+      },
+      "nextRawWord": {
+        "start": 20.26,
+        "end": 20.62,
+        "word": "我",
+        "probability": 0.9907240271568298
+      },
+      "riskFlags": [
+        "cross-ASR-segment-needs-context"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "targetId": "hsk2-fltrp-2026:l04:text2:line5",
+      "unit": "line",
+      "zh": "我没穿过红色的，红色的好看吗？",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 20.26,
+      "rawEnd": 24.02,
+      "minimumProbability": 0.9732009768486023,
+      "maxInternalGap": 0.5800000000000018,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 18.26,
+        "end": 18.44,
+        "word": "吧。",
+        "probability": 0.9798872470855713
+      },
+      "nextRawWord": {
+        "start": 25.26,
+        "end": 25.62,
+        "word": "就是",
+        "probability": 0.9778963327407837
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "targetId": "hsk2-fltrp-2026:l04:text2:line6",
+      "unit": "line",
+      "zh": "就是因为没穿过，所以要试试啊！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 25.26,
+      "rawEnd": 28.36,
+      "minimumProbability": 0.9294241666793823,
+      "maxInternalGap": 0.33999999999999986,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 23.74,
+        "end": 24.02,
+        "word": "吗?",
+        "probability": 0.9772986769676208
+      },
+      "nextRawWord": null,
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio4",
+      "targetId": "hsk2-fltrp-2026:l04:word06",
+      "unit": "word",
+      "zh": "白色",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 2.56,
+      "minimumProbability": 0.9548920392990112,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 3.52,
+        "end": 4.38,
+        "word": "因为",
+        "probability": 0.19835083186626434
+      },
+      "riskFlags": [
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio4",
+      "targetId": "hsk2-fltrp-2026:l04:word07",
+      "unit": "word",
+      "zh": "因为",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 3.52,
+      "rawEnd": 4.38,
+      "minimumProbability": 0.19835083186626434,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 0.64,
+        "end": 2.56,
+        "word": "色",
+        "probability": 0.9953789710998535
+      },
+      "nextRawWord": {
+        "start": 6.36,
+        "end": 7.16,
+        "word": "是",
+        "probability": 0.9603897929191589
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio4",
+      "targetId": "hsk2-fltrp-2026:l04:word09",
+      "unit": "word",
+      "zh": "红色",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 8.56,
+      "rawEnd": 11.0,
+      "minimumProbability": 0.9652149081230164,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 6.36,
+        "end": 7.16,
+        "word": "是",
+        "probability": 0.9603897929191589
+      },
+      "nextRawWord": {
+        "start": 11.0,
+        "end": 12.16,
+        "word": "所以",
+        "probability": 0.7230529189109802
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio4",
+      "targetId": "hsk2-fltrp-2026:l04:word10",
+      "unit": "word",
+      "zh": "所以",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 11.0,
+      "rawEnd": 12.16,
+      "minimumProbability": 0.7230529189109802,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 9.26,
+        "end": 11.0,
+        "word": "色",
+        "probability": 0.9993689656257629
+      },
+      "nextRawWord": null,
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio5",
+      "targetId": "hsk2-fltrp-2026:l04:text3:line1",
+      "unit": "line",
+      "zh": "妈妈，我想买个新书包。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 2.5,
+      "minimumProbability": 0.3264639675617218,
+      "maxInternalGap": 0.43999999999999995,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 3.1,
+        "end": 3.62,
+        "word": "好,",
+        "probability": 0.6239771246910095
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio5",
+      "targetId": "hsk2-fltrp-2026:l04:text3:line2",
+      "unit": "line",
+      "zh": "好，那边卖书包，我们过去看看吧。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 3.1,
+      "rawEnd": 7.54,
+      "minimumProbability": 0.6239771246910095,
+      "maxInternalGap": 0.6799999999999997,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 2.22,
+        "end": 2.5,
+        "word": "包",
+        "probability": 0.9905683398246765
+      },
+      "nextRawWord": {
+        "start": 7.54,
+        "end": 8.52,
+        "word": "这么",
+        "probability": 0.911291241645813
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio5",
+      "targetId": "hsk2-fltrp-2026:l04:text3:line3",
+      "unit": "line",
+      "zh": "这么多漂亮的书包！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 7.54,
+      "rawEnd": 9.82,
+      "minimumProbability": 0.911291241645813,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 6.92,
+        "end": 7.54,
+        "word": "吧",
+        "probability": 0.9861621856689453
+      },
+      "nextRawWord": {
+        "start": 10.5,
+        "end": 11.02,
+        "word": "红",
+        "probability": 0.8920481503009796
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio5",
+      "targetId": "hsk2-fltrp-2026:l04:text3:line4",
+      "unit": "line",
+      "zh": "红色的、绿色的、黑色的，你想买哪个？",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 10.5,
+      "rawEnd": 15.56,
+      "minimumProbability": 0.6045981049537659,
+      "maxInternalGap": 0.41999999999999993,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 9.46,
+        "end": 9.82,
+        "word": "包",
+        "probability": 0.9967671632766724
+      },
+      "nextRawWord": {
+        "start": 16.46,
+        "end": 16.6,
+        "word": "绿",
+        "probability": 0.9794609844684601
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "cross-ASR-segment-needs-context"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio5",
+      "targetId": "hsk2-fltrp-2026:l04:text3:line5",
+      "unit": "line",
+      "zh": "绿色的吧。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 16.46,
+      "rawEnd": 17.58,
+      "minimumProbability": 0.9559526443481445,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 15.28,
+        "end": 15.56,
+        "word": "个?",
+        "probability": 0.9815669059753418
+      },
+      "nextRawWord": {
+        "start": 17.58,
+        "end": 18.18,
+        "word": "不",
+        "probability": 0.74344402551651
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio5",
+      "targetId": "hsk2-fltrp-2026:l04:text3:line6",
+      "unit": "line",
+      "zh": "不错，我也觉得绿色的更好看。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 17.58,
+      "rawEnd": 20.88,
+      "minimumProbability": 0.74344402551651,
+      "maxInternalGap": 0.5800000000000018,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 16.96,
+        "end": 17.58,
+        "word": "吧",
+        "probability": 0.9559526443481445
+      },
+      "nextRawWord": null,
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio6",
+      "targetId": "hsk2-fltrp-2026:l04:word11",
+      "unit": "word",
+      "zh": "书包",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 3.28,
+      "minimumProbability": 0.635724738240242,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 3.28,
+        "end": 3.9,
+        "word": "过",
+        "probability": 0.8553064465522766
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio6",
+      "targetId": "hsk2-fltrp-2026:l04:word12",
+      "unit": "word",
+      "zh": "过去",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 3.28,
+      "rawEnd": 5.82,
+      "minimumProbability": 0.8553064465522766,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 1.24,
+        "end": 3.28,
+        "word": "包",
+        "probability": 0.9753668904304504
+      },
+      "nextRawWord": {
+        "start": 5.82,
+        "end": 6.88,
+        "word": "绿",
+        "probability": 0.9528211653232574
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio6",
+      "targetId": "hsk2-fltrp-2026:l04:word13",
+      "unit": "word",
+      "zh": "绿色",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 5.82,
+      "rawEnd": 8.72,
+      "minimumProbability": 0.9528211653232574,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 3.9,
+        "end": 5.82,
+        "word": "去",
+        "probability": 0.979075014591217
+      },
+      "nextRawWord": {
+        "start": 8.72,
+        "end": 9.7,
+        "word": "黑",
+        "probability": 0.94197016954422
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio6",
+      "targetId": "hsk2-fltrp-2026:l04:word14",
+      "unit": "word",
+      "zh": "黑色",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 8.72,
+      "rawEnd": 11.8,
+      "minimumProbability": 0.94197016954422,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 6.88,
+        "end": 8.72,
+        "word": "色",
+        "probability": 0.9987523555755615
+      },
+      "nextRawWord": {
+        "start": 11.8,
+        "end": 12.72,
+        "word": "更",
+        "probability": 0.9602183699607849
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio6",
+      "targetId": "hsk2-fltrp-2026:l04:word15",
+      "unit": "word",
+      "zh": "更",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 11.8,
+      "rawEnd": 12.72,
+      "minimumProbability": 0.9602183699607849,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 9.7,
+        "end": 11.8,
+        "word": "色",
+        "probability": 0.9988973140716553
+      },
+      "nextRawWord": null,
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l04:audio8",
+      "targetId": "hsk2-fltrp-2026:l04:word16",
+      "unit": "word",
+      "zh": "颜色",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 1.28,
+      "minimumProbability": 0.9884420037269592,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": null,
+      "riskFlags": [
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio1",
+      "targetId": "hsk2-fltrp-2026:l05:text1:line2",
+      "unit": "line",
+      "zh": "还有时间，你上来吧。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 7.2200000000000015,
+      "rawEnd": 9.48,
+      "minimumProbability": 0.946767270565033,
+      "maxInternalGap": 0.5199999999999996,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 5.9,
+        "end": 6.2,
+        "word": "了。",
+        "probability": 0.9939079284667969
+      },
+      "nextRawWord": {
+        "start": 10.8,
+        "end": 11.1,
+        "word": "我不",
+        "probability": 0.9779484272003174
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio1",
+      "targetId": "hsk2-fltrp-2026:l05:text1:line3",
+      "unit": "line",
+      "zh": "我不上去了，就在下面等你。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 10.8,
+      "rawEnd": 13.48,
+      "minimumProbability": 0.9502174258232117,
+      "maxInternalGap": 0.5999999999999996,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 9.24,
+        "end": 9.48,
+        "word": "吧。",
+        "probability": 0.9990137815475464
+      },
+      "nextRawWord": {
+        "start": 14.46,
+        "end": 14.78,
+        "word": "那",
+        "probability": 0.9908201098442078
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio1",
+      "targetId": "hsk2-fltrp-2026:l05:text1:line4",
+      "unit": "line",
+      "zh": "那我一会儿就下去。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 14.46,
+      "rawEnd": 15.92,
+      "minimumProbability": 0.6398563385009766,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 13.22,
+        "end": 13.48,
+        "word": "你。",
+        "probability": 0.996665894985199
+      },
+      "nextRawWord": {
+        "start": 17.26,
+        "end": 17.66,
+        "word": "你",
+        "probability": 0.9957358837127686
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "targetId": "hsk2-fltrp-2026:l05:word01",
+      "unit": "word",
+      "zh": "快",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 1.22,
+      "minimumProbability": 0.9803557395935059,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 1.78,
+        "end": 3.64,
+        "word": " 下",
+        "probability": 0.7134270071983337
+      },
+      "riskFlags": [
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "targetId": "hsk2-fltrp-2026:l05:word02",
+      "unit": "word",
+      "zh": "快",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 1.22,
+      "minimumProbability": 0.9803557395935059,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 1.78,
+        "end": 3.64,
+        "word": " 下",
+        "probability": 0.7134270071983337
+      },
+      "riskFlags": [
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "targetId": "hsk2-fltrp-2026:l05:word03",
+      "unit": "word",
+      "zh": "下来",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 1.78,
+      "rawEnd": 4.3,
+      "minimumProbability": 0.7134270071983337,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 0.0,
+        "end": 1.22,
+        "word": "快,",
+        "probability": 0.9803557395935059
+      },
+      "nextRawWord": {
+        "start": 6.16,
+        "end": 6.42,
+        "word": " 上",
+        "probability": 0.9948298335075378
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "targetId": "hsk2-fltrp-2026:l05:word04",
+      "unit": "word",
+      "zh": "上来",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 6.16,
+      "rawEnd": 8.42,
+      "minimumProbability": 0.9724453091621399,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 3.64,
+        "end": 4.3,
+        "word": "来,",
+        "probability": 0.9526707530021667
+      },
+      "nextRawWord": {
+        "start": 9.46,
+        "end": 9.68,
+        "word": " 上",
+        "probability": 0.9947307109832764
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "targetId": "hsk2-fltrp-2026:l05:word05",
+      "unit": "word",
+      "zh": "上去",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 9.46,
+      "rawEnd": 10.18,
+      "minimumProbability": 0.9850051403045654,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 6.42,
+        "end": 8.42,
+        "word": "来,",
+        "probability": 0.9724453091621399
+      },
+      "nextRawWord": {
+        "start": 12.42,
+        "end": 12.78,
+        "word": " 下面,",
+        "probability": 0.852363109588623
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "targetId": "hsk2-fltrp-2026:l05:word06",
+      "unit": "word",
+      "zh": "下面",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 12.42,
+      "rawEnd": 12.78,
+      "minimumProbability": 0.852363109588623,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 9.68,
+        "end": 10.18,
+        "word": "去,",
+        "probability": 0.9850051403045654
+      },
+      "nextRawWord": {
+        "start": 17.82,
+        "end": 18.06,
+        "word": " 等,",
+        "probability": 0.8447248935699463
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "targetId": "hsk2-fltrp-2026:l05:word07",
+      "unit": "word",
+      "zh": "面",
+      "occurrence": 1,
+      "unique": false,
+      "status": "blocked-partial-ASR-word-no-character-timestamp",
+      "rawStart": 12.42,
+      "rawEnd": 12.78,
+      "minimumProbability": 0.852363109588623,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 9.68,
+        "end": 10.18,
+        "word": "去,",
+        "probability": 0.9850051403045654
+      },
+      "nextRawWord": {
+        "start": 17.82,
+        "end": 18.06,
+        "word": " 等,",
+        "probability": 0.8447248935699463
+      },
+      "riskFlags": [
+        "not-unique-or-blocked"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "targetId": "hsk2-fltrp-2026:l05:word08",
+      "unit": "word",
+      "zh": "等",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 17.82,
+      "rawEnd": 18.06,
+      "minimumProbability": 0.8447248935699463,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 12.42,
+        "end": 12.78,
+        "word": " 下面,",
+        "probability": 0.852363109588623
+      },
+      "nextRawWord": {
+        "start": 20.54,
+        "end": 20.78,
+        "word": " 一",
+        "probability": 0.7264255285263062
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "targetId": "hsk2-fltrp-2026:l05:word09",
+      "unit": "word",
+      "zh": "一会儿",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 20.54,
+      "rawEnd": 23.26,
+      "minimumProbability": 0.7264255285263062,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 17.82,
+        "end": 18.06,
+        "word": " 等,",
+        "probability": 0.8447248935699463
+      },
+      "nextRawWord": {
+        "start": 23.88,
+        "end": 24.38,
+        "word": " 下去,",
+        "probability": 0.9541983604431152
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "targetId": "hsk2-fltrp-2026:l05:word10",
+      "unit": "word",
+      "zh": "下去",
+      "occurrence": 1,
+      "unique": false,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 23.88,
+      "rawEnd": 24.38,
+      "minimumProbability": 0.9541983604431152,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 21.26,
+        "end": 23.26,
+        "word": "儿,",
+        "probability": 0.872513473033905
+      },
+      "nextRawWord": {
+        "start": 25.36,
+        "end": 26.06,
+        "word": " 下去。",
+        "probability": 0.886814296245575
+      },
+      "riskFlags": [
+        "not-unique-or-blocked"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio2",
+      "targetId": "hsk2-fltrp-2026:l05:word10",
+      "unit": "word",
+      "zh": "下去",
+      "occurrence": 2,
+      "unique": false,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 25.36,
+      "rawEnd": 26.06,
+      "minimumProbability": 0.886814296245575,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 23.88,
+        "end": 24.38,
+        "word": " 下去,",
+        "probability": 0.9541983604431152
+      },
+      "nextRawWord": null,
+      "riskFlags": [
+        "not-unique-or-blocked"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "targetId": "hsk2-fltrp-2026:l05:text2:line1:sentence2",
+      "unit": "sentence",
+      "zh": "我给你们介绍一下，这是孩子们的爷爷、奶奶。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 2.94,
+      "rawEnd": 7.96,
+      "minimumProbability": 0.4341927766799927,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 2.66,
+        "end": 2.94,
+        "word": "来",
+        "probability": 0.988958477973938
+      },
+      "nextRawWord": {
+        "start": 8.639999999999997,
+        "end": 9.2,
+        "word": "你们",
+        "probability": 0.9494560956954956
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "cross-ASR-segment-needs-context"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "targetId": "hsk2-fltrp-2026:l05:text2:line2",
+      "unit": "line",
+      "zh": "你们好！",
+      "occurrence": 1,
+      "unique": false,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 8.639999999999997,
+      "rawEnd": 9.62,
+      "minimumProbability": 0.9494560956954956,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 7.56,
+        "end": 7.96,
+        "word": "奶",
+        "probability": 0.9990676045417786
+      },
+      "nextRawWord": {
+        "start": 10.439999999999998,
+        "end": 11.0,
+        "word": "爸",
+        "probability": 0.83343106508255
+      },
+      "riskFlags": [
+        "not-unique-or-blocked"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "targetId": "hsk2-fltrp-2026:l05:text2:line2",
+      "unit": "line",
+      "zh": "你们好！",
+      "occurrence": 2,
+      "unique": false,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 21.0,
+      "rawEnd": 21.76,
+      "minimumProbability": 0.7951016426086426,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 20.2,
+        "end": 20.46,
+        "word": "妮",
+        "probability": 0.9998140037059784
+      },
+      "nextRawWord": {
+        "start": 22.72,
+        "end": 23.28,
+        "word": "这是",
+        "probability": 0.990307092666626
+      },
+      "riskFlags": [
+        "not-unique-or-blocked",
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "targetId": "hsk2-fltrp-2026:l05:text2:line5",
+      "unit": "line",
+      "zh": "这是送你们的礼物。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 22.72,
+      "rawEnd": 24.58,
+      "minimumProbability": 0.990307092666626,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 21.36,
+        "end": 21.76,
+        "word": "好",
+        "probability": 0.9997565150260925
+      },
+      "nextRawWord": {
+        "start": 25.179999999999996,
+        "end": 25.74,
+        "word": "你们",
+        "probability": 0.9958890080451965
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "targetId": "hsk2-fltrp-2026:l05:text2:line6",
+      "unit": "line",
+      "zh": "你们太客气了，还拿这么多礼物来！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 25.179999999999996,
+      "rawEnd": 28.76,
+      "minimumProbability": 0.9396462440490723,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 24.28,
+        "end": 24.58,
+        "word": "物",
+        "probability": 0.9994128942489624
+      },
+      "nextRawWord": {
+        "start": 29.740000000000002,
+        "end": 30.26,
+        "word": "医",
+        "probability": 0.5643798336386681
+      },
+      "riskFlags": [
+        "cross-ASR-segment-needs-context"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "targetId": "hsk2-fltrp-2026:l05:text2:line8",
+      "unit": "line",
+      "zh": "谢谢！你们别客气，快坐吧！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 34.580000000000005,
+      "rawEnd": 38.06,
+      "minimumProbability": 0.9161765575408936,
+      "maxInternalGap": 0.7999999999999972,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 33.1,
+        "end": 33.54,
+        "word": "物。",
+        "probability": 0.9994471669197083
+      },
+      "nextRawWord": null,
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "targetId": "hsk2-fltrp-2026:l05:text2:line8:sentence1",
+      "unit": "sentence",
+      "zh": "谢谢！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 34.580000000000005,
+      "rawEnd": 35.1,
+      "minimumProbability": 0.9776061773300171,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 33.1,
+        "end": 33.54,
+        "word": "物。",
+        "probability": 0.9994471669197083
+      },
+      "nextRawWord": {
+        "start": 35.9,
+        "end": 36.08,
+        "word": "你们",
+        "probability": 0.9716098308563232
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "targetId": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "unit": "sentence",
+      "zh": "你们别客气，快坐吧！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 35.9,
+      "rawEnd": 38.06,
+      "minimumProbability": 0.9161765575408936,
+      "maxInternalGap": 0.46000000000000085,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 34.580000000000005,
+        "end": 35.1,
+        "word": "谢谢,",
+        "probability": 0.9776061773300171
+      },
+      "nextRawWord": null,
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio4",
+      "targetId": "hsk2-fltrp-2026:l05:word11",
+      "unit": "word",
+      "zh": "进来",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 1.4,
+      "minimumProbability": 0.6612902283668518,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 3.22,
+        "end": 3.9,
+        "word": "爷",
+        "probability": 0.9728677868843079
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio4",
+      "targetId": "hsk2-fltrp-2026:l05:word12",
+      "unit": "word",
+      "zh": "爷爷",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 3.22,
+      "rawEnd": 4.64,
+      "minimumProbability": 0.9728677868843079,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 0.88,
+        "end": 1.4,
+        "word": "来,",
+        "probability": 0.9884424805641174
+      },
+      "nextRawWord": {
+        "start": 5.9,
+        "end": 6.48,
+        "word": "奶",
+        "probability": 0.997431218624115
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio4",
+      "targetId": "hsk2-fltrp-2026:l05:word13",
+      "unit": "word",
+      "zh": "奶奶",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 5.9,
+      "rawEnd": 8.18,
+      "minimumProbability": 0.9966092109680176,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 3.9,
+        "end": 4.64,
+        "word": "爷,",
+        "probability": 0.9961973428726196
+      },
+      "nextRawWord": {
+        "start": 8.54,
+        "end": 9.0,
+        "word": "礼",
+        "probability": 0.9848154485225677
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio4",
+      "targetId": "hsk2-fltrp-2026:l05:word14",
+      "unit": "word",
+      "zh": "礼物",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 8.54,
+      "rawEnd": 10.8,
+      "minimumProbability": 0.9848154485225677,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 6.48,
+        "end": 8.18,
+        "word": "奶,",
+        "probability": 0.9966092109680176
+      },
+      "nextRawWord": {
+        "start": 11.36,
+        "end": 12.14,
+        "word": "准",
+        "probability": 0.6846887469291687
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio4",
+      "targetId": "hsk2-fltrp-2026:l05:word15",
+      "unit": "word",
+      "zh": "准备",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 11.36,
+      "rawEnd": 12.6,
+      "minimumProbability": 0.6846887469291687,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 9.0,
+        "end": 10.8,
+        "word": "物",
+        "probability": 0.9983174800872803
+      },
+      "nextRawWord": null,
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "targetId": "hsk2-fltrp-2026:l05:text3:line1",
+      "unit": "line",
+      "zh": "都12点了，我们吃饭吧。",
+      "occurrence": 1,
+      "unique": false,
+      "status": "blocked-source-has-non-CJK-letters-or-digits",
+      "rawStart": 0.0,
+      "rawEnd": 3.22,
+      "minimumProbability": 0.34976473450660706,
+      "maxInternalGap": 0.38,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 4.14,
+        "end": 4.7,
+        "word": "这么",
+        "probability": 0.9552581310272217
+      },
+      "riskFlags": [
+        "not-unique-or-blocked",
+        "min-probability-below-0.8-triage-only",
+        "start-at-track-origin-not-acoustic-onset",
+        "ignored-non-CJK-lexical-token"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "targetId": "hsk2-fltrp-2026:l05:text3:line2",
+      "unit": "line",
+      "zh": "这么多好吃的，您太客气了！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 4.14,
+      "rawEnd": 7.08,
+      "minimumProbability": 0.9165928959846497,
+      "maxInternalGap": 0.40000000000000036,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 2.94,
+        "end": 3.22,
+        "word": "吧。",
+        "probability": 0.9927281141281128
+      },
+      "nextRawWord": {
+        "start": 8.18,
+        "end": 8.54,
+        "word": "都是",
+        "probability": 0.9687625765800476
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "targetId": "hsk2-fltrp-2026:l05:text3:line4",
+      "unit": "line",
+      "zh": "奶茶也很好喝，是您自己做的吗？",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 12.74,
+      "rawEnd": 16.4,
+      "minimumProbability": 0.9072265625,
+      "maxInternalGap": 0.5999999999999996,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 11.22,
+        "end": 11.44,
+        "word": "点。",
+        "probability": 0.9968744516372681
+      },
+      "nextRawWord": {
+        "start": 17.700000000000003,
+        "end": 18.26,
+        "word": "不是,",
+        "probability": 0.9761807322502136
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "targetId": "hsk2-fltrp-2026:l05:text3:line5",
+      "unit": "line",
+      "zh": "不是，奶茶是爷爷买的。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 17.700000000000003,
+      "rawEnd": 20.36,
+      "minimumProbability": 0.9761807322502136,
+      "maxInternalGap": 0.6199999999999974,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 16.2,
+        "end": 16.4,
+        "word": "吗?",
+        "probability": 0.9072265625
+      },
+      "nextRawWord": {
+        "start": 22.4,
+        "end": 22.86,
+        "word": "在",
+        "probability": 0.9912915229797363
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "targetId": "hsk2-fltrp-2026:l05:text3:line6",
+      "unit": "line",
+      "zh": "在哪儿买的？我还没喝过这么好喝的奶茶。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 22.4,
+      "rawEnd": 26.42,
+      "minimumProbability": 0.4100522994995117,
+      "maxInternalGap": 0.5999999999999979,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 20.12,
+        "end": 20.36,
+        "word": "的。",
+        "probability": 0.9986749291419983
+      },
+      "nextRawWord": {
+        "start": 28.080000000000002,
+        "end": 28.64,
+        "word": "就",
+        "probability": 0.8749048709869385
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "targetId": "hsk2-fltrp-2026:l05:text3:line6:sentence1",
+      "unit": "sentence",
+      "zh": "在哪儿买的？",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 22.4,
+      "rawEnd": 23.6,
+      "minimumProbability": 0.4100522994995117,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 20.12,
+        "end": 20.36,
+        "word": "的。",
+        "probability": 0.9986749291419983
+      },
+      "nextRawWord": {
+        "start": 24.2,
+        "end": 24.48,
+        "word": "我",
+        "probability": 0.980757474899292
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "targetId": "hsk2-fltrp-2026:l05:text3:line6:sentence2",
+      "unit": "sentence",
+      "zh": "我还没喝过这么好喝的奶茶。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 24.2,
+      "rawEnd": 26.42,
+      "minimumProbability": 0.9253048896789551,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 23.34,
+        "end": 23.6,
+        "word": "的?",
+        "probability": 0.9961869120597839
+      },
+      "nextRawWord": {
+        "start": 28.080000000000002,
+        "end": 28.64,
+        "word": "就",
+        "probability": 0.8749048709869385
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "targetId": "hsk2-fltrp-2026:l05:text3:line7",
+      "unit": "line",
+      "zh": "就在前边的商场，吃完饭你们可以跟我去看看。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 28.080000000000002,
+      "rawEnd": 32.74,
+      "minimumProbability": 0.2612890303134918,
+      "maxInternalGap": 0.3999999999999986,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 26.14,
+        "end": 26.42,
+        "word": "茶。",
+        "probability": 0.999600350856781
+      },
+      "nextRawWord": null,
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio6",
+      "targetId": "hsk2-fltrp-2026:l05:word16",
+      "unit": "word",
+      "zh": "奶茶",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 2.66,
+      "minimumProbability": 0.8869572281837463,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 2.66,
+        "end": 3.66,
+        "word": "根",
+        "probability": 0.14551879465579987
+      },
+      "riskFlags": [
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio8",
+      "targetId": "hsk2-fltrp-2026:l05:word19",
+      "unit": "word",
+      "zh": "走",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 1.08,
+      "minimumProbability": 0.9162423014640808,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 1.34,
+        "end": 3.12,
+        "word": " 酒",
+        "probability": 0.9596812129020691
+      },
+      "riskFlags": [
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l05:audio8",
+      "targetId": "hsk2-fltrp-2026:l05:word20",
+      "unit": "word",
+      "zh": "酒店",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 1.34,
+      "rawEnd": 3.72,
+      "minimumProbability": 0.9596812129020691,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 0.0,
+        "end": 1.08,
+        "word": "走",
+        "probability": 0.9162423014640808
+      },
+      "nextRawWord": null,
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "targetId": "hsk2-fltrp-2026:l06:text1:line1",
+      "unit": "line",
+      "zh": "明天就是女儿的生日了。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 2.48,
+      "minimumProbability": 0.4580957889556885,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 4.22,
+        "end": 4.7,
+        "word": "你",
+        "probability": 0.7782014608383179
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "targetId": "hsk2-fltrp-2026:l06:text1:line2",
+      "unit": "line",
+      "zh": "你不说，我还真忘了。我们给她准备个什么礼物呢？",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 4.22,
+      "rawEnd": 9.36,
+      "minimumProbability": 0.7281635999679565,
+      "maxInternalGap": 0.7599999999999998,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 2.24,
+        "end": 2.48,
+        "word": "了。",
+        "probability": 0.9747884273529053
+      },
+      "nextRawWord": {
+        "start": 10.82,
+        "end": 11.06,
+        "word": "她",
+        "probability": 0.967173159122467
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "cross-ASR-segment-needs-context"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "targetId": "hsk2-fltrp-2026:l06:text1:line2:sentence1",
+      "unit": "sentence",
+      "zh": "你不说，我还真忘了。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 4.22,
+      "rawEnd": 6.4,
+      "minimumProbability": 0.7782014608383179,
+      "maxInternalGap": 0.3600000000000003,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 2.24,
+        "end": 2.48,
+        "word": "了。",
+        "probability": 0.9747884273529053
+      },
+      "nextRawWord": {
+        "start": 7.16,
+        "end": 7.34,
+        "word": "我们",
+        "probability": 0.9712953567504883
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "targetId": "hsk2-fltrp-2026:l06:text1:line2:sentence2",
+      "unit": "sentence",
+      "zh": "我们给她准备个什么礼物呢？",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 7.16,
+      "rawEnd": 9.36,
+      "minimumProbability": 0.7281635999679565,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 6.12,
+        "end": 6.4,
+        "word": "了。",
+        "probability": 0.997162401676178
+      },
+      "nextRawWord": {
+        "start": 10.82,
+        "end": 11.06,
+        "word": "她",
+        "probability": 0.967173159122467
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "targetId": "hsk2-fltrp-2026:l06:text1:line3",
+      "unit": "line",
+      "zh": "她喜欢画画，你觉得画笔怎么样？",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 10.82,
+      "rawEnd": 14.28,
+      "minimumProbability": 0.967173159122467,
+      "maxInternalGap": 0.8399999999999999,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 9.18,
+        "end": 9.36,
+        "word": "呢?",
+        "probability": 0.9357191324234009
+      },
+      "nextRawWord": {
+        "start": 15.96,
+        "end": 16.2,
+        "word": "就",
+        "probability": 0.9931191205978394
+      },
+      "riskFlags": [
+        "cross-ASR-segment-needs-context"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "targetId": "hsk2-fltrp-2026:l06:text1:line4",
+      "unit": "line",
+      "zh": "就送画笔吧！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 15.96,
+      "rawEnd": 17.06,
+      "minimumProbability": 0.3192944824695587,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 13.88,
+        "end": 14.28,
+        "word": "怎么样?",
+        "probability": 0.984969973564148
+      },
+      "nextRawWord": {
+        "start": 18.28,
+        "end": 18.56,
+        "word": "那",
+        "probability": 0.9875229001045227
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "targetId": "hsk2-fltrp-2026:l06:text1:line5",
+      "unit": "line",
+      "zh": "那我明天上午就去买。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 18.28,
+      "rawEnd": 20.06,
+      "minimumProbability": 0.9755723476409912,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 16.8,
+        "end": 17.06,
+        "word": "吧。",
+        "probability": 0.9833632707595825
+      },
+      "nextRawWord": {
+        "start": 21.299999999999997,
+        "end": 21.78,
+        "word": "好的,",
+        "probability": 0.9566639065742493
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "targetId": "hsk2-fltrp-2026:l06:text1:line6",
+      "unit": "line",
+      "zh": "好的！我再给她买个大大的生日蛋糕。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 21.299999999999997,
+      "rawEnd": 25.64,
+      "minimumProbability": 0.9373658895492554,
+      "maxInternalGap": 0.9199999999999982,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 19.86,
+        "end": 20.06,
+        "word": "买。",
+        "probability": 0.9980796575546265
+      },
+      "nextRawWord": null,
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "targetId": "hsk2-fltrp-2026:l06:text1:line6:sentence1",
+      "unit": "sentence",
+      "zh": "好的！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 21.299999999999997,
+      "rawEnd": 21.78,
+      "minimumProbability": 0.9566639065742493,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 19.86,
+        "end": 20.06,
+        "word": "买。",
+        "probability": 0.9980796575546265
+      },
+      "nextRawWord": {
+        "start": 22.7,
+        "end": 22.84,
+        "word": "我",
+        "probability": 0.9373658895492554
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "targetId": "hsk2-fltrp-2026:l06:text1:line6:sentence2",
+      "unit": "sentence",
+      "zh": "我再给她买个大大的生日蛋糕。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 22.7,
+      "rawEnd": 25.64,
+      "minimumProbability": 0.9373658895492554,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 21.299999999999997,
+        "end": 21.78,
+        "word": "好的,",
+        "probability": 0.9566639065742493
+      },
+      "nextRawWord": null,
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio2",
+      "targetId": "hsk2-fltrp-2026:l06:word01",
+      "unit": "word",
+      "zh": "生日",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 3.1,
+      "minimumProbability": 0.9727411866188049,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 3.1,
+        "end": 4.3,
+        "word": "望",
+        "probability": 0.1578025221824646
+      },
+      "riskFlags": [
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio2",
+      "targetId": "hsk2-fltrp-2026:l06:word03",
+      "unit": "word",
+      "zh": "画",
+      "occurrence": 1,
+      "unique": false,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 5.8999999999999995,
+      "rawEnd": 6.6,
+      "minimumProbability": 0.420589804649353,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 3.1,
+        "end": 4.3,
+        "word": "望",
+        "probability": 0.1578025221824646
+      },
+      "nextRawWord": {
+        "start": 6.6,
+        "end": 7.56,
+        "word": "画",
+        "probability": 0.7933169603347778
+      },
+      "riskFlags": [
+        "not-unique-or-blocked",
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio2",
+      "targetId": "hsk2-fltrp-2026:l06:word03",
+      "unit": "word",
+      "zh": "画",
+      "occurrence": 2,
+      "unique": false,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 6.6,
+      "rawEnd": 7.56,
+      "minimumProbability": 0.7933169603347778,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 5.8999999999999995,
+        "end": 6.6,
+        "word": "画",
+        "probability": 0.420589804649353
+      },
+      "nextRawWord": {
+        "start": 7.56,
+        "end": 9.7,
+        "word": "笔",
+        "probability": 0.8488166928291321
+      },
+      "riskFlags": [
+        "not-unique-or-blocked",
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio2",
+      "targetId": "hsk2-fltrp-2026:l06:word04",
+      "unit": "word",
+      "zh": "画",
+      "occurrence": 1,
+      "unique": false,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 5.8999999999999995,
+      "rawEnd": 6.6,
+      "minimumProbability": 0.420589804649353,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 3.1,
+        "end": 4.3,
+        "word": "望",
+        "probability": 0.1578025221824646
+      },
+      "nextRawWord": {
+        "start": 6.6,
+        "end": 7.56,
+        "word": "画",
+        "probability": 0.7933169603347778
+      },
+      "riskFlags": [
+        "not-unique-or-blocked",
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio2",
+      "targetId": "hsk2-fltrp-2026:l06:word04",
+      "unit": "word",
+      "zh": "画",
+      "occurrence": 2,
+      "unique": false,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 6.6,
+      "rawEnd": 7.56,
+      "minimumProbability": 0.7933169603347778,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 5.8999999999999995,
+        "end": 6.6,
+        "word": "画",
+        "probability": 0.420589804649353
+      },
+      "nextRawWord": {
+        "start": 7.56,
+        "end": 9.7,
+        "word": "笔",
+        "probability": 0.8488166928291321
+      },
+      "riskFlags": [
+        "not-unique-or-blocked",
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio2",
+      "targetId": "hsk2-fltrp-2026:l06:word05",
+      "unit": "word",
+      "zh": "画笔",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 6.6,
+      "rawEnd": 9.7,
+      "minimumProbability": 0.7933169603347778,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 5.8999999999999995,
+        "end": 6.6,
+        "word": "画",
+        "probability": 0.420589804649353
+      },
+      "nextRawWord": {
+        "start": 10.92,
+        "end": 11.62,
+        "word": "蛋",
+        "probability": 0.8828088045120239
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio2",
+      "targetId": "hsk2-fltrp-2026:l06:word06",
+      "unit": "word",
+      "zh": "蛋糕",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 10.92,
+      "rawEnd": 12.18,
+      "minimumProbability": 0.8828088045120239,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 7.56,
+        "end": 9.7,
+        "word": "笔",
+        "probability": 0.8488166928291321
+      },
+      "nextRawWord": null,
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "targetId": "hsk2-fltrp-2026:l06:text2:line1",
+      "unit": "line",
+      "zh": "小雪，生日快乐！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 2.42,
+      "minimumProbability": 0.16436730325222015,
+      "maxInternalGap": 0.48,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 3.320000000000002,
+        "end": 3.92,
+        "word": "姐",
+        "probability": 0.4576334059238434
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "targetId": "hsk2-fltrp-2026:l06:text2:line2",
+      "unit": "line",
+      "zh": "姐姐，生日快乐！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 3.320000000000002,
+      "rawEnd": 5.1,
+      "minimumProbability": 0.4576334059238434,
+      "maxInternalGap": 0.20000000000000018,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 2.18,
+        "end": 2.42,
+        "word": "乐。",
+        "probability": 0.3336727023124695
+      },
+      "nextRawWord": {
+        "start": 6.12,
+        "end": 6.52,
+        "word": "小",
+        "probability": 0.9796367287635803
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "targetId": "hsk2-fltrp-2026:l06:text2:line3",
+      "unit": "line",
+      "zh": "小雪，这是爸爸、妈妈送你的礼物。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 6.12,
+      "rawEnd": 10.1,
+      "minimumProbability": 0.9478435516357422,
+      "maxInternalGap": 0.6400000000000006,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 4.88,
+        "end": 5.1,
+        "word": "乐。",
+        "probability": 0.9861375689506531
+      },
+      "nextRawWord": {
+        "start": 11.2,
+        "end": 11.46,
+        "word": "你",
+        "probability": 0.9554832577705383
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "targetId": "hsk2-fltrp-2026:l06:text2:line4",
+      "unit": "line",
+      "zh": "你打开看看喜欢不喜欢。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 11.2,
+      "rawEnd": 13.56,
+      "minimumProbability": 0.9216896295547485,
+      "maxInternalGap": 0.4800000000000004,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 9.84,
+        "end": 10.1,
+        "word": "物。",
+        "probability": 0.9996028542518616
+      },
+      "nextRawWord": {
+        "start": 14.82,
+        "end": 15.12,
+        "word": "画",
+        "probability": 0.8928698897361755
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "targetId": "hsk2-fltrp-2026:l06:text2:line5",
+      "unit": "line",
+      "zh": "画笔！我很喜欢！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 14.82,
+      "rawEnd": 16.96,
+      "minimumProbability": 0.8928698897361755,
+      "maxInternalGap": 0.620000000000001,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 13.22,
+        "end": 13.56,
+        "word": "喜欢。",
+        "probability": 0.9990505576133728
+      },
+      "nextRawWord": {
+        "start": 18.04,
+        "end": 18.34,
+        "word": "那",
+        "probability": 0.967645525932312
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "targetId": "hsk2-fltrp-2026:l06:text2:line5:sentence1",
+      "unit": "sentence",
+      "zh": "画笔！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 14.82,
+      "rawEnd": 15.34,
+      "minimumProbability": 0.8928698897361755,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 13.22,
+        "end": 13.56,
+        "word": "喜欢。",
+        "probability": 0.9990505576133728
+      },
+      "nextRawWord": {
+        "start": 15.96,
+        "end": 16.28,
+        "word": "我很",
+        "probability": 0.947799026966095
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "targetId": "hsk2-fltrp-2026:l06:text2:line5:sentence2",
+      "unit": "sentence",
+      "zh": "我很喜欢！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 15.96,
+      "rawEnd": 16.96,
+      "minimumProbability": 0.947799026966095,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 15.12,
+        "end": 15.34,
+        "word": "笔,",
+        "probability": 0.9825260043144226
+      },
+      "nextRawWord": {
+        "start": 18.04,
+        "end": 18.34,
+        "word": "那",
+        "probability": 0.967645525932312
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "targetId": "hsk2-fltrp-2026:l06:text2:line7",
+      "unit": "line",
+      "zh": "画我们的家！有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 20.32,
+      "rawEnd": 28.36,
+      "minimumProbability": 0.9600443243980408,
+      "maxInternalGap": 0.7000000000000028,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 19.16,
+        "end": 19.46,
+        "word": "什么?",
+        "probability": 0.9544135332107544
+      },
+      "nextRawWord": {
+        "start": 29.04,
+        "end": 29.46,
+        "word": "那",
+        "probability": 0.7322943210601807
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "targetId": "hsk2-fltrp-2026:l06:text2:line7:sentence1",
+      "unit": "sentence",
+      "zh": "画我们的家！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 20.32,
+      "rawEnd": 21.4,
+      "minimumProbability": 0.9632152318954468,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 19.16,
+        "end": 19.46,
+        "word": "什么?",
+        "probability": 0.9544135332107544
+      },
+      "nextRawWord": {
+        "start": 22.1,
+        "end": 22.28,
+        "word": "有",
+        "probability": 0.9713655710220337
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "targetId": "hsk2-fltrp-2026:l06:text2:line7:sentence2",
+      "unit": "sentence",
+      "zh": "有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 22.1,
+      "rawEnd": 28.36,
+      "minimumProbability": 0.9600443243980408,
+      "maxInternalGap": 0.5999999999999979,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 21.14,
+        "end": 21.4,
+        "word": "家,",
+        "probability": 0.9990366697311401
+      },
+      "nextRawWord": {
+        "start": 29.04,
+        "end": 29.46,
+        "word": "那",
+        "probability": 0.7322943210601807
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio3",
+      "targetId": "hsk2-fltrp-2026:l06:text2:line8",
+      "unit": "line",
+      "zh": "那我要画一个穿白色衣服的姐姐。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 29.04,
+      "rawEnd": 31.62,
+      "minimumProbability": 0.7322943210601807,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 28.1,
+        "end": 28.36,
+        "word": "的。",
+        "probability": 0.998874843120575
+      },
+      "nextRawWord": null,
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio5",
+      "targetId": "hsk2-fltrp-2026:l06:text3:line1",
+      "unit": "line",
+      "zh": "小雪，看看今天有什么好吃的。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 4.06,
+      "minimumProbability": 0.7127190828323364,
+      "maxInternalGap": 0.7799999999999999,
+      "minInternalGap": 0.0,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 4.900000000000001,
+        "end": 5.44,
+        "word": "长",
+        "probability": 0.571992039680481
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio5",
+      "targetId": "hsk2-fltrp-2026:l06:text3:line3",
+      "unit": "line",
+      "zh": "你看，还有鱼啊肉啊什么的，都是你喜欢吃的。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 8.48,
+      "rawEnd": 13.88,
+      "minimumProbability": 0.39802923798561096,
+      "maxInternalGap": 0.8199999999999985,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 7.6,
+        "end": 7.88,
+        "word": "糕。",
+        "probability": 0.9994828104972839
+      },
+      "nextRawWord": {
+        "start": 14.36,
+        "end": 14.72,
+        "word": "谢谢",
+        "probability": 0.9879492521286011
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio5",
+      "targetId": "hsk2-fltrp-2026:l06:text3:line4",
+      "unit": "line",
+      "zh": "谢谢爸爸、妈妈！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 14.36,
+      "rawEnd": 16.04,
+      "minimumProbability": 0.9717385768890381,
+      "maxInternalGap": 0.47999999999999865,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 13.66,
+        "end": 13.88,
+        "word": "的。",
+        "probability": 0.9989713430404663
+      },
+      "nextRawWord": {
+        "start": 17.04,
+        "end": 17.38,
+        "word": "快",
+        "probability": 0.9829147458076477
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio5",
+      "targetId": "hsk2-fltrp-2026:l06:text3:line5",
+      "unit": "line",
+      "zh": "快去叫弟弟过来吃饭吧，吃完饭我们还要出去玩呢。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 17.04,
+      "rawEnd": 22.06,
+      "minimumProbability": 0.8929229974746704,
+      "maxInternalGap": 0.6999999999999993,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 15.8,
+        "end": 16.04,
+        "word": "妈。",
+        "probability": 0.9985561966896057
+      },
+      "nextRawWord": {
+        "start": 23.26,
+        "end": 23.46,
+        "word": "过",
+        "probability": 0.9908509850502014
+      },
+      "riskFlags": [
+        "cross-ASR-segment-needs-context"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio5",
+      "targetId": "hsk2-fltrp-2026:l06:text3:line6",
+      "unit": "line",
+      "zh": "过生日真好啊！",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 23.26,
+      "rawEnd": 24.66,
+      "minimumProbability": 0.977202832698822,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 21.82,
+        "end": 22.06,
+        "word": "呢。",
+        "probability": 0.8929229974746704
+      },
+      "nextRawWord": {
+        "start": 25.48,
+        "end": 26.02,
+        "word": "是的,",
+        "probability": 0.9521429538726807
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio6",
+      "targetId": "hsk2-fltrp-2026:l06:word09",
+      "unit": "word",
+      "zh": "长",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 1.04,
+      "minimumProbability": 0.25805166363716125,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 3.0,
+        "end": 3.86,
+        "word": "鱼",
+        "probability": 0.6986282989382744
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only",
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio6",
+      "targetId": "hsk2-fltrp-2026:l06:word10",
+      "unit": "word",
+      "zh": "鱼",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 3.0,
+      "rawEnd": 3.86,
+      "minimumProbability": 0.6986282989382744,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 0.0,
+        "end": 1.04,
+        "word": "长",
+        "probability": 0.25805166363716125
+      },
+      "nextRawWord": {
+        "start": 5.0,
+        "end": 5.76,
+        "word": "肉",
+        "probability": 0.6590768694877625
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio6",
+      "targetId": "hsk2-fltrp-2026:l06:word11",
+      "unit": "word",
+      "zh": "肉",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 5.0,
+      "rawEnd": 5.76,
+      "minimumProbability": 0.6590768694877625,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 3.0,
+        "end": 3.86,
+        "word": "鱼",
+        "probability": 0.6986282989382744
+      },
+      "nextRawWord": {
+        "start": 7.0,
+        "end": 7.9,
+        "word": "过",
+        "probability": 0.9643494486808777
+      },
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio6",
+      "targetId": "hsk2-fltrp-2026:l06:word12",
+      "unit": "word",
+      "zh": "过",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 7.0,
+      "rawEnd": 7.9,
+      "minimumProbability": 0.9643494486808777,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": {
+        "start": 5.0,
+        "end": 5.76,
+        "word": "肉",
+        "probability": 0.6590768694877625
+      },
+      "nextRawWord": {
+        "start": 9.860000000000001,
+        "end": 10.56,
+        "word": "登",
+        "probability": 0.03667519986629486
+      },
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio7",
+      "targetId": "hsk2-fltrp-2026:l06:text4:line1:sentence6",
+      "unit": "sentence",
+      "zh": "这是很忙、很累，但很快乐的一天。",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 26.26,
+      "rawEnd": 30.32,
+      "minimumProbability": 0.4006618559360504,
+      "maxInternalGap": 0.5,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 24.96,
+        "end": 25.28,
+        "word": "床",
+        "probability": 0.9998664557933807
+      },
+      "nextRawWord": null,
+      "riskFlags": [
+        "min-probability-below-0.8-triage-only"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio8",
+      "targetId": "hsk2-fltrp-2026:l06:word14",
+      "unit": "word",
+      "zh": "床",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 0.0,
+      "rawEnd": 1.42,
+      "minimumProbability": 0.9436682760715485,
+      "maxInternalGap": null,
+      "minInternalGap": null,
+      "previousRawWord": null,
+      "nextRawWord": {
+        "start": 1.42,
+        "end": 3.24,
+        "word": " 舒",
+        "probability": 0.90348219871521
+      },
+      "riskFlags": [
+        "start-at-track-origin-not-acoustic-onset"
+      ],
+      "acousticApproved": false,
+      "productionApproved": false
+    },
+    {
+      "trackId": "hsk2-fltrp-2026:l06:audio8",
+      "targetId": "hsk2-fltrp-2026:l06:word15",
+      "unit": "word",
+      "zh": "舒服",
+      "occurrence": 1,
+      "unique": true,
+      "status": "unreviewed-exact-ASR-candidate",
+      "rawStart": 1.42,
+      "rawEnd": 3.76,
+      "minimumProbability": 0.90348219871521,
+      "maxInternalGap": 0.0,
+      "minInternalGap": 0.0,
+      "previousRawWord": {
+        "start": 0.0,
+        "end": 1.42,
+        "word": "床",
+        "probability": 0.9436682760715485
+      },
+      "nextRawWord": null,
+      "riskFlags": [],
+      "acousticApproved": false,
+      "productionApproved": false
+    }
+  ],
+  "counterexamples": [
+    {
+      "name": "ignored-lexical-token",
+      "inputWords": [
+        {
+          "word": "妈妈",
+          "start": 0,
+          "end": 1,
+          "probability": 0.99
+        },
+        {
+          "word": "NO",
+          "start": 1,
+          "end": 2,
+          "probability": 0.99
+        },
+        {
+          "word": "你好",
+          "start": 2,
+          "end": 3,
+          "probability": 0.99
+        }
+      ],
+      "target": "妈妈你好",
+      "result": {
+        "zh": "妈妈你好",
+        "sourceHasNonCJKLettersOrDigits": false,
+        "exactOccurrences": [
+          {
+            "observedCJKRange": [
+              0,
+              4
+            ],
+            "fullASRWordEndpoints": true,
+            "positiveOrderedWordTimes": true,
+            "rawWordReferences": [
+              {
+                "segment": 0,
+                "word": 0
+              },
+              {
+                "segment": 0,
+                "word": 2
+              }
+            ],
+            "rawStart": 0,
+            "rawEnd": 3,
+            "minimumRawProbability": 0.99,
+            "status": "unreviewed-exact-ASR-candidate",
+            "acousticBoundaryApproved": false,
+            "productionApproved": false
+          }
+        ],
+        "uniqueWholeWordOccurrence": true,
+        "status": "ASR-exact-observations-awaiting-review"
+      }
+    },
+    {
+      "name": "long-internal-gap",
+      "inputWords": [
+        {
+          "word": "妈妈",
+          "start": 0,
+          "end": 1,
+          "probability": 0.99
+        },
+        {
+          "word": "你好",
+          "start": 11,
+          "end": 12,
+          "probability": 0.99
+        }
+      ],
+      "target": "妈妈你好",
+      "result": {
+        "zh": "妈妈你好",
+        "sourceHasNonCJKLettersOrDigits": false,
+        "exactOccurrences": [
+          {
+            "observedCJKRange": [
+              0,
+              4
+            ],
+            "fullASRWordEndpoints": true,
+            "positiveOrderedWordTimes": true,
+            "rawWordReferences": [
+              {
+                "segment": 0,
+                "word": 0
+              },
+              {
+                "segment": 0,
+                "word": 1
+              }
+            ],
+            "rawStart": 0,
+            "rawEnd": 12,
+            "minimumRawProbability": 0.99,
+            "status": "unreviewed-exact-ASR-candidate",
+            "acousticBoundaryApproved": false,
+            "productionApproved": false
+          }
+        ],
+        "uniqueWholeWordOccurrence": true,
+        "status": "ASR-exact-observations-awaiting-review"
+      }
+    },
+    {
+      "name": "overlapping-word-times",
+      "inputWords": [
+        {
+          "word": "妈妈",
+          "start": 0,
+          "end": 2,
+          "probability": 0.99
+        },
+        {
+          "word": "你好",
+          "start": 1,
+          "end": 3,
+          "probability": 0.99
+        }
+      ],
+      "target": "妈妈你好",
+      "result": {
+        "zh": "妈妈你好",
+        "sourceHasNonCJKLettersOrDigits": false,
+        "exactOccurrences": [
+          {
+            "observedCJKRange": [
+              0,
+              4
+            ],
+            "fullASRWordEndpoints": true,
+            "positiveOrderedWordTimes": true,
+            "rawWordReferences": [
+              {
+                "segment": 0,
+                "word": 0
+              },
+              {
+                "segment": 0,
+                "word": 1
+              }
+            ],
+            "rawStart": 0,
+            "rawEnd": 3,
+            "minimumRawProbability": 0.99,
+            "status": "unreviewed-exact-ASR-candidate",
+            "acousticBoundaryApproved": false,
+            "productionApproved": false
+          }
+        ],
+        "uniqueWholeWordOccurrence": true,
+        "status": "ASR-exact-observations-awaiting-review"
+      }
+    },
+    {
+      "name": "low-probability",
+      "inputWords": [
+        {
+          "word": "妈妈",
+          "start": 0,
+          "end": 1,
+          "probability": 0.01
+        }
+      ],
+      "target": "妈妈",
+      "result": {
+        "zh": "妈妈",
+        "sourceHasNonCJKLettersOrDigits": false,
+        "exactOccurrences": [
+          {
+            "observedCJKRange": [
+              0,
+              2
+            ],
+            "fullASRWordEndpoints": true,
+            "positiveOrderedWordTimes": true,
+            "rawWordReferences": [
+              {
+                "segment": 0,
+                "word": 0
+              }
+            ],
+            "rawStart": 0,
+            "rawEnd": 1,
+            "minimumRawProbability": 0.01,
+            "status": "unreviewed-exact-ASR-candidate",
+            "acousticBoundaryApproved": false,
+            "productionApproved": false
+          }
+        ],
+        "uniqueWholeWordOccurrence": true,
+        "status": "ASR-exact-observations-awaiting-review"
+      }
+    }
+  ],
+  "humanListening": false,
+  "productionApprovedClipCount": 0
+}

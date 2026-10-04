@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "status": "proposed-contract-not-active-manifest",
+  "runtimeAdapters": [
+    "hsk1-app/src/services/content/official-vi-revisions.ts",
+    "course-app/src/official-vi-revisions.ts"
+  ],
+  "manifestRequiredFields": [
+    "schemaVersion",
+    "revisionId",
+    "engine",
+    "courseId",
+    "baselineFiles",
+    "parentDisplayRevision",
+    "sources",
+    "changes",
+    "independentReview",
+    "coverage"
+  ],
+  "changeRequiredFields": [
+    "ownerId",
+    "component",
+    "lesson",
+    "field",
+    "expectedEffectiveValue",
+    "newValue",
+    "sourceAnchor",
+    "classification",
+    "consumers",
+    "authorReview",
+    "independentReview"
+  ],
+  "sourceIdentityFields": [
+    "sourceRevision",
+    "pdfSHA256",
+    "printedPages",
+    "pdfPages",
+    "section",
+    "ordinalOrSemanticAnchor"
+  ],
+  "classificationValues": [
+    "match",
+    "official-wording-variant",
+    "meaning-error",
+    "official-book-erratum",
+    "editorial-no-direct-book-counterpart",
+    "unresolved-source"
+  ],
+  "arrays": "Owner must bind original source index plus stable parent/Chinese/source anchor. Display shuffled index is forbidden.",
+  "runtimeAcceptedChanges": "Only independently accepted modifications; match items retained in review coverage. No active registry for pending/unresolved changes.",
+  "sealedFields": [
+    "id",
+    "senseId",
+    "catalogId",
+    "questionFingerprint",
+    "fingerprint",
+    "answer",
+    "answers",
+    "optionOrder",
+    "tokenOrder",
+    "assessment",
+    "audioTrack",
+    "audioRange",
+    "sourceSHA",
+    "zh",
+    "py",
+    "pos"
+  ],
+  "guards": [
+    "exact engine/course/lesson baseline SHA",
+    "known owner and registered VI field whitelist",
+    "effective parent display expected value exact",
+    "unique owner/field/original-index target",
+    "complete declared source identity and actual review input SHA/accepted ID set",
+    "all independently declared consumer bindings exact",
+    "bounds and original index identity",
+    "no displayed option ambiguity or changed grading semantics",
+    "validate entire batch before any projection",
+    "active asset missing/corrupt rejects module load",
+    "history display snapshot bypasses active current overlay"
+  ],
+  "coverage": "Explicit scoped accepted owner ID set and pending/unresolved set; field occurrence counts are not semantic-unit counts or full browser proof.",
+  "hsk1PresentationBinding": "Optional AppData.viPresentation, parallel group first/current/latest/history slots and listening record/round slots; slot digests cross-checked against immutable raw grading records, payload deduplicated per revision/owner; no timestamp-only/global-attempt-digest identity, no second storage key.",
+  "hsk23HistoryBinding": "Existing Attempt.questions/contentRevision deep snapshot, old snapshot not projected; legacy no snapshot shows raw submitted values separately from current explanation.",
+  "sourceAnchorBranches": {
+    "directOfficial": [
+      "actual official VI text",
+      "verified printed/PDF exact page pair",
+      "section and semantic anchor"
+    ],
+    "terminologyDerived": [
+      "verified terminology source references",
+      "explicit not-verbatim label"
+    ],
+    "editorial": [
+      "directCounterpart=false",
+      "actual context and review rationale; no fabricated book quote/page"
+    ],
+    "unresolved": [
+      "no active runtime patch"
+    ]
+  }
+}

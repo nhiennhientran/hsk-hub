@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "track": {
+    "id": "hsk2-fltrp-2026:l15:audio4",
+    "level": 2,
+    "lesson": 15,
+    "track": 4,
+    "kind": "vocab",
+    "text": 2,
+    "file": "course-assets/hsk2/audio/15-4.mp3",
+    "sha256": "b73772d99139cbe8df41b873dc2f0018cb2dcdf1c2d05f0f22baf9df7ea99baa",
+    "bytes": 478854,
+    "manifestDurationSeconds": 18.149333,
+    "pcm": {
+      "format": "f32le",
+      "sampleRate": 16000,
+      "channels": 1,
+      "samples": 290304,
+      "durationSeconds": 18.144,
+      "sha256": "7bdbc9e7bec2bc3ab7dc208695b8072557ca1973fa6e28a32a167c976fc84938"
+    },
+    "fullDecode": "passed"
+  },
+  "options": {
+    "language": "zh",
+    "task": "transcribe",
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "vad_filter": false,
+    "condition_on_previous_text": false,
+    "initial_prompt": null,
+    "prefix": null,
+    "hotwords": null
+  },
+  "modelRepository": "Systran/faster-whisper-small",
+  "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+  "rawTranscriptionInfo": {
+    "language": "zh",
+    "language_probability": 1,
+    "duration": 18.144,
+    "duration_after_vad": 18.144,
+    "all_language_probs": null,
+    "transcription_options": {
+      "beam_size": 5,
+      "best_of": 5,
+      "patience": 1,
+      "length_penalty": 1,
+      "repetition_penalty": 1,
+      "no_repeat_ngram_size": 0,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "prompt_reset_on_temperature": 0.5,
+      "temperatures": [
+        0.0
+      ],
+      "initial_prompt": null,
+      "prefix": null,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        90,
+        91,
+        92,
+        93,
+        359,
+        503,
+        522,
+        542,
+        873,
+        893,
+        902,
+        918,
+        922,
+        931,
+        1350,
+        1853,
+        1982,
+        2460,
+        2627,
+        3246,
+        3253,
+        3268,
+        3536,
+        3846,
+        3961,
+        4183,
+        4667,
+        6585,
+        6647,
+        7273,
+        9061,
+        9383,
+        10428,
+        10929,
+        11938,
+        12033,
+        12331,
+        12562,
+        13793,
+        14157,
+        14635,
+        15265,
+        15618,
+        16553,
+        16604,
+        18362,
+        18956,
+        20075,
+        21675,
+        22520,
+        26130,
+        26161,
+        26435,
+        28279,
+        29464,
+        31650,
+        32302,
+        32470,
+        36865,
+        42863,
+        47425,
+        49870,
+        50254,
+        50258,
+        50358,
+        50359,
+        50360,
+        50361,
+        50362
+      ],
+      "without_timestamps": false,
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "prepend_punctuations": "\"'“¿([{-",
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "multilingual": false,
+      "max_new_tokens": null,
+      "clip_timestamps": [
+        0.0
+      ],
+      "hallucination_silence_threshold": null,
+      "hotwords": null
+    },
+    "vad_options": null
+  },
+  "rawSegments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 11.72,
+      "text": "出国 门票 高中 出门",
+      "tokens": [
+        50364,
+        7781,
+        16086,
+        220,
+        8259,
+        101,
+        41925,
+        220,
+        12979,
+        5975,
+        220,
+        7781,
+        8259,
+        101,
+        50964
+      ],
+      "avg_logprob": -0.4749993896484375,
+      "compression_ratio": 0.7843137254901961,
+      "no_speech_prob": 0.6967984437942505,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.92,
+          "word": "出",
+          "probability": 0.9130398035049438
+        },
+        {
+          "start": 0.92,
+          "end": 1.68,
+          "word": "国",
+          "probability": 0.43236395716667175
+        },
+        {
+          "start": 1.82,
+          "end": 4.02,
+          "word": " 门",
+          "probability": 0.8973810970783234
+        },
+        {
+          "start": 4.02,
+          "end": 6.0,
+          "word": "票",
+          "probability": 0.9950271248817444
+        },
+        {
+          "start": 6.62,
+          "end": 6.8,
+          "word": " 高",
+          "probability": 0.9823784232139587
+        },
+        {
+          "start": 6.8,
+          "end": 8.74,
+          "word": "中",
+          "probability": 0.98110032081604
+        },
+        {
+          "start": 9.44,
+          "end": 9.56,
+          "word": " 出",
+          "probability": 0.9752734899520874
+        },
+        {
+          "start": 9.56,
+          "end": 11.72,
+          "word": "门",
+          "probability": 0.9942092597484589
+        }
+      ],
+      "temperature": 0.0
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 11.72,
+      "end": 15.64,
+      "text": "路 疑和园",
+      "tokens": [
+        50964,
+        24658,
+        220,
+        18140,
+        239,
+        12565,
+        3919,
+        255,
+        51264
+      ],
+      "avg_logprob": -0.4749993896484375,
+      "compression_ratio": 0.7843137254901961,
+      "no_speech_prob": 0.6967984437942505,
+      "words": [
+        {
+          "start": 11.72,
+          "end": 12.66,
+          "word": "路",
+          "probability": 0.5550233125686646
+        },
+        {
+          "start": 14.6,
+          "end": 14.86,
+          "word": " 疑",
+          "probability": 0.5623907074332237
+        },
+        {
+          "start": 14.86,
+          "end": 15.14,
+          "word": "和",
+          "probability": 0.5295022130012512
+        },
+        {
+          "start": 15.14,
+          "end": 15.64,
+          "word": "园",
+          "probability": 0.6057464629411697
+        }
+      ],
+      "temperature": 0.0
+    }
+  ],
+  "elapsedInferenceSeconds": 1.6226494229999844,
+  "realTimeFactor": 0.08943173627645418,
+  "observationChecks": {
+    "rawWordCount": 12,
+    "invalidWordTimeIndices": [],
+    "nonemptyTranscript": true
+  },
+  "certification": {
+    "asrOnly": true,
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "acousticBoundaryApproval": false,
+    "printedSourceMatchApproval": false,
+    "productionClipApproval": false,
+    "promotedClipCount": 0
+  }
+}

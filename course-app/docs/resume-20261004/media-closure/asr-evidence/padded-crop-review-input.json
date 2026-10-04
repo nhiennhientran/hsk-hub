@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "purpose": "limited padded-crop unprompted ASR review; not production cuts",
+  "smallExactReportSHA256": "79811fe798d90818a28d5bdb0c3558f3d796b208a3bf02259f611e2396b2d022",
+  "mediumExactReportSHA256": "6632c358c8163422a32173ff074df5014c58b765deb0e4fa3cfdb1a14606f5e5",
+  "selection": "Root/independent-QA selected two sentence priorities plus L4T8 original whole track containing only 颜色",
+  "cropRule": "union of two raw ranges with 120ms before/150ms after; actual waveform boundary evidence remains unapproved",
+  "blockedWholeTracks": [
+    {
+      "level": 2,
+      "lesson": 5,
+      "track": 2,
+      "reason": "medium severe repeated 上来 hallucination and subtitles; cannot validate small"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line3",
+      "unit": "sentence",
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 32,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-04.json",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "sourceSHA256": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+      "sourcePCM_SHA256": "d167901daaffea375fabf9b67b10a321a590cd21a2c33e5ed92532a0f8dea020",
+      "smallRaw": {
+        "rawStart": 10.100000000000003,
+        "rawEnd": 12.08,
+        "minimumRawProbability": 0.7344670295715332,
+        "rawWordReferences": [
+          {
+            "segment": 2,
+            "word": 0
+          },
+          {
+            "segment": 2,
+            "word": 1
+          },
+          {
+            "segment": 2,
+            "word": 2
+          },
+          {
+            "segment": 2,
+            "word": 3
+          },
+          {
+            "segment": 2,
+            "word": 4
+          },
+          {
+            "segment": 2,
+            "word": 5
+          }
+        ]
+      },
+      "mediumRaw": {
+        "rawStart": 10.16,
+        "rawEnd": 12.22,
+        "minimumRawProbability": 0.9636027216911316,
+        "rawWordReferences": [
+          {
+            "segment": 2,
+            "word": 0
+          },
+          {
+            "segment": 2,
+            "word": 1
+          },
+          {
+            "segment": 2,
+            "word": 2
+          },
+          {
+            "segment": 2,
+            "word": 3
+          },
+          {
+            "segment": 2,
+            "word": 4
+          },
+          {
+            "segment": 2,
+            "word": 5
+          }
+        ]
+      },
+      "maximumModelEndpointDifference": 0.14000000000000057,
+      "start": 9.98,
+      "end": 12.3700625,
+      "sourceSampleRange16k": [
+        159680,
+        197921
+      ],
+      "recipe": "two-model-range-union-with-120ms-before-150ms-after; unapproved",
+      "cropPCM_SHA256": "9b5134a228ed340812cfddae48fd6fd0e70e58645b0aa78df2a2467ea88c2686",
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": -64.134,
+        "afterStart": -67.004,
+        "beforeEnd": -58.618,
+        "afterEnd": -60.499
+      },
+      "status": "padded-crop-pending-independent-unprompted-ASR-and-source-boundary-review",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:word16",
+      "unit": "word",
+      "source": {
+        "pdfPage": 50,
+        "printedPage": 35,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-04.json",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "sourceTrack": "course-assets/hsk2/audio/4-8.mp3",
+      "sourceSHA256": "8d0a18324f7ef67634da7c2a941247c5807f63a3cbf89d1dad706d27d5e38020",
+      "sourcePCM_SHA256": "010c423f798fd0a3eea112ba61aa398680a25acc965943be5d138ce751e2caa5",
+      "smallRaw": {
+        "rawStart": 0.0,
+        "rawEnd": 1.28,
+        "minimumRawProbability": 0.9884420037269592,
+        "rawWordReferences": [
+          {
+            "segment": 0,
+            "word": 0
+          },
+          {
+            "segment": 0,
+            "word": 1
+          }
+        ]
+      },
+      "mediumRaw": {
+        "rawStart": 0.0,
+        "rawEnd": 1.52,
+        "minimumRawProbability": 0.9858124852180481,
+        "rawWordReferences": [
+          {
+            "segment": 0,
+            "word": 0
+          },
+          {
+            "segment": 0,
+            "word": 1
+          }
+        ]
+      },
+      "maximumModelEndpointDifference": 0.24,
+      "start": 0.0,
+      "end": 3.168,
+      "sourceSampleRange16k": [
+        0,
+        50688
+      ],
+      "recipe": "whole-original-track-single-printed-word",
+      "cropPCM_SHA256": "010c423f798fd0a3eea112ba61aa398680a25acc965943be5d138ce751e2caa5",
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": null,
+        "afterStart": -240.0,
+        "beforeEnd": -57.252,
+        "afterEnd": null
+      },
+      "status": "padded-crop-pending-independent-unprompted-ASR-and-source-boundary-review",
+      "productionApproved": false,
+      "humanListening": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "unit": "sentence",
+      "source": {
+        "pdfPage": 55,
+        "printedPage": 40,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-05.json",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "sourceSHA256": "7692432ee007f962b2e0d8a76642a0ad69e2696125f74b3572e1e287e249dcbd",
+      "sourcePCM_SHA256": "a5a433f2b95eca57609e5f752bb0aeeb52d66ebc3f46e126f62575670a9a7e95",
+      "smallRaw": {
+        "rawStart": 35.9,
+        "rawEnd": 38.06,
+        "minimumRawProbability": 0.9161765575408936,
+        "rawWordReferences": [
+          {
+            "segment": 14,
+            "word": 1
+          },
+          {
+            "segment": 14,
+            "word": 2
+          },
+          {
+            "segment": 14,
+            "word": 3
+          },
+          {
+            "segment": 14,
+            "word": 4
+          },
+          {
+            "segment": 14,
+            "word": 5
+          },
+          {
+            "segment": 14,
+            "word": 6
+          },
+          {
+            "segment": 14,
+            "word": 7
+          }
+        ]
+      },
+      "mediumRaw": {
+        "rawStart": 36.0,
+        "rawEnd": 38.24,
+        "minimumRawProbability": 0.9585112929344177,
+        "rawWordReferences": [
+          {
+            "segment": 7,
+            "word": 1
+          },
+          {
+            "segment": 7,
+            "word": 2
+          },
+          {
+            "segment": 7,
+            "word": 3
+          },
+          {
+            "segment": 7,
+            "word": 4
+          },
+          {
+            "segment": 7,
+            "word": 5
+          },
+          {
+            "segment": 7,
+            "word": 6
+          },
+          {
+            "segment": 7,
+            "word": 7
+          }
+        ]
+      },
+      "maximumModelEndpointDifference": 0.17999999999999972,
+      "start": 35.78,
+      "end": 38.39,
+      "sourceSampleRange16k": [
+        572480,
+        614240
+      ],
+      "recipe": "two-model-range-union-with-120ms-before-150ms-after; unapproved",
+      "cropPCM_SHA256": "fecfb51cc9cdcf8d4961e69ceb0265780c7375352667e500ef09821d97144072",
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": -63.075,
+        "afterStart": -58.559,
+        "beforeEnd": -73.044,
+        "afterEnd": -60.25
+      },
+      "status": "padded-crop-pending-independent-unprompted-ASR-and-source-boundary-review",
+      "productionApproved": false,
+      "humanListening": false
+    }
+  ],
+  "productionApprovedCount": 0,
+  "humanListening": false,
+  "expectedSourceComparisonSHA256": "88a651c0b8785e85d560b47e45499bff6acc993f4494f903de0f5a8922e77672"
+}
