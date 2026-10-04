@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "recordedAtUTC": "2026-10-04T19:59:56.105893+00:00",
-  "status": "investigated-resolution-proposed-awaiting-consumer-independent-review",
+  "status": "root-semantic-resolution-accepted-pending-final-manifest-coverage",
   "erratumId": "hsk3-vi-20261004:l10:hounian-word26",
   "classification": "official-book-erratum",
   "officialPDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
@@ -25,7 +25,12 @@
     "section": "lesson10-text4-letter-paragraph2",
     "printedViPhrase": "năm sau nữa",
     "sourceTranscriptionFile": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l10/appendix-lesson10-vietnamese-transcription.json",
-    "independentOriginalPageReview": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/review.json"
+    "independentOriginalPageReview": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/review.json",
+    "rootPageEvidence": {
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p202.png",
+      "sha256": "7291ed3720fe476b2e68640108bc55e9e15ba77ac3c7369b4c827db613833740",
+      "rootActualVisualRead": true
+    }
   },
   "primaryDictionary": {
     "publisher": "Ministry of Education, Revised Mandarin Chinese Dictionary",
@@ -46,5 +51,12 @@
   },
   "activeChange": false,
   "websiteAlignmentAccepted": false,
-  "publicationApproved": false
+  "publicationApproved": false,
+  "rootSemanticDecisionAccepted": true,
+  "publisherIssuedCorrection": false,
+  "acceptedConsumerProposals": [
+    "f41581eaf49271839e5c845a",
+    "b8a8cba2a2285716bd6668b8"
+  ],
+  "runtimeManifestReviewAccepted": false
 }

@@ -1,0 +1,1955 @@
+{
+  "schemaVersion": 1,
+  "documentSourceId": "hsk1-official-vietnamese-20261004",
+  "sourceRevision": "official-vietnamese-upload-99ca3e63",
+  "sourcePDF": {
+    "fileName": "HSK1  (3.0).pdf",
+    "sha256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+    "pdfPageCount": 148
+  },
+  "lesson": 2,
+  "pdfPages": [
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "printedPages": [
+    "005",
+    "006",
+    "007",
+    "008",
+    "009"
+  ],
+  "authorReview": {
+    "reviewer": "hsk23_remaining_source",
+    "status": "author-transcribed-source-only",
+    "method": "Full visual review of all five original PDF rasters plus same-source crops; no website VI read or comparison in this task."
+  },
+  "independentReview": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "textPolicy": {
+    "viText": "Visual line wraps joined with recorded lineJoiners (default single space); original words/case/accents/punctuation retained; inline ZH/VI parentheses spacing regularized without changing tokens.",
+    "fragments": "Physical print lines retained. lineJoiners empty string explicitly preserves the split Chinese 没事没事 token.",
+    "rawPos": "Exact printed labels; no conversion to runtime POS.",
+    "repeatedOccurrences": "Each printed repeated header/instruction/label retained independently."
+  },
+  "occurrences": [
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-lesson-label",
+      "lesson": 2,
+      "pdfPage": 21,
+      "printedPage": "005",
+      "category": "lesson-label",
+      "zhContext": "2",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 21,
+          "printedPage": "005",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-021.png",
+      "adjacentNumeralPrinted": "2"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-title",
+      "lesson": 2,
+      "pdfPage": 21,
+      "printedPage": "005",
+      "category": "lesson-title",
+      "zhContext": "我叫李文",
+      "viText": "Mình tên là Lý Văn",
+      "fragments": [
+        {
+          "pdfPage": 21,
+          "printedPage": "005",
+          "lineTexts": [
+            "Mình tên là Lý Văn"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-021.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-goals-heading",
+      "lesson": 2,
+      "pdfPage": 21,
+      "printedPage": "005",
+      "category": "section-heading",
+      "zhContext": "目标",
+      "viText": "Mục tiêu",
+      "fragments": [
+        {
+          "pdfPage": 21,
+          "printedPage": "005",
+          "lineTexts": [
+            "Mục tiêu"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-021.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-goal-01",
+      "lesson": 2,
+      "pdfPage": 21,
+      "printedPage": "005",
+      "category": "goal",
+      "zhContext": "能听懂并使用中文姓名自我介绍。",
+      "viText": "Có thể nghe hiểu và tự giới thiệu họ tên mình bằng tiếng Trung Quốc.",
+      "fragments": [
+        {
+          "pdfPage": 21,
+          "printedPage": "005",
+          "lineTexts": [
+            "Có thể nghe hiểu và tự giới thiệu họ tên mình bằng",
+            "tiếng Trung Quốc."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-021.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-goal-02",
+      "lesson": 2,
+      "pdfPage": 21,
+      "printedPage": "005",
+      "category": "goal",
+      "zhContext": "能听懂并使用致歉语，用“对不起”和“没关系”表达歉意和回应。",
+      "viText": "Có thể nghe hiểu và sử dụng được cách nói xin lỗi, biết dùng “对不起” để xin lỗi và đáp lại bằng “没关系”.",
+      "fragments": [
+        {
+          "pdfPage": 21,
+          "printedPage": "005",
+          "lineTexts": [
+            "Có thể nghe",
+            "hiểu và sử dụng được cách nói xin lỗi, biết dùng “对不起” để xin lỗi và đáp lại bằng",
+            "“没关系”."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-021.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-goal-03",
+      "lesson": 2,
+      "pdfPage": 21,
+      "printedPage": "005",
+      "category": "goal",
+      "zhContext": "掌握汉语的基本语序。",
+      "viText": "Nắm vững trật tự cơ bản của câu trong tiếng Trung Quốc.",
+      "fragments": [
+        {
+          "pdfPage": 21,
+          "printedPage": "005",
+          "lineTexts": [
+            "Nắm vững trật tự cơ bản của câu trong tiếng Trung Quốc."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-021.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-goal-04",
+      "lesson": 2,
+      "pdfPage": 21,
+      "printedPage": "005",
+      "category": "goal",
+      "zhContext": "了解中文姓名的构成。",
+      "viText": "Hiểu về cấu trúc họ tên của người Trung Quốc.",
+      "fragments": [
+        {
+          "pdfPage": 21,
+          "printedPage": "005",
+          "lineTexts": [
+            "Hiểu về cấu trúc họ tên của người Trung Quốc."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-021.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-text-1-heading",
+      "lesson": 2,
+      "pdfPage": 21,
+      "printedPage": "005",
+      "category": "section-heading",
+      "zhContext": "课文1",
+      "viText": "Bài khoá 1",
+      "fragments": [
+        {
+          "pdfPage": 21,
+          "printedPage": "005",
+          "lineTexts": [
+            "Bài khoá 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-021.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-text-1-scene",
+      "lesson": 2,
+      "pdfPage": 21,
+      "printedPage": "005",
+      "category": "scene",
+      "zhContext": "在教室里，王一飞在认识学生。",
+      "viText": "Vương Nhất Phi đang làm quen với học sinh ở trong lớp học.",
+      "fragments": [
+        {
+          "pdfPage": 21,
+          "printedPage": "005",
+          "lineTexts": [
+            "Vương Nhất Phi đang làm quen với học sinh ở trong lớp học."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-021.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-text-1-read",
+      "lesson": 2,
+      "pdfPage": 21,
+      "printedPage": "005",
+      "category": "instruction",
+      "zhContext": "朗读对话。",
+      "viText": "Đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 21,
+          "printedPage": "005",
+          "lineTexts": [
+            "Đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-021.png",
+      "audioPrinted": "2-1"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-book-header",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "running-header",
+      "zhContext": "新HSK教程1",
+      "viText": "Giáo trình New HSK 1",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-tip-label",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "tip-label",
+      "zhContext": "小语助力",
+      "viText": "Tiểu Ngữ giúp sức",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "Tiểu Ngữ",
+            "giúp sức"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-tip-politeness",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "tip",
+      "zhContext": "敬辞，请求对方回答问题。",
+      "viText": "Đây là một kính ngữ, được sử dụng khi đề nghị ai đó trả lời câu hỏi.",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "Đây là một kính ngữ, được",
+            "sử dụng khi đề nghị ai đó trả",
+            "lời câu hỏi."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "associatedZh": "请问"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-text-1-line-01",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "dialogue-translation",
+      "zhContext": "请问，你叫什么名字？",
+      "viText": "Vương Nhất Phi: Xin hỏi, em tên là gì?",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "Vương Nhất Phi: Xin hỏi, em tên là gì?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "speakerZh": "王一飞"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-text-1-line-02",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "dialogue-translation",
+      "zhContext": "我叫陈天中。",
+      "viText": "Trần Thiên Trung: Em tên là Trần Thiên Trung ạ.",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "Trần Thiên Trung: Em tên là Trần Thiên Trung ạ."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "speakerZh": "陈天中"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-text-1-words",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "section-heading",
+      "zhContext": "生词",
+      "viText": "Từ mới",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "audioPrinted": "2-2"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-01-gloss",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-gloss",
+      "zhContext": "请问",
+      "viText": "xin hỏi",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "xin hỏi"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 1
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-01-pos",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-pos",
+      "zhContext": "请问",
+      "viText": "đgt.",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 1
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-02-gloss",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-gloss",
+      "zhContext": "你",
+      "viText": "bạn, anh, chị, em... (đại từ nhân xưng ngôi thứ hai số ít)",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "bạn, anh, chị, em... (đại từ nhân xưng ngôi",
+            "thứ hai số ít)"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 2
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-02-pos",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-pos",
+      "zhContext": "你",
+      "viText": "đt.",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "đt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 2
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-03-gloss",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-gloss",
+      "zhContext": "叫",
+      "viText": "gọi là, tên là",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "gọi là, tên là"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 3
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-03-pos",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-pos",
+      "zhContext": "叫",
+      "viText": "đgt.",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 3
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-04-gloss",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-gloss",
+      "zhContext": "什么",
+      "viText": "gì, cái gì",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "gì, cái gì"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 4
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-04-pos",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-pos",
+      "zhContext": "什么",
+      "viText": "đt.",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "đt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 4
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-05-gloss",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-gloss",
+      "zhContext": "名字",
+      "viText": "tên",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "tên"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 5
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-05-pos",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-pos",
+      "zhContext": "名字",
+      "viText": "dt.",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 5
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-06-gloss",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-gloss",
+      "zhContext": "我",
+      "viText": "tôi, mình... (đại từ nhân xưng ngôi thứ nhất số ít)",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "tôi, mình... (đại từ nhân xưng ngôi thứ nhất",
+            "số ít)"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 6
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-06-pos",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "word-pos",
+      "zhContext": "我",
+      "viText": "đt.",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "đt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png",
+      "printOrdinal": 6
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-text-1-role-read",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "instruction",
+      "zhContext": "分角色朗读对话。",
+      "viText": "Phân vai đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-text-1-pair-practice",
+      "lesson": 2,
+      "pdfPage": 22,
+      "printedPage": "006",
+      "category": "instruction",
+      "zhContext": "两人一组，用自己的名字互相问答。",
+      "viText": "Hai người một nhóm, hỏi và trả lời bằng tên thật của mình.",
+      "fragments": [
+        {
+          "pdfPage": 22,
+          "printedPage": "006",
+          "lineTexts": [
+            "Hai người một nhóm, hỏi và trả lời bằng tên thật",
+            "của mình."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-022.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-running-lesson",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "running-header",
+      "zhContext": "我叫李文 | 2",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "adjacentNumeralPrinted": "2"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-heading",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "section-heading",
+      "zhContext": "课文2",
+      "viText": "Bài khoá 2",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Bài khoá 2"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-scene",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "scene",
+      "zhContext": "在校园里，陈天中和白家月打招呼时认错了人。",
+      "viText": "Trần Thiên Trung đã nhầm Bạch Gia Nguyệt với người khác khi chào hỏi cô ấy ở trong khuôn viên trường.",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Trần Thiên Trung đã nhầm Bạch Gia Nguyệt",
+            "với người khác khi chào hỏi cô ấy ở trong khuôn viên trường."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-read",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "instruction",
+      "zhContext": "朗读对话。",
+      "viText": "Đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "audioPrinted": "2-3"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-tip-label",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "tip-label",
+      "zhContext": "小语助力",
+      "viText": "Tiểu Ngữ giúp sức",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Tiểu Ngữ",
+            "giúp sức"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-tip-no-problem",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "tip",
+      "zhContext": "在口语中也说“没事”或“没事没事”。",
+      "viText": "Trong văn nói, mọi người cũng dùng “没事” hoặc “没事没事”.",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Trong văn nói, mọi người",
+            "cũng dùng “没事” hoặc “没事",
+            "没事”."
+          ],
+          "lineJoiners": [
+            " ",
+            ""
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "associatedZh": "没关系"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-words",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "section-heading",
+      "zhContext": "生词",
+      "viText": "Từ mới",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "audioPrinted": "2-4"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-07-gloss",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "word-gloss",
+      "zhContext": "不",
+      "viText": "không",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "không"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "printOrdinal": 7
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-07-pos",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "word-pos",
+      "zhContext": "不",
+      "viText": "phó.",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "phó."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "printOrdinal": 7
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-08-gloss",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "word-gloss",
+      "zhContext": "是",
+      "viText": "là",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "là"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "printOrdinal": 8
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-08-pos",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "word-pos",
+      "zhContext": "是",
+      "viText": "đgt.",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "printOrdinal": 8
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-09-gloss",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "word-gloss",
+      "zhContext": "对不起",
+      "viText": "xin lỗi",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "xin lỗi"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "printOrdinal": 9
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-09-pos",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "word-pos",
+      "zhContext": "对不起",
+      "viText": "đgt.",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "printOrdinal": 9
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-10-gloss",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "word-gloss",
+      "zhContext": "没关系",
+      "viText": "không sao, không có gì",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "không sao,",
+            "không có gì"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "printOrdinal": 10
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-11-gloss",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "word-gloss",
+      "zhContext": "没事",
+      "viText": "không sao, không có gì",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "không sao,",
+            "không có gì"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "printOrdinal": 11
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-11-pos",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "word-pos",
+      "zhContext": "没事",
+      "viText": "đgt.",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "printOrdinal": 11
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-line-01",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "dialogue-translation",
+      "zhContext": "你好，安妮！",
+      "viText": "Trần Thiên Trung: Chào Annie!",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Trần Thiên Trung: Chào Annie!"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "speakerZh": "陈天中"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-line-02",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "dialogue-translation",
+      "zhContext": "你好，陈天中！我不是安妮，我是白家月。",
+      "viText": "Bạch Gia Nguyệt: Chào Trần Thiên Trung! Mình không phải là Annie, mình là Bạch Gia Nguyệt.",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: Chào Trần Thiên Trung! Mình không phải là Annie, mình là Bạch Gia Nguyệt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "speakerZh": "白家月"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-line-03",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "dialogue-translation",
+      "zhContext": "对不起！",
+      "viText": "Trần Thiên Trung: Xin lỗi bạn!",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Trần Thiên Trung: Xin lỗi bạn!"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "speakerZh": "陈天中"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-line-04",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "dialogue-translation",
+      "zhContext": "没关系！",
+      "viText": "Bạch Gia Nguyệt: Không sao đâu!",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: Không sao đâu!"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png",
+      "speakerZh": "白家月"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-role-read",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "instruction",
+      "zhContext": "分角色朗读对话。",
+      "viText": "Phân vai đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-pair-practice",
+      "lesson": 2,
+      "pdfPage": 23,
+      "printedPage": "007",
+      "category": "instruction",
+      "zhContext": "两人一组，用真实姓名对话。",
+      "viText": "Hai người một nhóm, tiến hành hội thoại với nhau bằng họ tên thật.",
+      "fragments": [
+        {
+          "pdfPage": 23,
+          "printedPage": "007",
+          "lineTexts": [
+            "Hai người một nhóm, tiến hành hội thoại với nhau bằng",
+            "họ tên thật."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-023.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-book-header",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "running-header",
+      "zhContext": "新HSK教程1",
+      "viText": "Giáo trình New HSK 1",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-grammar-section",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "section-heading",
+      "zhContext": "小语讲堂",
+      "viText": "Lớp học của Tiểu Ngữ",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Lớp học của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-grammar-heading",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "grammar-heading",
+      "zhContext": "汉语的基本语序",
+      "viText": "Trật tự từ cơ bản của câu trong tiếng Trung Quốc",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Trật tự từ cơ bản của câu trong tiếng Trung Quốc"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png",
+      "printOrdinal": 1
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-grammar-explanation",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "grammar-explanation",
+      "zhContext": "汉语的基本语序是：主语+谓语+宾语。例如：我（主语）叫（谓语）陈天中（宾语）。",
+      "viText": "Trật tự từ cơ bản của câu trong tiếng Trung Quốc là: Chủ ngữ + vị ngữ + tân ngữ. Ví dụ: 我 (chủ ngữ) 叫 (vị ngữ) 陈天中 (tân ngữ).",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Trật tự từ cơ bản của câu trong tiếng Trung Quốc là: Chủ ngữ + vị ngữ + tân ngữ. Ví dụ:",
+            "我 (chủ ngữ) 叫 (vị ngữ) 陈天中 (tân ngữ)."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png",
+      "mixedZhViExample": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-grammar-read",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "instruction",
+      "zhContext": "大声朗读。",
+      "viText": "Đọc to các câu sau.",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Đọc to các câu sau."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-heading",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "section-heading",
+      "zhContext": "课文3",
+      "viText": "Bài khoá 3",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Bài khoá 3"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-scene",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "scene",
+      "zhContext": "在校园里，李文和白家月第一次相遇。",
+      "viText": "Lý Văn và Bạch Gia Nguyệt lần đầu gặp nhau trong khuôn viên trường.",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Lý Văn và Bạch Gia Nguyệt lần đầu gặp nhau trong",
+            "khuôn viên trường."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-read",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "instruction",
+      "zhContext": "朗读对话。",
+      "viText": "Đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png",
+      "audioPrinted": "2-5"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-tip-label",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "tip-label",
+      "zhContext": "小语助力",
+      "viText": "Tiểu Ngữ giúp sức",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Tiểu Ngữ",
+            "giúp sức"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-tip-name",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "tip",
+      "zhContext": "中国人的姓名：姓+名",
+      "viText": "Họ tên của người Trung Quốc gồm: họ + tên",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Họ tên của",
+            "người Trung Quốc gồm: họ + tên"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-line-01",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "dialogue-translation",
+      "zhContext": "你好！我叫李文。",
+      "viText": "Lý Văn: Chào bạn! Mình tên là Lý Văn.",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Lý Văn: Chào bạn! Mình tên là Lý Văn."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png",
+      "speakerZh": "李文"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-line-02",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "dialogue-translation",
+      "zhContext": "你好！我叫白家月。",
+      "viText": "Bạch Gia Nguyệt: Xin chào! Mình tên là Bạch Gia Nguyệt.",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: Xin chào! Mình tên là",
+            "Bạch Gia Nguyệt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png",
+      "speakerZh": "白家月"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-line-03",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "dialogue-translation",
+      "zhContext": "很高兴认识你。",
+      "viText": "Lý Văn: Rất vui được làm quen với bạn.",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Lý Văn: Rất vui được làm quen với bạn."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png",
+      "speakerZh": "李文"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-line-04",
+      "lesson": 2,
+      "pdfPage": 24,
+      "printedPage": "008",
+      "category": "dialogue-translation",
+      "zhContext": "认识你我也很高兴。",
+      "viText": "Bạch Gia Nguyệt: Mình cũng rất vui được làm quen với bạn.",
+      "fragments": [
+        {
+          "pdfPage": 24,
+          "printedPage": "008",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: Mình cũng rất vui được",
+            "làm quen với bạn."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-024.png",
+      "speakerZh": "白家月"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-running-lesson",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "running-header",
+      "zhContext": "我叫李文 | 2",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "adjacentNumeralPrinted": "2"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-text-3-words",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "section-heading",
+      "zhContext": "生词",
+      "viText": "Từ mới",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "audioPrinted": "2-6"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-12-gloss",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "word-gloss",
+      "zhContext": "很",
+      "viText": "rất",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "rất"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "printOrdinal": 12
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-12-pos",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "word-pos",
+      "zhContext": "很",
+      "viText": "phó.",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "phó."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "printOrdinal": 12
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-13-gloss",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "word-gloss",
+      "zhContext": "高兴",
+      "viText": "vui, vui vẻ",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "vui, vui vẻ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "printOrdinal": 13
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-13-pos",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "word-pos",
+      "zhContext": "高兴",
+      "viText": "tt.",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "printOrdinal": 13
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-14-gloss",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "word-gloss",
+      "zhContext": "认识",
+      "viText": "quen, làm quen",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "quen, làm quen"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "printOrdinal": 14
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-14-pos",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "word-pos",
+      "zhContext": "认识",
+      "viText": "đgt.",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "printOrdinal": 14
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-15-gloss",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "word-gloss",
+      "zhContext": "也",
+      "viText": "cũng",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "cũng"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "printOrdinal": 15
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-15-pos",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "word-pos",
+      "zhContext": "也",
+      "viText": "phó.",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "phó."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "printOrdinal": 15
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-text-3-role-read",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "instruction",
+      "zhContext": "分角色朗读对话。",
+      "viText": "Phân vai đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-text-3-pair-practice",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "instruction",
+      "zhContext": "两人一组，用自己的名字自我介绍。",
+      "viText": "Hai người một nhóm, tự giới thiệu mình bằng tên thật.",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "Hai người một nhóm, tự giới thiệu mình bằng",
+            "tên thật."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-tongue-heading",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "section-heading",
+      "zhContext": "跟读绕口令",
+      "viText": "Cùng đọc bài vè",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "Cùng đọc bài vè"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "audioPrinted": "2-7"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-tongue-line-01",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "tongue-twister-translation",
+      "zhContext": "七加一，再减一，",
+      "viText": "Bảy cộng một, lại trừ một.",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "Bảy cộng một, lại trừ một."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-tongue-line-02",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "tongue-twister-translation",
+      "zhContext": "加完减完等于几？",
+      "viText": "Cộng xong trừ xong thì bằng mấy?",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "Cộng xong trừ xong thì bằng mấy?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-tongue-line-03",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "tongue-twister-translation",
+      "zhContext": "加完减完还是七。",
+      "viText": "Cộng xong trừ xong vẫn là bảy.",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "Cộng xong trừ xong vẫn là bảy."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-enrichment-heading",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "enrichment-heading",
+      "zhContext": "小语的彩蛋",
+      "viText": "Món quà của Tiểu Ngữ",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "Món quà của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png",
+      "mediaKindPrinted": "tap-icon"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-enrichment-topic",
+      "lesson": 2,
+      "pdfPage": 25,
+      "printedPage": "009",
+      "category": "enrichment-topic",
+      "zhContext": "世界各国的中文名称",
+      "viText": "Tên tiếng Trung Quốc của các nước trên thế giới",
+      "fragments": [
+        {
+          "pdfPage": 25,
+          "printedPage": "009",
+          "lineTexts": [
+            "Tên tiếng Trung Quốc của các nước trên thế giới"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-025.png"
+    }
+  ],
+  "wordTableRows": [
+    {
+      "pdfPage": 22,
+      "printedPage": "006",
+      "printOrdinal": 1,
+      "kind": "ordinary",
+      "zhPrinted": "请问",
+      "pinyinPrinted": "qǐngwèn",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf022-word-01-gloss",
+      "rawPosLabel": "đgt.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf022-word-01-pos"
+    },
+    {
+      "pdfPage": 22,
+      "printedPage": "006",
+      "printOrdinal": 2,
+      "kind": "ordinary",
+      "zhPrinted": "你",
+      "pinyinPrinted": "nǐ",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf022-word-02-gloss",
+      "rawPosLabel": "đt.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf022-word-02-pos"
+    },
+    {
+      "pdfPage": 22,
+      "printedPage": "006",
+      "printOrdinal": 3,
+      "kind": "ordinary",
+      "zhPrinted": "叫",
+      "pinyinPrinted": "jiào",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf022-word-03-gloss",
+      "rawPosLabel": "đgt.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf022-word-03-pos"
+    },
+    {
+      "pdfPage": 22,
+      "printedPage": "006",
+      "printOrdinal": 4,
+      "kind": "ordinary",
+      "zhPrinted": "什么",
+      "pinyinPrinted": "shénme",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf022-word-04-gloss",
+      "rawPosLabel": "đt.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf022-word-04-pos"
+    },
+    {
+      "pdfPage": 22,
+      "printedPage": "006",
+      "printOrdinal": 5,
+      "kind": "ordinary",
+      "zhPrinted": "名字",
+      "pinyinPrinted": "míngzi",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf022-word-05-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf022-word-05-pos"
+    },
+    {
+      "pdfPage": 22,
+      "printedPage": "006",
+      "printOrdinal": 6,
+      "kind": "ordinary",
+      "zhPrinted": "我",
+      "pinyinPrinted": "wǒ",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf022-word-06-gloss",
+      "rawPosLabel": "đt.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf022-word-06-pos"
+    },
+    {
+      "pdfPage": 23,
+      "printedPage": "007",
+      "printOrdinal": 7,
+      "kind": "ordinary",
+      "zhPrinted": "不",
+      "pinyinPrinted": "bù",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf023-word-07-gloss",
+      "rawPosLabel": "phó.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf023-word-07-pos"
+    },
+    {
+      "pdfPage": 23,
+      "printedPage": "007",
+      "printOrdinal": 8,
+      "kind": "ordinary",
+      "zhPrinted": "是",
+      "pinyinPrinted": "shì",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf023-word-08-gloss",
+      "rawPosLabel": "đgt.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf023-word-08-pos"
+    },
+    {
+      "pdfPage": 23,
+      "printedPage": "007",
+      "printOrdinal": 9,
+      "kind": "ordinary",
+      "zhPrinted": "对不起",
+      "pinyinPrinted": "duìbuqǐ",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf023-word-09-gloss",
+      "rawPosLabel": "đgt.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf023-word-09-pos"
+    },
+    {
+      "pdfPage": 23,
+      "printedPage": "007",
+      "printOrdinal": 10,
+      "kind": "ordinary",
+      "zhPrinted": "没关系",
+      "pinyinPrinted": "méi guānxi",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf023-word-10-gloss",
+      "rawPosLabel": null,
+      "posOccurrenceId": null
+    },
+    {
+      "pdfPage": 23,
+      "printedPage": "007",
+      "printOrdinal": 11,
+      "kind": "ordinary",
+      "zhPrinted": "没事",
+      "pinyinPrinted": "méishì",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf023-word-11-gloss",
+      "rawPosLabel": "đgt.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf023-word-11-pos"
+    },
+    {
+      "pdfPage": 25,
+      "printedPage": "009",
+      "printOrdinal": 12,
+      "kind": "ordinary",
+      "zhPrinted": "很",
+      "pinyinPrinted": "hěn",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf025-word-12-gloss",
+      "rawPosLabel": "phó.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf025-word-12-pos"
+    },
+    {
+      "pdfPage": 25,
+      "printedPage": "009",
+      "printOrdinal": 13,
+      "kind": "ordinary",
+      "zhPrinted": "高兴",
+      "pinyinPrinted": "gāoxìng",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf025-word-13-gloss",
+      "rawPosLabel": "tt.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf025-word-13-pos"
+    },
+    {
+      "pdfPage": 25,
+      "printedPage": "009",
+      "printOrdinal": 14,
+      "kind": "ordinary",
+      "zhPrinted": "认识",
+      "pinyinPrinted": "rènshi",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf025-word-14-gloss",
+      "rawPosLabel": "đgt.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf025-word-14-pos"
+    },
+    {
+      "pdfPage": 25,
+      "printedPage": "009",
+      "printOrdinal": 15,
+      "kind": "ordinary",
+      "zhPrinted": "也",
+      "pinyinPrinted": "yě",
+      "glossOccurrenceId": "hsk1-official-vi-l02-pdf025-word-15-gloss",
+      "rawPosLabel": "phó.",
+      "posOccurrenceId": "hsk1-official-vi-l02-pdf025-word-15-pos"
+    }
+  ],
+  "layoutContinuations": [
+    {
+      "kind": "text-block-continuation",
+      "textBlock": 1,
+      "fromPDFPage": 21,
+      "toPDFPage": 22,
+      "description": "Opening heading, scene, read instruction and photo on PDF21; original Chinese bubbles, VI translation box, word table and practice instructions on PDF22."
+    },
+    {
+      "kind": "text-word-table-continuation",
+      "textBlock": 3,
+      "fromPDFPage": 24,
+      "toPDFPage": 25,
+      "description": "Chinese and VI dialogue on PDF24; its words12–15 and practice instructions on PDF25. No missing VI was inferred or copied across pages."
+    }
+  ],
+  "coverage": {
+    "occurrenceCount": 84,
+    "byCategory": {
+      "lesson-label": 1,
+      "lesson-title": 1,
+      "section-heading": 9,
+      "goal": 4,
+      "scene": 3,
+      "instruction": 10,
+      "running-header": 4,
+      "tip-label": 3,
+      "tip": 3,
+      "dialogue-translation": 10,
+      "word-gloss": 15,
+      "word-pos": 14,
+      "grammar-heading": 1,
+      "grammar-explanation": 1,
+      "tongue-twister-translation": 3,
+      "enrichment-heading": 1,
+      "enrichment-topic": 1
+    },
+    "ordinaryWordRows": 15,
+    "properNameRows": 0,
+    "printedPosOccurrences": 14,
+    "dialogueTranslatedLines": 10,
+    "tongueTwisterTranslatedLines": 3,
+    "crossPageViTextFragments": 0,
+    "grammarMixedZhViExamples": 1,
+    "noPrintedVietnameseAreas": [
+      {
+        "pdfPage": 24,
+        "area": "Three numbered Chinese grammar example sentences after read instruction",
+        "zhPrinted": [
+          "你叫什么名字？",
+          "我叫白家月。",
+          "我是学生。"
+        ],
+        "viPrinted": false
+      },
+      {
+        "pdfPages": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "area": "Avatar names/Pinyin, audio numerals, media icon and Chinese dialogue bubbles have no extra inline VI beyond separately transcribed translations."
+      }
+    ],
+    "candidateErrata": []
+  },
+  "activation": "none; pending different-agent independent original-page review"
+}

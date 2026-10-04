@@ -1,0 +1,60 @@
+{
+  "status": "bounded-four-source-fields-only-author-check",
+  "occurrences": 141,
+  "v1SHA256": "1ae245d66f6dab2ecb5b0d77b4839bd1a42c7a70274e3dd4ed51b6b480943dff",
+  "v2SHA256": "1a5c02d5e46e4adcd278652c4552722c96ff27c19b9805769bd77f4744103d8e",
+  "changedOccurrenceIds": [
+    "hsk1-official-vi-l05-pdf045-grammar-02-explanation",
+    "hsk1-official-vi-l05-pdf048-word-16-gloss",
+    "hsk1-official-vi-l05-pdf048-word-18-gloss",
+    "hsk1-official-vi-l05-pdf050-group-game-instruction"
+  ],
+  "changes": [
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-02-explanation",
+      "field": "fragments/0/lineTexts",
+      "expectedValue": [
+        "Trong câu vị ngữ danh từ, thành phần vị ngữ chỉ có danh từ hoặc thành phần có tính chất như",
+        "một danh từ thì những thành phần này thường là những từ ngữ được dùng để chỉ thời gian, ngày",
+        "tháng, tuổi tác..."
+      ],
+      "newValue": [
+        "Trong câu vị ngữ danh từ, thành phần vị ngữ chỉ có danh từ hoặc thành phần có tính chất",
+        "như một danh từ thì những thành phần này thường là những từ ngữ được dùng để chỉ thời gian,",
+        "ngày tháng, tuổi tác..."
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-16-gloss",
+      "field": "fragments/0/lineTexts",
+      "expectedValue": [
+        "tan làm,",
+        "tan ca"
+      ],
+      "newValue": [
+        "tan làm, tan ca"
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-18-gloss",
+      "field": "fragments/0/lineTexts",
+      "expectedValue": [
+        "máy tính,",
+        "máy vi tính"
+      ],
+      "newValue": [
+        "máy tính, máy vi tính"
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-group-game-instruction",
+      "field": "zhContext",
+      "expectedValue": "一个人拿着词卡问其他人会不会做词卡上的动作，其他人抢答。抢答最少者成为下一轮的提问者。",
+      "newValue": "一个人拿着词语卡片，询问其他人会不会做这件事，其他人抢答。抢答最少者成为下一轮的提问者。"
+    }
+  ],
+  "allEffectiveVietnameseUnchanged": true,
+  "wordRowsAndRawPOSUnchanged": true,
+  "relativeRenderPaths": "../ prefix only",
+  "independentAccepted": false
+}

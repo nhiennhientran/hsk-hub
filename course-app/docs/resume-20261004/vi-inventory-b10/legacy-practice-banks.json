@@ -1,0 +1,180 @@
+[
+  {
+    "course": "legacy-hsk1",
+    "component": "legacy-hsk1-reviewed-practice",
+    "virtualFile": "legacy-runtime://practice/hsk1/HSK1-V5.0-2026-08-15",
+    "version": "HSK1-V5.0-2026-08-15",
+    "lessons": 15,
+    "questions": 360,
+    "questionLeafOccurrences": 3836,
+    "questionKeys": {
+      "id": 360,
+      "tier": 360,
+      "type": 360,
+      "prompt_vi": 360,
+      "stem": 360,
+      "options": 360,
+      "answer": 360,
+      "explanation_vi": 360
+    },
+    "VietnameseOccurrences": 923,
+    "producer": "hsk1/app-practice.js",
+    "producerSHA256": "84a0cd6063facef50e06f92c1dbe2e4128d126495816565a0143827450f33b4d",
+    "fetchChunks": [
+      {
+        "file": "practice/reviewed/hsk1-v5.0.part01.b64",
+        "bytes": 9000,
+        "sha256": "b345e4463fb44545b6a7112d5daf4510826466809fb1316522692dfa3115f36e"
+      },
+      {
+        "file": "practice/reviewed/hsk1-v5.0.part02.b64",
+        "bytes": 9000,
+        "sha256": "b310f88088dc5a69264125ac5c708eb63c7a827c3b817750e2314a2a52345070"
+      },
+      {
+        "file": "practice/reviewed/hsk1-v5.0.part03.b64",
+        "bytes": 9000,
+        "sha256": "af0aee2839771ee3836369bc2ab3afde52b645013b8cf89f1ba181b64c2f204e"
+      },
+      {
+        "file": "practice/reviewed/hsk1-v5.0.part04.b64",
+        "bytes": 4036,
+        "sha256": "87cc77722c3e6c84ff0775d1432121e9ad2cfb36daadb3b198cbb4474fe59495"
+      }
+    ],
+    "decodedJSONSHA256": "3735fa14d26affc74024ecc3b2b6330768bc5d050f660176fa3ff69761a12d38",
+    "gzipSHA256": "45c6d482136a27bf5184b3bf3214666e2f7f9bdb4b6b89bdeab3fca0d927a790",
+    "metadataDisposition": "Payload-wide language extraction retained; QA/design/source metadata is separately marked. Unfetched alternate gzip/split chunks do not count as current practice.",
+    "mappedToUploadedBooks": false
+  },
+  {
+    "course": "legacy-hsk2",
+    "component": "legacy-hsk2-reviewed-practice",
+    "virtualFile": "legacy-runtime://practice/hsk2/HSK2-V5.8-2026-08-15",
+    "version": "HSK2-V5.8-2026-08-15",
+    "lessons": 15,
+    "questions": 360,
+    "questionLeafOccurrences": 4188,
+    "questionKeys": {
+      "id": 360,
+      "tier": 360,
+      "type": 360,
+      "prompt_vi": 360,
+      "stem": 360,
+      "options": 345,
+      "answer": 360,
+      "explanation_vi": 360,
+      "skill": 360,
+      "segments": 15
+    },
+    "VietnameseOccurrences": 720,
+    "producer": "assets/lesson-practice.js",
+    "producerSHA256": "afd3c2821eba75a839eca240c7b6926003509af66a69e5cd9887ba813dfef9a3",
+    "fetchChunks": [
+      {
+        "file": "practice/reviewed/hsk2-v5.8.part01.b64",
+        "bytes": 9000,
+        "sha256": "878269e2e14cd3cce8feeffd5695a1158566f634ab0a22168eb8b852d43a9b85"
+      },
+      {
+        "file": "practice/reviewed/hsk2-v5.8.part02.b64",
+        "bytes": 9000,
+        "sha256": "9db8915eb015d358bf350fc4a8dce6130eb7c57adaa73ce06ea23eb38e2c9378"
+      },
+      {
+        "file": "practice/reviewed/hsk2-v5.8.part03.b64",
+        "bytes": 9000,
+        "sha256": "e6f226c84175d5e0209cacffbc0d4315063ce18c0256826e4e7a09e082203ce1"
+      },
+      {
+        "file": "practice/reviewed/hsk2-v5.8.part04.b64",
+        "bytes": 9000,
+        "sha256": "51a0cc06946e32b3693b7768d7e5aaaa9abac6a019f8c1a6d57968a6c503fa74"
+      },
+      {
+        "file": "practice/reviewed/hsk2-v5.8.part05.b64",
+        "bytes": 3820,
+        "sha256": "46d1df2d9e52a136050657bb4a245c0d5bad3003c04deb41edf6d64725e52ec3"
+      }
+    ],
+    "decodedJSONSHA256": "498659bc0c3a377f116460497a1c8de07fe28bf61239973875bf1f698f009cb0",
+    "gzipSHA256": "409aeb4b343533104673cf959fc30d7ea9b1dfac5f078b1edd2ee333325f7afe",
+    "metadataDisposition": "Payload-wide language extraction retained; QA/design/source metadata is separately marked. Unfetched alternate gzip/split chunks do not count as current practice.",
+    "mappedToUploadedBooks": false
+  },
+  {
+    "course": "legacy-hsk3",
+    "component": "legacy-hsk3-reviewed-practice",
+    "virtualFile": "legacy-runtime://practice/hsk3/V1.1",
+    "version": "V1.1",
+    "lessons": 20,
+    "questions": 640,
+    "questionLeafOccurrences": 7606,
+    "questionKeys": {
+      "id": 640,
+      "tier": 640,
+      "type": 640,
+      "prompt_vi": 640,
+      "stem": 540,
+      "options": 540,
+      "answer": 640,
+      "explanation_vi": 640,
+      "skill": 640,
+      "segments": 100
+    },
+    "VietnameseOccurrences": 1335,
+    "producer": "hsk3/app-practice.js",
+    "producerSHA256": "141b1c35ffba3ab9dde5f5bd3fce82ca84c5b645f5518b929626f67118300b67",
+    "fetchChunks": [
+      {
+        "file": "practice/reviewed/hsk3-v1.1.part01.b64",
+        "bytes": 10300,
+        "sha256": "b21a8584f35c91f3e22ac4e67d954f4c29c03791d38bdde13919c8fb36a35662"
+      },
+      {
+        "file": "practice/reviewed/hsk3-v1.1.part02.b64",
+        "bytes": 10300,
+        "sha256": "ee0a30e3cc4544f4fc2fc70341b38c6c8458c2ffcff652b1c88bdbcbc073f205"
+      },
+      {
+        "file": "practice/reviewed/hsk3-v1.1.part03.b64",
+        "bytes": 10300,
+        "sha256": "264c16bb72fe119a6ed74251a45bb76f02aa0332af40feea5cdbb2a9a52a9b1d"
+      },
+      {
+        "file": "practice/reviewed/hsk3-v1.1.part04.b64",
+        "bytes": 10300,
+        "sha256": "529ce580e2ebdb9f4265894c415a7e1796630a3fbb04dc235d5807130b1ee945"
+      },
+      {
+        "file": "practice/reviewed/hsk3-v1.1.part05.b64",
+        "bytes": 10300,
+        "sha256": "b56487cf74d2ee66463c5a13fd01611aca48a45dfce9cf8c83bfdfc158010820"
+      },
+      {
+        "file": "practice/reviewed/hsk3-v1.1.part06.b64",
+        "bytes": 10300,
+        "sha256": "da4078d992a0ff16ddc011b1cc682b926b2a607bccf1f93f4cf89366f2b495d0"
+      },
+      {
+        "file": "practice/reviewed/hsk3-v1.1.part07.b64",
+        "bytes": 10300,
+        "sha256": "27455a1993774d31615fc21dff35386203db2a0886d5f14da2f93e0c80edadc0"
+      },
+      {
+        "file": "practice/reviewed/hsk3-v1.1.part08.b64",
+        "bytes": 10300,
+        "sha256": "82b745eab1a381a0efa9bc1e3e5a5c7d218e6447513ec1dbdf812ff18c0dbbd7"
+      },
+      {
+        "file": "practice/reviewed/hsk3-v1.1.part09.b64",
+        "bytes": 10296,
+        "sha256": "84d4f0a9f01e3af352865a1c3f81003ba1bb9f93536f291d22d036bc9db273bd"
+      }
+    ],
+    "decodedJSONSHA256": "ebd6a11f9d54f3ab1dd43ffad14658e7dfda6c7fafac8287c9d825a70afb222a",
+    "gzipSHA256": "c2510865329f9121b93d3bead025c29ef37418e0c487e8394aa9d7427b11edba",
+    "metadataDisposition": "Payload-wide language extraction retained; QA/design/source metadata is separately marked. Unfetched alternate gzip/split chunks do not count as current practice.",
+    "mappedToUploadedBooks": false
+  }
+]

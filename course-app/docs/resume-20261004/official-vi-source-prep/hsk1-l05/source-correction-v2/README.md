@@ -1,0 +1,3 @@
+# HSK1 L5 source correction v2
+
+Complete 141-occurrence author revision. Independent original-PDF review requested exactly three physical fragment corrections (grammar2, 下班 and 电脑 glosses) and replacement of the paraphrased group-game Chinese context with its actual printed Chinese. All Vietnamese effective text, counts, word/POS/role bindings and original source image bytes remain unchanged. Relative image references gain `../` only because this isolated revision resides beneath immutable author v1. The original 17 paths remain byte-identical. Independent v2 acceptance is pending; no website comparison, production correction or activation occurs.

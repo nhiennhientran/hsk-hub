@@ -1,0 +1,3 @@
+HSK2第6课来源修正版v2
+
+原作者source-transcription.json及freeze完全保留。仅p052整段原漏第二个rất；root实际阅读独立原PDF4×截图后修复。116来源项、全部中文/角色/页脚/POS及其余115项保持。尚待remaining_media_audit独立接受，未对照或修改网站。

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-10-04T20:47:45.940233+00:00",
+  "status": "root-semantic-resolution-proposed-awaiting-independent-target-review",
+  "author": "root",
+  "erratumId": "hsk2-vi-20261004:l02:roleplay-bus-station",
+  "classification": "official-book-erratum",
+  "publisherIssuedCorrection": false,
+  "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+  "printedSource": {
+    "sourceId": "hsk2-official-vi:l02:p018:roleplay-instruction",
+    "pdfPage": 32,
+    "printedPage": 18,
+    "vi": "Hai người một nhóm, một người hỏi đường, một người trả lời. Người hỏi đường hỏi xem gần đây có bến xe buýt đến rạp chiếu phim Tân Tân không, bến xe buýt có xa không, đi đến rạp chiếu phim mất bao lâu... Cố gắng sử dụng tối đa từ ngữ và điểm ngôn ngữ đã học trong bài.",
+    "zh": "两人一组，一人问路，一人回答。问路的人询问附近有没有到新新电影院的公交车，车站远不远，到电影院要多长时间，等等。尽可能使用本课所学生词和语法。"
+  },
+  "rootPageEvidence": {
+    "file": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/pdf032-original-page-3x.png",
+    "sha256": "410d1848da1eed861ce1493b25c896816e67e73c76022a240a1d50fb49044104",
+    "rootActualVisualRead": true
+  },
+  "resolution": {
+    "newValue": "Hai người một nhóm, một người hỏi đường, một người trả lời. Người hỏi đường hỏi xem gần đây có xe buýt đến rạp chiếu phim Tân Tân không, bến xe buýt có xa không, đi đến rạp chiếu phim mất bao lâu... Cố gắng sử dụng tối đa từ ngữ và điểm ngôn ngữ đã học trong bài.",
+    "edit": "Remove bến only in the first question about a bus going to the cinema; retain the second bến xe buýt about station distance.",
+    "samePageCorroboration": "The printed Chinese instruction and example A ask 有没有到新新电影院的公交车, while the following question asks 车站远不远."
+  },
+  "consumerCoverage": {
+    "guardedInstructionTargets": [
+      "/sections/4/blocks/0/vi",
+      "/activities/25/fields/0/prompt/vi"
+    ],
+    "preservedEditorialNote": "/activities/25/note/vi",
+    "policy": "Correct only the full instruction target values; preserve the entire unrelated editorial activity note and all other grading/source fields."
+  },
+  "activeChange": false,
+  "runtimeManifestReviewAccepted": false,
+  "websiteLessonAlignmentAccepted": false,
+  "publicationApproved": false
+}

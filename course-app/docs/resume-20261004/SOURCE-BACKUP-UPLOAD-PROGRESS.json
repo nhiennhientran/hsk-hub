@@ -1,0 +1,3032 @@
+{
+  "schemaVersion": 1,
+  "status": "partial-source-backup-in-progress-not-full-checkpoint-or-release",
+  "createdAtUTC": "2026-10-04T22:27:28.998Z",
+  "targetLocalCommit": "4a8ed2d0fa9ec1fe2b4e14d3260a9c1b8a54bb4e",
+  "targetGitTree": "3b12e0126340dc51c2487376bf02158c35ec718b",
+  "baselineRemoteCommit": "6eb41feb4d1aa555114440f20d23e3a415cd8ed0",
+  "baselineGitTree": "540403892a89ed764b735b11859cd372d7e9a479",
+  "expectedFileCount": 890,
+  "completeDataFilesSaved": 287,
+  "verifiedUniqueBlobs": 229,
+  "expectedUniqueBlobs": 806,
+  "pendingFiles": [
+    {
+      "path": "course-app/docs/resume-20261004/ACTIVE-CHECKPOINT.json",
+      "gitBlobSHA": "dc2043d644845cd83f15cd9a2f46a93838d88d0b",
+      "bytes": 14067
+    },
+    {
+      "path": "course-app/docs/resume-20261004/B-SOURCE-AND-NATIVE-CHECKPOINT.json",
+      "gitBlobSHA": "0d1c903fcd06e1bd7f8b2652ecd97035805badb5",
+      "bytes": 13708
+    },
+    {
+      "path": "course-app/docs/resume-20261004/B-SOURCE-CHECKPOINT-STAGE.txt",
+      "gitBlobSHA": "096bcbf1435bc926db0d74aa3d1e52ef953cd8bb",
+      "bytes": 83626
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l06/source-correction-v2/source-transcription.json",
+      "gitBlobSHA": "69fd8aed13eb2d8f988d80befe27cbb1ba618122",
+      "bytes": 57287
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l06/source-detail-crop-evidence.json",
+      "gitBlobSHA": "15fac9709b0a802dcf5a30260baf8cb5e61af3b7",
+      "bytes": 4527
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l06/source-page-evidence.json",
+      "gitBlobSHA": "e3a8f54e7a587385eab404b55cf1af20cfde8096",
+      "bytes": 5713
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l06/source-transcription.json",
+      "gitBlobSHA": "c0137912039ed896347259782586e7b5e0358ab6",
+      "bytes": 56721
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/README.md",
+      "gitBlobSHA": "031a5a3a9e491b1f48642f00f1cf6de79fea6386",
+      "bytes": 3747
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/author-source.py",
+      "gitBlobSHA": "390111b51cce00a512cfac154c739990a9cb8b19",
+      "bytes": 6006
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/author-verification.json",
+      "gitBlobSHA": "a9ada19116f412cbc62f9e67cb39700294c38617",
+      "bytes": 18807
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/boundary-pdf022-p010-next-l02.png",
+      "gitBlobSHA": "753b80a78759b010d2cd19de5d6efd991644ffd3",
+      "bytes": 997737
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/locator-pdf010-footerVIII.png",
+      "gitBlobSHA": "af8dd6f88b2bd260ba606e985b53abb2c3066712",
+      "bytes": 902995
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/locator-pdf012-footerX.png",
+      "gitBlobSHA": "9a49bbf82c2f05dcb497d159ef34e33657b8187b",
+      "bytes": 780191
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf013-p001.png",
+      "gitBlobSHA": "a86a9fc9f98a74884fc15b042f9f8809e90c63cc",
+      "bytes": 2069133
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf014-p002.png",
+      "gitBlobSHA": "cf86aafca4239a3efae227a41c4b17a49601ae5a",
+      "bytes": 1365761
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf015-p003.png",
+      "gitBlobSHA": "d913be3f59eaa72be98d2e19ffd889d5a0684710",
+      "bytes": 2045354
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf016-p004.png",
+      "gitBlobSHA": "bd3a797b8d6b18f96b421899117cf6fb83844ecf",
+      "bytes": 1281024
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf017-p005.png",
+      "gitBlobSHA": "6938c2c16758c402acccd6c86a0c7541b14f5f96",
+      "bytes": 2102959
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf018-p006.png",
+      "gitBlobSHA": "f7d52c0cc8077c72dad5cbe0c06eff64ea06e586",
+      "bytes": 1210043
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf018-words17-22.png",
+      "gitBlobSHA": "199dae35244560eeb68fec5f9949e4448fc63e92",
+      "bytes": 819786
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf019-p007.png",
+      "gitBlobSHA": "578994530d09c52991e7bc3b29538edc00c4c2ac",
+      "bytes": 1924064
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf020-p008.png",
+      "gitBlobSHA": "7e0a7c6d4a3fbf3af2c799bba3c87d37c2585e08",
+      "bytes": 971794
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf021-p009.png",
+      "gitBlobSHA": "0148462a4ff76d5adbe89227f4923f3dbf731a72",
+      "bytes": 2325791
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf195-l01-texts1-2.png",
+      "gitBlobSHA": "dabde09e1b3167008e84b6ff113d449f482c5806",
+      "bytes": 1253625
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf195-l01-texts3-4.png",
+      "gitBlobSHA": "f950027cdee80cb85017218307fea57e18c5e004",
+      "bytes": 1086165
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/evidence/pdf195-p183.png",
+      "gitBlobSHA": "cd9052c989b2f43132334c9f13295a3e5612685b",
+      "bytes": 1687933
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/freeze-manifest.json",
+      "gitBlobSHA": "03b54c3d558a43d0d9ba5ace59e204c980e709a8",
+      "bytes": 5391
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/source-detail-crop-evidence.json",
+      "gitBlobSHA": "53b9c94275860772d187c5b3c5b90dad2d7b8579",
+      "bytes": 3983
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/source-locator-evidence.json",
+      "gitBlobSHA": "df53a8eab7f63f13f11539a4828867ca53c61c4b",
+      "bytes": 1789
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/source-page-evidence.json",
+      "gitBlobSHA": "22e4be228b1bfc712155a928d41391e4d664bf41",
+      "bytes": 11967
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/source-transcription.json",
+      "gitBlobSHA": "e0142e87affc2120270790a6ec2ae7c2b3f06e02",
+      "bytes": 97266
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/source-transcription.tsv",
+      "gitBlobSHA": "280c1ff5eff2a19103033841bcb59ce7686d9642",
+      "bytes": 23504
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/verify-source-transcription.py",
+      "gitBlobSHA": "049e151a2f91f6081c7a7b868f0a29fc69b2229e",
+      "bytes": 9304
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/README.md",
+      "gitBlobSHA": "a0df347169aeff8375cbcb95a16bf0e2852eb090",
+      "bytes": 3573
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/author-source.py",
+      "gitBlobSHA": "390111b51cce00a512cfac154c739990a9cb8b19",
+      "bytes": 6006
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/author-verification.json",
+      "gitBlobSHA": "f88bade411abe5d3e8cd625f8d80bc89df870583",
+      "bytes": 20870
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/boundary-pdf031-p019-next-l03.png",
+      "gitBlobSHA": "c4a263a24a3bb0287bbf54e367675669d8881241",
+      "bytes": 2161442
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/locator-pdf010-footerVIII.png",
+      "gitBlobSHA": "af8dd6f88b2bd260ba606e985b53abb2c3066712",
+      "bytes": 902995
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/locator-pdf012-footerX.png",
+      "gitBlobSHA": "9a49bbf82c2f05dcb497d159ef34e33657b8187b",
+      "bytes": 780191
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf022-p010.png",
+      "gitBlobSHA": "753b80a78759b010d2cd19de5d6efd991644ffd3",
+      "bytes": 997737
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf022-small-menu-glosses.png",
+      "gitBlobSHA": "25096a933518b0626bf2983e26cb0a86860d6d9b",
+      "bytes": 343011
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf023-p011.png",
+      "gitBlobSHA": "ace408af0e619aa16462cecebe8a06613d065d01",
+      "bytes": 2223547
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf024-grammar1-formula-subscripts.png",
+      "gitBlobSHA": "639e4b7292516d13135c96a0f841663363eb52cc",
+      "bytes": 212757
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf024-p012.png",
+      "gitBlobSHA": "1e3405b85bc41b7f2774707df9d9eea95ec7a783",
+      "bytes": 841835
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf025-p013.png",
+      "gitBlobSHA": "c292b375ae04bf34704f5b0d9fdb53cf4cc34ff3",
+      "bytes": 2145440
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf025-word09-suffix.png",
+      "gitBlobSHA": "445bb0bea32fa4367e16e7d852c47f68ab083eaf",
+      "bytes": 446973
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf026-p014.png",
+      "gitBlobSHA": "b5b867a8c9f3022ed90e492063ce209a0b193e5f",
+      "bytes": 1159265
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf027-p015.png",
+      "gitBlobSHA": "3afad4ead7baccb2b39fd4dcbebb7b47ed08eaf8",
+      "bytes": 2032975
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf028-p016.png",
+      "gitBlobSHA": "4a3add7a54d415dc4b49f24fce0e4e49062daa11",
+      "bytes": 1544619
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf029-p017.png",
+      "gitBlobSHA": "6b7816adb8d7f04e6466ba1b9b61f4b1b505dc23",
+      "bytes": 2303301
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf030-p018.png",
+      "gitBlobSHA": "0abeba42748c47b9cbce2aed01521090dc4a556b",
+      "bytes": 1446087
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf195-l02-text1-first-two.png",
+      "gitBlobSHA": "33b4f61a61c61cdec8a03c275044dba0bea6b9ec",
+      "bytes": 218071
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf195-p183.png",
+      "gitBlobSHA": "cd9052c989b2f43132334c9f13295a3e5612685b",
+      "bytes": 1687933
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf196-l02-texts1-2.png",
+      "gitBlobSHA": "3b8db261f67a3d251f2728a3cfc5f0f6eea57439",
+      "bytes": 1237215
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf196-l02-texts3-4.png",
+      "gitBlobSHA": "9f18d8347457e3e8c6d11b4a93fda0c3dbb2e6cd",
+      "bytes": 1155634
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/evidence/pdf196-p184.png",
+      "gitBlobSHA": "9bf0ddc2a350f1d009b0c1079e26557d696d3ad8",
+      "bytes": 1646425
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/freeze-manifest.json",
+      "gitBlobSHA": "f5f01aa8e6c5c4eb508f16afed8a3c8183c61eb7",
+      "bytes": 6282
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/source-detail-crop-evidence.json",
+      "gitBlobSHA": "ccb9acf1cf2689c41ea28c38ce7ccc9c4dc498f3",
+      "bytes": 7548
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/source-locator-evidence.json",
+      "gitBlobSHA": "08c116f60a90965f87a08fbc3d12ce78b2baef26",
+      "bytes": 1790
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/source-page-evidence.json",
+      "gitBlobSHA": "3c6aaf7faf8aa14a0b2d5be13e31a211efa53395",
+      "bytes": 13489
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/source-transcription.json",
+      "gitBlobSHA": "dd085ed40d8d1aa45cc57ca7b920150e56d7785a",
+      "bytes": 108711
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/source-transcription.tsv",
+      "gitBlobSHA": "4d8e79cf2f0edabd1465d16b5dee8a4d3e29724f",
+      "bytes": 26000
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/verify-source-transcription.py",
+      "gitBlobSHA": "c1e2b12443592abbd0a392774c7f82fe72777f7c",
+      "bytes": 10923
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/README.md",
+      "gitBlobSHA": "c7a2751f9928c12df0bfb060b7fdd766666535dd",
+      "bytes": 3846
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/author-source.py",
+      "gitBlobSHA": "390111b51cce00a512cfac154c739990a9cb8b19",
+      "bytes": 6006
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/author-verification.json",
+      "gitBlobSHA": "b2a933f55af5837baeccbc3a66cc033a8bf144e2",
+      "bytes": 25088
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/locator-pdf010-VIII.png",
+      "gitBlobSHA": "af8dd6f88b2bd260ba606e985b53abb2c3066712",
+      "bytes": 902995
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/locator-pdf012-X.png",
+      "gitBlobSHA": "9a49bbf82c2f05dcb497d159ef34e33657b8187b",
+      "bytes": 780191
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/locator-pdf041-029.png",
+      "gitBlobSHA": "84f14dbe0b129d59f0304b6557239a8dbe37d94c",
+      "bytes": 2190071
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf031-p019.png",
+      "gitBlobSHA": "c4a263a24a3bb0287bbf54e367675669d8881241",
+      "bytes": 2161442
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf032-p020.png",
+      "gitBlobSHA": "bb983e72f1f16b9544777b50d7037ba9b4fd1f4b",
+      "bytes": 1491126
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf032-words01-11.png",
+      "gitBlobSHA": "147c2320115c2c9a05b7883eaed2ed8d09290fef",
+      "bytes": 1630067
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf033-p021.png",
+      "gitBlobSHA": "ec3a9cc699a3b21681c821645659f0b7290656ba",
+      "bytes": 2035302
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf034-p022.png",
+      "gitBlobSHA": "781002ad92f40500832ba9f5b6069f87bef1e87e",
+      "bytes": 1453048
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf035-p023.png",
+      "gitBlobSHA": "bf135dd762645e539b4e287090b01424d5ba6eab",
+      "bytes": 2072288
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf036-p024.png",
+      "gitBlobSHA": "2321076c3bdf48249c618c22f745556c23546a4d",
+      "bytes": 897527
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf037-p025.png",
+      "gitBlobSHA": "c2b7c664097b62b505795cd46e96cd5268c14a1b",
+      "bytes": 2105108
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf037-text4-roles-words24-26.png",
+      "gitBlobSHA": "de40f36fc697df130d642987f2e00e741375e4cb",
+      "bytes": 2664577
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf038-p026.png",
+      "gitBlobSHA": "ec9c7b76c9b80ca9560031bfd4433153003fb7a8",
+      "bytes": 1361366
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf039-p027.png",
+      "gitBlobSHA": "e934964834dad36eb60c42a37a9e6486545f274c",
+      "bytes": 2110385
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf040-connected-summary-nine-rows.png",
+      "gitBlobSHA": "9e04cf59dd7b8644439da63e377cc2120f4f0b28",
+      "bytes": 2183310
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf040-p028.png",
+      "gitBlobSHA": "e1dce4a81f2ed94b72caef68e2c176e1a36ccf66",
+      "bytes": 1129490
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf196-l03-texts1-2.png",
+      "gitBlobSHA": "3492aa07111403318a780673ca848b1a54a14276",
+      "bytes": 1444116
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf196-p184.png",
+      "gitBlobSHA": "9bf0ddc2a350f1d009b0c1079e26557d696d3ad8",
+      "bytes": 1646425
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf197-l03-texts2-3-4.png",
+      "gitBlobSHA": "ea6f98871beebcaaa11a0b4b1f0ce41a0cba160b",
+      "bytes": 1273272
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/evidence/pdf197-p185.png",
+      "gitBlobSHA": "b05fa50981203aac344fce276edcfb20ed3ace8b",
+      "bytes": 1593795
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/freeze-manifest.json",
+      "gitBlobSHA": "4f09d42caec10db09224eb64c79bc23aa766e736",
+      "bytes": 6145
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/source-detail-crop-evidence.json",
+      "gitBlobSHA": "f2eff555a65eaca8363f7f61e38443f077d9b815",
+      "bytes": 6563
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/source-locator-evidence.json",
+      "gitBlobSHA": "e819a0b909748b0d7e6d531ce77dca27459ce9e3",
+      "bytes": 1718
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/source-page-evidence.json",
+      "gitBlobSHA": "8677056531c3ca53e5ac55dccd663eb4ee9ca31f",
+      "bytes": 14385
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/source-transcription.json",
+      "gitBlobSHA": "a685db41cf1c827de4bcc0292bbb06466e856ced",
+      "bytes": 120465
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/source-transcription.tsv",
+      "gitBlobSHA": "d1b341de84ba0f7253ce2d41c49d70ef9d46b8a7",
+      "bytes": 23852
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/verify-source-transcription.py",
+      "gitBlobSHA": "95851f91e418cbac9a982d99350dc5f35b81f8c9",
+      "bytes": 8885
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/README.md",
+      "gitBlobSHA": "5c4a5c1147abbda0849267b36699c07953a1239a",
+      "bytes": 3705
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/author-expected-scope.json",
+      "gitBlobSHA": "0820985e2c9d4812603b28e61534d1a5d21d5e95",
+      "bytes": 1643
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/author-source.py",
+      "gitBlobSHA": "390111b51cce00a512cfac154c739990a9cb8b19",
+      "bytes": 6006
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/author-verification.json",
+      "gitBlobSHA": "e4369c0c6bad2b675a6a88b90b9fde4da2f43d2f",
+      "bytes": 23348
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/locator-pdf010-VIII.png",
+      "gitBlobSHA": "af8dd6f88b2bd260ba606e985b53abb2c3066712",
+      "bytes": 902995
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/locator-pdf012-X.png",
+      "gitBlobSHA": "9a49bbf82c2f05dcb497d159ef34e33657b8187b",
+      "bytes": 780191
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/locator-pdf050-038.png",
+      "gitBlobSHA": "bc8b773feed9ce62faf69c61fa2252f27e18a286",
+      "bytes": 1369893
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf041-p029.png",
+      "gitBlobSHA": "84f14dbe0b129d59f0304b6557239a8dbe37d94c",
+      "bytes": 2190071
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf042-p030.png",
+      "gitBlobSHA": "6bde793e30cf206a4d2dd37f7ef4e8c7c6bbd65f",
+      "bytes": 1432972
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf043-grammar1-formulas.png",
+      "gitBlobSHA": "b5d4276232e2c0cbe8466dc748caefd190e46a6f",
+      "bytes": 2384600
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf043-p031.png",
+      "gitBlobSHA": "fdfda7c3075647691fbe92cfc8200f07bda26183",
+      "bytes": 2470792
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf044-p032.png",
+      "gitBlobSHA": "40c2b2d866d08c6eb7d37d54fa61c7ee93b20833",
+      "bytes": 1456663
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf045-p033.png",
+      "gitBlobSHA": "2c1b403a11ea4aa0401f4c6851840529aa56c979",
+      "bytes": 2188057
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf045-words18-24.png",
+      "gitBlobSHA": "e271398664abc29bb21372375bbe1fd7146d15a5",
+      "bytes": 790158
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf046-grammar3-formulas.png",
+      "gitBlobSHA": "2dd88505bf3df26b1eee46a58af1e43be222a436",
+      "bytes": 1107197
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf046-p034.png",
+      "gitBlobSHA": "c25645b2fa649f43b9d0e9cdfb81410f5c526493",
+      "bytes": 771372
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf047-p035.png",
+      "gitBlobSHA": "666937162acf5db1ae44a702a952265fb0243724",
+      "bytes": 2070392
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf048-p036.png",
+      "gitBlobSHA": "55e83ac915893d8000bdb3e7dfff9df0ea774d6c",
+      "bytes": 922081
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf049-complete-activity.png",
+      "gitBlobSHA": "1ef23bf7a546331c8275cbafdf3cc10027868012",
+      "bytes": 1377981
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf049-p037.png",
+      "gitBlobSHA": "d5e9a6ce73e6393d80da994ab6b78bc6be8ef010",
+      "bytes": 2502961
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf197-l04-left-texts1-2.png",
+      "gitBlobSHA": "c855358c7ef7a29030ec0c3e4db3912c11d2eae5",
+      "bytes": 1036516
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf197-l04-right-texts2-3-4start.png",
+      "gitBlobSHA": "f45ec3155d79e154c40591848ed28c75eb9a1cb2",
+      "bytes": 1007378
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf197-p185.png",
+      "gitBlobSHA": "b05fa50981203aac344fce276edcfb20ed3ace8b",
+      "bytes": 1593795
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf198-l04-text4-continuation.png",
+      "gitBlobSHA": "ecb550840ce92b122f3fb081c92d1c62d52348f5",
+      "bytes": 360682
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/evidence/pdf198-p186.png",
+      "gitBlobSHA": "af365605c9e855260f737bb04fd52955d59bbe2d",
+      "bytes": 1705926
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/freeze-manifest.json",
+      "gitBlobSHA": "16a4c6adbe9ece7aec79418b3c556b2b4a8d2e9e",
+      "bytes": 6509
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/source-detail-crop-evidence.json",
+      "gitBlobSHA": "c12c3ab866cd862472e6bec9899a2d83a28105ec",
+      "bytes": 8849
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/source-locator-evidence.json",
+      "gitBlobSHA": "d61c70a6e40478bb9260990b35d53966ca609681",
+      "bytes": 1681
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/source-page-evidence.json",
+      "gitBlobSHA": "4c1875238e1015f6d99f1bad0b73cf312d5801e3",
+      "bytes": 13045
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/source-transcription.json",
+      "gitBlobSHA": "0f6cc407d508a415fa934eab3392f5d81bdcfb8c",
+      "bytes": 108500
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/source-transcription.tsv",
+      "gitBlobSHA": "d8a53f0491b178992049b41a2b65eedc2500f5d5",
+      "bytes": 22088
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l04/verify-source-transcription.py",
+      "gitBlobSHA": "c88378b98aabdecbda0dd8358303b993d766ab63",
+      "bytes": 9287
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/actual-report-guard.json",
+      "gitBlobSHA": "86eab98f4930174faa2ef36e49c54571a2943a6a",
+      "bytes": 8792
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/audit-b10-native.mjs",
+      "gitBlobSHA": "acd816cd2237bc2abcbb45f2e11de5a4b4e42e2f",
+      "bytes": 947
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/audit-b10-success.py",
+      "gitBlobSHA": "1713c109606b88dda327fddd1a325a304e2949f7",
+      "bytes": 7394
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/after.json",
+      "gitBlobSHA": "698f2ac61f5b87500728ae2ddefee3cf0dd151c2",
+      "bytes": 15105
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/before.json",
+      "gitBlobSHA": "2142b3bc33044e27ac7af80a162294163edaa739",
+      "bytes": 637357
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/browser-install.command.json",
+      "gitBlobSHA": "c042bf9084f11f1b5b5d2cc248d0c4f27ff17a82",
+      "bytes": 543
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/browser-install.log",
+      "gitBlobSHA": "1616a9e42fa50dcf2a3245b6436868ad8e4ff334",
+      "bytes": 18488
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/builds.json",
+      "gitBlobSHA": "d3c64edd1e9e4fb86abc284ab7fd42b3085bac9c",
+      "bytes": 555678
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/course-build.command.json",
+      "gitBlobSHA": "a16d40c8d00e5c683de76c822b2cea13a5881a4c",
+      "bytes": 563
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/course-build.log",
+      "gitBlobSHA": "117401db72d8b7bebdae0e6450ee676e022994d7",
+      "bytes": 30133
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/course-install.command.json",
+      "gitBlobSHA": "2bf962c4c3995e8dea306e24631964a1a0de3272",
+      "bytes": 506
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/course-install.log",
+      "gitBlobSHA": "396400e23499061cc4d21db53f1e3493874f0091",
+      "bytes": 140
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/course-source.command.json",
+      "gitBlobSHA": "414f0c815cdc54761f7bc60fa41c4e52cbefce60",
+      "bytes": 528
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/course-types.command.json",
+      "gitBlobSHA": "16949f32d2163c7c3be8b794890f63944bd22ccf",
+      "bytes": 515
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/course-units.command.json",
+      "gitBlobSHA": "6ba077dd2672cb31529bd3fd16a3f9c0b2c66a1d",
+      "bytes": 506
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/course-units.log",
+      "gitBlobSHA": "79521bbae08afc1e823f0d0087e1b0b26311f7ed",
+      "bytes": 20801
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/font-install.command.json",
+      "gitBlobSHA": "f45a4b5a010488f50d8f9350750d146400365ee6",
+      "bytes": 522
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/font-install.log",
+      "gitBlobSHA": "c0980684217e019479e8966a31000ae59fcadf4b",
+      "bytes": 1708
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-asset-bytes.command.json",
+      "gitBlobSHA": "dc709fd618bb1d3d2a2d977b34b22bcaa028ddc9",
+      "bytes": 529
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-build.command.json",
+      "gitBlobSHA": "81feba07eb185765751d084f2fd1cacf2c5dd495",
+      "bytes": 511
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-build.log",
+      "gitBlobSHA": "3cc24a38be8d93ab530a7122a827e8beffa62a2e",
+      "bytes": 7708
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-install.command.json",
+      "gitBlobSHA": "72ffbcc6a638a8d9d776cb27fd7c76a61d578cbc",
+      "bytes": 500
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-install.log",
+      "gitBlobSHA": "cae0b0d775919d407cccdfd6ae29c22ab1d320c8",
+      "bytes": 143
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-migration-fixtures.command.json",
+      "gitBlobSHA": "47ac8b302b3b5ed8332f6d12bce51b9c5a954956",
+      "bytes": 545
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-native.command.json",
+      "gitBlobSHA": "9b61d6f93797643403dc0105c9977f542dff8ebd",
+      "bytes": 620
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-native.log",
+      "gitBlobSHA": "84f144fec685322cc56eb7dc8b021a1a8b2d867f",
+      "bytes": 610
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-results.json",
+      "gitBlobSHA": "869cfc7de93d4ecacd30e73bfce4ed0bc7643b24",
+      "bytes": 8395
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-source.command.json",
+      "gitBlobSHA": "97aae030a65b191eecabb7042ef43eba1b749949",
+      "bytes": 520
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-types.command.json",
+      "gitBlobSHA": "63415688408d6b47b7430d5f38434f8cbcc564eb",
+      "bytes": 509
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-units.command.json",
+      "gitBlobSHA": "36c41f3cfcd1789ab285a4499090dcf1759f5056",
+      "bytes": 500
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk1-units.log",
+      "gitBlobSHA": "13f7d36c17d4f5b686a2ebc258c321831d3a72b5",
+      "bytes": 65232
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk23-native-output/official-vi-history-HSK2-h-6b53f-uses-its-own-saved-snapshot-chromium/test-finished-1.png",
+      "gitBlobSHA": "94af8e99569c143f0a4265b21ad9cee2acf2eb98",
+      "bytes": 114203
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk23-native-output/official-vi-history-HSK2-h-80b8e-uses-its-own-saved-snapshot-chromium/test-finished-1.png",
+      "gitBlobSHA": "94af8e99569c143f0a4265b21ad9cee2acf2eb98",
+      "bytes": 114203
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk23-native-output/official-vi-history-HSK2-l-55287-eparates-current-transcript-chromium/test-finished-1.png",
+      "gitBlobSHA": "32949a938d5be10bd52bf0c59a78a266d6d7a594",
+      "bytes": 90028
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk23-native-output/official-vi-history-HSK2-l-f8cd3-eparates-current-transcript-chromium/test-finished-1.png",
+      "gitBlobSHA": "b41780d6f91967d0a3d5eb51659f3dec793a5e4d",
+      "bytes": 83117
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk23-native-output/official-vi-history-HSK3-h-b26fa-uses-its-own-saved-snapshot-chromium/test-finished-1.png",
+      "gitBlobSHA": "f7d771638d55c230d856221fabb6c5733c30b4b5",
+      "bytes": 118466
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk23-native-output/official-vi-history-HSK3-h-cc5e1-uses-its-own-saved-snapshot-chromium/test-finished-1.png",
+      "gitBlobSHA": "f7d771638d55c230d856221fabb6c5733c30b4b5",
+      "bytes": 118466
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk23-native-output/official-vi-history-HSK3-l-bfaf9-eparates-current-transcript-chromium/test-finished-1.png",
+      "gitBlobSHA": "f7ef519e4cb06ac134c7e55b6e49ac71a0fc1532",
+      "bytes": 83312
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk23-native-output/official-vi-history-HSK3-l-c00f4-eparates-current-transcript-chromium/test-finished-1.png",
+      "gitBlobSHA": "62c7de8f9115e51104f451a4059a0382dbbe8eaf",
+      "bytes": 88030
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk23-native.command.json",
+      "gitBlobSHA": "e48c0a2ce766055ac4d58e090867cc9f60493c73",
+      "bytes": 626
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk23-native.log",
+      "gitBlobSHA": "addffeb123effb452c9f553a0285c0347a38deaa",
+      "bytes": 1528
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/hsk23-results.json",
+      "gitBlobSHA": "9b72c3d31a6c784a54dacf5d9e944844bc1e383b",
+      "bytes": 15863
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/native-fixture-types.command.json",
+      "gitBlobSHA": "ad9373f1a00c250cab283dcdee3d439428b02f89",
+      "bytes": 579
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/native-report-guards.command.json",
+      "gitBlobSHA": "6c81c587014b02d8de344ef05b5a45f9f1550727",
+      "bytes": 574
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/chromium/native-report-guards.log",
+      "gitBlobSHA": "6e6b5834d22ca57833dd6d3bc84d4c4e6cab423d",
+      "bytes": 733
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/decoded-raw-chunks.json",
+      "gitBlobSHA": "7cadbb206d0c54a38ab9199caa3e2348ad9bc763",
+      "bytes": 127
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/original-png-map.json",
+      "gitBlobSHA": "1031a1f65a015bd4bd2733cbe729ad8fa88583d2",
+      "bytes": 12309
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/root-acceptance.json",
+      "gitBlobSHA": "b7c11ddd7de03c8760ca63b3cbe56974bbc00b3f",
+      "bytes": 46142
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/after.json",
+      "gitBlobSHA": "57b9d0ffd6b55305f3a6cb7fc008aae8a5b2edf7",
+      "bytes": 14998
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/before.json",
+      "gitBlobSHA": "415b4c2da0eaf8b94dda9bf993615f1a24b19d0b",
+      "bytes": 637355
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/browser-install.command.json",
+      "gitBlobSHA": "35b3e9010d95558b6a54a3515b221745b8be6e5e",
+      "bytes": 537
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/browser-install.log",
+      "gitBlobSHA": "16edb8d00c1b37cdd040b34fba55b09982ccf709",
+      "bytes": 85076
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/builds.json",
+      "gitBlobSHA": "20009caeb593fd6733f487d01e1ae5964a0a7d25",
+      "bytes": 555638
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/course-build.command.json",
+      "gitBlobSHA": "ac9d77b67351f84d1fadf6ff61d2d4609e3bc2b0",
+      "bytes": 559
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/course-build.log",
+      "gitBlobSHA": "88f51988aea7b6b07788d7463803501aa39bfa8c",
+      "bytes": 30133
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/course-install.command.json",
+      "gitBlobSHA": "373c7ef5ba885d1296abf28d585e89bc25df1a4d",
+      "bytes": 502
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/course-install.log",
+      "gitBlobSHA": "396400e23499061cc4d21db53f1e3493874f0091",
+      "bytes": 140
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/course-source.command.json",
+      "gitBlobSHA": "9e19f39cb8a9ab8dfe0bd8e7f422cc10a4a123fd",
+      "bytes": 524
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/course-types.command.json",
+      "gitBlobSHA": "748c85cc4d9b560ecb839f1fbb0b3ffebdf87a33",
+      "bytes": 511
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/course-units.command.json",
+      "gitBlobSHA": "ab40872783c46bc9d3e5da63d932e471c1a4ce62",
+      "bytes": 502
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/course-units.log",
+      "gitBlobSHA": "1ce91a7052a4207b0206ca2763323703c69765b8",
+      "bytes": 20814
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/font-install.command.json",
+      "gitBlobSHA": "aedb88186b86426c445c62a3a60dcb41fda6882e",
+      "bytes": 518
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/font-install.log",
+      "gitBlobSHA": "e1bb47d398ee5acb7e7873fc47fd57319fc93208",
+      "bytes": 1708
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-asset-bytes.command.json",
+      "gitBlobSHA": "4cab3b16b229cee456dda15e6fcc97b809ff6cd1",
+      "bytes": 525
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-build.command.json",
+      "gitBlobSHA": "22dc26fd37a1f9ed63fab259bda48b9241d15184",
+      "bytes": 507
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-build.log",
+      "gitBlobSHA": "50bf4cb1403dafe8821d0c09f3c4e1703a770b02",
+      "bytes": 7708
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-install.command.json",
+      "gitBlobSHA": "ac6cf52006c395d327f53f40f58de7c660fb9ed0",
+      "bytes": 496
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-install.log",
+      "gitBlobSHA": "ac8b1428340d783195afac53d6d0abb9fd2de29b",
+      "bytes": 143
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-migration-fixtures.command.json",
+      "gitBlobSHA": "8f37bcdad49ee47fbbe5e3fda38aff1a19b6ec2b",
+      "bytes": 541
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-native.command.json",
+      "gitBlobSHA": "ed443d0bf325697e549681eb2522c02d31a36d6c",
+      "bytes": 614
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-native.log",
+      "gitBlobSHA": "cb4a15ea06f8af13017498bbea39cdbdb5f529b8",
+      "bytes": 605
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-results.json",
+      "gitBlobSHA": "b77346454d55d655b0c08369382f88acacd10a0d",
+      "bytes": 8353
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-source.command.json",
+      "gitBlobSHA": "28464fe33994aa14d0cb10ab5d8c874e586875fb",
+      "bytes": 516
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-types.command.json",
+      "gitBlobSHA": "2083b1b7631f0057264718ba83df4ec63f51c2e8",
+      "bytes": 505
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-units.command.json",
+      "gitBlobSHA": "19853b47c842c1b3d351f2b45a1a13cd75f4d7c9",
+      "bytes": 496
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk1-units.log",
+      "gitBlobSHA": "7bddd3e0519ae9c9dfa82c6d3bbeeca0e93f6091",
+      "bytes": 65229
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk23-native-output/official-vi-history-HSK2-h-6b53f-uses-its-own-saved-snapshot-webkit/test-finished-1.png",
+      "gitBlobSHA": "c3b82501f6d3e87ca2025b372f8e83926e85a136",
+      "bytes": 132403
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk23-native-output/official-vi-history-HSK2-h-80b8e-uses-its-own-saved-snapshot-webkit/test-finished-1.png",
+      "gitBlobSHA": "c3b82501f6d3e87ca2025b372f8e83926e85a136",
+      "bytes": 132403
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk23-native-output/official-vi-history-HSK2-l-55287-eparates-current-transcript-webkit/test-finished-1.png",
+      "gitBlobSHA": "d3331e55eccf0f7a408931e2a569941d0e6380b0",
+      "bytes": 102184
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk23-native-output/official-vi-history-HSK2-l-f8cd3-eparates-current-transcript-webkit/test-finished-1.png",
+      "gitBlobSHA": "e02f0e129ad39ee86b070c4201802324e5fa962b",
+      "bytes": 94602
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk23-native-output/official-vi-history-HSK3-h-b26fa-uses-its-own-saved-snapshot-webkit/test-finished-1.png",
+      "gitBlobSHA": "10b255095cbe6827c21b39431fe6f48ead729395",
+      "bytes": 137903
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk23-native-output/official-vi-history-HSK3-h-cc5e1-uses-its-own-saved-snapshot-webkit/test-finished-1.png",
+      "gitBlobSHA": "10b255095cbe6827c21b39431fe6f48ead729395",
+      "bytes": 137903
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk23-native-output/official-vi-history-HSK3-l-bfaf9-eparates-current-transcript-webkit/test-finished-1.png",
+      "gitBlobSHA": "05aadf305bbb4efa90e490c0c3b649a14838740c",
+      "bytes": 94271
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk23-native-output/official-vi-history-HSK3-l-c00f4-eparates-current-transcript-webkit/test-finished-1.png",
+      "gitBlobSHA": "734f73b3293c2911a54eabd19fd887190386aa29",
+      "bytes": 99269
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk23-native.command.json",
+      "gitBlobSHA": "528bc506c0e56a7d318cf9d3d1906f197731ddb2",
+      "bytes": 620
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk23-native.log",
+      "gitBlobSHA": "1bd45ea9372ec691f2c1f473eebfb44316265560",
+      "bytes": 1512
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/hsk23-results.json",
+      "gitBlobSHA": "7a756b0e0ed3706caebf030bd4e398a7da9f6cfd",
+      "bytes": 15791
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/native-fixture-types.command.json",
+      "gitBlobSHA": "21dd99d6c72b841338a6ed24da7b07e01e1d8d9d",
+      "bytes": 575
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/native-report-guards.command.json",
+      "gitBlobSHA": "6028424337e1980cb054dac2a46ebd77ac6db032",
+      "bytes": 570
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-adapter-ci/success-37237442946/webkit/native-report-guards.log",
+      "gitBlobSHA": "56c50c782e5afc2cde7347f9d30246a86b04fb36",
+      "bytes": 732
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/b10-errata-resolutions/construction-freeze.json",
+      "gitBlobSHA": "1c28a0f4e24df030c1e9b7b28492afdd24e224af",
+      "bytes": 816
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/b10-errata-resolutions/freeze-manifest.json",
+      "gitBlobSHA": "f90520f3f9717a625d4aa1c9b4b2aa97419a7b1d",
+      "bytes": 705
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/b10-errata-resolutions/hsk3-three-construction-review.json",
+      "gitBlobSHA": "787bac39dca40c633bd6916c6898d1504493266d",
+      "bytes": 8385
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/b10-errata-resolutions/review-hsk3-construction.mjs",
+      "gitBlobSHA": "5175e424a725d0604eefe3922a4c3b120af42cfe",
+      "bytes": 6666
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/b10-errata-resolutions/semantic-review.json",
+      "gitBlobSHA": "3644908de4c3c6033bd5f729c03252b72057e4d7",
+      "bytes": 11598
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/b10-errata-resolutions/verification.json",
+      "gitBlobSHA": "63e2531da6d1aa5e2bd5fdbbc340bf72619a851e",
+      "bytes": 2945
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/README.md",
+      "gitBlobSHA": "07301b0f2f74204ae525a561e4daf703df14c3a4",
+      "bytes": 1933
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/STAGE-FILES.txt",
+      "gitBlobSHA": "255cb3b94231905ebe6bacba2c20560e8123a0b7",
+      "bytes": 1515
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/crop-manifest.json",
+      "gitBlobSHA": "acac1fd814f0e8d603d6253c41d7be8abac338fb",
+      "bytes": 793
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/freeze-manifest.json",
+      "gitBlobSHA": "37785211c00ec360524930c8aa8960fdd35de868",
+      "bytes": 2915
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/independent-reading.tsv",
+      "gitBlobSHA": "cc5fb3114e56bbc8b6bcffb7afc7de928c93bcaa",
+      "bytes": 5395
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/render-manifest.json",
+      "gitBlobSHA": "bffdd9f64de2114a44f02594f46cb2614f7431eb",
+      "bytes": 1567
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/renders/pdf-017-independent.png",
+      "gitBlobSHA": "9a42a624cf7d9cafdeeb33be0ff60caa2a7626ef",
+      "bytes": 3415984
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/renders/pdf-018-independent.png",
+      "gitBlobSHA": "f194dfc5908fef9793278e621c92e657371b40a4",
+      "bytes": 2699461
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/renders/pdf-018-word-table-independent.png",
+      "gitBlobSHA": "b5688ca22079f11a79ab5e22297873270e547ab5",
+      "bytes": 2017339
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/renders/pdf-019-independent.png",
+      "gitBlobSHA": "ea0872255e7c4a8db6100f3d253a01ddffde7330",
+      "bytes": 3964673
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/renders/pdf-019-word-table-independent.png",
+      "gitBlobSHA": "8a40b2955c915de2420f36c1a8fb0be8ff00bea5",
+      "bytes": 893553
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/renders/pdf-020-independent.png",
+      "gitBlobSHA": "e2a67430f02985583b7d7ceba2f0f4d4589efd92",
+      "bytes": 1455765
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/review.json",
+      "gitBlobSHA": "b340ea008abe6d002077ef4a90ed7c193dcb4d47",
+      "bytes": 63713
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/verification.log",
+      "gitBlobSHA": "f1abdba8adf3c5b90827ea7a508178e1357fe7d0",
+      "bytes": 325
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/verify-review.py",
+      "gitBlobSHA": "b83779ba2bb66a2cdb630ce6fa48891f30a032e5",
+      "bytes": 10750
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/README.md",
+      "gitBlobSHA": "393372c2441b6670f2041f56e9fe9448ab35bcbf",
+      "bytes": 2244
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/STAGE-FILES.txt",
+      "gitBlobSHA": "35ed0759d24487e3345f0a81acf688a56a06ecec",
+      "bytes": 1693
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/crop-manifest.json",
+      "gitBlobSHA": "e85243958436f98891493e8fb3b7647cf100c797",
+      "bytes": 780
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/freeze-manifest.json",
+      "gitBlobSHA": "b90b5d218643ef075a3b79d82d6895ca2df6122c",
+      "bytes": 3236
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/independent-observations.json",
+      "gitBlobSHA": "c5fcdd5f44d73f29262bb06cd96c052a50706bd6",
+      "bytes": 4232
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/independent-reading.tsv",
+      "gitBlobSHA": "4f54bc1cd9d6811b9a02184539b1c1230fad148a",
+      "bytes": 6518
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/render-manifest.json",
+      "gitBlobSHA": "9460c1f414b08383bf6b1e9f46ced016d4d38a9d",
+      "bytes": 1571
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/renders/pdf-021-independent.png",
+      "gitBlobSHA": "5bea3c7c77359c013c1ec03b977df695d4749e4c",
+      "bytes": 3542204
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/renders/pdf-022-independent.png",
+      "gitBlobSHA": "12b53f5665f30069c4ec584299d39b2f1a32072c",
+      "bytes": 2174116
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/renders/pdf-023-independent.png",
+      "gitBlobSHA": "d118fef822072682858ef03a89294a48a236f6f5",
+      "bytes": 4249666
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/renders/pdf-023-tip-independent.png",
+      "gitBlobSHA": "828d3b49f55073657ab40c6f8ac7df9b00fa2bf5",
+      "bytes": 567762
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/renders/pdf-024-grammar-independent.png",
+      "gitBlobSHA": "35579ecae00c2adf41125393702fde47905f4d56",
+      "bytes": 394736
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/renders/pdf-024-independent.png",
+      "gitBlobSHA": "e771b520c01e4aad6eefd9255c309788e7d5eda0",
+      "bytes": 2018779
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/renders/pdf-025-independent.png",
+      "gitBlobSHA": "886b7fd40008e70bec0edce65e325c225a4eab65",
+      "bytes": 3551482
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/review.json",
+      "gitBlobSHA": "14026888d1449a341b066740874189055896bcac",
+      "bytes": 73402
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/verification.log",
+      "gitBlobSHA": "50bc7708d8f1be6ae825ef372a4025a325cb9c9c",
+      "bytes": 202
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/verify-review.py",
+      "gitBlobSHA": "9fd527b732b25d4486b8be0ac0111bf1be4ca761",
+      "bytes": 7356
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/README.md",
+      "gitBlobSHA": "20790ea5d0931a9c3566a4b603972a6e5ca31668",
+      "bytes": 2625
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/STAGE-FILES.txt",
+      "gitBlobSHA": "cb9bfcc8b3a6e3762cea16dac8cd307736eecb06",
+      "bytes": 2090
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/crop-manifest.json",
+      "gitBlobSHA": "a3de6d525ab034d212d448774774f5110f874029",
+      "bytes": 1091
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/freeze-manifest.json",
+      "gitBlobSHA": "7c8bd289dd004650dc85e04e23b645ad5901946a",
+      "bytes": 3935
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/independent-observations.json",
+      "gitBlobSHA": "76bd4091fa6908dddc88a5dcea3c152c3fff153c",
+      "bytes": 6544
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/independent-reading.tsv",
+      "gitBlobSHA": "dc437b7d478d1f003804d3d8576ef2440526840d",
+      "bytes": 10735
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/render-manifest.json",
+      "gitBlobSHA": "758b51a8886f9763532d9a9e775d88dc506a2ab6",
+      "bytes": 2339
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/renders/pdf-026-independent.png",
+      "gitBlobSHA": "f8c4a6ca1934639d484460ba2ebf19d2301eceaa",
+      "bytes": 2400059
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/renders/pdf-027-independent.png",
+      "gitBlobSHA": "c0e2117cfb48fabed3c23955cca50afa5bddc936",
+      "bytes": 3913925
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/renders/pdf-027-role-read-independent.png",
+      "gitBlobSHA": "57a68e00d25eee7abecdfad0044b22c5199ed389",
+      "bytes": 116005
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/renders/pdf-028-independent.png",
+      "gitBlobSHA": "fa1a2428bab69c384ae623f00a9a8afbfd7d6444",
+      "bytes": 1736438
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/renders/pdf-029-independent.png",
+      "gitBlobSHA": "ec9cceb1f5afe72c6f22e65c48d6f1e68c42f4e7",
+      "bytes": 4201087
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/renders/pdf-030-independent.png",
+      "gitBlobSHA": "49af13b8bc326d6392b6a655e2c2271271abbf6f",
+      "bytes": 2550316
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/renders/pdf-030-word-table-independent.png",
+      "gitBlobSHA": "03e8227d4b72faf007152d8b3c8f7626c5b381dc",
+      "bytes": 2323595
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/renders/pdf-031-independent.png",
+      "gitBlobSHA": "237351b9fc1d8704a3335306bfca7a6f4916bca2",
+      "bytes": 3938333
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/renders/pdf-032-independent.png",
+      "gitBlobSHA": "d3e14935eb0f69e90fb5e3f9f0c37282703a1998",
+      "bytes": 1311884
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/renders/pdf-033-independent.png",
+      "gitBlobSHA": "09b522f502401c5b1129e6030bfba8982a7d7e8b",
+      "bytes": 2096769
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/renders/pdf-033-summary-independent.png",
+      "gitBlobSHA": "9af6202376652a7c85f0f2abb1af61decdf4842d",
+      "bytes": 1514877
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/repair-closure-v2/README.md",
+      "gitBlobSHA": "a3ead8e7dcd5d9925e28939bb7db7bb343584041",
+      "bytes": 1521
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/repair-closure-v2/STAGE-FILES.txt",
+      "gitBlobSHA": "4b1c56e18db4a0ae46591dbaa044e6c36baf6131",
+      "bytes": 921
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/repair-closure-v2/exact-json-delta.json",
+      "gitBlobSHA": "db9b6fc6533cb56909fc33708c65b04aec2be862",
+      "bytes": 17439
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/repair-closure-v2/freeze-manifest.json",
+      "gitBlobSHA": "ad74ac439076a11de9bf5bedd6c7adbff870df6c",
+      "bytes": 1459
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/repair-closure-v2/review.json",
+      "gitBlobSHA": "dc3ef61590b363726e3300405887ea3af1f3db94",
+      "bytes": 27378
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/repair-closure-v2/verification.log",
+      "gitBlobSHA": "048257ca87905ba3d62e8385533a1b8dd110baa7",
+      "bytes": 204
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/repair-closure-v2/verify-correction.py",
+      "gitBlobSHA": "4e1885c471e3c8c5b0a94c1a285837a61027864d",
+      "bytes": 6608
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/review.json",
+      "gitBlobSHA": "13f6f5838b28ea1088c099a79f6c15da8eb2ded8",
+      "bytes": 116009
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/verification.log",
+      "gitBlobSHA": "c4b743943c983df4ad3913e4f2de8b95cd357f4e",
+      "bytes": 190
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/verify-review.py",
+      "gitBlobSHA": "3168e695a88854d022e902625e5d34237ccc3a92",
+      "bytes": 7743
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/README.md",
+      "gitBlobSHA": "7a04edfca7083adb0fdc33e43086d76904266fda",
+      "bytes": 1281
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/STAGE-FILES.txt",
+      "gitBlobSHA": "0b4c247ea01976e35b985ddda9ed480f82be0330",
+      "bytes": 2029
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/crop-manifest.json",
+      "gitBlobSHA": "7551d453728ba0d942d1192a9c80c319d24351aa",
+      "bytes": 1277
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/freeze-manifest.json",
+      "gitBlobSHA": "c323890f5ab77db3557a49bf1234f73babdcfe3e",
+      "bytes": 3786
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/independent-observations.json",
+      "gitBlobSHA": "37ff295f7bc594bf69c88d942f3e4ba944377702",
+      "bytes": 13584
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/render-manifest.json",
+      "gitBlobSHA": "09584d212be41616dbe4879280f747cc9bdcdc7e",
+      "bytes": 2159
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/renders/pdf-043-independent.png",
+      "gitBlobSHA": "153444c0ac60e013575da8b94aa007cb38e60a5b",
+      "bytes": 3630830
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/renders/pdf-044-independent.png",
+      "gitBlobSHA": "0c55c72c8a7e0f33a0807dab1053a7b01168d16d",
+      "bytes": 2625306
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/renders/pdf-045-grammar-02-lines-independent.png",
+      "gitBlobSHA": "7113996e02cfa86e0e952dca454da275b9356bb1",
+      "bytes": 1228412
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/renders/pdf-045-independent.png",
+      "gitBlobSHA": "9110a7c517d945ad5b1c810343de952cbeaf95bb",
+      "bytes": 3029576
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/renders/pdf-046-independent.png",
+      "gitBlobSHA": "d63bbe64037f3a40203e3536bf10898db7e2af1a",
+      "bytes": 2270696
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/renders/pdf-047-independent.png",
+      "gitBlobSHA": "f14a9bc6163f0226fa7f86d7d2f91488960469ed",
+      "bytes": 3578091
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/renders/pdf-048-independent.png",
+      "gitBlobSHA": "97510d4c914af36db3894ad3cf64f6cd82c3d52d",
+      "bytes": 2980724
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/renders/pdf-048-word-gloss-lines-independent.png",
+      "gitBlobSHA": "7fbfb4770c6b154da156eca76ab6ebaac840fb3c",
+      "bytes": 1847078
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/renders/pdf-049-independent.png",
+      "gitBlobSHA": "ca3ba494c1118fc7473668b372f748e96339683f",
+      "bytes": 3957696
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/renders/pdf-050-activity-zh-context-independent.png",
+      "gitBlobSHA": "c36135bdf75ee8d6338bb0b448677bd0756f969f",
+      "bytes": 204675
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/renders/pdf-050-independent.png",
+      "gitBlobSHA": "fbe828ab53ddda00a3aaef5dff204929f6d626d6",
+      "bytes": 1512261
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/repair-closure-v2/README.md",
+      "gitBlobSHA": "2aff1b55f9ff80a5ef771bbaab5a5db023464bef",
+      "bytes": 677
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/repair-closure-v2/STAGE-FILES.txt",
+      "gitBlobSHA": "506325eadde02421aa872fb8ca6e1054a74647b5",
+      "bytes": 823
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/repair-closure-v2/freeze-manifest.json",
+      "gitBlobSHA": "f60a0e9263f5226f236fdf5850afbd24180a8c78",
+      "bytes": 1290
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/repair-closure-v2/review.json",
+      "gitBlobSHA": "2700d82a957ec3f2e2dd5a8813ed0727fbb4ad16",
+      "bytes": 38842
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/repair-closure-v2/verify-correction.log",
+      "gitBlobSHA": "246b16bcc61f5b306c317b9d5922183c54324409",
+      "bytes": 253
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/repair-closure-v2/verify-correction.py",
+      "gitBlobSHA": "09959e7cf2cc2fb32cbf30b4736de08f50823f1b",
+      "bytes": 2612
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/review.json",
+      "gitBlobSHA": "5884bc7471a909fee9696f045c91ccfd2950a834",
+      "bytes": 75129
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/verify-review.log",
+      "gitBlobSHA": "ac039a10bd8b1521da8a64a0396c180edf340df5",
+      "bytes": 224
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/verify-review.py",
+      "gitBlobSHA": "84eec85ea10bbfd03541ee58a20bc289571b1897",
+      "bytes": 3309
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/README.md",
+      "gitBlobSHA": "8563d1ec4f9032a51ed3cf03d57b9648b6cef1ec",
+      "bytes": 1221
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/STAGE-FILES.txt",
+      "gitBlobSHA": "c35c751538b5cb38e374fcd7ecb80117611ff9cf",
+      "bytes": 1798
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/freeze-manifest.json",
+      "gitBlobSHA": "2d37abd60d9ad1923eb14a7888dfa22306afe447",
+      "bytes": 3424
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/independent-observations.json",
+      "gitBlobSHA": "3c2bc7a1d8eb747c1fe39bb3c49ede44b29829fc",
+      "bytes": 14232
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/render-manifest.json",
+      "gitBlobSHA": "7fc2930cfc2c159c63fcba0a814633bedd79751f",
+      "bytes": 2627
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/renders/pdf-051-independent.png",
+      "gitBlobSHA": "aee0a342bbf7db1fc96f5da8dddf3f0893bf3897",
+      "bytes": 3875654
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/renders/pdf-052-independent.png",
+      "gitBlobSHA": "6ffdfbe796360cd03b43286d6ba1d0ffefae0e8a",
+      "bytes": 2603576
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/renders/pdf-053-independent.png",
+      "gitBlobSHA": "4b44deb3a2d347f676ddcc769871937cc6fc381d",
+      "bytes": 4068666
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/renders/pdf-054-independent.png",
+      "gitBlobSHA": "92ade9040481d1948a6a33da2493c1da8618d7f0",
+      "bytes": 1836959
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/renders/pdf-055-independent.png",
+      "gitBlobSHA": "fca2abfbc783e253b1022255df715b5f7f9a1655",
+      "bytes": 3802005
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/renders/pdf-056-independent.png",
+      "gitBlobSHA": "58c6d947fada1f79691d4686985af138ad3dc0a5",
+      "bytes": 2203068
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/renders/pdf-057-independent.png",
+      "gitBlobSHA": "c8bc589060e6bb855fe8d5c925070c2674e0d814",
+      "bytes": 3850684
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/renders/pdf-058-independent.png",
+      "gitBlobSHA": "64f803da507c531a7a381b3b6a7d2187959a71f0",
+      "bytes": 2043294
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/renders/pdf-059-independent.png",
+      "gitBlobSHA": "79582c18f916614d386d6da5e257dbdd663f0a21",
+      "bytes": 2310481
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/renders/pdf-060-independent.png",
+      "gitBlobSHA": "aa3b30abc8566685218d4e988a526f6ac9104ddc",
+      "bytes": 1187128
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/review.json",
+      "gitBlobSHA": "65916f01153355030aa4a8ab7a52634d04199f60",
+      "bytes": 85508
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/verify-review.log",
+      "gitBlobSHA": "e45fa29c7e5fb6e659db55c8a653d5cd247e8ad7",
+      "bytes": 277
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/verify-review.py",
+      "gitBlobSHA": "44eeec72e3d85eff6db2a1e27a59c01839c18c62",
+      "bytes": 3343
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/README.md",
+      "gitBlobSHA": "d6a636336d64e170a159b3fd3ca7cf0cf22ffee7",
+      "bytes": 1284
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/STAGE-FILES.txt",
+      "gitBlobSHA": "c57cf309e2ca680685fabf88b54e852a7a1a4eb0",
+      "bytes": 1897
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/boundary-manifest.json",
+      "gitBlobSHA": "1ecb9a1f484dce640232ee6a69b330ce6192ef47",
+      "bytes": 519
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/freeze-manifest.json",
+      "gitBlobSHA": "92ac58b07cdb1e0f39d482e1876f3f8a33967400",
+      "bytes": 3591
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/independent-observations.json",
+      "gitBlobSHA": "a38709f9657c2446b693f49db323eef0ba5ef0ca",
+      "bytes": 14425
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/render-manifest.json",
+      "gitBlobSHA": "352dde32099c74b10fb81902c46f296f250d2343",
+      "bytes": 2398
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/renders/pdf-061-independent.png",
+      "gitBlobSHA": "397647fa132bf79bb112ee1d898e31c4961bc040",
+      "bytes": 3436433
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/renders/pdf-062-independent.png",
+      "gitBlobSHA": "5deafddd69e2eb9451cb248efd772fda25245374",
+      "bytes": 2683010
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/renders/pdf-063-independent.png",
+      "gitBlobSHA": "899c7ae2a9b5b4b99f4d49fae34973036686eae3",
+      "bytes": 3584570
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/renders/pdf-064-independent.png",
+      "gitBlobSHA": "002d953aabbcf69140072e00bf884a2af9f8892b",
+      "bytes": 2677263
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/renders/pdf-065-independent.png",
+      "gitBlobSHA": "c46418140f0047dabd56b11dac3820d1ffb60279",
+      "bytes": 3942856
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/renders/pdf-066-independent.png",
+      "gitBlobSHA": "221e2d812f1b2609516a23068d7a078d130de8d7",
+      "bytes": 957344
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/renders/pdf-067-independent.png",
+      "gitBlobSHA": "4f4428a8f34119b694b0b9b9534578ac85250f81",
+      "bytes": 4126591
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/renders/pdf-068-independent.png",
+      "gitBlobSHA": "9487fc1ca134112eee677f13c3d8a96aa49966b4",
+      "bytes": 1860735
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/renders/pdf-069-independent.png",
+      "gitBlobSHA": "86c07399c479df0ae469baa7afdf396c83ddedf6",
+      "bytes": 3395785
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/renders/pdf-070-l08-boundary-independent.png",
+      "gitBlobSHA": "28ac949f433c33981747c020752cbc5d72f9e6b3",
+      "bytes": 488717
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/review.json",
+      "gitBlobSHA": "39e1fb3b2efed98f18b8d945dffc3cdd6ef24da7",
+      "bytes": 83661
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/verify-review.log",
+      "gitBlobSHA": "d550914dc29bedf1522a0dbb33d7309975b8030d",
+      "bytes": 290
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/verify-review.py",
+      "gitBlobSHA": "3b871672141e7d8c64b1e1cfa5198844cf9e4540",
+      "bytes": 3546
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/README.md",
+      "gitBlobSHA": "43d1596b84810dee376078119cbf641f19493501",
+      "bytes": 2520
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/build-comparison.py",
+      "gitBlobSHA": "214cea0b4bbd14890724c1ce2e7589169319fcce",
+      "bytes": 22680
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/canonical-local-gloss-ledger.json",
+      "gitBlobSHA": "c890a40cd99d84ff4808fd75f976f019720ed6a0",
+      "bytes": 5264
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/comparison.json",
+      "gitBlobSHA": "badb67903db4b4dde098a7f2c33272c0da36c202",
+      "bytes": 1221804
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/current-bindings.json",
+      "gitBlobSHA": "b87434d315aa3afeb732e050de724c777a38591c",
+      "bytes": 149739
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/current-input-ledger.json",
+      "gitBlobSHA": "5dba67b86eed2c48b80ce68f414eb6855c309627",
+      "bytes": 5594
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/current-occurrences.json",
+      "gitBlobSHA": "041ea5cf10523f9872f250cffabd1cfb03262934",
+      "bytes": 940607
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/current-semantic-consumers.json",
+      "gitBlobSHA": "885e5e9a49aee05c6954c6a275a12dbe231d16f1",
+      "bytes": 78451
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/extract-current.mjs",
+      "gitBlobSHA": "4bc5ebc7440932799e1eeda77232f930c43f5ee6",
+      "bytes": 5015
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/freeze.json",
+      "gitBlobSHA": "f3f94856f312e6dab950f79b83bb9245e3f8d1c1",
+      "bytes": 7865
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/input-ledger.json",
+      "gitBlobSHA": "e6164ddd118e35ec3878063fa1c6f3e0e5921dbc",
+      "bytes": 6130
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/private-projection-diff.json",
+      "gitBlobSHA": "8eac38c1a330ee5fb57c15741145aeef5a7dd395",
+      "bytes": 27564
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/proposals.json",
+      "gitBlobSHA": "b9237ccb68741f03473adf63a9986086891e79fe",
+      "bytes": 358062
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/source-to-consumer-ledger.json",
+      "gitBlobSHA": "5624ff23f29ed072a16eb18c8d7147b1fc493399",
+      "bytes": 143732
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-comparison/validation.json",
+      "gitBlobSHA": "62e4eec9e18ceb85a1329feacf5b743ef4c027fc",
+      "bytes": 1198
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/README.md",
+      "gitBlobSHA": "67ecf012478ea1f390694d26c8754ca6c33da761",
+      "bytes": 4279
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/author-input-status.json",
+      "gitBlobSHA": "b17dc936c51effa0a9fba87020d9ed402f3e44ed",
+      "bytes": 7044
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/canonical-pairs.json",
+      "gitBlobSHA": "71b3b6c597c070377b26c1ad8156f67724d8abbe",
+      "bytes": 6213
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/current-display-dependency-snapshot.json",
+      "gitBlobSHA": "006a30c841f65dd83bc67f29762aed023f6e2168",
+      "bytes": 1333
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/dynamic-ui-location-review.json",
+      "gitBlobSHA": "88782a86e7020690c9be39e1635c4973a7346702",
+      "bytes": 4135
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/freeze-manifest.json",
+      "gitBlobSHA": "fee995a5c92d634e0141c3b93900831c7fbcd40e",
+      "bytes": 3178
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/independent-page-evidence.json",
+      "gitBlobSHA": "c8ce768bf926504972c1071e8a8de6898d519002",
+      "bytes": 1155
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/non-vi-seal.json",
+      "gitBlobSHA": "686f2c629a02ce82dd145e8adea60eb1bd66bc68",
+      "bytes": 1286
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/pdf032-original-page-3x.png",
+      "gitBlobSHA": "b9a5d8b99d454ac8b86aa313d95ed18bbf0412d9",
+      "bytes": 2019151
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/proposal-decisions.json",
+      "gitBlobSHA": "84d1c305fb173ad4ad5c947e0883a76f3fdcf75e",
+      "bytes": 197053
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/review.json",
+      "gitBlobSHA": "b214f1700221688fb3ba733827d74554419fa3b6",
+      "bytes": 10788
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/role-review.json",
+      "gitBlobSHA": "619bf4a757303a62e08782dcef547a9764d114c5",
+      "bytes": 11949
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/scope-coverage.json",
+      "gitBlobSHA": "2cc09fc4598e03600c917d01d4d6b5b247656feb",
+      "bytes": 9979
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/verification.json",
+      "gitBlobSHA": "0c32b29caad56d9f3b9def5d5da7c3084a2cf640",
+      "bytes": 424356
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/verify-proposals.py",
+      "gitBlobSHA": "d02cb467904d58ce13fdbaf865cb17857699b916",
+      "bytes": 15594
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/verify-ui-locations.mjs",
+      "gitBlobSHA": "9f532c1ec6491e567c48fc29e99fb93e2290370d",
+      "bytes": 2819
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/README.md",
+      "gitBlobSHA": "9827d39136dac2e375141761429b407c65d2d3a2",
+      "bytes": 1862
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/author-mapping.py",
+      "gitBlobSHA": "d480c52f10806e044b53171f8c7e4d0bc45c133c",
+      "bytes": 10455
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/build-comparison.py",
+      "gitBlobSHA": "42e9f92f9e002b2e2b3c245bb379133cb1b8fa56",
+      "bytes": 16642
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/canonical-local-gloss-ledger.json",
+      "gitBlobSHA": "b31df617967f518c897756d343307fd4fc17e8f1",
+      "bytes": 5178
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/comparison.json",
+      "gitBlobSHA": "1d1e552da1fda2a7e37cd6c9b4bb8a0de3843afa",
+      "bytes": 1426673
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/current-bindings.json",
+      "gitBlobSHA": "163f74ea4eb08893476a5f7523f311ba1d249771",
+      "bytes": 164291
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/current-input-ledger.json",
+      "gitBlobSHA": "8f0b24fdf3191842a9692719516661ee003ef21a",
+      "bytes": 5326
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/current-occurrences.json",
+      "gitBlobSHA": "90332e5a4be4a2a74af68e956a5c2de645c95484",
+      "bytes": 1055252
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/current-semantic-consumers.json",
+      "gitBlobSHA": "d862ec8c685ca229650716103d7e6a519e6513ea",
+      "bytes": 95267
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/extract-current.mjs",
+      "gitBlobSHA": "1230e2ef03faf7ce6cdaf82f0fbc45da3276e50a",
+      "bytes": 5015
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/freeze.json",
+      "gitBlobSHA": "f788e56e63121aeb6fd5e1f53f387befc8c63420",
+      "bytes": 7745
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/input-ledger.json",
+      "gitBlobSHA": "4b8edb524e2e1e2ae253447779b14a7d4f6a20ce",
+      "bytes": 5856
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/private-projection-diff.json",
+      "gitBlobSHA": "91de36c4f6913cc558cb964f2b0a1a49b2633659",
+      "bytes": 39099
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/proposals.json",
+      "gitBlobSHA": "f6d00f342a97ee96f3520a33cdf4c4b5542fdd74",
+      "bytes": 568066
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/source-to-consumer-ledger.json",
+      "gitBlobSHA": "69eee674b14916e3000fc4350661b73f48d9e852",
+      "bytes": 185109
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-comparison/validation.json",
+      "gitBlobSHA": "0adbeca9d635c512aca7e3b4d829e1f55b7b4e4b",
+      "bytes": 1363
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/README.md",
+      "gitBlobSHA": "6a622429f39c708bd13069a4f9a4e7aa0f6884d3",
+      "bytes": 1132
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/detail-evidence-manifest.json",
+      "gitBlobSHA": "6ebbf2956dd6dbf810fcfa5476dd3f370900875e",
+      "bytes": 12826
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/evidence/pdf034-words01-03.png",
+      "gitBlobSHA": "f4a2cecf985e04d9cfd7ca97697fc34c4d019bfe",
+      "bytes": 417296
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/evidence/pdf036-grammar2-chinese.png",
+      "gitBlobSHA": "9eb7b815a9ebd472c9838784c6083037ab1b4e26",
+      "bytes": 388230
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/evidence/pdf037-grammar2-vietnamese.png",
+      "gitBlobSHA": "e990cc0554ebea41042aed64bd96af56d6f71f87",
+      "bytes": 812303
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/evidence/pdf038-grammar3-first-fragment.png",
+      "gitBlobSHA": "bca5765dd60a7a171b9abf512bee3b201aa333ef",
+      "bytes": 474884
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/evidence/pdf038-words06-11.png",
+      "gitBlobSHA": "b7ceffe27ed02daf55727bfe03f007200c5b1d54",
+      "bytes": 812975
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/evidence/pdf039-grammar3-continuation.png",
+      "gitBlobSHA": "32b1057276cbbf34b2ab684696b9c2c9134658ac",
+      "bytes": 201931
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/evidence/pdf039-text4-whole.png",
+      "gitBlobSHA": "ef12bb0cb9ea79335a748935c27a9c160796214d",
+      "bytes": 421432
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/evidence/pdf039-words12-15.png",
+      "gitBlobSHA": "92a7baec71a971ff9523f1700ec150320917b16e",
+      "bytes": 443470
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/evidence/pdf042-connected-summary-full.png",
+      "gitBlobSHA": "b0adc1393be66347d86509842b7f6e51f928aa4a",
+      "bytes": 981135
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/review-freeze.json",
+      "gitBlobSHA": "37613c2b5de6d061b986321644c8033ee388a33a",
+      "bytes": 4481
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/source-acceptance.json",
+      "gitBlobSHA": "65c24b72aff9317eb03d4a9924934463bd33addf",
+      "bytes": 8796
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/source-review.json",
+      "gitBlobSHA": "2ceacddbaf5a49ad8c9864d43c00d9d1556b7c0f",
+      "bytes": 112400
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/source-review.md",
+      "gitBlobSHA": "5dec4cb8e3ea848200cf015b35901cf984a29486",
+      "bytes": 4470
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/source-review.tsv",
+      "gitBlobSHA": "361f5fcfe866593f94bc9f06c6d91ea9b3969789",
+      "bytes": 27137
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/structure-audit.json",
+      "gitBlobSHA": "7ff4782aa0d46fe2540ba7f3c76a8194a79a642f",
+      "bytes": 13988
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/structure-audit.md",
+      "gitBlobSHA": "5cbca2058b81bd6b5dcce86077bfc3f4100dbf37",
+      "bytes": 2628
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/verification.json",
+      "gitBlobSHA": "304908280603f3d724ece31b8bbd80d83f494270",
+      "bytes": 20764
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/verify-source-review.py",
+      "gitBlobSHA": "2e4154cffad8957d811ac6920273cf7f3cfb940e",
+      "bytes": 12648
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/README.md",
+      "gitBlobSHA": "6fb603c0fdb8d7c3dab30daa95429e9b33c10b93",
+      "bytes": 1647
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/author-mapping.py",
+      "gitBlobSHA": "4e3b337e306e82ea55137e1f239e4287e9e9ebc3",
+      "bytes": 6139
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/build-comparison.py",
+      "gitBlobSHA": "29cd3d301cdb55e37b29fc545a7fef82b6d85cfb",
+      "bytes": 16357
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/canonical-local-gloss-ledger.json",
+      "gitBlobSHA": "603d0ae8a1b40e438583e1c0babdfe586999a239",
+      "bytes": 5604
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/comparison.json",
+      "gitBlobSHA": "7d4c9b55963a3cf1aacd19e214f5db806db5a68f",
+      "bytes": 1233984
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/current-bindings.json",
+      "gitBlobSHA": "994e88e2c99612ed1c0a8a423a63256debb6a349",
+      "bytes": 147211
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/current-input-ledger.json",
+      "gitBlobSHA": "c0879635ce882d022def079477fe6f743a588379",
+      "bytes": 5112
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/current-occurrences.json",
+      "gitBlobSHA": "0ad7ccead8e5951471a56e5f43231839392e1f86",
+      "bytes": 959007
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/current-semantic-consumers.json",
+      "gitBlobSHA": "d5218ac2a4b0cfd4a1c8d25e3e9f82a53d4c9c81",
+      "bytes": 85547
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/extract-current.mjs",
+      "gitBlobSHA": "da776e3a9b9095b6ea117c15874bb6432bbe5d43",
+      "bytes": 5015
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/freeze.json",
+      "gitBlobSHA": "600e37e5936e4711887031dda233171d882cd5cf",
+      "bytes": 7529
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/input-ledger.json",
+      "gitBlobSHA": "ce50b2567c959a84d5d3bb1b49b28149b8652404",
+      "bytes": 5642
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/private-projection-diff.json",
+      "gitBlobSHA": "62df3a2576f67374b929cb08107316c827985576",
+      "bytes": 26254
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/proposals.json",
+      "gitBlobSHA": "b922adc527ab3cfa9a4dcb60ce41656492f810ba",
+      "bytes": 351671
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/source-to-consumer-ledger.json",
+      "gitBlobSHA": "e3638c43c77defeb6984342bf77638665ea11cc8",
+      "bytes": 146611
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-comparison/validation.json",
+      "gitBlobSHA": "335222c6d2f430bd834ee6c419f45b27d9cc5334",
+      "bytes": 1312
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/README.md",
+      "gitBlobSHA": "d5211657d4e975f155f408b15213ad0cd3cb7bb9",
+      "bytes": 1097
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/author-frozen-input-verification.json",
+      "gitBlobSHA": "04264c86f7c47602c817f5ce2ba21cd60c50d4fa",
+      "bytes": 4733
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/boundary-pdf042-evidence.json",
+      "gitBlobSHA": "aca84d4501e0b4f744fe9d082c5c2bd6fbe5b7fb",
+      "bytes": 315
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/freeze-manifest.json",
+      "gitBlobSHA": "c27e10cbe3393c63b1edb962d773fe4440344b58",
+      "bytes": 6411
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/independent-boundary-review.json",
+      "gitBlobSHA": "d4fd7d3e3e4edb42cfcdf38e56cbade569e19c84",
+      "bytes": 852
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/independent-page-evidence.json",
+      "gitBlobSHA": "e53af22597e72dd8429281821f9345e75eabf487",
+      "bytes": 7929
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/independent-review.json",
+      "gitBlobSHA": "69c9a4d40253f6634daee89e4bf44d9c4e55e919",
+      "bytes": 11333
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/item-decisions.json",
+      "gitBlobSHA": "ff6bea0a4787fe784233f4c131e967fcc7b9cb10",
+      "bytes": 113617
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/pdf042-boundary-original-2x.png",
+      "gitBlobSHA": "56c6e698d5fd5f2ff31963750361187607c5f11e",
+      "bytes": 676824
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/pdf043-original-2x.png",
+      "gitBlobSHA": "3c9273cdc4e3bd265f25ff03f4f0529d109da040",
+      "bytes": 1560034
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/pdf044-original-2x.png",
+      "gitBlobSHA": "012b64a846b327849752d45cd49b190284f87774",
+      "bytes": 1168397
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/pdf045-original-2x.png",
+      "gitBlobSHA": "a6255e08a0d360d39906fa8a1c025d78f5845da8",
+      "bytes": 1466998
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/pdf046-original-2x.png",
+      "gitBlobSHA": "95bb65c467114694975bd2cf3909aa4f34f3c4b3",
+      "bytes": 1216424
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/pdf047-original-2x.png",
+      "gitBlobSHA": "8f3339062f8de7b3009fbd57b65c5abf33da6dfc",
+      "bytes": 1504507
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/pdf048-original-2x.png",
+      "gitBlobSHA": "6ac5340a5288fddb3900b9eb7be77006b3628a86",
+      "bytes": 972090
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/pdf049-original-2x.png",
+      "gitBlobSHA": "90a7d183af375ab91e8be60a32bdb715087a7c4d",
+      "bytes": 1171800
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/pdf050-original-2x.png",
+      "gitBlobSHA": "d7df5a0d7092ad32ee7dee23fcac7b9990923bed",
+      "bytes": 1290134
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/repair-list.json",
+      "gitBlobSHA": "f8e941ac8532eea59070940cc13025bce1654d28",
+      "bytes": 80
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/source-semantic-observations.json",
+      "gitBlobSHA": "8d30d36786f250eac88e6435c4b7c5586286a27f",
+      "bytes": 113
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/verification-result.json",
+      "gitBlobSHA": "ac2d49b3ae72b2a82e15cca908a276bc815f7cfe",
+      "bytes": 67117
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/verify-source-review.py",
+      "gitBlobSHA": "3ead58774118ab82e5fef289d97d68102933ae9d",
+      "bytes": 6367
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/README.md",
+      "gitBlobSHA": "82ff1a20a2da0c204685515db52961ed0010cb2b",
+      "bytes": 2396
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/author-mapping.py",
+      "gitBlobSHA": "cd2e15ff490a4cb64135fe39a20d9f7a11f6f691",
+      "bytes": 9147
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/build-comparison.py",
+      "gitBlobSHA": "7f5ca6ca9d588b3ccf4a05e1d02feac1ffab5428",
+      "bytes": 16857
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/canonical-local-gloss-ledger.json",
+      "gitBlobSHA": "2be2bbe8796881b357258284302cb33305751d41",
+      "bytes": 8144
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/comparison.json",
+      "gitBlobSHA": "47d6cb7c271d18b523ae4b50faac25f7d148fdc7",
+      "bytes": 1468781
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/current-bindings.json",
+      "gitBlobSHA": "21642add9aca351b755817b5709107d79501e155",
+      "bytes": 171062
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/current-input-ledger.json",
+      "gitBlobSHA": "ba74702f7dbd7de547f7a8def994a7ce33afbfd6",
+      "bytes": 6627
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/current-occurrences.json",
+      "gitBlobSHA": "371d1dee40bcb38af9ca1f2fd608ec56b676b0be",
+      "bytes": 1124527
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/current-semantic-consumers.json",
+      "gitBlobSHA": "4d6a7f9f0db9c41b1b9de790db3e030eb6940a68",
+      "bytes": 116478
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/extract-current.mjs",
+      "gitBlobSHA": "9840ea4ff238b842c7076d14a5fc88d97c77793d",
+      "bytes": 5015
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/freeze.json",
+      "gitBlobSHA": "21f0ba916f5ef7e5e42a112f14e92ba910778fe3",
+      "bytes": 9047
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/input-ledger.json",
+      "gitBlobSHA": "6940fb518919a4c461661ee40d509e0276974fff",
+      "bytes": 7158
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/private-projection-diff.json",
+      "gitBlobSHA": "fbfb41802f66bd5a87598012513b9d9541a5ddce",
+      "bytes": 32318
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/proposals.json",
+      "gitBlobSHA": "1eb828f69c389d85c0d8c6f2449012edbd85fb2e",
+      "bytes": 432031
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/source-to-consumer-ledger.json",
+      "gitBlobSHA": "22ee9b4ff9aec82c4cee8f53b05fa2c6abdb480b",
+      "bytes": 165063
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-comparison/validation.json",
+      "gitBlobSHA": "0585ff32b0b29ccc4e74928a18638df2fe7d3e6e",
+      "bytes": 1389
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/README.md",
+      "gitBlobSHA": "9be9bd5cf9965969e68dd4a909d187c01cf7cf07",
+      "bytes": 1501
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/author-frozen-input-verification.json",
+      "gitBlobSHA": "10d88dca409c95d1132bd90747eaa9585cf7eb79",
+      "bytes": 4419
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/freeze-manifest.json",
+      "gitBlobSHA": "40fa0ce823790fd32b4714aecdab3dc9d22f00cd",
+      "bytes": 6859
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/grammar2-detail-evidence.json",
+      "gitBlobSHA": "07042d965600953666468706d83f6ee53efa5493",
+      "bytes": 350
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/independent-boundary-review.json",
+      "gitBlobSHA": "f1c4af36f60f90619086059bb921d27962c7ccf1",
+      "bytes": 882
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/independent-page-evidence.json",
+      "gitBlobSHA": "5021ada8bdf1eedf225db38f9c83969d7480bd2d",
+      "bytes": 8671
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/independent-review.json",
+      "gitBlobSHA": "621f011d51cffa2277fd20f6f8c5a0ae78d17227",
+      "bytes": 11840
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/item-decisions.json",
+      "gitBlobSHA": "acca05142186d3752c8fcff8bd78670b164356d9",
+      "bytes": 119161
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/pdf051-original-2x.png",
+      "gitBlobSHA": "280672e7677c2c0a058f7a7c1239785b2e66c30f",
+      "bytes": 1784828
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/pdf052-original-2x.png",
+      "gitBlobSHA": "cdab0efd144ce65c591ad6001da22fdb1ed57e72",
+      "bytes": 1327847
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/pdf053-original-2x.png",
+      "gitBlobSHA": "ea92d189e3bcae7cf82ecad660f34c8d5383b190",
+      "bytes": 1450511
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/pdf054-original-2x.png",
+      "gitBlobSHA": "a6d11d7fc2942193b8d0cad1d9bd349c595a93ac",
+      "bytes": 1021937
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/pdf055-grammar2-detail-4x.png",
+      "gitBlobSHA": "d6ffa8c749a9a93c92e3ad8c6c537b17b75e3672",
+      "bytes": 1727438
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/pdf055-original-2x.png",
+      "gitBlobSHA": "8d76576ae7ea0c1fdaa15aee95cfb185092b8548",
+      "bytes": 1335769
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/pdf056-original-2x.png",
+      "gitBlobSHA": "103fdbf756ab5cfcc6d049f368a3160e358732e9",
+      "bytes": 1191518
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/pdf057-original-2x.png",
+      "gitBlobSHA": "b724c7527722c625771acc05c47bf7b8a0b94ed3",
+      "bytes": 1540477
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/pdf058-original-2x.png",
+      "gitBlobSHA": "a93397d7c3e4e975d7d5b3dddd98c81a7a9607af",
+      "bytes": 1067056
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/pdf059-original-2x.png",
+      "gitBlobSHA": "bb7a791eea625c4140fc635b00d875f54474137c",
+      "bytes": 1745443
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/repair-list.json",
+      "gitBlobSHA": "ad8aa38c7ad36906aa4ca20152045229860d3f71",
+      "bytes": 80
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/source-semantic-observations.json",
+      "gitBlobSHA": "328038bb0da49681756a0f966ddd6c82cfcd878b",
+      "bytes": 1315
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/verification-result.json",
+      "gitBlobSHA": "fe5826bb0676315cf116d886fb34e46caecef778",
+      "bytes": 71115
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/README.md",
+      "gitBlobSHA": "5481a7d1511d35b8c3a4987d35544a1a5151d3cc",
+      "bytes": 1582
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/author-frozen-input-verification.json",
+      "gitBlobSHA": "a591dbc3982418ce162f27da2b6dcf05a337c338",
+      "bytes": 6135
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/boundary-pdf070-evidence.json",
+      "gitBlobSHA": "a3b8e52eb853189a2bf0f9726288e133f34db967",
+      "bytes": 315
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/diary-detail-evidence.json",
+      "gitBlobSHA": "d255b2ef669dd70f6c7bb2e7dac0e21e4172b921",
+      "bytes": 351
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/freeze-manifest.json",
+      "gitBlobSHA": "9bec46dc4521819e92c488bc9e3a9690d6f16228",
+      "bytes": 7121
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/independent-boundary-review.json",
+      "gitBlobSHA": "7395f56ed7f6851934842e5d404cf63af2cdc381",
+      "bytes": 899
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/independent-page-evidence.json",
+      "gitBlobSHA": "a2795c214b020cb7091de6a459b40a797c921c34",
+      "bytes": 9666
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/independent-review.json",
+      "gitBlobSHA": "d5e608cd4ee9f62970efc828c2ebb8c65450e952",
+      "bytes": 11472
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/item-decisions.json",
+      "gitBlobSHA": "d3da8f72c93fa6371cbfd46d39637235128bd7ec",
+      "bytes": 131913
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf060-original-2x.png",
+      "gitBlobSHA": "a76d3825f8355aa94342e504e2505691bd015e57",
+      "bytes": 1267134
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf061-original-2x.png",
+      "gitBlobSHA": "aad0c89755ee660e5299c9850ebd1ad1ae076d4d",
+      "bytes": 1503797
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf062-original-2x.png",
+      "gitBlobSHA": "dd84067194d7e32068ce5c46ae58a53f8c139814",
+      "bytes": 530028
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf063-original-2x.png",
+      "gitBlobSHA": "b43f98276b9d9f6b76f2ddb600059382b159bba3",
+      "bytes": 1506314
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf064-original-2x.png",
+      "gitBlobSHA": "7d4bfde25611b46a8880fd2edfcd2ce3d7bf48b9",
+      "bytes": 757366
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf065-original-2x.png",
+      "gitBlobSHA": "6b4aeb788b9d3f5869668db612bbea98a8d7bc36",
+      "bytes": 1356341
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf066-diary-detail-4x.png",
+      "gitBlobSHA": "2fa20c6a7ef1dfa1226aceb204ae01ce53992446",
+      "bytes": 891756
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf066-original-2x.png",
+      "gitBlobSHA": "fa30a5a4abaf35d59418189f94e879478d47fac7",
+      "bytes": 1245316
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf067-original-2x.png",
+      "gitBlobSHA": "7e7bf2711fe49131478bc4bac14437aee623d64c",
+      "bytes": 1939331
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf068-original-2x.png",
+      "gitBlobSHA": "f2319849f68060ac6b04f9c1e4ab25bf36f73f73",
+      "bytes": 1002147
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf069-original-2x.png",
+      "gitBlobSHA": "ccbf73f5d7ab09acda9aacab3a0071ca61f04189",
+      "bytes": 997442
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf070-boundary-original-2x.png",
+      "gitBlobSHA": "75f5b4535b4b8585b9511ecb95cd381028bbede4",
+      "bytes": 1036620
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/repair-list.json",
+      "gitBlobSHA": "17d5c666331b7a58777decca5d6f9435f6b21ae5",
+      "bytes": 2276
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/source-semantic-observations.json",
+      "gitBlobSHA": "5e88ab53c2a1eb3079ac2f349852ba0e0840ffac",
+      "bytes": 113
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/v2-sidecar/README.md",
+      "gitBlobSHA": "961eaa656dc0a669c767e765f61e020dcdfb3a5f",
+      "bytes": 1605
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/v2-sidecar/freeze-manifest.json",
+      "gitBlobSHA": "eaee885e67fdf476e20dacf146cc1fb6c7bd9f4e",
+      "bytes": 3636
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/v2-sidecar/v2-independent-review.json",
+      "gitBlobSHA": "97aebf1fd6f445d8aa8c8069b393482f523faf0b",
+      "bytes": 94566
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/v2-sidecar/verification.log",
+      "gitBlobSHA": "d82458d0ecf212c1a97d0b712127620288daab94",
+      "bytes": 1145
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/v2-sidecar/verify-v2-source.py",
+      "gitBlobSHA": "3fcba4289cfd2b7bfd8a169f39818a4603766076",
+      "bytes": 7727
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/verification-result.json",
+      "gitBlobSHA": "cf676afd3ca72268e63d7eacaa1f5974e4dab635",
+      "bytes": 79501
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/README.md",
+      "gitBlobSHA": "d6372c44dda2a2808ab2023282618c4719d0fd7e",
+      "bytes": 957
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/body-appendix-bindings-review.json",
+      "gitBlobSHA": "523f91e7f6f60893ed4441b9bca1383d308e1c83",
+      "bytes": 14539
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/freeze-manifest.json",
+      "gitBlobSHA": "00151dd62adeeb47f262b25b6df5977a6ccbfe7b",
+      "bytes": 8948
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/fresh-crop-evidence.json",
+      "gitBlobSHA": "f6c5b16d0fbc655a4a51427aa777f89bfc89ec5a",
+      "bytes": 2974
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/independent-page-evidence.json",
+      "gitBlobSHA": "ffcbc624f9977cf5a7cf9ac5309bd4a859f54245",
+      "bytes": 8190
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/independent-review.json",
+      "gitBlobSHA": "2fecc4f432ef126d844fff6ddcc140d40b1106f9",
+      "bytes": 2859
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/pdf018-vocab-pos-detail-4x.png",
+      "gitBlobSHA": "9b91ee9a3c6b5e5fe610390cda75e3460917a86e",
+      "bytes": 738599
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/pdf195-l01-left-column-4x.png",
+      "gitBlobSHA": "cdb31b2eb0c4f83c67dca203ea280d577e6630e4",
+      "bytes": 1452042
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/pdf195-l01-right-column-4x.png",
+      "gitBlobSHA": "fc7d46672d77c4a419bce1dd9e243660f53e77b6",
+      "bytes": 611051
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/pdf195-l01-text2-ending-4x.png",
+      "gitBlobSHA": "803f1bf6c473eb8d371f519766d7377fadaaa1e1",
+      "bytes": 359476
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/pdf195-l01-text3-ending-and-diary-4x.png",
+      "gitBlobSHA": "8c92230e22f5d251e550909a3542c1121393fefb",
+      "bytes": 734503
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/repair-list.json",
+      "gitBlobSHA": "e0a7fea212ef3b477ca903bc5f4da65125dcb73e",
+      "bytes": 145
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/source-id-review.json",
+      "gitBlobSHA": "010ca73451ce842545ee7ef58d04be8665457afe",
+      "bytes": 77376
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/verification-result.json",
+      "gitBlobSHA": "65d403873b4a6ed2058434e4580dc0963941948e",
+      "bytes": 63711
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/verify-source-review.py",
+      "gitBlobSHA": "fc0e49eef7687b60e0165e5e941d42ae1e8864f6",
+      "bytes": 6229
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/README.md",
+      "gitBlobSHA": "8276fbc9a2d3dc4d2b43a46207b09c8b8bf4f6b5",
+      "bytes": 1298
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/body-appendix-bindings-review.json",
+      "gitBlobSHA": "437b04d9b1f21159baa6aaf15364337d3f8fc4b1",
+      "bytes": 14000
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/freeze-manifest.json",
+      "gitBlobSHA": "101150b8db1403fae33363006fe1275858c19b9f",
+      "bytes": 10663
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/fresh-crop-evidence.json",
+      "gitBlobSHA": "17ef45cddba4202d0f4848ca05a974c5feacc2e3",
+      "bytes": 5308
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/independent-page-evidence.json",
+      "gitBlobSHA": "4bc0bcd049201f1b88f53102d308ed474eeb76d8",
+      "bytes": 8936
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/independent-review.json",
+      "gitBlobSHA": "0e541478bb1d333258ed34cdcc6d157434e976f6",
+      "bytes": 4284
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/pdf024-formula-subscript-detail-4x.png",
+      "gitBlobSHA": "9700db8e89eb09a1bbd500f49016ddd0e8253d2b",
+      "bytes": 154185
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/pdf025-suffix-pos-detail-4x.png",
+      "gitBlobSHA": "743d107aee6fac261c3779f99de8995c9cfe14d5",
+      "bytes": 215387
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/pdf027-grammar3-list-detail-4x.png",
+      "gitBlobSHA": "26a3072fe7ec16d7a130472844fcab0d817f4fd1",
+      "bytes": 773492
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/pdf030-group-instruction-detail-4x.png",
+      "gitBlobSHA": "2f1beec457760b655c80270b3389c611b654129c",
+      "bytes": 409235
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/pdf195-l02-first-two-roles-4x.png",
+      "gitBlobSHA": "b3c4786c78c5c120037e8721a96580afe679b1a9",
+      "bytes": 195103
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/pdf196-l02-left-column-4x.png",
+      "gitBlobSHA": "6e0cbcd6e8d1feb41bb8efb1b3b2d15949587bba",
+      "bytes": 1238194
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/pdf196-l02-left-complete-4x.png",
+      "gitBlobSHA": "8f4a0370d7b4a7bde5aaed7f7b6e78f2e14c5409",
+      "bytes": 915735
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/pdf196-l02-right-column-4x.png",
+      "gitBlobSHA": "60a4fc86a69ba7b9967da90d6b2b1e09d127be8a",
+      "bytes": 670829
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/pdf196-l02-right-complete-4x.png",
+      "gitBlobSHA": "ad52bd48d0a5774165a23f9c685a63e746b30271",
+      "bytes": 779434
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/repair-list.json",
+      "gitBlobSHA": "b0ebd139c6552370c272b2e412c67326883b6146",
+      "bytes": 145
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/source-id-review.json",
+      "gitBlobSHA": "10bfc58911f13c1d3c76ec86d7a89a50a4d6201d",
+      "bytes": 84981
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/verification-result.json",
+      "gitBlobSHA": "4e9c6f981edb089b63b32e485d2e701fddd04df3",
+      "bytes": 68390
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/verify-source-review.py",
+      "gitBlobSHA": "fc0e49eef7687b60e0165e5e941d42ae1e8864f6",
+      "bytes": 6229
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/README.md",
+      "gitBlobSHA": "3a9053839a0a96cd190125cd38c6f589e1d1d906",
+      "bytes": 1467
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/body-appendix-bindings-review.json",
+      "gitBlobSHA": "a13614691efeacb194335023e844813a0ee6963d",
+      "bytes": 15808
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/freeze-manifest.json",
+      "gitBlobSHA": "6783ac177dc09772fe1fccf02189b09aabfa85e5",
+      "bytes": 11453
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/fresh-crop-evidence.json",
+      "gitBlobSHA": "d00df50e7420f4c11585c2fb393fe394e2ae6891",
+      "bytes": 5358
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/independent-page-evidence.json",
+      "gitBlobSHA": "6448786ffdd346389fb720368d4f480b1fb08d01",
+      "bytes": 9947
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/independent-review.json",
+      "gitBlobSHA": "52b45439f46a7e97104e5658a2d2c1c069591b4f",
+      "bytes": 4256
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/pdf032-vocab-pronoun-pos-4x.png",
+      "gitBlobSHA": "6fee96f227b0212ce1a0368aee3b2d9e2b6bbb30",
+      "bytes": 1525834
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/pdf034-word15-printed-pinyin-wrap-4x.png",
+      "gitBlobSHA": "b4fb1d3dc49990ef7d43a55babea5b063ea05da9",
+      "bytes": 569894
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/pdf037-word26-dual-POS-detail-4x.png",
+      "gitBlobSHA": "f9e9fa906005cb9a4f42d13a9f8ec894459d1cb3",
+      "bytes": 328684
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/pdf040-nine-summary-rows-detail-4x.png",
+      "gitBlobSHA": "0b3a204621924a9512fd02657112a5660867f6c0",
+      "bytes": 1358605
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/pdf196-l03-text1-six-roles-4x.png",
+      "gitBlobSHA": "ef538971265ea73946193fb31da87f2372dfba03",
+      "bytes": 360703
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/pdf196-l03-text2-first-six-4x.png",
+      "gitBlobSHA": "ce1162673f0afa36f2b8180af45a7f8107e99a70",
+      "bytes": 316207
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/pdf197-l03-text2-end-and-text3-first-five-4x.png",
+      "gitBlobSHA": "edf3b54400ea4f5fe727bf0d1853a8d7558c5aab",
+      "bytes": 401998
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/pdf197-l03-text3-last-two-4x.png",
+      "gitBlobSHA": "1e53b8db54503b33e5a4ac348ef424435bca357f",
+      "bytes": 86478
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/pdf197-text4-two-role-paragraphs-4x.png",
+      "gitBlobSHA": "3ad8b255b7abff7748779246ef8c41da34d25ac3",
+      "bytes": 356576
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/pre-freeze-original-read.json",
+      "gitBlobSHA": "33736042f4580dfff0d6cbbae1c5b2e6d84fa4e3",
+      "bytes": 8413
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/repair-list.json",
+      "gitBlobSHA": "21c76aab6576da48c02c9b24ba0534aac5d589ff",
+      "bytes": 145
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/shared-physical-context-review.json",
+      "gitBlobSHA": "b2ffb43f74b5e5251dba250afbd1fc2be51f5cd4",
+      "bytes": 3253
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/source-id-review.json",
+      "gitBlobSHA": "8fa2e6133f7a1ec081e3ab5a79ddca090288c549",
+      "bytes": 94994
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/verification-result.json",
+      "gitBlobSHA": "395cf568706b35e6af4fbcdcfaccab165f8b0dc3",
+      "bytes": 76297
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/verify-source-review.py",
+      "gitBlobSHA": "dd1d562d20b95e6b279f18b2c6291b0971c66b38",
+      "bytes": 6701
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/README.md",
+      "gitBlobSHA": "ac3e66e33d6d3293b113141dea1bf2ed8aa0a1dd",
+      "bytes": 6006
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/audit-initial-manifest.mjs",
+      "gitBlobSHA": "b80b7b38e11ba2be4dbb82b63e62f133abaffd1a",
+      "bytes": 10831
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/audit-v2-manifest.mjs",
+      "gitBlobSHA": "081b772d73c9af2d41559a3e0902dd715bd4482c",
+      "bytes": 11947
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/change-decisions.initial.json",
+      "gitBlobSHA": "7bac1bb6a8d6af3a8e06734961b4693f94a6faf0",
+      "bytes": 323042
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/change-decisions.v2-structural.json",
+      "gitBlobSHA": "94c11f2c60f8813d43d29979c76aa621f31f257b",
+      "bytes": 262043
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/change-decisions.v2.json",
+      "gitBlobSHA": "b4af7cd3f623df3014ed14c80769899022732b94",
+      "bytes": 346085
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/complete-manual-review.py",
+      "gitBlobSHA": "8b1b89cacd178eeeb7c327b934dc6e6f1ac1fb46",
+      "bytes": 10660
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/context-candidate-review.json",
+      "gitBlobSHA": "48d2f65a2e950881019014f765cd5075d7343be5",
+      "bytes": 2525
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/finalize-v2-review.mjs",
+      "gitBlobSHA": "37159864f9b82e25957865d461b9e712a8b3e433",
+      "bytes": 11927
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/freeze-v2.json",
+      "gitBlobSHA": "c783ed10d5019216d3ff75c88e2472e1c3f25553",
+      "bytes": 2592
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/initial-review.json",
+      "gitBlobSHA": "31181eb680638dca81505544d3d1e4ae18898926",
+      "bytes": 19426
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/initial-structural-review.json",
+      "gitBlobSHA": "44a51cd077f97f693284386a384b58f23e7a71c6",
+      "bytes": 18309
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/review.v2.json",
+      "gitBlobSHA": "8c0fe01fa997224ade80d8cef9b81ef8dc355dd8",
+      "bytes": 138569
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/v2-delta-review.json",
+      "gitBlobSHA": "9ecdacde34f365de6040aae8403d8a27eefdf92b",
+      "bytes": 132985
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/v2-structural-review.json",
+      "gitBlobSHA": "8300b7a0f538e84f1c096beb82d08a0c6e8fac3f",
+      "bytes": 18274
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/FREEZE.json",
+      "gitBlobSHA": "6c465f435b01c84464f2dd350686befeccd28804",
+      "bytes": 6279
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/README.md",
+      "gitBlobSHA": "79bed8520620acaf73c06c6df153cf5755f46e5d",
+      "bytes": 2898
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/STAGE-FILES.txt",
+      "gitBlobSHA": "f151e5806693417252a939d604e289765fa75786",
+      "bytes": 2258
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/actual-collector.log",
+      "gitBlobSHA": "2d1de2b8b93bd68aa6e8d2c4806d44051d8b5a0b",
+      "bytes": 108940
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/ast-validation.json",
+      "gitBlobSHA": "364c883a816a88bb110b18ed9b7eed820831a8f2",
+      "bytes": 60881
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/before.json",
+      "gitBlobSHA": "4c7c38eb16cd0267239f21b8d37a5458bbf91725",
+      "bytes": 9896
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/file-head-checks.json",
+      "gitBlobSHA": "d07d5fd090cc95e4f234fd764f0fa067ba64558c",
+      "bytes": 164577
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/final-target-identities.json.gz",
+      "gitBlobSHA": "5c5034c0189156ba5949d26eb00fcaa7d59058c8",
+      "bytes": 2749152
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/full-rebuild-delta.json",
+      "gitBlobSHA": "948cc1035536ef2bb6c8d9509740a72e0bfd9cb3",
+      "bytes": 26902
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/historical-full-AST-quantification.json",
+      "gitBlobSHA": "53b245e97c43b619d1b7eebb0d883829d6715fa7",
+      "bytes": 4839
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/historical-source-ast-comparison.log",
+      "gitBlobSHA": "53b245e97c43b619d1b7eebb0d883829d6715fa7",
+      "bytes": 4839
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/independent-ast-audit.log",
+      "gitBlobSHA": "2cacbe7610b49850f8cc177b1f309bd3842b1089",
+      "bytes": 1018
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/json-coverage.json",
+      "gitBlobSHA": "e0ae76e528e8bd11af8866e577f295aba3bdd109",
+      "bytes": 12328
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/pointer-identity-and-legacy-compatibility.json",
+      "gitBlobSHA": "52b8c3885d366b35263d2b997c38201953206ba3",
+      "bytes": 1744
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/report.json",
+      "gitBlobSHA": "bfce80d6b41c13e87c590e9884f5f13f2c3dbbbd",
+      "bytes": 16265
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/source-json-xml-consumer-validation.json",
+      "gitBlobSHA": "67a74a946655001861ae875288d64b3a4f8c1e27",
+      "bytes": 4001
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/inventory.json.gz",
+      "gitBlobSHA": "5544c811bc98fa0814e7be0f797af5c18d5ce895",
+      "bytes": 12667967
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/runtime-files.json",
+      "gitBlobSHA": "4bc0903acc3abd4f47b126ed99d04a39c390f1b7",
+      "bytes": 2003462
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/summary.json",
+      "gitBlobSHA": "2d1de2b8b93bd68aa6e8d2c4806d44051d8b5a0b",
+      "bytes": 108940
+    }
+  ],
+  "productionPublicationApproved": false,
+  "deployed": false
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "author": "root",
+  "status": "pending-independent-construction-review",
+  "overrides": [
+    {
+      "targetRecordId": "cacb4fd9a29167fb658f6e8b",
+      "kind": "explicit-contiguous-source-span-plus-existing-range",
+      "sourceId": "hsk3-official-vi-20261004:l10:pdf105:vn05",
+      "sourceText": "Chọn từ thích hợp điền vào chỗ trống.",
+      "sourceStartUTF16": 0,
+      "sourceEndUTF16": 36,
+      "targetStartUTF16": 0,
+      "targetEndUTF16": 36,
+      "selectedText": "Chọn từ thích hợp điền vào chỗ trống",
+      "unchangedEditorialRange": " (1–5)",
+      "reason": "Instruction title omits the sentence-ending period before the existing printed-item range; the official lexical prefix is retained exactly.",
+      "status": "root-construction-proposal-pending-independent-review"
+    },
+    {
+      "targetRecordId": "df82297679d32ac65c9db63f",
+      "kind": "explicit-contiguous-source-span-plus-existing-range",
+      "sourceId": "hsk3-official-vi-20261004:l10:pdf105:vn05",
+      "sourceText": "Chọn từ thích hợp điền vào chỗ trống.",
+      "sourceStartUTF16": 0,
+      "sourceEndUTF16": 36,
+      "targetStartUTF16": 0,
+      "targetEndUTF16": 36,
+      "selectedText": "Chọn từ thích hợp điền vào chỗ trống",
+      "unchangedEditorialRange": " (6–10)",
+      "reason": "Instruction title omits the sentence-ending period before the existing printed-item range; the official lexical prefix is retained exactly.",
+      "status": "root-construction-proposal-pending-independent-review"
+    },
+    {
+      "targetRecordId": "b6002516de54d7de68b8fbf7",
+      "kind": "actual-owner-context-binding",
+      "comparisonChineseContext": "旁白",
+      "actualChineseContext": "……",
+      "reason": "The current raw line.zh is the ellipsis; 旁白 is its speaker label. Keep source/target punctuation separate from narrator role.",
+      "status": "root-construction-proposal-pending-independent-review"
+    }
+  ]
+}

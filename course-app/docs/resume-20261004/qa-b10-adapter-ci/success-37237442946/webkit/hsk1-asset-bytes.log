@@ -1,0 +1,38 @@
+
+> hsk1-modular-app@0.1.0 assets:check
+> node tools/check-course-assets.mjs
+
+{
+  "schemaVersion": 1,
+  "baseline": "71b39192133c82f684384f450dda6079d3253440",
+  "output": "dist/course-assets",
+  "audio": {
+    "files": 93,
+    "bytes": 27491142,
+    "manifestHashesVerified": 93,
+    "originalFilesUnchanged": 93
+  },
+  "hanzi": {
+    "files": 267,
+    "bytes": 567732,
+    "originalLocalFiles": 250,
+    "supplements": 17,
+    "strokeDataValidated": 267,
+    "sourceCopiesEqual": 267,
+    "supplementHashesVerified": 17
+  },
+  "licenses": [
+    {
+      "path": "HANZI-DATA-LICENSE.txt",
+      "bytes": 6900,
+      "sha256": "5590533436c70f10f2f524ee61456238c290175c6662fbe1c700b5f038a6d328"
+    },
+    {
+      "path": "HANZI-WRITER-LICENSE.txt",
+      "bytes": 1079,
+      "sha256": "7735d83cdf892c8db41c27103b42c89b4b63149770c1e08ae13cbbebb81da637"
+    }
+  ],
+  "totalBytes": 28066853,
+  "assetManifestSha256": "5311f266eb62db26974f673ac03a257991538ddfb0af6cb03bbc920bb20df9d4"
+}

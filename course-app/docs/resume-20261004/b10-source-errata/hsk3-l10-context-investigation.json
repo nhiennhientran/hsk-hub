@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-10-04T20:47:45.940233+00:00",
+  "status": "root-context-correction-proposed-awaiting-independent-semantic-review",
+  "author": "root",
+  "erratumId": "hsk3-vi-20261004:l10:text3-context",
+  "classification": "official-book-erratum",
+  "publisherIssuedCorrection": false,
+  "officialPDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+  "printedSource": {
+    "sourceId": "hsk3-official-vi-20261004:l10:pdf102:vn08",
+    "pdfPage": 102,
+    "printedPage": 90,
+    "zh": "在李老师办公室，刘小雪跟同学问问题。",
+    "vi": "Lưu Tiểu Tuyết hỏi bài bạn học ở trong phòng làm việc của cô Lý."
+  },
+  "corroboratingSameBookSource": [
+    {
+      "pdfPage": 103,
+      "printedPage": 91,
+      "zh": "李老师，书上有几个问题，我们想问问您。"
+    },
+    {
+      "pdfPage": 202,
+      "printedPage": 190,
+      "sourceId": "hsk3-official-vi-20261004:l10:appendix:text3:line1",
+      "vi": "Thưa cô Lý, chúng em muốn hỏi cô một vài câu hỏi trong sách giáo khoa ạ."
+    },
+    {
+      "pdfPage": 202,
+      "printedPage": 190,
+      "sourceId": "hsk3-official-vi-20261004:l10:appendix:text2:line8",
+      "vi": "Xin lỗi, mình cũng không biết cách giải những câu này. Chúng ta hãy cùng đến văn phòng để hỏi cô Lý đi."
+    }
+  ],
+  "originalPageEvidence": [
+    {
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p102.png",
+      "sha256": "8f165e9099d4877632de2c9c8115cfb5b1569784f43eed9b33a07c761adfcae5",
+      "rootActualVisualRead": true
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p103.png",
+      "sha256": "a33a8c0384d039ab79c5dd8fbfcddf720d0630410ce649b7223c2845881c2b01",
+      "rootActualVisualRead": true
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p202.png",
+      "sha256": "7291ed3720fe476b2e68640108bc55e9e15ba77ac3c7369b4c827db613833740",
+      "rootActualVisualRead": true
+    }
+  ],
+  "target": {
+    "recordId": "ee4eeda1d3f100b2e82f761a",
+    "file": "course-app/content/hsk3/lesson-10.json",
+    "field": "/texts/2/context/vi",
+    "expectedEffectiveValue": "Trong văn phòng cô Lý, Tiểu Tuyết và bạn hỏi bài.",
+    "newValue": "Lưu Tiểu Tuyết cùng bạn học hỏi bài ở trong phòng làm việc của cô Lý."
+  },
+  "rationale": "The previous dialogue proposes that both students go together to ask teacher Lý; the next dialogue and its Vietnamese appendix jointly address teacher Lý. Move cùng bạn học before hỏi bài so the setup does not present the classmate as the question recipient, preserving the official full name and office wording. Faithful printed source is retained unchanged.",
+  "activeChange": false,
+  "runtimeManifestReviewAccepted": false,
+  "websiteLessonAlignmentAccepted": false,
+  "publicationApproved": false
+}

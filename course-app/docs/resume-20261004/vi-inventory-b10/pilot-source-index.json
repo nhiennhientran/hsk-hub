@@ -1,0 +1,105 @@
+{
+  "status": "prepared-only-phase-B-not-started",
+  "pilots": [
+    {
+      "level": 1,
+      "lesson": 4,
+      "printedBodyPages": [
+        18,
+        26
+      ],
+      "offset": 16,
+      "pdf": "HSK1  (3.0).pdf",
+      "why": "多/家/在等语境与词性；教材显示 sidecar、source 活动版本、active 教材词汇详情例句与 API-only 索引可分别验证。",
+      "status": "prepared-not-reviewed",
+      "candidateBodyPdfPages": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "bodyMappingStatus": "accepted planning offset; locate visual source before approving any correction",
+      "sourcePDFPath": "/workspace/scratch/28b55072841a/upload/HSK1  (3.0).pdf",
+      "sourcePDFSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "learningOccurrenceCandidates": 752
+    },
+    {
+      "level": 2,
+      "lesson": 2,
+      "printedBodyPages": [
+        10,
+        18
+      ],
+      "offset": 14,
+      "pdf": "HSK2 ( 3.0).pdf",
+      "why": "课文请求/建议、词义与好像释义疑点；验证正文、源列、选择项与附录语义关系。",
+      "status": "prepared-not-reviewed",
+      "candidateBodyPdfPages": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bodyMappingStatus": "accepted planning offset; locate visual source before approving any correction",
+      "sourcePDFPath": "/workspace/scratch/28b55072841a/upload/HSK2 ( 3.0).pdf",
+      "sourcePDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "learningOccurrenceCandidates": 458
+    },
+    {
+      "level": 3,
+      "lesson": 10,
+      "printedBodyPages": [
+        86,
+        94
+      ],
+      "offset": 12,
+      "pdf": "HSK3 (3.0).pdf",
+      "why": "你/我与越南语 em/cô 等人物称谓的整课一致性，及译文附录的对应定位。",
+      "status": "prepared-not-reviewed",
+      "candidateBodyPdfPages": [
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "bodyMappingStatus": "accepted planning offset; locate visual source before approving any correction",
+      "sourcePDFPath": "/workspace/scratch/28b55072841a/upload/HSK3 (3.0).pdf",
+      "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+      "learningOccurrenceCandidates": 588,
+      "translationAppendixSearch": {
+        "printedPages": [
+          183,
+          197
+        ],
+        "pdfPages": [
+          195,
+          209
+        ],
+        "status": "candidate search range; specific lesson/text/line page must be visually located, never inferred from Chinese body page"
+      }
+    }
+  ],
+  "decisionVocabulary": [
+    "match",
+    "official-wording-variant",
+    "meaning-error",
+    "official-book-erratum",
+    "editorial-no-direct-book-counterpart",
+    "unresolved-source"
+  ]
+}
