@@ -73,44 +73,44 @@
     }
   ],
   "checks": {
-    "course_unit": "102 passed locally for L14–15 integration",
+    "course_unit": "110 passed locally for L16–18 and bounded city-caption contract",
     "hsk1_unit": "335 passed locally; HSK1 code and30-v1 bank unchanged",
-    "course_build": "passed locally for L14–15 integration",
-    "nonempty_storage": "422 native suite at1fa2 passed, including explicit optional blank/nonblank and required gating",
-    "browsers": "422/422 plus38preflight per engine at1fa2; new456 collection is not execution",
+    "course_build": "passed locally after city-caption contract",
+    "nonempty_storage": "456 native cases at1256868 passed; feedbackNote actual-store31checks passed locally",
+    "browsers": "456/456 plus44preflight each at1256868; next504 collection is not execution",
     "physical_devices": "not run",
     "human_listening": "not run"
   },
   "publication": "blocked until all sixteen required acceptance gates pass; production unchanged",
-  "updated": "2026-10-04T06:33:00Z",
+  "updated": "2026-10-04T07:42:00Z",
   "remoteSourceCommit": "1f091355561bef02f1b518fab81bb468dc1fc7d9",
   "localSourceCommit": "f37364c280534d7505ad8250e89bef482272faaa",
   "testedSuccessfulCheckpoint": {
-    "remote": "1fa2f1923c2c87537d8a3534ecd38fea26f35516",
-    "local": "1fa2f1923c2c87537d8a3534ecd38fea26f35516",
-    "tree": "b59877a9ea7e92c1e8cb720972cfacb8eafa8c3e",
-    "run": 37181503222,
+    "remote": "12568684319b40c561f97a1c9892f85588defc50",
+    "local": "12568684319b40c561f97a1c9892f85588defc50",
+    "tree": "6224eee68278c15b4c16857394f991df6e415252",
+    "run": 37185391377,
     "browsers": [
       "chromium",
       "webkit"
     ],
-    "tests": 422,
-    "preflightPerEngine": 38,
-    "scope": "HSK2 lessons1–15 and HSK3 lessons1–13 source upgrades; final48-lesson acceptance pending"
+    "tests": 456,
+    "preflightPerEngine": 44,
+    "scope": "HSK2L1–15 and HSK3L1–15 functional/source upgrade regression; four explicit city captions pending, final48-lesson gates incomplete"
   },
   "currentCI": {
-    "lastPassedRun": 37181503222,
-    "lastPassedBrowserCases": 422,
+    "lastPassedRun": 37185391377,
+    "lastPassedBrowserCases": 456,
     "audioIntegrationRun": 37106355777,
     "audioIntegrationStatus": "original37106355777failed130passed4failed;repaired37107556124passed154",
     "audioCases": 134,
-    "nextLocalTestsDiscoverable": 456,
-    "nextScope": "HSK3 L14–15 original source tasks, city figure bindings and prior422 retention",
+    "nextLocalTestsDiscoverable": 504,
+    "nextScope": "HSK3L16–18, bounded L15 city captions and prior456 retention",
     "lessons67Run": 37107213747,
     "lessons67Status": "previous37107213747failed144passed10failed;repaired37107556124passed154",
-    "extraPreflightCases": 38,
-    "newCandidateStatus": "First456 run had342 full passes,114notrun after Chromiumpreflight43pass1fail; scroll-only image readiness repair retains456 identities; full rerun pending",
-    "extraPreflightScope": "last successful count at1fa2"
+    "extraPreflightCases": 44,
+    "newCandidateStatus": "L16–18 source review and bounded feedback/optional/city-caption repairs accepted;110unit/build/types plus504collection passed; native execution pending",
+    "extraPreflightScope": "last successful count at1256868"
   },
   "contentPilot": {
     "levels": [
@@ -197,10 +197,10 @@
     "independentChecks": 1758,
     "browser": "passed174/174 aggregate browser cases and8/8mobilepreflight, run37109960704, remotee8b7aef"
   },
-  "updatedAt": "2026-10-04T06:33:00Z",
-  "remoteDevelopmentCommit": "1fa2f1923c2c87537d8a3534ecd38fea26f35516",
-  "localDevelopmentCommit": "1fa2f1923c2c87537d8a3534ecd38fea26f35516",
-  "exactSharedTree": "b59877a9ea7e92c1e8cb720972cfacb8eafa8c3e",
+  "updatedAt": "2026-10-04T07:42:00Z",
+  "remoteDevelopmentCommit": "12568684319b40c561f97a1c9892f85588defc50",
+  "localDevelopmentCommit": "12568684319b40c561f97a1c9892f85588defc50",
+  "exactSharedTree": "6224eee68278c15b4c16857394f991df6e415252",
   "ciHistoryActual": [
     {
       "run": 37105595387,
@@ -404,6 +404,18 @@
       "preflightFailed": 1,
       "actualLogsRead": true,
       "cause": "Chromium320 city-image decode polling before scrolling offscreen lazy-loaded images"
+    },
+    {
+      "run": 37185391377,
+      "commit": "12568684319b40c561f97a1c9892f85588defc50",
+      "status": "success",
+      "passed": 456,
+      "failed": 0,
+      "chromium": 228,
+      "webkit": 228,
+      "preflightPerEngine": 44,
+      "actualLogsRead": true,
+      "visualEvidence": "course-app/docs/hsk3-lessons1415-integration/ci-acceptance.json"
     }
   ],
   "audioBatch23": {
@@ -559,7 +571,7 @@
       "pinnedBrowserDownload": "invalid/truncated ZIP; not installed"
     },
     "draftRecovery": "Lost local-only L8–9 and HSK2 L4–5 audio drafts not recovered; do not infer presence from historical hash",
-    "newCandidateStatus": "Accepted1fa2 has422 native passes; L14–15 candidate has102localunit passes,456native pending"
+    "newCandidateStatus": "Accepted1256868 has456 native passes; L16–18 candidate504 pending"
   },
   "contentHSK3Batch89": {
     "status": "scoped source/content/figure/browser accepted at d5feac8",
@@ -635,7 +647,7 @@
     "Remaining HSK3 batches, audio clip acceptance, handwriting and complete48-lesson visual/failure/recovery gates"
   ],
   "contentHSK3Batch1415": {
-    "status": "independent source/artwork and city binding repair accepted; native456 pending",
+    "status": "456native regression accepted at1256868; four city captions awaiting bounded next-batch repair",
     "activities": 58,
     "fields": 149,
     "officialFields": 47,
@@ -649,6 +661,28 @@
     "preflightCollectedPerEngine": 44,
     "independentReview": "course-app/docs/content-audit/hsk3-lessons14-15-independent/recheck-review.md",
     "integrationRepair": "Bind four original city manifest IDs to classroom activity; no shared renderer change",
-    "ambiguousListening": "L15 text2 question2 remains non-unique reference only"
+    "ambiguousListening": "L15 text2 question2 remains non-unique reference only",
+    "browserExecution": "456/456 plus44preflight each; all four logs and bounded screenshot samples inspected"
+  },
+  "contentHSK3Batch1618": {
+    "status": "independent source/artwork and bounded feedback/optional repairs reviewed; native504 pending",
+    "activities": 90,
+    "fields": 228,
+    "illustrations": 35,
+    "unitTests": 110,
+    "browserCollected": 504,
+    "browserShardsPerEngine": [
+      126,
+      126
+    ],
+    "preflightCollectedPerEngine": 53,
+    "independentReview": "course-app/docs/content-audit/hsk3-lessons16-18-independent/delta-review.md",
+    "boundedReview": "course-app/docs/hsk3-lessons1618-integration/bounded-repair-review.md",
+    "sourceSpecific": [
+      "L16 fourth classroom continuation explicitly optional",
+      "L17 seven-expression scene is one bound composite",
+      "L18 twelve review rows and two real grammar explanation groups",
+      "L18 editorial context answer note only after confirmed save"
+    ]
   }
 }

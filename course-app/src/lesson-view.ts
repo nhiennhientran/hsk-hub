@@ -262,6 +262,7 @@ export function mountLesson(
         const note=l.texts.flatMap(t=>t.questions).find(q=>q.id===(f.targetRef??a.targetRef))?.editorialNote;
         if(note){const aside=el('aside',undefined,'question-editorial-note');aside.setAttribute('aria-label','编辑说明 · Ghi chú biên tập');aside.append(el('p',note,'task-note'),sourceNote(note.source.printedPage));feedback.append(aside)}
       }
+      if(a.feedbackNote)feedback.append(el("aside",a.feedbackNote,"activity-feedback-note task-note"));
       if (a.kind === "self-assessment")
         feedback.append(
           el(
@@ -867,7 +868,7 @@ function illustration(pic: Illustration,assetBase:string,signal?:AbortSignal): H
   figure.append(
     el(
       "figcaption",
-      copy(
+      pic.label ?? copy(
         "自制辅助示意图（非教材原图）",
         "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)",
       ),

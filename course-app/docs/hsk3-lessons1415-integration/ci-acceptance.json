@@ -1,0 +1,72 @@
+{
+  "commit": "12568684319b40c561f97a1c9892f85588defc50",
+  "tree": "6224eee68278c15b4c16857394f991df6e415252",
+  "runId": 37185391377,
+  "runUrl": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37185391377",
+  "conclusion": "success",
+  "fullBrowserPassed": 456,
+  "preflightPassedPerEngine": 44,
+  "workers": 1,
+  "retries": 0,
+  "allFourActualLogsRead": true,
+  "jobs": [
+    {
+      "id": 111386124826,
+      "engine": "chromium",
+      "shard": 2,
+      "fullPassed": 114
+    },
+    {
+      "id": 111386124940,
+      "engine": "webkit",
+      "shard": 2,
+      "fullPassed": 114
+    },
+    {
+      "id": 111386124950,
+      "engine": "chromium",
+      "shard": 1,
+      "fullPassed": 114,
+      "preflightPassed": 44
+    },
+    {
+      "id": 111386124951,
+      "engine": "webkit",
+      "shard": 1,
+      "fullPassed": 114,
+      "preflightPassed": 44
+    }
+  ],
+  "artifactIntegrity": [
+    {
+      "id": 11296953517,
+      "name": "hsk123-hsk3lessons1415-screens-chromium-shard1",
+      "sha256": "1deb53d5540d3ec2a5fdd2ffbefbe61654cced3d39283b55696d3fdf5eabb241",
+      "bytes": 15607095,
+      "zipHashVerified": true
+    },
+    {
+      "id": 11296579126,
+      "name": "hsk123-hsk3lessons1415-screens-webkit-shard1",
+      "sha256": "88395317905f178d14ede0c0ea41fe4a664e29421fa3929e64afe24419b62ecf",
+      "bytes": 17130771,
+      "zipHashVerified": true
+    }
+  ],
+  "visualReview": {
+    "status": "bounded-pass-with-source-caption-follow-up",
+    "screenshotsCollected": 60,
+    "observed": [
+      "Both engines mobile390 source section samples for L14 and15",
+      "Both engines320 four distinct city figures precede independent response",
+      "Both engines1440 grammar explanation readability"
+    ],
+    "followUp": "Original PDF154/P142 shows city names under individual images; current names are in alt/zoom and final prompt. Add visible per-city captions in the next bounded integration.",
+    "limitations": [
+      "Not every pixel or scene manually reviewed",
+      "No human listening or physical-device certification"
+    ]
+  },
+  "productionCommit": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
+  "productionUnchanged": true
+}
