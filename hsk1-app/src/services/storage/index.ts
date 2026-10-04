@@ -17,6 +17,22 @@ export interface StoreOptions<T> {
   appId?: string;
   backupAppId?: string;
 }
+/** Opaque, store- and coordinator-scoped capabilities; never import these from JSON. */
+export interface TransactionPreview<T> { readonly data: T }
+export interface PreparedWrite { readonly key: string; readonly beforeRaw: string | null; readonly afterRaw: string | null }
+export interface StoreParticipant<T> {
+  readonly key: string;
+  readonly app: string;
+  preview(candidate: unknown, reason: 'import' | 'reset' | 'restore'): TransactionPreview<T>;
+  prepare(preview: TransactionPreview<T>, signal?: AbortSignal): PreparedWrite;
+  prepareReload(raw: string | null): PreparedWrite;
+  check(plan: PreparedWrite, phase: 'before' | 'after', signal?: AbortSignal): boolean;
+  adopt(plan: PreparedWrite): void;
+  discard(plan: PreparedWrite): void;
+  publish(): void;
+  parseRaw(raw: string | null): T;
+  parseBackup(text: string): T;
+}
 interface Recovery<T> {
   data: T;
   revision: number;
@@ -119,13 +135,24 @@ export function createStore<T>(options: StoreOptions<T>) {
     catch (error) { return storageFailure(error); }
     return null;
   }
+  function replacementEnvelope(candidate: T, stamp: number, reason?: Recovery<T>['reason']): Envelope<T> {
+    if (!Number.isSafeInteger(rev + 1) || !time(stamp)) throw new Error('Invalid revision or timestamp.');
+    return { app: appId, schema: 1, revision: rev + 1, updatedAt: stamp, data: validate(candidate),
+      recovery: reason ? { data: copy(data), revision: rev, updatedAt, reason } : copy(recovery) };
+  }
+  function parseBackup(text: string): T {
+    const value: unknown = JSON.parse(text);
+    if (!record(value) || value.app !== backupAppId || value.schema !== 1 || !time(value.exportedAt)) {
+      throw new Error('Tệp không đúng ứng dụng hoặc phiên bản sao lưu.');
+    }
+    return validate(value.data);
+  }
   function commit(candidate: T, reason?: Recovery<T>['reason']): StoreResult {
     const changed = checkCurrent(); if (changed) return changed;
     if (!Number.isSafeInteger(rev + 1)) throw new Error('Số phiên lưu vượt giới hạn.');
     const stamp = now(); if (!time(stamp)) throw new Error('Thời gian lưu không hợp lệ.');
-    const previous = reason ? { data: copy(data), revision: rev, updatedAt, reason } : recovery;
-    const envelope: Envelope<T> = { app: appId, schema: 1, revision: rev + 1,
-      updatedAt: stamp, data: validate(candidate), recovery: previous };
+    const envelope = replacementEnvelope(candidate, stamp, reason);
+    const previous = envelope.recovery;
     const raw = JSON.stringify(envelope);
     // No await between compare and set. The injected Web Lock serializes cooperating tabs.
     let writeError: unknown;
@@ -184,6 +211,16 @@ export function createStore<T>(options: StoreOptions<T>) {
       publish();
     },
     async save(): Promise<StoreResult> { return locked(() => commit(data)); },
+    /** Commit a single-domain candidate without adopting it on an unconfirmed write.
+     * Used for immutable source submissions; ordinary drafts still use edit/save.
+     * Does not replace or consume the existing import/reset recovery snapshot. */
+    async saveCandidate(candidate: unknown, signal?: AbortSignal): Promise<StoreResult> {
+      const version = editVersion, raw = expectedRaw, validated = validate(candidate);
+      return locked(() => {
+        if (version !== editVersion || raw !== expectedRaw) return result(false, 'stale-preview');
+        return commit(validated);
+      }, signal);
+    },
     exportBackup(): string {
       return JSON.stringify({ app: backupAppId, schema: 1, exportedAt: now(), data: validate(data) }, null, 2);
     },
@@ -195,11 +232,7 @@ export function createStore<T>(options: StoreOptions<T>) {
     exportOriginal(): string | null { return status === 'corrupt' ? expectedRaw : null; },
     previewReplacement,
     previewBackup(text: string): Preview<T> {
-      const value: unknown = JSON.parse(text);
-      if (!record(value) || value.app !== backupAppId || value.schema !== 1 || !time(value.exportedAt)) {
-        throw new Error('Tệp không đúng ứng dụng hoặc phiên bản sao lưu.');
-      }
-      return previewReplacement(value.data, 'import');
+      return previewReplacement(parseBackup(text), 'import');
     },
     async confirm(preview: Preview<T>, signal?: AbortSignal): Promise<StoreResult> {
       return locked(() => {
@@ -218,6 +251,63 @@ export function createStore<T>(options: StoreOptions<T>) {
         if (!recovery) return result(false, 'no-recovery');
         return commit(recovery.data, 'restore');
       }, signal);
+    },
+    /** Internal two-domain adapter. Captured previews/plans cannot cross instances or scopes. */
+    transactionParticipant(_scope: object): StoreParticipant<T> {
+      const pending = new WeakMap<TransactionPreview<T>, { candidate: T; reason: Recovery<T>['reason']; version: number; raw: string | null }>();
+      const plans = new WeakMap<PreparedWrite, { envelope: Envelope<T> | null; emptyData: T; version: number; expected: string | null; verified: boolean }>();
+      const clean = () => !disposed && !blocked && !hasUnsavedChanges && !!options.lock;
+      function plan(raw: string | null, envelope: Envelope<T> | null, beforeRaw: string | null): PreparedWrite {
+        const token = Object.freeze({ key: storageKey, beforeRaw, afterRaw: raw });
+        plans.set(token, { envelope, emptyData: validate(options.blank()), version: editVersion, expected: expectedRaw, verified: false });
+        return token;
+      }
+      return Object.freeze({
+        key: storageKey, app: appId,
+        preview(candidate: unknown, reason: 'import' | 'reset' | 'restore') {
+          if (!clean() || options.storage.getItem(storageKey) !== expectedRaw) throw new Error('Dirty, closed, or changed store.');
+          const data = validate(candidate), token = Object.freeze({ data: copy(data) });
+          pending.set(token, { candidate: data, reason, version: editVersion, raw: expectedRaw });
+          return token;
+        },
+        prepare(token: TransactionPreview<T>, signal?: AbortSignal) {
+          const held = pending.get(token); pending.delete(token);
+          if (!held || signal?.aborted || !clean() || held.version !== editVersion || held.raw !== expectedRaw || options.storage.getItem(storageKey) !== expectedRaw) throw new Error('Stale transaction preview.');
+          const envelope = replacementEnvelope(held.candidate, now(), held.reason);
+          return plan(JSON.stringify(envelope), envelope, expectedRaw);
+        },
+        prepareReload(raw: string | null) {
+          if (!clean() || options.storage.getItem(storageKey) !== raw) throw new Error('Cannot adopt recovery over a newer draft.');
+          return plan(raw, raw === null ? null : readEnvelope(raw), raw);
+        },
+        check(token: PreparedWrite, phase: 'before' | 'after', signal?: AbortSignal) {
+          const held = plans.get(token);
+          if (held) held.verified = false;
+          const valid = !!held && !signal?.aborted && clean() && held.version === editVersion && held.expected === expectedRaw &&
+            options.storage.getItem(storageKey) === (phase === 'before' ? token.beforeRaw : token.afterRaw);
+          if (held) held.verified = phase === 'after' && valid;
+          return valid;
+        },
+        adopt(token: PreparedWrite) {
+          const held = plans.get(token); if (!held || !held.verified || !clean() || held.version !== editVersion || held.expected !== expectedRaw) throw new Error('Foreign, stale, unverified or consumed prepared state.');
+          // All fallible validation was completed before any durable write; no observers here.
+          plans.delete(token); const envelope = held.envelope;
+          data = envelope ? envelope.data : held.emptyData; expectedRaw = token.afterRaw;
+          rev = envelope?.revision ?? 0; updatedAt = envelope?.updatedAt ?? null; recovery = envelope?.recovery ?? null;
+          editVersion++; status = envelope ? 'saved' : 'empty'; issue = null; blocked = false; hasUnsavedChanges = false;
+        },
+        discard(token: PreparedWrite) { plans.delete(token); },
+        publish,
+        parseRaw(raw: string | null) {
+          if (raw === null) return validate(options.blank());
+          const value: unknown = JSON.parse(raw);
+          const exactKeys = (v: Record<string, unknown>, allowed: string[]) => Object.keys(v).length === allowed.length && Object.keys(v).every(k => allowed.includes(k));
+          if (!record(value) || !exactKeys(value,['app','schema','revision','updatedAt','data','recovery']) || !time(value.updatedAt) || value.updatedAt > 8640000000000000) throw new Error('Invalid transaction envelope.');
+          if (value.recovery !== null && (!record(value.recovery) || !exactKeys(value.recovery,['data','revision','updatedAt','reason']) || (value.recovery.updatedAt !== null && (!time(value.recovery.updatedAt) || value.recovery.updatedAt > 8640000000000000)))) throw new Error('Invalid transaction recovery.');
+          return readEnvelope(raw).data;
+        },
+        parseBackup,
+      });
     },
     reloadDiscardingDraft(): void { if (!disposed) load(); },
     observeExternalChange(): void { if (!disposed && !blocked) checkCurrent(); },

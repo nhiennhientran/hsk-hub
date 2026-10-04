@@ -1,3 +1,4 @@
+import {commitCourseActivity} from './activity-commit.ts';
 import {loadSegments} from "./segments.ts";
 import type {BackupProvider} from "./backup-view.ts";
 import { mountListening } from "./listening-view.ts";
@@ -618,6 +619,12 @@ function renderLesson(l: Lesson) {
     state: () => store.snapshot().data,
     edit,
     flush,
+    commitActivity:async(id,values,checkedAt,signal)=>{
+      clearTimeout(draftTimer);
+      const saved=await commitCourseActivity(store,id,values,checkedAt,signal,()=>composing);
+      if(!saved&&!signal.aborted)message(copy("提交未确认；请完成输入后重新提交。草稿仍保留。","Chưa xác nhận nộp; hãy hoàn tất nhập rồi nộp lại. Bản nháp vẫn được giữ."));
+      return saved;
+    },
     audio,
     audioControl,
     message,
@@ -1485,7 +1492,7 @@ async function renderHSK1() {
 async function openUnifiedBackup(){
  if(composing||(level===1&&hsk1?.collectCurrentDraft())){message(copy('请先完成当前输入法输入','Hãy hoàn thành nhập liệu hiện tại trước'));return}
  if(!hsk1)hsk1=createHSK1Bridge({audio,navigate:r=>{location.hash=routeHref(r)},error:message});
- try{const one=await hsk1.store(),providers:BackupProvider[]=[{level:1,edition:'现行教材 · Giáo trình hiện hành',status:()=>one.snapshot().status,export:()=>one.exportBackup(),original:()=>one.exportOriginal(),preview:text=>{const p=one.previewBackup(text);return {data:p.data,confirm:signal=>one.confirm(p,signal)}}}];
+ try{const one=await hsk1.store(),paired=await hsk1.sourceBackup(),providers:BackupProvider[]=[{paired,level:1,edition:'现行教材 · Giáo trình hiện hành',status:()=>one.snapshot().status,export:()=>one.exportBackup(),original:()=>one.exportOriginal(),preview:text=>{const p=one.previewBackup(text);return {data:p.data,confirm:signal=>one.confirm(p,signal)}}}];
  for(const n of [2,3] as const){const st=levelStore(n);providers.push({level:n,edition:'2026 · 第一版 / Ấn bản đầu',status:()=>st.snapshot().status,export:()=>st.exportBackup(),original:()=>st.exportOriginal(),preview:text=>{const p=st.previewBackup(text);return {data:p.data,confirm:signal=>st.confirm(p,signal)}}})}
  const legacyKeys=[...configs[2].legacyKeys,...configs[3].legacyKeys];const legacy:Record<string,string|null>={};for(const key of legacyKeys){try{legacy[key]=local.getItem(key)}catch{legacy[key]=null}}
  const {openBackupPanel}=await import('./backup-view.ts');openBackupPanel(providers,legacy,()=>{void render()});

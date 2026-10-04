@@ -1,0 +1,11 @@
+import w1 from '../../../content/source-activities/figures/warmup-01.svg?url';
+import w2 from '../../../content/source-activities/figures/warmup-02.svg?url';
+import w3 from '../../../content/source-activities/figures/warmup-03.svg?url';
+import w4 from '../../../content/source-activities/figures/warmup-04.svg?url';
+import w5 from '../../../content/source-activities/figures/warmup-05.svg?url';
+import w6 from '../../../content/source-activities/figures/warmup-06.svg?url';
+import p1 from '../../../content/source-activities/figures/picture-01.svg?url';
+import p2 from '../../../content/source-activities/figures/picture-02.svg?url';
+import p3 from '../../../content/source-activities/figures/picture-03.svg?url';
+import p4 from '../../../content/source-activities/figures/picture-04.svg?url';
+export const figureURLs:Readonly<Record<string,string>>={'warmup-01':w1,'warmup-02':w2,'warmup-03':w3,'warmup-04':w4,'warmup-05':w5,'warmup-06':w6,'picture-01':p1,'picture-02':p2,'picture-03':p3,'picture-04':p4};

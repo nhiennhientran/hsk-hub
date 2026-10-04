@@ -2,7 +2,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "types": [
-      "node"
+      "node",
+      "vite/client"
     ]
   },
   "include": [
@@ -17,6 +18,8 @@
     "tests/unified/hsk3-lessons1618.spec.ts",
     "tests/unified/hsk3-appendix-stars.spec.ts",
     "tests/unified/hsk1-scene-navigation.spec.ts",
-    "src/vite-env.d.ts"
+    "src/vite-env.d.ts",
+    "tests/unified/hsk1-source-pilot.spec.ts",
+    "tests/unified/activity-commit.spec.ts"
   ]
 }

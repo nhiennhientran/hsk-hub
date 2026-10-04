@@ -1,0 +1,62 @@
+{
+  "type": "test collection only; no native execution",
+  "baseCommit": "47e599837128843c77154db59ef8d2f8937f3a52",
+  "projects": {
+    "chromium": {
+      "baselineCount": 195,
+      "candidateCount": 211,
+      "removed": [],
+      "retainedSourceV1Added": 9,
+      "added": [
+        "chromium | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 malformed full source domain exposes no confirmation and explicit empty is previewed",
+        "chromium | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 paired full backup reset restore reload preserves nonempty receipts and legacy bytes",
+        "chromium | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 pending corrupt journal exports rescue only and blocks new writes",
+        "chromium | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 primary-only import and scoped source reset preserve the untouched domain",
+        "chromium | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 reselect file cancels a paired confirm waiting on the old primary lock",
+        "chromium | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 second live write failure rolls back both domains without claiming success",
+        "chromium | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source L4 reviewed source structure at 1440",
+        "chromium | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source L4 reviewed source structure at 320",
+        "chromium | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source L4 reviewed source structure at 390",
+        "chromium | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source delayed save cannot reveal a changed or closed answer",
+        "chromium | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source older-tab conflict preserves newer saved answers",
+        "chromium | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source open tasks remain ungraded and IME invalidates pending preview",
+        "chromium | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source pending journal blocks mutation without touching old bytes",
+        "chromium | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source quota failure hides answers and exports unsaved input",
+        "chromium | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source save export reset import reload and history preserve nonempty old bytes",
+        "chromium | hsk1-source-pilot.spec.ts | unified full three-course schema2 roundtrip includes nonempty HSK1 source domain"
+      ],
+      "shards": [
+        106,
+        105
+      ]
+    },
+    "webkit": {
+      "baselineCount": 195,
+      "candidateCount": 211,
+      "removed": [],
+      "retainedSourceV1Added": 9,
+      "added": [
+        "webkit | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 malformed full source domain exposes no confirmation and explicit empty is previewed",
+        "webkit | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 paired full backup reset restore reload preserves nonempty receipts and legacy bytes",
+        "webkit | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 pending corrupt journal exports rescue only and blocks new writes",
+        "webkit | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 primary-only import and scoped source reset preserve the untouched domain",
+        "webkit | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 reselect file cancels a paired confirm waiting on the old primary lock",
+        "webkit | ../../../hsk1-app/tests/browser/source-pair-cases.ts | unified HSK1 second live write failure rolls back both domains without claiming success",
+        "webkit | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source L4 reviewed source structure at 1440",
+        "webkit | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source L4 reviewed source structure at 320",
+        "webkit | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source L4 reviewed source structure at 390",
+        "webkit | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source delayed save cannot reveal a changed or closed answer",
+        "webkit | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source older-tab conflict preserves newer saved answers",
+        "webkit | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source open tasks remain ungraded and IME invalidates pending preview",
+        "webkit | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source pending journal blocks mutation without touching old bytes",
+        "webkit | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source quota failure hides answers and exports unsaved input",
+        "webkit | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source save export reset import reload and history preserve nonempty old bytes",
+        "webkit | hsk1-source-pilot.spec.ts | unified full three-course schema2 roundtrip includes nonempty HSK1 source domain"
+      ],
+      "shards": [
+        106,
+        105
+      ]
+    }
+  }
+}

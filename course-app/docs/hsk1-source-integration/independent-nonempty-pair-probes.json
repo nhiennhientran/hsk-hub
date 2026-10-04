@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "assertions": 24,
+  "scope": [
+    "real nonempty primary history and source history",
+    "third-value source preserved while own primary rolls back",
+    "unresolved journal blocks automatic recovery and complete export",
+    "rescue includes raw third value and pending journal",
+    "old primary-only import preserves source bytes",
+    "complete paired export validates both domains",
+    "paired restore recovers both prior semantic records"
+  ],
+  "nativeExecuted": false
+}

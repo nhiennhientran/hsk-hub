@@ -1,0 +1,42 @@
+{
+  "variant": "candidate",
+  "results": [
+    {
+      "mode": "failed-remount",
+      "waitingOrFailedMarker": null,
+      "initialDurableMarker": null,
+      "feedbackAfterAction": false,
+      "ordinarySaveMarker": null,
+      "latestValue": "刚才",
+      "oldSubmittedRecordPreserved": true
+    },
+    {
+      "mode": "pending-remount",
+      "waitingOrFailedMarker": null,
+      "initialDurableMarker": null,
+      "feedbackAfterAction": false,
+      "ordinarySaveMarker": null,
+      "latestValue": "刚才",
+      "oldSubmittedRecordPreserved": true
+    },
+    {
+      "mode": "pending-composition",
+      "waitingOrFailedMarker": null,
+      "initialDurableMarker": null,
+      "feedbackAfterAction": false,
+      "ordinarySaveMarker": null,
+      "latestValue": "刚才",
+      "oldSubmittedRecordPreserved": true
+    },
+    {
+      "mode": "pending-edit",
+      "waitingOrFailedMarker": null,
+      "initialDurableMarker": null,
+      "feedbackAfterAction": false,
+      "ordinarySaveMarker": null,
+      "latestValue": "新草稿",
+      "oldSubmittedRecordPreserved": true
+    }
+  ],
+  "scope": "actual renderer plus actual store; deterministic failures/remount/lock/composition/edit; JSDOM only"
+}

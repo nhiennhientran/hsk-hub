@@ -732,13 +732,33 @@
     "fullOrdinaryGlossaryAndEnglishAppendixAudit": false
   },
   "hsk1ListeningRepair": {
-    "status": "local integration passed; both-host native pending",
+    "status": "514 unified plus8 standalone native cases accepted at ee2d1e6; bounded screenshots reviewed",
     "persistentKeysAdded": 0,
     "bankAndFingerprintsChanged": false,
     "ordinaryRoutePersistence": "unchanged",
     "boundedRepair": "active text section href tracks accepted scene update",
     "unifiedCases": 8,
     "standaloneCases": 8,
-    "totalSuiteUnified": 514
+    "totalSuiteUnified": 514,
+    "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37191078624"
+  },
+  "hsk1SourceL04": {
+    "status": "independently reviewed source/engineering; integrated local gates passed; native pending",
+    "sourceVersion": "source-v2",
+    "activities": 21,
+    "fields": 24,
+    "originalSvg": 10,
+    "backup": "Fixed primary/source journaled replacement, rescue and recovery; old primary-only backups preserve source",
+    "hsk1Unit": 558,
+    "courseUnit": 121,
+    "unifiedNativeCollected": 556,
+    "standaloneNativeCollected": 40,
+    "nativeExecuted": false,
+    "report": "course-app/docs/hsk1-source-integration/integration-review.md"
+  },
+  "courseActivityDurabilityRepair": {
+    "status": "actual renderer/store baseline fails and candidate passes four scenarios; native pending",
+    "scope": "No live checkedAt before candidate readback; abort on edit, IME, newer submit, disposal; no old record migration",
+    "nativeCasesCollected": 8
   }
 }

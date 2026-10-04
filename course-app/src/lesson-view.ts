@@ -1,3 +1,4 @@
+import {createActivityCard,createFeedbackEpoch} from '../../hsk1-app/src/shared/activity-card.ts';
 import {archivedActivities,archivedActivityContext} from './activity-history.ts';
 import {fieldSourcesNeedNotes,sharedRowSource} from './activity-provenance.ts';
 import {originalSegment,sentenceSegments,isSingleSentence} from "./segment-resolver.ts";
@@ -19,6 +20,7 @@ export interface LessonContext {
   state(): State;
   edit(fn: (state: State) => void): void;
   flush(): Promise<boolean>;
+  commitActivity(id:string,values:ActivityRecord["values"],checkedAt:number,signal:AbortSignal):Promise<boolean>;
   audio: AudioService;
   audioControl(track: string, label?: Copy): HTMLElement;
   message(text: Copy): void;
@@ -87,8 +89,7 @@ export function mountLesson(
   });
   let extraCleanup = () => {};
   function activity(a: TextbookActivity) {
-    const wrap = el("section", undefined, "activity-card");
-    wrap.dataset.activityId = a.id;
+    const {card:wrap,fields,feedback} = createActivityCard(document,a.id);
     wrap.append(el("h3", a.title));
     if(a.audioTrack)wrap.append(c.audioControl(a.audioTrack,copy("听本篇原音","Nghe âm thanh gốc bài này")));
     if(a.recommendedPlays)wrap.append(el("p",copy(`先听${a.recommendedPlays}遍，再回答问题。`,`Nghe ${a.recommendedPlays} lần rồi trả lời câu hỏi.`),"task-note"));
@@ -98,12 +99,14 @@ export function mountLesson(
       checkedAt: null,
       updatedAt: 0,
     };
-    let values = { ...current.values }, feedbackEpoch=0;
-    const fields = el("div", undefined, "activity-fields"),
-      feedback = el("div", undefined, "activity-feedback");
-    feedback.setAttribute("aria-live", "polite");
+    let values = { ...current.values };
+    const feedbackEpoch=createFeedbackEpoch();
+    let pendingSubmission:AbortController|undefined,activityComposing=false;
+    wrap.addEventListener("compositionstart",()=>{activityComposing=true;pendingSubmission?.abort()},{signal:events.signal});
+    wrap.addEventListener("compositionend",()=>{activityComposing=false},{signal:events.signal});
     const change = (id: string, value: string | boolean) => {
-      feedbackEpoch++;
+      feedbackEpoch.next();
+      pendingSubmission?.abort();
       values[id] = value;
       c.edit((s) => {
         s.activities[a.id] = {
@@ -284,8 +287,10 @@ export function mountLesson(
           : "Nộp & xem phản hồi",
       ),
       async () => {
-        const requestEpoch=++feedbackEpoch;
+        const requestEpoch=feedbackEpoch.next();
+        pendingSubmission?.abort();
         feedback.replaceChildren();
+        if(activityComposing){c.message(copy("请先完成当前输入法输入","Hãy hoàn thành nhập liệu hiện tại trước"));return;}
         const incomplete = a.fields.some(
           (f) => f.input !== "checkbox" && f.optional !== true && !String(values[f.id] ?? "").trim(),
         );
@@ -296,16 +301,15 @@ export function mountLesson(
           return;
         }
         const submittedValues={...values},checkedAt=Date.now();
-        c.edit((s) => {
-          s.activities[a.id] = {
-            values: submittedValues,
-            checkedAt,
-            updatedAt: checkedAt,
-          };
-        });
-        const saved=await c.flush(),record=c.state().activities[a.id];
-        // A delayed submit cannot reveal stale answers after editing, a newer submit or leaving.
-        if(saved&&requestEpoch===feedbackEpoch&&!events.signal.aborted&&record?.checkedAt===checkedAt&&a.fields.every(f=>record.values[f.id]===submittedValues[f.id]))showFeedback();
+        const request=new AbortController();pendingSubmission=request;
+        const cancel=()=>request.abort();events.signal.addEventListener("abort",cancel,{once:true});
+        let saved=false;
+        try{saved=await c.commitActivity(a.id,submittedValues,checkedAt,request.signal);}
+        finally{events.signal.removeEventListener("abort",cancel);if(pendingSubmission===request)pendingSubmission=undefined;}
+        // The live draft contains no new checkedAt until an exact durable write is confirmed.
+        if(!saved||!feedbackEpoch.current(requestEpoch)||events.signal.aborted)return;
+        const record=c.state().activities[a.id];
+        if(record?.checkedAt===checkedAt&&a.fields.every(f=>record.values[f.id]===submittedValues[f.id]))showFeedback();
       },
       "primary",
     );

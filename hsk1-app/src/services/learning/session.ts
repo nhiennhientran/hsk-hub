@@ -1,3 +1,4 @@
+import { SOURCE_JOURNAL_KEY } from '../source-activities/store.ts';
 import { createStore, STORAGE_KEY, WRITE_LOCK, type StoreResult } from '../storage/index.ts';
 import { loadCompatibility, type AppData, type Compatibility } from '../storage/compatibility.ts';
 
@@ -92,9 +93,12 @@ export async function loadLearningSession(signal: AbortSignal): Promise<Learning
     setItem(key: string, value: string) { window.localStorage.setItem(key, value); },
   };
   const lock = navigator.locks
-    ? <R>(task: () => R | Promise<R>): Promise<R> => navigator.locks.request(WRITE_LOCK, task)
+    ? <R>(task: () => R | Promise<R>): Promise<R> => navigator.locks.request(WRITE_LOCK, () => { if (storage.getItem(SOURCE_JOURNAL_KEY) !== null) throw new Error('Pending two-domain recovery.'); return task(); })
     : undefined;
   const session = createLearningSession({ store: createStore<AppData>({ storage, blank: compatibility.blank, validate: compatibility.validate, lock }), compatibility });
+  const { browserHSK1Pair } = await import('../source-activities/browser-pair.ts');
+  const pair = browserHSK1Pair(session);
+  if (pair.pending()) await pair.recover(signal);
   const events = new AbortController();
   window.addEventListener('storage', event => {
     if (event.key === STORAGE_KEY || event.key === null) session.store.observeExternalChange();

@@ -1,0 +1,97 @@
+{
+  "baseTree": "9f305ff88c59f9455aff27d22bfa89d02ea11517",
+  "scope": "Student-facing text only; unchanged program structure, template expressions, machine literals and protected persistence/content files",
+  "passed": true,
+  "checks": [
+    {
+      "file": "course-app/src/backup-view.ts",
+      "onlyStudentTextChanged": true,
+      "templateExpressionsUnchanged": true,
+      "asciiMachineLiteralsUnchanged": true
+    },
+    {
+      "file": "hsk1-app/src/features/progress/data-panel.ts",
+      "onlyStudentTextChanged": true,
+      "templateExpressionsUnchanged": true,
+      "asciiMachineLiteralsUnchanged": true
+    },
+    {
+      "file": "hsk1-app/src/features/source-activities/index.ts",
+      "onlyStudentTextChanged": true,
+      "templateExpressionsUnchanged": true,
+      "asciiMachineLiteralsUnchanged": true
+    },
+    {
+      "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+      "onlyStudentTextChanged": true,
+      "templateExpressionsUnchanged": true,
+      "asciiMachineLiteralsUnchanged": true
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/summary.ts",
+      "onlyStudentTextChanged": true,
+      "templateExpressionsUnchanged": true,
+      "asciiMachineLiteralsUnchanged": true
+    },
+    {
+      "file": "hsk1-app/src/services/storage/index.ts",
+      "bytesUnchanged": true,
+      "sha256": "a0f3c1838c7c83c4af7ae46c61418f674d332499a61e56b69cfbcb080a4efab0"
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/paired.ts",
+      "bytesUnchanged": true,
+      "sha256": "7e2dd046dec52366cdbf981a08f84d24aec47928b39f3159a5cd8e4faf70d079"
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/store.ts",
+      "bytesUnchanged": true,
+      "sha256": "64ee031bd0ec20f557df4c0630bbc1ddf19b4ce0e7520787e8665e8ff454e346"
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/state.ts",
+      "bytesUnchanged": true,
+      "sha256": "bd3c5c247678dc1b92fdd2b57c65b28ed04be358034d7a1a0c9310ab2db560af"
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/browser-pair.ts",
+      "bytesUnchanged": true,
+      "sha256": "60c93905d9c78def58316d5d810405d18d264f7bc533c48e0d21816bf0301331"
+    },
+    {
+      "file": "hsk1-app/src/services/learning/session.ts",
+      "bytesUnchanged": true,
+      "sha256": "50460eb3f8015997acbf68ee837da8f0f5fbe8d6b3c20d1efbfb17d296853a8f"
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-04.json",
+      "bytesUnchanged": true,
+      "sha256": "9ea2fce9dd712ab8de75a2a932fd81db3b38da6fe6db82e40aefe3e0e430fe3d"
+    },
+    {
+      "file": "hsk1-app/content/homework30-bank.json",
+      "bytesUnchanged": true,
+      "sha256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d"
+    },
+    {
+      "file": "hsk1-app/content/textbook.json",
+      "bytesUnchanged": true,
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7"
+    },
+    {
+      "file": "hsk1-app/content/stage2-bank.json",
+      "bytesUnchanged": true,
+      "sha256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3"
+    },
+    {
+      "file": "hsk1-app/content/stage3-catalog.json",
+      "bytesUnchanged": true,
+      "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913"
+    },
+    {
+      "file": "hsk1-app/content/legacy-exercises.json",
+      "bytesUnchanged": true,
+      "sha256": "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c"
+    }
+  ]
+}

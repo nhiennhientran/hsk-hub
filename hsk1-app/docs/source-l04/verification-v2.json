@@ -1,0 +1,54 @@
+{
+  "baseCommit": "47e599837128843c77154db59ef8d2f8937f3a52",
+  "supersedesTree": "f2e8c158124cc196e45c4178703b3c6b34a921d4",
+  "scope": "HSK1 L4 source-v2 and fixed two-domain backup, local review only",
+  "contentCorrections": [
+    "six people with 六口人/sáu người",
+    "neutral warmup alt and SVG titles",
+    "printed xuéshēng/gè restored",
+    "Vietnamese meaning gloss distinguishes Chinese blanks",
+    "source-v2 keeps prior source-v1 history inert"
+  ],
+  "unit": {
+    "hsk1": {
+      "passed": 552,
+      "failed": 0
+    },
+    "course": {
+      "passed": 88,
+      "failed": 0
+    },
+    "pairedCases": 201,
+    "sourceCases": 16
+  },
+  "renderers": {
+    "sourceJSDOM": 10,
+    "pairedJSDOM": 11,
+    "nativeExecuted": false
+  },
+  "builds": {
+    "hsk1": "pass",
+    "course": "pass",
+    "browserFixtureTypecheck": "pass"
+  },
+  "nativeCollection": {
+    "unified": 422,
+    "retainedBaseline": 390,
+    "retainedSourceOnlyCases": 18,
+    "newUnified": 32,
+    "modularNew": 30,
+    "shardsPerBrowser": [
+      106,
+      105
+    ],
+    "executionClaim": false
+  },
+  "remainingGates": [
+    "independent editorial recheck",
+    "independent engineering review",
+    "native Chromium/WebKit full old+new suites in both hosts",
+    "mobile page-layout verification",
+    "no release approval yet"
+  ],
+  "safety": "Third-value or invalid/unreadable recovery remains blocked with rescue evidence. No automatic third-value overwrite. No atomic-visibility claim. No push/merge/publication."
+}

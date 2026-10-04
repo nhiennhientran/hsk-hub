@@ -101,7 +101,14 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       await view.ready;
       if (left || lifetime.signal.aborted) return;
     } else {
-      disposeView = mountPractice(body, { lesson, signal: lifetime.signal }).dispose;
+      const practice = mountPractice(body, { lesson, signal: lifetime.signal });
+      let source: { dispose(): void } | undefined;
+      if (lesson.id === 4) {
+        const { mountSourceActivities } = await import('../source-activities/index.ts');
+        if (left || lifetime.signal.aborted) { practice.dispose(); return; }
+        source = mountSourceActivities(body, { content, audio, signal: lifetime.signal });
+      }
+      disposeView = () => { practice.dispose(); source?.dispose(); };
       const more = element('nav'); more.className = 'study-paths'; more.setAttribute('aria-label', bilingualText(copy.otherPractice));
       more.append(routeLink(copy.practiceHub, { feature: 'review', lesson: lesson.id })); body.append(more);
     }

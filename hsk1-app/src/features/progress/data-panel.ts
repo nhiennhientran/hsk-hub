@@ -46,7 +46,7 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
   panel.append(status, element('h3', copy.currentData), summary);
   const actions = element('div'); actions.className = 'data-actions';
   const migration = button('preview-migration', copy.previewMigration);
-  const exportBackup = button('export-backup', copy.exportBackup);
+  const exportBackup = button('export-backup', {zh:copy.exportBackup.zh+'（旧格式，不含教材练习记录）',vi:copy.exportBackup.vi+' (định dạng cũ, không gồm dữ liệu luyện tập theo giáo trình)'});
   const exportOriginal = button('export-original', copy.exportOriginal);
   const restore = button('restore-data', copy.restore);
   const reload = button('reload-data', copy.reload);
@@ -240,11 +240,14 @@ export async function mountDataPanel(host: HTMLElement, signal: AbortSignal, lea
   }, { signal: controller.signal });
   restore.addEventListener('click', () => { clearPreview(); void runWrite(() => store.restore(controller.signal), 'restore'); }, { signal: controller.signal });
   reload.addEventListener('click', () => { readId++; clearPreview(); store.reloadDiscardingDraft(); actionMessage = copy.reloaded; render(); }, { signal: controller.signal });
+  const { mountPairPanel } = await import('../source-activities/pair-panel.ts');
+  if (controller.signal.aborted) return { dispose() { panel.remove(); } };
+  const pairedPanel = mountPairPanel(panel, await learning(), controller.signal);
   const unsubscribe = store.subscribe(render); render();
   return {
     dispose() {
       if (left) return;
-      left = true; readId++; controller.abort(); unsubscribe(); panel.remove(); signal.removeEventListener('abort', abort);
+      left = true; readId++; controller.abort(); unsubscribe(); pairedPanel.dispose(); panel.remove(); signal.removeEventListener('abort', abort);
       for (const [url, timer] of urls) { clearTimeout(timer); URL.revokeObjectURL(url); } urls.clear();
     },
   };

@@ -102,6 +102,12 @@ export function createHSK1Bridge(options: {
   return {
     collectCurrentDraft(){return current?.prepareExit()??false},
     async store(){return (await learning()).store},
+    async sourceBackup(){
+      const session=await learning();
+      const {browserHSK1Pair,prepareHSK1Pair}=await import('../../hsk1-app/src/services/source-activities/browser-pair.ts');
+      return {coordinator:browserHSK1Pair(session),prepare:()=>prepareHSK1Pair(session),
+        async mount(host:HTMLElement,signal:AbortSignal,onApplied?:()=>void){const {mountPairPanel}=await import('../../hsk1-app/src/features/source-activities/pair-panel.ts');if(signal.aborted)return {dispose(){}};return mountPairPanel(host,session,signal,undefined,onApplied);}};
+    },
     async render(target: HTMLElement, route: Route) {
       if (!lifecycle) {
         host = document.createElement("section");

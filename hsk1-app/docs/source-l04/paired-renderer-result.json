@@ -1,0 +1,51 @@
+{
+  "kind": "real JSDOM renderers; not native execution",
+  "passed": true,
+  "cases": 11,
+  "results": [
+    {
+      "name": "modular shared panel full export/import/reset/undo uses both real nonempty stores and preserves legacy bytes",
+      "passed": true
+    },
+    {
+      "name": "primary-only import and source-only reset preserve the unselected domain exact bytes",
+      "passed": true
+    },
+    {
+      "name": "pending journal produces explicitly labeled rescue material rather than full export",
+      "passed": true
+    },
+    {
+      "name": "unified real renderer ignores late old file success after a newer selection",
+      "passed": true
+    },
+    {
+      "name": "unified real renderer ignores late old file failure after a newer selection",
+      "passed": true
+    },
+    {
+      "name": "reselection aborts an already-clicked confirmation waiting for its write lock; detached buttons cannot revive it",
+      "passed": true
+    },
+    {
+      "name": "close invalidates file reads and queued confirmation, without claiming a completed write was undone",
+      "passed": true
+    },
+    {
+      "name": "unified schema2 prevalidates all courses and rejects a late invalid course without mounting any action",
+      "passed": true
+    },
+    {
+      "name": "modular reselect preserves the newer preview when an older queued confirmation settles",
+      "passed": true
+    },
+    {
+      "name": "modular late file completion never replaces the newer file selection",
+      "passed": true
+    },
+    {
+      "name": "detached modular preview controls cannot confirm or cancel a newer selection",
+      "passed": true
+    }
+  ]
+}

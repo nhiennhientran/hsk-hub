@@ -1,0 +1,47 @@
+{
+  "kind": "actual source component rendered in JSDOM; no native pixel/browser or audio listening assertion",
+  "cases": 10,
+  "passed": true,
+  "results": [
+    {
+      "name": "real component renders 21 cards,24 fields,10 source-mapped images and sparse number table",
+      "passed": true
+    },
+    {
+      "name": "save feedback requires confirmed readback; history increments and edits clear feedback DOM",
+      "passed": true
+    },
+    {
+      "name": "quota failure keeps actual input exportable and never creates reference answer nodes",
+      "passed": true
+    },
+    {
+      "name": "delayed submission cannot reveal feedback after newer input",
+      "passed": true
+    },
+    {
+      "name": "open picture and grammar records remain genuinely ungraded",
+      "passed": true
+    },
+    {
+      "name": "explicit source reset and recovery redraw remove stale feedback without touching old keys",
+      "passed": true
+    },
+    {
+      "name": "IME edit cancels stale preview and exports partial composition without dropping it",
+      "passed": true
+    },
+    {
+      "name": "cancel while waiting for a source replacement lock performs no mutation",
+      "passed": true
+    },
+    {
+      "name": "historical prompt and response HTML stays inert and visible as ordinary text",
+      "passed": true
+    },
+    {
+      "name": "original audio uses existing scene IDs and neutral labels without transcript",
+      "passed": true
+    }
+  ]
+}

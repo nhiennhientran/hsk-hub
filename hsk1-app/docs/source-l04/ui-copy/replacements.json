@@ -1,0 +1,272 @@
+[
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "两份记录分别保存。跨域替换可恢复，但浏览器不提供跨键原子事务；遇到恢复冲突请先下载救援材料。",
+    "to": "学习记录和教材练习记录分开保存。替换过程中若出现问题，请先下载救援材料，不要清除浏览器数据。",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "Hai miền được lưu riêng. Có thể khôi phục khi thay cả hai, nhưng trình duyệt không có giao dịch nguyên tử qua nhiều khóa; khi xung đột, tải dữ liệu cứu hộ trước.",
+    "to": "Dữ liệu học tập và dữ liệu luyện tập theo giáo trình được lưu riêng. Nếu gặp lỗi khi thay dữ liệu, hãy tải dữ liệu cứu hộ trước và không xóa dữ liệu trình duyệt.",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "未完成；请保留草稿与救援材料，解决恢复状态或重新预览。",
+    "to": "还不能确认操作是否全部完成。请先保留未保存的修改并下载救援材料。若另一窗口修改了记录，或仍有未保存内容，请先核对并保存，再重选文件和预览。",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "Chưa hoàn tất; hãy giữ bản nháp và dữ liệu cứu hộ, xử lý trạng thái khôi phục hoặc xem trước lại.",
+    "to": "Chưa xác nhận được thao tác đã hoàn tất. Hãy giữ các thay đổi chưa lưu và tải dữ liệu cứu hộ trước. Nếu dữ liệu đã đổi ở cửa sổ khác hoặc còn nội dung chưa lưu, hãy kiểm tra và lưu rồi chọn lại tệp và xem trước.",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "此浏览器没有安全写锁，已阻止双域变更；仍可下载救援材料与兼容备份。",
+    "to": "此浏览器暂时无法安全地同时替换两类记录，已停止操作。你仍可下载救援材料或旧格式备份。",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "Trình duyệt không có khóa ghi an toàn nên đã chặn thay hai miền; vẫn có thể tải dữ liệu cứu hộ và bản tương thích.",
+    "to": "Trình duyệt này hiện chưa thể thay an toàn cả hai loại dữ liệu nên thao tác đã dừng. Bạn vẫn có thể tải dữ liệu cứu hộ hoặc bản sao lưu định dạng cũ.",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "已生成包含两域的完整备份",
+    "to": "已生成包含学习记录和教材练习记录的完整备份",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "Đã tạo bản sao lưu đầy đủ cả hai miền",
+    "to": "Đã tạo bản sao lưu đầy đủ gồm dữ liệu học tập và dữ liệu luyện tập theo giáo trình",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "仅生成救援材料：当前不能确认一致快照，请勿当作完整备份",
+    "to": "只能生成救援材料，暂时无法确认两类记录均已完整保存。请保留此文件，不要把它当作完整备份导入。",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "Chỉ tạo dữ liệu cứu hộ: chưa xác nhận được ảnh chụp nhất quán; không dùng như bản sao lưu đầy đủ",
+    "to": "Chỉ có thể tạo dữ liệu cứu hộ; chưa xác nhận được cả hai loại dữ liệu đã được lưu đầy đủ. Hãy giữ tệp này; không nhập tệp này như bản sao lưu đầy đủ.",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "恢复状态已核对；请重新打开数据页",
+    "to": "已检查上次未完成的操作，请重新打开学习记录页面。",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "Đã kiểm tra trạng thái khôi phục; hãy mở lại trang dữ liệu",
+    "to": "Đã kiểm tra thao tác dang dở trước đó; hãy mở lại trang dữ liệu học tập.",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "导入完整或单域备份",
+    "to": "导入完整或单独备份",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "Nhập bản sao lưu đầy đủ hoặc một miền",
+    "to": "Nhập bản sao lưu đầy đủ hoặc riêng từng loại",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "旧备份仅替换原学习记录；文件没有原版活动域，当前原版活动全部保留。",
+    "to": "旧备份仅替换学习记录；没有教材练习记录，当前教材练习记录全部保留。",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "Bản cũ chỉ thay dữ liệu học; tệp không có miền hoạt động gốc nên giữ nguyên toàn bộ hoạt động hiện tại.",
+    "to": "Bản cũ chỉ thay dữ liệu học tập; không có dữ liệu luyện tập theo giáo trình nên giữ nguyên toàn bộ dữ liệu luyện tập hiện tại.",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "两个域 · Cả hai miền",
+    "to": "学习记录和教材练习记录 · Dữ liệu học tập và dữ liệu luyện tập theo giáo trình",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "当前原域：教材${current.reading}组、30-v1作业${current.newHomeworkLessons}课；原版活动${activities.activities}组、已提交${activities.submissions}次。范围外记录及旧版原始键保留；保留恢复副本。",
+    "to": "当前：教材学习${current.reading}课、新版作业${current.newHomeworkLessons}课；教材练习记录${activities.activities}组、已提交${activities.submissions}次。所选范围外的记录和旧版原始记录保留；可恢复清空前的记录。",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "Hiện có ${current.reading} nhóm SGK, ${current.newHomeworkLessons} bài tập 30-v1; ${activities.activities} nhóm hoạt động gốc, ${activities.submissions} lần đã nộp. Giữ dữ liệu ngoài phạm vi, khóa gốc cũ và bản khôi phục.",
+    "to": "Hiện có ${current.reading} bài đã học trong giáo trình, ${current.newHomeworkLessons} bài tập phiên bản mới; ${activities.activities} nhóm dữ liệu luyện tập theo giáo trình, ${activities.submissions} lần đã nộp. Giữ dữ liệu ngoài phạm vi đã chọn và bản lưu gốc cũ; có thể khôi phục dữ liệu trước khi xóa.",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "预览撤销上次双域替换",
+    "to": "预览恢复上次同时替换前的记录",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "Xem trước hoàn tác thay hai miền gần nhất",
+    "to": "Xem trước khôi phục dữ liệu trước lần thay cả hai gần nhất",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "用上次双域替换前的记录恢复，可能替换之后新增的记录。",
+    "to": "恢复上次同时替换前的学习记录和教材练习记录；之后新增的记录可能被替换。",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "from": "Khôi phục dữ liệu trước lần thay hai miền gần nhất; có thể thay cả dữ liệu thêm sau đó. ",
+    "to": "Khôi phục dữ liệu học tập và dữ liệu luyện tập theo giáo trình trước lần thay cả hai gần nhất; dữ liệu được thêm sau đó có thể bị thay. ",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/services/source-activities/summary.ts",
+    "from": "替换HSK1两个域。原学习记录：教材分部 ${a.reading}→${b.reading}；旧作业课次 ${a.homeworkLessons}→${b.homeworkLessons}；30-v1作业课次 ${a.newHomeworkLessons}→${b.newHomeworkLessons}。原域其他学习记录也会替换。原版活动 ${x.activities}→${y.activities}组，已提交历史 ${x.submissions}→${y.submissions}次。有效空域会清空该域；保留双域恢复副本。原浏览器legacy键不变。",
+    "to": "将替换HSK1的学习记录和教材练习记录。学习记录：教材学习 ${a.reading}→${b.reading}课；旧作业 ${a.homeworkLessons}→${b.homeworkLessons}课；新版作业 ${a.newHomeworkLessons}→${b.newHomeworkLessons}课。其他学习记录也会替换。教材练习记录 ${x.activities}→${y.activities}组，已提交记录 ${x.submissions}→${y.submissions}次。若备份中某类记录为空，导入后会清空这一类。可恢复本次替换前的两类记录；浏览器中的旧版原始记录不变。",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/services/source-activities/summary.ts",
+    "from": "Thay cả hai miền HSK1. Dữ liệu học: mục SGK ${a.reading}→${b.reading}; bài tập cũ ${a.homeworkLessons}→${b.homeworkLessons} bài; bài tập 30-v1 ${a.newHomeworkLessons}→${b.newHomeworkLessons} bài. Các dữ liệu học khác trong miền cũ cũng được thay. Hoạt động gốc ${x.activities}→${y.activities} nhóm, lịch sử đã nộp ${x.submissions}→${y.submissions} lần. Miền rỗng hợp lệ sẽ xóa miền đó; giữ bản khôi phục hai miền. Không thay các khóa legacy gốc của trình duyệt.",
+    "to": "Sẽ thay dữ liệu học tập và dữ liệu luyện tập theo giáo trình HSK1. Dữ liệu học tập: bài đã học trong giáo trình ${a.reading}→${b.reading}; bài tập cũ ${a.homeworkLessons}→${b.homeworkLessons} bài; bài tập phiên bản mới ${a.newHomeworkLessons}→${b.newHomeworkLessons} bài. Các dữ liệu học tập khác cũng được thay. Dữ liệu luyện tập theo giáo trình ${x.activities}→${y.activities} nhóm, số lần đã nộp ${x.submissions}→${y.submissions}. Nếu một loại dữ liệu trong bản sao lưu trống, nhập tệp sẽ xóa loại đó. Có thể khôi phục cả hai loại dữ liệu trước lần thay này; giữ nguyên bản lưu gốc cũ trong trình duyệt.",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "原版活动域不可用 · Miền hoạt động gốc chưa dùng được",
+    "to": "教材练习记录暂不可用 · Dữ liệu luyện tập theo giáo trình hiện chưa dùng được",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "请先处理HSK1待恢复状态 · Hãy xử lý trạng thái khôi phục HSK1 trước",
+    "to": "请先检查上次未完成的HSK1操作 · Hãy kiểm tra thao tác HSK1 dang dở trước đó",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "旧备份未包含原版活动域：当前原版活动全部保留，仅替换原学习记录。",
+    "to": "旧备份仅替换学习记录；没有教材练习记录，当前教材练习记录全部保留。",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "Bản cũ không có miền hoạt động gốc: giữ toàn bộ hoạt động hiện tại, chỉ thay dữ liệu học.",
+    "to": "Bản cũ chỉ thay dữ liệu học tập; không có dữ liệu luyện tập theo giáo trình nên giữ nguyên toàn bộ dữ liệu luyện tập hiện tại.",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "仅导出救援材料，不能确认完整一致备份。请处理HSK1恢复状态或未保存草稿。",
+    "to": "只能导出救援材料，暂时无法确认记录均已完整保存。请保留此文件，不要把它当作完整备份导入；先检查上次未完成的HSK1操作和未保存的修改。",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "Chỉ xuất dữ liệu cứu hộ, chưa xác nhận bản đầy đủ nhất quán. Hãy xử lý trạng thái khôi phục HSK1 hoặc bản nháp chưa lưu.",
+    "to": "Chỉ có thể xuất dữ liệu cứu hộ; chưa xác nhận được dữ liệu đã được lưu đầy đủ. Hãy giữ tệp này, không nhập như bản sao lưu đầy đủ; hãy kiểm tra thao tác HSK1 dang dở và các thay đổi chưa lưu trước.",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "已生成含HSK1两个域的三级备份。请保存并检查文件。",
+    "to": "已生成三级备份，包含HSK1学习记录和教材练习记录。请保存并检查文件。",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "Đã tạo bản sao lưu ba cấp gồm cả hai miền HSK1. Hãy lưu và kiểm tra tệp.",
+    "to": "Đã tạo bản sao lưu ba cấp, gồm dữ liệu học tập và dữ liệu luyện tập theo giáo trình HSK1. Hãy lưu và kiểm tra tệp.",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "请先完成输入并保存两域草稿 · Hãy hoàn tất nhập và lưu bản nháp cả hai miền",
+    "to": "请先完成输入，保存学习记录和教材练习记录的修改，再重选文件。 · Hãy hoàn tất nhập, lưu các thay đổi trong dữ liệu học tập và dữ liệu luyện tập theo giáo trình rồi chọn lại tệp.",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "恢复未完成。请保留草稿及救援材料，再处理恢复状态或重新预览；当前状态可能需要核对。",
+    "to": "还不能确认恢复是否全部完成。请保留未保存的修改和救援材料；核对另一窗口的修改及上次未完成的操作，再重选文件和预览。",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "Khôi phục chưa hoàn tất. Giữ bản nháp và dữ liệu cứu hộ rồi xử lý trạng thái khôi phục hoặc xem trước lại; cần kiểm tra trạng thái hiện tại.",
+    "to": "Chưa xác nhận được việc khôi phục đã hoàn tất. Hãy giữ các thay đổi chưa lưu và dữ liệu cứu hộ; kiểm tra thay đổi ở cửa sổ khác và thao tác dang dở rồi chọn lại tệp và xem trước.",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "备份未通过验证，或当前无法安全替换。请保留救援材料，处理恢复状态或重新选择文件。",
+    "to": "这个备份目前无法导入，或记录已发生变化。请先保留救援材料，核对未保存的修改，再重选文件和预览。",
+    "occurrences": 1
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "from": "Bản sao lưu chưa qua kiểm tra hoặc chưa thể thay an toàn. Hãy giữ dữ liệu cứu hộ, xử lý trạng thái khôi phục hoặc chọn lại tệp.",
+    "to": "Hiện chưa thể nhập bản sao lưu này hoặc dữ liệu đã thay đổi. Hãy giữ dữ liệu cứu hộ, kiểm tra các thay đổi chưa lưu rồi chọn lại tệp và xem trước.",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+    "operation": "consistent backup labels only",
+    "labels": [
+      "学习记录",
+      "教材练习记录",
+      "dữ liệu học tập",
+      "dữ liệu luyện tập theo giáo trình"
+    ]
+  },
+  {
+    "file": "course-app/src/backup-view.ts",
+    "operation": "consistent backup labels only",
+    "labels": [
+      "学习记录",
+      "教材练习记录",
+      "dữ liệu học tập",
+      "dữ liệu luyện tập theo giáo trình"
+    ]
+  },
+  {
+    "file": "hsk1-app/src/features/progress/data-panel.ts",
+    "operation": "consistent backup labels only",
+    "labels": [
+      "学习记录",
+      "教材练习记录",
+      "dữ liệu học tập",
+      "dữ liệu luyện tập theo giáo trình"
+    ]
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/index.ts",
+    "from": "发现尚未解决的数据恢复状态，已阻止写入。请先保留导出副本；不要清除浏览器数据。",
+    "to": "上次的数据操作还未确认完成，已暂停修改记录。请先导出备份，不要清除浏览器数据。",
+    "occurrences": 1
+  },
+  {
+    "file": "hsk1-app/src/features/source-activities/index.ts",
+    "from": "Phát hiện trạng thái khôi phục chưa được giải quyết; đã chặn ghi. Hãy giữ bản xuất và không xóa dữ liệu trình duyệt.",
+    "to": "Thao tác dữ liệu trước đó chưa được xác nhận hoàn tất nên đã tạm dừng thay đổi. Hãy xuất bản sao lưu trước và không xóa dữ liệu trình duyệt.",
+    "occurrences": 1
+  }
+]
