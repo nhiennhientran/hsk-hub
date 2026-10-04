@@ -99,19 +99,14 @@
     "scope": "HSK2L1–15, HSK3L1–18 body/activity and supplement flags; final48/HSK1/audio gates incomplete"
   },
   "currentCI": {
-    "lastPassedRun": 37189551087,
-    "lastPassedBrowserCases": 506,
-    "audioIntegrationRun": 37106355777,
-    "audioIntegrationStatus": "original37106355777failed130passed4failed;repaired37107556124passed154",
-    "audioCases": 134,
-    "nextLocalTestsDiscoverable": 514,
-    "nextScope": "HSK1 same-lesson hidden/listening scene navigation in both hosts; prior506 retention",
-    "lessons67Run": 37107213747,
-    "lessons67Status": "previous37107213747failed144passed10failed;repaired37107556124passed154",
-    "extraPreflightCases": 53,
-    "newCandidateStatus": "339HSK1+112course units/both builds/types and actual bridge regression passed;514 unified plus8 standalone native pending",
-    "extraPreflightScope": "last successful count at03cb7d4",
-    "nextStandaloneBrowserCases": 8
+    "status": "audio startup repair frozen, exact candidate CI pending",
+    "previousRun": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37196725810",
+    "previousResults": {
+      "passed": 578,
+      "failed": 1,
+      "notRun": 21
+    },
+    "expectedMainCases": 600
   },
   "contentPilot": {
     "levels": [
@@ -198,7 +193,7 @@
     "independentChecks": 1758,
     "browser": "passed174/174 aggregate browser cases and8/8mobilepreflight, run37109960704, remotee8b7aef"
   },
-  "updatedAt": "2026-10-04T09:02:00Z",
+  "updatedAt": "2026-10-04T11:44:00Z",
   "remoteDevelopmentCommit": "03cb7d4a53cbd7aca9f90c69a66e9dd8cd428f44",
   "localDevelopmentCommit": "03cb7d4a53cbd7aca9f90c69a66e9dd8cd428f44",
   "exactSharedTree": "5304db1c6e7034e367fbc2a480ba57fd868011f4",
@@ -743,7 +738,7 @@
     "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37191078624"
   },
   "hsk1SourceL04": {
-    "status": "600 native attempt590passed/10fixture-capture failures; test-only repair full rerun pending",
+    "status": "21-activity pilot: native578passed/1audio failure/21notrun; audio repair rerun pending; source fidelity and additional source tasks remain separate",
     "sourceVersion": "source-v2",
     "activities": 21,
     "fields": 24,
@@ -756,11 +751,15 @@
     "nativeExecuted": false,
     "report": "course-app/docs/hsk1-source-integration/integration-review.md",
     "initialFailedCI": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37193376372",
-    "lastFailedCI": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37194697660"
+    "lastFailedCI": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37196725810"
   },
   "courseActivityDurabilityRepair": {
-    "status": "actual renderer/store baseline fails and candidate passes four scenarios; native pending",
+    "status": "8 native durability cases passed at4d7fa; complete600 checkpoint still blocked by unrelated native audio startup",
     "scope": "No live checkedAt before candidate readback; abort on edit, IME, newer submit, disposal; no old record migration",
     "nativeCasesCollected": 8
+  },
+  "audioStartupRepair": {
+    "status": "scoped independent review and574+121unit tests passed; native pending",
+    "report": "course-app/docs/audio-startup-position/review.json"
   }
 }

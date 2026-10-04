@@ -244,15 +244,60 @@ export function createAudioService(options: {
     if (!current(request) || !request.requests) return;
     clearBoundary();
     for (const cleanup of request.trackCleanups.splice(0)) cleanup();
-    const track = request.requests[request.index];
+    const trackIndex = request.index;
+    const track = request.requests[trackIndex];
     request.paused = false;
     request.trackStarted = false;
     let positioned = false;
     let nativePlaying = false;
     let zeroDurationClock: number | undefined;
     let waitingTime: number | undefined;
+    let initialPositionTimer: ReturnType<typeof setTimeout> | undefined;
+    let initialPositionRepairs = 0;
+    // An explicit start 0 without an end is still a whole original, matching
+    // the existing zero-duration native-clock recovery contract.
+    const bounded = (track.start ?? 0) > 0 || track.end !== undefined;
+    const startTime = track.start ?? 0;
+    const clearInitialPosition = () => {
+      if (initialPositionTimer !== undefined) clearTimer(initialPositionTimer);
+      initialPositionTimer = undefined;
+    };
+    request.trackCleanups.push(clearInitialPosition);
+    const actualInitialPosition = () => {
+      const time = audio.currentTime;
+      return Number.isFinite(time) && time >= startTime - 0.001 &&
+        (track.end === undefined || time < track.end) &&
+        // Every delayed first confirmation must rewind rather than mute the
+        // beginning of speech, even if no earlier bad clock was observed.
+        time <= startTime + 0.04;
+    };
+    const recheckInitialPosition = () => {
+      if (initialPositionTimer !== undefined) return;
+      initialPositionTimer = setTimer(() => {
+        initialPositionTimer = undefined;
+        if (!current(request) || request.index !== trackIndex || request.paused ||
+            request.trackStarted || state.status === 'error' || !nativePlaying || audio.seeking || audio.paused) return;
+        if (actualInitialPosition()) { confirmPlaying(); return; }
+        // WebKit can briefly expose its pre-seek clock inside seeked. Recheck
+        // on the next task first; only a still-wrong/advanced clock needs a new
+        // silent seek. Do not wait for a 250ms timeupdate to unmute mid-word.
+        if (++initialPositionRepairs > 2) {
+          fail(request, 'Không xác định được vị trí đầu đoạn âm thanh. Hãy thử lại.');
+          return;
+        }
+        try { audio.currentTime = startTime; }
+        catch (error) { fail(request, playbackIssue(error)); }
+        // A genuine later seeked/playing/timeupdate must confirm the new seek.
+      }, 0);
+    };
     const confirmPlaying = () => {
       if (!nativePlaying || !positioned || audio.seeking || !current(request) || request.paused || state.status === 'error') return;
+      if (bounded && !request.trackStarted && !actualInitialPosition()) {
+        audio.muted = true;
+        recheckInitialPosition();
+        return;
+      }
+      clearInitialPosition();
       audio.muted=false;
       request.trackStarted = true;
       waitingTime = undefined;
@@ -338,6 +383,9 @@ export function createAudioService(options: {
       if (!positioned && nativePlaying && !request.paused && !audio.paused &&
           !audio.seeking && Number.isFinite(audio.duration) && audio.duration > 0) position();
       if (!current(request) || state.status === 'error') return;
+      if (bounded && !request.trackStarted && positioned && nativePlaying &&
+          !request.paused && !audio.paused && !audio.seeking && audio.readyState >= 2) confirmPlaying();
+      if (!current(request)) return;
       // Some WebKit MP3 decoders retain duration=0 even while the original
       // recording genuinely advances. Only a whole, unbounded recording can
       // recover from this: require native playing plus two non-seeking clock

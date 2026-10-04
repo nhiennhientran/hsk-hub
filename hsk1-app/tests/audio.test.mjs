@@ -195,8 +195,12 @@ test('clock and readiness cannot invent a first playing event; genuinely stalled
   const first = service.play(track()); audio.metadata();
   audio.calls[0].resolve(); audio.readyState = 4; audio.paused = false; audio.time(1.2);
   assert.equal(service.snapshot().status, 'loading');
-  audio.playing(); await first;
-  audio.emit('waiting'); audio.time(1.2);
+  audio.playing();
+  // A first playing event at an already advanced, still-muted clock must not
+  // discard the opening. Model the subsequent correctly settled native seek.
+  assert.equal(service.snapshot().status, 'loading'); assert.equal(audio.muted, true);
+  audio.mediaTime = 1; audio.emit('seeked'); await first;
+  audio.time(1.2); audio.emit('waiting'); audio.time(1.2);
   assert.equal(service.snapshot().status, 'loading');
   clock.fire();
   assert.equal(service.snapshot().status, 'error');

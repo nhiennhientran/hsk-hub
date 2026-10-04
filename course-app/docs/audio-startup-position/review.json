@@ -1,0 +1,43 @@
+{
+  "baseCommit": "4d7fa9a8ad198951278005e1fe104389e43ae6cf",
+  "failedRun": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37196725810",
+  "actualPreviousResults": {
+    "unifiedPassed": 557,
+    "unifiedFailed": 1,
+    "standalonePassed": 21,
+    "standaloneNotRun": 21,
+    "preflightPassed": 106
+  },
+  "failure": {
+    "source": "HSK2 original 3-7.mp3",
+    "requestedStart": 0.718,
+    "nonMutedSeekedClock": 0.003951848,
+    "evidence": "52 native events, same source; no captured PCM or proof of heard file head"
+  },
+  "repair": "Before bounded initial playback, verify actual settled clock at start within40ms, stay muted on an invalid clock, next-task recheck, at most two corrective silent seeks; retire probes with request/track cleanup. Explicit start0 without end retains original whole-track duration0 recovery.",
+  "independentReview": {
+    "actualServiceProbes": 10,
+    "audioContractCases": 49,
+    "v2Status": "rejected: explicit zero-start whole-track recovery regression",
+    "v3Status": "passed scoped review; native pending"
+  },
+  "local": {
+    "hsk1Unit": 574,
+    "courseUnit": 121,
+    "courseBuild": true,
+    "browserFixtureTypes": true,
+    "unifiedIdentities": 558,
+    "standaloneIdentities": 42,
+    "shardsPerEngine": [
+      140,
+      139
+    ],
+    "workers": 1,
+    "retries": 0
+  },
+  "native": "Pending exact candidate CI: one extra focused WebKit original failure case, then unchanged600 main cases and106preflight. Focused duplicate is not counted as a new suite identity.",
+  "limits": [
+    "L4 source image and full source-activity coverage repairs remain separate",
+    "No human audio listening or final production approval claim"
+  ]
+}
