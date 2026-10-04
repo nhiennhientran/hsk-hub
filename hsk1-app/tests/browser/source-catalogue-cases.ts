@@ -104,7 +104,7 @@ async function assertRenderedLesson(page:Page,lesson:SourceLesson,expect:typeof 
   }
   if(expected.table){
    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;
-   expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));
+   expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>column.zh||column.vi?`${column.zh} · ${column.vi}`:''));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));
    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);
    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');
    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}

@@ -25,7 +25,13 @@
     "typecheckCommand": "npm run check",
     "typecheckCwd": "hsk1-app",
     "typecheckExit": 0,
-    "independentSceneMappingReview": "pending",
+    "independentSceneMappingReview": {
+      "status": "accepted-independent-scene-to-reviewed-source-crop-binding",
+      "report": "course-app/docs/resume-20261004/qa-scene-bindings/independent-review.json",
+      "reviewer": "qa_hsk1_01_03",
+      "scenes": 45,
+      "crops": 48
+    },
     "nativeImageLoadAndHiddenAccessibilityReview": "pending",
     "runtimeResolverAtCheck": {
       "expectedScenes": 45,
@@ -35,8 +41,8 @@
     }
   },
   "limitations": [
-    "Root current-L4 catalogue and shared-host crop sync are now present; scene resolver all 45/48 validated.",
-    "Native image loading/hidden-accessibility and independent scene mapping remain pending.",
+    "Root current-L4 catalogue and shared-host crop sync are present; runtime 45/48 and independent mapping review passed.",
+    "Native image loading/hidden-accessibility gate remains pending.",
     "No human listening, pronunciation/tone or physical-device certification."
   ]
 }

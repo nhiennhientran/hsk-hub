@@ -1,0 +1,2596 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config=/workspace/scratch/28b55072841a/native-catalogue-probe-modular.config.ts",
+      "source-catalogue.spec.ts"
+    ],
+    "configFile": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular.config.ts",
+    "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-local-probe",
+        "name": "chromium-local-probe",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser",
+        "testIgnore": [
+          "**/release.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 20000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node node_modules/vite/bin/vite.js preview --outDir /workspace/scratch/28b55072841a/native-catalogue-probe-modular-dist --port 4198 --strictPort --host 127.0.0.1",
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app",
+      "url": "http://127.0.0.1:4198",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "source-catalogue.spec.ts",
+      "file": "source-catalogue.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "modular HSK1 source catalogue L1 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3790,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:21.922Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-4e305fd1fe1044529a96",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L1 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3522,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:25.798Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-788dd10d2eb32ecdad41",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L1 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3036,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:29.328Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-23820a6201240468fe6d",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L1 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1416,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:32.371Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-22bd2a970d23f0ba9b87",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L2 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3253,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:33.798Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-aaf3e5051c56f20a066d",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L2 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3076,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:37.061Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-3e4732327f7e7f56ff7a",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L2 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3040,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:40.145Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-359fda140fa2586941e5",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L2 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1483,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:43.193Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-72a37c7d0656fe864b59",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L3 complete DOM at 320",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2267,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:44.689Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-57752-ogue-L3-complete-DOM-at-320-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-458fcd6d03db97207465",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L3 complete DOM at 390",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2587,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:47.521Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-350dd-ogue-L3-complete-DOM-at-390-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-459e3a50c55e2202f48e",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L3 complete DOM at 768",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2627,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:50.710Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-e88f3-ogue-L3-complete-DOM-at-768-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-b2621eb9258a69686daa",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L3 complete DOM at 1440",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2497,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"理解 · Hiểu\",\u001b[22m\n\u001b[2m    \"会用 · Biết dùng\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:53.923Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-15806-gue-L3-complete-DOM-at-1440-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-8003809820947a755736",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L4 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4314,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T15:59:57.010Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-60518c49f9b7216197ef",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L4 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4093,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:01.415Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-9833f601a09871109404",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L4 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2558,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:05.516Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-a7c8203a18a850a4741b",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L4 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2358,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:08.085Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-526cb443b79417deb5ec",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L5 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6716,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:10.451Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-611c9e173853bd894b22",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L5 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6744,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:17.175Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-c29fd3f14d6fdd37f545",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L5 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5030,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:23.929Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-769c06af03d317764612",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L5 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2857,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:28.968Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-f08df0102adeef5024db",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L6 complete DOM at 320",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2935,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:31.833Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-2e291-ogue-L6-complete-DOM-at-320-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-d8ecc938b3f7d0dffab4",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L6 complete DOM at 390",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3380,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:35.228Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-3a4e9-ogue-L6-complete-DOM-at-390-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-94401f1ceceb556ab6f9",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L6 complete DOM at 768",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3289,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:39.115Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-37852-ogue-L6-complete-DOM-at-768-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-47225844eb60a77bec9a",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L6 complete DOM at 1440",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3214,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"星期一 · Thứ Hai\",\u001b[22m\n\u001b[2m    \"星期二 · Thứ Ba\",\u001b[22m\n\u001b[2m    \"星期六 · Thứ Bảy\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:42.916Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-b4fcd-gue-L6-complete-DOM-at-1440-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-d9f728ed083c936ab811",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L7 complete DOM at 320",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3513,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:46.671Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-0c569-ogue-L7-complete-DOM-at-320-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-94abd75f2f4c18d7ef51",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L7 complete DOM at 390",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3478,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:50.732Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-992e6-ogue-L7-complete-DOM-at-390-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-4482a245df5cc8900f98",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L7 complete DOM at 768",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3453,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:54.756Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-f6456-ogue-L7-complete-DOM-at-768-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-584963949bd98b765368",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L7 complete DOM at 1440",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3273,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267",
+                    "location": {
+                      "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                      "column": 34,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                        "column": 34,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \" · \",\u001b[39m\n\u001b[31m+   \"\",\u001b[39m\n\u001b[2m    \"午饭 · Ăn trưa\",\u001b[22m\n\u001b[2m    \"休息 · Nghỉ ngơi\",\u001b[22m\n\u001b[2m    \"下课 · Tan học\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  105 |   if(expected.table){\n  106 |    expect(actual.table,expected.id).not.toBeNull();const headerless=(expected.table as typeof expected.table&{headerless?:true}).headerless;\n> 107 |    expect(actual.table!.headers).toEqual(headerless?[]:expected.table.columns.map(column=>`${column.zh} · ${column.vi}`));expect(actual.table!.rows.map(r=>r.id)).toEqual(expected.table.rows.map(r=>r.id));\n      |                                  ^\n  108 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('aria-label',`${(expected.table.caption??expected.title).zh} · ${(expected.table.caption??expected.title).vi}`);\n  109 |    await expect(node.locator('.source-table-scroll')).toHaveAttribute('tabindex','0');\n  110 |    for(const [r,row]of expected.table.rows.entries()){expect(actual.table!.rows[r]!.cells.length).toBe(expected.table.columns.length);for(const [c,cell]of row.cells.entries()){const actualCell=actual.table!.rows[r]!.cells[c]!;expect(actualCell.fields).toEqual(cell.fieldId?[cell.fieldId]:[]);if(cell.text){expect(actualCell.text).toContain(cell.text.zh);expect(actualCell.text).toContain(cell.text.vi);}}}\n    at assertRenderedLesson (/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:107:34)\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts:131:267"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:00:58.731Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/native-catalogue-probe-modular-results/source-catalogue-modular-H-f74ee-gue-L7-complete-DOM-at-1440-chromium-local-probe/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser/source-catalogue-cases.ts",
+                    "column": 34,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-071dbd51f2178de844f5",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L8 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:02.597Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-47e592c9884a5d549415",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L8 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5045,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:08.196Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-6515e883bdfb717ae27b",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L8 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4971,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:13.252Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-93f46814cb4ff7906b59",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L8 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2614,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:18.231Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-6440f656ad21b6a2b58e",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L9 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3741,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:20.855Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-663e105be0a482d8673f",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L9 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3785,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:24.604Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-405f828046ae59e65720",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L9 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2870,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:28.396Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-bd3f09275dfcef997f47",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L9 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2447,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:31.279Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-388db77e7262d66acb5a",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L10 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3185,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:33.737Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-f050320e3cb166403820",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L10 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2917,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:36.934Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-a0294ecdd44899e24305",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L10 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2450,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:39.860Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-880ead019f47181c5d3e",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L10 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2308,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:42.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-9e2001c2cecc0e03c3bd",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L11 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2543,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:44.639Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-548bf89b0063b966ca8c",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L11 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2565,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:47.191Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-18b13c47b30c4442eb03",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L11 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2647,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:49.766Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-7345a3bf01509088f2fc",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L11 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2514,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:52.421Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-007c59a20f80388ba7fb",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L12 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5290,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:01:54.943Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-4abb5249f555042a2d40",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L12 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5151,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:00.242Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-a1a7754ac08d1e23553f",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L12 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2655,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:05.405Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-97388d84fb0999be950a",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L12 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2287,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:08.071Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-1b86032117a2b28988a5",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L13 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3730,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:10.371Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-2525a4c026f18272aeb4",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L13 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3777,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:14.112Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-0f4fbcbd5f257aeedfe8",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L13 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2247,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:17.896Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-b98049cea2ff77090765",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L13 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2091,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:20.150Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-591c2a79233d23b14a29",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L14 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5148,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:22.249Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-88e85a7edea8211b6e56",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L14 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5133,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:27.407Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-d4be571c123f9e4e3066",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L14 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2432,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:32.549Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-ce706b3ed9782743e877",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L14 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2302,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:34.989Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-e72c2e96e157b30769e2",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L15 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6573,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:37.299Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-2e364b5abeeec45c6dac",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L15 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6152,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:43.880Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-9efd85dfcf6544f9fc96",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L15 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2555,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:50.041Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-4cf87646fcac2d9864ee",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue L15 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2282,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:52.605Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-8170ef2ef6ecbb260b98",
+          "file": "source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "modular HSK1 source catalogue tables persist across lessons refresh and isolate history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2735,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:54.897Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-d41448826c18d8735737",
+          "file": "source-catalogue-cases.ts",
+          "line": 133,
+          "column": 2
+        },
+        {
+          "title": "modular HSK1 source catalogue optional self assessment permits blanks without grading",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1168,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:57.641Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-20949cccdaf6e46d92d7",
+          "file": "source-catalogue-cases.ts",
+          "line": 147,
+          "column": 2
+        },
+        {
+          "title": "modular HSK1 source catalogue headerless month and weekday examples remain read only",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3627,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:02:58.817Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ed4463fbb74bbc9c0a6-2574a80930ab9f4c6d42",
+          "file": "source-catalogue-cases.ts",
+          "line": 160,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T15:59:20.779Z",
+    "duration": 221740.56600000002,
+    "expected": 51,
+    "skipped": 0,
+    "unexpected": 12,
+    "flaky": 0
+  }
+}
