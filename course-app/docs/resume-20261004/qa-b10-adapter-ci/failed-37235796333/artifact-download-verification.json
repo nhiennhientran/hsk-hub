@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "runId": 37235796333,
+  "exactRemoteHead": "e0f811e47ca148ad257f19cb2867f56c71a427e4",
+  "tree": "b83fd52aff2f547681cf9c126ee0b196377f0797",
+  "artifacts": [
+    {
+      "engine": "chromium",
+      "zipSHA256": "1367d761b212ef67a871259af2c565b13727d664e712de38be049d12ffe2b2bf",
+      "zipBytes": 5244480,
+      "zipEntries": 232,
+      "CRCValid": true,
+      "preservedFiles": [
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/after-failure.json",
+          "bytes": 1137,
+          "sha256": "dfa989b64aa805d90b712fc812b86953c9c4e9a289e0c7ed2a4443c7a5ea4e87"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/before.json",
+          "bytes": 637357,
+          "sha256": "c9abc97d7a0a48b063bb678a841c8dbdeeb5d85f3d063d4d564806a300c11da1"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/browser-install.command.json",
+          "bytes": 543,
+          "sha256": "380934fa5ebc2ec47c39a6ef1916e42f06eb4a18533ec767a8fec9710d31cfad"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/browser-install.log",
+          "bytes": 18488,
+          "sha256": "0861fdbb3ea2eab332d48993d03d5d09c7b7d038ba6eb3d4d02abf25e6d45d58"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/builds.json",
+          "bytes": 555678,
+          "sha256": "504fcf08cc98206bc3247ec3aa67e875462cc8e2c44bae108af4a22a445cd857"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/course-build.command.json",
+          "bytes": 563,
+          "sha256": "235c5e98cefb1ac659cb210d7750f92753087ab0d225c7366ea1afa40baf10d4"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/course-build.log",
+          "bytes": 30133,
+          "sha256": "826728d80f8fc02b7815370af2f41d9da172a5f3bc739bf02b9b370042442b2f"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/course-install.command.json",
+          "bytes": 506,
+          "sha256": "eeb4085c60497aeecd42d79f04799ca1d331e118b723e0e5fac40604e96abf4c"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/course-install.log",
+          "bytes": 140,
+          "sha256": "8140ea21b6317021122c8791a63d203044cf232cd03827796bd2cac19e0e80bb"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/course-source.command.json",
+          "bytes": 528,
+          "sha256": "b2b49327cfca5b95b97e1b42dae73cfb740a7bb3f43e2a4bdc1dba9b8c59370f"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/course-source.log",
+          "bytes": 15110,
+          "sha256": "9da8b3df3f9f7602a3520da7dccd69b53a49b3d00905840ab4acdf36e42cc448"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/course-types.command.json",
+          "bytes": 515,
+          "sha256": "a00f859979e1d7d1f9190071cd2280284e905b2c2162e70b9761606518bd8fea"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/course-types.log",
+          "bytes": 53,
+          "sha256": "64d825528568a8393b59068b40528264729a6b0bd8961668faeda9bfbf2473b2"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/course-units.command.json",
+          "bytes": 506,
+          "sha256": "fb707f45144d5d3d2f35081485cec618de358dd037e68356babc043ec5ae73ec"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/course-units.log",
+          "bytes": 20822,
+          "sha256": "6cab631a85502f6bdb3b727cb65b2be28b5198c6ac7474553ee3290265c65ba6"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/font-install.command.json",
+          "bytes": 522,
+          "sha256": "c41829be46a6276c67d68ef54f5f781a394780d0a2815f5ffb08828b6cc23dde"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/font-install.log",
+          "bytes": 1708,
+          "sha256": "888512e97a4bfad2a917a36292462e807c60efdd1548ae832a1703ffa18484ee"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-asset-bytes.command.json",
+          "bytes": 529,
+          "sha256": "0ca3a57a73817220493f4e5a3ba5c3ecf9c31e2647128f791969f1d6dc72ea5b"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-asset-bytes.log",
+          "bytes": 982,
+          "sha256": "3392be739282356aa92191d0d8cc05acbb0e40bf5a3d8ce2c40fc98d5c3fb559"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-build.command.json",
+          "bytes": 511,
+          "sha256": "4daa4806e94754a9d0485e5eb13cb8161f863e109cc0d2a32a50cc005ddc816c"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-build.log",
+          "bytes": 7708,
+          "sha256": "02100091ea2480b0137ef4f3abb60b38a61ee605e2f9b9d8d51745dac8c0263b"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-install.command.json",
+          "bytes": 500,
+          "sha256": "2b588a86ecfaa2ad3bb695a9a74f2f5be45e9d8daae6caec67c65db0193480de"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-install.log",
+          "bytes": 143,
+          "sha256": "4258232d84518159bd962a883b3ce7f0a6b788c79578305daf8cc58d4f0531c6"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-migration-fixtures.command.json",
+          "bytes": 545,
+          "sha256": "72af8c62995619c50db4970ce50e4108b835eda5a1c0d05bedd902c81bbb3169"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-migration-fixtures.log",
+          "bytes": 141,
+          "sha256": "73a3bea4deb6a38755e1fcf7fcfd71af59888931e2deefb1c4eab8308a731ced"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-native-output/.last-run.json",
+          "bytes": 45,
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-native-output/official-vi-history-legacy-19443-raw-task-and-answer-visible-chromium/test-finished-1.png",
+          "bytes": 90624,
+          "sha256": "dc7ff5415325105bee4fadbb4fe408b696db9ed713b57155c14cddeae4d360cc"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-native-output/official-vi-history-listen-6e55f-nd-text-after-native-reload-chromium/test-finished-1.png",
+          "bytes": 10561,
+          "sha256": "c1539229dd9548f2b10ccefc7ce4711631462148309f1a157f754c912fff9d9f"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-native-output/official-vi-history-synthe-09bda-ith-original-answer-indices-chromium/test-finished-1.png",
+          "bytes": 72450,
+          "sha256": "189f8f48973e72d3024eb27871bbea38b3df2255205267a5fa83f7f9342e537d"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-native.command.json",
+          "bytes": 620,
+          "sha256": "0259fce63dd11c334be482207bcd5227f3ea0dd762a398f5dcdb8f2956504206"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-native.log",
+          "bytes": 610,
+          "sha256": "c88898a85f3e22a494141b910361f31801cceafacee08a646f94bd0f544acb28"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-results.json",
+          "bytes": 8390,
+          "sha256": "179d38ea263f11cbae3c33e2ff306747b4f79288bef2295d77fbfde62c2a97b8"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-source.command.json",
+          "bytes": 520,
+          "sha256": "cc7d39ac5c33889ea2eb8dac4296029ce06d44c0fadcaa710c89e1686bcbab3c"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-source.log",
+          "bytes": 368,
+          "sha256": "12cdfbb521f4b7a1181b034b3754cef01befd041b4d00fe92647185553dbdd7a"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-types.command.json",
+          "bytes": 509,
+          "sha256": "15dd60dc46fbcc93d52f86823aac30a281e319f9e5eeabfe62dd2693abc36dc1"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-types.log",
+          "bytes": 48,
+          "sha256": "dd593a3d070185fc89d5664ff75908752e3173ad6cc5296c1e26dbff07d187d6"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-units.command.json",
+          "bytes": 500,
+          "sha256": "df6ad3b5cb406ff5eb6edd51c9cafdbd512c26888d1f10f281348c4b95f30755"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk1-units.log",
+          "bytes": 65309,
+          "sha256": "1a5ed56bd46893ebdea27ac5612052205e013ade59a551e9d55cc9ba58f0185d"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk23-native-output/.last-run.json",
+          "bytes": 45,
+          "sha256": "e22df5d0991eb28c09093b1e678b3fa8cd1fab48185d38e67cf79fb6e63ad5ea"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk23-native.command.json",
+          "bytes": 624,
+          "sha256": "1224269cfc5526b387b6e8228b054eb6ca30d03e1a0b6dec7ffca9da9c1c9b5d"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk23-native.log",
+          "bytes": 57,
+          "sha256": "58a3f8441432faadbc0dcdec58e06279afd8f7883ed052e826dc7a3b0b92889b"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/hsk23-results.json",
+          "bytes": 3963,
+          "sha256": "6dc8f69fb73283e157da5d5fdaf35efeb8bda70c2de9366def502d8564962bde"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/native-fixture-types.command.json",
+          "bytes": 579,
+          "sha256": "319f8b46a46b4d36615451a6f929cc94958a51b441dae85c0547a9da7dbbe4ce"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/native-fixture-types.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/native-report-guards.command.json",
+          "bytes": 574,
+          "sha256": "f05696e305518bf127efb1407a74574ef8ff86de71802246336e8cb3a79841ba"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/.repro-output/b10-adapter-ci/chromium/native-report-guards.log",
+          "bytes": 733,
+          "sha256": "af5b570446bff847137f5704fc987a0b310776249359a7d7862b87940010e487"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/docs/resume-20261004/b10-hsk1-adapter/native-ci-receipt-first.png",
+          "bytes": 170327,
+          "sha256": "680b3abded93febde20691b46e8550303d8192f1d1c4bad942c0729fc19c4f81"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/chromium/course-app/docs/resume-20261004/b10-hsk1-adapter/native-ci-archive.png",
+          "bytes": 677162,
+          "sha256": "013756df1576bd8f37b237f90f6b7918d1a2340ad3d28ce8b308fcf6b9e9fc9f"
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "zipSHA256": "44cd2df9b0839977397a7ac3b729311b819fe42180a0368f606e854910f39be7",
+      "zipBytes": 5543667,
+      "zipEntries": 232,
+      "CRCValid": true,
+      "preservedFiles": [
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/after-failure.json",
+          "bytes": 1135,
+          "sha256": "781f2b64defb0081ddc5aad88d033cef5f2be4e19ae77798f3a41780b3d69268"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/browser-install.command.json",
+          "bytes": 537,
+          "sha256": "de74b87771c604701f3fce14b917491b35a23968f23a45360b29f5cc499e183a"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/before.json",
+          "bytes": 637355,
+          "sha256": "f51425054835bc8754e87a9656920d534ec30c1c1ad0e219f3baf8a5e286d616"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/browser-install.log",
+          "bytes": 85077,
+          "sha256": "08cef0fd891100a2ba6638acbdca2a31add608011bb15fd1de941f5505a0ea6a"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/builds.json",
+          "bytes": 555638,
+          "sha256": "bdb144c713a8afa6534b086dfa9858b2a84fb7d98bf9725f89f698e8462a829c"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/course-build.command.json",
+          "bytes": 559,
+          "sha256": "89a819e28a87267b165df6f6745f680f79498715d01c5f182bb4392ef75a9b0c"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/course-build.log",
+          "bytes": 30133,
+          "sha256": "08ba76024697b0cab4d80524eb6c74a5fd20b7a0f61ef531ca7c3f053f9bf123"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/course-install.command.json",
+          "bytes": 502,
+          "sha256": "40d039a2582f3612f278b77e904fb04a173ed0fbb5c4fbf834e66a94ef048720"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/course-install.log",
+          "bytes": 140,
+          "sha256": "b44dababfaaaa5ad404e8f50d1e3f3a674080868936900bc969369e72e59fa96"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/course-source.command.json",
+          "bytes": 524,
+          "sha256": "b4736b1087953d32783d856d6ddf3bc09d29af4b5cfb88719bd38da0ce68822b"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/course-source.log",
+          "bytes": 15110,
+          "sha256": "9da8b3df3f9f7602a3520da7dccd69b53a49b3d00905840ab4acdf36e42cc448"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/course-types.command.json",
+          "bytes": 511,
+          "sha256": "030ceac4434f3392d26ea8190a9ff5f648ea37c24828abc4a533f16fb8b41af4"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/course-types.log",
+          "bytes": 53,
+          "sha256": "64d825528568a8393b59068b40528264729a6b0bd8961668faeda9bfbf2473b2"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/course-units.command.json",
+          "bytes": 502,
+          "sha256": "ddf5ee078ccc09d8381ab64099d38f296f78e1354e59b79fb0bc514915d8f071"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/course-units.log",
+          "bytes": 20851,
+          "sha256": "ea255405175b550b68d18db8cf2e2d42375c556022c2a1e01cc444176e4077ff"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/font-install.command.json",
+          "bytes": 518,
+          "sha256": "071c334aff8330de561a7249b332deb8d554a1e5729401ffaad9c3636c910922"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/font-install.log",
+          "bytes": 1708,
+          "sha256": "b90b700f0d4c959c09b0794d25d748cf84e302fcc6c032f0bbc90c1d26944591"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-asset-bytes.command.json",
+          "bytes": 525,
+          "sha256": "3b41181013e5a2d391bcee1702730e2899634e9a6fdd33c9ee298c9ffc781a91"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-asset-bytes.log",
+          "bytes": 982,
+          "sha256": "3392be739282356aa92191d0d8cc05acbb0e40bf5a3d8ce2c40fc98d5c3fb559"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-build.command.json",
+          "bytes": 507,
+          "sha256": "17acc731f77f7c4dc4a11bb4a848d7353eb252a82dd741319d69900968b4b44b"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-build.log",
+          "bytes": 7708,
+          "sha256": "261d1e5d3f2042e6d14cc65bd28f7f6423f43f1b9c2b7c5c029f6077f3fbba53"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-install.command.json",
+          "bytes": 496,
+          "sha256": "7bc6bfe432c7f3154ec2dde78087e2d487f76a4d3017cfce48d1caff38cb5aa9"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-install.log",
+          "bytes": 140,
+          "sha256": "28cf561026a29dd3c0d01a2ae68b1083fa1daaa07144f0b21ed245d10273b8e6"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-migration-fixtures.command.json",
+          "bytes": 541,
+          "sha256": "87c96cc35c670d9398f81b7ebd6de9c4171f317f1f0ae2ddd60941412bd90739"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-migration-fixtures.log",
+          "bytes": 141,
+          "sha256": "73a3bea4deb6a38755e1fcf7fcfd71af59888931e2deefb1c4eab8308a731ced"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native-output/.last-run.json",
+          "bytes": 45,
+          "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native-output/official-vi-history-legacy-19443-raw-task-and-answer-visible-webkit/test-finished-1.png",
+          "bytes": 117555,
+          "sha256": "71585e42031a7cbfe1c452f1314bb0a9c5543e3836fac36c0472040bf0b023c4"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native-output/official-vi-history-listen-6e55f-nd-text-after-native-reload-webkit/test-finished-1.png",
+          "bytes": 14998,
+          "sha256": "3c8c1f3632eb4d2bceb17c6d0d96f7cd165e8202a36aa28eb131fdadcd847c79"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native-output/official-vi-history-synthe-09bda-ith-original-answer-indices-webkit/test-finished-1.png",
+          "bytes": 87684,
+          "sha256": "e827b8f86121c3c5080ce1b1cc1a5b24af1ac4ec1177b674a7a9dc27659ed150"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native.command.json",
+          "bytes": 614,
+          "sha256": "d68005c25a6f5266ef8e35144ae8ae3e060987d24d92673991c9d5486a30ada7"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native.log",
+          "bytes": 604,
+          "sha256": "676b9598e46f57cca43eec535ac692d8fefaff0131aaa63e0ab4106053d97be6"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-results.json",
+          "bytes": 8358,
+          "sha256": "7b6ce0e906a3c8f9c481f051e741638ac5c45af8e80fcabb8bf7839fbcf4b43b"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-source.command.json",
+          "bytes": 516,
+          "sha256": "fe6c7aa107805d99ee242a6f5abae507b80cf8a8340022c3fc337aa975df88cd"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-source.log",
+          "bytes": 368,
+          "sha256": "12cdfbb521f4b7a1181b034b3754cef01befd041b4d00fe92647185553dbdd7a"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-types.command.json",
+          "bytes": 505,
+          "sha256": "9e03ab365041125242dd12455e5b538c857b1fb9974381eae498c9bb7b6a549b"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-types.log",
+          "bytes": 48,
+          "sha256": "dd593a3d070185fc89d5664ff75908752e3173ad6cc5296c1e26dbff07d187d6"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-units.command.json",
+          "bytes": 496,
+          "sha256": "350552bc197c856bd0b34b01151fc8dcdd68e439c794d2e23bd714879c6a79ae"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-units.log",
+          "bytes": 65322,
+          "sha256": "3fcb8a0466f94d9e73946eec64e173c62f5eaa4207c5e58d2768fe70fbfda513"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk23-native-output/.last-run.json",
+          "bytes": 45,
+          "sha256": "e22df5d0991eb28c09093b1e678b3fa8cd1fab48185d38e67cf79fb6e63ad5ea"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk23-native.command.json",
+          "bytes": 618,
+          "sha256": "ada19e49108a657f3297b94c55166921d977c87bc03e68ba881e708d489ebd9e"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk23-native.log",
+          "bytes": 57,
+          "sha256": "58a3f8441432faadbc0dcdec58e06279afd8f7883ed052e826dc7a3b0b92889b"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/hsk23-results.json",
+          "bytes": 3955,
+          "sha256": "9ca0c7549c62b193eb38866eb6da7d1ea27e7b8a6141960503f3004cb1ec81b3"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/native-fixture-types.command.json",
+          "bytes": 575,
+          "sha256": "8661d048f159cb0b7126cb0c269a9b430975c35444d7a6224231e32833b99f1a"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/native-fixture-types.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/native-report-guards.command.json",
+          "bytes": 570,
+          "sha256": "2c5ea4e3c6e5e00a411f43b02fba13257be1ff92b0ec0b957cfe84b321526e62"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/.repro-output/b10-adapter-ci/webkit/native-report-guards.log",
+          "bytes": 734,
+          "sha256": "ef4d4e70ed0b3998228f76c6a20babcf06f64af07ebfbfdb53edb8c734806055"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/docs/resume-20261004/b10-hsk1-adapter/native-ci-receipt-first.png",
+          "bytes": 218094,
+          "sha256": "c34f3c7f4920251189f7b5ff122d44ce999dde4afd260683b48845a0a4890654"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/failed-37235796333/webkit/course-app/docs/resume-20261004/b10-hsk1-adapter/native-ci-archive.png",
+          "bytes": 911987,
+          "sha256": "0a23d8103c80bc3425b70a6ef8f075c520df6da9d16b6ffbd81db7e3a4718712"
+        }
+      ]
+    }
+  ],
+  "status": "failure; H1 native actual6 passed; H23 startupblocked0; not accepted22 or C15"
+}

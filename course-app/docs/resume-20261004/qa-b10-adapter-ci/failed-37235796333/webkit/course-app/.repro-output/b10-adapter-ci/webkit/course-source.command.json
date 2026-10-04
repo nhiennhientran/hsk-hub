@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "label": "course-source",
+  "browser": "webkit",
+  "command": [
+    "npm",
+    "run",
+    "content:check",
+    "--prefix",
+    "course-app"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:23:06.180Z",
+  "endedAt": "2026-10-04T21:23:06.457Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/webkit/course-source.log",
+    "bytes": 15110,
+    "sha256": "9da8b3df3f9f7602a3520da7dccd69b53a49b3d00905840ab4acdf36e42cc448"
+  }
+}

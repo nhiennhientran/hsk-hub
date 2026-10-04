@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "label": "font-install",
+  "browser": "webkit",
+  "command": [
+    "sudo",
+    "apt-get",
+    "install",
+    "-y",
+    "fonts-noto-cjk"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:23:49.050Z",
+  "endedAt": "2026-10-04T21:23:53.619Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/webkit/font-install.log",
+    "bytes": 1708,
+    "sha256": "b90b700f0d4c959c09b0794d25d748cf84e302fcc6c032f0bbc90c1d26944591"
+  }
+}

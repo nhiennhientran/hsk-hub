@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "patchAuthor": "root",
+  "scope": "one-line HSK23 compiled preview host binding correction only",
+  "status": "accepted-independent-patch-review",
+  "currentWrapperSHA256": "9a006ab3aa12ee4f16d06f7e327ffdecefefd9b806c76e2960e757188decfdd5",
+  "oldWrapperSHA256": "b5d342ecc7d66694687a53a6133092537e024cff873f3d90e7cad8f8d6a481ba",
+  "exactDiff": {
+    "file": "exact-wrapper.diff",
+    "sha256": "b1297320ca186d0a2e65057f251d85b7cc02c7d3ca9fec69ca19f0e779639608",
+    "removedLines": 1,
+    "addedLines": 1,
+    "onlyInsertion": " --host 127.0.0.1"
+  },
+  "actualFailedRun": {
+    "id": 37235796333,
+    "head": "e0f811e47ca148ad257f19cb2867f56c71a427e4"
+  },
+  "localHEADAtReview": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "sameProcessHTTPProof": {
+    "file": "same-process-http-probe.json",
+    "sha256": "a5f4fa9635ddee28e0234a4ea4590a8e506744bcd1fb48d1be47647f50620d0f",
+    "defaultIPv4": "ConnectionRefusedError",
+    "defaultIPv6HTTP": 200,
+    "explicitIPv4HTTP": 200,
+    "bodyExactlyCompiledIndex": true,
+    "compiledIndexSHA256": "7933f63de21b03f834c3491237bb92ba10d44ee9ba6c22fd5fc69060c71a123d",
+    "serversStopped": true
+  },
+  "typecheck": {
+    "passed": true,
+    "exitCode": 0,
+    "logFile": "typecheck.log",
+    "logSHA256": "7125f194612fcff2f454c05d848e7cb71facc1967b4d5017e25b34fdee3ba74f"
+  },
+  "collection": {
+    "mode": "collection only",
+    "collected": 16,
+    "perEngine": {
+      "chromium": 8,
+      "webkit": 8
+    },
+    "nativeCasesExecuted": 0,
+    "exitCode": 0,
+    "logFile": "collection.log",
+    "logSHA256": "cc775cd35f89d84c6efc83791ea99cfc549522579e144297e4dfa4964a09c629"
+  },
+  "unchangedFixturesRuntimeWorkflowAndGuards": [
+    {
+      "file": ".github/workflows/hsk-official-vi-adapter-checkpoint.yml",
+      "sha256": "caf2be409cdb11be21f576b195cdc026b4b97d4d987262d916f0dacf63408b2e",
+      "bytes": 5179,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "course-app/src/official-vi-revisions.ts",
+      "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f",
+      "bytes": 18776,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "sha256": "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2",
+      "bytes": 8228,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "sha256": "9637ebb3fd62546924b45a97407f3ed19ab634e647cc9b4812adfc1e1925bb70",
+      "bytes": 13190,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744",
+      "bytes": 62262,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "course-app/tests/official-vi-revisions.test.mjs",
+      "sha256": "baa377e7865382f09e66edcaa5d3b1265c88303ffab3ec642c09cc10db2e360b",
+      "bytes": 15689,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "course-app/tests/unified/official-vi-history.spec.ts",
+      "sha256": "8ab850306d068a1c4b0cf6e88cb4441440847b67316ebd448b56f9301b3c31ce",
+      "bytes": 6068,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/playwright.history.config.ts",
+      "sha256": "95ba895d132a35d1a3be25eefc9460d3804e75a0b345f408ad9c021251dc2e6e",
+      "bytes": 796,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "hsk1-app/tests/browser/official-vi-history.spec.ts",
+      "sha256": "dbbd9833598106f2825d5e7654dba3ece5bd3eb042edd5db38fe45ad7732177d",
+      "bytes": 3181,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "hsk1-app/playwright.vi-presentation.config.ts",
+      "sha256": "523ba3a598b72af4f76baaad5775184fdcd43f891a61c453fa454fc4058c0d0e",
+      "bytes": 998,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk1.ci.config.ts",
+      "sha256": "985d6a8b89ef89a3a23c7e991b3fcb1bb6fb001be7582977d3bf731bec804425",
+      "bytes": 986,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/checkpoint-records.mjs",
+      "sha256": "aaed9f9a4d177e4fefb981a6b871b512e696c80ac8c666db09b68ba1762bf466",
+      "bytes": 10510,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/verify-native-results.mjs",
+      "sha256": "b30a8ca54bbeacb7f4e1ecf7d10fb7b52f9acb672dc2e34ae59ba7fe22a856b6",
+      "bytes": 2501,
+      "equalsLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d"
+    }
+  ],
+  "preserved": [
+    "retries0",
+    "workers1",
+    "strictPort",
+    "original compiled outDir",
+    "IPv4 readiness URL/baseURL",
+    "60000 default webServer timeout (not extended)",
+    "original eight HSK23 fixture cases",
+    "both-engine native report/expected-count/retry/skip/error guards",
+    "previous failed-run/author/independent reports and source audit freezes"
+  ],
+  "nativeCurrentPatchExecuted": 0,
+  "nextDependency": "new committed source head plus actual Chromium/WebKit CI native 3 H1+8 HSK23 each; collection/startup does not count as native success",
+  "oldFailedRunReclassified": false,
+  "runtimeFilesModifiedByReviewer": false,
+  "publicationApproved": false
+}

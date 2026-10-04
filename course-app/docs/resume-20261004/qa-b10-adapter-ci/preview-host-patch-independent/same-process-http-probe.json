@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "patchAuthor": "root",
+  "scope": "compiled preview HTTP startup/binding only; no native browser cases",
+  "oldConfigSHA256": "b5d342ecc7d66694687a53a6133092537e024cff873f3d90e7cad8f8d6a481ba",
+  "currentConfigSHA256": "9a006ab3aa12ee4f16d06f7e327ffdecefefd9b806c76e2960e757188decfdd5",
+  "actualFailedRun": {
+    "id": 37235796333,
+    "head": "e0f811e47ca148ad257f19cb2867f56c71a427e4"
+  },
+  "localHEAD": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "lockedViteVersion": "8.3.2",
+  "npmLockSHA256": "689007b5345c99f014a0cee8382a5cb65e06a9945162e057bd46d6b32586d583",
+  "compiledIndexSHA256": "7933f63de21b03f834c3491237bb92ba10d44ee9ba6c22fd5fc69060c71a123d",
+  "sameProcessHTTP": true,
+  "probes": [
+    {
+      "label": "default-localhost",
+      "command": "npx vite preview --outDir .repro-output/b10-hsk23-adapter/dist --port 4179 --strictPort",
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app",
+      "parentPID": 2,
+      "serverLauncherPID": 6,
+      "before": {
+        "127.0.0.1": {
+          "host": "127.0.0.1",
+          "status": null,
+          "errorType": "ConnectionRefusedError",
+          "errno": 111,
+          "message": "[Errno 111] Connection refused"
+        },
+        "::1": {
+          "host": "::1",
+          "status": null,
+          "errorType": "ConnectionRefusedError",
+          "errno": 111,
+          "message": "[Errno 111] Connection refused"
+        }
+      },
+      "actual": {
+        "127.0.0.1": {
+          "host": "127.0.0.1",
+          "status": null,
+          "errorType": "ConnectionRefusedError",
+          "errno": 111,
+          "message": "[Errno 111] Connection refused"
+        },
+        "::1": {
+          "host": "::1",
+          "status": 200,
+          "contentType": "text/html",
+          "bodyBytes": 457,
+          "bodySHA256": "7933f63de21b03f834c3491237bb92ba10d44ee9ba6c22fd5fc69060c71a123d"
+        }
+      },
+      "logFile": "default-localhost-preview.log",
+      "logSHA256": "c84662445d1c2d0733e1c3a36abc1ef65e6c09d0e57d6d6765f3b79a65e4b03b",
+      "startupDeadlineSeconds": 10,
+      "compiledIndexSHA256": "7933f63de21b03f834c3491237bb92ba10d44ee9ba6c22fd5fc69060c71a123d",
+      "bodyExactlyCompiledIndex": true
+    },
+    {
+      "label": "explicit-ipv4",
+      "command": "npx vite preview --outDir .repro-output/b10-hsk23-adapter/dist --host 127.0.0.1 --port 4179 --strictPort",
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app",
+      "parentPID": 2,
+      "serverLauncherPID": 53,
+      "before": {
+        "127.0.0.1": {
+          "host": "127.0.0.1",
+          "status": null,
+          "errorType": "ConnectionRefusedError",
+          "errno": 111,
+          "message": "[Errno 111] Connection refused"
+        },
+        "::1": {
+          "host": "::1",
+          "status": null,
+          "errorType": "ConnectionRefusedError",
+          "errno": 111,
+          "message": "[Errno 111] Connection refused"
+        }
+      },
+      "actual": {
+        "127.0.0.1": {
+          "host": "127.0.0.1",
+          "status": 200,
+          "contentType": "text/html",
+          "bodyBytes": 457,
+          "bodySHA256": "7933f63de21b03f834c3491237bb92ba10d44ee9ba6c22fd5fc69060c71a123d"
+        },
+        "::1": {
+          "host": "::1",
+          "status": null,
+          "errorType": "ConnectionRefusedError",
+          "errno": 111,
+          "message": "[Errno 111] Connection refused"
+        }
+      },
+      "logFile": "explicit-ipv4-preview.log",
+      "logSHA256": "8fcc38bb6408826b8312bd14cbe60de92028c6147c7c94a13b8d8ea399330663",
+      "startupDeadlineSeconds": 10,
+      "compiledIndexSHA256": "7933f63de21b03f834c3491237bb92ba10d44ee9ba6c22fd5fc69060c71a123d",
+      "bodyExactlyCompiledIndex": true
+    }
+  ],
+  "nativeCasesExecuted": 0,
+  "runtimeFilesModified": false,
+  "afterServersStopped": {
+    "127.0.0.1": {
+      "host": "127.0.0.1",
+      "status": null,
+      "errorType": "ConnectionRefusedError",
+      "errno": 111,
+      "message": "[Errno 111] Connection refused"
+    },
+    "::1": {
+      "host": "::1",
+      "status": null,
+      "errorType": "ConnectionRefusedError",
+      "errno": 111,
+      "message": "[Errno 111] Connection refused"
+    }
+  }
+}

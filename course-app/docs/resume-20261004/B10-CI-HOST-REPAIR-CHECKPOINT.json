@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-04T21:41:20.502219+00:00",
+  "status": "independent-host-repair-accepted-new-exact-head-native-CI-pending",
+  "parentLocalCommit": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "parentRemoteCommit": "e0f811e47ca148ad257f19cb2867f56c71a427e4",
+  "actualFailedRunId": 37235796333,
+  "actualH1NativeCasesPassed": 6,
+  "actualH23NativeCasesExecuted": 0,
+  "failedRunOverallAccepted": false,
+  "expectedNextNativeCases": 22,
+  "currentWrapperSHA256": "9a006ab3aa12ee4f16d06f7e327ffdecefefd9b806c76e2960e757188decfdd5",
+  "independentReviewFile": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/review.json",
+  "independentReviewSHA256": "ded8d33cf37efc153329d362b45a98ea89f2b2c116e4f2135de2f8fe0f130401",
+  "independentFiles": [
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/README.md",
+      "bytes": 2234,
+      "sha256": "2ccfbc149dd3a382b1dde0bdd1e1dd49a97d300a2f2ee359ed715b789c7f7826"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/STAGE-FILES.txt",
+      "bytes": 1514,
+      "sha256": "7d32f75a6445999a6515268e509eac8f5f2f640370a93e30302553733145705e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/author-input/after.ts",
+      "bytes": 966,
+      "sha256": "9a006ab3aa12ee4f16d06f7e327ffdecefefd9b806c76e2960e757188decfdd5"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/author-input/before.ts",
+      "bytes": 949,
+      "sha256": "b5d342ecc7d66694687a53a6133092537e024cff873f3d90e7cad8f8d6a481ba"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/collection-result.json",
+      "bytes": 432,
+      "sha256": "a96599b4734c92c4a5b407627efa66f09c0f9c4ece6760efcc7fa4ac009922d7"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/collection.log",
+      "bytes": 2436,
+      "sha256": "cc775cd35f89d84c6efc83791ea99cfc549522579e144297e4dfa4964a09c629"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/default-localhost-preview.log",
+      "bytes": 175,
+      "sha256": "c84662445d1c2d0733e1c3a36abc1ef65e6c09d0e57d6d6765f3b79a65e4b03b"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/exact-wrapper.diff",
+      "bytes": 690,
+      "sha256": "b1297320ca186d0a2e65057f251d85b7cc02c7d3ca9fec69ca19f0e779639608"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/explicit-ipv4-preview.log",
+      "bytes": 138,
+      "sha256": "8fcc38bb6408826b8312bd14cbe60de92028c6147c7c94a13b8d8ea399330663"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/probe-preview.py",
+      "bytes": 5711,
+      "sha256": "d5b9bb19c13b549c9fb5a2aa5db25bfcec32405e10a1f334b8b706c23be4a28a"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/review.json",
+      "bytes": 5776,
+      "sha256": "ded8d33cf37efc153329d362b45a98ea89f2b2c116e4f2135de2f8fe0f130401"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/same-process-http-probe.json",
+      "bytes": 4282,
+      "sha256": "a5f4fa9635ddee28e0234a4ea4590a8e506744bcd1fb48d1be47647f50620d0f"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/typecheck-result.json",
+      "bytes": 187,
+      "sha256": "f8c6912c0d9c9732b6ed1824ea32e9bdf912d383c188f5adb2c929aaa9bed437"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-adapter-ci/preview-host-patch-independent/typecheck.log",
+      "bytes": 99,
+      "sha256": "7125f194612fcff2f454c05d848e7cb71facc1967b4d5017e25b34fdee3ba74f"
+    }
+  ],
+  "publicOfficialVIFieldsActivated": 0,
+  "privateH3L10IndependentlyAcceptedFieldProposals": 136,
+  "wholeLessonsVIAlignmentAccepted": 0,
+  "publicationApproved": false,
+  "deployed": false,
+  "remoteCommitIdentityReconciled": {
+    "actualRemoteCommit": "e0f811e47ca148ad257f19cb2867f56c71a427e4",
+    "actualGitTree": "b83fd52aff2f547681cf9c126ee0b196377f0797",
+    "method": "reconstruct unsigned Git commit from actual GitHub API metadata with timezone pairs; raw Git SHA-1 matched actual remote ID before object hydration",
+    "noOldCICertificateRebound": true
+  }
+}

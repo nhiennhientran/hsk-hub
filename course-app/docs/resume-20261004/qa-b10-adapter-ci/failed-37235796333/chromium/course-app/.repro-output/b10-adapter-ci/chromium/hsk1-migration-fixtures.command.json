@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "label": "hsk1-migration-fixtures",
+  "browser": "chromium",
+  "command": [
+    "npm",
+    "run",
+    "fixtures:check",
+    "--prefix",
+    "hsk1-app"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:23:01.815Z",
+  "endedAt": "2026-10-04T21:23:01.984Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-migration-fixtures.log",
+    "bytes": 141,
+    "sha256": "73a3bea4deb6a38755e1fcf7fcfd71af59888931e2deefb1c4eab8308a731ced"
+  }
+}

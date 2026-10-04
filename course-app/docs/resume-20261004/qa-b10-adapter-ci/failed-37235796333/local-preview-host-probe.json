@@ -1,0 +1,52 @@
+{
+  "actualProbe": [
+    {
+      "extra": [],
+      "stdout": [
+        "  \u279c  Local:   http://localhost:4181/\n"
+      ],
+      "probes": [
+        {
+          "url": "http://127.0.0.1:4181/",
+          "error": "<urlopen error [Errno 111] Connection refused>"
+        },
+        {
+          "url": "http://localhost:4181/",
+          "status": 200,
+          "bytes": 457
+        },
+        {
+          "url": "http://[::1]:4181/",
+          "status": 200,
+          "bytes": 457
+        }
+      ]
+    },
+    {
+      "extra": [
+        "--host",
+        "127.0.0.1"
+      ],
+      "stdout": [
+        "  \u279c  Local:   http://127.0.0.1:4181/\n"
+      ],
+      "probes": [
+        {
+          "url": "http://127.0.0.1:4181/",
+          "status": 200,
+          "bytes": 457
+        },
+        {
+          "url": "http://localhost:4181/",
+          "status": 200,
+          "bytes": 457
+        },
+        {
+          "url": "http://[::1]:4181/",
+          "error": "<urlopen error [Errno 111] Connection refused>"
+        }
+      ]
+    }
+  ],
+  "nativeBrowserAssertions": 0
+}

@@ -1,0 +1,8 @@
+--- before.ts
++++ after.ts
+@@ -8,4 +8,4 @@
+  projects:original.projects?.map(p=>({...p,metadata:{...p.metadata,browserName:p.use?.browserName}})),
+  reporter:[['list'],['json',{outputFile:output+'hsk23-results.json'}]],
+  use:{...original.use,baseURL:'http://127.0.0.1:4179',screenshot:'on',trace:'retain-on-failure'},
+- webServer:{command:'npx vite preview --outDir .repro-output/b10-hsk23-adapter/dist --port 4179 --strictPort',cwd:app,url:'http://127.0.0.1:4179',reuseExistingServer:false}});
++ webServer:{command:'npx vite preview --outDir .repro-output/b10-hsk23-adapter/dist --host 127.0.0.1 --port 4179 --strictPort',cwd:app,url:'http://127.0.0.1:4179',reuseExistingServer:false}});

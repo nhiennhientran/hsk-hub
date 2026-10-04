@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "label": "hsk1-build",
+  "browser": "chromium",
+  "command": [
+    "npm",
+    "run",
+    "build",
+    "--prefix",
+    "hsk1-app"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:23:32.491Z",
+  "endedAt": "2026-10-04T21:23:34.390Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-build.log",
+    "bytes": 7708,
+    "sha256": "02100091ea2480b0137ef4f3abb60b38a61ee605e2f9b9d8d51745dac8c0263b"
+  }
+}

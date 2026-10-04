@@ -1,0 +1,125 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+      "/home/runner/work/hsk-hub/hsk-hub/course-app/node_modules/.bin/playwright",
+      "test",
+      "--config=course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk23.ci.config.ts",
+      "--project=webkit"
+    ],
+    "configFile": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk23.ci.config.ts",
+    "rootDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/tests/unified",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/nhiennhientran/hsk-hub/commit/e0f811e47ca148ad257f19cb2867f56c71a427e4",
+        "commitHash": "e0f811e47ca148ad257f19cb2867f56c71a427e4",
+        "buildHref": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37235796333"
+      },
+      "gitCommit": {
+        "shortHash": "e0f811e",
+        "hash": "e0f811e47ca148ad257f19cb2867f56c71a427e4",
+        "subject": "Freeze inactive official Vietnamese adapters and exact-head browser checkpoint workflow",
+        "body": "Freeze inactive official Vietnamese adapters and exact-head browser checkpoint workflow",
+        "author": {
+          "name": "nhiennhientran",
+          "email": "liangzeheng221@gmail.com",
+          "time": 1791148915000
+        },
+        "committer": {
+          "name": "nhiennhientran",
+          "email": "liangzeheng221@gmail.com",
+          "time": 1791148915000
+        },
+        "branch": "work/hsk-b10-adapter-ci-20261004"
+      }
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/.repro-output/b10-adapter-ci/webkit/hsk23-native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "browserName": "chromium"
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/tests/unified",
+        "testIgnore": [],
+        "testMatch": [
+          "official-vi-history.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/.repro-output/b10-adapter-ci/webkit/hsk23-native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "browserName": "webkit"
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/tests/unified",
+        "testIgnore": [],
+        "testMatch": [
+          "official-vi-history.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/runner/work/hsk-hub/hsk-hub/course-app/.repro-output/b10-adapter-ci/webkit/hsk23-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npx vite preview --outDir .repro-output/b10-hsk23-adapter/dist --port 4179 --strictPort",
+      "cwd": "/home/runner/work/hsk-hub/hsk-hub/course-app/",
+      "url": "http://127.0.0.1:4179",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Error: Timed out waiting 60000ms from config.webServer.",
+      "stack": "Error: Timed out waiting 60000ms from config.webServer."
+    }
+  ],
+  "stats": {
+    "startTime": "2026-10-04T21:24:11.182Z",
+    "duration": 60063.307,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "label": "browser-install",
+  "browser": "webkit",
+  "command": [
+    "npx",
+    "playwright",
+    "install",
+    "--with-deps",
+    "webkit"
+  ],
+  "cwd": "course-app",
+  "startedAt": "2026-10-04T21:23:10.603Z",
+  "endedAt": "2026-10-04T21:23:49.013Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/webkit/browser-install.log",
+    "bytes": 85077,
+    "sha256": "08cef0fd891100a2ba6638acbdca2a31add608011bb15fd1de941f5505a0ea6a"
+  }
+}

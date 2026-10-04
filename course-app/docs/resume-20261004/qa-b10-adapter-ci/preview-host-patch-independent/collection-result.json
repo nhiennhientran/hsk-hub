@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "npx",
+    "playwright",
+    "test",
+    "--config=docs/resume-20261004/b10-adapter-ci/playwright.hsk23.ci.config.ts",
+    "--list",
+    "--reporter=list"
+  ],
+  "exitCode": 0,
+  "mode": "collection only",
+  "collected": 16,
+  "perEngine": {
+    "chromium": 8,
+    "webkit": 8
+  },
+  "nativeCasesExecuted": 0,
+  "listReporterOverride": true,
+  "outputIsolationEnvironment": "preview-host-independent-collection"
+}

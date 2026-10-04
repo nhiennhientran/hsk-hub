@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "label": "hsk1-asset-bytes",
+  "browser": "chromium",
+  "command": [
+    "npm",
+    "run",
+    "assets:check",
+    "--prefix",
+    "hsk1-app"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:23:37.882Z",
+  "endedAt": "2026-10-04T21:23:38.082Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-asset-bytes.log",
+    "bytes": 982,
+    "sha256": "3392be739282356aa92191d0d8cc05acbb0e40bf5a3d8ce2c40fc98d5c3fb559"
+  }
+}

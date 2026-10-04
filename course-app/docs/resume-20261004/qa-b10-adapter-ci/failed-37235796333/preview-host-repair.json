@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "author": "root",
+  "actualFailedRunId": 37235796333,
+  "actualFailedHead": "e0f811e47ca148ad257f19cb2867f56c71a427e4",
+  "oldWrapperSHA256": "b5d342ecc7d66694687a53a6133092537e024cff873f3d90e7cad8f8d6a481ba",
+  "newWrapperSHA256": "9a006ab3aa12ee4f16d06f7e327ffdecefefd9b806c76e2960e757188decfdd5",
+  "rootCause": "Vite default localhost binds IPv6 ::1; readiness probes IPv4 127.0.0.1. Actual same-process HTTP probe reproduced default IPv4 refusal and explicit-host HTTP200.",
+  "onlyChange": "explicit --host 127.0.0.1 on the existing HSK23 compiled preview command",
+  "preserved": [
+    "actual eight cases",
+    "expected22",
+    "zero retries",
+    "timeout60000",
+    "strictPort",
+    "actual compiled outDir",
+    "both full source/build before-after guards",
+    "all previous author/independent freezes"
+  ],
+  "actualH1NativePassed": 6,
+  "actualH23NativeExecuted": 0,
+  "priorRunAccepted": false,
+  "nextCI": "new source commit and real both-engine CI, no rerun old head",
+  "independentPatchReview": "pending",
+  "nativeCurrentPatchExecuted": 0,
+  "publicationApproved": false
+}

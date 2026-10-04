@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-04T21:18:11.881890+00:00",
+  "updatedAt": "2026-10-04T21:41:20.502219+00:00",
   "status": "running",
   "authorization": "2026-10-04T23:09:46+08:00; autonomous execution; confirmation before production publication",
   "branch": "work/hsk-autonomous-execution-20261004",
-  "lastVerifiedRemoteCommit": "647d7a1449c35437d6e0b1a0ebf4db1a56fdac26",
+  "lastVerifiedRemoteCommit": "e0f811e47ca148ad257f19cb2867f56c71a427e4",
   "sourceBaseline": "387aa7b6145e80f983f331d8b55cd2b2b26d6990",
   "phase": "B",
   "currentSteps": [
@@ -68,7 +68,7 @@
     "Physical devices",
     "Production publication"
   ],
-  "nextExecutableAction": "Commit exact inactive adapters and independent guard repairs; run fresh Chromium/WebKit CI; rebuild AST-complete inventory and continue official source batches/pilot manifests",
+  "nextExecutableAction": "Fresh both-engine 22-case CI at corrected host exact remote head; save full AST inventory and source batches; continue official comparisons",
   "productionPublished": false,
   "audioPilot": {
     "branch": "work/hsk-audio-asr-pilot-20261004",
@@ -77,8 +77,8 @@
     "status": "Four actual workflows and full1745targetledger accepted; two reviewed sentence fragments actualbothengines8passed CI37226015769, source pin retained; no further word clips or human listening.",
     "productionPromotion": false
   },
-  "lastVerifiedRemoteBranch": "work/hsk-b10-source-checkpoint-20261004",
-  "lastVerifiedRemoteTree": "10c12f0335a19c58ab47feb22c3fcb2dee5611ba",
+  "lastVerifiedRemoteBranch": "work/hsk-b10-adapter-ci-20261004",
+  "lastVerifiedRemoteTree": "b83fd52aff2f547681cf9c126ee0b196377f0797",
   "supplementaryCI": {
     "runId": 37226015769,
     "url": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37226015769",
@@ -123,7 +123,7 @@
     "sourceCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
     "status": "engineering-freeze-accepted-for-phase-B-with-explicit-release-UI-followups"
   },
-  "latestCheckpoint": "B10-RUNTIME-CHECKPOINT.json",
+  "latestCheckpoint": "B10-CI-HOST-REPAIR-CHECKPOINT.json",
   "nextActions": [
     "Finish independently reviewed adapters and run actual Chromium/WebKit CI",
     "Rebuild actual source VI inventory with AST repair",
@@ -132,5 +132,11 @@
     "Complete exact final regression and prepare publication candidate"
   ],
   "formalWebsiteVIAlignmentAccepted": 0,
-  "activeOfficialVIRegistries": 0
+  "activeOfficialVIRegistries": 0,
+  "acceptedFieldProposals": 136,
+  "sourceOccurrenceAcceptance": {
+    "hsk1Lessons1to4": 387,
+    "hsk2Lessons1to6": 640,
+    "hsk3Lesson10": 119
+  }
 }

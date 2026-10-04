@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "label": "browser-install",
+  "browser": "chromium",
+  "command": [
+    "npx",
+    "playwright",
+    "install",
+    "--with-deps",
+    "chromium"
+  ],
+  "cwd": "course-app",
+  "startedAt": "2026-10-04T21:23:03.945Z",
+  "endedAt": "2026-10-04T21:23:29.142Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/chromium/browser-install.log",
+    "bytes": 18488,
+    "sha256": "0861fdbb3ea2eab332d48993d03d5d09c7b7d038ba6eb3d4d02abf25e6d45d58"
+  }
+}
