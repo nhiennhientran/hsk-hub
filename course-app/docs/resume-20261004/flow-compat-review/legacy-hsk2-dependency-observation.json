@@ -1,0 +1,29 @@
+{
+  "purpose": "Actual diagnostic observation; no pass acceptance implied",
+  "errors": [
+    "pako is not defined",
+    "[HSK2 locked] pako missing"
+  ],
+  "failed": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;600;700&display=swap",
+      "failure": {
+        "errorText": "net::ERR_EMPTY_RESPONSE"
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js",
+      "failure": {
+        "errorText": "net::ERR_EMPTY_RESPONSE"
+      }
+    }
+  ],
+  "status": {
+    "url": "http://127.0.0.1:18783/hsk-hub/hsk2.html",
+    "count": 0,
+    "boot": "Không tải được nội dung khóa học.Vui lòng tải lại trang.",
+    "progress": "Lỗi tải dữ liệu",
+    "pako": "undefined",
+    "gate": ""
+  }
+}

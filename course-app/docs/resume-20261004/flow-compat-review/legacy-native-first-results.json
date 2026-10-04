@@ -1,0 +1,231 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config=playwright.legacy.config.ts",
+      "--project=chromium"
+    ],
+    "configFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/playwright.legacy.config.ts",
+    "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/legacy-native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "legacy-entries.packaged.ts"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/legacy-native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "legacy-entries.packaged.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/legacy-native-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node serve-legacy.mjs",
+      "url": "http://127.0.0.1:18783/hsk-hub/course-engine/unified-release-manifest.json",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "legacy-entries.packaged.ts",
+      "file": "legacy-entries.packaged.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "verified assembled old HSK1 HSK2 HSK3 and both HSK4 routes preserve nonempty histories and extra HSK4 gate",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 90040,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/legacy-entries.packaged.ts",
+                        "column": 142,
+                        "line": 10
+                      },
+                      "message": "Error: page.waitForFunction: Test timeout of 90000ms exceeded.\n\n   8 |  await expect(extra).toContainText('三级旧版20课，不对应新版18课');\n   9 |  for(const[path,count]of [['hsk1/',15],['hsk2.html',15],['hsk3/',20],['hsk4up/',10],['hsk4/',10]]as const){\n> 10 |   await page.goto('./'+path);if(path==='hsk2.html')await expect(page.locator('#lessonGrid .lesson-card')).toHaveCount(count);else await page.waitForFunction(()=>Boolean((window as any).__HSK_SESSION_AUTH_API));\n     |                                                                                                                                              ^\n  11 |   if(path==='hsk4up/'){\n  12 |    await expect(page.locator('#pwOverlay')).toBeVisible();expect(await page.evaluate(()=>(window as any).__HSK_SESSION_AUTH_API.currentStage())).toBe('hsk4');\n  13 |    // Authorize the existing additional stage in this synthetic test session; password validation is not claimed here.\n    at /workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/legacy-entries.packaged.ts:10:142"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:16:57.179Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/legacy-native-output/legacy-entries.packaged.ts-f2421-stories-and-extra-HSK4-gate-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2786d49382d9f9b891eb-fa7dc909ab2bab8db8f4",
+          "file": "legacy-entries.packaged.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "verified assembled HSK2 nested default and explicit cross-level deep links survive reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 418,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:18:27.635Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2786d49382d9f9b891eb-3832d6825da673b7a9bc",
+          "file": "legacy-entries.packaged.ts",
+          "line": 21,
+          "column": 26
+        },
+        {
+          "title": "verified assembled HSK3 nested default and explicit cross-level deep links survive reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 397,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T17:18:28.120Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2786d49382d9f9b891eb-6281b191c264713a9fb9",
+          "file": "legacy-entries.packaged.ts",
+          "line": 21,
+          "column": 26
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T17:16:56.689Z",
+    "duration": 91869.37299999999,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

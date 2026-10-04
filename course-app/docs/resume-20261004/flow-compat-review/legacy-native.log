@@ -1,0 +1,34 @@
+[WebServer] (node:18) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:30) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › legacy-entries.packaged.ts:4:1 › verified assembled old HSK1 HSK2 HSK3 and both HSK4 routes preserve nonempty histories and extra HSK4 gate (1.5m)
+(node:97) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › legacy-entries.packaged.ts:21:26 › verified assembled HSK2 nested default and explicit cross-level deep links survive reload (418ms)
+  ✓  3 [chromium] › legacy-entries.packaged.ts:21:26 › verified assembled HSK3 nested default and explicit cross-level deep links survive reload (397ms)
+
+
+  1) [chromium] › legacy-entries.packaged.ts:4:1 › verified assembled old HSK1 HSK2 HSK3 and both HSK4 routes preserve nonempty histories and extra HSK4 gate 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: page.waitForFunction: Test timeout of 90000ms exceeded.
+
+       8 |  await expect(extra).toContainText('三级旧版20课，不对应新版18课');
+       9 |  for(const[path,count]of [['hsk1/',15],['hsk2.html',15],['hsk3/',20],['hsk4up/',10],['hsk4/',10]]as const){
+    > 10 |   await page.goto('./'+path);if(path==='hsk2.html')await expect(page.locator('#lessonGrid .lesson-card')).toHaveCount(count);else await page.waitForFunction(()=>Boolean((window as any).__HSK_SESSION_AUTH_API));
+         |                                                                                                                                              ^
+      11 |   if(path==='hsk4up/'){
+      12 |    await expect(page.locator('#pwOverlay')).toBeVisible();expect(await page.evaluate(()=>(window as any).__HSK_SESSION_AUTH_API.currentStage())).toBe('hsk4');
+      13 |    // Authorize the existing additional stage in this synthetic test session; password validation is not claimed here.
+        at /workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/legacy-entries.packaged.ts:10:142
+
+    Error Context: legacy-native-output/legacy-entries.packaged.ts-f2421-stories-and-extra-HSK4-gate-chromium/error-context.md
+
+  1 failed
+    [chromium] › legacy-entries.packaged.ts:4:1 › verified assembled old HSK1 HSK2 HSK3 and both HSK4 routes preserve nonempty histories and extra HSK4 gate 
+  2 passed (1.5m)

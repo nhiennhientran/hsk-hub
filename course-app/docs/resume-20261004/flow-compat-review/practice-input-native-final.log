@@ -1,0 +1,13 @@
+[WebServer] (node:18) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:30) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › docs/resume-20261004/flow-compat-review/input-abort.candidate.spec.ts:3:34 › HSK2 final lesson invalid old radio IME abort and redo preserve confirmed history (849ms)
+  ✓  2 [chromium] › docs/resume-20261004/flow-compat-review/input-abort.candidate.spec.ts:3:34 › HSK3 final lesson invalid old radio IME abort and redo preserve confirmed history (852ms)
+  ✓  3 [chromium] › docs/resume-20261004/flow-compat-review/shared-practice-listening.candidate.spec.ts:43:2 › actual HSK2 complete canonical mixed queue renders all senses exact backs and survives responsive reload (13.1s)
+  ✓  4 [chromium] › docs/resume-20261004/flow-compat-review/shared-practice-listening.candidate.spec.ts:43:2 › actual HSK3 complete canonical mixed queue renders all senses exact backs and survives responsive reload (37.2s)
+
+  4 passed (52.7s)

@@ -1,0 +1,28 @@
+{
+  "status": "verified-author-evidence",
+  "formalUnifiedActualPassed": 64,
+  "terminalLogActualPassed": 50,
+  "structuredFormalActualPassed": 14,
+  "retainedHSK1ActualPassed": 34,
+  "freshAuthorizedBackupActualPassed": 1,
+  "nestedActualPassed": 2,
+  "oldRouteUnderRecordedDependencyActualPassed": 1,
+  "artifacts": [
+    {
+      "manifest": "frozen-flow-build.json",
+      "files": 1782,
+      "allBytesExact": true
+    },
+    {
+      "manifest": "frozen-repaired-build.json",
+      "files": 1717,
+      "allBytesExact": true
+    },
+    {
+      "manifest": "frozen-hsk1-standalone-build.json",
+      "files": 613,
+      "allBytesExact": true
+    }
+  ],
+  "scope": "Local actual Chromium evidence with explicit retained/auth/dependency limits; independent review and current two-engine CI remain separate"
+}

@@ -1,0 +1,17 @@
+[WebServer] (node:18) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:30) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › docs/resume-20261004/flow-compat-review/durable-attempts.candidate.spec.ts:12:134 › durable HSK2 homework quota rejects unconfirmed receipt across remount ordinary save and explicit retry (919ms)
+  ✓  2 [chromium] › docs/resume-20261004/flow-compat-review/durable-attempts.candidate.spec.ts:12:134 › durable HSK2 homework waiting rejects unconfirmed receipt across remount ordinary save and explicit retry (791ms)
+  ✓  3 [chromium] › docs/resume-20261004/flow-compat-review/durable-attempts.candidate.spec.ts:12:134 › durable HSK2 listening quota rejects unconfirmed receipt across remount ordinary save and explicit retry (912ms)
+  ✓  4 [chromium] › docs/resume-20261004/flow-compat-review/durable-attempts.candidate.spec.ts:12:134 › durable HSK2 listening waiting rejects unconfirmed receipt across remount ordinary save and explicit retry (882ms)
+  ✓  5 [chromium] › docs/resume-20261004/flow-compat-review/durable-attempts.candidate.spec.ts:12:134 › durable HSK3 homework quota rejects unconfirmed receipt across remount ordinary save and explicit retry (917ms)
+  ✓  6 [chromium] › docs/resume-20261004/flow-compat-review/durable-attempts.candidate.spec.ts:12:134 › durable HSK3 homework waiting rejects unconfirmed receipt across remount ordinary save and explicit retry (832ms)
+  ✓  7 [chromium] › docs/resume-20261004/flow-compat-review/durable-attempts.candidate.spec.ts:12:134 › durable HSK3 listening quota rejects unconfirmed receipt across remount ordinary save and explicit retry (912ms)
+  ✓  8 [chromium] › docs/resume-20261004/flow-compat-review/durable-attempts.candidate.spec.ts:12:134 › durable HSK3 listening waiting rejects unconfirmed receipt across remount ordinary save and explicit retry (885ms)
+
+  8 passed (8.0s)

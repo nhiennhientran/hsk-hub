@@ -1,0 +1,96 @@
+name: HSK learning flows and packaged checkpoint
+on:
+  workflow_dispatch:
+  push:
+    branches: ['work/hsk-flow-package-ci-20261004']
+permissions:
+  contents: read
+jobs:
+  flows:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+        scope: [shared, retained-hsk1, package]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - run: npm ci --prefix course-app && npm ci --prefix hsk1-app
+      - name: Unit and fixture checks
+        run: |
+          npm test --prefix course-app
+          course-app/node_modules/.bin/tsc -p course-app/tsconfig.flow-check.json
+          course-app/node_modules/.bin/tsc -p course-app/tsconfig.package-check.json
+      - name: Install browser and Chinese fonts
+        working-directory: course-app
+        run: npx playwright install --with-deps ${{ matrix.browser }} && sudo apt-get install -y fonts-noto-cjk
+      - name: Build shared learning app
+        if: matrix.scope == 'shared'
+        run: npm run build --prefix course-app
+      - name: All-lesson homework, listening, mixed cards and save boundaries
+        if: matrix.scope == 'shared'
+        working-directory: course-app/docs/resume-20261004/flow-compat-review
+        run: node ../../../node_modules/@playwright/test/cli.js test --config=playwright.flow.config.ts --project=${{ matrix.browser }}
+      - name: All-48 synthetic-store roundtrip and recovery
+        if: matrix.scope == 'shared'
+        working-directory: course-app
+        run: node --experimental-strip-types --test docs/resume-20261004/flow-compat-review/all48-state-roundtrip.candidate.test.mjs
+      - name: Build retained HSK1 app
+        if: matrix.scope == 'retained-hsk1'
+        run: npm run build --prefix hsk1-app
+      - name: Retained HSK1 flows, excluding original password-dependent fixture
+        if: matrix.scope == 'retained-hsk1'
+        working-directory: course-app/docs/resume-20261004/flow-compat-review
+        run: |
+          node ../../../../hsk1-app/node_modules/@playwright/test/cli.js test --config=playwright.hsk1-retained.config.ts --project=${{ matrix.browser }} --grep-invert 'a downloaded nonempty backup restores identical data in a new context and one import-before recovery'
+          cp hsk1-retained-results.json hsk1-retained-ci-results.json
+      - name: Fresh-context backup with explicit test-session authorization
+        if: matrix.scope == 'retained-hsk1'
+        working-directory: course-app/docs/resume-20261004/flow-compat-review
+        env:
+          FLOW_HSK1_MATCH: hsk1-fresh-backup.retained.ts
+        run: |
+          node ../../../../hsk1-app/node_modules/@playwright/test/cli.js test --config=playwright.hsk1-retained.config.ts --project=${{ matrix.browser }}
+          cp hsk1-retained-results.json hsk1-fresh-backup-ci-results.json
+      - name: Freeze and assemble actual protected production-shaped checkpoint
+        if: matrix.scope == 'package'
+        working-directory: course-app
+        run: |
+          node tools/package-unified.mjs --build --input dist-flow-package --output unified-frozen-flow-package
+          mkdir baseline-protected-flow-package
+          git -C .. archive 2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4 | tar -x -C baseline-protected-flow-package
+          node tools/assemble-unified-checkpoint.mjs baseline-protected-flow-package unified-frozen-flow-package unified-site-flow-package .repro-output/flow-package-assembly.json
+      - name: Source crops, original gallery, audio transport and public-path closure
+        if: matrix.scope == 'package'
+        working-directory: course-app
+        env:
+          HSK_PACKAGE_ROOT: unified-site-flow-package
+        run: npx playwright test --config=playwright.package-closure.config.ts --project=${{ matrix.browser }}
+      - name: Normal-network legacy entries and nested new entries
+        if: matrix.scope == 'package'
+        working-directory: course-app/docs/resume-20261004/flow-compat-review
+        env:
+          FLOW_PACKAGE_ROOT: ${{ github.workspace }}/course-app/unified-site-flow-package
+        run: node ../../../node_modules/@playwright/test/cli.js test --config=playwright.legacy.config.ts --project=${{ matrix.browser }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk-flow-package-${{ matrix.scope }}-${{ matrix.browser }}
+          include-hidden-files: true
+          path: |
+            course-app/.repro-output/flow-package-assembly.json
+            course-app/.repro-output/package-closure-browser.json
+            course-app/test-results-package-closure/**/*.md
+            course-app/docs/resume-20261004/flow-compat-review/native-flow-results.json
+            course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-results.json
+            course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-ci-results.json
+            course-app/docs/resume-20261004/flow-compat-review/hsk1-fresh-backup-ci-results.json
+            course-app/docs/resume-20261004/flow-compat-review/legacy-native-results.json
+            course-app/docs/resume-20261004/flow-compat-review/**/*.png
+            course-app/docs/resume-20261004/flow-compat-review/**/error-context.md

@@ -1,0 +1,46 @@
+[WebServer] (node:18) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 35 tests using 1 worker
+
+(node:30) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   1 [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:149:3 › complete independent listening course › all 75 real questions map four shuffled options, hide transcripts before submission and show exact feedback afterward (5.2s)
+(node:96) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   2 [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:199:1 › mixed lessons preserve first and latest scores while wrong-only redoing hides feedback again and removes corrected mistakes (5.2s)
+(node:162) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   3 [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:237:1 › single, mixed and all lessons create exact queues; empty selection and an empty wrong filter preserve the saved round (5.2s)
+(node:230) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   4 [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:262:1 › reload retains queue, option orders, selected answer, listen count, rate and position without modifying homework, reading or cards (5.1s)
+(node:299) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   5 [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:297:1 › loading controls reject early activation, HTTP 503 retries the same route and retired media-map requests cannot mount or save late (5.0s)
+(node:363) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   6 [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:329:1 › native original MP3 segments in lessons 1, 10 and 15 advance, stop within their frozen boundaries and stop when changing questions (5.2s)
+(node:429) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   7 [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:355:1 › pausing a held real MP3 before first playing then resuming counts once; five speeds, ordinary resume and replay keep exact counts (5.2s)
+(node:493) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   8 [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:410:1 › an MP3 HTTP failure can retry; a superseded delayed response cannot count, start or stop the current native track (5.2s)
+(node:557) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   9 [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:449:1 › quota failure preserves submitted listening in memory, exports it after navigation and recovers with a normal retry (5.2s)
+(node:621) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  10 [chromium] › ../../../../hsk1-app/tests/browser/listening.spec.ts:487:1 › listening settings, native controls and submitted feedback fit four viewport widths with readable Chinese and Vietnamese (5.2s)
+(node:685) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  11 [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:84:44 › mixed-card preview: direct review and responsive layout at 320px (5.1s)
+(node:750) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  12 [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:84:44 › mixed-card preview: direct review and responsive layout at 390px (5.1s)
+(node:815) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  13 [chromium] › ../../../../hsk1-app/tests/browser/mixed-cards.spec.ts:84:44 › mixed-card preview: direct review and responsive layout at 768px (5.1s)
+(node:880) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

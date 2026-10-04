@@ -1,0 +1,39 @@
+[WebServer] (node:18) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:30) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › legacy-entries.packaged.ts:4:1 › verified assembled old HSK1 HSK2 HSK3 and both HSK4 routes preserve nonempty histories and extra HSK4 gate (5.4s)
+
+
+  1) [chromium] › legacy-entries.packaged.ts:4:1 › verified assembled old HSK1 HSK2 HSK3 and both HSK4 routes preserve nonempty histories and extra HSK4 gate 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('#lessonGrid .lesson-card')
+    Expected: 15
+    Received: 0
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for locator('#lessonGrid .lesson-card')
+        14 × locator resolved to 0 elements
+           - unexpected value "0"
+
+
+       8 |  await expect(extra).toContainText('三级旧版20课，不对应新版18课');
+       9 |  for(const[path,count]of [['hsk1/',15],['hsk2.html',15],['hsk3/',20],['hsk4up/',10],['hsk4/',10]]as const){
+    > 10 |   await page.goto('./'+path);await expect(page.locator('#lessonGrid .lesson-card')).toHaveCount(count);if(path.startsWith('hsk4'))await page.waitForFunction(()=>Boolean((window as any).__HSK_SESSION_AUTH_API),undefined,{timeout:5000});
+         |                                                                                     ^
+      11 |   if(path==='hsk4up/'){
+      12 |    await expect(page.locator('#pwOverlay')).toBeVisible();expect(await page.evaluate(()=>(window as any).__HSK_SESSION_AUTH_API.currentStage())).toBe('hsk4');
+      13 |    // Authorize the existing additional stage in this synthetic test session; password validation is not claimed here.
+        at /workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/legacy-entries.packaged.ts:10:85
+
+    Error Context: legacy-native-output/legacy-entries.packaged.ts-f2421-stories-and-extra-HSK4-gate-chromium/error-context.md
+
+  1 failed
+    [chromium] › legacy-entries.packaged.ts:4:1 › verified assembled old HSK1 HSK2 HSK3 and both HSK4 routes preserve nonempty histories and extra HSK4 gate 

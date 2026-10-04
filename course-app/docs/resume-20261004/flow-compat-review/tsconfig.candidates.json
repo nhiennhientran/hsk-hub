@@ -1,0 +1,24 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "types": ["node", "vite/client"],
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
+  "include": [
+    "durable-attempts.candidate.spec.ts",
+    "homework-all-lessons.candidate.spec.ts",
+    "shared-practice-listening.candidate.spec.ts",
+    "input-abort.candidate.spec.ts",
+    "mobile-boundaries.candidate.spec.ts",
+    "playwright.flow.config.ts",
+    "playwright.hsk1-retained.config.ts",
+    "playwright.legacy.config.ts",
+    "legacy-entries.packaged.ts",
+    "legacy-diagnostic.packaged.ts",
+    "hsk1-fresh-backup.retained.ts",
+    "hsk1-preserved.retained.ts"
+  ]
+}

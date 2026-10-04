@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "types": ["node", "vite/client"] },
+  "include": [
+    "docs/resume-20261004/flow-compat-review/durable-attempts.candidate.spec.ts",
+    "docs/resume-20261004/flow-compat-review/homework-all-lessons.candidate.spec.ts",
+    "docs/resume-20261004/flow-compat-review/shared-practice-listening.candidate.spec.ts",
+    "docs/resume-20261004/flow-compat-review/input-abort.candidate.spec.ts",
+    "docs/resume-20261004/flow-compat-review/mobile-boundaries.candidate.spec.ts",
+    "docs/resume-20261004/flow-compat-review/hsk1-fresh-backup.retained.ts",
+    "docs/resume-20261004/flow-compat-review/legacy-entries.packaged.ts",
+    "docs/resume-20261004/flow-compat-review/playwright.flow.config.ts",
+    "docs/resume-20261004/flow-compat-review/playwright.hsk1-retained.config.ts",
+    "docs/resume-20261004/flow-compat-review/playwright.legacy.config.ts",
+    "src/vite-env.d.ts"
+  ]
+}
