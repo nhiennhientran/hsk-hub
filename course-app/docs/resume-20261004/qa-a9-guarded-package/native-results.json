@@ -1,0 +1,530 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config=course-app/docs/resume-20261004/qa-a9-guarded-package/playwright.guarded-package.config.ts",
+      "--project=chromium"
+    ],
+    "configFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/playwright.guarded-package.config.ts",
+    "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged",
+        "testIgnore": [],
+        "testMatch": [
+          "unified-source.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/packaged",
+        "testIgnore": [],
+        "testMatch": [
+          "unified-source.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/native-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node /workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tools/serve-package.mjs",
+      "url": "http://127.0.0.1:18791/hsk-hub/course-engine/unified-release-manifest.json",
+      "reuseExistingServer": false,
+      "env": {
+        "HSK_PACKAGE_PORT": "18791",
+        "HSK_PACKAGE_ROOT": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/unified-site-a9-guarded-835e5"
+      },
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app"
+    }
+  },
+  "suites": [
+    {
+      "title": "unified-source.spec.ts",
+      "file": "unified-source.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "unified packaged entry portal loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1,
+                  "error": {
+                    "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium",
+                    "stack": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T19:29:32.790Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-2e1dd--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-26ac44264fe47755d8d9",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium",
+                    "stack": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T19:29:33.177Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-c9c85--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-5400409ffca121b290e9",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium",
+                    "stack": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T19:29:33.595Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-7a75c--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-0341a27f445f4c39d719",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1,
+                  "error": {
+                    "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium",
+                    "stack": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T19:29:34.036Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-1a4b0--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-f13135a35b177057ebac",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium",
+                    "stack": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T19:29:34.447Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-bd006--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-7366db40280b1072078f",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1,
+                  "error": {
+                    "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium",
+                    "stack": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T19:29:34.862Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-464e6--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-9c8876ae50a4e9627e09",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium",
+                    "stack": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T19:29:35.269Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-f0df4--with-nonempty-legacy-state-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-286d46bb32631025315d",
+          "file": "unified-source.spec.ts",
+          "line": 8,
+          "column": 42
+        },
+        {
+          "title": "nested HSK1 textbook originals and original audio resolve against shared course engine",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1,
+                  "error": {
+                    "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium",
+                    "stack": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T19:29:35.663Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-nested-HSK1-e4c2d-gainst-shared-course-engine-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-545436c89bd7809c3bca",
+          "file": "unified-source.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "assembled HTTP bytes match frozen identity and private baseline/source paths are not served",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 699,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T19:29:36.083Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "113a7f0054a42e1e5d50-866729f381ee99c18f2f",
+          "file": "unified-source.spec.ts",
+          "line": 39,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T19:29:32.259Z",
+    "duration": 4618.729,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}

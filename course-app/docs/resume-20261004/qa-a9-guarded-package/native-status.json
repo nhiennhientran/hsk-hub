@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "head": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+  "tree": "a80360230b94da2a40a83c405a6bc06ea2f155f3",
+  "checkedAtUTC": "2026-10-04T19:36:19.801769+00:00",
+  "status": "request-only1passed-browser8environment-blocked-not9passed",
+  "rawReportSHA256": "2c7ed9695749fd38b82a12481461c6a1077ce44a540179c1bd57feebd74fe974",
+  "rawReportStats": {
+    "startTime": "2026-10-04T19:29:32.259Z",
+    "duration": 4618.729,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 8,
+    "flaky": 0
+  },
+  "rawReportGitCommitMetadata": null,
+  "servedArtifactIdentityCompanion": "actual-http-identity-probe.json",
+  "requestOnlyPassed": 1,
+  "browserLaunchBlocked": 8,
+  "actualNewBrowserCasesPassed": 0,
+  "newWebKitExecution": false,
+  "priorConfigStartupAttempt": "native-startup-failure.log: generated reviewer config initially merged duplicate webServer definitions; corrected private config before recorded9case attempt; zero tests executed in startup attempt",
+  "projectLockedBrowserInstallAttempt": "browser-install.log: project Playwright1.62.1 standard chromium install returned non-ZIP/truncated network response; no binary installed or alternative browser substituted; no more attempts",
+  "cases": [
+    {
+      "title": "unified packaged entry portal loads actual source crops with nonempty legacy state",
+      "project": "chromium",
+      "rawResultStatus": "failed",
+      "classification": "browser-launch-blocked-before-product-assertions",
+      "retry": 0,
+      "error": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+    },
+    {
+      "title": "unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state",
+      "project": "chromium",
+      "rawResultStatus": "failed",
+      "classification": "browser-launch-blocked-before-product-assertions",
+      "retry": 0,
+      "error": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+    },
+    {
+      "title": "unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state",
+      "project": "chromium",
+      "rawResultStatus": "failed",
+      "classification": "browser-launch-blocked-before-product-assertions",
+      "retry": 0,
+      "error": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+    },
+    {
+      "title": "unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state",
+      "project": "chromium",
+      "rawResultStatus": "failed",
+      "classification": "browser-launch-blocked-before-product-assertions",
+      "retry": 0,
+      "error": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+    },
+    {
+      "title": "unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state",
+      "project": "chromium",
+      "rawResultStatus": "failed",
+      "classification": "browser-launch-blocked-before-product-assertions",
+      "retry": 0,
+      "error": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+    },
+    {
+      "title": "unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state",
+      "project": "chromium",
+      "rawResultStatus": "failed",
+      "classification": "browser-launch-blocked-before-product-assertions",
+      "retry": 0,
+      "error": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+    },
+    {
+      "title": "unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state",
+      "project": "chromium",
+      "rawResultStatus": "failed",
+      "classification": "browser-launch-blocked-before-product-assertions",
+      "retry": 0,
+      "error": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+    },
+    {
+      "title": "nested HSK1 textbook originals and original audio resolve against shared course engine",
+      "project": "chromium",
+      "rawResultStatus": "failed",
+      "classification": "browser-launch-blocked-before-product-assertions",
+      "retry": 0,
+      "error": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium"
+    },
+    {
+      "title": "assembled HTTP bytes match frozen identity and private baseline/source paths are not served",
+      "project": "chromium",
+      "rawResultStatus": "passed",
+      "classification": "request-only-passed",
+      "retry": 0,
+      "error": ""
+    }
+  ],
+  "limitations": [
+    "Old Chromium/WebKit package9+normal-network legacy3 passes remain on dd8b22. They are supporting exact-client-byte evidence, not newhead native reruns.",
+    "NewHead actual manifest served and full3894 bytes/source1459 rehashed in separate actual audits.",
+    "No production deployment, formal16stage or new236case native claim."
+  ]
+}

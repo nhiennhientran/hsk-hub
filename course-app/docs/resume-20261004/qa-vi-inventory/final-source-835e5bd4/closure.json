@@ -1,0 +1,186 @@
+{
+  "status": "passed-source-and-consumer-inventory",
+  "sourceHead": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+  "sourceTree": "a80360230b94da2a40a83c405a6bc06ea2f155f3",
+  "primaryFieldOccurrenceRows": 46463,
+  "coverageChecksPassed": 16,
+  "coverageChecksTotal": 16,
+  "sourceFilesVerified": 837,
+  "semanticConsumerIdentities": 4293,
+  "countsByConsumerKind": {
+    "approved-svg-asset": 438,
+    "retained-practice-question": 1360,
+    "word-sense": 1093,
+    "source-activity": 918,
+    "source-activity-version": 484
+  },
+  "allConsumerPartition": {
+    "canonicalWordAndActivities": 2495,
+    "legacyQuestions": 1360,
+    "approvedAssets": 438
+  },
+  "finalGateChecks": [
+    {
+      "name": "declared source commit/tree match the root engineering checkpoint",
+      "passed": true
+    },
+    {
+      "name": "historical pending evidence retained byte-for-byte",
+      "passed": true
+    },
+    {
+      "name": "all independent coverage/source checks pass",
+      "passed": true
+    },
+    {
+      "name": "all 837 actual source files match commit bytes and recorded hashes",
+      "passed": true
+    },
+    {
+      "name": "all 2495 actual canonical/word/activity consumer identities and real source-column mappings pass",
+      "passed": true
+    },
+    {
+      "name": "exact full 4293 semantic graph contains every expected kind and no extras",
+      "passed": true
+    },
+    {
+      "name": "all 1360 bank and 438 asset identities are independently validated in primary semantic graph",
+      "passed": true
+    },
+    {
+      "name": "old package tool drift now equals actual committed input",
+      "passed": true
+    },
+    {
+      "name": "all frozen author artifacts and complete field-target identity set match",
+      "passed": true
+    }
+  ],
+  "historicalPendingFiles": [
+    {
+      "path": "README.md",
+      "sha256": "9165c728b3f1b0fad7610c51e2d381739b15edb30b728f37d0e52223bddc443a",
+      "matchesHistoricalPendingFreeze": true
+    },
+    {
+      "path": "omission-counterexamples.json",
+      "sha256": "4f017d0a42eba077f88c57b16c2d8da16efedf9f5933490f7e9c5bc4d93f4334",
+      "matchesHistoricalPendingFreeze": true
+    },
+    {
+      "path": "pending-status.json",
+      "sha256": "9d54be96fcec1e80d4c1a227720708903236976f91131a8358a91a6f9d67e44f",
+      "matchesHistoricalPendingFreeze": true
+    },
+    {
+      "path": "provisional-review.json",
+      "sha256": "284631e1b1326927e8caf33299d6e945bc7cbcbe0a8956b0529ff12223a493ab",
+      "matchesHistoricalPendingFreeze": true
+    },
+    {
+      "path": "verify-current.py",
+      "sha256": "5646ee834961753e83810dbbabb846a1d50eef2f43c06a34945ab80530951590",
+      "matchesHistoricalPendingFreeze": true
+    }
+  ],
+  "historicalPendingFreezeSHA256": "a7114cbe8decb73133cc0d920b636e68e74251d9a8d147a16aff6263fce06513",
+  "historicalConsumerPendingReport": {
+    "path": "consumer-binding-review.json",
+    "sha256": "133b63a9c7434d3d6c5b032697ba5779913662aa3257ea6ed8c8a004c4fbbcd4",
+    "oldStatus": "pending-regeneration-or-mismatch",
+    "unchangedByFinalVerifier": true
+  },
+  "actualPackageToolSource": [
+    {
+      "file": "course-app/tools/package-unified.mjs",
+      "bytes": 12694,
+      "sha256": "efc2e61e946eb6a53ab2a59e099b0dc349079ea9c4ab4c237fe09da99334976b",
+      "matchesSourceCommit": true,
+      "matchesRecordedHash": true
+    }
+  ],
+  "authorInputFreezeAtVerification": [
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/build-inventory.mjs",
+      "sha256": "8ef5eb37677d333beb4117310f79160b902b242809edda57122bed7858949d72",
+      "bytes": 44752
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/validate-inventory.mjs",
+      "sha256": "44dcf69edc6a2220cf9dc9c7c8f1f2ec8627a7e5b8fa84aeaff9388b85c75e3d",
+      "bytes": 9170
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/supplement-svg-scan.mjs",
+      "sha256": "e8837a6a0c26ba344ff947db7db882466faa0a518f83ba21787158f6f71875be",
+      "bytes": 13406
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/inventory.json.gz",
+      "sha256": "e8dce986db3af83eabff448cc14ff2c82b84046ac11bacde98633f976050d490",
+      "bytes": 5401547
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/summary.json",
+      "sha256": "85f4139599a18d8b664bb84a0f468ff82de326832b955c5b3ca728e2b973598c",
+      "bytes": 108936
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/runtime-files.json",
+      "sha256": "5a5e84511931e9b11ad576e3b1b6dcea7f1f3bb236de87b0a32f77ef002ae288",
+      "bytes": 2002235
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/semantic-consumers.json",
+      "sha256": "c9fa49dfbd312cc3d7b9fba468fda872ae42f35e6e7b9ca2e1caeceef00a8b2e",
+      "bytes": 5353010
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/legacy-practice-banks.json",
+      "sha256": "b5c094a16ea8c00b4a7793ac527ca5b5f621e585d3e82c87bcaea3fb4353e5d7",
+      "bytes": 6590
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/legacy-practice-consumers.json",
+      "sha256": "86f541c5c60f1690584f1929ab5a864da42f6593523a6c02d45dcc371376eb27",
+      "bytes": 5789901
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/svg-consumers.json",
+      "sha256": "b10ae766104a6afe61dc7a8646f4436d025e49f0357d7e62574e9287d5a40104",
+      "bytes": 1771468
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/legacy-content-contracts.json",
+      "sha256": "bf49a5f671c8dd33028018ec30ebbab86446b0ff007667d2794b3830a9c689a9",
+      "bytes": 34829
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/validation.json",
+      "sha256": "9aeba84c19c4e28997180459266389a03021c36809ca919cf86fc03502500ceb",
+      "bytes": 3819
+    }
+  ],
+  "wholeTargetIdentityVerification": {
+    "path": "freeze-and-target-verification.json",
+    "sha256": "347eae46c2ee942c0dca94dcca174baef35c59d9c1a2b1eab0d73c784dca742a",
+    "all46463TargetsMatch": true,
+    "all38AuthorArtifactsMatch": true,
+    "passed": 8,
+    "total": 8
+  },
+  "officialVietnameseSemanticAuditPerformed": false,
+  "allOfficialDecisionsStillPendingPhaseB": true,
+  "productionEdits": [],
+  "historicalReportEdits": [],
+  "limitations": [
+    "Field occurrences/candidates are not full-site semantic units, native execution certificates or textbook match counts.",
+    "Independent named/schema/strong Vietnamese presence checks do not certify all unknown ASCII-only literal language classification.",
+    "412 SVG desc nodes are asset/accessibility metadata; outer img alt/caption/zoom text are separate JSON consumers. Native assistive technology exposure is not certified.",
+    "Three legacy bank question identities and string-based option authority are retained; lesson ordinals do not map their 15/15/20 course to the uploaded 15/15/18 sources.",
+    "The old 43073 occurrence baseline omitted the fetched external banks and embedded SVG rows. Neither the old nor current row total is a completed whole-site official VI audit.",
+    "Dynamic templates and runtime static literals still need reachability/source-context resolution during Phase B. No textbook VI decision or replacement is made here.",
+    "This closes source and inventory identity drift only; A9/native visual and official textbook translation comparison are separate gates."
+  ]
+}

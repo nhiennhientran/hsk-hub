@@ -1,0 +1,92 @@
+[WebServer] (node:19) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 9 tests using 1 worker
+
+(node:31) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry portal loads actual source crops with nonempty legacy state (1ms)
+(node:43) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state (2ms)
+(node:55) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state (2ms)
+(node:67) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state (1ms)
+(node:79) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  5 [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state (2ms)
+(node:91) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  6 [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state (1ms)
+(node:103) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  7 [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state (2ms)
+(node:115) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  8 [chromium] › course-app/tests/packaged/unified-source.spec.ts:27:1 › nested HSK1 textbook originals and original audio resolve against shared course engine (1ms)
+(node:127) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  9 [chromium] › course-app/tests/packaged/unified-source.spec.ts:39:1 › assembled HTTP bytes match frozen identity and private baseline/source paths are not served (699ms)
+
+
+  1) [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry portal loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium
+
+    Error Context: course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-2e1dd--with-nonempty-legacy-state-chromium/error-context.md
+
+  2) [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium
+
+    Error Context: course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-c9c85--with-nonempty-legacy-state-chromium/error-context.md
+
+  3) [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium
+
+    Error Context: course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-7a75c--with-nonempty-legacy-state-chromium/error-context.md
+
+  4) [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium
+
+    Error Context: course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-1a4b0--with-nonempty-legacy-state-chromium/error-context.md
+
+  5) [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium
+
+    Error Context: course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-bd006--with-nonempty-legacy-state-chromium/error-context.md
+
+  6) [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium
+
+    Error Context: course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-464e6--with-nonempty-legacy-state-chromium/error-context.md
+
+  7) [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state 
+
+    Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium
+
+    Error Context: course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-f0df4--with-nonempty-legacy-state-chromium/error-context.md
+
+  8) [chromium] › course-app/tests/packaged/unified-source.spec.ts:27:1 › nested HSK1 textbook originals and original audio resolve against shared course engine 
+
+    Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium
+
+    Error Context: course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-nested-HSK1-e4c2d-gainst-shared-course-engine-chromium/error-context.md
+
+  8 failed
+    [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry portal loads actual source crops with nonempty legacy state 
+    [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state 
+    [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state 
+    [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state 
+    [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state 
+    [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state 
+    [chromium] › course-app/tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state 
+    [chromium] › course-app/tests/packaged/unified-source.spec.ts:27:1 › nested HSK1 textbook originals and original audio resolve against shared course engine 
+  1 passed (4.6s)

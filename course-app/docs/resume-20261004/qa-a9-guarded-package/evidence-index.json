@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "status": "accepted-new-clean-guarded-source-and-full-package-bytes-native-environment-limit-disclosed",
+  "head": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+  "tree": "a80360230b94da2a40a83c405a6bc06ea2f155f3",
+  "checkedAtUTC": "2026-10-04T19:37:10.608287+00:00",
+  "exactFullArtifactIdentity": {
+    "inventorySHA256": "edee969fa8f12d971014ee037305307ae72fb62d07735a25b8a38e1d30f2e49c",
+    "manifestSHA256": "0325e75dfbb83144cdb8ae555edf0b02af0e682aae90d164f4ca0e4dc70edf94",
+    "actualFiles": 3894,
+    "actualBytes": 467225119,
+    "sourceSnapshotFiles": 1459,
+    "sourceSnapshotSHA256": "333f2b56eaee6e8f28a8b69c9a5b3c1c5e018a1273b5590191a21226da0146cd"
+  },
+  "oldNativeCIIdentityUnchanged": {
+    "head": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+    "runId": 37226015769,
+    "supportingConsumerBytesEqual": 142
+  },
+  "newNativeOnly": {
+    "requestOnlyPassed": 1,
+    "browserLaunchBlocked": 8,
+    "newActualBrowserPasses": 0,
+    "webkitRerun": false
+  },
+  "independentSourceReviewSHA256": "541c02ad41de9d1d9951b3b5b8a75eed14818bd2c1c2fd81f03bab6c454866c0",
+  "sourceDirtyAtFinalFreeze": false,
+  "refs": [
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/README.md",
+      "bytes": 3064,
+      "sha256": "edc82ed7e9ffd8e50a8d83eccfb6482737e0724c488f90040f9bd344e728222a"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/actual-full-byte-audit.json",
+      "bytes": 2133,
+      "sha256": "a4e278ed754bc034f28ab0ccabad06f1d98188755b2362f39f72d96887e12e30"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/actual-full-byte-audit.log",
+      "bytes": 2133,
+      "sha256": "a4e278ed754bc034f28ab0ccabad06f1d98188755b2362f39f72d96887e12e30"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/actual-http-identity-probe.json",
+      "bytes": 618,
+      "sha256": "6040671380383ad53d05ce354b405bda8d6024cac4a7f9e81e427979f871cf46"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/assemble.log",
+      "bytes": 456,
+      "sha256": "e67df201741cf6427b542f97d61d022697c31db89810a5a50f129f47d63101e7"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/assembly.json",
+      "bytes": 736871,
+      "sha256": "842778e4ae1201883c970483f63e1b03952eefa2a950750135d4efe45e1e8ac1"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/browser-install.log",
+      "bytes": 5193,
+      "sha256": "fb53a29eb9f88064bbfa7854267f64fb82771c10062c6d6ebf229faff4c05fc8"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/build-freeze.log",
+      "bytes": 29079,
+      "sha256": "dfb22c9fe897e68b884c64b232452ef095c8c68ec5d1f962e945c5ef604d7594"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/independent-source-input-review.json",
+      "bytes": 260362,
+      "sha256": "541c02ad41de9d1d9951b3b5b8a75eed14818bd2c1c2fd81f03bab6c454866c0"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/independent-source-input-review.md",
+      "bytes": 2077,
+      "sha256": "9d499c0de26a84594fe9f03cc88d6f954895d28d4f94486c2ca3b813a81ce500"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-nested-HSK1-e4c2d-gainst-shared-course-engine-chromium/error-context.md",
+      "bytes": 541,
+      "sha256": "33944105fe903da38f79b1c0cad13bf659688114ef042c6fd449ff720c9c9178"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-1a4b0--with-nonempty-legacy-state-chromium/error-context.md",
+      "bytes": 539,
+      "sha256": "8807d33a8dd7bd33b96f77ccf358596d1d8f2ee72f6fbe74573e791dfd320e68"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-2e1dd--with-nonempty-legacy-state-chromium/error-context.md",
+      "bytes": 537,
+      "sha256": "38246b41da7a7a5bd772a8719061992589a112888f5ace44283de2a9ba5293f8"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-464e6--with-nonempty-legacy-state-chromium/error-context.md",
+      "bytes": 539,
+      "sha256": "c49eb375fc38d8d6226b6b1c22d7972fa5789d957749ef024cc08383bac7ed1a"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-7a75c--with-nonempty-legacy-state-chromium/error-context.md",
+      "bytes": 544,
+      "sha256": "d6fb2ac9f28046104be1d536e51712ec03aeb7824b1cb949c937735b64aa630d"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-bd006--with-nonempty-legacy-state-chromium/error-context.md",
+      "bytes": 544,
+      "sha256": "4dcc5cd14fa163f2c18a990ea091bf5f311ac91761fcbfbb86c9f3d1b1745629"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-c9c85--with-nonempty-legacy-state-chromium/error-context.md",
+      "bytes": 539,
+      "sha256": "314a688e71c2c99b2c115426d93c8884ac0ee055b18b8856c0ec8884542df2ad"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-output/unified-source-unified-pac-f0df4--with-nonempty-legacy-state-chromium/error-context.md",
+      "bytes": 544,
+      "sha256": "d69e327faa5ba036b4b717653a6a34470a975b283b6820e6dfcff4f8480494cd"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-results.json",
+      "bytes": 21621,
+      "sha256": "2c7ed9695749fd38b82a12481461c6a1077ce44a540179c1bd57feebd74fe974"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-run.log",
+      "bytes": 8544,
+      "sha256": "96a6d9885c6f236dbd8cea87980e70bc299a9e6bd3b006040694035eae1fca6e"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-startup-failure.log",
+      "bytes": 1129,
+      "sha256": "128a85e3257d0c10cdd7e6e904c4c7b67773e00b33026e5eb8489dba64830953"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/native-status.json",
+      "bytes": 5377,
+      "sha256": "17ac01da605c7b0af9f237d9e9b86c86f74bb238a65a266fec25cb9a78ed5477"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/playwright.guarded-package.config.ts",
+      "bytes": 582,
+      "sha256": "cc21be67992fbb56c886bf3a023ed40071e7a5f1cf172c6e0365df30c93c19f2"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/unified-release-manifest.json",
+      "bytes": 1181714,
+      "sha256": "0325e75dfbb83144cdb8ae555edf0b02af0e682aae90d164f4ca0e4dc70edf94"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-a9-guarded-package/verify-guarded-package.py",
+      "bytes": 8180,
+      "sha256": "1e01188037901d9341f3628587bcb027e73e1ca684df552f43686cfecddb1aaa"
+    }
+  ],
+  "limitations": [
+    "This clean checkpoint binds only source835e5 and actual full bytes. It is not a formal release or new236case native run.",
+    "Original sourceCI and consumer reports remain exact to prior dd8b22; newclient byte equivalence verified without rebinding them."
+  ]
+}

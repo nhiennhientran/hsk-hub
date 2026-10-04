@@ -1,0 +1,668 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> hsk-shared-course-app@1.0.0 build
+> node tools/sync-shared-assets.mjs && npm run content:check && npm run check && vite build --outDir /workspace/scratch/28b55072841a/hsk-hub-resume/course-app/.repro-output/a9-guarded-835e5/dist
+
+{"originalHSK1Audio":93,"requiredCharacters":671,"preservedCharacters":271,"licensedAdditions":400,"complete":true}
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> hsk-shared-course-app@1.0.0 content:check
+> node tools/validate-content.mjs
+
+{
+  "mode": "release",
+  "totals": {
+    "lessons": 33,
+    "words": 749,
+    "texts": 132,
+    "grammar": 108,
+    "homework": 990,
+    "listening": 132,
+    "sections": 162
+  },
+  "lessons": [
+    {
+      "id": "hsk2-fltrp-2026:l01",
+      "level": 2,
+      "number": 1,
+      "title": {
+        "zh": "她请我们吃了北京烤鸭",
+        "vi": "Cô ấy đã mời chúng tôi ăn vịt quay Bắc Kinh",
+        "py": "Tā qǐng wǒmen chīle Běijīng Kǎoyā"
+      },
+      "words": 15,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l02",
+      "level": 2,
+      "number": 2,
+      "title": {
+        "zh": "还是打车去北大吧",
+        "vi": "Hay là đi taxi đến Đại học Bắc Kinh nhé",
+        "py": "Háishi dǎchē qù Běidà ba"
+      },
+      "words": 17,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l03",
+      "level": 2,
+      "number": 3,
+      "title": {
+        "zh": "我想去西安旅游",
+        "vi": "Tôi muốn đi du lịch Tây An",
+        "py": "Wǒ xiǎng qù Xī'ān lǚyóu"
+      },
+      "words": 15,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04",
+      "level": 2,
+      "number": 4,
+      "title": {
+        "zh": "你穿红色的很好看",
+        "vi": "Bạn mặc màu đỏ rất đẹp",
+        "py": "Nǐ chuān hóngsè de hěn hǎokàn"
+      },
+      "words": 16,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05",
+      "level": 2,
+      "number": 5,
+      "title": {
+        "zh": "第一次去中国朋友家",
+        "vi": "Lần đầu đến nhà bạn người Trung Quốc",
+        "py": "Dì-yī cì qù Zhōngguó péngyou jiā"
+      },
+      "words": 20,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06",
+      "level": 2,
+      "number": 6,
+      "title": {
+        "zh": "小雪，生日快乐！",
+        "vi": "Tiểu Tuyết, chúc mừng sinh nhật!",
+        "py": "Xiǎoxuě, shēngrì kuàilè!"
+      },
+      "words": 15,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l07",
+      "level": 2,
+      "number": 7,
+      "title": {
+        "zh": "他篮球打得很好",
+        "vi": "Anh ấy chơi bóng rổ rất giỏi",
+        "py": "Tā lánqiú dǎ de hěn hǎo"
+      },
+      "words": 20,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "15b9f36001307933da8120e66214e3b7a266640022f6953b67b174b2a9c78f4c"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l08",
+      "level": 2,
+      "number": 8,
+      "title": {
+        "zh": "虽然你忘了，但是我记得",
+        "vi": "Dù em quên nhưng anh vẫn nhớ",
+        "py": "Suīrán nǐ wàng le, dànshì wǒ jìde"
+      },
+      "words": 17,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "90c7c19aac1d78ed62752356eefe09b6d3ee968c528c2008a53f0f2b1f96d00a"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l09",
+      "level": 2,
+      "number": 9,
+      "title": {
+        "zh": "我去买杯奶茶",
+        "vi": "Tôi đi mua một cốc trà sữa",
+        "py": "Wǒ qù mǎi bēi nǎichá"
+      },
+      "words": 13,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "55675df1ef69682537b7137e4f2ba19e2a311cf7738969ecd790dae62cc885aa"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10",
+      "level": 2,
+      "number": 10,
+      "title": {
+        "zh": "就要考试了",
+        "vi": "Sắp thi rồi",
+        "py": "Jiù yào kǎoshì le"
+      },
+      "words": 15,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11",
+      "level": 2,
+      "number": 11,
+      "title": {
+        "zh": "我最喜欢吃中国菜",
+        "vi": "Tôi thích ăn món Trung Quốc nhất",
+        "py": "Wǒ zuì xǐhuan chī Zhōngguó cài"
+      },
+      "words": 13,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "01ec965d7f18d41c5c91c053f93544b24c971303ed8b4ca6afd2ad2c03d48ff8"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12",
+      "level": 2,
+      "number": 12,
+      "title": {
+        "zh": "这里比北京冷多了",
+        "vi": "Ở đây lạnh hơn Bắc Kinh nhiều",
+        "py": "Zhèlǐ bǐ Běijīng lěngduō le"
+      },
+      "words": 11,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "c64d2e1bc3dac399f1737338e70474d8ea8559c2aa65207290a515804a97e702"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l13",
+      "level": 2,
+      "number": 13,
+      "title": {
+        "zh": "我们爱上中文课",
+        "vi": "Chúng tôi thích học tiết tiếng Trung",
+        "py": "Wǒmen ài shàng Zhōngwén kè"
+      },
+      "words": 13,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "06d5d9e3f096ffe189f8d8214ba5582db9912e776e9ce3cee55d4fbd928057e1"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l14",
+      "level": 2,
+      "number": 14,
+      "title": {
+        "zh": "一个人过年多没意思啊",
+        "vi": "Ăn Tết một mình buồn biết bao",
+        "py": "Yí gè rén guònián duō méi yìsi a"
+      },
+      "words": 14,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "74d7a43cbed89ddf152a840d3c5bc06e8200c975fa1de5e9bf4223e227d52e0f"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15",
+      "level": 2,
+      "number": 15,
+      "title": {
+        "zh": "我想再去一次中国",
+        "vi": "Tôi muốn đến Trung Quốc thêm một lần nữa",
+        "py": "Wǒ xiǎng zài qù yí cì Zhōngguó"
+      },
+      "words": 12,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "299a8d8cf8f90e721d8a8c8b0ca24d7c33d759949166cab1edd2eeddf00ae907"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l01",
+      "level": 3,
+      "number": 1,
+      "title": {
+        "zh": "我们去机场接你们",
+        "vi": "Chúng tôi sẽ ra sân bay đón các bạn",
+        "py": "Wǒmen qù jīchǎng jiē nǐmen"
+      },
+      "words": 27,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02",
+      "level": 3,
+      "number": 2,
+      "title": {
+        "zh": "你们想吃什么就点什么",
+        "vi": "Các bạn muốn ăn gì thì gọi món đó",
+        "py": "Nǐmen xiǎng chī shénme jiù diǎn shénme"
+      },
+      "words": 30,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03",
+      "level": 3,
+      "number": 3,
+      "title": {
+        "zh": "这个小区挺好的",
+        "vi": "Khu dân cư này khá tốt",
+        "py": "Zhè ge xiǎoqū tǐng hǎo de"
+      },
+      "words": 27,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04",
+      "level": 3,
+      "number": 4,
+      "title": {
+        "zh": "这家宾馆跟别的都不一样",
+        "vi": "Khách sạn này khác hẳn những nơi khác",
+        "py": "Zhè jiā bīnguǎn gēn biéde dōu bù yíyàng"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l05",
+      "level": 3,
+      "number": 5,
+      "title": {
+        "zh": "这样的照片才好看",
+        "vi": "Ảnh như thế này mới đẹp",
+        "py": "Zhèyàng de zhàopiàn cái hǎokàn"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l06",
+      "level": 3,
+      "number": 6,
+      "title": {
+        "zh": "高铁上还可以点外卖",
+        "vi": "Trên tàu cao tốc còn có thể gọi đồ ăn giao tận nơi",
+        "py": "Gāotiě shàng hái kěyǐ diǎn wàimài"
+      },
+      "words": 31,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l07",
+      "level": 3,
+      "number": 7,
+      "title": {
+        "zh": "那条裙子比短裤更好看",
+        "vi": "Chiếc váy kia đẹp hơn quần soóc",
+        "py": "Nà tiáo qúnzi bǐ duǎnkù gèng hǎokàn"
+      },
+      "words": 30,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l08",
+      "level": 3,
+      "number": 8,
+      "title": {
+        "zh": "今天我出院了",
+        "vi": "Hôm nay tôi xuất viện",
+        "py": "Jīntiān wǒ chūyuàn le"
+      },
+      "words": 31,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09",
+      "level": 3,
+      "number": 9,
+      "title": {
+        "zh": "打不好没关系",
+        "vi": "Chơi chưa tốt cũng không sao",
+        "py": "Dǎ bu hǎo méi guānxi"
+      },
+      "words": 33,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l10",
+      "level": 3,
+      "number": 10,
+      "title": {
+        "zh": "你明天再把书还给我",
+        "vi": "Ngày mai bạn hãy trả sách cho tôi",
+        "py": "Nǐ míngtiān zài bǎ shū huán gěi wǒ"
+      },
+      "words": 33,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11",
+      "level": 3,
+      "number": 11,
+      "title": {
+        "zh": "看来我没办法解决这个问题",
+        "vi": "Xem ra tôi không có cách giải quyết vấn đề này",
+        "py": "Kànlái wǒ méi bànfǎ jiějué zhège wèntí"
+      },
+      "words": 29,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l12",
+      "level": 3,
+      "number": 12,
+      "title": {
+        "zh": "这个季节天气变化很快",
+        "vi": "Mùa này thời tiết thay đổi rất nhanh",
+        "py": "Zhège jìjié tiānqì biànhuà hěn kuài"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l13",
+      "level": 3,
+      "number": 13,
+      "title": {
+        "zh": "我的新邻居来自英国",
+        "vi": "Hàng xóm mới của tôi đến từ Anh",
+        "py": "Wǒ de xīn línjū láizì Yīngguó"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l14",
+      "level": 3,
+      "number": 14,
+      "title": {
+        "zh": "这本书被别人借走了",
+        "vi": "Cuốn sách này đã được người khác mượn rồi",
+        "py": "Zhè běn shū bèi biérén jiè zǒu le"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 3,
+      "homework": 30,
+      "sha256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l15",
+      "level": 3,
+      "number": 15,
+      "title": {
+        "zh": "我是半个南京人",
+        "vi": "Tôi có thể coi là nửa người Nam Kinh",
+        "py": "Wǒ shì bàn ge Nánjīngrén"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16",
+      "level": 3,
+      "number": 16,
+      "title": {
+        "zh": "我听说有的熊猫出国了",
+        "vi": "Tôi nghe nói có gấu trúc đã ra nước ngoài",
+        "py": "Wǒ tīngshuō yǒude xióngmāo chū guó le"
+      },
+      "words": 26,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l17",
+      "level": 3,
+      "number": 17,
+      "title": {
+        "zh": "我要多向认真的人学习",
+        "vi": "Tôi phải học hỏi nhiều hơn từ những người cẩn thận",
+        "py": "Wǒ yào duō xiàng rènzhēn de rén xuéxí"
+      },
+      "words": 28,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18",
+      "level": 3,
+      "number": 18,
+      "title": {
+        "zh": "我学会了包饺子",
+        "vi": "Tôi đã học được cách gói sủi cảo",
+        "py": "Wǒ xuéhuì le bāo jiǎozi"
+      },
+      "words": 30,
+      "texts": 4,
+      "grammar": 4,
+      "homework": 30,
+      "sha256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53"
+    }
+  ],
+  "lexicons": [
+    {
+      "courseId": "hsk2-fltrp-2026",
+      "counts": {
+        "sourceRecords": 226,
+        "senses": 226,
+        "chineseForms": 209,
+        "verifiedMerges": 0
+      },
+      "sha256": "ef5bfd9d4b03fd83e0eb735afca091ff3daa09dd1c5439f1e4453d118bef014c"
+    },
+    {
+      "courseId": "hsk3-fltrp-2026",
+      "counts": {
+        "sourceRecords": 523,
+        "senses": 523,
+        "chineseForms": 487,
+        "verifiedMerges": 0
+      },
+      "sha256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3"
+    }
+  ],
+  "issues": []
+}
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> hsk-shared-course-app@1.0.0 check
+> tsc --noEmit
+
+vite v8.3.2 building client environment for production...
+transforming...
+✓ 198 modules transformed.
+rendering chunks...
+computing gzip size...
+.repro-output/a9-guarded-835e5/dist/index.html                                                   0.45 kB │ gzip:   0.33 kB
+.repro-output/a9-guarded-835e5/dist/assets/course-index-BKGnz4SX.json                            4.87 kB │ gzip:   1.18 kB
+.repro-output/a9-guarded-835e5/dist/assets/textbook-display-revisions-DWScioD2.json             26.13 kB │ gzip:   4.78 kB
+.repro-output/a9-guarded-835e5/dist/content-manifest.json                                       53.70 kB │ gzip:  14.31 kB
+.repro-output/a9-guarded-835e5/dist/assets/stage2-bank-DOB9KrMv.json                           269.65 kB │ gzip:  47.51 kB
+.repro-output/a9-guarded-835e5/dist/assets/media-references-DD5E_5K_.json                      287.06 kB │ gzip:  57.51 kB
+.repro-output/a9-guarded-835e5/dist/assets/stage3-catalog-CH6Cx7h7.json                        384.02 kB │ gzip:  67.91 kB
+.repro-output/a9-guarded-835e5/dist/assets/textbook-ksDEYuz_.json                              741.67 kB │ gzip:  91.65 kB
+.repro-output/a9-guarded-835e5/dist/assets/progress-DgeKDxiU.css                                 1.57 kB │ gzip:   0.62 kB
+.repro-output/a9-guarded-835e5/dist/assets/archive-BMfTkVw2.css                                  1.93 kB │ gzip:   0.74 kB
+.repro-output/a9-guarded-835e5/dist/assets/hanzi-D0sNO2-t.css                                    2.24 kB │ gzip:   0.79 kB
+.repro-output/a9-guarded-835e5/dist/assets/data-panel-BgEWndCN.css                               3.56 kB │ gzip:   1.10 kB
+.repro-output/a9-guarded-835e5/dist/assets/source-activities-Cz6XgW02.css                        4.93 kB │ gzip:   1.37 kB
+.repro-output/a9-guarded-835e5/dist/assets/listening-DTyrhIy_.css                                5.80 kB │ gzip:   1.60 kB
+.repro-output/a9-guarded-835e5/dist/assets/view-BYaiqWuX.css                                     6.25 kB │ gzip:   1.79 kB
+.repro-output/a9-guarded-835e5/dist/assets/homework-8E-U9jBU.css                                 8.11 kB │ gzip:   2.06 kB
+.repro-output/a9-guarded-835e5/dist/assets/textbook-BGHTCm5n.css                                 9.57 kB │ gzip:   2.64 kB
+.repro-output/a9-guarded-835e5/dist/assets/index-CqoucPNO.css                                   34.61 kB │ gzip:   7.74 kB
+.repro-output/a9-guarded-835e5/dist/assets/textbook-BNPI77hK.js                                  0.08 kB │ gzip:   0.10 kB
+.repro-output/a9-guarded-835e5/dist/assets/review-Dw3CJ1qh.js                                    0.08 kB │ gzip:   0.09 kB
+.repro-output/a9-guarded-835e5/dist/assets/stage3-catalog-BDgGKH7A.js                            0.08 kB │ gzip:   0.10 kB
+.repro-output/a9-guarded-835e5/dist/assets/media-references-DyNdsQyY.js                          0.09 kB │ gzip:   0.10 kB
+.repro-output/a9-guarded-835e5/dist/assets/vocabulary-DUdCCQ1C.js                                0.09 kB │ gzip:   0.10 kB
+.repro-output/a9-guarded-835e5/dist/assets/textbook-display-revisions-CGs5GDJK.js                0.10 kB │ gzip:   0.11 kB
+.repro-output/a9-guarded-835e5/dist/assets/rolldown-runtime-DK3Fl9T5.js                          0.15 kB │ gzip:   0.15 kB
+.repro-output/a9-guarded-835e5/dist/assets/asset-base-DAkFL0yR.js                                0.16 kB │ gzip:   0.15 kB
+.repro-output/a9-guarded-835e5/dist/assets/ui-BaCN-TQ1.js                                        0.38 kB │ gzip:   0.27 kB
+.repro-output/a9-guarded-835e5/dist/assets/dom-Co9YUD_J.js                                       0.51 kB │ gzip:   0.35 kB
+.repro-output/a9-guarded-835e5/dist/assets/bilingual-YzyU8AOp.js                                 0.55 kB │ gzip:   0.29 kB
+.repro-output/a9-guarded-835e5/dist/assets/content-Dtx46D9v.js                                   0.86 kB │ gzip:   0.50 kB
+.repro-output/a9-guarded-835e5/dist/assets/homework-C7rR7QKa.js                                  1.81 kB │ gzip:   1.01 kB
+.repro-output/a9-guarded-835e5/dist/assets/session-bfGAMATy.js                                   2.32 kB │ gzip:   1.18 kB
+.repro-output/a9-guarded-835e5/dist/assets/mixed-state-7Oiw2hir.js                               3.10 kB │ gzip:   1.40 kB
+.repro-output/a9-guarded-835e5/dist/assets/progress-C0nra-vL.js                                  3.17 kB │ gzip:   1.48 kB
+.repro-output/a9-guarded-835e5/dist/assets/home-lWTCFjNu.js                                      4.32 kB │ gzip:   2.02 kB
+.repro-output/a9-guarded-835e5/dist/assets/catalogue-C_U9rwbD.js                                 4.81 kB │ gzip:   2.04 kB
+.repro-output/a9-guarded-835e5/dist/assets/audio-segments-hsk2-reviewed-sentences-bwYi0Zbf.js    5.11 kB │ gzip:   1.96 kB
+.repro-output/a9-guarded-835e5/dist/assets/listening-BrTa9oFu.js                                 5.53 kB │ gzip:   2.36 kB
+.repro-output/a9-guarded-835e5/dist/assets/engine-CBi3sj57.js                                    5.90 kB │ gzip:   2.45 kB
+.repro-output/a9-guarded-835e5/dist/assets/pair-panel-DyRXZhOo.js                                8.41 kB │ gzip:   3.71 kB
+.repro-output/a9-guarded-835e5/dist/assets/store-DqFMKMYi.js                                     8.98 kB │ gzip:   3.49 kB
+.repro-output/a9-guarded-835e5/dist/assets/data-panel-D0qgpkHA.js                                9.01 kB │ gzip:   3.69 kB
+.repro-output/a9-guarded-835e5/dist/assets/backup-view-I37Kq41o.js                               9.02 kB │ gzip:   3.91 kB
+.repro-output/a9-guarded-835e5/dist/assets/browser-pair-DJbMzPIe.js                             10.81 kB │ gzip:   3.85 kB
+.repro-output/a9-guarded-835e5/dist/assets/listening-Bg4TzGgm.js                                16.01 kB │ gzip:   5.87 kB
+.repro-output/a9-guarded-835e5/dist/assets/engine-BAT6QHsN.js                                   16.10 kB │ gzip:   6.03 kB
+.repro-output/a9-guarded-835e5/dist/assets/copy-yY9kyqvF.js                                     18.33 kB │ gzip:   6.90 kB
+.repro-output/a9-guarded-835e5/dist/assets/listening-BXM9emsG.js                                19.05 kB │ gzip:   7.03 kB
+.repro-output/a9-guarded-835e5/dist/assets/archive-Bcs1pIMZ.js                                  20.25 kB │ gzip:   8.45 kB
+.repro-output/a9-guarded-835e5/dist/assets/engine-DJNGzNN8.js                                   22.15 kB │ gzip:   7.49 kB
+.repro-output/a9-guarded-835e5/dist/assets/textbook-9u9iXuP4.js                                 23.37 kB │ gzip:   9.12 kB
+.repro-output/a9-guarded-835e5/dist/assets/view-CzWP2RDA.js                                     23.87 kB │ gzip:   9.02 kB
+.repro-output/a9-guarded-835e5/dist/assets/progress-mNhdDTSh.js                                 24.58 kB │ gzip:   9.30 kB
+.repro-output/a9-guarded-835e5/dist/assets/source-activities-C-u-PvZD.js                        32.56 kB │ gzip:   9.76 kB
+.repro-output/a9-guarded-835e5/dist/assets/textbook-ZthZsYNM.js                                 33.88 kB │ gzip:  12.80 kB
+.repro-output/a9-guarded-835e5/dist/assets/homework-Dt8uSywP.js                                 35.01 kB │ gzip:  10.65 kB
+.repro-output/a9-guarded-835e5/dist/assets/compatibility-f32bwKOb.js                            36.18 kB │ gzip:  13.00 kB
+.repro-output/a9-guarded-835e5/dist/assets/hanzi-C186eFG0.js                                    55.11 kB │ gzip:  18.43 kB
+.repro-output/a9-guarded-835e5/dist/assets/hsk2-lexicon-K822mAIa.js                             75.89 kB │ gzip:  10.34 kB
+.repro-output/a9-guarded-835e5/dist/assets/audio-segments-pilot-vPaBRnCF.js                    101.16 kB │ gzip:  11.25 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-04-BpJ1_h4u.js                               110.80 kB │ gzip:  22.08 kB
+.repro-output/a9-guarded-835e5/dist/assets/audio-segments-hsk2-lessons02-03-DhnzM86H.js        112.98 kB │ gzip:  13.28 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-01-Dvf3P_gy.js                               114.88 kB │ gzip:  23.67 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-07-CEJ2il4t.js                               117.94 kB │ gzip:  21.63 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-02-DA1x_4uz.js                               119.04 kB │ gzip:  24.02 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-13-2AOJndFF.js                               122.94 kB │ gzip:  25.75 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-08-C9cvqblF.js                               123.09 kB │ gzip:  24.50 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-10-WlLxaHx3.js                               123.12 kB │ gzip:  24.46 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-03-BAxkSQoP.js                               123.97 kB │ gzip:  25.02 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-14-CP3E91w6.js                               127.71 kB │ gzip:  26.09 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-11-6qDGNP_1.js                               128.58 kB │ gzip:  25.67 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-05-Cc6sCwM9.js                               133.88 kB │ gzip:  26.78 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-15-Bt9ELdZZ.js                               134.13 kB │ gzip:  27.80 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-12-DvJGY4wP.js                               135.34 kB │ gzip:  27.60 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-09-C28dsahb.js                               139.88 kB │ gzip:  28.10 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-06-CwcguEyw.js                               142.11 kB │ gzip:  27.32 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-01-zYhLI88r.js                               148.38 kB │ gzip:  31.37 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-16-DRtr0ny_.js                               149.33 kB │ gzip:  32.47 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-14-DzHhiC5r.js                               150.68 kB │ gzip:  30.87 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-13-DdIe_4T7.js                               152.05 kB │ gzip:  31.93 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-17-DbAfN_SL.js                               159.95 kB │ gzip:  32.78 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-04-jhWwL0K8.js                               169.18 kB │ gzip:  32.55 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-02-ipEgC2hZ.js                               169.52 kB │ gzip:  33.31 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-08-DAXOkXiZ.js                               170.19 kB │ gzip:  34.64 kB
+.repro-output/a9-guarded-835e5/dist/assets/hsk3-lexicon-BbvKIHAe.js                            172.94 kB │ gzip:  20.72 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-11-CKk1cQSV.js                               175.11 kB │ gzip:  34.06 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-10-Di7Ok1Wn.js                               175.68 kB │ gzip:  34.34 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-12-D2ecTnox.js                               181.15 kB │ gzip:  36.26 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-09-C9D0LE8o.js                               182.52 kB │ gzip:  35.30 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-05-MRwxRg8w.js                               183.89 kB │ gzip:  34.62 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-15-DBteB5yM.js                               185.54 kB │ gzip:  36.84 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-03-DZH3nHsV.js                               188.02 kB │ gzip:  35.75 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-18-ABRHRLqY.js                               189.42 kB │ gzip:  37.63 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-06-Cc4P3x8D.js                               192.91 kB │ gzip:  35.49 kB
+.repro-output/a9-guarded-835e5/dist/assets/lesson-07-Dq83Ixn2.js                               195.56 kB │ gzip:  36.16 kB
+.repro-output/a9-guarded-835e5/dist/assets/legacy-exercises-Bz3UuW2N.js                        326.82 kB │ gzip:  82.57 kB
+.repro-output/a9-guarded-835e5/dist/assets/index-DHIMbq_c.js                                   334.93 kB │ gzip:  81.97 kB
+.repro-output/a9-guarded-835e5/dist/assets/homework30-BVBKAbRf.js                              613.90 kB │ gzip: 135.38 kB
+.repro-output/a9-guarded-835e5/dist/assets/content-ChH95uYd.js                                 852.80 kB │ gzip: 144.56 kB
+
+✓ built in 1.82s
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+{
+  "source": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+  "mode": "checkpoint",
+  "output": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/unified-frozen-a9-guarded-835e5",
+  "files": 2777,
+  "lessons": 48,
+  "sourceSnapshotSHA256": "333f2b56eaee6e8f28a8b69c9a5b3c1c5e018a1273b5590191a21226da0146cd",
+  "buildProvenance": "built-from-recorded-worktree"
+}

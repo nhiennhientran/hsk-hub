@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "status": "accepted-full-private-clean-guarded-assembly-byte-scope-not-release",
+  "checkedAtUTC": "2026-10-04T19:33:18.704678+00:00",
+  "head": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+  "tree": "a80360230b94da2a40a83c405a6bc06ea2f155f3",
+  "actualAssembledFilesRehashed": 3894,
+  "actualAssembledBytes": 467225119,
+  "actualFrozenFilesRehashed": 2778,
+  "sourceSnapshotFiles": 1459,
+  "sourceSnapshotSHA256": "333f2b56eaee6e8f28a8b69c9a5b3c1c5e018a1273b5590191a21226da0146cd",
+  "sourceDirtyBeforeAndAfter": false,
+  "buildAndFreeze": "actual strict --build with unique input/output; no --allow-dirty",
+  "protected": {
+    "production": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
+    "actualGitBlobIdentityChecked": 1446,
+    "actualPublicBytesUnchanged": 1380,
+    "unservedDeveloperExclusions": 55,
+    "authorizedSlots": 11
+  },
+  "newManifestSHA256": "0325e75dfbb83144cdb8ae555edf0b02af0e682aae90d164f4ca0e4dc70edf94",
+  "newInventorySHA256": "edee969fa8f12d971014ee037305307ae72fb62d07735a25b8a38e1d30f2e49c",
+  "oldExactCI": {
+    "runId": 37226015769,
+    "head": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+    "identityRebound": false
+  },
+  "newVsOldManifestFieldsChanged": [
+    "sourceCommit",
+    "sourceSnapshot"
+  ],
+  "newVsOldAssembledFileBytesChanged": [
+    "course-engine/unified-release-manifest.json"
+  ],
+  "oldActualDownloadedConsumerBytesCompared": 142,
+  "newActual132CompiledAnd10HTMLExactOldBytes": true,
+  "sameActualClientAndAllOther3893FileDeclarations": true,
+  "sourceGuardExecution": "fresh package-unified and assemble-unified-checkpoint invoked actual current source registries, mandatory paths, original-media identity, glyph provenance/licenses, static bundle closure and protected Git baseline validation before output",
+  "limitations": [
+    "Native tests and independent source-input review are separately reported in this directory.",
+    "Old CI case identities remain on old head. Exact byte equivalence supplies reuse evidence; it is not a new236-case execution or WebKit run.",
+    "No production deployment or formal sixteen-stage release gate."
+  ]
+}

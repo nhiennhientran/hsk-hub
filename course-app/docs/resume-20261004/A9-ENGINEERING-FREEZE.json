@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-10-04T19:47:25.892937+00:00",
+  "status": "engineering-freeze-accepted-for-phase-B-with-explicit-release-UI-followups",
+  "sourceCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+  "sourceTree": "a80360230b94da2a40a83c405a6bc06ea2f155f3",
+  "durableRemoteCommit": "f2d3b6e52b24a85bb67f02b69bcc8685c7528403",
+  "durableRemoteBranch": "work/hsk-a9-guarded-checkpoint-20261004",
+  "exactTestedClient": {
+    "sourceCommit": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+    "tree": "e2c89f9c2029cec09d8a8bbb1315e9cd99ea225c",
+    "coreRun": 37226336569,
+    "coreAcceptedNativeCases": 872,
+    "supplementaryRun": 37226015769,
+    "supplementaryAcceptedNativeCases": 236,
+    "overlapIdentities": 12,
+    "individuallyReviewedFontOriginalPNGs": 68,
+    "additionalCoreVisualSamples": 10
+  },
+  "newGuardedPackage": {
+    "sourceInputs": 1459,
+    "sourceSnapshotSHA256": "333f2b56eaee6e8f28a8b69c9a5b3c1c5e018a1273b5590191a21226da0146cd",
+    "actualFilesRehashed": 3894,
+    "actualBytesRehashed": 467225119,
+    "manifestSHA256": "0325e75dfbb83144cdb8ae555edf0b02af0e682aae90d164f4ca0e4dc70edf94",
+    "inventorySHA256": "edee969fa8f12d971014ee037305307ae72fb62d07735a25b8a38e1d30f2e49c",
+    "clientBytesEqualToActualTestedCI": 142,
+    "onlyChangedPackagePath": "course-engine/unified-release-manifest.json",
+    "onlyChangedManifestFields": [
+      "sourceCommit",
+      "sourceSnapshot"
+    ],
+    "actualNewHTTPPassed": 1,
+    "actualNewBrowserLaunchBlocked": 8,
+    "actualNewWebKitExecution": false,
+    "oldCIReboundToNewSource": false
+  },
+  "inventory": {
+    "actualSourceFiles": 837,
+    "fieldTargetAppearances": 46463,
+    "actualSemanticConsumerIdentities": 4293,
+    "independentCoverageChecks": 16,
+    "officialVietnameseDecisionsStillPending": true
+  },
+  "independentlyFrozenArtifactsRootHashChecks": [
+    {
+      "freeze": "vi-inventory/final-freeze.json",
+      "sha256": "2e9a5d5fc2a06c5367382f997f35cfb1ffce87bd65ec25b4bdd8af058a4d9aba",
+      "verifiedEntries": 38
+    },
+    {
+      "freeze": "qa-vi-inventory/final-source-835e5bd4/freeze-manifest.json",
+      "sha256": "113dce716ccd8e32f5ceb7fa7e13e97443da02b31d5e237370be1dbc64c1e9b2",
+      "verifiedEntries": 9
+    }
+  ],
+  "releaseFollowups": [
+    {
+      "id": "UI-01",
+      "issue": "390px green navigation Vietnamese tail clipped",
+      "requiredBeforePublication": true
+    },
+    {
+      "id": "UI-02",
+      "issue": "Hidden-original state inline audio overlaps speaker labels on observed 1280 WebKit /390 Chromium",
+      "requiredBeforePublication": true
+    },
+    {
+      "id": "UI-03",
+      "issue": "Native closed select bilingual placeholder ellipsized in source editable tables",
+      "requiredBeforePublication": true
+    }
+  ],
+  "scopeLimits": [
+    "No new236/872 execution on835e; exact tested client bytes plus focused scope/input guard evidence justify this engineering checkpoint.",
+    "Source inventory coverage is not completed official-language semantic review.",
+    "Old HSK3 Chinese English appendix source remains unavailable; new official VI books remain available.",
+    "No human listening or physical-device certification.",
+    "Release readiness/postpublication gate cycle still pending C15 repair."
+  ],
+  "evidence": [
+    {
+      "file": "course-app/docs/resume-20261004/qa-a9-guarded-package/evidence-index.json",
+      "sha256": "2a77ca55bd04b1697a72bea5af4119abb1d288d331b6a19480d0db308b8902ce"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-a9-guarded-package/actual-full-byte-audit.json",
+      "sha256": "a4e278ed754bc034f28ab0ccabad06f1d98188755b2362f39f72d96887e12e30"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-flow-ci/core-37226336569/audit.json",
+      "sha256": "6ca45f53d56d84415bb143d54373d3fcf3b4e27ea80d6b451e8c6c015d35f31e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-flow-ci/core-37226336569/review.md",
+      "sha256": "441f623634178b121ff0ad61b78cd513279ae29b4b39a23f51b3dd7ca1271103"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-flow-ci/core-37226336569/visual-sample-review.json",
+      "sha256": "f62d915b546fb2b43f0acb56f87efb9e36b0c297c43d67ead883349f41845129"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-flow-ci/run-37226015769/portable-screen-map.json",
+      "sha256": "4926455be6fe5d1006763434d4cfe41d6aa898f832186c4704afd396ac4577cd"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-vi-inventory/final-source-835e5bd4/closure.json",
+      "sha256": "8371affc37c333e9dc23752dab77da2ba4230152915ad2bf610fd1aa70b0aab4"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/final-freeze.json",
+      "sha256": "2e9a5d5fc2a06c5367382f997f35cfb1ffce87bd65ec25b4bdd8af058a4d9aba"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-vi-inventory/final-source-835e5bd4/freeze-manifest.json",
+      "sha256": "113dce716ccd8e32f5ceb7fa7e13e97443da02b31d5e237370be1dbc64c1e9b2"
+    }
+  ],
+  "publicationApproved": false,
+  "productionPublished": false
+}

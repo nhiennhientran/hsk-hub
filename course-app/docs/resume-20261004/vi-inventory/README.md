@@ -1,13 +1,13 @@
 # 越南语运行内容清单与修订接入准备
 
-本目录只准备清单、复用关系和审核模板，没有改译文，没有开展三本教材的全量逐页审校。所有审核项均为 `pending-phase-B`。已按指定源码 HEAD `8dff803cc2f8d1956d5853ef40073c670e265cc0` / tree `422f45046960d6148075ee81d891f0569839441c` 生成 prepared 快照，生成时 837 个输入逐字节相等。随后工程负责人修复 `package-unified.mjs` 的音频/字形输入守卫，造成一项工具 drift；其余 836 输入未变。最终来源冻结须在该修复独立验证并提交后的新工程 HEAD 真实重跑，不能把 prepared 快照冒充当前工程基准。
+本目录只准备清单、复用关系和审核模板，没有改译文，没有开展三本教材的全量逐页审校。所有审核项均为 `pending-phase-B`。最终按工程源码 HEAD `835e5bd41045655cc2724ba2ba59235064ff92cf` / tree `a80360230b94da2a40a83c405a6bc06ea2f155f3` 真实重建，当前 HEAD 相同，837 个输入逐字节相等，18 项检查通过。旧 8dff prepared 快照、其后出现的一项 package 工具 drift、最终重跑前 SHA 全部另存；旧证据不再充当最终工程基准。
 
 ## 复跑与读取
 
 从仓库根目录运行：
 
 ```bash
-VI_SOURCE_REF=8dff803cc2f8d1956d5853ef40073c670e265cc0 node course-app/docs/resume-20261004/vi-inventory/build-inventory.mjs
+VI_SOURCE_REF=835e5bd41045655cc2724ba2ba59235064ff92cf node course-app/docs/resume-20261004/vi-inventory/build-inventory.mjs
 node course-app/docs/resume-20261004/vi-inventory/validate-inventory.mjs
 python course-app/docs/resume-20261004/vi-inventory/supplement-current-head-review.py
 ```
@@ -35,6 +35,8 @@ lesson4 = [r for r in learning if r['component'].startswith('hsk1-') and r['less
 | `supplement-svg-consumers.json` | 扩展前缺口的独立只读证据；当时 43073 行、367 输入和 412 SVG desc 缺项的原身份保留，不能再当最终计数 |
 | `supplement-ascii-truth-choice-gap.json` | 第一次扩展后还漏 89 个大写 Sai 的真实叶字段；失败记录保留，最终清单已补齐全部 186 个判断题选项/答案叶 |
 | `supplement-pilot-input-coverage.json` | 三课 1798 个字段出现、747 个带命名空间 owner 群组；语义 ID 与重复出现分开 |
+| `final-target-identities.json.gz` | 全部 46463 个字段目标的 recordId/semanticKey/源位置/value SHA，及4293个分类消费者身份；不代表教材语言已审 |
+| `supplement-before-final-rebuild-identities.json` | 覆盖旧生成物前16项完整SHA/字节/旧来源账，保留prepared阶段证据 |
 | `parse-failures.json` | JS/TS 解析或 gzip 解包失败；正常结果为空数组 |
 | `pilot-source-index.json` | 建议三课试点与官方 PDF 哈希、候选正文页索引；尚未审校 |
 | `pilot-audit-template.json.gz` | 三课逐项审核模板，教材原越南语、精确原页、判断、证据、修订接入都留空；尚未审校 |
@@ -43,7 +45,7 @@ lesson4 = [r for r in learning if r['component'].startswith('hsk1-') and r['less
 
 ## 范围与计数
 
-prepared 主清单是 **46463 个字段出现/静态候选、837 个实际输入文件**，生成时 18 项结构、原叶绑定和来源身份检查通过。原 43073 行清单的缺口已进入生成器：3 个外部 bank 增加 2978 个 VI 出现，SVG 增加 412 个 VI desc；实际 HSK3 分类的 POS 改动保持原字段身份。当前一项 package 工具 drift 另列，等待新工程 HEAD 最终重跑。未增加教材对标完成数。
+最终主清单是 **46463 个字段出现/静态候选、837 个实际输入文件**，18 项结构、原叶绑定和来源身份检查通过，918 个 HSK2/3 活动均记录真实 sourceColumnBinding，phantom sourceViews 为0。原 43073 行清单的缺口已进入生成器：3 个外部 bank 增加 2978 个 VI 出现，SVG 增加 412 个 VI desc；实际 HSK3 分类的 POS 改动保持原字段身份。旧一项工具 drift 已在新工程 HEAD 归零。未增加教材对标完成数。
 
 | 身份口径 | 数量 | 不能等同的口径 |
 |---|---:|---|

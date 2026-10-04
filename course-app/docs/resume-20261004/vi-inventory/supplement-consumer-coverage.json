@@ -1,6 +1,6 @@
 {
-  "requestedHEAD": "8dff803cc2f8d1956d5853ef40073c670e265cc0",
-  "status": "read-only-implementation-readiness-review-not-language-approval",
+  "requestedHEAD": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+  "status": "current-source-implementation-readiness-verified-not-language-approval",
   "priorVersionedDesign": "../vi-revision-design/freeze.json",
   "noProductionChanges": true,
   "issues": [
@@ -118,6 +118,172 @@
   "fullCoverageLimit": "Arbitrary saved/imported/learner-entered text is historical or user data, not a current static textbook owner. Preserve it and bypass active revision; the inventory is not a claim to enumerate or rewrite every possible imported string.",
   "unmappedHSK4Disposition": "H4-specific source rows carry editorial-no-uploaded-HSK4-book-counterpart; shared UI is editorial unless a precise HSK1/2/3 terminology source is later visually established.",
   "actualConsumerReadInputs": [
+    {
+      "file": "assets/lesson-practice.js",
+      "bytes": 12194,
+      "sha256": "afd3c2821eba75a839eca240c7b6926003509af66a69e5cd9887ba813dfef9a3",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "course-app/src/activity-history.ts",
+      "bytes": 2674,
+      "sha256": "7edeeacf227f030bcf5377f7f9b364c80c844e37dcc2843e37aa2197d7e1bc46",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "course-app/src/backup-view.ts",
+      "bytes": 12964,
+      "sha256": "c0da5580179d6aadbb1f22cd1679fa410cf31f413db20f7dd7020e5cd31a779b",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "bytes": 2186,
+      "sha256": "0388a6882b8db4065b56f92526ebfe4ff91d8d3abd8b50fc60086360c0c56f67",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "bytes": 40716,
+      "sha256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "course-app/src/lexicon.ts",
+      "bytes": 1341,
+      "sha256": "eea19bf5871009d76c7af075a53d737ecba9e5587696343407fd391c04dd73bf",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "bytes": 11701,
+      "sha256": "3c7384db55bf7fba043c76e3ff8120a278f576fec4310a836a1fdfcb9d4a8050",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "bytes": 61910,
+      "sha256": "9f0309622e30f4362132ddfa381b18494de99df3761ae609cd5c60b9bbaa928d",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "course-app/src/state.ts",
+      "bytes": 12140,
+      "sha256": "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "course-app/tools/package-unified.mjs",
+      "bytes": 12694,
+      "sha256": "efc2e61e946eb6a53ab2a59e099b0dc349079ea9c4ab4c237fe09da99334976b",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1-app/src/domain/types.ts",
+      "bytes": 1906,
+      "sha256": "d4dc9527486957232967eb7fd2fc393481560061474cfc753306f154fe7c7601",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1-app/src/domain/vocabulary/mixed-state.ts",
+      "bytes": 6532,
+      "sha256": "763a4a30a5eccad4c0d1cc25d743f1d14af013f4235868a398e57b91254f11ac",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive-data.ts",
+      "bytes": 3876,
+      "sha256": "ddc94ee93ca6235b942769d7876be757d0c171946546c91e7b9cdd86128e9fac",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive.ts",
+      "bytes": 13893,
+      "sha256": "3ce482e147eccf909fd7ec81b42d2cb4b3f0bd740209cd9549416df2d03fdbaf",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/receipt.ts",
+      "bytes": 6262,
+      "sha256": "181c78deff63c6b2a9414b57fb8d229a93ac6d3d58e7511dc32e6a41dab7f0be",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1-app/src/features/listening/index.ts",
+      "bytes": 23495,
+      "sha256": "9536ff2bb6e3a09f2f9f7acfdb72d465d81e984919edcda528f65c4cfaa627e9",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1-app/src/features/source-activities/index.ts",
+      "bytes": 19762,
+      "sha256": "75982f634a8969ff8faf90e15593c33c551e0edde325c3e5d07c921a498d9d1f",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1-app/src/services/content/listening.ts",
+      "bytes": 11903,
+      "sha256": "f3e141a36d98ad7abf1576c5fc4f267a81a696b3f3c98b5708ecfc4c60d344e1",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1-app/src/services/content/vocabulary.ts",
+      "bytes": 17105,
+      "sha256": "11285cbb3907225e79413ab0a902602935b16e312ea7bee9eaaccdb825bd8cbe",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/state.ts",
+      "bytes": 10025,
+      "sha256": "7678c98fa0d2a53d335971de3f8c9e0346d19d732ac734b99e8191443ac9c34a",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1-app/src/services/storage/compatibility.ts",
+      "bytes": 43416,
+      "sha256": "ce624cc1b417586aea6d6c674608d890ff5483652d5e742eb072392cde3cff6f",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk1/app-practice.js",
+      "bytes": 9176,
+      "sha256": "84a0cd6063facef50e06f92c1dbe2e4128d126495816565a0143827450f33b4d",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    },
+    {
+      "file": "hsk3/app-practice.js",
+      "bytes": 9416,
+      "sha256": "141b1c35ffba3ab9dde5f5bd3fce82ca84c5b645f5518b929626f67118300b67",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "actual source bytes verified against current source HEAD"
+    }
+  ],
+  "workingDriftObserved": [],
+  "previousPreparedSourceHEAD": "8dff803cc2f8d1956d5853ef40073c670e265cc0",
+  "sourceTree": "a80360230b94da2a40a83c405a6bc06ea2f155f3",
+  "previousPreparedConsumerReadInputs": [
     {
       "file": "assets/lesson-practice.js",
       "bytes": 12194,
@@ -300,16 +466,6 @@
       "sourceSHA256": "141b1c35ffba3ab9dde5f5bd3fce82ca84c5b645f5518b929626f67118300b67",
       "workingSHA256": "141b1c35ffba3ab9dde5f5bd3fce82ca84c5b645f5518b929626f67118300b67",
       "workingMatchesRequestedHEAD": true,
-      "readOrigin": "requested-HEAD git blob"
-    }
-  ],
-  "workingDriftObserved": [
-    {
-      "file": "course-app/tools/package-unified.mjs",
-      "bytes": 12485,
-      "sourceSHA256": "acd9c9b664104bd9311dc624c1769d3a0f8c05546cc831aa2e270bddc6983a34",
-      "workingSHA256": "efc2e61e946eb6a53ab2a59e099b0dc349079ea9c4ab4c237fe09da99334976b",
-      "workingMatchesRequestedHEAD": false,
       "readOrigin": "requested-HEAD git blob"
     }
   ]
