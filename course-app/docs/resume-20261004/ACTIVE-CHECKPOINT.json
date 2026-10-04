@@ -1,14 +1,15 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-04T19:47:25.894035+00:00",
+  "updatedAt": "2026-10-04T20:30:07.608664+00:00",
   "status": "running",
   "authorization": "2026-10-04T23:09:46+08:00; autonomous execution; confirmation before production publication",
   "branch": "work/hsk-autonomous-execution-20261004",
-  "lastVerifiedRemoteCommit": "f2d3b6e52b24a85bb67f02b69bcc8685c7528403",
+  "lastVerifiedRemoteCommit": "63c30de05e3933b9cae50b083d3cb883def3a0a2",
   "sourceBaseline": "387aa7b6145e80f983f331d8b55cd2b2b26d6990",
   "phase": "B",
   "currentSteps": [
-    10
+    10,
+    12
   ],
   "protectedHsk1Files": {
     "textbook.json": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
@@ -118,5 +119,15 @@
     "sha256": "2fc85f5440507cc0c74de7099d75802bdf300e4cb67ca95c55002fb5109fdeaa",
     "sourceCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
     "status": "engineering-freeze-accepted-for-phase-B-with-explicit-release-UI-followups"
-  }
+  },
+  "latestCheckpoint": "B10-SOURCE-CHECKPOINT.json",
+  "nextActions": [
+    "Finish independently reviewed adapters and run actual Chromium/WebKit CI",
+    "Rebuild actual source VI inventory with AST repair",
+    "Review source-to-consumer pilot proposals and compile only accepted display revisions",
+    "Continue 48 lessons and shared/legacy/assets/errata scopes",
+    "Complete exact final regression and prepare publication candidate"
+  ],
+  "formalWebsiteVIAlignmentAccepted": 0,
+  "activeOfficialVIRegistries": 0
 }

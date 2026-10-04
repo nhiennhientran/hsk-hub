@@ -1,0 +1,1113 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "qa_hsk1_05_08",
+  "reviewedAtUTC": "2026-10-04T19:51:48.849973+00:00",
+  "status": "independent-full-official-source-transcription-accepted",
+  "reviewKind": "source transcription only; website comparison and activation are separate",
+  "input": {
+    "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l02/source-transcription.json",
+    "sha256": "6c911ccfa8bc58ba8e4d16f03f285a9c1c29ec34572450a1fccf70f9ad3c1d8d",
+    "bytes": 42846,
+    "sourceIdCount": 104,
+    "sourceIdSetSHA256": "df4b587228ace2803bbd07073a512ba57baa6445c43d8ce8cca26163450215ba"
+  },
+  "previousReview": {
+    "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l02-independent/review.json",
+    "sha256": "de65a679c8c8c1d87a074102637273ff46f76c0c0c18d11ad900445a1ca771c2",
+    "acceptedSourceIdCount": 102,
+    "repairRequiredSourceIdCount": 2,
+    "preservedUnchanged": true
+  },
+  "exactInputDiff": [
+    {
+      "pointer": "$.records[4].viPrinted",
+      "old": "Có thể hiểu và sử dụng được “多” để diễn đạt số ước lượng.",
+      "new": "Có thể nghe hiểu và sử dụng được “多” để diễn đạt số ước lượng."
+    },
+    {
+      "pointer": "$.records[60].zhAnchor",
+      "old": "是网上说的，网上还说北京大学有三千多名外国学生呢。",
+      "new": "是网上说的，网上还说北京大学有三千多名外国学生。"
+    }
+  ],
+  "repairedSourceFindings": [
+    {
+      "id": "F1",
+      "sourceId": "hsk2-official-vi:l02:p010:goal2",
+      "field": "viPrinted",
+      "expectedOriginalCandidate": "Có thể hiểu và sử dụng được “多” để diễn đạt số ước lượng.",
+      "requiredSourceTranscription": "Có thể nghe hiểu và sử dụng được “多” để diễn đạt số ước lượng.",
+      "reason": "Actual printed Vietnamese includes nghe. Confirmed from unchanged original PDF at 6x, not inferred from Chinese.",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "evidenceCrop": "pdf024-goal2-original-crop-6x.png",
+      "evidenceCropSHA256": "7b844bc9eb223b1961f07424b412eba9efeb294f1c296d62ab317424d8604a84",
+      "displayPageRectClip": [
+        85,
+        235,
+        515,
+        282
+      ],
+      "decision": "accepted-source-repair",
+      "actualFinalValue": "Có thể nghe hiểu và sử dụng được “多” để diễn đạt số ước lượng."
+    },
+    {
+      "id": "F2",
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line4",
+      "field": "zhAnchor",
+      "expectedOriginalCandidate": "是网上说的，网上还说北京大学有三千多名外国学生呢。",
+      "requiredSourceTranscription": "是网上说的，网上还说北京大学有三千多名外国学生。",
+      "reason": "Printed Chinese and Pinyin bubble end after 学生/xuéshēng; no 呢. Vietnamese/full speaker text is already correct.",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "evidenceCrop": "pdf027-text2-line4-original-crop-6x.png",
+      "evidenceCropSHA256": "1d5293468d4e1f70752e2ef33af4fa8d684292eefcfb9bd65686966df89c06ef",
+      "displayPageRectClip": [
+        98,
+        252,
+        265,
+        371
+      ],
+      "decision": "accepted-source-repair",
+      "actualFinalValue": "是网上说的，网上还说北京大学有三千多名外国学生。"
+    }
+  ],
+  "officialSource": {
+    "file": "HSK2 ( 3.0).pdf",
+    "localPath": "/workspace/scratch/28b55072841a/upload/HSK2 ( 3.0).pdf",
+    "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+    "actualHashRechecked": true,
+    "pdfPages": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "printedPagesVisuallyRead": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "CropBoxAndRotationPreserved": true
+  },
+  "pageEvidence": {
+    "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l02-independent/source-page-evidence.json",
+    "sha256": "69bb1b4678ebf40b3a315f16cfe81bc45e197b855532a3ccc842b5e670c2a4b3",
+    "wholePagesVisuallyViewed": 9,
+    "detailCropsVisuallyViewed": 7,
+    "OCRUsed": false
+  },
+  "coverage": {
+    "wholePagesVisuallyViewed": 9,
+    "sourceIdsIndependentlyReviewed": 104,
+    "sourceIdsAccepted": 104,
+    "sourceIdsRequiringSourceRepair": 0,
+    "sourceRepairFields": 2,
+    "extraVietnameseUnitsObservedMissingFromInput": 0,
+    "ordinaryPrintedVocabularyRows": 16,
+    "properNounRows": 1,
+    "roleTranslationLines": 18,
+    "text4WholeParagraphs": 1,
+    "grammarBodyParagraphs": 3,
+    "highResolutionOriginalPdfCropsActuallyViewed": 7,
+    "decodedPreflightRgbRasterMatchesOriginalPDF": 9,
+    "OCRUsed": false,
+    "sourceRepairFieldsResolved": 2
+  },
+  "acceptedSourceIds": [
+    "hsk2-official-vi:l02:p010:lesson-label",
+    "hsk2-official-vi:l02:p010:title",
+    "hsk2-official-vi:l02:p010:goals-heading",
+    "hsk2-official-vi:l02:p010:goal1",
+    "hsk2-official-vi:l02:p010:goal2",
+    "hsk2-official-vi:l02:p010:goal3",
+    "hsk2-official-vi:l02:p010:goal4",
+    "hsk2-official-vi:l02:p010:warmup-heading",
+    "hsk2-official-vi:l02:p010:warmup1-instruction",
+    "hsk2-official-vi:l02:p010:warmup2-instruction",
+    "hsk2-official-vi:l02:p010:warmup2-column1",
+    "hsk2-official-vi:l02:p010:warmup2-column2",
+    "hsk2-official-vi:l02:p010:warmup2-column3",
+    "hsk2-official-vi:l02:p011:running-lesson-label",
+    "hsk2-official-vi:l02:p013:running-lesson-label",
+    "hsk2-official-vi:l02:p015:running-lesson-label",
+    "hsk2-official-vi:l02:p017:running-lesson-label",
+    "hsk2-official-vi:l02:p012:running-book-label",
+    "hsk2-official-vi:l02:p014:running-book-label",
+    "hsk2-official-vi:l02:p016:running-book-label",
+    "hsk2-official-vi:l02:p018:running-book-label",
+    "hsk2-official-vi:l02:p011:text1-heading",
+    "hsk2-official-vi:l02:p011:text1-setup",
+    "hsk2-official-vi:l02:p011:text1-listen-instruction",
+    "hsk2-official-vi:l02:p011:text1-vocabulary-heading",
+    "hsk2-official-vi:l02:p011:word01",
+    "hsk2-official-vi:l02:p011:word02",
+    "hsk2-official-vi:l02:p011:word03",
+    "hsk2-official-vi:l02:p011:word04",
+    "hsk2-official-vi:l02:p011:word05",
+    "hsk2-official-vi:l02:p011:word06",
+    "hsk2-official-vi:l02:p011:proper-nouns-heading",
+    "hsk2-official-vi:l02:p011:proper-noun1",
+    "hsk2-official-vi:l02:p011:support-heading",
+    "hsk2-official-vi:l02:p011:support-好",
+    "hsk2-official-vi:l02:p012:text1-line1",
+    "hsk2-official-vi:l02:p012:text1-line2",
+    "hsk2-official-vi:l02:p012:text1-line3",
+    "hsk2-official-vi:l02:p012:text1-line4",
+    "hsk2-official-vi:l02:p012:text1-line5",
+    "hsk2-official-vi:l02:p012:text1-line6",
+    "hsk2-official-vi:l02:p012:text1-role-instruction",
+    "hsk2-official-vi:l02:p012:grammar-heading",
+    "hsk2-official-vi:l02:p012:grammar1-title",
+    "hsk2-official-vi:l02:p012:grammar1-body",
+    "hsk2-official-vi:l02:p012:grammar1-completion-instruction",
+    "hsk2-official-vi:l02:p012:text2-heading",
+    "hsk2-official-vi:l02:p012:text2-setup",
+    "hsk2-official-vi:l02:p012:text2-listen-instruction",
+    "hsk2-official-vi:l02:p013:text2-vocabulary-heading",
+    "hsk2-official-vi:l02:p013:word07",
+    "hsk2-official-vi:l02:p013:word08",
+    "hsk2-official-vi:l02:p013:word09",
+    "hsk2-official-vi:l02:p013:word10",
+    "hsk2-official-vi:l02:p013:word11",
+    "hsk2-official-vi:l02:p013:word12",
+    "hsk2-official-vi:l02:p013:word13",
+    "hsk2-official-vi:l02:p013:text2-line1",
+    "hsk2-official-vi:l02:p013:text2-line2",
+    "hsk2-official-vi:l02:p013:text2-line3",
+    "hsk2-official-vi:l02:p013:text2-line4",
+    "hsk2-official-vi:l02:p013:text2-line5",
+    "hsk2-official-vi:l02:p013:text2-line6",
+    "hsk2-official-vi:l02:p013:text2-role-instruction",
+    "hsk2-official-vi:l02:p014:grammar-heading",
+    "hsk2-official-vi:l02:p014:grammar2-title",
+    "hsk2-official-vi:l02:p014:grammar2-body",
+    "hsk2-official-vi:l02:p014:grammar2-completion-instruction",
+    "hsk2-official-vi:l02:p014:text3-heading",
+    "hsk2-official-vi:l02:p014:text3-setup",
+    "hsk2-official-vi:l02:p014:text3-listen-instruction",
+    "hsk2-official-vi:l02:p015:text3-photo-caption",
+    "hsk2-official-vi:l02:p015:support-heading",
+    "hsk2-official-vi:l02:p015:support-天啊-到",
+    "hsk2-official-vi:l02:p015:text3-vocabulary-heading",
+    "hsk2-official-vi:l02:p015:word14",
+    "hsk2-official-vi:l02:p015:word15",
+    "hsk2-official-vi:l02:p015:text3-line1",
+    "hsk2-official-vi:l02:p015:text3-line2",
+    "hsk2-official-vi:l02:p015:text3-line3",
+    "hsk2-official-vi:l02:p015:text3-line4",
+    "hsk2-official-vi:l02:p015:text3-line5",
+    "hsk2-official-vi:l02:p015:text3-line6",
+    "hsk2-official-vi:l02:p015:text3-role-instruction",
+    "hsk2-official-vi:l02:p015:grammar-heading",
+    "hsk2-official-vi:l02:p015:grammar3-title",
+    "hsk2-official-vi:l02:p016:grammar3-body",
+    "hsk2-official-vi:l02:p016:grammar3-completion-instruction",
+    "hsk2-official-vi:l02:p016:text4-heading",
+    "hsk2-official-vi:l02:p016:text4-setup",
+    "hsk2-official-vi:l02:p016:text4-listen-instruction",
+    "hsk2-official-vi:l02:p016:text4-vocabulary-heading",
+    "hsk2-official-vi:l02:p016:word16",
+    "hsk2-official-vi:l02:p016:text4-paragraph",
+    "hsk2-official-vi:l02:p017:text4-read-instruction",
+    "hsk2-official-vi:l02:p017:integrated-heading",
+    "hsk2-official-vi:l02:p017:integrated1-instruction",
+    "hsk2-official-vi:l02:p017:integrated2-instruction",
+    "hsk2-official-vi:l02:p018:classroom-heading",
+    "hsk2-official-vi:l02:p018:roleplay-label",
+    "hsk2-official-vi:l02:p018:roleplay-instruction",
+    "hsk2-official-vi:l02:p018:roleplay-example-label",
+    "hsk2-official-vi:l02:p018:bonus-heading",
+    "hsk2-official-vi:l02:p018:bonus-video-caption"
+  ],
+  "records": [
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:lesson-label",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "lesson-label",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:title",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "title",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:goals-heading",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "goals-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:goal1",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "goal1",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:goal2",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "goal2",
+      "decision": "accepted",
+      "basis": "original PDF 6x crop and exact repair verified"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:goal3",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "goal3",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:goal4",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "goal4",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup-heading",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup1-instruction",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup1-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup2-instruction",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup2-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup2-column1",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup2-column1",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup2-column2",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup2-column2",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup2-column3",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup2-column3",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:running-lesson-label",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "running-lesson-label",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:running-lesson-label",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "running-lesson-label",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:running-lesson-label",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "running-lesson-label",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p017:running-lesson-label",
+      "pdfPage": 31,
+      "printedPage": 17,
+      "section": "running-lesson-label",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:running-book-label",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "running-book-label",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:running-book-label",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "running-book-label",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:running-book-label",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "running-book-label",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:running-book-label",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "running-book-label",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:text1-heading",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "text1-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:text1-setup",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "text1-setup",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:text1-listen-instruction",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "text1-listen-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:text1-vocabulary-heading",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "text1-vocabulary-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word01",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word01",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word02",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word02",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word03",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word03",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word04",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word04",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word05",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word05",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word06",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word06",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:proper-nouns-heading",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "proper-nouns-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:proper-noun1",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "proper-noun1",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:support-heading",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "support-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:support-好",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "support-好",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line1",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line1",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line2",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line2",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line3",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line3",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line4",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line4",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line5",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line5",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line6",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line6",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-role-instruction",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-role-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:grammar-heading",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "grammar-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:grammar1-title",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "grammar1-title",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:grammar1-body",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "grammar1-body",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:grammar1-completion-instruction",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "grammar1-completion-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text2-heading",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text2-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text2-setup",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text2-setup",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text2-listen-instruction",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text2-listen-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-vocabulary-heading",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-vocabulary-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word07",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word07",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word08",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word08",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word09",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word09",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word10",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word10",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word11",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word11",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word12",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word12",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word13",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word13",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line1",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line1",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line2",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line2",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line3",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line3",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line4",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line4",
+      "decision": "accepted",
+      "basis": "original PDF 6x crop and exact repair verified"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line5",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line5",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line6",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line6",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-role-instruction",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-role-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:grammar-heading",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "grammar-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:grammar2-title",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "grammar2-title",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:grammar2-body",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "grammar2-body",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:grammar2-completion-instruction",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "grammar2-completion-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:text3-heading",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "text3-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:text3-setup",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "text3-setup",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:text3-listen-instruction",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "text3-listen-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-photo-caption",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-photo-caption",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:support-heading",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "support-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:support-天啊-到",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "support-天啊-到",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-vocabulary-heading",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-vocabulary-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:word14",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "word14",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:word15",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "word15",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line1",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line1",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line2",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line2",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line3",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line3",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line4",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line4",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line5",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line5",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line6",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line6",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-role-instruction",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-role-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:grammar-heading",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "grammar-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:grammar3-title",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "grammar3-title",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:grammar3-body",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "grammar3-body",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:grammar3-completion-instruction",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "grammar3-completion-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-heading",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "text4-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-setup",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "text4-setup",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-listen-instruction",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "text4-listen-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-vocabulary-heading",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "text4-vocabulary-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:word16",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "word16",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-paragraph",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "text4-paragraph",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p017:text4-read-instruction",
+      "pdfPage": 31,
+      "printedPage": 17,
+      "section": "text4-read-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p017:integrated-heading",
+      "pdfPage": 31,
+      "printedPage": 17,
+      "section": "integrated-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p017:integrated1-instruction",
+      "pdfPage": 31,
+      "printedPage": 17,
+      "section": "integrated1-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p017:integrated2-instruction",
+      "pdfPage": 31,
+      "printedPage": 17,
+      "section": "integrated2-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:classroom-heading",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "classroom-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:roleplay-label",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "roleplay-label",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:roleplay-instruction",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "roleplay-instruction",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:roleplay-example-label",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "roleplay-example-label",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:bonus-heading",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "bonus-heading",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:bonus-video-caption",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "bonus-video-caption",
+      "decision": "accepted",
+      "basis": "previous independent full-page review"
+    }
+  ],
+  "verifiedSpecialCases": [
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:grammar3-body",
+      "status": "source-accepted-cross-page-span-confirmed",
+      "viPage": {
+        "printed": 16,
+        "pdf": 30
+      },
+      "chineseAnchorPage": {
+        "printed": 15,
+        "pdf": 29
+      },
+      "sourceCandidateHasCorrectZhAnchorPrintedPage": true,
+      "optionalMetadataRecommendation": {
+        "field": "zhAnchorPDFPage",
+        "value": 29
+      },
+      "note": "Keep vi actual page and explicit Chinese page span; do not flatten both to either source page."
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-paragraph",
+      "status": "source-accepted-whole-paragraph",
+      "speakerPrinted": false,
+      "wholeParagraphPreserved": true,
+      "numbersPreserved": "40 000",
+      "sentenceOrWebsiteLineMappingAccepted": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word09",
+      "status": "source-accepted-multi-pos-raw-row",
+      "rawPrintedPosLabels": [
+        "lượng.",
+        "dt."
+      ],
+      "rawLabelLayout": "lượng./dt.",
+      "websiteSenseMappingAccepted": false
+    }
+  ],
+  "boundaries": [
+    "This accepts the Vietnamese source transcription from the uploaded official Vietnamese edition only.",
+    "It does not claim old Chinese-edition PDF hash/pages were reread.",
+    "104 source occurrences are not a count or completion rate of website consumers.",
+    "Website old/new matching, editorial translations, canonical reuse, images and history/version gates are reviewed separately.",
+    "No runtime/raw textbook/lexicon/scoring or deployment mutation."
+  ]
+}

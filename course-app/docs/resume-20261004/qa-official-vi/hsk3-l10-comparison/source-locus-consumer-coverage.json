@@ -1,0 +1,3444 @@
+[
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn01",
+    "role": "lesson-number",
+    "sourceVietnamese": "Bài 10",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/6/expression/arguments/0/arguments/1/arguments/1",
+        "targetRecordId": "1ea8b7af59777839287bc3ff",
+        "decision": "match-normalized-heading-style",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn02",
+    "role": "lesson-title",
+    "sourceVietnamese": "Ngày mai em trả lại sách cho cô nhé",
+    "consumerCount": 3,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/title/vi",
+        "astPointer": null,
+        "targetRecordId": "f0376568ea4fca10a5c075aa",
+        "decision": "official-wording-variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammar/2/examples/0/vi",
+        "astPointer": null,
+        "targetRecordId": "96c09ca4a5aaf5b2f3650514",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/course-index.json",
+        "field": "/24/title/vi",
+        "astPointer": null,
+        "targetRecordId": "9665b5772db66db90ada6cbd",
+        "decision": "official-wording-variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn03",
+    "role": "section-heading",
+    "sourceVietnamese": "Mục tiêu",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn04",
+    "role": "objective",
+    "sourceVietnamese": "Có thể nghe hiểu và giới thiệu được tình hình học tập và thi cử.",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/objectives/0/vi",
+        "astPointer": null,
+        "targetRecordId": "1b8ce9a976fc067b15537618",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/0/fields/0/prompt/vi",
+        "astPointer": null,
+        "targetRecordId": "bc52d7f74bb8c36f97768a09",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn05",
+    "role": "objective",
+    "sourceVietnamese": "Có thể nghe hiểu và thảo luận được những vấn đề gặp phải trong học tập, trao đổi phương pháp học.",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/objectives/1/vi",
+        "astPointer": null,
+        "targetRecordId": "b838a7dcc39ae3c4500093cc",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/0/fields/1/prompt/vi",
+        "astPointer": null,
+        "targetRecordId": "de329bff7dc92e017a8424c6",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn06",
+    "role": "objective",
+    "sourceVietnamese": "Nắm vững cách dùng câu chữ “把” (1) để miêu tả được sự thay đổi vị trí của sự vật.",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/objectives/2/vi",
+        "astPointer": null,
+        "targetRecordId": "6ebd077b5ad66af2abeda0a6",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/0/fields/2/prompt/vi",
+        "astPointer": null,
+        "targetRecordId": "48f2e9ccc2f9cc9dacc3a7b0",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn07",
+    "role": "objective",
+    "sourceVietnamese": "Hiểu về hệ thống giáo dục và chế độ lên lớp của Trung Quốc.",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/objectives/3/vi",
+        "astPointer": null,
+        "targetRecordId": "c0b5e8ba5b851d3688d9d920",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/0/fields/3/prompt/vi",
+        "astPointer": null,
+        "targetRecordId": "6ca16605fcb238c7df77a576",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn08",
+    "role": "section-heading",
+    "sourceVietnamese": "Khởi động",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn09",
+    "role": "instruction",
+    "sourceVietnamese": "Lựa chọn hình ảnh tương ứng với các từ ngữ sau.",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/warmup/0/title/vi",
+        "astPointer": null,
+        "targetRecordId": "722893e9c41abd4300f88511",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/1/title/vi",
+        "astPointer": null,
+        "targetRecordId": "814ada338194927f9418541d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn10",
+    "role": "instruction",
+    "sourceVietnamese": "Hai người một nhóm, tiến hành hội thoại theo tình huống thực tế.",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/warmup/1/title/vi",
+        "astPointer": null,
+        "targetRecordId": "5940427c844ae7078feb65dc",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/2/title/vi",
+        "astPointer": null,
+        "targetRecordId": "b92a70d71cb2567f1c142b25",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn11",
+    "role": "prompt",
+    "sourceVietnamese": "Khi lên lớp học, bạn có ghi chép không? Bạn thường ghi những gì?",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/warmup/1/items/0/vi",
+        "astPointer": null,
+        "targetRecordId": "d61322f320cf4e2ad6d3b52a",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/2/fields/0/prompt/vi",
+        "astPointer": null,
+        "targetRecordId": "7479b1aadb79c4109280dc1d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf98:vn12",
+    "role": "prompt",
+    "sourceVietnamese": "Khi làm bài tập ở nhà gặp bài không biết làm, bạn sẽ làm thế nào?",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/warmup/1/items/1/vi",
+        "astPointer": null,
+        "targetRecordId": "5d3fd97fa96372bf1c07f8c3",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/2/fields/1/prompt/vi",
+        "astPointer": null,
+        "targetRecordId": "70dbd12855fcc9ff6ffacac0",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn01",
+    "role": "running-header",
+    "sourceVietnamese": "Bài 10",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/6/expression/arguments/0/arguments/1/arguments/1",
+        "targetRecordId": "1ea8b7af59777839287bc3ff",
+        "decision": "match-normalized-heading-style",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn02",
+    "role": "section-heading",
+    "sourceVietnamese": "Bài khoá 1",
+    "consumerCount": 6,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/0/title/vi",
+        "astPointer": null,
+        "targetRecordId": "a7b9a27a6bd92192a743b4b8",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/3/title/vi",
+        "astPointer": null,
+        "targetRecordId": "e3e499b8f8548f2c12755975",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed scene heading prefix; after-listening/reading activity label is editorial."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/4/title/vi",
+        "astPointer": null,
+        "targetRecordId": "28fe67280461cc9f015b5064",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed scene heading prefix; after-listening/reading activity label is editorial."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/10/declarations/0/init/elements/2/elements/1/arguments/1",
+        "targetRecordId": "e0082d6c279282ebaeff0314",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/2/body/body/0/declarations/0/init/arguments/0/arguments/1",
+        "targetRecordId": "f14105e023cc4c38f94691dc",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/5/expression/arguments/0/arguments/1/consequent/arguments/1",
+        "targetRecordId": "6a081c714ccc254d87499350",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn03",
+    "role": "scene-context",
+    "sourceVietnamese": "Lưu Tiểu Tuyết trò chuyện với bạn học về phương pháp học tập ở trong lớp học.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/0/context/vi",
+        "astPointer": null,
+        "targetRecordId": "3e526d6109a0ac41fad7c1e4",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn04",
+    "role": "listening-instruction",
+    "sourceVietnamese": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/3/note/vi",
+        "astPointer": null,
+        "targetRecordId": "058ff289e007feac56cf4a67",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn05",
+    "role": "section-heading",
+    "sourceVietnamese": "Từ mới",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn06",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "môn Toán, toán học",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/0/vi",
+        "astPointer": null,
+        "targetRecordId": "4e5568b5d28a379c50cd3c8d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/0/pos",
+        "astPointer": null,
+        "targetRecordId": "d5a9fad8d646709c175ecc01",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/0/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word01",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/265/vi",
+        "astPointer": null,
+        "targetRecordId": "1442a260bbf1008bda0308ed",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/265/pos",
+        "astPointer": null,
+        "targetRecordId": "41a34db387870417ef72c615",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn07",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "chăm chỉ, nghiêm túc",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/1/vi",
+        "astPointer": null,
+        "targetRecordId": "ae0178034d10e97766cb55da",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/1/pos",
+        "astPointer": null,
+        "targetRecordId": "1c0169d8fa0aeb8ab62360d6",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/1/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word02",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/266/vi",
+        "astPointer": null,
+        "targetRecordId": "be1d82f79ef7197aa60083dc",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/266/pos",
+        "astPointer": null,
+        "targetRecordId": "3e3d1f81e063bbfd35ca60ba",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn08",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "ghi chép",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/2/vi",
+        "astPointer": null,
+        "targetRecordId": "14863b5979ce17eebe7c5ee7",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/2/pos",
+        "astPointer": null,
+        "targetRecordId": "c369c8e618d8314276e4ab60",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/2/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word03",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/267/vi",
+        "astPointer": null,
+        "targetRecordId": "7ca1fe2d486dc71a81310ee5",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/267/pos",
+        "astPointer": null,
+        "targetRecordId": "4b3b7314c5cc69c6df0c34ff",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn09",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "rõ ràng, hiểu rõ",
+    "consumerCount": 10,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/3/vi",
+        "astPointer": null,
+        "targetRecordId": "b901fa017ae71ee5b17facea",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/4/vi",
+        "astPointer": null,
+        "targetRecordId": "36dfb53138bb497837f746dd",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/3/pos",
+        "astPointer": null,
+        "targetRecordId": "47b20f000b1f024dd18c9879",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/3/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word04",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/4/pos",
+        "astPointer": null,
+        "targetRecordId": "40f3a6b9f975a1ffaae8321d",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/4/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word05",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/268/vi",
+        "astPointer": null,
+        "targetRecordId": "530c42c7c4c3d2e63a161861",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/268/pos",
+        "astPointer": null,
+        "targetRecordId": "469ab7f4acf19234ecf3f63c",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/269/vi",
+        "astPointer": null,
+        "targetRecordId": "385de80c8977bc9f8a3453f0",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/269/pos",
+        "astPointer": null,
+        "targetRecordId": "c211b895b721ab8891447430",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn10",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "bảng đen",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/5/vi",
+        "astPointer": null,
+        "targetRecordId": "7d82bf2a550a703d6fb337a3",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/5/pos",
+        "astPointer": null,
+        "targetRecordId": "a064432dee37090c0af30592",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/5/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word06",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/270/vi",
+        "astPointer": null,
+        "targetRecordId": "d65c6c1275650cbce1af423f",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/270/pos",
+        "astPointer": null,
+        "targetRecordId": "a83bf2f6112f6a3a0311d13d",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn11",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "dùng để đưa tân ngữ của động từ lên trước động từ",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/6/vi",
+        "astPointer": null,
+        "targetRecordId": "573382cdc66da9818b043d96",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/6/pos",
+        "astPointer": null,
+        "targetRecordId": "05a00b8effca3d4423ca347c",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/6/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word07",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/271/vi",
+        "astPointer": null,
+        "targetRecordId": "a8c0ba2fd94058d41c0adfa6",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/271/pos",
+        "astPointer": null,
+        "targetRecordId": "a163b7e6bb0e4cfdea03e162",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn12",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "bài tập về nhà",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/7/vi",
+        "astPointer": null,
+        "targetRecordId": "b05f74de376d6d7c588c3b70",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/7/pos",
+        "astPointer": null,
+        "targetRecordId": "eaf9ce75ac5cccd3ccd41aa3",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/7/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word08",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/272/vi",
+        "astPointer": null,
+        "targetRecordId": "f5253180dc9079ce98555d73",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/272/pos",
+        "astPointer": null,
+        "targetRecordId": "845158e67a08174015a45db3",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn13",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "lượt",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/8/vi",
+        "astPointer": null,
+        "targetRecordId": "671bdaa20a4af412502a7416",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/8/pos",
+        "astPointer": null,
+        "targetRecordId": "8938350f09c63765b745abda",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/8/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word09",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/273/vi",
+        "astPointer": null,
+        "targetRecordId": "cfa2e0428cb29666f1ecf119",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/273/pos",
+        "astPointer": null,
+        "targetRecordId": "43c9afb9f1dae4dec1fcbe4b",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf99:vn14",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "nâng cao",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/9/vi",
+        "astPointer": null,
+        "targetRecordId": "3c8e76d625c8bcbf413fc8ca",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/9/pos",
+        "astPointer": null,
+        "targetRecordId": "9665145102d52ab3b6756170",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/9/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word10",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/274/vi",
+        "astPointer": null,
+        "targetRecordId": "3d6e237d00468c6853739bea",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/274/pos",
+        "astPointer": null,
+        "targetRecordId": "c5326755a8a3895547cdcddf",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf100:vn01",
+    "role": "running-header",
+    "sourceVietnamese": "Giáo trình New HSK 3",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf100:vn02",
+    "role": "reading-instruction",
+    "sourceVietnamese": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/4/note/vi",
+        "astPointer": null,
+        "targetRecordId": "ce2811c4d005edd7f31dbde6",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed reading instruction prefix only; editor-authored reference-answer tail preserved."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf100:vn03",
+    "role": "section-heading",
+    "sourceVietnamese": "Lớp học của Tiểu Ngữ",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf100:vn04",
+    "role": "grammar-title",
+    "sourceVietnamese": "Câu chữ “把” (1)",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammar/0/title/vi",
+        "astPointer": null,
+        "targetRecordId": "d98a81e661d2cd93426ef08d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf100:vn05",
+    "role": "grammar-explanation",
+    "sourceVietnamese": "Câu chữ “把” miêu tả việc thực hiện một hành động tác động tới người hoặc sự vật đã xác định, khiến vị trí của nó thay đổi. Phó từ phủ định “不/没” và động từ năng nguyện phải đặt trước “把”. Cấu trúc cơ bản: Chủ ngữ+ (不/没/động từ năng nguyện) + 把 + tân ngữ + động từ + 在/到 + địa điểm. Ví dụ:",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammar/0/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "09f40b9a86957d0fc456f27d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammarSourceExplanations/0/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "5dd669122d0c968a9200ae50",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf100:vn06",
+    "role": "practice-instruction",
+    "sourceVietnamese": "Hoàn thành câu.",
+    "consumerCount": 3,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/11/note/vi",
+        "astPointer": null,
+        "targetRecordId": "7790ac1ad05ea3f991a10208",
+        "decision": "match-with-editorial-tail",
+        "sourceSpanOnly": "Only printed Hoàn thành câu. matches; editorial tail is retained and separately identified."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/12/note/vi",
+        "astPointer": null,
+        "targetRecordId": "c55b4897546e643e4414a06d",
+        "decision": "match-with-editorial-tail",
+        "sourceSpanOnly": "Only printed Hoàn thành câu. matches; editorial tail is retained and separately identified."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/13/note/vi",
+        "astPointer": null,
+        "targetRecordId": "3c62791a39fe238e1ed8f354",
+        "decision": "match-with-editorial-tail",
+        "sourceSpanOnly": "Only printed Hoàn thành câu. matches; editorial tail is retained and separately identified."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf100:vn07",
+    "role": "section-heading",
+    "sourceVietnamese": "Bài khoá 2",
+    "consumerCount": 6,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/1/title/vi",
+        "astPointer": null,
+        "targetRecordId": "f5286d01a7bbff573d250a48",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/5/title/vi",
+        "astPointer": null,
+        "targetRecordId": "8f8f9f3e0268e48846c44846",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed scene heading prefix; after-listening/reading activity label is editorial."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/6/title/vi",
+        "astPointer": null,
+        "targetRecordId": "1b3d2a0b4a03f254bbe764bb",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed scene heading prefix; after-listening/reading activity label is editorial."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/10/declarations/0/init/elements/2/elements/1/arguments/1",
+        "targetRecordId": "e0082d6c279282ebaeff0314",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/2/body/body/0/declarations/0/init/arguments/0/arguments/1",
+        "targetRecordId": "f14105e023cc4c38f94691dc",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/5/expression/arguments/0/arguments/1/consequent/arguments/1",
+        "targetRecordId": "6a081c714ccc254d87499350",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf100:vn08",
+    "role": "scene-context",
+    "sourceVietnamese": "Lưu Tiểu Tuyết trò chuyện với bạn học về bài kiểm tra hôm qua ở trong lớp học.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/1/context/vi",
+        "astPointer": null,
+        "targetRecordId": "07d0c1a9085bed7f79bb431e",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf100:vn09",
+    "role": "listening-instruction",
+    "sourceVietnamese": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/5/note/vi",
+        "astPointer": null,
+        "targetRecordId": "304a2ca00fc6d05947446860",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf100:vn10",
+    "role": "inline-gloss",
+    "sourceVietnamese": "về, liên quan đến",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/1/questions/1/vi",
+        "astPointer": null,
+        "targetRecordId": "eb66bb6683f61e2f2053f1b6",
+        "decision": "variant",
+        "sourceSpanOnly": "Inline 关于 gloss only. The surrounding question translation is editorial because the official page prints the question in Chinese only."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/5/fields/1/prompt/vi",
+        "astPointer": null,
+        "targetRecordId": "c370c1bf3e78acb2f4fd33a9",
+        "decision": "variant",
+        "sourceSpanOnly": "Inline 关于 gloss only. The surrounding question translation is editorial because the official page prints the question in Chinese only."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn01",
+    "role": "running-header",
+    "sourceVietnamese": "Bài 10",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/6/expression/arguments/0/arguments/1/arguments/1",
+        "targetRecordId": "1ea8b7af59777839287bc3ff",
+        "decision": "match-normalized-heading-style",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn02",
+    "role": "section-heading",
+    "sourceVietnamese": "Từ mới",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn03",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "môn Lịch sử, lịch sử",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/10/vi",
+        "astPointer": null,
+        "targetRecordId": "243dbb5250a49ae326505b1a",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/10/pos",
+        "astPointer": null,
+        "targetRecordId": "6ca348196b947d49436d4131",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/10/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word11",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/275/vi",
+        "astPointer": null,
+        "targetRecordId": "5ee70b736ca36fc675a257e4",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/275/pos",
+        "astPointer": null,
+        "targetRecordId": "4bf83ff1074d2434b74b2397",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn04",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "khó, khó khăn",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/11/vi",
+        "astPointer": null,
+        "targetRecordId": "8f9e32ae1bed057ca394d97e",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/11/pos",
+        "astPointer": null,
+        "targetRecordId": "08640ec695995771bcdcd2e4",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/11/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word12",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/276/vi",
+        "astPointer": null,
+        "targetRecordId": "98cde801c6fca1b42329b9d6",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/276/pos",
+        "astPointer": null,
+        "targetRecordId": "325166604b5017ce0229201e",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn05",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "yêu cầu, đòi hỏi",
+    "consumerCount": 10,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/12/vi",
+        "astPointer": null,
+        "targetRecordId": "a2205aac40adc1fba3b374ad",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/13/vi",
+        "astPointer": null,
+        "targetRecordId": "626b508e18bbe9bb38f67efa",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/12/pos",
+        "astPointer": null,
+        "targetRecordId": "48b0a743e5cf27ebd112b662",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/12/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word13",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/13/pos",
+        "astPointer": null,
+        "targetRecordId": "bb650280c52e18bc1240000e",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/13/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word14",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/277/vi",
+        "astPointer": null,
+        "targetRecordId": "097ae6e602b80ce4921c0af5",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/277/pos",
+        "astPointer": null,
+        "targetRecordId": "07cab1caf89e0e5db8bbc11a",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/278/vi",
+        "astPointer": null,
+        "targetRecordId": "4656a466781d72e4855569ca",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/278/pos",
+        "astPointer": null,
+        "targetRecordId": "2e0d3d0dcbc30407c0d5ff1d",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn06",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "kém, thiếu",
+    "consumerCount": 10,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/14/vi",
+        "astPointer": null,
+        "targetRecordId": "f8ef0872fe7ebde8cf7c99af",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/15/vi",
+        "astPointer": null,
+        "targetRecordId": "2a7bac277e08190916d62d63",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/14/pos",
+        "astPointer": null,
+        "targetRecordId": "842dbe4a3994b36a3c2403a8",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/14/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word15",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/15/pos",
+        "astPointer": null,
+        "targetRecordId": "b37349c865c608d19e7468ca",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/15/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word16",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/279/vi",
+        "astPointer": null,
+        "targetRecordId": "b426ec9e398c728061e06ee1",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/279/pos",
+        "astPointer": null,
+        "targetRecordId": "cc9cc5ce2753720256edf885",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/280/vi",
+        "astPointer": null,
+        "targetRecordId": "595486953e1a9cb5a40a5b04",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/280/pos",
+        "astPointer": null,
+        "targetRecordId": "af17f5e70a971f73451f96a7",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn07",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "ôn tập",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/16/vi",
+        "astPointer": null,
+        "targetRecordId": "c070e1c755fbb18411e80f77",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/16/pos",
+        "astPointer": null,
+        "targetRecordId": "89f27af4fbfcaaf9b1ff8961",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/16/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word17",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/281/vi",
+        "astPointer": null,
+        "targetRecordId": "8316c0a752f6cb20392c61df",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/281/pos",
+        "astPointer": null,
+        "targetRecordId": "8feeeedf30fa3dba0921b253",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn08",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "ngoại ngữ",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/17/vi",
+        "astPointer": null,
+        "targetRecordId": "2970d7abe2dd7325952ed5b3",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/17/pos",
+        "astPointer": null,
+        "targetRecordId": "f013c3191ddc3b6c964f7923",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/17/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word18",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/282/vi",
+        "astPointer": null,
+        "targetRecordId": "7486b073dbdd3d8e4f39c709",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/282/pos",
+        "astPointer": null,
+        "targetRecordId": "7adc5f267f3011b76fe47441",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn09",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "đương nhiên, dĩ nhiên",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/18/vi",
+        "astPointer": null,
+        "targetRecordId": "1dd661c9f5a03bfe1e7214f3",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/18/pos",
+        "astPointer": null,
+        "targetRecordId": "9cdc26fb146348f16463717b",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/18/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word19",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/283/vi",
+        "astPointer": null,
+        "targetRecordId": "ffece656222c5404319c2e1d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/283/pos",
+        "astPointer": null,
+        "targetRecordId": "d7092222dc28733513052f6a",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn10",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "gặp, gặp phải",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/19/vi",
+        "astPointer": null,
+        "targetRecordId": "367266cb92a1887c4917e1fe",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/19/pos",
+        "astPointer": null,
+        "targetRecordId": "109b4a731135d89847d4b2dd",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/19/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word20",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/284/vi",
+        "astPointer": null,
+        "targetRecordId": "f1a370c97334e96f0e07a497",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/284/pos",
+        "astPointer": null,
+        "targetRecordId": "6d841046e1c594937f78514c",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn11",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "văn phòng, phòng làm việc",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/20/vi",
+        "astPointer": null,
+        "targetRecordId": "01cbf9d61ff56f261dde7df6",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/20/pos",
+        "astPointer": null,
+        "targetRecordId": "f96a8b628635dc47ad9d4d4c",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/20/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word21",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/285/vi",
+        "astPointer": null,
+        "targetRecordId": "bf09bc71ffa11aa01e1b31e3",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/285/pos",
+        "astPointer": null,
+        "targetRecordId": "14f3febb9b1370eb28ea6ad7",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn12",
+    "role": "reading-instruction",
+    "sourceVietnamese": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/6/note/vi",
+        "astPointer": null,
+        "targetRecordId": "6bdd6893446fe9e0954a5b60",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed reading instruction prefix only; editor-authored reference-answer tail preserved."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn13",
+    "role": "section-heading",
+    "sourceVietnamese": "Lớp học của Tiểu Ngữ",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf101:vn14",
+    "role": "grammar-title",
+    "sourceVietnamese": "Cấu trúc cố định “在……上/中/下”",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammar/1/title/vi",
+        "astPointer": null,
+        "targetRecordId": "31c2d9cd1190bf385a216731",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf102:vn01",
+    "role": "running-header",
+    "sourceVietnamese": "Giáo trình New HSK 3",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf102:vn02",
+    "role": "grammar-explanation",
+    "sourceVietnamese": "Giới từ “在” kết hợp với các từ phương vị “上”, “中”, “下” tạo thành cấu trúc “在……上/中/下”, biểu thị phạm vi, thời gian, điều kiện...",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammar/1/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "ad63bcd3aafa144d37c0fd92",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammarSourceExplanations/1/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "009a2057ad59ecf88e96c905",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf102:vn03",
+    "role": "grammar-explanation",
+    "sourceVietnamese": "“在 + danh từ/cụm danh từ + 上” biểu thị phạm vi hoặc phương diện nào đó. Ví dụ:",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammar/1/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "ad63bcd3aafa144d37c0fd92",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammarPresentations/0/groups/0/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "7b09cff2246da7477ad4cbf4",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf102:vn04",
+    "role": "grammar-explanation",
+    "sourceVietnamese": "“在……中” biểu thị môi trường hoặc thời gian mà hành động xảy ra hoặc trạng thái tồn tại. Ví dụ:",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammar/1/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "ad63bcd3aafa144d37c0fd92",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammarPresentations/0/groups/1/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "354faf05d14b7e4b198920de",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf102:vn05",
+    "role": "grammar-explanation",
+    "sourceVietnamese": "“在 + động từ hai âm tiết có định ngữ + 下” biểu thị điều kiện. Ví dụ:",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammar/1/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "ad63bcd3aafa144d37c0fd92",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammarPresentations/0/groups/2/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "a6641dd98dd2fd411786ca63",
+        "decision": "match",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf102:vn06",
+    "role": "practice-instruction",
+    "sourceVietnamese": "Hoàn thành câu.",
+    "consumerCount": 3,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/14/note/vi",
+        "astPointer": null,
+        "targetRecordId": "aed2d2bbc30f826f5bd70d66",
+        "decision": "match-with-editorial-tail",
+        "sourceSpanOnly": "Only printed Hoàn thành câu. matches; editorial tail is retained and separately identified."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/15/note/vi",
+        "astPointer": null,
+        "targetRecordId": "b649a0a6df3bce1716a19e96",
+        "decision": "match-with-editorial-tail",
+        "sourceSpanOnly": "Only printed Hoàn thành câu. matches; editorial tail is retained and separately identified."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/16/note/vi",
+        "astPointer": null,
+        "targetRecordId": "961a7ca6b9363fb32f1ee780",
+        "decision": "match-with-editorial-tail",
+        "sourceSpanOnly": "Only printed Hoàn thành câu. matches; editorial tail is retained and separately identified."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf102:vn07",
+    "role": "section-heading",
+    "sourceVietnamese": "Bài khoá 3",
+    "consumerCount": 6,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/2/title/vi",
+        "astPointer": null,
+        "targetRecordId": "bd2f991848c80eff69ed6b3c",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/7/title/vi",
+        "astPointer": null,
+        "targetRecordId": "83ecd361f66c540ba8c495a9",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed scene heading prefix; after-listening/reading activity label is editorial."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/8/title/vi",
+        "astPointer": null,
+        "targetRecordId": "17ac8b5ac548397bc2e5dfed",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed scene heading prefix; after-listening/reading activity label is editorial."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/10/declarations/0/init/elements/2/elements/1/arguments/1",
+        "targetRecordId": "e0082d6c279282ebaeff0314",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/2/body/body/0/declarations/0/init/arguments/0/arguments/1",
+        "targetRecordId": "f14105e023cc4c38f94691dc",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/5/expression/arguments/0/arguments/1/consequent/arguments/1",
+        "targetRecordId": "6a081c714ccc254d87499350",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf102:vn08",
+    "role": "scene-context",
+    "sourceVietnamese": "Lưu Tiểu Tuyết hỏi bài bạn học ở trong phòng làm việc của cô Lý.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/2/context/vi",
+        "astPointer": null,
+        "targetRecordId": "ee4eeda1d3f100b2e82f761a",
+        "decision": "official-source-context-ambiguity",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf102:vn09",
+    "role": "listening-instruction",
+    "sourceVietnamese": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/7/note/vi",
+        "astPointer": null,
+        "targetRecordId": "ea7ad3458e5b60359811338d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn01",
+    "role": "running-header",
+    "sourceVietnamese": "Bài 10",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/6/expression/arguments/0/arguments/1/arguments/1",
+        "targetRecordId": "1ea8b7af59777839287bc3ff",
+        "decision": "match-normalized-heading-style",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn02",
+    "role": "section-heading",
+    "sourceVietnamese": "Từ mới",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn03",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "trang (giấy, sách)",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/21/vi",
+        "astPointer": null,
+        "targetRecordId": "19e439edb7893030293e4ec2",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/21/pos",
+        "astPointer": null,
+        "targetRecordId": "ad5a85d0f849956fee2d78d4",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/21/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word22",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/286/vi",
+        "astPointer": null,
+        "targetRecordId": "3341a40457dd0bcf0a157e1f",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/286/pos",
+        "astPointer": null,
+        "targetRecordId": "bbe28f091a2d5731d98b0d1e",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn04",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "đối thoại, hội thoại, trò chuyện",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/22/vi",
+        "astPointer": null,
+        "targetRecordId": "457528aa134a5a4a0dbaacc8",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/22/pos",
+        "astPointer": null,
+        "targetRecordId": "afd2e4c6919cd0a00b84d695",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/22/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word23",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/287/vi",
+        "astPointer": null,
+        "targetRecordId": "9466cae5b7b847c2c321fb79",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/287/pos",
+        "astPointer": null,
+        "targetRecordId": "0d40873fbd1faba9d12c5cf0",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn05",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "hiểu, rõ ràng",
+    "consumerCount": 10,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/23/vi",
+        "astPointer": null,
+        "targetRecordId": "d9b7175adbe336dfd54591fb",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/24/vi",
+        "astPointer": null,
+        "targetRecordId": "0d660015d99cd118c52cf620",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/23/pos",
+        "astPointer": null,
+        "targetRecordId": "3db1e592f02b6d0373d1a02d",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/23/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word24",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/24/pos",
+        "astPointer": null,
+        "targetRecordId": "b7fff90d7320c15257655431",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/24/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word25",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/288/vi",
+        "astPointer": null,
+        "targetRecordId": "fd4cd91be281ead06b64d109",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/288/pos",
+        "astPointer": null,
+        "targetRecordId": "6fb7b4bcc31c60b345028156",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/289/vi",
+        "astPointer": null,
+        "targetRecordId": "69e317a6f214c509a5778b08",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/289/pos",
+        "astPointer": null,
+        "targetRecordId": "43d7cd10a8a4699f58c97bf0",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn06",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "giảng, giải thích",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/25/vi",
+        "astPointer": null,
+        "targetRecordId": "630f13d8517d64bb707850ac",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/25/pos",
+        "astPointer": null,
+        "targetRecordId": "5cd6cd2f45570964a8d2dad4",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/25/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word26",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/290/vi",
+        "astPointer": null,
+        "targetRecordId": "264b0fc6870269605f377644",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/290/pos",
+        "astPointer": null,
+        "targetRecordId": "bab4f84415b955fb30b520f5",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn07",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "câu (nói, văn)",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/26/vi",
+        "astPointer": null,
+        "targetRecordId": "3df66c4076b7dd3d473c0f56",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/26/pos",
+        "astPointer": null,
+        "targetRecordId": "47e4cd4312207035da481cae",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/26/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word27",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/291/vi",
+        "astPointer": null,
+        "targetRecordId": "1dd786442626f2a29a78f00f",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/291/pos",
+        "astPointer": null,
+        "targetRecordId": "6f2fe680a78cc3f20a898d56",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn08",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "câu",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/27/vi",
+        "astPointer": null,
+        "targetRecordId": "f45ce58655add770709d9b06",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/27/pos",
+        "astPointer": null,
+        "targetRecordId": "5bc70befcff1d7bb49d485be",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/27/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word28",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/292/vi",
+        "astPointer": null,
+        "targetRecordId": "784b7bf58d921969546b513e",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/292/pos",
+        "astPointer": null,
+        "targetRecordId": "1c4177222301693b0720935d",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn09",
+    "role": "reading-instruction",
+    "sourceVietnamese": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/8/note/vi",
+        "astPointer": null,
+        "targetRecordId": "a967294fa7d00c571d766a36",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed reading instruction prefix only; editor-authored reference-answer tail preserved."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn10",
+    "role": "section-heading",
+    "sourceVietnamese": "Lớp học của Tiểu Ngữ",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn11",
+    "role": "grammar-title",
+    "sourceVietnamese": "Câu chữ “把” (2)",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammar/2/title/vi",
+        "astPointer": null,
+        "targetRecordId": "b1f24ab4d5ab16ae0d608470",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf103:vn12",
+    "role": "grammar-explanation",
+    "sourceVietnamese": "Câu chữ “把” biểu thị thông qua hành động khiến sự vật đã được xác định xảy ra sự chuyển đổi về quan hệ. Cấu trúc cơ bản: Chủ ngữ + 把 + tân ngữ₁ + động từ + 给 + tân ngữ₂. Ví dụ:",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammar/2/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "56c958ef04df0c487db5fa4f",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/grammarSourceExplanations/2/explanation/vi",
+        "astPointer": null,
+        "targetRecordId": "d7080464ccf48c5e413d1c9a",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf104:vn01",
+    "role": "running-header",
+    "sourceVietnamese": "Giáo trình New HSK 3",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf104:vn02",
+    "role": "practice-instruction",
+    "sourceVietnamese": "Hoàn thành câu.",
+    "consumerCount": 3,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/17/note/vi",
+        "astPointer": null,
+        "targetRecordId": "9ac9955c40a802dc8d7d6f7c",
+        "decision": "match-with-editorial-tail",
+        "sourceSpanOnly": "Only printed Hoàn thành câu. matches; editorial tail is retained and separately identified."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/18/note/vi",
+        "astPointer": null,
+        "targetRecordId": "1d35b912923c311a55d008ce",
+        "decision": "match-with-editorial-tail",
+        "sourceSpanOnly": "Only printed Hoàn thành câu. matches; editorial tail is retained and separately identified."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/19/note/vi",
+        "astPointer": null,
+        "targetRecordId": "94e5c7c1c069729660e90d6e",
+        "decision": "match-with-editorial-tail",
+        "sourceSpanOnly": "Only printed Hoàn thành câu. matches; editorial tail is retained and separately identified."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf104:vn03",
+    "role": "section-heading",
+    "sourceVietnamese": "Bài khoá 4",
+    "consumerCount": 6,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/3/title/vi",
+        "astPointer": null,
+        "targetRecordId": "26edb24311f5ba809c5f7ca8",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/9/title/vi",
+        "astPointer": null,
+        "targetRecordId": "7befe823222460e4b98db079",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed scene heading prefix; after-listening/reading activity label is editorial."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/10/title/vi",
+        "astPointer": null,
+        "targetRecordId": "f0a6b27d604ebc3d32aa4999",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed scene heading prefix; after-listening/reading activity label is editorial."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/10/declarations/0/init/elements/2/elements/1/arguments/1",
+        "targetRecordId": "e0082d6c279282ebaeff0314",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/2/body/body/0/declarations/0/init/arguments/0/arguments/1",
+        "targetRecordId": "f14105e023cc4c38f94691dc",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      },
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/5/expression/arguments/0/arguments/1/consequent/arguments/1",
+        "targetRecordId": "6a081c714ccc254d87499350",
+        "decision": "variant",
+        "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf104:vn04",
+    "role": "scene-context",
+    "sourceVietnamese": "Lưu Tiểu Tuyết đang viết email ở trong nhà.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/3/context/vi",
+        "astPointer": null,
+        "targetRecordId": "9884d8aec6375ae9f4e4e04a",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf104:vn05",
+    "role": "listening-instruction",
+    "sourceVietnamese": "Nghe bài khoá hai lượt và chọn đáp án đúng.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/9/note/vi",
+        "astPointer": null,
+        "targetRecordId": "4dadbf11632aa275b4056297",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf104:vn06",
+    "role": "section-heading",
+    "sourceVietnamese": "Từ mới",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf104:vn07",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "khối lớp",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/28/vi",
+        "astPointer": null,
+        "targetRecordId": "319b240d203cdff09d04c1af",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/28/pos",
+        "astPointer": null,
+        "targetRecordId": "7f74078b4b47e7f13b06de26",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/28/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word29",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/293/vi",
+        "astPointer": null,
+        "targetRecordId": "9003e0af5fcee1f1ba9b6ad0",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/293/pos",
+        "astPointer": null,
+        "targetRecordId": "c3d0cd31928d7e5eee7d5e77",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf104:vn08",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "năm kia, năm sau",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/29/vi",
+        "astPointer": null,
+        "targetRecordId": "f41581eaf49271839e5c845a",
+        "decision": "official-book-erratum",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/29/pos",
+        "astPointer": null,
+        "targetRecordId": "90eed9ff59645b77d2858556",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/29/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word30",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/294/vi",
+        "astPointer": null,
+        "targetRecordId": "b8a8cba2a2285716bd6668b8",
+        "decision": "official-book-erratum",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/294/pos",
+        "astPointer": null,
+        "targetRecordId": "f2fb703735e6a7af70fda521",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf104:vn09",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "bình thường, phổ biến",
+    "consumerCount": 5,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/30/vi",
+        "astPointer": null,
+        "targetRecordId": "05b5ab97d4b848e95f97b636",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/30/pos",
+        "astPointer": null,
+        "targetRecordId": "6d5593c206fad60d60f8b044",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/30/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word31",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/295/vi",
+        "astPointer": null,
+        "targetRecordId": "8353899a48682604cd1a414d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/295/pos",
+        "astPointer": null,
+        "targetRecordId": "93f9ed22064b7b076fa79872",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf104:vn10",
+    "role": "vocabulary-gloss",
+    "sourceVietnamese": "chăm chỉ, nỗ lực",
+    "consumerCount": 10,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/31/vi",
+        "astPointer": null,
+        "targetRecordId": "36174faaecce30ccb381f02c",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/32/vi",
+        "astPointer": null,
+        "targetRecordId": "323a5f3d0d81c56ebf697ef4",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/31/pos",
+        "astPointer": null,
+        "targetRecordId": "4d8614ae55bdd9e787e96bc5",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/31/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word32",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/32/pos",
+        "astPointer": null,
+        "targetRecordId": "ab9d3eb6b722eb9813510551",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/32/additionalSourceEvidence/0/vocabulary/printedPOSRaw",
+        "astPointer": null,
+        "targetRecordId": "literal-pos:hsk3-fltrp-2026:l10:word33",
+        "decision": "match",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/296/vi",
+        "astPointer": null,
+        "targetRecordId": "fd5afebaea106f16367863b8",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/296/pos",
+        "astPointer": null,
+        "targetRecordId": "6c269ae3fdbb60d92b3ca1ae",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/297/vi",
+        "astPointer": null,
+        "targetRecordId": "73490ee302427f019b9a0a35",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/297/pos",
+        "astPointer": null,
+        "targetRecordId": "89e2b8e8660f2fb39dbdcc72",
+        "decision": "match-normalized-POS",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf105:vn01",
+    "role": "running-header",
+    "sourceVietnamese": "Bài 10",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/src/lesson-view.ts",
+        "field": null,
+        "astPointer": "/body/12/declaration/body/body/6/expression/arguments/0/arguments/1/arguments/1",
+        "targetRecordId": "1ea8b7af59777839287bc3ff",
+        "decision": "match-normalized-heading-style",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf105:vn02",
+    "role": "reading-instruction",
+    "sourceVietnamese": "Đọc to bài khoá.",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/3/questions/2/vi",
+        "astPointer": null,
+        "targetRecordId": "5f4f936d589bba8a8bb4f931",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/10/note/vi",
+        "astPointer": null,
+        "targetRecordId": "85b931564d6ef232534475c0",
+        "decision": "variant",
+        "sourceSpanOnly": "Two printed instructions replace only the existing instruction prefix. Editor-authored record/privacy/reference-answer tail remains byte-for-byte."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf105:vn03",
+    "role": "discussion-instruction",
+    "sourceVietnamese": "Căn cứ theo nội dung bài khoá, giới thiệu sơ lược về hệ thống lên lớp của Trung Quốc và quốc gia mà bạn đang sinh sống.",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/3/questions/3/vi",
+        "astPointer": null,
+        "targetRecordId": "c154f17b567dd709e50483ed",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/10/note/vi",
+        "astPointer": null,
+        "targetRecordId": "85b931564d6ef232534475c0",
+        "decision": "variant",
+        "sourceSpanOnly": "Two printed instructions replace only the existing instruction prefix. Editor-authored record/privacy/reference-answer tail remains byte-for-byte."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf105:vn04",
+    "role": "section-heading",
+    "sourceVietnamese": "Bài tập tổng hợp",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/sections/0/title/vi",
+        "astPointer": null,
+        "targetRecordId": "f6e13fba2d74a342cd47ffa2",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf105:vn05",
+    "role": "instruction",
+    "sourceVietnamese": "Chọn từ thích hợp điền vào chỗ trống.",
+    "consumerCount": 3,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/sections/0/title/vi",
+        "astPointer": null,
+        "targetRecordId": "f6e13fba2d74a342cd47ffa2",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/20/title/vi",
+        "astPointer": null,
+        "targetRecordId": "cacb4fd9a29167fb658f6e8b",
+        "decision": "variant",
+        "sourceSpanOnly": "Instruction wording aligned; the original ordinal range is an editor-provided navigation label and is preserved."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/21/title/vi",
+        "astPointer": null,
+        "targetRecordId": "df82297679d32ac65c9db63f",
+        "decision": "variant",
+        "sourceSpanOnly": "Instruction wording aligned; the original ordinal range is an editor-provided navigation label and is preserved."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf105:vn06",
+    "role": "instruction",
+    "sourceVietnamese": "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài để miêu tả các hình ảnh sau.",
+    "consumerCount": 4,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/sections/1/blocks/0/vi",
+        "astPointer": null,
+        "targetRecordId": "fe29c159005523d0c6107c0f",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/22/note/vi",
+        "astPointer": null,
+        "targetRecordId": "e6b5e0606886513addde44ce",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed picture-task instruction prefix only; Chinese-only dialogue and editor-authored reference-answer tail are not labelled as publisher Vietnamese."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/23/note/vi",
+        "astPointer": null,
+        "targetRecordId": "096ec0ecbb71f9437714c6e0",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed picture-task instruction prefix only; Chinese-only dialogue and editor-authored reference-answer tail are not labelled as publisher Vietnamese."
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/24/note/vi",
+        "astPointer": null,
+        "targetRecordId": "e8733d039d52cd3b86420021",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed picture-task instruction prefix only; Chinese-only dialogue and editor-authored reference-answer tail are not labelled as publisher Vietnamese."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf106:vn01",
+    "role": "running-header",
+    "sourceVietnamese": "Giáo trình New HSK 3",
+    "consumerCount": 0,
+    "consumers": [],
+    "unconsumedReason": "Printed running/section heading, repeated label or instruction has no exact active data field. It is source-only; not a missing target translation or a website match."
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf106:vn02",
+    "role": "section-heading",
+    "sourceVietnamese": "Hoạt động trên lớp",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/sections/3/title/vi",
+        "astPointer": null,
+        "targetRecordId": "4e2008477ebedc241a298b9d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/25/title/vi",
+        "astPointer": null,
+        "targetRecordId": "a42addbde0aa571a91c76eb2",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf106:vn03",
+    "role": "subheading",
+    "sourceVietnamese": "Hoạt động theo nhóm nhiều người",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/sections/3/title/vi",
+        "astPointer": null,
+        "targetRecordId": "4e2008477ebedc241a298b9d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/25/title/vi",
+        "astPointer": null,
+        "targetRecordId": "a42addbde0aa571a91c76eb2",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf106:vn04",
+    "role": "instruction",
+    "sourceVietnamese": "Bốn người một nhóm, trao đổi về các phương pháp học ngoại ngữ, sau đó chia sẻ với cả lớp. Cả lớp bỏ phiếu chọn ra ba phương pháp học hiệu quả nhất. Khi thảo luận, hãy sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài.",
+    "consumerCount": 2,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/sections/3/blocks/0/vi",
+        "astPointer": null,
+        "targetRecordId": "fa50f97695a09f44cf63424e",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/activities/25/note/vi",
+        "astPointer": null,
+        "targetRecordId": "0a1c4835e41445721a2fa58b",
+        "decision": "variant",
+        "sourceSpanOnly": "Printed classroom task prefix only; editor-authored record/privacy/assessment tail preserved."
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf106:vn05",
+    "role": "section-heading",
+    "sourceVietnamese": "Món quà của Tiểu Ngữ",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/sections/4/title/vi",
+        "astPointer": null,
+        "targetRecordId": "b705d028c5f46222c6f9fb7c",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:pdf106:vn06",
+    "role": "video-title",
+    "sourceVietnamese": "Giáo dục bắt buộc ở Trung Quốc",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/sections/4/title/vi",
+        "astPointer": null,
+        "targetRecordId": "b705d028c5f46222c6f9fb7c",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text1:line1",
+    "role": "dialogue",
+    "sourceVietnamese": "Môn Toán của bạn càng ngày càng tốt lên. Bạn có thể chia sẻ phương pháp học tập của mình không?",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/0/lines/0/vi",
+        "astPointer": null,
+        "targetRecordId": "db562d338eea6bcf88bf8a7e",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text1:line2",
+    "role": "dialogue",
+    "sourceVietnamese": "Không có phương pháp gì đặc biệt cả, chú ý nghe giảng trong lớp và chăm chỉ ghi chép thôi.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/0/lines/1/vi",
+        "astPointer": null,
+        "targetRecordId": "c279a60e473e7d4748b420bc",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text1:line3",
+    "role": "dialogue",
+    "sourceVietnamese": "Mình đã thấy vở ghi của bạn rồi, ghi chép rất rõ ràng.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/0/lines/2/vi",
+        "astPointer": null,
+        "targetRecordId": "326f78b25086417c70e6a4b2",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text1:line4",
+    "role": "dialogue",
+    "sourceVietnamese": "Những vấn đề mà cô giáo viết trên bảng đều rất quan trọng, vì vậy mình sẽ ghi hết vào vở.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/0/lines/3/vi",
+        "astPointer": null,
+        "targetRecordId": "3b1e30891a53e107018a001d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text1:line5",
+    "role": "dialogue",
+    "sourceVietnamese": "Bạn nói rất đúng. Mình không có thói quen ghi chép bài.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/0/lines/4/vi",
+        "astPointer": null,
+        "targetRecordId": "f1f94521c25befef6435dc9d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text1:line6",
+    "role": "dialogue",
+    "sourceVietnamese": "Vở ghi thực sự rất quan trọng. Hàng ngày, mình luôn xem lại chúng một lần trước khi làm bài tập về nhà.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/0/lines/5/vi",
+        "astPointer": null,
+        "targetRecordId": "488d8e7ea58c93f90f14ca8e",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text1:line7",
+    "role": "dialogue",
+    "sourceVietnamese": "Phương pháp này thật tuyệt vời! Sau này mình cũng thử xem sao, hy vọng sẽ có thể nâng cao thành tích học tập.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/0/lines/6/vi",
+        "astPointer": null,
+        "targetRecordId": "6719d4ca4792188507779b1a",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text2:line1",
+    "role": "dialogue",
+    "sourceVietnamese": "Tiểu Tuyết, bài kiểm tra hôm qua bạn làm bài thế nào?",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/1/lines/0/vi",
+        "astPointer": null,
+        "targetRecordId": "07708d2532a2a815a9f5da7e",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text2:line2",
+    "role": "dialogue",
+    "sourceVietnamese": "Mình thấy lịch sử hơi khó một chút, còn bạn thì sao?",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/1/lines/1/vi",
+        "astPointer": null,
+        "targetRecordId": "cf357cb8a60e2debc98b8934",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text2:line3",
+    "role": "dialogue",
+    "sourceVietnamese": "Mình đã không đọc kĩ yêu cầu làm bài của bài kiểm tra môn Toán, nên làm sai mấy câu liền, bài làm không tốt lắm.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/1/lines/2/vi",
+        "astPointer": null,
+        "targetRecordId": "e606639bac863b95ae5a9b34",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text2:line4",
+    "role": "dialogue",
+    "sourceVietnamese": "Ngày mai còn có bài kiểm tra khác nữa, đừng nghĩ về nó quá nhiều, giờ hãy tập trung vào việc ôn tập ngoại ngữ nhé.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/1/lines/3/vi",
+        "astPointer": null,
+        "targetRecordId": "4773044ab537a66ed2207a50",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text2:line5",
+    "role": "dialogue",
+    "sourceVietnamese": "Mình có vài câu hỏi về bài tập ngoại ngữ, mình có thể hỏi bạn được không?",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/1/lines/4/vi",
+        "astPointer": null,
+        "targetRecordId": "089942a2755dc3e7b4d43b6d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text2:line6",
+    "role": "dialogue",
+    "sourceVietnamese": "Tất nhiên rồi! Cứ hỏi mình bất cứ điều gì liên quan đến việc học nhé.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/1/lines/5/vi",
+        "astPointer": null,
+        "targetRecordId": "cb69e68bde6b4a47aacdafe9",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text2:line7",
+    "role": "printed-ellipsis",
+    "sourceVietnamese": "...",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/1/lines/6/vi",
+        "astPointer": null,
+        "targetRecordId": "b6002516de54d7de68b8fbf7",
+        "decision": "punctuation-variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text2:line8",
+    "role": "dialogue",
+    "sourceVietnamese": "Xin lỗi, mình cũng không biết cách giải những câu này. Chúng ta hãy cùng đến văn phòng để hỏi cô Lý đi.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/1/lines/7/vi",
+        "astPointer": null,
+        "targetRecordId": "39ec28dbb899cb5e4ef19c7f",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text3:line1",
+    "role": "dialogue",
+    "sourceVietnamese": "Thưa cô Lý, chúng em muốn hỏi cô một vài câu hỏi trong sách giáo khoa ạ.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/2/lines/0/vi",
+        "astPointer": null,
+        "targetRecordId": "158bb9d9c5f8b4b079780be8",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text3:line2",
+    "role": "dialogue",
+    "sourceVietnamese": "Được, các em ngồi đi, các em không biết giải câu nào?",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/2/lines/1/vi",
+        "astPointer": null,
+        "targetRecordId": "1444fed817476dab6b874a85",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text3:line3",
+    "role": "dialogue",
+    "sourceVietnamese": "Em không hiểu đoạn hội thoại ở trang 5 trong sách, Tiểu Tuyết cũng không hiểu chỗ đó ạ.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/2/lines/2/vi",
+        "astPointer": null,
+        "targetRecordId": "29492c4d985b07bb2b292af0",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text3:line4",
+    "role": "dialogue",
+    "sourceVietnamese": "Cô đã giảng những câu này trên lớp rồi, để cô giảng lại một lần nữa nhé.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/2/lines/3/vi",
+        "astPointer": null,
+        "targetRecordId": "6487d902ec9d51d89648e730",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text3:line5",
+    "role": "parenthesized-stage-direction",
+    "sourceVietnamese": "(Cô Lý giải thích câu hỏi cho học sinh.)",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/2/lines/4/vi",
+        "astPointer": null,
+        "targetRecordId": "1ac6d0db76e466f726c03bb4",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text3:line6",
+    "role": "dialogue",
+    "sourceVietnamese": "Cuối cùng em cũng hiểu rồi. Những câu này chẳng khó chút nào cả!",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/2/lines/5/vi",
+        "astPointer": null,
+        "targetRecordId": "41609a01744033e7720179d0",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text3:line7",
+    "role": "dialogue",
+    "sourceVietnamese": "Em cũng hiểu rồi ạ. Em cảm ơn cô Lý.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/2/lines/6/vi",
+        "astPointer": null,
+        "targetRecordId": "4ea4710c86743bd19d5dc63d",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text3:line8",
+    "role": "dialogue",
+    "sourceVietnamese": "Trong quyển sách này của cô còn có vài bài tập nữa, các em hãy thử làm ở nhà nhé, ngày mai trả lại sách cho cô.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/2/lines/7/vi",
+        "astPointer": null,
+        "targetRecordId": "d9c2768bc112c4102f9cc4ec",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text4:line1",
+    "role": "letter-opening",
+    "sourceVietnamese": "Chị Gia Nguyệt thân mến!\nDạo này chị thế nào rồi ạ? Chị có bận lắm không?",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/3/lines/0/vi",
+        "astPointer": null,
+        "targetRecordId": "c06ae51392de5939dfc9a67c",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text4:line2",
+    "role": "letter-paragraph",
+    "sourceVietnamese": "Bây giờ em đang học lớp 8, việc học của em ngày càng bận hơn, năm sau nữa em sẽ thi cấp 3 rồi ạ. Trường học ở Trung Quốc thường gồm sáu năm tiểu học (cấp 1), ba năm trung học cơ sở (cấp 2) và ba năm trung học phổ thông (cấp 3). Mẹ em nói rằng để thi đỗ một trường đại học tốt, thì cần phải thi đỗ một trường cấp 3 tốt. Để thi đỗ một trường cấp 3 tốt, cần có thành tích học tập tốt ở cấp 2. Vì vậy hiện giờ em đang rất cố gắng học hành.",
+    "consumerCount": 3,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/3/lines/1/vi",
+        "astPointer": null,
+        "targetRecordId": "6ca64ec077d7894fad21d004",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/vocabulary/29/vi",
+        "astPointer": null,
+        "targetRecordId": "f41581eaf49271839e5c845a",
+        "decision": "official-book-erratum",
+        "sourceSpanOnly": null
+      },
+      {
+        "file": "course-app/content/hsk3-lexicon.json",
+        "field": "/senses/294/vi",
+        "astPointer": null,
+        "targetRecordId": "b8a8cba2a2285716bd6668b8",
+        "decision": "official-book-erratum",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  },
+  {
+    "sourceID": "hsk3-official-vi-20261004:l10:appendix:text4:line3",
+    "role": "letter-paragraph",
+    "sourceVietnamese": "Chị có biết không chị Gia Nguyệt? Do ảnh hưởng của chị, em đã bắt đầu yêu thích nhiếp ảnh rồi đấy. Lần tới chị đến Bắc Kinh, em sẽ cho chị xem vài bức ảnh em đã chụp.",
+    "consumerCount": 1,
+    "consumers": [
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/3/lines/2/vi",
+        "astPointer": null,
+        "targetRecordId": "bf2b08b71ecf4e882613bef3",
+        "decision": "variant",
+        "sourceSpanOnly": null
+      }
+    ],
+    "unconsumedReason": null
+  }
+]

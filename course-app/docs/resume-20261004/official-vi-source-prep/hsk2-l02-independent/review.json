@@ -1,0 +1,2138 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "qa_hsk1_05_08",
+  "reviewedAtUTC": "2026-10-04T19:33:27.004485+00:00",
+  "status": "independent-full-source-review-repairs-required-before-whole-input-acceptance",
+  "reviewKind": "original-page source transcription only, not website-VI alignment",
+  "input": {
+    "author": "root",
+    "originalAuthorPath": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l02/source-transcription.json",
+    "sha256": "d240fa2fd2a8d550c8f3b5d8684aebb15814e93ec0f3be521844e17f6b88703c",
+    "bytes": 42844,
+    "frozenInputCopy": "source-transcription.input-d240fa.json",
+    "sourceIdCount": 104,
+    "sourceIdSetSHA256": "df4b587228ace2803bbd07073a512ba57baa6445c43d8ce8cca26163450215ba"
+  },
+  "officialSource": {
+    "file": "HSK2 ( 3.0).pdf",
+    "localPath": "/workspace/scratch/28b55072841a/upload/HSK2 ( 3.0).pdf",
+    "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+    "actualHashRechecked": true,
+    "pdfPages": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "printedPagesVisuallyRead": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "CropBoxAndRotationPreserved": true
+  },
+  "pageEvidenceFile": "source-page-evidence.json",
+  "pageEvidenceSHA256": "69bb1b4678ebf40b3a315f16cfe81bc45e197b855532a3ccc842b5e670c2a4b3",
+  "coverage": {
+    "wholePagesVisuallyViewed": 9,
+    "sourceIdsIndependentlyReviewed": 104,
+    "sourceIdsAccepted": 102,
+    "sourceIdsRequiringSourceRepair": 2,
+    "sourceRepairFields": 2,
+    "extraVietnameseUnitsObservedMissingFromInput": 0,
+    "ordinaryPrintedVocabularyRows": 16,
+    "properNounRows": 1,
+    "roleTranslationLines": 18,
+    "text4WholeParagraphs": 1,
+    "grammarBodyParagraphs": 3,
+    "highResolutionOriginalPdfCropsActuallyViewed": 7,
+    "decodedPreflightRgbRasterMatchesOriginalPDF": 9,
+    "OCRUsed": false
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "sourceId": "hsk2-official-vi:l02:p010:goal2",
+      "field": "viPrinted",
+      "expectedOriginalCandidate": "Có thể hiểu và sử dụng được “多” để diễn đạt số ước lượng.",
+      "requiredSourceTranscription": "Có thể nghe hiểu và sử dụng được “多” để diễn đạt số ước lượng.",
+      "reason": "Actual printed Vietnamese includes nghe. Confirmed from unchanged original PDF at 6x, not inferred from Chinese.",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "evidenceCrop": "pdf024-goal2-original-crop-6x.png",
+      "evidenceCropSHA256": "7b844bc9eb223b1961f07424b412eba9efeb294f1c296d62ab317424d8604a84",
+      "displayPageRectClip": [
+        85,
+        235,
+        515,
+        282
+      ]
+    },
+    {
+      "id": "F2",
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line4",
+      "field": "zhAnchor",
+      "expectedOriginalCandidate": "是网上说的，网上还说北京大学有三千多名外国学生呢。",
+      "requiredSourceTranscription": "是网上说的，网上还说北京大学有三千多名外国学生。",
+      "reason": "Printed Chinese and Pinyin bubble end after 学生/xuéshēng; no 呢. Vietnamese/full speaker text is already correct.",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "evidenceCrop": "pdf027-text2-line4-original-crop-6x.png",
+      "evidenceCropSHA256": "1d5293468d4e1f70752e2ef33af4fa8d684292eefcfb9bd65686966df89c06ef",
+      "displayPageRectClip": [
+        98,
+        252,
+        265,
+        371
+      ]
+    }
+  ],
+  "acceptedSourceIds": [
+    "hsk2-official-vi:l02:p010:lesson-label",
+    "hsk2-official-vi:l02:p010:title",
+    "hsk2-official-vi:l02:p010:goals-heading",
+    "hsk2-official-vi:l02:p010:goal1",
+    "hsk2-official-vi:l02:p010:goal3",
+    "hsk2-official-vi:l02:p010:goal4",
+    "hsk2-official-vi:l02:p010:warmup-heading",
+    "hsk2-official-vi:l02:p010:warmup1-instruction",
+    "hsk2-official-vi:l02:p010:warmup2-instruction",
+    "hsk2-official-vi:l02:p010:warmup2-column1",
+    "hsk2-official-vi:l02:p010:warmup2-column2",
+    "hsk2-official-vi:l02:p010:warmup2-column3",
+    "hsk2-official-vi:l02:p011:running-lesson-label",
+    "hsk2-official-vi:l02:p013:running-lesson-label",
+    "hsk2-official-vi:l02:p015:running-lesson-label",
+    "hsk2-official-vi:l02:p017:running-lesson-label",
+    "hsk2-official-vi:l02:p012:running-book-label",
+    "hsk2-official-vi:l02:p014:running-book-label",
+    "hsk2-official-vi:l02:p016:running-book-label",
+    "hsk2-official-vi:l02:p018:running-book-label",
+    "hsk2-official-vi:l02:p011:text1-heading",
+    "hsk2-official-vi:l02:p011:text1-setup",
+    "hsk2-official-vi:l02:p011:text1-listen-instruction",
+    "hsk2-official-vi:l02:p011:text1-vocabulary-heading",
+    "hsk2-official-vi:l02:p011:word01",
+    "hsk2-official-vi:l02:p011:word02",
+    "hsk2-official-vi:l02:p011:word03",
+    "hsk2-official-vi:l02:p011:word04",
+    "hsk2-official-vi:l02:p011:word05",
+    "hsk2-official-vi:l02:p011:word06",
+    "hsk2-official-vi:l02:p011:proper-nouns-heading",
+    "hsk2-official-vi:l02:p011:proper-noun1",
+    "hsk2-official-vi:l02:p011:support-heading",
+    "hsk2-official-vi:l02:p011:support-好",
+    "hsk2-official-vi:l02:p012:text1-line1",
+    "hsk2-official-vi:l02:p012:text1-line2",
+    "hsk2-official-vi:l02:p012:text1-line3",
+    "hsk2-official-vi:l02:p012:text1-line4",
+    "hsk2-official-vi:l02:p012:text1-line5",
+    "hsk2-official-vi:l02:p012:text1-line6",
+    "hsk2-official-vi:l02:p012:text1-role-instruction",
+    "hsk2-official-vi:l02:p012:grammar-heading",
+    "hsk2-official-vi:l02:p012:grammar1-title",
+    "hsk2-official-vi:l02:p012:grammar1-body",
+    "hsk2-official-vi:l02:p012:grammar1-completion-instruction",
+    "hsk2-official-vi:l02:p012:text2-heading",
+    "hsk2-official-vi:l02:p012:text2-setup",
+    "hsk2-official-vi:l02:p012:text2-listen-instruction",
+    "hsk2-official-vi:l02:p013:text2-vocabulary-heading",
+    "hsk2-official-vi:l02:p013:word07",
+    "hsk2-official-vi:l02:p013:word08",
+    "hsk2-official-vi:l02:p013:word09",
+    "hsk2-official-vi:l02:p013:word10",
+    "hsk2-official-vi:l02:p013:word11",
+    "hsk2-official-vi:l02:p013:word12",
+    "hsk2-official-vi:l02:p013:word13",
+    "hsk2-official-vi:l02:p013:text2-line1",
+    "hsk2-official-vi:l02:p013:text2-line2",
+    "hsk2-official-vi:l02:p013:text2-line3",
+    "hsk2-official-vi:l02:p013:text2-line5",
+    "hsk2-official-vi:l02:p013:text2-line6",
+    "hsk2-official-vi:l02:p013:text2-role-instruction",
+    "hsk2-official-vi:l02:p014:grammar-heading",
+    "hsk2-official-vi:l02:p014:grammar2-title",
+    "hsk2-official-vi:l02:p014:grammar2-body",
+    "hsk2-official-vi:l02:p014:grammar2-completion-instruction",
+    "hsk2-official-vi:l02:p014:text3-heading",
+    "hsk2-official-vi:l02:p014:text3-setup",
+    "hsk2-official-vi:l02:p014:text3-listen-instruction",
+    "hsk2-official-vi:l02:p015:text3-photo-caption",
+    "hsk2-official-vi:l02:p015:support-heading",
+    "hsk2-official-vi:l02:p015:support-天啊-到",
+    "hsk2-official-vi:l02:p015:text3-vocabulary-heading",
+    "hsk2-official-vi:l02:p015:word14",
+    "hsk2-official-vi:l02:p015:word15",
+    "hsk2-official-vi:l02:p015:text3-line1",
+    "hsk2-official-vi:l02:p015:text3-line2",
+    "hsk2-official-vi:l02:p015:text3-line3",
+    "hsk2-official-vi:l02:p015:text3-line4",
+    "hsk2-official-vi:l02:p015:text3-line5",
+    "hsk2-official-vi:l02:p015:text3-line6",
+    "hsk2-official-vi:l02:p015:text3-role-instruction",
+    "hsk2-official-vi:l02:p015:grammar-heading",
+    "hsk2-official-vi:l02:p015:grammar3-title",
+    "hsk2-official-vi:l02:p016:grammar3-body",
+    "hsk2-official-vi:l02:p016:grammar3-completion-instruction",
+    "hsk2-official-vi:l02:p016:text4-heading",
+    "hsk2-official-vi:l02:p016:text4-setup",
+    "hsk2-official-vi:l02:p016:text4-listen-instruction",
+    "hsk2-official-vi:l02:p016:text4-vocabulary-heading",
+    "hsk2-official-vi:l02:p016:word16",
+    "hsk2-official-vi:l02:p016:text4-paragraph",
+    "hsk2-official-vi:l02:p017:text4-read-instruction",
+    "hsk2-official-vi:l02:p017:integrated-heading",
+    "hsk2-official-vi:l02:p017:integrated1-instruction",
+    "hsk2-official-vi:l02:p017:integrated2-instruction",
+    "hsk2-official-vi:l02:p018:classroom-heading",
+    "hsk2-official-vi:l02:p018:roleplay-label",
+    "hsk2-official-vi:l02:p018:roleplay-instruction",
+    "hsk2-official-vi:l02:p018:roleplay-example-label",
+    "hsk2-official-vi:l02:p018:bonus-heading",
+    "hsk2-official-vi:l02:p018:bonus-video-caption"
+  ],
+  "sourceIdsRequiringRepairs": [
+    "hsk2-official-vi:l02:p010:goal2",
+    "hsk2-official-vi:l02:p013:text2-line4"
+  ],
+  "records": [
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:lesson-label",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "lesson-label",
+      "candidateRecordSHA256": "0fc06bb4889837e6a2d30fe93eaf4ca22ba39d09eade5e1dc5252a2d0a1e4c61",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:title",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "title",
+      "candidateRecordSHA256": "bf6524beda41b7550f434fbc8daffc81a890326a946950810413aba3a3ccff35",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:goals-heading",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "goals-heading",
+      "candidateRecordSHA256": "e24f69bd71762d500d6b03132c2eef254c480ed887794b59db81b38151ee3d94",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:goal1",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "goal1",
+      "candidateRecordSHA256": "935333ed141d2ee8b2fe792fe422e72be4351ac3a0d3173c3fa1dbfa383d71bc",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:goal2",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "goal2",
+      "candidateRecordSHA256": "d4b6bb7c5dd0fa1abbafea323eada81429e0aa5c0cca0df2b948bec3a99317fc",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "source-transcription-repair-required",
+      "requiredRepairs": [
+        "F1"
+      ],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:goal3",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "goal3",
+      "candidateRecordSHA256": "fb9d52043c9e4e54e8177c7c3521f954049f50968ba5871866686b04b81461e0",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:goal4",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "goal4",
+      "candidateRecordSHA256": "2caa6d246f056968861e00a3a5fe88d0a0ce70e6b1dc1cdfdf46a06ad2c71741",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup-heading",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup-heading",
+      "candidateRecordSHA256": "00db1eccef26c4ff7300141979ac297acd78cfac3d5d74bce6b988ceea613e92",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup1-instruction",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup1-instruction",
+      "candidateRecordSHA256": "50a96fde1b4d1d8e28756f820ec6c7e2f3e500c4a4bc0d31f7176385990575a5",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup2-instruction",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup2-instruction",
+      "candidateRecordSHA256": "a106fd217b84083f3e37a468eb223e8a8d3a24650818046c44cd258a84cece7f",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup2-column1",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup2-column1",
+      "candidateRecordSHA256": "0f4bd891bd5739df0a9f55052a76215283453d8bd37336b8442985bfb2e340b7",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup2-column2",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup2-column2",
+      "candidateRecordSHA256": "6023aac146e6368489b8f5ed5f8cd052bbed70798d3abe1c0c5bab75d2cecb37",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p010:warmup2-column3",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "section": "warmup2-column3",
+      "candidateRecordSHA256": "0303cec9a537d95db06afa17a776f24eaca4454b2c2f916fa0beed58277f0a50",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:running-lesson-label",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "running-lesson-label",
+      "candidateRecordSHA256": "34129e9fd8eabe3548ca9ff949a39c3b32cb39e68364e27faedccde46beeede8",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:running-lesson-label",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "running-lesson-label",
+      "candidateRecordSHA256": "f9326e1770f8f1de25b49c74e44d2cb4f61f114069e59e7e99c18908dfe80431",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:running-lesson-label",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "running-lesson-label",
+      "candidateRecordSHA256": "7fa66d904134720df55e821e76636a34cccd75576f1dd864b9fb6e78db7650da",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p017:running-lesson-label",
+      "pdfPage": 31,
+      "printedPage": 17,
+      "section": "running-lesson-label",
+      "candidateRecordSHA256": "85864c77b278abfd26c32d63ef97e37649a25555a90cb344a9ab7c0347b6d06e",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:running-book-label",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "running-book-label",
+      "candidateRecordSHA256": "36fb191d5b54fca16320c3b74bab9b68a4bc9faf0c8b8981cd5cc6c8aa5bb76f",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:running-book-label",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "running-book-label",
+      "candidateRecordSHA256": "0c7e2c6574dfaaf451cdca961d4990622e5f99f188361c7e323cbe93c2bdb79f",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:running-book-label",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "running-book-label",
+      "candidateRecordSHA256": "4dfd9c4fe0d4a52496a6b2d0e731f8ef6cf42538c968457d2163e25a31ca8e5c",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:running-book-label",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "running-book-label",
+      "candidateRecordSHA256": "bebb1c0d75c1eef0ea306697d6a505a72086f871be1b80ca3be460537d17d4d8",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:text1-heading",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "text1-heading",
+      "candidateRecordSHA256": "6a5e050367042d727cc3e08f6847ae112e25c674bc9016d47cd8e1e589f3c5c2",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:text1-setup",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "text1-setup",
+      "candidateRecordSHA256": "da937916034698ae7ff8322ecb638c6ad2ba8d2c91961143a41dad0f1c7c1f64",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:text1-listen-instruction",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "text1-listen-instruction",
+      "candidateRecordSHA256": "c79836a5e5d2a23ae5e51d552994de6be75c570bd37e29c8779010a6fab21059",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:text1-vocabulary-heading",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "text1-vocabulary-heading",
+      "candidateRecordSHA256": "c483a81f0d9f01a66560bc09175d1f38f3d5c9bcc23f5c993c51154720ae32e4",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word01",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word01",
+      "candidateRecordSHA256": "40417dea3179286e580dbac68be4b903ade4cecf6433a95b637a71a326e6b1ca",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word02",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word02",
+      "candidateRecordSHA256": "c14f401c593a400beb71d7aec41e608b9eaaee729bbe797024ff178411b39302",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word03",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word03",
+      "candidateRecordSHA256": "9d4eeab4e87f7c4357daab666200769db467ffb52f3c125a205969b3c70936fa",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word04",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word04",
+      "candidateRecordSHA256": "5d6a91c6dc2917ce8d450811515b2839ea8d85013f96a5c952b9f86a34e9c0fd",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word05",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word05",
+      "candidateRecordSHA256": "07ea16764f7e6b99d5d2f9599b97a918fc40953ac32f776e43e345a557d09207",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:word06",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "word06",
+      "candidateRecordSHA256": "ac745b3821b6363184b6b61507843a7034354a45291263687ab8938071465076",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:proper-nouns-heading",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "proper-nouns-heading",
+      "candidateRecordSHA256": "a4bc744c6fef609d7cf1c260ded724557c6c5ec09f0c239d8afa5dcc832c6fda",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:proper-noun1",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "proper-noun1",
+      "candidateRecordSHA256": "d2f199cee51a96e7a045263ae0c68267d99b0752134ff81aaf1423e3d756e240",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:support-heading",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "support-heading",
+      "candidateRecordSHA256": "8ea5fe243955ebe40d05eea3373f236fd10bac6c2e57942c37a86dbf55cc4b84",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p011:support-好",
+      "pdfPage": 25,
+      "printedPage": 11,
+      "section": "support-好",
+      "candidateRecordSHA256": "b72e566a325bd5da0f0ac26847a22b91bbb5b9126e7bce3b36d79f941b57a83e",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line1",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line1",
+      "candidateRecordSHA256": "9fc7f39c1c0e096151cc63b6c46fea32953c9cd2c6c96f8b364ea4ae3f3d1122",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line2",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line2",
+      "candidateRecordSHA256": "1627cb23de09ed35e9eb9dd0a1032d96d419d17f6a8e6b25be90c96d8b6ecfa8",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line3",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line3",
+      "candidateRecordSHA256": "ec54a0fcd3d682854cb68645be653c2762600f33e9ceb44bf71c1bed549875d3",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line4",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line4",
+      "candidateRecordSHA256": "4f6151460d322ce3ed07daba36915131d5fa914a3fcccc2d111b5636bed687c8",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line5",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line5",
+      "candidateRecordSHA256": "3557a653b1b424374c90883620f69f0d6b8983f4640b605ea9db8d4a23a95959",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-line6",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-line6",
+      "candidateRecordSHA256": "4e68792fc25d66bc8850d7e772a69959f43f3184aefef27d2ac6244e65bcaf49",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text1-role-instruction",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text1-role-instruction",
+      "candidateRecordSHA256": "e389f894c278a3387f5d0d753b7de83bc0c5394ab634583491aa7fdefd55c00b",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:grammar-heading",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "grammar-heading",
+      "candidateRecordSHA256": "b2d8b8c2328d5aa16ac4c33156c0b5f0df1b858b8b8e75efa4ea5bc09af7310c",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:grammar1-title",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "grammar1-title",
+      "candidateRecordSHA256": "063d5f05ff83d85ae9882b19c8cb1c0f0edf092941f9b639034753b23a55a43e",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:grammar1-body",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "grammar1-body",
+      "candidateRecordSHA256": "3eb18c4ec540a8bb4f9d1cb6ab2638db5b8573f3789e599f52a508e06d6fad1e",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:grammar1-completion-instruction",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "grammar1-completion-instruction",
+      "candidateRecordSHA256": "99c0e4f99c0b17272514e8dff5c540f1d9fc8758db37fcf2a8ed1055b7320f69",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text2-heading",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text2-heading",
+      "candidateRecordSHA256": "712d380e988cf5542d9db978f5d72805e5cf1e1981d4bc83ccdbf4f8bab481cb",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text2-setup",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text2-setup",
+      "candidateRecordSHA256": "38e66eae45b10f4608cf324e1d998b250664958702f553cc88acebfa6383109a",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:text2-listen-instruction",
+      "pdfPage": 26,
+      "printedPage": 12,
+      "section": "text2-listen-instruction",
+      "candidateRecordSHA256": "9752bf035f4ec76a71ad92cd6dd944050f15f6a4b4f6849f07800bbae95b0d37",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-vocabulary-heading",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-vocabulary-heading",
+      "candidateRecordSHA256": "96c85a4a14ac8e9156d97f783a7dee0bda714567655e50990c11841a1fc211c5",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word07",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word07",
+      "candidateRecordSHA256": "94714c01115395c40be1ff914e69d932ba8afba1320a53b82e242b6ca1292861",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word08",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word08",
+      "candidateRecordSHA256": "550cf00aed53580b6ce2a65b064611c623e88194fccec1e84a06d4de4022e88d",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word09",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word09",
+      "candidateRecordSHA256": "61bf15ee18311e91bf9f58031874e12482320288c80a8e0f108c605c87b54d87",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word10",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word10",
+      "candidateRecordSHA256": "5d86f1a693eb338dbd54627378b6d56b550738be4b94ed60456905ca830506dd",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word11",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word11",
+      "candidateRecordSHA256": "81072f3b863a1cf8be6208c7fc043817a262763c3cb8de7885dace746f3357eb",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word12",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word12",
+      "candidateRecordSHA256": "902ceab58625d1a1239bc12ec05f71fa307ce8f1d903abae246d937fd01aac13",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word13",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "word13",
+      "candidateRecordSHA256": "2f89b4b59947a75651520993d4e2f3467e14090868c9f6dca938e143bc29fc44",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line1",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line1",
+      "candidateRecordSHA256": "f00f832342fef1d448b0a7afe96ca70abeb821b2ca626857fda122bc7e9ffe4a",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line2",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line2",
+      "candidateRecordSHA256": "44d585f140a89358a402610362bf3b006976a7c044d79225ddc966905e88676f",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line3",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line3",
+      "candidateRecordSHA256": "3f6183998543a2652bd6550d0f2eb37b9d8721ad600145e628c888cb5e88ca71",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line4",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line4",
+      "candidateRecordSHA256": "9aa5259a0623d9911b2058c7b6c2b09deaeca6b8312d96033e1083dc51997892",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "source-transcription-repair-required",
+      "requiredRepairs": [
+        "F2"
+      ],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line5",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line5",
+      "candidateRecordSHA256": "2f04072abbdee974d33a76bed691e4080d1d7035cad8a658b5cb161b3098545b",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line6",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-line6",
+      "candidateRecordSHA256": "f0f49ee2f3cc7acbffe2ccaa6332d07352e61af09f20c06fcb87ada530739d51",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:text2-role-instruction",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "section": "text2-role-instruction",
+      "candidateRecordSHA256": "1867754db326356576179321f0489462008a63e30bad2af0f140b28742b0ff5f",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:grammar-heading",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "grammar-heading",
+      "candidateRecordSHA256": "4c1f447c1786760a03101f9bbf2c2880ac74cf4264cba46b8b43a0dee54ece0f",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:grammar2-title",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "grammar2-title",
+      "candidateRecordSHA256": "8bc1797e8100d76a60af0dfc929a7e43e2682ad74e625faa3a45cd43b04dbca4",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:grammar2-body",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "grammar2-body",
+      "candidateRecordSHA256": "d9687e3e1fdf5a46eb7a9ae336ec7627121594df28cbf1ae00803236e1ae9897",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:grammar2-completion-instruction",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "grammar2-completion-instruction",
+      "candidateRecordSHA256": "b3793fcbc9421483fb43e7a0c737786443beffa9e25d1394bf918071ebaefd79",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:text3-heading",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "text3-heading",
+      "candidateRecordSHA256": "6ed647d9c62652c6428fd8e79a4396ac66e5ff32b9ef255de341b94c8a280a86",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:text3-setup",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "text3-setup",
+      "candidateRecordSHA256": "90c5be62e7df6c0cb1e2eff70881399b876655aaa7bc5ea1a6dcba852f7df142",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:text3-listen-instruction",
+      "pdfPage": 28,
+      "printedPage": 14,
+      "section": "text3-listen-instruction",
+      "candidateRecordSHA256": "8ec312a35ea158d4653b9f978d9296644d9961cd3489f995fcabe86308bcc597",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-photo-caption",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-photo-caption",
+      "candidateRecordSHA256": "3051206e6327e9631e36adf0e0fb11d9889d19c1f825910cdd5062e6c4b36cb6",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:support-heading",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "support-heading",
+      "candidateRecordSHA256": "54dece4e80107c5c0f94dee03d2f4a970deddd918d26ff3a6fd814bd4243fbde",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:support-天啊-到",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "support-天啊-到",
+      "candidateRecordSHA256": "9b52b3ddfeb3e63683c158c38e9075911188f624a8deecf0242f9fc30f714a27",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-vocabulary-heading",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-vocabulary-heading",
+      "candidateRecordSHA256": "bc11d07b0ced88d383488402bdfdc26b2ed82f22e129814c844f922e324e27d7",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:word14",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "word14",
+      "candidateRecordSHA256": "53c381494bc8cc4068c0b3245317175be5eeba10395d560adb4296dc6f07f9fc",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:word15",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "word15",
+      "candidateRecordSHA256": "dea4428afbf0c26fa90ed4e7939bd7d47abce2ba6237c667487a74e67d029b09",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line1",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line1",
+      "candidateRecordSHA256": "1fc716b3af7ae70ac29b27a2f3589a61b8df7a3da48949fdaf4f173bcdd7dc53",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line2",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line2",
+      "candidateRecordSHA256": "8434863988fa1dc48ca416037ea9327339a7e551ba1e9eae22b42a6621f5e366",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line3",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line3",
+      "candidateRecordSHA256": "875fe50ca05a3a9b6f3905657fd8dbe04d2053fac6cef60c56aee851c03fd35a",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line4",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line4",
+      "candidateRecordSHA256": "70c96bf7114e449f0189e078fb48c8e4ea7b7885571a85fa445393afa2a10c89",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line5",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line5",
+      "candidateRecordSHA256": "c202f197b29202fa5e628312aa4fcbccd2a40a807fe14101a70a0714b2de9205",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-line6",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-line6",
+      "candidateRecordSHA256": "11bbd1385eb589e11f5847c30381cb71b8e5a1d064f6852514b6b248a17a7379",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:text3-role-instruction",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "text3-role-instruction",
+      "candidateRecordSHA256": "d0754c0f45eab6fdc3b2e345403eb936a19f34851bb43b8c7afcfb77bdbed156",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:grammar-heading",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "grammar-heading",
+      "candidateRecordSHA256": "89a9d627c65765fb95e3f4feb38bd6aab0801464cd350086ad82af2a2fc635a7",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p015:grammar3-title",
+      "pdfPage": 29,
+      "printedPage": 15,
+      "section": "grammar3-title",
+      "candidateRecordSHA256": "20d660ab72a67e9ae6faa8ccee134ba7b311f625654e53ab13909115134f526f",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:grammar3-body",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "grammar3-body",
+      "candidateRecordSHA256": "8eb497c60351718f495ac5bfac49e1b8e277e3b9c3f2d90e3ab88b83baa862b6",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:grammar3-completion-instruction",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "grammar3-completion-instruction",
+      "candidateRecordSHA256": "a80b6ee4b6c4fcfd3b8e2381519af7680046d7fb78fa33ca0cc2c674e7763d6d",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-heading",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "text4-heading",
+      "candidateRecordSHA256": "3b108dd814c47b1676cea90d7e1e38bceaadce9f2686aa8cbcfe72e5892e31fb",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-setup",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "text4-setup",
+      "candidateRecordSHA256": "bba09031baf996070a2eb13cf63f0201e29bb5c270a5495c215a3576c431c873",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-listen-instruction",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "text4-listen-instruction",
+      "candidateRecordSHA256": "61cfe2decc09daa6739d982810788992a302683e8b6101f7d091fc99e1c246a3",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-vocabulary-heading",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "text4-vocabulary-heading",
+      "candidateRecordSHA256": "4c448f602e44881a8bbffaf3bbfea0a58bbf51ca1cada201eb108ca8fe529fb6",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:word16",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "word16",
+      "candidateRecordSHA256": "edc2a92fea107a212d5a7762002a039fefc1480dc1637245bf2486ce0502ae49",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-paragraph",
+      "pdfPage": 30,
+      "printedPage": 16,
+      "section": "text4-paragraph",
+      "candidateRecordSHA256": "13e112896aaae9156c73d815ec5e71db063833e5573a65356377f766f6ccedf8",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p017:text4-read-instruction",
+      "pdfPage": 31,
+      "printedPage": 17,
+      "section": "text4-read-instruction",
+      "candidateRecordSHA256": "48aedd9b91462eb2e34061448e0be3c4e4dd8e2a7dd5a2fec143ce90a190f789",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p017:integrated-heading",
+      "pdfPage": 31,
+      "printedPage": 17,
+      "section": "integrated-heading",
+      "candidateRecordSHA256": "45983f7be617fe33b002f1b002cdd1d947a0292b35ee411703aee7590582c038",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p017:integrated1-instruction",
+      "pdfPage": 31,
+      "printedPage": 17,
+      "section": "integrated1-instruction",
+      "candidateRecordSHA256": "6a353e5c0de4f0133079d6c81aadb5ab6d7d2789cbd7a725f3b1d2a6cdf7c07d",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p017:integrated2-instruction",
+      "pdfPage": 31,
+      "printedPage": 17,
+      "section": "integrated2-instruction",
+      "candidateRecordSHA256": "e5d53d1092c5d48c5f2714f45f016c2370031b8810d266fda380346739589be9",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:classroom-heading",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "classroom-heading",
+      "candidateRecordSHA256": "be23eb8933ead5e8d291f987f123909fb4c8c6dfaac17b9708374c1484fed420",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:roleplay-label",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "roleplay-label",
+      "candidateRecordSHA256": "5f1320988805a2ce458f6fb3f4c53bc46c916162f223287500e631d91e3f00d5",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:roleplay-instruction",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "roleplay-instruction",
+      "candidateRecordSHA256": "e15366e4228bfbc08a4c020f52a511714ffd59641758313fc40b05907a5ce42e",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:roleplay-example-label",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "roleplay-example-label",
+      "candidateRecordSHA256": "400ff9e0af21937295bad644d1f439bdf152e70412ce6f32cec325b6cd137c17",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:bonus-heading",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "bonus-heading",
+      "candidateRecordSHA256": "f3a89b8c3979e62e7411fed1eb9331bb02f104b3ae16d48e40b8f193eea50452",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p018:bonus-video-caption",
+      "pdfPage": 32,
+      "printedPage": 18,
+      "section": "bonus-video-caption",
+      "candidateRecordSHA256": "7cb32cf614da2b0cb69994d3a3d3353175b2d9d9f78012ecc0034bbcc53981e8",
+      "reviewScope": [
+        "actual page identity/footer",
+        "Chinese anchor at actual source page/span",
+        "Vietnamese printed words/accents and full-role text if present",
+        "printed POS labels/ordinal if present",
+        "within-page Vietnamese omissions"
+      ],
+      "status": "independently-source-accepted",
+      "requiredRepairs": [],
+      "consumerMappingsAccepted": false,
+      "websiteViComparison": false
+    }
+  ],
+  "verifiedSpecialCases": [
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:grammar3-body",
+      "status": "source-accepted-cross-page-span-confirmed",
+      "viPage": {
+        "printed": 16,
+        "pdf": 30
+      },
+      "chineseAnchorPage": {
+        "printed": 15,
+        "pdf": 29
+      },
+      "sourceCandidateHasCorrectZhAnchorPrintedPage": true,
+      "optionalMetadataRecommendation": {
+        "field": "zhAnchorPDFPage",
+        "value": 29
+      },
+      "note": "Keep vi actual page and explicit Chinese page span; do not flatten both to either source page."
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:text4-paragraph",
+      "status": "source-accepted-whole-paragraph",
+      "speakerPrinted": false,
+      "wholeParagraphPreserved": true,
+      "numbersPreserved": "40 000",
+      "sentenceOrWebsiteLineMappingAccepted": false
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p013:word09",
+      "status": "source-accepted-multi-pos-raw-row",
+      "rawPrintedPosLabels": [
+        "lượng.",
+        "dt."
+      ],
+      "rawLabelLayout": "lượng./dt.",
+      "websiteSenseMappingAccepted": false
+    }
+  ],
+  "boundaries": {
+    "wholeInputSourceAccepted": false,
+    "awaits": "Author repair of F1/F2 and independent final-byte/diff verification; optional cross-page metadata has no additional source correction requirement.",
+    "authorInputModifiedByReviewer": false,
+    "productionEdits": 0,
+    "websiteVIReadOrCompared": false,
+    "websiteOfficialAlignmentCompleted": false,
+    "activeRevisionAccepted": false,
+    "browserTests": 0,
+    "deviceTests": 0,
+    "humanOrNativeListening": 0,
+    "hsk1SelfAcceptance": false
+  }
+}

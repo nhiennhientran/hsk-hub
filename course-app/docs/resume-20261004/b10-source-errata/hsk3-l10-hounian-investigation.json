@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-10-04T19:59:56.105893+00:00",
+  "status": "investigated-resolution-proposed-awaiting-consumer-independent-review",
+  "erratumId": "hsk3-vi-20261004:l10:hounian-word26",
+  "classification": "official-book-erratum",
+  "officialPDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+  "conflictingPrintedSource": {
+    "pdfPage": 104,
+    "printedPage": 92,
+    "section": "text4-new-words",
+    "printedNumber": 26,
+    "zh": "后年",
+    "printedVi": "năm kia, năm sau",
+    "sourceOccurrenceId": "hsk3-official-vi-20261004:l10:pdf104:vn08",
+    "originalPDFIndependentCrop": {
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p104-vocab-detail.png",
+      "sha256": "040284a180cd54064c252eb52bdae9afe9ef48c940fe72fc6786a7ec076289be"
+    },
+    "rootActualVisualRead": true
+  },
+  "sameBookCorrectContext": {
+    "pdfPage": 202,
+    "printedPage": 190,
+    "section": "lesson10-text4-letter-paragraph2",
+    "printedViPhrase": "năm sau nữa",
+    "sourceTranscriptionFile": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l10/appendix-lesson10-vietnamese-transcription.json",
+    "independentOriginalPageReview": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/review.json"
+  },
+  "primaryDictionary": {
+    "publisher": "Ministry of Education, Revised Mandarin Chinese Dictionary",
+    "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=81393&la=0&powerMode=0",
+    "accessedAtUTC": "2026-10-04T19:59:56.107169+00:00",
+    "rootRetrievalRef": "turn18view0",
+    "modernDefinitionParaphrase": "The year immediately following next year. The separate historical usage is not the modern sense taught in this lesson."
+  },
+  "actualWebsite": {
+    "wordId": "hsk3-fltrp-2026:l10:word30",
+    "currentVi": "năm sau nữa",
+    "lessonTextLineId": "hsk3-fltrp-2026:l10:text4:line2"
+  },
+  "proposedResolution": {
+    "decision": "retain-correct-current",
+    "vi": "năm sau nữa",
+    "reason": "Use the same book’s correctly translated appendix in the matching lesson context, supported by the primary modern Chinese definition; preserve the conflicting printed vocabulary text in evidence."
+  },
+  "activeChange": false,
+  "websiteAlignmentAccepted": false,
+  "publicationApproved": false
+}

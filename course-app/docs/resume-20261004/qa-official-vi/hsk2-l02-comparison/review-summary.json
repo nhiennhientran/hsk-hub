@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "author": "qa_hsk1_05_08",
+  "createdAtUTC": "2026-10-04T20:06:57.163683+00:00",
+  "status": "B10-H2L2-authored-comparison-proposals-awaiting-independent-review-not-activated",
+  "inventoryBaseline": {
+    "sourceHEAD": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+    "runtimeFiles": 837,
+    "occurrences": 46463,
+    "semanticBindings": 4293,
+    "currentHeadObserved": "a74af8310a47bed541717d5e53c6052314207aab",
+    "runtimeInputHashesEqualAcceptedInventory": true
+  },
+  "officialSource": {
+    "transcriptionSHA256": "6c911ccfa8bc58ba8e4d16f03f285a9c1c29ec34572450a1fccf70f9ad3c1d8d",
+    "acceptanceSHA256": "77ec01a82293897b208cffd843d70d215ba2a4f5eac931826903ab0bb641181b",
+    "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+    "sourceOccurrenceCount": 104,
+    "pdfPages": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "printedPages": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  "counts": {
+    "lessonOccurrences": 476,
+    "lessonLearningCandidates": 458,
+    "lessonOtherMetadata": 18,
+    "canonicalVIAndPOSOccurrences": 34,
+    "canonicalSenses": 17,
+    "canonicalCrossLessonSources": 0,
+    "courseIndexTitleOccurrences": 1,
+    "rawSVGNodes": 13,
+    "auxiliaryAssetBindings": 13,
+    "classifiedWebsiteOccurrences": 524,
+    "proposalOccurrences": 150,
+    "sourceUnitsWithConsumers": 81,
+    "sourceUnitsWithoutDirectConsumer": 23,
+    "sharedDynamicUILabelOccurrences": 4,
+    "excludedUnrelatedLegacySameOrdinalOccurrences": 187,
+    "decisions": {
+      "propose-align-to-official": 130,
+      "keep-editorial-no-complete-printed-counterpart": 292,
+      "propose-editorial-terminology-consistency": 20,
+      "match-exact": 30,
+      "keep-compatible-pos-label-sealed": 34,
+      "pending-official-source-outside-pilot": 18
+    }
+  },
+  "assessmentSealSHA256": "1ef506798bea61589caf85cb734b8de71fe3793ffb552cb92b5f6fdbb385e9d1",
+  "activationAllowed": false,
+  "runtimeMutations": 0,
+  "historicalVersionPolicy": "New display revision must retain raw lesson and old saved question/attempt snapshots; no guessed edition for unsnapshotted old attempts. These proposals are expected-value bound and do not mutate IDs or results.",
+  "unresolvedGates": [
+    "Independent website comparison review still required; source acceptance is separate.",
+    "Root must unify overlay schema and implement course/lesson-scoped display projection, including the four dynamic UI labels.",
+    "18 appendix/star metadata leaves require separate official appendix source review; not accepted by nine body pages.",
+    "Official grammar body and existing editorial explanation need separate labels/preservation decision.",
+    "Vietnamese speaker label display does not exist as a current VI leaf; do not change sealed Chinese speaker labels or invent a printed speaker for text4."
+  ],
+  "boundaries": [
+    "104 is a source occurrence count, not a website completion rate.",
+    "524 classified leaves include exact matches, proposals, editorial text, sealed compatible POS and pending outside-source metadata. This is not 524 official printed translations.",
+    "Editor-authored VN questions/answers/ALT are not certified as printed textbook Vietnamese.",
+    "Original source SHA/PDF offset remains unchanged; official source references have their own new edition hash and page identities.",
+    "This review does not run browser/native assistive technology or human/native language certification.",
+    "No runtime, raw lesson, lexicon, SVG, scoring, ASR evidence or deployment was changed."
+  ],
+  "authoringValidation": {
+    "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-comparison/validation.json",
+    "sha256": "16a21c97bb3b57c5638a17269664a669581ee970fc3b987030efb321b92a3dd6",
+    "checksPassed": 11,
+    "runtimeWrites": 0,
+    "notIndependentLanguageAcceptance": true
+  },
+  "editorialPreservationRequiredCount": 5,
+  "semanticBindingsReviewed": 39
+}

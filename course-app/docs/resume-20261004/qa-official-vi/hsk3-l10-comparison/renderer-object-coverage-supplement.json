@@ -1,0 +1,158 @@
+{
+  "status": "bounded actual AST coverage counterexample; frozen inventory and builder not changed",
+  "originalInventorySHA256": "e8dce986db3af83eabff448cc14ff2c82b84046ac11bacde98633f976050d490",
+  "defect": "Original walkAST excludes every key named value, including Property.value AST child nodes. Explicit {zh,vi} object literals are not walked. Bounded scanner traverses value only when it is an actual AST node; primitive string literal values are not recursively walked.",
+  "files": [
+    {
+      "file": "course-app/src/dom.ts",
+      "correctedASTLanguageCandidateCount": 2,
+      "oldInventoryCount": 0,
+      "sourceSHA256": "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e",
+      "originalSnapshotSHA256": "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e",
+      "sameBytesAsOriginalSnapshot": true
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "correctedASTLanguageCandidateCount": 87,
+      "oldInventoryCount": 85,
+      "sourceSHA256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "originalSnapshotSHA256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "sameBytesAsOriginalSnapshot": true
+    }
+  ],
+  "outsideScopeCurrentSourceDrift": {
+    "file": "course-app/src/main.ts",
+    "originalSnapshotSHA256": "9f0309622e30f4362132ddfa381b18494de99df3761ae609cd5c60b9bbaa928d",
+    "currentSHA256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744",
+    "reason": "Main shell has changed since the frozen835 snapshot. Original literal byte ranges cannot be reused as current identity; this supplement makes no main.ts coverage verdict."
+  },
+  "parseChecks": [
+    {
+      "file": "course-app/src/dom.ts",
+      "passed": true
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "passed": true
+    }
+  ],
+  "missingCount": 4,
+  "rows": [
+    {
+      "targetRecordId": "486636480c2bd1ec6ce1698b",
+      "file": "course-app/src/dom.ts",
+      "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+      "field": null,
+      "astPointer": "/body/4/declaration/body/body/0/argument/arguments/1/properties/1/value",
+      "codeRange": {
+        "start": 1018,
+        "end": 1076,
+        "line": 5,
+        "column": 139
+      },
+      "oldValue": "SGK trang ${expression}${expression}",
+      "newValue": "SGK trang ${expression}${expression}",
+      "expected": null,
+      "expectedSourceWording": null,
+      "expectedEffectiveValue": "SGK trang ${expression}${expression}",
+      "oldValueRole": "actual unchanged baseline",
+      "sourceIDs": [],
+      "chineseContext": "教材第${expression}页${expression}",
+      "decision": "editorial",
+      "rationale": "Current code-object locale/presentation producer candidate missing from original inventory; no literal chapter publisher counterpart. Preserve current text provisionally, retain the actual AST location and separately record the coverage defect.",
+      "consumerBinding": {
+        "role": "actual sourceNote helper text / conditional supplemental note"
+      },
+      "acceptance": "bounded independent coverage supplement, not a publisher translation acceptance",
+      "productionEdit": false,
+      "missingFromOriginalInventory": true
+    },
+    {
+      "targetRecordId": "f8a79f71bf51d495bbabb9e7",
+      "file": "course-app/src/dom.ts",
+      "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+      "field": null,
+      "astPointer": "/body/4/declaration/body/body/0/argument/arguments/1/properties/1/value/expressions/1/consequent",
+      "codeRange": {
+        "start": 1051,
+        "end": 1071,
+        "line": 5,
+        "column": 172
+      },
+      "oldValue": " · Nội dung bổ trợ",
+      "newValue": " · Nội dung bổ trợ",
+      "expected": null,
+      "expectedSourceWording": null,
+      "expectedEffectiveValue": " · Nội dung bổ trợ",
+      "oldValueRole": "actual unchanged baseline",
+      "sourceIDs": [],
+      "chineseContext": "教材第${expression}页${expression}",
+      "decision": "editorial",
+      "rationale": "Current code-object locale/presentation producer candidate missing from original inventory; no literal chapter publisher counterpart. Preserve current text provisionally, retain the actual AST location and separately record the coverage defect.",
+      "consumerBinding": {
+        "role": "actual sourceNote helper text / conditional supplemental note"
+      },
+      "acceptance": "bounded independent coverage supplement, not a publisher translation acceptance",
+      "productionEdit": false,
+      "missingFromOriginalInventory": true
+    },
+    {
+      "targetRecordId": "301dd0ef4af3563f962d8bd0",
+      "file": "course-app/src/lesson-view.ts",
+      "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+      "field": null,
+      "astPointer": "/body/12/declaration/body/body/24/body/body/2/body/body/0/declarations/0/init/properties/6/value/elements/0/properties/1/value/arguments/1",
+      "codeRange": {
+        "start": 17827,
+        "end": 17848,
+        "line": 382,
+        "column": 34
+      },
+      "oldValue": "Câu trả lời của bạn",
+      "newValue": "Câu trả lời của bạn",
+      "expected": null,
+      "expectedSourceWording": null,
+      "expectedEffectiveValue": "Câu trả lời của bạn",
+      "oldValueRole": "actual unchanged baseline",
+      "sourceIDs": [],
+      "chineseContext": null,
+      "decision": "editorial",
+      "rationale": "Current code-object locale/presentation producer candidate missing from original inventory; no literal chapter publisher counterpart. Preserve current text provisionally, retain the actual AST location and separately record the coverage defect.",
+      "consumerBinding": {
+        "role": "shared current shell/helper static producer; branch activation is not certified by this scan"
+      },
+      "acceptance": "bounded independent coverage supplement, not a publisher translation acceptance",
+      "productionEdit": false,
+      "missingFromOriginalInventory": true
+    },
+    {
+      "targetRecordId": "ffa88f5a657787ddef6b8002",
+      "file": "course-app/src/lesson-view.ts",
+      "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+      "field": null,
+      "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/8/arguments/1/body/body/0/expression/argument/arguments/1/properties/0/value",
+      "codeRange": {
+        "start": 22126,
+        "end": 22159,
+        "line": 489,
+        "column": 26
+      },
+      "oldValue": "合成语音 · Giọng tổng hợp · ${expression}",
+      "newValue": "合成语音 · Giọng tổng hợp · ${expression}",
+      "expected": null,
+      "expectedSourceWording": null,
+      "expectedEffectiveValue": "合成语音 · Giọng tổng hợp · ${expression}",
+      "oldValueRole": "actual unchanged baseline",
+      "sourceIDs": [],
+      "chineseContext": null,
+      "decision": "editorial",
+      "rationale": "Current code-object locale/presentation producer candidate missing from original inventory; no literal chapter publisher counterpart. Preserve current text provisionally, retain the actual AST location and separately record the coverage defect.",
+      "consumerBinding": {
+        "role": "shared current shell/helper static producer; branch activation is not certified by this scan"
+      },
+      "acceptance": "bounded independent coverage supplement, not a publisher translation acceptance",
+      "productionEdit": false,
+      "missingFromOriginalInventory": true
+    }
+  ]
+}

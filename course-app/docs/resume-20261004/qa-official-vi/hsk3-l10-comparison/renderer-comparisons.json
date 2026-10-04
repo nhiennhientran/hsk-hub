@@ -1,0 +1,3421 @@
+[
+  {
+    "targetRecordId": "47c410eef5f8b51bc7067d17",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "sections",
+    "oldValue": "Mở đầu",
+    "chineseContext": "导学",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:sections:/body/10/declarations/0/init/elements/0/elements/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Mở đầu",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/10/declarations/0/init/elements/0/elements/1/arguments/1",
+    "codeRange": {
+      "start": 1196,
+      "end": 1204,
+      "line": 29,
+      "column": 27
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Mở đầu",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "4223b26fa56c2d3c961fe127",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "sections",
+    "oldValue": "Từ vựng",
+    "chineseContext": "词汇",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:sections:/body/10/declarations/0/init/elements/1/elements/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Từ vựng",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/10/declarations/0/init/elements/1/elements/1/arguments/1",
+    "codeRange": {
+      "start": 1231,
+      "end": 1240,
+      "line": 30,
+      "column": 24
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Từ vựng",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "e0082d6c279282ebaeff0314",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "sections",
+    "oldValue": "Bài khóa",
+    "chineseContext": "课文",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:sections:/body/10/declarations/0/init/elements/2/elements/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context",
+      "globalChangeRequiresOtherCourseReview": true
+    },
+    "sourceIDs": [
+      "hsk3-official-vi-20261004:l10:pdf99:vn02",
+      "hsk3-official-vi-20261004:l10:pdf100:vn07",
+      "hsk3-official-vi-20261004:l10:pdf102:vn07",
+      "hsk3-official-vi-20261004:l10:pdf104:vn03"
+    ],
+    "expected": "Bài khoá",
+    "newValue": "Bài khoá",
+    "decision": "variant",
+    "rationale": "The same Chinese/source anchor has a printed Vietnamese counterpart. Current wording is a translation or presentation variant; proposed display wording follows the official edition.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/10/declarations/0/init/elements/2/elements/1/arguments/1",
+    "codeRange": {
+      "start": 1266,
+      "end": 1276,
+      "line": 31,
+      "column": 23
+    },
+    "sourceEvidence": [
+      {
+        "pdfPage": 99,
+        "printedPage": 87,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf99:vn02",
+        "printedVietnamese": "Bài khoá 1",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 100,
+        "printedPage": 88,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf100:vn07",
+        "printedVietnamese": "Bài khoá 2",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 102,
+        "printedPage": 90,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf102:vn07",
+        "printedVietnamese": "Bài khoá 3",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 104,
+        "printedPage": 92,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf104:vn03",
+        "printedVietnamese": "Bài khoá 4",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      }
+    ],
+    "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display.",
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": "Bài khoá",
+    "expectedEffectiveValue": "Bài khoá",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "c333deaf9d0195239c6a7c91",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "sections",
+    "oldValue": "Ngữ pháp",
+    "chineseContext": "语言点",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:sections:/body/10/declarations/0/init/elements/3/elements/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Ngữ pháp",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/10/declarations/0/init/elements/3/elements/1/arguments/1",
+    "codeRange": {
+      "start": 1306,
+      "end": 1316,
+      "line": 32,
+      "column": 27
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Ngữ pháp",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "caa7dee7d5bde50b0b9eff58",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "sections",
+    "oldValue": "Chữ Hán",
+    "chineseContext": "汉字",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:sections:/body/10/declarations/0/init/elements/4/elements/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Chữ Hán",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/10/declarations/0/init/elements/4/elements/1/arguments/1",
+    "codeRange": {
+      "start": 1343,
+      "end": 1352,
+      "line": 33,
+      "column": 24
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Chữ Hán",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "34c06fa29cb814e143c58563",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "sections",
+    "oldValue": "Bài tập SGK",
+    "chineseContext": "教材练习",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:sections:/body/10/declarations/0/init/elements/5/elements/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Bài tập SGK",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/10/declarations/0/init/elements/5/elements/1/arguments/1",
+    "codeRange": {
+      "start": 1384,
+      "end": 1397,
+      "line": 34,
+      "column": 29
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Bài tập SGK",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "7b96ba38ea1b737054f879f8",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "sections",
+    "oldValue": "Mở rộng & tự đánh giá",
+    "chineseContext": "拓展与自评",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:sections:/body/10/declarations/0/init/elements/6/elements/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Mở rộng & tự đánh giá",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/10/declarations/0/init/elements/6/elements/1/arguments/1",
+    "codeRange": {
+      "start": 1429,
+      "end": 1452,
+      "line": 35,
+      "column": 29
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Mở rộng & tự đánh giá",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "1ea8b7af59777839287bc3ff",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "BÀI ${expression}",
+    "chineseContext": "第${expression}课",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/6/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [
+      "hsk3-official-vi-20261004:l10:pdf98:vn01",
+      "hsk3-official-vi-20261004:l10:pdf99:vn01",
+      "hsk3-official-vi-20261004:l10:pdf101:vn01",
+      "hsk3-official-vi-20261004:l10:pdf103:vn01",
+      "hsk3-official-vi-20261004:l10:pdf105:vn01"
+    ],
+    "expected": "Bài ${expression}",
+    "newValue": "BÀI ${expression}",
+    "decision": "match-normalized-heading-style",
+    "rationale": "Hero instantiates BÀI 10 from the real lesson number. Printed Bài 10 differs only in intentional uppercase heading style; preserve that style and do not manufacture a missing Vietnamese lesson-number field.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/6/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 2041,
+      "end": 2058,
+      "line": 58,
+      "column": 91
+    },
+    "sourceEvidence": [
+      {
+        "pdfPage": 98,
+        "printedPage": 86,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf98:vn01",
+        "printedVietnamese": "Bài 10",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 99,
+        "printedPage": 87,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf99:vn01",
+        "printedVietnamese": "Bài 10",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 101,
+        "printedPage": 89,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf101:vn01",
+        "printedVietnamese": "Bài 10",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 103,
+        "printedPage": 91,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf103:vn01",
+        "printedVietnamese": "Bài 10",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 105,
+        "printedPage": 93,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf105:vn01",
+        "printedVietnamese": "Bài 10",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      }
+    ],
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": "Bài ${expression}",
+    "expectedEffectiveValue": "BÀI ${expression}",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "8dd7ef25626da521f3c844b5",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "教材分部 · Các mục giáo trình",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/9/expression/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "教材分部 · Các mục giáo trình",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/9/expression/arguments/1",
+    "codeRange": {
+      "start": 2191,
+      "end": 2218,
+      "line": 60,
+      "column": 37
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "教材分部 · Các mục giáo trình",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "248c16e01254bd0c68688089",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "activity",
+    "oldValue": "Nghe âm thanh gốc bài này",
+    "chineseContext": "听本篇原音",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:activity:/body/12/declaration/body/body/21/body/body/2/consequent/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Nghe âm thanh gốc bài này",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/2/consequent/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 3608,
+      "end": 3635,
+      "line": 94,
+      "column": 74
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Nghe âm thanh gốc bài này",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "25bd07c330ceb38104663d59",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "activity",
+    "oldValue": "Nghe ${expression} lần rồi trả lời câu hỏi.",
+    "chineseContext": "先听${expression}遍，再回答问题。",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:activity:/body/12/declaration/body/body/21/body/body/3/consequent/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Nghe ${expression} lần rồi trả lời câu hỏi.",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/3/consequent/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 3724,
+      "end": 3777,
+      "line": 95,
+      "column": 85
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Nghe ${expression} lần rồi trả lời câu hỏi.",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "051128d3f9297e0430a2b185",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "field",
+    "oldValue": "Tùy chọn, có thể để trống",
+    "chineseContext": "可选，可留空",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:field:/body/12/declaration/body/body/21/body/body/13/body/body/6/consequent/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Tùy chọn, có thể để trống",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/13/body/body/6/consequent/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 5593,
+      "end": 5620,
+      "line": 132,
+      "column": 66
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Tùy chọn, có thể để trống",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "1f90eb3ed08ae77aff958fd4",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "empty",
+    "oldValue": "选 · Chọn",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:empty:/body/12/declaration/body/body/21/body/body/13/body/body/8/consequent/body/2/declarations/0/init/arguments/1/consequent",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "选 · Chọn",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/13/body/body/8/consequent/body/2/declarations/0/init/arguments/1/consequent",
+    "codeRange": {
+      "start": 5844,
+      "end": 5854,
+      "line": 139,
+      "column": 20
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "选 · Chọn",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "14eeb1eb245e96f4df00c001",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "empty",
+    "oldValue": "Hãy chọn",
+    "chineseContext": "请选择",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:empty:/body/12/declaration/body/body/21/body/body/13/body/body/8/consequent/body/2/declarations/0/init/arguments/1/alternate/left/object/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Hãy chọn",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/13/body/body/8/consequent/body/2/declarations/0/init/arguments/1/alternate/left/object/arguments/1",
+    "codeRange": {
+      "start": 5869,
+      "end": 5879,
+      "line": 139,
+      "column": 45
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Hãy chọn",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "7f591e8fdb5e5601ea8577f2",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "empty",
+    "oldValue": " · Hãy chọn",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:empty:/body/12/declaration/body/body/21/body/body/13/body/body/8/consequent/body/2/declarations/0/init/arguments/1/alternate/right",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": " · Hãy chọn",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/13/body/body/8/consequent/body/2/declarations/0/init/arguments/1/alternate/right",
+    "codeRange": {
+      "start": 5886,
+      "end": 5899,
+      "line": 139,
+      "column": 62
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": " · Hãy chọn",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "d26fa7e8ca06ba28740760dd",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "subject",
+    "oldValue": "Ngữ pháp và ví dụ",
+    "chineseContext": "语言点与例句",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:subject:/body/12/declaration/body/body/21/body/body/17/alternate/consequent/body/6/declarations/0/init/arguments/1/right/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Ngữ pháp và ví dụ",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/17/alternate/consequent/body/6/declarations/0/init/arguments/1/right/arguments/1",
+    "codeRange": {
+      "start": 9575,
+      "end": 9594,
+      "line": 195,
+      "column": 64
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Ngữ pháp và ví dụ",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "293e3a60588489240cdd738f",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "activity",
+    "oldValue": "Vuốt ngang để xem các cột còn lại",
+    "chineseContext": "左右滑动查看表格的其余列",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:activity:/body/12/declaration/body/body/21/body/body/17/alternate/consequent/body/17/consequent/body/5/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Vuốt ngang để xem các cột còn lại",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/17/alternate/consequent/body/17/consequent/body/5/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 11358,
+      "end": 11393,
+      "line": 200,
+      "column": 302
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Vuốt ngang để xem các cột còn lại",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "81918c99e8bb5d93c4bd9306",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "showFeedback",
+    "oldValue": "Trả lời đúng",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:showFeedback:/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/consequent/body/3/expression/arguments/0/arguments/1/arguments/1/consequent",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Trả lời đúng",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/consequent/body/3/expression/arguments/0/arguments/1/arguments/1/consequent",
+    "codeRange": {
+      "start": 12236,
+      "end": 12250,
+      "line": 222,
+      "column": 27
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Trả lời đúng",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "4af9a79afc6131cd3da5ec20",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "showFeedback",
+    "oldValue": "Hãy xem lại câu này",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:showFeedback:/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/consequent/body/3/expression/arguments/0/arguments/1/arguments/1/alternate",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Hãy xem lại câu này",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/consequent/body/3/expression/arguments/0/arguments/1/arguments/1/alternate",
+    "codeRange": {
+      "start": 12253,
+      "end": 12274,
+      "line": 222,
+      "column": 44
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Hãy xem lại câu này",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "56aa100f578bc2e606b7b0c3",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "showFeedback",
+    "oldValue": "Đáp án: ",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:showFeedback:/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/consequent/body/3/expression/arguments/1/arguments/1/arguments/1/left",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đáp án: ",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/consequent/body/3/expression/arguments/1/arguments/1/arguments/1/left",
+    "codeRange": {
+      "start": 12427,
+      "end": 12437,
+      "line": 229,
+      "column": 17
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đáp án: ",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "e4ef09d90a11ca7b8ea5310c",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "showFeedback",
+    "oldValue": "Đáp án kèm sách · PDF trang ${expression}",
+    "chineseContext": "配套客观题答案 · PDF第${expression}页",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:showFeedback:/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/consequent/body/4/consequent/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đáp án kèm sách · PDF trang ${expression}",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/consequent/body/4/consequent/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 12708,
+      "end": 12763,
+      "line": 239,
+      "column": 19
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đáp án kèm sách · PDF trang ${expression}",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "a730d9efc6c6cf7c211660ee",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "showFeedback",
+    "oldValue": "Một cách diễn đạt tham khảo (không phải đáp án duy nhất)",
+    "chineseContext": "一种参考表达（不是唯一答案）",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:showFeedback:/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/alternate/consequent/body/0/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Một cách diễn đạt tham khảo (không phải đáp án duy nhất)",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/alternate/consequent/body/0/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 13022,
+      "end": 13080,
+      "line": 250,
+      "column": 17
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Một cách diễn đạt tham khảo (không phải đáp án duy nhất)",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "4ded8b575c76beb20c49d49f",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "showFeedback",
+    "oldValue": "Đây là nhiệm vụ mở. Trả lời theo giáo trình và tình huống của bạn; có thể nhờ giáo viên góp ý.",
+    "chineseContext": "这是开放任务。请结合教材与自己的情况回答，可请老师反馈。",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:showFeedback:/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/alternate/alternate/consequent/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đây là nhiệm vụ mở. Trả lời theo giáo trình và tình huống của bạn; có thể nhờ giáo viên góp ý.",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/1/alternate/alternate/consequent/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 13356,
+      "end": 13452,
+      "line": 261,
+      "column": 17
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đây là nhiệm vụ mở. Trả lời theo giáo trình và tình huống của bạn; có thể nhờ giáo viên góp ý.",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "9a289138f8b459b312aba67c",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "showFeedback",
+    "oldValue": "编辑说明 · Ghi chú biên tập",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:showFeedback:/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/3/consequent/body/1/expression/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "编辑说明 · Ghi chú biên tập",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/19/body/body/1/body/body/3/consequent/body/1/expression/arguments/1",
+    "codeRange": {
+      "start": 13718,
+      "end": 13743,
+      "line": 266,
+      "column": 110
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "编辑说明 · Ghi chú biên tập",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "11e4123e1e2b25973bf774d9",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "showFeedback",
+    "oldValue": "Đã ghi nhận tự đánh giá; không tính vào điểm bài tập",
+    "chineseContext": "已记录你的自评，不计入作业分数",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:showFeedback:/body/12/declaration/body/body/21/body/body/19/body/body/3/consequent/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đã ghi nhận tự đánh giá; không tính vào điểm bài tập",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/19/body/body/3/consequent/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 14117,
+      "end": 14171,
+      "line": 275,
+      "column": 15
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đã ghi nhận tự đánh giá; không tính vào điểm bài tập",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "d67f9d7e6adf2854b24dcfd8",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "check",
+    "oldValue": "Lưu bản ghi",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:check:/body/12/declaration/body/body/21/body/body/20/declarations/0/init/arguments/0/arguments/1/consequent",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Lưu bản ghi",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/20/declarations/0/init/arguments/0/arguments/1/consequent",
+    "codeRange": {
+      "start": 14432,
+      "end": 14445,
+      "line": 286,
+      "column": 13
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Lưu bản ghi",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "8a11290baafdd4ad726444aa",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "check",
+    "oldValue": "Nộp & xem phản hồi",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:check:/body/12/declaration/body/body/21/body/body/20/declarations/0/init/arguments/0/arguments/1/alternate",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Nộp & xem phản hồi",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/20/declarations/0/init/arguments/0/arguments/1/alternate",
+    "codeRange": {
+      "start": 14458,
+      "end": 14478,
+      "line": 287,
+      "column": 13
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Nộp & xem phản hồi",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "b78750f2532bd0d2a2eb4ad3",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "check",
+    "oldValue": "Hãy hoàn thành nhập liệu hiện tại trước",
+    "chineseContext": "请先完成当前输入法输入",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:check:/body/12/declaration/body/body/21/body/body/20/declarations/0/init/arguments/1/body/body/3/consequent/body/0/expression/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Hãy hoàn thành nhập liệu hiện tại trước",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/20/declarations/0/init/arguments/1/body/body/3/consequent/body/0/expression/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 14689,
+      "end": 14730,
+      "line": 293,
+      "column": 60
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Hãy hoàn thành nhập liệu hiện tại trước",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "8acc35498b7f4e7c4917adf9",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "check",
+    "oldValue": "Hãy điền hết nhóm này trước",
+    "chineseContext": "请先完成本组输入",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:check:/body/12/declaration/body/body/21/body/body/20/declarations/0/init/arguments/1/body/body/5/consequent/body/0/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Hãy điền hết nhóm này trước",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/21/body/body/20/declarations/0/init/arguments/1/body/body/5/consequent/body/0/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 14996,
+      "end": 15025,
+      "line": 299,
+      "column": 38
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Hãy điền hết nhóm này trước",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "61bf7947094018eddb734b36",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Sau bài này, bạn có thể",
+    "chineseContext": "这一课，你能做到",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/consequent/body/1/expression/arguments/1/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Sau bài này, bạn có thể",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/consequent/body/1/expression/arguments/1/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 18405,
+      "end": 18430,
+      "line": 399,
+      "column": 33
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Sau bài này, bạn có thể",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "6bcf5cc6158677e1e4113969",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Bắt đầu với từ vựng",
+    "chineseContext": "开始学词汇",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/consequent/body/3/expression/arguments/0/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Bắt đầu với từ vựng",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/consequent/body/3/expression/arguments/0/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 18550,
+      "end": 18571,
+      "line": 404,
+      "column": 23
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Bắt đầu với từ vựng",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "7e11346156cd8b43b1c64f84",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "汉字 / pinyin / tiếng Việt",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/consequent/body/3/expression/right",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "汉字 / pinyin / tiếng Việt",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/3/expression/right",
+    "codeRange": {
+      "start": 19734,
+      "end": 19760,
+      "line": 442,
+      "column": 26
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "汉字 / pinyin / tiếng Việt",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "60bfe1b91977161cb05c4dde",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "label",
+    "oldValue": "Tìm từ trong bài",
+    "chineseContext": "查找本课词汇",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:label:/body/12/declaration/body/body/25/alternate/consequent/body/4/declarations/0/init/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Tìm từ trong bài",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/4/declarations/0/init/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 19807,
+      "end": 19825,
+      "line": 443,
+      "column": 46
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Tìm từ trong bài",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "e7d040fd8ea88b5d9cfa2de3",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "starLabel",
+    "oldValue": "Chỉ từ đã đánh dấu",
+    "chineseContext": "只看星标",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:starLabel:/body/12/declaration/body/body/25/alternate/consequent/body/9/declarations/0/init/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Chỉ từ đã đánh dấu",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/9/declarations/0/init/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 20004,
+      "end": 20024,
+      "line": 448,
+      "column": 48
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Chỉ từ đã đánh dấu",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "0f8c0c2191718676efe39c81",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "draw",
+    "oldValue": "Không có từ phù hợp",
+    "chineseContext": "没有符合条件的词汇",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:draw:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/2/consequent/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Không có từ phù hợp",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/2/consequent/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 20530,
+      "end": 20551,
+      "line": 462,
+      "column": 47
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Không có từ phù hợp",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "8209e338bbd63dc1446b5a35",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "close",
+    "oldValue": "Đóng",
+    "chineseContext": "关闭",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:close:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/1/declarations/0/init/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đóng",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/1/declarations/0/init/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 20863,
+      "end": 20869,
+      "line": 469,
+      "column": 43
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đóng",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "41436e8d2e2221fdbafcc45a",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "open",
+    "oldValue": "★ Từ mở rộng trong giáo trình (ngoài phạm vi cấp này)",
+    "chineseContext": "★ 教材拓展词（本级超纲）",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:open:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/5/argument/expression/consequent/elements/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "★ Từ mở rộng trong giáo trình (ngoài phạm vi cấp này)",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/5/argument/expression/consequent/elements/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 21306,
+      "end": 21361,
+      "line": 479,
+      "column": 74
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "★ Từ mở rộng trong giáo trình (ngoài phạm vi cấp này)",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "0e025e862d7f74cf7f37f3a9",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "open",
+    "oldValue": "Nghe từ gốc",
+    "chineseContext": "播放单词原音",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:open:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/6/argument/expression/consequent/elements/0/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Nghe từ gốc",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/6/argument/expression/consequent/elements/0/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 21450,
+      "end": 21463,
+      "line": 480,
+      "column": 81
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Nghe từ gốc",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "f733f6d0fbeef1ce8c07b332",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "open",
+    "oldValue": "Chưa phát được âm thanh gốc, hãy thử lại",
+    "chineseContext": "原音未播放，请重试",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:open:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/6/argument/expression/consequent/elements/0/arguments/1/body/body/2/consequent/expression/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Chưa phát được âm thanh gốc, hãy thử lại",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/6/argument/expression/consequent/elements/0/arguments/1/body/body/2/consequent/expression/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 21664,
+      "end": 21706,
+      "line": 480,
+      "column": 295
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Chưa phát được âm thanh gốc, hãy thử lại",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "0dc5575380ee4a405ded64a1",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "open",
+    "oldValue": "Âm thanh riêng của từ này đang chờ kiểm chứng; có thể nghe cả nhóm từ.",
+    "chineseContext": "本词独立原音尚待核验，可听所在整组原音。",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:open:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/6/argument/expression/alternate/elements/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Âm thanh riêng của từ này đang chờ kiểm chứng; có thể nghe cả nhóm từ.",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/6/argument/expression/alternate/elements/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 21748,
+      "end": 21820,
+      "line": 480,
+      "column": 379
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Âm thanh riêng của từ này đang chờ kiểm chứng; có thể nghe cả nhóm từ.",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "30cb40b14558b84f30d53ef7",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "open",
+    "oldValue": "Nghe nhóm từ gốc",
+    "chineseContext": "听所在生词组原音",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:open:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/7/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Nghe nhóm từ gốc",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/7/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 21913,
+      "end": 21931,
+      "line": 483,
+      "column": 32
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Nghe nhóm từ gốc",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "7d32b58efacd126e9a9086c2",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "open",
+    "oldValue": "Giọng tổng hợp · Từ này",
+    "chineseContext": "合成语音 · 单词",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:open:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/8/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Giọng tổng hợp · Từ này",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/8/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 22001,
+      "end": 22026,
+      "line": 486,
+      "column": 33
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Giọng tổng hợp · Từ này",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "90ab9e16ce45e7ae9e5c8930",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "open",
+    "oldValue": "Cách dùng trong bài khóa",
+    "chineseContext": "在课文中这样用",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:open:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/7/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Cách dùng trong bài khóa",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/7/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 22553,
+      "end": 22579,
+      "line": 501,
+      "column": 38
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Cách dùng trong bài khóa",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "3bb7674cc2e9429a56a59528",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "open",
+    "oldValue": "Không thấy dạng từ trùng hoàn toàn trong bài khóa",
+    "chineseContext": "本课文中未找到完全相同词形",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:open:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/8/consequent/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Không thấy dạng từ trùng hoàn toàn trong bài khóa",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/8/consequent/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 22768,
+      "end": 22819,
+      "line": 509,
+      "column": 19
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Không thấy dạng từ trùng hoàn toàn trong bài khóa",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "e83ffcb1a048d0eac696506e",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "open",
+    "oldValue": "Đến bài khóa ${expression}",
+    "chineseContext": "去课文${expression}",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:open:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/9/body/body/1/expression/arguments/3/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đến bài khóa ${expression}",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/9/body/body/1/expression/arguments/3/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 23192,
+      "end": 23221,
+      "line": 520,
+      "column": 43
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đến bài khóa ${expression}",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "f6709f00ed917781c4ef86c8",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "open",
+    "oldValue": "Xem chữ Hán & tập viết",
+    "chineseContext": "查看汉字与书写",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:open:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/10/expression/arguments/0/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Xem chữ Hán & tập viết",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/10/expression/arguments/0/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 23515,
+      "end": 23539,
+      "line": 529,
+      "column": 31
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Xem chữ Hán & tập viết",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "f873a8469fa9ea1478d96761",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "draw",
+    "oldValue": "取消星标 · Bỏ đánh dấu",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:draw:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/6/expression/arguments/1/expressions/0/consequent",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "取消星标 · Bỏ đánh dấu",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/6/expression/arguments/1/expressions/0/consequent",
+    "codeRange": {
+      "start": 24815,
+      "end": 24835,
+      "line": 571,
+      "column": 51
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "取消星标 · Bỏ đánh dấu",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "41afde60e1959f4a5d695274",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "draw",
+    "oldValue": "星标 · Đánh dấu",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:draw:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/6/expression/arguments/1/expressions/0/alternate",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "星标 · Đánh dấu",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/6/expression/arguments/1/expressions/0/alternate",
+    "codeRange": {
+      "start": 24838,
+      "end": 24853,
+      "line": 571,
+      "column": 74
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "星标 · Đánh dấu",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "2fd88a0ac76dcbaf1910207c",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "课文情境 · Ngữ cảnh bài khóa",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/consequent/body/1/expression/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "课文情境 · Ngữ cảnh bài khóa",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/1/expression/arguments/1",
+    "codeRange": {
+      "start": 25320,
+      "end": 25346,
+      "line": 587,
+      "column": 37
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "课文情境 · Ngữ cảnh bài khóa",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "f14105e023cc4c38f94691dc",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "a",
+    "oldValue": "Bài khóa ${expression}",
+    "chineseContext": "课文${expression}",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:a:/body/12/declaration/body/body/25/alternate/alternate/consequent/body/2/body/body/0/declarations/0/init/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context",
+      "globalChangeRequiresOtherCourseReview": true
+    },
+    "sourceIDs": [
+      "hsk3-official-vi-20261004:l10:pdf99:vn02",
+      "hsk3-official-vi-20261004:l10:pdf100:vn07",
+      "hsk3-official-vi-20261004:l10:pdf102:vn07",
+      "hsk3-official-vi-20261004:l10:pdf104:vn03"
+    ],
+    "expected": "Bài khoá ${expression}",
+    "newValue": "Bài khoá ${expression}",
+    "decision": "variant",
+    "rationale": "The same Chinese/source anchor has a printed Vietnamese counterpart. Current wording is a translation or presentation variant; proposed display wording follows the official edition.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/2/body/body/0/declarations/0/init/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 25432,
+      "end": 25454,
+      "line": 590,
+      "column": 31
+    },
+    "sourceEvidence": [
+      {
+        "pdfPage": 99,
+        "printedPage": 87,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf99:vn02",
+        "printedVietnamese": "Bài khoá 1",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 100,
+        "printedPage": 88,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf100:vn07",
+        "printedVietnamese": "Bài khoá 2",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 102,
+        "printedPage": 90,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf102:vn07",
+        "printedVietnamese": "Bài khoá 3",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 104,
+        "printedPage": 92,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf104:vn03",
+        "printedVietnamese": "Bài khoá 4",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      }
+    ],
+    "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display.",
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": "Bài khoá ${expression}",
+    "expectedEffectiveValue": "Bài khoá ${expression}",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "6a081c714ccc254d87499350",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Bài khóa ${expression}",
+    "chineseContext": "课文${expression}",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/consequent/body/5/expression/arguments/0/arguments/1/consequent/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context",
+      "globalChangeRequiresOtherCourseReview": true
+    },
+    "sourceIDs": [
+      "hsk3-official-vi-20261004:l10:pdf99:vn02",
+      "hsk3-official-vi-20261004:l10:pdf100:vn07",
+      "hsk3-official-vi-20261004:l10:pdf102:vn07",
+      "hsk3-official-vi-20261004:l10:pdf104:vn03"
+    ],
+    "expected": "Bài khoá ${expression}",
+    "newValue": "Bài khoá ${expression}",
+    "decision": "variant",
+    "rationale": "The same Chinese/source anchor has a printed Vietnamese counterpart. Current wording is a translation or presentation variant; proposed display wording follows the official edition.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/5/expression/arguments/0/arguments/1/consequent/arguments/1",
+    "codeRange": {
+      "start": 25850,
+      "end": 25875,
+      "line": 602,
+      "column": 38
+    },
+    "sourceEvidence": [
+      {
+        "pdfPage": 99,
+        "printedPage": 87,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf99:vn02",
+        "printedVietnamese": "Bài khoá 1",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 100,
+        "printedPage": 88,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf100:vn07",
+        "printedVietnamese": "Bài khoá 2",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 102,
+        "printedPage": 90,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf102:vn07",
+        "printedVietnamese": "Bài khoá 3",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      },
+      {
+        "pdfPage": 104,
+        "printedPage": 92,
+        "recordId": "hsk3-official-vi-20261004:l10:pdf104:vn03",
+        "printedVietnamese": "Bài khoá 4",
+        "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+      }
+    ],
+    "sourceSpanOnly": "Generic title label, instantiated for source scene ordinals1–4. Actual h2 code overrides text.title.vi when the Chinese heading is 课文N; data-only replacement would miss this display.",
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": "Bài khoá ${expression}",
+    "expectedEffectiveValue": "Bài khoá ${expression}",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "606902aecfbd17b942150d95",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Phát âm thanh gốc bài này",
+    "chineseContext": "播放本篇原音",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/consequent/body/5/expression/arguments/2/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Phát âm thanh gốc bài này",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/5/expression/arguments/2/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 26009,
+      "end": 26036,
+      "line": 608,
+      "column": 24
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Phát âm thanh gốc bài này",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "e8c14de0294cafbceefe8d67",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "pyLabel",
+    "oldValue": "Hiện pinyin hỗ trợ",
+    "chineseContext": "显示拼音辅助",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:pyLabel:/body/12/declaration/body/body/25/alternate/alternate/consequent/body/10/declarations/0/init/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Hiện pinyin hỗ trợ",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/10/declarations/0/init/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 26228,
+      "end": 26248,
+      "line": 617,
+      "column": 22
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Hiện pinyin hỗ trợ",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "76d297df3829cf3d7f6dd10c",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "play",
+    "oldValue": "Âm thanh câu ${expression}",
+    "chineseContext": "第${expression}句原音",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:play:/body/12/declaration/body/body/25/alternate/alternate/consequent/body/17/body/body/4/consequent/body/1/body/body/0/declarations/0/init/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Âm thanh câu ${expression}",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/17/body/body/4/consequent/body/1/body/body/0/declarations/0/init/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 27251,
+      "end": 27289,
+      "line": 635,
+      "column": 156
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Âm thanh câu ${expression}",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "69c600d70081f522040ce968",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "play",
+    "oldValue": "Nghe câu gốc",
+    "chineseContext": "本句原音",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:play:/body/12/declaration/body/body/25/alternate/alternate/consequent/body/17/body/body/4/alternate/consequent/body/0/declarations/0/init/arguments/0/consequent/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Nghe câu gốc",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/17/body/body/4/alternate/consequent/body/0/declarations/0/init/arguments/0/consequent/arguments/1",
+    "codeRange": {
+      "start": 27510,
+      "end": 27524,
+      "line": 635,
+      "column": 415
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Nghe câu gốc",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "592e8e3a320c862c95711d73",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "play",
+    "oldValue": "Nghe đoạn gốc",
+    "chineseContext": "本段原音",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:play:/body/12/declaration/body/body/25/alternate/alternate/consequent/body/17/body/body/4/alternate/consequent/body/0/declarations/0/init/arguments/0/alternate/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Nghe đoạn gốc",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/17/body/body/4/alternate/consequent/body/0/declarations/0/init/arguments/0/alternate/arguments/1",
+    "codeRange": {
+      "start": 27538,
+      "end": 27553,
+      "line": 635,
+      "column": 443
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Nghe đoạn gốc",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "3011a9746cd5570baea507a6",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Hiểu bài khóa",
+    "chineseContext": "理解课文",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/consequent/body/18/expression/arguments/2/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Hiểu bài khóa",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/18/expression/arguments/2/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 27809,
+      "end": 27824,
+      "line": 641,
+      "column": 29
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Hiểu bài khóa",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "102cf5259fbcd6c7c60dd7d6",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Giải thích trong sách",
+    "chineseContext": "教材中的说明",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/alternate/consequent/body/0/body/body/3/consequent/body/1/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Giải thích trong sách",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/alternate/consequent/body/0/body/body/3/consequent/body/1/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 28354,
+      "end": 28377,
+      "line": 653,
+      "column": 135
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Giải thích trong sách",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "5eb10fae3336263fd78dc75d",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Nhóm theo cách dùng trong sách, giữ đầy đủ các ví dụ gốc",
+    "chineseContext": "按教材用法分组，保留全部原例句",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/alternate/consequent/body/0/body/body/6/consequent/body/0/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Nhóm theo cách dùng trong sách, giữ đầy đủ các ví dụ gốc",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/alternate/consequent/body/0/body/body/6/consequent/body/0/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 29134,
+      "end": 29192,
+      "line": 660,
+      "column": 50
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Nhóm theo cách dùng trong sách, giữ đầy đủ các ví dụ gốc",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "171ea54d37c4f025ad86283d",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Luyện tập",
+    "chineseContext": "练一练",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/alternate/consequent/body/0/body/body/10/alternate/expression/arguments/0/body/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Luyện tập",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/alternate/consequent/body/0/body/body/10/alternate/expression/arguments/0/body/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 30051,
+      "end": 30062,
+      "line": 677,
+      "column": 27
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Luyện tập",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "91493b414e8b3da4d8d23da9",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Chữ Hán trong từ vựng bài này · Luyện viết hỗ trợ",
+    "chineseContext": "本课词汇汉字 · 辅助书写",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/alternate/alternate/consequent/body/0/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Chữ Hán trong từ vựng bài này · Luyện viết hỗ trợ",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/alternate/alternate/consequent/body/0/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 30231,
+      "end": 30282,
+      "line": 685,
+      "column": 45
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Chữ Hán trong từ vựng bài này · Luyện viết hỗ trợ",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "37c1b0f939a8587aeb096b59",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Một số nét chưa tải được, hãy thử lại",
+    "chineseContext": "部分笔顺未载入，请重试",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/alternate/alternate/consequent/body/3/expression/argument/arguments/0/body/body/0/consequent/body/2/expression/argument/arguments/0/body/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Một số nét chưa tải được, hãy thử lại",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/alternate/alternate/consequent/body/3/expression/argument/arguments/0/body/body/0/consequent/body/2/expression/argument/arguments/0/body/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 30789,
+      "end": 30828,
+      "line": 700,
+      "column": 15
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Một số nét chưa tải được, hãy thử lại",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "2865187aa22d016b0cb11197",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Bài này không có trang mở rộng hoặc tự tổng kết riêng. Có thể quay lại phần mở đầu để kiểm tra mục tiêu.",
+    "chineseContext": "本课没有单独的拓展或学习小结页。可回到导学检查本课目标。",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/alternate/alternate/alternate/body/2/consequent/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Bài này không có trang mở rộng hoặc tự tổng kết riêng. Có thể quay lại phần mở đầu để kiểm tra mục tiêu.",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/alternate/alternate/alternate/body/2/consequent/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 31358,
+      "end": 31464,
+      "line": 713,
+      "column": 99
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Bài này không có trang mở rộng hoặc tự tổng kết riêng. Có thể quay lại phần mở đầu để kiểm tra mục tiêu.",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "b98c98e523d7059e36c402e2",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Về mục tiêu bài học",
+    "chineseContext": "回到本课目标",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/alternate/alternate/alternate/body/2/consequent/expression/arguments/1/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Về mục tiêu bài học",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/alternate/alternate/alternate/body/2/consequent/expression/arguments/1/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 31486,
+      "end": 31507,
+      "line": 713,
+      "column": 227
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Về mục tiêu bài học",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "ea37fb41f24603046c270547",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "appendHints",
+    "oldValue": "Gợi ý bằng chữ cho hình (có cách diễn đạt tham khảo)",
+    "chineseContext": "图片文字提示（含参考表达）",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:appendHints:/body/12/declaration/body/body/25/alternate/alternate/alternate/alternate/alternate/body/3/body/body/3/declarations/0/init/body/body/2/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Gợi ý bằng chữ cho hình (có cách diễn đạt tham khảo)",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/alternate/alternate/alternate/body/3/body/body/3/declarations/0/init/body/body/2/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 32030,
+      "end": 32084,
+      "line": 721,
+      "column": 60
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Gợi ý bằng chữ cho hình (có cách diễn đạt tham khảo)",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "50eb80f2551603080eb09b6c",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Bản ghi bài tập trước đây (${expression})",
+    "chineseContext": "此前练习记录（${expression}）",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/26/consequent/body/1/consequent/body/1/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Bản ghi bài tập trước đây (${expression})",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/26/consequent/body/1/consequent/body/1/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 33698,
+      "end": 33745,
+      "line": 765,
+      "column": 68
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Bản ghi bài tập trước đây (${expression})",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "d93d43ef88c592542c4c0cb9",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Nơi đây giữ nguyên nội dung đã nhập và trạng thái nộp trước đây để bạn tra cứu. Hãy làm lại các bài tập hiện tại; các bản ghi cũ không tham gia chấm điểm hiện tại. Tên mục và số trang chỉ giúp định vị; bản ghi cũ không lưu ảnh chụp nội dung câu hỏi.",
+    "chineseContext": "这里保留旧版输入和当时的提交状态，供你查阅。当前练习请重新作答；这些历史记录不参与当前评分。栏目和页码仅帮助定位，旧记录没有保存原题快照。",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/26/consequent/body/1/consequent/body/1/expression/arguments/1/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Nơi đây giữ nguyên nội dung đã nhập và trạng thái nộp trước đây để bạn tra cứu. Hãy làm lại các bài tập hiện tại; các bản ghi cũ không tham gia chấm điểm hiện tại. Tên mục và số trang chỉ giúp định vị; bản ghi cũ không lưu ảnh chụp nội dung câu hỏi.",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/26/consequent/body/1/consequent/body/1/expression/arguments/1/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 33832,
+      "end": 34083,
+      "line": 765,
+      "column": 202
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Nơi đây giữ nguyên nội dung đã nhập và trạng thái nộp trước đây để bạn tra cứu. Hãy làm lại các bài tập hiện tại; các bản ghi cũ không tham gia chấm điểm hiện tại. Tên mục và số trang chỉ giúp định vị; bản ghi cũ không lưu ảnh chụp nội dung câu hỏi.",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "251be5653e0e1f3cd8201a01",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Đã nộp trước đây",
+    "chineseContext": "当时已提交",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/26/consequent/body/1/consequent/body/2/body/body/2/expression/arguments/1/arguments/1/consequent/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đã nộp trước đây",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/26/consequent/body/1/consequent/body/2/body/body/2/expression/arguments/1/arguments/1/consequent/arguments/1",
+    "codeRange": {
+      "start": 34371,
+      "end": 34389,
+      "line": 768,
+      "column": 89
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đã nộp trước đây",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "e2163dec19ce9d1e9c47a571",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Chưa nộp trước đây",
+    "chineseContext": "当时未提交",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/26/consequent/body/1/consequent/body/2/body/body/2/expression/arguments/1/arguments/1/alternate/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Chưa nộp trước đây",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/26/consequent/body/1/consequent/body/2/body/body/2/expression/arguments/1/arguments/1/alternate/arguments/1",
+    "codeRange": {
+      "start": 34404,
+      "end": 34424,
+      "line": 768,
+      "column": 122
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Chưa nộp trước đây",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "635a8868e0c5ce167486aae7",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Nội dung cũ ${expression}",
+    "chineseContext": "原输入${expression}",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/26/consequent/body/1/consequent/body/2/body/body/4/body/body/1/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Nội dung cũ ${expression}",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/26/consequent/body/1/consequent/body/2/body/body/4/body/body/1/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 34686,
+      "end": 34710,
+      "line": 770,
+      "column": 181
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Nội dung cũ ${expression}",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "27934b8dcd9a515074f868eb",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Đã đánh dấu",
+    "chineseContext": "已勾选",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/26/consequent/body/1/consequent/body/2/body/body/4/body/body/1/expression/arguments/1/arguments/1/consequent/expression/consequent/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đã đánh dấu",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/26/consequent/body/1/consequent/body/2/body/body/4/body/body/1/expression/arguments/1/arguments/1/consequent/expression/consequent/arguments/1",
+    "codeRange": {
+      "start": 34763,
+      "end": 34776,
+      "line": 770,
+      "column": 258
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đã đánh dấu",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "e61c4e461d0da78d0bbb1cba",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Chưa đánh dấu",
+    "chineseContext": "未勾选",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/26/consequent/body/1/consequent/body/2/body/body/4/body/body/1/expression/arguments/1/arguments/1/consequent/expression/alternate/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Chưa đánh dấu",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/26/consequent/body/1/consequent/body/2/body/body/4/body/body/1/expression/arguments/1/arguments/1/consequent/expression/alternate/arguments/1",
+    "codeRange": {
+      "start": 34789,
+      "end": 34804,
+      "line": 770,
+      "column": 284
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Chưa đánh dấu",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "009e58484fbc90efb5e6043b",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "complete",
+    "oldValue": "Đã học mục này",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:complete:/body/12/declaration/body/body/28/declarations/0/init/arguments/0/arguments/1/consequent",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đã học mục này",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/28/declarations/0/init/arguments/0/arguments/1/consequent",
+    "codeRange": {
+      "start": 35192,
+      "end": 35208,
+      "line": 782,
+      "column": 11
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đã học mục này",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "1f046faee0b10ebea42346ac",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "complete",
+    "oldValue": "Đánh dấu đã học mục này",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:complete:/body/12/declaration/body/body/28/declarations/0/init/arguments/0/arguments/1/alternate",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đánh dấu đã học mục này",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/28/declarations/0/init/arguments/0/arguments/1/alternate",
+    "codeRange": {
+      "start": 35219,
+      "end": 35244,
+      "line": 783,
+      "column": 11
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đánh dấu đã học mục này",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "6ad04695568d7000726ed6ec",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "complete",
+    "oldValue": "Đã học mục này",
+    "chineseContext": "本部分已学",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:complete:/body/12/declaration/body/body/28/declarations/0/init/arguments/1/body/body/1/consequent/body/0/expression/arguments/0/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đã học mục này",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/28/declarations/0/init/arguments/1/body/body/1/consequent/body/0/expression/arguments/0/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 35604,
+      "end": 35620,
+      "line": 792,
+      "column": 36
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đã học mục này",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "2b782d34a8611f77ff8bf248",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Bài tập về nhà · 30 câu",
+    "chineseContext": "课后作业 · 30题",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/31/alternate/expression/arguments/0/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Bài tập về nhà · 30 câu",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/31/alternate/expression/arguments/0/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 36000,
+      "end": 36025,
+      "line": 811,
+      "column": 28
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Bài tập về nhà · 30 câu",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "5b444ef1dc69687d03dc36b3",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Bài trước",
+    "chineseContext": "上一课",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/32/consequent/expression/arguments/0/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Bài trước",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/32/consequent/expression/arguments/0/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 36185,
+      "end": 36196,
+      "line": 819,
+      "column": 21
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Bài trước",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "c24b6e61f0d4cefbe1ba9dab",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Bài tiếp",
+    "chineseContext": "下一课",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/33/consequent/expression/arguments/0/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Bài tiếp",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/33/consequent/expression/arguments/0/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 36429,
+      "end": 36439,
+      "line": 830,
+      "column": 21
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Bài tiếp",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "100f1519491adcd42fcfebd8",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "Luyện nghe độc lập",
+    "chineseContext": "独立听力练习",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/34/expression/arguments/0/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Luyện nghe độc lập",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/34/expression/arguments/0/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 36612,
+      "end": 36632,
+      "line": 838,
+      "column": 34
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Luyện nghe độc lập",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "7f59a52888dcf8fd1b720a90",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "mountLesson",
+    "oldValue": "“Đã học” là dấu đọc cá nhân, không đồng nghĩa với mức độ thành thạo hay điểm thi.",
+    "chineseContext": "“已学”是个人阅读标记，不等同于掌握度或考试成绩。",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/35/expression/arguments/1/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "“Đã học” là dấu đọc cá nhân, không đồng nghĩa với mức độ thành thạo hay điểm thi.",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/12/declaration/body/body/35/expression/arguments/1/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 36779,
+      "end": 36862,
+      "line": 845,
+      "column": 9
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "“Đã học” là dấu đọc cá nhân, không đồng nghĩa với mức độ thành thạo hay điểm thi.",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "9e3cd14946a492f999020e73",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "close",
+    "oldValue": "Đóng hình lớn",
+    "chineseContext": "关闭大图",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:close:/body/13/body/body/2/consequent/body/4/declarations/0/init/arguments/1/body/body/0/declarations/1/init/arguments/0/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Đóng hình lớn",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/13/body/body/2/consequent/body/4/declarations/0/init/arguments/1/body/body/0/declarations/1/init/arguments/0/arguments/1",
+    "codeRange": {
+      "start": 37531,
+      "end": 37546,
+      "line": 864,
+      "column": 114
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Đóng hình lớn",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "731ebf9a6d5d492c08f3806a",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "zoom",
+    "oldValue": "查看示意图 · Xem hình minh họa",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:zoom:/body/13/body/body/2/consequent/body/4/declarations/0/init/arguments/1/body/body/3/expression/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "查看示意图 · Xem hình minh họa",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/13/body/body/2/consequent/body/4/declarations/0/init/arguments/1/body/body/3/expression/arguments/1",
+    "codeRange": {
+      "start": 37653,
+      "end": 37680,
+      "line": 864,
+      "column": 236
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "查看示意图 · Xem hình minh họa",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "78f229d2a4ce35d7c5aeebdf",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "illustration",
+    "oldValue": "放大查看示意图 · Phóng to hình minh họa",
+    "chineseContext": null,
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:illustration:/body/13/body/body/2/consequent/body/6/expression/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "放大查看示意图 · Phóng to hình minh họa",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/13/body/body/2/consequent/body/6/expression/arguments/1",
+    "codeRange": {
+      "start": 38029,
+      "end": 38063,
+      "line": 864,
+      "column": 612
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "放大查看示意图 · Phóng to hình minh họa",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "7fe61629344e780b6b7db36d",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "illustration",
+    "oldValue": "Phóng to",
+    "chineseContext": "放大查看",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:illustration:/body/13/body/body/2/consequent/body/7/expression/arguments/1/arguments/1/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Phóng to",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/13/body/body/2/consequent/body/7/expression/arguments/1/arguments/1/arguments/1",
+    "codeRange": {
+      "start": 38103,
+      "end": 38113,
+      "line": 864,
+      "column": 686
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Phóng to",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "aa2b77afa8a4210dbf5cbdf3",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "itemId": "illustration",
+    "oldValue": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)",
+    "chineseContext": "自制辅助示意图（非教材原图）",
+    "consumerBinding": {
+      "inventorySemanticKey": "active-ui:course-app/src/lesson-view.ts:illustration:/body/13/body/body/3/expression/arguments/0/arguments/1/right/arguments/1",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "ownerKey": null,
+      "visibility": "runtime-source-static-candidate",
+      "sourceRelation": "loader-specific-context"
+    },
+    "sourceIDs": [],
+    "expected": null,
+    "newValue": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)",
+    "decision": "editorial",
+    "rationale": "Shared renderer controls/status/navigation/accessibility text; no literal chapter source counterpart. This record enumerates the actual code branch, not a claim that every conditional branch is activated by this lesson.",
+    "acceptance": "independent comparison proposal; root integration/acceptance pending",
+    "productionEdit": false,
+    "astPointer": "/body/13/body/body/3/expression/arguments/0/arguments/1/right/arguments/1",
+    "codeRange": {
+      "start": 38505,
+      "end": 38551,
+      "line": 877,
+      "column": 9
+    },
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)",
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "486636480c2bd1ec6ce1698b",
+    "file": "course-app/src/dom.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "astPointer": "/body/4/declaration/body/body/0/argument/arguments/1/properties/1/value",
+    "codeRange": {
+      "start": 1018,
+      "end": 1076,
+      "line": 5,
+      "column": 139
+    },
+    "oldValue": "SGK trang ${expression}${expression}",
+    "newValue": "SGK trang ${expression}${expression}",
+    "expected": null,
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "SGK trang ${expression}${expression}",
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "sourceIDs": [],
+    "chineseContext": "教材第${expression}页${expression}",
+    "decision": "editorial",
+    "rationale": "Current code-object locale/presentation producer candidate missing from original inventory; no literal chapter publisher counterpart. Preserve current text provisionally, retain the actual AST location and separately record the coverage defect.",
+    "consumerBinding": {
+      "role": "actual sourceNote helper text / conditional supplemental note"
+    },
+    "acceptance": "bounded independent coverage supplement, not a publisher translation acceptance",
+    "productionEdit": false,
+    "missingFromOriginalInventory": true,
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "f8a79f71bf51d495bbabb9e7",
+    "file": "course-app/src/dom.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "astPointer": "/body/4/declaration/body/body/0/argument/arguments/1/properties/1/value/expressions/1/consequent",
+    "codeRange": {
+      "start": 1051,
+      "end": 1071,
+      "line": 5,
+      "column": 172
+    },
+    "oldValue": " · Nội dung bổ trợ",
+    "newValue": " · Nội dung bổ trợ",
+    "expected": null,
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": " · Nội dung bổ trợ",
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "sourceIDs": [],
+    "chineseContext": "教材第${expression}页${expression}",
+    "decision": "editorial",
+    "rationale": "Current code-object locale/presentation producer candidate missing from original inventory; no literal chapter publisher counterpart. Preserve current text provisionally, retain the actual AST location and separately record the coverage defect.",
+    "consumerBinding": {
+      "role": "actual sourceNote helper text / conditional supplemental note"
+    },
+    "acceptance": "bounded independent coverage supplement, not a publisher translation acceptance",
+    "productionEdit": false,
+    "missingFromOriginalInventory": true,
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "301dd0ef4af3563f962d8bd0",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "astPointer": "/body/12/declaration/body/body/24/body/body/2/body/body/0/declarations/0/init/properties/6/value/elements/0/properties/1/value/arguments/1",
+    "codeRange": {
+      "start": 17827,
+      "end": 17848,
+      "line": 382,
+      "column": 34
+    },
+    "oldValue": "Câu trả lời của bạn",
+    "newValue": "Câu trả lời của bạn",
+    "expected": null,
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "Câu trả lời của bạn",
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "sourceIDs": [],
+    "chineseContext": null,
+    "decision": "editorial",
+    "rationale": "Current code-object locale/presentation producer candidate missing from original inventory; no literal chapter publisher counterpart. Preserve current text provisionally, retain the actual AST location and separately record the coverage defect.",
+    "consumerBinding": {
+      "role": "shared current shell/helper static producer; branch activation is not certified by this scan"
+    },
+    "acceptance": "bounded independent coverage supplement, not a publisher translation acceptance",
+    "productionEdit": false,
+    "missingFromOriginalInventory": true,
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  },
+  {
+    "targetRecordId": "ffa88f5a657787ddef6b8002",
+    "file": "course-app/src/lesson-view.ts",
+    "locationKind": "TypeScript AST literal/template; not a JSON data pointer",
+    "field": null,
+    "astPointer": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/8/arguments/1/body/body/0/expression/argument/arguments/1/properties/0/value",
+    "codeRange": {
+      "start": 22126,
+      "end": 22159,
+      "line": 489,
+      "column": 26
+    },
+    "oldValue": "合成语音 · Giọng tổng hợp · ${expression}",
+    "newValue": "合成语音 · Giọng tổng hợp · ${expression}",
+    "expected": null,
+    "expectedSourceWording": null,
+    "expectedEffectiveValue": "合成语音 · Giọng tổng hợp · ${expression}",
+    "oldValueRole": "actual unchanged runtime baseline; use this string for a guarded replacement precondition",
+    "sourceIDs": [],
+    "chineseContext": null,
+    "decision": "editorial",
+    "rationale": "Current code-object locale/presentation producer candidate missing from original inventory; no literal chapter publisher counterpart. Preserve current text provisionally, retain the actual AST location and separately record the coverage defect.",
+    "consumerBinding": {
+      "role": "shared current shell/helper static producer; branch activation is not certified by this scan"
+    },
+    "acceptance": "bounded independent coverage supplement, not a publisher translation acceptance",
+    "productionEdit": false,
+    "missingFromOriginalInventory": true,
+    "expectedRole": "source-based wording for the matched locus/span, not the old baseline; full effective target is expectedEffectiveValue/newValue"
+  }
+]

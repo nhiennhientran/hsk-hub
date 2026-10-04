@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "status": "independent-source-transcription-accepted-with-one-publisher-source-issue",
+  "reviewer": "remaining_media_audit; independent from transcription author",
+  "sourceRevision": "hsk3-official-vi-20261004",
+  "sourcePDF": {
+    "file": "/workspace/scratch/28b55072841a/upload/HSK3 (3.0).pdf",
+    "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+    "pdfPages": 212,
+    "editionRole": "additional official Vietnamese source; never the missing historical Chinese/English PDF"
+  },
+  "authorInputs": [
+    {
+      "file": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l10/body-vietnamese-transcription.json",
+      "sha256": "e5404cc8e0acd70af21997e0599edacab6eb290b22dc55ba91b25ee8d25d1b4e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l10/appendix-lesson10-vietnamese-transcription.json",
+      "sha256": "ff9d2f2ad097c4c46696dcf95f3e55e431c4f050c006ee3ff4073c6d4af00aa8"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l10/source-preparation-manifest.json",
+      "sha256": "3600d5ea7bfa5499d13609bb658f630158e2ae8659efa6f0eb13ea74d938f25b"
+    }
+  ],
+  "scope": {
+    "bodyPDFPages": [
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106
+    ],
+    "bodyPrintedPagesVisuallyRead": [
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94
+    ],
+    "appendixPDFPages": [
+      201,
+      202
+    ],
+    "appendixPrintedPagesVisuallyRead": [
+      189,
+      190
+    ],
+    "bodySourceLoci": 93,
+    "appendixChineseLinkedRows": 26,
+    "appendixDialogueRows": 21,
+    "appendixStageDirectionRows": 1,
+    "appendixPunctuationRows": 1,
+    "appendixLetterRows": 3,
+    "roleLabels": 3,
+    "printedWordEntries": 28,
+    "stableWordIDLinks": 33,
+    "bodyAndAppendixAcceptedRows": 119,
+    "authorTranscriptionRepairs": 0,
+    "missingPrintedVietnameseDetected": 0,
+    "websiteComparisonDecisions": 0,
+    "runtimeEdits": 0,
+    "productionApproval": false
+  },
+  "pageCoverage": [
+    {
+      "pdfPage": 98,
+      "printedFooterActuallyViewed": "086",
+      "bodyVietnameseLoci": 12,
+      "coverageJudgment": "all Vietnamese headings, contexts, instructions, explanations, word glosses, inline gloss and running header in the scoped page are represented; Chinese-only questions/dialogues/examples/options do not manufacture missing Vietnamese"
+    },
+    {
+      "pdfPage": 99,
+      "printedFooterActuallyViewed": "087",
+      "bodyVietnameseLoci": 14,
+      "coverageJudgment": "all Vietnamese headings, contexts, instructions, explanations, word glosses, inline gloss and running header in the scoped page are represented; Chinese-only questions/dialogues/examples/options do not manufacture missing Vietnamese"
+    },
+    {
+      "pdfPage": 100,
+      "printedFooterActuallyViewed": "088",
+      "bodyVietnameseLoci": 10,
+      "coverageJudgment": "all Vietnamese headings, contexts, instructions, explanations, word glosses, inline gloss and running header in the scoped page are represented; Chinese-only questions/dialogues/examples/options do not manufacture missing Vietnamese"
+    },
+    {
+      "pdfPage": 101,
+      "printedFooterActuallyViewed": "089",
+      "bodyVietnameseLoci": 14,
+      "coverageJudgment": "all Vietnamese headings, contexts, instructions, explanations, word glosses, inline gloss and running header in the scoped page are represented; Chinese-only questions/dialogues/examples/options do not manufacture missing Vietnamese"
+    },
+    {
+      "pdfPage": 102,
+      "printedFooterActuallyViewed": "090",
+      "bodyVietnameseLoci": 9,
+      "coverageJudgment": "all Vietnamese headings, contexts, instructions, explanations, word glosses, inline gloss and running header in the scoped page are represented; Chinese-only questions/dialogues/examples/options do not manufacture missing Vietnamese"
+    },
+    {
+      "pdfPage": 103,
+      "printedFooterActuallyViewed": "091",
+      "bodyVietnameseLoci": 12,
+      "coverageJudgment": "all Vietnamese headings, contexts, instructions, explanations, word glosses, inline gloss and running header in the scoped page are represented; Chinese-only questions/dialogues/examples/options do not manufacture missing Vietnamese"
+    },
+    {
+      "pdfPage": 104,
+      "printedFooterActuallyViewed": "092",
+      "bodyVietnameseLoci": 10,
+      "coverageJudgment": "all Vietnamese headings, contexts, instructions, explanations, word glosses, inline gloss and running header in the scoped page are represented; Chinese-only questions/dialogues/examples/options do not manufacture missing Vietnamese"
+    },
+    {
+      "pdfPage": 105,
+      "printedFooterActuallyViewed": "093",
+      "bodyVietnameseLoci": 6,
+      "coverageJudgment": "all Vietnamese headings, contexts, instructions, explanations, word glosses, inline gloss and running header in the scoped page are represented; Chinese-only questions/dialogues/examples/options do not manufacture missing Vietnamese"
+    },
+    {
+      "pdfPage": 106,
+      "printedFooterActuallyViewed": "094",
+      "bodyVietnameseLoci": 6,
+      "coverageJudgment": "all Vietnamese headings, contexts, instructions, explanations, word glosses, inline gloss and running header in the scoped page are represented; Chinese-only questions/dialogues/examples/options do not manufacture missing Vietnamese"
+    }
+  ],
+  "criticalObservations": [
+    {
+      "id": "appendix-start-boundary",
+      "decision": "accept",
+      "pdfPage": 201,
+      "printedPage": 189,
+      "observation": "Actual Bài 10 banner / 你明天再把书还给我 and 课文1 occur below the previous lesson. Earlier Bài9 and preceding continuation excluded."
+    },
+    {
+      "id": "appendix-cross-page-line4",
+      "decision": "accept",
+      "recordId": "hsk3-official-vi-20261004:l10:appendix:text1:line4",
+      "pdfPages": [
+        201,
+        202
+      ],
+      "observation": "Page201 ends Những vấn đề mà cô giáo viết trên; page202 begins bảng đều rất quan trọng, vì vậy mình sẽ ghi hết vào vở. Same utterance, only first fragment has printed Lưu Tiểu Tuyết speaker."
+    },
+    {
+      "id": "appendix-end-boundary",
+      "decision": "accept",
+      "pdfPage": 202,
+      "printedPage": 190,
+      "observation": "课文2,课文3,课文4 belong to Bài10. Actual Bài11 / 看来我没办法解决这个问题 banner below the letter excludes following dialogue."
+    },
+    {
+      "id": "letter-role-and-salutation",
+      "decision": "accept",
+      "observation": "Chị Gia Nguyệt thân mến! is a salutation, not a printed speaker. All three letter records retain speakerPrintedVietnamese:null;正文 shows 刘小雪 writing an email, which does not invent an appendix speaker label."
+    },
+    {
+      "id": "ellipsis-stage-direction",
+      "decision": "accept",
+      "observation": "Printed ... has no speaker, and (Cô Lý giải thích câu hỏi cho học sinh.) is a stage direction. Neither becomes invented dialogue."
+    },
+    {
+      "id": "grammar-subscript",
+      "decision": "accept",
+      "recordId": "hsk3-official-vi-20261004:l10:pdf103:vn12",
+      "observation": "A fresh 4x actual-PDF crop confirms tân ngữ₁ and tân ngữ₂ as subscript identifiers; preserved in transcription."
+    },
+    {
+      "id": "raw-pos-layout-and-order",
+      "decision": "accept",
+      "observation": "要求 dt./newline đgt.; 差 tt./newline đgt. are retained. 清楚 tt./đgt., 明白 đgt./tt., 努力 tt./đgt. each retain the full order and both separate existing sense IDs. 对话 is actually printed đgt., 页 and句 lượng.; no inferred POS replaces the printed label."
+    }
+  ],
+  "printedRoleLabelsAccepted": [
+    {
+      "printedVietnamese": "Bạn cùng lớp",
+      "chineseAnchor": "同学",
+      "scenes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "printedVietnamese": "Lưu Tiểu Tuyết",
+      "chineseAnchor": "刘小雪",
+      "scenes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "printedVietnamese": "Cô Lý",
+      "chineseAnchor": "李老师",
+      "scenes": [
+        3
+      ]
+    }
+  ],
+  "publisherSourceIssues": [
+    {
+      "id": "official-source-issue-hsk3-l10-hounian",
+      "recordId": "hsk3-official-vi-20261004:l10:pdf104:vn08",
+      "stableID": "hsk3-fltrp-2026:l10:word30",
+      "pdfPage": 104,
+      "printedPage": 92,
+      "chineseHeadword": "后年",
+      "actuallyPrintedVietnamese": "năm kia, năm sau",
+      "sourceTranscriptionDecision": "accept as faithful transcription; no author repair",
+      "conflictingOfficialEvidence": {
+        "recordId": "hsk3-official-vi-20261004:l10:appendix:text4:line2",
+        "pdfPage": 202,
+        "printedPage": 190,
+        "printedExcerpt": "năm sau nữa em sẽ thi cấp 3 rồi ạ."
+      },
+      "comparisonRecommendation": "official-source-issue hold for the vocabulary replacement; keep a separate decision instead of turning this into a routine wording variant. The official contextual line remains a valid independent source."
+    }
+  ],
+  "methodLimits": [
+    "Visual fidelity and explicit source anchors were checked. This is not general certification that every publisher translation is linguistically correct.",
+    "All source judgments are separate from website comparison; no website string was used to certify the source transcription.",
+    "Chinese-only printed examples/options and supplemental website prose require a separate comparison or editorial decision.",
+    "Raw multi-POS headword identity does not automatically assign each printed gloss phrase to one runtime sense."
+  ],
+  "structuralVerification": {
+    "file": "input-verification.json",
+    "checksCount": 471,
+    "passed": true,
+    "description": "actual frozen PDF/transcript/lesson/source anchor bytes, all 119 IDs, all33 links/POS partitions,15 author images,11 independent full-page renders, cross-page/roles/letter contracts"
+  },
+  "sourceRowDecisions": "source-row-decisions.json",
+  "wordBindingDecisions": "word-binding-decisions.json",
+  "sourceRepairs": []
+}

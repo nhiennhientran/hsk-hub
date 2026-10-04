@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "inputSHA256": "d240fa2fd2a8d550c8f3b5d8684aebb15814e93ec0f3be521844e17f6b88703c",
+  "status": "reviewer-proposed-source-transcription-repairs-not-applied",
+  "findings": [
+    {
+      "id": "F1",
+      "sourceId": "hsk2-official-vi:l02:p010:goal2",
+      "field": "viPrinted",
+      "expectedOriginalCandidate": "Có thể hiểu và sử dụng được “多” để diễn đạt số ước lượng.",
+      "requiredSourceTranscription": "Có thể nghe hiểu và sử dụng được “多” để diễn đạt số ước lượng.",
+      "reason": "Actual printed Vietnamese includes nghe. Confirmed from unchanged original PDF at 6x, not inferred from Chinese.",
+      "pdfPage": 24,
+      "printedPage": 10,
+      "evidenceCrop": "pdf024-goal2-original-crop-6x.png",
+      "evidenceCropSHA256": "7b844bc9eb223b1961f07424b412eba9efeb294f1c296d62ab317424d8604a84",
+      "displayPageRectClip": [
+        85,
+        235,
+        515,
+        282
+      ]
+    },
+    {
+      "id": "F2",
+      "sourceId": "hsk2-official-vi:l02:p013:text2-line4",
+      "field": "zhAnchor",
+      "expectedOriginalCandidate": "是网上说的，网上还说北京大学有三千多名外国学生呢。",
+      "requiredSourceTranscription": "是网上说的，网上还说北京大学有三千多名外国学生。",
+      "reason": "Printed Chinese and Pinyin bubble end after 学生/xuéshēng; no 呢. Vietnamese/full speaker text is already correct.",
+      "pdfPage": 27,
+      "printedPage": 13,
+      "evidenceCrop": "pdf027-text2-line4-original-crop-6x.png",
+      "evidenceCropSHA256": "1d5293468d4e1f70752e2ef33af4fa8d684292eefcfb9bd65686966df89c06ef",
+      "displayPageRectClip": [
+        98,
+        252,
+        265,
+        371
+      ]
+    }
+  ]
+}

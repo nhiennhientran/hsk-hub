@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-10-04T20:30:07.608664+00:00",
+  "phase": "B",
+  "status": "running",
+  "lastVerifiedRemoteCommit": "63c30de05e3933b9cae50b083d3cb883def3a0a2",
+  "engineeringA9AcceptedForB": true,
+  "independentlyAcceptedOfficialSources": [
+    {
+      "level": 1,
+      "lesson": 4,
+      "occurrences": 105
+    },
+    {
+      "level": 2,
+      "lesson": 1,
+      "occurrences": 103
+    },
+    {
+      "level": 2,
+      "lesson": 2,
+      "occurrences": 104
+    },
+    {
+      "level": 3,
+      "lesson": 10,
+      "occurrences": 119
+    }
+  ],
+  "websiteComparisonProposalsPendingFinalAcceptance": [
+    {
+      "level": 1,
+      "lesson": 4,
+      "fieldScope": 370
+    },
+    {
+      "level": 2,
+      "lesson": 2,
+      "fieldScope": 524,
+      "proposals": 150
+    },
+    {
+      "level": 3,
+      "lesson": 10,
+      "fieldScope": 773,
+      "proposals": 138
+    }
+  ],
+  "formalWebsiteVIAlignmentAccepted": 0,
+  "activeOfficialVIRegistries": 0,
+  "productionEdits": 0,
+  "sourceFreezeReferencesChecked": 106,
+  "sourceRepairNotes": [
+    "HSK2 L2: omitted nghe restored; Chinese text2 line4 extra 呢 removed",
+    "HSK2 L1: printed comma restored; opening Bài+1 numeric marker added"
+  ],
+  "erratumInvestigation": "HSK3 L10 后年: retain correct current năm sau nữa, source discrepancy recorded; not a normal verbatim match",
+  "inventoryRepair": "Actual AST Property.value omission bounded repair; full new candidate inventory pending immutable B10 runtime checkpoint",
+  "runtimeAdapterStatus": "HSK1 and HSK2/3 default-inactive implementations under independent review/build; synthetic unit evidence is not native acceptance",
+  "nextActions": [
+    "Finish independently reviewed adapters and run actual Chromium/WebKit CI",
+    "Rebuild actual source VI inventory with AST repair",
+    "Review source-to-consumer pilot proposals and compile only accepted display revisions",
+    "Continue 48 lessons and shared/legacy/assets/errata scopes",
+    "Complete exact final regression and prepare publication candidate"
+  ],
+  "publicationApproval": "required before production deployment"
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "qa_hsk1_05_08",
+  "kind": "structural guard validation of comparison proposals; not independent language acceptance or native UI test",
+  "status": "all-passed",
+  "passed": 11,
+  "failed": 0,
+  "runtimeWrites": 0,
+  "checks": [
+    {
+      "name": "all bound runtime/source/inventory/SVG/code input bytes still match",
+      "passed": true
+    },
+    {
+      "name": "524 identities, exact current expected leaves and 39 consumer bindings",
+      "passed": true
+    },
+    {
+      "name": "104 accepted source IDs, original pages/Chinese/VN and exact direct reuse",
+      "passed": true
+    },
+    {
+      "name": "34 expanded POS leaves compatible and unchanged",
+      "passed": true
+    },
+    {
+      "name": "150 in-memory VI-only proposals preserve all non-VI/assessment/history identity and word-title duplicates",
+      "passed": true
+    },
+    {
+      "name": "old expected drift rejected",
+      "passed": true
+    },
+    {
+      "name": "non-VI pointer rejected",
+      "passed": true
+    },
+    {
+      "name": "unaccepted source ID rejected",
+      "passed": true
+    },
+    {
+      "name": "direct official string changed rejected",
+      "passed": true
+    },
+    {
+      "name": "source printed VN forged rejected",
+      "passed": true
+    },
+    {
+      "name": "dynamic headings, unrelated legacy, 18 outside-source leaves and 5 editorial-preservation gates remain explicit",
+      "passed": true
+    }
+  ],
+  "comparisonSHA256": "1bbd52dcd1c031f3c937d6095c77f27d36bff90e3e908fa4b339faf70d996b43",
+  "proposalsSHA256": "fa7c482e9c7cbee0986344e647521d66490781043f052331964ae8239707627f",
+  "sourceLedgerSHA256": "f8624e99d9d68bc0cb4348664149b42ee8a011d89d8d7aad20159565c52492ed",
+  "assessmentSealSHA256": "1ef506798bea61589caf85cb734b8de71fe3793ffb552cb92b5f6fdbb385e9d1"
+}

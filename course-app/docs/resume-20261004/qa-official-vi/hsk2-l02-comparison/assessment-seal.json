@@ -1,0 +1,3818 @@
+{
+  "policy": "Comparison guard only; no assessment changes. Vietnamese display copy excluded; Chinese/options/order/answer/IDs/provenance/grading remain included.",
+  "sha256": "1ef506798bea61589caf85cb734b8de71fe3793ffb552cb92b5f6fdbb385e9d1",
+  "projection": {
+    "activities": [
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:objectives",
+        "kind": "self-assessment",
+        "title": {
+          "zh": "本课目标自评"
+        },
+        "source": {
+          "pdfPage": 25,
+          "printedPage": 10,
+          "section": "目标",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "objectives",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:objective1",
+            "prompt": {
+              "zh": "能听懂并介绍学校的基本情况。"
+            },
+            "input": "checkbox",
+            "assessment": "open"
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:objective2",
+            "prompt": {
+              "zh": "能听懂并使用“多”表达大概的数量。"
+            },
+            "input": "checkbox",
+            "assessment": "open"
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:objective3",
+            "prompt": {
+              "zh": "掌握固定格式“还是……吧”的用法，能表达选择。"
+            },
+            "input": "checkbox",
+            "assessment": "open"
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:objective4",
+            "prompt": {
+              "zh": "了解中国著名学府——北京大学。"
+            },
+            "input": "checkbox",
+            "assessment": "open"
+          }
+        ],
+        "note": {
+          "zh": "勾选表示自我判断，不能当作练习成绩。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:warmup-matching",
+        "kind": "matching",
+        "title": {
+          "zh": "给下面的词语选择对应的图片。"
+        },
+        "source": {
+          "pdfPage": 25,
+          "printedPage": 10,
+          "section": "热身",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:warmup1",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:warmup-picture1",
+            "prompt": {
+              "zh": "图1：选择相应词语"
+            },
+            "input": "select",
+            "assessment": "official",
+            "options": [
+              {
+                "zh": "票"
+              },
+              {
+                "zh": "教室"
+              },
+              {
+                "zh": "打车"
+              },
+              {
+                "zh": "公交车"
+              }
+            ],
+            "answer": "公交车",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 2,
+              "item": "第2课 P10 热身 图1"
+            },
+            "illustrationId": "hsk2-fltrp-2026:l02:illustration:warmup-1"
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:warmup-picture2",
+            "prompt": {
+              "zh": "图2：选择相应词语"
+            },
+            "input": "select",
+            "assessment": "official",
+            "options": [
+              {
+                "zh": "票"
+              },
+              {
+                "zh": "教室"
+              },
+              {
+                "zh": "打车"
+              },
+              {
+                "zh": "公交车"
+              }
+            ],
+            "answer": "打车",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 2,
+              "item": "第2课 P10 热身 图2"
+            },
+            "illustrationId": "hsk2-fltrp-2026:l02:illustration:warmup-2"
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:warmup-picture3",
+            "prompt": {
+              "zh": "图3：选择相应词语"
+            },
+            "input": "select",
+            "assessment": "official",
+            "options": [
+              {
+                "zh": "票"
+              },
+              {
+                "zh": "教室"
+              },
+              {
+                "zh": "打车"
+              },
+              {
+                "zh": "公交车"
+              }
+            ],
+            "answer": "教室",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 2,
+              "item": "第2课 P10 热身 图3"
+            },
+            "illustrationId": "hsk2-fltrp-2026:l02:illustration:warmup-3"
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:warmup-picture4",
+            "prompt": {
+              "zh": "图4：选择相应词语"
+            },
+            "input": "select",
+            "assessment": "official",
+            "options": [
+              {
+                "zh": "票"
+              },
+              {
+                "zh": "教室"
+              },
+              {
+                "zh": "打车"
+              },
+              {
+                "zh": "公交车"
+              }
+            ],
+            "answer": "票",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 2,
+              "item": "第2课 P10 热身 图4"
+            },
+            "illustrationId": "hsk2-fltrp-2026:l02:illustration:warmup-4"
+          }
+        ],
+        "illustrationIds": [
+          "hsk2-fltrp-2026:l02:illustration:warmup-1",
+          "hsk2-fltrp-2026:l02:illustration:warmup-2",
+          "hsk2-fltrp-2026:l02:illustration:warmup-3",
+          "hsk2-fltrp-2026:l02:illustration:warmup-4"
+        ],
+        "note": {
+          "zh": "自制辅助示意图，不是教材原图；图号与原题保持对应。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:warmup-preferences",
+        "kind": "survey",
+        "title": {
+          "zh": "说说下列情况中，你更喜欢哪种方式。"
+        },
+        "source": {
+          "pdfPage": 25,
+          "printedPage": 10,
+          "section": "热身",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:warmup2",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:preference-1",
+            "prompt": {
+              "zh": "去旅游的时候"
+            },
+            "input": "select",
+            "assessment": "open",
+            "options": [
+              {
+                "zh": "坐火车去"
+              },
+              {
+                "zh": "坐飞机去"
+              }
+            ]
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:preference-2",
+            "prompt": {
+              "zh": "很晚下班的时候"
+            },
+            "input": "select",
+            "assessment": "open",
+            "options": [
+              {
+                "zh": "回家做饭"
+              },
+              {
+                "zh": "去饭店吃饭"
+              }
+            ]
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:preference-3",
+            "prompt": {
+              "zh": "星期六的晚上"
+            },
+            "input": "select",
+            "assessment": "open",
+            "options": [
+              {
+                "zh": "在家休息"
+              },
+              {
+                "zh": "去看电影"
+              }
+            ]
+          }
+        ],
+        "note": {
+          "zh": "按自己的喜好选择，再说说理由；不设标准答案。"
+        },
+        "matrix": {
+          "rowHeading": {
+            "zh": "情况"
+          },
+          "contextHeaders": [
+            {
+              "zh": "方式1"
+            },
+            {
+              "zh": "方式2"
+            }
+          ],
+          "columns": [
+            {
+              "zh": "我的选择"
+            }
+          ],
+          "rows": [
+            {
+              "prompt": {
+                "zh": "去旅游的时候"
+              },
+              "contextCells": [
+                {
+                  "zh": "坐火车去"
+                },
+                {
+                  "zh": "坐飞机去"
+                }
+              ],
+              "fieldIds": [
+                "hsk2-fltrp-2026:l02:field:preference-1"
+              ]
+            },
+            {
+              "prompt": {
+                "zh": "很晚下班的时候"
+              },
+              "contextCells": [
+                {
+                  "zh": "回家做饭"
+                },
+                {
+                  "zh": "去饭店吃饭"
+                }
+              ],
+              "fieldIds": [
+                "hsk2-fltrp-2026:l02:field:preference-2"
+              ]
+            },
+            {
+              "prompt": {
+                "zh": "星期六的晚上"
+              },
+              "contextCells": [
+                {
+                  "zh": "在家休息"
+                },
+                {
+                  "zh": "去看电影"
+                }
+              ],
+              "fieldIds": [
+                "hsk2-fltrp-2026:l02:field:preference-3"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:text1-listening",
+        "kind": "choice",
+        "title": {
+          "zh": "课文1：听后练习"
+        },
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：听后/读后练习",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:text1:listening",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text1-listening-1",
+            "prompt": {
+              "zh": "白家月和安妮想去哪儿？"
+            },
+            "input": "select",
+            "assessment": "official",
+            "targetRef": "hsk2-fltrp-2026:l02:text1:question1",
+            "options": [
+              {
+                "zh": "饭店"
+              },
+              {
+                "zh": "车站"
+              },
+              {
+                "zh": "北京大学"
+              }
+            ],
+            "answer": "北京大学",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 2,
+              "item": "第2课 P11 课文1 听后 第1题"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text1-listening-2",
+            "prompt": {
+              "zh": "白家月和安妮怎么去那儿？"
+            },
+            "input": "select",
+            "assessment": "official",
+            "targetRef": "hsk2-fltrp-2026:l02:text1:question2",
+            "options": [
+              {
+                "zh": "开车"
+              },
+              {
+                "zh": "坐出租车"
+              },
+              {
+                "zh": "坐公交车"
+              }
+            ],
+            "answer": "坐出租车",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 2,
+              "item": "第2课 P11 课文1 听后 第2题"
+            }
+          }
+        ],
+        "audioTrack": "2-1",
+        "recommendedPlays": 2,
+        "note": {
+          "zh": "听两遍对话，选择正确答案。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:text1-reading",
+        "kind": "open",
+        "title": {
+          "zh": "课文1：读后练习"
+        },
+        "source": {
+          "pdfPage": 27,
+          "printedPage": 12,
+          "section": "课文1：听后/读后练习",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:text1:reading",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text1-reading-1",
+            "prompt": {
+              "zh": "这儿有没有到北京大学的公交车？"
+            },
+            "input": "textarea",
+            "assessment": "reference",
+            "targetRef": "hsk2-fltrp-2026:l02:text1:question3",
+            "referenceAnswer": {
+              "zh": "有。"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text1-reading-2",
+            "prompt": {
+              "zh": "她们为什么打车去北京大学？"
+            },
+            "input": "textarea",
+            "assessment": "reference",
+            "targetRef": "hsk2-fltrp-2026:l02:text1:question4",
+            "referenceAnswer": {
+              "zh": "因为车站有点儿远，这儿好打车。"
+            }
+          }
+        ],
+        "note": {
+          "zh": "分角色朗读对话，读后回答问题。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:text2-listening",
+        "kind": "choice",
+        "title": {
+          "zh": "课文2：听后练习"
+        },
+        "source": {
+          "pdfPage": 27,
+          "printedPage": 12,
+          "section": "课文2：听后/读后练习",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:text2:listening",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text2-listening-1",
+            "prompt": {
+              "zh": "北京大学有多少学生？"
+            },
+            "input": "select",
+            "assessment": "official",
+            "targetRef": "hsk2-fltrp-2026:l02:text2:question1",
+            "options": [
+              {
+                "zh": "三千多"
+              },
+              {
+                "zh": "四万多"
+              },
+              {
+                "zh": "十万多"
+              }
+            ],
+            "answer": "四万多",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 2,
+              "item": "第2课 P12 课文2 听后 第1题"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text2-listening-2",
+            "prompt": {
+              "zh": "白家月想在北京大学做什么？"
+            },
+            "input": "select",
+            "assessment": "official",
+            "targetRef": "hsk2-fltrp-2026:l02:text2:question2",
+            "options": [
+              {
+                "zh": "玩"
+              },
+              {
+                "zh": "学习"
+              },
+              {
+                "zh": "找教室"
+              }
+            ],
+            "answer": "学习",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 2,
+              "item": "第2课 P12 课文2 听后 第2题"
+            }
+          }
+        ],
+        "audioTrack": "2-3",
+        "recommendedPlays": 2,
+        "note": {
+          "zh": "听两遍对话，选择正确答案。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:text2-reading",
+        "kind": "open",
+        "title": {
+          "zh": "课文2：读后练习"
+        },
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：听后/读后练习",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:text2:reading",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text2-reading-1",
+            "prompt": {
+              "zh": "北京大学里人多不多？"
+            },
+            "input": "textarea",
+            "assessment": "reference",
+            "targetRef": "hsk2-fltrp-2026:l02:text2:question3",
+            "referenceAnswer": {
+              "zh": "人很多。"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text2-reading-2",
+            "prompt": {
+              "zh": "北京大学有多少外国学生？安妮是怎么知道的？"
+            },
+            "input": "textarea",
+            "assessment": "reference",
+            "targetRef": "hsk2-fltrp-2026:l02:text2:question4",
+            "referenceAnswer": {
+              "zh": "有三千多名外国学生，安妮是在网上知道的。"
+            }
+          }
+        ],
+        "note": {
+          "zh": "分角色朗读对话，读后回答问题。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:text3-listening",
+        "kind": "choice",
+        "title": {
+          "zh": "课文3：听后练习"
+        },
+        "source": {
+          "pdfPage": 29,
+          "printedPage": 14,
+          "section": "课文3：听后/读后练习",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:text3:listening",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text3-listening-1",
+            "prompt": {
+              "zh": "安妮说北京大学里有什么？"
+            },
+            "input": "select",
+            "assessment": "official",
+            "targetRef": "hsk2-fltrp-2026:l02:text3:question1",
+            "options": [
+              {
+                "zh": "银行"
+              },
+              {
+                "zh": "电影院"
+              },
+              {
+                "zh": "公交车站"
+              }
+            ],
+            "answer": "电影院",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 2,
+              "item": "第2课 P14 课文3 听后 第1题"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text3-listening-2",
+            "prompt": {
+              "zh": "有的电影票还不到多少钱？"
+            },
+            "input": "select",
+            "assessment": "official",
+            "targetRef": "hsk2-fltrp-2026:l02:text3:question2",
+            "options": [
+              {
+                "zh": "十块钱"
+              },
+              {
+                "zh": "二十块钱"
+              },
+              {
+                "zh": "三十块钱"
+              }
+            ],
+            "answer": "二十块钱",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 2,
+              "item": "第2课 P14 课文3 听后 第2题"
+            }
+          }
+        ],
+        "audioTrack": "2-5",
+        "recommendedPlays": 2,
+        "note": {
+          "zh": "听两遍对话，选择正确答案。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:text3-reading",
+        "kind": "open",
+        "title": {
+          "zh": "课文3：读后练习"
+        },
+        "source": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "课文3：听后/读后练习",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:text3:reading",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text3-reading-1",
+            "prompt": {
+              "zh": "白家月和安妮觉得电影票贵不贵？"
+            },
+            "input": "textarea",
+            "assessment": "reference",
+            "targetRef": "hsk2-fltrp-2026:l02:text3:question3",
+            "referenceAnswer": {
+              "zh": "她们觉得电影票不贵。"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text3-reading-2",
+            "prompt": {
+              "zh": "白家月为什么不想去看电影？"
+            },
+            "input": "textarea",
+            "assessment": "reference",
+            "targetRef": "hsk2-fltrp-2026:l02:text3:question4",
+            "referenceAnswer": {
+              "zh": "因为她觉得北京大学就很好看。"
+            }
+          }
+        ],
+        "note": {
+          "zh": "分角色朗读对话，读后回答问题。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:text4-listening",
+        "kind": "choice",
+        "title": {
+          "zh": "课文4：听后练习"
+        },
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "课文4：听后/读后练习",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:text4:listening",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text4-listening-1",
+            "prompt": {
+              "zh": "北京大学有四万多名外国学生。"
+            },
+            "input": "select",
+            "assessment": "official",
+            "targetRef": "hsk2-fltrp-2026:l02:text4:question1",
+            "options": [
+              {
+                "zh": "正确"
+              },
+              {
+                "zh": "错误"
+              }
+            ],
+            "answer": "错误",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 3,
+              "item": "第2课 P16 课文4 听后 第1题"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text4-listening-2",
+            "prompt": {
+              "zh": "白家月和安妮现在要在北京大学看电影。"
+            },
+            "input": "select",
+            "assessment": "official",
+            "targetRef": "hsk2-fltrp-2026:l02:text4:question2",
+            "options": [
+              {
+                "zh": "正确"
+              },
+              {
+                "zh": "错误"
+              }
+            ],
+            "answer": "错误",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 3,
+              "item": "第2课 P16 课文4 听后 第2题"
+            }
+          }
+        ],
+        "audioTrack": "2-7",
+        "recommendedPlays": 2,
+        "note": {
+          "zh": "听两遍课文，判断正误。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:text4-reading",
+        "kind": "choice",
+        "title": {
+          "zh": "课文4：读后练习"
+        },
+        "source": {
+          "pdfPage": 32,
+          "printedPage": 17,
+          "section": "课文4：听后/读后练习",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:text4:reading",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text4-reading-1",
+            "prompt": {
+              "zh": "北京大学怎么样？"
+            },
+            "input": "select",
+            "assessment": "official",
+            "targetRef": "hsk2-fltrp-2026:l02:text4:question3",
+            "options": [
+              {
+                "zh": "人不多"
+              },
+              {
+                "zh": "很漂亮"
+              },
+              {
+                "zh": "东西很贵"
+              }
+            ],
+            "answer": "很漂亮",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 3,
+              "item": "第2课 P17 课文4 读后 第1题"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:text4-reading-2",
+            "prompt": {
+              "zh": "白家月和安妮有时间还想再来北京大学做什么？"
+            },
+            "input": "select",
+            "assessment": "official",
+            "targetRef": "hsk2-fltrp-2026:l02:text4:question4",
+            "options": [
+              {
+                "zh": "看学生"
+              },
+              {
+                "zh": "学中文"
+              },
+              {
+                "zh": "看电影"
+              }
+            ],
+            "answer": "看电影",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 3,
+              "item": "第2课 P17 课文4 读后 第2题"
+            }
+          }
+        ],
+        "note": {
+          "zh": "朗读课文，读后选择正确答案。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:grammar1-practice1",
+        "kind": "fill",
+        "title": {
+          "zh": "A：今天你怎么去公司？ B：打车太贵了，______。"
+        },
+        "source": {
+          "pdfPage": 27,
+          "printedPage": 12,
+          "section": "固定格式“还是……吧”：完成对话",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:grammar1:practice:1",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:grammar1-practice1-blank1",
+            "prompt": {
+              "zh": "第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "还是坐公交车去吧"
+            }
+          }
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:grammar1-practice2",
+        "kind": "fill",
+        "title": {
+          "zh": "A：不好意思，我今天太忙了，你______。 B：好的，我们去找天中帮忙。"
+        },
+        "source": {
+          "pdfPage": 27,
+          "printedPage": 12,
+          "section": "固定格式“还是……吧”：完成对话",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:grammar1:practice:2",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:grammar1-practice2-blank1",
+            "prompt": {
+              "zh": "第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "还是找天中帮忙吧"
+            }
+          }
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:grammar1-practice3",
+        "kind": "fill",
+        "title": {
+          "zh": "A：明天有雨，我们______。 B：好的，那就今天去。"
+        },
+        "source": {
+          "pdfPage": 27,
+          "printedPage": 12,
+          "section": "固定格式“还是……吧”：完成对话",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:grammar1:practice:3",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:grammar1-practice3-blank1",
+            "prompt": {
+              "zh": "第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "还是今天去吧"
+            }
+          }
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:grammar2-practice1",
+        "kind": "fill",
+        "title": {
+          "zh": "A：你这件衣服多少钱？ B：______。"
+        },
+        "source": {
+          "pdfPage": 29,
+          "printedPage": 14,
+          "section": "用“多”表达概数：完成对话",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:grammar2:practice:1",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:grammar2-practice1-blank1",
+            "prompt": {
+              "zh": "第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "一百多块钱"
+            }
+          }
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:grammar2-practice2",
+        "kind": "fill",
+        "title": {
+          "zh": "A：家里还有苹果吗？ B：还有______。"
+        },
+        "source": {
+          "pdfPage": 29,
+          "printedPage": 14,
+          "section": "用“多”表达概数：完成对话",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:grammar2:practice:2",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:grammar2-practice2-blank1",
+            "prompt": {
+              "zh": "第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "十多个"
+            }
+          }
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:grammar2-practice3",
+        "kind": "fill",
+        "title": {
+          "zh": "A：你家的小狗几岁了？ B：______。"
+        },
+        "source": {
+          "pdfPage": 29,
+          "printedPage": 14,
+          "section": "用“多”表达概数：完成对话",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:grammar2:practice:3",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:grammar2-practice3-blank1",
+            "prompt": {
+              "zh": "第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "一岁多了"
+            }
+          }
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:grammar3-practice1",
+        "kind": "fill",
+        "title": {
+          "zh": "A：这是谁______的苹果？ B：我买的，很好吃。"
+        },
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "动词或动词性短语、主谓短语作定语：完成对话",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:grammar3:practice:1",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:grammar3-practice1-blank1",
+            "prompt": {
+              "zh": "第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "买"
+            }
+          }
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:grammar3-practice2",
+        "kind": "fill",
+        "title": {
+          "zh": "A：我觉得______很好看。 B：你穿也好看，想不想买一件？"
+        },
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "动词或动词性短语、主谓短语作定语：完成对话",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:grammar3:practice:2",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:grammar3-practice2-blank1",
+            "prompt": {
+              "zh": "第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "你穿的衣服"
+            }
+          }
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:grammar3-practice3",
+        "kind": "fill",
+        "title": {
+          "zh": "A：______？ B：很好吃，我很喜欢你做的菜。"
+        },
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "动词或动词性短语、主谓短语作定语：完成对话",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:grammar3:practice:3",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:grammar3-practice3-blank1",
+            "prompt": {
+              "zh": "第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "你觉得我做的菜怎么样"
+            }
+          }
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:comprehensive-words",
+        "kind": "fill",
+        "title": {
+          "zh": "综合练习：选词填空"
+        },
+        "source": {
+          "pdfPage": 32,
+          "printedPage": 17,
+          "section": "综合练习：选词填空",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:section3",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:comprehensive-word-1",
+            "prompt": {
+              "zh": "（1）你家太远了，我们是______过来的。"
+            },
+            "input": "select",
+            "assessment": "official",
+            "options": [
+              {
+                "zh": "但"
+              },
+              {
+                "zh": "间"
+              },
+              {
+                "zh": "车站"
+              },
+              {
+                "zh": "打车"
+              },
+              {
+                "zh": "过来"
+              }
+            ],
+            "answer": "打车",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 3,
+              "item": "第2课 P17 选词填空 第1题"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:comprehensive-word-2",
+            "prompt": {
+              "zh": "（2）那是一______大教室，我们明天要去那儿上课。"
+            },
+            "input": "select",
+            "assessment": "official",
+            "options": [
+              {
+                "zh": "但"
+              },
+              {
+                "zh": "间"
+              },
+              {
+                "zh": "车站"
+              },
+              {
+                "zh": "打车"
+              },
+              {
+                "zh": "过来"
+              }
+            ],
+            "answer": "间",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 3,
+              "item": "第2课 P17 选词填空 第2题"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:comprehensive-word-3",
+            "prompt": {
+              "zh": "（3）李文让我去接他的朋友，______我太忙了，没时间。"
+            },
+            "input": "select",
+            "assessment": "official",
+            "options": [
+              {
+                "zh": "但"
+              },
+              {
+                "zh": "间"
+              },
+              {
+                "zh": "车站"
+              },
+              {
+                "zh": "打车"
+              },
+              {
+                "zh": "过来"
+              }
+            ],
+            "answer": "但",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 3,
+              "item": "第2课 P17 选词填空 第3题"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:comprehensive-word-4",
+            "prompt": {
+              "zh": "（4）A：请问，去北京大学的______在哪儿？ B：就在前边，不远。"
+            },
+            "input": "select",
+            "assessment": "official",
+            "options": [
+              {
+                "zh": "但"
+              },
+              {
+                "zh": "间"
+              },
+              {
+                "zh": "车站"
+              },
+              {
+                "zh": "打车"
+              },
+              {
+                "zh": "过来"
+              }
+            ],
+            "answer": "车站",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 3,
+              "item": "第2课 P17 选词填空 第4题"
+            }
+          },
+          {
+            "id": "hsk2-fltrp-2026:l02:field:comprehensive-word-5",
+            "prompt": {
+              "zh": "（5）A：家月，我想请你______帮个忙，你有时间吗？ B：不好意思，我在外边旅游呢。"
+            },
+            "input": "select",
+            "assessment": "official",
+            "options": [
+              {
+                "zh": "但"
+              },
+              {
+                "zh": "间"
+              },
+              {
+                "zh": "车站"
+              },
+              {
+                "zh": "打车"
+              },
+              {
+                "zh": "过来"
+              }
+            ],
+            "answer": "过来",
+            "answerSource": {
+              "document": "hsk2-answers",
+              "pdfPage": 3,
+              "item": "第2课 P17 选词填空 第5题"
+            }
+          }
+        ]
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:picture-dialogue1",
+        "kind": "fill",
+        "title": {
+          "zh": "（1）今天不忙，你______在家吃早饭吧。"
+        },
+        "source": {
+          "pdfPage": 32,
+          "printedPage": 17,
+          "section": "综合练习：描述图片",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:section4:picture:1",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:picture1-blank1",
+            "prompt": {
+              "zh": "图1第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "还是"
+            },
+            "illustrationId": "hsk2-fltrp-2026:l02:illustration:practice-1"
+          }
+        ],
+        "illustrationIds": [
+          "hsk2-fltrp-2026:l02:illustration:practice-1"
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:picture-dialogue2",
+        "kind": "fill",
+        "title": {
+          "zh": "（2）这件衣服______。"
+        },
+        "source": {
+          "pdfPage": 32,
+          "printedPage": 17,
+          "section": "综合练习：描述图片",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:section4:picture:2",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:picture2-blank1",
+            "prompt": {
+              "zh": "图2第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "二百多块钱"
+            },
+            "illustrationId": "hsk2-fltrp-2026:l02:illustration:practice-2"
+          }
+        ],
+        "illustrationIds": [
+          "hsk2-fltrp-2026:l02:illustration:practice-2"
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:picture-dialogue3",
+        "kind": "fill",
+        "title": {
+          "zh": "（3）他在学习，我们______去找他玩了。"
+        },
+        "source": {
+          "pdfPage": 32,
+          "printedPage": 17,
+          "section": "综合练习：描述图片",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:section4:picture:3",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:picture3-blank1",
+            "prompt": {
+              "zh": "图3第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "还是别"
+            },
+            "illustrationId": "hsk2-fltrp-2026:l02:illustration:practice-3"
+          }
+        ],
+        "illustrationIds": [
+          "hsk2-fltrp-2026:l02:illustration:practice-3"
+        ],
+        "note": {
+          "zh": "参考表达由课程编辑补充；答案可有变化，不按唯一字符串判错。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:picture-dialogue4",
+        "kind": "fill",
+        "title": {
+          "zh": "（4）新来的这个老师______岁。"
+        },
+        "source": {
+          "pdfPage": 32,
+          "printedPage": 17,
+          "section": "综合练习：描述图片",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:section4:picture:4",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:picture4-blank1",
+            "prompt": {
+              "zh": "图4第1空"
+            },
+            "input": "text",
+            "assessment": "reference",
+            "referenceAnswer": {
+              "zh": "二十多"
+            },
+            "illustrationId": "hsk2-fltrp-2026:l02:illustration:practice-4"
+          }
+        ],
+        "illustrationIds": [
+          "hsk2-fltrp-2026:l02:illustration:practice-4"
+        ],
+        "note": {
+          "zh": "原图没有给出准确年龄。“二十多”仅为概数表达的练习示例，不是对人物真实年龄的判断；其他合理概数也可。"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:activity:roleplay",
+        "kind": "open",
+        "title": {
+          "zh": "课堂活动：角色扮演"
+        },
+        "source": {
+          "pdfPage": 33,
+          "printedPage": 18,
+          "section": "课堂活动：角色扮演",
+          "provenance": "textbook"
+        },
+        "origin": "textbook",
+        "targetRef": "hsk2-fltrp-2026:l02:section5",
+        "fields": [
+          {
+            "id": "hsk2-fltrp-2026:l02:field:roleplay-notes",
+            "prompt": {
+              "zh": "两人一组，一人问路，一人回答。问路的人询问附近有没有到新新电影院的公交车，车站远不远，到电影院要多长时间，等等。尽可能使用本课所学生词和语法。"
+            },
+            "input": "textarea",
+            "assessment": "open"
+          }
+        ],
+        "note": {
+          "zh": "保留教材示例，先写提示，再分角色练习；仅保存记录，不自动判分。"
+        }
+      }
+    ],
+    "homework": [
+      {
+        "id": "hsk2-fltrp-2026:l02:hw01",
+        "part": "vocabGrammar",
+        "prompt": {
+          "zh": "想坐出租车去医院，可以说：我想______去医院。"
+        },
+        "options": [
+          "开车",
+          "打车",
+          "坐公交车"
+        ],
+        "answer": 1,
+        "focus": "打车",
+        "explanation": {
+          "zh": "打车表示叫出租车出行。"
+        },
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw02",
+        "part": "vocabGrammar",
+        "prompt": {
+          "zh": "这本书很好，______有点儿贵。"
+        },
+        "options": [
+          "因为",
+          "所以",
+          "但"
+        ],
+        "answer": 2,
+        "focus": "但",
+        "explanation": {
+          "zh": "但连接转折关系。"
+        },
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw03",
+        "part": "vocabGrammar",
+        "prompt": {
+          "zh": "这所学校有两______名学生。"
+        },
+        "options": [
+          "万",
+          "千",
+          "百"
+        ],
+        "answer": 0,
+        "focus": "万",
+        "explanation": {
+          "zh": "两万是20000。"
+        },
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw04",
+        "part": "vocabGrammar",
+        "prompt": {
+          "zh": "我们在这______教室上中文课。"
+        },
+        "options": [
+          "张",
+          "名",
+          "间"
+        ],
+        "answer": 2,
+        "focus": "间",
+        "explanation": {
+          "zh": "间用于房间、教室等。"
+        },
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw05",
+        "part": "vocabGrammar",
+        "prompt": {
+          "zh": "今天来了五______外国学生。"
+        },
+        "options": [
+          "间",
+          "名",
+          "本"
+        ],
+        "answer": 1,
+        "focus": "名",
+        "explanation": {
+          "zh": "名可以作人的量词。"
+        },
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw06",
+        "part": "vocabGrammar",
+        "prompt": {
+          "zh": "哪种说法表示“三十以上、四十以下的学生人数”？"
+        },
+        "options": [
+          "三十多个学生",
+          "三十个多学生",
+          "三十名多学生"
+        ],
+        "answer": 0,
+        "focus": "多：概数",
+        "explanation": {
+          "zh": "三十是整十数，多放在三十后、量词前。"
+        },
+        "source": {
+          "pdfPage": 29,
+          "printedPage": 14,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw07",
+        "part": "vocabGrammar",
+        "prompt": {
+          "zh": "苹果一共五元六角，可以说______。"
+        },
+        "options": [
+          "五块多钱",
+          "五十多块钱",
+          "五多块钱"
+        ],
+        "answer": 0,
+        "focus": "多：单位后",
+        "explanation": {
+          "zh": "五块多钱表示五块钱再多一点。"
+        },
+        "source": {
+          "pdfPage": 29,
+          "printedPage": 14,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw08",
+        "part": "vocabGrammar",
+        "prompt": {
+          "zh": "天气很冷，提出留在家里的建议，哪句合适？"
+        },
+        "options": [
+          "我们还是去学校吧。",
+          "我们还是在家休息吧。",
+          "我们还是去车站吧。"
+        ],
+        "answer": 1,
+        "focus": "还是……吧",
+        "explanation": {
+          "zh": "还是……吧表示认为这个选择较好。"
+        },
+        "source": {
+          "pdfPage": 27,
+          "printedPage": 12,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw09",
+        "part": "vocabGrammar",
+        "prompt": {
+          "zh": "“我买的票”中，“我买的”修饰哪个词？"
+        },
+        "options": [
+          "我",
+          "买",
+          "票"
+        ],
+        "answer": 2,
+        "focus": "定语",
+        "explanation": {
+          "zh": "我买的在票前作定语。"
+        },
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw10",
+        "part": "vocabGrammar",
+        "prompt": {
+          "zh": "现在要上课了，______看电影了。"
+        },
+        "options": [
+          "再",
+          "别",
+          "都"
+        ],
+        "answer": 1,
+        "focus": "别",
+        "explanation": {
+          "zh": "别+动词表示劝阻或禁止。"
+        },
+        "source": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw11",
+        "part": "ordering",
+        "prompt": {
+          "zh": "按越南语意思排列词块；带标点的词块位置固定。"
+        },
+        "tokens": [
+          "吧。",
+          "车站",
+          "我们",
+          "还是",
+          "去"
+        ],
+        "answer": [
+          2,
+          3,
+          4,
+          1,
+          0
+        ],
+        "focus": "还是……吧",
+        "explanation": {
+          "zh": "我们还是去车站吧。"
+        },
+        "source": {
+          "pdfPage": 27,
+          "printedPage": 12,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw12",
+        "part": "ordering",
+        "prompt": {
+          "zh": "按越南语意思排列词块；带标点的词块位置固定。"
+        },
+        "tokens": [
+          "有",
+          "名",
+          "学校里",
+          "三十",
+          "多",
+          "老师。"
+        ],
+        "answer": [
+          2,
+          0,
+          3,
+          4,
+          1,
+          5
+        ],
+        "focus": "多：概数",
+        "explanation": {
+          "zh": "学校里有三十多名老师。"
+        },
+        "source": {
+          "pdfPage": 29,
+          "printedPage": 14,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw13",
+        "part": "ordering",
+        "prompt": {
+          "zh": "按越南语意思排列词块；带标点的词块位置固定。"
+        },
+        "tokens": [
+          "这是",
+          "的",
+          "我姐姐",
+          "买",
+          "电影票。"
+        ],
+        "answer": [
+          0,
+          2,
+          3,
+          1,
+          4
+        ],
+        "focus": "主谓短语作定语",
+        "explanation": {
+          "zh": "这是我姐姐买的电影票。"
+        },
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw14",
+        "part": "ordering",
+        "prompt": {
+          "zh": "按越南语意思排列词块；带标点的词块位置固定。"
+        },
+        "tokens": [
+          "大",
+          "教室。",
+          "有",
+          "那边",
+          "一间"
+        ],
+        "answer": [
+          3,
+          2,
+          4,
+          0,
+          1
+        ],
+        "focus": "间",
+        "explanation": {
+          "zh": "那边有一间大教室。"
+        },
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw15",
+        "part": "ordering",
+        "prompt": {
+          "zh": "按越南语意思排列词块；带标点的词块位置固定。"
+        },
+        "tokens": [
+          "去看",
+          "电影",
+          "我们",
+          "了。",
+          "别"
+        ],
+        "answer": [
+          2,
+          4,
+          0,
+          1,
+          3
+        ],
+        "focus": "别",
+        "explanation": {
+          "zh": "我们别去看电影了。"
+        },
+        "source": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw16",
+        "part": "listening",
+        "prompt": {
+          "zh": "听音频：服务员说车站怎么样？"
+        },
+        "options": [
+          "有点儿远",
+          "就在宾馆里",
+          "没有公交车"
+        ],
+        "answer": 0,
+        "focus": "距离信息",
+        "explanation": {
+          "zh": "服务员说“但车站有点儿远”。"
+        },
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        },
+        "audioTrack": "2-1"
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw17",
+        "part": "listening",
+        "prompt": {
+          "zh": "听音频：安妮从哪里知道学生人数？"
+        },
+        "options": [
+          "服务员说的",
+          "老师说的",
+          "网上说的"
+        ],
+        "answer": 2,
+        "focus": "信息来源",
+        "explanation": {
+          "zh": "安妮说“是网上说的”。"
+        },
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        },
+        "audioTrack": "2-3"
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw18",
+        "part": "listening",
+        "prompt": {
+          "zh": "听音频：安妮最后建议去看什么？"
+        },
+        "options": [
+          "饭店",
+          "教室",
+          "车站"
+        ],
+        "answer": 1,
+        "focus": "提议内容",
+        "explanation": {
+          "zh": "那边有一间教室，她建议去看一下。"
+        },
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        },
+        "audioTrack": "2-3"
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw19",
+        "part": "listening",
+        "prompt": {
+          "zh": "听音频：白家月现在不看电影的原因是什么？"
+        },
+        "options": [
+          "大学本身很好看",
+          "电影票太贵",
+          "没有电影院"
+        ],
+        "answer": 0,
+        "focus": "理解选择原因",
+        "explanation": {
+          "zh": "她说“北京大学就很好看”。"
+        },
+        "source": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        },
+        "audioTrack": "2-5"
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw20",
+        "part": "listening",
+        "prompt": {
+          "zh": "听音频：她们再次来看电影的条件是什么？"
+        },
+        "options": [
+          "明天早上",
+          "学生少的时候",
+          "有时间的时候"
+        ],
+        "answer": 2,
+        "focus": "条件信息",
+        "explanation": {
+          "zh": "课文说“我们有时间还想再过来”。"
+        },
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        },
+        "audioTrack": "2-7"
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw21",
+        "part": "translationChoice",
+        "prompt": {
+          "zh": "选择正确的中文翻译。"
+        },
+        "options": [
+          "有公交车，但车站不远。",
+          "有公交车，但车站有点儿远。",
+          "没有公交车，车站也很远。"
+        ],
+        "answer": 1,
+        "focus": "但；有点儿远",
+        "explanation": {
+          "zh": "但连接有公交车和车站较远两个信息。"
+        },
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw22",
+        "part": "translationChoice",
+        "prompt": {
+          "zh": "选择正确的中文翻译。"
+        },
+        "options": [
+          "教室里有二十多个学生。",
+          "教室里有二十多个老师。",
+          "教室里有二十个学生。"
+        ],
+        "answer": 0,
+        "focus": "多：数词后",
+        "explanation": {
+          "zh": "二十多个学生表示学生超过二十人；二十个学生是正好二十人，老师不是学生。"
+        },
+        "source": {
+          "pdfPage": 29,
+          "printedPage": 14,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw23",
+        "part": "translationChoice",
+        "prompt": {
+          "zh": "选择正确的中文翻译。"
+        },
+        "options": [
+          "他们卖的电影票很便宜。",
+          "他们卖的电影票很贵。",
+          "他们买的电影票很便宜。"
+        ],
+        "answer": 0,
+        "focus": "定语",
+        "explanation": {
+          "zh": "他们卖的作电影票的定语。"
+        },
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw24",
+        "part": "translationChoice",
+        "prompt": {
+          "zh": "选择正确的中文翻译。"
+        },
+        "options": [
+          "我们还是坐公交车去吧。",
+          "我们还是开车去吧。",
+          "我们还是打车去吧。"
+        ],
+        "answer": 2,
+        "focus": "还是……吧",
+        "explanation": {
+          "zh": "还是打车去吧表达较好的选择。"
+        },
+        "source": {
+          "pdfPage": 27,
+          "printedPage": 12,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw25",
+        "part": "translationChoice",
+        "prompt": {
+          "zh": "选择正确的中文翻译。"
+        },
+        "options": [
+          "明天别去学校。",
+          "现在别去学校。",
+          "现在去学校吧。"
+        ],
+        "answer": 1,
+        "focus": "别",
+        "explanation": {
+          "zh": "别放在去学校前。"
+        },
+        "source": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "原创课后作业",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw26",
+        "part": "writing",
+        "prompt": {
+          "zh": "请把越南语句子译成中文。"
+        },
+        "focus": "Dịch viết tổng hợp",
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "原创人工批改写作",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw27",
+        "part": "writing",
+        "prompt": {
+          "zh": "请把越南语句子译成中文。"
+        },
+        "focus": "Dịch viết tổng hợp",
+        "source": {
+          "pdfPage": 27,
+          "printedPage": 12,
+          "section": "原创人工批改写作",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw28",
+        "part": "writing",
+        "prompt": {
+          "zh": "请把越南语句子译成中文。"
+        },
+        "focus": "Dịch viết tổng hợp",
+        "source": {
+          "pdfPage": 29,
+          "printedPage": 14,
+          "section": "原创人工批改写作",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw29",
+        "part": "writing",
+        "prompt": {
+          "zh": "请把越南语句子译成中文。"
+        },
+        "focus": "Dịch viết tổng hợp",
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "原创人工批改写作",
+          "provenance": "supplemental"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:hw30",
+        "part": "writing",
+        "prompt": {
+          "zh": "请把越南语句子译成中文。"
+        },
+        "focus": "Dịch viết tổng hợp",
+        "source": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "原创人工批改写作",
+          "provenance": "supplemental"
+        }
+      }
+    ],
+    "listening": [
+      {
+        "id": "hsk2-fltrp-2026:l02:listen01",
+        "part": "listening",
+        "prompt": {
+          "zh": "听后选择：安妮怎样回答打车的建议？"
+        },
+        "options": [
+          "说没有时间",
+          "说没问题",
+          "说太贵了"
+        ],
+        "answer": 1,
+        "focus": "理解回应",
+        "explanation": {
+          "zh": "安妮说“好，没问题”。"
+        },
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "原创听力练习",
+          "provenance": "supplemental"
+        },
+        "audioTrack": "2-1"
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:listen02",
+        "part": "listening",
+        "prompt": {
+          "zh": "听后选择：课文里的外国学生有多少？"
+        },
+        "options": [
+          "三十多名",
+          "四万多名",
+          "三千多名"
+        ],
+        "answer": 2,
+        "focus": "区分总数和部分",
+        "explanation": {
+          "zh": "三千多是外国学生人数，四万多是全部学生人数。"
+        },
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "原创听力练习",
+          "provenance": "supplemental"
+        },
+        "audioTrack": "2-3"
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:listen03",
+        "part": "listening",
+        "prompt": {
+          "zh": "听后选择：白家月说，有的电影票“还不到”多少元？"
+        },
+        "options": [
+          "二十元",
+          "十元",
+          "三十元"
+        ],
+        "answer": 0,
+        "focus": "价格信息",
+        "explanation": {
+          "zh": "有的电影票还不到二十块钱。"
+        },
+        "source": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "原创听力练习",
+          "provenance": "supplemental"
+        },
+        "audioTrack": "2-5"
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:listen04",
+        "part": "listening",
+        "prompt": {
+          "zh": "听后选择：白家月介绍学校时说了哪两点？"
+        },
+        "options": [
+          "学生少、电影票贵",
+          "很小、没有电影院",
+          "很大、很漂亮"
+        ],
+        "answer": 2,
+        "focus": "概括学校特点",
+        "explanation": {
+          "zh": "她说学校很大，也很漂亮。"
+        },
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "原创听力练习",
+          "provenance": "supplemental"
+        },
+        "audioTrack": "2-7"
+      }
+    ],
+    "texts": [
+      {
+        "id": "hsk2-fltrp-2026:l02:text1",
+        "number": 1,
+        "title": {
+          "zh": "课文1"
+        },
+        "context": {
+          "zh": "在宾馆前台，白家月和安妮向服务员咨询。",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 11,
+            "section": "课文1：情境",
+            "provenance": "textbook"
+          }
+        },
+        "audioTrack": "2-1",
+        "lines": [
+          {
+            "zh": "请问，这儿有到北京大学的公交车吗？",
+            "id": "hsk2-fltrp-2026:l02:text1:line1",
+            "speaker": "白家月",
+            "py": "Qǐngwèn, zhèr yǒu dào Běijīng Dàxué de gōngjiāochē ma?",
+            "source": {
+              "pdfPage": 26,
+              "printedPage": 11,
+              "section": "课文1",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "有，但车站有点儿远。",
+            "id": "hsk2-fltrp-2026:l02:text1:line2",
+            "speaker": "服务员",
+            "py": "Yǒu, dàn chēzhàn yǒudiǎnr yuǎn.",
+            "source": {
+              "pdfPage": 26,
+              "printedPage": 11,
+              "section": "课文1",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "这儿好打车吗？",
+            "id": "hsk2-fltrp-2026:l02:text1:line3",
+            "speaker": "白家月",
+            "py": "Zhèr hǎo dǎchē ma?",
+            "source": {
+              "pdfPage": 26,
+              "printedPage": 11,
+              "section": "课文1",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "好打车。",
+            "id": "hsk2-fltrp-2026:l02:text1:line4",
+            "speaker": "服务员",
+            "py": "Hǎo dǎchē.",
+            "source": {
+              "pdfPage": 26,
+              "printedPage": 11,
+              "section": "课文1",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "谢谢。安妮，我们还是打车去吧。",
+            "id": "hsk2-fltrp-2026:l02:text1:line5",
+            "speaker": "白家月",
+            "py": "Xièxie. Ānnī, wǒmen háishi dǎchē qù ba.",
+            "source": {
+              "pdfPage": 26,
+              "printedPage": 11,
+              "section": "课文1",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "好，没问题。",
+            "id": "hsk2-fltrp-2026:l02:text1:line6",
+            "speaker": "安妮",
+            "py": "Hǎo, méi wèntí.",
+            "source": {
+              "pdfPage": 26,
+              "printedPage": 11,
+              "section": "课文1",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "questions": [
+          {
+            "zh": "白家月和安妮想去哪儿？",
+            "id": "hsk2-fltrp-2026:l02:text1:question1",
+            "source": {
+              "pdfPage": 26,
+              "printedPage": 11,
+              "section": "课文1：听后/读后练习",
+              "provenance": "textbook"
+            },
+            "options": [
+              "饭店",
+              "车站",
+              "北京大学"
+            ],
+            "answer": 2
+          },
+          {
+            "zh": "白家月和安妮怎么去那儿？",
+            "id": "hsk2-fltrp-2026:l02:text1:question2",
+            "source": {
+              "pdfPage": 26,
+              "printedPage": 11,
+              "section": "课文1：听后/读后练习",
+              "provenance": "textbook"
+            },
+            "options": [
+              "开车",
+              "坐出租车",
+              "坐公交车"
+            ],
+            "answer": 1
+          },
+          {
+            "zh": "这儿有没有到北京大学的公交车？",
+            "id": "hsk2-fltrp-2026:l02:text1:question3",
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 12,
+              "section": "课文1：听后/读后练习",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "她们为什么打车去北京大学？",
+            "id": "hsk2-fltrp-2026:l02:text1:question4",
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 12,
+              "section": "课文1：听后/读后练习",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:text2",
+        "number": 2,
+        "title": {
+          "zh": "课文2"
+        },
+        "context": {
+          "zh": "在北京大学，白家月和安妮在参观校园。",
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 12,
+            "section": "课文2：情境",
+            "provenance": "textbook"
+          }
+        },
+        "audioTrack": "2-3",
+        "lines": [
+          {
+            "zh": "学校里人真多啊！",
+            "id": "hsk2-fltrp-2026:l02:text2:line1",
+            "speaker": "白家月",
+            "py": "Xuéxiào li rén zhēn duō a!",
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 13,
+              "section": "课文2",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "是啊，北京大学有四万多名学生呢！",
+            "id": "hsk2-fltrp-2026:l02:text2:line2",
+            "speaker": "安妮",
+            "py": "Shì a, Běijīng Dàxué yǒu sìwàn duō míng xuésheng ne!",
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 13,
+              "section": "课文2",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "你是怎么知道的？",
+            "id": "hsk2-fltrp-2026:l02:text2:line3",
+            "speaker": "白家月",
+            "py": "Nǐ shì zěnme zhīdào de?",
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 13,
+              "section": "课文2",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "是网上说的，网上还说北京大学有三千多名外国学生。",
+            "id": "hsk2-fltrp-2026:l02:text2:line4",
+            "speaker": "安妮",
+            "py": "Shì wǎngshang shuō de, wǎngshang hái shuō Běijīng Dàxué yǒu sānqiān duō míng wàiguó xuésheng.",
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 13,
+              "section": "课文2",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "我也想来这儿学习。",
+            "id": "hsk2-fltrp-2026:l02:text2:line5",
+            "speaker": "白家月",
+            "py": "Wǒ yě xiǎng lái zhèr xuéxí.",
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 13,
+              "section": "课文2",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "那边就有一间教室，我们去看一下吧。",
+            "id": "hsk2-fltrp-2026:l02:text2:line6",
+            "speaker": "安妮",
+            "py": "Nàbian jiù yǒu yì jiān jiàoshì, wǒmen qù kàn yíxià ba.",
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 13,
+              "section": "课文2",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "questions": [
+          {
+            "zh": "北京大学有多少学生？",
+            "id": "hsk2-fltrp-2026:l02:text2:question1",
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 12,
+              "section": "课文2：听后/读后练习",
+              "provenance": "textbook"
+            },
+            "options": [
+              "三千多",
+              "四万多",
+              "十万多"
+            ],
+            "answer": 1
+          },
+          {
+            "zh": "白家月想在北京大学做什么？",
+            "id": "hsk2-fltrp-2026:l02:text2:question2",
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 12,
+              "section": "课文2：听后/读后练习",
+              "provenance": "textbook"
+            },
+            "options": [
+              "玩",
+              "学习",
+              "找教室"
+            ],
+            "answer": 1
+          },
+          {
+            "zh": "北京大学里人多不多？",
+            "id": "hsk2-fltrp-2026:l02:text2:question3",
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 13,
+              "section": "课文2：听后/读后练习",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "北京大学有多少外国学生？安妮是怎么知道的？",
+            "id": "hsk2-fltrp-2026:l02:text2:question4",
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 13,
+              "section": "课文2：听后/读后练习",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:text3",
+        "number": 3,
+        "title": {
+          "zh": "课文3"
+        },
+        "context": {
+          "zh": "在北京大学，白家月和安妮在参观校园。",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 14,
+            "section": "课文3：情境",
+            "provenance": "textbook"
+          }
+        },
+        "audioTrack": "2-5",
+        "lines": [
+          {
+            "zh": "家月，你看，学校里有家电影院！",
+            "id": "hsk2-fltrp-2026:l02:text3:line1",
+            "speaker": "安妮",
+            "py": "Jiāyuè, nǐ kàn, xuéxiào li yǒu jiā diànyǐngyuàn!",
+            "source": {
+              "pdfPage": 30,
+              "printedPage": 15,
+              "section": "课文3",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "是啊，电影院还不小。",
+            "id": "hsk2-fltrp-2026:l02:text3:line2",
+            "speaker": "白家月",
+            "py": "Shì a, diànyǐngyuàn hái bù xiǎo.",
+            "source": {
+              "pdfPage": 30,
+              "printedPage": 15,
+              "section": "课文3",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "他们卖的电影票也很便宜。",
+            "id": "hsk2-fltrp-2026:l02:text3:line3",
+            "speaker": "安妮",
+            "py": "Tāmen mài de diànyǐngpiào yě hěn piányi.",
+            "source": {
+              "pdfPage": 30,
+              "printedPage": 15,
+              "section": "课文3",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "天啊！有的还不到二十块钱。",
+            "id": "hsk2-fltrp-2026:l02:text3:line4",
+            "speaker": "白家月",
+            "py": "Tiān a! Yǒude hái bú dào èrshí kuài qián.",
+            "source": {
+              "pdfPage": 30,
+              "printedPage": 15,
+              "section": "课文3",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "那你想不想去看个电影？",
+            "id": "hsk2-fltrp-2026:l02:text3:line5",
+            "speaker": "安妮",
+            "py": "Nà nǐ xiǎng bu xiǎng qù kàn ge diànyǐng?",
+            "source": {
+              "pdfPage": 30,
+              "printedPage": 15,
+              "section": "课文3",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "还是别看电影了，北京大学就很好看！",
+            "id": "hsk2-fltrp-2026:l02:text3:line6",
+            "speaker": "白家月",
+            "py": "Háishi bié kàn diànyǐng le, Běijīng Dàxué jiù hěn hǎokàn!",
+            "source": {
+              "pdfPage": 30,
+              "printedPage": 15,
+              "section": "课文3",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "questions": [
+          {
+            "zh": "安妮说北京大学里有什么？",
+            "id": "hsk2-fltrp-2026:l02:text3:question1",
+            "source": {
+              "pdfPage": 29,
+              "printedPage": 14,
+              "section": "课文3：听后/读后练习",
+              "provenance": "textbook"
+            },
+            "options": [
+              "银行",
+              "电影院",
+              "公交车站"
+            ],
+            "answer": 1
+          },
+          {
+            "zh": "有的电影票还不到多少钱？",
+            "id": "hsk2-fltrp-2026:l02:text3:question2",
+            "source": {
+              "pdfPage": 29,
+              "printedPage": 14,
+              "section": "课文3：听后/读后练习",
+              "provenance": "textbook"
+            },
+            "options": [
+              "十块钱",
+              "二十块钱",
+              "三十块钱"
+            ],
+            "answer": 1
+          },
+          {
+            "zh": "白家月和安妮觉得电影票贵不贵？",
+            "id": "hsk2-fltrp-2026:l02:text3:question3",
+            "source": {
+              "pdfPage": 30,
+              "printedPage": 15,
+              "section": "课文3：听后/读后练习",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "白家月为什么不想去看电影？",
+            "id": "hsk2-fltrp-2026:l02:text3:question4",
+            "source": {
+              "pdfPage": 30,
+              "printedPage": 15,
+              "section": "课文3：听后/读后练习",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "source": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "课文3",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:text4",
+        "number": 4,
+        "title": {
+          "zh": "课文4"
+        },
+        "context": {
+          "zh": "在北京大学门口，白家月给陈天中发信息。",
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 16,
+            "section": "课文4：情境",
+            "provenance": "textbook"
+          }
+        },
+        "audioTrack": "2-7",
+        "lines": [
+          {
+            "zh": "北京大学很大，有四万多名学生。学校很漂亮，里边还有家电影院，电影票也不贵，我们有时间还想再过来看个电影。",
+            "id": "hsk2-fltrp-2026:l02:text4:line1",
+            "speaker": "白家月",
+            "py": "Běijīng Dàxué hěn dà, yǒu sìwàn duō míng xuésheng. Xuéxiào hěn piàoliang, lǐbian hái yǒu jiā diànyǐngyuàn, diànyǐngpiào yě bú guì, wǒmen yǒu shíjiān hái xiǎng zài guòlái kàn ge diànyǐng.",
+            "source": {
+              "pdfPage": 31,
+              "printedPage": 16,
+              "section": "课文4",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "questions": [
+          {
+            "zh": "北京大学有四万多名外国学生。",
+            "id": "hsk2-fltrp-2026:l02:text4:question1",
+            "source": {
+              "pdfPage": 31,
+              "printedPage": 16,
+              "section": "课文4：听后/读后练习",
+              "provenance": "textbook"
+            },
+            "options": [
+              "正确",
+              "错误"
+            ],
+            "answer": 1
+          },
+          {
+            "zh": "白家月和安妮现在要在北京大学看电影。",
+            "id": "hsk2-fltrp-2026:l02:text4:question2",
+            "source": {
+              "pdfPage": 31,
+              "printedPage": 16,
+              "section": "课文4：听后/读后练习",
+              "provenance": "textbook"
+            },
+            "options": [
+              "正确",
+              "错误"
+            ],
+            "answer": 1
+          },
+          {
+            "zh": "北京大学怎么样？",
+            "id": "hsk2-fltrp-2026:l02:text4:question3",
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 17,
+              "section": "课文4：听后/读后练习",
+              "provenance": "textbook"
+            },
+            "options": [
+              "人不多",
+              "很漂亮",
+              "东西很贵"
+            ],
+            "answer": 1
+          },
+          {
+            "zh": "白家月和安妮有时间还想再来北京大学做什么？",
+            "id": "hsk2-fltrp-2026:l02:text4:question4",
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 17,
+              "section": "课文4：听后/读后练习",
+              "provenance": "textbook"
+            },
+            "options": [
+              "看学生",
+              "学中文",
+              "看电影"
+            ],
+            "answer": 2
+          }
+        ],
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "课文4",
+          "provenance": "textbook"
+        }
+      }
+    ],
+    "vocabulary": [
+      {
+        "zh": "公交车",
+        "id": "hsk2-fltrp-2026:l02:word01",
+        "py": "gōngjiāochē",
+        "pos": "danh từ",
+        "sourceText": 1,
+        "audioTrack": "2-2",
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 157,
+          "printedPage": 142,
+          "section": "词语表：公交车",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 1,
+          "sourcePos": "n.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "但",
+        "id": "hsk2-fltrp-2026:l02:word02",
+        "py": "dàn",
+        "pos": "liên từ",
+        "sourceText": 1,
+        "audioTrack": "2-2",
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 157,
+          "printedPage": 142,
+          "section": "词语表：但",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 2,
+          "sourcePos": "conj.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "车站",
+        "id": "hsk2-fltrp-2026:l02:word03",
+        "py": "chēzhàn",
+        "pos": "danh từ",
+        "sourceText": 1,
+        "audioTrack": "2-2",
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 157,
+          "printedPage": 142,
+          "section": "词语表：车站",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 3,
+          "sourcePos": "n.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "远",
+        "id": "hsk2-fltrp-2026:l02:word04",
+        "py": "yuǎn",
+        "pos": "tính từ",
+        "sourceText": 1,
+        "audioTrack": "2-2",
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 160,
+          "printedPage": 145,
+          "section": "词语表：远",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 4,
+          "sourcePos": "adj.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "打车",
+        "id": "hsk2-fltrp-2026:l02:word05",
+        "py": "dǎchē",
+        "pos": "động từ",
+        "sourceText": 1,
+        "audioTrack": "2-2",
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 157,
+          "printedPage": 142,
+          "section": "词语表：打车",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 5,
+          "sourcePos": "v.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "还是",
+        "id": "hsk2-fltrp-2026:l02:word06",
+        "py": "háishi",
+        "pos": "phó từ",
+        "sourceText": 1,
+        "audioTrack": "2-2",
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 158,
+          "printedPage": 143,
+          "section": "词语表：还是",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 6,
+          "sourcePos": "adv.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2,
+            10
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "北京大学",
+        "id": "hsk2-fltrp-2026:l02:word07",
+        "py": "Běijīng Dàxué",
+        "pos": "danh từ riêng",
+        "sourceText": 1,
+        "audioTrack": "2-2",
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 161,
+          "printedPage": 146,
+          "section": "词语表：北京大学",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 1,
+          "sourcePos": "",
+          "sourceList": "proper-nouns",
+          "sourcePosPrinted": false,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          },
+          "sourcePosNote": "No POS is printed in this source row; retained learning-list classification must remain editorial."
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 26,
+          "printedPage": 11,
+          "section": "课文1：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "啊",
+        "id": "hsk2-fltrp-2026:l02:word08",
+        "py": "a",
+        "pos": "trợ từ",
+        "sourceText": 2,
+        "audioTrack": "2-4",
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表：啊",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 7,
+          "sourcePos": "part.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "万",
+        "id": "hsk2-fltrp-2026:l02:word09",
+        "py": "wàn",
+        "pos": "số từ",
+        "sourceText": 2,
+        "audioTrack": "2-4",
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 160,
+          "printedPage": 145,
+          "section": "词语表：万",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 8,
+          "sourcePos": "num.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "名",
+        "id": "hsk2-fltrp-2026:l02:word10",
+        "py": "míng",
+        "pos": "lượng từ/danh từ",
+        "sourceText": 2,
+        "audioTrack": "2-4",
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 159,
+          "printedPage": 144,
+          "section": "词语表：名",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 9,
+          "sourcePos": "m./n.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "网上",
+        "id": "hsk2-fltrp-2026:l02:word11",
+        "py": "wǎngshang",
+        "pos": "danh từ",
+        "sourceText": 2,
+        "audioTrack": "2-4",
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 160,
+          "printedPage": 145,
+          "section": "词语表：网上",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 10,
+          "sourcePos": "n.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "外国",
+        "id": "hsk2-fltrp-2026:l02:word12",
+        "py": "wàiguó",
+        "pos": "danh từ",
+        "sourceText": 2,
+        "audioTrack": "2-4",
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 160,
+          "printedPage": 145,
+          "section": "词语表：外国",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 11,
+          "sourcePos": "n.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "间",
+        "id": "hsk2-fltrp-2026:l02:word13",
+        "py": "jiān",
+        "pos": "lượng từ",
+        "sourceText": 2,
+        "audioTrack": "2-4",
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 158,
+          "printedPage": 143,
+          "section": "词语表：间",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 12,
+          "sourcePos": "m.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "教室",
+        "id": "hsk2-fltrp-2026:l02:word14",
+        "py": "jiàoshì",
+        "pos": "danh từ",
+        "sourceText": 2,
+        "audioTrack": "2-4",
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 158,
+          "printedPage": 143,
+          "section": "词语表：教室",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 13,
+          "sourcePos": "n.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 28,
+          "printedPage": 13,
+          "section": "课文2：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "票",
+        "id": "hsk2-fltrp-2026:l02:word15",
+        "py": "piào",
+        "pos": "danh từ",
+        "sourceText": 3,
+        "audioTrack": "2-6",
+        "source": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "课文3：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 159,
+          "printedPage": 144,
+          "section": "词语表：票",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 14,
+          "sourcePos": "n.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "课文3：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "别",
+        "id": "hsk2-fltrp-2026:l02:word16",
+        "py": "bié",
+        "pos": "phó từ",
+        "sourceText": 3,
+        "audioTrack": "2-6",
+        "source": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "课文3：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 157,
+          "printedPage": 142,
+          "section": "词语表：别",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 15,
+          "sourcePos": "adv.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "课文3：生词",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "zh": "过来",
+        "id": "hsk2-fltrp-2026:l02:word17",
+        "py": "guòlái",
+        "pos": "động từ",
+        "sourceText": 4,
+        "audioTrack": "2-8",
+        "source": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "课文4：生词",
+          "provenance": "textbook"
+        },
+        "supplementarySyllabus": false,
+        "appendixSource": {
+          "pdfPage": 157,
+          "printedPage": 142,
+          "section": "词语表：过来",
+          "provenance": "textbook"
+        },
+        "appendixMetadata": {
+          "sourceNumber": 16,
+          "sourcePos": "v.",
+          "sourceList": "new-words",
+          "sourcePosPrinted": true,
+          "lessonNumbers": [
+            2
+          ],
+          "sourceStarred": false,
+          "starMeaning": {
+            "zh": "前面加“★”的是本级超纲词。"
+          },
+          "starLegendSource": {
+            "pdfPage": 156,
+            "printedPage": 141,
+            "section": "词语表星号说明",
+            "provenance": "textbook"
+          }
+        },
+        "sourceNumberPosSource": {
+          "pdfPage": 31,
+          "printedPage": 16,
+          "section": "课文4：生词",
+          "provenance": "textbook"
+        }
+      }
+    ],
+    "grammar": [
+      {
+        "id": "hsk2-fltrp-2026:l02:grammar1",
+        "title": {
+          "zh": "固定格式“还是……吧”"
+        },
+        "structure": "（Chủ ngữ）+ 还是 + lựa chọn + 吧",
+        "explanation": {
+          "zh": "固定格式“还是……吧”表示倾向性选择，有“这么办比较好”的意思。"
+        },
+        "examples": [
+          {
+            "zh": "我们还是打车去吧。",
+            "py": "Wǒmen háishi dǎchē qù ba.",
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 12,
+              "section": "固定格式“还是……吧”",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "那件衣服很好看，还是买那件吧。",
+            "py": "Nà jiàn yīfu hěn hǎokàn, háishi mǎi nà jiàn ba.",
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 12,
+              "section": "固定格式“还是……吧”",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "你第一次去北京，还是找个人接你吧。",
+            "py": "Nǐ dì-yī cì qù Běijīng, háishi zhǎo ge rén jiē nǐ ba.",
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 12,
+              "section": "固定格式“还是……吧”",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "practice": [
+          {
+            "zh": "A：今天你怎么去公司？ B：打车太贵了，______。",
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 12,
+              "section": "固定格式“还是……吧”：完成对话",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "A：不好意思，我今天太忙了，你______。 B：好的，我们去找天中帮忙。",
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 12,
+              "section": "固定格式“还是……吧”：完成对话",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "A：明天有雨，我们______。 B：好的，那就今天去。",
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 12,
+              "section": "固定格式“还是……吧”：完成对话",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "source": {
+          "pdfPage": 27,
+          "printedPage": 12,
+          "section": "固定格式“还是……吧”",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:grammar2",
+        "title": {
+          "zh": "用“多”表达概数"
+        },
+        "structure": "Số tròn chục + 多 + lượng từ；số nhỏ + đơn vị đo + 多",
+        "explanation": {
+          "zh": "“多”用在数词或数量词后，表示有零头。当数字是10的整数倍时，“多”一般用在数词后面；当数字不是10的整数倍时，“多”一般用在量词后面。"
+        },
+        "examples": [
+          {
+            "zh": "北京大学有四万多名学生呢！",
+            "py": "Běijīng Dàxué yǒu sìwàn duō míng xuésheng ne!",
+            "source": {
+              "pdfPage": 29,
+              "printedPage": 14,
+              "section": "用“多”表达概数",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "教室里有二十多个学生。",
+            "py": "Jiàoshì li yǒu èrshí duō ge xuésheng.",
+            "source": {
+              "pdfPage": 29,
+              "printedPage": 14,
+              "section": "用“多”表达概数",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "这两个苹果五块多钱。",
+            "py": "Zhè liǎng ge píngguǒ wǔ kuài duō qián.",
+            "source": {
+              "pdfPage": 29,
+              "printedPage": 14,
+              "section": "用“多”表达概数",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "practice": [
+          {
+            "zh": "A：你这件衣服多少钱？ B：______。",
+            "source": {
+              "pdfPage": 29,
+              "printedPage": 14,
+              "section": "用“多”表达概数：完成对话",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "A：家里还有苹果吗？ B：还有______。",
+            "source": {
+              "pdfPage": 29,
+              "printedPage": 14,
+              "section": "用“多”表达概数：完成对话",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "A：你家的小狗几岁了？ B：______。",
+            "source": {
+              "pdfPage": 29,
+              "printedPage": 14,
+              "section": "用“多”表达概数：完成对话",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "source": {
+          "pdfPage": 29,
+          "printedPage": 14,
+          "section": "用“多”表达概数",
+          "provenance": "textbook"
+        }
+      },
+      {
+        "id": "hsk2-fltrp-2026:l02:grammar3",
+        "title": {
+          "zh": "动词或动词性短语、主谓短语作定语"
+        },
+        "structure": "（Động từ / cụm động từ / cụm chủ-vị）+ 的 + danh từ",
+        "explanation": {
+          "zh": "动词或动词性短语、主谓短语用在名词前面，表示名词的特征或状态。"
+        },
+        "examples": [
+          {
+            "zh": "他们卖的电影票也很便宜。",
+            "py": "Tāmen mài de diànyǐngpiào yě hěn piányi.",
+            "source": {
+              "pdfPage": 31,
+              "printedPage": 16,
+              "section": "动词或动词性短语、主谓短语作定语",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "现在学中文的学生很多。",
+            "py": "Xiànzài xué Zhōngwén de xuésheng hěn duō.",
+            "source": {
+              "pdfPage": 31,
+              "printedPage": 16,
+              "section": "动词或动词性短语、主谓短语作定语",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "这是朋友给我的杯子。",
+            "py": "Zhè shì péngyou gěi wǒ de bēizi.",
+            "source": {
+              "pdfPage": 31,
+              "printedPage": 16,
+              "section": "动词或动词性短语、主谓短语作定语",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "practice": [
+          {
+            "zh": "A：这是谁______的苹果？ B：我买的，很好吃。",
+            "source": {
+              "pdfPage": 31,
+              "printedPage": 16,
+              "section": "动词或动词性短语、主谓短语作定语：完成对话",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "A：我觉得______很好看。 B：你穿也好看，想不想买一件？",
+            "source": {
+              "pdfPage": 31,
+              "printedPage": 16,
+              "section": "动词或动词性短语、主谓短语作定语：完成对话",
+              "provenance": "textbook"
+            }
+          },
+          {
+            "zh": "A：______？ B：很好吃，我很喜欢你做的菜。",
+            "source": {
+              "pdfPage": 31,
+              "printedPage": 16,
+              "section": "动词或动词性短语、主谓短语作定语：完成对话",
+              "provenance": "textbook"
+            }
+          }
+        ],
+        "source": {
+          "pdfPage": 30,
+          "printedPage": 15,
+          "section": "动词或动词性短语、主谓短语作定语",
+          "provenance": "textbook"
+        }
+      }
+    ]
+  }
+}

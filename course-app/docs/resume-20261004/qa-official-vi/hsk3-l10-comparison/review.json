@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "status": "independent HSK3L10 baseline consumer comparison frozen as classified actual fields and scoped proposals; root acceptance/integration pending",
+  "sourceFreezeSHA256": "50645728c3877979315bc0c50e105c2277e15913aad24a71d6ef602f97587731",
+  "sourceComparisonSeparation": "Source119 transcription judgments remain frozen in sibling hsk3-l10-source. This directory contains actual current consumer comparisons and proposals only.",
+  "counts": {
+    "status": "independent comparison proposals; root schema integration/acceptance pending",
+    "sourceRows": 119,
+    "sourceLociWithMappedConsumer": 106,
+    "sourceOnlyLoci": 13,
+    "jsonFieldComparisonRows": 670,
+    "localVILeaves": 537,
+    "localRuntimePOS": 33,
+    "localPrintedPOSMetadata": 33,
+    "canonicalSenses": 33,
+    "canonicalVIAndPOSRows": 66,
+    "courseIndexTitleRows": 1,
+    "rendererLiteralRows": 89,
+    "originalRendererLiteralRows": 85,
+    "sameSourceASTSupplementRows": 4,
+    "svgFullDescriptionRows": 14,
+    "nonTranslationCandidateRows": 102,
+    "sourceActivities": 26,
+    "decisionCounts": {
+      "official-wording-variant": 2,
+      "variant": 135,
+      "no-source": 242,
+      "editorial": 256,
+      "punctuation-variant": 1,
+      "official-source-context-ambiguity": 1,
+      "match": 58,
+      "official-book-erratum": 2,
+      "match-with-editorial-tail": 9,
+      "match-normalized-POS": 66,
+      "match-normalized-heading-style": 1
+    },
+    "proposedChangedFieldRows": 138,
+    "runtimeEdits": 0,
+    "deployment": false,
+    "limits": [
+      "All scoped lesson data VI/POS fields and actual renderer/helper candidates are classified; this is not general global shell/editorial translation certification. Four same-source code-object AST omissions are independently supplemented. Main shell source changed after the frozen835 inventory and is outside this chapter comparison.",
+      "No-source/editorial rows do not certify publisher wording or general translation correctness.",
+      "Source-only printed headers do not manufacture runtime fields.",
+      "Vocabulary sense-specific renderings are explicit derived proposals; no sense identity, answer key or historical record changes.",
+      "One confirmed publisher vocabulary erratum and one scene-context ambiguity retain correct current text pending root final acceptance.",
+      "Generic renderer title changes need course-wide review; this chapter comparison does not authorize a global production edit."
+    ]
+  },
+  "verification": {
+    "structuralSourceConsumerChecks": 170,
+    "actualJSONASTSHAAndPrefixRoleChecks": 833,
+    "passed": true
+  },
+  "valueSchema": {
+    "oldValue": "actual current runtime string, guarded replacement baseline",
+    "expected": "source-based wording for the relevant locus/span; not old baseline and not always the whole consumer",
+    "expectedSourceWording": "explicit alias of expected, kept separate from actual current value",
+    "newValue": "full proposed effective consumer value; preserves any stated editorial suffix",
+    "expectedEffectiveValue": "exact alias of newValue; use after oldValue precondition passes",
+    "sourceIDs": "record IDs of independently accepted source loci; never created by matching the website VI",
+    "field": "full RFC6901 pointer only for actual JSON data files",
+    "astPointer": "TypeScript AST location with UTF16 source range; no false JSON-file pointer",
+    "xmlElementPath": "actual XML element path; no false JSON-file pointer",
+    "targetRecordId": "frozen source-inventory occurrence ID, or independent same-source AST occurrence ID for four omissions; not a claim of one unique semantic translation per record"
+  },
+  "decisions": {
+    "match": "current full value matches the source-based proposed value",
+    "variant / official-wording-variant": "source and current wording differ; proposed display aligns with official wording/context; neutrality or style differences are not automatically translation errors",
+    "match-normalized-POS": "expanded Vietnamese category name faithfully represents the original raw POS abbreviation for this unchanged sense",
+    "match-with-editorial-tail": "only the textbook instruction prefix matches, editorial tail explicitly retained",
+    "editorial": "designed UI, reference/assessment/privacy/availability text or custom illustration prose; no literal publisher VI counterpart and no assertion of official match",
+    "no-source": "the scoped pages print this question/example/option in Chinese only; current VI is editorial, provisional, and not certified as a publisher translation",
+    "official-book-erratum": "后年 printed glossary issue; retain correct actual local/canonical năm sau nữa under same-book appendix and primary dictionary evidence",
+    "official-source-context-ambiguity": "scene3 printed VN context has possible asker/addressee tension with actual Chinese/dialogue; retain current, require focused root semantic decision",
+    "punctuation-variant": "ellipsis ... versus …, not a new linguistic or speech unit"
+  },
+  "findings": [
+    {
+      "id": "title-pronoun-context",
+      "class": "official-wording-variant",
+      "targets": [
+        {
+          "file": "course-app/content/hsk3/lesson-10.json",
+          "field": "/title/vi"
+        },
+        {
+          "file": "course-app/content/course-index.json",
+          "field": "/24/title/vi"
+        }
+      ],
+      "direction": "teacher Cô Lý speaks to the student; em is addressee, cô is teacher self-reference",
+      "newValue": "Ngày mai em trả lại sách cho cô nhé",
+      "note": "Root corrected an early author rationale which reversed the speaking direction; final proposal contains the accurate direction and does not classify neutral bạn/tôi as a mistranslation."
+    },
+    {
+      "id": "hardcoded-scene-titles",
+      "targets": [
+        "e0082d6c279282ebaeff0314",
+        "f14105e023cc4c38f94691dc",
+        "6a081c714ccc254d87499350"
+      ],
+      "observation": "Actual scene h2 overrides text.title.vi when Chinese is 课文N; tabs are also generated from hardcoded Bài khóa N. Data-only activation would miss both consumers.",
+      "proposal": "Bài khoá / Bài khoá ${expression}",
+      "limit": "Shared renderer change requires course-wide acceptance; this report does not authorize a global edit."
+    },
+    {
+      "id": "canonical-consumers",
+      "observation": "All33 canonical senses match the33 lesson word refs and VI/POS bytes. The real canonicalWordPool deduplicates through sense identity and returns the lesson-local Word; lexicon metadata must remain coherent, and stable sense IDs cannot be merged to achieve wording uniformity."
+    },
+    {
+      "id": "instruction-prefixes",
+      "observation": "Three reading instructions, the letter reading/discussion instruction, three picture-task notes and the classroom note receive full exact target-value proposals which replace source prefixes only. Reference/privacy/ungraded-assessment tails stay byte-for-byte. Nine grammar practice instruction prefixes already match and retain their tails."
+    },
+    {
+      "id": "source-only-roles",
+      "observation": "All26 line IDs were checked against actual Chinese-only speaker rendering. The3 officialVN rolelabels are source facts but no VI speaker field currently exists. A letter has no printed VN speaker; do not invent one or alter historical Chinese speaker metadata."
+    },
+    {
+      "id": "metadata-false-candidates",
+      "observation": "The692 inventory candidates for this raw lesson include84 pinyin strings,14 assessment-focus and3 merge metadata strings,1 Chinese string. They are classified separately; field occurrence counts are not a count of VI sentences."
+    },
+    {
+      "id": "svg-json-separation",
+      "observation": "14 actual SVG full desc values, including English suffix, were decoded from XML and compared independently with JSON image descriptions. All are editor-made illustration prose, not official source translations. Outer IMG ALT and SVG source accessibility metadata are separate consumers; native accessibility exposure is not claimed."
+    },
+    {
+      "id": "frozen-inventory-AST-coverage-defect",
+      "observation": "Original835 builder skipped all keys named value, including Property.value AST children. Same-byte dom.ts and lesson-view.ts contain four candidate literals absent from that inventory. They are independently added to the89 renderer/helper rows and all actual pointers/ranges/value bytes are verified. Original frozen inventory/source-preparation reports are not modified.",
+      "missingValues": [
+        "SGK trang ${expression}${expression}",
+        " · Nội dung bổ trợ",
+        "Câu trả lời của bạn",
+        "合成语音 · Giọng tổng hợp · ${expression}"
+      ],
+      "globalLimit": "This counterexample disproves global completeness based only on46463 original candidates. Current main.ts has changed since835; this chapter report does not claim current global shell source coverage. A corrected global builder rerun remains separate work."
+    },
+    {
+      "id": "current-display-projection-state",
+      "observation": "During verification, root changed content.ts to the official VI projection loader. The dependency hash check caught the change. We re-read the actual loader and new projection functions and recaptured source SHA inputs; current HSK3 registry is explicitly null, so actual lesson/lexicon/index current values remain their immutable baseline copies. Final833 checks pass.",
+      "limit": "A later active registry requires its own acceptance/projection comparison. This report does not approve that activation."
+    }
+  ],
+  "outOfScope": [
+    {
+      "scope": "legacy HSK3 numbered lesson10 and external question bank lesson10",
+      "reason": "Original legacy HSK3 has20 lessons, this official course has18; numeric lesson10 alone does not establish Chinese/source identity. No unrelated old lesson is mapped to this chapter."
+    },
+    {
+      "scope": "arbitrary generated learner text/native browser messages",
+      "reason": "Dynamic source literal producers are enumerated; arbitrary text or branch visibility is not certified."
+    },
+    {
+      "scope": "full editorial Chinese-only translation certification",
+      "reason": "All fields receive a counterpart/editorial/no-source classification, but no-source/editorial rows retain current strings provisionally. Root must not count these as exact official textbook matches."
+    },
+    {
+      "scope": "current whole-site shell and code UI outside scoped chapter renderer/helper producers",
+      "reason": "Original frozen inventory has a proven Property.value traversal omission; main.ts now differs from835. Bounded source/consumer acceptance is not global UI translation completion."
+    }
+  ],
+  "runtimeEdits": 0,
+  "rawChineseASRLessonMutations": 0,
+  "frozenHSK1BankMutations": 0,
+  "deployment": false,
+  "productionApproval": false,
+  "scopeCountsMeaning": "773 comparison records are670JSON field occurrences+89 actual renderer/helper producer candidates+14XML full desc values. These include repeated consumers, metadata/POS, dynamic templates and non-VI ellipsis. They are not773 textbook sentences or773 officially matched translations.",
+  "manualSpeakerReview": {
+    "roleRows": 26,
+    "status": "all original scene/title/email speaker-addressee directions re-read against source and actual Chinese metadata",
+    "title": "teacher self-reference cô; student addressee em",
+    "studentTeacherDialogue": "student self/group em/chúng em addressing cô; teacher self cô addressing em/các em",
+    "email": "Tiểu Tuyết writer em; Gia Nguyệt addressee chị; no printed VN speaker labels for letter",
+    "runtimeAddedRoleFields": 0
+  }
+}

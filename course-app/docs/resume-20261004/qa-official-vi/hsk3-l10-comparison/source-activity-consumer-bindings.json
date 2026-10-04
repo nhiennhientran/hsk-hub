@@ -1,0 +1,966 @@
+[
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:objectives",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "objectives",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:objective1",
+      "hsk3-fltrp-2026:l10:field:objective2",
+      "hsk3-fltrp-2026:l10:field:objective3",
+      "hsk3-fltrp-2026:l10:field:objective4"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "objectives",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:objective1",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:objective2",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:objective3",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:objective4",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:warmup1-matching",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:warmup1",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:warmup1-picture1",
+      "hsk3-fltrp-2026:l10:field:warmup1-picture2",
+      "hsk3-fltrp-2026:l10:field:warmup1-picture3",
+      "hsk3-fltrp-2026:l10:field:warmup1-picture4",
+      "hsk3-fltrp-2026:l10:field:warmup1-picture5",
+      "hsk3-fltrp-2026:l10:field:warmup1-picture6"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:warmup1",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:warmup1-picture1",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:warmup1-picture2",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:warmup1-picture3",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:warmup1-picture4",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:warmup1-picture5",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:warmup1-picture6",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:warmup2-discussion",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:warmup2",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:warmup2-prompt1",
+      "hsk3-fltrp-2026:l10:field:warmup2-prompt2"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:warmup2",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:warmup2-prompt1",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:warmup2-prompt2",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:text1-listening",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:text1:listening",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:text1-question1",
+      "hsk3-fltrp-2026:l10:field:text1-question2"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:text1:listening",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text1-question1",
+          "targetRef": "hsk3-fltrp-2026:l10:text1:question1"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text1-question2",
+          "targetRef": "hsk3-fltrp-2026:l10:text1:question2"
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:text1-reading",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:text1:reading",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:text1-question3",
+      "hsk3-fltrp-2026:l10:field:text1-question4",
+      "hsk3-fltrp-2026:l10:field:text1-question5"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:text1:reading",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text1-question3",
+          "targetRef": "hsk3-fltrp-2026:l10:text1:question3"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text1-question4",
+          "targetRef": "hsk3-fltrp-2026:l10:text1:question4"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text1-question5",
+          "targetRef": "hsk3-fltrp-2026:l10:text1:question5"
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:text2-listening",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:text2:listening",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:text2-question1",
+      "hsk3-fltrp-2026:l10:field:text2-question2"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:text2:listening",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text2-question1",
+          "targetRef": "hsk3-fltrp-2026:l10:text2:question1"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text2-question2",
+          "targetRef": "hsk3-fltrp-2026:l10:text2:question2"
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:text2-reading",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:text2:reading",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:text2-question3",
+      "hsk3-fltrp-2026:l10:field:text2-question4",
+      "hsk3-fltrp-2026:l10:field:text2-question5"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:text2:reading",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text2-question3",
+          "targetRef": "hsk3-fltrp-2026:l10:text2:question3"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text2-question4",
+          "targetRef": "hsk3-fltrp-2026:l10:text2:question4"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text2-question5",
+          "targetRef": "hsk3-fltrp-2026:l10:text2:question5"
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:text3-listening",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:text3:listening",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:text3-question1",
+      "hsk3-fltrp-2026:l10:field:text3-question2"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:text3:listening",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text3-question1",
+          "targetRef": "hsk3-fltrp-2026:l10:text3:question1"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text3-question2",
+          "targetRef": "hsk3-fltrp-2026:l10:text3:question2"
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:text3-reading",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:text3:reading",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:text3-question3",
+      "hsk3-fltrp-2026:l10:field:text3-question4",
+      "hsk3-fltrp-2026:l10:field:text3-question5"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:text3:reading",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text3-question3",
+          "targetRef": "hsk3-fltrp-2026:l10:text3:question3"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text3-question4",
+          "targetRef": "hsk3-fltrp-2026:l10:text3:question4"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text3-question5",
+          "targetRef": "hsk3-fltrp-2026:l10:text3:question5"
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:text4-listening",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:text4:listening",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:text4-question1",
+      "hsk3-fltrp-2026:l10:field:text4-question2"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:text4:listening",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text4-question1",
+          "targetRef": "hsk3-fltrp-2026:l10:text4:question1"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text4-question2",
+          "targetRef": "hsk3-fltrp-2026:l10:text4:question2"
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:text4-reading",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:text4:reading",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:text4-read-aloud",
+      "hsk3-fltrp-2026:l10:field:text4-china-system",
+      "hsk3-fltrp-2026:l10:field:text4-own-country-system"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:text4:reading",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text4-read-aloud",
+          "targetRef": "hsk3-fltrp-2026:l10:text4:question3"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text4-china-system",
+          "targetRef": "hsk3-fltrp-2026:l10:text4:question4"
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:text4-own-country-system",
+          "targetRef": "hsk3-fltrp-2026:l10:text4:question4"
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:grammar1-practice1",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:grammar1:practice:1",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:grammar1-practice1"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:grammar1:practice:1",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:grammar1-practice1",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:grammar1-practice2",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:grammar1:practice:2",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:grammar1-practice2"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:grammar1:practice:2",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:grammar1-practice2",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:grammar1-practice3",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:grammar1:practice:3",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:grammar1-practice3"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:grammar1:practice:3",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:grammar1-practice3",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:grammar2-practice1",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:grammar2:practice:1",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:grammar2-practice1"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:grammar2:practice:1",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:grammar2-practice1",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:grammar2-practice2",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:grammar2:practice:2",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:grammar2-practice2"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:grammar2:practice:2",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:grammar2-practice2",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:grammar2-practice3",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:grammar2:practice:3",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:grammar2-practice3"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:grammar2:practice:3",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:grammar2-practice3",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:grammar3-practice1",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:grammar3:practice:1",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:grammar3-practice1"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:grammar3:practice:1",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:grammar3-practice1",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:grammar3-practice2",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:grammar3:practice:2",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:grammar3-practice2"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:grammar3:practice:2",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:grammar3-practice2",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:grammar3-practice3",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:grammar3:practice:3",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:grammar3-practice3"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:grammar3:practice:3",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:grammar3-practice3",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:comprehensive-words1",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:section1:bank:1",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:comprehensive-word1",
+      "hsk3-fltrp-2026:l10:field:comprehensive-word2",
+      "hsk3-fltrp-2026:l10:field:comprehensive-word3",
+      "hsk3-fltrp-2026:l10:field:comprehensive-word4",
+      "hsk3-fltrp-2026:l10:field:comprehensive-word5"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:section1:bank:1",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:comprehensive-word1",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:comprehensive-word2",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:comprehensive-word3",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:comprehensive-word4",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:comprehensive-word5",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:comprehensive-words2",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:section1:bank:2",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:comprehensive-word6",
+      "hsk3-fltrp-2026:l10:field:comprehensive-word7",
+      "hsk3-fltrp-2026:l10:field:comprehensive-word8",
+      "hsk3-fltrp-2026:l10:field:comprehensive-word9",
+      "hsk3-fltrp-2026:l10:field:comprehensive-word10"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:section1:bank:2",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:comprehensive-word6",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:comprehensive-word7",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:comprehensive-word8",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:comprehensive-word9",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:comprehensive-word10",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:picture-dialogue1",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:section2:picture:1",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:picture1-blank1",
+      "hsk3-fltrp-2026:l10:field:picture1-blank2",
+      "hsk3-fltrp-2026:l10:field:picture1-blank3"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:section2:picture:1",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:picture1-blank1",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:picture1-blank2",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:picture1-blank3",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:picture-dialogue2",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:section3:picture:2",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:picture2-blank1",
+      "hsk3-fltrp-2026:l10:field:picture2-blank2",
+      "hsk3-fltrp-2026:l10:field:picture2-blank3"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:section3:picture:2",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:picture2-blank1",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:picture2-blank2",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:picture2-blank3",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:picture-dialogue3",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:section3:picture:3",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:picture3-blank1",
+      "hsk3-fltrp-2026:l10:field:picture3-blank2",
+      "hsk3-fltrp-2026:l10:field:picture3-blank3"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:section3:picture:3",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:picture3-blank1",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:picture3-blank2",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:picture3-blank3",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  },
+  {
+    "semanticId": "hsk3-fltrp-2026:l10:activity:classroom-group",
+    "course": "hsk3",
+    "kind": "source-activity",
+    "targetRef": "hsk3-fltrp-2026:l10:section4",
+    "fieldIds": [
+      "hsk3-fltrp-2026:l10:field:classroom-method1",
+      "hsk3-fltrp-2026:l10:field:classroom-method2",
+      "hsk3-fltrp-2026:l10:field:classroom-method3",
+      "hsk3-fltrp-2026:l10:field:classroom-method4",
+      "hsk3-fltrp-2026:l10:field:classroom-presentation",
+      "hsk3-fltrp-2026:l10:field:classroom-voted-method1",
+      "hsk3-fltrp-2026:l10:field:classroom-voted-method2",
+      "hsk3-fltrp-2026:l10:field:classroom-voted-method3"
+    ],
+    "sourceColumnBinding": {
+      "renderer": "course-app/src/lesson-view.ts mapped(ref)",
+      "targetRef": "hsk3-fltrp-2026:l10:section4",
+      "fieldTargetRefs": [
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:classroom-method1",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:classroom-method2",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:classroom-method3",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:classroom-method4",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:classroom-presentation",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:classroom-voted-method1",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:classroom-voted-method2",
+          "targetRef": null
+        },
+        {
+          "fieldId": "hsk3-fltrp-2026:l10:field:classroom-voted-method3",
+          "targetRef": null
+        }
+      ]
+    },
+    "consumers": [
+      "source activity controls",
+      "source columns through real targetRef, prefix matching and field references",
+      "saved activity values"
+    ],
+    "patchOwners": [
+      "activity copy",
+      "referenced original content copy"
+    ],
+    "gradingIdentity": "activity record preserves values + checkedAt, not historical copy snapshots; preserve field IDs and meaning"
+  }
+]

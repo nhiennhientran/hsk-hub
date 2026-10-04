@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "inputSHA256": "c7fff6c2d6ed6df495addbfd8c7656cf643bc2afa9008408611c3d88e21990fd",
+  "status": "reviewer-proposals-not-applied",
+  "findings": [
+    {
+      "id": "F1",
+      "kind": "existing-source-leaf-repair",
+      "sourceId": "hsk2-official-vi:l01:p007:text4-whole-paragraph",
+      "field": "viPrinted",
+      "oldExpected": "Thưa cô Vương, chúng em đã tới Bắc Kinh rồi; chị gái của cô đã tới đón chúng em. Chị ấy đã mời chúng em ăn vịt quay Bắc Kinh, còn giới thiệu cho chúng em rất nhiều thứ. Tiếng Trung Quốc của chúng em không tốt lắm, đôi khi chưa hiểu hết ý của chị ấy.",
+      "requiredSourceTranscription": "Thưa cô Vương, chúng em đã tới Bắc Kinh rồi, chị gái của cô đã tới đón chúng em. Chị ấy đã mời chúng em ăn vịt quay Bắc Kinh, còn giới thiệu cho chúng em rất nhiều thứ. Tiếng Trung Quốc của chúng em không tốt lắm, đôi khi chưa hiểu hết ý của chị ấy.",
+      "reason": "Original PDF21 printed007 uses comma after rồi, not semicolon; the rest of the complete speakerless paragraph is correct.",
+      "pdfPage": 21,
+      "printedPage": 7,
+      "evidenceCrop": "pdf021-text4-original-6x.png",
+      "evidenceCropSHA256": "fd37b627d972d0b80097221c83957df630c14f06da206bb0476dee76a054e6c2",
+      "clip": [
+        350,
+        480,
+        515,
+        650
+      ],
+      "scale": 6
+    },
+    {
+      "id": "F2",
+      "kind": "missing-source-occurrence",
+      "proposedSourceId": "hsk2-official-vi:l01:p001:lesson-number-header",
+      "proposedRecord": {
+        "sourceId": "hsk2-official-vi:l01:p001:lesson-number-header",
+        "pdfPage": 15,
+        "printedPage": 1,
+        "section": "lesson-number-header",
+        "zhAnchor": "1",
+        "zhAnchorKind": "printed-numeric-lesson-marker",
+        "viPrinted": "Bài 1",
+        "layoutJoinedLabel": true,
+        "printedLayoutParts": [
+          "Bài",
+          "1"
+        ],
+        "printedChineseLessonPhrase": false
+      },
+      "reason": "Opening orange lesson marker contains Bài and large digit1 in one layout label; omitted from the102-record input. Vietnamese and digit join is a layout label representation, not invented 第1课 Chinese on this page.",
+      "evidenceCrop": "pdf015-missing-lesson-label-6x.png",
+      "evidenceCropSHA256": "89020cc2c384f35709f6f5ca2105ee83b702f3fbfcb7676ee4048d9a94790c08",
+      "clip": [
+        65,
+        35,
+        140,
+        160
+      ],
+      "scale": 6
+    }
+  ]
+}

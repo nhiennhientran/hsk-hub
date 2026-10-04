@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "sharedDynamicUI": [
+    {
+      "recordId": "e0082d6c279282ebaeff0314",
+      "semanticKey": "active-ui:course-app/src/lesson-view.ts:sections:/body/10/declarations/0/init/elements/2/elements/1/arguments/1",
+      "astPath": "/body/10/declarations/0/init/elements/2/elements/1/arguments/1",
+      "component": "active-ui",
+      "itemId": "sections",
+      "file": "course-app/src/lesson-view.ts",
+      "range": {
+        "start": 1266,
+        "end": 1276,
+        "line": 31,
+        "column": 23
+      },
+      "value": "Bài khóa",
+      "chineseContext": "课文",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "visibility": "runtime-source-static-candidate",
+      "frozen": false,
+      "revisionService": "app i18n/copy module or rendering function",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "confidence": "language-detection-candidate",
+      "functionArgument": {
+        "callee": "copy",
+        "index": 1
+      },
+      "officialAuditStatus": "pending-phase-B",
+      "chineseContextStatus": "source-context-available",
+      "learningFieldOccurrence": false,
+      "sourceRelation": "loader-specific-context",
+      "comparisonDecision": "scoped-label-projection-required-before-full-visible-heading-alignment",
+      "officialSourceIds": [
+        "hsk2-official-vi:l02:p011:text1-heading",
+        "hsk2-official-vi:l02:p012:text2-heading",
+        "hsk2-official-vi:l02:p014:text3-heading",
+        "hsk2-official-vi:l02:p016:text4-heading"
+      ],
+      "currentTemplateScope": "shared HSK2/3 UI; cannot replace globally based solely on H2L2 pilot",
+      "proposedScopedH2L2Labels": [
+        "Bài khoá 1",
+        "Bài khoá 2",
+        "Bài khoá 3",
+        "Bài khoá 4"
+      ]
+    },
+    {
+      "recordId": "f14105e023cc4c38f94691dc",
+      "semanticKey": "active-ui:course-app/src/lesson-view.ts:a:/body/12/declaration/body/body/25/alternate/alternate/consequent/body/2/body/body/0/declarations/0/init/arguments/0/arguments/1",
+      "astPath": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/2/body/body/0/declarations/0/init/arguments/0/arguments/1",
+      "component": "active-ui",
+      "itemId": "a",
+      "file": "course-app/src/lesson-view.ts",
+      "range": {
+        "start": 25432,
+        "end": 25454,
+        "line": 590,
+        "column": 31
+      },
+      "value": "Bài khóa ${expression}",
+      "chineseContext": "课文${expression}",
+      "sourceKind": "dynamic-template",
+      "expressions": [
+        "t.number"
+      ],
+      "visibility": "runtime-source-static-candidate",
+      "frozen": false,
+      "revisionService": "app i18n/copy module or rendering function",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "confidence": "language-detection-candidate",
+      "functionArgument": {
+        "callee": "copy",
+        "index": 1
+      },
+      "officialAuditStatus": "pending-phase-B",
+      "chineseContextStatus": "source-context-available",
+      "learningFieldOccurrence": false,
+      "sourceRelation": "loader-specific-context",
+      "comparisonDecision": "scoped-label-projection-required-before-full-visible-heading-alignment",
+      "officialSourceIds": [
+        "hsk2-official-vi:l02:p011:text1-heading",
+        "hsk2-official-vi:l02:p012:text2-heading",
+        "hsk2-official-vi:l02:p014:text3-heading",
+        "hsk2-official-vi:l02:p016:text4-heading"
+      ],
+      "currentTemplateScope": "shared HSK2/3 UI; cannot replace globally based solely on H2L2 pilot",
+      "proposedScopedH2L2Labels": [
+        "Bài khoá 1",
+        "Bài khoá 2",
+        "Bài khoá 3",
+        "Bài khoá 4"
+      ]
+    },
+    {
+      "recordId": "6a081c714ccc254d87499350",
+      "semanticKey": "active-ui:course-app/src/lesson-view.ts:mountLesson:/body/12/declaration/body/body/25/alternate/alternate/consequent/body/5/expression/arguments/0/arguments/1/consequent/arguments/1",
+      "astPath": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/5/expression/arguments/0/arguments/1/consequent/arguments/1",
+      "component": "active-ui",
+      "itemId": "mountLesson",
+      "file": "course-app/src/lesson-view.ts",
+      "range": {
+        "start": 25850,
+        "end": 25875,
+        "line": 602,
+        "column": 38
+      },
+      "value": "Bài khóa ${expression}",
+      "chineseContext": "课文${expression}",
+      "sourceKind": "dynamic-template",
+      "expressions": [
+        "text.number"
+      ],
+      "visibility": "runtime-source-static-candidate",
+      "frozen": false,
+      "revisionService": "app i18n/copy module or rendering function",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "confidence": "language-detection-candidate",
+      "functionArgument": {
+        "callee": "copy",
+        "index": 1
+      },
+      "officialAuditStatus": "pending-phase-B",
+      "chineseContextStatus": "source-context-available",
+      "learningFieldOccurrence": false,
+      "sourceRelation": "loader-specific-context",
+      "comparisonDecision": "scoped-label-projection-required-before-full-visible-heading-alignment",
+      "officialSourceIds": [
+        "hsk2-official-vi:l02:p011:text1-heading",
+        "hsk2-official-vi:l02:p012:text2-heading",
+        "hsk2-official-vi:l02:p014:text3-heading",
+        "hsk2-official-vi:l02:p016:text4-heading"
+      ],
+      "currentTemplateScope": "shared HSK2/3 UI; cannot replace globally based solely on H2L2 pilot",
+      "proposedScopedH2L2Labels": [
+        "Bài khoá 1",
+        "Bài khoá 2",
+        "Bài khoá 3",
+        "Bài khoá 4"
+      ]
+    },
+    {
+      "recordId": "abc1c678d05ade95a9aa6094",
+      "semanticKey": "active-ui:course-app/src/main.ts:renderCourses:/body/78/body/body/11/body/body/6/right/expression/elements/1/elements/1/arguments/1",
+      "astPath": "/body/78/body/body/11/body/body/6/right/expression/elements/1/elements/1/arguments/1",
+      "component": "active-ui",
+      "itemId": "renderCourses",
+      "file": "course-app/src/main.ts",
+      "range": {
+        "start": 19422,
+        "end": 19432,
+        "line": 601,
+        "column": 134
+      },
+      "value": "Bài khóa",
+      "chineseContext": "课文",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "visibility": "runtime-source-static-candidate",
+      "frozen": false,
+      "revisionService": "app i18n/copy module or rendering function",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ],
+      "confidence": "language-detection-candidate",
+      "functionArgument": {
+        "callee": "copy",
+        "index": 1
+      },
+      "officialAuditStatus": "pending-phase-B",
+      "chineseContextStatus": "source-context-available",
+      "learningFieldOccurrence": false,
+      "sourceRelation": "loader-specific-context",
+      "comparisonDecision": "scoped-label-projection-required-before-full-visible-heading-alignment",
+      "officialSourceIds": [
+        "hsk2-official-vi:l02:p011:text1-heading",
+        "hsk2-official-vi:l02:p012:text2-heading",
+        "hsk2-official-vi:l02:p014:text3-heading",
+        "hsk2-official-vi:l02:p016:text4-heading"
+      ],
+      "currentTemplateScope": "shared HSK2/3 UI; cannot replace globally based solely on H2L2 pilot",
+      "proposedScopedH2L2Labels": [
+        "Bài khoá 1",
+        "Bài khoá 2",
+        "Bài khoá 3",
+        "Bài khoá 4"
+      ]
+    }
+  ],
+  "speakerLabelBoundary": {
+    "currentChineseSpeakerLabelsSealed": true,
+    "text4PrintedSpeaker": false,
+    "text4CurrentChineseSpeaker": "白家月",
+    "proposedVietnameseSpeakerLeaf": null,
+    "decision": "do-not-invent-current-printed-VI-speaker-consumer"
+  },
+  "separateGrammarPracticeInstructions": [
+    {
+      "sourceId": "hsk2-official-vi:l02:p012:grammar1-completion-instruction",
+      "printedPage": 12,
+      "pdfPage": 26,
+      "section": "grammar1-completion-instruction",
+      "zhAnchor": "完成对话。",
+      "viPrinted": "Hoàn thành hội thoại.",
+      "status": "author-transcribed-awaiting-independent-source-review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p014:grammar2-completion-instruction",
+      "printedPage": 14,
+      "pdfPage": 28,
+      "section": "grammar2-completion-instruction",
+      "zhAnchor": "完成对话。",
+      "viPrinted": "Hoàn thành hội thoại.",
+      "status": "author-transcribed-awaiting-independent-source-review"
+    },
+    {
+      "sourceId": "hsk2-official-vi:l02:p016:grammar3-completion-instruction",
+      "printedPage": 16,
+      "pdfPage": 30,
+      "section": "grammar3-completion-instruction",
+      "zhAnchor": "完成对话。",
+      "viPrinted": "Hoàn thành hội thoại.",
+      "status": "author-transcribed-awaiting-independent-source-review"
+    }
+  ]
+}

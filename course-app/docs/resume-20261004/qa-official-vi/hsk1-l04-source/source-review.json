@@ -1,0 +1,2012 @@
+{
+  "schema": 1,
+  "status": "source-accepted-visual-review-105-of-105",
+  "sourcePDFSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+  "sourcePDFBytes": 63200770,
+  "authorTranscriptionSHA256": "c63b6a2eb49433f2234f005b20f1bc75c6432779cd0b023fc033617a66eec974",
+  "sourceAccepted": true,
+  "websiteComparisonAccepted": false,
+  "reviewer": "native_catalogue",
+  "OCRUsed": false,
+  "textLayerUsed": false,
+  "reviewMethod": "Independent fresh original PDF CropBox rendering and per-page visual read; magnified crops only when needed. Source acceptance separate from website comparison.",
+  "pages": [
+    {
+      "pdfPage": 34,
+      "expectedPrintedPage": 18,
+      "observedFooterLabel": "018",
+      "independentFullPageReviewed": true,
+      "renderPath": "/workspace/scratch/28b55072841a/qa-official-vi-l04-renders/hsk1-vi-034.png",
+      "renderSHA256": "adb591174643d10caad56d74c82f77a95c817698d7b8beb4da34a8bc10423842",
+      "renderBytes": 1398548,
+      "renderCommand": "pdftoppm -f 34 -l 42 -r 180 -cropbox -png uploaded-official.pdf hsk1-vi",
+      "evidenceNotes": "Actual full CropBox page read: Bài4/Chị title, four goals, warmup instruction; all9 Vietnamese units present, photo option labels Chinese/PY only."
+    },
+    {
+      "pdfPage": 35,
+      "expectedPrintedPage": 19,
+      "observedFooterLabel": "019",
+      "independentFullPageReviewed": true,
+      "renderPath": "/workspace/scratch/28b55072841a/qa-official-vi-l04-renders/hsk1-vi-035.png",
+      "renderSHA256": "64d4cda6d9405290961809ff65bd5a63656c40033aad28bd90f4ceae78733888",
+      "renderBytes": 2161181,
+      "renderCommand": "pdftoppm -f 34 -l 42 -r 180 -cropbox -png uploaded-official.pdf hsk1-vi",
+      "evidenceNotes": "Footer019 read directly. Three vocabulary rows and all four role translations checked; đgt./đt./lượng. raw labels preserved. No omitted visible Vietnamese."
+    },
+    {
+      "pdfPage": 36,
+      "expectedPrintedPage": 20,
+      "observedFooterLabel": "020",
+      "independentFullPageReviewed": true,
+      "renderPath": "/workspace/scratch/28b55072841a/qa-official-vi-l04-renders/hsk1-vi-036.png",
+      "renderSHA256": "10f2446b03d3a98db27e25e987b89813e6c7ace7cb182b84dd8be431b97ec17e",
+      "renderBytes": 1331433,
+      "renderCommand": "pdftoppm -f 34 -l 42 -r 180 -cropbox -png uploaded-official.pdf hsk1-vi",
+      "evidenceNotes": "All headings and prose read; 0–99 grid contains no omitted Vietnamese units. Footer020 visible."
+    },
+    {
+      "pdfPage": 37,
+      "expectedPrintedPage": 21,
+      "observedFooterLabel": "021",
+      "independentFullPageReviewed": true,
+      "renderPath": "/workspace/scratch/28b55072841a/qa-official-vi-l04-renders/hsk1-vi-037.png",
+      "renderSHA256": "b80f202af2ddd6dff105640f6789dd2a6b41a3433f842c2c1c88727f66a049be",
+      "renderBytes": 1964428,
+      "renderCommand": "pdftoppm -f 34 -l 42 -r 180 -cropbox -png uploaded-official.pdf hsk1-vi",
+      "evidenceNotes": "Printed footer021 read. Number-range title punctuation, 二/两 explanation, unique hai quyển sách gloss, text2 setting/instruction checked. No omitted Vietnamese."
+    },
+    {
+      "pdfPage": 38,
+      "expectedPrintedPage": 22,
+      "observedFooterLabel": "022",
+      "independentFullPageReviewed": true,
+      "renderPath": "/workspace/scratch/28b55072841a/qa-official-vi-l04-renders/hsk1-vi-038.png",
+      "renderSHA256": "22ee23de3a295d3e7cccb414001b080204f38d2f8be3fb74f4e76e64915e071a",
+      "renderBytes": 1608945,
+      "renderCommand": "pdftoppm -f 34 -l 42 -r 180 -cropbox -png uploaded-official.pdf hsk1-vi",
+      "evidenceNotes": "Footer022 visible; text2 translation block and vocabulary4–13 checked fully, including đt. for 几 and italic explanatory glosses. No omitted VI."
+    },
+    {
+      "pdfPage": 39,
+      "expectedPrintedPage": 23,
+      "observedFooterLabel": "023",
+      "independentFullPageReviewed": true,
+      "renderPath": "/workspace/scratch/28b55072841a/qa-official-vi-l04-renders/hsk1-vi-039.png",
+      "renderSHA256": "0c91fb9c775135beaccd37318fe5102ef0cefca7301b8df9589588982fdc593f",
+      "renderBytes": 2226832,
+      "renderCommand": "pdftoppm -f 34 -l 42 -r 180 -cropbox -png uploaded-official.pdf hsk1-vi",
+      "evidenceNotes": "Footer023 read; both grammar explanations fully read, including bracketed [số từ + lượng từ + (danh từ)] and bốn nhân khẩu/hai người anh trai glosses. Chinese-only examples/dialogue blanks have no VI omissions."
+    },
+    {
+      "pdfPage": 40,
+      "expectedPrintedPage": 24,
+      "observedFooterLabel": "024",
+      "independentFullPageReviewed": true,
+      "renderPath": "/workspace/scratch/28b55072841a/qa-official-vi-l04-renders/hsk1-vi-040.png",
+      "renderSHA256": "2d51da8197684ce5dbac0bb94f0f103fb51bd10d8aafb712fd1f3079e2a9469a",
+      "renderBytes": 1472256,
+      "renderCommand": "pdftoppm -f 34 -l 42 -r 180 -cropbox -png uploaded-official.pdf hsk1-vi",
+      "evidenceNotes": "Footer024 read. Scene3 setting, listen instruction, Tiểu Ngữ help and six translated lines matched. Listening stems/options are Chinese/PY only, no extra VI omitted."
+    },
+    {
+      "pdfPage": 41,
+      "expectedPrintedPage": 25,
+      "observedFooterLabel": "025",
+      "independentFullPageReviewed": true,
+      "renderPath": "/workspace/scratch/28b55072841a/qa-official-vi-l04-renders/hsk1-vi-041.png",
+      "renderSHA256": "4568811f29221916ac5891d53a3f40ac39d2af12741400b8c183e3901caabbe0",
+      "renderBytes": 2419517,
+      "renderCommand": "pdftoppm -f 34 -l 42 -r 180 -cropbox -png uploaded-official.pdf hsk1-vi",
+      "evidenceNotes": "Footer025 visible; questions/instructions read; vocabulary14–21 raw POS and glosses checked. Printed 多 POS and gloss conflict by taxonomy, transcription accurately preserves both. Cloze/picture-answer Chinese text has no VI translation."
+    },
+    {
+      "pdfPage": 42,
+      "expectedPrintedPage": 26,
+      "observedFooterLabel": "026",
+      "independentFullPageReviewed": true,
+      "renderPath": "/workspace/scratch/28b55072841a/qa-official-vi-l04-renders/hsk1-vi-042.png",
+      "renderSHA256": "5803fc0e80c6e5791b1234776c62a75511df1ce24373e61c92b23373fa163fd8",
+      "renderBytes": 1151609,
+      "renderCommand": "pdftoppm -f 34 -l 42 -r 180 -cropbox -png uploaded-official.pdf hsk1-vi",
+      "evidenceNotes": "Footer026 seen. Every Vietnamese heading/instruction/caption matched; upper picture blanks and example bubble have no omitted VI."
+    }
+  ],
+  "entries": [
+    {
+      "sourceID": "hsk1-vi-l04-pdf034-lesson-marker",
+      "pdfPage": 34,
+      "printedPage": 18,
+      "section": "课题",
+      "kind": "lesson-marker",
+      "chineseAnchor": "第4课",
+      "authorViText": "Bài",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Bài",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Matched full original CropBox page034, footer018. Chinese embedded examples and printed Vietnamese accents retained; line-wrap/ordinary-space joining accepted, raster Unicode encoding not inferred.",
+      "evidence": [
+        "full-page034"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf034-title",
+      "pdfPage": 34,
+      "printedPage": 18,
+      "section": "课题",
+      "kind": "lesson-title",
+      "chineseAnchor": "我有两个孩子",
+      "authorViText": "Chị có hai con",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Chị có hai con",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Matched full original CropBox page034, footer018. Chinese embedded examples and printed Vietnamese accents retained; line-wrap/ordinary-space joining accepted, raster Unicode encoding not inferred.",
+      "evidence": [
+        "full-page034"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf034-goals-heading",
+      "pdfPage": 34,
+      "printedPage": 18,
+      "section": "目标",
+      "kind": "section-heading",
+      "chineseAnchor": "目标",
+      "authorViText": "Mục tiêu",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Mục tiêu",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Matched full original CropBox page034, footer018. Chinese embedded examples and printed Vietnamese accents retained; line-wrap/ordinary-space joining accepted, raster Unicode encoding not inferred.",
+      "evidence": [
+        "full-page034"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf034-goal-01",
+      "pdfPage": 34,
+      "printedPage": 18,
+      "section": "目标",
+      "kind": "goal",
+      "chineseAnchor": "能听懂并使用“有”字句（1）表达领有人或物品。",
+      "authorViText": "Có thể nghe hiểu và sử dụng được câu chữ “有” (1) để diễn đạt sự sở hữu đối với người hoặc vật.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Có thể nghe hiểu và sử dụng được câu chữ “有” (1) để diễn đạt sự sở hữu đối với người hoặc vật.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Matched full original CropBox page034, footer018. Chinese embedded examples and printed Vietnamese accents retained; line-wrap/ordinary-space joining accepted, raster Unicode encoding not inferred.",
+      "evidence": [
+        "full-page034"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf034-goal-02",
+      "pdfPage": 34,
+      "printedPage": 18,
+      "section": "目标",
+      "kind": "goal",
+      "chineseAnchor": "掌握“A……，B呢？”的用法。",
+      "authorViText": "Nắm vững cách sử dụng của cấu trúc “A……, B呢?”.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Nắm vững cách sử dụng của cấu trúc “A……, B呢?”.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Matched full original CropBox page034, footer018. Chinese embedded examples and printed Vietnamese accents retained; line-wrap/ordinary-space joining accepted, raster Unicode encoding not inferred.",
+      "evidence": [
+        "full-page034"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf034-goal-03",
+      "pdfPage": 34,
+      "printedPage": 18,
+      "section": "目标",
+      "kind": "goal",
+      "chineseAnchor": "掌握本课数词、量词的用法。",
+      "authorViText": "Nắm vững cách sử dụng của số từ và lượng từ trong bài.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Nắm vững cách sử dụng của số từ và lượng từ trong bài.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Matched full original CropBox page034, footer018. Chinese embedded examples and printed Vietnamese accents retained; line-wrap/ordinary-space joining accepted, raster Unicode encoding not inferred.",
+      "evidence": [
+        "full-page034"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf034-goal-04",
+      "pdfPage": 34,
+      "printedPage": 18,
+      "section": "目标",
+      "kind": "goal",
+      "chineseAnchor": "了解中国人如何问答年龄，能使用合适的词语进行年龄问答。",
+      "authorViText": "Hiểu về cách người Trung Quốc hỏi và trả lời về tuổi tác, đồng thời có thể sử dụng các từ ngữ phù hợp để hỏi đáp về tuổi.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Hiểu về cách người Trung Quốc hỏi và trả lời về tuổi tác, đồng thời có thể sử dụng các từ ngữ phù hợp để hỏi đáp về tuổi.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Matched full original CropBox page034, footer018. Chinese embedded examples and printed Vietnamese accents retained; line-wrap/ordinary-space joining accepted, raster Unicode encoding not inferred.",
+      "evidence": [
+        "full-page034"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf034-warmup-heading",
+      "pdfPage": 34,
+      "printedPage": 18,
+      "section": "热身",
+      "kind": "section-heading",
+      "chineseAnchor": "热身",
+      "authorViText": "Khởi động",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Khởi động",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Matched full original CropBox page034, footer018. Chinese embedded examples and printed Vietnamese accents retained; line-wrap/ordinary-space joining accepted, raster Unicode encoding not inferred.",
+      "evidence": [
+        "full-page034"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf034-warmup-instruction",
+      "pdfPage": 34,
+      "printedPage": 18,
+      "section": "热身",
+      "kind": "instruction",
+      "chineseAnchor": "给下面的词语选择对应的图片。",
+      "authorViText": "Lựa chọn hình ảnh tương ứng với các từ ngữ sau.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Lựa chọn hình ảnh tương ứng với các từ ngữ sau.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Matched full original CropBox page034, footer018. Chinese embedded examples and printed Vietnamese accents retained; line-wrap/ordinary-space joining accepted, raster Unicode encoding not inferred.",
+      "evidence": [
+        "full-page034"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-running-header",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "页眉",
+      "kind": "running-header",
+      "chineseAnchor": "我有两个孩子 | 第4课",
+      "authorViText": "Bài 4",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Bài 4",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-text-1-heading",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "课文1",
+      "kind": "section-heading",
+      "chineseAnchor": "课文1",
+      "authorViText": "Bài khoá 1",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Bài khoá 1",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-text-1-setting",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "课文1",
+      "kind": "setting",
+      "chineseAnchor": "在家里，刘明和王一雪在聊天儿。",
+      "authorViText": "Lưu Minh và Vương Nhất Tuyết đang trò chuyện ở trong nhà.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Lưu Minh và Vương Nhất Tuyết đang trò chuyện ở trong nhà.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-text-1-read",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "课文1",
+      "kind": "instruction",
+      "chineseAnchor": "朗读对话。",
+      "authorViText": "Đọc to đoạn hội thoại.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Đọc to đoạn hội thoại.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-vocab-heading",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "生词",
+      "kind": "section-heading",
+      "chineseAnchor": "生词",
+      "authorViText": "Từ mới",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Từ mới",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-vocab-001",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "有",
+      "authorViText": "có",
+      "authorPosRawLabel": "đgt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "có",
+      "expectedPosRawLabel": "đgt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-vocab-002",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "多少",
+      "authorViText": "bao nhiêu",
+      "authorPosRawLabel": "đt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "bao nhiêu",
+      "expectedPosRawLabel": "đt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-vocab-003",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "个",
+      "authorViText": "dùng chung cho nhiều danh từ",
+      "authorPosRawLabel": "lượng.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "dùng chung cho nhiều danh từ",
+      "expectedPosRawLabel": "lượng.",
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-text-1-role-read",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "课文1",
+      "kind": "instruction",
+      "chineseAnchor": "分角色朗读对话。",
+      "authorViText": "Phân vai đọc to đoạn hội thoại.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Phân vai đọc to đoạn hội thoại.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-text-1-line-01",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "课文1/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "刘明：一飞忙吗？",
+      "authorViText": "Lưu Minh: Nhất Phi có bận không?",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Lưu Minh: Nhất Phi có bận không?",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-text-1-line-02",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "课文1/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "王一雪：她很忙。",
+      "authorViText": "Vương Nhất Tuyết: Dì ấy rất bận.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Vương Nhất Tuyết: Dì ấy rất bận.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-text-1-line-03",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "课文1/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "刘明：她有多少个学生？",
+      "authorViText": "Lưu Minh: Dì ấy có bao nhiêu học sinh?",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Lưu Minh: Dì ấy có bao nhiêu học sinh?",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-text-1-line-04",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "课文1/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "王一雪：她有二十个学生。",
+      "authorViText": "Vương Nhất Tuyết: Dì ấy có hai mươi học sinh.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Vương Nhất Tuyết: Dì ấy có hai mươi học sinh.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-grammar-heading",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "小语讲堂",
+      "kind": "section-heading",
+      "chineseAnchor": "小语讲堂",
+      "authorViText": "Lớp học của Tiểu Ngữ",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Lớp học của Tiểu Ngữ",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-grammar-1-title",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "小语讲堂/1",
+      "kind": "grammar-title",
+      "chineseAnchor": "“有”字句（1）",
+      "authorViText": "Câu chữ “有” (1)",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Câu chữ “有” (1)",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf035-grammar-1-body",
+      "pdfPage": 35,
+      "printedPage": 19,
+      "section": "小语讲堂/1",
+      "kind": "grammar-explanation",
+      "chineseAnchor": "本课“有”表示领有，否定形式为“没/没有”。",
+      "authorViText": "Từ “有” trong bài này biểu thị sự sở hữu. Phủ định của “有” là “没/没有”.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Từ “有” trong bài này biểu thị sự sở hữu. Phủ định của “有” là “没/没有”.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original CropBox page read: Vietnamese line, speaker, POS and punctuation agree with transcription.",
+      "evidence": [
+        "full-page035"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf036-running-header",
+      "pdfPage": 36,
+      "printedPage": 20,
+      "section": "页眉",
+      "kind": "running-header",
+      "chineseAnchor": "新HSK教程1",
+      "authorViText": "Giáo trình New HSK 1",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Giáo trình New HSK 1",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; all six Vietnamese units agree. Numeric grid supplies Chinese, pinyin and digits, no Vietnamese cell glosses.",
+      "evidence": [
+        "full-page036"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf036-grammar-1-read",
+      "pdfPage": 36,
+      "printedPage": 20,
+      "section": "小语讲堂/1",
+      "kind": "instruction",
+      "chineseAnchor": "大声朗读。",
+      "authorViText": "Đọc to các câu sau.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Đọc to các câu sau.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; all six Vietnamese units agree. Numeric grid supplies Chinese, pinyin and digits, no Vietnamese cell glosses.",
+      "evidence": [
+        "full-page036"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf036-grammar-2-title",
+      "pdfPage": 36,
+      "printedPage": 20,
+      "section": "小语讲堂/2",
+      "kind": "grammar-title",
+      "chineseAnchor": "数字的表达",
+      "authorViText": "Cách diễn đạt các con số",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Cách diễn đạt các con số",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; all six Vietnamese units agree. Numeric grid supplies Chinese, pinyin and digits, no Vietnamese cell glosses.",
+      "evidence": [
+        "full-page036"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf036-grammar-2-body",
+      "pdfPage": 36,
+      "printedPage": 20,
+      "section": "小语讲堂/2",
+      "kind": "grammar-explanation",
+      "chineseAnchor": "汉语中，数字有阿拉伯数字和汉字两种写法，例如“1”和“一”。",
+      "authorViText": "Trong tiếng Trung Quốc, các con số có thể được viết dưới hai dạng: số Ả Rập (ví dụ: “1”) và chữ Hán (ví dụ: “一”).",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Trong tiếng Trung Quốc, các con số có thể được viết dưới hai dạng: số Ả Rập (ví dụ: “1”) và chữ Hán (ví dụ: “一”).",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; all six Vietnamese units agree. Numeric grid supplies Chinese, pinyin and digits, no Vietnamese cell glosses.",
+      "evidence": [
+        "full-page036"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf036-grammar-2-1-title",
+      "pdfPage": 36,
+      "printedPage": 20,
+      "section": "小语讲堂/2/（1）",
+      "kind": "grammar-subtitle",
+      "chineseAnchor": "0–99的写法和读法",
+      "authorViText": "Cách viết và cách đọc các con số từ 0–99",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Cách viết và cách đọc các con số từ 0–99",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; all six Vietnamese units agree. Numeric grid supplies Chinese, pinyin and digits, no Vietnamese cell glosses.",
+      "evidence": [
+        "full-page036"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf036-grammar-2-1-read",
+      "pdfPage": 36,
+      "printedPage": 20,
+      "section": "小语讲堂/2/（1）",
+      "kind": "instruction",
+      "chineseAnchor": "大声朗读。",
+      "authorViText": "Đọc to các con số sau.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Đọc to các con số sau.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; all six Vietnamese units agree. Numeric grid supplies Chinese, pinyin and digits, no Vietnamese cell glosses.",
+      "evidence": [
+        "full-page036"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf037-running-header",
+      "pdfPage": 37,
+      "printedPage": 21,
+      "section": "页眉",
+      "kind": "running-header",
+      "chineseAnchor": "我有两个孩子 | 第4课",
+      "authorViText": "Bài 4",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Bài 4",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all ten Vietnamese units agree. Only 两本书 has a Vietnamese table-cell gloss; listening questions/options are Chinese and pinyin only.",
+      "evidence": [
+        "full-page037"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf037-grammar-2-2-title",
+      "pdfPage": 37,
+      "printedPage": 21,
+      "section": "小语讲堂/2/（2）",
+      "kind": "grammar-subtitle",
+      "chineseAnchor": "“百”以上（含）、“万”以内数字的写法与读法",
+      "authorViText": "Cách viết và cách đọc các số từ 100 (kể cả 100) đến 10.000.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Cách viết và cách đọc các số từ 100 (kể cả 100) đến 10.000.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all ten Vietnamese units agree. Only 两本书 has a Vietnamese table-cell gloss; listening questions/options are Chinese and pinyin only.",
+      "evidence": [
+        "full-page037"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf037-grammar-2-2-read",
+      "pdfPage": 37,
+      "printedPage": 21,
+      "section": "小语讲堂/2/（2）",
+      "kind": "instruction",
+      "chineseAnchor": "大声朗读。",
+      "authorViText": "Đọc to các con số sau.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Đọc to các con số sau.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all ten Vietnamese units agree. Only 两本书 has a Vietnamese table-cell gloss; listening questions/options are Chinese and pinyin only.",
+      "evidence": [
+        "full-page037"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf037-grammar-2-3-title",
+      "pdfPage": 37,
+      "printedPage": 21,
+      "section": "小语讲堂/2/（3）",
+      "kind": "grammar-subtitle",
+      "chineseAnchor": "“2”的写法和读法",
+      "authorViText": "Cách viết và cách đọc số “2”",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Cách viết và cách đọc số “2”",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all ten Vietnamese units agree. Only 两本书 has a Vietnamese table-cell gloss; listening questions/options are Chinese and pinyin only.",
+      "evidence": [
+        "full-page037"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf037-grammar-2-3-body",
+      "pdfPage": 37,
+      "printedPage": 21,
+      "section": "小语讲堂/2/（3）",
+      "kind": "grammar-explanation",
+      "chineseAnchor": "数字“2”写作、读作“二（èr）”或“两（liǎng）”；序数词里用“二”，量词前用“两”。",
+      "authorViText": "Số “2” có thể được viết và đọc là “二 (èr)” hoặc “两 (liǎng)”. Thông thường, “二 (èr)” được dùng chỉ số thứ tự, chẳng hạn như “第二”, còn “两 (liǎng)” được dùng trước lượng từ.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Số “2” có thể được viết và đọc là “二 (èr)” hoặc “两 (liǎng)”. Thông thường, “二 (èr)” được dùng chỉ số thứ tự, chẳng hạn như “第二”, còn “两 (liǎng)” được dùng trước lượng từ.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all ten Vietnamese units agree. Only 两本书 has a Vietnamese table-cell gloss; listening questions/options are Chinese and pinyin only.",
+      "evidence": [
+        "full-page037"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf037-grammar-2-3-read",
+      "pdfPage": 37,
+      "printedPage": 21,
+      "section": "小语讲堂/2/（3）",
+      "kind": "instruction",
+      "chineseAnchor": "大声朗读。",
+      "authorViText": "Đọc to các con số sau.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Đọc to các con số sau.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all ten Vietnamese units agree. Only 两本书 has a Vietnamese table-cell gloss; listening questions/options are Chinese and pinyin only.",
+      "evidence": [
+        "full-page037"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf037-grammar-2-3-example-book",
+      "pdfPage": 37,
+      "printedPage": 21,
+      "section": "小语讲堂/2/（3）/例表",
+      "kind": "inline-example",
+      "chineseAnchor": "两本书",
+      "authorViText": "(hai quyển sách)",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "(hai quyển sách)",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all ten Vietnamese units agree. Only 两本书 has a Vietnamese table-cell gloss; listening questions/options are Chinese and pinyin only.",
+      "evidence": [
+        "full-page037"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf037-text-2-heading",
+      "pdfPage": 37,
+      "printedPage": 21,
+      "section": "课文2",
+      "kind": "section-heading",
+      "chineseAnchor": "课文2",
+      "authorViText": "Bài khoá 2",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Bài khoá 2",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all ten Vietnamese units agree. Only 两本书 has a Vietnamese table-cell gloss; listening questions/options are Chinese and pinyin only.",
+      "evidence": [
+        "full-page037"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf037-text-2-setting",
+      "pdfPage": 37,
+      "printedPage": 21,
+      "section": "课文2",
+      "kind": "setting",
+      "chineseAnchor": "在公司里，王一雪和杨同乐休息时聊天儿。",
+      "authorViText": "Vương Nhất Tuyết và Dương Đồng Lạc trò chuyện với nhau trong giờ nghỉ ở công ty.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Vương Nhất Tuyết và Dương Đồng Lạc trò chuyện với nhau trong giờ nghỉ ở công ty.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all ten Vietnamese units agree. Only 两本书 has a Vietnamese table-cell gloss; listening questions/options are Chinese and pinyin only.",
+      "evidence": [
+        "full-page037"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf037-text-2-listen",
+      "pdfPage": 37,
+      "printedPage": 21,
+      "section": "课文2",
+      "kind": "instruction",
+      "chineseAnchor": "听两遍对话，选择正确答案。",
+      "authorViText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all ten Vietnamese units agree. Only 两本书 has a Vietnamese table-cell gloss; listening questions/options are Chinese and pinyin only.",
+      "evidence": [
+        "full-page037"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-running-header",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "页眉",
+      "kind": "running-header",
+      "chineseAnchor": "新HSK教程1",
+      "authorViText": "Giáo trình New HSK 1",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Giáo trình New HSK 1",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-text-2-line-01",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "课文2/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "王一雪：我有两个哥哥，你呢？",
+      "authorViText": "Vương Nhất Tuyết: Chị có hai anh trai. Em thì sao?",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Vương Nhất Tuyết: Chị có hai anh trai. Em thì sao?",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-text-2-line-02",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "课文2/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "杨同乐：我没有哥哥。",
+      "authorViText": "Dương Đồng Lạc: Em không có anh trai.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Dương Đồng Lạc: Em không có anh trai.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-text-2-line-03",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "课文2/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "王一雪：你家有几口人？",
+      "authorViText": "Vương Nhất Tuyết: Nhà em có mấy người?",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Vương Nhất Tuyết: Nhà em có mấy người?",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-text-2-line-04",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "课文2/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "杨同乐：我家有四口人，爸爸、妈妈、妹妹和我。",
+      "authorViText": "Dương Đồng Lạc: Nhà em có bốn người: bố, mẹ, em gái và em.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Dương Đồng Lạc: Nhà em có bốn người: bố, mẹ, em gái và em.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-vocab-heading",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "生词",
+      "kind": "section-heading",
+      "chineseAnchor": "生词",
+      "authorViText": "Từ mới",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Từ mới",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-vocab-004",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "哥哥",
+      "authorViText": "anh trai",
+      "authorPosRawLabel": "dt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "anh trai",
+      "expectedPosRawLabel": "dt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-vocab-005",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "呢",
+      "authorViText": "thì sao (dùng ở cuối câu hỏi)",
+      "authorPosRawLabel": "trợ.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "thì sao (dùng ở cuối câu hỏi)",
+      "expectedPosRawLabel": "trợ.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-vocab-006",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "没有",
+      "authorViText": "không có",
+      "authorPosRawLabel": "đgt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "không có",
+      "expectedPosRawLabel": "đgt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-vocab-007",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "家",
+      "authorViText": "gia đình, nhà",
+      "authorPosRawLabel": "dt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "gia đình, nhà",
+      "expectedPosRawLabel": "dt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-vocab-008",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "几",
+      "authorViText": "mấy",
+      "authorPosRawLabel": "đt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "mấy",
+      "expectedPosRawLabel": "đt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-vocab-009",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "口",
+      "authorViText": "chỉ người trong gia đình",
+      "authorPosRawLabel": "lượng.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "chỉ người trong gia đình",
+      "expectedPosRawLabel": "lượng.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-vocab-010",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "爸爸",
+      "authorViText": "bố, ba",
+      "authorPosRawLabel": "dt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "bố, ba",
+      "expectedPosRawLabel": "dt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-vocab-011",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "妈妈",
+      "authorViText": "mẹ",
+      "authorPosRawLabel": "dt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "mẹ",
+      "expectedPosRawLabel": "dt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-vocab-012",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "妹妹",
+      "authorViText": "em gái",
+      "authorPosRawLabel": "dt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "em gái",
+      "expectedPosRawLabel": "dt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-vocab-013",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "和",
+      "authorViText": "và",
+      "authorPosRawLabel": "liên.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "và",
+      "expectedPosRawLabel": "liên.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-text-2-role-read",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "课文2",
+      "kind": "instruction",
+      "chineseAnchor": "分角色朗读对话。",
+      "authorViText": "Phân vai đọc to đoạn hội thoại.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Phân vai đọc to đoạn hội thoại.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf038-text-2-pair-work",
+      "pdfPage": 38,
+      "printedPage": 22,
+      "section": "课文2",
+      "kind": "instruction",
+      "chineseAnchor": "两人一组，根据实际情况对话。",
+      "authorViText": "Hai người một nhóm, tiến hành hội thoại theo tình huống thực tế.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Hai người một nhóm, tiến hành hội thoại theo tình huống thực tế.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all eighteen units agree. Four dialogue lines preserve Chị/Em and four family terms; ten numbered vocabulary rows4–13 and each raw POS checked.",
+      "evidence": [
+        "full-page038"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf039-running-header",
+      "pdfPage": 39,
+      "printedPage": 23,
+      "section": "页眉",
+      "kind": "running-header",
+      "chineseAnchor": "我有两个孩子 | 第4课",
+      "authorViText": "Bài 4",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Bài 4",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; Vietnamese headings, full grammar prose and three instructions agree. A……,B呢 formula ellipsis is a visual transcription, not a claim about original Unicode/spacing.",
+      "evidence": [
+        "full-page039"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf039-grammar-heading",
+      "pdfPage": 39,
+      "printedPage": 23,
+      "section": "小语讲堂",
+      "kind": "section-heading",
+      "chineseAnchor": "小语讲堂",
+      "authorViText": "Lớp học của Tiểu Ngữ",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Lớp học của Tiểu Ngữ",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; Vietnamese headings, full grammar prose and three instructions agree. A……,B呢 formula ellipsis is a visual transcription, not a claim about original Unicode/spacing.",
+      "evidence": [
+        "full-page039"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf039-grammar-3-title",
+      "pdfPage": 39,
+      "printedPage": 23,
+      "section": "小语讲堂/3",
+      "kind": "grammar-title",
+      "chineseAnchor": "语气助词“呢”（1）",
+      "authorViText": "Trợ từ ngữ khí “呢” (1)",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Trợ từ ngữ khí “呢” (1)",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; Vietnamese headings, full grammar prose and three instructions agree. A……,B呢 formula ellipsis is a visual transcription, not a claim about original Unicode/spacing.",
+      "evidence": [
+        "full-page039"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf039-grammar-3-body",
+      "pdfPage": 39,
+      "printedPage": 23,
+      "section": "小语讲堂/3",
+      "kind": "grammar-explanation",
+      "chineseAnchor": "本课“呢”在句末，表示疑问，询问上文提到的情况。基本结构：A……，B呢？",
+      "authorViText": "Từ “呢” trong bài này được dùng ở cuối câu để biểu thị nghi vấn, dùng để hỏi về tình huống đã được đề cập trước đó. Cấu trúc cơ bản: A …… , B 呢?",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Từ “呢” trong bài này được dùng ở cuối câu để biểu thị nghi vấn, dùng để hỏi về tình huống đã được đề cập trước đó. Cấu trúc cơ bản: A …… , B 呢?",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; Vietnamese headings, full grammar prose and three instructions agree. A……,B呢 formula ellipsis is a visual transcription, not a claim about original Unicode/spacing.",
+      "evidence": [
+        "full-page039"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf039-grammar-3-read",
+      "pdfPage": 39,
+      "printedPage": 23,
+      "section": "小语讲堂/3",
+      "kind": "instruction",
+      "chineseAnchor": "大声朗读。",
+      "authorViText": "Đọc to các câu sau.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Đọc to các câu sau.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; Vietnamese headings, full grammar prose and three instructions agree. A……,B呢 formula ellipsis is a visual transcription, not a claim about original Unicode/spacing.",
+      "evidence": [
+        "full-page039"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf039-grammar-4-title",
+      "pdfPage": 39,
+      "printedPage": 23,
+      "section": "小语讲堂/4",
+      "kind": "grammar-title",
+      "chineseAnchor": "名量词和名量结构",
+      "authorViText": "Danh lượng từ và cấu trúc danh lượng",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Danh lượng từ và cấu trúc danh lượng",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; Vietnamese headings, full grammar prose and three instructions agree. A……,B呢 formula ellipsis is a visual transcription, not a claim about original Unicode/spacing.",
+      "evidence": [
+        "full-page039"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf039-grammar-4-body",
+      "pdfPage": 39,
+      "printedPage": 23,
+      "section": "小语讲堂/4",
+      "kind": "grammar-explanation",
+      "chineseAnchor": "数词后一般要带量词；名量词“口、个”和名量结构“四口人、两个哥哥”。",
+      "authorViText": "Khi diễn đạt số lượng, trong tiếng Trung Quốc sau số từ thường phải có lượng từ. Trong bài này, chúng ta học các danh lượng từ dùng để biểu thị số lượng người hoặc vật, như “口”, “个” và cấu trúc [số từ + lượng từ + (danh từ)], chẳng hạn như “四口人” (bốn nhân khẩu) và “两个哥哥” (hai người anh trai).",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Khi diễn đạt số lượng, trong tiếng Trung Quốc sau số từ thường phải có lượng từ. Trong bài này, chúng ta học các danh lượng từ dùng để biểu thị số lượng người hoặc vật, như “口”, “个” và cấu trúc [số từ + lượng từ + (danh từ)], chẳng hạn như “四口人” (bốn nhân khẩu) và “两个哥哥” (hai người anh trai).",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; Vietnamese headings, full grammar prose and three instructions agree. A……,B呢 formula ellipsis is a visual transcription, not a claim about original Unicode/spacing.",
+      "evidence": [
+        "full-page039"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf039-grammar-4-read",
+      "pdfPage": 39,
+      "printedPage": 23,
+      "section": "小语讲堂/4",
+      "kind": "instruction",
+      "chineseAnchor": "大声朗读。",
+      "authorViText": "Đọc to các cụm từ sau.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Đọc to các cụm từ sau.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; Vietnamese headings, full grammar prose and three instructions agree. A……,B呢 formula ellipsis is a visual transcription, not a claim about original Unicode/spacing.",
+      "evidence": [
+        "full-page039"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf039-grammar-4-complete",
+      "pdfPage": 39,
+      "printedPage": 23,
+      "section": "小语讲堂/4",
+      "kind": "instruction",
+      "chineseAnchor": "完成对话。",
+      "authorViText": "Hoàn thành hội thoại.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Hoàn thành hội thoại.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Actual original page read; Vietnamese headings, full grammar prose and three instructions agree. A……,B呢 formula ellipsis is a visual transcription, not a claim about original Unicode/spacing.",
+      "evidence": [
+        "full-page039"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-running-header",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "页眉",
+      "kind": "running-header",
+      "chineseAnchor": "新HSK教程1",
+      "authorViText": "Giáo trình New HSK 1",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Giáo trình New HSK 1",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-text-3-heading",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3",
+      "kind": "section-heading",
+      "chineseAnchor": "课文3",
+      "authorViText": "Bài khoá 3",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Bài khoá 3",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-text-3-setting",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3",
+      "kind": "setting",
+      "chineseAnchor": "在街上，王一雪带着儿子偶遇杨同乐。",
+      "authorViText": "Khi Vương Nhất Tuyết đang đi cùng con trai trên phố thì tình cờ gặp Dương Đồng Lạc.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Khi Vương Nhất Tuyết đang đi cùng con trai trên phố thì tình cờ gặp Dương Đồng Lạc.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-text-3-listen",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3",
+      "kind": "instruction",
+      "chineseAnchor": "听两遍对话，选择正确答案。",
+      "authorViText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-hint-heading",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3/小语助力",
+      "kind": "hint-label",
+      "chineseAnchor": "小语助力",
+      "authorViText": "Tiểu Ngữ giúp sức",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Tiểu Ngữ giúp sức",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-hint-under-ten",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3/小语助力",
+      "kind": "hint-explanation",
+      "chineseAnchor": "十岁以下时的问法。",
+      "authorViText": "Đây là cách để hỏi tuổi của trẻ em dưới mười tuổi.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Đây là cách để hỏi tuổi của trẻ em dưới mười tuổi.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-hint-over-ten",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3/小语助力",
+      "kind": "hint-explanation",
+      "chineseAnchor": "十岁以上一般不问“几岁”，要问“多大”。",
+      "authorViText": "Đối với những người trên mười tuổi, chúng ta thường hỏi “多大”, không hỏi “几岁”.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Đối với những người trên mười tuổi, chúng ta thường hỏi “多大”, không hỏi “几岁”.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-text-3-line-01",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "杨同乐：这是您儿子吗？",
+      "authorViText": "Dương Đồng Lạc: Đây là con trai chị phải không?",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Dương Đồng Lạc: Đây là con trai chị phải không?",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-text-3-line-02",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "王一雪：是的。我有两个孩子，一个儿子，一个女儿。",
+      "authorViText": "Vương Nhất Tuyết: Đúng vậy. Chị có hai con, một con trai và một con gái.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Vương Nhất Tuyết: Đúng vậy. Chị có hai con, một con trai và một con gái.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-text-3-line-03",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "杨同乐：您儿子几岁？",
+      "authorViText": "Dương Đồng Lạc: Con trai chị mấy tuổi rồi?",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Dương Đồng Lạc: Con trai chị mấy tuổi rồi?",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-text-3-line-04",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "王一雪：他今年五岁。",
+      "authorViText": "Vương Nhất Tuyết: Cháu năm nay năm tuổi.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Vương Nhất Tuyết: Cháu năm nay năm tuổi.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-text-3-line-05",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "杨同乐：您女儿多大？",
+      "authorViText": "Dương Đồng Lạc: Con gái chị bao nhiêu tuổi?",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Dương Đồng Lạc: Con gái chị bao nhiêu tuổi?",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf040-text-3-line-06",
+      "pdfPage": 40,
+      "printedPage": 24,
+      "section": "课文3/角色译文",
+      "kind": "dialogue-translation",
+      "chineseAnchor": "王一雪：她今年十二。",
+      "authorViText": "Vương Nhất Tuyết: Cháu năm nay mười hai tuổi.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Vương Nhất Tuyết: Cháu năm nay mười hai tuổi.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all thirteen units agree. Full scene3 dialogue uses Chị/Cháu rather than generic tôi/anh; both age-help boxes fully checked.",
+      "evidence": [
+        "full-page040"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-running-header",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "页眉",
+      "kind": "running-header",
+      "chineseAnchor": "我有两个孩子 | 第4课",
+      "authorViText": "Bài 4",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Bài 4",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-text-3-role-read",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "课文3",
+      "kind": "instruction",
+      "chineseAnchor": "分角色朗读对话。",
+      "authorViText": "Phân vai đọc to đoạn hội thoại.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Phân vai đọc to đoạn hội thoại.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-text-3-questions-instruction",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "课文3",
+      "kind": "instruction",
+      "chineseAnchor": "根据课文内容回答问题。",
+      "authorViText": "Trả lời câu hỏi theo nội dung bài khoá.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Trả lời câu hỏi theo nội dung bài khoá.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-text-3-question-01",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "课文3/问题",
+      "kind": "question-translation",
+      "chineseAnchor": "王一雪有几个儿子？几个女儿？",
+      "authorViText": "Vương Nhất Tuyết có mấy con trai? Mấy con gái?",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Vương Nhất Tuyết có mấy con trai? Mấy con gái?",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-text-3-question-02",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "课文3/问题",
+      "kind": "question-translation",
+      "chineseAnchor": "王一雪儿子今年几岁？",
+      "authorViText": "Con trai của Vương Nhất Tuyết năm nay lên mấy?",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Con trai của Vương Nhất Tuyết năm nay lên mấy?",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-vocab-heading",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "生词",
+      "kind": "section-heading",
+      "chineseAnchor": "生词",
+      "authorViText": "Từ mới",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Từ mới",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-vocab-014",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "儿子",
+      "authorViText": "con trai",
+      "authorPosRawLabel": "dt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "con trai",
+      "expectedPosRawLabel": "dt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-vocab-015",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "孩子",
+      "authorViText": "con, trẻ con, trẻ em",
+      "authorPosRawLabel": "dt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "con, trẻ con, trẻ em",
+      "expectedPosRawLabel": "dt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-vocab-016",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "女儿",
+      "authorViText": "con gái",
+      "authorPosRawLabel": "dt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "con gái",
+      "expectedPosRawLabel": "dt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-vocab-017",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "岁",
+      "authorViText": "tuổi",
+      "authorPosRawLabel": "lượng.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "tuổi",
+      "expectedPosRawLabel": "lượng.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-vocab-018",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "他",
+      "authorViText": "anh ấy, cậu ấy, ông ấy...",
+      "authorPosRawLabel": "đt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "anh ấy, cậu ấy, ông ấy...",
+      "expectedPosRawLabel": "đt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-vocab-019",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "今年",
+      "authorViText": "năm nay",
+      "authorPosRawLabel": "dt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "năm nay",
+      "expectedPosRawLabel": "dt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-vocab-020",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "多",
+      "authorViText": "bao nhiêu (phó từ chỉ mức độ)",
+      "authorPosRawLabel": "đt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "bao nhiêu (phó từ chỉ mức độ)",
+      "expectedPosRawLabel": "đt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-vocab-021",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "生词",
+      "kind": "vocabulary-row",
+      "chineseAnchor": "大",
+      "authorViText": "lớn (chỉ tuổi tác)",
+      "authorPosRawLabel": "tt.",
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "lớn (chỉ tuổi tác)",
+      "expectedPosRawLabel": "tt.",
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-exercises-heading",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "综合练习",
+      "kind": "section-heading",
+      "chineseAnchor": "综合练习",
+      "authorViText": "Bài tập tổng hợp",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Bài tập tổng hợp",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-cloze-instruction",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "综合练习",
+      "kind": "instruction",
+      "chineseAnchor": "选词填空。",
+      "authorViText": "Chọn từ thích hợp điền vào chỗ trống.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Chọn từ thích hợp điền vào chỗ trống.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf041-picture-description-instruction",
+      "pdfPage": 41,
+      "printedPage": 25,
+      "section": "综合练习",
+      "kind": "instruction",
+      "chineseAnchor": "用本课新学的词语和语言点描述图片。",
+      "authorViText": "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài để miêu tả các hình ảnh sau.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài để miêu tả các hình ảnh sau.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; all seventeen units agree. Eight vocabulary rows14–21 checked; printed 多 has raw đt. alongside italic (phó từ chỉ mức độ), both must be kept distinct.",
+      "evidence": [
+        "full-page041"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf042-running-header",
+      "pdfPage": 42,
+      "printedPage": 26,
+      "section": "页眉",
+      "kind": "running-header",
+      "chineseAnchor": "新HSK教程1",
+      "authorViText": "Giáo trình New HSK 1",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Giáo trình New HSK 1",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; seven Vietnamese units agree, including classroom pair instruction, example/bonus headings and age-video caption. Picture captions and example dialogue are Chinese-only.",
+      "evidence": [
+        "full-page042"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf042-class-activity-heading",
+      "pdfPage": 42,
+      "printedPage": 26,
+      "section": "课堂活动",
+      "kind": "section-heading",
+      "chineseAnchor": "课堂活动",
+      "authorViText": "Hoạt động trên lớp",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Hoạt động trên lớp",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; seven Vietnamese units agree, including classroom pair instruction, example/bonus headings and age-video caption. Picture captions and example dialogue are Chinese-only.",
+      "evidence": [
+        "full-page042"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf042-pair-heading",
+      "pdfPage": 42,
+      "printedPage": 26,
+      "section": "课堂活动",
+      "kind": "activity-heading",
+      "chineseAnchor": "双人活动",
+      "authorViText": "Hoạt động theo nhóm hai người",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Hoạt động theo nhóm hai người",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; seven Vietnamese units agree, including classroom pair instruction, example/bonus headings and age-video caption. Picture captions and example dialogue are Chinese-only.",
+      "evidence": [
+        "full-page042"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf042-pair-instruction",
+      "pdfPage": 42,
+      "printedPage": 26,
+      "section": "课堂活动",
+      "kind": "instruction",
+      "chineseAnchor": "两人一组，互相询问个人和家庭情况（年龄、家庭人口等），可虚拟。",
+      "authorViText": "Hai người một nhóm, hỏi nhau về thông tin cá nhân và tình hình gia đình (tuổi tác, số người trong gia đình...), có thể hư cấu.",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Hai người một nhóm, hỏi nhau về thông tin cá nhân và tình hình gia đình (tuổi tác, số người trong gia đình...), có thể hư cấu.",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; seven Vietnamese units agree, including classroom pair instruction, example/bonus headings and age-video caption. Picture captions and example dialogue are Chinese-only.",
+      "evidence": [
+        "full-page042"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf042-example-heading",
+      "pdfPage": 42,
+      "printedPage": 26,
+      "section": "课堂活动/小语的例子",
+      "kind": "example-label",
+      "chineseAnchor": "小语的例子",
+      "authorViText": "Ví dụ của Tiểu Ngữ",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Ví dụ của Tiểu Ngữ",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; seven Vietnamese units agree, including classroom pair instruction, example/bonus headings and age-video caption. Picture captions and example dialogue are Chinese-only.",
+      "evidence": [
+        "full-page042"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf042-bonus-heading",
+      "pdfPage": 42,
+      "printedPage": 26,
+      "section": "小语的彩蛋",
+      "kind": "section-heading",
+      "chineseAnchor": "小语的彩蛋",
+      "authorViText": "Món quà của Tiểu Ngữ",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Món quà của Tiểu Ngữ",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; seven Vietnamese units agree, including classroom pair instruction, example/bonus headings and age-video caption. Picture captions and example dialogue are Chinese-only.",
+      "evidence": [
+        "full-page042"
+      ]
+    },
+    {
+      "sourceID": "hsk1-vi-l04-pdf042-age-caption",
+      "pdfPage": 42,
+      "printedPage": 26,
+      "section": "小语的彩蛋/视频画面",
+      "kind": "image-caption",
+      "chineseAnchor": "年龄的问法",
+      "authorViText": "Cách hỏi tuổi",
+      "authorPosRawLabel": null,
+      "decision": "accept-visual-print-transcription",
+      "expectedViText": "Cách hỏi tuổi",
+      "expectedPosRawLabel": null,
+      "repairRequired": false,
+      "independentVisualNotes": "Original page read; seven Vietnamese units agree, including classroom pair instruction, example/bonus headings and age-video caption. Picture captions and example dialogue are Chinese-only.",
+      "evidence": [
+        "full-page042"
+      ]
+    }
+  ],
+  "missingOccurrences": [],
+  "repairs": [],
+  "reviewedEntries": 105,
+  "pendingEntries": 0,
+  "websiteComparisonCompleted": true,
+  "websiteConformanceAccepted": false
+}

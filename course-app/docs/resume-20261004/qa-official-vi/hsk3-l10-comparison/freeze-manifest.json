@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "status": "independent source-to-current-baseline consumer comparison proposal freeze; no production acceptance/activation",
+  "createdAtUTC": "2026-10-04T20:26:14.710948+00:00",
+  "scope": "HSK3 officialVI L10 source119;670JSON+89scopedAST/helper+14XML;138 wording changes proposed;0 runtime writes",
+  "sourceFreezeSHA256": "50645728c3877979315bc0c50e105c2277e15913aad24a71d6ef602f97587731",
+  "reviewSHA256": "21a54ef08f2339f7e71ca6244c4547d6f70f03a9f7afe054789566d8a4e0c615",
+  "files": [
+    {
+      "file": "README.md",
+      "sha256": "dea7007e98c9ac9752136232014f142d470279121ec4e7eaa6aaea9179f12708",
+      "bytes": 6044
+    },
+    {
+      "file": "actual-runtime-field-verification.json",
+      "sha256": "b57b68e75882ba64b9cda4172c75c67b869c346a91f059a4bb06b70f21c0d1f6",
+      "bytes": 229221
+    },
+    {
+      "file": "build-independent-comparison.py",
+      "sha256": "211eeef0f447ef0c2447fe22f76c385cb1e85a2d07335f209ac9f267b5873e3f",
+      "bytes": 28134
+    },
+    {
+      "file": "external-primary-evidence.json",
+      "sha256": "82d420fe25bc92c4a9f899ce9d618dd6a35cfc2ce2c176e7022e87a34e458382",
+      "bytes": 731
+    },
+    {
+      "file": "field-comparisons.json",
+      "sha256": "5514cd7e8b393a9e99cec0fb559e27f648cf846195693bf0e26a445deea5550a",
+      "bytes": 1544518
+    },
+    {
+      "file": "non-translation-candidate-partition.json",
+      "sha256": "f9aa8e22a7b22152f40f188b89261a7ca424f1ccc30c682548eb63a9cd439345",
+      "bytes": 43113
+    },
+    {
+      "file": "renderer-comparisons.json",
+      "sha256": "4ff7607f21e1c57af2440a3ef64352820a42d2cd1e6289412dd6a613262b94e9",
+      "bytes": 176922
+    },
+    {
+      "file": "renderer-object-coverage-supplement.json",
+      "sha256": "5d34a386696d801d601ec5b4973a88ff64e904f09a1ee1e33e2420238a233a27",
+      "bytes": 7764
+    },
+    {
+      "file": "review.json",
+      "sha256": "21a54ef08f2339f7e71ca6244c4547d6f70f03a9f7afe054789566d8a4e0c615",
+      "bytes": 11841
+    },
+    {
+      "file": "role-consumer-observations.json",
+      "sha256": "c9fd89bd82902048aa94e9a500c567e15f6088d4dbc27cc8e5df1bda9c000d80",
+      "bytes": 25006
+    },
+    {
+      "file": "runtime-input-snapshot.json",
+      "sha256": "799fd2fdb4e76e64a748a2662b68f1a67df6c0e5e152fb516de23941e29a6d2b",
+      "bytes": 4818
+    },
+    {
+      "file": "scan-renderer-object-counterexamples.mjs",
+      "sha256": "6122105898b4d07c8f0cb87c1feff770d270d7febe97a0e5c954e002f2730e52",
+      "bytes": 5876
+    },
+    {
+      "file": "source-activity-consumer-bindings.json",
+      "sha256": "640474101e6c655a82c9547681ef3a4b99d59261e2a9955459bc97262e6b3ec7",
+      "bytes": 32949
+    },
+    {
+      "file": "source-locus-consumer-coverage.json",
+      "sha256": "349a9387f70d5616f34fb6d92013376ad1bcc983df3f2d47c96011c2d2522a68",
+      "bytes": 121298
+    },
+    {
+      "file": "summary.json",
+      "sha256": "68248440ba78354cfae75b84b4c5689e99da23dc71bfb582fe22234c2f7448d5",
+      "bytes": 1951
+    },
+    {
+      "file": "svg-comparisons.json",
+      "sha256": "bbcca2f24eef07dbcea5b5ae2a8d2bcb876bb1e882721374ac2fbe728ebdeb22",
+      "bytes": 33589
+    },
+    {
+      "file": "verification.json",
+      "sha256": "a9bb61c941495ee06eacd4cb3eb9461496125bf7227a2e7bd86703662eba574f",
+      "bytes": 27138
+    },
+    {
+      "file": "verify-runtime-fields.mjs",
+      "sha256": "2dcbe99cfa220ba627d8e501206f03ce480270045e48aadaf42bb7b39d87b491",
+      "bytes": 4792
+    }
+  ],
+  "fileCount": 18,
+  "structuralChecks": 170,
+  "actualRuntimeChecks": 833,
+  "verificationPassed": true,
+  "productionApproval": false,
+  "deployment": false
+}

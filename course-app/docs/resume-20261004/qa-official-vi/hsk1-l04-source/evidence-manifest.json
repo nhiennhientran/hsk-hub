@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "sourcePDF": "/workspace/scratch/28b55072841a/upload/HSK1  (3.0).pdf",
+  "sourcePDFSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+  "coordinateConvention": "Original rotated PDF CropBox raster at360dpi; x/y/width/height passed directly to pdftoppm, not crop of an author PNG.",
+  "crops": [
+    {
+      "file": "evidence/pdf034-title.png",
+      "SHA256": "f90f506e51574582e4e5679b38e0ccbc2f54c08076804f48e31e99296b9d7527",
+      "bytes": 590021,
+      "pdfPage": 34,
+      "printedPage": 18,
+      "sourcePDFSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "renderer": "pdftoppm -cropbox -r360",
+      "rectangleInRotatedCropBoxRasterPixels": {
+        "x": 290,
+        "y": 150,
+        "width": 2100,
+        "height": 760
+      },
+      "pixels": [
+        2100,
+        760
+      ],
+      "independentlyViewed": true,
+      "visualFinding": "Chị có hai con exact printed title"
+    },
+    {
+      "file": "evidence/pdf038-role-translations.png",
+      "SHA256": "6b1b0b9b45b4c2aba0756fcd7a0a5a2149c5e3bbc2b3b54372ad72ae9746b2d2",
+      "bytes": 596297,
+      "pdfPage": 38,
+      "printedPage": 22,
+      "sourcePDFSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "renderer": "pdftoppm -cropbox -r360",
+      "rectangleInRotatedCropBoxRasterPixels": {
+        "x": 1260,
+        "y": 1160,
+        "width": 1300,
+        "height": 570
+      },
+      "pixels": [
+        1300,
+        570
+      ],
+      "independentlyViewed": true,
+      "visualFinding": "Four text2 role lines with Chị/Em"
+    },
+    {
+      "file": "evidence/pdf041-vocabulary-pos.png",
+      "SHA256": "0b56e0459ce8ab4e7aad1a05dad7d992c57d9f73ca1c3c55b8074ad0dac7be07",
+      "bytes": 1188074,
+      "pdfPage": 41,
+      "printedPage": 25,
+      "sourcePDFSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "renderer": "pdftoppm -cropbox -r360",
+      "rectangleInRotatedCropBoxRasterPixels": {
+        "x": 1470,
+        "y": 315,
+        "width": 1170,
+        "height": 1320
+      },
+      "pixels": [
+        1170,
+        1320
+      ],
+      "independentlyViewed": true,
+      "visualFinding": "Vocabulary14–21; 多 raw đt. and explicit phó từ chỉ mức độ"
+    }
+  ]
+}
