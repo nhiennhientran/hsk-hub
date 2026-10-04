@@ -20,7 +20,7 @@ Repository: nhiennhientran/hsk-hub. Latest recovered Dot source was `0ad47321543
 
 - Latest integrated working tree: all 587 HSK1 unit tests passed; both HSK1 and shared-course production builds passed.
 - Recovered shared-course baseline: 121 unit tests passed. The source-engine focused run also passed 228 relevant cases before the final catalogue expansion.
-- Audio-only native run: https://github.com/nhiennhientran/hsk-hub/actions/runs/37207351831 . It runs the original 600 main browser identities in Chromium/WebKit (plus existing focused preflights). It was still running at stage capture; do not infer a result from collection or build success.
+- Audio-only native run: https://github.com/nhiennhientran/hsk-hub/actions/runs/37207351831 . All four jobs completed successfully. Downloaded job logs confirm 600/600 main cases (139+21+139+21+140+140), 106 focused preflight cases, and one additional focused WebKit regression passed. See audio-native-ci.json. This certifies the audio-only commit, not the later source expansion.
 - New native catalogue fixtures were collected: 114 unified-host and 34 standalone-host browser cases (148 across both engines). They have not been type-checked or executed and are not included in the running audio-only CI result.
 - Local Playwright browser installation/startup was blocked by this execution environment. This is an environment failure, not a product pass/fail result.
 - Human listening and physical-device checks have not been performed. Unverified precision audio remains on the established whole-track fallback.

@@ -1,0 +1,80 @@
+{
+  "stage": "audio-only checkpoint; source expansion is not covered",
+  "commit": "16f33b56027f7bc79977b17a587a2be2d98f01d5",
+  "run": 37207351831,
+  "url": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37207351831",
+  "mainPassed": 600,
+  "mainFailed": 0,
+  "preflightPassed": 106,
+  "additionalFocusedWebKitPassed": 1,
+  "jobs": [
+    {
+      "name": "checkpoint (chromium, 2)",
+      "id": 111451208657,
+      "status": "completed",
+      "conclusion": "success",
+      "passedSummaries": [
+        {
+          "passed": 139,
+          "elapsed": "19.1m"
+        },
+        {
+          "passed": 21,
+          "elapsed": "59.7s"
+        }
+      ]
+    },
+    {
+      "name": "checkpoint (webkit, 2)",
+      "id": 111451208796,
+      "status": "completed",
+      "conclusion": "success",
+      "passedSummaries": [
+        {
+          "passed": 139,
+          "elapsed": "20.2m"
+        },
+        {
+          "passed": 21,
+          "elapsed": "1.1m"
+        }
+      ]
+    },
+    {
+      "name": "checkpoint (webkit, 1)",
+      "id": 111451208827,
+      "status": "completed",
+      "conclusion": "success",
+      "passedSummaries": [
+        {
+          "passed": 53,
+          "elapsed": "3.8m"
+        },
+        {
+          "passed": 1,
+          "elapsed": "16.9s"
+        },
+        {
+          "passed": 140,
+          "elapsed": "13.5m"
+        }
+      ]
+    },
+    {
+      "name": "checkpoint (chromium, 1)",
+      "id": 111451208829,
+      "status": "completed",
+      "conclusion": "success",
+      "passedSummaries": [
+        {
+          "passed": 53,
+          "elapsed": "4.1m"
+        },
+        {
+          "passed": 140,
+          "elapsed": "14.7m"
+        }
+      ]
+    }
+  ]
+}
