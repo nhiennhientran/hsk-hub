@@ -57,7 +57,10 @@
 .textbook-scene-figures figure { min-width: 0; max-width: 100%; margin: 0; }
 .textbook-scene-figures img { display: block; width: auto; height: auto; max-width: 100%; max-height: 390px; object-fit: contain; }
 .textbook-scene-figures figcaption { margin-top: 8px; font-size: .9rem; color: var(--muted, #526b5d); }
-.textbook-line { margin: 16px 0; border: 0; border-bottom: 1px solid var(--line, #ccdcd5); border-radius: 0; background: transparent; padding: 18px 0; }
+.textbook-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 16px 0; border: 0; border-bottom: 1px solid var(--line, #ccdcd5); border-radius: 0; background: transparent; padding: 18px 0; }
+.textbook-line > strong { display: inline-flex; flex: 0 1 auto; min-width: 0; }
+.textbook-line > [data-original-text] { flex: 0 0 100%; min-width: 0; }
+.textbook-line > button[data-line-audio] { flex: 0 1 auto; min-width: 0; max-width: 100%; margin: 0; white-space: normal; }
 .textbook-line p { margin: 6px 0; }
 .textbook-line .textbook-zh { font-size: 1.5rem; margin: 12px 0 5px; }
 .textbook-language-card { margin: 16px 0; border: 0; border-top: 1px solid var(--line, #ccdcd5); border-radius: 0; padding: 18px 0; }

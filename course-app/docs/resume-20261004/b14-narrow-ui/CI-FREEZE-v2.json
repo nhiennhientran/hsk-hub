@@ -1,0 +1,241 @@
+{
+  "status": "V2 private-native-CI-candidate; zero actual B14 native executions locally",
+  "historicalV1Commit": "5672dcc560ba837186b8ab506eeba114f123fb0d",
+  "historicalV1Tree": "09de023c1e447558388cfa04c839ae0e56179257",
+  "historicalV1RestorationMap": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence-v2/validation-report.json",
+  "actualLocalHEAD": "4a8ed2d0fa9ec1fe2b4e14d3260a9c1b8a54bb4e",
+  "original21StrictBytesUnchanged": true,
+  "stagedCommittedPushedDeployedByChild": false,
+  "entries": [
+    {
+      "path": ".github/workflows/hsk-b14-narrow-ui-checkpoint.yml",
+      "bytes": 4100,
+      "sha256": "c93697714be19e31c73b96da4742227f800dd903e9c5cfe975551f1a84a42067"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/CI-FREEZE.json",
+      "bytes": 6324,
+      "sha256": "875911c0aa90db7edf44a8d926bd3b3419035c1279cb43b89cd0b4fe41094d27"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/CI-STAGE-FILES.txt",
+      "bytes": 2347,
+      "sha256": "05dd8fca8b8fd69d6b139d4486961105fd9a8be638be76211d991e8b6b7f776b"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/README.md",
+      "bytes": 7982,
+      "sha256": "0d5b691d7e0a536c9cb4402730ee8094fbcf7fd136303eec932f575800db2378"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/V2-CHANGE.md",
+      "bytes": 1552,
+      "sha256": "49a7485efdb51c1f43df0a3df09725ed087ca13082f7d5f9e42e7075b6a4cf5d"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/author-input-v1/CI-FREEZE.json",
+      "bytes": 6324,
+      "sha256": "875911c0aa90db7edf44a8d926bd3b3419035c1279cb43b89cd0b4fe41094d27"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/author-input-v1/CI-STAGE-FILES.txt",
+      "bytes": 2347,
+      "sha256": "05dd8fca8b8fd69d6b139d4486961105fd9a8be638be76211d991e8b6b7f776b"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/author-input-v1/README.md",
+      "bytes": 5840,
+      "sha256": "0ea8befd99668eca8b6db5bbe128e75e5d5db2751cf07e6afe30933a9668f5bb"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/author-input-v1/checkpoint-records.mjs",
+      "bytes": 11820,
+      "sha256": "ae0c4a09435bfcfe3c1959c1c4f512f76b2afe8faad5595a2e00d41952e24698"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/author-input-v1/guards.test.mjs",
+      "bytes": 7817,
+      "sha256": "f765d053fd30af37b0c3d74e63d9ebee64d7cd248b73b2afb3c2c15f0d678c5e"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/author-input-v1/historical-binding.json",
+      "bytes": 6492,
+      "sha256": "f17776f9179fd0167104b77c90c4d3f9c1dffae75b13bebc417eb5e734bd2829"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/author-input-v1/run-command.mjs",
+      "bytes": 2457,
+      "sha256": "a2275dd0dd5e744992a6fab16cc5928c0b8d551951c300169647a0705d3d7bf7"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/author-input-v1/verify-commands.mjs",
+      "bytes": 1560,
+      "sha256": "29f1f63dd4d4cb5440a34c7e698efca37e8e65570e47f5233e945af473aea47c"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/browser-launch.mjs",
+      "bytes": 3770,
+      "sha256": "1eff264755534787fa7e610e47f1f5a65c988c3648e4a12c758916c7d6837b89"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/checkpoint-records.mjs",
+      "bytes": 12438,
+      "sha256": "c9c32251e68506b6c0eb64f2dc410d0b12802aeeea26d50b81b09204fc8f8eb6"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/contract.mjs",
+      "bytes": 2344,
+      "sha256": "b91abcaf3934ff527373dc037f356aa565cfd5b9027f98049778a4eb4a0a5783"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/guards.test.mjs",
+      "bytes": 10521,
+      "sha256": "33223435aac14fb1bba6b21f253f0d677caa7e5fd3d0ec35e5e9a59914811811"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence-v2/chromium-collection-only.log",
+      "bytes": 1385,
+      "sha256": "a9d3ea4254dba5b642c12d96f73f95e441d53d0a2e4a7a440f2e3790acfa0e31"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence-v2/guard-units.log",
+      "bytes": 3992,
+      "sha256": "513e8322c74613d7e2d80fcad44ee149f690db6703f2deed4c2a553532c76b3e"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence-v2/locked-selector-source-inspection.json",
+      "bytes": 6380,
+      "sha256": "7dbe669bdc016591ee04562b7e37e131b3e91007424341a3a31b297044392c85"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence-v2/syntax-and-preservation.json",
+      "bytes": 1753,
+      "sha256": "fa13ca64851e467824a592b54863644124442ea543c818261490824ba52d58dc"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence-v2/validation-report.json",
+      "bytes": 12891,
+      "sha256": "0df169701421beded7a7c131c39750a1496d9cc123777597695601001fa2dc15"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence-v2/webkit-collection-only.log",
+      "bytes": 1365,
+      "sha256": "62fcc63fa5aa33fefcc0d8ebecd066118d0d3ca54eec44bfa47599ba1cc336f8"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence-v2/wrapper-typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/actual-original-png-format-audit.json",
+      "bytes": 6506,
+      "sha256": "e10957c0eacdf6c5d5b23a623953cab4a22cec8e0a561a0247391ccc6a9dc3a5"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/chromium-collection-only.log",
+      "bytes": 1385,
+      "sha256": "a9d3ea4254dba5b642c12d96f73f95e441d53d0a2e4a7a440f2e3790acfa0e31"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/final-chromium-collection-only.log",
+      "bytes": 1385,
+      "sha256": "a9d3ea4254dba5b642c12d96f73f95e441d53d0a2e4a7a440f2e3790acfa0e31"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/final-webkit-collection-only.log",
+      "bytes": 1365,
+      "sha256": "62fcc63fa5aa33fefcc0d8ebecd066118d0d3ca54eec44bfa47599ba1cc336f8"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/final-wrapper-typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/guard-units.log",
+      "bytes": 2861,
+      "sha256": "7d5abe13cb71e85c63d535bc175934e3e99a4e931c217c9bbcb6d9b8b5d3ffee"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/old-freeze-preservation.json",
+      "bytes": 4031,
+      "sha256": "c3573a627a21d29e6ad6d14aefd469339144bdbc7e0e02f2b4a72881c00dd3fe"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/syntax-checks.json",
+      "bytes": 1934,
+      "sha256": "f6c05085fc9adc3a39eb4775dd261735b7784a5d2761d77e2ef303758cbcdd16"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/synthetic-actual-locked-reporter.json",
+      "bytes": 71310,
+      "sha256": "d8d917aee195172bfb6a853e4a19a7dfa0405bd515a160672e0b1c85a64d0fee"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/synthetic-locked-reporter-format-v2.log",
+      "bytes": 2303,
+      "sha256": "34afe21a168ce134693d99ffba2b1c0070aa81a44ca75eff91e756272c977dc0"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/synthetic-locked-reporter-format.log",
+      "bytes": 1186,
+      "sha256": "68db76ebcaf2943058530c2644fbeac323306d9bb386dd799274af74690af035"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/synthetic-reporter-format-verification.json",
+      "bytes": 987,
+      "sha256": "b9066aa15332a971cd8be2e4c89402be13aecbd4cb8fe16819b35f4267455b8e"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/validation-report.json",
+      "bytes": 3793,
+      "sha256": "8e0d9c1efb154d725fea39a5cd94bc14fe8760d27f19fa6a4b1e69d111c81721"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/webkit-collection-only.log",
+      "bytes": 1365,
+      "sha256": "62fcc63fa5aa33fefcc0d8ebecd066118d0d3ca54eec44bfa47599ba1cc336f8"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/workflow-static.json",
+      "bytes": 653,
+      "sha256": "8a0938456d3f358014ce5dc1429f47bdccc658b9643b75449679eadaf6e8fbb2"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/local-evidence/wrapper-typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/playwright.ci.config.ts",
+      "bytes": 1170,
+      "sha256": "b4ed75428f5ebc40c34f008685eade7d3ae5623eb078863179e6bc33f7bf35d6"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs",
+      "bytes": 2728,
+      "sha256": "ca703b93898656b6a1b4fcdf62aa1dbfe84f7f2cf6ccb5deae78379ab889191b"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/tsconfig.json",
+      "bytes": 181,
+      "sha256": "9587f77c569e61e13964c2e47c2165fc506562dffe3f50fae440e41a452736f6"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/verify-commands.mjs",
+      "bytes": 1720,
+      "sha256": "5d131eb3673017f52d45e8bf7b80c2bea7deba1fd3068401c187a352dc97a580"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/verify-native-results.mjs",
+      "bytes": 7046,
+      "sha256": "beef51dd5c01db86244a8b6faa6cb9026fe250329c9ba065a8bb09f51432bc26"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/verify-png.mjs",
+      "bytes": 2337,
+      "sha256": "fdbcd21764b4ee4c72fbb8d18d66e0448c3dc204677eba49589915aa7901cc84"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {"types": ["node", "vite/client"]},
+  "include": ["./narrow-ui.spec.ts", "./playwright.b14.config.ts", "../../../src/vite-env.d.ts"]
+}

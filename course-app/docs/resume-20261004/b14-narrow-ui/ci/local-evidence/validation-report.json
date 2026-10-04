@@ -1,0 +1,97 @@
+{
+  "status": "new-isolated-CI-source-candidate; not-yet-actual-CI",
+  "actualCurrentLocalHEAD": "4a8ed2d0fa9ec1fe2b4e14d3260a9c1b8a54bb4e",
+  "historicalB14SourceHEAD": "c17d1469f0c515f681f6a8a6a66ea03792f73d63",
+  "historicalB14Tree": "540403892a89ed764b735b11859cd372d7e9a479",
+  "actualCISHAAndTree": "Will be read from GITHUB_SHA and actual clean checkout; local historical commit need not be in isolated graph",
+  "originalFrozen21PathsModified": false,
+  "nativeExecutions": 0,
+  "guardUnits": {
+    "passed": 47,
+    "failed": 0,
+    "skipped": 0,
+    "classification": "synthetic report/receipt/PNG guard tests, not browser UI"
+  },
+  "finalChecks": {
+    "nativeWrapperTypecheckExit": 0,
+    "chromiumCollectionExit": 0,
+    "chromiumCollected": 10,
+    "webkitCollectionExit": 0,
+    "webkitCollected": 10,
+    "collectionIsNotNative": true,
+    "syntaxFiles": 7,
+    "workflowParse": true,
+    "bothPreviewCommandsExplicitIPv4": true
+  },
+  "actualOldPNGFormatValidation": 14,
+  "lockedReporterFORMATOnly": {
+    "syntheticSerializedCases": 10,
+    "PageFixtureUsed": false,
+    "browserLaunched": false,
+    "realB14NativeCasesExecuted": 0,
+    "initialTemporaryHarnessFailed": true,
+    "failureSaved": "local-evidence/synthetic-locked-reporter-format.log",
+    "repairedTemporaryHarnessSaved": "local-evidence/synthetic-locked-reporter-format-v2.log",
+    "CIguardWeakened": false
+  },
+  "localBeforeBuildsAfterPhasesExecuted": false,
+  "localBrowserInstallExecuted": false,
+  "priorFrozenAppChecksBuildsReusedUnchanged": true,
+  "sourceKindLabelImplemented": false,
+  "productionApproved": false,
+  "deployed": false,
+  "stagedCommittedPushedByChild": false,
+  "files": [
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/checkpoint-records.mjs",
+      "sha256": "ae0c4a09435bfcfe3c1959c1c4f512f76b2afe8faad5595a2e00d41952e24698",
+      "bytes": 11820
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/contract.mjs",
+      "sha256": "b91abcaf3934ff527373dc037f356aa565cfd5b9027f98049778a4eb4a0a5783",
+      "bytes": 2344
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/guards.test.mjs",
+      "sha256": "f765d053fd30af37b0c3d74e63d9ebee64d7cd248b73b2afb3c2c15f0d678c5e",
+      "bytes": 7817
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs",
+      "sha256": "a2275dd0dd5e744992a6fab16cc5928c0b8d551951c300169647a0705d3d7bf7",
+      "bytes": 2457
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/verify-commands.mjs",
+      "sha256": "29f1f63dd4d4cb5440a34c7e698efca37e8e65570e47f5233e945af473aea47c",
+      "bytes": 1560
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/verify-native-results.mjs",
+      "sha256": "beef51dd5c01db86244a8b6faa6cb9026fe250329c9ba065a8bb09f51432bc26",
+      "bytes": 7046
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/verify-png.mjs",
+      "sha256": "fdbcd21764b4ee4c72fbb8d18d66e0448c3dc204677eba49589915aa7901cc84",
+      "bytes": 2337
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/playwright.ci.config.ts",
+      "sha256": "b4ed75428f5ebc40c34f008685eade7d3ae5623eb078863179e6bc33f7bf35d6",
+      "bytes": 1170
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/ci/tsconfig.json",
+      "sha256": "9587f77c569e61e13964c2e47c2165fc506562dffe3f50fae440e41a452736f6",
+      "bytes": 181
+    },
+    {
+      "path": ".github/workflows/hsk-b14-narrow-ui-checkpoint.yml",
+      "sha256": "c93697714be19e31c73b96da4742227f800dd903e9c5cfe975551f1a84a42067",
+      "bytes": 4100
+    }
+  ],
+  "originalStageManifestSHA256": "6ea1ee60824bf5f9f4b03b6836489572b8040074eb5d7a7f61eddeaa5eb6e014"
+}

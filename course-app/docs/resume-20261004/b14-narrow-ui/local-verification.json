@@ -1,0 +1,96 @@
+{
+  "commands": [
+    {
+      "name": "course-typecheck",
+      "cwd": "course-app",
+      "command": "npm run check",
+      "exitCode": 0,
+      "toolChunkId": "0a0f98",
+      "stdout": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n\n> hsk-shared-course-app@1.0.0 check\n> tsc --noEmit\n\n"
+    },
+    {
+      "name": "hsk1-typecheck",
+      "cwd": "hsk1-app",
+      "command": "npm run check",
+      "exitCode": 0,
+      "toolChunkId": "37819c",
+      "stdout": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n\n> hsk1-modular-app@0.1.0 check\n> tsc --noEmit\n\n"
+    },
+    {
+      "name": "native-fixture-typecheck",
+      "cwd": "course-app",
+      "command": "node node_modules/typescript/bin/tsc -p docs/resume-20261004/b14-narrow-ui/tsconfig.native-check.json",
+      "exitCode": 0,
+      "toolChunkId": "8f40ad",
+      "stdout": ""
+    },
+    {
+      "name": "native-collection-only",
+      "cwd": "course-app",
+      "command": "node node_modules/@playwright/test/cli.js test --config=docs/resume-20261004/b14-narrow-ui/playwright.b14.config.ts --list --reporter=list",
+      "exitCode": 0,
+      "toolChunkId": "636773",
+      "log": "native-collection.log",
+      "testCount": 20,
+      "browserLaunched": false,
+      "nativeExecutions": 0
+    },
+    {
+      "name": "course-build",
+      "cwd": "course-app",
+      "command": "npm run build",
+      "exitCode": 0,
+      "toolChunkId": "bc5d87",
+      "log": "course-build.log"
+    },
+    {
+      "name": "hsk1-build",
+      "cwd": "hsk1-app",
+      "command": "npm run build",
+      "exitCode": 0,
+      "toolChunkId": "ad8361",
+      "log": "hsk1-build.log"
+    },
+    {
+      "name": "native-fixture-final-typecheck",
+      "cwd": "course-app",
+      "command": "node node_modules/typescript/bin/tsc -p docs/resume-20261004/b14-narrow-ui/tsconfig.native-check.json",
+      "exitCode": 0,
+      "toolChunkId": "96df95",
+      "log": "native-fixture-final-typecheck.log"
+    },
+    {
+      "name": "native-final-collection-only",
+      "cwd": "course-app",
+      "command": "node node_modules/@playwright/test/cli.js test --config=docs/resume-20261004/b14-narrow-ui/playwright.b14.config.ts --list --reporter=list",
+      "exitCode": 0,
+      "toolChunkId": "c7f6e7",
+      "log": "native-collection-final.log",
+      "testCount": 20,
+      "browserLaunched": false,
+      "nativeExecutions": 0
+    }
+  ],
+  "nativeExecutions": 0,
+  "nativeStatus": "pending fresh remote CI and original PNG review; --list is collection only",
+  "nativeMatrixCases": 20,
+  "unmodifiedRawContentFiles": 92,
+  "unmodifiedNonTargetSourceInputs": 215,
+  "noRegistryDataRendererAuthorTestsOrFrozenEvidenceEdits": true,
+  "noStageCommitDeploy": true,
+  "futureRuntimeLimit": "Native label font-measurement plus 32px arrow allowance is a conservative geometric guard; only actual engine PNG inspection can accept physical closed-label rendering.",
+  "currentNativeAuthorFiles": [
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/narrow-ui.spec.ts",
+      "sha256": "533a5ab060db44db857b0308a426c185d97b373b9133034ea801bb65a7273316"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/playwright.b14.config.ts",
+      "sha256": "7580cec5322426a09f33e9e8a520d33af0479863cc38d3e2fb0ab07b94f95099"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b14-narrow-ui/tsconfig.native-check.json",
+      "sha256": "ffd0b024f33039ef0e1ee8b8ce641b2294d1068a5775fd35df3e67156edf7443"
+    }
+  ]
+}

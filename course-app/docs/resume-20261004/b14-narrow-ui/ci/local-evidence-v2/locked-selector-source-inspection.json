@@ -1,0 +1,78 @@
+{
+  "classification": "actual locked source/API read-only inspection; zero browser/Page/native executions",
+  "version": "1.62.1",
+  "bundleSHA256": "9393fa79e1c67c74edc26b610d65a4f7ed73d345a762465cc88340a33a2454ac",
+  "sourceRanges": [
+    {
+      "start": 8897,
+      "end": 8901,
+      "text": "}\nasync function launchProcess(options) {\n  const stdio = options.stdio === \"pipe\" ? [\"ignore\", \"pipe\", \"pipe\", \"pipe\", \"pipe\"] : [\"pipe\", \"pipe\", \"pipe\"];\n  options.log(`<launching> ${options.command} ${options.args ? options.args.join(\" \") : \"\"}`);\n  const spawnOptions = {"
+    },
+    {
+      "start": 8932,
+      "end": 8935,
+      "text": "    });\n  }\n  options.log(`<launched> pid=${spawnedProcess.pid}`);\n  const stdout = readline.createInterface({ input: spawnedProcess.stdout });"
+    },
+    {
+      "start": 39520,
+      "end": 39535,
+      "text": "        const customExecutablePath = await this.resolveExecutablePath(options);\n        if (customExecutablePath) {\n          executable = customExecutablePath;\n        } else {\n          const registryExecutable = registry.findExecutable(this.getExecutableName(options));\n          if (!registryExecutable || registryExecutable.browserName !== this._name)\n            throw new Error(`Unsupported ${this._name} channel \"${options.channel}\"`);\n          executable = registryExecutable.executablePathOrDie(this.attribution.playwright.options.sdkLanguage);\n          await registry.validateHostRequirementsForExecutablesIfNeeded([registryExecutable], this.attribution.playwright.options.sdkLanguage);\n        }\n        return { executable, browserArguments, userDataDir, artifactsDir, tempDirectories };\n      }\n      async _launchProcess(progress2, options, isPersistent, browserLogsCollector, userDataDir) {\n        const {\n          handleSIGINT = true,\n          handleSIGTERM = true,"
+    },
+    {
+      "start": 43098,
+      "end": 43107,
+      "text": "      }\n      getExecutableName(options) {\n        if (options.channel && registry.isChromiumAlias(options.channel))\n          return \"chromium\";\n        if (options.channel === \"chromium-tip-of-tree\")\n          return options.headless ? \"chromium-tip-of-tree-headless-shell\" : \"chromium-tip-of-tree\";\n        if (options.channel)\n          return options.channel;\n        return options.headless ? \"chromium-headless-shell\" : \"chromium\";\n      }"
+    },
+    {
+      "start": 50590,
+      "end": 50612,
+      "text": "        if (args.find((arg) => !arg.startsWith(\"-\")))\n          throw new Error(\"Arguments can not specify page to be opened\");\n        const isWSL = options.channel === \"webkit-wsl\";\n        const webkitArguments = [isWSL ? \"--remote-debugging-port=0\" : \"--inspector-pipe\"];\n        if (isWSL) {\n          const wslExecutablePath = options.executablePath || registry.findExecutable(\"webkit-wsl\").wslExecutablePath;\n          webkitArguments.unshift(\n            \"-d\",\n            kWSLDistribution,\n            \"-u\",\n            kWSLUser,\n            \"--cd\",\n            kWSLHome,\n            \"--\",\n            wslExecutablePath\n          );\n        }\n        if (process.platform === \"win32\" && !isWSL)\n          webkitArguments.push(\"--disable-accelerated-compositing\");\n        if (headless)\n          webkitArguments.push(\"--headless\");\n        if (isPersistent)\n          webkitArguments.push(`--user-data-dir=${isWSL ? await translatePathToWSL(userDataDir) : userDataDir}`);"
+    },
+    {
+      "start": 7920,
+      "end": 7944,
+      "text": "            \"(?:(?:\\\\d{1,4}(?:;\\\\d{0,4})*)?[\\\\dA-PR-TZcf-ntqry=><~]))\"\n          ].join(\"|\"), \"g\");\n          const stream4 = import_fs2.default.createWriteStream(process.env.DEBUG_FILE);\n          debug.log = (data) => {\n            stream4.write(data.replace(ansiRegex2, \"\"));\n            stream4.write(\"\\n\");\n          };\n        }\n      }\n      log(name, message) {\n        let cachedDebugger = this._debuggers.get(name);\n        if (!cachedDebugger) {\n          cachedDebugger = debug(`pw:${name}`);\n          this._debuggers.set(name, cachedDebugger);\n          cachedDebugger.color = debugLoggerColorMap[name] || 0;\n        }\n        cachedDebugger(message);\n      }\n      isEnabled(name) {\n        return debug.enabled(`pw:${name}`);\n      }\n    };\n    debugLogger = new DebugLogger();\n    kLogCount = 150;\n    RecentLogsCollector = class {"
+    }
+  ],
+  "entries": [
+    {
+      "browser": "chromium",
+      "selected": {
+        "path": "/root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell",
+        "selectedExecutable": "chromium-headless-shell",
+        "browserName": "chromium",
+        "version": "1.62.1",
+        "launchOptions": {
+          "headless": true,
+          "channel": null,
+          "executablePath": null
+        },
+        "corePackageSHA256": "07c47543631fef9508760365dee9fbe958c562093ec8d122543949ed231f233f",
+        "selectionImplementationSHA256": "9393fa79e1c67c74edc26b610d65a4f7ed73d345a762465cc88340a33a2454ac",
+        "selectionMethod": "Actual locked core.server.createPlaywright browser.getExecutableName({headless:true}) and core.registry.registry.findExecutable; no launch"
+      },
+      "publicInstallationEntry": "/root/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome",
+      "installedSelectedEntryExists": false
+    },
+    {
+      "browser": "webkit",
+      "selected": {
+        "path": "/root/.cache/ms-playwright/webkit-2336/pw_run.sh",
+        "selectedExecutable": "webkit",
+        "browserName": "webkit",
+        "version": "1.62.1",
+        "launchOptions": {
+          "headless": true,
+          "channel": null,
+          "executablePath": null
+        },
+        "corePackageSHA256": "07c47543631fef9508760365dee9fbe958c562093ec8d122543949ed231f233f",
+        "selectionImplementationSHA256": "9393fa79e1c67c74edc26b610d65a4f7ed73d345a762465cc88340a33a2454ac",
+        "selectionMethod": "Actual locked core.server.createPlaywright browser.getExecutableName({headless:true}) and core.registry.registry.findExecutable; no launch"
+      },
+      "publicInstallationEntry": "/root/.cache/ms-playwright/webkit-2336/pw_run.sh",
+      "installedSelectedEntryExists": false
+    }
+  ],
+  "B14NativeExecutions": 0
+}
