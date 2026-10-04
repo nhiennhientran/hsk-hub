@@ -73,11 +73,11 @@
     }
   ],
   "checks": {
-    "course_unit": "58 passed with reviewed matrix headers and delayed source editorial notes",
-    "hsk1_unit": "335 passed after audio integration; unchangedHSK1 sources",
-    "course_build": "passed with integrated L12–13",
-    "nonempty_storage": "passed in successful checkpoint for cross-level drafts, legacy HSK3 preservation and scoped backup restore",
-    "browsers": "Historical320/320 passed at9b7c767 run37128404425; changed candidate needs a new exact-commit run",
+    "course_unit": "88 passed locally for L10–11 candidate; native CI pending",
+    "hsk1_unit": "335 passed locally; HSK1 source unchanged",
+    "course_build": "passed locally for integrated L10–11 candidate",
+    "nonempty_storage": "native d5feac8 tests passed including prior fallback archive, XSS text, all-level backup and scoped restore",
+    "browsers": "Prior358/358 plus26preflight per engine passed atd5feac8; newL10–11 candidate390cases not yet executed",
     "physical_devices": "not run",
     "human_listening": "not run"
   },
@@ -99,18 +99,19 @@
     "scope": "HSK2L1–7integratedcontent and priorpilot HSK3L1, originalreviewed clipranges, records andfoundation routes;not all48lessonfinalacceptance"
   },
   "currentCI": {
-    "lastPassedRun": 37128404425,
-    "lastPassedBrowserCases": 320,
+    "lastPassedRun": 37173127861,
+    "lastPassedBrowserCases": 358,
     "audioIntegrationRun": 37106355777,
     "audioIntegrationStatus": "original37106355777failed130passed4failed;repaired37107556124passed154",
     "audioCases": 134,
-    "nextLocalTestsDiscoverable": 174,
-    "nextScope": "HSK2L8–9 source-specific comparison/self-assessment tables,26figures,legacy matrix regression,source-note deduplication and boundedL5bedrepair",
+    "nextLocalTestsDiscoverable": 390,
+    "nextScope": "HSK3 L10–11 source-specific education comparison and four-person tasks, Vietnamese completion fixes, balanced test-level native shards",
     "lessons67Run": 37107213747,
     "lessons67Status": "previous37107213747failed144passed10failed;repaired37107556124passed154",
     "nextFix": "Anchor accessiblehiddenlabels in local table scrollcontainingblock; preserve full154case suite plus mobilepreflight",
-    "extraPreflightCases": 6,
-    "newCandidateStatus": "Not yet submitted; new L8–9 tests are collection-only pending content and review"
+    "extraPreflightCases": 26,
+    "newCandidateStatus": "L10–11 source/content/figure independently reviewed; local88unit/build/types passed;390case native run pending",
+    "extraPreflightScope": "last successful per-engine count at d5feac8"
   },
   "contentPilot": {
     "levels": [
@@ -189,10 +190,10 @@
     "independentChecks": 1758,
     "browser": "passed174/174 aggregate browser cases and8/8mobilepreflight, run37109960704, remotee8b7aef"
   },
-  "updatedAt": "2026-10-04T01:46:00Z",
-  "remoteDevelopmentCommit": "9b7c76702e9724b4c647750138d800605254a116",
-  "localDevelopmentCommit": "7e2b2fb4e6a87f836cd2b5a57915daffda35a22e",
-  "exactSharedTree": "87364d37a2cd26ff54540c1b39b92f9439abd4b0",
+  "updatedAt": "2026-10-04T03:41:00Z",
+  "remoteDevelopmentCommit": "d5feac8a01ec7095573da8dd9c4205c23bc7ed2b",
+  "localDevelopmentCommit": "d5feac8a01ec7095573da8dd9c4205c23bc7ed2b",
+  "exactSharedTree": "cdfe1317a72d451419396f1e64aaadea8e334569",
   "ciHistoryActual": [
     {
       "run": 37105595387,
@@ -348,6 +349,18 @@
       "preflightPerEngine": 19,
       "statusReverifiedAt": "2026-10-04T01:46:00Z",
       "actualLogsRead": "previous independent parent review; this recovery checked status and exact SHA"
+    },
+    {
+      "run": 37173127861,
+      "commit": "d5feac8a01ec7095573da8dd9c4205c23bc7ed2b",
+      "status": "success",
+      "passed": 358,
+      "failed": 0,
+      "chromium": 179,
+      "webkit": 179,
+      "preflightPerEngine": 26,
+      "actualLogsRead": true,
+      "visualEvidence": "course-app/docs/hsk3-lessons89-integration/ci-acceptance.json"
     }
   ],
   "audioBatch23": {
@@ -503,10 +516,10 @@
       "pinnedBrowserDownload": "invalid/truncated ZIP; not installed"
     },
     "draftRecovery": "Lost local-only L8–9 and HSK2 L4–5 audio drafts not recovered; do not infer presence from historical hash",
-    "newCandidateStatus": "L8–9 independent source/content/figure review passed; local82unit/build/types passed; exact-commit358case browser run pending"
+    "newCandidateStatus": "Recovery closed atd5feac8 with358native cases passed; nextL10–11 integration has88localunit passes and390native cases pending"
   },
   "contentHSK3Batch89": {
-    "status": "independent source/content/figure review passed; native browser run pending",
+    "status": "scoped source/content/figure/browser accepted at d5feac8",
     "activities": 58,
     "fields": 162,
     "officialFields": 48,
@@ -517,9 +530,28 @@
     "readingReferences": 24,
     "unitTests": 82,
     "browserCollected": 358,
-    "browserExecution": "pending on exact new commit",
+    "browserExecution": "358/358 plus26preflight per engine passed,run37173127861; all4logs read and selected native mobile/desktop screenshots inspected",
     "historyProtection": "Read-only collapsed prior-activity panel; original values and submitted state preserved; no answer migration or rescoring; save/reload/export/restore unit checks passed",
     "remaining": "HSK3L10–18, HSK1whole-original-source review, remaining audio/handwriting and overall final gates",
     "independentReview": "course-app/docs/content-audit/hsk3-lessons08-09-independent/review.md"
+  },
+  "contentHSK3Batch1011": {
+    "status": "source/content/artwork independently accepted; integration native run pending",
+    "activities": 55,
+    "fields": 140,
+    "officialFields": 48,
+    "referenceFields": 63,
+    "openFields": 29,
+    "illustrations": 27,
+    "vietnameseRepairValues": 25,
+    "preservation": "all16preexisting top-level values per lesson unchanged",
+    "unitTests": 88,
+    "browserCollected": 390,
+    "browserShardsPerEngine": [
+      98,
+      97
+    ],
+    "independentReview": "course-app/docs/content-audit/hsk3-lessons10-11-independent/repair-recheck.md",
+    "sourceSpecific": "L10text4 optional read-aloud check plus source education retelling and separate open country comparison; L11four-round occupational guessing"
   }
 }

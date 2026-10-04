@@ -1,0 +1,3561 @@
+{
+  "lesson": 11,
+  "candidateSha256": "0dcab4ec0845e84291f43c5ca60ec6d3c6f45686d580791f4f1edd617c698f91",
+  "baseline": "9b7c76702e9724b4c647750138d800605254a116",
+  "sourceDocuments": [
+    {
+      "documentId": "hsk3-textbook",
+      "title": "新HSK教程3",
+      "pdfPages": 212,
+      "bytes": 75121060,
+      "sha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+      "inspectedPdfPages": [
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "inspectedPrintedPages": [
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103
+      ],
+      "method": "Full local PDF independently rehashed by author; actual rasterized page pixels inspected. No PDF or source raster is published in this evidence."
+    },
+    {
+      "documentId": "hsk3-answers",
+      "title": "《新HSK教程3》客观题答案",
+      "pdfPages": 27,
+      "bytes": 7228714,
+      "sha256": "7cc42aa78c6b1c32f03f6deccac606c31bd787fd1f72717d45afafa29155e473",
+      "inspectedPdfPages": [
+        14,
+        15,
+        16
+      ],
+      "method": "Actual rendered answer-book pages inspected by author, including page splits."
+    }
+  ],
+  "pageCoverage": [
+    {
+      "pdfPage": 107,
+      "printedPage": 95,
+      "authorPixelReview": "inspected",
+      "coverage": "L11: three objectives; six matching pictures in original order; two pair-discussion prompts."
+    },
+    {
+      "pdfPage": 108,
+      "printedPage": 96,
+      "authorPixelReview": "inspected",
+      "coverage": "L11 text1: context, two listen-twice choices, all seven dialogue lines, picture, numbered vocabulary1–9, 接 tip."
+    },
+    {
+      "pdfPage": 109,
+      "printedPage": 97,
+      "authorPixelReview": "inspected",
+      "coverage": "L11 text1: three role-reading questions. Grammar1: two full usage explanations (还是/或者), four examples, three blanks. Text2 context and two listening choices."
+    },
+    {
+      "pdfPage": 110,
+      "printedPage": 98,
+      "authorPixelReview": "inspected",
+      "coverage": "L11 text2: all eight dialogue lines, picture, vocabulary10–15, three role-reading questions. Grammar2 complete explanation and three examples."
+    },
+    {
+      "pdfPage": 111,
+      "printedPage": 99,
+      "authorPixelReview": "inspected",
+      "coverage": "L11 grammar2: three blanks. Text3: context, two listening choices, all seven dialogue lines, picture, vocabulary16–20 plus proper noun 老张."
+    },
+    {
+      "pdfPage": 112,
+      "printedPage": 100,
+      "authorPixelReview": "inspected",
+      "coverage": "L11 text3: three role-reading questions. Grammar3 complete explanation, three examples and three blanks. Text4 context and two listening choices."
+    },
+    {
+      "pdfPage": 113,
+      "printedPage": 101,
+      "authorPixelReview": "inspected",
+      "coverage": "L11 text4: complete two paragraphs, Beijing/Shanghai signpost picture, vocabulary21–27 (eight POS records), read-aloud directive and three reading questions. Grammar4 explanation and three examples."
+    },
+    {
+      "pdfPage": 114,
+      "printedPage": 102,
+      "authorPixelReview": "inspected",
+      "coverage": "L11 grammar4: three dialogue blanks. Two separate word banks and all ten blanks."
+    },
+    {
+      "pdfPage": 115,
+      "printedPage": 103,
+      "authorPixelReview": "inspected",
+      "coverage": "L11 three picture dialogues: 3+4+4 independent blanks. Complete four-person profession-guessing task and source example. No culture or review panel printed."
+    }
+  ],
+  "preservedSourceNodes": [
+    {
+      "jsonPointer": "/objectives/0",
+      "id": "hsk3-fltrp-2026:l11:objective1",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/objectives/1",
+      "id": "hsk3-fltrp-2026:l11:objective2",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/objectives/2",
+      "id": "hsk3-fltrp-2026:l11:objective3",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/warmup/0",
+      "id": "hsk3-fltrp-2026:l11:warmup1",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/warmup/0/items/1",
+      "id": null,
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "section": "热身图片：编辑描述",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/warmup/1",
+      "id": "hsk3-fltrp-2026:l11:warmup2",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0",
+      "id": "hsk3-fltrp-2026:l11:text1",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/lines/0",
+      "id": "hsk3-fltrp-2026:l11:text1:line1",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/lines/1",
+      "id": "hsk3-fltrp-2026:l11:text1:line2",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/lines/2",
+      "id": "hsk3-fltrp-2026:l11:text1:line3",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/lines/3",
+      "id": "hsk3-fltrp-2026:l11:text1:line4",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/lines/4",
+      "id": "hsk3-fltrp-2026:l11:text1:line5",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/lines/5",
+      "id": "hsk3-fltrp-2026:l11:text1:line6",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/lines/6",
+      "id": "hsk3-fltrp-2026:l11:text1:line7",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/questions/0",
+      "id": "hsk3-fltrp-2026:l11:text1:question1",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/questions/1",
+      "id": "hsk3-fltrp-2026:l11:text1:question2",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/questions/2",
+      "id": "hsk3-fltrp-2026:l11:text1:question3",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/questions/3",
+      "id": "hsk3-fltrp-2026:l11:text1:question4",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/0/questions/4",
+      "id": "hsk3-fltrp-2026:l11:text1:question5",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1",
+      "id": "hsk3-fltrp-2026:l11:text2",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/context",
+      "id": "hsk3-fltrp-2026:l11:text2",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "课文2：情境",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/lines/0",
+      "id": "hsk3-fltrp-2026:l11:text2:line1",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/lines/1",
+      "id": "hsk3-fltrp-2026:l11:text2:line2",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/lines/2",
+      "id": "hsk3-fltrp-2026:l11:text2:line3",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/lines/3",
+      "id": "hsk3-fltrp-2026:l11:text2:line4",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/lines/4",
+      "id": "hsk3-fltrp-2026:l11:text2:line5",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/lines/5",
+      "id": "hsk3-fltrp-2026:l11:text2:line6",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/lines/6",
+      "id": "hsk3-fltrp-2026:l11:text2:line7",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/lines/7",
+      "id": "hsk3-fltrp-2026:l11:text2:line8",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/questions/0",
+      "id": "hsk3-fltrp-2026:l11:text2:question1",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/questions/1",
+      "id": "hsk3-fltrp-2026:l11:text2:question2",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/questions/2",
+      "id": "hsk3-fltrp-2026:l11:text2:question3",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/questions/3",
+      "id": "hsk3-fltrp-2026:l11:text2:question4",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/1/questions/4",
+      "id": "hsk3-fltrp-2026:l11:text2:question5",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2",
+      "id": "hsk3-fltrp-2026:l11:text3",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/lines/0",
+      "id": "hsk3-fltrp-2026:l11:text3:line1",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/lines/1",
+      "id": "hsk3-fltrp-2026:l11:text3:line2",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/lines/2",
+      "id": "hsk3-fltrp-2026:l11:text3:line3",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/lines/3",
+      "id": "hsk3-fltrp-2026:l11:text3:line4",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/lines/4",
+      "id": "hsk3-fltrp-2026:l11:text3:line5",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/lines/5",
+      "id": "hsk3-fltrp-2026:l11:text3:line6",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/lines/6",
+      "id": "hsk3-fltrp-2026:l11:text3:line7",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/questions/0",
+      "id": "hsk3-fltrp-2026:l11:text3:question1",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/questions/1",
+      "id": "hsk3-fltrp-2026:l11:text3:question2",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/questions/2",
+      "id": "hsk3-fltrp-2026:l11:text3:question3",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/questions/3",
+      "id": "hsk3-fltrp-2026:l11:text3:question4",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/2/questions/4",
+      "id": "hsk3-fltrp-2026:l11:text3:question5",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/3",
+      "id": "hsk3-fltrp-2026:l11:text4",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/3/context",
+      "id": "hsk3-fltrp-2026:l11:text4",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "课文4：情境",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/3/lines/0",
+      "id": "hsk3-fltrp-2026:l11:text4:line1",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/3/lines/1",
+      "id": "hsk3-fltrp-2026:l11:text4:line2",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/3/questions/0",
+      "id": "hsk3-fltrp-2026:l11:text4:question1",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/3/questions/1",
+      "id": "hsk3-fltrp-2026:l11:text4:question2",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/3/questions/2",
+      "id": "hsk3-fltrp-2026:l11:text4:question3",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/3/questions/3",
+      "id": "hsk3-fltrp-2026:l11:text4:question4",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/texts/3/questions/4",
+      "id": "hsk3-fltrp-2026:l11:text4:question5",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/0",
+      "id": "hsk3-fltrp-2026:l11:word01",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/1",
+      "id": "hsk3-fltrp-2026:l11:word02",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/2",
+      "id": "hsk3-fltrp-2026:l11:word03",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/3",
+      "id": "hsk3-fltrp-2026:l11:word04",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/4",
+      "id": "hsk3-fltrp-2026:l11:word05",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/5",
+      "id": "hsk3-fltrp-2026:l11:word06",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/6",
+      "id": "hsk3-fltrp-2026:l11:word07",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/7",
+      "id": "hsk3-fltrp-2026:l11:word08",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/8",
+      "id": "hsk3-fltrp-2026:l11:word09",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/9",
+      "id": "hsk3-fltrp-2026:l11:word10",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/10",
+      "id": "hsk3-fltrp-2026:l11:word11",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/11",
+      "id": "hsk3-fltrp-2026:l11:word12",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/12",
+      "id": "hsk3-fltrp-2026:l11:word13",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/13",
+      "id": "hsk3-fltrp-2026:l11:word14",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/14",
+      "id": "hsk3-fltrp-2026:l11:word15",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/15",
+      "id": "hsk3-fltrp-2026:l11:word16",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/16",
+      "id": "hsk3-fltrp-2026:l11:word17",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/17",
+      "id": "hsk3-fltrp-2026:l11:word18",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/18",
+      "id": "hsk3-fltrp-2026:l11:word19",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/19",
+      "id": "hsk3-fltrp-2026:l11:word20",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/20",
+      "id": "hsk3-fltrp-2026:l11:word21",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/21",
+      "id": "hsk3-fltrp-2026:l11:word22",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/22",
+      "id": "hsk3-fltrp-2026:l11:word23",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/23",
+      "id": "hsk3-fltrp-2026:l11:word24",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/24",
+      "id": "hsk3-fltrp-2026:l11:word25",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/25",
+      "id": "hsk3-fltrp-2026:l11:word26",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/26",
+      "id": "hsk3-fltrp-2026:l11:word27",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/27",
+      "id": "hsk3-fltrp-2026:l11:word28",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/vocabulary/28",
+      "id": "hsk3-fltrp-2026:l11:word29",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/0",
+      "id": "hsk3-fltrp-2026:l11:grammar1",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "“还是”和“或者”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/0/examples/0",
+      "id": null,
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "“还是”和“或者”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/0/examples/1",
+      "id": null,
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "“还是”和“或者”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/0/examples/2",
+      "id": null,
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "“还是”和“或者”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/0/examples/3",
+      "id": null,
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "“还是”和“或者”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/0/practice/0",
+      "id": null,
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "“还是”和“或者”：完成对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/0/practice/1",
+      "id": null,
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "“还是”和“或者”：完成对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/0/practice/2",
+      "id": null,
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "“还是”和“或者”：完成对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/1",
+      "id": "hsk3-fltrp-2026:l11:grammar2",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "固定短语“看来”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/1/examples/0",
+      "id": null,
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "固定短语“看来”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/1/examples/1",
+      "id": null,
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "固定短语“看来”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/1/examples/2",
+      "id": null,
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "固定短语“看来”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/1/practice/0",
+      "id": null,
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "固定短语“看来”：完成句子",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/1/practice/1",
+      "id": null,
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "固定短语“看来”：完成句子",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/1/practice/2",
+      "id": null,
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "固定短语“看来”：完成句子",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/2",
+      "id": "hsk3-fltrp-2026:l11:grammar3",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "“把”字句（3）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/2/examples/0",
+      "id": null,
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "“把”字句（3）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/2/examples/1",
+      "id": null,
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "“把”字句（3）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/2/examples/2",
+      "id": null,
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "“把”字句（3）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/2/practice/0",
+      "id": null,
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "“把”字句（3）：完成对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/2/practice/1",
+      "id": null,
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "“把”字句（3）：完成对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/2/practice/2",
+      "id": null,
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "“把”字句（3）：完成对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/3",
+      "id": "hsk3-fltrp-2026:l11:grammar4",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "固定格式“对……来说”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/3/examples/0",
+      "id": null,
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "固定格式“对……来说”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/3/examples/1",
+      "id": null,
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "固定格式“对……来说”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/3/examples/2",
+      "id": null,
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "固定格式“对……来说”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/3/practice/0",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "固定格式“对……来说”：完成对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/3/practice/1",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "固定格式“对……来说”：完成对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/grammar/3/practice/2",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "固定格式“对……来说”：完成对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/0",
+      "id": "hsk3-fltrp-2026:l11:section1",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "小语助力：接",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/0/blocks/0",
+      "id": null,
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "小语助力：接",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1",
+      "id": "hsk3-fltrp-2026:l11:section2",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/0",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/1",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/2",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/3",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/4",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/5",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/6",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/7",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/8",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/9",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/10",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/1/blocks/11",
+      "id": null,
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/2",
+      "id": "hsk3-fltrp-2026:l11:section3",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "综合练习：图片对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/2/blocks/0",
+      "id": null,
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "综合练习：图片对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/2/blocks/1",
+      "id": null,
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "综合练习：图片对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/2/blocks/2",
+      "id": null,
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "综合练习：图片对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/2/blocks/3",
+      "id": null,
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "综合练习：图片对话",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/2/blocks/4",
+      "id": null,
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "图片说明",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/sections/3",
+      "id": "hsk3-fltrp-2026:l11:section4",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "课堂活动：猜职业",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/3/blocks/0",
+      "id": null,
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "课堂活动：猜职业",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/sections/3/blocks/1",
+      "id": null,
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "课堂活动：猜职业",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "jsonPointer": "/homework/0",
+      "id": "hsk3-fltrp-2026:l11:hw01",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/1",
+      "id": "hsk3-fltrp-2026:l11:hw02",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/2",
+      "id": "hsk3-fltrp-2026:l11:hw03",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/3",
+      "id": "hsk3-fltrp-2026:l11:hw04",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/4",
+      "id": "hsk3-fltrp-2026:l11:hw05",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/5",
+      "id": "hsk3-fltrp-2026:l11:hw06",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/6",
+      "id": "hsk3-fltrp-2026:l11:hw07",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/7",
+      "id": "hsk3-fltrp-2026:l11:hw08",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/8",
+      "id": "hsk3-fltrp-2026:l11:hw09",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/9",
+      "id": "hsk3-fltrp-2026:l11:hw10",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/10",
+      "id": "hsk3-fltrp-2026:l11:hw11",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/11",
+      "id": "hsk3-fltrp-2026:l11:hw12",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/12",
+      "id": "hsk3-fltrp-2026:l11:hw13",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/13",
+      "id": "hsk3-fltrp-2026:l11:hw14",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/14",
+      "id": "hsk3-fltrp-2026:l11:hw15",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/15",
+      "id": "hsk3-fltrp-2026:l11:hw16",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/16",
+      "id": "hsk3-fltrp-2026:l11:hw17",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/17",
+      "id": "hsk3-fltrp-2026:l11:hw18",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/18",
+      "id": "hsk3-fltrp-2026:l11:hw19",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/19",
+      "id": "hsk3-fltrp-2026:l11:hw20",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/20",
+      "id": "hsk3-fltrp-2026:l11:hw21",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/21",
+      "id": "hsk3-fltrp-2026:l11:hw22",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/22",
+      "id": "hsk3-fltrp-2026:l11:hw23",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/23",
+      "id": "hsk3-fltrp-2026:l11:hw24",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/24",
+      "id": "hsk3-fltrp-2026:l11:hw25",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/25",
+      "id": "hsk3-fltrp-2026:l11:hw26",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/26",
+      "id": "hsk3-fltrp-2026:l11:hw27",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/27",
+      "id": "hsk3-fltrp-2026:l11:hw28",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/28",
+      "id": "hsk3-fltrp-2026:l11:hw29",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/homework/29",
+      "id": "hsk3-fltrp-2026:l11:hw30",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/listening/0",
+      "id": "hsk3-fltrp-2026:l11:listen01",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/listening/1",
+      "id": "hsk3-fltrp-2026:l11:listen02",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/listening/2",
+      "id": "hsk3-fltrp-2026:l11:listen03",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "jsonPointer": "/listening/3",
+      "id": "hsk3-fltrp-2026:l11:listen04",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "grammarSourceExplanations": [
+    {
+      "grammarId": "hsk3-fltrp-2026:l11:grammar2",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "语言点2：教材原文说明",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "grammarId": "hsk3-fltrp-2026:l11:grammar3",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "语言点3：教材原文说明",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "grammarId": "hsk3-fltrp-2026:l11:grammar4",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "语言点4：教材原文说明",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "grammarPresentations": [
+    {
+      "grammarId": "hsk3-fltrp-2026:l11:grammar1",
+      "groups": [
+        {
+          "title": {
+            "zh": "还是：疑问句中的选择",
+            "vi": "还是: lựa chọn trong câu hỏi"
+          },
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 97,
+            "section": "语言点1：还是：疑问句中的选择（教材原文说明）",
+            "provenance": "textbook"
+          },
+          "exampleIndices": [
+            0,
+            1
+          ]
+        },
+        {
+          "title": {
+            "zh": "或者：陈述句中的选择",
+            "vi": "或者: lựa chọn trong câu trần thuật"
+          },
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 97,
+            "section": "语言点1：或者：陈述句中的选择（教材原文说明）",
+            "provenance": "textbook"
+          },
+          "exampleIndices": [
+            2,
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:objectives",
+      "targetRef": "objectives",
+      "kind": "self-assessment",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:objective1",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 95,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:objective2",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 95,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:objective3",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 95,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:warmup1-matching",
+      "targetRef": "hsk3-fltrp-2026:l11:warmup1",
+      "kind": "matching",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:warmup1-picture1",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 95,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 15,
+            "item": "第11课 P95 热身1 图1（A）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l11:illustration:warmup1-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:warmup1-picture2",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 95,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 15,
+            "item": "第11课 P95 热身1 图2（C）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l11:illustration:warmup1-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:warmup1-picture3",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 95,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 15,
+            "item": "第11课 P95 热身1 图3（E）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l11:illustration:warmup1-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:warmup1-picture4",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 95,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 15,
+            "item": "第11课 P95 热身1 图4（D）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l11:illustration:warmup1-4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:warmup1-picture5",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 95,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 15,
+            "item": "第11课 P95 热身1 图5（B）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l11:illustration:warmup1-5"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:warmup1-picture6",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 95,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 15,
+            "item": "第11课 P95 热身1 图6（F）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l11:illustration:warmup1-6"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:warmup2-discussion",
+      "targetRef": "hsk3-fltrp-2026:l11:warmup2",
+      "kind": "open",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:warmup2-prompt1",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 95,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:warmup2-prompt2",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 95,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:text1-listening",
+      "targetRef": "hsk3-fltrp-2026:l11:text1:listening",
+      "kind": "choice",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "audioTrack": "11-1",
+      "recommendedPlays": 2,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text1-question1",
+          "targetRef": "hsk3-fltrp-2026:l11:text1:question1",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 96,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 15,
+            "item": "第11课 课文1 听两遍 第1题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text1-question2",
+          "targetRef": "hsk3-fltrp-2026:l11:text1:question2",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 96,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 15,
+            "item": "第11课 课文1 听两遍 第2题（C）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:text1-reading",
+      "targetRef": "hsk3-fltrp-2026:l11:text1:reading",
+      "kind": "open",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text1-question3",
+          "targetRef": "hsk3-fltrp-2026:l11:text1:question3",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 97,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text1-question4",
+          "targetRef": "hsk3-fltrp-2026:l11:text1:question4",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 97,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text1-question5",
+          "targetRef": "hsk3-fltrp-2026:l11:text1:question5",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 97,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:text2-listening",
+      "targetRef": "hsk3-fltrp-2026:l11:text2:listening",
+      "kind": "choice",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "audioTrack": "11-3",
+      "recommendedPlays": 2,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text2-question1",
+          "targetRef": "hsk3-fltrp-2026:l11:text2:question1",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 97,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 15,
+            "item": "第11课 课文2 听两遍 第1题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text2-question2",
+          "targetRef": "hsk3-fltrp-2026:l11:text2:question2",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 97,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 15,
+            "item": "第11课 课文2 听两遍 第2题（C）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:text2-reading",
+      "targetRef": "hsk3-fltrp-2026:l11:text2:reading",
+      "kind": "open",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text2-question3",
+          "targetRef": "hsk3-fltrp-2026:l11:text2:question3",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 98,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text2-question4",
+          "targetRef": "hsk3-fltrp-2026:l11:text2:question4",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 98,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text2-question5",
+          "targetRef": "hsk3-fltrp-2026:l11:text2:question5",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 98,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:text3-listening",
+      "targetRef": "hsk3-fltrp-2026:l11:text3:listening",
+      "kind": "choice",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "audioTrack": "11-5",
+      "recommendedPlays": 2,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text3-question1",
+          "targetRef": "hsk3-fltrp-2026:l11:text3:question1",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 99,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 课文3 听两遍 第1题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text3-question2",
+          "targetRef": "hsk3-fltrp-2026:l11:text3:question2",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 99,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 课文3 听两遍 第2题（C）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:text3-reading",
+      "targetRef": "hsk3-fltrp-2026:l11:text3:reading",
+      "kind": "open",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text3-question3",
+          "targetRef": "hsk3-fltrp-2026:l11:text3:question3",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 100,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text3-question4",
+          "targetRef": "hsk3-fltrp-2026:l11:text3:question4",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 100,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text3-question5",
+          "targetRef": "hsk3-fltrp-2026:l11:text3:question5",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 100,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:text4-listening",
+      "targetRef": "hsk3-fltrp-2026:l11:text4:listening",
+      "kind": "choice",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "audioTrack": "11-7",
+      "recommendedPlays": 2,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text4-question1",
+          "targetRef": "hsk3-fltrp-2026:l11:text4:question1",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 100,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 课文4 听两遍 第1题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text4-question2",
+          "targetRef": "hsk3-fltrp-2026:l11:text4:question2",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 100,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 课文4 听两遍 第2题（B）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:text4-reading",
+      "targetRef": "hsk3-fltrp-2026:l11:text4:reading",
+      "kind": "open",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text4-question3",
+          "targetRef": "hsk3-fltrp-2026:l11:text4:question3",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 101,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text4-question4",
+          "targetRef": "hsk3-fltrp-2026:l11:text4:question4",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 101,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:text4-question5",
+          "targetRef": "hsk3-fltrp-2026:l11:text4:question5",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 101,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar1-practice1",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar1:practice:1",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "“还是”和“或者”：完成对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar1-practice1",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 97,
+            "section": "“还是”和“或者”：完成对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar1-practice2",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar1:practice:2",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "“还是”和“或者”：完成对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar1-practice2",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 97,
+            "section": "“还是”和“或者”：完成对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar1-practice3",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar1:practice:3",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 97,
+        "section": "“还是”和“或者”：完成对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar1-practice3",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 97,
+            "section": "“还是”和“或者”：完成对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar2-practice1",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar2:practice:1",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "固定短语“看来”：完成句子",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar2-practice1",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 99,
+            "section": "固定短语“看来”：完成句子",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar2-practice2",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar2:practice:2",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "固定短语“看来”：完成句子",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar2-practice2",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 99,
+            "section": "固定短语“看来”：完成句子",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar2-practice3",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar2:practice:3",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "section": "固定短语“看来”：完成句子",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar2-practice3",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 99,
+            "section": "固定短语“看来”：完成句子",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar3-practice1",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar3:practice:1",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "“把”字句（3）：完成对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar3-practice1",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 100,
+            "section": "“把”字句（3）：完成对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar3-practice2",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar3:practice:2",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "“把”字句（3）：完成对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar3-practice2",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 100,
+            "section": "“把”字句（3）：完成对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar3-practice3",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar3:practice:3",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 100,
+        "section": "“把”字句（3）：完成对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar3-practice3",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 100,
+            "section": "“把”字句（3）：完成对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar4-practice1",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar4:practice:1",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "固定格式“对……来说”：完成对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar4-practice1",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "固定格式“对……来说”：完成对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar4-practice2",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar4:practice:2",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "固定格式“对……来说”：完成对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar4-practice2",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "固定格式“对……来说”：完成对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:grammar4-practice3",
+      "targetRef": "hsk3-fltrp-2026:l11:grammar4:practice:3",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "固定格式“对……来说”：完成对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:grammar4-practice3",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "固定格式“对……来说”：完成对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:comprehensive-words1",
+      "targetRef": "hsk3-fltrp-2026:l11:section2:bank:1",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:comprehensive-word1",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 P102 选词填空 第1题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:comprehensive-word2",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 P102 选词填空 第2题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:comprehensive-word3",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 P102 选词填空 第3题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:comprehensive-word4",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 P102 选词填空 第4题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:comprehensive-word5",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 P102 选词填空 第5题（E）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:comprehensive-words2",
+      "targetRef": "hsk3-fltrp-2026:l11:section2:bank:2",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 102,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:comprehensive-word6",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 P102 选词填空 第6题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:comprehensive-word7",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 P102 选词填空 第7题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:comprehensive-word8",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 P102 选词填空 第8题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:comprehensive-word9",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 P102 选词填空 第9题（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:comprehensive-word10",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 102,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "assessment": "official",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 16,
+            "item": "第11课 P102 选词填空 第10题（C）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:picture-dialogue1",
+      "targetRef": "hsk3-fltrp-2026:l11:section3:picture:1",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "综合练习：图片对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:picture1-blank1",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "综合练习：图片对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:picture1-blank2",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "综合练习：图片对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:picture1-blank3",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "综合练习：图片对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:picture-dialogue2",
+      "targetRef": "hsk3-fltrp-2026:l11:section3:picture:2",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "综合练习：图片对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:picture2-blank1",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "综合练习：图片对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:picture2-blank2",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "综合练习：图片对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:picture2-blank3",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "综合练习：图片对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:picture2-blank4",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "综合练习：图片对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:picture-dialogue3",
+      "targetRef": "hsk3-fltrp-2026:l11:section3:picture:3",
+      "kind": "fill",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "综合练习：图片对话",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:picture3-blank1",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "综合练习：图片对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:picture3-blank2",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "综合练习：图片对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:picture3-blank3",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "综合练习：图片对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:picture3-blank4",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "综合练习：图片对话",
+            "provenance": "textbook"
+          },
+          "assessment": "reference"
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:activity:classroom-group",
+      "targetRef": "hsk3-fltrp-2026:l11:section4",
+      "kind": "open",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "section": "课堂活动：猜职业",
+        "provenance": "textbook"
+      },
+      "audioTrack": null,
+      "recommendedPlays": null,
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l11:field:classroom-round1-description",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "课堂活动：猜职业",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:classroom-round1-guess",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "课堂活动：猜职业",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:classroom-round2-description",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "课堂活动：猜职业",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:classroom-round2-guess",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "课堂活动：猜职业",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:classroom-round3-description",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "课堂活动：猜职业",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:classroom-round3-guess",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "课堂活动：猜职业",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:classroom-round4-description",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "课堂活动：猜职业",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:field:classroom-round4-guess",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 103,
+            "section": "课堂活动：猜职业",
+            "provenance": "textbook"
+          },
+          "assessment": "open"
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:warmup1-1",
+      "file": "illustrations/hsk3-l11-warmup1-1.svg",
+      "sha256": "acda4cce8b395b9b7a700adab63547d68441907ba204cd363d9c5b473330a9cc",
+      "textbookRelation": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "owner": "hsk3-fltrp-2026:l11:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l11:warmup1",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l11:field:warmup1-picture1"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l11:activity:warmup1-matching"
+      ],
+      "alt": {
+        "zh": "一间空房里有长桌、围着桌子的椅子和墙上的展示屏。",
+        "vi": "Một phòng trống có bàn dài, ghế xung quanh và màn hình trình bày trên tường."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:warmup1-2",
+      "file": "illustrations/hsk3-l11-warmup1-2.svg",
+      "sha256": "742699a5ad2dba77f0952d329cd620942723e980bb2e95625231b7b22ec7633a",
+      "textbookRelation": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "owner": "hsk3-fltrp-2026:l11:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l11:warmup1",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l11:field:warmup1-picture2"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l11:activity:warmup1-matching"
+      ],
+      "alt": {
+        "zh": "一个戴帽子的人带着拉杆箱，走在明亮的交通通道里。",
+        "vi": "Một người đội mũ đi cùng va li kéo trong lối đi giao thông sáng sủa."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:warmup1-3",
+      "file": "illustrations/hsk3-l11-warmup1-3.svg",
+      "sha256": "6def0ac694b7fdb2efcad283302879bce7156b8f66c6008844d4d5e09c65dd2e",
+      "textbookRelation": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "owner": "hsk3-fltrp-2026:l11:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l11:warmup1",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l11:field:warmup1-picture3"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l11:activity:warmup1-matching"
+      ],
+      "alt": {
+        "zh": "双手在键盘旁，屏幕上有信封图案，箭头指向上方另一个信封。",
+        "vi": "Hai bàn tay ở cạnh bàn phím, trên màn hình có hình phong bì và mũi tên chỉ lên một phong bì khác."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:warmup1-4",
+      "file": "illustrations/hsk3-l11-warmup1-4.svg",
+      "sha256": "706b3f871cc0b812c4486504cf7a5dcddae9c8f62a1de08ecdbbe4d139b4db20",
+      "textbookRelation": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "owner": "hsk3-fltrp-2026:l11:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l11:warmup1",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l11:field:warmup1-picture4"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l11:activity:warmup1-matching"
+      ],
+      "alt": {
+        "zh": "桌上放着打开的薄型折叠设备，上半部显示蓝色山景，下半部是键盘。",
+        "vi": "Trên bàn có thiết bị mỏng dạng gập đang mở, nửa trên hiển thị núi xanh, nửa dưới là bàn phím."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:warmup1-5",
+      "file": "illustrations/hsk3-l11-warmup1-5.svg",
+      "sha256": "49d5890787df4fc636295e1ae88a6aecc4bfdc1d4bcb7128294944ec27909859",
+      "textbookRelation": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "owner": "hsk3-fltrp-2026:l11:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l11:warmup1",
+        "position": 5
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l11:field:warmup1-picture5"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l11:activity:warmup1-matching"
+      ],
+      "alt": {
+        "zh": "五名成人围坐长桌旁，桌上有文件，一人用手势向大家讲话。",
+        "vi": "Năm người lớn ngồi quanh bàn dài có hồ sơ; một người dùng cử chỉ nói với mọi người."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:warmup1-6",
+      "file": "illustrations/hsk3-l11-warmup1-6.svg",
+      "sha256": "fcb39c943081fe22e7f405efc402feb4896647d1a3a75b30554d2e1faca8f998",
+      "textbookRelation": {
+        "pdfPage": 107,
+        "printedPage": 95,
+        "owner": "hsk3-fltrp-2026:l11:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l11:warmup1",
+        "position": 6
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l11:field:warmup1-picture6"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l11:activity:warmup1-matching"
+      ],
+      "alt": {
+        "zh": "穿西装打领带的男子坐在工作桌后，拿着文件与面前的人交谈。",
+        "vi": "Người đàn ông mặc vest thắt cà vạt ngồi sau bàn làm việc, cầm hồ sơ trao đổi với người phía trước."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:text1",
+      "file": "illustrations/hsk3-l11-text1.svg",
+      "sha256": "809a6095d05cddb09d072578e232f9cf18b2666dff1b7022491e9b0fe1d3643c",
+      "textbookRelation": {
+        "pdfPage": 108,
+        "printedPage": 96,
+        "owner": "hsk3-fltrp-2026:l11:text1",
+        "sourceOwner": "hsk3-fltrp-2026:l11:text1",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "alt": {
+        "zh": "在办公室里，女同事拿着文件与坐在电脑旁的男同事交谈。",
+        "vi": "Trong văn phòng, nữ đồng nghiệp cầm hồ sơ trò chuyện với nam đồng nghiệp ngồi cạnh máy tính."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:text2",
+      "file": "illustrations/hsk3-l11-text2.svg",
+      "sha256": "bf4010516ab53531c01e49fb3a7022df3e97fa72713abefc460af20ec3388ce0",
+      "textbookRelation": {
+        "pdfPage": 110,
+        "printedPage": 98,
+        "owner": "hsk3-fltrp-2026:l11:text2",
+        "sourceOwner": "hsk3-fltrp-2026:l11:text2",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "alt": {
+        "zh": "两名同事在会议室的展示屏前，一起查看接着线的笔记本电脑。",
+        "vi": "Hai đồng nghiệp đứng trước màn hình trình bày trong phòng họp, cùng kiểm tra máy tính xách tay có dây kết nối."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:text3",
+      "file": "illustrations/hsk3-l11-text3.svg",
+      "sha256": "f6cda6ce24a614bd41ea8d52e9d23f92ad0ae5b1fbed210b35cc57fac7ce3122",
+      "textbookRelation": {
+        "pdfPage": 111,
+        "printedPage": 99,
+        "owner": "hsk3-fltrp-2026:l11:text3",
+        "sourceOwner": "hsk3-fltrp-2026:l11:text3",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "alt": {
+        "zh": "办公室里，女同事坐在电脑前工作，男同事站在旁边与她说话。",
+        "vi": "Trong văn phòng, nữ đồng nghiệp ngồi làm việc trước máy tính, nam đồng nghiệp đứng cạnh nói chuyện."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:text4",
+      "file": "illustrations/hsk3-l11-text4.svg",
+      "sha256": "a4c16625b37b5fece8b431652126e230e0870fd9edb4dad273016b58eca4904e",
+      "textbookRelation": {
+        "pdfPage": 113,
+        "printedPage": 101,
+        "owner": "hsk3-fltrp-2026:l11:text4",
+        "sourceOwner": "hsk3-fltrp-2026:l11:text4",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "alt": {
+        "zh": "一个木制方向牌分别指向北京和上海，表示两个城市的选择。",
+        "vi": "Biển chỉ đường bằng gỗ lần lượt chỉ Bắc Kinh và Thượng Hải, thể hiện lựa chọn giữa hai thành phố."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:picture1",
+      "file": "illustrations/hsk3-l11-picture1.svg",
+      "sha256": "d6c886ced4268f40d71032480d07681ecafcde57dd0473a79115da673f82db65",
+      "textbookRelation": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "owner": "hsk3-fltrp-2026:l11:section3",
+        "sourceOwner": "hsk3-fltrp-2026:l11:section3",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l11:activity:picture-dialogue1"
+      ],
+      "alt": {
+        "zh": "两名男同事坐在桌边商量事情，桌上放着文件和杯子。",
+        "vi": "Hai đồng nghiệp nam ngồi cạnh bàn bàn bạc công việc, trên bàn có hồ sơ và cốc."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:picture2",
+      "file": "illustrations/hsk3-l11-picture2.svg",
+      "sha256": "c79c6842167c9f28a1028467813810011d45049a08fa7b38c5fbdb0c352afa6b",
+      "textbookRelation": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "owner": "hsk3-fltrp-2026:l11:section3",
+        "sourceOwner": "hsk3-fltrp-2026:l11:section3",
+        "position": 2
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l11:activity:picture-dialogue2"
+      ],
+      "alt": {
+        "zh": "两名女同事面对面坐着交谈，其中一人拿着文件。",
+        "vi": "Hai đồng nghiệp nữ ngồi đối diện trò chuyện, một người cầm hồ sơ."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:illustration:picture3",
+      "file": "illustrations/hsk3-l11-picture3.svg",
+      "sha256": "fd27610458e748534db36a4092a1552432fe5c33023baa189bf3d5bb2556fc4a",
+      "textbookRelation": {
+        "pdfPage": 115,
+        "printedPage": 103,
+        "owner": "hsk3-fltrp-2026:l11:section3",
+        "sourceOwner": "hsk3-fltrp-2026:l11:section3",
+        "position": 3
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l11:activity:picture-dialogue3"
+      ],
+      "alt": {
+        "zh": "一名男职员坐在电脑前，拿着有线电话听筒通话。",
+        "vi": "Một nam nhân viên ngồi trước máy tính, cầm ống nghe điện thoại có dây để nói chuyện."
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 27 original SVGs rasterized at 640×400 and inspected across seven full-resolution author contact sheets. Seated legs/chairs, laptop keyboard detail, a writing pencil, an extra arm, a cropped visitor and a desk were repaired; final changed assets were reopened at native size.",
+        "independentReview": "pending"
+      }
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "scope": "Seven required completion repairs plus six optional grammar translation improvements; author-only recheck",
+  "priorCandidateSha256": {
+    "10": "4a1086adabc3c0427c35ef64997099042f9996e2b55059c37968f848377de7c8",
+    "11": "acd2f2933da5868c4405cde9a60ec45858e48b299a10c36181c93a20ac081593"
+  },
+  "newCandidateSha256": {
+    "10": "55153c0c4591717efad4ef7e2a8f738153ad73e2c01baaa3bf88b987963db958",
+    "11": "0dcab4ec0845e84291f43c5ca60ec6d3c6f45686d580791f4f1edd617c698f91"
+  },
+  "changedValueCount": 25,
+  "constraintsVerified": [
+    "Only activities Vietnamese values changed",
+    "All Chinese values unchanged",
+    "All pre-existing baseline values unchanged",
+    "IDs, counts, sources, assessment and field bindings unchanged",
+    "All SVG bytes and illustration manifests unchanged"
+  ],
+  "changes": [
+    {
+      "path": "/activities/11/title/vi",
+      "before": "Hình như tôi đã đem thẻ trường ________.",
+      "after": "Hình như tôi đã ________.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice1",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/11/fields/0/referenceAnswer/vi",
+      "before": "để ở nhà rồi",
+      "after": "để thẻ của trường ở nhà rồi",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice1",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/11/note/vi",
+      "before": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "after": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất. Bản dịch tiếng Việt dùng cách diễn đạt tự nhiên; phạm vi chỗ trống có thể khác bản tiếng Trung.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice1",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/12/title/vi",
+      "before": "Tài xế đem hành lý của chúng tôi ________.",
+      "after": "Tài xế đã ________.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice2",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/12/fields/0/referenceAnswer/vi",
+      "before": "đặt lên xe rồi",
+      "after": "đặt hành lý của chúng tôi lên xe",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice2",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/12/note/vi",
+      "before": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "after": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất. Bản dịch tiếng Việt dùng cách diễn đạt tự nhiên; phạm vi chỗ trống có thể khác bản tiếng Trung.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice2",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/13/title/vi",
+      "before": "Khi soát vé tôi mới phát hiện chưa đem hộ chiếu ________.",
+      "after": "Khi soát vé, tôi mới phát hiện mình chưa ________.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice3",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/13/fields/0/referenceAnswer/vi",
+      "before": "để trong túi",
+      "after": "để hộ chiếu vào túi",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice3",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/13/note/vi",
+      "before": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "after": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất. Bản dịch tiếng Việt dùng cách diễn đạt tự nhiên; phạm vi chỗ trống có thể khác bản tiếng Trung.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice3",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/17/title/vi",
+      "before": "Tôi muốn đem số đồ ăn này ________.",
+      "after": "Tôi muốn ________.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice1",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/17/fields/0/referenceAnswer/vi",
+      "before": "tặng cho bạn",
+      "after": "tặng số đồ ăn này cho bạn",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice1",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/17/note/vi",
+      "before": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "after": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất. Bản dịch tiếng Việt dùng cách diễn đạt tự nhiên; phạm vi chỗ trống có thể khác bản tiếng Trung.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice1",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/18/title/vi",
+      "before": "Tôi đem phần ghi chép trong giờ hôm nay ________.",
+      "after": "Tôi đã ________.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice2",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/18/fields/0/referenceAnswer/vi",
+      "before": "cho bạn học mượn rồi",
+      "after": "cho bạn học mượn phần ghi chép buổi học hôm nay",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice2",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/18/note/vi",
+      "before": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "after": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất. Bản dịch tiếng Việt dùng cách diễn đạt tự nhiên; phạm vi chỗ trống có thể khác bản tiếng Trung.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice2",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/19/title/vi",
+      "before": "Hôm nay là sinh nhật mẹ, tôi muốn đem những bông hoa này ________.",
+      "after": "Hôm nay là sinh nhật mẹ, tôi muốn ________.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice3",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/19/fields/0/referenceAnswer/vi",
+      "before": "tặng cho mẹ",
+      "after": "tặng những bông hoa này cho mẹ",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice3",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/19/note/vi",
+      "before": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "after": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất. Bản dịch tiếng Việt dùng cách diễn đạt tự nhiên; phạm vi chỗ trống có thể khác bản tiếng Trung.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice3",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/22/fields/2/referenceAnswer/vi",
+      "before": "chia sẻ với tôi",
+      "after": "chia sẻ cách hay này với tôi",
+      "activityId": "hsk3-fltrp-2026:l10:activity:picture-dialogue1",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/22/note/vi",
+      "before": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bạn thấy chữ Hán khó viết không? B: ________, ngoài tôi các bạn cũng thấy khó viết. A: Tôi có cách hay, tôi đem ________, rảnh thì xem. B: Cảm ơn bạn đã đem cách hay này ________. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "after": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bạn thấy chữ Hán khó viết không? B: ________, ngoài tôi các bạn cũng thấy khó viết. A: Tôi có một cách hay: tôi ________, lúc rảnh thì xem lại. B: Cảm ơn bạn đã ________. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:picture-dialogue1",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/24/note/vi",
+      "before": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bài ngoại ngữ hôm qua ________, mấy câu tôi đều không biết làm. B: Bạn có thể đem ________, tôi xem giúp. A: Được, chính là mấy câu này. B: Thầy cô đã giảng mấy câu này, tôi đem ________, bạn tự học trước nhé. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "after": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bài ngoại ngữ hôm qua ________, mấy câu tôi đều không biết làm. B: Bạn có thể ________, tôi xem giúp. A: Được, chính là mấy câu này. B: Thầy cô đã giảng mấy câu này trên lớp rồi. Tôi ________; bạn tự xem trước nhé. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "activityId": "hsk3-fltrp-2026:l10:activity:picture-dialogue3",
+      "lesson": 10
+    },
+    {
+      "path": "/activities/17/title/vi",
+      "before": "A: Trước cuộc họp, ta phải đem ________. B: Được, tôi giúp bạn.",
+      "after": "A: Trước khi cuộc họp bắt đầu, chúng ta phải ________. B: Được, tôi giúp bạn.",
+      "activityId": "hsk3-fltrp-2026:l11:activity:grammar3-practice1",
+      "lesson": 11
+    },
+    {
+      "path": "/activities/19/title/vi",
+      "before": "A: Rảnh thì đến văn phòng tôi nhé. B: Vâng, giám đốc Lưu. Tôi làm ________ rồi đến văn phòng anh.",
+      "after": "A: Rảnh thì đến văn phòng tôi nhé. B: Vâng, giám đốc Lưu. Tôi ________ rồi sẽ đến văn phòng anh.",
+      "activityId": "hsk3-fltrp-2026:l11:activity:grammar3-practice3",
+      "lesson": 11
+    },
+    {
+      "path": "/activities/27/fields/3/referenceAnswer/vi",
+      "before": "gửi xong email rồi đến ngay",
+      "after": "gửi xong mấy email này rồi sẽ đến ngay",
+      "activityId": "hsk3-fltrp-2026:l11:activity:picture-dialogue3",
+      "lesson": 11
+    },
+    {
+      "path": "/activities/27/note/vi",
+      "before": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bạn thấy Tiểu Vương và Tiểu Lý không? B: Tiểu Vương cảm, hôm nay anh ấy ________; Tiểu Lý từ tuần trước đã ________. A: Vậy bạn đến phòng họp một, sắp ________ rồi. B: Được, tôi đem mấy lá ________. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "after": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bạn thấy Tiểu Vương và Tiểu Lý không? B: Tiểu Vương cảm, hôm nay anh ấy ________; Tiểu Lý từ tuần trước đã ________. A: Vậy bạn đến phòng họp một, sắp ________ rồi. B: Được, tôi ________. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+      "activityId": "hsk3-fltrp-2026:l11:activity:picture-dialogue3",
+      "lesson": 11
+    }
+  ],
+  "completedSentenceChecks": [
+    {
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice1",
+      "template": "Hình như tôi đã ________.",
+      "referencesInBlankOrder": [
+        "để thẻ của trường ở nhà rồi"
+      ],
+      "completedVietnamese": "Hình như tôi đã để thẻ của trường ở nhà rồi.",
+      "assessment": "editorial-reference; multiple valid responses; never exact-graded",
+      "authorReadThrough": "complete Vietnamese prompt/reference assembled and read in context"
+    },
+    {
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice2",
+      "template": "Tài xế đã ________.",
+      "referencesInBlankOrder": [
+        "đặt hành lý của chúng tôi lên xe"
+      ],
+      "completedVietnamese": "Tài xế đã đặt hành lý của chúng tôi lên xe.",
+      "assessment": "editorial-reference; multiple valid responses; never exact-graded",
+      "authorReadThrough": "complete Vietnamese prompt/reference assembled and read in context"
+    },
+    {
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar1-practice3",
+      "template": "Khi soát vé, tôi mới phát hiện mình chưa ________.",
+      "referencesInBlankOrder": [
+        "để hộ chiếu vào túi"
+      ],
+      "completedVietnamese": "Khi soát vé, tôi mới phát hiện mình chưa để hộ chiếu vào túi.",
+      "assessment": "editorial-reference; multiple valid responses; never exact-graded",
+      "authorReadThrough": "complete Vietnamese prompt/reference assembled and read in context"
+    },
+    {
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice1",
+      "template": "Tôi muốn ________.",
+      "referencesInBlankOrder": [
+        "tặng số đồ ăn này cho bạn"
+      ],
+      "completedVietnamese": "Tôi muốn tặng số đồ ăn này cho bạn.",
+      "assessment": "editorial-reference; multiple valid responses; never exact-graded",
+      "authorReadThrough": "complete Vietnamese prompt/reference assembled and read in context"
+    },
+    {
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice2",
+      "template": "Tôi đã ________.",
+      "referencesInBlankOrder": [
+        "cho bạn học mượn phần ghi chép buổi học hôm nay"
+      ],
+      "completedVietnamese": "Tôi đã cho bạn học mượn phần ghi chép buổi học hôm nay.",
+      "assessment": "editorial-reference; multiple valid responses; never exact-graded",
+      "authorReadThrough": "complete Vietnamese prompt/reference assembled and read in context"
+    },
+    {
+      "activityId": "hsk3-fltrp-2026:l10:activity:grammar3-practice3",
+      "template": "Hôm nay là sinh nhật mẹ, tôi muốn ________.",
+      "referencesInBlankOrder": [
+        "tặng những bông hoa này cho mẹ"
+      ],
+      "completedVietnamese": "Hôm nay là sinh nhật mẹ, tôi muốn tặng những bông hoa này cho mẹ.",
+      "assessment": "editorial-reference; multiple valid responses; never exact-graded",
+      "authorReadThrough": "complete Vietnamese prompt/reference assembled and read in context"
+    },
+    {
+      "activityId": "hsk3-fltrp-2026:l10:activity:picture-dialogue1",
+      "template": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bạn thấy chữ Hán khó viết không? B: ________, ngoài tôi các bạn cũng thấy khó viết. A: Tôi có một cách hay: tôi ________, lúc rảnh thì xem lại. B: Cảm ơn bạn đã ________.",
+      "referencesInBlankOrder": [
+        "Tôi thấy rất khó",
+        "ghi những chữ Hán chưa biết viết vào vở",
+        "chia sẻ cách hay này với tôi"
+      ],
+      "completedVietnamese": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bạn thấy chữ Hán khó viết không? B: Tôi thấy rất khó, ngoài tôi các bạn cũng thấy khó viết. A: Tôi có một cách hay: tôi ghi những chữ Hán chưa biết viết vào vở, lúc rảnh thì xem lại. B: Cảm ơn bạn đã chia sẻ cách hay này với tôi.",
+      "assessment": "editorial-reference; multiple valid responses; never exact-graded",
+      "authorReadThrough": "complete Vietnamese prompt/reference assembled and read in context"
+    },
+    {
+      "activityId": "hsk3-fltrp-2026:l10:activity:picture-dialogue3",
+      "template": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bài ngoại ngữ hôm qua ________, mấy câu tôi đều không biết làm. B: Bạn có thể ________, tôi xem giúp. A: Được, chính là mấy câu này. B: Thầy cô đã giảng mấy câu này trên lớp rồi. Tôi ________; bạn tự xem trước nhé.",
+      "referencesInBlankOrder": [
+        "hơi khó",
+        "đưa bài tập cho tôi",
+        "cho bạn mượn vở ghi"
+      ],
+      "completedVietnamese": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bài ngoại ngữ hôm qua hơi khó, mấy câu tôi đều không biết làm. B: Bạn có thể đưa bài tập cho tôi, tôi xem giúp. A: Được, chính là mấy câu này. B: Thầy cô đã giảng mấy câu này trên lớp rồi. Tôi cho bạn mượn vở ghi; bạn tự xem trước nhé.",
+      "assessment": "editorial-reference; multiple valid responses; never exact-graded",
+      "authorReadThrough": "complete Vietnamese prompt/reference assembled and read in context"
+    },
+    {
+      "activityId": "hsk3-fltrp-2026:l11:activity:grammar3-practice1",
+      "template": "A: Trước khi cuộc họp bắt đầu, chúng ta phải ________. B: Được, tôi giúp bạn.",
+      "referencesInBlankOrder": [
+        "kết nối xong máy tính"
+      ],
+      "completedVietnamese": "A: Trước khi cuộc họp bắt đầu, chúng ta phải kết nối xong máy tính. B: Được, tôi giúp bạn.",
+      "assessment": "editorial-reference; multiple valid responses; never exact-graded",
+      "authorReadThrough": "complete Vietnamese prompt/reference assembled and read in context"
+    },
+    {
+      "activityId": "hsk3-fltrp-2026:l11:activity:grammar3-practice3",
+      "template": "A: Rảnh thì đến văn phòng tôi nhé. B: Vâng, giám đốc Lưu. Tôi ________ rồi sẽ đến văn phòng anh.",
+      "referencesInBlankOrder": [
+        "làm xong những việc này"
+      ],
+      "completedVietnamese": "A: Rảnh thì đến văn phòng tôi nhé. B: Vâng, giám đốc Lưu. Tôi làm xong những việc này rồi sẽ đến văn phòng anh.",
+      "assessment": "editorial-reference; multiple valid responses; never exact-graded",
+      "authorReadThrough": "complete Vietnamese prompt/reference assembled and read in context"
+    },
+    {
+      "activityId": "hsk3-fltrp-2026:l11:activity:picture-dialogue3",
+      "template": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bạn thấy Tiểu Vương và Tiểu Lý không? B: Tiểu Vương cảm, hôm nay anh ấy ________; Tiểu Lý từ tuần trước đã ________. A: Vậy bạn đến phòng họp một, sắp ________ rồi. B: Được, tôi ________.",
+      "referencesInBlankOrder": [
+        "đã xin nghỉ",
+        "nghỉ phép rồi",
+        "họp",
+        "gửi xong mấy email này rồi sẽ đến ngay"
+      ],
+      "completedVietnamese": "Dùng từ và cấu trúc mới của bài để mô tả hình. A: Bạn thấy Tiểu Vương và Tiểu Lý không? B: Tiểu Vương cảm, hôm nay anh ấy đã xin nghỉ; Tiểu Lý từ tuần trước đã nghỉ phép rồi. A: Vậy bạn đến phòng họp một, sắp họp rồi. B: Được, tôi gửi xong mấy email này rồi sẽ đến ngay.",
+      "assessment": "editorial-reference; multiple valid responses; never exact-graded",
+      "authorReadThrough": "complete Vietnamese prompt/reference assembled and read in context"
+    }
+  ]
+}

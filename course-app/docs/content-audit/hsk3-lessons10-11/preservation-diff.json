@@ -1,0 +1,44 @@
+{
+  "baseline": "9b7c76702e9724b4c647750138d800605254a116",
+  "status": "PASS: no old key/value differences",
+  "lessons": [
+    {
+      "lesson": 10,
+      "baseline": "9b7c76702e9724b4c647750138d800605254a116",
+      "candidateSha256": "55153c0c4591717efad4ef7e2a8f738153ad73e2c01baaa3bf88b987963db958",
+      "oldKeyValueDifferences": [],
+      "newTopLevelKeys": [
+        "activities",
+        "grammarPresentations",
+        "grammarSourceExplanations",
+        "illustrationManifest"
+      ],
+      "existingQuestionIdsPreserved": {
+        "text": 19,
+        "homework": 30,
+        "supplementalListening": 4
+      },
+      "allHistoricalSourceFieldsAndReviewStatusPreserved": true,
+      "note": "Only four new top-level properties; no old key/value changed or deleted. Existing duplicated-looking vocabulary/POS distinctions and all historical content remain."
+    },
+    {
+      "lesson": 11,
+      "baseline": "9b7c76702e9724b4c647750138d800605254a116",
+      "candidateSha256": "0dcab4ec0845e84291f43c5ca60ec6d3c6f45686d580791f4f1edd617c698f91",
+      "oldKeyValueDifferences": [],
+      "newTopLevelKeys": [
+        "activities",
+        "grammarPresentations",
+        "grammarSourceExplanations",
+        "illustrationManifest"
+      ],
+      "existingQuestionIdsPreserved": {
+        "text": 20,
+        "homework": 30,
+        "supplementalListening": 4
+      },
+      "allHistoricalSourceFieldsAndReviewStatusPreserved": true,
+      "note": "Only four new top-level properties; no old key/value changed or deleted. Existing duplicated-looking vocabulary/POS distinctions and all historical content remain."
+    }
+  ]
+}

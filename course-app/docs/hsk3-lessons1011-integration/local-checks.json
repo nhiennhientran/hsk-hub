@@ -1,0 +1,35 @@
+{
+  "baseCommit": "d5feac8a01ec7095573da8dd9c4205c23bc7ed2b",
+  "unit": {
+    "coursePassed": 88,
+    "hsk1Passed": 335,
+    "failed": 0
+  },
+  "sourceValidation": "passed",
+  "build": "passed",
+  "browserFixtureTypes": "passed",
+  "sourceIndependentReview": "passed; final29 file hashes preserved",
+  "supplementalJSDOM": {
+    "activities": 55,
+    "fields": 140,
+    "assertions": 697,
+    "result": "passed; not native browser"
+  },
+  "browserCollection": {
+    "perEngine": 195,
+    "total": 390,
+    "beforeShards": [
+      147,
+      48
+    ],
+    "afterShards": [
+      98,
+      97
+    ],
+    "prior358Retained": true,
+    "exactUnion": true,
+    "disjoint": true
+  },
+  "nativeExecution": "pending for new commit",
+  "publication": "blocked until overall16 gates pass"
+}

@@ -1,0 +1,215 @@
+{
+  "scope": "author structural, source-binding and preservation checks; not independent review or browser acceptance",
+  "baseline": "9b7c76702e9724b4c647750138d800605254a116",
+  "status": "PASS",
+  "failures": [],
+  "lessons": [
+    {
+      "lesson": 10,
+      "file": "course-app/content/hsk3/lesson-10.json",
+      "sha256": "55153c0c4591717efad4ef7e2a8f738153ad73e2c01baaa3bf88b987963db958",
+      "baselineFileSha256": "a43e5f2b020690d52b3dce0c1119dc5897eb68efe6a5c175cb22d66a38a7fa33",
+      "counts": {
+        "activities": 26,
+        "fields": 68,
+        "official": 24,
+        "reference": 28,
+        "open": 16,
+        "figures": 14,
+        "vocabulary": 33,
+        "textLines": 26,
+        "grammarBlanks": 9,
+        "pictureBlanks": [
+          3,
+          3,
+          3
+        ]
+      },
+      "originalKeyDifferences": [],
+      "oldDataProjectionPreserved": true,
+      "preservedCoreHashes": {
+        "objectives": "eee13aa612ba8d50dbe039fa935f6eeafd28a93209f0578f0ba4d4c0f2882f4e",
+        "warmup": "8497714e7047a45ed756c4abbc89660cb6bf8cdd0721d512fdbfb4084c151156",
+        "vocabulary": "711908227fd3fb5579271cf9361fe5841937694fe4a5cbe085c82f6920ef3ebc",
+        "grammar": "e03fc7c4e9db671f31a3a0efd573e838814b967a0701d9aaf6806e12224750d7",
+        "sections": "918d8e688fe9e3e785568d34289bb5b9027717f6eda538ad2c491e1366e27ec4",
+        "homework": "189dfcd0b3d1beb51ca7fd8271a1d5a3ccaffc7915981be14d228e8c7a10c140",
+        "listening": "86b53ce71f3d404b34f24239e76b0a574a66ef34abdaceff97677777fde7d499"
+      },
+      "figures": [
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:warmup1-1",
+          "file": "illustrations/hsk3-l10-warmup1-1.svg",
+          "sha256": "872f01ef067741acc165a7a193d238cde41f28e2c9628a024ad8f54b650601f9"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:warmup1-2",
+          "file": "illustrations/hsk3-l10-warmup1-2.svg",
+          "sha256": "0b0dadf16d571c625614b300bb64518441ca9728227c3684527a92825ab18719"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:warmup1-3",
+          "file": "illustrations/hsk3-l10-warmup1-3.svg",
+          "sha256": "8150c30e151cf0c64ad36bc4c0d3a4a287ea107b97a60cb4d111e9d9b7ab1649"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:warmup1-4",
+          "file": "illustrations/hsk3-l10-warmup1-4.svg",
+          "sha256": "01a88b0a695d4bc80fb6ad8005e08b7773500663b21e6d7b34c6f67e97a32a7e"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:warmup1-5",
+          "file": "illustrations/hsk3-l10-warmup1-5.svg",
+          "sha256": "76da2474600b7172a825adf265f2695948690f5b9b35b47d7e9c12a6097d0169"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:warmup1-6",
+          "file": "illustrations/hsk3-l10-warmup1-6.svg",
+          "sha256": "11fda6630249314d319a74012bfa27f3dbcd17aa5e1f108b03806911f1803ad1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:text1",
+          "file": "illustrations/hsk3-l10-text1.svg",
+          "sha256": "6164b9d8732088a14f563f00172c89aa31dacd56e085b6b8248d84650d44e5d2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:text2",
+          "file": "illustrations/hsk3-l10-text2.svg",
+          "sha256": "da67fd5d3d02f4e82765ab9b696eae614faf153f9368d5cb2caa61191e9ddbd2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:text3",
+          "file": "illustrations/hsk3-l10-text3.svg",
+          "sha256": "9f616f93214070e75c226fbdfbc5f479954b841a7b176cb3ab2ad90888b71778"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:text4",
+          "file": "illustrations/hsk3-l10-text4.svg",
+          "sha256": "f83bf380d22b2b116578e3cb123a39f01d077403fd04984cb7cf775f6f1d1beb"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:picture1",
+          "file": "illustrations/hsk3-l10-picture1.svg",
+          "sha256": "b17c42b7b38cb329f80133f49e3288092b4da94c39356bf08c5224aa96843d64"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:picture2",
+          "file": "illustrations/hsk3-l10-picture2.svg",
+          "sha256": "14af3491b210bdff1665a3de000b7a0cf05845e1f0f6ae08937119ca49bc4488"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:picture3",
+          "file": "illustrations/hsk3-l10-picture3.svg",
+          "sha256": "f5925ca70a8d20fb1688a0beee7d97bcda6f4f8a16785f6f817038ce1bec8a16"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l10:illustration:culture",
+          "file": "illustrations/hsk3-l10-culture.svg",
+          "sha256": "0b3c0ee54e13a7432332f55ff2e43f1c2cb84954b9be00055ab64827cf7a0ab4"
+        }
+      ],
+      "verifyActivitiesIssues": []
+    },
+    {
+      "lesson": 11,
+      "file": "course-app/content/hsk3/lesson-11.json",
+      "sha256": "0dcab4ec0845e84291f43c5ca60ec6d3c6f45686d580791f4f1edd617c698f91",
+      "baselineFileSha256": "3410c84ed3d532f1fe9c5c39d0b5b1ffe571b2127e47f7c299beef7386d2ac8a",
+      "counts": {
+        "activities": 29,
+        "fields": 72,
+        "official": 24,
+        "reference": 35,
+        "open": 13,
+        "figures": 13,
+        "vocabulary": 29,
+        "textLines": 24,
+        "grammarBlanks": 12,
+        "pictureBlanks": [
+          3,
+          4,
+          4
+        ]
+      },
+      "originalKeyDifferences": [],
+      "oldDataProjectionPreserved": true,
+      "preservedCoreHashes": {
+        "objectives": "4c18de82815b6ebae3c029f54bf25ed30f10e3e14dfac5fce170b9b02410b4a6",
+        "warmup": "15f53a95276128aad13c34b550308118eec16fc5a550a3d35462e3220e496fb1",
+        "vocabulary": "b6f4d6fd59121e13820cb3efed698905e0f824b28c4de5f91e587b3c0d139a0f",
+        "grammar": "6cf12dae7e6817b5b829bd1576d41fe20cef00a685106dfeb644113d6b39887d",
+        "sections": "f8ba614914c556a8affae216f1c789378dbd94844c04ea4da3634b157a84e38c",
+        "homework": "f72040da98c260c87e9bf2fc7807a660b4ec5c93a7ae94403b50765fecf96c83",
+        "listening": "4c4510c3b87e5ba05230a64f344b2aab5395a8462fd99c3e0f0a91a482b6b7a2"
+      },
+      "figures": [
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:warmup1-1",
+          "file": "illustrations/hsk3-l11-warmup1-1.svg",
+          "sha256": "acda4cce8b395b9b7a700adab63547d68441907ba204cd363d9c5b473330a9cc"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:warmup1-2",
+          "file": "illustrations/hsk3-l11-warmup1-2.svg",
+          "sha256": "742699a5ad2dba77f0952d329cd620942723e980bb2e95625231b7b22ec7633a"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:warmup1-3",
+          "file": "illustrations/hsk3-l11-warmup1-3.svg",
+          "sha256": "6def0ac694b7fdb2efcad283302879bce7156b8f66c6008844d4d5e09c65dd2e"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:warmup1-4",
+          "file": "illustrations/hsk3-l11-warmup1-4.svg",
+          "sha256": "706b3f871cc0b812c4486504cf7a5dcddae9c8f62a1de08ecdbbe4d139b4db20"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:warmup1-5",
+          "file": "illustrations/hsk3-l11-warmup1-5.svg",
+          "sha256": "49d5890787df4fc636295e1ae88a6aecc4bfdc1d4bcb7128294944ec27909859"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:warmup1-6",
+          "file": "illustrations/hsk3-l11-warmup1-6.svg",
+          "sha256": "fcb39c943081fe22e7f405efc402feb4896647d1a3a75b30554d2e1faca8f998"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:text1",
+          "file": "illustrations/hsk3-l11-text1.svg",
+          "sha256": "809a6095d05cddb09d072578e232f9cf18b2666dff1b7022491e9b0fe1d3643c"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:text2",
+          "file": "illustrations/hsk3-l11-text2.svg",
+          "sha256": "bf4010516ab53531c01e49fb3a7022df3e97fa72713abefc460af20ec3388ce0"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:text3",
+          "file": "illustrations/hsk3-l11-text3.svg",
+          "sha256": "f6cda6ce24a614bd41ea8d52e9d23f92ad0ae5b1fbed210b35cc57fac7ce3122"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:text4",
+          "file": "illustrations/hsk3-l11-text4.svg",
+          "sha256": "a4c16625b37b5fece8b431652126e230e0870fd9edb4dad273016b58eca4904e"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:picture1",
+          "file": "illustrations/hsk3-l11-picture1.svg",
+          "sha256": "d6c886ced4268f40d71032480d07681ecafcde57dd0473a79115da673f82db65"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:picture2",
+          "file": "illustrations/hsk3-l11-picture2.svg",
+          "sha256": "c79c6842167c9f28a1028467813810011d45049a08fa7b38c5fbdb0c352afa6b"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l11:illustration:picture3",
+          "file": "illustrations/hsk3-l11-picture3.svg",
+          "sha256": "fd27610458e748534db36a4092a1552432fe5c33023baa189bf3d5bb2556fc4a"
+        }
+      ],
+      "verifyActivitiesIssues": []
+    }
+  ]
+}
