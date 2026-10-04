@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 1,
+  "phase": "after",
+  "status": "accepted-native-checkpoint-not-release",
+  "recordedAt": "2026-10-04T21:48:21.781Z",
+  "checkoutCommit": "6eb41feb4d1aa555114440f20d23e3a415cd8ed0",
+  "checkoutTree": "540403892a89ed764b735b11859cd372d7e9a479",
+  "githubSHA": "6eb41feb4d1aa555114440f20d23e3a415cd8ed0",
+  "githubRef": "refs/heads/work/hsk-b10-adapter-ci-20261004",
+  "runId": "37237442946",
+  "runAttempt": "1",
+  "browser": "webkit",
+  "node": "v24.19.0",
+  "officialRuntimeSourceSnapshotSHA256": "82538965cfb2602b73ad0997f3fd4fff977e528f6e2d76f5c161efe2ae9ca92b",
+  "extendedBuildAndFixtureSnapshotSHA256": "aa85101548a960696c6c5d53913411f5213f7cd9c42b705848d4ab2ee98ae3d1",
+  "actualNativeCases": 11,
+  "native": [
+    {
+      "app": "hsk1",
+      "report": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-results.json",
+        "bytes": 8353,
+        "sha256": "c24779410246c600a87eba705094f3f38976e4ef73f54e7ba6f5a5d922e7df2f"
+      },
+      "browser": "webkit",
+      "expectedCount": 3,
+      "passed": 3,
+      "skipped": 0,
+      "retries": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "cases": [
+        {
+          "id": "8edc11bd99b40b574bcd-a8239332d9bf66dc8112",
+          "title": "synthetic same-clock receipt survives reload and shows first/latest immutable text with original answer indices",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 1553,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-bd6f5effe8726ad8ce71",
+          "title": "legacy archive shows each saved display binding and keeps raw task and answer visible",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 1022,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-df72d9ca0f7802ee6f80",
+          "title": "listening shuffled labels use original indices and fixed round text after native reload",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 691,
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "app": "hsk23",
+      "report": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk23-results.json",
+        "bytes": 15791,
+        "sha256": "d0d5fc8e0ae8efb9284259c39a28f3dbb4f7049b89902326ff8ae35235cb7fce"
+      },
+      "browser": "webkit",
+      "expectedCount": 8,
+      "passed": 8,
+      "skipped": 0,
+      "retries": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "cases": [
+        {
+          "id": "8edc11bd99b40b574bcd-db6e3f24f1b66290fd0e",
+          "title": "HSK2 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 696,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-5f1111a1482bdef6f0d0",
+          "title": "HSK2 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 518,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-516618216f30a6d28396",
+          "title": "HSK2 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 650,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-e5686408c9aa28ab8a77",
+          "title": "HSK2 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 478,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-6020f5a9ecc14db77c2d",
+          "title": "HSK3 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 722,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-554a0673cd2830ed3435",
+          "title": "HSK3 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 543,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-75cc372ef11016300d8e",
+          "title": "HSK3 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 765,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-87c22a7069bf72037466",
+          "title": "HSK3 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 541,
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/course-install.command.json",
+      "bytes": 502,
+      "sha256": "b30844308f53764939abc83c4b92ea3962e8bd0bc7fbf3f8f4ac44cccaa3cbcf",
+      "label": "course-install",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/course-install.log",
+        "bytes": 140,
+        "sha256": "d9c44fd448224c62568d2746d275055b27b6efe9b101cf1aecc6a859562671f9"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-install.command.json",
+      "bytes": 496,
+      "sha256": "6b1528de55ece7046b82fbfe2d5731b0a15ce3a3798c8e5c0868ff76cf5fa1ea",
+      "label": "hsk1-install",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-install.log",
+        "bytes": 143,
+        "sha256": "29395acc5ccd9bf7d40c509e93b2941ec19cbbf9a9177527d010301ff9f827ab"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/course-units.command.json",
+      "bytes": 502,
+      "sha256": "8ea1276ba4de4bcc3117afd78cbbd92fe48bbb315641bdc9cb81c2ee14ea1a49",
+      "label": "course-units",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/course-units.log",
+        "bytes": 20814,
+        "sha256": "12cdc402876bace2866337545a8ae8e9c5ce5105cee4e2e29151495c02cddbca"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-units.command.json",
+      "bytes": 496,
+      "sha256": "09730d65c4b60f2116ab2c206d6103261599480513df4ac323b6aeaa342a4f98",
+      "label": "hsk1-units",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-units.log",
+        "bytes": 65229,
+        "sha256": "3c9d4837c7dbae6fdcfb490d6ee393dc39688522f1d96540889223c9371e1c1d"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/course-source.command.json",
+      "bytes": 524,
+      "sha256": "9f967b430d58e89dd0b8b1194eef90aa118ececa89d3b9c0ff1be511a2e90f16",
+      "label": "course-source",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/course-source.log",
+        "bytes": 15110,
+        "sha256": "9da8b3df3f9f7602a3520da7dccd69b53a49b3d00905840ab4acdf36e42cc448"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-source.command.json",
+      "bytes": 516,
+      "sha256": "7984ba0c69bbbb7badfd60ed837cf0eb706cc37dea379f24034d2fa20dc64541",
+      "label": "hsk1-source",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-source.log",
+        "bytes": 368,
+        "sha256": "12cdfbb521f4b7a1181b034b3754cef01befd041b4d00fe92647185553dbdd7a"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-migration-fixtures.command.json",
+      "bytes": 541,
+      "sha256": "a304158b1464cc955b567669726f6d36e4bd0924425a2354987a8beab68ef0e4",
+      "label": "hsk1-migration-fixtures",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-migration-fixtures.log",
+        "bytes": 141,
+        "sha256": "73a3bea4deb6a38755e1fcf7fcfd71af59888931e2deefb1c4eab8308a731ced"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/course-types.command.json",
+      "bytes": 511,
+      "sha256": "c6d76904b8a24159d9307e3c60304ef9b84ddad53074f4ce4eb37e0078cf5bf7",
+      "label": "course-types",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/course-types.log",
+        "bytes": 53,
+        "sha256": "64d825528568a8393b59068b40528264729a6b0bd8961668faeda9bfbf2473b2"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-types.command.json",
+      "bytes": 505,
+      "sha256": "b90283766fad7c46539c0a6851cf15382bf3145d79b27525510fb1e3738973ae",
+      "label": "hsk1-types",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-types.log",
+        "bytes": 48,
+        "sha256": "dd593a3d070185fc89d5664ff75908752e3173ad6cc5296c1e26dbff07d187d6"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/native-fixture-types.command.json",
+      "bytes": 575,
+      "sha256": "d84c34f291fb8c013ed1dfe526e72cfef607a78472b0997da09200ce1377556d",
+      "label": "native-fixture-types",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/native-fixture-types.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/native-report-guards.command.json",
+      "bytes": 570,
+      "sha256": "356fc8f6de4b655457c426ce0f3fa922fd82795cbc1a7cab078e3803dd083126",
+      "label": "native-report-guards",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/native-report-guards.log",
+        "bytes": 732,
+        "sha256": "586c8b7c4e568fe7b4db5f3c42e400273d673028fd4823493fc194178ff54067"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/browser-install.command.json",
+      "bytes": 537,
+      "sha256": "fa93280f2f1ddf8df286689f0e78e28f178d2e94687ac53d837163be2f7a4627",
+      "label": "browser-install",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/browser-install.log",
+        "bytes": 85076,
+        "sha256": "f61b81c06c0cd25e24a391845383b30ad01b22abdd878f7eaf7f17191943c94e"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/font-install.command.json",
+      "bytes": 518,
+      "sha256": "8847698825eb4cf9bdc79c2084dd9396d21ef047f246147f0e70f58fefbdde62",
+      "label": "font-install",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/font-install.log",
+        "bytes": 1708,
+        "sha256": "a10d9ab820a890ccb2ecd79de1c4616583e6ba54ed11e3e3a4746aa364fbc1a3"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-build.command.json",
+      "bytes": 507,
+      "sha256": "cda803f7ca016798c0a7100415f772ad3ea4f2b13fb02e4c090ea8f69b62d41e",
+      "label": "hsk1-build",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-build.log",
+        "bytes": 7708,
+        "sha256": "94ea9fa85e4e84d9ff8c5866ca625652ae96db353c663e044418ca8af20ee60a"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/course-build.command.json",
+      "bytes": 559,
+      "sha256": "233aaaf2ccbdb14510b188fd78c436c2cc56ad3281210321334ee3380d3b0cd2",
+      "label": "course-build",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/course-build.log",
+        "bytes": 30133,
+        "sha256": "009b0bb1891e28af535622077d3b79c27ca5ac9ccb34dd3f68de8f1c4b02739b"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-asset-bytes.command.json",
+      "bytes": 525,
+      "sha256": "830bd1a2d270c40eba9549217048ae1d4eb7d0937dbb78f6b1379f0bad1f5157",
+      "label": "hsk1-asset-bytes",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-asset-bytes.log",
+        "bytes": 982,
+        "sha256": "3392be739282356aa92191d0d8cc05acbb0e40bf5a3d8ce2c40fc98d5c3fb559"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native.command.json",
+      "bytes": 614,
+      "sha256": "448c89af41b5e9f4a180959a2a5ee3358aada2dad6bb16f392a90169df2ea20f",
+      "label": "hsk1-native",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native.log",
+        "bytes": 605,
+        "sha256": "f4f648c3e50f3bb4d7efe4234182bc1325d4d66bc352337ac3681c50e928e39a"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk23-native.command.json",
+      "bytes": 620,
+      "sha256": "3670abb2d272c62cc18e99c8210071e323b4eb21419c56ac35dc37b91044e287",
+      "label": "hsk23-native",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk23-native.log",
+        "bytes": 1512,
+        "sha256": "7c90cea98f6c53081a5a4cdfa272a0ab7c297979d39c7ae394d0f7efd01b4361"
+      }
+    }
+  ],
+  "buildManifest": {
+    "file": "course-app/.repro-output/b10-adapter-ci/webkit/builds.json",
+    "bytes": 555638,
+    "sha256": "6bf8d5e2d382d83aac258d97ba2676a2b0328230d22553fac7dc8d3a4979acf9"
+  },
+  "registries": [
+    {
+      "file": "course-app/content/official-vi-registry.json",
+      "bytes": 80,
+      "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81",
+      "value": {
+        "schemaVersion": 1,
+        "courses": {
+          "hsk2": null,
+          "hsk3": null
+        }
+      }
+    },
+    {
+      "file": "hsk1-app/content/official-vi-registry.json",
+      "bytes": 43,
+      "sha256": "6f323b55400c596663608b1a25d172f313f6388907d8c7eb889f2954b248c004",
+      "value": {
+        "schemaVersion": 1,
+        "active": null
+      }
+    }
+  ],
+  "publicationApproved": false,
+  "deployed": false
+}

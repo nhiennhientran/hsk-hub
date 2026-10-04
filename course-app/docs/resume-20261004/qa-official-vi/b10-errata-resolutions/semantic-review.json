@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "status": "both root semantic repair wordings independently accepted as bounded erratum proposals; no activation/publication",
+  "createdAtUTC": "2026-10-04T20:53:01.090259+00:00",
+  "rootRecords": [
+    {
+      "file": "course-app/docs/resume-20261004/b10-source-errata/hsk2-l02-bus-station-investigation.json",
+      "sha256": "5ae1f9a5fa6e92f6163b749e3b1213cca961665f98bdf5dde718b7d200b6584d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-source-errata/hsk3-l10-context-investigation.json",
+      "sha256": "4655b2ddc0d402678a26f4f525b5d123b52c02aaa2ff5e8b7bbbb539f6ee7d31"
+    }
+  ],
+  "resolutions": [
+    {
+      "erratumId": "hsk2-vi-20261004:l02:roleplay-bus-station",
+      "semanticDecision": "accepted-root-repaired-wording",
+      "publisherIssuedCorrection": false,
+      "classification": "independent editorial correction of publisher VI translation issue",
+      "proposedFullNewValue": "Hai người một nhóm, một người hỏi đường, một người trả lời. Người hỏi đường hỏi xem gần đây có xe buýt đến rạp chiếu phim Tân Tân không, bến xe buýt có xa không, đi đến rạp chiếu phim mất bao lâu... Cố gắng sử dụng tối đa từ ngữ và điểm ngôn ngữ đã học trong bài.",
+      "guardedTargets": [
+        {
+          "recordId": "544a9b472e19c1add44652c2",
+          "file": "course-app/content/hsk2/lesson-02.json",
+          "field": "/sections/4/blocks/0/vi",
+          "oldValue": "Làm việc theo cặp: một người hỏi đường, một người trả lời. Hỏi gần đây có xe buýt đến rạp Tân Tân không, trạm có xa không, đi đến rạp mất bao lâu… Cố gắng dùng từ mới và ngữ pháp trong bài.",
+          "oldValueRole": "actual baseline string required as guarded replacement precondition",
+          "newValue": "Hai người một nhóm, một người hỏi đường, một người trả lời. Người hỏi đường hỏi xem gần đây có xe buýt đến rạp chiếu phim Tân Tân không, bến xe buýt có xa không, đi đến rạp chiếu phim mất bao lâu... Cố gắng sử dụng tối đa từ ngữ và điểm ngôn ngữ đã học trong bài.",
+          "sourceIDs": [
+            "hsk2-official-vi:l02:p018:roleplay-instruction"
+          ],
+          "sourceLiteralModifiedUnderExplicitErratum": true,
+          "activationApproved": false
+        },
+        {
+          "recordId": "39e820ad97d54f8762dcf4a8",
+          "file": "course-app/content/hsk2/lesson-02.json",
+          "field": "/activities/25/fields/0/prompt/vi",
+          "oldValue": "Làm việc theo cặp: một người hỏi đường, một người trả lời. Hỏi gần đây có xe buýt đến rạp Tân Tân không, trạm có xa không, đi đến rạp mất bao lâu… Cố gắng dùng từ mới và ngữ pháp trong bài.",
+          "oldValueRole": "actual baseline string required as guarded replacement precondition",
+          "newValue": "Hai người một nhóm, một người hỏi đường, một người trả lời. Người hỏi đường hỏi xem gần đây có xe buýt đến rạp chiếu phim Tân Tân không, bến xe buýt có xa không, đi đến rạp chiếu phim mất bao lâu... Cố gắng sử dụng tối đa từ ngữ và điểm ngôn ngữ đã học trong bài.",
+          "sourceIDs": [
+            "hsk2-official-vi:l02:p018:roleplay-instruction"
+          ],
+          "sourceLiteralModifiedUnderExplicitErratum": true,
+          "activationApproved": false
+        }
+      ],
+      "completeActivityNote": {
+        "file": "course-app/content/hsk2/lesson-02.json",
+        "field": "/activities/25/note/vi",
+        "oldValue": "Giữ ví dụ trong sách, viết gợi ý rồi đóng vai; chỉ lưu bản luyện tập, không chấm điểm tự động.",
+        "newValue": "Giữ ví dụ trong sách, viết gợi ý rồi đóng vai; chỉ lưu bản luyện tập, không chấm điểm tự động.",
+        "decision": "retain-all-editorial-note-byte-for-byte",
+        "sourceIDs": [],
+        "rationale": "This is an editor-made open-assessment note. Roleplay book instruction actually belongs in fields/0/prompt/vi. Do not replace the note with the book instruction or attach a false literal publisher source."
+      },
+      "metadataRepairRequired": "Root consumerCoverage says activity note, but actual corresponding printed roleplay instruction consumer is activity fields/0/prompt/vi; complete note is unrelated editorial/open-assessment copy and stays unchanged."
+    },
+    {
+      "erratumId": "hsk3-vi-20261004:l10:text3-context",
+      "semanticDecision": "accepted-root-repaired-wording",
+      "publisherIssuedCorrection": false,
+      "classification": "same-book contextual subject/addressee correction under explicit erratum branch",
+      "proposedFullNewValue": "Lưu Tiểu Tuyết cùng bạn học hỏi bài ở trong phòng làm việc của cô Lý.",
+      "guardedTargets": [
+        {
+          "recordId": "ee4eeda1d3f100b2e82f761a",
+          "file": "course-app/content/hsk3/lesson-10.json",
+          "field": "/texts/2/context/vi",
+          "oldValue": "Trong văn phòng cô Lý, Tiểu Tuyết và bạn hỏi bài.",
+          "oldValueRole": "actual baseline string required as guarded replacement precondition",
+          "newValue": "Lưu Tiểu Tuyết cùng bạn học hỏi bài ở trong phòng làm việc của cô Lý.",
+          "sourceIDs": [
+            "hsk3-official-vi-20261004:l10:pdf102:vn08"
+          ],
+          "sourceLiteralModifiedUnderExplicitErratum": true,
+          "activationApproved": false
+        }
+      ],
+      "ancillaryCompleteActivityNotes": [
+        {
+          "file": "course-app/content/hsk3/lesson-10.json",
+          "field": "/activities/6/note/vi",
+          "oldValue": "Phân vai đọc hội thoại, sau đó trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+          "existingFullSourcePrefixProposal": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+          "unchangedUnderContextErratum": "Phân vai đọc hội thoại, sau đó trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+          "editorialTail": " Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+          "preservedExactTail": true,
+          "sourceIDs": [
+            "hsk3-official-vi-20261004:l10:pdf101:vn12"
+          ],
+          "status": "ancillary full source-prefix proposal tail checked; context erratum itself changes no note; separate full proposal acceptance remains root owned"
+        },
+        {
+          "file": "course-app/content/hsk3/lesson-10.json",
+          "field": "/activities/8/note/vi",
+          "oldValue": "Phân vai đọc hội thoại, sau đó trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+          "existingFullSourcePrefixProposal": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+          "unchangedUnderContextErratum": "Phân vai đọc hội thoại, sau đó trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+          "editorialTail": " Câu tham khảo do biên tập viên bổ sung theo bài khóa hoặc ngữ cảnh bài tập, dùng để tự kiểm tra sau khi nộp; có thể có nhiều đáp án hợp lý, không chấm theo một chuỗi duy nhất.",
+          "preservedExactTail": true,
+          "sourceIDs": [
+            "hsk3-official-vi-20261004:l10:pdf103:vn09"
+          ],
+          "status": "ancillary full source-prefix proposal tail checked; context erratum itself changes no note; separate full proposal acceptance remains root owned"
+        }
+      ],
+      "sourcePhraseStillFrozen": "Lưu Tiểu Tuyết hỏi bài bạn học ở trong phòng làm việc của cô Lý."
+    }
+  ],
+  "sourceProof": {
+    "hsk2Source": {
+      "source104SHA256": "6c911ccfa8bc58ba8e4d16f03f285a9c1c29ec34572450a1fccf70f9ad3c1d8d",
+      "sourceAudit": "previous independent source accepted104 reused; new fresh originalPDF32/printed018 render actually viewed for semantics",
+      "newIndependentOriginalImageSHA256": "410d1848da1eed861ce1493b25c896816e67e73c76022a240a1d50fb49044104",
+      "semanticRead": "Chinese instruction/Chinese A example ask bus availability; next asks stop distance; printed VI first adds stop."
+    },
+    "hsk3Source": {
+      "sourceFreezeSHA256": "50645728c3877979315bc0c50e105c2277e15913aad24a71d6ef602f97587731",
+      "visualReread": [
+        "PDF102/printed090 original independent2x whole",
+        "PDF103/printed091 original independent2x whole",
+        "PDF202/printed190 original independent3x whole"
+      ],
+      "semanticRead": "Preceding text2 ends by going together to ask cô Lý; text3 Chinese and appendix group self-reference chúng em address cô; both students ask teacher, not the classmate as recipient. Proposed cùng bạn học retains official full name/office and fixes coordination."
+    }
+  },
+  "hounianScope": "Previous independent retain-correct-current năm sau nữa resolution remains valid; no new promotion or production change by this review.",
+  "valueConvention": "Independent report oldValue is actual baseline; newValue is full proposed corrected effective value. Root context target.expectedEffectiveValue currently denotes its baseline guard; converter must preserve that exact oldValue precondition, never compare against the printed faulty source.",
+  "boundaries": [
+    "Source transcription freezes and original book print remain unchanged; this is not a publisher-issued errata sheet.",
+    "Only two H2 instruction consumers and one H3 context consumer receive semantic correction proposals.",
+    "H2 entire editorial note and H3 notes/tails stay preserved; no unrelated activity translation/source counterfeits.",
+    "Native browser, Vietnamese speaker identity, final manifest/registry acceptance, deployment and whole-site source comparison not performed or approved."
+  ],
+  "activationApproved": false,
+  "productionChanges": 0,
+  "sourceTranscriptChanges": 0,
+  "deployment": false
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "label": "hsk23-native",
+  "browser": "webkit",
+  "command": [
+    "course-app/node_modules/.bin/playwright",
+    "test",
+    "--config=course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk23.ci.config.ts",
+    "--project=webkit"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:48:14.168Z",
+  "endedAt": "2026-10-04T21:48:20.421Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk23-native.log",
+    "bytes": 1512,
+    "sha256": "7c90cea98f6c53081a5a4cdfa272a0ab7c297979d39c7ae394d0f7efd01b4361"
+  }
+}

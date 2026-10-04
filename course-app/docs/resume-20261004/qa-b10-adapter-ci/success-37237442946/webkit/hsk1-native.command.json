@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "label": "hsk1-native",
+  "browser": "webkit",
+  "command": [
+    "hsk1-app/node_modules/.bin/playwright",
+    "test",
+    "--config=course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk1.ci.config.ts",
+    "--project=webkit"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:48:09.338Z",
+  "endedAt": "2026-10-04T21:48:14.128Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native.log",
+    "bytes": 605,
+    "sha256": "f4f648c3e50f3bb4d7efe4234182bc1325d4d66bc352337ac3681c50e928e39a"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "label": "font-install",
+  "browser": "chromium",
+  "command": [
+    "sudo",
+    "apt-get",
+    "install",
+    "-y",
+    "fonts-noto-cjk"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:47:48.143Z",
+  "endedAt": "2026-10-04T21:47:51.647Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/chromium/font-install.log",
+    "bytes": 1708,
+    "sha256": "a8e1e27a1ece558b7bf6cc97558be0f09c2a128171db96b56f71206850722481"
+  }
+}

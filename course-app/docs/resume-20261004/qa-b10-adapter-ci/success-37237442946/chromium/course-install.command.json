@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "label": "course-install",
+  "browser": "chromium",
+  "command": [
+    "npm",
+    "ci",
+    "--prefix",
+    "course-app"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:47:02.040Z",
+  "endedAt": "2026-10-04T21:47:04.207Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/chromium/course-install.log",
+    "bytes": 140,
+    "sha256": "d9c44fd448224c62568d2746d275055b27b6efe9b101cf1aecc6a859562671f9"
+  }
+}

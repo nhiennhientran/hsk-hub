@@ -1,0 +1,250 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+      "/home/runner/work/hsk-hub/hsk-hub/hsk1-app/node_modules/.bin/playwright",
+      "test",
+      "--config=course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk1.ci.config.ts",
+      "--project=webkit"
+    ],
+    "configFile": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk1.ci.config.ts",
+    "rootDir": "/home/runner/work/hsk-hub/hsk-hub/hsk1-app/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/nhiennhientran/hsk-hub/commit/6eb41feb4d1aa555114440f20d23e3a415cd8ed0",
+        "commitHash": "6eb41feb4d1aa555114440f20d23e3a415cd8ed0",
+        "buildHref": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37237442946"
+      },
+      "gitCommit": {
+        "shortHash": "6eb41fe",
+        "hash": "6eb41feb4d1aa555114440f20d23e3a415cd8ed0",
+        "subject": "Fix private compiled preview IPv4 host and preserve first adapter CI failure evidence",
+        "body": "Fix private compiled preview IPv4 host and preserve first adapter CI failure evidence",
+        "author": {
+          "name": "nhiennhientran",
+          "email": "liangzeheng221@gmail.com",
+          "time": 1791150390000
+        },
+        "committer": {
+          "name": "nhiennhientran",
+          "email": "liangzeheng221@gmail.com",
+          "time": 1791150390000
+        },
+        "branch": "work/hsk-b10-adapter-ci-20261004"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "browserName": "chromium"
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/runner/work/hsk-hub/hsk-hub/hsk1-app/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "official-vi-history.spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "browserName": "webkit"
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/runner/work/hsk-hub/hsk-hub/hsk1-app/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "official-vi-history.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/runner/work/hsk-hub/hsk-hub/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --port 18911 --strictPort",
+      "cwd": "/home/runner/work/hsk-hub/hsk-hub/hsk1-app/",
+      "url": "http://127.0.0.1:18911",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "official-vi-history.spec.ts",
+      "file": "official-vi-history.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "synthetic same-clock receipt survives reload and shows first/latest immutable text with original answer indices",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1553,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T21:48:10.410Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/hsk-hub/hsk-hub/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native-output/official-vi-history-synthe-09bda-ith-original-answer-indices-webkit/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-a8239332d9bf66dc8112",
+          "file": "official-vi-history.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "legacy archive shows each saved display binding and keeps raw task and answer visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1022,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T21:48:12.311Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/hsk-hub/hsk-hub/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native-output/official-vi-history-legacy-19443-raw-task-and-answer-visible-webkit/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-bd6f5effe8726ad8ce71",
+          "file": "official-vi-history.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "listening shuffled labels use original indices and fixed round text after native reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 691,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T21:48:13.341Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/runner/work/hsk-hub/hsk-hub/course-app/.repro-output/b10-adapter-ci/webkit/hsk1-native-output/official-vi-history-listen-6e55f-nd-text-after-native-reload-webkit/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-df72d9ca0f7802ee6f80",
+          "file": "official-vi-history.spec.ts",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T21:48:09.729Z",
+    "duration": 4382.688,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,13 @@
+
+Running 8 tests using 1 worker
+
+  ✓  1 [chromium] › course-app/tests/unified/official-vi-history.spec.ts:25:2 › HSK2 listening saved snapshot keeps saved answers/score and separates current transcript (685ms)
+  ✓  2 [chromium] › course-app/tests/unified/official-vi-history.spec.ts:54:2 › HSK2 homework saved first receipt stays original while latest uses its own saved snapshot (297ms)
+  ✓  3 [chromium] › course-app/tests/unified/official-vi-history.spec.ts:25:2 › HSK2 listening missing snapshot keeps saved answers/score and separates current transcript (522ms)
+  ✓  4 [chromium] › course-app/tests/unified/official-vi-history.spec.ts:54:2 › HSK2 homework missing first receipt stays original while latest uses its own saved snapshot (313ms)
+  ✓  5 [chromium] › course-app/tests/unified/official-vi-history.spec.ts:25:2 › HSK3 listening saved snapshot keeps saved answers/score and separates current transcript (717ms)
+  ✓  6 [chromium] › course-app/tests/unified/official-vi-history.spec.ts:54:2 › HSK3 homework saved first receipt stays original while latest uses its own saved snapshot (314ms)
+  ✓  7 [chromium] › course-app/tests/unified/official-vi-history.spec.ts:25:2 › HSK3 listening missing snapshot keeps saved answers/score and separates current transcript (674ms)
+  ✓  8 [chromium] › course-app/tests/unified/official-vi-history.spec.ts:54:2 › HSK3 homework missing first receipt stays original while latest uses its own saved snapshot (296ms)
+
+  8 passed (4.8s)

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "label": "hsk1-install",
+  "browser": "webkit",
+  "command": [
+    "npm",
+    "ci",
+    "--prefix",
+    "hsk1-app"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:47:03.849Z",
+  "endedAt": "2026-10-04T21:47:04.575Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/webkit/hsk1-install.log",
+    "bytes": 143,
+    "sha256": "29395acc5ccd9bf7d40c509e93b2941ec19cbbf9a9177527d010301ff9f827ab"
+  }
+}

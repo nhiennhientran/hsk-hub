@@ -1,0 +1,251 @@
+{
+  "actualCases": 22,
+  "records": [
+    {
+      "app": "hsk1",
+      "browser": "chromium",
+      "expectedCount": 3,
+      "passed": 3,
+      "skipped": 0,
+      "retries": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "cases": [
+        {
+          "id": "8edc11bd99b40b574bcd-d1ea963bd0a117901d76",
+          "title": "synthetic same-clock receipt survives reload and shows first/latest immutable text with original answer indices",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 1408,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-e7047a9d7e686d9cb1ab",
+          "title": "legacy archive shows each saved display binding and keeps raw task and answer visible",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 1172,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-88b34c36fd812b8214a5",
+          "title": "listening shuffled labels use original indices and fixed round text after native reload",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 1040,
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "app": "hsk23",
+      "browser": "chromium",
+      "expectedCount": 8,
+      "passed": 8,
+      "skipped": 0,
+      "retries": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "cases": [
+        {
+          "id": "8edc11bd99b40b574bcd-3d921b9944d20ae48b34",
+          "title": "HSK2 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 685,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-1b9ac743de7709155bbb",
+          "title": "HSK2 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 297,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-bd2f96936ed700251389",
+          "title": "HSK2 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 522,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-286ab5e95d5286d5d9a7",
+          "title": "HSK2 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 313,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-bd81429c3934654a939f",
+          "title": "HSK3 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 717,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-9aaf246b2040d9324562",
+          "title": "HSK3 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 314,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-bbbdba2ce00d1585dd6d",
+          "title": "HSK3 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 674,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-e1d2d1e495a3bbcbff8f",
+          "title": "HSK3 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 296,
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "app": "hsk1",
+      "browser": "webkit",
+      "expectedCount": 3,
+      "passed": 3,
+      "skipped": 0,
+      "retries": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "cases": [
+        {
+          "id": "8edc11bd99b40b574bcd-a8239332d9bf66dc8112",
+          "title": "synthetic same-clock receipt survives reload and shows first/latest immutable text with original answer indices",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 1553,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-bd6f5effe8726ad8ce71",
+          "title": "legacy archive shows each saved display binding and keeps raw task and answer visible",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 1022,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-df72d9ca0f7802ee6f80",
+          "title": "listening shuffled labels use original indices and fixed round text after native reload",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 691,
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "app": "hsk23",
+      "browser": "webkit",
+      "expectedCount": 8,
+      "passed": 8,
+      "skipped": 0,
+      "retries": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "cases": [
+        {
+          "id": "8edc11bd99b40b574bcd-db6e3f24f1b66290fd0e",
+          "title": "HSK2 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 696,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-5f1111a1482bdef6f0d0",
+          "title": "HSK2 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 518,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-516618216f30a6d28396",
+          "title": "HSK2 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 650,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-e5686408c9aa28ab8a77",
+          "title": "HSK2 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 478,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-6020f5a9ecc14db77c2d",
+          "title": "HSK3 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 722,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-554a0673cd2830ed3435",
+          "title": "HSK3 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 543,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-75cc372ef11016300d8e",
+          "title": "HSK3 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 765,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-87c22a7069bf72037466",
+          "title": "HSK3 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "webkit",
+          "duration": 541,
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    }
+  ]
+}

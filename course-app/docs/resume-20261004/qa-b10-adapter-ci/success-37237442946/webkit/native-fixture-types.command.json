@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "label": "native-fixture-types",
+  "browser": "webkit",
+  "command": [
+    "course-app/node_modules/.bin/tsc",
+    "-p",
+    "course-app/docs/resume-20261004/b10-adapter-ci/tsconfig.json"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:47:26.178Z",
+  "endedAt": "2026-10-04T21:47:26.549Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/webkit/native-fixture-types.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

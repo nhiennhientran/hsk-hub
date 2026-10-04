@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "label": "native-report-guards",
+  "browser": "chromium",
+  "command": [
+    "node",
+    "--test",
+    "course-app/docs/resume-20261004/b10-adapter-ci/verify-native-results.test.mjs"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:47:26.717Z",
+  "endedAt": "2026-10-04T21:47:26.794Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/chromium/native-report-guards.log",
+    "bytes": 733,
+    "sha256": "ecc0bce758bfd5842a961ba68fa2134a38f01a542d02c94ca8dede38ebe3eff0"
+  }
+}

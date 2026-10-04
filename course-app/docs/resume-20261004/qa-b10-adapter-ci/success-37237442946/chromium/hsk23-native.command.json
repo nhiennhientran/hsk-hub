@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "label": "hsk23-native",
+  "browser": "chromium",
+  "command": [
+    "course-app/node_modules/.bin/playwright",
+    "test",
+    "--config=course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk23.ci.config.ts",
+    "--project=chromium"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:48:03.580Z",
+  "endedAt": "2026-10-04T21:48:08.753Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk23-native.log",
+    "bytes": 1528,
+    "sha256": "e2874493a84dce03edb21c99a07d302a33960a955c49b1bc4992f7ea8ca5be06"
+  }
+}

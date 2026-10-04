@@ -1,0 +1,194 @@
+{
+  "status": "three explicit owner/source-span construction opinions accepted; remaining derived-glue and manifest acceptance still separate",
+  "passed": true,
+  "checksCount": 14,
+  "checks": [
+    {
+      "name": "actual adapter registered owner and exact old baseline matched",
+      "passed": true,
+      "field": "/texts/1/lines/6/vi"
+    },
+    {
+      "name": "ellipsis is exact actual owner.zh rather than speaker label",
+      "passed": true,
+      "field": "/texts/1/lines/6/vi"
+    },
+    {
+      "name": "ellipsis exact independently accepted source and no printed Vietnamese speaker",
+      "passed": true,
+      "field": "/texts/1/lines/6/vi"
+    },
+    {
+      "name": "new punctuation consumes complete exact source unit",
+      "passed": true,
+      "field": "/texts/1/lines/6/vi"
+    },
+    {
+      "name": "actual adapter registered owner and exact old baseline matched",
+      "passed": true,
+      "field": "/activities/20/title/vi"
+    },
+    {
+      "name": "official instruction exact known string and final single full stop",
+      "passed": true,
+      "field": "/activities/20/title/vi"
+    },
+    {
+      "name": "reviewed exact contiguous source selection plus unchanged original range constructs full new value",
+      "passed": true,
+      "field": "/activities/20/title/vi"
+    },
+    {
+      "name": "actual owner Chinese range preserved and agrees with original activity navigation group",
+      "passed": true,
+      "field": "/activities/20/title/vi"
+    },
+    {
+      "name": "actual adapter registered owner and exact old baseline matched",
+      "passed": true,
+      "field": "/activities/21/title/vi"
+    },
+    {
+      "name": "official instruction exact known string and final single full stop",
+      "passed": true,
+      "field": "/activities/21/title/vi"
+    },
+    {
+      "name": "reviewed exact contiguous source selection plus unchanged original range constructs full new value",
+      "passed": true,
+      "field": "/activities/21/title/vi"
+    },
+    {
+      "name": "actual owner Chinese range preserved and agrees with original activity navigation group",
+      "passed": true,
+      "field": "/activities/21/title/vi"
+    },
+    {
+      "name": "independent119 source freeze remains exact accepted baseline",
+      "passed": true
+    },
+    {
+      "name": "exact three requested constructions uniquely covered",
+      "passed": true
+    }
+  ],
+  "inputs": [
+    {
+      "file": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l10/body-vietnamese-transcription.json",
+      "sha256": "e5404cc8e0acd70af21997e0599edacab6eb290b22dc55ba91b25ee8d25d1b4e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l10/appendix-lesson10-vietnamese-transcription.json",
+      "sha256": "ff9d2f2ad097c4c46696dcf95f3e55e431c4f050c006ee3ff4073c6d4af00aa8"
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-10.json",
+      "sha256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-comparison/field-comparisons.json",
+      "sha256": "5514cd7e8b393a9e99cec0fb559e27f648cf846195693bf0e26a445deea5550a"
+    },
+    {
+      "file": "course-app/src/official-vi-revisions.ts",
+      "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f"
+    }
+  ],
+  "reviews": [
+    {
+      "recordId": "b6002516de54d7de68b8fbf7",
+      "file": "course-app/content/hsk3/lesson-10.json",
+      "field": "/texts/1/lines/6/vi",
+      "decision": "accepted-explicit-construction-mapping-repair",
+      "ownerId": "hsk3-fltrp-2026:l10:text2:line7",
+      "component": "texts",
+      "lesson": 10,
+      "expectedOldValue": "…",
+      "newValue": "...",
+      "actualChineseGuard": "……",
+      "comparisonContextWas": "旁白",
+      "contextRepairReason": "Inventory nearest Chinese label selected the speaker 旁白, but the field owner has exact zh ……. Source printed-ellipsis shares that same zh; use actual owner.zh for the runtime guard. Do not rewrite sealed speaker metadata.",
+      "sourceID": "hsk3-official-vi-20261004:l10:appendix:text2:line7",
+      "sourceAnchorKind": "directOfficial",
+      "officialViText": "...",
+      "officialZhText": "……",
+      "nonLanguagePunctuation": true,
+      "notSpeechOrTranslatedSentence": true,
+      "scope": "author construction opinion only; source/comparison freeze unmodified; trusted manifest/activation acceptance separate"
+    },
+    {
+      "recordId": "cacb4fd9a29167fb658f6e8b",
+      "file": "course-app/content/hsk3/lesson-10.json",
+      "field": "/activities/20/title/vi",
+      "decision": "accepted-explicit-selected-source-span-composition",
+      "ownerId": "hsk3-fltrp-2026:l10:activity:comprehensive-words1",
+      "component": "activities",
+      "lesson": 10,
+      "expectedOldValue": "Chọn từ điền chỗ trống (1–5)",
+      "newValue": "Chọn từ thích hợp điền vào chỗ trống (1–5)",
+      "actualChineseGuard": "选词填空（1—5）",
+      "sourceID": "hsk3-official-vi-20261004:l10:pdf105:vn05",
+      "sourceAnchorKind": "terminologyDerived",
+      "notVerbatim": true,
+      "officialWholeInstruction": "Chọn từ thích hợp điền vào chỗ trống.",
+      "sourceFragment": {
+        "sourceId": "hsk3-official-vi-20261004:l10:pdf105:vn05",
+        "sourceField": "printedVietnamese",
+        "sourceStartUTF16": 0,
+        "sourceEndUTF16": 36,
+        "targetStartUTF16": 0,
+        "targetEndUTF16": 36,
+        "text": "Chọn từ thích hợp điền vào chỗ trống"
+      },
+      "sourceSelectionReason": "Use all instruction wording before its final literal period in a heading, then append the existing navigation range. The period omission is this explicitly reviewed contiguous span, never a fuzzy translation or unrestricted trim rule.",
+      "uncitedGlue": {
+        "text": " (1–5)",
+        "targetStartUTF16": 36,
+        "targetEndUTF16": 42,
+        "role": "existing editor-provided navigation range, not printed Vietnamese source wording",
+        "preservation": "exact unchanged original suffix"
+      },
+      "scope": "only these2 fields/sourceEnd positions/range values reviewed; not approval of remaining35 derived constructions or whole manifest activation"
+    },
+    {
+      "recordId": "df82297679d32ac65c9db63f",
+      "file": "course-app/content/hsk3/lesson-10.json",
+      "field": "/activities/21/title/vi",
+      "decision": "accepted-explicit-selected-source-span-composition",
+      "ownerId": "hsk3-fltrp-2026:l10:activity:comprehensive-words2",
+      "component": "activities",
+      "lesson": 10,
+      "expectedOldValue": "Chọn từ điền chỗ trống (6–10)",
+      "newValue": "Chọn từ thích hợp điền vào chỗ trống (6–10)",
+      "actualChineseGuard": "选词填空（6—10）",
+      "sourceID": "hsk3-official-vi-20261004:l10:pdf105:vn05",
+      "sourceAnchorKind": "terminologyDerived",
+      "notVerbatim": true,
+      "officialWholeInstruction": "Chọn từ thích hợp điền vào chỗ trống.",
+      "sourceFragment": {
+        "sourceId": "hsk3-official-vi-20261004:l10:pdf105:vn05",
+        "sourceField": "printedVietnamese",
+        "sourceStartUTF16": 0,
+        "sourceEndUTF16": 36,
+        "targetStartUTF16": 0,
+        "targetEndUTF16": 36,
+        "text": "Chọn từ thích hợp điền vào chỗ trống"
+      },
+      "sourceSelectionReason": "Use all instruction wording before its final literal period in a heading, then append the existing navigation range. The period omission is this explicitly reviewed contiguous span, never a fuzzy translation or unrestricted trim rule.",
+      "uncitedGlue": {
+        "text": " (6–10)",
+        "targetStartUTF16": 36,
+        "targetEndUTF16": 43,
+        "role": "existing editor-provided navigation range, not printed Vietnamese source wording",
+        "preservation": "exact unchanged original suffix"
+      },
+      "scope": "only these2 fields/sourceEnd positions/range values reviewed; not approval of remaining35 derived constructions or whole manifest activation"
+    }
+  ],
+  "remaining35TerminologyDerivedGlueAccepted": false,
+  "manifestTrustApproved": false,
+  "sourceFreezeModified": false,
+  "comparisonFreezeModified": false,
+  "productionEdits": 0,
+  "activationApproved": false
+}

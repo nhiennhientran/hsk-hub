@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "label": "hsk1-install",
+  "browser": "chromium",
+  "command": [
+    "npm",
+    "ci",
+    "--prefix",
+    "hsk1-app"
+  ],
+  "cwd": ".",
+  "startedAt": "2026-10-04T21:47:04.233Z",
+  "endedAt": "2026-10-04T21:47:04.931Z",
+  "exitCode": 0,
+  "signal": null,
+  "spawnError": null,
+  "log": {
+    "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-install.log",
+    "bytes": 143,
+    "sha256": "b3ff104088bd153d995017044df3f43ae2acc213cdbde40d70321f72a4696546"
+  }
+}

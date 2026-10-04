@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "checksCount": 18,
+  "checks": [
+    {
+      "check": "both root records explicitly no publisher-issued correction and no active/publish flags",
+      "passed": true
+    },
+    {
+      "check": "root referenced actual original page image hash retained",
+      "passed": true,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l02-independent-comparison/pdf032-original-page-3x.png"
+    },
+    {
+      "check": "root referenced actual original page image hash retained",
+      "passed": true,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p102.png"
+    },
+    {
+      "check": "root referenced actual original page image hash retained",
+      "passed": true,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p103.png"
+    },
+    {
+      "check": "root referenced actual original page image hash retained",
+      "passed": true,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p202.png"
+    },
+    {
+      "check": "H2 actual printed source exactly matches accepted104 roleplay body",
+      "passed": true
+    },
+    {
+      "check": "H3 actual printed source exactly matches independent119 context locus",
+      "passed": true
+    },
+    {
+      "check": "H2 correction exactly first bến deletion only",
+      "passed": true
+    },
+    {
+      "check": "H3 correction exact supported subject-coordination phrase",
+      "passed": true
+    },
+    {
+      "check": "H3 expected actual baseline and stable original consumer identity",
+      "passed": true
+    },
+    {
+      "check": "H3 corroborating same-book printed appendix unit exact",
+      "passed": true,
+      "sourceID": "hsk3-official-vi-20261004:l10:appendix:text3:line1"
+    },
+    {
+      "check": "H3 corroborating same-book printed appendix unit exact",
+      "passed": true,
+      "sourceID": "hsk3-official-vi-20261004:l10:appendix:text2:line8"
+    },
+    {
+      "check": "H2 two real baseline instruction consumers guarded full values",
+      "passed": true,
+      "field": "/sections/4/blocks/0/vi"
+    },
+    {
+      "check": "H2 two real baseline instruction consumers guarded full values",
+      "passed": true,
+      "field": "/activities/25/fields/0/prompt/vi"
+    },
+    {
+      "check": "H2 activity note is editorial instruction and remains full exact unchanged value",
+      "passed": true
+    },
+    {
+      "check": "complete H3 paired reading activity note preserves editorial tail exact bytes",
+      "passed": true,
+      "field": "/activities/6/note/vi"
+    },
+    {
+      "check": "complete H3 paired reading activity note preserves editorial tail exact bytes",
+      "passed": true,
+      "field": "/activities/8/note/vi"
+    },
+    {
+      "check": "H3 context erratum does not manufacture activity context fields",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 1,
+  "phase": "after",
+  "status": "accepted-native-checkpoint-not-release",
+  "recordedAt": "2026-10-04T21:48:10.147Z",
+  "checkoutCommit": "6eb41feb4d1aa555114440f20d23e3a415cd8ed0",
+  "checkoutTree": "540403892a89ed764b735b11859cd372d7e9a479",
+  "githubSHA": "6eb41feb4d1aa555114440f20d23e3a415cd8ed0",
+  "githubRef": "refs/heads/work/hsk-b10-adapter-ci-20261004",
+  "runId": "37237442946",
+  "runAttempt": "1",
+  "browser": "chromium",
+  "node": "v24.19.0",
+  "officialRuntimeSourceSnapshotSHA256": "82538965cfb2602b73ad0997f3fd4fff977e528f6e2d76f5c161efe2ae9ca92b",
+  "extendedBuildAndFixtureSnapshotSHA256": "aa85101548a960696c6c5d53913411f5213f7cd9c42b705848d4ab2ee98ae3d1",
+  "actualNativeCases": 11,
+  "native": [
+    {
+      "app": "hsk1",
+      "report": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-results.json",
+        "bytes": 8395,
+        "sha256": "0e67087594dc6e6aca48c62a22de5eb8ed4e399a6cd68d5b34a79e029c612e8d"
+      },
+      "browser": "chromium",
+      "expectedCount": 3,
+      "passed": 3,
+      "skipped": 0,
+      "retries": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "cases": [
+        {
+          "id": "8edc11bd99b40b574bcd-d1ea963bd0a117901d76",
+          "title": "synthetic same-clock receipt survives reload and shows first/latest immutable text with original answer indices",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 1408,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-e7047a9d7e686d9cb1ab",
+          "title": "legacy archive shows each saved display binding and keeps raw task and answer visible",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 1172,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-88b34c36fd812b8214a5",
+          "title": "listening shuffled labels use original indices and fixed round text after native reload",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 1040,
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "app": "hsk23",
+      "report": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk23-results.json",
+        "bytes": 15863,
+        "sha256": "ba5af3010ab9c4c8888d95518aea00183de311529babbd5ae39a933b1036a27f"
+      },
+      "browser": "chromium",
+      "expectedCount": 8,
+      "passed": 8,
+      "skipped": 0,
+      "retries": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "cases": [
+        {
+          "id": "8edc11bd99b40b574bcd-3d921b9944d20ae48b34",
+          "title": "HSK2 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 685,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-1b9ac743de7709155bbb",
+          "title": "HSK2 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 297,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-bd2f96936ed700251389",
+          "title": "HSK2 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 522,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-286ab5e95d5286d5d9a7",
+          "title": "HSK2 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 313,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-bd81429c3934654a939f",
+          "title": "HSK3 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 717,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-9aaf246b2040d9324562",
+          "title": "HSK3 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 314,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-bbbdba2ce00d1585dd6d",
+          "title": "HSK3 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 674,
+          "status": "passed",
+          "retry": 0
+        },
+        {
+          "id": "8edc11bd99b40b574bcd-e1d2d1e495a3bbcbff8f",
+          "title": "HSK3 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "file": "official-vi-history.spec.ts",
+          "projectName": "chromium",
+          "duration": 296,
+          "status": "passed",
+          "retry": 0
+        }
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/course-install.command.json",
+      "bytes": 506,
+      "sha256": "e031f4df044666f5d67744c5793427c13e5c35f899d33672936662af96618f51",
+      "label": "course-install",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/course-install.log",
+        "bytes": 140,
+        "sha256": "d9c44fd448224c62568d2746d275055b27b6efe9b101cf1aecc6a859562671f9"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-install.command.json",
+      "bytes": 500,
+      "sha256": "da112dfa7c92cc21d0e3a11376bafd92159692a673fbf293a2188777393f2889",
+      "label": "hsk1-install",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-install.log",
+        "bytes": 143,
+        "sha256": "b3ff104088bd153d995017044df3f43ae2acc213cdbde40d70321f72a4696546"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/course-units.command.json",
+      "bytes": 506,
+      "sha256": "b25cc26c4954fa04429f54742c9ee72a3544807bfde0dbbcda929f3798d636f4",
+      "label": "course-units",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/course-units.log",
+        "bytes": 20801,
+        "sha256": "104e6e901358071df32bc41db167d587212bada611c23ff865ae58093c89565b"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-units.command.json",
+      "bytes": 500,
+      "sha256": "dbde5b65cb221c93b10ff6fea0ccaa498e19eb90691b0779840614c4448db915",
+      "label": "hsk1-units",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-units.log",
+        "bytes": 65232,
+        "sha256": "a7075970e678034dba39f23f62f81873640dc8e0881d6036155275639cc47acb"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/course-source.command.json",
+      "bytes": 528,
+      "sha256": "7d5c3fe24eb79c83b89f5d8ac6e89f45c957c5da0269f858ba66fc0dc2ea0394",
+      "label": "course-source",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/course-source.log",
+        "bytes": 15110,
+        "sha256": "9da8b3df3f9f7602a3520da7dccd69b53a49b3d00905840ab4acdf36e42cc448"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-source.command.json",
+      "bytes": 520,
+      "sha256": "38ecac26afdaabe180832607846c4213007df66bb97e56280b64ad5699f144f9",
+      "label": "hsk1-source",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-source.log",
+        "bytes": 368,
+        "sha256": "12cdfbb521f4b7a1181b034b3754cef01befd041b4d00fe92647185553dbdd7a"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-migration-fixtures.command.json",
+      "bytes": 545,
+      "sha256": "46434fbf69fc050043439201c53cd856d49d7b70532194d6d24dcc0f629e61b2",
+      "label": "hsk1-migration-fixtures",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-migration-fixtures.log",
+        "bytes": 141,
+        "sha256": "73a3bea4deb6a38755e1fcf7fcfd71af59888931e2deefb1c4eab8308a731ced"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/course-types.command.json",
+      "bytes": 515,
+      "sha256": "cb1eb848fdbe25c7f2e28d9040900a9b3977c8ebea302778f069e2d58902ae54",
+      "label": "course-types",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/course-types.log",
+        "bytes": 53,
+        "sha256": "64d825528568a8393b59068b40528264729a6b0bd8961668faeda9bfbf2473b2"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-types.command.json",
+      "bytes": 509,
+      "sha256": "7f106c7725e86f39d594050c1f9ef74a4ec49207adec6972e0193a0f0f633ee8",
+      "label": "hsk1-types",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-types.log",
+        "bytes": 48,
+        "sha256": "dd593a3d070185fc89d5664ff75908752e3173ad6cc5296c1e26dbff07d187d6"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/native-fixture-types.command.json",
+      "bytes": 579,
+      "sha256": "649d3aa5b043eb64562e6bb86244945562f2eb656e43923736c15c35eae46e34",
+      "label": "native-fixture-types",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/native-fixture-types.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/native-report-guards.command.json",
+      "bytes": 574,
+      "sha256": "3d022df68edc770de1c5d453c9569d59083c2a8b4880444920f3ff7583125fd3",
+      "label": "native-report-guards",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/native-report-guards.log",
+        "bytes": 733,
+        "sha256": "ecc0bce758bfd5842a961ba68fa2134a38f01a542d02c94ca8dede38ebe3eff0"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/browser-install.command.json",
+      "bytes": 543,
+      "sha256": "1a713c51c7a09c18083b41f46dd8ace4beef4340cfae5bfb79fed576261a64e8",
+      "label": "browser-install",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/browser-install.log",
+        "bytes": 18488,
+        "sha256": "b881b28f10520b25726851fdceed38077e25850723dcd41cf06c3efc0bd4d8aa"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/font-install.command.json",
+      "bytes": 522,
+      "sha256": "40f16d7b346e5cbc7a1530f631080d63ca71ac49ba3e1bb31783c72c7ee2615c",
+      "label": "font-install",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/font-install.log",
+        "bytes": 1708,
+        "sha256": "a8e1e27a1ece558b7bf6cc97558be0f09c2a128171db96b56f71206850722481"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-build.command.json",
+      "bytes": 511,
+      "sha256": "489d6754ee9d7f8c1be472a775946de317d8ca2a4adc9a7ddb3295e7b669d7ca",
+      "label": "hsk1-build",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-build.log",
+        "bytes": 7708,
+        "sha256": "24e1cabf616b52cb9976e8c971d7b53f21c29241ed397536c959ed844a95c67d"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/course-build.command.json",
+      "bytes": 563,
+      "sha256": "bb84fb1ccdab7ec15b2adc546f5fc91a679250857ef85a1e95ee3fb122b3c8ed",
+      "label": "course-build",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/course-build.log",
+        "bytes": 30133,
+        "sha256": "56ad005900298326fe2b2f2c13dc1fc0fa07b125610ddc9a83ea6cd741fbfeea"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-asset-bytes.command.json",
+      "bytes": 529,
+      "sha256": "64c06a8ff22bb915a3297f5240f9e7e13bdb6a52a0cc3c908fbd7982cf5ea0b0",
+      "label": "hsk1-asset-bytes",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-asset-bytes.log",
+        "bytes": 982,
+        "sha256": "3392be739282356aa92191d0d8cc05acbb0e40bf5a3d8ce2c40fc98d5c3fb559"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-native.command.json",
+      "bytes": 620,
+      "sha256": "12eeaf361924e14ba597bc4004aefec45ab9baac136257795f332dccf950d12a",
+      "label": "hsk1-native",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk1-native.log",
+        "bytes": 610,
+        "sha256": "fe43fa1b0bff6f14b1ae88a62fc6b27faf263f50497be814223fc1c4dbac593a"
+      }
+    },
+    {
+      "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk23-native.command.json",
+      "bytes": 626,
+      "sha256": "2dd866479c101c38d6942e0c7c0d8c5c45187a11bc37bf2e8826813f73fb28e2",
+      "label": "hsk23-native",
+      "exitCode": 0,
+      "log": {
+        "file": "course-app/.repro-output/b10-adapter-ci/chromium/hsk23-native.log",
+        "bytes": 1528,
+        "sha256": "e2874493a84dce03edb21c99a07d302a33960a955c49b1bc4992f7ea8ca5be06"
+      }
+    }
+  ],
+  "buildManifest": {
+    "file": "course-app/.repro-output/b10-adapter-ci/chromium/builds.json",
+    "bytes": 555678,
+    "sha256": "0488d9817e4edbe42b19976e0c36f3cf093e3918a3fec21911109dad14b86d95"
+  },
+  "registries": [
+    {
+      "file": "course-app/content/official-vi-registry.json",
+      "bytes": 80,
+      "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81",
+      "value": {
+        "schemaVersion": 1,
+        "courses": {
+          "hsk2": null,
+          "hsk3": null
+        }
+      }
+    },
+    {
+      "file": "hsk1-app/content/official-vi-registry.json",
+      "bytes": 43,
+      "sha256": "6f323b55400c596663608b1a25d172f313f6388907d8c7eb889f2954b248c004",
+      "value": {
+        "schemaVersion": 1,
+        "active": null
+      }
+    }
+  ],
+  "publicationApproved": false,
+  "deployed": false
+}
