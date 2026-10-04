@@ -292,6 +292,22 @@ export function createAudioService(options: {
     };
     const confirmPlaying = () => {
       if (!nativePlaying || !positioned || audio.seeking || !current(request) || request.paused || state.status === 'error') return;
+      // A bounded recording cannot be certified before its range is known.
+      // Metadata may become temporarily unusable again while a seek settles.
+      if (bounded && !request.trackStarted && (!Number.isFinite(audio.duration) || audio.duration <= 0)) {
+        audio.muted = true;
+        return;
+      }
+      // A decoder can refine its duration without a metadata event while the
+      // initial seek is pending. Revalidate the current range before unmuting.
+      if (bounded && !request.trackStarted && startTime >= audio.duration) {
+        fail(request, 'Đoạn âm thanh nằm ngoài bản ghi.');
+        return;
+      }
+      if (bounded && !request.trackStarted && track.end !== undefined && track.end > audio.duration + 0.05) {
+        fail(request, 'Bản ghi ngắn hơn đoạn âm thanh đã chọn. Hãy thử lại.');
+        return;
+      }
       if (bounded && !request.trackStarted && !actualInitialPosition()) {
         audio.muted = true;
         recheckInitialPosition();
@@ -312,8 +328,8 @@ export function createAudioService(options: {
         // WebKit MP3 metadata can transiently report zero before the positive
         // decoded duration arrives. Zero is not yet a usable range boundary.
         // Later metadata events or timeupdate validate requested segments in full.
-        if (audio.duration === 0) return;
         const durationKnown = Number.isFinite(audio.duration) && audio.duration > 0;
+        if (audio.duration === 0 || (bounded && !durationKnown)) return;
         if (durationKnown && startTime >= audio.duration) {
           fail(request, 'Đoạn âm thanh nằm ngoài bản ghi.');
           return;
@@ -325,7 +341,7 @@ export function createAudioService(options: {
           return;
         }
         if(durationKnown)publish({duration:audio.duration});
-        if (positioned) return;
+        if (positioned) { confirmPlaying(); return; }
         // An unbounded original may already be playing when WebKit supplies
         // its first usable duration. Preserve that real clock, without replaying
         // its opening. Segments still require their explicit start position.

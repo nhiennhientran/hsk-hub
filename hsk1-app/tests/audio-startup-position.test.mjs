@@ -14,6 +14,25 @@ class Audio extends EventTarget {
 function timers(){let now=0,id=0;const entries=new Map();return {entries,setTimer(fn,ms){const key=++id;entries.set(key,{fn,at:now+ms});return key},clearTimer(key){entries.delete(key)},advance(ms){const until=now+ms;let count=0;while(true){const next=[...entries].filter(([,x])=>x.at<=until).sort((a,b)=>a[1].at-b[1].at)[0];if(!next)break;if(++count>100)throw Error('Timer spin');now=next[1].at;entries.delete(next[0]);next[1].fn()}now=until}}}
 const request={url:'original-3-7.mp3',label:'Source sentence1',start:.718,end:9.825,sourceKind:'segment'};
 function setup(){const audio=new Audio(),clock=timers(),service=createAudioService({audio,setTimer:clock.setTimer,clearTimer:clock.clearTimer});return{audio,clock,service}}
+test('bounded audio waits for usable duration and then validates the complete requested range',async()=>{
+ for(const duration of [NaN,Infinity,-1]){
+  const{audio,service}=setup();const pending=service.play(request);let settled=false;pending.then(()=>settled=true);
+  audio.duration=duration;audio.readyState=2;audio.emit('loadedmetadata');audio.emit('playing');audio.seeking=false;audio.mediaTime=request.start;audio.emit('seeked');audio.emit('timeupdate');await Promise.resolve();
+  assert.equal(audio.muted,true);assert.equal(service.snapshot().status,'loading');assert.equal(settled,false);
+  audio.duration=16.296;audio.emit('durationchange');audio.mediaTime=request.start;audio.seeking=false;audio.emit('seeked');assert.equal((await pending).ok,true);assert.equal(audio.muted,false);service.dispose();
+ }
+ const{audio,service}=setup();const pending=service.play(request);audio.duration=Infinity;audio.readyState=2;audio.emit('playing');audio.duration=5;audio.emit('durationchange');assert.equal((await pending).ok,false);assert.equal(audio.muted,true);assert.equal(service.snapshot().status,'error');service.dispose();
+});
+test('bounded startup cannot unmute when usable duration disappears during its initial seek',async()=>{
+ const{audio,service}=setup();const pending=service.play(request);audio.duration=16.296;audio.readyState=2;audio.emit('loadedmetadata');audio.emit('playing');audio.duration=NaN;audio.mediaTime=request.start;audio.seeking=false;audio.emit('seeked');
+ assert.equal(audio.muted,true);assert.equal(service.snapshot().status,'loading');audio.duration=16.296;audio.emit('durationchange');assert.equal((await pending).ok,true);assert.equal(audio.muted,false);service.dispose();
+});
+test('initial unmute revalidates a silently refined duration at the settled seek',async()=>{
+ for(const duration of [.5,5,9.8]){
+  const{audio,service}=setup();const pending=service.play(request);audio.duration=16.296;audio.readyState=2;audio.emit('loadedmetadata');audio.emit('playing');audio.duration=duration;audio.mediaTime=request.start;audio.seeking=false;audio.emit('seeked');
+  const result=await pending;assert.equal(result.ok,duration===9.8);assert.equal(audio.muted,duration!==9.8);assert.equal(service.snapshot().status,duration===9.8?'playing':'error');service.dispose();
+ }
+});
 function realTracePrefix(a){
  // Replay native state observations 0..10 from WebKit CI 37196725810.
  a.readyState=4;a.duration=16.296;a.emit('durationchange');a.emit('loadedmetadata');a.emit('loadeddata');a.emit('canplay');a.emit('playing');a.pending.splice(0).forEach(resolve=>resolve());
