@@ -1,3 +1,4 @@
+import {archivedActivities,archivedActivityContext} from './activity-history.ts';
 import {fieldSourcesNeedNotes,sharedRowSource} from './activity-provenance.ts';
 import {originalSegment,sentenceSegments,isSingleSentence} from "./segment-resolver.ts";
 import { el, button, link, copy, sourceNote } from "./dom.ts";
@@ -750,6 +751,21 @@ export function mountLesson(
         !chosen.some((s) => mapped(s.id).includes(a))
       )
         body.append(activity(a));
+  }
+  if(section==='overview'){
+    const history=archivedActivities(l,c.state().activities);
+    if(history.length){
+      const details=el('details',undefined,'previous-activity-records');
+      details.append(el('summary',copy(`此前练习记录（${history.length}）`,`Bản ghi bài tập trước đây (${history.length})`)),el('p',copy('这里保留旧版输入和当时的提交状态，供你查阅。当前练习请重新作答；这些历史记录不参与当前评分。栏目和页码仅帮助定位，旧记录没有保存原题快照。','Nơi đây giữ nguyên nội dung đã nhập và trạng thái nộp trước đây để bạn tra cứu. Hãy làm lại các bài tập hiện tại; các bản ghi cũ không tham gia chấm điểm hiện tại. Tên mục và số trang chỉ giúp định vị; bản ghi cũ không lưu ảnh chụp nội dung câu hỏi.')));
+      for(const entry of history){
+        const record=el('section',undefined,'previous-activity-record'),context=archivedActivityContext(l,entry.id);record.dataset.previousActivityId=entry.id;
+        record.append(el('h3',context.title),el('p',entry.record.checkedAt?copy('当时已提交','Đã nộp trước đây'):copy('当时未提交','Chưa nộp trước đây')));
+        if(context.page!==undefined)record.append(sourceNote(context.page));
+        for(const [index,value]of Object.values(entry.record.values).entries()){const row=el('div',undefined,'previous-activity-value');row.append(el('strong',copy(`原输入${index+1}`,`Nội dung cũ ${index+1}`)),el('p',typeof value==='boolean'?(value?copy('已勾选','Đã đánh dấu'):copy('未勾选','Chưa đánh dấu')):value));record.append(row)}
+        details.append(record);
+      }
+      body.append(details);
+    }
   }
   const next = sections[sections.findIndex(([id]) => id === section) + 1],
     foot = el("nav", undefined, "lesson-bottom");

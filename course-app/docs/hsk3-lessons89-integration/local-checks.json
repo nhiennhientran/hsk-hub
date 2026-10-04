@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-04",
+  "baselineCommit": "9b7c76702e9724b4c647750138d800605254a116",
+  "status": "local candidate checks and independent source review passed; exact-commit native CI pending",
+  "candidateSourceHashes": "candidate-source-hashes.json",
+  "checkedCodeSha256": {
+    "course-app/src/activity-history.ts": "7edeeacf227f030bcf5377f7f9b364c80c844e37dcc2843e37aa2197d7e1bc46",
+    "course-app/src/lesson-view.ts": "3442858ee7a2ad96ed7b61d7ea934a65cc4e0e765685412f174d29ce99eae02c",
+    "course-app/src/style.css": "bc23bda17bf7d1c12eb8d9fa26a52d0751348a6be2ddf75d95f39f0f6f3e14f6",
+    "course-app/tests/activity-history.test.mjs": "7f0d0aea85230f16cca8cf77579834929d1bdd4a74837bafd04c7817cbdaef2d",
+    "course-app/tests/hsk3-lessons89.test.mjs": "5db0fa2309f2b506036808f27e20d536de5a14b1dbc78c3c7ccfc8dfa4dca013",
+    "course-app/tests/unified/hsk3-lessons89.spec.ts": "237e85a640d8727455cb80df09dbad185acfd27c8dd7ddecb78a5af7620858c7"
+  },
+  "courseUnit": {
+    "passed": 82,
+    "failed": 0
+  },
+  "hsk1RecoveredBaselineUnit": {
+    "passed": 335,
+    "failed": 0,
+    "scope": "HSK1 sources unchanged"
+  },
+  "courseBuild": "passed",
+  "strictBrowserFixtureTypecheck": "passed",
+  "sourceValidation": "passed structural and existing content sentinels; not independent source acceptance",
+  "browserCollection": {
+    "chromium": 179,
+    "webkit": 179,
+    "shardsPerEngine": [
+      131,
+      48
+    ],
+    "all320HistoricalIdentitiesPreserved": true,
+    "exactDisjointUnion": true,
+    "execution": "not run locally: native launch prevented by process socket restrictions"
+  },
+  "supplementalDomCheck": {
+    "engine": "JSDOM, not native browser",
+    "sourceActivities": 58,
+    "independentFields": 162,
+    "assertions": 778,
+    "result": "passed; plus populated legacy archive inert-text/new-controls separation check passed"
+  },
+  "privacy": "new/changed text files scanned; no private coordination or private-note markers; figures are original SVGs and original-asset contact sheets, no full source PDF/image uploads",
+  "publication": "blocked",
+  "independentSourceReview": "../content-audit/hsk3-lessons08-09-independent/review.md"
+}

@@ -77,7 +77,7 @@
     "hsk1_unit": "335 passed after audio integration; unchangedHSK1 sources",
     "course_build": "passed with integrated L12–13",
     "nonempty_storage": "passed in successful checkpoint for cross-level drafts, legacy HSK3 preservation and scoped backup restore",
-    "browsers": "196/196 passed at21da869,run37113836125;220case L12–13 expansion collected with allhistorical196identities retained, pendingrealexecution",
+    "browsers": "Historical320/320 passed at9b7c767 run37128404425; changed candidate needs a new exact-commit run",
     "physical_devices": "not run",
     "human_listening": "not run"
   },
@@ -99,8 +99,8 @@
     "scope": "HSK2L1–7integratedcontent and priorpilot HSK3L1, originalreviewed clipranges, records andfoundation routes;not all48lessonfinalacceptance"
   },
   "currentCI": {
-    "lastPassedRun": 37107556124,
-    "lastPassedBrowserCases": 154,
+    "lastPassedRun": 37128404425,
+    "lastPassedBrowserCases": 320,
     "audioIntegrationRun": 37106355777,
     "audioIntegrationStatus": "original37106355777failed130passed4failed;repaired37107556124passed154",
     "audioCases": 134,
@@ -109,7 +109,8 @@
     "lessons67Run": 37107213747,
     "lessons67Status": "previous37107213747failed144passed10failed;repaired37107556124passed154",
     "nextFix": "Anchor accessiblehiddenlabels in local table scrollcontainingblock; preserve full154case suite plus mobilepreflight",
-    "extraPreflightCases": 6
+    "extraPreflightCases": 6,
+    "newCandidateStatus": "Not yet submitted; new L8–9 tests are collection-only pending content and review"
   },
   "contentPilot": {
     "levels": [
@@ -188,10 +189,10 @@
     "independentChecks": 1758,
     "browser": "passed174/174 aggregate browser cases and8/8mobilepreflight, run37109960704, remotee8b7aef"
   },
-  "updatedAt": "2026-10-03T10:08:00Z",
-  "remoteDevelopmentCommit": "21da86991b8114dba00703a5f5f9a519cf9656da",
+  "updatedAt": "2026-10-04T01:46:00Z",
+  "remoteDevelopmentCommit": "9b7c76702e9724b4c647750138d800605254a116",
   "localDevelopmentCommit": "7e2b2fb4e6a87f836cd2b5a57915daffda35a22e",
-  "exactSharedTree": "84f43ab2cc37080627e050e6913606d98f53be06",
+  "exactSharedTree": "87364d37a2cd26ff54540c1b39b92f9439abd4b0",
   "ciHistoryActual": [
     {
       "run": 37105595387,
@@ -335,6 +336,18 @@
       "webkit": 146,
       "preflightPassed": 30,
       "actualLogsRead": true
+    },
+    {
+      "run": 37128404425,
+      "commit": "9b7c76702e9724b4c647750138d800605254a116",
+      "status": "success",
+      "passed": 320,
+      "failed": 0,
+      "chromium": 160,
+      "webkit": 160,
+      "preflightPerEngine": 19,
+      "statusReverifiedAt": "2026-10-04T01:46:00Z",
+      "actualLogsRead": "previous independent parent review; this recovery checked status and exact SHA"
     }
   ],
   "audioBatch23": {
@@ -459,7 +472,7 @@
     "raceChecks": 24,
     "sourcePagesInspected": 32,
     "unitTests": 73,
-    "browser": "320cases collected and strictly typechecked; not yet run",
+    "browser": "Passed 320/320 historical pinned Chromium/WebKit cases (160 each), plus 19 preflight each, at 9b7c767 run37128404425; run status reverified2026-10-04. Not evidence for later edits.",
     "pairedCorrection": "L7G2practice1 deleteextra更/firsthơn only after independently checkingPDF73P61",
     "remaining": "HSK3L8–18,HSK1whole-original-source review,audio/handwriting and allfinal gates"
   },
@@ -470,5 +483,43 @@
     "hsk1PagesAdded": 157,
     "hsk1OriginalBodyAudit": "pending",
     "hsk1OriginalAudio": "93encodedstreams identical; decodedPCM identical after529sample/channel startoffset; fullfilediff due cover/tag/remux. Human/clipalignment pending"
+  },
+  "cloudRecovery": {
+    "recoveredCommit": "9b7c76702e9724b4c647750138d800605254a116",
+    "recoveredTree": "87364d37a2cd26ff54540c1b39b92f9439abd4b0",
+    "scope": "Dot cloud workspace; no desktop dependency",
+    "baselineChecks": {
+      "courseUnit": {
+        "passed": 73,
+        "failed": 0
+      },
+      "hsk1Unit": {
+        "passed": 335,
+        "failed": 0
+      },
+      "courseBuild": "passed",
+      "browserFixtureTypes": "passed",
+      "localNativeBrowser": "blocked before launch: runtime denies process socket creation; no app result",
+      "pinnedBrowserDownload": "invalid/truncated ZIP; not installed"
+    },
+    "draftRecovery": "Lost local-only L8–9 and HSK2 L4–5 audio drafts not recovered; do not infer presence from historical hash",
+    "newCandidateStatus": "L8–9 independent source/content/figure review passed; local82unit/build/types passed; exact-commit358case browser run pending"
+  },
+  "contentHSK3Batch89": {
+    "status": "independent source/content/figure review passed; native browser run pending",
+    "activities": 58,
+    "fields": 162,
+    "officialFields": 48,
+    "referenceFields": 65,
+    "openFields": 49,
+    "illustrations": 25,
+    "sourceGrammarExplanations": 7,
+    "readingReferences": 24,
+    "unitTests": 82,
+    "browserCollected": 358,
+    "browserExecution": "pending on exact new commit",
+    "historyProtection": "Read-only collapsed prior-activity panel; original values and submitted state preserved; no answer migration or rescoring; save/reload/export/restore unit checks passed",
+    "remaining": "HSK3L10–18, HSK1whole-original-source review, remaining audio/handwriting and overall final gates",
+    "independentReview": "course-app/docs/content-audit/hsk3-lessons08-09-independent/review.md"
   }
 }
