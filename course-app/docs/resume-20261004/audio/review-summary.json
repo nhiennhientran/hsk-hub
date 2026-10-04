@@ -1,0 +1,50 @@
+{
+  "createdAt": "2026-10-04T13:49:14.310404+00:00",
+  "baseCommit": "0ad47321543b9acc9e2cb206584229e6b3a069d6",
+  "reviewedFiles": [
+    {
+      "path": "hsk1-app/src/services/audio/index.ts",
+      "sha256": "2e8674730405a59bc82556923f588013378495e238f097e75356083dcf2ec4d0"
+    },
+    {
+      "path": "hsk1-app/tests/audio-startup-position.test.mjs",
+      "sha256": "e2adadce53b10a51d050622e79209e313b12d5c4b510484b365967606a1ee3f6"
+    },
+    {
+      "path": "course-app/content/audio-segment-authority.json",
+      "sha256": "4c28025a19057f63887c405b102dc6ece6bbad5509e14e288deda38b3f90504f"
+    },
+    {
+      "path": "course-app/content/audio-segments-pilot.json",
+      "sha256": "6989e0f2a7f9824bdde9e9003099c1ca98a4c212764e8c364149c81ee6882cda"
+    },
+    {
+      "path": "course-app/content/audio-segments-hsk2-lessons02-03.json",
+      "sha256": "9bd2278cf872cf1d9bdccfbb3a8ff54ed96477833d73e258c724671746da91ef"
+    }
+  ],
+  "gate": "PASS scoped audio metadata and asset integrity; native/human/device gates remain unclaimed",
+  "tests": {
+    "focusedAudioAndSegmentContract": 60,
+    "hsk1AudioSourceMapping": 14,
+    "wholeOriginalPreservationProbes": 8,
+    "allTrackHashesAndSizes": 357,
+    "authorityTrackDecodes": 32
+  },
+  "findings": [
+    {
+      "id": "AUDIO-RESUME-01",
+      "description": "Bounded initial playback accepted non-finite metadata duration",
+      "status": "reproduced on0ad4732; repaired by root; independently passed candidate2"
+    },
+    {
+      "id": "AUDIO-RESUME-02",
+      "description": "Late silent duration refinement could bypass start/end range validation at seek completion",
+      "status": "reproduced oncandidate1; repaired by root; independently passed candidate2"
+    }
+  ],
+  "limitations": [
+    "Native Chromium/WebKit integration was not run by this lane.",
+    "No human listening, native pronunciation/tone certification, physical-device test, full original-upload comparison or release approval performed."
+  ]
+}

@@ -1,0 +1,22 @@
+✔ the frozen corpus is reproducible, has all required counts and no copied audio payload (25.040193ms)
+✔ media references reject missing originals, orphan clips and unsupported invented word audio (13.169498ms)
+✔ all 344 declared senses resolve exact catalog audio and provenance without merging 342 rows (6.827936ms)
+✔ 14 unsupported lesson 4 words stay unavailable with accurate original-audio explanation (7.516932ms)
+✔ all 45 whole scenes and every line use frozen original tracks and unmodified segment ranges (1.631059ms)
+✔ all lesson vocabulary playlists preserve three whole tracks and only lessons 1–3 have tongue tracks (0.655617ms)
+✔ invalid boundaries, source paths, swapped scenes and undeclared foreign audio fail instead of clamping (53.550485ms)
+✔ all 330 audio requests resolve exact same-lesson original word ranges with no answer-bearing label or synthetic clip (89.012094ms)
+✔ all 14 no-audio records remain explicit null, correspond to the L4 numeric table, and never borrow another lesson clip (77.000485ms)
+✔ missing, duplicated, orphan or substituted audio metadata is rejected before any resolver is returned (218.041448ms)
+✔ no-audio declarations cannot disappear, duplicate, point at a different sense, or acquire a fabricated clip (151.118602ms)
+✔ range validation rejects negative, zero, nonfinite, beyond-track and same-lesson non-vocabulary clips (75.403482ms)
+✔ actual SHA256 verification rejects valid-shaped editorial, clip and original-track metadata drift (343.347988ms)
+✔ current textbook examples preserve exact Chinese, pinyin, Vietnamese and lesson sources without copying audio (91.384146ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1198.355193

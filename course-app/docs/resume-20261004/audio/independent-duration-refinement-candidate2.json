@@ -1,0 +1,57 @@
+{
+  "test": "duration refinement during pending initial seek without durationchange",
+  "results": [
+    {
+      "lateDuration": "NaN",
+      "status": "loading",
+      "muted": true,
+      "time": 0.718,
+      "result": {
+        "ok": false,
+        "code": "cancelled"
+      }
+    },
+    {
+      "lateDuration": "Infinity",
+      "status": "loading",
+      "muted": true,
+      "time": 0.718,
+      "result": {
+        "ok": false,
+        "code": "cancelled"
+      }
+    },
+    {
+      "lateDuration": "5",
+      "status": "error",
+      "muted": true,
+      "time": 0.718,
+      "result": {
+        "ok": false,
+        "code": "error",
+        "issue": "Bản ghi ngắn hơn đoạn âm thanh đã chọn. Hãy thử lại."
+      }
+    },
+    {
+      "lateDuration": "0.5",
+      "status": "error",
+      "muted": true,
+      "time": 0.718,
+      "result": {
+        "ok": false,
+        "code": "error",
+        "issue": "Đoạn âm thanh nằm ngoài bản ghi."
+      }
+    },
+    {
+      "lateDuration": "16.296",
+      "status": "playing",
+      "muted": false,
+      "time": 0.718,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    }
+  ]
+}

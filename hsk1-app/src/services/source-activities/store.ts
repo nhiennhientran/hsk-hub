@@ -1,6 +1,6 @@
 import { createStore, type StoragePort } from '../storage/index.ts';
 import { blankSourceData, validateSourceData, editSourceDraft } from './state.ts';
-import type { SourceActivity } from './content.ts';
+import {incompleteSourceFields,type SourceActivity} from './content.ts';
 export const SOURCE_STORAGE_KEY='ran_hsk1_textbook_source_v1';
 export const SOURCE_WRITE_LOCK='ran-hsk1-textbook-source-write';
 export const SOURCE_APP_ID='hsk1-textbook-source';
@@ -26,8 +26,9 @@ export function createSourceSession(store:SourceStore,now:()=>number=Date.now){
     isComposing:()=>composing.size>0,
     edit(activity:SourceActivity,values:Record<string,string>,composing=false){submissions.get(activity.id)?.abort();store.edit(data=>editSourceDraft(data,activity,values,now()));if(timer)clearTimeout(timer);timer=undefined;if(!composing)timer=setTimeout(()=>{timer=undefined;void store.save();},350);},
     async submit(activity:SourceActivity,values:Record<string,string>,signal?:AbortSignal){
+      if(!activity.fields.length)return {ok:false,code:'readonly',submissionId:null};
       if(composing.has(activity.id))return {ok:false,code:'composing',submissionId:null};
-      if(activity.fields.some(f=>!values[f.id]?.trim()))return {ok:false,code:'incomplete',submissionId:null};
+      if(incompleteSourceFields(activity,values))return {ok:false,code:'incomplete',submissionId:null};
       if(timer)clearTimeout(timer);timer=undefined;
       const at=now(),previous=store.snapshot().data.records[activity.id+'@'+activity.version],id=`submission-${at}-${(previous?.history.length??0)+1}`;
       store.edit(data=>editSourceDraft(data,activity,values,at));

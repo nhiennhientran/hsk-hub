@@ -1,0 +1,4140 @@
+{
+  "schema": 1,
+  "edition": "hsk1-print-2026-01",
+  "lesson": 12,
+  "version": "source-v1",
+  "scope": "lesson-12-source-candidate",
+  "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+  "answerBookSHA256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+  "editorialStatus": "candidate-awaiting-independent-review",
+  "activities": [
+    {
+      "id": "hsk1-original-2026-l12-p086-objectives-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "read-only",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 86,
+        "pdfPage": 101,
+        "section": "objectives",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "目标",
+        "vi": "Mục tiêu"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "能听懂并描述天气情况。\n能听懂并简单描述病情。\n掌握语气助词“了（1）”的用法。\n掌握“太……了”格式的用法。\n了解生病时中国人建议“喝些热水”的好处。",
+        "vi": "Có thể nghe hiểu và miêu tả thời tiết.\nCó thể nghe hiểu và miêu tả ngắn tình trạng bệnh.\nNắm cách dùng trợ từ ngữ khí “了” (1).\nNắm cách dùng mẫu “太……了”.\nTìm hiểu lợi ích của việc “uống chút nước ấm” mà người Trung Quốc thường khuyên khi bị ốm."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l12-p086-warmup-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 86,
+        "pdfPage": 101,
+        "section": "warmup",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "按原书顺序填写六幅图。",
+        "vi": "Điền theo thứ tự sáu hình trong sách."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "图片1",
+            "vi": "Hình 1"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "下雨",
+              "py": "xià yǔ",
+              "vi": "trời mưa"
+            },
+            {
+              "id": "B",
+              "zh": "冷",
+              "py": "lěng",
+              "vi": "lạnh"
+            },
+            {
+              "id": "C",
+              "zh": "生病",
+              "py": "shēngbìng",
+              "vi": "bị ốm"
+            },
+            {
+              "id": "D",
+              "zh": "看病",
+              "py": "kànbìng",
+              "vi": "khám bệnh"
+            },
+            {
+              "id": "E",
+              "zh": "雪",
+              "py": "xuě",
+              "vi": "tuyết"
+            },
+            {
+              "id": "F",
+              "zh": "水",
+              "py": "shuǐ",
+              "vi": "nước"
+            }
+          ],
+          "answer": "F",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "图片2",
+            "vi": "Hình 2"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "下雨",
+              "py": "xià yǔ",
+              "vi": "trời mưa"
+            },
+            {
+              "id": "B",
+              "zh": "冷",
+              "py": "lěng",
+              "vi": "lạnh"
+            },
+            {
+              "id": "C",
+              "zh": "生病",
+              "py": "shēngbìng",
+              "vi": "bị ốm"
+            },
+            {
+              "id": "D",
+              "zh": "看病",
+              "py": "kànbìng",
+              "vi": "khám bệnh"
+            },
+            {
+              "id": "E",
+              "zh": "雪",
+              "py": "xuě",
+              "vi": "tuyết"
+            },
+            {
+              "id": "F",
+              "zh": "水",
+              "py": "shuǐ",
+              "vi": "nước"
+            }
+          ],
+          "answer": "D",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "blank-3",
+          "label": {
+            "zh": "图片3",
+            "vi": "Hình 3"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "下雨",
+              "py": "xià yǔ",
+              "vi": "trời mưa"
+            },
+            {
+              "id": "B",
+              "zh": "冷",
+              "py": "lěng",
+              "vi": "lạnh"
+            },
+            {
+              "id": "C",
+              "zh": "生病",
+              "py": "shēngbìng",
+              "vi": "bị ốm"
+            },
+            {
+              "id": "D",
+              "zh": "看病",
+              "py": "kànbìng",
+              "vi": "khám bệnh"
+            },
+            {
+              "id": "E",
+              "zh": "雪",
+              "py": "xuě",
+              "vi": "tuyết"
+            },
+            {
+              "id": "F",
+              "zh": "水",
+              "py": "shuǐ",
+              "vi": "nước"
+            }
+          ],
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "blank-4",
+          "label": {
+            "zh": "图片4",
+            "vi": "Hình 4"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "下雨",
+              "py": "xià yǔ",
+              "vi": "trời mưa"
+            },
+            {
+              "id": "B",
+              "zh": "冷",
+              "py": "lěng",
+              "vi": "lạnh"
+            },
+            {
+              "id": "C",
+              "zh": "生病",
+              "py": "shēngbìng",
+              "vi": "bị ốm"
+            },
+            {
+              "id": "D",
+              "zh": "看病",
+              "py": "kànbìng",
+              "vi": "khám bệnh"
+            },
+            {
+              "id": "E",
+              "zh": "雪",
+              "py": "xuě",
+              "vi": "tuyết"
+            },
+            {
+              "id": "F",
+              "zh": "水",
+              "py": "shuǐ",
+              "vi": "nước"
+            }
+          ],
+          "answer": "E",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "blank-5",
+          "label": {
+            "zh": "图片5",
+            "vi": "Hình 5"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "下雨",
+              "py": "xià yǔ",
+              "vi": "trời mưa"
+            },
+            {
+              "id": "B",
+              "zh": "冷",
+              "py": "lěng",
+              "vi": "lạnh"
+            },
+            {
+              "id": "C",
+              "zh": "生病",
+              "py": "shēngbìng",
+              "vi": "bị ốm"
+            },
+            {
+              "id": "D",
+              "zh": "看病",
+              "py": "kànbìng",
+              "vi": "khám bệnh"
+            },
+            {
+              "id": "E",
+              "zh": "雪",
+              "py": "xuě",
+              "vi": "tuyết"
+            },
+            {
+              "id": "F",
+              "zh": "水",
+              "py": "shuǐ",
+              "vi": "nước"
+            }
+          ],
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "blank-6",
+          "label": {
+            "zh": "图片6",
+            "vi": "Hình 6"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "下雨",
+              "py": "xià yǔ",
+              "vi": "trời mưa"
+            },
+            {
+              "id": "B",
+              "zh": "冷",
+              "py": "lěng",
+              "vi": "lạnh"
+            },
+            {
+              "id": "C",
+              "zh": "生病",
+              "py": "shēngbìng",
+              "vi": "bị ốm"
+            },
+            {
+              "id": "D",
+              "zh": "看病",
+              "py": "kànbìng",
+              "vi": "khám bệnh"
+            },
+            {
+              "id": "E",
+              "zh": "雪",
+              "py": "xuě",
+              "vi": "tuyết"
+            },
+            {
+              "id": "F",
+              "zh": "水",
+              "py": "shuǐ",
+              "vi": "nước"
+            }
+          ],
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          }
+        }
+      ],
+      "figure": "l12-warmup-six-panels",
+      "figureSHA256": "1fcb1aa8afd9d86e6900eb04c695e3a1c02f7b93a3fa7f93659497b62b10fb2b"
+    },
+    {
+      "id": "hsk1-original-2026-l12-p087-text-1-listening-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 87,
+        "pdfPage": 102,
+        "section": "text-1-listening",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文1 · 听力选择",
+        "vi": "Bài đọc 1 · Nghe và chọn"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "王一雪给王一飞打电话，询问王一飞那边的情况。",
+        "vi": "Vương Nhất Tuyết gọi cho Vương Nhất Phi, hỏi tình hình ở chỗ cô ấy."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "（1）王一飞那儿的天气（　）。",
+            "vi": "(1) Thời tiết ở chỗ Vương Nhất Phi (　)."
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "很好",
+              "py": "hěn hǎo",
+              "vi": "rất đẹp"
+            },
+            {
+              "id": "B",
+              "zh": "很不好",
+              "py": "hěn bù hǎo",
+              "vi": "rất xấu"
+            },
+            {
+              "id": "C",
+              "zh": "不太好",
+              "py": "bú tài hǎo",
+              "vi": "không tốt lắm"
+            }
+          ],
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 87,
+            "pdfPage": 102,
+            "section": "text-1-listening",
+            "ordinal": 1
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "（2）王一飞觉得（　）。",
+            "vi": "(2) Vương Nhất Phi cảm thấy (　)."
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "不冷",
+              "py": "bù lěng",
+              "vi": "không lạnh"
+            },
+            {
+              "id": "B",
+              "zh": "很冷",
+              "py": "hěn lěng",
+              "vi": "rất lạnh"
+            },
+            {
+              "id": "C",
+              "zh": "有点儿冷",
+              "py": "yǒudiǎnr lěng",
+              "vi": "hơi lạnh"
+            }
+          ],
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 87,
+            "pdfPage": 102,
+            "section": "text-1-listening",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l12-text-1",
+        "track": "12-1",
+        "plays": 2,
+        "verifiedByListening": false
+      },
+      "contextSource": {
+        "printedPage": 87,
+        "pdfPage": 102
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p087-text-1-role-reading-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 87,
+        "pdfPage": 102,
+        "section": "text-1-role-reading",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文1 · 分角色朗读",
+        "vi": "Bài đọc 1 · Đọc phân vai"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Đọc hội thoại theo vai."
+      },
+      "prompt": {
+        "zh": "王一雪：今天天气怎么样？\n王一飞：这里的天不太好，下雨了。\n王一雪：雨大吗？\n王一飞：有点儿大，我觉得很冷。",
+        "vi": "王一雪：Thời tiết hôm nay thế nào?\n王一飞：Thời tiết ở đây không tốt lắm, trời mưa rồi.\n王一雪：Mưa có to không?\n王一飞：Hơi to, em cảm thấy rất lạnh."
+      },
+      "fields": [],
+      "existingSceneId": "textbook-l12-text-1",
+      "dialoguePrintedPages": [
+        87
+      ],
+      "figure": "l12-text-1-photo",
+      "figureSHA256": "550d00fa521a47d9edeea38c1c6ca8850e588e64b593dd1ba868e1d6469e5e08",
+      "pinyin": "王一雪：Jīntiān tiānqì zěnmeyàng?\n王一飞：Zhèlǐ de tiān bú tài hǎo, xià yǔ le.\n王一雪：Yǔ dà ma?\n王一飞：Yǒudiǎnr dà, wǒ juéde hěn lěng.",
+      "pinyinProvenance": {
+        "basis": "manually-transcribed-from-source-page",
+        "printedPages": [
+          87
+        ],
+        "style": "source-word-grouping; punctuation normalized",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p087-text-1-pair-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "open-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 87,
+        "pdfPage": 102,
+        "section": "text-1-pair",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "根据实际情况对话",
+        "vi": "Hội thoại theo thực tế"
+      },
+      "instruction": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Làm việc theo cặp, hội thoại theo tình hình thực tế."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của hai bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Ghi chép hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l12-p088-vocabulary-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 88,
+        "pdfPage": 103,
+        "section": "vocabulary",
+        "ordinal": 1,
+        "endOrdinal": 9
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序阅读生词。",
+        "vi": "Đọc từ mới theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "Số"
+          },
+          {
+            "zh": "生词与释义",
+            "vi": "Từ và nghĩa"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性",
+            "vi": "Từ loại"
+          }
+        ],
+        "rows": [
+          {
+            "id": "vocab-01",
+            "cells": [
+              {
+                "text": {
+                  "zh": "1",
+                  "vi": "1"
+                }
+              },
+              {
+                "text": {
+                  "zh": "天气",
+                  "vi": "thời tiết"
+                }
+              },
+              {
+                "text": {
+                  "zh": "tiānqì",
+                  "vi": "tiānqì"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-02",
+            "cells": [
+              {
+                "text": {
+                  "zh": "2",
+                  "vi": "2"
+                }
+              },
+              {
+                "text": {
+                  "zh": "这里",
+                  "vi": "ở đây; chỗ này"
+                }
+              },
+              {
+                "text": {
+                  "zh": "zhèlǐ",
+                  "vi": "zhèlǐ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "pron.",
+                  "vi": "đại từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-03",
+            "cells": [
+              {
+                "text": {
+                  "zh": "3",
+                  "vi": "3"
+                }
+              },
+              {
+                "text": {
+                  "zh": "天",
+                  "vi": "trời; thời tiết"
+                }
+              },
+              {
+                "text": {
+                  "zh": "tiān",
+                  "vi": "tiān"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-04",
+            "cells": [
+              {
+                "text": {
+                  "zh": "4",
+                  "vi": "4"
+                }
+              },
+              {
+                "text": {
+                  "zh": "下雨",
+                  "vi": "trời mưa"
+                }
+              },
+              {
+                "text": {
+                  "zh": "xià yǔ",
+                  "vi": "xià yǔ"
+                }
+              },
+              {}
+            ]
+          },
+          {
+            "id": "vocab-05",
+            "cells": [
+              {
+                "text": {
+                  "zh": "5",
+                  "vi": "5"
+                }
+              },
+              {
+                "text": {
+                  "zh": "了",
+                  "vi": "trợ từ cuối câu, báo tình huống mới hoặc sự thay đổi"
+                }
+              },
+              {
+                "text": {
+                  "zh": "le",
+                  "vi": "le"
+                }
+              },
+              {
+                "text": {
+                  "zh": "part.",
+                  "vi": "trợ từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-06",
+            "cells": [
+              {
+                "text": {
+                  "zh": "6",
+                  "vi": "6"
+                }
+              },
+              {
+                "text": {
+                  "zh": "雨",
+                  "vi": "mưa"
+                }
+              },
+              {
+                "text": {
+                  "zh": "yǔ",
+                  "vi": "yǔ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-07",
+            "cells": [
+              {
+                "text": {
+                  "zh": "7",
+                  "vi": "7"
+                }
+              },
+              {
+                "text": {
+                  "zh": "有点儿",
+                  "vi": "hơi; có phần (mức độ)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "yǒudiǎnr",
+                  "vi": "yǒudiǎnr"
+                }
+              },
+              {
+                "text": {
+                  "zh": "adv.",
+                  "vi": "phó từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-08",
+            "cells": [
+              {
+                "text": {
+                  "zh": "8",
+                  "vi": "8"
+                }
+              },
+              {
+                "text": {
+                  "zh": "觉得",
+                  "vi": "cảm thấy"
+                }
+              },
+              {
+                "text": {
+                  "zh": "juéde",
+                  "vi": "juéde"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-09",
+            "cells": [
+              {
+                "text": {
+                  "zh": "9",
+                  "vi": "9"
+                }
+              },
+              {
+                "text": {
+                  "zh": "冷",
+                  "vi": "lạnh"
+                }
+              },
+              {
+                "text": {
+                  "zh": "lěng",
+                  "vi": "lěng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "adj.",
+                  "vi": "tính từ"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p088-grammar-reading-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 88,
+        "pdfPage": 103,
+        "section": "grammar-reading",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "非主谓句",
+        "vi": "Câu phi chủ-vị"
+      },
+      "instruction": {
+        "zh": "大声朗读。",
+        "vi": "Đọc to."
+      },
+      "prompt": {
+        "zh": "非主谓句是由词或短语构成、不分主语和谓语的句子，口语中常用。\n\n（1）下雨了。\n（2）下雪了。\n（3）上课了。\n（4）真漂亮！\n（5）对不起！\n（6）没关系！",
+        "vi": "Câu phi chủ-vị được tạo bởi từ hoặc cụm từ, không phân chia thành chủ ngữ và vị ngữ; thường dùng trong khẩu ngữ.\n\n(1) Trời mưa rồi.\n(2) Tuyết rơi rồi.\n(3) Vào học rồi.\n(4) Đẹp thật!\n(5) Xin lỗi!\n(6) Không sao!"
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l12-p088-grammar-reading-02",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 88,
+        "pdfPage": 103,
+        "section": "grammar-reading",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "语气助词“了（1）”",
+        "vi": "Trợ từ ngữ khí “了” (1)"
+      },
+      "instruction": {
+        "zh": "大声朗读。",
+        "vi": "Đọc to."
+      },
+      "prompt": {
+        "zh": "语气助词“了（1）”位于句子末尾或句中停顿的地方，表示有变化或出现新情况。否定回答时，用副词“没”，句子末尾不用“了”。\n\n（1）下雨了。\n（2）十二点了，吃午饭吧。\n（3）A：弟弟起床了吗？\nB：没起床呢。",
+        "vi": "Trợ từ ngữ khí “了” (1) đứng cuối câu hoặc tại chỗ ngắt trong câu, biểu thị sự thay đổi hoặc tình huống mới xuất hiện. Khi trả lời phủ định, dùng phó từ “没” và không dùng “了” ở cuối câu.\n\n(1) Trời mưa rồi.\n(2) Mười hai giờ rồi, ăn trưa nhé.\n(3) A: Em trai đã dậy chưa?\nB: Vẫn chưa dậy."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l12-p089-vocabulary-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 89,
+        "pdfPage": 104,
+        "section": "vocabulary",
+        "ordinal": 10,
+        "endOrdinal": 15
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序阅读生词。",
+        "vi": "Đọc từ mới theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "Số"
+          },
+          {
+            "zh": "生词与释义",
+            "vi": "Từ và nghĩa"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性",
+            "vi": "Từ loại"
+          }
+        ],
+        "rows": [
+          {
+            "id": "vocab-10",
+            "cells": [
+              {
+                "text": {
+                  "zh": "10",
+                  "vi": "10"
+                }
+              },
+              {
+                "text": {
+                  "zh": "下",
+                  "vi": "rơi; có (mưa hoặc tuyết)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "xià",
+                  "vi": "xià"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-11",
+            "cells": [
+              {
+                "text": {
+                  "zh": "11",
+                  "vi": "11"
+                }
+              },
+              {
+                "text": {
+                  "zh": "雪",
+                  "vi": "tuyết"
+                }
+              },
+              {
+                "text": {
+                  "zh": "xuě",
+                  "vi": "xuě"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-12",
+            "cells": [
+              {
+                "text": {
+                  "zh": "12",
+                  "vi": "12"
+                }
+              },
+              {
+                "text": {
+                  "zh": "来",
+                  "vi": "đến (về phía người nói hoặc địa điểm làm mốc)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "lái",
+                  "vi": "lái"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-13",
+            "cells": [
+              {
+                "text": {
+                  "zh": "13",
+                  "vi": "13"
+                }
+              },
+              {
+                "text": {
+                  "zh": "公司",
+                  "vi": "công ty"
+                }
+              },
+              {
+                "text": {
+                  "zh": "gōngsī",
+                  "vi": "gōngsī"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-14",
+            "cells": [
+              {
+                "text": {
+                  "zh": "14",
+                  "vi": "14"
+                }
+              },
+              {
+                "text": {
+                  "zh": "生病",
+                  "vi": "bị ốm; mắc bệnh"
+                }
+              },
+              {
+                "text": {
+                  "zh": "shēngbìng",
+                  "vi": "shēngbìng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-15",
+            "cells": [
+              {
+                "text": {
+                  "zh": "15",
+                  "vi": "15"
+                }
+              },
+              {
+                "text": {
+                  "zh": "看病",
+                  "vi": "đi khám bệnh"
+                }
+              },
+              {
+                "text": {
+                  "zh": "kànbìng",
+                  "vi": "kànbìng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p089-text-2-listening-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 89,
+        "pdfPage": 104,
+        "section": "text-2-listening",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文2 · 听力选择",
+        "vi": "Bài đọc 2 · Nghe và chọn"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "在公司电梯里，王一雪和杨同乐在聊天儿。",
+        "vi": "Trong thang máy công ty, Vương Nhất Tuyết và Dương Đồng Lạc trò chuyện."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "（1）杨同乐昨天（　）了。",
+            "vi": "(1) Hôm qua Dương Đồng Lạc đã (　)."
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "生病",
+              "py": "shēngbìng",
+              "vi": "bị ốm"
+            },
+            {
+              "id": "B",
+              "zh": "上班",
+              "py": "shàngbān",
+              "vi": "đi làm"
+            },
+            {
+              "id": "C",
+              "zh": "去公司",
+              "py": "qù gōngsī",
+              "vi": "đến công ty"
+            }
+          ],
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 89,
+            "pdfPage": 104,
+            "section": "text-2-listening",
+            "ordinal": 1
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "（2）杨同乐今天（　）了。",
+            "vi": "(2) Hôm nay Dương Đồng Lạc đã (　)."
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "在家里",
+              "py": "zài jiā lǐ",
+              "vi": "ở nhà"
+            },
+            {
+              "id": "B",
+              "zh": "去医院",
+              "py": "qù yīyuàn",
+              "vi": "đến bệnh viện"
+            },
+            {
+              "id": "C",
+              "zh": "来公司",
+              "py": "lái gōngsī",
+              "vi": "đến công ty"
+            }
+          ],
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 89,
+            "pdfPage": 104,
+            "section": "text-2-listening",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l12-text-2",
+        "track": "12-3",
+        "plays": 2,
+        "verifiedByListening": false
+      },
+      "contextSource": {
+        "printedPage": 89,
+        "pdfPage": 104
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p090-grammar-reading-03",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 90,
+        "pdfPage": 105,
+        "section": "grammar-reading",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "“太……了”格式",
+        "vi": "Mẫu “太……了”"
+      },
+      "instruction": {
+        "zh": "大声朗读。",
+        "vi": "Đọc to."
+      },
+      "prompt": {
+        "zh": "“太……了”用于感叹程度很高或很深。\n\n（1）太冷了！\n（2）这个杯子太小了。\n（3）我们今天太高兴了！",
+        "vi": "“太……了” dùng để cảm thán về mức độ rất cao hoặc rất sâu.\n\n(1) Lạnh quá!\n(2) Chiếc cốc này nhỏ quá.\n(3) Hôm nay chúng tôi vui quá!"
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l12-p090-text-2-role-reading-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 90,
+        "pdfPage": 105,
+        "section": "text-2-role-reading",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文2 · 分角色朗读",
+        "vi": "Bài đọc 2 · Đọc phân vai"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Đọc hội thoại theo vai."
+      },
+      "prompt": {
+        "zh": "王一雪：昨天下雪了。\n杨同乐：是的，太冷了。\n王一雪：你昨天没来公司，生病了？\n杨同乐：对，我昨天去医院看病了。",
+        "vi": "王一雪：Hôm qua tuyết rơi rồi.\n杨同乐：Đúng vậy, lạnh quá!\n王一雪：Hôm qua bạn không đến công ty, bị ốm à?\n杨同乐：Đúng, hôm qua tôi đã đến bệnh viện khám bệnh."
+      },
+      "fields": [],
+      "existingSceneId": "textbook-l12-text-2",
+      "dialoguePrintedPages": [
+        89
+      ],
+      "figure": "l12-text-2-photo",
+      "figureSHA256": "a8cba159d546a6a84eb9b53c15fc0b9c82a5a13f3763cc75d219b2e7cad3dd9b",
+      "pinyin": "王一雪：Zuótiān xià xuě le.\n杨同乐：Shì de, tài lěng le.\n王一雪：Nǐ zuótiān méi lái gōngsī, shēngbìng le?\n杨同乐：Duì, wǒ zuótiān qù yīyuàn kànbìng le.",
+      "pinyinProvenance": {
+        "basis": "manually-transcribed-from-source-page",
+        "printedPages": [
+          89
+        ],
+        "style": "source-word-grouping; punctuation normalized",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p090-text-2-questions-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "open-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 90,
+        "pdfPage": 105,
+        "section": "text-2-questions",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文2 · 回答问题",
+        "vi": "Bài đọc 2 · Trả lời câu hỏi"
+      },
+      "instruction": {
+        "zh": "根据课文内容回答问题。",
+        "vi": "Trả lời câu hỏi theo nội dung bài đọc."
+      },
+      "prompt": {
+        "zh": "请用自己的话回答。",
+        "vi": "Hãy trả lời bằng lời của bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "昨天天气怎么样？",
+            "vi": "Thời tiết hôm qua thế nào?"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "杨同乐昨天做什么了？",
+            "vi": "Hôm qua Dương Đồng Lạc đã làm gì?"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l12-p090-text-3-listening-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 90,
+        "pdfPage": 105,
+        "section": "text-3-listening",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文3 · 听力选择",
+        "vi": "Bài đọc 3 · Nghe và chọn"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "昨天在医院，医生给杨同乐看病。",
+        "vi": "Hôm qua ở bệnh viện, bác sĩ khám cho Dương Đồng Lạc."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "（1）杨同乐觉得（　）。",
+            "vi": "(1) Dương Đồng Lạc cảm thấy (　)."
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "很热",
+              "py": "hěn rè",
+              "vi": "rất nóng"
+            },
+            {
+              "id": "B",
+              "zh": "很冷",
+              "py": "hěn lěng",
+              "vi": "rất lạnh"
+            },
+            {
+              "id": "C",
+              "zh": "有点儿冷",
+              "py": "yǒudiǎnr lěng",
+              "vi": "hơi lạnh"
+            }
+          ],
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 90,
+            "pdfPage": 105,
+            "section": "text-3-listening",
+            "ordinal": 1
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "（2）医生对杨同乐说：“今天（　）吧。”",
+            "vi": "(2) Bác sĩ nói với Dương Đồng Lạc: “Hôm nay hãy (　).”"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "上班",
+              "py": "shàngbān",
+              "vi": "đi làm"
+            },
+            {
+              "id": "B",
+              "zh": "下班",
+              "py": "xiàbān",
+              "vi": "tan làm"
+            },
+            {
+              "id": "C",
+              "zh": "休息半天",
+              "py": "xiūxi bàn tiān",
+              "vi": "nghỉ nửa ngày"
+            }
+          ],
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 9
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 90,
+            "pdfPage": 105,
+            "section": "text-3-listening",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l12-text-3",
+        "track": "12-5",
+        "plays": 2,
+        "verifiedByListening": false
+      },
+      "contextSource": {
+        "printedPage": 90,
+        "pdfPage": 105
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p091-vocabulary-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 91,
+        "pdfPage": 106,
+        "section": "vocabulary",
+        "ordinal": 16,
+        "endOrdinal": 24
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序阅读生词。",
+        "vi": "Đọc từ mới theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "Số"
+          },
+          {
+            "zh": "生词与释义",
+            "vi": "Từ và nghĩa"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性",
+            "vi": "Từ loại"
+          }
+        ],
+        "rows": [
+          {
+            "id": "vocab-16",
+            "cells": [
+              {
+                "text": {
+                  "zh": "16",
+                  "vi": "16"
+                }
+              },
+              {
+                "text": {
+                  "zh": "病",
+                  "vi": "bị ốm; mắc bệnh"
+                }
+              },
+              {
+                "text": {
+                  "zh": "bìng",
+                  "vi": "bìng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-17",
+            "cells": [
+              {
+                "text": {
+                  "zh": "17",
+                  "vi": "17"
+                }
+              },
+              {
+                "text": {
+                  "zh": "一点儿",
+                  "vi": "một chút; một ít (lượng nhỏ)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "yìdiǎnr",
+                  "vi": "yìdiǎnr"
+                }
+              },
+              {
+                "text": {
+                  "zh": "num.-m.",
+                  "vi": "số từ–lượng từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-18",
+            "cells": [
+              {
+                "text": {
+                  "zh": "18",
+                  "vi": "18"
+                }
+              },
+              {
+                "text": {
+                  "zh": "药",
+                  "vi": "thuốc"
+                }
+              },
+              {
+                "text": {
+                  "zh": "yào",
+                  "vi": "yào"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-19",
+            "cells": [
+              {
+                "text": {
+                  "zh": "19",
+                  "vi": "19"
+                }
+              },
+              {
+                "text": {
+                  "zh": "天",
+                  "vi": "ngày (đơn vị thời gian)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "tiān",
+                  "vi": "tiān"
+                }
+              },
+              {
+                "text": {
+                  "zh": "m.",
+                  "vi": "lượng từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-20",
+            "cells": [
+              {
+                "text": {
+                  "zh": "20",
+                  "vi": "20"
+                }
+              },
+              {
+                "text": {
+                  "zh": "回",
+                  "vi": "về; trở về"
+                }
+              },
+              {
+                "text": {
+                  "zh": "huí",
+                  "vi": "huí"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-21",
+            "cells": [
+              {
+                "text": {
+                  "zh": "21",
+                  "vi": "21"
+                }
+              },
+              {
+                "text": {
+                  "zh": "再",
+                  "vi": "rồi; sau đó mới (làm việc tiếp theo)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "zài",
+                  "vi": "zài"
+                }
+              },
+              {
+                "text": {
+                  "zh": "adv.",
+                  "vi": "phó từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-22",
+            "cells": [
+              {
+                "text": {
+                  "zh": "22",
+                  "vi": "22"
+                }
+              },
+              {
+                "text": {
+                  "zh": "喝",
+                  "vi": "uống"
+                }
+              },
+              {
+                "text": {
+                  "zh": "hē",
+                  "vi": "hē"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-23",
+            "cells": [
+              {
+                "text": {
+                  "zh": "23",
+                  "vi": "23"
+                }
+              },
+              {
+                "text": {
+                  "zh": "热",
+                  "vi": "nóng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "rè",
+                  "vi": "rè"
+                }
+              },
+              {
+                "text": {
+                  "zh": "adj.",
+                  "vi": "tính từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-24",
+            "cells": [
+              {
+                "text": {
+                  "zh": "24",
+                  "vi": "24"
+                }
+              },
+              {
+                "text": {
+                  "zh": "水",
+                  "vi": "nước"
+                }
+              },
+              {
+                "text": {
+                  "zh": "shuǐ",
+                  "vi": "shuǐ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p091-text-3-role-reading-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 91,
+        "pdfPage": 106,
+        "section": "text-3-role-reading",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文3 · 分角色朗读",
+        "vi": "Bài đọc 3 · Đọc phân vai"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Đọc hội thoại theo vai."
+      },
+      "prompt": {
+        "zh": "杨同乐：医生，我病了。\n胡医生：我看看。你觉得怎么样？\n杨同乐：我很冷。\n胡医生：好的，吃一点儿药，今天休息半天吧。\n杨同乐：好的。\n胡医生：回家后再喝些热水。",
+        "vi": "杨同乐：Bác sĩ, tôi bị ốm.\n胡医生：Để tôi xem. Anh cảm thấy thế nào?\n杨同乐：Tôi rất lạnh.\n胡医生：Được, uống một ít thuốc và hôm nay nghỉ nửa ngày nhé.\n杨同乐：Được.\n胡医生：Sau khi về nhà hãy uống thêm chút nước ấm."
+      },
+      "fields": [],
+      "existingSceneId": "textbook-l12-text-3",
+      "dialoguePrintedPages": [
+        91
+      ],
+      "figure": "l12-text-3-photo",
+      "figureSHA256": "38a036c9d37a060f47cc0d47b898a126280a8d46d89e81a2174059604b1e4fda",
+      "pinyin": "杨同乐：Yīshēng, wǒ bìng le.\n胡医生：Wǒ kànkan. Nǐ juéde zěnmeyàng?\n杨同乐：Wǒ hěn lěng.\n胡医生：Hǎo de, chī yìdiǎnr yào, jīntiān xiūxi bàn tiān ba.\n杨同乐：Hǎo de.\n胡医生：Huí jiā hòu zài hē xiē rè shuǐ.",
+      "pinyinProvenance": {
+        "basis": "manually-transcribed-from-source-page",
+        "printedPages": [
+          91
+        ],
+        "style": "source-word-grouping; punctuation normalized",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p091-text-3-questions-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "open-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 91,
+        "pdfPage": 106,
+        "section": "text-3-questions",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文3 · 回答问题",
+        "vi": "Bài đọc 3 · Trả lời câu hỏi"
+      },
+      "instruction": {
+        "zh": "根据课文内容回答问题。",
+        "vi": "Trả lời câu hỏi theo nội dung bài đọc."
+      },
+      "prompt": {
+        "zh": "请用自己的话回答。",
+        "vi": "Hãy trả lời bằng lời của bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "杨同乐生病了吗？",
+            "vi": "Dương Đồng Lạc bị ốm phải không?"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "看病后，杨同乐回家要做什么？",
+            "vi": "Sau khi khám bệnh, Dương Đồng Lạc cần làm gì khi về nhà?"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l12-p091-xiaoyu-tip-1-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "read-only",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 91,
+        "pdfPage": 106,
+        "section": "xiaoyu-tip-1",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "小语助力",
+        "vi": "Mẹo của Tiểu Ngữ"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "“看看”是“看”的重叠式，表示动作时间短。",
+        "vi": "“看看” là dạng lặp của “看”, chỉ hành động diễn ra trong thời gian ngắn."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l12-p091-xiaoyu-tip-2-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "read-only",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 91,
+        "pdfPage": 106,
+        "section": "xiaoyu-tip-2",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "小语助力",
+        "vi": "Mẹo của Tiểu Ngữ"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "中国人喜欢喝热水，认为喝热水更健康。",
+        "vi": "Người Trung Quốc thích uống nước ấm, cho rằng uống nước ấm có lợi hơn cho sức khỏe."
+      },
+      "fields": [],
+      "editorialNote": {
+        "zh": "此处忠实呈现教材中的文化描述。",
+        "vi": "Đây là mô tả văn hóa được giữ theo nội dung sách."
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p092-comprehensive-cloze-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "word-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "section": "comprehensive-cloze",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "选词填空（1）",
+        "vi": "Chọn từ điền vào chỗ trống (1)"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "外边正在下______，______冷了！",
+        "vi": "Bên ngoài đang có tuyết rơi, lạnh quá!\n\nNghĩa toàn câu để hiểu ngữ cảnh; chỉ điền các chỗ trống trong câu tiếng Trung, không điền từng từ vào bản dịch."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "怎么样",
+              "py": "zěnmeyàng",
+              "vi": "thế nào"
+            },
+            {
+              "id": "B",
+              "zh": "雪",
+              "py": "xuě",
+              "vi": "tuyết"
+            },
+            {
+              "id": "C",
+              "zh": "了",
+              "py": "le",
+              "vi": "trợ từ 了"
+            },
+            {
+              "id": "D",
+              "zh": "看",
+              "py": "kàn",
+              "vi": "xem; khám"
+            },
+            {
+              "id": "E",
+              "zh": "太",
+              "py": "tài",
+              "vi": "quá"
+            }
+          ],
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "怎么样",
+              "py": "zěnmeyàng",
+              "vi": "thế nào"
+            },
+            {
+              "id": "B",
+              "zh": "雪",
+              "py": "xuě",
+              "vi": "tuyết"
+            },
+            {
+              "id": "C",
+              "zh": "了",
+              "py": "le",
+              "vi": "trợ từ 了"
+            },
+            {
+              "id": "D",
+              "zh": "看",
+              "py": "kàn",
+              "vi": "xem; khám"
+            },
+            {
+              "id": "E",
+              "zh": "太",
+              "py": "tài",
+              "vi": "quá"
+            }
+          ],
+          "answer": "E",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "translationPolicy": "Vietnamese gives complete meaning, not blank-by-blank word alignment."
+    },
+    {
+      "id": "hsk1-original-2026-l12-p092-comprehensive-cloze-02",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "word-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "section": "comprehensive-cloze",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "选词填空（2）",
+        "vi": "Chọn từ điền vào chỗ trống (2)"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "他去公司工作______。",
+        "vi": "Anh ấy đã đi làm ở công ty.\n\nNghĩa toàn câu để hiểu ngữ cảnh; chỉ điền các chỗ trống trong câu tiếng Trung, không điền từng từ vào bản dịch."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "怎么样",
+              "py": "zěnmeyàng",
+              "vi": "thế nào"
+            },
+            {
+              "id": "B",
+              "zh": "雪",
+              "py": "xuě",
+              "vi": "tuyết"
+            },
+            {
+              "id": "C",
+              "zh": "了",
+              "py": "le",
+              "vi": "trợ từ 了"
+            },
+            {
+              "id": "D",
+              "zh": "看",
+              "py": "kàn",
+              "vi": "xem; khám"
+            },
+            {
+              "id": "E",
+              "zh": "太",
+              "py": "tài",
+              "vi": "quá"
+            }
+          ],
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "translationPolicy": "Vietnamese gives complete meaning, not blank-by-blank word alignment."
+    },
+    {
+      "id": "hsk1-original-2026-l12-p092-comprehensive-cloze-03",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "word-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "section": "comprehensive-cloze",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "选词填空（3）",
+        "vi": "Chọn từ điền vào chỗ trống (3)"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "医生：你觉得______？\n杨同乐：我很冷。",
+        "vi": "Bác sĩ: Anh cảm thấy thế nào?\nDương Đồng Lạc: Tôi rất lạnh.\n\nNghĩa toàn câu để hiểu ngữ cảnh; chỉ điền các chỗ trống trong câu tiếng Trung, không điền từng từ vào bản dịch."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "怎么样",
+              "py": "zěnmeyàng",
+              "vi": "thế nào"
+            },
+            {
+              "id": "B",
+              "zh": "雪",
+              "py": "xuě",
+              "vi": "tuyết"
+            },
+            {
+              "id": "C",
+              "zh": "了",
+              "py": "le",
+              "vi": "trợ từ 了"
+            },
+            {
+              "id": "D",
+              "zh": "看",
+              "py": "kàn",
+              "vi": "xem; khám"
+            },
+            {
+              "id": "E",
+              "zh": "太",
+              "py": "tài",
+              "vi": "quá"
+            }
+          ],
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "translationPolicy": "Vietnamese gives complete meaning, not blank-by-blank word alignment."
+    },
+    {
+      "id": "hsk1-original-2026-l12-p092-comprehensive-cloze-04",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "word-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "section": "comprehensive-cloze",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "选词填空（4）",
+        "vi": "Chọn từ điền vào chỗ trống (4)"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "王一雪：你昨天去医院______病了吗？\n杨同乐：没有，我今天去。",
+        "vi": "Vương Nhất Tuyết: Hôm qua anh đã đến bệnh viện khám bệnh chưa?\nDương Đồng Lạc: Chưa, hôm nay tôi đi.\n\nNghĩa toàn câu để hiểu ngữ cảnh; chỉ điền các chỗ trống trong câu tiếng Trung, không điền từng từ vào bản dịch."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "怎么样",
+              "py": "zěnmeyàng",
+              "vi": "thế nào"
+            },
+            {
+              "id": "B",
+              "zh": "雪",
+              "py": "xuě",
+              "vi": "tuyết"
+            },
+            {
+              "id": "C",
+              "zh": "了",
+              "py": "le",
+              "vi": "trợ từ 了"
+            },
+            {
+              "id": "D",
+              "zh": "看",
+              "py": "kàn",
+              "vi": "xem; khám"
+            },
+            {
+              "id": "E",
+              "zh": "太",
+              "py": "tài",
+              "vi": "quá"
+            }
+          ],
+          "answer": "D",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "translationPolicy": "Vietnamese gives complete meaning, not blank-by-blank word alignment."
+    },
+    {
+      "id": "hsk1-original-2026-l12-p092-picture-description-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "section": "picture-description",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "看图表达（1）",
+        "vi": "Miêu tả hình (1)"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ mới và điểm ngữ pháp của bài này để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "昨天______。",
+        "vi": "Hôm qua ______."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "figure": "l12-picture-01",
+      "figureSHA256": "9b7c9ac164236d8ea4a34dad0f3b9eba0aeaf664094e9c93cb3f8f077e19ae25"
+    },
+    {
+      "id": "hsk1-original-2026-l12-p092-picture-description-02",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "section": "picture-description",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "看图表达（2）",
+        "vi": "Miêu tả hình (2)"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ mới và điểm ngữ pháp của bài này để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "今天______。",
+        "vi": "Hôm nay ______."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "figure": "l12-picture-02",
+      "figureSHA256": "e46db910017b9ab59b6f5b1cb815f6dfa32e52e2cb0ba9b73c589fb5847e6f13"
+    },
+    {
+      "id": "hsk1-original-2026-l12-p092-picture-description-03",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "section": "picture-description",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "看图表达（3）",
+        "vi": "Miêu tả hình (3)"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ mới và điểm ngữ pháp của bài này để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "杨同乐______了，他昨天去______，今天来______。",
+        "vi": "Dương Đồng Lạc ______ rồi, hôm qua anh ấy đến ______, hôm nay đến ______."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-3",
+          "label": {
+            "zh": "第3空",
+            "vi": "Chỗ trống 3"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "figure": "l12-picture-03",
+      "figureSHA256": "4ebc97ba7ccd7a596df3e91bf61f303729c6834a0e1f338e4bcf58efd9bbad1c"
+    },
+    {
+      "id": "hsk1-original-2026-l12-p092-picture-description-04",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "section": "picture-description",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "看图表达（4）",
+        "vi": "Miêu tả hình (4)"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ mới và điểm ngữ pháp của bài này để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "医生对杨同乐说：“今天______，回家______。”",
+        "vi": "Bác sĩ nói với Dương Đồng Lạc: “Hôm nay ______, về nhà ______.”"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "figure": "l12-picture-04",
+      "figureSHA256": "2b61494d925e56e2075a4b7d63162251fd61bbcd8467647f9836182da1978e48"
+    },
+    {
+      "id": "hsk1-original-2026-l12-p093-classroom-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "open-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 93,
+        "pdfPage": 108,
+        "section": "classroom",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "角色扮演",
+        "vi": "Đóng vai"
+      },
+      "instruction": {
+        "zh": "两人一组，一个人扮演医生，另一个人扮演病人，病人来看病。",
+        "vi": "Làm theo cặp: một người đóng vai bác sĩ, người kia là bệnh nhân đến khám."
+      },
+      "prompt": {
+        "zh": "记录你们的对话或表达。",
+        "vi": "Ghi lại hội thoại hoặc phần trình bày của nhóm."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "活动记录",
+            "vi": "Ghi chép hoạt động"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "example": {
+        "zh": "病人：医生，我病了。\n医生：我看看。你觉得冷不冷？\n病人：有点儿冷。\n医生：好的，吃一点儿药吧。",
+        "vi": "Bệnh nhân: Bác sĩ, tôi bị ốm.\nBác sĩ: Để tôi xem. Anh có thấy lạnh không?\nBệnh nhân: Hơi lạnh.\nBác sĩ: Được, uống một ít thuốc nhé."
+      },
+      "exampleProvenance": {
+        "kind": "printed-example",
+        "printedPage": 93,
+        "pdfPage": 108,
+        "notUniqueAnswer": true
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p093-summary-vocabulary-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 93,
+        "pdfPage": 108,
+        "section": "summary-vocabulary",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "学习小结 · 词语学习",
+        "vi": "Tổng kết học tập · Từ vựng"
+      },
+      "instruction": {
+        "zh": "10～12课我的学习情况。",
+        "vi": "Tình hình học tập các bài 10～12."
+      },
+      "prompt": {
+        "zh": "填写词语。",
+        "vi": "Điền các từ."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "我已经记住并会使用的词语",
+            "vi": "Những từ tôi đã nhớ và biết dùng"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "我还没记住的词语",
+            "vi": "Những từ tôi chưa nhớ"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "table": {
+        "columns": [
+          {
+            "zh": "词语学习",
+            "vi": "Học từ vựng"
+          },
+          {
+            "zh": "记录",
+            "vi": "Ghi chép"
+          }
+        ],
+        "rows": [
+          {
+            "id": "row-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "我已经记住并会使用的词语",
+                  "vi": "Những từ tôi đã nhớ và biết dùng"
+                }
+              },
+              {
+                "fieldId": "blank-1"
+              }
+            ]
+          },
+          {
+            "id": "row-2",
+            "cells": [
+              {
+                "text": {
+                  "zh": "我还没记住的词语",
+                  "vi": "Những từ tôi chưa nhớ"
+                }
+              },
+              {
+                "fieldId": "blank-2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p093-summary-skills-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 93,
+        "pdfPage": 108,
+        "section": "summary-skills",
+        "ordinal": 1,
+        "printedPages": [
+          93,
+          94
+        ],
+        "pdfPages": [
+          108,
+          109
+        ]
+      },
+      "title": {
+        "zh": "学习小结 · 我理解并会用",
+        "vi": "Tổng kết · Tôi hiểu và biết dùng"
+      },
+      "instruction": {
+        "zh": "分别记录“理解”和“会用”。",
+        "vi": "Tự đánh giá riêng hai mục “Hiểu” và “Biết dùng”."
+      },
+      "prompt": {
+        "zh": "按原书的两个维度自评。",
+        "vi": "Tự đánh giá theo hai cột của sách."
+      },
+      "fields": [
+        {
+          "id": "blank-1-understand",
+          "label": {
+            "zh": "询问商品价格，例如：苹果多少钱？ · 理解",
+            "vi": "Hỏi giá hàng hóa, ví dụ: Táo bao nhiêu tiền? · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 93,
+            "pdfPage": 108,
+            "section": "summary-skills",
+            "ordinal": 1
+          }
+        },
+        {
+          "id": "blank-1-use",
+          "label": {
+            "zh": "询问商品价格，例如：苹果多少钱？ · 会用",
+            "vi": "Hỏi giá hàng hóa, ví dụ: Táo bao nhiêu tiền? · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 93,
+            "pdfPage": 108,
+            "section": "summary-skills",
+            "ordinal": 1
+          }
+        },
+        {
+          "id": "blank-2-understand",
+          "label": {
+            "zh": "钱数的表达，例如：三块二，六块零两分 · 理解",
+            "vi": "Diễn đạt số tiền, ví dụ: ba tệ hai hào; sáu tệ hai xu · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 93,
+            "pdfPage": 108,
+            "section": "summary-skills",
+            "ordinal": 2
+          }
+        },
+        {
+          "id": "blank-2-use",
+          "label": {
+            "zh": "钱数的表达，例如：三块二，六块零两分 · 会用",
+            "vi": "Diễn đạt số tiền, ví dụ: ba tệ hai hào; sáu tệ hai xu · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 93,
+            "pdfPage": 108,
+            "section": "summary-skills",
+            "ordinal": 2
+          }
+        },
+        {
+          "id": "blank-3-understand",
+          "label": {
+            "zh": "形容词谓语句，例如：这个苹果很好吃。 · 理解",
+            "vi": "Câu vị ngữ tính từ, ví dụ: Quả táo này rất ngon. · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 3
+          }
+        },
+        {
+          "id": "blank-3-use",
+          "label": {
+            "zh": "形容词谓语句，例如：这个苹果很好吃。 · 会用",
+            "vi": "Câu vị ngữ tính từ, ví dụ: Quả táo này rất ngon. · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 3
+          }
+        },
+        {
+          "id": "blank-4-understand",
+          "label": {
+            "zh": "疑问代词“怎么样”，例如：这件衣服怎么样？ · 理解",
+            "vi": "Đại từ nghi vấn “怎么样”, ví dụ: Bộ quần áo này thế nào? · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 4
+          }
+        },
+        {
+          "id": "blank-4-use",
+          "label": {
+            "zh": "疑问代词“怎么样”，例如：这件衣服怎么样？ · 会用",
+            "vi": "Đại từ nghi vấn “怎么样”, ví dụ: Bộ quần áo này thế nào? · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 4
+          }
+        },
+        {
+          "id": "blank-5-understand",
+          "label": {
+            "zh": "正反问，例如：好不好？ · 理解",
+            "vi": "Câu hỏi chính phản, ví dụ: Có tốt không? · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 5
+          }
+        },
+        {
+          "id": "blank-5-use",
+          "label": {
+            "zh": "正反问，例如：好不好？ · 会用",
+            "vi": "Câu hỏi chính phản, ví dụ: Có tốt không? · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 5
+          }
+        },
+        {
+          "id": "blank-6-understand",
+          "label": {
+            "zh": "时间副词“在/正在”，例如：他在休息呢。 · 理解",
+            "vi": "Phó từ thời gian “在/正在”, ví dụ: Anh ấy đang nghỉ. · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 6
+          }
+        },
+        {
+          "id": "blank-6-use",
+          "label": {
+            "zh": "时间副词“在/正在”，例如：他在休息呢。 · 会用",
+            "vi": "Phó từ thời gian “在/正在”, ví dụ: Anh ấy đang nghỉ. · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 6
+          }
+        },
+        {
+          "id": "blank-7-understand",
+          "label": {
+            "zh": "能愿动词“要”，例如：我要睡觉。 · 理解",
+            "vi": "Động từ năng nguyện “要”, ví dụ: Tôi muốn đi ngủ. · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 7
+          }
+        },
+        {
+          "id": "blank-7-use",
+          "label": {
+            "zh": "能愿动词“要”，例如：我要睡觉。 · 会用",
+            "vi": "Động từ năng nguyện “要”, ví dụ: Tôi muốn đi ngủ. · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 7
+          }
+        },
+        {
+          "id": "blank-8-understand",
+          "label": {
+            "zh": "非主谓句，例如：下雨了。 · 理解",
+            "vi": "Câu phi chủ-vị, ví dụ: Trời mưa rồi. · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 8
+          }
+        },
+        {
+          "id": "blank-8-use",
+          "label": {
+            "zh": "非主谓句，例如：下雨了。 · 会用",
+            "vi": "Câu phi chủ-vị, ví dụ: Trời mưa rồi. · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 8
+          }
+        },
+        {
+          "id": "blank-9-understand",
+          "label": {
+            "zh": "语气助词“了（1）”，例如：我去上课了。 · 理解",
+            "vi": "Trợ từ ngữ khí “了” (1), ví dụ: Tôi đi học đây. · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 9
+          }
+        },
+        {
+          "id": "blank-9-use",
+          "label": {
+            "zh": "语气助词“了（1）”，例如：我去上课了。 · 会用",
+            "vi": "Trợ từ ngữ khí “了” (1), ví dụ: Tôi đi học đây. · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 9
+          }
+        },
+        {
+          "id": "blank-10-understand",
+          "label": {
+            "zh": "“太……了”格式，例如：太冷了！ · 理解",
+            "vi": "Mẫu “太……了”, ví dụ: Lạnh quá! · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 10
+          }
+        },
+        {
+          "id": "blank-10-use",
+          "label": {
+            "zh": "“太……了”格式，例如：太冷了！ · 会用",
+            "vi": "Mẫu “太……了”, ví dụ: Lạnh quá! · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 10
+          }
+        },
+        {
+          "id": "blank-11-understand",
+          "label": {
+            "zh": "描述天气情况，例如：今天下雨了。 · 理解",
+            "vi": "Miêu tả thời tiết, ví dụ: Hôm nay trời mưa. · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 11
+          }
+        },
+        {
+          "id": "blank-11-use",
+          "label": {
+            "zh": "描述天气情况，例如：今天下雨了。 · 会用",
+            "vi": "Miêu tả thời tiết, ví dụ: Hôm nay trời mưa. · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 11
+          }
+        },
+        {
+          "id": "blank-12-understand",
+          "label": {
+            "zh": "简单描述病情，例如：我病了，觉得很冷。 · 理解",
+            "vi": "Miêu tả ngắn tình trạng bệnh, ví dụ: Tôi bị ốm, thấy rất lạnh. · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 12
+          }
+        },
+        {
+          "id": "blank-12-use",
+          "label": {
+            "zh": "简单描述病情，例如：我病了，觉得很冷。 · 会用",
+            "vi": "Miêu tả ngắn tình trạng bệnh, ví dụ: Tôi bị ốm, thấy rất lạnh. · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 94,
+            "pdfPage": 109,
+            "section": "summary-skills",
+            "ordinal": 12
+          }
+        }
+      ],
+      "table": {
+        "columns": [
+          {
+            "zh": "内容",
+            "vi": "Nội dung"
+          },
+          {
+            "zh": "理解",
+            "vi": "Hiểu"
+          },
+          {
+            "zh": "会用",
+            "vi": "Biết dùng"
+          }
+        ],
+        "rows": [
+          {
+            "id": "row-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "询问商品价格，例如：苹果多少钱？",
+                  "vi": "Hỏi giá hàng hóa, ví dụ: Táo bao nhiêu tiền?"
+                }
+              },
+              {
+                "fieldId": "blank-1-understand"
+              },
+              {
+                "fieldId": "blank-1-use"
+              }
+            ]
+          },
+          {
+            "id": "row-2",
+            "cells": [
+              {
+                "text": {
+                  "zh": "钱数的表达，例如：三块二，六块零两分",
+                  "vi": "Diễn đạt số tiền, ví dụ: ba tệ hai hào; sáu tệ hai xu"
+                }
+              },
+              {
+                "fieldId": "blank-2-understand"
+              },
+              {
+                "fieldId": "blank-2-use"
+              }
+            ]
+          },
+          {
+            "id": "row-3",
+            "cells": [
+              {
+                "text": {
+                  "zh": "形容词谓语句，例如：这个苹果很好吃。",
+                  "vi": "Câu vị ngữ tính từ, ví dụ: Quả táo này rất ngon."
+                }
+              },
+              {
+                "fieldId": "blank-3-understand"
+              },
+              {
+                "fieldId": "blank-3-use"
+              }
+            ]
+          },
+          {
+            "id": "row-4",
+            "cells": [
+              {
+                "text": {
+                  "zh": "疑问代词“怎么样”，例如：这件衣服怎么样？",
+                  "vi": "Đại từ nghi vấn “怎么样”, ví dụ: Bộ quần áo này thế nào?"
+                }
+              },
+              {
+                "fieldId": "blank-4-understand"
+              },
+              {
+                "fieldId": "blank-4-use"
+              }
+            ]
+          },
+          {
+            "id": "row-5",
+            "cells": [
+              {
+                "text": {
+                  "zh": "正反问，例如：好不好？",
+                  "vi": "Câu hỏi chính phản, ví dụ: Có tốt không?"
+                }
+              },
+              {
+                "fieldId": "blank-5-understand"
+              },
+              {
+                "fieldId": "blank-5-use"
+              }
+            ]
+          },
+          {
+            "id": "row-6",
+            "cells": [
+              {
+                "text": {
+                  "zh": "时间副词“在/正在”，例如：他在休息呢。",
+                  "vi": "Phó từ thời gian “在/正在”, ví dụ: Anh ấy đang nghỉ."
+                }
+              },
+              {
+                "fieldId": "blank-6-understand"
+              },
+              {
+                "fieldId": "blank-6-use"
+              }
+            ]
+          },
+          {
+            "id": "row-7",
+            "cells": [
+              {
+                "text": {
+                  "zh": "能愿动词“要”，例如：我要睡觉。",
+                  "vi": "Động từ năng nguyện “要”, ví dụ: Tôi muốn đi ngủ."
+                }
+              },
+              {
+                "fieldId": "blank-7-understand"
+              },
+              {
+                "fieldId": "blank-7-use"
+              }
+            ]
+          },
+          {
+            "id": "row-8",
+            "cells": [
+              {
+                "text": {
+                  "zh": "非主谓句，例如：下雨了。",
+                  "vi": "Câu phi chủ-vị, ví dụ: Trời mưa rồi."
+                }
+              },
+              {
+                "fieldId": "blank-8-understand"
+              },
+              {
+                "fieldId": "blank-8-use"
+              }
+            ]
+          },
+          {
+            "id": "row-9",
+            "cells": [
+              {
+                "text": {
+                  "zh": "语气助词“了（1）”，例如：我去上课了。",
+                  "vi": "Trợ từ ngữ khí “了” (1), ví dụ: Tôi đi học đây."
+                }
+              },
+              {
+                "fieldId": "blank-9-understand"
+              },
+              {
+                "fieldId": "blank-9-use"
+              }
+            ]
+          },
+          {
+            "id": "row-10",
+            "cells": [
+              {
+                "text": {
+                  "zh": "“太……了”格式，例如：太冷了！",
+                  "vi": "Mẫu “太……了”, ví dụ: Lạnh quá!"
+                }
+              },
+              {
+                "fieldId": "blank-10-understand"
+              },
+              {
+                "fieldId": "blank-10-use"
+              }
+            ]
+          },
+          {
+            "id": "row-11",
+            "cells": [
+              {
+                "text": {
+                  "zh": "描述天气情况，例如：今天下雨了。",
+                  "vi": "Miêu tả thời tiết, ví dụ: Hôm nay trời mưa."
+                }
+              },
+              {
+                "fieldId": "blank-11-understand"
+              },
+              {
+                "fieldId": "blank-11-use"
+              }
+            ]
+          },
+          {
+            "id": "row-12",
+            "cells": [
+              {
+                "text": {
+                  "zh": "简单描述病情，例如：我病了，觉得很冷。",
+                  "vi": "Miêu tả ngắn tình trạng bệnh, ví dụ: Tôi bị ốm, thấy rất lạnh."
+                }
+              },
+              {
+                "fieldId": "blank-12-understand"
+              },
+              {
+                "fieldId": "blank-12-use"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l12-p094-summary-improvement-01",
+      "version": "source-v1",
+      "lesson": 12,
+      "kind": "open-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 94,
+        "pdfPage": 109,
+        "section": "summary-improvement",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "我需要努力的",
+        "vi": "Những điểm tôi cần cải thiện"
+      },
+      "instruction": {
+        "zh": "写下接下来需要练习的内容。",
+        "vi": "Ghi lại nội dung cần luyện tập tiếp."
+      },
+      "prompt": {
+        "zh": "我需要努力的",
+        "vi": "Những điểm tôi cần cải thiện"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "记录",
+            "vi": "Ghi chép"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "l12-warmup-six-panels",
+      "file": "figures/l12-warmup-six-panels.png",
+      "alt": {
+        "zh": "六幅热身图；从左到右、从上到下对应图片1至6。",
+        "vi": "Sáu hình khởi động; thứ tự 1 đến 6 từ trái sang phải, từ trên xuống dưới."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 86,
+        "pdfPage": 101,
+        "cell": "warmup-six-panels",
+        "cropPdfPoints": [
+          56.15385,
+          453.07692,
+          498.46154,
+          655.38462
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "1fcb1aa8afd9d86e6900eb04c695e3a1c02f7b93a3fa7f93659497b62b10fb2b",
+      "note": {
+        "zh": "原书局部原图裁切；未重画，未补写图中文字。",
+        "vi": "Ảnh được cắt trực tiếp từ một phần trang sách gốc; không vẽ lại hoặc sửa chữ trong hình."
+      }
+    },
+    {
+      "id": "l12-picture-01",
+      "file": "figures/l12-picture-01.png",
+      "alt": {
+        "zh": "原书看图表达第1图",
+        "vi": "Hình 1 của bài miêu tả tranh trong sách"
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "cell": "picture-01",
+        "cropPdfPoints": [
+          73.07692,
+          358.46154,
+          280.76923,
+          513.07692
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "9b7c9ac164236d8ea4a34dad0f3b9eba0aeaf664094e9c93cb3f8f077e19ae25",
+      "note": {
+        "zh": "原书局部原图裁切；未重画，未补写图中文字。",
+        "vi": "Ảnh được cắt trực tiếp từ một phần trang sách gốc; không vẽ lại hoặc sửa chữ trong hình."
+      }
+    },
+    {
+      "id": "l12-picture-02",
+      "file": "figures/l12-picture-02.png",
+      "alt": {
+        "zh": "原书看图表达第2图",
+        "vi": "Hình 2 của bài miêu tả tranh trong sách"
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "cell": "picture-02",
+        "cropPdfPoints": [
+          287.69231,
+          358.46154,
+          497.69231,
+          513.07692
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "e46db910017b9ab59b6f5b1cb815f6dfa32e52e2cb0ba9b73c589fb5847e6f13",
+      "note": {
+        "zh": "原书局部原图裁切；未重画，未补写图中文字。",
+        "vi": "Ảnh được cắt trực tiếp từ một phần trang sách gốc; không vẽ lại hoặc sửa chữ trong hình."
+      }
+    },
+    {
+      "id": "l12-picture-03",
+      "file": "figures/l12-picture-03.png",
+      "alt": {
+        "zh": "原书看图表达第3图",
+        "vi": "Hình 3 của bài miêu tả tranh trong sách"
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "cell": "picture-03",
+        "cropPdfPoints": [
+          73.07692,
+          518.46154,
+          280.76923,
+          689.23077
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "4ebc97ba7ccd7a596df3e91bf61f303729c6834a0e1f338e4bcf58efd9bbad1c",
+      "note": {
+        "zh": "原书局部原图裁切；未重画，未补写图中文字。",
+        "vi": "Ảnh được cắt trực tiếp từ một phần trang sách gốc; không vẽ lại hoặc sửa chữ trong hình."
+      }
+    },
+    {
+      "id": "l12-picture-04",
+      "file": "figures/l12-picture-04.png",
+      "alt": {
+        "zh": "原书看图表达第4图",
+        "vi": "Hình 4 của bài miêu tả tranh trong sách"
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 92,
+        "pdfPage": 107,
+        "cell": "picture-04",
+        "cropPdfPoints": [
+          287.69231,
+          518.46154,
+          497.69231,
+          689.23077
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "2b61494d925e56e2075a4b7d63162251fd61bbcd8467647f9836182da1978e48",
+      "note": {
+        "zh": "原书局部原图裁切；未重画，未补写图中文字。",
+        "vi": "Ảnh được cắt trực tiếp từ một phần trang sách gốc; không vẽ lại hoặc sửa chữ trong hình."
+      }
+    },
+    {
+      "id": "l12-text-1-photo",
+      "file": "figures/l12-text-1-photo.png",
+      "alt": {
+        "zh": "王一飞在窗边打电话，窗外下着雨。",
+        "vi": "Vương Nhất Phi gọi điện cạnh cửa sổ, ngoài trời mưa."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 87,
+        "pdfPage": 102,
+        "cell": "text-1-photo",
+        "cropPdfPoints": [
+          296.15385,
+          325.38462,
+          496.15385,
+          614.61538
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "550d00fa521a47d9edeea38c1c6ca8850e588e64b593dd1ba868e1d6469e5e08",
+      "note": {
+        "zh": "原书配图局部原图裁切，未重画。",
+        "vi": "Ảnh minh họa được cắt trực tiếp từ sách, không vẽ lại."
+      }
+    },
+    {
+      "id": "l12-text-2-photo",
+      "file": "figures/l12-text-2-photo.png",
+      "alt": {
+        "zh": "王一雪和戴口罩的杨同乐在公司电梯里。",
+        "vi": "Vương Nhất Tuyết và Dương Đồng Lạc đeo khẩu trang trong thang máy công ty."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 89,
+        "pdfPage": 104,
+        "cell": "text-2-photo",
+        "cropPdfPoints": [
+          308.46154,
+          307.69231,
+          520.76923,
+          580.0
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "a8cba159d546a6a84eb9b53c15fc0b9c82a5a13f3763cc75d219b2e7cad3dd9b",
+      "note": {
+        "zh": "原书配图局部原图裁切，未重画。",
+        "vi": "Ảnh minh họa được cắt trực tiếp từ sách, không vẽ lại."
+      }
+    },
+    {
+      "id": "l12-text-3-photo",
+      "file": "figures/l12-text-3-photo.png",
+      "alt": {
+        "zh": "杨同乐在医院看病。",
+        "vi": "Dương Đồng Lạc khám bệnh ở bệnh viện."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 91,
+        "pdfPage": 106,
+        "cell": "text-3-photo",
+        "cropPdfPoints": [
+          323.07692,
+          150.76923,
+          543.07692,
+          276.15385
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "38a036c9d37a060f47cc0d47b898a126280a8d46d89e81a2174059604b1e4fda",
+      "note": {
+        "zh": "原书配图局部原图裁切，未重画。",
+        "vi": "Ảnh minh họa được cắt trực tiếp từ sách, không vẽ lại."
+      }
+    }
+  ],
+  "coverage": {
+    "sourcePages": [
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94
+    ],
+    "pdfPagesVisuallyInspected": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109
+    ],
+    "independentReview": "pending",
+    "audioHumanReview": "pending",
+    "runtimeVerification": "not-run"
+  },
+  "vocabularySourceMap": [
+    {
+      "ordinal": 1,
+      "printedPage": 88,
+      "pdfPage": 103,
+      "zh": "天气",
+      "existingId": "textbook-l12-v014",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p088-vocabulary-01"
+    },
+    {
+      "ordinal": 2,
+      "printedPage": 88,
+      "pdfPage": 103,
+      "zh": "这里",
+      "existingId": "textbook-l12-v023",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p088-vocabulary-01"
+    },
+    {
+      "ordinal": 3,
+      "printedPage": 88,
+      "pdfPage": 103,
+      "zh": "天",
+      "existingId": "textbook-l12-v013",
+      "existingHeadwordMergedSenses": true,
+      "candidateActivityId": "hsk1-original-2026-l12-p088-vocabulary-01"
+    },
+    {
+      "ordinal": 4,
+      "printedPage": 88,
+      "pdfPage": 103,
+      "zh": "下雨",
+      "existingId": "textbook-l12-v016",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p088-vocabulary-01"
+    },
+    {
+      "ordinal": 5,
+      "printedPage": 88,
+      "pdfPage": 103,
+      "zh": "了",
+      "existingId": "textbook-l12-v008",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p088-vocabulary-01"
+    },
+    {
+      "ordinal": 6,
+      "printedPage": 88,
+      "pdfPage": 103,
+      "zh": "雨",
+      "existingId": "textbook-l12-v021",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p088-vocabulary-01"
+    },
+    {
+      "ordinal": 7,
+      "printedPage": 88,
+      "pdfPage": 103,
+      "zh": "有点儿",
+      "existingId": "textbook-l12-v020",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p088-vocabulary-01"
+    },
+    {
+      "ordinal": 8,
+      "printedPage": 88,
+      "pdfPage": 103,
+      "zh": "觉得",
+      "existingId": "textbook-l12-v005",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p088-vocabulary-01"
+    },
+    {
+      "ordinal": 9,
+      "printedPage": 88,
+      "pdfPage": 103,
+      "zh": "冷",
+      "existingId": "textbook-l12-v009",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p088-vocabulary-01"
+    },
+    {
+      "ordinal": 10,
+      "printedPage": 89,
+      "pdfPage": 104,
+      "zh": "下",
+      "existingId": "textbook-l12-v015",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p089-vocabulary-01"
+    },
+    {
+      "ordinal": 11,
+      "printedPage": 89,
+      "pdfPage": 104,
+      "zh": "雪",
+      "existingId": "textbook-l12-v017",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p089-vocabulary-01"
+    },
+    {
+      "ordinal": 12,
+      "printedPage": 89,
+      "pdfPage": 104,
+      "zh": "来",
+      "existingId": "textbook-l12-v007",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p089-vocabulary-01"
+    },
+    {
+      "ordinal": 13,
+      "printedPage": 89,
+      "pdfPage": 104,
+      "zh": "公司",
+      "existingId": "textbook-l12-v002",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p089-vocabulary-01"
+    },
+    {
+      "ordinal": 14,
+      "printedPage": 89,
+      "pdfPage": 104,
+      "zh": "生病",
+      "existingId": "textbook-l12-v011",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p089-vocabulary-01"
+    },
+    {
+      "ordinal": 15,
+      "printedPage": 89,
+      "pdfPage": 104,
+      "zh": "看病",
+      "existingId": "textbook-l12-v006",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p089-vocabulary-01"
+    },
+    {
+      "ordinal": 16,
+      "printedPage": 91,
+      "pdfPage": 106,
+      "zh": "病",
+      "existingId": "textbook-l12-v001",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p091-vocabulary-01"
+    },
+    {
+      "ordinal": 17,
+      "printedPage": 91,
+      "pdfPage": 106,
+      "zh": "一点儿",
+      "existingId": "textbook-l12-v019",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p091-vocabulary-01"
+    },
+    {
+      "ordinal": 18,
+      "printedPage": 91,
+      "pdfPage": 106,
+      "zh": "药",
+      "existingId": "textbook-l12-v018",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p091-vocabulary-01"
+    },
+    {
+      "ordinal": 19,
+      "printedPage": 91,
+      "pdfPage": 106,
+      "zh": "天",
+      "existingId": "textbook-l12-v013",
+      "existingHeadwordMergedSenses": true,
+      "candidateActivityId": "hsk1-original-2026-l12-p091-vocabulary-01"
+    },
+    {
+      "ordinal": 20,
+      "printedPage": 91,
+      "pdfPage": 106,
+      "zh": "回",
+      "existingId": "textbook-l12-v004",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p091-vocabulary-01"
+    },
+    {
+      "ordinal": 21,
+      "printedPage": 91,
+      "pdfPage": 106,
+      "zh": "再",
+      "existingId": "textbook-l12-v022",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p091-vocabulary-01"
+    },
+    {
+      "ordinal": 22,
+      "printedPage": 91,
+      "pdfPage": 106,
+      "zh": "喝",
+      "existingId": "textbook-l12-v003",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p091-vocabulary-01"
+    },
+    {
+      "ordinal": 23,
+      "printedPage": 91,
+      "pdfPage": 106,
+      "zh": "热",
+      "existingId": "textbook-l12-v010",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p091-vocabulary-01"
+    },
+    {
+      "ordinal": 24,
+      "printedPage": 91,
+      "pdfPage": 106,
+      "zh": "水",
+      "existingId": "textbook-l12-v012",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l12-p091-vocabulary-01"
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+[
+  {
+    "id": "hsk1-original-2026-l04-p019-text1-read-role-01",
+    "version": "source-v1",
+    "lesson": 4,
+    "kind": "read-aloud",
+    "source": {
+      "sourceRevision": "hsk1-print-2026-01",
+      "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+      "printedPage": 19,
+      "pdfPage": 34,
+      "section": "text1-read-role",
+      "ordinal": 1
+    },
+    "title": {
+      "zh": "课文1 · 朗读对话",
+      "vi": "Bài đọc 1 · Đọc hội thoại"
+    },
+    "instruction": {
+      "zh": "朗读对话。分角色朗读对话。",
+      "vi": "Đọc to hội thoại. Phân vai đọc hội thoại."
+    },
+    "prompt": {
+      "zh": "在家里，刘明和王一雪在聊天儿。\n请使用本课“课文1”的完整对话进行练习。",
+      "vi": "Ở nhà, Lưu Minh và Vương Nhất Tuyết đang trò chuyện.\nHãy luyện tập với toàn bộ hội thoại trong phần Bài đọc 1 của bài này."
+    },
+    "fields": [
+      {
+        "id": "self-check",
+        "label": {
+          "zh": "练习记录（自评，不计分）",
+          "vi": "Ghi nhận luyện tập (tự đánh giá, không chấm điểm)"
+        },
+        "input": "select",
+        "assessment": "ungraded",
+        "options": [
+          {
+            "id": "done",
+            "zh": "已练习",
+            "vi": "Đã luyện tập",
+            "py": "Yǐ liànxí"
+          },
+          {
+            "id": "review",
+            "zh": "还要再练习",
+            "vi": "Cần luyện tập thêm",
+            "py": "Hái yào zài liànxí"
+          }
+        ],
+        "feedbackNote": {
+          "zh": "记录的是自我练习情况，不代表已进行语音识别或教师评分。",
+          "vi": "Đây là tự ghi nhận việc luyện tập, không phải kết quả nhận dạng giọng nói hoặc chấm điểm của giáo viên."
+        }
+      }
+    ]
+  },
+  {
+    "id": "hsk1-original-2026-l04-p020-grammar1-read-01",
+    "version": "source-v1",
+    "lesson": 4,
+    "kind": "read-aloud",
+    "source": {
+      "sourceRevision": "hsk1-print-2026-01",
+      "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+      "printedPage": 20,
+      "pdfPage": 35,
+      "section": "grammar1-read",
+      "ordinal": 1
+    },
+    "title": {
+      "zh": "“有”字句 · 原书例句",
+      "vi": "Câu chữ “有” · Ví dụ trong sách"
+    },
+    "instruction": {
+      "zh": "大声朗读。",
+      "vi": "Đọc to."
+    },
+    "prompt": {
+      "zh": "（1）她有二十个学生。\n（2）她有一个姐姐。\n（3）我没／没有姐姐。",
+      "vi": "(1) Cô ấy có hai mươi học sinh.\n(2) Cô ấy có một chị gái.\n(3) Tôi không có chị gái."
+    },
+    "fields": [
+      {
+        "id": "self-check",
+        "label": {
+          "zh": "练习记录（自评，不计分）",
+          "vi": "Ghi nhận luyện tập (tự đánh giá, không chấm điểm)"
+        },
+        "input": "select",
+        "assessment": "ungraded",
+        "options": [
+          {
+            "id": "done",
+            "zh": "已练习",
+            "vi": "Đã luyện tập",
+            "py": "Yǐ liànxí"
+          },
+          {
+            "id": "review",
+            "zh": "还要再练习",
+            "vi": "Cần luyện tập thêm",
+            "py": "Hái yào zài liànxí"
+          }
+        ],
+        "feedbackNote": {
+          "zh": "第三句中的“没／没有”表示两种否定形式，朗读时任选一种，不把斜线读出来。拼音为学习辅助补充。",
+          "vi": "“没／没有” trong câu thứ ba là hai cách phủ định; khi đọc chọn một cách, không đọc dấu gạch chéo. Phiên âm là phần hỗ trợ bổ sung."
+        }
+      }
+    ],
+    "pinyin": "Tā yǒu èrshí gè xuéshēng.\nTā yǒu yí gè jiějie.\nWǒ méi / méiyǒu jiějie."
+  },
+  {
+    "id": "hsk1-original-2026-l04-p022-text2-role-01",
+    "version": "source-v1",
+    "lesson": 4,
+    "kind": "read-aloud",
+    "source": {
+      "sourceRevision": "hsk1-print-2026-01",
+      "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+      "printedPage": 22,
+      "pdfPage": 37,
+      "section": "text2-role",
+      "ordinal": 1
+    },
+    "title": {
+      "zh": "课文2 · 分角色朗读",
+      "vi": "Bài đọc 2 · Phân vai đọc"
+    },
+    "instruction": {
+      "zh": "分角色朗读对话。",
+      "vi": "Phân vai đọc hội thoại."
+    },
+    "prompt": {
+      "zh": "请使用本课“课文2”中王一雪和杨同乐的完整对话，分角色朗读。",
+      "vi": "Hãy phân vai đọc toàn bộ hội thoại giữa Vương Nhất Tuyết và Dương Đồng Lạc trong Bài đọc 2."
+    },
+    "fields": [
+      {
+        "id": "self-check",
+        "label": {
+          "zh": "练习记录（自评，不计分）",
+          "vi": "Ghi nhận luyện tập (tự đánh giá, không chấm điểm)"
+        },
+        "input": "select",
+        "assessment": "ungraded",
+        "options": [
+          {
+            "id": "done",
+            "zh": "已练习",
+            "vi": "Đã luyện tập",
+            "py": "Yǐ liànxí"
+          },
+          {
+            "id": "review",
+            "zh": "还要再练习",
+            "vi": "Cần luyện tập thêm",
+            "py": "Hái yào zài liànxí"
+          }
+        ],
+        "feedbackNote": {
+          "zh": "此为原书朗读任务的练习记录，不进行自动口语评分。",
+          "vi": "Đây là ghi nhận luyện đọc theo nhiệm vụ trong sách; không chấm điểm nói tự động."
+        }
+      }
+    ]
+  },
+  {
+    "id": "hsk1-original-2026-l04-p022-text2-pair-01",
+    "version": "source-v1",
+    "lesson": 4,
+    "kind": "pair-work",
+    "source": {
+      "sourceRevision": "hsk1-print-2026-01",
+      "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+      "printedPage": 22,
+      "pdfPage": 37,
+      "section": "text2-pair",
+      "ordinal": 1
+    },
+    "title": {
+      "zh": "课文2 · 根据实际情况对话",
+      "vi": "Bài đọc 2 · Hội thoại theo thực tế"
+    },
+    "instruction": {
+      "zh": "两人一组，根据实际情况对话。",
+      "vi": "Làm việc theo cặp và hội thoại theo tình hình thực tế."
+    },
+    "prompt": {
+      "zh": "参考课文2，两人互相询问兄弟姐妹和家庭人口。请记录练习情况或对话。",
+      "vi": "Tham khảo Bài đọc 2, hỏi nhau về anh chị em và số người trong gia đình. Hãy ghi nhận việc luyện tập hoặc nội dung hội thoại."
+    },
+    "fields": [
+      {
+        "id": "response",
+        "label": {
+          "zh": "回答",
+          "vi": "Trả lời"
+        },
+        "input": "textarea",
+        "assessment": "ungraded",
+        "reference": {
+          "zh": "我有一个妹妹，你呢？\n我有两个哥哥。\n你家有几口人？\n我家有四口人。",
+          "vi": "Tôi có một em gái, còn bạn?\nTôi có hai anh trai.\nNhà bạn có mấy người?\nNhà tôi có bốn người."
+        },
+        "feedbackNote": {
+          "zh": "以上是编辑补充的示例，不是原书唯一答案。可只记录“已完成”，不必在网站填写真实家庭信息。",
+          "vi": "Trên đây là ví dụ bổ sung của người biên soạn, không phải đáp án duy nhất trong sách. Có thể chỉ ghi “đã hoàn thành”, không cần nhập thông tin gia đình thật lên trang web."
+        }
+      }
+    ]
+  },
+  {
+    "id": "hsk1-original-2026-l04-p023-grammar3-read-01",
+    "version": "source-v1",
+    "lesson": 4,
+    "kind": "read-aloud",
+    "source": {
+      "sourceRevision": "hsk1-print-2026-01",
+      "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+      "printedPage": 23,
+      "pdfPage": 38,
+      "section": "grammar3-read",
+      "ordinal": 1
+    },
+    "title": {
+      "zh": "“呢” · 原书例句",
+      "vi": "“呢” · Ví dụ trong sách"
+    },
+    "instruction": {
+      "zh": "大声朗读。",
+      "vi": "Đọc to."
+    },
+    "prompt": {
+      "zh": "（1）我有两个哥哥，你呢？\n（2）我叫白家月，你呢？\n（3）我是中国人，你呢？",
+      "vi": "(1) Tôi có hai anh trai, còn bạn?\n(2) Tôi tên là Bạch Gia Nguyệt, còn bạn?\n(3) Tôi là người Trung Quốc, còn bạn?"
+    },
+    "fields": [
+      {
+        "id": "self-check",
+        "label": {
+          "zh": "练习记录（自评，不计分）",
+          "vi": "Ghi nhận luyện tập (tự đánh giá, không chấm điểm)"
+        },
+        "input": "select",
+        "assessment": "ungraded",
+        "options": [
+          {
+            "id": "done",
+            "zh": "已练习",
+            "vi": "Đã luyện tập",
+            "py": "Yǐ liànxí"
+          },
+          {
+            "id": "review",
+            "zh": "还要再练习",
+            "vi": "Cần luyện tập thêm",
+            "py": "Hái yào zài liànxí"
+          }
+        ],
+        "feedbackNote": {
+          "zh": "每句“你呢”都追问前文的同类信息。拼音为学习辅助补充。",
+          "vi": "“你呢” trong mỗi câu hỏi lại cùng loại thông tin đã nêu trước đó. Phiên âm là phần hỗ trợ bổ sung."
+        }
+      }
+    ],
+    "pinyin": "Wǒ yǒu liǎng gè gēge, nǐ ne?\nWǒ jiào Bái Jiāyuè, nǐ ne?\nWǒ shì Zhōngguó rén, nǐ ne?"
+  },
+  {
+    "id": "hsk1-original-2026-l04-p023-grammar4-read-01",
+    "version": "source-v1",
+    "lesson": 4,
+    "kind": "read-aloud",
+    "source": {
+      "sourceRevision": "hsk1-print-2026-01",
+      "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+      "printedPage": 23,
+      "pdfPage": 38,
+      "section": "grammar4-read",
+      "ordinal": 1
+    },
+    "title": {
+      "zh": "名量词和名量结构 · 原书例句",
+      "vi": "Danh lượng từ và kết cấu số-lượng-(danh) · Ví dụ trong sách"
+    },
+    "instruction": {
+      "zh": "大声朗读。",
+      "vi": "Đọc to."
+    },
+    "prompt": {
+      "zh": "（1）四口\n（2）四口人\n（3）两个\n（4）两个学生",
+      "vi": "(1) Bốn người (lược bỏ danh từ 人)\n(2) Bốn người\n(3) Hai (lược bỏ danh từ)\n(4) Hai học sinh"
+    },
+    "fields": [
+      {
+        "id": "self-check",
+        "label": {
+          "zh": "练习记录（自评，不计分）",
+          "vi": "Ghi nhận luyện tập (tự đánh giá, không chấm điểm)"
+        },
+        "input": "select",
+        "assessment": "ungraded",
+        "options": [
+          {
+            "id": "done",
+            "zh": "已练习",
+            "vi": "Đã luyện tập",
+            "py": "Yǐ liànxí"
+          },
+          {
+            "id": "review",
+            "zh": "还要再练习",
+            "vi": "Cần luyện tập thêm",
+            "py": "Hái yào zài liànxí"
+          }
+        ],
+        "feedbackNote": {
+          "zh": "“四口”和“两个”保留原书省略名词的形式；要结合上下文理解，不额外补成另一道题。拼音为学习辅助补充。",
+          "vi": "“四口” và “两个” giữ nguyên cách lược bỏ danh từ trong sách và cần được hiểu theo ngữ cảnh; không tự đổi thành bài tập khác. Phiên âm là phần hỗ trợ bổ sung."
+        }
+      }
+    ],
+    "pinyin": "Sì kǒu.\nSì kǒu rén.\nLiǎng gè.\nLiǎng gè xuéshēng."
+  },
+  {
+    "id": "hsk1-original-2026-l04-p025-text3-role-01",
+    "version": "source-v1",
+    "lesson": 4,
+    "kind": "read-aloud",
+    "source": {
+      "sourceRevision": "hsk1-print-2026-01",
+      "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+      "printedPage": 25,
+      "pdfPage": 40,
+      "section": "text3-role",
+      "ordinal": 1
+    },
+    "title": {
+      "zh": "课文3 · 分角色朗读",
+      "vi": "Bài đọc 3 · Phân vai đọc"
+    },
+    "instruction": {
+      "zh": "分角色朗读对话。",
+      "vi": "Phân vai đọc hội thoại."
+    },
+    "prompt": {
+      "zh": "请使用本课“课文3”中王一雪和杨同乐的完整对话，分角色朗读。",
+      "vi": "Hãy phân vai đọc toàn bộ hội thoại giữa Vương Nhất Tuyết và Dương Đồng Lạc trong Bài đọc 3."
+    },
+    "fields": [
+      {
+        "id": "self-check",
+        "label": {
+          "zh": "练习记录（自评，不计分）",
+          "vi": "Ghi nhận luyện tập (tự đánh giá, không chấm điểm)"
+        },
+        "input": "select",
+        "assessment": "ungraded",
+        "options": [
+          {
+            "id": "done",
+            "zh": "已练习",
+            "vi": "Đã luyện tập",
+            "py": "Yǐ liànxí"
+          },
+          {
+            "id": "review",
+            "zh": "还要再练习",
+            "vi": "Cần luyện tập thêm",
+            "py": "Hái yào zài liànxí"
+          }
+        ],
+        "feedbackNote": {
+          "zh": "此为原书朗读任务的练习记录，不进行自动口语评分。",
+          "vi": "Đây là ghi nhận luyện đọc theo nhiệm vụ trong sách; không chấm điểm nói tự động."
+        }
+      }
+    ]
+  },
+  {
+    "id": "hsk1-original-2026-l04-p025-text3-questions-01",
+    "version": "source-v1",
+    "lesson": 4,
+    "kind": "source-reading-question",
+    "source": {
+      "sourceRevision": "hsk1-print-2026-01",
+      "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+      "printedPage": 25,
+      "pdfPage": 40,
+      "section": "text3-questions",
+      "ordinal": 1
+    },
+    "title": {
+      "zh": "课文3 · 回答问题1",
+      "vi": "Bài đọc 3 · Trả lời câu hỏi 1"
+    },
+    "instruction": {
+      "zh": "根据课文内容回答问题。",
+      "vi": "Trả lời câu hỏi theo nội dung bài đọc."
+    },
+    "prompt": {
+      "zh": "王一雪有几个儿子？几个女儿？",
+      "vi": "Vương Nhất Tuyết có mấy con trai? Mấy con gái?"
+    },
+    "fields": [
+      {
+        "id": "response",
+        "label": {
+          "zh": "回答",
+          "vi": "Trả lời"
+        },
+        "input": "textarea",
+        "assessment": "ungraded",
+        "reference": {
+          "zh": "她有一个儿子、一个女儿。",
+          "vi": "Cô ấy có một con trai và một con gái."
+        },
+        "feedbackNote": {
+          "zh": "参考表达依据课文3第2句（教材第24页／PDF第39页）。“王一雪有一个儿子和一个女儿”等同义表达也可以。配套客观题答案未给本题答案，此处不自动判分。",
+          "vi": "Câu tham khảo dựa trên lời thoại thứ hai của Bài đọc 3 (SGK trang 24 / PDF trang 39). Có thể dùng cách diễn đạt tương đương, như “王一雪有一个儿子和一个女儿”. Tài liệu đáp án khách quan không cho đáp án của câu này; ở đây không chấm điểm tự động."
+        }
+      }
+    ],
+    "pinyin": "Wáng Yīxuě yǒu jǐ gè érzi? Jǐ gè nǚ’ér?"
+  },
+  {
+    "id": "hsk1-original-2026-l04-p025-text3-questions-02",
+    "version": "source-v1",
+    "lesson": 4,
+    "kind": "source-reading-question",
+    "source": {
+      "sourceRevision": "hsk1-print-2026-01",
+      "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+      "printedPage": 25,
+      "pdfPage": 40,
+      "section": "text3-questions",
+      "ordinal": 2
+    },
+    "title": {
+      "zh": "课文3 · 回答问题2",
+      "vi": "Bài đọc 3 · Trả lời câu hỏi 2"
+    },
+    "instruction": {
+      "zh": "根据课文内容回答问题。",
+      "vi": "Trả lời câu hỏi theo nội dung bài đọc."
+    },
+    "prompt": {
+      "zh": "王一雪儿子今年几岁？",
+      "vi": "Con trai Vương Nhất Tuyết năm nay mấy tuổi?"
+    },
+    "fields": [
+      {
+        "id": "response",
+        "label": {
+          "zh": "回答",
+          "vi": "Trả lời"
+        },
+        "input": "textarea",
+        "assessment": "ungraded",
+        "reference": {
+          "zh": "她儿子今年五岁。",
+          "vi": "Con trai cô ấy năm nay năm tuổi."
+        },
+        "feedbackNote": {
+          "zh": "参考表达依据课文3第4句（教材第24页／PDF第39页）。“他今年五岁”等同义表达也可以。配套客观题答案未给本题答案，此处不自动判分。",
+          "vi": "Câu tham khảo dựa trên lời thoại thứ tư của Bài đọc 3 (SGK trang 24 / PDF trang 39). Có thể dùng cách diễn đạt tương đương, như “他今年五岁”. Tài liệu đáp án khách quan không cho đáp án của câu này; ở đây không chấm điểm tự động."
+        }
+      }
+    ],
+    "pinyin": "Wáng Yīxuě érzi jīnnián jǐ suì?"
+  }
+]

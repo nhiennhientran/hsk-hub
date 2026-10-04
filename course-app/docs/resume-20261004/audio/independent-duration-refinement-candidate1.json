@@ -1,0 +1,55 @@
+{
+  "test": "duration refinement during pending initial seek without durationchange",
+  "results": [
+    {
+      "lateDuration": "NaN",
+      "status": "loading",
+      "muted": true,
+      "time": 0.718,
+      "result": {
+        "ok": false,
+        "code": "cancelled"
+      }
+    },
+    {
+      "lateDuration": "Infinity",
+      "status": "loading",
+      "muted": true,
+      "time": 0.718,
+      "result": {
+        "ok": false,
+        "code": "cancelled"
+      }
+    },
+    {
+      "lateDuration": "5",
+      "status": "playing",
+      "muted": false,
+      "time": 0.718,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    },
+    {
+      "lateDuration": "0.5",
+      "status": "playing",
+      "muted": false,
+      "time": 0.718,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    },
+    {
+      "lateDuration": "16.296",
+      "status": "playing",
+      "muted": false,
+      "time": 0.718,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    }
+  ]
+}

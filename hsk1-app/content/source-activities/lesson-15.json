@@ -1,0 +1,3669 @@
+{
+  "schema": 1,
+  "edition": "hsk1-print-2026-01",
+  "lesson": 15,
+  "version": "source-v1",
+  "scope": "lesson-15-source-candidate",
+  "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+  "answerBookSHA256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+  "editorialStatus": "candidate-awaiting-independent-review",
+  "activities": [
+    {
+      "id": "hsk1-original-2026-l15-p112-objectives-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "read-only",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 112,
+        "pdfPage": 127,
+        "section": "objectives",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "目标",
+        "vi": "Mục tiêu"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "能听懂并使用相关词语表达旅行意愿、计划。\n掌握并列复句“……，还/也……”。\n了解中国餐桌文化、待客礼仪。\n了解中国的首都——北京。",
+        "vi": "Có thể nghe hiểu và dùng từ ngữ liên quan để nói về mong muốn, kế hoạch du lịch.\nNắm câu phức đẳng lập “……，还/也……”.\nHiểu văn hóa bàn ăn và nghi thức tiếp khách của Trung Quốc.\nTìm hiểu thủ đô của Trung Quốc: Bắc Kinh."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l15-p112-warmup-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 112,
+        "pdfPage": 127,
+        "section": "warmup",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "按原书顺序填写六幅图。",
+        "vi": "Điền theo thứ tự sáu hình trong sách."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "图片1",
+            "vi": "Hình 1"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "北京",
+              "py": "Běijīng",
+              "vi": "Bắc Kinh"
+            },
+            {
+              "id": "B",
+              "zh": "好玩儿",
+              "py": "hǎowánr",
+              "vi": "vui; thú vị"
+            },
+            {
+              "id": "C",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            },
+            {
+              "id": "D",
+              "zh": "早饭",
+              "py": "zǎofàn",
+              "vi": "bữa sáng"
+            },
+            {
+              "id": "E",
+              "zh": "早",
+              "py": "zǎo",
+              "vi": "sớm"
+            },
+            {
+              "id": "F",
+              "zh": "男朋友",
+              "py": "nánpéngyou",
+              "vi": "bạn trai"
+            }
+          ],
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "图片2",
+            "vi": "Hình 2"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "北京",
+              "py": "Běijīng",
+              "vi": "Bắc Kinh"
+            },
+            {
+              "id": "B",
+              "zh": "好玩儿",
+              "py": "hǎowánr",
+              "vi": "vui; thú vị"
+            },
+            {
+              "id": "C",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            },
+            {
+              "id": "D",
+              "zh": "早饭",
+              "py": "zǎofàn",
+              "vi": "bữa sáng"
+            },
+            {
+              "id": "E",
+              "zh": "早",
+              "py": "zǎo",
+              "vi": "sớm"
+            },
+            {
+              "id": "F",
+              "zh": "男朋友",
+              "py": "nánpéngyou",
+              "vi": "bạn trai"
+            }
+          ],
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "blank-3",
+          "label": {
+            "zh": "图片3",
+            "vi": "Hình 3"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "北京",
+              "py": "Běijīng",
+              "vi": "Bắc Kinh"
+            },
+            {
+              "id": "B",
+              "zh": "好玩儿",
+              "py": "hǎowánr",
+              "vi": "vui; thú vị"
+            },
+            {
+              "id": "C",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            },
+            {
+              "id": "D",
+              "zh": "早饭",
+              "py": "zǎofàn",
+              "vi": "bữa sáng"
+            },
+            {
+              "id": "E",
+              "zh": "早",
+              "py": "zǎo",
+              "vi": "sớm"
+            },
+            {
+              "id": "F",
+              "zh": "男朋友",
+              "py": "nánpéngyou",
+              "vi": "bạn trai"
+            }
+          ],
+          "answer": "D",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "blank-4",
+          "label": {
+            "zh": "图片4",
+            "vi": "Hình 4"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "北京",
+              "py": "Běijīng",
+              "vi": "Bắc Kinh"
+            },
+            {
+              "id": "B",
+              "zh": "好玩儿",
+              "py": "hǎowánr",
+              "vi": "vui; thú vị"
+            },
+            {
+              "id": "C",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            },
+            {
+              "id": "D",
+              "zh": "早饭",
+              "py": "zǎofàn",
+              "vi": "bữa sáng"
+            },
+            {
+              "id": "E",
+              "zh": "早",
+              "py": "zǎo",
+              "vi": "sớm"
+            },
+            {
+              "id": "F",
+              "zh": "男朋友",
+              "py": "nánpéngyou",
+              "vi": "bạn trai"
+            }
+          ],
+          "answer": "E",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "blank-5",
+          "label": {
+            "zh": "图片5",
+            "vi": "Hình 5"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "北京",
+              "py": "Běijīng",
+              "vi": "Bắc Kinh"
+            },
+            {
+              "id": "B",
+              "zh": "好玩儿",
+              "py": "hǎowánr",
+              "vi": "vui; thú vị"
+            },
+            {
+              "id": "C",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            },
+            {
+              "id": "D",
+              "zh": "早饭",
+              "py": "zǎofàn",
+              "vi": "bữa sáng"
+            },
+            {
+              "id": "E",
+              "zh": "早",
+              "py": "zǎo",
+              "vi": "sớm"
+            },
+            {
+              "id": "F",
+              "zh": "男朋友",
+              "py": "nánpéngyou",
+              "vi": "bạn trai"
+            }
+          ],
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "blank-6",
+          "label": {
+            "zh": "图片6",
+            "vi": "Hình 6"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "北京",
+              "py": "Běijīng",
+              "vi": "Bắc Kinh"
+            },
+            {
+              "id": "B",
+              "zh": "好玩儿",
+              "py": "hǎowánr",
+              "vi": "vui; thú vị"
+            },
+            {
+              "id": "C",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            },
+            {
+              "id": "D",
+              "zh": "早饭",
+              "py": "zǎofàn",
+              "vi": "bữa sáng"
+            },
+            {
+              "id": "E",
+              "zh": "早",
+              "py": "zǎo",
+              "vi": "sớm"
+            },
+            {
+              "id": "F",
+              "zh": "男朋友",
+              "py": "nánpéngyou",
+              "vi": "bạn trai"
+            }
+          ],
+          "answer": "F",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 12
+          }
+        }
+      ],
+      "figure": "l15-warmup-six-panels",
+      "figureSHA256": "da63bccafd458381864b4626ea2c95440e3242764fc4bae7f9927e386118c737"
+    },
+    {
+      "id": "hsk1-original-2026-l15-p113-text-1-listening-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 113,
+        "pdfPage": 128,
+        "section": "text-1-listening",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文1 · 听力选择",
+        "vi": "Bài đọc 1 · Nghe và chọn"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "在李文家，李文邀请陈天中、白家月等朋友品尝中餐。",
+        "vi": "Tại nhà Lý Văn, Lý Văn mời Trần Thiên Trung, Bạch Gia Nguyệt và các bạn thưởng thức món Trung Quốc."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "（1）李文问大家（　）吃哪个菜。",
+            "vi": "(1) Lý Văn hỏi mọi người (　) ăn món nào."
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "好",
+              "py": "hǎo",
+              "vi": "ngon; tốt"
+            },
+            {
+              "id": "B",
+              "zh": "爱",
+              "py": "ài",
+              "vi": "thích"
+            },
+            {
+              "id": "C",
+              "zh": "不爱",
+              "py": "bú ài",
+              "vi": "không thích"
+            }
+          ],
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 12
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 113,
+            "pdfPage": 128,
+            "section": "text-1-listening",
+            "ordinal": 1
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "（2）李文说：“大家（　）。”",
+            "vi": "(2) Lý Văn nói: “Mọi người (　).”"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "吃点儿",
+              "py": "chī diǎnr",
+              "vi": "ăn một chút"
+            },
+            {
+              "id": "B",
+              "zh": "少吃点儿",
+              "py": "shǎo chī diǎnr",
+              "vi": "ăn ít đi một chút"
+            },
+            {
+              "id": "C",
+              "zh": "多吃点儿",
+              "py": "duō chī diǎnr",
+              "vi": "ăn thêm một chút"
+            }
+          ],
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 12
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 113,
+            "pdfPage": 128,
+            "section": "text-1-listening",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l15-text-1",
+        "track": "15-1",
+        "plays": 2,
+        "verifiedByListening": false
+      },
+      "contextSource": {
+        "printedPage": 113,
+        "pdfPage": 128
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p113-text-1-role-reading-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 113,
+        "pdfPage": 128,
+        "section": "text-1-role-reading",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文1 · 分角色朗读",
+        "vi": "Bài đọc 1 · Đọc phân vai"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Đọc hội thoại theo vai."
+      },
+      "prompt": {
+        "zh": "李文：你们爱吃哪个菜？\n白家月：我喜欢这个，也喜欢那个。\n陈天中：这些菜都好吃，还很好看。\n李文：我爱吃中国菜，也喜欢做。大家多吃点儿。",
+        "vi": "李文：Các bạn thích ăn món nào?\n白家月：Tôi thích món này, cũng thích món kia.\n陈天中：Những món này đều ngon, lại còn rất đẹp mắt.\n李文：Tôi thích ăn món Trung Quốc, cũng thích nấu. Mọi người ăn thêm nhé."
+      },
+      "fields": [],
+      "existingSceneId": "textbook-l15-text-1",
+      "dialoguePrintedPages": [
+        113
+      ],
+      "figure": "l15-text-1-photo",
+      "figureSHA256": "979e7aaadc62fc8f48e2196c11816f6f00bcb90be146dbcc565c484f860f7d17",
+      "pinyin": "李文：Nǐmen ài chī nǎge cài?\n白家月：Wǒ xǐhuan zhège, yě xǐhuan nàge.\n陈天中：Zhèxiē cài dōu hǎochī, hái hěn hǎokàn.\n李文：Wǒ ài chī Zhōngguócài, yě xǐhuan zuò. Dàjiā duō chī diǎnr.",
+      "pinyinProvenance": {
+        "basis": "manually-transcribed-from-source-page",
+        "printedPages": [
+          113
+        ],
+        "style": "source-word-grouping; punctuation normalized",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p113-text-1-questions-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "open-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 113,
+        "pdfPage": 128,
+        "section": "text-1-questions",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文1 · 回答问题",
+        "vi": "Bài đọc 1 · Trả lời câu hỏi"
+      },
+      "instruction": {
+        "zh": "根据课文内容回答问题。",
+        "vi": "Trả lời câu hỏi theo nội dung bài đọc."
+      },
+      "prompt": {
+        "zh": "请用自己的话回答。",
+        "vi": "Hãy trả lời bằng lời của bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "白家月爱吃哪个菜？",
+            "vi": "Bạch Gia Nguyệt thích ăn món nào?"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "李文做饭好吃不好吃？",
+            "vi": "Lý Văn nấu ăn có ngon không?"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l15-p113-vocabulary-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 113,
+        "pdfPage": 128,
+        "section": "vocabulary",
+        "ordinal": 1,
+        "endOrdinal": 2
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序阅读生词。",
+        "vi": "Đọc từ mới theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "Số"
+          },
+          {
+            "zh": "生词与释义",
+            "vi": "Từ và nghĩa"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性",
+            "vi": "Từ loại"
+          }
+        ],
+        "rows": [
+          {
+            "id": "vocab-01",
+            "cells": [
+              {
+                "text": {
+                  "zh": "1",
+                  "vi": "1"
+                }
+              },
+              {
+                "text": {
+                  "zh": "爱",
+                  "vi": "thích; thích ăn (trong bài này)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "ài",
+                  "vi": "ài"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-02",
+            "cells": [
+              {
+                "text": {
+                  "zh": "2",
+                  "vi": "2"
+                }
+              },
+              {
+                "text": {
+                  "zh": "哪个",
+                  "vi": "cái nào; người nào"
+                }
+              },
+              {
+                "text": {
+                  "zh": "nǎge",
+                  "vi": "nǎge"
+                }
+              },
+              {
+                "text": {
+                  "zh": "pron.",
+                  "vi": "đại từ"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p113-xiaoyu-tip-1-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "read-only",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 113,
+        "pdfPage": 128,
+        "section": "xiaoyu-tip-1",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "小语助力",
+        "vi": "Mẹo của Tiểu Ngữ"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "劝饭是一种中式餐桌文化，体现了中国人的热情好客。",
+        "vi": "Mời khách ăn thêm là một nét văn hóa bàn ăn Trung Quốc, thể hiện lòng hiếu khách."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l15-p114-grammar-reading-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 114,
+        "pdfPage": 129,
+        "section": "grammar-reading",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "并列复句“……，还/也……”",
+        "vi": "Câu phức đẳng lập “……，还/也……”"
+      },
+      "instruction": {
+        "zh": "大声朗读。",
+        "vi": "Đọc to."
+      },
+      "prompt": {
+        "zh": "并列复句由两个或两个以上逻辑关联、结构对称的小句构成。本册学习并列复句“……，还/也……”。\n\n（1）我喜欢这个，也喜欢那个。\n（2）王老师是北京人，李文也是北京人。\n（3）我喜欢喝中国茶，还喜欢吃中国菜。",
+        "vi": "Câu phức đẳng lập gồm hai hoặc nhiều mệnh đề có quan hệ logic và cấu trúc đối xứng. Quyển này học câu phức đẳng lập “……，还/也……”.\n\n(1) Tôi thích cái này, cũng thích cái kia.\n(2) Cô Vương là người Bắc Kinh, Lý Văn cũng là người Bắc Kinh.\n(3) Tôi thích uống trà Trung Quốc, còn thích ăn món Trung Quốc."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l15-p114-text-2-listening-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 114,
+        "pdfPage": 129,
+        "section": "text-2-listening",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文2 · 听力选择",
+        "vi": "Bài đọc 2 · Nghe và chọn"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "在李文家，大家边吃饭边谈论假期计划。",
+        "vi": "Tại nhà Lý Văn, mọi người vừa ăn vừa nói về kế hoạch kỳ nghỉ."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "（1）安妮和她男朋友去年去了（　）。",
+            "vi": "(1) Năm ngoái Annie và bạn trai đã đến (　)."
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "西安",
+              "py": "Xī’ān",
+              "vi": "Tây An"
+            },
+            {
+              "id": "B",
+              "zh": "北京",
+              "py": "Běijīng",
+              "vi": "Bắc Kinh"
+            },
+            {
+              "id": "C",
+              "zh": "学校",
+              "py": "xuéxiào",
+              "vi": "trường học"
+            }
+          ],
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 13
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 114,
+            "pdfPage": 129,
+            "section": "text-2-listening",
+            "ordinal": 1
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "（2）王老师和李文都是（　）。",
+            "vi": "(2) Cô Vương và Lý Văn đều là (　)."
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "西安人",
+              "py": "Xī’ān rén",
+              "vi": "người Tây An"
+            },
+            {
+              "id": "B",
+              "zh": "北京人",
+              "py": "Běijīng rén",
+              "vi": "người Bắc Kinh"
+            },
+            {
+              "id": "C",
+              "zh": "哪里人",
+              "py": "nǎlǐ rén",
+              "vi": "người ở đâu"
+            }
+          ],
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 13
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 114,
+            "pdfPage": 129,
+            "section": "text-2-listening",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l15-text-2",
+        "track": "15-3",
+        "plays": 2,
+        "verifiedByListening": false
+      },
+      "contextSource": {
+        "printedPage": 114,
+        "pdfPage": 129
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p115-vocabulary-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 115,
+        "pdfPage": 130,
+        "section": "vocabulary",
+        "ordinal": 3,
+        "endOrdinal": 7
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序阅读生词。",
+        "vi": "Đọc từ mới theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "Số"
+          },
+          {
+            "zh": "生词与释义",
+            "vi": "Từ và nghĩa"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性",
+            "vi": "Từ loại"
+          }
+        ],
+        "rows": [
+          {
+            "id": "vocab-03",
+            "cells": [
+              {
+                "text": {
+                  "zh": "3",
+                  "vi": "3"
+                }
+              },
+              {
+                "text": {
+                  "zh": "去年",
+                  "vi": "năm ngoái"
+                }
+              },
+              {
+                "text": {
+                  "zh": "qùnián",
+                  "vi": "qùnián"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-04",
+            "cells": [
+              {
+                "text": {
+                  "zh": "4",
+                  "vi": "4"
+                }
+              },
+              {
+                "text": {
+                  "zh": "男朋友",
+                  "vi": "bạn trai"
+                }
+              },
+              {
+                "text": {
+                  "zh": "nánpéngyou",
+                  "vi": "nánpéngyou"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-05",
+            "cells": [
+              {
+                "text": {
+                  "zh": "5",
+                  "vi": "5"
+                }
+              },
+              {
+                "text": {
+                  "zh": "几",
+                  "vi": "vài; một vài (số lượng không xác định)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "jǐ",
+                  "vi": "jǐ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "num.",
+                  "vi": "số từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-06",
+            "cells": [
+              {
+                "text": {
+                  "zh": "6",
+                  "vi": "6"
+                }
+              },
+              {
+                "text": {
+                  "zh": "年",
+                  "vi": "năm"
+                }
+              },
+              {
+                "text": {
+                  "zh": "nián",
+                  "vi": "nián"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-07",
+            "cells": [
+              {
+                "text": {
+                  "zh": "7",
+                  "vi": "7"
+                }
+              },
+              {
+                "text": {
+                  "zh": "好玩儿",
+                  "vi": "vui; thú vị"
+                }
+              },
+              {
+                "text": {
+                  "zh": "hǎowánr",
+                  "vi": "hǎowánr"
+                }
+              },
+              {
+                "text": {
+                  "zh": "adj.",
+                  "vi": "tính từ"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p115-proper-nouns-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 115,
+        "pdfPage": 130,
+        "section": "proper-nouns",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "专有名词",
+        "vi": "Danh từ riêng"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序阅读。",
+        "vi": "Đọc theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "Số"
+          },
+          {
+            "zh": "专有名词",
+            "vi": "Danh từ riêng"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          }
+        ],
+        "rows": [
+          {
+            "id": "proper-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "1",
+                  "vi": "1"
+                }
+              },
+              {
+                "text": {
+                  "zh": "西安",
+                  "vi": "Tây An"
+                }
+              },
+              {
+                "text": {
+                  "zh": "Xī'ān",
+                  "vi": "Xī'ān"
+                }
+              }
+            ]
+          },
+          {
+            "id": "proper-2",
+            "cells": [
+              {
+                "text": {
+                  "zh": "2",
+                  "vi": "2"
+                }
+              },
+              {
+                "text": {
+                  "zh": "北京",
+                  "vi": "Bắc Kinh"
+                }
+              },
+              {
+                "text": {
+                  "zh": "Běijīng",
+                  "vi": "Běijīng"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p115-text-2-role-reading-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 115,
+        "pdfPage": 130,
+        "section": "text-2-role-reading",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文2 · 分角色朗读",
+        "vi": "Bài đọc 2 · Đọc phân vai"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Đọc hội thoại theo vai."
+      },
+      "prompt": {
+        "zh": "李文：你们都想去哪儿？\n安妮：去年我和男朋友去了西安，今年我想去北京。\n白家月：前几年我去了西安，非常好玩儿。今年我也想去北京。\n李文：我和王老师都是北京人，北京非常漂亮。",
+        "vi": "李文：Các bạn đều muốn đi đâu?\n安妮：Năm ngoái tôi và bạn trai đã đi Tây An; năm nay tôi muốn đi Bắc Kinh.\n白家月：Vài năm trước tôi đã đi Tây An, rất thú vị. Năm nay tôi cũng muốn đi Bắc Kinh.\n李文：Tôi và cô Vương đều là người Bắc Kinh; Bắc Kinh rất đẹp."
+      },
+      "fields": [],
+      "existingSceneId": "textbook-l15-text-2",
+      "dialoguePrintedPages": [
+        115
+      ],
+      "figure": "l15-text-2-photo",
+      "figureSHA256": "eedc5efd92e1bd98116571b14fdbbadfa93d81bafd98eae3c1eb48cbb75e3c1f",
+      "pinyin": "李文：Nǐmen dōu xiǎng qù nǎr?\n安妮：Qùnián wǒ hé nánpéngyou qùle Xī’ān, jīnnián wǒ xiǎng qù Běijīng.\n白家月：Qián jǐ nián wǒ qùle Xī’ān, fēicháng hǎowánr. Jīnnián wǒ yě xiǎng qù Běijīng.\n李文：Wǒ hé Wáng lǎoshī dōu shì Běijīng rén, Běijīng fēicháng piàoliang.",
+      "pinyinProvenance": {
+        "basis": "manually-transcribed-from-source-page",
+        "printedPages": [
+          115
+        ],
+        "style": "source-word-grouping; punctuation normalized",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p115-text-2-questions-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "open-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 115,
+        "pdfPage": 130,
+        "section": "text-2-questions",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文2 · 回答问题",
+        "vi": "Bài đọc 2 · Trả lời câu hỏi"
+      },
+      "instruction": {
+        "zh": "根据课文内容回答问题。",
+        "vi": "Trả lời câu hỏi theo nội dung bài đọc."
+      },
+      "prompt": {
+        "zh": "请用自己的话回答。",
+        "vi": "Hãy trả lời bằng lời của bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "安妮今年想去哪儿？",
+            "vi": "Năm nay Annie muốn đi đâu?"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "前几年白家月去了哪儿？",
+            "vi": "Mấy năm trước Bạch Gia Nguyệt đã đi đâu?"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l15-p116-text-3-listening-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 116,
+        "pdfPage": 131,
+        "section": "text-3-listening",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文3 · 听力选择",
+        "vi": "Bài đọc 3 · Nghe và chọn"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "在教室外，白家月、安妮和王老师在谈论去北京旅游的事。",
+        "vi": "Ngoài lớp, Bạch Gia Nguyệt, Annie và cô Vương nói chuyện đi du lịch Bắc Kinh."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "（1）白家月和安妮坐（　）去北京。",
+            "vi": "(1) Bạch Gia Nguyệt và Annie đi (　) đến Bắc Kinh."
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "火车",
+              "py": "huǒchē",
+              "vi": "tàu hỏa"
+            },
+            {
+              "id": "B",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            },
+            {
+              "id": "C",
+              "zh": "出租车",
+              "py": "chūzūchē",
+              "vi": "taxi"
+            }
+          ],
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 13
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 116,
+            "pdfPage": 131,
+            "section": "text-3-listening",
+            "ordinal": 1
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "（2）王老师的（　）都在北京。",
+            "vi": "(2) (　) của cô Vương đều ở Bắc Kinh."
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "家人",
+              "py": "jiārén",
+              "vi": "người nhà"
+            },
+            {
+              "id": "B",
+              "zh": "朋友",
+              "py": "péngyou",
+              "vi": "bạn bè"
+            },
+            {
+              "id": "C",
+              "zh": "学生",
+              "py": "xuésheng",
+              "vi": "học sinh"
+            }
+          ],
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 13
+          },
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 116,
+            "pdfPage": 131,
+            "section": "text-3-listening",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l15-text-3",
+        "track": "15-5",
+        "plays": 2,
+        "verifiedByListening": false
+      },
+      "contextSource": {
+        "printedPage": 116,
+        "pdfPage": 131
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p117-vocabulary-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 117,
+        "pdfPage": 132,
+        "section": "vocabulary",
+        "ordinal": 8,
+        "endOrdinal": 17
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序阅读生词。",
+        "vi": "Đọc từ mới theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "Số"
+          },
+          {
+            "zh": "生词与释义",
+            "vi": "Từ và nghĩa"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性",
+            "vi": "Từ loại"
+          }
+        ],
+        "rows": [
+          {
+            "id": "vocab-08",
+            "cells": [
+              {
+                "text": {
+                  "zh": "8",
+                  "vi": "8"
+                }
+              },
+              {
+                "text": {
+                  "zh": "飞机",
+                  "vi": "máy bay"
+                }
+              },
+              {
+                "text": {
+                  "zh": "fēijī",
+                  "vi": "fēijī"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-09",
+            "cells": [
+              {
+                "text": {
+                  "zh": "9",
+                  "vi": "9"
+                }
+              },
+              {
+                "text": {
+                  "zh": "要",
+                  "vi": "cần; mất (thời gian)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "yào",
+                  "vi": "yào"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-10",
+            "cells": [
+              {
+                "text": {
+                  "zh": "10",
+                  "vi": "10"
+                }
+              },
+              {
+                "text": {
+                  "zh": "小时",
+                  "vi": "giờ; tiếng đồng hồ (thời lượng)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "xiǎoshí",
+                  "vi": "xiǎoshí"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-11",
+            "cells": [
+              {
+                "text": {
+                  "zh": "11",
+                  "vi": "11"
+                }
+              },
+              {
+                "text": {
+                  "zh": "家人",
+                  "vi": "người nhà; thành viên gia đình"
+                }
+              },
+              {
+                "text": {
+                  "zh": "jiārén",
+                  "vi": "jiārén"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-12",
+            "cells": [
+              {
+                "text": {
+                  "zh": "12",
+                  "vi": "12"
+                }
+              },
+              {
+                "text": {
+                  "zh": "时间",
+                  "vi": "thời gian"
+                }
+              },
+              {
+                "text": {
+                  "zh": "shíjiān",
+                  "vi": "shíjiān"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-13",
+            "cells": [
+              {
+                "text": {
+                  "zh": "13",
+                  "vi": "13"
+                }
+              },
+              {
+                "text": {
+                  "zh": "机场",
+                  "vi": "sân bay"
+                }
+              },
+              {
+                "text": {
+                  "zh": "jīchǎng",
+                  "vi": "jīchǎng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "danh từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-14",
+            "cells": [
+              {
+                "text": {
+                  "zh": "14",
+                  "vi": "14"
+                }
+              },
+              {
+                "text": {
+                  "zh": "接",
+                  "vi": "đón (người)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "jiē",
+                  "vi": "jiē"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-15",
+            "cells": [
+              {
+                "text": {
+                  "zh": "15",
+                  "vi": "15"
+                }
+              },
+              {
+                "text": {
+                  "zh": "住",
+                  "vi": "ở; sống; lưu trú"
+                }
+              },
+              {
+                "text": {
+                  "zh": "zhù",
+                  "vi": "zhù"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "động từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-16",
+            "cells": [
+              {
+                "text": {
+                  "zh": "16",
+                  "vi": "16"
+                }
+              },
+              {
+                "text": {
+                  "zh": "早",
+                  "vi": "sớm"
+                }
+              },
+              {
+                "text": {
+                  "zh": "zǎo",
+                  "vi": "zǎo"
+                }
+              },
+              {
+                "text": {
+                  "zh": "adj.",
+                  "vi": "tính từ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vocab-17",
+            "cells": [
+              {
+                "text": {
+                  "zh": "17",
+                  "vi": "17"
+                }
+              },
+              {
+                "text": {
+                  "zh": "那",
+                  "vi": "vậy; thế thì (nối tiếp lời nói)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "nà",
+                  "vi": "nà"
+                }
+              },
+              {
+                "text": {
+                  "zh": "conj.",
+                  "vi": "liên từ"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p117-proper-nouns-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 117,
+        "pdfPage": 132,
+        "section": "proper-nouns",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "专有名词",
+        "vi": "Danh từ riêng"
+      },
+      "instruction": {
+        "zh": "阅读原书内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序阅读。",
+        "vi": "Đọc theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "Số"
+          },
+          {
+            "zh": "专有名词",
+            "vi": "Danh từ riêng"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          }
+        ],
+        "rows": [
+          {
+            "id": "proper-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "3",
+                  "vi": "3"
+                }
+              },
+              {
+                "text": {
+                  "zh": "大兴机场",
+                  "vi": "sân bay Đại Hưng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "Dàxīng Jīchǎng",
+                  "vi": "Dàxīng Jīchǎng"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p117-text-3-role-reading-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 117,
+        "pdfPage": 132,
+        "section": "text-3-role-reading",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文3 · 分角色朗读",
+        "vi": "Bài đọc 3 · Đọc phân vai"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Đọc hội thoại theo vai."
+      },
+      "prompt": {
+        "zh": "王一飞：你们的飞机到北京要几个小时？\n白家月：九个小时。\n王一飞：我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。\n安妮：我们星期日早上八点到大兴机场，早不早？\n王一飞：不早。\n白家月：谢谢老师！那我们和您姐姐在大兴机场见！",
+        "vi": "王一飞：Máy bay của các em đến Bắc Kinh mất mấy giờ?\n白家月：Chín giờ đồng hồ.\n王一飞：Cả nhà cô đều ở Bắc Kinh. Chủ nhật chị cô cũng rảnh, chị ấy có thể ra sân bay đón các em; các em cũng có thể ở nhà cô.\n安妮：Chúng em đến Sân bay Đại Hưng lúc tám giờ sáng Chủ nhật. Có sớm không ạ?\n王一飞：Không sớm.\n白家月：Cảm ơn cô! Vậy chúng em hẹn gặp chị cô ở Sân bay Đại Hưng!"
+      },
+      "fields": [],
+      "existingSceneId": "textbook-l15-text-3",
+      "dialoguePrintedPages": [
+        117
+      ],
+      "figure": "l15-text-3-photo",
+      "figureSHA256": "178b9fd82aff164b455030c0e37dbf49ba218e63a0ba9307ef254cac7d50d0e2",
+      "pinyin": "王一飞：Nǐmen de fēijī dào Běijīng yào jǐ ge xiǎoshí?\n白家月：Jiǔ ge xiǎoshí.\n王一飞：Wǒ jiārén dōu zài Běijīng, xīngqītiān wǒ jiějie yě yǒu shíjiān, tā kěyǐ qù jīchǎng jiē nǐmen, nǐmen yě kěyǐ zhù wǒ jiā.\n安妮：Wǒmen Xīngqīrì zǎoshang bā diǎn dào Dàxīng Jīchǎng, zǎo bu zǎo?\n王一飞：Bù zǎo.\n白家月：Xièxie lǎoshī! Nà wǒmen hé nín jiějie zài Dàxīng Jīchǎng jiàn!",
+      "pinyinProvenance": {
+        "basis": "manually-transcribed-from-source-page",
+        "printedPages": [
+          117
+        ],
+        "style": "source-word-grouping; punctuation normalized",
+        "independentReview": "pending"
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p117-text-3-questions-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "open-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 117,
+        "pdfPage": 132,
+        "section": "text-3-questions",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课文3 · 回答问题",
+        "vi": "Bài đọc 3 · Trả lời câu hỏi"
+      },
+      "instruction": {
+        "zh": "根据课文内容回答问题。",
+        "vi": "Trả lời câu hỏi theo nội dung bài đọc."
+      },
+      "prompt": {
+        "zh": "请用自己的话回答。",
+        "vi": "Hãy trả lời bằng lời của bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "大兴机场在哪儿？",
+            "vi": "Sân bay Đại Hưng ở đâu?"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "王老师的姐姐可以去接白家月和安妮吗？",
+            "vi": "Chị của cô Vương có thể đi đón Bạch Gia Nguyệt và Annie không?"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l15-p118-comprehensive-cloze-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "word-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "section": "comprehensive-cloze",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "选词填空（1）",
+        "vi": "Chọn từ điền vào chỗ trống (1)"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "这本书有15课，我们______学了。",
+        "vi": "Cuốn sách này có 15 bài, chúng tôi đã học hết rồi.\n\nNghĩa toàn câu để hiểu ngữ cảnh; chỉ điền các chỗ trống trong câu tiếng Trung, không điền từng từ vào bản dịch."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "爱",
+              "py": "ài",
+              "vi": "thích"
+            },
+            {
+              "id": "B",
+              "zh": "时间",
+              "py": "shíjiān",
+              "vi": "thời gian"
+            },
+            {
+              "id": "C",
+              "zh": "早不早",
+              "py": "zǎo bu zǎo",
+              "vi": "có sớm không"
+            },
+            {
+              "id": "D",
+              "zh": "都",
+              "py": "dōu",
+              "vi": "đều"
+            },
+            {
+              "id": "E",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            }
+          ],
+          "answer": "D",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "translationPolicy": "Vietnamese gives complete meaning, not blank-by-blank word alignment."
+    },
+    {
+      "id": "hsk1-original-2026-l15-p118-comprehensive-cloze-02",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "word-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "section": "comprehensive-cloze",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "选词填空（2）",
+        "vi": "Chọn từ điền vào chỗ trống (2)"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "我的家人都______喝茶。",
+        "vi": "Mọi người trong gia đình tôi đều thích uống trà.\n\nNghĩa toàn câu để hiểu ngữ cảnh; chỉ điền các chỗ trống trong câu tiếng Trung, không điền từng từ vào bản dịch."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "爱",
+              "py": "ài",
+              "vi": "thích"
+            },
+            {
+              "id": "B",
+              "zh": "时间",
+              "py": "shíjiān",
+              "vi": "thời gian"
+            },
+            {
+              "id": "C",
+              "zh": "早不早",
+              "py": "zǎo bu zǎo",
+              "vi": "có sớm không"
+            },
+            {
+              "id": "D",
+              "zh": "都",
+              "py": "dōu",
+              "vi": "đều"
+            },
+            {
+              "id": "E",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            }
+          ],
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "translationPolicy": "Vietnamese gives complete meaning, not blank-by-blank word alignment."
+    },
+    {
+      "id": "hsk1-original-2026-l15-p118-comprehensive-cloze-03",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "word-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "section": "comprehensive-cloze",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "选词填空（3）",
+        "vi": "Chọn từ điền vào chỗ trống (3)"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "陈天中：我们明天晚上六点到，你觉得______？\n李文：不早。",
+        "vi": "Trần Thiên Trung: Tối mai chúng tôi đến lúc sáu giờ, bạn thấy có sớm không?\nLý Văn: Không sớm.\n\nNghĩa toàn câu để hiểu ngữ cảnh; chỉ điền các chỗ trống trong câu tiếng Trung, không điền từng từ vào bản dịch."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "爱",
+              "py": "ài",
+              "vi": "thích"
+            },
+            {
+              "id": "B",
+              "zh": "时间",
+              "py": "shíjiān",
+              "vi": "thời gian"
+            },
+            {
+              "id": "C",
+              "zh": "早不早",
+              "py": "zǎo bu zǎo",
+              "vi": "có sớm không"
+            },
+            {
+              "id": "D",
+              "zh": "都",
+              "py": "dōu",
+              "vi": "đều"
+            },
+            {
+              "id": "E",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            }
+          ],
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "translationPolicy": "Vietnamese gives complete meaning, not blank-by-blank word alignment."
+    },
+    {
+      "id": "hsk1-original-2026-l15-p118-comprehensive-cloze-04",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "word-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "section": "comprehensive-cloze",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "选词填空（4）",
+        "vi": "Chọn từ điền vào chỗ trống (4)"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "王一飞：她们想坐______去北京，你们呢？\n陈天中：我们没有______，不能出去玩。",
+        "vi": "Vương Nhất Phi: Họ muốn đi máy bay đến Bắc Kinh, còn các bạn?\nTrần Thiên Trung: Chúng tôi không có thời gian, không thể đi chơi.\n\nNghĩa toàn câu để hiểu ngữ cảnh; chỉ điền các chỗ trống trong câu tiếng Trung, không điền từng từ vào bản dịch."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "爱",
+              "py": "ài",
+              "vi": "thích"
+            },
+            {
+              "id": "B",
+              "zh": "时间",
+              "py": "shíjiān",
+              "vi": "thời gian"
+            },
+            {
+              "id": "C",
+              "zh": "早不早",
+              "py": "zǎo bu zǎo",
+              "vi": "có sớm không"
+            },
+            {
+              "id": "D",
+              "zh": "都",
+              "py": "dōu",
+              "vi": "đều"
+            },
+            {
+              "id": "E",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            }
+          ],
+          "answer": "E",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "select",
+          "assessment": "answer-key",
+          "options": [
+            {
+              "id": "A",
+              "zh": "爱",
+              "py": "ài",
+              "vi": "thích"
+            },
+            {
+              "id": "B",
+              "zh": "时间",
+              "py": "shíjiān",
+              "vi": "thời gian"
+            },
+            {
+              "id": "C",
+              "zh": "早不早",
+              "py": "zǎo bu zǎo",
+              "vi": "có sớm không"
+            },
+            {
+              "id": "D",
+              "zh": "都",
+              "py": "dōu",
+              "vi": "đều"
+            },
+            {
+              "id": "E",
+              "zh": "飞机",
+              "py": "fēijī",
+              "vi": "máy bay"
+            }
+          ],
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "translationPolicy": "Vietnamese gives complete meaning, not blank-by-blank word alignment."
+    },
+    {
+      "id": "hsk1-original-2026-l15-p118-picture-description-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "section": "picture-description",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "看图表达（1）",
+        "vi": "Miêu tả hình (1)"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ mới và điểm ngữ pháp của bài này để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "我爱吃面包，______。",
+        "vi": "Tôi thích ăn bánh mì, ______."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "figure": "l15-picture-01",
+      "figureSHA256": "edab153e55b6f1f8f146ea1deb17b5d511996ea127c882da464ac05c72a3198c"
+    },
+    {
+      "id": "hsk1-original-2026-l15-p118-picture-description-02",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "section": "picture-description",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "看图表达（2）",
+        "vi": "Miêu tả hình (2)"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ mới và điểm ngữ pháp của bài này để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "去年我去______。",
+        "vi": "Năm ngoái tôi đến ______."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "figure": "l15-picture-02",
+      "figureSHA256": "484f6c6869e063025faab6c4692bb963ed84cec351a40dee9d0445e20be99292"
+    },
+    {
+      "id": "hsk1-original-2026-l15-p118-picture-description-03",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "section": "picture-description",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "看图表达（3）",
+        "vi": "Miêu tả hình (3)"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ mới và điểm ngữ pháp của bài này để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "王一飞的姐姐______。",
+        "vi": "Chị của Vương Nhất Phi ______."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "figure": "l15-picture-03",
+      "figureSHA256": "36c9ef3351cac068a08fc4385b552b36460e88cdd2177bd1b7bb2611cee35044"
+    },
+    {
+      "id": "hsk1-original-2026-l15-p118-picture-description-04",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "section": "picture-description",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "看图表达（4）",
+        "vi": "Miêu tả hình (4)"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ mới và điểm ngữ pháp của bài này để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "王老师是______人，她______。",
+        "vi": "Cô Vương là người ______, cô ấy ______."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "figure": "l15-picture-04",
+      "figureSHA256": "b98bbeebf40ed3e9ad5bba0b1979319837f0a8d18962c1410c0dee9db50f9f47"
+    },
+    {
+      "id": "hsk1-original-2026-l15-p119-classroom-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "open-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 119,
+        "pdfPage": 134,
+        "section": "classroom",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "角色扮演",
+        "vi": "Đóng vai"
+      },
+      "instruction": {
+        "zh": "三个人分别扮演李文、陈天中和白家月，李文邀请陈天中和白家月做客，一起做中国菜。",
+        "vi": "Ba người lần lượt đóng vai Lý Văn, Trần Thiên Trung và Bạch Gia Nguyệt. Lý Văn mời hai bạn đến nhà, cùng nấu món Trung Quốc."
+      },
+      "prompt": {
+        "zh": "记录你们的对话或表达。",
+        "vi": "Ghi lại hội thoại hoặc phần trình bày của nhóm."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "活动记录",
+            "vi": "Ghi chép hoạt động"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "example": {
+        "zh": "李文：天中、家月，你们星期六有时间吗？\n陈天中：我有时间。\n白家月：我也有时间。\n李文：太好了！你们都来我家吧，我们做中国菜吃，怎么样？\n……",
+        "vi": "Lý Văn: Thiên Trung, Gia Nguyệt, thứ Bảy các bạn có rảnh không?\nTrần Thiên Trung: Tôi rảnh.\nBạch Gia Nguyệt: Tôi cũng rảnh.\nLý Văn: Tốt quá! Các bạn đến nhà tôi nhé, chúng mình nấu món Trung Quốc ăn, được không?\n…"
+      },
+      "exampleProvenance": {
+        "kind": "printed-example",
+        "printedPage": 119,
+        "pdfPage": 134,
+        "notUniqueAnswer": true
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p120-summary-vocabulary-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 120,
+        "pdfPage": 135,
+        "section": "summary-vocabulary",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "学习小结 · 词语学习",
+        "vi": "Tổng kết học tập · Từ vựng"
+      },
+      "instruction": {
+        "zh": "13～15课我的学习情况。",
+        "vi": "Tình hình học tập các bài 13～15."
+      },
+      "prompt": {
+        "zh": "填写词语。",
+        "vi": "Điền các từ."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "我已经记住并会使用的词语",
+            "vi": "Những từ tôi đã nhớ và biết dùng"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "我还没记住的词语",
+            "vi": "Những từ tôi chưa nhớ"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ],
+      "table": {
+        "columns": [
+          {
+            "zh": "词语学习",
+            "vi": "Học từ vựng"
+          },
+          {
+            "zh": "记录",
+            "vi": "Ghi chép"
+          }
+        ],
+        "rows": [
+          {
+            "id": "row-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "我已经记住并会使用的词语",
+                  "vi": "Những từ tôi đã nhớ và biết dùng"
+                }
+              },
+              {
+                "fieldId": "blank-1"
+              }
+            ]
+          },
+          {
+            "id": "row-2",
+            "cells": [
+              {
+                "text": {
+                  "zh": "我还没记住的词语",
+                  "vi": "Những từ tôi chưa nhớ"
+                }
+              },
+              {
+                "fieldId": "blank-2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p120-summary-skills-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "source-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 120,
+        "pdfPage": 135,
+        "section": "summary-skills",
+        "ordinal": 1,
+        "printedPages": [
+          120,
+          121
+        ],
+        "pdfPages": [
+          135,
+          136
+        ]
+      },
+      "title": {
+        "zh": "学习小结 · 我理解并会用",
+        "vi": "Tổng kết · Tôi hiểu và biết dùng"
+      },
+      "instruction": {
+        "zh": "分别记录“理解”和“会用”。",
+        "vi": "Tự đánh giá riêng hai mục “Hiểu” và “Biết dùng”."
+      },
+      "prompt": {
+        "zh": "按原书的两个维度自评。",
+        "vi": "Tự đánh giá theo hai cột của sách."
+      },
+      "fields": [
+        {
+          "id": "blank-1-understand",
+          "label": {
+            "zh": "能愿动词“可以”，例如：我可以吃吗？ · 理解",
+            "vi": "Động từ năng nguyện “可以”, ví dụ: Tôi có thể ăn không? · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 120,
+            "pdfPage": 135,
+            "section": "summary-skills",
+            "ordinal": 1
+          }
+        },
+        {
+          "id": "blank-1-use",
+          "label": {
+            "zh": "能愿动词“可以”，例如：我可以吃吗？ · 会用",
+            "vi": "Động từ năng nguyện “可以”, ví dụ: Tôi có thể ăn không? · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 120,
+            "pdfPage": 135,
+            "section": "summary-skills",
+            "ordinal": 1
+          }
+        },
+        {
+          "id": "blank-2-understand",
+          "label": {
+            "zh": "“动词+一下”结构，例如：看一下 · 理解",
+            "vi": "Kết cấu “động từ + 一下”, ví dụ: xem một chút · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 120,
+            "pdfPage": 135,
+            "section": "summary-skills",
+            "ordinal": 2
+          }
+        },
+        {
+          "id": "blank-2-use",
+          "label": {
+            "zh": "“动词+一下”结构，例如：看一下 · 会用",
+            "vi": "Kết cấu “động từ + 一下”, ví dụ: xem một chút · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 120,
+            "pdfPage": 135,
+            "section": "summary-skills",
+            "ordinal": 2
+          }
+        },
+        {
+          "id": "blank-3-understand",
+          "label": {
+            "zh": "双宾语句（1），例如：给我一杯水。 · 理解",
+            "vi": "Câu hai tân ngữ (1), ví dụ: Cho tôi một cốc nước. · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 120,
+            "pdfPage": 135,
+            "section": "summary-skills",
+            "ordinal": 3
+          }
+        },
+        {
+          "id": "blank-3-use",
+          "label": {
+            "zh": "双宾语句（1），例如：给我一杯水。 · 会用",
+            "vi": "Câu hai tân ngữ (1), ví dụ: Cho tôi một cốc nước. · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 120,
+            "pdfPage": 135,
+            "section": "summary-skills",
+            "ordinal": 3
+          }
+        },
+        {
+          "id": "blank-4-understand",
+          "label": {
+            "zh": "动态助词“了（2）”，例如：读了一本书 · 理解",
+            "vi": "Trợ từ động thái “了” (2), ví dụ: đã đọc một cuốn sách · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 120,
+            "pdfPage": 135,
+            "section": "summary-skills",
+            "ordinal": 4
+          }
+        },
+        {
+          "id": "blank-4-use",
+          "label": {
+            "zh": "动态助词“了（2）”，例如：读了一本书 · 会用",
+            "vi": "Trợ từ động thái “了” (2), ví dụ: đã đọc một cuốn sách · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 120,
+            "pdfPage": 135,
+            "section": "summary-skills",
+            "ordinal": 4
+          }
+        },
+        {
+          "id": "blank-5-understand",
+          "label": {
+            "zh": "离合词（1），例如：吃了饭，睡一觉 · 理解",
+            "vi": "Từ ly hợp (1), ví dụ: đã ăn cơm, ngủ một giấc · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 121,
+            "pdfPage": 136,
+            "section": "summary-skills",
+            "ordinal": 5
+          }
+        },
+        {
+          "id": "blank-5-use",
+          "label": {
+            "zh": "离合词（1），例如：吃了饭，睡一觉 · 会用",
+            "vi": "Từ ly hợp (1), ví dụ: đã ăn cơm, ngủ một giấc · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 121,
+            "pdfPage": 136,
+            "section": "summary-skills",
+            "ordinal": 5
+          }
+        },
+        {
+          "id": "blank-6-understand",
+          "label": {
+            "zh": "范围副词“都”，例如：我们都来了。 · 理解",
+            "vi": "Phó từ phạm vi “都”, ví dụ: Chúng tôi đều đến rồi. · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 121,
+            "pdfPage": 136,
+            "section": "summary-skills",
+            "ordinal": 6
+          }
+        },
+        {
+          "id": "blank-6-use",
+          "label": {
+            "zh": "范围副词“都”，例如：我们都来了。 · 会用",
+            "vi": "Phó từ phạm vi “都”, ví dụ: Chúng tôi đều đến rồi. · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 121,
+            "pdfPage": 136,
+            "section": "summary-skills",
+            "ordinal": 6
+          }
+        },
+        {
+          "id": "blank-7-understand",
+          "label": {
+            "zh": "并列复句“……，还/也……”，例如：我喜欢看书，也喜欢看电影。 · 理解",
+            "vi": "Câu phức đẳng lập “……，还/也……”, ví dụ: Tôi thích đọc sách, cũng thích xem phim. · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 121,
+            "pdfPage": 136,
+            "section": "summary-skills",
+            "ordinal": 7
+          }
+        },
+        {
+          "id": "blank-7-use",
+          "label": {
+            "zh": "并列复句“……，还/也……”，例如：我喜欢看书，也喜欢看电影。 · 会用",
+            "vi": "Câu phức đẳng lập “……，还/也……”, ví dụ: Tôi thích đọc sách, cũng thích xem phim. · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 121,
+            "pdfPage": 136,
+            "section": "summary-skills",
+            "ordinal": 7
+          }
+        },
+        {
+          "id": "blank-8-understand",
+          "label": {
+            "zh": "了解中国餐桌文化、待客礼仪。 · 理解",
+            "vi": "Hiểu văn hóa bàn ăn và nghi thức tiếp khách của Trung Quốc. · Hiểu"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 121,
+            "pdfPage": 136,
+            "section": "summary-skills",
+            "ordinal": 8
+          }
+        },
+        {
+          "id": "blank-8-use",
+          "label": {
+            "zh": "了解中国餐桌文化、待客礼仪。 · 会用",
+            "vi": "Hiểu văn hóa bàn ăn và nghi thức tiếp khách của Trung Quốc. · Biết dùng"
+          },
+          "input": "select",
+          "assessment": "ungraded",
+          "options": [
+            {
+              "id": "yes",
+              "zh": "已做到",
+              "vi": "Đã làm được",
+              "py": ""
+            },
+            {
+              "id": "not-yet",
+              "zh": "还需要练习",
+              "vi": "Cần luyện tập thêm",
+              "py": ""
+            }
+          ],
+          "source": {
+            "sourceRevision": "hsk1-print-2026-01",
+            "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+            "printedPage": 121,
+            "pdfPage": 136,
+            "section": "summary-skills",
+            "ordinal": 8
+          }
+        }
+      ],
+      "table": {
+        "columns": [
+          {
+            "zh": "内容",
+            "vi": "Nội dung"
+          },
+          {
+            "zh": "理解",
+            "vi": "Hiểu"
+          },
+          {
+            "zh": "会用",
+            "vi": "Biết dùng"
+          }
+        ],
+        "rows": [
+          {
+            "id": "row-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "能愿动词“可以”，例如：我可以吃吗？",
+                  "vi": "Động từ năng nguyện “可以”, ví dụ: Tôi có thể ăn không?"
+                }
+              },
+              {
+                "fieldId": "blank-1-understand"
+              },
+              {
+                "fieldId": "blank-1-use"
+              }
+            ]
+          },
+          {
+            "id": "row-2",
+            "cells": [
+              {
+                "text": {
+                  "zh": "“动词+一下”结构，例如：看一下",
+                  "vi": "Kết cấu “động từ + 一下”, ví dụ: xem một chút"
+                }
+              },
+              {
+                "fieldId": "blank-2-understand"
+              },
+              {
+                "fieldId": "blank-2-use"
+              }
+            ]
+          },
+          {
+            "id": "row-3",
+            "cells": [
+              {
+                "text": {
+                  "zh": "双宾语句（1），例如：给我一杯水。",
+                  "vi": "Câu hai tân ngữ (1), ví dụ: Cho tôi một cốc nước."
+                }
+              },
+              {
+                "fieldId": "blank-3-understand"
+              },
+              {
+                "fieldId": "blank-3-use"
+              }
+            ]
+          },
+          {
+            "id": "row-4",
+            "cells": [
+              {
+                "text": {
+                  "zh": "动态助词“了（2）”，例如：读了一本书",
+                  "vi": "Trợ từ động thái “了” (2), ví dụ: đã đọc một cuốn sách"
+                }
+              },
+              {
+                "fieldId": "blank-4-understand"
+              },
+              {
+                "fieldId": "blank-4-use"
+              }
+            ]
+          },
+          {
+            "id": "row-5",
+            "cells": [
+              {
+                "text": {
+                  "zh": "离合词（1），例如：吃了饭，睡一觉",
+                  "vi": "Từ ly hợp (1), ví dụ: đã ăn cơm, ngủ một giấc"
+                }
+              },
+              {
+                "fieldId": "blank-5-understand"
+              },
+              {
+                "fieldId": "blank-5-use"
+              }
+            ]
+          },
+          {
+            "id": "row-6",
+            "cells": [
+              {
+                "text": {
+                  "zh": "范围副词“都”，例如：我们都来了。",
+                  "vi": "Phó từ phạm vi “都”, ví dụ: Chúng tôi đều đến rồi."
+                }
+              },
+              {
+                "fieldId": "blank-6-understand"
+              },
+              {
+                "fieldId": "blank-6-use"
+              }
+            ]
+          },
+          {
+            "id": "row-7",
+            "cells": [
+              {
+                "text": {
+                  "zh": "并列复句“……，还/也……”，例如：我喜欢看书，也喜欢看电影。",
+                  "vi": "Câu phức đẳng lập “……，还/也……”, ví dụ: Tôi thích đọc sách, cũng thích xem phim."
+                }
+              },
+              {
+                "fieldId": "blank-7-understand"
+              },
+              {
+                "fieldId": "blank-7-use"
+              }
+            ]
+          },
+          {
+            "id": "row-8",
+            "cells": [
+              {
+                "text": {
+                  "zh": "了解中国餐桌文化、待客礼仪。",
+                  "vi": "Hiểu văn hóa bàn ăn và nghi thức tiếp khách của Trung Quốc."
+                }
+              },
+              {
+                "fieldId": "blank-8-understand"
+              },
+              {
+                "fieldId": "blank-8-use"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l15-p121-summary-improvement-01",
+      "version": "source-v1",
+      "lesson": 15,
+      "kind": "open-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 121,
+        "pdfPage": 136,
+        "section": "summary-improvement",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "我需要努力的",
+        "vi": "Những điểm tôi cần cải thiện"
+      },
+      "instruction": {
+        "zh": "写下接下来需要练习的内容。",
+        "vi": "Ghi lại nội dung cần luyện tập tiếp."
+      },
+      "prompt": {
+        "zh": "我需要努力的",
+        "vi": "Những điểm tôi cần cải thiện"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "记录",
+            "vi": "Ghi chép"
+          },
+          "input": "textarea",
+          "assessment": "ungraded"
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "l15-warmup-six-panels",
+      "file": "figures/l15-warmup-six-panels.png",
+      "alt": {
+        "zh": "六幅热身图；从左到右、从上到下对应图片1至6。",
+        "vi": "Sáu hình khởi động; thứ tự 1 đến 6 từ trái sang phải, từ trên xuống dưới."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 112,
+        "pdfPage": 127,
+        "cell": "warmup-six-panels",
+        "cropPdfPoints": [
+          52.30769,
+          458.46154,
+          494.61538,
+          661.53846
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "da63bccafd458381864b4626ea2c95440e3242764fc4bae7f9927e386118c737",
+      "note": {
+        "zh": "原书局部原图裁切；未重画，未补写图中文字。",
+        "vi": "Ảnh được cắt trực tiếp từ một phần trang sách gốc; không vẽ lại hoặc sửa chữ trong hình."
+      }
+    },
+    {
+      "id": "l15-picture-01",
+      "file": "figures/l15-picture-01.png",
+      "alt": {
+        "zh": "原书看图表达第1图",
+        "vi": "Hình 1 của bài miêu tả tranh trong sách"
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "cell": "picture-01",
+        "cropPdfPoints": [
+          72.30769,
+          359.23077,
+          279.23077,
+          513.07692
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "edab153e55b6f1f8f146ea1deb17b5d511996ea127c882da464ac05c72a3198c",
+      "note": {
+        "zh": "原书局部原图裁切；未重画，未补写图中文字。",
+        "vi": "Ảnh được cắt trực tiếp từ một phần trang sách gốc; không vẽ lại hoặc sửa chữ trong hình."
+      }
+    },
+    {
+      "id": "l15-picture-02",
+      "file": "figures/l15-picture-02.png",
+      "alt": {
+        "zh": "原书看图表达第2图",
+        "vi": "Hình 2 của bài miêu tả tranh trong sách"
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "cell": "picture-02",
+        "cropPdfPoints": [
+          286.92308,
+          359.23077,
+          494.61538,
+          513.07692
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "484f6c6869e063025faab6c4692bb963ed84cec351a40dee9d0445e20be99292",
+      "note": {
+        "zh": "原书局部原图裁切；未重画，未补写图中文字。",
+        "vi": "Ảnh được cắt trực tiếp từ một phần trang sách gốc; không vẽ lại hoặc sửa chữ trong hình."
+      }
+    },
+    {
+      "id": "l15-picture-03",
+      "file": "figures/l15-picture-03.png",
+      "alt": {
+        "zh": "原书看图表达第3图",
+        "vi": "Hình 3 của bài miêu tả tranh trong sách"
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "cell": "picture-03",
+        "cropPdfPoints": [
+          72.30769,
+          518.46154,
+          279.23077,
+          670.76923
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "36c9ef3351cac068a08fc4385b552b36460e88cdd2177bd1b7bb2611cee35044",
+      "note": {
+        "zh": "原书局部原图裁切；未重画，未补写图中文字。",
+        "vi": "Ảnh được cắt trực tiếp từ một phần trang sách gốc; không vẽ lại hoặc sửa chữ trong hình."
+      }
+    },
+    {
+      "id": "l15-picture-04",
+      "file": "figures/l15-picture-04.png",
+      "alt": {
+        "zh": "原书看图表达第4图",
+        "vi": "Hình 4 của bài miêu tả tranh trong sách"
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 118,
+        "pdfPage": 133,
+        "cell": "picture-04",
+        "cropPdfPoints": [
+          286.92308,
+          518.46154,
+          494.61538,
+          670.76923
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "b98bbeebf40ed3e9ad5bba0b1979319837f0a8d18962c1410c0dee9db50f9f47",
+      "note": {
+        "zh": "原书局部原图裁切；未重画，未补写图中文字。",
+        "vi": "Ảnh được cắt trực tiếp từ một phần trang sách gốc; không vẽ lại hoặc sửa chữ trong hình."
+      }
+    },
+    {
+      "id": "l15-text-1-photo",
+      "file": "figures/l15-text-1-photo.png",
+      "alt": {
+        "zh": "李文请朋友品尝的中国菜。",
+        "vi": "Các món Trung Quốc Lý Văn mời bạn thưởng thức."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 113,
+        "pdfPage": 128,
+        "cell": "text-1-photo",
+        "cropPdfPoints": [
+          317.69231,
+          307.69231,
+          540.76923,
+          443.07692
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "979e7aaadc62fc8f48e2196c11816f6f00bcb90be146dbcc565c484f860f7d17",
+      "note": {
+        "zh": "原书配图局部原图裁切，未重画。",
+        "vi": "Ảnh minh họa được cắt trực tiếp từ sách, không vẽ lại."
+      }
+    },
+    {
+      "id": "l15-text-2-photo",
+      "file": "figures/l15-text-2-photo.png",
+      "alt": {
+        "zh": "上下两幅照片分别是西安和北京，附原书地名。",
+        "vi": "Hai ảnh lần lượt là Tây An và Bắc Kinh, kèm địa danh trong sách."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 115,
+        "pdfPage": 130,
+        "cell": "text-2-photo",
+        "cropPdfPoints": [
+          364.61538,
+          58.46154,
+          543.84615,
+          363.84615
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "eedc5efd92e1bd98116571b14fdbbadfa93d81bafd98eae3c1eb48cbb75e3c1f",
+      "note": {
+        "zh": "原书配图局部原图裁切，未重画。",
+        "vi": "Ảnh minh họa được cắt trực tiếp từ sách, không vẽ lại."
+      }
+    },
+    {
+      "id": "l15-text-3-photo",
+      "file": "figures/l15-text-3-photo.png",
+      "alt": {
+        "zh": "大兴机场航站楼鸟瞰图。",
+        "vi": "Ảnh nhìn từ trên cao của nhà ga sân bay Đại Hưng."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 116,
+        "pdfPage": 131,
+        "cell": "text-3-photo",
+        "cropPdfPoints": [
+          53.84615,
+          308.46154,
+          497.69231,
+          660.76923
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "178b9fd82aff164b455030c0e37dbf49ba218e63a0ba9307ef254cac7d50d0e2",
+      "note": {
+        "zh": "原书配图局部原图裁切，未重画。",
+        "vi": "Ảnh minh họa được cắt trực tiếp từ sách, không vẽ lại."
+      }
+    }
+  ],
+  "coverage": {
+    "sourcePages": [
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121
+    ],
+    "pdfPagesVisuallyInspected": [
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136
+    ],
+    "independentReview": "pending",
+    "audioHumanReview": "pending",
+    "runtimeVerification": "not-run"
+  },
+  "bonus": {
+    "id": "hsk1-original-l15-bonus",
+    "title": {
+      "zh": "北京欢迎你",
+      "vi": "Bắc Kinh chào đón bạn"
+    },
+    "printedResourceId": "15-1",
+    "printedPage": 119,
+    "pdfPage": 134,
+    "availability": "unavailable",
+    "payload": null
+  },
+  "vocabularySourceMap": [
+    {
+      "ordinal": 1,
+      "printedPage": 113,
+      "pdfPage": 128,
+      "zh": "爱",
+      "existingId": "textbook-l15-v019",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p113-vocabulary-01"
+    },
+    {
+      "ordinal": 2,
+      "printedPage": 113,
+      "pdfPage": 128,
+      "zh": "哪个",
+      "existingId": "textbook-l15-v007",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p113-vocabulary-01"
+    },
+    {
+      "ordinal": 3,
+      "printedPage": 115,
+      "pdfPage": 130,
+      "zh": "去年",
+      "existingId": "textbook-l15-v011",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p115-vocabulary-01"
+    },
+    {
+      "ordinal": 4,
+      "printedPage": 115,
+      "pdfPage": 130,
+      "zh": "男朋友",
+      "existingId": "textbook-l15-v009",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p115-vocabulary-01"
+    },
+    {
+      "ordinal": 5,
+      "printedPage": 115,
+      "pdfPage": 130,
+      "zh": "几",
+      "existingId": "textbook-l15-v004",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p115-vocabulary-01"
+    },
+    {
+      "ordinal": 6,
+      "printedPage": 115,
+      "pdfPage": 130,
+      "zh": "年",
+      "existingId": "textbook-l15-v010",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p115-vocabulary-01"
+    },
+    {
+      "ordinal": 7,
+      "printedPage": 115,
+      "pdfPage": 130,
+      "zh": "好玩儿",
+      "existingId": "textbook-l15-v002",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p115-vocabulary-01"
+    },
+    {
+      "ordinal": 8,
+      "printedPage": 117,
+      "pdfPage": 132,
+      "zh": "飞机",
+      "existingId": "textbook-l15-v001",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p117-vocabulary-01"
+    },
+    {
+      "ordinal": 9,
+      "printedPage": 117,
+      "pdfPage": 132,
+      "zh": "要",
+      "existingId": "textbook-l15-v014",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p117-vocabulary-01"
+    },
+    {
+      "ordinal": 10,
+      "printedPage": 117,
+      "pdfPage": 132,
+      "zh": "小时",
+      "existingId": "textbook-l15-v013",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p117-vocabulary-01"
+    },
+    {
+      "ordinal": 11,
+      "printedPage": 117,
+      "pdfPage": 132,
+      "zh": "家人",
+      "existingId": "textbook-l15-v005",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p117-vocabulary-01"
+    },
+    {
+      "ordinal": 12,
+      "printedPage": 117,
+      "pdfPage": 132,
+      "zh": "时间",
+      "existingId": "textbook-l15-v012",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p117-vocabulary-01"
+    },
+    {
+      "ordinal": 13,
+      "printedPage": 117,
+      "pdfPage": 132,
+      "zh": "机场",
+      "existingId": "textbook-l15-v003",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p117-vocabulary-01"
+    },
+    {
+      "ordinal": 14,
+      "printedPage": 117,
+      "pdfPage": 132,
+      "zh": "接",
+      "existingId": "textbook-l15-v006",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p117-vocabulary-01"
+    },
+    {
+      "ordinal": 15,
+      "printedPage": 117,
+      "pdfPage": 132,
+      "zh": "住",
+      "existingId": "textbook-l15-v016",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p117-vocabulary-01"
+    },
+    {
+      "ordinal": 16,
+      "printedPage": 117,
+      "pdfPage": 132,
+      "zh": "早",
+      "existingId": "textbook-l15-v015",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p117-vocabulary-01"
+    },
+    {
+      "ordinal": 17,
+      "printedPage": 117,
+      "pdfPage": 132,
+      "zh": "那",
+      "existingId": "textbook-l15-v008",
+      "existingHeadwordMergedSenses": false,
+      "candidateActivityId": "hsk1-original-2026-l15-p117-vocabulary-01"
+    },
+    {
+      "printedPage": 115,
+      "pdfPage": 130,
+      "zh": "西安",
+      "existingId": "textbook-l15-v020",
+      "category": "proper-noun",
+      "candidateActivityId": "hsk1-original-2026-l15-p115-proper-nouns-01",
+      "ordinal": 1
+    },
+    {
+      "printedPage": 115,
+      "pdfPage": 130,
+      "zh": "北京",
+      "existingId": "textbook-l15-v017",
+      "category": "proper-noun",
+      "candidateActivityId": "hsk1-original-2026-l15-p115-proper-nouns-01",
+      "ordinal": 2
+    },
+    {
+      "printedPage": 117,
+      "pdfPage": 132,
+      "zh": "大兴机场",
+      "existingId": "textbook-l15-v018",
+      "category": "proper-noun",
+      "candidateActivityId": "hsk1-original-2026-l15-p117-proper-nouns-01",
+      "ordinal": 3
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "test": "bounded metadata usability",
+  "results": [
+    {
+      "duration": "NaN",
+      "status": "playing",
+      "muted": false,
+      "time": 0.718,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    },
+    {
+      "duration": "Infinity",
+      "status": "playing",
+      "muted": false,
+      "time": 0.718,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    },
+    {
+      "duration": "0",
+      "status": "loading",
+      "muted": true,
+      "time": 0,
+      "result": {
+        "ok": false,
+        "code": "cancelled"
+      }
+    },
+    {
+      "duration": "16.296",
+      "status": "playing",
+      "muted": false,
+      "time": 0.718,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    }
+  ]
+}

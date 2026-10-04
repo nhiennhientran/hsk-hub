@@ -1,0 +1,93 @@
+{
+  "test": "whole-original unknown/zero/finite duration preservation",
+  "results": [
+    {
+      "explicitStart": false,
+      "duration": "NaN",
+      "status": "playing",
+      "muted": false,
+      "time": 0.4,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    },
+    {
+      "explicitStart": false,
+      "duration": "Infinity",
+      "status": "playing",
+      "muted": false,
+      "time": 0.4,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    },
+    {
+      "explicitStart": false,
+      "duration": "0",
+      "status": "playing",
+      "muted": false,
+      "time": 0.4,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    },
+    {
+      "explicitStart": false,
+      "duration": "16.296",
+      "status": "playing",
+      "muted": false,
+      "time": 0.4,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    },
+    {
+      "explicitStart": true,
+      "duration": "NaN",
+      "status": "playing",
+      "muted": false,
+      "time": 0.4,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    },
+    {
+      "explicitStart": true,
+      "duration": "Infinity",
+      "status": "playing",
+      "muted": false,
+      "time": 0.4,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    },
+    {
+      "explicitStart": true,
+      "duration": "0",
+      "status": "playing",
+      "muted": false,
+      "time": 0.4,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    },
+    {
+      "explicitStart": true,
+      "duration": "16.296",
+      "status": "playing",
+      "muted": false,
+      "time": 0.4,
+      "result": {
+        "ok": true,
+        "code": "playing"
+      }
+    }
+  ]
+}

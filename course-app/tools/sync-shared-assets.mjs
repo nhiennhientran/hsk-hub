@@ -3,6 +3,8 @@ import {resolve} from 'node:path';import {createHash} from 'node:crypto';
 const root=resolve(import.meta.dirname,'..'),repo=resolve(root,'..'),dest=resolve(root,'public/course-assets');
 const audio=resolve(repo,'new-hsk1/hsk1/audio');if(!existsSync(audio))throw Error('Protected HSK1 original audio source missing');
 mkdirSync(dest,{recursive:true});cpSync(audio,resolve(dest,'audio'),{recursive:true});
+const sourceFigures=resolve(repo,'hsk1-app/public/source-activities');
+if(existsSync(sourceFigures))cpSync(sourceFigures,resolve(root,'public/source-activities'),{recursive:true});
 const one=JSON.parse(readFileSync(resolve(repo,'hsk1-app/content/textbook.json'),'utf8'));
 const characters=new Set(one.lessons.flatMap(l=>[l.hanzi.chars,...l.vocab.map(w=>w.zh)]).join('').match(/\p{Script=Han}/gu)??[]);
 for(const level of [2,3])for(const name of readdirSync(resolve(root,`content/hsk${level}`)).filter(n=>/^lesson-\d+\.json$/.test(n))){const lesson=JSON.parse(readFileSync(resolve(root,`content/hsk${level}`,name),'utf8'));for(const c of lesson.vocabulary.flatMap(w=>w.zh.match(/\p{Script=Han}/gu)??[]))characters.add(c)}
