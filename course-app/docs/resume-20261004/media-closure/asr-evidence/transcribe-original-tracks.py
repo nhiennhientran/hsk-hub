@@ -27,10 +27,6 @@ MODEL_REPO = "Systran/faster-whisper-small"
 MODEL_REVISION = "536b0662742c02347bc0e980a01041f333bce120"
 MODEL_FILES = ("config.json", "model.bin", "tokenizer.json", "vocabulary.txt")
 SAMPLE_RATE = 16000
-PACKAGES = (
-    "faster-whisper", "ctranslate2", "huggingface-hub", "av", "tokenizers",
-    "onnxruntime", "numpy", "pip", "setuptools",
-)
 OPTIONS = {
     "language": "zh", "task": "transcribe", "beam_size": 5, "best_of": 5,
     "temperature": 0.0, "word_timestamps": True, "vad_filter": False,
@@ -54,6 +50,16 @@ def file_sha256(path: Path) -> str:
         for block in iter(lambda: file.read(1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest()
+
+
+def fixed_requirements() -> dict[str, str]:
+    requirements = {}
+    for line in Path(__file__).with_name("requirements.txt").read_text().splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        name, version = line.strip().split("==")
+        requirements[name] = version
+    return requirements
 
 
 def plain(value: Any) -> Any:
@@ -233,7 +239,8 @@ def transcribe(root: Path, output: Path, cache: Path, report: dict,
             "realTimeFactor": elapsed / track["pcm"]["durationSeconds"],
             "observationChecks": {"rawWordCount": len(words),
                                   "invalidWordTimeIndices": invalid_times,
-                                  "nonemptyTranscript": bool(raw_segments)},
+                                  "nonemptyTranscript": any(segment.get("text", "").strip()
+                                                             for segment in raw_segments)},
             "certification": CERTIFICATION,
         }
         save_json(output / "tracks" / name, result)
@@ -292,7 +299,8 @@ def main() -> int:
         parser.error("run.json already exists: use a fresh evidence output directory")
     output.mkdir(parents=True, exist_ok=True)
     packages = {}
-    for package in PACKAGES:
+    expected_packages = fixed_requirements()
+    for package in [*expected_packages, "pip"]:
         try:
             packages[package] = importlib.metadata.version(package)
         except importlib.metadata.PackageNotFoundError:
@@ -308,6 +316,8 @@ def main() -> int:
         "requirementsSHA256": file_sha256(Path(__file__).with_name("requirements.txt")),
         "requestedModel": {"repository": args.model_id, "revision": args.model_revision},
         "python": sys.version, "platform": platform.platform(), "packages": packages,
+        "dependenciesMatchPinnedRequirements": all(packages[name] == version
+                                                    for name, version in expected_packages.items()),
         "ffmpegVersion": command_line(["ffmpeg", "-version"]),
         "options": OPTIONS, "certification": CERTIFICATION,
         "status": "preflight-started", "completedTracks": [],
@@ -322,6 +332,8 @@ def main() -> int:
         if args.preflight_only:
             run["status"] = "preflight-passed-asr-not-run"
         else:
+            if not run["dependenciesMatchPinnedRequirements"]:
+                raise ValueError("installed dependency versions differ from fixed requirements")
             transcribe(root, output, Path(args.cache).resolve(), report, args.cpu_threads,
                        args.model_id, args.model_revision, run)
         return_code = 0
