@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-04T15:59:47.970392+00:00",
+  "updatedAt": "2026-10-04T16:39:56.111346+00:00",
   "status": "running",
   "authorization": "2026-10-04T23:09:46+08:00; autonomous execution; confirmation before production publication",
   "branch": "work/hsk-autonomous-execution-20261004",
-  "lastVerifiedRemoteCommit": "09e611f0ce5456e9df7f163a8025e1ab6766d67e",
+  "lastVerifiedRemoteCommit": "8cb52dddcd046e1d0eb6977b308b64c4d3f6c462",
   "sourceBaseline": "387aa7b6145e80f983f331d8b55cd2b2b26d6990",
   "phase": "A",
   "currentSteps": [
@@ -30,13 +30,16 @@
     "484 actual contexts passed strict saved-record roundtrip; two-host crop SHA and scene/audio bindings passed",
     "34 textbook display revisions independently reviewed; frozen five files unchanged",
     "600 prior main native case identities retained; new catalogue252 identities collection equivalent",
-    "HSK1 45 main scenes/48 crops gallery and binding independently accepted; 599 HSK1 + 121 shared unit checks passed; both builds passed; current browser fixture types passed"
+    "HSK1 45 main scenes/48 crops gallery and binding independently accepted; 599 HSK1 + 121 shared unit checks passed; both builds passed; current browser fixture types passed",
+    "HSK3 all 18 lessons/523 stable word senses carry independently reviewed additional official-Vietnamese-edition source evidence; original canonical hash a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3 preserved",
+    "Metadata application 18 actual file hashes match independent pipeline candidate; 2 positive and 34 negative pre-write guard probes passed; post-integration 122 shared unit tests passed",
+    "Actual local Chromium 138 cases passed without retry/skip/failure across two hosts: source catalogue, navigation and all 45 scene/48 figure gallery bindings"
   ],
   "inProgress": [
-    "HSK3 source gaps: new official VI edition has independent additional source revision; original Chinese PDF recovery blocked by repeated HTTP502",
-    "Native Chromium/WebKit complete exact-candidate execution pending",
-    "Learning/backup/legacy native acceptance pending on current candidate",
-    "Actual local Chromium 126 catalogue cases and scene navigation in progress"
+    "Remote full Chromium/WebKit run37215775744 validates 8cb tree only; results/visual evidence pending",
+    "Pinned unprompted HSK2 L4–6 24-track ASR pilot on separate reversible work/hsk-audio-asr-pilot-20261004 branch; final script85722a54bb706d1c1165bc9f31c299960a228f65; no production clips certified",
+    "Word-card grammar-example display snapshot repair and learning/backup/legacy coverage audit",
+    "Exhaustive Vietnamese inventory preparation; full official text comparison has not started"
   ],
   "notYetCertified": [
     "Full native suite current tree",
@@ -46,6 +49,13 @@
     "Human listening",
     "Physical devices"
   ],
-  "nextExecutableAction": "Freeze current engineering checkpoint remotely; execute two-host 15-lesson catalogue and scene navigation in local Chromium; run actual remote two-engine CI while official HSK3 source review closes",
-  "productionPublished": false
+  "nextExecutableAction": "Verify/persist A5 integration and actual local native evidence; finish shared vocabulary display repair; collect real ASR pilot and browser CI evidence; close engineering coverage before Phase B.",
+  "productionPublished": false,
+  "audioPilot": {
+    "branch": "work/hsk-audio-asr-pilot-20261004",
+    "remoteCommit": "b32215e5990c3d9673f6fb0f8c27e804c062b6e6",
+    "tree": "9b4fb90dd247c4a7c44b4d2ce27ac73c3c52c10c",
+    "status": "execution requested; final run status must be rechecked",
+    "productionPromotion": false
+  }
 }

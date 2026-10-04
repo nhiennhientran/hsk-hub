@@ -1,0 +1,2447 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config=/workspace/scratch/28b55072841a/native-catalogue-probe-course.config.ts",
+      "hsk1-source-catalogue.spec.ts",
+      "hsk1-scene-navigation.spec.ts"
+    ],
+    "configFile": "/workspace/scratch/28b55072841a/native-catalogue-probe-course.config.ts",
+    "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/unified",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/native-catalogue-probe-course-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-local-probe",
+        "name": "chromium-local-probe",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/unified",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/workspace/scratch/28b55072841a/native-catalogue-final-course.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node node_modules/vite/bin/vite.js preview --outDir /workspace/scratch/28b55072841a/native-catalogue-probe-course-dist --port 4197 --strictPort --host 127.0.0.1",
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app",
+      "url": "http://127.0.0.1:4197",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "hsk1-scene-navigation.spec.ts",
+      "file": "hsk1-scene-navigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "HSK1 listen retains hidden dialogue across scene history at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3840,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:04:26.935Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f572e9e0c54fb3e2ea13-4b9b7a3dd8e99468e746",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "line": 52,
+          "column": 5
+        },
+        {
+          "title": "HSK1 hide retains hidden dialogue across scene history at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3656,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:04:30.855Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f572e9e0c54fb3e2ea13-02da04efb512d8c9e608",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "line": 52,
+          "column": 5
+        },
+        {
+          "title": "HSK1 listen retains hidden dialogue across scene history at 1280px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3786,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:04:34.521Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f572e9e0c54fb3e2ea13-4105ea84c3d0adf4fe65",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "line": 52,
+          "column": 5
+        },
+        {
+          "title": "HSK1 hide retains hidden dialogue across scene history at 1280px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3825,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:04:38.315Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f572e9e0c54fb3e2ea13-2f44a87b66ec786469c1",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "line": 52,
+          "column": 5
+        },
+        {
+          "title": "HSK1 all textbook scene galleries retain source bindings and hide alt at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 43350,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:04:42.151Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f572e9e0c54fb3e2ea13-f83210f8fbff0712144e",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "line": 128,
+          "column": 33
+        },
+        {
+          "title": "HSK1 all textbook scene galleries retain source bindings and hide alt at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 41084,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:05:25.510Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f572e9e0c54fb3e2ea13-5e658f2db51a521fe73f",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "line": 128,
+          "column": 33
+        }
+      ]
+    },
+    {
+      "title": "hsk1-source-catalogue.spec.ts",
+      "file": "hsk1-source-catalogue.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "unified HSK1 source catalogue L1 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3520,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:06.655Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-e838d988b6bcc32ddf22",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L1 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3756,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:10.190Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-8ec5dd1162adae558250",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L1 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2952,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:13.956Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-9a4cd6f786cc769b2857",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L1 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1231,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:16.917Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-da63fc5c424a88934702",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L2 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3202,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:18.157Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-9a6562c5e0f29903ed76",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L2 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3134,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:21.368Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-54564ec50dc038a564b7",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L2 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3217,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:24.512Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-44ea39321f8b3d17d949",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L2 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1432,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:27.740Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-450fc3eeee9bcdda030d",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L3 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5836,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:29.183Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-663adf8e6db4d564be0f",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L3 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6050,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:35.028Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-6d7d85a4a6ebd4b9f251",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L3 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3903,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:41.088Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-9b2331a1d777e564113c",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L3 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2248,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:44.999Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-b3b70cd8f95630d662a3",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L4 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4131,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:47.257Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-bcbedd8e1eb4534187ea",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L4 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4122,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:51.398Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-fd819a783379273e086a",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L4 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2457,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:55.529Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-607da2fbb270d337f421",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L4 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2462,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:06:57.995Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-2e1b81919a00f774fe20",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L5 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6776,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:07:00.466Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-657e6892655bbca939e1",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L5 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6826,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:07:07.258Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-5012e87d4167dea78668",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L5 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4981,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:07:14.094Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-0586588c928b8891e44f",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L5 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5013,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:07:19.087Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-a88814b7ec0c501bdd99",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L6 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7571,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:07:24.111Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-8423939616545796f062",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L6 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8014,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:07:31.693Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-c5c5d30f38275399d283",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L6 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5978,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:07:39.717Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-07b0b63b08d8028774d5",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L6 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5137,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:07:45.709Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-706725f65c5e5a1ba426",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L7 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6422,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:07:50.858Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-f75e82995e796c10a706",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L7 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6411,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:07:57.294Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-6bae2d98a9c72febe036",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L7 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5688,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:03.718Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-23b55e373b1cb66b3ed8",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L7 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4855,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:09.421Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-3778f4bbf3610661ce37",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L8 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5226,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:14.294Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-ab74108e63608a7fe400",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L8 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5080,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:19.530Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-c3c04d905c7e49f78297",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L8 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4975,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:24.617Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-a879fa66ce4f4dda912f",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L8 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4886,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:29.601Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-b7e39df02509bfa773f7",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L9 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4333,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:34.495Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-ecd046e83dbef64d39a5",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L9 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3790,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:38.839Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-e797e077d0a2ef41edaf",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L9 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2632,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:42.638Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-1c8d30ca4f40c36669c5",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L9 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2499,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:45.286Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-5567afa4c356febb5293",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L10 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3086,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:47.794Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-0cfd9e605e17bad80cb3",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L10 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3070,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:50.890Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-9e8157914f6fe90c6e5f",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L10 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2582,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:53.975Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-ebc56619e303d1e1261e",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L10 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2288,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:56.568Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-290c1c7a306c31fe49df",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L11 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2596,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:08:58.874Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-4f45b5d8b8d3ef4c898d",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L11 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2542,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:01.478Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-c3632f9fbec42a43dfd8",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L11 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2475,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:04.032Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-76584d8b829136cf7cd6",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L11 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2243,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:06.518Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-209898c1d2e48e5f7ca8",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L12 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4979,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:08.771Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-fb7fba5a571284e86c9c",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L12 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:13.758Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-b88a651015f883d155a2",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L12 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2566,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:18.965Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-2ea251a6d3d182c19c28",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L12 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2202,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:21.546Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-42fe1d9b828bbc479896",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L13 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3731,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:23.759Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-ff61768331b617fc03d3",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L13 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3701,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:27.499Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-830bc192d824022f9249",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L13 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2130,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:31.210Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-1d3210135ec7f57a078a",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L13 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2058,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:33.351Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-e0082f7cc64b72464865",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L14 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4875,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:35.421Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-7f48efd8446e3ed1943c",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L14 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4994,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:40.306Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-fc946b6649cf42ae0fca",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L14 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2344,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:45.308Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-91147e8b8d9f4964f763",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L14 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2023,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:47.664Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-5bf3db5982249d1b378d",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L15 complete DOM at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6308,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:49.696Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-3b07d95e1d7ea1dddc2c",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L15 complete DOM at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6197,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:09:56.013Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-c910ece4f65147acc01e",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L15 complete DOM at 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2375,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:10:02.222Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-7b33ec57c98932492d2d",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue L15 complete DOM at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2502,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:10:04.614Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-cb82402be9561102623e",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 130,
+          "column": 66
+        },
+        {
+          "title": "unified HSK1 source catalogue tables persist across lessons refresh and isolate history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2842,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:10:07.132Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-36b6b85eb9bec7c5bbc9",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 133,
+          "column": 2
+        },
+        {
+          "title": "unified HSK1 source catalogue optional self assessment permits blanks without grading",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1267,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:10:09.984Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-7c11f3ad11c31e4c1ee3",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 147,
+          "column": 2
+        },
+        {
+          "title": "unified HSK1 source catalogue headerless month and weekday examples remain read only",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-local-probe",
+              "projectName": "chromium-local-probe",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3604,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T16:10:11.262Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2848409476d2a2761398-07cea60aac9ff058ad22",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "line": 160,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T16:04:25.785Z",
+    "duration": 349139.43600000005,
+    "expected": 69,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

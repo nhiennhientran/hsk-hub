@@ -1,0 +1,1037 @@
+{
+  "purpose": "Actual native Chromium execution against frozen same-production-version builds; no WebKit or physical-device certification",
+  "productionCheckpoint": "743361dc97d5e174bb36582e3e8c8dd7c76f4e21",
+  "browserVersion": "153.0.8010.0",
+  "launchArgs": [
+    "--no-sandbox",
+    "--disable-dev-shm-usage",
+    "--no-zygote",
+    "--disable-gpu",
+    "--disable-vulkan",
+    "--disable-software-rasterizer"
+  ],
+  "actualPassed": 138,
+  "unexpected": 0,
+  "skipped": 0,
+  "retries": 0,
+  "sourceCatalogueActual": 126,
+  "priorSceneNavigationActual": 8,
+  "allSceneGalleryActual": 4,
+  "galleryCoveragePerCase": {
+    "scenes": 45,
+    "figures": 48
+  },
+  "typecheck": "npm run check:browser-fixtures passed with both host specs included",
+  "sourceFilesUnchangedSinceFreeze": [
+    "hsk1-app/src/services/source-activities/content.ts",
+    "hsk1-app/content/source-activities/lesson-01.json",
+    "hsk1-app/content/source-activities/lesson-02.json",
+    "hsk1-app/content/source-activities/lesson-03.json",
+    "hsk1-app/content/source-activities/lesson-04-current.json",
+    "hsk1-app/content/source-activities/lesson-04.json",
+    "hsk1-app/content/source-activities/lesson-05.json",
+    "hsk1-app/content/source-activities/lesson-06.json",
+    "hsk1-app/content/source-activities/lesson-07.json",
+    "hsk1-app/content/source-activities/lesson-08.json",
+    "hsk1-app/content/source-activities/lesson-09.json",
+    "hsk1-app/content/source-activities/lesson-10.json",
+    "hsk1-app/content/source-activities/lesson-11.json",
+    "hsk1-app/content/source-activities/lesson-12.json",
+    "hsk1-app/content/source-activities/lesson-13.json",
+    "hsk1-app/content/source-activities/lesson-14.json",
+    "hsk1-app/content/source-activities/lesson-15.json"
+  ],
+  "hosts": {
+    "course": {
+      "count": 69,
+      "sourceCatalogue": 63,
+      "priorSceneNavigation": 4,
+      "allSceneGallery": 2,
+      "artifactSHA256": "620935facd14be3e35429e869d6ee8abc681e863dbf281962cba7e3d67463911",
+      "reportSHA256": "705f36613cb46135fecfa8c7357c8c5be38f5e96a1507ee863d2ceb06ef32176",
+      "cases": [
+        {
+          "title": "HSK1 listen retains hidden dialogue across scene history at 390px",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3840,
+          "status": "passed"
+        },
+        {
+          "title": "HSK1 hide retains hidden dialogue across scene history at 390px",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3656,
+          "status": "passed"
+        },
+        {
+          "title": "HSK1 listen retains hidden dialogue across scene history at 1280px",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3786,
+          "status": "passed"
+        },
+        {
+          "title": "HSK1 hide retains hidden dialogue across scene history at 1280px",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3825,
+          "status": "passed"
+        },
+        {
+          "title": "HSK1 all textbook scene galleries retain source bindings and hide alt at 320px",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 43350,
+          "status": "passed"
+        },
+        {
+          "title": "HSK1 all textbook scene galleries retain source bindings and hide alt at 1440px",
+          "file": "../../../hsk1-app/tests/browser/textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 41084,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L1 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3520,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L1 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3756,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L1 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2952,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L1 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 1231,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L2 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3202,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L2 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3134,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L2 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3217,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L2 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 1432,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L3 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5836,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L3 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6050,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L3 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3903,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L3 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2248,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L4 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4131,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L4 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4122,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L4 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2457,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L4 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2462,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L5 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6776,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L5 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6826,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L5 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4981,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L5 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5013,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L6 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 7571,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L6 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 8014,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L6 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5978,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L6 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5137,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L7 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6422,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L7 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6411,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L7 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5688,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L7 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4855,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L8 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5226,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L8 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5080,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L8 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4975,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L8 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4886,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L9 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4333,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L9 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3790,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L9 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2632,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L9 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2499,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L10 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3086,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L10 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3070,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L10 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2582,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L10 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2288,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L11 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2596,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L11 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2542,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L11 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2475,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L11 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2243,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L12 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4979,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L12 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5195,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L12 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2566,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L12 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2202,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L13 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3731,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L13 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3701,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L13 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2130,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L13 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2058,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L14 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4875,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L14 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4994,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L14 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2344,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L14 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2023,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L15 complete DOM at 320",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6308,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L15 complete DOM at 390",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6197,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L15 complete DOM at 768",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2375,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue L15 complete DOM at 1440",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2502,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue tables persist across lessons refresh and isolate history",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2842,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue optional self assessment permits blanks without grading",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 1267,
+          "status": "passed"
+        },
+        {
+          "title": "unified HSK1 source catalogue headerless month and weekday examples remain read only",
+          "file": "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3604,
+          "status": "passed"
+        }
+      ]
+    },
+    "modular": {
+      "count": 69,
+      "sourceCatalogue": 63,
+      "priorSceneNavigation": 4,
+      "allSceneGallery": 2,
+      "artifactSHA256": "d584f6ea0a6eee11f1121635b2078b264c5b1ab3657f4620c0f9c7ed61c4b397",
+      "reportSHA256": "e71d542b15eb359514c51689d369c4754cba9b049ffa744da3c21c5b18067391",
+      "cases": [
+        {
+          "title": "modular HSK1 source catalogue L1 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3909,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L1 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3570,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L1 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2999,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L1 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 1333,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L2 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3231,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L2 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3125,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L2 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2959,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L2 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 1442,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L3 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5976,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L3 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5960,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L3 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3813,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L3 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2165,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L4 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3917,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L4 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4009,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L4 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2560,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L4 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2366,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L5 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6687,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L5 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6665,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L5 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5088,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L5 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3152,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L6 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 7177,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L6 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 7380,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L6 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6290,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L6 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3270,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L7 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6280,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L7 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6519,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L7 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5103,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L7 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2868,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L8 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4937,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L8 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4894,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L8 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4895,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L8 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2509,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L9 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3634,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L9 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3681,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L9 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2670,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L9 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2431,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L10 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3046,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L10 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2864,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L10 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2370,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L10 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2053,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L11 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2638,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L11 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2365,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L11 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2330,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L11 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2335,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L12 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5140,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L12 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5025,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L12 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2498,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L12 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2268,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L13 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4086,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L13 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3914,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L13 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2424,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L13 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 1943,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L14 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5123,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L14 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 5285,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L14 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2305,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L14 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2223,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L15 complete DOM at 320",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6159,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L15 complete DOM at 390",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 6618,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L15 complete DOM at 768",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2338,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue L15 complete DOM at 1440",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2426,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue tables persist across lessons refresh and isolate history",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 2783,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue optional self assessment permits blanks without grading",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 1291,
+          "status": "passed"
+        },
+        {
+          "title": "modular HSK1 source catalogue headerless month and weekday examples remain read only",
+          "file": "source-catalogue-cases.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3541,
+          "status": "passed"
+        },
+        {
+          "title": "HSK1 listen retains hidden dialogue across scene history at 390px",
+          "file": "textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3638,
+          "status": "passed"
+        },
+        {
+          "title": "HSK1 hide retains hidden dialogue across scene history at 390px",
+          "file": "textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3485,
+          "status": "passed"
+        },
+        {
+          "title": "HSK1 listen retains hidden dialogue across scene history at 1280px",
+          "file": "textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 3797,
+          "status": "passed"
+        },
+        {
+          "title": "HSK1 hide retains hidden dialogue across scene history at 1280px",
+          "file": "textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 4047,
+          "status": "passed"
+        },
+        {
+          "title": "HSK1 all textbook scene galleries retain source bindings and hide alt at 320px",
+          "file": "textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 40616,
+          "status": "passed"
+        },
+        {
+          "title": "HSK1 all textbook scene galleries retain source bindings and hide alt at 1440px",
+          "file": "textbook-scene-regression.ts",
+          "project": "chromium-local-probe",
+          "durationMs": 42694,
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  "limits": [
+    "WebKit not executed locally; official two-engine CI required",
+    "Restricted local browser lacks CJK fonts; DOM/source text and responsive image behavior verified, Chinese glyph visual acceptance requires CI fonts",
+    "Human listening and physical-device checks not performed"
+  ]
+}

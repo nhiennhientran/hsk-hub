@@ -1,0 +1,137 @@
+{
+  "reviewer": "qa_hsk1_01_03",
+  "reviewedAt": "2026-10-04T16:19:08.523344+00:00",
+  "scope": "Actual initial apply script executed only in disposable complete app copies; no real course writes.",
+  "scriptSha256": "8b6cbd4f04d4aaa8148c0dc3767f74c77dafbc8715f30bb0f40a60e93f69c5a3",
+  "initialProposalSha256": "21a72515df0d47cde114038ec084a2664279fc995428d32bf98b6dc220e45f06",
+  "seedNote": "Snapshot initial proposal 21a725; evidence hash refreshed to copied current QA evidence. Apply cases set proposal review string accepted so invalid payload and real-evidence guards are exercised. Evidence-355 probe deliberately makes actual copied evidence partial and updates its hash while proposal claims accepted.",
+  "cases": [
+    {
+      "case": "control_preview",
+      "mode": "preview-temp-copy",
+      "exit": 0,
+      "courseFilesChanged": 0,
+      "canonicalChanged": false,
+      "stderrTail": [],
+      "stdout": "{\n  \"mode\": \"read-only-preview\",\n  \"lessonFiles\": 18,\n  \"additionalWordEvidence\": 523,\n  \"courseFilesChanged\": false,\n  \"report\": \"docs/resume-20261004/hsk23-source-closure/metadata-integration-preview.json\"\n}"
+    },
+    {
+      "case": "partial_review_rejected",
+      "mode": "apply-temp-copy",
+      "exit": 1,
+      "courseFilesChanged": 0,
+      "canonicalChanged": false,
+      "stderrTail": [
+        "ValueError: Full independent source acceptance is required before integration"
+      ],
+      "stdout": ""
+    },
+    {
+      "case": "forged_acceptance_while_evidence_only_355",
+      "mode": "apply-temp-copy",
+      "exit": 0,
+      "courseFilesChanged": 18,
+      "canonicalChanged": false,
+      "stderrTail": [],
+      "stdout": "{\n  \"mode\": \"applied\",\n  \"lessonFiles\": 18,\n  \"additionalWordEvidence\": 523,\n  \"courseFilesChanged\": true,\n  \"report\": \"docs/resume-20261004/hsk23-source-closure/metadata-integration-result.json\"\n}"
+    },
+    {
+      "case": "parent_registry_uses_old_chinese_pdf_sha",
+      "mode": "apply-temp-copy",
+      "exit": 0,
+      "courseFilesChanged": 18,
+      "canonicalChanged": false,
+      "stderrTail": [],
+      "stdout": "{\n  \"mode\": \"applied\",\n  \"lessonFiles\": 18,\n  \"additionalWordEvidence\": 523,\n  \"courseFilesChanged\": true,\n  \"report\": \"docs/resume-20261004/hsk23-source-closure/metadata-integration-result.json\"\n}"
+    },
+    {
+      "case": "duplicate_parent_registry",
+      "mode": "apply-temp-copy",
+      "exit": 0,
+      "courseFilesChanged": 18,
+      "canonicalChanged": false,
+      "stderrTail": [],
+      "stdout": "{\n  \"mode\": \"applied\",\n  \"lessonFiles\": 18,\n  \"additionalWordEvidence\": 523,\n  \"courseFilesChanged\": true,\n  \"report\": \"docs/resume-20261004/hsk23-source-closure/metadata-integration-result.json\"\n}"
+    },
+    {
+      "case": "foreign_parent_revision_id",
+      "mode": "apply-temp-copy",
+      "exit": 0,
+      "courseFilesChanged": 18,
+      "canonicalChanged": false,
+      "stderrTail": [],
+      "stdout": "{\n  \"mode\": \"applied\",\n  \"lessonFiles\": 18,\n  \"additionalWordEvidence\": 523,\n  \"courseFilesChanged\": true,\n  \"report\": \"docs/resume-20261004/hsk23-source-closure/metadata-integration-result.json\"\n}"
+    },
+    {
+      "case": "changed_source_page",
+      "mode": "apply-temp-copy",
+      "exit": 0,
+      "courseFilesChanged": 18,
+      "canonicalChanged": false,
+      "stderrTail": [],
+      "stdout": "{\n  \"mode\": \"applied\",\n  \"lessonFiles\": 18,\n  \"additionalWordEvidence\": 523,\n  \"courseFilesChanged\": true,\n  \"report\": \"docs/resume-20261004/hsk23-source-closure/metadata-integration-result.json\"\n}"
+    },
+    {
+      "case": "foreign_evidence_headword",
+      "mode": "apply-temp-copy",
+      "exit": 0,
+      "courseFilesChanged": 18,
+      "canonicalChanged": false,
+      "stderrTail": [],
+      "stdout": "{\n  \"mode\": \"applied\",\n  \"lessonFiles\": 18,\n  \"additionalWordEvidence\": 523,\n  \"courseFilesChanged\": true,\n  \"report\": \"docs/resume-20261004/hsk23-source-closure/metadata-integration-result.json\"\n}"
+    },
+    {
+      "case": "duplicate_lesson_plan_same_total",
+      "mode": "apply-temp-copy",
+      "exit": 0,
+      "courseFilesChanged": 17,
+      "canonicalChanged": false,
+      "stderrTail": [],
+      "stdout": "{\n  \"mode\": \"applied\",\n  \"lessonFiles\": 18,\n  \"additionalWordEvidence\": 523,\n  \"courseFilesChanged\": true,\n  \"report\": \"docs/resume-20261004/hsk23-source-closure/metadata-integration-result.json\"\n}"
+    },
+    {
+      "case": "foreign_operation_word_id",
+      "mode": "apply-temp-copy",
+      "exit": 1,
+      "courseFilesChanged": 0,
+      "canonicalChanged": false,
+      "stderrTail": [
+        "ValueError: Word value or index changed: foreign-word-id"
+      ],
+      "stdout": ""
+    },
+    {
+      "case": "foreign_evidence_revision_id",
+      "mode": "apply-temp-copy",
+      "exit": 1,
+      "courseFilesChanged": 0,
+      "canonicalChanged": false,
+      "stderrTail": [
+        "ValueError: Unexpected additional-source identity"
+      ],
+      "stdout": ""
+    },
+    {
+      "case": "stale_lesson_bytes",
+      "mode": "apply-temp-copy",
+      "exit": 1,
+      "courseFilesChanged": 0,
+      "canonicalChanged": false,
+      "stderrTail": [
+        "ValueError: Lesson bytes changed: content/hsk3/lesson-01.json; regenerate proposal"
+      ],
+      "stdout": ""
+    },
+    {
+      "case": "changed_expected_full_word",
+      "mode": "apply-temp-copy",
+      "exit": 1,
+      "courseFilesChanged": 0,
+      "canonicalChanged": false,
+      "stderrTail": [
+        "ValueError: Word value or index changed: hsk3-fltrp-2026:l01:word01"
+      ],
+      "stdout": ""
+    }
+  ]
+}

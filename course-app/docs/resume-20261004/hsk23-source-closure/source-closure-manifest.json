@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "scope": "Additional official HSK3 Chinese/pinyin/number/POS/glossary evidence; source preservation and metadata proposal only",
+  "sourceRevision": {
+    "id": "hsk3-official-vi-20261004",
+    "filename": "HSK3 (3.0).pdf",
+    "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+    "bytes": 96266563,
+    "pdfPages": 212,
+    "bodyPrintedPageOffset": 12,
+    "language": "zh+vi",
+    "role": "additional-official-source; no replacement of original-source identity",
+    "originalChinesePdfSha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+    "sameBytesAsOriginalChineseSource": false,
+    "officialPOSAbbreviationLanguage": "Vietnamese",
+    "doesNotRevalidateOriginalEnglishAppendix": true
+  },
+  "counts": {
+    "stableWordRows": 523,
+    "glossaryEntries": 487,
+    "ordinaryGlossaryEntries": 479,
+    "properNameGlossaryEntries": 8,
+    "printedVocabularyAppearances": 491,
+    "vocabularyBoxes": 72,
+    "bodyPages": 72,
+    "officialStarredHeads": 23,
+    "officialStarredStableRows": 25
+  },
+  "visualReview": {
+    "evidenceFile": "docs/resume-20261004/qa-hsk3-official-source/review.json",
+    "sha256": "9f015fbf612d81a8c8ab498ecf6b3af40209f5ae0832d34e78bc961f85d5a23c",
+    "status": "accepted-source-evidence",
+    "reviewer": "qa_hsk1_05_08",
+    "stableIdCount": 523
+  },
+  "engineeringReview": {
+    "evidenceFile": "docs/resume-20261004/qa-hsk3-metadata-engineering/final-pipeline-probes.json",
+    "sha256": "b58f8a99fbee453ba27efca0512e37b214eac42b9f78752cd65aae95a8745e2f",
+    "status": "accepted-real-pipeline-in-disposable-copies",
+    "reviewer": "qa_hsk1_01_03",
+    "positiveCases": 2,
+    "negativeCases": 34,
+    "allNegativeCasesRejectedBeforeCourseWrites": true
+  },
+  "runtimeIntegration": {
+    "status": "accepted-proposal-not-yet-applied-to-actual-course",
+    "courseFilesChangedByThisAuthor": 0,
+    "proposalStatus": "not-applied; source-evidence-independently-accepted",
+    "verifyAfterIntegration": "Run inventory.py against actual course files and retain metadata-integration-result.json before/after hashes."
+  },
+  "exclusions": {
+    "originalChinesePdfRecovered": false,
+    "originalEnglishAppendixVerified": false,
+    "fullVietnameseGlossAlignment": false,
+    "canonicalValuesChanged": false,
+    "sharedEngineOrTypesChanged": false
+  },
+  "sourceVariants": [
+    {
+      "id": "hsk3-fltrp-2026:l02:word05",
+      "kind": "additional-source-star-difference",
+      "currentStarred": false,
+      "officialRawStarred": true,
+      "officialGlossaryPdfPage": 190,
+      "courseValueChanged": false
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:word06",
+      "kind": "additional-source-star-difference",
+      "currentStarred": false,
+      "officialRawStarred": true,
+      "officialGlossaryPdfPage": 190,
+      "courseValueChanged": false
+    },
+    {
+      "id": "hsk3-fltrp-2026:l15:word21",
+      "kind": "additional-source-pinyin-difference",
+      "currentPinyin": "guānxi",
+      "officialBodyRaw": "guānxì",
+      "officialGlossaryRaw": "guānxì",
+      "courseValueChanged": false
+    }
+  ],
+  "filesSha256": {
+    "official-vi-glossary.tsv": "aea9a464ff839968750c51c30df22736ed2385ce49fa1c8ace996583f32cd5df",
+    "official-vi-glossary.before-relation-repair.tsv": "5648f7d6e7f245c776f8c152c1117973815a99f4a069680165e4a1939a04eb90",
+    "official-vi-l01-06.json": "6ecc974a2fc390f6ca4db68f066a960d24c31a173fadc78f91188544815cfcb1",
+    "official-vi-l07-12.json": "d36d94b7897b655c0830efe03b2742f284825f683e4fafba3bc21c87610fa5c4",
+    "official-vi-l13-18.json": "452fde861c9899f90a1e16b82e4c8556414d563ed94fd6a7dac0502c59758449",
+    "official-vi-source-revision.json": "af765496215f0b6081904b9d3f0df3f13234737feddd0f2120174de54ed920fa",
+    "official-vi-metadata-proposal.json": "615c1f39801a163fbc86618b3da731274abb47a741fa0a2ee34db437d053d4b1",
+    "build_source_revision.py": "299dc3864adcb9f22c2ec4e1dd9f5970077db88f1dbbfcd9e943727bfafc112c",
+    "build_metadata_proposal.py": "9ead20fd682cf9c85b2801c0e34421ae7d0bb97c1f7add5b71e567661bbfcc3a",
+    "apply_metadata_proposal.py": "d90246048a36e0fee2cd517790d548850b0da85d1b9789f4bdfd1ddbab656bb7",
+    "pos-category-crosswalk.json": "5e10f3f240816c21d721176b95c4fad05ceb635f7a187e74b0c4d858333b4b95",
+    "metadata-integration-preview.json": "4a85f92cb1b8a0b94a28a7aaf18a9bb579b908e4a84c1c83dcec6053412a28a1",
+    "inventory.py": "3d164be2f5c1d34a7d3cf28b975653a2381c753ab723e387eae12d7e75e7c2d5",
+    "current-inventory.json": "c25a7714e31f6a3767a7c73534d55ca29c648f01c566deb9f5075af0055217f3"
+  }
+}

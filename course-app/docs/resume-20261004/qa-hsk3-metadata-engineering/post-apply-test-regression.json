@@ -1,0 +1,178 @@
+{
+  "reviewer": "qa_hsk1_01_03",
+  "reviewedAt": "2026-10-04T16:38:49.328278+00:00",
+  "status": "accepted-post-apply-test-regression-and-actual-hashes",
+  "originalFailure": {
+    "testFile": "course-app/tests/hsk3-appendix-stars.test.mjs",
+    "name": "HSK3 star patch does not alter any existing lesson values",
+    "originalTests": 121,
+    "originalPass": 120,
+    "originalFail": 1,
+    "cause": "Historical full vocabulary equality included the newly accepted additionalSourceEvidence metadata."
+  },
+  "testChanges": {
+    "file": "course-app/tests/hsk3-appendix-stars.test.mjs",
+    "sha256": "60650e0bb0fad22ce08637c1c5903acc642c04872f2f4e0eb453ca085d2f32a2",
+    "existingFullHistoricalWordHomeworkTextAndStarAssertionsPreserved": true,
+    "onlyNewAdditionalWordSourceFieldStrippedForHistoricalComparison": true,
+    "allOtherWordFieldsRetainedForStrictDeepEquality": true,
+    "newTestCount": 1,
+    "newCoverage": "18 exact accepted source registries; all 523 complete old word objects and exact added evidence; original source and appendix fields; parent/new-vs-old source identities; null printed POS; canonical file SHA."
+  },
+  "actualMetadataIntegrationResultSHA256": "cc49b176a9337dae7da12bb53017edb180170242b01d4b70c0cfe6b75bc92fb5",
+  "lessonHashCount": 18,
+  "additionalWordEvidence": 523,
+  "actualLessonHashes": [
+    {
+      "file": "content/hsk3/lesson-01.json",
+      "actualSHA256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 27
+    },
+    {
+      "file": "content/hsk3/lesson-02.json",
+      "actualSHA256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 30
+    },
+    {
+      "file": "content/hsk3/lesson-03.json",
+      "actualSHA256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 27
+    },
+    {
+      "file": "content/hsk3/lesson-04.json",
+      "actualSHA256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-05.json",
+      "actualSHA256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-06.json",
+      "actualSHA256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 31
+    },
+    {
+      "file": "content/hsk3/lesson-07.json",
+      "actualSHA256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 30
+    },
+    {
+      "file": "content/hsk3/lesson-08.json",
+      "actualSHA256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 31
+    },
+    {
+      "file": "content/hsk3/lesson-09.json",
+      "actualSHA256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 33
+    },
+    {
+      "file": "content/hsk3/lesson-10.json",
+      "actualSHA256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 33
+    },
+    {
+      "file": "content/hsk3/lesson-11.json",
+      "actualSHA256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 29
+    },
+    {
+      "file": "content/hsk3/lesson-12.json",
+      "actualSHA256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-13.json",
+      "actualSHA256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-14.json",
+      "actualSHA256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-15.json",
+      "actualSHA256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-16.json",
+      "actualSHA256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 26
+    },
+    {
+      "file": "content/hsk3/lesson-17.json",
+      "actualSHA256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-18.json",
+      "actualSHA256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53",
+      "matchesRealIntegrationResult": true,
+      "matchesIndependentTemporaryPipelineCandidate": true,
+      "wordEvidence": 30
+    }
+  ],
+  "canonicalSHA256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+  "canonicalBytesMatchFrozenBaseline": true,
+  "validation": {
+    "focused": {
+      "tests": 3,
+      "pass": 3,
+      "fail": 0,
+      "command": "node --experimental-strip-types --test tests/hsk3-appendix-stars.test.mjs"
+    },
+    "fullCourse": {
+      "tests": 122,
+      "pass": 122,
+      "fail": 0,
+      "command": "npm test",
+      "cwd": "course-app",
+      "log": "course-app/docs/resume-20261004/qa-hsk3-metadata-engineering/course-test-after-metadata.log",
+      "logSHA256": "2c18bbafd9aebba32042715c0b41697f1c61b5657e25e6cda0d35f75682f06e2"
+    }
+  },
+  "peerHashCheck": {
+    "reviewer": "hsk23_remaining_source",
+    "status": "18-file three-way candidate/runtime/result and canonical SHA exact match",
+    "readOnly": true
+  },
+  "scope": "Only related tests and own QA evidence changed; no course content or proposal changed by this reviewer."
+}

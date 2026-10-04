@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "mode": "applied",
+  "proposalSha256": "615c1f39801a163fbc86618b3da731274abb47a741fa0a2ee34db437d053d4b1",
+  "independentReview": {
+    "status": "accepted-source-evidence",
+    "reviewer": "qa_hsk1_05_08",
+    "evidenceFile": "docs/resume-20261004/qa-hsk3-official-source/review.json",
+    "evidenceSha256": "9f015fbf612d81a8c8ab498ecf6b3af40209f5ae0832d34e78bc961f85d5a23c",
+    "reviewedStableRows": 523,
+    "acceptedInputFiles": [
+      "official-vi-glossary.tsv",
+      "official-vi-l01-06.json",
+      "official-vi-l07-12.json",
+      "official-vi-l13-18.json"
+    ],
+    "acceptedStableIdCount": 523,
+    "acceptedInputManifest": [
+      {
+        "filename": "official-vi-glossary.tsv",
+        "sha256": "aea9a464ff839968750c51c30df22736ed2385ce49fa1c8ace996583f32cd5df",
+        "status": "independently-accepted-source-evidence",
+        "glossaryRows": 487
+      },
+      {
+        "filename": "official-vi-l01-06.json",
+        "sha256": "6ecc974a2fc390f6ca4db68f066a960d24c31a173fadc78f91188544815cfcb1",
+        "status": "independently-accepted-source-evidence",
+        "stableRows": 171,
+        "printedOccurrences": 162,
+        "vocabularyBoxes": 24
+      },
+      {
+        "filename": "official-vi-l07-12.json",
+        "sha256": "d36d94b7897b655c0830efe03b2742f284825f683e4fafba3bc21c87610fa5c4",
+        "status": "independently-accepted-source-evidence",
+        "stableRows": 184,
+        "printedOccurrences": 166,
+        "vocabularyBoxes": 24
+      },
+      {
+        "filename": "official-vi-l13-18.json",
+        "sha256": "452fde861c9899f90a1e16b82e4c8556414d563ed94fd6a7dac0502c59758449",
+        "status": "independently-accepted-source-evidence",
+        "stableRows": 168,
+        "printedOccurrences": 163,
+        "vocabularyBoxes": 24
+      }
+    ],
+    "scope": "Official additional-source Chinese/pinyin/number/POS/glossary anchors only; no original English or full VI audit"
+  },
+  "lessonFiles": 18,
+  "additionalWordEvidence": 523,
+  "originalObjectsUnchangedAfterStrippingNewMetadata": true,
+  "canonicalLexiconSha256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+  "originalMetadataCoverage": {
+    "appendixSource": 217,
+    "numberPosMetadata": 174,
+    "numberPosSource": 0
+  },
+  "additionalOfficialSourceCoverage": {
+    "glossaryAnchor": 523,
+    "numberPosMetadata": 523,
+    "numberPosSource": 523
+  },
+  "originalEnglishAppendixRevalidated": false,
+  "vietnameseTranslationsChanged": false,
+  "lessons": [
+    {
+      "file": "content/hsk3/lesson-01.json",
+      "beforeSha256": "a0f86a24e8b33f61c1b619dbc77a722ea3e02b4d218c103844eccbb8617a1a0d",
+      "candidateSha256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1",
+      "wordEvidence": 27
+    },
+    {
+      "file": "content/hsk3/lesson-02.json",
+      "beforeSha256": "f47bd01526523bb6ecc1c43c622a8846f39a8fd5589dc808a37937e5c188d3fe",
+      "candidateSha256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1",
+      "wordEvidence": 30
+    },
+    {
+      "file": "content/hsk3/lesson-03.json",
+      "beforeSha256": "72b4e86bc6c8126bd43e0dbfeb157042cf66e51b68e93c8e834c7a1ac84ec707",
+      "candidateSha256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6",
+      "wordEvidence": 27
+    },
+    {
+      "file": "content/hsk3/lesson-04.json",
+      "beforeSha256": "6cea0a2ab61364f4d8e4ff3e9df6418f082e07502a7a23a7c6efa6f13ebf8afe",
+      "candidateSha256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30",
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-05.json",
+      "beforeSha256": "4cc7b49596d0325597fc6c16643ac391a4366ba6011b5e06469e7086bf5a2264",
+      "candidateSha256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4",
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-06.json",
+      "beforeSha256": "931aaeecc243e8baeebb3c347c93ee3daf25338b4ad8deca69b20907ff9d8031",
+      "candidateSha256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346",
+      "wordEvidence": 31
+    },
+    {
+      "file": "content/hsk3/lesson-07.json",
+      "beforeSha256": "90fc52e39950a2202753b76a106b5ff1595773377e8751dfad35fc3d05605d8c",
+      "candidateSha256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9",
+      "wordEvidence": 30
+    },
+    {
+      "file": "content/hsk3/lesson-08.json",
+      "beforeSha256": "b0c1d876018dbe78f8579a285b5fa0292d54602bbccba5be9c2d86c563ecac12",
+      "candidateSha256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24",
+      "wordEvidence": 31
+    },
+    {
+      "file": "content/hsk3/lesson-09.json",
+      "beforeSha256": "dc150ca5121a77798ddd6a0dc5909ccc1777edecc40d6c5cb9ad98625df96abc",
+      "candidateSha256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937",
+      "wordEvidence": 33
+    },
+    {
+      "file": "content/hsk3/lesson-10.json",
+      "beforeSha256": "55153c0c4591717efad4ef7e2a8f738153ad73e2c01baaa3bf88b987963db958",
+      "candidateSha256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+      "wordEvidence": 33
+    },
+    {
+      "file": "content/hsk3/lesson-11.json",
+      "beforeSha256": "0dcab4ec0845e84291f43c5ca60ec6d3c6f45686d580791f4f1edd617c698f91",
+      "candidateSha256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2",
+      "wordEvidence": 29
+    },
+    {
+      "file": "content/hsk3/lesson-12.json",
+      "beforeSha256": "85d2bf6c35130dbc163af2eef8cd455a1472106a982a1d6dc020be4ffa30d6b6",
+      "candidateSha256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d",
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-13.json",
+      "beforeSha256": "223ede7d2d2a2fff360b0abb60afb6b4588a76bb203e954fead8d56886c98956",
+      "candidateSha256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc",
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-14.json",
+      "beforeSha256": "83c9026344f3daff13ee7ebe81583ffd0f69205cc59886b0628afdf0aa47552c",
+      "candidateSha256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-15.json",
+      "beforeSha256": "a9e95fc9b2029458955d5852c9f98701b2af058d8a3b3b46cf8bdce2c2a36c1c",
+      "candidateSha256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836",
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-16.json",
+      "beforeSha256": "4382a7e455e54dfa89bf315caca05d7756f9f52b80193009394da77d47a2c26a",
+      "candidateSha256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139",
+      "wordEvidence": 26
+    },
+    {
+      "file": "content/hsk3/lesson-17.json",
+      "beforeSha256": "31aa1adea7e8d7934f077fc9169607b31becc629c5fce44f43824c4f128b9110",
+      "candidateSha256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a",
+      "wordEvidence": 28
+    },
+    {
+      "file": "content/hsk3/lesson-18.json",
+      "beforeSha256": "09327e3a136b0bd9c05b5519b3e23640d8b3b388e2035c1e89f12b2799dc0da7",
+      "candidateSha256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53",
+      "wordEvidence": 30
+    }
+  ]
+}

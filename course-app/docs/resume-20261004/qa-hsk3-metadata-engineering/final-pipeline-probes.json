@@ -1,0 +1,1030 @@
+{
+  "reviewer": "qa_hsk1_01_03",
+  "reviewedAt": "2026-10-04T16:25:09.070969+00:00",
+  "status": "accepted-real-pipeline-in-disposable-copies",
+  "realCourseFilesWritten": 0,
+  "frozenFiles": [
+    {
+      "file": "docs/resume-20261004/hsk23-source-closure/build_source_revision.py",
+      "sha256": "299dc3864adcb9f22c2ec4e1dd9f5970077db88f1dbbfcd9e943727bfafc112c"
+    },
+    {
+      "file": "docs/resume-20261004/hsk23-source-closure/build_metadata_proposal.py",
+      "sha256": "9ead20fd682cf9c85b2801c0e34421ae7d0bb97c1f7add5b71e567661bbfcc3a"
+    },
+    {
+      "file": "docs/resume-20261004/hsk23-source-closure/apply_metadata_proposal.py",
+      "sha256": "d90246048a36e0fee2cd517790d548850b0da85d1b9789f4bdfd1ddbab656bb7"
+    },
+    {
+      "file": "docs/resume-20261004/hsk23-source-closure/official-vi-source-revision.json",
+      "sha256": "af765496215f0b6081904b9d3f0df3f13234737feddd0f2120174de54ed920fa"
+    },
+    {
+      "file": "docs/resume-20261004/hsk23-source-closure/official-vi-metadata-proposal.json",
+      "sha256": "615c1f39801a163fbc86618b3da731274abb47a741fa0a2ee34db437d053d4b1"
+    },
+    {
+      "file": "docs/resume-20261004/hsk23-source-closure/official-vi-l01-06.json",
+      "sha256": "6ecc974a2fc390f6ca4db68f066a960d24c31a173fadc78f91188544815cfcb1"
+    },
+    {
+      "file": "docs/resume-20261004/hsk23-source-closure/official-vi-l07-12.json",
+      "sha256": "d36d94b7897b655c0830efe03b2742f284825f683e4fafba3bc21c87610fa5c4"
+    },
+    {
+      "file": "docs/resume-20261004/hsk23-source-closure/official-vi-l13-18.json",
+      "sha256": "452fde861c9899f90a1e16b82e4c8556414d563ed94fd6a7dac0502c59758449"
+    },
+    {
+      "file": "docs/resume-20261004/hsk23-source-closure/official-vi-glossary.tsv",
+      "sha256": "aea9a464ff839968750c51c30df22736ed2385ce49fa1c8ace996583f32cd5df"
+    },
+    {
+      "file": "docs/resume-20261004/qa-hsk3-official-source/review.json",
+      "sha256": "9f015fbf612d81a8c8ab498ecf6b3af40209f5ae0832d34e78bc961f85d5a23c"
+    },
+    {
+      "file": "content/hsk3-lexicon.json",
+      "sha256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3"
+    },
+    {
+      "file": "content/hsk3/lesson-01.json",
+      "sha256": "a0f86a24e8b33f61c1b619dbc77a722ea3e02b4d218c103844eccbb8617a1a0d"
+    },
+    {
+      "file": "content/hsk3/lesson-02.json",
+      "sha256": "f47bd01526523bb6ecc1c43c622a8846f39a8fd5589dc808a37937e5c188d3fe"
+    },
+    {
+      "file": "content/hsk3/lesson-03.json",
+      "sha256": "72b4e86bc6c8126bd43e0dbfeb157042cf66e51b68e93c8e834c7a1ac84ec707"
+    },
+    {
+      "file": "content/hsk3/lesson-04.json",
+      "sha256": "6cea0a2ab61364f4d8e4ff3e9df6418f082e07502a7a23a7c6efa6f13ebf8afe"
+    },
+    {
+      "file": "content/hsk3/lesson-05.json",
+      "sha256": "4cc7b49596d0325597fc6c16643ac391a4366ba6011b5e06469e7086bf5a2264"
+    },
+    {
+      "file": "content/hsk3/lesson-06.json",
+      "sha256": "931aaeecc243e8baeebb3c347c93ee3daf25338b4ad8deca69b20907ff9d8031"
+    },
+    {
+      "file": "content/hsk3/lesson-07.json",
+      "sha256": "90fc52e39950a2202753b76a106b5ff1595773377e8751dfad35fc3d05605d8c"
+    },
+    {
+      "file": "content/hsk3/lesson-08.json",
+      "sha256": "b0c1d876018dbe78f8579a285b5fa0292d54602bbccba5be9c2d86c563ecac12"
+    },
+    {
+      "file": "content/hsk3/lesson-09.json",
+      "sha256": "dc150ca5121a77798ddd6a0dc5909ccc1777edecc40d6c5cb9ad98625df96abc"
+    },
+    {
+      "file": "content/hsk3/lesson-10.json",
+      "sha256": "55153c0c4591717efad4ef7e2a8f738153ad73e2c01baaa3bf88b987963db958"
+    },
+    {
+      "file": "content/hsk3/lesson-11.json",
+      "sha256": "0dcab4ec0845e84291f43c5ca60ec6d3c6f45686d580791f4f1edd617c698f91"
+    },
+    {
+      "file": "content/hsk3/lesson-12.json",
+      "sha256": "85d2bf6c35130dbc163af2eef8cd455a1472106a982a1d6dc020be4ffa30d6b6"
+    },
+    {
+      "file": "content/hsk3/lesson-13.json",
+      "sha256": "223ede7d2d2a2fff360b0abb60afb6b4588a76bb203e954fead8d56886c98956"
+    },
+    {
+      "file": "content/hsk3/lesson-14.json",
+      "sha256": "83c9026344f3daff13ee7ebe81583ffd0f69205cc59886b0628afdf0aa47552c"
+    },
+    {
+      "file": "content/hsk3/lesson-15.json",
+      "sha256": "a9e95fc9b2029458955d5852c9f98701b2af058d8a3b3b46cf8bdce2c2a36c1c"
+    },
+    {
+      "file": "content/hsk3/lesson-16.json",
+      "sha256": "4382a7e455e54dfa89bf315caca05d7756f9f52b80193009394da77d47a2c26a"
+    },
+    {
+      "file": "content/hsk3/lesson-17.json",
+      "sha256": "31aa1adea7e8d7934f077fc9169607b31becc629c5fce44f43824c4f128b9110"
+    },
+    {
+      "file": "content/hsk3/lesson-18.json",
+      "sha256": "09327e3a136b0bd9c05b5519b3e23640d8b3b388e2035c1e89f12b2799dc0da7"
+    }
+  ],
+  "caseCount": 36,
+  "positiveCases": 2,
+  "negativeCases": 34,
+  "allNegativeCasesRejectedBeforeCourseWrites": true,
+  "cases": [
+    {
+      "case": "full_pipeline_preview",
+      "mode": "preview",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": false,
+      "rejected": false,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 0,
+          "stderrTail": [],
+          "stdout": "{\n  \"counts\": {\n    \"stableWordRows\": 523,\n    \"glossaryEntries\": 487,\n    \"ordinaryGlossaryEntries\": 479,\n    \"properNameGlossaryEntries\": 8,\n    \"printedVocabularyAppearances\": 491,\n    \"vocabularyBoxes\": 72,\n    \"bodyPages\": 72,\n    \"officialStarredHeads\": 23,\n    \"officialStarredStableRows\": 25\n  },\n  \"structuralIssues\": [],\n  \"sourceVariants\": [\n    {\n      \"id\": \"hsk3-fltrp-2026:l02:word05\",\n      \"kind\": \"additional-source-star-difference\",\n      \"currentStarred\": false,\n      \"officialRawStarred\": true,\n      \"officialGlossaryPdfPage\": 190,\n      \"courseValueChanged\": false\n    },\n    {\n      \"id\": \"hsk3-fltrp-2026:l02:word06\",\n      \"kind\": \"additional-source-star-difference\",\n      \"currentStarred\": false,\n      \"officialRawStarred\": true,\n      \"officialGlossaryPdfPage\": 190,\n      \"courseValueChanged\": false\n    },\n    {\n      \"id\": \"hsk3-fltrp-2026:l15:word21\",\n      \"kind\": \"additional-source-pinyin-difference\",\n      \"currentPinyin\": \"guānxi\",\n      \"officialBodyRaw\": \"g"
+        },
+        {
+          "script": "build_metadata_proposal.py",
+          "exit": 0,
+          "stderrTail": [],
+          "stdout": "{\n  \"proposal\": \"docs/resume-20261004/hsk23-source-closure/official-vi-metadata-proposal.json\",\n  \"sha256\": \"615c1f39801a163fbc86618b3da731274abb47a741fa0a2ee34db437d053d4b1\",\n  \"counts\": {\n    \"lessonRegistries\": 18,\n    \"wordEvidenceAdditions\": 523,\n    \"originalMissingAppendixSource\": 306,\n    \"originalMissingNumberPosMetadata\": 349,\n    \"originalMissingNumberPosSource\": 523\n  },\n  \"courseFilesChanged\": false\n}"
+        },
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 0,
+          "stderrTail": [],
+          "stdout": "{\n  \"mode\": \"read-only-preview\",\n  \"lessonFiles\": 18,\n  \"additionalWordEvidence\": 523,\n  \"courseFilesChanged\": false,\n  \"report\": \"docs/resume-20261004/hsk23-source-closure/metadata-integration-preview.json\"\n}"
+        }
+      ]
+    },
+    {
+      "case": "full_pipeline_apply_temporary_copy",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": false,
+      "rejected": false,
+      "contentFilesWritten": 18,
+      "changedContentFiles": [
+        "content/hsk3/lesson-01.json",
+        "content/hsk3/lesson-02.json",
+        "content/hsk3/lesson-03.json",
+        "content/hsk3/lesson-04.json",
+        "content/hsk3/lesson-05.json",
+        "content/hsk3/lesson-06.json",
+        "content/hsk3/lesson-07.json",
+        "content/hsk3/lesson-08.json",
+        "content/hsk3/lesson-09.json",
+        "content/hsk3/lesson-10.json",
+        "content/hsk3/lesson-11.json",
+        "content/hsk3/lesson-12.json",
+        "content/hsk3/lesson-13.json",
+        "content/hsk3/lesson-14.json",
+        "content/hsk3/lesson-15.json",
+        "content/hsk3/lesson-16.json",
+        "content/hsk3/lesson-17.json",
+        "content/hsk3/lesson-18.json"
+      ],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 0,
+          "stderrTail": [],
+          "stdout": "{\n  \"counts\": {\n    \"stableWordRows\": 523,\n    \"glossaryEntries\": 487,\n    \"ordinaryGlossaryEntries\": 479,\n    \"properNameGlossaryEntries\": 8,\n    \"printedVocabularyAppearances\": 491,\n    \"vocabularyBoxes\": 72,\n    \"bodyPages\": 72,\n    \"officialStarredHeads\": 23,\n    \"officialStarredStableRows\": 25\n  },\n  \"structuralIssues\": [],\n  \"sourceVariants\": [\n    {\n      \"id\": \"hsk3-fltrp-2026:l02:word05\",\n      \"kind\": \"additional-source-star-difference\",\n      \"currentStarred\": false,\n      \"officialRawStarred\": true,\n      \"officialGlossaryPdfPage\": 190,\n      \"courseValueChanged\": false\n    },\n    {\n      \"id\": \"hsk3-fltrp-2026:l02:word06\",\n      \"kind\": \"additional-source-star-difference\",\n      \"currentStarred\": false,\n      \"officialRawStarred\": true,\n      \"officialGlossaryPdfPage\": 190,\n      \"courseValueChanged\": false\n    },\n    {\n      \"id\": \"hsk3-fltrp-2026:l15:word21\",\n      \"kind\": \"additional-source-pinyin-difference\",\n      \"currentPinyin\": \"guānxi\",\n      \"officialBodyRaw\": \"g"
+        },
+        {
+          "script": "build_metadata_proposal.py",
+          "exit": 0,
+          "stderrTail": [],
+          "stdout": "{\n  \"proposal\": \"docs/resume-20261004/hsk23-source-closure/official-vi-metadata-proposal.json\",\n  \"sha256\": \"615c1f39801a163fbc86618b3da731274abb47a741fa0a2ee34db437d053d4b1\",\n  \"counts\": {\n    \"lessonRegistries\": 18,\n    \"wordEvidenceAdditions\": 523,\n    \"originalMissingAppendixSource\": 306,\n    \"originalMissingNumberPosMetadata\": 349,\n    \"originalMissingNumberPosSource\": 523\n  },\n  \"courseFilesChanged\": false\n}"
+        },
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 0,
+          "stderrTail": [],
+          "stdout": "{\n  \"mode\": \"applied\",\n  \"lessonFiles\": 18,\n  \"additionalWordEvidence\": 523,\n  \"courseFilesChanged\": true,\n  \"report\": \"docs/resume-20261004/hsk23-source-closure/metadata-integration-result.json\"\n}"
+        }
+      ],
+      "originalObjectsRestoredExactly": 18,
+      "originalCoverageMeasured": {
+        "stableWords": 523,
+        "oldAppendixSource": 217,
+        "oldNumberPosMetadata": 174,
+        "oldNumberPosSource": 0
+      },
+      "integratedCoverageMeasured": {
+        "stableWords": 523,
+        "oldAppendixSource": 217,
+        "oldNumberPosMetadata": 174,
+        "oldNumberPosSource": 0,
+        "newWordEvidence": 523,
+        "newGlossaryAnchor": 523,
+        "newNumberPosSource": 523,
+        "newPrintedNumber": 523,
+        "newPrintedPOSPresent": 508
+      },
+      "lessonHashes": [
+        {
+          "file": "content/hsk3/lesson-01.json",
+          "beforeSha256": "a0f86a24e8b33f61c1b619dbc77a722ea3e02b4d218c103844eccbb8617a1a0d",
+          "candidateSha256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 27
+        },
+        {
+          "file": "content/hsk3/lesson-02.json",
+          "beforeSha256": "f47bd01526523bb6ecc1c43c622a8846f39a8fd5589dc808a37937e5c188d3fe",
+          "candidateSha256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 30
+        },
+        {
+          "file": "content/hsk3/lesson-03.json",
+          "beforeSha256": "72b4e86bc6c8126bd43e0dbfeb157042cf66e51b68e93c8e834c7a1ac84ec707",
+          "candidateSha256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 27
+        },
+        {
+          "file": "content/hsk3/lesson-04.json",
+          "beforeSha256": "6cea0a2ab61364f4d8e4ff3e9df6418f082e07502a7a23a7c6efa6f13ebf8afe",
+          "candidateSha256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 28
+        },
+        {
+          "file": "content/hsk3/lesson-05.json",
+          "beforeSha256": "4cc7b49596d0325597fc6c16643ac391a4366ba6011b5e06469e7086bf5a2264",
+          "candidateSha256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 28
+        },
+        {
+          "file": "content/hsk3/lesson-06.json",
+          "beforeSha256": "931aaeecc243e8baeebb3c347c93ee3daf25338b4ad8deca69b20907ff9d8031",
+          "candidateSha256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 31
+        },
+        {
+          "file": "content/hsk3/lesson-07.json",
+          "beforeSha256": "90fc52e39950a2202753b76a106b5ff1595773377e8751dfad35fc3d05605d8c",
+          "candidateSha256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 30
+        },
+        {
+          "file": "content/hsk3/lesson-08.json",
+          "beforeSha256": "b0c1d876018dbe78f8579a285b5fa0292d54602bbccba5be9c2d86c563ecac12",
+          "candidateSha256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 31
+        },
+        {
+          "file": "content/hsk3/lesson-09.json",
+          "beforeSha256": "dc150ca5121a77798ddd6a0dc5909ccc1777edecc40d6c5cb9ad98625df96abc",
+          "candidateSha256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 33
+        },
+        {
+          "file": "content/hsk3/lesson-10.json",
+          "beforeSha256": "55153c0c4591717efad4ef7e2a8f738153ad73e2c01baaa3bf88b987963db958",
+          "candidateSha256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 33
+        },
+        {
+          "file": "content/hsk3/lesson-11.json",
+          "beforeSha256": "0dcab4ec0845e84291f43c5ca60ec6d3c6f45686d580791f4f1edd617c698f91",
+          "candidateSha256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 29
+        },
+        {
+          "file": "content/hsk3/lesson-12.json",
+          "beforeSha256": "85d2bf6c35130dbc163af2eef8cd455a1472106a982a1d6dc020be4ffa30d6b6",
+          "candidateSha256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 28
+        },
+        {
+          "file": "content/hsk3/lesson-13.json",
+          "beforeSha256": "223ede7d2d2a2fff360b0abb60afb6b4588a76bb203e954fead8d56886c98956",
+          "candidateSha256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 28
+        },
+        {
+          "file": "content/hsk3/lesson-14.json",
+          "beforeSha256": "83c9026344f3daff13ee7ebe81583ffd0f69205cc59886b0628afdf0aa47552c",
+          "candidateSha256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 28
+        },
+        {
+          "file": "content/hsk3/lesson-15.json",
+          "beforeSha256": "a9e95fc9b2029458955d5852c9f98701b2af058d8a3b3b46cf8bdce2c2a36c1c",
+          "candidateSha256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 28
+        },
+        {
+          "file": "content/hsk3/lesson-16.json",
+          "beforeSha256": "4382a7e455e54dfa89bf315caca05d7756f9f52b80193009394da77d47a2c26a",
+          "candidateSha256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 26
+        },
+        {
+          "file": "content/hsk3/lesson-17.json",
+          "beforeSha256": "31aa1adea7e8d7934f077fc9169607b31becc629c5fce44f43824c4f128b9110",
+          "candidateSha256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 28
+        },
+        {
+          "file": "content/hsk3/lesson-18.json",
+          "beforeSha256": "09327e3a136b0bd9c05b5519b3e23640d8b3b388e2035c1e89f12b2799dc0da7",
+          "candidateSha256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53",
+          "restoredOriginalDeepObjectExact": true,
+          "stableWords": 30
+        }
+      ],
+      "canonicalFileBytesUnchanged": true,
+      "all18RegistriesKeepDistinctOldAndNewPDFIdentity": true,
+      "all523ChildrenReferenceTheirParentNewRevisionId": true,
+      "secondApplyRejectedWithoutFurtherWrites": true,
+      "secondApplyError": [
+        "ValueError: Joined evidence does not reproduce from exact accepted inputs and current course"
+      ]
+    },
+    {
+      "case": "partial_355_source_QA_rebuild_pipeline",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 0,
+          "stderrTail": [],
+          "stdout": "{\n  \"counts\": {\n    \"stableWordRows\": 523,\n    \"glossaryEntries\": 487,\n    \"ordinaryGlossaryEntries\": 479,\n    \"properNameGlossaryEntries\": 8,\n    \"printedVocabularyAppearances\": 491,\n    \"vocabularyBoxes\": 72,\n    \"bodyPages\": 72,\n    \"officialStarredHeads\": 23,\n    \"officialStarredStableRows\": 25\n  },\n  \"structuralIssues\": [],\n  \"sourceVariants\": [\n    {\n      \"id\": \"hsk3-fltrp-2026:l02:word05\",\n      \"kind\": \"additional-source-star-difference\",\n      \"currentStarred\": false,\n      \"officialRawStarred\": true,\n      \"officialGlossaryPdfPage\": 190,\n      \"courseValueChanged\": false\n    },\n    {\n      \"id\": \"hsk3-fltrp-2026:l02:word06\",\n      \"kind\": \"additional-source-star-difference\",\n      \"currentStarred\": false,\n      \"officialRawStarred\": true,\n      \"officialGlossaryPdfPage\": 190,\n      \"courseValueChanged\": false\n    },\n    {\n      \"id\": \"hsk3-fltrp-2026:l15:word21\",\n      \"kind\": \"additional-source-pinyin-difference\",\n      \"currentPinyin\": \"guānxi\",\n      \"officialBodyRaw\": \"g"
+        },
+        {
+          "script": "build_metadata_proposal.py",
+          "exit": 0,
+          "stderrTail": [],
+          "stdout": "{\n  \"proposal\": \"docs/resume-20261004/hsk23-source-closure/official-vi-metadata-proposal.json\",\n  \"sha256\": \"61621c40ebd79c36f9e2f867acba982ccf94184dbbda3aad8a089b5adcc35b49\",\n  \"counts\": {\n    \"lessonRegistries\": 18,\n    \"wordEvidenceAdditions\": 523,\n    \"originalMissingAppendixSource\": 306,\n    \"originalMissingNumberPosMetadata\": 349,\n    \"originalMissingNumberPosSource\": 523\n  },\n  \"courseFilesChanged\": false\n}"
+        },
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Full independent source acceptance is required before integration"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "missing_actual_source_QA",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 0,
+          "stderrTail": [],
+          "stdout": "{\n  \"counts\": {\n    \"stableWordRows\": 523,\n    \"glossaryEntries\": 487,\n    \"ordinaryGlossaryEntries\": 479,\n    \"properNameGlossaryEntries\": 8,\n    \"printedVocabularyAppearances\": 491,\n    \"vocabularyBoxes\": 72,\n    \"bodyPages\": 72,\n    \"officialStarredHeads\": 23,\n    \"officialStarredStableRows\": 25\n  },\n  \"structuralIssues\": [],\n  \"sourceVariants\": [\n    {\n      \"id\": \"hsk3-fltrp-2026:l02:word05\",\n      \"kind\": \"additional-source-star-difference\",\n      \"currentStarred\": false,\n      \"officialRawStarred\": true,\n      \"officialGlossaryPdfPage\": 190,\n      \"courseValueChanged\": false\n    },\n    {\n      \"id\": \"hsk3-fltrp-2026:l02:word06\",\n      \"kind\": \"additional-source-star-difference\",\n      \"currentStarred\": false,\n      \"officialRawStarred\": true,\n      \"officialGlossaryPdfPage\": 190,\n      \"courseValueChanged\": false\n    },\n    {\n      \"id\": \"hsk3-fltrp-2026:l15:word21\",\n      \"kind\": \"additional-source-pinyin-difference\",\n      \"currentPinyin\": \"guānxi\",\n      \"officialBodyRaw\": \"g"
+        },
+        {
+          "script": "build_metadata_proposal.py",
+          "exit": 0,
+          "stderrTail": [],
+          "stdout": "{\n  \"proposal\": \"docs/resume-20261004/hsk23-source-closure/official-vi-metadata-proposal.json\",\n  \"sha256\": \"11f9cdb0ee5fb79dbc1f51d23a53e8c5d02c5a28b7446db256c1a645ead7a7b3\",\n  \"counts\": {\n    \"lessonRegistries\": 18,\n    \"wordEvidenceAdditions\": 523,\n    \"originalMissingAppendixSource\": 306,\n    \"originalMissingNumberPosMetadata\": 349,\n    \"originalMissingNumberPosSource\": 523\n  },\n  \"courseFilesChanged\": false\n}"
+        },
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Full independent source acceptance is required before integration"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "forged_proposal_review_status",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "parent_registry_uses_old_chinese_SHA",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "duplicate_parent_registry",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "foreign_parent_revision",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "child_parent_revision_mismatch",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "duplicate_lesson_same_18_523_total",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "foreign_lesson_id",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "foreign_lesson_scope",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "foreign_word_id",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "foreign_evidence_headword",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "wrong_source_page",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "full_expected_word_changed",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "last_lesson_stale_bytes_no_early_writes",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Joined evidence does not reproduce from exact accepted inputs and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "last_operation_invalid_no_early_writes",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "canonical_stale_bytes",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "reserved_field_already_exists",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Joined evidence does not reproduce from exact accepted inputs and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "operation_replace_instead_of_add",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": false,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "apply_metadata_proposal.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Proposal does not exactly reproduce from frozen source anchors and current course"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "accepted_ID_list_duplicate",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent accepted stable-ID coverage differs"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "accepted_ID_list_foreign",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent accepted stable-ID coverage differs"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "QA_wrong_new_PDF_identity",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent reviewer source identity differs"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "QA_full_Vietnamese_claim",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent overall coverage/acceptance differs"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "QA_old_Chinese_recovered_claim",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent overall coverage/acceptance differs"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "QA_wrong_total_522",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent overall coverage/acceptance differs"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "QA_wrong_batch_scope",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent scope/count or open issues differ: official-vi-l13-18.json"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "QA_open_source_issue",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent scope/count or open issues differ: official-vi-l13-18.json"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "QA_missing_input_manifest",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent accepted-input manifest coverage differs"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "QA_duplicate_input_manifest",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent accepted-input manifest coverage differs"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "QA_wrong_input_manifest_SHA",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent manifest hash/status differs: official-vi-glossary.tsv"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "QA_input_manifest_pending",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent manifest hash/status differs: official-vi-glossary.tsv"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "duplicate_source_input_word_ID",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Duplicate official vocabulary binding"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "foreign_source_input_word_ID",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent acceptance hash differs: official-vi-l13-18.json"
+          ],
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "case": "source_input_changed_after_QA",
+      "mode": "apply",
+      "rebuildFromFourInputsAndActualQA": true,
+      "expectedReject": true,
+      "rejected": true,
+      "contentFilesWritten": 0,
+      "changedContentFiles": [],
+      "commands": [
+        {
+          "script": "build_source_revision.py",
+          "exit": 1,
+          "stderrTail": [
+            "ValueError: Independent acceptance hash differs: official-vi-l13-18.json"
+          ],
+          "stdout": ""
+        }
+      ]
+    }
+  ]
+}

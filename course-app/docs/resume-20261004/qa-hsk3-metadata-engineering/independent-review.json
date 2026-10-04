@@ -1,0 +1,170 @@
+{
+  "reviewer": "qa_hsk1_01_03",
+  "reviewedAt": "2026-10-04T16:27:42.739102+00:00",
+  "status": "accepted-independent-engineering-review-for-guarded-metadata-integration",
+  "proposalSha256": "615c1f39801a163fbc86618b3da731274abb47a741fa0a2ee34db437d053d4b1",
+  "sourceJoinSha256": "af765496215f0b6081904b9d3f0df3f13234737feddd0f2120174de54ed920fa",
+  "independentVisualEvidenceSha256": "9f015fbf612d81a8c8ab498ecf6b3af40209f5ae0832d34e78bc961f85d5a23c",
+  "scriptHashes": {
+    "docs/resume-20261004/hsk23-source-closure/build_source_revision.py": "299dc3864adcb9f22c2ec4e1dd9f5970077db88f1dbbfcd9e943727bfafc112c",
+    "docs/resume-20261004/hsk23-source-closure/build_metadata_proposal.py": "9ead20fd682cf9c85b2801c0e34421ae7d0bb97c1f7add5b71e567661bbfcc3a",
+    "docs/resume-20261004/hsk23-source-closure/apply_metadata_proposal.py": "d90246048a36e0fee2cd517790d548850b0da85d1b9789f4bdfd1ddbab656bb7"
+  },
+  "sourceIdentity": {
+    "newOfficialVI": {
+      "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+      "bytes": 96266563,
+      "pdfPages": 212,
+      "identity": "hsk3-official-vi-20261004"
+    },
+    "preservedOriginalChinese": {
+      "sha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+      "expectedBytes": 75121060,
+      "expectedPDFPages": 212,
+      "physicallyRecoveredOrRevalidatedByThisReview": false
+    },
+    "samePDFBytes": false,
+    "parentRegistries": 18,
+    "childEvidence": 523,
+    "allParentChildRevisionIdsMatch": true,
+    "oldEnglishAppendixRevalidationGranted": false,
+    "fullVietnameseGlossAlignmentGranted": false
+  },
+  "truePipelineSourceCoverage": {
+    "stableWordRows": 523,
+    "glossaryEntries": 487,
+    "ordinaryGlossaryEntries": 479,
+    "properNameGlossaryEntries": 8,
+    "printedVocabularyAppearances": 491,
+    "vocabularyBoxes": 72,
+    "bodyPages": 72,
+    "officialStarredHeads": 23,
+    "officialStarredStableRows": 25
+  },
+  "trueIndependentSourceAcceptance": {
+    "reviewer": "qa_hsk1_05_08",
+    "overallStatus": "accepted-new-official-source-evidence",
+    "acceptedStableIdCount": 523,
+    "uniqueAcceptedStableIdCount": 523,
+    "batchStableRows": [
+      171,
+      184,
+      168
+    ],
+    "acceptedInputFiles": [
+      {
+        "filename": "official-vi-glossary.tsv",
+        "sha256": "aea9a464ff839968750c51c30df22736ed2385ce49fa1c8ace996583f32cd5df",
+        "status": "independently-accepted-source-evidence",
+        "glossaryRows": 487
+      },
+      {
+        "filename": "official-vi-l01-06.json",
+        "sha256": "6ecc974a2fc390f6ca4db68f066a960d24c31a173fadc78f91188544815cfcb1",
+        "status": "independently-accepted-source-evidence",
+        "stableRows": 171,
+        "printedOccurrences": 162,
+        "vocabularyBoxes": 24
+      },
+      {
+        "filename": "official-vi-l07-12.json",
+        "sha256": "d36d94b7897b655c0830efe03b2742f284825f683e4fafba3bc21c87610fa5c4",
+        "status": "independently-accepted-source-evidence",
+        "stableRows": 184,
+        "printedOccurrences": 166,
+        "vocabularyBoxes": 24
+      },
+      {
+        "filename": "official-vi-l13-18.json",
+        "sha256": "452fde861c9899f90a1e16b82e4c8556414d563ed94fd6a7dac0502c59758449",
+        "status": "independently-accepted-source-evidence",
+        "stableRows": 168,
+        "printedOccurrences": 163,
+        "vocabularyBoxes": 24
+      }
+    ],
+    "sourceVisualWorkPerformedBy": "qa_hsk1_05_08",
+    "engineeringReviewerPerformedNewPDFVisualRead": false
+  },
+  "preservation": {
+    "uniqueLessonFiles": 18,
+    "stableWordIds": 523,
+    "allCompleteExpectedWordsAndWholeLessonHashesGuarded": true,
+    "newFieldsPreviouslyAbsent": true,
+    "temporaryApplyRestoredOriginalDeepObjectsAfterRemovingOnlyNewFields": 18,
+    "canonicalFileByteSha256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+    "canonicalBytesUnchanged": true,
+    "noRuntimeCourseFileWritesByThisReviewer": true,
+    "originalMetadataCoverageMeasured": {
+      "stableWords": 523,
+      "oldAppendixSource": 217,
+      "oldNumberPosMetadata": 174,
+      "oldNumberPosSource": 0
+    },
+    "newMetadataCoverageMeasured": {
+      "stableWords": 523,
+      "oldAppendixSource": 217,
+      "oldNumberPosMetadata": 174,
+      "oldNumberPosSource": 0,
+      "newWordEvidence": 523,
+      "newGlossaryAnchor": 523,
+      "newNumberPosSource": 523,
+      "newPrintedNumber": 523,
+      "newPrintedPOSPresent": 508
+    },
+    "printedPOSAbsentPreserved": 15,
+    "preservedSourceVariations": [
+      {
+        "id": "hsk3-fltrp-2026:l02:word05",
+        "kind": "additional-source-star-difference",
+        "currentStarred": false,
+        "officialRawStarred": true,
+        "officialGlossaryPdfPage": 190,
+        "courseValueChanged": false
+      },
+      {
+        "id": "hsk3-fltrp-2026:l02:word06",
+        "kind": "additional-source-star-difference",
+        "currentStarred": false,
+        "officialRawStarred": true,
+        "officialGlossaryPdfPage": 190,
+        "courseValueChanged": false
+      },
+      {
+        "id": "hsk3-fltrp-2026:l15:word21",
+        "kind": "additional-source-pinyin-difference",
+        "currentPinyin": "guānxi",
+        "officialBodyRaw": "guānxì",
+        "officialGlossaryRaw": "guānxì",
+        "courseValueChanged": false
+      }
+    ]
+  },
+  "failClosedMechanism": [
+    "Rebuild joined source from fixed four input files and actual independent QA JSON, then require exact joined object equality",
+    "Validate source SHA, all accepted batch status/hash/counts, glossary repaired final hash and closed issues, overall 523/491/72/18 coverage and scope flags",
+    "Require actual accepted 523 unique stable IDs to equal current 523 unique course IDs; four unique input manifest entries with actual file hashes and accepted scope",
+    "Rebuild entire proposal and require exact object equality including parent registry, each added source value, complete expected word, expected lesson hash and add-only operations",
+    "Require exactly the unique 18 lesson-file set and matching lesson/course IDs; forbid overwrite of reserved metadata fields",
+    "Prepare and validate all 18 candidate objects and their stripped exact restoration before any write; reject a second apply without further writes"
+  ],
+  "actualPipelineProbeEvidence": "final-pipeline-probes.json",
+  "positivePipelineCases": 2,
+  "negativePipelineCases": 34,
+  "allNegativeCasesRejectedBeforeCourseWrites": true,
+  "initialIssuesAndClosure": {
+    "initialScriptSha256": "8b6cbd4f04d4aaa8148c0dc3767f74c77dafbc8715f30bb0f40a60e93f69c5a3",
+    "initialProposalSha256": "21a72515df0d47cde114038ec084a2664279fc995428d32bf98b6dc220e45f06",
+    "initialEvidence": "initial-negative-probes.json",
+    "resolvedByAuthor": true,
+    "confirmedInitialBypasses": [
+      "forged review status over actual 355 partial acceptance",
+      "old or unrelated parent registry identity",
+      "duplicate source registries",
+      "changed added source page or headword",
+      "duplicate lesson file while keeping 18/523 claimed totals"
+    ],
+    "finalSameCasesFailClosed": true
+  },
+  "remainingGate": "Root executes exact accepted proposal once, then checks 18 candidate hashes, unchanged canonical SHA, course checks/build and relevant runtime validation; production release still requires user confirmation."
+}
