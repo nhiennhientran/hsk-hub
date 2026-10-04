@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "contents": "read"
+  },
+  "branch": "work/hsk-b14-narrow-ui-ci-20261004",
+  "manual": true,
+  "matrix": [
+    "chromium",
+    "webkit"
+  ],
+  "fixedCommandLabels": [
+    "course-install",
+    "hsk1-install",
+    "course-units",
+    "hsk1-units",
+    "course-source",
+    "hsk1-source",
+    "hsk1-migration-fixtures",
+    "course-types",
+    "hsk1-types",
+    "native-fixture-types",
+    "native-report-guards",
+    "browser-install",
+    "font-install",
+    "hsk1-build",
+    "course-build",
+    "hsk1-asset-bytes",
+    "native-collection",
+    "native"
+  ],
+  "commandCount": 18,
+  "job": "narrow-ui",
+  "uploadAlways": true
+}

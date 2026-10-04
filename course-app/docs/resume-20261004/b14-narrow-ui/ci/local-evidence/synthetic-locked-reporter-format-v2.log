@@ -1,0 +1,19 @@
+
+Running 10 tests using 1 worker
+
+(node:17) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [shared-chromium] › .repro-output/b14-ci-synthetic-report-format/narrow-ui.spec.ts:5:44 › 320px full nav captions, separated hidden roles and complete native table hints (13ms)
+  ✓   2 [shared-chromium] › .repro-output/b14-ci-synthetic-report-format/narrow-ui.spec.ts:5:44 › 390px full nav captions, separated hidden roles and complete native table hints (8ms)
+  ✓   3 [shared-chromium] › .repro-output/b14-ci-synthetic-report-format/narrow-ui.spec.ts:5:44 › 768px full nav captions, separated hidden roles and complete native table hints (8ms)
+  ✓   4 [shared-chromium] › .repro-output/b14-ci-synthetic-report-format/narrow-ui.spec.ts:5:44 › 1280px full nav captions, separated hidden roles and complete native table hints (7ms)
+  ✓   5 [shared-chromium] › .repro-output/b14-ci-synthetic-report-format/narrow-ui.spec.ts:5:44 › 1440px full nav captions, separated hidden roles and complete native table hints (7ms)
+(node:29) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 [standalone-chromium] › .repro-output/b14-ci-synthetic-report-format/narrow-ui.spec.ts:5:44 › 320px full nav captions, separated hidden roles and complete native table hints (10ms)
+  ✓   7 [standalone-chromium] › .repro-output/b14-ci-synthetic-report-format/narrow-ui.spec.ts:5:44 › 390px full nav captions, separated hidden roles and complete native table hints (7ms)
+  ✓   8 [standalone-chromium] › .repro-output/b14-ci-synthetic-report-format/narrow-ui.spec.ts:5:44 › 768px full nav captions, separated hidden roles and complete native table hints (7ms)
+  ✓   9 [standalone-chromium] › .repro-output/b14-ci-synthetic-report-format/narrow-ui.spec.ts:5:44 › 1280px full nav captions, separated hidden roles and complete native table hints (8ms)
+  ✓  10 [standalone-chromium] › .repro-output/b14-ci-synthetic-report-format/narrow-ui.spec.ts:5:44 › 1440px full nav captions, separated hidden roles and complete native table hints (7ms)
+
+  10 passed (961ms)

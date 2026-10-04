@@ -1,0 +1,79 @@
+name: HSK B14 narrow UI private checkpoint
+on:
+  workflow_dispatch:
+  push:
+    branches: ['work/hsk-b14-narrow-ui-ci-20261004']
+permissions:
+  contents: read
+jobs:
+  narrow-ui:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    env:
+      HSK_B14_CI_BROWSER: ${{ matrix.browser }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - name: Bind exact checkout, frozen UI candidate and source vectors
+        run: node course-app/docs/resume-20261004/b14-narrow-ui/ci/checkpoint-records.mjs before
+      - name: Install exact locked packages
+        run: |
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs course-install
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs hsk1-install
+      - name: Unit, content, migration and fixture type checks
+        run: |
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs course-units
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs hsk1-units
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs course-source
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs hsk1-source
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs hsk1-migration-fixtures
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs course-types
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs hsk1-types
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs native-fixture-types
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs native-report-guards
+      - name: Install the actual locked matrix browser and Chinese fonts
+        run: |
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs browser-install
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs font-install
+      - name: Build both actual preview consumers and hash every emitted file
+        run: |
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs hsk1-build
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs course-build
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs hsk1-asset-bytes
+          node course-app/docs/resume-20261004/b14-narrow-ui/ci/checkpoint-records.mjs builds
+      - name: Collect the exact ten cases without writing a native success report
+        run: node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs native-collection
+      - name: Execute two compiled hosts at five actual widths
+        run: node course-app/docs/resume-20261004/b14-narrow-ui/ci/run-command.mjs native
+      - name: Reject collection, missing commands, skipped cases, retries, errors or drift
+        if: always()
+        run: node course-app/docs/resume-20261004/b14-narrow-ui/ci/checkpoint-records.mjs after
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk-b14-narrow-ui-${{ matrix.browser }}
+          include-hidden-files: true
+          if-no-files-found: error
+          path: |
+            course-app/.repro-output/b14-narrow-ui-ci/${{ matrix.browser }}/
+            course-app/docs/resume-20261004/b14-narrow-ui/
+            .github/workflows/hsk-b14-narrow-ui-checkpoint.yml
+            course-app/src/style.css
+            hsk1-app/src/features/textbook/textbook.css
+            hsk1-app/src/features/source-activities/source-activities.css
+            course-app/dist/*.html
+            course-app/dist/assets/**/*.js
+            course-app/dist/assets/**/*.css
+            course-app/dist/assets/**/*.json
+            hsk1-app/dist/*.html
+            hsk1-app/dist/assets/**/*.js
+            hsk1-app/dist/assets/**/*.css
+            hsk1-app/dist/assets/**/*.json

@@ -1,0 +1,32 @@
+{
+  "classification": "SYNTHETIC actual locked Playwright reporter FORMAT validation only; no Page fixture, no browser launched, fake layout metrics",
+  "actualPlaywrightVersion": "1.62.1",
+  "initialHarnessFailureSaved": "synthetic-locked-reporter-format.log",
+  "initialFailureReason": "Ignored temporary harness used __dirname under ESM; corrected with fileURLToPath; no CI source guard weakened",
+  "actualFormatFieldsAccepted": true,
+  "syntheticSerializedCases": 10,
+  "B14NativeCasesExecuted": 0,
+  "projects": [
+    {
+      "name": "shared-chromium",
+      "id": "shared-chromium",
+      "metadata": {
+        "surface": "shared",
+        "browserName": "chromium"
+      },
+      "retries": 0,
+      "repeatEach": 1
+    },
+    {
+      "name": "standalone-chromium",
+      "id": "standalone-chromium",
+      "metadata": {
+        "surface": "standalone",
+        "browserName": "chromium"
+      },
+      "retries": 0,
+      "repeatEach": 1
+    }
+  ],
+  "actualCaseKeyCount": 10
+}

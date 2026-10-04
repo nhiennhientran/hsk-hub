@@ -1,0 +1,4 @@
+{
+  "extends": "../tsconfig.native-check.json",
+  "include": ["./playwright.ci.config.ts", "../narrow-ui.spec.ts", "../playwright.b14.config.ts", "../../../../src/vite-env.d.ts"]
+}
