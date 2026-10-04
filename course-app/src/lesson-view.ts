@@ -126,6 +126,7 @@ export function mountLesson(
       const label = el("label", cellLabel??f.prompt);
       if(cell)label.classList.add(f.input==="checkbox"?"matrix-check-label":"matrix-input-label");if(cellLabel)label.classList.add("matrix-visible-label");
       label.htmlFor = f.id;
+      if(f.optional===true)label.append(el("small",copy("可选，可留空","Tùy chọn, có thể để trống"),"optional-field-note task-note"));
       row.append(label);
       if (f.input === "select") {
         const select = el("select");
@@ -285,7 +286,7 @@ export function mountLesson(
         const requestEpoch=++feedbackEpoch;
         feedback.replaceChildren();
         const incomplete = a.fields.some(
-          (f) => f.input !== "checkbox" && !String(values[f.id] ?? "").trim(),
+          (f) => f.input !== "checkbox" && f.optional !== true && !String(values[f.id] ?? "").trim(),
         );
         if (incomplete) {
           feedback.replaceChildren(

@@ -1,0 +1,41 @@
+{
+  "status": "bounded-integration-review-passed",
+  "basis": "Two optional new-layer wording improvements identified in the independent source audit",
+  "changes": [
+    {
+      "lesson": 12,
+      "fieldId": "hsk3-fltrp-2026:l12:field:text4-question5",
+      "path": "prompt.vi",
+      "before": "Vì sao cô Vương không thích mùa đông nhất?",
+      "after": "Vì sao cô Vương ít thích mùa đông nhất?",
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 110,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "beforeSha256": "68e44849345b2f12d687530c64d3b19b7fd3657438f4d152641428960749b8bc",
+      "afterSha256": "a33ef867ee3bde489c6675fb51bd9b1892d3d1afad13220479bb4ec3f7ecf1f6",
+      "completedVietnamese": "Vì sao cô Vương ít thích mùa đông nhất?"
+    },
+    {
+      "lesson": 13,
+      "fieldId": "hsk3-fltrp-2026:l13:field:words-question9",
+      "path": "prompt.vi",
+      "before": "A: Giờ bạn có thể ________, đồ ăn uống xong hết rồi. B: Tôi sợ họ ăn chưa quen món tôi nấu.",
+      "after": "A: Giờ bạn có thể ________, đồ ăn, thức uống đều đã chuẩn bị xong rồi. B: Tôi sợ họ ăn chưa quen món tôi nấu.",
+      "source": {
+        "pdfPage": 134,
+        "printedPage": 122,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "beforeSha256": "31d89804eb74dab95912767f102d06b53759070972ad933a2da46f3c0f8549d1",
+      "afterSha256": "1b89adf690c8d39e5208d4a41aab0dee56693e57189408b667f30db26ba33747",
+      "completedVietnamese": "A: Giờ bạn có thể yên tâm, đồ ăn, thức uống đều đã chuẩn bị xong rồi. B: Tôi sợ họ ăn chưa quen món tôi nấu."
+    }
+  ],
+  "oldCorpusModified": false,
+  "idsOrAnswersOrSourcesModified": false,
+  "nativeBrowserExecuted": false
+}

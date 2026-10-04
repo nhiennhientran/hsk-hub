@@ -1,0 +1,90 @@
+{
+  "commit": "47e599837128843c77154db59ef8d2f8937f3a52",
+  "tree": "44e82d242d631fc93b2883de0535e710ce7fc7d5",
+  "runId": 37178434272,
+  "runUrl": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37178434272",
+  "conclusion": "success",
+  "completedAt": "2026-10-04T05:12:55Z",
+  "fullBrowserPassed": 390,
+  "preflightPassedPerEngine": 32,
+  "jobs": [
+    {
+      "id": 111365859272,
+      "name": "checkpoint (chromium, 1)",
+      "conclusion": "success",
+      "fullPassed": 98,
+      "preflightPassed": 32
+    },
+    {
+      "id": 111365859368,
+      "name": "checkpoint (chromium, 2)",
+      "conclusion": "success",
+      "fullPassed": 97,
+      "preflightPassed": 0
+    },
+    {
+      "id": 111365859402,
+      "name": "checkpoint (webkit, 2)",
+      "conclusion": "success",
+      "fullPassed": 97,
+      "preflightPassed": 0
+    },
+    {
+      "id": 111365859471,
+      "name": "checkpoint (webkit, 1)",
+      "conclusion": "success",
+      "fullPassed": 98,
+      "preflightPassed": 32
+    }
+  ],
+  "workers": 1,
+  "retries": 0,
+  "artifactIntegrity": [
+    {
+      "id": 11294866188,
+      "name": "hsk123-hsk3lessons1011-screens-chromium-shard1",
+      "sha256": "b700b3370e20ee9cc252ff9451b5be051b5af59403aa27adc881f39928ce086f",
+      "bytes": 16406144,
+      "zipHashVerified": true
+    },
+    {
+      "id": 11294406896,
+      "name": "hsk123-hsk3lessons89-screens-chromium-shard1",
+      "sha256": "93171c7c23388cec732f2700c986df7e729de4dab15cc2a482f77fcaf03e01de",
+      "bytes": 16911110,
+      "zipHashVerified": true
+    },
+    {
+      "id": 11294371807,
+      "name": "hsk123-hsk3lessons1011-screens-webkit-shard1",
+      "sha256": "fe2b3207492175e1c31a94ec07728fa901f662add481044daf38760995594620",
+      "bytes": 18091130,
+      "zipHashVerified": true
+    },
+    {
+      "id": 11294097761,
+      "name": "hsk123-hsk3lessons89-screens-webkit-shard1",
+      "sha256": "30e9d3ada6b5ef73df5264040b46df62e7b91530c81663a9830ae83349cd5f25",
+      "bytes": 18765841,
+      "zipHashVerified": true
+    }
+  ],
+  "visualReview": {
+    "status": "bounded-pass",
+    "newScreenshotsCollected": 56,
+    "priorLessonScreenshotsCollected": 64,
+    "observed": [
+      "Both engines: mobile seven-section headers, source content and lower-control samples for lessons10\u201311",
+      "Both engines: lesson10/11 picture-dialogue samples with independent blanks and original figures",
+      "Desktop1440: grammar/practice readable layout samples",
+      "Both engines: prior-response archive viewport320/1440 headers now visible below sticky navigation"
+    ],
+    "limitations": [
+      "Manual review sampled supplied full-page screenshots; not every pixel or every text scene",
+      "All text scenes and activity inventories executed by native assertions; additional all-scene visual acceptance remains in final48-lesson gate",
+      "No human listening or physical-device certification"
+    ]
+  },
+  "productionCommit": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
+  "productionUnchanged": true
+}

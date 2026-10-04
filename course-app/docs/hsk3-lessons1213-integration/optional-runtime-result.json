@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "assertions": 94,
+  "flagCases": [
+    "absent",
+    "false",
+    "true"
+  ],
+  "optionalValues": [
+    "empty",
+    "nonempty-multiline-inert-markup"
+  ],
+  "scope": "Actual renderer and actual learning store save/reload/export/preview/confirm in JSDOM. Native browser/layout remains pending."
+}

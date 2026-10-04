@@ -5,7 +5,7 @@ export interface ActivityFixture {
   kind: string;
   targetRef: string;
   illustrationIds?: string[];
-  fields: {id: string; input: string; answer?: unknown; illustrationId?: string}[];
+  fields: {id: string; input: string; optional?: boolean; answer?: unknown; illustrationId?: string}[];
 }
 export interface LessonFixture {
   number: number;
@@ -71,7 +71,7 @@ export async function submitSaved(page: Page, lesson: LessonFixture, activity: A
   for (const field of activity.fields) {
     const control = group.locator(`[id="${field.id}"]`);
     expected[field.id] = field.input === 'checkbox' ? await control.isChecked() : await control.inputValue();
-    if (field.input !== 'checkbox') expect(String(expected[field.id]).trim(), field.id + ' must be filled').not.toBe('');
+    if (field.input !== 'checkbox' && field.optional !== true) expect(String(expected[field.id]).trim(), field.id + ' must be filled').not.toBe('');
   }
   await group.getByRole('button', {name: submitLabel(activity)}).click();
   await expect(page.locator('.save-status')).toHaveAttribute('data-status', 'saved');

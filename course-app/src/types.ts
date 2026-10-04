@@ -24,7 +24,7 @@ export interface Lesson {
 export interface CourseConfig {id:CourseId;level:2|3;version:'2026.1';count:number;grammarCounts:readonly number[];storageKey:string;legacyKeys:readonly string[];legacyURL:string;entry:string}
 export interface Track {id:string;level:number;lesson:number;track:number;kind:'text'|'vocab';text:number;file:string;duration:number;bytes:number;sha256:string;decode:string;semanticVerification:string}
 
-export interface ActivityField {targetRef?:string;source?:Source;id:string;prompt:Copy;input:'text'|'textarea'|'select'|'checkbox';options?:Copy[];answer?:string|string[];assessment:'official'|'reference'|'open';answerSource?:{document:string;pdfPage:number;item:string};referenceAnswer?:Copy;illustrationId?:string}
+export interface ActivityField {optional?:boolean;targetRef?:string;source?:Source;id:string;prompt:Copy;input:'text'|'textarea'|'select'|'checkbox';options?:Copy[];answer?:string|string[];assessment:'official'|'reference'|'open';answerSource?:{document:string;pdfPage:number;item:string};referenceAnswer?:Copy;illustrationId?:string}
 export interface ActivityMatrix {headerFieldIds?:(string|null)[];hideColumnHeaders?:boolean;horizontalScroll?:boolean;mode?:'checks'|'responses';rowHeading?:Copy;contextHeaders?:Copy[];columns:Copy[];rows:{prompt:Copy;contextCells?:Copy[];fieldIds:string[];cellLabels?:Copy[]}[]}
 export type ActivityMenuItem = {text:Copy;fieldId?:never}|{fieldId:string;text?:never};
 export type ActivityMenuSection = ({heading:Copy;headingFieldId?:never}|{headingFieldId:string;heading?:never}) & {items:ActivityMenuItem[]};
