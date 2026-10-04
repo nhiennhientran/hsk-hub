@@ -73,44 +73,44 @@
     }
   ],
   "checks": {
-    "course_unit": "110 passed locally for L16–18 and bounded city-caption contract",
+    "course_unit": "112 passed locally after16 glossary star additions",
     "hsk1_unit": "335 passed locally; HSK1 code and30-v1 bank unchanged",
-    "course_build": "passed locally after city-caption contract",
-    "nonempty_storage": "456 native cases at1256868 passed; feedbackNote actual-store31checks passed locally",
-    "browsers": "456/456 plus44preflight each at1256868; next504 collection is not execution",
+    "course_build": "passed locally for star metadata candidate",
+    "nonempty_storage": "504 native regression atad6d677 passed; star patch changes no IDs, meanings, grades or records",
+    "browsers": "504/504 plus53preflight each atad6d677; new506 collection pending execution",
     "physical_devices": "not run",
     "human_listening": "not run"
   },
   "publication": "blocked until all sixteen required acceptance gates pass; production unchanged",
-  "updated": "2026-10-04T07:42:00Z",
+  "updated": "2026-10-04T08:33:00Z",
   "remoteSourceCommit": "1f091355561bef02f1b518fab81bb468dc1fc7d9",
   "localSourceCommit": "f37364c280534d7505ad8250e89bef482272faaa",
   "testedSuccessfulCheckpoint": {
-    "remote": "12568684319b40c561f97a1c9892f85588defc50",
-    "local": "12568684319b40c561f97a1c9892f85588defc50",
-    "tree": "6224eee68278c15b4c16857394f991df6e415252",
-    "run": 37185391377,
+    "remote": "ad6d677fedb1912cf1d9764b4d22a1aa17bc28f7",
+    "local": "ad6d677fedb1912cf1d9764b4d22a1aa17bc28f7",
+    "tree": "e767424224e909be394be3660a5e347dca4ad2a4",
+    "run": 37187762775,
     "browsers": [
       "chromium",
       "webkit"
     ],
-    "tests": 456,
-    "preflightPerEngine": 44,
-    "scope": "HSK2L1–15 and HSK3L1–15 functional/source upgrade regression; four explicit city captions pending, final48-lesson gates incomplete"
+    "tests": 504,
+    "preflightPerEngine": 53,
+    "scope": "HSK2L1–15 and HSK3L1–18 deep body/activity regression; appendices/audio/HSK1 source completion and final48 gates remain"
   },
   "currentCI": {
-    "lastPassedRun": 37185391377,
-    "lastPassedBrowserCases": 456,
+    "lastPassedRun": 37187762775,
+    "lastPassedBrowserCases": 504,
     "audioIntegrationRun": 37106355777,
     "audioIntegrationStatus": "original37106355777failed130passed4failed;repaired37107556124passed154",
     "audioCases": 134,
-    "nextLocalTestsDiscoverable": 504,
-    "nextScope": "HSK3L16–18, bounded L15 city captions and prior456 retention",
+    "nextLocalTestsDiscoverable": 506,
+    "nextScope": "16 existing HSK3 word-sense glossary star flags and sources, preserving prior504",
     "lessons67Run": 37107213747,
     "lessons67Status": "previous37107213747failed144passed10failed;repaired37107556124passed154",
-    "extraPreflightCases": 44,
-    "newCandidateStatus": "L16–18 source review and bounded feedback/optional/city-caption repairs accepted;110unit/build/types plus504collection passed; native execution pending",
-    "extraPreflightScope": "last successful count at1256868"
+    "extraPreflightCases": 53,
+    "newCandidateStatus": "Star source crosswalk independently reviewed;112unit/build/types and506collection passed; native execution pending",
+    "extraPreflightScope": "last successful count atad6d677"
   },
   "contentPilot": {
     "levels": [
@@ -197,10 +197,10 @@
     "independentChecks": 1758,
     "browser": "passed174/174 aggregate browser cases and8/8mobilepreflight, run37109960704, remotee8b7aef"
   },
-  "updatedAt": "2026-10-04T07:42:00Z",
-  "remoteDevelopmentCommit": "12568684319b40c561f97a1c9892f85588defc50",
-  "localDevelopmentCommit": "12568684319b40c561f97a1c9892f85588defc50",
-  "exactSharedTree": "6224eee68278c15b4c16857394f991df6e415252",
+  "updatedAt": "2026-10-04T08:33:00Z",
+  "remoteDevelopmentCommit": "ad6d677fedb1912cf1d9764b4d22a1aa17bc28f7",
+  "localDevelopmentCommit": "ad6d677fedb1912cf1d9764b4d22a1aa17bc28f7",
+  "exactSharedTree": "e767424224e909be394be3660a5e347dca4ad2a4",
   "ciHistoryActual": [
     {
       "run": 37105595387,
@@ -416,6 +416,18 @@
       "preflightPerEngine": 44,
       "actualLogsRead": true,
       "visualEvidence": "course-app/docs/hsk3-lessons1415-integration/ci-acceptance.json"
+    },
+    {
+      "run": 37187762775,
+      "commit": "ad6d677fedb1912cf1d9764b4d22a1aa17bc28f7",
+      "status": "success",
+      "passed": 504,
+      "failed": 0,
+      "chromium": 252,
+      "webkit": 252,
+      "preflightPerEngine": 53,
+      "actualLogsRead": true,
+      "visualEvidence": "course-app/docs/hsk3-lessons1618-integration/ci-acceptance.json"
     }
   ],
   "audioBatch23": {
@@ -571,7 +583,7 @@
       "pinnedBrowserDownload": "invalid/truncated ZIP; not installed"
     },
     "draftRecovery": "Lost local-only L8–9 and HSK2 L4–5 audio drafts not recovered; do not infer presence from historical hash",
-    "newCandidateStatus": "Accepted1256868 has456 native passes; L16–18 candidate504 pending"
+    "newCandidateStatus": "ad6d677 accepted504; isolated star metadata506 pending"
   },
   "contentHSK3Batch89": {
     "status": "scoped source/content/figure/browser accepted at d5feac8",
@@ -641,13 +653,13 @@
     "browserExecution": "422/422 plus38preflight each; all four logs and bounded native screenshot samples inspected"
   },
   "releaseBlockers": [
-    "HSK1 original source activity/image coverage incomplete; original full-PDF source inventory complete, L4 compatibility pilot under review",
-    "HSK1 scene-switch listening concealment repair awaiting isolated integration and native regression",
-    "HSK1 homework30-v1 question bank must remain frozen until revision-aware history validation is implemented",
-    "Remaining HSK3 batches, audio clip acceptance, handwriting and complete48-lesson visual/failure/recovery gates"
+    "HSK1 original source activity/image coverage incomplete; L4 source+paired backup candidate independently reviewed locally, integration/native pending",
+    "HSK1 scene-switch listening concealment repair awaits ordered native regression",
+    "HSK1 homework30-v1 question bank remains frozen until revision-aware history validation",
+    "Remaining ordinary HSK3 glossary/English appendix mapping, audio/handwriting and all48 lesson visual/failure/recovery gates"
   ],
   "contentHSK3Batch1415": {
-    "status": "456native regression accepted at1256868; four city captions awaiting bounded next-batch repair",
+    "status": "456regression accepted at1256868; four city captions fixed and accepted within504 atad6d677",
     "activities": 58,
     "fields": 149,
     "officialFields": 47,
@@ -665,7 +677,7 @@
     "browserExecution": "456/456 plus44preflight each; all four logs and bounded screenshot samples inspected"
   },
   "contentHSK3Batch1618": {
-    "status": "independent source/artwork and bounded feedback/optional repairs reviewed; native504 pending",
+    "status": "504native and bounded source/screenshot integration accepted atad6d677",
     "activities": 90,
     "fields": 228,
     "illustrations": 35,
@@ -683,6 +695,27 @@
       "L17 seven-expression scene is one bound composite",
       "L18 twelve review rows and two real grammar explanation groups",
       "L18 editorial context answer note only after confirmed save"
-    ]
+    ],
+    "browserExecution": "504/504 plus53preflight each; four actual logs and bounded screenshot samples inspected"
+  },
+  "hsk3GlossaryStars": {
+    "status": "reviewed metadata candidate; native506 pending",
+    "sourcePdfPages": [
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194
+    ],
+    "heads": 22,
+    "senses": 23,
+    "previouslyMarked": 7,
+    "newlyMarked": 16,
+    "allowedDiff": "supplementarySyllabus and appendixSource only; original values byte-restorable",
+    "fullOrdinaryGlossaryAndEnglishAppendixAudit": false
   }
 }

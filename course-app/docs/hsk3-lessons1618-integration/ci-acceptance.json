@@ -1,0 +1,89 @@
+{
+  "commit": "ad6d677fedb1912cf1d9764b4d22a1aa17bc28f7",
+  "tree": "e767424224e909be394be3660a5e347dca4ad2a4",
+  "runId": 37187762775,
+  "runUrl": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37187762775",
+  "conclusion": "success",
+  "fullBrowserPassed": 504,
+  "preflightPassedPerEngine": 53,
+  "workers": 1,
+  "retries": 0,
+  "allFourActualLogsRead": true,
+  "jobs": [
+    {
+      "id": 111393268696,
+      "engine": "webkit",
+      "shard": 2,
+      "fullPassed": 126
+    },
+    {
+      "id": 111393268781,
+      "engine": "webkit",
+      "shard": 1,
+      "fullPassed": 126,
+      "preflightPassed": 53
+    },
+    {
+      "id": 111393268788,
+      "engine": "chromium",
+      "shard": 2,
+      "fullPassed": 126
+    },
+    {
+      "id": 111393268800,
+      "engine": "chromium",
+      "shard": 1,
+      "fullPassed": 126,
+      "preflightPassed": 53
+    }
+  ],
+  "artifactIntegrity": [
+    {
+      "id": 11298123246,
+      "name": "hsk123-hsk3lessons1618-screens-chromium-shard1",
+      "sha256": "64fe504f55e1e7055eb28fd616479355b4d732d96a73fdafa3d64475f1c94571",
+      "bytes": 24434625,
+      "zipHashVerified": true
+    },
+    {
+      "id": 11297759026,
+      "name": "hsk123-hsk3lessons1415-screens-chromium-shard1",
+      "sha256": "089409dc720ddc21ff942af607ee3ce1e8ac883a1141ad8ed7aa0a06efb0f43e",
+      "bytes": 15626255,
+      "zipHashVerified": true
+    },
+    {
+      "id": 11297552950,
+      "name": "hsk123-hsk3lessons1618-screens-webkit-shard1",
+      "sha256": "4dd11e1bb12ee3156052a4d5864e6404c0fa68a65cac82769a1365d124dcfe4b",
+      "bytes": 26954029,
+      "zipHashVerified": true
+    },
+    {
+      "id": 11297458157,
+      "name": "hsk123-hsk3lessons1415-screens-webkit-shard1",
+      "sha256": "8562ca85805c2320ed4a1587d317f0b8ca89cb3d3912ad6601ff2933d194159a",
+      "bytes": 17157112,
+      "zipHashVerified": true
+    }
+  ],
+  "visualReview": {
+    "status": "bounded-pass",
+    "newScreenshotsCollected": 88,
+    "priorBatchScreenshotsCollected": 60,
+    "observed": [
+      "Both engines mobile390 six-section source samples for L16–18",
+      "Both engines L16 optional fourth classroom field and bilingual marker",
+      "Both engines L18 review last rows and effort controls",
+      "Both engines1440 grammar source explanation samples",
+      "Both engines320 L15 four city names now visible in captions with original-art disclosure"
+    ],
+    "limitations": [
+      "Sampled full-page artifacts, not every pixel or every scene",
+      "All48-lesson full visual gate remains incomplete",
+      "No human listening or physical-device certification"
+    ]
+  },
+  "productionCommit": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
+  "productionUnchanged": true
+}
