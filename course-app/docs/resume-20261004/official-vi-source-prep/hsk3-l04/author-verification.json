@@ -1,0 +1,836 @@
+{
+  "schemaVersion": 1,
+  "verificationUTC": "2026-10-04T22:06:12.659828+00:00",
+  "authorBundleChecksPass": true,
+  "sourceOnly": true,
+  "independentSourceAcceptancePerformed": false,
+  "automatedChecksAreVisualReading": false,
+  "websiteAlignmentCertified": false,
+  "lesson": 4,
+  "sourceItems": 112,
+  "bodyPrintedVI": 88,
+  "appendixPrintedVI": 24,
+  "words": 27,
+  "appendixRoleTranslationUnits": 21,
+  "bodyAppendixBindings": 22,
+  "crossPageOccurrences": 1,
+  "crossPageFragments": 3,
+  "checksPassed": 203,
+  "checksTotal": 203,
+  "issues": [],
+  "checks": [
+    {
+      "check": "actual-original-PDF-byte-identity",
+      "passed": true
+    },
+    {
+      "check": "manually-observed-ID-and-page-counts",
+      "passed": true
+    },
+    {
+      "check": "pending-distinct-independent-review",
+      "passed": true
+    },
+    {
+      "check": "no-website-proposal-runtime-grading-or-OCR",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-VI-counts",
+      "passed": true
+    },
+    {
+      "check": "all-actual-numbered-words-and-POS",
+      "passed": true
+    },
+    {
+      "check": "decisive-raw-field:word-14:printedPOSRaw",
+      "passed": true
+    },
+    {
+      "check": "decisive-raw-field:word-20:printedPOSRaw",
+      "passed": true
+    },
+    {
+      "check": "decisive-raw-field:word-23:printedPOSRaw",
+      "passed": true
+    },
+    {
+      "check": "decisive-raw-field:word-27:printedPOSRaw",
+      "passed": true
+    },
+    {
+      "check": "decisive-raw-field:word-15:printedPinyin",
+      "passed": true
+    },
+    {
+      "check": "decisive-raw-field:grammar-1-explanation:viPrinted",
+      "passed": true
+    },
+    {
+      "check": "all-manually-read-small-inline-glosses",
+      "passed": true
+    },
+    {
+      "check": "all-Chinese-only-body-units-unique",
+      "passed": true
+    },
+    {
+      "check": "all-actual-role-units-and-order",
+      "passed": true
+    },
+    {
+      "check": "role-order:text1",
+      "passed": true
+    },
+    {
+      "check": "role-order:text2",
+      "passed": true
+    },
+    {
+      "check": "role-order:text3",
+      "passed": true
+    },
+    {
+      "check": "whole-paragraph-speaker-semantics",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text1:line01",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text1:line02",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text1:line03",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text1:line04",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text1:line05",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text1:line06",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text1:line07",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text2:line01",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text2:line02",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text2:line03",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text2:line04",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text2:line05",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text2:line06",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text2:line07",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text3:line01",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text3:line02",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text3:line03",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text3:line04",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text3:line05",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text3:line06",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text3:line07",
+      "passed": true
+    },
+    {
+      "check": "body-appendix-1to1:hsk3-official-body:l04:text4:line01",
+      "passed": true
+    },
+    {
+      "check": "bijective-four-official-texts",
+      "passed": true
+    },
+    {
+      "check": "actual-cross-page-occurrence-fragment-counts",
+      "passed": true
+    },
+    {
+      "check": "complete-fragment-join:hsk3-official-vi:l04:p185:appendix-text4-whole-paragraph",
+      "passed": true
+    },
+    {
+      "check": "observed-current-and-next-boundaries",
+      "passed": true
+    },
+    {
+      "check": "actual-source-pages",
+      "passed": true
+    },
+    {
+      "check": "actual-detail-and-locator-counts",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf041-p029.png",
+      "passed": true
+    },
+    {
+      "check": "actual-source-footer:41",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf042-p030.png",
+      "passed": true
+    },
+    {
+      "check": "actual-source-footer:42",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf043-p031.png",
+      "passed": true
+    },
+    {
+      "check": "actual-source-footer:43",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf044-p032.png",
+      "passed": true
+    },
+    {
+      "check": "actual-source-footer:44",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf045-p033.png",
+      "passed": true
+    },
+    {
+      "check": "actual-source-footer:45",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf046-p034.png",
+      "passed": true
+    },
+    {
+      "check": "actual-source-footer:46",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf047-p035.png",
+      "passed": true
+    },
+    {
+      "check": "actual-source-footer:47",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf048-p036.png",
+      "passed": true
+    },
+    {
+      "check": "actual-source-footer:48",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf049-p037.png",
+      "passed": true
+    },
+    {
+      "check": "actual-source-footer:49",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf197-p185.png",
+      "passed": true
+    },
+    {
+      "check": "actual-source-footer:197",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf198-p186.png",
+      "passed": true
+    },
+    {
+      "check": "actual-source-footer:198",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf043-grammar1-formulas.png",
+      "passed": true
+    },
+    {
+      "check": "original-detail-rectangle:original-detail-pdf043-grammar1-formulas",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf045-words18-24.png",
+      "passed": true
+    },
+    {
+      "check": "original-detail-rectangle:original-detail-pdf045-words18-24",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf046-grammar3-formulas.png",
+      "passed": true
+    },
+    {
+      "check": "original-detail-rectangle:original-detail-pdf046-grammar3-formulas",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf049-complete-activity.png",
+      "passed": true
+    },
+    {
+      "check": "original-detail-rectangle:original-detail-pdf049-complete-activity",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf197-l04-left-texts1-2.png",
+      "passed": true
+    },
+    {
+      "check": "original-detail-rectangle:original-detail-pdf197-l04-left-texts1-2",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf197-l04-right-texts2-3-4start.png",
+      "passed": true
+    },
+    {
+      "check": "original-detail-rectangle:original-detail-pdf197-l04-right-texts2-3-4start",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/pdf198-l04-text4-continuation.png",
+      "passed": true
+    },
+    {
+      "check": "original-detail-rectangle:original-detail-pdf198-l04-text4-continuation",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/locator-pdf010-VIII.png",
+      "passed": true
+    },
+    {
+      "check": "actual-locator-view:evidence/locator-pdf010-VIII.png",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/locator-pdf012-X.png",
+      "passed": true
+    },
+    {
+      "check": "actual-locator-view:evidence/locator-pdf012-X.png",
+      "passed": true
+    },
+    {
+      "check": "image-full-decode-CRC-SHA:evidence/locator-pdf050-038.png",
+      "passed": true
+    },
+    {
+      "check": "actual-locator-view:evidence/locator-pdf050-038.png",
+      "passed": true
+    },
+    {
+      "check": "all-permanent-PNGs-declared",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p029:lesson-number-header",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p029:lesson-title",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p029:goals-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p029:goal-1",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p029:goal-2",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p029:goal-3",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p029:warmup-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p029:warmup-picture-match-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p029:warmup-dialogue-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p029:warmup-scenario-1",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p029:warmup-scenario-2",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:text-1-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:text-1-background",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:text-1-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:words-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:word-01",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:word-02",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:word-03",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:word-04",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:word-05",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:word-06",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:word-07",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:word-08",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:word-09",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p030:text-1-role-reading-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p031:lesson-running-marker",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p031:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p031:grammar-1-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p031:grammar-1-explanation",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p031:grammar-1-quantifier-explanation",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p031:inline-gloss-xingqu",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p031:grammar-1-adjective-explanation",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p031:grammar-1-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p031:text-2-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p031:text-2-background",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p031:text-2-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:words-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:word-10",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:word-11",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:word-12",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:word-13",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:word-14",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:word-15",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:word-16",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:word-17",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:text-2-role-reading-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:grammar-2-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p032:grammar-2-explanation",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:lesson-running-marker",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:grammar-2-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:text-3-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:text-3-background",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:text-3-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:words-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:word-18",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:word-19",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:word-20",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:word-21",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:word-22",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:word-23",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p033:word-24",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p034:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p034:text-3-role-reading-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p034:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p034:grammar-3-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p034:grammar-3-exclusion-explanation",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p034:grammar-3-addition-explanation",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p034:grammar-3-rewrite-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p035:lesson-running-marker",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p035:text-4-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p035:text-4-background",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p035:text-4-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p035:words-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p035:word-25",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p035:word-26",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p035:word-27",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p035:text-4-reading-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p036:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p036:combined-exercises-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p036:exercise-word-fill-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p036:exercise-image-describe-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p037:lesson-running-marker",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p037:classroom-activities-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p037:activity-multi-heading",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p037:activity-multi-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-lesson-marker",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-1-line-01",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-1-line-02",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-1-line-03",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-1-line-04",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-1-line-05",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-1-line-06",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-1-line-07",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-2-line-01",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-2-line-02",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-2-line-03",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-2-line-04",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-2-line-05",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-2-line-06",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-2-line-07",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-3-line-01",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-3-line-02",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-3-line-03",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-3-line-04",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-3-line-05",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-3-line-06",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text-3-line-07",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p185:appendix-text4-whole-paragraph",
+      "passed": true
+    },
+    {
+      "check": "source-ID-value-evidence:hsk3-official-vi:l04:p186:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "TSV-exact-identities-values",
+      "passed": true
+    }
+  ],
+  "sourceTranscriptionSHA256": "644727f2bfc774c0a6c8c3327afedcc7c72e0a09d12c4cd70361729628c49805"
+}
