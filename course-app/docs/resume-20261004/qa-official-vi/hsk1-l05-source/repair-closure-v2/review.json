@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "author": "hsk23_remaining_source",
+  "scope": "HSK1 L5 independent isolated-v2 repair closure; original-PDF audit reused precisely",
+  "status": "accepted-source-transcription",
+  "sourcePDF": {
+    "fileName": "HSK1  (3.0).pdf",
+    "sha256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+    "pdfPageCount": 148
+  },
+  "frozenAuthorInput": {
+    "file": "author-input/source-transcription.json",
+    "sha256": "1a5c02d5e46e4adcd278652c4552722c96ff27c19b9805769bd77f4744103d8e",
+    "freezeFile": "author-input/freeze-manifest.json",
+    "freezeSHA256": "41927ffbf0f362f1701416e6e694c64b7083a2e9d2093482ef73852c9b182284"
+  },
+  "initialIndependentReviewSHA256": "8886bfe7783679d39234afc06212c532bd560347caf7b113070a30a6dd5c1616",
+  "initialIndependentFreezeSHA256": "26ad5b6944f9b1934b25e3df95193984ec2b7862a5072dfd40eca4400982d618",
+  "method": "Original eight-page visual audit and three fresh5x crop readings retained; independent exact full-object expected transformation verifies only four requested source-field corrections,141 occurrence renderRef plus1 English-header renderRef ../ prefixes,2 correction metadata; all141 VI strings unchanged. This closure does not replace the initial repair-required record.",
+  "counts": {
+    "occurrences": 141,
+    "accepted": 141,
+    "repair": 0,
+    "hold": 0,
+    "missing": 0
+  },
+  "acceptedCorrections": [
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-02-explanation",
+      "field": "/fragments/0/lineTexts",
+      "old": [
+        "Trong câu vị ngữ danh từ, thành phần vị ngữ chỉ có danh từ hoặc thành phần có tính chất như",
+        "một danh từ thì những thành phần này thường là những từ ngữ được dùng để chỉ thời gian, ngày",
+        "tháng, tuổi tác..."
+      ],
+      "new": [
+        "Trong câu vị ngữ danh từ, thành phần vị ngữ chỉ có danh từ hoặc thành phần có tính chất",
+        "như một danh từ thì những thành phần này thường là những từ ngữ được dùng để chỉ thời gian,",
+        "ngày tháng, tuổi tác..."
+      ],
+      "evidence": "renders/pdf-045-grammar-02-lines-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-16-gloss",
+      "field": "/fragments/0/lineTexts",
+      "old": [
+        "tan làm,",
+        "tan ca"
+      ],
+      "new": [
+        "tan làm, tan ca"
+      ],
+      "evidence": "renders/pdf-048-word-gloss-lines-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-18-gloss",
+      "field": "/fragments/0/lineTexts",
+      "old": [
+        "máy tính,",
+        "máy vi tính"
+      ],
+      "new": [
+        "máy tính, máy vi tính"
+      ],
+      "evidence": "renders/pdf-048-word-gloss-lines-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-group-game-instruction",
+      "field": "/zhContext",
+      "old": "一个人拿着词卡问其他人会不会做词卡上的动作，其他人抢答。抢答最少者成为下一轮的提问者。",
+      "new": "一个人拿着词语卡片，询问其他人会不会做这件事，其他人抢答。抢答最少者成为下一轮的提问者。",
+      "evidence": "renders/pdf-050-activity-zh-context-independent.png"
+    }
+  ],
+  "effectiveVIAll141ByteEqual": true,
+  "wordPOSRoleCoverageLayoutUnchanged": true,
+  "websiteOldVietnameseRead": false,
+  "authorFilesModified": false,
+  "runtimeActivation": false,
+  "websiteVietnameseAuditComplete": false,
+  "perOccurrence": [
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-lesson-label",
+      "status": "accepted",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-043-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-title",
+      "status": "accepted",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-043-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-goals-heading",
+      "status": "accepted",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-043-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-goal-01",
+      "status": "accepted",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-043-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-goal-02",
+      "status": "accepted",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-043-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-goal-03",
+      "status": "accepted",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-043-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-warmup-heading",
+      "status": "accepted",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-043-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-warmup-instruction",
+      "status": "accepted",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-043-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-heading",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-scene",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-read",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-tip-01-label",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-tip-01",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-tip-02-label",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-tip-02",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-words-1-heading",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-01-gloss",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-01-pos",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-02-gloss",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-02-pos",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-03-gloss",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-03-pos",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-04-gloss",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-04-pos",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-05-gloss",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-05-pos",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-06-gloss",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-06-pos",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-07-gloss",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-07-pos",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-08-gloss",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-08-pos",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-role-01",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-role-02",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-role-03",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-role-04",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-role-read",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-pair-practice",
+      "status": "accepted",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-044-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-lesson-label",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-heading",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-01-title",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-01-explanation",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-01-read",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-date-table-01",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-date-table-02",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-01",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-02",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-03",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-04",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-05",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-06",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-07",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-08",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-09",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-10",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-11",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-12",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-01",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-02",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-03",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-04",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-05",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-06",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-07",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-date-example-01",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-date-example-02",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-date-example-03",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-02-title",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-045-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-02-explanation",
+      "status": "accepted",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "initialDecision": "repair",
+      "evidence": "../renders/pdf-045-grammar-02-lines-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-book-header",
+      "status": "accepted",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-046-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-grammar-02-read",
+      "status": "accepted",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-046-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-heading",
+      "status": "accepted",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-046-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-scene",
+      "status": "accepted",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-046-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-listen",
+      "status": "accepted",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-046-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-role-01",
+      "status": "accepted",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-046-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-role-02",
+      "status": "accepted",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-046-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-role-03",
+      "status": "accepted",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-046-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-role-04",
+      "status": "accepted",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-046-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-lesson-label",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-2-role-read",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-2-pair-practice",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-words-2-heading",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-09-gloss",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-09-pos",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-10-gloss",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-11-gloss",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-11-pos",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-12-gloss",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-12-pos",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-13-gloss",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-13-pos",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-14-gloss",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-14-pos",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-15-gloss",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-15-pos",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-grammar-heading",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-grammar-03-title",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-grammar-03-explanation",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-grammar-03-read",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-3-heading",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-3-scene",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-3-listen",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-3-option-1-A-inline",
+      "status": "accepted",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-047-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-book-header",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-01",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-02",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-03",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-04",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-05",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-06",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-words-3-heading",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-16-gloss",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "repair",
+      "evidence": "../renders/pdf-048-word-gloss-lines-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-16-pos",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-17-gloss",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-17-pos",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-18-gloss",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "repair",
+      "evidence": "../renders/pdf-048-word-gloss-lines-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-18-pos",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-19-gloss",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-19-pos",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-20-gloss",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-20-pos",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-21-gloss",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-21-pos",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-22-gloss",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-22-pos",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-read",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-questions-instruction",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-question-01",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-question-02",
+      "status": "accepted",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-048-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf049-lesson-label",
+      "status": "accepted",
+      "pdfPage": 49,
+      "printedPage": "033",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-049-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf049-exercises-heading",
+      "status": "accepted",
+      "pdfPage": 49,
+      "printedPage": "033",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-049-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf049-exercise-01-instruction",
+      "status": "accepted",
+      "pdfPage": 49,
+      "printedPage": "033",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-049-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf049-exercise-02-instruction",
+      "status": "accepted",
+      "pdfPage": 49,
+      "printedPage": "033",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-049-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-book-header",
+      "status": "accepted",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-050-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-activity-heading",
+      "status": "accepted",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-050-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-group-game-heading",
+      "status": "accepted",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-050-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-group-game-instruction",
+      "status": "accepted",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "initialDecision": "repair",
+      "evidence": "../renders/pdf-050-activity-zh-context-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-activity-example-label",
+      "status": "accepted",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-050-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-video-heading",
+      "status": "accepted",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-050-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-video-topic",
+      "status": "accepted",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-050-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-video-subtitle",
+      "status": "accepted",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "initialDecision": "accepted",
+      "evidence": "../renders/pdf-050-independent.png"
+    }
+  ]
+}

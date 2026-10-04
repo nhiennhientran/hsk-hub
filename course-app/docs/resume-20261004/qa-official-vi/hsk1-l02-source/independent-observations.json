@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "lesson": 2,
+  "authorSHA256": "bcb9852dd334b4135679f7a55c6f95ab7cc876633ee652e4574bd88e24a6bc8f",
+  "authorFreezeSHA256": "42dea94c1f0e1cc494fa7d8711a9d90d6d00e206b4e13ff67ddfceb46e14a94a",
+  "pdfPages": [21,22,23,24,25],
+  "printedPages": ["005","006","007","008","009"],
+  "occurrenceCount": 84,
+  "byPDFPage": {"21":10,"22":20,"23":22,"24":14,"25":18},
+  "wordCounts": {"ordinaryWordRows":15,"properNameRows":0,"printedPosOccurrences":14,"dialogueTranslatedLines":10,"tongueTwisterTranslatedLines":3,"crossPageViTextFragments":0,"grammarMixedZhViExamples":1},
+  "speakers": {"pdf022-text-1-line-01":"王一飞","pdf022-text-1-line-02":"陈天中","pdf023-text-2-line-01":"陈天中","pdf023-text-2-line-02":"白家月","pdf023-text-2-line-03":"陈天中","pdf023-text-2-line-04":"白家月","pdf024-text-3-line-01":"李文","pdf024-text-3-line-02":"白家月","pdf024-text-3-line-03":"李文","pdf024-text-3-line-04":"白家月"},
+  "extraFields": {
+    "pdf021-lesson-label":{"adjacentNumeralPrinted":"2"},
+    "pdf023-running-lesson":{"adjacentNumeralPrinted":"2"},
+    "pdf025-running-lesson":{"adjacentNumeralPrinted":"2"},
+    "pdf021-text-1-read":{"audioPrinted":"2-1"},
+    "pdf022-text-1-words":{"audioPrinted":"2-2"},
+    "pdf023-text-2-read":{"audioPrinted":"2-3"},
+    "pdf023-text-2-words":{"audioPrinted":"2-4"},
+    "pdf024-text-3-read":{"audioPrinted":"2-5"},
+    "pdf025-text-3-words":{"audioPrinted":"2-6"},
+    "pdf025-tongue-heading":{"audioPrinted":"2-7"},
+    "pdf022-tip-politeness":{"associatedZh":"请问"},
+    "pdf023-tip-no-problem":{"associatedZh":"没关系"},
+    "pdf024-grammar-heading":{"printOrdinal":1},
+    "pdf024-grammar-explanation":{"mixedZhViExample":true},
+    "pdf025-enrichment-heading":{"mediaKindPrinted":"tap-icon"}
+  },
+  "lineJoiners": {"pdf023-tip-no-problem":[" ",""]},
+  "wordTableKeys": ["pdfPage","printOrdinal","kind","zhPrinted","pinyinPrinted","rawPosLabel"],
+  "wordTableReadings": [
+    [22,1,"ordinary","请问","qǐngwèn","đgt."],
+    [22,2,"ordinary","你","nǐ","đt."],
+    [22,3,"ordinary","叫","jiào","đgt."],
+    [22,4,"ordinary","什么","shénme","đt."],
+    [22,5,"ordinary","名字","míngzi","dt."],
+    [22,6,"ordinary","我","wǒ","đt."],
+    [23,7,"ordinary","不","bù","phó."],
+    [23,8,"ordinary","是","shì","đgt."],
+    [23,9,"ordinary","对不起","duìbuqǐ","đgt."],
+    [23,10,"ordinary","没关系","méi guānxi",null],
+    [23,11,"ordinary","没事","méishì","đgt."],
+    [25,12,"ordinary","很","hěn","phó."],
+    [25,13,"ordinary","高兴","gāoxìng","tt."],
+    [25,14,"ordinary","认识","rènshi","đgt."],
+    [25,15,"ordinary","也","yě","phó."]
+  ],
+  "layoutReadings": [
+    {"kind":"text-block-continuation","textBlock":1,"fromPDFPage":21,"toPDFPage":22,"note":"Scene/photo/read heading on 21; Chinese bubbles, Vietnamese translation box, words1–6 and practices on 22."},
+    {"kind":"text-word-table-continuation","textBlock":3,"fromPDFPage":24,"toPDFPage":25,"note":"Chinese bubbles and four Vietnamese lines on 24; words12–15 and practices on 25. No Vietnamese sentence spans these pages."}
+  ],
+  "noPrintedVietnameseReadings": [
+    {"pdfPage":24,"zhPrinted":["你叫什么名字？","我叫白家月。","我是学生。"],"viPrinted":false,"note":"Three grammar exercises have only Chinese; no Vietnamese added."},
+    {"pdfPages":[21,22,23,24,25],"note":"Avatar names and pinyin, audio labels and Chinese bubbles have no additional inline Vietnamese. Printed VI boxes separately accounted. Enrichment icon is tap, not a numbered video."}
+  ],
+  "printedSpellingsPreserved": ["Bài khoá","phó.","Annie","Mình tên là Lý Văn"],
+  "roleNote": "Teacher Vương Nhất Phi uses em; Trần Thiên Trung answers with Em and ạ. Bạch Gia Nguyệt and Lý Văn are distinct speakers. Annie is the wrongly addressed name, not Bạch Gia Nguyệt's identity.",
+  "mixedLanguageNote": "Original 我 (chủ ngữ) 叫 (vị ngữ) 陈天中 (tân ngữ) retained, not synthesized VI. Recorded spaces beside mixed-language parentheses follow the author's declared token-preserving spacing policy; source glyph types and actual line break remain visible in original-PDF crop."
+}

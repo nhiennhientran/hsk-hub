@@ -1,0 +1,2635 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "author": "hsk23_remaining_source",
+  "scope": "HSK1 lesson 2 original-PDF source transcription only",
+  "sourcePDF": {
+    "fileName": "HSK1  (3.0).pdf",
+    "sha256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+    "pdfPageCount": 148
+  },
+  "frozenAuthorInput": {
+    "file": "author-input/source-transcription.json",
+    "sha256": "bcb9852dd334b4135679f7a55c6f95ab7cc876633ee652e4574bd88e24a6bc8f",
+    "freezeFile": "author-input/freeze-manifest.json",
+    "freezeSHA256": "42dea94c1f0e1cc494fa7d8711a9d90d6d00e206b4e13ff67ddfceb46e14a94a"
+  },
+  "method": "Direct original-PDF independent 3x rendering of all 5 pages plus 2 direct original-PDF 5x crops; visually read every full page and crop, then recorded literal manual TSV and observations. No OCR or author-image substitute.",
+  "pdfPages": [
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "printedPages": [
+    "005",
+    "006",
+    "007",
+    "008",
+    "009"
+  ],
+  "status": "accepted-source-transcription",
+  "counts": {
+    "occurrences": 84,
+    "accepted": 84,
+    "repair": 0,
+    "missing": 0
+  },
+  "coverageCounts": {
+    "ordinaryWordRows": 15,
+    "properNameRows": 0,
+    "printedPosOccurrences": 14,
+    "dialogueTranslatedLines": 10,
+    "tongueTwisterTranslatedLines": 3,
+    "crossPageViTextFragments": 0,
+    "grammarMixedZhViExamples": 1
+  },
+  "byPDFPage": {
+    "21": 10,
+    "22": 20,
+    "23": 22,
+    "24": 14,
+    "25": 18
+  },
+  "byCategory": {
+    "lesson-label": 1,
+    "lesson-title": 1,
+    "section-heading": 9,
+    "goal": 4,
+    "scene": 3,
+    "instruction": 10,
+    "running-header": 4,
+    "tip-label": 3,
+    "tip": 3,
+    "dialogue-translation": 10,
+    "word-gloss": 15,
+    "word-pos": 14,
+    "grammar-heading": 1,
+    "grammar-explanation": 1,
+    "tongue-twister-translation": 3,
+    "enrichment-heading": 1,
+    "enrichment-topic": 1
+  },
+  "missingPrintedVietnamese": [],
+  "wordTables": {
+    "status": "accepted",
+    "keys": [
+      "kind",
+      "textBlock",
+      "fromPDFPage",
+      "toPDFPage"
+    ],
+    "readings": [
+      [
+        22,
+        1,
+        "ordinary",
+        "请问",
+        "qǐngwèn",
+        "đgt."
+      ],
+      [
+        22,
+        2,
+        "ordinary",
+        "你",
+        "nǐ",
+        "đt."
+      ],
+      [
+        22,
+        3,
+        "ordinary",
+        "叫",
+        "jiào",
+        "đgt."
+      ],
+      [
+        22,
+        4,
+        "ordinary",
+        "什么",
+        "shénme",
+        "đt."
+      ],
+      [
+        22,
+        5,
+        "ordinary",
+        "名字",
+        "míngzi",
+        "dt."
+      ],
+      [
+        22,
+        6,
+        "ordinary",
+        "我",
+        "wǒ",
+        "đt."
+      ],
+      [
+        23,
+        7,
+        "ordinary",
+        "不",
+        "bù",
+        "phó."
+      ],
+      [
+        23,
+        8,
+        "ordinary",
+        "是",
+        "shì",
+        "đgt."
+      ],
+      [
+        23,
+        9,
+        "ordinary",
+        "对不起",
+        "duìbuqǐ",
+        "đgt."
+      ],
+      [
+        23,
+        10,
+        "ordinary",
+        "没关系",
+        "méi guānxi",
+        null
+      ],
+      [
+        23,
+        11,
+        "ordinary",
+        "没事",
+        "méishì",
+        "đgt."
+      ],
+      [
+        25,
+        12,
+        "ordinary",
+        "很",
+        "hěn",
+        "phó."
+      ],
+      [
+        25,
+        13,
+        "ordinary",
+        "高兴",
+        "gāoxìng",
+        "tt."
+      ],
+      [
+        25,
+        14,
+        "ordinary",
+        "认识",
+        "rènshi",
+        "đgt."
+      ],
+      [
+        25,
+        15,
+        "ordinary",
+        "也",
+        "yě",
+        "phó."
+      ]
+    ]
+  },
+  "layoutReadings": [
+    {
+      "kind": "text-block-continuation",
+      "textBlock": 1,
+      "fromPDFPage": 21,
+      "toPDFPage": 22,
+      "note": "Scene/photo/read heading on 21; Chinese bubbles, Vietnamese translation box, words1–6 and practices on 22."
+    },
+    {
+      "kind": "text-word-table-continuation",
+      "textBlock": 3,
+      "fromPDFPage": 24,
+      "toPDFPage": 25,
+      "note": "Chinese bubbles and four Vietnamese lines on 24; words12–15 and practices on 25. No Vietnamese sentence spans these pages."
+    }
+  ],
+  "noPrintedVietnameseReadings": [
+    {
+      "pdfPage": 24,
+      "zhPrinted": [
+        "你叫什么名字？",
+        "我叫白家月。",
+        "我是学生。"
+      ],
+      "viPrinted": false,
+      "note": "Three grammar exercises have only Chinese; no Vietnamese added."
+    },
+    {
+      "pdfPages": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "note": "Avatar names and pinyin, audio labels and Chinese bubbles have no additional inline Vietnamese. Printed VI boxes separately accounted. Enrichment icon is tap, not a numbered video."
+    }
+  ],
+  "printedSpellingsPreserved": [
+    "Bài khoá",
+    "phó.",
+    "Annie",
+    "Mình tên là Lý Văn"
+  ],
+  "roleNote": "Teacher Vương Nhất Phi uses em; Trần Thiên Trung answers with Em and ạ. Bạch Gia Nguyệt and Lý Văn are distinct speakers. Annie is the wrongly addressed name, not Bạch Gia Nguyệt's identity.",
+  "mixedLanguageNote": "Original 我 (chủ ngữ) 叫 (vị ngữ) 陈天中 (tân ngữ) retained, not synthesized VI. Recorded spaces beside mixed-language parentheses follow the author's declared token-preserving spacing policy; source glyph types and actual line break remain visible in original-PDF crop.",
+  "evidence": [
+    {
+      "file": "render-manifest.json",
+      "sha256": "6cd6a20aacc9a12ea117a528c36b62cc68785adb02287bba73caecf8494ca288"
+    },
+    {
+      "file": "crop-manifest.json",
+      "sha256": "df993b98d62f3a09494f34f07cc904043819d0f9316abf6dd8bb8101b4a02ee1"
+    },
+    {
+      "file": "independent-reading.tsv",
+      "sha256": "f4b2722a6bf9657d4281fd1978bf510551091bce7361627c5dc4ee716d090a1d"
+    },
+    {
+      "file": "independent-observations.json",
+      "sha256": "bdde4a3fac989a191601a7ba87cd6172369832f0415432bf7c811a5e2cf81af2"
+    }
+  ],
+  "websiteOldVietnameseRead": false,
+  "authorFilesModified": false,
+  "runtimeActivation": "none",
+  "websiteVietnameseAuditComplete": false,
+  "perOccurrence": [
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-lesson-label",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 21,
+        "printedPage": "005",
+        "zhContext": "2",
+        "viText": "Bài",
+        "fragments": [
+          {
+            "pdfPage": 21,
+            "printedPage": "005",
+            "lineTexts": [
+              "Bài"
+            ]
+          }
+        ],
+        "adjacentNumeralPrinted": "2"
+      },
+      "independentRender": "renders/pdf-021-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-title",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 21,
+        "printedPage": "005",
+        "zhContext": "我叫李文",
+        "viText": "Mình tên là Lý Văn",
+        "fragments": [
+          {
+            "pdfPage": 21,
+            "printedPage": "005",
+            "lineTexts": [
+              "Mình tên là Lý Văn"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-021-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-goals-heading",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 21,
+        "printedPage": "005",
+        "zhContext": "目标",
+        "viText": "Mục tiêu",
+        "fragments": [
+          {
+            "pdfPage": 21,
+            "printedPage": "005",
+            "lineTexts": [
+              "Mục tiêu"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-021-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-goal-01",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 21,
+        "printedPage": "005",
+        "zhContext": "能听懂并使用中文姓名自我介绍。",
+        "viText": "Có thể nghe hiểu và tự giới thiệu họ tên mình bằng tiếng Trung Quốc.",
+        "fragments": [
+          {
+            "pdfPage": 21,
+            "printedPage": "005",
+            "lineTexts": [
+              "Có thể nghe hiểu và tự giới thiệu họ tên mình bằng",
+              "tiếng Trung Quốc."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-021-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-goal-02",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 21,
+        "printedPage": "005",
+        "zhContext": "能听懂并使用致歉语，用“对不起”和“没关系”表达歉意和回应。",
+        "viText": "Có thể nghe hiểu và sử dụng được cách nói xin lỗi, biết dùng “对不起” để xin lỗi và đáp lại bằng “没关系”.",
+        "fragments": [
+          {
+            "pdfPage": 21,
+            "printedPage": "005",
+            "lineTexts": [
+              "Có thể nghe",
+              "hiểu và sử dụng được cách nói xin lỗi, biết dùng “对不起” để xin lỗi và đáp lại bằng",
+              "“没关系”."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-021-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-goal-03",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 21,
+        "printedPage": "005",
+        "zhContext": "掌握汉语的基本语序。",
+        "viText": "Nắm vững trật tự cơ bản của câu trong tiếng Trung Quốc.",
+        "fragments": [
+          {
+            "pdfPage": 21,
+            "printedPage": "005",
+            "lineTexts": [
+              "Nắm vững trật tự cơ bản của câu trong tiếng Trung Quốc."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-021-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-goal-04",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 21,
+        "printedPage": "005",
+        "zhContext": "了解中文姓名的构成。",
+        "viText": "Hiểu về cấu trúc họ tên của người Trung Quốc.",
+        "fragments": [
+          {
+            "pdfPage": 21,
+            "printedPage": "005",
+            "lineTexts": [
+              "Hiểu về cấu trúc họ tên của người Trung Quốc."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-021-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-text-1-heading",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 21,
+        "printedPage": "005",
+        "zhContext": "课文1",
+        "viText": "Bài khoá 1",
+        "fragments": [
+          {
+            "pdfPage": 21,
+            "printedPage": "005",
+            "lineTexts": [
+              "Bài khoá 1"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-021-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-text-1-scene",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 21,
+        "printedPage": "005",
+        "zhContext": "在教室里，王一飞在认识学生。",
+        "viText": "Vương Nhất Phi đang làm quen với học sinh ở trong lớp học.",
+        "fragments": [
+          {
+            "pdfPage": 21,
+            "printedPage": "005",
+            "lineTexts": [
+              "Vương Nhất Phi đang làm quen với học sinh ở trong lớp học."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-021-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf021-text-1-read",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 21,
+        "printedPage": "005",
+        "zhContext": "朗读对话。",
+        "viText": "Đọc to đoạn hội thoại.",
+        "fragments": [
+          {
+            "pdfPage": 21,
+            "printedPage": "005",
+            "lineTexts": [
+              "Đọc to đoạn hội thoại."
+            ]
+          }
+        ],
+        "audioPrinted": "2-1"
+      },
+      "independentRender": "renders/pdf-021-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-book-header",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "新HSK教程1",
+        "viText": "Giáo trình New HSK 1",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "Giáo trình New HSK 1"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-tip-label",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "小语助力",
+        "viText": "Tiểu Ngữ giúp sức",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "Tiểu Ngữ",
+              "giúp sức"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-tip-politeness",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "敬辞，请求对方回答问题。",
+        "viText": "Đây là một kính ngữ, được sử dụng khi đề nghị ai đó trả lời câu hỏi.",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "Đây là một kính ngữ, được",
+              "sử dụng khi đề nghị ai đó trả",
+              "lời câu hỏi."
+            ]
+          }
+        ],
+        "associatedZh": "请问"
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-text-1-line-01",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "请问，你叫什么名字？",
+        "viText": "Vương Nhất Phi: Xin hỏi, em tên là gì?",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "Vương Nhất Phi: Xin hỏi, em tên là gì?"
+            ]
+          }
+        ],
+        "speakerZh": "王一飞"
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity",
+        "speaker identity/order"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-text-1-line-02",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "我叫陈天中。",
+        "viText": "Trần Thiên Trung: Em tên là Trần Thiên Trung ạ.",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "Trần Thiên Trung: Em tên là Trần Thiên Trung ạ."
+            ]
+          }
+        ],
+        "speakerZh": "陈天中"
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity",
+        "speaker identity/order"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-text-1-words",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "生词",
+        "viText": "Từ mới",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "Từ mới"
+            ]
+          }
+        ],
+        "audioPrinted": "2-2"
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-01-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "请问",
+        "viText": "xin hỏi",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "xin hỏi"
+            ]
+          }
+        ],
+        "printOrdinal": 1
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-01-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "请问",
+        "viText": "đgt.",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "đgt."
+            ]
+          }
+        ],
+        "printOrdinal": 1
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-02-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "你",
+        "viText": "bạn, anh, chị, em... (đại từ nhân xưng ngôi thứ hai số ít)",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "bạn, anh, chị, em... (đại từ nhân xưng ngôi",
+              "thứ hai số ít)"
+            ]
+          }
+        ],
+        "printOrdinal": 2
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-02-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "你",
+        "viText": "đt.",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "đt."
+            ]
+          }
+        ],
+        "printOrdinal": 2
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-03-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "叫",
+        "viText": "gọi là, tên là",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "gọi là, tên là"
+            ]
+          }
+        ],
+        "printOrdinal": 3
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-03-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "叫",
+        "viText": "đgt.",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "đgt."
+            ]
+          }
+        ],
+        "printOrdinal": 3
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-04-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "什么",
+        "viText": "gì, cái gì",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "gì, cái gì"
+            ]
+          }
+        ],
+        "printOrdinal": 4
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-04-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "什么",
+        "viText": "đt.",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "đt."
+            ]
+          }
+        ],
+        "printOrdinal": 4
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-05-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "名字",
+        "viText": "tên",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "tên"
+            ]
+          }
+        ],
+        "printOrdinal": 5
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-05-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "名字",
+        "viText": "dt.",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "dt."
+            ]
+          }
+        ],
+        "printOrdinal": 5
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-06-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "我",
+        "viText": "tôi, mình... (đại từ nhân xưng ngôi thứ nhất số ít)",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "tôi, mình... (đại từ nhân xưng ngôi thứ nhất",
+              "số ít)"
+            ]
+          }
+        ],
+        "printOrdinal": 6
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-word-06-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "我",
+        "viText": "đt.",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "đt."
+            ]
+          }
+        ],
+        "printOrdinal": 6
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-text-1-role-read",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "分角色朗读对话。",
+        "viText": "Phân vai đọc to đoạn hội thoại.",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "Phân vai đọc to đoạn hội thoại."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf022-text-1-pair-practice",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 22,
+        "printedPage": "006",
+        "zhContext": "两人一组，用自己的名字互相问答。",
+        "viText": "Hai người một nhóm, hỏi và trả lời bằng tên thật của mình.",
+        "fragments": [
+          {
+            "pdfPage": 22,
+            "printedPage": "006",
+            "lineTexts": [
+              "Hai người một nhóm, hỏi và trả lời bằng tên thật",
+              "của mình."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-022-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-running-lesson",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "我叫李文 | 2",
+        "viText": "Bài",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Bài"
+            ]
+          }
+        ],
+        "adjacentNumeralPrinted": "2"
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-heading",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "课文2",
+        "viText": "Bài khoá 2",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Bài khoá 2"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-scene",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "在校园里，陈天中和白家月打招呼时认错了人。",
+        "viText": "Trần Thiên Trung đã nhầm Bạch Gia Nguyệt với người khác khi chào hỏi cô ấy ở trong khuôn viên trường.",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Trần Thiên Trung đã nhầm Bạch Gia Nguyệt",
+              "với người khác khi chào hỏi cô ấy ở trong khuôn viên trường."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-read",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "朗读对话。",
+        "viText": "Đọc to đoạn hội thoại.",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Đọc to đoạn hội thoại."
+            ]
+          }
+        ],
+        "audioPrinted": "2-3"
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-tip-label",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "小语助力",
+        "viText": "Tiểu Ngữ giúp sức",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Tiểu Ngữ",
+              "giúp sức"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-tip-no-problem",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "在口语中也说“没事”或“没事没事”。",
+        "viText": "Trong văn nói, mọi người cũng dùng “没事” hoặc “没事没事”.",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Trong văn nói, mọi người",
+              "cũng dùng “没事” hoặc “没事",
+              "没事”."
+            ],
+            "lineJoiners": [
+              " ",
+              ""
+            ]
+          }
+        ],
+        "associatedZh": "没关系"
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-words",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "生词",
+        "viText": "Từ mới",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Từ mới"
+            ]
+          }
+        ],
+        "audioPrinted": "2-4"
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-07-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "不",
+        "viText": "không",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "không"
+            ]
+          }
+        ],
+        "printOrdinal": 7
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-07-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "不",
+        "viText": "phó.",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "phó."
+            ]
+          }
+        ],
+        "printOrdinal": 7
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-08-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "是",
+        "viText": "là",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "là"
+            ]
+          }
+        ],
+        "printOrdinal": 8
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-08-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "是",
+        "viText": "đgt.",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "đgt."
+            ]
+          }
+        ],
+        "printOrdinal": 8
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-09-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "对不起",
+        "viText": "xin lỗi",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "xin lỗi"
+            ]
+          }
+        ],
+        "printOrdinal": 9
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-09-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "对不起",
+        "viText": "đgt.",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "đgt."
+            ]
+          }
+        ],
+        "printOrdinal": 9
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-10-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "没关系",
+        "viText": "không sao, không có gì",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "không sao,",
+              "không có gì"
+            ]
+          }
+        ],
+        "printOrdinal": 10
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-11-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "没事",
+        "viText": "không sao, không có gì",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "không sao,",
+              "không có gì"
+            ]
+          }
+        ],
+        "printOrdinal": 11
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-word-11-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "没事",
+        "viText": "đgt.",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "đgt."
+            ]
+          }
+        ],
+        "printOrdinal": 11
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-line-01",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "你好，安妮！",
+        "viText": "Trần Thiên Trung: Chào Annie!",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Trần Thiên Trung: Chào Annie!"
+            ]
+          }
+        ],
+        "speakerZh": "陈天中"
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity",
+        "speaker identity/order"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-line-02",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "你好，陈天中！我不是安妮，我是白家月。",
+        "viText": "Bạch Gia Nguyệt: Chào Trần Thiên Trung! Mình không phải là Annie, mình là Bạch Gia Nguyệt.",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Bạch Gia Nguyệt: Chào Trần Thiên Trung! Mình không phải là Annie, mình là Bạch Gia Nguyệt."
+            ]
+          }
+        ],
+        "speakerZh": "白家月"
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity",
+        "speaker identity/order"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-line-03",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "对不起！",
+        "viText": "Trần Thiên Trung: Xin lỗi bạn!",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Trần Thiên Trung: Xin lỗi bạn!"
+            ]
+          }
+        ],
+        "speakerZh": "陈天中"
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity",
+        "speaker identity/order"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-line-04",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "没关系！",
+        "viText": "Bạch Gia Nguyệt: Không sao đâu!",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Bạch Gia Nguyệt: Không sao đâu!"
+            ]
+          }
+        ],
+        "speakerZh": "白家月"
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity",
+        "speaker identity/order"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-role-read",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "分角色朗读对话。",
+        "viText": "Phân vai đọc to đoạn hội thoại.",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Phân vai đọc to đoạn hội thoại."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf023-text-2-pair-practice",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 23,
+        "printedPage": "007",
+        "zhContext": "两人一组，用真实姓名对话。",
+        "viText": "Hai người một nhóm, tiến hành hội thoại với nhau bằng họ tên thật.",
+        "fragments": [
+          {
+            "pdfPage": 23,
+            "printedPage": "007",
+            "lineTexts": [
+              "Hai người một nhóm, tiến hành hội thoại với nhau bằng",
+              "họ tên thật."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-023-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-book-header",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "新HSK教程1",
+        "viText": "Giáo trình New HSK 1",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Giáo trình New HSK 1"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-grammar-section",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "小语讲堂",
+        "viText": "Lớp học của Tiểu Ngữ",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Lớp học của Tiểu Ngữ"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-grammar-heading",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "汉语的基本语序",
+        "viText": "Trật tự từ cơ bản của câu trong tiếng Trung Quốc",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Trật tự từ cơ bản của câu trong tiếng Trung Quốc"
+            ]
+          }
+        ],
+        "printOrdinal": 1
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-grammar-explanation",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "汉语的基本语序是：主语+谓语+宾语。例如：我（主语）叫（谓语）陈天中（宾语）。",
+        "viText": "Trật tự từ cơ bản của câu trong tiếng Trung Quốc là: Chủ ngữ + vị ngữ + tân ngữ. Ví dụ: 我 (chủ ngữ) 叫 (vị ngữ) 陈天中 (tân ngữ).",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Trật tự từ cơ bản của câu trong tiếng Trung Quốc là: Chủ ngữ + vị ngữ + tân ngữ. Ví dụ:",
+              "我 (chủ ngữ) 叫 (vị ngữ) 陈天中 (tân ngữ)."
+            ]
+          }
+        ],
+        "mixedZhViExample": true
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-grammar-read",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "大声朗读。",
+        "viText": "Đọc to các câu sau.",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Đọc to các câu sau."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-heading",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "课文3",
+        "viText": "Bài khoá 3",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Bài khoá 3"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-scene",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "在校园里，李文和白家月第一次相遇。",
+        "viText": "Lý Văn và Bạch Gia Nguyệt lần đầu gặp nhau trong khuôn viên trường.",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Lý Văn và Bạch Gia Nguyệt lần đầu gặp nhau trong",
+              "khuôn viên trường."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-read",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "朗读对话。",
+        "viText": "Đọc to đoạn hội thoại.",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Đọc to đoạn hội thoại."
+            ]
+          }
+        ],
+        "audioPrinted": "2-5"
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-tip-label",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "小语助力",
+        "viText": "Tiểu Ngữ giúp sức",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Tiểu Ngữ",
+              "giúp sức"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-tip-name",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "中国人的姓名：姓+名",
+        "viText": "Họ tên của người Trung Quốc gồm: họ + tên",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Họ tên của",
+              "người Trung Quốc gồm: họ + tên"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-line-01",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "你好！我叫李文。",
+        "viText": "Lý Văn: Chào bạn! Mình tên là Lý Văn.",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Lý Văn: Chào bạn! Mình tên là Lý Văn."
+            ]
+          }
+        ],
+        "speakerZh": "李文"
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity",
+        "speaker identity/order"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-line-02",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "你好！我叫白家月。",
+        "viText": "Bạch Gia Nguyệt: Xin chào! Mình tên là Bạch Gia Nguyệt.",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Bạch Gia Nguyệt: Xin chào! Mình tên là",
+              "Bạch Gia Nguyệt."
+            ]
+          }
+        ],
+        "speakerZh": "白家月"
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity",
+        "speaker identity/order"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-line-03",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "很高兴认识你。",
+        "viText": "Lý Văn: Rất vui được làm quen với bạn.",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Lý Văn: Rất vui được làm quen với bạn."
+            ]
+          }
+        ],
+        "speakerZh": "李文"
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity",
+        "speaker identity/order"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf024-text-3-line-04",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 24,
+        "printedPage": "008",
+        "zhContext": "认识你我也很高兴。",
+        "viText": "Bạch Gia Nguyệt: Mình cũng rất vui được làm quen với bạn.",
+        "fragments": [
+          {
+            "pdfPage": 24,
+            "printedPage": "008",
+            "lineTexts": [
+              "Bạch Gia Nguyệt: Mình cũng rất vui được",
+              "làm quen với bạn."
+            ]
+          }
+        ],
+        "speakerZh": "白家月"
+      },
+      "independentRender": "renders/pdf-024-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity",
+        "speaker identity/order"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-running-lesson",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "我叫李文 | 2",
+        "viText": "Bài",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "Bài"
+            ]
+          }
+        ],
+        "adjacentNumeralPrinted": "2"
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-text-3-words",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "生词",
+        "viText": "Từ mới",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "Từ mới"
+            ]
+          }
+        ],
+        "audioPrinted": "2-6"
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-12-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "很",
+        "viText": "rất",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "rất"
+            ]
+          }
+        ],
+        "printOrdinal": 12
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-12-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "很",
+        "viText": "phó.",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "phó."
+            ]
+          }
+        ],
+        "printOrdinal": 12
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-13-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "高兴",
+        "viText": "vui, vui vẻ",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "vui, vui vẻ"
+            ]
+          }
+        ],
+        "printOrdinal": 13
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-13-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "高兴",
+        "viText": "tt.",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "tt."
+            ]
+          }
+        ],
+        "printOrdinal": 13
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-14-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "认识",
+        "viText": "quen, làm quen",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "quen, làm quen"
+            ]
+          }
+        ],
+        "printOrdinal": 14
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-14-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "认识",
+        "viText": "đgt.",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "đgt."
+            ]
+          }
+        ],
+        "printOrdinal": 14
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-15-gloss",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "也",
+        "viText": "cũng",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "cũng"
+            ]
+          }
+        ],
+        "printOrdinal": 15
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-word-15-pos",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "也",
+        "viText": "phó.",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "phó."
+            ]
+          }
+        ],
+        "printOrdinal": 15
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-text-3-role-read",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "分角色朗读对话。",
+        "viText": "Phân vai đọc to đoạn hội thoại.",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "Phân vai đọc to đoạn hội thoại."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-text-3-pair-practice",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "两人一组，用自己的名字自我介绍。",
+        "viText": "Hai người một nhóm, tự giới thiệu mình bằng tên thật.",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "Hai người một nhóm, tự giới thiệu mình bằng",
+              "tên thật."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-tongue-heading",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "跟读绕口令",
+        "viText": "Cùng đọc bài vè",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "Cùng đọc bài vè"
+            ]
+          }
+        ],
+        "audioPrinted": "2-7"
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-tongue-line-01",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "七加一，再减一，",
+        "viText": "Bảy cộng một, lại trừ một.",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "Bảy cộng một, lại trừ một."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-tongue-line-02",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "加完减完等于几？",
+        "viText": "Cộng xong trừ xong thì bằng mấy?",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "Cộng xong trừ xong thì bằng mấy?"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-tongue-line-03",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "加完减完还是七。",
+        "viText": "Cộng xong trừ xong vẫn là bảy.",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "Cộng xong trừ xong vẫn là bảy."
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-enrichment-heading",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "小语的彩蛋",
+        "viText": "Món quà của Tiểu Ngữ",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "Món quà của Tiểu Ngữ"
+            ]
+          }
+        ],
+        "mediaKindPrinted": "tap-icon"
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l02-pdf025-enrichment-topic",
+      "status": "accepted",
+      "independentOriginalPDFReading": {
+        "pdfPage": 25,
+        "printedPage": "009",
+        "zhContext": "世界各国的中文名称",
+        "viText": "Tên tiếng Trung Quốc của các nước trên thế giới",
+        "fragments": [
+          {
+            "pdfPage": 25,
+            "printedPage": "009",
+            "lineTexts": [
+              "Tên tiếng Trung Quốc của các nước trên thế giới"
+            ]
+          }
+        ]
+      },
+      "independentRender": "renders/pdf-025-independent.png",
+      "checked": [
+        "diacritics/case/punctuation",
+        "physical line sequence",
+        "nearby Chinese context",
+        "page identity"
+      ],
+      "differences": {}
+    }
+  ]
+}

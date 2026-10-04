@@ -1,0 +1,2411 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "author": "hsk23_remaining_source",
+  "scope": "HSK1 lesson5 original-PDF source transcription only",
+  "sourcePDF": {
+    "fileName": "HSK1  (3.0).pdf",
+    "sha256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+    "pdfPageCount": 148
+  },
+  "frozenAuthorInput": {
+    "file": "author-input/source-transcription.json",
+    "sha256": "1ae245d66f6dab2ecb5b0d77b4839bd1a42c7a70274e3dd4ed51b6b480943dff",
+    "freezeFile": "author-input/freeze-manifest.json",
+    "freezeSHA256": "bb90392210f5442bf4d74be9e5c810597df6c0978171bd5b766544bd4ba727b5"
+  },
+  "method": "All eight fresh original-PDF 3x full-page images were visually read. All 141 frozen author records were individually compared with the printed page; these records are candidate evidence, not a separately retyped independent transcription. Three fresh original-PDF 5x crops resolve the four repairs. No OCR or website VI read.",
+  "pdfPages": [
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "status": "repair-required",
+  "counts": {
+    "occurrences": 141,
+    "accepted": 137,
+    "repair": 4,
+    "hold": 0,
+    "missing": 0
+  },
+  "byPDFPage": {
+    "43": 8,
+    "44": 30,
+    "45": 31,
+    "46": 9,
+    "47": 25,
+    "48": 26,
+    "49": 4,
+    "50": 8
+  },
+  "byCategory": {
+    "lesson-label": 4,
+    "lesson-title": 1,
+    "section-heading": 13,
+    "goal": 3,
+    "instruction": 15,
+    "scene": 3,
+    "tip-label": 2,
+    "tip": 2,
+    "word-gloss": 22,
+    "word-pos": 21,
+    "dialogue-translation": 14,
+    "grammar-title": 3,
+    "grammar-explanation": 3,
+    "table-example-translation": 2,
+    "table-label": 19,
+    "example-translation": 3,
+    "running-header": 3,
+    "inline-option-gloss": 1,
+    "reading-question": 2,
+    "activity-title": 1,
+    "activity-instruction": 1,
+    "activity-example-label": 1,
+    "video-topic": 1,
+    "video-topic-subtitle": 1
+  },
+  "evidence": [
+    "independent-observations.json",
+    "render-manifest.json",
+    "crop-manifest.json"
+  ],
+  "missingPrintedVietnamese": [],
+  "websiteOldVietnameseRead": false,
+  "authorFilesModified": false,
+  "runtimeActivation": false,
+  "websiteVietnameseAuditComplete": false,
+  "perOccurrence": [
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-lesson-label",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "category": "lesson-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-043-independent.png",
+      "candidateVIText": "Bài",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "今天我休息",
+      "candidatePhysicalLines": [
+        [
+          "Bài"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-title",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "category": "lesson-title",
+      "status": "accepted",
+      "evidence": "renders/pdf-043-independent.png",
+      "candidateVIText": "Hôm nay anh được nghỉ",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "今天我休息",
+      "candidatePhysicalLines": [
+        [
+          "Hôm nay anh được nghỉ"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-goals-heading",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-043-independent.png",
+      "candidateVIText": "Mục tiêu",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "目标",
+      "candidatePhysicalLines": [
+        [
+          "Mục tiêu"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-goal-01",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "category": "goal",
+      "status": "accepted",
+      "evidence": "renders/pdf-043-independent.png",
+      "candidateVIText": "Có thể nghe hiểu, đọc hiểu và miêu tả được ngày tháng xảy ra sự việc hoặc hành động theo cách diễn đạt thông thường trong tiếng Trung Quốc.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "能听懂、看懂并按照中文习惯描述事件、行为发生的日期。",
+      "candidatePhysicalLines": [
+        [
+          "Có thể nghe hiểu, đọc hiểu",
+          "và miêu tả được ngày tháng xảy ra sự việc hoặc hành động theo cách diễn đạt thông",
+          "thường trong tiếng Trung Quốc."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-goal-02",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "category": "goal",
+      "status": "accepted",
+      "evidence": "renders/pdf-043-independent.png",
+      "candidateVIText": "Có thể nghe hiểu và sử dụng được động từ năng nguyện “会” để diễn đạt việc biết hoặc có khả năng làm một việc gì đó.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "能听懂并使用能愿动词“会”表达懂得或有能力做事情。",
+      "candidatePhysicalLines": [
+        [
+          "Có thể nghe hiểu và sử dụng",
+          "được động từ năng nguyện “会” để diễn đạt việc biết hoặc có khả năng làm một việc",
+          "gì đó."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-goal-03",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "category": "goal",
+      "status": "accepted",
+      "evidence": "renders/pdf-043-independent.png",
+      "candidateVIText": "Nắm vững cách sử dụng của câu vị ngữ danh từ.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "掌握名词谓语句的用法。",
+      "candidatePhysicalLines": [
+        [
+          "Nắm vững cách sử dụng của câu vị ngữ danh từ."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-warmup-heading",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-043-independent.png",
+      "candidateVIText": "Khởi động",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "热身",
+      "candidatePhysicalLines": [
+        [
+          "Khởi động"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf043-warmup-instruction",
+      "pdfPage": 43,
+      "printedPage": "027",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-043-independent.png",
+      "candidateVIText": "Lựa chọn hình ảnh tương ứng với các từ ngữ sau.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "给下面的词语选择对应的图片。",
+      "candidatePhysicalLines": [
+        [
+          "Lựa chọn hình ảnh tương ứng với các từ ngữ sau."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-heading",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Bài khoá 1",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "课文1",
+      "candidatePhysicalLines": [
+        [
+          "Bài khoá 1"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-scene",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "scene",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Lưu Minh và Vương Nhất Tuyết đang trò chuyện ở trong nhà.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "在家里，刘明和王一雪在聊天儿。",
+      "candidatePhysicalLines": [
+        [
+          "Lưu Minh và Vương Nhất Tuyết đang trò chuyện ở trong nhà."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-read",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Đọc to đoạn hội thoại.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "朗读对话。",
+      "candidatePhysicalLines": [
+        [
+          "Đọc to đoạn hội thoại."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-tip-01-label",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "tip-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Tiểu Ngữ giúp sức",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "小语支招",
+      "candidatePhysicalLines": [
+        [
+          "Tiểu Ngữ",
+          "giúp sức"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-tip-01",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "tip",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Ngày 8 tháng 9 cũng có thể được diễn đạt là “9月8日”.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "也说“9月8日”。",
+      "candidatePhysicalLines": [
+        [
+          "Ngày 8 tháng 9",
+          "cũng có thể được diễn đạt là “9月8日”."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-tip-02-label",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "tip-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Tiểu Ngữ giúp sức",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "小语支招",
+      "candidatePhysicalLines": [
+        [
+          "Tiểu Ngữ",
+          "giúp sức"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-tip-02",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "tip",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Chủ nhật cũng có thể được diễn đạt là “星期天”.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "也说“星期天”。",
+      "candidatePhysicalLines": [
+        [
+          "Chủ nhật cũng có thể được diễn",
+          "đạt là “星期天”."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-words-1-heading",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Từ mới",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "生词",
+      "candidatePhysicalLines": [
+        [
+          "Từ mới"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-01-gloss",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "hôm nay",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "今天",
+      "candidatePhysicalLines": [
+        [
+          "hôm nay"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-01-pos",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "dt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "今天",
+      "candidatePhysicalLines": [
+        [
+          "dt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-02-gloss",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "ngày, mùng",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "号",
+      "candidatePhysicalLines": [
+        [
+          "ngày,",
+          "mùng"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-02-pos",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "lượng.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "号",
+      "candidatePhysicalLines": [
+        [
+          "lượng."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-03-gloss",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "tháng",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "月",
+      "candidatePhysicalLines": [
+        [
+          "tháng"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-03-pos",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "dt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "月",
+      "candidatePhysicalLines": [
+        [
+          "dt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-04-gloss",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "ngày",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "日",
+      "candidatePhysicalLines": [
+        [
+          "ngày"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-04-pos",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "lượng.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "日",
+      "candidatePhysicalLines": [
+        [
+          "lượng."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-05-gloss",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "thứ, tuần",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期",
+      "candidatePhysicalLines": [
+        [
+          "thứ, tuần"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-05-pos",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "dt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期",
+      "candidatePhysicalLines": [
+        [
+          "dt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-06-gloss",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Chủ nhật",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期日",
+      "candidatePhysicalLines": [
+        [
+          "Chủ nhật"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-06-pos",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "dt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期日",
+      "candidatePhysicalLines": [
+        [
+          "dt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-07-gloss",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Chủ nhật",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期天",
+      "candidatePhysicalLines": [
+        [
+          "Chủ nhật"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-07-pos",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "dt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期天",
+      "candidatePhysicalLines": [
+        [
+          "dt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-08-gloss",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "nghỉ, nghỉ ngơi",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "休息",
+      "candidatePhysicalLines": [
+        [
+          "nghỉ,",
+          "nghỉ ngơi"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-word-08-pos",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "đgt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "休息",
+      "candidatePhysicalLines": [
+        [
+          "đgt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-role-01",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Vương Nhất Tuyết: Hôm nay ngày mấy anh nhỉ?",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "今天几号？",
+      "candidatePhysicalLines": [
+        [
+          "Vương Nhất Tuyết: Hôm nay ngày mấy",
+          "anh nhỉ?"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-role-02",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Lưu Minh: Hôm nay là ngày 8 tháng 9.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "今天9月8号。",
+      "candidatePhysicalLines": [
+        [
+          "Lưu Minh: Hôm nay là ngày 8 tháng 9."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-role-03",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Vương Nhất Tuyết: Thứ mấy vậy?",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期几？",
+      "candidatePhysicalLines": [
+        [
+          "Vương Nhất Tuyết: Thứ mấy vậy?"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-role-04",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Lưu Minh: Chủ nhật. Hôm nay anh được nghỉ.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期日。今天我休息。",
+      "candidatePhysicalLines": [
+        [
+          "Lưu Minh: Chủ nhật. Hôm nay anh được nghỉ."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-role-read",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Phân vai đọc to đoạn hội thoại.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "分角色朗读对话。",
+      "candidatePhysicalLines": [
+        [
+          "Phân vai đọc to đoạn",
+          "hội thoại."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf044-text-1-pair-practice",
+      "pdfPage": 44,
+      "printedPage": "028",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-044-independent.png",
+      "candidateVIText": "Hai người một nhóm, tiến hành hội thoại theo tình huống thực tế.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "两人一组，根据实际情况对话。",
+      "candidatePhysicalLines": [
+        [
+          "Hai người một nhóm, tiến hành hội thoại",
+          "theo tình huống thực tế."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-lesson-label",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "lesson-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Bài",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "今天我休息",
+      "candidatePhysicalLines": [
+        [
+          "Bài"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-heading",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Lớp học của Tiểu Ngữ",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "小语讲堂",
+      "candidatePhysicalLines": [
+        [
+          "Lớp học của Tiểu Ngữ"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-01-title",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "grammar-title",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Cách diễn đạt thời gian (1)",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "时间的表达（1）",
+      "candidatePhysicalLines": [
+        [
+          "Cách diễn đạt thời gian (1)"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-01-explanation",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "grammar-explanation",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Trong bài này học cách diễn đạt ngày tháng và các thứ trong tuần. Trật tự diễn đạt ngày tháng và thứ trong tiếng Trung Quốc là: 年→月→日/号→星期.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "本课学习日期、星期的表达。汉语日期、星期的表达顺序是：年→月→日/号→星期。",
+      "candidatePhysicalLines": [
+        [
+          "Trong bài này học cách diễn đạt ngày tháng và các thứ trong tuần. Trật tự diễn đạt ngày tháng",
+          "và thứ trong tiếng Trung Quốc là: 年→月→日/号→星期."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-01-read",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Đọc to các câu sau.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "大声朗读。",
+      "candidatePhysicalLines": [
+        [
+          "Đọc to các câu sau."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-date-table-01",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-example-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Thứ Bảy, ngày 16 tháng 5 năm 1992",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "1992年5月16日/号，星期六",
+      "candidatePhysicalLines": [
+        [
+          "Thứ Bảy, ngày 16 tháng 5 năm 1992"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-date-table-02",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-example-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Thứ Ba, ngày 22 tháng 10 năm 2024",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "2024年10月22日/号，星期二",
+      "candidatePhysicalLines": [
+        [
+          "Thứ Ba, ngày 22 tháng 10 năm 2024"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-01",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 1",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "一月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 1"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-02",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 2",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "二月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 2"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-03",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 3",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "三月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 3"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-04",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 4",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "四月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 4"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-05",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 5",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "五月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 5"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-06",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 6",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "六月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 6"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-07",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 7",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "七月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 7"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-08",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 8",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "八月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 8"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-09",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 9",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "九月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 9"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-10",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 10",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "十月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 10"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-11",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 11",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "十一月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 11"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-month-12",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Tháng 12",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "十二月",
+      "candidatePhysicalLines": [
+        [
+          "Tháng 12"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-01",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Thứ Hai",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期一",
+      "candidatePhysicalLines": [
+        [
+          "Thứ Hai"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-02",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Thứ Ba",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期二",
+      "candidatePhysicalLines": [
+        [
+          "Thứ Ba"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-03",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Thứ Tư",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期三",
+      "candidatePhysicalLines": [
+        [
+          "Thứ Tư"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-04",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Thứ Năm",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期四",
+      "candidatePhysicalLines": [
+        [
+          "Thứ Năm"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-05",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Thứ Sáu",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期五",
+      "candidatePhysicalLines": [
+        [
+          "Thứ Sáu"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-06",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Thứ Bảy",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期六",
+      "candidatePhysicalLines": [
+        [
+          "Thứ Bảy"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-weekday-07",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "table-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Chủ nhật",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "星期日/星期天",
+      "candidatePhysicalLines": [
+        [
+          "Chủ nhật"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-date-example-01",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "example-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Hôm nay là ngày 8 tháng 9.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "今天9月8号。",
+      "candidatePhysicalLines": [
+        [
+          "Hôm nay là ngày 8 tháng 9."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-date-example-02",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "example-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Hôm nay là ngày 22 tháng 5 năm 2025.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "今天是2025年5月22号。",
+      "candidatePhysicalLines": [
+        [
+          "Hôm nay là ngày 22 tháng 5 năm 2025."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-date-example-03",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "example-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Ngày mai là Chủ nhật, ngày 18 tháng 8 năm 2024.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "明天是2024年8月18号，星期天。",
+      "candidatePhysicalLines": [
+        [
+          "Ngày mai là Chủ nhật, ngày 18 tháng 8",
+          "năm 2024."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-02-title",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "grammar-title",
+      "status": "accepted",
+      "evidence": "renders/pdf-045-independent.png",
+      "candidateVIText": "Câu có vị ngữ danh từ",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "名词谓语句",
+      "candidatePhysicalLines": [
+        [
+          "Câu có vị ngữ danh từ"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf045-grammar-02-explanation",
+      "pdfPage": 45,
+      "printedPage": "029",
+      "category": "grammar-explanation",
+      "status": "repair",
+      "evidence": "renders/pdf-045-grammar-02-lines-independent.png",
+      "candidateVIText": "Trong câu vị ngữ danh từ, thành phần vị ngữ chỉ có danh từ hoặc thành phần có tính chất như một danh từ thì những thành phần này thường là những từ ngữ được dùng để chỉ thời gian, ngày tháng, tuổi tác...",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "名词谓语句谓语部分只有名词或名词性成分，这部分词语一般是表达时间、日期、年龄等的词语。",
+      "candidatePhysicalLines": [
+        [
+          "Trong câu vị ngữ danh từ, thành phần vị ngữ chỉ có danh từ hoặc thành phần có tính chất như",
+          "một danh từ thì những thành phần này thường là những từ ngữ được dùng để chỉ thời gian, ngày",
+          "tháng, tuổi tác..."
+        ]
+      ],
+      "repair": {
+        "field": "/fragments/0/lineTexts",
+        "old": [
+          "Trong câu vị ngữ danh từ, thành phần vị ngữ chỉ có danh từ hoặc thành phần có tính chất như",
+          "một danh từ thì những thành phần này thường là những từ ngữ được dùng để chỉ thời gian, ngày",
+          "tháng, tuổi tác..."
+        ],
+        "new": [
+          "Trong câu vị ngữ danh từ, thành phần vị ngữ chỉ có danh từ hoặc thành phần có tính chất",
+          "như một danh từ thì những thành phần này thường là những từ ngữ được dùng để chỉ thời gian,",
+          "ngày tháng, tuổi tác..."
+        ]
+      }
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-book-header",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "category": "running-header",
+      "status": "accepted",
+      "evidence": "renders/pdf-046-independent.png",
+      "candidateVIText": "Giáo trình New HSK 1",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "新HSK教程1",
+      "candidatePhysicalLines": [
+        [
+          "Giáo trình New HSK 1"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-grammar-02-read",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-046-independent.png",
+      "candidateVIText": "Đọc to các câu sau.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "大声朗读。",
+      "candidatePhysicalLines": [
+        [
+          "Đọc to các câu sau."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-heading",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-046-independent.png",
+      "candidateVIText": "Bài khoá 2",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "课文2",
+      "candidatePhysicalLines": [
+        [
+          "Bài khoá 2"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-scene",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "category": "scene",
+      "status": "accepted",
+      "evidence": "renders/pdf-046-independent.png",
+      "candidateVIText": "Vương Nhất Tuyết và Dương Đồng Lạc đang trò chuyện trong giờ nghỉ tại công ty.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "在公司里，王一雪和杨同乐休息时聊天儿。",
+      "candidatePhysicalLines": [
+        [
+          "Vương Nhất Tuyết và Dương Đồng Lạc đang",
+          "trò chuyện trong giờ nghỉ tại công ty."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-listen",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-046-independent.png",
+      "candidateVIText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "听两遍对话，选择正确答案。",
+      "candidatePhysicalLines": [
+        [
+          "Nghe hội thoại hai lượt và chọn đáp án đúng."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-role-01",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-046-independent.png",
+      "candidateVIText": "Vương Nhất Tuyết: Em có biết nấu ăn không?",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "你会做饭吗？",
+      "candidatePhysicalLines": [
+        [
+          "Vương Nhất Tuyết: Em có biết nấu ăn không?"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-role-02",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-046-independent.png",
+      "candidateVIText": "Dương Đồng Lạc: Em biết.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "我会做。",
+      "candidatePhysicalLines": [
+        [
+          "Dương Đồng Lạc: Em biết."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-role-03",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-046-independent.png",
+      "candidateVIText": "Vương Nhất Tuyết: Em biết nấu món gì?",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "你会做什么？",
+      "candidatePhysicalLines": [
+        [
+          "Vương Nhất Tuyết: Em biết nấu món gì?"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf046-text-2-role-04",
+      "pdfPage": 46,
+      "printedPage": "030",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-046-independent.png",
+      "candidateVIText": "Dương Đồng Lạc: Em biết nấu mì, sủi cảo và biết chế biến một số món ăn khác. Chủ nhật em cũng nấu ăn.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+      "candidatePhysicalLines": [
+        [
+          "Dương Đồng Lạc: Em biết nấu mì, sủi cảo và",
+          "biết chế biến một số món ăn khác. Chủ nhật em",
+          "cũng nấu ăn."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-lesson-label",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "lesson-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "Bài",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "今天我休息",
+      "candidatePhysicalLines": [
+        [
+          "Bài"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-2-role-read",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "Phân vai đọc to đoạn hội thoại.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "分角色朗读对话。",
+      "candidatePhysicalLines": [
+        [
+          "Phân vai đọc to",
+          "đoạn hội thoại."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-2-pair-practice",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "Hai người một nhóm, tiến hành hội thoại theo tình huống thực tế.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "两人一组，根据实际情况对话。",
+      "candidatePhysicalLines": [
+        [
+          "Hai người một nhóm, tiến hành hội",
+          "thoại theo tình huống thực tế."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-words-2-heading",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "Từ mới",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "生词",
+      "candidatePhysicalLines": [
+        [
+          "Từ mới"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-09-gloss",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "biết, có thể",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "会",
+      "candidatePhysicalLines": [
+        [
+          "biết, có thể"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-09-pos",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "đtnn.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "会",
+      "candidatePhysicalLines": [
+        [
+          "đtnn."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-10-gloss",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "nấu ăn",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "做饭",
+      "candidatePhysicalLines": [
+        [
+          "nấu ăn"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-11-gloss",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "làm, nấu",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "做",
+      "candidatePhysicalLines": [
+        [
+          "làm, nấu"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-11-pos",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "đgt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "做",
+      "candidatePhysicalLines": [
+        [
+          "đgt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-12-gloss",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "mì, mì sợi",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "面条儿",
+      "candidatePhysicalLines": [
+        [
+          "mì, mì sợi"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-12-pos",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "dt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "面条儿",
+      "candidatePhysicalLines": [
+        [
+          "dt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-13-gloss",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "sủi cảo",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "饺子",
+      "candidatePhysicalLines": [
+        [
+          "sủi cảo"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-13-pos",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "dt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "饺子",
+      "candidatePhysicalLines": [
+        [
+          "dt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-14-gloss",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "một số, một vài",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "一些",
+      "candidatePhysicalLines": [
+        [
+          "một số,",
+          "một vài"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-14-pos",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "sl.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "一些",
+      "candidatePhysicalLines": [
+        [
+          "sl."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-15-gloss",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "món ăn, rau",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "菜",
+      "candidatePhysicalLines": [
+        [
+          "món ăn, rau"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-word-15-pos",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "dt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "菜",
+      "candidatePhysicalLines": [
+        [
+          "dt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-grammar-heading",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "Lớp học của Tiểu Ngữ",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "小语讲堂",
+      "candidatePhysicalLines": [
+        [
+          "Lớp học của Tiểu Ngữ"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-grammar-03-title",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "grammar-title",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "Động từ năng nguyện “会”",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "能愿动词“会”",
+      "candidatePhysicalLines": [
+        [
+          "Động từ năng nguyện “会”"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-grammar-03-explanation",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "grammar-explanation",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "“会” đặt trước động từ, biểu thị việc biết hoặc có khả năng thực hiện một hành động nào đó thông qua học tập.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "会用在动词前，表示通过学习后，懂得怎样做或有能力做。",
+      "candidatePhysicalLines": [
+        [
+          "“会” đặt trước động từ, biểu thị việc biết hoặc có khả năng thực hiện một hành động",
+          "nào đó thông qua học tập."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-grammar-03-read",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "Đọc to các câu sau.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "大声朗读。",
+      "candidatePhysicalLines": [
+        [
+          "Đọc to các câu sau."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-3-heading",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "Bài khoá 3",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "课文3",
+      "candidatePhysicalLines": [
+        [
+          "Bài khoá 3"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-3-scene",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "scene",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "Vương Nhất Tuyết và Dương Đồng Lạc đang trò chuyện sau giờ làm ở công ty.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "在公司里，王一雪和杨同乐下班时聊天儿。",
+      "candidatePhysicalLines": [
+        [
+          "Vương Nhất Tuyết và Dương Đồng Lạc đang",
+          "trò chuyện sau giờ làm ở công ty."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-3-listen",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "听两遍对话，选择正确答案。",
+      "candidatePhysicalLines": [
+        [
+          "Nghe hội thoại hai lượt và chọn đáp án đúng."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf047-text-3-option-1-A-inline",
+      "pdfPage": 47,
+      "printedPage": "031",
+      "category": "inline-option-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-047-independent.png",
+      "candidateVIText": "đi làm",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "上班",
+      "candidatePhysicalLines": [
+        [
+          "đi làm"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-book-header",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "running-header",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Giáo trình New HSK 1",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "新HSK教程1",
+      "candidatePhysicalLines": [
+        [
+          "Giáo trình New HSK 1"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-01",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Vương Nhất Tuyết: Đồng Lạc, em tan làm chưa?",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "同乐，下班吗？",
+      "candidatePhysicalLines": [
+        [
+          "Vương Nhất Tuyết: Đồng Lạc, em tan",
+          "làm chưa?"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-02",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Dương Đồng Lạc: Em tan làm rồi.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "下班。",
+      "candidatePhysicalLines": [
+        [
+          "Dương Đồng Lạc: Em tan làm rồi."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-03",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Vương Nhất Tuyết: Đây là máy tính mới của em à?",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "这是你的新电脑吗？",
+      "candidatePhysicalLines": [
+        [
+          "Vương Nhất Tuyết: Đây là máy tính mới",
+          "của em à?"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-04",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Dương Đồng Lạc: Đúng vậy, đây là máy tính mới của em.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "是的，是我的新电脑。",
+      "candidatePhysicalLines": [
+        [
+          "Dương Đồng Lạc: Đúng vậy, đây là máy",
+          "tính mới của em."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-05",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Vương Nhất Tuyết: Đẹp thật đấy!",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "真好看！",
+      "candidatePhysicalLines": [
+        [
+          "Vương Nhất Tuyết: Đẹp thật đấy!"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-06",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "dialogue-translation",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Dương Đồng Lạc: Em cũng rất thích nó.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "我也很喜欢它。",
+      "candidatePhysicalLines": [
+        [
+          "Dương Đồng Lạc: Em cũng rất thích nó."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-words-3-heading",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Từ mới",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "生词",
+      "candidatePhysicalLines": [
+        [
+          "Từ mới"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-16-gloss",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-gloss",
+      "status": "repair",
+      "evidence": "renders/pdf-048-word-gloss-lines-independent.png",
+      "candidateVIText": "tan làm, tan ca",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "下班",
+      "candidatePhysicalLines": [
+        [
+          "tan làm,",
+          "tan ca"
+        ]
+      ],
+      "repair": {
+        "field": "/fragments/0/lineTexts",
+        "old": [
+          "tan làm,",
+          "tan ca"
+        ],
+        "new": [
+          "tan làm, tan ca"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-16-pos",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "đgt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "下班",
+      "candidatePhysicalLines": [
+        [
+          "đgt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-17-gloss",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "mới",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "新",
+      "candidatePhysicalLines": [
+        [
+          "mới"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-17-pos",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "tt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "新",
+      "candidatePhysicalLines": [
+        [
+          "tt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-18-gloss",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-gloss",
+      "status": "repair",
+      "evidence": "renders/pdf-048-word-gloss-lines-independent.png",
+      "candidateVIText": "máy tính, máy vi tính",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "电脑",
+      "candidatePhysicalLines": [
+        [
+          "máy tính,",
+          "máy vi tính"
+        ]
+      ],
+      "repair": {
+        "field": "/fragments/0/lineTexts",
+        "old": [
+          "máy tính,",
+          "máy vi tính"
+        ],
+        "new": [
+          "máy tính, máy vi tính"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-18-pos",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "dt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "电脑",
+      "candidatePhysicalLines": [
+        [
+          "dt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-19-gloss",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "thật, thực sự",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "真",
+      "candidatePhysicalLines": [
+        [
+          "thật, thực sự"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-19-pos",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "phó.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "真",
+      "candidatePhysicalLines": [
+        [
+          "phó."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-20-gloss",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "đẹp",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "好看",
+      "candidatePhysicalLines": [
+        [
+          "đẹp"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-20-pos",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "tt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "好看",
+      "candidatePhysicalLines": [
+        [
+          "tt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-21-gloss",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "thích",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "喜欢",
+      "candidatePhysicalLines": [
+        [
+          "thích"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-21-pos",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "đgt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "喜欢",
+      "candidatePhysicalLines": [
+        [
+          "đgt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-22-gloss",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-gloss",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "nó",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "它",
+      "candidatePhysicalLines": [
+        [
+          "nó"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-word-22-pos",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "word-pos",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "đt.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "它",
+      "candidatePhysicalLines": [
+        [
+          "đt."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-role-read",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Phân vai đọc to đoạn hội thoại.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "分角色朗读对话。",
+      "candidatePhysicalLines": [
+        [
+          "Phân vai đọc to đoạn hội thoại."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-questions-instruction",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Trả lời câu hỏi theo nội dung bài khoá.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "根据课文内容回答问题。",
+      "candidatePhysicalLines": [
+        [
+          "Trả lời câu hỏi theo nội dung bài khoá."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-question-01",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "reading-question",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Máy tính mới của Dương Đồng Lạc như thế nào?",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "杨同乐的新电脑怎么样？",
+      "candidatePhysicalLines": [
+        [
+          "Máy tính mới của Dương Đồng Lạc như thế nào?"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf048-text-3-question-02",
+      "pdfPage": 48,
+      "printedPage": "032",
+      "category": "reading-question",
+      "status": "accepted",
+      "evidence": "renders/pdf-048-independent.png",
+      "candidateVIText": "Dương Đồng Lạc có thích máy tính mới của anh ấy không?",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "杨同乐喜欢他的新电脑吗？",
+      "candidatePhysicalLines": [
+        [
+          "Dương Đồng Lạc có thích máy tính mới của",
+          "anh ấy không?"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf049-lesson-label",
+      "pdfPage": 49,
+      "printedPage": "033",
+      "category": "lesson-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-049-independent.png",
+      "candidateVIText": "Bài",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "今天我休息",
+      "candidatePhysicalLines": [
+        [
+          "Bài"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf049-exercises-heading",
+      "pdfPage": 49,
+      "printedPage": "033",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-049-independent.png",
+      "candidateVIText": "Bài tập tổng hợp",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "综合练习",
+      "candidatePhysicalLines": [
+        [
+          "Bài tập tổng hợp"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf049-exercise-01-instruction",
+      "pdfPage": 49,
+      "printedPage": "033",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-049-independent.png",
+      "candidateVIText": "Chọn từ thích hợp điền vào chỗ trống.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "选词填空。",
+      "candidatePhysicalLines": [
+        [
+          "Chọn từ thích hợp điền vào chỗ trống."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf049-exercise-02-instruction",
+      "pdfPage": 49,
+      "printedPage": "033",
+      "category": "instruction",
+      "status": "accepted",
+      "evidence": "renders/pdf-049-independent.png",
+      "candidateVIText": "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài để miêu tả các hình ảnh sau.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "用本课新学的词语和语言点描述图片。",
+      "candidatePhysicalLines": [
+        [
+          "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài",
+          "để miêu tả các hình ảnh sau."
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-book-header",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "category": "running-header",
+      "status": "accepted",
+      "evidence": "renders/pdf-050-independent.png",
+      "candidateVIText": "Giáo trình New HSK 1",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "新HSK教程1",
+      "candidatePhysicalLines": [
+        [
+          "Giáo trình New HSK 1"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-activity-heading",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-050-independent.png",
+      "candidateVIText": "Hoạt động trên lớp",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "课堂活动",
+      "candidatePhysicalLines": [
+        [
+          "Hoạt động trên lớp"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-group-game-heading",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "category": "activity-title",
+      "status": "accepted",
+      "evidence": "renders/pdf-050-independent.png",
+      "candidateVIText": "Trò chơi nhóm",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "小组游戏",
+      "candidatePhysicalLines": [
+        [
+          "Trò chơi nhóm"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-group-game-instruction",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "category": "activity-instruction",
+      "status": "repair",
+      "evidence": "renders/pdf-050-activity-zh-context-independent.png",
+      "candidateVIText": "Một người cầm các thẻ từ và hỏi các bạn xem họ có thể làm hành động ghi trên thẻ không, các bạn khác giành quyền trả lời. Người trả lời ít nhất sẽ là người cầm các thẻ từ tiếp theo.",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "一个人拿着词卡问其他人会不会做词卡上的动作，其他人抢答。抢答最少者成为下一轮的提问者。",
+      "candidatePhysicalLines": [
+        [
+          "Một người cầm các thẻ từ và hỏi các bạn xem họ có thể làm hành động ghi trên thẻ không,",
+          "các bạn khác giành quyền trả lời. Người trả lời ít nhất sẽ là người cầm các thẻ từ tiếp theo."
+        ]
+      ],
+      "repair": {
+        "field": "/zhContext",
+        "old": "一个人拿着词卡问其他人会不会做词卡上的动作，其他人抢答。抢答最少者成为下一轮的提问者。",
+        "new": "一个人拿着词语卡片，询问其他人会不会做这件事，其他人抢答。抢答最少者成为下一轮的提问者。"
+      }
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-activity-example-label",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "category": "activity-example-label",
+      "status": "accepted",
+      "evidence": "renders/pdf-050-independent.png",
+      "candidateVIText": "Ví dụ của Tiểu Ngữ",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "小语的例子",
+      "candidatePhysicalLines": [
+        [
+          "Ví dụ của Tiểu Ngữ"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-video-heading",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "category": "section-heading",
+      "status": "accepted",
+      "evidence": "renders/pdf-050-independent.png",
+      "candidateVIText": "Món quà của Tiểu Ngữ",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "小语的彩蛋",
+      "candidatePhysicalLines": [
+        [
+          "Món quà của Tiểu Ngữ"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-video-topic",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "category": "video-topic",
+      "status": "accepted",
+      "evidence": "renders/pdf-050-independent.png",
+      "candidateVIText": "Món ngon của Trung Quốc",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "中国美食",
+      "candidatePhysicalLines": [
+        [
+          "Món ngon của Trung Quốc"
+        ]
+      ]
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l05-pdf050-video-subtitle",
+      "pdfPage": 50,
+      "printedPage": "034",
+      "category": "video-topic-subtitle",
+      "status": "accepted",
+      "evidence": "renders/pdf-050-independent.png",
+      "candidateVIText": "Bánh sủi cảo",
+      "printedVITextAccepted": true,
+      "candidateZHContext": "饺子",
+      "candidatePhysicalLines": [
+        [
+          "Bánh sủi cảo"
+        ]
+      ]
+    }
+  ]
+}
