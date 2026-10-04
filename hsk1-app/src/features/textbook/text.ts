@@ -1,6 +1,9 @@
 import { bilingualText, setBilingual } from '../../app/bilingual.ts';
 import { textbookCopy, textbookIssue } from '../../app/i18n/textbook.ts';
 import { tongueTwisters } from '../../services/content/textbook-supplements.ts';
+import { courseAssetBase } from '../../services/content/asset-base.ts';
+import { sceneFigures } from '../../services/source-activities/scene-figures.ts';
+import { sourceFigureAssetPath } from '../../services/source-activities/content.ts';
 import type { AudioService } from '../../services/audio/index.ts';
 import type { BookLesson, TextbookContent } from '../../services/content/textbook.ts';
 import { button, element } from './dom.ts';
@@ -32,6 +35,18 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
     if (!resolved.available) play.title = bilingualText(textbookIssue(resolved.reason, copy.audioUnavailable));
     const slow = button(copy.slow, () => { if (resolved.available) { audio.setRate(.75); void audio.play({ ...resolved.request, label: bilingualText(scene.place, scene.place_vn) }, { signal: sceneSignal }); } }, sceneSignal); slow.id = 'scene-slow'; slow.disabled = !resolved.available;
     const listenActions = element('div'); listenActions.className = 'textbook-actions'; listenActions.append(play, slow); body.append(listenActions);
+    const figures = sceneFigures(lesson.id, scene.id);
+    if (figures.length) {
+      const gallery = element('div'); gallery.className = 'textbook-scene-figures'; gallery.dataset.originalText = '';
+      for (const figure of figures) {
+        const box = element('figure'); box.dataset.sceneFigure = figure.id;
+        const image = element('img'); image.src = new URL(sourceFigureAssetPath(figure)!, courseAssetBase()).href;
+        image.alt = bilingualText(figure.alt); image.loading = 'lazy';
+        const caption = element('figcaption', {zh: `教材原图 · 第${figure.source.printedPage}页`, vi: `Hình gốc trong sách · Trang ${figure.source.printedPage}`});
+        box.append(image, caption); gallery.append(box);
+      }
+      body.append(gallery);
+    }
     for (const [lineIndex, line] of scene.lines.entries()) {
       const card = element('article'); card.className = 'textbook-line'; card.dataset.lineId = line.id;
       card.append(element('strong', line.s));

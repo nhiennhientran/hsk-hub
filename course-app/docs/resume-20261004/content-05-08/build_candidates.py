@@ -41,7 +41,7 @@ def cloze(d,page,words,items,aps):
 def picture(d,page,n,box,prompt,refs,alt):
  act(d,page,'picture',n,'picture-description',C('看图表达','Diễn đạt theo hình'),C('用本课新学的词语和语言点描述图片。','Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình.'),prompt,[free(i,r) for i,r in enumerate(refs,1)],**fig(d,page,f'picture-{n:02}',box,alt,n))
 def pair(d,page,section,n,instruction,example=None,roles=None):
- a=act(d,page,section,n,'pair-work',C('对话活动','Hoạt động hội thoại'),instruction,C('记录你们的对话。','Ghi lại hội thoại của các bạn.'),[free(1,label=C('对话记录','Nội dung hội thoại'),input='textarea')])
+ a=act(d,page,section,n,'pair-work',C('对话活动','Hoạt động hội thoại'),instruction,C('记录你们的对话。','Ghi lại hội thoại của các bạn.'),[free(1,label=C('对话记录','Nội dung hội thoại'),input='textarea',required=False)])
  if example:a['example']=example
  if roles:a['participants']=roles
  return a
@@ -72,16 +72,53 @@ def vocab(d,p,no,start,rows,proper=False):
  return a
 def attach(d,page,no,box,alt):
  a=next(a for a in d['activities'] if a['source']['section']==f'role-text{no}');a.update(fig(d,page,f'scene-{no:02}',box,alt,no));return a
-def qvi(text):return C(text,'Điền từ tiếng Trung vào các chỗ trống trong câu gốc; xem nghĩa của các lựa chọn. Không điền từ tiếng Trung vào một câu tiếng Việt.')
+# These Vietnamese descriptions explain each original Chinese cloze without
+# inserting a Chinese option into a Vietnamese sentence or revealing its key.
+CLOZE_SEMANTICS={
+ '今天＿＿。':'Nói ngày tháng hôm nay bằng câu tiếng Trung.',
+ '杨同乐有一个＿＿电脑。':'Dương Đồng Lạc có một máy tính; chọn từ miêu tả máy tính đó.',
+ '王一雪：你会做这两个＿＿吗？\n杨同乐：我会做。':'Vương Nhất Tuyết hỏi Dương Đồng Lạc có biết làm hai thứ này không; anh ấy trả lời là biết.',
+ '王一雪：你的电脑＿＿好看！\n杨同乐：我也很＿＿。':'Vương Nhất Tuyết khen máy tính đẹp; Dương Đồng Lạc nói cảm nhận của mình về nó.',
+ '我想＿＿超市＿＿牛奶。':'Nói ý định liên quan đến siêu thị và sữa; chọn hai động từ thích hợp.',
+ '我们＿＿出租车去西安饭店吃晚饭。':'Nói phương tiện chúng tôi dùng để đến nhà hàng Tây An ăn tối.',
+ '妈妈：你想吃什么？孩子：我想吃＿＿。':'Mẹ hỏi con muốn ăn gì; hoàn thành câu trả lời của người con.',
+ '老师：你的手机号是＿＿？\n学生：我的手机号是13126975002。':'Giáo viên hỏi số điện thoại di động; học sinh trả lời bằng số 13126975002.',
+ '她星期天没有＿＿。':'Nói việc cô ấy không có vào Chủ nhật.',
+ '我们中午＿＿下课，下午两点＿＿吧。':'Nói giờ tan học vào buổi trưa rồi đề nghị gặp nhau lúc hai giờ chiều.',
+ '白家月：对不起，我＿＿有事呢，你去吧。\n李文：好的，你忙吧。':'Bạch Gia Nguyệt xin lỗi vì có việc vào thời điểm đang nói và bảo Lý Văn đi; Lý Văn đồng ý.',
+ '王一雪：你今天晚上几点去＿＿上班？\n刘明：晚上八点。':'Vương Nhất Tuyết hỏi tối nay Lưu Minh đến nơi làm việc lúc mấy giờ; anh ấy trả lời tám giờ tối.',
+ '胡医生的爸爸＿＿医院工作。':'Nói nơi làm việc của bố bác sĩ Hồ; chọn từ nối nơi chốn với hành động làm việc.',
+ '我下午两点＿＿到学校。':'Nói khả năng đến trường lúc hai giờ chiều.',
+ '陈天中：小猫在＿＿呢？\n白家月：小猫在＿＿下。':'Trần Thiên Trung hỏi vị trí của mèo con; Bạch Gia Nguyệt trả lời nó ở dưới một đồ vật.',
+ '白家月：我们去＿＿，你去吗？\n李文：我现在有事，不能去。':'Bạch Gia Nguyệt hỏi Lý Văn có cùng đi đến địa điểm đó không; anh ấy từ chối vì đang có việc.',
+}
+def qvi(text):return C(text,CLOZE_SEMANTICS[text])
 def ref_table(d,p,s,n,title,columns,rows,instruction=None):
  a=support(d,p,s,n,title,C('保留原表的行列顺序。','Giữ nguyên thứ tự hàng và cột của bảng gốc.'));a['kind']='reference-table'
  if instruction:a['instruction']=instruction
  headerless=all(not c['zh'] and not c['vi'] for c in columns)
- columns=[c if c['zh'] and c['vi'] else C(f'第{i}列',f'Cột {i}') for i,c in enumerate(columns,1)]
+ # Preserve genuinely blank source headers; do not invent a source heading.
  a['table']=dict(columns=columns,rows=[dict(id=f'row-{i}',cells=[dict(text=x) if x['zh'] or x['vi'] else {} for x in r]) for i,r in enumerate(rows,1)])
  if headerless:a['table']['headerless']=True
  return a
+TITLE_PINYIN={
+ 5:(27,'Jīntiān wǒ xiūxi'),
+ 6:(35,'Nǐ de shǒujīhào shì duōshao?'),
+ 7:(45,'Wǒ wǎnshang liù diǎn bàn xiàbān'),
+ 8:(54,'Wǒ bàba yě zài yīyuàn gōngzuò'),
+}
+LINE_PINYIN_CORRECTIONS={
+ 6:[('text-1-line-01',36,'Jiāyuè, nǐ de shǒujīhào shì duōshao?'),('text-2-line-01',37,'Jiāyuè, míngtiān nǐ qù nǎr?'),('text-3-line-01',39,'Xīngqītiān wǒmen qù nǎr chī wǎnfàn?')],
+ 7:[('text-1-line-02',46,'Zǎoshang bā diǎn sìshí.'),('text-3-line-01',51,'Wéi, nǐ zài nǎr ne?'),('text-3-line-03',51,'Wǒ wǎnshang liù diǎn bàn xiàbān.')],
+ 8:[('text-1-line-02',55,'Wǒ méi kànjiàn, tā zài nǎr ne?'),('text-2-line-01',57,'Wǒmen zài nǎr jiàn ne?')],
+}
 def finish(d,first,last):
+ for tail,page,py in LINE_PINYIN_CORRECTIONS.get(d['lesson'],[]):
+  d['textbookCorrections'].append(dict(target=f'textbook-l{d["lesson"]:02}-{tail}',field='py',printedPage=page,suggested=py,issue='按源页课文拼音纠正轻声、儿化或喂的第二声；仅展示修订，不改冻结历史题库。'))
+ if d['lesson']==6:
+  d['textbookCorrections'].append(dict(target='textbook-l06-v014',field='py',printedPage=40,suggested='nàbiān',issue='主教材nàbian与原书不同；来源词表拼音为nàbiān，仅展示修订，不改冻结历史题库。'))
+ title_page,title_py=TITLE_PINYIN[d['lesson']]
+ d['textbookCorrections'].append(dict(target=f'textbook-l{d["lesson"]:02}-title',field='title_py',printedPage=title_page,suggested=title_py,issue='按原书标题拼音恢复轻声音节；仅展示修订，不改冻结历史题库。'))
  d['coverage']=[dict(printedPage=p,pdfPage=p+15,visualReview='author-inspected',activityIds=[a['id'] for a in d['activities'] if a['source']['printedPage']==p]) for p in range(first,last+1)]
  d['activities'].sort(key=lambda a:(a['source']['printedPage'],-100 if a['source']['section']=='objectives' else 0))
  d['integrationNotes']=['Candidate pending independent source review and browser acceptance.','All images are exact source crops with recorded PDF coordinates.','Open references are editorial, non-unique and ungraded.','Original vocabulary keeps sequence, pronunciation, POS and English gloss alongside Vietnamese.','printAudioTrack records only the printed vocabulary audio number; no invented scene resolver ID.','All listening/audio flags remain false pending human listening.']
@@ -106,10 +143,11 @@ for i,subset in enumerate([days[:4],days[4:]],1):
  a=ref_table(d,29,'weekdays-table-row',i,C('星期表 · '+('上行' if i==1 else '下行'),'Bảng các thứ · '+('hàng trên' if i==1 else 'hàng dưới')),[C('','')]*len(subset),[[C(f'{py}\n{zh}\n{en}',vi) for zh,py,en,vi in subset]]);a['sourceTableGroup']='p029-weekdays';a['sourceRow']=i
 read(d,29,'date-read',1,C('时间的表达（1）· 例句','Cách biểu đạt thời gian (1) · Ví dụ'),C('今天9月8号。\n今天是2025年5月22号。\n明天是2024年8月18号，星期天。','Hôm nay ngày 8 tháng 9.\nHôm nay là ngày 22 tháng 5 năm 2025.\nNgày mai là Chủ nhật, ngày 18 tháng 8 năm 2024.'))
 grammar(d,30,'grammar-nominal',1,C('名词谓语句','Câu vị ngữ danh từ'),C('名词谓语句谓语部分只有名词或名词性成分，这部分词语一般是表达时间、日期、年龄等的词语。（说明在第29页，例句在第30页。）','Vị ngữ của câu vị ngữ danh từ chỉ gồm danh từ hoặc thành phần danh từ, thường biểu thị thời gian, ngày tháng, tuổi, v.v. (Giải thích ở trang 29, ví dụ ở trang 30.)'),C('（1）A：今天几号？\nB：今天5月1号。\n（2）我妹妹12岁。','(1) A: Hôm nay ngày mấy?\nB: Hôm nay ngày 1 tháng 5.\n(2) Em gái tôi 12 tuổi.'))
+d['activities'][-1]['source'].update(printedPages=[29,30],pdfPages=[44,45])
 listen(d,30,2,1,C('杨同乐（　）做饭。','Chọn từ chỉ khả năng nấu ăn của Dương Đồng Lạc.'),[('会','huì','biết'),('不','bù','không'),('不会','bú huì','không biết')],'A',2)
 listen(d,30,2,2,C('杨同乐（　）也做饭。','Chọn ngày mà Dương Đồng Lạc cũng nấu ăn.'),[('星期三','Xīngqīsān','thứ Tư'),('星期六','Xīngqīliù','thứ Bảy'),('星期日','Xīngqīrì','Chủ nhật')],'C',2)
 vocab(d,31,2,9,['会|huì|mod.|can; be able to','做饭|zuò fàn||cook','做|zuò|v.|make; produce','面条儿|miàntiáor|n.|noodles','饺子|jiǎozi|n.|jiaozi','一些|yìxiē|num.-m.|some','菜|cài|n.|dish; course'])
-scene_role(d,31,2);attach(d,30,2,(362,613,743,934),C('杨同乐在厨房切菜。','Dương Đồng Lạc thái rau trong bếp.'))
+scene_role(d,31,2);d['activities'][-1]['source'].update(printedPages=[30,31],pdfPages=[45,46]);attach(d,30,2,(362,613,743,934),C('杨同乐在厨房切菜。','Dương Đồng Lạc thái rau trong bếp.'))
 pair(d,31,'pair-text2',1,C('两人一组，根据实际情况对话。','Làm việc theo cặp, hội thoại theo tình huống thực tế.'))
 grammar(d,31,'grammar-hui',1,C('能愿动词“会”','Động từ năng nguyện “会”'),C('“会”用在动词前，表示通过学习后，懂得怎样做或有能力做。','“会” dùng trước động từ, biểu thị nhờ học mà biết cách làm hoặc có khả năng làm.'),C('（1）你会做饭吗？\n（2）我会做面条儿。\n（3）我不会做菜。','(1) Bạn biết nấu ăn không?\n(2) Tôi biết làm mì.\n(3) Tôi không biết nấu món ăn.'))
 listen(d,31,3,1,C('杨同乐也（　）。','Chọn hành động mà Dương Đồng Lạc cũng làm.'),[('上班','shàngbān','đi làm'),('下班','xiàbān','tan làm'),('休息','xiūxi','nghỉ ngơi')],'B',2)
@@ -158,7 +196,7 @@ picture(d,41,2,(499,754,789,938),C('我想＿＿超市＿＿牛奶。','Điền 
 picture(d,42,3,(124,103,414,290),C('王一雪想＿＿去超市。','Hoàn thành cách Vương Nhất Tuyết muốn đi siêu thị.'),[C('坐出租车','đi taxi')],C('一辆出租车。','Một chiếc taxi.'))
 picture(d,42,4,(446,104,737,291),C('这些包子非常＿＿。','Miêu tả các bánh bao trong câu gốc.'),[C('好吃','ngon')],C('一盘包子。','Một đĩa bánh bao.'))
 breakfast=act(d,42,'classroom-table',1,'pair-work-table',C('课堂活动 · 填写表格','Hoạt động trên lớp · Điền bảng'),C('两人一组，填写星期一、星期二和星期六早饭吃什么，填好后分享。\nA 包子　B 面条儿　C 饺子　D 米饭','Làm việc theo cặp, điền món ăn sáng vào thứ Hai, thứ Ba và thứ Bảy rồi chia sẻ.\nA bánh bao; B mì; C sủi cảo; D cơm.'),C('按两位同学分别填写。','Điền riêng cho từng người trong cặp.'),[])
-breakfast['table']=dict(columns=[C('姓名','Tên'),C('星期一','Thứ Hai'),C('星期二','Thứ Ba'),C('星期六','Thứ Bảy')],rows=[])
+breakfast['table']=dict(columns=[C('',''),C('星期一','Thứ Hai'),C('星期二','Thứ Ba'),C('星期六','Thứ Bảy')],rows=[])
 food=opts([('包子','bāozi','bánh bao'),('面条儿','miàntiáor','mì'),('饺子','jiǎozi','sủi cảo'),('米饭','mǐfàn','cơm')])
 for i in (1,2):
  cells=[]
@@ -171,7 +209,7 @@ ref_table(d,42,'classroom-table-example',1,C('小语的例子','Ví dụ của T
 vt=act(d,43,'summary-vocabulary',1,'self-review-table',C('学习小结 · 词语学习','Tổng kết học tập · Từ vựng'),C('记录第4～6课的词语学习情况。','Ghi lại tình hình học từ vựng của bài 4–6.'),C('4～6课我的学习情况。','Tình hình học tập của tôi ở bài 4–6.'),[free(1,label=C('我已经记住并会使用的词语','Các từ đã nhớ và biết dùng'),input='textarea',required=False),free(2,label=C('我还没记住的词语','Các từ chưa nhớ'),input='textarea',required=False)])
 vt['table']=dict(columns=[C('词语学习','Học từ vựng'),C('记录','Ghi chép')],rows=[dict(id=f'row-{i}',cells=[dict(text=f['label']),dict(fieldId=f['id'])]) for i,f in enumerate(vt['fields'],1)])
 summary=[C('“有”字句（1），例如：她有十个学生。','Câu chữ “有” (1), ví dụ: cô ấy có mười học sinh.'),C('数字的表达，例如：二十二，九百九十九','Cách biểu đạt số, ví dụ: hai mươi hai, chín trăm chín mươi chín'),C('语气助词“呢”（1），例如：我是学生，你呢？','Trợ từ ngữ khí “呢” (1), ví dụ: tôi là học sinh, còn bạn?'),C('名量词和名量结构，例如：一个，五口人','Lượng từ danh từ và kết cấu số-lượng, ví dụ: một cái, năm người trong gia đình'),C('问年龄时，对不同年龄的人使用不同的询问方式。','Dùng cách hỏi tuổi khác nhau với người ở các độ tuổi khác nhau.'),C('时间的表达（1），例如：2025年1月1日，星期三','Cách biểu đạt thời gian (1), ví dụ: thứ Tư, ngày 1 tháng 1 năm 2025'),C('名词谓语句，例如：今天星期四。','Câu vị ngữ danh từ, ví dụ: hôm nay thứ Năm.'),C('能愿动词“会”，例如：我会做饭。','Động từ năng nguyện “会”, ví dụ: tôi biết nấu ăn.'),C('能愿动词“想”，例如：我想去超市。','Động từ năng nguyện “想”, ví dụ: tôi muốn đi siêu thị.'),C('连动句（1），例如：我去超市买东西。','Câu liên động (1), ví dụ: tôi đến siêu thị mua đồ.'),C('疑问代词“怎么”，例如：你怎么去超市？','Đại từ nghi vấn “怎么”, ví dụ: bạn đến siêu thị bằng cách nào?')]
-ss=act(d,43,'summary-can-use',1,'self-review-table',C('我理解并会用','Tôi hiểu và biết dùng'),C('分别记录“理解”和“会用”，续表在第44页。','Ghi riêng “Hiểu” và “Biết dùng”; bảng tiếp tục ở trang 44.'),C('第4～6课学习小结。','Tổng kết bài 4–6.'),[]);ss['table']=dict(columns=[C('内容','Nội dung'),C('理解','Hiểu'),C('会用','Biết dùng')],rows=[])
+ss=act(d,43,'summary-can-use',1,'self-review-table',C('我理解并会用','Tôi hiểu và biết dùng'),C('分别记录“理解”和“会用”，续表在第44页。','Ghi riêng “Hiểu” và “Biết dùng”; bảng tiếp tục ở trang 44.'),C('第4～6课学习小结。','Tổng kết bài 4–6.'),[]);ss['table']=dict(columns=[C('内容','Nội dung'),C('理解','Hiểu'),C('会用','Biết dùng')],rows=[]);ss['source'].update(printedPages=[43,44],pdfPages=[58,59])
 for i,label in enumerate(summary,1):
  cells=[dict(text=label)]
  for j,c in enumerate([C('理解','Hiểu'),C('会用','Biết dùng')],1):
@@ -198,7 +236,7 @@ read(d,48,'grammar-ba-dialogues',1,C('“吧” · 朗读对话','“吧” · �
 listen(d,48,2,1,C('李文下午想去（　）。','Chọn việc Lý Văn muốn đi làm vào buổi chiều.'),[('超市','chāoshì','siêu thị'),('看电影','kàn diànyǐng','xem phim'),('西安饭店','Xī’ān Fàndiàn','nhà hàng Tây An')],'B',4)
 listen(d,48,2,2,C('白家月明天下午还（　）。','Chọn việc Bạch Gia Nguyệt vẫn làm chiều mai.'),[('上课','shàngkè','đi học'),('有事','yǒu shì','có việc'),('去超市','qù chāoshì','đi siêu thị')],'A',4)
 vocab(d,49,2,10,['电影院|diànyǐngyuàn|n.|cinema','看|kàn|v.|watch; see; read; look at','电影|diànyǐng|n.|movie; film','事|shì|n.|thing; affair','上课|shàngkè|v.|attend a class','呢|ne|part.|marker of a declarative sentence','半|bàn|num.|half','下课|xiàkè|v.|dismiss a class'])
-scene_role(d,49,2);attach(d,48,2,(83,743,744,1113),C('李文与白家月在校园中交谈。','Lý Văn và Bạch Gia Nguyệt nói chuyện trong khuôn viên trường.'))
+scene_role(d,49,2);d['activities'][-1]['source'].update(printedPages=[48,49],pdfPages=[63,64]);attach(d,48,2,(83,743,744,1113),C('李文与白家月在校园中交谈。','Lý Văn và Bạch Gia Nguyệt nói chuyện trong khuôn viên trường.'))
 pair(d,49,'pair-text2',1,C('两人一组，根据实际情况对话。','Làm việc theo cặp, hội thoại theo tình huống thực tế.'))
 support(d,49,'grammar-adverb-explanation',1,C('副词、时间词语作状语的位置','Vị trí phó từ và cụm thời gian làm trạng ngữ'),C('在汉语中，副词、时间词语作状语时，一般都要在动词或形容词前。','Trong tiếng Trung, khi phó từ và cụm thời gian làm trạng ngữ, chúng thường đứng trước động từ hoặc tính từ.'))
 read(d,50,'grammar-adverb-examples',1,C('状语位置 · 大声朗读','Vị trí trạng ngữ · Đọc thành tiếng'),C('（1）我不想去。\n（2）妹妹很高兴。\n（3）她上午十点半上课。','(1) Tôi không muốn đi.\n(2) Em gái rất vui.\n(3) Cô ấy học lúc mười giờ rưỡi sáng.'))
@@ -217,7 +255,7 @@ picture(d,52,2,(449,550,738,713),C('我们上午＿＿吧。','Hoàn thành lờ
 picture(d,52,3,(127,789,416,952),C('我今天晚上＿＿还＿＿呢。','Nói thời gian và việc vẫn làm vào buổi tối theo gợi ý đồng hồ.'),[C('九点','chín giờ'),C('有课','có tiết học')],C('暗色背景上的闹钟。','Đồng hồ báo thức trên nền tối.'))
 picture(d,52,4,(449,789,738,952),C('妹妹＿＿有课。','Hoàn thành thời gian em gái có tiết học theo đồng hồ.'),[C('下午两点','hai giờ chiều')],C('浅色背景上的挂钟。','Đồng hồ treo tường trên nền sáng.'))
 schedule=act(d,53,'classroom-table',1,'group-work-table',C('课堂活动 · 填写表格','Hoạt động trên lớp · Điền bảng'),C('三人一组，每人根据自己的情况填写时间，填好后分享。','Làm việc theo nhóm ba người; mỗi người điền thời gian theo lịch của mình rồi chia sẻ.'),C('原表每人各填一行，下面分别保留三人的记录。','Mỗi người điền một hàng của bảng gốc; dưới đây giữ riêng bản ghi của ba người.'),[])
-schedule['table']=dict(columns=[C('时间','Thời gian'),C('午饭','Ăn trưa'),C('休息','Nghỉ ngơi'),C('下课','Tan học')],rows=[])
+schedule['table']=dict(columns=[C('',''),C('午饭','Ăn trưa'),C('休息','Nghỉ ngơi'),C('下课','Tan học')],rows=[])
 for i in (1,2,3):
  cells=[dict(text=C(f'第{i}人',f'Người {i}'))]
  for j,label in enumerate([C('午饭','Ăn trưa'),C('休息','Nghỉ ngơi'),C('下课','Tan học')],1):
@@ -243,7 +281,7 @@ grammar(d,56,'grammar-position',1,C('方位词','Từ chỉ phương vị'),C('�
 listen(d,56,2,1,C('白家月和李文在（　）见。','Chọn nơi Bạch Gia Nguyệt và Lý Văn gặp nhau.'),[('家里','jiā li','ở nhà'),('书店里','shūdiàn li','trong hiệu sách'),('书店前','shūdiàn qián','trước hiệu sách')],'C',5)
 listen(d,56,2,2,C('李文下午（　）能到。','Chọn giờ Lý Văn có thể đến vào buổi chiều.'),[('两点','liǎng diǎn','hai giờ'),('两点半','liǎng diǎn bàn','hai giờ rưỡi'),('三点后','sān diǎn hòu','sau ba giờ')],'A',5)
 vocab(d,57,2,11,['在|zài|prep.|at/in','学校|xuéxiào|n.|school','书店|shūdiàn|n.|bookstore','前|qián|n.|front','能|néng|mod.|can; be able to','到|dào|v.|arrive; reach','午饭|wǔfàn|n.|lunch'])
-scene_role(d,57,2);attach(d,56,2,(191,864,647,1123),C('白家月在教室打电话，旁边小图是通话中的李文。','Bạch Gia Nguyệt gọi điện trong lớp; hình nhỏ là Lý Văn đang nói điện thoại.'))
+scene_role(d,57,2);d['activities'][-1]['source'].update(printedPages=[56,57],pdfPages=[71,72]);attach(d,56,2,(191,864,647,1123),C('白家月在教室打电话，旁边小图是通话中的李文。','Bạch Gia Nguyệt gọi điện trong lớp; hình nhỏ là Lý Văn đang nói điện thoại.'))
 pair(d,57,'pair-text2',1,C('两人一组，根据实际情况对话。','Làm việc theo cặp, hội thoại theo tình huống thực tế.'))
 grammar(d,57,'grammar-zai',1,C('介词“在”','Giới từ “在”'),C('介词“在”和表示位置、处所的词语组合，在动词前，表示在什么位置、处所做什么。','Giới từ “在” kết hợp với từ chỉ vị trí, nơi chốn, đứng trước động từ để nói làm gì ở đâu.'),C('（1）我在学校吃午饭。\n（2）他爸爸在医院工作。\n（3）你在哪儿买菜？','(1) Tôi ăn trưa ở trường.\n(2) Bố anh ấy làm việc ở bệnh viện.\n(3) Bạn mua rau ở đâu?'))
 grammar(d,58,'grammar-neng',1,C('能愿动词“能”','Động từ năng nguyện “能”'),C('能愿动词“能”位于动词前，表示有能力、有条件或可能做某事。','“能” đứng trước động từ, biểu thị có khả năng, điều kiện hoặc có thể làm một việc.'),C('（1）下午两点你能到吗？\n（2）爸爸能去。\n（3）我不能去学校吃午饭。','(1) Hai giờ chiều bạn có thể đến không?\n(2) Bố có thể đi.\n(3) Tôi không thể đến trường ăn trưa.'))
@@ -252,7 +290,7 @@ listen(d,58,3,2,C('胡医生家有（　）医生。','Chọn số bác sĩ tron
 support(d,59,'original-tip',1,C('小语助力','Gợi ý của Tiểu Ngữ'),C('“小+姓氏”是对年纪比自己小的人的亲切称呼。','“小 + họ” là cách gọi thân mật người ít tuổi hơn mình.'))
 vocab(d,59,3,18,['饭|fàn|n.|meal','大|dà|adj.|big; large','病人|bìngrén|n.|patient','多|duō|adj.|many; much','医生|yīshēng|n.|doctor','工作|gōngzuò|v.|work'])
 vocab(d,59,3,1,['胡医生|Hú yīshēng||Dr. Hu'],proper=True)
-scene_role(d,59,3);attach(d,58,3,(158,774,667,1114),C('两名医生在医疗设备旁交谈。','Hai bác sĩ nói chuyện bên thiết bị y tế.'))
+scene_role(d,59,3);d['activities'][-1]['source'].update(printedPages=[58,59],pdfPages=[73,74]);attach(d,58,3,(158,774,667,1114),C('两名医生在医疗设备旁交谈。','Hai bác sĩ nói chuyện bên thiết bị y tế.'))
 comprehension(d,59,3,[(C('胡医生的爸爸在哪儿工作？','Bố của bác sĩ Hồ làm việc ở đâu?'),C('他在医院工作。','Ông ấy làm việc ở bệnh viện.')),(C('胡医生的爸爸工作忙吗？','Công việc của bố bác sĩ Hồ có bận không?'),C('他非常忙。','Ông ấy rất bận.'))])
 cloze(d,59,[('哪儿','nǎr','đâu'),('在','zài','ở'),('桌子','zhuōzi','bàn'),('书店','shūdiàn','hiệu sách'),('能','néng','có thể')],[(qvi('胡医生的爸爸＿＿医院工作。'),'B'),(qvi('我下午两点＿＿到学校。'),'E'),(qvi('陈天中：小猫在＿＿呢？\n白家月：小猫在＿＿下。'),'AC'),(qvi('白家月：我们去＿＿，你去吗？\n李文：我现在有事，不能去。'),'D')],[6,6,6,6])
 for a in d['activities']:

@@ -1,0 +1,291 @@
+{
+  "reviewer": "qa_hsk1_01_03",
+  "reviewedAt": "2026-10-04T15:31:16.438162+00:00",
+  "status": "accepted-source-crops-and-current-revision",
+  "manifestSHA256": "f70df45a155b9fb6921ebab173e71203b16f00124743dbd17375e45c0d67cdfd",
+  "sourceTextbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+  "sourcePrintedPagesRead": [
+    18,
+    19,
+    22,
+    24,
+    25,
+    26
+  ],
+  "sourcePDFPagesRead": [
+    33,
+    34,
+    37,
+    39,
+    40,
+    41
+  ],
+  "answerBookPDFPagesRead": [
+    1
+  ],
+  "scope": "10 task pictures and 3 scene crops; no runtime/physical-device/audio-listening certification",
+  "crops": [
+    {
+      "id": "warmup-01",
+      "printedPage": 18,
+      "pdfPage": 33,
+      "bboxPdfPoints": [
+        58.23529411764706,
+        476.47058823529414,
+        189.41176470588235,
+        562.9411764705883
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/warmup-01.png",
+      "sha256": "1d8f6de69a77b931a912955a7eb055d504aa9f4b700493ddd2ed2e14f985a0c7",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "old man; answer D 六十岁 (source answer key, age not visually measured)",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "warmup-02",
+      "printedPage": 18,
+      "pdfPage": 33,
+      "bboxPdfPoints": [
+        210.58823529411765,
+        477.64705882352945,
+        341.7647058823529,
+        562.9411764705883
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/warmup-02.png",
+      "sha256": "9e3a1180fa1cb66e22cd35c3ce56a9ff0e2396ae6cfb154fe7273e8ed8492344",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "numeral 5; answer A 五",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "warmup-03",
+      "printedPage": 18,
+      "pdfPage": 33,
+      "bboxPdfPoints": [
+        364.11764705882354,
+        476.47058823529414,
+        494.7058823529412,
+        562.9411764705883
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/warmup-03.png",
+      "sha256": "2d08fadf7764ebbf6cfcb9fb22aac10ffd4d9984edf88f18a27401e9ff83af9d",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "students in class; answer C 学生",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "warmup-04",
+      "printedPage": 18,
+      "pdfPage": 33,
+      "bboxPdfPoints": [
+        57.64705882352941,
+        583.5294117647059,
+        190.0,
+        669.4117647058823
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/warmup-04.png",
+      "sha256": "74825f217509b7eb8c243127f0c83b739d570d8d9317b259c15662d2f44b0348",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "teacher at chalkboard; answer F 老师",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "warmup-05",
+      "printedPage": 18,
+      "pdfPage": 33,
+      "bboxPdfPoints": [
+        211.1764705882353,
+        583.5294117647059,
+        341.7647058823529,
+        669.4117647058823
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/warmup-05.png",
+      "sha256": "32eabf543957fffa567cfcc1bd1466463ec3d9355debb9b8e80e13061ff5a4de",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "mother holding baby; answer E 妈妈",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "warmup-06",
+      "printedPage": 18,
+      "pdfPage": 33,
+      "bboxPdfPoints": [
+        364.11764705882354,
+        583.5294117647059,
+        494.11764705882354,
+        669.4117647058823
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/warmup-06.png",
+      "sha256": "62dfd27323f63b945a71f4fff6a1cb8909d1ac4a840bb5f371a5c53e49bd7c7c",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "two children with older child carrying younger child; answer B 哥哥 (source answer key)",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "picture-01",
+      "printedPage": 25,
+      "pdfPage": 40,
+      "bboxPdfPoints": [
+        115.88235294117648,
+        610.5882352941177,
+        309.4117647058824,
+        706.4705882352941
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/picture-01.png",
+      "sha256": "a47abecd9bd87b3ebcc9d764149b95d466f05ced4312827bfbf43b5ccb2973d3",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "six people in family group; source prompt 他家有___",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "picture-02",
+      "printedPage": 25,
+      "pdfPage": 40,
+      "bboxPdfPoints": [
+        331.7647058823529,
+        610.5882352941177,
+        524.7058823529412,
+        705.8823529411765
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/picture-02.png",
+      "sha256": "426ab69013e1eca3e76987b2b2f4159e5719b28134d473a6b138537ffe306c45",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "two older adults; source prompt 这是李文的___和___; identity inferred by exercise reference only",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "picture-03",
+      "printedPage": 26,
+      "pdfPage": 41,
+      "bboxPdfPoints": [
+        81.17647058823529,
+        68.23529411764706,
+        274.11764705882354,
+        164.7058823529412
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/picture-03.png",
+      "sha256": "3eb510a6df22b6870a779adef888a1a71f748c5aa1a03f9ab3a3ffda8cedbc2c",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "young boy, no printed numerical age; source prompt 我儿子今年___岁",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "picture-04",
+      "printedPage": 26,
+      "pdfPage": 41,
+      "bboxPdfPoints": [
+        297.6470588235294,
+        68.23529411764706,
+        491.7647058823529,
+        164.7058823529412
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/picture-04.png",
+      "sha256": "2e0435262a2a64ae4fac0327601c28b783da7f3ff5064c21420a54df2ff79b61",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "two boys, open perspective-dependent sibling expression; source prompt 我有一个___",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "text1",
+      "printedPage": 19,
+      "pdfPage": 34,
+      "bboxPdfPoints": [
+        290.5882352941177,
+        171.1764705882353,
+        530.0,
+        306.47058823529414
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/text1.png",
+      "sha256": "9c71a8787389f5e5faee6d9336eb1b9481210549c75186df052eeff2d3cf4e0f",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "Liu Ming and Wang Yixue talking at home, lesson4 text1",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "text2",
+      "printedPage": 22,
+      "pdfPage": 37,
+      "bboxPdfPoints": [
+        241.76470588235296,
+        64.11764705882354,
+        495.88235294117646,
+        211.1764705882353
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/text2.png",
+      "sha256": "4affdc8bde96102b1a8e9ce0f414d47bcfa94bdb693fc0c3058456f377045e02",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "Yang Tongle and Wang Yixue, lesson4 text2",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    },
+    {
+      "id": "text3",
+      "printedPage": 24,
+      "pdfPage": 39,
+      "bboxPdfPoints": [
+        285.29411764705884,
+        313.5294117647059,
+        500.0,
+        450.0
+      ],
+      "cropMethod": "PyMuPDF original PDF rectangle render, no redraw/generation",
+      "file": "source-crop-candidates/text3.png",
+      "sha256": "6a8c41c3af5e8019d0cd755b374f10f56a03afa6df677596496d7c0a5deec0df",
+      "status": "accepted-independent-original-page-and-crop-review",
+      "visualSemanticCheck": true,
+      "semantic": "Wang Yixue with son meeting Yang Tongle on street, lesson4 text3",
+      "independentRecropScale": 3,
+      "independentRecropExactSHA256Match": true
+    }
+  ],
+  "integrationRequirements": [
+    "Keep original 21 source-v2 activity snapshots and former schematic assets available for historical receipts.",
+    "Current revision must point to original-crop assets and matching hashes; do not call them original-schematic.",
+    "Update picture-01 current feedback to remove reference to the former schematic while preserving old snapshot.",
+    "All 4 picture-description items remain ungraded editorial references; no official objective answers exist for them.",
+    "Current revision JSON mapping and hashes need final reviewer check after root creates them."
+  ],
+  "notCertified": [
+    "new official Vietnamese full audit",
+    "human audio listening",
+    "native browser acceptance",
+    "production release"
+  ],
+  "currentRevisionReview": "current-revision-review.json",
+  "currentRevisionSHA256": "dc89c47d7d5e141f628425017af88cd93ebd2f3dba81c8bcaea754f09f0e772e"
+}

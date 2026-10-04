@@ -1,7 +1,7 @@
 name: HSK123 unified checkpoint
 on:
   push:
-    branches: ['feature/hsk123-unified-learning-20261003', 'work/codex-hsk-resume-20261004']
+    branches: ['feature/hsk123-unified-learning-20261003', 'work/codex-hsk-resume-20261004', 'work/hsk-autonomous-execution-20261004']
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,6 +24,9 @@ jobs:
       - run: npm ci --prefix course-app && npm ci --prefix hsk1-app
       - run: npm test --prefix course-app && npm test --prefix hsk1-app
       - run: npm run build --prefix course-app
+      - name: Verify complete HSK1 source catalogue and both-host asset bindings
+        working-directory: course-app
+        run: node --experimental-strip-types tools/verify-hsk1-source-catalogue.mjs
       - name: Typecheck new browser fixtures and readiness helpers
         run: npm run check:browser-fixtures --prefix course-app
       - name: Install browser and Chinese fonts
@@ -50,14 +53,16 @@ jobs:
         run: npx playwright test --config=playwright.unified.config.ts --project=${{ matrix.browser }} --shard=${{ matrix.shard }}/2
       - name: Build and verify standalone HSK1 listening and source backup regressions
         if: matrix.shard == 2
-        run: npm run build --prefix hsk1-app && cd hsk1-app && npx playwright test textbook-scene-navigation.spec.ts source-pilot.spec.ts --project=${{ matrix.browser }}
+        run: npm run build --prefix hsk1-app && cd hsk1-app && npx playwright test textbook-scene-navigation.spec.ts source-pilot.spec.ts source-catalogue.spec.ts --project=${{ matrix.browser }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: hsk123-reports-${{ matrix.browser }}-shard${{ matrix.shard }}
           path: |
             course-app/.repro-output/
+            hsk1-app/.repro-output/
             course-app/test-results/**/*.md
+            hsk1-app/test-results/**/*.md
             checkpoints/unified-20261003/
           include-hidden-files: true
       - uses: actions/upload-artifact@v4

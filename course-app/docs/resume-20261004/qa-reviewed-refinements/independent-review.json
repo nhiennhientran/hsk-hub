@@ -1,0 +1,786 @@
+{
+  "reviewer": "qa_hsk1_01_03",
+  "reviewedAt": "2026-10-04T15:51:11.171825+00:00",
+  "status": "accepted-independent-final-integration-static-review",
+  "baselineCommit": "387aa7b6145e80f983f331d8b55cd2b2b26d6990",
+  "reviewedIntegrationManifestSHA256": "4531e49ec8bfd0d120fa02b3a3d0abd0a31ea558a21fd5d3dbe077cd67864010",
+  "scope": "24 source-printed listening stems; 17 prior independently source-reviewed oral optional proposals; source p67 cat/dog prompt restored; final candidate/runtime bytes and version diff.",
+  "sourceReviewBoundary": "24 stem entries were independently visually re-read on all 13 original pages in stem-pinyin-final-review.json. Original p67/PDF82 cat/dog line was again rendered and visually read for this integration. This final pass checks 17 oral entries against the prior independent source review, not a fresh reread of every L9-L11 page.",
+  "lessonCount": 7,
+  "changedActivityCount": 30,
+  "oralOptionalCount": 17,
+  "printedPinyinCount": 24,
+  "lessonChecks": [
+    {
+      "lesson": 9,
+      "candidate": "course-app/docs/resume-20261004/content-09-11/lesson-09.json",
+      "runtime": "hsk1-app/content/source-activities/lesson-09.json",
+      "sha256": "f49fe969b4516b2d911723dc9c8cb51f696b307b93a1310a49eb8750c30d17de",
+      "candidateRuntimeByteIdentity": true,
+      "activityIdsAndOrderPreserved": true,
+      "changedActivityCount": 6,
+      "changedActivities": [
+        {
+          "activity": "hsk1-original-2026-l09-p062-role-text1-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l09-p062-pair-text1-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l09-p064-role-text2-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l09-p066-role-text3-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l09-p067-cloze-01",
+          "changedPaths": [
+            "/prompt/vi",
+            "/prompt/zh",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l09-p068-classroom-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        }
+      ],
+      "allChangedActivitiesUseNewVersion": true,
+      "unchangedActivityObjectsIdenticalToBaseline": true,
+      "topLevelChanges": [
+        "/version"
+      ]
+    },
+    {
+      "lesson": 10,
+      "candidate": "course-app/docs/resume-20261004/content-09-11/lesson-10.json",
+      "runtime": "hsk1-app/content/source-activities/lesson-10.json",
+      "sha256": "ad4f9cad282847041c7313b39dd179775ba883a1b9eff0dfd2343a34ada97f82",
+      "candidateRuntimeByteIdentity": true,
+      "activityIdsAndOrderPreserved": true,
+      "changedActivityCount": 6,
+      "changedActivities": [
+        {
+          "activity": "hsk1-original-2026-l10-p071-role-text1-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l10-p071-pair-text1-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l10-p073-role-text2-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l10-p073-pair-text2-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l10-p075-role-text3-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l10-p077-classroom-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        }
+      ],
+      "allChangedActivitiesUseNewVersion": true,
+      "unchangedActivityObjectsIdenticalToBaseline": true,
+      "topLevelChanges": [
+        "/version"
+      ]
+    },
+    {
+      "lesson": 11,
+      "candidate": "course-app/docs/resume-20261004/content-09-11/lesson-11.json",
+      "runtime": "hsk1-app/content/source-activities/lesson-11.json",
+      "sha256": "614fe8a3dec09c7e77dd99bbaa5ccc82cfedd12cb7b9aeafbe26589f9ad7238e",
+      "candidateRuntimeByteIdentity": true,
+      "activityIdsAndOrderPreserved": true,
+      "changedActivityCount": 6,
+      "changedActivities": [
+        {
+          "activity": "hsk1-original-2026-l11-p079-role-text1-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l11-p079-pair-text1-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l11-p081-role-text2-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l11-p081-pair-text2-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l11-p083-role-text3-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l11-p085-classroom-01",
+          "changedPaths": [
+            "/fields/0/required",
+            "/version"
+          ]
+        }
+      ],
+      "allChangedActivitiesUseNewVersion": true,
+      "unchangedActivityObjectsIdenticalToBaseline": true,
+      "topLevelChanges": [
+        "/version"
+      ]
+    },
+    {
+      "lesson": 12,
+      "candidate": "course-app/docs/resume-20261004/content-12-15/lesson-12.json",
+      "runtime": "hsk1-app/content/source-activities/lesson-12.json",
+      "sha256": "59940d4585d7a14793455d54755fa0f54508be1266765aa8a7fa970000161d8c",
+      "candidateRuntimeByteIdentity": true,
+      "activityIdsAndOrderPreserved": true,
+      "changedActivityCount": 3,
+      "changedActivities": [
+        {
+          "activity": "hsk1-original-2026-l12-p087-text-1-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l12-p089-text-2-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l12-p090-text-3-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        }
+      ],
+      "allChangedActivitiesUseNewVersion": true,
+      "unchangedActivityObjectsIdenticalToBaseline": true,
+      "topLevelChanges": [
+        "/version"
+      ]
+    },
+    {
+      "lesson": 13,
+      "candidate": "course-app/docs/resume-20261004/content-12-15/lesson-13.json",
+      "runtime": "hsk1-app/content/source-activities/lesson-13.json",
+      "sha256": "18de1697c9b9f05646b5c5688989488895e6b48ae8ef9591d554d189565b5b7b",
+      "candidateRuntimeByteIdentity": true,
+      "activityIdsAndOrderPreserved": true,
+      "changedActivityCount": 3,
+      "changedActivities": [
+        {
+          "activity": "hsk1-original-2026-l13-p096-text-1-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l13-p098-text-2-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l13-p099-text-3-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        }
+      ],
+      "allChangedActivitiesUseNewVersion": true,
+      "unchangedActivityObjectsIdenticalToBaseline": true,
+      "topLevelChanges": [
+        "/version"
+      ]
+    },
+    {
+      "lesson": 14,
+      "candidate": "course-app/docs/resume-20261004/content-12-15/lesson-14.json",
+      "runtime": "hsk1-app/content/source-activities/lesson-14.json",
+      "sha256": "820e147f58196529e195aaf40352604bc8b3c6edf5adee51ab5122f0ae70bfdd",
+      "candidateRuntimeByteIdentity": true,
+      "activityIdsAndOrderPreserved": true,
+      "changedActivityCount": 3,
+      "changedActivities": [
+        {
+          "activity": "hsk1-original-2026-l14-p104-text-1-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l14-p106-text-2-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l14-p108-text-3-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        }
+      ],
+      "allChangedActivitiesUseNewVersion": true,
+      "unchangedActivityObjectsIdenticalToBaseline": true,
+      "topLevelChanges": [
+        "/version"
+      ]
+    },
+    {
+      "lesson": 15,
+      "candidate": "course-app/docs/resume-20261004/content-12-15/lesson-15.json",
+      "runtime": "hsk1-app/content/source-activities/lesson-15.json",
+      "sha256": "d23b2601ab51382ec8f775bb21cbdd2386b14dd0f649230b457e6b813cf32a9e",
+      "candidateRuntimeByteIdentity": true,
+      "activityIdsAndOrderPreserved": true,
+      "changedActivityCount": 3,
+      "changedActivities": [
+        {
+          "activity": "hsk1-original-2026-l15-p113-text-1-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l15-p114-text-2-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        },
+        {
+          "activity": "hsk1-original-2026-l15-p116-text-3-listening-01",
+          "changedPaths": [
+            "/fields/0/pinyin",
+            "/fields/1/pinyin",
+            "/version"
+          ]
+        }
+      ],
+      "allChangedActivitiesUseNewVersion": true,
+      "unchangedActivityObjectsIdenticalToBaseline": true,
+      "topLevelChanges": [
+        "/version"
+      ]
+    }
+  ],
+  "oralFields": [
+    {
+      "activity": "hsk1-original-2026-l09-p062-role-text1-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 62,
+      "sourcePDFPage": 77,
+      "instruction": "分角色朗读对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l09-p062-pair-text1-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 62,
+      "sourcePDFPage": 77,
+      "instruction": "两人一组，根据实际情况对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l09-p064-role-text2-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 64,
+      "sourcePDFPage": 79,
+      "instruction": "分角色朗读对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l09-p066-role-text3-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 66,
+      "sourcePDFPage": 81,
+      "instruction": "分角色朗读对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l09-p068-classroom-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 68,
+      "sourcePDFPage": 83,
+      "instruction": "两人一组，一个人扮演白家月，另一个人扮演陈天中，仿照本课三篇课文的内容对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l10-p071-role-text1-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 71,
+      "sourcePDFPage": 86,
+      "instruction": "分角色朗读对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l10-p071-pair-text1-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 71,
+      "sourcePDFPage": 86,
+      "instruction": "两人一组，选择一个物品，互相问答价格。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l10-p073-role-text2-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 73,
+      "sourcePDFPage": 88,
+      "instruction": "分角色朗读对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l10-p073-pair-text2-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 73,
+      "sourcePDFPage": 88,
+      "instruction": "两人一组，一个人扮演顾客，一个人扮演售货员，进行购物问答。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l10-p075-role-text3-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 75,
+      "sourcePDFPage": 90,
+      "instruction": "分角色朗读对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l10-p077-classroom-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 77,
+      "sourcePDFPage": 92,
+      "instruction": "三人一组，一个人扮演售货员，两个人扮演顾客，仿照本课三篇课文的内容对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l11-p079-role-text1-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 79,
+      "sourcePDFPage": 94,
+      "instruction": "分角色朗读对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l11-p079-pair-text1-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 79,
+      "sourcePDFPage": 94,
+      "instruction": "两人一组，根据实际情况对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l11-p081-role-text2-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 81,
+      "sourcePDFPage": 96,
+      "instruction": "分角色朗读对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l11-p081-pair-text2-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 81,
+      "sourcePDFPage": 96,
+      "instruction": "两人一组，根据实际情况对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l11-p083-role-text3-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 83,
+      "sourcePDFPage": 98,
+      "instruction": "分角色朗读对话。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l11-p085-classroom-01",
+      "field": "blank-1",
+      "sourcePrintedPage": 85,
+      "sourcePDFPage": 100,
+      "instruction": "两人一组，互相问答做不做某事。",
+      "label": "对话记录",
+      "required": false,
+      "assessment": "ungraded",
+      "sourceProposalAndTargetExactMatch": true
+    }
+  ],
+  "pinyinFields": [
+    {
+      "activity": "hsk1-original-2026-l12-p087-text-1-listening-01",
+      "field": "blank-1",
+      "label": "（1）王一飞那儿的天气（　）。",
+      "pinyin": "Wáng Yīfēi nàr de tiānqì（　）。",
+      "sourcePrintedPage": 87,
+      "sourcePDFPage": 102,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l12-p087-text-1-listening-01",
+      "field": "blank-2",
+      "label": "（2）王一飞觉得（　）。",
+      "pinyin": "Wáng Yīfēi juéde（　）。",
+      "sourcePrintedPage": 87,
+      "sourcePDFPage": 102,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l12-p089-text-2-listening-01",
+      "field": "blank-1",
+      "label": "（1）杨同乐昨天（　）了。",
+      "pinyin": "Yáng Tónglè zuótiān（　）le.",
+      "sourcePrintedPage": 89,
+      "sourcePDFPage": 104,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l12-p089-text-2-listening-01",
+      "field": "blank-2",
+      "label": "（2）杨同乐今天（　）了。",
+      "pinyin": "Yáng Tónglè jīntiān（　）le.",
+      "sourcePrintedPage": 89,
+      "sourcePDFPage": 104,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l12-p090-text-3-listening-01",
+      "field": "blank-1",
+      "label": "（1）杨同乐觉得（　）。",
+      "pinyin": "Yáng Tónglè juéde（　）。",
+      "sourcePrintedPage": 90,
+      "sourcePDFPage": 105,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l12-p090-text-3-listening-01",
+      "field": "blank-2",
+      "label": "（2）医生对杨同乐说：“今天（　）吧。”",
+      "pinyin": "Yīshēng duì Yáng Tónglè shuō: “Jīntiān（　）ba.”",
+      "sourcePrintedPage": 90,
+      "sourcePDFPage": 105,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l13-p096-text-1-listening-01",
+      "field": "blank-1",
+      "label": "（1）白家月想再问王老师（　）。",
+      "pinyin": "Bái Jiāyuè xiǎng zài wèn Wáng lǎoshī（　）。",
+      "sourcePrintedPage": 96,
+      "sourcePDFPage": 111,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l13-p096-text-1-listening-01",
+      "field": "blank-2",
+      "label": "（2）王老师（　）那里卖不卖手机。",
+      "pinyin": "Wáng lǎoshī（　）nàlǐ mài bu mài shǒujī.",
+      "sourcePrintedPage": 96,
+      "sourcePDFPage": 111,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l13-p098-text-2-listening-01",
+      "field": "blank-1",
+      "label": "（1）王一雪要喝（　）。",
+      "pinyin": "Wáng Yīxuě yào hē（　）。",
+      "sourcePrintedPage": 98,
+      "sourcePDFPage": 113,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l13-p098-text-2-listening-01",
+      "field": "blank-2",
+      "label": "（2）王一雪还想吃（　）。",
+      "pinyin": "Wáng Yīxuě hái xiǎng chī（　）。",
+      "sourcePrintedPage": 98,
+      "sourcePDFPage": 113,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l13-p099-text-3-listening-01",
+      "field": "blank-1",
+      "label": "（1）刘明想吃（　）。",
+      "pinyin": "Liú Míng xiǎng chī（　）。",
+      "sourcePrintedPage": 99,
+      "sourcePDFPage": 114,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l13-p099-text-3-listening-01",
+      "field": "blank-2",
+      "label": "（2）刘明想喝（　）。",
+      "pinyin": "Liú Míng xiǎng hē（　）。",
+      "sourcePrintedPage": 100,
+      "sourcePDFPage": 115,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l14-p104-text-1-listening-01",
+      "field": "blank-1",
+      "label": "（1）陈天中（　）王老师。",
+      "pinyin": "Chén Tiānzhōng（　）Wáng lǎoshī.",
+      "sourcePrintedPage": 104,
+      "sourcePDFPage": 119,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l14-p104-text-1-listening-01",
+      "field": "blank-2",
+      "label": "（2）陈天中在火车上（　）。",
+      "pinyin": "Chén Tiānzhōng zài huǒchē shang（　）。",
+      "sourcePrintedPage": 104,
+      "sourcePDFPage": 119,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l14-p106-text-2-listening-01",
+      "field": "blank-1",
+      "label": "（1）同学们（　）汉语了。",
+      "pinyin": "Tóngxuémen（　）Hànyǔ le.",
+      "sourcePrintedPage": 106,
+      "sourcePDFPage": 121,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l14-p106-text-2-listening-01",
+      "field": "blank-2",
+      "label": "（2）陈天中（　）王老师在说什么。",
+      "pinyin": "Chén Tiānzhōng（　）Wáng lǎoshī zài shuō shénme.",
+      "sourcePrintedPage": 106,
+      "sourcePDFPage": 121,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l14-p108-text-3-listening-01",
+      "field": "blank-1",
+      "label": "（1）明年刘明和王一雪的女儿（　）。",
+      "pinyin": "Míngnián Liú Míng hé Wáng Yīxuě de nǚ’ér（　）。",
+      "sourcePrintedPage": 108,
+      "sourcePDFPage": 123,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l14-p108-text-3-listening-01",
+      "field": "blank-2",
+      "label": "（2）（　）孩子们都忙了。",
+      "pinyin": "（　）háizimen dōu máng le.",
+      "sourcePrintedPage": 108,
+      "sourcePDFPage": 123,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l15-p113-text-1-listening-01",
+      "field": "blank-1",
+      "label": "（1）李文问大家（　）吃哪个菜。",
+      "pinyin": "Lǐ Wén wèn dàjiā（　）chī nǎge cài.",
+      "sourcePrintedPage": 113,
+      "sourcePDFPage": 128,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l15-p113-text-1-listening-01",
+      "field": "blank-2",
+      "label": "（2）李文说：“大家（　）。”",
+      "pinyin": "Lǐ Wén shuō: “Dàjiā（　）。”",
+      "sourcePrintedPage": 113,
+      "sourcePDFPage": 128,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l15-p114-text-2-listening-01",
+      "field": "blank-1",
+      "label": "（1）安妮和她男朋友去年去了（　）。",
+      "pinyin": "Ānní hé tā nánpéngyou qùnián qùle（　）。",
+      "sourcePrintedPage": 114,
+      "sourcePDFPage": 129,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l15-p114-text-2-listening-01",
+      "field": "blank-2",
+      "label": "（2）王老师和李文都是（　）。",
+      "pinyin": "Wáng lǎoshī hé Lǐ Wén dōu shì（　）。",
+      "sourcePrintedPage": 114,
+      "sourcePDFPage": 129,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l15-p116-text-3-listening-01",
+      "field": "blank-1",
+      "label": "（1）白家月和安妮坐（　）去北京。",
+      "pinyin": "Bái Jiāyuè hé Ānní zuò（　）qù Běijīng.",
+      "sourcePrintedPage": 116,
+      "sourcePDFPage": 131,
+      "exactApprovedSourceEntryMatch": true
+    },
+    {
+      "activity": "hsk1-original-2026-l15-p116-text-3-listening-01",
+      "field": "blank-2",
+      "label": "（2）王老师的（　）都在北京。",
+      "pinyin": "Wáng lǎoshī de（　）dōu zài Běijīng.",
+      "sourcePrintedPage": 116,
+      "sourcePDFPage": 131,
+      "exactApprovedSourceEntryMatch": true
+    }
+  ],
+  "nameCorrectionsIntegrated": [
+    "L15 p114 text2 blank1: Ānní",
+    "L15 p116 text3 blank1: Ānní"
+  ],
+  "crossPagePreserved": {
+    "activity": "hsk1-original-2026-l13-p099-text-3-listening-01",
+    "blank-1": {
+      "printedPage": 99,
+      "pdfPage": 114
+    },
+    "blank-2": {
+      "printedPage": 100,
+      "pdfPage": 115
+    }
+  },
+  "catDogOriginalLine": {
+    "activity": "hsk1-original-2026-l09-p067-cloze-01",
+    "sourcePrintedPage": 67,
+    "sourcePDFPage": 82,
+    "independentOriginalPageVisualRecheck": true,
+    "zh": "＿＿上有一只小猫，房间外＿＿一只小狗。",
+    "vi": "Trên ＿＿ có một con mèo con, ngoài phòng ＿＿ một con chó con.",
+    "optionAndAnswerFieldsUnchanged": true
+  },
+  "scopeLimits": [
+    "No new full Vietnamese official edition alignment",
+    "No human audio listening or physical device certification",
+    "Static version safety only; history replay behavior remains root test gate"
+  ]
+}

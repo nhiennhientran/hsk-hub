@@ -1,0 +1,43 @@
+{
+  "purpose": "Targeted L4 actual execution after fixture fixes; not final 15-lesson certification",
+  "hosts": {
+    "course": {
+      "buildScope": "Frozen previous 8-lesson build; L4 unchanged",
+      "browser": "Chromium 153.0.8010.0, local restricted-runtime launch settings",
+      "cases": [
+        {
+          "title": "unified HSK1 source catalogue L4 complete DOM at 320",
+          "project": "chromium-local-probe",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 3933,
+              "errors": []
+            }
+          ]
+        }
+      ],
+      "rawReportSHA256": "dd3320792a88971360894cd43018d95702167f646e07cacc0ec2b2fcc24a9275"
+    },
+    "modular": {
+      "buildScope": "Frozen previous 8-lesson build; L4 unchanged",
+      "browser": "Chromium 153.0.8010.0, local restricted-runtime launch settings",
+      "cases": [
+        {
+          "title": "modular HSK1 source catalogue L4 complete DOM at 320",
+          "project": "chromium-local-probe",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 3977,
+              "errors": []
+            }
+          ]
+        }
+      ],
+      "rawReportSHA256": "6b0f4f2a46a7a827a2702888a5bc521a8419a8ccd88869cc246d4c84304bca3b"
+    }
+  }
+}

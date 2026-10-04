@@ -1,5 +1,6 @@
 import {courseAssetBase} from './asset-base.ts';
 import type { AudioRequest } from '../audio/index.ts';
+import { reviseTextbookDisplay, type TextbookDisplayRevisionInfo } from './textbook-display-revisions.ts';
 
 export interface BookSource {
   readonly kind: string;
@@ -112,6 +113,7 @@ export interface WordSense {
 }
 export interface TextbookContent {
   readonly lessons: readonly BookLesson[];
+  readonly displayRevisions?: TextbookDisplayRevisionInfo;
   resolveWord(lessonId: number, wordId: string, catalogId?: string): TextbookAudio;
   wordSenses(lessonId: number, wordId: string): readonly WordSense[];
   resolveScene(lessonId: number, sceneId: string): TextbookAudio;
@@ -233,8 +235,9 @@ function freeze<T>(value: T): T {
 }
 
 export function createTextbookContent(bookValue: unknown, mediaValue: unknown, catalogValue: unknown,
-  audioURL: (trackId: string) => string = id => typeof document === 'undefined' ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, courseAssetBase()).href): TextbookContent {
-  const lessons = freeze(structuredClone(validateTextbook(bookValue)));
+  audioURL: (trackId: string) => string = id => typeof document === 'undefined' ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, courseAssetBase()).href,
+  displayRevisionValue?: unknown): TextbookContent {
+  const sourceLessons = freeze(structuredClone(validateTextbook(bookValue)));
   const media = freeze(structuredClone(validateMedia(mediaValue)));
   if (!row(catalogValue) || catalogValue.schemaVersion !== 1 || !commitHash(catalogValue.baseline) || !Array.isArray(catalogValue.vocabulary) || catalogValue.vocabulary.length !== 344) fail('Chỉ mục nghĩa từ không hợp lệ.');
   if (!row(bookValue) || !row(mediaValue) || bookValue.baseline !== mediaValue.baseline || bookValue.baseline !== catalogValue.baseline) fail('Các nguồn giáo trình không cùng phiên bản.');
@@ -264,8 +267,7 @@ export function createTextbookContent(bookValue: unknown, mediaValue: unknown, c
     senses.set(String(value.id), freeze(structuredClone(value as unknown as CatalogSense)));
   }
   if (withAudio !== 330 || senses.size - withAudio !== 14 || missing.size !== 14) fail('Số lượng âm thanh từ vựng không khớp giáo trình.');
-  const lessonMap = new Map(lessons.map(lesson => [lesson.id, lesson]));
-  for (const lesson of lessons) {
+  for (const lesson of sourceLessons) {
     for (const word of lesson.vocab) for (const id of word.catalogIds) {
       const sense = senses.get(id);
       if (!sense || sense.lesson !== lesson.id || sense.zh !== word.zh || (word.sourceSenseIds && !word.sourceSenseIds.includes(sense.senseId))) fail('Nghĩa từ không khớp hàng giáo trình.');
@@ -275,6 +277,9 @@ export function createTextbookContent(bookValue: unknown, mediaValue: unknown, c
       if (!track || track.kind !== 'text' || track.lesson !== lesson.id || track.scene !== index + 1 || media.textbookSegments.text[track.id]?.length !== scene.lines.length) fail('Âm thanh hội thoại không khớp giáo trình.');
     }
   }
+  const revised = displayRevisionValue === undefined ? undefined : reviseTextbookDisplay(sourceLessons, displayRevisionValue, String(bookValue.baseline));
+  const lessons = revised ? freeze(revised.lessons) : sourceLessons;
+  const lessonMap = new Map(lessons.map(lesson => [lesson.id, lesson]));
   const original = (track: OriginalTrack, label: string): TextbookAudio => ({ available: true, track, request: { url: audioURL(track.id), label, sourceKind: 'original' } });
   const segment = (track: OriginalTrack, start: number, end: number, label: string): TextbookAudio => ({ available: true, track, request: { url: audioURL(track.id), start, end, label, sourceKind: 'segment' } });
   const findWord = (lessonId: number, wordId: string) => lessonMap.get(lessonId)?.vocab.find(word => word.id === wordId);
@@ -282,6 +287,7 @@ export function createTextbookContent(bookValue: unknown, mediaValue: unknown, c
   const senseAudio = (sense: CatalogSense): TextbookAudio => sense.audio ? segment(tracks.get(sense.audio.track)!, sense.audio.start, sense.audio.end, `${sense.zh} · ${sense.senseZh}`) : noAudio();
   return {
     lessons,
+    ...(revised ? { displayRevisions: freeze(revised.info) } : {}),
     resolveWord(lessonId, wordId, catalogId) {
       const word = findWord(lessonId, wordId);
       if (!word || (catalogId !== undefined && !word.catalogIds.includes(catalogId))) return noAudio('Từ hoặc nghĩa từ không thuộc bài học này.');
@@ -320,7 +326,8 @@ export function createTextbookContent(bookValue: unknown, mediaValue: unknown, c
 /** Asset URL imports stay inside the browser-only loader so pure validation works in Node. */
 export async function loadTextbook(signal: AbortSignal): Promise<TextbookContent> {
   const assets = await Promise.all([
-    import('../../../content/textbook.json?url'), import('../../../content/media-references.json?url'), import('../../../content/stage3-catalog.json?url')
+    import('../../../content/textbook.json?url'), import('../../../content/media-references.json?url'), import('../../../content/stage3-catalog.json?url'),
+    import('../../../content/textbook-display-revisions.json?url')
   ]);
   const values = await Promise.all(assets.map(async asset => {
     const response = await fetch(asset.default, { signal });
@@ -328,5 +335,5 @@ export async function loadTextbook(signal: AbortSignal): Promise<TextbookContent
     return response.json() as Promise<unknown>;
   }));
   if (signal.aborted) throw new DOMException('Module left.', 'AbortError');
-  return createTextbookContent(values[0], values[1], values[2]);
+  return createTextbookContent(values[0], values[1], values[2], undefined, values[3]);
 }

@@ -7,7 +7,7 @@ export function sourceActivityTable(table:SourceTable,title:Copy,field:(id:strin
   const wrap=element('div');wrap.className='source-table-scroll';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label',bilingualText(table.caption??title));
   const node=element('table');node.className='source-activity-table';
   if(table.caption)node.append(element('caption',table.caption));
-  if(!table.headerless){const head=element('thead'),headRow=element('tr');for(const column of table.columns){const cell=element('th',column);cell.scope='col';headRow.append(cell);}head.append(headRow);node.append(head);}
+  if(!table.headerless){const head=element('thead'),headRow=element('tr');for(const column of table.columns){const cell=column.zh||column.vi?element('th',column):element('th');cell.scope='col';headRow.append(cell);}head.append(headRow);node.append(head);}
   const body=element('tbody');for(const row of table.rows){const tr=element('tr');tr.dataset.sourceRow=row.id;for(const [index,cell] of row.cells.entries()){
     const td=index===0&&cell.text&&!cell.fieldId?element('th'):element('td');if(td.tagName==='TH')td.scope='row';
     if(cell.text)td.append(element('p',cell.text));if(cell.fieldId)td.append(field(cell.fieldId));tr.append(td);

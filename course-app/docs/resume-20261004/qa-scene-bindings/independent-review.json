@@ -1,0 +1,1421 @@
+{
+  "reviewer": "qa_hsk1_01_03",
+  "reviewedAt": "2026-10-04T15:55:45.660Z",
+  "status": "accepted-independent-scene-to-reviewed-source-crop-binding",
+  "baselineCommit": "387aa7b6145e80f983f331d8b55cd2b2b26d6990",
+  "frozenTextbookBytesUnchanged": true,
+  "frozenTextbookSHA256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+  "ledgerFile": "course-app/docs/resume-20261004/media-closure/hsk1-scene-binding-ledger.json",
+  "ledgerSHA256": "a59b12012987bcda15817b3905311ebaedd2651c98fbf2e994ad50a1417dbfc7",
+  "reviewedFiles": [
+    {
+      "path": "hsk1-app/src/services/source-activities/scene-figures.ts",
+      "sha256": "230617e627d65df37127ad918adf0f7f7a7647ed350a6aef999c4e93d4dc8e20"
+    },
+    {
+      "path": "hsk1-app/src/features/textbook/text.ts",
+      "sha256": "4858677c9840db097e8dfae0ea6180c725ebd33dbadc8bd2ea27933454b84330"
+    },
+    {
+      "path": "hsk1-app/src/features/textbook/textbook.css",
+      "sha256": "6c6328fb5b52391fe7411fb898b2aed9ea88b1a544a9e02221ec578452fdb14f"
+    },
+    {
+      "path": "hsk1-app/tests/textbook-scene-navigation.test.mjs",
+      "sha256": "4721544ac3c5476a1641f90786fc97da38776aa92a2e0df8078101569bea8628"
+    }
+  ],
+  "sceneCount": 45,
+  "cropCount": 48,
+  "uniqueCropCount": 48,
+  "currentCatalogueResolvedScenes": 45,
+  "currentCatalogueResolvedCrops": 48,
+  "lessons": [
+    {
+      "lesson": 1,
+      "file": "hsk1-app/content/source-activities/lesson-01.json",
+      "sha256": "63ee9b873770784634cf7b7cd865c61663f185a6c91e08b4d576da6386644ab4",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 2,
+      "file": "hsk1-app/content/source-activities/lesson-02.json",
+      "sha256": "1f96a8e7924da5f755c7f656cac5887e90cfa9706a007ff00e00dadedee90853",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 3,
+      "file": "hsk1-app/content/source-activities/lesson-03.json",
+      "sha256": "ccd76ad50a2dc66dcea0a5a97a72c67d76c6e36e20beeb543824d6dc2e161103",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 4,
+      "file": "hsk1-app/content/source-activities/lesson-04-current.json",
+      "sha256": "dc89c47d7d5e141f628425017af88cd93ebd2f3dba81c8bcaea754f09f0e772e",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 5,
+      "file": "hsk1-app/content/source-activities/lesson-05.json",
+      "sha256": "44bb1b7298b10528f2f9c83a1f88f438bc55d900a9edb067265d35c65cebec32",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 6,
+      "file": "hsk1-app/content/source-activities/lesson-06.json",
+      "sha256": "bb61cb1f0d6e3b6f19b7ddf17c08b47370d3c46c812cbf15bc4b56d9acb2fd29",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 7,
+      "file": "hsk1-app/content/source-activities/lesson-07.json",
+      "sha256": "1c4525238cfd7385e207211f36f57633a6440ccea7b69be58522bc0091bdddb4",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 8,
+      "file": "hsk1-app/content/source-activities/lesson-08.json",
+      "sha256": "d577165a74d997bf20f49dbbe5528ece2b353c4e36e917f7e56f6ae5ac5b754b",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 9,
+      "file": "hsk1-app/content/source-activities/lesson-09.json",
+      "sha256": "f49fe969b4516b2d911723dc9c8cb51f696b307b93a1310a49eb8750c30d17de",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 10,
+      "file": "hsk1-app/content/source-activities/lesson-10.json",
+      "sha256": "ad4f9cad282847041c7313b39dd179775ba883a1b9eff0dfd2343a34ada97f82",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 11,
+      "file": "hsk1-app/content/source-activities/lesson-11.json",
+      "sha256": "614fe8a3dec09c7e77dd99bbaa5ccc82cfedd12cb7b9aeafbe26589f9ad7238e",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 12,
+      "file": "hsk1-app/content/source-activities/lesson-12.json",
+      "sha256": "59940d4585d7a14793455d54755fa0f54508be1266765aa8a7fa970000161d8c",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 13,
+      "file": "hsk1-app/content/source-activities/lesson-13.json",
+      "sha256": "18de1697c9b9f05646b5c5688989488895e6b48ae8ef9591d554d189565b5b7b",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 14,
+      "file": "hsk1-app/content/source-activities/lesson-14.json",
+      "sha256": "820e147f58196529e195aaf40352604bc8b3c6edf5adee51ab5122f0ae70bfdd",
+      "currentRuntimeCatalogueExactSourceObject": true
+    },
+    {
+      "lesson": 15,
+      "file": "hsk1-app/content/source-activities/lesson-15.json",
+      "sha256": "d23b2601ab51382ec8f775bb21cbdd2386b14dd0f649230b457e6b813cf32a9e",
+      "currentRuntimeCatalogueExactSourceObject": true
+    }
+  ],
+  "entries": [
+    {
+      "sceneId": "textbook-l01-text-1",
+      "lesson": 1,
+      "frozenAudioTrack": "1-1",
+      "sourceActivity": "hsk1-original-2026-l01-p001-text-1-reading-01",
+      "sourceActivityPage": 1,
+      "sourceActivityPages": [
+        1
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l01-text-1-photo",
+          "file": "hsk1-app/public/source-activities/figures/l01-text-1-photo.png",
+          "sha256": "e705735a2a9b68de21dd19964e29a17d279be14c940e78bbecbd760db992201d",
+          "printedPage": 1,
+          "pdfPage": 16,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            300,
+            207
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l01-text-2",
+      "lesson": 1,
+      "frozenAudioTrack": "1-3",
+      "sourceActivity": "hsk1-original-2026-l01-p002-text-2-reading-01",
+      "sourceActivityPage": 2,
+      "sourceActivityPages": [
+        2
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l01-text-2-photo",
+          "file": "hsk1-app/public/source-activities/figures/l01-text-2-photo.png",
+          "sha256": "152465f33b7e5c3e03b2a07ffac965c1792638b801ba4b1e8944957801d5f80a",
+          "printedPage": 2,
+          "pdfPage": 17,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            408,
+            222
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l01-text-3",
+      "lesson": 1,
+      "frozenAudioTrack": "1-5",
+      "sourceActivity": "hsk1-original-2026-l01-p003-text-3-reading-01",
+      "sourceActivityPage": 3,
+      "sourceActivityPages": [
+        3
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l01-text-3-photo",
+          "file": "hsk1-app/public/source-activities/figures/l01-text-3-photo.png",
+          "sha256": "9b8d10f97e622059562085d54f1a56c816d4845e5119a990de8eb515a1eddbe0",
+          "printedPage": 3,
+          "pdfPage": 18,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            662,
+            297
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l02-text-1",
+      "lesson": 2,
+      "frozenAudioTrack": "2-1",
+      "sourceActivity": "hsk1-original-2026-l02-p006-text-1-reading-01",
+      "sourceActivityPage": 6,
+      "sourceActivityPages": [
+        5,
+        6
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l02-text-1-photo",
+          "file": "hsk1-app/public/source-activities/figures/l02-text-1-photo.png",
+          "sha256": "2251fcbced21c375972f152cc110ec1ceff97ca056702225a1f9707f60eaf077",
+          "printedPage": 5,
+          "pdfPage": 20,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            663,
+            353
+          ]
+        },
+        {
+          "figureId": "l02-text-1-portrait",
+          "file": "hsk1-app/public/source-activities/figures/l02-text-1-portrait.png",
+          "sha256": "497bde08934c7e77cd994b80a25099b2abfa6162d6a31abc59376b8f17111ad7",
+          "printedPage": 6,
+          "pdfPage": 21,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            330,
+            218
+          ],
+          "supplementSource": {
+            "activity": "hsk1-original-2026-l02-p006-text-1-reading-01",
+            "method": "explicit secondary figure on reviewed primary activity"
+          }
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l02-text-2",
+      "lesson": 2,
+      "frozenAudioTrack": "2-3",
+      "sourceActivity": "hsk1-original-2026-l02-p007-text-2-reading-01",
+      "sourceActivityPage": 7,
+      "sourceActivityPages": [
+        7
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l02-text-2-photo",
+          "file": "hsk1-app/public/source-activities/figures/l02-text-2-photo.png",
+          "sha256": "de4a3659d51264b4880fa758865fbdfb53b12ecd942748434039289d1825c1af",
+          "printedPage": 7,
+          "pdfPage": 22,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            403,
+            284
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l02-text-3",
+      "lesson": 2,
+      "frozenAudioTrack": "2-5",
+      "sourceActivity": "hsk1-original-2026-l02-p008-text-3-reading-01",
+      "sourceActivityPage": 8,
+      "sourceActivityPages": [
+        8
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l02-text-3-photo",
+          "file": "hsk1-app/public/source-activities/figures/l02-text-3-photo.png",
+          "sha256": "2324d70b9fe3f94ff24249a41e221d54e84ae7c6efd685c143de121cf2e2e41f",
+          "printedPage": 8,
+          "pdfPage": 23,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            339,
+            236
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l03-text-1",
+      "lesson": 3,
+      "frozenAudioTrack": "3-1",
+      "sourceActivity": "hsk1-original-2026-l03-p010-text-1-reading-01",
+      "sourceActivityPage": 10,
+      "sourceActivityPages": [
+        10
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l03-text-1-photo",
+          "file": "hsk1-app/public/source-activities/figures/l03-text-1-photo.png",
+          "sha256": "be826c1f6dcdc97b2471a2aba719c85a153d7c31ecfc35567baac18f4bfccc77",
+          "printedPage": 10,
+          "pdfPage": 25,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            335,
+            385
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l03-text-2",
+      "lesson": 3,
+      "frozenAudioTrack": "3-3",
+      "sourceActivity": "hsk1-original-2026-l03-p012-text-2-reading-01",
+      "sourceActivityPage": 12,
+      "sourceActivityPages": [
+        12
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l03-text-2-photo",
+          "file": "hsk1-app/public/source-activities/figures/l03-text-2-photo.png",
+          "sha256": "146184286fd558117129b7b203dd75f6df069ea1d8cae637329ddef53dd5f1d7",
+          "printedPage": 12,
+          "pdfPage": 27,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            343,
+            168
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l03-text-3",
+      "lesson": 3,
+      "frozenAudioTrack": "3-5",
+      "sourceActivity": "hsk1-original-2026-l03-p014-text-3-reading-01",
+      "sourceActivityPage": 14,
+      "sourceActivityPages": [
+        13,
+        14
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l03-text-3-photo",
+          "file": "hsk1-app/public/source-activities/figures/l03-text-3-photo.png",
+          "sha256": "c2332e8092da283f1d76c64b68549c838324766d9aab63e7e895361a7225dd3f",
+          "printedPage": 13,
+          "pdfPage": 28,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            661,
+            354
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l04-text-1",
+      "lesson": 4,
+      "frozenAudioTrack": "4-1",
+      "sourceActivity": "hsk1-original-2026-l04-p019-text1-read-role-01",
+      "sourceActivityPage": 19,
+      "sourceActivityPages": [
+        19
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l04-text1",
+          "file": "hsk1-app/public/source-activities/figures/l04-text1.png",
+          "sha256": "9c71a8787389f5e5faee6d9336eb1b9481210549c75186df052eeff2d3cf4e0f",
+          "printedPage": 19,
+          "pdfPage": 34,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            719,
+            407
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l04-text-2",
+      "lesson": 4,
+      "frozenAudioTrack": "4-3",
+      "sourceActivity": "hsk1-original-2026-l04-p022-text2-role-01",
+      "sourceActivityPage": 22,
+      "sourceActivityPages": [
+        22
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l04-text2",
+          "file": "hsk1-app/public/source-activities/figures/l04-text2.png",
+          "sha256": "4affdc8bde96102b1a8e9ce0f414d47bcfa94bdb693fc0c3058456f377045e02",
+          "printedPage": 22,
+          "pdfPage": 37,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            763,
+            442
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l04-text-3",
+      "lesson": 4,
+      "frozenAudioTrack": "4-5",
+      "sourceActivity": "hsk1-original-2026-l04-p025-text3-role-01",
+      "sourceActivityPage": 24,
+      "sourceActivityPages": [
+        24,
+        25
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l04-text3",
+          "file": "hsk1-app/public/source-activities/figures/l04-text3.png",
+          "sha256": "6a8c41c3af5e8019d0cd755b374f10f56a03afa6df677596496d7c0a5deec0df",
+          "printedPage": 24,
+          "pdfPage": 39,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            645,
+            410
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l05-text-1",
+      "lesson": 5,
+      "frozenAudioTrack": "5-1",
+      "sourceActivity": "hsk1-original-2026-l05-p028-role-text1-01",
+      "sourceActivityPage": 28,
+      "sourceActivityPages": [
+        28
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l05-scene-01",
+          "file": "hsk1-app/public/source-activities/figures/l05-scene-01.png",
+          "sha256": "d36a7fbab69bfc65031d12362979ff204e9b414b102c500ae1dd08ac65d77255",
+          "printedPage": 28,
+          "pdfPage": 43,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            414,
+            370
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l05-text-2",
+      "lesson": 5,
+      "frozenAudioTrack": "5-3",
+      "sourceActivity": "hsk1-original-2026-l05-p031-role-text2-01",
+      "sourceActivityPage": 31,
+      "sourceActivityPages": [
+        30,
+        31
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l05-scene-02",
+          "file": "hsk1-app/public/source-activities/figures/l05-scene-02.png",
+          "sha256": "35dfa32f8f6ac10fdb7ca738214e16f228045c0dae336bfc8b0bf9aa32670ab3",
+          "printedPage": 30,
+          "pdfPage": 45,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            509,
+            429
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l05-text-3",
+      "lesson": 5,
+      "frozenAudioTrack": "5-5",
+      "sourceActivity": "hsk1-original-2026-l05-p032-role-text3-01",
+      "sourceActivityPage": 32,
+      "sourceActivityPages": [
+        32
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l05-scene-03",
+          "file": "hsk1-app/public/source-activities/figures/l05-scene-03.png",
+          "sha256": "feafb071411861c45d5034f193ff0dc22861b42b53b282d611eb2064b1a6bb32",
+          "printedPage": 32,
+          "pdfPage": 47,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            449,
+            486
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l06-text-1",
+      "lesson": 6,
+      "frozenAudioTrack": "6-1",
+      "sourceActivity": "hsk1-original-2026-l06-p036-role-text1-01",
+      "sourceActivityPage": 36,
+      "sourceActivityPages": [
+        36
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l06-scene-01",
+          "file": "hsk1-app/public/source-activities/figures/l06-scene-01.png",
+          "sha256": "80444973de0a496f46148116114aa1a9a6aef2a06998a4a3ffe2b245a481ddc5",
+          "printedPage": 36,
+          "pdfPage": 51,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            418,
+            313
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l06-text-2",
+      "lesson": 6,
+      "frozenAudioTrack": "6-3",
+      "sourceActivity": "hsk1-original-2026-l06-p037-role-text2-01",
+      "sourceActivityPage": 37,
+      "sourceActivityPages": [
+        37
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l06-scene-02",
+          "file": "hsk1-app/public/source-activities/figures/l06-scene-02.png",
+          "sha256": "d0f2286fcf2e5c35a73d59bf8c5a691ac026443554792102fa38b7de614f94a8",
+          "printedPage": 37,
+          "pdfPage": 52,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            432,
+            535
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l06-text-3",
+      "lesson": 6,
+      "frozenAudioTrack": "6-5",
+      "sourceActivity": "hsk1-original-2026-l06-p039-role-text3-01",
+      "sourceActivityPage": 39,
+      "sourceActivityPages": [
+        39
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l06-scene-03",
+          "file": "hsk1-app/public/source-activities/figures/l06-scene-03.png",
+          "sha256": "e27ecfdae066bad32ed10ad74a19d54ff5fe6bebdb25aca4ab873739acfb0abe",
+          "printedPage": 39,
+          "pdfPage": 54,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            412,
+            827
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l07-text-1",
+      "lesson": 7,
+      "frozenAudioTrack": "7-1",
+      "sourceActivity": "hsk1-original-2026-l07-p046-role-text1-01",
+      "sourceActivityPage": 46,
+      "sourceActivityPages": [
+        46
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l07-scene-01",
+          "file": "hsk1-app/public/source-activities/figures/l07-scene-01.png",
+          "sha256": "9429551ce66bd06b8e4e0fd55509d5eff794fa176aadf1cb9c33ae07dd99fcfc",
+          "printedPage": 46,
+          "pdfPage": 61,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            875,
+            300
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l07-text-2",
+      "lesson": 7,
+      "frozenAudioTrack": "7-3",
+      "sourceActivity": "hsk1-original-2026-l07-p049-role-text2-01",
+      "sourceActivityPage": 49,
+      "sourceActivityPages": [
+        48,
+        49
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l07-scene-02",
+          "file": "hsk1-app/public/source-activities/figures/l07-scene-02.png",
+          "sha256": "a2e9171487ad74d0255043b2c0b3ef112207d520bef628dc5180937a2b6a6dcc",
+          "printedPage": 48,
+          "pdfPage": 63,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            882,
+            494
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l07-text-3",
+      "lesson": 7,
+      "frozenAudioTrack": "7-5",
+      "sourceActivity": "hsk1-original-2026-l07-p051-role-text3-01",
+      "sourceActivityPage": 51,
+      "sourceActivityPages": [
+        51
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l07-scene-03",
+          "file": "hsk1-app/public/source-activities/figures/l07-scene-03.png",
+          "sha256": "31ceff1c53773087aaecdf137c7a07e71bf4edf76da175712b830015abc74874",
+          "printedPage": 51,
+          "pdfPage": 66,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            467,
+            333
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l08-text-1",
+      "lesson": 8,
+      "frozenAudioTrack": "8-1",
+      "sourceActivity": "hsk1-original-2026-l08-p055-role-text1-01",
+      "sourceActivityPage": 55,
+      "sourceActivityPages": [
+        55
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l08-scene-01",
+          "file": "hsk1-app/public/source-activities/figures/l08-scene-01.png",
+          "sha256": "6b10588846f6262e564eeafdab9a38ddeea52c41ccb7946d16800a0498d407f0",
+          "printedPage": 55,
+          "pdfPage": 70,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            434,
+            294
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l08-text-2",
+      "lesson": 8,
+      "frozenAudioTrack": "8-3",
+      "sourceActivity": "hsk1-original-2026-l08-p057-role-text2-01",
+      "sourceActivityPage": 57,
+      "sourceActivityPages": [
+        56,
+        57
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l08-scene-02",
+          "file": "hsk1-app/public/source-activities/figures/l08-scene-02.png",
+          "sha256": "52c3b0a0a1b99fda08ba449fa00b17288025a7d31e29aab2061437d14a808e02",
+          "printedPage": 56,
+          "pdfPage": 71,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            609,
+            346
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l08-text-3",
+      "lesson": 8,
+      "frozenAudioTrack": "8-5",
+      "sourceActivity": "hsk1-original-2026-l08-p059-role-text3-01",
+      "sourceActivityPage": 59,
+      "sourceActivityPages": [
+        58,
+        59
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l08-scene-03",
+          "file": "hsk1-app/public/source-activities/figures/l08-scene-03.png",
+          "sha256": "efd8d3798aae78cb1e814ae1f6e5c42b9ee9c32556aa3c4de3c8850d0c14f07c",
+          "printedPage": 58,
+          "pdfPage": 73,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            680,
+            454
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l09-text-1",
+      "lesson": 9,
+      "frozenAudioTrack": "9-1",
+      "sourceActivity": "hsk1-original-2026-l09-p062-role-text1-01",
+      "sourceActivityPage": 62,
+      "sourceActivityPages": [
+        62
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l09-scene-01",
+          "file": "hsk1-app/public/source-activities/figures/l09-scene-01.png",
+          "sha256": "14f2857f91cb82a85fa776a30a7926a297b564a0f086ae9afb344e78378a6be8",
+          "printedPage": 62,
+          "pdfPage": 77,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            457,
+            304
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l09-text-2",
+      "lesson": 9,
+      "frozenAudioTrack": "9-3",
+      "sourceActivity": "hsk1-original-2026-l09-p064-role-text2-01",
+      "sourceActivityPage": 64,
+      "sourceActivityPages": [
+        64
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l09-scene-02",
+          "file": "hsk1-app/public/source-activities/figures/l09-scene-02.png",
+          "sha256": "aa84c86b92e0e0181067151ef9f2568e673249d84cca20da744d0ab333884416",
+          "printedPage": 64,
+          "pdfPage": 79,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            459,
+            230
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l09-text-3",
+      "lesson": 9,
+      "frozenAudioTrack": "9-5",
+      "sourceActivity": "hsk1-original-2026-l09-p066-role-text3-01",
+      "sourceActivityPage": 66,
+      "sourceActivityPages": [
+        66
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l09-scene-03",
+          "file": "hsk1-app/public/source-activities/figures/l09-scene-03.png",
+          "sha256": "c5d154463b0b590a5d02873341a17b1a6eaf6f2e7df20a979baf470147eb18f5",
+          "printedPage": 66,
+          "pdfPage": 81,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            402,
+            214
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l10-text-1",
+      "lesson": 10,
+      "frozenAudioTrack": "10-1",
+      "sourceActivity": "hsk1-original-2026-l10-p071-role-text1-01",
+      "sourceActivityPage": 71,
+      "sourceActivityPages": [
+        71
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l10-scene-01",
+          "file": "hsk1-app/public/source-activities/figures/l10-scene-01.png",
+          "sha256": "0bc9e8f0c1863427f3fa4bec0a65271dedbc9189289de09da62103b484661576",
+          "printedPage": 71,
+          "pdfPage": 86,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            478,
+            328
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l10-text-2",
+      "lesson": 10,
+      "frozenAudioTrack": "10-3",
+      "sourceActivity": "hsk1-original-2026-l10-p073-role-text2-01",
+      "sourceActivityPage": 73,
+      "sourceActivityPages": [
+        73
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l10-scene-02",
+          "file": "hsk1-app/public/source-activities/figures/l10-scene-02.png",
+          "sha256": "455e50980f6d18dc6d6a49fde0d0a4af36ad68a79252958f12082d3c27318ad1",
+          "printedPage": 73,
+          "pdfPage": 88,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            444,
+            395
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l10-text-3",
+      "lesson": 10,
+      "frozenAudioTrack": "10-5",
+      "sourceActivity": "hsk1-original-2026-l10-p075-role-text3-01",
+      "sourceActivityPage": 75,
+      "sourceActivityPages": [
+        75
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l10-scene-03",
+          "file": "hsk1-app/public/source-activities/figures/l10-scene-03.png",
+          "sha256": "7cea09ad5e7746c3f44f312552ca992f8aaf731aec0057a5eca718b968dff6e8",
+          "printedPage": 74,
+          "pdfPage": 89,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            882,
+            374
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l11-text-1",
+      "lesson": 11,
+      "frozenAudioTrack": "11-1",
+      "sourceActivity": "hsk1-original-2026-l11-p079-role-text1-01",
+      "sourceActivityPage": 79,
+      "sourceActivityPages": [
+        79
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l11-scene-01",
+          "file": "hsk1-app/public/source-activities/figures/l11-scene-01.png",
+          "sha256": "47868320fbd302976d49d02539b41a43d2e6113ad32590f2c238dad6738ca192",
+          "printedPage": 79,
+          "pdfPage": 94,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            445,
+            316
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l11-text-2",
+      "lesson": 11,
+      "frozenAudioTrack": "11-3",
+      "sourceActivity": "hsk1-original-2026-l11-p081-role-text2-01",
+      "sourceActivityPage": 81,
+      "sourceActivityPages": [
+        81
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l11-scene-02",
+          "file": "hsk1-app/public/source-activities/figures/l11-scene-02.png",
+          "sha256": "eb0c978527f83420e46dd726b95391a93391ee0b26fa6d3574bed5fa0ad2c68e",
+          "printedPage": 81,
+          "pdfPage": 96,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            409,
+            276
+          ]
+        },
+        {
+          "figureId": "l11-scene-02-inset",
+          "file": "hsk1-app/public/source-activities/figures/l11-scene-02-inset.png",
+          "sha256": "4d8414932081574304a64b00531b87e3bb0e28aebe3f4afe72946b9c76c6c7dd",
+          "printedPage": 81,
+          "pdfPage": 96,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            224,
+            173
+          ],
+          "supplementSource": {
+            "activity": "hsk1-original-2026-l11-p081-scene-inset-2-01",
+            "method": "reviewed same-scene inset reference and exact original page"
+          }
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l11-text-3",
+      "lesson": 11,
+      "frozenAudioTrack": "11-5",
+      "sourceActivity": "hsk1-original-2026-l11-p083-role-text3-01",
+      "sourceActivityPage": 83,
+      "sourceActivityPages": [
+        83
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l11-scene-03",
+          "file": "hsk1-app/public/source-activities/figures/l11-scene-03.png",
+          "sha256": "d72d96c4af75fe31d87c5dfee014e8cd1549edbd3f226fd30e36989abc43460c",
+          "printedPage": 83,
+          "pdfPage": 98,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            312,
+            255
+          ]
+        },
+        {
+          "figureId": "l11-scene-03-inset",
+          "file": "hsk1-app/public/source-activities/figures/l11-scene-03-inset.png",
+          "sha256": "1d4b7069cf728877d2ae32ed43f22f24ffd41c4f4fec9ea3a86b1d94760f2cca",
+          "printedPage": 83,
+          "pdfPage": 98,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            245,
+            149
+          ],
+          "supplementSource": {
+            "activity": "hsk1-original-2026-l11-p083-scene-inset-3-01",
+            "method": "reviewed same-scene inset reference and exact original page"
+          }
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l12-text-1",
+      "lesson": 12,
+      "frozenAudioTrack": "12-1",
+      "sourceActivity": "hsk1-original-2026-l12-p087-text-1-role-reading-01",
+      "sourceActivityPage": 87,
+      "sourceActivityPages": [
+        87
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l12-text-1-photo",
+          "file": "hsk1-app/public/source-activities/figures/l12-text-1-photo.png",
+          "sha256": "550d00fa521a47d9edeea38c1c6ca8850e588e64b593dd1ba868e1d6469e5e08",
+          "printedPage": 87,
+          "pdfPage": 102,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            401,
+            580
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l12-text-2",
+      "lesson": 12,
+      "frozenAudioTrack": "12-3",
+      "sourceActivity": "hsk1-original-2026-l12-p090-text-2-role-reading-01",
+      "sourceActivityPage": 90,
+      "sourceActivityPages": [
+        89
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l12-text-2-photo",
+          "file": "hsk1-app/public/source-activities/figures/l12-text-2-photo.png",
+          "sha256": "a8cba159d546a6a84eb9b53c15fc0b9c82a5a13f3763cc75d219b2e7cad3dd9b",
+          "printedPage": 89,
+          "pdfPage": 104,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            426,
+            545
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l12-text-3",
+      "lesson": 12,
+      "frozenAudioTrack": "12-5",
+      "sourceActivity": "hsk1-original-2026-l12-p091-text-3-role-reading-01",
+      "sourceActivityPage": 91,
+      "sourceActivityPages": [
+        91
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l12-text-3-photo",
+          "file": "hsk1-app/public/source-activities/figures/l12-text-3-photo.png",
+          "sha256": "38a036c9d37a060f47cc0d47b898a126280a8d46d89e81a2174059604b1e4fda",
+          "printedPage": 91,
+          "pdfPage": 106,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            441,
+            252
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l13-text-1",
+      "lesson": 13,
+      "frozenAudioTrack": "13-1",
+      "sourceActivity": "hsk1-original-2026-l13-p096-text-1-role-reading-01",
+      "sourceActivityPage": 96,
+      "sourceActivityPages": [
+        96
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l13-text-1-photo",
+          "file": "hsk1-app/public/source-activities/figures/l13-text-1-photo.png",
+          "sha256": "5f253295dc41f058a4a8c683a033786812958e1beb782c540fe646470bc31341",
+          "printedPage": 96,
+          "pdfPage": 111,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            420,
+            304
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l13-text-2",
+      "lesson": 13,
+      "frozenAudioTrack": "13-3",
+      "sourceActivity": "hsk1-original-2026-l13-p098-text-2-role-reading-01",
+      "sourceActivityPage": 98,
+      "sourceActivityPages": [
+        98
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l13-text-2-photo",
+          "file": "hsk1-app/public/source-activities/figures/l13-text-2-photo.png",
+          "sha256": "9933af56ed8b6d58b277b3e62a8e8f2e1a4245fe4e9eff1cb887127f920a8159",
+          "printedPage": 98,
+          "pdfPage": 113,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            409,
+            418
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l13-text-3",
+      "lesson": 13,
+      "frozenAudioTrack": "13-5",
+      "sourceActivity": "hsk1-original-2026-l13-p100-text-3-role-reading-01",
+      "sourceActivityPage": 100,
+      "sourceActivityPages": [
+        100
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l13-text-3-photo",
+          "file": "hsk1-app/public/source-activities/figures/l13-text-3-photo.png",
+          "sha256": "303bcee67b2b95f2e0447b81e202bc8c93067b3230d3e15c55d6bd31eabe5a8d",
+          "printedPage": 100,
+          "pdfPage": 115,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            467,
+            267
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l14-text-1",
+      "lesson": 14,
+      "frozenAudioTrack": "14-1",
+      "sourceActivity": "hsk1-original-2026-l14-p104-text-1-role-reading-01",
+      "sourceActivityPage": 104,
+      "sourceActivityPages": [
+        104
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l14-text-1-photo",
+          "file": "hsk1-app/public/source-activities/figures/l14-text-1-photo.png",
+          "sha256": "25bea16a08a0e80e5d1a4089af3c191f15fe2798e1a4898f841aed7bf16d33ef",
+          "printedPage": 104,
+          "pdfPage": 119,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            434,
+            227
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l14-text-2",
+      "lesson": 14,
+      "frozenAudioTrack": "14-3",
+      "sourceActivity": "hsk1-original-2026-l14-p107-text-2-role-reading-01",
+      "sourceActivityPage": 107,
+      "sourceActivityPages": [
+        107
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l14-text-2-photo",
+          "file": "hsk1-app/public/source-activities/figures/l14-text-2-photo.png",
+          "sha256": "727034c22e00e2166d05802731c83d5a69e123c9c4d451b48a98331e041a4f11",
+          "printedPage": 106,
+          "pdfPage": 121,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            544,
+            299
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l14-text-3",
+      "lesson": 14,
+      "frozenAudioTrack": "14-5",
+      "sourceActivity": "hsk1-original-2026-l14-p110-text-3-role-reading-01",
+      "sourceActivityPage": 110,
+      "sourceActivityPages": [
+        109
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l14-text-3-photo",
+          "file": "hsk1-app/public/source-activities/figures/l14-text-3-photo.png",
+          "sha256": "da2742c6476a0a59794cef90bff3aad3e22d9dba4a3c50a0d81a523faeee0b9a",
+          "printedPage": 108,
+          "pdfPage": 123,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            548,
+            340
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l15-text-1",
+      "lesson": 15,
+      "frozenAudioTrack": "15-1",
+      "sourceActivity": "hsk1-original-2026-l15-p113-text-1-role-reading-01",
+      "sourceActivityPage": 113,
+      "sourceActivityPages": [
+        113
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l15-text-1-photo",
+          "file": "hsk1-app/public/source-activities/figures/l15-text-1-photo.png",
+          "sha256": "979e7aaadc62fc8f48e2196c11816f6f00bcb90be146dbcc565c484f860f7d17",
+          "printedPage": 113,
+          "pdfPage": 128,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            447,
+            272
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l15-text-2",
+      "lesson": 15,
+      "frozenAudioTrack": "15-3",
+      "sourceActivity": "hsk1-original-2026-l15-p115-text-2-role-reading-01",
+      "sourceActivityPage": 115,
+      "sourceActivityPages": [
+        115
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l15-text-2-photo",
+          "file": "hsk1-app/public/source-activities/figures/l15-text-2-photo.png",
+          "sha256": "eedc5efd92e1bd98116571b14fdbbadfa93d81bafd98eae3c1eb48cbb75e3c1f",
+          "printedPage": 115,
+          "pdfPage": 130,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            359,
+            612
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "textbook-l15-text-3",
+      "lesson": 15,
+      "frozenAudioTrack": "15-5",
+      "sourceActivity": "hsk1-original-2026-l15-p117-text-3-role-reading-01",
+      "sourceActivityPage": 117,
+      "sourceActivityPages": [
+        117
+      ],
+      "sourceSceneIdentityExactMatch": true,
+      "runtimeFullyResolved": true,
+      "figures": [
+        {
+          "figureId": "l15-text-3-photo",
+          "file": "hsk1-app/public/source-activities/figures/l15-text-3-photo.png",
+          "sha256": "178b9fd82aff164b455030c0e37dbf49ba218e63a0ba9307ef254cac7d50d0e2",
+          "printedPage": 116,
+          "pdfPage": 131,
+          "originalCropSourceAndBBoxExactLedgerMatch": true,
+          "actualPNGBytesMatchSHA256": true,
+          "dimensions": [
+            889,
+            706
+          ]
+        }
+      ]
+    }
+  ],
+  "scopeLimits": [
+    "Reuse previous independent original-page/crop semantic acceptance; not a fresh 48-crop PDF reread or recrop",
+    "No full official Vietnamese edition alignment",
+    "No human listening or physical-device certification",
+    "Native image loading, layout and accessibility remain root browser gates"
+  ],
+  "additionalIndependentReviewer": {
+    "reviewer": "qa_hsk1_05_08",
+    "scope": "12 L5-L8 scenes against previously accepted original crops, candidate/runtime JSON and public crop SHA; read-only",
+    "ledgerSHA256": "a59b12012987bcda15817b3905311ebaedd2651c98fbf2e994ad50a1417dbfc7",
+    "status": "accepted",
+    "sourceReviewBoundary": "No fresh all-page reread claimed"
+  },
+  "staticRendererReview": {
+    "originalFigureGalleryUsesOriginalTextVisibility": true,
+    "imagePathsFromFixedSourceDirectory": true,
+    "imageAltFromReviewedSourceFigure": true,
+    "captionPrintedPageFromCropSource": true,
+    "hiddenGalleryCSSDisplayNone": true,
+    "nativeImageAndAccessibilityGate": "root-browser-test-pending"
+  }
+}

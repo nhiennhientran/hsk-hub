@@ -1,5 +1,65 @@
 {
-  "status": "candidate-author-checks-only-independent-review-pending",
+  "status": "candidate-author-final-checks-complete-independent-review-pending",
+  "candidateVersion": "source-resume-20261004-candidate-2",
+  "authorReviewDate": "2026-10-04",
+  "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+  "answerBookSHA256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+  "visualReview": {
+    "textbookPdfPages": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "textbookPrintedPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "answerPdfPages": [
+      1
+    ],
+    "authorRecheckedAllPages": true,
+    "claimIndependentAcceptance": false,
+    "officialVietnameseFullAudit": false,
+    "humanListeningReview": false
+  },
+  "structuralChecks": [
+    "unique-activity-and-field-ids",
+    "printed-pdf-offset-and-cross-page-provenance",
+    "row-column-topology",
+    "field-references",
+    "official-answer-only-grading",
+    "figure-reference-and-sha256",
+    "all-17-printed-pages-covered"
+  ],
   "lessons": [
     {
       "lesson": 1,
@@ -7,8 +67,24 @@
       "fields": 2,
       "officialAnswerFields": 0,
       "ungradedFields": 2,
+      "optionalFields": 2,
+      "requiredUngradedFields": 0,
       "figures": 3,
-      "sourcePages": 4
+      "sourcePages": 4,
+      "candidateSHA256": "63ee9b873770784634cf7b7cd865c61663f185a6c91e08b4d576da6386644ab4",
+      "sourcePrintedPages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sourcePdfPages": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "crossPageActivities": []
     },
     {
       "lesson": 2,
@@ -16,8 +92,38 @@
       "fields": 3,
       "officialAnswerFields": 0,
       "ungradedFields": 3,
+      "optionalFields": 3,
+      "requiredUngradedFields": 0,
       "figures": 4,
-      "sourcePages": 5
+      "sourcePages": 5,
+      "candidateSHA256": "1f96a8e7924da5f755c7f656cac5887e90cfa9706a007ff00e00dadedee90853",
+      "sourcePrintedPages": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sourcePdfPages": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "crossPageActivities": [
+        {
+          "id": "hsk1-original-2026-l02-p006-text-1-reading-01",
+          "printedPages": [
+            5,
+            6
+          ],
+          "pdfPages": [
+            20,
+            21
+          ]
+        }
+      ]
     },
     {
       "lesson": 3,
@@ -25,8 +131,79 @@
       "fields": 38,
       "officialAnswerFields": 5,
       "ungradedFields": 33,
+      "optionalFields": 24,
+      "requiredUngradedFields": 9,
       "figures": 5,
-      "sourcePages": 8
+      "sourcePages": 8,
+      "candidateSHA256": "ccd76ad50a2dc66dcea0a5a97a72c67d76c6e36e20beeb543824d6dc2e161103",
+      "sourcePrintedPages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sourcePdfPages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "crossPageActivities": [
+        {
+          "id": "hsk1-original-2026-l03-p014-text-3-reading-01",
+          "printedPages": [
+            13,
+            14
+          ],
+          "pdfPages": [
+            28,
+            29
+          ]
+        },
+        {
+          "id": "hsk1-original-2026-l03-p014-grammar-reading-04",
+          "printedPages": [
+            14,
+            15
+          ],
+          "pdfPages": [
+            29,
+            30
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "integrationDependencies": [
+    {
+      "item": "L3-p17-empty-first-table-header",
+      "requirement": "Allow table columns with both zh and vi empty; preserve strict nonempty Copy validation elsewhere. Root owns engine change and browser validation."
+    }
+  ],
+  "pending": [
+    "Independent reviewer acceptance of these final candidate hashes.",
+    "Runtime catalogue integration and browser acceptance.",
+    "Printed tongue-twister track linking 1-7/2-7/3-7.",
+    "Complete official Vietnamese comparison in phase 2."
+  ],
+  "pinyinProvenance": {
+    "printedDialogueAndTongueTwisters": "Transcribed from original source, including L2 p7 bù and L3 p14 bú.",
+    "editorialGrammarAidActivityIds": [
+      "hsk1-original-2026-l02-p008-grammar-reading-01",
+      "hsk1-original-2026-l03-p011-grammar-reading-01",
+      "hsk1-original-2026-l03-p011-grammar-reading-02",
+      "hsk1-original-2026-l03-p012-grammar-reading-03",
+      "hsk1-original-2026-l03-p014-grammar-reading-04"
+    ],
+    "printedVocabulary": "Source pinyin and source POS preserved in their own context.",
+    "note": "L2 p7 prints bù before shì; spoken sandhi is bú. This candidate preserves the printed form per root decision; no UI claim of printed bú."
+  }
 }

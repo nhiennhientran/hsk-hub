@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "checkedAt": "2026-10-04T15:41:29.798118+00:00",
+  "target": {
+    "name": "新HSK教程3(HSK3.0) (郭风岚,汤旭) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "size_bytes": 75121060,
+    "sha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+    "expected_pages": 212,
+    "printedToPdfOffset": 12,
+    "library_file_id": "libfile_ffde15d98ec48191a117bb239439fe39",
+    "file_id": "file_00000000a36081fb887efeb76ce50ce7"
+  },
+  "grounding": "Expected filename, size, hash, page count and offset read from course-app/docs/source-inventory.json. Library metadata agrees with filename/size and the exact source identifiers.",
+  "searches": [
+    {
+      "surface": "Library",
+      "titleQueries": [
+        "\"新HSK教程3(HSK3.0) (郭风岚,汤旭) (z-library.sk, 1lib.sk, z-lib.sk).pdf\"",
+        "\"新HSK教程3\""
+      ],
+      "top_k": 30,
+      "result": "Only one original-Chinese target PDF found. Related answer/audio items are separate source files, not substitutes."
+    },
+    {
+      "surface": "local scratch",
+      "scope": "HSK/hsk-labelled PDF and HSK archives only",
+      "result": "No original Chinese HSK3 PDF copy found; newly uploaded official Vietnamese HSK3 is a distinct file/edition/hash."
+    },
+    {
+      "surface": "Library",
+      "titleQueries": [
+        "\"HSK3\"",
+        "\"新HSK\"",
+        "\"hsk-hub\"",
+        "\"HSK123\""
+      ],
+      "top_k": 100,
+      "next_cursor": null,
+      "result": "Same single original-Chinese target. No alternate original PDF identified. Small named baseline/corpus archives were not read and are not verified copies of the target."
+    }
+  ],
+  "materialization": {
+    "method": "Current official Library helper, fetched unchanged with both companion helpers into a new private directory; complete unchanged search result selected index000 via stdin.",
+    "attemptsThisAgent": 1,
+    "result": "failed",
+    "error": "library download request failed: download failed with HTTP status 502",
+    "sourceBytesRecovered": false,
+    "targetSHA256Verified": false
+  },
+  "priorAgentObservations": {
+    "provenance": "Reported by /root/hsk23_remaining_source, not independently reread here.",
+    "materializationAttempts": 2,
+    "materializationError": "HTTP502",
+    "pageReadBackingReportedPages": 150,
+    "pageReadAcceptedAsOriginal": false
+  },
+  "status": "blocked-original-Chinese-HSK3-materialization",
+  "limits": [
+    "No source file is available whose whole-file SHA256 can be matched to the original source inventory.",
+    "The reported150-page extracted backing must not be treated as the expected212-page original.",
+    "No direct URLs were synthesized or downloaded; no32MiB download_file route used.",
+    "No textbook/content/engine changes, source replacement, Library writes or remote mutations performed."
+  ],
+  "nextDecision": "Root has separately authorized the source-review agent to use Chinese/pinyin/POS/numbering printed in the local newly uploaded official Vietnamese HSK3 as additional evidence with its own SHA/version. This is not recovery or byte-equivalence of the original Chinese textbook. Original-Chinese/English appendices remain explicitly blocked pending the original source."
+}

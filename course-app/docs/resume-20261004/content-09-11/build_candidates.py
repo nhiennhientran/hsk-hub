@@ -14,7 +14,11 @@ def C(z,v):return {'zh':z,'vi':v}
 def src(page,section,n=1):return dict(sourceRevision='hsk1-print-2026-01',textbookSHA256=TH,printedPage=page,pdfPage=page+15,section=section,ordinal=n)
 def new(lesson):return dict(schema=1,edition='hsk1-print-2026-01',lesson=lesson,version=VERSION,scope=f'lesson-{lesson}-candidate',textbookSHA256=TH,answerBookSHA256=AH,editorialStatus='candidate-awaiting-independent-review',activities=[],figures=[],coverage=[],textbookCorrections=[])
 def act(d,p,s,n,kind,title,instruction,prompt,fields=None,**kw):
- a=dict(id=f'hsk1-original-2026-l{d["lesson"]:02}-p{p:03}-{s}-{n:02}',version=VERSION,lesson=d['lesson'],kind=kind,source=src(p,s,n),title=title,instruction=instruction,prompt=prompt,fields=fields or [],**kw);d['activities'].append(a);return a
+ ident=f'hsk1-original-2026-l{d["lesson"]:02}-p{p:03}-{s}-{n:02}'
+ reviewed=kind=='pair-work' or ident=='hsk1-original-2026-l09-p067-cloze-01'
+ if kind=='pair-work':
+  for f in fields or []:f['required']=False
+ a=dict(id=ident,version='source-resume-20261004-reviewed-2' if reviewed else VERSION,lesson=d['lesson'],kind=kind,source=src(p,s,n),title=title,instruction=instruction,prompt=prompt,fields=fields or [],**kw);d['activities'].append(a);return a
 def opts(items):return [dict(id=chr(65+i),zh=z,py=p,vi=v) for i,(z,p,v) in enumerate(items)]
 def answer(i,options,key,ap,section,ordinal):return dict(id=f'blank-{i}',label=C(f'第{i}空',f'Chỗ trống {i}'),input='select',options=options,assessment='answer-key',answer=key,answerSource=dict(sha256=AH,pdfPage=ap,section=section,ordinal=ordinal))
 def free(i,ref=None,label=None,input='text',note=None,required=True):
@@ -75,7 +79,7 @@ listen(d,65,3,1,C('杨同乐唱歌（　）。','Dương Đồng Lạc hát (　
 listen(d,65,3,2,C('王一雪家有一只（　）。','Nhà Vương Nhất Tuyết có một con (　).'),[('小猫','xiǎo māo','mèo con'),('小狗','xiǎo gǒu','chó con'),('大狗','dà gǒu','chó lớn')],'B',6)
 scene_role(d,66,3)
 comprehension(d,66,3,[(C('杨同乐星期六做什么？','Thứ Bảy Dương Đồng Lạc làm gì?'),C('他白天在家里读书，晚上和朋友们去外边唱歌。','Ban ngày anh ấy đọc sách ở nhà, buổi tối ra ngoài hát cùng bạn bè.')),(C('王一雪星期六做什么？','Thứ Bảy Vương Nhất Tuyết làm gì?'),C('她在家里做饭、看电视，和孩子们、小狗玩。','Cô ấy nấu ăn, xem ti vi ở nhà, chơi với các con và chó con.'))])
-cloze(d,67,[('是','shì','là'),('好听','hǎotīng','hay (âm thanh)'),('在学校','zài xuéxiào','ở trường'),('今天上午','jīntiān shàngwǔ','sáng nay'),('椅子','yǐzi','ghế')],[(C('＿＿上有一只小狗，房间外＿＿一只小狗。','Trên ＿＿ có một con chó con, ngoài phòng ＿＿ một con chó con.'),'EA'),(C('她＿＿在家里学习。','＿＿ cô ấy học ở nhà.'),'D'),(C('王一雪：你唱歌很＿＿。\n杨同乐：谢谢！','Vương Nhất Tuyết: Bạn hát rất ＿＿.\nDương Đồng Lạc: Cảm ơn!'),'B'),(C('陈天中：你下午去哪儿？\n安妮：我下午还＿＿上课。','Trần Thiên Trung: Chiều nay bạn đi đâu?\nAnnie: Chiều nay tôi vẫn học ＿＿.'),'C')],[6,7,7,7])
+cloze(d,67,[('是','shì','là'),('好听','hǎotīng','hay (âm thanh)'),('在学校','zài xuéxiào','ở trường'),('今天上午','jīntiān shàngwǔ','sáng nay'),('椅子','yǐzi','ghế')],[(C('＿＿上有一只小猫，房间外＿＿一只小狗。','Trên ＿＿ có một con mèo con, ngoài phòng ＿＿ một con chó con.'),'EA'),(C('她＿＿在家里学习。','＿＿ cô ấy học ở nhà.'),'D'),(C('王一雪：你唱歌很＿＿。\n杨同乐：谢谢！','Vương Nhất Tuyết: Bạn hát rất ＿＿.\nDương Đồng Lạc: Cảm ơn!'),'B'),(C('陈天中：你下午去哪儿？\n安妮：我下午还＿＿上课。','Trần Thiên Trung: Chiều nay bạn đi đâu?\nAnnie: Chiều nay tôi vẫn học ＿＿.'),'C')],[6,7,7,7])
 picture(d,67,1,(171,542,461,711),C('桌子上＿＿。','Trên bàn ＿＿.'),[C('有一本书','có một quyển sách')],C('桌上有书、杯子和瓶子。','Trên bàn có sách, cốc và chai.'))
 picture(d,67,2,(494,542,784,711),C('孩子们＿＿在家里＿＿。','Bọn trẻ ＿＿ ở nhà ＿＿.'),[C('今天下午','chiều nay'),C('看电视','xem ti vi')],C('几个孩子在室内看屏幕。','Vài đứa trẻ đang xem màn hình trong nhà.'))
 picture(d,67,3,(171,795,461,963),C('＿＿一只小狗是我的，＿＿二只小狗是她的。','Con chó con ＿＿ nhất là của tôi, con chó con ＿＿ hai là của cô ấy.'),[C('第','thứ'),C('第','thứ')],C('两只小狗并排。','Hai con chó con ở cạnh nhau.'))

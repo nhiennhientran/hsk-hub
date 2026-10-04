@@ -1,0 +1,380 @@
+{
+  "reviewer": "qa_hsk1_01_03",
+  "reviewedAt": "2026-10-04T15:49:39.666224+00:00",
+  "status": "accepted-independent-current-source-and-static-history-review",
+  "currentFile": "hsk1-app/content/source-activities/lesson-04-current.json",
+  "currentSHA256": "dc89c47d7d5e141f628425017af88cd93ebd2f3dba81c8bcaea754f09f0e772e",
+  "archivedFile": "hsk1-app/content/source-activities/lesson-04.json",
+  "archivedSHA256": "c59eec5284422b59896f0dbb36f7e0bd37d5d13c28a579bc3e3e6c85aa61af21",
+  "baselineCommit": "387aa7b6145e80f983f331d8b55cd2b2b26d6990",
+  "archivedWholeFileExactBaselineBytes": true,
+  "archivedSourceV2Activities": 21,
+  "archivedSourceV2RawProtection": "Whole archived lesson JSON remains byte-identical to git baseline; all 21 source-v2 raw objects and their serialization are consequently unchanged.",
+  "activityIdsAndOrderPreserved": 36,
+  "changedActivityCount": 13,
+  "unchangedActivityObjects": 23,
+  "changedActivities": [
+    {
+      "id": "hsk1-original-2026-l04-p018-warmup-01",
+      "changedPaths": [
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-warmup-01"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p018-warmup-02",
+      "changedPaths": [
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-warmup-02"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p018-warmup-03",
+      "changedPaths": [
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-warmup-03"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p018-warmup-04",
+      "changedPaths": [
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-warmup-04"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p018-warmup-05",
+      "changedPaths": [
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-warmup-05"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p018-warmup-06",
+      "changedPaths": [
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-warmup-06"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p025-picture-01",
+      "changedPaths": [
+        "/fields/0/feedbackNote/vi",
+        "/fields/0/feedbackNote/zh",
+        "/fields/0/referenceProvenance",
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-picture-01"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p025-picture-02",
+      "changedPaths": [
+        "/fields/0/referenceProvenance",
+        "/fields/1/referenceProvenance",
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-picture-02"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p026-picture-03",
+      "changedPaths": [
+        "/fields/0/referenceProvenance",
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-picture-03"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p026-picture-04",
+      "changedPaths": [
+        "/fields/0/referenceProvenance",
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-picture-04"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p019-text1-read-role-01",
+      "changedPaths": [
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-text1"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p022-text2-role-01",
+      "changedPaths": [
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-text2"
+    },
+    {
+      "id": "hsk1-original-2026-l04-p025-text3-role-01",
+      "changedPaths": [
+        "/figure",
+        "/figureSHA256",
+        "/version"
+      ],
+      "figure": "l04-text3"
+    }
+  ],
+  "unchangedActivityIds": [
+    "hsk1-original-2026-l04-p021-listen-text2-01",
+    "hsk1-original-2026-l04-p021-listen-text2-02",
+    "hsk1-original-2026-l04-p024-listen-text3-01",
+    "hsk1-original-2026-l04-p024-listen-text3-02",
+    "hsk1-original-2026-l04-p025-cloze-01",
+    "hsk1-original-2026-l04-p025-cloze-02",
+    "hsk1-original-2026-l04-p025-cloze-03",
+    "hsk1-original-2026-l04-p025-cloze-04",
+    "hsk1-original-2026-l04-p023-complete-dialogues-01",
+    "hsk1-original-2026-l04-p023-complete-dialogues-02",
+    "hsk1-original-2026-l04-p026-classroom-01",
+    "hsk1-original-2026-l04-p020-grammar1-read-01",
+    "hsk1-original-2026-l04-p022-text2-pair-01",
+    "hsk1-original-2026-l04-p023-grammar3-read-01",
+    "hsk1-original-2026-l04-p023-grammar4-read-01",
+    "hsk1-original-2026-l04-p025-text3-questions-01",
+    "hsk1-original-2026-l04-p025-text3-questions-02",
+    "hsk1-original-2026-l04-p018-objectives-01",
+    "hsk1-original-2026-l04-p019-grammar1-explanation-01",
+    "hsk1-original-2026-l04-p020-numbers-explanation-01",
+    "hsk1-original-2026-l04-p023-ne-explanation-01",
+    "hsk1-original-2026-l04-p023-classifier-explanation-01",
+    "hsk1-original-2026-l04-p024-age-tips-01"
+  ],
+  "approvedCropMappings": [
+    {
+      "crop": "warmup-01",
+      "figure": "l04-warmup-01",
+      "activity": "hsk1-original-2026-l04-p018-warmup-01",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-warmup-01.png",
+      "sha256": "1d8f6de69a77b931a912955a7eb055d504aa9f4b700493ddd2ed2e14f985a0c7",
+      "sourcePrintedPage": 18,
+      "sourcePDFPage": 33,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "warmup-02",
+      "figure": "l04-warmup-02",
+      "activity": "hsk1-original-2026-l04-p018-warmup-02",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-warmup-02.png",
+      "sha256": "9e3a1180fa1cb66e22cd35c3ce56a9ff0e2396ae6cfb154fe7273e8ed8492344",
+      "sourcePrintedPage": 18,
+      "sourcePDFPage": 33,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "warmup-03",
+      "figure": "l04-warmup-03",
+      "activity": "hsk1-original-2026-l04-p018-warmup-03",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-warmup-03.png",
+      "sha256": "2d08fadf7764ebbf6cfcb9fb22aac10ffd4d9984edf88f18a27401e9ff83af9d",
+      "sourcePrintedPage": 18,
+      "sourcePDFPage": 33,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "warmup-04",
+      "figure": "l04-warmup-04",
+      "activity": "hsk1-original-2026-l04-p018-warmup-04",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-warmup-04.png",
+      "sha256": "74825f217509b7eb8c243127f0c83b739d570d8d9317b259c15662d2f44b0348",
+      "sourcePrintedPage": 18,
+      "sourcePDFPage": 33,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "warmup-05",
+      "figure": "l04-warmup-05",
+      "activity": "hsk1-original-2026-l04-p018-warmup-05",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-warmup-05.png",
+      "sha256": "32eabf543957fffa567cfcc1bd1466463ec3d9355debb9b8e80e13061ff5a4de",
+      "sourcePrintedPage": 18,
+      "sourcePDFPage": 33,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "warmup-06",
+      "figure": "l04-warmup-06",
+      "activity": "hsk1-original-2026-l04-p018-warmup-06",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-warmup-06.png",
+      "sha256": "62dfd27323f63b945a71f4fff6a1cb8909d1ac4a840bb5f371a5c53e49bd7c7c",
+      "sourcePrintedPage": 18,
+      "sourcePDFPage": 33,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "picture-01",
+      "figure": "l04-picture-01",
+      "activity": "hsk1-original-2026-l04-p025-picture-01",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-picture-01.png",
+      "sha256": "a47abecd9bd87b3ebcc9d764149b95d466f05ced4312827bfbf43b5ccb2973d3",
+      "sourcePrintedPage": 25,
+      "sourcePDFPage": 40,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "picture-02",
+      "figure": "l04-picture-02",
+      "activity": "hsk1-original-2026-l04-p025-picture-02",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-picture-02.png",
+      "sha256": "426ab69013e1eca3e76987b2b2f4159e5719b28134d473a6b138537ffe306c45",
+      "sourcePrintedPage": 25,
+      "sourcePDFPage": 40,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "picture-03",
+      "figure": "l04-picture-03",
+      "activity": "hsk1-original-2026-l04-p026-picture-03",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-picture-03.png",
+      "sha256": "3eb510a6df22b6870a779adef888a1a71f748c5aa1a03f9ab3a3ffda8cedbc2c",
+      "sourcePrintedPage": 26,
+      "sourcePDFPage": 41,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "picture-04",
+      "figure": "l04-picture-04",
+      "activity": "hsk1-original-2026-l04-p026-picture-04",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-picture-04.png",
+      "sha256": "2e0435262a2a64ae4fac0327601c28b783da7f3ff5064c21420a54df2ff79b61",
+      "sourcePrintedPage": 26,
+      "sourcePDFPage": 41,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "text1",
+      "figure": "l04-text1",
+      "activity": "hsk1-original-2026-l04-p019-text1-read-role-01",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-text1.png",
+      "sha256": "9c71a8787389f5e5faee6d9336eb1b9481210549c75186df052eeff2d3cf4e0f",
+      "sourcePrintedPage": 19,
+      "sourcePDFPage": 34,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "text2",
+      "figure": "l04-text2",
+      "activity": "hsk1-original-2026-l04-p022-text2-role-01",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-text2.png",
+      "sha256": "4affdc8bde96102b1a8e9ce0f414d47bcfa94bdb693fc0c3058456f377045e02",
+      "sourcePrintedPage": 22,
+      "sourcePDFPage": 37,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    },
+    {
+      "crop": "text3",
+      "figure": "l04-text3",
+      "activity": "hsk1-original-2026-l04-p025-text3-role-01",
+      "publicFile": "hsk1-app/public/source-activities/figures/l04-text3.png",
+      "sha256": "6a8c41c3af5e8019d0cd755b374f10f56a03afa6df677596496d7c0a5deec0df",
+      "sourcePrintedPage": 24,
+      "sourcePDFPage": 39,
+      "bboxExactMatch": true,
+      "bytesExactApprovedCrop": true
+    }
+  ],
+  "archivedSVGProtection": [
+    {
+      "file": "hsk1-app/content/source-activities/figures/warmup-01.svg",
+      "sha256": "ed2d54ba33599303fcadbd979bde85fa4eff24e586f405609fe4d7b24dc0fbb4",
+      "baselineBytesUnchanged": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/figures/warmup-02.svg",
+      "sha256": "b8928b1bb57395114a9fa1b83c8ce1fcdbdcc8f129cdd6368cb7a77302557515",
+      "baselineBytesUnchanged": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/figures/warmup-03.svg",
+      "sha256": "53b2ddbe1cb9ecd7be66329589b9b1856261041c43306a83c605cbb1e7b448b3",
+      "baselineBytesUnchanged": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/figures/warmup-04.svg",
+      "sha256": "d4065b4b5c5ad802149751001168f316bc911e3c10d0853a322342d231e71ddf",
+      "baselineBytesUnchanged": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/figures/warmup-05.svg",
+      "sha256": "470ce8507e80529f4f3bf923164f2bbea58d8ae8f85f32cda73a28b5385182e3",
+      "baselineBytesUnchanged": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/figures/warmup-06.svg",
+      "sha256": "9b8050952eeeec6654656e67042283e952dba91fcc0f0ca0ba8d6b799d167f2e",
+      "baselineBytesUnchanged": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/figures/picture-01.svg",
+      "sha256": "233ca90a60f2755392032b139d63ed483c8e328ec3206480e8d5fd5d622019c1",
+      "baselineBytesUnchanged": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/figures/picture-02.svg",
+      "sha256": "411de86dc787638012f3eb0023dbf0ab8a4bc44dc9860fb68be3cfca1a291ac2",
+      "baselineBytesUnchanged": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/figures/picture-03.svg",
+      "sha256": "cdaff6cad8f62f75028b5ae235c87dfa225c3ba80bbd2d327de7ec43d32b5fbe",
+      "baselineBytesUnchanged": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/figures/picture-04.svg",
+      "sha256": "ba40245e5a515240ce49378f4575b78555f43e773a3a68e7600ea983a4172867",
+      "baselineBytesUnchanged": true
+    }
+  ],
+  "openPictureReview": {
+    "count": 4,
+    "allUngraded": true,
+    "referenceProvenance": "editorial-model-not-official-answer",
+    "visibleContentAltsAvoidUnsupportedAgeAndRelationshipClaims": true,
+    "picture1VisiblePeople": 6,
+    "picture2RelationNotVisuallyCertified": true,
+    "picture3ActualAgeNotPrinted": true,
+    "picture4PerspectiveDependentSiblingReference": true
+  },
+  "sourceCropReview": "crop-review.json",
+  "scopeLimits": [
+    "No full official Vietnamese edition alignment",
+    "No human audio listening or physical device certification",
+    "Runtime history routing, saved attempts and browser display remain root behavioral test gates"
+  ]
+}

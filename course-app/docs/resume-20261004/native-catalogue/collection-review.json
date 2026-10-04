@@ -1,0 +1,557 @@
+{
+  "purpose": "Collection identity retention; not execution success",
+  "projects": [
+    "chromium",
+    "webkit"
+  ],
+  "catalogueCasesPerProjectPerHost": 63,
+  "catalogueBothHostsBothProjects": 252,
+  "oldMainCohort": {
+    "unified": 558,
+    "modular": 42,
+    "combined": 600,
+    "removed": []
+  },
+  "hosts": {
+    "unified": {
+      "beforeCollected": 672,
+      "afterCollected": 684,
+      "retainedBefore": 672,
+      "removed": [],
+      "newIdentities": [
+        [
+          "chromium",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue L4 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue L4 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue L4 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue L4 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue headerless month and weekday examples remain read only"
+        ],
+        [
+          "chromium",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue optional self assessment permits blanks without grading"
+        ],
+        [
+          "webkit",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue L4 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue L4 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue L4 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue L4 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue headerless month and weekday examples remain read only"
+        ],
+        [
+          "webkit",
+          "../../../hsk1-app/tests/browser/source-catalogue-cases.ts",
+          "unified HSK1 source catalogue optional self assessment permits blanks without grading"
+        ]
+      ],
+      "beforeSHA256": "b4db49cabec1c2dfd4a92af023e1855b0f9786121c1c70db13fe6721f194ccd9",
+      "afterSHA256": "2d09902d8a761a760c5e2f237f1fe529c07a54b3993801ad238e7e81599466fb"
+    },
+    "modular": {
+      "beforeCollected": 360,
+      "afterCollected": 452,
+      "retainedBefore": 360,
+      "removed": [],
+      "newIdentities": [
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L1 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L1 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L1 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L1 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L10 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L10 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L10 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L10 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L11 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L11 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L11 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L11 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L13 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L13 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L13 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L13 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L14 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L14 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L14 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L14 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L15 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L15 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L15 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L15 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L2 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L2 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L2 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L2 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L3 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L3 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L3 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L3 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L4 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L4 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L4 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L4 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L5 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L5 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L5 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L5 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L8 complete DOM at 1440"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L8 complete DOM at 320"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L8 complete DOM at 390"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L8 complete DOM at 768"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue headerless month and weekday examples remain read only"
+        ],
+        [
+          "chromium",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue optional self assessment permits blanks without grading"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L1 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L1 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L1 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L1 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L10 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L10 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L10 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L10 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L11 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L11 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L11 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L11 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L13 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L13 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L13 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L13 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L14 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L14 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L14 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L14 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L15 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L15 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L15 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L15 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L2 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L2 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L2 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L2 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L3 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L3 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L3 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L3 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L4 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L4 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L4 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L4 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L5 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L5 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L5 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L5 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L8 complete DOM at 1440"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L8 complete DOM at 320"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L8 complete DOM at 390"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue L8 complete DOM at 768"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue headerless month and weekday examples remain read only"
+        ],
+        [
+          "webkit",
+          "source-catalogue-cases.ts",
+          "modular HSK1 source catalogue optional self assessment permits blanks without grading"
+        ]
+      ],
+      "beforeSHA256": "bf105a934a94aab44b309d072c720cd3f1547c0c6248089e3e51979efe1beaa0",
+      "afterSHA256": "20ff6f1b7f34c25b815d7cba3dc2d5b0649b77f8181813c3b7fa0bf4481a7142"
+    }
+  }
+}

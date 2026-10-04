@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-10-04T15:52:19.039346+00:00",
+  "authoredFiles": [
+    {
+      "path": "hsk1-app/src/services/source-activities/scene-figures.ts",
+      "sha256": "230617e627d65df37127ad918adf0f7f7a7647ed350a6aef999c4e93d4dc8e20"
+    },
+    {
+      "path": "hsk1-app/src/features/textbook/text.ts",
+      "sha256": "4858677c9840db097e8dfae0ea6180c725ebd33dbadc8bd2ea27933454b84330"
+    },
+    {
+      "path": "hsk1-app/src/features/textbook/textbook.css",
+      "sha256": "6c6328fb5b52391fe7411fb898b2aed9ea88b1a544a9e02221ec578452fdb14f"
+    },
+    {
+      "path": "hsk1-app/tests/textbook-scene-navigation.test.mjs",
+      "sha256": "4721544ac3c5476a1641f90786fc97da38776aa92a2e0df8078101569bea8628"
+    }
+  ],
+  "verification": {
+    "unitCommand": "node --experimental-strip-types --test tests/textbook-scene-navigation.test.mjs",
+    "cwd": "hsk1-app",
+    "result": "4 passed, 0 failed",
+    "typecheckCommand": "npm run check",
+    "typecheckCwd": "hsk1-app",
+    "typecheckExit": 0,
+    "independentSceneMappingReview": "pending",
+    "nativeImageLoadAndHiddenAccessibilityReview": "pending",
+    "runtimeResolverAtCheck": {
+      "expectedScenes": 45,
+      "fullyResolved": 45,
+      "crops": 48,
+      "missing": []
+    }
+  },
+  "limitations": [
+    "Root current-L4 catalogue and shared-host crop sync are now present; scene resolver all 45/48 validated.",
+    "Native image loading/hidden-accessibility and independent scene mapping remain pending.",
+    "No human listening, pronunciation/tone or physical-device certification."
+  ]
+}

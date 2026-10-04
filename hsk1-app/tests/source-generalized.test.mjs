@@ -16,7 +16,24 @@ test('unchanged pilot snapshots retain their exact historical JSON shape and key
     const previous={title:a.title,instruction:a.instruction,prompt:a.prompt,source:a.source,kind:a.kind,fields:a.fields,...(a.figure?{figure:a.figure,figureSHA256:a.figureSHA256}:{}),...(a.pinyin?{pinyin:a.pinyin}:{}),...(a.audio?{audio:a.audio}:{}),...(a.example?{example:a.example}:{})};
     assert.equal(JSON.stringify(snapshotContext(a)),JSON.stringify(previous));
   }
-  assert.equal(getSourceLesson(4),sourceLesson);assert.equal(getSourceLesson(-1),undefined);
+  assert.notEqual(getSourceLesson(4),sourceLesson);
+  assert.deepEqual(getSourceLesson(4).activities.map(a=>a.id),sourceLesson.activities.map(a=>a.id));
+  assert.equal(getSourceLesson(-1),undefined);
+});
+
+test('real source-v2 receipts retain their schematic context after original-crop revision and new submission',async()=>{
+  const {session,store}=setup(),old=sourceLesson.activities[0],current=getSourceLesson(4).activities.find(a=>a.id===old.id);
+  assert.equal(old.version,'source-v2');assert.notEqual(current.version,old.version);
+  assert.equal((await session.submit(old,{'blank-1':'D'})).ok,true);
+  const oldBytes=JSON.stringify(store.snapshot().data.records[key(old)]);
+  assert.equal((await session.submit(current,{'blank-1':'A'})).ok,true);
+  const data=store.snapshot().data;
+  assert.equal(JSON.stringify(data.records[key(old)]),oldBytes);
+  assert.equal(data.records[key(old)].context.figure,'warmup-01');
+  assert.equal(data.records[key(current)].context.figure,'l04-warmup-01');
+  assert.equal(data.records[key(current)].history.length,1);
+  assert.deepEqual(archivedSourceRecords(data,4,getSourceLesson(4).activities).map(row=>row.version),['source-v2']);
+  assert.deepEqual(validateSourceData(JSON.parse(JSON.stringify(data))),data);session.dispose();
 });
 
 test('table topology, source spans, optional fields and crop digests survive round trips and freeze with their version',()=>{
@@ -52,6 +69,24 @@ test('crop assets resolve only within the fixed public source directory',()=>{
   for(const file of ['../private.png','figures/../private.png','figures//x.png','https://evil.test/x.png','figures/a.svg','figures/a.png?x=1','figures/%2fprivate.png','/figures/a.png','figures/a\\b.png'])assert.equal(sourceFigureAssetPath({...figure,file}),undefined);
 });
 
+test('printed empty table headers round trip without allowing missing lesson or field copy',()=>{
+  const a=activity();a.table.columns[0]=copy('','');const d=record(a);assert.deepEqual(validateSourceData(d),d);
+  for(const mutate of [c=>c.table.columns[0].vi='Loại',c=>c.table.columns[0].zh='类别',c=>c.title=copy('',''),c=>c.fields[0].label=copy('','')]){const invalid=structuredClone(d);mutate(invalid.records[key(a)].context);assert.throws(()=>validateSourceData(invalid));}
+});
+
+test('printed field pinyin is revisioned and older receipts keep their original shape',()=>{
+  const old=activity(),d=record(old),revised=structuredClone(old);revised.fields[0].pinyin='Xuéxiào（　）。';assert.throws(()=>editSourceDraft(d,revised,{known:'学校'},at+1),/版本/);
+  revised.version='source-v2';editSourceDraft(d,revised,{known:'学校'},at+1);assert.deepEqual(validateSourceData(d),d);assert.equal(Object.hasOwn(d.records[key(old)].context.fields[0],'pinyin'),false);assert.equal(d.records[key(revised)].context.fields[0].pinyin,'Xuéxiào（　）。');
+  for(const invalidValue of ['',42,'x'.repeat(10001)]){const invalid=structuredClone(d);invalid.records[key(revised)].context.fields[0].pinyin=invalidValue;assert.throws(()=>validateSourceData(invalid));}
+});
+
+test('source spans may start before the anchor page and only read-only tables may omit a redundant prompt',()=>{
+  const a=activity();a.fields=[];a.kind='source-table';a.prompt=copy('','');a.table.rows=a.table.rows.map(row=>({...row,cells:[row.cells[0],{}]}));
+  a.source={...a.source,printedPage:69,pdfPage:84,printedPages:[68,69],pdfPages:[83,84]};
+  const data=blankSourceData();editSourceDraft(data,a,{},at);assert.deepEqual(validateSourceData(data),data);
+  for(const mutate of [c=>c.source.pdfPage=83,c=>c.source.printedPage=70,c=>c.source.printedPages.reverse(),c=>c.prompt.vi='Điền bảng',c=>c.kind='read-aloud',c=>c.fields=[{id:'answer',label:copy('记录','Ghi chép'),input:'text',assessment:'ungraded'}]]){const invalid=structuredClone(data);mutate(invalid.records[key(a)].context);assert.throws(()=>validateSourceData(invalid));}
+});
+
 class Node {
   constructor(tag){this.tagName=tag.toUpperCase();this.children=[];this.dataset={};this.attributes={};}
   append(...nodes){this.children.push(...nodes);}
@@ -61,4 +96,9 @@ class Node {
 test('table renderer preserves row/column shape, empty cells and each embedded field exactly once',()=>{
   const previous=globalThis.document;globalThis.document={createElement:tag=>new Node(tag)};
   try{const a=activity();a.table.rows.push({id:'row-3',cells:[{text:copy('留空','Để trống')},{}]});const seen=[],wrap=sourceActivityTable(a.table,a.title,id=>{seen.push(id);return new Node('input');}),table=wrap.children[0],head=table.children.find(n=>n.tagName==='THEAD'),body=table.children.find(n=>n.tagName==='TBODY');assert.deepEqual(seen,['known','continue']);assert.deepEqual([...tableFieldIds(a.table)],seen);assert.equal(wrap.attributes.role,'region');assert.equal(wrap.tabIndex,0);assert.equal(head.children[0].children.length,2);assert.deepEqual(body.children.map(row=>row.children.length),[2,2,2]);assert.equal(body.children[2].children[1].children.length,0);assert.equal(body.children[0].children[0].scope,'row');assert.ok(head.children[0].children.every(cell=>cell.scope==='col'));}finally{if(previous===undefined)delete globalThis.document;else globalThis.document=previous;}
+});
+
+test('printed blank header stays visibly empty and headerless layouts have no invented header row',()=>{
+  const previous=globalThis.document;globalThis.document={createElement:tag=>new Node(tag)};
+  try{const a=activity();a.table.columns[0]=copy('','');const rendered=sourceActivityTable(a.table,a.title,()=>new Node('input')).children[0];const blank=rendered.children.find(n=>n.tagName==='THEAD').children[0].children[0];assert.equal(blank.children.length,0);assert.equal(blank.scope,'col');a.table.headerless=true;const headerless=sourceActivityTable(a.table,a.title,()=>new Node('input')).children[0];assert.equal(headerless.children.some(n=>n.tagName==='THEAD'),false);assert.equal(headerless.children.find(n=>n.tagName==='TBODY').children.length,2);}finally{if(previous===undefined)delete globalThis.document;else globalThis.document=previous;}
 });

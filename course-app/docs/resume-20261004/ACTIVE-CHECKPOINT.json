@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-04T15:22:00.548127+00:00",
+  "updatedAt": "2026-10-04T15:59:47.970392+00:00",
   "status": "running",
   "authorization": "2026-10-04T23:09:46+08:00; autonomous execution; confirmation before production publication",
   "branch": "work/hsk-autonomous-execution-20261004",
-  "lastVerifiedRemoteCommit": "973bb14b28062ff0f6b86aa29f0bcae974799a64",
+  "lastVerifiedRemoteCommit": "09e611f0ce5456e9df7f163a8025e1ab6766d67e",
   "sourceBaseline": "387aa7b6145e80f983f331d8b55cd2b2b26d6990",
   "phase": "A",
   "currentSteps": [
-    1,
-    2,
-    3,
-    4,
+    5,
+    6,
+    7,
+    8,
     9
   ],
   "protectedHsk1Files": {
@@ -22,24 +22,30 @@
     "legacy-exercises.json": "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c"
   },
   "completed": [
-    "New autonomous execution scope recorded",
-    "Protected frozen-bank hashes reconciled with stage-1 baseline",
-    "Independent L9-11 complete original source review: 25 textbook pages, 4 answer pages, 45 answer fields, 41 crops"
+    "Protected frozen-bank hashes reconciled",
+    "HSK1 L1–3, L5–8, L9–11 independent original source and official-answer acceptance and integration",
+    "HSK1 L4 current 13-crop revision independently accepted; old 21 source-v2 objects and 10 SVG bytes preserved",
+    "HSK1 L12–15 accepted content retained; 24 printed listening-stem pinyin, 17 oral optional fields and L9 cat/dog repair independently accepted",
+    "All 15 source lessons integrated: {\"activities\": 484, \"fields\": 513, \"officialKeys\": 193, \"optional\": 116, \"crops\": 150}",
+    "484 actual contexts passed strict saved-record roundtrip; two-host crop SHA and scene/audio bindings passed",
+    "34 textbook display revisions independently reviewed; frozen five files unchanged",
+    "600 prior main native case identities retained; new catalogue252 identities collection equivalent",
+    "HSK1 45 main scenes/48 crops gallery and binding independently accepted; 599 HSK1 + 121 shared unit checks passed; both builds passed; current browser fixture types passed"
   ],
   "inProgress": [
-    "L1-3 final independent acceptance and integration",
-    "L5-8 final independent acceptance and integration",
-    "L9 p67 first cat incorrectly changed to dog: original page reread, repair required",
-    "New browser fixtures actually included in typecheck; local Chromium feasibility verified by worker",
-    "Blank printed table headers and listening-stem pinyin engine support"
+    "HSK3 source gaps: new official VI edition has independent additional source revision; original Chinese PDF recovery blocked by repeated HTTP502",
+    "Native Chromium/WebKit complete exact-candidate execution pending",
+    "Learning/backup/legacy native acceptance pending on current candidate",
+    "Actual local Chromium 126 catalogue cases and scene navigation in progress"
   ],
   "notYetCertified": [
-    "New full native suite",
-    "Engineering phase A completed",
+    "Full native suite current tree",
+    "Engineering phase A complete",
     "Official Vietnamese full comparison",
+    "Remaining HSK2/3 word/sentence precision: honest whole-track fallback retained, no invented ASR",
     "Human listening",
     "Physical devices"
   ],
-  "nextExecutableAction": "Repair L9 first cat in candidate, runtime JSON and generator with new activity revision; integrate accepted L1-3 candidates; run focused source-state and build checks",
+  "nextExecutableAction": "Freeze current engineering checkpoint remotely; execute two-host 15-lesson catalogue and scene navigation in local Chromium; run actual remote two-engine CI while official HSK3 source review closes",
   "productionPublished": false
 }

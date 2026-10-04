@@ -1,5 +1,5 @@
 {
-  "status": "draft-paused-not-approved",
+  "status": "author-final-awaiting-independent-review",
   "files": [
     {
       "file": "lesson-05.json",
@@ -7,7 +7,8 @@
       "fields": 29,
       "figures": 13,
       "answerKeyFields": 15,
-      "sha256": "f443cb45e30fbed098f60ef6480722117d22ffc11cda0468ac15dc4aa6f61768"
+      "optionalFields": 6,
+      "sha256": "44bb1b7298b10528f2f9c83a1f88f438bc55d900a9edb067265d35c65cebec32"
     },
     {
       "file": "lesson-06.json",
@@ -15,7 +16,8 @@
       "fields": 60,
       "figures": 13,
       "answerKeyFields": 15,
-      "sha256": "99bd829aa8353614ee428060e1962b57b556528f5e8c5b8d15e04b6834a2bc49"
+      "optionalFields": 30,
+      "sha256": "bb61cb1f0d6e3b6f19b7ddf17c08b47370d3c46c812cbf15bc4b56d9acb2fd29"
     },
     {
       "file": "lesson-07.json",
@@ -23,7 +25,8 @@
       "fields": 42,
       "figures": 13,
       "answerKeyFields": 15,
-      "sha256": "75368edef943ec32e598313dce38ac7cf1fc0162eabde52ebbacfe91d9f96af1"
+      "optionalFields": 5,
+      "sha256": "1c4525238cfd7385e207211f36f57633a6440ccea7b69be58522bc0091bdddb4"
     },
     {
       "file": "lesson-08.json",
@@ -31,7 +34,8 @@
       "fields": 28,
       "figures": 13,
       "answerKeyFields": 15,
-      "sha256": "8f005c43fe5bf1e6150829a6f9f1899f7542991dbdf51a47cb6ba3e5ac5efda1"
+      "optionalFields": 6,
+      "sha256": "d577165a74d997bf20f49dbbe5528ece2b353c4e36e917f7e56f6ae5ac5b754b"
     }
   ],
   "sourcePagesVisuallyRead": [
@@ -112,5 +116,13 @@
     4,
     5,
     6
+  ],
+  "humanListeningPerformed": false,
+  "officialVietnameseAlignmentPerformed": false,
+  "pending": [
+    "independent-source-review",
+    "runtime integration and schema/browser acceptance",
+    "official Vietnamese textbook alignment in phase 2",
+    "human listening and physical devices not certified"
   ]
 }

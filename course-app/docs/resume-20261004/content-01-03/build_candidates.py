@@ -11,7 +11,7 @@ A=hashlib.sha256(ANSWERS.read_bytes()).hexdigest()
 assert T=='25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba'
 assert A=='9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5'
 DOC=fitz.open(TEXTBOOK)
-V='source-resume-20261004-candidate-1'
+V='source-resume-20261004-candidate-2'
 C=lambda z,v:{'zh':z,'vi':v}
 
 def src(p,section,n=1):
@@ -109,12 +109,13 @@ d=lesson(2)
 objective(d,5,'（1）能听懂并使用中文姓名自我介绍。\n（2）能听懂并使用致歉语，用“对不起”和“没关系”表达歉意和回应。\n（3）掌握汉语的基本语序。\n（4）了解中文姓名的构成。','(1) Hiểu khi nghe và tự giới thiệu bằng tên tiếng Trung.\n(2) Hiểu và dùng lời xin lỗi; dùng “对不起” để xin lỗi và “没关系” để đáp lại.\n(3) Nắm trật tự từ cơ bản trong tiếng Trung.\n(4) Tìm hiểu cấu tạo của tên tiếng Trung.')
 # First scene photograph spans the previous page; keep its own exact provenance.
 reading(d,6,1,('在教室里，王一飞在认识学生。','Trong lớp học, Vương Nhất Phi làm quen với học sinh.'),[('王一飞','请问，你叫什么名字？','Qǐngwèn, nǐ jiào shénme míngzi?','Xin hỏi, bạn tên là gì?'),('陈天中','我叫陈天中。','Wǒ jiào Chén Tiānzhōng.','Tôi tên là Trần Thiên Trung.')],(5,'l02-text-1-photo',(136,759,799,1112),('王一飞在教室里认识学生。','Vương Nhất Phi làm quen với học sinh trong lớp.')))
+d['activities'][-1]['source'].update(printedPages=[5,6],pdfPages=[20,21])
 portrait=crop(d,6,'l02-text-1-portrait',(400,151,730,369),('陈天中的人物照片。','Ảnh nhân vật Trần Thiên Trung.'))
 d['activities'][-1]['figures']=[portrait[0]];d['activities'][-1]['figureSHA256s']={portrait[0]:portrait[1]}
 tip(d,6,1,'敬辞，请求对方回答问题。','“请问” là cách nói lịch sự khi muốn hỏi người khác một câu hỏi.')
 vocab(d,6,1,[(1,'请问','qǐngwèn','v.','động từ',('请问（敬辞）','xin hỏi')),(2,'你','nǐ','pron.','đại từ',('你（单数）','bạn (số ít)')),(3,'叫','jiào','v.','động từ',('叫；名为','tên là; được gọi là')),(4,'什么','shénme','pron.','đại từ',('什么','gì')),(5,'名字','míngzi','n.','danh từ',('名字','tên')),(6,'我','wǒ','pron.','đại từ',('我','tôi'))])
 role(d,6,1);pair(d,6,1,('两人一组，用自己的名字互相问答。','Làm việc theo cặp; dùng tên của mình để hỏi và đáp.'))
-reading(d,7,2,('在校园里，陈天中和白家月打招呼时认错了人。','Trong khuôn viên trường, Trần Thiên Trung nhận nhầm người khi chào Bạch Gia Nguyệt.'),[('陈天中','你好，安妮！','Nǐ hǎo, Ānní!','Chào Annie!'),('白家月','你好，陈天中！我不是安妮，我是白家月。','Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānní, wǒ shì Bái Jiāyuè.','Chào Trần Thiên Trung! Tôi không phải Annie, tôi là Bạch Gia Nguyệt.'),('陈天中','对不起！','Duìbuqǐ!','Xin lỗi!'),('白家月','没关系！','Méi guānxi!','Không sao!')],(7,'l02-text-2-photo',(476,285,879,569),('陈天中和白家月在校园里交谈。','Trần Thiên Trung và Bạch Gia Nguyệt trò chuyện trong khuôn viên trường.')))
+reading(d,7,2,('在校园里，陈天中和白家月打招呼时认错了人。','Trong khuôn viên trường, Trần Thiên Trung nhận nhầm người khi chào Bạch Gia Nguyệt.'),[('陈天中','你好，安妮！','Nǐ hǎo, Ānní!','Chào Annie!'),('白家月','你好，陈天中！我不是安妮，我是白家月。','Nǐ hǎo, Chén Tiānzhōng! Wǒ bù shì Ānní, wǒ shì Bái Jiāyuè.','Chào Trần Thiên Trung! Tôi không phải Annie, tôi là Bạch Gia Nguyệt.'),('陈天中','对不起！','Duìbuqǐ!','Xin lỗi!'),('白家月','没关系！','Méi guānxi!','Không sao!')],(7,'l02-text-2-photo',(476,285,879,569),('陈天中和白家月在校园里交谈。','Trần Thiên Trung và Bạch Gia Nguyệt trò chuyện trong khuôn viên trường.')))
 tip(d,7,1,'在口语中也说“没事”或“没事没事”。','Trong khẩu ngữ cũng nói “没事” hoặc “没事没事” (không sao).')
 vocab(d,7,2,[(7,'不','bù','adv.','phó từ',('不；否定','không')),(8,'是','shì','v.','động từ',('是','là')),(9,'对不起','duìbuqǐ','v.','động từ',('对不起','xin lỗi')),(10,'没关系','méi guānxi','','',('没有关系；不要紧','không sao')),(11,'没事','méishì','v.','động từ',('没有关系；不要紧','không sao'))])
 role(d,7,2);pair(d,7,2,('两人一组，用真实姓名对话。','Làm việc theo cặp; dùng tên thật để hội thoại.'))
@@ -147,9 +148,11 @@ tip(d,12,1,'“谁”也可以读成“shuí”。','“谁” cũng có thể �
 vocab(d,13,2,[(3,'这','zhè','pron.','đại từ',('这','đây; này')),(4,'谁','shéi/shuí','pron.','đại từ',('谁','ai')),(5,'女朋友','nǚpéngyou','n.','danh từ',('女朋友','bạn gái')),(6,'哪','nǎ','pron.','đại từ',('哪','nào')),(7,'国','guó','n.','danh từ',('国；国家','nước; quốc gia')),(8,'她','tā','pron.','đại từ',('她','cô ấy'))],[(4,'泰国','Tàiguó',('泰国','Thái Lan'))])
 role(d,13,2);pair(d,13,2,('两人一组，根据老师给出的图片模仿课文互相问答。','Làm việc theo cặp; dựa vào hình do giáo viên đưa ra để hỏi đáp theo bài đọc.'))
 reading(d,14,3,('在家里，王一雪给王一飞打视频电话。','Ở nhà, Vương Nhất Tuyết gọi video cho Vương Nhất Phi.'),[('王一雪','喂，一飞！','Wèi, Yīfēi!','A lô, Nhất Phi!'),('王一飞','姐姐！','Jiějie!','Chị!'),('王一雪','你工作还忙吗？','Nǐ gōngzuò hái máng ma?','Công việc của em vẫn bận à?'),('王一飞','对，还很忙。你也很忙吗？','Duì, hái hěn máng. Nǐ yě hěn máng ma?','Vâng, vẫn rất bận. Chị cũng rất bận à?'),('王一雪','我不太忙。我们很想你。','Wǒ bú tài máng. Wǒmen hěn xiǎng nǐ.','Chị không bận lắm. Mọi người rất nhớ em.'),('王一飞','我也想你们。','Wǒ yě xiǎng nǐmen.','Em cũng nhớ mọi người.')],(13,'l03-text-3-photo',(138,752,799,1106),('王一雪和王一飞打视频电话。','Vương Nhất Tuyết và Vương Nhất Phi gọi video.')))
+d['activities'][-1]['source'].update(printedPages=[13,14],pdfPages=[28,29])
 vocab(d,14,3,[(9,'喂','wèi','int.','thán từ',('喂（电话用语）','a lô')),(10,'姐姐','jiějie','n.','danh từ',('姐姐','chị gái')),(11,'工作','gōngzuò','n.','danh từ',('工作','công việc')),(12,'还','hái','adv.','phó từ',('还；仍然','vẫn')),(13,'忙','máng','adj.','tính từ',('忙','bận')),(14,'吗','ma','part.','trợ từ',('用于问句末尾','dùng ở cuối câu hỏi')),(15,'对','duì','adj.','tính từ',('正确','đúng')),(16,'太','tài','adv.','phó từ',('太；过于','quá')),(17,'我们','wǒmen','pron.','đại từ',('我们','chúng tôi; chúng ta')),(18,'想','xiǎng','v.','động từ',('想念','nhớ'))])
 role(d,14,3)
 grammar(d,14,4,('用“吗”的是非问句','Câu hỏi có “吗”'),'“吗”是语气助词，通常在句子末尾，表示疑问。基本结构：……吗？\n\n（1）你也很忙吗？\n（2）你是他的中文老师吗？\n（3）你有（yǒu, have）姐姐吗？','“吗” là trợ từ ngữ khí, thường đứng ở cuối câu để biểu thị câu hỏi. Cấu trúc cơ bản: ……吗？\n\n(1) Bạn cũng rất bận à?\n(2) Bạn là giáo viên tiếng Trung của anh ấy phải không?\n(3) Bạn có chị gái không?','Nǐ yě hěn máng ma?\nNǐ shì tā de Zhōngwén lǎoshī ma?\nNǐ yǒu jiějie ma?')
+d['activities'][-1]['source'].update(printedPages=[14,15],pdfPages=[29,30])
 opts=[{'id':i,'zh':z,'py':py,'vi':v} for i,z,py,v in [('A','哪','nǎ','nào'),('B','吗','ma','trợ từ câu hỏi'),('C','谁','shéi','ai'),('D','中国人','Zhōngguó rén','người Trung Quốc'),('E','想','xiǎng','nhớ')]]
 clozes=[('（1）你工作忙______？','(1) Công việc của bạn bận ______?',['B']),('（2）我很______你们。','(2) Tôi rất ______ mọi người.',['E']),('（3）白家月：你是______国人？\n　　李文：我是______。','(3) Bạch Gia Nguyệt: Bạn là người nước ______?\n　　Lý Văn: Tôi là ______.',['A','D']),('（4）白家月：她是______？\n　　安妮：她是陈天中的女朋友。','(4) Bạch Gia Nguyệt: Cô ấy là ______?\n　　Annie: Cô ấy là bạn gái của Trần Thiên Trung.',['C'])]
 for n,(z,v,answers) in enumerate(clozes,1):
@@ -168,10 +171,10 @@ tongue(d,16,'四是四，十是十。\n十四是十四，四十是四十。','S�
 fs=[openfield('我已经记住并会使用的词语','Những từ tôi đã nhớ và biết dùng',optional=True),openfield('我还没记住的词语','Những từ tôi chưa nhớ',optional=True)]
 for i,f in enumerate(fs,1):f['id']=f'blank-{i}'
 a=activity(d,16,'summary-vocabulary','self-review-table',('学习小结 · 词语学习','Tổng kết việc học · Từ vựng'),('填写第1～3课的学习情况。','Điền tình hình học tập từ bài 1 đến bài 3.'),('1～3课我的学习情况。','Tình hình học tập của tôi từ bài 1 đến bài 3.'),fs)
-a['table']={'columns':[C('词语学习','Học từ vựng'),C('记录','Ghi lại')],'rows':[{'id':'remembered','cells':[{'text':fs[0]['label']},{'fieldId':'blank-1'}]},{'id':'not-remembered','cells':[{'text':fs[1]['label']},{'fieldId':'blank-2'}]}]}
+a['table']={'headerless':True,'columns':[C('词语学习','Học từ vựng'),C('记录','Ghi lại')],'rows':[{'id':'remembered','cells':[{'text':fs[0]['label']},{'fieldId':'blank-1'}]},{'id':'not-remembered','cells':[{'text':fs[1]['label']},{'fieldId':'blank-2'}]}]}
 rows=[('汉语的基本语序，例如：我叫白家月。','Trật tự từ cơ bản trong tiếng Trung, ví dụ: Tôi tên là Bạch Gia Nguyệt.'),('招呼语，例如：你好！','Lời chào, ví dụ: Xin chào!'),('致谢语，例如：谢谢！','Lời cảm ơn, ví dụ: Cảm ơn!'),('告别语，例如：再见！','Lời tạm biệt, ví dụ: Tạm biệt!'),('致歉语，例如：对不起。','Lời xin lỗi, ví dụ: Xin lỗi.'),('自我介绍、互相介绍，例如：我叫李文。','Tự giới thiệu và giới thiệu lẫn nhau, ví dụ: Tôi tên là Lý Văn.'),('“是”字句，例如：我是学生。','Câu có “是”, ví dụ: Tôi là học sinh.'),('结构助词“的”，例如：我的中文老师','Trợ từ kết cấu “的”, ví dụ: Giáo viên tiếng Trung của tôi'),('用“吗”的是非问句，例如：你是学生吗？','Câu hỏi có “吗”, ví dụ: Bạn là học sinh phải không?')]
-a=activity(d,17,'summary-skills','self-review-table',('我理解并会用','Tôi hiểu và biết dùng'),('分别记录“理解”和“会用”。','Đánh giá riêng mức độ “hiểu” và “biết dùng”.'),('',''))
-a['table']={'columns':[C('语言内容','Nội dung ngôn ngữ'),C('理解','Hiểu'),C('会用','Biết dùng')],'rows':[]}
+a=activity(d,17,'summary-skills','self-review-table',('我理解并会用','Tôi hiểu và biết dùng'),('分别记录“理解”和“会用”。','Đánh giá riêng mức độ “hiểu” và “biết dùng”.'),('我理解并会用','Tôi hiểu và biết dùng'))
+a['table']={'columns':[C('',''),C('理解','Hiểu'),C('会用','Biết dùng')],'rows':[]}
 for i,(z,v) in enumerate(rows,1):
  row={'id':f'skill-{i}','source':src(17,'summary-skills',i),'cells':[{'text':C(z,v)}]}
  for name,label in [('understand',('理解','Hiểu')),('use',('会用','Biết dùng'))]:
