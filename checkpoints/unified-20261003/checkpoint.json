@@ -743,7 +743,7 @@
     "ci": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37191078624"
   },
   "hsk1SourceL04": {
-    "status": "initial native CI failed; minimum integration/IME repair local gates passed, full rerun pending",
+    "status": "600 native attempt590passed/10fixture-capture failures; test-only repair full rerun pending",
     "sourceVersion": "source-v2",
     "activities": 21,
     "fields": 24,
@@ -755,7 +755,8 @@
     "standaloneNativeCollected": 42,
     "nativeExecuted": false,
     "report": "course-app/docs/hsk1-source-integration/integration-review.md",
-    "initialFailedCI": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37193376372"
+    "initialFailedCI": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37193376372",
+    "lastFailedCI": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37194697660"
   },
   "courseActivityDurabilityRepair": {
     "status": "actual renderer/store baseline fails and candidate passes four scenarios; native pending",

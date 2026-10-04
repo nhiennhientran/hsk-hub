@@ -157,6 +157,7 @@ jobs:
             hsk1-app/.repro-output/step8-browser.json
             hsk1-app/test-results/hsk1-scene-*.png
             hsk1-app/test-results/modular-hsk1-source-*.png
+            hsk1-app/test-results/modular-hsk1-source-*.json
             hsk1-app/test-results/**/*.md
           include-hidden-files: true
 
@@ -164,4 +165,6 @@ jobs:
         if: always()
         with:
           name: hsk1-unified-source-${{ matrix.browser }}-shard${{ matrix.shard }}
-          path: course-app/test-results/unified-hsk1-source-*.png
+          path: |
+            course-app/test-results/unified-hsk1-source-*.png
+            course-app/test-results/unified-hsk1-source-*.json

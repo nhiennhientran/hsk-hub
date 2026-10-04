@@ -1,0 +1,39 @@
+{
+  "failedCommit": "a496a6c4d56621aba15b06d74d5e151b5cc4a590",
+  "run": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37194697660",
+  "fullSuite": {
+    "passed": 590,
+    "failed": 10,
+    "notRun": 0,
+    "planned": 600
+  },
+  "unified": {
+    "passed": 552,
+    "failed": 6,
+    "planned": 558
+  },
+  "standalone": {
+    "passed": 38,
+    "failed": 4,
+    "planned": 42
+  },
+  "preflight": {
+    "passedPerEngine": 53,
+    "failed": 0
+  },
+  "causes": {
+    "webkitScreenshotHeightLimit": 2,
+    "unestablishedTestReleaseCallback": 4,
+    "newTabMissingEntrySetup": 4
+  },
+  "runtimeChanged": false,
+  "unitAndBuildEvidence": "559 HSK1 and121 course units, both builds passed on identical runtime in a496a6c; this repair changes only native fixtures, artifact collection and technical evidence",
+  "nativeTestIdentities": "all600 unchanged; no retries/workers/assertion weakening",
+  "fixes": [
+    "Held real external lock acquired by awaited Promise before submission; saving status observed before newer edit or cancellation",
+    "Second tab sets only the same session entry marker; no expected answers or source records seeded",
+    "Source screenshots split into every complete visible header/control block, each of21 activity cards, numeric-table overview plus overlapping horizontal slices with measured coverage and keyboard-reached final columns, and bonus; per-width JSON manifests",
+    "Keyboard ArrowRight must expose final column of every overflowing number table; global overflow and all original image/field assertions remain"
+  ],
+  "nativeExecutedOnRepair": false
+}
