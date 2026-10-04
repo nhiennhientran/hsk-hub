@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "status": "accepted-counts-stable-ID-held-partition-and-fallback-binding-only",
+  "authorLedger": {
+    "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/runtime-media-partition-ledger.json",
+    "sha256": "859eb81ddd524752401c71a5225d2eee559e72dbced5d06ae4bc2b07556df349"
+  },
+  "scope": "All 749 word IDs, 996 strict CJK units, five non-CJK compatibility units and current original/resolver identities checked; no new source-page, audio-meaning or cut-safety acceptance",
+  "counts": {
+    "wordAcceptedMetadata": 61,
+    "wordHeld": 688,
+    "sentenceAcceptedMetadataOrNewGuard": 97,
+    "sentenceHeld": 899
+  },
+  "wholeOriginalAssetHashChecks": 264,
+  "diagnosticRawFileHashChecks": 232,
+  "authorDecodeEvidence": {
+    "old32": "author actual complete decode records checked as ledger provenance; not repeated by this verifier",
+    "prior232": "same source bytes and retained complete PCM verification references"
+  },
+  "cohortHeldSources": {
+    "course-app/docs/resume-20261004/media-closure/asr-evidence/pilot-exact-match-report.json": {
+      "word": 51,
+      "sentence": 81
+    },
+    "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk2-l07-09-exact-source-diagnostics.json": {
+      "word": 50,
+      "sentence": 79
+    },
+    "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk2-l10-12-exact-source-diagnostics.json": {
+      "word": 39,
+      "sentence": 91
+    },
+    "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk2-l13-15-exact-source-diagnostics.json": {
+      "word": 39,
+      "sentence": 88
+    },
+    "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l02-04-exact-source-diagnostics.json": {
+      "word": 85,
+      "sentence": 95
+    },
+    "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l05-07-exact-source-diagnostics.json": {
+      "word": 89,
+      "sentence": 100
+    },
+    "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l08-10-exact-source-diagnostics.json": {
+      "word": 97,
+      "sentence": 100
+    },
+    "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l11-13-exact-source-diagnostics.json": {
+      "word": 85,
+      "sentence": 101
+    },
+    "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l14-16-exact-source-diagnostics.json": {
+      "word": 82,
+      "sentence": 99
+    },
+    "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l17-18-exact-source-diagnostics.json": {
+      "word": 58,
+      "sentence": 65
+    }
+  },
+  "diagnosticInputs": [
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/pilot-exact-match-report.json",
+      "sha256": "79811fe798d90818a28d5bdb0c3558f3d796b208a3bf02259f611e2396b2d022"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk2-l07-09-exact-source-diagnostics.json",
+      "sha256": "603f195f616d1fcbff708eb173c7484e5617269c0a5fc9d370b939d73e76fef4"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk2-l10-12-exact-source-diagnostics.json",
+      "sha256": "9d632734bc9c5cfb921d83a56568714ab3f3a90ea63c575333d12c225938ed71"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk2-l13-15-exact-source-diagnostics.json",
+      "sha256": "296b5c71c289e84ce2a40060c53c21238328d933f14ed1775871f1d6d1c2d0f8"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l02-04-exact-source-diagnostics.json",
+      "sha256": "841ca5f64893d033c4f3c175bbca0f7f091c80d9a6b079b98e76513eebc4a595"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l05-07-exact-source-diagnostics.json",
+      "sha256": "68a2660912b0e0dc401ddc5b9cb8e4cad1f454f46773ecc7e9fd6670cb05d0da"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l08-10-exact-source-diagnostics.json",
+      "sha256": "c0ef22011db515f6161543721d20efec01f962b824e93f33d6724df8361c00c0"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l11-13-exact-source-diagnostics.json",
+      "sha256": "4a0ca8fbf1075efd691d735368cccc84774b07875fe05d7007e8f1ed3fd7ebc1"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l14-16-exact-source-diagnostics.json",
+      "sha256": "855d96762d7de2d8f6391d476e7a5b1bf39098aa3061395661f9225f3757cd60"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/remaining-run-37219831025/hsk3-l17-18-exact-source-diagnostics.json",
+      "sha256": "273488482030d4c115fad58c7d5be82e63d302f43c1de57dcf67491baad876ad"
+    }
+  ],
+  "sourceContextLimits": [
+    "Previous accepted metadata does not restore 46 missing raw evidence paths",
+    "New official VI Chinese/PY/POS audit does not restore old Chinese HSK3 SHA or English appendix",
+    "Printed-track metadata and available whole track do not independently prove an isolated target was spoken",
+    "Unmatched ASR does not prove original target absent"
+  ],
+  "newIndependentPreciselyApprovedTargetsByThisReview": 0,
+  "certifications": {
+    "humanListening": false,
+    "nativeSpeakerReview": false,
+    "pronunciationToneCertified": false,
+    "devicePlaybackCertified": false
+  },
+  "runtimeRepairRequiredByThisReview": [],
+  "futureRepairConditional": "If actual original-target absence is established, add a precise per-ID absent-original state and replace blanket belongs-to-group copy for that ID; currently no such absence is established."
+}

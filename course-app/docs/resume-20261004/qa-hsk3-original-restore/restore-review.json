@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "independent bounded original-HSK3 restore",
+  "checkedAt": "2026-10-04T18:36:28.674995+00:00",
+  "status": "blocked-original-Chinese-HSK3; current single authorized materialization attempt returned HTTP502 and stopped",
+  "target": {
+    "name": "新HSK教程3(HSK3.0) (郭风岚,汤旭) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "size_bytes": 75121060,
+    "sha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+    "expectedPages": 212,
+    "expectedPrintedToPdfOffset": 12,
+    "library_file_id": "libfile_ffde15d98ec48191a117bb239439fe39",
+    "file_id": "file_00000000a36081fb887efeb76ce50ce7"
+  },
+  "grounding": {
+    "inventoryFile": "course-app/docs/source-inventory.json",
+    "identifierLedger": "course-app/docs/resume-20261004/source-recovery/hsk3-original-recovery.json",
+    "freshExactTitleSearch": "one exact original target in results[0]; supplemental fuzzy answer PDFs were not selected",
+    "searchQuery": "\"新HSK教程3(HSK3.0) (郭风岚,汤旭) (z-library.sk, 1lib.sk, z-lib.sk).pdf\"",
+    "search_title_only": true,
+    "selectedIndex": "000",
+    "filenameAndByteSizeMatch": true,
+    "identifiersMatchBothLedgerAndFreshSearch": true
+  },
+  "materialization": {
+    "startedAt": "2026-10-04T18:33:41.554562+00:00",
+    "finishedAt": "2026-10-04T18:33:45.128546+00:00",
+    "elapsedSeconds": 3.574,
+    "helperReturnCode": 1,
+    "boundedTimeoutSeconds": 120,
+    "timedOut": false,
+    "helperInvocationsThisTask": 1,
+    "method": "current bundled Library download helper; complete unchanged search JSON; explicit000 via stdin; no custom URLs and no download_file",
+    "currentHelperRecord": "current-helper-record.json",
+    "companionPythonFiles": 4,
+    "currentHelpersFreshPrivateDirectory": true,
+    "fullUnchangedSearchResultViaStdin": true,
+    "originalFailureResponse": "library download request failed: download failed with HTTP status 502\n",
+    "httpStatus": 502,
+    "retryAfterFailure": false,
+    "downloadedFiles": [],
+    "sourceBytesRecovered": false,
+    "wholeFileSHA256Verified": false,
+    "pageCountVerified": false
+  },
+  "scopeBoundaries": {
+    "noDownloadFile32MiBRoute": true,
+    "noConstructedURL": true,
+    "noManualURLTransfer": true,
+    "noPublicThirdPartyDownload": true,
+    "noAuthBypass": true,
+    "noRepeatReadOfExtractedBacking": true,
+    "newVietnamesePDFUsedAsOriginalSubstitute": false,
+    "originalEnglishAppendixNewlySourceVerified": false,
+    "textbookContentOrMetadataChanged": false,
+    "productionEdits": 0,
+    "remoteWrites": 0,
+    "deploymentPerformed": false,
+    "bPhaseStartedByThisTask": false
+  },
+  "distinctAvailableEdition": {
+    "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+    "relation": "already accepted additional official Vietnamese edition; not this original SHA or a restored byte-equivalent file"
+  },
+  "evidenceFiles": [
+    {
+      "file": "course-app/docs/resume-20261004/qa-hsk3-original-restore/exact-search-response.json",
+      "sha256": "9db781122736a98682ea0d23dd18fd6ee22791a3bbfba5188338a0940bb016cc"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-hsk3-original-restore/download-input.json",
+      "sha256": "a104bbd35e33b2b37ce91e6b2c5a75e49c7f55a1fb46788dab988ef370d20b1d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-hsk3-original-restore/current-helper-record.json",
+      "sha256": "eefb15b8d22787fd06fcf9ee1ab1f85b081b558a43b1fb7ddcc765039ccc3770"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-hsk3-original-restore/transfer-attempt.json",
+      "sha256": "8c2388b03cc9fd3022cf0f763d5864a3a518a459c042609998c33e5fe3e4c62e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-hsk3-original-restore/transfer-stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-hsk3-original-restore/transfer-stderr.log",
+      "sha256": "3240e47a2770cd2a103d5cd4a5a5e302b5919f1eb7d2ca5dde527b3b92ce98cd"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-hsk3-original-restore/finalize_restore.py",
+      "sha256": "0df561dc1e8da269be887c197cc189aa85e8703c673e88d817c8eb8eab3b2675"
+    },
+    {
+      "file": "course-app/docs/source-inventory.json",
+      "sha256": "418edee4f83ccfc4ce87a11b062b2a85fba0be3ee9bc735a8f0d3916cb554349"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/source-recovery/hsk3-original-recovery.json",
+      "sha256": "c158b914c26e5a42007ab8aa063894f408cd91b15140c2ac2a89c191db42c2f1"
+    }
+  ],
+  "nextAction": "No further restore retries in this task. Main website work continues independently. Old original-Chinese/English source remains explicitly unavailable."
+}

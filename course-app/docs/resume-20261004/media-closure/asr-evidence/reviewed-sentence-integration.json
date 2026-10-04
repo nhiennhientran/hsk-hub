@@ -136,5 +136,11 @@
     "necessaryUnitTests": 18,
     "actualChromiumCases": 4,
     "localWebKitCases": 0
+  },
+  "independentFullPartitionReview": {
+    "file": "course-app/docs/resume-20261004/qa-remaining-media-ledger/independent-review.json",
+    "sha256": "52200e951ea9235c89cae78f387a5074ffce285a2d65566ab86b9e3866723c7d",
+    "freezeManifestSHA256": "b2dd021131bb6fa3bca0659cc7037bed7bd3206fe12cd1d650bff96331546b65",
+    "acceptedScope": "1745 CJK stable target IDs plus 5 explicit non-CJK compatibility units, current runtime bindings and honest held/fallback partition only; no additional precision/human certification"
   }
 }

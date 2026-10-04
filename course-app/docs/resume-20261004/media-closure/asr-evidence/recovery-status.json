@@ -305,7 +305,7 @@
         614240
       ]
     ],
-    "integration": "narrow subset implemented; independent runtime QA/remote native results pending",
+    "integration": "narrow source-frame subset independently accepted; 18 necessary unit + final actual Chromium4 passed; remote WebKit pending",
     "humanListening": false
   },
   "remainingRawCollection": {
@@ -314,6 +314,12 @@
     "verifiedCurrentSourceLessons": 26,
     "sourceJSON_SHAMismatches": 0,
     "diagnosticOnly": true,
-    "productionClipApproval": false
+    "productionClipApproval": false,
+    "fullPartitionReview": {
+      "file": "course-app/docs/resume-20261004/qa-remaining-media-ledger/independent-review.json",
+      "sha256": "52200e951ea9235c89cae78f387a5074ffce285a2d65566ab86b9e3866723c7d",
+      "authorFullLedgerSHA256": "859eb81ddd524752401c71a5225d2eee559e72dbced5d06ae4bc2b07556df349",
+      "authorAvailabilitySHA256": "6762490778e59232b8a26326dfcba4f89eaedc70499a720830987f34e8651f04"
+    }
   }
 }

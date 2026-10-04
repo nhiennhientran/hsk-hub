@@ -97,6 +97,20 @@ jobs:
           path: |
             course-app/.repro-output/flow-package-assembly.json
             course-app/.repro-output/package-closure-browser.json
+            course-app/unified-site-flow-package/course-engine/unified-release-manifest.json
+            course-app/unified-site-flow-package/course-engine/assets/**/*.js
+            course-app/unified-site-flow-package/course-engine/assets/**/*.css
+            course-app/unified-site-flow-package/course-engine/assets/**/*.json
+            course-app/unified-site-flow-package/index.html
+            course-app/unified-site-flow-package/new-hsk1/index.html
+            course-app/unified-site-flow-package/new-hsk1/hsk1/index.html
+            course-app/unified-site-flow-package/new-hsk1/hsk1/lesson.html
+            course-app/unified-site-flow-package/new-hsk1/hsk1/learning.html
+            course-app/unified-site-flow-package/new-hsk1/hsk1/lesson9-pilot.html
+            course-app/unified-site-flow-package/new-hsk2/index.html
+            course-app/unified-site-flow-package/new-hsk2/hsk2/index.html
+            course-app/unified-site-flow-package/new-hsk3/index.html
+            course-app/unified-site-flow-package/new-hsk3/hsk3/index.html
             course-app/.repro-output/media-reviewed-subset/browser-results.json
             course-app/.repro-output/media-reviewed-subset/browser-artifacts/
             course-app/test-results-package-closure/**/*.md

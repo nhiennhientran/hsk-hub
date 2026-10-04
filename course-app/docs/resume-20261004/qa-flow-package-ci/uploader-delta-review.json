@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "observedAtUTC": "2026-10-04T18:48:36.412299+00:00",
+  "status": "accepted-minimal-uploader-delta-pending-new-head-native-run",
+  "baselineHead": "8dff803cc2f8d1956d5853ef40073c670e265cc0",
+  "baselineTree": "422f45046960d6148075ee81d891f0569839441c",
+  "beforeWorkflowSHA256": "b9202648285c9c97c8eb5e11b30741cc60083c7e2ada96e7ab99204c4ef24964",
+  "afterWorkflowSHA256": "843d4d60770a7a8333a5586dc36d9e58453dda89904e2e3e0e2b453647d1ae9f",
+  "changedScope": "Only14 additional upload paths in existing always upload-artifact step. Commands,conditions,fixtures,permissions,matrix and all prior upload paths remain byte/parsed semantically unchanged.",
+  "addedPaths": [
+    "course-app/unified-site-flow-package/course-engine/unified-release-manifest.json",
+    "course-app/unified-site-flow-package/course-engine/assets/**/*.js",
+    "course-app/unified-site-flow-package/course-engine/assets/**/*.css",
+    "course-app/unified-site-flow-package/course-engine/assets/**/*.json",
+    "course-app/unified-site-flow-package/index.html",
+    "course-app/unified-site-flow-package/new-hsk1/index.html",
+    "course-app/unified-site-flow-package/new-hsk1/hsk1/index.html",
+    "course-app/unified-site-flow-package/new-hsk1/hsk1/lesson.html",
+    "course-app/unified-site-flow-package/new-hsk1/hsk1/learning.html",
+    "course-app/unified-site-flow-package/new-hsk1/hsk1/lesson9-pilot.html",
+    "course-app/unified-site-flow-package/new-hsk2/index.html",
+    "course-app/unified-site-flow-package/new-hsk2/hsk2/index.html",
+    "course-app/unified-site-flow-package/new-hsk3/index.html",
+    "course-app/unified-site-flow-package/new-hsk3/hsk3/index.html"
+  ],
+  "syntaxValidation": {
+    "parser": "PyYAML safe_load on both versions",
+    "result": "passed",
+    "sameParsedWorkflowOutsideUploadPath": true,
+    "addedPathCount": 14,
+    "removedPaths": []
+  },
+  "layoutValidation": {
+    "currentEmitterHead": "8dff803cc2f8d1956d5853ef40073c670e265cc0",
+    "actualPriorAssembledRoot": "/workspace/scratch/28b55072841a/package-closure-assembled-final-guarded",
+    "purpose": "Path/glob topology only; no reuse of these old dirty bytes as proof of new candidate",
+    "all14PatternsMatched": true,
+    "actualMatchedFiles": 142,
+    "actualHtmlEntries": [
+      "index.html",
+      "new-hsk1/hsk1/index.html",
+      "new-hsk1/hsk1/learning.html",
+      "new-hsk1/hsk1/lesson.html",
+      "new-hsk1/hsk1/lesson9-pilot.html",
+      "new-hsk1/index.html",
+      "new-hsk2/hsk2/index.html",
+      "new-hsk2/index.html",
+      "new-hsk3/hsk3/index.html",
+      "new-hsk3/index.html"
+    ],
+    "matchedAssetExtensionCounts": {
+      ".js": 114,
+      ".css": 11,
+      ".json": 7
+    },
+    "totalMatchedBytesInOldShape": 13348434,
+    "audioOrPicturesMatched": false,
+    "futureHashNames": "Recursive assets globs capture actual new hashed compiled consumers without hard-coding old names."
+  },
+  "typecheckDecision": "No TS/source/config changed by this delta. Existing workflow still executes flow,package,partial andfont fixture tsc before browser work. Additional local full typecheck/tests are unnecessary for upload-path-only mutation.",
+  "newCandidateVerificationPlan": [
+    "Bind actual run head/tree and uploaded ZIP digest/CRC to new committed delta head.",
+    "Read actual uploaded unified manifest sourceCommit/sourceDirty=false/buildProvenance/sourceSnapshot and match its full runtime file hash vector to exact Git head.",
+    "Verify actual10HTML and every uploadedcompiledJS/CSS/dependencyJSON SHA against actual assembly files; classify old protected bytes separately from new manifest outputs.",
+    "Parse actual static module/HTML and Vite newURL dependencies and match their required paths to actual inventory; verify references to known approved original audio/crop/stroke sources.",
+    "Validate package9 and normal-network legacy3 perengine real finalJSON identities,one passed result,retry0 and output noerrors; tie attached consumer/audio URLs to new report.",
+    "Cross-reconstruct omitted approved PNG/SVG/MP3/stroke inputs from exact source Git objects andtrusted asset authorities,comparing sourceSHA and declared assemblySHA; this is reconstruction/declared-byte validation,not independent download/rehash of every actualCIfile."
+  ],
+  "evidenceLimitations": [
+    "Only manifest,compiledJS/CSS/dependencyJSON,10HTML and reports are added. All3893 final files are not uploaded.",
+    "Full newconsumer bytes in ZIP may be independently rehashed; omitted MP3/PNG/strokes can only be reconciled against exactsource authority and actualacceptedassembler/browserevidence.",
+    "Oldshape count/files here establish pathcoverage only, not newhead expectedcompilefilecount or nativeacceptance.",
+    "No publication/deployment/mainmerge performed."
+  ],
+  "modifiedProductionTools": false
+}
