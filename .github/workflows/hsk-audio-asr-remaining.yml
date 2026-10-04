@@ -93,7 +93,7 @@ jobs:
           key: hsk-asr-small-536b0662742c02347bc0e980a01041f333bce120-${{ runner.os }}-${{ hashFiles('course-app/docs/resume-20261004/media-closure/asr-evidence/requirements.txt') }}
       - name: Unprompted remaining original tracks; observations only
         run: |
-          python "$EVIDENCE_SCRIPT" --level ${{ matrix.level }} --lessons ${{ matrix.lessons }} --cpu-threads 2 --model-id Systran/faster-whisper-small --model-revision 536b0662742c02347bc0e980a01041f333bce120 --cache "$EVIDENCE_CACHE" --output "$EVIDENCE_OUTPUT"
+          python "$EVIDENCE_SCRIPT" --level ${{ matrix.level }} --lessons ${{ matrix.lessons }} --allow-expanded-batch --cpu-threads 2 --model-id Systran/faster-whisper-small --model-revision 536b0662742c02347bc0e980a01041f333bce120 --cache "$EVIDENCE_CACHE" --output "$EVIDENCE_OUTPUT"
       - name: Preserve partial evidence on failure and complete evidence on success
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
