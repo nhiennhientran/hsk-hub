@@ -1,0 +1,1659 @@
+[
+  {
+    "file": "hsk3/runtime-loader-core.js",
+    "function": "applyTextbookVocabContract",
+    "range": {
+      "start": 5052,
+      "end": 6404
+    },
+    "fileSHA256": "3d8a6d8e2166294449c0e67f9c16a8db757296d28259bffbe60961162d96a6e5",
+    "functionSHA256": "77ab9b45c8b4dc7a3e773e38d4454b4e8405001220fd6e9950ad607f28ad291e",
+    "status": "executed-actual-content-contract-only",
+    "contract": {
+      "version": "2026-08-15-vocab-1",
+      "ok": true,
+      "words": 325,
+      "coreCount": 299,
+      "supplementCount": 13,
+      "properCount": 13
+    },
+    "changes": [
+      {
+        "pointer": "/0/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/0/vocab/15/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/0/vocab/16/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/1/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/6/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/1/vocab/7/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/1/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/15/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/16/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/17/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/1/vocab/18/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/1/vocab/19/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/2/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/15/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/2/vocab/16/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/15/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/3/vocab/16/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/3/vocab/17/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/3/vocab/18/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/4/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/4/vocab/13/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/5/vocab/0/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/5/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/5/vocab/13/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/5/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/6/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/8/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/7/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/15/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/7/vocab/16/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/0/pos",
+        "before": "danh từ",
+        "after": "danh từ riêng"
+      },
+      {
+        "pointer": "/8/vocab/0/properName",
+        "before": false,
+        "after": true
+      },
+      {
+        "pointer": "/8/vocab/0/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/8/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/8/vocab/13/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/8/vocab/14/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/9/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/11/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/9/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/9/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/15/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/16/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/17/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/10/vocab/18/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/11/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/11/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/12/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/12/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/15/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/13/vocab/16/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/15/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/16/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/14/vocab/17/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/18/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/19/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/14/vocab/20/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/14/vocab/21/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/15/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/15/vocab/15/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/16/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/13/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/16/vocab/14/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/16/vocab/15/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/14/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/17/vocab/15/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/17/vocab/16/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/11/kind",
+        "before": null,
+        "after": "proper"
+      },
+      {
+        "pointer": "/18/vocab/12/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/18/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/0/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/1/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/2/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/3/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/4/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/5/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/6/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/7/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/8/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/9/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/10/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/11/kind",
+        "before": null,
+        "after": "core"
+      },
+      {
+        "pointer": "/19/vocab/12/kind",
+        "before": null,
+        "after": "supplement"
+      },
+      {
+        "pointer": "/19/vocab/13/kind",
+        "before": null,
+        "after": "core"
+      }
+    ],
+    "scope": "Real function changes content; only documentElement.dataset is stubbed. No full DOM, route, grading or storage execution."
+  }
+]

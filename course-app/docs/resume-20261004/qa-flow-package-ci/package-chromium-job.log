@@ -1,0 +1,2159 @@
+﻿2026-10-04T18:51:11.7032668Z Current runner version: '2.337.0'
+2026-10-04T18:51:11.7053936Z ##[group]Runner Image Provisioner
+2026-10-04T18:51:11.7054672Z Hosted Compute Agent
+2026-10-04T18:51:11.7055161Z Version: 20260901.588
+2026-10-04T18:51:11.7055706Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+2026-10-04T18:51:11.7056714Z Build Date: 2026-09-01T19:56:44Z
+2026-10-04T18:51:11.7057256Z Worker ID: {f29554c0-e763-4858-9ac9-459ce434d7d9}
+2026-10-04T18:51:11.7057843Z Azure Region: eastus
+2026-10-04T18:51:11.7058319Z ##[endgroup]
+2026-10-04T18:51:11.7059776Z ##[group]Operating System
+2026-10-04T18:51:11.7060353Z Ubuntu
+2026-10-04T18:51:11.7060780Z 24.04.5
+2026-10-04T18:51:11.7061301Z LTS
+2026-10-04T18:51:11.7061888Z ##[endgroup]
+2026-10-04T18:51:11.7062373Z ##[group]Runner Image
+2026-10-04T18:51:11.7063005Z Image: ubuntu-24.04
+2026-10-04T18:51:11.7063468Z Version: 20260927.320.1
+2026-10-04T18:51:11.7064542Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-04T18:51:11.7065896Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+2026-10-04T18:51:11.7066894Z ##[endgroup]
+2026-10-04T18:51:11.7067782Z ##[group]GITHUB_TOKEN Permissions
+2026-10-04T18:51:11.7069700Z Contents: read
+2026-10-04T18:51:11.7070227Z Metadata: read
+2026-10-04T18:51:11.7070742Z ##[endgroup]
+2026-10-04T18:51:11.7072463Z Secret source: Actions
+2026-10-04T18:51:11.7073222Z Cache mode: write
+2026-10-04T18:51:11.7074102Z Prepare workflow directory
+2026-10-04T18:51:11.7332904Z Prepare all required actions
+2026-10-04T18:51:11.7371861Z Getting action download info
+2026-10-04T18:51:11.9347519Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-04T18:51:12.0145233Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-10-04T18:51:12.2560533Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-04T18:51:12.5126763Z Complete job name: flows (chromium, package)
+2026-10-04T18:51:12.5794513Z ##[group]Run actions/checkout@v4
+2026-10-04T18:51:12.5795225Z with:
+2026-10-04T18:51:12.5795641Z   fetch-depth: 0
+2026-10-04T18:51:12.5796175Z   repository: nhiennhientran/hsk-hub
+2026-10-04T18:51:12.5799634Z   token: ***
+2026-10-04T18:51:12.5800027Z   ssh-strict: true
+2026-10-04T18:51:12.5800425Z   ssh-user: git
+2026-10-04T18:51:12.5800821Z   persist-credentials: true
+2026-10-04T18:51:12.5801243Z   clean: true
+2026-10-04T18:51:12.5801629Z   sparse-checkout-cone-mode: true
+2026-10-04T18:51:12.5802093Z   fetch-tags: false
+2026-10-04T18:51:12.5802474Z   show-progress: true
+2026-10-04T18:51:12.5802863Z   lfs: false
+2026-10-04T18:51:12.5803231Z   submodules: false
+2026-10-04T18:51:12.5803631Z   set-safe-directory: true
+2026-10-04T18:51:12.5804077Z   allow-unsafe-pr-checkout: false
+2026-10-04T18:51:12.5804715Z ##[endgroup]
+2026-10-04T18:51:12.6635394Z Syncing repository: nhiennhientran/hsk-hub
+2026-10-04T18:51:12.6637757Z ##[group]Getting Git version info
+2026-10-04T18:51:12.6638805Z Working directory is '/home/runner/work/hsk-hub/hsk-hub'
+2026-10-04T18:51:12.6640126Z [command]/usr/bin/git version
+2026-10-04T18:51:12.7216610Z git version 2.55.0
+2026-10-04T18:51:12.7241155Z ##[endgroup]
+2026-10-04T18:51:12.7257552Z Temporarily overriding HOME='/home/runner/work/_temp/ba416076-42bb-413c-ac27-5c894698b133' before making global git config changes
+2026-10-04T18:51:12.7259703Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-04T18:51:12.7263157Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/hsk-hub/hsk-hub
+2026-10-04T18:51:12.7316259Z Deleting the contents of '/home/runner/work/hsk-hub/hsk-hub'
+2026-10-04T18:51:12.7321644Z ##[group]Initializing the repository
+2026-10-04T18:51:12.7336579Z [command]/usr/bin/git init /home/runner/work/hsk-hub/hsk-hub
+2026-10-04T18:51:12.7418923Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-04T18:51:12.7421052Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-04T18:51:12.7424257Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-04T18:51:12.7425504Z hint: call:
+2026-10-04T18:51:12.7426340Z hint:
+2026-10-04T18:51:12.7427161Z hint: 	git config --global init.defaultBranch <name>
+2026-10-04T18:51:12.7428344Z hint:
+2026-10-04T18:51:12.7429857Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-04T18:51:12.7431906Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-04T18:51:12.7433069Z hint:
+2026-10-04T18:51:12.7433768Z hint: 	git branch -m <name>
+2026-10-04T18:51:12.7434604Z hint:
+2026-10-04T18:51:12.7435615Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-04T18:51:12.7437334Z Initialized empty Git repository in /home/runner/work/hsk-hub/hsk-hub/.git/
+2026-10-04T18:51:12.7447649Z [command]/usr/bin/git remote add origin https://github.com/nhiennhientran/hsk-hub
+2026-10-04T18:51:12.7498390Z ##[endgroup]
+2026-10-04T18:51:12.7499648Z ##[group]Disabling automatic garbage collection
+2026-10-04T18:51:12.7503944Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-04T18:51:12.7540248Z ##[endgroup]
+2026-10-04T18:51:12.7541377Z ##[group]Setting up auth
+2026-10-04T18:51:12.7542405Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-04T18:51:12.7571094Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-04T18:51:12.7893936Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-04T18:51:12.7924935Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-04T18:51:12.8113423Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-04T18:51:12.8142750Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-04T18:51:12.8343640Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-04T18:51:12.8382534Z ##[endgroup]
+2026-10-04T18:51:12.8389859Z ##[group]Fetching the repository
+2026-10-04T18:51:12.8391085Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-10-04T18:51:23.8641418Z From https://github.com/nhiennhientran/hsk-hub
+2026-10-04T18:51:23.8642167Z  * [new branch]      agent/fix-hsk12-audit-newhsk-false-positive -> origin/agent/fix-hsk12-audit-newhsk-false-positive
+2026-10-04T18:51:23.8642833Z  * [new branch]      agent/hsk-hub-structural-audit -> origin/agent/hsk-hub-structural-audit
+2026-10-04T18:51:23.8643530Z  * [new branch]      agent/hsk1-audio-architecture-cache-bust -> origin/agent/hsk1-audio-architecture-cache-bust
+2026-10-04T18:51:23.8644151Z  * [new branch]      agent/hsk1-audio-architecture-cleanup -> origin/agent/hsk1-audio-architecture-cleanup
+2026-10-04T18:51:23.8644667Z  * [new branch]      agent/hsk1-audio-code  -> origin/agent/hsk1-audio-code
+2026-10-04T18:51:23.8645113Z  * [new branch]      agent/hsk1-audio-integrated -> origin/agent/hsk1-audio-integrated
+2026-10-04T18:51:23.8645555Z  * [new branch]      agent/hsk1-audio-one   -> origin/agent/hsk1-audio-one
+2026-10-04T18:51:23.8646252Z  * [new branch]      agent/hsk1-audio-ready -> origin/agent/hsk1-audio-ready
+2026-10-04T18:51:23.8646680Z  * [new branch]      agent/hsk1-audio-stage -> origin/agent/hsk1-audio-stage
+2026-10-04T18:51:23.8647075Z  * [new branch]      agent/hsk1-audio-step8 -> origin/agent/hsk1-audio-step8
+2026-10-04T18:51:23.8647580Z  * [new branch]      agent/hsk1-official-audio-release -> origin/agent/hsk1-official-audio-release
+2026-10-04T18:51:23.8648425Z  * [new branch]      agent/hsk1-official-audio-segments -> origin/agent/hsk1-official-audio-segments
+2026-10-04T18:51:23.8649102Z  * [new branch]      agent/hsk1-official-audio-segments-step2 -> origin/agent/hsk1-official-audio-segments-step2
+2026-10-04T18:51:23.8649912Z  * [new branch]      agent/hsk1-official-audio-segments-step2-backup -> origin/agent/hsk1-official-audio-segments-step2-backup
+2026-10-04T18:51:23.8710426Z  * [new branch]      agent/hsk1-official-audio-segments-step2-commit -> origin/agent/hsk1-official-audio-segments-step2-commit
+2026-10-04T18:51:23.8711510Z  * [new branch]      agent/hsk1-official-audio-segments-step2-data -> origin/agent/hsk1-official-audio-segments-step2-data
+2026-10-04T18:51:23.8712473Z  * [new branch]      agent/hsk1-official-audio-segments-step2-final -> origin/agent/hsk1-official-audio-segments-step2-final
+2026-10-04T18:51:23.8713403Z  * [new branch]      agent/hsk1-official-audio-segments-step2-save -> origin/agent/hsk1-official-audio-segments-step2-save
+2026-10-04T18:51:23.8714351Z  * [new branch]      agent/hsk1-parity-official-vocab -> origin/agent/hsk1-parity-official-vocab
+2026-10-04T18:51:23.8715069Z  * [new branch]      agent/hsk1-segment-audio -> origin/agent/hsk1-segment-audio
+2026-10-04T18:51:23.8715735Z  * [new branch]      agent/hsk1-textbook-audio -> origin/agent/hsk1-textbook-audio
+2026-10-04T18:51:23.8716739Z  * [new branch]      agent/hsk1-textbook-audio-check -> origin/agent/hsk1-textbook-audio-check
+2026-10-04T18:51:23.8717554Z  * [new branch]      agent/hsk1-textbook-audio-final -> origin/agent/hsk1-textbook-audio-final
+2026-10-04T18:51:23.8718388Z  * [new branch]      agent/hsk1-textbook-audio-v2 -> origin/agent/hsk1-textbook-audio-v2
+2026-10-04T18:51:23.8719349Z  * [new branch]      backup/hsk1-pre-legacy-restoration-20261002 -> origin/backup/hsk1-pre-legacy-restoration-20261002
+2026-10-04T18:51:23.8720456Z  * [new branch]      backup/hsk1-pre-mixed-cards-20261002 -> origin/backup/hsk1-pre-mixed-cards-20261002
+2026-10-04T18:51:23.8721794Z  * [new branch]      backup/hsk1-pre-modular-step9-20261002 -> origin/backup/hsk1-pre-modular-step9-20261002
+2026-10-04T18:51:23.8722915Z  * [new branch]      backup/hsk1-pre-simplification-20261002 -> origin/backup/hsk1-pre-simplification-20261002
+2026-10-04T18:51:23.8723956Z  * [new branch]      backup/hsk23-pre-upgrade-20261002 -> origin/backup/hsk23-pre-upgrade-20261002
+2026-10-04T18:51:23.8725034Z  * [new branch]      backup/pre-grammar-audit-20260815 -> origin/backup/pre-grammar-audit-20260815
+2026-10-04T18:51:23.8725738Z  * [new branch]      feature/hsk123-unified-learning-20261003 -> origin/feature/hsk123-unified-learning-20261003
+2026-10-04T18:51:23.8726498Z  * [new branch]      feature/hsk23-course-upgrade -> origin/feature/hsk23-course-upgrade
+2026-10-04T18:51:23.8726999Z  * [new branch]      fix/236-grammar-audit-20260815 -> origin/fix/236-grammar-audit-20260815
+2026-10-04T18:51:23.8727499Z  * [new branch]      fix/hsk4-lower-duplicate-auth -> origin/fix/hsk4-lower-duplicate-auth
+2026-10-04T18:51:23.8728061Z  * [new branch]      fix/hsk4-smoke-auth-harness-20261003 -> origin/fix/hsk4-smoke-auth-harness-20261003
+2026-10-04T18:51:23.8728553Z  * [new branch]      gh-pages               -> origin/gh-pages
+2026-10-04T18:51:23.8728969Z  * [new branch]      main                   -> origin/main
+2026-10-04T18:51:23.8729445Z  * [new branch]      preview/restore-legacy-experience -> origin/preview/restore-legacy-experience
+2026-10-04T18:51:23.8730148Z  * [new branch]      review/hsk1-integration-step1-20261001 -> origin/review/hsk1-integration-step1-20261001
+2026-10-04T18:51:23.8730794Z  * [new branch]      verify/hsk1-frozen-dist-20261002 -> origin/verify/hsk1-frozen-dist-20261002
+2026-10-04T18:51:23.8731404Z  * [new branch]      verify/hsk1-modular-live-20261002 -> origin/verify/hsk1-modular-live-20261002
+2026-10-04T18:51:23.8731907Z  * [new branch]      verify/hsk1-native-seek-20261001 -> origin/verify/hsk1-native-seek-20261001
+2026-10-04T18:51:23.8732404Z  * [new branch]      verify/hsk1-release-20261001 -> origin/verify/hsk1-release-20261001
+2026-10-04T18:51:23.8733340Z  * [new branch]      verify/hsk1-restoration-live-20261002 -> origin/verify/hsk1-restoration-live-20261002
+2026-10-04T18:51:23.8734083Z  * [new branch]      verify/hsk23-live-20261002 -> origin/verify/hsk23-live-20261002
+2026-10-04T18:51:23.8734722Z  * [new branch]      work/codex-hsk-resume-20261004 -> origin/work/codex-hsk-resume-20261004
+2026-10-04T18:51:23.8735438Z  * [new branch]      work/codex-hsk-stage1-20261004 -> origin/work/codex-hsk-stage1-20261004
+2026-10-04T18:51:23.8736302Z  * [new branch]      work/hsk-a5-source-checkpoint-20261004 -> origin/work/hsk-a5-source-checkpoint-20261004
+2026-10-04T18:51:23.8736965Z  * [new branch]      work/hsk-a7-evidence-checkpoint-20261004 -> origin/work/hsk-a7-evidence-checkpoint-20261004
+2026-10-04T18:51:23.8737594Z  * [new branch]      work/hsk-a9-inputs-checkpoint-20261004 -> origin/work/hsk-a9-inputs-checkpoint-20261004
+2026-10-04T18:51:23.8738189Z  * [new branch]      work/hsk-audio-asr-pilot-20261004 -> origin/work/hsk-audio-asr-pilot-20261004
+2026-10-04T18:51:23.8738770Z  * [new branch]      work/hsk-autonomous-execution-20261004 -> origin/work/hsk-autonomous-execution-20261004
+2026-10-04T18:51:23.8739337Z  * [new branch]      work/hsk-autonomous-plan-20261004 -> origin/work/hsk-autonomous-plan-20261004
+2026-10-04T18:51:23.8739883Z  * [new branch]      work/hsk-flow-package-ci-20261004 -> origin/work/hsk-flow-package-ci-20261004
+2026-10-04T18:51:23.8740547Z  * [new branch]      work/hsk1-free-card-navigation-preview-20261002 -> origin/work/hsk1-free-card-navigation-preview-20261002
+2026-10-04T18:51:23.8741340Z  * [new branch]      work/hsk1-integration-step2-20261001 -> origin/work/hsk1-integration-step2-20261001
+2026-10-04T18:51:23.8741893Z  * [new branch]      work/hsk1-modular-step1-20261001 -> origin/work/hsk1-modular-step1-20261001
+2026-10-04T18:51:23.8742400Z  * [new branch]      work/hsk1-modular-step2-20261001 -> origin/work/hsk1-modular-step2-20261001
+2026-10-04T18:51:23.8743054Z  * [new branch]      work/hsk1-modular-step3-20261001 -> origin/work/hsk1-modular-step3-20261001
+2026-10-04T18:51:23.8743578Z  * [new branch]      work/hsk1-modular-step4-20261001 -> origin/work/hsk1-modular-step4-20261001
+2026-10-04T18:51:23.8744088Z  * [new branch]      work/hsk1-modular-step5-20261002 -> origin/work/hsk1-modular-step5-20261002
+2026-10-04T18:51:23.8744592Z  * [new branch]      work/hsk1-modular-step6-20261002 -> origin/work/hsk1-modular-step6-20261002
+2026-10-04T18:51:23.8745098Z  * [new branch]      work/hsk1-modular-step7-20261002 -> origin/work/hsk1-modular-step7-20261002
+2026-10-04T18:51:23.8745607Z  * [new branch]      work/hsk1-modular-step8-20261002 -> origin/work/hsk1-modular-step8-20261002
+2026-10-04T18:51:23.8746343Z  * [new branch]      work/hsk1-modular-step9-20261002 -> origin/work/hsk1-modular-step9-20261002
+2026-10-04T18:51:23.8746861Z  * [new branch]      work/hsk1-stage1-20261001 -> origin/work/hsk1-stage1-20261001
+2026-10-04T18:51:23.8747313Z  * [new branch]      work/hsk1-stage2-20261001 -> origin/work/hsk1-stage2-20261001
+2026-10-04T18:51:23.8747743Z  * [new branch]      work/hsk1-stage3-20261001 -> origin/work/hsk1-stage3-20261001
+2026-10-04T18:51:23.8748195Z  * [new branch]      work/hsk1-stage4-1-20261001 -> origin/work/hsk1-stage4-1-20261001
+2026-10-04T18:51:23.8748714Z  * [new branch]      work/hsk1-stage4-1-runtime-20261001 -> origin/work/hsk1-stage4-1-runtime-20261001
+2026-10-04T18:51:23.8749867Z [command]/usr/bin/git branch --list --remote origin/work/hsk-flow-package-ci-20261004
+2026-10-04T18:51:23.8750260Z   origin/work/hsk-flow-package-ci-20261004
+2026-10-04T18:51:23.8750952Z [command]/usr/bin/git rev-parse refs/remotes/origin/work/hsk-flow-package-ci-20261004
+2026-10-04T18:51:23.8751342Z dd8b22ccb1c1a9c41bc1243887f7a60558635782
+2026-10-04T18:51:23.8752017Z ##[endgroup]
+2026-10-04T18:51:23.8752374Z ##[group]Determining the checkout info
+2026-10-04T18:51:23.8752745Z ##[endgroup]
+2026-10-04T18:51:23.8753009Z [command]/usr/bin/git sparse-checkout disable
+2026-10-04T18:51:23.8776331Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-04T18:51:23.8802692Z ##[group]Checking out the ref
+2026-10-04T18:51:23.8805712Z [command]/usr/bin/git checkout --progress --force -B work/hsk-flow-package-ci-20261004 refs/remotes/origin/work/hsk-flow-package-ci-20261004
+2026-10-04T18:51:24.7982958Z Switched to a new branch 'work/hsk-flow-package-ci-20261004'
+2026-10-04T18:51:24.7986007Z branch 'work/hsk-flow-package-ci-20261004' set up to track 'origin/work/hsk-flow-package-ci-20261004'.
+2026-10-04T18:51:24.8028958Z ##[endgroup]
+2026-10-04T18:51:24.8080477Z [command]/usr/bin/git log -1 --format=%H
+2026-10-04T18:51:24.8101301Z dd8b22ccb1c1a9c41bc1243887f7a60558635782
+2026-10-04T18:51:24.8309972Z ##[group]Run actions/setup-node@v4
+2026-10-04T18:51:24.8310194Z with:
+2026-10-04T18:51:24.8310364Z   node-version: 24.19.0
+2026-10-04T18:51:24.8310555Z   always-auth: false
+2026-10-04T18:51:24.8310735Z   check-latest: false
+2026-10-04T18:51:24.8312649Z   token: ***
+2026-10-04T18:51:24.8312818Z ##[endgroup]
+2026-10-04T18:51:24.9379360Z Attempting to download 24.19.0...
+2026-10-04T18:51:24.9459622Z (node:2083) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-04T18:51:24.9460373Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-04T18:51:25.4248804Z Acquiring 24.19.0 - x64 from https://github.com/actions/node-versions/releases/download/24.19.0-30872449280/node-24.19.0-linux-x64.tar.gz
+2026-10-04T18:51:25.6982962Z Extracting ...
+2026-10-04T18:51:25.7075599Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/3a01b531-d675-4414-8b05-f528522b60f6 -f /home/runner/work/_temp/615e894d-dac3-4e3b-b589-d71b597c89a3
+2026-10-04T18:51:26.7466095Z Adding to the cache ...
+2026-10-04T18:51:28.7230906Z ##[group]Environment details
+2026-10-04T18:51:28.9032161Z node: v24.19.0
+2026-10-04T18:51:28.9032488Z npm: 11.17.0
+2026-10-04T18:51:28.9032719Z yarn: 1.22.22
+2026-10-04T18:51:28.9033243Z ##[endgroup]
+2026-10-04T18:51:28.9172974Z ##[group]Run npm ci --prefix course-app && npm ci --prefix hsk1-app
+2026-10-04T18:51:28.9173394Z [36;1mnpm ci --prefix course-app && npm ci --prefix hsk1-app[0m
+2026-10-04T18:51:28.9385350Z shell: /usr/bin/bash -e {0}
+2026-10-04T18:51:28.9385578Z ##[endgroup]
+2026-10-04T18:51:31.4759575Z 
+2026-10-04T18:51:31.4767275Z added 25 packages, and audited 26 packages in 2s
+2026-10-04T18:51:31.4767636Z 
+2026-10-04T18:51:31.4767880Z 9 packages are looking for funding
+2026-10-04T18:51:31.4768260Z   run `npm fund` for details
+2026-10-04T18:51:31.4770331Z 
+2026-10-04T18:51:31.4770741Z found 0 vulnerabilities
+2026-10-04T18:51:32.3645530Z 
+2026-10-04T18:51:32.3646709Z added 24 packages, and audited 25 packages in 808ms
+2026-10-04T18:51:32.3666423Z 
+2026-10-04T18:51:32.3666740Z 9 packages are looking for funding
+2026-10-04T18:51:32.3667128Z   run `npm fund` for details
+2026-10-04T18:51:32.3667363Z 
+2026-10-04T18:51:32.3667535Z found 0 vulnerabilities
+2026-10-04T18:51:32.3822608Z ##[group]Run npm test --prefix course-app
+2026-10-04T18:51:32.3822919Z [36;1mnpm test --prefix course-app[0m
+2026-10-04T18:51:32.3823258Z [36;1mcourse-app/node_modules/.bin/tsc -p course-app/tsconfig.flow-check.json[0m
+2026-10-04T18:51:32.3823693Z [36;1mcourse-app/node_modules/.bin/tsc -p course-app/tsconfig.package-check.json[0m
+2026-10-04T18:51:32.3824155Z [36;1mcourse-app/node_modules/.bin/tsc -p course-app/tsconfig.reviewed-sentences-check.json[0m
+2026-10-04T18:51:32.3824685Z [36;1mcourse-app/node_modules/.bin/tsc -p course-app/docs/resume-20261004/source-font-visual/tsconfig.json[0m
+2026-10-04T18:51:32.3881616Z shell: /usr/bin/bash -e {0}
+2026-10-04T18:51:32.3881828Z ##[endgroup]
+2026-10-04T18:51:32.4678591Z 
+2026-10-04T18:51:32.4679076Z > hsk-shared-course-app@1.0.0 test
+2026-10-04T18:51:32.4679574Z > node --experimental-strip-types --test tests/*.test.mjs
+2026-10-04T18:51:32.4679789Z 
+2026-10-04T18:51:32.7150650Z ✔ existing pilot activities and a separately bound self-assessment matrix are structurally sound (4.287727ms)
+2026-10-04T18:51:32.7177283Z ✔ matrix cannot drop, repeat, misorder dimensions or bind non-checkbox answers (5.820972ms)
+2026-10-04T18:51:32.7183126Z ✔ editorial references never acquire automatic grading answers or unrelated picture IDs (2.280928ms)
+2026-10-04T18:51:32.7185181Z ✔ source surveys retain text/select/checkbox matrix bindings and reject mismatched context columns (4.364011ms)
+2026-10-04T18:51:32.7186601Z ✔ cross-page activities reject unrelated or inconsistent per-field source pages (1.930025ms)
+2026-10-04T18:51:32.7187850Z ✔ every approved instructional illustration exists with its reviewed bytes and no external source (77.432212ms)
+2026-10-04T18:51:32.7189042Z ✔ source survey headers bind editable names independently from all body responses (1.972909ms)
+2026-10-04T18:51:32.7190176Z ✔ editable survey headers cannot hide, duplicate, omit, mismatch or auto-grade a name (13.021128ms)
+2026-10-04T18:51:32.7191346Z ✔ field-level question provenance cannot point outside actual source questions (4.402984ms)
+2026-10-04T18:51:32.7192527Z ✔ frequency matrix permits only an explicit bilingual blank corner and retains caption context (1.183773ms)
+2026-10-04T18:51:32.7193811Z ✔ matrix corner rejects one-sided empty, missing language, non-string and whitespace-only headings (13.232473ms)
+2026-10-04T18:51:32.7195060Z ✔ explicit optional fields are boolean ungraded text only and do not infer from prompt language (25.47411ms)
+2026-10-04T18:51:32.7196488Z ✔ optional illustration label requires nonempty bilingual text and absent legacy label remains valid (14.017953ms)
+2026-10-04T18:51:32.7268229Z ✔ HSK2 failed candidate never enters draft and later ordinary save cannot invent submission (9.339063ms)
+2026-10-04T18:51:32.7273047Z ✔ HSK2 waiting candidate stays unsubmitted and confirmed reload preserves old record (0.933711ms)
+2026-10-04T18:51:32.7287069Z ✔ HSK2 lock-wait edit invalidates candidate without losing newer draft (1.096504ms)
+2026-10-04T18:51:32.7312388Z ✔ HSK2 composition and cancelled pending view never commit a marker (0.654685ms)
+2026-10-04T18:51:32.7327085Z ✔ HSK3 failed candidate never enters draft and later ordinary save cannot invent submission (0.562618ms)
+2026-10-04T18:51:32.7328355Z ✔ HSK3 waiting candidate stays unsubmitted and confirmed reload preserves old record (0.519584ms)
+2026-10-04T18:51:32.7329643Z ✔ HSK3 lock-wait edit invalidates candidate without losing newer draft (0.674004ms)
+2026-10-04T18:51:32.7330750Z ✔ HSK3 composition and cancelled pending view never commit a marker (0.545773ms)
+2026-10-04T18:51:32.7331880Z ✔ stale values and unsafe unavailable lock fail closed without adopting submissions (0.962093ms)
+2026-10-04T18:51:32.7333168Z ✔ prior fallback records remain separate immutable history with human-readable source context (11.063462ms)
+2026-10-04T18:51:32.7334500Z ✔ active controls, another lesson and another edition never enter this lesson archive (2.63793ms)
+2026-10-04T18:51:32.7336468Z ✔ nonempty old records survive actual storage save reload export restore without creating new activity submissions (3.902603ms)
+2026-10-04T18:51:32.7733695Z ✔ one source page keeps the group citation without duplicate field notes (0.947231ms)
+2026-10-04T18:51:32.7772816Z ✔ cross-page fields and differing group page always retain field-level citations (0.265705ms)
+2026-10-04T18:51:32.7797193Z ✔ row citation combines only matching effective provenance and never changes source objects (0.327137ms)
+2026-10-04T18:51:34.0901769Z ✔ assembly preserves1140 baseline files and rejects changed baseline/frozen bytes (1317.782707ms)
+2026-10-04T18:51:34.0982821Z ✔ HSK2 homework quota rejection leaves receipts out of the live draft and later ordinary saves (17.436556ms)
+2026-10-04T18:51:34.0984265Z ✔ HSK2 homework waits without an adopted receipt and confirms exactly one immutable attempt (1.75161ms)
+2026-10-04T18:51:34.0985575Z ✔ HSK2 homework cancelled lock wait cannot reappear in a later draft save (4.252936ms)
+2026-10-04T18:51:34.1005594Z ✔ HSK2 homework newer answer during a lock wait wins without a submission (4.684499ms)
+2026-10-04T18:51:34.1007298Z ✔ HSK2 individual listening quota rejection leaves receipts out of the live draft and later ordinary saves (5.354196ms)
+2026-10-04T18:51:34.1008866Z ✔ HSK2 individual listening waits without an adopted receipt and confirms exactly one immutable attempt (4.435027ms)
+2026-10-04T18:51:34.1010269Z ✔ HSK2 individual listening cancelled lock wait cannot reappear in a later draft save (4.674224ms)
+2026-10-04T18:51:34.1011511Z ✔ HSK2 individual listening newer answer during a lock wait wins without a submission (4.547194ms)
+2026-10-04T18:51:34.1012831Z ✔ HSK3 homework quota rejection leaves receipts out of the live draft and later ordinary saves (0.988733ms)
+2026-10-04T18:51:34.1015724Z ✔ HSK3 homework waits without an adopted receipt and confirms exactly one immutable attempt (1.151171ms)
+2026-10-04T18:51:34.1017338Z ✔ HSK3 homework cancelled lock wait cannot reappear in a later draft save (0.937587ms)
+2026-10-04T18:51:34.1018589Z ✔ HSK3 homework newer answer during a lock wait wins without a submission (1.22832ms)
+2026-10-04T18:51:34.1019926Z ✔ HSK3 individual listening quota rejection leaves receipts out of the live draft and later ordinary saves (1.129162ms)
+2026-10-04T18:51:34.1021454Z ✔ HSK3 individual listening waits without an adopted receipt and confirms exactly one immutable attempt (1.387887ms)
+2026-10-04T18:51:34.1022794Z ✔ HSK3 individual listening cancelled lock wait cannot reappear in a later draft save (1.297103ms)
+2026-10-04T18:51:34.1024056Z ✔ HSK3 individual listening newer answer during a lock wait wins without a submission (0.91246ms)
+2026-10-04T18:51:34.1025287Z ✔ individual listening rejects stale rounds, answers and already submitted questions (1.426565ms)
+2026-10-04T18:51:34.1026642Z ✔ an unavailable write lock never adopts a homework receipt (0.79931ms)
+2026-10-04T18:51:34.1028018Z ✔ frozen independent review authorizes exactly two source-frame sentences and retains low probability observations (7.105555ms)
+2026-10-04T18:51:34.1029497Z ✔ subset source pinyin, actual lesson bytes, parent and ordinal match unchanged Chinese metadata (3.670398ms)
+2026-10-04T18:51:34.1030810Z ✔ wrong ranges, missing gates, source substitutions and invented precision are rejected (10.123841ms)
+2026-10-04T18:51:34.1032123Z ✔ joint overlay and authority tampering cannot create a new independent-review acceptance (11.170711ms)
+2026-10-04T18:51:34.1033436Z ✔ legacy manifest bytes and all 61 words, 13 holds, 78 lines and 33 children remain unchanged (6.415933ms)
+2026-10-04T18:51:34.1034922Z ✔ partial child keeps original ordinal 2 without a precise parent, sibling or color word; legacy children retain sequence (2.422438ms)
+2026-10-04T18:51:34.1036824Z (node:2221) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+2026-10-04T18:51:34.1040018Z (Use `node --trace-warnings ...` to show where the warning was created)
+2026-10-04T18:51:34.1041385Z Reviewed sentence overlay rejected; previously reviewed segments and original tracks remain available.
+2026-10-04T18:51:34.1066790Z Reviewed sentence overlay rejected; previously reviewed segments and original tracks remain available.
+2026-10-04T18:51:34.1077888Z ✔ concurrent callers await the same delayed actual crypto gate before overlay-ready (173.244045ms)
+2026-10-04T18:51:34.1079385Z ✔ concurrent rejection retains baseline and resolves only after rejection, with no phantom subset (3.307988ms)
+2026-10-04T18:51:34.1080740Z ✔ invalid legacy input rejects every concurrent caller and cannot cache false readiness (1.791439ms)
+2026-10-04T18:51:34.1081961Z ✔ optional new overlay chunk load failure preserves completed legacy registry (4.93382ms)
+2026-10-04T18:51:34.1083284Z ✔ verified pilot clip ranges carry exact original identities and source text (4.050584ms)
+2026-10-04T18:51:34.1084822Z ✔ unverified, foreign, out-of-track and source-hash substitutions are rejected (3.016174ms)
+2026-10-04T18:51:34.1086418Z ✔ multi-sentence source fragments cannot be swapped or replaced (1.523009ms)
+2026-10-04T18:51:34.1087760Z ✔ source text, pinyin, per-entry hash, scope and reviewed timing cannot be forged (4.592001ms)
+2026-10-04T18:51:34.1089143Z ✔ word partitions and actual sentence coverage reject losses, orphans and relabeled whole paragraphs (2.188761ms)
+2026-10-04T18:51:34.1090415Z ✔ no source authority or duplicate merged IDs can silently expose segments (0.616339ms)
+2026-10-04T18:51:34.1091743Z ✔ pending bounds, inflated decoded duration, claimed certification and forged transcript are rejected (2.381979ms)
+2026-10-04T18:51:34.1093432Z ✔ reviewed HSK2 lessons 2–3 retain exact 25 verified and seven pending words after runtime merge (4.852619ms)
+2026-10-04T18:51:34.1095007Z ✔ grammar group metadata cannot omit duplicate reorder or replace baseline examples or lose bilingual sources (27.236555ms)
+2026-10-04T18:51:34.1096756Z ✔ actual grouped grammar retains full baseline summary and interleaves every original bilingual pinyin example once (8.330711ms)
+2026-10-04T18:51:34.1098310Z ✔ both supplemental picture-description labels retain full bilingual text after the source activity (10.526081ms)
+2026-10-04T18:51:34.1099746Z ✔ cross-page grammar examples retain their own visible source beside the unchanged explanation page (4.628925ms)
+2026-10-04T18:51:34.1101097Z ✔ source grammar explanations are additive, bilingual and tied to one real source grammar (19.496259ms)
+2026-10-04T18:51:34.1102482Z ✔ unmapped supplemental picture paragraphs collapse without hiding textbook text tasks or safety notes (8.749755ms)
+2026-10-04T18:51:34.1103732Z ✔ HSK3 glossary has all22 starred heads and23 stable word-sense records (35.245847ms)
+2026-10-04T18:51:34.1104752Z ✔ HSK3 star patch does not alter any existing lesson values (80.58552ms)
+2026-10-04T18:51:34.1106279Z ✔ all18 additional official-source registries and523 word anchors retain every complete old word and source (24.957579ms)
+2026-10-04T18:51:34.1107652Z ✔ HSK3 L10 reviewed source fields keys and figures stay complete (4.705861ms)
+2026-10-04T18:51:34.1108709Z ✔ HSK3 L11 reviewed source fields keys and figures stay complete (2.360286ms)
+2026-10-04T18:51:34.1110084Z ✔ HSK3 L10 education source task retains optional read-aloud marker, source retelling and ungraded personal comparison (2.828574ms)
+2026-10-04T18:51:34.1111568Z ✔ HSK3 L11 split listening answer pages and no invented culture/review survive integration (1.583899ms)
+2026-10-04T18:51:34.1112924Z ✔ all25 independently reviewed Vietnamese corrections remain in their exact new-layer locations (32.170475ms)
+2026-10-04T18:51:34.1114123Z ✔ source explanation groups preserve every original example once (3.299986ms)
+2026-10-04T18:51:34.1115389Z ✔ HSK3 L12 reviewed source activities preserve field counts official keys and source-specific shapes (7.74011ms)
+2026-10-04T18:51:34.1116973Z ✔ HSK3 L13 reviewed source activities preserve field counts official keys and source-specific shapes (1.436931ms)
+2026-10-04T18:51:34.1118453Z ✔ HSK3 L12 and13 source and answer page continuations stay attached to individual fields (2.406695ms)
+2026-10-04T18:51:34.1119746Z ✔ HSK3 L12 review binds eleven rows to twenty-two distinct checks across both source pages (1.364062ms)
+2026-10-04T18:51:34.1120996Z ✔ HSK3 L13 first grammar source frames preserve 1+2+2 independent non-unique blanks (1.803957ms)
+2026-10-04T18:51:34.1122427Z ✔ optional empty omitted and nonempty records preserve values and submission through real save reload export restore (3.946079ms)
+2026-10-04T18:51:34.1123860Z ✔ L12 least-liked season and L13 prepared refreshments translations retain the source meanings (2.9399ms)
+2026-10-04T18:51:34.1125049Z ✔ HSK3 L14 reviewed source counts and exact official keys remain complete (4.487555ms)
+2026-10-04T18:51:34.1126297Z ✔ HSK3 L15 reviewed source counts and exact official keys remain complete (2.746261ms)
+2026-10-04T18:51:34.1127442Z ✔ HSK3 L15 ambiguous Nanjing age choice cannot become a unique automatic answer (2.104215ms)
+2026-10-04T18:51:34.1128870Z ✔ every L14 and15 manifest identity has a real renderer binding including all four L15 cities (6.604619ms)
+2026-10-04T18:51:34.1130129Z ✔ HSK3 L14 repaired borrowing option and four blank story rows preserve source roles (3.024095ms)
+2026-10-04T18:51:34.1131389Z ✔ HSK3 L15 source review keeps ten pairs and four full unsplit explanations (1.508908ms)
+2026-10-04T18:51:34.1132598Z ✔ HSK3 L16 final-unit source counts keys blanks and figure bindings survive integration (4.978016ms)
+2026-10-04T18:51:34.1133823Z ✔ HSK3 L17 final-unit source counts keys blanks and figure bindings survive integration (2.615736ms)
+2026-10-04T18:51:34.1135023Z ✔ HSK3 L18 final-unit source counts keys blanks and figure bindings survive integration (2.150574ms)
+2026-10-04T18:51:34.1136469Z ✔ L16 animal discussion retains three original required IDs and a separate optional fourth extension (1.420566ms)
+2026-10-04T18:51:34.1137989Z ✔ L17 repaired reference agrees with preserved teacher wording and emotions panel has an explicit activity binding (1.368068ms)
+2026-10-04T18:51:34.1139471Z ✔ L18 approximation tasks and 刚才/刚刚 exercises are editorial and preserve both real source groups (1.813532ms)
+2026-10-04T18:51:34.1140754Z ✔ feedback note is a separate bilingual display-only copy with invalid shapes rejected (13.147146ms)
+2026-10-04T18:51:34.1141937Z ✔ HSK3 L8 original source interaction inventory and immutable learning corpus (9.225448ms)
+2026-10-04T18:51:34.1142956Z ✔ HSK3 L8 official word-bank order and cross-page citations (2.68498ms)
+2026-10-04T18:51:34.1143982Z ✔ HSK3 L9 original source interaction inventory and immutable learning corpus (2.1351ms)
+2026-10-04T18:51:34.1144980Z ✔ HSK3 L9 official word-bank order and cross-page citations (2.029122ms)
+2026-10-04T18:51:34.1146197Z ✔ HSK3 L9 review is open self-tracking, not a correctness score (2.200017ms)
+2026-10-04T18:51:34.1147339Z ✔ HSK3 L9 exact source corrections and L8 scene provenance remain in primary data (5.153578ms)
+2026-10-04T18:51:34.1148495Z ✔ every printed POS/sense maps once with exact pages, audio and translation (10.832448ms)
+2026-10-04T18:51:34.1149621Z ✔ same-spelling different meanings and POS remain separate canonical cards (1.925118ms)
+2026-10-04T18:51:34.1150756Z ✔ the complete catalogue count is actual POS/sense records, not syllabus targets (7.364732ms)
+2026-10-04T18:51:34.1152019Z ✔ release validation rejects pending review, stale translations and missing homograph evidence (5.934551ms)
+2026-10-04T18:51:34.1153261Z ✔ wrong course, duplicate mapping, missing source and unreviewed merge fail closed (10.96244ms)
+2026-10-04T18:51:34.1154589Z ✔ an explicitly reviewed repeated sense uses selected-lesson provenance, never an unselected audio group (0.402069ms)
+2026-10-04T18:51:34.1156212Z ✔ reviewed HSK2 appendix binds every stable sense with source POS distinct from editorial labels (2.196953ms)
+2026-10-04T18:51:34.1157583Z ✔ editable source-table names stay in headers and remain independent through save/remount/reset (19.427411ms)
+2026-10-04T18:51:34.1159152Z ✔ cross-page review cites each identical row once while mixed provenance stays beside separate cells (10.623606ms)
+2026-10-04T18:51:34.1160475Z ✔ online verification binds full release identity and checks new/protected bytes (16.866277ms)
+2026-10-04T18:51:34.1161672Z ✔ online verifier rejects a stale manifest and never accepts changed protected bytes (6.734172ms)
+2026-10-04T18:51:34.1162882Z ✔ online verifier refuses another origin, pilot release and unscoped paths (6.876644ms)
+2026-10-04T18:51:34.8137984Z ✔ all seven routeable entries resolve activity crops and shared textbook/audio against real packaged paths (183.445012ms)
+2026-10-04T18:51:34.8139768Z ✔ unknown source images, PDF, changed accepted crops/audio/strokes and symlinks fail before freezing (342.893106ms)
+2026-10-04T18:51:34.8141172Z ✔ source or frozen-input drift fails before output; dirty or prebuilt data cannot be labeled release (133.771682ms)
+2026-10-04T18:51:34.8148639Z ✔ release gate still requires exact commit, 48 lessons, 33 textbook lessons, 579 pages, sixteen stages and both engines (0.422359ms)
+2026-10-04T18:51:34.8160252Z ✔ actual current crop registry uses lesson 4 current version and rejects path traversal/private sources (85.230269ms)
+2026-10-04T18:51:34.8161694Z ✔ production assembly anchors the actual 1446-file 2da tree and explicitly separates developer-only files (17.378049ms)
+2026-10-04T18:51:34.8163109Z ✔ entry and build-configuration edits are dirty even when runtime src/content are untouched (127.093629ms)
+2026-10-04T18:51:34.9220987Z ✔ two locked course entries share identical frozen assets with nested relative media paths (1.095011ms)
+2026-10-04T18:51:34.9221706Z ✔ portal updates only2/3 course cards and retains exact HSK1 and both HSK4 cards (1.454116ms)
+2026-10-04T18:51:34.9224509Z ✔ package manifest binds every scoped output byte to the frozen source input without copying raw sources (116.915477ms)
+2026-10-04T18:51:34.9228631Z ✔ missing audio, unknown raw PDF, symlinks and wrong identity fail before release creation (143.593074ms)
+2026-10-04T18:51:34.9234958Z ✔ output and public-input allowlists reject legacy overwrites and source package paths (0.260879ms)
+2026-10-04T18:51:34.9236553Z ✔ small frozen-code transfer restores all exact tested bytes from264 hash-bound originals without rebuilding (231.402907ms)
+2026-10-04T18:51:34.9237368Z ✔ frozen transfer fails before output on changed audio, code, extra raw source or wrong source commit (441.031686ms)
+2026-10-04T18:51:34.9294971Z ✔ question editorial note survives fallback rendering without leaking before submit (12.749924ms)
+2026-10-04T18:51:34.9296176Z ✔ question editorial note survives mapped rendering without leaking before submit (9.446192ms)
+2026-10-04T18:51:34.9297359Z ✔ reviewed-source guards reject a subject/negation substitution, relocated blank and wrong page (1.702507ms)
+2026-10-04T18:51:34.9298539Z ✔ source menu accepts exact exclusive slots and rejects dropped duplicated foreign or malformed fields (37.689557ms)
+2026-10-04T18:51:34.9299832Z ✔ actual menu renderer retains source quadrants bilingual fixed foods and every saved answer without early feedback (12.186285ms)
+2026-10-04T18:51:34.9301077Z ✔ activity support gallery excludes field-bound pictures and places each original image once (3.61163ms)
+2026-10-04T18:51:34.9302343Z ✔ production-store delayed submit cannot restore feedback after edit newer submit dispose or failed write (29.816448ms)
+2026-10-04T18:51:34.9303306Z ✔ edition and level identities reject cross-course data (4.906674ms)
+2026-10-04T18:51:34.9304112Z ✔ new stores do not read or mutate nonempty legacy and HSK1 records (1.492393ms)
+2026-10-04T18:51:34.9305051Z ✔ first submission is immutable, latest updates without overwriting draft answer text (4.660123ms)
+2026-10-04T18:51:34.9306057Z ✔ manual writing never receives automatic points (0.245426ms)
+2026-10-04T18:51:34.9306729Z ✔ automatic choices and ordering grade exact IDs (0.353677ms)
+2026-10-04T18:51:34.9307465Z ✔ save failure preserves draft and does not create success (0.621185ms)
+2026-10-04T18:51:34.9308545Z ✔ competing tabs produce conflict instead of lost updates (0.669457ms)
+2026-10-04T18:51:34.9309407Z ✔ backup preview, import and reset recovery are edition-isolated (0.792371ms)
+2026-10-04T18:51:34.9310161Z ✔ stale import preview cannot replace later edits (0.317263ms)
+2026-10-04T18:51:34.9310890Z ✔ corrupt original storage is protected and exportable (4.459869ms)
+2026-10-04T18:51:34.9311754Z ✔ invalid imported scores, duplicate queues and legacy lesson numbers fail (0.415238ms)
+2026-10-04T18:51:34.9312660Z ✔ routing normalizes invalid courses while retaining valid lesson 18 (0.795856ms)
+2026-10-04T18:51:34.9313651Z ✔ historical question snapshots survive source edits and reorder without rescoring (5.643787ms)
+2026-10-04T18:51:34.9314741Z ✔ legacy nonempty stores receive optional learning fields without overwriting submissions (0.18774ms)
+2026-10-04T18:51:34.9315715Z ✔ routes preserve per-level lesson bounds and native HSK1 historical contracts (0.961512ms)
+2026-10-04T18:51:34.9316779Z ✔ textbook activity and reading records reject foreign identities (0.408478ms)
+2026-10-04T18:51:34.9317981Z ✔ independent listening round retains immutable per-question submissions and validates queue (0.615487ms)
+2026-10-04T18:51:34.9319064Z ✔ backup snapshots validate their own historical answers without current-bank reinterpretation (0.886611ms)
+2026-10-04T18:51:34.9319669Z ℹ tests 157
+2026-10-04T18:51:34.9319916Z ℹ suites 0
+2026-10-04T18:51:34.9320223Z ℹ pass 157
+2026-10-04T18:51:34.9320475Z ℹ fail 0
+2026-10-04T18:51:34.9320726Z ℹ cancelled 0
+2026-10-04T18:51:34.9321012Z ℹ skipped 0
+2026-10-04T18:51:34.9321279Z ℹ todo 0
+2026-10-04T18:51:34.9321553Z ℹ duration_ms 2435.46489
+2026-10-04T18:51:35.5284677Z ##[group]Run npx playwright install --with-deps chromium && sudo apt-get install -y fonts-noto-cjk
+2026-10-04T18:51:35.5285248Z [36;1mnpx playwright install --with-deps chromium && sudo apt-get install -y fonts-noto-cjk[0m
+2026-10-04T18:51:35.5341066Z shell: /usr/bin/bash -e {0}
+2026-10-04T18:51:35.5341276Z ##[endgroup]
+2026-10-04T18:51:36.1250428Z Installing dependencies...
+2026-10-04T18:51:36.1314820Z Switching to root user to install dependencies...
+2026-10-04T18:51:36.2156874Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-04T18:51:36.2238858Z Get:4 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-10-04T18:51:36.2428471Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-10-04T18:51:36.2474222Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-10-04T18:51:36.2965083Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-10-04T18:51:36.3573052Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-10-04T18:51:36.3719793Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [12.6 kB]
+2026-10-04T18:51:36.3809556Z Get:8 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [511 kB]
+2026-10-04T18:51:36.4116307Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1364 kB]
+2026-10-04T18:51:36.4196878Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [304 kB]
+2026-10-04T18:51:36.4218765Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [181 kB]
+2026-10-04T18:51:36.4238562Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1699 kB]
+2026-10-04T18:51:36.4322858Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [341 kB]
+2026-10-04T18:51:36.4345707Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [388 kB]
+2026-10-04T18:51:36.4373357Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1720 kB]
+2026-10-04T18:51:36.4476537Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [394 kB]
+2026-10-04T18:51:36.4487137Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+2026-10-04T18:51:36.4596651Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5776 B]
+2026-10-04T18:51:36.5037441Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [12.6 kB]
+2026-10-04T18:51:36.5043405Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1069 kB]
+2026-10-04T18:51:36.5091469Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [221 kB]
+2026-10-04T18:51:36.5118027Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Components [46.4 kB]
+2026-10-04T18:51:36.5131876Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1216 kB]
+2026-10-04T18:51:36.5183357Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [244 kB]
+2026-10-04T18:51:36.5202177Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Components [76.4 kB]
+2026-10-04T18:51:36.5216706Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1566 kB]
+2026-10-04T18:51:36.5282570Z Get:27 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [361 kB]
+2026-10-04T18:51:36.5967956Z Get:28 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [458 kB]
+2026-10-04T18:51:44.3716748Z Fetched 12.6 MB in 1s (10.8 MB/s)
+2026-10-04T18:51:45.0135482Z Reading package lists...
+2026-10-04T18:51:45.0340855Z Reading package lists...
+2026-10-04T18:51:45.2121694Z Building dependency tree...
+2026-10-04T18:51:45.2127703Z Reading state information...
+2026-10-04T18:51:45.3408573Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+2026-10-04T18:51:45.3409203Z libasound2t64 set to manually installed.
+2026-10-04T18:51:45.3409789Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-04T18:51:45.3410361Z libatk-bridge2.0-0t64 set to manually installed.
+2026-10-04T18:51:45.3410914Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-04T18:51:45.3411430Z libatk1.0-0t64 set to manually installed.
+2026-10-04T18:51:45.3412043Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-04T18:51:45.3412590Z libatspi2.0-0t64 set to manually installed.
+2026-10-04T18:51:45.3413116Z libcairo2 is already the newest version (1.18.0-3build1).
+2026-10-04T18:51:45.3413669Z libcairo2 set to manually installed.
+2026-10-04T18:51:45.3414266Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+2026-10-04T18:51:45.3414837Z libcups2t64 set to manually installed.
+2026-10-04T18:51:45.3415389Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+2026-10-04T18:51:45.3416085Z libdbus-1-3 set to manually installed.
+2026-10-04T18:51:45.3416551Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+2026-10-04T18:51:45.3416994Z libdrm2 set to manually installed.
+2026-10-04T18:51:45.3417382Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.9).
+2026-10-04T18:51:45.3417715Z libglib2.0-0t64 set to manually installed.
+2026-10-04T18:51:45.3418048Z libnspr4 is already the newest version (2:4.35-1.1build1).
+2026-10-04T18:51:45.3418343Z libnspr4 set to manually installed.
+2026-10-04T18:51:45.3418639Z libnss3 is already the newest version (2:3.98-1ubuntu0.2).
+2026-10-04T18:51:45.3418922Z libnss3 set to manually installed.
+2026-10-04T18:51:45.3419238Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-10-04T18:51:45.3419671Z libpango-1.0-0 set to manually installed.
+2026-10-04T18:51:45.3420012Z libx11-6 is already the newest version (2:1.8.7-1build1).
+2026-10-04T18:51:45.3420300Z libx11-6 set to manually installed.
+2026-10-04T18:51:45.3420577Z libxcb1 is already the newest version (1.15-1ubuntu2).
+2026-10-04T18:51:45.3420905Z libxcb1 set to manually installed.
+2026-10-04T18:51:45.3421288Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+2026-10-04T18:51:45.3421629Z libxcomposite1 set to manually installed.
+2026-10-04T18:51:45.3421962Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+2026-10-04T18:51:45.3422264Z libxdamage1 set to manually installed.
+2026-10-04T18:51:45.3422566Z libxext6 is already the newest version (2:1.3.4-1build2).
+2026-10-04T18:51:45.3422860Z libxext6 set to manually installed.
+2026-10-04T18:51:45.3423164Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+2026-10-04T18:51:45.3423600Z libxfixes3 set to manually installed.
+2026-10-04T18:51:45.3424055Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+2026-10-04T18:51:45.3424506Z libxkbcommon0 set to manually installed.
+2026-10-04T18:51:45.3425003Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+2026-10-04T18:51:45.3425455Z libxrandr2 set to manually installed.
+2026-10-04T18:51:45.3426066Z xvfb is already the newest version (2:21.1.12-1ubuntu1.8).
+2026-10-04T18:51:45.3426481Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2026-10-04T18:51:45.3427185Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2026-10-04T18:51:45.3427911Z libfontconfig1 set to manually installed.
+2026-10-04T18:51:45.3428352Z libfreetype6 is already the newest version (2.13.2+dfsg-1ubuntu0.1).
+2026-10-04T18:51:45.3428689Z libfreetype6 set to manually installed.
+2026-10-04T18:51:45.3429022Z fonts-liberation is already the newest version (1:2.1.5-3).
+2026-10-04T18:51:45.3429339Z fonts-liberation set to manually installed.
+2026-10-04T18:51:45.3429792Z The following additional packages will be installed:
+2026-10-04T18:51:45.3430380Z   libgl1-mesa-dri libglx-mesa0 mesa-libgallium xfonts-encodings xfonts-utils
+2026-10-04T18:51:45.3431068Z Recommended packages:
+2026-10-04T18:51:45.3431426Z   fonts-ipafont-mincho fonts-tlwg-loma
+2026-10-04T18:51:45.3567475Z The following NEW packages will be installed:
+2026-10-04T18:51:45.3568511Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2026-10-04T18:51:45.3572270Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+2026-10-04T18:51:45.3572764Z   xfonts-utils
+2026-10-04T18:51:45.3575155Z The following packages will be upgraded:
+2026-10-04T18:51:45.3578702Z   libgbm1 libgl1-mesa-dri libglx-mesa0 mesa-libgallium
+2026-10-04T18:51:45.3721846Z 4 upgraded, 9 newly installed, 0 to remove and 21 not upgraded.
+2026-10-04T18:51:45.3722360Z Need to get 32.1 MB of archives.
+2026-10-04T18:51:45.3722760Z After this operation, 79.5 MB of additional disk space will be used.
+2026-10-04T18:51:45.3723166Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-04T18:51:45.4725214Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+2026-10-04T18:51:45.8225212Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+2026-10-04T18:51:46.0244958Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+2026-10-04T18:51:46.1065522Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+2026-10-04T18:51:46.2145017Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+2026-10-04T18:51:46.4697820Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgl1-mesa-dri amd64 25.2.8-0ubuntu0.24.04.4 [38.0 kB]
+2026-10-04T18:51:46.5560292Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglx-mesa0 amd64 25.2.8-0ubuntu0.24.04.4 [110 kB]
+2026-10-04T18:51:46.6382259Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 25.2.8-0ubuntu0.24.04.4 [34.2 kB]
+2026-10-04T18:51:46.7197093Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-libgallium amd64 25.2.8-0ubuntu0.24.04.4 [10.8 MB]
+2026-10-04T18:51:47.0807124Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+2026-10-04T18:51:47.1760475Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+2026-10-04T18:51:47.2588352Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+2026-10-04T18:51:47.3490039Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+2026-10-04T18:51:47.6292021Z Fetched 32.1 MB in 2s (16.1 MB/s)
+2026-10-04T18:51:47.6666710Z Selecting previously unselected package fonts-ipafont-gothic.
+2026-10-04T18:51:47.6884478Z (Reading database ... 
+2026-10-04T18:51:47.6884866Z (Reading database ... 5%
+2026-10-04T18:51:47.6885189Z (Reading database ... 10%
+2026-10-04T18:51:47.6885500Z (Reading database ... 15%
+2026-10-04T18:51:47.6885717Z (Reading database ... 20%
+2026-10-04T18:51:47.6886079Z (Reading database ... 25%
+2026-10-04T18:51:47.6886283Z (Reading database ... 30%
+2026-10-04T18:51:47.6886492Z (Reading database ... 35%
+2026-10-04T18:51:47.6886681Z (Reading database ... 40%
+2026-10-04T18:51:47.6886867Z (Reading database ... 45%
+2026-10-04T18:51:47.6887273Z (Reading database ... 50%
+2026-10-04T18:51:47.6921169Z (Reading database ... 55%
+2026-10-04T18:51:47.8377087Z (Reading database ... 60%
+2026-10-04T18:51:48.0233832Z (Reading database ... 65%
+2026-10-04T18:51:48.2143173Z (Reading database ... 70%
+2026-10-04T18:51:48.4186594Z (Reading database ... 75%
+2026-10-04T18:51:48.5184495Z (Reading database ... 80%
+2026-10-04T18:51:48.6751164Z (Reading database ... 85%
+2026-10-04T18:51:48.7737437Z (Reading database ... 90%
+2026-10-04T18:51:48.8713707Z (Reading database ... 95%
+2026-10-04T18:51:48.8714099Z (Reading database ... 100%
+2026-10-04T18:51:48.8714903Z (Reading database ... 202296 files and directories currently installed.)
+2026-10-04T18:51:48.8753888Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+2026-10-04T18:51:48.8883499Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-10-04T18:51:49.1094520Z Selecting previously unselected package fonts-freefont-ttf.
+2026-10-04T18:51:49.1203350Z Preparing to unpack .../01-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+2026-10-04T18:51:49.1210345Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-10-04T18:51:49.2090754Z Selecting previously unselected package fonts-tlwg-loma-otf.
+2026-10-04T18:51:49.2199259Z Preparing to unpack .../02-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+2026-10-04T18:51:49.2206386Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-10-04T18:51:49.2368981Z Selecting previously unselected package fonts-unifont.
+2026-10-04T18:51:49.2474696Z Preparing to unpack .../03-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+2026-10-04T18:51:49.2600571Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+2026-10-04T18:51:49.4403495Z Selecting previously unselected package fonts-wqy-zenhei.
+2026-10-04T18:51:49.4517448Z Preparing to unpack .../04-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+2026-10-04T18:51:49.4725020Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+2026-10-04T18:51:49.9414472Z Preparing to unpack .../05-libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-04T18:51:49.9532241Z Unpacking libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-04T18:51:49.9941772Z Preparing to unpack .../06-libglx-mesa0_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-04T18:51:49.9966448Z Unpacking libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-04T18:51:50.0270900Z Preparing to unpack .../07-libgbm1_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-04T18:51:50.0286022Z Unpacking libgbm1:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-04T18:51:50.0585759Z Preparing to unpack .../08-mesa-libgallium_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+2026-10-04T18:51:50.0601102Z Unpacking mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.4) over (25.2.8-0ubuntu0.24.04.2) ...
+2026-10-04T18:51:50.4086776Z Selecting previously unselected package xfonts-encodings.
+2026-10-04T18:51:50.4197033Z Preparing to unpack .../09-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+2026-10-04T18:51:50.4201913Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-10-04T18:51:50.4446912Z Selecting previously unselected package xfonts-utils.
+2026-10-04T18:51:50.4554100Z Preparing to unpack .../10-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+2026-10-04T18:51:50.4560769Z Unpacking xfonts-utils (1:7.7+6build3) ...
+2026-10-04T18:51:50.4839132Z Selecting previously unselected package xfonts-cyrillic.
+2026-10-04T18:51:50.4944648Z Preparing to unpack .../11-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+2026-10-04T18:51:50.4949804Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-10-04T18:51:50.5199934Z Selecting previously unselected package xfonts-scalable.
+2026-10-04T18:51:50.5304601Z Preparing to unpack .../12-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+2026-10-04T18:51:50.5309717Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+2026-10-04T18:51:50.5750445Z Setting up mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-04T18:51:50.5765475Z Setting up libgbm1:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-04T18:51:50.5778774Z Setting up libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-04T18:51:50.5837165Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+2026-10-04T18:51:50.6114405Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-10-04T18:51:50.6126863Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-10-04T18:51:50.6138826Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-10-04T18:51:50.6163892Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-10-04T18:51:50.6217727Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+2026-10-04T18:51:50.6228355Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+2026-10-04T18:51:50.6240648Z Setting up libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+2026-10-04T18:51:50.6253625Z Setting up xfonts-utils (1:7.7+6build3) ...
+2026-10-04T18:51:50.6283371Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-10-04T18:51:50.6515647Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+2026-10-04T18:51:50.6740233Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+2026-10-04T18:51:51.2784057Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-10-04T18:51:51.2810437Z Not building database; man-db/auto-update is not 'true'.
+2026-10-04T18:51:51.2819293Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-10-04T18:51:51.8284273Z 
+2026-10-04T18:51:51.8284842Z Running kernel seems to be up-to-date.
+2026-10-04T18:51:51.8285058Z 
+2026-10-04T18:51:51.8285196Z No services need to be restarted.
+2026-10-04T18:51:51.8285356Z 
+2026-10-04T18:51:51.8285512Z No containers need to be restarted.
+2026-10-04T18:51:51.8285665Z 
+2026-10-04T18:51:51.8286069Z No user sessions are running outdated binaries.
+2026-10-04T18:51:51.8286243Z 
+2026-10-04T18:51:51.8286470Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-10-04T18:51:52.5798579Z Downloading Chrome for Testing 151.0.7922.34 (playwright chromium v1234) from https://cdn.playwright.dev/builds/cft/151.0.7922.34/linux64/chrome-linux64.zip
+2026-10-04T18:51:53.4819232Z |                                                                                |   0% of 184.3 MiB
+2026-10-04T18:51:53.6746897Z |■■■■■■■■                                                                        |  10% of 184.3 MiB
+2026-10-04T18:51:53.7687521Z |■■■■■■■■■■■■■■■■                                                                |  20% of 184.3 MiB
+2026-10-04T18:51:53.8272015Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 184.3 MiB
+2026-10-04T18:51:53.8860233Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 184.3 MiB
+2026-10-04T18:51:53.9533506Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 184.3 MiB
+2026-10-04T18:51:53.9972917Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 184.3 MiB
+2026-10-04T18:51:54.0615001Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 184.3 MiB
+2026-10-04T18:51:54.1082521Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 184.3 MiB
+2026-10-04T18:51:54.1946350Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 184.3 MiB
+2026-10-04T18:51:54.2515682Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 184.3 MiB
+2026-10-04T18:51:56.5888094Z Chrome for Testing 151.0.7922.34 (playwright chromium v1234) downloaded to /home/runner/.cache/ms-playwright/chromium-1234
+2026-10-04T18:51:56.5890988Z Downloading FFmpeg (playwright ffmpeg v1011) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+2026-10-04T18:51:57.4861821Z |                                                                                |   0% of 2.3 MiB
+2026-10-04T18:51:57.5107200Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+2026-10-04T18:51:57.5312266Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+2026-10-04T18:51:57.5391013Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+2026-10-04T18:51:57.5416249Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+2026-10-04T18:51:57.5436939Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+2026-10-04T18:51:57.5461471Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+2026-10-04T18:51:57.5493819Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+2026-10-04T18:51:57.5509207Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+2026-10-04T18:51:57.5536279Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+2026-10-04T18:51:57.5566301Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+2026-10-04T18:51:57.6013558Z FFmpeg (playwright ffmpeg v1011) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+2026-10-04T18:51:57.6015750Z Downloading Chrome Headless Shell 151.0.7922.34 (playwright chromium-headless-shell v1234) from https://cdn.playwright.dev/builds/cft/151.0.7922.34/linux64/chrome-headless-shell-linux64.zip
+2026-10-04T18:51:58.5022303Z |                                                                                |   0% of 114.7 MiB
+2026-10-04T18:51:58.5729306Z |■■■■■■■■                                                                        |  10% of 114.7 MiB
+2026-10-04T18:51:58.6243916Z |■■■■■■■■■■■■■■■■                                                                |  20% of 114.7 MiB
+2026-10-04T18:51:58.6721309Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 114.7 MiB
+2026-10-04T18:51:58.7116507Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 114.7 MiB
+2026-10-04T18:51:58.7652106Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 114.7 MiB
+2026-10-04T18:51:58.7972537Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 114.7 MiB
+2026-10-04T18:51:58.8265607Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 114.7 MiB
+2026-10-04T18:51:58.8704382Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 114.7 MiB
+2026-10-04T18:51:58.8940026Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 114.7 MiB
+2026-10-04T18:51:58.9193121Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 114.7 MiB
+2026-10-04T18:52:00.7262641Z Chrome Headless Shell 151.0.7922.34 (playwright chromium-headless-shell v1234) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1234
+2026-10-04T18:52:00.7695408Z Reading package lists...
+2026-10-04T18:52:00.9337136Z Building dependency tree...
+2026-10-04T18:52:00.9344139Z Reading state information...
+2026-10-04T18:52:01.0590831Z Suggested packages:
+2026-10-04T18:52:01.0591298Z   fonts-noto-cjk-extra
+2026-10-04T18:52:01.0704846Z The following NEW packages will be installed:
+2026-10-04T18:52:01.0708891Z   fonts-noto-cjk
+2026-10-04T18:52:01.0850163Z 0 upgraded, 1 newly installed, 0 to remove and 21 not upgraded.
+2026-10-04T18:52:01.0850683Z Need to get 61.2 MB of archives.
+2026-10-04T18:52:01.0851246Z After this operation, 93.2 MB of additional disk space will be used.
+2026-10-04T18:52:01.0851667Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-04T18:52:01.2846690Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-noto-cjk all 1:20230817+repack1-3 [61.2 MB]
+2026-10-04T18:52:03.6720619Z Fetched 61.2 MB in 2s (25.5 MB/s)
+2026-10-04T18:52:03.6880444Z Selecting previously unselected package fonts-noto-cjk.
+2026-10-04T18:52:03.6930951Z (Reading database ... 
+2026-10-04T18:52:03.6931285Z (Reading database ... 5%
+2026-10-04T18:52:03.6931620Z (Reading database ... 10%
+2026-10-04T18:52:03.6931945Z (Reading database ... 15%
+2026-10-04T18:52:03.6932521Z (Reading database ... 20%
+2026-10-04T18:52:03.6932827Z (Reading database ... 25%
+2026-10-04T18:52:03.6933137Z (Reading database ... 30%
+2026-10-04T18:52:03.6933443Z (Reading database ... 35%
+2026-10-04T18:52:03.6933775Z (Reading database ... 40%
+2026-10-04T18:52:03.6934090Z (Reading database ... 45%
+2026-10-04T18:52:03.6934433Z (Reading database ... 50%
+2026-10-04T18:52:03.6948506Z (Reading database ... 55%
+2026-10-04T18:52:03.7033571Z (Reading database ... 60%
+2026-10-04T18:52:03.7057288Z (Reading database ... 65%
+2026-10-04T18:52:03.7076816Z (Reading database ... 70%
+2026-10-04T18:52:03.7106477Z (Reading database ... 75%
+2026-10-04T18:52:03.7134632Z (Reading database ... 80%
+2026-10-04T18:52:03.7156971Z (Reading database ... 85%
+2026-10-04T18:52:03.7287832Z (Reading database ... 90%
+2026-10-04T18:52:03.7513552Z (Reading database ... 95%
+2026-10-04T18:52:03.7513911Z (Reading database ... 100%
+2026-10-04T18:52:03.7514426Z (Reading database ... 202563 files and directories currently installed.)
+2026-10-04T18:52:03.7551343Z Preparing to unpack .../fonts-noto-cjk_1%3a20230817+repack1-3_all.deb ...
+2026-10-04T18:52:03.7614684Z Unpacking fonts-noto-cjk (1:20230817+repack1-3) ...
+2026-10-04T18:52:04.4470986Z Setting up fonts-noto-cjk (1:20230817+repack1-3) ...
+2026-10-04T18:52:04.4660119Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-10-04T18:52:04.9363162Z 
+2026-10-04T18:52:04.9363916Z Running kernel seems to be up-to-date.
+2026-10-04T18:52:04.9364224Z 
+2026-10-04T18:52:04.9364406Z No services need to be restarted.
+2026-10-04T18:52:04.9364613Z 
+2026-10-04T18:52:04.9364796Z No containers need to be restarted.
+2026-10-04T18:52:04.9365010Z 
+2026-10-04T18:52:04.9365227Z No user sessions are running outdated binaries.
+2026-10-04T18:52:04.9365999Z 
+2026-10-04T18:52:04.9366338Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-10-04T18:52:05.6892987Z ##[group]Run node tools/package-unified.mjs --build --input dist --output unified-frozen-flow-package
+2026-10-04T18:52:05.6893548Z [36;1mnode tools/package-unified.mjs --build --input dist --output unified-frozen-flow-package[0m
+2026-10-04T18:52:05.6893935Z [36;1mmkdir baseline-protected-flow-package[0m
+2026-10-04T18:52:05.6894361Z [36;1mgit -C .. archive 2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4 | tar -x -C baseline-protected-flow-package[0m
+2026-10-04T18:52:05.6895148Z [36;1mnode tools/assemble-unified-checkpoint.mjs baseline-protected-flow-package unified-frozen-flow-package unified-site-flow-package .repro-output/flow-package-assembly.json[0m
+2026-10-04T18:52:05.6950892Z shell: /usr/bin/bash -e {0}
+2026-10-04T18:52:05.6951102Z ##[endgroup]
+2026-10-04T18:52:06.5907677Z 
+2026-10-04T18:52:06.5908245Z > hsk-shared-course-app@1.0.0 build
+2026-10-04T18:52:06.5909086Z > node tools/sync-shared-assets.mjs && npm run content:check && npm run check && vite build --outDir /home/runner/work/hsk-hub/hsk-hub/course-app/dist
+2026-10-04T18:52:06.5909501Z 
+2026-10-04T18:52:06.7847199Z {"originalHSK1Audio":93,"requiredCharacters":671,"preservedCharacters":271,"licensedAdditions":400,"complete":true}
+2026-10-04T18:52:06.8625176Z 
+2026-10-04T18:52:06.8625931Z > hsk-shared-course-app@1.0.0 content:check
+2026-10-04T18:52:06.8626486Z > node tools/validate-content.mjs
+2026-10-04T18:52:06.8626726Z 
+2026-10-04T18:52:06.9807757Z {
+2026-10-04T18:52:06.9808096Z   "mode": "release",
+2026-10-04T18:52:06.9808403Z   "totals": {
+2026-10-04T18:52:06.9808658Z     "lessons": 33,
+2026-10-04T18:52:06.9808917Z     "words": 749,
+2026-10-04T18:52:06.9809185Z     "texts": 132,
+2026-10-04T18:52:06.9809435Z     "grammar": 108,
+2026-10-04T18:52:06.9809673Z     "homework": 990,
+2026-10-04T18:52:06.9809935Z     "listening": 132,
+2026-10-04T18:52:06.9810204Z     "sections": 162
+2026-10-04T18:52:06.9810477Z   },
+2026-10-04T18:52:06.9810715Z   "lessons": [
+2026-10-04T18:52:06.9810965Z     {
+2026-10-04T18:52:06.9811275Z       "id": "hsk2-fltrp-2026:l01",
+2026-10-04T18:52:06.9811601Z       "level": 2,
+2026-10-04T18:52:06.9811861Z       "number": 1,
+2026-10-04T18:52:06.9812032Z       "title": {
+2026-10-04T18:52:06.9812473Z         "zh": "她请我们吃了北京烤鸭",
+2026-10-04T18:52:06.9813263Z         "vi": "Cô ấy đã mời chúng tôi ăn vịt quay Bắc Kinh",
+2026-10-04T18:52:06.9813835Z         "py": "Tā qǐng wǒmen chīle Běijīng Kǎoyā"
+2026-10-04T18:52:06.9814165Z       },
+2026-10-04T18:52:06.9814379Z       "words": 15,
+2026-10-04T18:52:06.9814617Z       "texts": 4,
+2026-10-04T18:52:06.9814845Z       "grammar": 3,
+2026-10-04T18:52:06.9815080Z       "homework": 30,
+2026-10-04T18:52:06.9815552Z       "sha256": "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523"
+2026-10-04T18:52:06.9816345Z     },
+2026-10-04T18:52:06.9816548Z     {
+2026-10-04T18:52:06.9816801Z       "id": "hsk2-fltrp-2026:l02",
+2026-10-04T18:52:06.9817113Z       "level": 2,
+2026-10-04T18:52:06.9817342Z       "number": 2,
+2026-10-04T18:52:06.9817582Z       "title": {
+2026-10-04T18:52:06.9817986Z         "zh": "还是打车去北大吧",
+2026-10-04T18:52:06.9818412Z         "vi": "Hay là đi taxi đến Đại học Bắc Kinh nhé",
+2026-10-04T18:52:06.9818852Z         "py": "Háishi dǎchē qù Běidà ba"
+2026-10-04T18:52:06.9819147Z       },
+2026-10-04T18:52:06.9819370Z       "words": 17,
+2026-10-04T18:52:06.9819619Z       "texts": 4,
+2026-10-04T18:52:06.9819854Z       "grammar": 3,
+2026-10-04T18:52:06.9820102Z       "homework": 30,
+2026-10-04T18:52:06.9820556Z       "sha256": "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d"
+2026-10-04T18:52:06.9821008Z     },
+2026-10-04T18:52:06.9821217Z     {
+2026-10-04T18:52:06.9821481Z       "id": "hsk2-fltrp-2026:l03",
+2026-10-04T18:52:06.9821781Z       "level": 2,
+2026-10-04T18:52:06.9822019Z       "number": 3,
+2026-10-04T18:52:06.9822252Z       "title": {
+2026-10-04T18:52:06.9822546Z         "zh": "我想去西安旅游",
+2026-10-04T18:52:06.9823198Z         "vi": "Tôi muốn đi du lịch Tây An",
+2026-10-04T18:52:06.9823615Z         "py": "Wǒ xiǎng qù Xī'ān lǚyóu"
+2026-10-04T18:52:06.9824108Z       },
+2026-10-04T18:52:06.9824325Z       "words": 15,
+2026-10-04T18:52:06.9824559Z       "texts": 4,
+2026-10-04T18:52:06.9824792Z       "grammar": 3,
+2026-10-04T18:52:06.9825154Z       "homework": 30,
+2026-10-04T18:52:06.9825742Z       "sha256": "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506"
+2026-10-04T18:52:06.9826632Z     },
+2026-10-04T18:52:06.9826978Z     {
+2026-10-04T18:52:06.9827399Z       "id": "hsk2-fltrp-2026:l04",
+2026-10-04T18:52:06.9827912Z       "level": 2,
+2026-10-04T18:52:06.9828269Z       "number": 4,
+2026-10-04T18:52:06.9828654Z       "title": {
+2026-10-04T18:52:06.9829125Z         "zh": "你穿红色的很好看",
+2026-10-04T18:52:06.9829664Z         "vi": "Bạn mặc màu đỏ rất đẹp",
+2026-10-04T18:52:06.9890036Z         "py": "Nǐ chuān hóngsè de hěn hǎokàn"
+2026-10-04T18:52:06.9890513Z       },
+2026-10-04T18:52:06.9890783Z       "words": 16,
+2026-10-04T18:52:06.9891016Z       "texts": 4,
+2026-10-04T18:52:06.9891233Z       "grammar": 3,
+2026-10-04T18:52:06.9891462Z       "homework": 30,
+2026-10-04T18:52:06.9891910Z       "sha256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c"
+2026-10-04T18:52:06.9892358Z     },
+2026-10-04T18:52:06.9892549Z     {
+2026-10-04T18:52:06.9892788Z       "id": "hsk2-fltrp-2026:l05",
+2026-10-04T18:52:06.9893094Z       "level": 2,
+2026-10-04T18:52:06.9893281Z       "number": 5,
+2026-10-04T18:52:06.9893454Z       "title": {
+2026-10-04T18:52:06.9893775Z         "zh": "第一次去中国朋友家",
+2026-10-04T18:52:06.9894080Z         "vi": "Lần đầu đến nhà bạn người Trung Quốc",
+2026-10-04T18:52:06.9894429Z         "py": "Dì-yī cì qù Zhōngguó péngyou jiā"
+2026-10-04T18:52:06.9894668Z       },
+2026-10-04T18:52:06.9894827Z       "words": 20,
+2026-10-04T18:52:06.9895004Z       "texts": 4,
+2026-10-04T18:52:06.9895167Z       "grammar": 3,
+2026-10-04T18:52:06.9895329Z       "homework": 30,
+2026-10-04T18:52:06.9895654Z       "sha256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038"
+2026-10-04T18:52:06.9896167Z     },
+2026-10-04T18:52:06.9896322Z     {
+2026-10-04T18:52:06.9896535Z       "id": "hsk2-fltrp-2026:l06",
+2026-10-04T18:52:06.9896799Z       "level": 2,
+2026-10-04T18:52:06.9896960Z       "number": 6,
+2026-10-04T18:52:06.9897124Z       "title": {
+2026-10-04T18:52:06.9897346Z         "zh": "小雪，生日快乐！",
+2026-10-04T18:52:06.9897622Z         "vi": "Tiểu Tuyết, chúc mừng sinh nhật!",
+2026-10-04T18:52:06.9897918Z         "py": "Xiǎoxuě, shēngrì kuàilè!"
+2026-10-04T18:52:06.9898127Z       },
+2026-10-04T18:52:06.9898276Z       "words": 15,
+2026-10-04T18:52:06.9898466Z       "texts": 4,
+2026-10-04T18:52:06.9898637Z       "grammar": 3,
+2026-10-04T18:52:06.9898800Z       "homework": 30,
+2026-10-04T18:52:06.9899100Z       "sha256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20"
+2026-10-04T18:52:06.9899402Z     },
+2026-10-04T18:52:06.9899549Z     {
+2026-10-04T18:52:06.9900006Z       "id": "hsk2-fltrp-2026:l07",
+2026-10-04T18:52:06.9900204Z       "level": 2,
+2026-10-04T18:52:06.9900357Z       "number": 7,
+2026-10-04T18:52:06.9900514Z       "title": {
+2026-10-04T18:52:06.9900743Z         "zh": "他篮球打得很好",
+2026-10-04T18:52:06.9901006Z         "vi": "Anh ấy chơi bóng rổ rất giỏi",
+2026-10-04T18:52:06.9901308Z         "py": "Tā lánqiú dǎ de hěn hǎo"
+2026-10-04T18:52:06.9901517Z       },
+2026-10-04T18:52:06.9901663Z       "words": 20,
+2026-10-04T18:52:06.9901831Z       "texts": 4,
+2026-10-04T18:52:06.9901989Z       "grammar": 3,
+2026-10-04T18:52:06.9902149Z       "homework": 30,
+2026-10-04T18:52:06.9902432Z       "sha256": "15b9f36001307933da8120e66214e3b7a266640022f6953b67b174b2a9c78f4c"
+2026-10-04T18:52:06.9902830Z     },
+2026-10-04T18:52:06.9903028Z     {
+2026-10-04T18:52:06.9903293Z       "id": "hsk2-fltrp-2026:l08",
+2026-10-04T18:52:06.9903595Z       "level": 2,
+2026-10-04T18:52:06.9903829Z       "number": 8,
+2026-10-04T18:52:06.9904063Z       "title": {
+2026-10-04T18:52:06.9904334Z         "zh": "虽然你忘了，但是我记得",
+2026-10-04T18:52:06.9904594Z         "vi": "Dù em quên nhưng anh vẫn nhớ",
+2026-10-04T18:52:06.9905045Z         "py": "Suīrán nǐ wàng le, dànshì wǒ jìde"
+2026-10-04T18:52:06.9905274Z       },
+2026-10-04T18:52:06.9905489Z       "words": 17,
+2026-10-04T18:52:06.9905645Z       "texts": 4,
+2026-10-04T18:52:06.9905984Z       "grammar": 3,
+2026-10-04T18:52:06.9906210Z       "homework": 30,
+2026-10-04T18:52:06.9906510Z       "sha256": "90c7c19aac1d78ed62752356eefe09b6d3ee968c528c2008a53f0f2b1f96d00a"
+2026-10-04T18:52:06.9906819Z     },
+2026-10-04T18:52:06.9906962Z     {
+2026-10-04T18:52:06.9907130Z       "id": "hsk2-fltrp-2026:l09",
+2026-10-04T18:52:06.9907327Z       "level": 2,
+2026-10-04T18:52:06.9907485Z       "number": 9,
+2026-10-04T18:52:06.9907647Z       "title": {
+2026-10-04T18:52:06.9907854Z         "zh": "我去买杯奶茶",
+2026-10-04T18:52:06.9908135Z         "vi": "Tôi đi mua một cốc trà sữa",
+2026-10-04T18:52:06.9908407Z         "py": "Wǒ qù mǎi bēi nǎichá"
+2026-10-04T18:52:06.9908616Z       },
+2026-10-04T18:52:06.9908772Z       "words": 13,
+2026-10-04T18:52:06.9908929Z       "texts": 4,
+2026-10-04T18:52:06.9909090Z       "grammar": 3,
+2026-10-04T18:52:06.9909250Z       "homework": 30,
+2026-10-04T18:52:06.9909550Z       "sha256": "55675df1ef69682537b7137e4f2ba19e2a311cf7738969ecd790dae62cc885aa"
+2026-10-04T18:52:06.9909844Z     },
+2026-10-04T18:52:06.9909985Z     {
+2026-10-04T18:52:06.9910161Z       "id": "hsk2-fltrp-2026:l10",
+2026-10-04T18:52:06.9910359Z       "level": 2,
+2026-10-04T18:52:06.9910512Z       "number": 10,
+2026-10-04T18:52:06.9910668Z       "title": {
+2026-10-04T18:52:06.9910869Z         "zh": "就要考试了",
+2026-10-04T18:52:06.9911085Z         "vi": "Sắp thi rồi",
+2026-10-04T18:52:06.9911333Z         "py": "Jiù yào kǎoshì le"
+2026-10-04T18:52:06.9911530Z       },
+2026-10-04T18:52:06.9911682Z       "words": 15,
+2026-10-04T18:52:06.9911841Z       "texts": 4,
+2026-10-04T18:52:06.9912000Z       "grammar": 3,
+2026-10-04T18:52:06.9912169Z       "homework": 30,
+2026-10-04T18:52:06.9912474Z       "sha256": "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156"
+2026-10-04T18:52:06.9912776Z     },
+2026-10-04T18:52:06.9912932Z     {
+2026-10-04T18:52:06.9913106Z       "id": "hsk2-fltrp-2026:l11",
+2026-10-04T18:52:06.9913299Z       "level": 2,
+2026-10-04T18:52:06.9913464Z       "number": 11,
+2026-10-04T18:52:06.9913624Z       "title": {
+2026-10-04T18:52:06.9913834Z         "zh": "我最喜欢吃中国菜",
+2026-10-04T18:52:06.9914103Z         "vi": "Tôi thích ăn món Trung Quốc nhất",
+2026-10-04T18:52:06.9914411Z         "py": "Wǒ zuì xǐhuan chī Zhōngguó cài"
+2026-10-04T18:52:06.9914628Z       },
+2026-10-04T18:52:06.9914787Z       "words": 13,
+2026-10-04T18:52:06.9914951Z       "texts": 4,
+2026-10-04T18:52:06.9915115Z       "grammar": 3,
+2026-10-04T18:52:06.9915282Z       "homework": 30,
+2026-10-04T18:52:06.9915575Z       "sha256": "01ec965d7f18d41c5c91c053f93544b24c971303ed8b4ca6afd2ad2c03d48ff8"
+2026-10-04T18:52:06.9915998Z     },
+2026-10-04T18:52:06.9916156Z     {
+2026-10-04T18:52:06.9916456Z       "id": "hsk2-fltrp-2026:l12",
+2026-10-04T18:52:06.9916657Z       "level": 2,
+2026-10-04T18:52:06.9916826Z       "number": 12,
+2026-10-04T18:52:06.9916993Z       "title": {
+2026-10-04T18:52:06.9917210Z         "zh": "这里比北京冷多了",
+2026-10-04T18:52:06.9917477Z         "vi": "Ở đây lạnh hơn Bắc Kinh nhiều",
+2026-10-04T18:52:06.9917770Z         "py": "Zhèlǐ bǐ Běijīng lěngduō le"
+2026-10-04T18:52:06.9917992Z       },
+2026-10-04T18:52:06.9918150Z       "words": 11,
+2026-10-04T18:52:06.9918310Z       "texts": 4,
+2026-10-04T18:52:06.9918473Z       "grammar": 3,
+2026-10-04T18:52:06.9918636Z       "homework": 30,
+2026-10-04T18:52:06.9918950Z       "sha256": "c64d2e1bc3dac399f1737338e70474d8ea8559c2aa65207290a515804a97e702"
+2026-10-04T18:52:06.9919245Z     },
+2026-10-04T18:52:06.9919395Z     {
+2026-10-04T18:52:06.9919572Z       "id": "hsk2-fltrp-2026:l13",
+2026-10-04T18:52:06.9919769Z       "level": 2,
+2026-10-04T18:52:06.9919928Z       "number": 13,
+2026-10-04T18:52:06.9920095Z       "title": {
+2026-10-04T18:52:06.9920306Z         "zh": "我们爱上中文课",
+2026-10-04T18:52:06.9920576Z         "vi": "Chúng tôi thích học tiết tiếng Trung",
+2026-10-04T18:52:06.9920987Z         "py": "Wǒmen ài shàng Zhōngwén kè"
+2026-10-04T18:52:06.9921202Z       },
+2026-10-04T18:52:06.9921359Z       "words": 13,
+2026-10-04T18:52:06.9921530Z       "texts": 4,
+2026-10-04T18:52:06.9921690Z       "grammar": 3,
+2026-10-04T18:52:06.9921925Z       "homework": 30,
+2026-10-04T18:52:06.9922367Z       "sha256": "06d5d9e3f096ffe189f8d8214ba5582db9912e776e9ce3cee55d4fbd928057e1"
+2026-10-04T18:52:06.9922748Z     },
+2026-10-04T18:52:06.9922954Z     {
+2026-10-04T18:52:06.9923253Z       "id": "hsk2-fltrp-2026:l14",
+2026-10-04T18:52:06.9923573Z       "level": 2,
+2026-10-04T18:52:06.9923834Z       "number": 14,
+2026-10-04T18:52:06.9924038Z       "title": {
+2026-10-04T18:52:06.9924450Z         "zh": "一个人过年多没意思啊",
+2026-10-04T18:52:06.9924943Z         "vi": "Ăn Tết một mình buồn biết bao",
+2026-10-04T18:52:06.9925471Z         "py": "Yí gè rén guònián duō méi yìsi a"
+2026-10-04T18:52:06.9925934Z       },
+2026-10-04T18:52:06.9926156Z       "words": 14,
+2026-10-04T18:52:06.9926381Z       "texts": 4,
+2026-10-04T18:52:06.9926624Z       "grammar": 3,
+2026-10-04T18:52:06.9926859Z       "homework": 30,
+2026-10-04T18:52:06.9927315Z       "sha256": "74d7a43cbed89ddf152a840d3c5bc06e8200c975fa1de5e9bf4223e227d52e0f"
+2026-10-04T18:52:06.9927772Z     },
+2026-10-04T18:52:06.9927983Z     {
+2026-10-04T18:52:06.9928225Z       "id": "hsk2-fltrp-2026:l15",
+2026-10-04T18:52:06.9928518Z       "level": 2,
+2026-10-04T18:52:06.9928759Z       "number": 15,
+2026-10-04T18:52:06.9929021Z       "title": {
+2026-10-04T18:52:06.9929316Z         "zh": "我想再去一次中国",
+2026-10-04T18:52:06.9929708Z         "vi": "Tôi muốn đến Trung Quốc thêm một lần nữa",
+2026-10-04T18:52:06.9930184Z         "py": "Wǒ xiǎng zài qù yí cì Zhōngguó"
+2026-10-04T18:52:06.9930499Z       },
+2026-10-04T18:52:06.9930717Z       "words": 12,
+2026-10-04T18:52:06.9930956Z       "texts": 4,
+2026-10-04T18:52:06.9931183Z       "grammar": 3,
+2026-10-04T18:52:06.9931434Z       "homework": 30,
+2026-10-04T18:52:06.9931886Z       "sha256": "299a8d8cf8f90e721d8a8c8b0ca24d7c33d759949166cab1edd2eeddf00ae907"
+2026-10-04T18:52:06.9932329Z     },
+2026-10-04T18:52:06.9932545Z     {
+2026-10-04T18:52:06.9932810Z       "id": "hsk3-fltrp-2026:l01",
+2026-10-04T18:52:06.9933113Z       "level": 3,
+2026-10-04T18:52:06.9933357Z       "number": 1,
+2026-10-04T18:52:06.9933610Z       "title": {
+2026-10-04T18:52:06.9933938Z         "zh": "我们去机场接你们",
+2026-10-04T18:52:06.9934369Z         "vi": "Chúng tôi sẽ ra sân bay đón các bạn",
+2026-10-04T18:52:06.9934840Z         "py": "Wǒmen qù jīchǎng jiē nǐmen"
+2026-10-04T18:52:06.9935168Z       },
+2026-10-04T18:52:06.9935395Z       "words": 27,
+2026-10-04T18:52:06.9935626Z       "texts": 4,
+2026-10-04T18:52:06.9935976Z       "grammar": 3,
+2026-10-04T18:52:06.9936233Z       "homework": 30,
+2026-10-04T18:52:06.9936698Z       "sha256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1"
+2026-10-04T18:52:06.9937354Z     },
+2026-10-04T18:52:06.9937567Z     {
+2026-10-04T18:52:06.9937829Z       "id": "hsk3-fltrp-2026:l02",
+2026-10-04T18:52:06.9938126Z       "level": 3,
+2026-10-04T18:52:06.9938372Z       "number": 2,
+2026-10-04T18:52:06.9938605Z       "title": {
+2026-10-04T18:52:06.9938915Z         "zh": "你们想吃什么就点什么",
+2026-10-04T18:52:06.9939328Z         "vi": "Các bạn muốn ăn gì thì gọi món đó",
+2026-10-04T18:52:06.9939812Z         "py": "Nǐmen xiǎng chī shénme jiù diǎn shénme"
+2026-10-04T18:52:06.9940158Z       },
+2026-10-04T18:52:06.9940487Z       "words": 30,
+2026-10-04T18:52:06.9940721Z       "texts": 4,
+2026-10-04T18:52:06.9940975Z       "grammar": 3,
+2026-10-04T18:52:06.9941220Z       "homework": 30,
+2026-10-04T18:52:06.9941688Z       "sha256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1"
+2026-10-04T18:52:06.9942133Z     },
+2026-10-04T18:52:06.9942344Z     {
+2026-10-04T18:52:06.9942595Z       "id": "hsk3-fltrp-2026:l03",
+2026-10-04T18:52:06.9942888Z       "level": 3,
+2026-10-04T18:52:06.9943143Z       "number": 3,
+2026-10-04T18:52:06.9943388Z       "title": {
+2026-10-04T18:52:06.9943709Z         "zh": "这个小区挺好的",
+2026-10-04T18:52:06.9944193Z         "vi": "Khu dân cư này khá tốt",
+2026-10-04T18:52:06.9944651Z         "py": "Zhè ge xiǎoqū tǐng hǎo de"
+2026-10-04T18:52:06.9944990Z       },
+2026-10-04T18:52:06.9945220Z       "words": 27,
+2026-10-04T18:52:06.9945474Z       "texts": 4,
+2026-10-04T18:52:06.9945726Z       "grammar": 3,
+2026-10-04T18:52:06.9946113Z       "homework": 30,
+2026-10-04T18:52:06.9946606Z       "sha256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6"
+2026-10-04T18:52:06.9947098Z     },
+2026-10-04T18:52:06.9947315Z     {
+2026-10-04T18:52:06.9947588Z       "id": "hsk3-fltrp-2026:l04",
+2026-10-04T18:52:06.9947898Z       "level": 3,
+2026-10-04T18:52:06.9948149Z       "number": 4,
+2026-10-04T18:52:06.9948398Z       "title": {
+2026-10-04T18:52:06.9948738Z         "zh": "这家宾馆跟别的都不一样",
+2026-10-04T18:52:06.9949200Z         "vi": "Khách sạn này khác hẳn những nơi khác",
+2026-10-04T18:52:06.9949753Z         "py": "Zhè jiā bīnguǎn gēn biéde dōu bù yíyàng"
+2026-10-04T18:52:06.9950120Z       },
+2026-10-04T18:52:06.9950372Z       "words": 28,
+2026-10-04T18:52:06.9950629Z       "texts": 4,
+2026-10-04T18:52:06.9950881Z       "grammar": 3,
+2026-10-04T18:52:06.9951149Z       "homework": 30,
+2026-10-04T18:52:06.9951649Z       "sha256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30"
+2026-10-04T18:52:06.9952163Z     },
+2026-10-04T18:52:06.9952375Z     {
+2026-10-04T18:52:06.9952626Z       "id": "hsk3-fltrp-2026:l05",
+2026-10-04T18:52:06.9952947Z       "level": 3,
+2026-10-04T18:52:06.9953201Z       "number": 5,
+2026-10-04T18:52:06.9953443Z       "title": {
+2026-10-04T18:52:06.9953821Z         "zh": "这样的照片才好看",
+2026-10-04T18:52:06.9954105Z         "vi": "Ảnh như thế này mới đẹp",
+2026-10-04T18:52:06.9954397Z         "py": "Zhèyàng de zhàopiàn cái hǎokàn"
+2026-10-04T18:52:06.9954620Z       },
+2026-10-04T18:52:06.9954774Z       "words": 28,
+2026-10-04T18:52:06.9954950Z       "texts": 4,
+2026-10-04T18:52:06.9955116Z       "grammar": 4,
+2026-10-04T18:52:06.9955282Z       "homework": 30,
+2026-10-04T18:52:06.9955588Z       "sha256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4"
+2026-10-04T18:52:06.9956143Z     },
+2026-10-04T18:52:06.9956301Z     {
+2026-10-04T18:52:06.9956476Z       "id": "hsk3-fltrp-2026:l06",
+2026-10-04T18:52:06.9956681Z       "level": 3,
+2026-10-04T18:52:06.9956841Z       "number": 6,
+2026-10-04T18:52:06.9956999Z       "title": {
+2026-10-04T18:52:06.9957213Z         "zh": "高铁上还可以点外卖",
+2026-10-04T18:52:06.9957547Z         "vi": "Trên tàu cao tốc còn có thể gọi đồ ăn giao tận nơi",
+2026-10-04T18:52:06.9957901Z         "py": "Gāotiě shàng hái kěyǐ diǎn wàimài"
+2026-10-04T18:52:06.9958130Z       },
+2026-10-04T18:52:06.9958284Z       "words": 31,
+2026-10-04T18:52:06.9958447Z       "texts": 4,
+2026-10-04T18:52:06.9958611Z       "grammar": 3,
+2026-10-04T18:52:06.9958779Z       "homework": 30,
+2026-10-04T18:52:06.9959079Z       "sha256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346"
+2026-10-04T18:52:06.9959539Z     },
+2026-10-04T18:52:06.9959688Z     {
+2026-10-04T18:52:06.9959874Z       "id": "hsk3-fltrp-2026:l07",
+2026-10-04T18:52:06.9960076Z       "level": 3,
+2026-10-04T18:52:06.9960241Z       "number": 7,
+2026-10-04T18:52:06.9960395Z       "title": {
+2026-10-04T18:52:06.9960621Z         "zh": "那条裙子比短裤更好看",
+2026-10-04T18:52:06.9960891Z         "vi": "Chiếc váy kia đẹp hơn quần soóc",
+2026-10-04T18:52:06.9961201Z         "py": "Nà tiáo qúnzi bǐ duǎnkù gèng hǎokàn"
+2026-10-04T18:52:06.9961422Z       },
+2026-10-04T18:52:06.9961582Z       "words": 30,
+2026-10-04T18:52:06.9961736Z       "texts": 4,
+2026-10-04T18:52:06.9961891Z       "grammar": 4,
+2026-10-04T18:52:06.9962050Z       "homework": 30,
+2026-10-04T18:52:06.9962347Z       "sha256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9"
+2026-10-04T18:52:06.9962642Z     },
+2026-10-04T18:52:06.9962797Z     {
+2026-10-04T18:52:06.9962968Z       "id": "hsk3-fltrp-2026:l08",
+2026-10-04T18:52:06.9963175Z       "level": 3,
+2026-10-04T18:52:06.9963334Z       "number": 8,
+2026-10-04T18:52:06.9963493Z       "title": {
+2026-10-04T18:52:06.9963842Z         "zh": "今天我出院了",
+2026-10-04T18:52:06.9964091Z         "vi": "Hôm nay tôi xuất viện",
+2026-10-04T18:52:06.9964357Z         "py": "Jīntiān wǒ chūyuàn le"
+2026-10-04T18:52:06.9964560Z       },
+2026-10-04T18:52:06.9964715Z       "words": 31,
+2026-10-04T18:52:06.9964870Z       "texts": 4,
+2026-10-04T18:52:06.9965024Z       "grammar": 4,
+2026-10-04T18:52:06.9965183Z       "homework": 30,
+2026-10-04T18:52:06.9965479Z       "sha256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24"
+2026-10-04T18:52:06.9965897Z     },
+2026-10-04T18:52:06.9966053Z     {
+2026-10-04T18:52:06.9966305Z       "id": "hsk3-fltrp-2026:l09",
+2026-10-04T18:52:06.9966510Z       "level": 3,
+2026-10-04T18:52:06.9966666Z       "number": 9,
+2026-10-04T18:52:06.9966829Z       "title": {
+2026-10-04T18:52:06.9967029Z         "zh": "打不好没关系",
+2026-10-04T18:52:06.9967283Z         "vi": "Chơi chưa tốt cũng không sao",
+2026-10-04T18:52:06.9967550Z         "py": "Dǎ bu hǎo méi guānxi"
+2026-10-04T18:52:06.9967756Z       },
+2026-10-04T18:52:06.9967904Z       "words": 33,
+2026-10-04T18:52:06.9968064Z       "texts": 4,
+2026-10-04T18:52:06.9968218Z       "grammar": 3,
+2026-10-04T18:52:06.9968374Z       "homework": 30,
+2026-10-04T18:52:06.9968667Z       "sha256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937"
+2026-10-04T18:52:06.9968961Z     },
+2026-10-04T18:52:06.9969105Z     {
+2026-10-04T18:52:06.9969276Z       "id": "hsk3-fltrp-2026:l10",
+2026-10-04T18:52:06.9969461Z       "level": 3,
+2026-10-04T18:52:06.9969616Z       "number": 10,
+2026-10-04T18:52:06.9969772Z       "title": {
+2026-10-04T18:52:06.9969977Z         "zh": "你明天再把书还给我",
+2026-10-04T18:52:06.9970235Z         "vi": "Ngày mai bạn hãy trả sách cho tôi",
+2026-10-04T18:52:06.9970538Z         "py": "Nǐ míngtiān zài bǎ shū huán gěi wǒ"
+2026-10-04T18:52:06.9970751Z       },
+2026-10-04T18:52:06.9970915Z       "words": 33,
+2026-10-04T18:52:06.9971112Z       "texts": 4,
+2026-10-04T18:52:06.9971274Z       "grammar": 3,
+2026-10-04T18:52:06.9971442Z       "homework": 30,
+2026-10-04T18:52:06.9971739Z       "sha256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828"
+2026-10-04T18:52:06.9972047Z     },
+2026-10-04T18:52:06.9972192Z     {
+2026-10-04T18:52:06.9972360Z       "id": "hsk3-fltrp-2026:l11",
+2026-10-04T18:52:06.9972545Z       "level": 3,
+2026-10-04T18:52:06.9972699Z       "number": 11,
+2026-10-04T18:52:06.9972859Z       "title": {
+2026-10-04T18:52:06.9973087Z         "zh": "看来我没办法解决这个问题",
+2026-10-04T18:52:06.9973396Z         "vi": "Xem ra tôi không có cách giải quyết vấn đề này",
+2026-10-04T18:52:06.9973741Z         "py": "Kànlái wǒ méi bànfǎ jiějué zhège wèntí"
+2026-10-04T18:52:06.9973963Z       },
+2026-10-04T18:52:06.9974111Z       "words": 29,
+2026-10-04T18:52:06.9974270Z       "texts": 4,
+2026-10-04T18:52:06.9974431Z       "grammar": 4,
+2026-10-04T18:52:06.9974591Z       "homework": 30,
+2026-10-04T18:52:06.9975012Z       "sha256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2"
+2026-10-04T18:52:06.9975306Z     },
+2026-10-04T18:52:06.9975461Z     {
+2026-10-04T18:52:06.9975631Z       "id": "hsk3-fltrp-2026:l12",
+2026-10-04T18:52:06.9975972Z       "level": 3,
+2026-10-04T18:52:06.9976157Z       "number": 12,
+2026-10-04T18:52:06.9976321Z       "title": {
+2026-10-04T18:52:06.9976543Z         "zh": "这个季节天气变化很快",
+2026-10-04T18:52:06.9976821Z         "vi": "Mùa này thời tiết thay đổi rất nhanh",
+2026-10-04T18:52:06.9977139Z         "py": "Zhège jìjié tiānqì biànhuà hěn kuài"
+2026-10-04T18:52:06.9977371Z       },
+2026-10-04T18:52:06.9977528Z       "words": 28,
+2026-10-04T18:52:06.9977696Z       "texts": 4,
+2026-10-04T18:52:06.9977868Z       "grammar": 4,
+2026-10-04T18:52:06.9978041Z       "homework": 30,
+2026-10-04T18:52:06.9978336Z       "sha256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d"
+2026-10-04T18:52:06.9978634Z     },
+2026-10-04T18:52:06.9978797Z     {
+2026-10-04T18:52:06.9978976Z       "id": "hsk3-fltrp-2026:l13",
+2026-10-04T18:52:06.9979174Z       "level": 3,
+2026-10-04T18:52:06.9979461Z       "number": 13,
+2026-10-04T18:52:06.9979623Z       "title": {
+2026-10-04T18:52:06.9979848Z         "zh": "我的新邻居来自英国",
+2026-10-04T18:52:06.9980118Z         "vi": "Hàng xóm mới của tôi đến từ Anh",
+2026-10-04T18:52:06.9980423Z         "py": "Wǒ de xīn línjū láizì Yīngguó"
+2026-10-04T18:52:06.9980637Z       },
+2026-10-04T18:52:06.9980788Z       "words": 28,
+2026-10-04T18:52:06.9980952Z       "texts": 4,
+2026-10-04T18:52:06.9981118Z       "grammar": 3,
+2026-10-04T18:52:06.9981280Z       "homework": 30,
+2026-10-04T18:52:06.9981570Z       "sha256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc"
+2026-10-04T18:52:06.9981862Z     },
+2026-10-04T18:52:06.9982010Z     {
+2026-10-04T18:52:06.9982184Z       "id": "hsk3-fltrp-2026:l14",
+2026-10-04T18:52:06.9982380Z       "level": 3,
+2026-10-04T18:52:06.9982540Z       "number": 14,
+2026-10-04T18:52:06.9982708Z       "title": {
+2026-10-04T18:52:06.9982914Z         "zh": "这本书被别人借走了",
+2026-10-04T18:52:06.9983217Z         "vi": "Cuốn sách này đã được người khác mượn rồi",
+2026-10-04T18:52:06.9983539Z         "py": "Zhè běn shū bèi biérén jiè zǒu le"
+2026-10-04T18:52:06.9983764Z       },
+2026-10-04T18:52:06.9983916Z       "words": 28,
+2026-10-04T18:52:06.9984078Z       "texts": 4,
+2026-10-04T18:52:06.9984233Z       "grammar": 3,
+2026-10-04T18:52:06.9984396Z       "homework": 30,
+2026-10-04T18:52:06.9984693Z       "sha256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a"
+2026-10-04T18:52:06.9985003Z     },
+2026-10-04T18:52:06.9985153Z     {
+2026-10-04T18:52:06.9985329Z       "id": "hsk3-fltrp-2026:l15",
+2026-10-04T18:52:06.9985521Z       "level": 3,
+2026-10-04T18:52:06.9985678Z       "number": 15,
+2026-10-04T18:52:06.9985972Z       "title": {
+2026-10-04T18:52:06.9986180Z         "zh": "我是半个南京人",
+2026-10-04T18:52:06.9986464Z         "vi": "Tôi có thể coi là nửa người Nam Kinh",
+2026-10-04T18:52:06.9986768Z         "py": "Wǒ shì bàn ge Nánjīngrén"
+2026-10-04T18:52:06.9986981Z       },
+2026-10-04T18:52:06.9987133Z       "words": 28,
+2026-10-04T18:52:06.9987299Z       "texts": 4,
+2026-10-04T18:52:06.9987465Z       "grammar": 4,
+2026-10-04T18:52:06.9987634Z       "homework": 30,
+2026-10-04T18:52:06.9987926Z       "sha256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836"
+2026-10-04T18:52:06.9988217Z     },
+2026-10-04T18:52:06.9988368Z     {
+2026-10-04T18:52:06.9988540Z       "id": "hsk3-fltrp-2026:l16",
+2026-10-04T18:52:06.9988728Z       "level": 3,
+2026-10-04T18:52:06.9988888Z       "number": 16,
+2026-10-04T18:52:06.9989047Z       "title": {
+2026-10-04T18:52:06.9989251Z         "zh": "我听说有的熊猫出国了",
+2026-10-04T18:52:06.9989542Z         "vi": "Tôi nghe nói có gấu trúc đã ra nước ngoài",
+2026-10-04T18:52:06.9989871Z         "py": "Wǒ tīngshuō yǒude xióngmāo chū guó le"
+2026-10-04T18:52:06.9990095Z       },
+2026-10-04T18:52:06.9990250Z       "words": 26,
+2026-10-04T18:52:06.9990409Z       "texts": 4,
+2026-10-04T18:52:06.9990705Z       "grammar": 4,
+2026-10-04T18:52:06.9990872Z       "homework": 30,
+2026-10-04T18:52:06.9991264Z       "sha256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139"
+2026-10-04T18:52:06.9991570Z     },
+2026-10-04T18:52:06.9991724Z     {
+2026-10-04T18:52:06.9991967Z       "id": "hsk3-fltrp-2026:l17",
+2026-10-04T18:52:06.9992249Z       "level": 3,
+2026-10-04T18:52:06.9992490Z       "number": 17,
+2026-10-04T18:52:06.9992743Z       "title": {
+2026-10-04T18:52:06.9993050Z         "zh": "我要多向认真的人学习",
+2026-10-04T18:52:06.9993544Z         "vi": "Tôi phải học hỏi nhiều hơn từ những người cẩn thận",
+2026-10-04T18:52:06.9994015Z         "py": "Wǒ yào duō xiàng rènzhēn de rén xuéxí"
+2026-10-04T18:52:06.9994320Z       },
+2026-10-04T18:52:06.9994542Z       "words": 28,
+2026-10-04T18:52:06.9994786Z       "texts": 4,
+2026-10-04T18:52:06.9995047Z       "grammar": 4,
+2026-10-04T18:52:06.9995323Z       "homework": 30,
+2026-10-04T18:52:06.9995952Z       "sha256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a"
+2026-10-04T18:52:06.9996462Z     },
+2026-10-04T18:52:06.9996691Z     {
+2026-10-04T18:52:06.9996984Z       "id": "hsk3-fltrp-2026:l18",
+2026-10-04T18:52:06.9997304Z       "level": 3,
+2026-10-04T18:52:06.9997571Z       "number": 18,
+2026-10-04T18:52:06.9997834Z       "title": {
+2026-10-04T18:52:06.9998175Z         "zh": "我学会了包饺子",
+2026-10-04T18:52:06.9998621Z         "vi": "Tôi đã học được cách gói sủi cảo",
+2026-10-04T18:52:06.9999092Z         "py": "Wǒ xuéhuì le bāo jiǎozi"
+2026-10-04T18:52:06.9999407Z       },
+2026-10-04T18:52:06.9999635Z       "words": 30,
+2026-10-04T18:52:06.9999887Z       "texts": 4,
+2026-10-04T18:52:07.0000145Z       "grammar": 4,
+2026-10-04T18:52:07.0000326Z       "homework": 30,
+2026-10-04T18:52:07.0000639Z       "sha256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53"
+2026-10-04T18:52:07.0000957Z     }
+2026-10-04T18:52:07.0001117Z   ],
+2026-10-04T18:52:07.0001277Z   "lexicons": [
+2026-10-04T18:52:07.0001460Z     {
+2026-10-04T18:52:07.0001645Z       "courseId": "hsk2-fltrp-2026",
+2026-10-04T18:52:07.0001860Z       "counts": {
+2026-10-04T18:52:07.0002056Z         "sourceRecords": 226,
+2026-10-04T18:52:07.0002257Z         "senses": 226,
+2026-10-04T18:52:07.0002442Z         "chineseForms": 209,
+2026-10-04T18:52:07.0002636Z         "verifiedMerges": 0
+2026-10-04T18:52:07.0002818Z       },
+2026-10-04T18:52:07.0003115Z       "sha256": "ef5bfd9d4b03fd83e0eb735afca091ff3daa09dd1c5439f1e4453d118bef014c"
+2026-10-04T18:52:07.0003427Z     },
+2026-10-04T18:52:07.0003578Z     {
+2026-10-04T18:52:07.0003761Z       "courseId": "hsk3-fltrp-2026",
+2026-10-04T18:52:07.0003967Z       "counts": {
+2026-10-04T18:52:07.0004137Z         "sourceRecords": 523,
+2026-10-04T18:52:07.0004326Z         "senses": 523,
+2026-10-04T18:52:07.0004518Z         "chineseForms": 487,
+2026-10-04T18:52:07.0004709Z         "verifiedMerges": 0
+2026-10-04T18:52:07.0004889Z       },
+2026-10-04T18:52:07.0005170Z       "sha256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3"
+2026-10-04T18:52:07.0005611Z     }
+2026-10-04T18:52:07.0005982Z   ],
+2026-10-04T18:52:07.0006182Z   "issues": []
+2026-10-04T18:52:07.0006362Z }
+2026-10-04T18:52:07.0685506Z 
+2026-10-04T18:52:07.0686159Z > hsk-shared-course-app@1.0.0 check
+2026-10-04T18:52:07.0686502Z > tsc --noEmit
+2026-10-04T18:52:07.0686622Z 
+2026-10-04T18:52:07.7326634Z [36mvite v8.3.2 [32mbuilding client environment for production...[36m[39m
+2026-10-04T18:52:07.7442471Z transforming...
+2026-10-04T18:52:07.9158948Z ✓ 198 modules transformed.
+2026-10-04T18:52:09.2007085Z rendering chunks...
+2026-10-04T18:52:09.3842596Z computing gzip size...
+2026-10-04T18:52:09.4108152Z dist/index.html                                                   0.45 kB │ gzip:   0.33 kB
+2026-10-04T18:52:09.4109060Z dist/assets/course-index-BKGnz4SX.json                            4.87 kB │ gzip:   1.18 kB
+2026-10-04T18:52:09.4109686Z dist/assets/textbook-display-revisions-DWScioD2.json             26.13 kB │ gzip:   4.78 kB
+2026-10-04T18:52:09.4110315Z dist/content-manifest.json                                       53.70 kB │ gzip:  14.31 kB
+2026-10-04T18:52:09.4111162Z dist/assets/stage2-bank-DOB9KrMv.json                           269.65 kB │ gzip:  47.51 kB
+2026-10-04T18:52:09.4112078Z dist/assets/media-references-DD5E_5K_.json                      287.06 kB │ gzip:  57.51 kB
+2026-10-04T18:52:09.4112843Z dist/assets/stage3-catalog-CH6Cx7h7.json                        384.02 kB │ gzip:  67.91 kB
+2026-10-04T18:52:09.4113454Z dist/assets/textbook-ksDEYuz_.json                              741.67 kB │ gzip:  91.65 kB
+2026-10-04T18:52:09.4114017Z dist/assets/progress-DgeKDxiU.css                                 1.57 kB │ gzip:   0.62 kB
+2026-10-04T18:52:09.4114577Z dist/assets/archive-BMfTkVw2.css                                  1.93 kB │ gzip:   0.74 kB
+2026-10-04T18:52:09.4115095Z dist/assets/hanzi-D0sNO2-t.css                                    2.24 kB │ gzip:   0.79 kB
+2026-10-04T18:52:09.4115615Z dist/assets/data-panel-BgEWndCN.css                               3.56 kB │ gzip:   1.10 kB
+2026-10-04T18:52:09.4116411Z dist/assets/source-activities-Cz6XgW02.css                        4.93 kB │ gzip:   1.37 kB
+2026-10-04T18:52:09.4116972Z dist/assets/listening-DTyrhIy_.css                                5.80 kB │ gzip:   1.60 kB
+2026-10-04T18:52:09.4117491Z dist/assets/view-BYaiqWuX.css                                     6.25 kB │ gzip:   1.79 kB
+2026-10-04T18:52:09.4118264Z dist/assets/homework-8E-U9jBU.css                                 8.11 kB │ gzip:   2.06 kB
+2026-10-04T18:52:09.4119073Z dist/assets/textbook-BGHTCm5n.css                                 9.57 kB │ gzip:   2.64 kB
+2026-10-04T18:52:09.4119892Z dist/assets/index-CqoucPNO.css                                   34.61 kB │ gzip:   7.74 kB
+2026-10-04T18:52:09.4120771Z dist/assets/textbook-BNPI77hK.js                                  0.08 kB │ gzip:   0.10 kB
+2026-10-04T18:52:09.4121678Z dist/assets/review-Dw3CJ1qh.js                                    0.08 kB │ gzip:   0.09 kB
+2026-10-04T18:52:09.4122527Z dist/assets/stage3-catalog-BDgGKH7A.js                            0.08 kB │ gzip:   0.10 kB
+2026-10-04T18:52:09.4123454Z dist/assets/media-references-DyNdsQyY.js                          0.09 kB │ gzip:   0.10 kB
+2026-10-04T18:52:09.4124337Z dist/assets/vocabulary-DUdCCQ1C.js                                0.09 kB │ gzip:   0.10 kB
+2026-10-04T18:52:09.4125271Z dist/assets/textbook-display-revisions-CGs5GDJK.js                0.10 kB │ gzip:   0.11 kB
+2026-10-04T18:52:09.4126347Z dist/assets/rolldown-runtime-DK3Fl9T5.js                          0.15 kB │ gzip:   0.15 kB
+2026-10-04T18:52:09.4126963Z dist/assets/asset-base-DAkFL0yR.js                                0.16 kB │ gzip:   0.15 kB
+2026-10-04T18:52:09.4127500Z dist/assets/ui-BaCN-TQ1.js                                        0.38 kB │ gzip:   0.27 kB
+2026-10-04T18:52:09.4127990Z dist/assets/dom-Co9YUD_J.js                                       0.51 kB │ gzip:   0.35 kB
+2026-10-04T18:52:09.4128498Z dist/assets/bilingual-YzyU8AOp.js                                 0.55 kB │ gzip:   0.29 kB
+2026-10-04T18:52:09.4129244Z dist/assets/content-Dtx46D9v.js                                   0.86 kB │ gzip:   0.50 kB
+2026-10-04T18:52:09.4129757Z dist/assets/homework-C7rR7QKa.js                                  1.81 kB │ gzip:   1.01 kB
+2026-10-04T18:52:09.4130518Z dist/assets/session-bfGAMATy.js                                   2.32 kB │ gzip:   1.18 kB
+2026-10-04T18:52:09.4131211Z dist/assets/mixed-state-7Oiw2hir.js                               3.10 kB │ gzip:   1.40 kB
+2026-10-04T18:52:09.4131901Z dist/assets/progress-C0nra-vL.js                                  3.17 kB │ gzip:   1.48 kB
+2026-10-04T18:52:09.4132588Z dist/assets/home-lWTCFjNu.js                                      4.32 kB │ gzip:   2.02 kB
+2026-10-04T18:52:09.4133269Z dist/assets/catalogue-C_U9rwbD.js                                 4.81 kB │ gzip:   2.04 kB
+2026-10-04T18:52:09.4134098Z dist/assets/audio-segments-hsk2-reviewed-sentences-bwYi0Zbf.js    5.11 kB │ gzip:   1.96 kB
+2026-10-04T18:52:09.4134852Z dist/assets/listening-BrTa9oFu.js                                 5.53 kB │ gzip:   2.36 kB
+2026-10-04T18:52:09.4135678Z dist/assets/engine-CBi3sj57.js                                    5.90 kB │ gzip:   2.45 kB
+2026-10-04T18:52:09.4136485Z dist/assets/pair-panel-DyRXZhOo.js                                8.41 kB │ gzip:   3.71 kB
+2026-10-04T18:52:09.4137313Z dist/assets/store-DqFMKMYi.js                                     8.98 kB │ gzip:   3.49 kB
+2026-10-04T18:52:09.4137856Z dist/assets/data-panel-D0qgpkHA.js                                9.01 kB │ gzip:   3.69 kB
+2026-10-04T18:52:09.4138387Z dist/assets/backup-view-I37Kq41o.js                               9.02 kB │ gzip:   3.91 kB
+2026-10-04T18:52:09.4138920Z dist/assets/browser-pair-DJbMzPIe.js                             10.81 kB │ gzip:   3.85 kB
+2026-10-04T18:52:09.4139445Z dist/assets/listening-Bg4TzGgm.js                                16.01 kB │ gzip:   5.87 kB
+2026-10-04T18:52:09.4139958Z dist/assets/engine-BAT6QHsN.js                                   16.10 kB │ gzip:   6.03 kB
+2026-10-04T18:52:09.4140499Z dist/assets/copy-yY9kyqvF.js                                     18.33 kB │ gzip:   6.90 kB
+2026-10-04T18:52:09.4141022Z dist/assets/listening-BXM9emsG.js                                19.05 kB │ gzip:   7.03 kB
+2026-10-04T18:52:09.4141577Z dist/assets/archive-Bcs1pIMZ.js                                  20.25 kB │ gzip:   8.45 kB
+2026-10-04T18:52:09.4142090Z dist/assets/engine-DJNGzNN8.js                                   22.15 kB │ gzip:   7.49 kB
+2026-10-04T18:52:09.4142602Z dist/assets/textbook-9u9iXuP4.js                                 23.37 kB │ gzip:   9.12 kB
+2026-10-04T18:52:09.4143104Z dist/assets/view-CzWP2RDA.js                                     23.87 kB │ gzip:   9.02 kB
+2026-10-04T18:52:09.4143601Z dist/assets/progress-mNhdDTSh.js                                 24.58 kB │ gzip:   9.30 kB
+2026-10-04T18:52:09.4144154Z dist/assets/source-activities-C-u-PvZD.js                        32.56 kB │ gzip:   9.76 kB
+2026-10-04T18:52:09.4144694Z dist/assets/textbook-ZthZsYNM.js                                 33.88 kB │ gzip:  12.80 kB
+2026-10-04T18:52:09.4145240Z dist/assets/homework-Dt8uSywP.js                                 35.01 kB │ gzip:  10.65 kB
+2026-10-04T18:52:09.4145765Z dist/assets/compatibility-f32bwKOb.js                            36.18 kB │ gzip:  13.00 kB
+2026-10-04T18:52:09.4146477Z dist/assets/hanzi-C186eFG0.js                                    55.11 kB │ gzip:  18.43 kB
+2026-10-04T18:52:09.4147013Z dist/assets/hsk2-lexicon-K822mAIa.js                             75.89 kB │ gzip:  10.34 kB
+2026-10-04T18:52:09.4147563Z dist/assets/audio-segments-pilot-vPaBRnCF.js                    101.16 kB │ gzip:  11.25 kB
+2026-10-04T18:52:09.4148105Z dist/assets/lesson-04-BpJ1_h4u.js                               110.80 kB │ gzip:  22.08 kB
+2026-10-04T18:52:09.4148656Z dist/assets/audio-segments-hsk2-lessons02-03-DhnzM86H.js        112.98 kB │ gzip:  13.28 kB
+2026-10-04T18:52:09.4149205Z dist/assets/lesson-01-Dvf3P_gy.js                               114.88 kB │ gzip:  23.67 kB
+2026-10-04T18:52:09.4149874Z dist/assets/lesson-07-CEJ2il4t.js                               117.94 kB │ gzip:  21.63 kB
+2026-10-04T18:52:09.4150391Z dist/assets/lesson-02-DA1x_4uz.js                               119.04 kB │ gzip:  24.02 kB
+2026-10-04T18:52:09.4150899Z dist/assets/lesson-13-2AOJndFF.js                               122.94 kB │ gzip:  25.75 kB
+2026-10-04T18:52:09.4151404Z dist/assets/lesson-08-C9cvqblF.js                               123.09 kB │ gzip:  24.50 kB
+2026-10-04T18:52:09.4151907Z dist/assets/lesson-10-WlLxaHx3.js                               123.12 kB │ gzip:  24.46 kB
+2026-10-04T18:52:09.4152440Z dist/assets/lesson-03-BAxkSQoP.js                               123.97 kB │ gzip:  25.02 kB
+2026-10-04T18:52:09.4152954Z dist/assets/lesson-14-CP3E91w6.js                               127.71 kB │ gzip:  26.09 kB
+2026-10-04T18:52:09.4153457Z dist/assets/lesson-11-6qDGNP_1.js                               128.58 kB │ gzip:  25.67 kB
+2026-10-04T18:52:09.4153970Z dist/assets/lesson-05-Cc6sCwM9.js                               133.88 kB │ gzip:  26.78 kB
+2026-10-04T18:52:09.4154585Z dist/assets/lesson-15-Bt9ELdZZ.js                               134.13 kB │ gzip:  27.80 kB
+2026-10-04T18:52:09.4155116Z dist/assets/lesson-12-DvJGY4wP.js                               135.34 kB │ gzip:  27.60 kB
+2026-10-04T18:52:09.4155624Z dist/assets/lesson-09-C28dsahb.js                               139.88 kB │ gzip:  28.10 kB
+2026-10-04T18:52:09.4156293Z dist/assets/lesson-06-CwcguEyw.js                               142.11 kB │ gzip:  27.32 kB
+2026-10-04T18:52:09.4156814Z dist/assets/lesson-01-zYhLI88r.js                               148.38 kB │ gzip:  31.37 kB
+2026-10-04T18:52:09.4157320Z dist/assets/lesson-16-DRtr0ny_.js                               149.33 kB │ gzip:  32.47 kB
+2026-10-04T18:52:09.4157833Z dist/assets/lesson-14-DzHhiC5r.js                               150.68 kB │ gzip:  30.87 kB
+2026-10-04T18:52:09.4158358Z dist/assets/lesson-13-DdIe_4T7.js                               152.05 kB │ gzip:  31.93 kB
+2026-10-04T18:52:09.4158864Z dist/assets/lesson-17-DbAfN_SL.js                               159.95 kB │ gzip:  32.78 kB
+2026-10-04T18:52:09.4159378Z dist/assets/lesson-04-jhWwL0K8.js                               169.18 kB │ gzip:  32.55 kB
+2026-10-04T18:52:09.4159894Z dist/assets/lesson-02-ipEgC2hZ.js                               169.52 kB │ gzip:  33.31 kB
+2026-10-04T18:52:09.4160412Z dist/assets/lesson-08-DAXOkXiZ.js                               170.19 kB │ gzip:  34.64 kB
+2026-10-04T18:52:09.4160928Z dist/assets/hsk3-lexicon-BbvKIHAe.js                            172.94 kB │ gzip:  20.72 kB
+2026-10-04T18:52:09.4161450Z dist/assets/lesson-11-CKk1cQSV.js                               175.11 kB │ gzip:  34.06 kB
+2026-10-04T18:52:09.4161956Z dist/assets/lesson-10-Di7Ok1Wn.js                               175.68 kB │ gzip:  34.34 kB
+2026-10-04T18:52:09.4162460Z dist/assets/lesson-12-D2ecTnox.js                               181.15 kB │ gzip:  36.26 kB
+2026-10-04T18:52:09.4163004Z dist/assets/lesson-09-C9D0LE8o.js                               182.52 kB │ gzip:  35.30 kB
+2026-10-04T18:52:09.4163522Z dist/assets/lesson-05-MRwxRg8w.js                               183.89 kB │ gzip:  34.62 kB
+2026-10-04T18:52:09.4164028Z dist/assets/lesson-15-DBteB5yM.js                               185.54 kB │ gzip:  36.84 kB
+2026-10-04T18:52:09.4164528Z dist/assets/lesson-03-DZH3nHsV.js                               188.02 kB │ gzip:  35.75 kB
+2026-10-04T18:52:09.4165038Z dist/assets/lesson-18-ABRHRLqY.js                               189.42 kB │ gzip:  37.63 kB
+2026-10-04T18:52:09.4165537Z dist/assets/lesson-06-Cc4P3x8D.js                               192.91 kB │ gzip:  35.49 kB
+2026-10-04T18:52:09.4166201Z dist/assets/lesson-07-Dq83Ixn2.js                               195.56 kB │ gzip:  36.16 kB
+2026-10-04T18:52:09.4166750Z dist/assets/legacy-exercises-Bz3UuW2N.js                        326.82 kB │ gzip:  82.57 kB
+2026-10-04T18:52:09.4167396Z dist/assets/index-DHIMbq_c.js                                   334.93 kB │ gzip:  81.97 kB
+2026-10-04T18:52:09.4167927Z dist/assets/homework30-BVBKAbRf.js                              613.90 kB │ gzip: 135.38 kB
+2026-10-04T18:52:09.4168446Z dist/assets/content-ChH95uYd.js                                 852.80 kB │ gzip: 144.56 kB
+2026-10-04T18:52:09.4168679Z 
+2026-10-04T18:52:09.4168909Z [33m[plugin builtin:vite-reporter] 
+2026-10-04T18:52:09.4169263Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2026-10-04T18:52:09.4169636Z - Using dynamic import() to code-split the application
+2026-10-04T18:52:09.4170249Z - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+2026-10-04T18:52:09.4170950Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+2026-10-04T18:52:09.4171346Z [32m✓ built in 1.68s[39m
+2026-10-04T18:52:10.8424012Z {
+2026-10-04T18:52:10.8424457Z   "source": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+2026-10-04T18:52:10.8424908Z   "mode": "checkpoint",
+2026-10-04T18:52:10.8425684Z   "output": "/home/runner/work/hsk-hub/hsk-hub/course-app/unified-frozen-flow-package",
+2026-10-04T18:52:10.8426321Z   "files": 2777,
+2026-10-04T18:52:10.8426572Z   "lessons": 48,
+2026-10-04T18:52:10.8427120Z   "sourceSnapshotSHA256": "a17b664ceeaf09937b4b53aa2c7877407df81eafa74490ba2014b7d52db18fcb",
+2026-10-04T18:52:10.8427799Z   "buildProvenance": "built-from-recorded-worktree"
+2026-10-04T18:52:10.8428167Z }
+2026-10-04T18:52:20.2795526Z {
+2026-10-04T18:52:20.2796126Z   "status": "assembled-checkpoint-not-release",
+2026-10-04T18:52:20.2796701Z   "sourceCommit": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+2026-10-04T18:52:20.2797167Z   "baselineFiles": 1446,
+2026-10-04T18:52:20.2797534Z   "baselineUnservedExclusions": 55,
+2026-10-04T18:52:20.2797907Z   "authorizedReplacements": 11,
+2026-10-04T18:52:20.2798259Z   "protectedPublicFiles": 1380,
+2026-10-04T18:52:20.2798602Z   "assembledFiles": 3894,
+2026-10-04T18:52:20.2799244Z   "inventorySHA256": "7283a25e0d72ea32f570795498ec8661f17ecfc7cdcbf550a062cc4ba54fd7ae",
+2026-10-04T18:52:20.2800073Z   "output": "/home/runner/work/hsk-hub/hsk-hub/course-app/unified-site-flow-package"
+2026-10-04T18:52:20.2800605Z }
+2026-10-04T18:52:20.3291104Z ##[group]Run npx playwright test --config=playwright.package-closure.config.ts --project=chromium
+2026-10-04T18:52:20.3291667Z [36;1mnpx playwright test --config=playwright.package-closure.config.ts --project=chromium[0m
+2026-10-04T18:52:20.3347485Z shell: /usr/bin/bash -e {0}
+2026-10-04T18:52:20.3347695Z env:
+2026-10-04T18:52:20.3347892Z   HSK_PACKAGE_ROOT: unified-site-flow-package
+2026-10-04T18:52:20.3348135Z ##[endgroup]
+2026-10-04T18:52:21.1793296Z 
+2026-10-04T18:52:21.1793755Z Running 9 tests using 1 worker
+2026-10-04T18:52:21.1793954Z 
+2026-10-04T18:52:23.0960996Z   ✓  1 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry portal loads actual source crops with nonempty legacy state (1.4s)
+2026-10-04T18:52:24.4881957Z   ✓  2 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state (1.4s)
+2026-10-04T18:52:25.5628685Z   ✓  3 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state (1.1s)
+2026-10-04T18:52:26.7777165Z   ✓  4 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state (1.2s)
+2026-10-04T18:52:27.9738605Z   ✓  5 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state (1.2s)
+2026-10-04T18:52:29.2055406Z   ✓  6 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state (1.2s)
+2026-10-04T18:52:30.4203588Z   ✓  7 [chromium] › tests/packaged/unified-source.spec.ts:8:42 › unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state (1.2s)
+2026-10-04T18:52:31.1077752Z   ✓  8 [chromium] › tests/packaged/unified-source.spec.ts:27:1 › nested HSK1 textbook originals and original audio resolve against shared course engine (679ms)
+2026-10-04T18:52:31.3331264Z   ✓  9 [chromium] › tests/packaged/unified-source.spec.ts:39:1 › assembled HTTP bytes match frozen identity and private baseline/source paths are not served (220ms)
+2026-10-04T18:52:31.3922020Z 
+2026-10-04T18:52:31.3925286Z   9 passed (10.4s)
+2026-10-04T18:52:31.4180087Z ##[group]Run node ../../../node_modules/@playwright/test/cli.js test --config=playwright.legacy.config.ts --project=chromium
+2026-10-04T18:52:31.4180749Z [36;1mnode ../../../node_modules/@playwright/test/cli.js test --config=playwright.legacy.config.ts --project=chromium[0m
+2026-10-04T18:52:31.4238402Z shell: /usr/bin/bash -e {0}
+2026-10-04T18:52:31.4238620Z env:
+2026-10-04T18:52:31.4238928Z   FLOW_PACKAGE_ROOT: /home/runner/work/hsk-hub/hsk-hub/course-app/unified-site-flow-package
+2026-10-04T18:52:31.4239296Z ##[endgroup]
+2026-10-04T18:52:32.0616347Z 
+2026-10-04T18:52:32.0617022Z Running 3 tests using 1 worker
+2026-10-04T18:52:32.0617313Z 
+2026-10-04T18:52:34.0546807Z   ✓  1 [chromium] › legacy-entries.packaged.ts:11:1 › verified assembled old HSK1 HSK2 HSK3 and both HSK4 routes preserve nonempty histories and extra HSK4 gate (1.6s)
+2026-10-04T18:52:34.4411530Z   ✓  2 [chromium] › legacy-entries.packaged.ts:28:26 › verified assembled HSK2 nested default and explicit cross-level deep links survive reload (376ms)
+2026-10-04T18:52:34.8217605Z   ✓  3 [chromium] › legacy-entries.packaged.ts:28:26 › verified assembled HSK3 nested default and explicit cross-level deep links survive reload (366ms)
+2026-10-04T18:52:34.8813472Z 
+2026-10-04T18:52:34.8817879Z   3 passed (3.0s)
+2026-10-04T18:52:34.9008471Z ##[group]Run npm run build -- --outDir .repro-output/media-reviewed-subset/dist
+2026-10-04T18:52:34.9009364Z [36;1mnpm run build -- --outDir .repro-output/media-reviewed-subset/dist[0m
+2026-10-04T18:52:34.9010297Z [36;1mnpx playwright test --config=playwright.reviewed-sentences.config.ts --project=chromium[0m
+2026-10-04T18:52:34.9089470Z shell: /usr/bin/bash -e {0}
+2026-10-04T18:52:34.9089798Z ##[endgroup]
+2026-10-04T18:52:34.9888877Z 
+2026-10-04T18:52:34.9889456Z > hsk-shared-course-app@1.0.0 build
+2026-10-04T18:52:34.9890484Z > node tools/sync-shared-assets.mjs && npm run content:check && npm run check && vite build --outDir .repro-output/media-reviewed-subset/dist
+2026-10-04T18:52:34.9891101Z 
+2026-10-04T18:52:35.5079042Z {"originalHSK1Audio":93,"requiredCharacters":671,"preservedCharacters":271,"licensedAdditions":400,"complete":true}
+2026-10-04T18:52:35.5879936Z 
+2026-10-04T18:52:35.5880573Z > hsk-shared-course-app@1.0.0 content:check
+2026-10-04T18:52:35.5881168Z > node tools/validate-content.mjs
+2026-10-04T18:52:35.5881398Z 
+2026-10-04T18:52:35.7120160Z {
+2026-10-04T18:52:35.7120447Z   "mode": "release",
+2026-10-04T18:52:35.7120734Z   "totals": {
+2026-10-04T18:52:35.7120982Z     "lessons": 33,
+2026-10-04T18:52:35.7121238Z     "words": 749,
+2026-10-04T18:52:35.7121500Z     "texts": 132,
+2026-10-04T18:52:35.7121753Z     "grammar": 108,
+2026-10-04T18:52:35.7121994Z     "homework": 990,
+2026-10-04T18:52:35.7122255Z     "listening": 132,
+2026-10-04T18:52:35.7122499Z     "sections": 162
+2026-10-04T18:52:35.7122774Z   },
+2026-10-04T18:52:35.7123018Z   "lessons": [
+2026-10-04T18:52:35.7123271Z     {
+2026-10-04T18:52:35.7123570Z       "id": "hsk2-fltrp-2026:l01",
+2026-10-04T18:52:35.7123871Z       "level": 2,
+2026-10-04T18:52:35.7124139Z       "number": 1,
+2026-10-04T18:52:35.7124412Z       "title": {
+2026-10-04T18:52:35.7124995Z         "zh": "她请我们吃了北京烤鸭",
+2026-10-04T18:52:35.7125540Z         "vi": "Cô ấy đã mời chúng tôi ăn vịt quay Bắc Kinh",
+2026-10-04T18:52:35.7126276Z         "py": "Tā qǐng wǒmen chīle Běijīng Kǎoyā"
+2026-10-04T18:52:35.7126776Z       },
+2026-10-04T18:52:35.7127000Z       "words": 15,
+2026-10-04T18:52:35.7127478Z       "texts": 4,
+2026-10-04T18:52:35.7127705Z       "grammar": 3,
+2026-10-04T18:52:35.7127949Z       "homework": 30,
+2026-10-04T18:52:35.7128425Z       "sha256": "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523"
+2026-10-04T18:52:35.7128876Z     },
+2026-10-04T18:52:35.7129091Z     {
+2026-10-04T18:52:35.7129340Z       "id": "hsk2-fltrp-2026:l02",
+2026-10-04T18:52:35.7129628Z       "level": 2,
+2026-10-04T18:52:35.7129851Z       "number": 2,
+2026-10-04T18:52:35.7130085Z       "title": {
+2026-10-04T18:52:35.7130386Z         "zh": "还是打车去北大吧",
+2026-10-04T18:52:35.7130833Z         "vi": "Hay là đi taxi đến Đại học Bắc Kinh nhé",
+2026-10-04T18:52:35.7131281Z         "py": "Háishi dǎchē qù Běidà ba"
+2026-10-04T18:52:35.7131595Z       },
+2026-10-04T18:52:35.7131808Z       "words": 17,
+2026-10-04T18:52:35.7132117Z       "texts": 4,
+2026-10-04T18:52:35.7132371Z       "grammar": 3,
+2026-10-04T18:52:35.7132624Z       "homework": 30,
+2026-10-04T18:52:35.7133083Z       "sha256": "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d"
+2026-10-04T18:52:35.7133543Z     },
+2026-10-04T18:52:35.7133752Z     {
+2026-10-04T18:52:35.7134010Z       "id": "hsk2-fltrp-2026:l03",
+2026-10-04T18:52:35.7134299Z       "level": 2,
+2026-10-04T18:52:35.7134549Z       "number": 3,
+2026-10-04T18:52:35.7134787Z       "title": {
+2026-10-04T18:52:35.7135100Z         "zh": "我想去西安旅游",
+2026-10-04T18:52:35.7135482Z         "vi": "Tôi muốn đi du lịch Tây An",
+2026-10-04T18:52:35.7146113Z         "py": "Wǒ xiǎng qù Xī'ān lǚyóu"
+2026-10-04T18:52:35.7146471Z       },
+2026-10-04T18:52:35.7146717Z       "words": 15,
+2026-10-04T18:52:35.7146972Z       "texts": 4,
+2026-10-04T18:52:35.7147222Z       "grammar": 3,
+2026-10-04T18:52:35.7147479Z       "homework": 30,
+2026-10-04T18:52:35.7147977Z       "sha256": "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506"
+2026-10-04T18:52:35.7148744Z     },
+2026-10-04T18:52:35.7148983Z     {
+2026-10-04T18:52:35.7149261Z       "id": "hsk2-fltrp-2026:l04",
+2026-10-04T18:52:35.7149579Z       "level": 2,
+2026-10-04T18:52:35.7149849Z       "number": 4,
+2026-10-04T18:52:35.7150102Z       "title": {
+2026-10-04T18:52:35.7150458Z         "zh": "你穿红色的很好看",
+2026-10-04T18:52:35.7150870Z         "vi": "Bạn mặc màu đỏ rất đẹp",
+2026-10-04T18:52:35.7151323Z         "py": "Nǐ chuān hóngsè de hěn hǎokàn"
+2026-10-04T18:52:35.7151662Z       },
+2026-10-04T18:52:35.7151902Z       "words": 16,
+2026-10-04T18:52:35.7152080Z       "texts": 4,
+2026-10-04T18:52:35.7152247Z       "grammar": 3,
+2026-10-04T18:52:35.7152454Z       "homework": 30,
+2026-10-04T18:52:35.7152839Z       "sha256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c"
+2026-10-04T18:52:35.7156035Z     },
+2026-10-04T18:52:35.7156246Z     {
+2026-10-04T18:52:35.7156511Z       "id": "hsk2-fltrp-2026:l05",
+2026-10-04T18:52:35.7156819Z       "level": 2,
+2026-10-04T18:52:35.7157079Z       "number": 5,
+2026-10-04T18:52:35.7157327Z       "title": {
+2026-10-04T18:52:35.7157652Z         "zh": "第一次去中国朋友家",
+2026-10-04T18:52:35.7158081Z         "vi": "Lần đầu đến nhà bạn người Trung Quốc",
+2026-10-04T18:52:35.7158569Z         "py": "Dì-yī cì qù Zhōngguó péngyou jiā"
+2026-10-04T18:52:35.7158920Z       },
+2026-10-04T18:52:35.7159178Z       "words": 20,
+2026-10-04T18:52:35.7159430Z       "texts": 4,
+2026-10-04T18:52:35.7159711Z       "grammar": 3,
+2026-10-04T18:52:35.7160006Z       "homework": 30,
+2026-10-04T18:52:35.7160575Z       "sha256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038"
+2026-10-04T18:52:35.7161188Z     },
+2026-10-04T18:52:35.7161435Z     {
+2026-10-04T18:52:35.7161737Z       "id": "hsk2-fltrp-2026:l06",
+2026-10-04T18:52:35.7162049Z       "level": 2,
+2026-10-04T18:52:35.7162324Z       "number": 6,
+2026-10-04T18:52:35.7162590Z       "title": {
+2026-10-04T18:52:35.7162971Z         "zh": "小雪，生日快乐！",
+2026-10-04T18:52:35.7163427Z         "vi": "Tiểu Tuyết, chúc mừng sinh nhật!",
+2026-10-04T18:52:35.7163953Z         "py": "Xiǎoxuě, shēngrì kuàilè!"
+2026-10-04T18:52:35.7164416Z       },
+2026-10-04T18:52:35.7164748Z       "words": 15,
+2026-10-04T18:52:35.7165320Z       "texts": 4,
+2026-10-04T18:52:35.7165577Z       "grammar": 3,
+2026-10-04T18:52:35.7166005Z       "homework": 30,
+2026-10-04T18:52:35.7166528Z       "sha256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20"
+2026-10-04T18:52:35.7167011Z     },
+2026-10-04T18:52:35.7167248Z     {
+2026-10-04T18:52:35.7167588Z       "id": "hsk2-fltrp-2026:l07",
+2026-10-04T18:52:35.7167941Z       "level": 2,
+2026-10-04T18:52:35.7168261Z       "number": 7,
+2026-10-04T18:52:35.7168556Z       "title": {
+2026-10-04T18:52:35.7168974Z         "zh": "他篮球打得很好",
+2026-10-04T18:52:35.7169454Z         "vi": "Anh ấy chơi bóng rổ rất giỏi",
+2026-10-04T18:52:35.7169995Z         "py": "Tā lánqiú dǎ de hěn hǎo"
+2026-10-04T18:52:35.7170374Z       },
+2026-10-04T18:52:35.7170650Z       "words": 20,
+2026-10-04T18:52:35.7170992Z       "texts": 4,
+2026-10-04T18:52:35.7171264Z       "grammar": 3,
+2026-10-04T18:52:35.7171580Z       "homework": 30,
+2026-10-04T18:52:35.7172136Z       "sha256": "15b9f36001307933da8120e66214e3b7a266640022f6953b67b174b2a9c78f4c"
+2026-10-04T18:52:35.7172485Z     },
+2026-10-04T18:52:35.7172660Z     {
+2026-10-04T18:52:35.7172871Z       "id": "hsk2-fltrp-2026:l08",
+2026-10-04T18:52:35.7173093Z       "level": 2,
+2026-10-04T18:52:35.7173262Z       "number": 8,
+2026-10-04T18:52:35.7173455Z       "title": {
+2026-10-04T18:52:35.7173752Z         "zh": "虽然你忘了，但是我记得",
+2026-10-04T18:52:35.7174062Z         "vi": "Dù em quên nhưng anh vẫn nhớ",
+2026-10-04T18:52:35.7174418Z         "py": "Suīrán nǐ wàng le, dànshì wǒ jìde"
+2026-10-04T18:52:35.7174670Z       },
+2026-10-04T18:52:35.7174844Z       "words": 17,
+2026-10-04T18:52:35.7175034Z       "texts": 4,
+2026-10-04T18:52:35.7175212Z       "grammar": 3,
+2026-10-04T18:52:35.7175385Z       "homework": 30,
+2026-10-04T18:52:35.7176140Z       "sha256": "90c7c19aac1d78ed62752356eefe09b6d3ee968c528c2008a53f0f2b1f96d00a"
+2026-10-04T18:52:35.7176670Z     },
+2026-10-04T18:52:35.7176857Z     {
+2026-10-04T18:52:35.7177088Z       "id": "hsk2-fltrp-2026:l09",
+2026-10-04T18:52:35.7177328Z       "level": 2,
+2026-10-04T18:52:35.7177518Z       "number": 9,
+2026-10-04T18:52:35.7177690Z       "title": {
+2026-10-04T18:52:35.7177955Z         "zh": "我去买杯奶茶",
+2026-10-04T18:52:35.7178231Z         "vi": "Tôi đi mua một cốc trà sữa",
+2026-10-04T18:52:35.7178540Z         "py": "Wǒ qù mǎi bēi nǎichá"
+2026-10-04T18:52:35.7178762Z       },
+2026-10-04T18:52:35.7178936Z       "words": 13,
+2026-10-04T18:52:35.7179121Z       "texts": 4,
+2026-10-04T18:52:35.7179312Z       "grammar": 3,
+2026-10-04T18:52:35.7179487Z       "homework": 30,
+2026-10-04T18:52:35.7179833Z       "sha256": "55675df1ef69682537b7137e4f2ba19e2a311cf7738969ecd790dae62cc885aa"
+2026-10-04T18:52:35.7180157Z     },
+2026-10-04T18:52:35.7180324Z     {
+2026-10-04T18:52:35.7180521Z       "id": "hsk2-fltrp-2026:l10",
+2026-10-04T18:52:35.7180748Z       "level": 2,
+2026-10-04T18:52:35.7180940Z       "number": 10,
+2026-10-04T18:52:35.7181124Z       "title": {
+2026-10-04T18:52:35.7181355Z         "zh": "就要考试了",
+2026-10-04T18:52:35.7181594Z         "vi": "Sắp thi rồi",
+2026-10-04T18:52:35.7181882Z         "py": "Jiù yào kǎoshì le"
+2026-10-04T18:52:35.7182101Z       },
+2026-10-04T18:52:35.7182287Z       "words": 15,
+2026-10-04T18:52:35.7182479Z       "texts": 4,
+2026-10-04T18:52:35.7182661Z       "grammar": 3,
+2026-10-04T18:52:35.7182832Z       "homework": 30,
+2026-10-04T18:52:35.7183163Z       "sha256": "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156"
+2026-10-04T18:52:35.7183479Z     },
+2026-10-04T18:52:35.7183641Z     {
+2026-10-04T18:52:35.7183835Z       "id": "hsk2-fltrp-2026:l11",
+2026-10-04T18:52:35.7184105Z       "level": 2,
+2026-10-04T18:52:35.7184969Z       "number": 11,
+2026-10-04T18:52:35.7185303Z       "title": {
+2026-10-04T18:52:35.7185648Z         "zh": "我最喜欢吃中国菜",
+2026-10-04T18:52:35.7186180Z         "vi": "Tôi thích ăn món Trung Quốc nhất",
+2026-10-04T18:52:35.7186561Z         "py": "Wǒ zuì xǐhuan chī Zhōngguó cài"
+2026-10-04T18:52:35.7186786Z       },
+2026-10-04T18:52:35.7186949Z       "words": 13,
+2026-10-04T18:52:35.7187312Z       "texts": 4,
+2026-10-04T18:52:35.7187483Z       "grammar": 3,
+2026-10-04T18:52:35.7187663Z       "homework": 30,
+2026-10-04T18:52:35.7187976Z       "sha256": "01ec965d7f18d41c5c91c053f93544b24c971303ed8b4ca6afd2ad2c03d48ff8"
+2026-10-04T18:52:35.7188286Z     },
+2026-10-04T18:52:35.7188442Z     {
+2026-10-04T18:52:35.7188628Z       "id": "hsk2-fltrp-2026:l12",
+2026-10-04T18:52:35.7188833Z       "level": 2,
+2026-10-04T18:52:35.7189007Z       "number": 12,
+2026-10-04T18:52:35.7189172Z       "title": {
+2026-10-04T18:52:35.7189388Z         "zh": "这里比北京冷多了",
+2026-10-04T18:52:35.7189659Z         "vi": "Ở đây lạnh hơn Bắc Kinh nhiều",
+2026-10-04T18:52:35.7189950Z         "py": "Zhèlǐ bǐ Běijīng lěngduō le"
+2026-10-04T18:52:35.7190161Z       },
+2026-10-04T18:52:35.7190320Z       "words": 11,
+2026-10-04T18:52:35.7190493Z       "texts": 4,
+2026-10-04T18:52:35.7190663Z       "grammar": 3,
+2026-10-04T18:52:35.7190836Z       "homework": 30,
+2026-10-04T18:52:35.7191137Z       "sha256": "c64d2e1bc3dac399f1737338e70474d8ea8559c2aa65207290a515804a97e702"
+2026-10-04T18:52:35.7191449Z     },
+2026-10-04T18:52:35.7191605Z     {
+2026-10-04T18:52:35.7191891Z       "id": "hsk2-fltrp-2026:l13",
+2026-10-04T18:52:35.7192201Z       "level": 2,
+2026-10-04T18:52:35.7192453Z       "number": 13,
+2026-10-04T18:52:35.7192700Z       "title": {
+2026-10-04T18:52:35.7193010Z         "zh": "我们爱上中文课",
+2026-10-04T18:52:35.7193418Z         "vi": "Chúng tôi thích học tiết tiếng Trung",
+2026-10-04T18:52:35.7193881Z         "py": "Wǒmen ài shàng Zhōngwén kè"
+2026-10-04T18:52:35.7194184Z       },
+2026-10-04T18:52:35.7194401Z       "words": 13,
+2026-10-04T18:52:35.7194630Z       "texts": 4,
+2026-10-04T18:52:35.7194861Z       "grammar": 3,
+2026-10-04T18:52:35.7195092Z       "homework": 30,
+2026-10-04T18:52:35.7195691Z       "sha256": "06d5d9e3f096ffe189f8d8214ba5582db9912e776e9ce3cee55d4fbd928057e1"
+2026-10-04T18:52:35.7196278Z     },
+2026-10-04T18:52:35.7196499Z     {
+2026-10-04T18:52:35.7196752Z       "id": "hsk2-fltrp-2026:l14",
+2026-10-04T18:52:35.7197052Z       "level": 2,
+2026-10-04T18:52:35.7197276Z       "number": 14,
+2026-10-04T18:52:35.7197515Z       "title": {
+2026-10-04T18:52:35.7197876Z         "zh": "一个人过年多没意思啊",
+2026-10-04T18:52:35.7198295Z         "vi": "Ăn Tết một mình buồn biết bao",
+2026-10-04T18:52:35.7198770Z         "py": "Yí gè rén guònián duō méi yìsi a"
+2026-10-04T18:52:35.7199112Z       },
+2026-10-04T18:52:35.7199348Z       "words": 14,
+2026-10-04T18:52:35.7199610Z       "texts": 4,
+2026-10-04T18:52:35.7199860Z       "grammar": 3,
+2026-10-04T18:52:35.7200146Z       "homework": 30,
+2026-10-04T18:52:35.7200627Z       "sha256": "74d7a43cbed89ddf152a840d3c5bc06e8200c975fa1de5e9bf4223e227d52e0f"
+2026-10-04T18:52:35.7201125Z     },
+2026-10-04T18:52:35.7201329Z     {
+2026-10-04T18:52:35.7201601Z       "id": "hsk2-fltrp-2026:l15",
+2026-10-04T18:52:35.7201877Z       "level": 2,
+2026-10-04T18:52:35.7202044Z       "number": 15,
+2026-10-04T18:52:35.7202213Z       "title": {
+2026-10-04T18:52:35.7202443Z         "zh": "我想再去一次中国",
+2026-10-04T18:52:35.7202762Z         "vi": "Tôi muốn đến Trung Quốc thêm một lần nữa",
+2026-10-04T18:52:35.7203079Z         "py": "Wǒ xiǎng zài qù yí cì Zhōngguó"
+2026-10-04T18:52:35.7203289Z       },
+2026-10-04T18:52:35.7203445Z       "words": 12,
+2026-10-04T18:52:35.7203608Z       "texts": 4,
+2026-10-04T18:52:35.7203765Z       "grammar": 3,
+2026-10-04T18:52:35.7203932Z       "homework": 30,
+2026-10-04T18:52:35.7204237Z       "sha256": "299a8d8cf8f90e721d8a8c8b0ca24d7c33d759949166cab1edd2eeddf00ae907"
+2026-10-04T18:52:35.7204540Z     },
+2026-10-04T18:52:35.7204689Z     {
+2026-10-04T18:52:35.7204870Z       "id": "hsk3-fltrp-2026:l01",
+2026-10-04T18:52:35.7205066Z       "level": 3,
+2026-10-04T18:52:35.7205223Z       "number": 1,
+2026-10-04T18:52:35.7205386Z       "title": {
+2026-10-04T18:52:35.7205591Z         "zh": "我们去机场接你们",
+2026-10-04T18:52:35.7206022Z         "vi": "Chúng tôi sẽ ra sân bay đón các bạn",
+2026-10-04T18:52:35.7206338Z         "py": "Wǒmen qù jīchǎng jiē nǐmen"
+2026-10-04T18:52:35.7206695Z       },
+2026-10-04T18:52:35.7206849Z       "words": 27,
+2026-10-04T18:52:35.7207007Z       "texts": 4,
+2026-10-04T18:52:35.7207175Z       "grammar": 3,
+2026-10-04T18:52:35.7207337Z       "homework": 30,
+2026-10-04T18:52:35.7207628Z       "sha256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1"
+2026-10-04T18:52:35.7207919Z     },
+2026-10-04T18:52:35.7208069Z     {
+2026-10-04T18:52:35.7208247Z       "id": "hsk3-fltrp-2026:l02",
+2026-10-04T18:52:35.7208454Z       "level": 3,
+2026-10-04T18:52:35.7208617Z       "number": 2,
+2026-10-04T18:52:35.7208775Z       "title": {
+2026-10-04T18:52:35.7208983Z         "zh": "你们想吃什么就点什么",
+2026-10-04T18:52:35.7209249Z         "vi": "Các bạn muốn ăn gì thì gọi món đó",
+2026-10-04T18:52:35.7209568Z         "py": "Nǐmen xiǎng chī shénme jiù diǎn shénme"
+2026-10-04T18:52:35.7209803Z       },
+2026-10-04T18:52:35.7209971Z       "words": 30,
+2026-10-04T18:52:35.7210136Z       "texts": 4,
+2026-10-04T18:52:35.7210292Z       "grammar": 3,
+2026-10-04T18:52:35.7210470Z       "homework": 30,
+2026-10-04T18:52:35.7210769Z       "sha256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1"
+2026-10-04T18:52:35.7211063Z     },
+2026-10-04T18:52:35.7211210Z     {
+2026-10-04T18:52:35.7211382Z       "id": "hsk3-fltrp-2026:l03",
+2026-10-04T18:52:35.7211581Z       "level": 3,
+2026-10-04T18:52:35.7211747Z       "number": 3,
+2026-10-04T18:52:35.7211913Z       "title": {
+2026-10-04T18:52:35.7212122Z         "zh": "这个小区挺好的",
+2026-10-04T18:52:35.7212369Z         "vi": "Khu dân cư này khá tốt",
+2026-10-04T18:52:35.7212649Z         "py": "Zhè ge xiǎoqū tǐng hǎo de"
+2026-10-04T18:52:35.7212860Z       },
+2026-10-04T18:52:35.7213014Z       "words": 27,
+2026-10-04T18:52:35.7213173Z       "texts": 4,
+2026-10-04T18:52:35.7213339Z       "grammar": 3,
+2026-10-04T18:52:35.7213508Z       "homework": 30,
+2026-10-04T18:52:35.7213924Z       "sha256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6"
+2026-10-04T18:52:35.7214230Z     },
+2026-10-04T18:52:35.7214391Z     {
+2026-10-04T18:52:35.7214576Z       "id": "hsk3-fltrp-2026:l04",
+2026-10-04T18:52:35.7214781Z       "level": 3,
+2026-10-04T18:52:35.7214947Z       "number": 4,
+2026-10-04T18:52:35.7215114Z       "title": {
+2026-10-04T18:52:35.7215340Z         "zh": "这家宾馆跟别的都不一样",
+2026-10-04T18:52:35.7215628Z         "vi": "Khách sạn này khác hẳn những nơi khác",
+2026-10-04T18:52:35.7216121Z         "py": "Zhè jiā bīnguǎn gēn biéde dōu bù yíyàng"
+2026-10-04T18:52:35.7216352Z       },
+2026-10-04T18:52:35.7216511Z       "words": 28,
+2026-10-04T18:52:35.7216672Z       "texts": 4,
+2026-10-04T18:52:35.7216834Z       "grammar": 3,
+2026-10-04T18:52:35.7217005Z       "homework": 30,
+2026-10-04T18:52:35.7217312Z       "sha256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30"
+2026-10-04T18:52:35.7217619Z     },
+2026-10-04T18:52:35.7217774Z     {
+2026-10-04T18:52:35.7217968Z       "id": "hsk3-fltrp-2026:l05",
+2026-10-04T18:52:35.7218173Z       "level": 3,
+2026-10-04T18:52:35.7218335Z       "number": 5,
+2026-10-04T18:52:35.7218504Z       "title": {
+2026-10-04T18:52:35.7218718Z         "zh": "这样的照片才好看",
+2026-10-04T18:52:35.7218976Z         "vi": "Ảnh như thế này mới đẹp",
+2026-10-04T18:52:35.7219267Z         "py": "Zhèyàng de zhàopiàn cái hǎokàn"
+2026-10-04T18:52:35.7219484Z       },
+2026-10-04T18:52:35.7219634Z       "words": 28,
+2026-10-04T18:52:35.7219798Z       "texts": 4,
+2026-10-04T18:52:35.7219956Z       "grammar": 4,
+2026-10-04T18:52:35.7220192Z       "homework": 30,
+2026-10-04T18:52:35.7220671Z       "sha256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4"
+2026-10-04T18:52:35.7221182Z     },
+2026-10-04T18:52:35.7221416Z     {
+2026-10-04T18:52:35.7221663Z       "id": "hsk3-fltrp-2026:l06",
+2026-10-04T18:52:35.7221957Z       "level": 3,
+2026-10-04T18:52:35.7222208Z       "number": 6,
+2026-10-04T18:52:35.7222498Z       "title": {
+2026-10-04T18:52:35.7222867Z         "zh": "高铁上还可以点外卖",
+2026-10-04T18:52:35.7223295Z         "vi": "Trên tàu cao tốc còn có thể gọi đồ ăn giao tận nơi",
+2026-10-04T18:52:35.7223853Z         "py": "Gāotiě shàng hái kěyǐ diǎn wàimài"
+2026-10-04T18:52:35.7224082Z       },
+2026-10-04T18:52:35.7224246Z       "words": 31,
+2026-10-04T18:52:35.7224414Z       "texts": 4,
+2026-10-04T18:52:35.7224576Z       "grammar": 3,
+2026-10-04T18:52:35.7224742Z       "homework": 30,
+2026-10-04T18:52:35.7225040Z       "sha256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346"
+2026-10-04T18:52:35.7225336Z     },
+2026-10-04T18:52:35.7225494Z     {
+2026-10-04T18:52:35.7225669Z       "id": "hsk3-fltrp-2026:l07",
+2026-10-04T18:52:35.7226053Z       "level": 3,
+2026-10-04T18:52:35.7226291Z       "number": 7,
+2026-10-04T18:52:35.7226490Z       "title": {
+2026-10-04T18:52:35.7226710Z         "zh": "那条裙子比短裤更好看",
+2026-10-04T18:52:35.7226987Z         "vi": "Chiếc váy kia đẹp hơn quần soóc",
+2026-10-04T18:52:35.7227314Z         "py": "Nà tiáo qúnzi bǐ duǎnkù gèng hǎokàn"
+2026-10-04T18:52:35.7227542Z       },
+2026-10-04T18:52:35.7227697Z       "words": 30,
+2026-10-04T18:52:35.7227853Z       "texts": 4,
+2026-10-04T18:52:35.7228023Z       "grammar": 4,
+2026-10-04T18:52:35.7228193Z       "homework": 30,
+2026-10-04T18:52:35.7228501Z       "sha256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9"
+2026-10-04T18:52:35.7228804Z     },
+2026-10-04T18:52:35.7228955Z     {
+2026-10-04T18:52:35.7229125Z       "id": "hsk3-fltrp-2026:l08",
+2026-10-04T18:52:35.7229332Z       "level": 3,
+2026-10-04T18:52:35.7229490Z       "number": 8,
+2026-10-04T18:52:35.7229655Z       "title": {
+2026-10-04T18:52:35.7229852Z         "zh": "今天我出院了",
+2026-10-04T18:52:35.7230092Z         "vi": "Hôm nay tôi xuất viện",
+2026-10-04T18:52:35.7230358Z         "py": "Jīntiān wǒ chūyuàn le"
+2026-10-04T18:52:35.7230555Z       },
+2026-10-04T18:52:35.7230710Z       "words": 31,
+2026-10-04T18:52:35.7230877Z       "texts": 4,
+2026-10-04T18:52:35.7231159Z       "grammar": 4,
+2026-10-04T18:52:35.7242085Z       "homework": 30,
+2026-10-04T18:52:35.7242680Z       "sha256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24"
+2026-10-04T18:52:35.7243259Z     },
+2026-10-04T18:52:35.7243499Z     {
+2026-10-04T18:52:35.7243785Z       "id": "hsk3-fltrp-2026:l09",
+2026-10-04T18:52:35.7244120Z       "level": 3,
+2026-10-04T18:52:35.7244383Z       "number": 9,
+2026-10-04T18:52:35.7244641Z       "title": {
+2026-10-04T18:52:35.7244992Z         "zh": "打不好没关系",
+2026-10-04T18:52:35.7245392Z         "vi": "Chơi chưa tốt cũng không sao",
+2026-10-04T18:52:35.7245974Z         "py": "Dǎ bu hǎo méi guānxi"
+2026-10-04T18:52:35.7246301Z       },
+2026-10-04T18:52:35.7246524Z       "words": 33,
+2026-10-04T18:52:35.7246769Z       "texts": 4,
+2026-10-04T18:52:35.7247016Z       "grammar": 3,
+2026-10-04T18:52:35.7247265Z       "homework": 30,
+2026-10-04T18:52:35.7247754Z       "sha256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937"
+2026-10-04T18:52:35.7248255Z     },
+2026-10-04T18:52:35.7248496Z     {
+2026-10-04T18:52:35.7248786Z       "id": "hsk3-fltrp-2026:l10",
+2026-10-04T18:52:35.7249104Z       "level": 3,
+2026-10-04T18:52:35.7249530Z       "number": 10,
+2026-10-04T18:52:35.7249783Z       "title": {
+2026-10-04T18:52:35.7250125Z         "zh": "你明天再把书还给我",
+2026-10-04T18:52:35.7250560Z         "vi": "Ngày mai bạn hãy trả sách cho tôi",
+2026-10-04T18:52:35.7251068Z         "py": "Nǐ míngtiān zài bǎ shū huán gěi wǒ"
+2026-10-04T18:52:35.7251411Z       },
+2026-10-04T18:52:35.7251639Z       "words": 33,
+2026-10-04T18:52:35.7251887Z       "texts": 4,
+2026-10-04T18:52:35.7252143Z       "grammar": 3,
+2026-10-04T18:52:35.7252396Z       "homework": 30,
+2026-10-04T18:52:35.7252874Z       "sha256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828"
+2026-10-04T18:52:35.7253359Z     },
+2026-10-04T18:52:35.7253589Z     {
+2026-10-04T18:52:35.7253864Z       "id": "hsk3-fltrp-2026:l11",
+2026-10-04T18:52:35.7254186Z       "level": 3,
+2026-10-04T18:52:35.7254437Z       "number": 11,
+2026-10-04T18:52:35.7254702Z       "title": {
+2026-10-04T18:52:35.7255063Z         "zh": "看来我没办法解决这个问题",
+2026-10-04T18:52:35.7255558Z         "vi": "Xem ra tôi không có cách giải quyết vấn đề này",
+2026-10-04T18:52:35.7256207Z         "py": "Kànlái wǒ méi bànfǎ jiějué zhège wèntí"
+2026-10-04T18:52:35.7256594Z       },
+2026-10-04T18:52:35.7256825Z       "words": 29,
+2026-10-04T18:52:35.7257074Z       "texts": 4,
+2026-10-04T18:52:35.7257342Z       "grammar": 4,
+2026-10-04T18:52:35.7257536Z       "homework": 30,
+2026-10-04T18:52:35.7257850Z       "sha256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2"
+2026-10-04T18:52:35.7258168Z     },
+2026-10-04T18:52:35.7258320Z     {
+2026-10-04T18:52:35.7258500Z       "id": "hsk3-fltrp-2026:l12",
+2026-10-04T18:52:35.7258698Z       "level": 3,
+2026-10-04T18:52:35.7258860Z       "number": 12,
+2026-10-04T18:52:35.7259022Z       "title": {
+2026-10-04T18:52:35.7259251Z         "zh": "这个季节天气变化很快",
+2026-10-04T18:52:35.7259561Z         "vi": "Mùa này thời tiết thay đổi rất nhanh",
+2026-10-04T18:52:35.7259876Z         "py": "Zhège jìjié tiānqì biànhuà hěn kuài"
+2026-10-04T18:52:35.7260095Z       },
+2026-10-04T18:52:35.7260259Z       "words": 28,
+2026-10-04T18:52:35.7260423Z       "texts": 4,
+2026-10-04T18:52:35.7260577Z       "grammar": 4,
+2026-10-04T18:52:35.7260741Z       "homework": 30,
+2026-10-04T18:52:35.7261031Z       "sha256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d"
+2026-10-04T18:52:35.7261323Z     },
+2026-10-04T18:52:35.7261467Z     {
+2026-10-04T18:52:35.7261643Z       "id": "hsk3-fltrp-2026:l13",
+2026-10-04T18:52:35.7261838Z       "level": 3,
+2026-10-04T18:52:35.7262004Z       "number": 13,
+2026-10-04T18:52:35.7262161Z       "title": {
+2026-10-04T18:52:35.7262367Z         "zh": "我的新邻居来自英国",
+2026-10-04T18:52:35.7262634Z         "vi": "Hàng xóm mới của tôi đến từ Anh",
+2026-10-04T18:52:35.7262930Z         "py": "Wǒ de xīn línjū láizì Yīngguó"
+2026-10-04T18:52:35.7263144Z       },
+2026-10-04T18:52:35.7263304Z       "words": 28,
+2026-10-04T18:52:35.7263610Z       "texts": 4,
+2026-10-04T18:52:35.7263782Z       "grammar": 3,
+2026-10-04T18:52:35.7263955Z       "homework": 30,
+2026-10-04T18:52:35.7264256Z       "sha256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc"
+2026-10-04T18:52:35.7264547Z     },
+2026-10-04T18:52:35.7264705Z     {
+2026-10-04T18:52:35.7264885Z       "id": "hsk3-fltrp-2026:l14",
+2026-10-04T18:52:35.7265087Z       "level": 3,
+2026-10-04T18:52:35.7265253Z       "number": 14,
+2026-10-04T18:52:35.7265414Z       "title": {
+2026-10-04T18:52:35.7265619Z         "zh": "这本书被别人借走了",
+2026-10-04T18:52:35.7266123Z         "vi": "Cuốn sách này đã được người khác mượn rồi",
+2026-10-04T18:52:35.7266444Z         "py": "Zhè běn shū bèi biérén jiè zǒu le"
+2026-10-04T18:52:35.7266666Z       },
+2026-10-04T18:52:35.7266825Z       "words": 28,
+2026-10-04T18:52:35.7266984Z       "texts": 4,
+2026-10-04T18:52:35.7267146Z       "grammar": 3,
+2026-10-04T18:52:35.7267313Z       "homework": 30,
+2026-10-04T18:52:35.7267627Z       "sha256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a"
+2026-10-04T18:52:35.7267939Z     },
+2026-10-04T18:52:35.7268089Z     {
+2026-10-04T18:52:35.7268392Z       "id": "hsk3-fltrp-2026:l15",
+2026-10-04T18:52:35.7268587Z       "level": 3,
+2026-10-04T18:52:35.7268753Z       "number": 15,
+2026-10-04T18:52:35.7268924Z       "title": {
+2026-10-04T18:52:35.7269122Z         "zh": "我是半个南京人",
+2026-10-04T18:52:35.7269395Z         "vi": "Tôi có thể coi là nửa người Nam Kinh",
+2026-10-04T18:52:35.7269698Z         "py": "Wǒ shì bàn ge Nánjīngrén"
+2026-10-04T18:52:35.7269908Z       },
+2026-10-04T18:52:35.7270061Z       "words": 28,
+2026-10-04T18:52:35.7270226Z       "texts": 4,
+2026-10-04T18:52:35.7270388Z       "grammar": 4,
+2026-10-04T18:52:35.7270553Z       "homework": 30,
+2026-10-04T18:52:35.7270852Z       "sha256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836"
+2026-10-04T18:52:35.7271151Z     },
+2026-10-04T18:52:35.7271299Z     {
+2026-10-04T18:52:35.7271485Z       "id": "hsk3-fltrp-2026:l16",
+2026-10-04T18:52:35.7271684Z       "level": 3,
+2026-10-04T18:52:35.7271848Z       "number": 16,
+2026-10-04T18:52:35.7272010Z       "title": {
+2026-10-04T18:52:35.7272227Z         "zh": "我听说有的熊猫出国了",
+2026-10-04T18:52:35.7272516Z         "vi": "Tôi nghe nói có gấu trúc đã ra nước ngoài",
+2026-10-04T18:52:35.7272838Z         "py": "Wǒ tīngshuō yǒude xióngmāo chū guó le"
+2026-10-04T18:52:35.7273057Z       },
+2026-10-04T18:52:35.7273210Z       "words": 26,
+2026-10-04T18:52:35.7273369Z       "texts": 4,
+2026-10-04T18:52:35.7273534Z       "grammar": 4,
+2026-10-04T18:52:35.7273696Z       "homework": 30,
+2026-10-04T18:52:35.7273987Z       "sha256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139"
+2026-10-04T18:52:35.7274277Z     },
+2026-10-04T18:52:35.7274420Z     {
+2026-10-04T18:52:35.7274592Z       "id": "hsk3-fltrp-2026:l17",
+2026-10-04T18:52:35.7274793Z       "level": 3,
+2026-10-04T18:52:35.7274954Z       "number": 17,
+2026-10-04T18:52:35.7275113Z       "title": {
+2026-10-04T18:52:35.7275422Z         "zh": "我要多向认真的人学习",
+2026-10-04T18:52:35.7275742Z         "vi": "Tôi phải học hỏi nhiều hơn từ những người cẩn thận",
+2026-10-04T18:52:35.7276393Z         "py": "Wǒ yào duō xiàng rènzhēn de rén xuéxí"
+2026-10-04T18:52:35.7276624Z       },
+2026-10-04T18:52:35.7276777Z       "words": 28,
+2026-10-04T18:52:35.7276961Z       "texts": 4,
+2026-10-04T18:52:35.7277122Z       "grammar": 4,
+2026-10-04T18:52:35.7277286Z       "homework": 30,
+2026-10-04T18:52:35.7277582Z       "sha256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a"
+2026-10-04T18:52:35.7277887Z     },
+2026-10-04T18:52:35.7278035Z     {
+2026-10-04T18:52:35.7278205Z       "id": "hsk3-fltrp-2026:l18",
+2026-10-04T18:52:35.7278399Z       "level": 3,
+2026-10-04T18:52:35.7278555Z       "number": 18,
+2026-10-04T18:52:35.7278714Z       "title": {
+2026-10-04T18:52:35.7278919Z         "zh": "我学会了包饺子",
+2026-10-04T18:52:35.7279182Z         "vi": "Tôi đã học được cách gói sủi cảo",
+2026-10-04T18:52:35.7279477Z         "py": "Wǒ xuéhuì le bāo jiǎozi"
+2026-10-04T18:52:35.7279680Z       },
+2026-10-04T18:52:35.7279832Z       "words": 30,
+2026-10-04T18:52:35.7279994Z       "texts": 4,
+2026-10-04T18:52:35.7280169Z       "grammar": 4,
+2026-10-04T18:52:35.7280331Z       "homework": 30,
+2026-10-04T18:52:35.7280626Z       "sha256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53"
+2026-10-04T18:52:35.7280924Z     }
+2026-10-04T18:52:35.7281068Z   ],
+2026-10-04T18:52:35.7281218Z   "lexicons": [
+2026-10-04T18:52:35.7281374Z     {
+2026-10-04T18:52:35.7281602Z       "courseId": "hsk2-fltrp-2026",
+2026-10-04T18:52:35.7281811Z       "counts": {
+2026-10-04T18:52:35.7281980Z         "sourceRecords": 226,
+2026-10-04T18:52:35.7282169Z         "senses": 226,
+2026-10-04T18:52:35.7282347Z         "chineseForms": 209,
+2026-10-04T18:52:35.7282539Z         "verifiedMerges": 0
+2026-10-04T18:52:35.7282724Z       },
+2026-10-04T18:52:35.7283009Z       "sha256": "ef5bfd9d4b03fd83e0eb735afca091ff3daa09dd1c5439f1e4453d118bef014c"
+2026-10-04T18:52:35.7283319Z     },
+2026-10-04T18:52:35.7283459Z     {
+2026-10-04T18:52:35.7283630Z       "courseId": "hsk3-fltrp-2026",
+2026-10-04T18:52:35.7283828Z       "counts": {
+2026-10-04T18:52:35.7284119Z         "sourceRecords": 523,
+2026-10-04T18:52:35.7284308Z         "senses": 523,
+2026-10-04T18:52:35.7284482Z         "chineseForms": 487,
+2026-10-04T18:52:35.7284671Z         "verifiedMerges": 0
+2026-10-04T18:52:35.7284846Z       },
+2026-10-04T18:52:35.7285127Z       "sha256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3"
+2026-10-04T18:52:35.7285422Z     }
+2026-10-04T18:52:35.7285565Z   ],
+2026-10-04T18:52:35.7285710Z   "issues": []
+2026-10-04T18:52:35.7286007Z }
+2026-10-04T18:52:35.7973787Z 
+2026-10-04T18:52:35.7974275Z > hsk-shared-course-app@1.0.0 check
+2026-10-04T18:52:35.7974657Z > tsc --noEmit
+2026-10-04T18:52:35.7974769Z 
+2026-10-04T18:52:36.4372701Z [36mvite v8.3.2 [32mbuilding client environment for production...[36m[39m
+2026-10-04T18:52:36.4443341Z transforming...
+2026-10-04T18:52:36.6101843Z ✓ 198 modules transformed.
+2026-10-04T18:52:37.8297769Z rendering chunks...
+2026-10-04T18:52:38.0181836Z computing gzip size...
+2026-10-04T18:52:38.0468076Z .repro-output/media-reviewed-subset/dist/index.html                                                   0.45 kB │ gzip:   0.33 kB
+2026-10-04T18:52:38.0469400Z .repro-output/media-reviewed-subset/dist/assets/course-index-BKGnz4SX.json                            4.87 kB │ gzip:   1.18 kB
+2026-10-04T18:52:38.0470787Z .repro-output/media-reviewed-subset/dist/assets/textbook-display-revisions-DWScioD2.json             26.13 kB │ gzip:   4.78 kB
+2026-10-04T18:52:38.0472124Z .repro-output/media-reviewed-subset/dist/content-manifest.json                                       53.70 kB │ gzip:  14.31 kB
+2026-10-04T18:52:38.0473420Z .repro-output/media-reviewed-subset/dist/assets/stage2-bank-DOB9KrMv.json                           269.65 kB │ gzip:  47.51 kB
+2026-10-04T18:52:38.0474822Z .repro-output/media-reviewed-subset/dist/assets/media-references-DD5E_5K_.json                      287.06 kB │ gzip:  57.51 kB
+2026-10-04T18:52:38.0475650Z .repro-output/media-reviewed-subset/dist/assets/stage3-catalog-CH6Cx7h7.json                        384.02 kB │ gzip:  67.91 kB
+2026-10-04T18:52:38.0476712Z .repro-output/media-reviewed-subset/dist/assets/textbook-ksDEYuz_.json                              741.67 kB │ gzip:  91.65 kB
+2026-10-04T18:52:38.0477539Z .repro-output/media-reviewed-subset/dist/assets/progress-DgeKDxiU.css                                 1.57 kB │ gzip:   0.62 kB
+2026-10-04T18:52:38.0478328Z .repro-output/media-reviewed-subset/dist/assets/archive-BMfTkVw2.css                                  1.93 kB │ gzip:   0.74 kB
+2026-10-04T18:52:38.0479082Z .repro-output/media-reviewed-subset/dist/assets/hanzi-D0sNO2-t.css                                    2.24 kB │ gzip:   0.79 kB
+2026-10-04T18:52:38.0479834Z .repro-output/media-reviewed-subset/dist/assets/data-panel-BgEWndCN.css                               3.56 kB │ gzip:   1.10 kB
+2026-10-04T18:52:38.0480619Z .repro-output/media-reviewed-subset/dist/assets/source-activities-Cz6XgW02.css                        4.93 kB │ gzip:   1.37 kB
+2026-10-04T18:52:38.0481695Z .repro-output/media-reviewed-subset/dist/assets/listening-DTyrhIy_.css                                5.80 kB │ gzip:   1.60 kB
+2026-10-04T18:52:38.0482787Z .repro-output/media-reviewed-subset/dist/assets/view-BYaiqWuX.css                                     6.25 kB │ gzip:   1.79 kB
+2026-10-04T18:52:38.0483642Z .repro-output/media-reviewed-subset/dist/assets/homework-8E-U9jBU.css                                 8.11 kB │ gzip:   2.06 kB
+2026-10-04T18:52:38.0484407Z .repro-output/media-reviewed-subset/dist/assets/textbook-BGHTCm5n.css                                 9.57 kB │ gzip:   2.64 kB
+2026-10-04T18:52:38.0485184Z .repro-output/media-reviewed-subset/dist/assets/index-CqoucPNO.css                                   34.61 kB │ gzip:   7.74 kB
+2026-10-04T18:52:38.0486137Z .repro-output/media-reviewed-subset/dist/assets/textbook-BNPI77hK.js                                  0.08 kB │ gzip:   0.10 kB
+2026-10-04T18:52:38.0486971Z .repro-output/media-reviewed-subset/dist/assets/review-Dw3CJ1qh.js                                    0.08 kB │ gzip:   0.09 kB
+2026-10-04T18:52:38.0488084Z .repro-output/media-reviewed-subset/dist/assets/stage3-catalog-BDgGKH7A.js                            0.08 kB │ gzip:   0.10 kB
+2026-10-04T18:52:38.0488879Z .repro-output/media-reviewed-subset/dist/assets/media-references-DyNdsQyY.js                          0.09 kB │ gzip:   0.10 kB
+2026-10-04T18:52:38.0489657Z .repro-output/media-reviewed-subset/dist/assets/vocabulary-DUdCCQ1C.js                                0.09 kB │ gzip:   0.10 kB
+2026-10-04T18:52:38.0490452Z .repro-output/media-reviewed-subset/dist/assets/textbook-display-revisions-CGs5GDJK.js                0.10 kB │ gzip:   0.11 kB
+2026-10-04T18:52:38.0491256Z .repro-output/media-reviewed-subset/dist/assets/rolldown-runtime-DK3Fl9T5.js                          0.15 kB │ gzip:   0.15 kB
+2026-10-04T18:52:38.0492557Z .repro-output/media-reviewed-subset/dist/assets/asset-base-DAkFL0yR.js                                0.16 kB │ gzip:   0.15 kB
+2026-10-04T18:52:38.0493602Z .repro-output/media-reviewed-subset/dist/assets/ui-BaCN-TQ1.js                                        0.38 kB │ gzip:   0.27 kB
+2026-10-04T18:52:38.0494570Z .repro-output/media-reviewed-subset/dist/assets/dom-Co9YUD_J.js                                       0.51 kB │ gzip:   0.35 kB
+2026-10-04T18:52:38.0495538Z .repro-output/media-reviewed-subset/dist/assets/bilingual-YzyU8AOp.js                                 0.55 kB │ gzip:   0.29 kB
+2026-10-04T18:52:38.0496686Z .repro-output/media-reviewed-subset/dist/assets/content-Dtx46D9v.js                                   0.86 kB │ gzip:   0.50 kB
+2026-10-04T18:52:38.0497664Z .repro-output/media-reviewed-subset/dist/assets/homework-C7rR7QKa.js                                  1.81 kB │ gzip:   1.01 kB
+2026-10-04T18:52:38.0498813Z .repro-output/media-reviewed-subset/dist/assets/session-bfGAMATy.js                                   2.32 kB │ gzip:   1.18 kB
+2026-10-04T18:52:38.0499925Z .repro-output/media-reviewed-subset/dist/assets/mixed-state-7Oiw2hir.js                               3.10 kB │ gzip:   1.40 kB
+2026-10-04T18:52:38.0500972Z .repro-output/media-reviewed-subset/dist/assets/progress-C0nra-vL.js                                  3.17 kB │ gzip:   1.48 kB
+2026-10-04T18:52:38.0501999Z .repro-output/media-reviewed-subset/dist/assets/home-lWTCFjNu.js                                      4.32 kB │ gzip:   2.02 kB
+2026-10-04T18:52:38.0503014Z .repro-output/media-reviewed-subset/dist/assets/catalogue-C_U9rwbD.js                                 4.81 kB │ gzip:   2.04 kB
+2026-10-04T18:52:38.0504089Z .repro-output/media-reviewed-subset/dist/assets/audio-segments-hsk2-reviewed-sentences-bwYi0Zbf.js    5.11 kB │ gzip:   1.96 kB
+2026-10-04T18:52:38.0505197Z .repro-output/media-reviewed-subset/dist/assets/listening-BrTa9oFu.js                                 5.53 kB │ gzip:   2.36 kB
+2026-10-04T18:52:38.0506583Z .repro-output/media-reviewed-subset/dist/assets/engine-CBi3sj57.js                                    5.90 kB │ gzip:   2.45 kB
+2026-10-04T18:52:38.0507362Z .repro-output/media-reviewed-subset/dist/assets/pair-panel-DyRXZhOo.js                                8.41 kB │ gzip:   3.71 kB
+2026-10-04T18:52:38.0508108Z .repro-output/media-reviewed-subset/dist/assets/store-DqFMKMYi.js                                     8.98 kB │ gzip:   3.49 kB
+2026-10-04T18:52:38.0508911Z .repro-output/media-reviewed-subset/dist/assets/data-panel-D0qgpkHA.js                                9.01 kB │ gzip:   3.69 kB
+2026-10-04T18:52:38.0509738Z .repro-output/media-reviewed-subset/dist/assets/backup-view-I37Kq41o.js                               9.02 kB │ gzip:   3.91 kB
+2026-10-04T18:52:38.0510570Z .repro-output/media-reviewed-subset/dist/assets/browser-pair-DJbMzPIe.js                             10.81 kB │ gzip:   3.85 kB
+2026-10-04T18:52:38.0511433Z .repro-output/media-reviewed-subset/dist/assets/listening-Bg4TzGgm.js                                16.01 kB │ gzip:   5.87 kB
+2026-10-04T18:52:38.0512242Z .repro-output/media-reviewed-subset/dist/assets/engine-BAT6QHsN.js                                   16.10 kB │ gzip:   6.03 kB
+2026-10-04T18:52:38.0513202Z .repro-output/media-reviewed-subset/dist/assets/copy-yY9kyqvF.js                                     18.33 kB │ gzip:   6.90 kB
+2026-10-04T18:52:38.0514034Z .repro-output/media-reviewed-subset/dist/assets/listening-BXM9emsG.js                                19.05 kB │ gzip:   7.03 kB
+2026-10-04T18:52:38.0514864Z .repro-output/media-reviewed-subset/dist/assets/archive-Bcs1pIMZ.js                                  20.25 kB │ gzip:   8.45 kB
+2026-10-04T18:52:38.0515665Z .repro-output/media-reviewed-subset/dist/assets/engine-DJNGzNN8.js                                   22.15 kB │ gzip:   7.49 kB
+2026-10-04T18:52:38.0516646Z .repro-output/media-reviewed-subset/dist/assets/textbook-9u9iXuP4.js                                 23.37 kB │ gzip:   9.12 kB
+2026-10-04T18:52:38.0517448Z .repro-output/media-reviewed-subset/dist/assets/view-CzWP2RDA.js                                     23.87 kB │ gzip:   9.02 kB
+2026-10-04T18:52:38.0518218Z .repro-output/media-reviewed-subset/dist/assets/progress-mNhdDTSh.js                                 24.58 kB │ gzip:   9.30 kB
+2026-10-04T18:52:38.0519050Z .repro-output/media-reviewed-subset/dist/assets/source-activities-C-u-PvZD.js                        32.56 kB │ gzip:   9.76 kB
+2026-10-04T18:52:38.0519872Z .repro-output/media-reviewed-subset/dist/assets/textbook-ZthZsYNM.js                                 33.88 kB │ gzip:  12.80 kB
+2026-10-04T18:52:38.0520684Z .repro-output/media-reviewed-subset/dist/assets/homework-Dt8uSywP.js                                 35.01 kB │ gzip:  10.65 kB
+2026-10-04T18:52:38.0521519Z .repro-output/media-reviewed-subset/dist/assets/compatibility-f32bwKOb.js                            36.18 kB │ gzip:  13.00 kB
+2026-10-04T18:52:38.0522456Z .repro-output/media-reviewed-subset/dist/assets/hanzi-C186eFG0.js                                    55.11 kB │ gzip:  18.43 kB
+2026-10-04T18:52:38.0523287Z .repro-output/media-reviewed-subset/dist/assets/hsk2-lexicon-K822mAIa.js                             75.89 kB │ gzip:  10.34 kB
+2026-10-04T18:52:38.0524161Z .repro-output/media-reviewed-subset/dist/assets/audio-segments-pilot-vPaBRnCF.js                    101.16 kB │ gzip:  11.25 kB
+2026-10-04T18:52:38.0525045Z .repro-output/media-reviewed-subset/dist/assets/lesson-04-BpJ1_h4u.js                               110.80 kB │ gzip:  22.08 kB
+2026-10-04T18:52:38.0526100Z .repro-output/media-reviewed-subset/dist/assets/audio-segments-hsk2-lessons02-03-DhnzM86H.js        112.98 kB │ gzip:  13.28 kB
+2026-10-04T18:52:38.0527013Z .repro-output/media-reviewed-subset/dist/assets/lesson-01-Dvf3P_gy.js                               114.88 kB │ gzip:  23.67 kB
+2026-10-04T18:52:38.0527987Z .repro-output/media-reviewed-subset/dist/assets/lesson-07-CEJ2il4t.js                               117.94 kB │ gzip:  21.63 kB
+2026-10-04T18:52:38.0528957Z .repro-output/media-reviewed-subset/dist/assets/lesson-02-DA1x_4uz.js                               119.04 kB │ gzip:  24.02 kB
+2026-10-04T18:52:38.0529837Z .repro-output/media-reviewed-subset/dist/assets/lesson-13-2AOJndFF.js                               122.94 kB │ gzip:  25.75 kB
+2026-10-04T18:52:38.0530651Z .repro-output/media-reviewed-subset/dist/assets/lesson-08-C9cvqblF.js                               123.09 kB │ gzip:  24.50 kB
+2026-10-04T18:52:38.0531452Z .repro-output/media-reviewed-subset/dist/assets/lesson-10-WlLxaHx3.js                               123.12 kB │ gzip:  24.46 kB
+2026-10-04T18:52:38.0532256Z .repro-output/media-reviewed-subset/dist/assets/lesson-03-BAxkSQoP.js                               123.97 kB │ gzip:  25.02 kB
+2026-10-04T18:52:38.0533066Z .repro-output/media-reviewed-subset/dist/assets/lesson-14-CP3E91w6.js                               127.71 kB │ gzip:  26.09 kB
+2026-10-04T18:52:38.0533860Z .repro-output/media-reviewed-subset/dist/assets/lesson-11-6qDGNP_1.js                               128.58 kB │ gzip:  25.67 kB
+2026-10-04T18:52:38.0534699Z .repro-output/media-reviewed-subset/dist/assets/lesson-05-Cc6sCwM9.js                               133.88 kB │ gzip:  26.78 kB
+2026-10-04T18:52:38.0535678Z .repro-output/media-reviewed-subset/dist/assets/lesson-15-Bt9ELdZZ.js                               134.13 kB │ gzip:  27.80 kB
+2026-10-04T18:52:38.0536795Z .repro-output/media-reviewed-subset/dist/assets/lesson-12-DvJGY4wP.js                               135.34 kB │ gzip:  27.60 kB
+2026-10-04T18:52:38.0537741Z .repro-output/media-reviewed-subset/dist/assets/lesson-09-C28dsahb.js                               139.88 kB │ gzip:  28.10 kB
+2026-10-04T18:52:38.0538679Z .repro-output/media-reviewed-subset/dist/assets/lesson-06-CwcguEyw.js                               142.11 kB │ gzip:  27.32 kB
+2026-10-04T18:52:38.0539512Z .repro-output/media-reviewed-subset/dist/assets/lesson-01-zYhLI88r.js                               148.38 kB │ gzip:  31.37 kB
+2026-10-04T18:52:38.0540330Z .repro-output/media-reviewed-subset/dist/assets/lesson-16-DRtr0ny_.js                               149.33 kB │ gzip:  32.47 kB
+2026-10-04T18:52:38.0541147Z .repro-output/media-reviewed-subset/dist/assets/lesson-14-DzHhiC5r.js                               150.68 kB │ gzip:  30.87 kB
+2026-10-04T18:52:38.0541948Z .repro-output/media-reviewed-subset/dist/assets/lesson-13-DdIe_4T7.js                               152.05 kB │ gzip:  31.93 kB
+2026-10-04T18:52:38.0542777Z .repro-output/media-reviewed-subset/dist/assets/lesson-17-DbAfN_SL.js                               159.95 kB │ gzip:  32.78 kB
+2026-10-04T18:52:38.0543589Z .repro-output/media-reviewed-subset/dist/assets/lesson-04-jhWwL0K8.js                               169.18 kB │ gzip:  32.55 kB
+2026-10-04T18:52:38.0544420Z .repro-output/media-reviewed-subset/dist/assets/lesson-02-ipEgC2hZ.js                               169.52 kB │ gzip:  33.31 kB
+2026-10-04T18:52:38.0545366Z .repro-output/media-reviewed-subset/dist/assets/lesson-08-DAXOkXiZ.js                               170.19 kB │ gzip:  34.64 kB
+2026-10-04T18:52:38.0546366Z .repro-output/media-reviewed-subset/dist/assets/hsk3-lexicon-BbvKIHAe.js                            172.94 kB │ gzip:  20.72 kB
+2026-10-04T18:52:38.0547262Z .repro-output/media-reviewed-subset/dist/assets/lesson-11-CKk1cQSV.js                               175.11 kB │ gzip:  34.06 kB
+2026-10-04T18:52:38.0548102Z .repro-output/media-reviewed-subset/dist/assets/lesson-10-Di7Ok1Wn.js                               175.68 kB │ gzip:  34.34 kB
+2026-10-04T18:52:38.0548952Z .repro-output/media-reviewed-subset/dist/assets/lesson-12-D2ecTnox.js                               181.15 kB │ gzip:  36.26 kB
+2026-10-04T18:52:38.0549791Z .repro-output/media-reviewed-subset/dist/assets/lesson-09-C9D0LE8o.js                               182.52 kB │ gzip:  35.30 kB
+2026-10-04T18:52:38.0550599Z .repro-output/media-reviewed-subset/dist/assets/lesson-05-MRwxRg8w.js                               183.89 kB │ gzip:  34.62 kB
+2026-10-04T18:52:38.0551449Z .repro-output/media-reviewed-subset/dist/assets/lesson-15-DBteB5yM.js                               185.54 kB │ gzip:  36.84 kB
+2026-10-04T18:52:38.0552284Z .repro-output/media-reviewed-subset/dist/assets/lesson-03-DZH3nHsV.js                               188.02 kB │ gzip:  35.75 kB
+2026-10-04T18:52:38.0553109Z .repro-output/media-reviewed-subset/dist/assets/lesson-18-ABRHRLqY.js                               189.42 kB │ gzip:  37.63 kB
+2026-10-04T18:52:38.0553937Z .repro-output/media-reviewed-subset/dist/assets/lesson-06-Cc4P3x8D.js                               192.91 kB │ gzip:  35.49 kB
+2026-10-04T18:52:38.0554754Z .repro-output/media-reviewed-subset/dist/assets/lesson-07-Dq83Ixn2.js                               195.56 kB │ gzip:  36.16 kB
+2026-10-04T18:52:38.0555607Z .repro-output/media-reviewed-subset/dist/assets/legacy-exercises-Bz3UuW2N.js                        326.82 kB │ gzip:  82.57 kB
+2026-10-04T18:52:38.0556616Z .repro-output/media-reviewed-subset/dist/assets/index-DHIMbq_c.js                                   334.93 kB │ gzip:  81.97 kB
+2026-10-04T18:52:38.0557406Z .repro-output/media-reviewed-subset/dist/assets/homework30-BVBKAbRf.js                              613.90 kB │ gzip: 135.38 kB
+2026-10-04T18:52:38.0558319Z .repro-output/media-reviewed-subset/dist/assets/content-ChH95uYd.js                                 852.80 kB │ gzip: 144.56 kB
+2026-10-04T18:52:38.0558662Z 
+2026-10-04T18:52:38.0558848Z [32m✓ built in 1.61s[39m
+2026-10-04T18:52:38.0559530Z [33m[plugin builtin:vite-reporter] 
+2026-10-04T18:52:38.0560091Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2026-10-04T18:52:38.0560684Z - Using dynamic import() to code-split the application
+2026-10-04T18:52:38.0561709Z - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+2026-10-04T18:52:38.0562533Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+2026-10-04T18:52:39.1377656Z 
+2026-10-04T18:52:39.1378352Z Running 4 tests using 1 worker
+2026-10-04T18:52:39.1378683Z 
+2026-10-04T18:52:43.1995057Z   ✓  1 [chromium] › tests/unified/reviewed-sentence-subset.spec.ts:6:98 › guarded source-frame hsk2-fltrp-2026:l04:text2:line3 plays its exact original range and retains fallback (3.7s)
+2026-10-04T18:52:46.4948124Z   ✓  2 [chromium] › tests/unified/reviewed-sentence-subset.spec.ts:6:98 › guarded source-frame hsk2-fltrp-2026:l05:text2:line8:sentence2 plays its exact original range and retains fallback (3.3s)
+2026-10-04T18:52:46.6835373Z   ✓  3 [chromium] › tests/unified/reviewed-sentence-subset.spec.ts:17:1 › whole-track color retains its honest pending independent-word label (177ms)
+2026-10-04T18:52:46.9290873Z   ✓  4 [chromium] › tests/unified/reviewed-sentence-subset.spec.ts:18:1 › failed new checksum leaves legacy accepted clips and new whole-track fallback available (232ms)
+2026-10-04T18:52:47.0161349Z 
+2026-10-04T18:52:47.0164720Z   4 passed (8.3s)
+2026-10-04T18:52:47.0411561Z ##[group]Run npx playwright test --config=docs/resume-20261004/source-font-visual/playwright.source-font-visual.config.ts --project=chromium
+2026-10-04T18:52:47.0412367Z [36;1mnpx playwright test --config=docs/resume-20261004/source-font-visual/playwright.source-font-visual.config.ts --project=chromium[0m
+2026-10-04T18:52:47.0468181Z shell: /usr/bin/bash -e {0}
+2026-10-04T18:52:47.0468405Z ##[endgroup]
+2026-10-04T18:52:47.9096196Z 
+2026-10-04T18:52:47.9096722Z Running 2 tests using 1 worker
+2026-10-04T18:52:47.9096986Z 
+2026-10-04T18:52:54.1854038Z   ✓  1 [chromium] › tests/unified/hsk1-source-font-visual.spec.ts:38:31 › HSK1 printed field pinyin and original empty table headers visual evidence at 320 (5.9s)
+2026-10-04T18:52:59.9716568Z   ✓  2 [chromium] › tests/unified/hsk1-source-font-visual.spec.ts:38:31 › HSK1 printed field pinyin and original empty table headers visual evidence at 1440 (5.8s)
+2026-10-04T18:53:00.0349105Z 
+2026-10-04T18:53:00.0352625Z   2 passed (12.3s)
+2026-10-04T18:53:00.0661150Z ##[group]Run actions/upload-artifact@v4
+2026-10-04T18:53:00.0661386Z with:
+2026-10-04T18:53:00.0661599Z   name: hsk-flow-package-package-chromium
+2026-10-04T18:53:00.0661852Z   include-hidden-files: true
+2026-10-04T18:53:00.0667170Z   path: course-app/.repro-output/flow-package-assembly.json
+course-app/.repro-output/package-closure-browser.json
+course-app/unified-site-flow-package/course-engine/unified-release-manifest.json
+course-app/unified-site-flow-package/course-engine/assets/**/*.js
+course-app/unified-site-flow-package/course-engine/assets/**/*.css
+course-app/unified-site-flow-package/course-engine/assets/**/*.json
+course-app/unified-site-flow-package/index.html
+course-app/unified-site-flow-package/new-hsk1/index.html
+course-app/unified-site-flow-package/new-hsk1/hsk1/index.html
+course-app/unified-site-flow-package/new-hsk1/hsk1/lesson.html
+course-app/unified-site-flow-package/new-hsk1/hsk1/learning.html
+course-app/unified-site-flow-package/new-hsk1/hsk1/lesson9-pilot.html
+course-app/unified-site-flow-package/new-hsk2/index.html
+course-app/unified-site-flow-package/new-hsk2/hsk2/index.html
+course-app/unified-site-flow-package/new-hsk3/index.html
+course-app/unified-site-flow-package/new-hsk3/hsk3/index.html
+course-app/.repro-output/media-reviewed-subset/browser-results.json
+course-app/.repro-output/media-reviewed-subset/browser-artifacts/
+course-app/test-results-package-closure/**/*.md
+course-app/docs/resume-20261004/source-font-visual/native-results.json
+course-app/docs/resume-20261004/source-font-visual/native-output/
+hsk1-app/test-results/**/*.png
+hsk1-app/.repro-output/mixed-preview/**/*.png
+course-app/docs/resume-20261004/flow-compat-review/native-flow-results.json
+course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-results.json
+course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-ci-results.json
+course-app/docs/resume-20261004/flow-compat-review/hsk1-fresh-backup-ci-results.json
+course-app/docs/resume-20261004/flow-compat-review/legacy-native-results.json
+course-app/docs/resume-20261004/flow-compat-review/**/*.png
+course-app/docs/resume-20261004/flow-compat-review/**/error-context.md
+
+2026-10-04T18:53:00.0672568Z   if-no-files-found: warn
+2026-10-04T18:53:00.0672763Z   compression-level: 6
+2026-10-04T18:53:00.0672945Z   overwrite: false
+2026-10-04T18:53:00.0673109Z ##[endgroup]
+2026-10-04T18:53:00.2016414Z (node:4128) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-04T18:53:00.2017460Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-04T18:53:00.2805314Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-04T18:53:00.2812092Z The least common ancestor is /home/runner/work/hsk-hub/hsk-hub. This will be the root directory of the artifact
+2026-10-04T18:53:00.2813047Z With the provided path, there will be 194 files uploaded
+2026-10-04T18:53:00.2813867Z Artifact name is valid!
+2026-10-04T18:53:00.2814329Z Root directory input is valid!
+2026-10-04T18:53:00.4916959Z Beginning upload of artifact content to blob storage
+2026-10-04T18:53:00.8708729Z (node:4128) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-04T18:53:01.0866680Z Uploaded bytes 6614845
+2026-10-04T18:53:01.1034491Z Finished uploading artifact content to blob storage!
+2026-10-04T18:53:01.1035546Z SHA256 digest of uploaded artifact zip is a47b86087ede1a9ed0674dc8ee37aeab225a29905444f1adcbcece2a7f4264af
+2026-10-04T18:53:01.1036927Z Finalizing artifact upload
+2026-10-04T18:53:01.3177722Z Artifact hsk-flow-package-package-chromium.zip successfully finalized. Artifact ID 11311643900
+2026-10-04T18:53:01.3178896Z Artifact hsk-flow-package-package-chromium has been successfully uploaded! Final size is 6614845 bytes. Artifact ID is 11311643900
+2026-10-04T18:53:01.3183742Z Artifact download URL: https://github.com/nhiennhientran/hsk-hub/actions/runs/37226015769/artifacts/11311643900
+2026-10-04T18:53:01.3347384Z Post job cleanup.
+2026-10-04T18:53:01.4345208Z (node:4140) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-04T18:53:01.4346094Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-04T18:53:01.4505130Z Post job cleanup.
+2026-10-04T18:53:01.5274159Z [command]/usr/bin/git version
+2026-10-04T18:53:01.5321969Z git version 2.55.0
+2026-10-04T18:53:01.5360087Z Temporarily overriding HOME='/home/runner/work/_temp/6ce9d2e6-540f-4853-b799-c460a98a4a12' before making global git config changes
+2026-10-04T18:53:01.5361434Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-04T18:53:01.5363552Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/hsk-hub/hsk-hub
+2026-10-04T18:53:01.5401600Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-04T18:53:01.5436089Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-04T18:53:01.5664337Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-04T18:53:01.5687112Z http.https://github.com/.extraheader
+2026-10-04T18:53:01.5701883Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-04T18:53:01.5730976Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-04T18:53:01.6003682Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-04T18:53:01.6037058Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-04T18:53:01.6382018Z Cleaning up orphan processes
+2026-10-04T18:53:01.6644643Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

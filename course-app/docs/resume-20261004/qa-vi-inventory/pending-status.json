@@ -1,0 +1,27 @@
+{
+  "status": "pending-current-source-regeneration",
+  "coverageStatus": "passed",
+  "primaryOccurrenceRows": 46463,
+  "coverageChecksPassed": 15,
+  "coverageChecksTotal": 15,
+  "pendingSourceInputs": [
+    {
+      "file": "course-app/tools/package-unified.mjs",
+      "bytes": 12694,
+      "sha256": "efc2e61e946eb6a53ab2a59e099b0dc349079ea9c4ab4c237fe09da99334976b",
+      "matchesSourceCommit": false,
+      "matchesRecordedHash": false
+    }
+  ],
+  "generationScope": {
+    "sourceHead": "8dff803cc2f8d1956d5853ef40073c670e265cc0",
+    "sourceTree": "422f45046960d6148075ee81d891f0569839441c"
+  },
+  "pendingAuthorManifestRegeneration": "Author corrected sourceViews placeholder to actual sourceColumnBinding/fieldTargetRefs in builder; generated semantic-consumers currently precedes that doc-only fix. Rebuild at root next source checkpoint before final source/consumer freeze.",
+  "rootAuthorization": "Root explicitly requests wait for new engineering sourcecommit, then regenerate under that HEAD. No Git-blob source mode change needed.",
+  "officialVietnameseSemanticAuditPerformed": false,
+  "definition": "46463 is candidate field occurrences, not whole-site official textbook conformity or completed Vietnamese auditing.",
+  "productionEdits": [],
+  "provisionalReportSHA256": "284631e1b1326927e8caf33299d6e945bc7cbcbe0a8956b0529ff12223a493ab",
+  "omissionCounterexamplesSHA256": "4f017d0a42eba077f88c57b16c2d8da16efedf9f5933490f7e9c5bc4d93f4334"
+}

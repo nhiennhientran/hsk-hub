@@ -1,0 +1,134 @@
+{
+  "status": "passed-source-inventory-validation",
+  "generatedAt": "2026-10-04T19:05:34.205Z",
+  "inventoryGeneratedAt": "2026-10-04T19:05:17.324Z",
+  "gitHeadAtInventory": "8dff803cc2f8d1956d5853ef40073c670e265cc0",
+  "gitTreeAtInventory": "422f45046960d6148075ee81d891f0569839441c",
+  "checks": [
+    {
+      "name": "record ID and semantic namespace uniqueness",
+      "passed": true,
+      "details": {
+        "rows": 46463
+      }
+    },
+    {
+      "name": "reported counts equal real rows",
+      "passed": true
+    },
+    {
+      "name": "all official audit states remain pending",
+      "passed": true
+    },
+    {
+      "name": "reference metadata is excluded from learning appearances",
+      "passed": true
+    },
+    {
+      "name": "frozen/raw textbook and historical source are excluded from effective learning count",
+      "passed": true
+    },
+    {
+      "name": "all 600 Vietnamese listening options/feedback strings are present",
+      "passed": true
+    },
+    {
+      "name": "15 HSK1 lessons / 484 original activities / 344 stable senses",
+      "passed": true
+    },
+    {
+      "name": "33 HSK2/3 lessons, 749 word records, 738 lines, 132 text units, 108 grammar units",
+      "passed": true
+    },
+    {
+      "name": "source lesson IDs agree with their actual file",
+      "passed": true
+    },
+    {
+      "name": "all official-labelled JSON VI fields are inventoried",
+      "passed": true
+    },
+    {
+      "name": "source/parser/packed-content replay has no reported failures",
+      "passed": true
+    },
+    {
+      "name": "three fetched legacy practice banks preserve all 1360 question identities and every original leaf",
+      "passed": true,
+      "details": {
+        "banks": [
+          {
+            "course": "legacy-hsk1",
+            "questions": 360,
+            "questionLeaves": 3836,
+            "VietnameseOccurrences": 923
+          },
+          {
+            "course": "legacy-hsk2",
+            "questions": 360,
+            "questionLeaves": 4188,
+            "VietnameseOccurrences": 720
+          },
+          {
+            "course": "legacy-hsk3",
+            "questions": 640,
+            "questionLeaves": 7606,
+            "VietnameseOccurrences": 1335
+          }
+        ],
+        "problems": []
+      }
+    },
+    {
+      "name": "all original Vietnamese truth-choice options and answers are explicit source targets",
+      "passed": true,
+      "details": {
+        "schemaLeaves": 186,
+        "capitalizedSai": 89
+      }
+    },
+    {
+      "name": "all approved SVG embedded Vietnamese targets and stable asset bindings are included",
+      "passed": true,
+      "details": {
+        "embeddedVietnameseOccurrences": 412
+      }
+    },
+    {
+      "name": "real legacy HSK3 vocabulary classification contract is applied before locked scenes",
+      "passed": true,
+      "details": {
+        "contract": {
+          "version": "2026-08-15-vocab-1",
+          "ok": true,
+          "words": 325,
+          "coreCount": 299,
+          "supplementCount": 13,
+          "properCount": 13
+        }
+      }
+    },
+    {
+      "name": "five frozen HSK1 source files match protected SHA256",
+      "passed": true
+    },
+    {
+      "name": "input work files still match the generation snapshot",
+      "passed": true,
+      "details": {
+        "staleFiles": []
+      }
+    },
+    {
+      "name": "all actual inputs match the declared precise source HEAD",
+      "passed": true,
+      "details": {
+        "sourceHEAD": "8dff803cc2f8d1956d5853ef40073c670e265cc0",
+        "currentHEAD": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+        "files": 837,
+        "mismatches": []
+      }
+    }
+  ],
+  "limits": "These checks establish extraction/identity/source consistency only. No official translation match or native browser execution is certified."
+}

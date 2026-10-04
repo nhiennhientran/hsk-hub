@@ -1,0 +1,2389 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+      "/home/runner/work/hsk-hub/hsk-hub/course-app/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config=playwright.flow.config.ts",
+      "--project=webkit"
+    ],
+    "configFile": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review/playwright.flow.config.ts",
+    "rootDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/nhiennhientran/hsk-hub/commit/dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+        "commitHash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+        "buildHref": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37226015769"
+      },
+      "gitCommit": {
+        "shortHash": "dd8b22c",
+        "hash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+        "subject": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+        "body": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+        "author": {
+          "name": "nhiennhientran",
+          "email": "liangzeheng221@gmail.com",
+          "time": 1791139865000
+        },
+        "committer": {
+          "name": "nhiennhientran",
+          "email": "liangzeheng221@gmail.com",
+          "time": 1791139865000
+        },
+        "branch": "work/hsk-flow-package-ci-20261004"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review/native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/nhiennhientran/hsk-hub/commit/dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "commitHash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "buildHref": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37226015769"
+          },
+          "gitCommit": {
+            "shortHash": "dd8b22c",
+            "hash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "subject": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+            "body": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+            "author": {
+              "name": "nhiennhientran",
+              "email": "liangzeheng221@gmail.com",
+              "time": 1791139865000
+            },
+            "committer": {
+              "name": "nhiennhientran",
+              "email": "liangzeheng221@gmail.com",
+              "time": 1791139865000
+            },
+            "branch": "work/hsk-flow-package-ci-20261004"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "durable-attempts.candidate.spec.ts",
+          "homework-all-lessons.candidate.spec.ts",
+          "shared-practice-listening.candidate.spec.ts",
+          "input-abort.candidate.spec.ts",
+          "mobile-boundaries.candidate.spec.ts"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review/native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/nhiennhientran/hsk-hub/commit/dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "commitHash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "buildHref": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37226015769"
+          },
+          "gitCommit": {
+            "shortHash": "dd8b22c",
+            "hash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "subject": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+            "body": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+            "author": {
+              "name": "nhiennhientran",
+              "email": "liangzeheng221@gmail.com",
+              "time": 1791139865000
+            },
+            "committer": {
+              "name": "nhiennhientran",
+              "email": "liangzeheng221@gmail.com",
+              "time": 1791139865000
+            },
+            "branch": "work/hsk-flow-package-ci-20261004"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "durable-attempts.candidate.spec.ts",
+          "homework-all-lessons.candidate.spec.ts",
+          "shared-practice-listening.candidate.spec.ts",
+          "input-abort.candidate.spec.ts",
+          "mobile-boundaries.candidate.spec.ts"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review/native-flow-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node serve-frozen.mjs",
+      "url": "http://127.0.0.1:18782",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "durable-attempts.candidate.spec.ts",
+      "file": "durable-attempts.candidate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "durable HSK2 homework quota rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4402,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:29.084Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-8954c988eef77ac61b6a",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK2 homework waiting rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1080,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:34.025Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-a99f76098b9a95c70d49",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK2 listening quota rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1197,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:35.113Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-810fad606ac9f0e44b32",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK2 listening waiting rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1144,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:36.317Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-9cd9f27291932e36a261",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK3 homework quota rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1073,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:37.470Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-2134206b775446919de9",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK3 homework waiting rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1025,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:38.557Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-6d5c42d8b43ca3a77e63",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK3 listening quota rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1202,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:39.588Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-171a11277ec0be109839",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK3 listening waiting rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1201,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:40.797Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-41a224fd8231ba682fa0",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        }
+      ]
+    },
+    {
+      "title": "homework-all-lessons.candidate.spec.ts",
+      "file": "homework-all-lessons.candidate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual unified HSK1 lesson 1 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5658,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:42.029Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-8f1fc8c16bbc345ae7d8",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 2 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5496,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:47.697Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-24ffbc386ba87d30cbf5",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 3 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5415,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:53.202Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-376998a867a725597e59",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 4 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5378,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:58.626Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-1dd412406e8f5b4372a7",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 5 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5408,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:04.011Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-dff93a8d15a229549799",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 6 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5437,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:09.429Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-47c01cb3b107840c1d67",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 7 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5446,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:14.875Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-d35e8af695a7b7cef1ca",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 8 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5450,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:20.330Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-2374738c1f4cc78bc9cb",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 9 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5432,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:25.789Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-4c6bd662d9520375e88c",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 10 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5840,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:31.228Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-e2651cf9450751355d93",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 11 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5303,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:37.076Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-8078c68d5d07cb82bd6b",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 12 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5346,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:42.386Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-c0e57d5ba9426109182e",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 13 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5480,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:47.739Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-88203419275389661d87",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 14 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5500,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:53.227Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-4ea07998d54388667adc",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 15 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5678,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:53:58.735Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-3c8fdb711aa49ddc5e34",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 1 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2491,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:04.421Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-6a2c709455d7f0ac4325",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 2 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2307,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:06.919Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-c12021bdf7ea222a6fb3",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 3 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2374,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:09.234Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-c68d56859e21135f9e75",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 4 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2452,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:11.616Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-60fde9ac09a121d4f882",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 5 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2346,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:14.076Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-264415000de0414dd186",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 6 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2418,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:16.430Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-ad6207a28f47c8c01019",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 7 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2294,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:18.856Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-e6d411ca25e20840b377",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 8 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2495,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:21.159Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-44f73fc1b28c4b737cc0",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 9 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2358,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:23.661Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-909de502140fd1c98b37",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 10 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2399,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:26.026Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-7d6bf6432121e8f80ee2",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 11 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2333,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:28.434Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-ffeb86015705ae068973",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 12 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2349,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:30.776Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-304e701bc303340f1f46",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 13 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2275,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:33.135Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-3e4168ce0bf80803ded9",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 14 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2322,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:35.419Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-b4176cd1c008ad62a315",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 15 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2344,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:37.749Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-467dbfc83673aba9ce3b",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 1 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2411,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:40.102Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-12e1032d9b028553512b",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 2 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2502,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:42.522Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-f9cef00f034e0d96b48c",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 3 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2229,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:45.032Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-0a5aa06fe3774f0bbfdf",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 4 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2327,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:47.267Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-7779ea7b927b08a0b7ef",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 5 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2288,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:49.604Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-fe15d2ffaeb83b737736",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 6 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2229,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:51.901Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-375f62a908c9c1969d10",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 7 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2257,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:54.138Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-90653d95ea4d30a2858c",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 8 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2251,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:56.402Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-e11541624a97a65e9915",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 9 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2315,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:54:58.661Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-ad139080f3e78acfe488",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 10 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2232,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:00.988Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-c4f6a6d2ffb61b80f95d",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 11 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2263,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:03.228Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-da1cdbc71cc08b0d9ae8",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 12 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2262,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:05.503Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-813d23a3e675a1db43d7",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 13 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2229,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:07.776Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-942f24578366778c56a3",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 14 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2254,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:10.015Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-0d97446800aae4cc881f",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 15 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:12.277Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-31d44125effeb3b3d14e",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 16 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2232,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:14.540Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-a8be08ad67fa836bc2cb",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 17 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2282,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:16.781Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-453962ae1c97c828ee55",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 18 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2337,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:19.072Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305671520db6248ab0d7-2a797f1092f20ec91145",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        }
+      ]
+    },
+    {
+      "title": "input-abort.candidate.spec.ts",
+      "file": "input-abort.candidate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "HSK2 final lesson invalid old radio IME abort and redo preserve confirmed history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 925,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:21.425Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6329ccce70c8aa0a0b89-8791ea0b821cb5e0d2d8",
+          "file": "input-abort.candidate.spec.ts",
+          "line": 3,
+          "column": 34
+        },
+        {
+          "title": "HSK3 final lesson invalid old radio IME abort and redo preserve confirmed history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 951,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:22.357Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6329ccce70c8aa0a0b89-440ecc66674a81abee1b",
+          "file": "input-abort.candidate.spec.ts",
+          "line": 3,
+          "column": 34
+        }
+      ]
+    },
+    {
+      "title": "mobile-boundaries.candidate.spec.ts",
+      "file": "mobile-boundaries.candidate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "HSK2 longest mixed backs and independent listening preserve exact saved content at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1906,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:23.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b2c24853efe7052bfe5-10170e6816524e1c3071",
+          "file": "mobile-boundaries.candidate.spec.ts",
+          "line": 2,
+          "column": 34
+        },
+        {
+          "title": "HSK3 longest mixed backs and independent listening preserve exact saved content at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1356,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:25.232Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b2c24853efe7052bfe5-d1c121083e44a11418a4",
+          "file": "mobile-boundaries.candidate.spec.ts",
+          "line": 2,
+          "column": 34
+        }
+      ]
+    },
+    {
+      "title": "shared-practice-listening.candidate.spec.ts",
+      "file": "shared-practice-listening.candidate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual HSK2 all independent listening questions preserve immutable first latest and wrong retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10242,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:26.600Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "07596ef0b66877bb80ed-2e9fa30925121847372d",
+          "file": "shared-practice-listening.candidate.spec.ts",
+          "line": 7,
+          "column": 2
+        },
+        {
+          "title": "actual HSK2 complete canonical mixed queue renders all senses exact backs and survives responsive reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14687,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:36.850Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "07596ef0b66877bb80ed-94a91d80a6b7d9d25407",
+          "file": "shared-practice-listening.candidate.spec.ts",
+          "line": 43,
+          "column": 2
+        },
+        {
+          "title": "actual HSK3 all independent listening questions preserve immutable first latest and wrong retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12830,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:55:51.547Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "07596ef0b66877bb80ed-2bbaacb8f32fd47f0b92",
+          "file": "shared-practice-listening.candidate.spec.ts",
+          "line": 7,
+          "column": 2
+        },
+        {
+          "title": "actual HSK3 complete canonical mixed queue renders all senses exact backs and survives responsive reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33357,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:56:04.387Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "07596ef0b66877bb80ed-428d9fcdcb4b3a5b2414",
+          "file": "shared-practice-listening.candidate.spec.ts",
+          "line": 43,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T18:52:28.364Z",
+    "duration": 249465.84999999998,
+    "expected": 64,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "sourceCommitLocalEquivalent": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+  "actualProject": "webkit",
+  "reportSHA256": "964261b024fa3ad77c10f951443e59af61a1b9a9d247dd2d747294d48c6939c1",
+  "reportBytes": 71948,
+  "actualStats": {
+    "startTime": "2026-10-04T18:52:41.704Z",
+    "duration": 10549.221,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "inputFixtureSHA256": "09c03fd071b8d416723f2bf52205d475ac43ad768cc115a4489ad41a1fe9e867",
+  "inputConfigSHA256": "fe7ac3c287bb1135b819979cab0845d4ba0d25f62f8a38c2ed5c1ef707a672cd",
+  "inputSubsetSHA256": "e01a625335ac02409922d26bcf29d728f1ab0d032dea36e47d5192bd659b7ae8",
+  "checks": [
+    {
+      "check": "frozen fixture bytes",
+      "passed": true,
+      "detail": "09c03fd071b8d416723f2bf52205d475ac43ad768cc115a4489ad41a1fe9e867"
+    },
+    {
+      "check": "frozen config bytes",
+      "passed": true,
+      "detail": "fe7ac3c287bb1135b819979cab0845d4ba0d25f62f8a38c2ed5c1ef707a672cd"
+    },
+    {
+      "check": "only two previously signed runtime IDs",
+      "passed": true,
+      "detail": [
+        "hsk2-fltrp-2026:l04:text2:line3",
+        "hsk2-fltrp-2026:l05:text2:line8:sentence2"
+      ]
+    },
+    {
+      "check": "no global report errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "exact actual four passed, no skipped/flaky/unexpected",
+      "passed": true,
+      "detail": {
+        "startTime": "2026-10-04T18:52:41.704Z",
+        "duration": 10549.221,
+        "expected": 4,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "check": "one worker",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "exact four fixture titles, no duplicates",
+      "passed": true,
+      "detail": [
+        "guarded source-frame hsk2-fltrp-2026:l04:text2:line3 plays its exact original range and retains fallback",
+        "guarded source-frame hsk2-fltrp-2026:l05:text2:line8:sentence2 plays its exact original range and retains fallback",
+        "whole-track color retains its honest pending independent-word label",
+        "failed new checksum leaves legacy accepted clips and new whole-track fallback available"
+      ]
+    },
+    {
+      "check": "one actual project: guarded source-frame hsk2-fltrp-2026:l04:text2:line3 plays its exact original range and retains fallback",
+      "passed": true,
+      "detail": [
+        "webkit"
+      ]
+    },
+    {
+      "check": "passed without retry: guarded source-frame hsk2-fltrp-2026:l04:text2:line3 plays its exact original range and retains fallback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no test errors: guarded source-frame hsk2-fltrp-2026:l04:text2:line3 plays its exact original range and retains fallback",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "embedded JSON attachment: hsk2-fltrp-2026:l04:text2:line3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique attachment name: hsk2-fltrp-2026:l04:text2:line3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "embedded JSON attachment: actual-native-audio-events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique attachment name: actual-native-audio-events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: actual natural and full native attachments",
+      "passed": true,
+      "detail": [
+        "actual-native-audio-events",
+        "hsk2-fltrp-2026:l04:text2:line3"
+      ]
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: raw attachment ID, source time and fixed integer frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: exact 16k source-frame clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: native event lists present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: natural source URL is only bound original MP3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: no native media errors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: natural trace retained in later native attachment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: native unmuted nonseeking observations exist",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: actual natural audible lower bound",
+      "passed": true,
+      "detail": 9.980221536
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: actual natural audible upper bound",
+      "passed": true,
+      "detail": 12.369953139
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: observed audible playing state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l04:text2:line3: native paused at segment ended",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "one actual project: guarded source-frame hsk2-fltrp-2026:l05:text2:line8:sentence2 plays its exact original range and retains fallback",
+      "passed": true,
+      "detail": [
+        "webkit"
+      ]
+    },
+    {
+      "check": "passed without retry: guarded source-frame hsk2-fltrp-2026:l05:text2:line8:sentence2 plays its exact original range and retains fallback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no test errors: guarded source-frame hsk2-fltrp-2026:l05:text2:line8:sentence2 plays its exact original range and retains fallback",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "embedded JSON attachment: hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique attachment name: hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "embedded JSON attachment: actual-native-audio-events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique attachment name: actual-native-audio-events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: actual natural and full native attachments",
+      "passed": true,
+      "detail": [
+        "actual-native-audio-events",
+        "hsk2-fltrp-2026:l05:text2:line8:sentence2"
+      ]
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: raw attachment ID, source time and fixed integer frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: exact 16k source-frame clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: native event lists present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: natural source URL is only bound original MP3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: no native media errors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: natural trace retained in later native attachment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: native unmuted nonseeking observations exist",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: actual natural audible lower bound",
+      "passed": true,
+      "detail": 35.7802905
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: actual natural audible upper bound",
+      "passed": true,
+      "detail": 38.389998276
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: observed audible playing state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hsk2-fltrp-2026:l05:text2:line8:sentence2: native paused at segment ended",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "one actual project: whole-track color retains its honest pending independent-word label",
+      "passed": true,
+      "detail": [
+        "webkit"
+      ]
+    },
+    {
+      "check": "passed without retry: whole-track color retains its honest pending independent-word label",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no test errors: whole-track color retains its honest pending independent-word label",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "one actual project: failed new checksum leaves legacy accepted clips and new whole-track fallback available",
+      "passed": true,
+      "detail": [
+        "webkit"
+      ]
+    },
+    {
+      "check": "passed without retry: failed new checksum leaves legacy accepted clips and new whole-track fallback available",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no test errors: failed new checksum leaves legacy accepted clips and new whole-track fallback available",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "cases": [
+    {
+      "title": "guarded source-frame hsk2-fltrp-2026:l04:text2:line3 plays its exact original range and retains fallback",
+      "project": "webkit",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "runtimeId": "hsk2-fltrp-2026:l04:text2:line3",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "sourceFrames": [
+        159680,
+        197921
+      ],
+      "start": 9.98,
+      "end": 12.3700625,
+      "naturalEvents": 24,
+      "fullNativeEvents": 72,
+      "naturalAudibleMin": 9.980221536,
+      "naturalAudibleMax": 12.369953139,
+      "sourceOrdinal": 1,
+      "assertionScope": "fixed fixture passed bilingual ordinal, complete-text fallback, no L5 precise parent/sibling, seek clamp, stop, route stop and history restoration; raw traces independently inspected for natural playback",
+      "nativeEventsAreHumanListening": false
+    },
+    {
+      "title": "guarded source-frame hsk2-fltrp-2026:l05:text2:line8:sentence2 plays its exact original range and retains fallback",
+      "project": "webkit",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "runtimeId": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "sourceFrames": [
+        572480,
+        614240
+      ],
+      "start": 35.78,
+      "end": 38.39,
+      "naturalEvents": 25,
+      "fullNativeEvents": 72,
+      "naturalAudibleMin": 35.7802905,
+      "naturalAudibleMax": 38.389998276,
+      "sourceOrdinal": 2,
+      "assertionScope": "fixed fixture passed bilingual ordinal, complete-text fallback, no L5 precise parent/sibling, seek clamp, stop, route stop and history restoration; raw traces independently inspected for natural playback",
+      "nativeEventsAreHumanListening": false
+    },
+    {
+      "title": "whole-track color retains its honest pending independent-word label",
+      "project": "webkit",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "scope": "passed DOM assertions only; this case does not play an audio track"
+    },
+    {
+      "title": "failed new checksum leaves legacy accepted clips and new whole-track fallback available",
+      "project": "webkit",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "scope": "passed DOM assertions only; this case does not play an audio track"
+    }
+  ],
+  "attachments": [
+    {
+      "title": "guarded source-frame hsk2-fltrp-2026:l04:text2:line3 plays its exact original range and retains fallback",
+      "name": "hsk2-fltrp-2026:l04:text2:line3",
+      "file": "1da36cc09a78aa3bd4e5edf50852b461e12b9d97828f6224001da5c1a59a876c.json",
+      "sha256": "1da36cc09a78aa3bd4e5edf50852b461e12b9d97828f6224001da5c1a59a876c",
+      "bytes": 4712
+    },
+    {
+      "title": "guarded source-frame hsk2-fltrp-2026:l04:text2:line3 plays its exact original range and retains fallback",
+      "name": "actual-native-audio-events",
+      "file": "0d3b24d024732a193e51f1f89144ebb30be29f6041c36785f891e8cb0ed4f6fc.json",
+      "sha256": "0d3b24d024732a193e51f1f89144ebb30be29f6041c36785f891e8cb0ed4f6fc",
+      "bytes": 17952
+    },
+    {
+      "title": "guarded source-frame hsk2-fltrp-2026:l05:text2:line8:sentence2 plays its exact original range and retains fallback",
+      "name": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "file": "3e32edb86bef7d1245e9160e14c29c79072ca8d04c10cb03469e0d19adb63df1.json",
+      "sha256": "3e32edb86bef7d1245e9160e14c29c79072ca8d04c10cb03469e0d19adb63df1",
+      "bytes": 4915
+    },
+    {
+      "title": "guarded source-frame hsk2-fltrp-2026:l05:text2:line8:sentence2 plays its exact original range and retains fallback",
+      "name": "actual-native-audio-events",
+      "file": "80f4f3628c5349cb576d283d19c4f23bbf1e574d541958835c80689d6437d192.json",
+      "sha256": "80f4f3628c5349cb576d283d19c4f23bbf1e574d541958835c80689d6437d192",
+      "bytes": 17941
+    }
+  ],
+  "checksPassed": 51,
+  "checksTotal": 51,
+  "newAudioApproval": false,
+  "humanListeningCertification": false,
+  "scopeLimit": "Exact existing two machine-reviewed clips and fallback/runtime behavior only. A fresh dedicated preview build is used; this is not the assembled-package playback test. Delayed-digest concurrency is historical independent loader plus current CI unit coverage, not a new browser race stimulus."
+}

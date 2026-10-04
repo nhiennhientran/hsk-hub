@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "observedAtUTC": "2026-10-04T18:54:23.696917+00:00",
+  "status": "source-material-preparation-only-not-VI-comparison",
+  "sources": [
+    {
+      "level": 1,
+      "file": "HSK1  (3.0).pdf",
+      "bytes": 63200770,
+      "sha256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "logicalPDFPages": 148,
+      "bodyPrintedToPdfOffset": 16,
+      "actualTextLayerNonWhitespaceCharacters": 0,
+      "actualPdftotextPageSeparators": 148,
+      "sourceHashVerified": true
+    },
+    {
+      "level": 2,
+      "file": "HSK2 ( 3.0).pdf",
+      "bytes": 69855983,
+      "sha256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "logicalPDFPages": 162,
+      "bodyPrintedToPdfOffset": 14,
+      "respectCropBox": true,
+      "actualTextLayerNonWhitespaceCharacters": 0,
+      "actualPdftotextPageSeparators": 162,
+      "sourceHashVerified": true
+    },
+    {
+      "level": 3,
+      "file": "HSK3 (3.0).pdf",
+      "bytes": 96266563,
+      "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+      "logicalPDFPages": 212,
+      "bodyPrintedToPdfOffset": 12,
+      "actualTextLayerNonWhitespaceCharacters": 0,
+      "actualPdftotextPageSeparators": 212,
+      "sourceHashVerified": true
+    }
+  ],
+  "logicalPagesTotal": 522,
+  "method": "Actualsha256/pdfinfo/pdftotext-layout on uploaded unchanged files. Text layer contains only formfeed/page separators. LocalTesseract only eng/osd installed, no VietnameseOCR certification. OneHSK1page18 rendered/visually checked readable as sourcepreflight, no website comparison or translation decisions.",
+  "decisiveComparisonMethod": "Original PDF page renders and explicit per-item human-model visual transcription plus independent source/consumer review; OCR may assist indexing only.",
+  "productionChanges": 0,
+  "BOfficialAuditStarted": false
+}

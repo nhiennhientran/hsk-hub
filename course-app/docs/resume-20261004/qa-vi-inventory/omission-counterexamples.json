@@ -1,0 +1,78 @@
+{
+  "basisInventorySHA256": "8aab8479132a7904c85eead5860c2e26bd7023f549c061c80a9f97549f13cf9a",
+  "officialAuditPerformed": false,
+  "counterexamples": [
+    {
+      "controlledCounterexample": "upper-case ASCII Sai choices omitted",
+      "mutationScope": "in-memory only; production/author files unchanged",
+      "omittedMainRows": 89,
+      "expectedCount": 89,
+      "independentlyDetectedMissingSourceTargets": 89,
+      "detected": true,
+      "examples": [
+        {
+          "file": "legacy-runtime://practice/hsk1/HSK1-V5.0-2026-08-15",
+          "pointer": "/lessons/0/basic/12/options/1",
+          "value": "Sai",
+          "itemId": "HSK1-L01-B-013"
+        },
+        {
+          "file": "legacy-runtime://practice/hsk1/HSK1-V5.0-2026-08-15",
+          "pointer": "/lessons/0/basic/13/options/1",
+          "value": "Sai",
+          "itemId": "HSK1-L01-B-014"
+        }
+      ],
+      "notClaimingOldFrozenBytesReexecuted": true,
+      "actualSourceRevalidatedWithIndependentPythonDecoderOrXMLParser": true
+    },
+    {
+      "controlledCounterexample": "embedded SVG rows kept only in side table",
+      "mutationScope": "in-memory only; production/author files unchanged",
+      "omittedMainRows": 412,
+      "expectedCount": 412,
+      "independentlyDetectedMissingSourceTargets": 412,
+      "detected": true,
+      "examples": [
+        {
+          "file": "course-app/public/illustrations/hsk2-l02-culture.svg",
+          "pointer": "/svg[1]/desc[1]",
+          "value": "Original auxiliary schematic, not a textbook image. Minh họa nhìn qua khung cửa thấy hồ nước, cây và tháp nhiều tầng.",
+          "itemId": "hsk2-fltrp-2026:l02:illustration:culture"
+        },
+        {
+          "file": "course-app/public/illustrations/hsk2-l02-practice-1.svg",
+          "pointer": "/svg[1]/desc[1]",
+          "value": "Original auxiliary schematic, not a textbook image. Trên bàn có món bột dài, trứng và một bát đồ uống.",
+          "itemId": "hsk2-fltrp-2026:l02:illustration:practice-1"
+        }
+      ],
+      "notClaimingOldFrozenBytesReexecuted": true,
+      "actualSourceRevalidatedWithIndependentPythonDecoderOrXMLParser": true
+    },
+    {
+      "controlledCounterexample": "all external fetched practice rows omitted from main list",
+      "mutationScope": "in-memory only; production/author files unchanged",
+      "omittedMainRows": 2978,
+      "expectedCount": 2978,
+      "independentlyDetectedMissingSourceTargets": 2978,
+      "detected": true,
+      "examples": [
+        {
+          "file": "legacy-runtime://practice/hsk1/HSK1-V5.0-2026-08-15",
+          "pointer": "/lessons/0/basic/0/prompt_vi",
+          "value": "Chọn từ/cụm từ thích hợp nhất để điền vào chỗ trống.",
+          "itemId": "HSK1-L01-B-001"
+        },
+        {
+          "file": "legacy-runtime://practice/hsk1/HSK1-V5.0-2026-08-15",
+          "pointer": "/lessons/0/basic/0/explanation_vi",
+          "value": "Đáp án là “你好”. Câu hoàn chỉnh: “A：你好！\nB：你好！”. Hai người chào nhau; “你好” là lời chào cơ bản. Các lựa chọn như “您好” không phù hợp với vị trí hoặc ý nghĩa cần có trong câu.",
+          "itemId": "HSK1-L01-B-001"
+        }
+      ],
+      "notClaimingOldFrozenBytesReexecuted": true,
+      "actualSourceRevalidatedWithIndependentPythonDecoderOrXMLParser": true
+    }
+  ]
+}

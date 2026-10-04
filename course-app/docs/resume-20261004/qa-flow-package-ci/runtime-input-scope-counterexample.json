@@ -1,0 +1,23 @@
+{
+  "reportedRuntimeDirty": false,
+  "snapshot": {
+    "sha256": "a57bad664ad180e8bf50095154aa8e8545356fb105ac9b2678c1b5c9b106fe2f",
+    "files": [
+      {
+        "path": "course-app/src/probe.ts",
+        "sha256": "94ef58773d257957c02acc7bcec4866098da9f0b1a278015e24fb5506a26c24f"
+      }
+    ]
+  },
+  "schemaVersion": 1,
+  "head": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+  "checkedAtUTC": "2026-10-04T19:11:37.950622+00:00",
+  "kind": "isolated-exported-source-scope-probe-not-a-new-package-execution",
+  "actualGitStatus": " M \"new-hsk1/assets/hanzi-data/\\344\\270\\200.json\"\n M new-hsk1/hsk1/audio/1-1.mp3\n",
+  "existingToolSHA256": "acd9c9b664104bd9311dc624c1769d3a0f8c05546cc831aa2e270bddc6983a34",
+  "actualBuildReader": "course-app/tools/sync-shared-assets.mjs:4,14",
+  "fixtureFilesSynthetic": true,
+  "repoStableToolsOrOriginalInputsModified": false,
+  "currentCleanCICandidateIndependentlyAccepted": true,
+  "impact": "Future formal release clean/input gate must separately cover original root inputs. This probe does not show current CI package mismatch."
+}

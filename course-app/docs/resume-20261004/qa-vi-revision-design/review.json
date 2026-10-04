@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "qa_hsk1_05_08",
+  "recordedAtUtc": "2026-10-04T19:03:38.631124+00:00",
+  "status": "independent-design-direction-conditionally-accepted",
+  "acceptedScope": "Read-only source-based architecture direction and specified minimum historical contract; no B implementation or official VI acceptance.",
+  "designInputs": [
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/README.md",
+      "expectedSHA256": "7b91b962be15546b480be10cdf5ab53fdeb8931e65038e6d4bb00eeaf8167d6f",
+      "actualSHA256": "7b91b962be15546b480be10cdf5ab53fdeb8931e65038e6d4bb00eeaf8167d6f",
+      "expectedBytes": 14490,
+      "actualBytes": 14490,
+      "match": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/implementation-files.json",
+      "expectedSHA256": "62d5e7ebf74bf3132ad9a716059ad5e21d20ab625e79cfb54093a19b00ab2621",
+      "actualSHA256": "62d5e7ebf74bf3132ad9a716059ad5e21d20ab625e79cfb54093a19b00ab2621",
+      "expectedBytes": 8356,
+      "actualBytes": 8356,
+      "match": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/manifest-contract.json",
+      "expectedSHA256": "6960605f64eaecc80fab4f8726bc3d7e84895cc4676896d5c1afb9df430056ed",
+      "actualSHA256": "6960605f64eaecc80fab4f8726bc3d7e84895cc4676896d5c1afb9df430056ed",
+      "expectedBytes": 3422,
+      "actualBytes": 3422,
+      "match": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/read-ledger.json",
+      "expectedSHA256": "33e75387358e301006eac239973f701c8fcd065c5f7d62bed2be85ff7587e20a",
+      "actualSHA256": "33e75387358e301006eac239973f701c8fcd065c5f7d62bed2be85ff7587e20a",
+      "expectedBytes": 16082,
+      "actualBytes": 16082,
+      "match": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/validation.json",
+      "expectedSHA256": "87d8e00a63d0785a014aaa45157217bf214f8846a04ed99ad48e3f81857fc71d",
+      "actualSHA256": "87d8e00a63d0785a014aaa45157217bf214f8846a04ed99ad48e3f81857fc71d",
+      "expectedBytes": 303,
+      "actualBytes": 303,
+      "match": true
+    }
+  ],
+  "protectedFiveBanks": [
+    {
+      "path": "hsk1-app/content/textbook.json",
+      "expectedSHA256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "actualSHA256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "match": true,
+      "authorReadLedgerMatch": true
+    },
+    {
+      "path": "hsk1-app/content/homework30-bank.json",
+      "expectedSHA256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+      "actualSHA256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+      "match": true,
+      "authorReadLedgerMatch": true
+    },
+    {
+      "path": "hsk1-app/content/stage2-bank.json",
+      "expectedSHA256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3",
+      "actualSHA256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3",
+      "match": true,
+      "authorReadLedgerMatch": true
+    },
+    {
+      "path": "hsk1-app/content/stage3-catalog.json",
+      "expectedSHA256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "actualSHA256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "match": true,
+      "authorReadLedgerMatch": true
+    },
+    {
+      "path": "hsk1-app/content/legacy-exercises.json",
+      "expectedSHA256": "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c",
+      "actualSHA256": "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c",
+      "match": true,
+      "authorReadLedgerMatch": true
+    }
+  ],
+  "rawSvgRegistryByteChecks": [
+    {
+      "id": "warmup-01",
+      "path": "hsk1-app/content/source-activities/figures/warmup-01.svg",
+      "expectedSHA256": "ed2d54ba33599303fcadbd979bde85fa4eff24e586f405609fe4d7b24dc0fbb4",
+      "actualSHA256": "ed2d54ba33599303fcadbd979bde85fa4eff24e586f405609fe4d7b24dc0fbb4",
+      "match": true
+    },
+    {
+      "id": "warmup-02",
+      "path": "hsk1-app/content/source-activities/figures/warmup-02.svg",
+      "expectedSHA256": "b8928b1bb57395114a9fa1b83c8ce1fcdbdcc8f129cdd6368cb7a77302557515",
+      "actualSHA256": "b8928b1bb57395114a9fa1b83c8ce1fcdbdcc8f129cdd6368cb7a77302557515",
+      "match": true
+    },
+    {
+      "id": "warmup-03",
+      "path": "hsk1-app/content/source-activities/figures/warmup-03.svg",
+      "expectedSHA256": "53b2ddbe1cb9ecd7be66329589b9b1856261041c43306a83c605cbb1e7b448b3",
+      "actualSHA256": "53b2ddbe1cb9ecd7be66329589b9b1856261041c43306a83c605cbb1e7b448b3",
+      "match": true
+    },
+    {
+      "id": "warmup-04",
+      "path": "hsk1-app/content/source-activities/figures/warmup-04.svg",
+      "expectedSHA256": "d4065b4b5c5ad802149751001168f316bc911e3c10d0853a322342d231e71ddf",
+      "actualSHA256": "d4065b4b5c5ad802149751001168f316bc911e3c10d0853a322342d231e71ddf",
+      "match": true
+    },
+    {
+      "id": "warmup-05",
+      "path": "hsk1-app/content/source-activities/figures/warmup-05.svg",
+      "expectedSHA256": "470ce8507e80529f4f3bf923164f2bbea58d8ae8f85f32cda73a28b5385182e3",
+      "actualSHA256": "470ce8507e80529f4f3bf923164f2bbea58d8ae8f85f32cda73a28b5385182e3",
+      "match": true
+    },
+    {
+      "id": "warmup-06",
+      "path": "hsk1-app/content/source-activities/figures/warmup-06.svg",
+      "expectedSHA256": "9b8050952eeeec6654656e67042283e952dba91fcc0f0ca0ba8d6b799d167f2e",
+      "actualSHA256": "9b8050952eeeec6654656e67042283e952dba91fcc0f0ca0ba8d6b799d167f2e",
+      "match": true
+    },
+    {
+      "id": "picture-01",
+      "path": "hsk1-app/content/source-activities/figures/picture-01.svg",
+      "expectedSHA256": "233ca90a60f2755392032b139d63ed483c8e328ec3206480e8d5fd5d622019c1",
+      "actualSHA256": "233ca90a60f2755392032b139d63ed483c8e328ec3206480e8d5fd5d622019c1",
+      "match": true
+    },
+    {
+      "id": "picture-02",
+      "path": "hsk1-app/content/source-activities/figures/picture-02.svg",
+      "expectedSHA256": "411de86dc787638012f3eb0023dbf0ab8a4bc44dc9860fb68be3cfca1a291ac2",
+      "actualSHA256": "411de86dc787638012f3eb0023dbf0ab8a4bc44dc9860fb68be3cfca1a291ac2",
+      "match": true
+    },
+    {
+      "id": "picture-03",
+      "path": "hsk1-app/content/source-activities/figures/picture-03.svg",
+      "expectedSHA256": "cdaff6cad8f62f75028b5ae235c87dfa225c3ba80bbd2d327de7ec43d32b5fbe",
+      "actualSHA256": "cdaff6cad8f62f75028b5ae235c87dfa225c3ba80bbd2d327de7ec43d32b5fbe",
+      "match": true
+    },
+    {
+      "id": "picture-04",
+      "path": "hsk1-app/content/source-activities/figures/picture-04.svg",
+      "expectedSHA256": "ba40245e5a515240ce49378f4575b78555f43e773a3a68e7600ea983a4172867",
+      "actualSHA256": "ba40245e5a515240ce49378f4575b78555f43e773a3a68e7600ea983a4172867",
+      "match": true
+    }
+  ],
+  "readLedgerSHA256": "edb5a4fe46dc269a57139bc813cac5805f8514172c94129062756af09857f01c",
+  "reportMarkdownSHA256": "311ff27a188ae04e4171a41783477b670ba0a69f78e5ed0f4ab63cea81984da1",
+  "minimumHistoryContract": {
+    "hsk1": "Immutable known raw grading authorities + per-logical-commit/per-slot frozen display VI fields; original answer indexes unchanged; draft/round capture survives reload.",
+    "hsk23": "Existing full Question snapshots plus answers/score/profile; no whole-book user snapshot; preserve first/latest actually stored, not nonexistent middle history.",
+    "unknownHistorical": "Keep raw values and missing-snapshot disclosure; no inferred textbook edition, canonical revision or source certification.",
+    "assetsAndAsr": "Immutable historical refs and byte identities; distinct current display revision; no user backup copies of entire media/PDF/book."
+  },
+  "findings": [
+    {
+      "id": "D1",
+      "severity": "required-before-hsk1-stage2-graded-projection",
+      "status": "design-contract-gap",
+      "summary": "Archive raw task remains correct grading authority but cannot stand in for revised VI actually shown at new submissions. Add per-slot read-only presentation consumer or hold that bank activation.",
+      "sourceRefs": [
+        "hsk1-app/src/features/exercises/archive-data.ts:21",
+        "hsk1-app/src/features/exercises/archive-data.ts:43",
+        "hsk1-app/src/features/exercises/archive.ts:62",
+        "hsk1-app/src/features/exercises/archive.ts:98",
+        "course-app/docs/resume-20261004/vi-revision-design/implementation-files.json"
+      ]
+    },
+    {
+      "id": "D2",
+      "severity": "required-before-hsk1-binding-activation",
+      "status": "design-contract-incomplete",
+      "summary": "Specify logical submission binding identity, separate draft/attempt slots, immutable captured draft/round display and atomic lifecycle pruning on reset/legacy replacement/discovery/restore/GC.",
+      "sourceRefs": [
+        "hsk1-app/src/domain/homework30/engine.ts:60",
+        "hsk1-app/src/features/homework/controller30.ts:32",
+        "hsk1-app/src/domain/listening/controller.ts:46",
+        "hsk1-app/src/services/storage/compatibility.ts:350",
+        "hsk1-app/src/services/storage/compatibility.ts:507"
+      ]
+    },
+    {
+      "id": "D3",
+      "severity": "required-before-hsk23-history-display-projection",
+      "status": "additional-real-current-content-consumer",
+      "summary": "Listening saved question/explanation is historical, but feedback transcript uses current lesson.texts. Label current reference separately; no-snapshot branch must not masquerade current projected question as old question.",
+      "sourceRefs": [
+        "course-app/src/listening-view.ts:160",
+        "course-app/src/listening-view.ts:290",
+        "course-app/src/main.ts:949",
+        "course-app/src/state.ts:151"
+      ]
+    },
+    {
+      "id": "D4",
+      "severity": "conditional-before-any-active-svg-revision",
+      "status": "asset-version-contract-required",
+      "summary": "Retain immutable old SVG paths/IDs/bytes/raw registry; use new asset ID/path/current trusted registry/import mapping for reviewed new active SVG bytes. Historical archive currently omits pictures.",
+      "sourceRefs": [
+        "hsk1-app/src/services/source-activities/content.ts:27",
+        "hsk1-app/src/features/source-activities/figures.ts:1",
+        "hsk1-app/tests/source-activities.test.mjs:25",
+        "hsk1-app/src/features/source-activities/index.ts:77"
+      ]
+    },
+    {
+      "id": "D5",
+      "severity": "required-explicit-source-identity-invariant",
+      "status": "sidecar-direction-compatible",
+      "summary": "ASR provenance pins full raw lesson JSON SHA, not Chinese-only identity. Preserve raw files and historical reports; display revision stays separate. Any direct raw change requires separate new rebind proof.",
+      "sourceRefs": [
+        "course-app/docs/resume-20261004/media-closure/asr-evidence/compare-raw-source.py:169",
+        "course-app/docs/resume-20261004/media-closure/asr-evidence/transcribe-candidate-crops.py:74"
+      ]
+    }
+  ],
+  "dismissedConcern": {
+    "id": "X1",
+    "summary": "Delegating raw resolveScene currently does not leak old scene VI into actual player UI: both discovered consumers override request.label.",
+    "sourceRefs": [
+      "hsk1-app/src/features/textbook/text.ts:34",
+      "hsk1-app/src/features/source-activities/index.ts:56"
+    ],
+    "productionChangeRequired": false
+  },
+  "implementationPrerequisites": [
+    "A9 successful freeze and refreshed worktree SHA",
+    "D1-D3 completed contract and specific owner before affected graded/history activation",
+    "D4 only if an actually active SVG needs revision",
+    "D5 explicit invariant and SHA regression guard",
+    "Meaningful synthetic guard tests before official language activation",
+    "Independent official VI per-item audit + actual consumer evidence after A9",
+    "Fresh B package/source/browser evidence and user confirmation before deployment"
+  ],
+  "proposedTestFamilies": 12,
+  "checksActuallyExecuted": {
+    "designFrozenFileSHA": {
+      "passed": 5,
+      "total": 5
+    },
+    "protectedFiveBankSHA": {
+      "passed": 5,
+      "total": 5
+    },
+    "rawSvgFileSHA": {
+      "passed": 10,
+      "total": 10
+    },
+    "sourceRead": true,
+    "newBImplementationTests": 0,
+    "chromium": 0,
+    "webkit": 0,
+    "device": 0,
+    "humanOrNativeListening": 0
+  },
+  "notClaimed": [
+    "official Vietnamese textbook item audit",
+    "current B production implementation",
+    "complete H23 backup/import/browser review",
+    "all history now contains question snapshots",
+    "all user historical textbooks/editions known",
+    "new ASR promotions",
+    "A9/B deploy acceptance"
+  ],
+  "writesScope": "course-app/docs/resume-20261004/qa-vi-revision-design only",
+  "productionMutations": 0,
+  "authorDesignMutations": 0,
+  "oldHsk3RecoveryRetries": 0
+}

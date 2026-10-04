@@ -55,7 +55,9 @@ export function unifiedEntryHTML(html,level,base,view='courses'){
   if(![1,2,3].includes(level)||!['courses','portal'].includes(view)||!['./course-engine/','../course-engine/','../../course-engine/'].includes(base)||!html?.includes('<meta name="hsk-level" content="2">')||!html.includes('<div id="app"></div>')||!html.includes('src="./assets/'))throw Error('Unrecognized unified build entry');
   return html.replace('<meta name="hsk-level" content="2">',`<meta name="hsk-level" content="${level}"><meta name="asset-base" content="${base}"><meta name="hsk-entry-view" content="${view}">`).replaceAll('"./assets/',`"${base}assets/`);
 }
-export const runtimeSourceScopes=['course-app/src','course-app/content','course-app/public','course-app/tools','course-app/index.html','course-app/package.json','course-app/package-lock.json','course-app/vite.config.ts','course-app/tsconfig.json','hsk1-app/src','hsk1-app/content','hsk1-app/public'];
+// sync-shared-assets also reads retained original audio and stroke data here.
+// They must participate in both the clean-input check and the build snapshot.
+export const runtimeSourceScopes=['course-app/src','course-app/content','course-app/public','course-app/tools','course-app/index.html','course-app/package.json','course-app/package-lock.json','course-app/vite.config.ts','course-app/tsconfig.json','hsk1-app/src','hsk1-app/content','hsk1-app/public','new-hsk1/hsk1/audio','new-hsk1/assets/hanzi-data'];
 export function runtimeSourceDirty(repo){return !!execFileSync('git',['status','--porcelain','--',...runtimeSourceScopes],{cwd:repo,encoding:'utf8'}).trim();}
 export function runtimeSourceSnapshot(repo){
   const names=execFileSync('git',['ls-files','-z','--cached','--others','--exclude-standard','--',...runtimeSourceScopes],{cwd:repo,encoding:'utf8'}).split('\0').filter(Boolean);

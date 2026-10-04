@@ -1,0 +1,119 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/node_modules/@playwright/test/cli.js",
+      "test",
+      "--list",
+      "--config=course-app/docs/resume-20261004/flow-compat-review/playwright.hsk1-retained.config.ts",
+      "--project=chromium",
+      "--reporter=json"
+    ],
+    "configFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/playwright.hsk1-retained.config.ts",
+    "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "hsk1-fresh-backup.retained.ts"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "hsk1-fresh-backup.retained.ts"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node serve-frozen.mjs",
+      "url": "http://127.0.0.1:18782",
+      "reuseExistingServer": false,
+      "env": {
+        "FLOW_DIST_DIR": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/dist"
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "hsk1-fresh-backup.retained.ts",
+      "file": "hsk1-fresh-backup.retained.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "HSK1 downloaded nonempty backup restores exact fresh-context data and rollback with explicit session test authorization",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ba9e4f15ea65df792daf-f3020c0c3c95f100f31c",
+          "file": "hsk1-fresh-backup.retained.ts",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T19:01:39.593Z",
+    "duration": 20.029999999999973,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "recordedUTC": "2026-10-04T19:00:41.879140+00:00",
+  "status": "passed",
+  "scope": "existing exact two independently machine-reviewed sentence fragments: native Chromium/WebKit CI runtime and safe fallback",
+  "repo": "nhiennhientran/hsk-hub",
+  "runId": 37226015769,
+  "runURL": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37226015769",
+  "remoteHeadSHA1": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+  "localEquivalentSHA1": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+  "treeSHA1": "e2c89f9c2029cec09d8a8bbb1315e9cd99ea225c",
+  "workflowGitBlobSHA1": "840e0845dfd84c4b1c792637ecdbcd2167a54b44",
+  "workflowContentSHA256": "843d4d60770a7a8333a5586dc36d9e58453dda89904e2e3e0e2b453647d1ae9f",
+  "actualExecutedBrowserCases": {
+    "chromium": 4,
+    "webkit": 4,
+    "total": 8,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "retries": 0
+  },
+  "independentBrowserReportChecks": {
+    "chromium": {
+      "passed": 51,
+      "total": 51
+    },
+    "webkit": {
+      "passed": 51,
+      "total": 51
+    }
+  },
+  "actualCases": [
+    {
+      "project": "chromium",
+      "title": "guarded source-frame hsk2-fltrp-2026:l04:text2:line3 plays its exact original range and retains fallback",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "runtimeId": "hsk2-fltrp-2026:l04:text2:line3",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "sourceFrames": [
+        159680,
+        197921
+      ],
+      "start": 9.98,
+      "end": 12.3700625,
+      "naturalEvents": 23,
+      "fullNativeEvents": 68,
+      "naturalAudibleMin": 9.981244,
+      "naturalAudibleMax": 12.369849,
+      "sourceOrdinal": 1,
+      "assertionScope": "fixed fixture passed bilingual ordinal, complete-text fallback, no L5 precise parent/sibling, seek clamp, stop, route stop and history restoration; raw traces independently inspected for natural playback",
+      "nativeEventsAreHumanListening": false
+    },
+    {
+      "project": "chromium",
+      "title": "guarded source-frame hsk2-fltrp-2026:l05:text2:line8:sentence2 plays its exact original range and retains fallback",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "runtimeId": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "sourceFrames": [
+        572480,
+        614240
+      ],
+      "start": 35.78,
+      "end": 38.39,
+      "naturalEvents": 23,
+      "fullNativeEvents": 67,
+      "naturalAudibleMin": 35.780713,
+      "naturalAudibleMax": 38.389887,
+      "sourceOrdinal": 2,
+      "assertionScope": "fixed fixture passed bilingual ordinal, complete-text fallback, no L5 precise parent/sibling, seek clamp, stop, route stop and history restoration; raw traces independently inspected for natural playback",
+      "nativeEventsAreHumanListening": false
+    },
+    {
+      "project": "chromium",
+      "title": "whole-track color retains its honest pending independent-word label",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "scope": "passed DOM assertions only; this case does not play an audio track"
+    },
+    {
+      "project": "chromium",
+      "title": "failed new checksum leaves legacy accepted clips and new whole-track fallback available",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "scope": "passed DOM assertions only; this case does not play an audio track"
+    },
+    {
+      "project": "webkit",
+      "title": "guarded source-frame hsk2-fltrp-2026:l04:text2:line3 plays its exact original range and retains fallback",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "runtimeId": "hsk2-fltrp-2026:l04:text2:line3",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "sourceFrames": [
+        159680,
+        197921
+      ],
+      "start": 9.98,
+      "end": 12.3700625,
+      "naturalEvents": 24,
+      "fullNativeEvents": 72,
+      "naturalAudibleMin": 9.980221536,
+      "naturalAudibleMax": 12.369953139,
+      "sourceOrdinal": 1,
+      "assertionScope": "fixed fixture passed bilingual ordinal, complete-text fallback, no L5 precise parent/sibling, seek clamp, stop, route stop and history restoration; raw traces independently inspected for natural playback",
+      "nativeEventsAreHumanListening": false
+    },
+    {
+      "project": "webkit",
+      "title": "guarded source-frame hsk2-fltrp-2026:l05:text2:line8:sentence2 plays its exact original range and retains fallback",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "runtimeId": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "sourceFrames": [
+        572480,
+        614240
+      ],
+      "start": 35.78,
+      "end": 38.39,
+      "naturalEvents": 25,
+      "fullNativeEvents": 72,
+      "naturalAudibleMin": 35.7802905,
+      "naturalAudibleMax": 38.389998276,
+      "sourceOrdinal": 2,
+      "assertionScope": "fixed fixture passed bilingual ordinal, complete-text fallback, no L5 precise parent/sibling, seek clamp, stop, route stop and history restoration; raw traces independently inspected for natural playback",
+      "nativeEventsAreHumanListening": false
+    },
+    {
+      "project": "webkit",
+      "title": "whole-track color retains its honest pending independent-word label",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "scope": "passed DOM assertions only; this case does not play an audio track"
+    },
+    {
+      "project": "webkit",
+      "title": "failed new checksum leaves legacy accepted clips and new whole-track fallback available",
+      "passed": true,
+      "actualStatus": [
+        "passed"
+      ],
+      "scope": "passed DOM assertions only; this case does not play an audio track"
+    }
+  ],
+  "packageJobConclusions": [
+    {
+      "id": 111505697386,
+      "name": "flows (chromium, package)",
+      "status": "completed",
+      "conclusion": "success",
+      "reviewedStep": {
+        "name": "Reviewed partial sentence ranges and safe fallback",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16
+      }
+    },
+    {
+      "id": 111505697443,
+      "name": "flows (webkit, package)",
+      "status": "completed",
+      "conclusion": "success",
+      "reviewedStep": {
+        "name": "Reviewed partial sentence ranges and safe fallback",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 16
+      }
+    }
+  ],
+  "actualJobLogChecks": [
+    {
+      "project": "chromium",
+      "jobId": 111505697386,
+      "actualFreshOutDirBuildCommand": true,
+      "actualFourBrowserPassedLog": true,
+      "unitLoaderCases": [
+        {
+          "name": "concurrent callers await the same delayed actual crypto gate before overlay-ready",
+          "actualPassedLog": true
+        },
+        {
+          "name": "concurrent rejection retains baseline and resolves only after rejection, with no phantom subset",
+          "actualPassedLog": true
+        },
+        {
+          "name": "invalid legacy input rejects every concurrent caller and cannot cache false readiness",
+          "actualPassedLog": true
+        },
+        {
+          "name": "optional new overlay chunk load failure preserves completed legacy registry",
+          "actualPassedLog": true
+        }
+      ]
+    },
+    {
+      "project": "webkit",
+      "jobId": 111505697443,
+      "actualFreshOutDirBuildCommand": true,
+      "actualFourBrowserPassedLog": true,
+      "unitLoaderCases": [
+        {
+          "name": "concurrent callers await the same delayed actual crypto gate before overlay-ready",
+          "actualPassedLog": true
+        },
+        {
+          "name": "concurrent rejection retains baseline and resolves only after rejection, with no phantom subset",
+          "actualPassedLog": true
+        },
+        {
+          "name": "invalid legacy input rejects every concurrent caller and cannot cache false readiness",
+          "actualPassedLog": true
+        },
+        {
+          "name": "optional new overlay chunk load failure preserves completed legacy registry",
+          "actualPassedLog": true
+        }
+      ]
+    }
+  ],
+  "frozenInputFiles": [
+    {
+      "path": ".github/workflows/hsk-flow-package-checkpoint.yml",
+      "workspaceSHA256": "843d4d60770a7a8333a5586dc36d9e58453dda89904e2e3e0e2b453647d1ae9f",
+      "localHeadSHA256": "843d4d60770a7a8333a5586dc36d9e58453dda89904e2e3e0e2b453647d1ae9f",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/tests/unified/reviewed-sentence-subset.spec.ts",
+      "workspaceSHA256": "09c03fd071b8d416723f2bf52205d475ac43ad768cc115a4489ad41a1fe9e867",
+      "localHeadSHA256": "09c03fd071b8d416723f2bf52205d475ac43ad768cc115a4489ad41a1fe9e867",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/playwright.reviewed-sentences.config.ts",
+      "workspaceSHA256": "fe7ac3c287bb1135b819979cab0845d4ba0d25f62f8a38c2ed5c1ef707a672cd",
+      "localHeadSHA256": "fe7ac3c287bb1135b819979cab0845d4ba0d25f62f8a38c2ed5c1ef707a672cd",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/tests/browser/media-observer.ts",
+      "workspaceSHA256": "e311a703ceaeea9b789ba6b806a9d1c0b84f209fbb880e5e55fa094f69f04729",
+      "localHeadSHA256": "e311a703ceaeea9b789ba6b806a9d1c0b84f209fbb880e5e55fa094f69f04729",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/tests/audio-segment-loader.test.mjs",
+      "workspaceSHA256": "22f3b121c4e645e057a0702fce8e47962ad54ae475a6e4f75415b0be8e761c51",
+      "localHeadSHA256": "22f3b121c4e645e057a0702fce8e47962ad54ae475a6e4f75415b0be8e761c51",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/src/segments.ts",
+      "workspaceSHA256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00",
+      "localHeadSHA256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/content/audio-segments-hsk2-reviewed-sentences.json",
+      "workspaceSHA256": "e01a625335ac02409922d26bcf29d728f1ab0d032dea36e47d5192bd659b7ae8",
+      "localHeadSHA256": "e01a625335ac02409922d26bcf29d728f1ab0d032dea36e47d5192bd659b7ae8",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/content/audio-segment-reviewed-sentences-authority.json",
+      "workspaceSHA256": "44aec78b3cc2a161e1db266f56854e5f94082c310c618b8e46a2a3e798b85306",
+      "localHeadSHA256": "44aec78b3cc2a161e1db266f56854e5f94082c310c618b8e46a2a3e798b85306",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/content/audio-segments-pilot.json",
+      "workspaceSHA256": "6989e0f2a7f9824bdde9e9003099c1ca98a4c212764e8c364149c81ee6882cda",
+      "localHeadSHA256": "6989e0f2a7f9824bdde9e9003099c1ca98a4c212764e8c364149c81ee6882cda",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/content/audio-segments-hsk2-lessons02-03.json",
+      "workspaceSHA256": "9bd2278cf872cf1d9bdccfbb3a8ff54ed96477833d73e258c724671746da91ef",
+      "localHeadSHA256": "9bd2278cf872cf1d9bdccfbb3a8ff54ed96477833d73e258c724671746da91ef",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/content/audio-segment-authority.json",
+      "workspaceSHA256": "4c28025a19057f63887c405b102dc6ece6bbad5509e14e288deda38b3f90504f",
+      "localHeadSHA256": "4c28025a19057f63887c405b102dc6ece6bbad5509e14e288deda38b3f90504f",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-review.json",
+      "workspaceSHA256": "acac6ebbd051e09a1fe3fc4d5ca1494efda96c473e4649fe61dfd4b97ddebfa6",
+      "localHeadSHA256": "acac6ebbd051e09a1fe3fc4d5ca1494efda96c473e4649fe61dfd4b97ddebfa6",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-concurrency-before-repair.json",
+      "workspaceSHA256": "806bf58a59e3129f8be5f5da45801bdd6302f798d73990493fa0fc10f3f9fb53",
+      "localHeadSHA256": "806bf58a59e3129f8be5f5da45801bdd6302f798d73990493fa0fc10f3f9fb53",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-concurrency-result.json",
+      "workspaceSHA256": "ab6071f022bf7040232b967192b8930d7b0c809d4b989ba6536a46f95aa1a0eb",
+      "localHeadSHA256": "ab6071f022bf7040232b967192b8930d7b0c809d4b989ba6536a46f95aa1a0eb",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-checksum-failure-result.json",
+      "workspaceSHA256": "d5dea729058097517ce9693bc612896c505391e440a09e7c06d2972e25d38f03",
+      "localHeadSHA256": "d5dea729058097517ce9693bc612896c505391e440a09e7c06d2972e25d38f03",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-optional-failure-result.json",
+      "workspaceSHA256": "d9667f277df4f56558ec4c95b5e49e6a8dd73d7f028c1ec9f487d4916c2c2232",
+      "localHeadSHA256": "d9667f277df4f56558ec4c95b5e49e6a8dd73d7f028c1ec9f487d4916c2c2232",
+      "workspaceEqualsHead": true
+    }
+  ],
+  "historicalIndependentReviewAndRaceEvidence": [
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-review.json",
+      "sha256": "acac6ebbd051e09a1fe3fc4d5ca1494efda96c473e4649fe61dfd4b97ddebfa6",
+      "scope": "historical independently reviewed source/authority gate and actual-body loader proof, not new browser test",
+      "loaderProductionSHA256": null,
+      "secondCallResolvedBeforeAsyncGate": null
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-concurrency-before-repair.json",
+      "sha256": "806bf58a59e3129f8be5f5da45801bdd6302f798d73990493fa0fc10f3f9fb53",
+      "scope": "historical independently reviewed source/authority gate and actual-body loader proof, not new browser test",
+      "loaderProductionSHA256": "d093a3d14f566a4a2e281946e6024dd31bf2255776d1b6be1f85c9e27b394379",
+      "secondCallResolvedBeforeAsyncGate": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-concurrency-result.json",
+      "sha256": "ab6071f022bf7040232b967192b8930d7b0c809d4b989ba6536a46f95aa1a0eb",
+      "scope": "historical independently reviewed source/authority gate and actual-body loader proof, not new browser test",
+      "loaderProductionSHA256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00",
+      "secondCallResolvedBeforeAsyncGate": false
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-checksum-failure-result.json",
+      "sha256": "d5dea729058097517ce9693bc612896c505391e440a09e7c06d2972e25d38f03",
+      "scope": "historical independently reviewed source/authority gate and actual-body loader proof, not new browser test",
+      "loaderProductionSHA256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00",
+      "secondCallResolvedBeforeAsyncGate": false
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-optional-failure-result.json",
+      "sha256": "d9667f277df4f56558ec4c95b5e49e6a8dd73d7f028c1ec9f487d4916c2c2232",
+      "scope": "historical independently reviewed source/authority gate and actual-body loader proof, not new browser test",
+      "loaderProductionSHA256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00",
+      "secondCallResolvedBeforeAsyncGate": null
+    }
+  ],
+  "ledgerMarkdownCommitMembership": [
+    {
+      "head": "8dff803cc2f8d1956d5853ef40073c670e265cc0",
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/runtime-media-partition-ledger.md",
+      "trackedInTree": false
+    },
+    {
+      "head": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/runtime-media-partition-ledger.md",
+      "trackedInTree": true
+    }
+  ],
+  "sourceOriginalTracks": [
+    {
+      "targetId": "hsk2-fltrp-2026:l04:text2:line3",
+      "publicOriginalMP3Path": "course-app/public/course-assets/hsk2/audio/4-3.mp3",
+      "sourceCommit": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+      "sha256": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+      "bytes": 754606,
+      "segmentSourceEvidenceKeys": [
+        "track",
+        "sourceHash",
+        "start",
+        "end",
+        "sourceText",
+        "sourcePinyin",
+        "unit",
+        "sentenceNumber",
+        "verification",
+        "guardedEvidence"
+      ],
+      "sourceFrameRange": [
+        159680,
+        197921
+      ],
+      "sourceRate": 16000,
+      "trackSHAFromSegment": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+      "originalBytesMatchSignedSourceHash": true
+    },
+    {
+      "targetId": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "publicOriginalMP3Path": "course-app/public/course-assets/hsk2/audio/5-3.mp3",
+      "sourceCommit": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+      "sha256": "7692432ee007f962b2e0d8a76642a0ad69e2696125f74b3572e1e287e249dcbd",
+      "bytes": 992382,
+      "segmentSourceEvidenceKeys": [
+        "track",
+        "sourceHash",
+        "start",
+        "end",
+        "sourceText",
+        "sourcePinyin",
+        "unit",
+        "sentenceNumber",
+        "verification",
+        "guardedEvidence",
+        "parentLineId"
+      ],
+      "sourceFrameRange": [
+        572480,
+        614240
+      ],
+      "sourceRate": 16000,
+      "trackSHAFromSegment": "7692432ee007f962b2e0d8a76642a0ad69e2696125f74b3572e1e287e249dcbd",
+      "originalBytesMatchSignedSourceHash": true
+    }
+  ],
+  "previousMachineReviewSHA256": "76c0d3571f5ea0ce1c2d40de7baeffe3a58155ee6782a27636d99865c761501c",
+  "existingRuntimeFragmentIds": [
+    "hsk2-fltrp-2026:l04:text2:line3",
+    "hsk2-fltrp-2026:l05:text2:line8:sentence2"
+  ],
+  "newRuntimeFragmentIds": [],
+  "newWordClipsApproved": 0,
+  "humanListeningCertification": false,
+  "pronunciationToneDeviceCertification": false,
+  "productionFilesModified": [],
+  "fixturesModified": [],
+  "publicationApproved": false,
+  "limitations": [
+    "These actual 8 cases run in a freshly built dedicated outDir preview inside the package jobs, not in the assembled protected package. Other reviewers own packaged public-path/native suites.",
+    "Actual natural unmuted nonseeking native event bounds use the existing fixture tolerances: lower start minus .08 seconds, upper end plus .16 seconds; observations are not sample-accurate audible device output.",
+    "Ordinal 2, no precise parent/sibling, original text fallback, group-only color and failed-checksum old-clip availability are passed exact fixture DOM assertions. Natural event traces are separately preserved and inspected.",
+    "Seek clamp, stop, route stop and back restoration pass the existing browser fixture; raw later event attachments preserve context but do not replace those DOM assertions.",
+    "Four deliberately delayed digest/rejected baseline/optional load failure unit cases genuinely pass in both package job logs; browser cases do not deliberately reproduce delayed-loader concurrency. Historical independent actual-body before/after race evidence remains separate.",
+    "No new source-semantic, isolated word, original whole-track repetition or human listening certification is granted. No deployment is authorized by this report.",
+    "Only the two package jobs are covered here; success of all six CI jobs is not asserted."
+  ]
+}

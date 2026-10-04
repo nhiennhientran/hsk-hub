@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "scope": "Only job checkout and actual Playwright pass-summary evidence; secrets or entire raw job logs are not persisted.",
+  "jobs": [
+    {
+      "jobID": 111505697226,
+      "chars": 92347,
+      "checkoutHeadObserved": true,
+      "evidenceLines": [
+        "2026-10-04T18:53:53.5665841Z   35 passed (1.7m)",
+        "2026-10-04T18:53:56.4235324Z   1 passed (2.4s)"
+      ],
+      "workflowFatalMarkers": []
+    },
+    {
+      "jobID": 111505697336,
+      "chars": 186607,
+      "checkoutHeadObserved": true,
+      "evidenceLines": [
+        "2026-10-04T18:55:11.2952522Z   35 passed (2.5m)",
+        "2026-10-04T18:55:14.6159048Z   1 passed (2.9s)"
+      ],
+      "workflowFatalMarkers": []
+    },
+    {
+      "jobID": 111505697434,
+      "chars": 226069,
+      "checkoutHeadObserved": true,
+      "evidenceLines": [
+        "2026-10-04T18:56:37.8312659Z   64 passed (4.2m)"
+      ],
+      "workflowFatalMarkers": []
+    },
+    {
+      "jobID": 111505697518,
+      "chars": 131846,
+      "checkoutHeadObserved": true,
+      "evidenceLines": [
+        "2026-10-04T18:56:07.5802090Z   64 passed (3.9m)"
+      ],
+      "workflowFatalMarkers": []
+    }
+  ]
+}

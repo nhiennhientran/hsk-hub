@@ -73,10 +73,10 @@ test('production assembly anchors the actual 1446-file 2da tree and explicitly s
   assert.ok(baselineExclusion('qa/source-canonical-audit.mjs'));assert.ok(baselineExclusion('tools/tests/results/legacy-gates.json'));assert.equal(baselineExclusion('hsk4/data.js'),undefined);assert.equal(baselineExclusion('practice/reviewed/hsk3-v1.1.part01.b64'),undefined);
 });
 
-test('entry and build-configuration edits are dirty even when runtime src/content are untouched',()=>{
+test('entry, build configuration and retained source assets are included in the clean build snapshot',()=>{
   const repo=mkdtempSync(join(tmpdir(),'hsk-package-dirty-'));
   const run=args=>execFileSync('git',args,{cwd:repo,stdio:'ignore'});
-  const names=['course-app/index.html','course-app/package.json','course-app/package-lock.json','course-app/vite.config.ts','course-app/tsconfig.json'];
+  const names=['course-app/index.html','course-app/package.json','course-app/package-lock.json','course-app/vite.config.ts','course-app/tsconfig.json','new-hsk1/hsk1/audio/1-1.mp3','new-hsk1/assets/hanzi-data/一.json'];
   try{
     run(['init']);
     for(const path of names){mkdirSync(join(repo,path,'..'),{recursive:true});writeFileSync(join(repo,path),'original');}

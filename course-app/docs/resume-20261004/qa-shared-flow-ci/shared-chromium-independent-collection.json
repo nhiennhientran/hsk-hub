@@ -1,0 +1,1416 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/node_modules/@playwright/test/cli.js",
+      "test",
+      "--list",
+      "--config=course-app/docs/resume-20261004/flow-compat-review/playwright.flow.config.ts",
+      "--project=chromium",
+      "--reporter=json"
+    ],
+    "configFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/playwright.flow.config.ts",
+    "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "durable-attempts.candidate.spec.ts",
+          "homework-all-lessons.candidate.spec.ts",
+          "shared-practice-listening.candidate.spec.ts",
+          "input-abort.candidate.spec.ts",
+          "mobile-boundaries.candidate.spec.ts"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "durable-attempts.candidate.spec.ts",
+          "homework-all-lessons.candidate.spec.ts",
+          "shared-practice-listening.candidate.spec.ts",
+          "input-abort.candidate.spec.ts",
+          "mobile-boundaries.candidate.spec.ts"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node serve-frozen.mjs",
+      "url": "http://127.0.0.1:18782",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "durable-attempts.candidate.spec.ts",
+      "file": "durable-attempts.candidate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "durable HSK2 homework quota rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-e0a02edf91ce607d1c5a",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK2 homework waiting rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-34097617511bac17e416",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK2 listening quota rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-5c9cc9b3882a290d1a67",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK2 listening waiting rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-bc0a7b504832d0f8e53c",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK3 homework quota rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-96a151bf6a07942c78ab",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK3 homework waiting rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-5c7de8450840eea6bc9d",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK3 listening quota rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-ffdd9b845244c896529b",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        },
+        {
+          "title": "durable HSK3 listening waiting rejects unconfirmed receipt across remount ordinary save and explicit retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bbacc0988980e1dd6aae-f2d4146e3f5d4cdec6c4",
+          "file": "durable-attempts.candidate.spec.ts",
+          "line": 12,
+          "column": 134
+        }
+      ]
+    },
+    {
+      "title": "homework-all-lessons.candidate.spec.ts",
+      "file": "homework-all-lessons.candidate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual unified HSK1 lesson 1 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-e4c2bab7bdd10a6d5084",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 2 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-c6641d24e27b0f5535ca",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 3 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-a160c2f9e78c82e671fe",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 4 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-12987dbd086c57c99043",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 5 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-39756c0b630ad1b4afc1",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 6 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-45542ef9fb784f555b03",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 7 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-61449047337a2d3c106d",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 8 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-53d2c9a9a43bb249d747",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 9 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-96766f127252c5a14811",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 10 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-d02076360d459cfec145",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 11 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-c5611e59355874a1f464",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 12 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-4191e496499d72f689f5",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 13 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-15590ca0c8f6bcb2eaf2",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 14 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-6241f2bcd5a89cb96987",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK1 lesson 15 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-3e2581694b24e52e1d2e",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 1 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-a4b97e1a20ab8f98de88",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 2 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-718f417f4f257bfc54cf",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 3 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-e771943eba1a35539a36",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 4 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-8ba08f81b22288482834",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 5 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-0ba05cc228ae73cd227c",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 6 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-040de8d152d6563d0b4d",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 7 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-e3fe67fbd5f9ee20f35e",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 8 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-0cdaabb293e4f9e709a6",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 9 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-c40c4289bdf076771b21",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 10 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-d1785bb4f7b6aed893cd",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 11 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-72b8cadd3869b77cf032",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 12 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-77d5765e31b2bfdc7120",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 13 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-b67af63db2daae465224",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 14 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-8ed62a1f69b0ff7f01be",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK2 lesson 15 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-072f4abb191f7939c030",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 1 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-b5ad5f6d17a8e398edc6",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 2 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-7aee8cec69dcc5f9ea8d",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 3 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-66f8cd7adb3e98b5556f",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 4 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-5458fa179d7150ec756f",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 5 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-9941ffe089e18929d3b5",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 6 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-0856ca84c51cd979b0e8",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 7 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-7923a38712aa8eb7f181",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 8 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-56e73a28516cfe4f1206",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 9 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-685c79b69f76548a3ef9",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 10 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-28f97d4bf026484188fe",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 11 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-fb6894fa925f2a68f7cc",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 12 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-f66ecfab19ec98cab207",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 13 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-de85288db43d98faa0af",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 14 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-a73ae77649f36600cc95",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 15 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-c454dbe283d92457a359",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 16 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-9b3ceec6cc3daf78dbc3",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 17 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-889b2cf6d189dbc335d7",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        },
+        {
+          "title": "actual unified HSK3 lesson 18 all five homework parts persist exact isolated receipts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "305671520db6248ab0d7-c3f95b858c4d46a4e26d",
+          "file": "homework-all-lessons.candidate.spec.ts",
+          "line": 21,
+          "column": 157
+        }
+      ]
+    },
+    {
+      "title": "input-abort.candidate.spec.ts",
+      "file": "input-abort.candidate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "HSK2 final lesson invalid old radio IME abort and redo preserve confirmed history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "6329ccce70c8aa0a0b89-1e6027da051a93638def",
+          "file": "input-abort.candidate.spec.ts",
+          "line": 3,
+          "column": 34
+        },
+        {
+          "title": "HSK3 final lesson invalid old radio IME abort and redo preserve confirmed history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "6329ccce70c8aa0a0b89-28ef733f6617615d8ab0",
+          "file": "input-abort.candidate.spec.ts",
+          "line": 3,
+          "column": 34
+        }
+      ]
+    },
+    {
+      "title": "mobile-boundaries.candidate.spec.ts",
+      "file": "mobile-boundaries.candidate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "HSK2 longest mixed backs and independent listening preserve exact saved content at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3b2c24853efe7052bfe5-f8c4e02e276bc4975d50",
+          "file": "mobile-boundaries.candidate.spec.ts",
+          "line": 2,
+          "column": 34
+        },
+        {
+          "title": "HSK3 longest mixed backs and independent listening preserve exact saved content at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3b2c24853efe7052bfe5-ddf5e8bf26c154d85620",
+          "file": "mobile-boundaries.candidate.spec.ts",
+          "line": 2,
+          "column": 34
+        }
+      ]
+    },
+    {
+      "title": "shared-practice-listening.candidate.spec.ts",
+      "file": "shared-practice-listening.candidate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual HSK2 all independent listening questions preserve immutable first latest and wrong retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "07596ef0b66877bb80ed-17e24b941343c410adeb",
+          "file": "shared-practice-listening.candidate.spec.ts",
+          "line": 7,
+          "column": 2
+        },
+        {
+          "title": "actual HSK2 complete canonical mixed queue renders all senses exact backs and survives responsive reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "07596ef0b66877bb80ed-cfbe3540a7e5bd0bbca7",
+          "file": "shared-practice-listening.candidate.spec.ts",
+          "line": 43,
+          "column": 2
+        },
+        {
+          "title": "actual HSK3 all independent listening questions preserve immutable first latest and wrong retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "07596ef0b66877bb80ed-b40fa0ba8bec6349b049",
+          "file": "shared-practice-listening.candidate.spec.ts",
+          "line": 7,
+          "column": 2
+        },
+        {
+          "title": "actual HSK3 complete canonical mixed queue renders all senses exact backs and survives responsive reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "07596ef0b66877bb80ed-e9bbba5d30a00bda4dfc",
+          "file": "shared-practice-listening.candidate.spec.ts",
+          "line": 43,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T19:01:38.632Z",
+    "duration": 62.56200000000001,
+    "expected": 0,
+    "skipped": 64,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

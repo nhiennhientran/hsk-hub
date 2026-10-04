@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "status": "independent-current-design-source-read-identity",
+  "recordedAtUtc": "2026-10-04T19:03:38.631124+00:00",
+  "policy": "Own actual source scopes only; not author coverage, textbook language acceptance, full H23 backup audit or A9/B final baseline. Recheck actual A9 frozen head before implementation.",
+  "files": [
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/README.md",
+      "bytes": 14490,
+      "sha256": "7b91b962be15546b480be10cdf5ab53fdeb8931e65038e6d4bb00eeaf8167d6f",
+      "readScope": "full design"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/implementation-files.json",
+      "bytes": 8356,
+      "sha256": "62d5e7ebf74bf3132ad9a716059ad5e21d20ab625e79cfb54093a19b00ab2621",
+      "readScope": "full proposed ownership contract"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/manifest-contract.json",
+      "bytes": 3422,
+      "sha256": "6960605f64eaecc80fab4f8726bc3d7e84895cc4676896d5c1afb9df430056ed",
+      "readScope": "full proposed manifest contract"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/read-ledger.json",
+      "bytes": 16082,
+      "sha256": "33e75387358e301006eac239973f701c8fcd065c5f7d62bed2be85ff7587e20a",
+      "readScope": "identity comparison, not inheritance of author semantic-read coverage"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/validation.json",
+      "bytes": 303,
+      "sha256": "87d8e00a63d0785a014aaa45157217bf214f8846a04ed99ad48e3f81857fc71d",
+      "readScope": "design status only"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/freeze-manifest.json",
+      "bytes": 1163,
+      "sha256": "c0555bf64674d2768480a1348a8c0f405372d994e1d20997baa2f3a3295e3de0",
+      "readScope": "full declared input freeze"
+    },
+    {
+      "path": "hsk1-app/src/domain/types.ts",
+      "bytes": 1906,
+      "sha256": "d4dc9527486957232967eb7fd2fc393481560061474cfc753306f154fe7c7601",
+      "readScope": "record shape and listening record types"
+    },
+    {
+      "path": "hsk1-app/src/domain/homework/engine.js",
+      "bytes": 29611,
+      "sha256": "5a8ac5bbab07bf3dc505c46d3d0ea8ef48d14017e6875742ff816d4646295321",
+      "readScope": "fingerprint, makeAttempt, submit and restart paths"
+    },
+    {
+      "path": "hsk1-app/src/domain/homework30/engine.ts",
+      "bytes": 11748,
+      "sha256": "f5684607b1cb73ce316e6c65fa135b645ee274859ac14a428d6d50cc654532cb",
+      "readScope": "record, submit/restart, import exact shape and history invariants"
+    },
+    {
+      "path": "hsk1-app/src/features/homework/controller.ts",
+      "bytes": 6909,
+      "sha256": "687b5df3b4a6af90141a58d23e4f762d196f16db42dfea4ce15500506815a66c",
+      "readScope": "same-store submit mutation path"
+    },
+    {
+      "path": "hsk1-app/src/features/homework/controller30.ts",
+      "bytes": 5065,
+      "sha256": "4dc4039edc555cf1010db261dde223c35612e70b94f5ad4ed3ad671e333e900e",
+      "readScope": "full controller, metadata hook boundary"
+    },
+    {
+      "path": "hsk1-app/src/features/homework/receipt.ts",
+      "bytes": 6262,
+      "sha256": "181c78deff63c6b2a9414b57fb8d229a93ac6d3d58e7511dc32e6a41dab7f0be",
+      "readScope": "full receipt and original option/token index interpretation"
+    },
+    {
+      "path": "hsk1-app/src/features/homework/index.ts",
+      "bytes": 23151,
+      "sha256": "461c0a88e13fd7cf539724326332b6556cc331a7676c037e0c4501fbeb948b91",
+      "readScope": "receipt call site only"
+    },
+    {
+      "path": "hsk1-app/src/features/homework/index30.ts",
+      "bytes": 27423,
+      "sha256": "29ac0b1fb16fe910cb1350775cb08bcff38af586840e8b36293cbaf30660b889",
+      "readScope": "receipt call site only"
+    },
+    {
+      "path": "hsk1-app/src/domain/listening/controller.ts",
+      "bytes": 9063,
+      "sha256": "4af055a9b23c3e943bee4c19b66d783260977e33cbcae133feb60fe079e7d8b0",
+      "readScope": "read/current/change/start/select/submit atomic path"
+    },
+    {
+      "path": "hsk1-app/src/domain/vocabulary/mixed-state.ts",
+      "bytes": 6532,
+      "sha256": "763a4a30a5eccad4c0d1cc25d743f1d14af013f4235868a398e57b91254f11ac",
+      "readScope": "canonical raw sourceRecords fingerprint and saved-round validation"
+    },
+    {
+      "path": "hsk1-app/src/services/content/textbook.ts",
+      "bytes": 20651,
+      "sha256": "0628c59d758196ebe924568e1b8cb1977a99e2562bbdc1de7656e33204d54ce1",
+      "readScope": "service creation, existing sidecar, wordSenses and media resolver functions"
+    },
+    {
+      "path": "hsk1-app/src/features/textbook/text.ts",
+      "bytes": 8959,
+      "sha256": "4858677c9840db097e8dfae0ea6180c725ebd33dbadc8bd2ea27933454b84330",
+      "readScope": "full current scene UI and label override"
+    },
+    {
+      "path": "hsk1-app/src/features/textbook/player.ts",
+      "bytes": 3489,
+      "sha256": "df001d9f4604009981fbfcafc90001ee138de0322245fe9eb0816d8503314af5",
+      "readScope": "label rendering call site only"
+    },
+    {
+      "path": "hsk1-app/src/services/audio/index.ts",
+      "bytes": 29941,
+      "sha256": "2e8674730405a59bc82556923f588013378495e238f097e75356083dcf2ec4d0",
+      "readScope": "playSequence request label path only"
+    },
+    {
+      "path": "hsk1-app/src/services/storage/compatibility.ts",
+      "bytes": 43416,
+      "sha256": "ce624cc1b417586aea6d6c674608d890ff5483652d5e742eb072392cde3cff6f",
+      "readScope": "AppData/exact validator, legacy imports/discovery, reset paths and legacy source reports"
+    },
+    {
+      "path": "hsk1-app/src/domain/progress/reset.ts",
+      "bytes": 9727,
+      "sha256": "a06540eab010fb1affd1be008a69f7f2287ba938677e2b5fdf575ae329644ea8",
+      "readScope": "full current raw-record reset"
+    },
+    {
+      "path": "hsk1-app/src/features/exercises/archive-data.ts",
+      "bytes": 3876,
+      "sha256": "ddc94ee93ca6235b942769d7876be757d0c171946546c91e7b9cdd86128e9fac",
+      "readScope": "full actual archived homework slot projection"
+    },
+    {
+      "path": "hsk1-app/src/features/exercises/archive.ts",
+      "bytes": 13893,
+      "sha256": "3ce482e147eccf909fd7ec81b42d2cb4b3f0bd740209cd9549416df2d03fdbaf",
+      "readScope": "full current archive presentation"
+    },
+    {
+      "path": "hsk1-app/src/services/source-activities/content.ts",
+      "bytes": 4898,
+      "sha256": "e77761c05bcc24418eee07cfedd217950cdbb381157d21f8b8c019d52d062d44",
+      "readScope": "full raw/current registry structure and source fields"
+    },
+    {
+      "path": "hsk1-app/src/features/source-activities/figures.ts",
+      "bytes": 1565,
+      "sha256": "796666a581ce4fbcaabee7706f72347e71cfee3a305b01a9a8019f320736da26",
+      "readScope": "full static old SVG URL mapping and trusted resolver"
+    },
+    {
+      "path": "hsk1-app/src/services/source-activities/state.ts",
+      "bytes": 10025,
+      "sha256": "7678c98fa0d2a53d335971de3f8c9e0346d19d732ac734b99e8191443ac9c34a",
+      "readScope": "snapshotContext, id@version validation and archival selection"
+    },
+    {
+      "path": "hsk1-app/src/features/source-activities/index.ts",
+      "bytes": 19762,
+      "sha256": "75982f634a8969ff8faf90e15593c33c551e0edde325c3e5d07c921a498d9d1f",
+      "readScope": "current source figure render, audio-label override and history context display"
+    },
+    {
+      "path": "hsk1-app/tests/source-activities.test.mjs",
+      "bytes": 18963,
+      "sha256": "1d3cc31fd25b2b6c129be85c5eb16583ba68d5cbe4360758cd20b01495389b10",
+      "readScope": "existing SVG/five-bank guards and version/fault tests read, not executed"
+    },
+    {
+      "path": "course-app/src/state.ts",
+      "bytes": 12140,
+      "sha256": "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c",
+      "readScope": "saved Question validation, grade snapshots, first/latest recording and questionRevision"
+    },
+    {
+      "path": "course-app/src/main.ts",
+      "bytes": 61910,
+      "sha256": "9f0309622e30f4362132ddfa381b18494de99df3761ae609cd5c60b9bbaa928d",
+      "readScope": "receipt saved Question/no-snapshot branch and current lesson title"
+    },
+    {
+      "path": "course-app/src/listening-view.ts",
+      "bytes": 11701,
+      "sha256": "3c7384db55bf7fba043c76e3ff8120a278f576fec4310a836a1fdfcb9d4a8050",
+      "readScope": "submitted question fallback, option/feedback rendering and current text dependency"
+    },
+    {
+      "path": "course-app/src/content.ts",
+      "bytes": 2186,
+      "sha256": "0388a6882b8db4065b56f92526ebfe4ff91d8d3abd8b50fc60086360c0c56f67",
+      "readScope": "full lesson/lexicon loader and cache identities"
+    },
+    {
+      "path": "course-app/src/activity-history.ts",
+      "bytes": 2674,
+      "sha256": "7edeeacf227f030bcf5377f7f9b364c80c844e37dcc2843e37aa2197d7e1bc46",
+      "readScope": "full old activity raw records/context helper"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/transcribe-original-tracks.py",
+      "bytes": 17875,
+      "sha256": "6c32b71904d6829ed2fb7944fcdb3dad61f88eec198db5e837f4d7551ffcc3c4",
+      "readScope": "sourceComparisonInputSHA256 run metadata only"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/transcribe-candidate-crops.py",
+      "bytes": 8105,
+      "sha256": "233ece05705436f3840f2ff68da9b7c7b2d817bd842d715707670696a85b4b15",
+      "readScope": "original MP3/full lesson/source PCM checksum preflight"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/compare-raw-source.py",
+      "bytes": 11908,
+      "sha256": "9c040db55745793509a6f8097f5519f5f189e7aee252a7bc7cbe11cca8a175fa",
+      "readScope": "source lesson full JSON/manifest identity and printed target construction"
+    },
+    {
+      "path": "hsk1-app/content/textbook.json",
+      "bytes": 741675,
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "readScope": "byte-identity verification only; no full VI semantic review"
+    },
+    {
+      "path": "hsk1-app/content/homework30-bank.json",
+      "bytes": 854221,
+      "sha256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+      "readScope": "byte-identity verification only; no full VI semantic review"
+    },
+    {
+      "path": "hsk1-app/content/stage2-bank.json",
+      "bytes": 269656,
+      "sha256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3",
+      "readScope": "byte-identity verification only; no full VI semantic review"
+    },
+    {
+      "path": "hsk1-app/content/stage3-catalog.json",
+      "bytes": 384024,
+      "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "readScope": "byte-identity verification only; no full VI semantic review"
+    },
+    {
+      "path": "hsk1-app/content/legacy-exercises.json",
+      "bytes": 446661,
+      "sha256": "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c",
+      "readScope": "byte-identity verification only; no full VI semantic review"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/lesson-04.json",
+      "bytes": 78658,
+      "sha256": "c59eec5284422b59896f0dbb36f7e0bd37d5d13c28a579bc3e3e6c85aa61af21",
+      "readScope": "raw registry figure references and hashes only"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/figures/warmup-01.svg",
+      "bytes": 763,
+      "sha256": "ed2d54ba33599303fcadbd979bde85fa4eff24e586f405609fe4d7b24dc0fbb4",
+      "readScope": "byte SHA identity only, no new visual/language audit"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/figures/warmup-02.svg",
+      "bytes": 313,
+      "sha256": "b8928b1bb57395114a9fa1b83c8ce1fcdbdcc8f129cdd6368cb7a77302557515",
+      "readScope": "byte SHA identity only, no new visual/language audit"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/figures/warmup-03.svg",
+      "bytes": 1887,
+      "sha256": "53b2ddbe1cb9ecd7be66329589b9b1856261041c43306a83c605cbb1e7b448b3",
+      "readScope": "byte SHA identity only, no new visual/language audit"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/figures/warmup-04.svg",
+      "bytes": 948,
+      "sha256": "d4065b4b5c5ad802149751001168f316bc911e3c10d0853a322342d231e71ddf",
+      "readScope": "byte SHA identity only, no new visual/language audit"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/figures/warmup-05.svg",
+      "bytes": 1053,
+      "sha256": "470ce8507e80529f4f3bf923164f2bbea58d8ae8f85f32cda73a28b5385182e3",
+      "readScope": "byte SHA identity only, no new visual/language audit"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/figures/warmup-06.svg",
+      "bytes": 1255,
+      "sha256": "9b8050952eeeec6654656e67042283e952dba91fcc0f0ca0ba8d6b799d167f2e",
+      "readScope": "byte SHA identity only, no new visual/language audit"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/figures/picture-01.svg",
+      "bytes": 3026,
+      "sha256": "233ca90a60f2755392032b139d63ed483c8e328ec3206480e8d5fd5d622019c1",
+      "readScope": "byte SHA identity only, no new visual/language audit"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/figures/picture-02.svg",
+      "bytes": 1198,
+      "sha256": "411de86dc787638012f3eb0023dbf0ab8a4bc44dc9860fb68be3cfca1a291ac2",
+      "readScope": "byte SHA identity only, no new visual/language audit"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/figures/picture-03.svg",
+      "bytes": 665,
+      "sha256": "cdaff6cad8f62f75028b5ae235c87dfa225c3ba80bbd2d327de7ec43d32b5fbe",
+      "readScope": "byte SHA identity only, no new visual/language audit"
+    },
+    {
+      "path": "hsk1-app/content/source-activities/figures/picture-04.svg",
+      "bytes": 1124,
+      "sha256": "ba40245e5a515240ce49378f4575b78555f43e773a3a68e7600ea983a4172867",
+      "readScope": "byte SHA identity only, no new visual/language audit"
+    }
+  ]
+}

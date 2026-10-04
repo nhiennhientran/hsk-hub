@@ -1,0 +1,33 @@
+{
+  "status": "accepted-root-original-input-scope-fix-bounded-review-not-new-clean-package",
+  "toolSHA256": "efc2e61e946eb6a53ab2a59e099b0dc349079ea9c4ab4c237fe09da99334976b",
+  "cases": [
+    {
+      "path": "new-hsk1/hsk1/audio/1-1.mp3",
+      "reportedRuntimeDirty": true,
+      "changedInputSHA256": "c3d75ff9d0386455636bb08f4fe16c798bd68efb11eaa17c4aa13334bbb9f8b7",
+      "snapshotChanged": true,
+      "restoreDirty": false,
+      "restoreSnapshotExact": true
+    },
+    {
+      "path": "new-hsk1/assets/hanzi-data/一.json",
+      "reportedRuntimeDirty": true,
+      "changedInputSHA256": "7c3aba594dc78a85ac3f52549dcea626116be5d2fc4312edae94370137ab49f7",
+      "snapshotChanged": true,
+      "restoreDirty": false,
+      "restoreSnapshotExact": true
+    }
+  ],
+  "workingSnapshot": {
+    "files": 1459,
+    "sha256": "333f2b56eaee6e8f28a8b69c9a5b3c1c5e018a1273b5590191a21226da0146cd",
+    "sourceDirty": true,
+    "trackedOriginalCounts": {
+      "new-hsk1/hsk1/audio": 93,
+      "new-hsk1/assets/hanzi-data": 256
+    },
+    "newCleanSourceIdentityClaim": false
+  },
+  "lockedNpmIntegrity": true
+}

@@ -1,0 +1,275 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.19.0/x64/bin/node",
+      "/home/runner/work/hsk-hub/hsk-hub/course-app/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config=playwright.legacy.config.ts",
+      "--project=webkit"
+    ],
+    "configFile": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review/playwright.legacy.config.ts",
+    "rootDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/nhiennhientran/hsk-hub/commit/dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+        "commitHash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+        "buildHref": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37226015769"
+      },
+      "gitCommit": {
+        "shortHash": "dd8b22c",
+        "hash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+        "subject": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+        "body": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+        "author": {
+          "name": "nhiennhientran",
+          "email": "liangzeheng221@gmail.com",
+          "time": 1791139865000
+        },
+        "committer": {
+          "name": "nhiennhientran",
+          "email": "liangzeheng221@gmail.com",
+          "time": 1791139865000
+        },
+        "branch": "work/hsk-flow-package-ci-20261004"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review/legacy-native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/nhiennhientran/hsk-hub/commit/dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "commitHash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "buildHref": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37226015769"
+          },
+          "gitCommit": {
+            "shortHash": "dd8b22c",
+            "hash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "subject": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+            "body": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+            "author": {
+              "name": "nhiennhientran",
+              "email": "liangzeheng221@gmail.com",
+              "time": 1791139865000
+            },
+            "committer": {
+              "name": "nhiennhientran",
+              "email": "liangzeheng221@gmail.com",
+              "time": 1791139865000
+            },
+            "branch": "work/hsk-flow-package-ci-20261004"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "legacy-entries.packaged.ts"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review/legacy-native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/nhiennhientran/hsk-hub/commit/dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "commitHash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "buildHref": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37226015769"
+          },
+          "gitCommit": {
+            "shortHash": "dd8b22c",
+            "hash": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+            "subject": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+            "body": "Save independently reviewed audio dispositions and exact supplementary CI artifact evidence",
+            "author": {
+              "name": "nhiennhientran",
+              "email": "liangzeheng221@gmail.com",
+              "time": 1791139865000
+            },
+            "committer": {
+              "name": "nhiennhientran",
+              "email": "liangzeheng221@gmail.com",
+              "time": 1791139865000
+            },
+            "branch": "work/hsk-flow-package-ci-20261004"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "legacy-entries.packaged.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/runner/work/hsk-hub/hsk-hub/course-app/docs/resume-20261004/flow-compat-review/legacy-native-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node serve-legacy.mjs",
+      "url": "http://127.0.0.1:18783/hsk-hub/course-engine/unified-release-manifest.json",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "legacy-entries.packaged.ts",
+      "file": "legacy-entries.packaged.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "verified assembled old HSK1 HSK2 HSK3 and both HSK4 routes preserve nonempty histories and extra HSK4 gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2805,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:32.909Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2786d49382d9f9b891eb-1dc79658649c40fb40ce",
+          "file": "legacy-entries.packaged.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "verified assembled HSK2 nested default and explicit cross-level deep links survive reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 525,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:35.792Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2786d49382d9f9b891eb-b099ae31b46d5dcbedac",
+          "file": "legacy-entries.packaged.ts",
+          "line": 28,
+          "column": 26
+        },
+        {
+          "title": "verified assembled HSK3 nested default and explicit cross-level deep links survive reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 551,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T18:52:36.326Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2786d49382d9f9b891eb-87f83cc764d303bfb970",
+          "file": "legacy-entries.packaged.ts",
+          "line": 28,
+          "column": 26
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T18:52:32.496Z",
+    "duration": 4437.434,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

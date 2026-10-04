@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "recordedUTC": "2026-10-04T18:51:57.178320+00:00",
+  "status": "waiting-for-actual-ci-run-not-approval",
+  "repo": "nhiennhientran/hsk-hub",
+  "localHeadAtPreflight": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+  "inputFiles": [
+    {
+      "path": ".github/workflows/hsk-flow-package-checkpoint.yml",
+      "workspaceSHA256": "843d4d60770a7a8333a5586dc36d9e58453dda89904e2e3e0e2b453647d1ae9f",
+      "localHeadSHA256": "843d4d60770a7a8333a5586dc36d9e58453dda89904e2e3e0e2b453647d1ae9f",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/tests/unified/reviewed-sentence-subset.spec.ts",
+      "workspaceSHA256": "09c03fd071b8d416723f2bf52205d475ac43ad768cc115a4489ad41a1fe9e867",
+      "localHeadSHA256": "09c03fd071b8d416723f2bf52205d475ac43ad768cc115a4489ad41a1fe9e867",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/playwright.reviewed-sentences.config.ts",
+      "workspaceSHA256": "fe7ac3c287bb1135b819979cab0845d4ba0d25f62f8a38c2ed5c1ef707a672cd",
+      "localHeadSHA256": "fe7ac3c287bb1135b819979cab0845d4ba0d25f62f8a38c2ed5c1ef707a672cd",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/tests/browser/media-observer.ts",
+      "workspaceSHA256": "e311a703ceaeea9b789ba6b806a9d1c0b84f209fbb880e5e55fa094f69f04729",
+      "localHeadSHA256": "e311a703ceaeea9b789ba6b806a9d1c0b84f209fbb880e5e55fa094f69f04729",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/tests/audio-segment-loader.test.mjs",
+      "workspaceSHA256": "22f3b121c4e645e057a0702fce8e47962ad54ae475a6e4f75415b0be8e761c51",
+      "localHeadSHA256": "22f3b121c4e645e057a0702fce8e47962ad54ae475a6e4f75415b0be8e761c51",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/src/segments.ts",
+      "workspaceSHA256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00",
+      "localHeadSHA256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/content/audio-segments-hsk2-reviewed-sentences.json",
+      "workspaceSHA256": "e01a625335ac02409922d26bcf29d728f1ab0d032dea36e47d5192bd659b7ae8",
+      "localHeadSHA256": "e01a625335ac02409922d26bcf29d728f1ab0d032dea36e47d5192bd659b7ae8",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/content/audio-segment-reviewed-sentences-authority.json",
+      "workspaceSHA256": "44aec78b3cc2a161e1db266f56854e5f94082c310c618b8e46a2a3e798b85306",
+      "localHeadSHA256": "44aec78b3cc2a161e1db266f56854e5f94082c310c618b8e46a2a3e798b85306",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/content/audio-segments-pilot.json",
+      "workspaceSHA256": "6989e0f2a7f9824bdde9e9003099c1ca98a4c212764e8c364149c81ee6882cda",
+      "localHeadSHA256": "6989e0f2a7f9824bdde9e9003099c1ca98a4c212764e8c364149c81ee6882cda",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/content/audio-segments-hsk2-lessons02-03.json",
+      "workspaceSHA256": "9bd2278cf872cf1d9bdccfbb3a8ff54ed96477833d73e258c724671746da91ef",
+      "localHeadSHA256": "9bd2278cf872cf1d9bdccfbb3a8ff54ed96477833d73e258c724671746da91ef",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/content/audio-segment-authority.json",
+      "workspaceSHA256": "4c28025a19057f63887c405b102dc6ece6bbad5509e14e288deda38b3f90504f",
+      "localHeadSHA256": "4c28025a19057f63887c405b102dc6ece6bbad5509e14e288deda38b3f90504f",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-review.json",
+      "workspaceSHA256": "acac6ebbd051e09a1fe3fc4d5ca1494efda96c473e4649fe61dfd4b97ddebfa6",
+      "localHeadSHA256": "acac6ebbd051e09a1fe3fc4d5ca1494efda96c473e4649fe61dfd4b97ddebfa6",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-concurrency-before-repair.json",
+      "workspaceSHA256": "806bf58a59e3129f8be5f5da45801bdd6302f798d73990493fa0fc10f3f9fb53",
+      "localHeadSHA256": "806bf58a59e3129f8be5f5da45801bdd6302f798d73990493fa0fc10f3f9fb53",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-concurrency-result.json",
+      "workspaceSHA256": "ab6071f022bf7040232b967192b8930d7b0c809d4b989ba6536a46f95aa1a0eb",
+      "localHeadSHA256": "ab6071f022bf7040232b967192b8930d7b0c809d4b989ba6536a46f95aa1a0eb",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-checksum-failure-result.json",
+      "workspaceSHA256": "d5dea729058097517ce9693bc612896c505391e440a09e7c06d2972e25d38f03",
+      "localHeadSHA256": "d5dea729058097517ce9693bc612896c505391e440a09e7c06d2972e25d38f03",
+      "workspaceEqualsHead": true
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-audio-asr-pilot/partial-overlay-loader-optional-failure-result.json",
+      "workspaceSHA256": "d9667f277df4f56558ec4c95b5e49e6a8dd73d7f028c1ec9f487d4916c2c2232",
+      "localHeadSHA256": "d9667f277df4f56558ec4c95b5e49e6a8dd73d7f028c1ec9f487d4916c2c2232",
+      "workspaceEqualsHead": true
+    }
+  ],
+  "ledgerMarkdownCommitMembership": [
+    {
+      "head": "8dff803cc2f8d1956d5853ef40073c670e265cc0",
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/runtime-media-partition-ledger.md",
+      "trackedInTree": false
+    },
+    {
+      "head": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+      "path": "course-app/docs/resume-20261004/media-closure/asr-evidence/runtime-media-partition-ledger.md",
+      "trackedInTree": true
+    }
+  ],
+  "plannedCasesPerBrowser": 4,
+  "plannedBrowserProjects": [
+    "chromium",
+    "webkit"
+  ],
+  "actualExecutedCIAtPreflight": 0,
+  "plannedScope": "package matrix jobs build fresh dedicated course-app outDir then run reviewed-sentence subset; not an assembled-package test",
+  "artifactNames": [
+    "hsk-flow-package-package-chromium",
+    "hsk-flow-package-package-webkit"
+  ],
+  "artifactReportPath": "course-app/.repro-output/media-reviewed-subset/browser-results.json",
+  "assertions": [
+    "two existing signed sentence IDs only",
+    "natural original-MP3 native audible time range and exact source-frame metadata",
+    "L5 original sentence ordinal 2; no accepted parent or sibling sentence 1",
+    "whole original text and color word-group fallback labels",
+    "checksum rejection keeps old accepted word and full-track fallback",
+    "seek clamp, stop, route change and back navigation"
+  ],
+  "historicalConcurrencyScope": "Independent actual-loader-body delayed real digest, failed digest and optional chunk load rejection evidence plus CI npm unit checks; browser fixture is not an intentionally delayed-digest race test",
+  "humanListeningCertification": false,
+  "newAudioApproval": false
+}

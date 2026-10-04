@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "status": "accepted-new-clean-candidate-package-native-and-consumer-input-scope-not-release",
+  "checkedAtUTC": "2026-10-04T19:12:58.979112+00:00",
+  "scope": "package9+normal-network-legacy3 per engine; independent actual artifact consumers/source closure",
+  "run": {
+    "id": 37226015769,
+    "url": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37226015769",
+    "remoteHead": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+    "tree": "e2c89f9c2029cec09d8a8bbb1315e9cd99ea225c",
+    "localEquivalent": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+    "allSixJobsAPIStatus": "completed/success"
+  },
+  "nativeActualUniqueScope": {
+    "chromium": {
+      "package": 9,
+      "legacyNormalNetwork": 3,
+      "passed": 12,
+      "retries": 0
+    },
+    "webkit": {
+      "package": 9,
+      "legacyNormalNetwork": 3,
+      "passed": 12,
+      "retries": 0
+    },
+    "total": 24,
+    "duplicateIndependentReviewsCountAsNewCases": false
+  },
+  "identicalTwoEngineArtifactConsumers": {
+    "files": 143,
+    "compiledJS": 115,
+    "compiledCSS": 11,
+    "compiledJSON": 6,
+    "newCompiledAssets": 97,
+    "retainedProtectedCompiledAssets": 35,
+    "HTML": 10,
+    "manifest": 1,
+    "actualConsumerVectorSHA256": "7c237a71920f8a8e7f9ed0c57935dc3f8017beee0ad08b651a509d126294a2cf",
+    "entriesDefaultAndExplicitRouting": "covered by actual package9/legacy3; explicit cross-level H2L15/H3L18 reloads accepted; defaults do not level-lock unified engine"
+  },
+  "assembly": {
+    "files": 3894,
+    "frozenPackageFiles": 2778,
+    "inventorySHA256": "7283a25e0d72ea32f570795498ec8661f17ecfc7cdcbf550a062cc4ba54fd7ae",
+    "manifestSHA256": "d1dc3f2c8fa5ffa176ccebfe04551130407404a4ca553c02e9a4fe9ea5b187aa",
+    "sourceSnapshotFiles": 1110,
+    "sourceSnapshotSHA256": "a17b664ceeaf09937b4b53aa2c7877407df81eafa74490ba2014b7d52db18fcb",
+    "sourceDirty": false,
+    "baseline1446": {
+      "protectedPublic": 1380,
+      "unservedDeveloperExclusions": 55,
+      "authorizedEntryOrContentIdentitySlots": 11
+    }
+  },
+  "assetSourceDeclarations": {
+    "originalCrops": 150,
+    "publishedCropPaths": 1200,
+    "auxiliarySVG": 438,
+    "originalMP3": 357,
+    "licensedGlyphs": 671,
+    "glyphOriginProtectedOrCommitted": 271,
+    "glyphOriginLockedNpm": 400,
+    "npmVersion": "2.0.1",
+    "npmTarSHA256": "72baf3d82b114e60d6e40ea05f24d2262a05cd39d544e2f322ba2fceb7beff15",
+    "npmTarLockSHA512Integrity": "verified exact tar bytes",
+    "generatedGlyphProvenanceSHA256": "228410890416b689aa1984969efb6bd63980464e980470b82751594baedf874b"
+  },
+  "staticConsumers": {
+    "resolvedLiteralDependencies": 318,
+    "directSourceByteMatchesForAllBundledJSON": 6,
+    "HTMLAliasTemplatesExact": true,
+    "relativeAssetsAcrossAll10HTML": "actual bytes validated against reconstructed build index",
+    "CSSUrlReferences": 0
+  },
+  "cleanSourceBoundary": {
+    "1110RecordedScopedInputs": "each rehashed from exact immutable candidate Git tree; excludes ignored generated asset copies",
+    "originalH1MP3Input": "93 exact root Git blobs match protected production and media authority SHA/bytes",
+    "glyphGeneratedCopies": "reconstructed from exact committed/protected Git source and integrity-verified locked npm tar; generated proof declaration exactly matched",
+    "futureReleaseScopeGap": "root H1 original audio/glyph inputs are omitted from runtimeSourceScopes. Current clean candidate independently checked; sourceDirty alone cannot attest all future input worktree bytes. Actual isolated function counterexample saved."
+  },
+  "copiedRawEvidence": [
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/chromium-assembly.json",
+      "sha256": "65821c3fea10b6356ae374d0f9b84357239c844a287a6ae1f8f6ef9a4216e6b3",
+      "bytes": 736854
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/chromium-package-native.json",
+      "sha256": "dc9a415077e469a4b295597810d2caac392d310e89b23f3fb26410eabca65dc9",
+      "bytes": 28690
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/chromium-legacy-native.json",
+      "sha256": "dad8c36a11d22828c9256f4a07c67a04c6fd5678b0fd7aae7cf637d1b8930e14",
+      "bytes": 9436
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/webkit-assembly.json",
+      "sha256": "be67ad0d586498d40a393774b4fa4591747000f5ff106239c3bf76624b5b289d",
+      "bytes": 736854
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/webkit-package-native.json",
+      "sha256": "e4a7c79bd9f3d0416ca87a4ab20d941a47dc42f12cef14d9a6559bcb5b1ce383",
+      "bytes": 28682
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/webkit-legacy-native.json",
+      "sha256": "b88921252ba8d14d3fa7b4c36045ffca20d121b0dcdb0b3b8d0ad59f8fa37d11",
+      "bytes": 9422
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/common-unified-release-manifest.json",
+      "sha256": "d1dc3f2c8fa5ffa176ccebfe04551130407404a4ca553c02e9a4fe9ea5b187aa",
+      "bytes": 1127629
+    }
+  ],
+  "otherTaskEvidenceNotCountedHere": [
+    "font2 perengine and Noto visual 68PNG independently reviewed by native_catalogue",
+    "partial4 perengine/events independently reviewed by remaining_media_audit",
+    "shared64+retained35+fresh1 perengine independently reviewed by root/flow workers",
+    "old author22negative/independent27guards/local9 are historical tests; not newly executed on this CI head"
+  ],
+  "limitations": [
+    "Actual complete3894 assembled bytes not downloaded. Actual bytes rehashed143 consumers; omitted media/Git/npm declarations independently reconciled and actual frozen assembler/native execution reports accepted.",
+    "H4 extra-stage session is a synthetic explicit test authorization; classroom password validity is not asserted.",
+    "No full Vietnamese audit, all-human listening, physical-device guarantee, formal16passed or production deployment.",
+    "Future formal release must close the documented original-root build-input identity boundary."
+  ],
+  "evidenceRefs": [
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/STAGE-FILES-uploader.txt",
+      "sha256": "86c8d9bf04243cd8429e0722b0e0bf33e15be6fd6e8cfb14c3d8ea5c409051af",
+      "bytes": 280
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/actual-chromium-package-audit.json",
+      "sha256": "142ae99ccd655f5bd2a6d52e220f88757c0c7253c8373e1e4731b6a4c39394a3",
+      "bytes": 105826
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/actual-run-artifacts.json",
+      "sha256": "5a899f5bec59df2c7aa0cbc73b8f94eb8766b2eab05fbe29fc7937fa015f7970",
+      "bytes": 5476
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/actual-run-jobs.json",
+      "sha256": "00d5b4660efb8e68157113721b73af57eafd5f438af3aa355e64553951e5d5f9",
+      "bytes": 25163
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/actual-webkit-package-audit.json",
+      "sha256": "ea284a69db034c43dc32536ff2d69c08eac106fbd9e6986b31f81ec9722e9241",
+      "bytes": 105830
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/package-chromium-job.log",
+      "sha256": "4a5ed2a973d0d770e20a48cd0fea789c56824119b0b8da19a1ffbfd317a0b131",
+      "bytes": 178046
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/package-webkit-job.log",
+      "sha256": "793bcb1faec5815ea68d8351c35b30d4a2188fbf14513dba404745a8c078e847",
+      "bytes": 271478
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/chromium-assembly.json",
+      "sha256": "65821c3fea10b6356ae374d0f9b84357239c844a287a6ae1f8f6ef9a4216e6b3",
+      "bytes": 736854
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/chromium-legacy-native.json",
+      "sha256": "dad8c36a11d22828c9256f4a07c67a04c6fd5678b0fd7aae7cf637d1b8930e14",
+      "bytes": 9436
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/chromium-package-native.json",
+      "sha256": "dc9a415077e469a4b295597810d2caac392d310e89b23f3fb26410eabca65dc9",
+      "bytes": 28690
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/common-unified-release-manifest.json",
+      "sha256": "d1dc3f2c8fa5ffa176ccebfe04551130407404a4ca553c02e9a4fe9ea5b187aa",
+      "bytes": 1127629
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/webkit-assembly.json",
+      "sha256": "be67ad0d586498d40a393774b4fa4591747000f5ff106239c3bf76624b5b289d",
+      "bytes": 736854
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/webkit-legacy-native.json",
+      "sha256": "b88921252ba8d14d3fa7b4c36045ffca20d121b0dcdb0b3b8d0ad59f8fa37d11",
+      "bytes": 9422
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/reports/webkit-package-native.json",
+      "sha256": "e4a7c79bd9f3d0416ca87a4ab20d941a47dc42f12cef14d9a6559bcb5b1ce383",
+      "bytes": 28682
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/runtime-input-scope-counterexample.json",
+      "sha256": "82833dac91f58582abea4f7bafb6299a82c5ce021dbfebe252a7f169b0fbe74c",
+      "bytes": 1081
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/uploader-delta-parse.log",
+      "sha256": "e9cf665b1e333e14b43fc8d66635019d1214b668beefcdeba3e2bf49a87fc694",
+      "bytes": 283
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/uploader-delta-review.json",
+      "sha256": "8698f9fb751e9746e1350c567756892e4669bdd8494974b9b06e8ca597cc0280",
+      "bytes": 4877
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-flow-package-ci/verify-package-ci.py",
+      "sha256": "c7a9640016748b01f359fe9b9c40430dba57366c1faa4a57ced2edadc3c2f59b",
+      "bytes": 25759
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "requestedHEAD": "8dff803cc2f8d1956d5853ef40073c670e265cc0",
+  "status": "read-only-implementation-readiness-review-not-language-approval",
+  "priorVersionedDesign": "../vi-revision-design/freeze.json",
+  "noProductionChanges": true,
+  "issues": [
+    {
+      "id": "B-P1-H1-bank-identity",
+      "priority": "before-graded-VI-active",
+      "files": [
+        "hsk1-app/src/services/content/listening.ts",
+        "hsk1-app/src/services/content/vocabulary.ts",
+        "hsk1-app/src/domain/vocabulary/mixed-state.ts"
+      ],
+      "actualIssue": "Frozen catalog fingerprints include VI; mixedCardFingerprint includes full raw sourceRecords. A revised catalog/card passed to the original controller invalidates stored identity. wordSenses also reads the raw catalog, independently of textbook word.vn.",
+      "minimumResolution": "Dual raw authority/display DTO using original record/sense ID. Keep the five banks, fingerprints, controller inputs, sourceRecords and media identity intact; separately project wordSenses display.",
+      "pilotCheck": "H1 L4 regular/mixed/review/textbook details agree on the audited owner while old import identity and five bank SHA remain unchanged."
+    },
+    {
+      "id": "B-P2-H1-history-wording",
+      "priority": "before-graded-VI-active",
+      "files": [
+        "hsk1-app/src/domain/types.ts",
+        "hsk1-app/src/services/storage/compatibility.ts",
+        "hsk1-app/src/features/homework/receipt.ts",
+        "hsk1-app/src/features/exercises/archive-data.ts",
+        "hsk1-app/src/features/exercises/archive.ts"
+      ],
+      "actualIssue": "H1 attempts lack full question snapshots. createReceipt receives bank questions separately. Archive choice answer text resolves the saved numeric answer through raw task.options. Global revised wording would relabel old records.",
+      "minimumResolution": "Use prior versioned parallel presentation slots in the same atomic store transaction. Preserve old null binding and raw authority archive. Upgrade current and rollback readers before activation.",
+      "pilotCheck": "Old first/new latest; same time and answer under different display revisions; capped history; quota/retry/reload and paired backup restore. Old archive option index continues to show its original wording."
+    },
+    {
+      "id": "B-P3-original-option-index",
+      "priority": "before-listening-VI-active",
+      "files": [
+        "hsk1-app/src/features/listening/index.ts",
+        "hsk1-app/src/services/content/listening.ts"
+      ],
+      "actualIssue": "current.options is randomized but option.index is the original authority index; feedback resolves the answer through that original index.",
+      "minimumResolution": "Manifest lookup uses question ID plus original index, never visible letter or visible index. Answer values and original ordering remain authority data.",
+      "pilotCheck": "An original index moved to visible B receives the correct revised option and feedback while original grading remains identical."
+    },
+    {
+      "id": "B-P4-H23-old-no-snapshot",
+      "priority": "before-question-VI-active",
+      "files": [
+        "course-app/src/listening-view.ts"
+      ],
+      "actualIssue": "Line162 uses attempt?.questions?.[0] ?? q. An old submitted attempt without snapshot would take the revised current question as if it were historical wording.",
+      "minimumResolution": "Show saved answer with explicit no-snapshot status. Label any current question explanation separately. Do not manufacture historical wording or regrade old answers.",
+      "pilotCheck": "Restore old unsnapshotted submitted round under a synthetic display revision, alongside a snapshotted original first and revised new latest."
+    },
+    {
+      "id": "B-P5-source-context-version",
+      "priority": "before-source-VI-active",
+      "files": [
+        "hsk1-app/src/features/source-activities/index.ts",
+        "hsk1-app/src/services/source-activities/state.ts",
+        "course-app/src/lesson-view.ts",
+        "course-app/src/state.ts",
+        "course-app/src/activity-history.ts"
+      ],
+      "actualIssue": "H1 id@version stores full context; the old archive renders context title/instruction/prompt/fields/options but not figures. H2/3 ActivityRecord stores values/checkedAt/updatedAt without Copy snapshots. Its archivedActivityContext is computed from current lesson as a locator and the UI explicitly says no original question snapshot was saved.",
+      "minimumResolution": "Every changed H1 saved context gets a new version; preserve old context/draft/history. H2/3 wording-only changes preserve value meaning; semantic changes need new owner/field identity. Keep locator labels distinct from historical question claims.",
+      "pilotCheck": "H1 L4 old context/table/options remains original beside revised version. H2/3 source targetRef, field refs and current source column agree, while old locator/values and checkedAt do not imply completion of a new semantic task."
+    },
+    {
+      "id": "B-P6-canonical-local-binding",
+      "priority": "before-word-VI-active",
+      "files": [
+        "course-app/src/content.ts",
+        "course-app/src/lexicon.ts",
+        "course-app/src/lesson-view.ts"
+      ],
+      "actualIssue": "Canonical senseMap controls deduplication, but cards/mixed pool use lesson-local VI/POS. A lexicon-only change misses actual cards. Equal Chinese does not prove equal sense, wording context or person reference.",
+      "minimumResolution": "Expected-value proposals list canonical and every proven sources.wordId owner separately. Distinct contexts and POS remain distinct. H1 official changes use the current 34-change display overlay as parent.",
+      "pilotCheck": "H2 L2/H3 L10 current word card, canonical mapping, mixed card and source column agree on the audited context; legitimate separate senses remain separate."
+    },
+    {
+      "id": "B-P7-SVG-asset-identity",
+      "priority": "before-any-SVG-VI-change",
+      "files": [
+        "course-app/src/lesson-view.ts",
+        "course-app/tools/package-unified.mjs"
+      ],
+      "actualIssue": "412 SVG desc strings are separate resource nodes. Outer img ALT, zoom description and captions use JSON. Editing SVG bytes changes its asset SHA and package identity. External img embedding does not prove native assistive-technology exposure of internal desc.",
+      "minimumResolution": "Audit embedded node and outer metadata as different targets. If revised, produce a new asset SHA and approved manifest; preserve old artifact identity. Do not count internal desc as native visible-body or AT verification.",
+      "pilotCheck": "Affected asset resolves exact new bytes and correct ALT/zoom/caption in native routes; separate asset-node QA from actual visible/AT claims."
+    },
+    {
+      "id": "B-P8-retained-practice-identity",
+      "priority": "before-legacy-bank-VI-change",
+      "files": [
+        "hsk1/app-practice.js",
+        "assets/lesson-practice.js",
+        "hsk3/app-practice.js"
+      ],
+      "actualIssue": "Real fetched banks contain360/360/640 question IDs and original option/answer strings. Legacy grading compares chosen source strings to answer strings. Equal lesson ordinal does not map old bank content to the new48 lessons.",
+      "minimumResolution": "Map a proven counterpart or mark editorial/unmapped. A versioned display adapter preserves original source index/value authority; never blanket change answer text or old storage.",
+      "pilotCheck": "Only proven independently reviewed owners change; all186 Đúng/Sai original options/answer leaves preserve source index and grading. Unmapped legacy items retain pending/editorial disposition."
+    },
+    {
+      "id": "B-P9-dynamic-editorial-copy",
+      "priority": "before-declaring-consumer-closure",
+      "files": [
+        "course-app/src/main.ts",
+        "course-app/src/listening-view.ts",
+        "course-app/src/backup-view.ts",
+        "hsk1-app/src/features/exercises/archive.ts"
+      ],
+      "actualIssue": "498 template producers contain counters/profiles/errors and nested VI labels. Static extraction is not every runtime sentence or route. H4 has no supplied book counterpart.",
+      "minimumResolution": "Review fixed producers/terminology as editorial where appropriate; test representative empty/nonempty/count/error/history branches. Retain unresolved branches and H4-specific unmapped scope without fabricated book pages.",
+      "pilotCheck": "Composed DOM with reviewed labels, zero/one/many counters, failed save and archive state. Imported learner text bypasses active textbook revision."
+    }
+  ],
+  "sourceViewsDisposition": "Final graph uses actual sourceColumnBinding targetRef prefix matching and field target refs; it does not invent a sourceViews property.",
+  "fullCoverageLimit": "Arbitrary saved/imported/learner-entered text is historical or user data, not a current static textbook owner. Preserve it and bypass active revision; the inventory is not a claim to enumerate or rewrite every possible imported string.",
+  "unmappedHSK4Disposition": "H4-specific source rows carry editorial-no-uploaded-HSK4-book-counterpart; shared UI is editorial unless a precise HSK1/2/3 terminology source is later visually established.",
+  "actualConsumerReadInputs": [
+    {
+      "file": "assets/lesson-practice.js",
+      "bytes": 12194,
+      "sourceSHA256": "afd3c2821eba75a839eca240c7b6926003509af66a69e5cd9887ba813dfef9a3",
+      "workingSHA256": "afd3c2821eba75a839eca240c7b6926003509af66a69e5cd9887ba813dfef9a3",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "course-app/src/activity-history.ts",
+      "bytes": 2674,
+      "sourceSHA256": "7edeeacf227f030bcf5377f7f9b364c80c844e37dcc2843e37aa2197d7e1bc46",
+      "workingSHA256": "7edeeacf227f030bcf5377f7f9b364c80c844e37dcc2843e37aa2197d7e1bc46",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "course-app/src/backup-view.ts",
+      "bytes": 12964,
+      "sourceSHA256": "c0da5580179d6aadbb1f22cd1679fa410cf31f413db20f7dd7020e5cd31a779b",
+      "workingSHA256": "c0da5580179d6aadbb1f22cd1679fa410cf31f413db20f7dd7020e5cd31a779b",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "bytes": 2186,
+      "sourceSHA256": "0388a6882b8db4065b56f92526ebfe4ff91d8d3abd8b50fc60086360c0c56f67",
+      "workingSHA256": "0388a6882b8db4065b56f92526ebfe4ff91d8d3abd8b50fc60086360c0c56f67",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "bytes": 40716,
+      "sourceSHA256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "workingSHA256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "course-app/src/lexicon.ts",
+      "bytes": 1341,
+      "sourceSHA256": "eea19bf5871009d76c7af075a53d737ecba9e5587696343407fd391c04dd73bf",
+      "workingSHA256": "eea19bf5871009d76c7af075a53d737ecba9e5587696343407fd391c04dd73bf",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "bytes": 11701,
+      "sourceSHA256": "3c7384db55bf7fba043c76e3ff8120a278f576fec4310a836a1fdfcb9d4a8050",
+      "workingSHA256": "3c7384db55bf7fba043c76e3ff8120a278f576fec4310a836a1fdfcb9d4a8050",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "bytes": 61910,
+      "sourceSHA256": "9f0309622e30f4362132ddfa381b18494de99df3761ae609cd5c60b9bbaa928d",
+      "workingSHA256": "9f0309622e30f4362132ddfa381b18494de99df3761ae609cd5c60b9bbaa928d",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "course-app/src/state.ts",
+      "bytes": 12140,
+      "sourceSHA256": "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c",
+      "workingSHA256": "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "course-app/tools/package-unified.mjs",
+      "bytes": 12485,
+      "sourceSHA256": "acd9c9b664104bd9311dc624c1769d3a0f8c05546cc831aa2e270bddc6983a34",
+      "workingSHA256": "efc2e61e946eb6a53ab2a59e099b0dc349079ea9c4ab4c237fe09da99334976b",
+      "workingMatchesRequestedHEAD": false,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1-app/src/domain/types.ts",
+      "bytes": 1906,
+      "sourceSHA256": "d4dc9527486957232967eb7fd2fc393481560061474cfc753306f154fe7c7601",
+      "workingSHA256": "d4dc9527486957232967eb7fd2fc393481560061474cfc753306f154fe7c7601",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1-app/src/domain/vocabulary/mixed-state.ts",
+      "bytes": 6532,
+      "sourceSHA256": "763a4a30a5eccad4c0d1cc25d743f1d14af013f4235868a398e57b91254f11ac",
+      "workingSHA256": "763a4a30a5eccad4c0d1cc25d743f1d14af013f4235868a398e57b91254f11ac",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive-data.ts",
+      "bytes": 3876,
+      "sourceSHA256": "ddc94ee93ca6235b942769d7876be757d0c171946546c91e7b9cdd86128e9fac",
+      "workingSHA256": "ddc94ee93ca6235b942769d7876be757d0c171946546c91e7b9cdd86128e9fac",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive.ts",
+      "bytes": 13893,
+      "sourceSHA256": "3ce482e147eccf909fd7ec81b42d2cb4b3f0bd740209cd9549416df2d03fdbaf",
+      "workingSHA256": "3ce482e147eccf909fd7ec81b42d2cb4b3f0bd740209cd9549416df2d03fdbaf",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/receipt.ts",
+      "bytes": 6262,
+      "sourceSHA256": "181c78deff63c6b2a9414b57fb8d229a93ac6d3d58e7511dc32e6a41dab7f0be",
+      "workingSHA256": "181c78deff63c6b2a9414b57fb8d229a93ac6d3d58e7511dc32e6a41dab7f0be",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1-app/src/features/listening/index.ts",
+      "bytes": 23495,
+      "sourceSHA256": "9536ff2bb6e3a09f2f9f7acfdb72d465d81e984919edcda528f65c4cfaa627e9",
+      "workingSHA256": "9536ff2bb6e3a09f2f9f7acfdb72d465d81e984919edcda528f65c4cfaa627e9",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1-app/src/features/source-activities/index.ts",
+      "bytes": 19762,
+      "sourceSHA256": "75982f634a8969ff8faf90e15593c33c551e0edde325c3e5d07c921a498d9d1f",
+      "workingSHA256": "75982f634a8969ff8faf90e15593c33c551e0edde325c3e5d07c921a498d9d1f",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1-app/src/services/content/listening.ts",
+      "bytes": 11903,
+      "sourceSHA256": "f3e141a36d98ad7abf1576c5fc4f267a81a696b3f3c98b5708ecfc4c60d344e1",
+      "workingSHA256": "f3e141a36d98ad7abf1576c5fc4f267a81a696b3f3c98b5708ecfc4c60d344e1",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1-app/src/services/content/vocabulary.ts",
+      "bytes": 17105,
+      "sourceSHA256": "11285cbb3907225e79413ab0a902602935b16e312ea7bee9eaaccdb825bd8cbe",
+      "workingSHA256": "11285cbb3907225e79413ab0a902602935b16e312ea7bee9eaaccdb825bd8cbe",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/state.ts",
+      "bytes": 10025,
+      "sourceSHA256": "7678c98fa0d2a53d335971de3f8c9e0346d19d732ac734b99e8191443ac9c34a",
+      "workingSHA256": "7678c98fa0d2a53d335971de3f8c9e0346d19d732ac734b99e8191443ac9c34a",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1-app/src/services/storage/compatibility.ts",
+      "bytes": 43416,
+      "sourceSHA256": "ce624cc1b417586aea6d6c674608d890ff5483652d5e742eb072392cde3cff6f",
+      "workingSHA256": "ce624cc1b417586aea6d6c674608d890ff5483652d5e742eb072392cde3cff6f",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk1/app-practice.js",
+      "bytes": 9176,
+      "sourceSHA256": "84a0cd6063facef50e06f92c1dbe2e4128d126495816565a0143827450f33b4d",
+      "workingSHA256": "84a0cd6063facef50e06f92c1dbe2e4128d126495816565a0143827450f33b4d",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    },
+    {
+      "file": "hsk3/app-practice.js",
+      "bytes": 9416,
+      "sourceSHA256": "141b1c35ffba3ab9dde5f5bd3fce82ca84c5b645f5518b929626f67118300b67",
+      "workingSHA256": "141b1c35ffba3ab9dde5f5bd3fce82ca84c5b645f5518b929626f67118300b67",
+      "workingMatchesRequestedHEAD": true,
+      "readOrigin": "requested-HEAD git blob"
+    }
+  ],
+  "workingDriftObserved": [
+    {
+      "file": "course-app/tools/package-unified.mjs",
+      "bytes": 12485,
+      "sourceSHA256": "acd9c9b664104bd9311dc624c1769d3a0f8c05546cc831aa2e270bddc6983a34",
+      "workingSHA256": "efc2e61e946eb6a53ab2a59e099b0dc349079ea9c4ab4c237fe09da99334976b",
+      "workingMatchesRequestedHEAD": false,
+      "readOrigin": "requested-HEAD git blob"
+    }
+  ]
+}

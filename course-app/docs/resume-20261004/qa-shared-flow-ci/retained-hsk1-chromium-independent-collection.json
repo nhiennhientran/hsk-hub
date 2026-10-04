@@ -1,0 +1,809 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/node_modules/@playwright/test/cli.js",
+      "test",
+      "--list",
+      "--config=course-app/docs/resume-20261004/flow-compat-review/playwright.hsk1-retained.config.ts",
+      "--project=chromium",
+      "--reporter=json"
+    ],
+    "configFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/playwright.hsk1-retained.config.ts",
+    "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "hsk1-preserved.retained.ts"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review/hsk1-retained-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/flow-compat-review",
+        "testIgnore": [],
+        "testMatch": [
+          "hsk1-preserved.retained.ts"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node serve-frozen.mjs",
+      "url": "http://127.0.0.1:18782",
+      "reuseExistingServer": false,
+      "env": {
+        "FLOW_DIST_DIR": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/dist"
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "hsk1-preserved.retained.ts",
+      "file": "hsk1-preserved.retained.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "mixed lessons preserve first and latest scores while wrong-only redoing hides feedback again and removes corrected mistakes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-4e4b583784cdadaa42e7",
+          "file": "../../../../hsk1-app/tests/browser/listening.spec.ts",
+          "line": 199,
+          "column": 1
+        },
+        {
+          "title": "single, mixed and all lessons create exact queues; empty selection and an empty wrong filter preserve the saved round",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-b80de07566a7eb3bf91a",
+          "file": "../../../../hsk1-app/tests/browser/listening.spec.ts",
+          "line": 237,
+          "column": 1
+        },
+        {
+          "title": "reload retains queue, option orders, selected answer, listen count, rate and position without modifying homework, reading or cards",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-2f33e55775c5668ce982",
+          "file": "../../../../hsk1-app/tests/browser/listening.spec.ts",
+          "line": 262,
+          "column": 1
+        },
+        {
+          "title": "loading controls reject early activation, HTTP 503 retries the same route and retired media-map requests cannot mount or save late",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-ebc4cf33168eba084c23",
+          "file": "../../../../hsk1-app/tests/browser/listening.spec.ts",
+          "line": 297,
+          "column": 1
+        },
+        {
+          "title": "native original MP3 segments in lessons 1, 10 and 15 advance, stop within their frozen boundaries and stop when changing questions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-8cd38fecc375a370bdd7",
+          "file": "../../../../hsk1-app/tests/browser/listening.spec.ts",
+          "line": 329,
+          "column": 1
+        },
+        {
+          "title": "pausing a held real MP3 before first playing then resuming counts once; five speeds, ordinary resume and replay keep exact counts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-c3eddaaf857efd25b7a0",
+          "file": "../../../../hsk1-app/tests/browser/listening.spec.ts",
+          "line": 355,
+          "column": 1
+        },
+        {
+          "title": "an MP3 HTTP failure can retry; a superseded delayed response cannot count, start or stop the current native track",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-5e0b9af11e75d2efaf73",
+          "file": "../../../../hsk1-app/tests/browser/listening.spec.ts",
+          "line": 410,
+          "column": 1
+        },
+        {
+          "title": "quota failure preserves submitted listening in memory, exports it after navigation and recovers with a normal retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-5e7f7dbc166c54ac56e9",
+          "file": "../../../../hsk1-app/tests/browser/listening.spec.ts",
+          "line": 449,
+          "column": 1
+        },
+        {
+          "title": "listening settings, native controls and submitted feedback fit four viewport widths with readable Chinese and Vietnamese",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-ad4c574f7bb0bae72273",
+          "file": "../../../../hsk1-app/tests/browser/listening.spec.ts",
+          "line": 487,
+          "column": 1
+        },
+        {
+          "title": "mixed-card preview: direct review and responsive layout at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-3f8a66b9305ad2038bde",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 84,
+          "column": 44
+        },
+        {
+          "title": "mixed-card preview: direct review and responsive layout at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-28013959acb3661fbc1c",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 84,
+          "column": 44
+        },
+        {
+          "title": "mixed-card preview: direct review and responsive layout at 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-af088b8af3351415f573",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 84,
+          "column": 44
+        },
+        {
+          "title": "mixed-card preview: direct review and responsive layout at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-0d9d7b02e14180234f5c",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 84,
+          "column": 44
+        },
+        {
+          "title": "all lessons show 344 sense cards and 319 written forms, deduplicate selection, and apply lesson drafts only on start",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-3ab71c6cc90c7fbb8a5b",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 112,
+          "column": 1
+        },
+        {
+          "title": "a card flips repeatedly with Enter and Space, retains focus and exposes no hidden answer on its front",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-47d2ddf7e687ddcc2c2b",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 144,
+          "column": 1
+        },
+        {
+          "title": "desktop cards flip independently and their separate audio controls do not flip or advance another card",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-a5dd9a9754ce12ba2896",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 171,
+          "column": 1
+        },
+        {
+          "title": "mobile previous and next skip freely, return to fronts and never write mastery or legacy review data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-2b26363272ac9268f045",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 197,
+          "column": 1
+        },
+        {
+          "title": "resize preserves the exact anchor and shuffled order, resets fronts and uses the new page size on next",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-f616c520fe78d5f2c453",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 220,
+          "column": 1
+        },
+        {
+          "title": "reload, route aliases and browser back/forward keep order and anchor while discarding flips and unstarted lesson drafts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-48f64fd2fb31ab5b227b",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 250,
+          "column": 1
+        },
+        {
+          "title": "explicit reshuffle restarts the applied scope without applying a different lesson draft",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-34ebb9c5f70a29d088b4",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 285,
+          "column": 1
+        },
+        {
+          "title": "a legacy all/reverse round stays historical and is never masqueraded as a new mixed round",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-169b76acdecbe6d1c578",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 301,
+          "column": 38
+        },
+        {
+          "title": "a legacy due/reverse round stays historical and is never masqueraded as a new mixed round",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-1f80fd0f8c394045d0e6",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 301,
+          "column": 38
+        },
+        {
+          "title": "a failed save keeps the active in-memory page usable and retries without losing the saved queue",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-228b16c37ac5461d66d3",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 326,
+          "column": 1
+        },
+        {
+          "title": "all 344 shuffled senses remain reachable once with exact Hanzi fronts and pinyin/Vietnamese backs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-562d1effdaee3482c325",
+          "file": "../../../../hsk1-app/tests/browser/mixed-cards.spec.ts",
+          "line": 355,
+          "column": 1
+        },
+        {
+          "title": "nonempty multi-key migration keeps submitted versions, drafts and exact old strings, and excludes authentication",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-379a3496b00b9f06e5cd",
+          "file": "../../../../hsk1-app/tests/browser/storage.spec.ts",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "a downloaded nonempty backup restores identical data in a new context and one import-before recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-7ccbf24f44b3d0d57700",
+          "file": "../../../../hsk1-app/tests/browser/storage.spec.ts",
+          "line": 144,
+          "column": 1
+        },
+        {
+          "title": "broken JSON, wrong schema, unknown IDs, forged fingerprints and scores cannot change saved data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-e2b926891cc5712dbfca",
+          "file": "../../../../hsk1-app/tests/browser/storage.spec.ts",
+          "line": 174,
+          "column": 1
+        },
+        {
+          "title": "two real tabs serialize competing imports and reject a preview after equal-revision raw changes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-cf8cc646f4d0caef4f6f",
+          "file": "../../../../hsk1-app/tests/browser/storage.spec.ts",
+          "line": 203,
+          "column": 1
+        },
+        {
+          "title": "quota and denied-write browser exceptions preserve old data and export the unsaved nonempty candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-d9586268326e5242c633",
+          "file": "../../../../hsk1-app/tests/browser/storage.spec.ts",
+          "line": 247,
+          "column": 1
+        },
+        {
+          "title": "leaving the manager while a real write lock is held cancels the queued import and all late UI writes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-460e8ab1d2de5c519f12",
+          "file": "../../../../hsk1-app/tests/browser/storage.spec.ts",
+          "line": 274,
+          "column": 1
+        },
+        {
+          "title": "legacy source preview names every discovered source including unsupported pilot data and cancel writes nothing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-603d568d0c85eb4e991e",
+          "file": "../../../../hsk1-app/tests/browser/storage.spec.ts",
+          "line": 296,
+          "column": 1
+        },
+        {
+          "title": "scoped reset requires preview confirmation, cancellation preserves data, and recovery restores the exact prior state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-3627d332c9b85196ae95",
+          "file": "../../../../hsk1-app/tests/browser/storage.spec.ts",
+          "line": 310,
+          "column": 1
+        },
+        {
+          "title": "failed reset preserves current state and previous recovery, and leaving aborts a queued reset",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-a68ac8b8b7fb0417f0e1",
+          "file": "../../../../hsk1-app/tests/browser/storage.spec.ts",
+          "line": 352,
+          "column": 1
+        },
+        {
+          "title": "discovering old sources with nonempty current progress adds only missing lessons after explicit confirmation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "5c78510f717b58dc447c-44235b5f3b0552f44a8a",
+          "file": "../../../../hsk1-app/tests/browser/storage.spec.ts",
+          "line": 385,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "complete independent listening course",
+          "file": "../../../../hsk1-app/tests/browser/listening.spec.ts",
+          "line": 147,
+          "column": 6,
+          "specs": [
+            {
+              "title": "all 75 real questions map four shuffled options, hide transcripts before submission and show exact feedback afterward",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "5c78510f717b58dc447c-75489c5f290d6bbed3c6",
+              "file": "../../../../hsk1-app/tests/browser/listening.spec.ts",
+              "line": 149,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T19:01:39.108Z",
+    "duration": 54.391999999999996,
+    "expected": 0,
+    "skipped": 35,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

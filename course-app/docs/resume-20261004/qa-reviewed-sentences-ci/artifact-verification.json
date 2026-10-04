@@ -1,0 +1,114 @@
+{
+  "runId": 37226015769,
+  "remoteHead": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+  "localEquivalent": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+  "treeSHA1": "e2c89f9c2029cec09d8a8bbb1315e9cd99ea225c",
+  "workflowGitBlobSHA1": "840e0845dfd84c4b1c792637ecdbcd2167a54b44",
+  "workflowContentSHA256": "843d4d60770a7a8333a5586dc36d9e58453dda89904e2e3e0e2b453647d1ae9f",
+  "artifacts": [
+    {
+      "project": "chromium",
+      "artifactId": 11311643900,
+      "artifactName": "hsk-flow-package-package-chromium",
+      "runId": 37226015769,
+      "remoteHead": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+      "zipPathTemporary": "/workspace/scratch/28b55072841a/attachments/28b2d3d2-ca20-4b47-bc57-0904bf5c82cb/github-actions-artifact-11311643900.zip",
+      "zipBytes": 6614845,
+      "zipSHA256": "a47b86087ede1a9ed0674dc8ee37aeab225a29905444f1adcbcece2a7f4264af",
+      "matchesGitHubDigest": true,
+      "matchesGitHubSize": true,
+      "allZIPEntriesCRCValid": true,
+      "zipEntriesCount": 194,
+      "reportEntry": "course-app/.repro-output/media-reviewed-subset/browser-results.json",
+      "reportSHA256": "c979938260137d1c63676b730a136aa096413bf43ffefcd27841e5fb2c0af3a9",
+      "sharedExtractionEqualsZIPReport": true,
+      "portableReportEqualsZIPReport": true,
+      "lastRun": {
+        "status": "passed",
+        "failedTests": []
+      },
+      "lastRunStatusPassed": true,
+      "matchesExpectedRunHead": true
+    },
+    {
+      "project": "webkit",
+      "artifactId": 11311798066,
+      "artifactName": "hsk-flow-package-package-webkit",
+      "runId": 37226015769,
+      "remoteHead": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+      "zipPathTemporary": "/workspace/scratch/28b55072841a/attachments/4a486c43-7666-4e99-af94-0d7fb9b83504/github-actions-artifact-11311798066.zip",
+      "zipBytes": 7110716,
+      "zipSHA256": "c3fd3ce822335063e02a5a84693c95b12cece03bb15cc837dc8b36d593784200",
+      "matchesGitHubDigest": true,
+      "matchesGitHubSize": true,
+      "allZIPEntriesCRCValid": true,
+      "zipEntriesCount": 194,
+      "reportEntry": "course-app/.repro-output/media-reviewed-subset/browser-results.json",
+      "reportSHA256": "964261b024fa3ad77c10f951443e59af61a1b9a9d247dd2d747294d48c6939c1",
+      "sharedExtractionEqualsZIPReport": true,
+      "portableReportEqualsZIPReport": true,
+      "lastRun": {
+        "status": "passed",
+        "failedTests": []
+      },
+      "lastRunStatusPassed": true,
+      "matchesExpectedRunHead": true
+    }
+  ],
+  "originalTrackGitBytes": [
+    {
+      "targetId": "hsk2-fltrp-2026:l04:text2:line3",
+      "publicOriginalMP3Path": "course-app/public/course-assets/hsk2/audio/4-3.mp3",
+      "sourceCommit": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+      "sha256": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+      "bytes": 754606,
+      "segmentSourceEvidenceKeys": [
+        "track",
+        "sourceHash",
+        "start",
+        "end",
+        "sourceText",
+        "sourcePinyin",
+        "unit",
+        "sentenceNumber",
+        "verification",
+        "guardedEvidence"
+      ],
+      "sourceFrameRange": [
+        159680,
+        197921
+      ],
+      "sourceRate": 16000,
+      "trackSHAFromSegment": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+      "originalBytesMatchSignedSourceHash": true
+    },
+    {
+      "targetId": "hsk2-fltrp-2026:l05:text2:line8:sentence2",
+      "publicOriginalMP3Path": "course-app/public/course-assets/hsk2/audio/5-3.mp3",
+      "sourceCommit": "4d08a314fd0be96536b32982f4eabe598b8bbd48",
+      "sha256": "7692432ee007f962b2e0d8a76642a0ad69e2696125f74b3572e1e287e249dcbd",
+      "bytes": 992382,
+      "segmentSourceEvidenceKeys": [
+        "track",
+        "sourceHash",
+        "start",
+        "end",
+        "sourceText",
+        "sourcePinyin",
+        "unit",
+        "sentenceNumber",
+        "verification",
+        "guardedEvidence",
+        "parentLineId"
+      ],
+      "sourceFrameRange": [
+        572480,
+        614240
+      ],
+      "sourceRate": 16000,
+      "trackSHAFromSegment": "7692432ee007f962b2e0d8a76642a0ad69e2696125f74b3572e1e287e249dcbd",
+      "originalBytesMatchSignedSourceHash": true
+    }
+  ],
+  "scopeLimit": "Original MP3 bytes hashed directly from the same frozen Git tree. Browser attachment identifies the original URL and actual events; it does not hash each network response and is not a human pronunciation or source-semantic assessment."
+}

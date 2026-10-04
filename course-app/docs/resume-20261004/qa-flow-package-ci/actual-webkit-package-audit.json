@@ -1,0 +1,2607 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "checkedAtUTC": "2026-10-04T19:10:33.246839+00:00",
+  "status": "accepted-actual-clean-package-consumer-and-native-evidence-not-release",
+  "head": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+  "tree": "e2c89f9c2029cec09d8a8bbb1315e9cd99ea225c",
+  "runId": 37226015769,
+  "artifactId": 11311798066,
+  "browser": "webkit",
+  "zip": {
+    "path": "/workspace/scratch/28b55072841a/attachments/4a486c43-7666-4e99-af94-0d7fb9b83504/github-actions-artifact-11311798066.zip",
+    "sha256": "c3fd3ce822335063e02a5a84693c95b12cece03bb15cc837dc8b36d593784200",
+    "bytes": 7110716,
+    "crc": "passed",
+    "uniqueSafeMembers": 194
+  },
+  "source": {
+    "sourceDirty": false,
+    "buildProvenance": "built-from-recorded-worktree",
+    "runtimeFilesRehashedFromExactGit": 1110,
+    "sourceSnapshotSHA256": "a17b664ceeaf09937b4b53aa2c7877407df81eafa74490ba2014b7d52db18fcb"
+  },
+  "assembly": {
+    "reportSHA256": "be67ad0d586498d40a393774b4fa4591747000f5ff106239c3bf76624b5b289d",
+    "assembledFiles": 3894,
+    "packageFiles": 2778,
+    "inventorySHA256": "7283a25e0d72ea32f570795498ec8661f17ecfc7cdcbf550a062cc4ba54fd7ae",
+    "manifestSHA256": "d1dc3f2c8fa5ffa176ccebfe04551130407404a4ca553c02e9a4fe9ea5b187aa",
+    "baselineGitBlobsRehashed": 1446,
+    "protectedPublicDeclaredByteMatches": 1380,
+    "unservedExclusions": 55,
+    "authorizedReplacements": 11
+  },
+  "downloadedConsumers": {
+    "actualRehashedFiles": 143,
+    "compiledAssets": 132,
+    "compiledExtensions": {
+      ".js": 115,
+      ".css": 11,
+      ".json": 6
+    },
+    "htmlEntries": [
+      "index.html",
+      "new-hsk1/index.html",
+      "new-hsk1/hsk1/index.html",
+      "new-hsk1/hsk1/lesson.html",
+      "new-hsk1/hsk1/learning.html",
+      "new-hsk1/hsk1/lesson9-pilot.html",
+      "new-hsk2/index.html",
+      "new-hsk2/hsk2/index.html",
+      "new-hsk3/index.html",
+      "new-hsk3/hsk3/index.html"
+    ],
+    "sourceInputHTMLReconstructedAndSHAValidated": true,
+    "newCompiledAssets": 97,
+    "oldProtectedCompiledAssets": 35,
+    "files": [
+      {
+        "path": "course-engine/assets/archive-BMfTkVw2.css",
+        "bytes": 1934,
+        "sha256": "d50fc8a0bc03a7f042190dd829011eb135eff4305b89ca4410317d1d74207269"
+      },
+      {
+        "path": "course-engine/assets/archive-Bcs1pIMZ.js",
+        "bytes": 20251,
+        "sha256": "22ff3b959ffc0320ab95289f672eed5b5c9dbb227e06546a429517f55d57585a"
+      },
+      {
+        "path": "course-engine/assets/asset-base-DAkFL0yR.js",
+        "bytes": 160,
+        "sha256": "2113321c6b36c08b797463a2839f5ef7702682eda07616a8f37a28a26a5c2d1f"
+      },
+      {
+        "path": "course-engine/assets/audio-segments-hsk2-lessons02-03-DhnzM86H.js",
+        "bytes": 112987,
+        "sha256": "c93f9879a712a6ab7fd2d75a4b022db0aaa3643f20d370ad353adce4e203a2e0"
+      },
+      {
+        "path": "course-engine/assets/audio-segments-hsk2-reviewed-sentences-bwYi0Zbf.js",
+        "bytes": 5118,
+        "sha256": "0119e817392d9f025760faeded680989ceb9379436f6a895c5537cce5cc92ab9"
+      },
+      {
+        "path": "course-engine/assets/audio-segments-pilot-vPaBRnCF.js",
+        "bytes": 101167,
+        "sha256": "b2d8cda0aeac7efc3fde250440156a2497fa6dc8690c940ac98e1cc9d12286a4"
+      },
+      {
+        "path": "course-engine/assets/backup-view-I37Kq41o.js",
+        "bytes": 9026,
+        "sha256": "e2699fed600d1b821040705590d03a327641c65d2cb8a9b5c5191a52e7c1d443"
+      },
+      {
+        "path": "course-engine/assets/bilingual-YzyU8AOp.js",
+        "bytes": 550,
+        "sha256": "1d3486eaf4f448c320b976113efc3c70e1fffd251d96036a62695e09771b9200"
+      },
+      {
+        "path": "course-engine/assets/browser-pair-DJbMzPIe.js",
+        "bytes": 10817,
+        "sha256": "69300bb89025ddcd9a0a06cf7ab243e9e532bbe5ec1c6e5a076a347c791ec1ca"
+      },
+      {
+        "path": "course-engine/assets/catalogue-C_U9rwbD.js",
+        "bytes": 4814,
+        "sha256": "459c0867aca0f0a7fc39319ccda741ce11630fc45bbc1c753ca404dc8ab39afb"
+      },
+      {
+        "path": "course-engine/assets/compatibility-f32bwKOb.js",
+        "bytes": 36189,
+        "sha256": "00494a52bf540ffa9fbd827590fae8ef92b78693dcc2d24f847c0d69e5301e56"
+      },
+      {
+        "path": "course-engine/assets/content-ChH95uYd.js",
+        "bytes": 852809,
+        "sha256": "7ab0329058ffadec4129669015fd79b2d876cea3b604380bb778e02c2a0c951f"
+      },
+      {
+        "path": "course-engine/assets/content-Dtx46D9v.js",
+        "bytes": 868,
+        "sha256": "722ff836ca09f15aa8f215845881245d9489d4cb7430542d4ce269de540eda7e"
+      },
+      {
+        "path": "course-engine/assets/copy-yY9kyqvF.js",
+        "bytes": 18330,
+        "sha256": "61a0b44cf8d418601e624fd7c8c14f173ad6567af252fdc46bd7e1fdea08e4da"
+      },
+      {
+        "path": "course-engine/assets/course-index-BKGnz4SX.json",
+        "bytes": 4870,
+        "sha256": "aeb5db3563e5d606a7b9fd045ae0f7f61994a9b03efd5a96f1b1e9099f482bb0"
+      },
+      {
+        "path": "course-engine/assets/data-panel-BgEWndCN.css",
+        "bytes": 3563,
+        "sha256": "43139a3da66713b11897954317bea2df9c7e28141bc855fc360c62df8f7ef21b"
+      },
+      {
+        "path": "course-engine/assets/data-panel-D0qgpkHA.js",
+        "bytes": 9013,
+        "sha256": "054974de51df477f387d8a5d4ee9796d799148b7d8635b7fb67c0b957c48c7f4"
+      },
+      {
+        "path": "course-engine/assets/dom-Co9YUD_J.js",
+        "bytes": 515,
+        "sha256": "38f02e4ef9c01fca021b2f2ad81ceab11ca348337f623e7093a6ca600020db61"
+      },
+      {
+        "path": "course-engine/assets/engine-BAT6QHsN.js",
+        "bytes": 16100,
+        "sha256": "7fc5a27abae69a82aa8c1a1399867cbe64dd774cc7851a2980818bebff9759ee"
+      },
+      {
+        "path": "course-engine/assets/engine-CBi3sj57.js",
+        "bytes": 5900,
+        "sha256": "b60d98b836d95e191dcc39ce42f5ec9485b3c0f86cae4ee6e70d75f94c73b3ab"
+      },
+      {
+        "path": "course-engine/assets/engine-DJNGzNN8.js",
+        "bytes": 22152,
+        "sha256": "14f10d950a3a02fa4b3880ad7f0f7faec1d78d49f432577fe7511e18da01bcf9"
+      },
+      {
+        "path": "course-engine/assets/hanzi-C186eFG0.js",
+        "bytes": 55111,
+        "sha256": "59d18fd7f4e278180ee81e67b7c65e795cf2301a493030e9d56355930f9c1c6c"
+      },
+      {
+        "path": "course-engine/assets/hanzi-D0sNO2-t.css",
+        "bytes": 2246,
+        "sha256": "1c416a8c4325cab51823890036525153d17c189343ff437c935a614bcf8768a5"
+      },
+      {
+        "path": "course-engine/assets/home-lWTCFjNu.js",
+        "bytes": 4320,
+        "sha256": "e03a717b1936d48a0a0b77d7e6e7d01435f531aca138401cd6c96c340f329356"
+      },
+      {
+        "path": "course-engine/assets/homework-8E-U9jBU.css",
+        "bytes": 8119,
+        "sha256": "7452ac18b71b1de89f9a0f16d6eaa1246b6bcfc66caa46f640861ff8b4cbcc35"
+      },
+      {
+        "path": "course-engine/assets/homework-C7rR7QKa.js",
+        "bytes": 1811,
+        "sha256": "6422eb051a86397075865aecc292579e6a6600ad4f9f0fe31c1b20acccfbe8fb"
+      },
+      {
+        "path": "course-engine/assets/homework-Dt8uSywP.js",
+        "bytes": 35012,
+        "sha256": "e5bd16ba20ddccd6657a1cd6db0d47cb5edfc126cab94c3d9a113723cc782bef"
+      },
+      {
+        "path": "course-engine/assets/homework30-BVBKAbRf.js",
+        "bytes": 613907,
+        "sha256": "85dd10b8fa9330a94e92395842b8fa9ed4ea421f757eac9cd33d3ee6b482cfbd"
+      },
+      {
+        "path": "course-engine/assets/hsk2-lexicon-K822mAIa.js",
+        "bytes": 75894,
+        "sha256": "81fa7021b451c9a13c9933a54fa78e3ad458834658192912e430fe0217a75e05"
+      },
+      {
+        "path": "course-engine/assets/hsk3-lexicon-BbvKIHAe.js",
+        "bytes": 172947,
+        "sha256": "51619802a14471330e363885c168e201d5d79d71838e26dca6fdab2b70cc624b"
+      },
+      {
+        "path": "course-engine/assets/index-CqoucPNO.css",
+        "bytes": 34617,
+        "sha256": "36130c3b77dbeeebeb6843229061aa5e7469ccc29d5e59c01b5a49c45e437796"
+      },
+      {
+        "path": "course-engine/assets/index-CrsSuqGu.css",
+        "bytes": 18472,
+        "sha256": "45cd53adce00b1d0493f849ec22ad65d941855d4ce515c630a56ec9c48e0764f"
+      },
+      {
+        "path": "course-engine/assets/index-DHIMbq_c.js",
+        "bytes": 334935,
+        "sha256": "6c6bfc467b0b7de00490c4f8e96072cf4e022ea184c400f3bbd158a382c4692d"
+      },
+      {
+        "path": "course-engine/assets/index-Dy7SdlFq.js",
+        "bytes": 388417,
+        "sha256": "3b310619af2a9c0923e50cc39c2893a74ea717436b811ed808bebc452a475f55"
+      },
+      {
+        "path": "course-engine/assets/legacy-exercises-Bz3UuW2N.js",
+        "bytes": 326821,
+        "sha256": "da739d5fda6eb23cdcf1a592e492e4d516c3cd91385e1b144cee06585409af3e"
+      },
+      {
+        "path": "course-engine/assets/lesson-01-CZMllnAG.js",
+        "bytes": 48325,
+        "sha256": "c4bcc61349446e5989503f8f3551340d350529f559d50fa79b1adba748b1d453"
+      },
+      {
+        "path": "course-engine/assets/lesson-01-DdgbX36y.js",
+        "bytes": 62020,
+        "sha256": "3dca21642d22d73ab095f2d321a53681176ed9973ab6a4099cb61aa4dff1e005"
+      },
+      {
+        "path": "course-engine/assets/lesson-01-Dvf3P_gy.js",
+        "bytes": 114888,
+        "sha256": "d9c9136c2aad5f285ba20e71d5539e681c81ed47cd81b0299da9621be157bbf9"
+      },
+      {
+        "path": "course-engine/assets/lesson-01-zYhLI88r.js",
+        "bytes": 148389,
+        "sha256": "58dbf96a10f366fe3e2be015a581c7710e6b3930078ae9c5bd1ae36411e07dbb"
+      },
+      {
+        "path": "course-engine/assets/lesson-02-B9N9GytJ.js",
+        "bytes": 64366,
+        "sha256": "870ca1dafdd1a2b25533f166b920cd23aa23e2b6b4cb5fd698e7ef13e104ceed"
+      },
+      {
+        "path": "course-engine/assets/lesson-02-DA1x_4uz.js",
+        "bytes": 119041,
+        "sha256": "54273f1d5f74033cf77fd659660a6d833241c87f6b205f94a9f771107868f3a0"
+      },
+      {
+        "path": "course-engine/assets/lesson-02-DrQHk3rw.js",
+        "bytes": 50378,
+        "sha256": "7e46ae5896cb91379374694cd3139aa9c28dc9509fec32e69cd0d564c271e0f1"
+      },
+      {
+        "path": "course-engine/assets/lesson-02-ipEgC2hZ.js",
+        "bytes": 169526,
+        "sha256": "d045eff7f682e4eda3e21c0877ca178e189ac5df7b39b18e8be6adf940b41929"
+      },
+      {
+        "path": "course-engine/assets/lesson-03-BAxkSQoP.js",
+        "bytes": 123970,
+        "sha256": "81b4090526dbab8734c047ba23287342943c97f34d22c9659451d8f1687519f5"
+      },
+      {
+        "path": "course-engine/assets/lesson-03-C2GvziRz.js",
+        "bytes": 50305,
+        "sha256": "6571ee5443c7772357e9d814e36ce9ab42b6a667b17c64abbb9e51e0d8ff6fb8"
+      },
+      {
+        "path": "course-engine/assets/lesson-03-CdyNGRzB.js",
+        "bytes": 66398,
+        "sha256": "5961cb5b76316b74748c2a9b6fcd344a42176f95b11cda64016b4d8800d35823"
+      },
+      {
+        "path": "course-engine/assets/lesson-03-DZH3nHsV.js",
+        "bytes": 188024,
+        "sha256": "76c6b2a7c9d871f355c84d10057c44695ee77a68d164afb95e724d6ddd69be12"
+      },
+      {
+        "path": "course-engine/assets/lesson-04-3V2R5M0W.js",
+        "bytes": 59094,
+        "sha256": "12c12a6effedef62584fbb91711bbd10d2e65389d160b255d581d9fbab35384e"
+      },
+      {
+        "path": "course-engine/assets/lesson-04-BpJ1_h4u.js",
+        "bytes": 110805,
+        "sha256": "b46dd6613a441f3504f2aa2009d0db4c42c8874bb24ccfbbbe0c994823cee9e6"
+      },
+      {
+        "path": "course-engine/assets/lesson-04-C786PgqZ.js",
+        "bytes": 49227,
+        "sha256": "8df1e39537e761c9621b31e2e4c09e559eaf44356a20ef2415b5feb078218b35"
+      },
+      {
+        "path": "course-engine/assets/lesson-04-jhWwL0K8.js",
+        "bytes": 169189,
+        "sha256": "5ddebd00a2f282137e9452e31d823f4b5203bf1b5d4eee5f29e457cf8adf7751"
+      },
+      {
+        "path": "course-engine/assets/lesson-05-C7gtDgc4.js",
+        "bytes": 63611,
+        "sha256": "3e7226830a72b88db424454011825c4e362acd998133746436d4b24eeaa0b683"
+      },
+      {
+        "path": "course-engine/assets/lesson-05-Cc6sCwM9.js",
+        "bytes": 133884,
+        "sha256": "b4989708b430117c2d93e3102a40afb94ba4f487e57b7aa81d97601b0642d2c7"
+      },
+      {
+        "path": "course-engine/assets/lesson-05-L2eULTQW.js",
+        "bytes": 56437,
+        "sha256": "7142d66bed7b43ad71242cb38faf2b385114e82ffb1d816d0fb9afed877116b2"
+      },
+      {
+        "path": "course-engine/assets/lesson-05-MRwxRg8w.js",
+        "bytes": 183894,
+        "sha256": "7b59396a1720acdde3d6b8a22469356b4dcd2c03fd109ae7ad4fa9966c65799e"
+      },
+      {
+        "path": "course-engine/assets/lesson-06-BR2obn73.js",
+        "bytes": 68681,
+        "sha256": "5d12c5a88d230ba8e85946795390878e385cac02257e3f276373430cf0194e4d"
+      },
+      {
+        "path": "course-engine/assets/lesson-06-CWCnH2pQ.js",
+        "bytes": 56894,
+        "sha256": "8e5955a9d11bc8ceb4daec33136b08c4e7562bcb240f537a36d5a6a3cee26205"
+      },
+      {
+        "path": "course-engine/assets/lesson-06-Cc4P3x8D.js",
+        "bytes": 192917,
+        "sha256": "c3e98324342951fdb38c8d7e0e0351349a285e87e1ba309763b82140d2a0e003"
+      },
+      {
+        "path": "course-engine/assets/lesson-06-CwcguEyw.js",
+        "bytes": 142117,
+        "sha256": "119f7832869f57016f86262698532686e9377ce71722f5e3d7db93103611a816"
+      },
+      {
+        "path": "course-engine/assets/lesson-07-5aB1DaOx.js",
+        "bytes": 49485,
+        "sha256": "d6aa29f81f36f9b7d95d30c5d65b99d91b61cc778a783a53d4d49932659a0147"
+      },
+      {
+        "path": "course-engine/assets/lesson-07-BOKEbadj.js",
+        "bytes": 66430,
+        "sha256": "cddb02e2b7cf53a709f042546329280eaf8ca77d15de650acdba190cf4d7882b"
+      },
+      {
+        "path": "course-engine/assets/lesson-07-CEJ2il4t.js",
+        "bytes": 117945,
+        "sha256": "e8ecbb9936059440eab6e6020eac948f3bb97f3e6a2e462384ae60403c87565a"
+      },
+      {
+        "path": "course-engine/assets/lesson-07-Dq83Ixn2.js",
+        "bytes": 195563,
+        "sha256": "6b23b566875b733b5b44c833a300e3e3ca31c60e1c4f8ad8960283f29252ee5c"
+      },
+      {
+        "path": "course-engine/assets/lesson-08-B9FHkZLA.js",
+        "bytes": 67169,
+        "sha256": "dd5224f6849c5abeeea1d21fc9744b9a7a31e7a5ca874bcb6a1c27baecb3f2dc"
+      },
+      {
+        "path": "course-engine/assets/lesson-08-C9cvqblF.js",
+        "bytes": 123092,
+        "sha256": "2aeb072ae9bb6b1da403c05449d32d1fbdf3c341dad381e46d130c84f291a847"
+      },
+      {
+        "path": "course-engine/assets/lesson-08-DAXOkXiZ.js",
+        "bytes": 170192,
+        "sha256": "cc45179ea4abca80f892627d94efd61e1aad334022632d3e62ea7311c66dd782"
+      },
+      {
+        "path": "course-engine/assets/lesson-08-Gu3kgU-A.js",
+        "bytes": 52586,
+        "sha256": "014bc9b9136cb59ccca905773b1c143a8bb544682de2f35c3de8406dece6716b"
+      },
+      {
+        "path": "course-engine/assets/lesson-09-C28dsahb.js",
+        "bytes": 139886,
+        "sha256": "60138e608f495d90ff78d12d12960215cdc30b8a07eddbfb1a7931a52da5725f"
+      },
+      {
+        "path": "course-engine/assets/lesson-09-C9D0LE8o.js",
+        "bytes": 182524,
+        "sha256": "65246b83d0c61a49a011a0d3b2a0844509fab31e3f056938fae56b5651bda59a"
+      },
+      {
+        "path": "course-engine/assets/lesson-09-CuH-gZTU.js",
+        "bytes": 60315,
+        "sha256": "a4509461df350223d6425d66d106818adbeee061d13e57ac3e5b7c56ae90d1e6"
+      },
+      {
+        "path": "course-engine/assets/lesson-09-DT0-GFRy.js",
+        "bytes": 67099,
+        "sha256": "958f9abab29e4fac9e92a4ec3fd0b1a30c3755705fa0952524a1ced0b88e7fd6"
+      },
+      {
+        "path": "course-engine/assets/lesson-10-CuyRmN_V.js",
+        "bytes": 49714,
+        "sha256": "e7871f17d1848a7894be6d676165496aaee23e081cde6d07989e9ca63a08445a"
+      },
+      {
+        "path": "course-engine/assets/lesson-10-Di7Ok1Wn.js",
+        "bytes": 175688,
+        "sha256": "9aaf9533702d54df071eff20f1dc8081a125dd6f3b8435039f949d8b737823eb"
+      },
+      {
+        "path": "course-engine/assets/lesson-10-Dvtf8ub8.js",
+        "bytes": 64736,
+        "sha256": "4d3f9b523985f72943563ffa47d541eeb3798208e3ff278ca18374180ed9d0ea"
+      },
+      {
+        "path": "course-engine/assets/lesson-10-WlLxaHx3.js",
+        "bytes": 123125,
+        "sha256": "199872fadc8cf0a6b9c9816bc7f781ec9ed907321c3460745f0f97dd418db13a"
+      },
+      {
+        "path": "course-engine/assets/lesson-11-6qDGNP_1.js",
+        "bytes": 128588,
+        "sha256": "dc96e4e88f34211d4d82725fe268590c6c440a3e95afa8f8b464b7e422862bbc"
+      },
+      {
+        "path": "course-engine/assets/lesson-11-CKk1cQSV.js",
+        "bytes": 175119,
+        "sha256": "1b9e86c48eb48d050055fc4f1dd97fa0dcd36c31d51c3d221bb251ba52ae5568"
+      },
+      {
+        "path": "course-engine/assets/lesson-11-D4rZPGBB.js",
+        "bytes": 51626,
+        "sha256": "aa167f46df45201cd0cad44313f7164b9171fb6ab9f9a0a23d8a0203b7f13015"
+      },
+      {
+        "path": "course-engine/assets/lesson-11-DOVD04uW.js",
+        "bytes": 64477,
+        "sha256": "57f294a582901d732fd9b81d3a515c70e060b21e45ff26861e3787ad605d80af"
+      },
+      {
+        "path": "course-engine/assets/lesson-12-D2ecTnox.js",
+        "bytes": 181154,
+        "sha256": "d5af298b3df7bb52e8a6b12305027f93bc9dbde55d78e1deb113769edc7c20d5"
+      },
+      {
+        "path": "course-engine/assets/lesson-12-DvJGY4wP.js",
+        "bytes": 135343,
+        "sha256": "0572c1251482998585670a13af82839b6751cfbf68468e95423bf5c564a5d19c"
+      },
+      {
+        "path": "course-engine/assets/lesson-12-F-Kt3ut2.js",
+        "bytes": 52824,
+        "sha256": "3c66e12e40da4a0cf88f16cde295ad263aeb6162da300454adfaf575b8913416"
+      },
+      {
+        "path": "course-engine/assets/lesson-12-zxY68Bvh.js",
+        "bytes": 70766,
+        "sha256": "614afe0725a7891f81aeeca747b86dc07c7257fec07522f75b21c921d590c6f3"
+      },
+      {
+        "path": "course-engine/assets/lesson-13-2AOJndFF.js",
+        "bytes": 122945,
+        "sha256": "94027a0cb96b6c184e642611d8468ea5a909616e352ef6bc0d1f4bf82f7dfd5a"
+      },
+      {
+        "path": "course-engine/assets/lesson-13-9kw6gs_A.js",
+        "bytes": 61261,
+        "sha256": "2e2dcf52d416b1b65bc3b5426fee75614126fde404f2ff8b953ce2fc25e16c71"
+      },
+      {
+        "path": "course-engine/assets/lesson-13-D1Nsh94T.js",
+        "bytes": 50407,
+        "sha256": "36ab6d31c5b958b79a123698a401a0790e85943e623ad2b250becca596fabd13"
+      },
+      {
+        "path": "course-engine/assets/lesson-13-DdIe_4T7.js",
+        "bytes": 152051,
+        "sha256": "8686c37b4ff7bcedffc242f1d51a6741155d6e0f2d71ed53aa52a9eec806ecee"
+      },
+      {
+        "path": "course-engine/assets/lesson-14-Bq2HvBvn.js",
+        "bytes": 50938,
+        "sha256": "6a1d89c8e95036afc14b82f9a79b98a0470c43a029be61995be0443ba496a200"
+      },
+      {
+        "path": "course-engine/assets/lesson-14-CP3E91w6.js",
+        "bytes": 127717,
+        "sha256": "27cab7a617cf3b2190210bc88755b853bec4d9179989d8943e9f3530d01fdb9a"
+      },
+      {
+        "path": "course-engine/assets/lesson-14-CvzB6jq7.js",
+        "bytes": 59542,
+        "sha256": "7859b484b1e7259a89031e5e51d894e72aa2049752e71c49cd2b72bdc3bad737"
+      },
+      {
+        "path": "course-engine/assets/lesson-14-DzHhiC5r.js",
+        "bytes": 150680,
+        "sha256": "19edf3f0bd4bef95d42566074efedd8095fc605b4fbe6016c48dba30d6ff0021"
+      },
+      {
+        "path": "course-engine/assets/lesson-15-BK0AeZkM.js",
+        "bytes": 56546,
+        "sha256": "722d38041cc13c43ae46260b144fe526ef5d96811c9f379c1dd2a28e9df7c3cd"
+      },
+      {
+        "path": "course-engine/assets/lesson-15-Bt9ELdZZ.js",
+        "bytes": 134132,
+        "sha256": "b935dcd5acc9212c25f0858014aee66d577299e682a2a77b31a400fefbe240fe"
+      },
+      {
+        "path": "course-engine/assets/lesson-15-CpBHhMef.js",
+        "bytes": 68745,
+        "sha256": "5eabdc10000ef35658c505b7fe0fe2708841a2edf81f4360e647b44046b46c9f"
+      },
+      {
+        "path": "course-engine/assets/lesson-15-DBteB5yM.js",
+        "bytes": 185540,
+        "sha256": "dbb23cd809dc2318088daab05d46cc53940e9e9b52862892a510adf5ec8280da"
+      },
+      {
+        "path": "course-engine/assets/lesson-16-CD-_wlwV.js",
+        "bytes": 65705,
+        "sha256": "17cee1a53982b43defca04d8b556c475c269574c603288f89471a14e62073fb6"
+      },
+      {
+        "path": "course-engine/assets/lesson-16-DRtr0ny_.js",
+        "bytes": 149336,
+        "sha256": "4fe10b229b07f2734ce1125cb3004c3fa8c347358832c17d0ab07d7bfcde4255"
+      },
+      {
+        "path": "course-engine/assets/lesson-17-C6FKIUKs.js",
+        "bytes": 63161,
+        "sha256": "789a5e2b2d81a0fc9bffd041d0e7be1b32308d58a976a71a6771faf05b9e557e"
+      },
+      {
+        "path": "course-engine/assets/lesson-17-DbAfN_SL.js",
+        "bytes": 159951,
+        "sha256": "f73ea8979c1e19c4dea1fe8564fd30ce2bcc69316622ce8bbe01b5e2ff832063"
+      },
+      {
+        "path": "course-engine/assets/lesson-18-ABRHRLqY.js",
+        "bytes": 189427,
+        "sha256": "dafe8b03462a462df6960a9b51fa2f412623658c5b82d0ec0a81a9f064f1243d"
+      },
+      {
+        "path": "course-engine/assets/lesson-18-K14lDKRi.js",
+        "bytes": 72480,
+        "sha256": "ff0017a68993485b8272b401a13cebb27b8eda3ff3be096a21784b99410984da"
+      },
+      {
+        "path": "course-engine/assets/listening-BXM9emsG.js",
+        "bytes": 19057,
+        "sha256": "66271385aa94ddc17713e6cb38c41405040597c263572c8cc65a9958ed390ba3"
+      },
+      {
+        "path": "course-engine/assets/listening-Bg4TzGgm.js",
+        "bytes": 16011,
+        "sha256": "ff5de2f5d8179d2091ace9a958a89802a1e4843f144f231899cd0bd3970e96a4"
+      },
+      {
+        "path": "course-engine/assets/listening-BrTa9oFu.js",
+        "bytes": 5535,
+        "sha256": "5d38053702538382db0c3792936a28d180f9f0e743bef19ddb4517b600763559"
+      },
+      {
+        "path": "course-engine/assets/listening-DTyrhIy_.css",
+        "bytes": 5801,
+        "sha256": "89ed3f32c429c08bfaa4e98f4158eb6fe1ca330ad5996fc357021eee8dc44ef0"
+      },
+      {
+        "path": "course-engine/assets/media-references-DD5E_5K_.json",
+        "bytes": 287065,
+        "sha256": "d1c00b9706565fbb398b97490d51a1c3338349c2285c06e7ed8a04a68e2f656e"
+      },
+      {
+        "path": "course-engine/assets/media-references-DyNdsQyY.js",
+        "bytes": 90,
+        "sha256": "61af06ff73f690e3914966250a1554d787c8f734e0c2b0bd60510694157e3662"
+      },
+      {
+        "path": "course-engine/assets/mixed-state-7Oiw2hir.js",
+        "bytes": 3107,
+        "sha256": "e4f06ea03db00d108b7268ea9dcac02ec084035e9b0d97ffd542880029bc0efa"
+      },
+      {
+        "path": "course-engine/assets/pair-panel-DyRXZhOo.js",
+        "bytes": 8413,
+        "sha256": "a6225987e63ec753ff289cc0353864c1e31714520ae63d07243b437b95e99298"
+      },
+      {
+        "path": "course-engine/assets/progress-C0nra-vL.js",
+        "bytes": 3175,
+        "sha256": "6f135b9fe207d8ba0aa96441093dcfa41ece7968948d09780e5b3b6f0c2d5108"
+      },
+      {
+        "path": "course-engine/assets/progress-DgeKDxiU.css",
+        "bytes": 1571,
+        "sha256": "f8ef402f526825fe2cccf5fcc5ed0519f1159a7ce4eda0b46a0c88febd9c0586"
+      },
+      {
+        "path": "course-engine/assets/progress-mNhdDTSh.js",
+        "bytes": 24585,
+        "sha256": "c0e11fb2013427bcfc5a4cbc144b01a63f5f82e7084563157d3482ffd0ede126"
+      },
+      {
+        "path": "course-engine/assets/review-Dw3CJ1qh.js",
+        "bytes": 87,
+        "sha256": "0f76bf34152bd352a7489b324806caab797bd49d26f613cc2923109658fa1413"
+      },
+      {
+        "path": "course-engine/assets/rolldown-runtime-DK3Fl9T5.js",
+        "bytes": 158,
+        "sha256": "a526d1bb3288ef04d001028843220a24b0867a4edf8c685b69506d6525af36ff"
+      },
+      {
+        "path": "course-engine/assets/session-bfGAMATy.js",
+        "bytes": 2329,
+        "sha256": "5e120ee47e1898b4b4d84a6c7167325454dd309d6fd46f700f490dba6c7cf10c"
+      },
+      {
+        "path": "course-engine/assets/source-activities-C-u-PvZD.js",
+        "bytes": 32564,
+        "sha256": "a060e6185209ce9cc2a9694193768635bd0488cb6b7a77da78a404c3f402b006"
+      },
+      {
+        "path": "course-engine/assets/source-activities-Cz6XgW02.css",
+        "bytes": 4930,
+        "sha256": "39452d7796d71e2d7ec8a21fba21c002187e1b8486bc03b995c41f2101d1155f"
+      },
+      {
+        "path": "course-engine/assets/stage2-bank-DOB9KrMv.json",
+        "bytes": 269656,
+        "sha256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3"
+      },
+      {
+        "path": "course-engine/assets/stage3-catalog-BDgGKH7A.js",
+        "bytes": 88,
+        "sha256": "03ae0ef548f81ae114bc5d8bfb0c7f7ead897aea9d80a7dc44c6b52aca59f19c"
+      },
+      {
+        "path": "course-engine/assets/stage3-catalog-CH6Cx7h7.json",
+        "bytes": 384024,
+        "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913"
+      },
+      {
+        "path": "course-engine/assets/store-DqFMKMYi.js",
+        "bytes": 8982,
+        "sha256": "4295030f40362b3c07fc9d64a80d0d5c5b444e2958e87c6f0a3205e13a658393"
+      },
+      {
+        "path": "course-engine/assets/textbook-9u9iXuP4.js",
+        "bytes": 23377,
+        "sha256": "27842749b052d29f95f65502330deaaa0ecc63700cc563768565d3c0c7f73369"
+      },
+      {
+        "path": "course-engine/assets/textbook-BGHTCm5n.css",
+        "bytes": 9575,
+        "sha256": "ab08e1ea1c370eb12e6351fe5ce5a7532d2c072761782535b6f18c2f591e1c5c"
+      },
+      {
+        "path": "course-engine/assets/textbook-BNPI77hK.js",
+        "bytes": 82,
+        "sha256": "2cbf53413b43f72a93154f3c347417d7b917257d4b35939818ba0e541ddd0e22"
+      },
+      {
+        "path": "course-engine/assets/textbook-ZthZsYNM.js",
+        "bytes": 33881,
+        "sha256": "f99df1d29848f90444e90655743074a8e9f5acdf2ed0f8776043e85cb2091342"
+      },
+      {
+        "path": "course-engine/assets/textbook-display-revisions-CGs5GDJK.js",
+        "bytes": 100,
+        "sha256": "ef60f994e02188f970e6ceff85bd3afc0355ae7bfd04ba55fa2ecef8a0f6f7db"
+      },
+      {
+        "path": "course-engine/assets/textbook-display-revisions-DWScioD2.json",
+        "bytes": 26130,
+        "sha256": "3d3e325b587fd3b41fb11a908db6e74a37f2c9d95cac247a663112e71f8f9e55"
+      },
+      {
+        "path": "course-engine/assets/textbook-ksDEYuz_.json",
+        "bytes": 741675,
+        "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7"
+      },
+      {
+        "path": "course-engine/assets/ui-BaCN-TQ1.js",
+        "bytes": 383,
+        "sha256": "e169bd6c686e63b8610c4e43a2307a145a137f27ebfa7927f16a9263d0fefab4"
+      },
+      {
+        "path": "course-engine/assets/view-BYaiqWuX.css",
+        "bytes": 6255,
+        "sha256": "58ed7b3742138d4744d74c97a5044fd181709cfaf1821cde9eb9cd55c717b2d5"
+      },
+      {
+        "path": "course-engine/assets/view-CzWP2RDA.js",
+        "bytes": 23874,
+        "sha256": "9ee9880ea5f02e835252d1496a7e3d4406e84c33f2dbd36316c8ffe33b921191"
+      },
+      {
+        "path": "course-engine/assets/vocabulary-DUdCCQ1C.js",
+        "bytes": 91,
+        "sha256": "48c07781ebf5c97c3c7ae00ac2c5a5c5a77222d49305e428f4e55bd428004fd5"
+      },
+      {
+        "path": "course-engine/unified-release-manifest.json",
+        "bytes": 1127629,
+        "sha256": "d1dc3f2c8fa5ffa176ccebfe04551130407404a4ca553c02e9a4fe9ea5b187aa"
+      },
+      {
+        "path": "index.html",
+        "bytes": 581,
+        "sha256": "f213575e0ed004dcfbd870a2a17afac6a42ba631db5e57e44c61c14e7de8025e"
+      },
+      {
+        "path": "new-hsk1/hsk1/index.html",
+        "bytes": 594,
+        "sha256": "d1295d781e6afd1f70d8692a4a4cb761bd766b6ea9b868071f61434bb1c1d2d0"
+      },
+      {
+        "path": "new-hsk1/hsk1/learning.html",
+        "bytes": 594,
+        "sha256": "d1295d781e6afd1f70d8692a4a4cb761bd766b6ea9b868071f61434bb1c1d2d0"
+      },
+      {
+        "path": "new-hsk1/hsk1/lesson.html",
+        "bytes": 594,
+        "sha256": "d1295d781e6afd1f70d8692a4a4cb761bd766b6ea9b868071f61434bb1c1d2d0"
+      },
+      {
+        "path": "new-hsk1/hsk1/lesson9-pilot.html",
+        "bytes": 594,
+        "sha256": "d1295d781e6afd1f70d8692a4a4cb761bd766b6ea9b868071f61434bb1c1d2d0"
+      },
+      {
+        "path": "new-hsk1/index.html",
+        "bytes": 585,
+        "sha256": "98b9ceca00d6a74b3fce992752d05dcc3798d57b1746c7c7e748f6fbf32b7173"
+      },
+      {
+        "path": "new-hsk2/hsk2/index.html",
+        "bytes": 594,
+        "sha256": "43f9b9608cc6d814db00be09f10e22aa365242c4cb8d9687c116938ae7a3ffd3"
+      },
+      {
+        "path": "new-hsk2/index.html",
+        "bytes": 585,
+        "sha256": "dcdd9e3f75e7052b4246bc518b0fbc8698567ef7d6e77788497cc1cece707440"
+      },
+      {
+        "path": "new-hsk3/hsk3/index.html",
+        "bytes": 594,
+        "sha256": "5b71d553bfe15cef2ff55f183a180e0c5e85faf84e05de61c36baa5e7b28b6f4"
+      },
+      {
+        "path": "new-hsk3/index.html",
+        "bytes": 585,
+        "sha256": "c736150ce46ea3eecdd2d172c0ff7e2e1251269f773cfd4c1f53683a006afcc4"
+      }
+    ],
+    "bundledJSONExactSourceBytes": [
+      {
+        "path": "course-engine/assets/course-index-BKGnz4SX.json",
+        "sourcePath": "hsk1-app/content/course-index.json",
+        "bytes": 4870,
+        "sha256": "aeb5db3563e5d606a7b9fd045ae0f7f61994a9b03efd5a96f1b1e9099f482bb0"
+      },
+      {
+        "path": "course-engine/assets/media-references-DD5E_5K_.json",
+        "sourcePath": "hsk1-app/content/media-references.json",
+        "bytes": 287065,
+        "sha256": "d1c00b9706565fbb398b97490d51a1c3338349c2285c06e7ed8a04a68e2f656e"
+      },
+      {
+        "path": "course-engine/assets/stage2-bank-DOB9KrMv.json",
+        "sourcePath": "hsk1-app/content/stage2-bank.json",
+        "bytes": 269656,
+        "sha256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3"
+      },
+      {
+        "path": "course-engine/assets/stage3-catalog-CH6Cx7h7.json",
+        "sourcePath": "hsk1-app/content/stage3-catalog.json",
+        "bytes": 384024,
+        "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913"
+      },
+      {
+        "path": "course-engine/assets/textbook-display-revisions-DWScioD2.json",
+        "sourcePath": "hsk1-app/content/textbook-display-revisions.json",
+        "bytes": 26130,
+        "sha256": "3d3e325b587fd3b41fb11a908db6e74a37f2c9d95cac247a663112e71f8f9e55"
+      },
+      {
+        "path": "course-engine/assets/textbook-ksDEYuz_.json",
+        "sourcePath": "hsk1-app/content/textbook.json",
+        "bytes": 741675,
+        "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7"
+      }
+    ]
+  },
+  "omittedAssetDeclarationsReconciledToExactGitAndLockedNpm": {
+    "sourceCrops": 150,
+    "cropPathCopies": 1200,
+    "auxiliarySVGs": 438,
+    "originalMP3": 357,
+    "trustedGlyphs": 671,
+    "licensesAndProvenance": 3,
+    "glyphOrigins": {
+      "protected-hsk1-source": 271,
+      "npm:hanzi-writer-data@2.0.1": 400
+    },
+    "npmTarball": {
+      "version": "2.0.1",
+      "integrity": "sha512-nbQwM+MaryGoq7pBMIZLCd3lFq03nXuJuwku1+6UbjL58uU+9OULVcMkoNvNuJSoIV7f1bbPRfD4D/LQa5S7qg==",
+      "actualBytes": 13484680,
+      "actualSHA256": "72baf3d82b114e60d6e40ea05f24d2262a05cd39d544e2f322ba2fceb7beff15"
+    },
+    "generatedProvenanceReconstructedSHA256": "228410890416b689aa1984969efb6bd63980464e980470b82751594baedf874b"
+  },
+  "dependencies": [
+    {
+      "owner": "index.html",
+      "reference": "./course-engine/assets/index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "index.html",
+      "reference": "./course-engine/assets/index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "new-hsk1/index.html",
+      "reference": "../course-engine/assets/index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "new-hsk1/index.html",
+      "reference": "../course-engine/assets/index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "new-hsk1/hsk1/index.html",
+      "reference": "../../course-engine/assets/index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "new-hsk1/hsk1/index.html",
+      "reference": "../../course-engine/assets/index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "new-hsk1/hsk1/lesson.html",
+      "reference": "../../course-engine/assets/index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "new-hsk1/hsk1/lesson.html",
+      "reference": "../../course-engine/assets/index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "new-hsk1/hsk1/learning.html",
+      "reference": "../../course-engine/assets/index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "new-hsk1/hsk1/learning.html",
+      "reference": "../../course-engine/assets/index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "new-hsk1/hsk1/lesson9-pilot.html",
+      "reference": "../../course-engine/assets/index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "new-hsk1/hsk1/lesson9-pilot.html",
+      "reference": "../../course-engine/assets/index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "new-hsk2/index.html",
+      "reference": "../course-engine/assets/index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "new-hsk2/index.html",
+      "reference": "../course-engine/assets/index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "new-hsk2/hsk2/index.html",
+      "reference": "../../course-engine/assets/index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "new-hsk2/hsk2/index.html",
+      "reference": "../../course-engine/assets/index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "new-hsk3/index.html",
+      "reference": "../course-engine/assets/index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "new-hsk3/index.html",
+      "reference": "../course-engine/assets/index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "new-hsk3/hsk3/index.html",
+      "reference": "../../course-engine/assets/index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "new-hsk3/hsk3/index.html",
+      "reference": "../../course-engine/assets/index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "course-engine/assets/listening-Bg4TzGgm.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/listening-Bg4TzGgm.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/listening-Bg4TzGgm.js",
+      "reference": "./engine-DJNGzNN8.js",
+      "target": "course-engine/assets/engine-DJNGzNN8.js"
+    },
+    {
+      "owner": "course-engine/assets/listening-Bg4TzGgm.js",
+      "reference": "./listening-BXM9emsG.js",
+      "target": "course-engine/assets/listening-BXM9emsG.js"
+    },
+    {
+      "owner": "course-engine/assets/listening-Bg4TzGgm.js",
+      "reference": "./listening-BrTa9oFu.js",
+      "target": "course-engine/assets/listening-BrTa9oFu.js"
+    },
+    {
+      "owner": "course-engine/assets/source-activities-C-u-PvZD.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/source-activities-C-u-PvZD.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/source-activities-C-u-PvZD.js",
+      "reference": "./dom-Co9YUD_J.js",
+      "target": "course-engine/assets/dom-Co9YUD_J.js"
+    },
+    {
+      "owner": "course-engine/assets/source-activities-C-u-PvZD.js",
+      "reference": "./content-ChH95uYd.js",
+      "target": "course-engine/assets/content-ChH95uYd.js"
+    },
+    {
+      "owner": "course-engine/assets/source-activities-C-u-PvZD.js",
+      "reference": "./store-DqFMKMYi.js",
+      "target": "course-engine/assets/store-DqFMKMYi.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./data-panel-D0qgpkHA.js",
+      "target": "course-engine/assets/data-panel-D0qgpkHA.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./copy-yY9kyqvF.js",
+      "target": "course-engine/assets/copy-yY9kyqvF.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./catalogue-C_U9rwbD.js",
+      "target": "course-engine/assets/catalogue-C_U9rwbD.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./compatibility-f32bwKOb.js",
+      "target": "course-engine/assets/compatibility-f32bwKOb.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./legacy-exercises-Bz3UuW2N.js",
+      "target": "course-engine/assets/legacy-exercises-Bz3UuW2N.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./rolldown-runtime-DK3Fl9T5.js",
+      "target": "course-engine/assets/rolldown-runtime-DK3Fl9T5.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./engine-BAT6QHsN.js",
+      "target": "course-engine/assets/engine-BAT6QHsN.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./engine-CBi3sj57.js",
+      "target": "course-engine/assets/engine-CBi3sj57.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./engine-DJNGzNN8.js",
+      "target": "course-engine/assets/engine-DJNGzNN8.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./mixed-state-7Oiw2hir.js",
+      "target": "course-engine/assets/mixed-state-7Oiw2hir.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./homework30-BVBKAbRf.js",
+      "target": "course-engine/assets/homework30-BVBKAbRf.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./asset-base-DAkFL0yR.js",
+      "target": "course-engine/assets/asset-base-DAkFL0yR.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./data-panel-BgEWndCN.css",
+      "target": "course-engine/assets/data-panel-BgEWndCN.css"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./progress-mNhdDTSh.js",
+      "target": "course-engine/assets/progress-mNhdDTSh.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./ui-BaCN-TQ1.js",
+      "target": "course-engine/assets/ui-BaCN-TQ1.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-C0nra-vL.js",
+      "reference": "./data-panel-D0qgpkHA.js",
+      "target": "course-engine/assets/data-panel-D0qgpkHA.js"
+    },
+    {
+      "owner": "course-engine/assets/dom-Co9YUD_J.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/dom-Co9YUD_J.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-01-CZMllnAG.js",
+      "target": "course-engine/assets/lesson-01-CZMllnAG.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-02-DrQHk3rw.js",
+      "target": "course-engine/assets/lesson-02-DrQHk3rw.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-03-C2GvziRz.js",
+      "target": "course-engine/assets/lesson-03-C2GvziRz.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-04-C786PgqZ.js",
+      "target": "course-engine/assets/lesson-04-C786PgqZ.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-05-L2eULTQW.js",
+      "target": "course-engine/assets/lesson-05-L2eULTQW.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-06-CWCnH2pQ.js",
+      "target": "course-engine/assets/lesson-06-CWCnH2pQ.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-07-5aB1DaOx.js",
+      "target": "course-engine/assets/lesson-07-5aB1DaOx.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-08-Gu3kgU-A.js",
+      "target": "course-engine/assets/lesson-08-Gu3kgU-A.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-09-CuH-gZTU.js",
+      "target": "course-engine/assets/lesson-09-CuH-gZTU.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-10-CuyRmN_V.js",
+      "target": "course-engine/assets/lesson-10-CuyRmN_V.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-11-D4rZPGBB.js",
+      "target": "course-engine/assets/lesson-11-D4rZPGBB.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-12-F-Kt3ut2.js",
+      "target": "course-engine/assets/lesson-12-F-Kt3ut2.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-13-D1Nsh94T.js",
+      "target": "course-engine/assets/lesson-13-D1Nsh94T.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-14-Bq2HvBvn.js",
+      "target": "course-engine/assets/lesson-14-Bq2HvBvn.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-15-BK0AeZkM.js",
+      "target": "course-engine/assets/lesson-15-BK0AeZkM.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-01-DdgbX36y.js",
+      "target": "course-engine/assets/lesson-01-DdgbX36y.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-02-B9N9GytJ.js",
+      "target": "course-engine/assets/lesson-02-B9N9GytJ.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-03-CdyNGRzB.js",
+      "target": "course-engine/assets/lesson-03-CdyNGRzB.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-04-3V2R5M0W.js",
+      "target": "course-engine/assets/lesson-04-3V2R5M0W.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-05-C7gtDgc4.js",
+      "target": "course-engine/assets/lesson-05-C7gtDgc4.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-06-BR2obn73.js",
+      "target": "course-engine/assets/lesson-06-BR2obn73.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-07-BOKEbadj.js",
+      "target": "course-engine/assets/lesson-07-BOKEbadj.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-08-B9FHkZLA.js",
+      "target": "course-engine/assets/lesson-08-B9FHkZLA.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-09-DT0-GFRy.js",
+      "target": "course-engine/assets/lesson-09-DT0-GFRy.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-10-Dvtf8ub8.js",
+      "target": "course-engine/assets/lesson-10-Dvtf8ub8.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-11-DOVD04uW.js",
+      "target": "course-engine/assets/lesson-11-DOVD04uW.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-12-zxY68Bvh.js",
+      "target": "course-engine/assets/lesson-12-zxY68Bvh.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-13-9kw6gs_A.js",
+      "target": "course-engine/assets/lesson-13-9kw6gs_A.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-14-CvzB6jq7.js",
+      "target": "course-engine/assets/lesson-14-CvzB6jq7.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-15-CpBHhMef.js",
+      "target": "course-engine/assets/lesson-15-CpBHhMef.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-16-CD-_wlwV.js",
+      "target": "course-engine/assets/lesson-16-CD-_wlwV.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-17-C6FKIUKs.js",
+      "target": "course-engine/assets/lesson-17-C6FKIUKs.js"
+    },
+    {
+      "owner": "course-engine/assets/index-Dy7SdlFq.js",
+      "reference": "./lesson-18-K14lDKRi.js",
+      "target": "course-engine/assets/lesson-18-K14lDKRi.js"
+    },
+    {
+      "owner": "course-engine/assets/homework-Dt8uSywP.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/homework-Dt8uSywP.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/homework-Dt8uSywP.js",
+      "reference": "./content-Dtx46D9v.js",
+      "target": "course-engine/assets/content-Dtx46D9v.js"
+    },
+    {
+      "owner": "course-engine/assets/homework-Dt8uSywP.js",
+      "reference": "./engine-BAT6QHsN.js",
+      "target": "course-engine/assets/engine-BAT6QHsN.js"
+    },
+    {
+      "owner": "course-engine/assets/homework-Dt8uSywP.js",
+      "reference": "./engine-CBi3sj57.js",
+      "target": "course-engine/assets/engine-CBi3sj57.js"
+    },
+    {
+      "owner": "course-engine/assets/homework-Dt8uSywP.js",
+      "reference": "./homework-C7rR7QKa.js",
+      "target": "course-engine/assets/homework-C7rR7QKa.js"
+    },
+    {
+      "owner": "course-engine/assets/homework-Dt8uSywP.js",
+      "reference": "./listening-BXM9emsG.js",
+      "target": "course-engine/assets/listening-BXM9emsG.js"
+    },
+    {
+      "owner": "course-engine/assets/homework-Dt8uSywP.js",
+      "reference": "./homework30-BVBKAbRf.js",
+      "target": "course-engine/assets/homework30-BVBKAbRf.js"
+    },
+    {
+      "owner": "course-engine/assets/store-DqFMKMYi.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/store-DqFMKMYi.js",
+      "reference": "./content-ChH95uYd.js",
+      "target": "course-engine/assets/content-ChH95uYd.js"
+    },
+    {
+      "owner": "course-engine/assets/pair-panel-DyRXZhOo.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/pair-panel-DyRXZhOo.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/pair-panel-DyRXZhOo.js",
+      "reference": "./dom-Co9YUD_J.js",
+      "target": "course-engine/assets/dom-Co9YUD_J.js"
+    },
+    {
+      "owner": "course-engine/assets/pair-panel-DyRXZhOo.js",
+      "reference": "./store-DqFMKMYi.js",
+      "target": "course-engine/assets/store-DqFMKMYi.js"
+    },
+    {
+      "owner": "course-engine/assets/pair-panel-DyRXZhOo.js",
+      "reference": "./browser-pair-DJbMzPIe.js",
+      "target": "course-engine/assets/browser-pair-DJbMzPIe.js"
+    },
+    {
+      "owner": "course-engine/assets/legacy-exercises-Bz3UuW2N.js",
+      "reference": "./rolldown-runtime-DK3Fl9T5.js",
+      "target": "course-engine/assets/rolldown-runtime-DK3Fl9T5.js"
+    },
+    {
+      "owner": "course-engine/assets/listening-BrTa9oFu.js",
+      "reference": "stage3-catalog-CH6Cx7h7.json",
+      "target": "course-engine/assets/stage3-catalog-CH6Cx7h7.json"
+    },
+    {
+      "owner": "course-engine/assets/listening-BrTa9oFu.js",
+      "reference": "media-references-DD5E_5K_.json",
+      "target": "course-engine/assets/media-references-DD5E_5K_.json"
+    },
+    {
+      "owner": "course-engine/assets/listening-BrTa9oFu.js",
+      "reference": "./asset-base-DAkFL0yR.js",
+      "target": "course-engine/assets/asset-base-DAkFL0yR.js"
+    },
+    {
+      "owner": "course-engine/assets/listening-BrTa9oFu.js",
+      "reference": "./engine-DJNGzNN8.js",
+      "target": "course-engine/assets/engine-DJNGzNN8.js"
+    },
+    {
+      "owner": "course-engine/assets/content-Dtx46D9v.js",
+      "reference": "course-index-BKGnz4SX.json",
+      "target": "course-engine/assets/course-index-BKGnz4SX.json"
+    },
+    {
+      "owner": "course-engine/assets/vocabulary-DUdCCQ1C.js",
+      "reference": "./view-CzWP2RDA.js",
+      "target": "course-engine/assets/view-CzWP2RDA.js"
+    },
+    {
+      "owner": "course-engine/assets/engine-CBi3sj57.js",
+      "reference": "./engine-BAT6QHsN.js",
+      "target": "course-engine/assets/engine-BAT6QHsN.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./hanzi-C186eFG0.js",
+      "target": "course-engine/assets/hanzi-C186eFG0.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./asset-base-DAkFL0yR.js",
+      "target": "course-engine/assets/asset-base-DAkFL0yR.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./dom-Co9YUD_J.js",
+      "target": "course-engine/assets/dom-Co9YUD_J.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./hanzi-D0sNO2-t.css",
+      "target": "course-engine/assets/hanzi-D0sNO2-t.css"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./home-lWTCFjNu.js",
+      "target": "course-engine/assets/home-lWTCFjNu.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./progress-mNhdDTSh.js",
+      "target": "course-engine/assets/progress-mNhdDTSh.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./legacy-exercises-Bz3UuW2N.js",
+      "target": "course-engine/assets/legacy-exercises-Bz3UuW2N.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./rolldown-runtime-DK3Fl9T5.js",
+      "target": "course-engine/assets/rolldown-runtime-DK3Fl9T5.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./catalogue-C_U9rwbD.js",
+      "target": "course-engine/assets/catalogue-C_U9rwbD.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./engine-BAT6QHsN.js",
+      "target": "course-engine/assets/engine-BAT6QHsN.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./engine-CBi3sj57.js",
+      "target": "course-engine/assets/engine-CBi3sj57.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./copy-yY9kyqvF.js",
+      "target": "course-engine/assets/copy-yY9kyqvF.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./engine-DJNGzNN8.js",
+      "target": "course-engine/assets/engine-DJNGzNN8.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./mixed-state-7Oiw2hir.js",
+      "target": "course-engine/assets/mixed-state-7Oiw2hir.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./homework-C7rR7QKa.js",
+      "target": "course-engine/assets/homework-C7rR7QKa.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./ui-BaCN-TQ1.js",
+      "target": "course-engine/assets/ui-BaCN-TQ1.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./progress-DgeKDxiU.css",
+      "target": "course-engine/assets/progress-DgeKDxiU.css"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./content-Dtx46D9v.js",
+      "target": "course-engine/assets/content-Dtx46D9v.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./textbook-ZthZsYNM.js",
+      "target": "course-engine/assets/textbook-ZthZsYNM.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./textbook-9u9iXuP4.js",
+      "target": "course-engine/assets/textbook-9u9iXuP4.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./content-ChH95uYd.js",
+      "target": "course-engine/assets/content-ChH95uYd.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./textbook-BGHTCm5n.css",
+      "target": "course-engine/assets/textbook-BGHTCm5n.css"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./homework-Dt8uSywP.js",
+      "target": "course-engine/assets/homework-Dt8uSywP.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./listening-BXM9emsG.js",
+      "target": "course-engine/assets/listening-BXM9emsG.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./homework30-BVBKAbRf.js",
+      "target": "course-engine/assets/homework30-BVBKAbRf.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./homework-8E-U9jBU.css",
+      "target": "course-engine/assets/homework-8E-U9jBU.css"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./archive-Bcs1pIMZ.js",
+      "target": "course-engine/assets/archive-Bcs1pIMZ.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./archive-BMfTkVw2.css",
+      "target": "course-engine/assets/archive-BMfTkVw2.css"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./listening-Bg4TzGgm.js",
+      "target": "course-engine/assets/listening-Bg4TzGgm.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./listening-BrTa9oFu.js",
+      "target": "course-engine/assets/listening-BrTa9oFu.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./listening-DTyrhIy_.css",
+      "target": "course-engine/assets/listening-DTyrhIy_.css"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./vocabulary-DUdCCQ1C.js",
+      "target": "course-engine/assets/vocabulary-DUdCCQ1C.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./view-CzWP2RDA.js",
+      "target": "course-engine/assets/view-CzWP2RDA.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./view-BYaiqWuX.css",
+      "target": "course-engine/assets/view-BYaiqWuX.css"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./review-Dw3CJ1qh.js",
+      "target": "course-engine/assets/review-Dw3CJ1qh.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./progress-C0nra-vL.js",
+      "target": "course-engine/assets/progress-C0nra-vL.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./session-bfGAMATy.js",
+      "target": "course-engine/assets/session-bfGAMATy.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./compatibility-f32bwKOb.js",
+      "target": "course-engine/assets/compatibility-f32bwKOb.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./store-DqFMKMYi.js",
+      "target": "course-engine/assets/store-DqFMKMYi.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./browser-pair-DJbMzPIe.js",
+      "target": "course-engine/assets/browser-pair-DJbMzPIe.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./pair-panel-DyRXZhOo.js",
+      "target": "course-engine/assets/pair-panel-DyRXZhOo.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./source-activities-Cz6XgW02.css",
+      "target": "course-engine/assets/source-activities-Cz6XgW02.css"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-01-Dvf3P_gy.js",
+      "target": "course-engine/assets/lesson-01-Dvf3P_gy.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-02-DA1x_4uz.js",
+      "target": "course-engine/assets/lesson-02-DA1x_4uz.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-03-BAxkSQoP.js",
+      "target": "course-engine/assets/lesson-03-BAxkSQoP.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-04-BpJ1_h4u.js",
+      "target": "course-engine/assets/lesson-04-BpJ1_h4u.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-05-Cc6sCwM9.js",
+      "target": "course-engine/assets/lesson-05-Cc6sCwM9.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-06-CwcguEyw.js",
+      "target": "course-engine/assets/lesson-06-CwcguEyw.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-07-CEJ2il4t.js",
+      "target": "course-engine/assets/lesson-07-CEJ2il4t.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-08-C9cvqblF.js",
+      "target": "course-engine/assets/lesson-08-C9cvqblF.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-09-C28dsahb.js",
+      "target": "course-engine/assets/lesson-09-C28dsahb.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-10-WlLxaHx3.js",
+      "target": "course-engine/assets/lesson-10-WlLxaHx3.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-11-6qDGNP_1.js",
+      "target": "course-engine/assets/lesson-11-6qDGNP_1.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-12-DvJGY4wP.js",
+      "target": "course-engine/assets/lesson-12-DvJGY4wP.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-13-2AOJndFF.js",
+      "target": "course-engine/assets/lesson-13-2AOJndFF.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-14-CP3E91w6.js",
+      "target": "course-engine/assets/lesson-14-CP3E91w6.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-15-Bt9ELdZZ.js",
+      "target": "course-engine/assets/lesson-15-Bt9ELdZZ.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-01-zYhLI88r.js",
+      "target": "course-engine/assets/lesson-01-zYhLI88r.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-02-ipEgC2hZ.js",
+      "target": "course-engine/assets/lesson-02-ipEgC2hZ.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-03-DZH3nHsV.js",
+      "target": "course-engine/assets/lesson-03-DZH3nHsV.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-04-jhWwL0K8.js",
+      "target": "course-engine/assets/lesson-04-jhWwL0K8.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-05-MRwxRg8w.js",
+      "target": "course-engine/assets/lesson-05-MRwxRg8w.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-06-Cc4P3x8D.js",
+      "target": "course-engine/assets/lesson-06-Cc4P3x8D.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-07-Dq83Ixn2.js",
+      "target": "course-engine/assets/lesson-07-Dq83Ixn2.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-08-DAXOkXiZ.js",
+      "target": "course-engine/assets/lesson-08-DAXOkXiZ.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-09-C9D0LE8o.js",
+      "target": "course-engine/assets/lesson-09-C9D0LE8o.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-10-Di7Ok1Wn.js",
+      "target": "course-engine/assets/lesson-10-Di7Ok1Wn.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-11-CKk1cQSV.js",
+      "target": "course-engine/assets/lesson-11-CKk1cQSV.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-12-D2ecTnox.js",
+      "target": "course-engine/assets/lesson-12-D2ecTnox.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-13-DdIe_4T7.js",
+      "target": "course-engine/assets/lesson-13-DdIe_4T7.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-14-DzHhiC5r.js",
+      "target": "course-engine/assets/lesson-14-DzHhiC5r.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-15-DBteB5yM.js",
+      "target": "course-engine/assets/lesson-15-DBteB5yM.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-16-DRtr0ny_.js",
+      "target": "course-engine/assets/lesson-16-DRtr0ny_.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-17-DbAfN_SL.js",
+      "target": "course-engine/assets/lesson-17-DbAfN_SL.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./lesson-18-ABRHRLqY.js",
+      "target": "course-engine/assets/lesson-18-ABRHRLqY.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./hsk2-lexicon-K822mAIa.js",
+      "target": "course-engine/assets/hsk2-lexicon-K822mAIa.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./hsk3-lexicon-BbvKIHAe.js",
+      "target": "course-engine/assets/hsk3-lexicon-BbvKIHAe.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./audio-segments-hsk2-lessons02-03-DhnzM86H.js",
+      "target": "course-engine/assets/audio-segments-hsk2-lessons02-03-DhnzM86H.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./audio-segments-hsk2-reviewed-sentences-bwYi0Zbf.js",
+      "target": "course-engine/assets/audio-segments-hsk2-reviewed-sentences-bwYi0Zbf.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./audio-segments-pilot-vPaBRnCF.js",
+      "target": "course-engine/assets/audio-segments-pilot-vPaBRnCF.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./hanzi-C186eFG0.js",
+      "target": "course-engine/assets/hanzi-C186eFG0.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./home-lWTCFjNu.js",
+      "target": "course-engine/assets/home-lWTCFjNu.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./textbook-ZthZsYNM.js",
+      "target": "course-engine/assets/textbook-ZthZsYNM.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./homework-Dt8uSywP.js",
+      "target": "course-engine/assets/homework-Dt8uSywP.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./archive-Bcs1pIMZ.js",
+      "target": "course-engine/assets/archive-Bcs1pIMZ.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./listening-Bg4TzGgm.js",
+      "target": "course-engine/assets/listening-Bg4TzGgm.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./vocabulary-DUdCCQ1C.js",
+      "target": "course-engine/assets/vocabulary-DUdCCQ1C.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./review-Dw3CJ1qh.js",
+      "target": "course-engine/assets/review-Dw3CJ1qh.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./progress-C0nra-vL.js",
+      "target": "course-engine/assets/progress-C0nra-vL.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./session-bfGAMATy.js",
+      "target": "course-engine/assets/session-bfGAMATy.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./browser-pair-DJbMzPIe.js",
+      "target": "course-engine/assets/browser-pair-DJbMzPIe.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./pair-panel-DyRXZhOo.js",
+      "target": "course-engine/assets/pair-panel-DyRXZhOo.js"
+    },
+    {
+      "owner": "course-engine/assets/index-DHIMbq_c.js",
+      "reference": "./backup-view-I37Kq41o.js",
+      "target": "course-engine/assets/backup-view-I37Kq41o.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-BNPI77hK.js",
+      "reference": "textbook-ksDEYuz_.json",
+      "target": "course-engine/assets/textbook-ksDEYuz_.json"
+    },
+    {
+      "owner": "course-engine/assets/textbook-9u9iXuP4.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-9u9iXuP4.js",
+      "reference": "./asset-base-DAkFL0yR.js",
+      "target": "course-engine/assets/asset-base-DAkFL0yR.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-9u9iXuP4.js",
+      "reference": "./textbook-BNPI77hK.js",
+      "target": "course-engine/assets/textbook-BNPI77hK.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-9u9iXuP4.js",
+      "reference": "./media-references-DyNdsQyY.js",
+      "target": "course-engine/assets/media-references-DyNdsQyY.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-9u9iXuP4.js",
+      "reference": "./stage3-catalog-BDgGKH7A.js",
+      "target": "course-engine/assets/stage3-catalog-BDgGKH7A.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-9u9iXuP4.js",
+      "reference": "./textbook-display-revisions-CGs5GDJK.js",
+      "target": "course-engine/assets/textbook-display-revisions-CGs5GDJK.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-mNhdDTSh.js",
+      "reference": "stage3-catalog-CH6Cx7h7.json",
+      "target": "course-engine/assets/stage3-catalog-CH6Cx7h7.json"
+    },
+    {
+      "owner": "course-engine/assets/progress-mNhdDTSh.js",
+      "reference": "./legacy-exercises-Bz3UuW2N.js",
+      "target": "course-engine/assets/legacy-exercises-Bz3UuW2N.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-mNhdDTSh.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-mNhdDTSh.js",
+      "reference": "./catalogue-C_U9rwbD.js",
+      "target": "course-engine/assets/catalogue-C_U9rwbD.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-mNhdDTSh.js",
+      "reference": "./engine-BAT6QHsN.js",
+      "target": "course-engine/assets/engine-BAT6QHsN.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-mNhdDTSh.js",
+      "reference": "./engine-CBi3sj57.js",
+      "target": "course-engine/assets/engine-CBi3sj57.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-mNhdDTSh.js",
+      "reference": "./copy-yY9kyqvF.js",
+      "target": "course-engine/assets/copy-yY9kyqvF.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-mNhdDTSh.js",
+      "reference": "./engine-DJNGzNN8.js",
+      "target": "course-engine/assets/engine-DJNGzNN8.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-mNhdDTSh.js",
+      "reference": "./mixed-state-7Oiw2hir.js",
+      "target": "course-engine/assets/mixed-state-7Oiw2hir.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-mNhdDTSh.js",
+      "reference": "./homework-C7rR7QKa.js",
+      "target": "course-engine/assets/homework-C7rR7QKa.js"
+    },
+    {
+      "owner": "course-engine/assets/progress-mNhdDTSh.js",
+      "reference": "./ui-BaCN-TQ1.js",
+      "target": "course-engine/assets/ui-BaCN-TQ1.js"
+    },
+    {
+      "owner": "course-engine/assets/browser-pair-DJbMzPIe.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/browser-pair-DJbMzPIe.js",
+      "reference": "./store-DqFMKMYi.js",
+      "target": "course-engine/assets/store-DqFMKMYi.js"
+    },
+    {
+      "owner": "course-engine/assets/copy-yY9kyqvF.js",
+      "reference": "./catalogue-C_U9rwbD.js",
+      "target": "course-engine/assets/catalogue-C_U9rwbD.js"
+    },
+    {
+      "owner": "course-engine/assets/hanzi-C186eFG0.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/hanzi-C186eFG0.js",
+      "reference": "./asset-base-DAkFL0yR.js",
+      "target": "course-engine/assets/asset-base-DAkFL0yR.js"
+    },
+    {
+      "owner": "course-engine/assets/hanzi-C186eFG0.js",
+      "reference": "./dom-Co9YUD_J.js",
+      "target": "course-engine/assets/dom-Co9YUD_J.js"
+    },
+    {
+      "owner": "course-engine/assets/session-bfGAMATy.js",
+      "reference": "./browser-pair-DJbMzPIe.js",
+      "target": "course-engine/assets/browser-pair-DJbMzPIe.js"
+    },
+    {
+      "owner": "course-engine/assets/session-bfGAMATy.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/session-bfGAMATy.js",
+      "reference": "./index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "course-engine/assets/session-bfGAMATy.js",
+      "reference": "./store-DqFMKMYi.js",
+      "target": "course-engine/assets/store-DqFMKMYi.js"
+    },
+    {
+      "owner": "course-engine/assets/session-bfGAMATy.js",
+      "reference": "./content-ChH95uYd.js",
+      "target": "course-engine/assets/content-ChH95uYd.js"
+    },
+    {
+      "owner": "course-engine/assets/session-bfGAMATy.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/session-bfGAMATy.js",
+      "reference": "./compatibility-f32bwKOb.js",
+      "target": "course-engine/assets/compatibility-f32bwKOb.js"
+    },
+    {
+      "owner": "course-engine/assets/session-bfGAMATy.js",
+      "reference": "./store-DqFMKMYi.js",
+      "target": "course-engine/assets/store-DqFMKMYi.js"
+    },
+    {
+      "owner": "course-engine/assets/session-bfGAMATy.js",
+      "reference": "./browser-pair-DJbMzPIe.js",
+      "target": "course-engine/assets/browser-pair-DJbMzPIe.js"
+    },
+    {
+      "owner": "course-engine/assets/backup-view-I37Kq41o.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/stage3-catalog-BDgGKH7A.js",
+      "reference": "stage3-catalog-CH6Cx7h7.json",
+      "target": "course-engine/assets/stage3-catalog-CH6Cx7h7.json"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./source-activities-C-u-PvZD.js",
+      "target": "course-engine/assets/source-activities-C-u-PvZD.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./dom-Co9YUD_J.js",
+      "target": "course-engine/assets/dom-Co9YUD_J.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./content-ChH95uYd.js",
+      "target": "course-engine/assets/content-ChH95uYd.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./store-DqFMKMYi.js",
+      "target": "course-engine/assets/store-DqFMKMYi.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./source-activities-Cz6XgW02.css",
+      "target": "course-engine/assets/source-activities-Cz6XgW02.css"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./asset-base-DAkFL0yR.js",
+      "target": "course-engine/assets/asset-base-DAkFL0yR.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./dom-Co9YUD_J.js",
+      "target": "course-engine/assets/dom-Co9YUD_J.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./content-Dtx46D9v.js",
+      "target": "course-engine/assets/content-Dtx46D9v.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./textbook-9u9iXuP4.js",
+      "target": "course-engine/assets/textbook-9u9iXuP4.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./content-ChH95uYd.js",
+      "target": "course-engine/assets/content-ChH95uYd.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./hanzi-C186eFG0.js",
+      "target": "course-engine/assets/hanzi-C186eFG0.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-ZthZsYNM.js",
+      "reference": "./source-activities-C-u-PvZD.js",
+      "target": "course-engine/assets/source-activities-C-u-PvZD.js"
+    },
+    {
+      "owner": "course-engine/assets/archive-Bcs1pIMZ.js",
+      "reference": "./homework-C7rR7QKa.js",
+      "target": "course-engine/assets/homework-C7rR7QKa.js"
+    },
+    {
+      "owner": "course-engine/assets/archive-Bcs1pIMZ.js",
+      "reference": "./rolldown-runtime-DK3Fl9T5.js",
+      "target": "course-engine/assets/rolldown-runtime-DK3Fl9T5.js"
+    },
+    {
+      "owner": "course-engine/assets/archive-Bcs1pIMZ.js",
+      "reference": "./engine-BAT6QHsN.js",
+      "target": "course-engine/assets/engine-BAT6QHsN.js"
+    },
+    {
+      "owner": "course-engine/assets/archive-Bcs1pIMZ.js",
+      "reference": "./legacy-exercises-Bz3UuW2N.js",
+      "target": "course-engine/assets/legacy-exercises-Bz3UuW2N.js"
+    },
+    {
+      "owner": "course-engine/assets/archive-Bcs1pIMZ.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/archive-Bcs1pIMZ.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/archive-Bcs1pIMZ.js",
+      "reference": "./catalogue-C_U9rwbD.js",
+      "target": "course-engine/assets/catalogue-C_U9rwbD.js"
+    },
+    {
+      "owner": "course-engine/assets/archive-Bcs1pIMZ.js",
+      "reference": "./dom-Co9YUD_J.js",
+      "target": "course-engine/assets/dom-Co9YUD_J.js"
+    },
+    {
+      "owner": "course-engine/assets/archive-Bcs1pIMZ.js",
+      "reference": "./homework-C7rR7QKa.js",
+      "target": "course-engine/assets/homework-C7rR7QKa.js"
+    },
+    {
+      "owner": "course-engine/assets/archive-Bcs1pIMZ.js",
+      "reference": "./legacy-exercises-Bz3UuW2N.js",
+      "target": "course-engine/assets/legacy-exercises-Bz3UuW2N.js"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "stage2-bank-DOB9KrMv.json",
+      "target": "course-engine/assets/stage2-bank-DOB9KrMv.json"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "stage3-catalog-CH6Cx7h7.json",
+      "target": "course-engine/assets/stage3-catalog-CH6Cx7h7.json"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "textbook-ksDEYuz_.json",
+      "target": "course-engine/assets/textbook-ksDEYuz_.json"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "./legacy-exercises-Bz3UuW2N.js",
+      "target": "course-engine/assets/legacy-exercises-Bz3UuW2N.js"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "./catalogue-C_U9rwbD.js",
+      "target": "course-engine/assets/catalogue-C_U9rwbD.js"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "./engine-BAT6QHsN.js",
+      "target": "course-engine/assets/engine-BAT6QHsN.js"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "./engine-CBi3sj57.js",
+      "target": "course-engine/assets/engine-CBi3sj57.js"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "./copy-yY9kyqvF.js",
+      "target": "course-engine/assets/copy-yY9kyqvF.js"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "./engine-DJNGzNN8.js",
+      "target": "course-engine/assets/engine-DJNGzNN8.js"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "./mixed-state-7Oiw2hir.js",
+      "target": "course-engine/assets/mixed-state-7Oiw2hir.js"
+    },
+    {
+      "owner": "course-engine/assets/compatibility-f32bwKOb.js",
+      "reference": "./homework30-BVBKAbRf.js",
+      "target": "course-engine/assets/homework30-BVBKAbRf.js"
+    },
+    {
+      "owner": "course-engine/assets/mixed-state-7Oiw2hir.js",
+      "reference": "./engine-DJNGzNN8.js",
+      "target": "course-engine/assets/engine-DJNGzNN8.js"
+    },
+    {
+      "owner": "course-engine/assets/media-references-DyNdsQyY.js",
+      "reference": "media-references-DD5E_5K_.json",
+      "target": "course-engine/assets/media-references-DD5E_5K_.json"
+    },
+    {
+      "owner": "course-engine/assets/ui-BaCN-TQ1.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/ui-BaCN-TQ1.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/homework-C7rR7QKa.js",
+      "reference": "stage2-bank-DOB9KrMv.json",
+      "target": "course-engine/assets/stage2-bank-DOB9KrMv.json"
+    },
+    {
+      "owner": "course-engine/assets/homework-C7rR7QKa.js",
+      "reference": "./rolldown-runtime-DK3Fl9T5.js",
+      "target": "course-engine/assets/rolldown-runtime-DK3Fl9T5.js"
+    },
+    {
+      "owner": "course-engine/assets/homework-C7rR7QKa.js",
+      "reference": "./engine-BAT6QHsN.js",
+      "target": "course-engine/assets/engine-BAT6QHsN.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./pair-panel-DyRXZhOo.js",
+      "target": "course-engine/assets/pair-panel-DyRXZhOo.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./index-CqoucPNO.css",
+      "target": "course-engine/assets/index-CqoucPNO.css"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./dom-Co9YUD_J.js",
+      "target": "course-engine/assets/dom-Co9YUD_J.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./store-DqFMKMYi.js",
+      "target": "course-engine/assets/store-DqFMKMYi.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./content-ChH95uYd.js",
+      "target": "course-engine/assets/content-ChH95uYd.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./browser-pair-DJbMzPIe.js",
+      "target": "course-engine/assets/browser-pair-DJbMzPIe.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./source-activities-Cz6XgW02.css",
+      "target": "course-engine/assets/source-activities-Cz6XgW02.css"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./copy-yY9kyqvF.js",
+      "target": "course-engine/assets/copy-yY9kyqvF.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./compatibility-f32bwKOb.js",
+      "target": "course-engine/assets/compatibility-f32bwKOb.js"
+    },
+    {
+      "owner": "course-engine/assets/data-panel-D0qgpkHA.js",
+      "reference": "./pair-panel-DyRXZhOo.js",
+      "target": "course-engine/assets/pair-panel-DyRXZhOo.js"
+    },
+    {
+      "owner": "course-engine/assets/homework30-BVBKAbRf.js",
+      "reference": "./asset-base-DAkFL0yR.js",
+      "target": "course-engine/assets/asset-base-DAkFL0yR.js"
+    },
+    {
+      "owner": "course-engine/assets/homework30-BVBKAbRf.js",
+      "reference": "./engine-CBi3sj57.js",
+      "target": "course-engine/assets/engine-CBi3sj57.js"
+    },
+    {
+      "owner": "course-engine/assets/view-CzWP2RDA.js",
+      "reference": "stage3-catalog-CH6Cx7h7.json",
+      "target": "course-engine/assets/stage3-catalog-CH6Cx7h7.json"
+    },
+    {
+      "owner": "course-engine/assets/view-CzWP2RDA.js",
+      "reference": "media-references-DD5E_5K_.json",
+      "target": "course-engine/assets/media-references-DD5E_5K_.json"
+    },
+    {
+      "owner": "course-engine/assets/view-CzWP2RDA.js",
+      "reference": "textbook-ksDEYuz_.json",
+      "target": "course-engine/assets/textbook-ksDEYuz_.json"
+    },
+    {
+      "owner": "course-engine/assets/view-CzWP2RDA.js",
+      "reference": "textbook-display-revisions-DWScioD2.json",
+      "target": "course-engine/assets/textbook-display-revisions-DWScioD2.json"
+    },
+    {
+      "owner": "course-engine/assets/view-CzWP2RDA.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/view-CzWP2RDA.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/view-CzWP2RDA.js",
+      "reference": "./asset-base-DAkFL0yR.js",
+      "target": "course-engine/assets/asset-base-DAkFL0yR.js"
+    },
+    {
+      "owner": "course-engine/assets/view-CzWP2RDA.js",
+      "reference": "./mixed-state-7Oiw2hir.js",
+      "target": "course-engine/assets/mixed-state-7Oiw2hir.js"
+    },
+    {
+      "owner": "course-engine/assets/view-CzWP2RDA.js",
+      "reference": "./ui-BaCN-TQ1.js",
+      "target": "course-engine/assets/ui-BaCN-TQ1.js"
+    },
+    {
+      "owner": "course-engine/assets/view-CzWP2RDA.js",
+      "reference": "./listening-BrTa9oFu.js",
+      "target": "course-engine/assets/listening-BrTa9oFu.js"
+    },
+    {
+      "owner": "course-engine/assets/view-CzWP2RDA.js",
+      "reference": "./textbook-9u9iXuP4.js",
+      "target": "course-engine/assets/textbook-9u9iXuP4.js"
+    },
+    {
+      "owner": "course-engine/assets/home-lWTCFjNu.js",
+      "reference": "./index-DHIMbq_c.js",
+      "target": "course-engine/assets/index-DHIMbq_c.js"
+    },
+    {
+      "owner": "course-engine/assets/home-lWTCFjNu.js",
+      "reference": "./bilingual-YzyU8AOp.js",
+      "target": "course-engine/assets/bilingual-YzyU8AOp.js"
+    },
+    {
+      "owner": "course-engine/assets/home-lWTCFjNu.js",
+      "reference": "./progress-mNhdDTSh.js",
+      "target": "course-engine/assets/progress-mNhdDTSh.js"
+    },
+    {
+      "owner": "course-engine/assets/home-lWTCFjNu.js",
+      "reference": "./content-Dtx46D9v.js",
+      "target": "course-engine/assets/content-Dtx46D9v.js"
+    },
+    {
+      "owner": "course-engine/assets/home-lWTCFjNu.js",
+      "reference": "./ui-BaCN-TQ1.js",
+      "target": "course-engine/assets/ui-BaCN-TQ1.js"
+    },
+    {
+      "owner": "course-engine/assets/review-Dw3CJ1qh.js",
+      "reference": "./view-CzWP2RDA.js",
+      "target": "course-engine/assets/view-CzWP2RDA.js"
+    },
+    {
+      "owner": "course-engine/assets/textbook-display-revisions-CGs5GDJK.js",
+      "reference": "textbook-display-revisions-DWScioD2.json",
+      "target": "course-engine/assets/textbook-display-revisions-DWScioD2.json"
+    }
+  ],
+  "actualNative": {
+    "package": {
+      "sha256": "e4a7c79bd9f3d0416ca87a4ab20d941a47dc42f12cef14d9a6559bcb5b1ce383",
+      "stats": {
+        "startTime": "2026-10-04T18:52:21.289Z",
+        "duration": 10797.765000000001,
+        "expected": 9,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "head": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+      "cases": [
+        {
+          "project": "webkit",
+          "file": "unified-source.spec.ts",
+          "title": "unified packaged entry portal loads actual source crops with nonempty legacy state",
+          "status": "passed",
+          "retry": 0,
+          "attachments": [
+            {
+              "name": "packaged-entry-original-images.json",
+              "contentType": "application/json",
+              "body": "eyJlbnRyeSI6ImluZGV4Lmh0bWwiLCJ1cmxzIjpbImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDEucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDQucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA2LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtdGV4dDIucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXRleHQzLnBuZyJdLCJsZXNzb24iOjR9"
+            }
+          ]
+        },
+        {
+          "project": "webkit",
+          "file": "unified-source.spec.ts",
+          "title": "unified packaged entry new-hsk1 loads actual source crops with nonempty legacy state",
+          "status": "passed",
+          "retry": 0,
+          "attachments": [
+            {
+              "name": "packaged-entry-original-images.json",
+              "contentType": "application/json",
+              "body": "eyJlbnRyeSI6Im5ldy1oc2sxL2luZGV4Lmh0bWwiLCJ1cmxzIjpbImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDEucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDQucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA2LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtdGV4dDIucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXRleHQzLnBuZyJdLCJsZXNzb24iOjR9"
+            }
+          ]
+        },
+        {
+          "project": "webkit",
+          "file": "unified-source.spec.ts",
+          "title": "unified packaged entry new-hsk1/hsk1 loads actual source crops with nonempty legacy state",
+          "status": "passed",
+          "retry": 0,
+          "attachments": [
+            {
+              "name": "packaged-entry-original-images.json",
+              "contentType": "application/json",
+              "body": "eyJlbnRyeSI6Im5ldy1oc2sxL2hzazEvaW5kZXguaHRtbCIsInVybHMiOlsiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL2hzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL2hzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDYucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL2hzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wMS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMS9oc2sxL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXBpY3R1cmUtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2sxL2hzazEvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wNC5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0Mi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazEvaHNrMS9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0My5wbmciXSwibGVzc29uIjo0fQ=="
+            }
+          ]
+        },
+        {
+          "project": "webkit",
+          "file": "unified-source.spec.ts",
+          "title": "unified packaged entry new-hsk2 loads actual source crops with nonempty legacy state",
+          "status": "passed",
+          "retry": 0,
+          "attachments": [
+            {
+              "name": "packaged-entry-original-images.json",
+              "contentType": "application/json",
+              "body": "eyJlbnRyeSI6Im5ldy1oc2syL2luZGV4Lmh0bWwiLCJ1cmxzIjpbImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDEucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDQucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA2LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtdGV4dDIucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXRleHQzLnBuZyJdLCJsZXNzb24iOjR9"
+            }
+          ]
+        },
+        {
+          "project": "webkit",
+          "file": "unified-source.spec.ts",
+          "title": "unified packaged entry new-hsk2/hsk2 loads actual source crops with nonempty legacy state",
+          "status": "passed",
+          "retry": 0,
+          "attachments": [
+            {
+              "name": "packaged-entry-original-images.json",
+              "contentType": "application/json",
+              "body": "eyJlbnRyeSI6Im5ldy1oc2syL2hzazIvaW5kZXguaHRtbCIsInVybHMiOlsiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL2hzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL2hzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDYucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL2hzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wMS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMi9oc2syL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXBpY3R1cmUtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2syL2hzazIvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wNC5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0Mi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazIvaHNrMi9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0My5wbmciXSwibGVzc29uIjo0fQ=="
+            }
+          ]
+        },
+        {
+          "project": "webkit",
+          "file": "unified-source.spec.ts",
+          "title": "unified packaged entry new-hsk3 loads actual source crops with nonempty legacy state",
+          "status": "passed",
+          "retry": 0,
+          "attachments": [
+            {
+              "name": "packaged-entry-original-images.json",
+              "contentType": "application/json",
+              "body": "eyJlbnRyeSI6Im5ldy1oc2szL2luZGV4Lmh0bWwiLCJ1cmxzIjpbImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDEucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDQucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA2LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAzLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtdGV4dDIucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXRleHQzLnBuZyJdLCJsZXNzb24iOjR9"
+            }
+          ]
+        },
+        {
+          "project": "webkit",
+          "file": "unified-source.spec.ts",
+          "title": "unified packaged entry new-hsk3/hsk3 loads actual source crops with nonempty legacy state",
+          "status": "passed",
+          "retry": 0,
+          "attachments": [
+            {
+              "name": "packaged-entry-original-images.json",
+              "contentType": "application/json",
+              "body": "eyJlbnRyeSI6Im5ldy1oc2szL2hzazMvaW5kZXguaHRtbCIsInVybHMiOlsiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL2hzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTAxLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wMi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL2hzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtd2FybXVwLTA0LnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXdhcm11cC0wNS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC13YXJtdXAtMDYucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL2hzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wMS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC1waWN0dXJlLTAyLnBuZyIsImh0dHA6Ly8xMjcuMC4wLjE6MTg3ODUvaHNrLWh1Yi9uZXctaHNrMy9oc2szL3NvdXJjZS1hY3Rpdml0aWVzL2ZpZ3VyZXMvbDA0LXBpY3R1cmUtMDMucG5nIiwiaHR0cDovLzEyNy4wLjAuMToxODc4NS9oc2staHViL25ldy1oc2szL2hzazMvc291cmNlLWFjdGl2aXRpZXMvZmlndXJlcy9sMDQtcGljdHVyZS0wNC5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0MS5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0Mi5wbmciLCJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvbmV3LWhzazMvaHNrMy9zb3VyY2UtYWN0aXZpdGllcy9maWd1cmVzL2wwNC10ZXh0My5wbmciXSwibGVzc29uIjo0fQ=="
+            }
+          ]
+        },
+        {
+          "project": "webkit",
+          "file": "unified-source.spec.ts",
+          "title": "nested HSK1 textbook originals and original audio resolve against shared course engine",
+          "status": "passed",
+          "retry": 0,
+          "attachments": [
+            {
+              "name": "nested-audio.json",
+              "contentType": "application/json",
+              "body": "eyJzcmMiOiJodHRwOi8vMTI3LjAuMC4xOjE4Nzg1L2hzay1odWIvY291cnNlLWVuZ2luZS9jb3Vyc2UtYXNzZXRzL2F1ZGlvLzEtMS5tcDMiLCJ0aW1lIjowLjAwMzEzMzE3OSwiZHVyYXRpb24iOjYuMzczODc3NTUxfQ=="
+            }
+          ]
+        },
+        {
+          "project": "webkit",
+          "file": "unified-source.spec.ts",
+          "title": "assembled HTTP bytes match frozen identity and private baseline/source paths are not served",
+          "status": "passed",
+          "retry": 0,
+          "attachments": []
+        }
+      ]
+    },
+    "normalNetworkLegacy": {
+      "sha256": "b88921252ba8d14d3fa7b4c36045ffca20d121b0dcdb0b3b8d0ad59f8fa37d11",
+      "stats": {
+        "startTime": "2026-10-04T18:52:32.496Z",
+        "duration": 4437.434,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "head": "dd8b22ccb1c1a9c41bc1243887f7a60558635782",
+      "cases": [
+        {
+          "project": "webkit",
+          "file": "legacy-entries.packaged.ts",
+          "title": "verified assembled old HSK1 HSK2 HSK3 and both HSK4 routes preserve nonempty histories and extra HSK4 gate",
+          "status": "passed",
+          "retry": 0,
+          "attachments": []
+        },
+        {
+          "project": "webkit",
+          "file": "legacy-entries.packaged.ts",
+          "title": "verified assembled HSK2 nested default and explicit cross-level deep links survive reload",
+          "status": "passed",
+          "retry": 0,
+          "attachments": []
+        },
+        {
+          "project": "webkit",
+          "file": "legacy-entries.packaged.ts",
+          "title": "verified assembled HSK3 nested default and explicit cross-level deep links survive reload",
+          "status": "passed",
+          "retry": 0,
+          "attachments": []
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Actual ZIP bytes independently rehashed only for manifest,132compiledassets,10HTML plus reports.",
+    "Full3894 actual assembled files were not downloaded. Omitted media/glyph declarations match exact Git/locked npm source authority; actual assembler/browsers supply execution evidence.",
+    "Recorded1110-file snapshot excludes ignored generated H1 audio/glyph copies. Their authoritative root originals and locked npm bytes were independently reconciled here. Root original paths are outside runtimeSourceScopes; release must separately verify their clean/input identity.",
+    "H4 extra stage is explicitly authorized in a synthetic session; classroom password validation is outside legacy test scope.",
+    "Partial4 and font2 perengine are independently reviewed by separate workers; do not duplicate their counts here.",
+    "No production deployment,formal16passed,fullVietnamese,human-listening orphysical-device claim."
+  ]
+}
