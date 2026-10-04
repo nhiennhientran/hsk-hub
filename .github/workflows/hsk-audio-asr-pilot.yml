@@ -16,7 +16,7 @@ permissions:
 
 concurrency:
   group: hsk-audio-asr-pilot-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   hsk2-l04-06-small:
