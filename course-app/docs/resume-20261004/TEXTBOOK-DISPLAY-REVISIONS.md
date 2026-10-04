@@ -36,3 +36,17 @@ browser `loadTextbook`明确获取并应用侧车。独立HSK1与统一course共
 - 冻结textbook、homework30-bank、stage2-bank、stage3-catalog、legacy-exercises的git差异为空。
 
 本执行者未执行新一轮原生浏览器、实体手机或真人听辨。原生浏览器验证由主线程统一对最终接入版本执行。本执行者未提交git、未进行远端写入或上线。
+
+## 词卡例句共用修订 · 后续补齐
+
+发现`createVocabularyContent`原先仅验证冻结教材后建立例句索引，未使用主教材展示修订。已修复`hsk1-app/src/services/content/vocabulary.ts`：
+
+- 保留五参纯基线接口，第六参可显式提供展示修订；browser loader获取同一侧车并传入。
+- 原教材、catalog及媒体在异步处理中先克隆，完成既有指纹和关联校验后才应用修订。侧车也提前克隆，避免外部在校验期间变更输入。
+- 例句与主教材展示逐项一致，保留原sourceId及当前例句位置标识。受审义项引用在例句扩展后用原中文唯一锚点重新定位：“坐”的旧第2例对应当前第3例，“呢”的旧第2例对应当前第3例。
+- 原“我不想休息。”修成“我哥哥不想休息。”的既定来源修正采用显式双向文字锚点；其他缺失、重复而无法唯一匹配的义项引用拒绝加载，不按位置猜测或取首项。
+- 词卡catalog/items、所有sense/record IDs、fingerprint、分类、音频和rating keys不变。缺侧车或侧车错误时显示加载失败，不静默混用旧例句。
+
+后续已实际执行：两宿主`npm run check`及`npm run build`通过；`vocabulary-content.test.mjs`和`textbook-display-revisions.test.mjs`共23项通过。新增验证包括真实loader函数、全部baseline/live例句对应、多义项范围、侧车HTTP404、陈旧/有歧义修订拒绝、异步快照及已有非空评分/复习日程的备份恢复不变。
+
+第5—8课独立审阅者另只读核对了侧车9个语法块的中文顺序及2项解释，确认与原页一致；新增拼音核对无误。编辑越译尚未作官方教材对齐，其中“我们下午三点见吧。”的编辑译文带“Chiều nay”（今天下午）须在后续全面官方越文阶段统一，不作为本轮中文来源审校认证。

@@ -1,0 +1,125 @@
+{
+  "reviewer": "qa_hsk1_01_03",
+  "status": "accepted-independent-display-example-index-alias-guard-and-history-compatibility",
+  "actualApprovedSidecarBindings": "passed-independent-content-and-history-verification",
+  "initialObservedVocabularySha256": "543ef42dd20c2808b1a6e271e4a30731d5ad821183d6efa5ec118fee2716785d",
+  "initialNegativeTests": {
+    "command": "node --experimental-strip-types --test anchor-ambiguity-review.test.mjs",
+    "pass": 0,
+    "fail": 2,
+    "cases": [
+      "legacy-first",
+      "legacy-last"
+    ],
+    "log": "anchor-ambiguity-before-fix.log",
+    "logSha256": "87183f24876b820027f014b040a93ab6e27f44d8cb15a96d5ef683cf18bbc70d"
+  },
+  "finding": {
+    "originalAnchorId": "textbook-l06-grammar-01:example:2",
+    "originalZh": "我不想休息。",
+    "approvedReplacementZh": "我哥哥不想休息。",
+    "observed": "Both legacy-first and legacy-last variants accepted; source anchor selected old sentence instead of failing closed.",
+    "actualApprovedSidecarContainsCoexistence": false
+  },
+  "necessaryRepair": "Reject simultaneous legacy/current Chinese aliases for the explicitly reviewed replacement anchor before choosing a display ordinal.",
+  "productionChangedByReviewer": false,
+  "pendingFinalChecks": [],
+  "finalReviewedAt": "2026-10-04T17:02:53.872103+00:00",
+  "repair": {
+    "owner": "root",
+    "change": "Collect both the original Chinese and the explicitly approved replacement Chinese in one match set; require exactly one matching position. Unchanged examples keep original ordinal mapping.",
+    "productionChangedByReviewer": false,
+    "approvedSidecarChanged": false
+  },
+  "finalTargetTests": {
+    "command": "node --experimental-strip-types --test tests/vocabulary-content.test.mjs tests/textbook-display-revisions.test.mjs ../course-app/docs/resume-20261004/qa-vocabulary-display/anchor-ambiguity-review.test.mjs",
+    "cwd": "hsk1-app",
+    "tests": 25,
+    "pass": 25,
+    "fail": 0,
+    "log": "final-target-tests.log"
+  },
+  "finalContentProbe": {
+    "command": "node --experimental-strip-types verify-content.mjs",
+    "approvedChanges": 34,
+    "stableSenses": 344,
+    "changedExampleSenses": 60,
+    "activeTextbookDetailChanges": 30,
+    "ratedAffectedSenses": 60,
+    "remainingPendingSenses": 284,
+    "scheduleComparisons": 32,
+    "mixedCardExamplesVisible": false,
+    "report": "content-binding-review.json",
+    "log": "final-content-probe.log"
+  },
+  "finalReviewedFiles": [
+    {
+      "path": "hsk1-app/src/services/content/vocabulary.ts",
+      "sha256": "11285cbb3907225e79413ab0a902602935b16e312ea7bee9eaaccdb825bd8cbe"
+    },
+    {
+      "path": "hsk1-app/tests/vocabulary-content.test.mjs",
+      "sha256": "5d66b21132d80d83026b1854f9cb504d0d5223d090fbb9ce39b0a08796919f47"
+    },
+    {
+      "path": "hsk1-app/src/services/content/textbook-display-revisions.ts",
+      "sha256": "2ee435e327f656981fc4bf30ecd680907c2d33b31ef79f7074cef8176f308a09"
+    },
+    {
+      "path": "hsk1-app/content/textbook-display-revisions.json",
+      "sha256": "3d3e325b587fd3b41fb11a908db6e74a37f2c9d95cac247a663112e71f8f9e55"
+    }
+  ],
+  "frozenInputs": [
+    {
+      "path": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "exactEngineeringSourceCommitBytes": true
+    },
+    {
+      "path": "hsk1-app/content/stage3-catalog.json",
+      "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "exactEngineeringSourceCommitBytes": true
+    },
+    {
+      "path": "hsk1-app/content/media-references.json",
+      "sha256": "d1c00b9706565fbb398b97490d51a1c3338349c2285c06e7ed8a04a68e2f656e",
+      "exactEngineeringSourceCommitBytes": true
+    }
+  ],
+  "evidenceHashes": [
+    {
+      "path": "anchor-ambiguity-review.test.mjs",
+      "sha256": "82aa5be8e58db12b7bd1f2c4d6b9d1084231da8da73322526780f92a2097b202"
+    },
+    {
+      "path": "anchor-ambiguity-before-fix.log",
+      "sha256": "87183f24876b820027f014b040a93ab6e27f44d8cb15a96d5ef683cf18bbc70d"
+    },
+    {
+      "path": "final-target-tests.log",
+      "sha256": "25dbd05c9a080e82107aad8f6f037934c37bef16a9a058529a815b3c33db7740"
+    },
+    {
+      "path": "final-content-probe.log",
+      "sha256": "f4b69adaed88927abcf52c21c65661a4d61c465f3735128bd5776b35e3796e98"
+    },
+    {
+      "path": "verify-content.mjs",
+      "sha256": "8e7b8b69f711c501f455da3d582135d7a47195708edd3e76cc82037d9387cd4d"
+    },
+    {
+      "path": "content-binding-review.json",
+      "sha256": "0c1cfb9337d5815da3083b23873b8e394ba55d4d136b7ff44226965d353edcc1"
+    },
+    {
+      "path": "README.md",
+      "sha256": "3bea1b00ca1de9cb3ed315dc028ecce442cba664559224617a4a066c557b4bb5"
+    }
+  ],
+  "scopeLimits": [
+    "No native mixed-card example display certification",
+    "No new official Vietnamese full alignment",
+    "No historical source/proposal or sense identity changes"
+  ]
+}

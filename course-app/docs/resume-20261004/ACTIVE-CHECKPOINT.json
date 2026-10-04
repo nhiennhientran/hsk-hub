@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-04T16:39:56.111346+00:00",
+  "updatedAt": "2026-10-04T17:26:15.664914+00:00",
   "status": "running",
   "authorization": "2026-10-04T23:09:46+08:00; autonomous execution; confirmation before production publication",
   "branch": "work/hsk-autonomous-execution-20261004",
-  "lastVerifiedRemoteCommit": "8cb52dddcd046e1d0eb6977b308b64c4d3f6c462",
+  "lastVerifiedRemoteCommit": "f8ef8ed5cf094dd230a30fd9c2dc0797497472c5",
   "sourceBaseline": "387aa7b6145e80f983f331d8b55cd2b2b26d6990",
   "phase": "A",
   "currentSteps": [
@@ -33,13 +33,18 @@
     "HSK1 45 main scenes/48 crops gallery and binding independently accepted; 599 HSK1 + 121 shared unit checks passed; both builds passed; current browser fixture types passed",
     "HSK3 all 18 lessons/523 stable word senses carry independently reviewed additional official-Vietnamese-edition source evidence; original canonical hash a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3 preserved",
     "Metadata application 18 actual file hashes match independent pipeline candidate; 2 positive and 34 negative pre-write guard probes passed; post-integration 122 shared unit tests passed",
-    "Actual local Chromium 138 cases passed without retry/skip/failure across two hosts: source catalogue, navigation and all 45 scene/48 figure gallery bindings"
+    "Actual local Chromium 138 cases passed without retry/skip/failure across two hosts: source catalogue, navigation and all 45 scene/48 figure gallery bindings",
+    "Confirmed candidate submission replaces pre-save receipt adoption for shared homework and independent listening; independent review and 18 actual store boundary tests passed",
+    "Current source checks: 140 shared unit tests,603 HSK1 unit tests; shared build/typecheck/browser-fixture check and484 source context/runtime bindings passed",
+    "Current repaired compiled candidate:62 actual Chromium gates passed:48 lessons/all240 homework parts,132 shared independent-listening questions,749 shared word senses,8 confirmed-save boundaries and2 final-lesson recovery edges",
+    "Display-example API and30 active textbook-detail bindings share approved34 revisions;25 targeted and independent344-sense/nonempty-review/schedule checks passed; word-card face does not render this example API"
   ],
   "inProgress": [
-    "Remote full Chromium/WebKit run37215775744 validates 8cb tree only; results/visual evidence pending",
-    "Pinned unprompted HSK2 L4–6 24-track ASR pilot on separate reversible work/hsk-audio-asr-pilot-20261004 branch; final script85722a54bb706d1c1165bc9f31c299960a228f65; no production clips certified",
-    "Word-card grammar-example display snapshot repair and learning/backup/legacy coverage audit",
-    "Exhaustive Vietnamese inventory preparation; full official text comparison has not started"
+    "Finish actual HSK1 listening/mixed/storage and production-shaped protected legacy/native package checks",
+    "Package current source crops into all applicable document roots under strict source SHA guards; private checkpoint assembly in review",
+    "Remote exact-current candidate Chromium/WebKit acceptance pending; old8cb run857/860 passed with3 galleries cancelled at30min job limit; new limit60min",
+    "Three actual padded crop crosschecks completed in CI37219656715; independent clip decision pending; remaining26 lessons/208 tracks observation-only collection requested, not precision approval",
+    "Exhaustive Vietnamese inventory is prepared; full official text comparison has not started"
   ],
   "notYetCertified": [
     "Full native suite current tree",
@@ -49,13 +54,14 @@
     "Human listening",
     "Physical devices"
   ],
-  "nextExecutableAction": "Verify/persist A5 integration and actual local native evidence; finish shared vocabulary display repair; collect real ASR pilot and browser CI evidence; close engineering coverage before Phase B.",
+  "nextExecutableAction": "Save confirmed-submit and display-index code/evidence remotely; finish browser learning/legacy and package guards; execute exact-current two-engine acceptance; close audio clip review; freeze engineering phase then proceed to official Vietnamese alignment.",
   "productionPublished": false,
   "audioPilot": {
     "branch": "work/hsk-audio-asr-pilot-20261004",
-    "remoteCommit": "b32215e5990c3d9673f6fb0f8c27e804c062b6e6",
-    "tree": "9b4fb90dd247c4a7c44b4d2ce27ac73c3c52c10c",
-    "status": "execution requested; final run status must be rechecked",
+    "remoteCommit": "3f7285359c2f7fc0c552157df68feb61c9758f53",
+    "tree": "c3f94194b80ff1d3fcccc4affe7d6bab0ea9e629",
+    "status": "small and medium pilot actual runs succeeded; raw timing defects reviewed; crop37219656715 actual run succeeded; remaining source-specific observations requested",
     "productionPromotion": false
-  }
+  },
+  "lastVerifiedRemoteBranch": "work/hsk-a5-source-checkpoint-20261004"
 }

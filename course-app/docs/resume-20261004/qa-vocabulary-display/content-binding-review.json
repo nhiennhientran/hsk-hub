@@ -1,0 +1,4684 @@
+{
+  "reviewer": "qa_hsk1_01_03",
+  "reviewedAt": "2026-10-04T17:01:41.897Z",
+  "status": "accepted-independent-display-example-index-and-history-compatibility",
+  "engineeringSourceCommit": "f8ef8ed5cf094dd230a30fd9c2dc0797497472c5",
+  "frozenFiles": [
+    {
+      "path": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "exactEngineeringSourceCommitBytes": true
+    },
+    {
+      "path": "hsk1-app/content/stage3-catalog.json",
+      "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "exactEngineeringSourceCommitBytes": true
+    },
+    {
+      "path": "hsk1-app/content/media-references.json",
+      "sha256": "d1c00b9706565fbb398b97490d51a1c3338349c2285c06e7ed8a04a68e2f656e",
+      "exactEngineeringSourceCommitBytes": true
+    }
+  ],
+  "reviewedFiles": [
+    {
+      "path": "hsk1-app/src/services/content/vocabulary.ts",
+      "sha256": "11285cbb3907225e79413ab0a902602935b16e312ea7bee9eaaccdb825bd8cbe"
+    },
+    {
+      "path": "hsk1-app/tests/vocabulary-content.test.mjs",
+      "sha256": "5d66b21132d80d83026b1854f9cb504d0d5223d090fbb9ce39b0a08796919f47"
+    },
+    {
+      "path": "hsk1-app/src/services/content/textbook-display-revisions.ts",
+      "sha256": "2ee435e327f656981fc4bf30ecd680907c2d33b31ef79f7074cef8176f308a09"
+    },
+    {
+      "path": "hsk1-app/content/textbook-display-revisions.json",
+      "sha256": "3d3e325b587fd3b41fb11a908db6e74a37f2c9d95cac247a663112e71f8f9e55"
+    }
+  ],
+  "displayRevision": "hsk1-display-20261004-01",
+  "approvedChangeCount": 34,
+  "stableSenseCount": 344,
+  "audioRecordCount": 330,
+  "missingWordAudioCount": 14,
+  "pureFiveArgumentCallCompatible": true,
+  "optionalSixthDisplayArgumentValidated": true,
+  "originalSourceFingerprintsValidatedBeforeDisplayApplication": true,
+  "callerInputsUnchanged": true,
+  "originalCatalogItemsLessonAndAudioRequestsExactlyPreserved": true,
+  "changedSenseCount": 60,
+  "changedSenses": [
+    {
+      "senseId": "lex-6c999d484a-s1",
+      "recordId": "v-l04-lex-6c999d484a-s1",
+      "lesson": 4,
+      "zh": "多少",
+      "before": [
+        {
+          "id": "textbook-l04-text-1-line-03",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-1",
+          "zh": "她有多少个学生？",
+          "py": "tā yǒu duō shǎo gè xué shēng？",
+          "vi": "Cô ấy có bao nhiêu học sinh?"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l04-text-1-line-03",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-1",
+          "zh": "她有多少个学生？",
+          "py": "Tā yǒu duōshao gè xuéshēng?",
+          "vi": "Cô ấy có bao nhiêu học sinh?"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-f7b2a6ee68-s1",
+      "recordId": "v-l04-lex-f7b2a6ee68-s1",
+      "lesson": 4,
+      "zh": "个",
+      "before": [
+        {
+          "id": "textbook-l04-text-1-line-03",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-1",
+          "zh": "她有多少个学生？",
+          "py": "tā yǒu duō shǎo gè xué shēng？",
+          "vi": "Cô ấy có bao nhiêu học sinh?"
+        },
+        {
+          "id": "textbook-l04-text-1-line-04",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-1",
+          "zh": "她有二十个学生。",
+          "py": "tā yǒu èr shí gè xué shēng。",
+          "vi": "Cô ấy có hai mươi học sinh."
+        },
+        {
+          "id": "textbook-l04-text-2-line-01",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-2",
+          "zh": "我有两个哥哥，你呢？",
+          "py": "wǒ yǒu liǎng gè gēge， nǐ ne？",
+          "vi": "Tôi có hai anh trai, còn bạn?"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l04-text-1-line-03",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-1",
+          "zh": "她有多少个学生？",
+          "py": "Tā yǒu duōshao gè xuéshēng?",
+          "vi": "Cô ấy có bao nhiêu học sinh?"
+        },
+        {
+          "id": "textbook-l04-text-1-line-04",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-1",
+          "zh": "她有二十个学生。",
+          "py": "tā yǒu èr shí gè xué shēng。",
+          "vi": "Cô ấy có hai mươi học sinh."
+        },
+        {
+          "id": "textbook-l04-text-2-line-01",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-2",
+          "zh": "我有两个哥哥，你呢？",
+          "py": "wǒ yǒu liǎng gè gēge， nǐ ne？",
+          "vi": "Tôi có hai anh trai, còn bạn?"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-fbd5b75066-s1",
+      "recordId": "v-l04-lex-fbd5b75066-s1",
+      "lesson": 4,
+      "zh": "有",
+      "before": [
+        {
+          "id": "textbook-l04-text-1-line-03",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-1",
+          "zh": "她有多少个学生？",
+          "py": "tā yǒu duō shǎo gè xué shēng？",
+          "vi": "Cô ấy có bao nhiêu học sinh?"
+        },
+        {
+          "id": "textbook-l04-text-1-line-04",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-1",
+          "zh": "她有二十个学生。",
+          "py": "tā yǒu èr shí gè xué shēng。",
+          "vi": "Cô ấy có hai mươi học sinh."
+        },
+        {
+          "id": "textbook-l04-text-2-line-01",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-2",
+          "zh": "我有两个哥哥，你呢？",
+          "py": "wǒ yǒu liǎng gè gēge， nǐ ne？",
+          "vi": "Tôi có hai anh trai, còn bạn?"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l04-text-1-line-03",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-1",
+          "zh": "她有多少个学生？",
+          "py": "Tā yǒu duōshao gè xuéshēng?",
+          "vi": "Cô ấy có bao nhiêu học sinh?"
+        },
+        {
+          "id": "textbook-l04-text-1-line-04",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-1",
+          "zh": "她有二十个学生。",
+          "py": "tā yǒu èr shí gè xué shēng。",
+          "vi": "Cô ấy có hai mươi học sinh."
+        },
+        {
+          "id": "textbook-l04-text-2-line-01",
+          "lesson": 4,
+          "section": "text",
+          "sourceId": "textbook-l04-text-2",
+          "zh": "我有两个哥哥，你呢？",
+          "py": "wǒ yǒu liǎng gè gēge， nǐ ne？",
+          "vi": "Tôi có hai anh trai, còn bạn?"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-a313eb6397-s1",
+      "recordId": "v-l05-lex-a313eb6397-s1",
+      "lesson": 5,
+      "zh": "饺子",
+      "before": [
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "wǒ huì zuò miàn tiáo ér、 jiǎo zi， yě huì zuò yī xiē cài。 xīng qī tiān wǒ yě zuò fàn。",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-17e83cc25e-s1",
+      "recordId": "v-l05-lex-17e83cc25e-s1",
+      "lesson": 5,
+      "zh": "今天",
+      "before": [
+        {
+          "id": "textbook-l05-text-1-line-01",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "今天几号？",
+          "py": "jīn tiān jǐ hào？",
+          "vi": "Hôm nay là ngày mấy?"
+        },
+        {
+          "id": "textbook-l05-text-1-line-02",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "今天9月8号。",
+          "py": "jīn tiān jiǔ yuè bā hào。",
+          "vi": "Hôm nay là ngày 8 tháng 9."
+        },
+        {
+          "id": "textbook-l05-text-1-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期日。今天我休息。",
+          "py": "xīng qī rì。 jīn tiān wǒ xiū xī。",
+          "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-1-line-01",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "今天几号？",
+          "py": "jīn tiān jǐ hào？",
+          "vi": "Hôm nay là ngày mấy?"
+        },
+        {
+          "id": "textbook-l05-text-1-line-02",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "今天9月8号。",
+          "py": "jīn tiān jiǔ yuè bā hào。",
+          "vi": "Hôm nay là ngày 8 tháng 9."
+        },
+        {
+          "id": "textbook-l05-text-1-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期日。今天我休息。",
+          "py": "Xīngqīrì. Jīntiān wǒ xiūxi.",
+          "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-60f87a79fc-s1",
+      "recordId": "v-l05-lex-60f87a79fc-s1",
+      "lesson": 5,
+      "zh": "面条儿",
+      "before": [
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "wǒ huì zuò miàn tiáo ér、 jiǎo zi， yě huì zuò yī xiē cài。 xīng qī tiān wǒ yě zuò fàn。",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        },
+        {
+          "id": "textbook-l05-grammar-03:example:2",
+          "lesson": 5,
+          "section": "grammar",
+          "sourceId": "textbook-l05-grammar-03",
+          "zh": "我会做面条儿。",
+          "py": "wǒ huì zuò miàn tiáo ér。",
+          "vi": "Tôi biết làm mì."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        },
+        {
+          "id": "textbook-l05-grammar-03:example:2",
+          "lesson": 5,
+          "section": "grammar",
+          "sourceId": "textbook-l05-grammar-03",
+          "zh": "我会做面条儿。",
+          "py": "wǒ huì zuò miàn tiáo ér。",
+          "vi": "Tôi biết làm mì."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-15917f3b32-s1",
+      "recordId": "v-l05-lex-15917f3b32-s1",
+      "lesson": 5,
+      "zh": "日",
+      "before": [
+        {
+          "id": "textbook-l05-text-1-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期日。今天我休息。",
+          "py": "xīng qī rì。 jīn tiān wǒ xiū xī。",
+          "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-1-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期日。今天我休息。",
+          "py": "Xīngqīrì. Jīntiān wǒ xiūxi.",
+          "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-1969106a8f-s1",
+      "recordId": "v-l05-lex-1969106a8f-s1",
+      "lesson": 5,
+      "zh": "它",
+      "before": [
+        {
+          "id": "textbook-l05-text-3-line-06",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-3",
+          "zh": "我也很喜欢它。",
+          "py": "wǒ yě hěn xǐ huān tā。",
+          "vi": "Tôi cũng rất thích nó."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-3-line-06",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-3",
+          "zh": "我也很喜欢它。",
+          "py": "Wǒ yě hěn xǐhuan tā.",
+          "vi": "Tôi cũng rất thích nó."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-28aa475a79-s1",
+      "recordId": "v-l05-lex-28aa475a79-s1",
+      "lesson": 5,
+      "zh": "喜欢",
+      "before": [
+        {
+          "id": "textbook-l05-text-3-line-06",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-3",
+          "zh": "我也很喜欢它。",
+          "py": "wǒ yě hěn xǐ huān tā。",
+          "vi": "Tôi cũng rất thích nó."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-3-line-06",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-3",
+          "zh": "我也很喜欢它。",
+          "py": "Wǒ yě hěn xǐhuan tā.",
+          "vi": "Tôi cũng rất thích nó."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-e35269378d-s1",
+      "recordId": "v-l05-lex-e35269378d-s1",
+      "lesson": 5,
+      "zh": "星期",
+      "before": [
+        {
+          "id": "textbook-l05-text-1-line-03",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期几？",
+          "py": "xīng qī jǐ？",
+          "vi": "Thứ mấy?"
+        },
+        {
+          "id": "textbook-l05-text-1-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期日。今天我休息。",
+          "py": "xīng qī rì。 jīn tiān wǒ xiū xī。",
+          "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+        },
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "wǒ huì zuò miàn tiáo ér、 jiǎo zi， yě huì zuò yī xiē cài。 xīng qī tiān wǒ yě zuò fàn。",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-1-line-03",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期几？",
+          "py": "xīng qī jǐ？",
+          "vi": "Thứ mấy?"
+        },
+        {
+          "id": "textbook-l05-text-1-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期日。今天我休息。",
+          "py": "Xīngqīrì. Jīntiān wǒ xiūxi.",
+          "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+        },
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-d9636d4a90-s1",
+      "recordId": "v-l05-lex-d9636d4a90-s1",
+      "lesson": 5,
+      "zh": "星期日",
+      "before": [
+        {
+          "id": "textbook-l05-text-1-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期日。今天我休息。",
+          "py": "xīng qī rì。 jīn tiān wǒ xiū xī。",
+          "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-1-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期日。今天我休息。",
+          "py": "Xīngqīrì. Jīntiān wǒ xiūxi.",
+          "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-c25143d15d-s1",
+      "recordId": "v-l05-lex-c25143d15d-s1",
+      "lesson": 5,
+      "zh": "星期天",
+      "before": [
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "wǒ huì zuò miàn tiáo ér、 jiǎo zi， yě huì zuò yī xiē cài。 xīng qī tiān wǒ yě zuò fàn。",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-da11d57634-s1",
+      "recordId": "v-l05-lex-da11d57634-s1",
+      "lesson": 5,
+      "zh": "休息",
+      "before": [
+        {
+          "id": "textbook-l05-text-1-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期日。今天我休息。",
+          "py": "xīng qī rì。 jīn tiān wǒ xiū xī。",
+          "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-1-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-1",
+          "zh": "星期日。今天我休息。",
+          "py": "Xīngqīrì. Jīntiān wǒ xiūxi.",
+          "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-b86b2e837c-s1",
+      "recordId": "v-l05-lex-b86b2e837c-s1",
+      "lesson": 5,
+      "zh": "一些",
+      "before": [
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "wǒ huì zuò miàn tiáo ér、 jiǎo zi， yě huì zuò yī xiē cài。 xīng qī tiān wǒ yě zuò fàn。",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-da2ad6fb7f-s1",
+      "recordId": "v-l05-lex-da2ad6fb7f-s1",
+      "lesson": 5,
+      "zh": "做饭",
+      "before": [
+        {
+          "id": "textbook-l05-text-2-line-01",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "你会做饭吗？",
+          "py": "nǐ huì zuò fàn ma？",
+          "vi": "Bạn biết nấu ăn không?"
+        },
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "wǒ huì zuò miàn tiáo ér、 jiǎo zi， yě huì zuò yī xiē cài。 xīng qī tiān wǒ yě zuò fàn。",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l05-text-2-line-01",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "你会做饭吗？",
+          "py": "nǐ huì zuò fàn ma？",
+          "vi": "Bạn biết nấu ăn không?"
+        },
+        {
+          "id": "textbook-l05-text-2-line-04",
+          "lesson": 5,
+          "section": "text",
+          "sourceId": "textbook-l05-text-2",
+          "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+          "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+          "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-9c01ad0911-s1",
+      "recordId": "v-l06-lex-9c01ad0911-s1",
+      "lesson": 6,
+      "zh": "手机",
+      "before": [
+        {
+          "id": "textbook-l06-text-1-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-1",
+          "zh": "家月，你的手机号是多少？",
+          "py": "jiā yuè， nǐ de shǒu jī hào shì duō shǎo？",
+          "vi": "Gia Nguyệt, số điện thoại di động của bạn là bao nhiêu?"
+        },
+        {
+          "id": "textbook-l06-text-1-line-02",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-1",
+          "zh": "我的手机号是+33 601493190。",
+          "py": "wǒ de shǒu jī hào shì + 3 3   6 0 1 4 9 3 1 9 0。",
+          "vi": "Số của tôi là +33 601493190."
+        },
+        {
+          "id": "textbook-l06-text-1-line-03",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-1",
+          "zh": "我的手机号是+86 13552721160。",
+          "py": "wǒ de shǒu jī hào shì + 8 6   1 3 5 5 2 7 2 1 1 6 0。",
+          "vi": "Số của tôi là +86 13552721160."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-text-1-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-1",
+          "zh": "家月，你的手机号是多少？",
+          "py": "Jiāyuè, nǐ de shǒujīhào shì duōshao?",
+          "vi": "Gia Nguyệt, số điện thoại di động của bạn là bao nhiêu?"
+        },
+        {
+          "id": "textbook-l06-text-1-line-02",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-1",
+          "zh": "我的手机号是+33 601493190。",
+          "py": "Wǒ de shǒujīhào shì sān sān liù líng yāo sì jiǔ sān yāo jiǔ líng.",
+          "vi": "Số của tôi là +33 601493190."
+        },
+        {
+          "id": "textbook-l06-text-1-line-03",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-1",
+          "zh": "我的手机号是+86 13552721160。",
+          "py": "Wǒ de shǒujīhào shì bā liù yāo sān wǔ wǔ èr qī èr yāo yāo liù líng.",
+          "vi": "Số của tôi là +86 13552721160."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-7f5716be5c-s2",
+      "recordId": "v-l06-lex-7f5716be5c-s2",
+      "lesson": 6,
+      "zh": "号",
+      "before": [
+        {
+          "id": "textbook-l06-text-1-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-1",
+          "zh": "家月，你的手机号是多少？",
+          "py": "jiā yuè， nǐ de shǒu jī hào shì duō shǎo？",
+          "vi": "Gia Nguyệt, số điện thoại di động của bạn là bao nhiêu?"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-text-1-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-1",
+          "zh": "家月，你的手机号是多少？",
+          "py": "Jiāyuè, nǐ de shǒujīhào shì duōshao?",
+          "vi": "Gia Nguyệt, số điện thoại di động của bạn là bao nhiêu?"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-b76ce230d3-s1",
+      "recordId": "v-l06-lex-b76ce230d3-s1",
+      "lesson": 6,
+      "zh": "明天",
+      "before": [
+        {
+          "id": "textbook-l06-text-2-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "家月，明天你去哪儿？",
+          "py": "jiā yuè， míng tiān nǐ qù nǎ ér？",
+          "vi": "Gia Nguyệt, ngày mai bạn đi đâu?"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-text-2-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "家月，明天你去哪儿？",
+          "py": "Jiāyuè, míngtiān nǐ qù nǎr?",
+          "vi": "Gia Nguyệt, ngày mai bạn đi đâu?"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-033fd274f0-s1",
+      "recordId": "v-l06-lex-033fd274f0-s1",
+      "lesson": 6,
+      "zh": "去",
+      "before": [
+        {
+          "id": "textbook-l06-text-2-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "家月，明天你去哪儿？",
+          "py": "jiā yuè， míng tiān nǐ qù nǎ ér？",
+          "vi": "Gia Nguyệt, ngày mai bạn đi đâu?"
+        },
+        {
+          "id": "textbook-l06-text-2-line-02",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "我想去超市买东西。",
+          "py": "wǒ xiǎng qù chāo shì mǎi dōngxi。",
+          "vi": "Tôi muốn đi siêu thị mua đồ."
+        },
+        {
+          "id": "textbook-l06-text-2-line-03",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "你去超市买什么？",
+          "py": "nǐ qù chāo shì mǎi shén me？",
+          "vi": "Bạn đi siêu thị mua gì?"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-text-2-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "家月，明天你去哪儿？",
+          "py": "Jiāyuè, míngtiān nǐ qù nǎr?",
+          "vi": "Gia Nguyệt, ngày mai bạn đi đâu?"
+        },
+        {
+          "id": "textbook-l06-text-2-line-02",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "我想去超市买东西。",
+          "py": "wǒ xiǎng qù chāo shì mǎi dōngxi。",
+          "vi": "Tôi muốn đi siêu thị mua đồ."
+        },
+        {
+          "id": "textbook-l06-text-2-line-03",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "你去超市买什么？",
+          "py": "nǐ qù chāo shì mǎi shén me？",
+          "vi": "Bạn đi siêu thị mua gì?"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-dce81b4475-s1",
+      "recordId": "v-l06-lex-dce81b4475-s1",
+      "lesson": 6,
+      "zh": "哪儿",
+      "before": [
+        {
+          "id": "textbook-l06-text-2-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "家月，明天你去哪儿？",
+          "py": "jiā yuè， míng tiān nǐ qù nǎ ér？",
+          "vi": "Gia Nguyệt, ngày mai bạn đi đâu?"
+        },
+        {
+          "id": "textbook-l06-text-3-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "星期天我们去哪儿吃晚饭？",
+          "py": "xīng qī tiān wǒ men qù nǎ ér chī wǎn fàn？",
+          "vi": "Chủ nhật chúng ta đi đâu ăn tối?"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-text-2-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "家月，明天你去哪儿？",
+          "py": "Jiāyuè, míngtiān nǐ qù nǎr?",
+          "vi": "Gia Nguyệt, ngày mai bạn đi đâu?"
+        },
+        {
+          "id": "textbook-l06-text-3-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "星期天我们去哪儿吃晚饭？",
+          "py": "Xīngqītiān wǒmen qù nǎr chī wǎnfàn?",
+          "vi": "Chủ nhật chúng ta đi đâu ăn tối?"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-a48f3ad06d-s2",
+      "recordId": "v-l06-lex-a48f3ad06d-s2",
+      "lesson": 6,
+      "zh": "想",
+      "before": [
+        {
+          "id": "textbook-l06-grammar-01:example:1",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-01",
+          "zh": "我想去超市。",
+          "py": "wǒ xiǎng qù chāo shì。",
+          "vi": "Tôi muốn đi siêu thị."
+        },
+        {
+          "id": "textbook-l06-grammar-01:example:2",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-01",
+          "zh": "我不想休息。",
+          "py": "wǒ bù xiǎng xiū xī。",
+          "vi": "Tôi không muốn nghỉ."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-grammar-01:example:1",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-01",
+          "zh": "我想去超市。",
+          "py": "Wǒ xiǎng qù chāoshì.",
+          "vi": "Tôi muốn đi siêu thị."
+        },
+        {
+          "id": "textbook-l06-grammar-01:example:2",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-01",
+          "zh": "我哥哥不想休息。",
+          "py": "Wǒ gēge bù xiǎng xiūxi.",
+          "vi": "Anh trai tôi không muốn nghỉ ngơi."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-2aba41d89b-s1",
+      "recordId": "v-l06-lex-2aba41d89b-s1",
+      "lesson": 6,
+      "zh": "超市",
+      "before": [
+        {
+          "id": "textbook-l06-text-2-line-02",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "我想去超市买东西。",
+          "py": "wǒ xiǎng qù chāo shì mǎi dōngxi。",
+          "vi": "Tôi muốn đi siêu thị mua đồ."
+        },
+        {
+          "id": "textbook-l06-text-2-line-03",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "你去超市买什么？",
+          "py": "nǐ qù chāo shì mǎi shén me？",
+          "vi": "Bạn đi siêu thị mua gì?"
+        },
+        {
+          "id": "textbook-l06-grammar-01:example:1",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-01",
+          "zh": "我想去超市。",
+          "py": "wǒ xiǎng qù chāo shì。",
+          "vi": "Tôi muốn đi siêu thị."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-text-2-line-02",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "我想去超市买东西。",
+          "py": "wǒ xiǎng qù chāo shì mǎi dōngxi。",
+          "vi": "Tôi muốn đi siêu thị mua đồ."
+        },
+        {
+          "id": "textbook-l06-text-2-line-03",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "你去超市买什么？",
+          "py": "nǐ qù chāo shì mǎi shén me？",
+          "vi": "Bạn đi siêu thị mua gì?"
+        },
+        {
+          "id": "textbook-l06-grammar-01:example:1",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-01",
+          "zh": "我想去超市。",
+          "py": "Wǒ xiǎng qù chāoshì.",
+          "vi": "Tôi muốn đi siêu thị."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-949fb2e914-s1",
+      "recordId": "v-l06-lex-949fb2e914-s1",
+      "lesson": 6,
+      "zh": "东西",
+      "before": [
+        {
+          "id": "textbook-l06-text-2-line-02",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "我想去超市买东西。",
+          "py": "wǒ xiǎng qù chāo shì mǎi dōngxi。",
+          "vi": "Tôi muốn đi siêu thị mua đồ."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-text-2-line-02",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-2",
+          "zh": "我想去超市买东西。",
+          "py": "wǒ xiǎng qù chāo shì mǎi dōngxi。",
+          "vi": "Tôi muốn đi siêu thị mua đồ."
+        },
+        {
+          "id": "textbook-l06-grammar-02:example:1",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "我想去超市买东西。",
+          "py": "Wǒ xiǎng qù chāoshì mǎi dōngxi.",
+          "vi": "Tôi muốn đến siêu thị mua đồ."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-a10d4d5a63-s1",
+      "recordId": "v-l06-lex-a10d4d5a63-s1",
+      "lesson": 6,
+      "zh": "吃",
+      "before": [
+        {
+          "id": "textbook-l06-text-3-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "星期天我们去哪儿吃晚饭？",
+          "py": "xīng qī tiān wǒ men qù nǎ ér chī wǎn fàn？",
+          "vi": "Chủ nhật chúng ta đi đâu ăn tối?"
+        },
+        {
+          "id": "textbook-l06-text-3-line-03",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "那边的包子非常好吃，我想吃包子。",
+          "py": "nà biān de bāo zi fēi cháng hǎo chī， wǒ xiǎng chī bāo zi。",
+          "vi": "Bánh bao ở đó rất ngon, con muốn ăn bánh bao."
+        },
+        {
+          "id": "textbook-l06-text-3-line-04",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "妈妈，我想吃米饭，不想吃包子。",
+          "py": "māma， wǒ xiǎng chī mǐ fàn， bù xiǎng chī bāo zi。",
+          "vi": "Mẹ ơi, con muốn ăn cơm, không muốn ăn bánh bao."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-text-3-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "星期天我们去哪儿吃晚饭？",
+          "py": "Xīngqītiān wǒmen qù nǎr chī wǎnfàn?",
+          "vi": "Chủ nhật chúng ta đi đâu ăn tối?"
+        },
+        {
+          "id": "textbook-l06-text-3-line-03",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "那边的包子非常好吃，我想吃包子。",
+          "py": "nà biān de bāo zi fēi cháng hǎo chī， wǒ xiǎng chī bāo zi。",
+          "vi": "Bánh bao ở đó rất ngon, con muốn ăn bánh bao."
+        },
+        {
+          "id": "textbook-l06-text-3-line-04",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "妈妈，我想吃米饭，不想吃包子。",
+          "py": "māma， wǒ xiǎng chī mǐ fàn， bù xiǎng chī bāo zi。",
+          "vi": "Mẹ ơi, con muốn ăn cơm, không muốn ăn bánh bao."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-ffb032919b-s1",
+      "recordId": "v-l06-lex-ffb032919b-s1",
+      "lesson": 6,
+      "zh": "晚饭",
+      "before": [
+        {
+          "id": "textbook-l06-text-3-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "星期天我们去哪儿吃晚饭？",
+          "py": "xīng qī tiān wǒ men qù nǎ ér chī wǎn fàn？",
+          "vi": "Chủ nhật chúng ta đi đâu ăn tối?"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-text-3-line-01",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "星期天我们去哪儿吃晚饭？",
+          "py": "Xīngqītiān wǒmen qù nǎr chī wǎnfàn?",
+          "vi": "Chủ nhật chúng ta đi đâu ăn tối?"
+        },
+        {
+          "id": "textbook-l06-grammar-02:example:2",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "我们去西安饭店吃晚饭。",
+          "py": "Wǒmen qù Xī’ān Fàndiàn chī wǎnfàn.",
+          "vi": "Chúng tôi đến nhà hàng Tây An ăn tối."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-4a1e3b19fa-s1",
+      "recordId": "v-l06-lex-4a1e3b19fa-s1",
+      "lesson": 6,
+      "zh": "坐",
+      "before": [
+        {
+          "id": "textbook-l06-grammar-02:example:2",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "我们坐出租车去西安饭店。",
+          "py": "wǒ men zuò chū zū chē qù xī ān fàn diàn。",
+          "vi": "Chúng ta đi taxi đến Nhà hàng Tây An."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-grammar-02:example:3",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "我们坐出租车去西安饭店。",
+          "py": "Wǒmen zuò chūzūchē qù Xī’ān Fàndiàn.",
+          "vi": "Chúng tôi đi taxi đến nhà hàng Tây An."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-14534d703d-s1",
+      "recordId": "v-l06-lex-14534d703d-s1",
+      "lesson": 6,
+      "zh": "出租车",
+      "before": [
+        {
+          "id": "textbook-l06-text-3-line-06",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "坐出租车去。",
+          "py": "zuò chū zū chē qù。",
+          "vi": "Đi bằng taxi."
+        },
+        {
+          "id": "textbook-l06-grammar-02:example:2",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "我们坐出租车去西安饭店。",
+          "py": "wǒ men zuò chū zū chē qù xī ān fàn diàn。",
+          "vi": "Chúng ta đi taxi đến Nhà hàng Tây An."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-text-3-line-06",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "坐出租车去。",
+          "py": "zuò chū zū chē qù。",
+          "vi": "Đi bằng taxi."
+        },
+        {
+          "id": "textbook-l06-grammar-02:example:3",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "我们坐出租车去西安饭店。",
+          "py": "Wǒmen zuò chūzūchē qù Xī’ān Fàndiàn.",
+          "vi": "Chúng tôi đi taxi đến nhà hàng Tây An."
+        },
+        {
+          "id": "textbook-l06-grammar-02:example:4",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "她坐出租车去超市。",
+          "py": "Tā zuò chūzūchē qù chāoshì.",
+          "vi": "Cô ấy đi taxi đến siêu thị."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-7c150e04dd-s1",
+      "recordId": "v-l06-lex-7c150e04dd-s1",
+      "lesson": 6,
+      "zh": "西安饭店",
+      "before": [
+        {
+          "id": "textbook-l06-text-3-line-02",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "我还想去西安饭店。",
+          "py": "wǒ hái xiǎng qù xī ān fàn diàn。",
+          "vi": "Anh vẫn muốn đến Nhà hàng Tây An."
+        },
+        {
+          "id": "textbook-l06-grammar-02:example:2",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "我们坐出租车去西安饭店。",
+          "py": "wǒ men zuò chū zū chē qù xī ān fàn diàn。",
+          "vi": "Chúng ta đi taxi đến Nhà hàng Tây An."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-text-3-line-02",
+          "lesson": 6,
+          "section": "text",
+          "sourceId": "textbook-l06-text-3",
+          "zh": "我还想去西安饭店。",
+          "py": "wǒ hái xiǎng qù xī ān fàn diàn。",
+          "vi": "Anh vẫn muốn đến Nhà hàng Tây An."
+        },
+        {
+          "id": "textbook-l06-grammar-02:example:2",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "我们去西安饭店吃晚饭。",
+          "py": "Wǒmen qù Xī’ān Fàndiàn chī wǎnfàn.",
+          "vi": "Chúng tôi đến nhà hàng Tây An ăn tối."
+        },
+        {
+          "id": "textbook-l06-grammar-02:example:3",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "我们坐出租车去西安饭店。",
+          "py": "Wǒmen zuò chūzūchē qù Xī’ān Fàndiàn.",
+          "vi": "Chúng tôi đi taxi đến nhà hàng Tây An."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-1d59ea7cbb-s1",
+      "recordId": "v-l07-lex-1d59ea7cbb-s1",
+      "lesson": 7,
+      "zh": "点",
+      "before": [
+        {
+          "id": "textbook-l07-text-1-line-01",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "现在几点？",
+          "py": "xiàn zài jǐ diǎn？",
+          "vi": "Bây giờ là mấy giờ?"
+        },
+        {
+          "id": "textbook-l07-text-1-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "早上八点四十。",
+          "py": "zǎo shàng bā diǎn sì shí。",
+          "vi": "Tám giờ bốn mươi sáng."
+        },
+        {
+          "id": "textbook-l07-text-1-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "我上午十点十分有课。",
+          "py": "wǒ shàng wǔ shí diǎn shí fēn yǒu kè。",
+          "vi": "Mười giờ mười sáng tôi có tiết học."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-1-line-01",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "现在几点？",
+          "py": "xiàn zài jǐ diǎn？",
+          "vi": "Bây giờ là mấy giờ?"
+        },
+        {
+          "id": "textbook-l07-text-1-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "早上八点四十。",
+          "py": "Zǎoshang bā diǎn sìshí.",
+          "vi": "Tám giờ bốn mươi sáng."
+        },
+        {
+          "id": "textbook-l07-text-1-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "我上午十点十分有课。",
+          "py": "wǒ shàng wǔ shí diǎn shí fēn yǒu kè。",
+          "vi": "Mười giờ mười sáng tôi có tiết học."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-172fb7196f-s1",
+      "recordId": "v-l07-lex-172fb7196f-s1",
+      "lesson": 7,
+      "zh": "早上",
+      "before": [
+        {
+          "id": "textbook-l07-text-1-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "早上八点四十。",
+          "py": "zǎo shàng bā diǎn sì shí。",
+          "vi": "Tám giờ bốn mươi sáng."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-1-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "早上八点四十。",
+          "py": "Zǎoshang bā diǎn sìshí.",
+          "vi": "Tám giờ bốn mươi sáng."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-e214ee22dd-s1",
+      "recordId": "v-l07-lex-e214ee22dd-s1",
+      "lesson": 7,
+      "zh": "上午",
+      "before": [
+        {
+          "id": "textbook-l07-text-1-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "我上午十点十分有课。",
+          "py": "wǒ shàng wǔ shí diǎn shí fēn yǒu kè。",
+          "vi": "Mười giờ mười sáng tôi có tiết học."
+        },
+        {
+          "id": "textbook-l07-grammar-01:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-01",
+          "zh": "上午十点十分",
+          "py": "shàng wǔ shí diǎn shí fēn",
+          "vi": "10 giờ 10 sáng"
+        },
+        {
+          "id": "textbook-l07-grammar-03:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-03",
+          "zh": "她上午十点半上课。",
+          "py": "tā shàng wǔ shí diǎn bàn shàng kè。",
+          "vi": "Cô ấy vào học lúc 10 giờ 30 sáng."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-1-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "我上午十点十分有课。",
+          "py": "wǒ shàng wǔ shí diǎn shí fēn yǒu kè。",
+          "vi": "Mười giờ mười sáng tôi có tiết học."
+        },
+        {
+          "id": "textbook-l07-grammar-01:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-01",
+          "zh": "上午",
+          "py": "Shàngwǔ",
+          "vi": "Buổi sáng"
+        },
+        {
+          "id": "textbook-l07-grammar-03:example:3",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-03",
+          "zh": "她上午十点半上课。",
+          "py": "Tā shàngwǔ shí diǎn bàn shàngkè.",
+          "vi": "Cô ấy học lúc mười giờ rưỡi sáng."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-0d7416e2e2-s1",
+      "recordId": "v-l07-lex-0d7416e2e2-s1",
+      "lesson": 7,
+      "zh": "分",
+      "before": [
+        {
+          "id": "textbook-l07-text-1-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "我上午十点十分有课。",
+          "py": "wǒ shàng wǔ shí diǎn shí fēn yǒu kè。",
+          "vi": "Mười giờ mười sáng tôi có tiết học."
+        },
+        {
+          "id": "textbook-l07-text-3-line-06",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "好，我十分钟后去。",
+          "py": "hǎo， wǒ shí fēn zhōng hòu qù。",
+          "vi": "Được, mười phút nữa anh đi."
+        },
+        {
+          "id": "textbook-l07-grammar-01:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-01",
+          "zh": "上午十点十分",
+          "py": "shàng wǔ shí diǎn shí fēn",
+          "vi": "10 giờ 10 sáng"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-1-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "我上午十点十分有课。",
+          "py": "wǒ shàng wǔ shí diǎn shí fēn yǒu kè。",
+          "vi": "Mười giờ mười sáng tôi có tiết học."
+        },
+        {
+          "id": "textbook-l07-text-3-line-06",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "好，我十分钟后去。",
+          "py": "hǎo， wǒ shí fēn zhōng hòu qù。",
+          "vi": "Được, mười phút nữa anh đi."
+        },
+        {
+          "id": "textbook-l07-grammar-01:example:4",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-01",
+          "zh": "晚上九点十分",
+          "py": "Wǎnshang jiǔ diǎn shí fēn",
+          "vi": "Chín giờ mười phút tối"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-510db33099-s1",
+      "recordId": "v-l07-lex-510db33099-s1",
+      "lesson": 7,
+      "zh": "课",
+      "before": [
+        {
+          "id": "textbook-l07-text-1-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "我上午十点十分有课。",
+          "py": "wǒ shàng wǔ shí diǎn shí fēn yǒu kè。",
+          "vi": "Mười giờ mười sáng tôi có tiết học."
+        },
+        {
+          "id": "textbook-l07-text-2-line-04",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-2",
+          "zh": "我明天下午两点还上课呢，四点半下课。",
+          "py": "wǒ míng tiān xià wǔ liǎng diǎn hái shàng kè ne， sì diǎn bàn xià kè。",
+          "vi": "Hai giờ chiều mai tôi vẫn còn học, bốn rưỡi mới tan học."
+        },
+        {
+          "id": "textbook-l07-grammar-03:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-03",
+          "zh": "她上午十点半上课。",
+          "py": "tā shàng wǔ shí diǎn bàn shàng kè。",
+          "vi": "Cô ấy vào học lúc 10 giờ 30 sáng."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-1-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "我上午十点十分有课。",
+          "py": "wǒ shàng wǔ shí diǎn shí fēn yǒu kè。",
+          "vi": "Mười giờ mười sáng tôi có tiết học."
+        },
+        {
+          "id": "textbook-l07-text-2-line-04",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-2",
+          "zh": "我明天下午两点还上课呢，四点半下课。",
+          "py": "wǒ míng tiān xià wǔ liǎng diǎn hái shàng kè ne， sì diǎn bàn xià kè。",
+          "vi": "Hai giờ chiều mai tôi vẫn còn học, bốn rưỡi mới tan học."
+        },
+        {
+          "id": "textbook-l07-grammar-03:example:3",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-03",
+          "zh": "她上午十点半上课。",
+          "py": "Tā shàngwǔ shí diǎn bàn shàngkè.",
+          "vi": "Cô ấy học lúc mười giờ rưỡi sáng."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-d65fa821b0-s1",
+      "recordId": "v-l07-lex-d65fa821b0-s1",
+      "lesson": 7,
+      "zh": "见",
+      "before": [
+        {
+          "id": "textbook-l07-text-1-line-04",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "好的，我们下午两点见吧。",
+          "py": "hǎo de， wǒ men xià wǔ liǎng diǎn jiàn ba。",
+          "vi": "Được, hai giờ chiều chúng ta gặp nhau nhé."
+        },
+        {
+          "id": "textbook-l07-grammar-02:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-02",
+          "zh": "我们下午三点见吧。",
+          "py": "wǒ men xià wǔ sān diǎn jiàn ba。",
+          "vi": "Ba giờ chiều chúng ta gặp nhau nhé."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-1-line-04",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "好的，我们下午两点见吧。",
+          "py": "hǎo de， wǒ men xià wǔ liǎng diǎn jiàn ba。",
+          "vi": "Được, hai giờ chiều chúng ta gặp nhau nhé."
+        },
+        {
+          "id": "textbook-l07-grammar-02:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-02",
+          "zh": "A：我们下午三点见吧。\nB：好的。",
+          "py": "A: Wǒmen xiàwǔ sān diǎn jiàn ba.\nB: Hǎo de.",
+          "vi": "A: Chiều nay ba giờ chúng ta gặp nhé.\nB: Được."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-01afc04c9a-s1",
+      "recordId": "v-l07-lex-01afc04c9a-s1",
+      "lesson": 7,
+      "zh": "吧",
+      "before": [
+        {
+          "id": "textbook-l07-text-1-line-04",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "好的，我们下午两点见吧。",
+          "py": "hǎo de， wǒ men xià wǔ liǎng diǎn jiàn ba。",
+          "vi": "Được, hai giờ chiều chúng ta gặp nhau nhé."
+        },
+        {
+          "id": "textbook-l07-text-3-line-05",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "好的，你去店里买些菜吧。",
+          "py": "hǎo de， nǐ qù diàn lǐ mǎi xiē cài ba。",
+          "vi": "Được, anh đi cửa hàng mua ít rau nhé."
+        },
+        {
+          "id": "textbook-l07-grammar-02:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-02",
+          "zh": "我们下午三点见吧。",
+          "py": "wǒ men xià wǔ sān diǎn jiàn ba。",
+          "vi": "Ba giờ chiều chúng ta gặp nhau nhé."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-1-line-04",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-1",
+          "zh": "好的，我们下午两点见吧。",
+          "py": "hǎo de， wǒ men xià wǔ liǎng diǎn jiàn ba。",
+          "vi": "Được, hai giờ chiều chúng ta gặp nhau nhé."
+        },
+        {
+          "id": "textbook-l07-text-3-line-05",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "好的，你去店里买些菜吧。",
+          "py": "Hǎo de, nǐ qù diàn li mǎi xiē cài ba.",
+          "vi": "Được, anh đi cửa hàng mua ít rau nhé."
+        },
+        {
+          "id": "textbook-l07-grammar-02:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-02",
+          "zh": "A：我们下午三点见吧。\nB：好的。",
+          "py": "A: Wǒmen xiàwǔ sān diǎn jiàn ba.\nB: Hǎo de.",
+          "vi": "A: Chiều nay ba giờ chúng ta gặp nhé.\nB: Được."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-aae4884162-s1",
+      "recordId": "v-l07-lex-aae4884162-s1",
+      "lesson": 7,
+      "zh": "事",
+      "before": [
+        {
+          "id": "textbook-l07-text-2-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-2",
+          "zh": "我不想去，下午还有事。",
+          "py": "wǒ bù xiǎng qù， xià wǔ hái yǒu shì。",
+          "vi": "Tôi không muốn đi, chiều nay tôi còn có việc."
+        },
+        {
+          "id": "textbook-l07-grammar-04:example:2",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "李文晚上还有事呢。",
+          "py": "lǐ wén wǎn shàng hái yǒu shì ne。",
+          "vi": "Buổi tối Lý Văn vẫn còn có việc đấy."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-2-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-2",
+          "zh": "我不想去，下午还有事。",
+          "py": "wǒ bù xiǎng qù， xià wǔ hái yǒu shì。",
+          "vi": "Tôi không muốn đi, chiều nay tôi còn có việc."
+        },
+        {
+          "id": "textbook-l07-grammar-04:example:3",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "李文晚上还有事呢。",
+          "py": "Lǐ Wén wǎnshang hái yǒu shì ne.",
+          "vi": "Buổi tối Lý Văn vẫn còn có việc đấy."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-14f4569aeb-s1",
+      "recordId": "v-l07-lex-14f4569aeb-s1",
+      "lesson": 7,
+      "zh": "上课",
+      "before": [
+        {
+          "id": "textbook-l07-text-2-line-04",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-2",
+          "zh": "我明天下午两点还上课呢，四点半下课。",
+          "py": "wǒ míng tiān xià wǔ liǎng diǎn hái shàng kè ne， sì diǎn bàn xià kè。",
+          "vi": "Hai giờ chiều mai tôi vẫn còn học, bốn rưỡi mới tan học."
+        },
+        {
+          "id": "textbook-l07-grammar-03:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-03",
+          "zh": "她上午十点半上课。",
+          "py": "tā shàng wǔ shí diǎn bàn shàng kè。",
+          "vi": "Cô ấy vào học lúc 10 giờ 30 sáng."
+        },
+        {
+          "id": "textbook-l07-grammar-04:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "我明天下午两点还上课呢。",
+          "py": "wǒ míng tiān xià wǔ liǎng diǎn hái shàng kè ne。",
+          "vi": "Hai giờ chiều mai tôi vẫn còn học đấy."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-2-line-04",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-2",
+          "zh": "我明天下午两点还上课呢，四点半下课。",
+          "py": "wǒ míng tiān xià wǔ liǎng diǎn hái shàng kè ne， sì diǎn bàn xià kè。",
+          "vi": "Hai giờ chiều mai tôi vẫn còn học, bốn rưỡi mới tan học."
+        },
+        {
+          "id": "textbook-l07-grammar-03:example:3",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-03",
+          "zh": "她上午十点半上课。",
+          "py": "Tā shàngwǔ shí diǎn bàn shàngkè.",
+          "vi": "Cô ấy học lúc mười giờ rưỡi sáng."
+        },
+        {
+          "id": "textbook-l07-grammar-04:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "我明天下午两点还上课呢。",
+          "py": "Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne.",
+          "vi": "Chiều mai lúc hai giờ tôi vẫn còn tiết học đấy."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-dcf66dcd60-s2",
+      "recordId": "v-l07-lex-dcf66dcd60-s2",
+      "lesson": 7,
+      "zh": "呢",
+      "before": [
+        {
+          "id": "textbook-l07-grammar-04:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "我明天下午两点还上课呢。",
+          "py": "wǒ míng tiān xià wǔ liǎng diǎn hái shàng kè ne。",
+          "vi": "Hai giờ chiều mai tôi vẫn còn học đấy."
+        },
+        {
+          "id": "textbook-l07-grammar-04:example:2",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "李文晚上还有事呢。",
+          "py": "lǐ wén wǎn shàng hái yǒu shì ne。",
+          "vi": "Buổi tối Lý Văn vẫn còn có việc đấy."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-grammar-04:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "我明天下午两点还上课呢。",
+          "py": "Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne.",
+          "vi": "Chiều mai lúc hai giờ tôi vẫn còn tiết học đấy."
+        },
+        {
+          "id": "textbook-l07-grammar-04:example:3",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "李文晚上还有事呢。",
+          "py": "Lǐ Wén wǎnshang hái yǒu shì ne.",
+          "vi": "Buổi tối Lý Văn vẫn còn có việc đấy."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-2bff6583b6-s1",
+      "recordId": "v-l07-lex-2bff6583b6-s1",
+      "lesson": 7,
+      "zh": "半",
+      "before": [
+        {
+          "id": "textbook-l07-text-2-line-04",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-2",
+          "zh": "我明天下午两点还上课呢，四点半下课。",
+          "py": "wǒ míng tiān xià wǔ liǎng diǎn hái shàng kè ne， sì diǎn bàn xià kè。",
+          "vi": "Hai giờ chiều mai tôi vẫn còn học, bốn rưỡi mới tan học."
+        },
+        {
+          "id": "textbook-l07-text-3-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "我晚上六点半下班。",
+          "py": "wǒ wǎn shàng liù diǎn bàn xià bān。",
+          "vi": "Tối nay sáu rưỡi em tan làm."
+        },
+        {
+          "id": "textbook-l07-grammar-01:example:3",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-01",
+          "zh": "晚上六点半",
+          "py": "wǎn shàng liù diǎn bàn",
+          "vi": "6 giờ rưỡi tối"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-2-line-04",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-2",
+          "zh": "我明天下午两点还上课呢，四点半下课。",
+          "py": "wǒ míng tiān xià wǔ liǎng diǎn hái shàng kè ne， sì diǎn bàn xià kè。",
+          "vi": "Hai giờ chiều mai tôi vẫn còn học, bốn rưỡi mới tan học."
+        },
+        {
+          "id": "textbook-l07-text-3-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "我晚上六点半下班。",
+          "py": "Wǒ wǎnshang liù diǎn bàn xiàbān.",
+          "vi": "Tối nay sáu rưỡi em tan làm."
+        },
+        {
+          "id": "textbook-l07-grammar-01:example:3",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-01",
+          "zh": "下午两点半",
+          "py": "Xiàwǔ liǎng diǎn bàn",
+          "vi": "Hai giờ rưỡi chiều"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-686b703f41-s1",
+      "recordId": "v-l07-lex-686b703f41-s1",
+      "lesson": 7,
+      "zh": "在",
+      "before": [
+        {
+          "id": "textbook-l07-text-3-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "我在家里呢。",
+          "py": "wǒ zài jiā lǐ ne。",
+          "vi": "Anh đang ở nhà."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-3-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "我在家里呢。",
+          "py": "Wǒ zài jiā li ne.",
+          "vi": "Anh đang ở nhà."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-7de8177ce7-s2",
+      "recordId": "v-l07-lex-7de8177ce7-s2",
+      "lesson": 7,
+      "zh": "家",
+      "before": [
+        {
+          "id": "textbook-l07-text-3-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "我在家里呢。",
+          "py": "wǒ zài jiā lǐ ne。",
+          "vi": "Anh đang ở nhà."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-3-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "我在家里呢。",
+          "py": "Wǒ zài jiā li ne.",
+          "vi": "Anh đang ở nhà."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-c5a8f40bc0-s1",
+      "recordId": "v-l07-lex-c5a8f40bc0-s1",
+      "lesson": 7,
+      "zh": "里",
+      "before": [
+        {
+          "id": "textbook-l07-text-3-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "我在家里呢。",
+          "py": "wǒ zài jiā lǐ ne。",
+          "vi": "Anh đang ở nhà."
+        },
+        {
+          "id": "textbook-l07-text-3-line-05",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "好的，你去店里买些菜吧。",
+          "py": "hǎo de， nǐ qù diàn lǐ mǎi xiē cài ba。",
+          "vi": "Được, anh đi cửa hàng mua ít rau nhé."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-3-line-02",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "我在家里呢。",
+          "py": "Wǒ zài jiā li ne.",
+          "vi": "Anh đang ở nhà."
+        },
+        {
+          "id": "textbook-l07-text-3-line-05",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "好的，你去店里买些菜吧。",
+          "py": "Hǎo de, nǐ qù diàn li mǎi xiē cài ba.",
+          "vi": "Được, anh đi cửa hàng mua ít rau nhé."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-76a4159492-s1",
+      "recordId": "v-l07-lex-76a4159492-s1",
+      "lesson": 7,
+      "zh": "晚上",
+      "before": [
+        {
+          "id": "textbook-l07-text-3-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "我晚上六点半下班。",
+          "py": "wǒ wǎn shàng liù diǎn bàn xià bān。",
+          "vi": "Tối nay sáu rưỡi em tan làm."
+        },
+        {
+          "id": "textbook-l07-grammar-01:example:3",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-01",
+          "zh": "晚上六点半",
+          "py": "wǎn shàng liù diǎn bàn",
+          "vi": "6 giờ rưỡi tối"
+        },
+        {
+          "id": "textbook-l07-grammar-04:example:2",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "李文晚上还有事呢。",
+          "py": "lǐ wén wǎn shàng hái yǒu shì ne。",
+          "vi": "Buổi tối Lý Văn vẫn còn có việc đấy."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-3-line-03",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "我晚上六点半下班。",
+          "py": "Wǒ wǎnshang liù diǎn bàn xiàbān.",
+          "vi": "Tối nay sáu rưỡi em tan làm."
+        },
+        {
+          "id": "textbook-l07-grammar-01:example:4",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-01",
+          "zh": "晚上九点十分",
+          "py": "Wǎnshang jiǔ diǎn shí fēn",
+          "vi": "Chín giờ mười phút tối"
+        },
+        {
+          "id": "textbook-l07-grammar-04:example:3",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "李文晚上还有事呢。",
+          "py": "Lǐ Wén wǎnshang hái yǒu shì ne.",
+          "vi": "Buổi tối Lý Văn vẫn còn có việc đấy."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-22df192e24-s1",
+      "recordId": "v-l07-lex-22df192e24-s1",
+      "lesson": 7,
+      "zh": "店",
+      "before": [
+        {
+          "id": "textbook-l07-text-3-line-05",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "好的，你去店里买些菜吧。",
+          "py": "hǎo de， nǐ qù diàn lǐ mǎi xiē cài ba。",
+          "vi": "Được, anh đi cửa hàng mua ít rau nhé."
+        },
+        {
+          "id": "textbook-l07-grammar-02:example:2",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-02",
+          "zh": "我们去西安饭店吃晚饭吧。",
+          "py": "wǒ men qù xī ān fàn diàn chī wǎn fàn ba。",
+          "vi": "Chúng ta đến Nhà hàng Tây An ăn tối nhé."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-3-line-05",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "好的，你去店里买些菜吧。",
+          "py": "Hǎo de, nǐ qù diàn li mǎi xiē cài ba.",
+          "vi": "Được, anh đi cửa hàng mua ít rau nhé."
+        },
+        {
+          "id": "textbook-l07-grammar-02:example:3",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-02",
+          "zh": "A：我们去西安饭店吃晚饭吧。\nB：好的。",
+          "py": "A: Wǒmen qù Xī’ān Fàndiàn chī wǎnfàn ba.\nB: Hǎo de.",
+          "vi": "A: Chúng ta đến nhà hàng Tây An ăn tối nhé.\nB: Được."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-7b4bb888fb-s2",
+      "recordId": "v-l07-lex-7b4bb888fb-s2",
+      "lesson": 7,
+      "zh": "菜",
+      "before": [
+        {
+          "id": "textbook-l07-text-3-line-05",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "好的，你去店里买些菜吧。",
+          "py": "hǎo de， nǐ qù diàn lǐ mǎi xiē cài ba。",
+          "vi": "Được, anh đi cửa hàng mua ít rau nhé."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-text-3-line-05",
+          "lesson": 7,
+          "section": "text",
+          "sourceId": "textbook-l07-text-3",
+          "zh": "好的，你去店里买些菜吧。",
+          "py": "Hǎo de, nǐ qù diàn li mǎi xiē cài ba.",
+          "vi": "Được, anh đi cửa hàng mua ít rau nhé."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-dab2ced927-s1",
+      "recordId": "v-l08-lex-dab2ced927-s1",
+      "lesson": 8,
+      "zh": "房间",
+      "before": [
+        {
+          "id": "textbook-l08-text-1-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "房间外有一只小猫。",
+          "py": "fáng jiān wài yǒu yì zhī xiǎo māo。",
+          "vi": "Bên ngoài phòng có một chú mèo con."
+        },
+        {
+          "id": "textbook-l08-grammar-01:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-01",
+          "zh": "房间里有一只小猫。",
+          "py": "fáng jiān lǐ yǒu yì zhī xiǎo māo。",
+          "vi": "Trong phòng có một chú mèo con."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-1-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "房间外有一只小猫。",
+          "py": "fáng jiān wài yǒu yì zhī xiǎo māo。",
+          "vi": "Bên ngoài phòng có một chú mèo con."
+        },
+        {
+          "id": "textbook-l08-grammar-01:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-01",
+          "zh": "房间里有一只小猫。",
+          "py": "Fángjiān li yǒu yì zhī xiǎo māo.",
+          "vi": "Trong phòng có một chú mèo con."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-0e0faa1d83-s1",
+      "recordId": "v-l08-lex-0e0faa1d83-s1",
+      "lesson": 8,
+      "zh": "外",
+      "before": [
+        {
+          "id": "textbook-l08-text-1-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "房间外有一只小猫。",
+          "py": "fáng jiān wài yǒu yì zhī xiǎo māo。",
+          "vi": "Bên ngoài phòng có một chú mèo con."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-1-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "房间外有一只小猫。",
+          "py": "fáng jiān wài yǒu yì zhī xiǎo māo。",
+          "vi": "Bên ngoài phòng có một chú mèo con."
+        },
+        {
+          "id": "textbook-l08-grammar-01:example:2",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-01",
+          "zh": "我们去书店外吧。",
+          "py": "Wǒmen qù shūdiàn wài ba.",
+          "vi": "Chúng ta ra ngoài hiệu sách nhé."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-462f338ef8-s1",
+      "recordId": "v-l08-lex-462f338ef8-s1",
+      "lesson": 8,
+      "zh": "只",
+      "before": [
+        {
+          "id": "textbook-l08-text-1-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "房间外有一只小猫。",
+          "py": "fáng jiān wài yǒu yì zhī xiǎo māo。",
+          "vi": "Bên ngoài phòng có một chú mèo con."
+        },
+        {
+          "id": "textbook-l08-text-1-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "这只小猫真漂亮！",
+          "py": "zhè zhī xiǎo māo zhēn piàoliang！",
+          "vi": "Chú mèo này đẹp thật!"
+        },
+        {
+          "id": "textbook-l08-grammar-01:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-01",
+          "zh": "房间里有一只小猫。",
+          "py": "fáng jiān lǐ yǒu yì zhī xiǎo māo。",
+          "vi": "Trong phòng có một chú mèo con."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-1-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "房间外有一只小猫。",
+          "py": "fáng jiān wài yǒu yì zhī xiǎo māo。",
+          "vi": "Bên ngoài phòng có một chú mèo con."
+        },
+        {
+          "id": "textbook-l08-text-1-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "这只小猫真漂亮！",
+          "py": "zhè zhī xiǎo māo zhēn piàoliang！",
+          "vi": "Chú mèo này đẹp thật!"
+        },
+        {
+          "id": "textbook-l08-grammar-01:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-01",
+          "zh": "房间里有一只小猫。",
+          "py": "Fángjiān li yǒu yì zhī xiǎo māo.",
+          "vi": "Trong phòng có một chú mèo con."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-e10bd9f09b-s1",
+      "recordId": "v-l08-lex-e10bd9f09b-s1",
+      "lesson": 8,
+      "zh": "猫",
+      "before": [
+        {
+          "id": "textbook-l08-text-1-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "房间外有一只小猫。",
+          "py": "fáng jiān wài yǒu yì zhī xiǎo māo。",
+          "vi": "Bên ngoài phòng có một chú mèo con."
+        },
+        {
+          "id": "textbook-l08-text-1-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "这只小猫真漂亮！",
+          "py": "zhè zhī xiǎo māo zhēn piàoliang！",
+          "vi": "Chú mèo này đẹp thật!"
+        },
+        {
+          "id": "textbook-l08-grammar-01:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-01",
+          "zh": "房间里有一只小猫。",
+          "py": "fáng jiān lǐ yǒu yì zhī xiǎo māo。",
+          "vi": "Trong phòng có một chú mèo con."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-1-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "房间外有一只小猫。",
+          "py": "fáng jiān wài yǒu yì zhī xiǎo māo。",
+          "vi": "Bên ngoài phòng có một chú mèo con."
+        },
+        {
+          "id": "textbook-l08-text-1-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "这只小猫真漂亮！",
+          "py": "zhè zhī xiǎo māo zhēn piàoliang！",
+          "vi": "Chú mèo này đẹp thật!"
+        },
+        {
+          "id": "textbook-l08-grammar-01:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-01",
+          "zh": "房间里有一只小猫。",
+          "py": "Fángjiān li yǒu yì zhī xiǎo māo.",
+          "vi": "Trong phòng có một chú mèo con."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-ca0bc5e27c-s1",
+      "recordId": "v-l08-lex-ca0bc5e27c-s1",
+      "lesson": 8,
+      "zh": "没",
+      "before": [
+        {
+          "id": "textbook-l08-text-1-line-02",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "我没看见，它在哪儿呢？",
+          "py": "wǒ méi kàn jiàn， tā zài nǎ ér ne？",
+          "vi": "Tôi không nhìn thấy, nó ở đâu vậy?"
+        },
+        {
+          "id": "textbook-l08-text-3-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-3",
+          "zh": "小胡，还没吃饭呢？",
+          "py": "xiǎo Hú，hái méi chī fàn ne？",
+          "vi": "Tiểu Hồ, cậu vẫn chưa ăn à?"
+        },
+        {
+          "id": "textbook-l08-text-3-line-02",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-3",
+          "zh": "没吃呢。",
+          "py": "méi chī ne。",
+          "vi": "Tôi chưa ăn."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-1-line-02",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "我没看见，它在哪儿呢？",
+          "py": "Wǒ méi kànjiàn, tā zài nǎr ne?",
+          "vi": "Tôi không nhìn thấy, nó ở đâu vậy?"
+        },
+        {
+          "id": "textbook-l08-text-3-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-3",
+          "zh": "小胡，还没吃饭呢？",
+          "py": "xiǎo Hú，hái méi chī fàn ne？",
+          "vi": "Tiểu Hồ, cậu vẫn chưa ăn à?"
+        },
+        {
+          "id": "textbook-l08-text-3-line-02",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-3",
+          "zh": "没吃呢。",
+          "py": "méi chī ne。",
+          "vi": "Tôi chưa ăn."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-7fd3df7ebc-s1",
+      "recordId": "v-l08-lex-7fd3df7ebc-s1",
+      "lesson": 8,
+      "zh": "看见",
+      "before": [
+        {
+          "id": "textbook-l08-text-1-line-02",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "我没看见，它在哪儿呢？",
+          "py": "wǒ méi kàn jiàn， tā zài nǎ ér ne？",
+          "vi": "Tôi không nhìn thấy, nó ở đâu vậy?"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-1-line-02",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "我没看见，它在哪儿呢？",
+          "py": "Wǒ méi kànjiàn, tā zài nǎr ne?",
+          "vi": "Tôi không nhìn thấy, nó ở đâu vậy?"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-22b263f45c-s1",
+      "recordId": "v-l08-lex-22b263f45c-s1",
+      "lesson": 8,
+      "zh": "桌子",
+      "before": [
+        {
+          "id": "textbook-l08-text-1-line-03",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "它在桌子下呢。",
+          "py": "tā zài zhuō zi xià ne。",
+          "vi": "Nó ở dưới bàn."
+        },
+        {
+          "id": "textbook-l08-grammar-01:example:2",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-01",
+          "zh": "小雪的手机在桌子上。",
+          "py": "xiǎo xuě de shǒu jī zài zhuō zi shàng。",
+          "vi": "Điện thoại của Tiểu Tuyết ở trên bàn."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-1-line-03",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-1",
+          "zh": "它在桌子下呢。",
+          "py": "tā zài zhuō zi xià ne。",
+          "vi": "Nó ở dưới bàn."
+        },
+        {
+          "id": "textbook-l08-grammar-01:example:3",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-01",
+          "zh": "小雪的手机在桌子上呢。",
+          "py": "Xiǎoxuě de shǒujī zài zhuōzi shàng ne.",
+          "vi": "Điện thoại của Tiểu Tuyết ở trên bàn đấy."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-686b703f41-s2",
+      "recordId": "v-l08-lex-686b703f41-s2",
+      "lesson": 8,
+      "zh": "在",
+      "before": [
+        {
+          "id": "textbook-l08-grammar-02:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "我在学校吃午饭。",
+          "py": "wǒ zài xué xiào chī wǔ fàn。",
+          "vi": "Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-02:example:2",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "他爸爸在医院工作。",
+          "py": "tā bàba zài yī yuàn gōng zuò。",
+          "vi": "Bố anh ấy làm việc ở bệnh viện."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-grammar-02:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "我在学校吃午饭。",
+          "py": "Wǒ zài xuéxiào chī wǔfàn.",
+          "vi": "Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-02:example:2",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "他爸爸在医院工作。",
+          "py": "Tā bàba zài yīyuàn gōngzuò.",
+          "vi": "Bố anh ấy làm việc ở bệnh viện."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-08610a85a1-s1",
+      "recordId": "v-l08-lex-08610a85a1-s1",
+      "lesson": 8,
+      "zh": "学校",
+      "before": [
+        {
+          "id": "textbook-l08-text-2-line-02",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "在学校书店前见吧。",
+          "py": "zài xué xiào shū diàn qián jiàn ba。",
+          "vi": "Gặp nhau trước hiệu sách của trường nhé."
+        },
+        {
+          "id": "textbook-l08-text-2-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "我能到。我在学校吃午饭。",
+          "py": "wǒ néng dào。wǒ zài xuéxiào chī wǔfàn。",
+          "vi": "Tôi đến được. Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-02:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "我在学校吃午饭。",
+          "py": "wǒ zài xué xiào chī wǔ fàn。",
+          "vi": "Tôi ăn trưa ở trường."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-2-line-02",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "在学校书店前见吧。",
+          "py": "zài xué xiào shū diàn qián jiàn ba。",
+          "vi": "Gặp nhau trước hiệu sách của trường nhé."
+        },
+        {
+          "id": "textbook-l08-text-2-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "我能到。我在学校吃午饭。",
+          "py": "wǒ néng dào。wǒ zài xuéxiào chī wǔfàn。",
+          "vi": "Tôi đến được. Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-02:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "我在学校吃午饭。",
+          "py": "Wǒ zài xuéxiào chī wǔfàn.",
+          "vi": "Tôi ăn trưa ở trường."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-0b084710a9-s1",
+      "recordId": "v-l08-lex-0b084710a9-s1",
+      "lesson": 8,
+      "zh": "书店",
+      "before": [
+        {
+          "id": "textbook-l08-text-2-line-02",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "在学校书店前见吧。",
+          "py": "zài xué xiào shū diàn qián jiàn ba。",
+          "vi": "Gặp nhau trước hiệu sách của trường nhé."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-2-line-02",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "在学校书店前见吧。",
+          "py": "zài xué xiào shū diàn qián jiàn ba。",
+          "vi": "Gặp nhau trước hiệu sách của trường nhé."
+        },
+        {
+          "id": "textbook-l08-grammar-01:example:2",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-01",
+          "zh": "我们去书店外吧。",
+          "py": "Wǒmen qù shūdiàn wài ba.",
+          "vi": "Chúng ta ra ngoài hiệu sách nhé."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-7321380d3c-s1",
+      "recordId": "v-l08-lex-7321380d3c-s1",
+      "lesson": 8,
+      "zh": "能",
+      "before": [
+        {
+          "id": "textbook-l08-text-2-line-03",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "好的。下午两点你能到吗？",
+          "py": "hǎo de。 xià wǔ liǎng diǎn nǐ néng dào ma？",
+          "vi": "Được. Hai giờ chiều bạn đến được không?"
+        },
+        {
+          "id": "textbook-l08-text-2-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "我能到。我在学校吃午饭。",
+          "py": "wǒ néng dào。wǒ zài xuéxiào chī wǔfàn。",
+          "vi": "Tôi đến được. Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-03:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-03",
+          "zh": "下午两点你能到吗？",
+          "py": "xià wǔ liǎng diǎn nǐ néng dào ma？",
+          "vi": "Hai giờ chiều bạn đến được không?"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-2-line-03",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "好的。下午两点你能到吗？",
+          "py": "hǎo de。 xià wǔ liǎng diǎn nǐ néng dào ma？",
+          "vi": "Được. Hai giờ chiều bạn đến được không?"
+        },
+        {
+          "id": "textbook-l08-text-2-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "我能到。我在学校吃午饭。",
+          "py": "wǒ néng dào。wǒ zài xuéxiào chī wǔfàn。",
+          "vi": "Tôi đến được. Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-03:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-03",
+          "zh": "下午两点你能到吗？",
+          "py": "Xiàwǔ liǎng diǎn nǐ néng dào ma?",
+          "vi": "Hai giờ chiều bạn đến được không?"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-792bbe6e08-s1",
+      "recordId": "v-l08-lex-792bbe6e08-s1",
+      "lesson": 8,
+      "zh": "到",
+      "before": [
+        {
+          "id": "textbook-l08-text-2-line-03",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "好的。下午两点你能到吗？",
+          "py": "hǎo de。 xià wǔ liǎng diǎn nǐ néng dào ma？",
+          "vi": "Được. Hai giờ chiều bạn đến được không?"
+        },
+        {
+          "id": "textbook-l08-text-2-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "我能到。我在学校吃午饭。",
+          "py": "wǒ néng dào。wǒ zài xuéxiào chī wǔfàn。",
+          "vi": "Tôi đến được. Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-03:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-03",
+          "zh": "下午两点你能到吗？",
+          "py": "xià wǔ liǎng diǎn nǐ néng dào ma？",
+          "vi": "Hai giờ chiều bạn đến được không?"
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-2-line-03",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "好的。下午两点你能到吗？",
+          "py": "hǎo de。 xià wǔ liǎng diǎn nǐ néng dào ma？",
+          "vi": "Được. Hai giờ chiều bạn đến được không?"
+        },
+        {
+          "id": "textbook-l08-text-2-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "我能到。我在学校吃午饭。",
+          "py": "wǒ néng dào。wǒ zài xuéxiào chī wǔfàn。",
+          "vi": "Tôi đến được. Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-03:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-03",
+          "zh": "下午两点你能到吗？",
+          "py": "Xiàwǔ liǎng diǎn nǐ néng dào ma?",
+          "vi": "Hai giờ chiều bạn đến được không?"
+        }
+      ]
+    },
+    {
+      "senseId": "lex-b530790b35-s1",
+      "recordId": "v-l08-lex-b530790b35-s1",
+      "lesson": 8,
+      "zh": "午饭",
+      "before": [
+        {
+          "id": "textbook-l08-text-2-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "我能到。我在学校吃午饭。",
+          "py": "wǒ néng dào。wǒ zài xuéxiào chī wǔfàn。",
+          "vi": "Tôi đến được. Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-02:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "我在学校吃午饭。",
+          "py": "wǒ zài xué xiào chī wǔ fàn。",
+          "vi": "Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-03:example:2",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-03",
+          "zh": "我不能去学校吃午饭。",
+          "py": "wǒ bù néng qù xué xiào chī wǔ fàn。",
+          "vi": "Tôi không thể đến trường ăn trưa."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-2-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "我能到。我在学校吃午饭。",
+          "py": "wǒ néng dào。wǒ zài xuéxiào chī wǔfàn。",
+          "vi": "Tôi đến được. Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-02:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "我在学校吃午饭。",
+          "py": "Wǒ zài xuéxiào chī wǔfàn.",
+          "vi": "Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-grammar-03:example:3",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-03",
+          "zh": "我不能去学校吃午饭。",
+          "py": "Wǒ bù néng qù xuéxiào chī wǔfàn.",
+          "vi": "Tôi không thể đến trường ăn trưa."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-cded745e11-s1",
+      "recordId": "v-l08-lex-cded745e11-s1",
+      "lesson": 8,
+      "zh": "饭",
+      "before": [
+        {
+          "id": "textbook-l08-text-2-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "我能到。我在学校吃午饭。",
+          "py": "wǒ néng dào。wǒ zài xuéxiào chī wǔfàn。",
+          "vi": "Tôi đến được. Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-text-3-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-3",
+          "zh": "小胡，还没吃饭呢？",
+          "py": "xiǎo Hú，hái méi chī fàn ne？",
+          "vi": "Tiểu Hồ, cậu vẫn chưa ăn à?"
+        },
+        {
+          "id": "textbook-l08-grammar-02:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "我在学校吃午饭。",
+          "py": "wǒ zài xué xiào chī wǔ fàn。",
+          "vi": "Tôi ăn trưa ở trường."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-text-2-line-04",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-2",
+          "zh": "我能到。我在学校吃午饭。",
+          "py": "wǒ néng dào。wǒ zài xuéxiào chī wǔfàn。",
+          "vi": "Tôi đến được. Tôi ăn trưa ở trường."
+        },
+        {
+          "id": "textbook-l08-text-3-line-01",
+          "lesson": 8,
+          "section": "text",
+          "sourceId": "textbook-l08-text-3",
+          "zh": "小胡，还没吃饭呢？",
+          "py": "xiǎo Hú，hái méi chī fàn ne？",
+          "vi": "Tiểu Hồ, cậu vẫn chưa ăn à?"
+        },
+        {
+          "id": "textbook-l08-grammar-02:example:1",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "我在学校吃午饭。",
+          "py": "Wǒ zài xuéxiào chī wǔfàn.",
+          "vi": "Tôi ăn trưa ở trường."
+        }
+      ]
+    },
+    {
+      "senseId": "lex-dd9fc2c0a1-s2",
+      "recordId": "v-l08-lex-dd9fc2c0a1-s2",
+      "lesson": 8,
+      "zh": "工作",
+      "before": [
+        {
+          "id": "textbook-l08-grammar-02:example:2",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "他爸爸在医院工作。",
+          "py": "tā bàba zài yī yuàn gōng zuò。",
+          "vi": "Bố anh ấy làm việc ở bệnh viện."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l08-grammar-02:example:2",
+          "lesson": 8,
+          "section": "grammar",
+          "sourceId": "textbook-l08-grammar-02",
+          "zh": "他爸爸在医院工作。",
+          "py": "Tā bàba zài yīyuàn gōngzuò.",
+          "vi": "Bố anh ấy làm việc ở bệnh viện."
+        }
+      ]
+    }
+  ],
+  "approvedChanges": [
+    {
+      "target": "textbook-l04-text-1-line-03",
+      "field": "py",
+      "lesson": 4,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          19
+        ],
+        "pdfPages": [
+          34
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-6c999d484a-s1",
+          "recordId": "v-l04-lex-6c999d484a-s1",
+          "exampleId": "textbook-l04-text-1-line-03"
+        },
+        {
+          "senseId": "lex-f7b2a6ee68-s1",
+          "recordId": "v-l04-lex-f7b2a6ee68-s1",
+          "exampleId": "textbook-l04-text-1-line-03"
+        },
+        {
+          "senseId": "lex-fbd5b75066-s1",
+          "recordId": "v-l04-lex-fbd5b75066-s1",
+          "exampleId": "textbook-l04-text-1-line-03"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l04-v002",
+      "field": "pos",
+      "lesson": 4,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          25
+        ],
+        "pdfPages": [
+          40
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l04-v002",
+      "field": "posLabel",
+      "lesson": 4,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          25
+        ],
+        "pdfPages": [
+          40
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l05-text-1-line-04",
+      "field": "py",
+      "lesson": 5,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          28
+        ],
+        "pdfPages": [
+          43
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-17e83cc25e-s1",
+          "recordId": "v-l05-lex-17e83cc25e-s1",
+          "exampleId": "textbook-l05-text-1-line-04"
+        },
+        {
+          "senseId": "lex-15917f3b32-s1",
+          "recordId": "v-l05-lex-15917f3b32-s1",
+          "exampleId": "textbook-l05-text-1-line-04"
+        },
+        {
+          "senseId": "lex-e35269378d-s1",
+          "recordId": "v-l05-lex-e35269378d-s1",
+          "exampleId": "textbook-l05-text-1-line-04"
+        },
+        {
+          "senseId": "lex-d9636d4a90-s1",
+          "recordId": "v-l05-lex-d9636d4a90-s1",
+          "exampleId": "textbook-l05-text-1-line-04"
+        },
+        {
+          "senseId": "lex-da11d57634-s1",
+          "recordId": "v-l05-lex-da11d57634-s1",
+          "exampleId": "textbook-l05-text-1-line-04"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l05-text-2-line-04",
+      "field": "py",
+      "lesson": 5,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          30
+        ],
+        "pdfPages": [
+          45
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-a313eb6397-s1",
+          "recordId": "v-l05-lex-a313eb6397-s1",
+          "exampleId": "textbook-l05-text-2-line-04"
+        },
+        {
+          "senseId": "lex-60f87a79fc-s1",
+          "recordId": "v-l05-lex-60f87a79fc-s1",
+          "exampleId": "textbook-l05-text-2-line-04"
+        },
+        {
+          "senseId": "lex-e35269378d-s1",
+          "recordId": "v-l05-lex-e35269378d-s1",
+          "exampleId": "textbook-l05-text-2-line-04"
+        },
+        {
+          "senseId": "lex-c25143d15d-s1",
+          "recordId": "v-l05-lex-c25143d15d-s1",
+          "exampleId": "textbook-l05-text-2-line-04"
+        },
+        {
+          "senseId": "lex-b86b2e837c-s1",
+          "recordId": "v-l05-lex-b86b2e837c-s1",
+          "exampleId": "textbook-l05-text-2-line-04"
+        },
+        {
+          "senseId": "lex-da2ad6fb7f-s1",
+          "recordId": "v-l05-lex-da2ad6fb7f-s1",
+          "exampleId": "textbook-l05-text-2-line-04"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l05-text-3-line-06",
+      "field": "py",
+      "lesson": 5,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          32
+        ],
+        "pdfPages": [
+          47
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-1969106a8f-s1",
+          "recordId": "v-l05-lex-1969106a8f-s1",
+          "exampleId": "textbook-l05-text-3-line-06"
+        },
+        {
+          "senseId": "lex-28aa475a79-s1",
+          "recordId": "v-l05-lex-28aa475a79-s1",
+          "exampleId": "textbook-l05-text-3-line-06"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l05-title",
+      "field": "title_py",
+      "lesson": 5,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          27
+        ],
+        "pdfPages": [
+          42
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l06-text-1-line-02",
+      "field": "py",
+      "lesson": 6,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          36
+        ],
+        "pdfPages": [
+          51
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-9c01ad0911-s1",
+          "recordId": "v-l06-lex-9c01ad0911-s1",
+          "exampleId": "textbook-l06-text-1-line-02"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l06-text-1-line-03",
+      "field": "py",
+      "lesson": 6,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          36
+        ],
+        "pdfPages": [
+          51
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-9c01ad0911-s1",
+          "recordId": "v-l06-lex-9c01ad0911-s1",
+          "exampleId": "textbook-l06-text-1-line-03"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l06-text-1-line-01",
+      "field": "py",
+      "lesson": 6,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          36
+        ],
+        "pdfPages": [
+          51
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-9c01ad0911-s1",
+          "recordId": "v-l06-lex-9c01ad0911-s1",
+          "exampleId": "textbook-l06-text-1-line-01"
+        },
+        {
+          "senseId": "lex-7f5716be5c-s2",
+          "recordId": "v-l06-lex-7f5716be5c-s2",
+          "exampleId": "textbook-l06-text-1-line-01"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l06-text-2-line-01",
+      "field": "py",
+      "lesson": 6,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          37
+        ],
+        "pdfPages": [
+          52
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-b76ce230d3-s1",
+          "recordId": "v-l06-lex-b76ce230d3-s1",
+          "exampleId": "textbook-l06-text-2-line-01"
+        },
+        {
+          "senseId": "lex-033fd274f0-s1",
+          "recordId": "v-l06-lex-033fd274f0-s1",
+          "exampleId": "textbook-l06-text-2-line-01"
+        },
+        {
+          "senseId": "lex-dce81b4475-s1",
+          "recordId": "v-l06-lex-dce81b4475-s1",
+          "exampleId": "textbook-l06-text-2-line-01"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l06-text-3-line-01",
+      "field": "py",
+      "lesson": 6,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          39
+        ],
+        "pdfPages": [
+          54
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-dce81b4475-s1",
+          "recordId": "v-l06-lex-dce81b4475-s1",
+          "exampleId": "textbook-l06-text-3-line-01"
+        },
+        {
+          "senseId": "lex-a10d4d5a63-s1",
+          "recordId": "v-l06-lex-a10d4d5a63-s1",
+          "exampleId": "textbook-l06-text-3-line-01"
+        },
+        {
+          "senseId": "lex-ffb032919b-s1",
+          "recordId": "v-l06-lex-ffb032919b-s1",
+          "exampleId": "textbook-l06-text-3-line-01"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l06-v014",
+      "field": "py",
+      "lesson": 6,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          40
+        ],
+        "pdfPages": [
+          55
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l06-title",
+      "field": "title_py",
+      "lesson": 6,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          35
+        ],
+        "pdfPages": [
+          50
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l07-text-3-line-02",
+      "field": "py",
+      "lesson": 7,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          51
+        ],
+        "pdfPages": [
+          66
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-686b703f41-s1",
+          "recordId": "v-l07-lex-686b703f41-s1",
+          "exampleId": "textbook-l07-text-3-line-02"
+        },
+        {
+          "senseId": "lex-7de8177ce7-s2",
+          "recordId": "v-l07-lex-7de8177ce7-s2",
+          "exampleId": "textbook-l07-text-3-line-02"
+        },
+        {
+          "senseId": "lex-c5a8f40bc0-s1",
+          "recordId": "v-l07-lex-c5a8f40bc0-s1",
+          "exampleId": "textbook-l07-text-3-line-02"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l07-text-3-line-05",
+      "field": "py",
+      "lesson": 7,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          51
+        ],
+        "pdfPages": [
+          66
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-01afc04c9a-s1",
+          "recordId": "v-l07-lex-01afc04c9a-s1",
+          "exampleId": "textbook-l07-text-3-line-05"
+        },
+        {
+          "senseId": "lex-c5a8f40bc0-s1",
+          "recordId": "v-l07-lex-c5a8f40bc0-s1",
+          "exampleId": "textbook-l07-text-3-line-05"
+        },
+        {
+          "senseId": "lex-22df192e24-s1",
+          "recordId": "v-l07-lex-22df192e24-s1",
+          "exampleId": "textbook-l07-text-3-line-05"
+        },
+        {
+          "senseId": "lex-7b4bb888fb-s2",
+          "recordId": "v-l07-lex-7b4bb888fb-s2",
+          "exampleId": "textbook-l07-text-3-line-05"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l07-text-1-line-02",
+      "field": "py",
+      "lesson": 7,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          46
+        ],
+        "pdfPages": [
+          61
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-1d59ea7cbb-s1",
+          "recordId": "v-l07-lex-1d59ea7cbb-s1",
+          "exampleId": "textbook-l07-text-1-line-02"
+        },
+        {
+          "senseId": "lex-172fb7196f-s1",
+          "recordId": "v-l07-lex-172fb7196f-s1",
+          "exampleId": "textbook-l07-text-1-line-02"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l07-text-3-line-01",
+      "field": "py",
+      "lesson": 7,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          51
+        ],
+        "pdfPages": [
+          66
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l07-text-3-line-03",
+      "field": "py",
+      "lesson": 7,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          51
+        ],
+        "pdfPages": [
+          66
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-2bff6583b6-s1",
+          "recordId": "v-l07-lex-2bff6583b6-s1",
+          "exampleId": "textbook-l07-text-3-line-03"
+        },
+        {
+          "senseId": "lex-76a4159492-s1",
+          "recordId": "v-l07-lex-76a4159492-s1",
+          "exampleId": "textbook-l07-text-3-line-03"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l07-title",
+      "field": "title_py",
+      "lesson": 7,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          45
+        ],
+        "pdfPages": [
+          60
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l08-text-1-line-02",
+      "field": "py",
+      "lesson": 8,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          55
+        ],
+        "pdfPages": [
+          70
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-ca0bc5e27c-s1",
+          "recordId": "v-l08-lex-ca0bc5e27c-s1",
+          "exampleId": "textbook-l08-text-1-line-02"
+        },
+        {
+          "senseId": "lex-7fd3df7ebc-s1",
+          "recordId": "v-l08-lex-7fd3df7ebc-s1",
+          "exampleId": "textbook-l08-text-1-line-02"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l08-text-2-line-01",
+      "field": "py",
+      "lesson": 8,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          57
+        ],
+        "pdfPages": [
+          72
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l08-title",
+      "field": "title_py",
+      "lesson": 8,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          54
+        ],
+        "pdfPages": [
+          69
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l06-grammar-01",
+      "field": "examples",
+      "lesson": 6,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          38
+        ],
+        "pdfPages": [
+          53
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-a48f3ad06d-s2",
+          "recordId": "v-l06-lex-a48f3ad06d-s2",
+          "exampleId": "textbook-l06-grammar-01:example:1"
+        },
+        {
+          "senseId": "lex-a48f3ad06d-s2",
+          "recordId": "v-l06-lex-a48f3ad06d-s2",
+          "exampleId": "textbook-l06-grammar-01:example:2"
+        },
+        {
+          "senseId": "lex-2aba41d89b-s1",
+          "recordId": "v-l06-lex-2aba41d89b-s1",
+          "exampleId": "textbook-l06-grammar-01:example:1"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false,
+      "beforeExampleCount": 2,
+      "afterExampleCount": 2
+    },
+    {
+      "target": "textbook-l06-grammar-02",
+      "field": "examples",
+      "lesson": 6,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          40
+        ],
+        "pdfPages": [
+          55
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-949fb2e914-s1",
+          "recordId": "v-l06-lex-949fb2e914-s1",
+          "exampleId": "textbook-l06-grammar-02:example:1"
+        },
+        {
+          "senseId": "lex-ffb032919b-s1",
+          "recordId": "v-l06-lex-ffb032919b-s1",
+          "exampleId": "textbook-l06-grammar-02:example:2"
+        },
+        {
+          "senseId": "lex-4a1e3b19fa-s1",
+          "recordId": "v-l06-lex-4a1e3b19fa-s1",
+          "exampleId": "textbook-l06-grammar-02:example:3"
+        },
+        {
+          "senseId": "lex-14534d703d-s1",
+          "recordId": "v-l06-lex-14534d703d-s1",
+          "exampleId": "textbook-l06-grammar-02:example:3"
+        },
+        {
+          "senseId": "lex-14534d703d-s1",
+          "recordId": "v-l06-lex-14534d703d-s1",
+          "exampleId": "textbook-l06-grammar-02:example:4"
+        },
+        {
+          "senseId": "lex-7c150e04dd-s1",
+          "recordId": "v-l06-lex-7c150e04dd-s1",
+          "exampleId": "textbook-l06-grammar-02:example:2"
+        },
+        {
+          "senseId": "lex-7c150e04dd-s1",
+          "recordId": "v-l06-lex-7c150e04dd-s1",
+          "exampleId": "textbook-l06-grammar-02:example:3"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false,
+      "beforeExampleCount": 2,
+      "afterExampleCount": 4
+    },
+    {
+      "target": "textbook-l07-grammar-01",
+      "field": "examples",
+      "lesson": 7,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          47
+        ],
+        "pdfPages": [
+          62
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-e214ee22dd-s1",
+          "recordId": "v-l07-lex-e214ee22dd-s1",
+          "exampleId": "textbook-l07-grammar-01:example:1"
+        },
+        {
+          "senseId": "lex-0d7416e2e2-s1",
+          "recordId": "v-l07-lex-0d7416e2e2-s1",
+          "exampleId": "textbook-l07-grammar-01:example:4"
+        },
+        {
+          "senseId": "lex-2bff6583b6-s1",
+          "recordId": "v-l07-lex-2bff6583b6-s1",
+          "exampleId": "textbook-l07-grammar-01:example:3"
+        },
+        {
+          "senseId": "lex-76a4159492-s1",
+          "recordId": "v-l07-lex-76a4159492-s1",
+          "exampleId": "textbook-l07-grammar-01:example:4"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false,
+      "beforeExampleCount": 3,
+      "afterExampleCount": 4
+    },
+    {
+      "target": "textbook-l07-grammar-02",
+      "field": "examples",
+      "lesson": 7,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          48
+        ],
+        "pdfPages": [
+          63
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-d65fa821b0-s1",
+          "recordId": "v-l07-lex-d65fa821b0-s1",
+          "exampleId": "textbook-l07-grammar-02:example:1"
+        },
+        {
+          "senseId": "lex-01afc04c9a-s1",
+          "recordId": "v-l07-lex-01afc04c9a-s1",
+          "exampleId": "textbook-l07-grammar-02:example:1"
+        },
+        {
+          "senseId": "lex-22df192e24-s1",
+          "recordId": "v-l07-lex-22df192e24-s1",
+          "exampleId": "textbook-l07-grammar-02:example:3"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false,
+      "beforeExampleCount": 2,
+      "afterExampleCount": 3
+    },
+    {
+      "target": "textbook-l07-grammar-03",
+      "field": "examples",
+      "lesson": 7,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          50
+        ],
+        "pdfPages": [
+          65
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-e214ee22dd-s1",
+          "recordId": "v-l07-lex-e214ee22dd-s1",
+          "exampleId": "textbook-l07-grammar-03:example:3"
+        },
+        {
+          "senseId": "lex-510db33099-s1",
+          "recordId": "v-l07-lex-510db33099-s1",
+          "exampleId": "textbook-l07-grammar-03:example:3"
+        },
+        {
+          "senseId": "lex-14f4569aeb-s1",
+          "recordId": "v-l07-lex-14f4569aeb-s1",
+          "exampleId": "textbook-l07-grammar-03:example:3"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false,
+      "beforeExampleCount": 2,
+      "afterExampleCount": 3
+    },
+    {
+      "target": "textbook-l07-grammar-04",
+      "field": "examples",
+      "lesson": 7,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          50
+        ],
+        "pdfPages": [
+          65
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-aae4884162-s1",
+          "recordId": "v-l07-lex-aae4884162-s1",
+          "exampleId": "textbook-l07-grammar-04:example:3"
+        },
+        {
+          "senseId": "lex-14f4569aeb-s1",
+          "recordId": "v-l07-lex-14f4569aeb-s1",
+          "exampleId": "textbook-l07-grammar-04:example:1"
+        },
+        {
+          "senseId": "lex-dcf66dcd60-s2",
+          "recordId": "v-l07-lex-dcf66dcd60-s2",
+          "exampleId": "textbook-l07-grammar-04:example:1"
+        },
+        {
+          "senseId": "lex-dcf66dcd60-s2",
+          "recordId": "v-l07-lex-dcf66dcd60-s2",
+          "exampleId": "textbook-l07-grammar-04:example:3"
+        },
+        {
+          "senseId": "lex-76a4159492-s1",
+          "recordId": "v-l07-lex-76a4159492-s1",
+          "exampleId": "textbook-l07-grammar-04:example:3"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false,
+      "beforeExampleCount": 2,
+      "afterExampleCount": 3
+    },
+    {
+      "target": "textbook-l08-grammar-01",
+      "field": "examples",
+      "lesson": 8,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          56
+        ],
+        "pdfPages": [
+          71
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-dab2ced927-s1",
+          "recordId": "v-l08-lex-dab2ced927-s1",
+          "exampleId": "textbook-l08-grammar-01:example:1"
+        },
+        {
+          "senseId": "lex-0e0faa1d83-s1",
+          "recordId": "v-l08-lex-0e0faa1d83-s1",
+          "exampleId": "textbook-l08-grammar-01:example:2"
+        },
+        {
+          "senseId": "lex-462f338ef8-s1",
+          "recordId": "v-l08-lex-462f338ef8-s1",
+          "exampleId": "textbook-l08-grammar-01:example:1"
+        },
+        {
+          "senseId": "lex-e10bd9f09b-s1",
+          "recordId": "v-l08-lex-e10bd9f09b-s1",
+          "exampleId": "textbook-l08-grammar-01:example:1"
+        },
+        {
+          "senseId": "lex-22b263f45c-s1",
+          "recordId": "v-l08-lex-22b263f45c-s1",
+          "exampleId": "textbook-l08-grammar-01:example:3"
+        },
+        {
+          "senseId": "lex-0b084710a9-s1",
+          "recordId": "v-l08-lex-0b084710a9-s1",
+          "exampleId": "textbook-l08-grammar-01:example:2"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false,
+      "beforeExampleCount": 2,
+      "afterExampleCount": 3
+    },
+    {
+      "target": "textbook-l08-grammar-02",
+      "field": "examples",
+      "lesson": 8,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          57
+        ],
+        "pdfPages": [
+          72
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-686b703f41-s2",
+          "recordId": "v-l08-lex-686b703f41-s2",
+          "exampleId": "textbook-l08-grammar-02:example:1"
+        },
+        {
+          "senseId": "lex-686b703f41-s2",
+          "recordId": "v-l08-lex-686b703f41-s2",
+          "exampleId": "textbook-l08-grammar-02:example:2"
+        },
+        {
+          "senseId": "lex-08610a85a1-s1",
+          "recordId": "v-l08-lex-08610a85a1-s1",
+          "exampleId": "textbook-l08-grammar-02:example:1"
+        },
+        {
+          "senseId": "lex-b530790b35-s1",
+          "recordId": "v-l08-lex-b530790b35-s1",
+          "exampleId": "textbook-l08-grammar-02:example:1"
+        },
+        {
+          "senseId": "lex-cded745e11-s1",
+          "recordId": "v-l08-lex-cded745e11-s1",
+          "exampleId": "textbook-l08-grammar-02:example:1"
+        },
+        {
+          "senseId": "lex-dd9fc2c0a1-s2",
+          "recordId": "v-l08-lex-dd9fc2c0a1-s2",
+          "exampleId": "textbook-l08-grammar-02:example:2"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false,
+      "beforeExampleCount": 2,
+      "afterExampleCount": 3
+    },
+    {
+      "target": "textbook-l08-grammar-03",
+      "field": "examples",
+      "lesson": 8,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          58
+        ],
+        "pdfPages": [
+          73
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-7321380d3c-s1",
+          "recordId": "v-l08-lex-7321380d3c-s1",
+          "exampleId": "textbook-l08-grammar-03:example:1"
+        },
+        {
+          "senseId": "lex-792bbe6e08-s1",
+          "recordId": "v-l08-lex-792bbe6e08-s1",
+          "exampleId": "textbook-l08-grammar-03:example:1"
+        },
+        {
+          "senseId": "lex-b530790b35-s1",
+          "recordId": "v-l08-lex-b530790b35-s1",
+          "exampleId": "textbook-l08-grammar-03:example:3"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false,
+      "beforeExampleCount": 2,
+      "afterExampleCount": 3
+    },
+    {
+      "target": "textbook-l06-grammar-02",
+      "field": "desc",
+      "lesson": 6,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          40
+        ],
+        "pdfPages": [
+          55
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-949fb2e914-s1",
+          "recordId": "v-l06-lex-949fb2e914-s1",
+          "exampleId": "textbook-l06-grammar-02:example:1"
+        },
+        {
+          "senseId": "lex-ffb032919b-s1",
+          "recordId": "v-l06-lex-ffb032919b-s1",
+          "exampleId": "textbook-l06-grammar-02:example:2"
+        },
+        {
+          "senseId": "lex-4a1e3b19fa-s1",
+          "recordId": "v-l06-lex-4a1e3b19fa-s1",
+          "exampleId": "textbook-l06-grammar-02:example:3"
+        },
+        {
+          "senseId": "lex-14534d703d-s1",
+          "recordId": "v-l06-lex-14534d703d-s1",
+          "exampleId": "textbook-l06-grammar-02:example:3"
+        },
+        {
+          "senseId": "lex-14534d703d-s1",
+          "recordId": "v-l06-lex-14534d703d-s1",
+          "exampleId": "textbook-l06-grammar-02:example:4"
+        },
+        {
+          "senseId": "lex-7c150e04dd-s1",
+          "recordId": "v-l06-lex-7c150e04dd-s1",
+          "exampleId": "textbook-l06-grammar-02:example:2"
+        },
+        {
+          "senseId": "lex-7c150e04dd-s1",
+          "recordId": "v-l06-lex-7c150e04dd-s1",
+          "exampleId": "textbook-l06-grammar-02:example:3"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    },
+    {
+      "target": "textbook-l07-grammar-01",
+      "field": "desc",
+      "lesson": 7,
+      "source": {
+        "id": "hsk1-chinese-original",
+        "printedPages": [
+          47
+        ],
+        "pdfPages": [
+          62
+        ]
+      },
+      "mainBookDisplayExactApprovedValue": true,
+      "exampleAPIBindings": [
+        {
+          "senseId": "lex-e214ee22dd-s1",
+          "recordId": "v-l07-lex-e214ee22dd-s1",
+          "exampleId": "textbook-l07-grammar-01:example:1"
+        },
+        {
+          "senseId": "lex-0d7416e2e2-s1",
+          "recordId": "v-l07-lex-0d7416e2e2-s1",
+          "exampleId": "textbook-l07-grammar-01:example:4"
+        },
+        {
+          "senseId": "lex-2bff6583b6-s1",
+          "recordId": "v-l07-lex-2bff6583b6-s1",
+          "exampleId": "textbook-l07-grammar-01:example:3"
+        },
+        {
+          "senseId": "lex-76a4159492-s1",
+          "recordId": "v-l07-lex-76a4159492-s1",
+          "exampleId": "textbook-l07-grammar-01:example:4"
+        }
+      ],
+      "apiConsumersVisibleOnMixedCard": false
+    }
+  ],
+  "selectedReviewedSourceAnchors": [
+    {
+      "senseId": "lex-4a1e3b19fa-s1",
+      "zh": "坐",
+      "expectedIds": [
+        "textbook-l06-grammar-02:example:3"
+      ],
+      "before": [
+        {
+          "id": "textbook-l06-grammar-02:example:2",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "我们坐出租车去西安饭店。",
+          "py": "wǒ men zuò chū zū chē qù xī ān fàn diàn。",
+          "vi": "Chúng ta đi taxi đến Nhà hàng Tây An."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-grammar-02:example:3",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-02",
+          "zh": "我们坐出租车去西安饭店。",
+          "py": "Wǒmen zuò chūzūchē qù Xī’ān Fàndiàn.",
+          "vi": "Chúng tôi đi taxi đến nhà hàng Tây An."
+        }
+      ],
+      "reviewedSourceSentenceAnchorRetained": true
+    },
+    {
+      "senseId": "lex-dcf66dcd60-s2",
+      "zh": "呢",
+      "expectedIds": [
+        "textbook-l07-grammar-04:example:1",
+        "textbook-l07-grammar-04:example:3"
+      ],
+      "before": [
+        {
+          "id": "textbook-l07-grammar-04:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "我明天下午两点还上课呢。",
+          "py": "wǒ míng tiān xià wǔ liǎng diǎn hái shàng kè ne。",
+          "vi": "Hai giờ chiều mai tôi vẫn còn học đấy."
+        },
+        {
+          "id": "textbook-l07-grammar-04:example:2",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "李文晚上还有事呢。",
+          "py": "lǐ wén wǎn shàng hái yǒu shì ne。",
+          "vi": "Buổi tối Lý Văn vẫn còn có việc đấy."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l07-grammar-04:example:1",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "我明天下午两点还上课呢。",
+          "py": "Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne.",
+          "vi": "Chiều mai lúc hai giờ tôi vẫn còn tiết học đấy."
+        },
+        {
+          "id": "textbook-l07-grammar-04:example:3",
+          "lesson": 7,
+          "section": "grammar",
+          "sourceId": "textbook-l07-grammar-04",
+          "zh": "李文晚上还有事呢。",
+          "py": "Lǐ Wén wǎnshang hái yǒu shì ne.",
+          "vi": "Buổi tối Lý Văn vẫn còn có việc đấy."
+        }
+      ],
+      "reviewedSourceSentenceAnchorRetained": true
+    },
+    {
+      "senseId": "lex-a48f3ad06d-s2",
+      "zh": "想",
+      "expectedIds": [
+        "textbook-l06-grammar-01:example:1",
+        "textbook-l06-grammar-01:example:2"
+      ],
+      "before": [
+        {
+          "id": "textbook-l06-grammar-01:example:1",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-01",
+          "zh": "我想去超市。",
+          "py": "wǒ xiǎng qù chāo shì。",
+          "vi": "Tôi muốn đi siêu thị."
+        },
+        {
+          "id": "textbook-l06-grammar-01:example:2",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-01",
+          "zh": "我不想休息。",
+          "py": "wǒ bù xiǎng xiū xī。",
+          "vi": "Tôi không muốn nghỉ."
+        }
+      ],
+      "after": [
+        {
+          "id": "textbook-l06-grammar-01:example:1",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-01",
+          "zh": "我想去超市。",
+          "py": "Wǒ xiǎng qù chāoshì.",
+          "vi": "Tôi muốn đi siêu thị."
+        },
+        {
+          "id": "textbook-l06-grammar-01:example:2",
+          "lesson": 6,
+          "section": "grammar",
+          "sourceId": "textbook-l06-grammar-01",
+          "zh": "我哥哥不想休息。",
+          "py": "Wǒ gēge bù xiǎng xiūxi.",
+          "vi": "Anh trai tôi không muốn nghỉ ngơi."
+        }
+      ],
+      "reviewedSourceSentenceAnchorRetained": true
+    }
+  ],
+  "activeTextbookDetailChangedBindingCount": 30,
+  "activeTextbookDetailChangedBindings": [
+    {
+      "lesson": 4,
+      "wordId": "textbook-l04-v002",
+      "zh": "多",
+      "lineId": "textbook-l04-text-1-line-03",
+      "current": {
+        "zh": "她有多少个学生？",
+        "py": "Tā yǒu duōshao gè xuéshēng?",
+        "vi": "Cô ấy có bao nhiêu học sinh?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 4,
+      "wordId": "textbook-l04-v003",
+      "zh": "多少",
+      "lineId": "textbook-l04-text-1-line-03",
+      "current": {
+        "zh": "她有多少个学生？",
+        "py": "Tā yǒu duōshao gè xuéshēng?",
+        "vi": "Cô ấy có bao nhiêu học sinh?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 4,
+      "wordId": "textbook-l04-v007",
+      "zh": "个",
+      "lineId": "textbook-l04-text-1-line-03",
+      "current": {
+        "zh": "她有多少个学生？",
+        "py": "Tā yǒu duōshao gè xuéshēng?",
+        "vi": "Cô ấy có bao nhiêu học sinh?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 4,
+      "wordId": "textbook-l04-v032",
+      "zh": "有",
+      "lineId": "textbook-l04-text-1-line-03",
+      "current": {
+        "zh": "她有多少个学生？",
+        "py": "Tā yǒu duōshao gè xuéshēng?",
+        "vi": "Cô ấy có bao nhiêu học sinh?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 5,
+      "wordId": "textbook-l05-v001",
+      "zh": "菜",
+      "lineId": "textbook-l05-text-2-line-04",
+      "current": {
+        "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+        "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+        "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 5,
+      "wordId": "textbook-l05-v006",
+      "zh": "饺子",
+      "lineId": "textbook-l05-text-2-line-04",
+      "current": {
+        "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+        "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+        "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 5,
+      "wordId": "textbook-l05-v008",
+      "zh": "面条儿",
+      "lineId": "textbook-l05-text-2-line-04",
+      "current": {
+        "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+        "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+        "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 5,
+      "wordId": "textbook-l05-v009",
+      "zh": "日",
+      "lineId": "textbook-l05-text-1-line-04",
+      "current": {
+        "zh": "星期日。今天我休息。",
+        "py": "Xīngqīrì. Jīntiān wǒ xiūxi.",
+        "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 5,
+      "wordId": "textbook-l05-v010",
+      "zh": "它",
+      "lineId": "textbook-l05-text-3-line-06",
+      "current": {
+        "zh": "我也很喜欢它。",
+        "py": "Wǒ yě hěn xǐhuan tā.",
+        "vi": "Tôi cũng rất thích nó."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 5,
+      "wordId": "textbook-l05-v011",
+      "zh": "喜欢",
+      "lineId": "textbook-l05-text-3-line-06",
+      "current": {
+        "zh": "我也很喜欢它。",
+        "py": "Wǒ yě hěn xǐhuan tā.",
+        "vi": "Tôi cũng rất thích nó."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 5,
+      "wordId": "textbook-l05-v015",
+      "zh": "星期日",
+      "lineId": "textbook-l05-text-1-line-04",
+      "current": {
+        "zh": "星期日。今天我休息。",
+        "py": "Xīngqīrì. Jīntiān wǒ xiūxi.",
+        "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 5,
+      "wordId": "textbook-l05-v016",
+      "zh": "星期天",
+      "lineId": "textbook-l05-text-2-line-04",
+      "current": {
+        "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+        "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+        "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 5,
+      "wordId": "textbook-l05-v017",
+      "zh": "休息",
+      "lineId": "textbook-l05-text-1-line-04",
+      "current": {
+        "zh": "星期日。今天我休息。",
+        "py": "Xīngqīrì. Jīntiān wǒ xiūxi.",
+        "vi": "Chủ nhật. Hôm nay tôi nghỉ."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 5,
+      "wordId": "textbook-l05-v018",
+      "zh": "一些",
+      "lineId": "textbook-l05-text-2-line-04",
+      "current": {
+        "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+        "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+        "vi": "Tôi biết làm mì, sủi cảo và một số món ăn. Chủ nhật tôi cũng nấu ăn."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 6,
+      "wordId": "textbook-l06-v003",
+      "zh": "吃",
+      "lineId": "textbook-l06-text-3-line-01",
+      "current": {
+        "zh": "星期天我们去哪儿吃晚饭？",
+        "py": "Xīngqītiān wǒmen qù nǎr chī wǎnfàn?",
+        "vi": "Chủ nhật chúng ta đi đâu ăn tối?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 6,
+      "wordId": "textbook-l06-v009",
+      "zh": "号",
+      "lineId": "textbook-l06-text-1-line-01",
+      "current": {
+        "zh": "家月，你的手机号是多少？",
+        "py": "Jiāyuè, nǐ de shǒujīhào shì duōshao?",
+        "vi": "Gia Nguyệt, số điện thoại di động của bạn là bao nhiêu?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 6,
+      "wordId": "textbook-l06-v012",
+      "zh": "明天",
+      "lineId": "textbook-l06-text-2-line-01",
+      "current": {
+        "zh": "家月，明天你去哪儿？",
+        "py": "Jiāyuè, míngtiān nǐ qù nǎr?",
+        "vi": "Gia Nguyệt, ngày mai bạn đi đâu?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 6,
+      "wordId": "textbook-l06-v013",
+      "zh": "哪儿",
+      "lineId": "textbook-l06-text-2-line-01",
+      "current": {
+        "zh": "家月，明天你去哪儿？",
+        "py": "Jiāyuè, míngtiān nǐ qù nǎr?",
+        "vi": "Gia Nguyệt, ngày mai bạn đi đâu?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 6,
+      "wordId": "textbook-l06-v016",
+      "zh": "去",
+      "lineId": "textbook-l06-text-2-line-01",
+      "current": {
+        "zh": "家月，明天你去哪儿？",
+        "py": "Jiāyuè, míngtiān nǐ qù nǎr?",
+        "vi": "Gia Nguyệt, ngày mai bạn đi đâu?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 6,
+      "wordId": "textbook-l06-v017",
+      "zh": "手机",
+      "lineId": "textbook-l06-text-1-line-01",
+      "current": {
+        "zh": "家月，你的手机号是多少？",
+        "py": "Jiāyuè, nǐ de shǒujīhào shì duōshao?",
+        "vi": "Gia Nguyệt, số điện thoại di động của bạn là bao nhiêu?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 6,
+      "wordId": "textbook-l06-v018",
+      "zh": "晚饭",
+      "lineId": "textbook-l06-text-3-line-01",
+      "current": {
+        "zh": "星期天我们去哪儿吃晚饭？",
+        "py": "Xīngqītiān wǒmen qù nǎr chī wǎnfàn?",
+        "vi": "Chủ nhật chúng ta đi đâu ăn tối?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 7,
+      "wordId": "textbook-l07-v002",
+      "zh": "菜",
+      "lineId": "textbook-l07-text-3-line-05",
+      "current": {
+        "zh": "好的，你去店里买些菜吧。",
+        "py": "Hǎo de, nǐ qù diàn li mǎi xiē cài ba.",
+        "vi": "Được, anh đi cửa hàng mua ít rau nhé."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 7,
+      "wordId": "textbook-l07-v006",
+      "zh": "店",
+      "lineId": "textbook-l07-text-3-line-05",
+      "current": {
+        "zh": "好的，你去店里买些菜吧。",
+        "py": "Hǎo de, nǐ qù diàn li mǎi xiē cài ba.",
+        "vi": "Được, anh đi cửa hàng mua ít rau nhé."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 7,
+      "wordId": "textbook-l07-v010",
+      "zh": "家",
+      "lineId": "textbook-l07-text-3-line-02",
+      "current": {
+        "zh": "我在家里呢。",
+        "py": "Wǒ zài jiā li ne.",
+        "vi": "Anh đang ở nhà."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 7,
+      "wordId": "textbook-l07-v014",
+      "zh": "里",
+      "lineId": "textbook-l07-text-3-line-02",
+      "current": {
+        "zh": "我在家里呢。",
+        "py": "Wǒ zài jiā li ne.",
+        "vi": "Anh đang ở nhà."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 7,
+      "wordId": "textbook-l07-v020",
+      "zh": "晚上",
+      "lineId": "textbook-l07-text-3-line-03",
+      "current": {
+        "zh": "我晚上六点半下班。",
+        "py": "Wǒ wǎnshang liù diǎn bàn xiàbān.",
+        "vi": "Tối nay sáu rưỡi em tan làm."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 7,
+      "wordId": "textbook-l07-v026",
+      "zh": "早上",
+      "lineId": "textbook-l07-text-1-line-02",
+      "current": {
+        "zh": "早上八点四十。",
+        "py": "Zǎoshang bā diǎn sìshí.",
+        "vi": "Tám giờ bốn mươi sáng."
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 8,
+      "wordId": "textbook-l08-v008",
+      "zh": "看见",
+      "lineId": "textbook-l08-text-1-line-02",
+      "current": {
+        "zh": "我没看见，它在哪儿呢？",
+        "py": "Wǒ méi kànjiàn, tā zài nǎr ne?",
+        "vi": "Tôi không nhìn thấy, nó ở đâu vậy?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 8,
+      "wordId": "textbook-l08-v010",
+      "zh": "没",
+      "lineId": "textbook-l08-text-1-line-02",
+      "current": {
+        "zh": "我没看见，它在哪儿呢？",
+        "py": "Wǒ méi kànjiàn, tā zài nǎr ne?",
+        "vi": "Tôi không nhìn thấy, nó ở đâu vậy?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    },
+    {
+      "lesson": 8,
+      "wordId": "textbook-l08-v021",
+      "zh": "在",
+      "lineId": "textbook-l08-text-1-line-02",
+      "current": {
+        "zh": "我没看见，它在哪儿呢？",
+        "py": "Wǒ méi kànjiàn, tā zài nǎr ne?",
+        "vi": "Tôi không nhìn thấy, nó ở đâu vậy?"
+      },
+      "activeRenderer": "features/textbook/vocabulary.ts:openDetail"
+    }
+  ],
+  "examplesForSenseConsumerClassification": "API currently unused by mixed-card renderers; not a visible mixed-card example repair",
+  "rendererReview": {
+    "primaryModularVocabularyAndReview": "features/vocabulary/view.ts:renderCard; zh front, py/vi back, audio; no example call",
+    "sharedHSK1": "course-app/src/hsk1-bridge.ts imports the same HSK1 vocabulary and review modules",
+    "sharedHSK2HSK3": "course-app/src/main.ts:drawCard; zh/py/vi/pos/audio; not an HSK1 example consumer",
+    "activeTextbookDetail": "features/textbook/vocabulary.ts:openDetail uses revised lesson.scenes first Chinese-matching line directly"
+  },
+  "historyCompatibility": {
+    "ratedAffectedSenseCount": 60,
+    "existingPendingQueueRetained": true,
+    "ratingAndScheduleKeysUnchanged": true,
+    "actualBackupRestoreExactlyEqual": true,
+    "scheduleChecks": 32,
+    "pendingCardCanContinueRatingAfterRestore": true,
+    "checks": [
+      {
+        "time": 1791158401000,
+        "filter": "all",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791158401000,
+        "filter": "all",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791158401000,
+        "filter": "due",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791158401000,
+        "filter": "due",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791158401000,
+        "filter": "unfamiliar",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791158401000,
+        "filter": "unfamiliar",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791158401000,
+        "filter": "wrong",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791158401000,
+        "filter": "wrong",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791159001000,
+        "filter": "all",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791159001000,
+        "filter": "all",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791159001000,
+        "filter": "due",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791159001000,
+        "filter": "due",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791159001000,
+        "filter": "unfamiliar",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791159001000,
+        "filter": "unfamiliar",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791159001000,
+        "filter": "wrong",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791159001000,
+        "filter": "wrong",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791244801000,
+        "filter": "all",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791244801000,
+        "filter": "all",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791244801000,
+        "filter": "due",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791244801000,
+        "filter": "due",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791244801000,
+        "filter": "unfamiliar",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791244801000,
+        "filter": "unfamiliar",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791244801000,
+        "filter": "wrong",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791244801000,
+        "filter": "wrong",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791763201000,
+        "filter": "all",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791763201000,
+        "filter": "all",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791763201000,
+        "filter": "due",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791763201000,
+        "filter": "due",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791763201000,
+        "filter": "unfamiliar",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791763201000,
+        "filter": "unfamiliar",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791763201000,
+        "filter": "wrong",
+        "direction": "zh-vi",
+        "exactDeckAndRatingKeysEqual": true
+      },
+      {
+        "time": 1791763201000,
+        "filter": "wrong",
+        "direction": "vi-zh",
+        "exactDeckAndRatingKeysEqual": true
+      }
+    ]
+  },
+  "scopeLimits": [
+    "No native mixed-card example display certification",
+    "No new official Vietnamese full alignment",
+    "No historical source/proposal or sense identity changes"
+  ]
+}

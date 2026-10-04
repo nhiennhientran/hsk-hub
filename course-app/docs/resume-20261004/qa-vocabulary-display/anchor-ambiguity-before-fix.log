@@ -1,0 +1,40 @@
+✖ reviewed 想 replacement rejects old/new Chinese alias coexistence: legacy-first (73.529382ms)
+✖ reviewed 想 replacement rejects old/new Chinese alias coexistence: legacy-last (58.693835ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 275.448059
+
+✖ failing tests:
+
+test at anchor-ambiguity-review.test.mjs:14:3
+✖ reviewed 想 replacement rejects old/new Chinese alias coexistence: legacy-first (73.529382ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-vocabulary-display/anchor-ambiguity-review.test.mjs:22:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /khớp duy nhất/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at anchor-ambiguity-review.test.mjs:14:3
+✖ reviewed 想 replacement rejects old/new Chinese alias coexistence: legacy-last (58.693835ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/qa-vocabulary-display/anchor-ambiguity-review.test.mjs:22:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /khớp duy nhất/,
+    operator: 'rejects',
+    diff: 'simple'
+  }

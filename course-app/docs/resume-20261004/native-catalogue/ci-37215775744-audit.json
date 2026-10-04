@@ -1,0 +1,380 @@
+{
+  "runId": 37215775744,
+  "runUrl": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37215775744",
+  "head": "8cb52dddcd046e1d0eb6977b308b64c4d3f6c462",
+  "scope": "Only this commit. Later HSK3 metadata or production changes are not certified.",
+  "retrieval": "GitHub connector workflow job logs / artifact ZIP downloads; no browser fallback.",
+  "auditTimeUtc": "2026-10-04T16:50:33.274447+00:00",
+  "workflowTimeoutMinutes": 30,
+  "jobConclusions": [
+    {
+      "id": 111475859466,
+      "name": "checkpoint (webkit, 1)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 111475859627,
+      "name": "checkpoint (webkit, 2)",
+      "status": "completed",
+      "conclusion": "cancelled"
+    },
+    {
+      "id": 111475859639,
+      "name": "checkpoint (chromium, 1)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 111475859641,
+      "name": "checkpoint (chromium, 2)",
+      "status": "completed",
+      "conclusion": "cancelled"
+    }
+  ],
+  "main": {
+    "expected": 860,
+    "observedPassed": 857,
+    "unifiedComplete": 688,
+    "standaloneObservedPassed": 169,
+    "notCompleted": 3,
+    "fullPassCertified": false,
+    "old600Passed": 600,
+    "newCatalogue252Passed": 252,
+    "newGallery8Passed": 5
+  },
+  "unifiedFinalReports": {
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "retryResults": 0,
+    "globalErrors": 0
+  },
+  "standaloneFinalReports": "Absent because jobs were cancelled. Partial successful log lines are evidence of those tests only; no final skipped/error summary.",
+  "cancellation": {
+    "observed": "Both shard2 jobs conclude cancelled; individual test step logs say The operation was canceled.",
+    "inference": "Both stopped approximately 30 minutes after startup, matching the checked-in 30-minute job limit. Timeout is strongly suggested, but raw job logs do not explicitly name timeout as the cause."
+  },
+  "groups": [
+    {
+      "host": "unified",
+      "engine": "webkit",
+      "shard": 1,
+      "tests": 172,
+      "stats": {
+        "startTime": "2026-10-04T16:15:55.683Z",
+        "duration": 960297.916,
+        "expected": 172,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "retryResults": 0,
+      "globalErrors": 0,
+      "reportSha256": "0137699d07b9570841f48227872411b59ba17a0f126b24a10dc21ba569c3e2dd"
+    },
+    {
+      "host": "unified",
+      "engine": "webkit",
+      "shard": 2,
+      "tests": 172,
+      "stats": {
+        "startTime": "2026-10-04T16:11:55.430Z",
+        "duration": 1385944.238,
+        "expected": 172,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "retryResults": 0,
+      "globalErrors": 0,
+      "reportSha256": "09cb3d7654ab6d1726798211cd812023b0dbcca6869863014137327f5acf0c9f"
+    },
+    {
+      "host": "modular",
+      "engine": "webkit",
+      "shard": 2,
+      "expected": 86,
+      "observedPassed": 84,
+      "missingCompletion": [
+        "webkit | textbook-scene-regression.ts | HSK1 all textbook scene galleries retain source bindings and hide alt at 320px",
+        "webkit | textbook-scene-regression.ts | HSK1 all textbook scene galleries retain source bindings and hide alt at 1440px"
+      ],
+      "completeJsonReport": false,
+      "logSha256": "5dd62a54c5f1c0c63ee0635e759e20ef9895b48ffe07ee0ddf865ca130efa463",
+      "observedFailMarkers": 0,
+      "retryPolicy": 0,
+      "skippedFinalCount": null,
+      "finalGlobalErrors": null
+    },
+    {
+      "host": "unified",
+      "engine": "chromium",
+      "shard": 1,
+      "tests": 172,
+      "stats": {
+        "startTime": "2026-10-04T16:16:13.104Z",
+        "duration": 995915.717,
+        "expected": 172,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "retryResults": 0,
+      "globalErrors": 0,
+      "reportSha256": "43532849fccc225aca15c0c8ec2442c2acd3d930539191b96b169d0cb81cd014"
+    },
+    {
+      "host": "unified",
+      "engine": "chromium",
+      "shard": 2,
+      "tests": 172,
+      "stats": {
+        "startTime": "2026-10-04T16:11:37.388Z",
+        "duration": 1369954.661,
+        "expected": 172,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "retryResults": 0,
+      "globalErrors": 0,
+      "reportSha256": "9a6ca489b15487c2374a65b304df2da86ba72eb927fcc99632fcc1415570237e"
+    },
+    {
+      "host": "modular",
+      "engine": "chromium",
+      "shard": 2,
+      "expected": 86,
+      "observedPassed": 85,
+      "missingCompletion": [
+        "chromium | textbook-scene-regression.ts | HSK1 all textbook scene galleries retain source bindings and hide alt at 1440px"
+      ],
+      "completeJsonReport": false,
+      "logSha256": "76fb2939d499cffcf6442491e924836257a10d299f92443012b4a53606bca36a",
+      "observedFailMarkers": 0,
+      "retryPolicy": 0,
+      "skippedFinalCount": null,
+      "finalGlobalErrors": null
+    }
+  ],
+  "old600ExecutionIdentityCheck": {
+    "unified/webkit": {
+      "expected": 279,
+      "passed": 279,
+      "missing": []
+    },
+    "modular/webkit": {
+      "expected": 21,
+      "passed": 21,
+      "missing": []
+    },
+    "unified/chromium": {
+      "expected": 279,
+      "passed": 279,
+      "missing": []
+    },
+    "modular/chromium": {
+      "expected": 21,
+      "passed": 21,
+      "missing": []
+    }
+  },
+  "catalogueExecutionIdentityCheck": {
+    "unified/webkit": {
+      "expected": 63,
+      "passed": 63
+    },
+    "modular/webkit": {
+      "expected": 63,
+      "passed": 63
+    },
+    "unified/chromium": {
+      "expected": 63,
+      "passed": 63
+    },
+    "modular/chromium": {
+      "expected": 63,
+      "passed": 63
+    }
+  },
+  "collectionOnlyProof": {
+    "exactUnion": true,
+    "disjoint": true,
+    "fileSha256": "4cdc8db0019bafab708b85dd84883ca12c7cf14c4843a9f21772cb84b3aa50ea"
+  },
+  "downloadedArtifacts": [
+    {
+      "id": 11308108504,
+      "name": "hsk123-reports-webkit-shard1",
+      "bytes": 101677,
+      "sha256": "07212ca8a92da0d7b02ea148ac77e0a4d104f9598674abb2e59ace69b95b1bc4",
+      "githubDigestMatched": true,
+      "zipCrcPassed": true,
+      "members": 20
+    },
+    {
+      "id": 11307929604,
+      "name": "hsk123-reports-chromium-shard1",
+      "bytes": 118607,
+      "sha256": "7008c582b8fa7c438058692e21e7b7bc45226cf460398c4252b491ac86b5029d",
+      "githubDigestMatched": true,
+      "zipCrcPassed": true,
+      "members": 20
+    },
+    {
+      "id": 11308103513,
+      "name": "hsk1-unified-source-webkit-shard1",
+      "bytes": 17132305,
+      "sha256": "18e9fc9d5b455584512a650cbac9af4bf857fba4dc52537548b9eac039db5e47",
+      "githubDigestMatched": true,
+      "zipCrcPassed": true,
+      "members": 199
+    },
+    {
+      "id": 11307964370,
+      "name": "hsk1-unified-source-chromium-shard1",
+      "bytes": 15245518,
+      "sha256": "a6ba755288186a8a9ec78495deb9924db604933ee5f06f19f3cdc67e577e66c2",
+      "githubDigestMatched": true,
+      "zipCrcPassed": true,
+      "members": 199
+    },
+    {
+      "id": 11308397922,
+      "name": "hsk123-pilot-screens-webkit-shard1",
+      "bytes": 21178285,
+      "sha256": "bc4a68e2e3258dc1905f15c7731160bb0f1df1b1ba86f83da5acab53cb76365d",
+      "githubDigestMatched": true,
+      "zipCrcPassed": true,
+      "members": 216
+    },
+    {
+      "id": 11308108560,
+      "name": "hsk123-pilot-screens-chromium-shard1",
+      "bytes": 19073934,
+      "sha256": "e7a82164d9f02aaab9b3e9bfb5e30741d241980e860014f7eff6250c98e67ca9",
+      "githubDigestMatched": true,
+      "zipCrcPassed": true,
+      "members": 216
+    },
+    {
+      "id": 11309161118,
+      "name": "hsk123-reports-webkit-shard2",
+      "bytes": 172989,
+      "sha256": "0031170ad2bf098b3da85b018321fd63d2f6f833ef078f60e0fff85ba7c59e60",
+      "githubDigestMatched": true,
+      "zipCrcPassed": true,
+      "members": 19
+    },
+    {
+      "id": 11308464799,
+      "name": "hsk123-reports-chromium-shard2",
+      "bytes": 162677,
+      "sha256": "ae83c0579e7eac87442882b0f7e6ff6f14212ba6106baa33c9db22d601d36071",
+      "githubDigestMatched": true,
+      "zipCrcPassed": true,
+      "members": 19
+    },
+    {
+      "id": 11308454957,
+      "name": "hsk1-standalone-scene-webkit",
+      "bytes": 21236509,
+      "sha256": "b7916997b3b1ab767dc5fb07d642b707b94fb84c6ddc7ffe2009c5bf89d7f973",
+      "githubDigestMatched": true,
+      "zipCrcPassed": true,
+      "members": 206
+    },
+    {
+      "id": 11308459884,
+      "name": "hsk1-standalone-scene-chromium",
+      "bytes": 19496565,
+      "sha256": "621e279322e74b0f72dea37bfc568c2fb65508b82cff1a9cfcc481d9de1815b4",
+      "githubDigestMatched": true,
+      "zipCrcPassed": true,
+      "members": 207
+    }
+  ],
+  "screenshotsReviewedAndRetained": [
+    {
+      "file": "ci-37215775744-samples/unified-webkit-source-picture-1440.png",
+      "host": "unified",
+      "engine": "webkit",
+      "sourceArtifactFile": "webkit-shard1-source-screens/unified-hsk1-source-l04-1440-activity-15.png",
+      "sha256": "fce3c9044a2dbc2944229c368d549e19661fb84b4a01431a328e0b5229159d6c",
+      "manualReview": "readable CJK; no missing-glyph boxes or material clipping in inspected content",
+      "note": "L4 printed-picture activity, real family crop; Chinese/VI copy, controls wrap"
+    },
+    {
+      "file": "ci-37215775744-samples/unified-chromium-number-table-1440.png",
+      "host": "unified",
+      "engine": "chromium",
+      "sourceArtifactFile": "chromium-shard1-source-screens/unified-hsk1-source-l04-1440-table-0-part-0.png",
+      "sha256": "0ac443baf6205a28fb425bef5694dd9e6a118beb3f430ff6dac095138b2393ec",
+      "manualReview": "readable CJK; no missing-glyph boxes or material clipping in inspected content",
+      "note": "L4 number table, Chinese glyphs and tone-marked pinyin; intentional printed empty cells"
+    },
+    {
+      "file": "ci-37215775744-samples/unified-webkit-scene-shown-390.png",
+      "host": "unified",
+      "engine": "webkit",
+      "sourceArtifactFile": "webkit-shard1-pilot-screens/hsk1-scene-hide-390-reload-webkit.png",
+      "sha256": "ccaaa8d99ba082128be6695179c442a048208abf02bbd1c4cdd2e673f3cbd8f0",
+      "manualReview": "readable CJK; no missing-glyph boxes or material clipping in inspected content",
+      "note": "L1 scene3 shown after reload, textbook image and dialogue/pinyin/VI visible"
+    },
+    {
+      "file": "ci-37215775744-samples/unified-chromium-scene-hidden-390.png",
+      "host": "unified",
+      "engine": "chromium",
+      "sourceArtifactFile": "chromium-shard1-pilot-screens/hsk1-scene-listen-390-hidden-chromium.png",
+      "sha256": "f5ff124e4b33bdf1966327289b21979600e6818ed1798d95f1da96e5ab29069d",
+      "manualReview": "readable CJK; no missing-glyph boxes or material clipping in inspected content",
+      "note": "L1 scene3 listen mode hides gallery and dialogue; controls remain"
+    },
+    {
+      "file": "ci-37215775744-samples/modular-webkit-scene-shown-390.png",
+      "host": "modular",
+      "engine": "webkit",
+      "sourceArtifactFile": "webkit-standalone-screens/test-results/hsk1-scene-hide-390-reload-webkit.png",
+      "sha256": "1795ed08b2779e48c9d0771c71365ca2111264df3200b099f80629e77c5f880a",
+      "manualReview": "readable CJK; no missing-glyph boxes or material clipping in inspected content",
+      "note": "L1 scene3 shown after reload, textbook image and dialogue readable"
+    },
+    {
+      "file": "ci-37215775744-samples/modular-webkit-scene-hidden-1280.png",
+      "host": "modular",
+      "engine": "webkit",
+      "sourceArtifactFile": "webkit-standalone-screens/test-results/hsk1-scene-listen-1280-hidden-webkit.png",
+      "sha256": "769378802d3e291c57663dc1757785e4a4d690344cbf0b9e72a399d32cfdbe74",
+      "manualReview": "readable CJK; no missing-glyph boxes or material clipping in inspected content",
+      "note": "L1 scene3 listen mode on desktop, hidden gallery/dialogue and readable controls"
+    },
+    {
+      "file": "ci-37215775744-samples/modular-chromium-source-picture-320.png",
+      "host": "modular",
+      "engine": "chromium",
+      "sourceArtifactFile": "chromium-standalone-screens/test-results/modular-hsk1-source-l04-320-activity-16.png",
+      "sha256": "d0f2c49a9b9b8985a5fd3f1151f5ebfb4eb739d6424e039d65d786c092cf3159",
+      "manualReview": "readable CJK; no missing-glyph boxes or material clipping in inspected content",
+      "note": "L4 source picture with two fields; Chinese/VI labels and real couple crop wrap within 320px"
+    },
+    {
+      "file": "ci-37215775744-samples/modular-webkit-headerless-number-table-1440.png",
+      "host": "modular",
+      "engine": "webkit",
+      "sourceArtifactFile": "webkit-standalone-screens/test-results/modular-hsk1-source-l04-1440-table-2-part-0.png",
+      "sha256": "dd8af810af474a100b7e63f18f4196c4ccbbcf90f40326729e039e587293fffa",
+      "manualReview": "readable CJK; no missing-glyph boxes or material clipping in inspected content",
+      "note": "L4 number2 table without manufactured header row, tone-marked pinyin and VI noun phrases"
+    }
+  ],
+  "fontEvidence": "All four jobs actually installed fonts-noto-cjk. Screenshots show Chinese glyphs and tone marks; fonts were not merely collected as metadata.",
+  "visualLimits": [
+    "Manual review is representative, not every screenshot or every textbook page.",
+    "New 24 L12-L15 field-pinyin strings and L3/L6/L7 empty-header tables have actual catalogue DOM coverage, but no dedicated screenshots in these artifact sets. L4 printed number-table blanks and headerless number2 table were visually inspected.",
+    "Mobile table slices record horizontal scroll intentionally; cropping inside the table screenshot is not evidence of outer-page overflow.",
+    "Hidden-mode assertions check display and accessible tree. Raw alt attributes can remain inside hidden DOM; raw-DOM removal is not required."
+  ],
+  "nextAction": "Parent should provide enough CI job time or isolate standalone work and obtain a complete fresh run at the final production head. Do not combine old-head partial results with later-head work as one completed 860 run."
+}

@@ -4,6 +4,7 @@ import type { ListeningCatalog, ListeningLesson, ListeningVocabulary } from './l
 import type { AudioRequest } from '../audio/index.ts';
 import { validateTextbook } from './textbook.ts';
 import type { BookLesson } from './textbook.ts';
+import { reviseTextbookDisplay } from './textbook-display-revisions.ts';
 
 export type VocabularyCatalog = ListeningCatalog;
 export type VocabularyItem = ListeningVocabulary;
@@ -21,6 +22,7 @@ export interface VocabularyContent {
   readonly catalog: VocabularyCatalog;
   readonly lessons: readonly VocabularyLesson[];
   readonly items: readonly VocabularyItem[];
+  readonly displayRevision?: string;
   /** Only an exact original record ID resolves; a sense or word is never an audio lookup key. */
   resolveAudio(recordId: string): AudioRequest | null;
   /** Exact current-textbook sentences; homographs use reviewed sense links. */
@@ -79,7 +81,13 @@ const senseExamples: Readonly<Record<string, readonly string[]>> = {
   'lex-95fd8be0d9-s2': ['textbook-l13-grammar-01:example:1'],
 };
 
-function indexExamples(lessons: readonly BookLesson[], items: readonly VocabularyItem[]): ReadonlyMap<string, readonly VocabularyExample[]> {
+// The original reviewed negative 想 example omitted 哥哥. Its replacement is
+// explicitly approved on printed p38; do not guess a replacement by array position.
+const revisedExampleAnchors: Readonly<Record<string, { readonly expected: string; readonly current: string }>> = {
+  'textbook-l06-grammar-01:example:2': { expected: '我不想休息。', current: '我哥哥不想休息。' },
+};
+
+function indexExamples(lessons: readonly BookLesson[], items: readonly VocabularyItem[], sourceLessons: readonly BookLesson[] = lessons): ReadonlyMap<string, readonly VocabularyExample[]> {
   const examples: VocabularyExample[] = lessons.flatMap(lesson => [
     ...lesson.scenes.flatMap(scene => scene.lines.map(line => ({ id: line.id, lesson: lesson.id,
       section: 'text' as const, sourceId: scene.id, zh: line.zh, py: line.py, vi: line.vn }))),
@@ -87,14 +95,32 @@ function indexExamples(lessons: readonly BookLesson[], items: readonly Vocabular
       id: `${grammar.id}:example:${index + 1}`, lesson: lesson.id, section: 'grammar' as const,
       sourceId: grammar.id, zh: example.zh, py: example.py, vi: example.vn }))),
   ]);
+  const references = new Map<string, string>();
+  const reviewed = new Set(Object.values(senseExamples).flat());
+  const grammarById = new Map(lessons.flatMap(lesson => lesson.grammar.map(grammar => [grammar.id, grammar])));
+  for (const lesson of sourceLessons) for (const source of lesson.grammar) {
+    const current = grammarById.get(source.id);
+    if (!current) fail('Không tìm thấy nguồn ví dụ ngữ pháp đã đối chiếu.');
+    const unchanged = canonical(current.examples) === canonical(source.examples);
+    for (const [index, example] of source.examples.entries()) {
+      const id = `${source.id}:example:${index + 1}`;
+      if (!reviewed.has(id)) continue;
+      if (unchanged) { references.set(id, id); continue; }
+      const anchor = revisedExampleAnchors[id];
+      const matches = current.examples.flatMap((candidate, position) =>
+        candidate.zh === example.zh || (anchor?.expected === example.zh && candidate.zh === anchor.current) ? [position] : []);
+      if (matches.length !== 1) fail('Ví dụ đã sửa không khớp duy nhất với liên kết nghĩa từ đã đối chiếu.');
+      references.set(id, `${source.id}:example:${matches[0] + 1}`);
+    }
+  }
   const forms = new Map<string, Set<string>>();
   for (const item of items) {
     const senses = forms.get(item.zh) ?? new Set<string>(); senses.add(item.senseId); forms.set(item.zh, senses);
   }
   return new Map(items.map(item => {
-    const references = senseExamples[item.senseId];
+    const declared = senseExamples[item.senseId]?.map(id => references.get(id) ?? id);
     const matched = examples.filter(example => example.lesson === item.lesson && example.zh.includes(item.zh) &&
-      (references ? references.includes(example.id) : forms.get(item.zh)!.size === 1));
+      (declared ? declared.includes(example.id) : forms.get(item.zh)!.size === 1));
     const seen = new Set<string>();
     const unique = matched.filter(example => {
       const key = JSON.stringify([example.zh, example.py, example.vi]);
@@ -138,11 +164,13 @@ async function fingerprint(value: Row, signal?: AbortSignal): Promise<void> {
 export async function createVocabularyContent(catalogValue: unknown, mediaValue: unknown,
   audioURL: (trackId: string) => string = id => typeof document === 'undefined'
     ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, courseAssetBase()).href,
-  signal?: AbortSignal, textbookValue?: unknown): Promise<VocabularyContent> {
+  signal?: AbortSignal, textbookValue?: unknown, displayRevisionValue?: unknown): Promise<VocabularyContent> {
   signal?.throwIfAborted();
   // Keep inputs stable across the asynchronous shared metadata/hash validation.
   const rawCatalog = structuredClone(catalogValue), rawMedia: unknown = structuredClone(mediaValue);
   const rawTextbook: unknown = structuredClone(textbookValue);
+  const rawDisplayRevision: unknown = structuredClone(displayRevisionValue);
+  if (rawDisplayRevision !== undefined && rawTextbook === undefined) fail('Bản sửa ví dụ cần có nguồn giáo trình gốc.');
   const textbook = rawTextbook === undefined ? [] : validateTextbook(rawTextbook);
   // Reuse the established catalog identity and all 93 original-track validation.
   // This also keeps listening and vocabulary bound to one content baseline.
@@ -206,11 +234,13 @@ export async function createVocabularyContent(catalogValue: unknown, mediaValue:
   }
   await Promise.all([...verified].map(value => fingerprint(value, signal)));
   signal?.throwIfAborted();
+  const revised = rawDisplayRevision === undefined ? undefined : reviseTextbookDisplay(textbook, rawDisplayRevision, catalog.baseline);
   const records = new Map(catalog.vocabulary.map(item => [item.id, item]));
-  const examples = indexExamples(textbook, catalog.vocabulary);
+  const examples = indexExamples(revised?.lessons ?? textbook, catalog.vocabulary, textbook);
   const noExamples: readonly VocabularyExample[] = Object.freeze([]);
   return Object.freeze({
     catalog, lessons: catalog.lessons, items: catalog.vocabulary,
+    ...(revised ? { displayRevision: revised.info.revision } : {}),
     examplesForSense(senseId: string) { return examples.get(senseId) ?? noExamples; },
     resolveAudio(recordId: string): AudioRequest | null {
       const item = records.get(recordId);
@@ -223,7 +253,8 @@ export async function createVocabularyContent(catalogValue: unknown, mediaValue:
 
 export async function loadVocabulary(signal: AbortSignal): Promise<VocabularyContent> {
   signal.throwIfAborted();
-  const urls = [new URL('../../../content/stage3-catalog.json', import.meta.url), new URL('../../../content/media-references.json', import.meta.url), new URL('../../../content/textbook.json', import.meta.url)];
+  const urls = [new URL('../../../content/stage3-catalog.json', import.meta.url), new URL('../../../content/media-references.json', import.meta.url),
+    new URL('../../../content/textbook.json', import.meta.url), new URL('../../../content/textbook-display-revisions.json', import.meta.url)];
   const values = await Promise.all(urls.map(async url => {
     const response = await fetch(url, { signal });
     if (!response.ok) throw new Error(`Không tải được nội dung từ vựng (HTTP ${response.status}).`);
@@ -231,5 +262,5 @@ export async function loadVocabulary(signal: AbortSignal): Promise<VocabularyCon
     signal.throwIfAborted();
     return value;
   }));
-  return createVocabularyContent(values[0], values[1], undefined, signal, values[2]);
+  return createVocabularyContent(values[0], values[1], undefined, signal, values[2], values[3]);
 }

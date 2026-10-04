@@ -3,9 +3,12 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { createVocabularyContent, loadVocabulary } from '../src/services/content/vocabulary.ts';
+import { createTextbookContent } from '../src/services/content/textbook.ts';
+import engine from '../src/domain/practice/engine.js';
 
 const json = file => JSON.parse(readFileSync(new URL(`../content/${file}.json`, import.meta.url), 'utf8'));
 const catalog = json('stage3-catalog'), media = json('media-references'), textbook = json('textbook');
+const displayRevisions = json('textbook-display-revisions');
 const audioURL = id => `https://course.example/hsk-hub/hsk1/course-assets/audio/${id}.mp3`;
 const create = (c = catalog, m = media, signal) => createVocabularyContent(c, m, audioURL, signal);
 const canonical = value => Array.isArray(value) ? `[${value.map(canonical).join(',')}]`
@@ -141,17 +144,23 @@ test('content snapshots are deeply readonly and stable across caller mutations d
   const stable = await pending; assert.equal(stable.resolveAudio(stable.items[0].id).end, catalog.vocabulary[0].audio.end);
 });
 
-test('loader uses the three existing source JSON files and AbortSignal, with HTTP failure visible', async t => {
+test('loader fetches the frozen sources and approved display sidecar with AbortSignal, with HTTP failure visible', async t => {
   const seen = [], controller = new AbortController();
   t.mock.method(globalThis, 'fetch', async (url, options) => {
     seen.push({ path: url.pathname, signal: options.signal });
-    return { ok: true, json: async () => url.pathname.endsWith('stage3-catalog.json') ? catalog : url.pathname.endsWith('textbook.json') ? textbook : media };
+    return { ok: true, json: async () => url.pathname.endsWith('stage3-catalog.json') ? catalog : url.pathname.endsWith('textbook.json') ? textbook : url.pathname.endsWith('textbook-display-revisions.json') ? displayRevisions : media };
   });
-  assert.equal((await loadVocabulary(controller.signal)).items.length, 344);
-  assert.deepEqual(seen.map(entry => entry.path.split('/').at(-1)), ['stage3-catalog.json', 'media-references.json', 'textbook.json']);
+  const loaded = await loadVocabulary(controller.signal);
+  assert.equal(loaded.items.length, 344); assert.equal(loaded.displayRevision, displayRevisions.revision);
+  assert.equal(loaded.examplesForSense('lex-4a1e3b19fa-s1')[0].id, 'textbook-l06-grammar-02:example:3');
+  assert.deepEqual(seen.map(entry => entry.path.split('/').at(-1)), ['stage3-catalog.json', 'media-references.json', 'textbook.json', 'textbook-display-revisions.json']);
   assert.ok(seen.every(entry => entry.signal === controller.signal));
   t.mock.method(globalThis, 'fetch', async () => ({ ok: false, status: 503 }));
   await assert.rejects(loadVocabulary(controller.signal), /HTTP 503/);
+  t.mock.method(globalThis, 'fetch', async url => url.pathname.endsWith('textbook-display-revisions.json')
+    ? { ok: false, status: 404 }
+    : { ok: true, json: async () => url.pathname.endsWith('stage3-catalog.json') ? catalog : url.pathname.endsWith('textbook.json') ? textbook : media });
+  await assert.rejects(loadVocabulary(controller.signal), /HTTP 404/);
 });
 
 test('aborted loads and in-flight hashes cannot deliver content to a departed view', async t => {
@@ -218,4 +227,75 @@ test('examples reject another baseline and unverified text; asynchronous reads d
   const source = structuredClone(textbook), pending = createVocabularyContent(catalog, media, audioURL, undefined, source);
   source.lessons[0].scenes[0].lines[0].zh = '改'; source.baseline = '1'.repeat(40);
   const stable = await pending; assert.ok(stable.examplesForSense(catalog.vocabulary.find(item => item.zh === '你好').senseId).every(example => example.zh.includes('你好')));
+});
+
+test('live vocabulary examples share the validated textbook display and preserve all frozen identity, rating and audio data', async () => {
+  const baseline = await createVocabularyContent(catalog, media, audioURL, undefined, textbook);
+  const loaded = await createVocabularyContent(catalog, media, audioURL, undefined, textbook, displayRevisions);
+  const display = createTextbookContent(textbook, media, catalog, audioURL, displayRevisions);
+  const source = new Map(display.lessons.flatMap(lesson => [
+    ...lesson.scenes.flatMap(scene => scene.lines.map(line => [line.id, { lesson: lesson.id, section: 'text', sourceId: scene.id, line }])),
+    ...lesson.grammar.flatMap(grammar => grammar.examples.map((line, index) => [`${grammar.id}:example:${index + 1}`, { lesson: lesson.id, section: 'grammar', sourceId: grammar.id, line }])),
+  ]));
+  assert.deepEqual(loaded.catalog, baseline.catalog); assert.deepEqual(loaded.items, baseline.items);
+  assert.deepEqual(loaded.lessons, baseline.lessons);
+  assert.equal(baseline.displayRevision, undefined); assert.equal(loaded.displayRevision, displayRevisions.revision);
+  for (const item of loaded.items) {
+    assert.equal(item.id, `v-l${String(item.lesson).padStart(2, '0')}-${item.senseId}`);
+    assert.deepEqual(loaded.resolveAudio(item.id), baseline.resolveAudio(item.id));
+    for (const example of loaded.examplesForSense(item.senseId)) {
+      const exact = source.get(example.id); assert.ok(exact, example.id);
+      assert.deepEqual(example, { id: example.id, lesson: exact.lesson, section: exact.section, sourceId: exact.sourceId,
+        zh: exact.line.zh, py: exact.line.py, vi: exact.line.vn });
+    }
+  }
+  for (const items of Object.values(Object.groupBy(loaded.items, item => item.zh)).filter(items => items.length > 1)) {
+    for (const item of items) assert.ok(loaded.examplesForSense(item.senseId).length, `${item.zh}: ${item.senseId}`);
+  }
+  assert.deepEqual(baseline.examplesForSense('lex-4a1e3b19fa-s1').map(example => example.id), ['textbook-l06-grammar-02:example:2']);
+  assert.deepEqual(loaded.examplesForSense('lex-4a1e3b19fa-s1').map(example => example.id), ['textbook-l06-grammar-02:example:3']);
+  assert.deepEqual(loaded.examplesForSense('lex-dcf66dcd60-s2').map(example => example.zh), ['我明天下午两点还上课呢。', '李文晚上还有事呢。']);
+  assert.match(loaded.examplesForSense('lex-a48f3ad06d-s2').map(example => example.zh).join('\n'), /我哥哥不想休息/);
+});
+
+test('display examples reject unverified source hashes, stale revisions and ambiguous or unreviewed sense anchors', async () => {
+  const changed = structuredClone(textbook); changed.lessons[5].grammar[0].examples[1].zh = '未核实';
+  await assert.rejects(createVocabularyContent(catalog, media, audioURL, undefined, changed, displayRevisions), /Dấu kiểm tra/);
+  const stale = structuredClone(displayRevisions); stale.changes[0].expected = 'old';
+  await assert.rejects(createVocabularyContent(catalog, media, audioURL, undefined, textbook, stale), /sửa hiển thị/);
+  const ambiguous = structuredClone(displayRevisions);
+  const serial = ambiguous.changes.find(change => change.target === 'textbook-l06-grammar-02' && change.field === 'examples');
+  serial.value.push(structuredClone(serial.value[2]));
+  await assert.rejects(createVocabularyContent(catalog, media, audioURL, undefined, textbook, ambiguous), /khớp duy nhất/);
+  const unreviewed = structuredClone(displayRevisions);
+  unreviewed.changes.find(change => change.target === 'textbook-l06-grammar-01' && change.field === 'examples').value[1].zh = '我不想上课。';
+  await assert.rejects(createVocabularyContent(catalog, media, audioURL, undefined, textbook, unreviewed), /khớp duy nhất/);
+  await assert.rejects(createVocabularyContent(catalog, media, audioURL, undefined, undefined, displayRevisions), /nguồn giáo trình gốc/);
+});
+
+test('asynchronous display snapshots ignore caller mutations and remain deeply readonly', async () => {
+  const copy = structuredClone(displayRevisions), before = JSON.stringify(copy);
+  const pending = createVocabularyContent(catalog, media, audioURL, undefined, textbook, copy);
+  copy.changes[0].value = 'tampered during hashes';
+  const loaded = await pending;
+  const corrected = loaded.examplesForSense('lex-7f5716be5c-s2').find(example => example.id === 'textbook-l06-text-1-line-01');
+  assert.match(corrected.py, /duōshao/);
+  assert.throws(() => { corrected.py = 'changed'; }, TypeError);
+  assert.throws(() => { loaded.displayRevision = 'changed'; }, TypeError);
+  const unchanged = structuredClone(displayRevisions);
+  await createVocabularyContent(catalog, media, audioURL, undefined, textbook, unchanged);
+  assert.equal(JSON.stringify(unchanged), before);
+});
+
+test('an existing rated vocabulary review and schedule restore unchanged with the live display examples', async () => {
+  const baseline = await createVocabularyContent(catalog, media, audioURL, undefined, textbook);
+  const live = await createVocabularyContent(catalog, media, audioURL, undefined, textbook, displayRevisions);
+  const state = engine.blank(), stamp = 1791158400000;
+  engine.startReview(state, baseline.catalog, { lessons: [6, 7, 8], filter: 'all', direction: 'zh-vi', shuffle: false }, stamp);
+  const id = state.cards.review.senseIds[0];
+  engine.revealCard(state, id, stamp); engine.rateCard(state, baseline.catalog, 'good', stamp);
+  const backup = engine.exportBackup(state, baseline.catalog);
+  assert.deepEqual(engine.importBackup(backup, live.catalog), engine.importBackup(backup, baseline.catalog));
+  assert.ok(backup.cards.schedule[id]);
+  assert.equal(backup.cards.review.ratings[id].rating, 'good');
 });

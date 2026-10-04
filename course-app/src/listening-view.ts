@@ -1,7 +1,7 @@
 import { el, button, copy } from "./dom.ts";
 import type { Lesson, Question, Copy } from "./types.ts";
 import type { State, ListeningRound } from "./state.ts";
-import { grade, recordAttempt } from "./state.ts";
+import { grade, isAnswered, type Attempt } from "./state.ts";
 export function mountListening(
   host: HTMLElement,
   lessons: Lesson[],
@@ -9,6 +9,7 @@ export function mountListening(
     state(): State;
     edit(fn: (s: State) => void): void;
     flush(): Promise<boolean>;
+    commit(id: string, attempt: Attempt, round: ListeningRound, signal: AbortSignal): Promise<boolean>;
     play(q: Question): Promise<boolean>;
     stop(): void;
     message(text: Copy): void;
@@ -67,7 +68,9 @@ export function mountListening(
   root.append(settings);
   let round: ListeningRound | null = c.state().listeningRound ?? null;
   let retired = false,
-    playing = false;
+    playing = false,
+    submitting = false,
+    pending: AbortController | null = null;
   const work = el("section"),
     roundStatus = el("p");
   roundStatus.setAttribute("role", "status");
@@ -84,6 +87,7 @@ export function mountListening(
       round ? "Bắt đầu nhóm mới" : "Bắt đầu luyện nghe",
     ),
     async () => {
+      if (retired || submitting) return;
       if (!selection.size) {
         c.message(copy("请至少选择一课", "Hãy chọn ít nhất một bài"));
         return;
@@ -168,7 +172,7 @@ export function mountListening(
       );
     card.append(title);
     const play = button(copy("播放原音", "Phát âm thanh gốc"), async () => {
-      if (playing || retired || !round) return;
+      if (playing || retired || submitting || !round) return;
       playing = true;
       play.disabled = true;
       const activeRound = round,
@@ -176,8 +180,8 @@ export function mountListening(
       const ok = await c.play(question);
       playing = false;
       if (retired) return;
-      play.disabled = false;
-      if (ok && round === activeRound) {
+      play.disabled = submitting;
+      if (ok && !submitting && round === activeRound) {
         round.playCounts[activeId] = (round.playCounts[activeId] ?? 0) + 1;
         save();
         plays.replaceChildren(
@@ -204,7 +208,7 @@ export function mountListening(
       radio.checked = round.answers[id!] === index;
       radio.disabled = !!attempt;
       radio.onchange = () => {
-        if (round) {
+        if (round && !submitting) {
           round.answers[id!] = index;
           save();
         }
@@ -217,25 +221,48 @@ export function mountListening(
     const submit = button(
       copy("提交本题", "Nộp câu này"),
       async () => {
-        if(retired||round!==displayedRound||round?.submitted[id!]||submit.disabled)return;
-        if (!round || round.answers[id!] === undefined) {
+        if(retired||submitting||round!==displayedRound||round?.submitted[id!]||submit.disabled)return;
+        if (!round || !isAnswered(question, round.answers[id!])) {
           c.message(copy("请先选择答案", "Hãy chọn đáp án trước"));
           return;
         }
-        submit.disabled=true;
         const a = grade(
           [question],
           { [id!]: round.answers[id!]! },
           Date.now(),
           c.state().profile,
         );
-        round.submitted[id!] = a;
-        c.edit((s) => {
-          recordAttempt(s, id! + ":individual", a, "listening");
-          s.listeningRound = structuredClone(round);
-        });
-        draw();
-        await c.flush();
+        submitting = true;
+        pending = new AbortController();
+        const request = pending;
+        c.stop();
+        submit.disabled = true;
+        field.disabled = true;
+        play.disabled = true;
+        start.disabled = true;
+        previous.disabled = true;
+        next.disabled = true;
+        let saved = false;
+        try { saved = await c.commit(id!, a, displayedRound, request.signal); }
+        catch { saved = false; }
+        submitting = false;
+        if (pending === request) pending = null;
+        if (retired || request.signal.aborted || round !== displayedRound) return;
+        start.disabled = false;
+        if (!saved) {
+          submit.disabled = false;
+          field.disabled = false;
+          play.disabled = playing;
+          previous.disabled = round.index === 0;
+          next.disabled = round.index + 1 === round.queue.length;
+          c.message(copy("提交未确认；答案仍保留，请重试。", "Chưa xác nhận nộp; đáp án vẫn được giữ, hãy thử lại."));
+          return;
+        }
+        const confirmed = c.state().listeningRound;
+        if (confirmed?.submitted[id!]?.id === a.id) {
+          round = confirmed;
+          draw();
+        }
       },
       "primary",
     );
@@ -273,7 +300,7 @@ export function mountListening(
     }
     const pager = el("nav", undefined, "mixed-pager");
     const previous = button(copy("上一题", "Câu trước"), () => {
-        if (round && round.index > 0) {
+        if (!submitting && round && round.index > 0) {
           c.stop();
           round.index--;
           save();
@@ -281,7 +308,7 @@ export function mountListening(
         }
       }),
       next = button(copy("下一题", "Câu tiếp"), () => {
-        if (round && round.index + 1 < round.queue.length) {
+        if (!submitting && round && round.index + 1 < round.queue.length) {
           c.stop();
           round.index++;
           save();
@@ -306,6 +333,7 @@ export function mountListening(
   draw();
   return () => {
     retired = true;
+    pending?.abort();
     c.stop();
     root.remove();
   };

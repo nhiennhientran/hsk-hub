@@ -1,0 +1,31 @@
+✔ approved source corrections appear in the display with provenance while the frozen input stays unchanged (36.474037ms)
+✔ display repairs preserve every stable identity, catalog sense, scene and line audio boundary (16.984048ms)
+✔ stale baselines, mistaken targets, forbidden fields and incomplete provenance reject the whole display revision (182.151887ms)
+✔ frozen book validation runs before display correction, so overlays cannot hide invalid source data (10.027744ms)
+✔ later approved Vietnamese copy can use the same narrow display mechanism without changing histories or audio (10.843938ms)
+✔ vocabulary exposes exactly the frozen 344 sense records / 319 forms with all editorial source and category fields intact (105.926096ms)
+✔ all 330 audio requests resolve exact same-lesson original word ranges with no answer-bearing label or synthetic clip (65.877486ms)
+✔ all 14 no-audio records remain explicit null, correspond to the L4 numeric table, and never borrow another lesson clip (49.499636ms)
+✔ record shape, stable identity, counts, sense separation and complete source provenance are validated (311.555646ms)
+✔ missing, duplicated, orphan or substituted audio metadata is rejected before any resolver is returned (229.932792ms)
+✔ no-audio declarations cannot disappear, duplicate, point at a different sense, or acquire a fabricated clip (174.769573ms)
+✔ range validation rejects negative, zero, nonfinite, beyond-track and same-lesson non-vocabulary clips (73.718813ms)
+✔ actual SHA256 verification rejects valid-shaped editorial, clip and original-track metadata drift (276.634231ms)
+✔ content snapshots are deeply readonly and stable across caller mutations during asynchronous validation (69.433861ms)
+✔ loader fetches the frozen sources and approved display sidecar with AbortSignal, with HTTP failure visible (49.574336ms)
+✔ aborted loads and in-flight hashes cannot deliver content to a departed view (12.793322ms)
+✔ current textbook examples preserve exact Chinese, pinyin, Vietnamese and lesson sources without copying audio (89.597519ms)
+✔ every polysemous sense has a reviewed same-lesson example; homographs never share the wrong use (37.712251ms)
+✔ examples reject another baseline and unverified text; asynchronous reads do not expose caller mutations (135.160271ms)
+✔ live vocabulary examples share the validated textbook display and preserve all frozen identity, rating and audio data (135.59562ms)
+✔ display examples reject unverified source hashes, stale revisions and ambiguous or unreviewed sense anchors (190.035673ms)
+✔ asynchronous display snapshots ignore caller mutations and remain deeply readonly (93.031403ms)
+✔ an existing rated vocabulary review and schedule restore unchanged with the live display examples (100.067231ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2371.546011

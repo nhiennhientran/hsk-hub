@@ -1,0 +1,79 @@
+{
+  "reviewedAtUtc": "2026-10-04T17:01:08.782182+00:00",
+  "baseHead": "f87926c765204119e879453755b44ea2853f0ef0",
+  "scope": "Read-only independent review of root working-tree attempt commit changes. No production modifications or browser execution by this agent.",
+  "fileSha256": {
+    "course-app/src/attempt-commit.ts": "d0351c5f3ae5dd3a0ed356baae5ea8073dd7bbb71768693ab0e6eed379cf004d",
+    "course-app/src/main.ts": "9f0309622e30f4362132ddfa381b18494de99df3761ae609cd5c60b9bbaa928d",
+    "course-app/src/listening-view.ts": "3c7384db55bf7fba043c76e3ff8120a278f576fec4310a836a1fdfcb9d4a8050",
+    "hsk1-app/src/services/storage/index.ts": "a0f3c1838c7c83c4af7ae46c61418f674d332499a61e56b69cfbcb080a4efab0",
+    "hsk1-app/src/features/source-activities/index.ts": "75982f634a8969ff8faf90e15593c33c551e0edde325c3e5d07c921a498d9d1f",
+    "hsk1-app/src/features/source-activities/figures.ts": "796666a581ce4fbcaabee7706f72347e71cfee3a305b01a9a8019f320736da26",
+    "hsk1-app/src/services/source-activities/state.ts": "7678c98fa0d2a53d335971de3f8c9e0346d19d732ac734b99e8191443ac9c34a"
+  },
+  "findings": [
+    {
+      "id": "homework-ime-abort-controls",
+      "status": "fixed by root and re-read",
+      "before": "Connected form returned immediately on aborted request, leaving submit/fieldset disabled.",
+      "after": "Disconnected form returns; failed candidate unlocks current form; catch aborts and clears pending and restores controls."
+    },
+    {
+      "id": "homework-redo-during-pending",
+      "status": "fixed by root and re-read",
+      "before": "Form-external redo remained clickable while submission waited for write lock.",
+      "after": "Redo disabled with submission, restored on current failure/catch/success; redo handler already guards disabled."
+    },
+    {
+      "id": "imported-listening-out-of-range-answer",
+      "status": "fixed by root and verified with actual H2/H3 question probe",
+      "before": "Structurally accepted imported listeningRound integer answer beyond options reached grade outside catch.",
+      "after": "isAnswered(question, round.answers[id]) guard rejects before grade and shows choose-answer message."
+    }
+  ],
+  "realQuestionProbe": [
+    {
+      "level": 2,
+      "question": "hsk2-fltrp-2026:l01:listen01",
+      "options": 3,
+      "answer": 3,
+      "importAccepted": true,
+      "directGradeThrows": "请先完成本部分 · Hãy hoàn thành phần này trước",
+      "newGuardBlocks": true,
+      "validAnswer0Accepted": true
+    },
+    {
+      "level": 3,
+      "question": "hsk3-fltrp-2026:l01:listen01",
+      "options": 3,
+      "answer": 3,
+      "importAccepted": true,
+      "directGradeThrows": "请先完成本部分 · Hãy hoàn thành phần này trước",
+      "newGuardBlocks": true,
+      "validAnswer0Accepted": true
+    }
+  ],
+  "archive": {
+    "historicalLessonVersion": "source-v2",
+    "currentLessonVersion": "source-v3-original-crops",
+    "historicalFigureCount": 10,
+    "currentFigureCount": 13,
+    "historicalIdsNotInCurrentCatalogue": [
+      "picture-01",
+      "picture-02",
+      "picture-03",
+      "picture-04",
+      "warmup-01",
+      "warmup-02",
+      "warmup-03",
+      "warmup-04",
+      "warmup-05",
+      "warmup-06"
+    ],
+    "allHistoricalAssetFilesRetained": true,
+    "currentResolverUsedForArchive": false,
+    "archivedContextRendersImages": false,
+    "interpretation": "Archived context keeps figure IDs/SHA, but archive UI renders text/table/fields/history only. No current-resolver misinterpretation path was found; historical images were not rendered by this archive branch in the first place."
+  },
+  "validationBoundary": "Native quota, held-lock, IME, route and retry tests are owned by A7 worker; root owns unit/build execution. Those reports remain separate from this independent review."
+}

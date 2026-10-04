@@ -1,4 +1,5 @@
 import {commitCourseActivity} from './activity-commit.ts';
+import {commitCourseAttempt} from './attempt-commit.ts';
 import {loadSegments} from "./segments.ts";
 import type {BackupProvider} from "./backup-view.ts";
 import { mountListening } from "./listening-view.ts";
@@ -24,7 +25,6 @@ import {
   createLearningStore,
   parts,
   grade,
-  recordAttempt,
   type Attempt,
 } from "./state.ts";
 import {
@@ -492,6 +492,10 @@ async function render() {
         state: () => store.snapshot().data,
         edit,
         flush,
+        commit: async (id, attempt, round, signal) => {
+          clearTimeout(draftTimer);
+          return commitCourseAttempt(store, id + ':individual', attempt, 'listening', signal, () => composing, round);
+        },
         stop: () => audio.stop(),
         message,
         play: async (q) => {
@@ -638,6 +642,9 @@ function answerText(q: Question, a: Answer | undefined): string {
   return "—";
 }
 function renderHomework(l: Lesson, independent = false) {
+  const assignmentStore = store;
+  let pendingSubmission: AbortController | null = null;
+  cleanup = () => { pendingSubmission?.abort(); };
   heading(
     independent
       ? copy("独立听力练习", "Luyện nghe độc lập")
@@ -677,6 +684,7 @@ function renderHomework(l: Lesson, independent = false) {
       state.drafts[key]?.answers ?? {},
     );
   const form = el("form");
+  form.addEventListener('compositionstart', () => pendingSubmission?.abort());
   form.id = "assignment";
   const record = state[kind][key];
   const info = el("p");
@@ -798,14 +806,26 @@ function renderHomework(l: Lesson, independent = false) {
         questions,
         answers,
         Date.now(),
-        store.snapshot().data.profile,
+        assignmentStore.snapshot().data.profile,
       );
-      edit((s) => recordAttempt(s, key, attempt, kind));
+      clearTimeout(draftTimer);
+      pendingSubmission = new AbortController();
+      const request = pendingSubmission;
       submit.disabled = true;
+      redo.disabled = true;
       for (const field of form.querySelectorAll("fieldset"))
         field.disabled = true;
-      const saved = await flush();
+      const saved = await commitCourseAttempt(assignmentStore, key, attempt, kind, request.signal, () => composing);
+      if (pendingSubmission === request) pendingSubmission = null;
       if (!form.isConnected) return;
+      if (!saved) {
+        submit.disabled = false;
+        redo.disabled = false;
+        for (const field of form.querySelectorAll('fieldset')) field.disabled = false;
+        info.replaceChildren(el('span', copy('提交未确认；草稿仍保留，请重试。', 'Chưa xác nhận nộp; bản nháp vẫn được giữ, hãy thử lại.')));
+        return;
+      }
+      redo.disabled = false;
       info.replaceChildren(
         el(
           "span",
@@ -821,10 +841,10 @@ function renderHomework(l: Lesson, independent = false) {
         ),
         el(
           "span",
-          saved ? copy("已保存", "Đã lưu") : copy("尚未保存", "Chưa lưu"),
+          copy("已保存", "Đã lưu"),
         ),
       );
-      renderReceipt(l, questions, store.snapshot().data[kind][key]!);
+      renderReceipt(l, questions, assignmentStore.snapshot().data[kind][key]!);
       if (part !== "writing")
         for (const field of form.querySelectorAll("fieldset")) {
           const q = questions.find(
@@ -843,6 +863,12 @@ function renderHomework(l: Lesson, independent = false) {
           if (q.explanation) field.append(el("p", q.explanation));
         }
     } catch (error) {
+      pendingSubmission?.abort();
+      pendingSubmission = null;
+      if (!form.isConnected) return;
+      submit.disabled = false;
+      redo.disabled = false;
+      for (const field of form.querySelectorAll('fieldset')) field.disabled = false;
       info.textContent = error instanceof Error ? error.message : String(error);
     }
   });
