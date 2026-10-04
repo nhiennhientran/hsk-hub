@@ -1,0 +1,74 @@
+{
+  "commit": "1fa2f1923c2c87537d8a3534ecd38fea26f35516",
+  "tree": "b59877a9ea7e92c1e8cb720972cfacb8eafa8c3e",
+  "runId": 37181503222,
+  "runUrl": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37181503222",
+  "conclusion": "success",
+  "fullBrowserPassed": 422,
+  "preflightPassedPerEngine": 38,
+  "workers": 1,
+  "retries": 0,
+  "allFourActualLogsRead": true,
+  "jobs": [
+    {
+      "id": 111374846134,
+      "engine": "chromium",
+      "shard": 1,
+      "fullPassed": 106,
+      "preflightPassed": 38
+    },
+    {
+      "id": 111374846161,
+      "engine": "chromium",
+      "shard": 2,
+      "fullPassed": 105
+    },
+    {
+      "id": 111374845971,
+      "engine": "webkit",
+      "shard": 2,
+      "fullPassed": 105
+    },
+    {
+      "id": 111374846391,
+      "engine": "webkit",
+      "shard": 1,
+      "fullPassed": 106,
+      "preflightPassed": 38
+    }
+  ],
+  "artifactIntegrity": [
+    {
+      "id": 11295527086,
+      "engine": "webkit",
+      "sha256": "c58d8d2b2104634bc352056404097bda68683cfad2980a3a81d88f3d32d9ced8",
+      "bytes": 18700844,
+      "zipHashVerified": true
+    },
+    {
+      "id": 11294784590,
+      "engine": "chromium",
+      "sha256": "5edd7c02e4bae513ad2120d76aa7bd2ecccf648e048474d5cb2057a3b4187ba2",
+      "bytes": 16875211,
+      "zipHashVerified": true
+    }
+  ],
+  "visualReview": {
+    "status": "bounded-pass",
+    "screenshotsCollected": 58,
+    "observed": [
+      "Both engines: mobile390 source section content samples for both lessons",
+      "Both engines: optional seventh classroom field and bilingual marker",
+      "Both engines: separate double grammar blanks and source explanations",
+      "Both engines: eleven-row review320 table and recorded independent checks",
+      "Both engines: desktop1440 word-bank layout"
+    ],
+    "limitations": [
+      "Manual screenshot sampling, not every pixel or every text scene",
+      "All-scene manual visual acceptance remains in final48-lesson gate",
+      "No human listening or physical-device certification"
+    ]
+  },
+  "productionCommit": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
+  "productionUnchanged": true
+}

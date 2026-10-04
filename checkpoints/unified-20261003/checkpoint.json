@@ -73,44 +73,44 @@
     }
   ],
   "checks": {
-    "course_unit": "96 passed locally for L12–13 integration",
+    "course_unit": "102 passed locally for L14–15 integration",
     "hsk1_unit": "335 passed locally; HSK1 code and30-v1 bank unchanged",
-    "course_build": "passed locally for L12–13 integration",
-    "nonempty_storage": "390 native suite at47e5998 passed; new optional blank/nonblank actual-store save/reload/export/restore checks passed locally; native cases pending",
-    "browsers": "390/390 plus32preflight per engine at47e5998; new422 case collection is not execution evidence",
+    "course_build": "passed locally for L14–15 integration",
+    "nonempty_storage": "422 native suite at1fa2 passed, including explicit optional blank/nonblank and required gating",
+    "browsers": "422/422 plus38preflight per engine at1fa2; new456 collection is not execution",
     "physical_devices": "not run",
     "human_listening": "not run"
   },
   "publication": "blocked until all sixteen required acceptance gates pass; production unchanged",
-  "updated": "2026-10-04T05:19:00Z",
+  "updated": "2026-10-04T06:33:00Z",
   "remoteSourceCommit": "1f091355561bef02f1b518fab81bb468dc1fc7d9",
   "localSourceCommit": "f37364c280534d7505ad8250e89bef482272faaa",
   "testedSuccessfulCheckpoint": {
-    "remote": "47e599837128843c77154db59ef8d2f8937f3a52",
-    "local": "47e599837128843c77154db59ef8d2f8937f3a52",
-    "tree": "44e82d242d631fc93b2883de0535e710ce7fc7d5",
-    "run": 37178434272,
+    "remote": "1fa2f1923c2c87537d8a3534ecd38fea26f35516",
+    "local": "1fa2f1923c2c87537d8a3534ecd38fea26f35516",
+    "tree": "b59877a9ea7e92c1e8cb720972cfacb8eafa8c3e",
+    "run": 37181503222,
     "browsers": [
       "chromium",
       "webkit"
     ],
-    "tests": 390,
-    "preflightPerEngine": 32,
-    "scope": "HSK2 lessons1–15 and HSK3 lessons1–11 integrated source upgrades; not final48-lesson or production acceptance"
+    "tests": 422,
+    "preflightPerEngine": 38,
+    "scope": "HSK2 lessons1–15 and HSK3 lessons1–13 source upgrades; final48-lesson acceptance pending"
   },
   "currentCI": {
-    "lastPassedRun": 37178434272,
-    "lastPassedBrowserCases": 390,
+    "lastPassedRun": 37181503222,
+    "lastPassedBrowserCases": 422,
     "audioIntegrationRun": 37106355777,
     "audioIntegrationStatus": "original37106355777failed130passed4failed;repaired37107556124passed154",
     "audioCases": 134,
-    "nextLocalTestsDiscoverable": 422,
-    "nextScope": "HSK3 L12–13 source-specific interactions, optional continuation and explicit prior390 coverage retention",
+    "nextLocalTestsDiscoverable": 456,
+    "nextScope": "HSK3 L14–15 original source tasks, city figure bindings and prior422 retention",
     "lessons67Run": 37107213747,
     "lessons67Status": "previous37107213747failed144passed10failed;repaired37107556124passed154",
-    "extraPreflightCases": 32,
-    "newCandidateStatus": "L12–13 independent source/artwork and bounded integration repairs accepted; local96unit/build/types and422collection passed; native execution pending",
-    "extraPreflightScope": "last successful per-engine count at47e5998"
+    "extraPreflightCases": 38,
+    "newCandidateStatus": "L14–15 independent source/artwork accepted;102localunit/build/types and456collection passed; native execution pending",
+    "extraPreflightScope": "last successful count at1fa2"
   },
   "contentPilot": {
     "levels": [
@@ -197,10 +197,10 @@
     "independentChecks": 1758,
     "browser": "passed174/174 aggregate browser cases and8/8mobilepreflight, run37109960704, remotee8b7aef"
   },
-  "updatedAt": "2026-10-04T05:19:00Z",
-  "remoteDevelopmentCommit": "47e599837128843c77154db59ef8d2f8937f3a52",
-  "localDevelopmentCommit": "47e599837128843c77154db59ef8d2f8937f3a52",
-  "exactSharedTree": "44e82d242d631fc93b2883de0535e710ce7fc7d5",
+  "updatedAt": "2026-10-04T06:33:00Z",
+  "remoteDevelopmentCommit": "1fa2f1923c2c87537d8a3534ecd38fea26f35516",
+  "localDevelopmentCommit": "1fa2f1923c2c87537d8a3534ecd38fea26f35516",
+  "exactSharedTree": "b59877a9ea7e92c1e8cb720972cfacb8eafa8c3e",
   "ciHistoryActual": [
     {
       "run": 37105595387,
@@ -380,6 +380,18 @@
       "preflightPerEngine": 32,
       "actualLogsRead": true,
       "visualEvidence": "course-app/docs/hsk3-lessons1011-integration/ci-acceptance.json"
+    },
+    {
+      "run": 37181503222,
+      "commit": "1fa2f1923c2c87537d8a3534ecd38fea26f35516",
+      "status": "success",
+      "passed": 422,
+      "failed": 0,
+      "chromium": 211,
+      "webkit": 211,
+      "preflightPerEngine": 38,
+      "actualLogsRead": true,
+      "visualEvidence": "course-app/docs/hsk3-lessons1213-integration/ci-acceptance.json"
     }
   ],
   "audioBatch23": {
@@ -513,7 +525,7 @@
     "pages": 579,
     "priorPagesPreserved": 422,
     "hsk1PagesAdded": 157,
-    "hsk1OriginalBodyAudit": "pending",
+    "hsk1OriginalBodyAudit": "Full original files recovered and source-pixel inventory completed; missing source-activity coverage pilot remains under review",
     "hsk1OriginalAudio": "93encodedstreams identical; decodedPCM identical after529sample/channel startoffset; fullfilediff due cover/tag/remux. Human/clipalignment pending"
   },
   "cloudRecovery": {
@@ -535,7 +547,7 @@
       "pinnedBrowserDownload": "invalid/truncated ZIP; not installed"
     },
     "draftRecovery": "Lost local-only L8–9 and HSK2 L4–5 audio drafts not recovered; do not infer presence from historical hash",
-    "newCandidateStatus": "Recovery complete; current accepted native checkpoint47e5998 has390passed; newL12–13 integrated candidate has96localunit passes and422native cases pending"
+    "newCandidateStatus": "Accepted1fa2 has422 native passes; L14–15 candidate has102localunit passes,456native pending"
   },
   "contentHSK3Batch89": {
     "status": "scoped source/content/figure/browser accepted at d5feac8",
@@ -575,7 +587,7 @@
     "browserExecution": "390/390 plus32preflight per engine; four actual logs and bounded native screenshot samples inspected"
   },
   "contentHSK3Batch1213": {
-    "status": "independent source/artwork and bounded integration repairs accepted; native422execution pending",
+    "status": "scoped source/content/artwork and422 native regression accepted at1fa2",
     "activities": 58,
     "fields": 163,
     "officialFields": 48,
@@ -601,12 +613,30 @@
       "two bounded new-layer Vietnamese prompt clarifications"
     ],
     "independentReview": "course-app/docs/content-audit/hsk3-lessons12-13-independent/review.md",
-    "boundedIntegrationReview": "course-app/docs/hsk3-lessons1213-integration/integration-repair-review.md"
+    "boundedIntegrationReview": "course-app/docs/hsk3-lessons1213-integration/integration-repair-review.md",
+    "browserExecution": "422/422 plus38preflight each; all four logs and bounded native screenshot samples inspected"
   },
   "releaseBlockers": [
-    "HSK1 original source-activity and image coverage model incomplete; full source-pixel review pending",
+    "HSK1 original source activity/image coverage incomplete; original full-PDF source inventory complete, L4 compatibility pilot under review",
     "HSK1 scene-switch listening concealment repair awaiting isolated integration and native regression",
     "HSK1 homework30-v1 question bank must remain frozen until revision-aware history validation is implemented",
     "Remaining HSK3 batches, audio clip acceptance, handwriting and complete48-lesson visual/failure/recovery gates"
-  ]
+  ],
+  "contentHSK3Batch1415": {
+    "status": "independent source/artwork and city binding repair accepted; native456 pending",
+    "activities": 58,
+    "fields": 149,
+    "officialFields": 47,
+    "illustrations": 31,
+    "unitTests": 102,
+    "browserCollected": 456,
+    "browserShardsPerEngine": [
+      114,
+      114
+    ],
+    "preflightCollectedPerEngine": 44,
+    "independentReview": "course-app/docs/content-audit/hsk3-lessons14-15-independent/recheck-review.md",
+    "integrationRepair": "Bind four original city manifest IDs to classroom activity; no shared renderer change",
+    "ambiguousListening": "L15 text2 question2 remains non-unique reference only"
+  }
 }

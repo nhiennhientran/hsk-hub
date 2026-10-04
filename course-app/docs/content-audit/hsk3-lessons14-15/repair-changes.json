@@ -1,0 +1,49 @@
+{
+  "issuesRepaired": 5,
+  "changedContentAndAssetFiles": [
+    {
+      "path": "content/hsk3/lesson-14.json",
+      "beforeSha256": "bf733ba51dfd8516bb832d0c73ea7a6d1d4789fd5c5f8697ddf9763076882e94",
+      "afterSha256": "c0af5869aed1fb57a7f6b521de0b8082edc581e3c468bd162ef84e521daf88e0"
+    },
+    {
+      "path": "content/hsk3/lesson-15.json",
+      "beforeSha256": "f7e9568fba23f9d202a38c5ebdd560d30d940fc45733179aa024fa0662d94333",
+      "afterSha256": "68300a790f84ecab3b25931544addf3a160243c78e8d0f71e3d4749947ab2262"
+    },
+    {
+      "path": "public/illustrations/hsk3-l15-city-beijing.svg",
+      "beforeSha256": "1a83d5d1960d9fa7bb1ebc0058c2572bdd6264213b94fab1c17d08fe6d7c0b23",
+      "afterSha256": "c4922bbd3b5cc189494baaee9c96bd9aac502f15ea269aa592d57e654fa9ae8b"
+    },
+    {
+      "path": "public/illustrations/hsk3-l15-city-nanjing.svg",
+      "beforeSha256": "3775e9a0f433345f3db274d73c2352768fb71b3d10be7ed3479bd8294a84b67d",
+      "afterSha256": "cb1d0fd537c9d195bd7d23882c361f8cd5b36ad282ee79964987a3325c4ea3e6"
+    },
+    {
+      "path": "public/illustrations/hsk3-l15-picture-1.svg",
+      "beforeSha256": "c873afabc9b020d3026e5938e1939cd9ab73c77513a091e3f141b15b947911cb",
+      "afterSha256": "635ef13516e75a7bb667bef2481c9b9648a25cb98d22f443573a5f1895e49caa"
+    },
+    {
+      "path": "public/illustrations/hsk3-l15-picture-2.svg",
+      "beforeSha256": "6c4303559cbfb47f2bbb57a181a8650f8a36a1d8657d43f6e0e040abe1ed0f14",
+      "afterSha256": "cde105734fd75335c3dd3f96e6ec0acdb8cddaf0d8987f866177e6b34b1639cc"
+    },
+    {
+      "path": "public/illustrations/hsk3-l15-text2-1.svg",
+      "beforeSha256": "e4abb7e7bacfa0aeea243fb7bb41bab01dd74e6ce8aad8c2b0810880f7487d42",
+      "afterSha256": "854373ae6983d59f263a51c893eb36c3a080d55572115b39d84ababec1ac7a03"
+    },
+    {
+      "path": "public/illustrations/hsk3-l15-warmup1-3.svg",
+      "beforeSha256": "cf5ad58d22911ef9f6ebd27643b629b83bea888654a83bd33f6dff3ef068df78",
+      "afterSha256": "a17a0f23609b51f458fcb4643f448fc919f17ff7c7f8bb150ed2b9f7e652c73d"
+    }
+  ],
+  "baselineValuesPreserved": true,
+  "countsUnchanged": true,
+  "independentRecheck": "pending",
+  "unitTestException": "81/82 pass; unchanged aggregate expected320, actual351"
+}
