@@ -150,7 +150,7 @@ test('HSK3 lesson5 pair table keeps eight responses printed templates and keyboa
   await submitSaved(page,lesson5,activity);
   await page.getByRole('button',{name:'统一备份与恢复'}).click();
   await expect(dialog).toBeVisible();
-  await dialog.locator('input[type=file]').setInputFiles({name:'hsk3-pair-backup.json',mimeType:'application/json',buffer:bytes});
+  await dialog.locator('#unified-backup-file').setInputFiles({name:'hsk3-pair-backup.json',mimeType:'application/json',buffer:bytes});
   await expect(dialog.getByRole('button',{name:'确认恢复HSK 3'})).toBeVisible();
   await dialog.getByRole('button',{name:'确认恢复HSK 3'}).click();
   await expect(dialog).toContainText('HSK 3已恢复');

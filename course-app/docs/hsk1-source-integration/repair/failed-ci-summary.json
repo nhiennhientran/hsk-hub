@@ -1,0 +1,33 @@
+{
+  "commit": "5528ece04ff7b88592f627037018ba3bcfc6da23",
+  "run": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37193376372",
+  "conclusion": "failure",
+  "preflight": {
+    "chromium": {
+      "passed": 46,
+      "failed": 7
+    },
+    "webkit": {
+      "passed": 47,
+      "failed": 6
+    }
+  },
+  "unified": {
+    "passed": 270,
+    "failed": 8,
+    "notRun": 278,
+    "planned": 556
+  },
+  "standalone": {
+    "passed": 0,
+    "notRun": 40,
+    "planned": 40
+  },
+  "causes": [
+    "Generic file input selector became ambiguous when a second independently labeled HSK1 control mounted",
+    "Old failed-save copy assertion expected a previous message"
+  ],
+  "additionalIndependentRepair": "IME-start-only pending source submission now cancels its candidate; original history remains untouched",
+  "replacementSuiteCollected": 600,
+  "replacementExecuted": false
+}

@@ -104,7 +104,7 @@ export function mountPairPanel(host:HTMLElement,primary:LearningSession,signal:A
       if(epoch===displayEpoch)clear();
     },signal));
   }
-  const importLabel=element('label',copy('导入完整或单独备份','Nhập bản sao lưu đầy đủ hoặc riêng từng loại'));
+  const importLabel=element('label',copy('导入HSK1完整或单独备份','Nhập bản sao lưu HSK1 đầy đủ hoặc riêng từng loại'));
   const input=element('input');
   input.type='file';
   input.accept='.json,application/json';

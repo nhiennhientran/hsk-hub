@@ -19,20 +19,25 @@ export type SourceStore=ReturnType<typeof createSourceStore>;
 export function createSourceSession(store:SourceStore,now:()=>number=Date.now){
   let timer:ReturnType<typeof setTimeout>|undefined;
   const composing=new Set<string>();
+  const submissions=new Map<string,AbortController>();
   const flush=async()=>{if(timer)clearTimeout(timer);timer=undefined;return store.save();};
   return {store,flush,
-    setComposing(id:string,value:boolean){if(value)composing.add(id);else composing.delete(id);},
+    setComposing(id:string,value:boolean){if(value){composing.add(id);submissions.get(id)?.abort();}else composing.delete(id);},
     isComposing:()=>composing.size>0,
-    edit(activity:SourceActivity,values:Record<string,string>,composing=false){store.edit(data=>editSourceDraft(data,activity,values,now()));if(timer)clearTimeout(timer);timer=undefined;if(!composing)timer=setTimeout(()=>{timer=undefined;void store.save();},350);},
+    edit(activity:SourceActivity,values:Record<string,string>,composing=false){submissions.get(activity.id)?.abort();store.edit(data=>editSourceDraft(data,activity,values,now()));if(timer)clearTimeout(timer);timer=undefined;if(!composing)timer=setTimeout(()=>{timer=undefined;void store.save();},350);},
     async submit(activity:SourceActivity,values:Record<string,string>,signal?:AbortSignal){
+      if(composing.has(activity.id))return {ok:false,code:'composing',submissionId:null};
       if(activity.fields.some(f=>!values[f.id]?.trim()))return {ok:false,code:'incomplete',submissionId:null};
       if(timer)clearTimeout(timer);timer=undefined;
       const at=now(),previous=store.snapshot().data.records[activity.id+'@'+activity.version],id=`submission-${at}-${(previous?.history.length??0)+1}`;
       store.edit(data=>editSourceDraft(data,activity,values,at));
       const candidate=store.snapshot().data;candidate.records[activity.id+'@'+activity.version].history.push({id,at,values:{...values}});
-      const result=await store.saveCandidate(candidate,signal);return {...result,submissionId:result.ok?id:null};
+      submissions.get(activity.id)?.abort();const request=new AbortController(),cancel=()=>request.abort();submissions.set(activity.id,request);
+      signal?.addEventListener('abort',cancel,{once:true});if(signal?.aborted)request.abort();
+      try{const result=await store.saveCandidate(candidate,request.signal);return {...result,submissionId:result.ok?id:null};}
+      finally{signal?.removeEventListener('abort',cancel);if(submissions.get(activity.id)===request)submissions.delete(activity.id);}
     },
-    dispose(){if(timer)clearTimeout(timer);timer=undefined;store.dispose();},
+    dispose(){for(const request of submissions.values())request.abort();submissions.clear();if(timer)clearTimeout(timer);timer=undefined;store.dispose();},
   };
 }
 export type SourceSession=ReturnType<typeof createSourceSession>;

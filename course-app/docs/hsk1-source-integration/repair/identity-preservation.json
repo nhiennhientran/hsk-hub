@@ -1,0 +1,36 @@
+{
+  "chromium": {
+    "oldUnified": 278,
+    "newUnified": 279,
+    "removed": [],
+    "added": [
+      "chromium | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source IME start cancels a lock-waiting submission until an explicit retry"
+    ]
+  },
+  "webkit": {
+    "oldUnified": 278,
+    "newUnified": 279,
+    "removed": [],
+    "added": [
+      "webkit | ../../../hsk1-app/tests/browser/source-pilot-cases.ts | unified HSK1 source IME start cancels a lock-waiting submission until an explicit retry"
+    ]
+  },
+  "standalone": {
+    "old": 40,
+    "new": 42,
+    "removed": [],
+    "added": [
+      [
+        "chromium",
+        "source-pilot-cases.ts",
+        "modular HSK1 source IME start cancels a lock-waiting submission until an explicit retry"
+      ],
+      [
+        "webkit",
+        "source-pilot-cases.ts",
+        "modular HSK1 source IME start cancels a lock-waiting submission until an explicit retry"
+      ]
+    ]
+  },
+  "scope": "Collection identity preservation, not execution success"
+}

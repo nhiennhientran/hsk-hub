@@ -7,7 +7,8 @@ import {activityReady,openLesson,submitSaved,type LessonFixture} from './lesson-
 async function remountThroughOtherCourseRestore(page:Page,level:2|3){
  const other=level===2?3:2,backup={app:configs[other].id+'-backup',schema:1,exportedAt:Date.now(),data:blank(configs[other])};
  await page.getByRole('button',{name:'统一备份与恢复'}).click();const dialog=page.getByRole('dialog',{name:'学习记录备份'});
- await dialog.locator('input[type=file]').setInputFiles({name:'synthetic-other-course.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(backup))});
+ await expect(dialog.locator('#unified-backup-file')).toHaveAccessibleName(/选择备份文件.*Chọn tệp sao lưu/);await expect(dialog.locator('[data-pair-import]')).toHaveAccessibleName(/导入HSK1完整或单独备份/);
+ await dialog.locator('#unified-backup-file').setInputFiles({name:'synthetic-other-course.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(backup))});
  await expect(dialog.locator('.backup-preview')).toHaveCount(1);await dialog.getByRole('button',{name:`确认恢复HSK ${other}`}).click();await expect(dialog).toContainText(`HSK ${other}已恢复`);await dialog.getByRole('button',{name:'关闭',exact:false}).click();
 }
 for(const level of [2,3] as const)for(const mode of ['failed','waiting'] as const)test(`HSK${level} ${mode} submission cannot reveal feedback after actual remount or become a later ordinary save`,async({page})=>{
