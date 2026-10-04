@@ -109,7 +109,7 @@
     "lessons67Run": 37107213747,
     "lessons67Status": "previous37107213747failed144passed10failed;repaired37107556124passed154",
     "extraPreflightCases": 38,
-    "newCandidateStatus": "L14–15 independent source/artwork accepted;102localunit/build/types and456collection passed; native execution pending",
+    "newCandidateStatus": "First456 run had342 full passes,114notrun after Chromiumpreflight43pass1fail; scroll-only image readiness repair retains456 identities; full rerun pending",
     "extraPreflightScope": "last successful count at1fa2"
   },
   "contentPilot": {
@@ -392,6 +392,18 @@
       "preflightPerEngine": 38,
       "actualLogsRead": true,
       "visualEvidence": "course-app/docs/hsk3-lessons1213-integration/ci-acceptance.json"
+    },
+    {
+      "run": 37183716526,
+      "commit": "29b96cdb5cfe34a61fc3821fec5b47abb136e84e",
+      "status": "failed",
+      "passed": 342,
+      "failed": 0,
+      "notRun": 114,
+      "preflightPassed": 87,
+      "preflightFailed": 1,
+      "actualLogsRead": true,
+      "cause": "Chromium320 city-image decode polling before scrolling offscreen lazy-loaded images"
     }
   ],
   "audioBatch23": {

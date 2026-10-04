@@ -1,0 +1,25 @@
+{
+  "runId": 37183716526,
+  "commit": "29b96cdb5cfe34a61fc3821fec5b47abb136e84e",
+  "status": "failed",
+  "allFourActualLogsRead": true,
+  "fullPassed": 342,
+  "fullNotRun": 114,
+  "fullFailed": 0,
+  "preflight": {
+    "chromium": {
+      "passed": 43,
+      "failed": 1
+    },
+    "webkit": {
+      "passed": 44,
+      "failed": 0
+    }
+  },
+  "failure": "Chromium320 city-image decode polling before scrolling offscreen lazy-loaded images",
+  "repair": "Only scrollIntoViewIfNeeded before existing image decode poll; no removed or weakened assertions",
+  "testIdentitiesRetained": 456,
+  "shardAllocationUnchanged": true,
+  "appOrCourseDataChanged": false,
+  "repairNativeRerun": "pending"
+}
