@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "updatedAt": "2026-10-04T15:22:00.548127+00:00",
+  "status": "running",
+  "authorization": "2026-10-04T23:09:46+08:00; autonomous execution; confirmation before production publication",
+  "branch": "work/hsk-autonomous-execution-20261004",
+  "lastVerifiedRemoteCommit": "973bb14b28062ff0f6b86aa29f0bcae974799a64",
+  "sourceBaseline": "387aa7b6145e80f983f331d8b55cd2b2b26d6990",
+  "phase": "A",
+  "currentSteps": [
+    1,
+    2,
+    3,
+    4,
+    9
+  ],
+  "protectedHsk1Files": {
+    "textbook.json": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+    "homework30-bank.json": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+    "stage2-bank.json": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3",
+    "stage3-catalog.json": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+    "legacy-exercises.json": "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c"
+  },
+  "completed": [
+    "New autonomous execution scope recorded",
+    "Protected frozen-bank hashes reconciled with stage-1 baseline",
+    "Independent L9-11 complete original source review: 25 textbook pages, 4 answer pages, 45 answer fields, 41 crops"
+  ],
+  "inProgress": [
+    "L1-3 final independent acceptance and integration",
+    "L5-8 final independent acceptance and integration",
+    "L9 p67 first cat incorrectly changed to dog: original page reread, repair required",
+    "New browser fixtures actually included in typecheck; local Chromium feasibility verified by worker",
+    "Blank printed table headers and listening-stem pinyin engine support"
+  ],
+  "notYetCertified": [
+    "New full native suite",
+    "Engineering phase A completed",
+    "Official Vietnamese full comparison",
+    "Human listening",
+    "Physical devices"
+  ],
+  "nextExecutableAction": "Repair L9 first cat in candidate, runtime JSON and generator with new activity revision; integrate accepted L1-3 candidates; run focused source-state and build checks",
+  "productionPublished": false
+}

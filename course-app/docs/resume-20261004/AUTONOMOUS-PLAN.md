@@ -1,13 +1,13 @@
 # HSK website: continuous execution plan
 Updated: 2026-10-04 (Asia/Shanghai)
-Status: proposed; website implementation has not started under this revised plan.
+Status: authorized and running. User authorization received 2026-10-04 23:09:46 Asia/Shanghai: 按这版执行，过程自主推进，上线前给我确认。
 Source checkpoint: 387aa7b6145e80f983f331d8b55cd2b2b26d6990.
 Repository: nhiennhientran/hsk-hub.
 
 ## Latest user instructions supersede the old checkpoint rule
 The user changed the order: finish the original website implementation and engineering acceptance first, then comprehensively align all corresponding Vietnamese with the three uploaded official Vietnamese textbooks. Valid alternate expressions should also align with official wording where practical.
 The earlier requirement to stop every 40–50 minutes for confirmation is withdrawn. During authorized execution, save, validate, report and continue through ordinary milestones. Do not end the active implementation turn merely because a milestone was reached.
-This file is a proposed execution contract; the user is currently requesting the detailed plan and confirmation boundaries, not yet approving its implementation. Record the actual scope of the user's subsequent authorization before starting.
+The user authorized implementation, review, repair, tests, reversible checkpoints and autonomous phase transitions. Production publication is explicitly withheld until the final candidate is confirmed.
 
 ## Definition of completion and execution boundaries
 - Preserve completed HSK2/3 implementation; do not rebuild the 33 integrated lessons or rerun accepted content audits without an unresolved reason.
