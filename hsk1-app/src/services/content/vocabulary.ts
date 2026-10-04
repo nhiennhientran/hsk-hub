@@ -1,3 +1,6 @@
+import { defaultOfficialViRegistry, loadOfficialViRegistry, type OfficialViRegistry } from './official-vi-revisions.ts';
+import { projectOfficialBookLesson } from './textbook.ts';
+import type { VocabularyCard } from '../../domain/vocabulary/types.ts';
 import {courseAssetBase} from './asset-base.ts';
 import { createListeningContent } from './listening.ts';
 import type { ListeningCatalog, ListeningLesson, ListeningVocabulary } from './listening.ts';
@@ -23,6 +26,8 @@ export interface VocabularyContent {
   readonly lessons: readonly VocabularyLesson[];
   readonly items: readonly VocabularyItem[];
   readonly displayRevision?: string;
+  displayItem(recordId: string): VocabularyItem | null;
+  displayCard(raw: VocabularyCard): VocabularyCard;
   /** Only an exact original record ID resolves; a sense or word is never an audio lookup key. */
   resolveAudio(recordId: string): AudioRequest | null;
   /** Exact current-textbook sentences; homographs use reviewed sense links. */
@@ -164,7 +169,7 @@ async function fingerprint(value: Row, signal?: AbortSignal): Promise<void> {
 export async function createVocabularyContent(catalogValue: unknown, mediaValue: unknown,
   audioURL: (trackId: string) => string = id => typeof document === 'undefined'
     ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, courseAssetBase()).href,
-  signal?: AbortSignal, textbookValue?: unknown, displayRevisionValue?: unknown): Promise<VocabularyContent> {
+  signal?: AbortSignal, textbookValue?: unknown, displayRevisionValue?: unknown, officialVi: OfficialViRegistry = defaultOfficialViRegistry()): Promise<VocabularyContent> {
   signal?.throwIfAborted();
   // Keep inputs stable across the asynchronous shared metadata/hash validation.
   const rawCatalog = structuredClone(catalogValue), rawMedia: unknown = structuredClone(mediaValue);
@@ -236,11 +241,18 @@ export async function createVocabularyContent(catalogValue: unknown, mediaValue:
   signal?.throwIfAborted();
   const revised = rawDisplayRevision === undefined ? undefined : reviseTextbookDisplay(textbook, rawDisplayRevision, catalog.baseline);
   const records = new Map(catalog.vocabulary.map(item => [item.id, item]));
-  const examples = indexExamples(revised?.lessons ?? textbook, catalog.vocabulary, textbook);
+  const examples = indexExamples((revised?.lessons ?? textbook).map(lesson => projectOfficialBookLesson(lesson, officialVi)), catalog.vocabulary, textbook);
   const noExamples: readonly VocabularyExample[] = Object.freeze([]);
   return Object.freeze({
     catalog, lessons: catalog.lessons, items: catalog.vocabulary,
     ...(revised ? { displayRevision: revised.info.revision } : {}),
+    displayItem(recordId: string) { const raw = records.get(recordId); return raw ? officialVi.project(raw, raw.id, 'vocabulary') : null; },
+    displayCard(raw: VocabularyCard): VocabularyCard {
+      const shown = raw.sourceRecords.map(item => officialVi.project(item, item.id, 'vocabulary'));
+      const meanings = [...new Set(shown.map(item => item.vi))];
+      // Keep sourceRecords by identity: the saved mixed fingerprint always sees the raw catalog.
+      return { ...raw, vi: shown[0]?.vi ?? raw.vi, meanings, sourceRecords: raw.sourceRecords };
+    },
     examplesForSense(senseId: string) { return examples.get(senseId) ?? noExamples; },
     resolveAudio(recordId: string): AudioRequest | null {
       const item = records.get(recordId);
@@ -262,5 +274,5 @@ export async function loadVocabulary(signal: AbortSignal): Promise<VocabularyCon
     signal.throwIfAborted();
     return value;
   }));
-  return createVocabularyContent(values[0], values[1], undefined, signal, values[2], values[3]);
+  return createVocabularyContent(values[0], values[1], undefined, signal, values[2], values[3], await loadOfficialViRegistry(signal));
 }

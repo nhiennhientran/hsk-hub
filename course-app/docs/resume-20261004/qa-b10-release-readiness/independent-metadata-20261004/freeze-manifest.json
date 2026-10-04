@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "scope": "Independent narrow metadata gate guard QA only",
+  "createdAt": "2026-10-04T21:09:54.334092+00:00",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 2706,
+      "sha256": "fe52af94a28fa628eb11fecccb147dfaf272c98312b54a7de302a25d0e59728d"
+    },
+    {
+      "file": "accepted-one-line-patch.diff",
+      "bytes": 1218,
+      "sha256": "05ac50020854baa228c2006d5cad9a8a30d311025a23db955537abc549b2abc5"
+    },
+    {
+      "file": "independent-review.json",
+      "bytes": 6162,
+      "sha256": "eb903f91d4a6bfd33b50ef3eb0c93115f4b65e8cacf81d49b502ef43f4f93fc6"
+    },
+    {
+      "file": "probe-execution.log",
+      "bytes": 2953,
+      "sha256": "6e286d790a7521779c034a2bc104e435ceb0999119d2bc3ee2cca57bcc2bd584"
+    },
+    {
+      "file": "probe-metadata-gate.mjs",
+      "bytes": 13767,
+      "sha256": "573f83d03bb9eb4357ff2cea70604b53be34b2f96df03d6fbe37b9f978c0a78f"
+    },
+    {
+      "file": "probe-results.json",
+      "bytes": 19885,
+      "sha256": "d78e8d0eae01f094cc0b31ea3dce83d2b0bbaf1c74d58f921242f461fe460891"
+    },
+    {
+      "file": "targeted-independent-tests.log",
+      "bytes": 2051,
+      "sha256": "abec213f13cbea4c670d9727f48edb0db59cad33e19ea4fd1528b81e49fb5d5c"
+    }
+  ],
+  "actualSourceInputs": [
+    {
+      "path": "course-app/tools/release-readiness.mjs",
+      "bytes": 13815,
+      "sha256": "4db18945e5c731dd6fcee60de0dc3056f609edfae01ed5dfe76ac0439d38c248"
+    },
+    {
+      "path": "course-app/tools/package-core.mjs",
+      "bytes": 8516,
+      "sha256": "cbd2a2d8e2bbe301bf8cfd4ec4137a5c84c8d927ab8de4cf8df8f99a34485d2a"
+    },
+    {
+      "path": "course-app/tools/package-unified.mjs",
+      "bytes": 13157,
+      "sha256": "0b7bdbfe136b17108f0b5ee5ec0413e96d1e9f6a87c084636b56009439ce1cdf"
+    },
+    {
+      "path": "course-app/tests/release-readiness.test.mjs",
+      "bytes": 13052,
+      "sha256": "efb2f3753dbe799d374b8fc962a24e65f8dc35d57c315417311ff47ddaa01cc9"
+    },
+    {
+      "path": "course-app/tests/package-unified.test.mjs",
+      "bytes": 11061,
+      "sha256": "4b6d3a1aa8badc67b9fce73eabda00c9aa755c1a0508430072e44f3b6e98e7c9"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-release-readiness/release-readiness.author-input.mjs",
+      "bytes": 13842,
+      "sha256": "ed4bc1b2c9b1004819dd2e8594ee2b91a58f7b54cf9a1ef13614d8860349c6b7"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-release-readiness/release-readiness.author-tests.mjs",
+      "bytes": 12293,
+      "sha256": "b8e65e423b08c924499445fc99e6bea9f47715a58a1cdf8695fcbf4eaf49424c"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-release-readiness/README.author-input.md",
+      "bytes": 8053,
+      "sha256": "582f2c595518d71734a26be0694eb4462cfcf9f18f8fb8d5b58d18a80c6089f9"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-release-readiness/root-review.json",
+      "bytes": 2126,
+      "sha256": "7736cf9f2a3e952135833aa734421d0ade061cd1f8d2543424b2679621dc0930"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-release-readiness/targeted-root-tests.log",
+      "bytes": 2051,
+      "sha256": "e9b411a099f1ef1080f78da3c7eccd5a343d50da232a24f61cb8b58fdc2afea5"
+    },
+    {
+      "path": "course-app/docs/b10-release-readiness/unit-tests.log",
+      "bytes": 20166,
+      "sha256": "e521f8cfe78e7fe5cd3e2226dafb51cf8b935a9827a6c40d3b54231e7ac07d88"
+    },
+    {
+      "path": "course-app/docs/b10-release-readiness/verification-report.md",
+      "bytes": 4080,
+      "sha256": "d8dca6a538851784783151fc4ef6b9574498bb2db1fea1e7798e592d5927921c"
+    }
+  ],
+  "status": "accepted-bounded-code-repair",
+  "syntheticOnly": true,
+  "productionChanged": false,
+  "publicationApproved": false,
+  "deployed": false
+}

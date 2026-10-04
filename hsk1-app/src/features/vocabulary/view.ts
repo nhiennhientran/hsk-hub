@@ -132,7 +132,8 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
         updateAudio();
       }); updateAudio();
     }
-    function renderCard(card: VocabularyCard): HTMLElement {
+    function renderCard(rawCard: VocabularyCard): HTMLElement {
+      const card = content.displayCard(rawCard);
       const shell = node('article'); shell.className = 'mixed-card'; shell.dataset.senseId = card.senseId;
       const flip = node('button'); flip.type = 'button'; flip.className = 'mixed-card-toggle';
       flip.setAttribute('aria-describedby', hint.id); flip.setAttribute('aria-pressed', String(faces.has(card.senseId)));

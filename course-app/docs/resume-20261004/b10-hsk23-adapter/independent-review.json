@@ -1,0 +1,669 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly/hsk23_adapter_review",
+  "recordedAtUtc": "2026-10-04T20:33:06.123783+00:00",
+  "status": "independent-bounded-implementation-accepted-after-editorial-guard-fix",
+  "sourceHead": "a74af8310a47bed541717d5e53c6052314207aab",
+  "preFixInputs": [
+    {
+      "path": "course-app/src/official-vi-revisions.ts",
+      "bytes": 18708,
+      "sha256": "2d0c0c82de128388af070bb4d93caa499566d58be9d0cb59d0a43fe2545a1060"
+    },
+    {
+      "path": "course-app/src/content.ts",
+      "bytes": 8228,
+      "sha256": "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2"
+    },
+    {
+      "path": "course-app/src/listening-view.ts",
+      "bytes": 13190,
+      "sha256": "9637ebb3fd62546924b45a97407f3ed19ab634e647cc9b4812adfc1e1925bb70"
+    },
+    {
+      "path": "course-app/src/main.ts",
+      "bytes": 62262,
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744"
+    },
+    {
+      "path": "course-app/tests/official-vi-revisions.test.mjs",
+      "bytes": 15041,
+      "sha256": "21b372712526f5ede4cb1febdc7b7b1c0e09df830b795f454ec73f4b093786dd"
+    },
+    {
+      "path": "course-app/tests/unified/official-vi-history.spec.ts",
+      "bytes": 6068,
+      "sha256": "8ab850306d068a1c4b0cf6e88cb4441440847b67316ebd448b56f9301b3c31ce"
+    },
+    {
+      "path": "course-app/content/official-vi-registry.json",
+      "bytes": 80,
+      "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/manifest-contract.json",
+      "bytes": 3422,
+      "sha256": "6960605f64eaecc80fab4f8726bc3d7e84895cc4676896d5c1afb9df430056ed"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-revision-design/review.json",
+      "bytes": 12847,
+      "sha256": "02747c454d9e64c074c81efcccdf14e80b78bf83cab426653174264da2fa66bf"
+    }
+  ],
+  "preFixProbe": {
+    "result": {
+      "probe": "editorial printedPages forbidden by design",
+      "accepted": true,
+      "projectedValue": "SYNTHETIC editorial probe — not textbook text",
+      "officialAcceptance": false
+    },
+    "log": {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-editorial-probe.log",
+      "bytes": 165,
+      "sha256": "a8433fc209349ef62387e29d275550da2ca5c49909f2394161c443a8e5c7f772"
+    }
+  },
+  "productionMutations": 0,
+  "sourceMutations": 0,
+  "officialLanguageItemsAccepted": 0,
+  "independentRawSourceComparison": {
+    "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+    "count": 36,
+    "equal": 36,
+    "files": [
+      {
+        "path": "course-app/content/course-index.json",
+        "bytes": 10528,
+        "sha256": "a435fc635ef5604c7b4ef4c6eb51eb58272987f06e76db9d879cd9c54ddf429d",
+        "baselineSHA256": "a435fc635ef5604c7b4ef4c6eb51eb58272987f06e76db9d879cd9c54ddf429d",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2-lexicon.json",
+        "bytes": 134669,
+        "sha256": "ef5bfd9d4b03fd83e0eb735afca091ff3daa09dd1c5439f1e4453d118bef014c",
+        "baselineSHA256": "ef5bfd9d4b03fd83e0eb735afca091ff3daa09dd1c5439f1e4453d118bef014c",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-01.json",
+        "bytes": 173130,
+        "sha256": "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523",
+        "baselineSHA256": "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-02.json",
+        "bytes": 179840,
+        "sha256": "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d",
+        "baselineSHA256": "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-03.json",
+        "bytes": 188281,
+        "sha256": "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506",
+        "baselineSHA256": "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-04.json",
+        "bytes": 169778,
+        "sha256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+        "baselineSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-05.json",
+        "bytes": 202034,
+        "sha256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+        "baselineSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-06.json",
+        "bytes": 217562,
+        "sha256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+        "baselineSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-07.json",
+        "bytes": 183965,
+        "sha256": "15b9f36001307933da8120e66214e3b7a266640022f6953b67b174b2a9c78f4c",
+        "baselineSHA256": "15b9f36001307933da8120e66214e3b7a266640022f6953b67b174b2a9c78f4c",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-08.json",
+        "bytes": 187506,
+        "sha256": "90c7c19aac1d78ed62752356eefe09b6d3ee968c528c2008a53f0f2b1f96d00a",
+        "baselineSHA256": "90c7c19aac1d78ed62752356eefe09b6d3ee968c528c2008a53f0f2b1f96d00a",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-09.json",
+        "bytes": 215664,
+        "sha256": "55675df1ef69682537b7137e4f2ba19e2a311cf7738969ecd790dae62cc885aa",
+        "baselineSHA256": "55675df1ef69682537b7137e4f2ba19e2a311cf7738969ecd790dae62cc885aa",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-10.json",
+        "bytes": 187727,
+        "sha256": "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156",
+        "baselineSHA256": "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-11.json",
+        "bytes": 192945,
+        "sha256": "01ec965d7f18d41c5c91c053f93544b24c971303ed8b4ca6afd2ad2c03d48ff8",
+        "baselineSHA256": "01ec965d7f18d41c5c91c053f93544b24c971303ed8b4ca6afd2ad2c03d48ff8",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-12.json",
+        "bytes": 207573,
+        "sha256": "c64d2e1bc3dac399f1737338e70474d8ea8559c2aa65207290a515804a97e702",
+        "baselineSHA256": "c64d2e1bc3dac399f1737338e70474d8ea8559c2aa65207290a515804a97e702",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-13.json",
+        "bytes": 186234,
+        "sha256": "06d5d9e3f096ffe189f8d8214ba5582db9912e776e9ce3cee55d4fbd928057e1",
+        "baselineSHA256": "06d5d9e3f096ffe189f8d8214ba5582db9912e776e9ce3cee55d4fbd928057e1",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-14.json",
+        "bytes": 191389,
+        "sha256": "74d7a43cbed89ddf152a840d3c5bc06e8200c975fa1de5e9bf4223e227d52e0f",
+        "baselineSHA256": "74d7a43cbed89ddf152a840d3c5bc06e8200c975fa1de5e9bf4223e227d52e0f",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk2/lesson-15.json",
+        "bytes": 204327,
+        "sha256": "299a8d8cf8f90e721d8a8c8b0ca24d7c33d759949166cab1edd2eeddf00ae907",
+        "baselineSHA256": "299a8d8cf8f90e721d8a8c8b0ca24d7c33d759949166cab1edd2eeddf00ae907",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3-lexicon.json",
+        "bytes": 308891,
+        "sha256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+        "baselineSHA256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-01.json",
+        "bytes": 228151,
+        "sha256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1",
+        "baselineSHA256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-02.json",
+        "bytes": 265729,
+        "sha256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1",
+        "baselineSHA256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-03.json",
+        "bytes": 293275,
+        "sha256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6",
+        "baselineSHA256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-04.json",
+        "bytes": 264969,
+        "sha256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30",
+        "baselineSHA256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-05.json",
+        "bytes": 286418,
+        "sha256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4",
+        "baselineSHA256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-06.json",
+        "bytes": 302605,
+        "sha256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346",
+        "baselineSHA256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-07.json",
+        "bytes": 299957,
+        "sha256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9",
+        "baselineSHA256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-08.json",
+        "bytes": 263568,
+        "sha256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24",
+        "baselineSHA256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-09.json",
+        "bytes": 283177,
+        "sha256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937",
+        "baselineSHA256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-10.json",
+        "bytes": 268432,
+        "sha256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+        "baselineSHA256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-11.json",
+        "bytes": 265670,
+        "sha256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2",
+        "baselineSHA256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-12.json",
+        "bytes": 280035,
+        "sha256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d",
+        "baselineSHA256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-13.json",
+        "bytes": 235627,
+        "sha256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc",
+        "baselineSHA256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-14.json",
+        "bytes": 233065,
+        "sha256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+        "baselineSHA256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-15.json",
+        "bytes": 282461,
+        "sha256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836",
+        "baselineSHA256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-16.json",
+        "bytes": 232222,
+        "sha256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139",
+        "baselineSHA256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-17.json",
+        "bytes": 246292,
+        "sha256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a",
+        "baselineSHA256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      },
+      {
+        "path": "course-app/content/hsk3/lesson-18.json",
+        "bytes": 288224,
+        "sha256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53",
+        "baselineSHA256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53",
+        "rawBytesEqual": true,
+        "stillEqualAtFinalReview": true
+      }
+    ],
+    "finalRecheckEqual": 36
+  },
+  "postFixInputs": [
+    {
+      "path": "course-app/src/official-vi-revisions.ts",
+      "bytes": 18776,
+      "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f"
+    },
+    {
+      "path": "course-app/src/content.ts",
+      "bytes": 8228,
+      "sha256": "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2"
+    },
+    {
+      "path": "course-app/src/listening-view.ts",
+      "bytes": 13190,
+      "sha256": "9637ebb3fd62546924b45a97407f3ed19ab634e647cc9b4812adfc1e1925bb70"
+    },
+    {
+      "path": "course-app/src/main.ts",
+      "bytes": 62262,
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744"
+    },
+    {
+      "path": "course-app/tests/official-vi-revisions.test.mjs",
+      "bytes": 15689,
+      "sha256": "baa377e7865382f09e66edcaa5d3b1265c88303ffab3ec642c09cc10db2e360b"
+    },
+    {
+      "path": "course-app/tests/unified/official-vi-history.spec.ts",
+      "bytes": 6068,
+      "sha256": "8ab850306d068a1c4b0cf6e88cb4441440847b67316ebd448b56f9301b3c31ce"
+    },
+    {
+      "path": "course-app/content/official-vi-registry.json",
+      "bytes": 80,
+      "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-revision-design/manifest-contract.json",
+      "bytes": 3422,
+      "sha256": "6960605f64eaecc80fab4f8726bc3d7e84895cc4676896d5c1afb9df430056ed"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-vi-revision-design/review.json",
+      "bytes": 12847,
+      "sha256": "02747c454d9e64c074c81efcccdf14e80b78bf83cab426653174264da2fa66bf"
+    },
+    {
+      "path": "course-app/src/state.ts",
+      "bytes": 12140,
+      "sha256": "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c"
+    },
+    {
+      "path": "course-app/src/types.ts",
+      "bytes": 4181,
+      "sha256": "b7b2dfee504bd764ac6560f0d698d5ae996110100ec98577fc4f378dfa832626"
+    },
+    {
+      "path": "course-app/src/config.ts",
+      "bytes": 761,
+      "sha256": "efe61e8926f4ec76f968a64095c014659a026b71b19d3d5fa16c25acba016684"
+    },
+    {
+      "path": "course-app/src/dom.ts",
+      "bytes": 1408,
+      "sha256": "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/tsconfig.native.json",
+      "bytes": 220,
+      "sha256": "934ec7dea559dc66f0875cb1a00c79f27d35ccaea6af16aa52595cba9db5fdef"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/playwright.history.config.ts",
+      "bytes": 796,
+      "sha256": "95ba895d132a35d1a3be25eefc9460d3804e75a0b345f408ad9c021251dc2e6e"
+    },
+    {
+      "path": "course-app/playwright.config.ts",
+      "bytes": 684,
+      "sha256": "e02e563322a654e0c9526ff8ae315cd6a4934073377be5e9f0e41437f7ae0503"
+    }
+  ],
+  "postFixSourceHead": "6f668b4f47ed22cffe0c02d1993263fb83b1304e",
+  "findings": [
+    {
+      "id": "B10-I1",
+      "severity": "required-before-editorial-active-revision",
+      "status": "fixed-and-independently-retested",
+      "summary": "Editorial anchors could previously carry printedPages despite no direct textbook counterpart. The final guard rejects printedPages and alleged officialZhText in addition to PDF bytes/pages and official Vietnamese text.",
+      "preFixAdapterSHA256": "2d0c0c82de128388af070bb4d93caa499566d58be9d0cb59d0a43fe2545a1060",
+      "postFixAdapterSHA256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f",
+      "preFixAcceptedPrintedPage": true,
+      "postFixProbes": [
+        {
+          "probe": "editorial alleged book page/quote",
+          "forbiddenField": "printedPages",
+          "accepted": false,
+          "rejectedByEditorialBranch": true,
+          "error": "Error: Official VI revision rejected: editorial source branch",
+          "officialAcceptance": false
+        },
+        {
+          "probe": "editorial alleged book page/quote",
+          "forbiddenField": "officialZhText",
+          "accepted": false,
+          "rejectedByEditorialBranch": true,
+          "error": "Error: Official VI revision rejected: editorial source branch",
+          "officialAcceptance": false
+        }
+      ],
+      "postFixProbeLog": {
+        "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-post-fix-editorial-probe.log",
+        "bytes": 456,
+        "sha256": "025b034a770ae80f1e414c7fa876a460cca41be86040c854f0dd3b221ae80709"
+      }
+    }
+  ],
+  "acceptedScope": [
+    "Trusted manifest/review asset bytes pinned by SHA; accepted proposal digest and exact accepted IDs/consumer sets; known owner/original pointer/Chinese context and full raw baseline SHA; atomic private-clone VI-only projection.",
+    "Inactive HSK2/HSK3 course registry and no real official Vietnamese patch activation.",
+    "Lesson, canonical lexicon and course-index clone projection; current summary preparation before actual course/progress consumers.",
+    "Historical listening questions resolved only from saved Attempt.questions by ID; legacy missing snapshot shows saved raw answers/score; separate clearly labeled current transcript reference.",
+    "Historical homework receipts use saved first/latest question snapshots and disclose current course title; missing snapshots retain raw response values.",
+    "Full raw HSK2/HSK3 JSON byte identity retained for ASR provenance."
+  ],
+  "checksActuallyExecuted": {
+    "adapterUnits": {
+      "passed": 40,
+      "total": 40,
+      "failed": 0,
+      "log": {
+        "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-post-fix-unit.log",
+        "bytes": 3149,
+        "sha256": "9ccec003da08f649bf2c460c03feb8489eb21ee680ba5638c507b843b567c69f"
+      }
+    },
+    "appTypecheck": {
+      "exitCode": 0,
+      "log": {
+        "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-post-fix-app-typecheck.log",
+        "bytes": 152,
+        "sha256": "d4f092fedd226092bbf6a231543d6396316d6c6c50cb8ab096ac0ea8e6785960"
+      }
+    },
+    "nativeFixtureTypecheck": {
+      "exitCode": 0,
+      "log": {
+        "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-post-fix-native-typecheck.log",
+        "bytes": 99,
+        "sha256": "7125f194612fcff2f454c05d848e7cb71facc1967b4d5017e25b34fdee3ba74f"
+      }
+    },
+    "nativeFixtureCollection": {
+      "exitCode": 0,
+      "logicalFixtures": 8,
+      "engineCasesCollected": 16,
+      "chromiumCasesCollected": 8,
+      "webkitCasesCollected": 8,
+      "casesExecuted": 0,
+      "log": {
+        "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-post-fix-native-collection.log",
+        "bytes": 2436,
+        "sha256": "6ea6e73e87198280c6f30f842545195259e165ca7efd876f0790fd9ac90a578c"
+      }
+    },
+    "separatePostFixNegativeProbe": {
+      "passed": 2,
+      "total": 2,
+      "log": {
+        "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-post-fix-editorial-probe.log",
+        "bytes": 456,
+        "sha256": "025b034a770ae80f1e414c7fa876a460cca41be86040c854f0dd3b221ae80709"
+      }
+    },
+    "rawBaselineByteComparison": {
+      "equal": 36,
+      "total": 36,
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf"
+    }
+  },
+  "activeRegistry": {
+    "schemaVersion": 1,
+    "courses": {
+      "hsk2": null,
+      "hsk3": null
+    },
+    "activeEntries": 0,
+    "source": {
+      "path": "course-app/content/official-vi-registry.json",
+      "bytes": 80,
+      "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81"
+    }
+  },
+  "browserExecutionLimit": {
+    "status": "not-executed-missing-binaries",
+    "availability": {
+      "browserLaunchAttempted": false,
+      "overrideConfigured": false,
+      "engines": [
+        {
+          "name": "chromium",
+          "executablePath": "/root/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome",
+          "exists": false
+        },
+        {
+          "name": "webkit",
+          "executablePath": "/root/.cache/ms-playwright/webkit-2336/pw_run.sh",
+          "exists": false
+        }
+      ]
+    },
+    "log": {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-browser-availability.log",
+      "bytes": 290,
+      "sha256": "9774e824eeb5ff862579f44eb029320fee82ff2cae3113d0d435b796c747b48b"
+    },
+    "nativeBrowserCasesPassed": 0,
+    "nativeBrowserCasesFailed": 0
+  },
+  "scopeBoundaries": [
+    "Actual global Bài khóa/Bài khóa N UI literals are outside lesson DTO projection; separate UI owner must align them before site-wide textbook wording acceptance.",
+    "Unregistered raw metadata.starMeaning/editorialPosNote, coverageReview.appendixStarNote and illustration.title are not read by current course-app source consumers; illustration renderer reads only alt, description and optional label. No whitelist expansion performed.",
+    "This review does not validate official textbook quotations, page transcriptions, every VI field, source-audit completeness, actual active manifest/review Vite asset loading, package/browser/device acceptance or production release.",
+    "The new frozen build raw-byte proof belongs to the parent; this independent review does not reuse old CI results or claim a new dist/browser package acceptance."
+  ],
+  "notClaimed": [
+    "Official Vietnamese textbook item approval or full-site alignment",
+    "Native browser test execution",
+    "Active official manifest integration acceptance",
+    "Production deployment or release approval",
+    "New build/package acceptance based on historical CI"
+  ],
+  "logs": [
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-app-typecheck.log",
+      "bytes": 152,
+      "sha256": "d4f092fedd226092bbf6a231543d6396316d6c6c50cb8ab096ac0ea8e6785960"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-browser-availability.log",
+      "bytes": 290,
+      "sha256": "9774e824eeb5ff862579f44eb029320fee82ff2cae3113d0d435b796c747b48b"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-editorial-probe.log",
+      "bytes": 165,
+      "sha256": "a8433fc209349ef62387e29d275550da2ca5c49909f2394161c443a8e5c7f772"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-native-collection.log",
+      "bytes": 2436,
+      "sha256": "6ea6e73e87198280c6f30f842545195259e165ca7efd876f0790fd9ac90a578c"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-native-typecheck.log",
+      "bytes": 99,
+      "sha256": "7125f194612fcff2f454c05d848e7cb71facc1967b4d5017e25b34fdee3ba74f"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-post-fix-app-typecheck.log",
+      "bytes": 152,
+      "sha256": "d4f092fedd226092bbf6a231543d6396316d6c6c50cb8ab096ac0ea8e6785960"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-post-fix-editorial-probe.log",
+      "bytes": 456,
+      "sha256": "025b034a770ae80f1e414c7fa876a460cca41be86040c854f0dd3b221ae80709"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-post-fix-native-collection.log",
+      "bytes": 2436,
+      "sha256": "6ea6e73e87198280c6f30f842545195259e165ca7efd876f0790fd9ac90a578c"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-post-fix-native-typecheck.log",
+      "bytes": 99,
+      "sha256": "7125f194612fcff2f454c05d848e7cb71facc1967b4d5017e25b34fdee3ba74f"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-post-fix-unit.log",
+      "bytes": 3149,
+      "sha256": "9ccec003da08f649bf2c460c03feb8489eb21ee680ba5638c507b843b567c69f"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-unit.log",
+      "bytes": 3050,
+      "sha256": "282217d3b9273a25b7fcacb36792cb3239a9c73402c3eb9bc4b225d82423a89c"
+    }
+  ],
+  "writesScope": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-review.json, independent-review.md and independent-*.log only",
+  "nativeReporterConfigCorrection": {
+    "priorInput": {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/playwright.history.config.ts",
+      "bytes": 796,
+      "sha256": "95ba895d132a35d1a3be25eefc9460d3804e75a0b345f408ad9c021251dc2e6e"
+    },
+    "finalInput": {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/playwright.history.config.ts",
+      "bytes": 796,
+      "sha256": "95ba895d132a35d1a3be25eefc9460d3804e75a0b345f408ad9c021251dc2e6e"
+    },
+    "description": "Config-only reporter output resolves absolute native-results.json beside config; independent native typecheck and collection rerun after correction. Collection remains zero executed browser cases."
+  }
+}

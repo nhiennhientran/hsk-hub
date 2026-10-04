@@ -20,6 +20,7 @@ export interface ReceiptOptions {
   part: Homework30Part;
   homeworkVersion?: '30-v1' | 'legacy';
   questions: readonly ReceiptQuestion[];
+  displayQuestions?: { first: readonly ReceiptQuestion[]; latest: readonly ReceiptQuestion[] };
   profile: { name: string; className: string };
   first: HomeworkAttempt | null;
   latest: HomeworkAttempt | null;
@@ -46,6 +47,7 @@ function answerText(question: ReceiptQuestion, answer: Answer | undefined): stri
 export function createReceipt(host: HTMLElement, options: ReceiptOptions): { dispose(): void } {
   const events = new AbortController();
   const attempts = { first: structuredClone(options.first), latest: structuredClone(options.latest) };
+  const displayQuestions = options.displayQuestions ? structuredClone(options.displayQuestions) : undefined;
   const profile = { ...options.profile };
   const questions = options.questions.map(question => ({ ...question, options: question.options?.slice(), tokens: question.tokens?.slice() }));
   let selected = options.selected ?? 'latest';
@@ -111,7 +113,7 @@ export function createReceipt(host: HTMLElement, options: ReceiptOptions): { dis
       score.dataset.receiptScore = '';
       submission.append(score);
     }
-    for (const question of questions) {
+    for (const question of (displayQuestions?.[selected] ?? questions)) {
       const item = element('li');
       item.dataset.questionId = question.id;
       item.append(element('p', question.prompt, 'receipt-prompt'));

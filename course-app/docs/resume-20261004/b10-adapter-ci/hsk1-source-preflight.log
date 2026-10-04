@@ -1,0 +1,6 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> hsk1-modular-app@0.1.0 catalog:check
+> node tools/catalog.mjs --check
+
+{"ok":true,"mode":"check","baseline":"71b39192133c82f684384f450dda6079d3253440","counts":{"lessons":15,"tasks":300,"senses":344,"forms":319,"textbookWords":342,"texts":45,"grammar":40,"sortAnswers":95,"listening":75,"wordAudio":330,"missingWordAudio":14,"clips":405,"tracks":93},"artifacts":7}

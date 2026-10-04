@@ -1,0 +1,2209 @@
+{
+  "status": "accepted-bounded-AST-traversal-repair",
+  "checksCount": 262,
+  "passed": true,
+  "inputs": [
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/build-inventory.mjs",
+      "sha256": "8ef5eb37677d333beb4117310f79160b902b242809edda57122bed7858949d72",
+      "bytes": 44752,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory-b10/build-inventory.mjs",
+      "sha256": "0c23ca8f61f6883513827d461afd82dc6684333420f32dfd27ab2106a93a0b44",
+      "bytes": 44899,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory-b10/verify-ast-coverage.mjs",
+      "sha256": "698e7e35280b2fadfdba42e398bb4ca6e47bf5d74b913c94309c81525c9df6d6",
+      "bytes": 3760,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/src/dom.ts",
+      "sha256": "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e",
+      "bytes": 1408,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "sha256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "bytes": 40716,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744",
+      "bytes": 62262,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/runtime-files.json",
+      "sha256": "5a5e84511931e9b11ad576e3b1b6dcea7f1f3bb236de87b0a32f77ef002ae288",
+      "bytes": 2002235,
+      "unchanged": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "builder changes only value exclusion and two explanatory comments",
+      "passed": true
+    },
+    {
+      "name": "original historical builder identity retained",
+      "passed": true
+    },
+    {
+      "name": "actual crawler source parses",
+      "passed": true,
+      "file": "course-app/docs/resume-20261004/vi-inventory/build-inventory.mjs"
+    },
+    {
+      "name": "only all named dependency and crawler declarations extracted",
+      "passed": true,
+      "file": "course-app/docs/resume-20261004/vi-inventory/build-inventory.mjs",
+      "nodes": 13,
+      "extractedNames": [
+        "sha",
+        "files",
+        "records",
+        "failures",
+        "legacyLayers",
+        "viet",
+        "asciiViet",
+        "chinese",
+        "viKey",
+        "likelyVi",
+        "ptr",
+        "location",
+        "propertyName",
+        "staticString",
+        "zhSibling",
+        "walkAST"
+      ]
+    },
+    {
+      "name": "actual crawler source parses",
+      "passed": true,
+      "file": "course-app/docs/resume-20261004/vi-inventory-b10/build-inventory.mjs"
+    },
+    {
+      "name": "only all named dependency and crawler declarations extracted",
+      "passed": true,
+      "file": "course-app/docs/resume-20261004/vi-inventory-b10/build-inventory.mjs",
+      "nodes": 13,
+      "extractedNames": [
+        "sha",
+        "files",
+        "records",
+        "failures",
+        "legacyLayers",
+        "viet",
+        "asciiViet",
+        "chinese",
+        "viKey",
+        "likelyVi",
+        "ptr",
+        "location",
+        "propertyName",
+        "staticString",
+        "zhSibling",
+        "walkAST"
+      ]
+    },
+    {
+      "name": "input probe parses actual TS AST",
+      "passed": true,
+      "file": "course-app/src/dom.ts"
+    },
+    {
+      "name": "all actual record and semantic IDs unique",
+      "passed": true,
+      "file": "course-app/src/dom.ts"
+    },
+    {
+      "name": "input probe parses actual TS AST",
+      "passed": true,
+      "file": "course-app/src/dom.ts"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/dom.ts",
+      "recordId": "486636480c2bd1ec6ce1698b"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/dom.ts",
+      "recordId": "f8a79f71bf51d495bbabb9e7"
+    },
+    {
+      "name": "all actual record and semantic IDs unique",
+      "passed": true,
+      "file": "course-app/src/dom.ts"
+    },
+    {
+      "name": "actual source bytes equal original frozen inventory input",
+      "passed": true,
+      "file": "course-app/src/dom.ts"
+    },
+    {
+      "name": "same-byte real source recovers exact missing count",
+      "passed": true,
+      "file": "course-app/src/dom.ts",
+      "before": 0,
+      "after": 2
+    },
+    {
+      "name": "every previous same-byte record is unchanged rather than regenerated as a false omission",
+      "passed": true,
+      "file": "course-app/src/dom.ts"
+    },
+    {
+      "name": "input probe parses actual TS AST",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "47c410eef5f8b51bc7067d17"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "4223b26fa56c2d3c961fe127"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e0082d6c279282ebaeff0314"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "c333deaf9d0195239c6a7c91"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "caa7dee7d5bde50b0b9eff58"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "34c06fa29cb814e143c58563"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7b96ba38ea1b737054f879f8"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "1ea8b7af59777839287bc3ff"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "8dd7ef25626da521f3c844b5"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "248c16e01254bd0c68688089"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "25bd07c330ceb38104663d59"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "051128d3f9297e0430a2b185"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "1f90eb3ed08ae77aff958fd4"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "14eeb1eb245e96f4df00c001"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7f591e8fdb5e5601ea8577f2"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "d26fa7e8ca06ba28740760dd"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "293e3a60588489240cdd738f"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "81918c99e8bb5d93c4bd9306"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "4af9a79afc6131cd3da5ec20"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "56aa100f578bc2e606b7b0c3"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e4ef09d90a11ca7b8ea5310c"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "a730d9efc6c6cf7c211660ee"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "4ded8b575c76beb20c49d49f"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "9a289138f8b459b312aba67c"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "11e4123e1e2b25973bf774d9"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "d67f9d7e6adf2854b24dcfd8"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "8a11290baafdd4ad726444aa"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "b78750f2532bd0d2a2eb4ad3"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "8acc35498b7f4e7c4917adf9"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "61bf7947094018eddb734b36"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "6bcf5cc6158677e1e4113969"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7e11346156cd8b43b1c64f84"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "60bfe1b91977161cb05c4dde"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e7d040fd8ea88b5d9cfa2de3"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "0f8c0c2191718676efe39c81"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "8209e338bbd63dc1446b5a35"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "41436e8d2e2221fdbafcc45a"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "0e025e862d7f74cf7f37f3a9"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "f733f6d0fbeef1ce8c07b332"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "0dc5575380ee4a405ded64a1"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "30cb40b14558b84f30d53ef7"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7d32b58efacd126e9a9086c2"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "90ab9e16ce45e7ae9e5c8930"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "3bb7674cc2e9429a56a59528"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e83ffcb1a048d0eac696506e"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "f6709f00ed917781c4ef86c8"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "f873a8469fa9ea1478d96761"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "41afde60e1959f4a5d695274"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "2fd88a0ac76dcbaf1910207c"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "f14105e023cc4c38f94691dc"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "6a081c714ccc254d87499350"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "606902aecfbd17b942150d95"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e8c14de0294cafbceefe8d67"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "76d297df3829cf3d7f6dd10c"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "69c600d70081f522040ce968"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "592e8e3a320c862c95711d73"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "3011a9746cd5570baea507a6"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "102cf5259fbcd6c7c60dd7d6"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "5eb10fae3336263fd78dc75d"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "171ea54d37c4f025ad86283d"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "91493b414e8b3da4d8d23da9"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "37c1b0f939a8587aeb096b59"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "2865187aa22d016b0cb11197"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "b98c98e523d7059e36c402e2"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "ea37fb41f24603046c270547"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "50eb80f2551603080eb09b6c"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "d93d43ef88c592542c4c0cb9"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "251be5653e0e1f3cd8201a01"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e2163dec19ce9d1e9c47a571"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "635a8868e0c5ce167486aae7"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "27934b8dcd9a515074f868eb"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e61c4e461d0da78d0bbb1cba"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "009e58484fbc90efb5e6043b"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "1f046faee0b10ebea42346ac"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "6ad04695568d7000726ed6ec"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "2b782d34a8611f77ff8bf248"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "5b444ef1dc69687d03dc36b3"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "c24b6e61f0d4cefbe1ba9dab"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "100f1519491adcd42fcfebd8"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7f59a52888dcf8fd1b720a90"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "9e3cd14946a492f999020e73"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "731ebf9a6d5d492c08f3806a"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "78f229d2a4ce35d7c5aeebdf"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7fe61629344e780b6b7db36d"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "aa2b77afa8a4210dbf5cbdf3"
+    },
+    {
+      "name": "all actual record and semantic IDs unique",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts"
+    },
+    {
+      "name": "input probe parses actual TS AST",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "47c410eef5f8b51bc7067d17"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "4223b26fa56c2d3c961fe127"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e0082d6c279282ebaeff0314"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "c333deaf9d0195239c6a7c91"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "caa7dee7d5bde50b0b9eff58"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "34c06fa29cb814e143c58563"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7b96ba38ea1b737054f879f8"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "1ea8b7af59777839287bc3ff"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "8dd7ef25626da521f3c844b5"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "248c16e01254bd0c68688089"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "25bd07c330ceb38104663d59"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "051128d3f9297e0430a2b185"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "1f90eb3ed08ae77aff958fd4"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "14eeb1eb245e96f4df00c001"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7f591e8fdb5e5601ea8577f2"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "d26fa7e8ca06ba28740760dd"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "293e3a60588489240cdd738f"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "81918c99e8bb5d93c4bd9306"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "4af9a79afc6131cd3da5ec20"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "56aa100f578bc2e606b7b0c3"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e4ef09d90a11ca7b8ea5310c"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "a730d9efc6c6cf7c211660ee"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "4ded8b575c76beb20c49d49f"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "9a289138f8b459b312aba67c"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "11e4123e1e2b25973bf774d9"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "d67f9d7e6adf2854b24dcfd8"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "8a11290baafdd4ad726444aa"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "b78750f2532bd0d2a2eb4ad3"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "8acc35498b7f4e7c4917adf9"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "301dd0ef4af3563f962d8bd0"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "61bf7947094018eddb734b36"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "6bcf5cc6158677e1e4113969"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7e11346156cd8b43b1c64f84"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "60bfe1b91977161cb05c4dde"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e7d040fd8ea88b5d9cfa2de3"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "0f8c0c2191718676efe39c81"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "8209e338bbd63dc1446b5a35"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "41436e8d2e2221fdbafcc45a"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "0e025e862d7f74cf7f37f3a9"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "f733f6d0fbeef1ce8c07b332"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "0dc5575380ee4a405ded64a1"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "30cb40b14558b84f30d53ef7"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7d32b58efacd126e9a9086c2"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "ffa88f5a657787ddef6b8002"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "90ab9e16ce45e7ae9e5c8930"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "3bb7674cc2e9429a56a59528"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e83ffcb1a048d0eac696506e"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "f6709f00ed917781c4ef86c8"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "f873a8469fa9ea1478d96761"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "41afde60e1959f4a5d695274"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "2fd88a0ac76dcbaf1910207c"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "f14105e023cc4c38f94691dc"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "6a081c714ccc254d87499350"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "606902aecfbd17b942150d95"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e8c14de0294cafbceefe8d67"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "76d297df3829cf3d7f6dd10c"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "69c600d70081f522040ce968"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "592e8e3a320c862c95711d73"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "3011a9746cd5570baea507a6"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "102cf5259fbcd6c7c60dd7d6"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "5eb10fae3336263fd78dc75d"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "171ea54d37c4f025ad86283d"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "91493b414e8b3da4d8d23da9"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "37c1b0f939a8587aeb096b59"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "2865187aa22d016b0cb11197"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "b98c98e523d7059e36c402e2"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "ea37fb41f24603046c270547"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "50eb80f2551603080eb09b6c"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "d93d43ef88c592542c4c0cb9"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "251be5653e0e1f3cd8201a01"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e2163dec19ce9d1e9c47a571"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "635a8868e0c5ce167486aae7"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "27934b8dcd9a515074f868eb"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "e61c4e461d0da78d0bbb1cba"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "009e58484fbc90efb5e6043b"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "1f046faee0b10ebea42346ac"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "6ad04695568d7000726ed6ec"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "2b782d34a8611f77ff8bf248"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "5b444ef1dc69687d03dc36b3"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "c24b6e61f0d4cefbe1ba9dab"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "100f1519491adcd42fcfebd8"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7f59a52888dcf8fd1b720a90"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "9e3cd14946a492f999020e73"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "731ebf9a6d5d492c08f3806a"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "78f229d2a4ce35d7c5aeebdf"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "7fe61629344e780b6b7db36d"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "recordId": "aa2b77afa8a4210dbf5cbdf3"
+    },
+    {
+      "name": "all actual record and semantic IDs unique",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts"
+    },
+    {
+      "name": "actual source bytes equal original frozen inventory input",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts"
+    },
+    {
+      "name": "same-byte real source recovers exact missing count",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts",
+      "before": 85,
+      "after": 87
+    },
+    {
+      "name": "every previous same-byte record is unchanged rather than regenerated as a false omission",
+      "passed": true,
+      "file": "course-app/src/lesson-view.ts"
+    },
+    {
+      "name": "exact four real counterexamples recovered",
+      "passed": true
+    },
+    {
+      "name": "input probe parses actual TS AST",
+      "passed": true,
+      "file": "independent-fixture.ts"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "0f5282769512dac139a1c04d"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "e3d416578804a861abfd010d"
+    },
+    {
+      "name": "all actual record and semantic IDs unique",
+      "passed": true,
+      "file": "independent-fixture.ts"
+    },
+    {
+      "name": "input probe parses actual TS AST",
+      "passed": true,
+      "file": "independent-fixture.ts"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "ee24309b9ca4ebb18e00c36d"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "1e6bc3f01d79671c169d9ca5"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "87a63186a9e4c7960916c60a"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "95199d62cac35dd2ce267c17"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "914153d1d4d192bd83042917"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "4cf68867950d2c99d21a38d6"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "dd749e435755bd3735e58433"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "f03ac4c4d69fb9012d467119"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "83362f1efb50f2d232b63683"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "133f4028feabaa7437c55b2d"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "b52bf230434b8b18ce1f02cb"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "421c463c3c36b1df8bd27969"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "296ded52d8f0408825af3949"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "88236d298781725aa8f0755f"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "177a378003b88313032cab40"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "0f5282769512dac139a1c04d"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "e3d416578804a861abfd010d"
+    },
+    {
+      "name": "all actual record and semantic IDs unique",
+      "passed": true,
+      "file": "independent-fixture.ts"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "Sai"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "Dung"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "OK"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "ABC"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "NO"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "Ví dụ"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "Đúng"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "Câu trong phương thức"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "Cô giáo"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "Nội dung tĩnh"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "Bài trong phương thức"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "Câu lồng"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "đã lưu"
+    },
+    {
+      "name": "object value or method body absent before and detected exactly once after",
+      "passed": true,
+      "value": "chưa lưu"
+    },
+    {
+      "name": "scalar literal recorded once without interpreting or recursively scanning primitive value",
+      "passed": true,
+      "value": "Bài đơn"
+    },
+    {
+      "name": "scalar literal recorded once without interpreting or recursively scanning primitive value",
+      "passed": true,
+      "value": "{\"vi\":\"Chào\"}"
+    },
+    {
+      "name": "packed primitive string never parsed as nested JSON or code",
+      "passed": true
+    },
+    {
+      "name": "method-definition body traversed independently of property translation object",
+      "passed": true
+    },
+    {
+      "name": "named ASCII VI confidence remains explicit",
+      "passed": true
+    },
+    {
+      "name": "template producer records raw expressions separately and once",
+      "passed": true
+    },
+    {
+      "name": "comments, regex, numbers, empty VI and plain Chinese metadata do not become candidate rows",
+      "passed": true
+    },
+    {
+      "name": "input probe parses actual TS AST",
+      "passed": true,
+      "file": "independent-fixture.ts"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "609b09460df78fad5f5bdd0a"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "67574f0f6afd74b01c664855"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "635d527d41df6e4535832324"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "9e8a64a38d42b9cff7fb43b9"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "a33d7ee38a74755655aa6498"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "a973d01f58704a8d9425cc6c"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "dabc7ea15b07f4937e6fe254"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "7df1f2015c363ec38b58938e"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "12136ef4218fc51c436fe941"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "32f3d066b35bae2dd4bcb3b6"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "9a6a5f49004025b81f92f9b4"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "1f572553fff750431137a219"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "ba46967361c663342fc796de"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "9ee261b1d4f03c28811d1f36"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "15db965124a498fa7ede7f58"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "63c8501a7642245d373b83b7"
+    },
+    {
+      "name": "every record resolves to an actual string AST node and exact source range",
+      "passed": true,
+      "file": "independent-fixture.ts",
+      "recordId": "b74860fa8132dc83bbe81f9b"
+    },
+    {
+      "name": "all actual record and semantic IDs unique",
+      "passed": true,
+      "file": "independent-fixture.ts"
+    },
+    {
+      "name": "changed source offsets produce changed source-specific occurrence IDs rather than false unchanged identity",
+      "passed": true
+    },
+    {
+      "name": "current main source drift remains explicit and excluded from old-offset omission verdict",
+      "passed": true
+    },
+    {
+      "name": "actual root bounded verifier succeeds without full inventory execution",
+      "passed": true
+    },
+    {
+      "name": "all seven actual inputs unchanged during independent probe",
+      "passed": true
+    }
+  ],
+  "sameSourceResults": [
+    {
+      "file": "course-app/src/dom.ts",
+      "beforeCount": 0,
+      "afterCount": 2,
+      "missing": [
+        {
+          "recordId": "486636480c2bd1ec6ce1698b",
+          "semanticKey": "active-ui:course-app/src/dom.ts:sourceNote:/body/4/declaration/body/body/0/argument/arguments/1/properties/1/value",
+          "astPath": "/body/4/declaration/body/body/0/argument/arguments/1/properties/1/value",
+          "component": "active-ui",
+          "itemId": "sourceNote",
+          "file": "course-app/src/dom.ts",
+          "range": {
+            "start": 1018,
+            "end": 1076,
+            "line": 5,
+            "column": 139
+          },
+          "value": "SGK trang ${expression}${expression}",
+          "chineseContext": "教材第${expression}页${expression}",
+          "sourceKind": "dynamic-template",
+          "expressions": [
+            "page",
+            "supplemental?' · Nội dung bổ trợ':''"
+          ],
+          "visibility": "runtime-source-static-candidate",
+          "frozen": false,
+          "consumers": [
+            "bounded independent probe"
+          ],
+          "confidence": "explicit",
+          "functionArgument": {
+            "callee": "el",
+            "index": -1
+          }
+        },
+        {
+          "recordId": "f8a79f71bf51d495bbabb9e7",
+          "semanticKey": "active-ui:course-app/src/dom.ts:sourceNote:/body/4/declaration/body/body/0/argument/arguments/1/properties/1/value/expressions/1/consequent",
+          "astPath": "/body/4/declaration/body/body/0/argument/arguments/1/properties/1/value/expressions/1/consequent",
+          "component": "active-ui",
+          "itemId": "sourceNote",
+          "file": "course-app/src/dom.ts",
+          "range": {
+            "start": 1051,
+            "end": 1071,
+            "line": 5,
+            "column": 172
+          },
+          "value": " · Nội dung bổ trợ",
+          "chineseContext": "教材第${expression}页${expression}",
+          "sourceKind": "code-literal",
+          "expressions": [],
+          "visibility": "runtime-source-static-candidate",
+          "frozen": false,
+          "consumers": [
+            "bounded independent probe"
+          ],
+          "confidence": "language-detection-candidate",
+          "functionArgument": {
+            "callee": "el",
+            "index": -1
+          }
+        }
+      ]
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "beforeCount": 85,
+      "afterCount": 87,
+      "missing": [
+        {
+          "recordId": "301dd0ef4af3563f962d8bd0",
+          "semanticKey": "active-ui:course-app/src/lesson-view.ts:a:/body/12/declaration/body/body/24/body/body/2/body/body/0/declarations/0/init/properties/6/value/elements/0/properties/1/value/arguments/1",
+          "astPath": "/body/12/declaration/body/body/24/body/body/2/body/body/0/declarations/0/init/properties/6/value/elements/0/properties/1/value/arguments/1",
+          "component": "active-ui",
+          "itemId": "a",
+          "file": "course-app/src/lesson-view.ts",
+          "range": {
+            "start": 17827,
+            "end": 17848,
+            "line": 382,
+            "column": 34
+          },
+          "value": "Câu trả lời của bạn",
+          "chineseContext": "你的回答",
+          "sourceKind": "code-literal",
+          "expressions": [],
+          "visibility": "runtime-source-static-candidate",
+          "frozen": false,
+          "consumers": [
+            "bounded independent probe"
+          ],
+          "confidence": "language-detection-candidate",
+          "functionArgument": {
+            "callee": "copy",
+            "index": 1
+          }
+        },
+        {
+          "recordId": "ffa88f5a657787ddef6b8002",
+          "semanticKey": "active-ui:course-app/src/lesson-view.ts:open:/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/8/arguments/1/body/body/0/expression/argument/arguments/1/properties/0/value",
+          "astPath": "/body/12/declaration/body/body/25/alternate/consequent/body/15/declarations/0/init/body/body/3/body/body/2/declarations/0/init/arguments/1/body/body/5/expression/arguments/8/arguments/1/body/body/0/expression/argument/arguments/1/properties/0/value",
+          "component": "active-ui",
+          "itemId": "open",
+          "file": "course-app/src/lesson-view.ts",
+          "range": {
+            "start": 22126,
+            "end": 22159,
+            "line": 489,
+            "column": 26
+          },
+          "value": "合成语音 · Giọng tổng hợp · ${expression}",
+          "chineseContext": null,
+          "sourceKind": "dynamic-template",
+          "expressions": [
+            "w.zh"
+          ],
+          "visibility": "runtime-source-static-candidate",
+          "frozen": false,
+          "consumers": [
+            "bounded independent probe"
+          ],
+          "confidence": "language-detection-candidate",
+          "functionArgument": {
+            "callee": "c.audio.speak",
+            "index": -1
+          }
+        }
+      ]
+    }
+  ],
+  "fixture": {
+    "beforeRows": [
+      {
+        "recordId": "0f5282769512dac139a1c04d",
+        "semanticKey": "active-ui:independent-fixture.ts:scalar:/body/5/declarations/0/init",
+        "astPath": "/body/5/declarations/0/init",
+        "component": "active-ui",
+        "itemId": "scalar",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 501,
+          "end": 510,
+          "line": 11,
+          "column": 14
+        },
+        "value": "Bài đơn",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "language-detection-candidate"
+      },
+      {
+        "recordId": "e3d416578804a861abfd010d",
+        "semanticKey": "active-ui:independent-fixture.ts:packed:/body/6/declarations/0/init",
+        "astPath": "/body/6/declarations/0/init",
+        "component": "active-ui",
+        "itemId": "packed",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 525,
+          "end": 540,
+          "line": 12,
+          "column": 14
+        },
+        "value": "{\"vi\":\"Chào\"}",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "language-detection-candidate"
+      }
+    ],
+    "afterRows": [
+      {
+        "recordId": "ee24309b9ca4ebb18e00c36d",
+        "semanticKey": "active-ui:independent-fixture.ts:named:/body/0/declarations/0/init/properties/0/value",
+        "astPath": "/body/0/declarations/0/init/properties/0/value",
+        "component": "active-ui",
+        "itemId": "named",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 59,
+          "end": 64,
+          "line": 2,
+          "column": 19
+        },
+        "value": "Sai",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "explicit"
+      },
+      {
+        "recordId": "1e6bc3f01d79671c169d9ca5",
+        "semanticKey": "active-ui:independent-fixture.ts:named:/body/0/declarations/0/init/properties/1/value",
+        "astPath": "/body/0/declarations/0/init/properties/1/value",
+        "component": "active-ui",
+        "itemId": "named",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 69,
+          "end": 75,
+          "line": 2,
+          "column": 29
+        },
+        "value": "Dung",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "explicit"
+      },
+      {
+        "recordId": "87a63186a9e4c7960916c60a",
+        "semanticKey": "active-ui:independent-fixture.ts:named:/body/0/declarations/0/init/properties/2/value",
+        "astPath": "/body/0/declarations/0/init/properties/2/value",
+        "component": "active-ui",
+        "itemId": "named",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 85,
+          "end": 89,
+          "line": 2,
+          "column": 45
+        },
+        "value": "OK",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "explicit"
+      },
+      {
+        "recordId": "95199d62cac35dd2ce267c17",
+        "semanticKey": "active-ui:independent-fixture.ts:named:/body/0/declarations/0/init/properties/3/value",
+        "astPath": "/body/0/declarations/0/init/properties/3/value",
+        "component": "active-ui",
+        "itemId": "named",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 102,
+          "end": 107,
+          "line": 2,
+          "column": 62
+        },
+        "value": "ABC",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "explicit"
+      },
+      {
+        "recordId": "914153d1d4d192bd83042917",
+        "semanticKey": "active-ui:independent-fixture.ts:named:/body/0/declarations/0/init/properties/4/value",
+        "astPath": "/body/0/declarations/0/init/properties/4/value",
+        "component": "active-ui",
+        "itemId": "named",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 116,
+          "end": 120,
+          "line": 2,
+          "column": 76
+        },
+        "value": "NO",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "explicit"
+      },
+      {
+        "recordId": "4cf68867950d2c99d21a38d6",
+        "semanticKey": "active-ui:independent-fixture.ts:nested:/body/1/declarations/0/init/properties/0/value/properties/1/value",
+        "astPath": "/body/1/declarations/0/init/properties/0/value/properties/1/value",
+        "component": "active-ui",
+        "itemId": "nested",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 156,
+          "end": 163,
+          "line": 3,
+          "column": 34
+        },
+        "value": "Ví dụ",
+        "chineseContext": "样例",
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "explicit"
+      },
+      {
+        "recordId": "dd749e435755bd3735e58433",
+        "semanticKey": "active-ui:independent-fixture.ts:nested:/body/1/declarations/0/init/properties/1/value/elements/0/properties/0/value",
+        "astPath": "/body/1/declarations/0/init/properties/1/value/elements/0/properties/0/value",
+        "component": "active-ui",
+        "itemId": "nested",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 177,
+          "end": 183,
+          "line": 3,
+          "column": 55
+        },
+        "value": "Đúng",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "explicit"
+      },
+      {
+        "recordId": "f03ac4c4d69fb9012d467119",
+        "semanticKey": "active-ui:independent-fixture.ts:render:/body/2/body/body/0/value/body/body/0/argument",
+        "astPath": "/body/2/body/body/0/value/body/body/0/argument",
+        "component": "active-ui",
+        "itemId": "render",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 218,
+          "end": 241,
+          "line": 5,
+          "column": 18
+        },
+        "value": "Câu trong phương thức",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "language-detection-candidate"
+      },
+      {
+        "recordId": "83362f1efb50f2d232b63683",
+        "semanticKey": "active-ui:independent-fixture.ts:label:/body/2/body/body/1/value/body/body/0/argument/properties/1/value",
+        "astPath": "/body/2/body/body/1/value/body/body/0/argument/properties/1/value",
+        "component": "active-ui",
+        "itemId": "label",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 276,
+          "end": 285,
+          "line": 6,
+          "column": 33
+        },
+        "value": "Cô giáo",
+        "chineseContext": "老师",
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "explicit"
+      },
+      {
+        "recordId": "133f4028feabaa7437c55b2d",
+        "semanticKey": "active-ui:independent-fixture.ts:render:/body/2/body/body/2/value/body/body/0/argument/properties/0/value",
+        "astPath": "/body/2/body/body/2/value/body/body/0/argument/properties/0/value",
+        "component": "active-ui",
+        "itemId": "render",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 317,
+          "end": 332,
+          "line": 7,
+          "column": 29
+        },
+        "value": "Nội dung tĩnh",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "explicit"
+      },
+      {
+        "recordId": "b52bf230434b8b18ce1f02cb",
+        "semanticKey": "active-ui:independent-fixture.ts:objectMethods:/body/3/declarations/0/init/properties/0/value/body/body/0/argument",
+        "astPath": "/body/3/declarations/0/init/properties/0/value/body/body/0/argument",
+        "component": "active-ui",
+        "itemId": "objectMethods",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 375,
+          "end": 398,
+          "line": 9,
+          "column": 38
+        },
+        "value": "Bài trong phương thức",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "language-detection-candidate"
+      },
+      {
+        "recordId": "421c463c3c36b1df8bd27969",
+        "semanticKey": "active-ui:independent-fixture.ts:objectMethods:/body/3/declarations/0/init/properties/1/value/body/expression/properties/0/value",
+        "astPath": "/body/3/declarations/0/init/properties/1/value/body/expression/properties/0/value",
+        "component": "active-ui",
+        "itemId": "objectMethods",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 415,
+          "end": 425,
+          "line": 9,
+          "column": 78
+        },
+        "value": "Câu lồng",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "explicit"
+      },
+      {
+        "recordId": "296ded52d8f0408825af3949",
+        "semanticKey": "active-ui:independent-fixture.ts:conditional:/body/4/declarations/0/init/properties/0/value",
+        "astPath": "/body/4/declarations/0/init/properties/0/value",
+        "component": "active-ui",
+        "itemId": "conditional",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 452,
+          "end": 485,
+          "line": 10,
+          "column": 23
+        },
+        "value": "Trang ${expression}",
+        "chineseContext": null,
+        "sourceKind": "dynamic-template",
+        "expressions": [
+          "ok?'đã lưu':'chưa lưu'"
+        ],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "explicit"
+      },
+      {
+        "recordId": "88236d298781725aa8f0755f",
+        "semanticKey": "active-ui:independent-fixture.ts:conditional:/body/4/declarations/0/init/properties/0/value/expressions/0/consequent",
+        "astPath": "/body/4/declarations/0/init/properties/0/value/expressions/0/consequent",
+        "component": "active-ui",
+        "itemId": "conditional",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 464,
+          "end": 472,
+          "line": 10,
+          "column": 35
+        },
+        "value": "đã lưu",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "language-detection-candidate"
+      },
+      {
+        "recordId": "177a378003b88313032cab40",
+        "semanticKey": "active-ui:independent-fixture.ts:conditional:/body/4/declarations/0/init/properties/0/value/expressions/0/alternate",
+        "astPath": "/body/4/declarations/0/init/properties/0/value/expressions/0/alternate",
+        "component": "active-ui",
+        "itemId": "conditional",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 473,
+          "end": 483,
+          "line": 10,
+          "column": 44
+        },
+        "value": "chưa lưu",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "language-detection-candidate"
+      },
+      {
+        "recordId": "0f5282769512dac139a1c04d",
+        "semanticKey": "active-ui:independent-fixture.ts:scalar:/body/5/declarations/0/init",
+        "astPath": "/body/5/declarations/0/init",
+        "component": "active-ui",
+        "itemId": "scalar",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 501,
+          "end": 510,
+          "line": 11,
+          "column": 14
+        },
+        "value": "Bài đơn",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "language-detection-candidate"
+      },
+      {
+        "recordId": "e3d416578804a861abfd010d",
+        "semanticKey": "active-ui:independent-fixture.ts:packed:/body/6/declarations/0/init",
+        "astPath": "/body/6/declarations/0/init",
+        "component": "active-ui",
+        "itemId": "packed",
+        "file": "independent-fixture.ts",
+        "range": {
+          "start": 525,
+          "end": 540,
+          "line": 12,
+          "column": 14
+        },
+        "value": "{\"vi\":\"Chào\"}",
+        "chineseContext": null,
+        "sourceKind": "code-literal",
+        "expressions": [],
+        "visibility": "runtime-source-static-candidate",
+        "frozen": false,
+        "consumers": [
+          "bounded independent probe"
+        ],
+        "confidence": "language-detection-candidate"
+      }
+    ]
+  },
+  "sourceDrift": {
+    "file": "course-app/src/main.ts",
+    "originalSHA256": "9f0309622e30f4362132ddfa381b18494de99df3761ae609cd5c60b9bbaa928d",
+    "currentSHA256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744",
+    "changed": true,
+    "coverageVerdict": "not assessed; current main offsets are not compared to historical inventory as omissions"
+  },
+  "fullInventoryExecuted": false,
+  "formalVietnameseSemanticAudit": false,
+  "productionEdits": 0,
+  "globalInventoryAcceptance": false
+}

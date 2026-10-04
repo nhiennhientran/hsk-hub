@@ -1,0 +1,222 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "hsk1-app/playwright.vi-presentation.config.ts",
+      "--list"
+    ],
+    "configFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/playwright.vi-presentation.config.ts",
+    "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/b10-hsk1-adapter/native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "official-vi-history.spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/b10-hsk1-adapter/native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "official-vi-history.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/b10-hsk1-adapter/native-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --port 18911 --strictPort",
+      "url": "http://127.0.0.1:18911",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "official-vi-history.spec.ts",
+      "file": "official-vi-history.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "synthetic same-clock receipt survives reload and shows first/latest immutable text with original answer indices",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-d1ea963bd0a117901d76",
+          "file": "official-vi-history.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "legacy archive shows each saved display binding and keeps raw task and answer visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-e7047a9d7e686d9cb1ab",
+          "file": "official-vi-history.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "listening shuffled labels use original indices and fixed round text after native reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-88b34c36fd812b8214a5",
+          "file": "official-vi-history.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "synthetic same-clock receipt survives reload and shows first/latest immutable text with original answer indices",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-a8239332d9bf66dc8112",
+          "file": "official-vi-history.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "legacy archive shows each saved display binding and keeps raw task and answer visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-bd6f5effe8726ad8ce71",
+          "file": "official-vi-history.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "listening shuffled labels use original indices and fixed round text after native reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-df72d9ca0f7802ee6f80",
+          "file": "official-vi-history.spec.ts",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T20:32:15.550Z",
+    "duration": 42.30699999999996,
+    "expected": 0,
+    "skipped": 6,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

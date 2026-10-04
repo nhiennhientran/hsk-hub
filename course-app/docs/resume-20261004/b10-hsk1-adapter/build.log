@@ -1,0 +1,101 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> hsk1-modular-app@0.1.0 build
+> npm run index:check && npm run check && vite build --outDir /workspace/scratch/28b55072841a/b10-hsk1-build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> hsk1-modular-app@0.1.0 index:check
+> node tools/course-index.mjs
+
+{"courseIndex":"PASS","lessons":15,"mode":"check"}
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> hsk1-modular-app@0.1.0 check
+> tsc --noEmit
+
+vite v8.3.2 building client environment for production...
+transforming...
+✓ 152 modules transformed.
+
+(!) outDir /workspace/scratch/28b55072841a/b10-hsk1-build is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../../b10-hsk1-build/index.html                                         0.41 kB │ gzip:   0.29 kB
+../../b10-hsk1-build/assets/course-index-BKGnz4SX.json                  4.87 kB │ gzip:   1.18 kB
+../../b10-hsk1-build/assets/textbook-display-revisions-DWScioD2.json   26.13 kB │ gzip:   4.78 kB
+../../b10-hsk1-build/assets/stage2-bank-DOB9KrMv.json                 269.65 kB │ gzip:  47.51 kB
+../../b10-hsk1-build/assets/media-references-DD5E_5K_.json            287.06 kB │ gzip:  57.51 kB
+../../b10-hsk1-build/assets/stage3-catalog-CH6Cx7h7.json              384.02 kB │ gzip:  67.91 kB
+../../b10-hsk1-build/assets/textbook-ksDEYuz_.json                    741.67 kB │ gzip:  91.65 kB
+../../b10-hsk1-build/assets/progress-DgeKDxiU.css                       1.57 kB │ gzip:   0.62 kB
+../../b10-hsk1-build/assets/archive-BMfTkVw2.css                        1.93 kB │ gzip:   0.74 kB
+../../b10-hsk1-build/assets/data-panel-BgEWndCN.css                     3.56 kB │ gzip:   1.10 kB
+../../b10-hsk1-build/assets/source-activities-Cz6XgW02.css              4.93 kB │ gzip:   1.37 kB
+../../b10-hsk1-build/assets/listening-DTyrhIy_.css                      5.80 kB │ gzip:   1.60 kB
+../../b10-hsk1-build/assets/view-BYaiqWuX.css                           6.25 kB │ gzip:   1.79 kB
+../../b10-hsk1-build/assets/homework-8E-U9jBU.css                       8.11 kB │ gzip:   2.06 kB
+../../b10-hsk1-build/assets/index-MPNZzdK3.css                         10.90 kB │ gzip:   3.07 kB
+../../b10-hsk1-build/assets/textbook-CDbbm74v.css                      11.82 kB │ gzip:   3.05 kB
+../../b10-hsk1-build/assets/textbook-BNPI77hK.js                        0.12 kB │ gzip:   0.13 kB │ map:     0.35 kB
+../../b10-hsk1-build/assets/official-vi-registry-Bgu-m4P4.js            0.13 kB │ gzip:   0.14 kB │ map:     0.12 kB
+../../b10-hsk1-build/assets/review-DiWGLi5x.js                          0.13 kB │ gzip:   0.13 kB │ map:     0.56 kB
+../../b10-hsk1-build/assets/vocabulary-D86GiO20.js                      0.13 kB │ gzip:   0.14 kB │ map:     0.48 kB
+../../b10-hsk1-build/assets/stage3-catalog-BDgGKH7A.js                  0.14 kB │ gzip:   0.14 kB │ map:     0.37 kB
+../../b10-hsk1-build/assets/media-references-DyNdsQyY.js                0.14 kB │ gzip:   0.14 kB │ map:     0.37 kB
+../../b10-hsk1-build/assets/rolldown-runtime-DK3Fl9T5.js                0.15 kB │ gzip:   0.15 kB
+../../b10-hsk1-build/assets/textbook-display-revisions-CGs5GDJK.js      0.16 kB │ gzip:   0.15 kB │ map:     0.40 kB
+../../b10-hsk1-build/assets/asset-base-DAkFL0yR.js                      0.20 kB │ gzip:   0.18 kB │ map:     0.57 kB
+../../b10-hsk1-build/assets/ui-BlYT8-MT.js                              0.38 kB │ gzip:   0.28 kB │ map:     1.64 kB
+../../b10-hsk1-build/assets/dom-BqY7Gzk5.js                             0.51 kB │ gzip:   0.37 kB │ map:     1.95 kB
+../../b10-hsk1-build/assets/content-D7BGWbZm.js                         1.07 kB │ gzip:   0.63 kB │ map:     3.49 kB
+../../b10-hsk1-build/assets/textbook-restored-targets-BYEde6lT.js       1.63 kB │ gzip:   0.36 kB │ map:     0.13 kB
+../../b10-hsk1-build/assets/homework-C7rR7QKa.js                        1.85 kB │ gzip:   1.04 kB │ map:     6.93 kB
+../../b10-hsk1-build/assets/session-DSGQ1wty.js                         2.33 kB │ gzip:   1.20 kB │ map:     8.36 kB
+../../b10-hsk1-build/assets/mixed-state-7Oiw2hir.js                     3.15 kB │ gzip:   1.44 kB │ map:    11.26 kB
+../../b10-hsk1-build/assets/progress-CZ1YjBej.js                        3.23 kB │ gzip:   1.54 kB │ map:     8.67 kB
+../../b10-hsk1-build/assets/home-CDtdf7gT.js                            4.34 kB │ gzip:   2.04 kB │ map:    13.95 kB
+../../b10-hsk1-build/assets/catalogue-C_U9rwbD.js                       4.86 kB │ gzip:   2.08 kB │ map:    17.39 kB
+../../b10-hsk1-build/assets/course-index-C5j4sptp.js                    4.95 kB │ gzip:   1.25 kB │ map:     0.10 kB
+../../b10-hsk1-build/assets/engine-CBi3sj57.js                          5.94 kB │ gzip:   2.49 kB │ map:    20.81 kB
+../../b10-hsk1-build/assets/listening-DXeiB7Rf.js                       6.08 kB │ gzip:   2.60 kB │ map:    21.39 kB
+../../b10-hsk1-build/assets/pair-panel-d4a8CKVs.js                      8.42 kB │ gzip:   3.73 kB │ map:    19.39 kB
+../../b10-hsk1-build/assets/data-panel-BJa07wYh.js                      8.99 kB │ gzip:   3.72 kB │ map:    30.03 kB
+../../b10-hsk1-build/assets/vi-presentation-state-lrTYmOCi.js           9.82 kB │ gzip:   3.55 kB │ map:    35.00 kB
+../../b10-hsk1-build/assets/browser-pair-Bhljojeh.js                   10.83 kB │ gzip:   3.86 kB │ map:    31.54 kB
+../../b10-hsk1-build/assets/audio-BmDOWU8n.js                          11.38 kB │ gzip:   3.85 kB │ map:    46.19 kB
+../../b10-hsk1-build/assets/engine-BAT6QHsN.js                         16.14 kB │ gzip:   6.07 kB │ map:    51.60 kB
+../../b10-hsk1-build/assets/store-C1tSVfl5.js                          16.36 kB │ gzip:   6.16 kB │ map:    55.52 kB
+../../b10-hsk1-build/assets/listening-BOv2E9O2.js                      16.52 kB │ gzip:   6.12 kB │ map:    57.27 kB
+../../b10-hsk1-build/assets/official-vi-revisions-Bt56nnew.js          18.06 kB │ gzip:   6.08 kB │ map:    53.08 kB
+../../b10-hsk1-build/assets/copy-yY9kyqvF.js                           18.37 kB │ gzip:   6.94 kB │ map:    41.90 kB
+../../b10-hsk1-build/assets/listening-BXM9emsG.js                      19.10 kB │ gzip:   7.07 kB │ map:    33.87 kB
+../../b10-hsk1-build/assets/progress-aRYvzYAc.js                       20.06 kB │ gzip:   7.63 kB │ map:    51.72 kB
+../../b10-hsk1-build/assets/archive-DeRqbzSo.js                        21.23 kB │ gzip:   8.82 kB │ map:    50.47 kB
+../../b10-hsk1-build/assets/textbook-JfIBaAyU.js                       21.83 kB │ gzip:   8.72 kB │ map:    56.23 kB
+../../b10-hsk1-build/assets/engine-DJNGzNN8.js                         22.19 kB │ gzip:   7.52 kB │ map:    64.26 kB
+../../b10-hsk1-build/assets/view-txZbTKBa.js                           24.26 kB │ gzip:   9.21 kB │ map:    75.54 kB
+../../b10-hsk1-build/assets/index-DU-Jbddh.js                          25.02 kB │ gzip:  10.06 kB │ map:    64.77 kB
+../../b10-hsk1-build/assets/textbook-display-revisions-CnZaZMsm.js     26.23 kB │ gzip:   4.86 kB │ map:     0.13 kB
+../../b10-hsk1-build/assets/source-activities-C6VQDAkO.js              32.94 kB │ gzip:   9.90 kB │ map:    62.06 kB
+../../b10-hsk1-build/assets/homework-CxgWEp6j.js                       36.54 kB │ gzip:  11.10 kB │ map:   125.77 kB
+../../b10-hsk1-build/assets/compatibility-BTMtJsFZ.js                  36.85 kB │ gzip:  13.22 kB │ map:   101.59 kB
+../../b10-hsk1-build/assets/textbook-BunDJ4Ci.js                       88.69 kB │ gzip:  30.82 kB │ map:   230.04 kB
+../../b10-hsk1-build/assets/stage2-bank-Bjx02knS.js                   269.73 kB │ gzip:  47.59 kB │ map:     0.10 kB
+../../b10-hsk1-build/assets/media-references-Bx99NyHN.js              287.14 kB │ gzip:  57.61 kB │ map:     0.11 kB
+../../b10-hsk1-build/assets/legacy-exercises-Bz3UuW2N.js              326.87 kB │ gzip:  82.62 kB │ map:   491.78 kB
+../../b10-hsk1-build/assets/stage3-catalog-Bs1Y2M7l.js                384.10 kB │ gzip:  67.99 kB │ map:     0.11 kB
+../../b10-hsk1-build/assets/legacy-exercises-BfEaU4Qq.js              446.74 kB │ gzip:  85.02 kB │ map:     0.11 kB
+../../b10-hsk1-build/assets/homework30-BVBKAbRf.js                    613.95 kB │ gzip: 135.42 kB │ map:   920.97 kB
+../../b10-hsk1-build/assets/textbook-Bkb8B-ul.js                      741.75 kB │ gzip:  91.74 kB │ map:     0.09 kB
+../../b10-hsk1-build/assets/content-ChH95uYd.js                       852.85 kB │ gzip: 144.60 kB │ map: 1,692.02 kB
+../../b10-hsk1-build/assets/homework30-bank-Bti0xGBV.js               854.30 kB │ gzip: 143.07 kB │ map:     0.11 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 572ms

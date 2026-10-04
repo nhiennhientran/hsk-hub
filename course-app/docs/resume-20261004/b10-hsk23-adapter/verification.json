@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "status": "B10 HSK2/3 inactive implementation frozen; native CI pending",
+  "generatedAt": "2026-10-04T20:35:20.709Z",
+  "candidate": "B10 HSK2/3 default-inactive dirty worktree build (not a release or CI head)",
+  "observedHead": "a74af8310a47bed541717d5e53c6052314207aab",
+  "productionPublication": false,
+  "officialItemsAccepted": 0,
+  "activeRegistry": {
+    "file": "course-app/content/official-vi-registry.json",
+    "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81",
+    "courses": {
+      "hsk2": null,
+      "hsk3": null
+    },
+    "activeChangeCount": 0
+  },
+  "targetedUnits": {
+    "tests": 40,
+    "passed": 40,
+    "failed": 0
+  },
+  "fullUnitRegression": {
+    "tests": 206,
+    "passed": 206,
+    "failed": 0
+  },
+  "sourceTypecheck": {
+    "exitCode": 0,
+    "log": {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/typecheck.log",
+      "bytes": 152,
+      "sha256": "d4f092fedd226092bbf6a231543d6396316d6c6c50cb8ab096ac0ea8e6785960"
+    }
+  },
+  "nativeFixtureTypecheck": {
+    "exitCode": 0,
+    "log": {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/native-typecheck.log",
+      "bytes": 99,
+      "sha256": "7125f194612fcff2f454c05d848e7cb71facc1967b4d5017e25b34fdee3ba74f"
+    }
+  },
+  "nativeFixtures": {
+    "casesPerEngine": 8,
+    "engines": [
+      "chromium",
+      "webkit"
+    ],
+    "collected": 16,
+    "executed": 0,
+    "status": "not executed: pinned local browsers absent; parent will run new CI",
+    "log": {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/native-collection.log",
+      "bytes": 2436,
+      "sha256": "6ea6e73e87198280c6f30f842545195259e165ca7efd876f0790fd9ac90a578c"
+    }
+  },
+  "build": {
+    "exitCode": 0,
+    "outDir": "course-app/.repro-output/b10-hsk23-adapter/dist",
+    "log": {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/build.log",
+      "bytes": 30390,
+      "sha256": "0f7a18bf01da435f4cdf95770792158c173c367ce07bbf754ee7d043b8107457"
+    },
+    "compiledConsumerCount": 111,
+    "compiledConsumerInventorySHA256": "a6d92e359b55b411776469bf2f3715e4d973f221b92d572419e5ce9c930a1de4"
+  },
+  "sourcePreservation": {
+    "rawBaselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+    "files": 36,
+    "byteEqualFiles": 36,
+    "compiledDecodedByteEqualFiles": 36,
+    "proof": {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/source-bytes.json",
+      "bytes": 45515,
+      "sha256": "bb4aadaa595a35dae0fc1ef6c379be1f082b8bea6d00ef23846f5304ac56e946"
+    }
+  },
+  "independentReview": {
+    "status": "independent-bounded-implementation-accepted-after-editorial-guard-fix",
+    "reviewer": "release_assembly/hsk23_adapter_review",
+    "proof": {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-review.json",
+      "bytes": 28169,
+      "sha256": "ec91c37b68c2b12cbd1a944e9458a8eb67f50afb2b5db26f490b69eee71047a0"
+    },
+    "foundGap": "Editorial printedPages could pass before fix",
+    "closure": "printedPages and officialZhText forbidden; independent probes rejected; post-fix40 tests passed"
+  },
+  "sourceInputs": [
+    {
+      "file": "course-app/src/official-vi-revisions.ts",
+      "bytes": 18776,
+      "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f"
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "bytes": 8228,
+      "sha256": "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2"
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "bytes": 13190,
+      "sha256": "9637ebb3fd62546924b45a97407f3ed19ab634e647cc9b4812adfc1e1925bb70"
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "bytes": 62262,
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744"
+    },
+    {
+      "file": "course-app/tests/official-vi-revisions.test.mjs",
+      "bytes": 15689,
+      "sha256": "baa377e7865382f09e66edcaa5d3b1265c88303ffab3ec642c09cc10db2e360b"
+    },
+    {
+      "file": "course-app/tests/unified/official-vi-history.spec.ts",
+      "bytes": 6068,
+      "sha256": "8ab850306d068a1c4b0cf6e88cb4441440847b67316ebd448b56f9301b3c31ce"
+    },
+    {
+      "file": "course-app/content/official-vi-registry.json",
+      "bytes": 80,
+      "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81"
+    }
+  ],
+  "evidence": [
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/unit.log",
+      "bytes": 3149,
+      "sha256": "e46d83efb53867320d4174ea42afcf216955304b4356e1827323d01cd389636d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/full-unit.log",
+      "bytes": 20815,
+      "sha256": "0a44b1f5cfe963f68bf13f2be48d5d3cb5a55aaff648d80409202b80412d235c"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/typecheck.log",
+      "bytes": 152,
+      "sha256": "d4f092fedd226092bbf6a231543d6396316d6c6c50cb8ab096ac0ea8e6785960"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/native-typecheck.log",
+      "bytes": 99,
+      "sha256": "7125f194612fcff2f454c05d848e7cb71facc1967b4d5017e25b34fdee3ba74f"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/native-collection.log",
+      "bytes": 2436,
+      "sha256": "6ea6e73e87198280c6f30f842545195259e165ca7efd876f0790fd9ac90a578c"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/build.log",
+      "bytes": 30390,
+      "sha256": "0f7a18bf01da435f4cdf95770792158c173c367ce07bbf754ee7d043b8107457"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/source-bytes.log",
+      "bytes": 158,
+      "sha256": "9082484da6095427f1caf4cf5cb9f40dba1c55f3ff746254851acb6895aa7eff"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/source-bytes.json",
+      "bytes": 45515,
+      "sha256": "bb4aadaa595a35dae0fc1ef6c379be1f082b8bea6d00ef23846f5304ac56e946"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-review.json",
+      "bytes": 28169,
+      "sha256": "ec91c37b68c2b12cbd1a944e9458a8eb67f50afb2b5db26f490b69eee71047a0"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-review.md",
+      "bytes": 2622,
+      "sha256": "641e7032c5754ea4c8a544e1590d6c77b5c76f95c548f811395cbc51b64a5ce4"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/playwright.history.config.ts",
+      "bytes": 796,
+      "sha256": "95ba895d132a35d1a3be25eefc9460d3804e75a0b345f408ad9c021251dc2e6e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/tsconfig.native.json",
+      "bytes": 220,
+      "sha256": "934ec7dea559dc66f0875cb1a00c79f27d35ccaea6af16aa52595cba9db5fdef"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/verify-source-bytes.mjs",
+      "bytes": 4207,
+      "sha256": "1f90f50b3d2a15bc62181c1afd88afb78fdc2b73d2eaab91eb642c37338d22bd"
+    }
+  ],
+  "boundaries": [
+    "No manifest/review sidecar is active.",
+    "Only VI display leaves project; raw lesson/lexicon/index, source/ASR, IDs, ZH, pinyin, grading answers/order and existing Attempt.questions are preserved.",
+    "Current title/transcript are marked separately from saved history. Legacy attempts without questions do not borrow current questions or regrade.",
+    "Global Bài khóa renderer literals remain B14; only approved public sidecars enter content glob.",
+    "Whole runtime tree includes parallel HSK1 changes and is not represented as a clean candidate.",
+    "Collection-only reporter JSONs have 0 expected/16 skipped; they are not actual native passes."
+  ]
+}

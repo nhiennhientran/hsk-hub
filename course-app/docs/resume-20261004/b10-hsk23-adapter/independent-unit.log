@@ -1,0 +1,47 @@
+✔ shared proposal canonicalization removes exact review keys and preserves array order (2.190743ms)
+✔ inactive lesson, canonical lexicon and course-index are private clones with identical content (16.157447ms)
+✔ a trusted accepted batch patches only VI; source, IDs, ZH, pinyin, answer and order remain exact (43.630928ms)
+✔ canonical sense and summary pointers bind their real IDs, original source indices and full raw SHA (46.325952ms)
+✔ an accepted terminology-derived or editorial change keeps its distinct source branch (67.427458ms)
+✔ edited activity option translations cannot become ambiguous while index answers stay sealed (29.390967ms)
+✔ derived/editorial anchors cannot counterfeit an official quotation or evade their source conditions (37.974217ms)
+✔ atomic guard rejects stale effective value (19.836777ms)
+✔ atomic guard rejects wrong engine (17.608728ms)
+✔ atomic guard rejects wrong course (16.004097ms)
+✔ atomic guard rejects wrong parent (23.116933ms)
+✔ atomic guard rejects wrong baseline SHA (26.422096ms)
+✔ atomic guard rejects foreign source file (12.238559ms)
+✔ atomic guard rejects foreign owner (14.069787ms)
+✔ atomic guard rejects wrong original pointer index (12.556682ms)
+✔ atomic guard rejects sealed answer (14.527158ms)
+✔ atomic guard rejects sealed ZH (15.759659ms)
+✔ atomic guard rejects sealed options/order (13.967384ms)
+✔ atomic guard rejects unsafe pointer (10.970681ms)
+✔ atomic guard rejects wrong lesson (14.076927ms)
+✔ atomic guard rejects wrong actual Chinese anchor (11.012744ms)
+✔ atomic guard rejects wrong book SHA (15.426948ms)
+✔ atomic guard rejects out of bounds official page (10.643022ms)
+✔ atomic guard rejects official text mismatch (11.834858ms)
+✔ atomic guard rejects unresolved not active (12.342584ms)
+✔ atomic guard rejects match not active (12.764813ms)
+✔ atomic guard rejects pending author (10.520731ms)
+✔ atomic guard rejects self-only independent acceptance (6.499841ms)
+✔ atomic guard rejects missing accepted change (11.065782ms)
+✔ atomic guard rejects foreign accepted consumer (17.176014ms)
+✔ atomic guard rejects missing declared consumer (11.441172ms)
+✔ atomic guard rejects unknown source evidence (11.081505ms)
+✔ atomic guard rejects pending owner cannot be accepted (11.067695ms)
+✔ atomic guard rejects duplicate target (12.337066ms)
+✔ registered manifest/review exact bytes and independent accepted proposal are all required (13.372588ms)
+✔ a known consumer cannot be declared accepted without its own accepted VI projection (12.074144ms)
+✔ changed raw whitespace is still a different pinned source; empty acceptance cannot activate (15.990878ms)
+✔ new graded copy changes contentRevision while actual old first/questions/answers/score remain frozen (14.955607ms)
+✔ saved listening question is never reprojected; missing legacy snapshot cannot fall back to current q (0.646784ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 832.943988

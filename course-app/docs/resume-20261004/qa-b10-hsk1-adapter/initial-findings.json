@@ -1,0 +1,47 @@
+{
+  "scope": "Independent synthetic engineering pipeline review; no official Vietnamese acceptance",
+  "initialSourceSnapshotCaptured": false,
+  "initialEvidenceLimit": "The implementation was under active editing. Initial observations were reproduced in tool runs and acknowledged by the author, but no initial source SHA freeze was captured. Only the final retest input ledger is byte-bound.",
+  "findings": [
+    {
+      "id": "B10-H1-01",
+      "function": "reconcileViPresentation / validateViPresentation",
+      "file": "hsk1-app/src/services/content/vi-presentation-state.ts",
+      "trigger": "Start an all-question listening round for lessons 1 and 2 with revised VI fields in both lessons. Submit lesson 1 questions in engine order and lesson 2 first question; reset lesson 1.",
+      "initialActual": "compatibility.reset rejected with Vietnamese presentation binding is invalid",
+      "cause": "The trimmed current queue payload ID differed from the retained response's immutable historical payload ID.",
+      "fixedBehavior": "The current round payload may be trimmed. Historical first/latest payloads remain unchanged; response correspondence compares the retained question's fields and revision.",
+      "retest": "partial-listening-reset-retained-submission"
+    },
+    {
+      "id": "B10-H1-02",
+      "function": "validateViPresentation homework slot validation",
+      "file": "hsk1-app/src/services/content/vi-presentation-state.ts",
+      "trigger": "Make 21 same-clock, same-answer submissions. Replace first=b3 with latest=b43 and remove the orphan b3.",
+      "initialActual": "compatibility.validate accepted the merged logical submissions",
+      "cause": "The capped-history validator checked raw authority and duplicates inside history but did not enforce first/history binding chronology.",
+      "fixedBehavior": "Non-null history binding ordinals increase; first cannot point to a later logical slot. A legitimate exactly-20 first=history[0] remains accepted.",
+      "retest": "cap20-forged-first-uses-latest-binding"
+    },
+    {
+      "id": "B10-H1-03",
+      "function": "validateViPresentation saved display leaf validation",
+      "file": "hsk1-app/src/services/content/vi-presentation-state.ts",
+      "trigger": "Change a saved prompt field to /options/0 on the first homework30 choice question; original option is 你们; replace its label with Vietnamese.",
+      "initialActual": "compatibility.validate accepted the sealed Chinese label change",
+      "cause": "The historical validator checked the pointer shape and string existence but did not exclude the Chinese option leaf.",
+      "fixedBehavior": "The actual raw options leaf is checked. A Han-bearing frozen answer option is rejected as a VI leaf.",
+      "retest": "saved-presentation-chinese-answer-option"
+    },
+    {
+      "id": "B10-H1-04",
+      "function": "createOfficialViRegistry option display validation",
+      "file": "hsk1-app/src/services/content/official-vi-revisions.ts",
+      "trigger": "Revise listening option 0 to the text of option 1: Tạm biệt.",
+      "initialActual": "Registry accepted two identical visible option labels",
+      "cause": "Accepted fields were projected without a complete effective options uniqueness check.",
+      "fixedBehavior": "The registry binds original option indices and rejects normalized duplicate visible labels before returning a projection.",
+      "retest": "duplicate-revised-listening-option-label"
+    }
+  ]
+}

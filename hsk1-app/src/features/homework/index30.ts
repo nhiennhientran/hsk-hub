@@ -1,3 +1,4 @@
+import { projectHomeworkQuestion } from '../../services/content/vi-presentation-state.ts';
 import type { Homework30Part } from '../../domain/homework30/engine.ts';
 import type { FeatureModule } from '../../app/contracts.ts';
 import { HOMEWORK30_PARTS as PARTS } from '../../domain/homework30/engine.ts';
@@ -171,6 +172,7 @@ export const mountHomework30: FeatureModule['mount'] = (host, context) => {
       const model = homework.read();
       receipt?.dispose(); body.hidden = true; controls.hidden = true;
       receipt = createReceipt(article, { lesson: lesson.id, lessonTitle: lesson.title, part, questions: model.questions,
+        displayQuestions: { first: model.questions.map(q => projectHomeworkQuestion(session.store.snapshot().data, '30-v1', lesson.id, part, q, model.questions, 'first')), latest: model.questions.map(q => projectHomeworkQuestion(session.store.snapshot().data, '30-v1', lesson.id, part, q, model.questions, 'latest')) },
         homeworkVersion: '30-v1', profile: model.profile, first: model.group?.first ?? null, latest: model.group?.latest ?? null, selected,
         onClose() { receipt?.dispose(); receipt = undefined; body.hidden = false; controls.hidden = false; article.querySelector<HTMLButtonElement>(selected === 'first' ? '#receipt-first' : '#receipt-latest')?.focus(); } });
     }
@@ -240,7 +242,8 @@ export const mountHomework30: FeatureModule['mount'] = (host, context) => {
       const submitted = model.group?.attempt;
       if (part === 'translation') exercise.append(element('p', copy.manualHint));
       // Automatic submission guidance is adjacent to the submit action rather than repeated above the first question.
-      for (const [index, question] of model.questions.entries()) {
+      for (const [index, rawQuestion] of model.questions.entries()) {
+        const question = projectHomeworkQuestion(session.store.snapshot().data, '30-v1', lesson.id, part, rawQuestion, model.questions);
         const card = element('article'); card.className = 'homework-question'; card.dataset.questionId = question.id;
         card.append(element('h3', `${bilingualText(copy.question(index + 1))}. ${question.prompt}`));
         if (question.stem) { const stem = element('p', question.stem); stem.className = 'homework-stem'; card.append(stem); }

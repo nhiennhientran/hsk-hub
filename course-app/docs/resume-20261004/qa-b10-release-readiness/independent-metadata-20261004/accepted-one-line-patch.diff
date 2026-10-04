@@ -1,0 +1,11 @@
+--- preserved-author-input-ed4bc1
++++ reviewed-current-4db189
+@@ -148,7 +148,7 @@
+     if(scope.status!=='accepted'||scope.unresolved!==0||!nonempty(scope.scopeDescription))fail('incomplete cross-site scope '+scope.id);
+     const inventory=evidenceJSON(repo,scope.consumerScope,'cross-site '+scope.id+' consumer scope');
+     if(inventory.scope!==scope.id||!Array.isArray(inventory.items)||inventory.items.some(item=>!nonempty(item.id))||new Set(inventory.items.map(item=>item.id)).size!==inventory.items.length||scope.items!==inventory.items.length)fail('invalid cross-site consumer inventory '+scope.id);
+-    if(scope.id==='legacy-questions'&&scope.items!==1360||['asset-metadata','svg'].includes(scope.id)&&scope.items!==412)fail('incomplete cross-site item count '+scope.id);
++    if(scope.id==='legacy-questions'&&scope.items!==1360||scope.id==='svg'&&scope.items!==412)fail('incomplete cross-site item count '+scope.id);
+     if(scope.id!=='resolved-errata'&&!scope.items)fail('empty cross-site consumer scope '+scope.id);
+     uniqueExact(scope.acceptedItemIDs,inventory.items.map(item=>item.id),'cross-site '+scope.id+' accepted consumer IDs');
+     evidenceList(repo,scope.evidence,'cross-site '+scope.id);

@@ -1,0 +1,611 @@
+{
+  "schemaVersion": 2,
+  "scope": "Final HSK1 B10 inactive adapter engineering QA only",
+  "snapshotAt": "2026-10-04T20:42:48.217449+00:00",
+  "head": "6f668b4f47ed22cffe0c02d1993263fb83b1304e",
+  "before": {
+    "hsk1-app/content/official-vi-registry.json": {
+      "sha256": "6f323b55400c596663608b1a25d172f313f6388907d8c7eb889f2954b248c004",
+      "bytes": 43
+    },
+    "hsk1-app/src/services/content/official-vi-revisions.ts": {
+      "sha256": "bdccf821877cb503bae612bbd00a822e2734ab5ba8985af3164e29bd3f7ed1a9",
+      "bytes": 25616
+    },
+    "hsk1-app/src/services/content/vi-presentation-state.ts": {
+      "sha256": "1b9b11803d43325defd8c9819149d88290f548de697413a2371242657e8288fd",
+      "bytes": 19842
+    },
+    "hsk1-app/src/domain/types.ts": {
+      "sha256": "79b2d72b3eb1578c4f685a8c6144a204fa3889e243c72c4e732b0b588299af17",
+      "bytes": 2781
+    },
+    "hsk1-app/src/domain/listening/controller.ts": {
+      "sha256": "281270a2bf35164f38f50eca6dee37204209387d296c2f5c16a80aa0be05fcf2",
+      "bytes": 9945
+    },
+    "hsk1-app/src/features/homework/controller.ts": {
+      "sha256": "d333f18fe625419ba088c86c9d24a14157ff5ff68861cb1aeaf806fc5bfa7839",
+      "bytes": 7965
+    },
+    "hsk1-app/src/features/homework/controller30.ts": {
+      "sha256": "4999a4546260a28efcc5ec054265004034ddbac107d4447ff947f5568505f824",
+      "bytes": 6214
+    },
+    "hsk1-app/src/features/homework/index.ts": {
+      "sha256": "158e4307488bbf08bd410c8cf2cccaf09b7194337825993c306fcfdcddb3ddd3",
+      "bytes": 23705
+    },
+    "hsk1-app/src/features/homework/index30.ts": {
+      "sha256": "c5b1db1092ddf3926e9b6ded68c501f350dc3c1bb9b7ebb9a63acad1d7a92b18",
+      "bytes": 27974
+    },
+    "hsk1-app/src/features/homework/receipt.ts": {
+      "sha256": "ee5aa392a3f7a382c702c856781af7780b55b57905ba94dbc20d6951013b08ca",
+      "bytes": 6501
+    },
+    "hsk1-app/src/features/exercises/archive-data.ts": {
+      "sha256": "adf9646230c856cbe0b30611277498ccfba7a950b4e18c592f86d77b01a9df21",
+      "bytes": 5228
+    },
+    "hsk1-app/src/features/exercises/archive.ts": {
+      "sha256": "7a96475f3d0c99baf4e16fcdfc8137dc7b6f05e717b1259d1c26a1aa96e4e78f",
+      "bytes": 14527
+    },
+    "hsk1-app/src/features/listening/index.ts": {
+      "sha256": "20bac7d6dcc51f450edf65939d78cce1d6ea4e720753653205a46e5ebdffad81",
+      "bytes": 23712
+    },
+    "hsk1-app/src/features/vocabulary/view.ts": {
+      "sha256": "3baadbba67a046017e6f77bdec796e7cec9c8907779ab9219f99ceea8dfae5ed",
+      "bytes": 16860
+    },
+    "hsk1-app/src/services/content/listening.ts": {
+      "sha256": "3fb45587a73f4829c4a2ea30c455a1f7f28567b8bc19ae59864d3160516e8d73",
+      "bytes": 13032
+    },
+    "hsk1-app/src/services/content/textbook.ts": {
+      "sha256": "033d731e73a18b6d4a817eb1f327711fc49e46960a447076d4375f44da423d18",
+      "bytes": 22058
+    },
+    "hsk1-app/src/services/content/vocabulary.ts": {
+      "sha256": "3647506c4532d74607716ef67271dab5a314ae25b8e4a18b5f4897cce1bb01a3",
+      "bytes": 18191
+    },
+    "hsk1-app/src/services/storage/compatibility.ts": {
+      "sha256": "6a72f0792459e9744ce67b8b81a0c578daef12fcf2096ace1f274d136c6d9104",
+      "bytes": 44659
+    },
+    "hsk1-app/tests/official-vi-revisions.test.mjs": {
+      "sha256": "c9ca560f9a4e6735bb7e12acc3309fb18d902b2842967529a221b7e691b33437",
+      "bytes": 8003
+    },
+    "hsk1-app/tests/vi-presentation-state.test.mjs": {
+      "sha256": "ea9fbea9eaa7d5efd1629e283d3e0b2313eb03a9477f1e2e02a42b90ddf401fe",
+      "bytes": 20281
+    },
+    "hsk1-app/tests/helpers/official-vi-fixture.mjs": {
+      "sha256": "9dfb2521275f2a80dc97e28d56612f35440e605dc445bc75177ba154b34794a9",
+      "bytes": 3545
+    },
+    "hsk1-app/tests/source-pair-fixture.mjs": {
+      "sha256": "258af4c4d55cdc1715ec87de959476f7f9bdded9f4446083415e75245422fa9a",
+      "bytes": 3258
+    },
+    "hsk1-app/content/stage2-bank.json": {
+      "sha256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3",
+      "bytes": 269656
+    },
+    "hsk1-app/content/stage3-catalog.json": {
+      "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "bytes": 384024
+    },
+    "hsk1-app/content/homework30-bank.json": {
+      "sha256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+      "bytes": 854221
+    },
+    "hsk1-app/content/textbook.json": {
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "bytes": 741675
+    },
+    "hsk1-app/content/legacy-exercises.json": {
+      "sha256": "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c",
+      "bytes": 446661
+    },
+    "hsk1-app/src/domain/homework/engine.js": {
+      "sha256": "5a8ac5bbab07bf3dc505c46d3d0ea8ef48d14017e6875742ff816d4646295321",
+      "bytes": 29611
+    },
+    "hsk1-app/src/domain/homework30/engine.ts": {
+      "sha256": "f5684607b1cb73ce316e6c65fa135b645ee274859ac14a428d6d50cc654532cb",
+      "bytes": 11748
+    },
+    "hsk1-app/src/domain/practice/engine.js": {
+      "sha256": "2c9b3c43f5980b12e4333e56a06cb660a012d3842c5b1e04e22a7756af79452c",
+      "bytes": 36082
+    },
+    "hsk1-app/src/domain/vocabulary/mixed-state.ts": {
+      "sha256": "763a4a30a5eccad4c0d1cc25d743f1d14af013f4235868a398e57b91254f11ac",
+      "bytes": 6532
+    },
+    "hsk1-app/src/domain/vocabulary/mixed-controller.ts": {
+      "sha256": "f7d4d6aa00649abebbf376ce34ef58b9dda02cb6b23306f32b742e33e93fbae3",
+      "bytes": 7282
+    },
+    "hsk1-app/content/media-references.json": {
+      "sha256": "d1c00b9706565fbb398b97490d51a1c3338349c2285c06e7ed8a04a68e2f656e",
+      "bytes": 287065
+    },
+    "hsk1-app/content/textbook-display-revisions.json": {
+      "sha256": "3d3e325b587fd3b41fb11a908db6e74a37f2c9d95cac247a663112e71f8f9e55",
+      "bytes": 26130
+    },
+    "hsk1-app/content/course-index.json": {
+      "sha256": "aeb5db3563e5d606a7b9fd045ae0f7f61994a9b03efd5a96f1b1e9099f482bb0",
+      "bytes": 4870
+    },
+    "hsk1-app/src/services/storage/index.ts": {
+      "sha256": "a0f3c1838c7c83c4af7ae46c61418f674d332499a61e56b69cfbcb080a4efab0",
+      "bytes": 18336
+    },
+    "hsk1-app/src/services/source-activities/paired.ts": {
+      "sha256": "7e2dd046dec52366cdbf981a08f84d24aec47928b39f3159a5cd8e4faf70d079",
+      "bytes": 14898
+    },
+    "hsk1-app/src/services/source-activities/state.ts": {
+      "sha256": "7678c98fa0d2a53d335971de3f8c9e0346d19d732ac734b99e8191443ac9c34a",
+      "bytes": 10025
+    },
+    "hsk1-app/src/services/source-activities/store.ts": {
+      "sha256": "630613cdc164b142fee6f2fd159736576fb761e47958001df8b676058b0fa9a6",
+      "bytes": 4653
+    },
+    "hsk1-app/src/services/source-activities/content.ts": {
+      "sha256": "e77761c05bcc24418eee07cfedd217950cdbb381157d21f8b8c019d52d062d44",
+      "bytes": 4898
+    },
+    "hsk1-app/src/services/learning/session.ts": {
+      "sha256": "50460eb3f8015997acbf68ee837da8f0f5fbe8d6b3c20d1efbfb17d296853a8f",
+      "bytes": 5372
+    },
+    "hsk1-app/src/domain/progress/reset.ts": {
+      "sha256": "a06540eab010fb1affd1be008a69f7f2287ba938677e2b5fdf575ae329644ea8",
+      "bytes": 9727
+    },
+    "hsk1-app/src/services/content/index.ts": {
+      "sha256": "6ad70e75d43afafd5643e5df7c55e0633e5b1ef3cecf737d260b05da12392c2d",
+      "bytes": 1904
+    },
+    "hsk1-app/playwright.vi-presentation.config.ts": {
+      "sha256": "523ba3a598b72af4f76baaad5775184fdcd43f891a61c453fa454fc4058c0d0e",
+      "bytes": 998
+    },
+    "hsk1-app/tsconfig.vi-presentation-tests.json": {
+      "sha256": "f5b3552e461dddd69df226611a7e823f0e0329ba2fe473896dcae69b748034d7",
+      "bytes": 220
+    },
+    "hsk1-app/tests/browser/official-vi-history.spec.ts": {
+      "sha256": "dbbd9833598106f2825d5e7654dba3ece5bd3eb042edd5db38fe45ad7732177d",
+      "bytes": 3181
+    },
+    "hsk1-app/tests/browser/fixtures/official-vi-history.html": {
+      "sha256": "ac38a018f745c2373bd192e591a8cb3e0feab4079bd563f4a0b0ab2a318ec601",
+      "bytes": 7303
+    },
+    "hsk1-app/tsconfig.json": {
+      "sha256": "5cd93fa698107542d3ac8a85b50aa675c35f405f7be7f3be0ae0cea1e3fa62c1",
+      "bytes": 523
+    },
+    "course-app/docs/resume-20261004/b10-hsk1-adapter/registered-field-proof.json": {
+      "sha256": "eb529c392f14afc57b09637a06f6f653b6fdc4d2345c342a1b90b794f4cb855d",
+      "bytes": 2430946
+    },
+    "course-app/docs/resume-20261004/b10-hsk1-adapter/verify-evidence.mjs": {
+      "sha256": "e89aad552d51c1d9d50092eb5bd4ce9923befdcf1592dcbf551928537ce87c66",
+      "bytes": 3245
+    },
+    "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/freeze-manifest.json": {
+      "sha256": "5f88d3e07c6821bec31522d4e15159c88a749c11b0f8ddb113ffdf501fa15074",
+      "bytes": 1322
+    }
+  },
+  "after": {
+    "hsk1-app/content/official-vi-registry.json": {
+      "sha256": "6f323b55400c596663608b1a25d172f313f6388907d8c7eb889f2954b248c004",
+      "bytes": 43
+    },
+    "hsk1-app/src/services/content/official-vi-revisions.ts": {
+      "sha256": "bdccf821877cb503bae612bbd00a822e2734ab5ba8985af3164e29bd3f7ed1a9",
+      "bytes": 25616
+    },
+    "hsk1-app/src/services/content/vi-presentation-state.ts": {
+      "sha256": "1b9b11803d43325defd8c9819149d88290f548de697413a2371242657e8288fd",
+      "bytes": 19842
+    },
+    "hsk1-app/src/domain/types.ts": {
+      "sha256": "79b2d72b3eb1578c4f685a8c6144a204fa3889e243c72c4e732b0b588299af17",
+      "bytes": 2781
+    },
+    "hsk1-app/src/domain/listening/controller.ts": {
+      "sha256": "281270a2bf35164f38f50eca6dee37204209387d296c2f5c16a80aa0be05fcf2",
+      "bytes": 9945
+    },
+    "hsk1-app/src/features/homework/controller.ts": {
+      "sha256": "d333f18fe625419ba088c86c9d24a14157ff5ff68861cb1aeaf806fc5bfa7839",
+      "bytes": 7965
+    },
+    "hsk1-app/src/features/homework/controller30.ts": {
+      "sha256": "4999a4546260a28efcc5ec054265004034ddbac107d4447ff947f5568505f824",
+      "bytes": 6214
+    },
+    "hsk1-app/src/features/homework/index.ts": {
+      "sha256": "158e4307488bbf08bd410c8cf2cccaf09b7194337825993c306fcfdcddb3ddd3",
+      "bytes": 23705
+    },
+    "hsk1-app/src/features/homework/index30.ts": {
+      "sha256": "c5b1db1092ddf3926e9b6ded68c501f350dc3c1bb9b7ebb9a63acad1d7a92b18",
+      "bytes": 27974
+    },
+    "hsk1-app/src/features/homework/receipt.ts": {
+      "sha256": "ee5aa392a3f7a382c702c856781af7780b55b57905ba94dbc20d6951013b08ca",
+      "bytes": 6501
+    },
+    "hsk1-app/src/features/exercises/archive-data.ts": {
+      "sha256": "adf9646230c856cbe0b30611277498ccfba7a950b4e18c592f86d77b01a9df21",
+      "bytes": 5228
+    },
+    "hsk1-app/src/features/exercises/archive.ts": {
+      "sha256": "7a96475f3d0c99baf4e16fcdfc8137dc7b6f05e717b1259d1c26a1aa96e4e78f",
+      "bytes": 14527
+    },
+    "hsk1-app/src/features/listening/index.ts": {
+      "sha256": "20bac7d6dcc51f450edf65939d78cce1d6ea4e720753653205a46e5ebdffad81",
+      "bytes": 23712
+    },
+    "hsk1-app/src/features/vocabulary/view.ts": {
+      "sha256": "3baadbba67a046017e6f77bdec796e7cec9c8907779ab9219f99ceea8dfae5ed",
+      "bytes": 16860
+    },
+    "hsk1-app/src/services/content/listening.ts": {
+      "sha256": "3fb45587a73f4829c4a2ea30c455a1f7f28567b8bc19ae59864d3160516e8d73",
+      "bytes": 13032
+    },
+    "hsk1-app/src/services/content/textbook.ts": {
+      "sha256": "033d731e73a18b6d4a817eb1f327711fc49e46960a447076d4375f44da423d18",
+      "bytes": 22058
+    },
+    "hsk1-app/src/services/content/vocabulary.ts": {
+      "sha256": "3647506c4532d74607716ef67271dab5a314ae25b8e4a18b5f4897cce1bb01a3",
+      "bytes": 18191
+    },
+    "hsk1-app/src/services/storage/compatibility.ts": {
+      "sha256": "6a72f0792459e9744ce67b8b81a0c578daef12fcf2096ace1f274d136c6d9104",
+      "bytes": 44659
+    },
+    "hsk1-app/tests/official-vi-revisions.test.mjs": {
+      "sha256": "c9ca560f9a4e6735bb7e12acc3309fb18d902b2842967529a221b7e691b33437",
+      "bytes": 8003
+    },
+    "hsk1-app/tests/vi-presentation-state.test.mjs": {
+      "sha256": "ea9fbea9eaa7d5efd1629e283d3e0b2313eb03a9477f1e2e02a42b90ddf401fe",
+      "bytes": 20281
+    },
+    "hsk1-app/tests/helpers/official-vi-fixture.mjs": {
+      "sha256": "9dfb2521275f2a80dc97e28d56612f35440e605dc445bc75177ba154b34794a9",
+      "bytes": 3545
+    },
+    "hsk1-app/tests/source-pair-fixture.mjs": {
+      "sha256": "258af4c4d55cdc1715ec87de959476f7f9bdded9f4446083415e75245422fa9a",
+      "bytes": 3258
+    },
+    "hsk1-app/content/stage2-bank.json": {
+      "sha256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3",
+      "bytes": 269656
+    },
+    "hsk1-app/content/stage3-catalog.json": {
+      "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "bytes": 384024
+    },
+    "hsk1-app/content/homework30-bank.json": {
+      "sha256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+      "bytes": 854221
+    },
+    "hsk1-app/content/textbook.json": {
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "bytes": 741675
+    },
+    "hsk1-app/content/legacy-exercises.json": {
+      "sha256": "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c",
+      "bytes": 446661
+    },
+    "hsk1-app/src/domain/homework/engine.js": {
+      "sha256": "5a8ac5bbab07bf3dc505c46d3d0ea8ef48d14017e6875742ff816d4646295321",
+      "bytes": 29611
+    },
+    "hsk1-app/src/domain/homework30/engine.ts": {
+      "sha256": "f5684607b1cb73ce316e6c65fa135b645ee274859ac14a428d6d50cc654532cb",
+      "bytes": 11748
+    },
+    "hsk1-app/src/domain/practice/engine.js": {
+      "sha256": "2c9b3c43f5980b12e4333e56a06cb660a012d3842c5b1e04e22a7756af79452c",
+      "bytes": 36082
+    },
+    "hsk1-app/src/domain/vocabulary/mixed-state.ts": {
+      "sha256": "763a4a30a5eccad4c0d1cc25d743f1d14af013f4235868a398e57b91254f11ac",
+      "bytes": 6532
+    },
+    "hsk1-app/src/domain/vocabulary/mixed-controller.ts": {
+      "sha256": "f7d4d6aa00649abebbf376ce34ef58b9dda02cb6b23306f32b742e33e93fbae3",
+      "bytes": 7282
+    },
+    "hsk1-app/content/media-references.json": {
+      "sha256": "d1c00b9706565fbb398b97490d51a1c3338349c2285c06e7ed8a04a68e2f656e",
+      "bytes": 287065
+    },
+    "hsk1-app/content/textbook-display-revisions.json": {
+      "sha256": "3d3e325b587fd3b41fb11a908db6e74a37f2c9d95cac247a663112e71f8f9e55",
+      "bytes": 26130
+    },
+    "hsk1-app/content/course-index.json": {
+      "sha256": "aeb5db3563e5d606a7b9fd045ae0f7f61994a9b03efd5a96f1b1e9099f482bb0",
+      "bytes": 4870
+    },
+    "hsk1-app/src/services/storage/index.ts": {
+      "sha256": "a0f3c1838c7c83c4af7ae46c61418f674d332499a61e56b69cfbcb080a4efab0",
+      "bytes": 18336
+    },
+    "hsk1-app/src/services/source-activities/paired.ts": {
+      "sha256": "7e2dd046dec52366cdbf981a08f84d24aec47928b39f3159a5cd8e4faf70d079",
+      "bytes": 14898
+    },
+    "hsk1-app/src/services/source-activities/state.ts": {
+      "sha256": "7678c98fa0d2a53d335971de3f8c9e0346d19d732ac734b99e8191443ac9c34a",
+      "bytes": 10025
+    },
+    "hsk1-app/src/services/source-activities/store.ts": {
+      "sha256": "630613cdc164b142fee6f2fd159736576fb761e47958001df8b676058b0fa9a6",
+      "bytes": 4653
+    },
+    "hsk1-app/src/services/source-activities/content.ts": {
+      "sha256": "e77761c05bcc24418eee07cfedd217950cdbb381157d21f8b8c019d52d062d44",
+      "bytes": 4898
+    },
+    "hsk1-app/src/services/learning/session.ts": {
+      "sha256": "50460eb3f8015997acbf68ee837da8f0f5fbe8d6b3c20d1efbfb17d296853a8f",
+      "bytes": 5372
+    },
+    "hsk1-app/src/domain/progress/reset.ts": {
+      "sha256": "a06540eab010fb1affd1be008a69f7f2287ba938677e2b5fdf575ae329644ea8",
+      "bytes": 9727
+    },
+    "hsk1-app/src/services/content/index.ts": {
+      "sha256": "6ad70e75d43afafd5643e5df7c55e0633e5b1ef3cecf737d260b05da12392c2d",
+      "bytes": 1904
+    },
+    "hsk1-app/playwright.vi-presentation.config.ts": {
+      "sha256": "523ba3a598b72af4f76baaad5775184fdcd43f891a61c453fa454fc4058c0d0e",
+      "bytes": 998
+    },
+    "hsk1-app/tsconfig.vi-presentation-tests.json": {
+      "sha256": "f5b3552e461dddd69df226611a7e823f0e0329ba2fe473896dcae69b748034d7",
+      "bytes": 220
+    },
+    "hsk1-app/tests/browser/official-vi-history.spec.ts": {
+      "sha256": "dbbd9833598106f2825d5e7654dba3ece5bd3eb042edd5db38fe45ad7732177d",
+      "bytes": 3181
+    },
+    "hsk1-app/tests/browser/fixtures/official-vi-history.html": {
+      "sha256": "ac38a018f745c2373bd192e591a8cb3e0feab4079bd563f4a0b0ab2a318ec601",
+      "bytes": 7303
+    },
+    "hsk1-app/tsconfig.json": {
+      "sha256": "5cd93fa698107542d3ac8a85b50aa675c35f405f7be7f3be0ae0cea1e3fa62c1",
+      "bytes": 523
+    },
+    "course-app/docs/resume-20261004/b10-hsk1-adapter/registered-field-proof.json": {
+      "sha256": "eb529c392f14afc57b09637a06f6f653b6fdc4d2345c342a1b90b794f4cb855d",
+      "bytes": 2430946
+    },
+    "course-app/docs/resume-20261004/b10-hsk1-adapter/verify-evidence.mjs": {
+      "sha256": "e89aad552d51c1d9d50092eb5bd4ce9923befdcf1592dcbf551928537ce87c66",
+      "bytes": 3245
+    },
+    "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/freeze-manifest.json": {
+      "sha256": "5f88d3e07c6821bec31522d4e15159c88a749c11b0f8ddb113ffdf501fa15074",
+      "bytes": 1322
+    }
+  },
+  "inputDrift": [],
+  "relativeV1Changes": [
+    {
+      "path": "hsk1-app/src/services/content/official-vi-revisions.ts",
+      "v1SHA256": "ddab81ef1c52deca18b6f1a06ed09e400b780dbf91d8cd64957c9a27fa3c3f8c",
+      "currentSHA256": "bdccf821877cb503bae612bbd00a822e2734ab5ba8985af3164e29bd3f7ed1a9"
+    },
+    {
+      "path": "hsk1-app/tests/official-vi-revisions.test.mjs",
+      "v1SHA256": "6ffd05afc05eaaf7f5c985811313882b4e4198d04c9017b7b921148379f2c668",
+      "currentSHA256": "c9ca560f9a4e6735bb7e12acc3309fb18d902b2842967529a221b7e691b33437"
+    }
+  ],
+  "addedInputs": [
+    "hsk1-app/src/services/content/index.ts",
+    "hsk1-app/playwright.vi-presentation.config.ts",
+    "hsk1-app/tsconfig.vi-presentation-tests.json",
+    "hsk1-app/tests/browser/official-vi-history.spec.ts",
+    "hsk1-app/tests/browser/fixtures/official-vi-history.html",
+    "hsk1-app/tsconfig.json",
+    "course-app/docs/resume-20261004/b10-hsk1-adapter/registered-field-proof.json",
+    "course-app/docs/resume-20261004/b10-hsk1-adapter/verify-evidence.mjs",
+    "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/freeze-manifest.json"
+  ],
+  "protectedAuthority": [
+    {
+      "path": "hsk1-app/content/stage2-bank.json",
+      "currentSHA256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3",
+      "headSHA256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3",
+      "matchesHEAD": true,
+      "matchesV1": true
+    },
+    {
+      "path": "hsk1-app/content/stage3-catalog.json",
+      "currentSHA256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "headSHA256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "matchesHEAD": true,
+      "matchesV1": true
+    },
+    {
+      "path": "hsk1-app/content/homework30-bank.json",
+      "currentSHA256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+      "headSHA256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+      "matchesHEAD": true,
+      "matchesV1": true
+    },
+    {
+      "path": "hsk1-app/content/textbook.json",
+      "currentSHA256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "headSHA256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "matchesHEAD": true,
+      "matchesV1": true
+    },
+    {
+      "path": "hsk1-app/content/legacy-exercises.json",
+      "currentSHA256": "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c",
+      "headSHA256": "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c",
+      "matchesHEAD": true,
+      "matchesV1": true
+    },
+    {
+      "path": "hsk1-app/src/domain/homework/engine.js",
+      "currentSHA256": "5a8ac5bbab07bf3dc505c46d3d0ea8ef48d14017e6875742ff816d4646295321",
+      "headSHA256": "5a8ac5bbab07bf3dc505c46d3d0ea8ef48d14017e6875742ff816d4646295321",
+      "matchesHEAD": true,
+      "matchesV1": true
+    },
+    {
+      "path": "hsk1-app/src/domain/homework30/engine.ts",
+      "currentSHA256": "f5684607b1cb73ce316e6c65fa135b645ee274859ac14a428d6d50cc654532cb",
+      "headSHA256": "f5684607b1cb73ce316e6c65fa135b645ee274859ac14a428d6d50cc654532cb",
+      "matchesHEAD": true,
+      "matchesV1": true
+    },
+    {
+      "path": "hsk1-app/src/domain/practice/engine.js",
+      "currentSHA256": "2c9b3c43f5980b12e4333e56a06cb660a012d3842c5b1e04e22a7756af79452c",
+      "headSHA256": "2c9b3c43f5980b12e4333e56a06cb660a012d3842c5b1e04e22a7756af79452c",
+      "matchesHEAD": true,
+      "matchesV1": true
+    },
+    {
+      "path": "hsk1-app/src/domain/vocabulary/mixed-state.ts",
+      "currentSHA256": "763a4a30a5eccad4c0d1cc25d743f1d14af013f4235868a398e57b91254f11ac",
+      "headSHA256": "763a4a30a5eccad4c0d1cc25d743f1d14af013f4235868a398e57b91254f11ac",
+      "matchesHEAD": true,
+      "matchesV1": true
+    },
+    {
+      "path": "hsk1-app/src/domain/vocabulary/mixed-controller.ts",
+      "currentSHA256": "f7d4d6aa00649abebbf376ce34ef58b9dda02cb6b23306f32b742e33e93fbae3",
+      "headSHA256": "f7d4d6aa00649abebbf376ce34ef58b9dda02cb6b23306f32b742e33e93fbae3",
+      "matchesHEAD": true,
+      "matchesV1": true
+    }
+  ],
+  "executions": [
+    {
+      "command": [
+        "node",
+        "--experimental-strip-types",
+        "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/probe.mjs"
+      ],
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume",
+      "exitCode": 0,
+      "log": "independent-probes.log"
+    },
+    {
+      "command": [
+        "node",
+        "--experimental-strip-types",
+        "--test",
+        "tests/official-vi-revisions.test.mjs",
+        "tests/vi-presentation-state.test.mjs"
+      ],
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app",
+      "exitCode": 0,
+      "log": "targeted-unit.log"
+    },
+    {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app",
+      "exitCode": 0,
+      "log": "typecheck.log"
+    },
+    {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--project",
+        "tsconfig.vi-presentation-tests.json"
+      ],
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app",
+      "exitCode": 0,
+      "log": "fixture-typecheck.log"
+    },
+    {
+      "command": [
+        "node",
+        "node_modules/@playwright/test/cli.js",
+        "test",
+        "--config=playwright.vi-presentation.config.ts",
+        "--list",
+        "--reporter=list"
+      ],
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume/hsk1-app",
+      "exitCode": 0,
+      "log": "native-collection.log"
+    },
+    {
+      "command": [
+        "node",
+        "--experimental-strip-types",
+        "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/mapper-check.mjs"
+      ],
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume",
+      "exitCode": 0,
+      "log": "mapper-check.log"
+    },
+    {
+      "command": [
+        "node",
+        "--experimental-strip-types",
+        "course-app/docs/resume-20261004/b10-hsk1-adapter/verify-evidence.mjs"
+      ],
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume",
+      "exitCode": 0,
+      "log": "author-proof-verify.log"
+    }
+  ],
+  "initialFixtureTypecheck": {
+    "status": "failed",
+    "errors": 4,
+    "code": "TS2591",
+    "initialSourceSnapshotCaptured": false,
+    "correctiveChange": "specialized test tsconfig compilerOptions.types node",
+    "finalResult": "see fixture-typecheck.log"
+  },
+  "activeConfigReview": {
+    "initial": "static mismatch in default/load root guards",
+    "final": "shared validation function called by both; unit negative cases",
+    "activeAssetRuntimeExecuted": false
+  },
+  "nativeCollected": 6,
+  "nativeExecuted": 0,
+  "officialLanguageAccepted": 0,
+  "configuredActive": null,
+  "readScope": "Full new index/config/spec/HTML and relevant loader/schema changes; previous v1 pipeline scope unchanged; actual listed commands only."
+}

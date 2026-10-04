@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "root",
+  "scope": "B10 publication gate cycle and exact source/output guards; not final language or native acceptance",
+  "authorEvidence": "course-app/docs/b10-release-readiness/verification-report.md",
+  "originalAuthorReadinessSHA256": "ed4bc1b2c9b1004819dd2e8594ee2b91a58f7b54cf9a1ef13614d8860349c6b7",
+  "currentReadinessSHA256": "4db18945e5c731dd6fcee60de0dc3056f609edfae01ed5dfe76ac0439d38c248",
+  "actualCodeRead": "all 173 lines, package integration, and 153 original fixture lines",
+  "acceptedBoundedDesign": [
+    "stages 1–15 independently evidenced, stage16 awaits publication authorization",
+    "actual tested Git tree and clean current runtime scope including original audio/glyph inputs",
+    "source page IDs separate from semantic consumer IDs",
+    "exact native-tested dist path/byte/SHA set enforced before output creation"
+  ],
+  "foundIssue": "asset-metadata improperly used the 412 SVG description count despite separate JSON metadata consumers",
+  "rootCorrection": "asset-metadata exact item/accepted ID sets validated against its own ledger; 1360 legacy and 412 current SVG consumers remain guarded",
+  "targetedResult": {
+    "passed": 17,
+    "failed": 0,
+    "skipped": 0,
+    "nativeCasesRun": 0,
+    "syntheticOnly": true
+  },
+  "completeRuntimeUnitRepeatPerformed": false,
+  "independentRootPatchReview": "pending",
+  "finalScopeLimit": "full current source inventory and B14 metadata scope must be rebound; no final gate, release, or deployed artifact created",
+  "files": [
+    {
+      "file": "README.author-input.md",
+      "sha256": "582f2c595518d71734a26be0694eb4462cfcf9f18f8fb8d5b58d18a80c6089f9"
+    },
+    {
+      "file": "release-readiness.author-input.mjs",
+      "sha256": "ed4bc1b2c9b1004819dd2e8594ee2b91a58f7b54cf9a1ef13614d8860349c6b7"
+    },
+    {
+      "file": "release-readiness.author-tests.mjs",
+      "sha256": "b8e65e423b08c924499445fc99e6bea9f47715a58a1cdf8695fcbf4eaf49424c"
+    },
+    {
+      "file": "targeted-root-tests.log",
+      "sha256": "e9b411a099f1ef1080f78da3c7eccd5a343d50da232a24f61cb8b58fdc2afea5"
+    }
+  ]
+}

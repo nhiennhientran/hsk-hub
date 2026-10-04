@@ -1,0 +1,20 @@
+✔ an actual single native pass can satisfy exact engine/file/count (1.003124ms)
+✔ native guard rejects collection (0.852019ms)
+✔ native guard rejects skip (0.43029ms)
+✔ native guard rejects retry (0.271354ms)
+✔ native guard rejects expectedFailure (0.18114ms)
+✔ native guard rejects perCaseError (0.165066ms)
+✔ native guard rejects globalError (0.19474ms)
+✔ native guard rejects wrongEngine (0.156263ms)
+✔ native guard rejects foreignFile (0.203613ms)
+✔ native guard rejects missingCase (0.25555ms)
+✔ native guard rejects duplicateCase (0.292646ms)
+✔ native guard rejects flaky (0.222882ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 102.829612

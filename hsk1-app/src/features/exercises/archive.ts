@@ -4,10 +4,9 @@ import { bilingualNode, bilingualText, setBilingual, type BilingualCopy } from '
 import { exerciseGroups, exerciseSaveStates, exerciseIssue } from '../../app/i18n/exercises.ts';
 import type { Answer } from '../../domain/types.ts';
 import type { ExerciseCatalogue, ExerciseTask } from '../../domain/exercises/catalogue.ts';
-import type { ExerciseSubmission } from '../../domain/exercises/engine.ts';
 import { loadExercises } from '../../services/content/exercises.ts';
 import { element, routeLink } from '../textbook/dom.ts';
-import { archivedAnswerText, archivedExercises, type ArchivedExercise, type ArchivedTimeline } from './archive-data.ts';
+import { archivedAnswerText, archivedExercises, type ArchivedExercise, type ArchivedTimeline, type ArchivedSubmission } from './archive-data.ts';
 import './archive.css';
 
 const pair = (zh: string, vi: string): BilingualCopy => ({ zh, vi });
@@ -59,11 +58,18 @@ function answerBlock(task: ExerciseTask, answer: Answer): HTMLElement {
   block.append(raw); return block;
 }
 
-function submissionBlock(task: ExerciseTask, saved: ExerciseSubmission, label: BilingualCopy): HTMLElement {
+function submissionBlock(task: ExerciseTask, saved: ArchivedSubmission, label: BilingualCopy): HTMLElement {
   const block = element('section'); block.className = 'archive-submission'; block.dataset.result = saved.correct === null ? 'manual' : saved.correct ? 'correct' : 'incorrect';
   block.append(node('h4', label));
+  if (saved.displayTask) {
+    const display = element('div'); display.className = 'archive-saved-display'; display.dataset.displayBinding = saved.displayBindingId ?? '';
+    display.append(node('p', pair('提交时显示的文案', 'Nội dung hiển thị khi nộp')), element('p', saved.displayTask.prompt));
+    if (saved.displayTask.meaning) display.append(element('p', saved.displayTask.meaning));
+    if (saved.displayTask.kind === 'choice') { const options = element('ol'); saved.displayTask.options.forEach(text => options.append(element('li', text))); display.append(options); }
+    block.append(display);
+  }
   const time = element('time', new Date(saved.at).toISOString()); time.dateTime = new Date(saved.at).toISOString(); block.append(time);
-  block.append(node('p', saved.correct === null ? copy.manual : saved.correct ? copy.correct : copy.incorrect), answerBlock(task, saved.answer));
+  block.append(node('p', saved.correct === null ? copy.manual : saved.correct ? copy.correct : copy.incorrect), answerBlock(saved.displayTask ?? task, saved.answer));
   return block;
 }
 
@@ -73,7 +79,7 @@ function timelineBlock(task: ExerciseTask, timeline: ArchivedTimeline, signal: A
   if (timeline.first) block.append(submissionBlock(task, timeline.first, timeline.source === 'exercises' && timeline.submissions.length === 1 ? copy.firstLatest : copy.first));
   if (timeline.latest && (timeline.source === 'homework' || timeline.submissions.length > 1)) block.append(submissionBlock(task, timeline.latest, copy.latest));
   if (Object.hasOwn(timeline, 'draft')) {
-    const draft = element('section'); draft.className = 'archive-draft'; draft.append(node('h4', copy.draft), node('p', copy.draftDate), answerBlock(task, timeline.draft!)); block.append(draft);
+    const draft = element('section'); draft.className = 'archive-draft'; draft.append(node('h4', copy.draft), node('p', copy.draftDate), answerBlock(timeline.displayDraftTask ?? task, timeline.draft!)); block.append(draft);
   }
   if (timeline.submissions.length) {
     const history = element('details'); history.className = 'archive-history';
@@ -142,7 +148,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     function render() {
       viewLifetime?.abort(); viewLifetime = new AbortController(); records.replaceChildren();
       const current = session.store.snapshot();
-      const entries = archivedExercises(catalogue, current.data.exercises, route, current.data.homework);
+      const entries = archivedExercises(catalogue, current.data.exercises, route, current.data.homework, current.data);
       setBilingual(state, current.issue ? exerciseIssue(current.issue, exerciseSaveStates[current.status]) : exerciseSaveStates[current.status]); state.dataset.state = current.status; state.dataset.hasIssue = String(!!current.issue);
       if (current.status === 'corrupt' || (current.status === 'unavailable' && !entries.length)) return;
       if (!entries.length) { records.append(node('h2', copy.empty), node('p', copy.emptyHint)); return; }

@@ -1,6 +1,6 @@
 import type { FeatureModule } from '../../app/contracts.ts';
 import { routeHref } from '../../app/router.ts';
-import { loadListening } from '../../services/content/listening.ts';
+import { loadListening, projectListeningCurrent } from '../../services/content/listening.ts';
 import { createListeningController } from '../../domain/listening/controller.ts';
 import { AUDIO_RATES } from '../../services/audio/index.ts';
 import type { PlaybackResult } from '../../services/audio/index.ts';
@@ -185,7 +185,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     }, { signal: lifetime.signal });
 
     function renderQuestion(): void {
-      const model = listening.read(); const current = model.current;
+      const model = listening.read(); const current = model.current ? projectListeningCurrent(model.current, session.store.snapshot().data, content.catalog) : null;
       questionLifetime?.abort(); questionLifetime = new AbortController();
       const signal = questionLifetime.signal; questionHost.replaceChildren();
       if (!current || !model.session) { questionHost.append(element('p', copy.noSession)); return; }
@@ -226,7 +226,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     }
     function update(): void {
       if (left || lifetime.signal.aborted) return;
-      const model = listening.read(); const current = model.current;
+      const model = listening.read(); const current = model.current ? projectListeningCurrent(model.current, session.store.snapshot().data, content.catalog) : null;
       hasQuestion = !!current;
       const key = model.session && current ? `${model.session.id}:${current.id}` : '';
       if (key !== questionKey) { stopPlayback(); questionKey = key; }

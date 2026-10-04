@@ -1,3 +1,4 @@
+import { validateViPresentation, reconcileViPresentation, type ViQuestion } from '../content/vi-presentation-state.ts';
 import { blankHomework30, validateHomework30, homework30CourseTotals, type Homework30State } from '../../domain/homework30/engine.ts';
 import { getHomework30Bank } from '../content/homework30.ts';
 import { dataWarning, dataOriginalWarning, dataExerciseWarnings } from './copy.ts';
@@ -12,7 +13,7 @@ import { resetProgress, type ResetScope, type ResetResult } from '../../domain/p
 import { FEATURES, PARTS, SECTIONS } from '../../app/contracts.ts';
 import type { Route, Section } from '../../app/contracts.ts';
 import { normalizeRoute, parseRoute } from '../../app/router.ts';
-import type { HomeworkState, PracticeState } from '../../domain/types.ts';
+import type { HomeworkState, PracticeState, ViPresentationState } from '../../domain/types.ts';
 import { resetMixedVocabulary, validateMixedVocabulary, type MixedVocabularyState } from '../../domain/vocabulary/mixed-state.ts';
 import type { VocabularyCatalog } from '../content/vocabulary.ts';
 
@@ -39,6 +40,7 @@ export interface AppData {
   /** Independent browse-only round; old backups may omit it. */
   mixedVocabulary?: MixedVocabularyState;
   exercises: ExercisesState;
+  viPresentation?: ViPresentationState;
   navigation: Route | null;
   /** Original bytes are kept once under their real source key. Access gates are excluded. */
   legacyRaw: Record<string, string>;
@@ -146,6 +148,10 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
   homework.validateImport(homework.blank(), bank);
   practice.importBackup(practice.blank(), catalog);
   const compatibleBank = legacyBank(bank);
+  const viOwners = { homework: new Map<string, readonly ViQuestion[]>(), listening: new Map<string, ViQuestion>() };
+  for (const lesson of bank) for (const part of ['choice', 'sort', 'translation']) viOwners.homework.set(`legacy:${lesson.lesson}:${part}`, lesson[part] as ViQuestion[]);
+  for (const lesson of getHomework30Bank()) for (const part of ['choice', 'sort', 'translation', 'translationChoice', 'listening'] as const) viOwners.homework.set(`30-v1:${lesson.lesson}:${part}`, lesson[part]);
+  if (record(catalog) && Array.isArray(catalog.listening)) for (const question of catalog.listening) if (record(question) && typeof question.id === 'string') viOwners.listening.set(question.id, question as unknown as ViQuestion);
   const exerciseCatalogue = createExerciseCatalogue(legacyExercises, bank, catalog);
   const stars = new Set<string>();
   const bookRows = record(textbook) && Array.isArray(textbook.lessons) ? textbook.lessons : Array.isArray(textbook) ? textbook : null;
@@ -194,7 +200,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
   }
   function validate(input: unknown): AppData {
     if (!record(input)) fail(dataWarning({"zh": "学习备份无效。", "vi": "Bản lưu học tập không hợp lệ."}));
-    exact(input, ['reading', 'homework', 'homework30', 'practice', 'mixedVocabulary', 'exercises', 'navigation', 'legacyRaw']);
+    exact(input, ['reading', 'homework', 'homework30', 'practice', 'mixedVocabulary', 'exercises', 'navigation', 'legacyRaw', 'viPresentation']);
     const h = homework.validateImport(input.homework, bank), p = practice.importBackup(input.practice, catalog);
     const issues = [...homeworkScoreIssues(input.homework, h), ...practiceScoreIssues(input.practice, p)];
     if (issues.length) fail(dataWarning({ zh: `成绩或提交状态被修改，已拒绝导入（${issues[0]}）。`, vi: `Điểm hoặc trạng thái nộp bị sửa; nhập bị từ chối (${issues[0]}).` }));
@@ -207,9 +213,11 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
       if (!same(source, normalized)) fail(dataWarning({"zh": "继续学习的位置包含无效字段。", "vi": "Vị trí tiếp tục có trường không hợp lệ."}));
       navigation = normalized;
     }
-    return { reading: reading(input.reading), homework: h, ...(input.homework30 === undefined ? {} : { homework30: validateHomework30(input.homework30, getHomework30Bank()) }), practice: p,
+    const normalized: AppData = { reading: reading(input.reading), homework: h, ...(input.homework30 === undefined ? {} : { homework30: validateHomework30(input.homework30, getHomework30Bank()) }), practice: p,
       ...(input.mixedVocabulary === undefined ? {} : { mixedVocabulary: validateMixedVocabulary(input.mixedVocabulary, catalog as VocabularyCatalog) }),
       exercises: validateExercisesState(input.exercises, exerciseCatalogue), navigation, legacyRaw: rawSources(input.legacyRaw) };
+    if (input.viPresentation !== undefined) normalized.viPresentation = validateViPresentation(input.viPresentation, normalized, viOwners);
+    return normalized;
   }
   function convert(input: unknown, now: number): { state: HomeworkState | PracticeState; key: string; warnings: string[] } {
     if (!record(input)) fail(dataWarning({"zh": "此文件不是受支持的 HSK 1 备份。", "vi": "Tệp không phải bản sao lưu HSK 1 được hỗ trợ."}));
@@ -367,6 +375,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
       }
       data.homework = incoming;
     }
+    reconcileViPresentation(data, result.key === practice.KEY ? 'practice' : 'legacy');
     const exerciseBase = structuredClone(data.exercises);
     if (result.key === homework.LEGACY_KEY) {
       const exercises = migrateLegacyExercises(parsed, exerciseCatalogue, data.exercises);
@@ -521,6 +530,7 @@ export function createCompatibility(bankInput: unknown, catalog: unknown, textbo
       result.data.exercises = resetExercises(result.data.exercises, exerciseCatalogue, scope.lesson ?? undefined);
       result.removed += before - dataExerciseEntries(result.data.exercises);
     }
+    reconcileViPresentation(result.data);
     return { ...result, data: validate(result.data) };
   }
   return { blank, validate, migrate, importLegacy, summary, reset };

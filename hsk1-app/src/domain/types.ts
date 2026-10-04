@@ -1,6 +1,16 @@
 /** Persisted learning data only. DOM, audio players and access gates never enter these types. */
 export type JsonValue = null | boolean | number | string | JsonValue[] | { [key: string]: JsonValue };
 export type JsonRecord = { [key: string]: JsonValue };
+/** Parallel display evidence; raw grading records and their fingerprints remain authoritative. */
+export interface ViHomeworkPresentation { draft: string | null; first: string | null; current: string | null; latest: string | null; history: (string | null)[] }
+export interface ViListeningRoundPresentation { id: string; payloadId: string | null; responses: Record<string, string | null> }
+export interface ViPresentationState {
+  schemaVersion: 1; sequence: number;
+  payloads: Record<string, { revisionId: string; fields: { ownerId: string; component: string; field: string; value: string }[] }>;
+  bindings: Record<string, { payloadId: string; context: string; authority: string }>;
+  homework: Record<string, ViHomeworkPresentation>;
+  listening: { round: ViListeningRoundPresentation | null; records: Record<string, { first: string | null; latest: string | null }> };
+}
 export type HomeworkKind = 'choice' | 'sort' | 'translation' | 'listening';
 export type Answer = number | number[] | string;
 export interface HomeworkAttempt {

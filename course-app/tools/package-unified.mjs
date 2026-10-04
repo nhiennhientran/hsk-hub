@@ -3,6 +3,7 @@ import {resolve,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {execFileSync} from 'node:child_process';
 import {hash,walkFiles} from './package-core.mjs';
+import {assertReleaseReadiness,assertTestedBuildInput,snapshotRuntimeSource} from './release-readiness.mjs';
 
 export const protectedProduction='2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4';
 // Hash routes can select HSK1 in every unified entry. Activity pictures resolve
@@ -48,8 +49,8 @@ export function currentAuxiliaryIllustrations(repo){
   if(result.size!==438)throw Error('Expected 438 approved auxiliary illustrations');
   return result;
 }
-export function assertUnifiedAcceptance(gate,source){
-  if(gate.sourceCommit!==source||gate.lessons!==48||gate.textbookLessons!==33||gate.pages!==579||!Array.isArray(gate.stages)||gate.stages.length!==16||gate.stages.some(s=>s.status!=='passed')||!gate.browsers?.chromium||!gate.browsers?.webkit)throw Error('All sixteen acceptance stages are required before a production package');
+export function assertUnifiedAcceptance(gate,source,{repo}={}){
+  return assertReleaseReadiness(gate,source,{repo,scopes:runtimeSourceScopes});
 }
 export function unifiedEntryHTML(html,level,base,view='courses'){
   if(![1,2,3].includes(level)||!['courses','portal'].includes(view)||!['./course-engine/','../course-engine/','../../course-engine/'].includes(base)||!html?.includes('<meta name="hsk-level" content="2">')||!html.includes('<div id="app"></div>')||!html.includes('src="./assets/'))throw Error('Unrecognized unified build entry');
@@ -60,18 +61,19 @@ export function unifiedEntryHTML(html,level,base,view='courses'){
 export const runtimeSourceScopes=['course-app/src','course-app/content','course-app/public','course-app/tools','course-app/index.html','course-app/package.json','course-app/package-lock.json','course-app/vite.config.ts','course-app/tsconfig.json','hsk1-app/src','hsk1-app/content','hsk1-app/public','new-hsk1/hsk1/audio','new-hsk1/assets/hanzi-data'];
 export function runtimeSourceDirty(repo){return !!execFileSync('git',['status','--porcelain','--',...runtimeSourceScopes],{cwd:repo,encoding:'utf8'}).trim();}
 export function runtimeSourceSnapshot(repo){
-  const names=execFileSync('git',['ls-files','-z','--cached','--others','--exclude-standard','--',...runtimeSourceScopes],{cwd:repo,encoding:'utf8'}).split('\0').filter(Boolean);
-  const files=[...new Set(names)].sort().filter(p=>existsSync(join(repo,p))).map(path=>({path,sha256:hash(readFileSync(join(repo,path)))}));
-  return {sha256:hash(Buffer.from(JSON.stringify(files))),files};
+  return snapshotRuntimeSource(repo,runtimeSourceScopes);
 }
-export function packageUnified({input,output,sourceCommit,figures,hsk1Tracks,sourceSnapshot,illustrations=new Map(),sourceDirty=false,mode='checkpoint',buildProvenance='prebuilt-diagnostic',assertStable=()=>{}}){
+export function packageUnified({input,output,sourceCommit,figures,hsk1Tracks,sourceSnapshot,releaseReadiness,illustrations=new Map(),sourceDirty=false,mode='checkpoint',buildProvenance='prebuilt-diagnostic',assertStable=()=>{}}){
   input=resolve(input);output=resolve(output);
   if(!/^[0-9a-f]{40}$/.test(sourceCommit)||!['checkpoint','release'].includes(mode))throw Error('Invalid source identity or packaging mode');
   if(!(figures instanceof Map)||figures.size!==150)throw Error('Expected 150 current source crops');
   if(mode==='release'&&(sourceDirty||buildProvenance!=='built-from-recorded-worktree'))throw Error('Release requires a clean source and a verified build');
+  if(mode==='release'&&(releaseReadiness?.phase!=='pre-publication'||releaseReadiness.publicationApproved!==false||releaseReadiness.deployed!==false||releaseReadiness.stage16!=='awaiting-authorization'||releaseReadiness.runtimeSourceSnapshotSHA256!==sourceSnapshot?.sha256))throw Error('Release requires validated pre-publication readiness');
   if(existsSync(output))throw Error('Frozen output must be new; never overwrite a tested artifact');
   const names=walkFiles(input),bytes=new Map();
   for(const path of names){if(!unifiedInputPath(path,figures,illustrations))throw Error('Unapproved public input '+path);bytes.set(path,readFileSync(join(input,path)));}
+  const inputFiles=names.map(path=>({path,bytes:bytes.get(path).length,sha256:hash(bytes.get(path))}));
+  if(mode==='release')assertTestedBuildInput(releaseReadiness,inputFiles);
   const manifest=JSON.parse(bytes.get('content-manifest.json')??'null');
   if(manifest?.schemaVersion!==1||manifest.lessons?.length!==33||manifest.lessons.filter(l=>l.level===2).length!==15||manifest.lessons.filter(l=>l.level===3).length!==18)throw Error('Course 2/3 content missing');
   if(mode==='release'&&manifest.mode!=='release')throw Error('Pilot content cannot enter a release');
@@ -95,7 +97,7 @@ export function packageUnified({input,output,sourceCommit,figures,hsk1Tracks,sou
   for(const dir of unifiedEntryDirectories)for(const path of figures.keys())outputs.set((dir?dir+'/':'')+path,bytes.get(path));
   const files=[...outputs].sort(([a],[b])=>a.localeCompare(b,'en')).map(([path,b])=>({path,bytes:b.length,sha256:hash(b)}));
   for(const f of files)if(!unifiedOutputPath(f.path))throw Error('Unscoped unified output '+f.path);
-  const result={schemaVersion:2,mode,sourceCommit,protectedProduction,app:'hsk123-unified',sharedEngine:'course-engine',sourceDirty,buildProvenance,sourceSnapshot,lessons:48,entries:unifiedEntryDirectories,originalAudioTracks:tracks.length,originalSourceCrops:figures.size,auxiliaryIllustrations:[...illustrations].map(([path,f])=>({path,...f})),sourceFigures:[...figures].map(([path,f])=>({path,...f})),inputFiles:names.map(path=>({path,bytes:bytes.get(path).length,sha256:hash(bytes.get(path))})),files};
+  const result={schemaVersion:2,mode,sourceCommit,protectedProduction,app:'hsk123-unified',sharedEngine:'course-engine',sourceDirty,buildProvenance,sourceSnapshot,...(mode==='release'?{releaseReadiness}:{}),lessons:48,entries:unifiedEntryDirectories,originalAudioTracks:tracks.length,originalSourceCrops:figures.size,auxiliaryIllustrations:[...illustrations].map(([path,f])=>({path,...f})),sourceFigures:[...figures].map(([path,f])=>({path,...f})),inputFiles,files};
   // Fail before output creation if either the source or frozen input drifted.
   assertStable();
   for(const path of names)if(hash(readFileSync(join(input,path)))!==hash(bytes.get(path)))throw Error('Build input changed during freeze '+path);
@@ -111,11 +113,19 @@ if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
   if(dirty&&(release||!args.includes('--allow-dirty-checkpoint')))throw Error('Commit the tested runtime before freezing; dirty checkpoints require explicit diagnostic flag');
   if(!/^[0-9a-f]{40}$/.test(source)||release&&source!==actualCommit)throw Error('Invalid source commit');
   execFileSync('git',['cat-file','-e',source+'^{commit}'],{cwd:repo});
-  if(release)assertUnifiedAcceptance(JSON.parse(readFileSync(join(root,'docs/unified-final-acceptance.json'),'utf8')),source);
+  const gatePath=resolve(root,option('--gate','docs/unified-final-acceptance.json'));
+  const gateBytes=release?readFileSync(gatePath):undefined;
+  const releaseReadiness=release?{...assertUnifiedAcceptance(JSON.parse(gateBytes.toString('utf8')),source,{repo}),gateSHA256:hash(gateBytes)}:undefined;
   const before=runtimeSourceSnapshot(repo);
   if(release&&!args.includes('--build'))throw Error('Release requires --build and exact recorded source');
   if(args.includes('--build'))execFileSync('npm',['run','build','--','--outDir',resolve(root,option('--input','dist'))],{cwd:root,stdio:'inherit'});
-  const assertStable=()=>{if(runtimeSourceSnapshot(repo).sha256!==before.sha256)throw Error('Runtime source changed during build or freeze');};assertStable();
-  const result=packageUnified({input:resolve(root,option('--input','dist')),output:resolve(root,option('--output','unified-frozen')),sourceCommit:source,figures:currentSourceFigures(repo),illustrations:currentAuxiliaryIllustrations(repo),hsk1Tracks:JSON.parse(readFileSync(join(repo,'hsk1-app/content/media-references.json'),'utf8')).originalTracks,sourceSnapshot:before,sourceDirty:dirty,mode:release?'release':'checkpoint',buildProvenance:args.includes('--build')?'built-from-recorded-worktree':'prebuilt-diagnostic',assertStable});
+  const assertStable=()=>{
+    if(runtimeSourceSnapshot(repo).sha256!==before.sha256)throw Error('Runtime source changed during build or freeze');
+    if(release){
+      if(hash(readFileSync(gatePath))!==hash(gateBytes))throw Error('Release gate changed during build or freeze');
+      assertUnifiedAcceptance(JSON.parse(gateBytes.toString('utf8')),source,{repo});
+    }
+  };assertStable();
+  const result=packageUnified({input:resolve(root,option('--input','dist')),output:resolve(root,option('--output','unified-frozen')),sourceCommit:source,figures:currentSourceFigures(repo),illustrations:currentAuxiliaryIllustrations(repo),hsk1Tracks:JSON.parse(readFileSync(join(repo,'hsk1-app/content/media-references.json'),'utf8')).originalTracks,sourceSnapshot:before,releaseReadiness,sourceDirty:dirty,mode:release?'release':'checkpoint',buildProvenance:args.includes('--build')?'built-from-recorded-worktree':'prebuilt-diagnostic',assertStable});
   console.log(JSON.stringify({source,mode:result.mode,output:resolve(root,option('--output','unified-frozen')),files:result.files.length,lessons:48,sourceSnapshotSHA256:before.sha256,buildProvenance:result.buildProvenance},null,2));
 }

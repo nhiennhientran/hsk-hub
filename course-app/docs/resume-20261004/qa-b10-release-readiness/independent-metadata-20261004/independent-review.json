@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "remaining_media_audit",
+  "createdAt": "2026-10-04T21:09:54.332142+00:00",
+  "status": "accepted-bounded-code-repair",
+  "scope": "One-line asset-metadata cardinality repair in current release-readiness guard",
+  "repositoryHEADAtReview": "6f668b4f47ed22cffe0c02d1993263fb83b1304e",
+  "sourceIdentityMode": "Actual current worktree content SHA256; does not claim these uncommitted tools were tested at repositoryHEADAtReview",
+  "actualReviewedToolSHA256": "4db18945e5c731dd6fcee60de0dc3056f609edfae01ed5dfe76ac0439d38c248",
+  "preservedAuthorToolSHA256": "ed4bc1b2c9b1004819dd2e8594ee2b91a58f7b54cf9a1ef13614d8860349c6b7",
+  "oneLinePatch": {
+    "verifiedExact": true,
+    "line": 151,
+    "diff": "accepted-one-line-patch.diff",
+    "removed": "asset-metadata must equal unrelated SVG desc cardinality 412",
+    "retained": [
+      "metadata ledger nonempty",
+      "unique nonempty ledger item IDs",
+      "declared item count equals actual ledger length",
+      "exact unique accepted IDs equal ledger IDs",
+      "legacy-questions item count exactly 1360",
+      "svg item count exactly 412",
+      "the rest of the complete original source/evidence/semantic/native gate code remains byte-for-byte unchanged"
+    ]
+  },
+  "actualIndependentExecution": {
+    "directFunction": "assertReleaseReadiness imported from actual reviewed tool",
+    "fixture": "isolated temporary Git repository with explicit synthetic PDF/page/semantic/native evidence",
+    "mutationsRehashed": true,
+    "sourceRehashedBeforeAndAfter": true,
+    "temporaryFixtureRemoved": true,
+    "probeCounts": {
+      "probes": 29,
+      "accepted": 7,
+      "rejected": 22,
+      "passed": 29,
+      "failed": 0
+    },
+    "probeResults": "probe-results.json",
+    "probeLog": "probe-execution.log"
+  },
+  "negativeProbeHighlights": {
+    "metadataAcceptedIDMissingExtraDuplicateSameCountWrong": "all rejected at exact accepted consumer IDs guard",
+    "metadataInventoryMissingExtraDuplicateDeclaredCountSmallLargeNonArrayBlankIDWrongScope": "all rejected at inventory guard",
+    "metadataEmptyConsistentLedger": "rejected at empty cross-site consumer scope guard",
+    "legacyWrongCount1359And1361": "coherent declared/ledger/accepted IDs rejected at fixed legacy cardinality guard",
+    "svgWrongCount411And413": "coherent declared/ledger/accepted IDs rejected at fixed SVG cardinality guard",
+    "legacyAndSvgMissingDuplicateAcceptedIDs": "rejected at exact accepted consumer IDs guard"
+  },
+  "freshTargetedCurrentSourceTests": {
+    "command": "node --test tests/package-unified.test.mjs tests/release-readiness.test.mjs",
+    "log": "targeted-independent-tests.log",
+    "passed": 17,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "syntheticOnly": true
+  },
+  "historicalEvidenceSeparation": {
+    "rootTargeted17": "Read-only root log is retained as its prior execution; fresh independent17 has a separate log.",
+    "author200": "Preserved author unit-tests.log refers to historical author source ed4bc1; not used as current-source execution evidence.",
+    "independentFull200RepeatRun": false
+  },
+  "limits": [
+    "Acceptance is restricted to the exact one-line code repair and its direct structural probes.",
+    "A self-consistent metadata ledger is not proof of current website consumer completeness; B14 must provide the complete version-bound inventory and independent actual consumer acceptance.",
+    "No official textbook semantic review or real native Chromium/WebKit test is performed by this task.",
+    "No final gate certificate, proof activation, package freezing, publication authorization, deployment or new audio acceptance is created."
+  ],
+  "nativeTestsRun": 0,
+  "officialSemanticComparisonsRun": 0,
+  "productionFilesModified": 0,
+  "sourceInputs": [
+    {
+      "path": "course-app/tools/release-readiness.mjs",
+      "bytes": 13815,
+      "sha256": "4db18945e5c731dd6fcee60de0dc3056f609edfae01ed5dfe76ac0439d38c248"
+    },
+    {
+      "path": "course-app/tools/package-core.mjs",
+      "bytes": 8516,
+      "sha256": "cbd2a2d8e2bbe301bf8cfd4ec4137a5c84c8d927ab8de4cf8df8f99a34485d2a"
+    },
+    {
+      "path": "course-app/tools/package-unified.mjs",
+      "bytes": 13157,
+      "sha256": "0b7bdbfe136b17108f0b5ee5ec0413e96d1e9f6a87c084636b56009439ce1cdf"
+    },
+    {
+      "path": "course-app/tests/release-readiness.test.mjs",
+      "bytes": 13052,
+      "sha256": "efb2f3753dbe799d374b8fc962a24e65f8dc35d57c315417311ff47ddaa01cc9"
+    },
+    {
+      "path": "course-app/tests/package-unified.test.mjs",
+      "bytes": 11061,
+      "sha256": "4b6d3a1aa8badc67b9fce73eabda00c9aa755c1a0508430072e44f3b6e98e7c9"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-release-readiness/release-readiness.author-input.mjs",
+      "bytes": 13842,
+      "sha256": "ed4bc1b2c9b1004819dd2e8594ee2b91a58f7b54cf9a1ef13614d8860349c6b7"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-release-readiness/release-readiness.author-tests.mjs",
+      "bytes": 12293,
+      "sha256": "b8e65e423b08c924499445fc99e6bea9f47715a58a1cdf8695fcbf4eaf49424c"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-release-readiness/README.author-input.md",
+      "bytes": 8053,
+      "sha256": "582f2c595518d71734a26be0694eb4462cfcf9f18f8fb8d5b58d18a80c6089f9"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-release-readiness/root-review.json",
+      "bytes": 2126,
+      "sha256": "7736cf9f2a3e952135833aa734421d0ade061cd1f8d2543424b2679621dc0930"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-b10-release-readiness/targeted-root-tests.log",
+      "bytes": 2051,
+      "sha256": "e9b411a099f1ef1080f78da3c7eccd5a343d50da232a24f61cb8b58fdc2afea5"
+    },
+    {
+      "path": "course-app/docs/b10-release-readiness/unit-tests.log",
+      "bytes": 20166,
+      "sha256": "e521f8cfe78e7fe5cd3e2226dafb51cf8b935a9827a6c40d3b54231e7ac07d88"
+    },
+    {
+      "path": "course-app/docs/b10-release-readiness/verification-report.md",
+      "bytes": 4080,
+      "sha256": "d8dca6a538851784783151fc4ef6b9574498bb2db1fea1e7798e592d5927921c"
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly/hsk23_adapter_review",
+  "recordedAtUtc": "2026-10-04T21:01:20.328037+00:00",
+  "status": "independent-bounded-ci-candidate-accepted-not-executed",
+  "scope": "New private official VI adapter checkpoint workflow, its two wrapper configs, command logger, exact-head source/build records, result verifier and archive paths. Existing author source and old evidence unchanged.",
+  "localHead": "6f668b4f47ed22cffe0c02d1993263fb83b1304e",
+  "localTree": "10c12f0335a19c58ab47feb22c3fcb2dee5611ba",
+  "candidateInputs": [
+    {
+      "path": ".github/workflows/hsk-official-vi-adapter-checkpoint.yml",
+      "bytes": 5179,
+      "sha256": "caf2be409cdb11be21f576b195cdc026b4b97d4d987262d916f0dacf63408b2e"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/checkpoint-records.mjs",
+      "bytes": 10510,
+      "sha256": "aaed9f9a4d177e4fefb981a6b871b512e696c80ac8c666db09b68ba1762bf466"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs",
+      "bytes": 1902,
+      "sha256": "2f008699e8a0bc5feba11c706a7a5c3a30c895108f80da97753ce6f6463293b2"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/verify-native-results.mjs",
+      "bytes": 2501,
+      "sha256": "b30a8ca54bbeacb7f4e1ecf7d10fb7b52f9acb672dc2e34ae59ba7fe22a856b6"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/verify-native-results.test.mjs",
+      "bytes": 1733,
+      "sha256": "259521a18629bbfc056472b9ef5f3f2631dbd50483e2cc38b77dcb7d2052fec2"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk1.ci.config.ts",
+      "bytes": 986,
+      "sha256": "985d6a8b89ef89a3a23c7e991b3fcb1bb6fb001be7582977d3bf731bec804425"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk23.ci.config.ts",
+      "bytes": 949,
+      "sha256": "b5d342ecc7d66694687a53a6133092537e024cff873f3d90e7cad8f8d6a481ba"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/tsconfig.json",
+      "bytes": 344,
+      "sha256": "6e2be1bdcfbad5a89c3f6d0476281f3a77c861e38f9ebd523fb5ca15406f7aca"
+    },
+    {
+      "path": "hsk1-app/playwright.vi-presentation.config.ts",
+      "bytes": 998,
+      "sha256": "523ba3a598b72af4f76baaad5775184fdcd43f891a61c453fa454fc4058c0d0e"
+    },
+    {
+      "path": "hsk1-app/tests/browser/official-vi-history.spec.ts",
+      "bytes": 3181,
+      "sha256": "dbbd9833598106f2825d5e7654dba3ece5bd3eb042edd5db38fe45ad7732177d"
+    },
+    {
+      "path": "hsk1-app/tests/browser/fixtures/official-vi-history.html",
+      "bytes": 7303,
+      "sha256": "ac38a018f745c2373bd192e591a8cb3e0feab4079bd563f4a0b0ab2a318ec601"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-hsk23-adapter/playwright.history.config.ts",
+      "bytes": 796,
+      "sha256": "95ba895d132a35d1a3be25eefc9460d3804e75a0b345f408ad9c021251dc2e6e"
+    },
+    {
+      "path": "course-app/playwright.config.ts",
+      "bytes": 684,
+      "sha256": "e02e563322a654e0c9526ff8ae315cd6a4934073377be5e9f0e41437f7ae0503"
+    },
+    {
+      "path": "course-app/tests/unified/official-vi-history.spec.ts",
+      "bytes": 6068,
+      "sha256": "8ab850306d068a1c4b0cf6e88cb4441440847b67316ebd448b56f9301b3c31ce"
+    },
+    {
+      "path": "course-app/tools/package-unified.mjs",
+      "bytes": 13157,
+      "sha256": "0b7bdbfe136b17108f0b5ee5ec0413e96d1e9f6a87c084636b56009439ce1cdf"
+    },
+    {
+      "path": "course-app/tools/release-readiness.mjs",
+      "bytes": 13815,
+      "sha256": "4db18945e5c731dd6fcee60de0dc3056f609edfae01ed5dfe76ac0439d38c248"
+    },
+    {
+      "path": "course-app/package-lock.json",
+      "bytes": 40416,
+      "sha256": "689007b5345c99f014a0cee8382a5cb65e06a9945162e057bd46d6b32586d583"
+    },
+    {
+      "path": "hsk1-app/package-lock.json",
+      "bytes": 40071,
+      "sha256": "7ffba9da47e689f8e4ffd721aa1b69aa18cb27a83a7f65bb650e486dd68cbc55"
+    },
+    {
+      "path": "course-app/node_modules/playwright/lib/runner/index.js",
+      "bytes": 304701,
+      "sha256": "6dcf135a144b0f243848128bb68e0a25898b8ad764a34326f36ab45d9a9e1685"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/README.md",
+      "bytes": 5845,
+      "sha256": "95fdde06c64c6523991d92b34c00b120ac0752e8f8ae2bc3e6262dcde231696a"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/verify-workflow.py",
+      "bytes": 2970,
+      "sha256": "194136b9c7a775155f63587c37f9023211b79f98d41f96e5e5383af93288eb30"
+    }
+  ],
+  "findings": [],
+  "acceptedBySourceRead": [
+    "HSK1 native CLI comes from hsk1-app/node_modules; HSK1 wrapper imports the original HSK1 config without importing the course-app Playwright package. HSK1 test imports resolve under hsk1-app. HSK2/3 wrapper, original configs and tests use course-app Playwright.",
+    "Before requires checkout HEAD equal GITHUB_SHA; official and extended source snapshots are checked against actual HEAD Git blobs and file modes. Extended scopes include original/wrapper configs, test files and HSK1 harness HTML. Builds and after reject source drift; after rehashes full built output inventories.",
+    "Every required command has a separate stdout/stderr log, exit code, signal/spawn-error and SHA-bound log ref. The after phase reads all 18 required command files; absent, failed or corrupted command records cannot produce accepted after evidence.",
+    "Verifier rejects collection-only results, skips, retry/repeat configuration or actual retries, expected failures, failed/interrupted statuses, global/per-test errors, wrong project/engine/file, count mismatch, duplicated IDs and flaky statistics.",
+    "HSK1 tests explicitly consume an auth-free Vite source harness at 18911; its independent compiled dist is separately built and hashed. HSK2/3 tests consume the actual isolated compiled preview at 4179. Neither is described as full production release acceptance.",
+    "Both installed Playwright packages are lock/version checked at 1.62.1; browser revision descriptors must match; actual launch-entry existence/hash is recorded with explicit limitation that it is not all browser/system library bytes.",
+    "Upload paths contain the real per-engine command logs/records, before/builds/after or failure manifests, Playwright JSON, native output/screenshots/traces and specified HSK1 screenshots. Compiled HTML/JS/CSS/JSON consumers are included; full media/package bytes are not claimed by this partial consumer upload.",
+    "No deployment, merge or release command exists; successful after evidence explicitly keeps publicationApproved:false and deployed:false.",
+    "Before rejects any HSK_BROWSER_PATH override; font-install is also a required successful command. The actual final command-record set has 18 entries."
+  ],
+  "checksActuallyExecuted": {
+    "resultGuardUnits": {
+      "passed": 12,
+      "total": 12,
+      "exitCode": 0,
+      "log": {
+        "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-guard-units.log",
+        "bytes": 732,
+        "sha256": "77086050aa39a7a9da983f9ac0ec392822adec5a0d20b4204577b67fca82fca9"
+      }
+    },
+    "newFixtureTypes": {
+      "exitCode": 0,
+      "log": {
+        "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-typecheck.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "hsk1FixtureCollection": {
+      "logicalFixtures": 3,
+      "engineCasesCollected": 6,
+      "perEngine": 3,
+      "casesExecuted": 0,
+      "exitCode": 0,
+      "cli": "hsk1-app/node_modules/.bin/playwright",
+      "log": {
+        "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-hsk1-collection.log",
+        "bytes": 928,
+        "sha256": "baca34cd8dae9ecc87c2c2b0a6d3a1487b5407c8b04658d7dd858fefbf29fded"
+      }
+    },
+    "hsk23FixtureCollection": {
+      "logicalFixtures": 8,
+      "engineCasesCollected": 16,
+      "perEngine": 8,
+      "casesExecuted": 0,
+      "exitCode": 0,
+      "cli": "course-app/node_modules/.bin/playwright",
+      "log": {
+        "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-hsk23-collection.log",
+        "bytes": 2337,
+        "sha256": "b939894020b3c8709105c9e1d8f712213a3c06863bdb1a0108bdb89ead4059b5"
+      }
+    },
+    "finalCheckpointSyntax": {
+      "exitCode": 0,
+      "log": {
+        "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-final-guard-syntax.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "finalWorkflowStructure": {
+      "exitCode": 0,
+      "log": {
+        "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-final-workflow-structure.log",
+        "bytes": 496,
+        "sha256": "e4867f3731063e8b9a1b6ec259f72ae05d750257115914ba34894ff3396b598d"
+      }
+    }
+  },
+  "lockedReporterFormatProbe": {
+    "classification": "SYNTHETIC reporter FORMAT only; not native history/browser evidence",
+    "playwrightVersion": "1.62.1",
+    "pageFixtureUsed": false,
+    "browserLaunches": 0,
+    "realNativeHistoryCasesExecuted": 0,
+    "syntheticFormatterTestsExecuted": 1,
+    "passedReportAcceptedByVerifier": true,
+    "actualCollectionReportAcceptedByVerifier": false,
+    "logs": [
+      {
+        "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-run.log",
+        "bytes": 401,
+        "sha256": "7f524bdc385f333681d7f1192ad708b6e94bb5868f62352b6cf92797195af46c"
+      },
+      {
+        "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-collection.log",
+        "bytes": 163,
+        "sha256": "c27f529fe22738e3dedbf1dc125c9c70e9c23c409d40005f2f20bc24d7a7fe50"
+      },
+      {
+        "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-verifier.log",
+        "bytes": 776,
+        "sha256": "dc7a171203fc2297da45dc81f72fa9cea55bb9e2a0c75866e5d2464cdfa13dc0"
+      }
+    ],
+    "tempSourceInputs": [
+      {
+        "path": "course-app/.repro-output/b10-ci-independent-format/format.config.ts",
+        "bytes": 429,
+        "sha256": "786b3fe176a6de74c289e3bd1b1f420ca4ff9d3239a48600d3d2295f8648c350"
+      },
+      {
+        "path": "course-app/.repro-output/b10-ci-independent-format/official-vi-history.spec.ts",
+        "bytes": 152,
+        "sha256": "acd73ffbe0fa739de44fb09d7a2006af328357f29146649943447fe9d73ecf9a"
+      }
+    ],
+    "actualPassedReport": {
+      "ref": {
+        "path": "course-app/.repro-output/b10-ci-independent-format/format-passed-report.json",
+        "bytes": 3469,
+        "sha256": "d9bd92236d534a35d97cf2bccb5d7aa3f904f8e636a50550df979a21554a23f0"
+      },
+      "report": {
+        "config": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+            "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/node_modules/.bin/playwright",
+            "test",
+            "--config=course-app/.repro-output/b10-ci-independent-format/format.config.ts",
+            "--project=chromium"
+          ],
+          "configFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/.repro-output/b10-ci-independent-format/format.config.ts",
+          "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/.repro-output/b10-ci-independent-format",
+          "failOnFlakyTests": false,
+          "forbidOnly": false,
+          "fullyParallel": false,
+          "globalSetup": null,
+          "globalTeardown": null,
+          "globalTimeout": 0,
+          "grep": {},
+          "grepInvert": null,
+          "maxFailures": 0,
+          "metadata": {
+            "actualWorkers": 1
+          },
+          "preserveOutput": "always",
+          "projects": [
+            {
+              "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/.repro-output/b10-ci-independent-format/format-output",
+              "repeatEach": 1,
+              "retries": 0,
+              "metadata": {
+                "browserName": "chromium"
+              },
+              "id": "chromium",
+              "name": "chromium",
+              "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/.repro-output/b10-ci-independent-format",
+              "testIgnore": [],
+              "testMatch": [
+                "official-vi-history.spec.ts"
+              ],
+              "timeout": 30000
+            }
+          ],
+          "quiet": false,
+          "reporter": [
+            [
+              "list",
+              null
+            ],
+            [
+              "json",
+              {
+                "outputFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/.repro-output/b10-ci-independent-format/format-report.json"
+              }
+            ]
+          ],
+          "reportSlowTests": {
+            "max": 5,
+            "threshold": 300000
+          },
+          "shard": null,
+          "tags": [],
+          "updateSnapshots": "missing",
+          "updateSourceMethod": "patch",
+          "version": "1.62.1",
+          "workers": 1,
+          "webServer": null
+        },
+        "suites": [
+          {
+            "title": "official-vi-history.spec.ts",
+            "file": "official-vi-history.spec.ts",
+            "column": 0,
+            "line": 0,
+            "specs": [
+              {
+                "title": "SYNTHETIC report FORMAT only; no Page fixture and no browser execution",
+                "ok": true,
+                "tags": [],
+                "tests": [
+                  {
+                    "timeout": 30000,
+                    "annotations": [],
+                    "expectedStatus": "passed",
+                    "projectId": "chromium",
+                    "projectName": "chromium",
+                    "results": [
+                      {
+                        "workerIndex": 0,
+                        "parallelIndex": 0,
+                        "status": "passed",
+                        "duration": 5,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2026-10-04T20:54:43.974Z",
+                        "annotations": [],
+                        "attachments": []
+                      }
+                    ],
+                    "status": "expected"
+                  }
+                ],
+                "id": "8edc11bd99b40b574bcd-2142941a51063bf95a87",
+                "file": "official-vi-history.spec.ts",
+                "line": 2,
+                "column": 1
+              }
+            ]
+          }
+        ],
+        "errors": [],
+        "stats": {
+          "startTime": "2026-10-04T20:54:43.615Z",
+          "duration": 419.13100000000003,
+          "expected": 1,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        }
+      }
+    },
+    "actualCollectionReport": {
+      "ref": {
+        "path": "course-app/.repro-output/b10-ci-independent-format/format-collected-report.json",
+        "bytes": 2999,
+        "sha256": "44a448a26c0310aaca953702f18c60f19c9fc6a93836d74f2befe95766d00560"
+      },
+      "report": {
+        "config": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+            "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/node_modules/.bin/playwright",
+            "test",
+            "--config=course-app/.repro-output/b10-ci-independent-format/format.config.ts",
+            "--project=chromium",
+            "--list"
+          ],
+          "configFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/.repro-output/b10-ci-independent-format/format.config.ts",
+          "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/.repro-output/b10-ci-independent-format",
+          "failOnFlakyTests": false,
+          "forbidOnly": false,
+          "fullyParallel": false,
+          "globalSetup": null,
+          "globalTeardown": null,
+          "globalTimeout": 0,
+          "grep": {},
+          "grepInvert": null,
+          "maxFailures": 0,
+          "metadata": {},
+          "preserveOutput": "always",
+          "projects": [
+            {
+              "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/.repro-output/b10-ci-independent-format/format-output",
+              "repeatEach": 1,
+              "retries": 0,
+              "metadata": {
+                "browserName": "chromium"
+              },
+              "id": "chromium",
+              "name": "chromium",
+              "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/.repro-output/b10-ci-independent-format",
+              "testIgnore": [],
+              "testMatch": [
+                "official-vi-history.spec.ts"
+              ],
+              "timeout": 30000
+            }
+          ],
+          "quiet": false,
+          "reporter": [
+            [
+              "list",
+              null
+            ],
+            [
+              "json",
+              {
+                "outputFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/.repro-output/b10-ci-independent-format/format-report.json"
+              }
+            ]
+          ],
+          "reportSlowTests": {
+            "max": 5,
+            "threshold": 300000
+          },
+          "shard": null,
+          "tags": [],
+          "updateSnapshots": "missing",
+          "updateSourceMethod": "patch",
+          "version": "1.62.1",
+          "workers": 1,
+          "webServer": null
+        },
+        "suites": [
+          {
+            "title": "official-vi-history.spec.ts",
+            "file": "official-vi-history.spec.ts",
+            "column": 0,
+            "line": 0,
+            "specs": [
+              {
+                "title": "SYNTHETIC report FORMAT only; no Page fixture and no browser execution",
+                "ok": true,
+                "tags": [],
+                "tests": [
+                  {
+                    "timeout": 30000,
+                    "annotations": [],
+                    "expectedStatus": "passed",
+                    "projectId": "chromium",
+                    "projectName": "chromium",
+                    "results": [],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "8edc11bd99b40b574bcd-2142941a51063bf95a87",
+                "file": "official-vi-history.spec.ts",
+                "line": 2,
+                "column": 1
+              }
+            ]
+          }
+        ],
+        "errors": [],
+        "stats": {
+          "startTime": "2026-10-04T20:54:45.596Z",
+          "duration": 12.54000000000002,
+          "expected": 0,
+          "skipped": 1,
+          "unexpected": 0,
+          "flaky": 0
+        }
+      }
+    }
+  },
+  "pendingActualCI": {
+    "workflowDispatched": false,
+    "beforeBuildsAfterExecuted": false,
+    "realNativeCasesExecuted": 0,
+    "requiredNativeCasesPerEngine": 11,
+    "requiredNativeCasesBothEngines": 22,
+    "mustCommitCandidateBeforeCI": true,
+    "reason": "This review inspects the current authored workflow candidate; exact-HEAD snapshot and browser/build proofs must be generated by its real private GitHub CI checkout."
+  },
+  "notClaimed": [
+    "Real native Chromium/WebKit history execution",
+    "Exact-HEAD CI acceptance",
+    "Official Vietnamese textbook approval/activation",
+    "Whole production/student-package or full media acceptance",
+    "Deployment/publication authorization"
+  ],
+  "sourceMutations": 0,
+  "oldEvidenceMutations": 0,
+  "workflowMutations": 0,
+  "productionMutations": 0,
+  "writesScope": "b10-adapter-ci/independent-review.json, independent-review.md and independent-*.log; explicitly authorized synthetic reporter format files only under ignored temp output",
+  "logs": [
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-final-guard-syntax.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-final-workflow-structure.log",
+      "bytes": 496,
+      "sha256": "e4867f3731063e8b9a1b6ec259f72ae05d750257115914ba34894ff3396b598d"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-collection.log",
+      "bytes": 163,
+      "sha256": "c27f529fe22738e3dedbf1dc125c9c70e9c23c409d40005f2f20bc24d7a7fe50"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-run.log",
+      "bytes": 401,
+      "sha256": "7f524bdc385f333681d7f1192ad708b6e94bb5868f62352b6cf92797195af46c"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-verifier.log",
+      "bytes": 776,
+      "sha256": "dc7a171203fc2297da45dc81f72fa9cea55bb9e2a0c75866e5d2464cdfa13dc0"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-guard-units.log",
+      "bytes": 732,
+      "sha256": "77086050aa39a7a9da983f9ac0ec392822adec5a0d20b4204577b67fca82fca9"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-hsk1-collection.log",
+      "bytes": 928,
+      "sha256": "baca34cd8dae9ecc87c2c2b0a6d3a1487b5407c8b04658d7dd858fefbf29fded"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-hsk23-collection.log",
+      "bytes": 2337,
+      "sha256": "b939894020b3c8709105c9e1d8f712213a3c06863bdb1a0108bdb89ead4059b5"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/independent-typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "finalGuardDelta": {
+    "reviewKind": "read-only source/hash/syntax/static structure refresh; no additional native or synthetic formatter execution",
+    "priorCheckpointRecords": {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/checkpoint-records.mjs",
+      "bytes": 10358,
+      "sha256": "25ea6394c3adf3a99bfea14de5549b4bba8a70abf4e6e073ff388f2e3deb36a7"
+    },
+    "finalCheckpointRecords": {
+      "path": "course-app/docs/resume-20261004/b10-adapter-ci/checkpoint-records.mjs",
+      "bytes": 10510,
+      "sha256": "aaed9f9a4d177e4fefb981a6b871b512e696c80ac8c666db09b68ba1762bf466"
+    },
+    "beforeGuard": "process.env.HSK_BROWSER_PATH must equal undefined; any externally defined executable override fails before snapshot acceptance.",
+    "reason": "Author configs support HSK_BROWSER_PATH; rejecting it binds the recorded installed default launch-entry hash to the actual configured native launch target.",
+    "sourceAccepted": true,
+    "syntaxExitCode": 0,
+    "workflowStructureExitCode": 0
+  },
+  "reportFrozenAfterFinalGuardReview": true
+}

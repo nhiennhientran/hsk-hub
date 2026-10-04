@@ -2,6 +2,10 @@ import { el, button, copy } from "./dom.ts";
 import type { Lesson, Question, Copy } from "./types.ts";
 import type { State, ListeningRound } from "./state.ts";
 import { grade, isAnswered, type Attempt } from "./state.ts";
+/** A submitted attempt can only use its own saved question; missing is unknown. */
+export function listeningDisplayQuestion(current:Question,attempt:Attempt|undefined):Question|undefined {
+  return attempt ? attempt.questions?.find(saved=>saved.id===current.id) : current;
+}
 export function mountListening(
   host: HTMLElement,
   lessons: Lesson[],
@@ -159,18 +163,20 @@ export function mountListening(
     }
     const { q, lesson } = entry,
       attempt = round.submitted[id!],
-      question = attempt?.questions?.[0] ?? q;
+      question = listeningDisplayQuestion(q,attempt);
     roundStatus.textContent = `${round.index + 1} / ${round.queue.length} · 第${lesson.number}课 / Bài ${lesson.number} · 已提交 ${Object.keys(round.submitted).length} / ${round.queue.length}`;
     const card = el("div", undefined, "activity-card"),
-      title = el("h2", question.prompt),
-      plays = el(
+      title = el("h2", question?.prompt??copy("旧听力记录", "Bản ghi nghe cũ"));
+    card.dataset.questionSnapshot=attempt?(question?'saved':'missing'):'current';
+    card.append(title);
+    if(question){
+    const plays = el(
         "p",
         copy(
           `已成功播放${round.playCounts[id!] ?? 0}次`,
           `Đã phát thành công ${round.playCounts[id!] ?? 0} lần`,
         ),
       );
-    card.append(title);
     const play = button(copy("播放原音", "Phát âm thanh gốc"), async () => {
       if (playing || retired || submitting || !round) return;
       playing = true;
@@ -205,7 +211,7 @@ export function mountListening(
       radio.type = "radio";
       radio.name = id!;
       radio.value = String(index);
-      radio.checked = round.answers[id!] === index;
+      radio.checked = (attempt?attempt.answers[id!]:round.answers[id!]) === index;
       radio.disabled = !!attempt;
       radio.onchange = () => {
         if (round && !submitting) {
@@ -288,15 +294,25 @@ export function mountListening(
         ),
       );
       if (question.explanation) feedback.append(el("p", question.explanation));
-      const text = lesson.texts.find(
-        (t) => t.audioTrack === question.audioTrack,
-      );
-      if (text) {
-        feedback.append(el("h3", copy("听力原文", "Nguyên văn bài nghe")));
-        for (const line of text.lines)
-          feedback.append(el("p", line.zh, "chinese-line"), el("p", line.vi));
-      }
       card.append(feedback);
+    }
+    }else if(attempt){
+      const missing=el('section',undefined,'activity-feedback');
+      missing.dataset.missingQuestionSnapshot='true';
+      missing.append(el('p',copy('旧记录没有当时题目快照，保留原始作答值','Bản ghi cũ không có ảnh chụp câu hỏi; giữ giá trị trả lời gốc')),
+        el('p',`${id}: ${JSON.stringify(attempt.answers[id!])}`,'submitted-answer'),
+        el('p',attempt.assessment==='manual'?copy('原记录等待老师查看；不重新评分','Bản ghi chờ giáo viên xem; không chấm lại'):
+          copy(`原记录成绩：${attempt.correct}/${attempt.total}；不重新评分`,`Điểm đã lưu: ${attempt.correct}/${attempt.total}; không chấm lại`)));
+      card.append(missing);
+    }
+    if(attempt){
+      const text=lesson.texts.find(t=>t.audioTrack===(question?.audioTrack??q.audioTrack));
+      if(text){
+        const reference=el('section',undefined,'current-listening-reference');reference.dataset.currentTranscriptReference='true';
+        reference.append(el('h3',copy('当前课文参考（不是历史题目快照）','Tham khảo bài khóa hiện tại (không phải ảnh chụp câu hỏi cũ)')));
+        for(const line of text.lines)reference.append(el('p',line.zh,'chinese-line'),el('p',line.vi));
+        card.append(reference);
+      }
     }
     const pager = el("nav", undefined, "mixed-pager");
     const previous = button(copy("上一题", "Câu trước"), () => {

@@ -1,3 +1,5 @@
+import { captureListeningRound, commitListeningPresentation, reconcileViPresentation } from '../../services/content/vi-presentation-state.ts';
+import { defaultOfficialViRegistry, type OfficialViRegistry } from '../../services/content/official-vi-revisions.ts';
 import engine from '../practice/engine.js';
 import type { PracticeState } from '../types.ts';
 import type { ListeningCatalog } from '../../services/content/listening.ts';
@@ -10,6 +12,7 @@ interface ControllerOptions {
   catalog: ListeningCatalog;
   now?: () => number;
   random?: () => number;
+  viRegistry?: OfficialViRegistry;
 }
 const success: ListeningResult = { ok: true };
 const failed = (reason: string, message: string): ListeningResult => ({ ok: false, reason, message });
@@ -21,7 +24,7 @@ const errorResult = (error: unknown): ListeningResult => failed(
 );
 
 /** Pure view actions over the application's session: no media, timers or second store. */
-export function createListeningController({ session: learning, catalog, now = Date.now, random = Math.random }: ControllerOptions) {
+export function createListeningController({ session: learning, catalog, now = Date.now, random = Math.random, viRegistry = defaultOfficialViRegistry() }: ControllerOptions) {
   const { store } = learning;
   // The existing importer verifies the same question fingerprints used by grading.
   // Construction and reads never create an empty round or dirty saved data.
@@ -43,15 +46,21 @@ export function createListeningController({ session: learning, catalog, now = Da
       feedback: response.submission ? { answer: question.answer, correct: response.submission.correct, transcript: question.transcript,
         explanationVi: question.explanationVi, optionFeedback: question.optionFeedback, keywords: question.keywords, source: question.source } : null };
   }
-  function change(mutator: (practice: PracticeState) => void, navigate = false): ListeningResult {
+  function change(mutator: (practice: PracticeState) => void, navigate = false, action?: 'start' | 'submit'): ListeningResult {
     try {
       const before = store.snapshot().data, candidate = before.practice;
       const original = JSON.stringify(candidate);
+      const priorRecords = candidate.listening.records;
+      const previousRecords = action === 'submit' ? new Set(Object.keys(priorRecords)) : new Set<string>();
       mutator(candidate);
       const question = navigate ? current(candidate) : null;
       const navigation: Route | null = question ? { feature: 'listening', lesson: question.lesson } : before.navigation;
       if (original === JSON.stringify(candidate) && same(navigation, before.navigation)) return success;
-      store.edit(draft => { draft.practice = candidate; if (navigate) draft.navigation = navigation; });
+      store.edit(draft => { draft.practice = candidate; if (navigate) draft.navigation = navigation;
+        if (action === 'start') captureListeningRound(draft, catalog.listening, viRegistry);
+        if (action === 'submit') { const submitted = current(candidate); if (submitted?.submitted) commitListeningPresentation(draft, submitted.id, previousRecords.has(submitted.id)); }
+        reconcileViPresentation(draft);
+      });
       learning.requestSave();
       return success;
     } catch (error) { return errorResult(error); }
@@ -62,7 +71,7 @@ export function createListeningController({ session: learning, catalog, now = Da
       const stamp = now();
       engine.setPreferences(practice, { module: 'listening', ...(mode ? { listeningMode: mode } : {}) }, stamp);
       engine.createListeningSession(practice, catalog, { limit }, stamp, random);
-    }, true);
+    }, true, 'start');
     if (result.ok) listened.clear();
     return result;
   }
@@ -114,7 +123,7 @@ export function createListeningController({ session: learning, catalog, now = Da
       return change(practice => { engine.selectListening(practice, catalog, id, optionIndex, now()); });
     },
     submit(): ListeningResult {
-      return change(practice => { engine.submitListening(practice, catalog, now()); });
+      return change(practice => { engine.submitListening(practice, catalog, now()); }, false, 'submit');
     },
     move(position: number): ListeningResult {
       const round = listeningSession(state());

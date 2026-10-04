@@ -1,3 +1,5 @@
+import { captureHomeworkDraft, commitHomeworkPresentation, restartHomeworkPresentation, homeworkDisplaySnapshot } from '../../services/content/vi-presentation-state.ts';
+import { defaultOfficialViRegistry, type OfficialViRegistry } from '../../services/content/official-vi-revisions.ts';
 import engine from '../../domain/homework/engine.js';
 import type { SubmitResult } from '../../domain/homework/engine.js';
 import type { Answer, HomeworkState } from '../../domain/types.ts';
@@ -18,6 +20,7 @@ export interface ControllerOptions {
   part: HomeworkPart;
   now?: () => number;
   onChange?: () => void;
+  viRegistry?: OfficialViRegistry;
 }
 const equalAnswer = (left: Answer | undefined, right: Answer) => JSON.stringify(left) === JSON.stringify(right);
 const own = (object: object, key: string) => Object.prototype.hasOwnProperty.call(object, key);
@@ -29,6 +32,7 @@ export function createHomeworkController(options: ControllerOptions) {
   if (!lesson || !['choice', 'sort', 'translation'].includes(part)) throw new Error('Bài tập không hợp lệ.');
   const questions = lesson[part];
   const now = options.now ?? Date.now;
+  const viRegistry = options.viRegistry ?? defaultOfficialViRegistry();
   const changed = (mutator: (state: HomeworkState) => void) => {
     store.edit(data => { mutator(data.homework); data.homework.updatedAt = now(); });
     options.onChange?.();
@@ -70,7 +74,13 @@ export function createHomeworkController(options: ControllerOptions) {
       // Collecting an untouched textarea must not create a draft or an exit warning.
       // Clearing previously entered text still persists the explicit empty answer.
       if (question.kind === 'translation' && value === '' && current(state)?.draft[id] === undefined) return { ok: true };
-      if (!equalAnswer(current(state)?.draft[id], value)) changed(draft => { engine.group(draft, lesson.lesson, part).draft[id] = value; });
+      if (!equalAnswer(current(state)?.draft[id], value)) {
+        const before = store.snapshot().data;
+        const displayed = homeworkDisplaySnapshot(before, 'legacy', lesson.lesson, part, questions, 'draft', viRegistry);
+        const previousDraft = current(before.homework)?.draft ?? {};
+        store.edit(data => { engine.group(data.homework, lesson.lesson, part).draft[id] = value; data.homework.updatedAt = now(); captureHomeworkDraft(data, 'legacy', lesson.lesson, part, previousDraft, displayed); });
+        options.onChange?.();
+      }
       return { ok: true };
     },
     profile(field: 'name' | 'className', value: string): ActionResult {
@@ -97,7 +107,7 @@ export function createHomeworkController(options: ControllerOptions) {
       const stamp = now();
       const outcome = engine.submit(state, lesson.lesson, part, questions, stamp);
       if (!outcome.ok) return outcome;
-      store.edit(data => { engine.submit(data.homework, lesson.lesson, part, questions, stamp); });
+      store.edit(data => { const before = structuredClone(current(data.homework) ?? undefined); engine.submit(data.homework, lesson.lesson, part, questions, stamp); commitHomeworkPresentation(data, 'legacy', lesson.lesson, part, before); });
       options.onChange?.();
       return outcome;
     },
@@ -105,10 +115,11 @@ export function createHomeworkController(options: ControllerOptions) {
       const state = store.snapshot().data.homework;
       if (!engine.canOpen(state, lesson.lesson, part)) return { ok: false, reason: 'locked' };
       if (!current(state)?.attempt) return { ok: false, reason: 'invalid' };
-      changed(draft => {
-        const group = engine.restart(draft, lesson.lesson, part, now());
+      store.edit(data => {
+        const group = engine.restart(data.homework, lesson.lesson, part, now());
         if (part === 'sort') for (const question of lesson.sort) group.orders[question.id] = tokenOrder(question);
-      });
+        restartHomeworkPresentation(data, 'legacy', lesson.lesson, part);
+      }); options.onChange?.();
       return { ok: true };
     },
     isAnswered(id: string): boolean {

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-10-04T20:53:20.661490+00:00",
+  "HEAD": "6f668b4f47ed22cffe0c02d1993263fb83b1304e",
+  "activeRegistry": {
+    "schemaVersion": 1,
+    "active": null
+  },
+  "sourceFileCount": 26,
+  "sourceManifest": {
+    "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/source-files.json",
+    "bytes": 4886,
+    "sha256": "a2c2ecf7c2d43016fe804a6c291518718fa7b7bdc5cd783e3828f2051efd1894"
+  },
+  "registeredFieldProof": {
+    "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/registered-field-proof.json",
+    "bytes": 2430946,
+    "sha256": "eb529c392f14afc57b09637a06f6f653b6fdc4d2345c342a1b90b794f4cb855d"
+  },
+  "registeredFields": 5519,
+  "registeredOptionFields": 700,
+  "protectedAuthorityFiles": 10,
+  "buildManifest": {
+    "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/build-files.json",
+    "bytes": 107985,
+    "sha256": "6a0edd4ce3760402c86f44651f0ecd2019bb3112fdee58cbebee9ab6df72c4d9"
+  },
+  "cleanBuildFiles": 637,
+  "executions": [
+    {
+      "command": "node --experimental-strip-types --test hsk1-app/tests/official-vi-revisions.test.mjs hsk1-app/tests/vi-presentation-state.test.mjs",
+      "exitCode": 0,
+      "passed": 27,
+      "failed": 0,
+      "log": "course-app/docs/resume-20261004/b10-hsk1-adapter/targeted-unit.log"
+    },
+    {
+      "command": "npm run test --prefix hsk1-app",
+      "exitCode": 0,
+      "passed": 630,
+      "failed": 0,
+      "skipped": 0,
+      "log": "course-app/docs/resume-20261004/b10-hsk1-adapter/full-unit.log"
+    },
+    {
+      "command": "npm run check --prefix hsk1-app",
+      "exitCode": 0,
+      "log": "course-app/docs/resume-20261004/b10-hsk1-adapter/typecheck.log"
+    },
+    {
+      "command": "hsk1-app/node_modules/.bin/tsc -p hsk1-app/tsconfig.vi-presentation-tests.json",
+      "exitCode": 0,
+      "log": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-typecheck.log"
+    },
+    {
+      "command": "npm run build --prefix hsk1-app -- --outDir /workspace/scratch/28b55072841a/b10-hsk1-build",
+      "exitCode": 0,
+      "cleanedTaskSpecificDirectoryBeforeBuild": true,
+      "log": "course-app/docs/resume-20261004/b10-hsk1-adapter/build.log"
+    },
+    {
+      "command": "node --experimental-strip-types course-app/docs/resume-20261004/b10-hsk1-adapter/verify-evidence.mjs",
+      "exitCode": 0,
+      "mode": "readOnly",
+      "pointerMatches": 5519,
+      "protectedMatches": 10
+    }
+  ],
+  "collection": {
+    "uniqueCases": 3,
+    "engines": [
+      "chromium",
+      "webkit"
+    ],
+    "collected": 6,
+    "nativeExecuted": 0,
+    "log": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-collection.log"
+  },
+  "nativeLaunchEvidence": {
+    "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-launch-evidence.json",
+    "bytes": 2290,
+    "sha256": "16144a7b2f5ce3bf45c2d372a65b714322277ad45359307028206ddf2a8a1678"
+  },
+  "firstFixtureTypecheckFailureRetained": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-typecheck-before-node-types.log",
+  "independentFreezes": [
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/freeze-manifest.json",
+      "bytes": 1322,
+      "sha256": "5f88d3e07c6821bec31522d4e15159c88a749c11b0f8ddb113ffdf501fa15074"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/freeze-manifest.json",
+      "bytes": 2435,
+      "sha256": "d4e852d057eb47d157c32aa48e938c161107ac2b843a1aa063e14fe17663924a"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/freeze-manifest.json",
+      "bytes": 1997,
+      "sha256": "69d10ee5c726c0b9828e4089dde5f1e112b3954f6e1ae984dc55a263a80fc719"
+    }
+  ],
+  "v3Scope": "Only factory revisionId <=256 and one existing-test negative were changed after v2; independent v3 current checks and 256 actual-save/257 rejection, with v2 14 probes/mapper/collection explicitly inherited.",
+  "formalOfficialViAccepted": 0,
+  "activeAssetBranchExecuted": false,
+  "heldMetadata": [
+    "source.label raw/versioned",
+    "official POS and posLabel dedicated display fields",
+    "SVG and external legacy gzip bank and site dynamic templates outside this mapper"
+  ],
+  "noCommitOrDeploymentByAuthor": true
+}

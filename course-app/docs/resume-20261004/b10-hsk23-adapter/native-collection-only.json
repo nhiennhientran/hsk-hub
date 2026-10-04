@@ -1,0 +1,423 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "docs/resume-20261004/b10-hsk23-adapter/playwright.history.config.ts",
+      "--list"
+    ],
+    "configFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/b10-hsk23-adapter/playwright.history.config.ts",
+    "rootDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/unified",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/b10-hsk23-adapter/native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/unified",
+        "testIgnore": [],
+        "testMatch": [
+          "official-vi-history.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/b10-hsk23-adapter/native-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/tests/unified",
+        "testIgnore": [],
+        "testMatch": [
+          "official-vi-history.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/docs/resume-20261004/b10-hsk23-adapter/native-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-resume/course-app/",
+      "command": "npx vite preview --outDir .repro-output/b10-hsk23-adapter/dist --port 4179 --strictPort",
+      "url": "http://127.0.0.1:4179",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "official-vi-history.spec.ts",
+      "file": "official-vi-history.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "HSK2 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-3d921b9944d20ae48b34",
+          "file": "official-vi-history.spec.ts",
+          "line": 25,
+          "column": 2
+        },
+        {
+          "title": "HSK2 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-1b9ac743de7709155bbb",
+          "file": "official-vi-history.spec.ts",
+          "line": 54,
+          "column": 2
+        },
+        {
+          "title": "HSK2 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-bd2f96936ed700251389",
+          "file": "official-vi-history.spec.ts",
+          "line": 25,
+          "column": 2
+        },
+        {
+          "title": "HSK2 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-286ab5e95d5286d5d9a7",
+          "file": "official-vi-history.spec.ts",
+          "line": 54,
+          "column": 2
+        },
+        {
+          "title": "HSK3 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-bd81429c3934654a939f",
+          "file": "official-vi-history.spec.ts",
+          "line": 25,
+          "column": 2
+        },
+        {
+          "title": "HSK3 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-9aaf246b2040d9324562",
+          "file": "official-vi-history.spec.ts",
+          "line": 54,
+          "column": 2
+        },
+        {
+          "title": "HSK3 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-bbbdba2ce00d1585dd6d",
+          "file": "official-vi-history.spec.ts",
+          "line": 25,
+          "column": 2
+        },
+        {
+          "title": "HSK3 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-e1d2d1e495a3bbcbff8f",
+          "file": "official-vi-history.spec.ts",
+          "line": 54,
+          "column": 2
+        },
+        {
+          "title": "HSK2 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-db6e3f24f1b66290fd0e",
+          "file": "official-vi-history.spec.ts",
+          "line": 25,
+          "column": 2
+        },
+        {
+          "title": "HSK2 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-5f1111a1482bdef6f0d0",
+          "file": "official-vi-history.spec.ts",
+          "line": 54,
+          "column": 2
+        },
+        {
+          "title": "HSK2 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-516618216f30a6d28396",
+          "file": "official-vi-history.spec.ts",
+          "line": 25,
+          "column": 2
+        },
+        {
+          "title": "HSK2 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-e5686408c9aa28ab8a77",
+          "file": "official-vi-history.spec.ts",
+          "line": 54,
+          "column": 2
+        },
+        {
+          "title": "HSK3 listening saved snapshot keeps saved answers/score and separates current transcript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-6020f5a9ecc14db77c2d",
+          "file": "official-vi-history.spec.ts",
+          "line": 25,
+          "column": 2
+        },
+        {
+          "title": "HSK3 homework saved first receipt stays original while latest uses its own saved snapshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-554a0673cd2830ed3435",
+          "file": "official-vi-history.spec.ts",
+          "line": 54,
+          "column": 2
+        },
+        {
+          "title": "HSK3 listening missing snapshot keeps saved answers/score and separates current transcript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-75cc372ef11016300d8e",
+          "file": "official-vi-history.spec.ts",
+          "line": 25,
+          "column": 2
+        },
+        {
+          "title": "HSK3 homework missing first receipt stays original while latest uses its own saved snapshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "8edc11bd99b40b574bcd-87c22a7069bf72037466",
+          "file": "official-vi-history.spec.ts",
+          "line": 54,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T20:33:05.575Z",
+    "duration": 29.803000000000054,
+    "expected": 0,
+    "skipped": 16,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

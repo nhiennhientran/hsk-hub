@@ -1,3 +1,4 @@
+import { defaultOfficialViRegistry, loadOfficialViRegistry, type OfficialViRegistry } from './official-vi-revisions.ts';
 import {courseAssetBase} from './asset-base.ts';
 import type { AudioRequest } from '../audio/index.ts';
 import { reviseTextbookDisplay, type TextbookDisplayRevisionInfo } from './textbook-display-revisions.ts';
@@ -236,7 +237,7 @@ function freeze<T>(value: T): T {
 
 export function createTextbookContent(bookValue: unknown, mediaValue: unknown, catalogValue: unknown,
   audioURL: (trackId: string) => string = id => typeof document === 'undefined' ? `course-assets/audio/${id}.mp3` : new URL(`course-assets/audio/${id}.mp3`, courseAssetBase()).href,
-  displayRevisionValue?: unknown): TextbookContent {
+  displayRevisionValue?: unknown, officialVi: OfficialViRegistry = defaultOfficialViRegistry()): TextbookContent {
   const sourceLessons = freeze(structuredClone(validateTextbook(bookValue)));
   const media = freeze(structuredClone(validateMedia(mediaValue)));
   if (!row(catalogValue) || catalogValue.schemaVersion !== 1 || !commitHash(catalogValue.baseline) || !Array.isArray(catalogValue.vocabulary) || catalogValue.vocabulary.length !== 344) fail('Chỉ mục nghĩa từ không hợp lệ.');
@@ -278,7 +279,7 @@ export function createTextbookContent(bookValue: unknown, mediaValue: unknown, c
     }
   }
   const revised = displayRevisionValue === undefined ? undefined : reviseTextbookDisplay(sourceLessons, displayRevisionValue, String(bookValue.baseline));
-  const lessons = revised ? freeze(revised.lessons) : sourceLessons;
+  const lessons = freeze((revised?.lessons ?? sourceLessons).map(lesson => projectOfficialBookLesson(lesson, officialVi)));
   const lessonMap = new Map(lessons.map(lesson => [lesson.id, lesson]));
   const original = (track: OriginalTrack, label: string): TextbookAudio => ({ available: true, track, request: { url: audioURL(track.id), label, sourceKind: 'original' } });
   const segment = (track: OriginalTrack, start: number, end: number, label: string): TextbookAudio => ({ available: true, track, request: { url: audioURL(track.id), start, end, label, sourceKind: 'segment' } });
@@ -296,7 +297,7 @@ export function createTextbookContent(bookValue: unknown, mediaValue: unknown, c
     wordSenses(lessonId, wordId) {
       return findWord(lessonId, wordId)?.catalogIds.map(id => {
         const sense = senses.get(id)!;
-        return { catalogId: id, senseId: sense.senseId, senseZh: sense.senseZh, py: sense.py, vi: sense.vi, audio: senseAudio(sense) };
+        return { catalogId: id, senseId: sense.senseId, senseZh: sense.senseZh, py: sense.py, vi: officialVi.project(sense, sense.id, 'vocabulary').vi, audio: senseAudio(sense) };
       }) ?? [];
     },
     resolveScene(lessonId, sceneId) {
@@ -335,5 +336,15 @@ export async function loadTextbook(signal: AbortSignal): Promise<TextbookContent
     return response.json() as Promise<unknown>;
   }));
   if (signal.aborted) throw new DOMException('Module left.', 'AbortError');
-  return createTextbookContent(values[0], values[1], values[2], undefined, values[3]);
+  return createTextbookContent(values[0], values[1], values[2], undefined, values[3], await loadOfficialViRegistry(signal));
+}
+
+/** Display-only clone after existing source/Chinese revision validation. */
+export function projectOfficialBookLesson(raw: BookLesson, registry: OfficialViRegistry = defaultOfficialViRegistry()): BookLesson {
+  if (registry.revisionId === null) return raw;
+  const lesson = registry.project(raw, `textbook-l${String(raw.id).padStart(2, '0')}-title`, 'textbook');
+  const language = (item: LanguageItem): LanguageItem => { const shown = registry.project(item, item.id, 'textbook'); return { ...shown, examples: shown.examples.map((example, i) => registry.project(example, `${item.id}:example:${i + 1}`, 'textbook')) }; };
+  return { ...lesson, vocab: lesson.vocab.map(w => registry.project(w, w.id, 'textbook')),
+    scenes: lesson.scenes.map(scene => { const shown = registry.project(scene, scene.id, 'textbook'); return { ...shown, lines: shown.lines.map(line => registry.project(line, line.id, 'textbook')) }; }),
+    grammar: lesson.grammar.map(language), phonetics: lesson.phonetics.map(language), xiaoyuTips: lesson.xiaoyuTips.map(t => registry.project(t, t.id, 'textbook')) };
 }

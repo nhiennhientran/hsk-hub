@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "HEAD": "6f668b4f47ed22cffe0c02d1993263fb83b1304e",
+  "scope": "26 final source/config/test inputs for HSK1 B10 default-inactive adapter; unstaged runtime overlay on recorded HEAD",
+  "files": [
+    {
+      "file": "hsk1-app/content/official-vi-registry.json",
+      "bytes": 43,
+      "sha256": "6f323b55400c596663608b1a25d172f313f6388907d8c7eb889f2954b248c004"
+    },
+    {
+      "file": "hsk1-app/playwright.vi-presentation.config.ts",
+      "bytes": 998,
+      "sha256": "523ba3a598b72af4f76baaad5775184fdcd43f891a61c453fa454fc4058c0d0e"
+    },
+    {
+      "file": "hsk1-app/src/domain/listening/controller.ts",
+      "bytes": 9945,
+      "sha256": "281270a2bf35164f38f50eca6dee37204209387d296c2f5c16a80aa0be05fcf2"
+    },
+    {
+      "file": "hsk1-app/src/domain/types.ts",
+      "bytes": 2781,
+      "sha256": "79b2d72b3eb1578c4f685a8c6144a204fa3889e243c72c4e732b0b588299af17"
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive-data.ts",
+      "bytes": 5228,
+      "sha256": "adf9646230c856cbe0b30611277498ccfba7a950b4e18c592f86d77b01a9df21"
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive.ts",
+      "bytes": 14527,
+      "sha256": "7a96475f3d0c99baf4e16fcdfc8137dc7b6f05e717b1259d1c26a1aa96e4e78f"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/controller.ts",
+      "bytes": 7965,
+      "sha256": "d333f18fe625419ba088c86c9d24a14157ff5ff68861cb1aeaf806fc5bfa7839"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/controller30.ts",
+      "bytes": 6214,
+      "sha256": "4999a4546260a28efcc5ec054265004034ddbac107d4447ff947f5568505f824"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index.ts",
+      "bytes": 23705,
+      "sha256": "158e4307488bbf08bd410c8cf2cccaf09b7194337825993c306fcfdcddb3ddd3"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index30.ts",
+      "bytes": 27974,
+      "sha256": "c5b1db1092ddf3926e9b6ded68c501f350dc3c1bb9b7ebb9a63acad1d7a92b18"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/receipt.ts",
+      "bytes": 6501,
+      "sha256": "ee5aa392a3f7a382c702c856781af7780b55b57905ba94dbc20d6951013b08ca"
+    },
+    {
+      "file": "hsk1-app/src/features/listening/index.ts",
+      "bytes": 23712,
+      "sha256": "20bac7d6dcc51f450edf65939d78cce1d6ea4e720753653205a46e5ebdffad81"
+    },
+    {
+      "file": "hsk1-app/src/features/vocabulary/view.ts",
+      "bytes": 16860,
+      "sha256": "3baadbba67a046017e6f77bdec796e7cec9c8907779ab9219f99ceea8dfae5ed"
+    },
+    {
+      "file": "hsk1-app/src/services/content/index.ts",
+      "bytes": 1904,
+      "sha256": "6ad70e75d43afafd5643e5df7c55e0633e5b1ef3cecf737d260b05da12392c2d"
+    },
+    {
+      "file": "hsk1-app/src/services/content/listening.ts",
+      "bytes": 13032,
+      "sha256": "3fb45587a73f4829c4a2ea30c455a1f7f28567b8bc19ae59864d3160516e8d73"
+    },
+    {
+      "file": "hsk1-app/src/services/content/official-vi-revisions.ts",
+      "bytes": 25652,
+      "sha256": "c488eabcc22449a5734d28b75b5fdc0b91de2bfdf54427160bed38c9a9bf9f97"
+    },
+    {
+      "file": "hsk1-app/src/services/content/textbook.ts",
+      "bytes": 22058,
+      "sha256": "033d731e73a18b6d4a817eb1f327711fc49e46960a447076d4375f44da423d18"
+    },
+    {
+      "file": "hsk1-app/src/services/content/vi-presentation-state.ts",
+      "bytes": 19842,
+      "sha256": "1b9b11803d43325defd8c9819149d88290f548de697413a2371242657e8288fd"
+    },
+    {
+      "file": "hsk1-app/src/services/content/vocabulary.ts",
+      "bytes": 18191,
+      "sha256": "3647506c4532d74607716ef67271dab5a314ae25b8e4a18b5f4897cce1bb01a3"
+    },
+    {
+      "file": "hsk1-app/src/services/storage/compatibility.ts",
+      "bytes": 44659,
+      "sha256": "6a72f0792459e9744ce67b8b81a0c578daef12fcf2096ace1f274d136c6d9104"
+    },
+    {
+      "file": "hsk1-app/tests/browser/fixtures/official-vi-history.html",
+      "bytes": 7303,
+      "sha256": "ac38a018f745c2373bd192e591a8cb3e0feab4079bd563f4a0b0ab2a318ec601"
+    },
+    {
+      "file": "hsk1-app/tests/browser/official-vi-history.spec.ts",
+      "bytes": 3181,
+      "sha256": "dbbd9833598106f2825d5e7654dba3ece5bd3eb042edd5db38fe45ad7732177d"
+    },
+    {
+      "file": "hsk1-app/tests/helpers/official-vi-fixture.mjs",
+      "bytes": 3545,
+      "sha256": "9dfb2521275f2a80dc97e28d56612f35440e605dc445bc75177ba154b34794a9"
+    },
+    {
+      "file": "hsk1-app/tests/official-vi-revisions.test.mjs",
+      "bytes": 8076,
+      "sha256": "2fbdeef29cfb402a99d4df1607d8523e535794d0bebdabd0d4dfb8f257d8a4d8"
+    },
+    {
+      "file": "hsk1-app/tests/vi-presentation-state.test.mjs",
+      "bytes": 20281,
+      "sha256": "ea9fbea9eaa7d5efd1629e283d3e0b2313eb03a9477f1e2e02a42b90ddf401fe"
+    },
+    {
+      "file": "hsk1-app/tsconfig.vi-presentation-tests.json",
+      "bytes": 220,
+      "sha256": "f5b3552e461dddd69df226611a7e823f0e0329ba2fe473896dcae69b748034d7"
+    }
+  ]
+}

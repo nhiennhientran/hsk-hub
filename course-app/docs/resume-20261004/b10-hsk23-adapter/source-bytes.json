@@ -1,0 +1,982 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-04T20:30:50.933Z",
+  "candidate": "B10 HSK2/3 default-inactive dirty worktree build (not a release or CI head)",
+  "observedHead": "a74af8310a47bed541717d5e53c6052314207aab",
+  "rawBaselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+  "activeRegistry": {
+    "file": "course-app/content/official-vi-registry.json",
+    "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81",
+    "courses": {
+      "hsk2": null,
+      "hsk3": null
+    },
+    "activeChangeCount": 0
+  },
+  "rawSourceCount": 36,
+  "compiledRawSourceCount": 36,
+  "rawSources": [
+    {
+      "file": "course-app/content/course-index.json",
+      "bytes": 10528,
+      "sha256": "a435fc635ef5604c7b4ef4c6eb51eb58272987f06e76db9d879cd9c54ddf429d",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/course-index-CFabwrzu.js",
+      "compiledSHA256": "b04d368449c8a2de373f2c14c80ff8472bbcef1a935ac0cecf97ac9c9899f1bc",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2-lexicon.json",
+      "bytes": 134669,
+      "sha256": "ef5bfd9d4b03fd83e0eb735afca091ff3daa09dd1c5439f1e4453d118bef014c",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/hsk2-lexicon-wUvhkUMW.js",
+      "compiledSHA256": "2f042e419812bbd11144bd7ea090383dede3a38cc842f2963de25910f201bc6f",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-01.json",
+      "bytes": 173130,
+      "sha256": "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-01-B6y49trV.js",
+      "compiledSHA256": "da4d81ecb4e4c36367b18051c61e4f78f04d12f5e377dc78af387a482ba6cb85",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-02.json",
+      "bytes": 179840,
+      "sha256": "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-02-09Zu8o0d.js",
+      "compiledSHA256": "ecc7655f41790b48e9664e636c7b499f9d51b05e13b22fc60f9f2403b68716ec",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-03.json",
+      "bytes": 188281,
+      "sha256": "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-03-EwlaEipJ.js",
+      "compiledSHA256": "977a7f3a2d5ca11fe1d60a5028165068b2558aec67afc400c84b9b95fd794546",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-04.json",
+      "bytes": 169778,
+      "sha256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-04-BtdyS7b3.js",
+      "compiledSHA256": "6671833395112381bb31c4673ddbe3c84c105ac1443c1cc204a6cdbcffd9a8c4",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-05.json",
+      "bytes": 202034,
+      "sha256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-05-DebTCdfE.js",
+      "compiledSHA256": "c10a776afbb3f37388aab7aba61fd390edaf9de4b866b7936455ad982a9cfea6",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-06.json",
+      "bytes": 217562,
+      "sha256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-06-CMSvSq98.js",
+      "compiledSHA256": "9e315a0f46b8d634a64e2457846351c5ca9c984e894f63ef22cc8d42ed8f79b3",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-07.json",
+      "bytes": 183965,
+      "sha256": "15b9f36001307933da8120e66214e3b7a266640022f6953b67b174b2a9c78f4c",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-07-DrhdAyE7.js",
+      "compiledSHA256": "2556d46926819da1f1bfa69f793d863bf7a242b9f7ca931fa734135506ac3255",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-08.json",
+      "bytes": 187506,
+      "sha256": "90c7c19aac1d78ed62752356eefe09b6d3ee968c528c2008a53f0f2b1f96d00a",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-08-C-FQ2jVr.js",
+      "compiledSHA256": "d697e2a2994d6bbc3961dbf9efceef77ce314266e6ab6459842f0bd5fd2211ae",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-09.json",
+      "bytes": 215664,
+      "sha256": "55675df1ef69682537b7137e4f2ba19e2a311cf7738969ecd790dae62cc885aa",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-09-AP7lb0t0.js",
+      "compiledSHA256": "c2d0fccf51fc7da0fa520abb3f9e0537f9b13dfd54e4fab528b940508db1b7d2",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-10.json",
+      "bytes": 187727,
+      "sha256": "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-10-CzsyRwT3.js",
+      "compiledSHA256": "ce2ee4f39166a9f98e0eabcddb90022e644b36b5cc6e723361b1ebda442d46f2",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-11.json",
+      "bytes": 192945,
+      "sha256": "01ec965d7f18d41c5c91c053f93544b24c971303ed8b4ca6afd2ad2c03d48ff8",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-11-JwG7bNPw.js",
+      "compiledSHA256": "7e8e3a2515b734375308b84f970cba76ba4f64f41a30c2ca51b0bb92f0aa7916",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-12.json",
+      "bytes": 207573,
+      "sha256": "c64d2e1bc3dac399f1737338e70474d8ea8559c2aa65207290a515804a97e702",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-12-CQf_4N30.js",
+      "compiledSHA256": "70cd0cc969cf3ba8348d263ce46babc46abd80e27773f53e4a733507616751ec",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-13.json",
+      "bytes": 186234,
+      "sha256": "06d5d9e3f096ffe189f8d8214ba5582db9912e776e9ce3cee55d4fbd928057e1",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-13-Di1u_uT9.js",
+      "compiledSHA256": "bc97c4b6f1acd3c8e654b1a38f773c8cc338f554abcf6ecd127b31cecf3043c8",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-14.json",
+      "bytes": 191389,
+      "sha256": "74d7a43cbed89ddf152a840d3c5bc06e8200c975fa1de5e9bf4223e227d52e0f",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-14-DLzfaxX-.js",
+      "compiledSHA256": "49ff028700b884d162b99d402f8b3d90fee115c678d3e84ee22aee00b51697ff",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-15.json",
+      "bytes": 204327,
+      "sha256": "299a8d8cf8f90e721d8a8c8b0ca24d7c33d759949166cab1edd2eeddf00ae907",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-15-Dbn5g1yN.js",
+      "compiledSHA256": "ec5a92be11facfd4964dba73a8054bd693198b9a6c1d2cfa934387831ec7a189",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3-lexicon.json",
+      "bytes": 308891,
+      "sha256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/hsk3-lexicon-i9XNkSdh.js",
+      "compiledSHA256": "f77a4b359080a5d41aecf16fc515a001204d6276beb89d5900ace109e8bb1374",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-01.json",
+      "bytes": 228151,
+      "sha256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-01-D4ntTNNS.js",
+      "compiledSHA256": "58919d77dcaf9f957bab26be462718127ee4aa61d28d65404b0dd5db9684025b",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-02.json",
+      "bytes": 265729,
+      "sha256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-02-D17a6gXc.js",
+      "compiledSHA256": "904e06e59fe3eaf04bd078ab569848e845e1408901cc01e625c2188570d9f36b",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-03.json",
+      "bytes": 293275,
+      "sha256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-03-6BI1MIjF.js",
+      "compiledSHA256": "41f11b4a9787eb9919199a7cb2f7ff5ae1eb56db66fa1c5bf58eaf1c15ea5bbe",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-04.json",
+      "bytes": 264969,
+      "sha256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-04-CQ8HqNvE.js",
+      "compiledSHA256": "a8c3c95b384d6351bebda7a286b27b7ae43ce39d620f98a7539819b4c3a0cba8",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-05.json",
+      "bytes": 286418,
+      "sha256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-05-BlBN05UY.js",
+      "compiledSHA256": "e3c1b742bd9023c8bccb94a0530c7095232e1fe9fb6bdf5093fffdd0723dd020",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-06.json",
+      "bytes": 302605,
+      "sha256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-06-C-5GFuBQ.js",
+      "compiledSHA256": "c2661e100207e05615e36c4b17957b4106a66cd0eb644bb2d62b98c9ce3e4a6b",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-07.json",
+      "bytes": 299957,
+      "sha256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-07-P-ybnya4.js",
+      "compiledSHA256": "0b4ea896992d00787b4ecf041ad03b8b3a13e04b9e54584cee6142bc55f28875",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-08.json",
+      "bytes": 263568,
+      "sha256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-08-Bo-t8qts.js",
+      "compiledSHA256": "bc8131c79024e69afbfd615840a8fded075354bee06ce9ebbf21d19e8ec5fe83",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-09.json",
+      "bytes": 283177,
+      "sha256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-09-B98faFOI.js",
+      "compiledSHA256": "a18b0b0e4a2531ee4fdb1cc633e25857bd6f1d125c8b4c255fd98473492dfe83",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-10.json",
+      "bytes": 268432,
+      "sha256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-10-C1CqfBx5.js",
+      "compiledSHA256": "8dc0c01e1684d7cdc44262e9650e298401586c2ed37358d395e4a1730bdac105",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-11.json",
+      "bytes": 265670,
+      "sha256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-11-DsggHZh3.js",
+      "compiledSHA256": "1b274b11bef1f766df3b60bac32d31e5c8d2e2e62c50e0482c9cc23cb68a1efc",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-12.json",
+      "bytes": 280035,
+      "sha256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-12-CRiO_jtq.js",
+      "compiledSHA256": "d04e7f4b4f0af790db6c7f4c63db157b2845a92dc2b50602c0d4d1aaf1fce19f",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-13.json",
+      "bytes": 235627,
+      "sha256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-13-SGHkdqj8.js",
+      "compiledSHA256": "dd2f2df29a68f399644693ebf6bbf4e167940e12638aa0213c9e261fd6e485ff",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-14.json",
+      "bytes": 233065,
+      "sha256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-14-CfUUOHo4.js",
+      "compiledSHA256": "62db8b07686161e203132874edc2cab2f9ef33bea9c74b543dc2e1ab03b85ab6",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-15.json",
+      "bytes": 282461,
+      "sha256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-15-BFO4WQRr.js",
+      "compiledSHA256": "936ce5dd82046fc149cb05517ed684a371dae561d76bc08755c1df2d906f0b52",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-16.json",
+      "bytes": 232222,
+      "sha256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-16-DLAde_AX.js",
+      "compiledSHA256": "6b5dcabff7944a79386ff5811dbae523a34d9b2a046ed5c02931fcf9450ab167",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-17.json",
+      "bytes": 246292,
+      "sha256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-17-B7nDVG_1.js",
+      "compiledSHA256": "ef053069e4240dd6afcc917d0cd5caf4f80ebe8c22dc67b048f4e14613b4513a",
+      "compiledDecodedBytesEqual": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-18.json",
+      "bytes": 288224,
+      "sha256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53",
+      "baselineCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+      "baselineBytesEqual": true,
+      "compiledFile": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-18-bT4fWwB0.js",
+      "compiledSHA256": "f9e31027ade81095b289d19b94a6a56553e389d1c7698008aa1e86d4c30c6147",
+      "compiledDecodedBytesEqual": true
+    }
+  ],
+  "ownedInputs": [
+    {
+      "file": "course-app/src/official-vi-revisions.ts",
+      "bytes": 18776,
+      "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f"
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "bytes": 8228,
+      "sha256": "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2"
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "bytes": 13190,
+      "sha256": "9637ebb3fd62546924b45a97407f3ed19ab634e647cc9b4812adfc1e1925bb70"
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "bytes": 62262,
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744"
+    },
+    {
+      "file": "course-app/tests/official-vi-revisions.test.mjs",
+      "bytes": 15689,
+      "sha256": "baa377e7865382f09e66edcaa5d3b1265c88303ffab3ec642c09cc10db2e360b"
+    },
+    {
+      "file": "course-app/tests/unified/official-vi-history.spec.ts",
+      "bytes": 6068,
+      "sha256": "8ab850306d068a1c4b0cf6e88cb4441440847b67316ebd448b56f9301b3c31ce"
+    },
+    {
+      "file": "course-app/content/official-vi-registry.json",
+      "bytes": 80,
+      "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81"
+    }
+  ],
+  "compiledConsumers": {
+    "count": 111,
+    "files": [
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/archive-BMfTkVw2.css",
+        "bytes": 1934,
+        "sha256": "d50fc8a0bc03a7f042190dd829011eb135eff4305b89ca4410317d1d74207269"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/archive-C3xfUBeV.js",
+        "bytes": 21223,
+        "sha256": "be05b70d69082c2e5fd77924685928efe5215d60481ddf87525adaba6714bfa2"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/asset-base-DAkFL0yR.js",
+        "bytes": 160,
+        "sha256": "2113321c6b36c08b797463a2839f5ef7702682eda07616a8f37a28a26a5c2d1f"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/audio-segments-hsk2-lessons02-03-DhnzM86H.js",
+        "bytes": 112987,
+        "sha256": "c93f9879a712a6ab7fd2d75a4b022db0aaa3643f20d370ad353adce4e203a2e0"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/audio-segments-hsk2-reviewed-sentences-bwYi0Zbf.js",
+        "bytes": 5118,
+        "sha256": "0119e817392d9f025760faeded680989ceb9379436f6a895c5537cce5cc92ab9"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/audio-segments-pilot-vPaBRnCF.js",
+        "bytes": 101167,
+        "sha256": "b2d8cda0aeac7efc3fde250440156a2497fa6dc8690c940ac98e1cc9d12286a4"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/backup-view-BwZ57veX.js",
+        "bytes": 9026,
+        "sha256": "43ff3a2bba74ee018768cd1de664b47c880736359e9d5cac8987467265b3161f"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/bilingual-YzyU8AOp.js",
+        "bytes": 550,
+        "sha256": "1d3486eaf4f448c320b976113efc3c70e1fffd251d96036a62695e09771b9200"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/browser-pair-CAsuPMwd.js",
+        "bytes": 10817,
+        "sha256": "5bf64254986863bff1f9c8fa2e3286b8b7362bd858d52f46843b21567203ac14"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/catalogue-C_U9rwbD.js",
+        "bytes": 4814,
+        "sha256": "459c0867aca0f0a7fc39319ccda741ce11630fc45bbc1c753ca404dc8ab39afb"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/compatibility-CUgfSqgP.js",
+        "bytes": 36806,
+        "sha256": "be97fbd9c5f45980d57bdf3073220a8f230198bf33d8bb9cb20ffd9d7eee42bc"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/content-C-612pfL.js",
+        "bytes": 1030,
+        "sha256": "769dc8d3067b29ce2b3232dbc1b334e16aadff2f1745898f4eeb08098db4b130"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/content-ChH95uYd.js",
+        "bytes": 852809,
+        "sha256": "7ab0329058ffadec4129669015fd79b2d876cea3b604380bb778e02c2a0c951f"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/copy-yY9kyqvF.js",
+        "bytes": 18330,
+        "sha256": "61a0b44cf8d418601e624fd7c8c14f173ad6567af252fdc46bd7e1fdea08e4da"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/course-index-BKGnz4SX.json",
+        "bytes": 4870,
+        "sha256": "aeb5db3563e5d606a7b9fd045ae0f7f61994a9b03efd5a96f1b1e9099f482bb0"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/course-index-C5j4sptp.js",
+        "bytes": 4900,
+        "sha256": "a140bb9c2386a8905d2710a731b36fe1fbb095a2f41dc9bc1bc16b07308503a6"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/course-index-CFabwrzu.js",
+        "bytes": 10558,
+        "sha256": "b04d368449c8a2de373f2c14c80ff8472bbcef1a935ac0cecf97ac9c9899f1bc"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/data-panel-BgEWndCN.css",
+        "bytes": 3563,
+        "sha256": "43139a3da66713b11897954317bea2df9c7e28141bc855fc360c62df8f7ef21b"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/data-panel-CPtECwfO.js",
+        "bytes": 9013,
+        "sha256": "f33c262f436eef4bf1750dd0954aa7b552c0b07064884242a86dd2fcbc477520"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/dom-D5nfjciS.js",
+        "bytes": 515,
+        "sha256": "bf46b056180c5e4b7241b3952bd6b99e0e8fac60b00f1951100f405e13a71e56"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/engine-BAT6QHsN.js",
+        "bytes": 16100,
+        "sha256": "7fc5a27abae69a82aa8c1a1399867cbe64dd774cc7851a2980818bebff9759ee"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/engine-CBi3sj57.js",
+        "bytes": 5900,
+        "sha256": "b60d98b836d95e191dcc39ce42f5ec9485b3c0f86cae4ee6e70d75f94c73b3ab"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/engine-DJNGzNN8.js",
+        "bytes": 22152,
+        "sha256": "14f10d950a3a02fa4b3880ad7f0f7faec1d78d49f432577fe7511e18da01bcf9"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/hanzi-By-0zASG.js",
+        "bytes": 55111,
+        "sha256": "7e4dd309181c3a27397c5dd8f0a45f5c3b96d60ef866973aa4727b0a86ab2bc0"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/hanzi-D0sNO2-t.css",
+        "bytes": 2246,
+        "sha256": "1c416a8c4325cab51823890036525153d17c189343ff437c935a614bcf8768a5"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/home-Bo2AbWeG.js",
+        "bytes": 4320,
+        "sha256": "b42361769b61bc4514ccf1d2c0d5d6ce05fb20a8353814af781f98c53041a369"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/homework-8E-U9jBU.css",
+        "bytes": 8119,
+        "sha256": "7452ac18b71b1de89f9a0f16d6eaa1246b6bcfc66caa46f640861ff8b4cbcc35"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/homework-C7rR7QKa.js",
+        "bytes": 1811,
+        "sha256": "6422eb051a86397075865aecc292579e6a6600ad4f9f0fe31c1b20acccfbe8fb"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/homework-jl0Ml38q.js",
+        "bytes": 36529,
+        "sha256": "484b048ba525556d776fa0afd6866ad7ad8d0a3b8f8dd0064259815eea44775b"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/homework30-bank-Bti0xGBV.js",
+        "bytes": 854251,
+        "sha256": "fed00ddcf71b70347c899f5fee21183362de2c8af115ffb2da129bbe84bca3c2"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/homework30-BVBKAbRf.js",
+        "bytes": 613907,
+        "sha256": "85dd10b8fa9330a94e92395842b8fa9ed4ea421f757eac9cd33d3ee6b482cfbd"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/hsk2-lexicon-wUvhkUMW.js",
+        "bytes": 134699,
+        "sha256": "2f042e419812bbd11144bd7ea090383dede3a38cc842f2963de25910f201bc6f"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/hsk3-lexicon-i9XNkSdh.js",
+        "bytes": 308921,
+        "sha256": "f77a4b359080a5d41aecf16fc515a001204d6276beb89d5900ace109e8bb1374"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/index-CqoucPNO.css",
+        "bytes": 34617,
+        "sha256": "36130c3b77dbeeebeb6843229061aa5e7469ccc29d5e59c01b5a49c45e437796"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/index-DvDOimcW.js",
+        "bytes": 343786,
+        "sha256": "90f82a5b8ce7f31d30f22a51dc5557f9f889424b740f6c2eb5ec565d42ff62c1"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/legacy-exercises-BfEaU4Qq.js",
+        "bytes": 446693,
+        "sha256": "873f49c7873b08997b1c4d23cefad758d2b266e3e491977df885a0ab3eb1c61d"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/legacy-exercises-Bz3UuW2N.js",
+        "bytes": 326821,
+        "sha256": "da739d5fda6eb23cdcf1a592e492e4d516c3cd91385e1b144cee06585409af3e"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-01-B6y49trV.js",
+        "bytes": 173178,
+        "sha256": "da4d81ecb4e4c36367b18051c61e4f78f04d12f5e377dc78af387a482ba6cb85"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-01-D4ntTNNS.js",
+        "bytes": 228181,
+        "sha256": "58919d77dcaf9f957bab26be462718127ee4aa61d28d65404b0dd5db9684025b"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-02-09Zu8o0d.js",
+        "bytes": 179888,
+        "sha256": "ecc7655f41790b48e9664e636c7b499f9d51b05e13b22fc60f9f2403b68716ec"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-02-D17a6gXc.js",
+        "bytes": 265759,
+        "sha256": "904e06e59fe3eaf04bd078ab569848e845e1408901cc01e625c2188570d9f36b"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-03-6BI1MIjF.js",
+        "bytes": 293306,
+        "sha256": "41f11b4a9787eb9919199a7cb2f7ff5ae1eb56db66fa1c5bf58eaf1c15ea5bbe"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-03-EwlaEipJ.js",
+        "bytes": 188347,
+        "sha256": "977a7f3a2d5ca11fe1d60a5028165068b2558aec67afc400c84b9b95fd794546"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-04-BtdyS7b3.js",
+        "bytes": 169824,
+        "sha256": "6671833395112381bb31c4673ddbe3c84c105ac1443c1cc204a6cdbcffd9a8c4"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-04-CQ8HqNvE.js",
+        "bytes": 264999,
+        "sha256": "a8c3c95b384d6351bebda7a286b27b7ae43ce39d620f98a7539819b4c3a0cba8"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-05-BlBN05UY.js",
+        "bytes": 286450,
+        "sha256": "e3c1b742bd9023c8bccb94a0530c7095232e1fe9fb6bdf5093fffdd0723dd020"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-05-DebTCdfE.js",
+        "bytes": 202074,
+        "sha256": "c10a776afbb3f37388aab7aba61fd390edaf9de4b866b7936455ad982a9cfea6"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-06-C-5GFuBQ.js",
+        "bytes": 302637,
+        "sha256": "c2661e100207e05615e36c4b17957b4106a66cd0eb644bb2d62b98c9ce3e4a6b"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-06-CMSvSq98.js",
+        "bytes": 217602,
+        "sha256": "9e315a0f46b8d634a64e2457846351c5ca9c984e894f63ef22cc8d42ed8f79b3"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-07-DrhdAyE7.js",
+        "bytes": 184009,
+        "sha256": "2556d46926819da1f1bfa69f793d863bf7a242b9f7ca931fa734135506ac3255"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-07-P-ybnya4.js",
+        "bytes": 299989,
+        "sha256": "0b4ea896992d00787b4ecf041ad03b8b3a13e04b9e54584cee6142bc55f28875"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-08-Bo-t8qts.js",
+        "bytes": 263602,
+        "sha256": "bc8131c79024e69afbfd615840a8fded075354bee06ce9ebbf21d19e8ec5fe83"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-08-C-FQ2jVr.js",
+        "bytes": 187546,
+        "sha256": "d697e2a2994d6bbc3961dbf9efceef77ce314266e6ab6459842f0bd5fd2211ae"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-09-AP7lb0t0.js",
+        "bytes": 215704,
+        "sha256": "c2d0fccf51fc7da0fa520abb3f9e0537f9b13dfd54e4fab528b940508db1b7d2"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-09-B98faFOI.js",
+        "bytes": 283213,
+        "sha256": "a18b0b0e4a2531ee4fdb1cc633e25857bd6f1d125c8b4c255fd98473492dfe83"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-10-C1CqfBx5.js",
+        "bytes": 268467,
+        "sha256": "8dc0c01e1684d7cdc44262e9650e298401586c2ed37358d395e4a1730bdac105"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-10-CzsyRwT3.js",
+        "bytes": 187775,
+        "sha256": "ce2ee4f39166a9f98e0eabcddb90022e644b36b5cc6e723361b1ebda442d46f2"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-11-DsggHZh3.js",
+        "bytes": 265701,
+        "sha256": "1b274b11bef1f766df3b60bac32d31e5c8d2e2e62c50e0482c9cc23cb68a1efc"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-11-JwG7bNPw.js",
+        "bytes": 192993,
+        "sha256": "7e8e3a2515b734375308b84f970cba76ba4f64f41a30c2ca51b0bb92f0aa7916"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-12-CQf_4N30.js",
+        "bytes": 207623,
+        "sha256": "70cd0cc969cf3ba8348d263ce46babc46abd80e27773f53e4a733507616751ec"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-12-CRiO_jtq.js",
+        "bytes": 280069,
+        "sha256": "d04e7f4b4f0af790db6c7f4c63db157b2845a92dc2b50602c0d4d1aaf1fce19f"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-13-Di1u_uT9.js",
+        "bytes": 186282,
+        "sha256": "bc97c4b6f1acd3c8e654b1a38f773c8cc338f554abcf6ecd127b31cecf3043c8"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-13-SGHkdqj8.js",
+        "bytes": 235657,
+        "sha256": "dd2f2df29a68f399644693ebf6bbf4e167940e12638aa0213c9e261fd6e485ff"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-14-CfUUOHo4.js",
+        "bytes": 233098,
+        "sha256": "62db8b07686161e203132874edc2cab2f9ef33bea9c74b543dc2e1ab03b85ab6"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-14-DLzfaxX-.js",
+        "bytes": 191435,
+        "sha256": "49ff028700b884d162b99d402f8b3d90fee115c678d3e84ee22aee00b51697ff"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-15-BFO4WQRr.js",
+        "bytes": 282495,
+        "sha256": "936ce5dd82046fc149cb05517ed684a371dae561d76bc08755c1df2d906f0b52"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-15-Dbn5g1yN.js",
+        "bytes": 204377,
+        "sha256": "ec5a92be11facfd4964dba73a8054bd693198b9a6c1d2cfa934387831ec7a189"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-16-DLAde_AX.js",
+        "bytes": 232253,
+        "sha256": "6b5dcabff7944a79386ff5811dbae523a34d9b2a046ed5c02931fcf9450ab167"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-17-B7nDVG_1.js",
+        "bytes": 246324,
+        "sha256": "ef053069e4240dd6afcc917d0cd5caf4f80ebe8c22dc67b048f4e14613b4513a"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/lesson-18-bT4fWwB0.js",
+        "bytes": 288259,
+        "sha256": "f9e31027ade81095b289d19b94a6a56553e389d1c7698008aa1e86d4c30c6147"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/listening-BXM9emsG.js",
+        "bytes": 19057,
+        "sha256": "66271385aa94ddc17713e6cb38c41405040597c263572c8cc65a9958ed390ba3"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/listening-DTyrhIy_.css",
+        "bytes": 5801,
+        "sha256": "89ed3f32c429c08bfaa4e98f4158eb6fe1ca330ad5996fc357021eee8dc44ef0"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/listening-QvAq2vtE.js",
+        "bytes": 6035,
+        "sha256": "0c2f08ac1b1b33eb0af75bec09ddf6fc73a128cf1630462a51a7b3d85ce2b502"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/listening-WWUnt6ag.js",
+        "bytes": 16464,
+        "sha256": "6561c19ab17aa2a3256d18f95b648acc6a7a0ac8a1a9006274fcfacddfee40a7"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/media-references-Bx99NyHN.js",
+        "bytes": 287095,
+        "sha256": "82046d1d395575d3809224937cb08e494fc35553e2d5ac898a9a27491dc4aa5a"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/media-references-DD5E_5K_.json",
+        "bytes": 287065,
+        "sha256": "d1c00b9706565fbb398b97490d51a1c3338349c2285c06e7ed8a04a68e2f656e"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/media-references-DyNdsQyY.js",
+        "bytes": 90,
+        "sha256": "61af06ff73f690e3914966250a1554d787c8f734e0c2b0bd60510694157e3662"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/mixed-state-7Oiw2hir.js",
+        "bytes": 3107,
+        "sha256": "e4f06ea03db00d108b7268ea9dcac02ec084035e9b0d97ffd542880029bc0efa"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/official-vi-registry-Bgu-m4P4.js",
+        "bytes": 73,
+        "sha256": "c4f1626c9f76700f0872c06221942adb5dbabfa5d2644db0f0d39402fde9e30f"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/official-vi-revisions-BA5dlrHQ.js",
+        "bytes": 17758,
+        "sha256": "57d773506d593518a87763773a1df7a2ff7e598975d10b9f24b10744c4236572"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/pair-panel-BMdc3XOu.js",
+        "bytes": 8413,
+        "sha256": "7db62d4d6d988313f8f8b23d9dfdd827f75c476b66072763a28c8b5f63e76b99"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/progress-DgeKDxiU.css",
+        "bytes": 1571,
+        "sha256": "f8ef402f526825fe2cccf5fcc5ed0519f1159a7ce4eda0b46a0c88febd9c0586"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/progress-JmbnlkA7.js",
+        "bytes": 3257,
+        "sha256": "5f4c94d142c3fcfae56faae7669faeb336f09af838ae8659edcb52c900625e1c"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/progress-Z7q2dzga.js",
+        "bytes": 24585,
+        "sha256": "cd263ee4667ed57e63658d28d67467ff8ed025d501a09d833aa6d893607d4ce6"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/review-7N7tp_Rc.js",
+        "bytes": 87,
+        "sha256": "3e19d824609e571f46ee68fc80e858c9310e61089f91aebf49a3ef943251e39b"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/rolldown-runtime-DK3Fl9T5.js",
+        "bytes": 158,
+        "sha256": "a526d1bb3288ef04d001028843220a24b0867a4edf8c685b69506d6525af36ff"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/session-CA__OqHl.js",
+        "bytes": 2329,
+        "sha256": "b33ad336aa2113170b53f8e3f9cfe997c6c3ed92e1b80897937af599de9e13fe"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/source-activities-Cz6XgW02.css",
+        "bytes": 4930,
+        "sha256": "39452d7796d71e2d7ec8a21fba21c002187e1b8486bc03b995c41f2101d1155f"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/source-activities-DmkPFiFG.js",
+        "bytes": 32564,
+        "sha256": "4ff3a30dd761ab5d4d57ab1a5a2b950df3f5fbc9958cb605d23bd68d1cc4c807"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/stage2-bank-Bjx02knS.js",
+        "bytes": 269686,
+        "sha256": "70631534c27c90111760ef9249aa1c7131b8616b0d8316fa0d8cfaa68ebf98a9"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/stage2-bank-DOB9KrMv.json",
+        "bytes": 269656,
+        "sha256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/stage3-catalog-BDgGKH7A.js",
+        "bytes": 88,
+        "sha256": "03ae0ef548f81ae114bc5d8bfb0c7f7ead897aea9d80a7dc44c6b52aca59f19c"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/stage3-catalog-Bs1Y2M7l.js",
+        "bytes": 384054,
+        "sha256": "5fe875fb593f18388df2fbdf34f5f080b51239c89423dad1313cb2f6684183d0"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/stage3-catalog-CH6Cx7h7.json",
+        "bytes": 384024,
+        "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/store-CFoTSSFL.js",
+        "bytes": 8982,
+        "sha256": "9cae4a7ed2944eedd844f381eafaf5c88df66ea2f71fe5f0cf6fc673dddb9970"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/textbook-B-DhCGfc.js",
+        "bytes": 33881,
+        "sha256": "a56f1c7c96b50e9074b16b070cb99db9f0546088836f866eb1c9df7c8979c9e9"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/textbook-BbZIwYbH.js",
+        "bytes": 21787,
+        "sha256": "900db86348b7b0ec3cc8f0142b96819634a15d79a67ba202b9eb3fe3d316e262"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/textbook-BGHTCm5n.css",
+        "bytes": 9575,
+        "sha256": "ab08e1ea1c370eb12e6351fe5ce5a7532d2c072761782535b6f18c2f591e1c5c"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/textbook-Bkb8B-ul.js",
+        "bytes": 741705,
+        "sha256": "b54dd0c5a540bc80a9870bf005a2a9b667c613ca3c61a3a93e0ee01e84855c7d"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/textbook-BNPI77hK.js",
+        "bytes": 82,
+        "sha256": "2cbf53413b43f72a93154f3c347417d7b917257d4b35939818ba0e541ddd0e22"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/textbook-display-revisions-CGs5GDJK.js",
+        "bytes": 100,
+        "sha256": "ef60f994e02188f970e6ceff85bd3afc0355ae7bfd04ba55fa2ecef8a0f6f7db"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/textbook-display-revisions-CnZaZMsm.js",
+        "bytes": 26169,
+        "sha256": "1fbca763da27870fd2af2bab513886c9aaaa780caef9ef404838684276b46d4f"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/textbook-display-revisions-DWScioD2.json",
+        "bytes": 26130,
+        "sha256": "3d3e325b587fd3b41fb11a908db6e74a37f2c9d95cac247a663112e71f8f9e55"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/textbook-ksDEYuz_.json",
+        "bytes": 741675,
+        "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/textbook-restored-targets-BYEde6lT.js",
+        "bytes": 1567,
+        "sha256": "a51d7d751f1f76ce21c0fb854c0cbb1218a8b9598891b94068477c04d1695fce"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/ui-BDbMx8KW.js",
+        "bytes": 383,
+        "sha256": "37ae44bde2f394888b8ccdffc01fe6b1b23e29b4bad4b5bab67ca9c917f36aeb"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/vi-presentation-state-CXHS71ya.js",
+        "bytes": 9767,
+        "sha256": "226b5b355435342410113ed54f017850b1b5fb28562e4b72ddd387990dd795f8"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/view-BdyVpCk-.js",
+        "bytes": 24259,
+        "sha256": "d4671162f921eafda590e16ca8217eaa34204db0b8633495a83206004df31b5c"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/view-BYaiqWuX.css",
+        "bytes": 6255,
+        "sha256": "58ed7b3742138d4744d74c97a5044fd181709cfaf1821cde9eb9cd55c717b2d5"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/assets/vocabulary-CyTfzj8J.js",
+        "bytes": 91,
+        "sha256": "f3abbab05332989b7f4e9d22c8f908f83f5bf2294cefe944e73a8d96f8f6ae1b"
+      },
+      {
+        "file": "course-app/.repro-output/b10-hsk23-adapter/dist/index.html",
+        "bytes": 457,
+        "sha256": "7933f63de21b03f834c3491237bb92ba10d44ee9ba6c22fd5fc69060c71a123d"
+      }
+    ]
+  },
+  "limitations": [
+    "Build includes other agents’ concurrent HSK1 adapter sources; this does not freeze the whole runtime tree.",
+    "No production publication or official Vietnamese acceptance occurs.",
+    "Historical native fixtures are only typechecked/collected locally; no browser execution is claimed."
+  ]
+}

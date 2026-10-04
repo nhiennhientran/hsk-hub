@@ -1,3 +1,4 @@
+import { loadOfficialViRegistry } from './official-vi-revisions.ts';
 import courseIndexURL from '../../../content/course-index.json?url';
 
 export interface LessonSummary {
@@ -32,5 +33,6 @@ export async function loadCourseIndex(signal: AbortSignal): Promise<readonly Les
     }
     ids.add(row.id);
   }
-  return value.lessons;
+  const registry = await loadOfficialViRegistry(signal);
+  return value.lessons.map(lesson => registry.project(lesson, `course-index-l${String(lesson.id).padStart(2, '0')}`, 'course-index'));
 }

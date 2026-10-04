@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "status": "prepared-and-statically-reviewed; exact-head native CI not yet triggered",
+  "generatedAt": "2026-10-04T21:03:15.875Z",
+  "observedLocalHead": "6f668b4f47ed22cffe0c02d1993263fb83b1304e",
+  "workflow": {
+    "file": ".github/workflows/hsk-official-vi-adapter-checkpoint.yml",
+    "bytes": 5179,
+    "sha256": "caf2be409cdb11be21f576b195cdc026b4b97d4d987262d916f0dacf63408b2e"
+  },
+  "triggerBranch": "work/hsk-b10-adapter-ci-20261004",
+  "plannedJobs": 2,
+  "plannedNativePerEngine": {
+    "hsk1": 3,
+    "hsk23": 8
+  },
+  "plannedActualNativeTotal": 22,
+  "actualNativeHistoryCasesExecuted": 0,
+  "localChecks": {
+    "workflowStructure": {
+      "exitCode": 0,
+      "proof": {
+        "file": "course-app/docs/resume-20261004/b10-adapter-ci/static-workflow.json",
+        "bytes": 496,
+        "sha256": "e4867f3731063e8b9a1b6ec259f72ae05d750257115914ba34894ff3396b598d"
+      }
+    },
+    "nodeScriptSyntax": {
+      "exitCode": 0,
+      "files": [
+        "checkpoint-records.mjs",
+        "run-command.mjs"
+      ]
+    },
+    "nativeReportRejectionUnits": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0,
+      "proof": {
+        "file": "course-app/docs/resume-20261004/b10-adapter-ci/report-guard-units.log",
+        "bytes": 735,
+        "sha256": "22d9ea1c287c0a86d2cbc6cd65ba43ef0200a1fb3f094a7fa38fde400df83fb7"
+      }
+    },
+    "fixtureTypecheck": {
+      "exitCode": 0,
+      "proof": {
+        "file": "course-app/docs/resume-20261004/b10-adapter-ci/typecheck.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "collectedCasesOnly": {
+      "hsk1": 6,
+      "hsk23": 16,
+      "executed": 0,
+      "proofs": [
+        {
+          "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk1-collection.log",
+          "bytes": 928,
+          "sha256": "baca34cd8dae9ecc87c2c2b0a6d3a1487b5407c8b04658d7dd858fefbf29fded"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk23-collection.log",
+          "bytes": 2337,
+          "sha256": "b939894020b3c8709105c9e1d8f712213a3c06863bdb1a0108bdb89ead4059b5"
+        }
+      ]
+    },
+    "readonlySourcePreflight": {
+      "exitCodes": [
+        0,
+        0,
+        0
+      ],
+      "proofs": [
+        {
+          "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk1-source-preflight.log",
+          "bytes": 467,
+          "sha256": "6c405ea0e6c912c51f194cda9e4bc5cd085d6c5ed4dfcaa6d7ce0ab0ef405722"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk1-fixtures-preflight.log",
+          "bytes": 240,
+          "sha256": "e8b09fdfbbd981ba37be07a3d9be83af479fb88bf9dc63faaa608a4e2c2dd35d"
+        },
+        {
+          "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk23-source-preflight.log",
+          "bytes": 15209,
+          "sha256": "9c515cc603e3abc4a13d3390a79da00d298be3a70078a09921279e580d4e43a0"
+        }
+      ],
+      "officialLanguageAcceptance": false
+    }
+  },
+  "independentReview": {
+    "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-review.json",
+    "bytes": 22905,
+    "sha256": "10ad12ed8f0023cf173ea65c4548695a72d9610c568caf118dd19a9678fe9d62"
+  },
+  "independentLockedReporterFormatProbe": {
+    "meaning": "Synthetic no-Page/no-browser test verifies locked reporter format only; collection JSON rejected",
+    "actualNativeHistoryCasesExecuted": 0,
+    "proof": {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-verifier.log",
+      "bytes": 776,
+      "sha256": "dc7a171203fc2297da45dc81f72fa9cea55bb9e2a0c75866e5d2464cdfa13dc0"
+    }
+  },
+  "inputFiles": [
+    {
+      "file": ".github/workflows/hsk-official-vi-adapter-checkpoint.yml",
+      "bytes": 5179,
+      "sha256": "caf2be409cdb11be21f576b195cdc026b4b97d4d987262d916f0dacf63408b2e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/README.md",
+      "bytes": 5845,
+      "sha256": "95fdde06c64c6523991d92b34c00b120ac0752e8f8ae2bc3e6262dcde231696a"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/checkpoint-records.mjs",
+      "bytes": 10510,
+      "sha256": "aaed9f9a4d177e4fefb981a6b871b512e696c80ac8c666db09b68ba1762bf466"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk1-collection.log",
+      "bytes": 928,
+      "sha256": "baca34cd8dae9ecc87c2c2b0a6d3a1487b5407c8b04658d7dd858fefbf29fded"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk1-fixtures-preflight.log",
+      "bytes": 240,
+      "sha256": "e8b09fdfbbd981ba37be07a3d9be83af479fb88bf9dc63faaa608a4e2c2dd35d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk1-source-preflight.log",
+      "bytes": 467,
+      "sha256": "6c405ea0e6c912c51f194cda9e4bc5cd085d6c5ed4dfcaa6d7ce0ab0ef405722"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk23-collection.log",
+      "bytes": 2337,
+      "sha256": "b939894020b3c8709105c9e1d8f712213a3c06863bdb1a0108bdb89ead4059b5"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk23-source-preflight.log",
+      "bytes": 15209,
+      "sha256": "9c515cc603e3abc4a13d3390a79da00d298be3a70078a09921279e580d4e43a0"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-final-guard-syntax.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-final-workflow-structure.log",
+      "bytes": 496,
+      "sha256": "e4867f3731063e8b9a1b6ec259f72ae05d750257115914ba34894ff3396b598d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-collection.log",
+      "bytes": 163,
+      "sha256": "c27f529fe22738e3dedbf1dc125c9c70e9c23c409d40005f2f20bc24d7a7fe50"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-run.log",
+      "bytes": 401,
+      "sha256": "7f524bdc385f333681d7f1192ad708b6e94bb5868f62352b6cf92797195af46c"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-verifier.log",
+      "bytes": 776,
+      "sha256": "dc7a171203fc2297da45dc81f72fa9cea55bb9e2a0c75866e5d2464cdfa13dc0"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-guard-units.log",
+      "bytes": 732,
+      "sha256": "77086050aa39a7a9da983f9ac0ec392822adec5a0d20b4204577b67fca82fca9"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-hsk1-collection.log",
+      "bytes": 928,
+      "sha256": "baca34cd8dae9ecc87c2c2b0a6d3a1487b5407c8b04658d7dd858fefbf29fded"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-hsk23-collection.log",
+      "bytes": 2337,
+      "sha256": "b939894020b3c8709105c9e1d8f712213a3c06863bdb1a0108bdb89ead4059b5"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-review.json",
+      "bytes": 22905,
+      "sha256": "10ad12ed8f0023cf173ea65c4548695a72d9610c568caf118dd19a9678fe9d62"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-review.md",
+      "bytes": 2908,
+      "sha256": "69c4f11860489963f5b7232833f7f8f695d6ef73f2c0b99f5e6fd764670aff0d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk1.ci.config.ts",
+      "bytes": 986,
+      "sha256": "985d6a8b89ef89a3a23c7e991b3fcb1bb6fb001be7582977d3bf731bec804425"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk23.ci.config.ts",
+      "bytes": 949,
+      "sha256": "b5d342ecc7d66694687a53a6133092537e024cff873f3d90e7cad8f8d6a481ba"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/report-guard-units.log",
+      "bytes": 735,
+      "sha256": "22d9ea1c287c0a86d2cbc6cd65ba43ef0200a1fb3f094a7fa38fde400df83fb7"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs",
+      "bytes": 1902,
+      "sha256": "2f008699e8a0bc5feba11c706a7a5c3a30c895108f80da97753ce6f6463293b2"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/static-workflow.json",
+      "bytes": 496,
+      "sha256": "e4867f3731063e8b9a1b6ec259f72ae05d750257115914ba34894ff3396b598d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/tsconfig.json",
+      "bytes": 344,
+      "sha256": "6e2be1bdcfbad5a89c3f6d0476281f3a77c861e38f9ebd523fb5ca15406f7aca"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/verify-native-results.mjs",
+      "bytes": 2501,
+      "sha256": "b30a8ca54bbeacb7f4e1ecf7d10fb7b52f9acb672dc2e34ae59ba7fe22a856b6"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/verify-native-results.test.mjs",
+      "bytes": 1733,
+      "sha256": "259521a18629bbfc056472b9ef5f3f2631dbd50483e2cc38b77dcb7d2052fec2"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/verify-workflow.py",
+      "bytes": 2970,
+      "sha256": "194136b9c7a775155f63587c37f9023211b79f98d41f96e5e5383af93288eb30"
+    }
+  ],
+  "requiredCIIdentity": [
+    "actual checkout HEAD===GITHUB_SHA and tree recorded",
+    "all official runtime and extended build/fixture bytes/modes equal actual HEAD before and after",
+    "no external HSK_BROWSER_PATH override",
+    "actual two locked PW copies1.62.1 and identical browser descriptors/default launch-entry hash",
+    "all18 command exit0 plus exact stdout log SHA",
+    "both build inventories unchanged",
+    "actual3+8 JSON results per matrix engine, no collection/skip/retry/error/flaky"
+  ],
+  "pending": [
+    "Parent freezes and uploads exact candidate commit/tree/ref.",
+    "Parent triggers new private branch CI.",
+    "Independent acceptance reads actual22 native results, source snapshots, manifests and uploaded consumer bytes."
+  ],
+  "productionPublished": false,
+  "publicationApproval": false,
+  "priorFrozenReportsModified": false
+}

@@ -1,0 +1,967 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "root",
+  "createdAt": "2026-10-04T21:18:11.881890+00:00",
+  "status": "B10 inactive runtime checkpoint author/independent current bytes verified; real native CI pending",
+  "parentLocalCommit": "6f668b4f47ed22cffe0c02d1993263fb83b1304e",
+  "parentRemoteCommit": "647d7a1449c35437d6e0b1a0ebf4db1a56fdac26",
+  "actualVerifiedReferences": 187,
+  "uniqueVerifiedFiles": 173,
+  "verifiedFiles": [
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/CI-INTEGRATION.md",
+      "bytes": 2027,
+      "sha256": "6e30cae73ec826d9cc56f9df84ee5c4370ec767347316350896da02211ef7993"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/README.md",
+      "bytes": 6026,
+      "sha256": "6d4f2f251b5cbec12e9233a9ab8f4f55be8491cb1abeef394d94ffd020072ee8"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/build-files.json",
+      "bytes": 107985,
+      "sha256": "6a0edd4ce3760402c86f44651f0ecd2019bb3112fdee58cbebee9ab6df72c4d9"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/build.log",
+      "bytes": 9268,
+      "sha256": "8f191815c2791a3bde20b00a69e321dc37fa05e02b1e31410bcdcdac97ef7c6b"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/execution-summary.json",
+      "bytes": 4221,
+      "sha256": "c372134262ad8e75afd59ff921599af6adf1671635abf2eb308d41eead3777e4"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/full-unit.log",
+      "bytes": 65381,
+      "sha256": "0f26ac3134392bc6aecf527e738e7bdf890dca390c4d88c7d44debb8f2153cf0"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-collection.log",
+      "bytes": 928,
+      "sha256": "baca34cd8dae9ecc87c2c2b0a6d3a1487b5407c8b04658d7dd858fefbf29fded"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-launch-blocked-results.json",
+      "bytes": 6710,
+      "sha256": "bf57e14d83876cd2e79ba0a8ca4a9f317ea950a23b40155487502dabc8a2ebf8"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-launch-evidence.json",
+      "bytes": 2290,
+      "sha256": "16144a7b2f5ce3bf45c2d372a65b714322277ad45359307028206ddf2a8a1678"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-output/official-vi-history-legacy-19443-raw-task-and-answer-visible-chromium/error-context.md",
+      "bytes": 547,
+      "sha256": "3f97dc7413266ea75200a75b41cd457ec6c3e34528e33ec6c17362820e39a0bb"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-output/official-vi-history-listen-6e55f-nd-text-after-native-reload-chromium/error-context.md",
+      "bytes": 549,
+      "sha256": "601372a7096fed2d8175ed8aea3fcc04420be7b69a1be0f5f2f567988c9ca19f"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-output/official-vi-history-synthe-09bda-ith-original-answer-indices-chromium/error-context.md",
+      "bytes": 572,
+      "sha256": "bc9fdeb70a223979acd236551c485e1511ddb854f29c516ce0bd15848a7e1017"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-typecheck-before-node-types.log",
+      "bytes": 956,
+      "sha256": "6d1278510aeba6ec25176012b547cea6fa61a3f40dfd090d70e7f45f9c5d47d6"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/protected-before.json",
+      "bytes": 2090,
+      "sha256": "6861974631b031a3c28fef22d35048f35e1738f8629b4b0504ff4ea0dd14ec35"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/registered-field-proof.json",
+      "bytes": 2430946,
+      "sha256": "eb529c392f14afc57b09637a06f6f653b6fdc4d2345c342a1b90b794f4cb855d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/registered-field-proof.log",
+      "bytes": 192,
+      "sha256": "a4abffd43c57e083e9fd063290d74d5262ea85183648b7f2105bae88d5e9643e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/source-files.json",
+      "bytes": 4886,
+      "sha256": "a2c2ecf7c2d43016fe804a6c291518718fa7b7bdc5cd783e3828f2051efd1894"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/stage-files.json",
+      "bytes": 10279,
+      "sha256": "a9704e9a140f8792a88a9ab267e750f6535ad02eb4961cf5df070d3679b2ff8e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/targeted-unit.log",
+      "bytes": 3538,
+      "sha256": "1f46736514373d59653d95bb8968b82244feeef680140adc871a6c121f7fe1c1"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/typecheck.log",
+      "bytes": 147,
+      "sha256": "74d2a703943bfdc6ae04255ac51dc8379593114a6a1e70045b666ccd0bd9dcd7"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/verify-evidence.mjs",
+      "bytes": 3245,
+      "sha256": "e89aad552d51c1d9d50092eb5bd4ce9923befdcf1592dcbf551928537ce87c66"
+    },
+    {
+      "file": "hsk1-app/content/official-vi-registry.json",
+      "bytes": 43,
+      "sha256": "6f323b55400c596663608b1a25d172f313f6388907d8c7eb889f2954b248c004"
+    },
+    {
+      "file": "hsk1-app/playwright.vi-presentation.config.ts",
+      "bytes": 998,
+      "sha256": "523ba3a598b72af4f76baaad5775184fdcd43f891a61c453fa454fc4058c0d0e"
+    },
+    {
+      "file": "hsk1-app/src/domain/listening/controller.ts",
+      "bytes": 9945,
+      "sha256": "281270a2bf35164f38f50eca6dee37204209387d296c2f5c16a80aa0be05fcf2"
+    },
+    {
+      "file": "hsk1-app/src/domain/types.ts",
+      "bytes": 2781,
+      "sha256": "79b2d72b3eb1578c4f685a8c6144a204fa3889e243c72c4e732b0b588299af17"
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive-data.ts",
+      "bytes": 5228,
+      "sha256": "adf9646230c856cbe0b30611277498ccfba7a950b4e18c592f86d77b01a9df21"
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive.ts",
+      "bytes": 14527,
+      "sha256": "7a96475f3d0c99baf4e16fcdfc8137dc7b6f05e717b1259d1c26a1aa96e4e78f"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/controller.ts",
+      "bytes": 7965,
+      "sha256": "d333f18fe625419ba088c86c9d24a14157ff5ff68861cb1aeaf806fc5bfa7839"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/controller30.ts",
+      "bytes": 6214,
+      "sha256": "4999a4546260a28efcc5ec054265004034ddbac107d4447ff947f5568505f824"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index.ts",
+      "bytes": 23705,
+      "sha256": "158e4307488bbf08bd410c8cf2cccaf09b7194337825993c306fcfdcddb3ddd3"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index30.ts",
+      "bytes": 27974,
+      "sha256": "c5b1db1092ddf3926e9b6ded68c501f350dc3c1bb9b7ebb9a63acad1d7a92b18"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/receipt.ts",
+      "bytes": 6501,
+      "sha256": "ee5aa392a3f7a382c702c856781af7780b55b57905ba94dbc20d6951013b08ca"
+    },
+    {
+      "file": "hsk1-app/src/features/listening/index.ts",
+      "bytes": 23712,
+      "sha256": "20bac7d6dcc51f450edf65939d78cce1d6ea4e720753653205a46e5ebdffad81"
+    },
+    {
+      "file": "hsk1-app/src/features/vocabulary/view.ts",
+      "bytes": 16860,
+      "sha256": "3baadbba67a046017e6f77bdec796e7cec9c8907779ab9219f99ceea8dfae5ed"
+    },
+    {
+      "file": "hsk1-app/src/services/content/index.ts",
+      "bytes": 1904,
+      "sha256": "6ad70e75d43afafd5643e5df7c55e0633e5b1ef3cecf737d260b05da12392c2d"
+    },
+    {
+      "file": "hsk1-app/src/services/content/listening.ts",
+      "bytes": 13032,
+      "sha256": "3fb45587a73f4829c4a2ea30c455a1f7f28567b8bc19ae59864d3160516e8d73"
+    },
+    {
+      "file": "hsk1-app/src/services/content/official-vi-revisions.ts",
+      "bytes": 25652,
+      "sha256": "c488eabcc22449a5734d28b75b5fdc0b91de2bfdf54427160bed38c9a9bf9f97"
+    },
+    {
+      "file": "hsk1-app/src/services/content/textbook.ts",
+      "bytes": 22058,
+      "sha256": "033d731e73a18b6d4a817eb1f327711fc49e46960a447076d4375f44da423d18"
+    },
+    {
+      "file": "hsk1-app/src/services/content/vi-presentation-state.ts",
+      "bytes": 19842,
+      "sha256": "1b9b11803d43325defd8c9819149d88290f548de697413a2371242657e8288fd"
+    },
+    {
+      "file": "hsk1-app/src/services/content/vocabulary.ts",
+      "bytes": 18191,
+      "sha256": "3647506c4532d74607716ef67271dab5a314ae25b8e4a18b5f4897cce1bb01a3"
+    },
+    {
+      "file": "hsk1-app/src/services/storage/compatibility.ts",
+      "bytes": 44659,
+      "sha256": "6a72f0792459e9744ce67b8b81a0c578daef12fcf2096ace1f274d136c6d9104"
+    },
+    {
+      "file": "hsk1-app/tests/browser/fixtures/official-vi-history.html",
+      "bytes": 7303,
+      "sha256": "ac38a018f745c2373bd192e591a8cb3e0feab4079bd563f4a0b0ab2a318ec601"
+    },
+    {
+      "file": "hsk1-app/tests/browser/official-vi-history.spec.ts",
+      "bytes": 3181,
+      "sha256": "dbbd9833598106f2825d5e7654dba3ece5bd3eb042edd5db38fe45ad7732177d"
+    },
+    {
+      "file": "hsk1-app/tests/helpers/official-vi-fixture.mjs",
+      "bytes": 3545,
+      "sha256": "9dfb2521275f2a80dc97e28d56612f35440e605dc445bc75177ba154b34794a9"
+    },
+    {
+      "file": "hsk1-app/tests/official-vi-revisions.test.mjs",
+      "bytes": 8076,
+      "sha256": "2fbdeef29cfb402a99d4df1607d8523e535794d0bebdabd0d4dfb8f257d8a4d8"
+    },
+    {
+      "file": "hsk1-app/tests/vi-presentation-state.test.mjs",
+      "bytes": 20281,
+      "sha256": "ea9fbea9eaa7d5efd1629e283d3e0b2313eb03a9477f1e2e02a42b90ddf401fe"
+    },
+    {
+      "file": "hsk1-app/tsconfig.vi-presentation-tests.json",
+      "bytes": 220,
+      "sha256": "f5b3552e461dddd69df226611a7e823f0e0329ba2fe473896dcae69b748034d7"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/freeze-manifest.json",
+      "bytes": 1322,
+      "sha256": "5f88d3e07c6821bec31522d4e15159c88a749c11b0f8ddb113ffdf501fa15074"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/freeze-manifest.json",
+      "bytes": 2435,
+      "sha256": "d4e852d057eb47d157c32aa48e938c161107ac2b843a1aa063e14fe17663924a"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/freeze-manifest.json",
+      "bytes": 1997,
+      "sha256": "69d10ee5c726c0b9828e4089dde5f1e112b3954f6e1ae984dc55a263a80fc719"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/README.md",
+      "bytes": 3725,
+      "sha256": "53018a72ab5e98673acff19ad29a590b1a1a62744da394647be26f934f1fa898"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/execution-summary.json",
+      "bytes": 196,
+      "sha256": "ca2da788283ca2609eeb054e767b1c2323fcc244920beefb954357763936d625"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/independent-probes.log",
+      "bytes": 2652,
+      "sha256": "45060665fb03a796bd762b4ac2b4fda72fc8fd5117784138ccdb08e85f992067"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/initial-findings.json",
+      "bytes": 3483,
+      "sha256": "c56ce0f7b75713c14d0f0f940c95751114a31a4d7a6db89f35b075c48be8d400"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/probe.mjs",
+      "bytes": 15227,
+      "sha256": "02c0ee72751daf808efcdee92256b0ef629ebbb742f789e6efbfdcf6f17d75bf"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/read-ledger.json",
+      "bytes": 17741,
+      "sha256": "4ce95ac58e866208caf37cff3c7a99d4a7236f834655a5b27cc88ce1270cae3d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/results.json",
+      "bytes": 2920,
+      "sha256": "1631025aaa83db743517355ad4b5758f8bdf27ab9acd3a9b00f403df4ce86278"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter/targeted-unit.log",
+      "bytes": 3306,
+      "sha256": "e5dcf06a5d8427fc864d09544009c6dd0f7e58a6538df31c715cf6a2ff8164d1"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/README.md",
+      "bytes": 3974,
+      "sha256": "14584291caf53d1c8d8c575e299664009302ed0742e598709fb72e99b3ff8d06"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/author-proof-verify.log",
+      "bytes": 192,
+      "sha256": "a4abffd43c57e083e9fd063290d74d5262ea85183648b7f2105bae88d5e9643e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/execution-summary.json",
+      "bytes": 468,
+      "sha256": "59956681a84760332c3b7bef9b31a0e5b488e3cfb472e1389019e5cf4b28ca67"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/fixture-typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/independent-probes.log",
+      "bytes": 2652,
+      "sha256": "45060665fb03a796bd762b4ac2b4fda72fc8fd5117784138ccdb08e85f992067"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/initial-typecheck-failure.log",
+      "bytes": 920,
+      "sha256": "ba20aceadbb444c73613bc358d4b440073298fda5051d93d47c8585346ec2524"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/mapper-check.log",
+      "bytes": 968,
+      "sha256": "68907d467893ae5919e62b9ade2caac0b9ebb662d56a0a5bb6214523fbfc9695"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/mapper-check.mjs",
+      "bytes": 3342,
+      "sha256": "fd236dffdf596fc138359adee26592f896a270ebe7aa3aabe9b313afca398c16"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/mapper-proof.json",
+      "bytes": 968,
+      "sha256": "68907d467893ae5919e62b9ade2caac0b9ebb662d56a0a5bb6214523fbfc9695"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/native-collection.log",
+      "bytes": 928,
+      "sha256": "baca34cd8dae9ecc87c2c2b0a6d3a1487b5407c8b04658d7dd858fefbf29fded"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/probe.mjs",
+      "bytes": 15227,
+      "sha256": "02c0ee72751daf808efcdee92256b0ef629ebbb742f789e6efbfdcf6f17d75bf"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/read-ledger.json",
+      "bytes": 24144,
+      "sha256": "7a8a4a6de5aa3d376f84f301173f80c86ae4ec43ea672b1055e070d3f1f57d51"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/results.json",
+      "bytes": 2920,
+      "sha256": "c64a39cb7a0a6da80d0c3fb05d579bb0db09ef6d1d47dece8d6520a2d52473bc"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/targeted-unit.log",
+      "bytes": 3541,
+      "sha256": "b715fb77dd3625687081ca53fa16ba5843e00d535569fc1db979e3f70f54ffe1"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v2/typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/README.md",
+      "bytes": 2208,
+      "sha256": "f693f8052da4b04815f75b9ff34a5816744ddbbd3c7322400365981d1e78f6ad"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/boundary-results.json",
+      "bytes": 338,
+      "sha256": "8db1f407041e322b3bf20ac2ede0d1788f6516e20a26ec3318f478362e526a80"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/boundary.log",
+      "bytes": 338,
+      "sha256": "8db1f407041e322b3bf20ac2ede0d1788f6516e20a26ec3318f478362e526a80"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/bounded-diff.json",
+      "bytes": 1203,
+      "sha256": "083eb30e13577351fa97b8ba65d96bee7e1c7ffeae93ddb46114ef514aff2e19"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/execution-summary.json",
+      "bytes": 522,
+      "sha256": "a478fdb79d3feb0b5aa575a3919da286cdf50c066c5e83bd098493fe3f92134c"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/fixture-typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/inherited-v2.json",
+      "bytes": 866,
+      "sha256": "ac43647162fa73d7cbc7f07a7f519e4946793b298638de7a0888b3a307b03d13"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/read-ledger.json",
+      "bytes": 23588,
+      "sha256": "4a780e7d5d2e4b5d45daf594eaafcc575f7d17e9a65ce9c1e7014bf9df6b069d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/revision-id-boundary.mjs",
+      "bytes": 2497,
+      "sha256": "14d0b1e7dcca8078f52a8f4b68ee7289a4b902788d7797db8ec39ab7a52c0315"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/source-and-test-shas.json",
+      "bytes": 638,
+      "sha256": "66dd7be1d118c381588325ff6886cb6476a46968953be1c2ff33e8b277f25d3a"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/targeted-unit.log",
+      "bytes": 3540,
+      "sha256": "427ee1f3dc467137bb0f1755fed825d7d661db572c072d57b756a49bad1d9627"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-hsk1-adapter-v3/typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-output/official-vi-history-legacy-19443-raw-task-and-answer-visible-chromium/error-context.md",
+      "bytes": 547,
+      "sha256": "3f97dc7413266ea75200a75b41cd457ec6c3e34528e33ec6c17362820e39a0bb"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-output/official-vi-history-listen-6e55f-nd-text-after-native-reload-chromium/error-context.md",
+      "bytes": 549,
+      "sha256": "601372a7096fed2d8175ed8aea3fcc04420be7b69a1be0f5f2f567988c9ca19f"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-output/official-vi-history-synthe-09bda-ith-original-answer-indices-chromium/error-context.md",
+      "bytes": 572,
+      "sha256": "bc9fdeb70a223979acd236551c485e1511ddb854f29c516ce0bd15848a7e1017"
+    },
+    {
+      "file": "course-app/src/official-vi-revisions.ts",
+      "bytes": 18776,
+      "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f"
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "bytes": 8228,
+      "sha256": "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2"
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "bytes": 13190,
+      "sha256": "9637ebb3fd62546924b45a97407f3ed19ab634e647cc9b4812adfc1e1925bb70"
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "bytes": 62262,
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744"
+    },
+    {
+      "file": "course-app/tests/official-vi-revisions.test.mjs",
+      "bytes": 15689,
+      "sha256": "baa377e7865382f09e66edcaa5d3b1265c88303ffab3ec642c09cc10db2e360b"
+    },
+    {
+      "file": "course-app/tests/unified/official-vi-history.spec.ts",
+      "bytes": 6068,
+      "sha256": "8ab850306d068a1c4b0cf6e88cb4441440847b67316ebd448b56f9301b3c31ce"
+    },
+    {
+      "file": "course-app/content/official-vi-registry.json",
+      "bytes": 80,
+      "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/unit.log",
+      "bytes": 3149,
+      "sha256": "e46d83efb53867320d4174ea42afcf216955304b4356e1827323d01cd389636d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/full-unit.log",
+      "bytes": 20815,
+      "sha256": "0a44b1f5cfe963f68bf13f2be48d5d3cb5a55aaff648d80409202b80412d235c"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/typecheck.log",
+      "bytes": 152,
+      "sha256": "d4f092fedd226092bbf6a231543d6396316d6c6c50cb8ab096ac0ea8e6785960"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/native-typecheck.log",
+      "bytes": 99,
+      "sha256": "7125f194612fcff2f454c05d848e7cb71facc1967b4d5017e25b34fdee3ba74f"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/native-collection.log",
+      "bytes": 2436,
+      "sha256": "6ea6e73e87198280c6f30f842545195259e165ca7efd876f0790fd9ac90a578c"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/build.log",
+      "bytes": 30390,
+      "sha256": "0f7a18bf01da435f4cdf95770792158c173c367ce07bbf754ee7d043b8107457"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/source-bytes.log",
+      "bytes": 158,
+      "sha256": "9082484da6095427f1caf4cf5cb9f40dba1c55f3ff746254851acb6895aa7eff"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/source-bytes.json",
+      "bytes": 45515,
+      "sha256": "bb4aadaa595a35dae0fc1ef6c379be1f082b8bea6d00ef23846f5304ac56e946"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-review.json",
+      "bytes": 28169,
+      "sha256": "ec91c37b68c2b12cbd1a944e9458a8eb67f50afb2b5db26f490b69eee71047a0"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/independent-review.md",
+      "bytes": 2622,
+      "sha256": "641e7032c5754ea4c8a544e1590d6c77b5c76f95c548f811395cbc51b64a5ce4"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/playwright.history.config.ts",
+      "bytes": 796,
+      "sha256": "95ba895d132a35d1a3be25eefc9460d3804e75a0b345f408ad9c021251dc2e6e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/tsconfig.native.json",
+      "bytes": 220,
+      "sha256": "934ec7dea559dc66f0875cb1a00c79f27d35ccaea6af16aa52595cba9db5fdef"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/verify-source-bytes.mjs",
+      "bytes": 4207,
+      "sha256": "1f90f50b3d2a15bc62181c1afd88afb78fdc2b73d2eaab91eb642c37338d22bd"
+    },
+    {
+      "file": "course-app/src/official-vi-revisions.ts",
+      "bytes": 18776,
+      "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f"
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "bytes": 8228,
+      "sha256": "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2"
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "bytes": 13190,
+      "sha256": "9637ebb3fd62546924b45a97407f3ed19ab634e647cc9b4812adfc1e1925bb70"
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "bytes": 62262,
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744"
+    },
+    {
+      "file": "course-app/tests/official-vi-revisions.test.mjs",
+      "bytes": 15689,
+      "sha256": "baa377e7865382f09e66edcaa5d3b1265c88303ffab3ec642c09cc10db2e360b"
+    },
+    {
+      "file": "course-app/tests/unified/official-vi-history.spec.ts",
+      "bytes": 6068,
+      "sha256": "8ab850306d068a1c4b0cf6e88cb4441440847b67316ebd448b56f9301b3c31ce"
+    },
+    {
+      "file": "course-app/content/official-vi-registry.json",
+      "bytes": 80,
+      "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-revision-design/manifest-contract.json",
+      "bytes": 3422,
+      "sha256": "6960605f64eaecc80fab4f8726bc3d7e84895cc4676896d5c1afb9df430056ed"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-vi-revision-design/review.json",
+      "bytes": 12847,
+      "sha256": "02747c454d9e64c074c81efcccdf14e80b78bf83cab426653174264da2fa66bf"
+    },
+    {
+      "file": "course-app/src/state.ts",
+      "bytes": 12140,
+      "sha256": "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c"
+    },
+    {
+      "file": "course-app/src/types.ts",
+      "bytes": 4181,
+      "sha256": "b7b2dfee504bd764ac6560f0d698d5ae996110100ec98577fc4f378dfa832626"
+    },
+    {
+      "file": "course-app/src/config.ts",
+      "bytes": 761,
+      "sha256": "efe61e8926f4ec76f968a64095c014659a026b71b19d3d5fa16c25acba016684"
+    },
+    {
+      "file": "course-app/src/dom.ts",
+      "bytes": 1408,
+      "sha256": "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/tsconfig.native.json",
+      "bytes": 220,
+      "sha256": "934ec7dea559dc66f0875cb1a00c79f27d35ccaea6af16aa52595cba9db5fdef"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk23-adapter/playwright.history.config.ts",
+      "bytes": 796,
+      "sha256": "95ba895d132a35d1a3be25eefc9460d3804e75a0b345f408ad9c021251dc2e6e"
+    },
+    {
+      "file": "course-app/playwright.config.ts",
+      "bytes": 684,
+      "sha256": "e02e563322a654e0c9526ff8ae315cd6a4934073377be5e9f0e41437f7ae0503"
+    },
+    {
+      "file": ".github/workflows/hsk-official-vi-adapter-checkpoint.yml",
+      "bytes": 5179,
+      "sha256": "caf2be409cdb11be21f576b195cdc026b4b97d4d987262d916f0dacf63408b2e"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/README.md",
+      "bytes": 5845,
+      "sha256": "95fdde06c64c6523991d92b34c00b120ac0752e8f8ae2bc3e6262dcde231696a"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/checkpoint-records.mjs",
+      "bytes": 10510,
+      "sha256": "aaed9f9a4d177e4fefb981a6b871b512e696c80ac8c666db09b68ba1762bf466"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk1-collection.log",
+      "bytes": 928,
+      "sha256": "baca34cd8dae9ecc87c2c2b0a6d3a1487b5407c8b04658d7dd858fefbf29fded"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk1-fixtures-preflight.log",
+      "bytes": 240,
+      "sha256": "e8b09fdfbbd981ba37be07a3d9be83af479fb88bf9dc63faaa608a4e2c2dd35d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk1-source-preflight.log",
+      "bytes": 467,
+      "sha256": "6c405ea0e6c912c51f194cda9e4bc5cd085d6c5ed4dfcaa6d7ce0ab0ef405722"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk23-collection.log",
+      "bytes": 2337,
+      "sha256": "b939894020b3c8709105c9e1d8f712213a3c06863bdb1a0108bdb89ead4059b5"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/hsk23-source-preflight.log",
+      "bytes": 15209,
+      "sha256": "9c515cc603e3abc4a13d3390a79da00d298be3a70078a09921279e580d4e43a0"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-final-guard-syntax.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-final-workflow-structure.log",
+      "bytes": 496,
+      "sha256": "e4867f3731063e8b9a1b6ec259f72ae05d750257115914ba34894ff3396b598d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-collection.log",
+      "bytes": 163,
+      "sha256": "c27f529fe22738e3dedbf1dc125c9c70e9c23c409d40005f2f20bc24d7a7fe50"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-run.log",
+      "bytes": 401,
+      "sha256": "7f524bdc385f333681d7f1192ad708b6e94bb5868f62352b6cf92797195af46c"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-format-verifier.log",
+      "bytes": 776,
+      "sha256": "dc7a171203fc2297da45dc81f72fa9cea55bb9e2a0c75866e5d2464cdfa13dc0"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-guard-units.log",
+      "bytes": 732,
+      "sha256": "77086050aa39a7a9da983f9ac0ec392822adec5a0d20b4204577b67fca82fca9"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-hsk1-collection.log",
+      "bytes": 928,
+      "sha256": "baca34cd8dae9ecc87c2c2b0a6d3a1487b5407c8b04658d7dd858fefbf29fded"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-hsk23-collection.log",
+      "bytes": 2337,
+      "sha256": "b939894020b3c8709105c9e1d8f712213a3c06863bdb1a0108bdb89ead4059b5"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-review.json",
+      "bytes": 22905,
+      "sha256": "10ad12ed8f0023cf173ea65c4548695a72d9610c568caf118dd19a9678fe9d62"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-review.md",
+      "bytes": 2908,
+      "sha256": "69c4f11860489963f5b7232833f7f8f695d6ef73f2c0b99f5e6fd764670aff0d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/independent-typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk1.ci.config.ts",
+      "bytes": 986,
+      "sha256": "985d6a8b89ef89a3a23c7e991b3fcb1bb6fb001be7582977d3bf731bec804425"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk23.ci.config.ts",
+      "bytes": 949,
+      "sha256": "b5d342ecc7d66694687a53a6133092537e024cff873f3d90e7cad8f8d6a481ba"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/report-guard-units.log",
+      "bytes": 735,
+      "sha256": "22d9ea1c287c0a86d2cbc6cd65ba43ef0200a1fb3f094a7fa38fde400df83fb7"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs",
+      "bytes": 1902,
+      "sha256": "2f008699e8a0bc5feba11c706a7a5c3a30c895108f80da97753ce6f6463293b2"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/static-workflow.json",
+      "bytes": 496,
+      "sha256": "e4867f3731063e8b9a1b6ec259f72ae05d750257115914ba34894ff3396b598d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/tsconfig.json",
+      "bytes": 344,
+      "sha256": "6e2be1bdcfbad5a89c3f6d0476281f3a77c861e38f9ebd523fb5ca15406f7aca"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/verify-native-results.mjs",
+      "bytes": 2501,
+      "sha256": "b30a8ca54bbeacb7f4e1ecf7d10fb7b52f9acb672dc2e34ae59ba7fe22a856b6"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/verify-native-results.test.mjs",
+      "bytes": 1733,
+      "sha256": "259521a18629bbfc056472b9ef5f3f2631dbd50483e2cc38b77dcb7d2052fec2"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-adapter-ci/verify-workflow.py",
+      "bytes": 2970,
+      "sha256": "194136b9c7a775155f63587c37f9023211b79f98d41f96e5e5383af93288eb30"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-vi-inventory-b10-ast/README.md",
+      "bytes": 2521,
+      "sha256": "142dcb50e65184de89b5274a41aa46ed37bb39c922f3c751a5f9a2635b64f81a"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-vi-inventory-b10-ast/author-bounded-probe-output.json",
+      "bytes": 544,
+      "sha256": "e8df8cda95d462e4ed4099dca90d3dfe5f2b29db73b28687f9843a122f1ac2fd"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-vi-inventory-b10-ast/independent-probe-results.json",
+      "bytes": 76558,
+      "sha256": "592a01015e7cb9fdc51fda0939c7abcbb546e0d255958c25d88243b34856df66"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-vi-inventory-b10-ast/initial-harness-node-count-diagnostic.json",
+      "bytes": 75832,
+      "sha256": "43bb9a61ca851d0389a794a8cbbd5a1f298e09a762d92a5d32caf2063bd79a77"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-vi-inventory-b10-ast/probe-fixture.ts.txt",
+      "bytes": 714,
+      "sha256": "293fc29291b9de3ced575107f4379b224161f1feac1153fefbd41f2150591229"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-vi-inventory-b10-ast/review.json",
+      "bytes": 3036,
+      "sha256": "77e5cbc8c046ef4c80cafb8337b870b374dc2c2da2dd8436e49dde4762b877f8"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-vi-inventory-b10-ast/run-independent-probes.mjs",
+      "bytes": 10852,
+      "sha256": "2238c3f2d54d400ab267f0564494b568ce199630ce495089f1ff22226077c477"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/build-inventory.mjs",
+      "bytes": 44752,
+      "sha256": "8ef5eb37677d333beb4117310f79160b902b242809edda57122bed7858949d72"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory-b10/build-inventory.mjs",
+      "bytes": 44899,
+      "sha256": "0c23ca8f61f6883513827d461afd82dc6684333420f32dfd27ab2106a93a0b44"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory-b10/verify-ast-coverage.mjs",
+      "bytes": 3760,
+      "sha256": "698e7e35280b2fadfdba42e398bb4ca6e47bf5d74b913c94309c81525c9df6d6"
+    },
+    {
+      "file": "course-app/src/dom.ts",
+      "bytes": 1408,
+      "sha256": "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e"
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "bytes": 40716,
+      "sha256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a"
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "bytes": 62262,
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/runtime-files.json",
+      "bytes": 2002235,
+      "sha256": "5a5e84511931e9b11ad576e3b1b6dcea7f1f3bb236de87b0a32f77ef002ae288"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/independent-metadata-20261004/README.md",
+      "bytes": 2706,
+      "sha256": "fe52af94a28fa628eb11fecccb147dfaf272c98312b54a7de302a25d0e59728d"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/independent-metadata-20261004/accepted-one-line-patch.diff",
+      "bytes": 1218,
+      "sha256": "05ac50020854baa228c2006d5cad9a8a30d311025a23db955537abc549b2abc5"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/independent-metadata-20261004/independent-review.json",
+      "bytes": 6162,
+      "sha256": "eb903f91d4a6bfd33b50ef3eb0c93115f4b65e8cacf81d49b502ef43f4f93fc6"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/independent-metadata-20261004/probe-execution.log",
+      "bytes": 2953,
+      "sha256": "6e286d790a7521779c034a2bc104e435ceb0999119d2bc3ee2cca57bcc2bd584"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/independent-metadata-20261004/probe-metadata-gate.mjs",
+      "bytes": 13767,
+      "sha256": "573f83d03bb9eb4357ff2cea70604b53be34b2f96df03d6fbe37b9f978c0a78f"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/independent-metadata-20261004/probe-results.json",
+      "bytes": 19885,
+      "sha256": "d78e8d0eae01f094cc0b31ea3dce83d2b0bbaf1c74d58f921242f461fe460891"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/independent-metadata-20261004/targeted-independent-tests.log",
+      "bytes": 2051,
+      "sha256": "abec213f13cbea4c670d9727f48edb0db59cad33e19ea4fd1528b81e49fb5d5c"
+    },
+    {
+      "file": "course-app/tools/release-readiness.mjs",
+      "bytes": 13815,
+      "sha256": "4db18945e5c731dd6fcee60de0dc3056f609edfae01ed5dfe76ac0439d38c248"
+    },
+    {
+      "file": "course-app/tools/package-core.mjs",
+      "bytes": 8516,
+      "sha256": "cbd2a2d8e2bbe301bf8cfd4ec4137a5c84c8d927ab8de4cf8df8f99a34485d2a"
+    },
+    {
+      "file": "course-app/tools/package-unified.mjs",
+      "bytes": 13157,
+      "sha256": "0b7bdbfe136b17108f0b5ee5ec0413e96d1e9f6a87c084636b56009439ce1cdf"
+    },
+    {
+      "file": "course-app/tests/release-readiness.test.mjs",
+      "bytes": 13052,
+      "sha256": "efb2f3753dbe799d374b8fc962a24e65f8dc35d57c315417311ff47ddaa01cc9"
+    },
+    {
+      "file": "course-app/tests/package-unified.test.mjs",
+      "bytes": 11061,
+      "sha256": "4b6d3a1aa8badc67b9fce73eabda00c9aa755c1a0508430072e44f3b6e98e7c9"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/release-readiness.author-input.mjs",
+      "bytes": 13842,
+      "sha256": "ed4bc1b2c9b1004819dd2e8594ee2b91a58f7b54cf9a1ef13614d8860349c6b7"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/release-readiness.author-tests.mjs",
+      "bytes": 12293,
+      "sha256": "b8e65e423b08c924499445fc99e6bea9f47715a58a1cdf8695fcbf4eaf49424c"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/README.author-input.md",
+      "bytes": 8053,
+      "sha256": "582f2c595518d71734a26be0694eb4462cfcf9f18f8fb8d5b58d18a80c6089f9"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/root-review.json",
+      "bytes": 2126,
+      "sha256": "7736cf9f2a3e952135833aa734421d0ade061cd1f8d2543424b2679621dc0930"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/qa-b10-release-readiness/targeted-root-tests.log",
+      "bytes": 2051,
+      "sha256": "e9b411a099f1ef1080f78da3c7eccd5a343d50da232a24f61cb8b58fdc2afea5"
+    },
+    {
+      "file": "course-app/docs/b10-release-readiness/unit-tests.log",
+      "bytes": 20166,
+      "sha256": "e521f8cfe78e7fe5cd3e2226dafb51cf8b935a9827a6c40d3b54231e7ac07d88"
+    },
+    {
+      "file": "course-app/docs/b10-release-readiness/verification-report.md",
+      "bytes": 4080,
+      "sha256": "d8dca6a538851784783151fc4ef6b9574498bb2db1fea1e7798e592d5927921c"
+    }
+  ],
+  "metadataGateRepair": {
+    "accepted": true,
+    "independentReview": "course-app/docs/resume-20261004/qa-b10-release-readiness/independent-metadata-20261004/independent-review.json",
+    "independentReviewSHA256": "eb903f91d4a6bfd33b50ef3eb0c93115f4b65e8cacf81d49b502ef43f4f93fc6",
+    "syntheticProbes": 29,
+    "targetedTests": 17,
+    "scope": "validator code only; not semantic/native/final gate"
+  },
+  "actualNativeCasesExecuted": 0,
+  "plannedNativeCases": 22,
+  "nativeStatus": "pending new exact remote commit two-engine CI",
+  "officialVIChangesActivated": 0,
+  "publicationApproved": false,
+  "deployed": false,
+  "protectedProductionHead": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
+  "limitations": [
+    "H1 native harness dev-source execution plus separate build; H2/3 compiled preview; neither substitutes for final C15",
+    "source author and original independent freezes remain immutable, historical reports retain their exact earlier heads and counts",
+    "all source-only batches and private unaccepted pilot manifests remain separate from active public sidecars"
+  ]
+}

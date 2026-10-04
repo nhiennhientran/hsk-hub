@@ -1,0 +1,5 @@
+{
+ "extends":"../../../tsconfig.json",
+ "compilerOptions":{"types":["node","vite/client"]},
+ "include":["../../../tests/unified/official-vi-history.spec.ts","../../../src/vite-env.d.ts","../../../../hsk1-app/tests/browser/official-vi-history.spec.ts","../../../../hsk1-app/src","playwright.hsk1.ci.config.ts","playwright.hsk23.ci.config.ts"]
+}

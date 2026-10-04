@@ -1,0 +1,30 @@
+metadata-complete-1: accepted
+metadata-complete-411: accepted
+metadata-complete-412: accepted
+metadata-complete-413: accepted
+metadata-complete-1981: accepted
+metadata-missing-accepted-id: rejected | Release readiness: incomplete or duplicate cross-site asset-metadata accepted consumer IDs
+metadata-extra-accepted-id: rejected | Release readiness: incomplete or duplicate cross-site asset-metadata accepted consumer IDs
+metadata-duplicate-accepted-id: rejected | Release readiness: incomplete or duplicate cross-site asset-metadata accepted consumer IDs
+metadata-same-count-wrong-accepted-id: rejected | Release readiness: incomplete or duplicate cross-site asset-metadata accepted consumer IDs
+metadata-missing-inventory-item: rejected | Release readiness: invalid cross-site consumer inventory asset-metadata
+metadata-extra-inventory-item: rejected | Release readiness: invalid cross-site consumer inventory asset-metadata
+metadata-duplicate-inventory-item: rejected | Release readiness: invalid cross-site consumer inventory asset-metadata
+metadata-declared-count-too-small: rejected | Release readiness: invalid cross-site consumer inventory asset-metadata
+metadata-declared-count-too-large: rejected | Release readiness: invalid cross-site consumer inventory asset-metadata
+metadata-empty-consistent-ledger: rejected | Release readiness: empty cross-site consumer scope asset-metadata
+metadata-empty-item-id: rejected | Release readiness: invalid cross-site consumer inventory asset-metadata
+metadata-wrong-inventory-scope: rejected | Release readiness: invalid cross-site consumer inventory asset-metadata
+metadata-non-array-ledger: rejected | Release readiness: invalid cross-site consumer inventory asset-metadata
+metadata-non-array-accepted-id: rejected | Release readiness: incomplete or duplicate cross-site asset-metadata accepted consumer IDs
+legacy-questions-complete-required-count: accepted
+legacy-questions-coherent-wrong-count-1359: rejected | Release readiness: incomplete cross-site item count legacy-questions
+legacy-questions-coherent-wrong-count-1361: rejected | Release readiness: incomplete cross-site item count legacy-questions
+legacy-questions-duplicate-accepted-id: rejected | Release readiness: incomplete or duplicate cross-site legacy-questions accepted consumer IDs
+legacy-questions-missing-accepted-id: rejected | Release readiness: incomplete or duplicate cross-site legacy-questions accepted consumer IDs
+svg-complete-required-count: accepted
+svg-coherent-wrong-count-411: rejected | Release readiness: incomplete cross-site item count svg
+svg-coherent-wrong-count-413: rejected | Release readiness: incomplete cross-site item count svg
+svg-duplicate-accepted-id: rejected | Release readiness: incomplete or duplicate cross-site svg accepted consumer IDs
+svg-missing-accepted-id: rejected | Release readiness: incomplete or duplicate cross-site svg accepted consumer IDs
+TOTAL 29: 7 accepted, 22 correctly rejected.

@@ -1,0 +1,48 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><title>Synthetic VI presentation harness</title>
+<body><p>This isolated harness tests real modules with synthetic revisions. It is not a production route or official translation.</p><main id="host"></main>
+<script type="module">
+import {createCompatibility} from '/src/services/storage/compatibility.ts';
+import {createStore,STORAGE_KEY} from '/src/services/storage/index.ts';
+import {createLearningSession} from '/src/services/learning/session.ts';
+import {getHomework30Bank} from '/src/services/content/homework30.ts';
+import {createHomework30Controller} from '/src/features/homework/controller30.ts';
+import {createHomeworkController} from '/src/features/homework/controller.ts';
+import {createListeningController} from '/src/domain/listening/controller.ts';
+import {projectListeningCurrent} from '/src/services/content/listening.ts';
+import {projectHomeworkQuestion} from '/src/services/content/vi-presentation-state.ts';
+import {createOfficialViRegistry,viSHA256,viCanonical,viProposal} from '/src/services/content/official-vi-revisions.ts';
+import {createReceipt} from '/src/features/homework/receipt.ts';
+import {mount as mountArchive} from '/src/features/exercises/archive.ts';
+const [oldBank,catalog,book] = await Promise.all(['stage2-bank','stage3-catalog','textbook'].map(n=>fetch(`/content/${n}.json`).then(r=>r.json())));
+const compatibility=createCompatibility(oldBank,catalog,book), bank=getHomework30Bank(), stamp=1790899200000;
+let quota=false,receipt,archive;
+const store=createStore({storage:{getItem:k=>localStorage.getItem(k),setItem:(k,v)=>{if(quota)throw new DOMException('synthetic quota','QuotaExceededError');localStorage.setItem(k,v);}},blank:compatibility.blank,validate:compatibility.validate,lock:async task=>task(),now:()=>stamp});
+const session=createLearningSession({store,compatibility,setTimer:()=>1,clearTimer:()=>{}});session.requestSave=()=>{};
+const field=(q,component,name,newValue)=>({baselineFile:component==='homework30'?'content/homework30-bank.json':component==='homework'?'content/stage2-bank.json':'content/stage3-catalog.json',field:`/synthetic/${q.id}/${name}`,ownerId:q.id,component,lesson:q.lesson,relativeField:`/${name}`,effectiveValue:q[name],zhContext:q.stem||q.transcript?.map(l=>l.zh).join('')||'',newValue,originalOptions:q.options});
+async function revision(id,fields){
+ const baselineFiles=[...new Set(fields.map(f=>f.baselineFile))].map(file=>({file,sha256:'1'.repeat(64)}));
+ const changes=fields.map((f,i)=>({changeId:`${id}-${i}`,baselineFile:f.baselineFile,field:f.field,ownerId:f.ownerId,component:f.component,lesson:f.lesson,expectedEffectiveValue:f.effectiveValue,newValue:f.newValue,classification:'official-wording-variant',sourceAnchor:{kind:'directOfficial',sourceId:`synthetic-${i}`,documentSourceId:'synthetic-book',pdfSHA256:'2'.repeat(64),pdfPages:[18],printedPages:[3],section:'synthetic only',officialViText:f.newValue,zhContext:f.zhContext},consumers:[{baselineFile:f.baselineFile,field:f.field,ownerId:f.ownerId,component:f.component}],authorReview:{reviewer:'synthetic-author',status:'accepted'},independentReview:{reviewer:'synthetic-reviewer',status:'accepted',evidenceRef:'synthetic-review.json'}}));
+ const manifest={schemaVersion:1,revisionId:id,engine:'hsk1',courseId:'hsk1',baselineFiles,parentDisplayRevision:'synthetic-parent',sources:[{sourceId:'synthetic-book',pdfSHA256:'2'.repeat(64),pdfPageCount:50}],changes,coverage:{scope:'synthetic-only'},independentReview:{}};
+ const proposalSHA256=await viSHA256(viCanonical(viProposal(manifest))),proof={reviewer:'synthetic-reviewer',author:'synthetic-author',status:'accepted',proposalSHA256,acceptedChangeIds:changes.map(c=>c.changeId),acceptedConsumerRefs:changes.flatMap(c=>c.consumers),sourceEvidenceRefs:changes.map(c=>c.sourceAnchor)};
+ const reviewBytes=JSON.stringify(proof),reviewSHA256=await viSHA256(reviewBytes);manifest.independentReview={reviewer:proof.reviewer,status:'accepted',proposalSHA256,evidenceFile:'synthetic-review.json',evidenceSHA256:reviewSHA256,acceptedChangeIds:proof.acceptedChangeIds};const manifestBytes=JSON.stringify(manifest);
+ return createOfficialViRegistry({manifestBytes,manifestSHA256:await viSHA256(manifestBytes),reviewBytes,reviewSHA256,baselineFiles,parentDisplayRevision:'synthetic-parent',fields});
+}
+const fill=c=>c.read().questions.forEach(q=>c.answer(q.id,q.answer));
+window.viHarness={
+ async homework(version='30-v1'){
+  const qs=version==='30-v1'?bank[0].choice:oldBank.lessons[0].choice,q=qs[0],component=version==='30-v1'?'homework30':'homework';
+  const make=r=>version==='30-v1'?createHomework30Controller({store,bank,lesson:1,part:'choice',now:()=>stamp,viRegistry:r}):createHomeworkController({store,bank:oldBank.lessons,lesson:1,part:'choice',now:()=>stamp,viRegistry:r});
+  const a=await revision('native-A',[field(q,component,'prompt','Văn bản native A.')]),b=await revision('native-B',[field(q,component,'prompt','Văn bản native B.')]);
+  let c=make(a);fill(c);c.submit();c.restart();c=make(b);fill(c);c.submit();await store.save();return store.snapshot();
+ },
+ receipt(version='30-v1'){
+  archive?.unmount();receipt?.dispose();document.querySelector('#host').replaceChildren();const qs=version==='30-v1'?bank[0].choice:oldBank.lessons[0].choice,data=store.snapshot().data,group=(version==='30-v1'?data.homework30:data.homework).lessons['1'].choice;
+  receipt=createReceipt(document.querySelector('#host'),{lesson:1,lessonTitle:'你好',part:'choice',homeworkVersion:version,questions:qs,displayQuestions:{first:qs.map(q=>projectHomeworkQuestion(data,version,1,'choice',q,qs,'first')),latest:qs.map(q=>projectHomeworkQuestion(data,version,1,'choice',q,qs,'latest'))},profile:{name:'synthetic',className:''},first:group.first,latest:group.latest,selected:'first',onClose(){receipt.dispose();}});return {raw:qs[0],group};
+ },
+ async archive(){receipt?.dispose();archive?.unmount();document.querySelector('#host').replaceChildren();const abort=new AbortController();archive=mountArchive(document.querySelector('#host'),{route:{feature:'exercises',lesson:1,exerciseSet:'homework-review',exerciseGroup:'choice',exerciseFilter:'all'},signal:abort.signal,learning:async()=>session});await archive.ready;return store.snapshot();},
+ async listening(){const q=catalog.listening[0],f={...field(q,'listening','promptVi','Nghĩa native riêng.'),field:'/synthetic/options/0',relativeField:'/options/0',effectiveValue:q.options[0]};const r=await revision('native-listen',[f]);const c=createListeningController({session,catalog,now:()=>stamp,random:()=>0.271,viRegistry:r});c.visit(1);c.setPreferences({shuffle:false});c.start(5);c.select(q.id,q.answer);c.submit();await store.save();return {raw:c.read().current,dto:projectListeningCurrent(c.read().current,store.snapshot().data,catalog),data:store.snapshot().data};},
+ listeningRead(){const c=createListeningController({session,catalog,now:()=>stamp,random:()=>0.271});return {raw:c.read().current,dto:projectListeningCurrent(c.read().current,store.snapshot().data,catalog)};},
+ quota(value){quota=value;},save:()=>store.save(),snapshot:()=>store.snapshot(),backup:()=>JSON.parse(store.exportBackup()),raw:()=>localStorage.getItem(STORAGE_KEY)
+};
+document.body.dataset.ready='true';
+</script></body></html>

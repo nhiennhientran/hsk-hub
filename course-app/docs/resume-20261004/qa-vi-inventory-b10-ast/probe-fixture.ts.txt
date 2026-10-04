@@ -1,0 +1,16 @@
+// Bình luận không phải bản sao hiển thị
+const named = {vi:'Sai', vn:'Dung', titleVi:'OK', meaning_vi:'ABC', ['vi']:'NO'};
+const nested = {copy:{zh:'样例',vi:'Ví dụ'}, items:[{vi:'Đúng'}]};
+class View {
+ render(){return 'Câu trong phương thức';}
+ get label(){return {zh:'老师',vi:'Cô giáo'};}
+ static render(){return {vi:'Nội dung tĩnh'};}
+}
+const objectMethods={render(){return 'Bài trong phương thức';},copy:()=>({vi:'Câu lồng'})};
+const conditional={vi:`Trang ${ok?'đã lưu':'chưa lưu'}`};
+const scalar='Bài đơn';
+const packed='{"vi":"Chào"}';
+const numberValue=123;
+const empty={vi:''};
+const regex=/Cô giáo/;
+const chineseOnly={zh:'你好',id:'stable-no-vi'};

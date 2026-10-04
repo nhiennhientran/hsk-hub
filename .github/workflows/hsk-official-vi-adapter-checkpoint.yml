@@ -1,0 +1,79 @@
+name: HSK official VI adapter private checkpoint
+on:
+  workflow_dispatch:
+  push:
+    branches: ['work/hsk-b10-adapter-ci-20261004']
+permissions:
+  contents: read
+jobs:
+  adapters:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    env:
+      HSK_ADAPTER_CI_BROWSER: ${{ matrix.browser }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - name: Record exact checkout and source inputs
+        run: node course-app/docs/resume-20261004/b10-adapter-ci/checkpoint-records.mjs before
+      - name: Install both apps from their locks
+        run: |
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs course-install . npm ci --prefix course-app
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs hsk1-install . npm ci --prefix hsk1-app
+      - name: Unit, source and fixture checks
+        run: |
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs course-units . npm test --prefix course-app
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs hsk1-units . npm test --prefix hsk1-app
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs course-source . npm run content:check --prefix course-app
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs hsk1-source . npm run catalog:check --prefix hsk1-app
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs hsk1-migration-fixtures . npm run fixtures:check --prefix hsk1-app
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs course-types . npm run check --prefix course-app
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs hsk1-types . npm run check --prefix hsk1-app
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs native-fixture-types . course-app/node_modules/.bin/tsc -p course-app/docs/resume-20261004/b10-adapter-ci/tsconfig.json
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs native-report-guards . node --test course-app/docs/resume-20261004/b10-adapter-ci/verify-native-results.test.mjs
+      - name: Install the actual matrix browser and Chinese fonts
+        run: |
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs browser-install course-app npx playwright install --with-deps ${{ matrix.browser }}
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs font-install . sudo apt-get install -y fonts-noto-cjk
+      - name: Build both apps and verify copied HSK1 assets
+        run: |
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs hsk1-build . npm run build --prefix hsk1-app
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs course-build course-app npm run build -- --outDir .repro-output/b10-hsk23-adapter/dist
+          node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs hsk1-asset-bytes . npm run assets:check --prefix hsk1-app
+          node course-app/docs/resume-20261004/b10-adapter-ci/checkpoint-records.mjs builds
+      - name: HSK1 three real native history fixtures
+        id: hsk1_native
+        run: node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs hsk1-native . hsk1-app/node_modules/.bin/playwright test --config=course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk1.ci.config.ts --project=${{ matrix.browser }}
+      - name: HSK2 and HSK3 eight real native history fixtures
+        id: hsk23_native
+        if: success() || steps.hsk1_native.outcome == 'failure'
+        run: node course-app/docs/resume-20261004/b10-adapter-ci/run-command.mjs hsk23-native . course-app/node_modules/.bin/playwright test --config=course-app/docs/resume-20261004/b10-adapter-ci/playwright.hsk23.ci.config.ts --project=${{ matrix.browser }}
+      - name: Reject skips, retries, errors and source/build drift
+        if: always()
+        run: node course-app/docs/resume-20261004/b10-adapter-ci/checkpoint-records.mjs after
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk-official-vi-adapter-${{ matrix.browser }}
+          include-hidden-files: true
+          if-no-files-found: error
+          path: |
+            course-app/.repro-output/b10-adapter-ci/${{ matrix.browser }}/
+            course-app/.repro-output/b10-hsk23-adapter/dist/index.html
+            course-app/.repro-output/b10-hsk23-adapter/dist/assets/**/*.js
+            course-app/.repro-output/b10-hsk23-adapter/dist/assets/**/*.css
+            course-app/.repro-output/b10-hsk23-adapter/dist/assets/**/*.json
+            hsk1-app/dist/*.html
+            hsk1-app/dist/assets/**/*.js
+            hsk1-app/dist/assets/**/*.css
+            hsk1-app/dist/assets/**/*.json
+            course-app/docs/resume-20261004/b10-hsk1-adapter/native-ci-receipt-first.png
+            course-app/docs/resume-20261004/b10-hsk1-adapter/native-ci-archive.png

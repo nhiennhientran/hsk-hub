@@ -1,3 +1,7 @@
+import { applyViSnapshot, loadOfficialViRegistry } from './official-vi-revisions.ts';
+import { listeningDisplaySnapshot } from './vi-presentation-state.ts';
+import type { AppData } from '../storage/compatibility.ts';
+import type { ListeningCurrent } from '../../domain/listening/types.ts';
 import {courseAssetBase} from './asset-base.ts';
 import practice from '../../domain/practice/engine.js';
 import type { AudioRequest } from '../audio/index.ts';
@@ -188,6 +192,7 @@ export async function createListeningContent(catalogValue: unknown, mediaValue: 
 
 /** Reuse the application content paths; the learning session remains the sole store. */
 export async function loadListening(signal: AbortSignal): Promise<ListeningContent> {
+  await loadOfficialViRegistry(signal);
   signal.throwIfAborted();
   const urls = [new URL('../../../content/stage3-catalog.json', import.meta.url), new URL('../../../content/media-references.json', import.meta.url)];
   const values = await Promise.all(urls.map(async url => {
@@ -198,4 +203,13 @@ export async function loadListening(signal: AbortSignal): Promise<ListeningConte
     return value;
   }));
   return createListeningContent(values[0], values[1], undefined, signal);
+}
+
+/** View DTO only. The controller, answers and randomized original indices stay raw. */
+export function projectListeningCurrent(raw: ListeningCurrent, data: AppData, catalog: ListeningCatalog): ListeningCurrent {
+  const question = catalog.listening.find(q => q.id === raw.id); if (!question) return raw;
+  const display = applyViSnapshot(question, question.id, 'listening', listeningDisplaySnapshot(data, question.id));
+  if (display === question) return raw;
+  return { ...raw, promptVi: display.promptVi, options: raw.options.map(option => ({ ...option, text: display.options[option.index]! })),
+    feedback: raw.feedback ? { ...raw.feedback, transcript: display.transcript, explanationVi: display.explanationVi, optionFeedback: display.optionFeedback, keywords: display.keywords } : null };
 }

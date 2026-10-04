@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "status": "accepted only bounded AST traversal repair on actual declared crawler; current whole-inventory acceptance pending new source freeze",
+  "reviewerRole": "independent reviewer; root builder and author verifier read-only",
+  "productionChanges": 0,
+  "checksCount": 262,
+  "passed": true,
+  "rootBoundedVerifierActuallyExecuted": true,
+  "fullInventoryBuilderExecuted": false,
+  "formalOfficialVietnameseSemanticAudit": false,
+  "globalCurrentInventoryAccepted": false,
+  "historicalInventoryRewrite": false,
+  "builderIdentity": {
+    "oldSHA256": "8ef5eb37677d333beb4117310f79160b902b242809edda57122bed7858949d72",
+    "newSHA256": "0c23ca8f61f6883513827d461afd82dc6684333420f32dfd27ab2106a93a0b44",
+    "changeScope": "exact one ignored-key value removal plus two explanatory comments; no other builder source changes"
+  },
+  "sameByteEvidence": {
+    "dom": {
+      "before": 0,
+      "after": 2
+    },
+    "lessonView": {
+      "before": 85,
+      "after": 87
+    },
+    "previous85Records": "all recordIDs, semantic IDs, values, locations and full actual crawler output unchanged",
+    "recoveredRealCounterexamples": 4
+  },
+  "additionalProbeScope": [
+    "explicit vi/vn and named ASCII titleVi/meaning_vi keys including computed string vi key",
+    "nested objects and arrays",
+    "class method plain-string body, getter, static method and object method",
+    "arrow function nested object",
+    "conditional dynamic template and independent nested literals",
+    "raw scalar Literal.value recorded once; packed JSON stays one raw string, no invented nested Chào",
+    "comments/regex/numeric/empty/plain Chinese strings not emitted",
+    "inserted source prefix yields new source-specific occurrence IDs; source drift is not an old-offset coverage omission"
+  ],
+  "mainSourceDrift": {
+    "file": "course-app/src/main.ts",
+    "originalSHA256": "9f0309622e30f4362132ddfa381b18494de99df3761ae609cd5c60b9bbaa928d",
+    "currentSHA256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744",
+    "changed": true,
+    "coverageVerdict": "not assessed; current main offsets are not compared to historical inventory as omissions"
+  },
+  "inputsUnchangedDuringProbe": true,
+  "harnessDiagnostic": {
+    "file": "initial-harness-node-count-diagnostic.json",
+    "status": "historical diagnostic retained, not passed evidence",
+    "cause": "Independent extraction assertion initially assumed15 declaration nodes; actual13 nodes contain16 required names because one declaration defines four variables. Corrected assertion verifies the exact dependency/function name set, no crawler modification. Every actual traversal/content probe already passed on that attempt."
+  },
+  "nextRequiredStep": "After root final engineering source freeze, rerun the corrected complete builder on that actual source and independently verify generated field/source/consumer identities. This bounded acceptance is not a substitute for full new-source inventory or official textbook semantic comparison."
+}

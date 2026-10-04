@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "createdAtUTC": "2026-10-04T20:32:28.044626+00:00",
+  "status": "accepted only bounded AST traversal repair on actual declared crawler; current whole-inventory acceptance pending new source freeze",
+  "gitHEADAtFreeze": "6f668b4f47ed22cffe0c02d1993263fb83b1304e",
+  "gitHEADScope": "context only; current engineering changes not yet finalized, actual seven probe input identities bound by SHA",
+  "files": [
+    {
+      "file": "README.md",
+      "sha256": "142dcb50e65184de89b5274a41aa46ed37bb39c922f3c751a5f9a2635b64f81a",
+      "bytes": 2521
+    },
+    {
+      "file": "author-bounded-probe-output.json",
+      "sha256": "e8df8cda95d462e4ed4099dca90d3dfe5f2b29db73b28687f9843a122f1ac2fd",
+      "bytes": 544
+    },
+    {
+      "file": "independent-probe-results.json",
+      "sha256": "592a01015e7cb9fdc51fda0939c7abcbb546e0d255958c25d88243b34856df66",
+      "bytes": 76558
+    },
+    {
+      "file": "initial-harness-node-count-diagnostic.json",
+      "sha256": "43bb9a61ca851d0389a794a8cbbd5a1f298e09a762d92a5d32caf2063bd79a77",
+      "bytes": 75832
+    },
+    {
+      "file": "probe-fixture.ts.txt",
+      "sha256": "293fc29291b9de3ced575107f4379b224161f1feac1153fefbd41f2150591229",
+      "bytes": 714
+    },
+    {
+      "file": "review.json",
+      "sha256": "77e5cbc8c046ef4c80cafb8337b870b374dc2c2da2dd8436e49dde4762b877f8",
+      "bytes": 3036
+    },
+    {
+      "file": "run-independent-probes.mjs",
+      "sha256": "2238c3f2d54d400ab267f0564494b568ce199630ce495089f1ff22226077c477",
+      "bytes": 10852
+    }
+  ],
+  "fileCount": 7,
+  "actualInputs": [
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/build-inventory.mjs",
+      "sha256": "8ef5eb37677d333beb4117310f79160b902b242809edda57122bed7858949d72",
+      "bytes": 44752,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory-b10/build-inventory.mjs",
+      "sha256": "0c23ca8f61f6883513827d461afd82dc6684333420f32dfd27ab2106a93a0b44",
+      "bytes": 44899,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory-b10/verify-ast-coverage.mjs",
+      "sha256": "698e7e35280b2fadfdba42e398bb4ca6e47bf5d74b913c94309c81525c9df6d6",
+      "bytes": 3760,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/src/dom.ts",
+      "sha256": "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e",
+      "bytes": 1408,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "sha256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "bytes": 40716,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744",
+      "bytes": 62262,
+      "unchanged": true
+    },
+    {
+      "file": "course-app/docs/resume-20261004/vi-inventory/runtime-files.json",
+      "sha256": "5a5e84511931e9b11ad576e3b1b6dcea7f1f3bb236de87b0a32f77ef002ae288",
+      "bytes": 2002235,
+      "unchanged": true
+    }
+  ],
+  "checksCount": 262,
+  "verificationPassed": true,
+  "fullInventoryExecuted": false,
+  "productionEdits": 0,
+  "formalVietnameseSemanticAudit": false,
+  "globalInventoryAcceptance": false
+}

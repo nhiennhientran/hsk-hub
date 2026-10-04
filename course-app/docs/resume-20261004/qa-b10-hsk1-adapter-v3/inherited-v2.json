@@ -1,0 +1,17 @@
+{
+  "scope": "Prior v2 evidence retained, not rerun as independent v3 pipeline tests",
+  "v2FreezeSHA256": "d4e852d057eb47d157c32aa48e938c161107ac2b843a1aa063e14fe17663924a",
+  "v2LedgerSHA256": "7a8a4a6de5aa3d376f84f301173f80c86ae4ec43ea672b1055e070d3f1f57d51",
+  "v2IndependentProbes": 14,
+  "v2MapperLeaves": 5519,
+  "v2OriginalOptionArrays": 700,
+  "v2NativeCollection": 6,
+  "v2NativeExecuted": 0,
+  "unchangedV2Inputs": 49,
+  "totalV2Inputs": 51,
+  "changedV2Inputs": [
+    "hsk1-app/src/services/content/official-vi-revisions.ts",
+    "hsk1-app/tests/official-vi-revisions.test.mjs"
+  ],
+  "interpretation": "Registry guard and its author negative assertion are bounded changes verified by reconstruction. Other v2 recorded inputs remain byte-identical. Prior independent probes remain evidence for their captured v2 source, not newly executed v3 results."
+}

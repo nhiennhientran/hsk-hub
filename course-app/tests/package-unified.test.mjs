@@ -4,7 +4,7 @@ import {mkdtempSync,mkdirSync,writeFileSync,readFileSync,existsSync,rmSync,symli
 import {join,resolve} from 'node:path';
 import {tmpdir} from 'node:os';
 import {execFileSync} from 'node:child_process';
-import {hash} from '../tools/package-core.mjs';
+import {hash,walkFiles} from '../tools/package-core.mjs';
 import {packageUnified,unifiedEntryDirectories,unifiedEntryHTML,unifiedInputPath,assertUnifiedAcceptance,currentSourceFigures,currentAuxiliaryIllustrations,runtimeSourceDirty,runtimeSourceSnapshot} from '../tools/package-unified.mjs';
 import {protectedBaselineManifest,baselineExclusion} from '../tools/assemble-unified-checkpoint.mjs';
 const html='<!doctype html><html><head><meta name="hsk-level" content="2"><script type="module" src="./assets/index-a.js"></script><link rel="stylesheet" href="./assets/index-a.css"></head><body><div id="app"></div></body></html>';
@@ -58,10 +58,29 @@ test('source or frozen-input drift fails before output; dirty or prebuilt data c
   withFixture(f=>{f.assertStable=()=>writeFileSync(join(f.input,'assets/index-a.js'),'changed');assert.throws(()=>packageUnified(f),/input changed/);assert.equal(existsSync(f.output),false);});
   withFixture(f=>{assert.throws(()=>packageUnified({...f,mode:'release'}),/clean source/);assert.throws(()=>packageUnified({...f,mode:'release',sourceDirty:false}),/verified build/);assert.equal(existsSync(f.output),false);});
 });
-test('release gate still requires exact commit, 48 lessons, 33 textbook lessons, 579 pages, sixteen stages and both engines',()=>{
+test('legacy all-sixteen-passed gates cannot label a package as ready for publication',()=>{
   const source='a'.repeat(40),g={sourceCommit:source,lessons:48,textbookLessons:33,pages:579,stages:Array.from({length:16},()=>({status:'passed'})),browsers:{chromium:true,webkit:true}};
-  assert.doesNotThrow(()=>assertUnifiedAcceptance(g,source));
-  for(const invalid of [{...g,sourceCommit:'b'.repeat(40)},{...g,lessons:47},{...g,textbookLessons:32},{...g,pages:578},{...g,stages:g.stages.slice(1)},{...g,stages:g.stages.map((s,i)=>i===2?{status:'pending'}:s)},{...g,browsers:{chromium:true}}])assert.throws(()=>assertUnifiedAcceptance(invalid,source));
+  assert.throws(()=>assertUnifiedAcceptance(g,source),/actual repository context/);
+  withFixture(f=>assert.throws(()=>packageUnified({...f,mode:'release',sourceDirty:false,buildProvenance:'built-from-recorded-worktree'}),/pre-publication readiness/));
+});
+test('release freeze matches every native-tested build input byte and path while publication stays pending',()=>{
+  const releaseFixture=f=>({...f,mode:'release',sourceDirty:false,buildProvenance:'built-from-recorded-worktree',releaseReadiness:{schemaVersion:2,phase:'pre-publication',publicationApproved:false,deployed:false,stage16:'awaiting-authorization',runtimeSourceSnapshotSHA256:f.sourceSnapshot.sha256,testedBuildInputFiles:walkFiles(f.input).map(path=>{const bytes=readFileSync(join(f.input,path));return {path,bytes:bytes.length,sha256:hash(bytes)};})}});
+  withFixture(f=>{
+    const release=releaseFixture(f),result=packageUnified(release);
+    assert.equal(result.mode,'release');assert.equal(result.releaseReadiness.publicationApproved,false);assert.equal(result.releaseReadiness.deployed,false);
+    assert.deepEqual(result.inputFiles,release.releaseReadiness.testedBuildInputFiles);
+    assert.equal(result.inputFiles.some(file=>file.path==='content-manifest.json'),true);
+    assert.equal(result.inputFiles.some(file=>file.path==='course-engine/unified-release-manifest.json'),false);
+  });
+  for(const kind of ['changed','same-length-replacement','extra','missing','changed-content-manifest'])withFixture(f=>{
+    const release=releaseFixture(f);
+    if(kind==='changed')writeFileSync(join(f.input,'assets/index-a.js'),'changed build from the same source');
+    if(kind==='same-length-replacement')writeFileSync(join(f.input,'assets/index-a.js'),'export const ok=2;');
+    if(kind==='extra')writeFileSync(join(f.input,'assets/extra.js'),'extra build file');
+    if(kind==='missing')rmSync(join(f.input,'assets/index-a.css'));
+    if(kind==='changed-content-manifest')writeFileSync(join(f.input,'content-manifest.json'),readFileSync(join(f.input,'content-manifest.json'),'utf8')+'\n');
+    assert.throws(()=>packageUnified(release),/exact native-tested files/,kind);assert.equal(existsSync(f.output),false,kind);
+  });
 });
 test('actual current crop registry uses lesson 4 current version and rejects path traversal/private sources',()=>{
   const repo=resolve(import.meta.dirname,'../..'),figures=currentSourceFigures(repo);assert.equal(currentAuxiliaryIllustrations(repo).size,438);assert.equal(figures.size,150);assert.equal([...figures.values()].filter(f=>f.lesson===4).length,13);

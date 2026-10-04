@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "blockedBeforePage",
+  "nativeFlowsExecuted": 0,
+  "originalErrorContexts": [
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-output/official-vi-history-legacy-19443-raw-task-and-answer-visible-chromium/error-context.md",
+      "bytes": 547,
+      "sha256": "3f97dc7413266ea75200a75b41cd457ec6c3e34528e33ec6c17362820e39a0bb",
+      "error": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium",
+      "scope": "Chromium launch failed before page, no learning flow executed"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-output/official-vi-history-listen-6e55f-nd-text-after-native-reload-chromium/error-context.md",
+      "bytes": 549,
+      "sha256": "601372a7096fed2d8175ed8aea3fcc04420be7b69a1be0f5f2f567988c9ca19f",
+      "error": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium",
+      "scope": "Chromium launch failed before page, no learning flow executed"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-output/official-vi-history-synthe-09bda-ith-original-answer-indices-chromium/error-context.md",
+      "bytes": 572,
+      "sha256": "bc9fdeb70a223979acd236551c485e1511ddb854f29c516ce0bd15848a7e1017",
+      "error": "Error: browserType.launch: Failed to launch chromium because executable doesn't exist at /workspace/scratch/9b691105a4f2/browser-runtime/chromium",
+      "scope": "Chromium launch failed before page, no learning flow executed"
+    }
+  ],
+  "misnamedCollectionReport": {
+    "file": "course-app/docs/resume-20261004/b10-hsk1-adapter/native-launch-blocked-results.json",
+    "sha256": "bf57e14d83876cd2e79ba0a8ca4a9f317ea950a23b40155487502dabc8a2ebf8",
+    "actualStats": {
+      "startTime": "2026-10-04T20:32:15.550Z",
+      "duration": 42.30699999999996,
+      "expected": 0,
+      "skipped": 6,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "scope": "This retained file was overwritten by --list and is collection-only; excluded from native execution evidence."
+  },
+  "browserRestorationAttemptedAfterRootBlock": false
+}

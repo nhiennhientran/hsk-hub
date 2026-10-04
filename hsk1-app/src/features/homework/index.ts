@@ -1,3 +1,4 @@
+import { projectHomeworkQuestion } from '../../services/content/vi-presentation-state.ts';
 import { mountHomework30 } from './index30.ts';
 import type { HomeworkPart } from '../../services/content/homework.ts';
 import type { FeatureModule } from '../../app/contracts.ts';
@@ -148,6 +149,7 @@ const mountLegacy: FeatureModule['mount'] = (host, context) => {
       const model = homework.read();
       receipt?.dispose(); body.hidden = true; controls.hidden = true;
       receipt = createReceipt(article, { lesson: lesson.id, lessonTitle: lesson.title, part, questions: model.questions,
+        displayQuestions: { first: model.questions.map(q => projectHomeworkQuestion(session.store.snapshot().data, 'legacy', lesson.id, part, q, model.questions, 'first')), latest: model.questions.map(q => projectHomeworkQuestion(session.store.snapshot().data, 'legacy', lesson.id, part, q, model.questions, 'latest')) },
         homeworkVersion: 'legacy', profile: model.profile, first: model.group?.first ?? null, latest: model.group?.latest ?? null, selected,
         onClose() { receipt?.dispose(); receipt = undefined; body.hidden = false; controls.hidden = false; article.querySelector<HTMLButtonElement>(selected === 'first' ? '#receipt-first' : '#receipt-latest')?.focus(); } });
     }
@@ -224,7 +226,8 @@ const mountLegacy: FeatureModule['mount'] = (host, context) => {
       const submitted = model.group?.attempt;
       if (part === 'translation') exercise.append(element('p', copy.manualHint));
       else exercise.append(element('p', copy.automaticHint));
-      for (const [index, question] of model.questions.entries()) {
+      for (const [index, rawQuestion] of model.questions.entries()) {
+        const question = projectHomeworkQuestion(session.store.snapshot().data, 'legacy', lesson.id, part, rawQuestion, model.questions);
         const card = element('article'); card.className = 'homework-question'; card.dataset.questionId = question.id;
         card.append(element('h3', `${bilingualText(copy.question(index + 1))}. ${question.prompt}`));
         if (question.stem) { const stem = element('p', question.stem); stem.className = 'homework-stem'; card.append(stem); }

@@ -1,0 +1,87 @@
+{
+  "executedAt": "2026-10-04T20:42:44.252Z",
+  "scope": "synthetic unit pipeline only",
+  "results": [
+    {
+      "id": "partial-listening-reset-retained-submission",
+      "status": "observed",
+      "expected": "reset accepted; lesson 2 answer and display preserved",
+      "outcome": "accepted",
+      "retained": true
+    },
+    {
+      "id": "cap20-forged-first-uses-latest-binding",
+      "status": "observed",
+      "expected": "reject merged first/latest logical submissions",
+      "outcome": "rejected",
+      "error": "Vietnamese presentation binding is invalid."
+    },
+    {
+      "id": "exactly20-first-binding-remains-first-history-entry",
+      "status": "observed",
+      "outcome": "legitimate first=history[0] accepted; first/latest distinct"
+    },
+    {
+      "id": "old-baseline-first-new-display-latest-preserves-null-first",
+      "status": "observed",
+      "outcome": "baseline first remains null; new latest bound independently"
+    },
+    {
+      "id": "cross-context-binding-rejected",
+      "status": "observed",
+      "outcome": "rejected-as-required"
+    },
+    {
+      "id": "original-option-index-out-of-range-rejected",
+      "status": "observed",
+      "outcome": "rejected-as-required"
+    },
+    {
+      "id": "baseline-round-started-before-new-registry-stays-unbound",
+      "status": "observed",
+      "outcome": "baseline-preserved"
+    },
+    {
+      "id": "saved-presentation-chinese-answer-option",
+      "status": "observed",
+      "expected": "reject sealed Chinese answer option as VI leaf",
+      "outcome": "rejected",
+      "error": "Vietnamese presentation binding is invalid."
+    },
+    {
+      "id": "duplicate-revised-listening-option-label",
+      "status": "observed",
+      "expected": "reject ambiguous duplicate option text",
+      "outcome": "rejected",
+      "error": "VI option labels are ambiguous."
+    },
+    {
+      "id": "paired-complete-import-reset-restore-with-presentation",
+      "status": "observed",
+      "outcome": "preserved-through-complete-import-reset-restore"
+    },
+    {
+      "id": "utf8-metadata-near-actual-eight-mib-byte-budget",
+      "status": "observed",
+      "outcome": "below-limit accepted; above-limit rejected",
+      "belowMetadataBytes": 7805513,
+      "aboveMetadataBytes": 10394763,
+      "belowBackupBytes": 7842959
+    },
+    {
+      "id": "paired-recovery-with-vi-crash-after-ran_hsk1_modular_v1",
+      "status": "observed",
+      "outcome": "rolled back primary display and raw together"
+    },
+    {
+      "id": "paired-recovery-with-vi-crash-after-ran_hsk1_textbook_source_v1",
+      "status": "observed",
+      "outcome": "completed both domains; display/raw/source preserved"
+    },
+    {
+      "id": "cooperating-two-primary-tabs-keep-conflicting-display-live-unsaved",
+      "status": "observed",
+      "outcome": "tab B durable; tab A raw+display remain matching exportable unsaved candidate"
+    }
+  ]
+}

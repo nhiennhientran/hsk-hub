@@ -1,0 +1,27 @@
+{
+  "reconstruction": [
+    {
+      "file": "hsk1-app/src/services/content/official-vi-revisions.ts",
+      "addedText": " || manifest.revisionId.length > 256",
+      "occurrences": 1,
+      "currentSHA256": "c488eabcc22449a5734d28b75b5fdc0b91de2bfdf54427160bed38c9a9bf9f97",
+      "v2SHA256": "bdccf821877cb503bae612bbd00a822e2734ab5ba8985af3164e29bd3f7ed1a9",
+      "reconstructedV2SHA256": "bdccf821877cb503bae612bbd00a822e2734ab5ba8985af3164e29bd3f7ed1a9",
+      "exactlyOnlyRecordedAddition": true
+    },
+    {
+      "file": "hsk1-app/tests/official-vi-revisions.test.mjs",
+      "addedText": "  await assert.rejects(fixtureRegistry('x'.repeat(257), inputs.fields));\n",
+      "occurrences": 1,
+      "currentSHA256": "2fbdeef29cfb402a99d4df1607d8523e535794d0bebdabd0d4dfb8f257d8a4d8",
+      "v2SHA256": "c9ca560f9a4e6735bb7e12acc3309fb18d902b2842967529a221b7e691b33437",
+      "reconstructedV2SHA256": "c9ca560f9a4e6735bb7e12acc3309fb18d902b2842967529a221b7e691b33437",
+      "exactlyOnlyRecordedAddition": true
+    }
+  ],
+  "changedV2Inputs": [
+    "hsk1-app/src/services/content/official-vi-revisions.ts",
+    "hsk1-app/tests/official-vi-revisions.test.mjs"
+  ],
+  "expectedChangesOnly": true
+}

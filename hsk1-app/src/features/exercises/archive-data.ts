@@ -1,16 +1,21 @@
+import type { AppData } from '../../services/storage/compatibility.ts';
+import { applyViSnapshot } from '../../services/content/official-vi-revisions.ts';
+import { homeworkDisplaySnapshot } from '../../services/content/vi-presentation-state.ts';
 import type { Route } from '../../app/contracts.ts';
 import { normalizeRoute } from '../../app/router.ts';
 import type { Answer, HomeworkAttempt, HomeworkState } from '../../domain/types.ts';
 import type { ExerciseCatalogue, ExerciseEntry, ExerciseTask } from '../../domain/exercises/catalogue.ts';
 import type { ExercisesState, ExerciseSubmission } from '../../domain/exercises/engine.ts';
 
+export type ArchivedSubmission = ExerciseSubmission & { readonly displayTask?: ExerciseTask; readonly displayBindingId?: string };
 export interface ArchivedTimeline {
   readonly source: 'exercises' | 'homework';
-  readonly first?: ExerciseSubmission;
-  readonly latest?: ExerciseSubmission;
+  readonly first?: ArchivedSubmission;
+  readonly latest?: ArchivedSubmission;
   /** Saved sequence, not sorted by wall clock; the old homework history can be capped. */
-  readonly submissions: readonly ExerciseSubmission[];
+  readonly submissions: readonly ArchivedSubmission[];
   readonly draft?: Answer;
+  readonly displayDraftTask?: ExerciseTask;
 }
 export interface ArchivedExercise {
   readonly entry: ExerciseEntry;
@@ -28,7 +33,7 @@ function homeworkSubmission(attempt: HomeworkAttempt | null, id: string): Exerci
 }
 
 /** Read-only projection. Never grade, migrate, update navigation, or fill missing answers. */
-export function archivedExercises(catalogue: ExerciseCatalogue, exercises: ExercisesState, route: Route, homework?: HomeworkState): ArchivedExercise[] {
+export function archivedExercises(catalogue: ExerciseCatalogue, exercises: ExercisesState, route: Route, homework?: HomeworkState, data?: AppData): ArchivedExercise[] {
   const scope = normalizeRoute({ ...route, feature: 'exercises' });
   return catalogue.entries.flatMap(entry => {
     if (entry.set !== scope.exerciseSet || entry.lesson !== scope.lesson || entry.group !== scope.exerciseGroup) return [];
@@ -40,11 +45,19 @@ export function archivedExercises(catalogue: ExerciseCatalogue, exercises: Exerc
     if (entry.set === 'homework-review' && homework && (entry.group === 'choice' || entry.group === 'sort')) {
       const group = homework.lessons[String(entry.lesson)]?.[entry.group];
       if (group) {
-        const first = homeworkSubmission(group.first, entry.oldId);
-        const latest = homeworkSubmission(group.latest, entry.oldId);
-        const submissions = group.history.flatMap(attempt => { const saved = homeworkSubmission(attempt, entry.oldId); return saved ? [saved] : []; });
+        const display = (saved: ExerciseSubmission | undefined, slot: 'first' | 'latest' | number): ArchivedSubmission | undefined => {
+          if (!saved || !data) return saved;
+          const snapshot = homeworkDisplaySnapshot(data, 'legacy', entry.lesson, entry.group, [], slot);
+          if (!snapshot) return saved;
+          const group = data.viPresentation?.homework[`legacy:${entry.lesson}:${entry.group}`];
+          const displayBindingId = typeof slot === 'number' ? group?.history[slot] : group?.[slot];
+          return { ...saved, displayTask: applyViSnapshot(task, entry.oldId, 'homework', snapshot), ...(displayBindingId ? { displayBindingId } : {}) };
+        };
+        const first = display(homeworkSubmission(group.first, entry.oldId), 'first');
+        const latest = display(homeworkSubmission(group.latest, entry.oldId), 'latest');
+        const submissions = group.history.flatMap((attempt, index) => { const saved = display(homeworkSubmission(attempt, entry.oldId), index); return saved ? [saved] : []; });
         const hasDraft = !group.attempt && Object.hasOwn(group.draft, entry.oldId);
-        if (first || latest || submissions.length || hasDraft) timelines.push({ source: 'homework', first, latest, submissions, ...(hasDraft ? { draft: structuredClone(group.draft[entry.oldId]!) } : {}) });
+        if (first || latest || submissions.length || hasDraft) timelines.push({ source: 'homework', first, latest, submissions, ...(hasDraft ? { draft: structuredClone(group.draft[entry.oldId]!), ...(data ? { displayDraftTask: applyViSnapshot(task, entry.oldId, 'homework', homeworkDisplaySnapshot(data, 'legacy', entry.lesson, entry.group, [], 'draft')) } : {}) } : {}) });
       }
     }
     const submissions = structuredClone(exercises.records[task.id]?.submissions ?? []);

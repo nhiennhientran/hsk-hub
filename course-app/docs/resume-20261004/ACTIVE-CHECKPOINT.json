@@ -1,15 +1,17 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-04T20:30:07.608664+00:00",
+  "updatedAt": "2026-10-04T21:18:11.881890+00:00",
   "status": "running",
   "authorization": "2026-10-04T23:09:46+08:00; autonomous execution; confirmation before production publication",
   "branch": "work/hsk-autonomous-execution-20261004",
-  "lastVerifiedRemoteCommit": "63c30de05e3933b9cae50b083d3cb883def3a0a2",
+  "lastVerifiedRemoteCommit": "647d7a1449c35437d6e0b1a0ebf4db1a56fdac26",
   "sourceBaseline": "387aa7b6145e80f983f331d8b55cd2b2b26d6990",
   "phase": "B",
   "currentSteps": [
     10,
-    12
+    11,
+    12,
+    13
   ],
   "protectedHsk1Files": {
     "textbook.json": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
@@ -52,9 +54,10 @@
     "Current835e officialVI inventory independent final accepted837sources/46463field targets/4293consumers including918actualmappedactivities; formal semantic decisions remain pending."
   ],
   "inProgress": [
-    "B10 three official-source pilots and per-consumer comparisons with independent original-page review.",
-    "B10 strict two-engine VI display adapters; HSK1 atomic optional presentation history, no active unreviewed manifest.",
-    "Three observed narrow-layout limitations queued for B14/C15 and required cleared before publication."
+    "B10 inactive adapters statically and unit-tested, exact-head real browser CI pending",
+    "B11–B13 official source author batches and independent original-page review in parallel",
+    "B10 pilot manifest complete-source and derived-tail independent review, no active unaccepted VI",
+    "B14/C15 three known narrow-layout UI followups and original/current source-edition labels required before publication"
   ],
   "notYetCertified": [
     "Official Vietnamese full comparison",
@@ -65,7 +68,7 @@
     "Physical devices",
     "Production publication"
   ],
-  "nextExecutableAction": "Independently close H1L4/H2L2/H3L10 original-source pilots, compareactualwebsite consumers, implementinactive strict display/history adapters, independently review eachproposal beforeactivation;continueall48lessons inacceptedbatches.",
+  "nextExecutableAction": "Commit exact inactive adapters and independent guard repairs; run fresh Chromium/WebKit CI; rebuild AST-complete inventory and continue official source batches/pilot manifests",
   "productionPublished": false,
   "audioPilot": {
     "branch": "work/hsk-audio-asr-pilot-20261004",
@@ -74,8 +77,8 @@
     "status": "Four actual workflows and full1745targetledger accepted; two reviewed sentence fragments actualbothengines8passed CI37226015769, source pin retained; no further word clips or human listening.",
     "productionPromotion": false
   },
-  "lastVerifiedRemoteBranch": "work/hsk-a9-guarded-checkpoint-20261004",
-  "lastVerifiedRemoteTree": "a80360230b94da2a40a83c405a6bc06ea2f155f3",
+  "lastVerifiedRemoteBranch": "work/hsk-b10-source-checkpoint-20261004",
+  "lastVerifiedRemoteTree": "10c12f0335a19c58ab47feb22c3fcb2dee5611ba",
   "supplementaryCI": {
     "runId": 37226015769,
     "url": "https://github.com/nhiennhientran/hsk-hub/actions/runs/37226015769",
@@ -100,16 +103,16 @@
   "sourcePreparation": {
     "hsk1L04": {
       "sourceOccurrences": 105,
-      "status": "authortranscribed-independent-source-reviewpending"
+      "status": "105-source-occurrences-independently-accepted-website-pipeline-pending"
     },
     "hsk2L02": {
       "sourceOccurrences": 104,
-      "status": "authortranscribed-independent-source-reviewpending"
+      "status": "104-source-occurrences-independently-accepted-website-proposals-under-independent-scope-review"
     },
     "hsk3L10": {
       "bodyOccurrences": 93,
       "appendixLines": 26,
-      "status": "authortranscribed-independent-source-reviewpending"
+      "status": "119-source-occurrences-independently-accepted-135-private-manifest-drafts-under-third-review"
     },
     "websiteVIAlignmentAccepted": 0,
     "productionVIChanges": 0
@@ -120,7 +123,7 @@
     "sourceCommit": "835e5bd41045655cc2724ba2ba59235064ff92cf",
     "status": "engineering-freeze-accepted-for-phase-B-with-explicit-release-UI-followups"
   },
-  "latestCheckpoint": "B10-SOURCE-CHECKPOINT.json",
+  "latestCheckpoint": "B10-RUNTIME-CHECKPOINT.json",
   "nextActions": [
     "Finish independently reviewed adapters and run actual Chromium/WebKit CI",
     "Rebuild actual source VI inventory with AST repair",

@@ -20,6 +20,7 @@ import {
   lexiconFor,
   lessonSummaries,
   loadLexicon,
+  prepareViCourse,
 } from "./content.ts";
 import {
   createLearningStore,
@@ -467,6 +468,8 @@ async function render() {
       return;
     }
     const requestedConfig=config,requestedRoute=route;
+    await prepareViCourse(requestedConfig);
+    if(token!==generation||config!==requestedConfig)return;
     const wanted =
       route.view === "courses" || route.view === "progress"
         ? []
@@ -947,6 +950,7 @@ function renderReceipt(
     if (!a) return;
     content.append(
       el("h3", lessonTitle(l)),
+      el("p",copy("课程标题按当前内容显示；题目仅使用本次记录保存的快照。","Tiêu đề bài theo nội dung hiện tại; câu hỏi chỉ lấy từ ảnh chụp đã lưu của lần nộp này.")),
       el("p", `${a.profile.name} · ${a.profile.className}`),
       el("p", `HSK ${level} · 2026.1 · ${new Date(a.at).toLocaleString()}`),
       el(
