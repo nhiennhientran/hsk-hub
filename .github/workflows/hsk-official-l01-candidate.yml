@@ -33,8 +33,7 @@ jobs:
         working-directory: hsk1-app
         run: |
           node --experimental-strip-types --test --test-reporter=tap tests/official-vi-l01-candidate.test.mjs 2>&1 | tee "$HSK_L01_OUTPUT/candidate-units.log"
-          npm run check
-          npm run index:check
+          npm run build
           npm run assets:check
           node node_modules/.bin/tsc -p tests/browser/tsconfig.l01-candidate.json
       - name: Install real browser and Chinese fonts
