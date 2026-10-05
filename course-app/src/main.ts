@@ -21,11 +21,15 @@ import {
   lessonSummaries,
   loadLexicon,
   prepareViCourse,
+  hasActiveViDisplay,
 } from "./content.ts";
 import {
   createLearningStore,
   parts,
   grade,
+  resolveDraftQuestions,
+  captureDraftAnswer,
+  acknowledgeDraftQuestions,
   type Attempt,
 } from "./state.ts";
 import {
@@ -337,6 +341,7 @@ function lessonNav() {
   select.onchange = async () => {
     if (await flush())
       location.hash = routeHref({ ...route, lesson: Number(select.value) });
+    else select.value = String(route.lesson);
   };
   row.append(
     label,
@@ -492,6 +497,7 @@ async function render() {
     else if (route.view === "progress") renderProgress();
     else if (route.view === "listening")
       cleanup = mountListening(main, loaded, {
+        requireLegacyReview: hasActiveViDisplay(config),
         state: () => store.snapshot().data,
         edit,
         flush,
@@ -659,7 +665,7 @@ function renderHomework(l: Lesson, independent = false) {
     : "vocabGrammar";
   if (independent) part = "listening";
   const key = l.id + ":" + (independent ? "independent-listening" : part),
-    questions = independent
+    currentQuestions = independent
       ? l.listening
       : l.homework.filter((q) => q.part === part),
     kind = independent ? "listening" : "homework";
@@ -683,28 +689,57 @@ function renderHomework(l: Lesson, independent = false) {
     );
   }
   const state = store.snapshot().data,
+    draftView = resolveDraftQuestions(currentQuestions, state.drafts[key], hasActiveViDisplay(config)),
+    questions = draftView.questions,
+    draftBlocked = draftView.status === "missing" || draftView.status === "incompatible",
     answers: Record<string, Answer> = structuredClone(
       state.drafts[key]?.answers ?? {},
     );
+  if (draftView.status === "missing") {
+    const note = el("section");
+    note.setAttribute("role", "status");
+    note.append(
+      el("p", copy(
+        "旧草稿没有当时的题目快照，答案已保留。当前显示本版题目，请核对后选择继续。",
+        "Bản nháp cũ không có ảnh chụp câu hỏi lúc đó; câu trả lời vẫn được giữ. Các câu hỏi hiện tại được hiển thị bên dưới; hãy kiểm tra rồi chọn tiếp tục.",
+      )),
+      button(copy("按当前题目继续草稿", "Tiếp tục bản nháp với câu hỏi hiện tại"), async () => {
+        try {
+          const acknowledged = acknowledgeDraftQuestions(state.drafts[key]!, currentQuestions, Date.now());
+          edit(s => { s.drafts[key] = acknowledged; });
+          if (await flush()) await render();
+        } catch (error) {
+          message(error instanceof Error ? error.message : String(error));
+        }
+      }),
+    );
+    main.append(note);
+  } else if (draftView.status === "incompatible") {
+    main.append(el("p", copy(
+      "草稿保存的题目已与本版不同，保留原题和答案供查看，不重新评分。请先下载备份，再用“重新作答（保留记录）”开始本版作业。",
+      "Câu hỏi đã lưu trong bản nháp khác với bản hiện tại. Câu hỏi và câu trả lời cũ được giữ để xem, không chấm lại. Hãy tải bản sao lưu, rồi chọn “Làm lại (giữ lịch sử)” để bắt đầu bài tập hiện tại.",
+    )));
+  }
   const form = el("form");
   form.addEventListener('compositionstart', () => pendingSubmission?.abort());
   form.id = "assignment";
+  form.dataset.draftQuestionSnapshot = draftView.status;
   const record = state[kind][key];
   const info = el("p");
   info.setAttribute("role", "status");
   form.append(info);
   const saveAnswer = (id: string, value: Answer) => {
+    if (draftBlocked) return;
     answers[id] = value;
     edit((s) => {
-      s.drafts[key] = {
-        answers: structuredClone(answers),
-        updatedAt: Date.now(),
-      };
+      s.drafts[key] = captureDraftAnswer(s.drafts[key], currentQuestions, id, value, Date.now(), hasActiveViDisplay(config));
     });
+    form.dataset.draftQuestionSnapshot = "saved";
   };
   for (const [index, q] of questions.entries()) {
     const field = el("fieldset", undefined, "question");
     field.dataset.questionId = q.id;
+    field.disabled = draftBlocked;
     const legend = el(
       "legend",
       copy(`${index + 1}. ${q.prompt.zh}`, `${index + 1}. ${q.prompt.vi}`),
@@ -800,6 +835,7 @@ function renderHomework(l: Lesson, independent = false) {
     "primary",
   );
   submit.type = "submit";
+  submit.disabled = draftBlocked;
   form.append(submit);
   form.addEventListener("submit", async (e) => {
     e.preventDefault();

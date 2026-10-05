@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-10-05T08:21:26.006418+00:00",
+  "phase": "engineering-continuation-targeted-native-pending",
+  "baselineCommit": "1874b4a42ed0bb5afa6a0ed1d17bd882ed85d36b",
+  "userCadence": "Approximately one hour: preserve and report; continue only after user confirmation",
+  "publicationApproved": false,
+  "deployed": false,
+  "sourceAuditLessons": 48,
+  "websiteOfficialVIAcceptedLessons": 0,
+  "runtimeSourcePins": [
+    {
+      "path": "course-app/src/attempt-commit.ts",
+      "bytes": 1990,
+      "sha256": "c6905b84480b1510bf69109c80f110ecb78df4c80e31c708335986f5b19702bd"
+    },
+    {
+      "path": "course-app/src/content.ts",
+      "bytes": 8415,
+      "sha256": "d478ad7b4b799249ac7aa0890fa730e642955dc9399d2dba22ea984a7f4b8137"
+    },
+    {
+      "path": "course-app/src/listening-view.ts",
+      "bytes": 14769,
+      "sha256": "1a022fe946a6e4272fcf3d9d0e985ea4e5a98fe206ec934537d27fec2bc2c80b"
+    },
+    {
+      "path": "course-app/src/main.ts",
+      "bytes": 64491,
+      "sha256": "e4b627f9781e91ddb646c3b273f662bd988393f329f2ea03daab7d08cd717a9d"
+    },
+    {
+      "path": "course-app/src/state.ts",
+      "bytes": 19138,
+      "sha256": "dfecdb254f0987ffa8f8e1e6bc8787f63477ed02771fd3d75a0d5c24fb3ab896"
+    },
+    {
+      "path": "hsk1-app/src/services/content/official-vi-revisions.ts",
+      "bytes": 32263,
+      "sha256": "4454eb4604f8415d4dd83ae1ba02a124511052f2ca411971991a79b53db16019"
+    },
+    {
+      "path": "hsk1-app/src/services/source-activities/content.ts",
+      "bytes": 5940,
+      "sha256": "cc8b8a0d94da8ce0e14007cbd5752ac70b2376ba88c195099612c20df893d1ad"
+    },
+    {
+      "path": "hsk1-app/src/features/source-activities/index.ts",
+      "bytes": 19920,
+      "sha256": "2ebfa24eb5bbc4d2f53434ec6d85965482392e55d54636969af0467625ee94a4"
+    },
+    {
+      "path": "hsk1-app/src/features/source-activities/figures.ts",
+      "bytes": 1692,
+      "sha256": "20c815f042a37b376af6ea76e2b60287dca82b249d5bd72497ad152dd36d6c8b"
+    }
+  ],
+  "independentReviewPins": [
+    {
+      "path": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-visual/B14-manual-visual-review.json",
+      "bytes": 404661,
+      "sha256": "1ba9c069b535bc87e0330dfce4749698cc38636bcca33e8aff593c8cf6433f68"
+    },
+    {
+      "path": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-visual/inventory-independent.json",
+      "bytes": 16682,
+      "sha256": "1f08ff312d549f415cdf7fcf27e5a4bc5be26a62869d427fbdf4b726fbabea78"
+    },
+    {
+      "path": "/workspace/scratch/28b55072841a/source-recovery-work/continue-mapping/independent-source-adapter-review.json",
+      "bytes": 7119,
+      "sha256": "75deceac7879d06792bb9ef0d3137a2140fc5963093c8a84305346f57bae20b1"
+    },
+    {
+      "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-20261005/qa-history-flow-independent/review.json",
+      "bytes": 5723,
+      "sha256": "b9ec4901748982a84f86832267774c667081f8a237a4c88adfce2059cdee2c16"
+    },
+    {
+      "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-20261005/history-review/history-review-current.json",
+      "bytes": 7181,
+      "sha256": "d52b8aa84f75faf6b3f87a1bc2b1bb8c33b9956688e717effcf1759689c7c834"
+    }
+  ],
+  "fullUnits": {
+    "course": 225,
+    "hsk1": 638
+  },
+  "native": {
+    "status": "pending",
+    "collectedPerEngine": {
+      "shared": 14,
+      "hsk1": 4
+    },
+    "localBrowserInstall": "failed-download"
+  },
+  "nextAction": "Execute the exact candidate on Chromium and WebKit, save this unit, then await stage confirmation"
+}

@@ -1,0 +1,4200 @@
+{
+  "schemaVersion": 1,
+  "createdAtUTC": "2026-10-05T08:08:42.503833+00:00",
+  "status": "new-deterministic-inventory-author-validated-independent-review-pending",
+  "version": "continue-20261005-inventory-new-baseline-1874b4a",
+  "sourceHEAD": "1874b4a42ed0bb5afa6a0ed1d17bd882ed85d36b",
+  "sourceTree": "96f74c550be656c72ef368d30ab702d0a5f2d370",
+  "sourceMode": "new extraction from immutable git cat-file input snapshot, not current mutable worktree",
+  "currentGitHEADAtManifest": "1874b4a42ed0bb5afa6a0ed1d17bd882ed85d36b",
+  "inventoryCandidates": 55430,
+  "semanticConsumers": 4293,
+  "runtimeProducerInputs": 840,
+  "materializedSourceFiles": 1278,
+  "allAuthorChecksPassed": true,
+  "checks": [
+    {
+      "name": "declared source head/tree equal exact materialization",
+      "passed": true
+    },
+    {
+      "name": "840 declared producer inputs all match Git commit",
+      "passed": true
+    },
+    {
+      "name": "all historical field identities unchanged",
+      "passed": true
+    },
+    {
+      "name": "all historical semantic consumer projections unchanged",
+      "passed": true
+    },
+    {
+      "name": "author structural validation has no failures",
+      "passed": true
+    },
+    {
+      "name": "deterministic new gzip equals three recorded historical fingerprints",
+      "passed": true
+    }
+  ],
+  "independentReview": {
+    "performed": false,
+    "reviewer": null
+  },
+  "historicalPayload": {
+    "originalPathChanged": false,
+    "originalArtifactRetrieved": false,
+    "missingOriginalPath": "/workspace/scratch/28b55072841a/hsk-hub-recovery-v2/course-app/docs/resume-20261004/vi-inventory-b10/inventory.json.gz",
+    "generatedBytes": 12667967,
+    "generatedSHA256": "e9cec5c4be50577b5c45d68a81ee3c9d4127dca021dd63ec3c692dd660611966",
+    "generatedGitBlobSHA": "5544c811bc98fa0814e7be0f797af5c18d5ce895",
+    "recordedExpectedBytes": 12667967,
+    "recordedExpectedSHA256": "e9cec5c4be50577b5c45d68a81ee3c9d4127dca021dd63ec3c692dd660611966",
+    "recordedExpectedGitBlobSHA": "5544c811bc98fa0814e7be0f797af5c18d5ce895",
+    "allRecordedFingerprintsMatch": true,
+    "provenance": "deterministic regeneration after restoration; no original archive retrieval receipt",
+    "oldVIValueLimitation": "Direct reading of the historical original artifact remains unavailable. New extraction supplies every baseline VI value and cryptographically matches the historical payload fingerprints; independent reproducibility review is still pending."
+  },
+  "scope": {
+    "definition": "Field occurrences and producer candidates; counts do not imply unique meanings, visible reachability, or textbook matches.",
+    "primaryLessons": 48,
+    "hsk1": 15,
+    "hsk2": 15,
+    "hsk3": 18,
+    "retainedLegacyPracticeQuestions": 1360,
+    "historicalAndMetadataConsumersAreSeparate": true,
+    "pastLearnerStorageRead": false,
+    "sourceTextbookAuditReperformed": false,
+    "websiteSemanticAdoptionCertified": false,
+    "nativeBrowserAcceptanceCertified": false,
+    "supplement": {
+      "schemaVersion": 1,
+      "status": "author-scoped-supplement-awaiting-independent-review",
+      "extractionBuilderSHA256": "be221bfbd907a15945166290f6e410fa517544834145fcf6e7d3da01f8365602",
+      "baselineCandidates": 55430,
+      "supplementalCandidates": 835,
+      "retainedProducerCandidates": 832,
+      "htmlMetadataCandidates": 3,
+      "expandedCandidates": 56265,
+      "inputs": [
+        {
+          "file": "new-hsk1/assets/app-packed.js",
+          "sha256": "c7464200c025b17517c1064f7766cf3eacbc49171bbd69c568f2221b4c93930f",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/app.js",
+          "sha256": "80b6bac2c2c82ee5d5e789c79b4a1340771708e6c813b696fe7ba37f69a3d163",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hanzi-curriculum.js",
+          "sha256": "db7065b77e47bf8de744ce1c82292dddf9015bb071027b56a8ab8c576083d935",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-content-audit.js",
+          "sha256": "d1907644fd59ee89a4101262903de31d000e2b3d2cef965f5c1975e54d716ac9",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-grammar-canonical.js",
+          "sha256": "e6368ca519757519f4ab9c53e2f71fedff2e10a6632de76b00d774898601799a",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-nav-fix.js",
+          "sha256": "be14e74b3391e63084235a2c4ba3a5a22c9346eb280fbcad8e7dd5c44879bb2d",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-parity.js",
+          "sha256": "3c98dcfac28eca0d2e178e08c674353788e90ec5a43b44b03faef07a445feaa7",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-practice-audit.js",
+          "sha256": "c6bd2c5978ac95b955a23b563235c1650dd0212d1ae0366713ead377626319fb",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked-1.js",
+          "sha256": "3d71f82a8fdba16a786b40c13afed827c025a2d833c516a19982a461661e2fe1",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked-2.js",
+          "sha256": "a594cabdaf4b366f6d96eb7222d2f8ea01805eef2f5fb1ff757e745f95d23714",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked-3.js",
+          "sha256": "86ad1cc2af702a07f12e9176c684a8cc7ad08a5dbbfc899430397d53f8f4feb2",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked-4.js",
+          "sha256": "822e7ec422bb440f9fe551a974117dbb96f19b4996b8f6d16581f25e1ddc7b1d",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked-ui.js",
+          "sha256": "b8913cbb8ae07d7b1b03dbe1addd3aaff8ebc35bba17122297e34e911302b338",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked.js",
+          "sha256": "45a9ff5b7932b01e9e0b5c202195422398842aca7293e340a350a4a2404450bf",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/hsk4-trilingual-ui.js",
+          "sha256": "7411cb8ac13d3cc1beb92d0b201fe2d864c245b7d4ace6e3fa9aa0542b26d97c",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/lesson-core.js",
+          "sha256": "0b474d939001f655379734d51b7cfcd4b8c1816ea8b68c534491dfcbf7cce76e",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/lesson-menu-parity.js",
+          "sha256": "6755a00068b303eedea94e94cebdbbc6ac05779a495e80f5a316fce42b48dc08",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/lesson-packed.js",
+          "sha256": "ecfadcad815946ac87177fcbdb4e28e34cba909cfac40dd29b3712f2ebf1cd26",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/lesson-practice.js",
+          "sha256": "afd3c2821eba75a839eca240c7b6926003509af66a69e5cd9887ba813dfef9a3",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/practice-advanced.js",
+          "sha256": "f59527f00d017531c97e631bc34f69ef43adfb42b125175e21fb5767be627570",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/practice-explain.js",
+          "sha256": "6c12dbf99213e142896d5f9f0cf1ede2ddaf7163a2f4a542fce28ce7efe0aeef",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/reviewed-practice.js",
+          "sha256": "f53b119c6cae13c30cd120bf85db002129b2fe1ad4dc09b1029a1f444d8c660b",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/session-auth.js",
+          "sha256": "920d27a09b49e5a0bae55a8e889898292b8e2c7607b4857c8acd1f4a0d6e1599",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/site-shell.js",
+          "sha256": "2918d2224665ad11c1983ab76ea28ef7cbffbfd39b9448e7ed83aa6cf5131209",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/student-polish.js",
+          "sha256": "66219a29ce6ae914787b291a8cfff856824f978735ebcf72b31fca10a5b3f1c3",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/vocab-hanzi-panel.js",
+          "sha256": "73b606f75414e131567c6e790af79f59b8206d873f0cd40f5816d6c426392496",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/assets/vocab-unified.js",
+          "sha256": "5efa5358fa4672c84c2ed36b9a7fbd8b31d9f6a2fcbf67e151b483450ad42eed",
+          "format": "code",
+          "component": "retained-nested-assets-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        },
+        {
+          "file": "new-hsk1/index.html",
+          "sha256": "eb843ebc888c6832b3f30e796af0b13ab61bdeea6e40ff806fb4de3f98b700c7",
+          "format": "html",
+          "component": "retained-entry-supplement",
+          "state": "retained-route-runtime-candidate",
+          "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+          "consumers": [
+            "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+          ]
+        }
+      ],
+      "aliases": [
+        {
+          "file": "new-hsk1/assets/app-packed.js",
+          "counterpart": "assets/app-packed.js",
+          "bytes": 1851,
+          "sha256": "c7464200c025b17517c1064f7766cf3eacbc49171bbd69c568f2221b4c93930f",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/app.js",
+          "counterpart": "assets/app.js",
+          "bytes": 4260,
+          "sha256": "80b6bac2c2c82ee5d5e789c79b4a1340771708e6c813b696fe7ba37f69a3d163",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hanzi-curriculum.js",
+          "counterpart": "assets/hanzi-curriculum.js",
+          "bytes": 5672,
+          "sha256": "db7065b77e47bf8de744ce1c82292dddf9015bb071027b56a8ab8c576083d935",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hanzi-writer.min.js",
+          "classification": "excluded-third-party-or-packed-style-runtime",
+          "sha256": "17b11a1e025b780cb518d49b30faacc770dfa7fbc387aa3876e3e5c1bd31e642"
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-content-audit.js",
+          "counterpart": "assets/hsk2-content-audit.js",
+          "bytes": 11761,
+          "sha256": "d1907644fd59ee89a4101262903de31d000e2b3d2cef965f5c1975e54d716ac9",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-grammar-canonical.js",
+          "counterpart": "assets/hsk2-grammar-canonical.js",
+          "bytes": 2198,
+          "sha256": "e6368ca519757519f4ab9c53e2f71fedff2e10a6632de76b00d774898601799a",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-nav-fix.js",
+          "counterpart": "assets/hsk2-nav-fix.js",
+          "bytes": 1750,
+          "sha256": "be14e74b3391e63084235a2c4ba3a5a22c9346eb280fbcad8e7dd5c44879bb2d",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-parity.js",
+          "counterpart": "assets/hsk2-parity.js",
+          "bytes": 15681,
+          "sha256": "3c98dcfac28eca0d2e178e08c674353788e90ec5a43b44b03faef07a445feaa7",
+          "counterpartIsByteIdentical": false,
+          "classification": "distinct-retained-producer-with-different-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-practice-audit.js",
+          "counterpart": "assets/hsk2-practice-audit.js",
+          "bytes": 1393,
+          "sha256": "c6bd2c5978ac95b955a23b563235c1650dd0212d1ae0366713ead377626319fb",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked-1.js",
+          "counterpart": "assets/hsk2-textbook-locked-1.js",
+          "bytes": 6091,
+          "sha256": "3d71f82a8fdba16a786b40c13afed827c025a2d833c516a19982a461661e2fe1",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked-2.js",
+          "counterpart": "assets/hsk2-textbook-locked-2.js",
+          "bytes": 6091,
+          "sha256": "a594cabdaf4b366f6d96eb7222d2f8ea01805eef2f5fb1ff757e745f95d23714",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked-3.js",
+          "counterpart": "assets/hsk2-textbook-locked-3.js",
+          "bytes": 6091,
+          "sha256": "86ad1cc2af702a07f12e9176c684a8cc7ad08a5dbbfc899430397d53f8f4feb2",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked-4.js",
+          "counterpart": "assets/hsk2-textbook-locked-4.js",
+          "bytes": 4675,
+          "sha256": "822e7ec422bb440f9fe551a974117dbb96f19b4996b8f6d16581f25e1ddc7b1d",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked-ui.js",
+          "counterpart": "assets/hsk2-textbook-locked-ui.js",
+          "bytes": 1909,
+          "sha256": "b8913cbb8ae07d7b1b03dbe1addd3aaff8ebc35bba17122297e34e911302b338",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-textbook-locked.js",
+          "counterpart": "assets/hsk2-textbook-locked.js",
+          "bytes": 1718,
+          "sha256": "45a9ff5b7932b01e9e0b5c202195422398842aca7293e340a350a4a2404450bf",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/hsk4-trilingual-ui.js",
+          "counterpart": "assets/hsk4-trilingual-ui.js",
+          "bytes": 23980,
+          "sha256": "7411cb8ac13d3cc1beb92d0b201fe2d864c245b7d4ace6e3fa9aa0542b26d97c",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/lesson-core.js",
+          "counterpart": "assets/lesson-core.js",
+          "bytes": 17604,
+          "sha256": "0b474d939001f655379734d51b7cfcd4b8c1816ea8b68c534491dfcbf7cce76e",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/lesson-menu-parity.js",
+          "counterpart": "assets/lesson-menu-parity.js",
+          "bytes": 2508,
+          "sha256": "6755a00068b303eedea94e94cebdbbc6ac05779a495e80f5a316fce42b48dc08",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/lesson-packed.js",
+          "counterpart": "assets/lesson-packed.js",
+          "bytes": 12523,
+          "sha256": "ecfadcad815946ac87177fcbdb4e28e34cba909cfac40dd29b3712f2ebf1cd26",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/lesson-practice.js",
+          "counterpart": "assets/lesson-practice.js",
+          "bytes": 12194,
+          "sha256": "afd3c2821eba75a839eca240c7b6926003509af66a69e5cd9887ba813dfef9a3",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/pako.min.js",
+          "classification": "excluded-third-party-or-packed-style-runtime",
+          "sha256": "ede2693a4a6a5126b9d35669062b358ecab6ae7b9b86a1cf302feb45a8514907"
+        },
+        {
+          "file": "new-hsk1/assets/practice-advanced.js",
+          "counterpart": "assets/practice-advanced.js",
+          "bytes": 5858,
+          "sha256": "f59527f00d017531c97e631bc34f69ef43adfb42b125175e21fb5767be627570",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/practice-explain.js",
+          "counterpart": "assets/practice-explain.js",
+          "bytes": 8579,
+          "sha256": "6c12dbf99213e142896d5f9f0cf1ede2ddaf7163a2f4a542fce28ce7efe0aeef",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/reviewed-practice.js",
+          "counterpart": "assets/reviewed-practice.js",
+          "bytes": 11680,
+          "sha256": "f53b119c6cae13c30cd120bf85db002129b2fe1ad4dc09b1029a1f444d8c660b",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/session-auth.js",
+          "counterpart": "assets/session-auth.js",
+          "bytes": 7567,
+          "sha256": "920d27a09b49e5a0bae55a8e889898292b8e2c7607b4857c8acd1f4a0d6e1599",
+          "counterpartIsByteIdentical": false,
+          "classification": "distinct-retained-producer-with-different-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/site-shell.js",
+          "counterpart": "assets/site-shell.js",
+          "bytes": 11089,
+          "sha256": "2918d2224665ad11c1983ab76ea28ef7cbffbfd39b9448e7ed83aa6cf5131209",
+          "counterpartIsByteIdentical": false,
+          "classification": "distinct-retained-producer-with-different-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/student-polish.js",
+          "counterpart": "assets/student-polish.js",
+          "bytes": 12637,
+          "sha256": "66219a29ce6ae914787b291a8cfff856824f978735ebcf72b31fca10a5b3f1c3",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/style-packed.js",
+          "classification": "excluded-third-party-or-packed-style-runtime",
+          "sha256": "c387a58d8002d47da90436a72f931ea8026793a59b4bfbf6a5a4e297ec3b3389"
+        },
+        {
+          "file": "new-hsk1/assets/vocab-hanzi-panel.js",
+          "counterpart": "assets/vocab-hanzi-panel.js",
+          "bytes": 7611,
+          "sha256": "73b606f75414e131567c6e790af79f59b8206d873f0cd40f5816d6c426392496",
+          "counterpartIsByteIdentical": false,
+          "classification": "distinct-retained-producer-with-different-source-bytes"
+        },
+        {
+          "file": "new-hsk1/assets/vocab-unified.js",
+          "counterpart": "assets/vocab-unified.js",
+          "bytes": 14228,
+          "sha256": "5efa5358fa4672c84c2ed36b9a7fbd8b31d9f6a2fcbf67e151b483450ad42eed",
+          "counterpartIsByteIdentical": true,
+          "classification": "distinct-retained-producer-with-identical-source-bytes"
+        }
+      ],
+      "cssInputs": [
+        {
+          "file": "new-hsk1/assets/advanced.css",
+          "sha256": "543a4271869425733a0e6b96e84d2016aba24308ab45085d1f9315b93f866faa",
+          "bytes": 3513,
+          "vietnamesePseudoContentCandidate": 0
+        },
+        {
+          "file": "new-hsk1/assets/hanzi-curriculum.css",
+          "sha256": "ba23e0e31ac34bc092bc11cd8c83c89bfd15fdc875189d92c74fdded31ada832",
+          "bytes": 1008,
+          "vietnamesePseudoContentCandidate": 0
+        },
+        {
+          "file": "new-hsk1/assets/hsk12-audit.css",
+          "sha256": "8295252b8fbe1f1fa528574e06e8fa9c92879436e9225383dfcb161da711a5d4",
+          "bytes": 2776,
+          "vietnamesePseudoContentCandidate": 0
+        },
+        {
+          "file": "new-hsk1/assets/hsk2-parity.css",
+          "sha256": "02e3767e7ac476581a4a258df6675645953a55de94c00ab006ab56de38e642f6",
+          "bytes": 8158,
+          "vietnamesePseudoContentCandidate": 0
+        },
+        {
+          "file": "new-hsk1/assets/lesson-menu-parity.css",
+          "sha256": "0d836b96ba9a0fbbbf860e318863f3cef2810620e8e53d3ecf30de2fc280aa2c",
+          "bytes": 311,
+          "vietnamesePseudoContentCandidate": 0
+        },
+        {
+          "file": "new-hsk1/assets/site-polish.css",
+          "sha256": "b2b71725e6f0d1a157ad04f62ce274610ff17b1cd5754bd114c19c7f00b8e823",
+          "bytes": 4693,
+          "vietnamesePseudoContentCandidate": 0
+        },
+        {
+          "file": "new-hsk1/assets/vocab-front-no-pinyin.css",
+          "sha256": "09c969428e3e5587d23cb61fb404adea7e8b714a91b4eb43cdabc3ee88310049",
+          "bytes": 823,
+          "vietnamesePseudoContentCandidate": 0
+        },
+        {
+          "file": "new-hsk1/assets/vocab-hanzi-panel.css",
+          "sha256": "18c78a552ae2bc7fa46d04baaf9c788765e5cf5cd1280ff9869b061625dfdf00",
+          "bytes": 4128,
+          "vietnamesePseudoContentCandidate": 0
+        },
+        {
+          "file": "new-hsk1/assets/vocab-unified.css",
+          "sha256": "f4e0e585ee430838a96398faa1e8439c4ff2b8d29f8e355172c6663577b1c660",
+          "bytes": 7638,
+          "vietnamesePseudoContentCandidate": 0
+        }
+      ],
+      "parseOrDecodeFailures": [],
+      "duplicateRecordIDs": 0,
+      "duplicateSemanticKeys": 0,
+      "limits": [
+        "Retained producer reachability is not certified by extraction.",
+        "The primary 48-lesson engine and legacy retained routes have separate mapping scopes.",
+        "No submitted learner values or past browser storage records are accessed.",
+        "No textbook equivalence or native browser acceptance is claimed."
+      ]
+    }
+  },
+  "refreshPolicy": "Keep this baseline directory immutable after independent review. Commit runtime changes, generate a new sibling version bound to that exact HEAD/tree, compare IDs and producer values, review additions/removals and history/grading adapters, and bind final native acceptance to the final changed source/package.",
+  "sourceInputPins": [
+    [
+      "assets/advanced.css",
+      "543a4271869425733a0e6b96e84d2016aba24308ab45085d1f9315b93f866faa"
+    ],
+    [
+      "assets/app-packed.js",
+      "c7464200c025b17517c1064f7766cf3eacbc49171bbd69c568f2221b4c93930f"
+    ],
+    [
+      "assets/app.js",
+      "80b6bac2c2c82ee5d5e789c79b4a1340771708e6c813b696fe7ba37f69a3d163"
+    ],
+    [
+      "assets/hanzi-curriculum.css",
+      "ba23e0e31ac34bc092bc11cd8c83c89bfd15fdc875189d92c74fdded31ada832"
+    ],
+    [
+      "assets/hanzi-curriculum.js",
+      "db7065b77e47bf8de744ce1c82292dddf9015bb071027b56a8ab8c576083d935"
+    ],
+    [
+      "assets/hsk12-audit.css",
+      "8295252b8fbe1f1fa528574e06e8fa9c92879436e9225383dfcb161da711a5d4"
+    ],
+    [
+      "assets/hsk2-content-audit.js",
+      "d1907644fd59ee89a4101262903de31d000e2b3d2cef965f5c1975e54d716ac9"
+    ],
+    [
+      "assets/hsk2-grammar-canonical.js",
+      "e6368ca519757519f4ab9c53e2f71fedff2e10a6632de76b00d774898601799a"
+    ],
+    [
+      "assets/hsk2-nav-fix.js",
+      "be14e74b3391e63084235a2c4ba3a5a22c9346eb280fbcad8e7dd5c44879bb2d"
+    ],
+    [
+      "assets/hsk2-parity.css",
+      "02e3767e7ac476581a4a258df6675645953a55de94c00ab006ab56de38e642f6"
+    ],
+    [
+      "assets/hsk2-parity.js",
+      "65be635838ca208b9e421a49388fb8933789e1590cfa6f9b133d8fa0c11e6702"
+    ],
+    [
+      "assets/hsk2-practice-audit.js",
+      "c6bd2c5978ac95b955a23b563235c1650dd0212d1ae0366713ead377626319fb"
+    ],
+    [
+      "assets/hsk2-textbook-locked-1.js",
+      "3d71f82a8fdba16a786b40c13afed827c025a2d833c516a19982a461661e2fe1"
+    ],
+    [
+      "assets/hsk2-textbook-locked-2.js",
+      "a594cabdaf4b366f6d96eb7222d2f8ea01805eef2f5fb1ff757e745f95d23714"
+    ],
+    [
+      "assets/hsk2-textbook-locked-3.js",
+      "86ad1cc2af702a07f12e9176c684a8cc7ad08a5dbbfc899430397d53f8f4feb2"
+    ],
+    [
+      "assets/hsk2-textbook-locked-4.js",
+      "822e7ec422bb440f9fe551a974117dbb96f19b4996b8f6d16581f25e1ddc7b1d"
+    ],
+    [
+      "assets/hsk2-textbook-locked-ui.js",
+      "b8913cbb8ae07d7b1b03dbe1addd3aaff8ebc35bba17122297e34e911302b338"
+    ],
+    [
+      "assets/hsk2-textbook-locked.js",
+      "45a9ff5b7932b01e9e0b5c202195422398842aca7293e340a350a4a2404450bf"
+    ],
+    [
+      "assets/hsk4-trilingual-ui.js",
+      "7411cb8ac13d3cc1beb92d0b201fe2d864c245b7d4ace6e3fa9aa0542b26d97c"
+    ],
+    [
+      "assets/lesson-core.js",
+      "0b474d939001f655379734d51b7cfcd4b8c1816ea8b68c534491dfcbf7cce76e"
+    ],
+    [
+      "assets/lesson-menu-parity.css",
+      "0d836b96ba9a0fbbbf860e318863f3cef2810620e8e53d3ecf30de2fc280aa2c"
+    ],
+    [
+      "assets/lesson-menu-parity.js",
+      "6755a00068b303eedea94e94cebdbbc6ac05779a495e80f5a316fce42b48dc08"
+    ],
+    [
+      "assets/lesson-packed.js",
+      "ecfadcad815946ac87177fcbdb4e28e34cba909cfac40dd29b3712f2ebf1cd26"
+    ],
+    [
+      "assets/lesson-practice.js",
+      "afd3c2821eba75a839eca240c7b6926003509af66a69e5cd9887ba813dfef9a3"
+    ],
+    [
+      "assets/practice-advanced.js",
+      "f59527f00d017531c97e631bc34f69ef43adfb42b125175e21fb5767be627570"
+    ],
+    [
+      "assets/practice-explain.js",
+      "6c12dbf99213e142896d5f9f0cf1ede2ddaf7163a2f4a542fce28ce7efe0aeef"
+    ],
+    [
+      "assets/reviewed-practice.js",
+      "f53b119c6cae13c30cd120bf85db002129b2fe1ad4dc09b1029a1f444d8c660b"
+    ],
+    [
+      "assets/session-auth.js",
+      "e41493d4cbcae410ac52fb5c8d2e4a69e8a4ed21e88f0ea5f88e1677f0d1404a"
+    ],
+    [
+      "assets/site-polish.css",
+      "b2b71725e6f0d1a157ad04f62ce274610ff17b1cd5754bd114c19c7f00b8e823"
+    ],
+    [
+      "assets/site-shell.js",
+      "570d82301592a2b5c23cd39ff7d20393cd2477849b8a79ac8687dc515d4217c1"
+    ],
+    [
+      "assets/student-polish.js",
+      "66219a29ce6ae914787b291a8cfff856824f978735ebcf72b31fca10a5b3f1c3"
+    ],
+    [
+      "assets/vocab-front-no-pinyin.css",
+      "09c969428e3e5587d23cb61fb404adea7e8b714a91b4eb43cdabc3ee88310049"
+    ],
+    [
+      "assets/vocab-hanzi-panel.css",
+      "18c78a552ae2bc7fa46d04baaf9c788765e5cf5cd1280ff9869b061625dfdf00"
+    ],
+    [
+      "assets/vocab-hanzi-panel.js",
+      "869cd4ca52e2fa2701a321f84e090bf733bb6b6444b6bf70cf78a92e586bf445"
+    ],
+    [
+      "assets/vocab-unified.css",
+      "60d6a71755800c133f2b062cfc3c268c6272bd4c0bf2bd26f2b828c0d5ba0665"
+    ],
+    [
+      "assets/vocab-unified.js",
+      "5efa5358fa4672c84c2ed36b9a7fbd8b31d9f6a2fcbf67e151b483450ad42eed"
+    ],
+    [
+      "course-app/content/course-index.json",
+      "a435fc635ef5604c7b4ef4c6eb51eb58272987f06e76db9d879cd9c54ddf429d"
+    ],
+    [
+      "course-app/content/hsk2-lexicon.json",
+      "ef5bfd9d4b03fd83e0eb735afca091ff3daa09dd1c5439f1e4453d118bef014c"
+    ],
+    [
+      "course-app/content/hsk2/lesson-01.json",
+      "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523"
+    ],
+    [
+      "course-app/content/hsk2/lesson-02.json",
+      "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d"
+    ],
+    [
+      "course-app/content/hsk2/lesson-03.json",
+      "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506"
+    ],
+    [
+      "course-app/content/hsk2/lesson-04.json",
+      "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c"
+    ],
+    [
+      "course-app/content/hsk2/lesson-05.json",
+      "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038"
+    ],
+    [
+      "course-app/content/hsk2/lesson-06.json",
+      "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20"
+    ],
+    [
+      "course-app/content/hsk2/lesson-07.json",
+      "15b9f36001307933da8120e66214e3b7a266640022f6953b67b174b2a9c78f4c"
+    ],
+    [
+      "course-app/content/hsk2/lesson-08.json",
+      "90c7c19aac1d78ed62752356eefe09b6d3ee968c528c2008a53f0f2b1f96d00a"
+    ],
+    [
+      "course-app/content/hsk2/lesson-09.json",
+      "55675df1ef69682537b7137e4f2ba19e2a311cf7738969ecd790dae62cc885aa"
+    ],
+    [
+      "course-app/content/hsk2/lesson-10.json",
+      "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156"
+    ],
+    [
+      "course-app/content/hsk2/lesson-11.json",
+      "01ec965d7f18d41c5c91c053f93544b24c971303ed8b4ca6afd2ad2c03d48ff8"
+    ],
+    [
+      "course-app/content/hsk2/lesson-12.json",
+      "c64d2e1bc3dac399f1737338e70474d8ea8559c2aa65207290a515804a97e702"
+    ],
+    [
+      "course-app/content/hsk2/lesson-13.json",
+      "06d5d9e3f096ffe189f8d8214ba5582db9912e776e9ce3cee55d4fbd928057e1"
+    ],
+    [
+      "course-app/content/hsk2/lesson-14.json",
+      "74d7a43cbed89ddf152a840d3c5bc06e8200c975fa1de5e9bf4223e227d52e0f"
+    ],
+    [
+      "course-app/content/hsk2/lesson-15.json",
+      "299a8d8cf8f90e721d8a8c8b0ca24d7c33d759949166cab1edd2eeddf00ae907"
+    ],
+    [
+      "course-app/content/hsk3-lexicon.json",
+      "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3"
+    ],
+    [
+      "course-app/content/hsk3/lesson-01.json",
+      "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1"
+    ],
+    [
+      "course-app/content/hsk3/lesson-02.json",
+      "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1"
+    ],
+    [
+      "course-app/content/hsk3/lesson-03.json",
+      "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6"
+    ],
+    [
+      "course-app/content/hsk3/lesson-04.json",
+      "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30"
+    ],
+    [
+      "course-app/content/hsk3/lesson-05.json",
+      "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4"
+    ],
+    [
+      "course-app/content/hsk3/lesson-06.json",
+      "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346"
+    ],
+    [
+      "course-app/content/hsk3/lesson-07.json",
+      "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9"
+    ],
+    [
+      "course-app/content/hsk3/lesson-08.json",
+      "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24"
+    ],
+    [
+      "course-app/content/hsk3/lesson-09.json",
+      "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937"
+    ],
+    [
+      "course-app/content/hsk3/lesson-10.json",
+      "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828"
+    ],
+    [
+      "course-app/content/hsk3/lesson-11.json",
+      "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2"
+    ],
+    [
+      "course-app/content/hsk3/lesson-12.json",
+      "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d"
+    ],
+    [
+      "course-app/content/hsk3/lesson-13.json",
+      "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc"
+    ],
+    [
+      "course-app/content/hsk3/lesson-14.json",
+      "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a"
+    ],
+    [
+      "course-app/content/hsk3/lesson-15.json",
+      "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836"
+    ],
+    [
+      "course-app/content/hsk3/lesson-16.json",
+      "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139"
+    ],
+    [
+      "course-app/content/hsk3/lesson-17.json",
+      "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a"
+    ],
+    [
+      "course-app/content/hsk3/lesson-18.json",
+      "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53"
+    ],
+    [
+      "course-app/index.html",
+      "39b219530e84cfa008013ca19763f884c59c0470387a7a25fbd3e3048e7b07e0"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-airport-welcome.svg",
+      "b2a673a10fb792727698f1a71deb8c6bd95878c0bb55799ba6bb9bbaa431ba06"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-apology.svg",
+      "dc70fb9a83c169914b425dfc808640a9eebfb2c49f0ebc334a3e2b5b50b6820d"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-boarding-plane.svg",
+      "a762a5e1c94897efb9a89448f1a9eb250f9f001bb70b3147e7d8d2d8e4842876"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-car-conversation.svg",
+      "0f3fdd53973bf745a0acbae056856c75c25805557bbcc7c0fa4b4b6348942509"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-carry-bags.svg",
+      "5241e8ad15a7ce4fd0cebc9bb60bc26cdece9a60fc68b3b0efab16f4915da40e"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-duck-message.svg",
+      "9aac4d5260a1cfa29f7ee96b2409d69df80d38541ea57ffe7e1602e84c422c4d"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-duck-serving.svg",
+      "ab632e9d1aecf35fae3a3b52311f477576fcadcf0e2b68060d2a5d11723d24d3"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-family-meal.svg",
+      "1be1a0b1ee0ca8b0f53ad4c4cbbf2f00628fbe7c9dbe7bd6ccc9c2fbe22e9bb0"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-family-road-trip.svg",
+      "c9a5d6b6f9987ad47ded824ee8a47358ef7dbe70ac3378334f25212505002129"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-introducing.svg",
+      "609fab5340dcabd1482e2029565795660223301a924daecf5bf6f1ddf80164a4"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-phone-in-car.svg",
+      "39bb8accfb8fbce02c84afc4a2840647d8adebb3c6e13dcadc219593dd88ea97"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-sightseeing.svg",
+      "b746d0918170f50be05127e4c78786d4d48823dfb95434092cb3f221d5b5e650"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l01-wake-seven.svg",
+      "714ad2f3e3e6de08ce5656071bb4d30b494c248b40aa68cb320bca28048e727f"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-culture.svg",
+      "f56fc21e35df93fab69f1fac70df84a91abd6f9c16c8cdb793665362104f5c17"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-practice-1.svg",
+      "33726733a656ccd448b2986bb095574e29845bbd2d03c2c0d452335a518f8bd1"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-practice-2.svg",
+      "07fadb63c283054e66d4638242bd2e0899849cabd76a10857d2a254af9e55ddb"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-practice-3.svg",
+      "95d0b5f885a9924eff05b2eb9c787c33f0d97e6c96b60a12ec9c7b5cb840f5d1"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-practice-4.svg",
+      "5538d49a8ffb8df2cd376e7f416b6c43d6e5ee9dbb54175ef11ab6f0a70f9fd2"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-text1.svg",
+      "85fb0ad9899865c56d3194d72b7c1895ee6cc4686d41d33ab5b29acba5769b5c"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-text2.svg",
+      "10639f4da3943585fb5a4bcc0242056d68a3038cb7b632065f5fd2159919e540"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-text3.svg",
+      "1a6e10e39e074b07832fda8bad19d64de06fc408dbc21ea1c398b8738f4cd3a4"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-text4.svg",
+      "c10ffadc85c437e2eb5f5c7868ea63e7f884cedfc5258225ef49e223b897b781"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-warmup-1.svg",
+      "b8d274c51b955b0b171dfb17b0b0bcab711d9338fe7d1ea0b82ecb6f8c0de80e"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-warmup-2.svg",
+      "1ba4fce391658ab32437874b3e9d88e91d3ea1b30124590bb03f6f3e904b2f78"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-warmup-3.svg",
+      "618bbfd371d9f8106049bd7742b61445027f433a130f897c7d56b5ca4eac3d92"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l02-warmup-4.svg",
+      "7210e44de23466cc3bf5fe75837c5d9bd4d2a97bce70513716465c85c4e65edc"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-culture.svg",
+      "0cbce2b455a314bba00e1a977ea492096b56e49181fb85e51d5cbb637ce5eab5"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-practice-1.svg",
+      "9a34b449eee25f8e0c327f477a9a882212c84d0affbd0d84ddc1cf4f697db2c6"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-practice-2.svg",
+      "0777c39ce89973f10c82dd91eef887f106b4d094217acdbc66d2f6123a55ba0f"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-practice-3.svg",
+      "88c9d3a9f67c225bb8d51b0bc1d4b6efb6f946f21a228c4fdb9b7c2083f48b8f"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-practice-4.svg",
+      "37ac8e628377f98ed83843d701924536454a300110f1f40fd67c5bd67b8cdce3"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-text1.svg",
+      "c3b2043fda5700a01456344a993b6444aef91da79190b41733346ed4b4f1ec07"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-text2.svg",
+      "f2a2763824fd82e00f89cec939252acfd28c99c2c5d095f469ad4305d2197b2b"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-text3.svg",
+      "93408366f159a35ac0e498e0c417c4c52908110ea61b963234ff4ddcec3f730b"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-warmup-1.svg",
+      "f081f90edb43734f5638cf094036142d3031a37ae5f91041d4f511622517fa36"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-warmup-2.svg",
+      "370a40fc312ca9be2921bdc37409616c311a30b390e8e904610680da73efe0af"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-warmup-3.svg",
+      "3ae546c2c38f1f4ce1c9cf56d14b9675eae2431de1401b000530f9560f3725cd"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l03-warmup-4.svg",
+      "648f80bec718e726d053cf61ab638316fc9ad9ca419f03aacfbf02b6de10dbca"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l04-practice-1.svg",
+      "1117f785606e81b6a28a2ebdff3b647602b2cb75ce8597b77829b3b383f72eb2"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l04-practice-2.svg",
+      "05f5e6813bdcfcd693ebbe0708cf2b86dcde55472f6c8d4d10b0965361868c8d"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l04-practice-3.svg",
+      "6a9bd1c2cb329398a713bf94653be6f268a188d1e34400a657a1717831ef3944"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l04-practice-4.svg",
+      "30923aab92263c91b672e9ee2ffb713f625ce8befbb02cc6835b2c8c8868df08"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l04-text1.svg",
+      "68b2cc3bac8aafa01a7deff7aac8a8d029b1e5ddfb9367aac1aed582afec646d"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l04-text2.svg",
+      "5e4569099478b47018bdba3603180a8663d06185ae58d2a27ed65c35b14485b0"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l04-text3.svg",
+      "63928a7c6830738c4dfa842a8efd8eeaf63ce674035a9122eccc27bcfbe9e9a4"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l04-warmup-1.svg",
+      "78aa292e33302c7bf97a3527a924f9d2ac1bc9e91cbd55434706009e53f163d3"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l04-warmup-2.svg",
+      "e72a6f689454e18e673bea05c539187f0f2f7c93504ce0a03c8ea8cd60bdd340"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l04-warmup-3.svg",
+      "ffcbff3d3e20548a3a0051ab34ee42f4400cfae1662f576691cee7b38f84d308"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l04-warmup-4.svg",
+      "e77ef537bab555ea94394f348e4b801a42cb3e00b577094fbd2f640dd3f37870"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-culture.svg",
+      "03ccf99ac2f268d0381e466eb464f567afd173647bb45eee2b7e5f184a061d7a"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-direction-1.svg",
+      "4373d870305885bf2f7f2621bec6f75b5646784119ce83b37808b176b354857a"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-direction-2.svg",
+      "4562c16f9187c27d51aa922ad7a49d8ab692f46ff0307db54562231cd5a77759"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-direction-3.svg",
+      "899a6c387e887f168944fca7228125c2c50a283acf40f38abad554e39114f801"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-direction-4.svg",
+      "7206bc2fe70e8bb0a8a2235339acab16e476941f5ba0c24b1fbd6bc019d04f52"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-direction-5.svg",
+      "bf43633b3c79a98d46949b71ccbbf3193ca7e0fe2537c3d674e907a3e70deb62"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-direction-6.svg",
+      "aa0d26f8a450914471baab6458e58cb688f43b6ab25b126c5fd27b205c3e3bd6"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-practice-1.svg",
+      "f7f7169565c2d0f2b66329f8705332f2a98e582aab6ed3f7ec1766e1091f0c32"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-practice-2.svg",
+      "78b27ab341f07d6b4a33c8d13cfcdfd3db0b4bf3dafe801dfeef5a476aa8971c"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-practice-3.svg",
+      "4b9a75f2d36a1b92f468d82610d6ecc283194943fc8af9d177a1f60235fe32ad"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-practice-4.svg",
+      "f3eac9bcc0e9ed62536dc13e0f28a3415631d78f843bd558ef09bbf761d35ec8"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-text1.svg",
+      "010838bb124e95ff9b64ba71e8f2a9bcb7cbb052f491633cfb1b7eab87476631"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-text2.svg",
+      "a31b22c2c07982f18e9929ffd449cd0e06ba2711041b6dd0a6665e2dcdc24dfd"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-text3.svg",
+      "cc5ce4026ce31d8f675fa8b866e8825034b2b5dc9f86555e89ac534667324a86"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-warmup-1.svg",
+      "11c277a3d415d419adf5cbb271e9c76face0d5d9631179adbff7f3f3faf4638f"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-warmup-2.svg",
+      "144060567a9e52bf5dd61b3ac79b0395ee897550414c85fac632724845eac748"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-warmup-3.svg",
+      "f2fc60edf9b5cecf32e34ef7ca79f90f651dfda1bf213c069be0bdc306de7eea"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l05-warmup-4.svg",
+      "d8d6a29285d1b14a4111051b8e97b0499c96c38bebce656ba0b2167ba1eadc6c"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-culture.svg",
+      "c07c056e7434eb0cdfeea55e3fe64ab3fad02c2710721a88b3a3694bffaf8db0"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-practice-1.svg",
+      "ad35debf26ff3964166eebbe9af03a524d88a233dce5b8f347ea18fb4e716750"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-practice-2.svg",
+      "5707236b74be69c8e0f9cfebd804202d5c57d318d0ceb0a64a1f4f242ce5a2f3"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-practice-3.svg",
+      "f74e8afdc64b929fc544f703e7edd295901358f1f89df1ec655b900a3f8cd9b8"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-practice-4.svg",
+      "c299bbb0344bb2db7e57623ef4bec1322971ebeb8310bc42c15b01965eee846b"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-text1.svg",
+      "ab88466dca1aa678e09e38b1fcf96e67f070cd8fe0e83408b98112a3b427f7b8"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-text2.svg",
+      "a7bdf7ac4b7f5285a5eb2f7caf4514f5a1c6cc4e1baca49ac3f40c5cfb633ac3"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-text3.svg",
+      "bc2c32e87ee80156a1bfde00b20e482665a1b55f1d04669be61d581f2b2d9cf3"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-text4.svg",
+      "e6b6e168fb025af0035306be3637ddf01991da3fff66b362a08a8e2d1f0e6fa5"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-warmup1-1.svg",
+      "0b9d80fd8ff2e4e481ca627bd4e93ff39a4e5fb6797db18facb9ef26add6d06d"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-warmup1-2.svg",
+      "bc121b9ad2627f162530987e21d7f1691c535dd6fb5384cc40a4227b0de32bd9"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-warmup1-3.svg",
+      "c15384550c848f52da5fd6d112db30e08583ac0e6e372e46b35611fe14d0e8fa"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-warmup1-4.svg",
+      "d61998778da41407bcfe16638f7e45e86ca29f37ec23d5f3b43dde018795b855"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-warmup2-1.svg",
+      "a1384cc99daccc05992e563ef86353e8c9306762d958596a3c880d8304e5a63d"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-warmup2-2.svg",
+      "58fa2f70c2e72c29ddad13f8e23a8db500044c0c8a3c991a1ee4c51f72af4de3"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-warmup2-3.svg",
+      "51e0126c862af16169904b849f6b8ea63a88e494ef3a9636b478716d7667fa12"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l06-warmup2-4.svg",
+      "8cc432af635d797f3e7ac288dc264f09bf9a5dc993e7f1e8808afcda9e3421ad"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l07-practice-1.svg",
+      "54f6ee10886709df41eb3882336c24709b9d4908915e1578a2585b0834d17868"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l07-practice-2.svg",
+      "9b0ebdf6ac31a8346d9686f2662d67fcd25f3dd3790382903e7ce90382ad8896"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l07-practice-3.svg",
+      "d86a4e01249bc8b0e9f6fd572944384959ccf77c106d0b36b1739a80dbc53f9d"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l07-practice-4.svg",
+      "4095062db4662e12d7aa500d2624d909486bb450e645f55dce7966a809de1bf9"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l07-text1.svg",
+      "a77f81f861956d3c07fea02faa8ad5f212e2f25268c43c6ff8b628829fb0d224"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l07-text2.svg",
+      "9edaba505f99901090ec0e700313b264215a9a2469accc37522fce5d12a8a96c"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l07-warmup1-1.svg",
+      "9e4a2eb2f86feb9fce42d7655ed81882f6c5c2197c662be4c2197ffd53e361ed"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l07-warmup1-2.svg",
+      "6573ffe2fa737bf88c5219073eb16dff67b52d9c3234eaeb6afd20b535b90f17"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l07-warmup1-3.svg",
+      "416aea82ae32eb3ddab1026336ab1b4a7d9c4d3085055dc9d1713af6e50fdf23"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l07-warmup1-4.svg",
+      "fbb414ed1d1b5a59ece01c6d8cea992d287e917913e9f726e34e7d775fca9c9d"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-culture.svg",
+      "10b683b899aca32ea3e3222eb73a576bec10055245e1941bf7cebfa59a1b5ff1"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-practice-1.svg",
+      "616a0bb72763bdb3d257d2668bc9a8ee5d5b9393526bb9ebdc40eb2686ba4539"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-practice-2.svg",
+      "e06fc51cc853c23a1c8313e829970a83081b7d4d2ae073079a16a412f5337031"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-practice-3.svg",
+      "e931d502777b51574bc168d06b9f30a7d14dba6d61b5fac676317b4d765f04f5"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-practice-4.svg",
+      "1b78def293364140ff44aa3860b6bb6df73c0dd163d590cdda960ae7091b4062"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-text1.svg",
+      "356f81b867f4929e0bd238dcb071e01c265abc6e68f5daf57d2180816e9e3808"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-text2.svg",
+      "d2ce3e7e1db033a9de9531f086b41d232fb715f9e113d71841e327530d40f0db"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-text3.svg",
+      "154842ea3628681145a95e4f859c39d4781e3fc77cd8aa71e60b6f09181df451"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-text4.svg",
+      "9d5f2a04b67f3ac43811a701eb3874ac56b5169e8cc8715cab90198ebfae74d0"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-warmup1-1.svg",
+      "c03b5fce60a744f2911a0f3dd554bb89b39f42c7fe4c50734efd347887df00c6"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-warmup1-2.svg",
+      "fabb3a3e5f3b706e58f2364ed4af81a204a703c66acbb6109d0f32b8a30ab024"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-warmup1-3.svg",
+      "630a8cab4d71619487e3a0f475da6117a6ec06f1e49568e25c71d26f84ce2004"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l08-warmup1-4.svg",
+      "f0c6ce26340a26c1931fe0c97d45ec19045d0fa0e7b92fdcf7e478044b4b89df"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-culture.svg",
+      "3455704df0e77708ee7145a77933291907d70bbb49d5181e0fb8304c957f6895"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-practice-1.svg",
+      "2c21198b07e03a12d64a89ad4479ed209223791327378ab2ae359ce1aa1bf3c7"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-practice-2.svg",
+      "a6d37bac918deafb284f919b6a2ea72e370665fb31600e88d9744749b8bd4fdf"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-practice-3.svg",
+      "ec4fd6b8fd0fb2a2eabd6a503e49b26b97982ee1457786c72e7792431da162dd"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-practice-4.svg",
+      "8d1d7bb273628604877dfcfdad035ea551215011d72d2c1dc8f46499132212c2"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-text1.svg",
+      "32b673d4cc3a9bb1b74d122e5a657ac6c6ef1a8bbc43831fabddbd7aa6d237bf"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-text2.svg",
+      "c812ebe9f8ec36108d88cb60d719685bc255e4101e812e986f1deeb36e793c3f"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-text3.svg",
+      "a4a386ac65dca471d32350369a2c6586033f78da075e31acbba66c3980cf3d73"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-text4.svg",
+      "45f5c337f4d8a8ab26caced911b7653bf403eb7106f4e12f9f396ff0b7d838cc"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-warmup1-1.svg",
+      "aca15edfea3bfc9fc93cf5bdbbb600b8311d79fe84d17cff34880da046871f26"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-warmup1-2.svg",
+      "7cc28b487cf81bf87a908d54ab04e565978e631ecf268b5d04c7e6dd1d7fb4ab"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-warmup1-3.svg",
+      "4b89b96b3279896f7b8ee91085649699b9f3d5b3d547009e819d48841ec89b9e"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l09-warmup1-4.svg",
+      "3778c0b947ccdd6a2143f5e21368c3762c5ffcf605cacf6a83a921775217f3b4"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-practice-1.svg",
+      "fe1dfa1318318e032be38cd3df2e444b94b4f72a90fdbba76e57e86e04f5b18f"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-practice-2.svg",
+      "156d7c09393c7ab01d941935a7f224225c12dffc3e1233df862d6bced500930a"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-practice-3.svg",
+      "4492938cc89fcd0d98f7f25c34817650562443cfb1ad69e996a02d83e7f30407"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-practice-4.svg",
+      "ac6d01b752a7d48c9e63569c9474d400cd4ac1cd793e30cd2e7e553e60081f63"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-text1.svg",
+      "22dddeadfdfadac04384c51a41f8ec0872d841e2bc4e1c9faceb2ceccd159804"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-text2.svg",
+      "14d4232568cff47638cd36aa176915847b35b3a6679f8a3984712d5d34eabfd1"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-text3.svg",
+      "e97ff1a92cf900eda653e9de1b0543703639e14ed7c195e3a836ef79b22ea7f1"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-warmup1-1.svg",
+      "b29b52ddde9acf748756d319fcfb710cbce954023d48ed3a17dc1f14cf98629f"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-warmup1-2.svg",
+      "9ddd2348675a782be0248a17b30476fe9b475206a6ecbbd83e9550c0b2842f64"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-warmup1-3.svg",
+      "352fb42bbd0b94b40ca1ebc75789ca1f56bf4eda024714876962ee344e6cba3f"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-warmup1-4.svg",
+      "fe15ee9edc436c67d4c42d1b8a3306389f852dd30e169849cd84decc32f6d33a"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-warmup1-5.svg",
+      "1ad568037f7c84d941c23fc61746e5f09187a1252c18cdb4df76b51d40a33386"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l10-warmup1-6.svg",
+      "30ec0107bc7cf93ccef21903ce1adc44ac97b6871c843dc48200ff7b4b71933a"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-culture.svg",
+      "cf43060ffc45d84fb6cfadbd1d4f3c322926dff4ac99de0be488a53ff992190c"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-practice-1.svg",
+      "7d1d1d06777f0fa1a2b9d8a83bde9fd3088e26c7cb88a2937cd3347f3b286246"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-practice-2.svg",
+      "0851fd2022440ad5a2198255db8fd7317f8f0b70ec59a03b9282554168bac3cd"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-practice-3.svg",
+      "dace59a7fbe7b62b4c061806079bbface5ce008221d6bae00507fd4b5922bb74"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-practice-4.svg",
+      "8e458644c934efedbb079b8b4c98af173cc5d0b3d7f9931917f3edcb091561cb"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-text1.svg",
+      "e93291f2544dae5e13b2bb502f98d6a4e78d5584ecd135673cbca7df72caed50"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-text2.svg",
+      "1861006f24d661f75ed6601ccdcbec50759efe1a606d6905f213f3cb81059780"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-text3.svg",
+      "0f2de0f2ec97b6ec8f227912bb42b5e6b24de3d5745044dfeab3b51a6ab34237"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-warmup1-1.svg",
+      "5ab4f36bf342ef1bc842a124bf474e90a800a295ffc49e3b6e8ec2065e95bba6"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-warmup1-2.svg",
+      "64f693d3fead5802347a6d9c9850533e46260b5bb03201c2ff8c416e6ef4e4d0"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-warmup1-3.svg",
+      "720d3dc42e1b56d71fe18ee6e40e9f4a8a4e99df9e92c1166cd33549b6363e42"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-warmup1-4.svg",
+      "ac3ea74f2600d2173a8425b27d80806615c672a97b8acd8dbb3fb3c0db3e2b4e"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-warmup2-1.svg",
+      "3ebf7d7572054503d6a02a18ab4ec5b39f7c8529a3f455e6abecd26bd0b5311f"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-warmup2-2.svg",
+      "56e44205fbc8da068c2ade32c58a5e7a30ab19edc119a42a66c513ee2f478a0c"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-warmup2-3.svg",
+      "b3260ff85b4f4eef65a205c49b8f9559f7393363844708f9f62fa771a319fff0"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l11-warmup2-4.svg",
+      "25a2a7e0dfeffe5e09a4a8bb9cae032f9fe3fadfae2c2517242b2ce83382bd97"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-practice-1.svg",
+      "4625c1024b59a25836db21f5d22d52427d74ad0e82be70fff97b9c36da766613"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-practice-2.svg",
+      "b9da29491cb2e3d835261b2f0de7c78aa212734f5932710a6670470dd7bacac3"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-practice-3.svg",
+      "b5c464152d1dad6955447eb6259954ce451ed4526760986671fe75a4c4ff7b07"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-practice-4.svg",
+      "704986799e9fb0b5501d384fd4863bc653c4eb0443bd8cd8f94a4b27ca19b129"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-text1.svg",
+      "15c094ee79b92b80fae7644478abef007ee8e92f3f03b7dfbe69e505520acb6e"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-text2.svg",
+      "171f00246bd88a564c23a926f47e82c2f0b56a48717b08bf5b125baeed572021"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-text3.svg",
+      "a8cf4a1f3fef676c41ae2c6169f8762e929cf75597af90ff060607e5410564f2"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-text4.svg",
+      "46ae2d65a58f06dcd5609fd2f03f725944fb03239ae78c80932808c7e23922f4"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-warmup1-1.svg",
+      "f3e021c3cdda1eb6979f21013983d4a777f7dcaa1fc1a0da4d35c4a1d2ab6c92"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-warmup1-2.svg",
+      "80d4f320274fb13f00512e089b10dab7391bcf0e5a124fb5a30bf32039038c84"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-warmup1-3.svg",
+      "eb6d3539d27591cdaf8cf57bf1392f31c4a5a26cc75c888ed222ab9c343ff271"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l12-warmup1-4.svg",
+      "c1cfb73000ea86294ae7c3a6bdafca9b2a672cc66d652fc4e32bff0215ee5f55"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l13-practice-1.svg",
+      "ee343cd13a25ef3e63be67a0584dc132e78213bb7ab2cb0dfa0e39bcaa794567"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l13-practice-2.svg",
+      "d352871f51bc86567be701bdbf7cca09435de7737d3b2e7b498e9b445448f0d7"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l13-practice-3.svg",
+      "1526143021312dcca5ad541af14b8a1d5d3ce95d816266ee7e6c39e39ba8acb5"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l13-practice-4.svg",
+      "ef096c4bbaf385c2b6f1b553dd8e72552cd69bfb8b0517e1f6d4bb49e4531dff"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l13-text3.svg",
+      "8093269dfb3aba421df9b993bb8efbf0f22acbd02910ba65c656fc2eb7c22de7"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l13-warmup1-1.svg",
+      "9b3b9710df3c93419e77ea195e2b569625168f523db4ecd74830368d308bda78"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l13-warmup1-2.svg",
+      "10ff8dbd463c61a383a5204bde95b870e7d6960ebb5b0c93bd8988bbedbb320a"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l13-warmup1-3.svg",
+      "dc62d3652e06e0aa8c3a793029db3842a521fc782899b859ce18a4114c4c2495"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l13-warmup1-4.svg",
+      "46dfa0c6b22260cccdbd690f61b9a9614b6d0e688c45caac13df91a296a75a4d"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l13-warmup1-5.svg",
+      "f565e10ad0ac8dc0337c65d7e399ebc79bc4995fe1dd22aaf6013e1f30132632"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l13-warmup1-6.svg",
+      "b581554e3bb1973570eda3ae294efa2e9c32a4b6cc26e4b3bed0eecdcf78dc86"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-practice-1.svg",
+      "41753f658003d0edabe60ad6b1786e65fec69bf584d6d7aa7cc3cff1c45085a7"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-practice-2.svg",
+      "dba55f3a8270d781204e2ffc400fdeff7a15766c103b415f8f5eabeaa561892c"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-practice-3.svg",
+      "d96bcd9987b6752c1e81fcce1e3b9dd51ebfcbb62633320149a6a68839b97998"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-practice-4.svg",
+      "2d93fe489d0038ab973824d759aec8b58ff6120f0c8fd9da70d693f44bbb80bd"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-text1.svg",
+      "8fae6096206225eea1d5970d30524c782821786489aee4ea09dfd9069589b620"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-text2.svg",
+      "27f29741adf8baca5b9794e3cfa72fd5a6cbde18e1d6a4f4e4d4b899f49c4499"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-text3.svg",
+      "77f4a66815f72c0a48d5b1f9ae2dbe19abd0a65caf129e32dc07e86732628bba"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-warmup1-1.svg",
+      "e532e01b0fd1bb7301847c6b9827db4b4cf4b80517918f6725901511b09c170a"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-warmup1-2.svg",
+      "9ed8661086cb7f396f7332890006655a7193f4582a14d4e3540de0d13403b074"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-warmup1-3.svg",
+      "bd1285298d1af15b7f782f81ac60323b0f111232a8baf0b718f0e9b27512e37a"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-warmup1-4.svg",
+      "f9b92b0de72c1969a73d7d4a957687b6b4175a31e2228996e3e899c0c782b532"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-warmup2-1.svg",
+      "68d87a7279e9f697c5eb4730b52b388e796961b5bc58028714092c614ca8b943"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-warmup2-2.svg",
+      "920a171d4bd1d06964739ca56217ae520c326de0d113e3183dc858734de8699a"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-warmup2-3.svg",
+      "e25c0c17ebaecd312d523e4e2c9af6546b050a10d05240bb4c603e1dc186589e"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l14-warmup2-4.svg",
+      "178db0b91ec9a488df3cd44be0c1c04c0be0a87f70062c16583f701f8a50d21f"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l15-culture.svg",
+      "d5cbd353c3df851d9ea1908feae0b96b51352456dfea81c6d347e211b0bfaeda"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l15-practice-1.svg",
+      "812a582a765b903a777805c013950b35308b62a5d0f1445de9170694047d2cf9"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l15-practice-2.svg",
+      "db9d9adfc0a0719d03f9682ff4c4b5a9f0eb1d03c386dc1dad323f4f65971c10"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l15-practice-3.svg",
+      "efd37cc0c01eb2c52827d2c9f79aa8a8d951bc517c9e93fe8fc61dc14d9e0fbf"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l15-practice-4.svg",
+      "63e8e4f7e18e4b4f6017647feb3ab9359a4b4b64d62d19c1d5286f2a6ac2eabf"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l15-text1.svg",
+      "a69f9fcb5bf04c3908fca27fa96f959c4c7da5541e8d0f5d3f9e3a4af479a2ce"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l15-text3.svg",
+      "797aa62aa0a188e8018b4579c683993145d26a1f8305a76993d1508b7f31bb57"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l15-warmup1-1.svg",
+      "412f7203c7e4178993b27e35df4ce26a67d3919785c5913133f98e1da2222716"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l15-warmup1-2.svg",
+      "0aa483f08ea2b3b98ba22fc7a2b211585171e6f47fd357243527b6f5eab85729"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l15-warmup1-3.svg",
+      "b4a61a7cb609d0a19fd2f2d915ee36702a54a082e0425bbef9ba21a77fa721d4"
+    ],
+    [
+      "course-app/public/illustrations/hsk2-l15-warmup1-4.svg",
+      "4b00b34f4e7ac9c3c3e6a9f971242f5718bc61c7d803418f83be55774ed9f6fb"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-airport-at-night.svg",
+      "bf5a3031390d9e5148816d2d3d6f0517d55742969d969a6f06f4d2718ccf77c9"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-airport-greeting.svg",
+      "d9227a52a0bb2c1790efd18878c265b87348b9ca8749a9956b8c861159ee4bca"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-arrival-wave.svg",
+      "1c65571389a70524ea58f15bcd25033409289c2e4448f122c3dec56dd1038404"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-baggage-carousel.svg",
+      "1b14fb0b43a363721f4dd37a3ba04a3c9a489b6ed81f2810edb6f941664cf2a5"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-height-measure.svg",
+      "c6e7c6e7b6d5ffb04462c19ed71cce3f6baa3aa5fd9c1e9ccd7cba6e49818844"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-identify-traveler.svg",
+      "95867a96e8d0734785ff3216065da1bfe58d1851f1c5ba4590a8e252c99f4f22"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-long-hair.svg",
+      "f0dd6576b6e0b813265591e845b3317f3b245bc66c026243e3655559107e0dbe"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-photo-wall.svg",
+      "2b7807b2e27c8190b78345309ed448ce40e87cd40e4d2a3a9a89bfd736961c48"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-service-desk.svg",
+      "5fb67149d5fa9c21f039c15200d3ce29e316d5e0bacce2cdc7ff6bb88762cc05"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-sofa-phone.svg",
+      "adf62b15cfeb89a46c74f0a7720d8470c8f09e81feb99b56f0c0c540954a7429"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-suitcases.svg",
+      "c708da3888fd47eebd5dd0f032897de7aa8e416d6b7824f05126243952e6a7b5"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-travel-document.svg",
+      "e9bb037e64c5367eb20cbed964d70906f0a93fe25a709d8512c295cd0aae40b0"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l01-viewing-phone.svg",
+      "8a811632488ca089f436d922548d90da09a7aebcd210f80036db9c882381542d"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l02-culture.svg",
+      "58061c4be0d00b706f4c398070b63ec3e3a186f22dbc87628630c71e6e7670e3"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l02-group-1.svg",
+      "e17277fd3506b425afe63f81d4c4883e4c0cb66f9624ce70412f6790ad96e5e8"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l02-group-2.svg",
+      "0513dafb4a9998c3135e95f6fd48aeeefe1d9c7cde7f61939a04bbca19972b24"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l02-group-3.svg",
+      "4cf4728ae29e678fea0b423c2cd03d2c332462fb148be3866cd6215c21f9d912"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l02-practice-1.svg",
+      "82830ff3c3f37da9b3d46ae8bce188106c0084d834a49184131b495bff4df238"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l02-practice-2.svg",
+      "6a960a0eeae86d65fd08faa96da12a91f2939595cfb6e203d9469d18e1748616"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l02-practice-3.svg",
+      "5d7c256f23af1a77c79bd27997647c691d41d6dec2da984159a02ee87eaaaeab"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l02-text1.svg",
+      "49c038825238ea22b27eb9d2e16f6f8d5bba81f904ee719f0b662cca2ae293ed"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l02-text2.svg",
+      "e1ac4a5e8474b9dbc432ad4305d32c8e93fb6226b3d20345d9afcbb31465d02b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l02-text4.svg",
+      "1018ca738f707f2ed9c74170254d1d09470cad8b8b2b9fd07dc2b300e1f01ace"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-culture.svg",
+      "ca769b770bdbe9f29c12fb7fddcfc61618a1f82fba7dd49cc5a7ab9767fc1657"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-practice-1.svg",
+      "f265e783baa5cf75b653a11565819678ef73599d32601b1e7857a44f2ad908a3"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-practice-2.svg",
+      "02aba75d8abd24ccb8d0b655f8cb952337e3553a9fa77dbd1dcc54e287db8192"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-practice-3.svg",
+      "7a5e6c75346c006830a5752d3dd77ca40f2ed35bece5c2fcd4dee26564de5bc9"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-text1.svg",
+      "2846d9ae9871c6f7a19040d5bf9d092b9ecaad5ef2d66cd672ed93b81536678a"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-text2.svg",
+      "1a74348c56a857b17fca36fd6389f8bd39b68c912ba077fb1e93bcea5a0c5469"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-text3.svg",
+      "8c42a69fe8dbd3c334270ec594dc1254ee39f8625e37fc8ff7cff3ebfca768e5"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-text4.svg",
+      "5ebfe7f457078ac2794d0d24a67634f6e3a94160221b63e71f218f016472480d"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-warmup1-1.svg",
+      "48e0b4ec826b3ab41e69e97e427f79217fab75ecdfc84fb6d9e69492a9d1d69e"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-warmup1-2.svg",
+      "019191a62cd710c855024f579566751627a83170fc3b5c1dd4b54f576c6054cb"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-warmup1-3.svg",
+      "c1f9706a6a7020a8d947cbe00da54fbdb55f5cb1f8fb07ca4513801dcb8a55f1"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-warmup1-4.svg",
+      "0c05c1568c29c8f76b79d31e17db707944a4ca8a3b7d3b571a67dbf20fcbd81d"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-warmup1-5.svg",
+      "0673adfbe3db656c24eb782244092517f641868520f45498f5c1f137d61f3a50"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l03-warmup1-6.svg",
+      "4c1c995027a3d278eda39a354839162476f5385630be59f81669c4d1b8b9bd17"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-practice-1.svg",
+      "ebb8dbb0a49e526942cf4d1e201768aec083ee13890a68b5c2f439a2a5cc8a06"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-practice-2.svg",
+      "a9aabe0106fddccfabb13cf4f6c8b02c06912ede4f0b54ff42ccceaa9ada32e2"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-practice-3.svg",
+      "413932b989d58e833d49339fe0cc024d4240904a8a1471c58769fb5bf70ccc30"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-text1.svg",
+      "fa55eb3afbe3af22549749ba1b040573e97166db2fd62e698d72c304cd1aa7ff"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-text2.svg",
+      "76e1c30f760ef93d1d390c47802a44ac690df99c946147eb9594d1fde7e4099d"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-text4.svg",
+      "5a366f0113f49014f0823524079c71571b052a71366c08ce35903cb400f7838a"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-warmup1-1.svg",
+      "5a10b38a24c04bf15be4cef395df5939ad39bdf5d3cd13116024508f1b286da3"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-warmup1-2.svg",
+      "6536031d732d4c2a4d2f6500dc09aef946fd466733086141dfec23911dcd6c70"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-warmup1-3.svg",
+      "2f4a9ce53552e7f52c0cc689a890294d10983f42e54f1c91a756da03f2798eb6"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-warmup1-4.svg",
+      "5f9935ea9829800d415e693e5aff5e7c322c7adc061d4cc5968841adf4b44eec"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-warmup1-5.svg",
+      "8fcfaeba61976ea8230610fb7388c980dc293467757058ee31ce416785a8fab6"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l04-warmup1-6.svg",
+      "85b68b7884b040aabd97f2d6f38610e252f91f26876c71e2acc7323d67efc488"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-culture.svg",
+      "183b86402cba31cae5ac3a1b7cb68f76557a0cc9aa4c4f632b4db42ec1dc0a44"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-practice-1.svg",
+      "9eda7446edd26bb84f9935c413cdbfaf6ec8ec0bc4f29f032156b6f0ed9aff7d"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-practice-2.svg",
+      "50e7eed7af0068f7d0daf05df0bfa8c5d57927becfcd4da76e426ca2b0f314ab"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-practice-3.svg",
+      "58509777a8ef95a5cda763efa0302d42ce638f3e33cae327aed70d0f00642337"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-text1.svg",
+      "4c1c75cbffea216627561f2b19bd2e7bad89bbf6393846bc92027fa3aeda662c"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-text2-1.svg",
+      "0c52234ecbe52f4f6ed0465046a3390596ed779e5c70374ac9734edc4b1cd9ab"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-text2-2.svg",
+      "852a300dd775540eae58190989f687dc0a7aa50344fc1e62aee555a366d3d3fe"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-text2-3.svg",
+      "4b966357ec13b3e1fb4fe220128de35a4d10c305f85c9dae213226104c20ec9e"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-text3.svg",
+      "34c5050eca96c22d1c355b1201a1bd242be994a25337cc15e933ee0852ddfcf7"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-text4.svg",
+      "88d586aa1283ea4b93f171dd34356953217ccf10cfbb455d53848198295b0735"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-warmup1-1.svg",
+      "3aabda52d2c9d094327fb52dd14c06923377960c9e9c70f0c4de1f714c4c181e"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-warmup1-2.svg",
+      "563af7f517e0d6f23e4aebe1e579eba2d7f650eec3999e76a0264585bb65a942"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-warmup1-3.svg",
+      "d44fefcd76d42efce9d4bda7188349cc964d806786bce53642139952e29c2190"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-warmup1-4.svg",
+      "447b3f08bc33a0d8f9618887f0e6c4b06419e81491502d845f5c05471435eb88"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-warmup1-5.svg",
+      "ac76ebcb6bd57ee55dbc52d40dd7787794c0ae7f31f5aca4fbb8b702a00a5ccb"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l05-warmup1-6.svg",
+      "ee642331cf7cbbcbb3486244f0c74c790e59ee435b4459f12421487139379153"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-culture.svg",
+      "d6930f0f6484434db3cbd0f67a069171eaf12bcbb3f16640d4581477019e314b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-practice-1.svg",
+      "73808eb438ca109db25b43b06db7d3171a9aa02e59f09cf9d8cc3a8a7ef2f152"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-practice-2.svg",
+      "9cab60ec5a396308ea1c6b54b33ad67aef09c181f2d482cd6e2a3b395d79d1e7"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-practice-3.svg",
+      "bd6a7e53461f78fcb88ed16068cf3adf5ba2314b773c6f6d9de0d46373fe2fe9"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-text1.svg",
+      "ccb846d80c32465a6286af5ea970be231b073a4c7606ac8ab6fc6139432927aa"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-text2.svg",
+      "e598644dd287b7934435c6c661b537ea7e32bb80ab0986a8be84827254702e2f"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-text4.svg",
+      "b3652cad59182cc0092ef5db69a848104a4900e68a4714fefb130203662e85d8"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-warmup1-1.svg",
+      "7106993d845e0280e8dffde222b6ad5e2c78bff48803e6c80a4a0b88eaa91ed8"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-warmup1-2.svg",
+      "bf46f4a078bf33c3ff02a39f4693fdef02c76d235d61f3c763f9da0cb91e10da"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-warmup1-3.svg",
+      "9fb73e05d0c20b83339327272623bbac9f26348faa6dd4b1329347b7a756356f"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-warmup1-4.svg",
+      "e9f9e513e94c4a1ee63f576d1b13a8c656452f9f1e365087943e648bae544b4f"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-warmup1-5.svg",
+      "516fc29be6abe3012172ddc0f3c093c81efb91b234ea0fa485cc534fd0dfdfbb"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l06-warmup1-6.svg",
+      "dad65cf0e6566a615619ced362345057d365a61e687d421ee6632152fb07be3e"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-culture.svg",
+      "14854aa5577f2d94bc82e091bc54c7ef92d8db134bd6ee2b08f3df6c3ed36e82"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-grammar1-1.svg",
+      "53c13483528e7aeca6c91d9b3f788f94850805d42357e6d6d412ab20ab20d046"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-grammar1-2.svg",
+      "686b300aaeedd37a966d2e5636f8e6ca3da06426e6258133a0517c075d3a7c41"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-grammar1-3.svg",
+      "e97224a6d10f03fe4e41fc2a661065998a7ec2e2795bc73f9c0ecc4858604d89"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-group-1.svg",
+      "fefac9a69e846385a6d977e334a39abc4de234c6e1f063db391840275550bc86"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-group-2.svg",
+      "c545a7e3db9f7a1a272a1fc8a90fbcc4e07da606b1fe14b92f9eb75703113d16"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-practice-1.svg",
+      "50e94e6ffedb80dcf41ff53e7f812ea33078deb47eef8b1b7dc85c9953a15add"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-practice-2.svg",
+      "6272c0d9c7a2ee7a1b3a24d87c78d223f05bb4c27142a1ed5b9eb575543e0c99"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-practice-3.svg",
+      "0189df27a8447e0dcb24277c1ea05b98f943a36c07b30ca5fd2ee002cde99b0b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-text1.svg",
+      "f67c0780548643300ab5a2dd8e0d151d13768c5208daa94430084fa76a401b81"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-text2.svg",
+      "cdc1ab001e5ba374ca9eebca6d00663ea4a1854c72a7a3086a934ea65aa9731a"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-text3.svg",
+      "c23eca2d471d6239dda5eb9cae2ef37cda5847de74eca3121e5059f512cf3dca"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-text4.svg",
+      "78019b6b9e686a3d67bd022c5a7163451925bcd88ebb377ad2572a230ac1a894"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-warmup1-1.svg",
+      "1e142372ad87fef0231797ffcd49b9325a6d8c57f544bf70d7d75d7ee3654bbf"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-warmup1-2.svg",
+      "22858a45ff57911440d87de3addf48d6427e057f941dbf242d5af0b3449cf458"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-warmup1-3.svg",
+      "6847b99b31dcc29039abc159a3feee056dd47032bb0e9161e65f726bfb0a3f68"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-warmup1-4.svg",
+      "7a6a5410a2a3eb6d1ab13e5681087b613ada187fa61c29ad24f82a5cd992cfde"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-warmup1-5.svg",
+      "a91f43f53f7d932767373a78b5621203f25899f4074f7732510f75be7992776b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l07-warmup1-6.svg",
+      "725f27baa8ed98440785d2026d32098d3d3df442ec45b7233ecd2d74301b3e5a"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-culture.svg",
+      "35e407c70cb71c6952c50115b4ce10dd8ae01f08d679fcba4adf88258de14328"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-practice-1.svg",
+      "014995672108cc6e2a4fe4cbb872da521bb958558cd2a1cd7cfcae4244f52c09"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-practice-2.svg",
+      "73060330210b2bdc6d851e915584c1e2515aa4ef264c7ba420ea0538a08e2c64"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-practice-3.svg",
+      "db803abd81e9d989311b79c3707feec0975bfc1cc5f9f811f4587dd6aa38efa9"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-text1.svg",
+      "448641b4d776f5f018703147c5b2cfb51ddc19decfe77064ac7ed02dd15828f5"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-text2.svg",
+      "844a6dd18bc014862eb4a827a5877f05f8feb7f339e42440992024d7827137a6"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-text4.svg",
+      "65a8131dfa37af355c7020c5753d1bbf6132f57f9559bb5864e2a3ebdc43aa82"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-warmup1-1.svg",
+      "47934df6c5e1c6ac32c4391564c2a36750564aa72705671330b2a0eec15b968b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-warmup1-2.svg",
+      "72d6418c1998086b6136b41523305a00b7927bff3cb8bda9ed0af083301da5b8"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-warmup1-3.svg",
+      "91b3eef84915b6b070f0409b2a0017a80a8b51fe20430fde16303c77d06845bf"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-warmup1-4.svg",
+      "e6ced90b2366bb98bc65c26eb4c5624c277e0bc685c033e3125cd37cd82d802b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-warmup1-5.svg",
+      "c8b09c786602b889536a33daf27b72cd5098d9b990286cf269c10433d8af5cba"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l08-warmup1-6.svg",
+      "e0d94c0f1cdfd54b5e65b3841e42b5fddcb81ca0795e3f0a808183a7cd9de949"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-practice-1.svg",
+      "924c4dab80775c4a1f90eb16df3aa098a6ae106e3d2fb6c504420dc7b875bb0c"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-practice-2.svg",
+      "34404373e12c6d443c9e6ed8cd7d5bc7df715d190029dbfee0a2435661b0d43e"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-practice-3.svg",
+      "39f8a3a5bde7b22bdf950162b1ed6ea09c42002763b1a9f00fcad0be2eeb44a8"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-text1.svg",
+      "dd80490ee8853c263854035198aaa92a2406288edcaebaa2d53e1eaa31f7c1ee"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-text2.svg",
+      "5c683a839274eb243a7f2be0f0a620cac819efb2c570bfb29f067f247710242b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-text3.svg",
+      "be7e05f119e90f2618ab8852663831105f2611bdcc73323f9a3fb02d886f1297"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-warmup1-1.svg",
+      "62e19cf4a0465b575c13d388f0567cf5b756b3a2fc785f8ccfb7473e8739ab32"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-warmup1-2.svg",
+      "34dbc42cc2631f3649e63769061b33220107a1cc75fc78a5c316631249c99243"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-warmup1-3.svg",
+      "b38624f940bf775a9fad49ec2596bb3f40c7c0b75e66f07fd592be8605331995"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-warmup1-4.svg",
+      "f2d8525c2923e3dd752fc3081a81ddced7be0667747ebed79f924ef94e663e07"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-warmup1-5.svg",
+      "a895dde128185fa3606fde854be9dbfecb02acf753f0d2a190e805f0953e73c2"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l09-warmup1-6.svg",
+      "f1dba337bc966c17bc89da39b0189d5be5a02c10a0e645d1e09ad924ea396810"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-culture.svg",
+      "0b3c0ee54e13a7432332f55ff2e43f1c2cb84954b9be00055ab64827cf7a0ab4"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-picture1.svg",
+      "b17c42b7b38cb329f80133f49e3288092b4da94c39356bf08c5224aa96843d64"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-picture2.svg",
+      "14af3491b210bdff1665a3de000b7a0cf05845e1f0f6ae08937119ca49bc4488"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-picture3.svg",
+      "f5925ca70a8d20fb1688a0beee7d97bcda6f4f8a16785f6f817038ce1bec8a16"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-text1.svg",
+      "6164b9d8732088a14f563f00172c89aa31dacd56e085b6b8248d84650d44e5d2"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-text2.svg",
+      "da67fd5d3d02f4e82765ab9b696eae614faf153f9368d5cb2caa61191e9ddbd2"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-text3.svg",
+      "9f616f93214070e75c226fbdfbc5f479954b841a7b176cb3ab2ad90888b71778"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-text4.svg",
+      "f83bf380d22b2b116578e3cb123a39f01d077403fd04984cb7cf775f6f1d1beb"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-warmup1-1.svg",
+      "872f01ef067741acc165a7a193d238cde41f28e2c9628a024ad8f54b650601f9"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-warmup1-2.svg",
+      "0b0dadf16d571c625614b300bb64518441ca9728227c3684527a92825ab18719"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-warmup1-3.svg",
+      "8150c30e151cf0c64ad36bc4c0d3a4a287ea107b97a60cb4d111e9d9b7ab1649"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-warmup1-4.svg",
+      "01a88b0a695d4bc80fb6ad8005e08b7773500663b21e6d7b34c6f67e97a32a7e"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-warmup1-5.svg",
+      "76da2474600b7172a825adf265f2695948690f5b9b35b47d7e9c12a6097d0169"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l10-warmup1-6.svg",
+      "11fda6630249314d319a74012bfa27f3dbcd17aa5e1f108b03806911f1803ad1"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-picture1.svg",
+      "d6c886ced4268f40d71032480d07681ecafcde57dd0473a79115da673f82db65"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-picture2.svg",
+      "c79c6842167c9f28a1028467813810011d45049a08fa7b38c5fbdb0c352afa6b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-picture3.svg",
+      "fd27610458e748534db36a4092a1552432fe5c33023baa189bf3d5bb2556fc4a"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-text1.svg",
+      "809a6095d05cddb09d072578e232f9cf18b2666dff1b7022491e9b0fe1d3643c"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-text2.svg",
+      "bf4010516ab53531c01e49fb3a7022df3e97fa72713abefc460af20ec3388ce0"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-text3.svg",
+      "f6cda6ce24a614bd41ea8d52e9d23f92ad0ae5b1fbed210b35cc57fac7ce3122"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-text4.svg",
+      "a4c16625b37b5fece8b431652126e230e0870fd9edb4dad273016b58eca4904e"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-warmup1-1.svg",
+      "acda4cce8b395b9b7a700adab63547d68441907ba204cd363d9c5b473330a9cc"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-warmup1-2.svg",
+      "742699a5ad2dba77f0952d329cd620942723e980bb2e95625231b7b22ec7633a"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-warmup1-3.svg",
+      "6def0ac694b7fdb2efcad283302879bce7156b8f66c6008844d4d5e09c65dd2e"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-warmup1-4.svg",
+      "706b3f871cc0b812c4486504cf7a5dcddae9c8f62a1de08ecdbbe4d139b4db20"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-warmup1-5.svg",
+      "49d5890787df4fc636295e1ae88a6aecc4bfdc1d4bcb7128294944ec27909859"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l11-warmup1-6.svg",
+      "fcb39c943081fe22e7f405efc402feb4896647d1a3a75b30554d2e1faca8f998"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-culture-1.svg",
+      "023dcf1f7b815a9fbef800e0fe56dc15cc555e2da566636b6b0fca3ed195da6b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-picture-1.svg",
+      "42c6e1f93422d3e471ac52f152a352ae7b430e4f8f6100099bd3b1b55f3244ee"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-picture-2.svg",
+      "ddfcfac193f6c69dd310c79d5987c6f6af8941a43d4d388a4509044eb2e7b194"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-picture-3.svg",
+      "77006da2eb47ee18c621f47c9796d7d440ced5f55f62bd0f90339c5464734536"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-text1-1.svg",
+      "edb4813de093a4fca056c537c96fe71d78035270536d85575816e96dd903229d"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-text2-1.svg",
+      "8d4a4f323e7c20c217ac2fdff286da4081008fd7a0ed5e99a895f3ea01fa8252"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-text3-1.svg",
+      "06c152cd0750c5cce5e631698cb45124a5cd7192169ad36dd561b5d810aff780"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-warmup1-1.svg",
+      "c9380add877432fee9753dc22606ca38937288ce69c6c9c2d9155ec3d2dd461b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-warmup1-2.svg",
+      "35fa88e1e3258f574ac0f6c07824f54a35c6ed28442e4283f6e40838c47dcbdf"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-warmup1-3.svg",
+      "0077a1367aec3aad71302da78252a52360d750284b6b40469015ee924975de98"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-warmup1-4.svg",
+      "aa513774be23b4775e2ebc054baacd5720566fdc0d9507532ba43058705163a8"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-warmup1-5.svg",
+      "fe4d132dbb505d8abe5478a6452d52f75ac227d7d36dcb9b39887f803a7b5a20"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l12-warmup1-6.svg",
+      "8d71df9b5d3930fe20c1523693761f1985b431ab58274427f6f5da97eac59da3"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-picture-1.svg",
+      "1899bc80aa75046ca8061f38fa6f3a3823686db83da6ceef219ce0ca9c7db873"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-picture-2.svg",
+      "aa32ea4288ea4942a85c0c5acf6f478e11666a4800082792929f0544db3ebdd2"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-picture-3.svg",
+      "2ef06e2ab3acf6c99fd9b1b19597a8e0b33df29cb21ba94f84f78da094e41de1"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-text1-1.svg",
+      "3724509a22b10e456bab5873d6fe43b65f8f6b5834fc6826f2a3e71dd1c63bd5"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-text2-1.svg",
+      "bd5d8c2fb644305c20eb2decde7f9b0df20dd120e3c3274e5377faa42c8342be"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-text3-1.svg",
+      "3406a228ad209690064793a30def52da022e66c8c1778e9901c225cb9bcd8ec9"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-warmup1-1.svg",
+      "8a0f29aece707bc407d1401378a2ac0b5c95aec8576424bc8e0ca2d0d7ce6a99"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-warmup1-2.svg",
+      "3bda3ac7a13d1c6fe924e406b126295e260b6a30fad2da0d4bdcdffd3f7ae9a3"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-warmup1-3.svg",
+      "6c5d3feb1d46f87218aa2c43b9178e363a35abe7588d0514d45f85e541be1c72"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-warmup1-4.svg",
+      "9c300010410cb09b740719c98b2ceace5c4937ee0b49414c0a6929f821304385"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-warmup1-5.svg",
+      "19fdf9570188ec76f2abbfa2a70f094f4c500ae15d6cc649bb6650138a3698ea"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l13-warmup1-6.svg",
+      "5ccb3550a9d5883750baa27bc816dae6af69f226e284f03ef1f581e3625a8abe"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-picture-1.svg",
+      "3c2fe2e28a9c02078ff515fbcedafe7b09e0f83d20e9314b34269c970dc538c7"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-picture-2.svg",
+      "c40b1082c090e69e65636deaba00dd948f293bee4e54acf19762b5c506eb8d92"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-picture-3.svg",
+      "03b0f0353b08c2b129bc3f6971c787e0eba049f4eb60c4e370ceb491e82f7815"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-text1-1.svg",
+      "da00d11a8bd0ca2815d0c5e8699ff538c78e6c3f9fdabc3a0a2d7b660b0b1fa4"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-text2-1.svg",
+      "ccab0b0b03b4be3f254452031c735449adbe2b7f6a641ac4415daede62061827"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-text3-1.svg",
+      "fd0016e4c7915018ef52c770b4d3510d11358c67cc21b8ca2e98e83652fe9128"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-text4-1.svg",
+      "f485c10da363c39fdfc7915234d37f9bacef4b3ab132b3dc8d4aff7b8d1c1c1f"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-warmup1-1.svg",
+      "0ee3653bb6bb55cb0ba98bb016600d43ac0e10fb71c1ab3c10069bdcb0a04ef2"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-warmup1-2.svg",
+      "040365fa91f77cda0e2e488e2bc2c852b79d0723432d9f783720f4eaa1c7975a"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-warmup1-3.svg",
+      "9f72715eff52bcd13604eb7a5713e628e796c61867bbb080f5ddaa8edfee0170"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-warmup1-4.svg",
+      "b086bd63e9954496079bb5cea71973b61fcfc72cada0293b11896abe4930e97c"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-warmup1-5.svg",
+      "30d30e6193912e0b271dbaf03aaca53915a9708a6c80e4fbc9ae15a82f09adf8"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l14-warmup1-6.svg",
+      "2e3b73ecc2e7a6cb2ce8743c7395cca79bec056660a7dd7803d8bb164756f331"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-city-beijing.svg",
+      "c4922bbd3b5cc189494baaee9c96bd9aac502f15ea269aa592d57e654fa9ae8b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-city-nanjing.svg",
+      "cb1d0fd537c9d195bd7d23882c361f8cd5b36ad282ee79964987a3325c4ea3e6"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-city-shanghai.svg",
+      "97c16a4565252343d8cd727670331a9d2bec8d75f8ee8e88e3dffd58b517f2f9"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-city-xian.svg",
+      "491e0b58eaac76eefdd3d17dcbca11fc83feef5ba7d2add7ecadd88bf1ff8865"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-culture-1.svg",
+      "cc09d3f3a3f9d453806697085b6a89ba3a697a86628ff659aad9ccd7863d3f18"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-picture-1.svg",
+      "635ef13516e75a7bb667bef2481c9b9648a25cb98d22f443573a5f1895e49caa"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-picture-2.svg",
+      "cde105734fd75335c3dd3f96e6ec0acdb8cddaf0d8987f866177e6b34b1639cc"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-picture-3.svg",
+      "2a3f17319da87061dfe6aed2e2eca1a84f7c15a64f8595051cd77fc7d28f7fd2"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-text1-1.svg",
+      "c5e1455ec03ae8d32206316f201558258689f4d1d1d1937310b26d2cdb7dcd91"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-text2-1.svg",
+      "854373ae6983d59f263a51c893eb36c3a080d55572115b39d84ababec1ac7a03"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-text3-1.svg",
+      "f0b4e6a5da154d16ab433bca53f34c47b16e0267fb140c8e2aa9740cf22a4b59"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-text4-1.svg",
+      "53d8a574c13ff4b70c490b9e5c10c8add78ab1dbf9d8d700c689194184553c68"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-warmup1-1.svg",
+      "98fb39e5e35812d98864fbda2e8b038c3d52ac62e267ee82790de293c311666d"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-warmup1-2.svg",
+      "5d69727a28693684433061dc3a9dc3c0adf17eb4bc0f07934cc0082db5bf067e"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-warmup1-3.svg",
+      "a17a0f23609b51f458fcb4643f448fc919f17ff7c7f8bb150ed2b9f7e652c73d"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-warmup1-4.svg",
+      "e02f9c96d50e36793b7150f27a22292c3f2dd65339aaa090353888be817b6803"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-warmup1-5.svg",
+      "e11f62d4251493c3c419ccc71eb7ae41192a71e4e8ccf2606ea6dafc6296e42a"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l15-warmup1-6.svg",
+      "9089c5483c7def6aea45804423f60cb5595fa71c9d37b527e3f2457d1635a0c0"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l16-culture-1.svg",
+      "6995528a2d830b448a4be940b725bc3d047b5229231cdb7feca1380899641d99"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l16-picture-1.svg",
+      "d907bbf56638ee389334d7182c5bc54738907f5645f9e224666d776c61d1e8b5"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l16-picture-2.svg",
+      "febad7f0a2a717991d971deb0795cf5fe12092cdbeec56c01a43d4fc39410221"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l16-picture-3.svg",
+      "7dbfddbb7a08e59de0a83f6fc777e4993c3852fff9018a32fcc20726869c354d"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l16-text1-1.svg",
+      "4bafa55ef15f55cb63e0d77680d832ffa25659a419d930388e21d64ff22a62c0"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l16-text3-1.svg",
+      "4fa8c2e59ad0344188611a8dceda07c2f1c080ffa494e9439cb176b75c031894"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l16-text4-1.svg",
+      "e549435f0a9ef31bbb793510f8b16d8ff79c6c9d9aa4f1fbb4ddbeab437a1b81"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l16-warmup1-1.svg",
+      "2dbf02faa3df5a7985ad0c9cc4f58f0d5f3a5c3f9cdf5023a0ee6f2c188dd6c2"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-classroom-emotions.svg",
+      "80f3a23c08ea5beeb7a4dd17a4bce16d630acf65132bd3349e2b618ff31a1e70"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-picture-1.svg",
+      "3baf27d8fb04ebb96f7122389822fa3b38ea97a75cd74a99128110629b5ba27a"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-picture-2.svg",
+      "2d5b66df2f6e0f6448bc221a26eacf17eee47b2f01483ea131be27a2b8f96b68"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-picture-3.svg",
+      "81597b481ac662dcb9e29c7a6a9c17205ffa974d6773e29713c1f719200a784d"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-text1-1.svg",
+      "b705d192925149210025debe904f19a187603e6678704409149328d0f64f9fd5"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-text2-1.svg",
+      "a5b8d86244be1fca2234889ffdd7bdb21b9eb5a7111f0a74774106a778aeaa94"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-text3-1.svg",
+      "2942cbb0bde085dbd52a50c960d691637f5ee70afbc6149d9282ad49dc04c73e"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-text4-1.svg",
+      "8dae1912b12d52b7bbbe074dc6cf55e45c6dbc74ea0f4d2af54957155caf1b00"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-warmup1-1.svg",
+      "62ecc223e660474f40e72086d7860a443f85014ad5c7d340eb60f2172709f32d"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-warmup1-2.svg",
+      "85308d282ef7eff7cf7a96b826b1b9898f95cc513128beb7c3e362dca54ba10b"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-warmup1-3.svg",
+      "d29b144a18668d66fc2e764768c00ad4d8481842c8f151a4320b043cc6d10258"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-warmup1-4.svg",
+      "39b0235aafbc6179087e86ea93504218a801af7d975e3b268d04ad765d1ae7c8"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-warmup1-5.svg",
+      "fcbc72d333ec70e2182478fdb23b55aff99dbbf88d0fb0b28f2eda2cba58d014"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l17-warmup1-6.svg",
+      "0cb696290f5ad395bebd5730998603d0444de942790589c142bd032c27de1896"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-picture-1.svg",
+      "b51065869eafc10765d147e0e0bf982705e76285a1419b9187f1a60f5eb2bd0e"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-picture-2.svg",
+      "95a94571b4a89d1b07e5e63c03d15e72859e124e209d4f3ca1a1aa5651393cdd"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-picture-3.svg",
+      "d4ce75aa5195c10f1a232615ef0259c60c7424b9de5217e15238683aeadad23c"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-text1-1.svg",
+      "4e135098d94a6bff308b71035353784e6e6661fc002ea18078b7ffe35d3df257"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-text2-1.svg",
+      "58ab8fd02bd7da260bd816cfea24849566c1258632132f22f6edc54ab752658c"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-text3-1.svg",
+      "8321be2e270c4780f0310bcab9908e2c6f104a9b01f36513ec6a9646c4e428c8"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-text4-1.svg",
+      "e00713ecca5d5b0d97e4a08b372033ac995886e297cb25b3fc7ac1e0acaede16"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-warmup1-1.svg",
+      "982bb62b22dd5a4a9053501b3ddf23a64a2b9d8138b213f1c2e823e90d9e086c"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-warmup1-2.svg",
+      "7c281b5b1a75530422a6c641e35362ee7815a61c13d7037afd546a9a2bf553c5"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-warmup1-3.svg",
+      "54276686e900a303f4845d07a787e4389b999d756d9b50c803fdfe258a2df00f"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-warmup1-4.svg",
+      "2dd8e067e9f3c298828e780bd9dd2a5897c5b483ac99ef311469e321323313ea"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-warmup1-5.svg",
+      "ce095abccae03d84df3d39c7e25d9d25e9edf2614db50fb8eb9cdfc20de3ff41"
+    ],
+    [
+      "course-app/public/illustrations/hsk3-l18-warmup1-6.svg",
+      "8d023f3167d11968cc07ee8b5990bbb76c304d4328dad9d7057b692b8fd275d9"
+    ],
+    [
+      "course-app/src/activity-commit.ts",
+      "173e4fd812cfbf62738304e3bd8c901946a0bae705d3e70bba38ad9ad1d0b79b"
+    ],
+    [
+      "course-app/src/activity-history.ts",
+      "7edeeacf227f030bcf5377f7f9b364c80c844e37dcc2843e37aa2197d7e1bc46"
+    ],
+    [
+      "course-app/src/activity-provenance.ts",
+      "59b711b1d57a5c6d0d61d033356d37830e5c7caefe5ae53988091a47a32cef67"
+    ],
+    [
+      "course-app/src/attempt-commit.ts",
+      "d0351c5f3ae5dd3a0ed356baae5ea8073dd7bbb71768693ab0e6eed379cf004d"
+    ],
+    [
+      "course-app/src/audio-segment-contract.ts",
+      "42d2daff068e43f8d957dcbc6f640b7a8ce6f2136db590c94a87b64214583657"
+    ],
+    [
+      "course-app/src/backup-view.ts",
+      "c0da5580179d6aadbb1f22cd1679fa410cf31f413db20f7dd7020e5cd31a779b"
+    ],
+    [
+      "course-app/src/config.ts",
+      "efe61e8926f4ec76f968a64095c014659a026b71b19d3d5fa16c25acba016684"
+    ],
+    [
+      "course-app/src/content.ts",
+      "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2"
+    ],
+    [
+      "course-app/src/dom.ts",
+      "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e"
+    ],
+    [
+      "course-app/src/hsk1-bridge.ts",
+      "013b682bf884bef3211277166fb285114f8824392e88bb615885596057bd7ae5"
+    ],
+    [
+      "course-app/src/lesson-view.ts",
+      "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a"
+    ],
+    [
+      "course-app/src/lexicon.ts",
+      "eea19bf5871009d76c7af075a53d737ecba9e5587696343407fd391c04dd73bf"
+    ],
+    [
+      "course-app/src/listening-view.ts",
+      "9637ebb3fd62546924b45a97407f3ed19ab634e647cc9b4812adfc1e1925bb70"
+    ],
+    [
+      "course-app/src/main.ts",
+      "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744"
+    ],
+    [
+      "course-app/src/official-vi-revisions.ts",
+      "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f"
+    ],
+    [
+      "course-app/src/router.ts",
+      "51bdd40c7adff3d1c83aa9229310aae781cd748a3a1cfba7f206617f18fbc697"
+    ],
+    [
+      "course-app/src/segment-resolver.ts",
+      "f07829059f3426d5d57e79b5e7cf0739bfa8bba2b7737a68f2773b683e186a61"
+    ],
+    [
+      "course-app/src/segments.ts",
+      "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00"
+    ],
+    [
+      "course-app/src/state.ts",
+      "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c"
+    ],
+    [
+      "course-app/src/style.css",
+      "9af9711588168b506f16e62f6a1737f91f34cb9b0a2d39856daee966dff9a9c6"
+    ],
+    [
+      "course-app/src/types.ts",
+      "b7b2dfee504bd764ac6560f0d698d5ae996110100ec98577fc4f378dfa832626"
+    ],
+    [
+      "course-app/tools/package-core.mjs",
+      "cbd2a2d8e2bbe301bf8cfd4ec4137a5c84c8d927ab8de4cf8df8f99a34485d2a"
+    ],
+    [
+      "course-app/tools/package-unified.mjs",
+      "0b7bdbfe136b17108f0b5ee5ec0413e96d1e9f6a87c084636b56009439ce1cdf"
+    ],
+    [
+      "data/data-load-v5.js",
+      "1a5422504d274c97b1b3d8e7e8ed20ba171a2db2da5d508b8b52e0a7610a456c"
+    ],
+    [
+      "data/data-load.js",
+      "1a5422504d274c97b1b3d8e7e8ed20ba171a2db2da5d508b8b52e0a7610a456c"
+    ],
+    [
+      "data/v7-1.js",
+      "15b6dc7de8d9e6d3c4b71da6e10121c4c8307832708edc96ad6e8cb3a0429ed4"
+    ],
+    [
+      "data/v7-2.js",
+      "0969227f59324b7a52ddcbf5809638eadff5e1524ba9d881c0f7f99bd3999075"
+    ],
+    [
+      "data/v7-3.js",
+      "29d92e2455e743bd29e5fc0ca3e8cd3fd3551f3f00cfb63b87e9d2f2d225cef0"
+    ],
+    [
+      "data/v7-4.js",
+      "b26da599378f60a8c04bfcf661e8ab0f38ddde147b1e408a3ca8dd24dec67f71"
+    ],
+    [
+      "data/v7-5.js",
+      "11658192b956ad6cfffe900f2a187e9b52796c56cb85a7374a96188f25205305"
+    ],
+    [
+      "data/v7-6.js",
+      "40aed28b2378d5e1cfcc3f0eec05b64216a863cc6044bd57e55eabfb80145291"
+    ],
+    [
+      "data/v7-7.js",
+      "663f37b15c9b8e56c4a890d574c296c02752734c6a53eefe8cdd361ff0d517ee"
+    ],
+    [
+      "data/v7-8.js",
+      "e66c2235aaaa294884f86cbeb9e5867e7de012d815f13d0a892ea419a3042d5c"
+    ],
+    [
+      "data/v7-load.js",
+      "af7b87cdad3a1b2a5e0b6a6f767df67e3ee62968ea389ced8d136ba3dd4adb71"
+    ],
+    [
+      "data/v8-load.js",
+      "85e4c3bdad5123973b1ec52d8742beafc0553e632df98cad7bdf1794f3715f4f"
+    ],
+    [
+      "hsk1-app/content/course-index.json",
+      "aeb5db3563e5d606a7b9fd045ae0f7f61994a9b03efd5a96f1b1e9099f482bb0"
+    ],
+    [
+      "hsk1-app/content/homework30-bank.json",
+      "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d"
+    ],
+    [
+      "hsk1-app/content/legacy-exercises.json",
+      "84b0e7784c06da7b89f224db71d1cb122685d26e184ee41892237d1b2fdd735c"
+    ],
+    [
+      "hsk1-app/content/media-references.json",
+      "d1c00b9706565fbb398b97490d51a1c3338349c2285c06e7ed8a04a68e2f656e"
+    ],
+    [
+      "hsk1-app/content/source-activities/figures/picture-01.svg",
+      "233ca90a60f2755392032b139d63ed483c8e328ec3206480e8d5fd5d622019c1"
+    ],
+    [
+      "hsk1-app/content/source-activities/figures/picture-02.svg",
+      "411de86dc787638012f3eb0023dbf0ab8a4bc44dc9860fb68be3cfca1a291ac2"
+    ],
+    [
+      "hsk1-app/content/source-activities/figures/picture-03.svg",
+      "cdaff6cad8f62f75028b5ae235c87dfa225c3ba80bbd2d327de7ec43d32b5fbe"
+    ],
+    [
+      "hsk1-app/content/source-activities/figures/picture-04.svg",
+      "ba40245e5a515240ce49378f4575b78555f43e773a3a68e7600ea983a4172867"
+    ],
+    [
+      "hsk1-app/content/source-activities/figures/warmup-01.svg",
+      "ed2d54ba33599303fcadbd979bde85fa4eff24e586f405609fe4d7b24dc0fbb4"
+    ],
+    [
+      "hsk1-app/content/source-activities/figures/warmup-02.svg",
+      "b8928b1bb57395114a9fa1b83c8ce1fcdbdcc8f129cdd6368cb7a77302557515"
+    ],
+    [
+      "hsk1-app/content/source-activities/figures/warmup-03.svg",
+      "53b2ddbe1cb9ecd7be66329589b9b1856261041c43306a83c605cbb1e7b448b3"
+    ],
+    [
+      "hsk1-app/content/source-activities/figures/warmup-04.svg",
+      "d4065b4b5c5ad802149751001168f316bc911e3c10d0853a322342d231e71ddf"
+    ],
+    [
+      "hsk1-app/content/source-activities/figures/warmup-05.svg",
+      "470ce8507e80529f4f3bf923164f2bbea58d8ae8f85f32cda73a28b5385182e3"
+    ],
+    [
+      "hsk1-app/content/source-activities/figures/warmup-06.svg",
+      "9b8050952eeeec6654656e67042283e952dba91fcc0f0ca0ba8d6b799d167f2e"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-01.json",
+      "63ee9b873770784634cf7b7cd865c61663f185a6c91e08b4d576da6386644ab4"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-02.json",
+      "1f96a8e7924da5f755c7f656cac5887e90cfa9706a007ff00e00dadedee90853"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-03.json",
+      "ccd76ad50a2dc66dcea0a5a97a72c67d76c6e36e20beeb543824d6dc2e161103"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-04-current.json",
+      "dc89c47d7d5e141f628425017af88cd93ebd2f3dba81c8bcaea754f09f0e772e"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-04.json",
+      "c59eec5284422b59896f0dbb36f7e0bd37d5d13c28a579bc3e3e6c85aa61af21"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-05.json",
+      "44bb1b7298b10528f2f9c83a1f88f438bc55d900a9edb067265d35c65cebec32"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-06.json",
+      "bb61cb1f0d6e3b6f19b7ddf17c08b47370d3c46c812cbf15bc4b56d9acb2fd29"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-07.json",
+      "1c4525238cfd7385e207211f36f57633a6440ccea7b69be58522bc0091bdddb4"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-08.json",
+      "d577165a74d997bf20f49dbbe5528ece2b353c4e36e917f7e56f6ae5ac5b754b"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-09.json",
+      "f49fe969b4516b2d911723dc9c8cb51f696b307b93a1310a49eb8750c30d17de"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-10.json",
+      "ad4f9cad282847041c7313b39dd179775ba883a1b9eff0dfd2343a34ada97f82"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-11.json",
+      "614fe8a3dec09c7e77dd99bbaa5ccc82cfedd12cb7b9aeafbe26589f9ad7238e"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-12.json",
+      "59940d4585d7a14793455d54755fa0f54508be1266765aa8a7fa970000161d8c"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-13.json",
+      "18de1697c9b9f05646b5c5688989488895e6b48ae8ef9591d554d189565b5b7b"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-14.json",
+      "820e147f58196529e195aaf40352604bc8b3c6edf5adee51ab5122f0ae70bfdd"
+    ],
+    [
+      "hsk1-app/content/source-activities/lesson-15.json",
+      "d23b2601ab51382ec8f775bb21cbdd2386b14dd0f649230b457e6b813cf32a9e"
+    ],
+    [
+      "hsk1-app/content/stage2-bank.json",
+      "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3"
+    ],
+    [
+      "hsk1-app/content/stage3-catalog.json",
+      "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913"
+    ],
+    [
+      "hsk1-app/content/textbook-display-revisions.json",
+      "3d3e325b587fd3b41fb11a908db6e74a37f2c9d95cac247a663112e71f8f9e55"
+    ],
+    [
+      "hsk1-app/content/textbook-restored-targets.json",
+      "6dd6e1f1344bb79a5c839e26807b03bffce55eafddd0a7c979d8433fb2f0c357"
+    ],
+    [
+      "hsk1-app/content/textbook.json",
+      "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7"
+    ],
+    [
+      "hsk1-app/index.html",
+      "8e3055829b0e68bfec9f47b94a1f30c149028b172d7976e392f54277d72ed2f1"
+    ],
+    [
+      "hsk1-app/public/help.html",
+      "0797ded7075ebd69e83d0851eff6388881147a1838d0a4d0b1028edd0440e87e"
+    ],
+    [
+      "hsk1-app/src/app/bilingual.css",
+      "89b17e437aa15b58ea7d6c9f2a586f1c1fb15030d8ca4c72987d14a46244bc08"
+    ],
+    [
+      "hsk1-app/src/app/bilingual.ts",
+      "fc774d7a7a3dbdfcd04b8c68f0977504ee075202f97c4e25fece941498782098"
+    ],
+    [
+      "hsk1-app/src/app/contracts.ts",
+      "4af2258587aafd208f8cdac28f4ab3765c10b0f2591ef768b002aeee9442387f"
+    ],
+    [
+      "hsk1-app/src/app/i18n/core.ts",
+      "17f1f11d4b4b13c21fa1d6a75e7da4050bd035dcaabe17c65211bf3e8b59e798"
+    ],
+    [
+      "hsk1-app/src/app/i18n/exercises.ts",
+      "503c1756e194cfbab236beea964034f1d1e9ca4ad4bf7780b2c5e38a08bdc1db"
+    ],
+    [
+      "hsk1-app/src/app/i18n/homework.ts",
+      "47e6a9b048ab10f84df30d1797b009b8fe3b3bd1293133dfb6484fd714e8d8f1"
+    ],
+    [
+      "hsk1-app/src/app/i18n/homework30.ts",
+      "142aa915f665c33d3582d8beabfd8c78cbf9ab7630eb669f0b293dddcc266bd9"
+    ],
+    [
+      "hsk1-app/src/app/i18n/listening.ts",
+      "80c10b3cf550f458f0e2f8e5c85891216e16126c07787e42a9f8c2d5e958bae4"
+    ],
+    [
+      "hsk1-app/src/app/i18n/mixed-vocabulary.ts",
+      "4e437551785540c8893974637e36c68d838ddb59d7b04cf6c5f71b61ced8189f"
+    ],
+    [
+      "hsk1-app/src/app/i18n/progress.ts",
+      "5927e8efd9a762ff2d3b340b1e059b4cc08bad0fce9f9c37762cb43e864cb93d"
+    ],
+    [
+      "hsk1-app/src/app/i18n/review.ts",
+      "0b7a533c20cd52149170086e858ff6b7cf41bd3b0f46fc0f79ffd5dda8ae2bb7"
+    ],
+    [
+      "hsk1-app/src/app/i18n/textbook.ts",
+      "97842af5c0f4e77a4cdb613b213e03b5533147d90c426fd220ca790b44a1e1a6"
+    ],
+    [
+      "hsk1-app/src/app/i18n/vocabulary.ts",
+      "d1354be31355e895191d56aecb9776fb03c54159ad476d30c362c49aec60b345"
+    ],
+    [
+      "hsk1-app/src/app/labels.ts",
+      "d2e3748543487a5d039724e89cca0b4266a2cb3d8db069a3a921c85b9a632b01"
+    ],
+    [
+      "hsk1-app/src/app/lifecycle.ts",
+      "43c16c25c8ff4998fd5c79b98163ff24edaf83fecfabccf458bb6d4617d4cb4f"
+    ],
+    [
+      "hsk1-app/src/app/main.ts",
+      "cd54d9e3e2f0136bf7c59e291728f7b9e910faa8c3205481fc9665552433ce07"
+    ],
+    [
+      "hsk1-app/src/app/navigation.ts",
+      "cf3af0f9b70b2a2a73baba4e1e44ab3c19cea3ccc540caf4f6f165235e5b2c43"
+    ],
+    [
+      "hsk1-app/src/app/router.ts",
+      "1cfc787bacc667f73445db0b3506a7ef6b53951ad5f120759314f754cdc95126"
+    ],
+    [
+      "hsk1-app/src/app/styles.css",
+      "737f822e9c689811c391486a720dc1f82546bc465026a22a048837bf3fd72e42"
+    ],
+    [
+      "hsk1-app/src/app/ui.ts",
+      "e1f9b1de8d8fab64c82b5e826b9274db90e23f6e92ab3a9a8188f65b5a26c444"
+    ],
+    [
+      "hsk1-app/src/domain/exercises/catalogue.ts",
+      "745ecd83ca30f2364af8ef942783c57c4792ef5f521d73d8634923ddd4c735b0"
+    ],
+    [
+      "hsk1-app/src/domain/exercises/engine.ts",
+      "d8e4358f814216e4e3da0e8fcc761f6ef4b81938dbfcb53b57ef9e6410afb6f5"
+    ],
+    [
+      "hsk1-app/src/domain/exercises/migration.ts",
+      "465bb566ef0075943a590a3e05b21e37cc7685c3e897e6e07cfdf75af731fc10"
+    ],
+    [
+      "hsk1-app/src/domain/homework/engine.js",
+      "5a8ac5bbab07bf3dc505c46d3d0ea8ef48d14017e6875742ff816d4646295321"
+    ],
+    [
+      "hsk1-app/src/domain/homework30/engine.ts",
+      "f5684607b1cb73ce316e6c65fa135b645ee274859ac14a428d6d50cc654532cb"
+    ],
+    [
+      "hsk1-app/src/domain/listening/controller.ts",
+      "281270a2bf35164f38f50eca6dee37204209387d296c2f5c16a80aa0be05fcf2"
+    ],
+    [
+      "hsk1-app/src/domain/listening/types.ts",
+      "6523e64a3ab848b2e707ada96237c2ef4d0687cf8bcf4147a1a74b0d0644f282"
+    ],
+    [
+      "hsk1-app/src/domain/practice/engine.js",
+      "2c9b3c43f5980b12e4333e56a06cb660a012d3842c5b1e04e22a7756af79452c"
+    ],
+    [
+      "hsk1-app/src/domain/progress/reset.ts",
+      "a06540eab010fb1affd1be008a69f7f2287ba938677e2b5fdf575ae329644ea8"
+    ],
+    [
+      "hsk1-app/src/domain/textbook/practice.ts",
+      "96f737f5a4186616a032c8b8e4c00914dafd35990221b3bbd11692b1d7cf2096"
+    ],
+    [
+      "hsk1-app/src/domain/types.ts",
+      "79b2d72b3eb1578c4f685a8c6144a204fa3889e243c72c4e732b0b588299af17"
+    ],
+    [
+      "hsk1-app/src/domain/vocabulary/controller.ts",
+      "03f51f9b69162b537abdb80c49904deac92bebdf847d91378468f24d32ecbd03"
+    ],
+    [
+      "hsk1-app/src/domain/vocabulary/mixed-controller.ts",
+      "f7d4d6aa00649abebbf376ce34ef58b9dda02cb6b23306f32b742e33e93fbae3"
+    ],
+    [
+      "hsk1-app/src/domain/vocabulary/mixed-state.ts",
+      "763a4a30a5eccad4c0d1cc25d743f1d14af013f4235868a398e57b91254f11ac"
+    ],
+    [
+      "hsk1-app/src/domain/vocabulary/types.ts",
+      "e4168931a907da8cb2c596a5a371e41a7dbb4a7d4f834b93a45027608f63286d"
+    ],
+    [
+      "hsk1-app/src/features/due-refresh.ts",
+      "80763c1d7b99cbdb2b5ceffc0ed3e0a56d627e75916930f532ccf36c3f8fbb38"
+    ],
+    [
+      "hsk1-app/src/features/exercises/archive-data.ts",
+      "adf9646230c856cbe0b30611277498ccfba7a950b4e18c592f86d77b01a9df21"
+    ],
+    [
+      "hsk1-app/src/features/exercises/archive.css",
+      "162876e4c1d5f8eb6902c429d4f4bdec539be7ff856b90a2557e7320321b65ea"
+    ],
+    [
+      "hsk1-app/src/features/exercises/archive.ts",
+      "7a96475f3d0c99baf4e16fcdfc8137dc7b6f05e717b1259d1c26a1aa96e4e78f"
+    ],
+    [
+      "hsk1-app/src/features/exercises/exercises.css",
+      "5c2012b2e37ef85a9486d9b55ec0e930c29417699acf8d19fdf463c726ce7922"
+    ],
+    [
+      "hsk1-app/src/features/exercises/index.ts",
+      "9cb023534e3eddb12254ea9bb18636b0fb394c5fcd89813317b58b61ca76bc14"
+    ],
+    [
+      "hsk1-app/src/features/home/index.ts",
+      "3dd89b11892caf4ea1822de4cf441b3923f1bc39b6c38567978edd45c511b59d"
+    ],
+    [
+      "hsk1-app/src/features/homework/controller.ts",
+      "d333f18fe625419ba088c86c9d24a14157ff5ff68861cb1aeaf806fc5bfa7839"
+    ],
+    [
+      "hsk1-app/src/features/homework/controller30.ts",
+      "4999a4546260a28efcc5ec054265004034ddbac107d4447ff947f5568505f824"
+    ],
+    [
+      "hsk1-app/src/features/homework/homework.css",
+      "66f1596805b56ed052b8e96b2c34ba38c46e3258c9e1ac0c398a3b79d815278d"
+    ],
+    [
+      "hsk1-app/src/features/homework/index.ts",
+      "158e4307488bbf08bd410c8cf2cccaf09b7194337825993c306fcfdcddb3ddd3"
+    ],
+    [
+      "hsk1-app/src/features/homework/index30.ts",
+      "c5b1db1092ddf3926e9b6ded68c501f350dc3c1bb9b7ebb9a63acad1d7a92b18"
+    ],
+    [
+      "hsk1-app/src/features/homework/receipt.css",
+      "4ef7f07b30752bd2f964e1609a574c67336b1d2e6bb5381fb7eeef3eefc2b1a4"
+    ],
+    [
+      "hsk1-app/src/features/homework/receipt.ts",
+      "ee5aa392a3f7a382c702c856781af7780b55b57905ba94dbc20d6951013b08ca"
+    ],
+    [
+      "hsk1-app/src/features/listening/index.ts",
+      "20bac7d6dcc51f450edf65939d78cce1d6ea4e720753653205a46e5ebdffad81"
+    ],
+    [
+      "hsk1-app/src/features/listening/listening.css",
+      "bd40a475fd71e8ff744ea7d96c2c697b45a6b2b2b6f14c2a68c6793bc3962568"
+    ],
+    [
+      "hsk1-app/src/features/progress/content.ts",
+      "515d1f6823c57a8ad5631489de5eb0ce98748e8ffdbc29d7eca659cc30e8537e"
+    ],
+    [
+      "hsk1-app/src/features/progress/data-panel.css",
+      "08b584c5cfc93b6874ec712b3c17e48bc1526a5b58237bcce3059a30ac710b55"
+    ],
+    [
+      "hsk1-app/src/features/progress/data-panel.ts",
+      "de7ab121385d5f46ff4df685073087a1b48ef524b5498053f99a02ac9cc89347"
+    ],
+    [
+      "hsk1-app/src/features/progress/index.ts",
+      "82d968bc21afadb5373bd284c0295ffde94321bb4d2251de9446a4207e14e6ea"
+    ],
+    [
+      "hsk1-app/src/features/progress/progress.css",
+      "272ce35be75cd3fcedd336593350b07d00ed0ca827a05076fbc97cac905fa8a3"
+    ],
+    [
+      "hsk1-app/src/features/progress/summary.ts",
+      "c267e1ea400c5df5a2cb547d7d9c8aa3c731001416ef9530d2b41764df96f054"
+    ],
+    [
+      "hsk1-app/src/features/review/index.ts",
+      "f3ecdccbce0d3e7a8588c32a47980e30bbc8e575981beeeae2f07a97cbff993e"
+    ],
+    [
+      "hsk1-app/src/features/review/review.css",
+      "8575196e80a87fee0af9daa68c0d39af1a3d263821666a7299468e872a683186"
+    ],
+    [
+      "hsk1-app/src/features/source-activities/figures.ts",
+      "796666a581ce4fbcaabee7706f72347e71cfee3a305b01a9a8019f320736da26"
+    ],
+    [
+      "hsk1-app/src/features/source-activities/index.ts",
+      "75982f634a8969ff8faf90e15593c33c551e0edde325c3e5d07c921a498d9d1f"
+    ],
+    [
+      "hsk1-app/src/features/source-activities/numbers.ts",
+      "24c1d99c84df061e5dab90fbb1c8fbd2548bc1dbcbb85366a904df4ce3859fb8"
+    ],
+    [
+      "hsk1-app/src/features/source-activities/pair-panel.ts",
+      "ef837f9199a39c462e0edd0d65dc6acf9b5807d18840916530c54f800dc9f6de"
+    ],
+    [
+      "hsk1-app/src/features/source-activities/source-activities.css",
+      "5006e8112896236e87435291519e3fb501a916dfaacefe3a6b4e6c4e88e83bc8"
+    ],
+    [
+      "hsk1-app/src/features/source-activities/tables.ts",
+      "62aae21466b6611171d5412f92d663dfd6248e19f57b166f3595b991f4a8c4c0"
+    ],
+    [
+      "hsk1-app/src/features/textbook/dom.ts",
+      "86bf14ecd018d132c78fcc9d0be0b18c1513f2d9787b4beae892db2ecddeee86"
+    ],
+    [
+      "hsk1-app/src/features/textbook/hanzi.css",
+      "6357b3b54e3fc4eb3d7d5e8cb29d4b1301800c9a66c2aa0861fbb2ec9c69c1a5"
+    ],
+    [
+      "hsk1-app/src/features/textbook/hanzi.ts",
+      "fce02d427bdb1a4c5a385d90bc8559aea45baa3935a8bb81b5b7edb67e468ec4"
+    ],
+    [
+      "hsk1-app/src/features/textbook/index.ts",
+      "13870e1c6897c8da10eb39a5828d98ddf5da1206f70d8683e85fbd16461707de"
+    ],
+    [
+      "hsk1-app/src/features/textbook/language.ts",
+      "c859d4644d1b6fc2625ae3dcfe1b048b9d45b88e1e8214a8151b71deb0dc02fd"
+    ],
+    [
+      "hsk1-app/src/features/textbook/player.ts",
+      "df001d9f4604009981fbfcafc90001ee138de0322245fe9eb0816d8503314af5"
+    ],
+    [
+      "hsk1-app/src/features/textbook/practice.css",
+      "3fd4b062ae1879c49e2edd54584e84bf0bef9bd0b4234bd274061700897fe686"
+    ],
+    [
+      "hsk1-app/src/features/textbook/practice.ts",
+      "61f9cda16d070d2d35678bf034df693b67fae8dc6a6dae6b3fd43133792c4a4c"
+    ],
+    [
+      "hsk1-app/src/features/textbook/text.ts",
+      "4858677c9840db097e8dfae0ea6180c725ebd33dbadc8bd2ea27933454b84330"
+    ],
+    [
+      "hsk1-app/src/features/textbook/textbook.css",
+      "977210ba6f0f331bbadba4042cf47ee36b00fe10666de36216963306d2957df5"
+    ],
+    [
+      "hsk1-app/src/features/textbook/vocabulary.ts",
+      "73af993be2ba0a20bcc90c80f2e59710326cadc9c8772d4e9bc972a159a059ca"
+    ],
+    [
+      "hsk1-app/src/features/vocabulary/index.ts",
+      "d0de31b4d68f76f757a4df207e6ae2e1fd1a1da9a95ade233f9d064ed875af81"
+    ],
+    [
+      "hsk1-app/src/features/vocabulary/view.ts",
+      "3baadbba67a046017e6f77bdec796e7cec9c8907779ab9219f99ceea8dfae5ed"
+    ],
+    [
+      "hsk1-app/src/features/vocabulary/vocabulary.css",
+      "5bb7480da4a731cc986696929c925ea0db041bb8b78b8e78a0d35c878ee449db"
+    ],
+    [
+      "hsk1-app/src/services/audio/index.ts",
+      "2e8674730405a59bc82556923f588013378495e238f097e75356083dcf2ec4d0"
+    ],
+    [
+      "hsk1-app/src/services/auth/index.ts",
+      "20baf085907525a92eaab3b15b835e4abb5c5aa2732d205dcda8f58df946a8e7"
+    ],
+    [
+      "hsk1-app/src/services/content/asset-base.ts",
+      "d78a5b141d1e674210171de2ed980258620880c5cd4629ddcdb2161699c163f1"
+    ],
+    [
+      "hsk1-app/src/services/content/exercises.ts",
+      "7df974c888f176d3b8661cda9fd86d951c74f7b4be37601fc5f95941f05fc9a2"
+    ],
+    [
+      "hsk1-app/src/services/content/homework.ts",
+      "b0c023917c79a096ff62860eb3e4a309054b5ce4f1fa1420169e08374bc306e3"
+    ],
+    [
+      "hsk1-app/src/services/content/homework30.ts",
+      "83e025aa50bf6264fe680c2b31037009def653bb40f63b4ec5e1e4818e0b0c62"
+    ],
+    [
+      "hsk1-app/src/services/content/index.ts",
+      "6ad70e75d43afafd5643e5df7c55e0633e5b1ef3cecf737d260b05da12392c2d"
+    ],
+    [
+      "hsk1-app/src/services/content/listening.ts",
+      "3fb45587a73f4829c4a2ea30c455a1f7f28567b8bc19ae59864d3160516e8d73"
+    ],
+    [
+      "hsk1-app/src/services/content/official-vi-revisions.ts",
+      "c488eabcc22449a5734d28b75b5fdc0b91de2bfdf54427160bed38c9a9bf9f97"
+    ],
+    [
+      "hsk1-app/src/services/content/textbook-display-revisions.ts",
+      "2ee435e327f656981fc4bf30ecd680907c2d33b31ef79f7074cef8176f308a09"
+    ],
+    [
+      "hsk1-app/src/services/content/textbook-supplements.ts",
+      "2ba686a76536d37f40aa83634a0a0dbcdecb1e0db487bc6da370ba804c9de0a6"
+    ],
+    [
+      "hsk1-app/src/services/content/textbook.ts",
+      "033d731e73a18b6d4a817eb1f327711fc49e46960a447076d4375f44da423d18"
+    ],
+    [
+      "hsk1-app/src/services/content/vi-presentation-state.ts",
+      "1b9b11803d43325defd8c9819149d88290f548de697413a2371242657e8288fd"
+    ],
+    [
+      "hsk1-app/src/services/content/vocabulary.ts",
+      "3647506c4532d74607716ef67271dab5a314ae25b8e4a18b5f4897cce1bb01a3"
+    ],
+    [
+      "hsk1-app/src/services/learning/homework30-progress.ts",
+      "989a32e093a75451fb5e990f70b9255b4fe6d09917dd7bf8dd1414185cfb7dd4"
+    ],
+    [
+      "hsk1-app/src/services/learning/progress.ts",
+      "20e63f49375842920f00c8a4e4ba46f00ec33044a303ce8d9b57cc4b56dae321"
+    ],
+    [
+      "hsk1-app/src/services/learning/reading.ts",
+      "f5d5ea6b81494d4a5a69f641f135ba9980860f605cd80ea2bb6d8a644d0e61fd"
+    ],
+    [
+      "hsk1-app/src/services/learning/session.ts",
+      "50460eb3f8015997acbf68ee837da8f0f5fbe8d6b3c20d1efbfb17d296853a8f"
+    ],
+    [
+      "hsk1-app/src/services/source-activities/browser-pair.ts",
+      "60c93905d9c78def58316d5d810405d18d264f7bc533c48e0d21816bf0301331"
+    ],
+    [
+      "hsk1-app/src/services/source-activities/content.ts",
+      "e77761c05bcc24418eee07cfedd217950cdbb381157d21f8b8c019d52d062d44"
+    ],
+    [
+      "hsk1-app/src/services/source-activities/paired.ts",
+      "7e2dd046dec52366cdbf981a08f84d24aec47928b39f3159a5cd8e4faf70d079"
+    ],
+    [
+      "hsk1-app/src/services/source-activities/scene-figures.ts",
+      "230617e627d65df37127ad918adf0f7f7a7647ed350a6aef999c4e93d4dc8e20"
+    ],
+    [
+      "hsk1-app/src/services/source-activities/state.ts",
+      "7678c98fa0d2a53d335971de3f8c9e0346d19d732ac734b99e8191443ac9c34a"
+    ],
+    [
+      "hsk1-app/src/services/source-activities/store.ts",
+      "630613cdc164b142fee6f2fd159736576fb761e47958001df8b676058b0fa9a6"
+    ],
+    [
+      "hsk1-app/src/services/source-activities/summary.ts",
+      "f5c22f935a05ae733f1055cb7607e6aa67b522df585ef15aa348844072cef79b"
+    ],
+    [
+      "hsk1-app/src/services/storage/compatibility.ts",
+      "6a72f0792459e9744ce67b8b81a0c578daef12fcf2096ace1f274d136c6d9104"
+    ],
+    [
+      "hsk1-app/src/services/storage/copy.ts",
+      "ee0ba4491f91a56e9f9829bf168d1d52849a6a409d433140dbbae753619642d6"
+    ],
+    [
+      "hsk1-app/src/services/storage/index.ts",
+      "a0f3c1838c7c83c4af7ae46c61418f674d332499a61e56b69cfbcb080a4efab0"
+    ],
+    [
+      "hsk1-app/src/shared/activity-card.ts",
+      "46873514edf100bb97d116cd2d1038e18d398b4b577fcb725beddaa52eb60ecd"
+    ],
+    [
+      "hsk1/app-core.js",
+      "940c1afdcdf0de950630c4dec88bce0ba22a3ce4a942fa0d0688d365123051ca"
+    ],
+    [
+      "hsk1/app-practice.js",
+      "84a0cd6063facef50e06f92c1dbe2e4128d126495816565a0143827450f33b4d"
+    ],
+    [
+      "hsk1/audio-fix.js",
+      "35b963b04c2c6892b0b8ca56054125762c0c284727b4009af7b07f9fd9ca9213"
+    ],
+    [
+      "hsk1/auth-patch.js",
+      "f3d0060ed3cbcd8bdb38a1f4eaab765e2b597c309739c93b0da3a2cc8658e6df"
+    ],
+    [
+      "hsk1/content-audit.js",
+      "3b956aec007e738bac2011f0d78a9670ac459c6bb5a866ea15fcd22590f183b0"
+    ],
+    [
+      "hsk1/corrections.js",
+      "e5c93d9b761837e3260476171087c26a857aaef2e1cf8b029818bd9e14c37042"
+    ],
+    [
+      "hsk1/data-1.js",
+      "36bf71a24d2eaba66b2000d4d02e8078d9dc9e503a78210ff6a0c87d42e8eb2a"
+    ],
+    [
+      "hsk1/data-2.js",
+      "114e497150c142d6b7cb1fdeaf20c74bd100fa2c4d43bb105bbfffc15e0a2e84"
+    ],
+    [
+      "hsk1/data-3.js",
+      "51a550d1c00cfbffb5e0ed8ad5038b61623bb130b9f6f6947a95ee9054c9a10f"
+    ],
+    [
+      "hsk1/data-4.js",
+      "cbaa7c19c69ce11e02dbfcb4f5b7b34a3e7d8c32ced67af8e800396620fa0a84"
+    ],
+    [
+      "hsk1/data-5.js",
+      "d90fca6515ab63cc68551239bedaf9fbd203b269f6981fc933fd633d47758e5e"
+    ],
+    [
+      "hsk1/hanzi-visibility-fix.js",
+      "2144cd0a616c406e5e42901ab8292c466301aabe7b385ddbc356603dac97330d"
+    ],
+    [
+      "hsk1/index.html",
+      "19af58489e8eac442ff1140de8af77177332992c1839d501992fd4fe7a43dfd2"
+    ],
+    [
+      "hsk1/lesson.html",
+      "0eb80a62bf0e8b389d1d4fa680d988a2a606870ee374f6a3a7416c1c3da4a6bf"
+    ],
+    [
+      "hsk1/practice-l12.js",
+      "30a0269edc7d9bb4f217df179c311371bbb343a950082795392231182a8baa24"
+    ],
+    [
+      "hsk1/textbook-locked.js",
+      "19011d36ea43c82df0e5ed1edb0ec0be829d666933a8990d57034a189d8ec985"
+    ],
+    [
+      "hsk2.html",
+      "d7ab497b9bf654821af23791d5bdd4ec5e3823539581805806a3ba2ddcc232bf"
+    ],
+    [
+      "hsk3/app-core.js",
+      "b19a512d51f12a712e80a51d915c8f10d6b4eaa8641d563a95cb8441e1f8a534"
+    ],
+    [
+      "hsk3/app-practice.js",
+      "141b1c35ffba3ab9dde5f5bd3fce82ca84c5b645f5518b929626f67118300b67"
+    ],
+    [
+      "hsk3/corrections.js",
+      "2945b580af86d4f8db13b599e2ceaae9f33a58d1bcd4fa6764c7d8b83cc95794"
+    ],
+    [
+      "hsk3/custom.css",
+      "51fe012ad08d1358da8c17425f75bc4004e4ec03f312d6783798fb35d423ed79"
+    ],
+    [
+      "hsk3/data.js",
+      "4635d5bda82731a22de8fbae87dee619ea5a2430442304a0227504bf1cfdab48"
+    ],
+    [
+      "hsk3/index.html",
+      "b0644c24cadae15d762ab34df1898c01833b502f0625b04e3971b9d6be0195c7"
+    ],
+    [
+      "hsk3/lesson.html",
+      "6497783cbb212162d110043d4974502dd07db451d179c3acf2a8772b0781e603"
+    ],
+    [
+      "hsk3/runtime-loader-core.js",
+      "3d8a6d8e2166294449c0e67f9c16a8db757296d28259bffbe60961162d96a6e5"
+    ],
+    [
+      "hsk3/runtime-loader.js",
+      "62e4b0628ba18d6401ae262340693f811911e247ac56489c88c485d59ae6e58a"
+    ],
+    [
+      "hsk3/textbook-audit-ui.js",
+      "1c07c1284120b43241a9213252a440fab6cee4a0840f0201fe5a0369447cecff"
+    ],
+    [
+      "hsk3/textbook-audit.js",
+      "88b14047a18ba8fdc2ee9ebaa265bf70d4b6cea3d7ba58d7853d68c11af63e2d"
+    ],
+    [
+      "hsk3/textbook-baseline.js",
+      "4fd05365cec3b4647d3750a71fb858adbc62030bc341e7c737cf2dda8313b4ac"
+    ],
+    [
+      "hsk3/textbook-locked-data-2.js",
+      "4e9174776e447192b7b22841aa332fecd38f306877bb07941165bd6a9675e034"
+    ],
+    [
+      "hsk3/textbook-locked-data-3.js",
+      "13dae9424af5ae656f69123d42e8f4d492a12d78c1d61cb6430b1d3377a36ae3"
+    ],
+    [
+      "hsk3/textbook-locked-data-4a.js",
+      "f0ecbcd02a3b37d8643ac9cf71d8a137013225df0ea39f187406d4b8e093944a"
+    ],
+    [
+      "hsk3/textbook-locked-data-4b.js",
+      "225608ed86b4103486230846b3429d45d366247c2767e3d822e25bcf76712ab4"
+    ],
+    [
+      "hsk3/textbook-locked-data-4c.js",
+      "f2a42d0f5625ba498341e6d8558cad57bb290f4c636091ea84472cf5eb257679"
+    ],
+    [
+      "hsk3/textbook-locked-data-4d.js",
+      "6c29aedd7c30eccb20316fd102c708ea36d2a6c688a0a88294817e9ca33269f0"
+    ],
+    [
+      "hsk3/textbook-locked-data.js",
+      "cfd6d1f4111c35ee44dbe9a4a022ace981030542ef030e2d0437fb8747b2a73c"
+    ],
+    [
+      "hsk3/textbook-locked-ui.js",
+      "1244cf25892402b3fbceca9311fb2e74e03ff656091a7371fd367a7b66f9cba3"
+    ],
+    [
+      "hsk3/textbook-locked.js",
+      "63492c3489212b7ffd8b78b8e32822e8ca078fd97916107649a0f32c6b31ccd7"
+    ],
+    [
+      "hsk4/base.css",
+      "0b18e9868ffad42ffd706954414f6f8a7cfd3bccd57d9978b25074876c31cf98"
+    ],
+    [
+      "hsk4/content-audit.js",
+      "2364bd4eeac5c30e9a1d22ad1495ae1adce89f0daead43363f5385f85fbcf94e"
+    ],
+    [
+      "hsk4/content-final.css",
+      "99102c4f2f0684211078a49f178efae40bb056ad159b3fc53229ccdd3fff46bf"
+    ],
+    [
+      "hsk4/content-final.js",
+      "a78ef6ff4316bd60f16f6a146b007b3e1af4ba8b725b6ddcbede73d0a675eb96"
+    ],
+    [
+      "hsk4/content-ui-final.js",
+      "5b76e0ad5baff42868c3dfed95f0bcc6248131d42182ea9c33b9679e38d2d67f"
+    ],
+    [
+      "hsk4/grammar-canonical.js",
+      "848fa910d446cb9b1b0db020909ce64808b3ed4f542105accc090c1c7fc799d6"
+    ],
+    [
+      "hsk4/hanzi-parity.css",
+      "f716ed720cdf82cd8ab16a62a19518e06a6b8cf8c4622ce103030ab4a6706231"
+    ],
+    [
+      "hsk4/hanzi-parity.js",
+      "9a7dd35ac83140923612c9aa87b2cd65e023c1311a6f3b8fc4ea5839245ee950"
+    ],
+    [
+      "hsk4/index.html",
+      "c2928aeab22f10931fd0a101a91222f24f0c46f280a5a1244eb4472d5e136790"
+    ],
+    [
+      "hsk4/lesson.css",
+      "35421208b9d391099d5c7bbd37aa85ad06f588584b43f3a3d97e7002e6fc6acb"
+    ],
+    [
+      "hsk4/lesson.html",
+      "0de6b03c4956dcaeb4a80e55d4776249f4c64b1bcd10c19e2c10417c0398c012"
+    ],
+    [
+      "hsk4/locked-text-guard.js",
+      "659b5e751455796e7babca962e2c664e1b922fe084cd50cb2397f2a2f680f7f0"
+    ],
+    [
+      "hsk4/locked-text-ui.js",
+      "a4013a3e0a36b32e30304fa6ccc98aa5a3460f1e51314ade432c7a7407b72b8a"
+    ],
+    [
+      "hsk4/locked-text.css",
+      "5a6f3e179f6a3935a0dd25a5cd696c4ca9b7742eb6174184a5b06fd45962f2fb"
+    ],
+    [
+      "hsk4/locked-text/chunk1.js",
+      "0243c7d88531066c8a8b5cdd2910f3357742a9362640001811cbd29837fced14"
+    ],
+    [
+      "hsk4/locked-text/chunk2.js",
+      "6e66e7daf9092e4afef89e92a2b88839ceb7a9b9428e9889f314ef5bf53f5363"
+    ],
+    [
+      "hsk4/locked-text/chunk3.js",
+      "d44354cb6712ba702fd4daa7a373ad3f3539964f254a73c8f1d3d1a5df10de88"
+    ],
+    [
+      "hsk4/locked-text/chunk4.js",
+      "cac93e84223bd94a8a7d5b39fea3661383d7a4a3194f0ef5df7575117a0ad328"
+    ],
+    [
+      "hsk4/locked-text/chunk5.js",
+      "a9c92d57e1d6a74b89ef43ab4d60b47f1e0c6e90d602f3a1758855feb76f8e28"
+    ],
+    [
+      "hsk4/locked-text/chunk6.js",
+      "c84b8fcbb6e26a063b3d9a548b508aa72597b418256e5bb40153887614f7fef5"
+    ],
+    [
+      "hsk4/locked-text/chunk7.js",
+      "fd26baa978aa62a5bba322fe955e8e965fccd2da4cd897726acb19828cfd6d8b"
+    ],
+    [
+      "hsk4/locked-text/chunk8.js",
+      "69c7db50e86920269dfb5ac0a88a8990863876b841993fa1dfefe37351e63bb7"
+    ],
+    [
+      "hsk4/locked-text/load.js",
+      "07c15dc6c631b2c5fac98b0dc7794ff662e1293a236e8d8a659043b6598915e6"
+    ],
+    [
+      "hsk4/modules.js",
+      "0bc466d697cbffc5be49b924cd12348728d00b09834a5320887c915b9ca392e2"
+    ],
+    [
+      "hsk4/practice-final.js",
+      "e6f5ce7c934e7636216b5c27d2b52849778523357edcceaa4ed9c7de8eceba03"
+    ],
+    [
+      "hsk4/practice.js",
+      "f3c691005dda8fc64d78c8c3e1cfab79d9a4e3960a4f8686ad592738fb579762"
+    ],
+    [
+      "hsk4/reviewed-practice-config.js",
+      "3c0c6784118f6f8400c610ff1236d756027bbb05a5f246e874aa16cbfe18751d"
+    ],
+    [
+      "hsk4/runtime.js",
+      "ea74ed1af315f00b9163855e7779c791cce18c33940bf04cf1c1bd696b75558d"
+    ],
+    [
+      "hsk4up/app-content.js",
+      "1fb70ea6ec7d5063aa2ee45e82286cd44acf19f40496c906ba0c92ae35583e8b"
+    ],
+    [
+      "hsk4up/app-core.js",
+      "6e4e2d5158ca889660753615fd70f8f45e405398a73f0e1dd8b8b6035ad6316b"
+    ],
+    [
+      "hsk4up/app-practice.js",
+      "125ef2ebcc3137642c5a6bac83c3a44fbc1dd00770258c937c36b3d7b7b0cad6"
+    ],
+    [
+      "hsk4up/grammar-canonical.js",
+      "3271ba0e0955cd8714ab3e5b4594f50795028552115ea223a0deb9dd0f7a60a0"
+    ],
+    [
+      "hsk4up/hanzi-steps.js",
+      "e117cbeb676f1977189fcefb5b8c729c3a47a15fe743b597faddef8e9a2a5dbc"
+    ],
+    [
+      "hsk4up/index.html",
+      "350f4450015ca9fa68496880cb3c31573a9a9c145d3a98e0ada428cafe96d84e"
+    ],
+    [
+      "hsk4up/lesson.html",
+      "3b93b047b741a6cbe384097371521fd224d005b38ffa0a8ad5d80b15a2d29fc5"
+    ],
+    [
+      "hsk4up/reviewed-practice-config.js",
+      "0edab5c59616121e4ef7060de4690a16de9858f936b4c16f79daac2b4362d9b4"
+    ],
+    [
+      "hsk4up/textbook-detail-ui.js",
+      "c9cbf70220cace39f599047beff942e0cacdbb5f64c43b413a27108b089acb38"
+    ],
+    [
+      "hsk4up/textbook-detail.css",
+      "9799724012b160ebf55dce4c0ff7867de975a4504753025ae8ec7025f2d4399f"
+    ],
+    [
+      "hsk4up/textbook-locked-guard.js",
+      "c3fbccb06c0be32534b90266763feed2464199d5601e09b431a01d945ef0ac1c"
+    ],
+    [
+      "hsk4up/textbook-locked-ui.js",
+      "b6d43e18e8d6e54633fea823e659ee1aa4e8775f8bcf97e38c51940b8d842cc6"
+    ],
+    [
+      "hsk4up/textbook-locked.css",
+      "7c056891b93d0b87be026e562c121616f5308ed80a56a65c6af289a6198ff9e0"
+    ],
+    [
+      "hsk4up/textbook-locked.js",
+      "9eb16f5f7575f5f2a397fa8a8447916cab872fc81594cd720661b286492999c5"
+    ],
+    [
+      "hsk4up/upper.css",
+      "23c55ced021c659078e7f291c97fca0a860572f28eafcc9936425d2815ffddda"
+    ],
+    [
+      "index.html",
+      "55a202847e44ac00d089e397d82bb97ef7335f2e25914c40fa1a5adbfad646ab"
+    ],
+    [
+      "lesson.html",
+      "f569f82d921d2e0afea5c74dfd6e80087bf0c97c97ddfbd6ff0b1f9754e162c8"
+    ],
+    [
+      "new-hsk1/favicon.svg",
+      "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7"
+    ],
+    [
+      "new-hsk1/file.svg",
+      "1e0ae4d1a1ddfa36752988647b731e4abf150c414d069ec83c96fb0aaeff0307"
+    ],
+    [
+      "new-hsk1/globe.svg",
+      "d051a8c47936990a9085693d307bb7cea1bc1b6d7ed956bcbaacf674f4ec96b9"
+    ],
+    [
+      "new-hsk1/hsk1/app-core.js",
+      "62721bc1d2a7c643daa6659fc6a1b2b1294af6dc4961aa0ccb000ed09d56060d"
+    ],
+    [
+      "new-hsk1/hsk1/app-practice.js",
+      "bf23b07fd7c59fd7ddfdd812197a2a1238dba6b35d879983bca15d0f970a03b1"
+    ],
+    [
+      "new-hsk1/hsk1/audio-fix.js",
+      "35b963b04c2c6892b0b8ca56054125762c0c284727b4009af7b07f9fd9ca9213"
+    ],
+    [
+      "new-hsk1/hsk1/auth-patch.js",
+      "335b0a8e5072920ecfe3cc6392f8bed8e594ef62e25527ef941bc6aa97c794de"
+    ],
+    [
+      "new-hsk1/hsk1/hanzi-visibility-fix.js",
+      "c26d86a151b3c8a53ad5dbb31e00b159fdd7774ebdd821f5fb8c5c2435dfda3b"
+    ],
+    [
+      "new-hsk1/hsk1/help.html",
+      "7717687c9e4ca86e1780e6c76d1374ec3224c112cc6e6d32ca0d45deca9bc742"
+    ],
+    [
+      "new-hsk1/hsk1/index.html",
+      "af6d6872936daadee077e0568d274119a40e892c58d10d583dd284391e13bd86"
+    ],
+    [
+      "new-hsk1/hsk1/learning-app.js",
+      "6830a8d2ae6a383fe8d6e3c29b8e126b834820dc44a25a09670e68869318ec12"
+    ],
+    [
+      "new-hsk1/hsk1/learning-bank.js",
+      "873c387aaedb95877e64382d40b89c55dc0dbdb3a48eead0c1e7a0fac3ae875d"
+    ],
+    [
+      "new-hsk1/hsk1/learning-engine.js",
+      "e59effa4fca9adfdf601ca83377611cad9cd4afab0d7549d1ec610e42831e192"
+    ],
+    [
+      "new-hsk1/hsk1/learning-integrated.js",
+      "f7fb42c1b9a74e674f32803572571d1ebd4c447c72b824cb1cd2f7f6029b9363"
+    ],
+    [
+      "new-hsk1/hsk1/learning-links.js",
+      "41bcd7ec6bbc402b2bbf9f09e4c65990555d32c402644d5c345afdcc3ff7948e"
+    ],
+    [
+      "new-hsk1/hsk1/learning-vocab.js",
+      "044448db43d0cad26c56f78837b6e52d5cb772201f508ed7398773b8c47f3db7"
+    ],
+    [
+      "new-hsk1/hsk1/learning.html",
+      "551bb49f1bc32532dcb5143415f261e7a1c6fae32c0b3259a9cc126ee6222616"
+    ],
+    [
+      "new-hsk1/hsk1/lesson.html",
+      "a8d6a4acd70e0fabfec2bdde353218515c40e43ecee9fd5e67ef23cf7fa0d278"
+    ],
+    [
+      "new-hsk1/hsk1/lesson9-pilot.html",
+      "41663a2eb3de9dbc61da16fd55b8a0c74f98ffd0c81fe6d5a7b5ac5d0462fb60"
+    ],
+    [
+      "new-hsk1/hsk1/new-data.js",
+      "4e558495b6f1726bc4f023a1857a3aac1b5238d841e5d26028c725b05e940254"
+    ],
+    [
+      "new-hsk1/hsk1/new-enrichment.js",
+      "19ab9cf8fbf832bf7f6e855213310187ba205f4c464ccd35a3933ee97e2e55b4"
+    ],
+    [
+      "new-hsk1/hsk1/new-practice-bank-packed.js",
+      "29334ef7e0e4a3ac96cb0af0c3071c32da758e36eaf6cfcb8ffa38ad7ff1958d"
+    ],
+    [
+      "new-hsk1/hsk1/pilot9-data.js",
+      "6966a3fd65357b6f6e2b11e7814675783c80c51ab7e69ee23c8097a6476bd54a"
+    ],
+    [
+      "new-hsk1/hsk1/pilot9-engine.js",
+      "97a7c2e2309beb584a453ae9d0e5837b9910229b470d17d0ddf479de3f0ce765"
+    ],
+    [
+      "new-hsk1/hsk1/pilot9.js",
+      "7931fef243a4cc2c595b0bde9f554800b63840ed8a8410df9e334cbe40f9097b"
+    ],
+    [
+      "new-hsk1/hsk1/pos-tips.js",
+      "e68ec837b951fedd73bec34c75f5f507bf05b1f87b1abffeb0ebc985fbed6746"
+    ],
+    [
+      "new-hsk1/hsk1/question-bank/bank-01-05.json",
+      "2d537f3231461db5ee41367eea1158956e7222b271e70e585a578f20186aed2a"
+    ],
+    [
+      "new-hsk1/hsk1/question-bank/bank-06-10.json",
+      "e5ce771a25bb3b30ce6f08e26602eecb81e21b68b246a61e38d12ca41dea4089"
+    ],
+    [
+      "new-hsk1/hsk1/question-bank/bank-11-15.json",
+      "3bb79ee0a1a470ebf6e83c83086ebc14753b48164e44af38f8bf1bd696c40617"
+    ],
+    [
+      "new-hsk1/hsk1/stage1/engine.js",
+      "515cfc474a399be6e69e6fcb3ea2e9a249ac4147636fb1035925d380dcf641ee"
+    ],
+    [
+      "new-hsk1/hsk1/stage1/sample-bank.js",
+      "f0f7183a64107c9aa26b3419f00495e193b998f3a389584e174f7d874c68cbdc"
+    ],
+    [
+      "new-hsk1/hsk1/stage2/app.js",
+      "a25e0dcadf7ec84e354a4457d1ca00be8b05bb72e34dfd7628cebfb0b8004153"
+    ],
+    [
+      "new-hsk1/hsk1/stage2/bank.js",
+      "c24e11fc24004c88b74b8239be60acc98c9d2a65f83606e69d65256553f10256"
+    ],
+    [
+      "new-hsk1/hsk1/stage2/engine.js",
+      "2c0f552b815a3c7ae215fee67d187887210d6c5754bbfdb726022760fc8bf12c"
+    ],
+    [
+      "new-hsk1/hsk1/stage3/app.js",
+      "c27435c0e00bd2b94c1c72410051060be608ba1a85e901d1d46288c422e77b68"
+    ],
+    [
+      "new-hsk1/hsk1/stage3/catalog.js",
+      "4d377f18461f58f103120adde9aed74713fc7478bb5933f4e23177e637a04f80"
+    ],
+    [
+      "new-hsk1/hsk1/stage3/engine.js",
+      "010cfde850b1b9a49f90b5b2ceb2c70991d255750c3514761f7b064401d36a17"
+    ],
+    [
+      "new-hsk1/hsk1/stage3/media-index.js",
+      "d9be8f94d724d134aa99ce515a0c5f3f00b8899ad2f72a8ba4d8f3e72d45b993"
+    ],
+    [
+      "new-hsk1/hsk1/stage3/player.js",
+      "5d50e436d8af720073aeda326e8114d0a885d8351283a3ef9ba4015a65f03d6c"
+    ],
+    [
+      "new-hsk1/hsk1/textbook-audio-guard.js",
+      "22d316c848877c7e83eb691f3383795d94cfa496f601d6b01a8f2376018e77c2"
+    ],
+    [
+      "new-hsk1/hsk1/textbook-audio-segments.js",
+      "15d4c2eca98f1368796ee863a3e517ff60fe5a6beb12fb3f712b47c32eec99b5"
+    ],
+    [
+      "new-hsk1/hsk1/textbook-audio.js",
+      "c40656a5b8afd11cd0f936ea68ea874ebbb9d29bb1bd43e5718eb78ee6db4f95"
+    ],
+    [
+      "new-hsk1/hsk1/textbook-data-corrections.js",
+      "4da1baf55ccb210b9d2e4fb89a65acf083932a34fd2addd530774e09ccf6823c"
+    ],
+    [
+      "new-hsk1/hsk1/textbook-final-corrections.js",
+      "ca409b646b7a146d381d9deaee1e5f0edc018424a25137bcf10bab8bc840baeb"
+    ],
+    [
+      "new-hsk1/hsk1/textbook-integration-corrections.js",
+      "17fbcb8f8344924695265fca1d735acaff9a289d0737e8e85c86bf4a16a54a3d"
+    ],
+    [
+      "new-hsk1/hsk1/textbook-segment-audio.js",
+      "9bb1d0ea66313b6b504c37f274501c9269f8c25f848c3676a4ad561b09b4ccb5"
+    ],
+    [
+      "new-hsk1/hsk1/tts-only.js",
+      "be06c778a4aa4aa4dc2079c234d7c497d6e681ebf6c0e06a070f604e171a93a8"
+    ],
+    [
+      "new-hsk1/window.svg",
+      "decf1cf7bb22b5c99c4857cfcd5718ce5465c4454166317589c83fc73df74b66"
+    ],
+    [
+      "practice/reviewed/hsk1-v5.0.part01.b64",
+      "b345e4463fb44545b6a7112d5daf4510826466809fb1316522692dfa3115f36e"
+    ],
+    [
+      "practice/reviewed/hsk1-v5.0.part02.b64",
+      "b310f88088dc5a69264125ac5c708eb63c7a827c3b817750e2314a2a52345070"
+    ],
+    [
+      "practice/reviewed/hsk1-v5.0.part03.b64",
+      "af0aee2839771ee3836369bc2ab3afde52b645013b8cf89f1ba181b64c2f204e"
+    ],
+    [
+      "practice/reviewed/hsk1-v5.0.part04.b64",
+      "87cc77722c3e6c84ff0775d1432121e9ad2cfb36daadb3b198cbb4474fe59495"
+    ],
+    [
+      "practice/reviewed/hsk2-v5.8.part01.b64",
+      "878269e2e14cd3cce8feeffd5695a1158566f634ab0a22168eb8b852d43a9b85"
+    ],
+    [
+      "practice/reviewed/hsk2-v5.8.part02.b64",
+      "9db8915eb015d358bf350fc4a8dce6130eb7c57adaa73ce06ea23eb38e2c9378"
+    ],
+    [
+      "practice/reviewed/hsk2-v5.8.part03.b64",
+      "e6f226c84175d5e0209cacffbc0d4315063ce18c0256826e4e7a09e082203ce1"
+    ],
+    [
+      "practice/reviewed/hsk2-v5.8.part04.b64",
+      "51a0cc06946e32b3693b7768d7e5aaaa9abac6a019f8c1a6d57968a6c503fa74"
+    ],
+    [
+      "practice/reviewed/hsk2-v5.8.part05.b64",
+      "46d1df2d9e52a136050657bb4a245c0d5bad3003c04deb41edf6d64725e52ec3"
+    ],
+    [
+      "practice/reviewed/hsk3-v1.1.part01.b64",
+      "b21a8584f35c91f3e22ac4e67d954f4c29c03791d38bdde13919c8fb36a35662"
+    ],
+    [
+      "practice/reviewed/hsk3-v1.1.part02.b64",
+      "ee0a30e3cc4544f4fc2fc70341b38c6c8458c2ffcff652b1c88bdbcbc073f205"
+    ],
+    [
+      "practice/reviewed/hsk3-v1.1.part03.b64",
+      "264c16bb72fe119a6ed74251a45bb76f02aa0332af40feea5cdbb2a9a52a9b1d"
+    ],
+    [
+      "practice/reviewed/hsk3-v1.1.part04.b64",
+      "529ce580e2ebdb9f4265894c415a7e1796630a3fbb04dc235d5807130b1ee945"
+    ],
+    [
+      "practice/reviewed/hsk3-v1.1.part05.b64",
+      "b56487cf74d2ee66463c5a13fd01611aca48a45dfce9cf8c83bfdfc158010820"
+    ],
+    [
+      "practice/reviewed/hsk3-v1.1.part06.b64",
+      "da4078d992a0ff16ddc011b1cc682b926b2a607bccf1f93f4cf89366f2b495d0"
+    ],
+    [
+      "practice/reviewed/hsk3-v1.1.part07.b64",
+      "27455a1993774d31615fc21dff35386203db2a0886d5f14da2f93e0c80edadc0"
+    ],
+    [
+      "practice/reviewed/hsk3-v1.1.part08.b64",
+      "82b745eab1a381a0efa9bc1e3e5a5c7d218e6447513ec1dbdf812ff18c0dbbd7"
+    ],
+    [
+      "practice/reviewed/hsk3-v1.1.part09.b64",
+      "84d4f0a9f01e3af352865a1c3f81003ba1bb9f93536f291d22d036bc9db273bd"
+    ]
+  ],
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 16,
+      "sha256": "94da7b79b6811ebe02ff32349e054591922d5acd208f000c0536c6e64d247aad"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3124,
+      "sha256": "58300986c54623f3f87575ee0f2ac2b6f99ec02a5df837fb6ba091ee0b8f6f4b"
+    },
+    {
+      "file": "build-inventory.mjs",
+      "bytes": 45212,
+      "sha256": "be221bfbd907a15945166290f6e410fa517544834145fcf6e7d3da01f8365602"
+    },
+    {
+      "file": "build-new-manifest.py",
+      "bytes": 8777,
+      "sha256": "a4f80c60ff8ad4cda72aeaaa25014267f11556369e9ff8b5eb145707a70efa86"
+    },
+    {
+      "file": "build-scope-supplement.mjs",
+      "bytes": 7767,
+      "sha256": "2ed31bfc7171243b27a265b4ebcdc236df13724cde9407377c9c58c3fdb34830"
+    },
+    {
+      "file": "build.log",
+      "bytes": 109003,
+      "sha256": "705eb8018d3ea3092c8179c4653012ad7910c2b95d487a1a1eebd332c4cfce65"
+    },
+    {
+      "file": "freeze-inputs.py",
+      "bytes": 3650,
+      "sha256": "905dfe4c5ebfcb1b4b2c1393d0286e522452d5273ab7b77cf202610d9f5378ad"
+    },
+    {
+      "file": "historical-delta.json",
+      "bytes": 2106,
+      "sha256": "75e0f5708247375479775a127bdc5a34e251c97643c55dc985d08634b3e78a9f"
+    },
+    {
+      "file": "input-snapshot-manifest.json",
+      "bytes": 302513,
+      "sha256": "ce7fad593f1dab4ea14c39d7f887865f7ea4d7c52686df862609582a23af8d34"
+    },
+    {
+      "file": "inventory-expanded.json.gz",
+      "bytes": 12849155,
+      "sha256": "7f5c605d4447b83003b4995eed5c428eaf0a644f6596ad2b48f51699bf9ddd67"
+    },
+    {
+      "file": "inventory.json.gz",
+      "bytes": 12667967,
+      "sha256": "e9cec5c4be50577b5c45d68a81ee3c9d4127dca021dd63ec3c692dd660611966"
+    },
+    {
+      "file": "legacy-content-contracts.json",
+      "bytes": 34829,
+      "sha256": "bf49a5f671c8dd33028018ec30ebbab86446b0ff007667d2794b3830a9c689a9"
+    },
+    {
+      "file": "legacy-content-layers.json",
+      "bytes": 2955,
+      "sha256": "d97a9e0de1b40dab09ebf4ba1f6438d81bbc6f5f5e47d956d4d9a6ebcb8158a0"
+    },
+    {
+      "file": "legacy-practice-banks.json",
+      "bytes": 6590,
+      "sha256": "b5c094a16ea8c00b4a7793ac527ca5b5f621e585d3e82c87bcaea3fb4353e5d7"
+    },
+    {
+      "file": "legacy-practice-consumers.json",
+      "bytes": 5789901,
+      "sha256": "86f541c5c60f1690584f1929ab5a864da42f6593523a6c02d45dcc371376eb27"
+    },
+    {
+      "file": "parse-failures.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "file": "pilot-audit-template.json.gz",
+      "bytes": 95235,
+      "sha256": "6a2512401b763997a7cc796c88e503c3241010937b33a8fadf0a2dc3fc293846"
+    },
+    {
+      "file": "pilot-source-index.json",
+      "bytes": 3015,
+      "sha256": "032978c310edc47fe083794e8e20f80bb48d621457098837b99fac634eab4190"
+    },
+    {
+      "file": "runtime-files.json",
+      "bytes": 2003462,
+      "sha256": "baf218da451a97ebcff3e1ebfa0ed76d7280a10324162863a1de4a1fd19f4e82"
+    },
+    {
+      "file": "scope-supplement-inventory.json.gz",
+      "bytes": 181182,
+      "sha256": "3e25f54d7d51e2ca63beb050c6be4347b06aeb6255a6e299585e80e366d0bfcb"
+    },
+    {
+      "file": "scope-supplement.json",
+      "bytes": 26464,
+      "sha256": "31a3104fc7d6a7c41ca7bdb3e477fbd63ce48b32654ae6b6a18f2b093e80b5ea"
+    },
+    {
+      "file": "scope-supplement.log",
+      "bytes": 103,
+      "sha256": "d781f48b4337354813da58f425d34a4570cfa161cd619f861b03403a1eaa22e4"
+    },
+    {
+      "file": "semantic-consumers.json",
+      "bytes": 5353010,
+      "sha256": "c9fa49dfbd312cc3d7b9fba468fda872ae42f35e6e7b9ca2e1caeceef00a8b2e"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 109003,
+      "sha256": "705eb8018d3ea3092c8179c4653012ad7910c2b95d487a1a1eebd332c4cfce65"
+    },
+    {
+      "file": "supplement-svg-scan.mjs",
+      "bytes": 13432,
+      "sha256": "c8fe66046e830b7bea1e1d6222b696aca03317f8abd2474cc168511a7ec34f7f"
+    },
+    {
+      "file": "svg-consumers.json",
+      "bytes": 1771468,
+      "sha256": "b10ae766104a6afe61dc7a8646f4436d025e49f0357d7e62574e9287d5a40104"
+    },
+    {
+      "file": "validate-inventory.mjs",
+      "bytes": 9224,
+      "sha256": "e34143300f0c88e4488cc4067819f599b77075d73f408d02674ba8b92026d448"
+    },
+    {
+      "file": "validation.json",
+      "bytes": 3819,
+      "sha256": "2b3602e3ee74d77658709ddba79c1504ebbc5524b4dd59dd931e4e11660dd432"
+    },
+    {
+      "file": "validation.log",
+      "bytes": 3819,
+      "sha256": "2b3602e3ee74d77658709ddba79c1504ebbc5524b4dd59dd931e4e11660dd432"
+    }
+  ]
+}

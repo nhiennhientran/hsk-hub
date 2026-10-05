@@ -1,0 +1,30 @@
+<!doctype html><html lang="zh"><head><meta charset="UTF-8"><base href="/"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Source activity revision integration fixture</title></head><body><main id="source-host"></main><script type="module">
+import {mountSourceActivities} from '/src/features/source-activities/index.ts';
+import {sourceLessons,projectSourceLesson,sourceRecordKey} from '/src/services/source-activities/content.ts';
+import {createSourceSession,createSourceStore} from '/src/services/source-activities/store.ts';
+import {createOfficialViRegistry,viCanonical,viProposal,viSHA256} from '/src/services/content/official-vi-revisions.ts';
+const raw=sourceLessons[0],activity=raw.activities.find(a=>a.fields.length),revision='native-source-fixture';
+const oldValue=activity.instruction.vi,newValue='Chỉ dẫn thử nghiệm riêng.';
+const field={baselineFile:'content/source-activities/lesson-01.json',field:`/activities/${raw.activities.indexOf(activity)}/instruction/vi`,ownerId:activity.id,component:'source-activity',lesson:1,relativeField:'/instruction/vi',effectiveValue:oldValue,zhContext:activity.instruction.zh};
+const ref={baselineFile:field.baselineFile,field:field.field,ownerId:field.ownerId,component:field.component};
+const anchor={kind:'directOfficial',sourceId:'synthetic-source',documentSourceId:'synthetic-book',pdfSHA256:'1'.repeat(64),pdfPages:[18],printedPages:[2],section:'synthetic-only',officialViText:newValue,zhContext:field.zhContext};
+const baselineFiles=[{file:field.baselineFile,sha256:'2'.repeat(64)}];
+const manifest={schemaVersion:1,revisionId:revision,engine:'hsk1',courseId:'hsk1',baselineFiles,parentDisplayRevision:'synthetic-parent',sources:[{sourceId:'synthetic-book',pdfSHA256:'1'.repeat(64),pdfPageCount:50}],changes:[{changeId:'synthetic-change',...ref,lesson:1,expectedEffectiveValue:oldValue,newValue,sourceAnchor:anchor,classification:'official-wording-variant',consumers:[ref],authorReview:{reviewer:'native-fixture-author',status:'accepted'},independentReview:{reviewer:'native-fixture-reviewer',status:'accepted',evidenceRef:'synthetic-review.json'}}],coverage:{scope:'synthetic-only'},independentReview:{}};
+const proposalSHA256=await viSHA256(viCanonical(viProposal(manifest)));
+const proof={reviewer:'native-fixture-reviewer',author:'native-fixture-author',status:'accepted',proposalSHA256,acceptedChangeIds:['synthetic-change'],acceptedConsumerRefs:[ref],sourceEvidenceRefs:[anchor]};
+const reviewBytes=JSON.stringify(proof),reviewSHA256=await viSHA256(reviewBytes);
+manifest.independentReview={reviewer:proof.reviewer,status:'accepted',proposalSHA256,evidenceFile:'synthetic-review.json',evidenceSHA256:reviewSHA256,acceptedChangeIds:proof.acceptedChangeIds};
+const manifestBytes=JSON.stringify(manifest);
+const registry=await createOfficialViRegistry({manifestBytes,manifestSHA256:await viSHA256(manifestBytes),reviewBytes,reviewSHA256,reviewFile:'synthetic-review.json',baselineFiles,parentDisplayRevision:'synthetic-parent',fields:[field]});
+const storage={getItem:key=>localStorage.getItem(key),setItem:(key,value)=>localStorage.setItem(key,value)};
+const session=createSourceSession(createSourceStore({storage,lock:task=>navigator.locks.request('source-fixture-write',task)}));
+const historical=Object.fromEntries(activity.fields.filter(f=>f.required!==false).map(f=>[f.id,f.answer??'原版答案']));
+if(!session.store.snapshot().data.records[sourceRecordKey(activity)]){
+  const saved=await session.submit(activity,historical);if(!saved.ok)throw Error('Original record was not saved');
+}
+const shown=projectSourceLesson(raw,registry).activities.find(a=>a.id===activity.id);
+const controller=new AbortController();
+mountSourceActivities(document.querySelector('#source-host'),{signal:controller.signal,session,officialVi:registry,content:{resolveScene:()=>({available:false})},audio:{}},1);
+window.sourceViHarness={activityId:activity.id,oldVersion:activity.version,newVersion:shown.version,oldValue,newValue,historical,snapshot:()=>session.store.snapshot(),backup:()=>session.store.exportBackup()};
+document.body.dataset.ready='true';
+</script></body></html>

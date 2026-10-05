@@ -1,7 +1,8 @@
 import { el, button, copy } from "./dom.ts";
 import type { Lesson, Question, Copy } from "./types.ts";
 import type { State, ListeningRound } from "./state.ts";
-import { grade, isAnswered, type Attempt } from "./state.ts";
+import { grade, isAnswered, resolveListeningDraftQuestion, captureListeningDraftAnswer,
+  acknowledgeListeningDraftQuestion, type Attempt } from "./state.ts";
 /** A submitted attempt can only use its own saved question; missing is unknown. */
 export function listeningDisplayQuestion(current:Question,attempt:Attempt|undefined):Question|undefined {
   return attempt ? attempt.questions?.find(saved=>saved.id===current.id) : current;
@@ -17,6 +18,7 @@ export function mountListening(
     play(q: Question): Promise<boolean>;
     stop(): void;
     message(text: Copy): void;
+    requireLegacyReview?: boolean;
   },
 ): () => void {
   const root = el("article", undefined, "listening-module");
@@ -163,12 +165,29 @@ export function mountListening(
     }
     const { q, lesson } = entry,
       attempt = round.submitted[id!],
-      question = listeningDisplayQuestion(q,attempt);
+      draftView = attempt ? undefined : resolveListeningDraftQuestion(q, round, c.requireLegacyReview),
+      question = attempt ? listeningDisplayQuestion(q, attempt) : draftView!.question,
+      draftBlocked = draftView?.status === 'missing' || draftView?.status === 'incompatible';
     roundStatus.textContent = `${round.index + 1} / ${round.queue.length} · 第${lesson.number}课 / Bài ${lesson.number} · 已提交 ${Object.keys(round.submitted).length} / ${round.queue.length}`;
     const card = el("div", undefined, "activity-card"),
       title = el("h2", question?.prompt??copy("旧听力记录", "Bản ghi nghe cũ"));
     card.dataset.questionSnapshot=attempt?(question?'saved':'missing'):'current';
+    if (draftView) card.dataset.draftQuestionSnapshot = draftView.status;
     card.append(title);
+    if (draftView?.status === 'missing') {
+      card.append(el('p', copy(
+        '旧答案没有当时的题目快照，已保留。请核对当前题目后选择继续。',
+        'Đáp án cũ không có ảnh chụp câu hỏi lúc đó và vẫn được giữ. Hãy kiểm tra câu hỏi hiện tại rồi chọn tiếp tục.',
+      )), button(copy('按当前题目继续', 'Tiếp tục với câu hỏi hiện tại'), async () => {
+        if (retired || submitting || !round) return;
+        round = acknowledgeListeningDraftQuestion(round, q);
+        save();
+        if (await c.flush()) draw();
+      }));
+    } else if (draftView?.status === 'incompatible') card.append(el('p', copy(
+      '保存的题目与本版不同，原题和答案已保留供查看。请先下载备份，再开始新一组。',
+      'Câu hỏi đã lưu khác với bản hiện tại. Câu hỏi và đáp án cũ vẫn được giữ để xem. Hãy tải bản sao lưu rồi bắt đầu nhóm mới.',
+    )));
     if(question){
     const plays = el(
         "p",
@@ -212,10 +231,10 @@ export function mountListening(
       radio.name = id!;
       radio.value = String(index);
       radio.checked = (attempt?attempt.answers[id!]:round.answers[id!]) === index;
-      radio.disabled = !!attempt;
+      radio.disabled = !!attempt || draftBlocked;
       radio.onchange = () => {
-        if (round && !submitting) {
-          round.answers[id!] = index;
+        if (round && !submitting && !draftBlocked) {
+          Object.assign(round, captureListeningDraftAnswer(round, q, index, c.requireLegacyReview));
           save();
         }
       };
@@ -227,7 +246,7 @@ export function mountListening(
     const submit = button(
       copy("提交本题", "Nộp câu này"),
       async () => {
-        if(retired||submitting||round!==displayedRound||round?.submitted[id!]||submit.disabled)return;
+        if(retired||submitting||draftBlocked||round!==displayedRound||round?.submitted[id!]||submit.disabled)return;
         if (!round || !isAnswered(question, round.answers[id!])) {
           c.message(copy("请先选择答案", "Hãy chọn đáp án trước"));
           return;
@@ -272,7 +291,7 @@ export function mountListening(
       },
       "primary",
     );
-    submit.disabled = !!attempt;
+    submit.disabled = !!attempt || draftBlocked;
     card.append(submit);
     if (attempt) {
       const feedback = el("section", undefined, "activity-feedback");

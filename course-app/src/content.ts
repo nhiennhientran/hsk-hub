@@ -32,6 +32,8 @@ function registryEntry(config:CourseConfig):ActiveViEntry|null {
   typeof entry.manifestFile!=='string'||typeof entry.reviewFile!=='string'||!sha(entry.manifestSHA256)||!sha(entry.reviewSHA256))throw Error('Invalid official VI active registration');
  return entry as unknown as ActiveViEntry;
 }
+/** Call after prepareViCourse/loadLesson has validated the active registration. */
+export function hasActiveViDisplay(config:CourseConfig):boolean {return registryEntry(config)!==null;}
 async function registeredAsset(file:string):Promise<string>{
  if(!/^course-app\/content\/[A-Za-z0-9_.-]*official-vi[A-Za-z0-9_.-]*\.json$/.test(file))throw Error('Unregistered official VI asset path');
  const fn=revisionAssets[file.replace('course-app/content/','../content/')];

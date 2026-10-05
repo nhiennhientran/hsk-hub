@@ -7,6 +7,7 @@ import type {Preview} from '../../services/storage/index.ts';
 import type {SourceData} from '../../services/source-activities/state.ts';
 import type {TextbookContent} from '../../services/content/textbook.ts';
 import type {AudioService} from '../../services/audio/index.ts';
+import type {OfficialViRegistry} from '../../services/content/official-vi-revisions.ts';
 import {button,element} from '../textbook/dom.ts';
 import {numberTables} from './numbers.ts';
 import {resolveSourceFigure} from './figures.ts';
@@ -14,8 +15,8 @@ import {sourceActivityTable,tableFieldIds} from './tables.ts';
 import './source-activities.css';
 const copy=(zh:string,vi:string):Copy=>({zh,vi});
 const states:Record<string,Copy>={empty:copy('尚无原版活动记录','Chưa có bản ghi hoạt động gốc'),saved:copy('原版活动已保存','Đã lưu hoạt động gốc'),saving:copy('正在保存原版活动…','Đang lưu hoạt động gốc…'),unsaved:copy('原版活动尚未保存，请重试或导出草稿','Chưa lưu hoạt động gốc; hãy thử lại hoặc xuất bản nháp'),conflict:copy('其他标签页已更新记录。请先导出草稿，再读取最新记录','Tab khác đã cập nhật. Hãy xuất bản nháp trước khi đọc bản mới'),corrupt:copy('原始记录无法读取，已阻止覆盖。请下载原始数据','Không đọc được dữ liệu gốc; đã chặn ghi đè. Hãy tải dữ liệu gốc'),unavailable:copy('无法安全保存，草稿仍在当前页面，可导出','Không thể lưu an toàn; bản nháp còn trong trang này và có thể xuất')};
-export function mountSourceActivities(host:HTMLElement,options:{signal:AbortSignal;content:TextbookContent;audio:AudioService;session?:SourceSession;download?:(name:string,text:string)=>void},lessonId=4){
-  const sourceLesson=getSourceLesson(lessonId);
+export function mountSourceActivities(host:HTMLElement,options:{signal:AbortSignal;content:TextbookContent;audio:AudioService;session?:SourceSession;officialVi?:OfficialViRegistry;download?:(name:string,text:string)=>void},lessonId=4){
+  const sourceLesson=getSourceLesson(lessonId,options.officialVi);
   if(!sourceLesson)return {dispose(){}};
   const lesson=sourceLesson;
   const {signal}=options,session=options.session??getSourceSession(),store=session.store;
@@ -51,7 +52,7 @@ export function mountSourceActivities(host:HTMLElement,options:{signal:AbortSign
   function card(a:SourceActivity,cardSignal:AbortSignal){
     const {card,fields,feedback}=createActivityCard(document,a.id);card.dataset.activityVersion=a.version;card.dataset.kind=a.kind;
     card.append(element('h3',a.title),element('p',a.instruction));if(a.prompt.zh||a.prompt.vi)card.append(element('p',a.prompt));if(a.pinyin)card.append(element('p',a.pinyin));
-    for(const id of [...(a.figure?[a.figure]:[]),...(a.figures??[])]){const resolved=resolveSourceFigure(lessonId,id,id===a.figure?a.figureSHA256:a.figureSHA256s?.[id]);if(resolved){const {figure,url}=resolved,f=element('figure'),img=element('img');img.src=url;img.alt=bilingualText(figure.alt);if(figure.kind==='original-schematic'){img.width=360;img.height=220;}img.loading='lazy';f.append(img,element('figcaption',figure.note));card.append(f);}else card.append(element('p',copy('本题原图暂不可用','Hình gốc của câu này hiện chưa dùng được')));}
+    for(const id of [...(a.figure?[a.figure]:[]),...(a.figures??[])]){const resolved=resolveSourceFigure(lessonId,id,id===a.figure?a.figureSHA256:a.figureSHA256s?.[id],options.officialVi);if(resolved){const {figure,url}=resolved,f=element('figure'),img=element('img');img.src=url;img.alt=bilingualText(figure.alt);if(figure.kind==='original-schematic'){img.width=360;img.height=220;}img.loading='lazy';f.append(img,element('figcaption',figure.note));card.append(f);}else card.append(element('p',copy('本题原图暂不可用','Hình gốc của câu này hiện chưa dùng được')));}
     if(a.example)card.append(element('small',copy('教材提供的对话开头','Phần mở đầu hội thoại được cho trong sách')),element('p',a.example));
     if(a.audio){const resolved=options.content.resolveScene(lessonId,a.audio.sceneId);const play=button(copy('播放本题原对话','Phát hội thoại gốc của câu này'),()=>{if(resolved.available)void options.audio.play({...resolved.request,label:bilingualText(copy(`第${lessonId}课原版听力 · 音轨${a.audio!.track}`,`Nghe bài ${lessonId} · Tệp ${a.audio!.track}`))},{signal:cardSignal});},cardSignal);play.dataset.sourceSceneAudio=a.audio.sceneId;play.disabled=!resolved.available;card.append(play);if(!resolved.available)card.append(element('p',copy('原音频暂不可用','Âm thanh gốc hiện chưa dùng được')));}
     const key=sourceRecordKey(a),old=store.snapshot().data.records[key];let values={...old?.draft.values},composing=false,busy=false;

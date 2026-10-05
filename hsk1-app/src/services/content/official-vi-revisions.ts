@@ -11,6 +11,7 @@ export interface OfficialViRegistry {
   readonly revisionId: string | null;
   project<T>(raw: T, ownerId: string, component: string): T;
   snapshot(owners: readonly { id: string; component: string }[]): ViDisplaySnapshot | null;
+  displayVersion(ownerId: string, component: string, originalVersion: string): string;
 }
 const row = (v: unknown): v is Row => v !== null && typeof v === 'object' && !Array.isArray(v) && [Object.prototype, null].includes(Object.getPrototypeOf(v));
 const text = (v: unknown): v is string => typeof v === 'string' && v.trim().length > 0 && v.length <= 8192;
@@ -44,6 +45,14 @@ export function isViDisplayField(component: string, pointer: string): boolean {
   const parts = viPointer(pointer), last = parts.at(-1)!;
   const sealed = ['id', 'senseId', 'catalogId', 'fingerprint', 'questionFingerprint', 'answer', 'answers', 'tokens', 'tokenOrder', 'optionOrder', 'assessment', 'audio', 'audioTrack', 'audioRange', 'source', 'sourceSHA', 'zh', 'py', 'pos', 'sourceRecords'];
   if (parts.some(p => sealed.includes(p))) return false;
+  if (component === 'source-activity') return /^\/(?:title|instruction|prompt|example)\/vi$/.test(pointer) ||
+    /^\/fields\/(?:0|[1-9][0-9]*)\/(?:label|reference|feedbackNote)\/vi$/.test(pointer) ||
+    /^\/fields\/(?:0|[1-9][0-9]*)\/options\/(?:0|[1-9][0-9]*)\/vi$/.test(pointer) ||
+    /^\/table\/(?:caption|columns\/(?:0|[1-9][0-9]*))\/vi$/.test(pointer) ||
+    /^\/table\/rows\/(?:0|[1-9][0-9]*)\/cells\/(?:0|[1-9][0-9]*)\/text\/vi$/.test(pointer);
+  if (component === 'source-figure') return /^\/(?:alt|note)\/vi$/.test(pointer);
+  if (component === 'source-numbers') return /^\/(?:grid\/(?:0|[1-9][0-9]*)\/(?:0|[1-9][0-9]*)|(?:higher|two)\/(?:0|[1-9][0-9]*))\/vi$/.test(pointer);
+  if (component === 'source-bonus') return pointer === '/title/vi';
   if (component === 'textbook') return ['vn', 'vn_title', 'place_vn', 'desc'].includes(last);
   if (component === 'course-index') return parts.length === 1 && last === 'titleVi';
   if (component === 'vocabulary') return parts.length === 1 && last === 'vi';
@@ -69,7 +78,7 @@ export function applyViSnapshot<T>(raw: T, ownerId: string, component: string, s
   }
   return display;
 }
-const inactive: OfficialViRegistry = Object.freeze({ revisionId: null, project: <T>(raw: T) => raw, snapshot: () => null });
+const inactive: OfficialViRegistry = Object.freeze({ revisionId: null, project: <T>(raw: T) => raw, snapshot: () => null, displayVersion: (_owner: string, _component: string, original: string) => original });
 interface ActiveViEntry { manifestFile: string; manifestSHA256: string; reviewFile: string; reviewSHA256: string }
 export function validateOfficialViConfig(value: unknown): { schemaVersion: 1; active: ActiveViEntry | null } {
   if (!row(value)) fail('VI active registry schema.');
@@ -152,18 +161,44 @@ export async function createOfficialViRegistry(input: ViRegistryInputs): Promise
     for (const change of snapshots.filter(s => viCanonical([s.ownerId, s.component]) === key && s.field.startsWith('/options/'))) options[Number(viPointer(change.field)[1])] = change.value;
     if (!uniqueViOptions(options)) fail('VI option labels are ambiguous.');
   }
+  const sourceOptionGroups = new Set(snapshots.filter(s => s.component === 'source-activity' && /^\/fields\/[0-9]+\/options\/[0-9]+\/vi$/.test(s.field))
+    .map(s => viCanonical([s.ownerId, s.field.split('/').slice(0, 4).join('/')])));
+  for (const key of sourceOptionGroups) {
+    const [ownerId, prefix] = JSON.parse(key) as [string, string];
+    const registered = input.fields.filter(f => f.component === 'source-activity' && f.ownerId === ownerId && f.relativeField.startsWith(prefix + '/'));
+    const original = registered[0]?.originalOptions;
+    if (!original || !original.length || !original.every(text) || registered.length !== original.length || registered.some(f => !f.originalOptions || viCanonical(f.originalOptions) !== viCanonical(original) || original[Number(viPointer(f.relativeField)[3])] !== f.effectiveValue)) fail('VI source option binding missing.');
+    const options = [...original];
+    for (const change of snapshots.filter(s => s.component === 'source-activity' && s.ownerId === ownerId && s.field.startsWith(prefix + '/'))) options[Number(viPointer(change.field)[3])] = change.value;
+    if (!uniqueViOptions(options)) fail('VI source option labels are ambiguous.');
+  }
   const revisionId = manifest.revisionId;
   const snapshot = Object.freeze({ revisionId, fields: snapshots.map(s => Object.freeze(s)) });
+  // Activity receipts keep their exact presented context. Derive a new version
+  // from this owner's accepted display fields rather than overwrite old records.
+  const versionHashes = new Map<string, string>();
+  for (const ownerId of new Set(snapshots.filter(s => s.component === 'source-activity').map(s => s.ownerId))) {
+    const fields = snapshots.filter(s => s.ownerId === ownerId && s.component === 'source-activity').sort((a, b) => a.field.localeCompare(b.field));
+    versionHashes.set(ownerId, await viSHA256(viCanonical(fields)));
+  }
   return Object.freeze({ revisionId,
     project: <T>(raw: T, ownerId: string, component: string) => applyViSnapshot(raw, ownerId, component, snapshot as ViDisplaySnapshot),
     snapshot: (owners: readonly { id: string; component: string }[]) => {
       const fields = snapshots.filter(s => owners.some(o => o.id === s.ownerId && o.component === s.component));
       return fields.length ? structuredClone({ revisionId, fields }) : null;
     },
+    displayVersion: (ownerId: string, component: string, originalVersion: string) => {
+      const digest = component === 'source-activity' ? versionHashes.get(ownerId) : undefined;
+      if (!digest) return originalVersion;
+      const version = `${originalVersion}-vi-${digest}`;
+      if (version.length > 180 || !/^[a-zA-Z0-9][a-zA-Z0-9._:-]*$/.test(version)) fail('VI activity version is invalid.');
+      return version;
+    },
   });
 }
 
 const escapePointer = (s: string) => s.replaceAll('~', '~0').replaceAll('/', '~1');
+export const hsk1SourceViFiles = Array.from({ length: 15 }, (_, i) => `content/source-activities/lesson-${String(i + 1).padStart(2, '0')}${i === 3 ? '-current' : ''}.json`);
 /** Actual semantic owners and original array positions, derived from the bundled source objects. */
 export function hsk1ViFields(values: Readonly<Record<string, unknown>>): ViField[] {
   const fields: ViField[] = [];
@@ -235,6 +270,43 @@ export function hsk1ViFields(values: Readonly<Record<string, unknown>>): ViField
     });
     for (const array of ['transcript', 'keywords']) if (Array.isArray(q[array])) (q[array] as unknown[]).forEach((line, i) => { if (row(line) && typeof line.vi === 'string') fields.push({ baselineFile: file, field: `${base}/${array}/${i}/vi`, ownerId, component, lesson, relativeField: `/${array}/${i}/vi`, effectiveValue: line.vi, zhContext: String(line.zh ?? zhContext) }); });
   }
+  for (const baselineFile of hsk1SourceViFiles) {
+    const source = values[baselineFile];
+    // Older six-file revision manifests remain valid. A new source sidecar
+    // becomes eligible only when its actual bundled bytes are supplied.
+    if (source === undefined) continue;
+    if (!row(source) || !Number.isSafeInteger(source.lesson) || !Array.isArray(source.activities) || !Array.isArray(source.figures)) fail('VI activity catalogue missing.');
+    const lesson = Number(source.lesson);
+    source.activities.forEach((activity, i) => {
+      if (!row(activity) || !text(activity.id) || activity.lesson !== lesson) fail('VI activity owner missing.');
+      sourceLeaves(activity, baselineFile, `/activities/${i}`, activity.id, 'source-activity', lesson, '');
+      for (const field of fields.filter(f => f.component === 'source-activity' && f.ownerId === activity.id && /^\/fields\/[0-9]+\/options\/[0-9]+\/vi$/.test(f.relativeField))) {
+        const activityFields = activity.fields;
+        const owner = Array.isArray(activityFields) ? activityFields[Number(viPointer(field.relativeField)[1])] : undefined;
+        if (!row(owner) || !Array.isArray(owner.options) || owner.options.some(option => !row(option) || typeof option.vi !== 'string')) fail('VI source option catalogue missing.');
+        field.originalOptions = owner.options.map(option => (option as Row).vi as string);
+      }
+    });
+    source.figures.forEach((figure, i) => {
+      if (!row(figure) || !text(figure.id)) fail('VI figure owner missing.');
+      sourceLeaves(figure, baselineFile, `/figures/${i}`, figure.id, 'source-figure', lesson, '');
+    });
+    if (source.numberTables !== undefined) sourceLeaves(source.numberTables, baselineFile, '/numberTables', `source-l${String(lesson).padStart(2, '0')}-numbers`, 'source-numbers', lesson, '');
+    if (source.bonus !== undefined) {
+      if (!row(source.bonus) || !text(source.bonus.id)) fail('VI bonus owner missing.');
+      sourceLeaves(source.bonus, baselineFile, '/bonus', source.bonus.id, 'source-bonus', lesson, '');
+    }
+  }
+  function sourceLeaves(value: unknown, file: string, base: string, ownerId: string, component: string, lesson: number, fallback: string, relative = '') {
+    if (Array.isArray(value)) { value.forEach((v, i) => sourceLeaves(v, file, `${base}/${i}`, ownerId, component, lesson, fallback, `${relative}/${i}`)); return; }
+    if (!row(value)) return;
+    const zh = typeof value.zh === 'string' ? value.zh : fallback;
+    for (const [key, child] of Object.entries(value)) {
+      const field = `${relative}/${escapePointer(key)}`;
+      if (key === 'vi' && typeof child === 'string' && isViDisplayField(component, field)) fields.push({ baselineFile: file, field: `${base}/vi`, ownerId, component, lesson, relativeField: field, effectiveValue: child, zhContext: zh });
+      else if (key !== 'vi') sourceLeaves(child, file, `${base}/${escapePointer(key)}`, ownerId, component, lesson, zh, field);
+    }
+  }
   return fields;
 }
 /** Fixed build-registered raw modules only; a manifest path never becomes an arbitrary fetch. */
@@ -250,11 +322,15 @@ export async function loadOfficialViRegistry(signal?: AbortSignal): Promise<Offi
     const bytes = await load(); if (typeof bytes !== 'string') fail('VI registered artifact bytes missing.'); return bytes;
   };
   const [manifestBytes, reviewBytes] = await Promise.all([readRegistered(entry.manifestFile), readRegistered(entry.reviewFile)]);
-  const rawSources = import.meta.glob('../../../content/*.json', { query: '?raw', import: 'default' });
+  const rawSources = import.meta.glob(['../../../content/*.json', '../../../content/source-activities/*.json'], { query: '?raw', import: 'default' });
   const values: Record<string, unknown> = {}, bytes: Record<string, string> = {};
   for (const file of ['textbook', 'textbook-display-revisions', 'stage2-bank', 'stage3-catalog', 'homework30-bank', 'course-index']) {
     const name = `content/${file}.json`, load = rawSources[`../../../${name}`]; if (!load) fail('VI bundled baseline missing.');
     const raw = await load(); if (typeof raw !== 'string') fail('VI bundled source bytes missing.'); values[name] = JSON.parse(raw); bytes[name] = raw;
+  }
+  for (const name of hsk1SourceViFiles) {
+    const load = rawSources[`../../../${name}`]; if (!load) fail('VI bundled activity baseline missing.');
+    const raw = await load(); if (typeof raw !== 'string') fail('VI bundled activity bytes missing.'); values[name] = JSON.parse(raw); bytes[name] = raw;
   }
   const manifest: unknown = JSON.parse(manifestBytes); if (!row(manifest) || !Array.isArray(manifest.baselineFiles)) fail('VI baseline list missing.');
   const baselineFiles = await Promise.all(manifest.baselineFiles.map(async v => { if (!row(v) || !text(v.file) || !bytes[v.file]) fail('VI baseline is not a known HSK1 source.'); return { file: v.file, sha256: await viSHA256(bytes[v.file]!) }; }));

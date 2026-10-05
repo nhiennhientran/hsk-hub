@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "status": "author-scoped-supplement-awaiting-independent-review",
+  "extractionBuilderSHA256": "be221bfbd907a15945166290f6e410fa517544834145fcf6e7d3da01f8365602",
+  "baselineCandidates": 55430,
+  "supplementalCandidates": 835,
+  "retainedProducerCandidates": 832,
+  "htmlMetadataCandidates": 3,
+  "expandedCandidates": 56265,
+  "inputs": [
+    {
+      "file": "new-hsk1/assets/app-packed.js",
+      "sha256": "c7464200c025b17517c1064f7766cf3eacbc49171bbd69c568f2221b4c93930f",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/app.js",
+      "sha256": "80b6bac2c2c82ee5d5e789c79b4a1340771708e6c813b696fe7ba37f69a3d163",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hanzi-curriculum.js",
+      "sha256": "db7065b77e47bf8de744ce1c82292dddf9015bb071027b56a8ab8c576083d935",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-content-audit.js",
+      "sha256": "d1907644fd59ee89a4101262903de31d000e2b3d2cef965f5c1975e54d716ac9",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-grammar-canonical.js",
+      "sha256": "e6368ca519757519f4ab9c53e2f71fedff2e10a6632de76b00d774898601799a",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-nav-fix.js",
+      "sha256": "be14e74b3391e63084235a2c4ba3a5a22c9346eb280fbcad8e7dd5c44879bb2d",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-parity.js",
+      "sha256": "3c98dcfac28eca0d2e178e08c674353788e90ec5a43b44b03faef07a445feaa7",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-practice-audit.js",
+      "sha256": "c6bd2c5978ac95b955a23b563235c1650dd0212d1ae0366713ead377626319fb",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked-1.js",
+      "sha256": "3d71f82a8fdba16a786b40c13afed827c025a2d833c516a19982a461661e2fe1",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked-2.js",
+      "sha256": "a594cabdaf4b366f6d96eb7222d2f8ea01805eef2f5fb1ff757e745f95d23714",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked-3.js",
+      "sha256": "86ad1cc2af702a07f12e9176c684a8cc7ad08a5dbbfc899430397d53f8f4feb2",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked-4.js",
+      "sha256": "822e7ec422bb440f9fe551a974117dbb96f19b4996b8f6d16581f25e1ddc7b1d",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked-ui.js",
+      "sha256": "b8913cbb8ae07d7b1b03dbe1addd3aaff8ebc35bba17122297e34e911302b338",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked.js",
+      "sha256": "45a9ff5b7932b01e9e0b5c202195422398842aca7293e340a350a4a2404450bf",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/hsk4-trilingual-ui.js",
+      "sha256": "7411cb8ac13d3cc1beb92d0b201fe2d864c245b7d4ace6e3fa9aa0542b26d97c",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/lesson-core.js",
+      "sha256": "0b474d939001f655379734d51b7cfcd4b8c1816ea8b68c534491dfcbf7cce76e",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/lesson-menu-parity.js",
+      "sha256": "6755a00068b303eedea94e94cebdbbc6ac05779a495e80f5a316fce42b48dc08",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/lesson-packed.js",
+      "sha256": "ecfadcad815946ac87177fcbdb4e28e34cba909cfac40dd29b3712f2ebf1cd26",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/lesson-practice.js",
+      "sha256": "afd3c2821eba75a839eca240c7b6926003509af66a69e5cd9887ba813dfef9a3",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/practice-advanced.js",
+      "sha256": "f59527f00d017531c97e631bc34f69ef43adfb42b125175e21fb5767be627570",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/practice-explain.js",
+      "sha256": "6c12dbf99213e142896d5f9f0cf1ede2ddaf7163a2f4a542fce28ce7efe0aeef",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/reviewed-practice.js",
+      "sha256": "f53b119c6cae13c30cd120bf85db002129b2fe1ad4dc09b1029a1f444d8c660b",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/session-auth.js",
+      "sha256": "920d27a09b49e5a0bae55a8e889898292b8e2c7607b4857c8acd1f4a0d6e1599",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/site-shell.js",
+      "sha256": "2918d2224665ad11c1983ab76ea28ef7cbffbfd39b9448e7ed83aa6cf5131209",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/student-polish.js",
+      "sha256": "66219a29ce6ae914787b291a8cfff856824f978735ebcf72b31fca10a5b3f1c3",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/vocab-hanzi-panel.js",
+      "sha256": "73b606f75414e131567c6e790af79f59b8206d873f0cd40f5816d6c426392496",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/assets/vocab-unified.js",
+      "sha256": "5efa5358fa4672c84c2ed36b9a7fbd8b31d9f6a2fcbf67e151b483450ad42eed",
+      "format": "code",
+      "component": "retained-nested-assets-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    },
+    {
+      "file": "new-hsk1/index.html",
+      "sha256": "eb843ebc888c6832b3f30e796af0b13ab61bdeea6e40ff806fb4de3f98b700c7",
+      "format": "html",
+      "component": "retained-entry-supplement",
+      "state": "retained-route-runtime-candidate",
+      "service": "distinct producer under new-hsk1/assets; not the primary unified engine",
+      "consumers": [
+        "retained old new-hsk1 auxiliary routes; final route retention must be verified"
+      ]
+    }
+  ],
+  "aliases": [
+    {
+      "file": "new-hsk1/assets/app-packed.js",
+      "counterpart": "assets/app-packed.js",
+      "bytes": 1851,
+      "sha256": "c7464200c025b17517c1064f7766cf3eacbc49171bbd69c568f2221b4c93930f",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/app.js",
+      "counterpart": "assets/app.js",
+      "bytes": 4260,
+      "sha256": "80b6bac2c2c82ee5d5e789c79b4a1340771708e6c813b696fe7ba37f69a3d163",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hanzi-curriculum.js",
+      "counterpart": "assets/hanzi-curriculum.js",
+      "bytes": 5672,
+      "sha256": "db7065b77e47bf8de744ce1c82292dddf9015bb071027b56a8ab8c576083d935",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hanzi-writer.min.js",
+      "classification": "excluded-third-party-or-packed-style-runtime",
+      "sha256": "17b11a1e025b780cb518d49b30faacc770dfa7fbc387aa3876e3e5c1bd31e642"
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-content-audit.js",
+      "counterpart": "assets/hsk2-content-audit.js",
+      "bytes": 11761,
+      "sha256": "d1907644fd59ee89a4101262903de31d000e2b3d2cef965f5c1975e54d716ac9",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-grammar-canonical.js",
+      "counterpart": "assets/hsk2-grammar-canonical.js",
+      "bytes": 2198,
+      "sha256": "e6368ca519757519f4ab9c53e2f71fedff2e10a6632de76b00d774898601799a",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-nav-fix.js",
+      "counterpart": "assets/hsk2-nav-fix.js",
+      "bytes": 1750,
+      "sha256": "be14e74b3391e63084235a2c4ba3a5a22c9346eb280fbcad8e7dd5c44879bb2d",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-parity.js",
+      "counterpart": "assets/hsk2-parity.js",
+      "bytes": 15681,
+      "sha256": "3c98dcfac28eca0d2e178e08c674353788e90ec5a43b44b03faef07a445feaa7",
+      "counterpartIsByteIdentical": false,
+      "classification": "distinct-retained-producer-with-different-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-practice-audit.js",
+      "counterpart": "assets/hsk2-practice-audit.js",
+      "bytes": 1393,
+      "sha256": "c6bd2c5978ac95b955a23b563235c1650dd0212d1ae0366713ead377626319fb",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked-1.js",
+      "counterpart": "assets/hsk2-textbook-locked-1.js",
+      "bytes": 6091,
+      "sha256": "3d71f82a8fdba16a786b40c13afed827c025a2d833c516a19982a461661e2fe1",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked-2.js",
+      "counterpart": "assets/hsk2-textbook-locked-2.js",
+      "bytes": 6091,
+      "sha256": "a594cabdaf4b366f6d96eb7222d2f8ea01805eef2f5fb1ff757e745f95d23714",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked-3.js",
+      "counterpart": "assets/hsk2-textbook-locked-3.js",
+      "bytes": 6091,
+      "sha256": "86ad1cc2af702a07f12e9176c684a8cc7ad08a5dbbfc899430397d53f8f4feb2",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked-4.js",
+      "counterpart": "assets/hsk2-textbook-locked-4.js",
+      "bytes": 4675,
+      "sha256": "822e7ec422bb440f9fe551a974117dbb96f19b4996b8f6d16581f25e1ddc7b1d",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked-ui.js",
+      "counterpart": "assets/hsk2-textbook-locked-ui.js",
+      "bytes": 1909,
+      "sha256": "b8913cbb8ae07d7b1b03dbe1addd3aaff8ebc35bba17122297e34e911302b338",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-textbook-locked.js",
+      "counterpart": "assets/hsk2-textbook-locked.js",
+      "bytes": 1718,
+      "sha256": "45a9ff5b7932b01e9e0b5c202195422398842aca7293e340a350a4a2404450bf",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/hsk4-trilingual-ui.js",
+      "counterpart": "assets/hsk4-trilingual-ui.js",
+      "bytes": 23980,
+      "sha256": "7411cb8ac13d3cc1beb92d0b201fe2d864c245b7d4ace6e3fa9aa0542b26d97c",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/lesson-core.js",
+      "counterpart": "assets/lesson-core.js",
+      "bytes": 17604,
+      "sha256": "0b474d939001f655379734d51b7cfcd4b8c1816ea8b68c534491dfcbf7cce76e",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/lesson-menu-parity.js",
+      "counterpart": "assets/lesson-menu-parity.js",
+      "bytes": 2508,
+      "sha256": "6755a00068b303eedea94e94cebdbbc6ac05779a495e80f5a316fce42b48dc08",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/lesson-packed.js",
+      "counterpart": "assets/lesson-packed.js",
+      "bytes": 12523,
+      "sha256": "ecfadcad815946ac87177fcbdb4e28e34cba909cfac40dd29b3712f2ebf1cd26",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/lesson-practice.js",
+      "counterpart": "assets/lesson-practice.js",
+      "bytes": 12194,
+      "sha256": "afd3c2821eba75a839eca240c7b6926003509af66a69e5cd9887ba813dfef9a3",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/pako.min.js",
+      "classification": "excluded-third-party-or-packed-style-runtime",
+      "sha256": "ede2693a4a6a5126b9d35669062b358ecab6ae7b9b86a1cf302feb45a8514907"
+    },
+    {
+      "file": "new-hsk1/assets/practice-advanced.js",
+      "counterpart": "assets/practice-advanced.js",
+      "bytes": 5858,
+      "sha256": "f59527f00d017531c97e631bc34f69ef43adfb42b125175e21fb5767be627570",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/practice-explain.js",
+      "counterpart": "assets/practice-explain.js",
+      "bytes": 8579,
+      "sha256": "6c12dbf99213e142896d5f9f0cf1ede2ddaf7163a2f4a542fce28ce7efe0aeef",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/reviewed-practice.js",
+      "counterpart": "assets/reviewed-practice.js",
+      "bytes": 11680,
+      "sha256": "f53b119c6cae13c30cd120bf85db002129b2fe1ad4dc09b1029a1f444d8c660b",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/session-auth.js",
+      "counterpart": "assets/session-auth.js",
+      "bytes": 7567,
+      "sha256": "920d27a09b49e5a0bae55a8e889898292b8e2c7607b4857c8acd1f4a0d6e1599",
+      "counterpartIsByteIdentical": false,
+      "classification": "distinct-retained-producer-with-different-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/site-shell.js",
+      "counterpart": "assets/site-shell.js",
+      "bytes": 11089,
+      "sha256": "2918d2224665ad11c1983ab76ea28ef7cbffbfd39b9448e7ed83aa6cf5131209",
+      "counterpartIsByteIdentical": false,
+      "classification": "distinct-retained-producer-with-different-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/student-polish.js",
+      "counterpart": "assets/student-polish.js",
+      "bytes": 12637,
+      "sha256": "66219a29ce6ae914787b291a8cfff856824f978735ebcf72b31fca10a5b3f1c3",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/style-packed.js",
+      "classification": "excluded-third-party-or-packed-style-runtime",
+      "sha256": "c387a58d8002d47da90436a72f931ea8026793a59b4bfbf6a5a4e297ec3b3389"
+    },
+    {
+      "file": "new-hsk1/assets/vocab-hanzi-panel.js",
+      "counterpart": "assets/vocab-hanzi-panel.js",
+      "bytes": 7611,
+      "sha256": "73b606f75414e131567c6e790af79f59b8206d873f0cd40f5816d6c426392496",
+      "counterpartIsByteIdentical": false,
+      "classification": "distinct-retained-producer-with-different-source-bytes"
+    },
+    {
+      "file": "new-hsk1/assets/vocab-unified.js",
+      "counterpart": "assets/vocab-unified.js",
+      "bytes": 14228,
+      "sha256": "5efa5358fa4672c84c2ed36b9a7fbd8b31d9f6a2fcbf67e151b483450ad42eed",
+      "counterpartIsByteIdentical": true,
+      "classification": "distinct-retained-producer-with-identical-source-bytes"
+    }
+  ],
+  "cssInputs": [
+    {
+      "file": "new-hsk1/assets/advanced.css",
+      "sha256": "543a4271869425733a0e6b96e84d2016aba24308ab45085d1f9315b93f866faa",
+      "bytes": 3513,
+      "vietnamesePseudoContentCandidate": 0
+    },
+    {
+      "file": "new-hsk1/assets/hanzi-curriculum.css",
+      "sha256": "ba23e0e31ac34bc092bc11cd8c83c89bfd15fdc875189d92c74fdded31ada832",
+      "bytes": 1008,
+      "vietnamesePseudoContentCandidate": 0
+    },
+    {
+      "file": "new-hsk1/assets/hsk12-audit.css",
+      "sha256": "8295252b8fbe1f1fa528574e06e8fa9c92879436e9225383dfcb161da711a5d4",
+      "bytes": 2776,
+      "vietnamesePseudoContentCandidate": 0
+    },
+    {
+      "file": "new-hsk1/assets/hsk2-parity.css",
+      "sha256": "02e3767e7ac476581a4a258df6675645953a55de94c00ab006ab56de38e642f6",
+      "bytes": 8158,
+      "vietnamesePseudoContentCandidate": 0
+    },
+    {
+      "file": "new-hsk1/assets/lesson-menu-parity.css",
+      "sha256": "0d836b96ba9a0fbbbf860e318863f3cef2810620e8e53d3ecf30de2fc280aa2c",
+      "bytes": 311,
+      "vietnamesePseudoContentCandidate": 0
+    },
+    {
+      "file": "new-hsk1/assets/site-polish.css",
+      "sha256": "b2b71725e6f0d1a157ad04f62ce274610ff17b1cd5754bd114c19c7f00b8e823",
+      "bytes": 4693,
+      "vietnamesePseudoContentCandidate": 0
+    },
+    {
+      "file": "new-hsk1/assets/vocab-front-no-pinyin.css",
+      "sha256": "09c969428e3e5587d23cb61fb404adea7e8b714a91b4eb43cdabc3ee88310049",
+      "bytes": 823,
+      "vietnamesePseudoContentCandidate": 0
+    },
+    {
+      "file": "new-hsk1/assets/vocab-hanzi-panel.css",
+      "sha256": "18c78a552ae2bc7fa46d04baaf9c788765e5cf5cd1280ff9869b061625dfdf00",
+      "bytes": 4128,
+      "vietnamesePseudoContentCandidate": 0
+    },
+    {
+      "file": "new-hsk1/assets/vocab-unified.css",
+      "sha256": "f4e0e585ee430838a96398faa1e8439c4ff2b8d29f8e355172c6663577b1c660",
+      "bytes": 7638,
+      "vietnamesePseudoContentCandidate": 0
+    }
+  ],
+  "parseOrDecodeFailures": [],
+  "duplicateRecordIDs": 0,
+  "duplicateSemanticKeys": 0,
+  "limits": [
+    "Retained producer reachability is not certified by extraction.",
+    "The primary 48-lesson engine and legacy retained routes have separate mapping scopes.",
+    "No submitted learner values or past browser storage records are accessed.",
+    "No textbook equivalence or native browser acceptance is claimed."
+  ]
+}

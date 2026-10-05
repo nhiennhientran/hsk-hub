@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "status": "author-comparison-awaiting-independent-review",
+  "historicalSourceHEAD": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "historicalSourceTree": "b83fd52aff2f547681cf9c126ee0b196377f0797",
+  "newSourceHEAD": "1874b4a42ed0bb5afa6a0ed1d17bd882ed85d36b",
+  "newSourceTree": "96f74c550be656c72ef368d30ab702d0a5f2d370",
+  "historicalFieldTargets": 55430,
+  "newFieldTargets": 55430,
+  "fieldIDsAdded": [],
+  "fieldIDsRemoved": [],
+  "sharedFieldIdentityProjectionChanges": [],
+  "historicalConsumers": 4293,
+  "newConsumers": 4293,
+  "consumerIDsAdded": [],
+  "consumerIDsRemoved": [],
+  "consumerIdentityProjectionChanges": [],
+  "inputFilesAdded": [],
+  "inputFilesRemoved": [],
+  "inputByteChanges": [
+    {
+      "file": "course-app/src/style.css",
+      "historicalSHA256": "bc23bda17bf7d1c12eb8d9fa26a52d0751348a6be2ddf75d95f39f0f6f3e14f6",
+      "baselineSHA256": "9af9711588168b506f16e62f6a1737f91f34cb9b0a2d39856daee966dff9a9c6"
+    },
+    {
+      "file": "hsk1-app/src/features/source-activities/source-activities.css",
+      "historicalSHA256": "7fad80d1459a7130c55d3acc058b3b6a4aafcb98476c7a04e32b9f33cefe506b",
+      "baselineSHA256": "5006e8112896236e87435291519e3fb501a916dfaacefe3a6b4e6c4e88e83bc8"
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/textbook.css",
+      "historicalSHA256": "6c6328fb5b52391fe7411fb898b2aed9ea88b1a544a9e02221ec578452fdb14f",
+      "baselineSHA256": "977210ba6f0f331bbadba4042cf47ee36b00fe10666de36216963306d2957df5"
+    }
+  ],
+  "directHistoricalFullPayloadComparisonPerformed": false,
+  "historicalIdentityArtifact": {
+    "path": "/workspace/scratch/28b55072841a/hsk-hub-recovery-v2/course-app/docs/resume-20261004/qa-vi-inventory-b10-full/final-target-identities.json.gz",
+    "file": "final-target-identities.json.gz",
+    "bytes": 2749152,
+    "sha256": "40c1ed69089a4c261cf61ef6afacce9e745fd0392091f1dfb371607ba9482836"
+  },
+  "valuesDisposition": "55,430 newly extracted current-baseline values. The new gzip matches historical length/SHA256/Git blob fingerprints; original archived gzip was not retrieved."
+}

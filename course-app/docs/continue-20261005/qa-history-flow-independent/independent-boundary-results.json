@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "passed-bounded-independent-behavior-probes",
+  "reviewer": "/root/continue_inventory",
+  "generatedAt": "2026-10-05T08:15:11.627Z",
+  "actualNativeBrowser": false,
+  "checks": [
+    {
+      "name": "HSK2 active listening legacy acknowledgement retains answers through failed save and retry, then submits only its captured question",
+      "passed": true
+    },
+    {
+      "name": "HSK2 inactive listening legacy answer remains editable and sealed saved snapshot stays read-only",
+      "passed": true
+    },
+    {
+      "name": "HSK2 VI-only draft is accepted but substitutions of every other authority field commit no bytes",
+      "passed": true
+    },
+    {
+      "name": "HSK3 active listening legacy acknowledgement retains answers through failed save and retry, then submits only its captured question",
+      "passed": true
+    },
+    {
+      "name": "HSK3 inactive listening legacy answer remains editable and sealed saved snapshot stays read-only",
+      "passed": true
+    },
+    {
+      "name": "HSK3 VI-only draft is accepted but substitutions of every other authority field commit no bytes",
+      "passed": true
+    }
+  ],
+  "runnerSHA256": "1506723f76e8add4219f2d70820a945bc6c35da4a0516c19f54ba00f42b999e9",
+  "limits": "Actual state/attempt/listening renderer modules were executed in a deterministic minimal DOM and in-memory storage. Full main.ts wiring, native event/CSS behavior, true browser storage, active published registry and device tests are not certified by this harness."
+}

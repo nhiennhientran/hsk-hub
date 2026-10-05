@@ -14,6 +14,7 @@ import l12 from '../../../content/source-activities/lesson-12.json' with {type:'
 import l13 from '../../../content/source-activities/lesson-13.json' with {type:'json'};
 import l14 from '../../../content/source-activities/lesson-14.json' with {type:'json'};
 import l15 from '../../../content/source-activities/lesson-15.json' with {type:'json'};
+import {defaultOfficialViRegistry,type OfficialViRegistry} from '../content/official-vi-revisions.ts';
 export interface Copy { zh: string; vi: string }
 export interface Source { sourceRevision: string; textbookSHA256: string; printedPage: number; pdfPage: number; section: string; ordinal: number; endOrdinal?: number; printedPages?: number[]; pdfPages?: number[] }
 export interface SourceOption extends Copy { id: string; py: string }
@@ -29,7 +30,21 @@ export const sourceLesson = raw as SourceLesson;
 // JSON imports widen fixed crop-coordinate tuples and literal discriminants.
 // Catalogue provenance, topology and assets are checked by source acceptance.
 export const sourceLessons: readonly SourceLesson[] = [l01,l02,l03,l04Current,l05,l06,l07,l08,l09,l10,l11,l12,l13,l14,l15] as unknown as SourceLesson[];
-export const getSourceLesson = (lessonId:number):SourceLesson|undefined => sourceLessons.find(lesson=>lesson.lesson===lessonId);
+export function projectSourceLesson(raw:SourceLesson,registry:OfficialViRegistry=defaultOfficialViRegistry()):SourceLesson {
+  if(registry.revisionId===null)return raw;
+  const activities=raw.activities.map(activity=>{
+    const shown=registry.project(activity,activity.id,'source-activity');
+    const version=registry.displayVersion(activity.id,'source-activity',activity.version);
+    return version===activity.version?shown:{...shown,version};
+  });
+  return {...raw,activities,figures:raw.figures.map(figure=>registry.project(figure,figure.id,'source-figure')),
+    ...(raw.numberTables?{numberTables:registry.project(raw.numberTables,`source-l${String(raw.lesson).padStart(2,'0')}-numbers`,'source-numbers')}:{ }),
+    ...(raw.bonus?{bonus:registry.project(raw.bonus,raw.bonus.id,'source-bonus')}:{ })};
+}
+export function getSourceLesson(lessonId:number,registry:OfficialViRegistry=defaultOfficialViRegistry()):SourceLesson|undefined {
+  const raw=sourceLessons.find(lesson=>lesson.lesson===lessonId);
+  return raw?projectSourceLesson(raw,registry):undefined;
+}
 export const sourceRecordKey = (activity: Pick<SourceActivity,'id'|'version'>) => activity.id + '@' + activity.version;
 export const incompleteSourceFields = (activity:Pick<SourceActivity,'fields'>,values:Record<string,string>) => activity.fields.some(field=>field.required!==false&&!values[field.id]?.trim());
 /** Crops have a fixed public directory. Imported records never provide asset paths. */

@@ -21,6 +21,9 @@ export interface RecordHistory {
 export interface Draft {
   answers: Record<string, Answer>;
   updatedAt: number;
+  /** Captured on the first answer, or after an explicit review of an older draft. */
+  questions?: Question[];
+  contentRevision?: string;
 }
 export interface ActivityRecord {
   values: Record<string, string | boolean>;
@@ -44,6 +47,7 @@ export interface ListeningRound {
   submitted: Record<string, Attempt>;
   playCounts: Record<string, number>;
   startedAt: number;
+  questionSnapshots?: Record<string, {question: Question; contentRevision: string}>;
 }
 export interface State {
   courseId: string;
@@ -163,6 +167,12 @@ export function validateState(value: unknown, config: CourseConfig): State {
       !integer(draft.updatedAt)
     )
       return bad();
+    else if (draft.questions !== undefined) {
+      if (!array(draft.questions) || !draft.questions.length ||
+          !draft.questions.every(q => snapshotQuestion(q, object(q) ? q.id : undefined) && object(q.prompt)) ||
+          new Set(draft.questions.map(q => (q as Question).id)).size !== draft.questions.length ||
+          draft.contentRevision !== questionRevision(draft.questions as Question[])) return bad();
+    } else if (draft.contentRevision !== undefined) return bad();
   for (const map of [value.homework, value.listening])
     for (const [key, h] of Object.entries(map))
       if (
@@ -229,6 +239,17 @@ export function validateState(value: unknown, config: CourseConfig): State {
       !integer(r.startedAt)
     )
       return bad();
+    if (r.questionSnapshots !== undefined) {
+      const queue = r.queue as unknown[];
+      if (!object(r.questionSnapshots) || Object.entries(r.questionSnapshots).some(([id, snapshot]) => {
+        if (!queue.includes(id) || !object(snapshot) ||
+            Object.keys(snapshot).sort().join(',') !== 'contentRevision,question' ||
+            !snapshotQuestion(snapshot.question, id) || snapshot.question.part !== 'listening' ||
+            !object(snapshot.question.prompt) ||
+            snapshot.contentRevision !== questionRevision([snapshot.question])) return true;
+        return false;
+      })) return bad();
+    }
   }
   const activities = value.activities ?? {},
     reading = value.reading ?? {},
@@ -356,4 +377,76 @@ export function questionRevision(questions: readonly Question[]): string {
     hash = Math.imul(hash, 16777619);
   }
   return "q1-" + (hash >>> 0).toString(16).padStart(8, "0");
+}
+
+export type DraftQuestionStatus = 'current' | 'saved' | 'missing' | 'incompatible';
+/** A display revision may replace only these two Vietnamese leaves. */
+function questionAuthority(question: Question): string {
+  const copy = structuredClone(question);
+  delete (copy.prompt as Partial<Question['prompt']>).vi;
+  if (copy.explanation) delete (copy.explanation as Partial<Question['prompt']>).vi;
+  const sorted = (value: unknown): unknown => Array.isArray(value) ? value.map(sorted) :
+    object(value) ? Object.fromEntries(Object.keys(value).sort().map(key => [key, sorted(value[key])])) : value;
+  return JSON.stringify(sorted(copy));
+}
+/** Partial drafts have no score; validate a response against its actual saved input. */
+function isDraftAnswer(question: Question, answer: Answer): boolean {
+  if (question.part === 'writing') return typeof answer === 'string';
+  if (question.part === 'ordering') return Array.isArray(answer) && !!question.tokens &&
+    answer.length <= question.tokens.length && new Set(answer).size === answer.length &&
+    answer.every(index => Number.isSafeInteger(index) && index >= 0 && index < question.tokens!.length);
+  return Number.isSafeInteger(answer) && typeof answer === 'number' &&
+    answer >= 0 && answer < (question.options?.length ?? 0);
+}
+export function resolveDraftQuestions(current: readonly Question[], draft?: Draft, requireLegacyReview = false): {questions: Question[]; status: DraftQuestionStatus} {
+  if (draft?.questions) {
+    const compatible = draft.questions.length === current.length && draft.questions.every((saved, index) =>
+      saved.id === current[index]?.id && questionAuthority(saved) === questionAuthority(current[index]!));
+    return {questions: structuredClone(draft.questions), status: compatible ? 'saved' : 'incompatible'};
+  }
+  return {questions: structuredClone([...current]), status: requireLegacyReview && draft && Object.keys(draft.answers).length ? 'missing' : 'current'};
+}
+/** Explicit review is required before attributing an unbound older draft to current questions. */
+export function acknowledgeDraftQuestions(draft: Draft | undefined, current: readonly Question[], now = Date.now()): Draft {
+  const resolved = resolveDraftQuestions(current, draft);
+  if (resolved.status === 'incompatible' || !current.length) throw Error('草稿题目已变更，请开始新作业 · Câu hỏi bản nháp đã thay đổi; hãy bắt đầu bài mới');
+  const questions = resolved.status === 'saved' ? resolved.questions : structuredClone([...current]);
+  const answers = structuredClone(draft?.answers ?? {});
+  // Older incomplete answers stay editable and exportable. Submission still
+  // requires isAnswered for every actual question; no draft is treated as a score.
+  return {answers, updatedAt: now, questions, contentRevision: questionRevision(questions)};
+}
+export function captureDraftAnswer(draft: Draft | undefined, current: readonly Question[], id: string, value: Answer, now = Date.now(), requireLegacyReview = false): Draft {
+  const resolved = resolveDraftQuestions(current, draft, requireLegacyReview);
+  if (resolved.status === 'missing' || resolved.status === 'incompatible') throw Error('请先核对旧草稿题目 · Hãy kiểm tra câu hỏi của bản nháp cũ trước');
+  const question = resolved.questions.find(question => question.id === id);
+  if (!question || !isDraftAnswer(question, value)) throw Error('草稿答案无效 · Đáp án bản nháp không hợp lệ');
+  const result = acknowledgeDraftQuestions(draft, current, now);
+  result.answers[id] = structuredClone(value);
+  return result;
+}
+export function resolveListeningDraftQuestion(current: Question, round: ListeningRound, requireLegacyReview = false): {question: Question; status: DraftQuestionStatus} {
+  const snapshot = round.questionSnapshots?.[current.id];
+  const resolved = resolveDraftQuestions([current], {
+    answers: round.answers[current.id] === undefined ? {} : {[current.id]: round.answers[current.id]!},
+    updatedAt: round.startedAt,
+    ...(snapshot ? {questions: [snapshot.question], contentRevision: snapshot.contentRevision} : {}),
+  }, requireLegacyReview);
+  return {question: resolved.questions[0]!, status: resolved.status};
+}
+export function acknowledgeListeningDraftQuestion(round: ListeningRound, current: Question): ListeningRound {
+  if (!round.queue.includes(current.id) || round.submitted[current.id]) throw Error('听力题目不属于当前未提交轮次 · Câu nghe không thuộc lượt chưa nộp hiện tại');
+  const resolved = resolveListeningDraftQuestion(current, round);
+  if (resolved.status === 'incompatible') throw Error('听力题目已变更，请开始新一组 · Câu nghe đã thay đổi; hãy bắt đầu nhóm mới');
+  const copy = structuredClone(round), question = resolved.status === 'saved' ? resolved.question : structuredClone(current);
+  (copy.questionSnapshots ??= {})[current.id] = {question, contentRevision: questionRevision([question])};
+  return copy;
+}
+export function captureListeningDraftAnswer(round: ListeningRound, current: Question, answer: number, requireLegacyReview = false): ListeningRound {
+  const resolved = resolveListeningDraftQuestion(current, round, requireLegacyReview);
+  if (resolved.status === 'missing' || resolved.status === 'incompatible') throw Error('请先核对旧听力题目 · Hãy kiểm tra câu hỏi nghe cũ trước');
+  if (!isDraftAnswer(resolved.question, answer)) throw Error('听力答案无效 · Đáp án nghe không hợp lệ');
+  const copy = acknowledgeListeningDraftQuestion(round, current);
+  copy.answers[current.id] = answer;
+  return copy;
 }

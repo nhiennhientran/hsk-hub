@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "/root/continue_inventory",
+  "gitHEAD": "1874b4a42ed0bb5afa6a0ed1d17bd882ed85d36b",
+  "before": [
+    {
+      "file": "course-app/src/state.ts",
+      "bytes": 19138,
+      "sha256": "dfecdb254f0987ffa8f8e1e6bc8787f63477ed02771fd3d75a0d5c24fb3ab896"
+    },
+    {
+      "file": "course-app/src/attempt-commit.ts",
+      "bytes": 1990,
+      "sha256": "c6905b84480b1510bf69109c80f110ecb78df4c80e31c708335986f5b19702bd"
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "bytes": 14769,
+      "sha256": "1a022fe946a6e4272fcf3d9d0e985ea4e5a98fe206ec934537d27fec2bc2c80b"
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "bytes": 8415,
+      "sha256": "d478ad7b4b799249ac7aa0890fa730e642955dc9399d2dba22ea984a7f4b8137"
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "bytes": 64491,
+      "sha256": "e4b627f9781e91ddb646c3b273f662bd988393f329f2ea03daab7d08cd717a9d"
+    },
+    {
+      "file": "course-app/tests/continue-draft-history.test.mjs",
+      "bytes": 10897,
+      "sha256": "ccca5c31475a7aa60d758f37393121181147fd25824d3965b51e1198339ed2de"
+    },
+    {
+      "file": "course-app/tests/unified/continue-draft-history.spec.ts",
+      "bytes": 8178,
+      "sha256": "1fcc1fd8bc5dfaa50864ac7431bfd1b7a2ba4c78dd68711af594e6091236dce4"
+    },
+    {
+      "file": "course-app/tests/unified/continue-flow-navigation.spec.ts",
+      "bytes": 3688,
+      "sha256": "d0fc98250650bd45370e82cb671868024c34f2a6032d3f0db4732c113b6a00f9"
+    }
+  ],
+  "after": [
+    {
+      "file": "course-app/src/state.ts",
+      "bytes": 19138,
+      "sha256": "dfecdb254f0987ffa8f8e1e6bc8787f63477ed02771fd3d75a0d5c24fb3ab896"
+    },
+    {
+      "file": "course-app/src/attempt-commit.ts",
+      "bytes": 1990,
+      "sha256": "c6905b84480b1510bf69109c80f110ecb78df4c80e31c708335986f5b19702bd"
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "bytes": 14769,
+      "sha256": "1a022fe946a6e4272fcf3d9d0e985ea4e5a98fe206ec934537d27fec2bc2c80b"
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "bytes": 8415,
+      "sha256": "d478ad7b4b799249ac7aa0890fa730e642955dc9399d2dba22ea984a7f4b8137"
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "bytes": 64491,
+      "sha256": "e4b627f9781e91ddb646c3b273f662bd988393f329f2ea03daab7d08cd717a9d"
+    },
+    {
+      "file": "course-app/tests/continue-draft-history.test.mjs",
+      "bytes": 10897,
+      "sha256": "ccca5c31475a7aa60d758f37393121181147fd25824d3965b51e1198339ed2de"
+    },
+    {
+      "file": "course-app/tests/unified/continue-draft-history.spec.ts",
+      "bytes": 8178,
+      "sha256": "1fcc1fd8bc5dfaa50864ac7431bfd1b7a2ba4c78dd68711af594e6091236dce4"
+    },
+    {
+      "file": "course-app/tests/unified/continue-flow-navigation.spec.ts",
+      "bytes": 3688,
+      "sha256": "d0fc98250650bd45370e82cb671868024c34f2a6032d3f0db4732c113b6a00f9"
+    }
+  ],
+  "inputBytesStable": true,
+  "commands": [
+    {
+      "argv": [
+        "node",
+        "--experimental-strip-types",
+        "--test",
+        "tests/continue-draft-history.test.mjs",
+        "tests/attempt-commit.test.mjs",
+        "tests/state.test.mjs",
+        "tests/activity-history.test.mjs"
+      ],
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app",
+      "startedAtUTC": "2026-10-05T08:16:06.777529+00:00",
+      "exitCode": 0,
+      "durationSeconds": 0.317,
+      "output": {
+        "file": "targeted-unit.log",
+        "bytes": 5170,
+        "sha256": "36746288606b84e07ff183bfd34dba393f8c43d1f6bc19c8952908d0cfd0a909"
+      }
+    },
+    {
+      "argv": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "cwd": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app",
+      "startedAtUTC": "2026-10-05T08:16:07.094525+00:00",
+      "exitCode": 0,
+      "durationSeconds": 0.791,
+      "output": {
+        "file": "application-typecheck.log",
+        "bytes": 152,
+        "sha256": "d4f092fedd226092bbf6a231543d6396316d6c6c50cb8ab096ac0ea8e6785960"
+      }
+    }
+  ],
+  "nativeBrowserExecuted": false
+}
