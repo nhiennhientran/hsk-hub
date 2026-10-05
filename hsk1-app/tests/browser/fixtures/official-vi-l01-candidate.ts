@@ -37,12 +37,15 @@ const inputs = { manifestBytes, manifestSHA256: await viSHA256(manifestBytes), r
   parentDisplayRevision: values['content/textbook-display-revisions.json'].revision as string,
   fields: hsk1ViFields(values).filter(field => baselineFiles.some(file => file.file === field.baselineFile)) };
 const registry = await createOfficialViRegistry(inputs), inactive = defaultOfficialViRegistry();
+const assetBase = document.createElement('meta'); assetBase.name = 'hsk1-asset-base'; assetBase.content = new URL('/', document.baseURI).href; document.head.append(assetBase);
 const book = values['content/textbook.json'], catalog = values['content/stage3-catalog.json'], revisions = values['content/textbook-display-revisions.json'];
 const current = createTextbookContent(book, media, catalog, undefined, revisions, registry);
 const baseline = createTextbookContent(book, media, catalog, undefined, revisions, inactive);
 const vocabulary = await createVocabularyContent(catalog, media, undefined, undefined, book, revisions, registry);
 const compatibility = createCompatibility(values['content/stage2-bank.json'], catalog, book);
-const store = createStore({ storage: localStorage, blank: compatibility.blank, validate: compatibility.validate });
+const candidateLock = navigator.locks ? <R>(task: () => R | Promise<R>): Promise<R> => navigator.locks.request('official-l01-candidate-write', task) : undefined;
+const restoreLock = navigator.locks ? <R>(task: () => R | Promise<R>): Promise<R> => navigator.locks.request('official-l01-candidate-restore', task) : undefined;
+const store = createStore({ storage: localStorage, blank: compatibility.blank, validate: compatibility.validate, lock: candidateLock });
 const bank = getHomework30Bank(), stamp = 1791202800000, audio = createBrowserAudioService();
 const host = document.querySelector<HTMLElement>('#candidate-host')!;
 let lifetime = new AbortController(), receipt: ReturnType<typeof createReceipt> | undefined;
@@ -70,7 +73,8 @@ const harness = {
     if (!prior.restart().ok) throw Error('Baseline history did not restart.');
     const candidate = createHomework30Controller({ store, bank, lesson: 1, part: 'choice', now: () => stamp + 1, viRegistry: registry });
     for (const question of candidate.read().questions) { if (question.kind !== 'choice') throw Error('History fixture requires actual choice questions.'); candidate.answer(question.id, question.answer); }
-    if (!candidate.submit().ok || !(await store.save()).ok) throw Error('Candidate-scoped history did not save.');
+    if (!candidate.submit().ok) throw Error('Candidate-scoped history did not submit.');
+    const saved = await store.save(); if (!saved.ok) throw Error('Candidate-scoped history did not save: ' + saved.code);
     const data = store.snapshot().data, group = candidate.read().group!, questions = bank[0]!.choice;
     receipt = createReceipt(host, { lesson: 1, lessonTitle: book.lessons[0].title, part: 'choice', homeworkVersion: '30-v1', questions,
       displayQuestions: { first: questions.map(q => projectHomeworkQuestion(data, '30-v1', 1, 'choice', q, questions, 'first', registry)), latest: questions.map(q => projectHomeworkQuestion(data, '30-v1', 1, 'choice', q, questions, 'latest', registry)) },
@@ -87,7 +91,7 @@ const harness = {
   async roundTrip() {
     const original = store.snapshot().data, backup = store.exportBackup();
     const storageKey = 'hsk1-l01-candidate-roundtrip';
-    const fresh = createStore({ storage: localStorage, storageKey, blank: compatibility.blank, validate: compatibility.validate });
+    const fresh = createStore({ storage: localStorage, storageKey, blank: compatibility.blank, validate: compatibility.validate, lock: restoreLock });
     const result = await fresh.confirm(fresh.previewBackup(backup));
     const disk = localStorage.getItem(storageKey); if (result.ok && !disk) throw Error('Confirmed imported history is absent from real browser storage.');
     return { result, original, restored: fresh.snapshot().data, diskRestored: disk ? JSON.parse(disk).data : null };
