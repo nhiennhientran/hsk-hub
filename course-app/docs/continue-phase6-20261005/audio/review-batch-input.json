@@ -1,0 +1,4174 @@
+{
+  "schemaVersion": 1,
+  "createdAtUTC": "2026-10-05T13:57:14.906688+00:00",
+  "status": "AUTHOR_PROPOSAL_PENDING_INDEPENDENT_SOURCE_BOUNDARY_AND_CROP_REVIEW",
+  "repoHEAD": "9b3289c019b3dd3c1b7bb66b2a42c8ad5475c58a",
+  "repoTree": "c411dfb39bc3bf7d77d73b0e1c8885a1ddc0753f",
+  "scope": {
+    "level": 2,
+    "lessons": [
+      4,
+      5,
+      6
+    ],
+    "maxCandidates": 12,
+    "vocabularyCandidates": 0,
+    "priority": "L4 first; raw endpoint delta is disclosed priority evidence, not a runtime or acoustic gate"
+  },
+  "evidenceInputs": [
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/pilot-exact-match-report.json",
+      "sha256": "79811fe798d90818a28d5bdb0c3558f3d796b208a3bf02259f611e2396b2d022"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-exact-match-report.json",
+      "sha256": "6632c358c8163422a32173ff074df5014c58b765deb0e4fa3cfdb1a14606f5e5"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/compare-raw-source.py",
+      "sha256": "9c040db55745793509a6f8097f5519f5f189e7aee252a7bc7cbe11cca8a175fa"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/generate-cross-model-crops.py",
+      "sha256": "0b4a2f87c02c1eb5192f87685beb0203578213b51429c474a9d24eee4fbe5f23"
+    },
+    {
+      "file": "course-app/docs/resume-20261004/media-closure/asr-evidence/probe-candidate-boundaries.py",
+      "sha256": "bdcba2e1bf18aaf1d6c8b12ceed0b1592f680fc791e57af94352bd18c8b42645"
+    },
+    {
+      "file": "course-app/content/audio-segments-hsk2-reviewed-sentences.json",
+      "sha256": "e01a625335ac02409922d26bcf29d728f1ab0d032dea36e47d5192bd659b7ae8"
+    }
+  ],
+  "authorScriptSHA256": "eadaf18ed1050cc0d91b96d4fc7324f43a347b827f29d1b207c2a2459f346e9e",
+  "policies": {
+    "exactMatch": "Existing NFKC+CJK literal comparison; no script/phonetic/erhua substitutions",
+    "singleSentenceOnly": true,
+    "bothModelsUniqueWholeWords": true,
+    "minimumRawProbability": 0.5,
+    "sentenceEndpointDeltaPrioritySeconds": 0.2,
+    "maxInternalOverlapSeconds": 0.02,
+    "maxInternalGapSeconds": 1.5,
+    "crop": "two-model raw-range union with fixed 120ms before and 150ms after; integer floor/ceil frames",
+    "allFour20msCropBoundaryWindowsMaxDbFS": -57,
+    "neighborGate": "both models previous.end <= crop.start and next.start >= crop.end; adjacent semantic word probability >= .5",
+    "blockedTrack": "L5 track2 existing severe medium hallucination; no new word targets",
+    "warning": "Author gates are conservative filters, not calibrated ASR, phonetic or human-listening certification"
+  },
+  "excludedAlreadyAcceptedIds": [
+    "hsk2-fltrp-2026:l04:text2:line3",
+    "hsk2-fltrp-2026:l05:text2:line8:sentence2"
+  ],
+  "decodedOriginalTracks": [
+    {
+      "id": "hsk2-fltrp-2026:l04:audio1",
+      "file": "course-app/public/course-assets/hsk2/audio/4-1.mp3",
+      "bytes": 481056,
+      "sha256": "484210eadb0d17687e75912fbeec010749ad6bc335641ecfd539179f57fb1624",
+      "sourcePCM_SHA256": "968edec232115a6b5462a3f6b1043dbfc1ddcfef0aebfaf9ce4837cb1c96e4c3",
+      "samples16k": 288768,
+      "durationSeconds": 18.048,
+      "decode": "actual ffmpeg full decode; exact both raw PCM SHA"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:audio3",
+      "file": "course-app/public/course-assets/hsk2/audio/4-3.mp3",
+      "bytes": 754606,
+      "sha256": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+      "sourcePCM_SHA256": "d167901daaffea375fabf9b67b10a321a590cd21a2c33e5ed92532a0f8dea020",
+      "samples16k": 471936,
+      "durationSeconds": 29.496,
+      "decode": "actual ffmpeg full decode; exact both raw PCM SHA"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:audio5",
+      "file": "course-app/public/course-assets/hsk2/audio/4-5.mp3",
+      "bytes": 581801,
+      "sha256": "4ab3deb04bcd1abaafbb0074fc7261f1cb95e85875166fc7b9ad9adefd50372b",
+      "sourcePCM_SHA256": "c94206559fb820e98f5c0ab7865dcc85723e14faf88c553703f332cd012db0f2",
+      "samples16k": 356736,
+      "durationSeconds": 22.296,
+      "decode": "actual ffmpeg full decode; exact both raw PCM SHA"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:audio1",
+      "file": "course-app/public/course-assets/hsk2/audio/5-1.mp3",
+      "bytes": 643487,
+      "sha256": "b8659e2a15e660f907133bf2fd07b39ec338572d0658ec8315b6fefaf3fe5ba6",
+      "sourcePCM_SHA256": "7a992594d28b75ff57d5d052dd5a2f17c49f7119204af798b95995d03ae83b2e",
+      "samples16k": 397056,
+      "durationSeconds": 24.816,
+      "decode": "actual ffmpeg full decode; exact both raw PCM SHA"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:audio3",
+      "file": "course-app/public/course-assets/hsk2/audio/5-3.mp3",
+      "bytes": 992382,
+      "sha256": "7692432ee007f962b2e0d8a76642a0ad69e2696125f74b3572e1e287e249dcbd",
+      "sourcePCM_SHA256": "a5a433f2b95eca57609e5f752bb0aeeb52d66ebc3f46e126f62575670a9a7e95",
+      "samples16k": 628608,
+      "durationSeconds": 39.288,
+      "decode": "actual ffmpeg full decode; exact both raw PCM SHA"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:audio5",
+      "file": "course-app/public/course-assets/hsk2/audio/5-5.mp3",
+      "bytes": 858756,
+      "sha256": "f89f260075f41cfe11a31a32e13d810292ff47882f7b2f04a7cf17fcb7abe09c",
+      "sourcePCM_SHA256": "c614019a09c289ffefad4670f53c456ed4bcc0c50944d2577df0f4da7a45defe",
+      "samples16k": 540288,
+      "durationSeconds": 33.768,
+      "decode": "actual ffmpeg full decode; exact both raw PCM SHA"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:audio1",
+      "file": "course-app/public/course-assets/hsk2/audio/6-1.mp3",
+      "bytes": 681285,
+      "sha256": "ed1e9c6c1c856d87898005be33d08fcc8977cfe2305397414a3a2d6c4363d161",
+      "sourcePCM_SHA256": "dea38b5143e594847394204a5a5ac835a37f3cb32569a1c6878708730ebd4a84",
+      "samples16k": 422784,
+      "durationSeconds": 26.424,
+      "decode": "actual ffmpeg full decode; exact both raw PCM SHA"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:audio3",
+      "file": "course-app/public/course-assets/hsk2/audio/6-3.mp3",
+      "bytes": 829632,
+      "sha256": "2531cac062456bbbfcf47ba21bcf649a26dbf6ff8f59e9dd3e412d3d4a5df28c",
+      "sourcePCM_SHA256": "cbdbe2135761200738f51435efbfbac74cb5c0729afad0711cae9a8ae2ad2283",
+      "samples16k": 519936,
+      "durationSeconds": 32.496,
+      "decode": "actual ffmpeg full decode; exact both raw PCM SHA"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:audio5",
+      "file": "course-app/public/course-assets/hsk2/audio/6-5.mp3",
+      "bytes": 795342,
+      "sha256": "e36e33b86b2ffce1c200b23e40fe5a37855d8925f99eb31f22e6538f79c225d5",
+      "sourcePCM_SHA256": "8b7871b1ae52110d5c48d6985b23c830a5019f36923bff8edebe08a593b131bd",
+      "samples16k": 498816,
+      "durationSeconds": 31.176,
+      "decode": "actual ffmpeg full decode; exact both raw PCM SHA"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line2",
+      "unit": "sentence",
+      "sourceUnit": "line",
+      "sourceText": "你有很多白色的衣服，为什么还买白色的？",
+      "sourcePinyin": "Nǐ yǒu hěn duō báisè de yīfu, wèi shénme hái mǎi báisè de?",
+      "parentLineId": "hsk2-fltrp-2026:l04:text2:line2",
+      "sourceParentChinese": "你有很多白色的衣服，为什么还买白色的？",
+      "sourceParentPinyin": "Nǐ yǒu hěn duō báisè de yīfu, wèi shénme hái mǎi báisè de?",
+      "speaker": "王一雪",
+      "sentenceIndex1": 1,
+      "sentenceCountInParent": 1,
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 32,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-04.json",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "sourceSHA256": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+      "sourcePCM_SHA256": "d167901daaffea375fabf9b67b10a321a590cd21a2c33e5ed92532a0f8dea020",
+      "sourceSampleRange16k": [
+        74240,
+        148641
+      ],
+      "start": 4.64,
+      "end": 9.2900625,
+      "durationSeconds": 4.6500625,
+      "rawUnionSeconds": [
+        4.760000000000004,
+        9.14
+      ],
+      "maximumModelEndpointDifference": 0.3399999999999954,
+      "endpointPriorityNote": "delta>.2 retained per root scope instruction; complete raw-word range union and actual PCM reviewed independently",
+      "sampleRate": 16000,
+      "cropPCM_SHA256": "bab71680e1fd0e32b60d03979471d62fe4a88ec324565cd2524b4d0adfdd2065",
+      "cropPCMEncoding": "mono f32le source slice before s16 WAV conversion",
+      "wav": {
+        "file": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-phase6/author/crops/hsk2-fltrp-2026_l04_text2_line2.wav",
+        "sha256": "a0186a47e09b917c32e599a124475c07f1fae7da342e8fe82d8f8170e44dd25b",
+        "bytes": 148846,
+        "sampleEncoding": "s16le",
+        "channels": 1,
+        "frames": 74401,
+        "samplingRate": 16000,
+        "actualFullDecode": "passed",
+        "decodedF32SHA256": "650f3c9d92a37a96fd3b716d50d7636c127b3bcce5edacbf86a697c9cef6e125"
+      },
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": -58.91,
+        "afterStart": -62.107,
+        "beforeEnd": -65.018,
+        "afterEnd": -72.228
+      },
+      "rawEvidence": {
+        "small": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/tracks/hsk2-l04-t3.json",
+          "rawFileSHA256": "c2beed3df483ae2ad9578f6dede5916a4086968adcb4b93f0edccd79bc764ec9",
+          "model": null,
+          "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+          "rawStart": 4.760000000000004,
+          "rawEnd": 8.9,
+          "minimumRawProbability": 0.7400052547454834,
+          "rawWordReferences": [
+            {
+              "segment": 1,
+              "word": 0
+            },
+            {
+              "segment": 1,
+              "word": 1
+            },
+            {
+              "segment": 1,
+              "word": 2
+            },
+            {
+              "segment": 1,
+              "word": 3
+            },
+            {
+              "segment": 1,
+              "word": 4
+            },
+            {
+              "segment": 1,
+              "word": 5
+            },
+            {
+              "segment": 1,
+              "word": 6
+            },
+            {
+              "segment": 1,
+              "word": 7
+            },
+            {
+              "segment": 1,
+              "word": 8
+            },
+            {
+              "segment": 1,
+              "word": 9
+            },
+            {
+              "segment": 1,
+              "word": 10
+            },
+            {
+              "segment": 1,
+              "word": 11
+            },
+            {
+              "segment": 1,
+              "word": 12
+            }
+          ],
+          "observedCJKRange": [
+            12,
+            29
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 1,
+              "wordIndex": 0,
+              "start": 4.760000000000004,
+              "end": 5.28,
+              "word": "你有",
+              "probability": 0.7400052547454834
+            },
+            {
+              "segment": 1,
+              "wordIndex": 1,
+              "start": 5.28,
+              "end": 5.76,
+              "word": "很多",
+              "probability": 0.9918501973152161
+            },
+            {
+              "segment": 1,
+              "wordIndex": 2,
+              "start": 5.76,
+              "end": 6.08,
+              "word": "白",
+              "probability": 0.9723474979400635
+            },
+            {
+              "segment": 1,
+              "wordIndex": 3,
+              "start": 6.08,
+              "end": 6.32,
+              "word": "色",
+              "probability": 0.9982549548149109
+            },
+            {
+              "segment": 1,
+              "wordIndex": 4,
+              "start": 6.32,
+              "end": 6.44,
+              "word": "的",
+              "probability": 0.9421645998954773
+            },
+            {
+              "segment": 1,
+              "wordIndex": 5,
+              "start": 6.44,
+              "end": 6.64,
+              "word": "衣",
+              "probability": 0.9980297982692719
+            },
+            {
+              "segment": 1,
+              "wordIndex": 6,
+              "start": 6.64,
+              "end": 6.82,
+              "word": "服,",
+              "probability": 0.998961329460144
+            },
+            {
+              "segment": 1,
+              "wordIndex": 7,
+              "start": 7.24,
+              "end": 7.66,
+              "word": "为什么",
+              "probability": 0.9395346641540527
+            },
+            {
+              "segment": 1,
+              "wordIndex": 8,
+              "start": 7.66,
+              "end": 8.04,
+              "word": "还",
+              "probability": 0.9819830656051636
+            },
+            {
+              "segment": 1,
+              "wordIndex": 9,
+              "start": 8.04,
+              "end": 8.24,
+              "word": "买",
+              "probability": 0.9839167296886444
+            },
+            {
+              "segment": 1,
+              "wordIndex": 10,
+              "start": 8.24,
+              "end": 8.54,
+              "word": "白",
+              "probability": 0.9670295119285583
+            },
+            {
+              "segment": 1,
+              "wordIndex": 11,
+              "start": 8.54,
+              "end": 8.74,
+              "word": "色",
+              "probability": 0.9957914352416992
+            },
+            {
+              "segment": 1,
+              "wordIndex": 12,
+              "start": 8.74,
+              "end": 8.9,
+              "word": "的?",
+              "probability": 0.9702511429786682
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.41999999999999993,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 0,
+            "wordIndex": 10,
+            "start": 3.2,
+            "end": 3.52,
+            "word": "子。",
+            "probability": 0.9985557198524475
+          },
+          "followingRawWord": {
+            "segment": 2,
+            "wordIndex": 0,
+            "start": 10.100000000000003,
+            "end": 10.62,
+            "word": "因为",
+            "probability": 0.976291298866272
+          },
+          "previousWordToCropGapSeconds": 1.1199999999999997,
+          "cropToFollowingWordGapSeconds": 0.8099375000000038
+        },
+        "medium": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-run-37218301490/tracks/hsk2-l04-t3.json",
+          "rawFileSHA256": "728f6e6dc41fd2635b9ac4fd6c418d584a521ab62eeffd4d96526bf0b9d19271",
+          "model": null,
+          "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+          "rawStart": 5.1,
+          "rawEnd": 9.14,
+          "minimumRawProbability": 0.8878046870231628,
+          "rawWordReferences": [
+            {
+              "segment": 1,
+              "word": 0
+            },
+            {
+              "segment": 1,
+              "word": 1
+            },
+            {
+              "segment": 1,
+              "word": 2
+            },
+            {
+              "segment": 1,
+              "word": 3
+            },
+            {
+              "segment": 1,
+              "word": 4
+            },
+            {
+              "segment": 1,
+              "word": 5
+            },
+            {
+              "segment": 1,
+              "word": 6
+            },
+            {
+              "segment": 1,
+              "word": 7
+            },
+            {
+              "segment": 1,
+              "word": 8
+            },
+            {
+              "segment": 1,
+              "word": 9
+            },
+            {
+              "segment": 1,
+              "word": 10
+            },
+            {
+              "segment": 1,
+              "word": 11
+            },
+            {
+              "segment": 1,
+              "word": 12
+            }
+          ],
+          "observedCJKRange": [
+            12,
+            29
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 1,
+              "wordIndex": 0,
+              "start": 5.1,
+              "end": 5.42,
+              "word": "你有",
+              "probability": 0.8878046870231628
+            },
+            {
+              "segment": 1,
+              "wordIndex": 1,
+              "start": 5.42,
+              "end": 5.88,
+              "word": "很多",
+              "probability": 0.9985502362251282
+            },
+            {
+              "segment": 1,
+              "wordIndex": 2,
+              "start": 5.88,
+              "end": 6.28,
+              "word": "白",
+              "probability": 0.9981689453125
+            },
+            {
+              "segment": 1,
+              "wordIndex": 3,
+              "start": 6.28,
+              "end": 6.42,
+              "word": "色",
+              "probability": 0.99972003698349
+            },
+            {
+              "segment": 1,
+              "wordIndex": 4,
+              "start": 6.42,
+              "end": 6.6,
+              "word": "的",
+              "probability": 0.9888050556182861
+            },
+            {
+              "segment": 1,
+              "wordIndex": 5,
+              "start": 6.6,
+              "end": 6.8,
+              "word": "衣",
+              "probability": 0.9991132318973541
+            },
+            {
+              "segment": 1,
+              "wordIndex": 6,
+              "start": 6.8,
+              "end": 6.98,
+              "word": "服,",
+              "probability": 0.9969677329063416
+            },
+            {
+              "segment": 1,
+              "wordIndex": 7,
+              "start": 7.32,
+              "end": 7.76,
+              "word": "为什么",
+              "probability": 0.9213163256645203
+            },
+            {
+              "segment": 1,
+              "wordIndex": 8,
+              "start": 7.76,
+              "end": 8.12,
+              "word": "还",
+              "probability": 0.9926251769065857
+            },
+            {
+              "segment": 1,
+              "wordIndex": 9,
+              "start": 8.12,
+              "end": 8.3,
+              "word": "买",
+              "probability": 0.9979063868522644
+            },
+            {
+              "segment": 1,
+              "wordIndex": 10,
+              "start": 8.3,
+              "end": 8.68,
+              "word": "白",
+              "probability": 0.9980692267417908
+            },
+            {
+              "segment": 1,
+              "wordIndex": 11,
+              "start": 8.68,
+              "end": 8.86,
+              "word": "色",
+              "probability": 0.9998410940170288
+            },
+            {
+              "segment": 1,
+              "wordIndex": 12,
+              "start": 8.86,
+              "end": 9.14,
+              "word": "的?",
+              "probability": 0.997156023979187
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.33999999999999986,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 0,
+            "wordIndex": 10,
+            "start": 3.42,
+            "end": 4.44,
+            "word": "子。",
+            "probability": 0.9998452663421631
+          },
+          "followingRawWord": {
+            "segment": 2,
+            "wordIndex": 0,
+            "start": 10.16,
+            "end": 10.72,
+            "word": "因为",
+            "probability": 0.9963240623474121
+          },
+          "previousWordToCropGapSeconds": 0.1999999999999993,
+          "cropToFollowingWordGapSeconds": 0.8699375000000007
+        }
+      },
+      "sourcePreviousSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l04:text2:line1",
+        "zh": "妈妈，我想买这条白色的裤子。",
+        "sameLine": false
+      },
+      "sourceFollowingSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l04:text2:line3",
+        "zh": "因为我喜欢白色啊！",
+        "sameLine": false
+      },
+      "authorHolds": [],
+      "status": "pending-independent-source-and-boundary-review-and-unprompted-crop-ASR",
+      "productionApproved": false,
+      "humanListening": false,
+      "acousticBoundaryApproved": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line4",
+      "unit": "sentence",
+      "sourceUnit": "line",
+      "sourceText": "我觉得这条白色的不太好看，你试试那条红色的吧。",
+      "sourcePinyin": "Wǒ juéde zhè tiáo báisè de bú tài hǎokàn, nǐ shìshi nà tiáo hóngsè de ba.",
+      "parentLineId": "hsk2-fltrp-2026:l04:text2:line4",
+      "sourceParentChinese": "我觉得这条白色的不太好看，你试试那条红色的吧。",
+      "sourceParentPinyin": "Wǒ juéde zhè tiáo báisè de bú tài hǎokàn, nǐ shìshi nà tiáo hóngsè de ba.",
+      "speaker": "王一雪",
+      "sentenceIndex1": 1,
+      "sentenceCountInParent": 1,
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 32,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-04.json",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "sourceSHA256": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+      "sourcePCM_SHA256": "d167901daaffea375fabf9b67b10a321a590cd21a2c33e5ed92532a0f8dea020",
+      "sourceSampleRange16k": [
+        210560,
+        304160
+      ],
+      "start": 13.16,
+      "end": 19.01,
+      "durationSeconds": 5.850000000000001,
+      "rawUnionSeconds": [
+        13.280000000000005,
+        18.86
+      ],
+      "maximumModelEndpointDifference": 0.41999999999999815,
+      "endpointPriorityNote": "delta>.2 retained per root scope instruction; complete raw-word range union and actual PCM reviewed independently",
+      "sampleRate": 16000,
+      "cropPCM_SHA256": "86e25af1f4a0c50da79ba41fa6b0d9850658e6c2add703115e9d095a70962cde",
+      "cropPCMEncoding": "mono f32le source slice before s16 WAV conversion",
+      "wav": {
+        "file": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-phase6/author/crops/hsk2-fltrp-2026_l04_text2_line4.wav",
+        "sha256": "da690448ac738bc0d7551f99ff0357db3b5a4be817c69e2683c9dfafdab18133",
+        "bytes": 187244,
+        "sampleEncoding": "s16le",
+        "channels": 1,
+        "frames": 93600,
+        "samplingRate": 16000,
+        "actualFullDecode": "passed",
+        "decodedF32SHA256": "9e5638772125992d80f61ecdd3d7001d26ee108f86e16787fe07309f1431cb46"
+      },
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": -58.484,
+        "afterStart": -61.177,
+        "beforeEnd": -63.714,
+        "afterEnd": -64.094
+      },
+      "rawEvidence": {
+        "small": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/tracks/hsk2-l04-t3.json",
+          "rawFileSHA256": "c2beed3df483ae2ad9578f6dede5916a4086968adcb4b93f0edccd79bc764ec9",
+          "model": null,
+          "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+          "rawStart": 13.280000000000005,
+          "rawEnd": 18.44,
+          "minimumRawProbability": 0.944987952709198,
+          "rawWordReferences": [
+            {
+              "segment": 3,
+              "word": 0
+            },
+            {
+              "segment": 3,
+              "word": 1
+            },
+            {
+              "segment": 3,
+              "word": 2
+            },
+            {
+              "segment": 3,
+              "word": 3
+            },
+            {
+              "segment": 3,
+              "word": 4
+            },
+            {
+              "segment": 3,
+              "word": 5
+            },
+            {
+              "segment": 3,
+              "word": 6
+            },
+            {
+              "segment": 3,
+              "word": 7
+            },
+            {
+              "segment": 3,
+              "word": 8
+            },
+            {
+              "segment": 3,
+              "word": 9
+            },
+            {
+              "segment": 4,
+              "word": 0
+            },
+            {
+              "segment": 4,
+              "word": 1
+            },
+            {
+              "segment": 4,
+              "word": 2
+            },
+            {
+              "segment": 4,
+              "word": 3
+            },
+            {
+              "segment": 4,
+              "word": 4
+            },
+            {
+              "segment": 4,
+              "word": 5
+            },
+            {
+              "segment": 4,
+              "word": 6
+            },
+            {
+              "segment": 4,
+              "word": 7
+            },
+            {
+              "segment": 4,
+              "word": 8
+            }
+          ],
+          "observedCJKRange": [
+            37,
+            58
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 3,
+              "wordIndex": 0,
+              "start": 13.280000000000005,
+              "end": 13.8,
+              "word": "我觉得",
+              "probability": 0.9660873413085938
+            },
+            {
+              "segment": 3,
+              "wordIndex": 1,
+              "start": 13.8,
+              "end": 14.12,
+              "word": "这",
+              "probability": 0.9577346444129944
+            },
+            {
+              "segment": 3,
+              "wordIndex": 2,
+              "start": 14.12,
+              "end": 14.32,
+              "word": "条",
+              "probability": 0.9735754132270813
+            },
+            {
+              "segment": 3,
+              "wordIndex": 3,
+              "start": 14.32,
+              "end": 14.54,
+              "word": "白",
+              "probability": 0.9858075380325317
+            },
+            {
+              "segment": 3,
+              "wordIndex": 4,
+              "start": 14.54,
+              "end": 14.8,
+              "word": "色",
+              "probability": 0.9982194304466248
+            },
+            {
+              "segment": 3,
+              "wordIndex": 5,
+              "start": 14.8,
+              "end": 14.9,
+              "word": "的",
+              "probability": 0.9823552966117859
+            },
+            {
+              "segment": 3,
+              "wordIndex": 6,
+              "start": 14.9,
+              "end": 15.12,
+              "word": "不",
+              "probability": 0.9695348143577576
+            },
+            {
+              "segment": 3,
+              "wordIndex": 7,
+              "start": 15.12,
+              "end": 15.28,
+              "word": "太",
+              "probability": 0.9972499012947083
+            },
+            {
+              "segment": 3,
+              "wordIndex": 8,
+              "start": 15.28,
+              "end": 15.54,
+              "word": "好",
+              "probability": 0.9932534098625183
+            },
+            {
+              "segment": 3,
+              "wordIndex": 9,
+              "start": 15.54,
+              "end": 15.76,
+              "word": "看。",
+              "probability": 0.9995750784873962
+            },
+            {
+              "segment": 4,
+              "wordIndex": 0,
+              "start": 16.56,
+              "end": 16.82,
+              "word": "你",
+              "probability": 0.944987952709198
+            },
+            {
+              "segment": 4,
+              "wordIndex": 1,
+              "start": 16.82,
+              "end": 17.0,
+              "word": "试",
+              "probability": 0.9978907108306885
+            },
+            {
+              "segment": 4,
+              "wordIndex": 2,
+              "start": 17.0,
+              "end": 17.18,
+              "word": "试",
+              "probability": 0.9965190887451172
+            },
+            {
+              "segment": 4,
+              "wordIndex": 3,
+              "start": 17.18,
+              "end": 17.38,
+              "word": "那",
+              "probability": 0.9873167276382446
+            },
+            {
+              "segment": 4,
+              "wordIndex": 4,
+              "start": 17.38,
+              "end": 17.58,
+              "word": "条",
+              "probability": 0.9856782555580139
+            },
+            {
+              "segment": 4,
+              "wordIndex": 5,
+              "start": 17.58,
+              "end": 17.88,
+              "word": "红",
+              "probability": 0.9967225193977356
+            },
+            {
+              "segment": 4,
+              "wordIndex": 6,
+              "start": 17.88,
+              "end": 18.1,
+              "word": "色",
+              "probability": 0.999359667301178
+            },
+            {
+              "segment": 4,
+              "wordIndex": 7,
+              "start": 18.1,
+              "end": 18.26,
+              "word": "的",
+              "probability": 0.9982006549835205
+            },
+            {
+              "segment": 4,
+              "wordIndex": 8,
+              "start": 18.26,
+              "end": 18.44,
+              "word": "吧。",
+              "probability": 0.9798872470855713
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.7999999999999989,
+          "crossRawSegmentCount": 2,
+          "previousRawWord": {
+            "segment": 2,
+            "wordIndex": 5,
+            "start": 11.86,
+            "end": 12.08,
+            "word": "啊。",
+            "probability": 0.7344670295715332
+          },
+          "followingRawWord": {
+            "segment": 5,
+            "wordIndex": 0,
+            "start": 20.26,
+            "end": 20.62,
+            "word": "我",
+            "probability": 0.9907240271568298
+          },
+          "previousWordToCropGapSeconds": 1.08,
+          "cropToFollowingWordGapSeconds": 1.25
+        },
+        "medium": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-run-37218301490/tracks/hsk2-l04-t3.json",
+          "rawFileSHA256": "728f6e6dc41fd2635b9ac4fd6c418d584a521ab62eeffd4d96526bf0b9d19271",
+          "model": null,
+          "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+          "rawStart": 13.42,
+          "rawEnd": 18.86,
+          "minimumRawProbability": 0.9511163234710693,
+          "rawWordReferences": [
+            {
+              "segment": 3,
+              "word": 0
+            },
+            {
+              "segment": 3,
+              "word": 1
+            },
+            {
+              "segment": 3,
+              "word": 2
+            },
+            {
+              "segment": 3,
+              "word": 3
+            },
+            {
+              "segment": 3,
+              "word": 4
+            },
+            {
+              "segment": 3,
+              "word": 5
+            },
+            {
+              "segment": 3,
+              "word": 6
+            },
+            {
+              "segment": 3,
+              "word": 7
+            },
+            {
+              "segment": 3,
+              "word": 8
+            },
+            {
+              "segment": 3,
+              "word": 9
+            },
+            {
+              "segment": 3,
+              "word": 10
+            },
+            {
+              "segment": 3,
+              "word": 11
+            },
+            {
+              "segment": 3,
+              "word": 12
+            },
+            {
+              "segment": 3,
+              "word": 13
+            },
+            {
+              "segment": 3,
+              "word": 14
+            },
+            {
+              "segment": 3,
+              "word": 15
+            },
+            {
+              "segment": 3,
+              "word": 16
+            },
+            {
+              "segment": 3,
+              "word": 17
+            },
+            {
+              "segment": 3,
+              "word": 18
+            }
+          ],
+          "observedCJKRange": [
+            37,
+            58
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 3,
+              "wordIndex": 0,
+              "start": 13.42,
+              "end": 13.98,
+              "word": "我觉得",
+              "probability": 0.9929689764976501
+            },
+            {
+              "segment": 3,
+              "wordIndex": 1,
+              "start": 13.98,
+              "end": 14.32,
+              "word": "这",
+              "probability": 0.989757776260376
+            },
+            {
+              "segment": 3,
+              "wordIndex": 2,
+              "start": 14.32,
+              "end": 14.42,
+              "word": "条",
+              "probability": 0.9969677329063416
+            },
+            {
+              "segment": 3,
+              "wordIndex": 3,
+              "start": 14.42,
+              "end": 14.74,
+              "word": "白",
+              "probability": 0.9985254406929016
+            },
+            {
+              "segment": 3,
+              "wordIndex": 4,
+              "start": 14.74,
+              "end": 14.88,
+              "word": "色",
+              "probability": 0.9998379945755005
+            },
+            {
+              "segment": 3,
+              "wordIndex": 5,
+              "start": 14.88,
+              "end": 15.04,
+              "word": "的",
+              "probability": 0.9896963834762573
+            },
+            {
+              "segment": 3,
+              "wordIndex": 6,
+              "start": 15.04,
+              "end": 15.2,
+              "word": "不",
+              "probability": 0.9907236695289612
+            },
+            {
+              "segment": 3,
+              "wordIndex": 7,
+              "start": 15.2,
+              "end": 15.38,
+              "word": "太",
+              "probability": 0.9979165196418762
+            },
+            {
+              "segment": 3,
+              "wordIndex": 8,
+              "start": 15.38,
+              "end": 15.68,
+              "word": "好",
+              "probability": 0.9990687966346741
+            },
+            {
+              "segment": 3,
+              "wordIndex": 9,
+              "start": 15.68,
+              "end": 15.9,
+              "word": "看,",
+              "probability": 0.999664306640625
+            },
+            {
+              "segment": 3,
+              "wordIndex": 10,
+              "start": 16.58,
+              "end": 16.92,
+              "word": "你",
+              "probability": 0.9511163234710693
+            },
+            {
+              "segment": 3,
+              "wordIndex": 11,
+              "start": 16.92,
+              "end": 17.1,
+              "word": "试",
+              "probability": 0.9998384416103363
+            },
+            {
+              "segment": 3,
+              "wordIndex": 12,
+              "start": 17.1,
+              "end": 17.26,
+              "word": "试",
+              "probability": 0.999610036611557
+            },
+            {
+              "segment": 3,
+              "wordIndex": 13,
+              "start": 17.26,
+              "end": 17.48,
+              "word": "那",
+              "probability": 0.9965080618858337
+            },
+            {
+              "segment": 3,
+              "wordIndex": 14,
+              "start": 17.48,
+              "end": 17.66,
+              "word": "条",
+              "probability": 0.9973717927932739
+            },
+            {
+              "segment": 3,
+              "wordIndex": 15,
+              "start": 17.66,
+              "end": 18.06,
+              "word": "红",
+              "probability": 0.9977641999721527
+            },
+            {
+              "segment": 3,
+              "wordIndex": 16,
+              "start": 18.06,
+              "end": 18.24,
+              "word": "色",
+              "probability": 0.9993594288825989
+            },
+            {
+              "segment": 3,
+              "wordIndex": 17,
+              "start": 18.24,
+              "end": 18.34,
+              "word": "的",
+              "probability": 0.9984558820724487
+            },
+            {
+              "segment": 3,
+              "wordIndex": 18,
+              "start": 18.34,
+              "end": 18.86,
+              "word": "吧。",
+              "probability": 0.9981288313865662
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.6799999999999979,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 2,
+            "wordIndex": 5,
+            "start": 11.94,
+            "end": 12.22,
+            "word": "啊。",
+            "probability": 0.9636027216911316
+          },
+          "followingRawWord": {
+            "segment": 4,
+            "wordIndex": 0,
+            "start": 20.48,
+            "end": 20.68,
+            "word": "我",
+            "probability": 0.9976004958152771
+          },
+          "previousWordToCropGapSeconds": 0.9399999999999995,
+          "cropToFollowingWordGapSeconds": 1.4699999999999989
+        }
+      },
+      "sourcePreviousSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l04:text2:line3",
+        "zh": "因为我喜欢白色啊！",
+        "sameLine": false
+      },
+      "sourceFollowingSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l04:text2:line5",
+        "zh": "我没穿过红色的，红色的好看吗？",
+        "sameLine": false
+      },
+      "authorHolds": [],
+      "status": "pending-independent-source-and-boundary-review-and-unprompted-crop-ASR",
+      "productionApproved": false,
+      "humanListening": false,
+      "acousticBoundaryApproved": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text2:line6",
+      "unit": "sentence",
+      "sourceUnit": "line",
+      "sourceText": "就是因为没穿过，所以要试试啊！",
+      "sourcePinyin": "Jiù shì yīnwèi méi chuānguo, suǒyǐ yào shìshi a!",
+      "parentLineId": "hsk2-fltrp-2026:l04:text2:line6",
+      "sourceParentChinese": "就是因为没穿过，所以要试试啊！",
+      "sourceParentPinyin": "Jiù shì yīnwèi méi chuānguo, suǒyǐ yào shìshi a!",
+      "speaker": "王一雪",
+      "sentenceIndex1": 1,
+      "sentenceCountInParent": 1,
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 32,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-04.json",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "sourceTrack": "course-assets/hsk2/audio/4-3.mp3",
+      "trackId": "hsk2-fltrp-2026:l04:audio3",
+      "sourceSHA256": "41d986f45ce0f2e0fb4ec58fd62664b89a92645c4f183294ccfac2a72ba7f4f9",
+      "sourcePCM_SHA256": "d167901daaffea375fabf9b67b10a321a590cd21a2c33e5ed92532a0f8dea020",
+      "sourceSampleRange16k": [
+        402240,
+        462560
+      ],
+      "start": 25.14,
+      "end": 28.91,
+      "durationSeconds": 3.7699999999999996,
+      "rawUnionSeconds": [
+        25.26,
+        28.76
+      ],
+      "maximumModelEndpointDifference": 0.40000000000000213,
+      "endpointPriorityNote": "delta>.2 retained per root scope instruction; complete raw-word range union and actual PCM reviewed independently",
+      "sampleRate": 16000,
+      "cropPCM_SHA256": "bc88a9a7ed1751287856011c3c34308c7b9e1fa9aaa0de4e280cf2844aad23d2",
+      "cropPCMEncoding": "mono f32le source slice before s16 WAV conversion",
+      "wav": {
+        "file": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-phase6/author/crops/hsk2-fltrp-2026_l04_text2_line6.wav",
+        "sha256": "3e0a3f2649b4863bc0fc51c512ebd79c9c7da22629219e097f387c9c1b32c85a",
+        "bytes": 120684,
+        "sampleEncoding": "s16le",
+        "channels": 1,
+        "frames": 60320,
+        "samplingRate": 16000,
+        "actualFullDecode": "passed",
+        "decodedF32SHA256": "5605e3355d3ffb3e49e6863dd2a860bdbad88adc8ff088c43f4a6a9dfd6f6e1f"
+      },
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": -59.467,
+        "afterStart": -58.926,
+        "beforeEnd": -59.252,
+        "afterEnd": -60.252
+      },
+      "rawEvidence": {
+        "small": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/tracks/hsk2-l04-t3.json",
+          "rawFileSHA256": "c2beed3df483ae2ad9578f6dede5916a4086968adcb4b93f0edccd79bc764ec9",
+          "model": null,
+          "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+          "rawStart": 25.26,
+          "rawEnd": 28.36,
+          "minimumRawProbability": 0.9294241666793823,
+          "rawWordReferences": [
+            {
+              "segment": 6,
+              "word": 0
+            },
+            {
+              "segment": 6,
+              "word": 1
+            },
+            {
+              "segment": 6,
+              "word": 2
+            },
+            {
+              "segment": 6,
+              "word": 3
+            },
+            {
+              "segment": 6,
+              "word": 4
+            },
+            {
+              "segment": 6,
+              "word": 5
+            },
+            {
+              "segment": 6,
+              "word": 6
+            },
+            {
+              "segment": 6,
+              "word": 7
+            },
+            {
+              "segment": 6,
+              "word": 8
+            },
+            {
+              "segment": 6,
+              "word": 9
+            }
+          ],
+          "observedCJKRange": [
+            71,
+            84
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 6,
+              "wordIndex": 0,
+              "start": 25.26,
+              "end": 25.62,
+              "word": "就是",
+              "probability": 0.9778963327407837
+            },
+            {
+              "segment": 6,
+              "wordIndex": 1,
+              "start": 25.62,
+              "end": 25.96,
+              "word": "因为",
+              "probability": 0.9907997250556946
+            },
+            {
+              "segment": 6,
+              "wordIndex": 2,
+              "start": 25.96,
+              "end": 26.28,
+              "word": "没",
+              "probability": 0.9944144487380981
+            },
+            {
+              "segment": 6,
+              "wordIndex": 3,
+              "start": 26.28,
+              "end": 26.52,
+              "word": "穿",
+              "probability": 0.9994705319404602
+            },
+            {
+              "segment": 6,
+              "wordIndex": 4,
+              "start": 26.52,
+              "end": 26.82,
+              "word": "过,",
+              "probability": 0.9982838034629822
+            },
+            {
+              "segment": 6,
+              "wordIndex": 5,
+              "start": 27.16,
+              "end": 27.5,
+              "word": "所以",
+              "probability": 0.9887718558311462
+            },
+            {
+              "segment": 6,
+              "wordIndex": 6,
+              "start": 27.5,
+              "end": 27.72,
+              "word": "要",
+              "probability": 0.972017228603363
+            },
+            {
+              "segment": 6,
+              "wordIndex": 7,
+              "start": 27.72,
+              "end": 27.98,
+              "word": "试",
+              "probability": 0.9992376863956451
+            },
+            {
+              "segment": 6,
+              "wordIndex": 8,
+              "start": 27.98,
+              "end": 28.22,
+              "word": "试",
+              "probability": 0.999229907989502
+            },
+            {
+              "segment": 6,
+              "wordIndex": 9,
+              "start": 28.22,
+              "end": 28.36,
+              "word": "啊。",
+              "probability": 0.9294241666793823
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.33999999999999986,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 5,
+            "wordIndex": 12,
+            "start": 23.74,
+            "end": 24.02,
+            "word": "吗?",
+            "probability": 0.9772986769676208
+          },
+          "followingRawWord": null,
+          "previousWordToCropGapSeconds": 1.120000000000001,
+          "cropToFollowingWordGapSeconds": null
+        },
+        "medium": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-run-37218301490/tracks/hsk2-l04-t3.json",
+          "rawFileSHA256": "728f6e6dc41fd2635b9ac4fd6c418d584a521ab62eeffd4d96526bf0b9d19271",
+          "model": null,
+          "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+          "rawStart": 25.38,
+          "rawEnd": 28.76,
+          "minimumRawProbability": 0.9930891394615173,
+          "rawWordReferences": [
+            {
+              "segment": 5,
+              "word": 0
+            },
+            {
+              "segment": 5,
+              "word": 1
+            },
+            {
+              "segment": 5,
+              "word": 2
+            },
+            {
+              "segment": 5,
+              "word": 3
+            },
+            {
+              "segment": 5,
+              "word": 4
+            },
+            {
+              "segment": 5,
+              "word": 5
+            },
+            {
+              "segment": 5,
+              "word": 6
+            },
+            {
+              "segment": 5,
+              "word": 7
+            },
+            {
+              "segment": 5,
+              "word": 8
+            },
+            {
+              "segment": 5,
+              "word": 9
+            }
+          ],
+          "observedCJKRange": [
+            71,
+            84
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 5,
+              "wordIndex": 0,
+              "start": 25.38,
+              "end": 25.8,
+              "word": "就是",
+              "probability": 0.9953181147575378
+            },
+            {
+              "segment": 5,
+              "wordIndex": 1,
+              "start": 25.8,
+              "end": 26.14,
+              "word": "因为",
+              "probability": 0.9983419179916382
+            },
+            {
+              "segment": 5,
+              "wordIndex": 2,
+              "start": 26.14,
+              "end": 26.4,
+              "word": "没",
+              "probability": 0.9966860413551331
+            },
+            {
+              "segment": 5,
+              "wordIndex": 3,
+              "start": 26.4,
+              "end": 26.64,
+              "word": "穿",
+              "probability": 0.9998591244220734
+            },
+            {
+              "segment": 5,
+              "wordIndex": 4,
+              "start": 26.64,
+              "end": 27.1,
+              "word": "过,",
+              "probability": 0.9991880059242249
+            },
+            {
+              "segment": 5,
+              "wordIndex": 5,
+              "start": 27.3,
+              "end": 27.58,
+              "word": "所以",
+              "probability": 0.9949854612350464
+            },
+            {
+              "segment": 5,
+              "wordIndex": 6,
+              "start": 27.58,
+              "end": 27.86,
+              "word": "要",
+              "probability": 0.9944425225257874
+            },
+            {
+              "segment": 5,
+              "wordIndex": 7,
+              "start": 27.86,
+              "end": 28.12,
+              "word": "试",
+              "probability": 0.9997629225254059
+            },
+            {
+              "segment": 5,
+              "wordIndex": 8,
+              "start": 28.12,
+              "end": 28.32,
+              "word": "试",
+              "probability": 0.9994882047176361
+            },
+            {
+              "segment": 5,
+              "wordIndex": 9,
+              "start": 28.32,
+              "end": 28.76,
+              "word": "啊。",
+              "probability": 0.9930891394615173
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.1999999999999993,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 4,
+            "wordIndex": 12,
+            "start": 23.84,
+            "end": 24.22,
+            "word": "吗?",
+            "probability": 0.9953511953353882
+          },
+          "followingRawWord": null,
+          "previousWordToCropGapSeconds": 0.9200000000000017,
+          "cropToFollowingWordGapSeconds": null
+        }
+      },
+      "sourcePreviousSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l04:text2:line5",
+        "zh": "我没穿过红色的，红色的好看吗？",
+        "sameLine": false
+      },
+      "sourceFollowingSentence": null,
+      "authorHolds": [],
+      "status": "pending-independent-source-and-boundary-review-and-unprompted-crop-ASR",
+      "productionApproved": false,
+      "humanListening": false,
+      "acousticBoundaryApproved": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l04:text3:line4",
+      "unit": "sentence",
+      "sourceUnit": "line",
+      "sourceText": "红色的、绿色的、黑色的，你想买哪个？",
+      "sourcePinyin": "Hóngsè de, lǜsè de, hēisè de, nǐ xiǎng mǎi nǎge?",
+      "parentLineId": "hsk2-fltrp-2026:l04:text3:line4",
+      "sourceParentChinese": "红色的、绿色的、黑色的，你想买哪个？",
+      "sourceParentPinyin": "Hóngsè de, lǜsè de, hēisè de, nǐ xiǎng mǎi nǎge?",
+      "speaker": "王一雪",
+      "sentenceIndex1": 1,
+      "sentenceCountInParent": 1,
+      "source": {
+        "pdfPage": 48,
+        "printedPage": 33,
+        "section": "课文3",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-04.json",
+      "sourceLessonSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "sourceTrack": "course-assets/hsk2/audio/4-5.mp3",
+      "trackId": "hsk2-fltrp-2026:l04:audio5",
+      "sourceSHA256": "4ab3deb04bcd1abaafbb0074fc7261f1cb95e85875166fc7b9ad9adefd50372b",
+      "sourcePCM_SHA256": "c94206559fb820e98f5c0ab7865dcc85723e14faf88c553703f332cd012db0f2",
+      "sourceSampleRange16k": [
+        166080,
+        253280
+      ],
+      "start": 10.38,
+      "end": 15.83,
+      "durationSeconds": 5.449999999999999,
+      "rawUnionSeconds": [
+        10.5,
+        15.68
+      ],
+      "maximumModelEndpointDifference": 0.3000000000000007,
+      "endpointPriorityNote": "delta>.2 retained per root scope instruction; complete raw-word range union and actual PCM reviewed independently",
+      "sampleRate": 16000,
+      "cropPCM_SHA256": "bbaba1ad17f6255d1aef2dabb1c55d448ce662889085901ad35aa7fc756b7177",
+      "cropPCMEncoding": "mono f32le source slice before s16 WAV conversion",
+      "wav": {
+        "file": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-phase6/author/crops/hsk2-fltrp-2026_l04_text3_line4.wav",
+        "sha256": "d3e7f65499ad4c42de04390ce7504b5325732cedfbf356b443cc4f4ddd3ad700",
+        "bytes": 174444,
+        "sampleEncoding": "s16le",
+        "channels": 1,
+        "frames": 87200,
+        "samplingRate": 16000,
+        "actualFullDecode": "passed",
+        "decodedF32SHA256": "f07986e4aaf9d5df69877e4199849d2b2636a1d748a36e0d011c3b2b2fc3482a"
+      },
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": -62.956,
+        "afterStart": -63.85,
+        "beforeEnd": -62.176,
+        "afterEnd": -63.351
+      },
+      "rawEvidence": {
+        "small": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/tracks/hsk2-l04-t5.json",
+          "rawFileSHA256": "424b987664b42c57a35a0b4884486054167135219525f9a4e6cde822f8b4bb61",
+          "model": null,
+          "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+          "rawStart": 10.5,
+          "rawEnd": 15.56,
+          "minimumRawProbability": 0.6045981049537659,
+          "rawWordReferences": [
+            {
+              "segment": 3,
+              "word": 0
+            },
+            {
+              "segment": 3,
+              "word": 1
+            },
+            {
+              "segment": 3,
+              "word": 2
+            },
+            {
+              "segment": 3,
+              "word": 3
+            },
+            {
+              "segment": 3,
+              "word": 4
+            },
+            {
+              "segment": 3,
+              "word": 5
+            },
+            {
+              "segment": 3,
+              "word": 6
+            },
+            {
+              "segment": 3,
+              "word": 7
+            },
+            {
+              "segment": 3,
+              "word": 8
+            },
+            {
+              "segment": 4,
+              "word": 0
+            },
+            {
+              "segment": 4,
+              "word": 1
+            },
+            {
+              "segment": 4,
+              "word": 2
+            },
+            {
+              "segment": 4,
+              "word": 3
+            }
+          ],
+          "observedCJKRange": [
+            30,
+            44
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 3,
+              "wordIndex": 0,
+              "start": 10.5,
+              "end": 11.02,
+              "word": "红",
+              "probability": 0.8920481503009796
+            },
+            {
+              "segment": 3,
+              "wordIndex": 1,
+              "start": 11.02,
+              "end": 11.26,
+              "word": "色",
+              "probability": 0.9891441464424133
+            },
+            {
+              "segment": 3,
+              "wordIndex": 2,
+              "start": 11.26,
+              "end": 11.52,
+              "word": "的,",
+              "probability": 0.9860481023788452
+            },
+            {
+              "segment": 3,
+              "wordIndex": 3,
+              "start": 11.94,
+              "end": 12.12,
+              "word": "绿",
+              "probability": 0.9830021262168884
+            },
+            {
+              "segment": 3,
+              "wordIndex": 4,
+              "start": 12.12,
+              "end": 12.42,
+              "word": "色",
+              "probability": 0.9982933402061462
+            },
+            {
+              "segment": 3,
+              "wordIndex": 5,
+              "start": 12.42,
+              "end": 12.64,
+              "word": "的,",
+              "probability": 0.998891294002533
+            },
+            {
+              "segment": 3,
+              "wordIndex": 6,
+              "start": 13.02,
+              "end": 13.18,
+              "word": "黑",
+              "probability": 0.9804988503456116
+            },
+            {
+              "segment": 3,
+              "wordIndex": 7,
+              "start": 13.18,
+              "end": 13.46,
+              "word": "色",
+              "probability": 0.9992775321006775
+            },
+            {
+              "segment": 3,
+              "wordIndex": 8,
+              "start": 13.46,
+              "end": 13.86,
+              "word": "的",
+              "probability": 0.999213695526123
+            },
+            {
+              "segment": 4,
+              "wordIndex": 0,
+              "start": 13.86,
+              "end": 14.68,
+              "word": "你想",
+              "probability": 0.6045981049537659
+            },
+            {
+              "segment": 4,
+              "wordIndex": 1,
+              "start": 14.68,
+              "end": 15.02,
+              "word": "买",
+              "probability": 0.9957575798034668
+            },
+            {
+              "segment": 4,
+              "wordIndex": 2,
+              "start": 15.02,
+              "end": 15.28,
+              "word": "哪",
+              "probability": 0.9901418089866638
+            },
+            {
+              "segment": 4,
+              "wordIndex": 3,
+              "start": 15.28,
+              "end": 15.56,
+              "word": "个?",
+              "probability": 0.9815669059753418
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.41999999999999993,
+          "crossRawSegmentCount": 2,
+          "previousRawWord": {
+            "segment": 2,
+            "wordIndex": 5,
+            "start": 9.46,
+            "end": 9.82,
+            "word": "包",
+            "probability": 0.9967671632766724
+          },
+          "followingRawWord": {
+            "segment": 5,
+            "wordIndex": 0,
+            "start": 16.46,
+            "end": 16.6,
+            "word": "绿",
+            "probability": 0.9794609844684601
+          },
+          "previousWordToCropGapSeconds": 0.5600000000000005,
+          "cropToFollowingWordGapSeconds": 0.6300000000000008
+        },
+        "medium": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-run-37218301490/tracks/hsk2-l04-t5.json",
+          "rawFileSHA256": "c3b152c97433dc1a79f1bdb252db37891907f9c2b3e70da4bba6ca49cb79ed55",
+          "model": null,
+          "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+          "rawStart": 10.8,
+          "rawEnd": 15.68,
+          "minimumRawProbability": 0.9468604326248169,
+          "rawWordReferences": [
+            {
+              "segment": 3,
+              "word": 0
+            },
+            {
+              "segment": 3,
+              "word": 1
+            },
+            {
+              "segment": 3,
+              "word": 2
+            },
+            {
+              "segment": 3,
+              "word": 3
+            },
+            {
+              "segment": 3,
+              "word": 4
+            },
+            {
+              "segment": 3,
+              "word": 5
+            },
+            {
+              "segment": 3,
+              "word": 6
+            },
+            {
+              "segment": 3,
+              "word": 7
+            },
+            {
+              "segment": 3,
+              "word": 8
+            },
+            {
+              "segment": 4,
+              "word": 0
+            },
+            {
+              "segment": 4,
+              "word": 1
+            },
+            {
+              "segment": 4,
+              "word": 2
+            },
+            {
+              "segment": 4,
+              "word": 3
+            }
+          ],
+          "observedCJKRange": [
+            30,
+            44
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 3,
+              "wordIndex": 0,
+              "start": 10.8,
+              "end": 11.18,
+              "word": "红",
+              "probability": 0.9981959760189056
+            },
+            {
+              "segment": 3,
+              "wordIndex": 1,
+              "start": 11.18,
+              "end": 11.44,
+              "word": "色",
+              "probability": 0.99898761510849
+            },
+            {
+              "segment": 3,
+              "wordIndex": 2,
+              "start": 11.44,
+              "end": 11.76,
+              "word": "的,",
+              "probability": 0.9983929991722107
+            },
+            {
+              "segment": 3,
+              "wordIndex": 3,
+              "start": 11.94,
+              "end": 12.28,
+              "word": "绿",
+              "probability": 0.9975114464759827
+            },
+            {
+              "segment": 3,
+              "wordIndex": 4,
+              "start": 12.28,
+              "end": 12.58,
+              "word": "色",
+              "probability": 0.9998534917831421
+            },
+            {
+              "segment": 3,
+              "wordIndex": 5,
+              "start": 12.58,
+              "end": 12.88,
+              "word": "的,",
+              "probability": 0.9992751479148865
+            },
+            {
+              "segment": 3,
+              "wordIndex": 6,
+              "start": 13.08,
+              "end": 13.32,
+              "word": "黑",
+              "probability": 0.9913329482078552
+            },
+            {
+              "segment": 3,
+              "wordIndex": 7,
+              "start": 13.32,
+              "end": 13.6,
+              "word": "色",
+              "probability": 0.9999035596847534
+            },
+            {
+              "segment": 3,
+              "wordIndex": 8,
+              "start": 13.6,
+              "end": 13.96,
+              "word": "的。",
+              "probability": 0.999599039554596
+            },
+            {
+              "segment": 4,
+              "wordIndex": 0,
+              "start": 14.5,
+              "end": 14.78,
+              "word": "你想",
+              "probability": 0.9468604326248169
+            },
+            {
+              "segment": 4,
+              "wordIndex": 1,
+              "start": 14.78,
+              "end": 15.1,
+              "word": "买",
+              "probability": 0.9994946718215942
+            },
+            {
+              "segment": 4,
+              "wordIndex": 2,
+              "start": 15.1,
+              "end": 15.4,
+              "word": "哪",
+              "probability": 0.9968768358230591
+            },
+            {
+              "segment": 4,
+              "wordIndex": 3,
+              "start": 15.4,
+              "end": 15.68,
+              "word": "个?",
+              "probability": 0.9966802597045898
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.5399999999999991,
+          "crossRawSegmentCount": 2,
+          "previousRawWord": {
+            "segment": 2,
+            "wordIndex": 5,
+            "start": 9.62,
+            "end": 9.94,
+            "word": "包。",
+            "probability": 0.999895453453064
+          },
+          "followingRawWord": {
+            "segment": 5,
+            "wordIndex": 0,
+            "start": 16.44,
+            "end": 16.7,
+            "word": "绿",
+            "probability": 0.9915967583656311
+          },
+          "previousWordToCropGapSeconds": 0.4400000000000013,
+          "cropToFollowingWordGapSeconds": 0.6100000000000012
+        }
+      },
+      "sourcePreviousSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l04:text3:line3",
+        "zh": "这么多漂亮的书包！",
+        "sameLine": false
+      },
+      "sourceFollowingSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l04:text3:line5",
+        "zh": "绿色的吧。",
+        "sameLine": false
+      },
+      "authorHolds": [],
+      "status": "pending-independent-source-and-boundary-review-and-unprompted-crop-ASR",
+      "productionApproved": false,
+      "humanListening": false,
+      "acousticBoundaryApproved": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text2:line6",
+      "unit": "sentence",
+      "sourceUnit": "line",
+      "sourceText": "你们太客气了，还拿这么多礼物来！",
+      "sourcePinyin": "Nǐmen tài kèqi le, hái ná zhème duō lǐwù lái!",
+      "parentLineId": "hsk2-fltrp-2026:l05:text2:line6",
+      "sourceParentChinese": "你们太客气了，还拿这么多礼物来！",
+      "sourceParentPinyin": "Nǐmen tài kèqi le, hái ná zhème duō lǐwù lái!",
+      "speaker": "刘爷爷",
+      "sentenceIndex1": 1,
+      "sentenceCountInParent": 1,
+      "source": {
+        "pdfPage": 55,
+        "printedPage": 40,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-05.json",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "sourceTrack": "course-assets/hsk2/audio/5-3.mp3",
+      "trackId": "hsk2-fltrp-2026:l05:audio3",
+      "sourceSHA256": "7692432ee007f962b2e0d8a76642a0ad69e2696125f74b3572e1e287e249dcbd",
+      "sourcePCM_SHA256": "a5a433f2b95eca57609e5f752bb0aeeb52d66ebc3f46e126f62575670a9a7e95",
+      "sourceSampleRange16k": [
+        400959,
+        467040
+      ],
+      "start": 25.0599375,
+      "end": 29.19,
+      "durationSeconds": 4.130062500000001,
+      "rawUnionSeconds": [
+        25.179999999999996,
+        29.04
+      ],
+      "maximumModelEndpointDifference": 0.40000000000000213,
+      "endpointPriorityNote": "delta>.2 retained per root scope instruction; complete raw-word range union and actual PCM reviewed independently",
+      "sampleRate": 16000,
+      "cropPCM_SHA256": "699b4f0dc6b10c89e78b02e89acc0b1384fb986cc4d1ac167995fa28cd8c5859",
+      "cropPCMEncoding": "mono f32le source slice before s16 WAV conversion",
+      "wav": {
+        "file": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-phase6/author/crops/hsk2-fltrp-2026_l05_text2_line6.wav",
+        "sha256": "9f680653cf9105045d28c5ec6bdd8ca6f1ee19ab287f28b010f0a28613897b95",
+        "bytes": 132206,
+        "sampleEncoding": "s16le",
+        "channels": 1,
+        "frames": 66081,
+        "samplingRate": 16000,
+        "actualFullDecode": "passed",
+        "decodedF32SHA256": "7ef8bc5198c5953f61d7a20703325b4115498f3c752d92730307d46f2074cd71"
+      },
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": -57.83,
+        "afterStart": -60.351,
+        "beforeEnd": -79.265,
+        "afterEnd": -73.377
+      },
+      "rawEvidence": {
+        "small": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/tracks/hsk2-l05-t3.json",
+          "rawFileSHA256": "90766566adad4cc2bfd363d7fcda7abcfecb26f21908a7b472d0531b525f9a21",
+          "model": null,
+          "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+          "rawStart": 25.179999999999996,
+          "rawEnd": 28.76,
+          "minimumRawProbability": 0.9396462440490723,
+          "rawWordReferences": [
+            {
+              "segment": 11,
+              "word": 0
+            },
+            {
+              "segment": 11,
+              "word": 1
+            },
+            {
+              "segment": 11,
+              "word": 2
+            },
+            {
+              "segment": 11,
+              "word": 3
+            },
+            {
+              "segment": 11,
+              "word": 4
+            },
+            {
+              "segment": 12,
+              "word": 0
+            },
+            {
+              "segment": 12,
+              "word": 1
+            },
+            {
+              "segment": 12,
+              "word": 2
+            },
+            {
+              "segment": 12,
+              "word": 3
+            },
+            {
+              "segment": 12,
+              "word": 4
+            },
+            {
+              "segment": 12,
+              "word": 5
+            },
+            {
+              "segment": 12,
+              "word": 6
+            }
+          ],
+          "observedCJKRange": [
+            63,
+            77
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 11,
+              "wordIndex": 0,
+              "start": 25.179999999999996,
+              "end": 25.74,
+              "word": "你们",
+              "probability": 0.9958890080451965
+            },
+            {
+              "segment": 11,
+              "wordIndex": 1,
+              "start": 25.74,
+              "end": 26.1,
+              "word": "太",
+              "probability": 0.9956873059272766
+            },
+            {
+              "segment": 11,
+              "wordIndex": 2,
+              "start": 26.1,
+              "end": 26.4,
+              "word": "客",
+              "probability": 0.9968149065971375
+            },
+            {
+              "segment": 11,
+              "wordIndex": 3,
+              "start": 26.4,
+              "end": 26.6,
+              "word": "气",
+              "probability": 0.9987356066703796
+            },
+            {
+              "segment": 11,
+              "wordIndex": 4,
+              "start": 26.6,
+              "end": 27.02,
+              "word": "了",
+              "probability": 0.9716202616691589
+            },
+            {
+              "segment": 12,
+              "wordIndex": 0,
+              "start": 27.02,
+              "end": 27.44,
+              "word": "还",
+              "probability": 0.9396462440490723
+            },
+            {
+              "segment": 12,
+              "wordIndex": 1,
+              "start": 27.44,
+              "end": 27.64,
+              "word": "拿",
+              "probability": 0.9937313199043274
+            },
+            {
+              "segment": 12,
+              "wordIndex": 2,
+              "start": 27.64,
+              "end": 27.96,
+              "word": "这么",
+              "probability": 0.9880565404891968
+            },
+            {
+              "segment": 12,
+              "wordIndex": 3,
+              "start": 27.96,
+              "end": 28.18,
+              "word": "多",
+              "probability": 0.9990742206573486
+            },
+            {
+              "segment": 12,
+              "wordIndex": 4,
+              "start": 28.18,
+              "end": 28.36,
+              "word": "礼",
+              "probability": 0.9979968965053558
+            },
+            {
+              "segment": 12,
+              "wordIndex": 5,
+              "start": 28.36,
+              "end": 28.56,
+              "word": "物",
+              "probability": 0.9996826648712158
+            },
+            {
+              "segment": 12,
+              "wordIndex": 6,
+              "start": 28.56,
+              "end": 28.76,
+              "word": "来",
+              "probability": 0.9975626468658447
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.0,
+          "crossRawSegmentCount": 2,
+          "previousRawWord": {
+            "segment": 10,
+            "wordIndex": 5,
+            "start": 24.28,
+            "end": 24.58,
+            "word": "物",
+            "probability": 0.9994128942489624
+          },
+          "followingRawWord": {
+            "segment": 13,
+            "wordIndex": 0,
+            "start": 29.740000000000002,
+            "end": 30.26,
+            "word": "医",
+            "probability": 0.5643798336386681
+          },
+          "previousWordToCropGapSeconds": 0.4799375000000019,
+          "cropToFollowingWordGapSeconds": 0.5500000000000007
+        },
+        "medium": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-run-37218301490/tracks/hsk2-l05-t3.json",
+          "rawFileSHA256": "d53df4cbe25567a972fdcc9322e92e220f2a7ccca6f2cb5dd92577dbfbedfc8d",
+          "model": null,
+          "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+          "rawStart": 25.58,
+          "rawEnd": 29.04,
+          "minimumRawProbability": 0.9785144925117493,
+          "rawWordReferences": [
+            {
+              "segment": 5,
+              "word": 0
+            },
+            {
+              "segment": 5,
+              "word": 1
+            },
+            {
+              "segment": 5,
+              "word": 2
+            },
+            {
+              "segment": 5,
+              "word": 3
+            },
+            {
+              "segment": 5,
+              "word": 4
+            },
+            {
+              "segment": 5,
+              "word": 5
+            },
+            {
+              "segment": 5,
+              "word": 6
+            },
+            {
+              "segment": 5,
+              "word": 7
+            },
+            {
+              "segment": 5,
+              "word": 8
+            },
+            {
+              "segment": 5,
+              "word": 9
+            },
+            {
+              "segment": 5,
+              "word": 10
+            },
+            {
+              "segment": 5,
+              "word": 11
+            }
+          ],
+          "observedCJKRange": [
+            63,
+            77
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 5,
+              "wordIndex": 0,
+              "start": 25.58,
+              "end": 25.88,
+              "word": "你们",
+              "probability": 0.9970484375953674
+            },
+            {
+              "segment": 5,
+              "wordIndex": 1,
+              "start": 25.88,
+              "end": 26.3,
+              "word": "太",
+              "probability": 0.9993842840194702
+            },
+            {
+              "segment": 5,
+              "wordIndex": 2,
+              "start": 26.3,
+              "end": 26.6,
+              "word": "客",
+              "probability": 0.9992088675498962
+            },
+            {
+              "segment": 5,
+              "wordIndex": 3,
+              "start": 26.6,
+              "end": 26.68,
+              "word": "气",
+              "probability": 0.9998258948326111
+            },
+            {
+              "segment": 5,
+              "wordIndex": 4,
+              "start": 26.68,
+              "end": 27.12,
+              "word": "了,",
+              "probability": 0.9785144925117493
+            },
+            {
+              "segment": 5,
+              "wordIndex": 5,
+              "start": 27.26,
+              "end": 27.52,
+              "word": "还",
+              "probability": 0.9910144209861755
+            },
+            {
+              "segment": 5,
+              "wordIndex": 6,
+              "start": 27.52,
+              "end": 27.74,
+              "word": "拿",
+              "probability": 0.995151162147522
+            },
+            {
+              "segment": 5,
+              "wordIndex": 7,
+              "start": 27.74,
+              "end": 28.04,
+              "word": "这么",
+              "probability": 0.9922322034835815
+            },
+            {
+              "segment": 5,
+              "wordIndex": 8,
+              "start": 28.04,
+              "end": 28.26,
+              "word": "多",
+              "probability": 0.9986750483512878
+            },
+            {
+              "segment": 5,
+              "wordIndex": 9,
+              "start": 28.26,
+              "end": 28.52,
+              "word": "礼",
+              "probability": 0.9997952878475189
+            },
+            {
+              "segment": 5,
+              "wordIndex": 10,
+              "start": 28.52,
+              "end": 28.58,
+              "word": "物",
+              "probability": 0.9999443292617798
+            },
+            {
+              "segment": 5,
+              "wordIndex": 11,
+              "start": 28.58,
+              "end": 29.04,
+              "word": "来。",
+              "probability": 0.9978111386299133
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.14000000000000057,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 4,
+            "wordIndex": 5,
+            "start": 24.5,
+            "end": 24.84,
+            "word": "物。",
+            "probability": 0.9999465942382812
+          },
+          "followingRawWord": {
+            "segment": 6,
+            "wordIndex": 0,
+            "start": 29.759999999999998,
+            "end": 30.36,
+            "word": "医",
+            "probability": 0.9120344817638397
+          },
+          "previousWordToCropGapSeconds": 0.21993750000000034,
+          "cropToFollowingWordGapSeconds": 0.5699999999999967
+        }
+      },
+      "sourcePreviousSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l05:text2:line5",
+        "zh": "这是送你们的礼物。",
+        "sameLine": false
+      },
+      "sourceFollowingSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l05:text2:line7",
+        "zh": "一雪姐，这是给孩子们准备的礼物。",
+        "sameLine": false
+      },
+      "authorHolds": [],
+      "status": "pending-independent-source-and-boundary-review-and-unprompted-crop-ASR",
+      "productionApproved": false,
+      "humanListening": false,
+      "acousticBoundaryApproved": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l05:text3:line2",
+      "unit": "sentence",
+      "sourceUnit": "line",
+      "sourceText": "这么多好吃的，您太客气了！",
+      "sourcePinyin": "Zhème duō hǎochī de, nín tài kèqi le!",
+      "parentLineId": "hsk2-fltrp-2026:l05:text3:line2",
+      "sourceParentChinese": "这么多好吃的，您太客气了！",
+      "sourceParentPinyin": "Zhème duō hǎochī de, nín tài kèqi le!",
+      "speaker": "白家月",
+      "sentenceIndex1": 1,
+      "sentenceCountInParent": 1,
+      "source": {
+        "pdfPage": 57,
+        "printedPage": 42,
+        "section": "课文3",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-05.json",
+      "sourceLessonSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "sourceTrack": "course-assets/hsk2/audio/5-5.mp3",
+      "trackId": "hsk2-fltrp-2026:l05:audio5",
+      "sourceSHA256": "f89f260075f41cfe11a31a32e13d810292ff47882f7b2f04a7cf17fcb7abe09c",
+      "sourcePCM_SHA256": "c614019a09c289ffefad4670f53c456ed4bcc0c50944d2577df0f4da7a45defe",
+      "sourceSampleRange16k": [
+        64319,
+        121441
+      ],
+      "start": 4.0199375,
+      "end": 7.5900625,
+      "durationSeconds": 3.570125,
+      "rawUnionSeconds": [
+        4.14,
+        7.44
+      ],
+      "maximumModelEndpointDifference": 0.3600000000000003,
+      "endpointPriorityNote": "delta>.2 retained per root scope instruction; complete raw-word range union and actual PCM reviewed independently",
+      "sampleRate": 16000,
+      "cropPCM_SHA256": "e208003df264bffa309b09f593bff79b568c8ac52d93fe06ed8aad57cb10d269",
+      "cropPCMEncoding": "mono f32le source slice before s16 WAV conversion",
+      "wav": {
+        "file": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-phase6/author/crops/hsk2-fltrp-2026_l05_text3_line2.wav",
+        "sha256": "4f0ce1ab9c678309501b0bf5c33431dc4fa4835ed5dbd9d1b8c3296bf9f7e41b",
+        "bytes": 114288,
+        "sampleEncoding": "s16le",
+        "channels": 1,
+        "frames": 57122,
+        "samplingRate": 16000,
+        "actualFullDecode": "passed",
+        "decodedF32SHA256": "ada3829435b486450fc4fde6709cb3012a8ad37a5bb0a27bcf061c28c8bbce77"
+      },
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": -63.204,
+        "afterStart": -67.067,
+        "beforeEnd": -61.026,
+        "afterEnd": -65.313
+      },
+      "rawEvidence": {
+        "small": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/tracks/hsk2-l05-t5.json",
+          "rawFileSHA256": "bdc37c1d4b0d722c6eb09c04efc7cb3a65beb0b9637101b3a77beac1e2f995da",
+          "model": null,
+          "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+          "rawStart": 4.14,
+          "rawEnd": 7.08,
+          "minimumRawProbability": 0.9165928959846497,
+          "rawWordReferences": [
+            {
+              "segment": 1,
+              "word": 0
+            },
+            {
+              "segment": 1,
+              "word": 1
+            },
+            {
+              "segment": 1,
+              "word": 2
+            },
+            {
+              "segment": 1,
+              "word": 3
+            },
+            {
+              "segment": 1,
+              "word": 4
+            },
+            {
+              "segment": 1,
+              "word": 5
+            },
+            {
+              "segment": 1,
+              "word": 6
+            },
+            {
+              "segment": 1,
+              "word": 7
+            },
+            {
+              "segment": 1,
+              "word": 8
+            }
+          ],
+          "observedCJKRange": [
+            8,
+            19
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 1,
+              "wordIndex": 0,
+              "start": 4.14,
+              "end": 4.7,
+              "word": "这么",
+              "probability": 0.9552581310272217
+            },
+            {
+              "segment": 1,
+              "wordIndex": 1,
+              "start": 4.7,
+              "end": 4.92,
+              "word": "多",
+              "probability": 0.9980360865592957
+            },
+            {
+              "segment": 1,
+              "wordIndex": 2,
+              "start": 4.92,
+              "end": 5.28,
+              "word": "好吃",
+              "probability": 0.9762064218521118
+            },
+            {
+              "segment": 1,
+              "wordIndex": 3,
+              "start": 5.28,
+              "end": 5.58,
+              "word": "的,",
+              "probability": 0.989129900932312
+            },
+            {
+              "segment": 1,
+              "wordIndex": 4,
+              "start": 5.98,
+              "end": 6.12,
+              "word": "您",
+              "probability": 0.9849845170974731
+            },
+            {
+              "segment": 1,
+              "wordIndex": 5,
+              "start": 6.12,
+              "end": 6.42,
+              "word": "太",
+              "probability": 0.9840132594108582
+            },
+            {
+              "segment": 1,
+              "wordIndex": 6,
+              "start": 6.42,
+              "end": 6.7,
+              "word": "客",
+              "probability": 0.9987121820449829
+            },
+            {
+              "segment": 1,
+              "wordIndex": 7,
+              "start": 6.7,
+              "end": 6.9,
+              "word": "气",
+              "probability": 0.9986525177955627
+            },
+            {
+              "segment": 1,
+              "wordIndex": 8,
+              "start": 6.9,
+              "end": 7.08,
+              "word": "了。",
+              "probability": 0.9165928959846497
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.40000000000000036,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 0,
+            "wordIndex": 7,
+            "start": 2.94,
+            "end": 3.22,
+            "word": "吧。",
+            "probability": 0.9927281141281128
+          },
+          "followingRawWord": {
+            "segment": 2,
+            "wordIndex": 0,
+            "start": 8.18,
+            "end": 8.54,
+            "word": "都是",
+            "probability": 0.9687625765800476
+          },
+          "previousWordToCropGapSeconds": 0.7999375,
+          "cropToFollowingWordGapSeconds": 0.5899374999999996
+        },
+        "medium": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-run-37218301490/tracks/hsk2-l05-t5.json",
+          "rawFileSHA256": "884a29fda094d63f0915c8e7cfd81936fb6de9aac5c06c9b3efe0f5b3df7ffcf",
+          "model": null,
+          "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+          "rawStart": 4.5,
+          "rawEnd": 7.44,
+          "minimumRawProbability": 0.9608166813850403,
+          "rawWordReferences": [
+            {
+              "segment": 1,
+              "word": 0
+            },
+            {
+              "segment": 1,
+              "word": 1
+            },
+            {
+              "segment": 1,
+              "word": 2
+            },
+            {
+              "segment": 1,
+              "word": 3
+            },
+            {
+              "segment": 1,
+              "word": 4
+            },
+            {
+              "segment": 1,
+              "word": 5
+            },
+            {
+              "segment": 1,
+              "word": 6
+            },
+            {
+              "segment": 1,
+              "word": 7
+            },
+            {
+              "segment": 1,
+              "word": 8
+            }
+          ],
+          "observedCJKRange": [
+            10,
+            21
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 1,
+              "wordIndex": 0,
+              "start": 4.5,
+              "end": 4.76,
+              "word": "这么",
+              "probability": 0.9788953065872192
+            },
+            {
+              "segment": 1,
+              "wordIndex": 1,
+              "start": 4.76,
+              "end": 5.02,
+              "word": "多",
+              "probability": 0.9993939399719238
+            },
+            {
+              "segment": 1,
+              "wordIndex": 2,
+              "start": 5.02,
+              "end": 5.42,
+              "word": "好吃",
+              "probability": 0.985091507434845
+            },
+            {
+              "segment": 1,
+              "wordIndex": 3,
+              "start": 5.42,
+              "end": 5.88,
+              "word": "的,",
+              "probability": 0.9985195994377136
+            },
+            {
+              "segment": 1,
+              "wordIndex": 4,
+              "start": 5.98,
+              "end": 6.22,
+              "word": "您",
+              "probability": 0.9608166813850403
+            },
+            {
+              "segment": 1,
+              "wordIndex": 5,
+              "start": 6.22,
+              "end": 6.6,
+              "word": "太",
+              "probability": 0.999381422996521
+            },
+            {
+              "segment": 1,
+              "wordIndex": 6,
+              "start": 6.6,
+              "end": 6.88,
+              "word": "客",
+              "probability": 0.9993782043457031
+            },
+            {
+              "segment": 1,
+              "wordIndex": 7,
+              "start": 6.88,
+              "end": 7.0,
+              "word": "气",
+              "probability": 0.9998948574066162
+            },
+            {
+              "segment": 1,
+              "wordIndex": 8,
+              "start": 7.0,
+              "end": 7.44,
+              "word": "了。",
+              "probability": 0.9795352816581726
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.10000000000000053,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 0,
+            "wordIndex": 8,
+            "start": 3.0,
+            "end": 3.8,
+            "word": "吧。",
+            "probability": 0.9982761144638062
+          },
+          "followingRawWord": {
+            "segment": 2,
+            "wordIndex": 0,
+            "start": 8.36,
+            "end": 8.72,
+            "word": "都是",
+            "probability": 0.990404486656189
+          },
+          "previousWordToCropGapSeconds": 0.21993750000000034,
+          "cropToFollowingWordGapSeconds": 0.7699374999999993
+        }
+      },
+      "sourcePreviousSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l05:text3:line1",
+        "zh": "都12点了，我们吃饭吧。",
+        "sameLine": false
+      },
+      "sourceFollowingSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l05:text3:line3",
+        "zh": "都是我自己做的，你们多吃点儿。",
+        "sameLine": false
+      },
+      "authorHolds": [],
+      "status": "pending-independent-source-and-boundary-review-and-unprompted-crop-ASR",
+      "productionApproved": false,
+      "humanListening": false,
+      "acousticBoundaryApproved": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line3",
+      "unit": "sentence",
+      "sourceUnit": "line",
+      "sourceText": "她喜欢画画，你觉得画笔怎么样？",
+      "sourcePinyin": "Tā xǐhuan huà huà, nǐ juéde huàbǐ zěnmeyàng?",
+      "parentLineId": "hsk2-fltrp-2026:l06:text1:line3",
+      "sourceParentChinese": "她喜欢画画，你觉得画笔怎么样？",
+      "sourceParentPinyin": "Tā xǐhuan huà huà, nǐ juéde huàbǐ zěnmeyàng?",
+      "speaker": "王一雪",
+      "sentenceIndex1": 1,
+      "sentenceCountInParent": 1,
+      "source": {
+        "pdfPage": 62,
+        "printedPage": 47,
+        "section": "课文1",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-06.json",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceSHA256": "ed1e9c6c1c856d87898005be33d08fcc8977cfe2305397414a3a2d6c4363d161",
+      "sourcePCM_SHA256": "dea38b5143e594847394204a5a5ac835a37f3cb32569a1c6878708730ebd4a84",
+      "sourceSampleRange16k": [
+        170240,
+        233120
+      ],
+      "start": 10.64,
+      "end": 14.57,
+      "durationSeconds": 3.9299999999999997,
+      "rawUnionSeconds": [
+        10.76,
+        14.42
+      ],
+      "maximumModelEndpointDifference": 0.14000000000000057,
+      "endpointPriorityNote": "both raw endpoint differences <=.2s; priority evidence only",
+      "sampleRate": 16000,
+      "cropPCM_SHA256": "2994177e0728896dd61a872908c6660c06c200186f4d15e430e5b8663948dace",
+      "cropPCMEncoding": "mono f32le source slice before s16 WAV conversion",
+      "wav": {
+        "file": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-phase6/author/crops/hsk2-fltrp-2026_l06_text1_line3.wav",
+        "sha256": "861ccddcfb9e542741af9fc2cb858f8879692e1c9dbd381cdd717cf3fb4f4308",
+        "bytes": 125804,
+        "sampleEncoding": "s16le",
+        "channels": 1,
+        "frames": 62880,
+        "samplingRate": 16000,
+        "actualFullDecode": "passed",
+        "decodedF32SHA256": "fa91c2c36017696c1b71988aaf68f73f09c760ad77bd07019a7533da87b97e31"
+      },
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": -57.276,
+        "afterStart": -60.289,
+        "beforeEnd": -67.855,
+        "afterEnd": -69.465
+      },
+      "rawEvidence": {
+        "small": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/tracks/hsk2-l06-t1.json",
+          "rawFileSHA256": "523fff6044be55e2f7f16f73367d06cd1ccc95dc8d6b43dfa0e63737b3353a8d",
+          "model": null,
+          "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+          "rawStart": 10.82,
+          "rawEnd": 14.28,
+          "minimumRawProbability": 0.967173159122467,
+          "rawWordReferences": [
+            {
+              "segment": 3,
+              "word": 0
+            },
+            {
+              "segment": 3,
+              "word": 1
+            },
+            {
+              "segment": 3,
+              "word": 2
+            },
+            {
+              "segment": 3,
+              "word": 3
+            },
+            {
+              "segment": 4,
+              "word": 0
+            },
+            {
+              "segment": 4,
+              "word": 1
+            },
+            {
+              "segment": 4,
+              "word": 2
+            },
+            {
+              "segment": 4,
+              "word": 3
+            },
+            {
+              "segment": 4,
+              "word": 4
+            }
+          ],
+          "observedCJKRange": [
+            30,
+            43
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 3,
+              "wordIndex": 0,
+              "start": 10.82,
+              "end": 11.06,
+              "word": "她",
+              "probability": 0.967173159122467
+            },
+            {
+              "segment": 3,
+              "wordIndex": 1,
+              "start": 11.06,
+              "end": 11.34,
+              "word": "喜欢",
+              "probability": 0.997052788734436
+            },
+            {
+              "segment": 3,
+              "wordIndex": 2,
+              "start": 11.34,
+              "end": 11.64,
+              "word": "画",
+              "probability": 0.9947888851165771
+            },
+            {
+              "segment": 3,
+              "wordIndex": 3,
+              "start": 11.64,
+              "end": 11.88,
+              "word": "画。",
+              "probability": 0.9841713309288025
+            },
+            {
+              "segment": 4,
+              "wordIndex": 0,
+              "start": 12.72,
+              "end": 13.04,
+              "word": "你",
+              "probability": 0.9792764186859131
+            },
+            {
+              "segment": 4,
+              "wordIndex": 1,
+              "start": 13.04,
+              "end": 13.3,
+              "word": "觉得",
+              "probability": 0.9977357387542725
+            },
+            {
+              "segment": 4,
+              "wordIndex": 2,
+              "start": 13.3,
+              "end": 13.7,
+              "word": "画",
+              "probability": 0.9674563407897949
+            },
+            {
+              "segment": 4,
+              "wordIndex": 3,
+              "start": 13.7,
+              "end": 13.88,
+              "word": "笔",
+              "probability": 0.9930726289749146
+            },
+            {
+              "segment": 4,
+              "wordIndex": 4,
+              "start": 13.88,
+              "end": 14.28,
+              "word": "怎么样?",
+              "probability": 0.984969973564148
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.8399999999999999,
+          "crossRawSegmentCount": 2,
+          "previousRawWord": {
+            "segment": 2,
+            "wordIndex": 9,
+            "start": 9.18,
+            "end": 9.36,
+            "word": "呢?",
+            "probability": 0.9357191324234009
+          },
+          "followingRawWord": {
+            "segment": 5,
+            "wordIndex": 0,
+            "start": 15.96,
+            "end": 16.2,
+            "word": "就",
+            "probability": 0.9931191205978394
+          },
+          "previousWordToCropGapSeconds": 1.2800000000000011,
+          "cropToFollowingWordGapSeconds": 1.3900000000000006
+        },
+        "medium": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-run-37218301490/tracks/hsk2-l06-t1.json",
+          "rawFileSHA256": "7212994965a60d5abe62309db1289d01be6789dd45c6abac952db2d57395c090",
+          "model": null,
+          "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+          "rawStart": 10.76,
+          "rawEnd": 14.42,
+          "minimumRawProbability": 0.9552749991416931,
+          "rawWordReferences": [
+            {
+              "segment": 2,
+              "word": 0
+            },
+            {
+              "segment": 2,
+              "word": 1
+            },
+            {
+              "segment": 2,
+              "word": 2
+            },
+            {
+              "segment": 2,
+              "word": 3
+            },
+            {
+              "segment": 2,
+              "word": 4
+            },
+            {
+              "segment": 2,
+              "word": 5
+            },
+            {
+              "segment": 2,
+              "word": 6
+            },
+            {
+              "segment": 2,
+              "word": 7
+            },
+            {
+              "segment": 2,
+              "word": 8
+            }
+          ],
+          "observedCJKRange": [
+            30,
+            43
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 2,
+              "wordIndex": 0,
+              "start": 10.76,
+              "end": 11.14,
+              "word": "她",
+              "probability": 0.9951521158218384
+            },
+            {
+              "segment": 2,
+              "wordIndex": 1,
+              "start": 11.14,
+              "end": 11.5,
+              "word": "喜欢",
+              "probability": 0.9994822144508362
+            },
+            {
+              "segment": 2,
+              "wordIndex": 2,
+              "start": 11.5,
+              "end": 11.82,
+              "word": "画",
+              "probability": 0.995550274848938
+            },
+            {
+              "segment": 2,
+              "wordIndex": 3,
+              "start": 11.82,
+              "end": 12.1,
+              "word": "画,",
+              "probability": 0.9970236420631409
+            },
+            {
+              "segment": 2,
+              "wordIndex": 4,
+              "start": 12.9,
+              "end": 13.12,
+              "word": "你",
+              "probability": 0.9552749991416931
+            },
+            {
+              "segment": 2,
+              "wordIndex": 5,
+              "start": 13.12,
+              "end": 13.52,
+              "word": "觉得",
+              "probability": 0.999231219291687
+            },
+            {
+              "segment": 2,
+              "wordIndex": 6,
+              "start": 13.52,
+              "end": 13.84,
+              "word": "画",
+              "probability": 0.9785147309303284
+            },
+            {
+              "segment": 2,
+              "wordIndex": 7,
+              "start": 13.84,
+              "end": 14.0,
+              "word": "笔",
+              "probability": 0.9983683824539185
+            },
+            {
+              "segment": 2,
+              "wordIndex": 8,
+              "start": 14.0,
+              "end": 14.42,
+              "word": "怎么样?",
+              "probability": 0.9838814735412598
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.8000000000000007,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 1,
+            "wordIndex": 17,
+            "start": 9.24,
+            "end": 9.6,
+            "word": "呢?",
+            "probability": 0.9758256077766418
+          },
+          "followingRawWord": {
+            "segment": 3,
+            "wordIndex": 0,
+            "start": 15.88,
+            "end": 16.3,
+            "word": "就",
+            "probability": 0.9896101951599121
+          },
+          "previousWordToCropGapSeconds": 1.040000000000001,
+          "cropToFollowingWordGapSeconds": 1.3100000000000005
+        }
+      },
+      "sourcePreviousSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l06:text1:line2",
+        "zh": "你不说，我还真忘了。我们给她准备个什么礼物呢？",
+        "sameLine": false
+      },
+      "sourceFollowingSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l06:text1:line4",
+        "zh": "就送画笔吧！",
+        "sameLine": false
+      },
+      "authorHolds": [],
+      "status": "pending-independent-source-and-boundary-review-and-unprompted-crop-ASR",
+      "productionApproved": false,
+      "humanListening": false,
+      "acousticBoundaryApproved": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line6:sentence1",
+      "unit": "sentence",
+      "sourceUnit": "sentence",
+      "sourceText": "好的！",
+      "sourcePinyin": "Hǎo de!",
+      "parentLineId": "hsk2-fltrp-2026:l06:text1:line6",
+      "sourceParentChinese": "好的！我再给她买个大大的生日蛋糕。",
+      "sourceParentPinyin": "Hǎo de! Wǒ zài gěi tā mǎi gè dàdà de shēngrì dàngāo.",
+      "speaker": "刘明",
+      "sentenceIndex1": 1,
+      "sentenceCountInParent": 2,
+      "source": {
+        "pdfPage": 62,
+        "printedPage": 47,
+        "section": "课文1",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-06.json",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceSHA256": "ed1e9c6c1c856d87898005be33d08fcc8977cfe2305397414a3a2d6c4363d161",
+      "sourcePCM_SHA256": "dea38b5143e594847394204a5a5ac835a37f3cb32569a1c6878708730ebd4a84",
+      "sourceSampleRange16k": [
+        338879,
+        354080
+      ],
+      "start": 21.1799375,
+      "end": 22.13,
+      "durationSeconds": 0.9500624999999978,
+      "rawUnionSeconds": [
+        21.299999999999997,
+        21.98
+      ],
+      "maximumModelEndpointDifference": 0.1999999999999993,
+      "endpointPriorityNote": "both raw endpoint differences <=.2s; priority evidence only",
+      "sampleRate": 16000,
+      "cropPCM_SHA256": "7e4806d4b23520d9f05f40b2444616af88339fd4c2f547d9a294fb13c0c9f1a2",
+      "cropPCMEncoding": "mono f32le source slice before s16 WAV conversion",
+      "wav": {
+        "file": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-phase6/author/crops/hsk2-fltrp-2026_l06_text1_line6_sentence1.wav",
+        "sha256": "a6d537e15fdbd27606276c6d7f8edb2aadcafdd73db61fb2f73682289ffa898f",
+        "bytes": 30446,
+        "sampleEncoding": "s16le",
+        "channels": 1,
+        "frames": 15201,
+        "samplingRate": 16000,
+        "actualFullDecode": "passed",
+        "decodedF32SHA256": "a7a405b7f5a95542b8be4933cce0838a16759df7669e6fd07e07199546b02456"
+      },
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": -59.739,
+        "afterStart": -63.52,
+        "beforeEnd": -62.093,
+        "afterEnd": -63.112
+      },
+      "rawEvidence": {
+        "small": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/tracks/hsk2-l06-t1.json",
+          "rawFileSHA256": "523fff6044be55e2f7f16f73367d06cd1ccc95dc8d6b43dfa0e63737b3353a8d",
+          "model": null,
+          "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+          "rawStart": 21.299999999999997,
+          "rawEnd": 21.78,
+          "minimumRawProbability": 0.9566639065742493,
+          "rawWordReferences": [
+            {
+              "segment": 7,
+              "word": 0
+            }
+          ],
+          "observedCJKRange": [
+            57,
+            59
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 7,
+              "wordIndex": 0,
+              "start": 21.299999999999997,
+              "end": 21.78,
+              "word": "好的,",
+              "probability": 0.9566639065742493
+            }
+          ],
+          "minimumInternalGapSeconds": 0,
+          "maximumInternalGapSeconds": 0,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 6,
+            "wordIndex": 8,
+            "start": 19.86,
+            "end": 20.06,
+            "word": "买。",
+            "probability": 0.9980796575546265
+          },
+          "followingRawWord": {
+            "segment": 7,
+            "wordIndex": 1,
+            "start": 22.7,
+            "end": 22.84,
+            "word": "我",
+            "probability": 0.9373658895492554
+          },
+          "previousWordToCropGapSeconds": 1.1199375000000025,
+          "cropToFollowingWordGapSeconds": 0.5700000000000003
+        },
+        "medium": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-run-37218301490/tracks/hsk2-l06-t1.json",
+          "rawFileSHA256": "7212994965a60d5abe62309db1289d01be6789dd45c6abac952db2d57395c090",
+          "model": null,
+          "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+          "rawStart": 21.42,
+          "rawEnd": 21.98,
+          "minimumRawProbability": 0.9785588979721069,
+          "rawWordReferences": [
+            {
+              "segment": 5,
+              "word": 0
+            }
+          ],
+          "observedCJKRange": [
+            57,
+            59
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 5,
+              "wordIndex": 0,
+              "start": 21.42,
+              "end": 21.98,
+              "word": "好的,",
+              "probability": 0.9785588979721069
+            }
+          ],
+          "minimumInternalGapSeconds": 0,
+          "maximumInternalGapSeconds": 0,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 4,
+            "wordIndex": 8,
+            "start": 19.92,
+            "end": 20.26,
+            "word": "买。",
+            "probability": 0.9995509684085846
+          },
+          "followingRawWord": {
+            "segment": 5,
+            "wordIndex": 1,
+            "start": 22.72,
+            "end": 22.94,
+            "word": "我",
+            "probability": 0.9656789898872375
+          },
+          "previousWordToCropGapSeconds": 0.9199374999999996,
+          "cropToFollowingWordGapSeconds": 0.5899999999999999
+        }
+      },
+      "sourcePreviousSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l06:text1:line5",
+        "zh": "那我明天上午就去买。",
+        "sameLine": false
+      },
+      "sourceFollowingSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l06:text1:line6",
+        "sentenceIndex1": 2,
+        "zh": "我再给她买个大大的生日蛋糕。",
+        "sameLine": true
+      },
+      "authorHolds": [],
+      "status": "pending-independent-source-and-boundary-review-and-unprompted-crop-ASR",
+      "productionApproved": false,
+      "humanListening": false,
+      "acousticBoundaryApproved": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text1:line6:sentence2",
+      "unit": "sentence",
+      "sourceUnit": "sentence",
+      "sourceText": "我再给她买个大大的生日蛋糕。",
+      "sourcePinyin": "Wǒ zài gěi tā mǎi gè dàdà de shēngrì dàngāo.",
+      "parentLineId": "hsk2-fltrp-2026:l06:text1:line6",
+      "sourceParentChinese": "好的！我再给她买个大大的生日蛋糕。",
+      "sourceParentPinyin": "Hǎo de! Wǒ zài gěi tā mǎi gè dàdà de shēngrì dàngāo.",
+      "speaker": "刘明",
+      "sentenceIndex1": 2,
+      "sentenceCountInParent": 2,
+      "source": {
+        "pdfPage": 62,
+        "printedPage": 47,
+        "section": "课文1",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-06.json",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "sourceTrack": "course-assets/hsk2/audio/6-1.mp3",
+      "trackId": "hsk2-fltrp-2026:l06:audio1",
+      "sourceSHA256": "ed1e9c6c1c856d87898005be33d08fcc8977cfe2305397414a3a2d6c4363d161",
+      "sourcePCM_SHA256": "dea38b5143e594847394204a5a5ac835a37f3cb32569a1c6878708730ebd4a84",
+      "sourceSampleRange16k": [
+        361280,
+        414560
+      ],
+      "start": 22.58,
+      "end": 25.91,
+      "durationSeconds": 3.330000000000002,
+      "rawUnionSeconds": [
+        22.7,
+        25.76
+      ],
+      "maximumModelEndpointDifference": 0.120000000000001,
+      "endpointPriorityNote": "both raw endpoint differences <=.2s; priority evidence only",
+      "sampleRate": 16000,
+      "cropPCM_SHA256": "2ff30b1ac70d032c1e106c5be6085cb292d77050a82e6f293accb0d0ed2d3b11",
+      "cropPCMEncoding": "mono f32le source slice before s16 WAV conversion",
+      "wav": {
+        "file": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-phase6/author/crops/hsk2-fltrp-2026_l06_text1_line6_sentence2.wav",
+        "sha256": "ae62db597c28609b78e383654d53c588dc9ee9f60f3fd735628b48cdf6ea31bc",
+        "bytes": 106604,
+        "sampleEncoding": "s16le",
+        "channels": 1,
+        "frames": 53280,
+        "samplingRate": 16000,
+        "actualFullDecode": "passed",
+        "decodedF32SHA256": "1de16cad7b19da5922e0ca47c545010e39d4fcd0502db0d41d5f2d0514c90f7d"
+      },
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": -58.622,
+        "afterStart": -59.014,
+        "beforeEnd": -63.577,
+        "afterEnd": -64.373
+      },
+      "rawEvidence": {
+        "small": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/tracks/hsk2-l06-t1.json",
+          "rawFileSHA256": "523fff6044be55e2f7f16f73367d06cd1ccc95dc8d6b43dfa0e63737b3353a8d",
+          "model": null,
+          "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+          "rawStart": 22.7,
+          "rawEnd": 25.64,
+          "minimumRawProbability": 0.9373658895492554,
+          "rawWordReferences": [
+            {
+              "segment": 7,
+              "word": 1
+            },
+            {
+              "segment": 7,
+              "word": 2
+            },
+            {
+              "segment": 7,
+              "word": 3
+            },
+            {
+              "segment": 7,
+              "word": 4
+            },
+            {
+              "segment": 7,
+              "word": 5
+            },
+            {
+              "segment": 7,
+              "word": 6
+            },
+            {
+              "segment": 7,
+              "word": 7
+            },
+            {
+              "segment": 7,
+              "word": 8
+            },
+            {
+              "segment": 7,
+              "word": 9
+            },
+            {
+              "segment": 7,
+              "word": 10
+            },
+            {
+              "segment": 7,
+              "word": 11
+            },
+            {
+              "segment": 7,
+              "word": 12
+            }
+          ],
+          "observedCJKRange": [
+            59,
+            72
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 7,
+              "wordIndex": 1,
+              "start": 22.7,
+              "end": 22.84,
+              "word": "我",
+              "probability": 0.9373658895492554
+            },
+            {
+              "segment": 7,
+              "wordIndex": 2,
+              "start": 22.84,
+              "end": 23.0,
+              "word": "再",
+              "probability": 0.9973039627075195
+            },
+            {
+              "segment": 7,
+              "wordIndex": 3,
+              "start": 23.0,
+              "end": 23.16,
+              "word": "给",
+              "probability": 0.9978365302085876
+            },
+            {
+              "segment": 7,
+              "wordIndex": 4,
+              "start": 23.16,
+              "end": 23.44,
+              "word": "她",
+              "probability": 0.978126585483551
+            },
+            {
+              "segment": 7,
+              "wordIndex": 5,
+              "start": 23.44,
+              "end": 23.9,
+              "word": "买",
+              "probability": 0.9947935938835144
+            },
+            {
+              "segment": 7,
+              "wordIndex": 6,
+              "start": 23.9,
+              "end": 24.14,
+              "word": "个",
+              "probability": 0.9624468684196472
+            },
+            {
+              "segment": 7,
+              "wordIndex": 7,
+              "start": 24.14,
+              "end": 24.42,
+              "word": "大",
+              "probability": 0.9778568744659424
+            },
+            {
+              "segment": 7,
+              "wordIndex": 8,
+              "start": 24.42,
+              "end": 24.76,
+              "word": "大的",
+              "probability": 0.9380978345870972
+            },
+            {
+              "segment": 7,
+              "wordIndex": 9,
+              "start": 24.76,
+              "end": 25.06,
+              "word": "生",
+              "probability": 0.9970502853393555
+            },
+            {
+              "segment": 7,
+              "wordIndex": 10,
+              "start": 25.06,
+              "end": 25.26,
+              "word": "日",
+              "probability": 0.9999449253082275
+            },
+            {
+              "segment": 7,
+              "wordIndex": 11,
+              "start": 25.26,
+              "end": 25.42,
+              "word": "蛋",
+              "probability": 0.9963655471801758
+            },
+            {
+              "segment": 7,
+              "wordIndex": 12,
+              "start": 25.42,
+              "end": 25.64,
+              "word": "糕。",
+              "probability": 0.9998101890087128
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.0,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 7,
+            "wordIndex": 0,
+            "start": 21.299999999999997,
+            "end": 21.78,
+            "word": "好的,",
+            "probability": 0.9566639065742493
+          },
+          "followingRawWord": null,
+          "previousWordToCropGapSeconds": 0.7999999999999972,
+          "cropToFollowingWordGapSeconds": null
+        },
+        "medium": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-run-37218301490/tracks/hsk2-l06-t1.json",
+          "rawFileSHA256": "7212994965a60d5abe62309db1289d01be6789dd45c6abac952db2d57395c090",
+          "model": null,
+          "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+          "rawStart": 22.72,
+          "rawEnd": 25.76,
+          "minimumRawProbability": 0.9656789898872375,
+          "rawWordReferences": [
+            {
+              "segment": 5,
+              "word": 1
+            },
+            {
+              "segment": 5,
+              "word": 2
+            },
+            {
+              "segment": 5,
+              "word": 3
+            },
+            {
+              "segment": 5,
+              "word": 4
+            },
+            {
+              "segment": 5,
+              "word": 5
+            },
+            {
+              "segment": 5,
+              "word": 6
+            },
+            {
+              "segment": 5,
+              "word": 7
+            },
+            {
+              "segment": 5,
+              "word": 8
+            },
+            {
+              "segment": 5,
+              "word": 9
+            },
+            {
+              "segment": 5,
+              "word": 10
+            },
+            {
+              "segment": 5,
+              "word": 11
+            },
+            {
+              "segment": 5,
+              "word": 12
+            }
+          ],
+          "observedCJKRange": [
+            59,
+            72
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 5,
+              "wordIndex": 1,
+              "start": 22.72,
+              "end": 22.94,
+              "word": "我",
+              "probability": 0.9656789898872375
+            },
+            {
+              "segment": 5,
+              "wordIndex": 2,
+              "start": 22.94,
+              "end": 23.08,
+              "word": "再",
+              "probability": 0.9989888072013855
+            },
+            {
+              "segment": 5,
+              "wordIndex": 3,
+              "start": 23.08,
+              "end": 23.22,
+              "word": "给",
+              "probability": 0.9975503087043762
+            },
+            {
+              "segment": 5,
+              "wordIndex": 4,
+              "start": 23.22,
+              "end": 23.72,
+              "word": "她",
+              "probability": 0.9958944320678711
+            },
+            {
+              "segment": 5,
+              "wordIndex": 5,
+              "start": 23.72,
+              "end": 24.02,
+              "word": "买",
+              "probability": 0.9991067945957184
+            },
+            {
+              "segment": 5,
+              "wordIndex": 6,
+              "start": 24.02,
+              "end": 24.26,
+              "word": "个",
+              "probability": 0.9796550869941711
+            },
+            {
+              "segment": 5,
+              "wordIndex": 7,
+              "start": 24.26,
+              "end": 24.6,
+              "word": "大",
+              "probability": 0.9884108304977417
+            },
+            {
+              "segment": 5,
+              "wordIndex": 8,
+              "start": 24.6,
+              "end": 24.88,
+              "word": "大的",
+              "probability": 0.9835768342018127
+            },
+            {
+              "segment": 5,
+              "wordIndex": 9,
+              "start": 24.88,
+              "end": 25.14,
+              "word": "生",
+              "probability": 0.9947947859764099
+            },
+            {
+              "segment": 5,
+              "wordIndex": 10,
+              "start": 25.14,
+              "end": 25.34,
+              "word": "日",
+              "probability": 0.9996695518493652
+            },
+            {
+              "segment": 5,
+              "wordIndex": 11,
+              "start": 25.34,
+              "end": 25.6,
+              "word": "蛋",
+              "probability": 0.9991771578788757
+            },
+            {
+              "segment": 5,
+              "wordIndex": 12,
+              "start": 25.6,
+              "end": 25.76,
+              "word": "糕。",
+              "probability": 0.9998170137405396
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.0,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": {
+            "segment": 5,
+            "wordIndex": 0,
+            "start": 21.42,
+            "end": 21.98,
+            "word": "好的,",
+            "probability": 0.9785588979721069
+          },
+          "followingRawWord": null,
+          "previousWordToCropGapSeconds": 0.5999999999999979,
+          "cropToFollowingWordGapSeconds": null
+        }
+      },
+      "sourcePreviousSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l06:text1:line6",
+        "sentenceIndex1": 1,
+        "zh": "好的！",
+        "sameLine": true
+      },
+      "sourceFollowingSentence": null,
+      "authorHolds": [],
+      "status": "pending-independent-source-and-boundary-review-and-unprompted-crop-ASR",
+      "productionApproved": false,
+      "humanListening": false,
+      "acousticBoundaryApproved": false
+    },
+    {
+      "id": "hsk2-fltrp-2026:l06:text3:line1",
+      "unit": "sentence",
+      "sourceUnit": "line",
+      "sourceText": "小雪，看看今天有什么好吃的。",
+      "sourcePinyin": "Xiǎoxuě, kànkan jīntiān yǒu shénme hǎochī de.",
+      "parentLineId": "hsk2-fltrp-2026:l06:text3:line1",
+      "sourceParentChinese": "小雪，看看今天有什么好吃的。",
+      "sourceParentPinyin": "Xiǎoxuě, kànkan jīntiān yǒu shénme hǎochī de.",
+      "speaker": "刘明",
+      "sentenceIndex1": 1,
+      "sentenceCountInParent": 1,
+      "source": {
+        "pdfPage": 66,
+        "printedPage": 51,
+        "section": "课文3",
+        "provenance": "textbook"
+      },
+      "sourceLessonFile": "course-app/content/hsk2/lesson-06.json",
+      "sourceLessonSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "sourceTrack": "course-assets/hsk2/audio/6-5.mp3",
+      "trackId": "hsk2-fltrp-2026:l06:audio5",
+      "sourceSHA256": "e36e33b86b2ffce1c200b23e40fe5a37855d8925f99eb31f22e6538f79c225d5",
+      "sourcePCM_SHA256": "8b7871b1ae52110d5c48d6985b23c830a5019f36923bff8edebe08a593b131bd",
+      "sourceSampleRange16k": [
+        0,
+        78241
+      ],
+      "start": 0.0,
+      "end": 4.8900625,
+      "durationSeconds": 4.8900625,
+      "rawUnionSeconds": [
+        0.0,
+        4.74
+      ],
+      "maximumModelEndpointDifference": 0.6800000000000006,
+      "endpointPriorityNote": "delta>.2 retained per root scope instruction; complete raw-word range union and actual PCM reviewed independently",
+      "sampleRate": 16000,
+      "cropPCM_SHA256": "fc7fb52656695dc31806acb92d6710dcc9f24f777e17679ff725c7c50485a033",
+      "cropPCMEncoding": "mono f32le source slice before s16 WAV conversion",
+      "wav": {
+        "file": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-phase6/author/crops/hsk2-fltrp-2026_l06_text3_line1.wav",
+        "sha256": "3a4fbbfd703e24eac1a3f9bb1cce0c11e2b43bb70aec3037fecd506f9e7750e0",
+        "bytes": 156526,
+        "sampleEncoding": "s16le",
+        "channels": 1,
+        "frames": 78241,
+        "samplingRate": 16000,
+        "actualFullDecode": "passed",
+        "decodedF32SHA256": "d54e68d48d365e8147fb63e0b42f480f46b6a6171210297c12c7fd978d3009bc"
+      },
+      "boundaryRMSDbFS20ms": {
+        "beforeStart": null,
+        "afterStart": -240.0,
+        "beforeEnd": -63.926,
+        "afterEnd": -58.894
+      },
+      "rawEvidence": {
+        "small": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/final-run-37217540172/tracks/hsk2-l06-t5.json",
+          "rawFileSHA256": "6f46b40b3d22cff4554ebdea091e5161bb8374b1d4d0eaf3cf9f7e7fcdbe5bd6",
+          "model": null,
+          "modelRevision": "536b0662742c02347bc0e980a01041f333bce120",
+          "rawStart": 0.0,
+          "rawEnd": 4.06,
+          "minimumRawProbability": 0.7127190828323364,
+          "rawWordReferences": [
+            {
+              "segment": 0,
+              "word": 0
+            },
+            {
+              "segment": 0,
+              "word": 1
+            },
+            {
+              "segment": 0,
+              "word": 2
+            },
+            {
+              "segment": 0,
+              "word": 3
+            },
+            {
+              "segment": 0,
+              "word": 4
+            },
+            {
+              "segment": 0,
+              "word": 5
+            },
+            {
+              "segment": 0,
+              "word": 6
+            },
+            {
+              "segment": 0,
+              "word": 7
+            }
+          ],
+          "observedCJKRange": [
+            0,
+            12
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 0,
+              "wordIndex": 0,
+              "start": 0.0,
+              "end": 0.66,
+              "word": "小",
+              "probability": 0.7127190828323364
+            },
+            {
+              "segment": 0,
+              "wordIndex": 1,
+              "start": 0.66,
+              "end": 0.86,
+              "word": "雪,",
+              "probability": 0.9954469799995422
+            },
+            {
+              "segment": 0,
+              "wordIndex": 2,
+              "start": 1.64,
+              "end": 1.9,
+              "word": "看看",
+              "probability": 0.9622963666915894
+            },
+            {
+              "segment": 0,
+              "wordIndex": 3,
+              "start": 1.9,
+              "end": 2.38,
+              "word": "今天",
+              "probability": 0.9863800406455994
+            },
+            {
+              "segment": 0,
+              "wordIndex": 4,
+              "start": 2.38,
+              "end": 2.96,
+              "word": "有",
+              "probability": 0.8917828798294067
+            },
+            {
+              "segment": 0,
+              "wordIndex": 5,
+              "start": 2.96,
+              "end": 3.32,
+              "word": "什么",
+              "probability": 0.7947544455528259
+            },
+            {
+              "segment": 0,
+              "wordIndex": 6,
+              "start": 3.32,
+              "end": 3.76,
+              "word": "好吃",
+              "probability": 0.9265421628952026
+            },
+            {
+              "segment": 0,
+              "wordIndex": 7,
+              "start": 3.76,
+              "end": 4.06,
+              "word": "的。",
+              "probability": 0.9870069026947021
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.7799999999999999,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": null,
+          "followingRawWord": {
+            "segment": 1,
+            "wordIndex": 0,
+            "start": 4.900000000000001,
+            "end": 5.44,
+            "word": "长",
+            "probability": 0.571992039680481
+          },
+          "previousWordToCropGapSeconds": null,
+          "cropToFollowingWordGapSeconds": 0.009937500000001265
+        },
+        "medium": {
+          "rawFile": "course-app/docs/resume-20261004/media-closure/asr-evidence/medium-run-37218301490/tracks/hsk2-l06-t5.json",
+          "rawFileSHA256": "15b6c9a4aa5c1b59f1202ceb824b0a65c0b969f0019819331c6f564d2ca5e06f",
+          "model": null,
+          "modelRevision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+          "rawStart": 0.0,
+          "rawEnd": 4.74,
+          "minimumRawProbability": 0.6230875253677368,
+          "rawWordReferences": [
+            {
+              "segment": 0,
+              "word": 0
+            },
+            {
+              "segment": 0,
+              "word": 1
+            },
+            {
+              "segment": 0,
+              "word": 2
+            },
+            {
+              "segment": 0,
+              "word": 3
+            },
+            {
+              "segment": 0,
+              "word": 4
+            },
+            {
+              "segment": 0,
+              "word": 5
+            },
+            {
+              "segment": 0,
+              "word": 6
+            },
+            {
+              "segment": 0,
+              "word": 7
+            }
+          ],
+          "observedCJKRange": [
+            0,
+            12
+          ],
+          "selectedRawWords": [
+            {
+              "segment": 0,
+              "wordIndex": 0,
+              "start": 0.0,
+              "end": 0.76,
+              "word": "小",
+              "probability": 0.6230875253677368
+            },
+            {
+              "segment": 0,
+              "wordIndex": 1,
+              "start": 0.76,
+              "end": 1.06,
+              "word": "雪,",
+              "probability": 0.9984015822410583
+            },
+            {
+              "segment": 0,
+              "wordIndex": 2,
+              "start": 1.8,
+              "end": 2.02,
+              "word": "看看",
+              "probability": 0.9522367715835571
+            },
+            {
+              "segment": 0,
+              "wordIndex": 3,
+              "start": 2.02,
+              "end": 2.6,
+              "word": "今天",
+              "probability": 0.9961251616477966
+            },
+            {
+              "segment": 0,
+              "wordIndex": 4,
+              "start": 2.6,
+              "end": 3.18,
+              "word": "有",
+              "probability": 0.9511895179748535
+            },
+            {
+              "segment": 0,
+              "wordIndex": 5,
+              "start": 3.18,
+              "end": 3.4,
+              "word": "什么",
+              "probability": 0.7877634763717651
+            },
+            {
+              "segment": 0,
+              "wordIndex": 6,
+              "start": 3.4,
+              "end": 3.94,
+              "word": "好吃",
+              "probability": 0.9907242655754089
+            },
+            {
+              "segment": 0,
+              "wordIndex": 7,
+              "start": 3.94,
+              "end": 4.74,
+              "word": "的?",
+              "probability": 0.9916804432868958
+            }
+          ],
+          "minimumInternalGapSeconds": 0.0,
+          "maximumInternalGapSeconds": 0.74,
+          "crossRawSegmentCount": 1,
+          "previousRawWord": null,
+          "followingRawWord": {
+            "segment": 1,
+            "wordIndex": 0,
+            "start": 5.28,
+            "end": 5.62,
+            "word": "长",
+            "probability": 0.7155895233154297
+          },
+          "previousWordToCropGapSeconds": null,
+          "cropToFollowingWordGapSeconds": 0.38993750000000027
+        }
+      },
+      "sourcePreviousSentence": null,
+      "sourceFollowingSentence": {
+        "parentLineId": "hsk2-fltrp-2026:l06:text3:line2",
+        "zh": "长长的面条儿，大大的蛋糕。",
+        "sameLine": false
+      },
+      "authorHolds": [],
+      "status": "pending-independent-source-and-boundary-review-and-unprompted-crop-ASR",
+      "productionApproved": false,
+      "humanListening": false,
+      "acousticBoundaryApproved": false
+    }
+  ],
+  "productionApprovedCount": 0,
+  "humanListening": false,
+  "freshASRExecuted": false,
+  "runtimeMutated": false,
+  "summary": {
+    "newSentenceCandidates": 10,
+    "byLesson": {
+      "4": 4,
+      "5": 2,
+      "6": 4
+    },
+    "excludedTargets": 85,
+    "decodedOriginalTracks": 9,
+    "newProductionApproved": 0
+  }
+}
