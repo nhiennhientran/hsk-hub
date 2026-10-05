@@ -1,0 +1,198 @@
+name: Transfer exact tested HSK release archive
+on:
+  push:
+    branches: [work/hsk-tested-artifact-transfer-20261005]
+    paths: [.github/workflows/hsk-tested-artifact-transfer-20261005.yml]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Read exact existing artifact and verify original bytes without build or deploy
+        env:
+          GH_ARTIFACT_READ_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PYCODE'
+          import os, urllib.request, urllib.error, urllib.parse, hashlib, json
+          from pathlib import Path
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  return None
+          endpoint='https://api.github.com/repos/nhiennhientran/hsk-hub/actions/artifacts/11364813960/zip'
+          req=urllib.request.Request(endpoint,headers={'Authorization':'Bearer '+os.environ['GH_ARTIFACT_READ_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'})
+          try:
+              response=urllib.request.build_opener(NoRedirect).open(req,timeout=60)
+              raise RuntimeError('Expected artifact redirect')
+          except urllib.error.HTTPError as e:
+              if e.code not in (301,302,303,307,308):
+                  raise RuntimeError('Artifact API status '+str(e.code)) from None
+              location=e.headers['Location']
+          assert urllib.parse.urlsplit(location).scheme=='https'
+          dest=Path('artifact-transfer-out');dest.mkdir()
+          archive=Path(os.environ['RUNNER_TEMP'])/'tested-site.zip'
+          h=hashlib.sha256()
+          with urllib.request.urlopen(location,timeout=90) as stream, archive.open('wb') as f:
+              for block in iter(lambda:stream.read(1024*1024),b''):
+                  h.update(block);f.write(block)
+          expected='18e36158e3ea1726aaa3981cf361ff9d7c941477d077c237cc4b95b8bb27f539'
+          assert archive.stat().st_size==493209134 and h.hexdigest()==expected
+          records=[]
+          with archive.open('rb') as f:
+              n=0
+              while data:=f.read(29*1024*1024):
+                  name=f'tested-site.zip.part{n:02d}'
+                  (dest/name).write_bytes(data)
+                  records.append({'file':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'artifactName':f'hsk-tested-site-part-{n:02d}'})
+                  n+=1
+          assert len(records)==17
+          meta={'operation':'read-only-copy-existing-artifact-no-build-no-deploy','sourceRunId':37357340218,'sourceArtifactId':11364813960,'sourceCommit':'003cbae9fe3a8f9f085522bb66ea108d451fa52a','archive':{'bytes':archive.stat().st_size,'sha256':expected},'parts':records}
+          (dest/'transfer-metadata.json').write_text(json.dumps(meta,indent=2)+'\n')
+          print(json.dumps({'verifiedOriginalArtifact':True,'parts':len(records),'sha256':expected}))
+          PYCODE
+      - name: Retain transfer metadata
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-transfer-metadata
+          path: artifact-transfer-out/transfer-metadata.json
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 00
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-00
+          path: artifact-transfer-out/tested-site.zip.part00
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 01
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-01
+          path: artifact-transfer-out/tested-site.zip.part01
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 02
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-02
+          path: artifact-transfer-out/tested-site.zip.part02
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 03
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-03
+          path: artifact-transfer-out/tested-site.zip.part03
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 04
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-04
+          path: artifact-transfer-out/tested-site.zip.part04
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 05
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-05
+          path: artifact-transfer-out/tested-site.zip.part05
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 06
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-06
+          path: artifact-transfer-out/tested-site.zip.part06
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 07
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-07
+          path: artifact-transfer-out/tested-site.zip.part07
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 08
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-08
+          path: artifact-transfer-out/tested-site.zip.part08
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 09
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-09
+          path: artifact-transfer-out/tested-site.zip.part09
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 10
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-10
+          path: artifact-transfer-out/tested-site.zip.part10
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 11
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-11
+          path: artifact-transfer-out/tested-site.zip.part11
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 12
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-12
+          path: artifact-transfer-out/tested-site.zip.part12
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 13
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-13
+          path: artifact-transfer-out/tested-site.zip.part13
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 14
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-14
+          path: artifact-transfer-out/tested-site.zip.part14
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 15
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-15
+          path: artifact-transfer-out/tested-site.zip.part15
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain exact tested archive part 16
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-tested-site-part-16
+          path: artifact-transfer-out/tested-site.zip.part16
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
