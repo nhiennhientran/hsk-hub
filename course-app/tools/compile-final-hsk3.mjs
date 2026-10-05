@@ -46,6 +46,8 @@ for (let number = 1; number <= 18; number++) {
   assert.equal(candidate.baselineSHA256, digest(rawText));
   assert.equal(candidate.bindings.length, registered.length);
   const actual = new Map(registered.map(binding => [key(binding), binding]));
+  assert.equal(new Set(candidate.bindings.map(key)).size, candidate.bindings.length, `Duplicate candidate ref: ${nn}`);
+  assert.deepEqual(new Set(candidate.bindings.map(key)), new Set(actual.keys()), `Incomplete candidate consumer set: ${nn}`);
   const accepted = new Map(proof.acceptedBindings.map(binding => [key(binding), binding]));
   assert.equal(accepted.size, proof.acceptedBindings.length, `Duplicate accepted ref: ${nn}`);
   const required = new Set();
@@ -56,6 +58,8 @@ for (let number = 1; number <= 18; number++) {
     assert.equal(binding.zhContext, baseline.zhContext);
     assert.equal(binding.newValue, binding.value);
     assert.ok(binding.sourceAnchor, `No source disposition: ${nn} ${binding.field}`);
+    assert.ok(['directOfficial', 'terminologyDerived', 'editorial'].includes(binding.sourceAnchor.kind));
+    assert.equal(binding.sourceAnchor.zhContext, baseline.zhContext);
     const mustReview = binding.sourceAnchor.kind !== 'editorial' || binding.newValue !== binding.expectedEffectiveValue;
     if (mustReview) {
       assert.equal(binding.authorSemanticReview?.status, 'accepted-by-author', `Author did not accept: ${nn} ${binding.field}`);

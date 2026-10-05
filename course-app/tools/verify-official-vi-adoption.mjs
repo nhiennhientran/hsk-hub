@@ -28,9 +28,10 @@ for (const level of [2, 3]) {
   const manifestText = read(entry.manifestFile), reviewText = read(entry.reviewFile), manifest = JSON.parse(manifestText);
   const documents = manifest.baselineFiles.map(b => ({file: b.file, rawText: read(b.file)}));
   const registry = await validateTrustedViRegistry({courseId: config.id, parentDisplayRevision: baselineViDisplayRevision(config.id), manifestText, manifestSHA256: entry.manifestSHA256, reviewText, reviewSHA256: entry.reviewSHA256, reviewFile: entry.reviewFile, documents});
-  let changed = 0;
+  let changed = 0, registeredConsumerFields = 0;
   for (const document of documents) {
     const raw = JSON.parse(document.rawText), context = {baselineFile: document.file, sourceSHA256: sha(document.rawText)};
+    registeredConsumerFields += viBindingsForDocument(raw, document.file, config.id).length;
     const shown = /lesson-\d\d\.json$/.test(document.file) ? registry.projectLesson(raw, context) : /lexicon/.test(document.file) ? registry.projectLexicon(raw, context) : registry.projectCourseIndex(raw, context);
     const changes = manifest.changes.filter(c => c.baselineFile === document.file);
     unchangedExcept(raw, shown, new Set(changes.map(c => c.field)));
@@ -57,7 +58,8 @@ for (const level of [2, 3]) {
     for (const q of shown.listening) {assert.equal(q.options.length, 3); assert.equal(grade([q], {[q.id]: q.answer}, 1, {name: '', className: ''}).correct, 1); summary.listeningChecks++;}
   }
   assert.equal(changed, manifest.changes.length);
-  summary.courses.push({level, lessons: config.count, revisionId: registry.revisionId, changed, registeredLessonFields: registered.length, manifestSHA256: entry.manifestSHA256, reviewSHA256: entry.reviewSHA256, originalAnswerOrderAndMediaPreserved: true});
+  const lessonsWithAcceptedChanges = [...new Set(manifest.changes.filter(c => /lesson-\d\d\.json$/.test(c.baselineFile)).map(c => c.lesson))].sort((a,b) => a-b);
+  summary.courses.push({level, lessons: config.count, lessonsWithAcceptedChanges, revisionId: registry.revisionId, changed, registeredLessonFields: registered.length, registeredConsumerFields, manifestSHA256: entry.manifestSHA256, reviewSHA256: entry.reviewSHA256, originalAnswerOrderAndMediaPreserved: true});
   summary.lessons += config.count; summary.changes += changed;
 }
 const entry = json('hsk1-app/content/official-vi-registry.json').active;
@@ -77,9 +79,22 @@ const originalBook = createTextbookContent(...bookArgs, baselineRegistry), shown
 assert.equal(shownBook.lessons.length, 15);
 const seal = value => Array.isArray(value) ? value.map(seal) : value && typeof value === 'object' ? Object.fromEntries(Object.entries(value).filter(([key]) => !['vn', 'vn_title', 'place_vn', 'desc'].includes(key)).map(([key, v]) => [key, seal(v)])) : value;
 assert.deepEqual(seal(shownBook.lessons), seal(originalBook.lessons), 'HSK1 Chinese, pinyin, identity or original media changed');
-summary.courses.unshift({level: 1, lessons: 15, revisionId: registry.revisionId, changed: manifest.changes.length, registeredLessonFields: fields.length, manifestSHA256: entry.manifestSHA256, reviewSHA256: entry.reviewSHA256, originalAnswerOrderAndMediaPreserved: true});
+summary.courses.unshift({level: 1, lessons: 15, lessonsWithAcceptedChanges: [...new Set(manifest.changes.map(c => c.lesson))].sort((a,b) => a-b), revisionId: registry.revisionId, changed: manifest.changes.length, registeredLessonFields: fields.length, registeredConsumerFields: fields.length, manifestSHA256: entry.manifestSHA256, reviewSHA256: entry.reviewSHA256, originalAnswerOrderAndMediaPreserved: true});
 summary.lessons += 15; summary.changes += manifest.changes.length;
 assert.equal(summary.lessons, 48);
+summary.registeredConsumerFields = summary.courses.reduce((total, course) => total + course.registeredConsumerFields, 0);
+if (process.argv.includes('--require-complete-course-adoption')) {
+  for (const course of summary.courses) assert.deepEqual(course.lessonsWithAcceptedChanges, Array.from({length:course.lessons}, (_,i) => i+1), `HSK${course.level} still has only representative lessons adopted`);
+  assert.equal(summary.registeredConsumerFields, 27735);
+  const receipt = json('course-app/docs/release-ready-20261005/hsk3-compiled-scope.json');
+  const course = summary.courses.find(course => course.level === 3);
+  assert.equal(receipt.sourceCounterpartsComplete, true);
+  assert.equal(receipt.manifestSHA256, course.manifestSHA256);
+  assert.equal(receipt.reviewSHA256, course.reviewSHA256);
+  assert.deepEqual(receipt.lessons.map(lesson => lesson.number), Array.from({length:18}, (_,i) => i+1));
+  assert.equal(receipt.allRegisteredLessonFields, 9644);
+  summary.completeCourseAdoptionRequired = true;
+}
 const output = resolve(repo, 'course-app/.repro-output/release-ready/adoption.json');
 mkdirSync(resolve(output, '..'), {recursive: true}); writeFileSync(output, JSON.stringify(summary, null, 2) + '\n');
 console.log(JSON.stringify(summary));

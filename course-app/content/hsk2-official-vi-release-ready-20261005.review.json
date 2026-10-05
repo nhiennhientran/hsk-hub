@@ -1,8 +1,8 @@
 {
-  "reviewer": "/root",
+  "reviewer": "/root/release_candidate_acceptance",
   "author": "/root/vi_hsk2_author",
   "status": "accepted",
-  "proposalSHA256": "39a8db373ca2e2b8b725334e6747ad1498a68c1c66cc05e4c48179d3dd578edc",
+  "proposalSHA256": "09faa126d3bbf1f01218a387cb86211339e8fd09f1afbd75bafd44f07b8ae69f",
   "acceptedChangeIds": [
     "hsk2-official-vi-release-ready-20261005:6ed1ae33b027f56f",
     "hsk2-official-vi-release-ready-20261005:d7848ad2f1f6bd4e",
@@ -15646,20 +15646,28 @@
       "officialViText": "Em đi rửa tay đã. À đúng rồi, mình đi Tây An du lịch, anh thấy thế nào?"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l03:pdf038:/texts/2/lines/4/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        38
-      ],
-      "printedPages": [
-        24
-      ],
-      "section": "/texts/2/lines/4/vi",
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l03:p024:text3-line05",
       "zhContext": "为什么想去西安？",
-      "officialZhText": "为什么想去西安？",
-      "officialViText": "Vì sao muốn đi Tây An?"
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l03:p024:text3-line05",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            38
+          ],
+          "printedPages": [
+            24
+          ],
+          "section": "text3-line05",
+          "officialZhText": "为什么想去西安？",
+          "officialViText": "Vì sao em muốn đi Tây An?"
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Omitting contextual em retains the question why go to Xi An; it is not an exact printed quotation."
     },
     {
       "kind": "directOfficial",
@@ -15920,13 +15928,12 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l03:grammar1:/grammar/0/explanation/vi",
+      "sourceId": "hsk2-official-vi:l03:p021:grammar1-rule1",
       "zhContext": "一些动词或者形容词用在动词后面，表示动作的结果。否定形式是在动词前面加“没（有）”，同时要去掉“了”。疑问形式有三种，分别是：（1）在句尾加“了吗”；（2）在句尾加“（了）没有”；（3）动词+没+动词+结果补语。",
       "notVerbatim": true,
-      "rationale": "正式语法正文直引与网站保留的有效教学说明分别标注；完整绑定是二者组合，不冒称整串正式原文。 实际说明去掉无随附例句的印刷“Ví dụ:”过渡词；sourceAnchor保留完整印刷原文，原examples另行显示。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi:l03:pdf035:/grammar/0/explanation/vi",
+          "sourceId": "hsk2-official-vi:l03:p021:grammar1-rule1",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -15935,10 +15942,41 @@
           "printedPages": [
             21
           ],
-          "officialZhText": "一些动词或者形容词用在动词后面，表示动作的结果。否定形式是在动词前面加“没（有）”，同时要去掉“了”。疑问形式有三种，分别是：（1）在句尾加“了吗”；（2）在句尾加“（了）没有”；（3）动词+没+动词+结果补语。",
-          "officialViText": "Có một số động từ hoặc tính từ có thể đặt sau động từ để biểu thị kết quả của hành động. Ví dụ:\nHình thức phủ định là thêm “没（有）” vào trước động từ và bỏ “了” ở cuối câu. Ví dụ:\nHình thức nghi vấn có 3 loại: (1) thêm “了吗” vào cuối câu; (2) thêm “（了）没有” vào cuối câu; (3) động từ + 没 + động từ + bổ ngữ kết quả. Ví dụ:"
+          "section": "grammar1-rule1",
+          "officialZhText": "一些动词或者形容词用在动词后面，表示动作的结果。例如：",
+          "officialViText": "Có một số động từ hoặc tính từ có thể đặt sau động từ để biểu thị kết quả của hành động. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l03:p021:grammar1-rule2",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            35
+          ],
+          "printedPages": [
+            21
+          ],
+          "section": "grammar1-rule2",
+          "officialZhText": "否定形式是在动词前面加“没（有）”，同时要去掉“了”。例如：",
+          "officialViText": "Hình thức phủ định là thêm “没（有）” vào trước động từ và bỏ “了” ở cuối câu. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l03:p021:grammar1-rule3",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            35
+          ],
+          "printedPages": [
+            21
+          ],
+          "section": "grammar1-rule3",
+          "officialZhText": "疑问形式有三种，分别是：（1）在句尾加“了吗”；（2）在句尾加“（了）没有”；（3）动词+没+动词+结果补语。例如：",
+          "officialViText": "Hình thức nghi vấn có 3 loại: (1) thêm “了吗” vào cuối câu; (2) thêm “（了）没有” vào cuối câu; (3) động từ + 没 + động từ + bổ ngữ kết quả. Ví dụ:"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-notes",
+      "rationale": "Merge the actual printed grammar paragraphs in order, omit repeated example labels, and retain explicitly labelled website supplementary notes. The whole displayed leaf is not verbatim."
     },
     {
       "kind": "directOfficial",
@@ -15960,13 +15998,12 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l03:grammar2:/grammar/1/explanation/vi",
+      "sourceId": "hsk2-official-vi:l03:p023:grammar2-rule1",
       "zhContext": "动作性比较强、能重复或持续的动词重叠使用，表示时间短、数量少、尝试等意思，语气比较轻松、随意，多用于口语。单音节动词的重叠形式是“A（一）A”，双音节动词的重叠形式是“ABAB”，离合词的重叠形式是“AAB”。",
       "notVerbatim": true,
-      "rationale": "正式语法正文直引与网站保留的有效教学说明分别标注；完整绑定是二者组合，不冒称整串正式原文。 实际说明去掉无随附例句的印刷“Ví dụ:”过渡词；sourceAnchor保留完整印刷原文，原examples另行显示。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi:l03:pdf036:/grammar/1/explanation/vi",
+          "sourceId": "hsk2-official-vi:l03:p023:grammar2-rule1",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -15977,10 +16014,29 @@
             22,
             23
           ],
-          "officialZhText": "动作性比较强、能重复或持续的动词重叠使用，表示时间短、数量少、尝试等意思，语气比较轻松、随意，多用于口语。单音节动词的重叠形式是“A（一）A”，双音节动词的重叠形式是“ABAB”，离合词的重叠形式是“AAB”。",
-          "officialViText": "Những động từ có tính hành động mạnh, có thể lặp đi lặp lại hoặc duy trì thì đều có thể lặp lại. Động từ lặp lại thường dùng trong văn nói, mang ngữ khí nhẹ nhàng, tự nhiên, biểu thị thời gian ngắn, số lượng ít hoặc mang sắc thái thử nghiệm...\nHình thức lặp lại của động từ đơn âm tiết là “A（一）A”; hình thức lặp lại của động từ song âm tiết là “ABAB”; hình thức lặp lại của từ li hợp là “AAB”. Ví dụ:"
+          "section": "grammar2-rule1",
+          "officialZhText": "动作性比较强、能重复或持续的动词重叠使用，表示时间短、数量少、尝试等意思，语气比较轻松、随意，多用于口语。",
+          "officialViText": "Những động từ có tính hành động mạnh, có thể lặp đi lặp lại hoặc duy trì thì đều có thể lặp lại. Động từ lặp lại thường dùng trong văn nói, mang ngữ khí nhẹ nhàng, tự nhiên, biểu thị thời gian ngắn, số lượng ít hoặc mang sắc thái thử nghiệm..."
+        },
+        {
+          "sourceId": "hsk2-official-vi:l03:p023:grammar2-rule2",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            36,
+            37
+          ],
+          "printedPages": [
+            22,
+            23
+          ],
+          "section": "grammar2-rule2",
+          "officialZhText": "单音节动词的重叠形式是“A（一）A”，双音节动词的重叠形式是“ABAB”，离合词的重叠形式是“AAB”。例如：",
+          "officialViText": "Hình thức lặp lại của động từ đơn âm tiết là “A（一）A”; hình thức lặp lại của động từ song âm tiết là “ABAB”; hình thức lặp lại của từ li hợp là “AAB”. Ví dụ:"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-notes",
+      "rationale": "Merge the actual printed grammar paragraphs in order, omit repeated example labels, and retain explicitly labelled website supplementary notes. The whole displayed leaf is not verbatim."
     },
     {
       "kind": "directOfficial",
@@ -16251,13 +16307,12 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l03:section6:/sections/5/blocks/2/vi",
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-can-understand-use",
       "zhContext": "我理解并会用。理解 □　会用 □",
       "notVerbatim": true,
-      "rationale": "学习小结复合页元素采用正式同页标签；组合格式及越译例句是编辑派生。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi:l03:pdf042:summary-label:我理解并会用",
+          "sourceId": "hsk2-official-vi:l03:p028:learning-summary-can-understand-use",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -16266,11 +16321,12 @@
           "printedPages": [
             28
           ],
+          "section": "learning-summary-can-understand-use",
           "officialZhText": "我理解并会用",
-          "officialViText": "Tôi đã hiểu và biết dùng"
+          "officialViText": "Tôi đã hiểu và đã biết dùng"
         },
         {
-          "sourceId": "hsk2-official-vi:l03:pdf042:summary-label:理解",
+          "sourceId": "hsk2-official-vi:l03:p028:learning-summary-understand-column",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -16279,11 +16335,12 @@
           "printedPages": [
             28
           ],
+          "section": "learning-summary-understand-column",
           "officialZhText": "理解",
           "officialViText": "Đã hiểu"
         },
         {
-          "sourceId": "hsk2-official-vi:l03:pdf042:summary-label:会用",
+          "sourceId": "hsk2-official-vi:l03:p028:learning-summary-use-column",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -16292,10 +16349,13 @@
           "printedPages": [
             28
           ],
+          "section": "learning-summary-use-column",
           "officialZhText": "会用",
           "officialViText": "Đã biết dùng"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-guidance",
+      "rationale": "The heading and two check columns are composed; the second da marker is omitted without changing the two self-check dimensions."
     },
     {
       "kind": "terminologyDerived",
@@ -16534,19 +16594,19 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l03:pdf036:/activities/5/note/vi",
+      "sourceId": "hsk2-official-vi:l03:p021:text2-listen-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        36
+        35
       ],
       "printedPages": [
-        22
+        21
       ],
-      "section": "/activities/5/note/vi",
-      "zhContext": "听两遍对话，选择正确答案。",
+      "section": "text2-listen-instruction",
       "officialZhText": "听两遍对话，选择正确答案。",
-      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng."
+      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "zhContext": "听两遍对话，选择正确答案。"
     },
     {
       "kind": "editorial",
@@ -16601,19 +16661,19 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l03:pdf038:/activities/7/note/vi",
+      "sourceId": "hsk2-official-vi:l03:p023:text3-listen-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        38
+        37
       ],
       "printedPages": [
-        24
+        23
       ],
-      "section": "/activities/7/note/vi",
-      "zhContext": "听两遍对话，选择正确答案。",
+      "section": "text3-listen-instruction",
       "officialZhText": "听两遍对话，选择正确答案。",
-      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng."
+      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "zhContext": "听两遍对话，选择正确答案。"
     },
     {
       "kind": "editorial",
@@ -16730,20 +16790,52 @@
       "officialViText": "Những từ ngữ tôi đã nhớ và biết sử dụng"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l03:pdf041:/activities/26/matrix/rows/1/prompt/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        41
-      ],
-      "printedPages": [
-        27
-      ],
-      "section": "/activities/26/matrix/rows/1/prompt/vi",
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l03:p027:learning-summary-words-not-known",
       "zhContext": "我还没记住的词语",
-      "officialZhText": "我还没记住的词语",
-      "officialViText": "Những từ ngữ tôi còn chưa nhớ"
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l03:p027:learning-summary-words-not-known",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            41
+          ],
+          "printedPages": [
+            27
+          ],
+          "section": "learning-summary-words-not-known",
+          "officialZhText": "我还没记住的词语",
+          "officialViText": "Những từ ngữ tôi chưa nhớ"
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Added con makes the Chinese hai/still explicit; printed source is shorter."
+    },
+    {
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l03:p027:learning-summary-words-not-known",
+      "zhContext": "我还没记住的词语",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l03:p027:learning-summary-words-not-known",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            41
+          ],
+          "printedPages": [
+            27
+          ],
+          "section": "learning-summary-words-not-known",
+          "officialZhText": "我还没记住的词语",
+          "officialViText": "Những từ ngữ tôi chưa nhớ"
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Same retained self-check wording as field prompt; not an exact quotation."
     },
     {
       "kind": "terminologyDerived",
@@ -17332,20 +17424,28 @@
       "officialViText": "Có thể nghe hiểu và sử dụng được cách thức miêu tả đối tượng được đề cập đến."
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l04:pdf043:/objectives/2/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        43
-      ],
-      "printedPages": [
-        29
-      ],
-      "section": "/objectives/2/vi",
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l04:p029:goal3",
       "zhContext": "掌握因果复句“因为……，所以……”的用法，能表达事情的原因和结果。",
-      "officialZhText": "掌握因果复句“因为……，所以……”的用法，能表达事情的原因和结果。",
-      "officialViText": "Nắm vững cách dùng của câu ghép nhân quả “因为……，所以……” để diễn đạt nguyên nhân và kết quả của sự việc."
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l04:p029:goal3",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            43
+          ],
+          "printedPages": [
+            29
+          ],
+          "section": "goal3",
+          "officialZhText": "掌握因果复句“因为……，所以……”的用法，能表达事情的原因和结果。",
+          "officialViText": "Nắm vững cách dùng của câu ghép nhân quả “因为……，所以……”, để diễn đạt nguyên nhân và kết quả của sự việc."
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Omitting one comma does not change the causal-clause learning goal."
     },
     {
       "kind": "directOfficial",
@@ -17556,20 +17656,28 @@
       "officialViText": "Mẹ ơi, con muốn mua chiếc quần màu trắng này."
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l04:pdf046:/texts/1/lines/1/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        46
-      ],
-      "printedPages": [
-        32
-      ],
-      "section": "/texts/1/lines/1/vi",
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l04:p032:text2-line02",
       "zhContext": "你有很多白色的衣服，为什么还买白色的？",
-      "officialZhText": "你有很多白色的衣服，为什么还买白色的？",
-      "officialViText": "Con có rất nhiều quần áo màu trắng rồi, sao vẫn còn mua màu trắng nữa?"
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l04:p032:text2-line02",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            46
+          ],
+          "printedPages": [
+            32
+          ],
+          "section": "text2-line02",
+          "officialZhText": "你有很多白色的衣服，为什么还买白色的？",
+          "officialViText": "Con đã có rất nhiều quần áo màu trắng rồi, sao vẫn còn mua màu trắng nữa?"
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Da is redundant with roi in this already-have question; clothing colour and question meaning are unchanged."
     },
     {
       "kind": "directOfficial",
@@ -17957,13 +18065,12 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l04:grammar1:/grammar/0/explanation/vi",
+      "sourceId": "hsk2-official-vi:l04:p031:grammar1-rule1",
       "zhContext": "动态助词“过”用在动词后面，表示动作曾在过去发生，但未持续到现在。否定形式是在动词前面加“没（有）”。疑问形式有三种：句尾加“吗”；句尾加“没有”；动词+没+动词+过。",
       "notVerbatim": true,
-      "rationale": "正式语法正文直引与网站保留的有效教学说明分别标注；完整绑定是二者组合，不冒称整串正式原文。 实际说明去掉无随附例句的印刷“Ví dụ:”过渡词；sourceAnchor保留完整印刷原文，原examples另行显示。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi:l04:pdf045:/grammar/0/explanation/vi",
+          "sourceId": "hsk2-official-vi:l04:p031:grammar1-rule1",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -17972,10 +18079,27 @@
           "printedPages": [
             31
           ],
-          "officialZhText": "动态助词“过”用在动词后面，表示动作曾在过去发生，但未持续到现在。否定形式是在动词前面加“没（有）”。疑问形式有三种：句尾加“吗”；句尾加“没有”；动词+没+动词+过。",
-          "officialViText": "Trợ từ động thái “过” đặt sau động từ, biểu thị động tác đã từng xảy ra trong quá khứ, không kéo dài đến hiện tại. Cấu trúc cơ bản: Chủ ngữ + động từ + 过 + tân ngữ. Hình thức phủ định là thêm “没（有）” trước động từ. Ví dụ:\nHình thức nghi vấn có 3 dạng: (1) cuối câu thêm “吗”; (2) cuối câu thêm “没有”; (3) động từ + 没 + động từ + 过. Ví dụ:"
+          "section": "grammar1-rule1",
+          "officialZhText": "动态助词“过”用在动词后面，表示动作曾在过去发生，但未持续到现在。基本结构：主语+动词+过+宾语。否定形式是在动词前面加“没（有）”。例如：",
+          "officialViText": "Trợ từ động thái “过” đặt sau động từ, biểu thị động tác đã từng xảy ra trong quá khứ, không kéo dài đến hiện tại. Cấu trúc cơ bản: Chủ ngữ + động từ + 过 + tân ngữ. Hình thức phủ định là thêm “没（有）” trước động từ. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l04:p031:grammar1-rule2",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            45
+          ],
+          "printedPages": [
+            31
+          ],
+          "section": "grammar1-rule2",
+          "officialZhText": "疑问形式有三种：（1）在句尾加“吗”；（2）在句尾加“没有”；（3）动词+没+动词+过。例如：",
+          "officialViText": "Hình thức nghi vấn có 3 dạng: (1) cuối câu thêm “吗”; (2) cuối câu thêm “没有”; (3) động từ + 没 + động từ + 过. Ví dụ:"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-notes",
+      "rationale": "Merge the actual printed grammar paragraphs in order, omit repeated example labels, and retain explicitly labelled website supplementary notes. The whole displayed leaf is not verbatim."
     },
     {
       "kind": "directOfficial",
@@ -18088,13 +18212,26 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l04:section2:/sections/1/title/vi",
+      "sourceId": "hsk2-official-vi:l04:p035:integrated-header",
       "zhContext": "综合练习：描述图片",
       "notVerbatim": true,
-      "rationale": "层级标题采用该页正式栏目名称；冒号后的复合主题按本叶中文编辑组合，不把组合字符串冒称直引。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi:l04:pdf050:/sections/1/title/vi:book-heading",
+          "sourceId": "hsk2-official-vi:l04:p035:integrated-header",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            49
+          ],
+          "printedPages": [
+            35
+          ],
+          "section": "integrated-header",
+          "officialZhText": "综合练习",
+          "officialViText": "Bài tập tổng hợp"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l04:p036:integrated2-instruction",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -18103,10 +18240,13 @@
           "printedPages": [
             36
           ],
-          "officialZhText": "综合练习",
-          "officialViText": "Bài tập tổng hợp"
+          "section": "integrated2-instruction",
+          "officialZhText": "用本课新学的词语和语言点描述图片。",
+          "officialViText": "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài để miêu tả các hình ảnh sau."
         }
-      ]
+      ],
+      "sourceRelation": "composed-heading-and-instruction",
+      "rationale": "The integrated-exercise heading and picture-description label are composed from separate printed units."
     },
     {
       "kind": "directOfficial",
@@ -18205,6 +18345,30 @@
       "rationale": "本叶没有完整印刷越文；按完整中文姓名、任务角色及已采用栏目用语校准编辑显示。"
     },
     {
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l04:p029:goal3",
+      "zhContext": "掌握因果复句“因为……，所以……”的用法，能表达事情的原因和结果。",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l04:p029:goal3",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            43
+          ],
+          "printedPages": [
+            29
+          ],
+          "section": "goal3",
+          "officialZhText": "掌握因果复句“因为……，所以……”的用法，能表达事情的原因和结果。",
+          "officialViText": "Nắm vững cách dùng của câu ghép nhân quả “因为……，所以……”, để diễn đạt nguyên nhân và kết quả của sự việc."
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Same punctuation paraphrase as the objective; exact goal source is retained separately."
+    },
+    {
       "kind": "editorial",
       "sourceId": "editorial:hsk2-fltrp-2026:l04:activity:text1-listening:/activities/3/title/vi",
       "zhContext": "课文1：听后练习",
@@ -18280,19 +18444,19 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l04:pdf046:/activities/5/note/vi",
+      "sourceId": "hsk2-official-vi:l04:p031:text2-listen-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        46
+        45
       ],
       "printedPages": [
-        32
+        31
       ],
-      "section": "/activities/5/note/vi",
-      "zhContext": "听两遍对话，选择正确答案。",
+      "section": "text2-listen-instruction",
       "officialZhText": "听两遍对话，选择正确答案。",
-      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng."
+      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "zhContext": "听两遍对话，选择正确答案。"
     },
     {
       "kind": "editorial",
@@ -18340,19 +18504,19 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l04:pdf048:/activities/7/note/vi",
+      "sourceId": "hsk2-official-vi:l04:p033:text3-listen-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        48
+        47
       ],
       "printedPages": [
-        34
+        33
       ],
-      "section": "/activities/7/note/vi",
-      "zhContext": "听两遍对话，选择正确答案。",
+      "section": "text3-listen-instruction",
       "officialZhText": "听两遍对话，选择正确答案。",
-      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng."
+      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "zhContext": "听两遍对话，选择正确答案。"
     },
     {
       "kind": "editorial",
@@ -18864,20 +19028,28 @@
       "officialViText": "Nhiều món ngon quá ạ. Chị chu đáo quá!"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l05:pdf056:/texts/2/lines/2/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        56
-      ],
-      "printedPages": [
-        42
-      ],
-      "section": "/texts/2/lines/2/vi",
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l05:p042:text3-line03",
       "zhContext": "都是我自己做的，你们多吃点儿。",
-      "officialZhText": "都是我自己做的，你们多吃点儿。",
-      "officialViText": "Tất cả những món này đều là chị nấu đấy. Các em ăn nhiều một chút nhé."
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l05:p042:text3-line03",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            56
+          ],
+          "printedPages": [
+            42
+          ],
+          "section": "text3-line03",
+          "officialZhText": "都是我自己做的，你们多吃点儿。",
+          "officialViText": "Tất cả những món này đều là chị nấu cả đấy. Các em ăn nhiều một chút nhé."
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Removing redundant ca preserves tat ca/deu and the speaker/cooking invitation."
     },
     {
       "kind": "directOfficial",
@@ -19153,13 +19325,12 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l05:grammar1:/grammar/0/explanation/vi",
+      "sourceId": "hsk2-official-vi:l05:p039:grammar1-rule1",
       "zhContext": "简单趋向补语的基本结构是“动词+来/去”。其中，“来”表示动作朝着说话人的方向进行，“去”表示动作背离说话人的方向进行，最常用的动词有“上、下、进、出、回、过”。另外，“叫、开、买、拿、请、送、要、找、走”等动词也可以用在这个结构中。“起来”是一种比较特殊的用法，它表示起床或动作向上的趋向。",
       "notVerbatim": true,
-      "rationale": "正式语法正文直引与网站保留的有效教学说明分别标注；完整绑定是二者组合，不冒称整串正式原文。 实际说明去掉无随附例句的印刷“Ví dụ:”过渡词；sourceAnchor保留完整印刷原文，原examples另行显示。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi:l05:pdf053:/grammar/0/explanation/vi",
+          "sourceId": "hsk2-official-vi:l05:p039:grammar1-rule1",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -19168,20 +19339,64 @@
           "printedPages": [
             39
           ],
-          "officialZhText": "简单趋向补语的基本结构是“动词+来/去”。其中，“来”表示动作朝着说话人的方向进行，“去”表示动作背离说话人的方向进行，最常用的动词有“上、下、进、出、回、过”。另外，“叫、开、买、拿、请、送、要、找、走”等动词也可以用在这个结构中。“起来”是一种比较特殊的用法，它表示起床或动作向上的趋向。",
-          "officialViText": "Cấu trúc cơ bản của bổ ngữ xu hướng đơn là “động từ + 来/去”. Trong đó, “来” biểu thị hành động di chuyển hướng về phía người nói; “去” biểu thị hành động di chuyển xa phía người nói, các động từ được dùng phổ biến nhất bao gồm “上”, “下”, “进”, “出”, “回” và “过”. Ví dụ:\nNgoài ra, các động từ như “叫”, “开”, “买”, “拿”, “请”, “送”, “要”, “找” và “走” cũng có thể được dùng trong cấu trúc này. Ví dụ:\n“起来” là một cách dùng đặc biệt trong tiếng Trung Quốc, có thể mang nghĩa “thức dậy (ra khỏi giường)” hoặc biểu thị sự chuyển động theo hướng đi lên. Ví dụ:"
+          "section": "grammar1-rule1",
+          "officialZhText": "简单趋向补语的基本结构是“动词+来/去”。其中，“来”表示动作朝着说话人的方向进行，“去”表示动作背离说话人的方向进行，最常用的动词有“上、下、进、出（chū, ra）、回、过”。例如：",
+          "officialViText": "Cấu trúc cơ bản của bổ ngữ xu hướng đơn là “động từ + 来/去”. Trong đó, “来” biểu thị hành động di chuyển hướng về phía người nói, “去” biểu thị hành động di chuyển xa phía người nói, các động từ được dùng phổ biến nhất bao gồm “上”, “下”, “进”, “出”, “回” và “过”. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l05:p039:grammar1-rule1-chu-annotation",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            53
+          ],
+          "printedPages": [
+            39
+          ],
+          "section": "grammar1-rule1-chu-annotation",
+          "officialZhText": "出",
+          "officialViText": "ra"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l05:p039:grammar1-rule2",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            53
+          ],
+          "printedPages": [
+            39
+          ],
+          "section": "grammar1-rule2",
+          "officialZhText": "另外，“叫、开、买、拿、请、送、要、找、走”等动词也可以用在这个结构中。例如：",
+          "officialViText": "Ngoài ra, các động từ như “叫”, “开”, “买”, “拿”, “请”, “送”, “要”, “找” và “走” cũng có thể được dùng trong cấu trúc này. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l05:p039:grammar1-rule3",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            53
+          ],
+          "printedPages": [
+            39
+          ],
+          "section": "grammar1-rule3",
+          "officialZhText": "“起来（qǐlái, đứng lên, đứng dậy, thức dậy）”是一种比较特殊的用法，它表示起床或动作向上的趋向。例如：",
+          "officialViText": "“起来” là một cách dùng đặc biệt trong tiếng Trung Quốc, có thể mang nghĩa “thức dậy (ra khỏi giường)” hoặc biểu thị sự chuyển động theo hướng đi lên. Ví dụ:"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-notes",
+      "rationale": "Merge the actual printed grammar paragraphs in order, omit repeated example labels, and retain explicitly labelled website supplementary notes. The whole displayed leaf is not verbatim."
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l05:grammar2:/grammar/1/explanation/vi",
+      "sourceId": "hsk2-official-vi:l05:p041:grammar2-rule1",
       "zhContext": "动词既带简单趋向补语，又带宾语时，如果宾语是地点名词，放在“来/去”前面；宾语是事物名词，放在“来/去”前后都可以。另外，动词“开、买、拿、请、送、要、找、走”等也可以加上“上、下、进、出、回、过”等简单趋向补语。这种情况下，动词一般带宾语，并且放在“上、下、进、出、回、过”后面。",
       "notVerbatim": true,
-      "rationale": "正式语法正文直引与网站保留的有效教学说明分别标注；完整绑定是二者组合，不冒称整串正式原文。 实际说明去掉无随附例句的印刷“Ví dụ:”过渡词；sourceAnchor保留完整印刷原文，原examples另行显示。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi:l05:pdf055:/grammar/1/explanation/vi",
+          "sourceId": "hsk2-official-vi:l05:p041:grammar2-rule1",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -19190,10 +19405,27 @@
           "printedPages": [
             41
           ],
-          "officialZhText": "动词既带简单趋向补语，又带宾语时，如果宾语是地点名词，放在“来/去”前面；宾语是事物名词，放在“来/去”前后都可以。另外，动词“开、买、拿、请、送、要、找、走”等也可以加上“上、下、进、出、回、过”等简单趋向补语。这种情况下，动词一般带宾语，并且放在“上、下、进、出、回、过”后面。",
-          "officialViText": "Khi một động từ vừa mang bổ ngữ xu hướng vừa mang tân ngữ, nếu tân ngữ là danh từ chỉ địa điểm thì đặt trước “来/去”; nếu tân ngữ là danh từ chỉ sự vật thì có thể đặt trước hoặc sau “来/去”. Ví dụ:\nNgoài ra, các động từ như “开”, “买”, “拿”, “请”, “送”, “要”, “找”, “走”... cũng có thể kết hợp với các bổ ngữ xu hướng như “上”, “下”, “进”, “出”, “回”, “过”. Ví dụ:"
+          "section": "grammar2-rule1",
+          "officialZhText": "动词既带简单趋向补语，又带宾语时，如果宾语是地点名词，放在“来/去”前面；宾语是事物名词，放在“来/去”前后都可以。例如：",
+          "officialViText": "Khi một động từ vừa mang bổ ngữ xu hướng vừa mang tân ngữ, nếu tân ngữ là danh từ chỉ địa điểm thì đặt trước “来/去”; nếu tân ngữ là danh từ chỉ sự vật thì có thể đặt trước hoặc sau “来/去”. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l05:p041:grammar2-rule2",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            55
+          ],
+          "printedPages": [
+            41
+          ],
+          "section": "grammar2-rule2",
+          "officialZhText": "另外，动词“开、买、拿、请、送、要、找、走”等也可以加上“上、下、进、出、回、过”等简单趋向补语。这种情况下，动词一般带宾语，并且放在“上、下、进、出、回、过”后面。例如：",
+          "officialViText": "Ngoài ra, các động từ như “开”, “买”, “拿”, “请”, “送”, “要”, “找”, “走”... cũng có thể kết hợp với các bổ ngữ xu hướng như “上”, “下”, “进”, “出”, “回”, “过”. Ví dụ:"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-notes",
+      "rationale": "Merge the actual printed grammar paragraphs in order, omit repeated example labels, and retain explicitly labelled website supplementary notes. The whole displayed leaf is not verbatim."
     },
     {
       "kind": "directOfficial",
@@ -19606,19 +19838,19 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l05:pdf056:/activities/8/note/vi",
+      "sourceId": "hsk2-official-vi:l05:p043:text3-role-read-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        56
+        57
       ],
       "printedPages": [
-        42
+        43
       ],
-      "section": "/activities/8/note/vi",
-      "zhContext": "分角色朗读对话，读后回答问题。",
+      "section": "text3-role-read-instruction",
       "officialZhText": "分角色朗读对话，读后回答问题。",
-      "officialViText": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi."
+      "officialViText": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi.",
+      "zhContext": "分角色朗读对话，读后回答问题。"
     },
     {
       "kind": "editorial",
@@ -19680,19 +19912,19 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l05:pdf057:/activities/10/note/vi",
+      "sourceId": "hsk2-official-vi:l05:p044:text4-read-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        57
+        58
       ],
       "printedPages": [
-        43
+        44
       ],
-      "section": "/activities/10/note/vi",
-      "zhContext": "朗读课文，读后选择正确答案。",
+      "section": "text4-read-instruction",
       "officialZhText": "朗读课文，读后选择正确答案。",
-      "officialViText": "Đọc to bài khoá, sau đó lựa chọn đáp án đúng."
+      "officialViText": "Đọc to bài khoá, sau đó lựa chọn đáp án đúng.",
+      "zhContext": "朗读课文，读后选择正确答案。"
     },
     {
       "kind": "editorial",
@@ -20719,13 +20951,12 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l06:section6:/sections/5/blocks/3/vi",
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-understand-use",
       "zhContext": "我理解并会用。每一项分别勾选“理解”和“会用”。",
       "notVerbatim": true,
-      "rationale": "学习小结复合页元素采用正式同页标签；组合格式及越译例句是编辑派生。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi:l06:pdf069:summary-label:我理解并会用",
+          "sourceId": "hsk2-official-vi:l06:p055:learning-summary-understand-use",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -20734,11 +20965,12 @@
           "printedPages": [
             55
           ],
+          "section": "learning-summary-understand-use",
           "officialZhText": "我理解并会用",
-          "officialViText": "Tôi đã hiểu và biết dùng"
+          "officialViText": "Tôi đã hiểu và đã biết dùng"
         },
         {
-          "sourceId": "hsk2-official-vi:l06:pdf069:summary-label:理解",
+          "sourceId": "hsk2-official-vi:l06:p055:learning-summary-column-understand",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -20747,11 +20979,12 @@
           "printedPages": [
             55
           ],
+          "section": "learning-summary-column-understand",
           "officialZhText": "理解",
           "officialViText": "Đã hiểu"
         },
         {
-          "sourceId": "hsk2-official-vi:l06:pdf069:summary-label:会用",
+          "sourceId": "hsk2-official-vi:l06:p055:learning-summary-column-use",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -20760,10 +20993,13 @@
           "printedPages": [
             55
           ],
+          "section": "learning-summary-column-use",
           "officialZhText": "会用",
           "officialViText": "Đã biết dùng"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-guidance",
+      "rationale": "The self-check heading is followed by website guidance for separate understand/use checks; label this as composition with editorial guidance."
     },
     {
       "kind": "terminologyDerived",
@@ -21089,19 +21325,19 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l06:pdf063:/activities/5/note/vi",
+      "sourceId": "hsk2-official-vi:l06:p048:text2-listen-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        63
+        62
       ],
       "printedPages": [
-        49
+        48
       ],
-      "section": "/activities/5/note/vi",
-      "zhContext": "听两遍对话，选择正确答案。",
+      "section": "text2-listen-instruction",
       "officialZhText": "听两遍对话，选择正确答案。",
-      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng."
+      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "zhContext": "听两遍对话，选择正确答案。"
     },
     {
       "kind": "editorial",
@@ -21165,19 +21401,19 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l06:pdf064:/activities/8/note/vi",
+      "sourceId": "hsk2-official-vi:l06:p051:text3-role-read-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        64
+        65
       ],
       "printedPages": [
-        50
+        51
       ],
-      "section": "/activities/8/note/vi",
-      "zhContext": "分角色朗读对话，读后回答问题。",
+      "section": "text3-role-read-instruction",
       "officialZhText": "分角色朗读对话，读后回答问题。",
-      "officialViText": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi."
+      "officialViText": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi.",
+      "zhContext": "分角色朗读对话，读后回答问题。"
     },
     {
       "kind": "editorial",
@@ -21218,19 +21454,19 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l06:pdf066:/activities/10/note/vi",
+      "sourceId": "hsk2-official-vi:l06:p053:text4-read-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        66
+        67
       ],
       "printedPages": [
-        52
+        53
       ],
-      "section": "/activities/10/note/vi",
-      "zhContext": "朗读课文，读后选择正确答案。",
+      "section": "text4-read-instruction",
       "officialZhText": "朗读课文，读后选择正确答案。",
-      "officialViText": "Đọc to bài khoá, sau đó lựa chọn đáp án đúng."
+      "officialViText": "Đọc to bài khoá, sau đó lựa chọn đáp án đúng.",
+      "zhContext": "朗读课文，读后选择正确答案。"
     },
     {
       "kind": "terminologyDerived",
@@ -21419,36 +21655,52 @@
       "officialViText": "Những từ ngữ tôi đã nhớ và biết sử dụng"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l06:pdf069:/activities/26/matrix/rows/1/prompt/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        69
-      ],
-      "printedPages": [
-        55
-      ],
-      "section": "/activities/26/matrix/rows/1/prompt/vi",
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-unremembered",
       "zhContext": "我还没记住的词语",
-      "officialZhText": "我还没记住的词语",
-      "officialViText": "Những từ ngữ tôi còn chưa nhớ"
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l06:p055:learning-summary-unremembered",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            69
+          ],
+          "printedPages": [
+            55
+          ],
+          "section": "learning-summary-unremembered",
+          "officialZhText": "我还没记住的词语",
+          "officialViText": "Những từ ngữ tôi chưa nhớ"
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Con makes Chinese hai/still explicit, retaining the same not-yet-remembered self-check."
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l06:pdf069:/activities/27/title/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        69
-      ],
-      "printedPages": [
-        55
-      ],
-      "section": "/activities/27/title/vi",
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-understand-use",
       "zhContext": "我理解并会用",
-      "officialZhText": "我理解并会用",
-      "officialViText": "Tôi đã hiểu và biết dùng"
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l06:p055:learning-summary-understand-use",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            69
+          ],
+          "printedPages": [
+            55
+          ],
+          "section": "learning-summary-understand-use",
+          "officialZhText": "我理解并会用",
+          "officialViText": "Tôi đã hiểu và đã biết dùng"
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "One second da marker is omitted; the understand/use meaning is retained."
     },
     {
       "kind": "terminologyDerived",
@@ -22653,13 +22905,12 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l07:grammar2:/grammar/1/explanation/vi",
+      "sourceId": "hsk2-official-vi:l07:p060:grammar2-explanation1",
       "zhContext": "状态补语是在动词后边补充说明动作进行的状态的。基本结构：动词+得+形容词性短语。否定形式是在形容词的前面加“不”。疑问形式有三种：（1）在句尾加“吗”；（2）动词+得+形容词+不+形容词；（3）动词+得+怎么样。",
       "notVerbatim": true,
-      "rationale": "正式语法正文直引与网站保留的有效教学说明分别标注；完整绑定是二者组合，不冒称整串正式原文。 实际说明去掉无随附例句的印刷“Ví dụ:”过渡词；sourceAnchor保留完整印刷原文，原examples另行显示。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi:l07:pdf073:/grammar/1/explanation/vi",
+          "sourceId": "hsk2-official-vi:l07:p060:grammar2-explanation1",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -22670,10 +22921,27 @@
             59,
             60
           ],
-          "officialZhText": "状态补语是在动词后边补充说明动作进行的状态的。基本结构：动词+得+形容词性短语。否定形式是在形容词的前面加“不”。疑问形式有三种：（1）在句尾加“吗”；（2）动词+得+形容词+不+形容词；（3）动词+得+怎么样。",
-          "officialViText": "Bổ ngữ trạng thái đứng sau động từ, để nói rõ thêm trạng thái của hành động. Cấu trúc cơ bản: động từ + 得 + cụm tính từ. Hình thức phủ định là thêm “不” trước tính từ. Ví dụ:\nHình thức nghi vấn có 3 dạng: (1) thêm “吗” ở cuối câu; (2) động từ + 得 + tính từ + 不 + tính từ; (3) động từ + 得 + 怎么样. Ví dụ:"
+          "section": "grammar2-explanation1",
+          "officialZhText": "状态补语是在动词后边补充说明动作进行的状态的。基本结构：动词+得+形容词性短语。否定形式是在形容词的前面加“不”。例如：",
+          "officialViText": "Bổ ngữ trạng thái đứng sau động từ, để nói rõ thêm trạng thái của hành động. Cấu trúc cơ bản: động từ + 得 + cụm tính từ. Hình thức phủ định là thêm “不” trước tính từ. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l07:p060:grammar2-explanation2",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            74
+          ],
+          "printedPages": [
+            60
+          ],
+          "section": "grammar2-explanation2",
+          "officialZhText": "疑问形式有三种：（1）在句尾加“吗”；（2）动词+得+形容词+不+形容词；（3）动词+得+怎么样。例如：",
+          "officialViText": "Hình thức nghi vấn có 3 dạng: (1) thêm “吗” ở cuối câu; (2) động từ + 得 + tính từ + 不 + tính từ; (3) động từ + 得 + 怎么样. Ví dụ:"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-notes",
+      "rationale": "Merge the actual printed grammar paragraphs in order, omit repeated example labels, and retain explicitly labelled website supplementary notes. The whole displayed leaf is not verbatim."
     },
     {
       "kind": "terminologyDerived",
@@ -22721,13 +22989,26 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l07:section2:/sections/1/title/vi",
+      "sourceId": "hsk2-official-vi:l07:p062:exercises-header",
       "zhContext": "综合练习：看图说话",
       "notVerbatim": true,
-      "rationale": "层级标题采用该页正式栏目名称；冒号后的复合主题按本叶中文编辑组合，不把组合字符串冒称直引。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi:l07:pdf077:/sections/1/title/vi:book-heading",
+          "sourceId": "hsk2-official-vi:l07:p062:exercises-header",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            76
+          ],
+          "printedPages": [
+            62
+          ],
+          "section": "exercises-header",
+          "officialZhText": "综合练习",
+          "officialViText": "Bài tập tổng hợp"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l07:p063:describe-picture-instruction",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -22736,10 +23017,13 @@
           "printedPages": [
             63
           ],
-          "officialZhText": "综合练习",
-          "officialViText": "Bài tập tổng hợp"
+          "section": "describe-picture-instruction",
+          "officialZhText": "用本课新学的词语和语言点描述图片。",
+          "officialViText": "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài để miêu tả các hình ảnh sau."
         }
-      ]
+      ],
+      "sourceRelation": "composed-heading-and-instruction",
+      "rationale": "The integrated-exercise heading and speaking-from-pictures label abbreviate the printed picture-description instruction."
     },
     {
       "kind": "directOfficial",
@@ -22930,19 +23214,19 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l07:pdf073:/activities/5/note/vi",
+      "sourceId": "hsk2-official-vi:l07:p058:text2-listen-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        73
+        72
       ],
       "printedPages": [
-        59
+        58
       ],
-      "section": "/activities/5/note/vi",
-      "zhContext": "听两遍对话，选择正确答案。",
+      "section": "text2-listen-instruction",
       "officialZhText": "听两遍对话，选择正确答案。",
-      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng."
+      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "zhContext": "听两遍对话，选择正确答案。"
     },
     {
       "kind": "editorial",
@@ -22990,19 +23274,19 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi:l07:pdf075:/activities/7/note/vi",
+      "sourceId": "hsk2-official-vi:l07:p060:text3-listen-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        75
+        74
       ],
       "printedPages": [
-        61
+        60
       ],
-      "section": "/activities/7/note/vi",
-      "zhContext": "听两遍对话，选择正确答案。",
+      "section": "text3-listen-instruction",
       "officialZhText": "听两遍对话，选择正确答案。",
-      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng."
+      "officialViText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "zhContext": "听两遍对话，选择正确答案。"
     },
     {
       "kind": "editorial",
@@ -23194,20 +23478,28 @@
       "zhContext": "掌握转折复句“虽然……，但是……”的用法，能表达语义的转折。"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l08:p64:/objectives/3/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        78
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l08:p064:goal4",
+      "zhContext": "了解中国人对一些数字的喜好。",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l08:p064:goal4",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            78
+          ],
+          "printedPages": [
+            64
+          ],
+          "section": "goal4",
+          "officialZhText": "了解中国人对一些数字的喜好。",
+          "officialViText": "Hiểu về sở thích của người Trung Quốc với một số con số nhất định."
+        }
       ],
-      "printedPages": [
-        64
-      ],
-      "section": "目标",
-      "officialViText": "Hiểu về sở thích của người Trung Quốc với một số số nhất định.",
-      "officialZhText": "了解中国人对一些数字的喜好。",
-      "zhContext": "了解中国人对一些数字的喜好。"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Dropping classifier con before so retains the meaning some particular numbers; not an exact quotation."
     },
     {
       "kind": "directOfficial",
@@ -23357,34 +23649,34 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l08:p67:/texts/1/title/vi",
+      "sourceId": "hsk2-official-vi:l08:p066:text2-header",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        81
+        80
       ],
       "printedPages": [
-        67
+        66
       ],
-      "section": "课文",
-      "officialViText": "Bài khoá 2",
+      "section": "text2-header",
       "officialZhText": "课文2",
+      "officialViText": "Bài khoá 2",
       "zhContext": "课文2"
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l08:p67:/texts/1/context/vi",
+      "sourceId": "hsk2-official-vi:l08:p066:text2-context",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        81
+        80
       ],
       "printedPages": [
-        67
+        66
       ],
-      "section": "课文情境",
-      "officialViText": "Vương Nhất Tuyết và Lưu Minh đang trò chuyện ở bên ngoài rạp chiếu phim.",
+      "section": "text2-context",
       "officialZhText": "在电影院外面，王一雪和刘明在聊天儿。",
+      "officialViText": "Vương Nhất Tuyết và Lưu Minh đang trò chuyện ở bên ngoài rạp chiếu phim.",
       "zhContext": "在电影院外面，王一雪和刘明在聊天儿。"
     },
     {
@@ -23485,34 +23777,34 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l08:p69:/texts/2/title/vi",
+      "sourceId": "hsk2-official-vi:l08:p068:text3-header",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        83
+        82
       ],
       "printedPages": [
-        69
+        68
       ],
-      "section": "课文",
-      "officialViText": "Bài khoá 3",
+      "section": "text3-header",
       "officialZhText": "课文3",
+      "officialViText": "Bài khoá 3",
       "zhContext": "课文3"
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l08:p69:/texts/2/context/vi",
+      "sourceId": "hsk2-official-vi:l08:p068:text3-context",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        83
+        82
       ],
       "printedPages": [
-        69
+        68
       ],
-      "section": "课文情境",
-      "officialViText": "Vương Nhất Tuyết và Lưu Minh đang gọi món trong nhà hàng.",
+      "section": "text3-context",
       "officialZhText": "在饭馆，王一雪和刘明在点菜。",
+      "officialViText": "Vương Nhất Tuyết và Lưu Minh đang gọi món trong nhà hàng.",
       "zhContext": "在饭馆，王一雪和刘明在点菜。"
     },
     {
@@ -23532,20 +23824,28 @@
       "zhContext": "您好！就要这几个菜吧，谢谢！"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l08:p69:/texts/2/lines/2/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        83
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l08:p069:text3-line03",
+      "zhContext": "你想想，今天是几月几号？",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l08:p069:text3-line03",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            83
+          ],
+          "printedPages": [
+            69
+          ],
+          "section": "text3-line03",
+          "officialZhText": "你想想，今天是几月几号？",
+          "officialViText": "Em thử nghĩ xem, hôm nay là ngày mấy tháng mấy vậy?"
+        }
       ],
-      "printedPages": [
-        69
-      ],
-      "section": "课文正式越文对译",
-      "officialViText": "Em thử nghĩ xem, hôm nay là ngày mấy, tháng mấy vậy?",
-      "officialZhText": "你想想，今天是几月几号？",
-      "zhContext": "你想想，今天是几月几号？"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "A comma between day and month is an editorial punctuation change."
     },
     {
       "kind": "directOfficial",
@@ -23772,21 +24072,28 @@
       "zhContext": "但是"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l08:p69:/vocabulary/13/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        83
-      ],
-      "printedPages": [
-        69
-      ],
-      "section": "生词词框",
-      "officialViText": "đặt, chi tiêu",
-      "officialZhText": "花",
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l08:p069:word11",
       "zhContext": "花",
-      "correctionRationale": "本课花为花费钱的动词，不是订购/放置；正式đặt与中文词义不符，保留正确chi tiêu。"
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l08:p069:word11",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            83
+          ],
+          "printedPages": [
+            69
+          ],
+          "section": "word11",
+          "officialZhText": "花",
+          "officialViText": "tiêu, chi tiêu"
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Chi tieu is one of the printed synonyms for the expenditure verb hua; noun flower sense is not substituted."
     },
     {
       "kind": "directOfficial",
@@ -23873,18 +24180,18 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l08:p70:/grammar/2/title/vi",
+      "sourceId": "hsk2-official-vi:l08:p069:grammar3-title",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        84
+        83
       ],
       "printedPages": [
-        70
+        69
       ],
-      "section": "语法标题",
-      "officialViText": "Câu ghép chuyển ý “虽然……，但是……”",
+      "section": "grammar3-title",
       "officialZhText": "转折复句“虽然……，但是……”",
+      "officialViText": "Câu ghép chuyển ý “虽然……，但是……”",
       "zhContext": "转折复句“虽然……，但是……”"
     },
     {
@@ -24057,25 +24364,28 @@
       "recurrenceRationale": "同课实际字段中文与已视读正式源对应字段完全一致，逐个保留注册消费者。"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l08:p64:/objectives/3/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        78
-      ],
-      "printedPages": [
-        64
-      ],
-      "section": "目标",
-      "officialViText": "Hiểu về sở thích của người Trung Quốc với một số số nhất định.",
-      "officialZhText": "了解中国人对一些数字的喜好。",
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l08:p064:goal4",
       "zhContext": "了解中国人对一些数字的喜好。",
-      "exactRecurrenceOf": {
-        "baselineFile": "course-app/content/hsk2/lesson-08.json",
-        "field": "/objectives/3/vi"
-      },
-      "recurrenceRationale": "同课实际字段中文与已视读正式源对应字段完全一致，逐个保留注册消费者。"
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l08:p064:goal4",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            78
+          ],
+          "printedPages": [
+            64
+          ],
+          "section": "goal4",
+          "officialZhText": "了解中国人对一些数字的喜好。",
+          "officialViText": "Hiểu về sở thích của người Trung Quốc với một số con số nhất định."
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Same retained numeral-preference wording as the objective; source quote remains full."
     },
     {
       "kind": "directOfficial",
@@ -24876,13 +25186,12 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l09:grammar1:/grammar/0/explanation/vi",
+      "sourceId": "hsk2-official-vi:l09:p075:grammar1-explanation1",
       "zhContext": "本课学习用“没有”表示比较的比较句，意思是“不如”“不及”。基本结构：A没有B+形容词或形容词性短语。形容词前面可以加“这么”或者“那么”，表示B的程度更高。“没有”的肯定形式“有”常用在表示比较的疑问句中。",
       "notVerbatim": true,
-      "rationale": "正式语法规则与网站补充双标，防止覆盖时丢掉既有教学说明。 实际说明去掉无随附例句的印刷“Ví dụ:”过渡词；sourceAnchor保留完整印刷原文，原examples另行显示。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi-l09:p75:/grammar/0/explanation/vi",
+          "sourceId": "hsk2-official-vi:l09:p075:grammar1-explanation1",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -24891,11 +25200,27 @@
           "printedPages": [
             75
           ],
-          "officialZhText": "本课学习用“没有”表示比较的比较句，意思是“不如”“不及”。基本结构：A没有B+形容词或形容词性短语。形容词前面可以加“这么”或者“那么”，表示B的程度更高。“没有”的肯定形式“有”常用在表示比较的疑问句中。",
-          "officialViText": "Trong bài này, chúng ta học câu so sánh dùng “没有” để biểu thị ý nghĩa “không bằng” hoặc “kém hơn”. Cấu trúc cơ bản: A 没有 B + tính từ/cụm tính từ. Trước tính từ có thể thêm “这么” hoặc “那么” để chỉ mức độ cao hơn của B. Ví dụ: Hình thức khẳng định của “没有” là “有”, thường được dùng trong câu nghi vấn so sánh. Ví dụ:",
-          "section": "语法说明"
+          "section": "grammar1-explanation1",
+          "officialZhText": "本课学习用“没有”表示比较的比较句，意思是“不如”“不及”。基本结构：A没有B+形容词或形容词性短语。形容词前面可以加“这么”或者“那么”，表示B的程度更高。例如：",
+          "officialViText": "Trong bài này, chúng ta học câu so sánh dùng “没有” để biểu thị ý nghĩa “không bằng” hoặc “kém hơn”. Cấu trúc cơ bản: A 没有 B + tính từ/cụm tính từ. Trước tính từ có thể thêm “这么” hoặc “那么” để chỉ mức độ cao hơn của B. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l09:p075:grammar1-explanation2",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            89
+          ],
+          "printedPages": [
+            75
+          ],
+          "section": "grammar1-explanation2",
+          "officialZhText": "“没有”的肯定形式“有”常用在表示比较的疑问句中。例如：",
+          "officialViText": "Hình thức khẳng định của “没有” là “有”, thường được dùng trong câu nghi vấn so sánh. Ví dụ:"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-notes",
+      "rationale": "Merge the actual printed grammar paragraphs in order, omit repeated example labels, and retain explicitly labelled website supplementary notes. The whole displayed leaf is not verbatim."
     },
     {
       "kind": "editorial",
@@ -24973,28 +25298,83 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l09:grammar3:/grammar/2/explanation/vi",
+      "sourceId": "hsk2-official-vi:l09:p078:grammar3-explanation1",
       "zhContext": "表示时间段的词语用在动词后面构成时量补语，说明动作或状态持续的时间。基本结构：主语+动词+时量补语。动词后带宾语时，宾语的位置有两种情况：（1）宾语是事物名词，一般在时量补语后；（2）宾语是称呼或代词，一般在时量补语前。动词带宾语时，也可以重复动词后再加时量补语。动词是离合词时，需要重复动词性语素，再加时量补语。动词后有“了”，句尾还有语气助词“了”，表示动作仍在进行。",
       "notVerbatim": true,
-      "rationale": "正式语法规则与网站补充双标，防止覆盖时丢掉既有教学说明。 实际说明去掉无随附例句的印刷“Ví dụ:”过渡词；sourceAnchor保留完整印刷原文，原examples另行显示。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi-l09:p78:/grammar/2/explanation/vi",
+          "sourceId": "hsk2-official-vi:l09:p078:grammar3-explanation1",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
-            92,
+            92
+          ],
+          "printedPages": [
+            78
+          ],
+          "section": "grammar3-explanation1",
+          "officialZhText": "表示时间段的词语用在动词后面构成时量补语，说明动作或状态持续的时间。基本结构：主语+动词+时量补语。例如：",
+          "officialViText": "Từ ngữ biểu thị khoảng thời gian được đặt sau động từ làm bổ ngữ thời lượng để miêu tả thời gian mà hành động hoặc trạng thái diễn ra. Cấu trúc cơ bản: Chủ ngữ + động từ + bổ ngữ thời lượng. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l09:p079:grammar3-explanation2",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
             93
           ],
           "printedPages": [
-            78,
             79
           ],
-          "officialZhText": "表示时间段的词语用在动词后面构成时量补语，说明动作或状态持续的时间。基本结构：主语+动词+时量补语。动词后带宾语时，宾语的位置有两种情况：（1）宾语是事物名词，一般在时量补语后；（2）宾语是称呼或代词，一般在时量补语前。动词带宾语时，也可以重复动词后再加时量补语。动词是离合词时，需要重复动词性语素，再加时量补语。动词后有“了”，句尾还有语气助词“了”，表示动作仍在进行。",
-          "officialViText": "Từ ngữ biểu thị khoảng thời gian được đặt sau động từ làm bổ ngữ thời lượng để miêu tả thời gian mà hành động hoặc trạng thái diễn ra. Cấu trúc cơ bản: Chủ ngữ + động từ + bổ ngữ thời lượng. Ví dụ: Khi sau động từ có tân ngữ, vị trí của tân ngữ có thể có hai trường hợp: (1) nếu tân ngữ là danh từ chỉ sự vật, thường đặt sau bổ ngữ thời lượng; (2) nếu tân ngữ là từ xưng hô hoặc đại từ, thường đặt trước bổ ngữ thời lượng. Ví dụ: Khi sau động từ có tân ngữ, động từ có thể được lặp lại trước khi thêm bổ ngữ thời lượng. Ví dụ: Khi động từ là từ li hợp, từ tố mang tính chất động từ cần được lặp lại trước khi thêm bổ ngữ thời lượng. Ví dụ: Khi sau động từ có “了” và cuối câu lại có trợ từ ngữ khí “了”, chỉ biểu thị hành động vẫn đang tiếp diễn. Ví dụ:",
-          "section": "语法说明跨printed78–79"
+          "section": "grammar3-explanation2",
+          "officialZhText": "动词后带宾语时，宾语的位置有两种情况：（1）宾语是事物名词，一般在时量补语后；（2）宾语是称呼或代词，一般在时量补语前。例如：",
+          "officialViText": "Khi sau động từ có tân ngữ, vị trí của tân ngữ có thể có hai trường hợp: (1) nếu tân ngữ là danh từ chỉ sự vật, thường đặt sau bổ ngữ thời lượng; (2) nếu tân ngữ là từ xưng hô hoặc đại từ, thường đặt trước bổ ngữ thời lượng. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l09:p079:grammar3-explanation3",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            93
+          ],
+          "printedPages": [
+            79
+          ],
+          "section": "grammar3-explanation3",
+          "officialZhText": "动词带宾语时，也可以重复动词后再加时量补语。例如：",
+          "officialViText": "Khi động từ có tân ngữ, động từ có thể được lặp lại trước khi thêm bổ ngữ thời lượng. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l09:p079:grammar3-explanation4",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            93
+          ],
+          "printedPages": [
+            79
+          ],
+          "section": "grammar3-explanation4",
+          "officialZhText": "动词是离合词时，需要重复动词性语素，再加时量补语。例如：",
+          "officialViText": "Khi động từ là từ li hợp, từ tố mang tính chất động từ cần được lặp lại trước khi thêm bổ ngữ thời lượng. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l09:p079:grammar3-explanation5",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            93
+          ],
+          "printedPages": [
+            79
+          ],
+          "section": "grammar3-explanation5",
+          "officialZhText": "动词后有“了”，句尾还有语气助词“了”，表示动作仍在进行。例如：",
+          "officialViText": "Khi sau động từ có “了” và cuối câu lại có trợ từ ngữ khí “了”, khi đó biểu thị hành động vẫn đang tiếp diễn. Ví dụ:"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-notes",
+      "rationale": "Merge the actual printed grammar paragraphs in order, omit repeated example labels, and retain explicitly labelled website supplementary notes. The whole displayed leaf is not verbatim."
     },
     {
       "kind": "directOfficial",
@@ -25660,20 +26040,28 @@
       "zhContext": "课文2"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l10:p87:/texts/1/context/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        101
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l10:p087:text2-context",
+      "zhContext": "在房间，王一雪和刘小雪在聊学习。",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l10:p087:text2-context",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            101
+          ],
+          "printedPages": [
+            87
+          ],
+          "section": "text2-context",
+          "officialZhText": "在房间，王一雪和刘小雪在聊学习。",
+          "officialViText": "Vương Nhất Tuyết và Lưu Tiểu Tuyết đang nói về việc học tập ở trong phòng."
+        }
       ],
-      "printedPages": [
-        87
-      ],
-      "section": "课文情境",
-      "officialViText": "Vương Nhất Tuyết và Lưu Tiểu Tuyết đang nói về việc học tập trong phòng.",
-      "officialZhText": "在房间，王一雪和刘小雪在聊学习。",
-      "zhContext": "在房间，王一雪和刘小雪在聊学习。"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Dropping o before trong phong retains the room location and named participants."
     },
     {
       "kind": "directOfficial",
@@ -26155,13 +26543,12 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l10:grammar1:/grammar/0/explanation/vi",
+      "sourceId": "hsk2-official-vi:l10:p086:grammar1-explanation",
       "zhContext": "主谓短语可以作谓语，对主语加以说明或描写，构成主谓谓语句。一般来说，主谓短语中的主语是全句主语的一部分或跟它相关。基本结构：主语+主谓短语。",
       "notVerbatim": true,
-      "rationale": "正式语法规则与网站补充双标，防止覆盖时丢掉既有教学说明。 实际说明去掉无随附例句的印刷“Ví dụ:”过渡词；sourceAnchor保留完整印刷原文，原examples另行显示。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi-l10:p86:/grammar/0/explanation/vi",
+          "sourceId": "hsk2-official-vi:l10:p086:grammar1-explanation",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -26170,11 +26557,13 @@
           "printedPages": [
             86
           ],
-          "officialZhText": "主谓短语可以作谓语，对主语加以说明或描写，构成主谓谓语句。一般来说，主谓短语中的主语是全句主语的一部分或跟它相关。基本结构：主语+主谓短语。",
-          "officialViText": "Cụm chủ vị có thể làm vị ngữ để giải thích hoặc miêu tả chủ ngữ, từ đó tạo thành câu có cụm chủ vị làm vị ngữ. Thông thường, chủ ngữ trong cụm chủ vị hoặc là một phần của chủ ngữ của câu, hoặc có liên quan đến nó. Cấu trúc cơ bản: Chủ ngữ + cụm chủ vị. Ví dụ:",
-          "section": "语法说明"
+          "section": "grammar1-explanation",
+          "officialZhText": "主谓短语可以作谓语，对主语加以说明或描写，构成主谓谓语句。一般来说，主谓短语中的主语是全句主语的一部分或跟它相关。基本结构：主语+主谓短语。例如：",
+          "officialViText": "Cụm chủ vị có thể làm vị ngữ để giải thích hoặc miêu tả chủ ngữ, từ đó tạo thành câu có cụm chủ vị làm vị ngữ. Thông thường, chủ ngữ trong cụm chủ vị hoặc là một phần của chủ ngữ của cả câu, hoặc có liên quan đến nó. Cấu trúc cơ bản: Chủ ngữ + cụm chủ vị. Ví dụ:"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-notes",
+      "rationale": "Merge the actual printed grammar paragraphs in order, omit repeated example labels, and retain explicitly labelled website supplementary notes. The whole displayed leaf is not verbatim."
     },
     {
       "kind": "terminologyDerived",
@@ -26678,21 +27067,28 @@
       "zhContext": "你这几天经常头疼，去医院看看吧。"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l11:p94:/texts/0/lines/3/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        108
-      ],
-      "printedPages": [
-        94
-      ],
-      "section": "课文正式越文对译",
-      "officialViText": "Em muốn nghỉ một lát, bây giờ không cử động được, cứ đi lại là đau.",
-      "officialZhText": "我想休息一下，现在不能动，一动就疼。",
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l11:p094:text1-line04",
       "zhContext": "我想休息一下，现在不能动，一动就疼。",
-      "correctionRationale": "中文一动就疼包含任何身体动作，正式đi lại仅指走动，误缩窄动作范围。"
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l11:p094:text1-line04",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            108
+          ],
+          "printedPages": [
+            94
+          ],
+          "section": "text1-line04",
+          "officialZhText": "我想休息一下，现在不能动，一动就疼。",
+          "officialViText": "Em muốn nghỉ ngơi một lát, bây giờ không cử động được, cứ đi lại là đau."
+        }
+      ],
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Cu cu dong translates Chinese yi dong; printed cu di lai is narrower. The active wording preserves the displayed Chinese motion/pain meaning and is a paraphrase."
     },
     {
       "kind": "directOfficial",
@@ -27263,13 +27659,12 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l11:grammar2:/grammar/1/explanation/vi",
+      "sourceId": "hsk2-official-vi:l11:p097:grammar2-explanation1",
       "zhContext": "表示动作或状态持续的句子中，宾语要在动态助词“着”的后面。疑问形式有三种：（1）在句尾加“吗”；（2）在句尾加“没有”；（3）动词+没+动词+着。",
       "notVerbatim": true,
-      "rationale": "正式语法规则与网站补充双标，防止覆盖时丢掉既有教学说明。 实际说明去掉无随附例句的印刷“Ví dụ:”过渡词；sourceAnchor保留完整印刷原文，原examples另行显示。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi-l11:p97:/grammar/1/explanation/vi",
+          "sourceId": "hsk2-official-vi:l11:p097:grammar2-explanation1",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -27278,11 +27673,27 @@
           "printedPages": [
             97
           ],
-          "officialZhText": "表示动作或状态持续的句子中，宾语要在动态助词“着”的后面。疑问形式有三种：（1）在句尾加“吗”；（2）在句尾加“没有”；（3）动词+没+动词+着。",
-          "officialViText": "Trong câu biểu thị sự duy trì của động tác hoặc trạng thái, tân ngữ phải đứng sau trợ từ động thái “着”. Ví dụ: Hình thức nghi vấn có ba loại: (1) thêm “吗” vào cuối câu; (2) thêm “没有” vào cuối câu; (3) động từ + 没 + động từ + 着. Ví dụ:",
-          "section": "语法说明"
+          "section": "grammar2-explanation1",
+          "officialZhText": "表示动作或状态持续的句子中，宾语要在动态助词“着”的后面。例如：",
+          "officialViText": "Trong câu biểu thị sự duy trì của động tác hoặc trạng thái, tân ngữ phải đứng sau trợ từ động thái “着”. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l11:p097:grammar2-explanation2",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            111
+          ],
+          "printedPages": [
+            97
+          ],
+          "section": "grammar2-explanation2",
+          "officialZhText": "疑问形式有三种：（1）在句尾加“吗”；（2）在句尾加“没有”；（3）动词+没+动词+着。例如：",
+          "officialViText": "Hình thức nghi vấn có ba loại: (1) thêm “吗” vào cuối câu; (2) thêm “没有” vào cuối câu; (3) động từ + 没 + động từ + 着. Ví dụ:"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-notes",
+      "rationale": "Merge the actual printed grammar paragraphs in order, omit repeated example labels, and retain explicitly labelled website supplementary notes. The whole displayed leaf is not verbatim."
     },
     {
       "kind": "directOfficial",
@@ -27583,18 +27994,18 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l11:p99:/activities/10/note/vi",
+      "sourceId": "hsk2-official-vi:l11:p100:text4-read-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        113
+        114
       ],
       "printedPages": [
-        99
+        100
       ],
-      "section": "课文阅读指令",
-      "officialViText": "Đọc to bài khoá, sau đó lựa chọn đáp án đúng.",
+      "section": "text4-read-instruction",
       "officialZhText": "朗读课文，读后选择正确答案。",
+      "officialViText": "Đọc to bài khoá, sau đó lựa chọn đáp án đúng.",
       "zhContext": "朗读课文，读后选择正确答案。"
     },
     {
@@ -27795,20 +28206,30 @@
       "zhContext": "下午有课。您那里天气怎么样？"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l12:p104:/texts/0/lines/4/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        118
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l12:p104:text1-line05",
+      "zhContext": "北京这几天虽然是晴天，但是有点儿冷。",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l12:p104:text1-line05",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            117,
+            118
+          ],
+          "printedPages": [
+            103,
+            104
+          ],
+          "section": "text1-line05",
+          "officialZhText": "北京这几天虽然是晴天，但是有点儿冷。",
+          "officialViText": "Mấy ngày nay, Bắc Kinh tuy nắng nhưng hơi lạnh."
+        }
       ],
-      "printedPages": [
-        104
-      ],
-      "section": "课文正式越文对译",
-      "officialViText": "Mấy ngày nay, Bắc Kinh tuy nắng nhưng vẫn hơi lạnh.",
-      "officialZhText": "北京这几天虽然是晴天，但是有点儿冷。",
-      "zhContext": "北京这几天虽然是晴天，但是有点儿冷。"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Van is a discourse emphasis in the contrast sunny yet cold; the weather and degree hoi lanh remain unchanged."
     },
     {
       "kind": "directOfficial",
@@ -28163,20 +28584,28 @@
       "zhContext": "前几天天气不好，我没走路，每天坐两站地铁去学校。今天是个大晴天，李文让我跟他去外面跑步。他小时候经常跑步，跑得比我快，但是他会等我。跟李文一起跑步，我好高兴啊！"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l12:p103:/vocabulary/0/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        117
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l12:p103:word01",
+      "zhContext": "事情",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l12:p103:word01",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            117
+          ],
+          "printedPages": [
+            103
+          ],
+          "section": "word01",
+          "officialZhText": "事情",
+          "officialViText": "sự việc, việc"
+        }
       ],
-      "printedPages": [
-        103
-      ],
-      "section": "生词词框",
-      "officialViText": "sự việc",
-      "officialZhText": "事情",
-      "zhContext": "事情"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Su viec is a printed synonym of the noun shiqing; omitting viec does not change the sense."
     },
     {
       "kind": "directOfficial",
@@ -29082,20 +29511,28 @@
       "zhContext": "课文3"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l13:p116:/texts/2/context/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        130
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l13:p116:text3-context",
+      "zhContext": "在教室，安妮和白家月在聊天儿。",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l13:p116:text3-context",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            130
+          ],
+          "printedPages": [
+            116
+          ],
+          "section": "text3-context",
+          "officialZhText": "在教室，安妮和白家月在聊天儿。",
+          "officialViText": "Annie và Bạch Gia Nguyệt đang trò chuyện ở trong lớp học."
+        }
       ],
-      "printedPages": [
-        116
-      ],
-      "section": "课文情境",
-      "officialViText": "Annie và Bạch Gia Nguyệt đang trò chuyện trong lớp học.",
-      "officialZhText": "在教室，安妮和白家月在聊天儿。",
-      "zhContext": "在教室，安妮和白家月在聊天儿。"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Dropping o before trong lop hoc preserves classroom setting and named speakers."
     },
     {
       "kind": "directOfficial",
@@ -29210,20 +29647,28 @@
       "zhContext": "咖啡杯吧，我最喜欢喝咖啡了。"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l13:p117:/texts/2/lines/7/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        131
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l13:p117:text3-line08",
+      "zhContext": "好，那样我们就都有新年礼物了！",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l13:p117:text3-line08",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            131
+          ],
+          "printedPages": [
+            117
+          ],
+          "section": "text3-line08",
+          "officialZhText": "好，那样我们就都有新年礼物了！",
+          "officialViText": "Được, như vậy là chúng ta ai cũng đều có quà năm mới rồi!"
+        }
       ],
-      "printedPages": [
-        117
-      ],
-      "section": "课文正式越文对译",
-      "officialViText": "Được, như vậy là chúng ta đều có quà năm mới rồi!",
-      "officialZhText": "好，那样我们就都有新年礼物了！",
-      "zhContext": "好，那样我们就都有新年礼物了！"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Tat ca/ai emphasis is redundant with chung ta deu; all participants still receive New Year gifts."
     },
     {
       "kind": "directOfficial",
@@ -29242,20 +29687,28 @@
       "zhContext": "课文4"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l13:p118:/texts/3/context/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        132
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l13:p118:text4-context",
+      "zhContext": "在房间，白家月在写日记。",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l13:p118:text4-context",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            132
+          ],
+          "printedPages": [
+            118
+          ],
+          "section": "text4-context",
+          "officialZhText": "在房间，白家月在写日记。",
+          "officialViText": "Bạch Gia Nguyệt đang viết nhật ký ở trong phòng."
+        }
       ],
-      "printedPages": [
-        118
-      ],
-      "section": "课文情境",
-      "officialViText": "Bạch Gia Nguyệt đang viết nhật ký trong phòng.",
-      "officialZhText": "在房间，白家月在写日记。",
-      "zhContext": "在房间，白家月在写日记。"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Dropping o before trong phong preserves diary activity, person, and room."
     },
     {
       "kind": "directOfficial",
@@ -30017,20 +30470,28 @@
       "zhContext": "同乐，真是你啊！上次打电话，你说有时间过来看我，没想到这么快就来了！"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l14:p124:/texts/1/lines/1/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        138
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l14:p124:text2-line02",
+      "zhContext": "就要过年了，你一个人在这儿多没意思啊，所以我就早早过来了。",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l14:p124:text2-line02",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            138
+          ],
+          "printedPages": [
+            124
+          ],
+          "section": "text2-line02",
+          "officialZhText": "就要过年了，你一个人在这儿多没意思啊，所以我就早早过来了。",
+          "officialViText": "Sắp đến Tết rồi, em ở đây một mình thật vô vị, nên anh đến sớm một chút."
+        }
       ],
-      "printedPages": [
-        124
-      ],
-      "section": "课文正式越文对译",
-      "officialViText": "Sắp đến Tết rồi, em ở đây một mình thì thật vô vị nên anh đến sớm một chút.",
-      "officialZhText": "就要过年了，你一个人在这儿多没意思啊，所以我就早早过来了。",
-      "zhContext": "就要过年了，你一个人在这儿多没意思啊，所以我就早早过来了。"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Thi and comma changes preserve the reason for coming early before Tet."
     },
     {
       "kind": "directOfficial",
@@ -30065,20 +30526,28 @@
       "zhContext": "一飞，你旁边这位是？"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l14:p124:/texts/1/lines/4/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        138
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l14:p124:text2-line05",
+      "zhContext": "同乐，这是李文，他在我们学校学医。李文，这是我男朋友杨同乐。",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l14:p124:text2-line05",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            138
+          ],
+          "printedPages": [
+            124
+          ],
+          "section": "text2-line05",
+          "officialZhText": "同乐，这是李文，他在我们学校学医。李文，这是我男朋友杨同乐。",
+          "officialViText": "Đồng Lạc ơi, đây là Lý Văn, em ấy đang học ngành y ở trường em. Lý Văn, đây là bạn trai của cô, anh Dương Đồng Lạc."
+        }
       ],
-      "printedPages": [
-        124
-      ],
-      "section": "课文正式越文对译",
-      "officialViText": "Đồng Lạc ơi, đây là Lý Văn, em ấy học ngành y ở trường em. Lý Văn, đây là bạn trai của cô, anh Dương Đồng Lạc.",
-      "officialZhText": "同乐，这是李文，他在我们学校学医。李文，这是我男朋友杨同乐。",
-      "zhContext": "同乐，这是李文，他在我们学校学医。李文，这是我男朋友杨同乐。"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Omitting dang retains the present studying-medicine context and all personal relationships."
     },
     {
       "kind": "directOfficial",
@@ -30161,20 +30630,28 @@
       "zhContext": "一飞，你住的房子真不错，很大，离学校也不远。"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l14:p126:/texts/2/lines/1/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        140
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l14:p126:text3-line02",
+      "zhContext": "是啊！我楼下还住着一家中国人，他们人很好。",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l14:p126:text3-line02",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            140
+          ],
+          "printedPages": [
+            126
+          ],
+          "section": "text3-line02",
+          "officialZhText": "是啊！我楼下还住着一家中国人，他们人很好。",
+          "officialViText": "Vâng ạ! Dưới tầng nhà em còn có một gia đình người Trung Quốc sinh sống, họ rất tốt bụng."
+        }
       ],
-      "printedPages": [
-        126
-      ],
-      "section": "课文正式越文对译",
-      "officialViText": "Vâng ạ! Ở dưới tầng nhà em còn có một gia đình người Trung Quốc sinh sống, họ rất tốt bụng.",
-      "officialZhText": "是啊！我楼下还住着一家中国人，他们人很好。",
-      "zhContext": "是啊！我楼下还住着一家中国人，他们人很好。"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Added o locates the same family downstairs; ongoing residence and kindness remain unchanged."
     },
     {
       "kind": "directOfficial",
@@ -30274,20 +30751,28 @@
       "zhContext": "课文4"
     },
     {
-      "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l14:p127:/texts/3/context/vi",
-      "documentSourceId": "hsk2-official-vi-20261004",
-      "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
-      "pdfPages": [
-        141
+      "kind": "terminologyDerived",
+      "sourceId": "hsk2-official-vi:l14:p127:text4-context",
+      "zhContext": "在房间，王一飞在写日记。",
+      "notVerbatim": true,
+      "terminologySourceRefs": [
+        {
+          "sourceId": "hsk2-official-vi:l14:p127:text4-context",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            141
+          ],
+          "printedPages": [
+            127
+          ],
+          "section": "text4-context",
+          "officialZhText": "在房间，王一飞在写日记。",
+          "officialViText": "Vương Nhất Phi đang viết nhật ký ở trong phòng."
+        }
       ],
-      "printedPages": [
-        127
-      ],
-      "section": "课文情境",
-      "officialViText": "Vương Nhất Phi đang viết nhật ký trong phòng.",
-      "officialZhText": "在房间，王一飞在写日记。",
-      "zhContext": "在房间，王一飞在写日记。"
+      "sourceRelation": "non-verbatim-paraphrase",
+      "rationale": "Dropping o before trong phong preserves the diary activity, person, and room."
     },
     {
       "kind": "directOfficial",
@@ -30504,13 +30989,12 @@
     },
     {
       "kind": "terminologyDerived",
-      "sourceId": "derived:hsk2-fltrp-2026:l14:grammar3:/grammar/2/explanation/vi",
+      "sourceId": "hsk2-official-vi:l14:p127:grammar3-explanation1",
       "zhContext": "“上、下、进、出、回、过”加上“来/去”，以及“起来”，用在动词后，可以构成复合趋向补语，表示动作的方向。当动词带宾语时，有两种情况：（1）宾语是地点名词，放在“来/去”前面；（2）宾语是事物名词，放在“来/去”前后都可以。",
       "notVerbatim": true,
-      "rationale": "正式语法规则与网站补充双标，防止覆盖时丢掉既有教学说明。 实际说明去掉无随附例句的印刷“Ví dụ:”过渡词；sourceAnchor保留完整印刷原文，原examples另行显示。",
       "terminologySourceRefs": [
         {
-          "sourceId": "hsk2-official-vi-l14:p127:/grammar/2/explanation/vi",
+          "sourceId": "hsk2-official-vi:l14:p127:grammar3-explanation1",
           "documentSourceId": "hsk2-official-vi-20261004",
           "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
           "pdfPages": [
@@ -30519,11 +31003,27 @@
           "printedPages": [
             127
           ],
-          "officialZhText": "“上、下、进、出、回、过”加上“来/去”，以及“起来”，用在动词后，可以构成复合趋向补语，表示动作的方向。当动词带宾语时，有两种情况：（1）宾语是地点名词，放在“来/去”前面；（2）宾语是事物名词，放在“来/去”前后都可以。",
-          "officialViText": "“上”, “下”, “进”, “出”, “回”, “过” kết hợp với “来”, “去” và cụm từ “起来” đều đặt sau động từ để tạo thành bổ ngữ xu hướng kép, biểu thị phương hướng của động tác. Ví dụ: Khi động từ mang tân ngữ, có hai trường hợp: (1) tân ngữ là danh từ chỉ địa điểm, đặt trước “来/去”; (2) tân ngữ là danh từ chỉ sự vật, đặt trước hoặc sau “来/去”. Ví dụ:",
-          "section": "语法说明"
+          "section": "grammar3-explanation1",
+          "officialZhText": "“上、下、进、出、回、过”加上“来/去”，以及“起来”，用在动词后，可以构成复合趋向补语，表示动作的方向。例如：",
+          "officialViText": "“上”, “下”, “进”, “出”, “回”, “过” kết hợp với “来”, “去” và cụm từ “起来” đều đặt sau động từ để tạo thành bổ ngữ xu hướng kép, biểu thị phương hướng của động tác. Ví dụ:"
+        },
+        {
+          "sourceId": "hsk2-official-vi:l14:p127:grammar3-explanation2",
+          "documentSourceId": "hsk2-official-vi-20261004",
+          "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+          "pdfPages": [
+            141
+          ],
+          "printedPages": [
+            127
+          ],
+          "section": "grammar3-explanation2",
+          "officialZhText": "当动词带宾语时，有两种情况：（1）宾语是地点名词，放在“来/去”前面；（2）宾语是事物名词，放在“来/去”前后都可以。例如：",
+          "officialViText": "Khi động từ mang tân ngữ, có hai trường hợp: (1) tân ngữ là danh từ chỉ địa điểm, đặt trước “来/去”; (2) tân ngữ là danh từ chỉ sự vật, đặt trước hoặc sau “来/去”. Ví dụ:"
         }
-      ]
+      ],
+      "sourceRelation": "composition-with-editorial-notes",
+      "rationale": "Merge the actual printed grammar paragraphs in order, omit repeated example labels, and retain explicitly labelled website supplementary notes. The whole displayed leaf is not verbatim."
     },
     {
       "kind": "directOfficial",
@@ -30733,18 +31233,18 @@
     },
     {
       "kind": "directOfficial",
-      "sourceId": "hsk2-official-vi-l14:p128:/activities/10/note/vi",
+      "sourceId": "hsk2-official-vi:l14:p127:text4-read-instruction",
       "documentSourceId": "hsk2-official-vi-20261004",
       "pdfSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
       "pdfPages": [
-        142
+        141
       ],
       "printedPages": [
-        128
+        127
       ],
-      "section": "课文阅读指令",
-      "officialViText": "Đọc to bài khoá, sau đó lựa chọn đáp án đúng.",
+      "section": "text4-read-instruction",
       "officialZhText": "朗读课文，读后选择正确答案。",
+      "officialViText": "Đọc to bài khoá, sau đó lựa chọn đáp án đúng.",
       "zhContext": "朗读课文，读后选择正确答案。"
     },
     {
@@ -31896,5 +32396,42 @@
       "officialZhText": "我需要努力的",
       "zhContext": "我需要努力的"
     }
-  ]
+  ],
+  "inheritedAcceptedTranslation": {
+    "commit": "9e89fa7145c285ec92990bbbeb5dce3080c5ddf0",
+    "manifestSHA256": "6312270277f9762cd6f6bad39249279a6327d4654856a9f4602ecb3ff1854023",
+    "reviewSHA256": "e32896f1d67d09b51edd0c12e1ac9e4d6e690a8f1ac252cf3f1eb2b8c6d08d6b",
+    "acceptedVIVectorSHA256": "612c9153865a781b75cc9eda4e355bf44440278319c892b3dce38a7d38070d52",
+    "changedValues": 0
+  },
+  "sourceMetadataReview": {
+    "reviewer": "/root/release_candidate_acceptance",
+    "dispositionSHA256": "4b92c537143c5b87983310f0ba77fa213e52376598297efbbd767909d19a3e33",
+    "repairedReferences": 57,
+    "stableOwnerAliases": [
+      {
+        "consumerRef": {
+          "baselineFile": "course-app/content/hsk2-lexicon.json",
+          "field": "/senses/131/vi",
+          "ownerId": "hsk2-fltrp-2026:sense:l08-word14",
+          "component": "lexicon"
+        },
+        "sourceOwnerId": "hsk2-fltrp-2026:l08:word14",
+        "sourceChangeId": "hsk2-official-vi-release-ready-20261005:47879123784fccb0",
+        "aliasChangeId": "hsk2-official-vi-release-ready-20261005:b6fc8426db696feb"
+      },
+      {
+        "consumerRef": {
+          "baselineFile": "course-app/content/hsk2-lexicon.json",
+          "field": "/senses/176/vi",
+          "ownerId": "hsk2-fltrp-2026:sense:l12-word01",
+          "component": "lexicon"
+        },
+        "sourceOwnerId": "hsk2-fltrp-2026:l12:word01",
+        "sourceChangeId": "hsk2-official-vi-release-ready-20261005:3d48e359104940cb",
+        "aliasChangeId": "hsk2-official-vi-release-ready-20261005:b73f50a5f9a4681d"
+      }
+    ],
+    "scope": "Actual independent Chinese/VI meaning and printed-source counterpart review of exactly the 57 metadata records. Existing website VI bytes remain those accepted in persisted 9e; this is not a new full unchanged-field semantic review."
+  }
 }
