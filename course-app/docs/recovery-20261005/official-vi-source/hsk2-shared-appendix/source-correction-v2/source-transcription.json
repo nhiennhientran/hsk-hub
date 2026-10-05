@@ -1,0 +1,2675 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "20261005-fresh-recovery-v2-author-transcription-correction",
+  "status": "author-source-transcription-awaiting-independent-original-page-review",
+  "author": "remaining_media_audit",
+  "level": 2,
+  "lesson": null,
+  "documentSourceId": "hsk2-official-vietnamese-20261004",
+  "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+  "sourcePDF": {
+    "bytes": 69855983,
+    "physicalPages": 162,
+    "physicalOffsetToPrinted": 14,
+    "offsetAppliesThroughPrinted145": true
+  },
+  "readProof": {
+    "pdfPagesRead": [
+      155,
+      156,
+      157,
+      158,
+      159
+    ],
+    "actualOriginalPDFFootersRead": [
+      141,
+      142,
+      143,
+      144,
+      145
+    ],
+    "freshOriginalPDFRenders": true,
+    "allWholeSourcePageImagesActuallyViewed": true,
+    "OCRUsed": false,
+    "PDFTextExtractionUsed": false,
+    "websiteVietnameseRead": false
+  },
+  "scope": {
+    "actualPDFPages": [
+      155,
+      156,
+      157,
+      158,
+      159
+    ],
+    "actualPrintedPages": [
+      141,
+      142,
+      143,
+      144,
+      145
+    ],
+    "scopeNote": "Entire shared appendix: physical155/printed141 POS table and wordlist start; through159/145 includes proper-name index. Physical160–162 colophon/digital activation/backcover are not lesson translation appendix, have no printed numeric footer, and are only boundary classification. No digital activation code is transcribed."
+  },
+  "counts": {
+    "sourceItems": 61,
+    "numberedWords": 0,
+    "printedRoleTranslationLines": 0,
+    "wholeDiaryParagraphs": 0
+  },
+  "transcriptionPolicy": {
+    "layoutLineWrapsJoinedWithSpaces": true,
+    "printedDiacriticsCapitalizationPunctuationPreserved": true,
+    "rolesSeparateFromWholeUtterance": true,
+    "noSilentSemanticRepair": true,
+    "allActualZHAndVIPagesRecorded": true,
+    "sourceOnlyDoesNotAuthorizeWebsiteChange": true
+  },
+  "candidateErrata": [],
+  "sharedAppendix": null,
+  "noPrintedVietnameseAreas": [
+    {
+      "pdfPages": [
+        155,
+        156,
+        157,
+        158,
+        159
+      ],
+      "sections": [
+        "Each individual word and proper-name index row contains Chinese/Pinyin/lessonNo, no full per-word Vietnamese gloss and no dialogue translation. Do not invent appendix glosses from lesson body."
+      ]
+    }
+  ],
+  "records": [
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-header",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-header",
+      "category": "heading",
+      "zhAnchor": "词性对照表",
+      "viPrinted": "Bảng đối chiếu từ loại",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "词性对照表"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Bảng đối chiếu từ loại",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-header",
+      "literalEvidence": {
+        "viCodePoints": 22,
+        "viUTF16Units": 22,
+        "viUTF8SHA256": "54afec871fdace24aa196016b5ecd0a3ed813095a09504405ba3eae52f8d6d80",
+        "zhCodePoints": 5,
+        "zhUTF8SHA256": "d9826b1e7dfab44672b4d840f023c65d385852657ba71850a1880f643668eb92",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-left-column-pos",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-left-column-pos",
+      "category": "table-header",
+      "zhAnchor": "词性",
+      "viPrinted": "Từ loại",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "词性"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Từ loại",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-left-column-pos",
+      "literalEvidence": {
+        "viCodePoints": 7,
+        "viUTF16Units": 7,
+        "viUTF8SHA256": "c531b5d56ccbac77a34a7db95b4c71acd0aefcbeaf4ba8ebc17e059765e9d0b9",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7bc95704eda94d93f36cb028afe592e4e24146dfbfa938290faae242dad8a743",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-left-column-language",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-left-column-language",
+      "category": "table-header",
+      "zhAnchor": "越南文",
+      "viPrinted": "Tiếng Việt",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "越南文"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Tiếng Việt",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-left-column-language",
+      "literalEvidence": {
+        "viCodePoints": 10,
+        "viUTF16Units": 10,
+        "viUTF8SHA256": "690829f87a103acd5eb5734b27b86ca2fc994ea6cabf6c18285130906fed8419",
+        "zhCodePoints": 3,
+        "zhUTF8SHA256": "79c47e429d520afa1aaf6db495e639f3fc96a46586b4372438715597066cf35a",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-left-column-abbreviation",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-left-column-abbreviation",
+      "category": "table-header",
+      "zhAnchor": "越南文简写",
+      "viPrinted": "Viết tắt",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "越南文简写"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Viết tắt",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-left-column-abbreviation",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "2f5d5d0cddcba2decfa19372d475fc15bdb6e03f04f204687dc87589dfcfa6cf",
+        "zhCodePoints": 5,
+        "zhUTF8SHA256": "06fe47b86eb7fb1e66d71388b1ed969ed8aa88cfb3c9a9aa1d3acdcb24faace7",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-right-column-pos",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-right-column-pos",
+      "category": "table-header",
+      "zhAnchor": "词性",
+      "viPrinted": "Từ loại",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "词性"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Từ loại",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-right-column-pos",
+      "literalEvidence": {
+        "viCodePoints": 7,
+        "viUTF16Units": 7,
+        "viUTF8SHA256": "c531b5d56ccbac77a34a7db95b4c71acd0aefcbeaf4ba8ebc17e059765e9d0b9",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7bc95704eda94d93f36cb028afe592e4e24146dfbfa938290faae242dad8a743",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-right-column-language",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-right-column-language",
+      "category": "table-header",
+      "zhAnchor": "越南文",
+      "viPrinted": "Tiếng Việt",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "越南文"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Tiếng Việt",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-right-column-language",
+      "literalEvidence": {
+        "viCodePoints": 10,
+        "viUTF16Units": 10,
+        "viUTF8SHA256": "690829f87a103acd5eb5734b27b86ca2fc994ea6cabf6c18285130906fed8419",
+        "zhCodePoints": 3,
+        "zhUTF8SHA256": "79c47e429d520afa1aaf6db495e639f3fc96a46586b4372438715597066cf35a",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-right-column-abbreviation",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-right-column-abbreviation",
+      "category": "table-header",
+      "zhAnchor": "越南文简写",
+      "viPrinted": "Viết tắt",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "越南文简写"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Viết tắt",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-right-column-abbreviation",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "2f5d5d0cddcba2decfa19372d475fc15bdb6e03f04f204687dc87589dfcfa6cf",
+        "zhCodePoints": 5,
+        "zhUTF8SHA256": "06fe47b86eb7fb1e66d71388b1ed969ed8aa88cfb3c9a9aa1d3acdcb24faace7",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row01",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row01",
+      "category": "pos-name",
+      "zhAnchor": "名词",
+      "viPrinted": "danh từ",
+      "printedAbbreviation": "dt.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "名词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "danh từ",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row01",
+      "literalEvidence": {
+        "viCodePoints": 7,
+        "viUTF16Units": 7,
+        "viUTF8SHA256": "b90e44179d4baca64b082bf27bfd0fbdb1457ee167baae151cbafcbf43d243aa",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "292d7451cbffc9f2c44f11ebcf4b88f591b448c9e94a8931e06a9c6ea43bac4d",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row02",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row02",
+      "category": "pos-name",
+      "zhAnchor": "动词",
+      "viPrinted": "động từ",
+      "printedAbbreviation": "đgt.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "动词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "động từ",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row02",
+      "literalEvidence": {
+        "viCodePoints": 7,
+        "viUTF16Units": 7,
+        "viUTF8SHA256": "e36779c9ce2882e4bb2a58463a6551c21cdf8a3c9f7b1bb371469dc4725837ad",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "b81e00b62adbaa71aabd0e67a49e285311ed994a8664398eac0e4c4b839226b3",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row03",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row03",
+      "category": "pos-name",
+      "zhAnchor": "形容词",
+      "viPrinted": "tính từ",
+      "printedAbbreviation": "tt.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "形容词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "tính từ",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row03",
+      "literalEvidence": {
+        "viCodePoints": 7,
+        "viUTF16Units": 7,
+        "viUTF8SHA256": "a7b0b1b08cf4d907f9fdf4c06603e554ce17a3865f3d22c4ec781758c124ca2f",
+        "zhCodePoints": 3,
+        "zhUTF8SHA256": "0b9789f96cf86da1e95287ecbef89e8c5534e24cc88b4411aecf83d196ec97b5",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row04",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row04",
+      "category": "pos-name",
+      "zhAnchor": "代词",
+      "viPrinted": "đại từ",
+      "printedAbbreviation": "đt.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "代词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "đại từ",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row04",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "012d5e00354773eca1e0ce4570890a906d03db0c9d58fc4cbf5e0853bf81462e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f0c26dbe7424bc987e51dc6771771b27dc9af45421b41c5056cc8b45f360604c",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row05",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row05",
+      "category": "pos-name",
+      "zhAnchor": "副词",
+      "viPrinted": "phó từ",
+      "printedAbbreviation": "phó.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "副词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "phó từ",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row05",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "d1c2d07fa9d594ab445f72b099d75996e42a125e85f3f19d8f9f26cdc0cc7257",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7720e01debbb78fc482318c838586cc36d8cf4509984658248f33f469dc65a49",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row06",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row06",
+      "category": "pos-name",
+      "zhAnchor": "介词",
+      "viPrinted": "giới từ",
+      "printedAbbreviation": "giới.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "介词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "giới từ",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row06",
+      "literalEvidence": {
+        "viCodePoints": 7,
+        "viUTF16Units": 7,
+        "viUTF8SHA256": "3b2bf02b29ef0ebfdc4bb783fbabaab979ef5397e0a8a727dc028a156fb871f8",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "dc7257b09cd03a1bbd711a90b5c50e3cc69667b4cd5c22b0fbafa5d4eeb5549d",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row07",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row07",
+      "category": "pos-name",
+      "zhAnchor": "连词",
+      "viPrinted": "liên từ",
+      "printedAbbreviation": "liên.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "连词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "liên từ",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row07",
+      "literalEvidence": {
+        "viCodePoints": 7,
+        "viUTF16Units": 7,
+        "viUTF8SHA256": "ba611b9ed170c845d68fafe2144fe07c76165f7a4da6c0ed455791be674b3c2d",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "899df95fb910f2a25c3b3ba7cbc2f90186b0400beb097fa25278c58701a8aef1",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row08",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row08",
+      "category": "pos-name",
+      "zhAnchor": "助词",
+      "viPrinted": "trợ từ",
+      "printedAbbreviation": "trợ.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "助词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "trợ từ",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row08",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "53e5c77978da25228acc08a8ab36a14d1e704c2377ee702ae3602f97e083b81f",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "d52332315bbf90a7e762ce46181bd99e5b2b8641fd11f3390a51fde7da0f9a40",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row09",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row09",
+      "category": "pos-name",
+      "zhAnchor": "数词",
+      "viPrinted": "từ chỉ số đếm",
+      "printedAbbreviation": "số.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "数词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "từ chỉ số đếm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row09",
+      "literalEvidence": {
+        "viCodePoints": 13,
+        "viUTF16Units": 13,
+        "viUTF8SHA256": "1d3183d879aa87da12795dc08a9760e0d12c95aae97813c55a935b6d3f4232ce",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "ef66d9f980069d2bf148dc62e8f6c28bd2f1fb0d9e1a909a052c6f5292e35c63",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row10",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row10",
+      "category": "pos-name",
+      "zhAnchor": "量词",
+      "viPrinted": "lượng từ",
+      "printedAbbreviation": "lượng.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "量词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "lượng từ",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row10",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "6d85b611376feabd6cfbae5a949f40c6043a460a9158b6317582a8dd3d2047a7",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "93e0e959bcc7b1d31fbbeef52a441c286a0f969cf3c8cae164365c623d892f27",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row11",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row11",
+      "category": "pos-name",
+      "zhAnchor": "数量词",
+      "viPrinted": "từ chỉ số lượng",
+      "printedAbbreviation": "sl.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "数量词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "từ chỉ số lượng",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row11",
+      "literalEvidence": {
+        "viCodePoints": 15,
+        "viUTF16Units": 15,
+        "viUTF8SHA256": "f82a556945214ef8bbd67d371e513f52a2099fcca8dfcfa886fa0ec202ef445e",
+        "zhCodePoints": 3,
+        "zhUTF8SHA256": "9322c2e60e3c05620e0511d66357c16dbfaa3949278ef6bb451500a1faeff030",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row12",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row12",
+      "category": "pos-name",
+      "zhAnchor": "叹词",
+      "viPrinted": "từ cảm thán",
+      "printedAbbreviation": "ct.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "叹词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "từ cảm thán",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row12",
+      "literalEvidence": {
+        "viCodePoints": 11,
+        "viUTF16Units": 11,
+        "viUTF8SHA256": "8165db099773ab58adc079e3b1c63fafd79b86368872affc941de61213d89642",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00dbeddee8efd2b60093982fcb2e4c27619d4ad76c2b52e9a9608dca2ac05552",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row13",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row13",
+      "category": "pos-name",
+      "zhAnchor": "拟声词",
+      "viPrinted": "từ tượng thanh",
+      "printedAbbreviation": "tượng.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "拟声词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "từ tượng thanh",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row13",
+      "literalEvidence": {
+        "viCodePoints": 14,
+        "viUTF16Units": 14,
+        "viUTF8SHA256": "642d7d59e862c8b83a364a9bbb218dd4381c443ad2591c871d9434a02b3a3ef5",
+        "zhCodePoints": 3,
+        "zhUTF8SHA256": "4baf48ebd6f6bcbb6c8e82fd915654269b8696a6132045d629b74611c2ac1e9e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row14",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row14",
+      "category": "pos-name",
+      "zhAnchor": "能愿动词",
+      "viPrinted": "động từ năng nguyện",
+      "printedAbbreviation": "đtnn.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "能愿动词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "động từ năng nguyện",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row14",
+      "literalEvidence": {
+        "viCodePoints": 19,
+        "viUTF16Units": 19,
+        "viUTF8SHA256": "fceb06041663c42d69855667cc60e12ddd655abf6daa31cc9c40bb775e75c8ed",
+        "zhCodePoints": 4,
+        "zhUTF8SHA256": "9e77b2b8143cfc0ebefb88a790ed5570a34c15bc05a82dccb496447b952a77c7",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row15",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row15",
+      "category": "pos-name",
+      "zhAnchor": "前缀",
+      "viPrinted": "tiền tố",
+      "printedAbbreviation": "ttố.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "前缀"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "tiền tố",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row15",
+      "literalEvidence": {
+        "viCodePoints": 7,
+        "viUTF16Units": 7,
+        "viUTF8SHA256": "54bee1316d8cdc5ed73a43053467d480261f2c35eea6496e6b465f0e100ea813",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "461920e1ba6e2d79db7292e8bfa6ca3d98010d5638b744401c62d3503bb4fed5",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row16",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "pos-row16",
+      "category": "pos-name",
+      "zhAnchor": "后缀",
+      "viPrinted": "hậu tố",
+      "printedAbbreviation": "htố.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "后缀"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "hậu tố",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:pos-row16",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "e420727da1c874e076ec41ae1f44409710cb8fbae00df9e04fb7f2a045d872fc",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "006d3ffb11d24809fb1696c45cfca59f7d95b5b6fabf5b0b1fc3b86d4c184878",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:wordlist-header",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "wordlist-header",
+      "category": "heading",
+      "zhAnchor": "词语表",
+      "viPrinted": "Bảng từ vựng",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "词语表"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Bảng từ vựng",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:wordlist-header",
+      "literalEvidence": {
+        "viCodePoints": 12,
+        "viUTF16Units": 12,
+        "viUTF8SHA256": "5941bfaa15cbf07ed0a6eee4a9971168eb5773d3223fdec8bb4564ea733c3ef3",
+        "zhCodePoints": 3,
+        "zhUTF8SHA256": "ea6c8bc0b3da45e4e6727fd3ce73b1bffdd7b6ee3a668e910c168997dbd672a6",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-left-column-word",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "index-left-column-word",
+      "category": "table-header",
+      "zhAnchor": "词语",
+      "viPrinted": "Từ/Cụm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "词语"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Từ/Cụm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:index-left-column-word",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "aa4d18f516416026f89ad8c61b5b4e409fedd0e16728a12be7dcf777effd340e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f3b5980f18ff903e45ea158a57e4d5df6134078f32978e8811f8be214446a36e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-left-column-pinyin",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "index-left-column-pinyin",
+      "category": "table-header",
+      "zhAnchor": "拼音",
+      "viPrinted": "Phiên âm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "拼音"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Phiên âm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:index-left-column-pinyin",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "fbff072bdee13dce65d3171ef00d571ad193241179ec396466858385a6b3e7b6",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7cfb855571b48dea97706d920dd9ac176e90ab4de4c0ce40ef5ad8d21d9c90cf",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-left-column-lesson",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "index-left-column-lesson",
+      "category": "table-header",
+      "zhAnchor": "课号",
+      "viPrinted": "Bài",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "课号"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Bài",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:index-left-column-lesson",
+      "literalEvidence": {
+        "viCodePoints": 3,
+        "viUTF16Units": 3,
+        "viUTF8SHA256": "6c91c55726b0335166a413168eeaa7879e74f457def7be1916b84a4a6655df9c",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00b2e8af625196e9bdba5e75fb7787e0bc9dcf9c9f70741f1b3679714e8906f0",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-right-column-word",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "index-right-column-word",
+      "category": "table-header",
+      "zhAnchor": "词语",
+      "viPrinted": "Từ/Cụm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "词语"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Từ/Cụm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:index-right-column-word",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "aa4d18f516416026f89ad8c61b5b4e409fedd0e16728a12be7dcf777effd340e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f3b5980f18ff903e45ea158a57e4d5df6134078f32978e8811f8be214446a36e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-right-column-pinyin",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "index-right-column-pinyin",
+      "category": "table-header",
+      "zhAnchor": "拼音",
+      "viPrinted": "Phiên âm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "拼音"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Phiên âm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:index-right-column-pinyin",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "fbff072bdee13dce65d3171ef00d571ad193241179ec396466858385a6b3e7b6",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7cfb855571b48dea97706d920dd9ac176e90ab4de4c0ce40ef5ad8d21d9c90cf",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-right-column-lesson",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "index-right-column-lesson",
+      "category": "table-header",
+      "zhAnchor": "课号",
+      "viPrinted": "Bài",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "课号"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Bài",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:index-right-column-lesson",
+      "literalEvidence": {
+        "viCodePoints": 3,
+        "viUTF16Units": 3,
+        "viUTF8SHA256": "6c91c55726b0335166a413168eeaa7879e74f457def7be1916b84a4a6655df9c",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00b2e8af625196e9bdba5e75fb7787e0bc9dcf9c9f70741f1b3679714e8906f0",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-left-column-word",
+      "pdfPage": 156,
+      "printedPage": 142,
+      "section": "index-left-column-word",
+      "category": "table-header",
+      "zhAnchor": "词语",
+      "viPrinted": "Từ/Cụm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "词语"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "Từ/Cụm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        156
+      ],
+      "printedPages": [
+        142
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf156:index-left-column-word",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "aa4d18f516416026f89ad8c61b5b4e409fedd0e16728a12be7dcf777effd340e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f3b5980f18ff903e45ea158a57e4d5df6134078f32978e8811f8be214446a36e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-left-column-pinyin",
+      "pdfPage": 156,
+      "printedPage": 142,
+      "section": "index-left-column-pinyin",
+      "category": "table-header",
+      "zhAnchor": "拼音",
+      "viPrinted": "Phiên âm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "拼音"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "Phiên âm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        156
+      ],
+      "printedPages": [
+        142
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf156:index-left-column-pinyin",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "fbff072bdee13dce65d3171ef00d571ad193241179ec396466858385a6b3e7b6",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7cfb855571b48dea97706d920dd9ac176e90ab4de4c0ce40ef5ad8d21d9c90cf",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-left-column-lesson",
+      "pdfPage": 156,
+      "printedPage": 142,
+      "section": "index-left-column-lesson",
+      "category": "table-header",
+      "zhAnchor": "课号",
+      "viPrinted": "Bài",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "课号"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "Bài",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        156
+      ],
+      "printedPages": [
+        142
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf156:index-left-column-lesson",
+      "literalEvidence": {
+        "viCodePoints": 3,
+        "viUTF16Units": 3,
+        "viUTF8SHA256": "6c91c55726b0335166a413168eeaa7879e74f457def7be1916b84a4a6655df9c",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00b2e8af625196e9bdba5e75fb7787e0bc9dcf9c9f70741f1b3679714e8906f0",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-right-column-word",
+      "pdfPage": 156,
+      "printedPage": 142,
+      "section": "index-right-column-word",
+      "category": "table-header",
+      "zhAnchor": "词语",
+      "viPrinted": "Từ/Cụm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "词语"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "Từ/Cụm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        156
+      ],
+      "printedPages": [
+        142
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf156:index-right-column-word",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "aa4d18f516416026f89ad8c61b5b4e409fedd0e16728a12be7dcf777effd340e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f3b5980f18ff903e45ea158a57e4d5df6134078f32978e8811f8be214446a36e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-right-column-pinyin",
+      "pdfPage": 156,
+      "printedPage": 142,
+      "section": "index-right-column-pinyin",
+      "category": "table-header",
+      "zhAnchor": "拼音",
+      "viPrinted": "Phiên âm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "拼音"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "Phiên âm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        156
+      ],
+      "printedPages": [
+        142
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf156:index-right-column-pinyin",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "fbff072bdee13dce65d3171ef00d571ad193241179ec396466858385a6b3e7b6",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7cfb855571b48dea97706d920dd9ac176e90ab4de4c0ce40ef5ad8d21d9c90cf",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-right-column-lesson",
+      "pdfPage": 156,
+      "printedPage": 142,
+      "section": "index-right-column-lesson",
+      "category": "table-header",
+      "zhAnchor": "课号",
+      "viPrinted": "Bài",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "课号"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "Bài",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        156
+      ],
+      "printedPages": [
+        142
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf156:index-right-column-lesson",
+      "literalEvidence": {
+        "viCodePoints": 3,
+        "viUTF16Units": 3,
+        "viUTF8SHA256": "6c91c55726b0335166a413168eeaa7879e74f457def7be1916b84a4a6655df9c",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00b2e8af625196e9bdba5e75fb7787e0bc9dcf9c9f70741f1b3679714e8906f0",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-left-column-word",
+      "pdfPage": 157,
+      "printedPage": 143,
+      "section": "index-left-column-word",
+      "category": "table-header",
+      "zhAnchor": "词语",
+      "viPrinted": "Từ/Cụm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "词语"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "Từ/Cụm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        157
+      ],
+      "printedPages": [
+        143
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf157:index-left-column-word",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "aa4d18f516416026f89ad8c61b5b4e409fedd0e16728a12be7dcf777effd340e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f3b5980f18ff903e45ea158a57e4d5df6134078f32978e8811f8be214446a36e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-left-column-pinyin",
+      "pdfPage": 157,
+      "printedPage": 143,
+      "section": "index-left-column-pinyin",
+      "category": "table-header",
+      "zhAnchor": "拼音",
+      "viPrinted": "Phiên âm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "拼音"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "Phiên âm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        157
+      ],
+      "printedPages": [
+        143
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf157:index-left-column-pinyin",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "fbff072bdee13dce65d3171ef00d571ad193241179ec396466858385a6b3e7b6",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7cfb855571b48dea97706d920dd9ac176e90ab4de4c0ce40ef5ad8d21d9c90cf",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-left-column-lesson",
+      "pdfPage": 157,
+      "printedPage": 143,
+      "section": "index-left-column-lesson",
+      "category": "table-header",
+      "zhAnchor": "课号",
+      "viPrinted": "Bài",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "课号"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "Bài",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        157
+      ],
+      "printedPages": [
+        143
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf157:index-left-column-lesson",
+      "literalEvidence": {
+        "viCodePoints": 3,
+        "viUTF16Units": 3,
+        "viUTF8SHA256": "6c91c55726b0335166a413168eeaa7879e74f457def7be1916b84a4a6655df9c",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00b2e8af625196e9bdba5e75fb7787e0bc9dcf9c9f70741f1b3679714e8906f0",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-right-column-word",
+      "pdfPage": 157,
+      "printedPage": 143,
+      "section": "index-right-column-word",
+      "category": "table-header",
+      "zhAnchor": "词语",
+      "viPrinted": "Từ/Cụm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "词语"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "Từ/Cụm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        157
+      ],
+      "printedPages": [
+        143
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf157:index-right-column-word",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "aa4d18f516416026f89ad8c61b5b4e409fedd0e16728a12be7dcf777effd340e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f3b5980f18ff903e45ea158a57e4d5df6134078f32978e8811f8be214446a36e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-right-column-pinyin",
+      "pdfPage": 157,
+      "printedPage": 143,
+      "section": "index-right-column-pinyin",
+      "category": "table-header",
+      "zhAnchor": "拼音",
+      "viPrinted": "Phiên âm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "拼音"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "Phiên âm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        157
+      ],
+      "printedPages": [
+        143
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf157:index-right-column-pinyin",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "fbff072bdee13dce65d3171ef00d571ad193241179ec396466858385a6b3e7b6",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7cfb855571b48dea97706d920dd9ac176e90ab4de4c0ce40ef5ad8d21d9c90cf",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-right-column-lesson",
+      "pdfPage": 157,
+      "printedPage": 143,
+      "section": "index-right-column-lesson",
+      "category": "table-header",
+      "zhAnchor": "课号",
+      "viPrinted": "Bài",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "课号"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 157,
+          "printedPage": 143,
+          "text": "Bài",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        157
+      ],
+      "printedPages": [
+        143
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf157:index-right-column-lesson",
+      "literalEvidence": {
+        "viCodePoints": 3,
+        "viUTF16Units": 3,
+        "viUTF8SHA256": "6c91c55726b0335166a413168eeaa7879e74f457def7be1916b84a4a6655df9c",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00b2e8af625196e9bdba5e75fb7787e0bc9dcf9c9f70741f1b3679714e8906f0",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-left-column-word",
+      "pdfPage": 158,
+      "printedPage": 144,
+      "section": "index-left-column-word",
+      "category": "table-header",
+      "zhAnchor": "词语",
+      "viPrinted": "Từ/Cụm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "词语"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "Từ/Cụm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        158
+      ],
+      "printedPages": [
+        144
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf158:index-left-column-word",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "aa4d18f516416026f89ad8c61b5b4e409fedd0e16728a12be7dcf777effd340e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f3b5980f18ff903e45ea158a57e4d5df6134078f32978e8811f8be214446a36e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-left-column-pinyin",
+      "pdfPage": 158,
+      "printedPage": 144,
+      "section": "index-left-column-pinyin",
+      "category": "table-header",
+      "zhAnchor": "拼音",
+      "viPrinted": "Phiên âm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "拼音"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "Phiên âm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        158
+      ],
+      "printedPages": [
+        144
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf158:index-left-column-pinyin",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "fbff072bdee13dce65d3171ef00d571ad193241179ec396466858385a6b3e7b6",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7cfb855571b48dea97706d920dd9ac176e90ab4de4c0ce40ef5ad8d21d9c90cf",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-left-column-lesson",
+      "pdfPage": 158,
+      "printedPage": 144,
+      "section": "index-left-column-lesson",
+      "category": "table-header",
+      "zhAnchor": "课号",
+      "viPrinted": "Bài",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "课号"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "Bài",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        158
+      ],
+      "printedPages": [
+        144
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf158:index-left-column-lesson",
+      "literalEvidence": {
+        "viCodePoints": 3,
+        "viUTF16Units": 3,
+        "viUTF8SHA256": "6c91c55726b0335166a413168eeaa7879e74f457def7be1916b84a4a6655df9c",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00b2e8af625196e9bdba5e75fb7787e0bc9dcf9c9f70741f1b3679714e8906f0",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-right-column-word",
+      "pdfPage": 158,
+      "printedPage": 144,
+      "section": "index-right-column-word",
+      "category": "table-header",
+      "zhAnchor": "词语",
+      "viPrinted": "Từ/Cụm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "词语"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "Từ/Cụm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        158
+      ],
+      "printedPages": [
+        144
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf158:index-right-column-word",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "aa4d18f516416026f89ad8c61b5b4e409fedd0e16728a12be7dcf777effd340e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f3b5980f18ff903e45ea158a57e4d5df6134078f32978e8811f8be214446a36e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-right-column-pinyin",
+      "pdfPage": 158,
+      "printedPage": 144,
+      "section": "index-right-column-pinyin",
+      "category": "table-header",
+      "zhAnchor": "拼音",
+      "viPrinted": "Phiên âm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "拼音"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "Phiên âm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        158
+      ],
+      "printedPages": [
+        144
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf158:index-right-column-pinyin",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "fbff072bdee13dce65d3171ef00d571ad193241179ec396466858385a6b3e7b6",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7cfb855571b48dea97706d920dd9ac176e90ab4de4c0ce40ef5ad8d21d9c90cf",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-right-column-lesson",
+      "pdfPage": 158,
+      "printedPage": 144,
+      "section": "index-right-column-lesson",
+      "category": "table-header",
+      "zhAnchor": "课号",
+      "viPrinted": "Bài",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "课号"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "Bài",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        158
+      ],
+      "printedPages": [
+        144
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf158:index-right-column-lesson",
+      "literalEvidence": {
+        "viCodePoints": 3,
+        "viUTF16Units": 3,
+        "viUTF8SHA256": "6c91c55726b0335166a413168eeaa7879e74f457def7be1916b84a4a6655df9c",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00b2e8af625196e9bdba5e75fb7787e0bc9dcf9c9f70741f1b3679714e8906f0",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-left-column-word",
+      "pdfPage": 159,
+      "printedPage": 145,
+      "section": "index-left-column-word",
+      "category": "table-header",
+      "zhAnchor": "词语",
+      "viPrinted": "Từ/Cụm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "词语"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "Từ/Cụm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        159
+      ],
+      "printedPages": [
+        145
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf159:index-left-column-word",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "aa4d18f516416026f89ad8c61b5b4e409fedd0e16728a12be7dcf777effd340e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f3b5980f18ff903e45ea158a57e4d5df6134078f32978e8811f8be214446a36e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-left-column-pinyin",
+      "pdfPage": 159,
+      "printedPage": 145,
+      "section": "index-left-column-pinyin",
+      "category": "table-header",
+      "zhAnchor": "拼音",
+      "viPrinted": "Phiên âm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "拼音"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "Phiên âm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        159
+      ],
+      "printedPages": [
+        145
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf159:index-left-column-pinyin",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "fbff072bdee13dce65d3171ef00d571ad193241179ec396466858385a6b3e7b6",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7cfb855571b48dea97706d920dd9ac176e90ab4de4c0ce40ef5ad8d21d9c90cf",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-left-column-lesson",
+      "pdfPage": 159,
+      "printedPage": 145,
+      "section": "index-left-column-lesson",
+      "category": "table-header",
+      "zhAnchor": "课号",
+      "viPrinted": "Bài",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "课号"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "Bài",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        159
+      ],
+      "printedPages": [
+        145
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf159:index-left-column-lesson",
+      "literalEvidence": {
+        "viCodePoints": 3,
+        "viUTF16Units": 3,
+        "viUTF8SHA256": "6c91c55726b0335166a413168eeaa7879e74f457def7be1916b84a4a6655df9c",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00b2e8af625196e9bdba5e75fb7787e0bc9dcf9c9f70741f1b3679714e8906f0",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-right-column-word",
+      "pdfPage": 159,
+      "printedPage": 145,
+      "section": "index-right-column-word",
+      "category": "table-header",
+      "zhAnchor": "词语",
+      "viPrinted": "Từ/Cụm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "词语"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "Từ/Cụm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        159
+      ],
+      "printedPages": [
+        145
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf159:index-right-column-word",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "aa4d18f516416026f89ad8c61b5b4e409fedd0e16728a12be7dcf777effd340e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f3b5980f18ff903e45ea158a57e4d5df6134078f32978e8811f8be214446a36e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-right-column-pinyin",
+      "pdfPage": 159,
+      "printedPage": 145,
+      "section": "index-right-column-pinyin",
+      "category": "table-header",
+      "zhAnchor": "拼音",
+      "viPrinted": "Phiên âm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "拼音"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "Phiên âm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        159
+      ],
+      "printedPages": [
+        145
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf159:index-right-column-pinyin",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "fbff072bdee13dce65d3171ef00d571ad193241179ec396466858385a6b3e7b6",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7cfb855571b48dea97706d920dd9ac176e90ab4de4c0ce40ef5ad8d21d9c90cf",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-right-column-lesson",
+      "pdfPage": 159,
+      "printedPage": 145,
+      "section": "index-right-column-lesson",
+      "category": "table-header",
+      "zhAnchor": "课号",
+      "viPrinted": "Bài",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "课号"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "Bài",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        159
+      ],
+      "printedPages": [
+        145
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf159:index-right-column-lesson",
+      "literalEvidence": {
+        "viCodePoints": 3,
+        "viUTF16Units": 3,
+        "viUTF8SHA256": "6c91c55726b0335166a413168eeaa7879e74f457def7be1916b84a4a6655df9c",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00b2e8af625196e9bdba5e75fb7787e0bc9dcf9c9f70741f1b3679714e8906f0",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-index-column-word",
+      "pdfPage": 159,
+      "printedPage": 145,
+      "section": "proper-index-column-word",
+      "category": "table-header",
+      "zhAnchor": "词语",
+      "viPrinted": "Từ/Cụm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "词语"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "Từ/Cụm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        159
+      ],
+      "printedPages": [
+        145
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf159:proper-index-column-word",
+      "literalEvidence": {
+        "viCodePoints": 6,
+        "viUTF16Units": 6,
+        "viUTF8SHA256": "aa4d18f516416026f89ad8c61b5b4e409fedd0e16728a12be7dcf777effd340e",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "f3b5980f18ff903e45ea158a57e4d5df6134078f32978e8811f8be214446a36e",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-index-column-pinyin",
+      "pdfPage": 159,
+      "printedPage": 145,
+      "section": "proper-index-column-pinyin",
+      "category": "table-header",
+      "zhAnchor": "拼音",
+      "viPrinted": "Phiên âm",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "拼音"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "Phiên âm",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        159
+      ],
+      "printedPages": [
+        145
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf159:proper-index-column-pinyin",
+      "literalEvidence": {
+        "viCodePoints": 8,
+        "viUTF16Units": 8,
+        "viUTF8SHA256": "fbff072bdee13dce65d3171ef00d571ad193241179ec396466858385a6b3e7b6",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "7cfb855571b48dea97706d920dd9ac176e90ab4de4c0ce40ef5ad8d21d9c90cf",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-index-column-lesson",
+      "pdfPage": 159,
+      "printedPage": 145,
+      "section": "proper-index-column-lesson",
+      "category": "table-header",
+      "zhAnchor": "课号",
+      "viPrinted": "Bài",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "课号"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "Bài",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        159
+      ],
+      "printedPages": [
+        145
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf159:proper-index-column-lesson",
+      "literalEvidence": {
+        "viCodePoints": 3,
+        "viUTF16Units": 3,
+        "viUTF8SHA256": "6c91c55726b0335166a413168eeaa7879e74f457def7be1916b84a4a6655df9c",
+        "zhCodePoints": 2,
+        "zhUTF8SHA256": "00b2e8af625196e9bdba5e75fb7787e0bc9dcf9c9f70741f1b3679714e8906f0",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:star-legend",
+      "pdfPage": 155,
+      "printedPage": 141,
+      "section": "star-legend",
+      "category": "legend",
+      "zhAnchor": "前面加“★”的是本级超纲词。",
+      "viPrinted": "Những từ có đánh dấu “*” ở phía trước là từ vượt khung của cấp độ này.",
+      "printedFootnoteMarker": "*",
+      "starGlyphTranscription": "Vietnamese quoted asterisk-like printed glyph is transcribed as *; Chinese quoted five-point star is represented as ★. These are manual visual glyph proxies from a scanned page, not extracted PDF codepoints.",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "前面加“★”的是本级超纲词。"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 155,
+          "printedPage": 141,
+          "text": "Những từ có đánh dấu “*” ở phía trước là từ vượt khung của cấp độ này.",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        155
+      ],
+      "printedPages": [
+        141
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf155:star-legend",
+      "literalEvidence": {
+        "viCodePoints": 70,
+        "viUTF16Units": 70,
+        "viUTF8SHA256": "d1c83f6aedfb55b62a5a528c5a03bf1513b93440fa872234ce59437bce52033e",
+        "zhCodePoints": 14,
+        "zhUTF8SHA256": "fcf0eb062535d162bb4c9f0e2118f925e7b33e1783b6bb933d95e4449d81a595",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:running-series-header",
+      "pdfPage": 156,
+      "printedPage": 142,
+      "section": "running-series-header",
+      "category": "running-header",
+      "zhAnchor": "新HSK教程2",
+      "viPrinted": "Giáo trình New HSK 2",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "新HSK教程2"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 156,
+          "printedPage": 142,
+          "text": "Giáo trình New HSK 2",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        156
+      ],
+      "printedPages": [
+        142
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf156:running-series-header",
+      "literalEvidence": {
+        "viCodePoints": 20,
+        "viUTF16Units": 20,
+        "viUTF8SHA256": "62fcc14fe961537d769ea9c06e7ca8aea9073d4410ff891d2aa6a9992538a34e",
+        "zhCodePoints": 7,
+        "zhUTF8SHA256": "d94cbf0a0fac9299805772ec82f3c0b05f17f6d29334c6de9735fbcd77b9cca4",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:running-series-header",
+      "pdfPage": 158,
+      "printedPage": 144,
+      "section": "running-series-header",
+      "category": "running-header",
+      "zhAnchor": "新HSK教程2",
+      "viPrinted": "Giáo trình New HSK 2",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "新HSK教程2"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 158,
+          "printedPage": 144,
+          "text": "Giáo trình New HSK 2",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        158
+      ],
+      "printedPages": [
+        144
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf158:running-series-header",
+      "literalEvidence": {
+        "viCodePoints": 20,
+        "viUTF16Units": 20,
+        "viUTF8SHA256": "62fcc14fe961537d769ea9c06e7ca8aea9073d4410ff891d2aa6a9992538a34e",
+        "zhCodePoints": 7,
+        "zhUTF8SHA256": "d94cbf0a0fac9299805772ec82f3c0b05f17f6d29334c6de9735fbcd77b9cca4",
+        "normalizationPerformed": false
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-header",
+      "pdfPage": 159,
+      "printedPage": 145,
+      "section": "proper-header",
+      "category": "heading",
+      "zhAnchor": "专有名词",
+      "viPrinted": "Danh từ riêng",
+      "documentSourceId": "hsk2-official-vietnamese-20261004",
+      "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+      "reviewStatus": "author-only-pending-independent-original-PDF-review",
+      "zhFragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "专有名词"
+        }
+      ],
+      "fragments": [
+        {
+          "pdfPage": 159,
+          "printedPage": 145,
+          "text": "Danh từ riêng",
+          "joinerAfter": ""
+        }
+      ],
+      "pdfPages": [
+        159
+      ],
+      "printedPages": [
+        145
+      ],
+      "physicalSourceKey": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b:pdf159:proper-header",
+      "literalEvidence": {
+        "viCodePoints": 13,
+        "viUTF16Units": 13,
+        "viUTF8SHA256": "64e98eca7d6dfee2c008f8513ae62424a2de340a50f137fc97c03c2e4b302498",
+        "zhCodePoints": 4,
+        "zhUTF8SHA256": "e943e220431f6751884f6b75a7c0cfd00faa1d0848fafe880dbfb9646515ad53",
+        "normalizationPerformed": false
+      }
+    }
+  ],
+  "boundaries": {
+    "websiteComparisonPerformed": false,
+    "websiteAlignmentComplete": false,
+    "productionChanged": false,
+    "independentSourceAcceptancePerformed": false,
+    "oldLostAcceptedReportsReused": false
+  },
+  "correctionOfSourceSHA256": "5d410fd3122ef36dbcdb74446e0d4a9fe9b08d10c86f2634f566d14e82864255",
+  "correctionQualification": "same author correction; not independent acceptance"
+}
