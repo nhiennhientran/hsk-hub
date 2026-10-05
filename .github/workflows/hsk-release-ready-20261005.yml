@@ -81,6 +81,24 @@ jobs:
           retention-days: 90
           compression-level: 0
           path: course-app/.repro-output/release-ready/site/
+      - name: Retain compact acceptance evidence and mobile/desktop review images
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-release-review-${{ matrix.browser }}
+          include-hidden-files: true
+          if-no-files-found: error
+          path: |
+            course-app/.repro-output/release-ready/adoption.json
+            course-app/.repro-output/release-ready/display-browser.json
+            course-app/.repro-output/release-ready/media-browser.json
+            course-app/.repro-output/release-ready/assembly.json
+            course-app/.repro-output/release-ready/frozen/course-engine/unified-release-manifest.json
+            course-app/.repro-output/package-closure-browser.json
+            hsk1-app/.repro-output/step8-browser.json
+            hsk1-app/.repro-output/student-build-source-audit.json
+            course-app/.repro-output/release-ready/display-screenshots/**/official-vi-hsk*-grammar-390.png
+            course-app/.repro-output/release-ready/display-screenshots/**/official-vi-hsk*-grammar-1440.png
       - uses: actions/upload-artifact@v4
         if: always()
         with:
