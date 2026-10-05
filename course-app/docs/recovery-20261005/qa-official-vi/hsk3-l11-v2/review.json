@@ -1,0 +1,3546 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "sourceAuthor": "native_catalogue",
+  "course": "hsk3",
+  "lesson": 11,
+  "status": "accepted-source-transcription-fidelity-localcomplete",
+  "authorInput": {
+    "directory": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11-v2",
+    "sourceFile": "source.json",
+    "sourceSHA256": "de6a167085bf6fef8f60df83c99943e9a2a89cab6a0dfc984a1d239990ccf04f",
+    "freezeFile": "freeze-manifest.json",
+    "freezeSHA256": "f772c1a59528560b67c2b0ac0311118ad20817efccb29f435caff14487d6e007",
+    "stageFile": "STAGE",
+    "stageSHA256": "6476ac3d45908f0474cfdbe17982c41190aa8e92bc02f21a3ae992560352f9b4"
+  },
+  "freshOriginalReadEvidence": {
+    "reviewDirectory": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11",
+    "reviewSHA256": "891f1c9c3b64d58cc6f23900809c124aabc6117dd95142db4480e9000ed9e2ab",
+    "freezeSHA256": "c459924421e40adaab454d7b092302235fa4caa741b4b5528b65e3ef6bf6bae6",
+    "originalPDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+    "actuallyReadFreshFullPDFPages": [
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      202,
+      203
+    ],
+    "actuallyReadFreshBoundary": 116,
+    "independentlyReadFive5xDetails": true,
+    "all30AuthorPNGsActuallyRerendered": true,
+    "previousLostAcceptanceReused": false
+  },
+  "scope": {
+    "bodyPDFPages": [
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115
+    ],
+    "bodyPrintedPages": [
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103
+    ],
+    "appendixPDFPages": [
+      202,
+      203
+    ],
+    "appendixPrintedPages": [
+      190,
+      191
+    ],
+    "sourceItems": 119,
+    "bodyVI": 94,
+    "appendixVI": 25,
+    "ordinaryWords": 27,
+    "properRows": 1,
+    "rawBlankPOS": [
+      "只能",
+      "老张"
+    ],
+    "appendixRoleLinesByText": [
+      7,
+      8,
+      7
+    ],
+    "wholeUnlabelledParagraphs": 1,
+    "bodyToAppendixBindings": 23,
+    "samePhysicalPageColumnTurns": 1,
+    "crossPhysicalPageTurns": 0,
+    "summaries": 0,
+    "videos": 0
+  },
+  "counts": {
+    "perIDAccepted": 119,
+    "perIDRepair": 0,
+    "perIDHold": 0,
+    "missingVIUnits": 0,
+    "bodyBindingsAccepted": 23,
+    "bodyBindingsRepair": 0
+  },
+  "sourceRecordDecisions": [
+    {
+      "sourceId": "hsk3-official-vi:l11:p095:lesson-marker",
+      "decision": "accepted",
+      "candidateRecordSHA256": "92b5d73b03e7c29b18a43ab81f01998041a4ce3e1e5211377ea03da65e8cfce5",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedLessonNumber",
+        "sourceFieldEvidence",
+        "zhAnchorKind",
+        "printedChineseAnchorPresent"
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": "structural-locator-not-verbatim"
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p095:lesson-title",
+      "decision": "accepted",
+      "candidateRecordSHA256": "90efc9f016c7a1750f693d0db40023418d1778a6b622207954213f14d65ceb3f",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p095:goals-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "d104358ea67f40378dc10c36836d92ec341a5fb0496d9e5c13100f8302c447c6",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p095:goal-01",
+      "decision": "accepted",
+      "candidateRecordSHA256": "1b00ef9c0f66fd7d95685be9588f84153898bbb6b710438793e4bee7a381e0c2",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p095:goal-02",
+      "decision": "accepted",
+      "candidateRecordSHA256": "a8a1c57f78bfc3bca68606e109ba90f86686ad57021a875cdf09facfd7aebd35",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p095:goal-03",
+      "decision": "accepted",
+      "candidateRecordSHA256": "fe47e55dd2a72d811b91428150736bf7afa245957bd61458074a7c6b991ceeae",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p095:warmup-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "824ac66bd7eccefc277eacc03a5e19fe3df6a6d7bae22b7d68b3b26a24ec9237",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p095:warmup-match-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "eace34332b8fda584c9521a667492532689b3473ecda7f66c275db48aee20934",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p095:warmup-pair-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "2c76ab1425bebda3a69917190a58404bcd080c38dfd10033e2f901fe5eb56b2d",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p095:warmup-question-01",
+      "decision": "accepted",
+      "candidateRecordSHA256": "3d07275d8862f3b4ef81029ce8fb6e7322ac3bfbfb8b34f410dda7930c056ab7",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p095:warmup-question-02",
+      "decision": "accepted",
+      "candidateRecordSHA256": "832d3114e8ebbb0ba7280b499d88ee375ed2a91a1d6d9a89b1a3d31f5f38dd32",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:series-running-header",
+      "decision": "accepted",
+      "candidateRecordSHA256": "89f240abfcb049b3d8bd770a5aa20b6f9ed41c1b5d7d56ab1b39c2297ff2002b",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:text1-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "5c1cec023df7c3e4bb78014b15a36541ef0a92d40c30c81b1ddc18c3c000cb0d",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:text1-background",
+      "decision": "accepted",
+      "candidateRecordSHA256": "9bf3914197279408e2f146368c55cbcdab5310b9001059bc739039e440c4913b",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:text1-listening-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "21ba323ac2ee5f3c75482768c53f5e5add66c26c52bc9c34dc6c840631b593dd",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedAudioReference",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:text1-words-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "3a88a62d3f843ce6423ead5192ccfb98b32d016930b3e5430a46060c84301c54",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedAudioReference",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:word-01",
+      "decision": "accepted",
+      "candidateRecordSHA256": "f70941f4b9d3c12b45e5cc8021fdc82453cdda01ef310f418468321e715b00a1",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:word-02",
+      "decision": "accepted",
+      "candidateRecordSHA256": "9e05cdee6836a90a05252f5e17652bca91e490c9a95b0d93fea9400fb8030261",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:word-03",
+      "decision": "accepted",
+      "candidateRecordSHA256": "6e8c7a262d8c351d5a37b4ba406f4e8a6959883acb96754209c5dd22a0bee687",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:word-04",
+      "decision": "accepted",
+      "candidateRecordSHA256": "bf32698efee95ed147690aa4e437d25bf79df3e7fb778e379dd8bf19f690d898",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:word-05",
+      "decision": "accepted",
+      "candidateRecordSHA256": "007a9f4e055d6a42fba41ddc3d3b413853a00f0a8f0d0f8daa26b0a4461721aa",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:word-06",
+      "decision": "accepted",
+      "candidateRecordSHA256": "3c5e2e8a3b3fd4246ba573a01077f63481d7b56994659b6cca2b534c24dce51d",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:word-07",
+      "decision": "accepted",
+      "candidateRecordSHA256": "e400bc7a16c6b8e7874e8368194e8c131181adcaf773090e6499f2525c59e799",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:word-08",
+      "decision": "accepted",
+      "candidateRecordSHA256": "19c1614f52e21bc8356c65ec6eb8c072a23a59e4bd0adce16e246bd7516189ff",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "printedPinyinLayoutLines",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:word-09",
+      "decision": "accepted",
+      "candidateRecordSHA256": "52cd086adf834625bd1a1cceecc3e823095cc73fe41f7dfb0c473a3b9a2c739e",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:help-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "29a60b1c8ba23aa73ae4f4d88deea83486d011ca18be303d231f311fdb286fa9",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p096:help-connection-explanation",
+      "decision": "accepted",
+      "candidateRecordSHA256": "83bb5e0bf7668b5555eb63837d24f12cd21860004dc70cb4210a7d158ff3acfd",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf108-p096.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p097:lesson-running-header",
+      "decision": "accepted",
+      "candidateRecordSHA256": "1713ec2ef486eb0c2bdb8d0b07369205ea40353b0c3ac20763ef5cf1d44725f3",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedLessonNumber",
+        "sourceFieldEvidence",
+        "zhAnchorKind",
+        "printedChineseAnchorPresent",
+        "printedChineseTitle"
+      ],
+      "evidence": [
+        "renders/pdf109-p097.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": "structural-locator-not-verbatim"
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p097:text1-role-read-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "3f9c1c8db81b15eccdbc71da1dcde341a3b143f66fb71ad4b8cda0a741430a43",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf109-p097.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p097:grammar-classroom-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "57bb2c4e731675cec05a25609889d95e2408455005e2a40ee8166dba95430e5d",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf109-p097.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p097:grammar-1-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "c39575bf7e8b250677a52b6e85035d62640f0c553aa0d05fb62053847cf813cf",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf109-p097.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p097:grammar-1-haishi-explanation",
+      "decision": "accepted",
+      "candidateRecordSHA256": "6f8a5da067cd960a338d276aac7dd7837e2a9bdbf061406c5b0577030dbc1042",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf109-p097.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p097:grammar-1-huozhe-explanation",
+      "decision": "accepted",
+      "candidateRecordSHA256": "9ce9b3f6641045a61a87abae408b712aaf78f9bb7ee00fff6c6f64f20d11dbfc",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf109-p097.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p097:grammar-1-complete-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "af2e0d6929970bf860d65db884ff70b15c9b703055fcaf8adc38cb3ec4c9c273",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf109-p097.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p097:text2-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "044eef82b19a1dc012b3ce68aca0446b69fd2769b195ffede6f789320c371f38",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf109-p097.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p097:text2-background",
+      "decision": "accepted",
+      "candidateRecordSHA256": "9bc6b05bc8d0f8a18417d8a5b60a9d06fe586901e5b95ce5bfba771f5a46fb4b",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf109-p097.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p097:text2-listening-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "4394ad0b004c96c8643ef33b1f6d6c65fd5ccae13421ede774b084db5fd0f538",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedAudioReference",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf109-p097.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:series-running-header",
+      "decision": "accepted",
+      "candidateRecordSHA256": "09281f7f79a6b0db7e7ee833145a2600cb26e046cfb427e0f0ccf064e3e58882",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:text2-words-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "c417e487db5239b63fb81e6988c546a629d819f73accef82a0bbc7a4ebfd35a9",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedAudioReference",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:word-10",
+      "decision": "accepted",
+      "candidateRecordSHA256": "60ce6d3ef9f74db417bf6c709bb989f002178142f22f3769b257184c0bbfe4f6",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:word-11",
+      "decision": "accepted",
+      "candidateRecordSHA256": "ff5e6cbc4b5b13103a8bb2f3a8f07474e35171c1150181175d670b8e5bb3a4e8",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:word-12",
+      "decision": "accepted",
+      "candidateRecordSHA256": "95a267d9d1a661bfcfb69388ed427b9b65a3daac85cc5d6385c031934282a08d",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:word-13",
+      "decision": "accepted",
+      "candidateRecordSHA256": "a528c54e34c956f56dcd113afe4fe70965efd195ebdf7d9b6c889566c594b205",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:word-14",
+      "decision": "accepted",
+      "candidateRecordSHA256": "cd701dfe91fdf370e01bff1167f6d21022081a8850b85fd8cfe4f4135af7078c",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:word-15",
+      "decision": "accepted",
+      "candidateRecordSHA256": "8541ff3ef76025db68d59a27bb00eafe53f17adcc09cfc5bd72115f357920d11",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:text2-role-read-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "0bc3c7ad5990c8614eeceb19d799ab8472de413459cb1a86b1e702ee939cc343",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:grammar-classroom-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "2fcf61a1f363f4c3572801d5dd6a63d48b87a2999e991be57af20b8a0020dbaf",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:grammar-2-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "25224ccc9cf124483f29db0428aa9fd90059472c333893167b43bb53895d7167",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p098:grammar-2-explanation",
+      "decision": "accepted",
+      "candidateRecordSHA256": "168b1a37f40b09f4faa7958f05492af316bcbeeca2ae9437afad1999e5652b80",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf110-p098.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:lesson-running-header",
+      "decision": "accepted",
+      "candidateRecordSHA256": "62c564265278d9ba60fba06f509d2d1db3b073c67304416e21646a28d7726f5e",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedLessonNumber",
+        "sourceFieldEvidence",
+        "zhAnchorKind",
+        "printedChineseAnchorPresent",
+        "printedChineseTitle"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": "structural-locator-not-verbatim"
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:grammar-2-complete-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "3f388c29a1410760f81b2d84ab80781f3516303c5ad7aebc270f25bd651ccd58",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:text3-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "89122e115948f8fdcca5df441a0ea3e9ed2ef7f2d6fbdb41bfceb56ca8c4ae33",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:text3-background",
+      "decision": "accepted",
+      "candidateRecordSHA256": "789152fcf834780e1bcf2f36251d07a3aa94dbf7234af06c741bc649bd155398",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:text3-listening-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "a4952ad11458c2e31f2ae58928d8b434b413c02b2b1d8c2d0318a004e7d57ec1",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedAudioReference",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:text3-words-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "76222daccf8a8f252b3cbcf54c75fc3939c9b2a196a8815cfbbe18a888b81fa7",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedAudioReference",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:word-16",
+      "decision": "accepted",
+      "candidateRecordSHA256": "d0f9000bf751cbafa4172e5d3669f2e2dc48f99aa44ec3a8bf31a850aae9d6ad",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:word-17",
+      "decision": "accepted",
+      "candidateRecordSHA256": "87600a4fa48ff142ff18db1e055bff4870b78a58902880c97c300244932cbf27",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:word-18",
+      "decision": "accepted",
+      "candidateRecordSHA256": "e56a49a3579cafcfbd965bbaa9489e116e67ad16fa81ea182a070c71defe8636",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:word-19",
+      "decision": "accepted",
+      "candidateRecordSHA256": "b830dad287bc02e61984d4f32ebb11684c2137fbb13b1544c9ee497a022b8a11",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:word-20",
+      "decision": "accepted",
+      "candidateRecordSHA256": "81b0624097c21b1cb898d0d8942254a138422950a6232c6ca598a87a50b69b3c",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:proper-nouns-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "70d3d32b8cfd00a73c11b2167c574d456ae5e34f647752368021d2cf1abb0a3d",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p099:proper-noun-01",
+      "decision": "accepted",
+      "candidateRecordSHA256": "cf981eb5cabdd1c24ca163252472a7ef893f25b40b0fd319226cf32aa52db67b",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf111-p099.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p100:series-running-header",
+      "decision": "accepted",
+      "candidateRecordSHA256": "90bbf227bbac1829acdf39262a5058aa24cef48ba3d9cfa1daddab2fe2471c3a",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf112-p100.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p100:text3-role-read-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "20978ec85205e085e228f697b0166a5ca9aa83bb57d742175a1ae7b877f026fb",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf112-p100.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p100:grammar-classroom-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "00e07fa255d57428d45cc08f952a45f6f82bc2f4750447c62d9f16d17206b825",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf112-p100.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p100:grammar-3-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "986c9493d121e37bea3faf5fd0c086c474405768e4065a9c8332e722a9f83b3d",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf112-p100.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p100:grammar-3-explanation",
+      "decision": "accepted",
+      "candidateRecordSHA256": "8dec5c63bd492586a0fd017aafa19c17df710ca26c7ae0b94bebca637ba7189a",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf112-p100.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p100:grammar-3-complete-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "559df1306e7831f35b16adbf65b88bfe8f5ee700a64c47a733ffb92e945a0ea1",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf112-p100.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p100:text4-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "3fc92221f79e690b866aac444b80f53e9eef482e8274921b8ddaec7c51c55f57",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf112-p100.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p100:text4-background",
+      "decision": "accepted",
+      "candidateRecordSHA256": "5a7991b669b9d87e4af7659df85a78adb88390be31df986bf84f63794a4257d4",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf112-p100.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p100:text4-listening-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "97f4df6603c7eaf0cbd148f18d2641f87157e0935309bd52a036f555b36071cd",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedAudioReference",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf112-p100.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:lesson-running-header",
+      "decision": "accepted",
+      "candidateRecordSHA256": "e45eb148b995649d21b673e47755ff90453d329735c44717853913a4da9557f7",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedLessonNumber",
+        "sourceFieldEvidence",
+        "zhAnchorKind",
+        "printedChineseAnchorPresent",
+        "printedChineseTitle"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": "structural-locator-not-verbatim"
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:text4-words-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "9593984a3d8ee4cc1221b05ae804bb5cdb279fd0781e6f2958b4779f83f13a15",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedAudioReference",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:word-21",
+      "decision": "accepted",
+      "candidateRecordSHA256": "a4a6951567675f85401d69ceb555073e4af9db194389e7c21c67f50be314fb3f",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:word-22",
+      "decision": "accepted",
+      "candidateRecordSHA256": "00582ad3d09141b9949b757803ab5eefb3b0df9732d29d5de8400eaf400d4d6c",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:word-23",
+      "decision": "accepted",
+      "candidateRecordSHA256": "b44bc60616cb8b75e07611f0edfa44aed4994f5302c6d73e594e4129709a591e",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:word-24",
+      "decision": "accepted",
+      "candidateRecordSHA256": "6d7470d3265313824a525f2d0c1274ff4fcbc1dac1f206678837967cd6b08fba",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:word-25",
+      "decision": "accepted",
+      "candidateRecordSHA256": "f545f85ae998e1f82e3a06e6000d8d24e56714659191d3bd1f7c220bfe652958",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:word-26",
+      "decision": "accepted",
+      "candidateRecordSHA256": "36c50cece102d32ce440b8fcb2c06bfbf259a75843672b83033fd0b229301f54",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:word-27",
+      "decision": "accepted",
+      "candidateRecordSHA256": "40c7b4504e1d5a429dd5c11e987085564f4d2a63ef35da0636e2218ba8ff6d17",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedNumber",
+        "printedPinyin",
+        "printedPOSRaw",
+        "posPrinted",
+        "sourceWordKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:text4-read-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "c586d24668777432ba770970f75dd79825d3f0001dc595c2f8a3fff173f8b769",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:grammar-classroom-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "f1faf7846ccfac71a6bf45969926da66069997c1a420d5b204effb25844872b7",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:grammar-4-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "a2266f7349591740d8c3480d0e398d50e23d2365543646819dc190a60b15564f",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p101:grammar-4-explanation",
+      "decision": "accepted",
+      "candidateRecordSHA256": "1d75bfc3195df95fb3a400748af486cd7cad6fdcc3a8f0d2be274b6301ae8135",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf113-p101.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p102:series-running-header",
+      "decision": "accepted",
+      "candidateRecordSHA256": "a335b4bfda0005a42728fef096bf71864bcc1bd22d8dab0ac0bc70b9aff23d57",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf114-p102.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p102:grammar-4-complete-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "3f48eaf7e110cf0b021c82f6c943abba7b34030c9be65dc4fc9f4aa3fd8bcd8f",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf114-p102.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p102:integrated-exercises-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "59f01e55bb6ea4573d24de7e5af96936e0c647fb4360aa7f7bdd2e24b1b35667",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf114-p102.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p102:exercise-fill-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "6e7c4d9b4af372a1e30b22c998626a3f1c52fccb3a367142ec80e306ad045484",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf114-p102.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p103:lesson-running-header",
+      "decision": "accepted",
+      "candidateRecordSHA256": "42252d31579d19d54974c83b467b69c17f2172cecf79b3a09708d390462007fa",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedLessonNumber",
+        "sourceFieldEvidence",
+        "zhAnchorKind",
+        "printedChineseAnchorPresent",
+        "printedChineseTitle"
+      ],
+      "evidence": [
+        "renders/pdf115-p103.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": "structural-locator-not-verbatim"
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p103:exercise-picture-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "06123d1bfed717092ee3f8a9bd46289490a7ac484da76db2f35ebf1c12cc2b18",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf115-p103.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p103:classroom-activities-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "d216815251b07dd83d1ffe60d465d398b68f46a84d970448b9edfd2aefed4663",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf115-p103.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p103:classroom-group-heading",
+      "decision": "accepted",
+      "candidateRecordSHA256": "ccd25cbb10f2141b6dda43d3bb647b90d64a62bd8099a4660aa8ddd4880da991",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf115-p103.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p103:classroom-group-instruction",
+      "decision": "accepted",
+      "candidateRecordSHA256": "09a8ecdce64e4529ca9851e35cddfd94271accbafc49cd7f324f80af9f8edbe2",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf115-p103.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p103:classroom-example-label",
+      "decision": "accepted",
+      "candidateRecordSHA256": "652264a44e52ecf8555490a01067c8fceafee7958c7d4e556d20de6ca526de5c",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf115-p103.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p190:appendix-series-running-header",
+      "decision": "accepted",
+      "candidateRecordSHA256": "6ef7c0017a016f5609ac99f4d8c2ac0411c716e024802e742536de6487aa94c1",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sharedPhysicalContextKey",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf202-p190.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p190:appendix-lesson-marker",
+      "decision": "accepted",
+      "candidateRecordSHA256": "77072b9abc4f02058ededdedc650bc67936ad191f3c54688f1a622c7ce4e1304",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "printedLessonNumber",
+        "sourceFieldEvidence",
+        "zhAnchorKind",
+        "printedChineseAnchorPresent"
+      ],
+      "evidence": [
+        "renders/pdf202-p190.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": "structural-locator-not-verbatim"
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p190:appendix-text1-line01",
+      "decision": "accepted",
+      "candidateRecordSHA256": "77cd2ce3e9a1459ac1db5bc9c1cf981f66bdeaef7db7a47d52b59f1aa9913881",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf202-p190.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p190:appendix-text1-line02",
+      "decision": "accepted",
+      "candidateRecordSHA256": "667ddcfde848a105631f8ac0ce98464bdbeb63c647c1a5bfb0d2b4b148013242",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf202-p190.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p190:appendix-text1-line03",
+      "decision": "accepted",
+      "candidateRecordSHA256": "0a0cd043f5f2f3a0539bd2fb24249b1938cad8241c408cdcc5e5cbe04433d97b",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf202-p190.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p190:appendix-text1-line04",
+      "decision": "accepted",
+      "candidateRecordSHA256": "04ad247fa14925a9f1457a55f0692af48b9adcc6c7c234c6e2e0e6ebe6594b21",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf202-p190.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p190:appendix-text1-line05",
+      "decision": "accepted",
+      "candidateRecordSHA256": "a948aa24160906a6ba569319cb9a21df1ccfd359f5c03d282b9d0deff26705c7",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf202-p190.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p190:appendix-text1-line06",
+      "decision": "accepted",
+      "candidateRecordSHA256": "2fd1abee49d4a9e7818b8f90947a89cf138ed4efb5f5435143a6457e4909eb51",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf202-p190.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p190:appendix-text1-line07",
+      "decision": "accepted",
+      "candidateRecordSHA256": "26885a8247fd431e6ccc66b08b27a163ad1507ab4a125004f4ecaf66be6e33d1",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf202-p190.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text2-line01",
+      "decision": "accepted",
+      "candidateRecordSHA256": "bdc9b587d4d29acd3c92565d1c0711a3b70bd4ef49bdcc9e890f4c5d3a9b35fc",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text2-line02",
+      "decision": "accepted",
+      "candidateRecordSHA256": "d5ce1be0a6c62745ebcc453ca1a8ad2a56aeb309adc8de04fed5bbf1785b1a58",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text2-line03",
+      "decision": "accepted",
+      "candidateRecordSHA256": "d910c7941199a0b4e751cbc26cffa9b00b82dfba7febd74467661d4cc1cb4e29",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text2-line04",
+      "decision": "accepted",
+      "candidateRecordSHA256": "44c4a2536aaa06ad8633fc9b869305781c2f673e58d222628ba4f6849dc741a4",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text2-line05",
+      "decision": "accepted",
+      "candidateRecordSHA256": "465e4266b15ac72f052fdfbcaf78cef285e3bc62a881827dad078eacdaedeb01",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text2-line06",
+      "decision": "accepted",
+      "candidateRecordSHA256": "a2e790f41c38b40034495c5c51852523f6b29298b658f60ccf14094d27627e3a",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text2-line07",
+      "decision": "accepted",
+      "candidateRecordSHA256": "1817dbf0b5180e0e5da3188ecad47209a1e7678fddcdf9b68d6aaa1558fd7c58",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text2-line08",
+      "decision": "accepted",
+      "candidateRecordSHA256": "9a17cb68ee1e54ef33b011f4d14955aa39b35a80f264529f3bd0aa3839f4e84e",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text3-line01",
+      "decision": "accepted",
+      "candidateRecordSHA256": "272b68b716eb8dd219eb92c534fd988fcaec9194a80f8c323879d6f8f18b72ee",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text3-line02",
+      "decision": "accepted",
+      "candidateRecordSHA256": "8a1e1461be487320e5469dcca022d10d866038294faae880dc3e119b6a33c028",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text3-line03",
+      "decision": "accepted",
+      "candidateRecordSHA256": "5a16a2fc139cf6b4a3c2700ea87cef1981bafe9dd212f4007e44b0c036bdc715",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text3-line04",
+      "decision": "accepted",
+      "candidateRecordSHA256": "263801dfd719cc196e764aaaae48b8f01635cac04a41270fef205e8a258b6267",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "viPrintedFragments",
+        "allSourcePDFPages",
+        "allSourcePrintedPages",
+        "sourceTurnKind",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text3-line05",
+      "decision": "accepted",
+      "candidateRecordSHA256": "1a36d7c7ba5f7cc5d5eae389b56f12a71bb4212a8eb4138177388ab3729fbd00",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text3-line06",
+      "decision": "accepted",
+      "candidateRecordSHA256": "d0bb1a740f9ffb1c113a898577fa387d582f6a3e691651f5ac0791031f2c37b7",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text3-line07",
+      "decision": "accepted",
+      "candidateRecordSHA256": "59d337b2e28c81fd54652609a4ab27d5ba50918092e58b20c2dee17add2cfc43",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedRoleVi",
+        "correspondingBodyRoleZh",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    },
+    {
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text4-whole-paragraph",
+      "decision": "accepted",
+      "candidateRecordSHA256": "9d171b4c805ffcac790546af22f6f6bfc6c65ab9cc6d20abac8c4b6bf83ca453",
+      "checkedFields": [
+        "sourceId",
+        "pdfPage",
+        "printedPage",
+        "section",
+        "zhAnchor",
+        "viPrinted",
+        "reviewStatus",
+        "evidence",
+        "sourceScope",
+        "sourceAppendixKind",
+        "printedTextNumber",
+        "printedDialogueOrdinal",
+        "printedSpeaker",
+        "correspondingBodyRoleZh",
+        "knownFromBodyBackground",
+        "noWebsiteLinePartitionInferred",
+        "bodyChineseSourceRef",
+        "zhAnchorPDFPage",
+        "zhAnchorPrintedPage",
+        "bodyVietnamesePrinted",
+        "sourceFieldEvidence"
+      ],
+      "evidence": [
+        "renders/pdf203-p191.png"
+      ],
+      "basis": "Fresh recovered V1 full original-page reading and exact unchanged fields; new V2 limited declared corrections independently checked against actual original PDF and non-verbatim locator qualification.",
+      "structuralZHNonVerbatimQualifier": null
+    }
+  ],
+  "bodyBindingDecisions": [
+    {
+      "bodySourceId": "hsk3-official-body:l11:text1:line01",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text1:line01",
+        "printedTextNumber": 1,
+        "printedDialogueOrdinal": 1,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "会议下午几点开始？",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p190:appendix-text1-line01"
+        ],
+        "pdfPage": 108,
+        "printedPage": 96,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf108"
+        ]
+      },
+      "evidence": "renders/pdf108-p096.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text1:line02",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text1:line02",
+        "printedTextNumber": 1,
+        "printedDialogueOrdinal": 2,
+        "printedRoleZh": "杨同乐",
+        "zhPrinted": "今天下午经理不在，不开会了。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p190:appendix-text1-line02"
+        ],
+        "pdfPage": 108,
+        "printedPage": 96,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf108"
+        ]
+      },
+      "evidence": "renders/pdf108-p096.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text1:line03",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text1:line03",
+        "printedTextNumber": 1,
+        "printedDialogueOrdinal": 3,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "那什么时候开会？",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p190:appendix-text1-line03"
+        ],
+        "pdfPage": 108,
+        "printedPage": 96,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf108"
+        ]
+      },
+      "evidence": "renders/pdf108-p096.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text1:line04",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text1:line04",
+        "printedTextNumber": 1,
+        "printedDialogueOrdinal": 4,
+        "printedRoleZh": "杨同乐",
+        "zhPrinted": "后天上午十点，会议地点换到第一会议室。我正要给大家发邮件。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p190:appendix-text1-line04"
+        ],
+        "pdfPage": 108,
+        "printedPage": 96,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf108"
+        ]
+      },
+      "evidence": "renders/pdf108-p096.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text1:line05",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text1:line05",
+        "printedTextNumber": 1,
+        "printedDialogueOrdinal": 5,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "开会的时候，我们用会议室的电脑还是自己的笔记本电脑？",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p190:appendix-text1-line05"
+        ],
+        "pdfPage": 108,
+        "printedPage": 96,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf108"
+        ]
+      },
+      "evidence": "renders/pdf108-p096.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text1:line06",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text1:line06",
+        "printedTextNumber": 1,
+        "printedDialogueOrdinal": 6,
+        "printedRoleZh": "杨同乐",
+        "zhPrinted": "会议室的电脑或者自己的电脑都可以。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p190:appendix-text1-line06"
+        ],
+        "pdfPage": 108,
+        "printedPage": 96,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf108"
+        ]
+      },
+      "evidence": "renders/pdf108-p096.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text1:line07",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text1:line07",
+        "printedTextNumber": 1,
+        "printedDialogueOrdinal": 7,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "那到时候咱们早点儿过去，你帮我把电脑接好吧。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p190:appendix-text1-line07"
+        ],
+        "pdfPage": 108,
+        "printedPage": 96,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf108"
+        ]
+      },
+      "evidence": "renders/pdf108-p096.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text2:line01",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text2:line01",
+        "printedTextNumber": 2,
+        "printedDialogueOrdinal": 1,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "电脑接好了吗？",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text2-line01"
+        ],
+        "pdfPage": 110,
+        "printedPage": 98,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf110"
+        ]
+      },
+      "evidence": "renders/pdf110-p098.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text2:line02",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text2:line02",
+        "printedTextNumber": 2,
+        "printedDialogueOrdinal": 2,
+        "printedRoleZh": "杨同乐",
+        "zhPrinted": "已经接好了，您开机看看有没有问题。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text2-line02"
+        ],
+        "pdfPage": 110,
+        "printedPage": 98,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf110"
+        ]
+      },
+      "evidence": "renders/pdf110-p098.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text2:line03",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text2:line03",
+        "printedTextNumber": 2,
+        "printedDialogueOrdinal": 3,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "现在什么都看不见。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text2-line03"
+        ],
+        "pdfPage": 110,
+        "printedPage": 98,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf110"
+        ]
+      },
+      "evidence": "renders/pdf110-p098.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text2:line04",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text2:line04",
+        "printedTextNumber": 2,
+        "printedDialogueOrdinal": 4,
+        "printedRoleZh": "杨同乐",
+        "zhPrinted": "我检查一下哪里出问题了……您再试一下。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text2-line04"
+        ],
+        "pdfPage": 110,
+        "printedPage": 98,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf110"
+        ]
+      },
+      "evidence": "renders/pdf110-p098.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text2:line05",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text2:line05",
+        "printedTextNumber": 2,
+        "printedDialogueOrdinal": 5,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "看见了，但是听不见声音。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text2-line05"
+        ],
+        "pdfPage": 110,
+        "printedPage": 98,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf110"
+        ]
+      },
+      "evidence": "renders/pdf110-p098.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text2:line06",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text2:line06",
+        "printedTextNumber": 2,
+        "printedDialogueOrdinal": 6,
+        "printedRoleZh": "杨同乐",
+        "zhPrinted": "现在呢？",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text2-line06"
+        ],
+        "pdfPage": 110,
+        "printedPage": 98,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf110"
+        ]
+      },
+      "evidence": "renders/pdf110-p098.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text2:line07",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text2:line07",
+        "printedTextNumber": 2,
+        "printedDialogueOrdinal": 7,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "听得见声音，但是声音有点儿小，听不清楚。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text2-line07"
+        ],
+        "pdfPage": 110,
+        "printedPage": 98,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf110"
+        ]
+      },
+      "evidence": "renders/pdf110-p098.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text2:line08",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text2:line08",
+        "printedTextNumber": 2,
+        "printedDialogueOrdinal": 8,
+        "printedRoleZh": "杨同乐",
+        "zhPrinted": "看来我没办法解决这个问题，只能找别人来帮帮忙了。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text2-line08"
+        ],
+        "pdfPage": 110,
+        "printedPage": 98,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf110"
+        ]
+      },
+      "evidence": "renders/pdf110-p098.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text3:line01",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text3:line01",
+        "printedTextNumber": 3,
+        "printedDialogueOrdinal": 1,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "同乐，你看见老张了吗？",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text3-line01"
+        ],
+        "pdfPage": 111,
+        "printedPage": 99,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf111"
+        ]
+      },
+      "evidence": "renders/pdf111-p099.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text3:line02",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text3:line02",
+        "printedTextNumber": 3,
+        "printedDialogueOrdinal": 2,
+        "printedRoleZh": "杨同乐",
+        "zhPrinted": "老张没来。他说家里有点儿事，所以请假了。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text3-line02"
+        ],
+        "pdfPage": 111,
+        "printedPage": 99,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf111"
+        ]
+      },
+      "evidence": "renders/pdf111-p099.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text3:line03",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text3:line03",
+        "printedTextNumber": 3,
+        "printedDialogueOrdinal": 3,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "好几个同事都休假了，开会前这么多工作我怕干不完。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text3-line03"
+        ],
+        "pdfPage": 111,
+        "printedPage": 99,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf111"
+        ]
+      },
+      "evidence": "renders/pdf111-p099.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text3:line04",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text3:line04",
+        "printedTextNumber": 3,
+        "printedDialogueOrdinal": 4,
+        "printedRoleZh": "杨同乐",
+        "zhPrinted": "十二点多了，咱们先去吃饭吧。吃完饭，我跟您一起把这些工作做完。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text3-line04"
+        ],
+        "pdfPage": 111,
+        "printedPage": 99,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf111"
+        ]
+      },
+      "evidence": "renders/pdf111-p099.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text3:line05",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text3:line05",
+        "printedTextNumber": 3,
+        "printedDialogueOrdinal": 5,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "你先去吃，我想再干一会儿。明天开会前要发到公司的邮箱里。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text3-line05"
+        ],
+        "pdfPage": 111,
+        "printedPage": 99,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf111"
+        ]
+      },
+      "evidence": "renders/pdf111-p099.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text3:line06",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text3:line06",
+        "printedTextNumber": 3,
+        "printedDialogueOrdinal": 6,
+        "printedRoleZh": "杨同乐",
+        "zhPrinted": "您没看到邮件吗？经理还没回来呢，下周才能开会。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text3-line06"
+        ],
+        "pdfPage": 111,
+        "printedPage": 99,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf111"
+        ]
+      },
+      "evidence": "renders/pdf111-p099.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text3:line07",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text3:line07",
+        "printedTextNumber": 3,
+        "printedDialogueOrdinal": 7,
+        "printedRoleZh": "王一雪",
+        "zhPrinted": "那不着急了。走，吃饭去。",
+        "sourceBodyKind": "role-dialogue-line",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text3-line07"
+        ],
+        "pdfPage": 111,
+        "printedPage": 99,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf111"
+        ]
+      },
+      "evidence": "renders/pdf111-p099.png"
+    },
+    {
+      "bodySourceId": "hsk3-official-body:l11:text4:line01",
+      "decision": "accepted",
+      "actualFullBinding": {
+        "bodySourceId": "hsk3-official-body:l11:text4:line01",
+        "printedTextNumber": 4,
+        "printedDialogueOrdinal": 1,
+        "printedRoleZh": null,
+        "zhPrinted": "前几天，上海的同事来北京了。一起吃饭时，他们跟我说最近有不少同事去上海工作了，问我愿意不愿意也去上海。我是这样想的：现在丈夫和孩子都在北京，刘明的工作很忙，小雪和小明也还小，我去别的城市工作就要离开他们。虽然去上海可能会有更好的机会，但是对我来说，生活也很重要，我不愿意为工作或学习离开家人。",
+        "sourceBodyKind": "whole-unlabelled-diary",
+        "appendixSourceIds": [
+          "hsk3-official-vi:l11:p191:appendix-text4-whole-paragraph"
+        ],
+        "pdfPage": 113,
+        "printedPage": 101,
+        "printedVietnameseInBody": false,
+        "evidence": [
+          "original-full-pdf113"
+        ]
+      },
+      "evidence": "renders/pdf113-p101.png"
+    }
+  ],
+  "repairClosures": [
+    {
+      "repairId": "structural-ZH-locator-qualification",
+      "status": "accepted",
+      "sourceRecordIndices": [
+        0,
+        27,
+        49,
+        71,
+        88,
+        95
+      ],
+      "meaning": "Full zhAnchor is a non-verbatim structural locator. Actual printed Chinese title is separately captured where present; false does not claim that no Chinese text exists on the page."
+    },
+    {
+      "repairId": "diary-ZH-omitted-character",
+      "status": "accepted",
+      "bodyPointer": "/bodyChineseOnlyTexts/22/zhPrinted",
+      "appendixPointer": "/records/118/zhAnchor",
+      "actualOriginalPrintedPhrase": "问我愿意不愿意也去上海。"
+    }
+  ],
+  "printedVIChanged": false,
+  "rawPinyinPOSChanged": false,
+  "sourceIDsOrOrderChanged": false,
+  "authorPNGBytesChanged": false,
+  "qualification": "Original transcription fidelity only. Logical Chinese locators are explicitly non-verbatim. Source diary specificity may still need editorial semantic handling. No website comparison, substitution approval, trusted runtime review proof, registry activation, history/grading/media change or release acceptance.",
+  "durability": "local-complete, remote complete combined V1+V2 package readback pending",
+  "savedAcceptedAsserted": false
+}

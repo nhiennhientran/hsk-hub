@@ -1,0 +1,34 @@
+{
+  "reason": "Before visual read, final generated page203 failed actual PIL decode and disagreed with existing recorded hash. Rerendered fresh sequential from original PDF, PIL verified. No acceptance/freeze existed.",
+  "before": {
+    "bytes": 1540096,
+    "sha256": "9d637cb76b7f0f10519e0bc93f4692b6d8643b9fde597092bf6621d7cecd4ca1",
+    "PIL": "Truncated File Read"
+  },
+  "after": {
+    "pdfPage": 203,
+    "printedPage": 191,
+    "path": "renders/pdf203-p191.png",
+    "bytes": 1602183,
+    "sha256": "8dc128259a8abefa8d563a6ef75f68a20111f2b9ba66c2e9c52bb572d5a7bebb",
+    "renderDPI": 200,
+    "argv": [
+      "pdftoppm",
+      "-f",
+      "203",
+      "-l",
+      "203",
+      "-r",
+      "200",
+      "-cropbox",
+      "-singlefile",
+      "-png",
+      "/workspace/scratch/28b55072841a/upload/HSK3 (3.0).pdf",
+      "/workspace/scratch/28b55072841a/hsk-hub-resume-recovered/course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf203-p191"
+    ],
+    "exitCode": 0,
+    "freshByIndependentReviewer": true,
+    "state": "generated-not-yet-read-authorfreeze-pending"
+  },
+  "exitCode": 0
+}

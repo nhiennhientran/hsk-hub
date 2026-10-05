@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-10-05T02:03:20.527600+00:00",
+  "status": "execution-restored-recoverable-baseline-verified-new-source-work-running",
+  "repository": "nhiennhientran/hsk-hub",
+  "localRecoveryHead": "d3c4e2057e5c8cce5845186d202584a1b163e229",
+  "localRecoveryTree": "74ffb982358e874a58804b45db7f484e1185ba52",
+  "trackedFilesRestored": 5186,
+  "protectedRemoteHeads": {
+    "main": "3facc6aabe51dbbfbd36657b8e1e67f83015e22d",
+    "gh-pages": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4"
+  },
+  "protectedHeadsActuallyReadBeforeCheckpoint": true,
+  "publicationAuthorized": false,
+  "productionDeploymentPerformed": false,
+  "originalFreezeAudit": {
+    "manifests": 83,
+    "fileReferencesChecked": 1244,
+    "matchedFileReferences": 1243,
+    "missingFileReferences": 1,
+    "missingOriginalLargeGzip": "course-app/docs/resume-20261004/vi-inventory-b10/inventory.json.gz",
+    "allHistoricalEvidenceRestored": false,
+    "auditPath": "course-app/docs/recovery-20261005/sync/initial-baseline/original-freeze-byte-audit.json"
+  },
+  "sourceScope": {
+    "restoredAcceptedLessons": 17,
+    "totalLessons": 48,
+    "acceptedLessonCountsByLevel": {
+      "hsk1": 7,
+      "hsk2": 6,
+      "hsk3": 4
+    },
+    "recordedSourceOccurrenceCountsByLevel": {
+      "hsk1": 817,
+      "hsk2": 640,
+      "hsk3": 475
+    },
+    "sumRecordedSourceOccurrenceCounts": 1932,
+    "uniquePhysicalPrintedOccurrencesClaimed": false,
+    "hsk3SharedSummaryContextRepeatedAcrossLessonIDs": true,
+    "independentlyAcceptedSources": [
+      {
+        "level": 1,
+        "lesson": 1,
+        "sourceOccurrenceCount": 67,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l01-source/review.json",
+        "reviewSHA256": "725c10e63653ddf2ef6b0898d22bc7237edda51c5ab7478de8864e6b20b983c1",
+        "recordedReviewStatus": "accepted-source-transcription",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 1,
+        "lesson": 2,
+        "sourceOccurrenceCount": 84,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l02-source/review.json",
+        "reviewSHA256": "5681bf572a7d5df4098c6740283c71d0b3ab8bc706f386b133033f65f1f381b1",
+        "recordedReviewStatus": "accepted-source-transcription",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 1,
+        "lesson": 3,
+        "sourceOccurrenceCount": 131,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l03-source/repair-closure-v2/review.json",
+        "reviewSHA256": "1da6060234dd6c81e26bd23e376ae3809afa4ecd88d9c4bd7ef8fafa9b2625da",
+        "recordedReviewStatus": "accepted-source-transcription",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 1,
+        "lesson": 4,
+        "sourceOccurrenceCount": 105,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l04-source/source-acceptance.json",
+        "reviewSHA256": "4743470edcaa231a99492f838b0b98eb42afcc1ede59e7d06a28ae1f48f61886",
+        "recordedReviewStatus": "accepted-source-only",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 1,
+        "lesson": 5,
+        "sourceOccurrenceCount": 141,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l05-source/repair-closure-v2/review.json",
+        "reviewSHA256": "b5d0cbafbe4836402c528a761ddf57f38b501b51d59d502e405990909f252860",
+        "recordedReviewStatus": "accepted-source-transcription",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 1,
+        "lesson": 6,
+        "sourceOccurrenceCount": 147,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l06-source/review.json",
+        "reviewSHA256": "12d3612aac4ec938d55bb2274e0227d1b9a2c889b2e39611b1768cd7be2b90bf",
+        "recordedReviewStatus": "accepted-source-transcription",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 1,
+        "lesson": 7,
+        "sourceOccurrenceCount": 142,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk1-l07-source/review.json",
+        "reviewSHA256": "f3f2f3724d2b0fa2bfa5851734ceb346311fd23853daaaec85f7edf3f0c87c98",
+        "recordedReviewStatus": "accepted-source-transcription",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 2,
+        "lesson": 1,
+        "sourceOccurrenceCount": 103,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-source/final-source-acceptance.json",
+        "reviewSHA256": "01d4c4e1321fbfb9cb4ecb95dff2ce2513aa4db3a983846a544dc60b3b8a5539",
+        "recordedReviewStatus": "independently-accepted-source-transcription-only",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 2,
+        "lesson": 2,
+        "sourceOccurrenceCount": 104,
+        "reviewPath": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l02-independent/final-source-acceptance.json",
+        "reviewSHA256": "77ec01a82293897b208cffd843d70d215ba2a4f5eac931826903ab0bb641181b",
+        "recordedReviewStatus": "independent-full-official-source-transcription-accepted",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 2,
+        "lesson": 3,
+        "sourceOccurrenceCount": 115,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l03-source/source-acceptance.json",
+        "reviewSHA256": "07e85465385f09b14b71e1aa5e40de8584fb9697ea0ab9f74ac6c250d97b84c2",
+        "recordedReviewStatus": "accepted-independent-original-PDF-source-only",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 2,
+        "lesson": 4,
+        "sourceOccurrenceCount": 98,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/independent-review.json",
+        "reviewSHA256": "78a53a79b148810a276394c0f41adc89bae454e5384e9f6df2d624783086d893",
+        "recordedReviewStatus": "accepted-source-transcription-only",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 2,
+        "lesson": 5,
+        "sourceOccurrenceCount": 104,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l05-source/independent-review.json",
+        "reviewSHA256": "2db2566516d7af97613551f65da52a894d86c36c433bfda233fcdf4a245669fc",
+        "recordedReviewStatus": "accepted-source-transcription-only",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 2,
+        "lesson": 6,
+        "sourceOccurrenceCount": 116,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/v2-sidecar/v2-independent-review.json",
+        "reviewSHA256": "08c84d7c22e6b2f334aa21094f03a3b52b144691f74cf45dedc165d268af9e05",
+        "recordedReviewStatus": "accepted-v2-sidecar",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 3,
+        "lesson": 1,
+        "sourceOccurrenceCount": 108,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l01-source/independent-review.json",
+        "reviewSHA256": "6626ba720c558dc4fbceddb1695f0ff4029886c3f7f60df903818242b23ec50e",
+        "recordedReviewStatus": "independent-original-source-fidelity-accepted",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 3,
+        "lesson": 2,
+        "sourceOccurrenceCount": 118,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l02-source/independent-review.json",
+        "reviewSHA256": "a55941e3bd0d615f1207655fbf4dfafd3e5d9f91049da60e191a178719103a4e",
+        "recordedReviewStatus": "independent-original-source-fidelity-accepted",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 3,
+        "lesson": 3,
+        "sourceOccurrenceCount": 130,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l03-source/independent-review.json",
+        "reviewSHA256": "0f3dfa9501d8ca85c0e0e2a4fc50e43756155a075aa38b1b9776c1f2a390b492",
+        "recordedReviewStatus": "independent-original-source-fidelity-accepted",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      },
+      {
+        "level": 3,
+        "lesson": 10,
+        "sourceOccurrenceCount": 119,
+        "reviewPath": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/review.json",
+        "reviewSHA256": "e88e7b2931142b162ab68dfc443840884e38cd99e0753c444571494137ba94f0",
+        "recordedReviewStatus": "independent-source-transcription-accepted-with-one-publisher-source-issue",
+        "qualification": "restored historical source-fidelity acceptance; exact frozen bytes reverified; no fresh manual semantic reread",
+        "websiteAlignmentAccepted": false
+      }
+    ],
+    "restoredAuthorOnlyLessons": [
+      "hsk1-l08",
+      "hsk1-l09",
+      "hsk1-l10",
+      "hsk3-l04"
+    ],
+    "newRecoveredLanguageAcceptanceBeyondHistoricalCertificates": 0,
+    "hsk2WebsiteProposalFields797AreNotSourceOccurrenceCounts": true,
+    "websiteFullAlignmentAccepted": false,
+    "activeOfficialVietnameseRegistriesAtRecoveryBaseline": 0
+  },
+  "historicalLaterWork": {
+    "reportedSourceAcceptedLessons": 34,
+    "qualification": "pre-disconnection progress journal only; missing unsynchronized source and review entities must be rebuilt and verified before counting as recovered",
+    "localOnlyCodeCommits": [
+      "e53114ad59d01700598d8afad3d1099229ef1b06",
+      "e9d59d9542ce6ed76075f5d97c799c67299023a8",
+      "815f568a6281df254c3da23bb085b25159949416",
+      "9c9be50680fd03438620270cb2ca843df888cbae"
+    ],
+    "actualGitHubCommitReadback": "all four returned404 before reconstruction"
+  },
+  "synchronizationPolicy": {
+    "singleIndexCommitAndRemoteRefOwner": "recovery_checkpoint_audit",
+    "targetBranch": "work/hsk-source-recovery-20261005",
+    "initialRemoteParent": "d3c4e2057e5c8cce5845186d202584a1b163e229",
+    "saveEachFrozenAuthorAndIndependentLessonImmediately": true,
+    "authorPreparedIsNotIndependentAccepted": true,
+    "newFreezeOldEvidenceNeverRewritten": true,
+    "nonForceOnly": true,
+    "directBlobBytesLimit": 10000000,
+    "remoteRefCommitTreeAndNewBlobReadbackRequired": true,
+    "mainAndGhPagesProtected": true
+  },
+  "nextActions": [
+    "Restore missing lesson author/independent entities into owner-specific new namespaces",
+    "Checkpoint every frozen lesson immediately with exact-byte remote readback",
+    "Rebuild unsynchronized Vietnamese display adapters and revalidate",
+    "Complete all website Vietnamese alignment and exact-final regression",
+    "Ask user to confirm concrete candidate before publication"
+  ]
+}

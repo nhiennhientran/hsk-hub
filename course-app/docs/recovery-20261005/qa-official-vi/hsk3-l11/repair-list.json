@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "author": "native_catalogue",
+  "sourceSHA256": "72ced1f762bf0e44d26375f4bb58ecc3154049c12cd882b78c797c3d4d5918d0",
+  "authorFreezeSHA256": "95390ecc4ba27a106f77a377ae95bfb7a6bc7e023dc17cccbbbe1386365378f8",
+  "repairs": [
+    {
+      "repairId": "structural-ZH-locator-qualification",
+      "sourceIds": [
+        "hsk3-official-vi:l11:p095:lesson-marker",
+        "hsk3-official-vi:l11:p097:lesson-running-header",
+        "hsk3-official-vi:l11:p099:lesson-running-header",
+        "hsk3-official-vi:l11:p101:lesson-running-header",
+        "hsk3-official-vi:l11:p103:lesson-running-header",
+        "hsk3-official-vi:l11:p190:appendix-lesson-marker"
+      ],
+      "old": {
+        "hsk3-official-vi:l11:p095:lesson-marker": "第十一课",
+        "hsk3-official-vi:l11:p097:lesson-running-header": "看来我没办法解决这个问题 | 第11课",
+        "hsk3-official-vi:l11:p099:lesson-running-header": "看来我没办法解决这个问题 | 第11课",
+        "hsk3-official-vi:l11:p101:lesson-running-header": "看来我没办法解决这个问题 | 第11课",
+        "hsk3-official-vi:l11:p103:lesson-running-header": "看来我没办法解决这个问题 | 第11课",
+        "hsk3-official-vi:l11:p190:appendix-lesson-marker": "第十一课"
+      },
+      "required": "Explicitly mark zhAnchor as structural-locator-not-verbatim, and distinguish actual printed Chinese title (where present) from logical 第11课/第十一课 labels. SourceFieldEvidence.zhAnchor must state locator-only/non-verbatim scope, not quote the full logical label as official Chinese. No VI/PY/POS/order/ID changes.",
+      "authorAcknowledged": true,
+      "actualPDFPages": [
+        107,
+        109,
+        111,
+        113,
+        115,
+        202
+      ],
+      "evidence": [
+        "renders/pdf107-p095.png",
+        "details/pdf107-goals-marker-5x.png",
+        "renders/pdf109-p097.png",
+        "renders/pdf111-p099.png",
+        "renders/pdf113-p101.png",
+        "renders/pdf115-p103.png",
+        "renders/pdf202-p190.png"
+      ],
+      "notWebsiteErratum": true
+    },
+    {
+      "repairId": "diary-ZH-omitted-character",
+      "sourceIds": [
+        "hsk3-official-vi:l11:p191:appendix-text4-whole-paragraph"
+      ],
+      "bodySourceIds": [
+        "hsk3-official-body:l11:text4:line01"
+      ],
+      "old": "问我愿不愿意也去上海。",
+      "new": "问我愿意不愿意也去上海。",
+      "fields": [
+        "records/118/zhAnchor",
+        "bodyChineseOnlyTexts/22/zhPrinted"
+      ],
+      "actualPDFPage": 113,
+      "printedPage": 101,
+      "evidence": [
+        "renders/pdf113-p101.png",
+        "details/pdf113-diary-and-words-5x.png"
+      ],
+      "notWebsiteErratum": true
+    }
+  ],
+  "printedVietnameseChanged": false,
+  "oldAuthorFreezeMustRemainImmutable": true,
+  "websiteRead": false
+}

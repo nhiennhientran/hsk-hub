@@ -1,0 +1,938 @@
+{
+  "schemaVersion": 1,
+  "status": "passed-independent-source-V2-closure",
+  "checks": [
+    {
+      "name": "exactauthorV2source",
+      "passed": true
+    },
+    {
+      "name": "exactauthorV2freeze",
+      "passed": true
+    },
+    {
+      "name": "authorV1source immutable",
+      "passed": true
+    },
+    {
+      "name": "authorV1freeze immutable",
+      "passed": true
+    },
+    {
+      "name": "currentnewrecoverysource reading freeze exact",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/README.md",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/STAGE-FILES.txt",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/actual-command-input.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/actual-verification-command.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/author-input/STAGE",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/author-input/author-expected-scope.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/author-input/freeze-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/author-input/source-detail-crop-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/author-input/source-locator-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/author-input/source-observations.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/author-input/source-page-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/author-input/source.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/boundary-render.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/detail-render-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/details/pdf107-goals-marker-5x.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/details/pdf113-diary-and-words-5x.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/details/pdf202-text1-complete-bottom-5x.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/details/pdf203-text2-3-left-complete-5x.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/details/pdf203-text3-final-and-diary-5x.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/independent-read-journal.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/original-rerender-result.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/render-integrity-correction.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/render-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf107-p095.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf108-p096.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf109-p097.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf110-p098.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf111-p099.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf112-p100.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf113-p101.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf114-p102.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf115-p103.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf116-p104-boundary.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf202-p190.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/renders/pdf203-p191.png",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/repair-list.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/review.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/verification-initial-schema-selector.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/verification-initial-schema-selector.log",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/verification.json",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/verification.log",
+      "passed": true
+    },
+    {
+      "name": "frozen independent reading course-app/docs/recovery-20261005/qa-official-vi/hsk3-l11/verify-review.py",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/README.md",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/STAGE",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/author-expected-scope.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/author-source.py",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/author-verification.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/locator-pdf011-IX.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/locator-pdf012-X.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/locator-pdf116-104.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf107-detail-goals.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf107-p095.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf108-detail-words-help.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf108-p096.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf109-detail-grammar1.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf109-p097.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf110-detail-grammar2.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf110-detail-words-zh-lastrole.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf110-p098.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf111-detail-words-proper.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf111-p099.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf112-detail-grammar3.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf112-p100.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf113-detail-grammar4.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf113-detail-words.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf113-p101.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf114-p102.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf115-detail-activity.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf115-p103.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf202-detail-text1-left.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf202-detail-text1-right.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf202-p190.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf203-detail-diary.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf203-detail-text2.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf203-detail-text3-left.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf203-detail-text3-right.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/evidence/pdf203-p191.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/render-evidence.py",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/source-detail-crop-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/source-locator-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/source-observations.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/source-page-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/source.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/source.tsv",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11/verify-source.py",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/README.md",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/STAGE",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/author-expected-scope.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/author-source.py",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/author-verification.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/locator-pdf011-IX.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/locator-pdf012-X.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/locator-pdf116-104.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf107-detail-goals.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf107-p095.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf108-detail-words-help.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf108-p096.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf109-detail-grammar1.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf109-p097.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf110-detail-grammar2.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf110-detail-words-zh-lastrole.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf110-p098.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf111-detail-words-proper.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf111-p099.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf112-detail-grammar3.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf112-p100.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf113-detail-grammar4.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf113-detail-words.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf113-p101.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf114-p102.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf115-detail-activity.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf115-p103.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf202-detail-text1-left.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf202-detail-text1-right.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf202-p190.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf203-detail-diary.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf203-detail-text2.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf203-detail-text3-left.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf203-detail-text3-right.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/evidence/pdf203-p191.png",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/render-evidence.py",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/revision-diff.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/source-detail-crop-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/source-locator-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/source-observations.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/source-page-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/source.json",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/source.tsv",
+      "passed": true
+    },
+    {
+      "name": "author freeze hsk3-l11-v2/verify-source.py",
+      "passed": true
+    },
+    {
+      "name": "V2exact archive source.json",
+      "passed": true
+    },
+    {
+      "name": "V2exact archive revision-diff.json",
+      "passed": true
+    },
+    {
+      "name": "V2exact archive README.md",
+      "passed": true
+    },
+    {
+      "name": "V2exact archive STAGE",
+      "passed": true
+    },
+    {
+      "name": "V2exact archive freeze-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "41 exact JSON differences fully disclosed",
+      "passed": true
+    },
+    {
+      "name": "nonverbatim locator qualifier 0",
+      "passed": true
+    },
+    {
+      "name": "precise locator field scope 0",
+      "passed": true
+    },
+    {
+      "name": "nonverbatim locator qualifier 27",
+      "passed": true
+    },
+    {
+      "name": "precise locator field scope 27",
+      "passed": true
+    },
+    {
+      "name": "actual printed title kept separate 27",
+      "passed": true
+    },
+    {
+      "name": "nonverbatim locator qualifier 49",
+      "passed": true
+    },
+    {
+      "name": "precise locator field scope 49",
+      "passed": true
+    },
+    {
+      "name": "actual printed title kept separate 49",
+      "passed": true
+    },
+    {
+      "name": "nonverbatim locator qualifier 71",
+      "passed": true
+    },
+    {
+      "name": "precise locator field scope 71",
+      "passed": true
+    },
+    {
+      "name": "actual printed title kept separate 71",
+      "passed": true
+    },
+    {
+      "name": "nonverbatim locator qualifier 88",
+      "passed": true
+    },
+    {
+      "name": "precise locator field scope 88",
+      "passed": true
+    },
+    {
+      "name": "actual printed title kept separate 88",
+      "passed": true
+    },
+    {
+      "name": "nonverbatim locator qualifier 95",
+      "passed": true
+    },
+    {
+      "name": "precise locator field scope 95",
+      "passed": true
+    },
+    {
+      "name": "corrected complete diary ZH matches actual freshly read original",
+      "passed": true
+    },
+    {
+      "name": "isolated revision correctly binds independently frozen repair",
+      "passed": true
+    },
+    {
+      "name": "whole source JSON equalsV1 after only exact approved delta normalization",
+      "passed": true
+    },
+    {
+      "name": "119 IDs and order exactunchanged",
+      "passed": true
+    },
+    {
+      "name": "all raw viPrinted unchanged",
+      "passed": true
+    },
+    {
+      "name": "all raw printedPinyin unchanged",
+      "passed": true
+    },
+    {
+      "name": "all raw printedPOSRaw unchanged",
+      "passed": true
+    },
+    {
+      "name": "all119 complete accepted candidates exactbound",
+      "passed": true
+    },
+    {
+      "name": "all23 accepted complete bindings exactbound",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/locator-pdf011-IX.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/locator-pdf012-X.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/locator-pdf116-104.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf107-detail-goals.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf107-p095.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf108-detail-words-help.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf108-p096.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf109-detail-grammar1.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf109-p097.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf110-detail-grammar2.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf110-detail-words-zh-lastrole.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf110-p098.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf111-detail-words-proper.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf111-p099.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf112-detail-grammar3.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf112-p100.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf113-detail-grammar4.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf113-detail-words.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf113-p101.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf114-p102.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf115-detail-activity.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf115-p103.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf202-detail-text1-left.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf202-detail-text1-right.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf202-p190.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf203-detail-diary.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf203-detail-text2.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf203-detail-text3-left.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf203-detail-text3-right.png",
+      "passed": true
+    },
+    {
+      "name": "actual originalPDF-proven PNG unchanged evidence/pdf203-p191.png",
+      "passed": true
+    },
+    {
+      "name": "all30 actual rerender provenance proof retained",
+      "passed": true
+    },
+    {
+      "name": "misleading README role03 removed without creating sourceunit",
+      "passed": true
+    },
+    {
+      "name": "scope119/23 accepted sourcefidelity only",
+      "passed": true
+    },
+    {
+      "name": "current recovered independent reading evidence bound exact",
+      "passed": true
+    },
+    {
+      "name": "originalPDF still exact",
+      "passed": true
+    }
+  ],
+  "checksPassed": 200,
+  "failures": 0,
+  "actualSourceDifferences": 41,
+  "completeSourceRecordsAccepted": 119,
+  "completeBodyBindingsAccepted": 23,
+  "authorPNGsExactUnchanged": [
+    {
+      "path": "evidence/locator-pdf011-IX.png",
+      "sha256": "a71ed35e633fd48189cad6121c8c485a4ba52eeeef82a4ae315638026b1425b6"
+    },
+    {
+      "path": "evidence/locator-pdf012-X.png",
+      "sha256": "836476de17db5792697d140b1a9820baf34b3ad886b8df1862839e4059320c11"
+    },
+    {
+      "path": "evidence/locator-pdf116-104.png",
+      "sha256": "2902cbb30b1ee04a4f741043c7b452b40616c9ae0c101e98f9f013b640367391"
+    },
+    {
+      "path": "evidence/pdf107-detail-goals.png",
+      "sha256": "242f2fdf3d18c976a2b92bed1463cf545a13485cb9b60c845b45384588990935"
+    },
+    {
+      "path": "evidence/pdf107-p095.png",
+      "sha256": "c18e72f1fe9a0c44e884cda2c52e9e81941c95c881187e49edfe9b4743bfd2e4"
+    },
+    {
+      "path": "evidence/pdf108-detail-words-help.png",
+      "sha256": "22413323e9cb61ae9a6a9023b99e2b75e01365b971f3ab806da02366c0572d1f"
+    },
+    {
+      "path": "evidence/pdf108-p096.png",
+      "sha256": "726897bd1ba42c1158e3208ec09f85646fa03b02a6eaad391b671510c5fe4dd5"
+    },
+    {
+      "path": "evidence/pdf109-detail-grammar1.png",
+      "sha256": "b4db04bb9fe0e644875beda19bacbfa590555f2305d2ad20ebd50d33bb94bea7"
+    },
+    {
+      "path": "evidence/pdf109-p097.png",
+      "sha256": "46d3c5a198dcf0419140fca5c3ac961d70864b80387c3b07c5578653105242c5"
+    },
+    {
+      "path": "evidence/pdf110-detail-grammar2.png",
+      "sha256": "d62c1918d2b01158b2d2ff1cf605e86c2294539744232d687a9170d7ab3469dc"
+    },
+    {
+      "path": "evidence/pdf110-detail-words-zh-lastrole.png",
+      "sha256": "e839f49ad461be48b6279dcb12a5a90ffc6030e21cd2f100255ed50cf7512099"
+    },
+    {
+      "path": "evidence/pdf110-p098.png",
+      "sha256": "644b51e39954878f11d9351510cf88fb52994b467a4c73792b62c2e55fe5c6f8"
+    },
+    {
+      "path": "evidence/pdf111-detail-words-proper.png",
+      "sha256": "ca0c424e0714bb8c82c142b134684e4377ca4b70c0dd8d31891d299f5f5c8b94"
+    },
+    {
+      "path": "evidence/pdf111-p099.png",
+      "sha256": "7f263a162eec34231ac4ee4fbadb60e8645df9346ce66e62ae4af6bec0d57ca4"
+    },
+    {
+      "path": "evidence/pdf112-detail-grammar3.png",
+      "sha256": "96342e3e1b7fa07998adceba2f284c6576249ace8ee2af9c7ed177c838a131b8"
+    },
+    {
+      "path": "evidence/pdf112-p100.png",
+      "sha256": "c96cd1c7f5aaa8c5b71a02e0fabde695a21cae69df8461b25b9013b377ca0d4e"
+    },
+    {
+      "path": "evidence/pdf113-detail-grammar4.png",
+      "sha256": "8a2d3bc2ae5f7931eed0eaffae9c32f916930c94b7600c704b36ab2e402f89f7"
+    },
+    {
+      "path": "evidence/pdf113-detail-words.png",
+      "sha256": "05df5428ead9a8245612a22c9d1cd90e59338edad1149f2b7ddeacecfebd1a5c"
+    },
+    {
+      "path": "evidence/pdf113-p101.png",
+      "sha256": "49a99da52f10b6f7e51c8135bde775e6d0752861a30c634f0f852532fc8d205e"
+    },
+    {
+      "path": "evidence/pdf114-p102.png",
+      "sha256": "d1ee285693896b7e0e604327479175686c90d63954f2d5ba7c80afc90a36b2db"
+    },
+    {
+      "path": "evidence/pdf115-detail-activity.png",
+      "sha256": "db9a3d469c43687cdec89b0f8fab951b5290a17e1bfe18d3d76ac536d493e680"
+    },
+    {
+      "path": "evidence/pdf115-p103.png",
+      "sha256": "742330f9d2eef38b6c37cd03158dedd377c18b8719ddd29ec630e9c07eda1add"
+    },
+    {
+      "path": "evidence/pdf202-detail-text1-left.png",
+      "sha256": "b05d080c0a73974c9e4e9f0aed2e094f0095a5caebe853961c34dca5e680e296"
+    },
+    {
+      "path": "evidence/pdf202-detail-text1-right.png",
+      "sha256": "e27496c129a1cf8c7c3e7b0ce56a0389abbe645b5573e36659076df7de588020"
+    },
+    {
+      "path": "evidence/pdf202-p190.png",
+      "sha256": "83383bb361169ec0bb6829438c921a35eb5eae408dbaa535c0c710d456b1d69f"
+    },
+    {
+      "path": "evidence/pdf203-detail-diary.png",
+      "sha256": "a306e225f22294238b3a1a512545b5f5a2d7818f8bf4f6512eafda17425c081f"
+    },
+    {
+      "path": "evidence/pdf203-detail-text2.png",
+      "sha256": "301d029dcc01592e73f26bbc07036c6b62c39fc33c10a4c42eb8371a1681677d"
+    },
+    {
+      "path": "evidence/pdf203-detail-text3-left.png",
+      "sha256": "2e74790d66c077ac98514654c66c0df2b52c1b7cadbe8a9442e2f7701e14ad4f"
+    },
+    {
+      "path": "evidence/pdf203-detail-text3-right.png",
+      "sha256": "b37783b56cb86485392c50c547265cf0eb936d8048b53f75d510526a7d1883be"
+    },
+    {
+      "path": "evidence/pdf203-p191.png",
+      "sha256": "8dc128259a8abefa8d563a6ef75f68a20111f2b9ba66c2e9c52bb572d5a7bebb"
+    }
+  ],
+  "newOriginalPNGRerenderAsserted": false,
+  "existingNewRecoveryActual30PNGRerenderRetained": true,
+  "browserOrWebsiteAcceptanceAsserted": false,
+  "runtimeActivated": false,
+  "savedAcceptedAsserted": false
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "verifiedAtUTC": "2026-10-05T02:08:18.229319+00:00",
+  "scope": "recovered-baseline",
+  "qualification": "restored-historical-source-certificates-only",
+  "repository": "nhiennhientran/hsk-hub",
+  "branch": "work/hsk-source-recovery-20261005",
+  "localCommit": "0dd9be0e20ad6edb8140916f973c1a1c2f2d2acd",
+  "remoteCommit": "0d92424c82b9b92b90adcb3fab8d5e7d0b010adc",
+  "localAndRemoteTree": "5a1ac64576575d91d2ddd218892ef4a141dd5091",
+  "actualRemoteParentCommit": "d3c4e2057e5c8cce5845186d202584a1b163e229",
+  "localCommitIsNotRemoteCommit": true,
+  "stageSHA256": "24dc66d22559a344b9aedeed271bf5654bd5432467198910d71b278f11f967d4",
+  "freezePath": "course-app/docs/recovery-20261005/sync/initial-baseline/freeze.json",
+  "freezeSHA256": "97018e7d4589b3bfa9b5e83412b45e0682dcf68cfed57a42f95932fe1c546b4d",
+  "remoteNetworkBlobsVerified": 9,
+  "expectedBlobs": 9,
+  "fileByteReadback": [
+    {
+      "path": "course-app/docs/recovery-20261005/sync/initial-baseline/README.md",
+      "actualBytes": 733,
+      "actualSHA256": "89b0b0845adf220fea7a72e6cc00347404c78dd6e8bb7841824101d36cf266c2",
+      "actualGitBlobSHA": "148dd353f4877994ce4fc81f744ea1ffa355f22f",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/sync/initial-baseline/STAGE.txt",
+      "actualBytes": 683,
+      "actualSHA256": "24dc66d22559a344b9aedeed271bf5654bd5432467198910d71b278f11f967d4",
+      "actualGitBlobSHA": "77ed4e72201e119c00fa25abdf160182dbc8c841",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/sync/initial-baseline/audit_original_freezes.py",
+      "actualBytes": 7153,
+      "actualSHA256": "ceba74d89e671ee3b132d7045eeb33fc4cad0fb5b1082c63ccb86ec533f23f0a",
+      "actualGitBlobSHA": "b90230028457c5b2179452622046596acd2cf81e",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/sync/initial-baseline/baseline-progress.json",
+      "actualBytes": 12854,
+      "actualSHA256": "8cfdae2bb9366ff66f73ff5b3aac15f90385ef83dc51a1a277e091fae80f3cdf",
+      "actualGitBlobSHA": "a346e520cfd0e661b1ce3658cde81b5b939733ee",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/sync/initial-baseline/freeze.json",
+      "actualBytes": 1793,
+      "actualSHA256": "97018e7d4589b3bfa9b5e83412b45e0682dcf68cfed57a42f95932fe1c546b4d",
+      "actualGitBlobSHA": "67e4bd84dfec34d9feb319a1b88b216f27bc0b59",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/sync/initial-baseline/original-freeze-byte-audit.json",
+      "actualBytes": 703189,
+      "actualSHA256": "1bc9ec257a3e687ab1cab7a2929d305bdd9eeb5d8454e087f266839da7ef0d82",
+      "actualGitBlobSHA": "9d3ae1b2ad4a58039d9d8f7d974da0a616111346",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/sync/initial-baseline/pdf-recovery-byte-audit.json",
+      "actualBytes": 768,
+      "actualSHA256": "cfdabedcb9b3aa7df5a10e734ab6badac008a023b684381a286ba130b19f385c",
+      "actualGitBlobSHA": "2c86039397b8404688912ae50f8a90cc7f9ca8bc",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/sync/initial-baseline/prepare_checkpoint.py",
+      "actualBytes": 6646,
+      "actualSHA256": "4d95bc8f960aa89b3a5e2c69d6669223d459a4e66a343b6370daeca5878890ac",
+      "actualGitBlobSHA": "aee4e74b264feaaf90e96be818c18c6f93814a98",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/sync/initial-baseline/sync-policy.md",
+      "actualBytes": 2631,
+      "actualSHA256": "da2a907fc27325c26e24eba96db153e37d4b19efe02b4c2f74e335734e38c2be",
+      "actualGitBlobSHA": "fa2cd94feb8ae7f5abc9ba0c4df3684df0526c09",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    }
+  ],
+  "failures": [],
+  "allNewBytesVerified": true,
+  "productionDeploymentPerformed": false,
+  "publicationAuthorized": false
+}

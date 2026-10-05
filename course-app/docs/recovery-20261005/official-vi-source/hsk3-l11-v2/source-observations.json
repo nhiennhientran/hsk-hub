@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+  "sourceOnly": true,
+  "publisherErrataConfirmed": false,
+  "websiteAdjudicationPerformed": false,
+  "observations": [
+    {
+      "observationId": "hsk3-l11-diary-pronoun-specificity",
+      "classification": "source-faithful-translation-specificity-observation-not-confirmed-error",
+      "sourceId": "hsk3-official-vi:l11:p191:appendix-text4-whole-paragraph",
+      "sourceRecordCanonicalSHA256": "9d171b4c805ffcac790546af22f6f6bfc6c65ab9cc6d20abac8c4b6bf83ca453",
+      "zhAnchorPDFPage": 113,
+      "zhAnchorPrintedPage": 101,
+      "viPDFPage": 203,
+      "viPrintedPage": 191,
+      "zhPrinted": "前几天，上海的同事来北京了。一起吃饭时，他们跟我说最近有不少同事去上海工作了，问我愿意不愿意也去上海。我是这样想的：现在丈夫和孩子都在北京，刘明的工作很忙，小雪和小明也还小，我去别的城市工作就要离开他们。虽然去上海可能会有更好的机会，但是对我来说，生活也很重要，我不愿意为工作或学习离开家人。",
+      "viPrinted": "Vài ngày trước, một số đồng nghiệp ở Thượng Hải đã đến Bắc Kinh. Lúc dùng bữa cùng nhau, họ nói với tôi rằng, gần đây rất nhiều đồng nghiệp đã chuyển đến Thượng Hải làm việc, hỏi tôi liệu có muốn đi Thượng Hải không. Tôi nghĩ như thế này: Hiện giờ, chồng và con tôi đều đang ở Bắc Kinh, công việc của Lưu Minh cực kì bận rộn, Tiểu Tuyết và Tiểu Minh vẫn còn nhỏ, nếu tôi đến thành phố khác làm việc thì buộc phải rời xa các con. Mặc dù Thượng Hải có thể mang lại cơ hội nghề nghiệp tốt hơn, nhưng đối với tôi mà nói, cuộc sống cũng rất quan trọng, tôi không muốn vì công việc hay việc học mà phải rời xa gia đình.",
+      "zhFocus": "我去别的城市工作就要离开他们。",
+      "viFocus": "nếu tôi đến thành phố khác làm việc thì buộc phải rời xa các con.",
+      "authorObservation": "ZH他们 follows husband and children; printed VI specifically says các con. Both raw sources preserved; no semantic correction/adjudication inferred.",
+      "primaryEvidencePaths": [
+        "evidence/pdf113-p101.png",
+        "evidence/pdf203-p191.png"
+      ],
+      "detailEvidencePath": "evidence/pdf203-detail-diary.png",
+      "primaryEvidenceSHA256": {
+        "evidence/pdf113-p101.png": "49a99da52f10b6f7e51c8135bde775e6d0752861a30c634f0f852532fc8d205e",
+        "evidence/pdf203-p191.png": "8dc128259a8abefa8d563a6ef75f68a20111f2b9ba66c2e9c52bb572d5a7bebb"
+      },
+      "detailEvidenceSHA256": "a306e225f22294238b3a1a512545b5f5a2d7818f8bf4f6512eafda17425c081f"
+    }
+  ]
+}

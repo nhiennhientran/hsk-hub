@@ -1,0 +1,2254 @@
+{
+  "status": "failed",
+  "checks": [
+    {
+      "name": "originalPDF exact bytes/SHA",
+      "passed": true
+    },
+    {
+      "name": "current authorV1 exact source",
+      "passed": true
+    },
+    {
+      "name": "author exactfreeze",
+      "passed": true
+    },
+    {
+      "name": "archive currentauthor exact source-locator-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "archive currentauthor exact author-expected-scope.json",
+      "passed": true
+    },
+    {
+      "name": "archive currentauthor exact source.json",
+      "passed": true
+    },
+    {
+      "name": "archive currentauthor exact source-observations.json",
+      "passed": true
+    },
+    {
+      "name": "archive currentauthor exact source-detail-crop-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "archive currentauthor exact STAGE",
+      "passed": true
+    },
+    {
+      "name": "archive currentauthor exact source-page-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "archive currentauthor exact freeze-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input README.md",
+      "passed": true
+    },
+    {
+      "name": "author frozen input STAGE",
+      "passed": true
+    },
+    {
+      "name": "author frozen input author-expected-scope.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input author-source.py",
+      "passed": true
+    },
+    {
+      "name": "author frozen input author-verification.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/locator-pdf011-IX.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/locator-pdf012-X.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/locator-pdf116-104.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf107-detail-goals.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf107-p095.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf108-detail-words-help.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf108-p096.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf109-detail-grammar1.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf109-p097.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf110-detail-grammar2.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf110-detail-words-zh-lastrole.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf110-p098.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf111-detail-words-proper.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf111-p099.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf112-detail-grammar3.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf112-p100.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf113-detail-grammar4.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf113-detail-words.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf113-p101.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf114-p102.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf115-detail-activity.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf115-p103.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf202-detail-text1-left.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf202-detail-text1-right.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf202-p190.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf203-detail-diary.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf203-detail-text2.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf203-detail-text3-left.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf203-detail-text3-right.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input evidence/pdf203-p191.png",
+      "passed": true
+    },
+    {
+      "name": "author frozen input render-evidence.py",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source-detail-crop-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source-locator-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source-observations.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source-page-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source.tsv",
+      "passed": true
+    },
+    {
+      "name": "author frozen input verify-source.py",
+      "passed": true
+    },
+    {
+      "name": "119 unique source IDs",
+      "passed": true
+    },
+    {
+      "name": "all119 decisions bound exact complete input records",
+      "passed": true
+    },
+    {
+      "name": "fullrecord112accepted7repair nofalse allaccepted",
+      "passed": true
+    },
+    {
+      "name": "printed VI119 manually accepted decisions",
+      "passed": true
+    },
+    {
+      "name": "all11 actualfresh manual reads recorded",
+      "passed": true
+    },
+    {
+      "name": "23body bindings decisions",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p095:lesson-marker",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p095:lesson-marker",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p095:lesson-marker",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p095:lesson-marker",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p095:lesson-title",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p095:lesson-title",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p095:lesson-title",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p095:lesson-title",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p095:goals-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p095:goals-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p095:goals-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p095:goals-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p095:goal-01",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p095:goal-01",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p095:goal-01",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p095:goal-01",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p095:goal-02",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p095:goal-02",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p095:goal-02",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p095:goal-02",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p095:goal-03",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p095:goal-03",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p095:goal-03",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p095:goal-03",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p095:warmup-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p095:warmup-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p095:warmup-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p095:warmup-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p095:warmup-match-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p095:warmup-match-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p095:warmup-match-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p095:warmup-match-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p095:warmup-pair-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p095:warmup-pair-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p095:warmup-pair-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p095:warmup-pair-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p095:warmup-question-01",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p095:warmup-question-01",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p095:warmup-question-01",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p095:warmup-question-01",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p095:warmup-question-02",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p095:warmup-question-02",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p095:warmup-question-02",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p095:warmup-question-02",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:text1-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:text1-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:text1-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:text1-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:text1-background",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:text1-background",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:text1-background",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:text1-background",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:text1-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:text1-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:text1-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:text1-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:text1-words-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:text1-words-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:text1-words-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:text1-words-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:word-01",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:word-01",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:word-01",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:word-01",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:word-02",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:word-02",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:word-02",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:word-02",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:word-03",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:word-03",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:word-03",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:word-03",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:word-04",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:word-04",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:word-04",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:word-04",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:word-05",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:word-05",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:word-05",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:word-05",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:word-06",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:word-06",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:word-06",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:word-06",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:word-07",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:word-07",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:word-07",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:word-07",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:word-08",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:word-08",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:word-08",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:word-08",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:word-09",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:word-09",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:word-09",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:word-09",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:help-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:help-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:help-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:help-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p096:help-connection-explanation",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p096:help-connection-explanation",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p096:help-connection-explanation",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p096:help-connection-explanation",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p097:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p097:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p097:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p097:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p097:text1-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p097:text1-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p097:text1-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p097:text1-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p097:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p097:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p097:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p097:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p097:grammar-1-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p097:grammar-1-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p097:grammar-1-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p097:grammar-1-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p097:grammar-1-haishi-explanation",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p097:grammar-1-haishi-explanation",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p097:grammar-1-haishi-explanation",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p097:grammar-1-haishi-explanation",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p097:grammar-1-huozhe-explanation",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p097:grammar-1-huozhe-explanation",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p097:grammar-1-huozhe-explanation",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p097:grammar-1-huozhe-explanation",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p097:grammar-1-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p097:grammar-1-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p097:grammar-1-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p097:grammar-1-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p097:text2-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p097:text2-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p097:text2-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p097:text2-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p097:text2-background",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p097:text2-background",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p097:text2-background",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p097:text2-background",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p097:text2-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p097:text2-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p097:text2-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p097:text2-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:text2-words-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:text2-words-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:text2-words-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:text2-words-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:word-10",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:word-10",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:word-10",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:word-10",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:word-11",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:word-11",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:word-11",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:word-11",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:word-12",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:word-12",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:word-12",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:word-12",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:word-13",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:word-13",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:word-13",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:word-13",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:word-14",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:word-14",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:word-14",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:word-14",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:word-15",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:word-15",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:word-15",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:word-15",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:text2-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:text2-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:text2-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:text2-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:grammar-2-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:grammar-2-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:grammar-2-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:grammar-2-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p098:grammar-2-explanation",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p098:grammar-2-explanation",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p098:grammar-2-explanation",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p098:grammar-2-explanation",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:grammar-2-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:grammar-2-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:grammar-2-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:grammar-2-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:text3-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:text3-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:text3-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:text3-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:text3-background",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:text3-background",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:text3-background",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:text3-background",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:text3-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:text3-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:text3-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:text3-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:text3-words-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:text3-words-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:text3-words-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:text3-words-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:word-16",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:word-16",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:word-16",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:word-16",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:word-17",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:word-17",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:word-17",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:word-17",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:word-18",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:word-18",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:word-18",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:word-18",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:word-19",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:word-19",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:word-19",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:word-19",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:word-20",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:word-20",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:word-20",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:word-20",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:proper-nouns-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:proper-nouns-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:proper-nouns-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:proper-nouns-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p099:proper-noun-01",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p099:proper-noun-01",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p099:proper-noun-01",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p099:proper-noun-01",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p100:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p100:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p100:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p100:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p100:text3-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p100:text3-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p100:text3-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p100:text3-role-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p100:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p100:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p100:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p100:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p100:grammar-3-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p100:grammar-3-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p100:grammar-3-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p100:grammar-3-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p100:grammar-3-explanation",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p100:grammar-3-explanation",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p100:grammar-3-explanation",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p100:grammar-3-explanation",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p100:grammar-3-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p100:grammar-3-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p100:grammar-3-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p100:grammar-3-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p100:text4-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p100:text4-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p100:text4-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p100:text4-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p100:text4-background",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p100:text4-background",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p100:text4-background",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p100:text4-background",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p100:text4-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p100:text4-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p100:text4-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p100:text4-listening-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:text4-words-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:text4-words-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:text4-words-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:text4-words-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:word-21",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:word-21",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:word-21",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:word-21",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:word-22",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:word-22",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:word-22",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:word-22",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:word-23",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:word-23",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:word-23",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:word-23",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:word-24",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:word-24",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:word-24",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:word-24",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:word-25",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:word-25",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:word-25",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:word-25",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:word-26",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:word-26",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:word-26",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:word-26",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:word-27",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:word-27",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:word-27",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:word-27",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:text4-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:text4-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:text4-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:text4-read-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:grammar-classroom-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:grammar-4-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:grammar-4-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:grammar-4-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:grammar-4-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p101:grammar-4-explanation",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p101:grammar-4-explanation",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p101:grammar-4-explanation",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p101:grammar-4-explanation",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p102:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p102:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p102:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p102:series-running-header",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p102:grammar-4-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p102:grammar-4-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p102:grammar-4-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p102:grammar-4-complete-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p102:integrated-exercises-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p102:integrated-exercises-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p102:integrated-exercises-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p102:integrated-exercises-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p102:exercise-fill-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p102:exercise-fill-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p102:exercise-fill-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p102:exercise-fill-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p103:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p103:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p103:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p103:lesson-running-header",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p103:exercise-picture-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p103:exercise-picture-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p103:exercise-picture-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p103:exercise-picture-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p103:classroom-activities-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p103:classroom-activities-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p103:classroom-activities-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p103:classroom-activities-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p103:classroom-group-heading",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p103:classroom-group-heading",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p103:classroom-group-heading",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p103:classroom-group-heading",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p103:classroom-group-instruction",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p103:classroom-group-instruction",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p103:classroom-group-instruction",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p103:classroom-group-instruction",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p103:classroom-example-label",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p103:classroom-example-label",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p103:classroom-example-label",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p103:classroom-example-label",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p190:appendix-series-running-header",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p190:appendix-series-running-header",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p190:appendix-series-running-header",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p190:appendix-series-running-header",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p190:appendix-lesson-marker",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p190:appendix-lesson-marker",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p190:appendix-lesson-marker",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p190:appendix-lesson-marker",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p190:appendix-text1-line01",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p190:appendix-text1-line01",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p190:appendix-text1-line01",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p190:appendix-text1-line01",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p190:appendix-text1-line01",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p190:appendix-text1-line02",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p190:appendix-text1-line02",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p190:appendix-text1-line02",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p190:appendix-text1-line02",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p190:appendix-text1-line02",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p190:appendix-text1-line03",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p190:appendix-text1-line03",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p190:appendix-text1-line03",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p190:appendix-text1-line03",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p190:appendix-text1-line03",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p190:appendix-text1-line04",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p190:appendix-text1-line04",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p190:appendix-text1-line04",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p190:appendix-text1-line04",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p190:appendix-text1-line04",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p190:appendix-text1-line05",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p190:appendix-text1-line05",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p190:appendix-text1-line05",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p190:appendix-text1-line05",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p190:appendix-text1-line05",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p190:appendix-text1-line06",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p190:appendix-text1-line06",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p190:appendix-text1-line06",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p190:appendix-text1-line06",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p190:appendix-text1-line06",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p190:appendix-text1-line07",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p190:appendix-text1-line07",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p190:appendix-text1-line07",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p190:appendix-text1-line07",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p190:appendix-text1-line07",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text2-line01",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text2-line01",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text2-line01",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text2-line01",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text2-line01",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text2-line02",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text2-line02",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text2-line02",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text2-line02",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text2-line02",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text2-line03",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text2-line03",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text2-line03",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text2-line03",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text2-line03",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text2-line04",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text2-line04",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text2-line04",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text2-line04",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text2-line04",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text2-line05",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text2-line05",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text2-line05",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text2-line05",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text2-line05",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text2-line06",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text2-line06",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text2-line06",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text2-line06",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text2-line06",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text2-line07",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text2-line07",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text2-line07",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text2-line07",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text2-line07",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text2-line08",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text2-line08",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text2-line08",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text2-line08",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text2-line08",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text3-line01",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text3-line01",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text3-line01",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text3-line01",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text3-line01",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text3-line02",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text3-line02",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text3-line02",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text3-line02",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text3-line02",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text3-line03",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text3-line03",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text3-line03",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text3-line03",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text3-line03",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text3-line04",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text3-line04",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text3-line04",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text3-line04",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text3-line04",
+      "passed": true
+    },
+    {
+      "name": "complete samephysical page column fragments",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text3-line05",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text3-line05",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text3-line05",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text3-line05",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text3-line05",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text3-line06",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text3-line06",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text3-line06",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text3-line06",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text3-line06",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text3-line07",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text3-line07",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text3-line07",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text3-line07",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text3-line07",
+      "passed": true
+    },
+    {
+      "name": "VI field pages hsk3-official-vi:l11:p191:appendix-text4-whole-paragraph",
+      "passed": true
+    },
+    {
+      "name": "actual VI primary binding hsk3-official-vi:l11:p191:appendix-text4-whole-paragraph",
+      "passed": true
+    },
+    {
+      "name": "known actual detail pages hsk3-official-vi:l11:p191:appendix-text4-whole-paragraph",
+      "passed": true
+    },
+    {
+      "name": "ZH source page provenance hsk3-official-vi:l11:p191:appendix-text4-whole-paragraph",
+      "passed": true
+    },
+    {
+      "name": "actual body/appendix pair hsk3-official-vi:l11:p191:appendix-text4-whole-paragraph",
+      "passed": true
+    },
+    {
+      "name": "27 independently read ZH VI rawPOS PY tuples",
+      "passed": true
+    },
+    {
+      "name": "proper LaoZhang rawblankPOS tuple",
+      "passed": false
+    }
+  ],
+  "error": "proper LaoZhang rawblankPOS tuple"
+}

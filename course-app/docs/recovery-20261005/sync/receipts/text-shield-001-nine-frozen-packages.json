@@ -1,0 +1,960 @@
+{
+  "schemaVersion": 1,
+  "verifiedAtUTC": "2026-10-05T02:22:43.848776+00:00",
+  "scope": "text-shield-001-nine-frozen-packages",
+  "qualification": "partial-text-only-not-full-package-acceptance",
+  "repository": "nhiennhientran/hsk-hub",
+  "branch": "work/hsk-recovery-text-shield-20261005",
+  "localCommit": "6071f86c90c20759df87655a4f3b5a34149787a8",
+  "remoteCommit": "115e859afc5810aee1cc7eb1e35789331b005529",
+  "localAndRemoteTree": "de37d2bb9b6ebe197281247255a4838eb9c9578f",
+  "actualRemoteParentCommit": "d3c4e2057e5c8cce5845186d202584a1b163e229",
+  "localCommitIsNotRemoteCommit": true,
+  "stageSHA256": "357cd51f2a0057c6dbca903d297ea1e09b07c0c5ce7aa11deee400d197271769",
+  "freezePath": "course-app/docs/recovery-20261005/sync/text-shield/PARTIAL-TEXT-SHIELD-001.json",
+  "freezeSHA256": "357cd51f2a0057c6dbca903d297ea1e09b07c0c5ce7aa11deee400d197271769",
+  "remoteNetworkBlobsVerified": 104,
+  "expectedBlobs": 104,
+  "fileByteReadback": [
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/FREEZE.json",
+      "actualBytes": 4539,
+      "actualSHA256": "60e8a7b2ac2a5cdadb115bb5e235842edab4ab959ff15157a2b5d792f448fe6d",
+      "actualGitBlobSHA": "586c888f105f4788339ee83ea43d9be6adfde07f",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/README.md",
+      "actualBytes": 2141,
+      "actualSHA256": "b0fcbdff221bd4d31a442264e5a44de929996c5e16a43b12f94ad4119db5c819",
+      "actualGitBlobSHA": "ab5ebfa636546919ad867f689565c2453cdf7651",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/STAGE-FILES.txt",
+      "actualBytes": 2178,
+      "actualSHA256": "d42158cc17cadee7f01b87fa4b226bc1f8e0a4e5d10778a68a9c5a52785fd548",
+      "actualGitBlobSHA": "faa09c5487891ad7af1023d2c25f79fbbb3492bf",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/build-source.py",
+      "actualBytes": 22435,
+      "actualSHA256": "4454d1ea5a80da33e37b83710e1b0cf0b89130aee744710eb38931b09da79af0",
+      "actualGitBlobSHA": "4235dbc6b245638ded362a40ab9e6788237bc81a",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/codepoints.json",
+      "actualBytes": 119950,
+      "actualSHA256": "5e3fc02c16026e24eb64aa476174651ef6dbf6df554d331c1a157e6b05ba83ab",
+      "actualGitBlobSHA": "50b2d94c3f617419f2daa355af36744980825efb",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/render-manifest.json",
+      "actualBytes": 7609,
+      "actualSHA256": "d08a58216a32f5805542173b303a1d45109efa7f0980e985ec2d7d3b784b78ff",
+      "actualGitBlobSHA": "80714eb463f45c014c0b8b5c5beb734d9cb1dbfc",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/scope.json",
+      "actualBytes": 1113,
+      "actualSHA256": "64a1486371cfd490a0f5a51ec45a8af927aaaf15f232825ccd222fe0151f581a",
+      "actualGitBlobSHA": "8126b590e45a15741608ea227bf9c8aec75f5e3d",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/self-verification.json",
+      "actualBytes": 147442,
+      "actualSHA256": "5f8bc304c8a314445cd20537cb4bd3ff0fe4f2c4d25bb2b9cbb600f81b13630d",
+      "actualGitBlobSHA": "2c72d2fb877a29422a319138ad9944b1ffdef381",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/self-verification.log",
+      "actualBytes": 342,
+      "actualSHA256": "24e4d8f161bfc08dd57f8a0041fd08fdc899943a1572b2d68a5a553220275375",
+      "actualGitBlobSHA": "6658cf8b14d01a4b5362a51541c0090a675ba6dd",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/source.json",
+      "actualBytes": 138248,
+      "actualSHA256": "48845d6d2dc470586bdb38fd85cb2bcf79f90ff3019c525db926744d38896193",
+      "actualGitBlobSHA": "44d38f14079a85c9d67f732be2b37dc1308f9ed7",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/verify-source.py",
+      "actualBytes": 6002,
+      "actualSHA256": "448effc4e7400e9c5ed343a6f28314a6af8a3f0f9ff017b731db2fbf09653dfd",
+      "actualGitBlobSHA": "682e44640c5b8a318e7acf6d2da5d273a7b779b0",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l11/visual-raster-readback.json",
+      "actualBytes": 2149,
+      "actualSHA256": "5093dae1e56f0085dd3dab838e7fd354c9d74241929699f96f0b760384537d86",
+      "actualGitBlobSHA": "243931b311502ab6700f7c198c7fb33d0cb055d8",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l08/FREEZE.json",
+      "actualBytes": 3529,
+      "actualSHA256": "b6eb63c36475b8e0c5b2840768f2bebda285cc503fb49aef5624e5f4a80d30bc",
+      "actualGitBlobSHA": "079c8fdcf739b057f9460740e17dc0301704f3ec",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l08/README.md",
+      "actualBytes": 600,
+      "actualSHA256": "1657c1f99c75f524a34839c5d777a85d17076dc26538abb6a08f71722ba9d4f8",
+      "actualGitBlobSHA": "fa28d8e8301eb8b76b18b54f68424d12b2ca79b9",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l08/STAGE-FILES.txt",
+      "actualBytes": 1709,
+      "actualSHA256": "8a3093bfde8c3587f1bd127a489de862181b89229c5e5154cfb287bd5397ea83",
+      "actualGitBlobSHA": "5d876b210d5994970557d94b6e8ebac7e15e90ab",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l08/author-input.json",
+      "actualBytes": 157164,
+      "actualSHA256": "fac2d1ff0ae59f0409847a017421ead2e86e60ec92a3ea01a0e581f8c2f3c1d9",
+      "actualGitBlobSHA": "50cd3b2c727ae2f3701629e2d23cfa94cfe8e740",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l08/author-verification.json",
+      "actualBytes": 24467,
+      "actualSHA256": "b2554cee06b8d4a42afb5edb3de78362f7735e87cede2954ba1062e353f152d2",
+      "actualGitBlobSHA": "483fb01dcd335d348e8d6fafa735457bbd7428c6",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l08/build-source-pack.py",
+      "actualBytes": 8165,
+      "actualSHA256": "b94cf13b1d7167ad88b859ab488e0aec934d0479cb36544a2fda70cae0c6198c",
+      "actualGitBlobSHA": "0ef4540502f6aace562934adf0d95115d2186bce",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l08/page-scope-ledger.json",
+      "actualBytes": 6966,
+      "actualSHA256": "d906325bad93f096963bb342487fda59fb9c4f60d6a5532869fe4317dc4d4fc1",
+      "actualGitBlobSHA": "4937f1aa6e50a292f530dfbcafd1d58f9fec9759",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l08/render-manifest.json",
+      "actualBytes": 4997,
+      "actualSHA256": "262bd25e977c862aba5f8be15a0e21cc35b06c711c4747e30571d4c8a3068c56",
+      "actualGitBlobSHA": "a881b85f61ed57100474ad7ce43c0845e7c0969d",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l08/source-transcription.json",
+      "actualBytes": 151299,
+      "actualSHA256": "a18e982a0a63c1f74da7ccd988ebee72dd1e1c0bc5d553e603ff8aac163b7a61",
+      "actualGitBlobSHA": "47c075a6e318e5e58a65d94e50f3de671e330fc1",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/FREEZE.json",
+      "actualBytes": 3005,
+      "actualSHA256": "b1e0b645c2de4ae72721f4a80911d0088007eba61e4fc7604502133ee0be7bb9",
+      "actualGitBlobSHA": "b03b3d9da7bcd8fd8f8954f99b57fa3bb1647feb",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/README.md",
+      "actualBytes": 612,
+      "actualSHA256": "65a37219cdec0cdc54b65eee062c92e20df2276bdf63920ddebc85df9629153b",
+      "actualGitBlobSHA": "8d2d63a67fde41e7dafde343a6daac4382d81492",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/STAGE-FILES.txt",
+      "actualBytes": 1646,
+      "actualSHA256": "0c002f8fcc1ef139d6f7232b5a7f1f3228823cdffb16bf622dbf0a024b166e21",
+      "actualGitBlobSHA": "0cff5d45bfbed62bbcd21d9e3516ca6df7e41cf0",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/author-input.json",
+      "actualBytes": 90070,
+      "actualSHA256": "087cd589b9a7130b570f384623f491d11c6a6f5c3debd12dc8fe16dd8c82692a",
+      "actualGitBlobSHA": "da3e056b3bde057050b0f1ac79e7195fd38957e3",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/author-verification.json",
+      "actualBytes": 16081,
+      "actualSHA256": "b64353bf26d41e3dd3b2d03f9bb2ebd24c31dec5a14af08695cafc8f6152def6",
+      "actualGitBlobSHA": "305eadb4c666e6e7529b4f8149037e8e3724796a",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/build-source-pack.py",
+      "actualBytes": 7734,
+      "actualSHA256": "53d1ae5f270876ed2cf74e15bf3f732c08ad4923fc42d8591e8f5ba1ab0ece75",
+      "actualGitBlobSHA": "eaf05aecf4fa704e1e53b986cc07eb33fcfe77d2",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/page-scope-ledger.json",
+      "actualBytes": 4865,
+      "actualSHA256": "0ee0080ddb254fc55107cc727ab39c6717daebc5ad563c11a75847661514ab43",
+      "actualGitBlobSHA": "de5021504dd464b26e3c3f427946e37fc8319ba0",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/render-manifest.json",
+      "actualBytes": 3750,
+      "actualSHA256": "9249ccdd77cc068bf891be6c722c2b132eec53ba73b5924cb138fdf861c991d4",
+      "actualGitBlobSHA": "8f3dd9c9fdba79252cc677c89ef7e8f9bc16eda4",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/source-correction-v2/FREEZE.json",
+      "actualBytes": 1818,
+      "actualSHA256": "4a61c883176358f1715c66379f661905c02bde29e605a4c7ff56cfaa9e44a79e",
+      "actualGitBlobSHA": "20b9296e0637ffa7b5c4a8a834f5079ab427a0a4",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/source-correction-v2/README.md",
+      "actualBytes": 454,
+      "actualSHA256": "632c38671216fea42ecc7068ec69c3811a5a7b7fad025faf3c4f100fe256961d",
+      "actualGitBlobSHA": "245750abba263a9af69d37132f225a6cdd4969fb",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/source-correction-v2/STAGE-FILES.txt",
+      "actualBytes": 1183,
+      "actualSHA256": "62af78b8be93ddcdc184790f1bdf0c7e06a75acb795ce83c3403032a4f93d785",
+      "actualGitBlobSHA": "bda46dae23df41fa9618f4a184095d85f32fb173",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/source-correction-v2/author-verification.json",
+      "actualBytes": 386,
+      "actualSHA256": "96e3d10718c4a34529f4c1d1b77086deaf76b7542a1602b1351516354ff460d8",
+      "actualGitBlobSHA": "c35f991b375fba3b0b56c323388e7dc20bb662e9",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/source-correction-v2/correct-shared-appendix-v2.py",
+      "actualBytes": 5718,
+      "actualSHA256": "f2d9d8c02995370357bea29e63431628fe5f08ef92a1eac73ac24a0f78612f6d",
+      "actualGitBlobSHA": "f9ca1037c40845158fd5c051f177676d3e8f4efb",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/source-correction-v2/render-manifest.json",
+      "actualBytes": 1143,
+      "actualSHA256": "cb7595a896295e06d50f0e2bc48f8d1eea5c4c4628122ce042b208bedb1bd204",
+      "actualGitBlobSHA": "84232a4671dd68d6a71b71037e9379fdf1d47eff",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/source-correction-v2/repair.json",
+      "actualBytes": 8585,
+      "actualSHA256": "ac6343951beba20d4276a773f82cee181b7388a307b5a6202bcf1cac2c672a75",
+      "actualGitBlobSHA": "7144f112b2a14dfdebec4722775721c37c960278",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/source-correction-v2/source-transcription.json",
+      "actualBytes": 86682,
+      "actualSHA256": "a1b29b19c1b772b8ec92ad23b405e7012740ac17a8c3c394d5c47fd44b5652e7",
+      "actualGitBlobSHA": "b5282d042ef2cf7cf6b0a036341179373494197e",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-shared-appendix/source-transcription.json",
+      "actualBytes": 86356,
+      "actualSHA256": "5d410fd3122ef36dbcdb74446e0d4a9fe9b08d10c86f2634f566d14e82864255",
+      "actualGitBlobSHA": "7fbe20f9f278e303719f7fd1563c666572a8f192",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/README.md",
+      "actualBytes": 4226,
+      "actualSHA256": "cadea88171281ec51466eee6c479586458a7f606a2679f4580fefc22d6154525",
+      "actualGitBlobSHA": "f2221aecbc831096bde5ae6094c29e802417822d",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/STAGE",
+      "actualBytes": 3963,
+      "actualSHA256": "883affea131f9a4e1d3c031c3f271df0103eb3165ec109dc1e6870f89e1f3d08",
+      "actualGitBlobSHA": "d33098d28fd2b94ac6cb0ac6875bb084f078c167",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/author-expected-scope.json",
+      "actualBytes": 1960,
+      "actualSHA256": "4766b30dc014eba84e1ad6b38caab873f209596ed9ff43c1fa85432be6904b6c",
+      "actualGitBlobSHA": "dafd9c70ad20d5f51317ca343eaa2ebc61785e21",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/author-source.py",
+      "actualBytes": 6036,
+      "actualSHA256": "665ba59c5d9119799cf23783fcb04c5bf03fdde5b490d8b424417843f648080f",
+      "actualGitBlobSHA": "470dc23612d8cbd1c814c4b2323512a51e22cc0f",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/author-verification.json",
+      "actualBytes": 42194,
+      "actualSHA256": "2c88406127c314a3289526da638fb87fb8ab8b3369c0756221fe41056077c5b5",
+      "actualGitBlobSHA": "caf1dbc19b24af8cc970c4fb67a3ebcf8b5a01ae",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/freeze-manifest.json",
+      "actualBytes": 8714,
+      "actualSHA256": "95390ecc4ba27a106f77a377ae95bfb7a6bc7e023dc17cccbbbe1386365378f8",
+      "actualGitBlobSHA": "5625b8a181860608bb04f8f0659214525455b783",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/render-evidence.py",
+      "actualBytes": 3244,
+      "actualSHA256": "1d0ccc13ad3bfb1b1ebbb1748b2c6ea6818e4d5ee0f1af87970134df50e6f3fd",
+      "actualGitBlobSHA": "c8fd93c7037dfb99e5fddbb4c68dfaf65c7678fb",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/source-detail-crop-evidence.json",
+      "actualBytes": 10541,
+      "actualSHA256": "94e6916885ddcb0fc0e6bc1b1d60a5cbceba3b044fee2c948122a4b77c400e01",
+      "actualGitBlobSHA": "1e06ab092be113054c195ee0ea941d1ebf5d38de",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/source-locator-evidence.json",
+      "actualBytes": 1689,
+      "actualSHA256": "8554b4471a0efaa6a3c024441d8da9cf18a4261dc4b146ed69a8594263b590c3",
+      "actualGitBlobSHA": "103171fcc5136e4797b6739a7110603f7140fcf7",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/source-observations.json",
+      "actualBytes": 2893,
+      "actualSHA256": "600c19df8f92f5349a365ffa36b8ef0fa54d1da6b7a41a683a2e4e841611c211",
+      "actualGitBlobSHA": "ae2d73b513723026808a7239a056facd953e5352",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/source-page-evidence.json",
+      "actualBytes": 12210,
+      "actualSHA256": "0ac0bc41c1c6b15d94d39419c93754ca1ae39c7c939987b1817a91798c4fb3e9",
+      "actualGitBlobSHA": "f965d104fdd928310835e1f3c4aa11f2f3379475",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/source.json",
+      "actualBytes": 193210,
+      "actualSHA256": "72ced1f762bf0e44d26375f4bb58ecc3154049c12cd882b78c797c3d4d5918d0",
+      "actualGitBlobSHA": "41ef7242fdc300e538c5e04728f87f900df8a24b",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/source.tsv",
+      "actualBytes": 20118,
+      "actualSHA256": "f1b2ff21b70440bb433d513042c6b61808758c9db8b6770f7f7f225754162e1f",
+      "actualGitBlobSHA": "a5ab7e92550ceb424961395359bdcc513262330f",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l11/verify-source.py",
+      "actualBytes": 11461,
+      "actualSHA256": "3cadb1b96671dd665fe3546199ecc6d09524b5e5c058aaf76a14d1572d363ac9",
+      "actualGitBlobSHA": "6454f404c3153074275eb0bad21c78538a3cb073",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l08/FREEZE.json",
+      "actualBytes": 3696,
+      "actualSHA256": "979a6ef451a6ea07e159a4a31e5534fb6d13a814e0805b17ea9f433574b85076",
+      "actualGitBlobSHA": "421e0c22226d45e10a600e51038792969e5c5a95",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l08/STAGE.json",
+      "actualBytes": 3975,
+      "actualSHA256": "20a2ba3235e01e901f8483eee5441c2cd3a3d1b7760720390a96a79e4b9d983c",
+      "actualGitBlobSHA": "b1667e9fae65dd88374fc1b684b8021aa53f287e",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l08/author-input/freeze-manifest.json",
+      "actualBytes": 2826,
+      "actualSHA256": "6bd9ee4dc0aa4f506cc9a6274c7cdfecb318228b1b1273c4c114cc4d2ec9d892",
+      "actualGitBlobSHA": "054cd21cadec686e7a1b4b6e9dfdb3edd453c55c",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l08/author-input/source-transcription.json",
+      "actualBytes": 75996,
+      "actualSHA256": "95a395d982916d7ad316e1ae3680235d2c91870505c5977d4479e4aa691344a5",
+      "actualGitBlobSHA": "725f0e83121a9eec2b723e0e8bcc21f500c80db1",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l08/render-manifest.json",
+      "actualBytes": 6759,
+      "actualSHA256": "75732504101d4bcd2f6b94f6246a8af1b1e0541bf95f104b98a799c5e37950d9",
+      "actualGitBlobSHA": "52f05e955ff3a4f96edd52d8e756d58e717c28ed",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l08/review.json",
+      "actualBytes": 120142,
+      "actualSHA256": "e2f67b5eae8046b53a22123b4a966639f3bee0d344f6741c8d1579077416db1e",
+      "actualGitBlobSHA": "24cf813e8594f6f837760663832fb467a2d1a79a",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l08/validation.json",
+      "actualBytes": 605,
+      "actualSHA256": "1af9f5e99d525d0bd98cef1a8ab34e166e5f7b44bd618c2f6f0bef92767b7b29",
+      "actualGitBlobSHA": "5e7d27e59b33d33f9fdbf1e180f35c0736aa58a8",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l09/FREEZE.json",
+      "actualBytes": 4379,
+      "actualSHA256": "b3cc39f714f8d453dda99d1282c1a17c0de4e3ebe2fe03a4075f0946b1eb3d34",
+      "actualGitBlobSHA": "ffef28ea8e455e1c0c6585835d3b822588c1444d",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l09/STAGE.json",
+      "actualBytes": 4658,
+      "actualSHA256": "54f0cdc3b08625f7879a6379652021244ef680116a33df10306784ae0705360a",
+      "actualGitBlobSHA": "a16c6f044c62ff4ba060551b488dd396b58df840",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l09/author-input/freeze-manifest.json",
+      "actualBytes": 3332,
+      "actualSHA256": "52cba0f8bc4f24d1a414e8d78955ef0ad4b1e7b896d877eceb1af3077665803e",
+      "actualGitBlobSHA": "6f33794d7a704c7745d7de94cad78d94105db0cc",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l09/author-input/source-transcription.json",
+      "actualBytes": 95287,
+      "actualSHA256": "89b418c7af8880d4f71a7c25bbde1a4ca7e29aeb9f30fd86933d3dbf049fbdad",
+      "actualGitBlobSHA": "d22ce9bfda9b5029d34b5f1cdb0c13124521f5b6",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l09/manual-page-observations.json",
+      "actualBytes": 12077,
+      "actualSHA256": "b8e974e96b104adc467997ce0e6857ff147c6362755a090d4b0e9a6a8124707e",
+      "actualGitBlobSHA": "28a6bc7752be8d6f091b99ce4c34888b2f447518",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l09/render-manifest.json",
+      "actualBytes": 8038,
+      "actualSHA256": "a80d7415813ab4dbcf2a3135aeef92061a78e36c2f3a94ec2f3424e7acc7639d",
+      "actualGitBlobSHA": "dd9d0eaa843bf2809a517051990b3b634a9f1aa1",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l09/review.json",
+      "actualBytes": 150710,
+      "actualSHA256": "24ea6da066790809172fc0b406a7bfc04ec51045e744adfd5c2b09c7c3f06290",
+      "actualGitBlobSHA": "4910d5254ff86d54b2df3a69a574846e2f986e97",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l09/validation.json",
+      "actualBytes": 520,
+      "actualSHA256": "7095cccd3d2a8772fd26e320577f91f57da72346e60612f62ebce372d04c4af9",
+      "actualGitBlobSHA": "61445bd3b98460399bff9df06cfc656840d309ae",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/FREEZE.json",
+      "actualBytes": 4146,
+      "actualSHA256": "a2b93f02b0255947c2fdceef37e7a5c17576a2113d8c0f80e766a5be22941129",
+      "actualGitBlobSHA": "d4b688505997b8afb90f7080cdac4c8c268517ed",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/STAGE.json",
+      "actualBytes": 4425,
+      "actualSHA256": "e0bc464c05884e568c0dc916af9e7df18a9a3aea4ff390805c1c954329baf4a8",
+      "actualGitBlobSHA": "d7176a2e18fd491ad82916894599e3d0fdf1aaf3",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/author-input/freeze-manifest.json",
+      "actualBytes": 3344,
+      "actualSHA256": "3cf8a378dec3dfeb7dff9dcaf466320615ff94097fff22305af5a44b6e6de297",
+      "actualGitBlobSHA": "7ee1e5161dd694888beeb0731649621232a6474a",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/author-input/source-transcription.json",
+      "actualBytes": 78924,
+      "actualSHA256": "440d516685e524134c62da255a74a5112ece1f61d4ad668cc088d2a8766f65c9",
+      "actualGitBlobSHA": "2727e8141294d91110b458c6e3b85e7130270d1b",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/boundary-observation-correction-v2/FREEZE.json",
+      "actualBytes": 5529,
+      "actualSHA256": "902fddb67a0fdb658ddf70809e4e22c7ea069581c44c517d9ec743ffb2e7ab6b",
+      "actualGitBlobSHA": "843463e9877f77faca225f2d05663e01cc6ad789",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/boundary-observation-correction-v2/STAGE.json",
+      "actualBytes": 5931,
+      "actualSHA256": "d50957e68d047da19ab4a5fab914172333d06b2d79cc5074624575ba0f65adfa",
+      "actualGitBlobSHA": "742454a74f81278300ae20b6554627de92036efb",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/boundary-observation-correction-v2/correction.json",
+      "actualBytes": 1876,
+      "actualSHA256": "e647a5ecf96c61e3e7199dc42132d3341814bf5edc85d12fd92ae8074a6a70c3",
+      "actualGitBlobSHA": "96ab80e04a05278edd44fadab04cb9b715c8195b",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/boundary-observation-correction-v2/review.json",
+      "actualBytes": 126120,
+      "actualSHA256": "8490605abe1a77e5137090ad7c1e78436b829a43d7bb617427684e88b7b9c51e",
+      "actualGitBlobSHA": "92c8a8d8c3ad091ae28d98ab318f5f8bd1148417",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/boundary-observation-correction-v2/validation.json",
+      "actualBytes": 488,
+      "actualSHA256": "f3ac398e8fbf43e8c0329815f05da1057cad3fe9ad0e6adc01874a4682a32886",
+      "actualGitBlobSHA": "1d18eb265ed6e2ec43a8562cc577daf306649f32",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/manual-page-observations.json",
+      "actualBytes": 11128,
+      "actualSHA256": "14ae8e8f65ccaf4c776fd0d86d835840452f41420704b7eca40957223318202d",
+      "actualGitBlobSHA": "dc4ea59fadfd09a607fa236e9fe42b93385f12eb",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/render-manifest.json",
+      "actualBytes": 7760,
+      "actualSHA256": "0029cd28e72aa723bebc6dd23d7f5cf2c499d73add1845a10e626a8a42586d3f",
+      "actualGitBlobSHA": "f9c95a606c67a9e0aa51e50a4bdf5de92655465d",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/review.json",
+      "actualBytes": 125821,
+      "actualSHA256": "57a1c937bd14aea79b6bb0d7f87a5b60787c81ace5b363faee9b7818c17ebea5",
+      "actualGitBlobSHA": "b80ff46ffb88def9e01a63eba114dac87fe1f95a",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/validation.json",
+      "actualBytes": 519,
+      "actualSHA256": "73af367050bf6e9026b2b1cff4f45a8892c03a7b1a39809f3160e7ae1772649a",
+      "actualGitBlobSHA": "d74330c2d384e0a4c30ae6ad2184ee2f29c43a53",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/FREEZE.json",
+      "actualBytes": 6196,
+      "actualSHA256": "71d8dd7fe0afdfd3ac717618e511851b6c1d6b12dd80c3d59b17afced7e492fb",
+      "actualGitBlobSHA": "1c774f4ad7cd85a3e65a044c0b4eaa0a4ca94d73",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/README.md",
+      "actualBytes": 1299,
+      "actualSHA256": "0d42c6092d3a31db3c4b9e436e41c18b50b515da239ea9e776d744d51c2d28f0",
+      "actualGitBlobSHA": "b97d2f759263cea8252b6903c4c5b8e9994e32c0",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/STAGE.json",
+      "actualBytes": 3339,
+      "actualSHA256": "6a74a353e7821f8cbb456db130372352b4b3f104ff0d9cfbb7dc01016ac70ba6",
+      "actualGitBlobSHA": "86f40d673ace0e5b5ecfa38455da479469b49b04",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/author-input/freeze-manifest.json",
+      "actualBytes": 6509,
+      "actualSHA256": "c56f180fdb3b81978757541a1a86732a9cefda9b83603b897e2a1f2faa420b32",
+      "actualGitBlobSHA": "16a4c6adbe9ece7aec79418b3c556b2b4a8d2e9e",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/author-input/source-detail-crop-evidence.json",
+      "actualBytes": 8849,
+      "actualSHA256": "5586db506aa0820d04cf0ceb23929e4357bc5d634b4a954b4bcc32c3a161a512",
+      "actualGitBlobSHA": "c12c3ab866cd862472e6bec9899a2d83a28105ec",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/author-input/source-page-evidence.json",
+      "actualBytes": 13045,
+      "actualSHA256": "518fb46ffc4f1dd0d36e76635542c75b49c3c19dd1d4567d006025a46641997b",
+      "actualGitBlobSHA": "4c1875238e1015f6d99f1bad0b73cf312d5801e3",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/author-input/source-transcription.json",
+      "actualBytes": 108500,
+      "actualSHA256": "644727f2bfc774c0a6c8c3327afedcc7c72e0a09d12c4cd70361729628c49805",
+      "actualGitBlobSHA": "0f6cc407d508a415fa934eab3392f5d81bdcfb8c",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/command-record.json",
+      "actualBytes": 572,
+      "actualSHA256": "49b0049d2d2b69dd6afeb6d2c29bf7bbf8dafea83efc680eddcc9854562b4d6f",
+      "actualGitBlobSHA": "201945b953ec8d79b64c12f4566419fc7c7a91cd",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/fresh-crop-manifest.json",
+      "actualBytes": 2007,
+      "actualSHA256": "94cdeac18345e35ed45f14c4bb5e0d4f4af8f74a114bc1085708333ec1e7e4d2",
+      "actualGitBlobSHA": "180498b09e4874e065c2730ba0f90a7cd0e38786",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/independent-observations.json",
+      "actualBytes": 5360,
+      "actualSHA256": "d7a01af0d70d35df97bf81fe8aeef3a5a2a73a34a2c07791a384e8d1e4f2a88a",
+      "actualGitBlobSHA": "5369a7511984fe02fca57885512614aed98d7a2f",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/render-manifest.json",
+      "actualBytes": 8010,
+      "actualSHA256": "7a1438ed27763c54cffe34456f946eaffacad16a6c93cf9dbbb922746ae09f10",
+      "actualGitBlobSHA": "d32340ce14fcc1bc3d711e597e1fc1da0e53c84c",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/render-validation.json",
+      "actualBytes": 525,
+      "actualSHA256": "3fda10aa920449a4e8162a6bcec5b9f0055f5190c2e229aea20c6675fda28327",
+      "actualGitBlobSHA": "c9a549953bec862bb0bb5cc9799cf4e078960d2f",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/repair-list.json",
+      "actualBytes": 96,
+      "actualSHA256": "c2f4a8e6a77c163ed726b398c8d7ff7541fece118e6b3a1659b4f0a5e86d043a",
+      "actualGitBlobSHA": "e6b28f486b3d22b2bba7a7be2fb390282e22be1d",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/review-progress.json",
+      "actualBytes": 130063,
+      "actualSHA256": "86a4a403b9de552779e66798a29090c835f5feaaf0a741acb8b2f11af052cc9e",
+      "actualGitBlobSHA": "5f692bee84b3bda082f8b4952b874a962f863dd8",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/review.json",
+      "actualBytes": 137363,
+      "actualSHA256": "0dbcbe2ac9053cff20a111ef473bdd077ef982712420fd1cbb3e791f19e256c5",
+      "actualGitBlobSHA": "2920da5491073323fe9dd62ff3f6645ecbdfc628",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/verification.json",
+      "actualBytes": 3089,
+      "actualSHA256": "933b0190456d1e90dff58b36c599db6446e90e62b9e8733b5472a01cc4fcd596",
+      "actualGitBlobSHA": "d9b1c9f69817149e8038e56f152d6158e066ad86",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/verification.log",
+      "actualBytes": 3089,
+      "actualSHA256": "933b0190456d1e90dff58b36c599db6446e90e62b9e8733b5472a01cc4fcd596",
+      "actualGitBlobSHA": "d9b1c9f69817149e8038e56f152d6158e066ad86",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk3-l04/verify-review.py",
+      "actualBytes": 7201,
+      "actualSHA256": "d081149d66b76f461dabca16f9b16063e6fcc6be7fb64dd3caafbacfd28cdd29",
+      "actualGitBlobSHA": "f8a1b16e32793f34bbf4f9b784ae718bb059df82",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-tools/correct-hsk1-l10-boundary-observation.py",
+      "actualBytes": 4394,
+      "actualSHA256": "8d48af3ba8de5075bf7702dfda4dd71b3250f0260faa448796b0452ee4fe323f",
+      "actualGitBlobSHA": "a8d9124babae56fd00452e14c729acce07ffe1f1",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-tools/freeze-hsk1-l08-review.py",
+      "actualBytes": 8749,
+      "actualSHA256": "2e553f82bf4d446c887a2d66ab8baabe52aeacbc728d4b02009486f3abd951e7",
+      "actualGitBlobSHA": "e30b825206b67b69535819e0909f9ebab520eda9",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-tools/freeze-hsk1-l10-review.py",
+      "actualBytes": 6305,
+      "actualSHA256": "d034ec9e58533e747bfe90bab2438e6c19801dcc7880c9738cddbbfbcefaa966",
+      "actualGitBlobSHA": "9d9fca09a7695aa4c589e991a2c85eebd80482a6",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-tools/freeze-hsk1-recovered-review.py",
+      "actualBytes": 6307,
+      "actualSHA256": "5ccfb1fbf4fa432e0d54ca672c3a483dcb949a4095cb9187249f1ff654ee2041",
+      "actualGitBlobSHA": "c5b184ff49da82f4cda8c5a2d95033373e0e6289",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-tools/render-independent-hsk1.py",
+      "actualBytes": 4381,
+      "actualSHA256": "26956ed192cb12fa4026010fbc5f2771b3192164979263946cea61820e58d719",
+      "actualGitBlobSHA": "cfc2bb0e3010b1386b85611636245ab8d5f22d15",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/sync/text-shield/PARTIAL-TEXT-SHIELD-001.json",
+      "actualBytes": 66434,
+      "actualSHA256": "357cd51f2a0057c6dbca903d297ea1e09b07c0c5ce7aa11deee400d197271769",
+      "actualGitBlobSHA": "8ac38694c7a8efa758106dd7b647fe729de63424",
+      "expectedMode": "100644",
+      "actualNetworkRawRead": true,
+      "matched": true
+    }
+  ],
+  "failures": [],
+  "allNewBytesVerified": true,
+  "productionDeploymentPerformed": false,
+  "publicationAuthorized": false
+}

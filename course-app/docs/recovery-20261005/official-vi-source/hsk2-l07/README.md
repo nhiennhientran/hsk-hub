@@ -1,0 +1,3 @@
+HSK2 fresh recovery source-only author pack: hsk2-l07
+
+91 literal source records. Entire declared original pages were visually read from the actual restored PDF and retained PNG bytes. All source pages and explicit Chinese/Vietnamese paired fragments are recorded. No old lost acceptance report is adopted. This pack requires a different reviewer to inspect the original PDF and every source ID. No website VI was read or compared, no production change or trusted proof is generated. Chinese-only examples, options and response blanks are recorded as such, never invented as printed VI translations.
