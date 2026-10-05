@@ -75,6 +75,7 @@ for (const level of [2, 3] as const) {
       answers: {}, submitted: {}, playCounts: {}, startedAt: 1000};
     await seed(page, level, initial); await page.goto(`/#view=listening&level=${level}`);
     const card = page.locator('.listening-module .activity-card'); await expect(card).toHaveAttribute('data-draft-question-snapshot', 'current');
+    await page.screenshot({path: test.info().outputPath(`hsk${level}-whole-passage-listening.png`), fullPage: true});
     await card.locator(`input[value="${q.answer}"]`).check();
     await expect(page.locator('.save-status')).toHaveAttribute('data-status', 'saved');
     expect((await stored(page, level)).listeningRound!.questionSnapshots![q.id]!.question).toEqual(q);

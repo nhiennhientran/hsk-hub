@@ -33,6 +33,14 @@ jobs:
         working-directory: course-app
         run: |
           node tools/run-browser.mjs --config=playwright.unified.config.ts --project=${{ matrix.browser }} tests/unified/continue-flow-navigation.spec.ts tests/unified/continue-draft-history.spec.ts tests/unified/hsk1-scene-navigation.spec.ts
+          cp .repro-output/unified-browser.json .repro-output/functional-shared.json
+          cp -r test-results .repro-output/functional-shared-screenshots
+      - name: Existing media fallback and handwriting workflows
+        if: ${{ !cancelled() }}
+        working-directory: course-app
+        run: |
+          node tools/run-browser.mjs --config=playwright.unified.config.ts --project=${{ matrix.browser }} tests/unified/media.spec.ts tests/unified/reviewed-sentence-subset.spec.ts --grep 'multi-sentence source|pending short word|whole-track color|all three levels load|guarded source-frame|failed new checksum'
+          cp .repro-output/unified-browser.json .repro-output/functional-media.json
       - name: Retained HSK1 navigation and scene readability
         if: ${{ !cancelled() }}
         working-directory: hsk1-app
@@ -46,6 +54,9 @@ jobs:
           if-no-files-found: warn
           path: |
             course-app/.repro-output/unified-browser.json
+            course-app/.repro-output/functional-shared.json
+            course-app/.repro-output/functional-media.json
+            course-app/.repro-output/functional-shared-screenshots/
             hsk1-app/.repro-output/step8-browser.json
             course-app/test-results/
             hsk1-app/test-results/

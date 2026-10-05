@@ -54,12 +54,15 @@ export function sceneNavigationRegression(test: typeof Test, expect: typeof Expe
     await page.goto(url(1, 'text', 1));
     await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
     const tabs = page.locator('[data-scene-tab]');
+    await expect(tabs).toHaveCount(book.lessons[0].scenes.length);
     for (let index = 0; index < await tabs.count(); index++) {
       const tab = tabs.nth(index);
       await tab.click();
       await expect(tab).toHaveAttribute('aria-selected', 'true');
       await tab.hover();
-      const contrast = await tab.evaluate(node => {
+      const contrast = await tab.evaluate(async node => {
+        getComputedStyle(node).backgroundColor;
+        await Promise.allSettled(node.getAnimations().map(animation => animation.finished));
         const style = getComputedStyle(node);
         const luminance = (color: string) => {
           const rgb = color.match(/[\d.]+/g)!.slice(0, 3).map(Number).map(value => {
