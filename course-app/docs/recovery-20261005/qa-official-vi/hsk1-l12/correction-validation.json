@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "V1ToV2ExactDiff": [
+    [
+      "/appendixRelevantIndexRows/15/pinyinPrinted",
+      "xiàyǔ",
+      "xià yǔ"
+    ]
+  ],
+  "V2ToV3ExactDiff": [
+    [
+      "/occurrences/141/fragments/0/lineJoiner",
+      null,
+      ""
+    ],
+    [
+      "/occurrences/141/viText",
+      "Miêu tả ngắn gọn tình trạng bệnh tật, ví dụ: 我病了，觉得 很冷。",
+      "Miêu tả ngắn gọn tình trạng bệnh tật, ví dụ: 我病了，觉得很冷。"
+    ],
+    [
+      "/textPolicy/viText",
+      "Physical visual line wraps joined with one space; printed words, accents, casing and punctuation retained. No inferred translations of Chinese-only examples. Unicode character inventory is recorded without automatic content correction.",
+      "Physical visual Vietnamese word-line wraps joined with one space by default. A fragment lineJoiner overrides the default for a mixed CJK sentence split inside continuous Chinese text: concatenate without injecting a Chinese word space. Printed physical lineTexts are preserved. Printed words, accents, casing and punctuation retained; no inferred translations or automatic Unicode correction."
+    ]
+  ],
+  "selectedSourceSHA256": "f56162bb2f62af6593a57af97e6f8d33ff2f5ef494a24ba6ff86e0861a326f64",
+  "additionalFrozenAuthorFilesVerified": [
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/source.author-v2.json",
+      "bytes": 152095,
+      "sha256": "1aa190559c120746e7a0b99d7d474a51063cde721b268e1fb5f663147ce6ba9e"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/author-correction-v2.json",
+      "bytes": 683,
+      "sha256": "4d7b5d3109b22b7cceb642007f2ab82b0f3834561f2bd389fe7bc43502b1715a"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/STAGE-V2-FILES.txt",
+      "bytes": 330,
+      "sha256": "387310386522b81f005eb3e2a0eac2654852e05f830ef92026419c54d0c100b4"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/FREEZE-V2.json",
+      "bytes": 761,
+      "sha256": "3ff1d5c1cdec451424c75e0e1ff4a402632a01b5ba9b798e0d3066a20b3020ae"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/source.author-v3.json",
+      "bytes": 152279,
+      "sha256": "f56162bb2f62af6593a57af97e6f8d33ff2f5ef494a24ba6ff86e0861a326f64"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/author-correction-v3.json",
+      "bytes": 1788,
+      "sha256": "f0b5559b300334b44d016ff82a7d8a4cf6c7c39b42a777236771ef9cfa90ca1e"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/verify-source-author-v3.py",
+      "bytes": 6975,
+      "sha256": "a75299c881de3d0aa21f047fba9e3d59a44d496ae60847f2608642ca787459fe"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/codepoints.author-v3.json",
+      "bytes": 134998,
+      "sha256": "2aa7bb08d42c20146b096af5e2b691c62845cab0a7eb2568968e223867716665"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/self-verification.author-v3.json",
+      "bytes": 163071,
+      "sha256": "8f208f8c02a0855d927060262b032344fe6ae87bfe5d08c629bda5cb37d51282"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/self-verification.author-v3.log",
+      "bytes": 342,
+      "sha256": "4f927f2da7801c52ae10d19221245e3254c99336676123b3e4f5719f410ffd1a"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/STAGE-V3-FILES.txt",
+      "bytes": 696,
+      "sha256": "7597ddc83e61e70961607b4207c5023bd337bd1aaab33bbdc7915f57ac59e483"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/FREEZE-V3.json",
+      "bytes": 1506,
+      "sha256": "25188516bd1ad750c92d5877ddb14891c803a04b4717c12be8abe3ae37f44396"
+    }
+  ],
+  "originalPhysicalFragmentsRetained": true,
+  "manualOriginalPagesAlreadyReadSeparately": true
+}

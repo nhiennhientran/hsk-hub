@@ -1,0 +1,28 @@
+{
+  "qualification": "author-repair-from-root-independent-original-page-finding-still-awaiting-exact-V3-acceptance",
+  "oldV2InputSHA256": "1aa190559c120746e7a0b99d7d474a51063cde721b268e1fb5f663147ce6ba9e",
+  "newV3InputSHA256": "f56162bb2f62af6593a57af97e6f8d33ff2f5ef494a24ba6ff86e0861a326f64",
+  "changes": [
+    {
+      "pointer": "/occurrences/141/viText",
+      "old": "Miêu tả ngắn gọn tình trạng bệnh tật, ví dụ: 我病了，觉得 很冷。",
+      "new": "Miêu tả ngắn gọn tình trạng bệnh tật, ví dụ: 我病了，觉得很冷。"
+    },
+    {
+      "pointer": "/occurrences/141/fragments/0/lineJoiner",
+      "oldExists": false,
+      "new": ""
+    },
+    {
+      "pointer": "/textPolicy/viText",
+      "old": "Physical visual line wraps joined with one space; printed words, accents, casing and punctuation retained. No inferred translations of Chinese-only examples. Unicode character inventory is recorded without automatic content correction.",
+      "new": "Physical visual Vietnamese word-line wraps joined with one space by default. A fragment lineJoiner overrides the default for a mixed CJK sentence split inside continuous Chinese text: concatenate without injecting a Chinese word space. Printed physical lineTexts are preserved. Printed words, accents, casing and punctuation retained; no inferred translations or automatic Unicode correction."
+    }
+  ],
+  "bodyVILocusCount": 1,
+  "originalPhysicalFragmentsRetained": true,
+  "priorV2AppendixPinyinSpaceRetained": true,
+  "rootOriginalSourceFinding": "PDF110/094 mixed Chinese example continuation: first physical line ends觉得; next begins很冷。; no Chinese sentence space should be injected.",
+  "independentLanguageAccepted": 0,
+  "originalV1AndV2FreezeUnchanged": true
+}
