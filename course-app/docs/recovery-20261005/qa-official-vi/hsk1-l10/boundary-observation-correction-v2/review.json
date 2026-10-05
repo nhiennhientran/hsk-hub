@@ -1,0 +1,3932 @@
+{
+  "schemaVersion": 1,
+  "courseId": "hsk1",
+  "lesson": 10,
+  "reviewer": "/root",
+  "author": {
+    "reviewer": "hsk23_remaining_source",
+    "status": "author-transcribed-source-only",
+    "method": "Full visual reading of all 8 complete original-PDF pages and retained same-source detail crops. No website VI read or comparison."
+  },
+  "status": "accepted-source-transcription",
+  "sourceSHA256": "440d516685e524134c62da255a74a5112ece1f61d4ad668cc088d2a8766f65c9",
+  "sourcePDFSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+  "authorFreezeSHA256": "3cf8a378dec3dfeb7dff9dcaf466320615ff94097fff22305af5a44b6e6de297",
+  "acceptedOccurrenceCount": 121,
+  "method": "actual-manual-original-PDF-review",
+  "pageObservations": [
+    {
+      "pdfPage": 86,
+      "printedPage": "070",
+      "actuallyViewedWholePage": true,
+      "sourceOccurrenceCount": 9,
+      "observation": "Whole title, four goals, labels and warmup instruction match the original. Goal includes hàng hoá; RMB objective Nhận biết được đồng Nhân dân tệ is whole. Warmup options only Chinese/pinyin; no fabricated Vietnamese. This page was actually viewed as previous lesson boundary and all nine current records compared."
+    },
+    {
+      "pdfPage": 87,
+      "printedPage": "071",
+      "actuallyViewedWholePage": true,
+      "sourceOccurrenceCount": 26,
+      "observation": "All five whole ZH/VI dialogue turns and correct speaker Nhân viên bán hàng match. Seven word rows/pinyin/raw POS match; money 块 lượng. đồng (đơn vị tiền tệ) is preserved faithfully. All headings/scene/read/role/pair instructions and the two physical lines in fourth role match."
+    },
+    {
+      "pdfPage": 88,
+      "printedPage": "072",
+      "actuallyViewedWholePage": true,
+      "sourceOccurrenceCount": 11,
+      "observation": "Full three-line money explanation explicitly identifies Trung Quốc / RMB and unit order; arrow and mixed Chinese tokens retained. Three parenthesized Vietnamese table headers match; six table body rows have no Vietnamese. Text2 scene/listen instruction and book header complete; no omitted printed Vietnamse."
+    },
+    {
+      "pdfPage": 89,
+      "printedPage": "073",
+      "actuallyViewedWholePage": true,
+      "sourceOccurrenceCount": 21,
+      "observation": "Five full dialogue turns, six word rows8–13 with raw POS/pinyin, and whole shopping-role practice instructions match. The source actually uses Người bán hàng here rather than first-text Nhân viên bán hàng; retain the printed variation. Price uses decimal comma7,2 and cân, and 斤 gloss explicitly defines Chinese unit0,5kg. Scene lies on88, all speakers/turns on89."
+    },
+    {
+      "pdfPage": 90,
+      "printedPage": "074",
+      "actuallyViewedWholePage": true,
+      "sourceOccurrenceCount": 8,
+      "observation": "Complete two-line adjective-predicate grammar explanation, title/read instruction and text3 scene/listen instruction match. The whole scene identifies Lưu Minh and Vương Nhất Tuyết buying clothes for children; no Chinese-only example/listening choices mislabelled as printed Vietnamese."
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": "075",
+      "actuallyViewedWholePage": true,
+      "sourceOccurrenceCount": 32,
+      "observation": "Six full dialogue turns and 10 word rows14–23/rawPOS/pinyin match. Tiểu Tuyết vs Tiểu Minh and female/male clothes are correctly associated. Three-line full fifth translation retained; proper names in dialogue are not fabricated proper-name word rows. Both translated reading questions and instructions match."
+    },
+    {
+      "pdfPage": 92,
+      "printedPage": "076",
+      "actuallyViewedWholePage": true,
+      "sourceOccurrenceCount": 7,
+      "observation": "Full question-word explanation and physical two-line wrap match. Vietnamese tình hình... uses three baseline dots, while following Chinese ……怎么样? displays six midline dots represented as two U+2026. This explicit character policy is preserved. All grammar/exercise headings and instructions correct; examples and fill-blank stems have no Vietnamese printed."
+    },
+    {
+      "pdfPage": 93,
+      "printedPage": "077",
+      "actuallyViewedWholePage": true,
+      "sourceOccurrenceCount": 7,
+      "observation": "All whole printed Vietnamese picture instruction, classroom role-play instructions, closing video heading Món quà của Tiểu Ngữ and title Nhận biết về đồng Nhân dân tệ match. Four picture stems are Chinese only. Two-line three-person instruction complete; chapter ends here."
+    },
+    {
+      "pdfPage": 94,
+      "printedPage": "078",
+      "actuallyViewedWholePage": true,
+      "sourceOccurrenceCount": 0,
+      "observation": "Whole original boundary page actually viewed: Bài 11 / 我读大学呢 / Em đang học đại học starts the next lesson. The page is excluded from all121 accepted lesson10 source occurrences. Earlier reviewer note mistakenly named another lesson; this correction changes the boundary description only."
+    }
+  ],
+  "categoryCounts": {
+    "lesson-label": 5,
+    "lesson-title": 1,
+    "section-heading": 13,
+    "goal": 4,
+    "instruction": 15,
+    "scene": 3,
+    "dialogue-translation": 16,
+    "word-gloss": 23,
+    "word-pos": 23,
+    "running-header": 3,
+    "grammar-title": 3,
+    "grammar-explanation": 3,
+    "table-header": 3,
+    "reading-question": 2,
+    "activity-title": 1,
+    "activity-instruction": 1,
+    "video-heading": 1,
+    "video-title": 1
+  },
+  "decisions": [
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf086-lesson-label",
+      "decision": "accept-source-transcription",
+      "pdfPage": 86,
+      "printedPage": "070",
+      "category": "lesson-label",
+      "verifiedVietnamese": "Bài",
+      "verifiedChineseContext": "这儿的苹果真便宜！",
+      "verifiedFragments": [
+        {
+          "pdfPage": 86,
+          "printedPage": "070",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 86,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-086-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf086-title",
+      "decision": "accept-source-transcription",
+      "pdfPage": 86,
+      "printedPage": "070",
+      "category": "lesson-title",
+      "verifiedVietnamese": "Táo ở đây rẻ thật!",
+      "verifiedChineseContext": "这儿的苹果真便宜！",
+      "verifiedFragments": [
+        {
+          "pdfPage": 86,
+          "printedPage": "070",
+          "lineTexts": [
+            "Táo ở đây rẻ thật!"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 86,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-086-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf086-goals-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 86,
+      "printedPage": "070",
+      "category": "section-heading",
+      "verifiedVietnamese": "Mục tiêu",
+      "verifiedChineseContext": "目标",
+      "verifiedFragments": [
+        {
+          "pdfPage": 86,
+          "printedPage": "070",
+          "lineTexts": [
+            "Mục tiêu"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 86,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-086-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf086-goal-01",
+      "decision": "accept-source-transcription",
+      "pdfPage": 86,
+      "printedPage": "070",
+      "category": "goal",
+      "verifiedVietnamese": "Có thể nghe hiểu, đọc hiểu và trao đổi đơn giản về giá cả hàng hoá.",
+      "verifiedChineseContext": "能听懂、看懂并简单谈论商品价格。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 86,
+          "printedPage": "070",
+          "lineTexts": [
+            "Có thể nghe hiểu, đọc hiểu và trao đổi đơn giản",
+            "về giá cả hàng hoá."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 86,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-086-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf086-goal-02",
+      "decision": "accept-source-transcription",
+      "pdfPage": 86,
+      "printedPage": "070",
+      "category": "goal",
+      "verifiedVietnamese": "Nắm vững cách sử dụng của câu vị ngữ tính từ.",
+      "verifiedChineseContext": "掌握形容词谓语句的用法。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 86,
+          "printedPage": "070",
+          "lineTexts": [
+            "Nắm vững cách sử dụng của câu vị ngữ tính từ."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 86,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-086-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf086-goal-03",
+      "decision": "accept-source-transcription",
+      "pdfPage": 86,
+      "printedPage": "070",
+      "category": "goal",
+      "verifiedVietnamese": "Nắm vững cách dùng của đại từ nghi vấn “怎么样”.",
+      "verifiedChineseContext": "掌握疑问代词“怎么样”的用法。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 86,
+          "printedPage": "070",
+          "lineTexts": [
+            "Nắm vững cách dùng của đại từ nghi vấn “怎么样”."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 86,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-086-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf086-goal-04",
+      "decision": "accept-source-transcription",
+      "pdfPage": 86,
+      "printedPage": "070",
+      "category": "goal",
+      "verifiedVietnamese": "Nhận biết được đồng Nhân dân tệ.",
+      "verifiedChineseContext": "认识人民币。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 86,
+          "printedPage": "070",
+          "lineTexts": [
+            "Nhận biết được đồng Nhân dân tệ."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 86,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-086-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf086-warmup-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 86,
+      "printedPage": "070",
+      "category": "section-heading",
+      "verifiedVietnamese": "Khởi động",
+      "verifiedChineseContext": "热身",
+      "verifiedFragments": [
+        {
+          "pdfPage": 86,
+          "printedPage": "070",
+          "lineTexts": [
+            "Khởi động"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 86,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-086-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf086-warmup-instruction",
+      "decision": "accept-source-transcription",
+      "pdfPage": 86,
+      "printedPage": "070",
+      "category": "instruction",
+      "verifiedVietnamese": "Lựa chọn hình ảnh tương ứng với các từ ngữ sau.",
+      "verifiedChineseContext": "给下面的词语选择对应的图片。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 86,
+          "printedPage": "070",
+          "lineTexts": [
+            "Lựa chọn hình ảnh tương ứng với các từ ngữ sau."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 86,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-086-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-lesson-label",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "lesson-label",
+      "verifiedVietnamese": "Bài",
+      "verifiedChineseContext": "这儿的苹果真便宜！",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-text-1-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "section-heading",
+      "verifiedVietnamese": "Bài khoá 1",
+      "verifiedChineseContext": "课文1",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Bài khoá 1"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-text-1-scene",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "scene",
+      "verifiedVietnamese": "Vương Nhất Tuyết mua cốc ở một cửa hàng nhỏ.",
+      "verifiedChineseContext": "在一家小店，王一雪在买杯子。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Vương Nhất Tuyết mua cốc ở một cửa hàng nhỏ."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-text-1-read",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "instruction",
+      "verifiedVietnamese": "Đọc to đoạn hội thoại.",
+      "verifiedChineseContext": "朗读对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-text-1-role-01",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Vương Nhất Tuyết: Xin hỏi, ở đây có bán cốc không?",
+      "verifiedChineseContext": "请问，有杯子吗？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Vương Nhất Tuyết: Xin hỏi, ở đây có bán cốc không?"
+          ]
+        }
+      ],
+      "speakerZh": "王一雪",
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-text-1-role-02",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Nhân viên bán hàng: Có ạ, cốc ở phía bên này.",
+      "verifiedChineseContext": "有，杯子在这边。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Nhân viên bán hàng: Có ạ, cốc ở phía bên này."
+          ]
+        }
+      ],
+      "speakerZh": "售货员",
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-text-1-role-03",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Vương Nhất Tuyết: Bao nhiêu tiền một chiếc vậy?",
+      "verifiedChineseContext": "多少钱一个？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Vương Nhất Tuyết: Bao nhiêu tiền một chiếc vậy?"
+          ]
+        }
+      ],
+      "speakerZh": "王一雪",
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-text-1-role-04",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Nhân viên bán hàng: Những chiếc này 5 đồng một chiếc, còn những chiếc kia 10 đồng một chiếc.",
+      "verifiedChineseContext": "这些五块钱一个，那些十块钱一个。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Nhân viên bán hàng: Những chiếc này 5 đồng một",
+            "chiếc, còn những chiếc kia 10 đồng một chiếc."
+          ]
+        }
+      ],
+      "speakerZh": "售货员",
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-text-1-role-05",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Vương Nhất Tuyết: Tôi lấy chiếc này.",
+      "verifiedChineseContext": "我买这个吧。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Vương Nhất Tuyết: Tôi lấy chiếc này."
+          ]
+        }
+      ],
+      "speakerZh": "王一雪",
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-words-1-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "section-heading",
+      "verifiedVietnamese": "Từ mới",
+      "verifiedChineseContext": "生词",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-01-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-gloss",
+      "verifiedVietnamese": "cốc, ly",
+      "verifiedChineseContext": "杯子",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "cốc, ly"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-01-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-pos",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "杯子",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-02-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-gloss",
+      "verifiedVietnamese": "nhân viên bán hàng",
+      "verifiedChineseContext": "售货员",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "nhân viên bán hàng"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-02-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-pos",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "售货员",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-03-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-gloss",
+      "verifiedVietnamese": "bên này, phía này",
+      "verifiedChineseContext": "这边",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "bên này, phía này"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-03-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-pos",
+      "verifiedVietnamese": "đt.",
+      "verifiedChineseContext": "这边",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "đt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-04-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-gloss",
+      "verifiedVietnamese": "tiền",
+      "verifiedChineseContext": "钱",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "tiền"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-04-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-pos",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "钱",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-05-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-gloss",
+      "verifiedVietnamese": "những cái này",
+      "verifiedChineseContext": "这些",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "những cái này"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-05-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-pos",
+      "verifiedVietnamese": "đt.",
+      "verifiedChineseContext": "这些",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "đt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-06-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-gloss",
+      "verifiedVietnamese": "đồng (đơn vị tiền tệ)",
+      "verifiedChineseContext": "块",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "đồng (đơn vị tiền tệ)"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-06-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-pos",
+      "verifiedVietnamese": "lượng.",
+      "verifiedChineseContext": "块",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "lượng."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-07-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-gloss",
+      "verifiedVietnamese": "những cái kia",
+      "verifiedChineseContext": "那些",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "những cái kia"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-word-07-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "word-pos",
+      "verifiedVietnamese": "đt.",
+      "verifiedChineseContext": "那些",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "đt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-text-1-role-read",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "instruction",
+      "verifiedVietnamese": "Phân vai đọc to đoạn hội thoại.",
+      "verifiedChineseContext": "分角色朗读对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf087-text-1-pair-practice",
+      "decision": "accept-source-transcription",
+      "pdfPage": 87,
+      "printedPage": "071",
+      "category": "instruction",
+      "verifiedVietnamese": "Hai người một nhóm, chọn một món đồ và hỏi đáp về giá cả của món đồ đó.",
+      "verifiedChineseContext": "两人一组，选择一个物品，互相问答价格。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 87,
+          "printedPage": "071",
+          "lineTexts": [
+            "Hai người một nhóm, chọn một món đồ và",
+            "hỏi đáp về giá cả của món đồ đó."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 87,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-087-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf088-book-header",
+      "decision": "accept-source-transcription",
+      "pdfPage": 88,
+      "printedPage": "072",
+      "category": "running-header",
+      "verifiedVietnamese": "Giáo trình New HSK 1",
+      "verifiedChineseContext": "新HSK教程1",
+      "verifiedFragments": [
+        {
+          "pdfPage": 88,
+          "printedPage": "072",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 88,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-088-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf088-grammar-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 88,
+      "printedPage": "072",
+      "category": "section-heading",
+      "verifiedVietnamese": "Lớp học của Tiểu Ngữ",
+      "verifiedChineseContext": "小语讲堂",
+      "verifiedFragments": [
+        {
+          "pdfPage": 88,
+          "printedPage": "072",
+          "lineTexts": [
+            "Lớp học của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 88,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-088-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf088-grammar-01-title",
+      "decision": "accept-source-transcription",
+      "pdfPage": 88,
+      "printedPage": "072",
+      "category": "grammar-title",
+      "verifiedVietnamese": "Cách diễn đạt số tiền",
+      "verifiedChineseContext": "钱数的表达",
+      "verifiedFragments": [
+        {
+          "pdfPage": 88,
+          "printedPage": "072",
+          "lineTexts": [
+            "Cách diễn đạt số tiền"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 88,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-088-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf088-grammar-01-explanation",
+      "decision": "accept-source-transcription",
+      "pdfPage": 88,
+      "printedPage": "072",
+      "category": "grammar-explanation",
+      "verifiedVietnamese": "Đơn vị tiền tệ của Trung Quốc được gọi là Nhân dân tệ (RMB). Các đơn vị của Nhân dân tệ xếp từ lớn đến nhỏ là “元”, “角” và “分”, trong văn nói lần lượt được gọi là “块”, “毛” và “分”. Trật tự diễn đạt là: 元/块 → 角/毛 → 分.",
+      "verifiedChineseContext": "中国的货币叫人民币。人民币的单位由大到小是“元、角、分”，口语中也分别说“块、毛、分”。表达顺序是：元/块→角/毛→分。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 88,
+          "printedPage": "072",
+          "lineTexts": [
+            "Đơn vị tiền tệ của Trung Quốc được gọi là Nhân dân tệ (RMB). Các đơn vị của Nhân dân tệ",
+            "xếp từ lớn đến nhỏ là “元”, “角” và “分”, trong văn nói lần lượt được gọi là “块”, “毛”",
+            "và “分”. Trật tự diễn đạt là: 元/块 → 角/毛 → 分."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 88,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-088-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf088-grammar-01-read",
+      "decision": "accept-source-transcription",
+      "pdfPage": 88,
+      "printedPage": "072",
+      "category": "instruction",
+      "verifiedVietnamese": "Đọc to các số tiền sau.",
+      "verifiedChineseContext": "大声朗读。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 88,
+          "printedPage": "072",
+          "lineTexts": [
+            "Đọc to các số tiền sau."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 88,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-088-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf088-money-table-header-01",
+      "decision": "accept-source-transcription",
+      "pdfPage": 88,
+      "printedPage": "072",
+      "category": "table-header",
+      "verifiedVietnamese": "(cách viết 1)",
+      "verifiedChineseContext": "写法1",
+      "verifiedFragments": [
+        {
+          "pdfPage": 88,
+          "printedPage": "072",
+          "lineTexts": [
+            "(cách viết 1)"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 88,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-088-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf088-money-table-header-02",
+      "decision": "accept-source-transcription",
+      "pdfPage": 88,
+      "printedPage": "072",
+      "category": "table-header",
+      "verifiedVietnamese": "(cách viết 2)",
+      "verifiedChineseContext": "写法2",
+      "verifiedFragments": [
+        {
+          "pdfPage": 88,
+          "printedPage": "072",
+          "lineTexts": [
+            "(cách viết 2)"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 88,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-088-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf088-money-table-header-03",
+      "decision": "accept-source-transcription",
+      "pdfPage": 88,
+      "printedPage": "072",
+      "category": "table-header",
+      "verifiedVietnamese": "(cách đọc)",
+      "verifiedChineseContext": "读法",
+      "verifiedFragments": [
+        {
+          "pdfPage": 88,
+          "printedPage": "072",
+          "lineTexts": [
+            "(cách đọc)"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 88,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-088-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf088-text-2-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 88,
+      "printedPage": "072",
+      "category": "section-heading",
+      "verifiedVietnamese": "Bài khoá 2",
+      "verifiedChineseContext": "课文2",
+      "verifiedFragments": [
+        {
+          "pdfPage": 88,
+          "printedPage": "072",
+          "lineTexts": [
+            "Bài khoá 2"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 88,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-088-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf088-text-2-scene",
+      "decision": "accept-source-transcription",
+      "pdfPage": 88,
+      "printedPage": "072",
+      "category": "scene",
+      "verifiedVietnamese": "Vương Nhất Tuyết đang mua hoa quả ở chợ.",
+      "verifiedChineseContext": "在菜市场，王一雪在买水果。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 88,
+          "printedPage": "072",
+          "lineTexts": [
+            "Vương Nhất Tuyết đang mua hoa quả ở chợ."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 88,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-088-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf088-text-2-listen",
+      "decision": "accept-source-transcription",
+      "pdfPage": 88,
+      "printedPage": "072",
+      "category": "instruction",
+      "verifiedVietnamese": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "verifiedChineseContext": "听两遍对话，选择正确答案。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 88,
+          "printedPage": "072",
+          "lineTexts": [
+            "Nghe hội thoại hai lượt và chọn đáp án đúng."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 88,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-088-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-lesson-label",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "lesson-label",
+      "verifiedVietnamese": "Bài",
+      "verifiedChineseContext": "这儿的苹果真便宜！",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-text-2-role-01",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Vương Nhất Tuyết: Hoa quả ở đây nhiều nhỉ!",
+      "verifiedChineseContext": "这儿的水果真不少！",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "Vương Nhất Tuyết: Hoa quả ở đây nhiều nhỉ!"
+          ]
+        }
+      ],
+      "speakerZh": "王一雪",
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-text-2-role-02",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Người bán hàng: Chị muốn mua gì?",
+      "verifiedChineseContext": "您想买什么？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "Người bán hàng: Chị muốn mua gì?"
+          ]
+        }
+      ],
+      "speakerZh": "售货员",
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-text-2-role-03",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Vương Nhất Tuyết: Tôi muốn mua hai cân táo.",
+      "verifiedChineseContext": "我想买两斤苹果。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "Vương Nhất Tuyết: Tôi muốn mua hai",
+            "cân táo."
+          ]
+        }
+      ],
+      "speakerZh": "王一雪",
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-text-2-role-04",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Người bán hàng: Táo 3 đồng rưỡi một cân. Chỗ này 7,2 đồng, lấy chị 7 đồng nhé.",
+      "verifiedChineseContext": "苹果三块五一斤。这些七块二，七块钱吧。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "Người bán hàng: Táo 3 đồng rưỡi một cân.",
+            "Chỗ này 7,2 đồng, lấy chị 7 đồng nhé."
+          ]
+        }
+      ],
+      "speakerZh": "售货员",
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-text-2-role-05",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Vương Nhất Tuyết: Vâng, táo ở đây rẻ thật!",
+      "verifiedChineseContext": "好的，这儿的苹果真便宜！",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "Vương Nhất Tuyết: Vâng, táo ở đây rẻ thật!"
+          ]
+        }
+      ],
+      "speakerZh": "王一雪",
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-words-2-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "section-heading",
+      "verifiedVietnamese": "Từ mới",
+      "verifiedChineseContext": "生词",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-08-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-gloss",
+      "verifiedVietnamese": "ở đây, chỗ này",
+      "verifiedChineseContext": "这儿",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "ở đây, chỗ này"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-08-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-pos",
+      "verifiedVietnamese": "đt.",
+      "verifiedChineseContext": "这儿",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "đt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-09-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-gloss",
+      "verifiedVietnamese": "hoa quả, trái cây",
+      "verifiedChineseContext": "水果",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "hoa quả, trái cây"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-09-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-pos",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "水果",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-10-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-gloss",
+      "verifiedVietnamese": "ít",
+      "verifiedChineseContext": "少",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "ít"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-10-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-pos",
+      "verifiedVietnamese": "tt.",
+      "verifiedChineseContext": "少",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-11-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-gloss",
+      "verifiedVietnamese": "cân (đơn vị đo lường của Trung Quốc, 1 cân bằng 0,5 kg)",
+      "verifiedChineseContext": "斤",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "cân (đơn vị đo lường của Trung Quốc,",
+            "1 cân bằng 0,5 kg)"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-11-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-pos",
+      "verifiedVietnamese": "lượng.",
+      "verifiedChineseContext": "斤",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "lượng."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-12-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-gloss",
+      "verifiedVietnamese": "táo",
+      "verifiedChineseContext": "苹果",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "táo"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-12-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-pos",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "苹果",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-13-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-gloss",
+      "verifiedVietnamese": "rẻ",
+      "verifiedChineseContext": "便宜",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "rẻ"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-word-13-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "word-pos",
+      "verifiedVietnamese": "tt.",
+      "verifiedChineseContext": "便宜",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-text-2-role-read",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "instruction",
+      "verifiedVietnamese": "Phân vai đọc to đoạn hội thoại.",
+      "verifiedChineseContext": "分角色朗读对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf089-text-2-pair-practice",
+      "decision": "accept-source-transcription",
+      "pdfPage": 89,
+      "printedPage": "073",
+      "category": "instruction",
+      "verifiedVietnamese": "Hai người một nhóm, một người đóng vai khách hàng, người còn lại đóng vai người bán hàng, thực hiện một đoạn hội thoại mua sắm.",
+      "verifiedChineseContext": "两人一组，一个人扮演顾客，一个人扮演售货员，进行购物问答。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 89,
+          "printedPage": "073",
+          "lineTexts": [
+            "Hai người một nhóm,",
+            "một người đóng vai khách hàng, người còn lại đóng vai người bán hàng, thực hiện một đoạn",
+            "hội thoại mua sắm."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 89,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-089-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf090-book-header",
+      "decision": "accept-source-transcription",
+      "pdfPage": 90,
+      "printedPage": "074",
+      "category": "running-header",
+      "verifiedVietnamese": "Giáo trình New HSK 1",
+      "verifiedChineseContext": "新HSK教程1",
+      "verifiedFragments": [
+        {
+          "pdfPage": 90,
+          "printedPage": "074",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 90,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-090-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf090-grammar-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 90,
+      "printedPage": "074",
+      "category": "section-heading",
+      "verifiedVietnamese": "Lớp học của Tiểu Ngữ",
+      "verifiedChineseContext": "小语讲堂",
+      "verifiedFragments": [
+        {
+          "pdfPage": 90,
+          "printedPage": "074",
+          "lineTexts": [
+            "Lớp học của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 90,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-090-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf090-grammar-02-title",
+      "decision": "accept-source-transcription",
+      "pdfPage": 90,
+      "printedPage": "074",
+      "category": "grammar-title",
+      "verifiedVietnamese": "Câu vị ngữ tính từ",
+      "verifiedChineseContext": "形容词谓语句",
+      "verifiedFragments": [
+        {
+          "pdfPage": 90,
+          "printedPage": "074",
+          "lineTexts": [
+            "Câu vị ngữ tính từ"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 90,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-090-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf090-grammar-02-explanation",
+      "decision": "accept-source-transcription",
+      "pdfPage": 90,
+      "printedPage": "074",
+      "category": "grammar-explanation",
+      "verifiedVietnamese": "Tính từ có thể trực tiếp làm vị ngữ, trước tính từ có thể thêm phó từ chỉ mức độ hoặc phó từ phủ định.",
+      "verifiedChineseContext": "形容词可以直接作谓语，前面可用程度副词或否定副词。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 90,
+          "printedPage": "074",
+          "lineTexts": [
+            "Tính từ có thể trực tiếp làm vị ngữ, trước tính từ có thể thêm phó từ chỉ mức độ hoặc",
+            "phó từ phủ định."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 90,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-090-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf090-grammar-02-read",
+      "decision": "accept-source-transcription",
+      "pdfPage": 90,
+      "printedPage": "074",
+      "category": "instruction",
+      "verifiedVietnamese": "Đọc to các câu sau.",
+      "verifiedChineseContext": "大声朗读。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 90,
+          "printedPage": "074",
+          "lineTexts": [
+            "Đọc to các câu sau."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 90,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-090-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf090-text-3-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 90,
+      "printedPage": "074",
+      "category": "section-heading",
+      "verifiedVietnamese": "Bài khoá 3",
+      "verifiedChineseContext": "课文3",
+      "verifiedFragments": [
+        {
+          "pdfPage": 90,
+          "printedPage": "074",
+          "lineTexts": [
+            "Bài khoá 3"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 90,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-090-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf090-text-3-scene",
+      "decision": "accept-source-transcription",
+      "pdfPage": 90,
+      "printedPage": "074",
+      "category": "scene",
+      "verifiedVietnamese": "Lưu Minh và Vương Nhất Tuyết đang mua quần áo cho các con trong trung tâm thương mại.",
+      "verifiedChineseContext": "在商场里，刘明和王一雪在给孩子买衣服。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 90,
+          "printedPage": "074",
+          "lineTexts": [
+            "Lưu Minh và Vương Nhất Tuyết đang mua",
+            "quần áo cho các con trong trung tâm thương mại."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 90,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-090-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf090-text-3-listen",
+      "decision": "accept-source-transcription",
+      "pdfPage": 90,
+      "printedPage": "074",
+      "category": "instruction",
+      "verifiedVietnamese": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "verifiedChineseContext": "听两遍对话，选择正确答案。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 90,
+          "printedPage": "074",
+          "lineTexts": [
+            "Nghe hội thoại hai lượt và chọn đáp án đúng."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 90,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-090-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-lesson-label",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "lesson-label",
+      "verifiedVietnamese": "Bài",
+      "verifiedChineseContext": "这儿的苹果真便宜！",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-text-3-role-01",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Vương Nhất Tuyết: Cửa hàng này nhiều quần áo thật đấy! Chiếc này 100 đồng, anh thấy thế nào?",
+      "verifiedChineseContext": "这家商店衣服真多！这件一百元，怎么样？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Vương Nhất Tuyết: Cửa hàng này nhiều quần áo",
+            "thật đấy! Chiếc này 100 đồng, anh thấy thế nào?"
+          ]
+        }
+      ],
+      "speakerZh": "王一雪",
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-text-3-role-02",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Lưu Minh: Đẹp đấy, mà cũng không đắt.",
+      "verifiedChineseContext": "好看，也不贵。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Lưu Minh: Đẹp đấy, mà cũng không đắt."
+          ]
+        }
+      ],
+      "speakerZh": "刘明",
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-text-3-role-03",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Vương Nhất Tuyết: Tiểu Tuyết mặc được đấy, mua một chiếc nhé.",
+      "verifiedChineseContext": "小雪能穿，买一件吧。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Vương Nhất Tuyết: Tiểu Tuyết mặc được đấy,",
+            "mua một chiếc nhé."
+          ]
+        }
+      ],
+      "speakerZh": "王一雪",
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-text-3-role-04",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Lưu Minh: Ừ. Tiểu Minh có mặc được không?",
+      "verifiedChineseContext": "好的。小明能穿吗？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Lưu Minh: Ừ. Tiểu Minh có mặc được không?"
+          ]
+        }
+      ],
+      "speakerZh": "刘明",
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-text-3-role-05",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Vương Nhất Tuyết: Không được đâu. Những cái này là quần áo dành cho bé gái. Quần áo dành cho bé trai ở đằng kia cơ.",
+      "verifiedChineseContext": "不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Vương Nhất Tuyết: Không được đâu. Những cái",
+            "này là quần áo dành cho bé gái. Quần áo dành",
+            "cho bé trai ở đằng kia cơ."
+          ]
+        }
+      ],
+      "speakerZh": "王一雪",
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-text-3-role-06",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "dialogue-translation",
+      "verifiedVietnamese": "Lưu Minh: Ừ nhỉ.",
+      "verifiedChineseContext": "好的。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Lưu Minh: Ừ nhỉ."
+          ]
+        }
+      ],
+      "speakerZh": "刘明",
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-words-3-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "section-heading",
+      "verifiedVietnamese": "Từ mới",
+      "verifiedChineseContext": "生词",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-14-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-gloss",
+      "verifiedVietnamese": "cửa hàng",
+      "verifiedChineseContext": "商店",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "cửa hàng"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-14-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-pos",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "商店",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-15-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-gloss",
+      "verifiedVietnamese": "quần áo",
+      "verifiedChineseContext": "衣服",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "quần áo"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-15-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-pos",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "衣服",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-16-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-gloss",
+      "verifiedVietnamese": "chiếc, cái (dùng cho quần áo)",
+      "verifiedChineseContext": "件",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "chiếc, cái",
+            "(dùng cho",
+            "quần áo)"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-16-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-pos",
+      "verifiedVietnamese": "lượng.",
+      "verifiedChineseContext": "件",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "lượng."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-17-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-gloss",
+      "verifiedVietnamese": "đồng (nhân dân tệ)",
+      "verifiedChineseContext": "元",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "đồng",
+            "(nhân dân tệ)"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-17-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-pos",
+      "verifiedVietnamese": "lượng.",
+      "verifiedChineseContext": "元",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "lượng."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-18-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-gloss",
+      "verifiedVietnamese": "thế nào, như thế nào",
+      "verifiedChineseContext": "怎么样",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "thế nào,",
+            "như thế nào"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-18-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-pos",
+      "verifiedVietnamese": "đt.",
+      "verifiedChineseContext": "怎么样",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "đt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-19-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-gloss",
+      "verifiedVietnamese": "đắt",
+      "verifiedChineseContext": "贵",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "đắt"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-19-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-pos",
+      "verifiedVietnamese": "tt.",
+      "verifiedChineseContext": "贵",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-20-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-gloss",
+      "verifiedVietnamese": "mặc",
+      "verifiedChineseContext": "穿",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "mặc"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-20-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-pos",
+      "verifiedVietnamese": "đgt.",
+      "verifiedChineseContext": "穿",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-21-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-gloss",
+      "verifiedVietnamese": "nữ, con gái",
+      "verifiedChineseContext": "女",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "nữ, con gái"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-21-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-pos",
+      "verifiedVietnamese": "tt.",
+      "verifiedChineseContext": "女",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-22-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-gloss",
+      "verifiedVietnamese": "nam, con trai",
+      "verifiedChineseContext": "男",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "nam, con trai"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-22-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-pos",
+      "verifiedVietnamese": "tt.",
+      "verifiedChineseContext": "男",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-23-gloss",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-gloss",
+      "verifiedVietnamese": "ở kia, chỗ đó",
+      "verifiedChineseContext": "那儿",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "ở kia, chỗ đó"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-word-23-pos",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "word-pos",
+      "verifiedVietnamese": "đt.",
+      "verifiedChineseContext": "那儿",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "đt."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-text-3-role-read",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "instruction",
+      "verifiedVietnamese": "Phân vai đọc to đoạn hội thoại.",
+      "verifiedChineseContext": "分角色朗读对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-text-3-questions-instruction",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "instruction",
+      "verifiedVietnamese": "Trả lời câu hỏi theo nội dung bài khoá.",
+      "verifiedChineseContext": "根据课文内容回答问题。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Trả lời câu hỏi theo nội dung bài khoá."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-text-3-question-01",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "reading-question",
+      "verifiedVietnamese": "Vương Nhất Tuyết muốn mua mấy chiếc áo đó?",
+      "verifiedChineseContext": "那件衣服王一雪想买几件？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Vương Nhất Tuyết muốn mua mấy chiếc áo đó?"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf091-text-3-question-02",
+      "decision": "accept-source-transcription",
+      "pdfPage": 91,
+      "printedPage": "075",
+      "category": "reading-question",
+      "verifiedVietnamese": "Quần áo của bé trai ở đâu?",
+      "verifiedChineseContext": "男孩子的衣服在哪儿？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 91,
+          "printedPage": "075",
+          "lineTexts": [
+            "Quần áo của bé trai ở đâu?"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 91,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-091-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf092-book-header",
+      "decision": "accept-source-transcription",
+      "pdfPage": 92,
+      "printedPage": "076",
+      "category": "running-header",
+      "verifiedVietnamese": "Giáo trình New HSK 1",
+      "verifiedChineseContext": "新HSK教程1",
+      "verifiedFragments": [
+        {
+          "pdfPage": 92,
+          "printedPage": "076",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 92,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-092-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf092-grammar-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 92,
+      "printedPage": "076",
+      "category": "section-heading",
+      "verifiedVietnamese": "Lớp học của Tiểu Ngữ",
+      "verifiedChineseContext": "小语讲堂",
+      "verifiedFragments": [
+        {
+          "pdfPage": 92,
+          "printedPage": "076",
+          "lineTexts": [
+            "Lớp học của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 92,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-092-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf092-grammar-03-title",
+      "decision": "accept-source-transcription",
+      "pdfPage": 92,
+      "printedPage": "076",
+      "category": "grammar-title",
+      "verifiedVietnamese": "Đại từ nghi vấn “怎么样”",
+      "verifiedChineseContext": "疑问代词“怎么样”",
+      "verifiedFragments": [
+        {
+          "pdfPage": 92,
+          "printedPage": "076",
+          "lineTexts": [
+            "Đại từ nghi vấn “怎么样”"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 92,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-092-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf092-grammar-03-explanation",
+      "decision": "accept-source-transcription",
+      "pdfPage": 92,
+      "printedPage": "076",
+      "category": "grammar-explanation",
+      "verifiedVietnamese": "Đại từ nghi vấn “怎么样” được dùng để hỏi ý kiến hoặc hỏi thăm về tình hình... Cấu trúc cơ bản: ……怎么样?",
+      "verifiedChineseContext": "疑问代词“怎么样”用于征求意见、询问状况等。基本结构：……怎么样？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 92,
+          "printedPage": "076",
+          "lineTexts": [
+            "Đại từ nghi vấn “怎么样” được dùng để hỏi ý kiến hoặc hỏi thăm về tình hình... Cấu trúc",
+            "cơ bản: ……怎么样?"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 92,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-092-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf092-grammar-03-read",
+      "decision": "accept-source-transcription",
+      "pdfPage": 92,
+      "printedPage": "076",
+      "category": "instruction",
+      "verifiedVietnamese": "Đọc to các đoạn hội thoại sau.",
+      "verifiedChineseContext": "朗读对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 92,
+          "printedPage": "076",
+          "lineTexts": [
+            "Đọc to các đoạn hội thoại sau."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 92,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-092-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf092-exercises-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 92,
+      "printedPage": "076",
+      "category": "section-heading",
+      "verifiedVietnamese": "Bài tập tổng hợp",
+      "verifiedChineseContext": "综合练习",
+      "verifiedFragments": [
+        {
+          "pdfPage": 92,
+          "printedPage": "076",
+          "lineTexts": [
+            "Bài tập tổng hợp"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 92,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-092-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf092-exercise-01-instruction",
+      "decision": "accept-source-transcription",
+      "pdfPage": 92,
+      "printedPage": "076",
+      "category": "instruction",
+      "verifiedVietnamese": "Chọn từ thích hợp điền vào chỗ trống.",
+      "verifiedChineseContext": "选词填空。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 92,
+          "printedPage": "076",
+          "lineTexts": [
+            "Chọn từ thích hợp điền vào chỗ trống."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 92,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-092-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf093-lesson-label",
+      "decision": "accept-source-transcription",
+      "pdfPage": 93,
+      "printedPage": "077",
+      "category": "lesson-label",
+      "verifiedVietnamese": "Bài",
+      "verifiedChineseContext": "这儿的苹果真便宜！",
+      "verifiedFragments": [
+        {
+          "pdfPage": 93,
+          "printedPage": "077",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 93,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-093-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf093-exercise-02-instruction",
+      "decision": "accept-source-transcription",
+      "pdfPage": 93,
+      "printedPage": "077",
+      "category": "instruction",
+      "verifiedVietnamese": "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài để miêu tả các hình ảnh sau.",
+      "verifiedChineseContext": "用本课新学的词语和语言点描述图片。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 93,
+          "printedPage": "077",
+          "lineTexts": [
+            "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài",
+            "để miêu tả các hình ảnh sau."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 93,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-093-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf093-activity-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 93,
+      "printedPage": "077",
+      "category": "section-heading",
+      "verifiedVietnamese": "Hoạt động trên lớp",
+      "verifiedChineseContext": "课堂活动",
+      "verifiedFragments": [
+        {
+          "pdfPage": 93,
+          "printedPage": "077",
+          "lineTexts": [
+            "Hoạt động trên lớp"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 93,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-093-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf093-activity-title",
+      "decision": "accept-source-transcription",
+      "pdfPage": 93,
+      "printedPage": "077",
+      "category": "activity-title",
+      "verifiedVietnamese": "Đóng vai",
+      "verifiedChineseContext": "角色扮演",
+      "verifiedFragments": [
+        {
+          "pdfPage": 93,
+          "printedPage": "077",
+          "lineTexts": [
+            "Đóng vai"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 93,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-093-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf093-activity-instruction",
+      "decision": "accept-source-transcription",
+      "pdfPage": 93,
+      "printedPage": "077",
+      "category": "activity-instruction",
+      "verifiedVietnamese": "Ba người một nhóm, một người đóng vai nhân viên bán hàng, hai người còn lại đóng vai khách hàng, hội thoại với nhau dựa theo nội dung ba bài khoá trong bài học này.",
+      "verifiedChineseContext": "三人一组，一个人扮演售货员，两个人扮演顾客，仿照本课三篇课文的内容对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 93,
+          "printedPage": "077",
+          "lineTexts": [
+            "Ba người một nhóm, một người đóng vai nhân viên bán hàng, hai người còn lại đóng vai",
+            "khách hàng, hội thoại với nhau dựa theo nội dung ba bài khoá trong bài học này."
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 93,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-093-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf093-video-heading",
+      "decision": "accept-source-transcription",
+      "pdfPage": 93,
+      "printedPage": "077",
+      "category": "video-heading",
+      "verifiedVietnamese": "Món quà của Tiểu Ngữ",
+      "verifiedChineseContext": "小语的彩蛋",
+      "verifiedFragments": [
+        {
+          "pdfPage": 93,
+          "printedPage": "077",
+          "lineTexts": [
+            "Món quà của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 93,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-093-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l10-pdf093-video-title",
+      "decision": "accept-source-transcription",
+      "pdfPage": 93,
+      "printedPage": "077",
+      "category": "video-title",
+      "verifiedVietnamese": "Nhận biết về đồng Nhân dân tệ",
+      "verifiedChineseContext": "认识人民币",
+      "verifiedFragments": [
+        {
+          "pdfPage": 93,
+          "printedPage": "077",
+          "lineTexts": [
+            "Nhận biết về đồng Nhân dân tệ"
+          ]
+        }
+      ],
+      "speakerZh": null,
+      "ChineseAnchorPDFPage": 93,
+      "scopeLessons": [
+        10
+      ],
+      "checks": [
+        "whole printed Vietnamese spelling/accents/punctuation",
+        "complete physical fragments and page anchor",
+        "Chinese association and speaker/printed POS where present"
+      ],
+      "evidence": "renders/pdf-093-independent.png"
+    }
+  ],
+  "verifiedWordRows": [
+    {
+      "pdfPage": 87,
+      "printedPage": "071",
+      "printOrdinal": 1,
+      "kind": "ordinary",
+      "zhPrinted": "杯子",
+      "pinyinPrinted": "bēizi",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf087-word-01-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf087-word-01-pos"
+    },
+    {
+      "pdfPage": 87,
+      "printedPage": "071",
+      "printOrdinal": 2,
+      "kind": "ordinary",
+      "zhPrinted": "售货员",
+      "pinyinPrinted": "shòuhuòyuán",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf087-word-02-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf087-word-02-pos"
+    },
+    {
+      "pdfPage": 87,
+      "printedPage": "071",
+      "printOrdinal": 3,
+      "kind": "ordinary",
+      "zhPrinted": "这边",
+      "pinyinPrinted": "zhèbian",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf087-word-03-gloss",
+      "rawPosLabel": "đt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf087-word-03-pos"
+    },
+    {
+      "pdfPage": 87,
+      "printedPage": "071",
+      "printOrdinal": 4,
+      "kind": "ordinary",
+      "zhPrinted": "钱",
+      "pinyinPrinted": "qián",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf087-word-04-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf087-word-04-pos"
+    },
+    {
+      "pdfPage": 87,
+      "printedPage": "071",
+      "printOrdinal": 5,
+      "kind": "ordinary",
+      "zhPrinted": "这些",
+      "pinyinPrinted": "zhèxiē",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf087-word-05-gloss",
+      "rawPosLabel": "đt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf087-word-05-pos"
+    },
+    {
+      "pdfPage": 87,
+      "printedPage": "071",
+      "printOrdinal": 6,
+      "kind": "ordinary",
+      "zhPrinted": "块",
+      "pinyinPrinted": "kuài",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf087-word-06-gloss",
+      "rawPosLabel": "lượng.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf087-word-06-pos"
+    },
+    {
+      "pdfPage": 87,
+      "printedPage": "071",
+      "printOrdinal": 7,
+      "kind": "ordinary",
+      "zhPrinted": "那些",
+      "pinyinPrinted": "nàxiē",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf087-word-07-gloss",
+      "rawPosLabel": "đt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf087-word-07-pos"
+    },
+    {
+      "pdfPage": 89,
+      "printedPage": "073",
+      "printOrdinal": 8,
+      "kind": "ordinary",
+      "zhPrinted": "这儿",
+      "pinyinPrinted": "zhèr",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf089-word-08-gloss",
+      "rawPosLabel": "đt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf089-word-08-pos"
+    },
+    {
+      "pdfPage": 89,
+      "printedPage": "073",
+      "printOrdinal": 9,
+      "kind": "ordinary",
+      "zhPrinted": "水果",
+      "pinyinPrinted": "shuǐguǒ",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf089-word-09-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf089-word-09-pos"
+    },
+    {
+      "pdfPage": 89,
+      "printedPage": "073",
+      "printOrdinal": 10,
+      "kind": "ordinary",
+      "zhPrinted": "少",
+      "pinyinPrinted": "shǎo",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf089-word-10-gloss",
+      "rawPosLabel": "tt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf089-word-10-pos"
+    },
+    {
+      "pdfPage": 89,
+      "printedPage": "073",
+      "printOrdinal": 11,
+      "kind": "ordinary",
+      "zhPrinted": "斤",
+      "pinyinPrinted": "jīn",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf089-word-11-gloss",
+      "rawPosLabel": "lượng.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf089-word-11-pos"
+    },
+    {
+      "pdfPage": 89,
+      "printedPage": "073",
+      "printOrdinal": 12,
+      "kind": "ordinary",
+      "zhPrinted": "苹果",
+      "pinyinPrinted": "píngguǒ",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf089-word-12-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf089-word-12-pos"
+    },
+    {
+      "pdfPage": 89,
+      "printedPage": "073",
+      "printOrdinal": 13,
+      "kind": "ordinary",
+      "zhPrinted": "便宜",
+      "pinyinPrinted": "piányi",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf089-word-13-gloss",
+      "rawPosLabel": "tt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf089-word-13-pos"
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": "075",
+      "printOrdinal": 14,
+      "kind": "ordinary",
+      "zhPrinted": "商店",
+      "pinyinPrinted": "shāngdiàn",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf091-word-14-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf091-word-14-pos"
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": "075",
+      "printOrdinal": 15,
+      "kind": "ordinary",
+      "zhPrinted": "衣服",
+      "pinyinPrinted": "yīfu",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf091-word-15-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf091-word-15-pos"
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": "075",
+      "printOrdinal": 16,
+      "kind": "ordinary",
+      "zhPrinted": "件",
+      "pinyinPrinted": "jiàn",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf091-word-16-gloss",
+      "rawPosLabel": "lượng.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf091-word-16-pos"
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": "075",
+      "printOrdinal": 17,
+      "kind": "ordinary",
+      "zhPrinted": "元",
+      "pinyinPrinted": "yuán",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf091-word-17-gloss",
+      "rawPosLabel": "lượng.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf091-word-17-pos"
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": "075",
+      "printOrdinal": 18,
+      "kind": "ordinary",
+      "zhPrinted": "怎么样",
+      "pinyinPrinted": "zěnmeyàng",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf091-word-18-gloss",
+      "rawPosLabel": "đt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf091-word-18-pos"
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": "075",
+      "printOrdinal": 19,
+      "kind": "ordinary",
+      "zhPrinted": "贵",
+      "pinyinPrinted": "guì",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf091-word-19-gloss",
+      "rawPosLabel": "tt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf091-word-19-pos"
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": "075",
+      "printOrdinal": 20,
+      "kind": "ordinary",
+      "zhPrinted": "穿",
+      "pinyinPrinted": "chuān",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf091-word-20-gloss",
+      "rawPosLabel": "đgt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf091-word-20-pos"
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": "075",
+      "printOrdinal": 21,
+      "kind": "ordinary",
+      "zhPrinted": "女",
+      "pinyinPrinted": "nǚ",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf091-word-21-gloss",
+      "rawPosLabel": "tt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf091-word-21-pos"
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": "075",
+      "printOrdinal": 22,
+      "kind": "ordinary",
+      "zhPrinted": "男",
+      "pinyinPrinted": "nán",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf091-word-22-gloss",
+      "rawPosLabel": "tt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf091-word-22-pos"
+    },
+    {
+      "pdfPage": 91,
+      "printedPage": "075",
+      "printOrdinal": 23,
+      "kind": "ordinary",
+      "zhPrinted": "那儿",
+      "pinyinPrinted": "nàr",
+      "glossOccurrenceId": "hsk1-official-vi-l10-pdf091-word-23-gloss",
+      "rawPosLabel": "đt.",
+      "posOccurrenceId": "hsk1-official-vi-l10-pdf091-word-23-pos"
+    }
+  ],
+  "layoutContinuationsVerified": [
+    {
+      "module": "text2",
+      "pdfPages": [
+        88,
+        89
+      ],
+      "note": "Scene/listening on PDF88; all five Chinese dialogue turns and VI role translations plus words8–13 on PDF89."
+    },
+    {
+      "module": "text3",
+      "pdfPages": [
+        90,
+        91
+      ],
+      "note": "Scene/listening on PDF90; six source turns and all six VI role translations plus words14–23 on PDF91."
+    }
+  ],
+  "repairs": [],
+  "holds": [],
+  "missingPrintedVietnamese": [],
+  "textbookSemanticObservations": [
+    {
+      "sourceIds": [
+        "hsk1-official-vi-l10-pdf087-word-06-gloss",
+        "hsk1-official-vi-l10-pdf089-word-11-gloss",
+        "hsk1-official-vi-l10-pdf091-word-17-gloss"
+      ],
+      "classification": "contextual-unit-guard",
+      "observation": "Printed đồng here is the Chinese money unit in the explicit RMB chapter, not an instruction to convert amounts to Vietnamese dong. Printed cân for 斤 is explicitly defined0.5kg; website mapping must retain the definition/context. These are faithfully printed source expressions, not authorized errata.",
+      "requiresErratum": false
+    }
+  ],
+  "websiteVietnameseRead": false,
+  "websiteFieldVerificationComplete": false,
+  "runtimeActivation": false,
+  "productionDeployment": false,
+  "reviewCompletedAtUTC": "2026-10-05T02:11:32.411309+00:00",
+  "supersedesReviewSHA256": "57a1c937bd14aea79b6bb0d7f87a5b60787c81ace5b363faee9b7818c17ebea5",
+  "correctionRevision": 2,
+  "correctionCompletedAtUTC": "2026-10-05T02:12:48.498573+00:00"
+}

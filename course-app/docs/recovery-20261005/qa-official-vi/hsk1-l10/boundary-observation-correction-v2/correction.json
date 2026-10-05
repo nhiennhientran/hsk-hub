@@ -1,0 +1,36 @@
+{
+  "reason": "Reviewer boundary description copied from wrong lesson title; actual original PDF94 proves the next chapter title.",
+  "classification": "review-metadata-correction",
+  "sourceTranscriptionChanged": false,
+  "acceptedSourceOccurrencesChanged": false,
+  "acceptedCount": 121,
+  "oldNote": {
+    "pdfPage": 94,
+    "printedPage": "078",
+    "actuallyViewedWholePage": true,
+    "sourceOccurrenceCount": 0,
+    "observation": "Whole next-chapter boundary viewed: Bài11 / 坐公共汽车去体育馆需要四十分钟 / Đi xe buýt đến nhà thi đấu mất40phút begins new lesson; excluded from lesson10 occurrences."
+  },
+  "correctedNote": {
+    "pdfPage": 94,
+    "printedPage": "078",
+    "actuallyViewedWholePage": true,
+    "sourceOccurrenceCount": 0,
+    "observation": "Whole original boundary page actually viewed: Bài 11 / 我读大学呢 / Em đang học đại học starts the next lesson. The page is excluded from all121 accepted lesson10 source occurrences. Earlier reviewer note mistakenly named another lesson; this correction changes the boundary description only."
+  },
+  "originalPDFSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+  "boundaryPNG": {
+    "file": "renders/pdf-094-independent.png",
+    "pdfPage": 94,
+    "printedPage": "078",
+    "bytes": 2380114,
+    "sha256": "36cab30ebcfd153b64071528d84a9d1e2eca44fb61ed78ec36e1490fc103bc1c",
+    "width": 1688,
+    "height": 2409,
+    "scope": "next-lesson boundary only"
+  },
+  "boundaryPNGPath": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/renders/pdf-094-independent.png",
+  "originalReviewSHA256": "57a1c937bd14aea79b6bb0d7f87a5b60787c81ace5b363faee9b7818c17ebea5",
+  "originalFreezeSHA256": "a2b93f02b0255947c2fdceef37e7a5c17576a2113d8c0f80e766a5be22941129",
+  "supersedesCapsuleId": "hsk1-l10-independent-source-review-20261005"
+}
