@@ -1,7 +1,7 @@
-name: HSK engineering phase 2 compiled checkpoint
+name: HSK engineering phase 3 compiled checkpoint
 on:
   push:
-    branches: ['work/hsk-engineering-phase2-20261005']
+    branches: ['work/hsk-engineering-phase3-20261005']
 permissions:
   contents: read
 defaults:
@@ -54,6 +54,7 @@ jobs:
         working-directory: course-app
         run: node node_modules/@playwright/test/cli.js install --with-deps ${HSK_PHASE2_BROWSER} && sudo apt-get install -y fonts-noto-cjk
       - name: Build, freeze and assemble the actual engineering checkpoint
+        id: assembly
         working-directory: course-app
         run: |
           node docs/continue-phase2-20261005/package/build-checkpoint.mjs 2>&1 | tee ".repro-output/continue-phase2/${HSK_PHASE2_BROWSER}/package-build.log"
@@ -61,6 +62,7 @@ jobs:
           node docs/continue-phase2-20261005/package/verify-draft-guards.mjs
           python3 docs/continue-phase2-20261005/ci/freeze-client-bytes.py
       - name: Collect exact scoped case identities before native execution
+        id: collection
         run: |
           OUT="$PWD/course-app/.repro-output/continue-phase2/${HSK_PHASE2_BROWSER}"
           node course-app/node_modules/@playwright/test/cli.js test -c course-app/docs/continue-phase2-20261005/history/playwright.shared.config.ts --project=${HSK_PHASE2_BROWSER} --list --reporter=json > "$OUT/history-shared-collection.json"
@@ -73,18 +75,22 @@ jobs:
           DEBUG: pw:browser
         run: node course-app/node_modules/@playwright/test/cli.js test -c course-app/docs/continue-phase2-20261005/history/playwright.shared.config.ts --project=${HSK_PHASE2_BROWSER} 2>&1 | tee course-app/.repro-output/continue-phase2/${HSK_PHASE2_BROWSER}/history-shared-browser-launches.log
       - name: Execute retained HSK1 compiled backup and schema isolation flows
+        if: ${{ !cancelled() && steps.assembly.outcome == 'success' && steps.collection.outcome == 'success' }}
         env:
           DEBUG: pw:browser
         run: node hsk1-app/node_modules/@playwright/test/cli.js test -c course-app/docs/continue-phase2-20261005/history/playwright.hsk1.config.ts --project=${HSK_PHASE2_BROWSER} 2>&1 | tee course-app/.repro-output/continue-phase2/${HSK_PHASE2_BROWSER}/history-hsk1-browser-launches.log
       - name: Execute actual retained and nested grade entries
+        if: ${{ !cancelled() && steps.assembly.outcome == 'success' && steps.collection.outcome == 'success' }}
         env:
           DEBUG: pw:browser
         run: node course-app/node_modules/@playwright/test/cli.js test -c course-app/docs/continue-phase2-20261005/history/playwright.legacy.config.ts --project=${HSK_PHASE2_BROWSER} 2>&1 | tee course-app/.repro-output/continue-phase2/${HSK_PHASE2_BROWSER}/history-legacy-browser-launches.log
       - name: Execute current compiled hosts at five widths and package homework at narrow widths
+        if: ${{ !cancelled() && steps.assembly.outcome == 'success' && steps.collection.outcome == 'success' }}
         env:
           DEBUG: pw:browser
         run: node course-app/node_modules/@playwright/test/cli.js test -c course-app/docs/continue-phase2-20261005/visual/playwright.visual.config.ts --project=shared-${HSK_PHASE2_BROWSER} --project=standalone-${HSK_PHASE2_BROWSER} --project=package-${HSK_PHASE2_BROWSER} 2>&1 | tee course-app/.repro-output/continue-phase2/${HSK_PHASE2_BROWSER}/visual-browser-launches.log
       - name: Execute actual checkpoint crop, audio, HTTP bytes and private path closure
+        if: ${{ !cancelled() && steps.assembly.outcome == 'success' && steps.collection.outcome == 'success' }}
         env:
           DEBUG: pw:browser
         run: node course-app/node_modules/@playwright/test/cli.js test -c course-app/docs/continue-phase2-20261005/ci/playwright.package.config.ts 2>&1 | tee course-app/.repro-output/continue-phase2/${HSK_PHASE2_BROWSER}/package-browser-launches.log
@@ -94,7 +100,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: hsk-engineering-phase2-${{ matrix.browser }}-attempt-${{ github.run_attempt }}
+          name: hsk-engineering-phase3-${{ matrix.browser }}-core-attempt-${{ github.run_attempt }}
           include-hidden-files: true
           if-no-files-found: error
           path: |
@@ -120,6 +126,31 @@ jobs:
             course-app/.repro-output/continue-phase2/${{ matrix.browser }}/compiled-client-bytes.json
             course-app/.repro-output/continue-phase2/${{ matrix.browser }}/package/unified-site/course-engine/unified-release-manifest.json
             course-app/.repro-output/continue-phase2/${{ matrix.browser }}/visual/native-results.json
-            course-app/.repro-output/continue-phase2/${{ matrix.browser }}/visual/native/**/*.png
-            course-app/.repro-output/continue-phase2/${{ matrix.browser }}/visual/native/**/*.json
-            course-app/.repro-output/continue-phase2/${{ matrix.browser }}/visual/native/**/*.md
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk-engineering-phase3-${{ matrix.browser }}-visual-attempt-${{ github.run_attempt }}
+          include-hidden-files: true
+          if-no-files-found: warn
+          path: course-app/.repro-output/continue-phase2/${{ matrix.browser }}/visual/native/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk-engineering-phase3-${{ matrix.browser }}-shared-history-attempt-${{ github.run_attempt }}
+          include-hidden-files: true
+          if-no-files-found: warn
+          path: course-app/.repro-output/continue-phase2/${{ matrix.browser }}/history-shared-native-output/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk-engineering-phase3-${{ matrix.browser }}-hsk1-history-attempt-${{ github.run_attempt }}
+          include-hidden-files: true
+          if-no-files-found: warn
+          path: course-app/.repro-output/continue-phase2/${{ matrix.browser }}/history-hsk1-native-output/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk-engineering-phase3-${{ matrix.browser }}-legacy-history-attempt-${{ github.run_attempt }}
+          include-hidden-files: true
+          if-no-files-found: warn
+          path: course-app/.repro-output/continue-phase2/${{ matrix.browser }}/history-legacy-native-output/
