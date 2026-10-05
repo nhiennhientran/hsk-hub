@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "status": "4literal values/path identities independently resolved;1main old range and source-specific ID require metadata repair",
+  "results": [
+    {
+      "authorRecordID": "e0082d6c279282ebaeff0314",
+      "file": "course-app/src/lesson-view.ts",
+      "sourceSHA256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "astPointer": "/body/10/declarations/0/init/elements/2/elements/1/arguments/1",
+      "currentValue": "Bài khóa",
+      "sourceParsePassed": true,
+      "valueAndPathStillActual": true,
+      "authorRange": {
+        "start": 1266,
+        "end": 1276,
+        "line": 31,
+        "column": 23
+      },
+      "currentRange": {
+        "start": 1266,
+        "end": 1276,
+        "line": 31,
+        "column": 23
+      },
+      "authorRangeMatchesCurrent": true,
+      "currentSourceSpecificRecordID": "e0082d6c279282ebaeff0314",
+      "status": "actual-scoped-code-location-confirmed",
+      "activation": "B14 source-aware scoped heading presentation still required; no global or native acceptance"
+    },
+    {
+      "authorRecordID": "f14105e023cc4c38f94691dc",
+      "file": "course-app/src/lesson-view.ts",
+      "sourceSHA256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/2/body/body/0/declarations/0/init/arguments/0/arguments/1",
+      "currentValue": "Bài khóa ${expression}",
+      "sourceParsePassed": true,
+      "valueAndPathStillActual": true,
+      "authorRange": {
+        "start": 25432,
+        "end": 25454,
+        "line": 590,
+        "column": 31
+      },
+      "currentRange": {
+        "start": 25432,
+        "end": 25454,
+        "line": 590,
+        "column": 31
+      },
+      "authorRangeMatchesCurrent": true,
+      "currentSourceSpecificRecordID": "f14105e023cc4c38f94691dc",
+      "status": "actual-scoped-code-location-confirmed",
+      "activation": "B14 source-aware scoped heading presentation still required; no global or native acceptance"
+    },
+    {
+      "authorRecordID": "6a081c714ccc254d87499350",
+      "file": "course-app/src/lesson-view.ts",
+      "sourceSHA256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "astPointer": "/body/12/declaration/body/body/25/alternate/alternate/consequent/body/5/expression/arguments/0/arguments/1/consequent/arguments/1",
+      "currentValue": "Bài khóa ${expression}",
+      "sourceParsePassed": true,
+      "valueAndPathStillActual": true,
+      "authorRange": {
+        "start": 25850,
+        "end": 25875,
+        "line": 602,
+        "column": 38
+      },
+      "currentRange": {
+        "start": 25850,
+        "end": 25875,
+        "line": 602,
+        "column": 38
+      },
+      "authorRangeMatchesCurrent": true,
+      "currentSourceSpecificRecordID": "6a081c714ccc254d87499350",
+      "status": "actual-scoped-code-location-confirmed",
+      "activation": "B14 source-aware scoped heading presentation still required; no global or native acceptance"
+    },
+    {
+      "authorRecordID": "abc1c678d05ade95a9aa6094",
+      "file": "course-app/src/main.ts",
+      "sourceSHA256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744",
+      "astPointer": "/body/78/body/body/11/body/body/6/right/expression/elements/1/elements/1/arguments/1",
+      "currentValue": "Bài khóa",
+      "sourceParsePassed": true,
+      "valueAndPathStillActual": true,
+      "authorRange": {
+        "start": 19422,
+        "end": 19432,
+        "line": 601,
+        "column": 134
+      },
+      "currentRange": {
+        "start": 19545,
+        "end": 19555,
+        "line": 604,
+        "column": 134
+      },
+      "authorRangeMatchesCurrent": false,
+      "currentSourceSpecificRecordID": "d07e81e704df6f2b52d765fe",
+      "status": "repair-source-specific-range-and-ID; semantic literal remains present",
+      "activation": "B14 source-aware scoped heading presentation still required; no global or native acceptance"
+    }
+  ],
+  "fullInventoryExecuted": false,
+  "productionChanges": 0,
+  "nativeRenderingTested": false
+}

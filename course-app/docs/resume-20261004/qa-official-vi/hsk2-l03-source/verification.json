@@ -1,0 +1,724 @@
+{
+  "schemaVersion": 1,
+  "verificationUTC": "2026-10-04T20:54:24.783842+00:00",
+  "verifier": "native_catalogue",
+  "verificationKind": "actual-byte-identity-metadata-image-integrity-checks",
+  "automatedChecksAreVisualReading": false,
+  "sourcePDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+  "authorTranscriptionSHA256": "1751c64e4a0960f57aa8823b4186e59beac2691f7e43d7969a1446013bf9ce11",
+  "sourceReviewSHA256": "46f4cb241a916afb428ea72994e667c75771b2de9701d48de8c19e12353382fc",
+  "sourceOnlyAccepted": true,
+  "websiteAlignmentCertified": false,
+  "sourceItems": 115,
+  "fullPages": 10,
+  "permanentImages": 9,
+  "checksPassed": 176,
+  "checksTotal": 176,
+  "checks": [
+    {
+      "check": "original-PDF-SHA-and-byte-size",
+      "passed": true
+    },
+    {
+      "check": "author-input-unchanged:source-transcription.json",
+      "passed": true
+    },
+    {
+      "check": "author-input-byte-copy:source-transcription.json",
+      "passed": true
+    },
+    {
+      "check": "author-input-unchanged:freeze-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "author-input-byte-copy:freeze-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "author-input-unchanged:source-page-evidence.json",
+      "passed": true
+    },
+    {
+      "check": "author-input-byte-copy:source-page-evidence.json",
+      "passed": true
+    },
+    {
+      "check": "author-input-unchanged:source-detail-crop-evidence.json",
+      "passed": true
+    },
+    {
+      "check": "author-input-byte-copy:source-detail-crop-evidence.json",
+      "passed": true
+    },
+    {
+      "check": "115-unique-identities-exact-author-order",
+      "passed": true
+    },
+    {
+      "check": "exact-source-hash-linked-in-review",
+      "passed": true
+    },
+    {
+      "check": "different-source-author-and-independent-reviewer",
+      "passed": true
+    },
+    {
+      "check": "source-only-boundaries",
+      "passed": true
+    },
+    {
+      "check": "all-115-visually-accepted-no-repair-no-pending",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p019:lesson-number-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p019:lesson-title",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p019:goals-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p019:goal1",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p019:goal2",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p019:goal3",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p019:goal4",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p019:warmup-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p019:warmup1-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p019:warmup2-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:running-series-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:text1-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:text1-context",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:text1-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:words-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:word01",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:word02",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:word03",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:text1-line01",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:text1-line02",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:text1-line03",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:text1-line04",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:text1-line05",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p020:text1-role-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p021:running-lesson-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p021:grammar1-section-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p021:grammar1-title",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p021:grammar1-rule1",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p021:grammar1-rule2",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p021:grammar1-rule3",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p021:grammar1-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p021:text2-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p021:text2-context",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p021:text2-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:running-series-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:words-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:word04",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:word05",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:text2-line01",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:text2-line02",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:text2-line03",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:text2-line04",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:text2-line05",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:text2-role-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:grammar2-section-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p022:grammar2-title",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p023:running-lesson-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p023:grammar2-rule1",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p023:grammar2-rule2",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p023:grammar2-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p023:text3-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p023:text3-context",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p023:text3-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:running-series-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:words-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:word06",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:word07",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:word08",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:word09",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:word10",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:word11",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:helper-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:helper-duile",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:text3-line01",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:text3-line02",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:text3-line03",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:text3-line04",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:text3-line05",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:text3-line06",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:text3-role-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:grammar3-section-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:grammar3-title",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p024:grammar3-rule",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:running-lesson-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:grammar3-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:text4-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:text4-context",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:text4-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:words-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:word12",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:word13",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:word14",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:word15",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:text4-whole-paragraph",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p025:text4-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p026:running-series-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p026:integrated-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p026:integrated1-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p026:integrated2-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:running-lesson-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:classroom-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:pair-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:pair-instruction",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:pair-example-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:bonus-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:bonus-video-caption",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:learning-summary-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:learning-summary-scope",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:learning-summary-words-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:learning-summary-words-known",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p027:learning-summary-words-not-known",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:running-series-header",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-can-understand-use",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-understand-column",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-use-column",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-grammar-row01",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-grammar-row02",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-grammar-row03",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-grammar-row04",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-grammar-row05",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-grammar-row06",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-grammar-row07",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-grammar-row08",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-grammar-row09",
+      "passed": true
+    },
+    {
+      "check": "source-value-and-metadata:hsk2-official-vi:l03:p028:learning-summary-needs-effort",
+      "passed": true
+    },
+    {
+      "check": "actual-primary-page-counts",
+      "passed": true
+    },
+    {
+      "check": "actual-scope-10-pages-including-summary-continuation",
+      "passed": true
+    },
+    {
+      "check": "15-word-ordinals-and-literal-POS",
+      "passed": true
+    },
+    {
+      "check": "16-role-lines-grouped-5-5-6",
+      "passed": true
+    },
+    {
+      "check": "role-ordinal-and-name-separation:text1",
+      "passed": true
+    },
+    {
+      "check": "role-ordinal-and-name-separation:text2",
+      "passed": true
+    },
+    {
+      "check": "role-ordinal-and-name-separation:text3",
+      "passed": true
+    },
+    {
+      "check": "text4-single-unlabelled-printed-semantic-difference",
+      "passed": true
+    },
+    {
+      "check": "9-summary-rows-on-actual-page42-with-Chinese-examples",
+      "passed": true
+    },
+    {
+      "check": "2-cross-page-cases-3-records",
+      "passed": true
+    },
+    {
+      "check": "cross-page-evidence:hsk2-official-vi:l03:p023:grammar2-rule1",
+      "passed": true
+    },
+    {
+      "check": "cross-page-evidence:hsk2-official-vi:l03:p023:grammar2-rule2",
+      "passed": true
+    },
+    {
+      "check": "cross-page-evidence:hsk2-official-vi:l03:p024:grammar3-rule",
+      "passed": true
+    },
+    {
+      "check": "grammar3-fragments-joined-once-with-final-clause",
+      "passed": true
+    },
+    {
+      "check": "10-independent-full-pages-listed",
+      "passed": true
+    },
+    {
+      "check": "full-page-SHA-decode-observed-footer:33",
+      "passed": true
+    },
+    {
+      "check": "full-page-SHA-decode-observed-footer:34",
+      "passed": true
+    },
+    {
+      "check": "full-page-SHA-decode-observed-footer:35",
+      "passed": true
+    },
+    {
+      "check": "full-page-SHA-decode-observed-footer:36",
+      "passed": true
+    },
+    {
+      "check": "full-page-SHA-decode-observed-footer:37",
+      "passed": true
+    },
+    {
+      "check": "full-page-SHA-decode-observed-footer:38",
+      "passed": true
+    },
+    {
+      "check": "full-page-SHA-decode-observed-footer:39",
+      "passed": true
+    },
+    {
+      "check": "full-page-SHA-decode-observed-footer:40",
+      "passed": true
+    },
+    {
+      "check": "full-page-SHA-decode-observed-footer:41",
+      "passed": true
+    },
+    {
+      "check": "full-page-SHA-decode-observed-footer:42",
+      "passed": true
+    },
+    {
+      "check": "9-permanent-evidence-images-exact-inventory",
+      "passed": true
+    },
+    {
+      "check": "permanent-PNG-SHA-and-source:pdf034-words01-03.png",
+      "passed": true
+    },
+    {
+      "check": "direct-original-360dpi-crop:pdf034-words01-03.png",
+      "passed": true
+    },
+    {
+      "check": "permanent-PNG-SHA-and-source:pdf038-words06-11.png",
+      "passed": true
+    },
+    {
+      "check": "direct-original-360dpi-crop:pdf038-words06-11.png",
+      "passed": true
+    },
+    {
+      "check": "permanent-PNG-SHA-and-source:pdf039-words12-15.png",
+      "passed": true
+    },
+    {
+      "check": "direct-original-360dpi-crop:pdf039-words12-15.png",
+      "passed": true
+    },
+    {
+      "check": "permanent-PNG-SHA-and-source:pdf039-text4-whole.png",
+      "passed": true
+    },
+    {
+      "check": "direct-original-360dpi-crop:pdf039-text4-whole.png",
+      "passed": true
+    },
+    {
+      "check": "permanent-PNG-SHA-and-source:pdf036-grammar2-chinese.png",
+      "passed": true
+    },
+    {
+      "check": "direct-original-360dpi-crop:pdf036-grammar2-chinese.png",
+      "passed": true
+    },
+    {
+      "check": "permanent-PNG-SHA-and-source:pdf037-grammar2-vietnamese.png",
+      "passed": true
+    },
+    {
+      "check": "direct-original-360dpi-crop:pdf037-grammar2-vietnamese.png",
+      "passed": true
+    },
+    {
+      "check": "permanent-PNG-SHA-and-source:pdf038-grammar3-first-fragment.png",
+      "passed": true
+    },
+    {
+      "check": "direct-original-360dpi-crop:pdf038-grammar3-first-fragment.png",
+      "passed": true
+    },
+    {
+      "check": "permanent-PNG-SHA-and-source:pdf039-grammar3-continuation.png",
+      "passed": true
+    },
+    {
+      "check": "direct-original-360dpi-crop:pdf039-grammar3-continuation.png",
+      "passed": true
+    },
+    {
+      "check": "permanent-PNG-SHA-and-source:pdf042-connected-summary-full.png",
+      "passed": true
+    },
+    {
+      "check": "page42-permanent-copy-is-original-byte-evidence",
+      "passed": true
+    },
+    {
+      "check": "all-row-evidence-identities-resolve",
+      "passed": true
+    },
+    {
+      "check": "TSV-all115-identities-and-print-values",
+      "passed": true
+    },
+    {
+      "check": "structural-audit-attribution-no-visual-claim",
+      "passed": true
+    }
+  ],
+  "issues": []
+}

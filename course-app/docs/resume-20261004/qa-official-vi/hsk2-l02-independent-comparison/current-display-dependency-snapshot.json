@@ -1,0 +1,38 @@
+{
+  "status": "current source read for baseline binding only; not loader/browser acceptance",
+  "inputs": [
+    {
+      "file": "course-app/src/content.ts",
+      "sha256": "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2",
+      "bytes": 8228
+    },
+    {
+      "file": "course-app/src/official-vi-revisions.ts",
+      "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f",
+      "bytes": 18776
+    },
+    {
+      "file": "course-app/content/official-vi-registry.json",
+      "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81",
+      "bytes": 80
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744",
+      "bytes": 62262
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "sha256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "bytes": 40716
+    },
+    {
+      "file": "course-app/src/lexicon.ts",
+      "sha256": "eea19bf5871009d76c7af075a53d737ecba9e5587696343407fd391c04dd73bf",
+      "bytes": 1341
+    }
+  ],
+  "hsk2ActiveRegistry": null,
+  "projectionObservation": "actual projectLesson/projectLexicon/projectCourseIndex return structuredClone baseline when registry is null",
+  "authorContentTSInputDriftPreservedSeparately": true
+}

@@ -1,0 +1,5231 @@
+[
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p019:lesson-number-header",
+      "pdfPage": 33,
+      "printedPage": 19,
+      "section": "lesson-number-header",
+      "zhAnchor": "3",
+      "viPrinted": "Bài 3",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "zhAnchorKind": "printed-numeric-lesson-marker",
+      "layoutParts": [
+        "Bài",
+        "3"
+      ],
+      "layoutNote": "Printed Bài and numeral 3 are adjacent layout parts. No Chinese 第3课 phrase is printed in this marker.",
+      "runningChineseContext": null
+    },
+    "completePageScope": {
+      "pdfPages": [
+        33
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p019:lesson-title",
+      "pdfPage": 33,
+      "printedPage": 19,
+      "section": "lesson-title",
+      "zhAnchor": "我想去西安旅游",
+      "viPrinted": "Em muốn đi Tây An du lịch",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        33
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "b1da84f11d8638c9a9202d02",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "cd7299c3b9031f87f782365a",
+        "file": "course-app/content/course-index.json",
+        "field": "/2/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p019:goals-header",
+      "pdfPage": 33,
+      "printedPage": 19,
+      "section": "goals-header",
+      "zhAnchor": "目标",
+      "viPrinted": "Mục tiêu",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        33
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p019:goal1",
+      "pdfPage": 33,
+      "printedPage": 19,
+      "section": "goal1",
+      "zhAnchor": "能听懂并询问事情的原因。",
+      "viPrinted": "Có thể nghe hiểu và hỏi được nguyên nhân của sự việc.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        33
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "964b3846d9540edd3c749060",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/objectives/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:objective1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "186e2172d380f42fbd97a86d",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/0/fields/0/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:objective1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p019:goal2",
+      "pdfPage": 33,
+      "printedPage": 19,
+      "section": "goal2",
+      "zhAnchor": "掌握结果补语的用法，能描述动作的结果。",
+      "viPrinted": "Nắm vững cách dùng của bổ ngữ kết quả để miêu tả kết quả của hành động.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        33
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "e8769977ea9ef79f122bc297",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/objectives/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:objective2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "3d65b94b60aef145be559b42",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/0/fields/1/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:objective2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p019:goal3",
+      "pdfPage": 33,
+      "printedPage": 19,
+      "section": "goal3",
+      "zhAnchor": "掌握动词重叠的用法，能用来表达动作时间短、数量少、尝试等意义。",
+      "viPrinted": "Nắm vững cách dùng của động từ lặp lại để diễn đạt thời gian ngắn của hành động, số lượng ít hoặc thử làm gì.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        33
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "6c06d5b598218a22e6a15743",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/objectives/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:objective3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "0b5b5c7e82b5bc77c0a652a9",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/0/fields/2/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:objective3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p019:goal4",
+      "pdfPage": 33,
+      "printedPage": 19,
+      "section": "goal4",
+      "zhAnchor": "了解西安的旅游景点。",
+      "viPrinted": "Hiểu về các điểm tham quan du lịch ở Tây An.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        33
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "195a47b75122353c6e4f5caf",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/objectives/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:objective4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "e31b076acac8eb61514d7301",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/0/fields/3/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:objective4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p019:warmup-header",
+      "pdfPage": 33,
+      "printedPage": 19,
+      "section": "warmup-header",
+      "zhAnchor": "热身",
+      "viPrinted": "Khởi động",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        33
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p019:warmup1-instruction",
+      "pdfPage": 33,
+      "printedPage": 19,
+      "section": "warmup1-instruction",
+      "zhAnchor": "给下面的词语选择对应的图片。",
+      "viPrinted": "Lựa chọn hình ảnh tương ứng với các từ ngữ sau.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        33
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "7343ccdecece4e9f5b47970b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/warmup/0/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:warmup1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "57d6ef28818ee2e435e27e44",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:warmup-matching",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p019:warmup2-instruction",
+      "pdfPage": 33,
+      "printedPage": 19,
+      "section": "warmup2-instruction",
+      "zhAnchor": "给下面的动词加上合适的名词。",
+      "viPrinted": "Hãy thêm danh từ thích hợp cho các động từ sau.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        33
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "29055c8fb9b6dd9c1fed02d4",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/warmup/1/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:warmup2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "ad0574418d2c2acd51ed4e25",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/2/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:warmup-verb-objects",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:running-series-header",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "running-series-header",
+      "zhAnchor": "新HSK教程2",
+      "viPrinted": "Giáo trình New HSK 2",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:text1-header",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "text1-header",
+      "zhAnchor": "课文1",
+      "viPrinted": "Bài khoá 1",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "1e42473fc8564bff82b12026",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/0/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "e71cc6d4e0009b744250d618",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/3/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text1-listening",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "5380518969d82a336d7661b4",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/4/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text1-reading",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:text1-context",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "text1-context",
+      "zhAnchor": "在家门口，刘明开门进到家里。",
+      "viPrinted": "Tại cửa ra vào, Lưu Minh mở cửa đi vào trong nhà.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "29261e48a25f14ad7a979285",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/0/context/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:text1-listen-instruction",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "text1-listen-instruction",
+      "zhAnchor": "听两遍对话，选择正确答案。",
+      "viPrinted": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "cb88f4750ddb0142c3496c3d",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/3/note/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text1-listening",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:words-header",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "words-header",
+      "zhAnchor": "生词",
+      "viPrinted": "Từ mới",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:word01",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "word01",
+      "zhAnchor": "回来",
+      "viPrinted": "quay về, quay lại",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 1,
+      "printedPinyin": "huílái",
+      "printedPOSRaw": "đgt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "772d923ec53cc7ff9ee268cc",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word01",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "d265ced4a155602c095de81c",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/0/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word01",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "f98f0a197136cd2ddfab3aa6",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/32/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word01",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "0adc0bff63ea429e5ed8f8a9",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/32/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word01",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:word02",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "word02",
+      "zhAnchor": "这么",
+      "viPrinted": "như vậy",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 2,
+      "printedPinyin": "zhème",
+      "printedPOSRaw": "đt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "2c3cce961024d2acd2f4cd41",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word02",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "fb1c2b0338fba2d46905975a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/1/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word02",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "2689c497550ba9f24edac32b",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/33/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word02",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "63bf161123b4e27a0d511c70",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/33/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word02",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:word03",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "word03",
+      "zhAnchor": "完",
+      "viPrinted": "xong",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 3,
+      "printedPinyin": "wán",
+      "printedPOSRaw": "đgt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "21fdf249775a456c18a0492d",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word03",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "6c8ded6ee5d051e4a04b7251",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/2/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word03",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "b05c094f928059fb78be94fb",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/34/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word03",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "4d38fd5bd6401d6c3250f9a8",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/34/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word03",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:text1-line01",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "text1-line01",
+      "zhAnchor": "今天回来这么晚啊！",
+      "viPrinted": "Hôm nay anh về muộn thế!",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết",
+      "printedDialogueOrdinal": 1,
+      "printedTextNumber": 1
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "57d2f898b571d8170574fb58",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/0/lines/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text1:line1",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:text1-line02",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "text1-line02",
+      "zhAnchor": "工作太多了，下班的时候没做完。",
+      "viPrinted": "Anh có nhiều việc quá, đến giờ tan làm mà vẫn chưa xong.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh",
+      "printedDialogueOrdinal": 2,
+      "printedTextNumber": 1
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "1e584dff2c2f264359e5499a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/0/lines/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text1:line2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:text1-line03",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "text1-line03",
+      "zhAnchor": "菜都做好了，过来吃饭吧。",
+      "viPrinted": "Cơm nấu xong rồi. Anh ra ăn cơm nhé.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết",
+      "printedDialogueOrdinal": 3,
+      "printedTextNumber": 1
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "29a7722ecb55ba7d8a7d4485",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/0/lines/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text1:line3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:text1-line04",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "text1-line04",
+      "zhAnchor": "我想休息一下，喝杯水。",
+      "viPrinted": "Anh muốn nghỉ ngơi một lát, uống cốc nước đã.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh",
+      "printedDialogueOrdinal": 4,
+      "printedTextNumber": 1
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "3e3cd543bda4aabd75d49a37",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/0/lines/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text1:line4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:text1-line05",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "text1-line05",
+      "zhAnchor": "好的。",
+      "viPrinted": "Vâng ạ.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết",
+      "printedDialogueOrdinal": 5,
+      "printedTextNumber": 1
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "6faee68953a0d229183b9a3a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/0/lines/4/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text1:line5",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p020:text1-role-read-instruction",
+      "pdfPage": 34,
+      "printedPage": 20,
+      "section": "text1-role-read-instruction",
+      "zhAnchor": "分角色朗读对话，读后回答问题。",
+      "viPrinted": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        34
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "9533e39aa7cf209047dc77a2",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/4/note/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text1-reading",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p021:running-lesson-header",
+      "pdfPage": 35,
+      "printedPage": 21,
+      "section": "running-lesson-header",
+      "zhAnchor": "3",
+      "viPrinted": "Bài 3",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "zhAnchorKind": "printed-numeric-lesson-marker",
+      "layoutParts": [
+        "Bài",
+        "3"
+      ],
+      "layoutNote": "Printed Bài and numeral 3 are adjacent layout parts. No Chinese 第3课 phrase is printed in this marker.",
+      "runningChineseContext": "我想去西安旅游"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        35
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p021:grammar1-section-header",
+      "pdfPage": 35,
+      "printedPage": 21,
+      "section": "grammar1-section-header",
+      "zhAnchor": "小语讲堂",
+      "viPrinted": "Lớp học của Tiểu Ngữ",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        35
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p021:grammar1-title",
+      "pdfPage": 35,
+      "printedPage": 21,
+      "section": "grammar1-title",
+      "zhAnchor": "结果补语",
+      "viPrinted": "Bổ ngữ kết quả",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedGrammarNumber": 1
+    },
+    "completePageScope": {
+      "pdfPages": [
+        35
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "b7fa35275c1149340e71d6d8",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/grammar/0/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:grammar1",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p021:grammar1-rule1",
+      "pdfPage": 35,
+      "printedPage": 21,
+      "section": "grammar1-rule1",
+      "zhAnchor": "一些动词或者形容词用在动词后面，表示动作的结果。例如：",
+      "viPrinted": "Có một số động từ hoặc tính từ có thể đặt sau động từ để biểu thị kết quả của hành động. Ví dụ:",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedExampleMarker": "Ví dụ:",
+      "exampleMarkerOnSeparateLine": true
+    },
+    "completePageScope": {
+      "pdfPages": [
+        35
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "c5d79e0240db40c930f8bab7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/grammar/0/explanation/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:grammar1",
+        "decision": "held-whole-field-scope-or-editorial-preservation",
+        "sourceRelation": "held-no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p021:grammar1-rule2",
+      "pdfPage": 35,
+      "printedPage": 21,
+      "section": "grammar1-rule2",
+      "zhAnchor": "否定形式是在动词前面加“没（有）”，同时要去掉“了”。例如：",
+      "viPrinted": "Hình thức phủ định là thêm “没（有）” vào trước động từ và bỏ “了” ở cuối câu. Ví dụ:",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedExampleMarker": "Ví dụ:"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        35
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "c5d79e0240db40c930f8bab7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/grammar/0/explanation/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:grammar1",
+        "decision": "held-whole-field-scope-or-editorial-preservation",
+        "sourceRelation": "held-no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p021:grammar1-rule3",
+      "pdfPage": 35,
+      "printedPage": 21,
+      "section": "grammar1-rule3",
+      "zhAnchor": "疑问形式有三种，分别是：（1）在句尾加“了吗”；（2）在句尾加“（了）没有”；（3）动词+没+动词+结果补语。例如：",
+      "viPrinted": "Hình thức nghi vấn có 3 loại: (1) thêm “了吗” vào cuối câu; (2) thêm “（了）没有” vào cuối câu; (3) động từ + 没 + động từ + bổ ngữ kết quả. Ví dụ:",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedExampleMarker": "Ví dụ:"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        35
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "c5d79e0240db40c930f8bab7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/grammar/0/explanation/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:grammar1",
+        "decision": "held-whole-field-scope-or-editorial-preservation",
+        "sourceRelation": "held-no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p021:grammar1-complete-instruction",
+      "pdfPage": 35,
+      "printedPage": 21,
+      "section": "grammar1-complete-instruction",
+      "zhAnchor": "完成对话。",
+      "viPrinted": "Hoàn thành hội thoại.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        35
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p021:text2-header",
+      "pdfPage": 35,
+      "printedPage": 21,
+      "section": "text2-header",
+      "zhAnchor": "课文2",
+      "viPrinted": "Bài khoá 2",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        35
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "6a22d86af1c167af8f20dd45",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/1/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "1086937b4d17877d99db99ae",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/5/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text2-listening",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "d4f1b6184ff7e69789224601",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/6/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text2-reading",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p021:text2-context",
+      "pdfPage": 35,
+      "printedPage": 21,
+      "section": "text2-context",
+      "zhAnchor": "在客厅，刘明和王一雪在聊天儿。",
+      "viPrinted": "Lưu Minh và Vương Nhất Tuyết đang trò chuyện trong phòng khách.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        35
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "12046b840e2cf6063e823688",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/1/context/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p021:text2-listen-instruction",
+      "pdfPage": 35,
+      "printedPage": 21,
+      "section": "text2-listen-instruction",
+      "zhAnchor": "听两遍对话，选择正确答案。",
+      "viPrinted": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        35
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "3ce1f436106c25facdc30340",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/5/note/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text2-listening",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:running-series-header",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "running-series-header",
+      "zhAnchor": "新HSK教程2",
+      "viPrinted": "Giáo trình New HSK 2",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:words-header",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "words-header",
+      "zhAnchor": "生词",
+      "viPrinted": "Từ mới",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:word04",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "word04",
+      "zhAnchor": "一起",
+      "viPrinted": "cùng, cùng nhau",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 4,
+      "printedPinyin": "yìqǐ",
+      "printedPOSRaw": "phó.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "08ad82c42b9e7f3979f759a0",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word04",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "1f0f2c5de2ebfdba88468e5f",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/3/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word04",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "c580abec0be1e32e17da4921",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/1/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "6fae15cd6e1eca9ba55a6ba5",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/0/options/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "00b92b3cc3b9b89f18f2ae5c",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/1/options/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "1a0fc7d9902f5ed4c8bd2bfe",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/2/options/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "1695c0f5055c416c562cf4ea",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/3/options/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "8f9663cd53a731bf8c379389",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/4/options/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-5",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "5c430379a219b28c55938a40",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/35/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word04",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "b63d0686c0cc8223ccc8e76f",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/35/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word04",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:word05",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "word05",
+      "zhAnchor": "出去",
+      "viPrinted": "đi ra, đi khỏi, đi",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 5,
+      "printedPinyin": "chūqù",
+      "printedPOSRaw": "đgt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "a724107a5aba7eb4dd7670b2",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/4/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word05",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "20f34ec73f327b47cc4aa9d5",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/4/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word05",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "4b9707dd7ca047c3e490d4e8",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/36/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word05",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "94c4ca8eef590679b8a100ad",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/36/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word05",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:text2-line01",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "text2-line01",
+      "zhAnchor": "我们找个时间去旅游，怎么样？",
+      "viPrinted": "Chúng ta sắp xếp thời gian đi du lịch, em thấy thế nào?",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh",
+      "printedDialogueOrdinal": 1,
+      "printedTextNumber": 2
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "9e3b0406ef2fddab721da391",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/1/lines/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text2:line1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:text2-line02",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "text2-line02",
+      "zhAnchor": "好啊，我也很想一起出去玩。",
+      "viPrinted": "Nhất trí! Em cũng rất muốn đi chơi cùng anh.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết",
+      "printedDialogueOrdinal": 2,
+      "printedTextNumber": 2
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "890d096802d676e4738be0cd",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/1/lines/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text2:line2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:text2-line03",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "text2-line03",
+      "zhAnchor": "你想去哪儿？",
+      "viPrinted": "Em muốn đi đâu?",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh",
+      "printedDialogueOrdinal": 3,
+      "printedTextNumber": 2
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "177ce2c2ac393d924fe1f14b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/1/lines/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text2:line3",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:text2-line04",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "text2-line04",
+      "zhAnchor": "我还没想好呢。",
+      "viPrinted": "Em vẫn chưa nghĩ ra.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết",
+      "printedDialogueOrdinal": 4,
+      "printedTextNumber": 2
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "377513a83cf7329a18927730",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/1/lines/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text2:line4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:text2-line05",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "text2-line05",
+      "zhAnchor": "那你再想一想，你想好了，我来买票。",
+      "viPrinted": "Vậy em cứ nghĩ thêm nhé. Khi nào em nghĩ xong, anh sẽ mua vé.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh",
+      "printedDialogueOrdinal": 5,
+      "printedTextNumber": 2
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "6ac90e889b3f1d21665f6742",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/1/lines/4/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text2:line5",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:text2-role-read-instruction",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "text2-role-read-instruction",
+      "zhAnchor": "分角色朗读对话，读后回答问题。",
+      "viPrinted": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "e821b65c3533aa69425fa96a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/6/note/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text2-reading",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:grammar2-section-header",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "grammar2-section-header",
+      "zhAnchor": "小语讲堂",
+      "viPrinted": "Lớp học của Tiểu Ngữ",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p022:grammar2-title",
+      "pdfPage": 36,
+      "printedPage": 22,
+      "section": "grammar2-title",
+      "zhAnchor": "动词重叠（1）",
+      "viPrinted": "Động từ lặp lại (1)",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedGrammarNumber": 2
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36
+      ],
+      "printedPages": [
+        22
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "7b3509b67c1ea56db27aae25",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/grammar/1/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:grammar2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p023:running-lesson-header",
+      "pdfPage": 37,
+      "printedPage": 23,
+      "section": "running-lesson-header",
+      "zhAnchor": "3",
+      "viPrinted": "Bài 3",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "zhAnchorKind": "printed-numeric-lesson-marker",
+      "layoutParts": [
+        "Bài",
+        "3"
+      ],
+      "layoutNote": "Printed Bài and numeral 3 are adjacent layout parts. No Chinese 第3课 phrase is printed in this marker.",
+      "runningChineseContext": "我想去西安旅游"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        37
+      ],
+      "printedPages": [
+        23
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p023:grammar2-rule1",
+      "pdfPage": 37,
+      "printedPage": 23,
+      "section": "grammar2-rule1",
+      "zhAnchor": "动作性比较强、能重复或持续的动词重叠使用，表示时间短、数量少、尝试等意思，语气比较轻松、随意，多用于口语。",
+      "viPrinted": "Những động từ có tính hành động mạnh, có thể lặp đi lặp lại hoặc duy trì thì đều có thể lặp lại. Động từ lặp lại thường dùng trong văn nói, mang ngữ khí nhẹ nhàng, tự nhiên, biểu thị thời gian ngắn, số lượng ít hoặc mang sắc thái thử nghiệm...",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "zhAnchorPrintedPage": 22,
+      "zhAnchorPDFPage": 36,
+      "printedPages": [
+        22,
+        23
+      ],
+      "pdfPages": [
+        36,
+        37
+      ],
+      "sourceSpanReason": "Chinese explanation printed at bottom of22; Vietnamese explanation begins at top of23."
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36,
+        37
+      ],
+      "printedPages": [
+        22,
+        23
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "2fd3df738e1b29b5a0591541",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/grammar/1/explanation/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:grammar2",
+        "decision": "held-whole-field-scope-or-editorial-preservation",
+        "sourceRelation": "held-no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p023:grammar2-rule2",
+      "pdfPage": 37,
+      "printedPage": 23,
+      "section": "grammar2-rule2",
+      "zhAnchor": "单音节动词的重叠形式是“A（一）A”，双音节动词的重叠形式是“ABAB”，离合词的重叠形式是“AAB”。例如：",
+      "viPrinted": "Hình thức lặp lại của động từ đơn âm tiết là “A（一）A”; hình thức lặp lại của động từ song âm tiết là “ABAB”; hình thức lặp lại của từ li hợp là “AAB”. Ví dụ:",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "zhAnchorPrintedPage": 22,
+      "zhAnchorPDFPage": 36,
+      "printedPages": [
+        22,
+        23
+      ],
+      "pdfPages": [
+        36,
+        37
+      ],
+      "printedExampleMarker": "Ví dụ:",
+      "sourceSpanReason": "Chinese explanation printed at bottom of22; Vietnamese explanation printed at top of23."
+    },
+    "completePageScope": {
+      "pdfPages": [
+        36,
+        37
+      ],
+      "printedPages": [
+        22,
+        23
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "2fd3df738e1b29b5a0591541",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/grammar/1/explanation/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:grammar2",
+        "decision": "held-whole-field-scope-or-editorial-preservation",
+        "sourceRelation": "held-no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p023:grammar2-complete-instruction",
+      "pdfPage": 37,
+      "printedPage": 23,
+      "section": "grammar2-complete-instruction",
+      "zhAnchor": "完成对话。",
+      "viPrinted": "Hoàn thành hội thoại.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        37
+      ],
+      "printedPages": [
+        23
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p023:text3-header",
+      "pdfPage": 37,
+      "printedPage": 23,
+      "section": "text3-header",
+      "zhAnchor": "课文3",
+      "viPrinted": "Bài khoá 3",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        37
+      ],
+      "printedPages": [
+        23
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "66a74a30b7fc98d935ca887f",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/2/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "33a990d6f2ed235c75e88833",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/7/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text3-listening",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e4ab1cc4c9a33a9b394e00e7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/8/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text3-reading",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p023:text3-context",
+      "pdfPage": 37,
+      "printedPage": 23,
+      "section": "text3-context",
+      "zhAnchor": "在客厅，刘明和王一雪在聊天儿。",
+      "viPrinted": "Lưu Minh và Vương Nhất Tuyết đang trò chuyện trong phòng khách.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        37
+      ],
+      "printedPages": [
+        23
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "7677ed05e4f4a68e9d8e5229",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/2/context/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p023:text3-listen-instruction",
+      "pdfPage": 37,
+      "printedPage": 23,
+      "section": "text3-listen-instruction",
+      "zhAnchor": "听两遍对话，选择正确答案。",
+      "viPrinted": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        37
+      ],
+      "printedPages": [
+        23
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "69350bac16b97a008ffabcb0",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/7/note/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text3-listening",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:running-series-header",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "running-series-header",
+      "zhAnchor": "新HSK教程2",
+      "viPrinted": "Giáo trình New HSK 2",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:words-header",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "words-header",
+      "zhAnchor": "生词",
+      "viPrinted": "Từ mới",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:word06",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "word06",
+      "zhAnchor": "洗",
+      "viPrinted": "rửa",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 6,
+      "printedPinyin": "xǐ",
+      "printedPOSRaw": "đgt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "cba5d2c385d5159d67ae65dc",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/warmup/0/items/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:warmup1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "93b19b0243597715f3221f65",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/warmup/1/items/4/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:warmup2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "d94f107f99657ea48a661b4e",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/5/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word06",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "b8325d3d12c30b004250ecf0",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/5/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word06",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "efb6c191768719361c4c4795",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/0/options/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "32f2c15a208d0be30ec6f06e",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/1/options/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "467d62da3294b7acfadf4b74",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/2/options/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "eb18ca65e3cdc51c56a35e8f",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/3/options/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "7ff3dc48d4b84d2d1985507a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/2/fields/4/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:verb-object-5",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e128661348e5d17706bdea50",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/37/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word06",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "23657ac765bd4bfa1444a1dc",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/37/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word06",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:word07",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "word07",
+      "zhAnchor": "自己",
+      "viPrinted": "tự, tự mình, bản thân",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 7,
+      "printedPinyin": "zìjǐ",
+      "printedPOSRaw": "đt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "2af23632f19bf249dde4401d",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/6/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word07",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "e132e81b447f67a600d9b38b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/6/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word07",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "0359e88db69853687a8c7643",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/38/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word07",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "31088cd53ce2610adf344e47",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/38/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word07",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:word08",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "word08",
+      "zhAnchor": "拿",
+      "viPrinted": "cầm, nắm",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 8,
+      "printedPinyin": "ná",
+      "printedPOSRaw": "đgt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "cba5d2c385d5159d67ae65dc",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/warmup/0/items/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:warmup1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "745b18cd91b84990497d9505",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/warmup/1/items/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:warmup2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "29c07c4160e88b74b39257a5",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/7/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word08",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "394c056886547db7339c56d0",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/7/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word08",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "c580abec0be1e32e17da4921",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/1/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "9591a4e18b6e9efd9185e619",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/0/options/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "dc4900253a0c82c2765bf0fe",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/1/options/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "b2f2c820a1a060fe51897ba2",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/2/options/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "05a452e31e71c47415d0c05a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/3/options/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "2dbcfd75ace09bfcf197fc7a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/2/fields/1/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:verb-object-2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "a5b89856cd886d65ce359d2c",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/0/options/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "77723b428831005ffe568d70",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/1/options/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "595d6f4bd0dc70b1a2d0b240",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/2/options/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "cccaf9a49460debc87c3beb2",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/3/options/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "8c11b24e781bed25c34f2f5e",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/4/options/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-5",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "775b434b60599fcb01d2699d",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/39/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word08",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "436ebaa1be6f6cf2c9ff888f",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/39/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word08",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:word09",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "word09",
+      "zhAnchor": "手",
+      "viPrinted": "tay",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 9,
+      "printedPinyin": "shǒu",
+      "printedPOSRaw": "dt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "32a1a2da9bcc94bbf67414be",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/8/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word09",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "78b84873ff67f207d5b939d8",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/8/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word09",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "8c6329266ed942bd74de6a81",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/40/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word09",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "541670fd76bd9c8f73b6ed27",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/40/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word09",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:word10",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "word10",
+      "zhAnchor": "为什么",
+      "viPrinted": "tại sao, vì sao",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 10,
+      "printedPinyin": "wèi shénme",
+      "printedPOSRaw": null,
+      "posPrinted": false,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "f270d4ba23a5d519c013299e",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/9/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word10",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "3a0a98b9bfd4a50f9edd508a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/9/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word10",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "240af32cce5c364b4eaec9ed",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/41/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word10",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "878b9af097217f5e82e8b6d1",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/41/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word10",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:word11",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "word11",
+      "zhAnchor": "不错",
+      "viPrinted": "không tồi, hay",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 11,
+      "printedPinyin": "búcuò",
+      "printedPOSRaw": "tt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "cba5d2c385d5159d67ae65dc",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/warmup/0/items/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:warmup1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "31760db12ffed91ae7d8e89c",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/10/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word11",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "957b2db0a2811fe5859588e4",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/10/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word11",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "8bef8010201980243ae174dc",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/0/options/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "d8af5a0a585cd054ddc44c0d",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/1/options/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "2c67d6412f763a4902c6d432",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/2/options/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "b897aef3d3b0b3a615bf68d7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/3/options/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "20acb5c3cb11189299e67675",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/42/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word11",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "be74d74e28b9e2bac4496bf2",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/42/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word11",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:helper-header",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "helper-header",
+      "zhAnchor": "小语助力",
+      "viPrinted": "Tiểu Ngữ giúp sức",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "733083d17b0dcb47ddb801e8",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/0/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:helper-duile",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "helper-duile",
+      "zhAnchor": "“对了”表示突然想起另外一件事或提出另一个话题。",
+      "viPrinted": "“对了” được dùng khi người nói chợt nhớ ra điều gì đó hoặc muốn chuyển sang chủ đề khác.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "cf0a5f14646c7b2b108620ef",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/0/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section1",
+        "decision": "held-whole-field-scope-or-editorial-preservation",
+        "sourceRelation": "held-no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:text3-line01",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "text3-line01",
+      "zhAnchor": "吃个苹果吧，我都洗好了。",
+      "viPrinted": "Ăn quả táo đi, anh đã rửa sạch rồi.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh",
+      "printedDialogueOrdinal": 1,
+      "printedTextNumber": 3
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "95d31e1f131d0dd6b108cecb",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/2/lines/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text3:line1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:text3-line02",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "text3-line02",
+      "zhAnchor": "好的。",
+      "viPrinted": "Vâng ạ.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết",
+      "printedDialogueOrdinal": 2,
+      "printedTextNumber": 3
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "7c105fc664801eb458edf724",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/2/lines/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text3:line2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:text3-line03",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "text3-line03",
+      "zhAnchor": "就在桌子上，你自己拿。",
+      "viPrinted": "Táo để trên bàn, em tự đi lấy nhé.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh",
+      "printedDialogueOrdinal": 3,
+      "printedTextNumber": 3
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "eb542f6beb0a331bfb63ab0f",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/2/lines/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text3:line3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:text3-line04",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "text3-line04",
+      "zhAnchor": "我去洗洗手。对了，我们去西安旅游，怎么样？",
+      "viPrinted": "Em đi rửa tay đã. À đúng rồi, mình đi Tây An du lịch, anh thấy thế nào?",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết",
+      "printedDialogueOrdinal": 4,
+      "printedTextNumber": 3
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "a9eb4b12e15b37c52d7c2bfb",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/2/lines/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text3:line4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:text3-line05",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "text3-line05",
+      "zhAnchor": "为什么想去西安？",
+      "viPrinted": "Vì sao em muốn đi Tây An?",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh",
+      "printedDialogueOrdinal": 5,
+      "printedTextNumber": 3
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "6af0f5a7ab9749db2538ca4e",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/2/lines/4/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text3:line5",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "刘明",
+      "printedRoleVi": "Lưu Minh"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:text3-line06",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "text3-line06",
+      "zhAnchor": "我看了看网上的介绍，这个时候去西安很不错！",
+      "viPrinted": "Em có xem qua giới thiệu ở trên mạng. Thời điểm này đi Tây An rất tuyệt!",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết",
+      "printedDialogueOrdinal": 6,
+      "printedTextNumber": 3
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "b57b3e1cc57917dcd4def3fb",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/2/lines/5/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text3:line6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {
+      "printedRoleZh": "王一雪",
+      "printedRoleVi": "Vương Nhất Tuyết"
+    },
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:text3-role-read-instruction",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "text3-role-read-instruction",
+      "zhAnchor": "分角色朗读对话，读后回答问题。",
+      "viPrinted": "Phân vai đọc to đoạn hội thoại, sau đó trả lời câu hỏi.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "d0b1332aee5c3b56caaad469",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/8/note/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text3-reading",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:grammar3-section-header",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "grammar3-section-header",
+      "zhAnchor": "小语讲堂",
+      "viPrinted": "Lớp học của Tiểu Ngữ",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:grammar3-title",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "grammar3-title",
+      "zhAnchor": "动词重叠（2）",
+      "viPrinted": "Động từ lặp lại (2)",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedGrammarNumber": 3
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38
+      ],
+      "printedPages": [
+        24
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "1c4a4fc4575487dec87b1ae3",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/grammar/2/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:grammar3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p024:grammar3-rule",
+      "pdfPage": 38,
+      "printedPage": 24,
+      "section": "grammar3-rule",
+      "zhAnchor": "表达已经发生的情况时，单音节动词的重叠形式是“A了A”；双音节动词一般不能用重叠形式，只能用“AB了一下”；离合词的重叠形式是“A了AB”。例如：",
+      "viPrinted": "Khi diễn đạt tình huống đã xảy ra, hình thức lặp lại của động từ đơn âm tiết là “A了A”; động từ song âm tiết nói chung không dùng hình thức lặp lại, mà chỉ dùng cấu trúc “AB了一下”; còn hình thức lặp lại của từ li hợp là “A了AB”. Ví dụ:",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedPages": [
+        24,
+        25
+      ],
+      "pdfPages": [
+        38,
+        39
+      ],
+      "viPrintedFragments": [
+        {
+          "printedPage": 24,
+          "pdfPage": 38,
+          "viPrinted": "Khi diễn đạt tình huống đã xảy ra, hình thức lặp lại của động từ đơn âm tiết là “A了A”; động từ song âm tiết nói chung không dùng hình thức lặp lại, mà chỉ dùng cấu trúc “AB了一下”;"
+        },
+        {
+          "printedPage": 25,
+          "pdfPage": 39,
+          "viPrinted": "còn hình thức lặp lại của từ li hợp là “A了AB”. Ví dụ:"
+        }
+      ],
+      "printedExampleMarker": "Ví dụ:",
+      "sourceSpanReason": "One printed Vietnamese explanation continues over the page turn24→25; joined once without truncating the final clause."
+    },
+    "completePageScope": {
+      "pdfPages": [
+        38,
+        39
+      ],
+      "printedPages": [
+        24,
+        25
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "9453616080be48c5a7d5c9b6",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/grammar/2/explanation/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:grammar3",
+        "decision": "held-whole-field-scope-or-editorial-preservation",
+        "sourceRelation": "held-no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:running-lesson-header",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "running-lesson-header",
+      "zhAnchor": "3",
+      "viPrinted": "Bài 3",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "zhAnchorKind": "printed-numeric-lesson-marker",
+      "layoutParts": [
+        "Bài",
+        "3"
+      ],
+      "layoutNote": "Printed Bài and numeral 3 are adjacent layout parts. No Chinese 第3课 phrase is printed in this marker.",
+      "runningChineseContext": "我想去西安旅游"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:grammar3-complete-instruction",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "grammar3-complete-instruction",
+      "zhAnchor": "完成对话。",
+      "viPrinted": "Hoàn thành hội thoại.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:text4-header",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "text4-header",
+      "zhAnchor": "课文4",
+      "viPrinted": "Bài khoá 4",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "1e35a138e823b4b8cc0b14cd",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/3/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "5460a6f6851fca21ff064d36",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/9/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text4-listening",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "a4efbcf40ea8eceef57940a9",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/10/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text4-reading",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:text4-context",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "text4-context",
+      "zhAnchor": "在家里，王一雪给好朋友打电话。",
+      "viPrinted": "Vương Nhất Tuyết gọi điện cho bạn thân ở trong nhà.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "63da71e46aff3a2da47b6675",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/3/context/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:text4-listen-instruction",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "text4-listen-instruction",
+      "zhAnchor": "听两遍课文，判断正误。",
+      "viPrinted": "Nghe bài khoá hai lượt và phán đoán đúng sai.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "86278b909e06b6048b3d6fd2",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/9/note/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text4-listening",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:words-header",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "words-header",
+      "zhAnchor": "生词",
+      "viPrinted": "Từ mới",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:word12",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "word12",
+      "zhAnchor": "送",
+      "viPrinted": "đưa, tiễn, tặng",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 12,
+      "printedPinyin": "sòng",
+      "printedPOSRaw": "đgt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "1a65403da8d13e35bedb365a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/warmup/1/items/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:warmup2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "19990d0c7edc395589effcae",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/11/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word12",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "f73cbfdefe0ea666670c6578",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/11/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word12",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "c580abec0be1e32e17da4921",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/1/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "8ac39f46a51acae571ed2069",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/2/fields/0/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:verb-object-1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "ad71b53097071a330520bd2e",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/0/options/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "545a9816f1c1c303ad89147a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/1/options/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "4fda4afefd4b89edd0a5bde8",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/2/options/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "6be9763857750eaa3870810b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/3/options/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "e2f85a211461c249b2a3b435",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/4/options/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-5",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "e100bedf240a9cb59c244808",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/43/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word12",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "72afcee556a6616bd085f3d1",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/43/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word12",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:word13",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "word13",
+      "zhAnchor": "回去",
+      "viPrinted": "quay về, về",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 13,
+      "printedPinyin": "huíqù",
+      "printedPOSRaw": "đgt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "75584375726d1bf7aba99d58",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/12/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word13",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "062820262a8924e27312730c",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/12/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word13",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "c580abec0be1e32e17da4921",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/1/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "d139b38833970fa915bf8ac3",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/0/options/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "b51699c5477e2e232a0aad65",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/1/options/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "d1731c7bb9c8670767caba3a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/2/options/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "b797a3082e3a135d1bc6cc3d",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/3/options/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "dc779efff1766ab5735dd557",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/4/options/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-5",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "7e3452944173b0450854bf33",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/44/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word13",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "5b81cba6b47803f2ab00c459",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/44/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word13",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:word14",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "word14",
+      "zhAnchor": "每",
+      "viPrinted": "mỗi, hàng (ngày, năm...)",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 14,
+      "printedPinyin": "měi",
+      "printedPOSRaw": "đt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "570bc277c3e7c678e1ea6784",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/13/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word14",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "675c3c9e864eee23c8109e04",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/13/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word14",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "6da0e57ad21927c13481ef8a",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/45/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word14",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "0e22fb11e4eb24c333e4ce19",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/45/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word14",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:word15",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "word15",
+      "zhAnchor": "累",
+      "viPrinted": "mệt",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedNumber": 15,
+      "printedPinyin": "lèi",
+      "printedPOSRaw": "tt.",
+      "posPrinted": true,
+      "sourceWordKind": "ordinary-numbered-word"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "cba5d2c385d5159d67ae65dc",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/warmup/0/items/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:warmup1",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "d819852afba71e03bf1c1c74",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/14/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word15",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "40c3621b12780faf7f418a80",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/vocabulary/14/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:word15",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      },
+      {
+        "recordId": "c580abec0be1e32e17da4921",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/1/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "8efcb29fa7b75ec3fee5704e",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/0/options/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture1",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "aa7a9acea81e8207130345e4",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/1/options/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture2",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "417fe104c3d87035d408a354",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/2/options/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture3",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "488984e5c1a1fc4d9ef4f416",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/1/fields/3/options/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:warmup-picture4",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "a3bd1739f9c26b732ed8bcc3",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/0/options/4/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-1",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "5163f3960bc43ee3ac9169fe",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/1/options/4/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-2",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "9b630b4b85b20cefa8d352de",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/2/options/4/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-3",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "127b65831686da76e2369e9c",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/3/options/4/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-4",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "e918673acff4653133869025",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/fields/4/options/4/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:comprehensive-word-5",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "663bc13a1bcfc3100d5b1e3b",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/46/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word15",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "003c559575c23f804b7fcf66",
+        "file": "course-app/content/hsk2-lexicon.json",
+        "field": "/senses/46/pos",
+        "actualOwnerId": "hsk2-fltrp-2026:sense:l03-word15",
+        "decision": "sealed-pos-metadata",
+        "sourceRelation": "no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:text4-whole-paragraph",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "text4-whole-paragraph",
+      "zhAnchor": "早上，刘明开车送孩子去学校，送完孩子回家后，医院就来电话了，让他回去上班。我觉得他这个月每天都很累，真想让他休息休息。",
+      "viPrinted": "Buổi sáng, Lưu Minh lái xe đưa con đi đến trường, sau khi đưa con xong quay về nhà thì bệnh viện gọi điện đến, yêu cầu anh ấy quay về bệnh viện làm việc. Tôi cảm thấy tháng này ngày nào Lưu Minh cũng đều rất bận, thật muốn anh ấy được nghỉ ngơi một chút.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "printedSpeaker": null,
+      "noWebsiteLinePartitionInferred": true,
+      "printedSemanticDifferencePreserved": "Printed Vietnamese uses rất bận for Chinese 很累; source transcription preserves actual book text without editorial harmonization."
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "5b964c355748c955fc1276b3",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/texts/3/lines/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:text4:line1",
+        "decision": "held-potential-official-book-erratum",
+        "sourceRelation": "held-no-projection"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p025:text4-read-instruction",
+      "pdfPage": 39,
+      "printedPage": 25,
+      "section": "text4-read-instruction",
+      "zhAnchor": "朗读课文，读后选择正确答案。",
+      "viPrinted": "Đọc to bài khoá, sau đó lựa chọn đáp án đúng.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        39
+      ],
+      "printedPages": [
+        25
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "da642a443b7b3a095ba9e181",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/10/note/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:text4-reading",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p026:running-series-header",
+      "pdfPage": 40,
+      "printedPage": 26,
+      "section": "running-series-header",
+      "zhAnchor": "新HSK教程2",
+      "viPrinted": "Giáo trình New HSK 2",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        40
+      ],
+      "printedPages": [
+        26
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p026:integrated-header",
+      "pdfPage": 40,
+      "printedPage": 26,
+      "section": "integrated-header",
+      "zhAnchor": "综合练习",
+      "viPrinted": "Bài tập tổng hợp",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        40
+      ],
+      "printedPages": [
+        26
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "5ca770ac42f827d7ade27ea3",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/1/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section2",
+        "decision": "match-exact",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "4bdfb4dc13b86563b2a5109c",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/2/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section3",
+        "decision": "match-exact",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "c8b53c0388914efeff579a8a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/20/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:comprehensive-words",
+        "decision": "match-exact",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p026:integrated1-instruction",
+      "pdfPage": 40,
+      "printedPage": 26,
+      "section": "integrated1-instruction",
+      "zhAnchor": "选词填空。",
+      "viPrinted": "Chọn từ thích hợp điền vào chỗ trống.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        40
+      ],
+      "printedPages": [
+        26
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "c580abec0be1e32e17da4921",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/1/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section2",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p026:integrated2-instruction",
+      "pdfPage": 40,
+      "printedPage": 26,
+      "section": "integrated2-instruction",
+      "zhAnchor": "用本课新学的词语和语言点描述图片。",
+      "viPrinted": "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài để miêu tả các hình ảnh sau.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        40
+      ],
+      "printedPages": [
+        26
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "20cd7ffd41d0c3b3f167e5da",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/2/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section3",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:running-lesson-header",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "running-lesson-header",
+      "zhAnchor": "3",
+      "viPrinted": "Bài 3",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "zhAnchorKind": "printed-numeric-lesson-marker",
+      "layoutParts": [
+        "Bài",
+        "3"
+      ],
+      "layoutNote": "Printed Bài and numeral 3 are adjacent layout parts. No Chinese 第3课 phrase is printed in this marker.",
+      "runningChineseContext": "我想去西安旅游"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:classroom-header",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "classroom-header",
+      "zhAnchor": "课堂活动",
+      "viPrinted": "Hoạt động trên lớp",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "50773598c99b0e82aae67520",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/3/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "2fb6d7114873d18798fd84e3",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/25/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:roleplay",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:pair-header",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "pair-header",
+      "zhAnchor": "双人活动",
+      "viPrinted": "Hoạt động theo nhóm hai người",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "50773598c99b0e82aae67520",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/3/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "2fb6d7114873d18798fd84e3",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/25/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:roleplay",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:pair-instruction",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "pair-instruction",
+      "zhAnchor": "两人一组，互相询问：想不想去旅游？想好去哪儿旅游了吗？为什么选择该旅游地？等等。尽可能使用本课所学生词和语法。",
+      "viPrinted": "Hai người một nhóm, hỏi nhau về các thông tin sau: Có muốn đi du lịch hay không? Muốn đi đâu du lịch? Tại sao lựa chọn địa điểm du lịch đó? Cố gắng sử dụng tối đa từ ngữ và điểm ngôn ngữ đã học trong bài.",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "1fd4506c676f3ec99af5de5a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/3/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section4",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "586a61de96e0f92aea46be8c",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/25/fields/0/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:roleplay-notes",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:pair-example-header",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "pair-example-header",
+      "zhAnchor": "小语的例子",
+      "viPrinted": "Ví dụ của Tiểu Ngữ",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:bonus-header",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "bonus-header",
+      "zhAnchor": "小语的彩蛋",
+      "viPrinted": "Món quà của Tiểu Ngữ",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "394a8305f9cb296c695d6508",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/4/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section5",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:bonus-video-caption",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "bonus-video-caption",
+      "zhAnchor": "西安的旅游景点",
+      "viPrinted": "Các điểm tham quan du lịch ở Tây An",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "394a8305f9cb296c695d6508",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/4/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section5",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "c1c697db39ba2a1069096925",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/4/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section5",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:learning-summary-header",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "learning-summary-header",
+      "zhAnchor": "学习小结",
+      "viPrinted": "Tổng kết học tập",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "44286d89515cf0624c057d06",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "match-exact",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:learning-summary-scope",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "learning-summary-scope",
+      "zhAnchor": "1~3课我的学习情况：",
+      "viPrinted": "Tình hình học tập từ bài 1 đến bài 3 của tôi:",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "30840a03eada5e61870fa8e8",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e3d55d556505fea92f4716bd",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/26/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-vocabulary",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "b50d3ec3635bb8889adbe05b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:learning-summary-words-header",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "learning-summary-words-header",
+      "zhAnchor": "词语学习",
+      "viPrinted": "Việc học từ ngữ",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "30840a03eada5e61870fa8e8",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e3d55d556505fea92f4716bd",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/26/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-vocabulary",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:learning-summary-words-known",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "learning-summary-words-known",
+      "zhAnchor": "我已经记住并会使用的词语",
+      "viPrinted": "Những từ ngữ tôi đã nhớ và biết sử dụng",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "bb88acee11723b729b752ce6",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "df2f0b9a5996753239f9f62d",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/26/fields/0/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-remembered",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "545f9c2499181473d29de22a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/26/matrix/rows/0/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-vocabulary",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p027:learning-summary-words-not-known",
+      "pdfPage": 41,
+      "printedPage": 27,
+      "section": "learning-summary-words-not-known",
+      "zhAnchor": "我还没记住的词语",
+      "viPrinted": "Những từ ngữ tôi chưa nhớ",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        41
+      ],
+      "printedPages": [
+        27
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "bb88acee11723b729b752ce6",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "4dbf8b64231266c87fcd680c",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/26/fields/1/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-not-remembered",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "dc455d26bfa7a06d7f879350",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/26/matrix/rows/1/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-vocabulary",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:running-series-header",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "running-series-header",
+      "zhAnchor": "新HSK教程2",
+      "viPrinted": "Giáo trình New HSK 2",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [],
+    "printedRoleMetadata": {},
+    "decision": "source-only-no-complete-current-VI-consumer",
+    "sourceOnlyReason": "Printed running/header/label/instruction or untranslated example context has no complete corresponding per-lesson VI field; shared UI copy is separately scoped, and no consumer is invented."
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-can-understand-use",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-can-understand-use",
+      "zhAnchor": "我理解并会用",
+      "viPrinted": "Tôi đã hiểu và đã biết dùng",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "738dba39844dd1a332a67656",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "b50d3ec3635bb8889adbe05b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-understand-column",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-understand-column",
+      "zhAnchor": "理解",
+      "viPrinted": "Đã hiểu",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "738dba39844dd1a332a67656",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "7446745e4def45e83214c6ce",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/0/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-1-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "a8242550a0f06ce15d72bd02",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/2/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-2-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e23e9376f960cd30cf17fbd6",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/4/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-3-understand",
+        "decision": "match-exact",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "0ffa0b6a7a1cf3f33651fd30",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/6/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-4-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e371fe671b33838699f5c948",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/8/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-5-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "00128481b4b04fd3fb7d313d",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/10/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-6-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "3aa9bc1faae5742005110f47",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/12/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-7-understand",
+        "decision": "match-exact",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "041577f793f2945fa2500788",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/14/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-8-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "850b366bd8514cb9ca23aaa4",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/16/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-9-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "f1db67e93b6d090e05cf45f5",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/matrix/columns/0/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "match-exact",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-use-column",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-use-column",
+      "zhAnchor": "会用",
+      "viPrinted": "Đã biết dùng",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "738dba39844dd1a332a67656",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/2/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "48224238fe047a8ffa6406e0",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/1/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-1-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "183d144a878023889b357f2b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/3/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-2-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e97d50f7c8c8fed57d8e6fe5",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/5/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-3-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "3b530997481c85f0d03fa0bd",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/7/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-4-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e685070adad56f3f452d57b0",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/9/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-5-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "57cc08f3ee4f23c3677ef92b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/11/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-6-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "a891a26bfc9eb0304445eb6d",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/13/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-7-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "463c7a013209c102754dcd46",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/15/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-8-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "0d772f7d33908dc48fd1509b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/17/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-9-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "7a7b58a0796e16111e13c576",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/matrix/columns/1/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-grammar-row01",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-grammar-row01",
+      "zhAnchor": "语气助词“吧”（2），例如：你是老师吧？",
+      "viPrinted": "Trợ từ ngữ khí “吧” (2), ví dụ: 你是老师吧？",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation",
+      "printedTableRowOrdinal": 1,
+      "printedChineseExampleWithinVietnameseCell": true,
+      "noVietnameseExampleTranslationInvented": true
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "e53b6015ac1321dea5cf10f7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "7446745e4def45e83214c6ce",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/0/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-1-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "48224238fe047a8ffa6406e0",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/1/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-1-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "fde2dea99b52060328703c02",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/matrix/rows/0/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-grammar-row02",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-grammar-row02",
+      "zhAnchor": "“是……的”句，例如：我是昨天到的。",
+      "viPrinted": "Câu “是……的”, ví dụ: 我是昨天到的。",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation",
+      "printedTableRowOrdinal": 2,
+      "printedChineseExampleWithinVietnameseCell": true,
+      "noVietnameseExampleTranslationInvented": true
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "e53b6015ac1321dea5cf10f7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "a8242550a0f06ce15d72bd02",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/2/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-2-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "183d144a878023889b357f2b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/3/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-2-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "aea4860c4b2267e6db8fa368",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/matrix/rows/1/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-grammar-row03",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-grammar-row03",
+      "zhAnchor": "兼语句，例如：我想请你帮个忙。",
+      "viPrinted": "Câu kiêm ngữ, ví dụ: 我想请你帮个忙。",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation",
+      "printedTableRowOrdinal": 3,
+      "printedChineseExampleWithinVietnameseCell": true,
+      "noVietnameseExampleTranslationInvented": true
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "e53b6015ac1321dea5cf10f7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e23e9376f960cd30cf17fbd6",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/4/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-3-understand",
+        "decision": "match-exact",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e97d50f7c8c8fed57d8e6fe5",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/5/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-3-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "43ca033a9b86897544bfca30",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/matrix/rows/2/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "match-exact",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-grammar-row04",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-grammar-row04",
+      "zhAnchor": "固定格式“还是……吧”，例如：我们还是打车去吧。",
+      "viPrinted": "Cấu trúc cố định “还是……吧”, ví dụ: 我们还是打车去吧。",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation",
+      "printedTableRowOrdinal": 4,
+      "printedChineseExampleWithinVietnameseCell": true,
+      "noVietnameseExampleTranslationInvented": true
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "e53b6015ac1321dea5cf10f7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "0ffa0b6a7a1cf3f33651fd30",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/6/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-4-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "3b530997481c85f0d03fa0bd",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/7/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-4-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "5feee0e1bee7c07d6b86c2d5",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/matrix/rows/3/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-grammar-row05",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-grammar-row05",
+      "zhAnchor": "用“多”表达概数，例如：我有二十多本中文书。",
+      "viPrinted": "Sử dụng “多” để diễn đạt số ước lượng, ví dụ: 我有二十多本中文书。",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation",
+      "printedTableRowOrdinal": 5,
+      "printedChineseExampleWithinVietnameseCell": true,
+      "noVietnameseExampleTranslationInvented": true
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "e53b6015ac1321dea5cf10f7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e371fe671b33838699f5c948",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/8/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-5-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "e685070adad56f3f452d57b0",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/9/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-5-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "0e11f849cd6fcb97f8e1cd83",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/matrix/rows/4/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-grammar-row06",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-grammar-row06",
+      "zhAnchor": "动词或动词性短语、主谓短语作定语，例如：你认识那个唱歌的人吗？",
+      "viPrinted": "Động từ, cụm động từ, cụm chủ vị làm định ngữ, ví dụ: 你认识那个唱歌的人吗？",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation",
+      "printedTableRowOrdinal": 6,
+      "printedChineseExampleWithinVietnameseCell": true,
+      "noVietnameseExampleTranslationInvented": true
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "e53b6015ac1321dea5cf10f7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "00128481b4b04fd3fb7d313d",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/10/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-6-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "57cc08f3ee4f23c3677ef92b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/11/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-6-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "8a2f085b6c1a355cb424993a",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/matrix/rows/5/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-grammar-row07",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-grammar-row07",
+      "zhAnchor": "结果补语，例如：我吃完饭了。",
+      "viPrinted": "Bổ ngữ kết quả, ví dụ: 我吃完饭了。",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation",
+      "printedTableRowOrdinal": 7,
+      "printedChineseExampleWithinVietnameseCell": true,
+      "noVietnameseExampleTranslationInvented": true
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "e53b6015ac1321dea5cf10f7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "3aa9bc1faae5742005110f47",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/12/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-7-understand",
+        "decision": "match-exact",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "a891a26bfc9eb0304445eb6d",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/13/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-7-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "8a91da2cf0f0321316e431f9",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/matrix/rows/6/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "match-exact",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-grammar-row08",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-grammar-row08",
+      "zhAnchor": "动词重叠（1），例如：我想休息休息。",
+      "viPrinted": "Động từ lặp lại (1), ví dụ: 我想休息休息。",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation",
+      "printedTableRowOrdinal": 8,
+      "printedChineseExampleWithinVietnameseCell": true,
+      "noVietnameseExampleTranslationInvented": true
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "e53b6015ac1321dea5cf10f7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "041577f793f2945fa2500788",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/14/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-8-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "463c7a013209c102754dcd46",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/15/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-8-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "d7e2999aa0392fdcd1a6aaa4",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/matrix/rows/7/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-grammar-row09",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-grammar-row09",
+      "zhAnchor": "动词重叠（2），例如：我看了看这本书。",
+      "viPrinted": "Động từ lặp lại (2), ví dụ: 我看了看这本书。",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation",
+      "printedTableRowOrdinal": 9,
+      "printedChineseExampleWithinVietnameseCell": true,
+      "noVietnameseExampleTranslationInvented": true
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "e53b6015ac1321dea5cf10f7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/3/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "850b366bd8514cb9ca23aaa4",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/16/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-9-understand",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "0d772f7d33908dc48fd1509b",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/fields/17/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-grammar-9-use",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "eee31f3869aee83948a1f2d7",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/27/matrix/rows/8/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-grammar",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  },
+  {
+    "source": {
+      "sourceId": "hsk2-official-vi:l03:p028:learning-summary-needs-effort",
+      "pdfPage": 42,
+      "printedPage": 28,
+      "section": "learning-summary-needs-effort",
+      "zhAnchor": "我需要努力的",
+      "viPrinted": "Những điểm tôi cần cố gắng",
+      "reviewStatus": "author-visual-transcription-pending-independent-original-page-review",
+      "sourceScope": "supplemental-connected-learning-summary-continuation"
+    },
+    "completePageScope": {
+      "pdfPages": [
+        42
+      ],
+      "printedPages": [
+        28
+      ]
+    },
+    "consumers": [
+      {
+        "recordId": "5d76c7cc65dc9eba156fd721",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/sections/5/blocks/4/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:section6",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "derived-exact-source-spans-and-explicit-glue"
+      },
+      {
+        "recordId": "409d6639836e1f53d4085305",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/28/title/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:activity:review-improve",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      },
+      {
+        "recordId": "63ccb1c9716bc65076303a75",
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "field": "/activities/28/fields/0/prompt/vi",
+        "actualOwnerId": "hsk2-fltrp-2026:l03:field:review-improve",
+        "decision": "propose-official-alignment",
+        "sourceRelation": "direct-whole-printed-unit"
+      }
+    ],
+    "printedRoleMetadata": {},
+    "decision": "mapped-one-or-more-real-consumers",
+    "sourceOnlyReason": null
+  }
+]

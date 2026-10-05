@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "auditType": "independent-bounded-source-structure-audit",
+  "auditor": "h2l3_source_structure",
+  "timestampUTC": "2026-10-04T20:40:02.700767+00:00",
+  "result": "structural-checks-pass-with-metadata-observations",
+  "input": {
+    "sourceTranscriptionPath": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l03/source-transcription.json",
+    "sourceTranscriptionSHA256": "1751c64e4a0960f57aa8823b4186e59beac2691f7e43d7969a1446013bf9ce11",
+    "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+    "freezeManifestSHA256": "937883b645ee405e4d343a362ec559ed19a7d30ab40daf69e9ee708930434dc9"
+  },
+  "boundaries": {
+    "websiteVietnameseRead": false,
+    "websiteRuntimeUsed": false,
+    "websiteComparisonPerformed": false,
+    "authorFilesEdited": false,
+    "authorBuildScriptExecuted": false,
+    "originalPDFImagesVisuallyViewedByThisAuditor": false,
+    "PDFTextExtracted": false,
+    "OCRUsed": false,
+    "visualOrPrintedTextAcceptanceClaimed": false,
+    "externalSchemaAvailable": false,
+    "validationBasis": "Task-required counts plus source bundle declarations and field/type/identity/span/hash consistency. PDF metadata only was read for geometry checks."
+  },
+  "structuralChecks": {
+    "baseMandatoryFields": [
+      "sourceId",
+      "pdfPage",
+      "printedPage",
+      "section",
+      "zhAnchor",
+      "viPrinted",
+      "reviewStatus"
+    ],
+    "baseMandatoryFieldsPresentForAll115": true,
+    "baseStringFieldsNonemptyForAll115": true,
+    "pageFieldsIntegerForAll115": true,
+    "sourceIdMatchesLevelLessonPrimaryPrintedPageAndSectionForAll115": true,
+    "duplicateSourceIds": [],
+    "recordCount": 115,
+    "uniqueSourceIdCount": 115,
+    "ordinaryNumberedWordRows": 15,
+    "wordOrdinals": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "properNounWordRows": 0,
+    "roleTranslationRows": 16,
+    "roleRowsByText": {
+      "1": 5,
+      "2": 5,
+      "3": 6
+    },
+    "roleOrdinalsContiguousWithinEachText": true,
+    "text4WholeUnlabelledParagraphs": 1,
+    "text4SourceId": "hsk2-official-vi:l03:p025:text4-whole-paragraph",
+    "text4NoWebsiteLinePartitionInferred": true,
+    "summaryGrammarRows": 9,
+    "summaryRowOrdinals": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "allSummaryGrammarRowsOnPDF42Printed28": true,
+    "allSummaryRowsKeepChineseExampleFlags": true,
+    "primaryRecordCountsByPrintedPage": {
+      "19": 10,
+      "20": 14,
+      "21": 10,
+      "22": 12,
+      "23": 7,
+      "24": 20,
+      "25": 12,
+      "26": 4,
+      "27": 12,
+      "28": 14
+    },
+    "allDeclaredCountsMatchRecomputedCounts": true,
+    "authorReadProofPagesMatchPageEvidence": true
+  },
+  "crossPageSpans": {
+    "conceptualCaseCount": 2,
+    "recordsWithCrossPageMetadata": 3,
+    "cases": [
+      {
+        "case": "grammar2-Chinese-and-Vietnamese-on-different-pages",
+        "printedPages": [
+          22,
+          23
+        ],
+        "pdfPages": [
+          36,
+          37
+        ],
+        "sourceIds": [
+          "hsk2-official-vi:l03:p023:grammar2-rule1",
+          "hsk2-official-vi:l03:p023:grammar2-rule2"
+        ],
+        "zhAnchorPrintedPage": 22,
+        "zhAnchorPDFPage": 36,
+        "viPrimaryPrintedPage": 23,
+        "viPrimaryPDFPage": 37
+      },
+      {
+        "case": "grammar3-Vietnamese-continuation",
+        "printedPages": [
+          24,
+          25
+        ],
+        "pdfPages": [
+          38,
+          39
+        ],
+        "sourceIds": [
+          "hsk2-official-vi:l03:p024:grammar3-rule"
+        ],
+        "fragmentCount": 2,
+        "spaceJoinedFragmentsEqualWholeViPrinted": true
+      }
+    ],
+    "threeRecordsForTwoCasesIsConsistent": true
+  },
+  "authorFreeze": {
+    "manifestFileHashesAllMatch": true,
+    "checkedFiles": [
+      {
+        "file": "source-transcription.json",
+        "expectedSHA256": "1751c64e4a0960f57aa8823b4186e59beac2691f7e43d7969a1446013bf9ce11",
+        "actualSHA256": "1751c64e4a0960f57aa8823b4186e59beac2691f7e43d7969a1446013bf9ce11",
+        "matches": true
+      },
+      {
+        "file": "source-page-evidence.json",
+        "expectedSHA256": "e839608ef93e0ce1a6a86d573c5531a03a9b4b0a6fb4443090840bbf9469c6b6",
+        "actualSHA256": "e839608ef93e0ce1a6a86d573c5531a03a9b4b0a6fb4443090840bbf9469c6b6",
+        "matches": true
+      },
+      {
+        "file": "source-detail-crop-evidence.json",
+        "expectedSHA256": "650a7612d20a1bfd0585838a8f4bd87a74b056804bd81336e9401886b4d119a7",
+        "actualSHA256": "650a7612d20a1bfd0585838a8f4bd87a74b056804bd81336e9401886b4d119a7",
+        "matches": true
+      },
+      {
+        "file": "build-source-transcription.py",
+        "expectedSHA256": "fdab74bb89af6a99678a6a00efc104acf6fc5211571b384821803f2799322bea",
+        "actualSHA256": "fdab74bb89af6a99678a6a00efc104acf6fc5211571b384821803f2799322bea",
+        "matches": true
+      },
+      {
+        "file": "README.md",
+        "expectedSHA256": "a41a82ef844b091996a225221830c0cde4d7f7886a622d314c62a1c1a26a5dda",
+        "actualSHA256": "a41a82ef844b091996a225221830c0cde4d7f7886a622d314c62a1c1a26a5dda",
+        "matches": true
+      }
+    ],
+    "originalPDFHashMatchesBothDeclarations": true,
+    "sourceInputMatchesParentExpectedSHA256": true,
+    "bundleUnchangedAfterReadOnlyChecks": true
+  },
+  "wholePageEvidence": [
+    {
+      "pdfPage": 33,
+      "printedPage": 19,
+      "imageSHA256": "e3b8b6022fcdd950345af0acb801c9fe4a1be78d147d12f7fb525cfe0f77a1e4",
+      "imageFileExists": true,
+      "imageHashMatches": true,
+      "cropBoxMatchesOriginalPDFMetadata": true,
+      "pageRectMatchesOriginalPDFMetadata": true,
+      "rotationMatchesOriginalPDFMetadata": true,
+      "renderScale": 2.5,
+      "authorWholePageViewedClaim": true,
+      "authorFooterReadClaim": true
+    },
+    {
+      "pdfPage": 34,
+      "printedPage": 20,
+      "imageSHA256": "f8b07e408b5631f77177df6783565d27abfbc0f5861751e3e9d8ca4cfbf7d90e",
+      "imageFileExists": true,
+      "imageHashMatches": true,
+      "cropBoxMatchesOriginalPDFMetadata": true,
+      "pageRectMatchesOriginalPDFMetadata": true,
+      "rotationMatchesOriginalPDFMetadata": true,
+      "renderScale": 2.5,
+      "authorWholePageViewedClaim": true,
+      "authorFooterReadClaim": true
+    },
+    {
+      "pdfPage": 35,
+      "printedPage": 21,
+      "imageSHA256": "c8046d545a5ea7b344ea3cb46416d95f1b90fcbae710953f1b90090ff826efc0",
+      "imageFileExists": true,
+      "imageHashMatches": true,
+      "cropBoxMatchesOriginalPDFMetadata": true,
+      "pageRectMatchesOriginalPDFMetadata": true,
+      "rotationMatchesOriginalPDFMetadata": true,
+      "renderScale": 2.5,
+      "authorWholePageViewedClaim": true,
+      "authorFooterReadClaim": true
+    },
+    {
+      "pdfPage": 36,
+      "printedPage": 22,
+      "imageSHA256": "c17464631652c1aa709f6c8ce0fe7258969e75dd55d2c0ee9201efac0f2c8a9d",
+      "imageFileExists": true,
+      "imageHashMatches": true,
+      "cropBoxMatchesOriginalPDFMetadata": true,
+      "pageRectMatchesOriginalPDFMetadata": true,
+      "rotationMatchesOriginalPDFMetadata": true,
+      "renderScale": 2.5,
+      "authorWholePageViewedClaim": true,
+      "authorFooterReadClaim": true
+    },
+    {
+      "pdfPage": 37,
+      "printedPage": 23,
+      "imageSHA256": "dae0e2631c47c37252bc819a7104863840919f07b7a76974569c078cae9308b7",
+      "imageFileExists": true,
+      "imageHashMatches": true,
+      "cropBoxMatchesOriginalPDFMetadata": true,
+      "pageRectMatchesOriginalPDFMetadata": true,
+      "rotationMatchesOriginalPDFMetadata": true,
+      "renderScale": 2.5,
+      "authorWholePageViewedClaim": true,
+      "authorFooterReadClaim": true
+    },
+    {
+      "pdfPage": 38,
+      "printedPage": 24,
+      "imageSHA256": "f7866c8421e34b2e5470e5ff09fa6021bef925153243589a329fe68891de7c14",
+      "imageFileExists": true,
+      "imageHashMatches": true,
+      "cropBoxMatchesOriginalPDFMetadata": true,
+      "pageRectMatchesOriginalPDFMetadata": true,
+      "rotationMatchesOriginalPDFMetadata": true,
+      "renderScale": 2.5,
+      "authorWholePageViewedClaim": true,
+      "authorFooterReadClaim": true
+    },
+    {
+      "pdfPage": 39,
+      "printedPage": 25,
+      "imageSHA256": "762e4b6d82f06ce8e114752acf4bbc6ff98b33b1cd23024389808422e3019606",
+      "imageFileExists": true,
+      "imageHashMatches": true,
+      "cropBoxMatchesOriginalPDFMetadata": true,
+      "pageRectMatchesOriginalPDFMetadata": true,
+      "rotationMatchesOriginalPDFMetadata": true,
+      "renderScale": 2.5,
+      "authorWholePageViewedClaim": true,
+      "authorFooterReadClaim": true
+    },
+    {
+      "pdfPage": 40,
+      "printedPage": 26,
+      "imageSHA256": "8b399977dd349abfa621f874e2cba1630954efff213921d1be10231bc40d0f62",
+      "imageFileExists": true,
+      "imageHashMatches": true,
+      "cropBoxMatchesOriginalPDFMetadata": true,
+      "pageRectMatchesOriginalPDFMetadata": true,
+      "rotationMatchesOriginalPDFMetadata": true,
+      "renderScale": 2.5,
+      "authorWholePageViewedClaim": true,
+      "authorFooterReadClaim": true
+    },
+    {
+      "pdfPage": 41,
+      "printedPage": 27,
+      "imageSHA256": "0ae71731855c8b113a2ad5bbb1f9a7be9a1df899cbe57d7c9b0fc77b78e85487",
+      "imageFileExists": true,
+      "imageHashMatches": true,
+      "cropBoxMatchesOriginalPDFMetadata": true,
+      "pageRectMatchesOriginalPDFMetadata": true,
+      "rotationMatchesOriginalPDFMetadata": true,
+      "renderScale": 2.5,
+      "authorWholePageViewedClaim": true,
+      "authorFooterReadClaim": true
+    },
+    {
+      "pdfPage": 42,
+      "printedPage": 28,
+      "imageSHA256": "339c1f1984d950c495b28d920404b801aa757813148d18a430aec60f3d3fb663",
+      "imageFileExists": true,
+      "imageHashMatches": true,
+      "cropBoxMatchesOriginalPDFMetadata": true,
+      "pageRectMatchesOriginalPDFMetadata": true,
+      "rotationMatchesOriginalPDFMetadata": true,
+      "renderScale": 2.5,
+      "authorWholePageViewedClaim": true,
+      "authorFooterReadClaim": true
+    }
+  ],
+  "detailCropEvidence": [
+    {
+      "pdfPage": 34,
+      "imageFile": "/workspace/scratch/28b55072841a/official-vi-hsk2-l03-source-author/pdf034-vocab-original-6x.png",
+      "hashMatches": true,
+      "pathKey": "file",
+      "coordinateKey": "clip",
+      "use": "Author precision visual source check; not independent acceptance."
+    },
+    {
+      "pdfPage": 35,
+      "imageFile": "/workspace/scratch/28b55072841a/official-vi-hsk2-l03-source-author/pdf035-grammar1-original-5x.png",
+      "hashMatches": true,
+      "pathKey": "file",
+      "coordinateKey": "clip",
+      "use": "Author precision visual source check; not independent acceptance."
+    },
+    {
+      "pdfPage": 38,
+      "imageFile": "/workspace/scratch/28b55072841a/official-vi-hsk2-l03-source-author/pdf038-vocab-original-6x.png",
+      "hashMatches": true,
+      "pathKey": "path",
+      "coordinateKey": "clipDisplayCoordinates",
+      "use": "Exploratory crop covers dialogue, not word table. No POS conclusion relies on this crop."
+    },
+    {
+      "pdfPage": 39,
+      "imageFile": "/workspace/scratch/28b55072841a/official-vi-hsk2-l03-source-author/pdf039-grammar3-continuation-original-6x.png",
+      "hashMatches": true,
+      "pathKey": "path",
+      "coordinateKey": "clipDisplayCoordinates",
+      "use": "Author precision visual source check; not independent acceptance."
+    },
+    {
+      "pdfPage": 39,
+      "imageFile": "/workspace/scratch/28b55072841a/official-vi-hsk2-l03-source-author/pdf039-text4-vocab-original-5x.png",
+      "hashMatches": true,
+      "pathKey": "path",
+      "coordinateKey": "clipDisplayCoordinates",
+      "use": "Author precision visual source check; not independent acceptance."
+    },
+    {
+      "pdfPage": 41,
+      "imageFile": "/workspace/scratch/28b55072841a/official-vi-hsk2-l03-source-author/pdf041-pair-summary-original-4x.png",
+      "hashMatches": true,
+      "pathKey": "path",
+      "coordinateKey": "clipDisplayCoordinates",
+      "use": "Author precision visual source check; not independent acceptance."
+    },
+    {
+      "pdfPage": 38,
+      "imageFile": "/workspace/scratch/28b55072841a/official-vi-hsk2-l03-source-author/pdf038-vocab-actual-original-6x.png",
+      "hashMatches": true,
+      "pathKey": "path",
+      "coordinateKey": "clipDisplayCoordinates",
+      "use": "Author precision visual source check; not independent acceptance."
+    }
+  ],
+  "metadataObservations": [
+    {
+      "id": "DETAIL-KEY-HETEROGENEITY",
+      "severity": "metadata-observation",
+      "file": "source-detail-crop-evidence.json",
+      "detail": "Entries 1–2 use file and clip; entries 3–7 use path and clipDisplayCoordinates. All seven files resolve and hashes match. A consumer must normalize these keys; no single uniform detail-entry schema is supplied."
+    },
+    {
+      "id": "DETAIL-GEOMETRY-OMISSIONS",
+      "severity": "metadata-observation",
+      "file": "source-detail-crop-evidence.json",
+      "detail": "All seven detail entries omit printedPage, CropBox and rotation. The two clip fields do not explicitly declare their coordinate convention. Original page geometry is available in source-page-evidence.json; this does not invalidate image hashes or establish visual correctness."
+    },
+    {
+      "id": "FREEZE-COUNT-OMISSIONS",
+      "severity": "metadata-observation",
+      "file": "freeze-manifest.json",
+      "detail": "No dedicated properNounWordRows, text4WholeUnlabelledParagraphs or connectedSummaryGrammarRows count is included in the freeze manifest. These counts are present in the frozen source-transcription.json and recomputed as 0, 1 and 9."
+    }
+  ],
+  "blockingStructuralAnomalies": [],
+  "limits": "This audit verifies source metadata and bytes. It neither accepts the printed text nor proves source completeness. The parent reviewer performs all original-page visual review."
+}

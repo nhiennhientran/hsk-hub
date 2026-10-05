@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "documents": [
+    {
+      "file": "course-app/content/hsk2/lesson-02.json",
+      "nonVIEqual": true,
+      "canonicalJSONSHA256": "0d3f1e227d92a778569ef7bf03deae0c7c04ef34ad1a8494744423aeec910e4e",
+      "scope": "entire document, including all Chinese, PY, IDs, option order, answers, assessment, source, media metadata, POS and existing structural arrays; only literal vi properties removed"
+    },
+    {
+      "file": "course-app/content/hsk2-lexicon.json",
+      "nonVIEqual": true,
+      "canonicalJSONSHA256": "998adfeef9d29c15fefaf72e856b782eed6fa05217e980e0c1113c0daf490027",
+      "scope": "entire document, including all Chinese, PY, IDs, option order, answers, assessment, source, media metadata, POS and existing structural arrays; only literal vi properties removed"
+    },
+    {
+      "file": "course-app/content/course-index.json",
+      "nonVIEqual": true,
+      "canonicalJSONSHA256": "1939a153371d012ad79a7b15be122c5ba67a1cb3699c0675970738e6f203bd75",
+      "scope": "entire document, including all Chinese, PY, IDs, option order, answers, assessment, source, media metadata, POS and existing structural arrays; only literal vi properties removed"
+    }
+  ],
+  "introducedOptionCollisions": [],
+  "simulationOnly": true,
+  "runtimeWrites": 0
+}

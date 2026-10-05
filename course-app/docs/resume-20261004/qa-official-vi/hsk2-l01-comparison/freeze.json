@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "status": "author-comparison-frozen-awaiting-third-person-review",
+  "files": [
+    {
+      "file": "extract-current.mjs",
+      "sha256": "0f8e6e7ef38b39c6c2b7a923c19ea51bbb756a88b6ab53dd5f3863f4f978ab9d",
+      "bytes": 5015
+    },
+    {
+      "file": "build-comparison.py",
+      "sha256": "4f9efb84efbecc1092305d89eb4e5784d53be98cc946e7958e8eccf5437f5c8f",
+      "bytes": 22680
+    },
+    {
+      "file": "README.md",
+      "sha256": "2d495bfbcff38b310a34822219f77f1122bd43d93d1a1d804e3981d01e74f7b6",
+      "bytes": 2520
+    },
+    {
+      "file": "current-bindings.json",
+      "sha256": "7e4cf8a5f5ee8f28a8b0c31ae5944b28173790e9433d7f63d991fe2e9df13397",
+      "bytes": 149739
+    },
+    {
+      "file": "current-occurrences.json",
+      "sha256": "8c3d33779fc21437bb995b7b64e7dd00eadc35d1d630e91c92156699a2e340ae",
+      "bytes": 940607
+    },
+    {
+      "file": "current-semantic-consumers.json",
+      "sha256": "891a7803f1beb305cef7e822025fee64e3be71d6ccb8ac6824d8e6fa02ff4014",
+      "bytes": 78451
+    },
+    {
+      "file": "current-input-ledger.json",
+      "sha256": "4bd21c84d5013504482414e58455c48a6624e1876ba09900ad07de8b8a561850",
+      "bytes": 5594
+    },
+    {
+      "file": "source-input-copy.json",
+      "sha256": "91f838340ea6bb2eb5a10a90eaff62f5da440cb4f5920287f11249149e2829dc",
+      "bytes": 44619
+    },
+    {
+      "file": "comparison.json",
+      "sha256": "e1bdf7db17a446a21b654114c55ef8ea61e185a66897ed301ee96e5d6d318445",
+      "bytes": 1221804
+    },
+    {
+      "file": "proposals.json",
+      "sha256": "aea1eb1e6fdec01191c64b2a2f61f6388c86118beb0929fbffde37022bfe2ae5",
+      "bytes": 358062
+    },
+    {
+      "file": "source-to-consumer-ledger.json",
+      "sha256": "a2560be4f0dbd5efc33928fe2bad51724ea7ed61c3de4ad7c16990db3e6cdf32",
+      "bytes": 143732
+    },
+    {
+      "file": "canonical-local-gloss-ledger.json",
+      "sha256": "b277d31333c068b2d150f1adbd9b9b47212d565573a907fd7021cd9bbe85bea3",
+      "bytes": 5264
+    },
+    {
+      "file": "private-projection-diff.json",
+      "sha256": "178fdaa46c788f22581e8f872599b3a6bf8fe858d6d5e817ca6acba695b36a21",
+      "bytes": 27564
+    },
+    {
+      "file": "input-ledger.json",
+      "sha256": "9cb7bc3bd316cc01c6de6a9a1fd9b59b773fcba8cc1171aaa18f55f542909381",
+      "bytes": 6130
+    },
+    {
+      "file": "validation.json",
+      "sha256": "feccfa39261eb31e5059574826bea2c1c7a9790d9e2082110d6a2ad4e35050d6",
+      "bytes": 1198
+    }
+  ],
+  "runtimeInputChecks": [
+    {
+      "file": "course-app/content/hsk2/lesson-01.json",
+      "sha256": "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523",
+      "bytes": 173130,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/content/hsk2-lexicon.json",
+      "sha256": "ef5bfd9d4b03fd83e0eb735afca091ff3daa09dd1c5439f1e4453d118bef014c",
+      "bytes": 134669,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/content/course-index.json",
+      "sha256": "a435fc635ef5604c7b4ef4c6eb51eb58272987f06e76db9d879cd9c54ddf429d",
+      "bytes": 10528,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "sha256": "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2",
+      "bytes": 8228,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/src/official-vi-revisions.ts",
+      "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f",
+      "bytes": 18776,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "sha256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "bytes": 40716,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/src/lexicon.ts",
+      "sha256": "eea19bf5871009d76c7af075a53d737ecba9e5587696343407fd391c04dd73bf",
+      "bytes": 1341,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "sha256": "9637ebb3fd62546924b45a97407f3ed19ab634e647cc9b4812adfc1e1925bb70",
+      "bytes": 13190,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744",
+      "bytes": 62262,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/src/activity-history.ts",
+      "sha256": "7edeeacf227f030bcf5377f7f9b364c80c844e37dcc2843e37aa2197d7e1bc46",
+      "bytes": 2674,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-carry-bags.svg",
+      "sha256": "5241e8ad15a7ce4fd0cebc9bb60bc26cdece9a60fc68b3b0efab16f4915da40e",
+      "bytes": 4570,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-apology.svg",
+      "sha256": "dc70fb9a83c169914b425dfc808640a9eebfb2c49f0ebc334a3e2b5b50b6820d",
+      "bytes": 4625,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-sightseeing.svg",
+      "sha256": "b746d0918170f50be05127e4c78786d4d48823dfb95434092cb3f221d5b5e650",
+      "bytes": 6106,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-introducing.svg",
+      "sha256": "609fab5340dcabd1482e2029565795660223301a924daecf5bf6f1ddf80164a4",
+      "bytes": 5609,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-family-road-trip.svg",
+      "sha256": "c9a5d6b6f9987ad47ded824ee8a47358ef7dbe70ac3378334f25212505002129",
+      "bytes": 7099,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-family-meal.svg",
+      "sha256": "1be1a0b1ee0ca8b0f53ad4c4cbbf2f00628fbe7c9dbe7bd6ccc9c2fbe22e9bb0",
+      "bytes": 6780,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-boarding-plane.svg",
+      "sha256": "a762a5e1c94897efb9a89448f1a9eb250f9f001bb70b3147e7d8d2d8e4842876",
+      "bytes": 6895,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-wake-seven.svg",
+      "sha256": "714ad2f3e3e6de08ce5656071bb4d30b494c248b40aa68cb320bca28048e727f",
+      "bytes": 3087,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-airport-welcome.svg",
+      "sha256": "b2a673a10fb792727698f1a71deb8c6bd95878c0bb55799ba6bb9bbaa431ba06",
+      "bytes": 8061,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-car-conversation.svg",
+      "sha256": "0f3fdd53973bf745a0acbae056856c75c25805557bbcc7c0fa4b4b6348942509",
+      "bytes": 6100,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-phone-in-car.svg",
+      "sha256": "39bb8accfb8fbce02c84afc4a2840647d8adebb3c6e13dcadc219593dd88ea97",
+      "bytes": 2503,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-duck-message.svg",
+      "sha256": "9aac4d5260a1cfa29f7ee96b2409d69df80d38541ea57ffe7e1602e84c422c4d",
+      "bytes": 2222,
+      "equalsHEAD": true
+    },
+    {
+      "file": "course-app/public/illustrations/hsk2-l01-duck-serving.svg",
+      "sha256": "ab632e9d1aecf35fae3a3b52311f477576fcadcf0e2b68060d2a5d11723d24d3",
+      "bytes": 3286,
+      "equalsHEAD": true
+    }
+  ],
+  "sourceAcceptance": {
+    "file": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l01/source-transcription.json",
+    "sha256": "91f838340ea6bb2eb5a10a90eaff62f5da440cb4f5920287f11249149e2829dc",
+    "records": 103,
+    "acceptanceFile": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l01-source/final-source-acceptance.json",
+    "acceptanceSHA256": "01d4c4e1321fbfb9cb4ecb95dff2ce2513aa4db3a983846a544dc60b3b8a5539",
+    "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b"
+  },
+  "independentAcceptedChanges": 0,
+  "activation": 0
+}
